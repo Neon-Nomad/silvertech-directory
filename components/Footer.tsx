@@ -16,11 +16,13 @@ export const Footer: React.FC = () => {
               View Pitch Deck
             </Button>
           </a>
-          <a href="mailto:andrew@silvertechdirectory.com?subject=Founder Inquiry">
-            <Button variant="outline" className="px-8 py-4 text-lg w-full sm:w-auto">
-              Contact the Founder
-            </Button>
-          </a>
+          <Button 
+            variant="outline" 
+            className="px-8 py-4 text-lg w-full sm:w-auto"
+            onClick={() => window.location.href = 'mailto:andrew@silvertechdirectory.com?subject=Founder Inquiry'}
+          >
+            Contact the Founder
+          </Button>
         </div>
         
         <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
