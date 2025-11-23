@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
   };
 
   const handlePitchDeck = () => {
-    window.open('https://docs.google.com', '_blank');
+    window.open('https://drive.google.com/drive/folders/1tjOd8qf2qPxi4ELy8oRrzSMXJV-mhh3r?usp=drive_link', '_blank');
     setIsMobileMenuOpen(false);
   };
 

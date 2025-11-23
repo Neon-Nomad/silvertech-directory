@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
         
         <div className="flex flex-col sm:flex-row gap-4">
           <a 
-            href="https://docs.google.com" 
+            href="https://drive.google.com/drive/folders/1tjOd8qf2qPxi4ELy8oRrzSMXJV-mhh3r?usp=drive_link" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="w-full sm:w-auto"

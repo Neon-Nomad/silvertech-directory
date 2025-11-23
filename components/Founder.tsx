@@ -9,7 +9,7 @@ export const Founder: React.FC = () => {
           <div className="w-full md:w-1/3 shrink-0">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg shadow-lg">
               <img 
-                src="https://drive.google.com/file/d/1Zgc3OaSNq2iohzd-Gk_cBN_erbqSS2SB/view?usp=sharing" 
+                src="./andrew-dillon.png" 
                 alt="Andrew Dillon" 
                 className="w-full h-full object-cover"
               />

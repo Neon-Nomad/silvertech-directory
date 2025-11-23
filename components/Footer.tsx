@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-          <a href="https://docs.google.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/drive/folders/1tjOd8qf2qPxi4ELy8oRrzSMXJV-mhh3r?usp=drive_link" target="_blank" rel="noopener noreferrer">
             <Button variant="primary" className="px-8 py-4 text-lg w-full sm:w-auto">
               View Pitch Deck
             </Button>
