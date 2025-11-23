@@ -65,7 +65,7 @@ export const Solution: React.FC = () => {
                 </div>
               </div>
               <div className="bg-primary-900/30 p-4 rounded border border-primary-900/50 text-primary-200 text-xs">
-                > System Recommendation: Demand spike in Zip 94103. Adjust pricing model +5%.
+                System Recommendation: Demand spike in Zip 94103. Adjust pricing model +5%.
               </div>
             </div>
           </div>
