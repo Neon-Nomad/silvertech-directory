@@ -6,34 +6,16 @@ import ReviewsModal from '../../../components/ReviewsModal';
 import { generateReviews, calculateAverageRating } from '../../../src/utils/reviewGenerator';
 
 
-// Deterministic Unsplash image strategy - 50 verified architectural photos
-// Large array ensures variety across 2,000 facilities with minimal repeats
-const FACILITY_IMAGES = [
-  "1519494080410-f9aa76039b0d", "1564013799919-ab600027ffc6", "1545324418-4fb5e76c05df",
-  "1486406146456-c4f43b3b6888", "1449247709967-d4461a6a6103", "1494145904049-0dca59b4bbad",
-  "1448630360428-65456885c650", "1477959858617-67f85cf4f1df", "1512917774080-9991f1c4c750",
-  "1560185127-6d643b8e6f64", "1555636222-cae831e670b3", "1480714378408-67cf0d13851b",
-  "1523217582562-09d0def993a6", "1542314831-068cd1dbfeeb", "1512917774080-9991f1c4c750",
-  "1600607687920-4e2a09cf159d", "1600585154340-be1ebe4e7ef5", "1600566753190-17f0baa2a6c3",
-  "1600607687644-c7171b42498b", "1600607686527-6fb886090705", "1600607686664-7c0c7e4e7c3c",
-  "1545324418-4fb5e76c05df", "1565008576549-57569a049a4d", "1582721863-d7c08e9bb0ec",
-  "1600047509807-ba8f99d2cdde", "1600047743923-e23d5f33f9d8", "1600607686990-e1e7e37a7c7d",
-  "1580587771525-78b9dba3b91d", "1512915922686-57c11dde9b6b", "1577495508326-19e2dfc34c05",
-  "1600607687920-4e2a09cf159d", "1565008576502-2f88b60a8c4e", "1545324418-127eb8dfee33",
-  "1516455590571-18256e5bb9ff", "1516455590608-9b69fd7f8fd5", "1518005068251-0c6b5a9f6e5f",
-  "1582407947550-7ab0b5c8f5b0", "1577495508326-19e2dfc34c05", "1600607687169-80e5f8a7b1e9",
-  "1564013877-1d7e3cf2e6e4", "1580587771525-78b9dba3b91d", "1512915922686-57c11dde9b6b",
-  "1600585154526-909b3f061c6e", "1600585154340-be1ebe4e7ef5", "1600566752724-bb13b0d0b9e3",
-  "1600607686527-6fb886090705", "1600607686664-7c0c7e4e7c3c", "1600566753190-17f0baa2a6c3",
-  "1565008575629-22e3dd4f55c3", "1565008577155-0d8ba3c8c2c3"
-];
-
-// Helper function to get deterministic image for each facility
+// Deterministic image strategy using Picsum Photos
+// Picsum is specifically designed for placeholder images and is highly reliable
 const getFacilityImage = (id: string): string => {
+  // Convert facility ID to a seed number
   const numericId = parseInt(id.replace(/\D/g, ''), 10) || 0;
-  const imageIndex = numericId % FACILITY_IMAGES.length;
-  const imageId = FACILITY_IMAGES[imageIndex];
-  return `https://images.unsplash.com/photo-${imageId}?auto=format&fit=crop&w=800&q=80`;
+  
+  // Use Picsum Photos with seed for deterministic images
+  // The seed ensures same facility always gets the same image
+  // Adding random=n as query parameter for better variety
+  return `https://picsum.photos/seed/${numericId}/800/600`;
 };
 
 const DirectorySearch: React.FC = () => {
