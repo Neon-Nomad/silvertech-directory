@@ -212,26 +212,6 @@ DATABASE_URL=your_database_url_here
 
 ## 📈 Current Status
 
-- ✅ Domain live: [silvertechdirectory.com](https://silvertechdirectory.com)
-- ✅ Website deployed with Problem → Solution → Vision flow
-- ✅ Pitch deck embedded
-- ✅ Gmail + Workspace configured
-- ✅ First VC application submitted (Cake Ventures)
-- ✅ GitHub repository initialized
-- 🔄 Planning V2 architecture
-
----
-
-## 📧 Contact
-
-**Founder:** Andrew Dillon  
-**Email:** [andrew@silvertechdirectory.com](mailto:andrew@silvertechdirectory.com)
-
-**Additional Contacts:**
-- General Inquiries: [info@silvertechdirectory.com](mailto:info@silvertechdirectory.com)
-- Press: [press@silvertechdirectory.com](mailto:press@silvertechdirectory.com)
-- Investment: [invest@silvertechdirectory.com](mailto:invest@silvertechdirectory.com)
-
 ---
 
 <div align="center">
