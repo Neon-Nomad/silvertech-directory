@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Search, MapPin, DollarSign,  Star, Filter } from 'lucide-react';
 
-import facilitiesData from './facilities.json';
+import facilitiesData from '../../../src/data/facilities.json';
 
 const DirectorySearch: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -121,12 +121,14 @@ const DirectorySearch: React.FC = () => {
                     <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
                       {facility.type}
                     </span>
-                    <span className="bg-secondary-100 text-secondary-700 px-3 py-1 rounded-full text-sm font-medium">
-                      {facility.status}
-                    </span>
                     <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
-                      Lic: {facility.license_number}
+                      Capacity: {facility.capacity}
                     </span>
+                    {facility.verified && (
+                      <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                        ✓ Verified
+                      </span>
+                    )}
                   </div>
                   
                   <p className="text-slate-700 mb-4 line-clamp-2">
@@ -136,8 +138,7 @@ const DirectorySearch: React.FC = () => {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2 text-slate-900">
                       <DollarSign size={20} className="text-accent-600" />
-                      <span className="font-bold text-lg">${facility.price}/mo</span>
-                      <span className="text-slate-500">starting</span>
+                      <span className="font-bold text-lg">{facility.price}</span>
                     </div>
                     <div className="flex gap-2">
                       <button className="border border-primary-600 text-primary-600 hover:bg-primary-50 px-4 py-2 rounded-md font-medium transition-colors">

@@ -1,0 +1,62 @@
+[
+    {
+        "id": "15601302",
+        "name": "Acacia Creek - Union City",
+        "address": "34400 MISSION BLVD., UNION CITY, CA 94587",
+        "capacity": 376,
+        "type": "Assisted Living",
+        "price": "Call for Pricing",
+        "rating": 0,
+        "verified": true,
+        "vacancy": false,
+        "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": "216801686",
+        "name": "Aldersly",
+        "address": "326 MISSION AVENUE, SAN RAFAEL, CA 94901",
+        "capacity": 137,
+        "type": "Assisted Living",
+        "price": "Call for Pricing",
+        "rating": 0,
+        "verified": true,
+        "vacancy": false,
+        "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": "198603605",
+        "name": "Ararat Gardens",
+        "address": "1230 EAST WINDSOR ROAD, GLENDALE, CA 91205",
+        "capacity": 175,
+        "type": "Assisted Living",
+        "price": "Call for Pricing",
+        "rating": 0,
+        "verified": true,
+        "vacancy": false,
+        "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": "191222081",
+        "name": "Ararat Home Of Los Angeles",
+        "address": "15105 MISSION HILLS RD., MISSION HILLS, CA 91345",
+        "capacity": 186,
+        "type": "Assisted Living",
+        "price": "Call for Pricing",
+        "rating": 0,
+        "verified": true,
+        "vacancy": false,
+        "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": "191500146",
+        "name": "Artesia Christian Home",
+        "address": "11614 EAST 183RD STREET, ARTESIA, CA 90701",
+        "capacity": 143,
+        "type": "Assisted Living",
+        "price": "Call for Pricing",
+        "rating": 0,
+        "verified": true,
+        "vacancy": false,
+        "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    }
+]
