@@ -4,6 +4,18 @@ import { LineChart, DollarSign, MapPin, TrendingUp, Upload, Download } from 'luc
 const PricingAudit: React.FC = () => {
   const [facilityName, setFacilityName] = useState('');
   const [zipCode, setZipCode] = useState('');
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    // Simulate API delay
+    setTimeout(() => {
+      setIsLoading(false);
+      setIsSubmitted(true);
+    }, 1500);
+  };
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -36,100 +48,162 @@ const PricingAudit: React.FC = () => {
       {/* Form Section */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12">
         <div className="bg-white rounded-xl shadow-xl p-8">
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold text-slate-900 mb-2">Get Your Pricing Report</h2>
-            <p className="text-slate-600">Enter your facility details below to receive a comprehensive pricing analysis</p>
-          </div>
-
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
-                  Facility Name
-                </label>
-                <input
-                  type="text"
-                  value={facilityName}
-                  onChange={(e) => setFacilityName(e.target.value)}
-                  placeholder="Your Facility Name"
-                  className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                />
+          {!isSubmitted ? (
+            <>
+              <div className="mb-8">
+                <h2 className="text-2xl font-bold text-slate-900 mb-2">Get Your Pricing Report</h2>
+                <p className="text-slate-600">Enter your facility details below to receive a comprehensive pricing analysis</p>
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
-                  ZIP Code
-                </label>
-                <div className="relative">
-                  <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" size={20} />
-                  <input
-                    type="text"
-                    value={zipCode}
-                    onChange={(e) => setZipCode(e.target.value)}
-                    placeholder="94103"
-                    className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                  />
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Facility Name
+                    </label>
+                    <input
+                      type="text"
+                      value={facilityName}
+                      onChange={(e) => setFacilityName(e.target.value)}
+                      placeholder="Your Facility Name"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      ZIP Code
+                    </label>
+                    <div className="relative">
+                      <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" size={20} />
+                      <input
+                        type="text"
+                        value={zipCode}
+                        onChange={(e) => setZipCode(e.target.value)}
+                        placeholder="94103"
+                        className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Care Type
+                    </label>
+                    <select className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                      <option>Assisted Living</option>
+                      <option>Memory Care</option>
+                      <option>Independent Living</option>
+                      <option>Nursing Home</option>
+                      <option>CCRC</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Your Email
+                    </label>
+                    <input
+                      type="email"
+                      placeholder="operator@example.com"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Number of Units
+                    </label>
+                    <input
+                      type="number"
+                      placeholder="120"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Current Average Rate
+                    </label>
+                    <div className="relative">
+                      <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" size={20} />
+                      <input
+                        type="number"
+                        placeholder="5200"
+                        className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={isLoading}
+                  className="w-full bg-primary-600 hover:bg-primary-700 text-white py-4 rounded-md font-bold text-lg transition-colors flex items-center justify-center gap-2"
+                >
+                  {isLoading ? (
+                    'Analyzing Market Data...'
+                  ) : (
+                    <>
+                      <TrendingUp size={24} />
+                      Generate Free Pricing Report
+                    </>
+                  )}
+                </button>
+              </form>
+            </>
+          ) : (
+            <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                  <TrendingUp className="w-8 h-8 text-green-600" />
+                </div>
+                <h2 className="text-2xl font-bold text-slate-900">Audit Complete</h2>
+                <p className="text-slate-600">Based on real-time data from {zipCode || 'your area'}</p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                  <h3 className="text-sm font-medium text-slate-500 mb-1">Your Average Rate</h3>
+                  <p className="text-3xl font-bold text-slate-900">$5,200</p>
+                  <div className="mt-4 h-2 bg-slate-200 rounded-full overflow-hidden">
+                    <div className="h-full bg-primary-500 w-[70%]"></div>
+                  </div>
+                </div>
+                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                  <h3 className="text-sm font-medium text-slate-500 mb-1">Market Average</h3>
+                  <p className="text-3xl font-bold text-slate-900">$5,850</p>
+                  <div className="mt-4 h-2 bg-slate-200 rounded-full overflow-hidden">
+                    <div className="h-full bg-slate-400 w-[85%]"></div>
+                  </div>
                 </div>
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
-                  Care Type
-                </label>
-                <select className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
-                  <option>Assisted Living</option>
-                  <option>Memory Care</option>
-                  <option>Independent Living</option>
-                  <option>Nursing Home</option>
-                  <option>CCRC</option>
-                </select>
+              <div className="bg-blue-50 border border-blue-100 rounded-xl p-6 mb-8">
+                <h3 className="text-lg font-bold text-blue-900 mb-2">Recommendation: Opportunity to Increase Rates</h3>
+                <p className="text-blue-700">
+                  Your facility is priced <strong>11% below market average</strong> for similar care types in this ZIP code. 
+                  You could potentially increase revenue by <strong>$78,000/year</strong> (based on 100 units) without losing competitiveness.
+                </p>
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  placeholder="operator@example.com"
-                  className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
-                  Number of Units
-                </label>
-                <input
-                  type="number"
-                  placeholder="120"
-                  className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
-                  Current Average Rate
-                </label>
-                <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" size={20} />
-                  <input
-                    type="number"
-                    placeholder="5200"
-                    className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                  />
-                </div>
+              <div className="space-y-4">
+                <button className="w-full bg-primary-600 hover:bg-primary-700 text-white py-4 rounded-md font-bold text-lg transition-colors flex items-center justify-center gap-2">
+                  <Download size={20} />
+                  Download Full PDF Report
+                </button>
+                <button 
+                  onClick={() => setIsSubmitted(false)}
+                  className="w-full bg-white border border-slate-300 text-slate-600 py-3 rounded-md font-medium hover:bg-slate-50 transition-colors"
+                >
+                  Run Another Audit
+                </button>
               </div>
             </div>
-
-            <button
-              type="submit"
-              className="w-full bg-primary-600 hover:bg-primary-700 text-white py-4 rounded-md font-bold text-lg transition-colors flex items-center justify-center gap-2"
-            >
-              <TrendingUp size={24} />
-              Generate Free Pricing Report
-            </button>
-          </form>
+          )}
         </div>
       </div>
 
