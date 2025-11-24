@@ -9,7 +9,7 @@ import PricingAudit from './features/public/wedge-tools/PricingAudit';
 
 function App() {
   return (
-    <BrowserRouter basename="/silvertech-directory">
+    <BrowserRouter>
       <div className="min-h-screen bg-white">
         <Navbar />
         <Routes>
