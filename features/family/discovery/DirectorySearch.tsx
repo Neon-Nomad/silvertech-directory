@@ -9,6 +9,8 @@ const DirectorySearch: React.FC = () => {
   const [location, setLocation] = useState('');
   const [selectedFacility, setSelectedFacility] = useState<typeof facilitiesData[0] | null>(null);
   const [isReviewsModalOpen, setIsReviewsModalOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 50;
 
   const handleShowReviews = (facility: typeof facilitiesData[0]) => {
     setSelectedFacility(facility);
@@ -35,6 +37,11 @@ const DirectorySearch: React.FC = () => {
     </svg>`;
     return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
   };
+
+  const totalPages = Math.ceil(facilitiesData.length / itemsPerPage);
+  const startIdx = (currentPage - 1) * itemsPerPage;
+  const endIdx = Math.min(startIdx + itemsPerPage, facilitiesData.length);
+  const displayedFacilities = facilitiesData.slice(startIdx, endIdx);
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -122,10 +129,12 @@ const DirectorySearch: React.FC = () => {
           <div className="flex-1">
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-slate-900 mb-2">Search Results</h2>
-              <p className="text-slate-600">Found {facilitiesData.length} facilities near you</p>
+              <p className="text-slate-600">
+                Showing {startIdx + 1}-{endIdx} of {facilitiesData.length} facilities
+              </p>
             </div>
             <div className="space-y-4">
-              {facilitiesData.map((facility, index) => (
+              {displayedFacilities.map((facility, index) => (
                 <div key={index} className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden">
                   <img
                     src={getFacilityImage(facility.id, facility.name)}
@@ -186,10 +195,22 @@ const DirectorySearch: React.FC = () => {
                 </div>
               ))}
             </div>
-            <div className="mt-8 text-center">
-              <p className="text-slate-600 mb-4">Showing {facilitiesData.length} results</p>
-              <button className="bg-slate-200 hover:bg-slate-300 text-slate-900 px-6 py-3 rounded-md font-medium transition-colors">
-                Load More Results
+            {/* Pagination Controls */}
+            <div className="flex justify-center items-center mt-8 space-x-4">
+              <button
+                onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+                disabled={currentPage === 1}
+                className="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-900 rounded disabled:opacity-50"
+              >
+                Previous
+              </button>
+              <span>Page {currentPage} of {totalPages}</span>
+              <button
+                onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+                disabled={currentPage === totalPages}
+                className="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-900 rounded disabled:opacity-50"
+              >
+                Next
               </button>
             </div>
           </div>
