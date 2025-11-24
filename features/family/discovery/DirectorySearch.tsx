@@ -3,6 +3,24 @@ import { Search, MapPin, DollarSign,  Star, Filter } from 'lucide-react';
 
 import facilitiesData from '../../../src/data/facilities.json';
 
+// Deterministic Unsplash image strategy - consistent images for each facility
+const PLACEHOLDER_IMAGES = [
+  "1560185893-a55cbc8c57e8", "1541123356219-284ebe98ae3b",
+  "1564013799919-ab600027ffc6", "1580587771525-78b9dba3b91d",
+  "1518780664597-5e030c5c9358", "1449844702622-99956808c1f9",
+  "1600596542815-a479726fd771", "1512917774080-9991f1c4c750"
+];
+
+// Helper function to get consistent image for each facility based on ID
+const getFacilityImage = (id: string): string => {
+  // Extract numeric part from facility ID
+  const numericId = parseInt(id.replace(/\D/g, '')) || 0;
+  // Use modulo to select image index
+  const imageIndex = numericId % PLACEHOLDER_IMAGES.length;
+  const imageId = PLACEHOLDER_IMAGES[imageIndex];
+  return `https://images.unsplash.com/photo-${imageId}?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80`;
+};
+
 const DirectorySearch: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [location, setLocation] = useState('');
@@ -102,8 +120,16 @@ const DirectorySearch: React.FC = () => {
 
             <div className="space-y-4">
               {facilitiesData.map((facility, index) => (
-                <div key={index} className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6">
-                  <div className="flex justify-between items-start mb-3">
+                <div key={index} className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden">
+                  {/* Facility Image */}
+                  <img 
+                    src={getFacilityImage(facility.id)} 
+                    alt={facility.name}
+                    className="w-full h-48 object-cover"
+                  />
+                  
+                  <div className="p-6">
+                    <div className="flex justify-between items-start mb-3">
                     <div>
                       <h3 className="text-xl font-bold text-slate-900 mb-1">{facility.name}</h3>
                       <p className="text-slate-600 flex items-center gap-2">
@@ -148,6 +174,7 @@ const DirectorySearch: React.FC = () => {
                         Schedule Tour
                       </button>
                     </div>
+                  </div>
                   </div>
                 </div>
               ))}
