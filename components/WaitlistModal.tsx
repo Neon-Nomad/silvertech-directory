@@ -41,7 +41,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose })
         {/* Google Form Iframe */}
         <div className="overflow-y-auto max-h-[calc(90vh-80px)]">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSeSQICNilPN1rfOWQnaZf8iWrhdOU_DVSfgOBb8TziWeQR5hQ/viewform?embedded=true"
+            src="https://forms.gle/jUbnTYkavc1UZH9U6"
             width="100%"
             height="800"
             frameBorder="0"
