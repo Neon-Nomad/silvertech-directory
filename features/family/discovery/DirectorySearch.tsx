@@ -6,24 +6,20 @@ import ReviewsModal from '../../../components/ReviewsModal';
 import { generateReviews, calculateAverageRating } from '../../../src/utils/reviewGenerator';
 
 
-// Curated building/architecture photos - all verified working
-// Focus on modern residential and care facility aesthetics
-const FACILITY_IMAGES = [
-  "1519494080410-f9aa76039b0d", "1564013799919-ab600027ffc6", "1545324418-4fb5e76c05df",
-  "1486406146456-c4f43b3b6888", "1494145904049-0dca59b4bbad", "1448630360428-65456885c650",
-  "1477959858617-67f85cf4f1df", "1512917774080-9991f1c4c750", "1480714378408-67cf0d13851b",
-  "1523217582562-09d0def993a6", "1449247709967-d4461a6a6103", "1560185127-6d643b8e6f64",
-  "1555636222-cae831e670b3", "1449844932441-4b16bbe1e065", "1513584684-d5c8c2f6820e",
-  "1517487881594-2787fef5ebf7", "1518780664697-55e3ad937233", "1541123356219-284ebe98ae3b",
-];
-
-// Helper function to get consistent image for each facility
-const getFacilityImage = (id: string): string => {
+// Using placeholder.com for 100% reliable image generation
+// Generates professional placeholders with facility info
+const getFacilityImage = (id: string, name: string): string => {
+  // Use placeholder.com with background color variation based on ID
   const numericId = parseInt(id.replace(/\D/g, ''), 10) || 0;
-  const imageIndex = numericId % FACILITY_IMAGES.length;
-  const imageId = FACILITY_IMAGES[imageIndex];
-  // Using ixlib=rb-4.0.3 for stable API version
-  return `https://images.unsplash.com/photo-${imageId}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80`;
+  // Create color variations (5 different professional colors)
+  const colors = ['4A5568', '2D3748', '718096', '4299E1', '48BB78'];
+  const colorIndex = numericId % colors.length;
+  const bgColor = colors[colorIndex];
+  
+  // Encode facility name for URL
+  const text = encodeURIComponent(name.substring(0, 30));
+  
+  return `https://via.placeholder.com/800x600/${bgColor}/FFFFFF?text=${text}`;
 };
 
 const DirectorySearch: React.FC = () => {
@@ -135,7 +131,7 @@ const DirectorySearch: React.FC = () => {
                 <div key={index} className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden">
                   {/* Facility Image */}
                   <img 
-                    src={getFacilityImage(facility.id)} 
+                    src={getFacilityImage(facility.id, facility.name)} 
                     alt={facility.name}
                     className="w-full h-48 object-cover"
                   />
