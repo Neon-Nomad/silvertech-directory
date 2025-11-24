@@ -6,27 +6,16 @@ import ReviewsModal from '../../../components/ReviewsModal';
 import { generateReviews, calculateAverageRating } from '../../../src/utils/reviewGenerator';
 
 
-// Deterministic Unsplash image strategy - consistent images for each facility
-// Using verified, working Unsplash photo IDs
-const PLACEHOLDER_IMAGES = [
-  "1519494080410-f9aa76039b0d", // Modern building exterior
-  "1564013799919-ab600027ffc6", // Contemporary architecture
-  "1545324418-4fb5e76c05df",   // Residential building
-  "1486406146456-c4f43b3b6888", // Architectural design
-  "1449247709967-d4461a6a6103", // Urban building
-  "1494145904049-0dca59b4bbad", // Modern residential
-  "1448630360428-65456885c650", // Building facade
-  "1477959858617-67f85cf4f1df"  // Contemporary exterior
-];
-
-// Helper function to get consistent image for each facility based on ID
+// Deterministic Unsplash image strategy - unique images for each facility
+// Using Unsplash Source API with facility ID as seed for variety
 const getFacilityImage = (id: string): string => {
-  // Convert ID to number for consistent hashing
+  // Convert facility ID to a consistent seed number
   const numericId = parseInt(id.replace(/\D/g, ''), 10) || 0;
-  // Use modulo to select image index (ensures different facilities get different images)
-  const imageIndex = numericId % PLACEHOLDER_IMAGES.length;
-  const imageId = PLACEHOLDER_IMAGES[imageIndex];
-  return `https://images.unsplash.com/photo-${imageId}?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80`;
+  
+  // Use Unsplash Source API with seed for deterministic random images
+  // This gives us access to thousands of building/architecture photos
+  // The same seed always returns the same image
+  return `https://source.unsplash.com/800x600/?building,architecture&sig=${numericId}`;
 };
 
 const DirectorySearch: React.FC = () => {
