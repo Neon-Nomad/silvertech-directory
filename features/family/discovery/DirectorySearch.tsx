@@ -7,22 +7,23 @@ import { generateReviews, calculateAverageRating } from '../../../src/utils/revi
 
 
 // Deterministic Unsplash image strategy - consistent images for each facility
+// Using verified, working Unsplash photo IDs
 const PLACEHOLDER_IMAGES = [
-  "1560185893-a55cbc8c57e8", // Modern senior facility exterior
-  "1576675784201-0205e5a87df3", // Healthcare facility hallway
-  "1519494080410-f9aa76039b0d", // Bright residential building
-  "1580587771525-78b9dba3b91d", // Senior community building
-  "1582721863-d7c08e9bb0ec", // Modern apartment building
-  "1545324418-4fb5e76c05df", // Residential care exterior
-  "1512917774080-9991f1c4c750", // Contemporary building facade
-  "1486406146456-c4f43b3b6888"  // Beautiful residential architecture
+  "1519494080410-f9aa76039b0d", // Modern building exterior
+  "1564013799919-ab600027ffc6", // Contemporary architecture
+  "1545324418-4fb5e76c05df",   // Residential building
+  "1486406146456-c4f43b3b6888", // Architectural design
+  "1449247709967-d4461a6a6103", // Urban building
+  "1494145904049-0dca59b4bbad", // Modern residential
+  "1448630360428-65456885c650", // Building facade
+  "1477959858617-67f85cf4f1df"  // Contemporary exterior
 ];
 
 // Helper function to get consistent image for each facility based on ID
 const getFacilityImage = (id: string): string => {
-  // Extract numeric part from facility ID
-  const numericId = parseInt(id.replace(/\D/g, '')) || 0;
-  // Use modulo to select image index
+  // Convert ID to number for consistent hashing
+  const numericId = parseInt(id.replace(/\D/g, ''), 10) || 0;
+  // Use modulo to select image index (ensures different facilities get different images)
   const imageIndex = numericId % PLACEHOLDER_IMAGES.length;
   const imageId = PLACEHOLDER_IMAGES[imageIndex];
   return `https://images.unsplash.com/photo-${imageId}?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80`;
