@@ -1,0 +1,81 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+
+const Navbar: React.FC = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  return (
+    <nav className="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <Link to="/" className="flex items-center">
+            <span className="text-xl font-bold text-white">
+              SilverTech<span className="text-primary-400">Directory</span>
+            </span>
+          </Link>
+
+          <div className="hidden md:flex items-center space-x-8">
+            <Link
+              to="/search"
+              className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
+            >
+              Find Care
+            </Link>
+            <Link
+              to="/tools/pricing-audit"
+              className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
+            >
+              For Operators
+            </Link>
+            <Link
+              to="/dashboard"
+              className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+            >
+              Operator Login
+            </Link>
+          </div>
+
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-slate-300 hover:text-white p-2"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-slate-800 border-t border-slate-700">
+          <div className="px-4 py-4 space-y-3">
+            <Link
+              to="/search"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-slate-300 hover:text-white text-base font-medium"
+            >
+              Find Care
+            </Link>
+            <Link
+              to="/tools/pricing-audit"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-slate-300 hover:text-white text-base font-medium"
+            >
+              For Operators
+            </Link>
+            <Link
+              to="/dashboard"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-base font-medium text-center"
+            >
+              Operator Login
+            </Link>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;

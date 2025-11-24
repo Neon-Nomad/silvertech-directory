@@ -1,0 +1,193 @@
+import React, { useState } from 'react';
+import { LineChart, DollarSign, MapPin, TrendingUp, Upload, Download } from 'lucide-react';
+
+const PricingAudit: React.FC = () => {
+  const [facilityName, setFacilityName] = useState('');
+  const [zipCode, setZipCode] = useState('');
+
+  return (
+    <div className="min-h-screen bg-slate-50">
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-primary-600 to-accent-600 py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Free Pricing Competitive Analysis
+          </h1>
+          <p className="text-xl text-white/90 mb-8">
+            See how your pricing compares to competitors in your market. Get actionable insights in minutes.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 text-white">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-white rounded-full"></div>
+              <span>100% Free</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-white rounded-full"></div>
+              <span>No Credit Card</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-white rounded-full"></div>
+              <span>Instant Results</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Form Section */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12">
+        <div className="bg-white rounded-xl shadow-xl p-8">
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 mb-2">Get Your Pricing Report</h2>
+            <p className="text-slate-600">Enter your facility details below to receive a comprehensive pricing analysis</p>
+          </div>
+
+          <form className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Facility Name
+                </label>
+                <input
+                  type="text"
+                  value={facilityName}
+                  onChange={(e) => setFacilityName(e.target.value)}
+                  placeholder="Your Facility Name"
+                  className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  ZIP Code
+                </label>
+                <div className="relative">
+                  <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" size={20} />
+                  <input
+                    type="text"
+                    value={zipCode}
+                    onChange={(e) => setZipCode(e.target.value)}
+                    placeholder="94103"
+                    className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Care Type
+                </label>
+                <select className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                  <option>Assisted Living</option>
+                  <option>Memory Care</option>
+                  <option>Independent Living</option>
+                  <option>Nursing Home</option>
+                  <option>CCRC</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  placeholder="operator@example.com"
+                  className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Number of Units
+                </label>
+                <input
+                  type="number"
+                  placeholder="120"
+                  className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Current Average Rate
+                </label>
+                <div className="relative">
+                  <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" size={20} />
+                  <input
+                    type="number"
+                    placeholder="5200"
+                    className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-primary-600 hover:bg-primary-700 text-white py-4 rounded-md font-bold text-lg transition-colors flex items-center justify-center gap-2"
+            >
+              <TrendingUp size={24} />
+              Generate Free Pricing Report
+            </button>
+          </form>
+        </div>
+      </div>
+
+      {/* Benefits Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
+          What You'll Get in Your Report
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <LineChart className="text-primary-600" size={32} />
+            </div>
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Market Comparison</h3>
+            <p className="text-slate-600">
+              See how your pricing stacks up against 10+ competitors in your area
+            </p>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+            <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <TrendingUp className="text-secondary-600" size={32} />
+            </div>
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Pricing Recommendations</h3>
+            <p className="text-slate-600">
+              Data-driven suggestions to optimize your rates and increase occupancy
+            </p>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+            <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Download className="text-accent-600" size={32} />
+            </div>
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Downloadable PDF</h3>
+            <p className="text-slate-600">
+              Professional report you can share with your team and stakeholders
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div className="bg-slate-900 py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Ready to Optimize Your Pricing?
+          </h2>
+          <p className="text-xl text-slate-300 mb-8">
+            Join 500+ operators who use SilverTech Directory to stay competitive
+          </p>
+          <button className="bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors">
+            Get Started - It's Free
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PricingAudit;
