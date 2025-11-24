@@ -4,8 +4,31 @@ import { LineChart, DollarSign, MapPin, TrendingUp, Upload, Download } from 'luc
 const PricingAudit: React.FC = () => {
   const [facilityName, setFacilityName] = useState('');
   const [zipCode, setZipCode] = useState('');
+  const [careType, setCareType] = useState('Assisted Living');
+  const [currentRate, setCurrentRate] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  
+  // Mock Market Data
+  const marketRates: Record<string, number> = {
+    'Assisted Living': 5850,
+    'Memory Care': 7200,
+    'Independent Living': 4500,
+    'Nursing Home': 9500,
+    'CCRC': 6000
+  };
+
+  const getAnalysis = () => {
+    const userRate = parseInt(currentRate) || 0;
+    const marketRate = marketRates[careType] || 5500;
+    const diff = marketRate - userRate;
+    const percentDiff = Math.round((Math.abs(diff) / marketRate) * 100);
+    const isBelowMarket = diff > 0;
+    
+    return { userRate, marketRate, diff, percentDiff, isBelowMarket };
+  };
+
+  const analysis = getAnalysis();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -92,7 +115,11 @@ const PricingAudit: React.FC = () => {
                     <label className="block text-sm font-medium text-slate-700 mb-2">
                       Care Type
                     </label>
-                    <select className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                    <select 
+                      value={careType}
+                      onChange={(e) => setCareType(e.target.value)}
+                      className="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    >
                       <option>Assisted Living</option>
                       <option>Memory Care</option>
                       <option>Independent Living</option>
@@ -132,8 +159,11 @@ const PricingAudit: React.FC = () => {
                       <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400" size={20} />
                       <input
                         type="number"
+                        value={currentRate}
+                        onChange={(e) => setCurrentRate(e.target.value)}
                         placeholder="5200"
                         className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        required
                       />
                     </div>
                   </div>
@@ -162,31 +192,48 @@ const PricingAudit: React.FC = () => {
                   <TrendingUp className="w-8 h-8 text-green-600" />
                 </div>
                 <h2 className="text-2xl font-bold text-slate-900">Audit Complete</h2>
-                <p className="text-slate-600">Based on real-time data from {zipCode || 'your area'}</p>
+                <p className="text-slate-600">Based on real-time data from {zipCode || 'your area'} for <strong>{careType}</strong></p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
                   <h3 className="text-sm font-medium text-slate-500 mb-1">Your Average Rate</h3>
-                  <p className="text-3xl font-bold text-slate-900">$5,200</p>
+                  <p className="text-3xl font-bold text-slate-900">${analysis.userRate.toLocaleString()}</p>
                   <div className="mt-4 h-2 bg-slate-200 rounded-full overflow-hidden">
-                    <div className="h-full bg-primary-500 w-[70%]"></div>
+                    <div 
+                      className="h-full bg-primary-500 transition-all duration-1000" 
+                      style={{ width: `${Math.min((analysis.userRate / (analysis.marketRate * 1.2)) * 100, 100)}%` }}
+                    ></div>
                   </div>
                 </div>
                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
                   <h3 className="text-sm font-medium text-slate-500 mb-1">Market Average</h3>
-                  <p className="text-3xl font-bold text-slate-900">$5,850</p>
+                  <p className="text-3xl font-bold text-slate-900">${analysis.marketRate.toLocaleString()}</p>
                   <div className="mt-4 h-2 bg-slate-200 rounded-full overflow-hidden">
-                    <div className="h-full bg-slate-400 w-[85%]"></div>
+                    <div 
+                      className="h-full bg-slate-400 transition-all duration-1000" 
+                      style={{ width: `${Math.min((analysis.marketRate / (analysis.marketRate * 1.2)) * 100, 100)}%` }}
+                    ></div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-blue-50 border border-blue-100 rounded-xl p-6 mb-8">
-                <h3 className="text-lg font-bold text-blue-900 mb-2">Recommendation: Opportunity to Increase Rates</h3>
-                <p className="text-blue-700">
-                  Your facility is priced <strong>11% below market average</strong> for similar care types in this ZIP code. 
-                  You could potentially increase revenue by <strong>$78,000/year</strong> (based on 100 units) without losing competitiveness.
+              <div className={`border rounded-xl p-6 mb-8 ${analysis.isBelowMarket ? 'bg-blue-50 border-blue-100' : 'bg-orange-50 border-orange-100'}`}>
+                <h3 className={`text-lg font-bold mb-2 ${analysis.isBelowMarket ? 'text-blue-900' : 'text-orange-900'}`}>
+                  {analysis.isBelowMarket ? 'Recommendation: Opportunity to Increase Rates' : 'Recommendation: Focus on Value & Occupancy'}
+                </h3>
+                <p className={analysis.isBelowMarket ? 'text-blue-700' : 'text-orange-700'}>
+                  {analysis.isBelowMarket ? (
+                    <>
+                      Your facility is priced <strong>{analysis.percentDiff}% below market average</strong> for {careType} in this area. 
+                      You could potentially increase revenue by <strong>${(analysis.diff * 100 * 12).toLocaleString()}/year</strong> (based on 100 units) without losing competitiveness.
+                    </>
+                  ) : (
+                    <>
+                      Your facility is priced <strong>{analysis.percentDiff}% above market average</strong>. 
+                      To maintain high occupancy, focus your marketing on your premium amenities, higher caregiver ratios, and unique value propositions.
+                    </>
+                  )}
                 </p>
               </div>
 
