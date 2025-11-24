@@ -2,13 +2,20 @@ import React, { useState } from 'react';
 import { Search, MapPin, DollarSign,  Star, Filter } from 'lucide-react';
 
 import facilitiesData from '../../../src/data/facilities.json';
+import ReviewsModal from '../../../components/ReviewsModal';
+import { generateReviews, calculateAverageRating } from '../../../src/utils/reviewGenerator';
+
 
 // Deterministic Unsplash image strategy - consistent images for each facility
 const PLACEHOLDER_IMAGES = [
-  "1560185893-a55cbc8c57e8", "1541123356219-284ebe98ae3b",
-  "1564013799919-ab600027ffc6", "1580587771525-78b9dba3b91d",
-  "1518780664597-5e030c5c9358", "1449844702622-99956808c1f9",
-  "1600596542815-a479726fd771", "1512917774080-9991f1c4c750"
+  "1560185893-a55cbc8c57e8", // Modern senior facility exterior
+  "1576675784201-0205e5a87df3", // Healthcare facility hallway
+  "1519494080410-f9aa76039b0d", // Bright residential building
+  "1580587771525-78b9dba3b91d", // Senior community building
+  "1582721863-d7c08e9bb0ec", // Modern apartment building
+  "1545324418-4fb5e76c05df", // Residential care exterior
+  "1512917774080-9991f1c4c750", // Contemporary building facade
+  "1486406146456-c4f43b3b6888"  // Beautiful residential architecture
 ];
 
 // Helper function to get consistent image for each facility based on ID
@@ -24,6 +31,13 @@ const getFacilityImage = (id: string): string => {
 const DirectorySearch: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [location, setLocation] = useState('');
+  const [selectedFacility, setSelectedFacility] = useState<typeof facilitiesData[0] | null>(null);
+  const [isReviewsModalOpen, setIsReviewsModalOpen] = useState(false);
+
+  const handleShowReviews = (facility: typeof facilitiesData[0]) => {
+    setSelectedFacility(facility);
+    setIsReviewsModalOpen(true);
+  };
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -137,10 +151,16 @@ const DirectorySearch: React.FC = () => {
                         {facility.address}
                       </p>
                     </div>
-                    <div className="flex items-center gap-1 bg-amber-100 px-3 py-1 rounded-full">
+                    <button 
+                      onClick={() => handleShowReviews(facility)}
+                      className="flex items-center gap-1 bg-amber-100 hover:bg-amber-200 px-3 py-1 rounded-full transition-colors cursor-pointer"
+                    >
                       <Star size={16} className="text-amber-600 fill-amber-600" />
-                      <span className="font-semibold text-amber-900">{facility.rating}</span>
-                    </div>
+                      <span className="font-semibold text-amber-900">
+                        {calculateAverageRating(generateReviews(facility.id, facility.name))}
+                      </span>
+                      <span className="text-xs text-amber-700 ml-1">({generateReviews(facility.id, facility.name).length})</span>
+                    </button>
                   </div>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -189,6 +209,16 @@ const DirectorySearch: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Reviews Modal */}
+      {selectedFacility && (
+        <ReviewsModal
+          isOpen={isReviewsModalOpen}
+          onClose={() => setIsReviewsModalOpen(false)}
+          facilityName={selectedFacility.name}
+          reviews={generateReviews(selectedFacility.id, selectedFacility.name)}
+        />
+      )}
     </div>
   );
 };
