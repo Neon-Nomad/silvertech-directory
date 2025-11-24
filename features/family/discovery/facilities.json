@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Sunrise of San Francisco",
+        "address": "123 Main Street, San Francisco, CA 94103",
+        "license_number": "385600123",
+        "capacity": 85,
+        "status": "Licensed",
+        "rating": 4.8,
+        "price": 5200,
+        "type": "Assisted Living"
+    },
+    {
+        "name": "Oakmont of Valencia",
+        "address": "24000 Copper Hill Dr, Valencia, CA 91354",
+        "license_number": "197608456",
+        "capacity": 110,
+        "status": "Licensed",
+        "rating": 4.9,
+        "price": 6500,
+        "type": "Memory Care"
+    },
+    {
+        "name": "Pacifica Senior Living",
+        "address": "380 South Main St, Milpitas, CA 95035",
+        "license_number": "435201789",
+        "capacity": 92,
+        "status": "Licensed",
+        "rating": 4.5,
+        "price": 4800,
+        "type": "Independent Living"
+    },
+    {
+        "name": "Atria Park of San Mateo",
+        "address": "2883 S Norfolk St, San Mateo, CA 94403",
+        "license_number": "415600321",
+        "capacity": 145,
+        "status": "Licensed",
+        "rating": 4.7,
+        "price": 5800,
+        "type": "Assisted Living"
+    },
+    {
+        "name": "The Kensington Sierra Madre",
+        "address": "245 West Sierra Madre Blvd, Sierra Madre, CA 91024",
+        "license_number": "198601654",
+        "capacity": 75,
+        "status": "Pending",
+        "rating": 4.6,
+        "price": 7200,
+        "type": "Memory Care"
+    },
+    {
+        "name": "Brookdale San Jose",
+        "address": "1009 Blossom River Way, San Jose, CA 95123",
+        "license_number": "435298765",
+        "capacity": 120,
+        "status": "Licensed",
+        "rating": 4.4,
+        "price": 4500,
+        "type": "Assisted Living"
+    },
+    {
+        "name": "Belmont Village Sunnyvale",
+        "address": "1039 E El Camino Real, Sunnyvale, CA 94087",
+        "license_number": "435202345",
+        "capacity": 135,
+        "status": "Licensed",
+        "rating": 4.9,
+        "price": 6800,
+        "type": "Memory Care"
+    },
+    {
+        "name": "The Forum at Rancho San Antonio",
+        "address": "23500 Cristo Rey Dr, Cupertino, CA 95014",
+        "license_number": "435201111",
+        "capacity": 300,
+        "status": "Licensed",
+        "rating": 5.0,
+        "price": 8500,
+        "type": "CCRC"
+    }
+]

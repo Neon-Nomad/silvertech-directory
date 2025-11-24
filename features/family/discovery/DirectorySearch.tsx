@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Search, MapPin, DollarSign,  Star, Filter } from 'lucide-react';
 
+import facilitiesData from './facilities.json';
+
 const DirectorySearch: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [location, setLocation] = useState('');
@@ -95,43 +97,46 @@ const DirectorySearch: React.FC = () => {
           <div className="flex-1">
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-slate-900 mb-2">Search Results</h2>
-              <p className="text-slate-600">Found 1,247 facilities near you</p>
+              <p className="text-slate-600">Found {facilitiesData.length} facilities near you</p>
             </div>
 
             <div className="space-y-4">
-              {[1, 2, 3].map((item) => (
-                <div key={item} className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6">
+              {facilitiesData.map((facility, index) => (
+                <div key={index} className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6">
                   <div className="flex justify-between items-start mb-3">
                     <div>
-                      <h3 className="text-xl font-bold text-slate-900 mb-1">Sunrise Senior Living</h3>
+                      <h3 className="text-xl font-bold text-slate-900 mb-1">{facility.name}</h3>
                       <p className="text-slate-600 flex items-center gap-2">
                         <MapPin size={16} />
-                        123 Main Street, San Francisco, CA 94103
+                        {facility.address}
                       </p>
                     </div>
                     <div className="flex items-center gap-1 bg-amber-100 px-3 py-1 rounded-full">
                       <Star size={16} className="text-amber-600 fill-amber-600" />
-                      <span className="font-semibold text-amber-900">4.8</span>
+                      <span className="font-semibold text-amber-900">{facility.rating}</span>
                     </div>
                   </div>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
-                      Assisted Living
+                      {facility.type}
                     </span>
                     <span className="bg-secondary-100 text-secondary-700 px-3 py-1 rounded-full text-sm font-medium">
-                      Memory Care
+                      {facility.status}
+                    </span>
+                    <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
+                      Lic: {facility.license_number}
                     </span>
                   </div>
                   
                   <p className="text-slate-700 mb-4 line-clamp-2">
-                    Premium senior living facility with 24/7 care, engaging activities, and restaurant-style dining.
+                    Premium senior living facility with {facility.capacity} beds, offering 24/7 care, engaging activities, and restaurant-style dining.
                   </p>
                   
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2 text-slate-900">
                       <DollarSign size={20} className="text-accent-600" />
-                      <span className="font-bold text-lg">$5,200/mo</span>
+                      <span className="font-bold text-lg">${facility.price}/mo</span>
                       <span className="text-slate-500">starting</span>
                     </div>
                     <div className="flex gap-2">
@@ -148,7 +153,7 @@ const DirectorySearch: React.FC = () => {
             </div>
 
             <div className="mt-8 text-center">
-              <p className="text-slate-600 mb-4">Showing 3 of 1,247 results</p>
+              <p className="text-slate-600 mb-4">Showing {facilitiesData.length} results</p>
               <button className="bg-slate-200 hover:bg-slate-300 text-slate-900 px-6 py-3 rounded-md font-medium transition-colors">
                 Load More Results
               </button>
