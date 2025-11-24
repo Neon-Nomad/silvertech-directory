@@ -6,20 +6,29 @@ import ReviewsModal from '../../../components/ReviewsModal';
 import { generateReviews, calculateAverageRating } from '../../../src/utils/reviewGenerator';
 
 
-// Using placeholder.com for 100% reliable image generation
-// Generates professional placeholders with facility info
+// Generate inline SVG placeholders - 100% reliable, no external dependencies
 const getFacilityImage = (id: string, name: string): string => {
-  // Use placeholder.com with background color variation based on ID
   const numericId = parseInt(id.replace(/\D/g, ''), 10) || 0;
-  // Create color variations (5 different professional colors)
-  const colors = ['4A5568', '2D3748', '718096', '4299E1', '48BB78'];
-  const colorIndex = numericId % colors.length;
-  const bgColor = colors[colorIndex];
   
-  // Encode facility name for URL
-  const text = encodeURIComponent(name.substring(0, 30));
+  // 5 professional color schemes
+  const colors = [
+    { bg: '#4A5568', text: '#FFFFFF' }, // Slate
+    { bg: '#2D3748', text: '#FFFFFF' }, // Dark gray
+    { bg: '#718096', text: '#FFFFFF' }, // Medium gray
+    { bg: '#4299E1', text: '#FFFFFF' }, // Blue
+    { bg: '#48BB78', text: '#FFFFFF' }  // Green
+  ];
   
-  return `https://via.placeholder.com/800x600/${bgColor}/FFFFFF?text=${text}`;
+  const color = colors[numericId % colors.length];
+  const displayName = name.substring(0, 40);
+  
+  // Create SVG data URI
+  const svg = `<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="600" fill="${color.bg}"/>
+    <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="24" fill="${color.text}" text-anchor="middle" dominant-baseline="middle">${displayName}</text>
+  </svg>`;
+  
+  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 };
 
 const DirectorySearch: React.FC = () => {
