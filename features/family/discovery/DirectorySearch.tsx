@@ -6,16 +6,24 @@ import ReviewsModal from '../../../components/ReviewsModal';
 import { generateReviews, calculateAverageRating } from '../../../src/utils/reviewGenerator';
 
 
-// Deterministic image strategy using Picsum Photos
-// Picsum is specifically designed for placeholder images and is highly reliable
+// Curated building/architecture photos - all verified working
+// Focus on modern residential and care facility aesthetics
+const FACILITY_IMAGES = [
+  "1519494080410-f9aa76039b0d", "1564013799919-ab600027ffc6", "1545324418-4fb5e76c05df",
+  "1486406146456-c4f43b3b6888", "1494145904049-0dca59b4bbad", "1448630360428-65456885c650",
+  "1477959858617-67f85cf4f1df", "1512917774080-9991f1c4c750", "1480714378408-67cf0d13851b",
+  "1523217582562-09d0def993a6", "1449247709967-d4461a6a6103", "1560185127-6d643b8e6f64",
+  "1555636222-cae831e670b3", "1449844932441-4b16bbe1e065", "1513584684-d5c8c2f6820e",
+  "1517487881594-2787fef5ebf7", "1518780664697-55e3ad937233", "1541123356219-284ebe98ae3b",
+];
+
+// Helper function to get consistent image for each facility
 const getFacilityImage = (id: string): string => {
-  // Convert facility ID to a seed number
   const numericId = parseInt(id.replace(/\D/g, ''), 10) || 0;
-  
-  // Use Picsum Photos with seed for deterministic images
-  // The seed ensures same facility always gets the same image
-  // Adding random=n as query parameter for better variety
-  return `https://picsum.photos/seed/${numericId}/800/600`;
+  const imageIndex = numericId % FACILITY_IMAGES.length;
+  const imageId = FACILITY_IMAGES[imageIndex];
+  // Using ixlib=rb-4.0.3 for stable API version
+  return `https://images.unsplash.com/photo-${imageId}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80`;
 };
 
 const DirectorySearch: React.FC = () => {
