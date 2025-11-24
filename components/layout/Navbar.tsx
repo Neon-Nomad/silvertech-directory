@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
               For Operators
             </Link>
             <Link
-              to="/dashboard"
+              to="/login"
               className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
             >
               Operator Login
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
               For Operators
             </Link>
             <Link
-              to="/dashboard"
+              to="/login"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-base font-medium text-center"
             >

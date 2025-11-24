@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import LandingPage from './features/public/landing/LandingPage';
 import DirectorySearch from './features/family/discovery/DirectorySearch';
 import OperatorDashboard from './features/operator/dashboard/OperatorDashboard';
+import OperatorLogin from './features/auth/OperatorLogin';
 import PricingAudit from './features/public/wedge-tools/PricingAudit';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/search" element={<DirectorySearch />} />
           <Route path="/dashboard" element={<OperatorDashboard />} />
+          <Route path="/login" element={<OperatorLogin />} />
           <Route path="/tools/pricing-audit" element={<PricingAudit />} />
         </Routes>
       </div>
