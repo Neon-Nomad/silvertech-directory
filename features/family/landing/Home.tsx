@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Search, MapPin, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
+import { useGeolocation } from '@/src/hooks/useGeolocation';
+import { Loader2, Crosshair } from 'lucide-react';
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();
   const [location, setLocation] = useState('');
+  const { loading, error, nearestCity, getLocation } = useGeolocation();
+
+  React.useEffect(() => {
+    if (nearestCity) {
+      setLocation(nearestCity);
+    }
+  }, [nearestCity]);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,8 +47,21 @@ export const Home: React.FC = () => {
                   placeholder="City, State, or ZIP" 
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
-                  className="w-full pl-12 pr-4 py-4 bg-slate-50 border-transparent focus:bg-white border focus:border-primary-500 rounded-xl text-lg outline-none transition-all"
+                  className="w-full pl-12 pr-12 py-4 bg-slate-50 border-transparent focus:bg-white border focus:border-primary-500 rounded-xl text-lg outline-none transition-all"
                 />
+                <button
+                  type="button"
+                  onClick={getLocation}
+                  disabled={loading}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-primary-600 transition-colors disabled:opacity-50"
+                  title="Use my location"
+                >
+                  {loading ? (
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                  ) : (
+                    <Crosshair className="w-5 h-5" />
+                  )}
+                </button>
               </div>
               <Button type="submit" size="lg" className="px-8 text-lg h-auto py-4">
                 Search Directory

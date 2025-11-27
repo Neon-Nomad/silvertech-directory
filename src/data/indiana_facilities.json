@@ -1,0 +1,3634 @@
+[
+  {
+    "name": "1019 BELLE'S PLACE OF CRAWFORDSVILLE",
+    "address_line1": "100 BICKFORD LN",
+    "address_line2": null,
+    "city": "CRAWFORDSVILLE",
+    "state": "IN",
+    "postal_code": "47933",
+    "phone": "(765)362-2000",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-003674-2",
+      "expiration": "2025-09-30",
+      "beds": 33
+    }
+  },
+  {
+    "name": "1019 BELLE'S PLACE OF WABASH",
+    "address_line1": "3037 W DIVISION RD",
+    "address_line2": null,
+    "city": "WABASH",
+    "state": "IN",
+    "postal_code": "46992",
+    "phone": "(260)569-2000",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-003466-2",
+      "expiration": "2025-09-30",
+      "beds": 33
+    }
+  },
+  {
+    "name": "1019 SENIOR LIVING VERMILLION PLACE",
+    "address_line1": "449 MAIN ST",
+    "address_line2": null,
+    "city": "ANDERSON",
+    "state": "IN",
+    "postal_code": "46016",
+    "phone": "(765)622-7825",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-011970-1",
+      "expiration": "2025-10-31",
+      "beds": 50
+    }
+  },
+  {
+    "name": "ADDISON PLACE",
+    "address_line1": "2244 Q AVE",
+    "address_line2": null,
+    "city": "NEW CASTLE",
+    "state": "IN",
+    "postal_code": "47362",
+    "phone": "(765)521-3220",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004426-1",
+      "expiration": "2026-06-30",
+      "beds": 47
+    }
+  },
+  {
+    "name": "ALLISONVILLE MEADOWS ASSISTED LIVING",
+    "address_line1": "10410 ALLISONVILLE ROAD",
+    "address_line2": null,
+    "city": "FISHERS",
+    "state": "IN",
+    "postal_code": "46038",
+    "phone": "(317)436-6400",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013039-1",
+      "expiration": "2026-01-31",
+      "beds": 150
+    }
+  },
+  {
+    "name": "APERION ESTATES PERU, LLC",
+    "address_line1": "1200 KITTY HAWK DRIVE",
+    "address_line2": null,
+    "city": "PERU",
+    "state": "IN",
+    "postal_code": "46970",
+    "phone": "(765)689-7305",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013327-1",
+      "expiration": "2025-08-31",
+      "beds": 76
+    }
+  },
+  {
+    "name": "ARBOR GLEN INDEPENDENT & ASSISTED LIVING COMMUNITY",
+    "address_line1": "5202 ST JOE ROAD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46835",
+    "phone": "(260)492-2202",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-015503-1",
+      "expiration": "2026-05-31",
+      "beds": 133
+    }
+  },
+  {
+    "name": "ASSISTED LIVING AT HARTSFIELD VILLAGE",
+    "address_line1": "10002 COLUMBIA AVE",
+    "address_line2": null,
+    "city": "MUNSTER",
+    "state": "IN",
+    "postal_code": "46321",
+    "phone": "(219)934-0580",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-010937-1",
+      "expiration": "2026-03-31",
+      "beds": 106
+    }
+  },
+  {
+    "name": "ASSISTED LIVING AT ROMWEBER FLATS",
+    "address_line1": "123 SOUTH DEPOT STREET",
+    "address_line2": null,
+    "city": "BATESVILLE",
+    "state": "IN",
+    "postal_code": "47006",
+    "phone": "(812)932-3528",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013321-1",
+      "expiration": "2025-12-31",
+      "beds": 109
+    }
+  },
+  {
+    "name": "ASTER PLACE",
+    "address_line1": "741 PARK EAST BLVD",
+    "address_line2": null,
+    "city": "LAFAYETTE",
+    "state": "IN",
+    "postal_code": "47905",
+    "phone": "(765)446-3540",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013045-1",
+      "expiration": "2025-11-30",
+      "beds": 147
+    }
+  },
+  {
+    "name": "AUBURN SENIOR LIVING, LLC",
+    "address_line1": "1675 W SEVENTH STREET",
+    "address_line2": null,
+    "city": "AUBURN",
+    "state": "IN",
+    "postal_code": "46706",
+    "phone": "(260)908-8300",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014775-1",
+      "expiration": "2025-10-31",
+      "beds": 103
+    }
+  },
+  {
+    "name": "AUTUMN GLEN",
+    "address_line1": "98 NORTH 10TH STREET",
+    "address_line2": null,
+    "city": "GREENCASTLE",
+    "state": "IN",
+    "postal_code": "46135",
+    "phone": "(765)653-6999",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013322-1",
+      "expiration": "2025-10-31",
+      "beds": 64
+    }
+  },
+  {
+    "name": "AVALON SENIOR LIVING",
+    "address_line1": "6021 S ARLINGTON AVENUE",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46237",
+    "phone": "(317)999-9292",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-015486-1",
+      "expiration": "2026-03-31",
+      "beds": 231
+    }
+  },
+  {
+    "name": "AVIVA MERRILLVILLE",
+    "address_line1": "7900 RHODE ISLAND STREET",
+    "address_line2": null,
+    "city": "MERRILLVILLE",
+    "state": "IN",
+    "postal_code": "46410",
+    "phone": "(219)525-4123",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013733-1",
+      "expiration": "2026-01-31",
+      "beds": 58
+    }
+  },
+  {
+    "name": "AVIVA VALPARAISO",
+    "address_line1": "1300 VALE PARK RD",
+    "address_line2": null,
+    "city": "VALPARAISO",
+    "state": "IN",
+    "postal_code": "46383",
+    "phone": "(219)531-2484",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012181-1",
+      "expiration": "2026-06-30",
+      "beds": 105
+    }
+  },
+  {
+    "name": "AZALEA HILLS",
+    "address_line1": "3700 LAFAYETTE PKWY",
+    "address_line2": null,
+    "city": "FLOYDS KNOBS",
+    "state": "IN",
+    "postal_code": "47119",
+    "phone": "(812)923-4888",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-012161-1",
+      "expiration": "2025-11-30",
+      "beds": 68
+    }
+  },
+  {
+    "name": "BELL OAKS PLACE",
+    "address_line1": "4200 WYNTREE DR",
+    "address_line2": null,
+    "city": "NEWBURGH",
+    "state": "IN",
+    "postal_code": "47630",
+    "phone": "(812)858-0488",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004903-1",
+      "expiration": "2026-06-30",
+      "beds": 75
+    }
+  },
+  {
+    "name": "BELVEDERE SENIOR HOUSING",
+    "address_line1": "343 E 90TH DRIVE",
+    "address_line2": null,
+    "city": "MERRILLVILLE",
+    "state": "IN",
+    "postal_code": "46410",
+    "phone": "(219)769-2145",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014178-1",
+      "expiration": "2026-02-28",
+      "beds": 140
+    }
+  },
+  {
+    "name": "BENNETT PLACE",
+    "address_line1": "3928 HORNE AVE",
+    "address_line2": null,
+    "city": "NEW ALBANY",
+    "state": "IN",
+    "postal_code": "47150",
+    "phone": "(812)948-1960",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004442-1",
+      "expiration": "2026-06-30",
+      "beds": 47
+    }
+  },
+  {
+    "name": "BETHANY VILLAGE ASSISTED LIVING",
+    "address_line1": "3530 S SHELBY ST",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46227",
+    "phone": "(317)784-3066",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-001121-1",
+      "expiration": "2025-12-31",
+      "beds": 130
+    }
+  },
+  {
+    "name": "BICKFORD OF CARMEL",
+    "address_line1": "5829  EAST 116TH STREET",
+    "address_line2": null,
+    "city": "CARMEL",
+    "state": "IN",
+    "postal_code": "46033",
+    "phone": "(317)807-1500",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013217-1",
+      "expiration": "2026-05-31",
+      "beds": 82
+    }
+  },
+  {
+    "name": "BICKFORD OF CROWN POINT",
+    "address_line1": "140 E 107TH AVENUE",
+    "address_line2": null,
+    "city": "CROWN POINT",
+    "state": "IN",
+    "postal_code": "46307",
+    "phone": "(219)663-0972",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012940-1",
+      "expiration": "2026-04-30",
+      "beds": 82
+    }
+  },
+  {
+    "name": "BICKFORD OF GREENWOOD",
+    "address_line1": "3021 STELLA DRIVE",
+    "address_line2": null,
+    "city": "GREENWOOD",
+    "state": "IN",
+    "postal_code": "46143",
+    "phone": "(317)807-3077",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012938-1",
+      "expiration": "2026-02-28",
+      "beds": 82
+    }
+  },
+  {
+    "name": "BLOOM AT EAGLE CREEK",
+    "address_line1": "5045 W 52ND ST",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46254",
+    "phone": "(317)293-2929",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-003915-1",
+      "expiration": "2026-07-31",
+      "beds": 58
+    }
+  },
+  {
+    "name": "BLOOM AT GERMAN CHURCH",
+    "address_line1": "2250 HARVEST MOON DR",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46229",
+    "phone": "(317)249-8092",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-003916-1",
+      "expiration": "2026-07-31",
+      "beds": 66
+    }
+  },
+  {
+    "name": "BLOOM AT KESSLER",
+    "address_line1": "5011 KESSLER BLVD E",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46220",
+    "phone": "(317)251-1300",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-010064-1",
+      "expiration": "2025-08-31",
+      "beds": 86
+    }
+  },
+  {
+    "name": "BLOOM AT KOKOMO",
+    "address_line1": "2800 S DIXON RD",
+    "address_line2": null,
+    "city": "KOKOMO",
+    "state": "IN",
+    "postal_code": "46902",
+    "phone": "(765)455-2828",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-011366-1",
+      "expiration": "2026-04-30",
+      "beds": 138
+    }
+  },
+  {
+    "name": "BLOOM AT WILLOW",
+    "address_line1": "2725 LAKE CIRCLE DR",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46268",
+    "phone": "(317)334-9400",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-010234-1",
+      "expiration": "2025-09-30",
+      "beds": 86
+    }
+  },
+  {
+    "name": "BRECKENRIDGE COMMONS",
+    "address_line1": "2009 NORTH HOSPITAL BLVD",
+    "address_line2": null,
+    "city": "SULLIVAN",
+    "state": "IN",
+    "postal_code": "47882",
+    "phone": "(812)268-2000",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013401-1",
+      "expiration": "2025-08-31",
+      "beds": 52
+    }
+  },
+  {
+    "name": "BRENTWOOD AT ELKHART ASSISTED LIVING",
+    "address_line1": "3109 E BRISTOL",
+    "address_line2": null,
+    "city": "ELKHART",
+    "state": "IN",
+    "postal_code": "46514",
+    "phone": "(574)266-4508",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-010065-1",
+      "expiration": "2026-04-30",
+      "beds": 117
+    }
+  },
+  {
+    "name": "BRENTWOOD AT HOBART",
+    "address_line1": "1420 ST MARYS CIRCLE",
+    "address_line2": null,
+    "city": "HOBART",
+    "state": "IN",
+    "postal_code": "46342",
+    "phone": "(219)945-1968",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-002627-1",
+      "expiration": "2026-04-30",
+      "beds": 140
+    }
+  },
+  {
+    "name": "BRENTWOOD AT LAPORTE",
+    "address_line1": "2002 ANDREW AVE",
+    "address_line2": null,
+    "city": "LA PORTE",
+    "state": "IN",
+    "postal_code": "46350",
+    "phone": "(219)325-1599",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-010890-1",
+      "expiration": "2026-04-30",
+      "beds": 118
+    }
+  },
+  {
+    "name": "BRIDGE AT GARDEN PLAZA",
+    "address_line1": "8614 W 10TH  ST",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46234",
+    "phone": "(317)271-1020",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-005616-1",
+      "expiration": "2025-08-31",
+      "beds": 150
+    }
+  },
+  {
+    "name": "BRIDGEPOINTE GARDENS",
+    "address_line1": "3100 UTICA SELLERSBURG ROAD",
+    "address_line2": null,
+    "city": "JEFFERSONVILLE",
+    "state": "IN",
+    "postal_code": "47130",
+    "phone": "(812)818-1414",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-015122-1",
+      "expiration": "2025-11-30",
+      "beds": 231
+    }
+  },
+  {
+    "name": "BROOKDALE BLOOMINGTON",
+    "address_line1": "3802 SARE RD",
+    "address_line2": null,
+    "city": "BLOOMINGTON",
+    "state": "IN",
+    "postal_code": "47401",
+    "phone": "(812)330-0885",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-011076-1",
+      "expiration": "2025-10-31",
+      "beds": 56
+    }
+  },
+  {
+    "name": "BROOKDALE CARMEL",
+    "address_line1": "301 EXECUTIVE DR",
+    "address_line2": null,
+    "city": "CARMEL",
+    "state": "IN",
+    "postal_code": "46032",
+    "phone": "(317)580-0389",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-010416-1",
+      "expiration": "2025-10-31",
+      "beds": 100
+    }
+  },
+  {
+    "name": "BROOKDALE GRANGER",
+    "address_line1": "430 CLEVELAND RD",
+    "address_line2": null,
+    "city": "GRANGER",
+    "state": "IN",
+    "postal_code": "46530",
+    "phone": "(574)243-9020",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-002656-1",
+      "expiration": "2026-05-31",
+      "beds": 66
+    }
+  },
+  {
+    "name": "BROOKDALE RICHMOND",
+    "address_line1": "3700 SOUTH A STREET",
+    "address_line2": null,
+    "city": "RICHMOND",
+    "state": "IN",
+    "postal_code": "47374",
+    "phone": "(765)939-3310",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-010888-1",
+      "expiration": "2025-11-30",
+      "beds": 56
+    }
+  },
+  {
+    "name": "BROOKDALE VALPARAISO",
+    "address_line1": "2601 VALPARAISO ST",
+    "address_line2": null,
+    "city": "VALPARAISO",
+    "state": "IN",
+    "postal_code": "46383",
+    "phone": "(219)548-2230",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-010757-1",
+      "expiration": "2025-08-31",
+      "beds": 92
+    }
+  },
+  {
+    "name": "BROWNSBURG MEADOWS ASSISTED LIVING",
+    "address_line1": "7133 MEADOW TRAIL",
+    "address_line2": null,
+    "city": "BROWNSBURG",
+    "state": "IN",
+    "postal_code": "46112",
+    "phone": "(317)852-1977",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013356-1",
+      "expiration": "2025-10-31",
+      "beds": 124
+    }
+  },
+  {
+    "name": "CEDAR CREEK OF BEDFORD",
+    "address_line1": "3008 SHAWNEE DR S",
+    "address_line2": null,
+    "city": "BEDFORD",
+    "state": "IN",
+    "postal_code": "47421",
+    "phone": "(812)275-2468",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004011-1",
+      "expiration": "2025-12-31",
+      "beds": 58
+    }
+  },
+  {
+    "name": "CEDAR CREEK OF BLOOMINGTON",
+    "address_line1": "2770 S ADAMS RD",
+    "address_line2": null,
+    "city": "BLOOMINGTON",
+    "state": "IN",
+    "postal_code": "47403",
+    "phone": "(812)331-8153",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004016-1",
+      "expiration": "2025-12-31",
+      "beds": 66
+    }
+  },
+  {
+    "name": "CEDAR CREEK OF BLOOMINGTON MEMORY CARE",
+    "address_line1": "3203 MOORES PIKE ROAD",
+    "address_line2": null,
+    "city": "BLOOMINGTON",
+    "state": "IN",
+    "postal_code": "47401",
+    "phone": "(812)335-4655",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012706-1",
+      "expiration": "2026-01-31",
+      "beds": 66
+    }
+  },
+  {
+    "name": "CEDAR CREEK OF FORT WAYNE",
+    "address_line1": "2116 BUTLER RD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46815",
+    "phone": "(260)471-0944",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004686-1",
+      "expiration": "2025-12-31",
+      "beds": 47
+    }
+  },
+  {
+    "name": "CEDAR CREEK OF FRANKLIN",
+    "address_line1": "1435 CHRISTIAN BLVD",
+    "address_line2": null,
+    "city": "FRANKLIN",
+    "state": "IN",
+    "postal_code": "46131",
+    "phone": "(317)535-6550",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004017-1",
+      "expiration": "2025-12-31",
+      "beds": 75
+    }
+  },
+  {
+    "name": "CEDAR CREEK OF LOGANSPORT",
+    "address_line1": "3901 HIGH STREET RD",
+    "address_line2": null,
+    "city": "LOGANSPORT",
+    "state": "IN",
+    "postal_code": "46947",
+    "phone": "(574)739-2134",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004441-1",
+      "expiration": "2025-12-31",
+      "beds": 69
+    }
+  },
+  {
+    "name": "CEDAR CREEK OF MARION",
+    "address_line1": "725 W 50TH ST",
+    "address_line2": null,
+    "city": "MARION",
+    "state": "IN",
+    "postal_code": "46953",
+    "phone": "(765)677-0095",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004028-1",
+      "expiration": "2025-12-31",
+      "beds": 47
+    }
+  },
+  {
+    "name": "CEDAR CREEK OF MUNCIE",
+    "address_line1": "2410 E MCGALLIARD RD",
+    "address_line2": null,
+    "city": "MUNCIE",
+    "state": "IN",
+    "postal_code": "47303",
+    "phone": "(765)284-7670",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004428-1",
+      "expiration": "2025-12-31",
+      "beds": 68
+    }
+  },
+  {
+    "name": "CEDAR CREEK OF SEYMOUR",
+    "address_line1": "2288 NICHOLAS CT",
+    "address_line2": null,
+    "city": "SEYMOUR",
+    "state": "IN",
+    "postal_code": "47274",
+    "phone": "(812)523-8991",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004376-1",
+      "expiration": "2025-12-31",
+      "beds": 47
+    }
+  },
+  {
+    "name": "CEDAR CREEK OF WARSAW",
+    "address_line1": "425 CHINWORTH CT",
+    "address_line2": null,
+    "city": "WARSAW",
+    "state": "IN",
+    "postal_code": "46580",
+    "phone": "(574)267-3873",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-011389-1",
+      "expiration": "2025-12-31",
+      "beds": 50
+    }
+  },
+  {
+    "name": "CEDAR CREEK OF WASHINGTON",
+    "address_line1": "297 SOUTH 100 EAST",
+    "address_line2": null,
+    "city": "WASHINGTON",
+    "state": "IN",
+    "postal_code": "47501",
+    "phone": "(812)254-5230",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004904-1",
+      "expiration": "2025-12-31",
+      "beds": 49
+    }
+  },
+  {
+    "name": "CEDARHURST OF DYER",
+    "address_line1": "1763 CALUMET AVENUE",
+    "address_line2": null,
+    "city": "DYER",
+    "state": "IN",
+    "postal_code": "46311",
+    "phone": "(219)500-6591",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014415-1",
+      "expiration": "2025-12-31",
+      "beds": 120
+    }
+  },
+  {
+    "name": "CEDARHURST OF EDISON LAKES",
+    "address_line1": "1025 PARK PLACE",
+    "address_line2": null,
+    "city": "MISHAWAKA",
+    "state": "IN",
+    "postal_code": "46545",
+    "phone": "(574)247-1552",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013331-1",
+      "expiration": "2026-01-31",
+      "beds": 138
+    }
+  },
+  {
+    "name": "CEDARHURST OF FORT WAYNE",
+    "address_line1": "9210 MAYSVILLE ROAD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46815",
+    "phone": "(260)748-0904",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014576-1",
+      "expiration": "2025-08-31",
+      "beds": 89
+    }
+  },
+  {
+    "name": "CEDARHURST OF NEWBURGH",
+    "address_line1": "10144 WARRICK TRAIL",
+    "address_line2": null,
+    "city": "NEWBURGH",
+    "state": "IN",
+    "postal_code": "47630",
+    "phone": "(812)518-0076",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-016276-1",
+      "expiration": "2025-08-31",
+      "beds": 137
+    }
+  },
+  {
+    "name": "CELEBRATION VILLA OF NEWBURGH",
+    "address_line1": "5311 ROSEBUD LANE",
+    "address_line2": null,
+    "city": "NEWBURGH",
+    "state": "IN",
+    "postal_code": "47630",
+    "phone": "(812)479-5585",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-016981-1",
+      "expiration": "2026-03-31",
+      "beds": 93
+    }
+  },
+  {
+    "name": "CHANDLER PLACE",
+    "address_line1": "2879 S LIMA RD",
+    "address_line2": null,
+    "city": "KENDALLVILLE",
+    "state": "IN",
+    "postal_code": "46755",
+    "phone": "(260)349-1030",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004440-1",
+      "expiration": "2026-06-30",
+      "beds": 47
+    }
+  },
+  {
+    "name": "CHAPTERS LIVING OF SOUTH BEND",
+    "address_line1": "955 HICKORY ROAD",
+    "address_line2": null,
+    "city": "SOUTH BEND",
+    "state": "IN",
+    "postal_code": "46615",
+    "phone": "(574)314-5369",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-016149-3",
+      "expiration": "2025-10-30",
+      "beds": 42
+    }
+  },
+  {
+    "name": "CHARLES FORD MEMORIAL HOME INC",
+    "address_line1": "920 S MAIN ST",
+    "address_line2": null,
+    "city": "NEW HARMONY",
+    "state": "IN",
+    "postal_code": "47631",
+    "phone": "(812)682-4685",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-001123-1",
+      "expiration": "2025-09-30",
+      "beds": 35
+    }
+  },
+  {
+    "name": "CHARTER SENIOR LIVING OF GATEWAY PARK",
+    "address_line1": "6338 WEST QUIET ROAD",
+    "address_line2": null,
+    "city": "GREENFIELD",
+    "state": "IN",
+    "postal_code": "46140",
+    "phone": "(317)707-9931",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-015521-2",
+      "expiration": "2026-01-31",
+      "beds": 94
+    }
+  },
+  {
+    "name": "CHARTER SENIOR LIVING OF HOBBS STATION",
+    "address_line1": "2749 PEARSON PARKWAY",
+    "address_line2": null,
+    "city": "PLAINFIELD",
+    "state": "IN",
+    "postal_code": "46168",
+    "phone": "(317)800-0480",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-016160-1",
+      "expiration": "2026-04-30",
+      "beds": 96
+    }
+  },
+  {
+    "name": "CHATEAU OF BATESVILLE",
+    "address_line1": "44 CHATEAU BLVD",
+    "address_line2": null,
+    "city": "BATESVILLE",
+    "state": "IN",
+    "postal_code": "47006",
+    "phone": "(812)932-8888",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-006489-1",
+      "expiration": "2025-09-30",
+      "beds": 67
+    }
+  },
+  {
+    "name": "CLARKSVILLE SENIOR LIVING LLC",
+    "address_line1": "400 HUNTER STATION ROAD",
+    "address_line2": null,
+    "city": "SELLERSBURG",
+    "state": "IN",
+    "postal_code": "47172",
+    "phone": "(812)748-5258",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013841-1",
+      "expiration": "2026-04-30",
+      "beds": 130
+    }
+  },
+  {
+    "name": "COMMONS AT HONEY CREEK, THE",
+    "address_line1": "1450 EAST CROSSING BOULEVARD",
+    "address_line2": null,
+    "city": "ALLENDALE",
+    "state": "IN",
+    "postal_code": "47802",
+    "phone": "(812)298-8209",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-015282-1",
+      "expiration": "2025-08-31",
+      "beds": 80
+    }
+  },
+  {
+    "name": "COMMONS AT JUDAY CREEK",
+    "address_line1": "17441 SR 23",
+    "address_line2": null,
+    "city": "SOUTH BEND",
+    "state": "IN",
+    "postal_code": "46635",
+    "phone": "(574)273-2233",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-010667-1",
+      "expiration": "2026-05-31",
+      "beds": 56
+    }
+  },
+  {
+    "name": "COMMONS ON MERIDIAN, THE",
+    "address_line1": "8549 N MERIDIAN STREET",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46260",
+    "phone": "(317)562-0489",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013933-1",
+      "expiration": "2025-12-31",
+      "beds": 102
+    }
+  },
+  {
+    "name": "COMMUNITY DEVELOPMENT CORPORATION OF MISHAWAKA, IN",
+    "address_line1": "500 LINCOLNWAY EAST",
+    "address_line2": null,
+    "city": "MISHAWAKA",
+    "state": "IN",
+    "postal_code": "46544",
+    "phone": "(574)855-3937",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-012688-3",
+      "expiration": "2025-09-30",
+      "beds": 39
+    }
+  },
+  {
+    "name": "COUNTRY CHARM",
+    "address_line1": "3177 MERIDIAN PARKE DR",
+    "address_line2": null,
+    "city": "GREENWOOD",
+    "state": "IN",
+    "postal_code": "46142",
+    "phone": "(317)882-5455",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-011478-1",
+      "expiration": "2025-09-30",
+      "beds": 166
+    }
+  },
+  {
+    "name": "COVENTRY MEADOWS, L.L.C.",
+    "address_line1": "7833 W JEFFERSON BLVD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46804",
+    "phone": "(260)432-4848",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-005846-1",
+      "expiration": "2026-01-31",
+      "beds": 82
+    }
+  },
+  {
+    "name": "CROWN POINTE SENIOR LIVING COMMUNITY",
+    "address_line1": "1034 CROWN POINTE BLVD",
+    "address_line2": null,
+    "city": "GREENSBURG",
+    "state": "IN",
+    "postal_code": "47240",
+    "phone": "(812)662-8888",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-011914-1",
+      "expiration": "2026-04-30",
+      "beds": 43
+    }
+  },
+  {
+    "name": "CROWNPOINTE OF ANDERSON",
+    "address_line1": "2727 CROWNPOINTE CIRCLE",
+    "address_line2": null,
+    "city": "ANDERSON",
+    "state": "IN",
+    "postal_code": "46012",
+    "phone": "(765)641-9995",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-012129-1",
+      "expiration": "2025-11-30",
+      "beds": 66
+    }
+  },
+  {
+    "name": "CROWNPOINTE OF CARMEL",
+    "address_line1": "11610 TECHNOLOGY DR",
+    "address_line2": null,
+    "city": "CARMEL",
+    "state": "IN",
+    "postal_code": "46032",
+    "phone": "(317)818-1786",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012309-1",
+      "expiration": "2026-06-30",
+      "beds": 54
+    }
+  },
+  {
+    "name": "CROWNPOINTE OF GREENFIELD",
+    "address_line1": "831 SWOPE STREET",
+    "address_line2": null,
+    "city": "GREENFIELD",
+    "state": "IN",
+    "postal_code": "46140",
+    "phone": "(317)467-9317",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012798-1",
+      "expiration": "2026-01-31",
+      "beds": 63
+    }
+  },
+  {
+    "name": "CROWNPOINTE OF HARTFORD CITY",
+    "address_line1": "100 INDEPENDENCE PARKWAY",
+    "address_line2": null,
+    "city": "HARTFORD CITY",
+    "state": "IN",
+    "postal_code": "47348",
+    "phone": "(765)348-3250",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013578-1",
+      "expiration": "2026-05-31",
+      "beds": 32
+    }
+  },
+  {
+    "name": "CROWNPOINTE OF INDIANAPOLIS",
+    "address_line1": "7365 E 16TH ST",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46219",
+    "phone": "(317)351-2578",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-005729-1",
+      "expiration": "2026-06-30",
+      "beds": 82
+    }
+  },
+  {
+    "name": "CROWNPOINTE OF LEBANON",
+    "address_line1": "610 CROWNPOINTE DRIVE",
+    "address_line2": null,
+    "city": "LEBANON",
+    "state": "IN",
+    "postal_code": "46052",
+    "phone": "(765)482-3436",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013582-1",
+      "expiration": "2026-04-30",
+      "beds": 63
+    }
+  },
+  {
+    "name": "CROWNPOINTE OF PORTLAND",
+    "address_line1": "745 PATRIOT DRIVE",
+    "address_line2": null,
+    "city": "PORTLAND",
+    "state": "IN",
+    "postal_code": "47371",
+    "phone": "(260)726-3577",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014090-1",
+      "expiration": "2025-09-30",
+      "beds": 32
+    }
+  },
+  {
+    "name": "DEMAREE CROSSING ASSISTED LIVING AND MEMORY CARE",
+    "address_line1": "1255 DEMAREE ROAD",
+    "address_line2": null,
+    "city": "GREENWOOD",
+    "state": "IN",
+    "postal_code": "46143",
+    "phone": "(317)316-8380",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014079-1",
+      "expiration": "2025-08-31",
+      "beds": 129
+    }
+  },
+  {
+    "name": "DIGBY PLACE",
+    "address_line1": "167 CR W 240 S",
+    "address_line2": null,
+    "city": "LAFAYETTE",
+    "state": "IN",
+    "postal_code": "47905",
+    "phone": "(765)471-8552",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004392-1",
+      "expiration": "2026-06-30",
+      "beds": 47
+    }
+  },
+  {
+    "name": "ELKHART PLACE ASSISTED LIVING",
+    "address_line1": "2024 COUNTY ROAD 24",
+    "address_line2": null,
+    "city": "ELKHART",
+    "state": "IN",
+    "postal_code": "46517",
+    "phone": "(574)295-9058",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-004353-1",
+      "expiration": "2025-10-31",
+      "beds": 47
+    }
+  },
+  {
+    "name": "EVERGREEN VILLAGE AT BLOOMINGTON",
+    "address_line1": "3607 SOUTH HEIRLOOM DRIVE",
+    "address_line2": null,
+    "city": "BLOOMINGTON",
+    "state": "IN",
+    "postal_code": "47401",
+    "phone": "(812)336-2718",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014002-1",
+      "expiration": "2025-08-31",
+      "beds": 183
+    }
+  },
+  {
+    "name": "EVERGREEN VILLAGE AT FORT WAYNE",
+    "address_line1": "12523 AUBURN ROAD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46845",
+    "phone": "(260)637-2830",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014512-1",
+      "expiration": "2025-10-31",
+      "beds": 206
+    }
+  },
+  {
+    "name": "FIVE STAR RESIDENCES OF BANTA POINTE",
+    "address_line1": "6510 U.S. 31 SOUTH",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46227",
+    "phone": "(317)783-4663",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014018-1",
+      "expiration": "2026-01-31",
+      "beds": 84
+    }
+  },
+  {
+    "name": "FIVE STAR RESIDENCES OF CLEARWATER",
+    "address_line1": "4519 EAST 82ND STREET",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46250",
+    "phone": "(317)849-2244",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014016-1",
+      "expiration": "2026-04-30",
+      "beds": 81
+    }
+  },
+  {
+    "name": "FIVE STAR RESIDENCES OF FORT WAYNE",
+    "address_line1": "2601 COVINGTON COMMONS DRIVE",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46804",
+    "phone": "(260)432-1932",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014017-1",
+      "expiration": "2026-03-31",
+      "beds": 106
+    }
+  },
+  {
+    "name": "FIVE STAR RESIDENCES OF LAFAYETTE",
+    "address_line1": "250 SHENANDOAH DRIVE",
+    "address_line2": null,
+    "city": "LAFAYETTE",
+    "state": "IN",
+    "postal_code": "47905",
+    "phone": "(765)449-4475",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014015-1",
+      "expiration": "2025-12-31",
+      "beds": 87
+    }
+  },
+  {
+    "name": "FIVE STAR RESIDENCES OF NOBLESVILLE",
+    "address_line1": "7235 RIVERWALK WAY N",
+    "address_line2": null,
+    "city": "NOBLESVILLE",
+    "state": "IN",
+    "postal_code": "46062",
+    "phone": "(317)770-0011",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-004417-1",
+      "expiration": "2025-09-30",
+      "beds": 105
+    }
+  },
+  {
+    "name": "FIVE STAR RESIDENCES OF NORTHWOODS",
+    "address_line1": "2501 FRIENDSHIP BLVD",
+    "address_line2": null,
+    "city": "KOKOMO",
+    "state": "IN",
+    "postal_code": "46901",
+    "phone": "(765)454-0001",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014019-1",
+      "expiration": "2025-12-31",
+      "beds": 92
+    }
+  },
+  {
+    "name": "FORT HARRISON ALF OPERATIONS",
+    "address_line1": "8025 DOUBLEDAY DRIVE",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46216",
+    "phone": "(317)546-2845",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014109-1",
+      "expiration": "2025-10-31",
+      "beds": 62
+    }
+  },
+  {
+    "name": "FORUM AT THE CROSSING",
+    "address_line1": "8505 WOODFIELD CROSSING BLVD",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46240",
+    "phone": "(317)466-2020",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-015281-1",
+      "expiration": "2025-12-31",
+      "beds": 30
+    }
+  },
+  {
+    "name": "FRANKLIN SENIOR LIVING LLC",
+    "address_line1": "1375 NICOLE DRIVE",
+    "address_line2": null,
+    "city": "FRANKLIN",
+    "state": "IN",
+    "postal_code": "46131",
+    "phone": "(463)724-2121",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-015132-1",
+      "expiration": "2026-03-31",
+      "beds": 71
+    }
+  },
+  {
+    "name": "GENTRY PARK",
+    "address_line1": "901 S HASTINGS DR",
+    "address_line2": null,
+    "city": "BLOOMINGTON",
+    "state": "IN",
+    "postal_code": "47401",
+    "phone": "(812)668-1200",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013766-1",
+      "expiration": "2026-01-31",
+      "beds": 116
+    }
+  },
+  {
+    "name": "GEORGETOWN PLACE",
+    "address_line1": "1717 MAPLECREST ROAD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46815",
+    "phone": "(260)493-6927",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013463-1",
+      "expiration": "2025-11-30",
+      "beds": 280
+    }
+  },
+  {
+    "name": "GLASSWATER CREEK OF LAFAYETTE, LLC",
+    "address_line1": "208 BECK LANE",
+    "address_line2": null,
+    "city": "LAFAYETTE",
+    "state": "IN",
+    "postal_code": "47909",
+    "phone": "(765)477-1140",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014148-1",
+      "expiration": "2026-02-28",
+      "beds": 133
+    }
+  },
+  {
+    "name": "GLASSWATER CREEK OF PLAINFIELD",
+    "address_line1": "10480 GLASSWATER LANE",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46231",
+    "phone": "(317)839-5808",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "28-014410-1",
+      "expiration": "2026-05-31",
+      "beds": 131
+    }
+  },
+  {
+    "name": "GLASSWATER CREEK OF WHITESTOWN",
+    "address_line1": "5829 NEW HOPE BOULEVARD",
+    "address_line2": null,
+    "city": "WHITESTOWN",
+    "state": "IN",
+    "postal_code": "46075",
+    "phone": "(463)209-8670",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-015004-2",
+      "expiration": "2025-08-31",
+      "beds": 101
+    }
+  },
+  {
+    "name": "GRAND BROOK MEMORY CARE OF FISHERS",
+    "address_line1": "9796 EAST 131ST STREET",
+    "address_line2": null,
+    "city": "FISHERS",
+    "state": "IN",
+    "postal_code": "46038",
+    "phone": "(317)914-2357",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014253-1",
+      "expiration": "2025-11-30",
+      "beds": 36
+    }
+  },
+  {
+    "name": "GRAND BROOK MEMORY CARE OF GREENWOOD",
+    "address_line1": "2444 SOUTH STATE ROAD 135",
+    "address_line2": null,
+    "city": "GREENWOOD",
+    "state": "IN",
+    "postal_code": "46143",
+    "phone": "(317)499-1310",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014426-1",
+      "expiration": "2026-02-28",
+      "beds": 36
+    }
+  },
+  {
+    "name": "GRAND BROOK MEMORY CARE OF ZIONSVILLE",
+    "address_line1": "11870 SANDY DRIVE",
+    "address_line2": null,
+    "city": "ZIONSVILLE",
+    "state": "IN",
+    "postal_code": "46077",
+    "phone": "(317)975-0049",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014376-1",
+      "expiration": "2026-03-31",
+      "beds": 36
+    }
+  },
+  {
+    "name": "GRAND EMERALD PLACE",
+    "address_line1": "4010 S IRONWOOD DR",
+    "address_line2": null,
+    "city": "SOUTH BEND",
+    "state": "IN",
+    "postal_code": "46614",
+    "phone": "(574)291-2222",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013555-1",
+      "expiration": "2026-06-30",
+      "beds": 96
+    }
+  },
+  {
+    "name": "GRAND MARQUIS, THE",
+    "address_line1": "300 E WASHINGTON BLVD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46802",
+    "phone": "(260)422-5511",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012288-1",
+      "expiration": "2026-05-31",
+      "beds": 162
+    }
+  },
+  {
+    "name": "GRAND VALLEY GARDENS ASSISTED LIVING FACILITY",
+    "address_line1": "1151 S HUBERT CIRCLE WEST",
+    "address_line2": null,
+    "city": "MARTINSVILLE",
+    "state": "IN",
+    "postal_code": "46151",
+    "phone": "(765)558-8200",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014168-1",
+      "expiration": "2025-08-31",
+      "beds": 52
+    }
+  },
+  {
+    "name": "GRAND VICTORIAN OF GREENWOOD",
+    "address_line1": "2339 S STATE ROAD 135",
+    "address_line2": null,
+    "city": "GREENWOOD",
+    "state": "IN",
+    "postal_code": "46143",
+    "phone": "(317)535-0422",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-005722-1",
+      "expiration": "2026-03-31",
+      "beds": 145
+    }
+  },
+  {
+    "name": "GRAND VICTORIAN OF ZIONSVILLE",
+    "address_line1": "11755 N MICHIGAN RD",
+    "address_line2": null,
+    "city": "ZIONSVILLE",
+    "state": "IN",
+    "postal_code": "46077",
+    "phone": "(317)873-6300",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012263-1",
+      "expiration": "2026-03-31",
+      "beds": 143
+    }
+  },
+  {
+    "name": "GREEN OAKS OF GOSHEN",
+    "address_line1": "282 JOHNSTON STREET",
+    "address_line2": null,
+    "city": "GOSHEN",
+    "state": "IN",
+    "postal_code": "46528",
+    "phone": "(574)501-5342",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-015205-1",
+      "expiration": "2026-03-31",
+      "beds": 128
+    }
+  },
+  {
+    "name": "GREEN OAKS OF VALPARAISO",
+    "address_line1": "2550 MORTHLAND DRIVE",
+    "address_line2": null,
+    "city": "VALPARAISO",
+    "state": "IN",
+    "postal_code": "46383",
+    "phone": "(219)309-2550",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-015426-1",
+      "expiration": "2026-07-31",
+      "beds": 160
+    }
+  },
+  {
+    "name": "GREENBRIAR VILLAGE",
+    "address_line1": "8800 SPOON DR",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46219",
+    "phone": "(317)899-6777",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-011799-1",
+      "expiration": "2026-07-31",
+      "beds": 134
+    }
+  },
+  {
+    "name": "HARMONY AT AVON",
+    "address_line1": "2141 NORTH DAN JONES ROAD",
+    "address_line2": null,
+    "city": "AVON",
+    "state": "IN",
+    "postal_code": "46123",
+    "phone": "(540)774-7762",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014959-1",
+      "expiration": "2025-08-31",
+      "beds": 175
+    }
+  },
+  {
+    "name": "HARMONY AT ELKHART",
+    "address_line1": "1129 PARKWAY AVENUE",
+    "address_line2": null,
+    "city": "ELKHART",
+    "state": "IN",
+    "postal_code": "46516",
+    "phone": "(574)966-8800",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014916-1",
+      "expiration": "2026-06-30",
+      "beds": 202
+    }
+  },
+  {
+    "name": "HARRISON AT EAGLE VALLEY, THE",
+    "address_line1": "3060 VALLEY FARMS ROAD",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46214",
+    "phone": "(317)291-1112",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014045-1",
+      "expiration": "2026-05-31",
+      "beds": 131
+    }
+  },
+  {
+    "name": "HELLENIC SENIOR LIVING OF ELKHART",
+    "address_line1": "2528 BYPASS ROAD",
+    "address_line2": null,
+    "city": "ELKHART",
+    "state": "IN",
+    "postal_code": "46514",
+    "phone": "(574)389-1776",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014241-1",
+      "expiration": "2025-08-31",
+      "beds": 159
+    }
+  },
+  {
+    "name": "HELLENIC SENIOR LIVING OF INDIANAPOLIS",
+    "address_line1": "8601 SOUTH SHELBY STREET",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46227",
+    "phone": "(317)885-4446",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014062-1",
+      "expiration": "2026-04-30",
+      "beds": 125
+    }
+  },
+  {
+    "name": "HELLENIC SENIOR LIVING OF MISHAWAKA",
+    "address_line1": "1540 SOUTH LOGAN STREET",
+    "address_line2": null,
+    "city": "MISHAWAKA",
+    "state": "IN",
+    "postal_code": "46544",
+    "phone": "(574)257-8629",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014224-1",
+      "expiration": "2025-11-30",
+      "beds": 157
+    }
+  },
+  {
+    "name": "HELLENIC SENIOR LIVING OF NEW ALBANY",
+    "address_line1": "2632 GRANT LINE ROAD",
+    "address_line2": null,
+    "city": "NEW ALBANY",
+    "state": "IN",
+    "postal_code": "47150",
+    "phone": "(812)944-9048",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014166-1",
+      "expiration": "2026-05-31",
+      "beds": 125
+    }
+  },
+  {
+    "name": "HERITAGE ASSISTED LIVING OF UNION CITY",
+    "address_line1": "204 STAUDT DRIVE",
+    "address_line2": null,
+    "city": "UNION CITY",
+    "state": "IN",
+    "postal_code": "47390",
+    "phone": "(765)303-2056",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-015887-1",
+      "expiration": "2025-07-31",
+      "beds": 52
+    }
+  },
+  {
+    "name": "HERITAGE ASSISTED LIVING OF YORKTOWN",
+    "address_line1": "1400 S PATRIOT DRIVE",
+    "address_line2": null,
+    "city": "YORKTOWN",
+    "state": "IN",
+    "postal_code": "47396",
+    "phone": "(765)207-5984",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014281-1",
+      "expiration": "2025-09-30",
+      "beds": 42
+    }
+  },
+  {
+    "name": "HERITAGE PARK COMMONS",
+    "address_line1": "2002 HERITAGE PARK DRIVE",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46805",
+    "phone": "(260)484-9557",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014113-1",
+      "expiration": "2026-06-30",
+      "beds": 45
+    }
+  },
+  {
+    "name": "HERITAGE WOODS OF NEWBURGH",
+    "address_line1": "4211 GRIMM ROAD",
+    "address_line2": null,
+    "city": "NEWBURGH",
+    "state": "IN",
+    "postal_code": "47630",
+    "phone": "(812)853-9810",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014377-1",
+      "expiration": "2026-03-31",
+      "beds": 195
+    }
+  },
+  {
+    "name": "HERITAGE WOODS OF NOBLESVILLE",
+    "address_line1": "9600 E 146TH STREET",
+    "address_line2": null,
+    "city": "NOBLESVILLE",
+    "state": "IN",
+    "postal_code": "46060",
+    "phone": "(317)770-6061",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014213-1",
+      "expiration": "2026-07-31",
+      "beds": 190
+    }
+  },
+  {
+    "name": "HI JILL'S HOUSE LLC",
+    "address_line1": "751 E TAMARACK TRAIL",
+    "address_line2": null,
+    "city": "BLOOMINGTON",
+    "state": "IN",
+    "postal_code": "47408",
+    "phone": "(812)287-7962",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013824-1",
+      "expiration": "2026-01-31",
+      "beds": 40
+    }
+  },
+  {
+    "name": "INDEPENDENCE VILLAGE OF AVON",
+    "address_line1": "182 S COUNTY ROAD 550 E",
+    "address_line2": null,
+    "city": "AVON",
+    "state": "IN",
+    "postal_code": "46123",
+    "phone": "(317)745-2766",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-003902-1",
+      "expiration": "2026-03-31",
+      "beds": 150
+    }
+  },
+  {
+    "name": "INDEPENDENCE VILLAGE OF CARMEL",
+    "address_line1": "13390 N ILLINOIS STREET",
+    "address_line2": null,
+    "city": "CARMEL",
+    "state": "IN",
+    "postal_code": "46032",
+    "phone": "(317)818-0526",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013297-1",
+      "expiration": "2026-05-31",
+      "beds": 93
+    }
+  },
+  {
+    "name": "INDEPENDENCE VILLAGE OF FISHERS EAST",
+    "address_line1": "12950 TALBLICK STREET",
+    "address_line2": null,
+    "city": "FISHERS",
+    "state": "IN",
+    "postal_code": "46037",
+    "phone": "(317)773-3854",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013945-1",
+      "expiration": "2026-03-31",
+      "beds": 87
+    }
+  },
+  {
+    "name": "INDEPENDENCE VILLAGE OF FISHERS SOUTH",
+    "address_line1": "9745 OLYMPIA DR",
+    "address_line2": null,
+    "city": "FISHERS",
+    "state": "IN",
+    "postal_code": "46038",
+    "phone": "(317)576-1925",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-002999-1",
+      "expiration": "2026-03-31",
+      "beds": 133
+    }
+  },
+  {
+    "name": "INDEPENDENCE VILLAGE OF ZIONSVILLE WEST",
+    "address_line1": "6800 CENTRAL BOULEVARD",
+    "address_line2": null,
+    "city": "ZIONSVILLE",
+    "state": "IN",
+    "postal_code": "46077",
+    "phone": "(317)973-0220",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014059-1",
+      "expiration": "2026-03-31",
+      "beds": 91
+    }
+  },
+  {
+    "name": "INDIANA MASONIC HOME INC",
+    "address_line1": "690 STATE STREET",
+    "address_line2": null,
+    "city": "FRANKLIN",
+    "state": "IN",
+    "postal_code": "46131",
+    "phone": "(317)736-6141",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013460-1",
+      "expiration": "2026-03-31",
+      "beds": 96
+    }
+  },
+  {
+    "name": "JEWEL PLACE SENIOR LIVING",
+    "address_line1": "607 VIRGINIA AVE",
+    "address_line2": null,
+    "city": "MADISON",
+    "state": "IN",
+    "postal_code": "47250",
+    "phone": "(812)273-0432",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-004352-1",
+      "expiration": "2025-10-31",
+      "beds": 47
+    }
+  },
+  {
+    "name": "KEEPSAKE VILLAGE OF COLUMBUS",
+    "address_line1": "2564 FOXPOINTE DR",
+    "address_line2": null,
+    "city": "COLUMBUS",
+    "state": "IN",
+    "postal_code": "47203",
+    "phone": "(812)372-0950",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-010680-1",
+      "expiration": "2025-10-31",
+      "beds": 48
+    }
+  },
+  {
+    "name": "KEYSTONE WOODS",
+    "address_line1": "2335 N MADISON AVE",
+    "address_line2": null,
+    "city": "ANDERSON",
+    "state": "IN",
+    "postal_code": "46011",
+    "phone": "(765)642-8020",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-010409-1",
+      "expiration": "2026-07-31",
+      "beds": 70
+    }
+  },
+  {
+    "name": "KINGSTON AT DUPONT",
+    "address_line1": "1716 E DUPONT RD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46825",
+    "phone": "(260)490-5111",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-003000-1",
+      "expiration": "2025-11-30",
+      "beds": 45
+    }
+  },
+  {
+    "name": "KINGSTON RESIDENCE OF FORT WAYNE",
+    "address_line1": "7515 WINCHESTER RD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46819",
+    "phone": "(260)747-1523",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-001135-1",
+      "expiration": "2025-11-30",
+      "beds": 72
+    }
+  },
+  {
+    "name": "KOKOMO PLACE ASSISTED LIVING",
+    "address_line1": "3025 W SYCAMORE ST",
+    "address_line2": null,
+    "city": "KOKOMO",
+    "state": "IN",
+    "postal_code": "46901",
+    "phone": "(765)456-1490",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-011075-1",
+      "expiration": "2025-10-31",
+      "beds": 56
+    }
+  },
+  {
+    "name": "LAKE MEADOWS SENIOR ASSISTED LIVING",
+    "address_line1": "11570 E 126TH STREET",
+    "address_line2": null,
+    "city": "FISHERS",
+    "state": "IN",
+    "postal_code": "46037",
+    "phone": "(317)527-4475",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014910-1",
+      "expiration": "2026-04-30",
+      "beds": 155
+    }
+  },
+  {
+    "name": "LAKE PARK RESIDENTIAL CARE",
+    "address_line1": "2075 RIPLEY ST",
+    "address_line2": null,
+    "city": "LAKE STATION",
+    "state": "IN",
+    "postal_code": "46405",
+    "phone": "(219)962-9437",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-001136-1",
+      "expiration": "2025-09-30",
+      "beds": 151
+    }
+  },
+  {
+    "name": "LEGACY LIVING LEASING JASPER, LLC",
+    "address_line1": "1850 WEST STATE ROAD 56",
+    "address_line2": null,
+    "city": "JASPER",
+    "state": "IN",
+    "postal_code": "47546",
+    "phone": "(812)559-0200",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014383-1",
+      "expiration": "2025-09-30",
+      "beds": 122
+    }
+  },
+  {
+    "name": "LINCOLNSHIRE PLACE - FORT WAYNE",
+    "address_line1": "11911 DIEBOLD ROAD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46845",
+    "phone": "(260)471-1620",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013687-1",
+      "expiration": "2026-02-28",
+      "beds": 50
+    }
+  },
+  {
+    "name": "LINCOLNSHIRE PLACE - MUNCIE",
+    "address_line1": "1600 N MORRISON ROAD",
+    "address_line2": null,
+    "city": "MUNCIE",
+    "state": "IN",
+    "postal_code": "47304",
+    "phone": "(765)587-2714",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014463-1",
+      "expiration": "2026-03-31",
+      "beds": 49
+    }
+  },
+  {
+    "name": "LUTHERAN LIFE VILLAGES",
+    "address_line1": "11430 COLDWATER ROAD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46845",
+    "phone": "(260)447-1591",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014419-1",
+      "expiration": "2025-11-30",
+      "beds": 52
+    }
+  },
+  {
+    "name": "LUTHERAN LIFE VILLAGES",
+    "address_line1": "8075 GLENCARIN BOULEVARD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46804",
+    "phone": "(260)420-1866",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013612-1",
+      "expiration": "2026-01-31",
+      "beds": 62
+    }
+  },
+  {
+    "name": "MANSION ON MAIN, THE",
+    "address_line1": "1420 EAST MAIN STREET",
+    "address_line2": null,
+    "city": "NEW ALBANY",
+    "state": "IN",
+    "postal_code": "47150",
+    "phone": "(812)914-1161",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013994-1",
+      "expiration": "2025-12-31",
+      "beds": 141
+    }
+  },
+  {
+    "name": "MCCORDSVILLE SENIOR LIVING LLC",
+    "address_line1": "6311 W CR 900 N",
+    "address_line2": null,
+    "city": "MCCORDSVILLE",
+    "state": "IN",
+    "postal_code": "46055",
+    "phone": "(317)335-9900",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013847-1",
+      "expiration": "2026-06-30",
+      "beds": 151
+    }
+  },
+  {
+    "name": "MEADOW BROOK SENIOR LIVING",
+    "address_line1": "11011 VILLAGE SQUARE LANE",
+    "address_line2": null,
+    "city": "FISHERS",
+    "state": "IN",
+    "postal_code": "46038",
+    "phone": "(317)842-4215",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013163-1",
+      "expiration": "2025-09-30",
+      "beds": 116
+    }
+  },
+  {
+    "name": "MELROSE ASSISTED LIVING LLC",
+    "address_line1": "7101 HIGHWAY 41 NORTH",
+    "address_line2": null,
+    "city": "EVANSVILLE",
+    "state": "IN",
+    "postal_code": "47725",
+    "phone": "(812)556-4440",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014866-1",
+      "expiration": "2025-12-31",
+      "beds": 198
+    }
+  },
+  {
+    "name": "MILLER BEACH TERRACE",
+    "address_line1": "4905 MELTON RD",
+    "address_line2": null,
+    "city": "GARY",
+    "state": "IN",
+    "postal_code": "46403",
+    "phone": "(219)938-0124",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-001140-1",
+      "expiration": "2026-06-30",
+      "beds": 168
+    }
+  },
+  {
+    "name": "MORNING POINTE OF FRANKLIN",
+    "address_line1": "75 S MILFORD DR",
+    "address_line2": null,
+    "city": "FRANKLIN",
+    "state": "IN",
+    "postal_code": "46131",
+    "phone": "(317)736-4665",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-002858-1",
+      "expiration": "2025-07-31",
+      "beds": 77
+    }
+  },
+  {
+    "name": "MORNING VIEW NURSING AND REHABILITATION CENTER",
+    "address_line1": "475 NORTH NILES AVENUE",
+    "address_line2": null,
+    "city": "SOUTH BEND",
+    "state": "IN",
+    "postal_code": "46617",
+    "phone": "(574)246-4123",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013149-1",
+      "expiration": "2025-08-31",
+      "beds": 92
+    }
+  },
+  {
+    "name": "MUNCIE ESTATES SENIOR LIVING",
+    "address_line1": "1601 N MORRISON RD",
+    "address_line2": null,
+    "city": "MUNCIE",
+    "state": "IN",
+    "postal_code": "47304",
+    "phone": "(765)289-4260",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-010886-1",
+      "expiration": "2025-12-31",
+      "beds": 90
+    }
+  },
+  {
+    "name": "NORTH WOODS VILLAGE AT EDISON LAKES",
+    "address_line1": "1409 E DAY ROAD",
+    "address_line2": null,
+    "city": "MISHAWAKA",
+    "state": "IN",
+    "postal_code": "46545",
+    "phone": "(574)247-1866",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013236-1",
+      "expiration": "2026-06-30",
+      "beds": 62
+    }
+  },
+  {
+    "name": "OASIS ASSISTED LIVING, INC",
+    "address_line1": "4301 WASHINGTON AVE",
+    "address_line2": null,
+    "city": "EVANSVILLE",
+    "state": "IN",
+    "postal_code": "47714",
+    "phone": "(812)303-3310",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013613-1",
+      "expiration": "2025-10-31",
+      "beds": 89
+    }
+  },
+  {
+    "name": "OASIS AT 30TH",
+    "address_line1": "5651 E 30TH STREET",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46218",
+    "phone": "(317)297-9000",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013347-1",
+      "expiration": "2025-11-30",
+      "beds": 140
+    }
+  },
+  {
+    "name": "OASIS AT 56TH",
+    "address_line1": "4940 WEST 56TH STREET",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46254",
+    "phone": "(317)297-3115",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014279-1",
+      "expiration": "2025-11-30",
+      "beds": 124
+    }
+  },
+  {
+    "name": "PARK PLACE II, LLC",
+    "address_line1": "4411 PARK PLACE DR",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46845",
+    "phone": "(260)480-2500",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012582-1",
+      "expiration": "2026-03-31",
+      "beds": 196
+    }
+  },
+  {
+    "name": "PINE KNOLL ASSISTED LIVING CENTER",
+    "address_line1": "607 WILSON CREEK RD",
+    "address_line2": null,
+    "city": "LAWRENCEBURG",
+    "state": "IN",
+    "postal_code": "47025",
+    "phone": "(812)537-4422",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-001142-1",
+      "expiration": "2026-03-31",
+      "beds": 27
+    }
+  },
+  {
+    "name": "PRIMROSE MEMORY CARE OF ANDERSON",
+    "address_line1": "2101 N MADISON AVENUE",
+    "address_line2": null,
+    "city": "ANDERSON",
+    "state": "IN",
+    "postal_code": "46011",
+    "phone": "(765)641-0050",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013811-1",
+      "expiration": "2025-11-30",
+      "beds": 24
+    }
+  },
+  {
+    "name": "PRIMROSE OF MISHAWAKA",
+    "address_line1": "820 FULMER ROAD",
+    "address_line2": null,
+    "city": "MISHAWAKA",
+    "state": "IN",
+    "postal_code": "46544",
+    "phone": "(574)259-3211",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013439-1",
+      "expiration": "2025-12-31",
+      "beds": 45
+    }
+  },
+  {
+    "name": "PRIMROSE OF NEWBURGH",
+    "address_line1": "9800 LINCOLN AVE",
+    "address_line2": null,
+    "city": "NEWBURGH",
+    "state": "IN",
+    "postal_code": "47630",
+    "phone": "(812)573-0088",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013846-1",
+      "expiration": "2026-06-30",
+      "beds": 120
+    }
+  },
+  {
+    "name": "PRIMROSE RETIREMENT COMMUNITY OF ANDERSON",
+    "address_line1": "1118 W CROSS ST",
+    "address_line2": null,
+    "city": "ANDERSON",
+    "state": "IN",
+    "postal_code": "46011",
+    "phone": "(765)643-5000",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-011806-1",
+      "expiration": "2026-05-31",
+      "beds": 82
+    }
+  },
+  {
+    "name": "PRIMROSE RETIREMENT COMMUNITY OF KOKOMO",
+    "address_line1": "329 W RAINBOW DR",
+    "address_line2": null,
+    "city": "KOKOMO",
+    "state": "IN",
+    "postal_code": "46901",
+    "phone": "(765)455-1700",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-011555-1",
+      "expiration": "2026-04-30",
+      "beds": 136
+    }
+  },
+  {
+    "name": "PROVIDENCE HOME BY FIR",
+    "address_line1": "1410 DEER RUN DRIVE",
+    "address_line2": null,
+    "city": "MISHAWAKA",
+    "state": "IN",
+    "postal_code": "46545",
+    "phone": "(574)323-4890",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-015429-1",
+      "expiration": "2026-03-31",
+      "beds": 28
+    }
+  },
+  {
+    "name": "RESIDENCES AT COFFEE CREEK",
+    "address_line1": "2300 VILLAGE POINT",
+    "address_line2": null,
+    "city": "CHESTERTON",
+    "state": "IN",
+    "postal_code": "46304",
+    "phone": "(219)921-5200",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014469-1",
+      "expiration": "2026-06-30",
+      "beds": 118
+    }
+  },
+  {
+    "name": "RESIDENCES AT DEER CREEK",
+    "address_line1": "401 EAST US 30",
+    "address_line2": null,
+    "city": "SCHERERVILLE",
+    "state": "IN",
+    "postal_code": "46375",
+    "phone": "(219)864-0700",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013069-1",
+      "expiration": "2025-09-30",
+      "beds": 130
+    }
+  },
+  {
+    "name": "RITTENHOUSE VILLAGE AT MICHIGAN CITY",
+    "address_line1": "4300 CLEVELAND RD",
+    "address_line2": null,
+    "city": "MICHIGAN CITY",
+    "state": "IN",
+    "postal_code": "46360",
+    "phone": "(219)872-6800",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012180-1",
+      "expiration": "2026-06-30",
+      "beds": 110
+    }
+  },
+  {
+    "name": "RITTENHOUSE VILLAGE AT NORTHSIDE",
+    "address_line1": "1251 W 96TH ST",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46260",
+    "phone": "(317)575-9200",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-003282-1",
+      "expiration": "2025-09-30",
+      "beds": 100
+    }
+  },
+  {
+    "name": "RITTENHOUSE VILLAGE AT PORTAGE",
+    "address_line1": "6235 STERLING CREEK RD",
+    "address_line2": null,
+    "city": "PORTAGE",
+    "state": "IN",
+    "postal_code": "46368",
+    "phone": "(219)764-2900",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012396-1",
+      "expiration": "2026-06-30",
+      "beds": 105
+    }
+  },
+  {
+    "name": "RIVER CROSSING ASSISTED LIVING COMMUNITY",
+    "address_line1": "2400 MARKET ST",
+    "address_line2": null,
+    "city": "CHARLESTOWN",
+    "state": "IN",
+    "postal_code": "47111",
+    "phone": "(812)406-1099",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012007-1",
+      "expiration": "2026-01-31",
+      "beds": 106
+    }
+  },
+  {
+    "name": "RIVERBEND",
+    "address_line1": "2715 CHARLESTOWN PIKE",
+    "address_line2": null,
+    "city": "JEFFERSONVILLE",
+    "state": "IN",
+    "postal_code": "47130",
+    "phone": "(812)280-0965",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-010885-1",
+      "expiration": "2026-02-28",
+      "beds": 114
+    }
+  },
+  {
+    "name": "RIVERCREST SENIOR LIVING",
+    "address_line1": "4917 GRANT LINE ROAD",
+    "address_line2": null,
+    "city": "NEW ALBANY",
+    "state": "IN",
+    "postal_code": "47150",
+    "phone": "(930)256-0240",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-015516-1",
+      "expiration": "2025-08-31",
+      "beds": 104
+    }
+  },
+  {
+    "name": "RIVERWALK COMMUNITIES",
+    "address_line1": "401 S.E. 6TH STREET",
+    "address_line2": null,
+    "city": "EVANSVILLE",
+    "state": "IN",
+    "postal_code": "47713",
+    "phone": "(812)425-1041",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-011274-1",
+      "expiration": "2026-01-31",
+      "beds": 113
+    }
+  },
+  {
+    "name": "ROSE SENIOR LIVING CARMEL",
+    "address_line1": "1285 FAIRFAX MANOR DRIVE",
+    "address_line2": null,
+    "city": "CARMEL",
+    "state": "IN",
+    "postal_code": "46032",
+    "phone": "(317)249-8830",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013719-1",
+      "expiration": "2026-02-28",
+      "beds": 122
+    }
+  },
+  {
+    "name": "ROSEGATE COMMONS",
+    "address_line1": "7525 ROSEGATE DRIVE",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46237",
+    "phone": "(317)889-0100",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012936-1",
+      "expiration": "2026-03-31",
+      "beds": 102
+    }
+  },
+  {
+    "name": "ROSEWALK AT LUTHERWOODS",
+    "address_line1": "1301 N RITTER AVE",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46219",
+    "phone": "(317)356-2760",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-011587-1",
+      "expiration": "2025-09-30",
+      "beds": 134
+    }
+  },
+  {
+    "name": "SANDERS GLEN",
+    "address_line1": "334 S CHERRY ST",
+    "address_line2": null,
+    "city": "WESTFIELD",
+    "state": "IN",
+    "postal_code": "46074",
+    "phone": "(317)867-0212",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-005657-1",
+      "expiration": "2025-12-31",
+      "beds": 143
+    }
+  },
+  {
+    "name": "SEACOAST AT SUMMERS POINTE LLC",
+    "address_line1": "1 SUNSET DRIVE",
+    "address_line2": null,
+    "city": "WINCHESTER",
+    "state": "IN",
+    "postal_code": "47394",
+    "phone": "(765)584-7676",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013838-1",
+      "expiration": "2026-04-30",
+      "beds": 37
+    }
+  },
+  {
+    "name": "SENIOR SUITES AT THE LELAND, LLC",
+    "address_line1": "900 SOUTH A STREET",
+    "address_line2": null,
+    "city": "RICHMOND",
+    "state": "IN",
+    "postal_code": "47374",
+    "phone": "(765)939-6500",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012497-1",
+      "expiration": "2026-01-31",
+      "beds": 109
+    }
+  },
+  {
+    "name": "SILVER BIRCH AT COOK ROAD",
+    "address_line1": "3731 WEST COOK ROAD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46818",
+    "phone": "(260)490-2112",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014553-1",
+      "expiration": "2025-08-31",
+      "beds": 125
+    }
+  },
+  {
+    "name": "SILVER BIRCH OF EVANSVILLE",
+    "address_line1": "475 S GOVERNOR STREET",
+    "address_line2": null,
+    "city": "EVANSVILLE",
+    "state": "IN",
+    "postal_code": "47713",
+    "phone": "(812)777-4490",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014238-1",
+      "expiration": "2026-02-28",
+      "beds": 125
+    }
+  },
+  {
+    "name": "SILVER BIRCH OF FORT WAYNE",
+    "address_line1": "7125 S HANNA STREET",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46816",
+    "phone": "(260)447-8811",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014316-1",
+      "expiration": "2026-06-30",
+      "beds": 125
+    }
+  },
+  {
+    "name": "SILVER BIRCH OF HAMMOND",
+    "address_line1": "5620 SOHL AVENUE",
+    "address_line2": null,
+    "city": "HAMMOND",
+    "state": "IN",
+    "postal_code": "46320",
+    "phone": "(219)937-9085",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013801-1",
+      "expiration": "2026-07-31",
+      "beds": 136
+    }
+  },
+  {
+    "name": "SILVER BIRCH OF KOKOMO",
+    "address_line1": "408 S WASHINGTON STREET",
+    "address_line2": null,
+    "city": "KOKOMO",
+    "state": "IN",
+    "postal_code": "46901",
+    "phone": "(765)868-7266",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014137-1",
+      "expiration": "2025-08-31",
+      "beds": 128
+    }
+  },
+  {
+    "name": "SILVER BIRCH OF MICHIGAN CITY",
+    "address_line1": "4400 EAST MICHIGAN BLVD",
+    "address_line2": null,
+    "city": "MICHIGAN CITY",
+    "state": "IN",
+    "postal_code": "46360",
+    "phone": "(219)879-6115",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014052-1",
+      "expiration": "2026-06-30",
+      "beds": 125
+    }
+  },
+  {
+    "name": "SILVER BIRCH OF MISHAWAKA",
+    "address_line1": "3630 HICKORY ROAD",
+    "address_line2": null,
+    "city": "MISHAWAKA",
+    "state": "IN",
+    "postal_code": "46545",
+    "phone": "(574)252-7225",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014260-1",
+      "expiration": "2026-06-30",
+      "beds": 125
+    }
+  },
+  {
+    "name": "SILVER BIRCH OF MUNCIE",
+    "address_line1": "2500 W KILGORE AVENUE",
+    "address_line2": null,
+    "city": "MUNCIE",
+    "state": "IN",
+    "postal_code": "47304",
+    "phone": "(765)254-0329",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014034-1",
+      "expiration": "2026-04-30",
+      "beds": 127
+    }
+  },
+  {
+    "name": "SILVER BIRCH OF TERRE HAUTE",
+    "address_line1": "650 LAFAYETTE AVENUE",
+    "address_line2": null,
+    "city": "TERRE HAUTE",
+    "state": "IN",
+    "postal_code": "47807",
+    "phone": "(812)237-0123",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014291-1",
+      "expiration": "2026-05-31",
+      "beds": 127
+    }
+  },
+  {
+    "name": "ST PAUL'S",
+    "address_line1": "3602 SOUTH IRONWOOD DRIVE",
+    "address_line2": null,
+    "city": "SOUTH BEND",
+    "state": "IN",
+    "postal_code": "46614",
+    "phone": "(574)284-9000",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014602-1",
+      "expiration": "2026-02-28",
+      "beds": 181
+    }
+  },
+  {
+    "name": "STORYPOINT FORT WAYNE WEST",
+    "address_line1": "611 W COUNTY LINE RD SOUTH",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46814",
+    "phone": "(260)625-4025",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-011804-1",
+      "expiration": "2026-03-31",
+      "beds": 146
+    }
+  },
+  {
+    "name": "STORYPOINT GRANGER",
+    "address_line1": "6330 N FIR RD",
+    "address_line2": null,
+    "city": "GRANGER",
+    "state": "IN",
+    "postal_code": "46530",
+    "phone": "(574)243-5557",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012229-1",
+      "expiration": "2026-03-31",
+      "beds": 147
+    }
+  },
+  {
+    "name": "STORYPOINT SCHERERVILLE",
+    "address_line1": "7770 BURR STREET",
+    "address_line2": null,
+    "city": "SCHERERVILLE",
+    "state": "IN",
+    "postal_code": "46375",
+    "phone": "(219)322-8855",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013825-2",
+      "expiration": "2025-09-30",
+      "beds": 99
+    }
+  },
+  {
+    "name": "SUGAR FORK CROSSING",
+    "address_line1": "1745 EAST 67TH STREET",
+    "address_line2": null,
+    "city": "ANDERSON",
+    "state": "IN",
+    "postal_code": "46013",
+    "phone": "(765)233-9360",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014080-1",
+      "expiration": "2026-04-30",
+      "beds": 128
+    }
+  },
+  {
+    "name": "SUGAR GROVE SENIOR LIVING COMMUNITY",
+    "address_line1": "5865 SUGAR LN",
+    "address_line2": null,
+    "city": "PLAINFIELD",
+    "state": "IN",
+    "postal_code": "46168",
+    "phone": "(317)839-7900",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-012394-1",
+      "expiration": "2026-01-31",
+      "beds": 164
+    }
+  },
+  {
+    "name": "SUMMIT PLACE WEST",
+    "address_line1": "55 N MISSION DR",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46214",
+    "phone": "(317)244-2600",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-011840-1",
+      "expiration": "2026-04-30",
+      "beds": 60
+    }
+  },
+  {
+    "name": "SUNRISE ON OLD MERIDIAN",
+    "address_line1": "12130 OLD MERIDIAN ST",
+    "address_line2": null,
+    "city": "CARMEL",
+    "state": "IN",
+    "postal_code": "46032",
+    "phone": "(317)569-0100",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-012141-1",
+      "expiration": "2025-09-30",
+      "beds": 149
+    }
+  },
+  {
+    "name": "SWEET GALILEE AT THE WIGWAM",
+    "address_line1": "1315 JOHN STREET",
+    "address_line2": null,
+    "city": "ANDERSON",
+    "state": "IN",
+    "postal_code": "46016",
+    "phone": "(765)442-3752",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014706-1",
+      "expiration": "2026-06-30",
+      "beds": 130
+    }
+  },
+  {
+    "name": "TANGLEWOOD TRACE",
+    "address_line1": "530 W TANGLEWOOD LN",
+    "address_line2": null,
+    "city": "MISHAWAKA",
+    "state": "IN",
+    "postal_code": "46545",
+    "phone": "(574)277-4310",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-009669-1",
+      "expiration": "2026-06-30",
+      "beds": 148
+    }
+  },
+  {
+    "name": "TERRACE AT FORT WAYNE, THE",
+    "address_line1": "4730 E STATE BLVD",
+    "address_line2": null,
+    "city": "FORT WAYNE",
+    "state": "IN",
+    "postal_code": "46815",
+    "phone": "(260)484-0308",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-003273-1",
+      "expiration": "2026-03-31",
+      "beds": 104
+    }
+  },
+  {
+    "name": "TIMBER CREEK VILLAGE",
+    "address_line1": "990 PROGRESS PARKWAY",
+    "address_line2": null,
+    "city": "SHELBYVILLE",
+    "state": "IN",
+    "postal_code": "46176",
+    "phone": "(317)680-2500",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014548-1",
+      "expiration": "2026-05-31",
+      "beds": 78
+    }
+  },
+  {
+    "name": "TIPTON PLACE",
+    "address_line1": "460 FORKS OF THE WABASH WAY",
+    "address_line2": null,
+    "city": "HUNTINGTON",
+    "state": "IN",
+    "postal_code": "46750",
+    "phone": "(260)356-2028",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-003376-1",
+      "expiration": "2026-06-30",
+      "beds": 47
+    }
+  },
+  {
+    "name": "TOWNE CENTRE ASSISTED LIVING LLC",
+    "address_line1": "7252 ARTHUR BLVD",
+    "address_line2": null,
+    "city": "MERRILLVILLE",
+    "state": "IN",
+    "postal_code": "46410",
+    "phone": "(219)736-2900",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-002392-1",
+      "expiration": "2026-02-28",
+      "beds": 274
+    }
+  },
+  {
+    "name": "TOWNE PARK ASSISTED LIVING",
+    "address_line1": "503 S MURPHY AVE",
+    "address_line2": null,
+    "city": "BRAZIL",
+    "state": "IN",
+    "postal_code": "47834",
+    "phone": "(812)420-4100",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014623-1",
+      "expiration": "2026-04-30",
+      "beds": 42
+    }
+  },
+  {
+    "name": "TRADITIONS AT NORTH WILLOW",
+    "address_line1": "1703 W 86TH STREET",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46260",
+    "phone": "(317)876-2916",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013880-1",
+      "expiration": "2026-07-31",
+      "beds": 160
+    }
+  },
+  {
+    "name": "TRADITIONS AT REAGAN PARK",
+    "address_line1": "1176 KINGWOOD DRIVE",
+    "address_line2": null,
+    "city": "AVON",
+    "state": "IN",
+    "postal_code": "46123",
+    "phone": "(317)271-0100",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013264-1",
+      "expiration": "2026-03-31",
+      "beds": 119
+    }
+  },
+  {
+    "name": "TRADITIONS AT SOLANA",
+    "address_line1": "7721 BATTERY POINTE WAY",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46240",
+    "phone": "(317)860-0000",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013164-1",
+      "expiration": "2026-03-31",
+      "beds": 150
+    }
+  },
+  {
+    "name": "TRADITIONS OF COLUMBUS",
+    "address_line1": "4300 WEST GOELLER BLVD",
+    "address_line2": null,
+    "city": "COLUMBUS",
+    "state": "IN",
+    "postal_code": "47201",
+    "phone": "(812)552-0500",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-015179-1",
+      "expiration": "2026-06-30",
+      "beds": 117
+    }
+  },
+  {
+    "name": "TRAIL CREEK PLACE",
+    "address_line1": "1400 E COOLSPRING AVE",
+    "address_line2": null,
+    "city": "MICHIGAN CITY",
+    "state": "IN",
+    "postal_code": "46360",
+    "phone": "(219)874-5500",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-010610-1",
+      "expiration": "2026-03-31",
+      "beds": 92
+    }
+  },
+  {
+    "name": "TRUSTWELL LIVING AT SETTLERS PLACE",
+    "address_line1": "3304 MONROE ST",
+    "address_line2": null,
+    "city": "LA PORTE",
+    "state": "IN",
+    "postal_code": "46350",
+    "phone": "(219)326-7283",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-004458-2",
+      "expiration": "2025-08-31",
+      "beds": 47
+    }
+  },
+  {
+    "name": "VALPARAISO SENIOR VILLAGE",
+    "address_line1": "74 E JOURNEY WAY",
+    "address_line2": null,
+    "city": "VALPARAISO",
+    "state": "IN",
+    "postal_code": "46383",
+    "phone": "(219)728-6800",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-015221-1",
+      "expiration": "2026-02-28",
+      "beds": 100
+    }
+  },
+  {
+    "name": "VILLAS OF HOLLY BROOK INDIANA, LLC",
+    "address_line1": "1941 W US HIGHWAY 40",
+    "address_line2": null,
+    "city": "BRAZIL",
+    "state": "IN",
+    "postal_code": "47834",
+    "phone": "(812)420-2243",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013946-1",
+      "expiration": "2026-05-31",
+      "beds": 93
+    }
+  },
+  {
+    "name": "VITA OF GREENFIELD",
+    "address_line1": "1683 COMMUNITY WAY",
+    "address_line2": null,
+    "city": "GREENFIELD",
+    "state": "IN",
+    "postal_code": "46140",
+    "phone": "(463)290-8001",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-016063-1",
+      "expiration": "2025-10-31",
+      "beds": 112
+    }
+  },
+  {
+    "name": "VITA OF MARION",
+    "address_line1": "4211 S ADAMS STREET",
+    "address_line2": null,
+    "city": "MARION",
+    "state": "IN",
+    "postal_code": "46953",
+    "phone": "(765)303-2056",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-015081-1",
+      "expiration": "2026-06-30",
+      "beds": 143
+    }
+  },
+  {
+    "name": "VITA OF NEW WHITELAND",
+    "address_line1": "532 COUNTRY GATE DRIVE",
+    "address_line2": null,
+    "city": "NEW WHITELAND",
+    "state": "IN",
+    "postal_code": "46184",
+    "phone": "(317)463-7155",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-016046-1",
+      "expiration": "2026-07-31",
+      "beds": 112
+    }
+  },
+  {
+    "name": "VIVERA SENIOR LIVING OF COLUMBUS",
+    "address_line1": "1971 STATE STREET",
+    "address_line2": null,
+    "city": "COLUMBUS",
+    "state": "IN",
+    "postal_code": "47201",
+    "phone": "(812)376-0698",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014519-1",
+      "expiration": "2026-04-30",
+      "beds": 154
+    }
+  },
+  {
+    "name": "VIVERA SENIOR LIVING OF JEFFERSONVILLE",
+    "address_line1": "2105 HAMBURG PIKE",
+    "address_line2": null,
+    "city": "JEFFERSONVILLE",
+    "state": "IN",
+    "postal_code": "47130",
+    "phone": "(812)577-8542",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-015121-1",
+      "expiration": "2025-11-30",
+      "beds": 130
+    }
+  },
+  {
+    "name": "WALKER PLACE",
+    "address_line1": "2216 N RILEY HWY",
+    "address_line2": null,
+    "city": "SHELBYVILLE",
+    "state": "IN",
+    "postal_code": "46176",
+    "phone": "(317)392-3370",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004444-1",
+      "expiration": "2026-06-30",
+      "beds": 47
+    }
+  },
+  {
+    "name": "WALNUT CREEK MEMORY CARE",
+    "address_line1": "525 BENTEE WES COURT",
+    "address_line2": null,
+    "city": "EVANSVILLE",
+    "state": "IN",
+    "postal_code": "47715",
+    "phone": "(812)471-3100",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-013642-1",
+      "expiration": "2026-02-28",
+      "beds": 66
+    }
+  },
+  {
+    "name": "WELLINGTON AT SOUTHPORT THE",
+    "address_line1": "7212 US HWY 31 S",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46227",
+    "phone": "(317)889-9822",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-003283-1",
+      "expiration": "2025-09-30",
+      "beds": 105
+    }
+  },
+  {
+    "name": "WEST LAFAYETTE ALF OPERATIONS",
+    "address_line1": "3575 SENIOR PLACE",
+    "address_line2": null,
+    "city": "WEST LAFAYETTE",
+    "state": "IN",
+    "postal_code": "47906",
+    "phone": "(765)464-1805",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-014094-1",
+      "expiration": "2025-10-31",
+      "beds": 86
+    }
+  },
+  {
+    "name": "WHITLOCK PLACE",
+    "address_line1": "1719 S ELM ST",
+    "address_line2": null,
+    "city": "CRAWFORDSVILLE",
+    "state": "IN",
+    "postal_code": "47933",
+    "phone": "(765)364-1880",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004419-1",
+      "expiration": "2026-06-30",
+      "beds": 93
+    }
+  },
+  {
+    "name": "WINDSOR RIDGE",
+    "address_line1": "2700 WATERS EDGE PKWY",
+    "address_line2": null,
+    "city": "JEFFERSONVILLE",
+    "state": "IN",
+    "postal_code": "47130",
+    "phone": "(812)284-4336",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-004001-1",
+      "expiration": "2026-02-28",
+      "beds": 47
+    }
+  },
+  {
+    "name": "WOODLAND TERRACE OF CARMEL",
+    "address_line1": "689 PRO MED LANE",
+    "address_line2": null,
+    "city": "CARMEL",
+    "state": "IN",
+    "postal_code": "46032",
+    "phone": "(317)616-0858",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013510-1",
+      "expiration": "2025-10-31",
+      "beds": 149
+    }
+  },
+  {
+    "name": "WOODLAND TERRACE OF DANVILLE",
+    "address_line1": "200 S ARBOR LANE",
+    "address_line2": null,
+    "city": "DANVILLE",
+    "state": "IN",
+    "postal_code": "46122",
+    "phone": "(317)564-0222",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-014518-1",
+      "expiration": "2026-06-30",
+      "beds": 141
+    }
+  },
+  {
+    "name": "WOODLAND TERRACE OF NEW PALESTINE LLC",
+    "address_line1": "4400 TERRACE DRIVE",
+    "address_line2": null,
+    "city": "NEW PALESTINE",
+    "state": "IN",
+    "postal_code": "46163",
+    "phone": "(317)353-8311",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013896-1",
+      "expiration": "2025-10-31",
+      "beds": 165
+    }
+  },
+  {
+    "name": "WOODRIDGE VILLAGE",
+    "address_line1": "17650 GENERATIONS DR",
+    "address_line2": null,
+    "city": "SOUTH BEND",
+    "state": "IN",
+    "postal_code": "46635",
+    "phone": "(574)271-1151",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-001148-1",
+      "expiration": "2025-09-30",
+      "beds": 85
+    }
+  },
+  {
+    "name": "WORTHINGTON PLACE",
+    "address_line1": "10799 ALLIANCE DR",
+    "address_line2": null,
+    "city": "CAMBY",
+    "state": "IN",
+    "postal_code": "46113",
+    "phone": "(317)856-6224",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-003984-1",
+      "expiration": "2026-06-30",
+      "beds": 47
+    }
+  },
+  {
+    "name": "WYNDMOOR ASSISTED LIVING LLC",
+    "address_line1": "1465 EAST CROSSING BLVD",
+    "address_line2": null,
+    "city": "TERRE HAUTE",
+    "state": "IN",
+    "postal_code": "47802",
+    "phone": "(812)298-9963",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "24-013389-1",
+      "expiration": "2025-10-31",
+      "beds": 151
+    }
+  },
+  {
+    "name": "WYNDMOOR OF CASTLETON, LLC",
+    "address_line1": "8480 CRAIG ST",
+    "address_line2": null,
+    "city": "INDIANAPOLIS",
+    "state": "IN",
+    "postal_code": "46250",
+    "phone": "(317)842-6564",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-009894-1",
+      "expiration": "2026-04-30",
+      "beds": 175
+    }
+  },
+  {
+    "name": "WYNDMOOR OF EVANSVILLE LLC",
+    "address_line1": "6521 GREENDALE DR",
+    "address_line2": null,
+    "city": "EVANSVILLE",
+    "state": "IN",
+    "postal_code": "47711",
+    "phone": "(812)867-7900",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-010681-1",
+      "expiration": "2026-04-30",
+      "beds": 110
+    }
+  },
+  {
+    "name": "WYNDMOOR OF MARION, LLC",
+    "address_line1": "2452 W KEM RD",
+    "address_line2": null,
+    "city": "MARION",
+    "state": "IN",
+    "postal_code": "46952",
+    "phone": "(765)384-4500",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-010682-1",
+      "expiration": "2026-04-30",
+      "beds": 110
+    }
+  },
+  {
+    "name": "WYNDMOOR OF PORTAGE, LLC",
+    "address_line1": "3444 SWANSON RD",
+    "address_line2": null,
+    "city": "PORTAGE",
+    "state": "IN",
+    "postal_code": "46368",
+    "phone": "(219)763-4867",
+    "latitude": null,
+    "longitude": null,
+    "license": {
+      "number": "25-010889-1",
+      "expiration": "2026-04-30",
+      "beds": 111
+    }
+  }
+]

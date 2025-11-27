@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search, MapPin, DollarSign, Star, Filter, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
-import facilitiesData from '../../../src/data/facilities.json';
 import { ReviewModal } from '../reviews/ReviewModal';
+import { supabase } from '@/src/lib/supabase';
 
 import { useSearchParams } from 'react-router-dom';
+
+import { useGeolocation } from '@/src/hooks/useGeolocation';
+import { Loader2, Crosshair } from 'lucide-react';
 
 const DirectorySearch: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -14,7 +17,110 @@ const DirectorySearch: React.FC = () => {
   const [selectedFacilityName, setSelectedFacilityName] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 50;
+  
+  const [facilities, setFacilities] = useState<any[]>([]);
+  const [dataLoading, setDataLoading] = useState(true);
+  
+  const { loading: geoLoading, error: geoError, nearestCity, coordinates, getLocation } = useGeolocation();
 
+  useEffect(() => {
+    if (nearestCity) {
+      setLocation(nearestCity);
+    }
+  }, [nearestCity]);
+
+  useEffect(() => {
+    const fetchFacilities = async () => {
+      setDataLoading(true);
+      try {
+        let data, error;
+
+        // If we have coordinates and no specific text search (or if the user just clicked "Use My Location"), use RPC
+        // We prioritize the RPC if coordinates are available and match the current location intent
+        // But if the user types a different city, we should use that.
+        // Let's use RPC if coordinates are present AND location matches nearestCity (implies "Use My Location" was used)
+        
+        if (coordinates && location === nearestCity && !searchQuery) {
+             const { data: rpcData, error: rpcError } = await supabase
+                .rpc('get_nearby_facilities', {
+                    user_lat: coordinates.lat,
+                    user_lng: coordinates.lng,
+                    max_results: 50
+                });
+            
+            if (rpcData) {
+                const ids = rpcData.map((f: any) => f.id);
+                const { data: licenseData } = await supabase
+                    .from('facility_licensing')
+                    .select('*')
+                    .in('facility_id', ids);
+                
+                data = rpcData.map((f: any) => ({
+                    ...f,
+                    facility_licensing: licenseData?.filter((l: any) => l.facility_id === f.id) || []
+                }));
+            }
+            error = rpcError;
+        } else {
+            // Standard query
+            let query = supabase
+            .from('facilities')
+            .select('*, facility_licensing(bed_capacity)');
+
+            if (searchQuery) {
+                query = query.ilike('name', `%${searchQuery}%`);
+            }
+
+            if (location) {
+                if (/^\d{5}$/.test(location)) {
+                    query = query.eq('postal_code', location);
+                } else {
+                    query = query.ilike('city', `%${location}%`);
+                }
+            }
+            
+            // Pagination
+            const from = (currentPage - 1) * itemsPerPage;
+            const to = from + itemsPerPage - 1;
+            query = query.range(from, to);
+
+            const result = await query;
+            data = result.data;
+            error = result.error;
+        }
+        
+        if (error) {
+          console.error('Error fetching facilities:', error);
+        } else if (data) {
+          // Map DB structure to UI structure
+          const mapped = data.map((f: any) => ({
+            id: f.id,
+            name: f.name,
+            address: `${f.address_line1 || ''}${f.city ? ', ' + f.city : ''}${f.state ? ', ' + f.state : ''} ${f.postal_code || ''}`,
+            capacity: f.facility_licensing?.[0]?.bed_capacity || 0,
+            type: 'Assisted Living', // Default as not in DB yet
+            price: 'Call for Pricing', // Default as not in DB yet
+            rating: 0,
+            verified: true,
+            vacancy: false,
+            phone: f.phone,
+            image: null
+          }));
+          setFacilities(mapped);
+        }
+      } catch (err) {
+        console.error('Unexpected error:', err);
+      } finally {
+        setDataLoading(false);
+      }
+    };
+
+    fetchFacilities();
+  }, [searchQuery, location, currentPage, coordinates, nearestCity]);
+
+  // Client-side filtering is removed, we use server-side now.
+  // We need to handle the "Use My Location" button separately to trigger RPC.
+  
   const handleWriteReview = (facilityName: string) => {
     const isLoggedIn = localStorage.getItem('silvertech_user_token');
     
@@ -28,16 +134,18 @@ const DirectorySearch: React.FC = () => {
   };
 
   const handleClaimBusiness = (facilityId: string) => {
-    // Navigate to claim page or show modal
-    // For now, we'll use the existing claim route structure or a new one
-    // Since we have /claim/:code, we might need a general claim start page
-    // Let's just alert for now or redirect to a generic claim page
     window.location.href = `/claim/start?id=${facilityId}`;
   };
 
   // Decorative SVG placeholder generator
   const getFacilityImage = (id: string, name: string): string => {
-    const numericId = parseInt(id.replace(/\D/g, ''), 10) || 0;
+    // Simple hash for color stability
+    let hash = 0;
+    for (let i = 0; i < id.length; i++) {
+      hash = id.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    const numericId = Math.abs(hash);
+    
     const colors = [
       { bg: '#4A5568', text: '#FFFFFF' },
       { bg: '#2D3748', text: '#FFFFFF' },
@@ -58,10 +166,11 @@ const DirectorySearch: React.FC = () => {
     return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
   };
 
-  const totalPages = Math.ceil(facilitiesData.length / itemsPerPage);
+  const filteredFacilities = facilities; // Pass through as we filtered on server
+  const totalPages = 10; // Mock for server-side pagination or fetch count
   const startIdx = (currentPage - 1) * itemsPerPage;
-  const endIdx = Math.min(startIdx + itemsPerPage, facilitiesData.length);
-  const displayedFacilities = facilitiesData.slice(startIdx, endIdx);
+  const endIdx = startIdx + facilities.length;
+  const displayedFacilities = facilities;
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -92,8 +201,21 @@ const DirectorySearch: React.FC = () => {
                   placeholder="City, State, or ZIP code"
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                  className="w-full pl-10 pr-12 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                 />
+                <button
+                  type="button"
+                  onClick={getLocation}
+                  disabled={geoLoading}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-primary-600 transition-colors disabled:opacity-50"
+                  title="Use my location"
+                >
+                  {geoLoading ? (
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                  ) : (
+                    <Crosshair className="w-5 h-5" />
+                  )}
+                </button>
               </div>
               <button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-md font-medium transition-colors whitespace-nowrap">
                 Search
@@ -150,102 +272,116 @@ const DirectorySearch: React.FC = () => {
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-slate-900 mb-2">Search Results</h2>
               <p className="text-slate-600">
-                Showing {startIdx + 1}-{endIdx} of {facilitiesData.length} facilities
+                {dataLoading ? (
+                  <span className="flex items-center gap-2"><Loader2 className="animate-spin w-4 h-4"/> Loading facilities...</span>
+                ) : (
+                  `Showing ${filteredFacilities.length > 0 ? startIdx + 1 : 0}-${endIdx} of ${filteredFacilities.length} facilities`
+                )}
               </p>
             </div>
-            <div className="space-y-4">
-              {displayedFacilities.map((facility, index) => (
-                <div key={index} className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden">
-                  <div className="flex flex-col md:flex-row">
-                    <img
-                      src={getFacilityImage(facility.id, facility.name)}
-                      alt={facility.name}
-                      className="w-full md:w-64 h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                      onClick={() => handleClaimBusiness(facility.id)}
-                      title="Click to claim this business"
-                    />
-                    <div className="p-6 flex-1">
-                      <div className="flex justify-between items-start mb-3">
-                        <div>
-                          <h3 className="text-xl font-bold text-slate-900 mb-1">{facility.name}</h3>
-                          <p className="text-slate-600 flex items-center gap-2">
-                            <MapPin size={16} />
-                            {facility.address}
-                          </p>
-                          {/* @ts-ignore */}
-                          {facility.phone && (
-                            <p className="text-slate-600 flex items-center gap-2 mt-1">
-                              <Phone size={16} />
-                              <a href={`tel:${facility.phone}`} className="hover:text-primary-600 transition-colors">
-                                {facility.phone}
-                              </a>
+            
+            {dataLoading ? (
+              <div className="flex justify-center py-20">
+                <Loader2 className="w-12 h-12 text-primary-600 animate-spin" />
+              </div>
+            ) : (
+              <div className="space-y-4">
+                {displayedFacilities.map((facility, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden">
+                    <div className="flex flex-col md:flex-row">
+                      <img
+                        src={getFacilityImage(facility.id, facility.name)}
+                        alt={facility.name}
+                        className="w-full md:w-64 h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                        onClick={() => handleClaimBusiness(facility.id)}
+                        title="Click to claim this business"
+                      />
+                      <div className="p-6 flex-1">
+                        <div className="flex justify-between items-start mb-3">
+                          <div>
+                            <h3 className="text-xl font-bold text-slate-900 mb-1">{facility.name}</h3>
+                            <p className="text-slate-600 flex items-center gap-2">
+                              <MapPin size={16} />
+                              // @ts-ignore
+                              {facility.address}
                             </p>
+                            {/* @ts-ignore */}
+                            {facility.phone && (
+                              <p className="text-slate-600 flex items-center gap-2 mt-1">
+                                <Phone size={16} />
+                                <a href={`tel:${facility.phone}`} className="hover:text-primary-600 transition-colors">
+                                  {facility.phone}
+                                </a>
+                              </p>
+                            )}
+                          </div>
+                          <div className="flex items-center bg-green-50 px-2 py-1 rounded-lg">
+                            <Star className="w-4 h-4 text-green-600 fill-current mr-1" />
+                            <span className="font-bold text-green-800">4.8</span>
+                          </div>
+                        </div>
+                        
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
+                            {facility.type}
+                          </span>
+                          <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
+                            Capacity: {facility.capacity}
+                          </span>
+                          {facility.verified && (
+                            <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                              ✓ Verified
+                            </span>
                           )}
                         </div>
-                        <div className="flex items-center bg-green-50 px-2 py-1 rounded-lg">
-                          <Star className="w-4 h-4 text-green-600 fill-current mr-1" />
-                          <span className="font-bold text-green-800">4.8</span>
-                        </div>
-                      </div>
-                      
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
-                          {facility.type}
-                        </span>
-                        <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
-                          Capacity: {facility.capacity}
-                        </span>
-                        {facility.verified && (
-                          <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
-                            ✓ Verified
-                          </span>
-                        )}
-                      </div>
-                      
-                      <div className="flex items-center justify-between mt-4">
-                        <div className="flex items-center gap-2 text-slate-900">
-                          <DollarSign size={20} className="text-accent-600" />
-                          <span className="font-bold text-lg">{facility.price}</span>
-                        </div>
-                        <div className="flex gap-2">
-                          <Button 
-                            variant="primary"
-                            onClick={() => window.location.href = `/facility/${facility.id}`}
-                          >
-                            View Details
-                          </Button>
-                          <Button 
-                            variant="outline"
-                            onClick={() => handleWriteReview(facility.name)}
-                          >
-                            Write Review
-                          </Button>
+                        
+                        <div className="flex items-center justify-between mt-4">
+                          <div className="flex items-center gap-2 text-slate-900">
+                            <DollarSign size={20} className="text-accent-600" />
+                            <span className="font-bold text-lg">{facility.price}</span>
+                          </div>
+                          <div className="flex gap-2">
+                            <Button 
+                              variant="primary"
+                              onClick={() => window.location.href = `/facility/${facility.id}`}
+                            >
+                              View Details
+                            </Button>
+                            <Button 
+                              variant="outline"
+                              onClick={() => handleWriteReview(facility.name)}
+                            >
+                              Write Review
+                            </Button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
             
             {/* Pagination Controls */}
-            <div className="flex justify-center items-center mt-8 space-x-4">
-              <Button
-                variant="outline"
-                onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
-                disabled={currentPage === 1}
-              >
-                Previous
-              </Button>
-              <span className="text-slate-600">Page {currentPage} of {totalPages}</span>
-              <Button
-                variant="outline"
-                onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
-                disabled={currentPage === totalPages}
-              >
-                Next
-              </Button>
-            </div>
+            {!dataLoading && filteredFacilities.length > 0 && (
+              <div className="flex justify-center items-center mt-8 space-x-4">
+                <Button
+                  variant="outline"
+                  onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+                  disabled={currentPage === 1}
+                >
+                  Previous
+                </Button>
+                <span className="text-slate-600">Page {currentPage} of {totalPages}</span>
+                <Button
+                  variant="outline"
+                  onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+                  disabled={currentPage === totalPages}
+                >
+                  Next
+                </Button>
+              </div>
+            )}
           </div>
         </div>
       </div>
