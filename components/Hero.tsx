@@ -18,30 +18,34 @@ export const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 mb-6 leading-[1.1]">
-              The intelligence layer for senior living.
+              Stop Paying Commission Taxes on Crisis Decisions.
             </h1>
             
             <p className="text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl leading-relaxed">
-              Replacing the opaque referral agency model with a data-driven marketplace and SaaS workflow engine for operators, families, and investors.
+              Find transparent, commission-free memory care. The intelligence layer for the longevity economy.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="https://drive.google.com/drive/folders/1tjOd8qf2qPxi4ELy8oRrzSMXJV-mhh3r?usp=drive_link" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-full sm:w-auto"
-              >
-                 <Button variant="primary" className="w-full sm:w-auto text-lg px-8 py-4 h-auto">
-                    View Pitch Deck <ArrowRight className="ml-2 w-5 h-5" />
+              <div className="relative group">
+                <Button 
+                  variant="primary" 
+                  className="w-full sm:w-auto text-lg px-8 py-4 h-auto bg-primary-600 hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-primary-500/25"
+                  onClick={() => window.location.href = '/survey'}
+                >
+                  Not Sure? Start CareFinder Survey
                 </Button>
-              </a>
+                {/* Empathetic Hover Tooltip - To be animated with GSAP */}
+                <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-sm py-2 px-4 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                  Take a deep breath; we'll handle the data.
+                </div>
+              </div>
+
               <Button 
                 variant="outline" 
                 className="w-full sm:w-auto text-lg px-8 py-4 h-auto"
-                onClick={() => setIsWaitlistOpen(true)}
+                onClick={() => window.location.href = '/search'}
               >
-                Join Early Access
+                Search Directory
               </Button>
             </div>
 

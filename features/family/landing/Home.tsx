@@ -1,0 +1,92 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Search, MapPin, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/Button';
+
+export const Home: React.FC = () => {
+  const navigate = useNavigate();
+  const [location, setLocation] = useState('');
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    navigate(`/search?location=${encodeURIComponent(location)}`);
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white flex flex-col">
+      <main className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl w-full space-y-12 text-center">
+          
+          <div className="space-y-6">
+            <div className="inline-flex items-center space-x-2 bg-white rounded-full px-4 py-1.5 shadow-sm border border-slate-200 mb-4">
+              <span className="text-xs font-bold bg-primary-600 text-white px-2 py-0.5 rounded-full">New</span>
+              <span className="text-sm text-slate-600 font-medium">Commission-Free Senior Living</span>
+            </div>
+            
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 leading-tight">
+              Find Trusted Memory Care <br className="hidden md:block" />
+              <span className="text-slate-500">for Your Loved One.</span>
+            </h1>
+            
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              Connect directly with verified communities. No hidden fees, no middleman, just the care they deserve.
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto bg-white p-4 rounded-2xl shadow-xl border border-slate-200">
+            <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-4">
+              <div className="flex-1 relative">
+                <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                <input 
+                  type="text" 
+                  placeholder="City, State, or ZIP" 
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
+                  className="w-full pl-12 pr-4 py-4 bg-slate-50 border-transparent focus:bg-white border focus:border-primary-500 rounded-xl text-lg outline-none transition-all"
+                />
+              </div>
+              <Button type="submit" size="lg" className="px-8 text-lg h-auto py-4">
+                Search Directory
+              </Button>
+            </form>
+          </div>
+
+          <div className="flex items-center justify-center gap-4">
+            <span className="text-slate-400 font-medium uppercase text-sm tracking-wider">or</span>
+          </div>
+
+          <div>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="group text-lg px-8 py-6 h-auto border-2 hover:border-primary-600 hover:text-primary-600"
+              onClick={() => navigate('/survey')}
+            >
+              Not Sure? Start CareFinder Survey
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <p className="mt-3 text-sm text-slate-500">
+              Take a deep breath; we'll handle the data.
+            </p>
+          </div>
+
+        </div>
+      </main>
+      
+      {/* Footer / Trust Indicators */}
+      <div className="py-8 border-t border-slate-100 bg-white/50">
+        <div className="max-w-7xl mx-auto px-4 flex justify-center gap-8 md:gap-16 grayscale opacity-60">
+           <div className="flex items-center gap-2 font-semibold text-slate-900">
+             <div className="w-2 h-2 bg-green-500 rounded-full"></div> Real-Time Availability
+           </div>
+           <div className="flex items-center gap-2 font-semibold text-slate-900">
+             <div className="w-2 h-2 bg-blue-500 rounded-full"></div> Zero Commissions
+           </div>
+           <div className="flex items-center gap-2 font-semibold text-slate-900">
+             <div className="w-2 h-2 bg-purple-500 rounded-full"></div> Verified Data
+           </div>
+        </div>
+      </div>
+    </div>
+  );
+};

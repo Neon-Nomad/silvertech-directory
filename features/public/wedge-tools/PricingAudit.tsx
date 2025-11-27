@@ -238,7 +238,10 @@ const PricingAudit: React.FC = () => {
               </div>
 
               <div className="space-y-4">
-                <button className="w-full bg-primary-600 hover:bg-primary-700 text-white py-4 rounded-md font-bold text-lg transition-colors flex items-center justify-center gap-2">
+                <button 
+                  onClick={() => alert("Downloading report... (This is a demo feature)")}
+                  className="w-full bg-primary-600 hover:bg-primary-700 text-white py-4 rounded-md font-bold text-lg transition-colors flex items-center justify-center gap-2"
+                >
                   <Download size={20} />
                   Download Full PDF Report
                 </button>
@@ -302,7 +305,10 @@ const PricingAudit: React.FC = () => {
           <p className="text-xl text-slate-300 mb-8">
             Join 500+ operators who use SilverTech Directory to stay competitive
           </p>
-          <button className="bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors">
+          <button 
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
+          >
             Get Started - It's Free
           </button>
         </div>

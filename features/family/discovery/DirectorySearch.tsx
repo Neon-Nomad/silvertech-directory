@@ -1,20 +1,38 @@
 import React, { useState } from 'react';
-import { Search, MapPin, DollarSign, Star, Filter } from 'lucide-react';
+import { Search, MapPin, DollarSign, Star, Filter, Phone } from 'lucide-react';
+import { Button } from '@/components/ui/Button';
 import facilitiesData from '../../../src/data/facilities.json';
-import ReviewsModal from '../../../components/ReviewsModal';
-import { generateReviews, calculateAverageRating } from '../../../src/utils/reviewGenerator';
+import { ReviewModal } from '../reviews/ReviewModal';
+
+import { useSearchParams } from 'react-router-dom';
 
 const DirectorySearch: React.FC = () => {
+  const [searchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
-  const [location, setLocation] = useState('');
-  const [selectedFacility, setSelectedFacility] = useState<typeof facilitiesData[0] | null>(null);
-  const [isReviewsModalOpen, setIsReviewsModalOpen] = useState(false);
+  const [location, setLocation] = useState(searchParams.get('location') || '');
+  const [reviewModalOpen, setReviewModalOpen] = useState(false);
+  const [selectedFacilityName, setSelectedFacilityName] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 50;
 
-  const handleShowReviews = (facility: typeof facilitiesData[0]) => {
-    setSelectedFacility(facility);
-    setIsReviewsModalOpen(true);
+  const handleWriteReview = (facilityName: string) => {
+    const isLoggedIn = localStorage.getItem('silvertech_user_token');
+    
+    if (!isLoggedIn) {
+      alert("You must login to view properties");
+      return;
+    }
+
+    setSelectedFacilityName(facilityName);
+    setReviewModalOpen(true);
+  };
+
+  const handleClaimBusiness = (facilityId: string) => {
+    // Navigate to claim page or show modal
+    // For now, we'll use the existing claim route structure or a new one
+    // Since we have /claim/:code, we might need a general claim start page
+    // Let's just alert for now or redirect to a generic claim page
+    window.location.href = `/claim/start?id=${facilityId}`;
   };
 
   // Decorative SVG placeholder generator
@@ -33,7 +51,9 @@ const DirectorySearch: React.FC = () => {
       <rect width="800" height="600" fill="${color.bg}"/>
       <line x1="0" y1="0" x2="800" y2="600" stroke="${color.text}" stroke-width="4" opacity="0.4" />
       <line x1="800" y1="0" x2="0" y2="600" stroke="${color.text}" stroke-width="4" opacity="0.4" />
-      <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="24" fill="${color.text}" text-anchor="middle" dominant-baseline="middle">${displayName}</text>
+      <text x="50%" y="45%" font-family="Arial, sans-serif" font-size="24" fill="${color.text}" text-anchor="middle" dominant-baseline="middle">${displayName}</text>
+      <rect x="250" y="320" width="300" height="60" rx="30" fill="white" opacity="0.9" />
+      <text x="50%" y="358" font-family="Arial, sans-serif" font-size="20" fill="#0f172a" text-anchor="middle" font-weight="bold">Claim This Business</text>
     </svg>`;
     return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
   };
@@ -136,96 +156,105 @@ const DirectorySearch: React.FC = () => {
             <div className="space-y-4">
               {displayedFacilities.map((facility, index) => (
                 <div key={index} className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden">
-                  <img
-                    src={getFacilityImage(facility.id, facility.name)}
-                    alt={facility.name}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <div className="flex justify-between items-start mb-3">
-                      <div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-1">{facility.name}</h3>
-                        <p className="text-slate-600 flex items-center gap-2">
-                          <MapPin size={16} />
-                          {facility.address}
-                        </p>
+                  <div className="flex flex-col md:flex-row">
+                    <img
+                      src={getFacilityImage(facility.id, facility.name)}
+                      alt={facility.name}
+                      className="w-full md:w-64 h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={() => handleClaimBusiness(facility.id)}
+                      title="Click to claim this business"
+                    />
+                    <div className="p-6 flex-1">
+                      <div className="flex justify-between items-start mb-3">
+                        <div>
+                          <h3 className="text-xl font-bold text-slate-900 mb-1">{facility.name}</h3>
+                          <p className="text-slate-600 flex items-center gap-2">
+                            <MapPin size={16} />
+                            {facility.address}
+                          </p>
+                          {/* @ts-ignore */}
+                          {facility.phone && (
+                            <p className="text-slate-600 flex items-center gap-2 mt-1">
+                              <Phone size={16} />
+                              <a href={`tel:${facility.phone}`} className="hover:text-primary-600 transition-colors">
+                                {facility.phone}
+                              </a>
+                            </p>
+                          )}
+                        </div>
+                        <div className="flex items-center bg-green-50 px-2 py-1 rounded-lg">
+                          <Star className="w-4 h-4 text-green-600 fill-current mr-1" />
+                          <span className="font-bold text-green-800">4.8</span>
+                        </div>
                       </div>
-                      <button
-                        onClick={() => handleShowReviews(facility)}
-                        className="flex items-center gap-1 bg-amber-100 hover:bg-amber-200 px-3 py-1 rounded-full transition-colors cursor-pointer"
-                      >
-                        <Star size={16} className="text-amber-600 fill-amber-600" />
-                        <span className="font-semibold text-amber-900">
-                          {calculateAverageRating(generateReviews(facility.id, facility.name))}
+                      
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
+                          {facility.type}
                         </span>
-                        <span className="text-xs text-amber-700 ml-1">({generateReviews(facility.id, facility.name).length})</span>
-                      </button>
-                    </div>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
-                        {facility.type}
-                      </span>
-                      <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
-                        Capacity: {facility.capacity}
-                      </span>
-                      {facility.verified && (
-                        <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
-                          ✓ Verified
+                        <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
+                          Capacity: {facility.capacity}
                         </span>
-                      )}
-                    </div>
-                    <p className="text-slate-700 mb-4 line-clamp-2">
-                      Premium senior living facility with {facility.capacity} beds, offering 24/7 care, engaging activities, and restaurant-style dining.
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2 text-slate-900">
-                        <DollarSign size={20} className="text-accent-600" />
-                        <span className="font-bold text-lg">{facility.price}</span>
+                        {facility.verified && (
+                          <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                            ✓ Verified
+                          </span>
+                        )}
                       </div>
-                      <div className="flex gap-2">
-                        <button className="border border-primary-600 text-primary-600 hover:bg-primary-50 px-4 py-2 rounded-md font-medium transition-colors">
-                          View Details
-                        </button>
-                        <button className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md font-medium transition-colors">
-                          Schedule Tour
-                        </button>
+                      
+                      <div className="flex items-center justify-between mt-4">
+                        <div className="flex items-center gap-2 text-slate-900">
+                          <DollarSign size={20} className="text-accent-600" />
+                          <span className="font-bold text-lg">{facility.price}</span>
+                        </div>
+                        <div className="flex gap-2">
+                          <Button 
+                            variant="primary"
+                            onClick={() => window.location.href = `/facility/${facility.id}`}
+                          >
+                            View Details
+                          </Button>
+                          <Button 
+                            variant="outline"
+                            onClick={() => handleWriteReview(facility.name)}
+                          >
+                            Write Review
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
+            
             {/* Pagination Controls */}
             <div className="flex justify-center items-center mt-8 space-x-4">
-              <button
+              <Button
+                variant="outline"
                 onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
                 disabled={currentPage === 1}
-                className="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-900 rounded disabled:opacity-50"
               >
                 Previous
-              </button>
-              <span>Page {currentPage} of {totalPages}</span>
-              <button
+              </Button>
+              <span className="text-slate-600">Page {currentPage} of {totalPages}</span>
+              <Button
+                variant="outline"
                 onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
                 disabled={currentPage === totalPages}
-                className="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-900 rounded disabled:opacity-50"
               >
                 Next
-              </button>
+              </Button>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Reviews Modal */}
-      {selectedFacility && (
-        <ReviewsModal
-          isOpen={isReviewsModalOpen}
-          onClose={() => setIsReviewsModalOpen(false)}
-          facilityName={selectedFacility.name}
-          reviews={generateReviews(selectedFacility.id, selectedFacility.name)}
-        />
-      )}
+      <ReviewModal 
+        isOpen={reviewModalOpen} 
+        onClose={() => setReviewModalOpen(false)} 
+        facilityName={selectedFacilityName} 
+      />
     </div>
   );
 };

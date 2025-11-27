@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { StatesDropdown } from '@/components/ui/StatesDropdown';
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,19 +20,30 @@ const Navbar: React.FC = () => {
             </span>
           </Link>
 
+
+
           <div className="hidden md:flex items-center space-x-8">
+            <StatesDropdown />
+
             <Link
-              to="/search"
+              to="/advertise"
               className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
             >
-              Find Care
+              Advertise with Us
             </Link>
             <Link
-              to="/tools/pricing-audit"
+              to="/claim-business"
               className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
             >
-              For Operators
+              Claim this business
             </Link>
+            <Link
+              to="/faq"
+              className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
+            >
+              FAQ
+            </Link>
+
             <Link
               to="/login"
               className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
@@ -54,19 +66,32 @@ const Navbar: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-slate-800 border-t border-slate-700">
           <div className="px-4 py-4 space-y-3">
+            <div className="pb-2">
+              <StatesDropdown 
+                className="w-full text-base py-2" 
+                onStateSelect={() => setIsMobileMenuOpen(false)} 
+              />
+            </div>
             <Link
-              to="/search"
+              to="/advertise"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-slate-300 hover:text-white text-base font-medium"
             >
-              Find Care
+              Advertise with Us
             </Link>
             <Link
-              to="/tools/pricing-audit"
+              to="/claim-business"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-slate-300 hover:text-white text-base font-medium"
             >
-              For Operators
+              Claim this business
+            </Link>
+            <Link
+              to="/faq"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-slate-300 hover:text-white text-base font-medium"
+            >
+              FAQ
             </Link>
             <Link
               to="/login"
