@@ -84,7 +84,13 @@ export const LocationPage: React.FC = () => {
             .select('*, facility_licensing(bed_capacity)');
             
             if (state) {
-                query = query.ilike('state', state);
+                // Use abbreviation if available from content, otherwise use state param
+                const stateQuery = content?.abbreviation || state;
+                // We use 'or' to match either full name or abbreviation to be safe
+                // But Supabase simple query builder doesn't support OR easily across same column without raw filter
+                // So let's just try to match what we have.
+                // If we have content, we know the abbreviation.
+                query = query.ilike('state', stateQuery);
             }
             
             if (city) {

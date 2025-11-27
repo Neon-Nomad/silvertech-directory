@@ -242,4 +242,164 @@ export const stateContent: Record<string, StateContent> = {
         lat: 38.5816,
         lng: -121.4944
     }
+},
+    indiana: {
+        name: "Indiana",
+        abbreviation: "IN",
+        overview: {
+            title: "Assisted Living in Indiana",
+            content: "In Indiana, assisted living facilities are regulated as Residential Care Facilities. These facilities provide housing, meals, and assistance with daily living activities. The state offers various levels of care to meet the diverse needs of its senior population.",
+            bullets: [
+                "Residential Care Facilities",
+                "Assisted Living Communities",
+                "Memory Care Units",
+                "Continuing Care Retirement Communities (CCRCs)"
+            ]
+        },
+        licensing: {
+            authority: "Indiana Department of Health (IDOH)",
+            division: "Division of Long Term Care",
+            website: "https://www.in.gov/health/long-term-care/",
+            searchUrl: "https://www.in.gov/health/reports/QAMIS/ltc/index.htm",
+            regulations: "410 IAC 16.2-5",
+            hotline: "1-800-246-8909"
+        },
+        requirements: {
+            admission: {
+                allowed: [
+                    "Need assistance with ADLs",
+                    "Stable medical condition",
+                    "Need medication administration",
+                    "Cognitive impairment management"
+                ],
+                prohibited: [
+                    "Complex nursing care needs not met by facility",
+                    "Active communicable disease",
+                    "Behavior endangering self or others"
+                ]
+            },
+            staffing: [
+                "Licensed administrator",
+                "Registered Nurse (RN) oversight",
+                "Sufficient staff for resident needs",
+                "First aid and CPR training",
+                "Dementia training for memory care"
+            ]
+        },
+        medication: {
+            allowed: [
+                "Administration by licensed personnel",
+                "Assistance with self-administration",
+                "Storage and monitoring"
+            ],
+            prohibited: [
+                "Administration by unlicensed staff without QMA certification"
+            ]
+        },
+        eviction: {
+            noticeDays: 30,
+            validReasons: [
+                "Non-payment",
+                "Medical needs exceed facility capabilities",
+                "Threat to safety of self or others"
+            ],
+            rights: [
+                "Written notice",
+                "Right to appeal",
+                "Discharge planning assistance"
+            ]
+        },
+        memoryCare: {
+            requirements: [
+                "Specialized disclosure form",
+                "Secured environment",
+                "Specific staff training on dementia",
+                "Tailored activities program"
+            ]
+        },
+        financialAssistance: {
+            programs: [
+                {
+                    name: "Aged and Disabled Waiver",
+                    description: "Medicaid waiver providing services to help seniors remain in their homes or community settings.",
+                    coverage: [
+                        "Assisted living services",
+                        "Case management",
+                        "Attendant care",
+                        "Adult day services"
+                    ],
+                    eligibility: [
+                        "Medicaid eligible",
+                        "Nursing facility level of care",
+                        "Age 65+ or disabled"
+                    ],
+                    contactUrl: "https://www.in.gov/fssa/da/medicaid-hcbs/"
+                },
+                {
+                    name: "Residential Care Assistance Program (RCAP)",
+                    description: "State-funded program providing financial assistance for room and board.",
+                    coverage: [
+                        "Room and board",
+                        "Laundry",
+                        "Housekeeping"
+                    ],
+                    eligibility: [
+                        "Age 65+, blind, or disabled",
+                        "Income and asset limits",
+                        "Must reside in approved facility"
+                    ],
+                    contactUrl: "https://www.in.gov/fssa/da/residential-care-assistance-program/"
+                }
+            ]
+        },
+        complaints: {
+            methods: [
+                { name: "IDOH Complaint Hotline", contact: "1-800-246-8909" },
+                { name: "Online Complaint Form", contact: "https://www.in.gov/health/long-term-care/complaints/" },
+                { name: "Long Term Care Ombudsman", contact: "1-800-622-4484" }
+            ],
+            scope: [
+                "Abuse", "Neglect", "Quality of care", "Resident rights violations"
+            ]
+        },
+        legalNotices: [
+            "Resident rights",
+            "Grievance procedure",
+            "State survey results",
+            "Advance directives info"
+        ],
+        faqs: [
+            {
+                question: "Who regulates assisted living in Indiana?",
+                answer: "The Indiana Department of Health (IDOH), Division of Long Term Care."
+            },
+            {
+                question: "Does Medicaid pay for assisted living in Indiana?",
+                answer: "Yes, through the Aged and Disabled Waiver for eligible individuals."
+            },
+            {
+                question: "What is the difference between Residential Care and Assisted Living?",
+                answer: "In Indiana, 'Residential Care Facility' is the licensing category, while 'Assisted Living' is often a marketing term, though requirements are similar."
+            }
+        ],
+        seo: {
+            title: "Assisted Living in Indiana | Costs, Regulations & Directory",
+            description: "Complete guide to assisted living in Indiana. Find licensed facilities, understand costs, Medicaid waivers, and regulations. Search by city or zip code.",
+            schema: {
+                "@context": "https://schema.org/",
+                "@type": "WebPage",
+                "name": "Assisted Living in Indiana",
+                "description": "Complete guide to assisted living in Indiana. Find licensed facilities, understand costs, Medicaid waivers, and regulations.",
+                "url": "https://silvertechdirectory.com/assisted-living/indiana",
+                "about": {
+                    "@type": "State",
+                    "name": "Indiana"
+                }
+            }
+        },
+        capitalCoordinates: {
+            lat: 39.7684,
+            lng: -86.1581
+        }
+    }
 };
