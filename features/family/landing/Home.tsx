@@ -1,5 +1,8 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { MapPin, ArrowRight, Loader2, Crosshair } from 'lucide-react';
+import { Button } from '@/components/ui/Button';
 import { useGeolocation } from '@/src/hooks/useGeolocation';
-import { Loader2, Crosshair } from 'lucide-react';
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();
