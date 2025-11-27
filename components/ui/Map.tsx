@@ -31,9 +31,7 @@ interface MapProps {
   zoom?: number;
 }
 
-// Mock coordinates for demo purposes
-// In a real app, these would come from the API or geocoding
-import { CITY_COORDINATES } from '@/src/utils/constants';
+
 
 // Deterministic random number generator
 const seededRandom = (seed: number) => {

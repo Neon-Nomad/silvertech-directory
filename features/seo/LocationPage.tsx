@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import { MapPin, Building2, ChevronRight, Shield, AlertTriangle, FileText, HelpCircle, Phone, DollarSign } from 'lucide-react';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Map } from '@/components/ui/Map';
-import { CITY_COORDINATES } from '@/src/utils/constants';
+import { CITY_COORDINATES } from '../../src/utils/constants';
 import { supabase } from '@/src/lib/supabase';
 import { stateContent } from '@/src/data/state_content';
 
