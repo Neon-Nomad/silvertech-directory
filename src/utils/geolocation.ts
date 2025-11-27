@@ -1,4 +1,4 @@
-import { CITY_COORDINATES } from './constants';
+import { CITY_COORDINATES } from '@/src/data/city_coordinates';
 
 // Haversine formula to calculate distance between two points
 const getDistanceFromLatLonInKm = (lat1: number, lon1: number, lat2: number, lon2: number) => {
