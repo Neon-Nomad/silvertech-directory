@@ -236,13 +236,13 @@ export const stateContent: Record<string, StateContent> = {
                     "name": "California"
                 }
             }
+        },
+
+        capitalCoordinates: {
+            lat: 38.5816,
+            lng: -121.4944
         }
     },
-    capitalCoordinates: {
-        lat: 38.5816,
-        lng: -121.4944
-    }
-},
     indiana: {
         name: "Indiana",
         abbreviation: "IN",
