@@ -76,7 +76,7 @@ export const AdvertiseWithUs: React.FC = () => {
               </Button>
             </Link>
             <Link to="/login">
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 text-white border-white hover:bg-white/10">
+              <Button variant="outline-white" size="lg" className="text-lg px-8 py-4">
                 Operator Login
               </Button>
             </Link>
