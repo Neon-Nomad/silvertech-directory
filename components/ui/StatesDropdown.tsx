@@ -64,9 +64,16 @@ export const StatesDropdown: React.FC<StatesDropdownProps> = ({ className = '', 
   const navigate = useNavigate();
 
   // Filter states to only those with content
+  // Temporary hardcode to verify update
   const activeStates = STATES.filter(state => 
-    stateContent[state.name.toLowerCase()] !== undefined
+    ['CA', 'IN'].includes(state.code)
   );
+  
+  console.log('StatesDropdown Debug:', {
+    allStates: STATES.length,
+    activeStates: activeStates.map(s => s.name),
+    availableContent: Object.keys(stateContent)
+  });
 
   const handleStateChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const stateCode = e.target.value;
