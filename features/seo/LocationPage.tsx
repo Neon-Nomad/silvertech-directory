@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { MapPin, Building2, ChevronRight } from 'lucide-react';
 import facilitiesData from '../../src/data/facilities.json';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { Map, CITY_COORDINATES } from '@/components/ui/Map';
 
 // Helper to format strings (e.g., "san-francisco" -> "San Francisco")
 const formatName = (slug: string) => {
@@ -69,12 +70,47 @@ export const LocationPage: React.FC = () => {
     ...(city ? [{ label: cityName }] : [])
   ];
 
+  // Schema.org Structured Data
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": city ? "CollectionPage" : "CollectionPage",
+    "name": title,
+    "description": description,
+    "url": window.location.href,
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": breadcrumbItems.map((item, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": item.label,
+        "item": `https://silvertechdirectory.com${item.path}`
+      }))
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": locationFacilities.map((facility, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": `https://silvertechdirectory.com/facility/${facility.id}`,
+        "name": facility.name
+      }))
+    }
+  };
+
+  // Determine map center
+  const mapCenter: [number, number] | undefined = city 
+    ? CITY_COORDINATES[city.toLowerCase()] 
+    : (state?.toLowerCase() === 'ca' ? [36.7783, -119.4179] : undefined); // Default to CA center
+
   return (
     <div className="min-h-screen bg-slate-50">
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={window.location.href} />
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+        </script>
       </Helmet>
 
       <div className="bg-white border-b border-slate-200">
@@ -88,34 +124,42 @@ export const LocationPage: React.FC = () => {
           {city ? `Assisted Living in ${cityName}, ${stateName}` : `Senior Care in ${stateName}`}
         </h1>
         
-        <p className="text-lg text-slate-600 mb-8 max-w-3xl">
-          {city 
-            ? `Discover ${locationFacilities.length} senior living options in ${cityName}. We help families find the right care with verified reviews and transparent pricing.`
-            : `Explore senior living options across ${stateName}. Browse by city to find the perfect community for your loved ones.`
-          }
-        </p>
+        <div className="prose max-w-4xl mb-12 text-slate-600">
+          {city ? (
+            <>
+              <p className="text-lg mb-4">
+                Finding the right <strong>assisted living facility in {cityName}, {stateName}</strong> is a critical decision for your family. 
+                Our directory lists {locationFacilities.length} verified communities, offering a range of care levels from independent living to specialized memory care.
+              </p>
+              <p className="mb-4">
+                The average cost of assisted living in {cityName} can vary significantly based on amenities and care needs. 
+                We provide transparent pricing and real staff turnover rates to help you find a stable, high-quality home for your loved one.
+              </p>
+              <h2 className="text-xl font-bold text-slate-900 mt-6 mb-3">Why Choose {cityName} for Senior Living?</h2>
+              <p>
+                {cityName} offers a supportive environment for seniors, with access to local medical centers and community resources. 
+                Whether you are looking for a resort-style community or a smaller, home-like setting, our listings in {cityName} cover all options.
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="text-lg mb-4">
+                Explore top-rated <strong>senior living options across {stateName}</strong>. 
+                From bustling cities to quiet towns, {stateName} offers a diverse range of assisted living and memory care facilities.
+              </p>
+              <p>
+                Browse by city below to find the perfect community near you. We prioritize transparency, showing you the data that matters: staff turnover, pricing, and verified reviews.
+              </p>
+            </>
+          )}
+        </div>
 
-import { Map, CITY_COORDINATES } from '@/components/ui/Map';
-
-// ... (existing imports)
-
-// ... (inside LocationPage component)
-
-  // Determine map center
-  const mapCenter: [number, number] | undefined = city 
-    ? CITY_COORDINATES[city.toLowerCase()] 
-    : (state?.toLowerCase() === 'ca' ? [36.7783, -119.4179] : undefined); // Default to CA center
-
-  return (
-    // ... (existing JSX)
-    
         {/* Map Section */}
         {mapCenter && (
           <div className="h-96 w-full mb-12 rounded-xl overflow-hidden shadow-sm border border-slate-200 z-0 relative">
              <Map facilities={locationFacilities} center={mapCenter} zoom={city ? 12 : 6} />
           </div>
         )}
-
 
         {city ? (
           // City View: List Facilities

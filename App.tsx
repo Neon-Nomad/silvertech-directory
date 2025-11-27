@@ -14,6 +14,7 @@ import { ClaimBusiness } from '@/features/operator/claim/ClaimBusiness';
 import { LocationPage } from '@/features/seo/LocationPage';
 import { FAQ } from '@/features/family/support/FAQ';
 import { AdvertiseWithUs } from '@/features/public/advertise/AdvertiseWithUs';
+import { Blog } from './features/public/blog/Blog';
 
 import { Home } from '@/features/family/landing/Home';
 import { FacilityDetails } from '@/features/family/discovery/FacilityDetails';
@@ -39,6 +40,7 @@ function App() {
           <Route path="/assisted-living/:state/:city" element={<LocationPage />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/advertise" element={<AdvertiseWithUs />} />
+        <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
       </BrowserRouter>

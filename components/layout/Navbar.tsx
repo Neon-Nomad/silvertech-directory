@@ -26,6 +26,12 @@ const Navbar: React.FC = () => {
             <StatesDropdown />
 
             <Link
+              to="/blog"
+              className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
+            >
+              Blog
+            </Link>
+            <Link
               to="/advertise"
               className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
             >
@@ -72,6 +78,13 @@ const Navbar: React.FC = () => {
                 onStateSelect={() => setIsMobileMenuOpen(false)} 
               />
             </div>
+            <Link
+              to="/blog"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-slate-300 hover:text-white text-base font-medium"
+            >
+              Blog
+            </Link>
             <Link
               to="/advertise"
               onClick={() => setIsMobileMenuOpen(false)}
