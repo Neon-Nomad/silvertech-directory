@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { stateContent } from '@/src/data/state_content';
 
 const STATES = [
   { code: 'AL', name: 'Alabama' },
@@ -62,6 +63,11 @@ interface StatesDropdownProps {
 export const StatesDropdown: React.FC<StatesDropdownProps> = ({ className = '', onStateSelect }) => {
   const navigate = useNavigate();
 
+  // Filter states to only those with content
+  const activeStates = STATES.filter(state => 
+    stateContent[state.name.toLowerCase()] !== undefined
+  );
+
   const handleStateChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const stateCode = e.target.value;
     if (stateCode) {
@@ -77,7 +83,7 @@ export const StatesDropdown: React.FC<StatesDropdownProps> = ({ className = '', 
       className={`bg-slate-800 text-slate-300 border border-slate-700 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 ${className}`}
     >
       <option value="" disabled>Browse by State</option>
-      {STATES.map((state) => (
+      {activeStates.map((state) => (
         <option key={state.code} value={state.code}>
           {state.name}
         </option>
