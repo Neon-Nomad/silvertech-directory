@@ -363,7 +363,7 @@ export const LocationPage: React.FC = () => {
                     {cities.map((c) => (
                       <Link
                         key={c}
-                        to={`/assisted-living/${state}/${c.toLowerCase().replace(/ /g, '-')}`}
+                        to={`/assisted-living/${state}/${(c as string).toLowerCase().replace(/ /g, '-')}`}
                         className="bg-white p-4 rounded-lg shadow-sm border border-slate-200 hover:border-primary-500 hover:shadow-md transition-all flex items-center justify-between group"
                       >
                         <span className="font-medium text-slate-700 group-hover:text-primary-700">
