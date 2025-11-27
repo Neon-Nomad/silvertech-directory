@@ -4,17 +4,140 @@ import { Helmet } from 'react-helmet-async';
 import { MapPin, Building2, ChevronRight, Shield, AlertTriangle, DollarSign, HelpCircle } from 'lucide-react';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Map } from '@/components/ui/Map';
-import { CITY_COORDINATES } from '@/src/data/city_coordinates';
 import { supabase } from '@/src/lib/supabase';
-import { stateContent } from '@/src/data/state_content';
+
+// Hardcoded content to ensure stability
+const CALIFORNIA_CONTENT = {
+    name: "California",
+    abbreviation: "CA",
+    overview: {
+        title: "Assisted Living in California",
+        content: "California does not license assisted living under the name “Assisted Living.” Instead, facilities are regulated as Residential Care Facilities for the Elderly (RCFE). Roughly 7,400 RCFEs operate in the state, ranging from boutique 6-bed Board and Care homes to large corporate assisted living campuses.",
+        bullets: [
+            "Boutique 6 bed Board and Care homes",
+            "Large corporate assisted living campuses",
+            "Dementia and memory care units",
+            "Hybrid Independent + Assisted campuses",
+            "Continuing Care Retirement Communities (CCRCs)"
+        ]
+    },
+    licensing: {
+        authority: "California Department of Social Services (CDSS)",
+        division: "Community Care Licensing Division (CCLD)",
+        website: "https://www.cdss.ca.gov",
+        searchUrl: "https://www.ccld.dss.ca.gov/carefacilitysearch",
+        regulations: "Title 22, Division 6, Chapter 8",
+        hotline: "1-844-538-8766"
+    },
+    requirements: {
+        admission: {
+            allowed: [
+                "Need help with ADLs (bathing, dressing, toileting)",
+                "Have dementia needs",
+                "Need medication management",
+                "Need supervision for safety"
+            ],
+            prohibited: [
+                "24 hour skilled nursing",
+                "Ongoing IV therapy",
+                "Stage 3 or 4 pressure ulcers",
+                "Oxygen administration without assistance",
+                "Tube feeding",
+                "Catheters that require skilled care"
+            ]
+        },
+        staffing: [
+            "Administrator on duty",
+            "Direct care staff sufficient to meet resident needs",
+            "Dementia training",
+            "First aid certification",
+            "Annual training hours",
+            "Criminal background checks"
+        ]
+    },
+    financialAssistance: {
+        programs: [
+            {
+                name: "Assisted Living Waiver Program (ALW)",
+                description: "Medi-Cal funded program available in select counties.",
+                coverage: [
+                    "Room and board subsidy",
+                    "Personal care",
+                    "Medication assistance",
+                    "Dementia care",
+                    "Activities",
+                    "ADL support"
+                ],
+                eligibility: [
+                    "Must qualify for Medi-Cal",
+                    "Must require assisted living at nursing home level of care",
+                    "Must reside in a participating county",
+                    "Must move into a participating ALW facility"
+                ],
+                counties: [
+                    "Los Angeles", "Sacramento", "Riverside", "San Bernardino",
+                    "San Diego", "Alameda", "Contra Costa", "Sonoma"
+                ],
+                contactUrl: "https://www.dhcs.ca.gov/services/ltc/Pages/AssistedLivingWaiver.aspx"
+            }
+        ]
+    },
+    complaints: {
+        methods: [
+            { name: "CDSS Complaint Hotline", contact: "1-844-538-8766" },
+            { name: "Local Regional Office", contact: "Submit online or call directly" },
+            { name: "Long Term Care Ombudsman", contact: "1-800-231-4024" }
+        ],
+        scope: [
+            "Abuse", "Neglect", "Poor care", "Injury",
+            "Staffing issues", "Medication errors", "Illegal evictions"
+        ]
+    },
+    faqs: [
+        {
+            question: "How do I check if a California assisted living facility is licensed?",
+            answer: "Use the CDSS facility search tool at https://www.ccld.dss.ca.gov/carefacilitysearch."
+        },
+        {
+            question: "Does Medi-Cal pay for assisted living?",
+            answer: "Not directly. Only through the Assisted Living Waiver (ALW) program in participating counties."
+        },
+        {
+            question: "What is a Board and Care home?",
+            answer: "A small RCFE with 6 or fewer residents, often in a residential home setting."
+        },
+        {
+            question: "Can a facility evict my parent?",
+            answer: "Only under specific legal conditions like non-payment or if the facility can no longer meet their needs, and they must provide 30 days notice."
+        },
+        {
+            question: "Is memory care different than assisted living?",
+            answer: "Yes. Memory care units require secured perimeters, specific dementia training for staff, and specialized activity programming."
+        }
+    ],
+    seo: {
+        title: "Assisted Living in California | Complete Guide & Directory",
+        description: "Full guide to assisted living in California. Licensing rules, RCFE laws, Medi-Cal Assisted Living Waiver, resident rights, complaints, inspections, and how to choose the right facility.",
+        schema: {
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "name": "Assisted Living in California",
+            "description": "Full guide to assisted living in California. Licensing rules, RCFE laws, Medi Cal Assisted Living Waiver, resident rights, complaints, inspections, and how to choose the right facility.",
+            "url": "https://silvertechdirectory.com/assisted-living/california",
+            "about": {
+                "@type": "State",
+                "name": "California"
+            }
+        }
+    }
+};
 
 export const CaliforniaPage: React.FC = () => {
   const [facilities, setFacilities] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Hardcoded California Content
-  const content = stateContent['california'];
-  const stateName = "California";
+  // Use local content
+  const content = CALIFORNIA_CONTENT;
   const mapCenter: [number, number] = [36.7783, -119.4179]; // California Center
 
   useEffect(() => {
@@ -22,7 +145,6 @@ export const CaliforniaPage: React.FC = () => {
       setLoading(true);
       try {
         // Fetch nearest to capital (Sacramento) using RPC
-        // This ensures we get a good initial list of facilities
         const { data: rpcData, error: rpcError } = await supabase
             .rpc('get_nearby_facilities', {
                 user_lat: 38.5816, // Sacramento Lat
@@ -32,7 +154,7 @@ export const CaliforniaPage: React.FC = () => {
         
         if (rpcError) throw rpcError;
 
-        if (rpcData) {
+        if (rpcData && Array.isArray(rpcData)) {
             const ids = rpcData.map((f: any) => f.id);
             const { data: licenseData } = await supabase
                 .from('facility_licensing')
@@ -65,13 +187,12 @@ export const CaliforniaPage: React.FC = () => {
     fetchFacilities();
   }, []);
 
-  // Get list of major cities from coordinates file for the "Browse by City" section
-  // Filter to only include California cities (we can just use a curated list or all for now)
-  // For now, let's just pick some major ones to keep it clean
   const majorCities = [
     'Los Angeles', 'San Diego', 'San Jose', 'San Francisco', 'Fresno', 
     'Sacramento', 'Long Beach', 'Oakland', 'Bakersfield', 'Anaheim'
   ];
+
+  if (!content) return <div className="p-8 text-center">Loading content...</div>;
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -108,7 +229,7 @@ export const CaliforniaPage: React.FC = () => {
             <div className="bg-white rounded-lg shadow-sm p-6">
               <h2 className="text-2xl font-bold text-slate-900 mb-4">Types of Care</h2>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {content.overview.bullets.map((bullet, idx) => (
+                {content.overview.bullets?.map((bullet, idx) => (
                   <li key={idx} className="flex items-center text-slate-700">
                     <div className="w-2 h-2 bg-primary-500 rounded-full mr-3" />
                     {bullet}
@@ -147,7 +268,7 @@ export const CaliforniaPage: React.FC = () => {
                     <span className="bg-green-100 p-1 rounded mr-2">✓</span> Allowed
                   </h3>
                   <ul className="space-y-2">
-                    {content.requirements.admission.allowed.map((item, idx) => (
+                    {content.requirements.admission.allowed?.map((item, idx) => (
                       <li key={idx} className="text-slate-700 text-sm">• {item}</li>
                     ))}
                   </ul>
@@ -157,7 +278,7 @@ export const CaliforniaPage: React.FC = () => {
                     <span className="bg-red-100 p-1 rounded mr-2">✕</span> Prohibited
                   </h3>
                   <ul className="space-y-2">
-                    {content.requirements.admission.prohibited.map((item, idx) => (
+                    {content.requirements.admission.prohibited?.map((item, idx) => (
                       <li key={idx} className="text-slate-700 text-sm">• {item}</li>
                     ))}
                   </ul>
@@ -171,14 +292,14 @@ export const CaliforniaPage: React.FC = () => {
                 <DollarSign className="w-6 h-6 text-green-600" />
                 <h2 className="text-2xl font-bold text-slate-900">Financial Assistance</h2>
               </div>
-              {content.financialAssistance.programs.map((program, idx) => (
+              {content.financialAssistance.programs?.map((program, idx) => (
                 <div key={idx} className="mb-6 last:mb-0">
                   <h3 className="text-xl font-bold text-slate-800 mb-2">{program.name}</h3>
                   <p className="text-slate-600 mb-3">{program.description}</p>
                   <div className="bg-slate-50 p-4 rounded-lg">
                     <h4 className="font-medium text-slate-900 mb-2">Eligibility:</h4>
                     <ul className="list-disc list-inside text-sm text-slate-700 space-y-1 mb-3">
-                      {program.eligibility.map((e, i) => <li key={i}>{e}</li>)}
+                      {program.eligibility?.map((e, i) => <li key={i}>{e}</li>)}
                     </ul>
                     {program.contactUrl && (
                       <a href={program.contactUrl} target="_blank" rel="noreferrer" className="text-primary-600 hover:underline text-sm font-medium">
@@ -197,7 +318,7 @@ export const CaliforniaPage: React.FC = () => {
                 <h2 className="text-2xl font-bold text-slate-900">Frequently Asked Questions</h2>
               </div>
               <div className="space-y-6">
-                {content.faqs.map((faq, idx) => (
+                {content.faqs?.map((faq, idx) => (
                   <div key={idx}>
                     <h3 className="font-bold text-slate-900 mb-2">{faq.question}</h3>
                     <p className="text-slate-600">{faq.answer}</p>
@@ -259,7 +380,7 @@ export const CaliforniaPage: React.FC = () => {
                 File a Complaint
               </h3>
               <div className="space-y-4">
-                {content.complaints.methods.map((method, idx) => (
+                {content.complaints.methods?.map((method, idx) => (
                   <div key={idx} className="text-sm">
                     <div className="font-medium text-slate-800">{method.name}</div>
                     <div className="text-slate-600">{method.contact}</div>

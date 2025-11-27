@@ -202,7 +202,7 @@ export const LocationPage: React.FC = () => {
                 <div className="bg-white rounded-lg shadow-sm p-6">
                   <h2 className="text-2xl font-bold text-slate-900 mb-4">Types of Care</h2>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {content.overview.bullets.map((bullet, idx) => (
+                    {content.overview.bullets?.map((bullet, idx) => (
                       <li key={idx} className="flex items-center text-slate-700">
                         <div className="w-2 h-2 bg-primary-500 rounded-full mr-3" />
                         {bullet}
@@ -241,7 +241,7 @@ export const LocationPage: React.FC = () => {
                         <span className="bg-green-100 p-1 rounded mr-2">✓</span> Allowed
                       </h3>
                       <ul className="space-y-2">
-                        {content.requirements.admission.allowed.map((item, idx) => (
+                        {content.requirements.admission.allowed?.map((item, idx) => (
                           <li key={idx} className="text-slate-700 text-sm">• {item}</li>
                         ))}
                       </ul>
@@ -251,7 +251,7 @@ export const LocationPage: React.FC = () => {
                         <span className="bg-red-100 p-1 rounded mr-2">✕</span> Prohibited
                       </h3>
                       <ul className="space-y-2">
-                        {content.requirements.admission.prohibited.map((item, idx) => (
+                        {content.requirements.admission.prohibited?.map((item, idx) => (
                           <li key={idx} className="text-slate-700 text-sm">• {item}</li>
                         ))}
                       </ul>
@@ -265,14 +265,14 @@ export const LocationPage: React.FC = () => {
                     <DollarSign className="w-6 h-6 text-green-600" />
                     <h2 className="text-2xl font-bold text-slate-900">Financial Assistance</h2>
                   </div>
-                  {content.financialAssistance.programs.map((program, idx) => (
+                  {content.financialAssistance.programs?.map((program, idx) => (
                     <div key={idx} className="mb-6 last:mb-0">
                       <h3 className="text-xl font-bold text-slate-800 mb-2">{program.name}</h3>
                       <p className="text-slate-600 mb-3">{program.description}</p>
                       <div className="bg-slate-50 p-4 rounded-lg">
                         <h4 className="font-medium text-slate-900 mb-2">Eligibility:</h4>
                         <ul className="list-disc list-inside text-sm text-slate-700 space-y-1 mb-3">
-                          {program.eligibility.map((e, i) => <li key={i}>{e}</li>)}
+                          {program.eligibility?.map((e, i) => <li key={i}>{e}</li>)}
                         </ul>
                         {program.contactUrl && (
                           <a href={program.contactUrl} target="_blank" rel="noreferrer" className="text-primary-600 hover:underline text-sm font-medium">
@@ -291,7 +291,7 @@ export const LocationPage: React.FC = () => {
                     <h2 className="text-2xl font-bold text-slate-900">Frequently Asked Questions</h2>
                   </div>
                   <div className="space-y-6">
-                    {content.faqs.map((faq, idx) => (
+                    {content.faqs?.map((faq, idx) => (
                       <div key={idx}>
                         <h3 className="font-bold text-slate-900 mb-2">{faq.question}</h3>
                         <p className="text-slate-600">{faq.answer}</p>
@@ -384,7 +384,7 @@ export const LocationPage: React.FC = () => {
             <div className="bg-white rounded-lg shadow-sm p-4">
               <h3 className="font-bold text-slate-900 mb-4">Location Map</h3>
               <div className="h-64 rounded-lg overflow-hidden bg-slate-100 relative">
-                 <Map center={mapCenter} />
+                 <Map center={mapCenter} facilities={facilities} />
               </div>
             </div>
 
@@ -415,7 +415,7 @@ export const LocationPage: React.FC = () => {
                   File a Complaint
                 </h3>
                 <div className="space-y-4">
-                  {content.complaints.methods.map((method, idx) => (
+                  {content.complaints.methods?.map((method, idx) => (
                     <div key={idx} className="text-sm">
                       <div className="font-medium text-slate-800">{method.name}</div>
                       <div className="text-slate-600">{method.contact}</div>
