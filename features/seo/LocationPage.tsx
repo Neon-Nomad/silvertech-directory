@@ -171,7 +171,11 @@ export const LocationPage: React.FC = () => {
 
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Breadcrumbs />
+          <Breadcrumbs items={[
+            { label: 'Assisted Living', path: '/search' },
+            { label: stateName, path: `/assisted-living/${state}` },
+            ...(city ? [{ label: cityName }] : [])
+          ]} />
         </div>
       </div>
 

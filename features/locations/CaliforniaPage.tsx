@@ -206,7 +206,10 @@ export const CaliforniaPage: React.FC = () => {
 
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Breadcrumbs />
+          <Breadcrumbs items={[
+            { label: 'Assisted Living', path: '/search' },
+            { label: 'California', path: '/assisted-living/california' }
+          ]} />
         </div>
       </div>
 
