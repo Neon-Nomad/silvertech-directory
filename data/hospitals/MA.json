@@ -1,0 +1,1197 @@
+{
+  "ATHOL": [
+    {
+      "name": "ATHOL MEMORIAL HOSPITAL",
+      "address": "2033 MAIN STREET",
+      "city": "ATHOL",
+      "state": "MA",
+      "zip": "01331",
+      "phone": "(978) 249-3511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ATTLEBORO": [
+    {
+      "name": "STURDY MEMORIAL HOSPITAL",
+      "address": "211 PARK STREET",
+      "city": "ATTLEBORO",
+      "state": "MA",
+      "zip": "02703",
+      "phone": "(508) 222-5200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AYER": [
+    {
+      "name": "NASHOBA VALLEY MEDICAL CENTER",
+      "address": "200 GROTON ROAD",
+      "city": "AYER",
+      "state": "MA",
+      "zip": "01432",
+      "phone": "(978) 784-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEDFORD": [
+    {
+      "name": "BEDFORD VA MEDICAL CENTER",
+      "address": "200 SPRINGS ROAD",
+      "city": "BEDFORD",
+      "state": "MA",
+      "zip": "01730",
+      "phone": "(781) 275-7500",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELMONT": [
+    {
+      "name": "MCLEAN HOSPITAL CORPORATION",
+      "address": "115 MILL STREET",
+      "city": "BELMONT",
+      "state": "MA",
+      "zip": "02478",
+      "phone": "(617) 855-3450",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEVERLY": [
+    {
+      "name": "NORTHEAST HOSPITAL CORPORATION",
+      "address": "85 HERRICK STREET",
+      "city": "BEVERLY",
+      "state": "MA",
+      "zip": "01915",
+      "phone": "(978) 922-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOSTON": [
+    {
+      "name": "CARNEY HOSPITAL",
+      "address": "2100 DORCHESTER AVENUE",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02124",
+      "phone": "(617) 506-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BOSTON MEDICAL CENTER",
+      "address": "1 BOSTON MEDICAL CENTER PLACE",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02118",
+      "phone": "(617) 638-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MASSACHUSETTS GENERAL HOSPITAL",
+      "address": "55 FRUIT STREET",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02114",
+      "phone": "(617) 726-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MASSACHUSETTS EYE AND EAR INFIRMARY -",
+      "address": "243 CHARLES STREET",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02114",
+      "phone": "(617) 523-7900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BETH ISRAEL DEACONESS MEDICAL CENTER",
+      "address": "330 BROOKLINE AVENUE",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02215",
+      "phone": "(617) 667-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NEW ENGLAND BAPTIST HOSPITAL",
+      "address": "125 PARKER HILL AVENUE",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02120",
+      "phone": "(617) 754-5800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BRIGHAM AND WOMEN'S HOSPITAL",
+      "address": "75 FRANCIS STREET",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02115",
+      "phone": "(617) 732-5500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TUFTS MEDICAL CENTER",
+      "address": "800 WASHINGTON STREET",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02111",
+      "phone": "(617) 636-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BOSTON CHILDREN'S HOSPITAL",
+      "address": "300 LONGWOOD AVENUE",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02115",
+      "phone": "(617) 735-6000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE SHRINERS' HOSPITAL FOR CHILDREN - BOSTON",
+      "address": "51 BLOSSOM STREET",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02114",
+      "phone": "(617) 722-3000",
+      "type": "Childrens",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ARBOUR HOSPITAL",
+      "address": "49 ROBINWOOD AVENUE",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02130",
+      "phone": "(617) 522-4400",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DR SOLOMON CARTER FULLER MENTAL HEALTH CENTER",
+      "address": "85 EAST NEWTON STREET",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02118",
+      "phone": "(617) 626-8700",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRIGHTON": [
+    {
+      "name": "BOSTON MEDICAL CENTER-BRIGHTON",
+      "address": "736 CAMBRIDGE STREET",
+      "city": "BRIGHTON",
+      "state": "MA",
+      "zip": "02135",
+      "phone": "(617) 789-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FRANCISCAN CHILDREN'S HOSPITAL & REHAB CENTER",
+      "address": "30 WARREN STREET",
+      "city": "BRIGHTON",
+      "state": "MA",
+      "zip": "02135",
+      "phone": "(617) 254-3800",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BROCKTON": [
+    {
+      "name": "SIGNATURE HEALTHCARE BROCKTON HOSPITAL",
+      "address": "680 CENTER STREET",
+      "city": "BROCKTON",
+      "state": "MA",
+      "zip": "02302",
+      "phone": "(508) 941-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GOOD SAMARITAN MEDICAL CENTER",
+      "address": "235 NORTH PEARL STREET",
+      "city": "BROCKTON",
+      "state": "MA",
+      "zip": "02301",
+      "phone": "(508) 427-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BROOKLINE": [
+    {
+      "name": "ARBOUR HUMAN RESOURCE INSTITUTE",
+      "address": "227 BABCOCK STREET",
+      "city": "BROOKLINE",
+      "state": "MA",
+      "zip": "02446",
+      "phone": "(617) 731-3200",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BOURNEWOOD HOSPITAL",
+      "address": "300 SOUTH STREET",
+      "city": "BROOKLINE",
+      "state": "MA",
+      "zip": "02467",
+      "phone": "(617) 469-0300",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURLINGTON": [
+    {
+      "name": "LAHEY HOSPITAL & MEDICAL CENTER, BURLINGTON",
+      "address": "41 & 45 MALL ROAD",
+      "city": "BURLINGTON",
+      "state": "MA",
+      "zip": "01803",
+      "phone": "(781) 744-5100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAMBRIDGE": [
+    {
+      "name": "MOUNT AUBURN HOSPITAL",
+      "address": "330 MOUNT AUBURN STREET",
+      "city": "CAMBRIDGE",
+      "state": "MA",
+      "zip": "02138",
+      "phone": "(617) 492-3500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CAMBRIDGE HEALTH ALLIANCE",
+      "address": "1493 CAMBRIDGE STREET",
+      "city": "CAMBRIDGE",
+      "state": "MA",
+      "zip": "02139",
+      "phone": "(617) 665-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DARTMOUTH": [
+    {
+      "name": "SOUTHCOAST BEHAVIORAL HEALTH",
+      "address": "581 FAUNCE CORNER ROAD",
+      "city": "DARTMOUTH",
+      "state": "MA",
+      "zip": "02747",
+      "phone": "(615) 861-6000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEDHAM": [
+    {
+      "name": "WALDEN BEHAVIORAL CARE, LLC",
+      "address": "10 CAREMATRIX DR",
+      "city": "DEDHAM",
+      "state": "MA",
+      "zip": "02026",
+      "phone": "(781) 647-6727",
+      "type": "Psychiatric",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEVENS": [
+    {
+      "name": "TARAVISTA BEHAVIORAL HEALTH CENTER",
+      "address": "85 PATTON ROAD",
+      "city": "DEVENS",
+      "state": "MA",
+      "zip": "01434",
+      "phone": "(978) 615-5200",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FALL RIVER": [
+    {
+      "name": "SAINT ANNE'S HOSPITAL",
+      "address": "795 MIDDLE STREET",
+      "city": "FALL RIVER",
+      "state": "MA",
+      "zip": "02721",
+      "phone": "(508) 674-5600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHCOAST HOSPITALS GROUP",
+      "address": "363 HIGHLAND AVENUE",
+      "city": "FALL RIVER",
+      "state": "MA",
+      "zip": "02720",
+      "phone": "(508) 679-3131",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DR JOHN C CORRIGAN MENTAL HEALTH CENTER",
+      "address": "49 HILLSIDE STREET",
+      "city": "FALL RIVER",
+      "state": "MA",
+      "zip": "02720",
+      "phone": "(508) 235-7600",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FALMOUTH": [
+    {
+      "name": "FALMOUTH HOSPITAL",
+      "address": "67 & 100 TER HEUN DRIVE",
+      "city": "FALMOUTH",
+      "state": "MA",
+      "zip": "02540",
+      "phone": "(508) 548-5300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRAMINGHAM": [
+    {
+      "name": "METROWEST MEDICAL CENTER",
+      "address": "115 LINCOLN STREET",
+      "city": "FRAMINGHAM",
+      "state": "MA",
+      "zip": "01701",
+      "phone": "(508) 383-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GARDNER": [
+    {
+      "name": "HEYWOOD HOSPITAL -",
+      "address": "242 GREEN STREET",
+      "city": "GARDNER",
+      "state": "MA",
+      "zip": "01440",
+      "phone": "(978) 632-3420",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREAT BARRINGTON": [
+    {
+      "name": "FAIRVIEW HOSPITAL",
+      "address": "29 LEWIS AVENUE",
+      "city": "GREAT BARRINGTON",
+      "state": "MA",
+      "zip": "01230",
+      "phone": "(413) 528-0790",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENFIELD": [
+    {
+      "name": "BAYSTATE FRANKLIN MEDICAL CENTER",
+      "address": "164 HIGH STREET",
+      "city": "GREENFIELD",
+      "state": "MA",
+      "zip": "01301",
+      "phone": "(413) 773-0211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAVERHILL": [
+    {
+      "name": "WHITTIER PAVILION",
+      "address": "76 SUMMER STREET",
+      "city": "HAVERHILL",
+      "state": "MA",
+      "zip": "01830",
+      "phone": "(978) 373-8222",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOLYOKE": [
+    {
+      "name": "HOLYOKE MEDICAL CENTER",
+      "address": "575 BEECH STREET",
+      "city": "HOLYOKE",
+      "state": "MA",
+      "zip": "01040",
+      "phone": "(413) 534-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VALLEY SPRINGS BEHAVIORAL HEALTH HOSPITAL",
+      "address": "45 LOWER WESTFIELD ROAD",
+      "city": "HOLYOKE",
+      "state": "MA",
+      "zip": "01040",
+      "phone": "(413) 315-4100",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HYANNIS": [
+    {
+      "name": "CAPE COD HOSPITAL",
+      "address": "27 PARK STREET",
+      "city": "HYANNIS",
+      "state": "MA",
+      "zip": "02601",
+      "phone": "(508) 771-1800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JAMAICA PLAIN": [
+    {
+      "name": "VA BOSTON HEALTHCARE SYSTEM - JAMAICA PLAIN",
+      "address": "150 S. HUNTINGTON AVENUE",
+      "city": "JAMAICA PLAIN",
+      "state": "MA",
+      "zip": "02130",
+      "phone": "(617) 232-9500",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BRIGHAM AND WOMEN'S FAULKNER HOSPITAL",
+      "address": "1153 CENTRE STREET",
+      "city": "JAMAICA PLAIN",
+      "state": "MA",
+      "zip": "02130",
+      "phone": "(617) 983-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAWRENCE": [
+    {
+      "name": "LAWRENCE GENERAL HOSPITAL",
+      "address": "ONE GENERAL STREET",
+      "city": "LAWRENCE",
+      "state": "MA",
+      "zip": "01842",
+      "phone": "(978) 683-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEEDS": [
+    {
+      "name": "NORTHAMPTON VA MEDICAL CENTER",
+      "address": "421 N MAIN ST",
+      "city": "LEEDS",
+      "state": "MA",
+      "zip": "01053",
+      "phone": "(413) 584-4040",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEOMINSTER": [
+    {
+      "name": "UMASS MEMORIAL HEALTHALLIANCE HOSPITALS",
+      "address": "60 HOSPITAL ROAD",
+      "city": "LEOMINSTER",
+      "state": "MA",
+      "zip": "01453",
+      "phone": "(978) 466-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOWELL": [
+    {
+      "name": "LOWELL GENERAL HOSPITAL",
+      "address": "295 VARNUM AVENUE",
+      "city": "LOWELL",
+      "state": "MA",
+      "zip": "01854",
+      "phone": "(978) 937-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARLBOROUGH": [
+    {
+      "name": "UMASS MEMORIAL HEALTHCARE-MARLBOROUGH HOSPITAL",
+      "address": "157 UNION STREET",
+      "city": "MARLBOROUGH",
+      "state": "MA",
+      "zip": "01752",
+      "phone": "(508) 481-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MELROSE": [
+    {
+      "name": "MELROSEWAKEFIELD HEALTHCARE",
+      "address": "585 LEBANON STREET",
+      "city": "MELROSE",
+      "state": "MA",
+      "zip": "02176",
+      "phone": "(781) 979-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "METHUEN": [
+    {
+      "name": "HOLY FAMILY HOSPITAL",
+      "address": "70 EAST STREET",
+      "city": "METHUEN",
+      "state": "MA",
+      "zip": "01844",
+      "phone": "(978) 687-0156",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILFORD": [
+    {
+      "name": "MILFORD REGIONAL MEDICAL CENTER",
+      "address": "14 PROSPECT STREET",
+      "city": "MILFORD",
+      "state": "MA",
+      "zip": "01757",
+      "phone": "(508) 473-1190",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILTON": [
+    {
+      "name": "BETH ISRAEL DEACONESS HOSPITAL - MILTON",
+      "address": "199 REEDSDALE ROAD",
+      "city": "MILTON",
+      "state": "MA",
+      "zip": "02186",
+      "phone": "(617) 696-4600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NANTUCKET": [
+    {
+      "name": "NANTUCKET COTTAGE HOSPITAL",
+      "address": "57 PROSPECT STREET",
+      "city": "NANTUCKET",
+      "state": "MA",
+      "zip": "02554",
+      "phone": "(508) 228-1200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEEDHAM": [
+    {
+      "name": "BETH ISRAEL DEACONESS HOSPITAL - NEEDHAM",
+      "address": "148 CHESTNUT STREET",
+      "city": "NEEDHAM",
+      "state": "MA",
+      "zip": "02494",
+      "phone": "(781) 453-3002",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWBURYPORT": [
+    {
+      "name": "ANNA JAQUES HOSPITAL",
+      "address": "25 HIGHLAND AVENUE",
+      "city": "NEWBURYPORT",
+      "state": "MA",
+      "zip": "01950",
+      "phone": "(978) 463-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWTON": [
+    {
+      "name": "NEWTON-WELLESLEY HOSPITAL",
+      "address": "2014 WASHINGTON STREET",
+      "city": "NEWTON",
+      "state": "MA",
+      "zip": "02462",
+      "phone": "(617) 243-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTH ADAMS": [
+    {
+      "name": "NORTH ADAMS REGIONAL HOSPITAL CORPORATION",
+      "address": "71 HOSPITAL AVENUE",
+      "city": "NORTH ADAMS",
+      "state": "MA",
+      "zip": "01247",
+      "phone": "(413) 664-5000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTHAMPTON": [
+    {
+      "name": "COOLEY DICKINSON HOSPITAL INC,THE",
+      "address": "30 LOCUST STREET",
+      "city": "NORTHAMPTON",
+      "state": "MA",
+      "zip": "01061",
+      "phone": "(413) 582-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORWOOD": [
+    {
+      "name": "NORWOOD HOSPITAL",
+      "address": "800 WASHINGTON STREET",
+      "city": "NORWOOD",
+      "state": "MA",
+      "zip": "02062",
+      "phone": "(781) 769-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OAK BLUFFS": [
+    {
+      "name": "MARTHA'S VINEYARD HOSPITAL INC",
+      "address": "ONE HOSPITAL ROAD, FIRST FL, WING 5,  PO BOX 1477",
+      "city": "OAK BLUFFS",
+      "state": "MA",
+      "zip": "02557",
+      "phone": "(508) 693-0410",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PALMER": [
+    {
+      "name": "BAYSTATE WING HOSPITAL",
+      "address": "40 WRIGHT STREET",
+      "city": "PALMER",
+      "state": "MA",
+      "zip": "01069",
+      "phone": "(413) 283-7651",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PITTSFIELD": [
+    {
+      "name": "BERKSHIRE MEDICAL CENTER",
+      "address": "725 NORTH STREET",
+      "city": "PITTSFIELD",
+      "state": "MA",
+      "zip": "01201",
+      "phone": "(413) 447-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLYMOUTH": [
+    {
+      "name": "BETH ISRAEL DEACONESS HOSPITAL PLYMOUTH",
+      "address": "275 SANDWICH STREET",
+      "city": "PLYMOUTH",
+      "state": "MA",
+      "zip": "02360",
+      "phone": "(508) 746-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POCASSET": [
+    {
+      "name": "CAPE COD & ISLANDS COMMUNITY MENTAL HEALTH CENTER",
+      "address": "830 COUNTY ROAD",
+      "city": "POCASSET",
+      "state": "MA",
+      "zip": "02559",
+      "phone": "(508) 563-2276",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALEM": [
+    {
+      "name": "NORTH SHORE MEDICAL CENTER -",
+      "address": "81 HIGHLAND AVENUE",
+      "city": "SALEM",
+      "state": "MA",
+      "zip": "01970",
+      "phone": "(978) 741-1215",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTH ATTLEBORO": [
+    {
+      "name": "ARBOUR-FULLER HOSPITAL",
+      "address": "200 MAY STREET",
+      "city": "SOUTH ATTLEBORO",
+      "state": "MA",
+      "zip": "02703",
+      "phone": "(508) 761-8500",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTH WEYMOUTH": [
+    {
+      "name": "SOUTH SHORE HOSPITAL",
+      "address": "55 FOGG ROAD",
+      "city": "SOUTH WEYMOUTH",
+      "state": "MA",
+      "zip": "02190",
+      "phone": "(781) 340-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTHBRIDGE": [
+    {
+      "name": "UMASS MEMORIAL HEALTH - HARRINGTON HOSPITAL",
+      "address": "100 SOUTH STREET",
+      "city": "SOUTHBRIDGE",
+      "state": "MA",
+      "zip": "01550",
+      "phone": "(508) 765-9771",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPRINGFIELD": [
+    {
+      "name": "MERCY MEDICAL CTR",
+      "address": "271 CAREW STREET",
+      "city": "SPRINGFIELD",
+      "state": "MA",
+      "zip": "01104",
+      "phone": "(413) 748-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BAYSTATE MEDICAL CENTER",
+      "address": "759 CHESTNUT STREET",
+      "city": "SPRINGFIELD",
+      "state": "MA",
+      "zip": "01199",
+      "phone": "(413) 794-0000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAUNTON": [
+    {
+      "name": "BROWN UNIVERSITY HEALTH MORTON HOSPITAL",
+      "address": "88 WASHINGTON STREET",
+      "city": "TAUNTON",
+      "state": "MA",
+      "zip": "02780",
+      "phone": "(508) 828-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TAUNTON STATE HOSPITAL",
+      "address": "60 HODGES AVENUE, BOX 151",
+      "city": "TAUNTON",
+      "state": "MA",
+      "zip": "02780",
+      "phone": "(508) 977-3000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "W CONCORD": [
+    {
+      "name": "EMERSON HOSPITAL -",
+      "address": "133 OLD ROAD TO 9 ACRE CORNER",
+      "city": "W CONCORD",
+      "state": "MA",
+      "zip": "01742",
+      "phone": "(978) 369-1400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTBOROUGH": [
+    {
+      "name": "WESTBOROUGH BEHAVIORAL HEALTHCARE HOSPITAL LLC",
+      "address": "300 FRIBERG PARKWAY",
+      "city": "WESTBOROUGH",
+      "state": "MA",
+      "zip": "01581",
+      "phone": "(508) 329-6300",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTFIELD": [
+    {
+      "name": "BAYSTATE NOBLE HOSPITAL",
+      "address": "115 WEST SILVER STREET",
+      "city": "WESTFIELD",
+      "state": "MA",
+      "zip": "01086",
+      "phone": "(413) 568-2811",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTWOOD": [
+    {
+      "name": "WESTWOOD PEMBROKE HEALTH SYSTEMS",
+      "address": "45 CLAPBOARDTREE STREET",
+      "city": "WESTWOOD",
+      "state": "MA",
+      "zip": "02090",
+      "phone": "(617) 762-7764",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINCHESTER": [
+    {
+      "name": "WINCHESTER HOSPITAL",
+      "address": "41 HIGHLAND AVENUE",
+      "city": "WINCHESTER",
+      "state": "MA",
+      "zip": "01890",
+      "phone": "(781) 729-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WORCESTER": [
+    {
+      "name": "ADCARE HOSPITAL OF WORCESTER INC",
+      "address": "107 LINCOLN STREET",
+      "city": "WORCESTER",
+      "state": "MA",
+      "zip": "01605",
+      "phone": "(508) 799-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UMASS MEMORIAL MEDICAL CENTER/UNIVERSITY CAMPUS",
+      "address": "55 LAKE AVENUE NORTH",
+      "city": "WORCESTER",
+      "state": "MA",
+      "zip": "01655",
+      "phone": "(508) 334-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST VINCENT HOSPITAL",
+      "address": "123 SUMMER STREET",
+      "city": "WORCESTER",
+      "state": "MA",
+      "zip": "01608",
+      "phone": "(508) 363-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WORCESTER RECOVERY CENTER AND HOSPITAL",
+      "address": "309 BELMONT STREET",
+      "city": "WORCESTER",
+      "state": "MA",
+      "zip": "01604",
+      "phone": "(508) 752-4681",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL FOR BEHAVIORAL MEDICINE",
+      "address": "100 CENTURY DRIVE",
+      "city": "WORCESTER",
+      "state": "MA",
+      "zip": "01606",
+      "phone": "(844) 319-0000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

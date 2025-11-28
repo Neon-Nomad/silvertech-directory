@@ -1,0 +1,187 @@
+{
+  "EAST PROVIDENCE": [
+    {
+      "name": "EMMA PENDLETON BRADLEY HOSPITAL",
+      "address": "1011 VETERANS MEMORIAL PARKWAY",
+      "city": "EAST PROVIDENCE",
+      "state": "RI",
+      "zip": "02915",
+      "phone": "(401) 432-1000",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWPORT": [
+    {
+      "name": "NEWPORT HOSPITAL",
+      "address": "11 FRIENDSHIP STREET",
+      "city": "NEWPORT",
+      "state": "RI",
+      "zip": "02840",
+      "phone": "(401) 846-6400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTH PROVIDENCE": [
+    {
+      "name": "OUR LADY OF FATIMA HOSPITAL",
+      "address": "200 HIGH SERVICE AVENUE",
+      "city": "NORTH PROVIDENCE",
+      "state": "RI",
+      "zip": "02904",
+      "phone": "(401) 456-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PROVIDENCE": [
+    {
+      "name": "ROGER WILLIAMS MEDICAL CENTER",
+      "address": "825 CHALKSTONE AVENUE",
+      "city": "PROVIDENCE",
+      "state": "RI",
+      "zip": "02908",
+      "phone": "(401) 456-2025",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RHODE ISLAND HOSPITAL",
+      "address": "593 EDDY STREET",
+      "city": "PROVIDENCE",
+      "state": "RI",
+      "zip": "02902",
+      "phone": "(401) 444-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WOMEN & INFANTS HOSPITAL OF RHODE ISLAND",
+      "address": "101 DUDLEY STREET",
+      "city": "PROVIDENCE",
+      "state": "RI",
+      "zip": "02905",
+      "phone": "(401) 274-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE MIRIAM HOSPITAL",
+      "address": "164 SUMMIT AVENUE",
+      "city": "PROVIDENCE",
+      "state": "RI",
+      "zip": "02906",
+      "phone": "(401) 793-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PROVIDENCE VA MEDICAL CENTER",
+      "address": "830 CHALKSTONE AVENUE",
+      "city": "PROVIDENCE",
+      "state": "RI",
+      "zip": "02908",
+      "phone": "(401) 457-3042",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BUTLER HOSPITAL",
+      "address": "345 BLACKSTONE BLVD",
+      "city": "PROVIDENCE",
+      "state": "RI",
+      "zip": "02906",
+      "phone": "(401) 455-6270",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAKEFIELD": [
+    {
+      "name": "SOUTH COUNTY HOSPITAL INC",
+      "address": "100 KENYON AVE",
+      "city": "WAKEFIELD",
+      "state": "RI",
+      "zip": "02879",
+      "phone": "(401) 782-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WARWICK": [
+    {
+      "name": "KENT COUNTY MEMORIAL HOSPITAL",
+      "address": "455 TOLL GATE RD",
+      "city": "WARWICK",
+      "state": "RI",
+      "zip": "02886",
+      "phone": "(401) 737-7010",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTERLY": [
+    {
+      "name": "WESTERLY HOSPITAL",
+      "address": "25 WELLS STREET",
+      "city": "WESTERLY",
+      "state": "RI",
+      "zip": "02891",
+      "phone": "(401) 596-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOONSOCKET": [
+    {
+      "name": "LANDMARK MEDICAL CENTER",
+      "address": "115 CASS AVENUE",
+      "city": "WOONSOCKET",
+      "state": "RI",
+      "zip": "02895",
+      "phone": "(401) 769-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

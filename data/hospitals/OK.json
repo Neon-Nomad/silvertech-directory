@@ -1,0 +1,1935 @@
+{
+  "ADA": [
+    {
+      "name": "MERCY HOSPITAL ADA",
+      "address": "430 NORTH MONTE VISTA",
+      "city": "ADA",
+      "state": "OK",
+      "zip": "74820",
+      "phone": "(580) 332-2323",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHICKASAW NATION MEDICAL CENTER",
+      "address": "1921 STONECIPHER BLVD",
+      "city": "ADA",
+      "state": "OK",
+      "zip": "74820",
+      "phone": "(580) 436-3980",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ROLLING HILLS HOSPITAL, LLC",
+      "address": "1000 ROLLING HILLS LANE",
+      "city": "ADA",
+      "state": "OK",
+      "zip": "74820",
+      "phone": "(580) 436-3600",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALTUS": [
+    {
+      "name": "JACKSON COUNTY MEMORIAL HOSPITAL AUTHORITY",
+      "address": "1200 EAST PECAN ST",
+      "city": "ALTUS",
+      "state": "OK",
+      "zip": "73521",
+      "phone": "(580) 379-5500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALVA": [
+    {
+      "name": "SHARE MEDICAL CENTER",
+      "address": "800 SHARE DRIVE",
+      "city": "ALVA",
+      "state": "OK",
+      "zip": "73717",
+      "phone": "(580) 430-3355",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANADARKO": [
+    {
+      "name": "THE PHYSICIANS' HOSPITAL IN ANADARKO",
+      "address": "1002 E CENTRAL BLVD",
+      "city": "ANADARKO",
+      "state": "OK",
+      "zip": "73005",
+      "phone": "(405) 247-8236",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANTLERS": [
+    {
+      "name": "PUSHMATAHA HOSPITAL",
+      "address": "510 EAST MAIN STREET",
+      "city": "ANTLERS",
+      "state": "OK",
+      "zip": "74523",
+      "phone": "(580) 298-3341",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARDMORE": [
+    {
+      "name": "MERCY HOSPITAL ARDMORE, INC",
+      "address": "1011 14TH AVE NW",
+      "city": "ARDMORE",
+      "state": "OK",
+      "zip": "73401",
+      "phone": "(580) 223-5400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EXCEPTIONAL COMMUNITY HOSPITAL ARDMORE",
+      "address": "1641 WOERZ WAY",
+      "city": "ARDMORE",
+      "state": "OK",
+      "zip": "73401",
+      "phone": "(469) 341-7800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ATOKA": [
+    {
+      "name": "ATOKA COUNTY MEDICAL CENTER",
+      "address": "1590 WEST LIBERTY ROAD",
+      "city": "ATOKA",
+      "state": "OK",
+      "zip": "74525",
+      "phone": "(580) 889-3333",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BARTLESVILLE": [
+    {
+      "name": "ASCENSION ST JOHN JANE PHILLIPS",
+      "address": "3500 EAST FRANK PHILLIPS BOULEVARD",
+      "city": "BARTLESVILLE",
+      "state": "OK",
+      "zip": "74006",
+      "phone": "(918) 333-7200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEAVER": [
+    {
+      "name": "BEAVER COUNTY MEMORIAL HOSPITAL",
+      "address": "212 EAST 8TH STREET",
+      "city": "BEAVER",
+      "state": "OK",
+      "zip": "73932",
+      "phone": "(580) 625-4551",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BETHANY": [
+    {
+      "name": "THE CHILDREN'S CENTER, INC",
+      "address": "6800 NW 39TH EXPRESSWAY",
+      "city": "BETHANY",
+      "state": "OK",
+      "zip": "73008",
+      "phone": "(405) 789-6711",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLACKWELL": [
+    {
+      "name": "STILLWATER MEDICAL-BLACKWELL",
+      "address": "710 S 13TH STREET",
+      "city": "BLACKWELL",
+      "state": "OK",
+      "zip": "74631",
+      "phone": "(580) 363-2311",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOISE CITY": [
+    {
+      "name": "CIMARRON MEMORIAL HOSPITAL",
+      "address": "100 SOUTH ELLIS",
+      "city": "BOISE CITY",
+      "state": "OK",
+      "zip": "73933",
+      "phone": "(580) 544-2501",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRISTOW": [
+    {
+      "name": "CARRUS LAKESIDE HOSPITAL",
+      "address": "700 WEST 7TH STREET",
+      "city": "BRISTOW",
+      "state": "OK",
+      "zip": "74010",
+      "phone": "(918) 367-2215",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BROKEN ARROW": [
+    {
+      "name": "ASCENSION ST JOHN BROKEN ARROW",
+      "address": "1000 WEST BOISE CIRCLE",
+      "city": "BROKEN ARROW",
+      "state": "OK",
+      "zip": "74012",
+      "phone": "(918) 994-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BUFFALO": [
+    {
+      "name": "HARPER COUNTY COMMUNITY HOSPITAL",
+      "address": "1003 US HIGHWAY 64 NORTH",
+      "city": "BUFFALO",
+      "state": "OK",
+      "zip": "73834",
+      "phone": "(580) 735-2555",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARNEGIE": [
+    {
+      "name": "CARNEGIE TRI-COUNTY MUNICIPAL HOSPITAL",
+      "address": "102 NORTH BROADWAY",
+      "city": "CARNEGIE",
+      "state": "OK",
+      "zip": "73015",
+      "phone": "(580) 654-1050",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHEYENNE": [
+    {
+      "name": "ROGER MILLS MEMORIAL HOSPITAL",
+      "address": "501 SOUTH L L MALES AVENUE",
+      "city": "CHEYENNE",
+      "state": "OK",
+      "zip": "73628",
+      "phone": "(580) 497-3336",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHICKASHA": [
+    {
+      "name": "GRADY MEMORIAL HOSPITAL",
+      "address": "2220 IOWA STREET",
+      "city": "CHICKASHA",
+      "state": "OK",
+      "zip": "73018",
+      "phone": "(405) 224-2300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLAREMORE": [
+    {
+      "name": "HILLCREST HOSPITAL CLAREMORE",
+      "address": "1202 N MUSKOGEE PLACE",
+      "city": "CLAREMORE",
+      "state": "OK",
+      "zip": "74017",
+      "phone": "(918) 341-2556",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CLAREMORE INDIAN HOSPITAL",
+      "address": "101 SOUTH MOORE AVE",
+      "city": "CLAREMORE",
+      "state": "OK",
+      "zip": "74017",
+      "phone": "(918) 341-8430",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLEVELAND": [
+    {
+      "name": "CLEVELAND AREA HOSPITAL",
+      "address": "1401 WEST PAWNEE",
+      "city": "CLEVELAND",
+      "state": "OK",
+      "zip": "74020",
+      "phone": "(918) 358-2501",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLINTON": [
+    {
+      "name": "CLINTON REGIONAL HOSPITAL",
+      "address": "100 N 30TH STREET",
+      "city": "CLINTON",
+      "state": "OK",
+      "zip": "73601",
+      "phone": "(580) 323-0346",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COALGATE": [
+    {
+      "name": "COAL COUNTY GENERAL HOSPITAL, INC.",
+      "address": "6 NORTH COVINGTON",
+      "city": "COALGATE",
+      "state": "OK",
+      "zip": "74538",
+      "phone": "(580) 927-2327",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CORDELL": [
+    {
+      "name": "CORDELL MEMORIAL HOSPITAL",
+      "address": "1220 NORTH GLENN ENGLISH STREET",
+      "city": "CORDELL",
+      "state": "OK",
+      "zip": "73632",
+      "phone": "(580) 832-3339",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CUSHING": [
+    {
+      "name": "HILLCREST HOSPITAL CUSHING",
+      "address": "1027 EAST CHERRY STREET",
+      "city": "CUSHING",
+      "state": "OK",
+      "zip": "74023",
+      "phone": "(918) 225-8152",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DRUMRIGHT": [
+    {
+      "name": "DRUMRIGHT REGIONAL HOSPITAL",
+      "address": "610 WEST BYPASS",
+      "city": "DRUMRIGHT",
+      "state": "OK",
+      "zip": "74030",
+      "phone": "(918) 382-2300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DUNCAN": [
+    {
+      "name": "DUNCAN REGIONAL HOSPITAL, INC",
+      "address": "1407 WHISENANT DRIVE",
+      "city": "DUNCAN",
+      "state": "OK",
+      "zip": "73533",
+      "phone": "(580) 252-5300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DURANT": [
+    {
+      "name": "ALLIANCEHEALTH DURANT",
+      "address": "1800 UNIVERSITY BOULEVARD",
+      "city": "DURANT",
+      "state": "OK",
+      "zip": "74702",
+      "phone": "(405) 924-3080",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EDMOND": [
+    {
+      "name": "SUMMIT MEDICAL CENTER, LLC",
+      "address": "1800 SOUTH RENAISSANCE BOULEVARD",
+      "city": "EDMOND",
+      "state": "OK",
+      "zip": "73034",
+      "phone": "(405) 359-2400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "INTEGRIS HEALTH EDMOND HOSPITAL",
+      "address": "4801 INTEGRIS PARKWAY",
+      "city": "EDMOND",
+      "state": "OK",
+      "zip": "73034",
+      "phone": "(405) 657-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELK CITY": [
+    {
+      "name": "GREAT PLAINS REGIONAL MEDICAL CENTER",
+      "address": "1801 WEST 3RD STREET",
+      "city": "ELK CITY",
+      "state": "OK",
+      "zip": "73644",
+      "phone": "(580) 225-2511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ENID": [
+    {
+      "name": "INTEGRIS HEALTH ENID HOSPITAL",
+      "address": "600 SOUTH MONROE",
+      "city": "ENID",
+      "state": "OK",
+      "zip": "73701",
+      "phone": "(580) 233-2300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST MARY'S REGIONAL MEDICAL CENTER",
+      "address": "305 SOUTH 5TH STREET",
+      "city": "ENID",
+      "state": "OK",
+      "zip": "73701",
+      "phone": "(580) 233-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAIRFAX": [
+    {
+      "name": "RURAL WELLNESS FAIRFAX HOSPITAL",
+      "address": "40 HOSPITAL ROAD",
+      "city": "FAIRFAX",
+      "state": "OK",
+      "zip": "74637",
+      "phone": "(918) 642-3291",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAIRVIEW": [
+    {
+      "name": "FAIRVIEW REGIONAL MEDICAL CENTER AUTHORITY",
+      "address": "523 EAST STATE ROAD",
+      "city": "FAIRVIEW",
+      "state": "OK",
+      "zip": "73737",
+      "phone": "(580) 227-3721",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT SUPPLY": [
+    {
+      "name": "NORTHWEST CENTER FOR BEHAVIORAL HEALTH (NCBH)",
+      "address": "1 MILE EAST US HIGHWAY 270",
+      "city": "FORT SUPPLY",
+      "state": "OK",
+      "zip": "73841",
+      "phone": "(580) 766-2311",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GROVE": [
+    {
+      "name": "INTEGRIS GROVE HOSPITAL",
+      "address": "1001 EAST 18TH STREET",
+      "city": "GROVE",
+      "state": "OK",
+      "zip": "74344",
+      "phone": "(918) 786-2243",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GUTHRIE": [
+    {
+      "name": "MERCY HOSPITAL LOGAN COUNTY",
+      "address": "200 S ACADEMY RD",
+      "city": "GUTHRIE",
+      "state": "OK",
+      "zip": "73044",
+      "phone": "(405) 282-6700",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GUYMON": [
+    {
+      "name": "MEMORIAL HOSPITAL OF TEXAS COUNTY AUTHORITY",
+      "address": "520 MEDICAL DRIVE",
+      "city": "GUYMON",
+      "state": "OK",
+      "zip": "73942",
+      "phone": "(580) 338-6515",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HEALDTON": [
+    {
+      "name": "MERCY HOSPITAL HEALDTON, INC.",
+      "address": "3462 HOSPITAL RD",
+      "city": "HEALDTON",
+      "state": "OK",
+      "zip": "73438",
+      "phone": "(580) 229-0701",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HENRYETTA": [
+    {
+      "name": "HILLCREST HOSPITAL HENRYETTA",
+      "address": "2401 W MAIN",
+      "city": "HENRYETTA",
+      "state": "OK",
+      "zip": "74437",
+      "phone": "(918) 650-1511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOBART": [
+    {
+      "name": "ELKVIEW GENERAL HOSPITAL",
+      "address": "429 WEST ELM STREET",
+      "city": "HOBART",
+      "state": "OK",
+      "zip": "73651",
+      "phone": "(580) 726-3324",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOLDENVILLE": [
+    {
+      "name": "HOLDENVILLE GENERAL HOSPITAL",
+      "address": "100 MCDOUGAL DRIVE",
+      "city": "HOLDENVILLE",
+      "state": "OK",
+      "zip": "74848",
+      "phone": "(405) 379-4200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOLLIS": [
+    {
+      "name": "HARMON MEMORIAL HOSPITAL",
+      "address": "400 EAST CHESTNUT STREET",
+      "city": "HOLLIS",
+      "state": "OK",
+      "zip": "73550",
+      "phone": "(580) 688-3363",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUGO": [
+    {
+      "name": "CHOCTAW MEMORIAL HOSPITAL",
+      "address": "1405 EAST KIRK ROAD",
+      "city": "HUGO",
+      "state": "OK",
+      "zip": "74743",
+      "phone": "(580) 317-9500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IDABEL": [
+    {
+      "name": "MCCURTAIN MEMORIAL HOSPITAL",
+      "address": "1301 LINCOLN ROAD",
+      "city": "IDABEL",
+      "state": "OK",
+      "zip": "74745",
+      "phone": "(580) 286-7623",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KINGFISHER": [
+    {
+      "name": "MERCY HOSPITAL KINGFISHER, INC",
+      "address": "1000 HOSPITAL DRIVE",
+      "city": "KINGFISHER",
+      "state": "OK",
+      "zip": "73750",
+      "phone": "(405) 375-3141",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAWTON": [
+    {
+      "name": "COMANCHE COUNTY MEMORIAL HOSPITAL",
+      "address": "3401 WEST GORE BLVD",
+      "city": "LAWTON",
+      "state": "OK",
+      "zip": "73505",
+      "phone": "(580) 355-8620",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHWESTERN MEDICAL CENTER",
+      "address": "5602 SOUTHWEST LEE BOULEVARD",
+      "city": "LAWTON",
+      "state": "OK",
+      "zip": "73505",
+      "phone": "(405) 531-4701",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LAWTON INDIAN HOSPITAL",
+      "address": "1515 LAWRIE TATUM ROAD",
+      "city": "LAWTON",
+      "state": "OK",
+      "zip": "73507",
+      "phone": "(580) 353-0350",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "JIM TALIAFERRO COMM MENTAL HEALTH CTR",
+      "address": "602 SOUTHWEST 38TH STREET",
+      "city": "LAWTON",
+      "state": "OK",
+      "zip": "73505",
+      "phone": "(580) 248-5780",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LINDSAY": [
+    {
+      "name": "LINDSAY MUNICIPAL HOSPITAL",
+      "address": "1305 W CHEROKEE STREET - HIGHWAY 19 WEST",
+      "city": "LINDSAY",
+      "state": "OK",
+      "zip": "73052",
+      "phone": "(405) 756-1404",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MADILL": [
+    {
+      "name": "ALLIANCEHEALTH MADILL",
+      "address": "901 S 5TH AVE",
+      "city": "MADILL",
+      "state": "OK",
+      "zip": "73446",
+      "phone": "(580) 795-3384",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANGUM": [
+    {
+      "name": "MANGUM REGIONAL MEDICAL CENTER",
+      "address": "1 WICKERSHAM DRIVE",
+      "city": "MANGUM",
+      "state": "OK",
+      "zip": "73554",
+      "phone": "(580) 782-3353",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARIETTA": [
+    {
+      "name": "MERCY HOSPITAL MARIETTA",
+      "address": "300 WANDA STREET",
+      "city": "MARIETTA",
+      "state": "OK",
+      "zip": "73448",
+      "phone": "(580) 276-3347",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MCALESTER": [
+    {
+      "name": "MCALESTER REGIONAL HEALTH CENTER",
+      "address": "ONE CLARK BASS BOULEVARD",
+      "city": "MCALESTER",
+      "state": "OK",
+      "zip": "74501",
+      "phone": "(918) 426-1800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CARL ALBERT COMMUNITY MENTAL HEALTH CENTER",
+      "address": "1101 EAST MONROE",
+      "city": "MCALESTER",
+      "state": "OK",
+      "zip": "74501",
+      "phone": "(918) 426-7800",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIAMI": [
+    {
+      "name": "INTEGRIS MIAMI HOSPITAL",
+      "address": "200 SECOND AVENUE SOUTHWEST",
+      "city": "MIAMI",
+      "state": "OK",
+      "zip": "74355",
+      "phone": "(918) 542-6611",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIDWEST CITY": [
+    {
+      "name": "SSM HEALTH ST ANTHONY HOSPITAL - MIDWEST",
+      "address": "2825 PARKLAWN DRIVE",
+      "city": "MIDWEST CITY",
+      "state": "OK",
+      "zip": "73110",
+      "phone": "(405) 610-4411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MUSKOGEE": [
+    {
+      "name": "SAINT FRANCIS HOSPITAL MUSKOGEE",
+      "address": "300 ROCKEFELLER DRIVE",
+      "city": "MUSKOGEE",
+      "state": "OK",
+      "zip": "74401",
+      "phone": "(918) 682-5501",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MUSKOGEE VA MEDICAL CENTER",
+      "address": "1011 HONOR HEIGHTS DRIVE",
+      "city": "MUSKOGEE",
+      "state": "OK",
+      "zip": "74401",
+      "phone": "(918) 577-3000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORMAN": [
+    {
+      "name": "NORMAN REGIONAL",
+      "address": "3300 HEALTHPLEX PKWY",
+      "city": "NORMAN",
+      "state": "OK",
+      "zip": "73072",
+      "phone": "(405) 307-1050",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "J D MCCARTY CENTER FOR CHILDREN",
+      "address": "2002 EAST ROBINSON",
+      "city": "NORMAN",
+      "state": "OK",
+      "zip": "73071",
+      "phone": "(405) 307-2800",
+      "type": "Childrens",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GRIFFIN MEMORIAL HOSPITAL",
+      "address": "900 EAST MAIN STREET",
+      "city": "NORMAN",
+      "state": "OK",
+      "zip": "73070",
+      "phone": "(405) 321-4880",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BEHAVIORAL HEALTH CENTER AT PORTER HEALTH VILLAGE",
+      "address": "506 WELLNESS WAY",
+      "city": "NORMAN",
+      "state": "OK",
+      "zip": "73071",
+      "phone": "(405) 754-1309",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NOWATA": [
+    {
+      "name": "ASCENSION ST JOHN NOWATA",
+      "address": "237 SOUTH LOCUST STREET",
+      "city": "NOWATA",
+      "state": "OK",
+      "zip": "74048",
+      "phone": "(918) 273-3102",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OKEENE": [
+    {
+      "name": "OKEENE MUNICIPAL HOSPITAL",
+      "address": "207 EAST F STREET",
+      "city": "OKEENE",
+      "state": "OK",
+      "zip": "73763",
+      "phone": "(580) 822-4417",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OKEMAH": [
+    {
+      "name": "CREEK NATION COMMUNITY HOSPITAL",
+      "address": "1800 E COPLIN",
+      "city": "OKEMAH",
+      "state": "OK",
+      "zip": "74859",
+      "phone": "(918) 623-1424",
+      "type": "Critical Access Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OKLAHOMA CITY": [
+    {
+      "name": "MERCY HOSPITAL OKLAHOMA CITY, INC",
+      "address": "4300 WEST MEMORIAL ROAD",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73120",
+      "phone": "(405) 755-1515",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "INTEGRIS BAPTIST MEDICAL CENTER, INC",
+      "address": "3300 NORTHWEST EXPRESSWAY",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73112",
+      "phone": "(405) 949-3011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SSM HEALTH ST ANTHONY HOSPITAL - OKLAHOMA CITY",
+      "address": "1000 NORTH LEE AVENUE",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73101",
+      "phone": "(405) 272-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "O U MEDICAL CENTER",
+      "address": "700 NE 13TH STREET",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73104",
+      "phone": "(405) 271-5911",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "INTEGRIS SOUTHWEST MEDICAL CENTER",
+      "address": "4401 SOUTH WESTERN AVENUE",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73109",
+      "phone": "(405) 636-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OKLAHOMA CITY VA MEDICAL CENTER",
+      "address": "921 NE 13TH STREET",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73104",
+      "phone": "(405) 270-0501",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTHWEST SURGICAL HOSPITAL",
+      "address": "9204 NORTH MAY AVENUE",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73120",
+      "phone": "(405) 848-1918",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LAKESIDE WOMEN'S HOSPITAL, A MEMBER OF INTEGRIS HE",
+      "address": "11200 NORTH PORTLAND AVENUE",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73120",
+      "phone": "(405) 936-1500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SURGICAL HOSPITAL OF OKLAHOMA",
+      "address": "100 SOUTHEAST 59TH STREET",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73129",
+      "phone": "(405) 634-9300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMMUNITY HOSPITAL, LLC",
+      "address": "3100 SOUTHWEST 89TH STREET",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73159",
+      "phone": "(405) 602-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OKLAHOMA SPINE HOSPITAL",
+      "address": "14101 PARKWAY COMMONS DRIVE",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73134",
+      "phone": "(405) 749-2700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OKLAHOMA CENTER FOR ORTHOPAEDIC & MULTI-SP",
+      "address": "8100 SOUTH WALKER BLDG C",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73139",
+      "phone": "(405) 602-6500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OKLAHOMA HEART HOSPITAL, LLC",
+      "address": "4050 WEST MEMORIAL ROAD",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73120",
+      "phone": "(405) 608-3200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ONECORE HEALTH",
+      "address": "100 NE 85TH STREET",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73114",
+      "phone": "(405) 631-3085",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MCBRIDE ORTHOPEDIC HOSPITAL",
+      "address": "9600 NORTH BROADWAY EXTENSION",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73114",
+      "phone": "(405) 486-2100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OKLAHOMA HEART HOSPITAL SOUTH, LLC",
+      "address": "5200 EAST I-240 SERVICE ROAD",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73135",
+      "phone": "(405) 628-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "INTEGRIS COMMUNITY HOSPITAL - COUNCIL CROSSING",
+      "address": "9417 N COUNCIL ROAD",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73162",
+      "phone": "(405) 550-3280",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CEDAR RIDGE BEHAVIORAL HOSPITAL",
+      "address": "6501 NORTHEAST 50TH STREET",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73141",
+      "phone": "(405) 605-6111",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OAKWOOD SPRINGS, LLC",
+      "address": "13101 MEMORIAL SPRINGS COURT",
+      "city": "OKLAHOMA CITY",
+      "state": "OK",
+      "zip": "73114",
+      "phone": "(405) 438-3000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OKMULGEE": [
+    {
+      "name": "MUSCOGEE (CREEK) NATION MEDICAL CENTER",
+      "address": "1401 MORRIS DRIVE",
+      "city": "OKMULGEE",
+      "state": "OK",
+      "zip": "74447",
+      "phone": "(918) 756-4233",
+      "type": "Acute Care Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OWASSO": [
+    {
+      "name": "ST JOHN OWASSO",
+      "address": "12451 EAST 100TH STREET NORTH",
+      "city": "OWASSO",
+      "state": "OK",
+      "zip": "74055",
+      "phone": "(918) 274-5100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BAILEY MEDICAL CENTER, LLC",
+      "address": "10502 NORTH 110TH EAST AVENUE",
+      "city": "OWASSO",
+      "state": "OK",
+      "zip": "74055",
+      "phone": "(918) 376-8500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAULS VALLEY": [
+    {
+      "name": "VALLEY COMMUNITY HOSPITAL",
+      "address": "100 VALLEY DRIVE",
+      "city": "PAULS VALLEY",
+      "state": "OK",
+      "zip": "73075",
+      "phone": "(405) 866-5100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAWHUSKA": [
+    {
+      "name": "PAWHUSKA HOSPITAL, INC",
+      "address": "1101 EAST 15TH STREET",
+      "city": "PAWHUSKA",
+      "state": "OK",
+      "zip": "74056",
+      "phone": "(918) 287-3232",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PERRY": [
+    {
+      "name": "STILLWATER MEDICAL - PERRY",
+      "address": "501 N 14TH ST",
+      "city": "PERRY",
+      "state": "OK",
+      "zip": "73077",
+      "phone": "(580) 336-3541",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PONCA CITY": [
+    {
+      "name": "INTEGRIS HEALTH PONCA CITY",
+      "address": "1900 NORTH 14TH STREET",
+      "city": "PONCA CITY",
+      "state": "OK",
+      "zip": "74601",
+      "phone": "(580) 765-3321",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POTEAU": [
+    {
+      "name": "EASTERN OKLAHOMA MEDICAL CENTER",
+      "address": "105 WALL STREET",
+      "city": "POTEAU",
+      "state": "OK",
+      "zip": "74953",
+      "phone": "(918) 647-8161",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRAGUE": [
+    {
+      "name": "PRAGUE REGIONAL MEMORIAL HOSPITAL",
+      "address": "1322 KLABZUBA AVENUE",
+      "city": "PRAGUE",
+      "state": "OK",
+      "zip": "74864",
+      "phone": "(405) 567-4922",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRYOR": [
+    {
+      "name": "HILLCREST HOSPITAL PRYOR",
+      "address": "111 NORTH BAILEY STREET",
+      "city": "PRYOR",
+      "state": "OK",
+      "zip": "74361",
+      "phone": "(918) 825-1600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PURCELL": [
+    {
+      "name": "PURCELL MUNICIPAL HOSPITAL",
+      "address": "1500 NORTH GREEN AVENUE",
+      "city": "PURCELL",
+      "state": "OK",
+      "zip": "73080",
+      "phone": "(405) 527-6524",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALLISAW": [
+    {
+      "name": "SEQUOYAH COUNTY-CITY OF SALLISAW HOSPITAL AUTHORIT",
+      "address": "213 EAST REDWOOD",
+      "city": "SALLISAW",
+      "state": "OK",
+      "zip": "74955",
+      "phone": "(918) 774-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAPULPA": [
+    {
+      "name": "ASCENSION ST JOHN SAPULPA",
+      "address": "1004 EAST BRYAN",
+      "city": "SAPULPA",
+      "state": "OK",
+      "zip": "74066",
+      "phone": "(918) 224-4280",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEILING": [
+    {
+      "name": "SEILING MUNICIPAL HOSPITAL",
+      "address": "809 NE HIGHWAY 60",
+      "city": "SEILING",
+      "state": "OK",
+      "zip": "73663",
+      "phone": "(580) 922-7361",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHATTUCK": [
+    {
+      "name": "NEWMAN MEMORIAL HOSPITAL",
+      "address": "905 SOUTH MAIN STREET",
+      "city": "SHATTUCK",
+      "state": "OK",
+      "zip": "73858",
+      "phone": "(580) 938-2551",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHAWNEE": [
+    {
+      "name": "SSM HEALTH ST ANTHONY HOSPITAL - SHAWNEE",
+      "address": "1102 W MACARTHUR",
+      "city": "SHAWNEE",
+      "state": "OK",
+      "zip": "74801",
+      "phone": "(405) 273-2270",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STIGLER": [
+    {
+      "name": "HASKELL REGIONAL HOSPITAL, INC",
+      "address": "401 NORTHWEST H STREET",
+      "city": "STIGLER",
+      "state": "OK",
+      "zip": "74462",
+      "phone": "(918) 967-4682",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STILLWATER": [
+    {
+      "name": "STILLWATER MEDICAL CENTER",
+      "address": "1323 WEST 6TH STREET",
+      "city": "STILLWATER",
+      "state": "OK",
+      "zip": "74076",
+      "phone": "(405) 372-1480",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STILWELL": [
+    {
+      "name": "MEMORIAL HOSPITAL",
+      "address": "1401 WEST LOCUST",
+      "city": "STILWELL",
+      "state": "OK",
+      "zip": "74960",
+      "phone": "(918) 696-3101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STROUD": [
+    {
+      "name": "RURAL WELLNESS STROUD HOSPITAL",
+      "address": "2308 HIGHWAY 66 WEST",
+      "city": "STROUD",
+      "state": "OK",
+      "zip": "74079",
+      "phone": "(918) 968-3571",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SULPHUR": [
+    {
+      "name": "ARBUCKLE MEMORIAL HOSPITAL",
+      "address": "2011 WEST BROADWAY",
+      "city": "SULPHUR",
+      "state": "OK",
+      "zip": "73086",
+      "phone": "(580) 622-2161",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAHLEQUAH": [
+    {
+      "name": "NORTHEASTERN HEALTH SYSTEM",
+      "address": "1400 EAST DOWNING STREET",
+      "city": "TAHLEQUAH",
+      "state": "OK",
+      "zip": "74465",
+      "phone": "(918) 456-0641",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHEROKEE NATION W W HASTINGS INDIAN HOSPITAL",
+      "address": "100 S BLISS AVENUE",
+      "city": "TAHLEQUAH",
+      "state": "OK",
+      "zip": "74464",
+      "phone": "(918) 458-3100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TALIHINA": [
+    {
+      "name": "CHOCTAW NATION HEALTH SERVICES AUTHORITY",
+      "address": "1 CHOCTAW WAY",
+      "city": "TALIHINA",
+      "state": "OK",
+      "zip": "74571",
+      "phone": "(918) 567-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TISHOMINGO": [
+    {
+      "name": "MERCY HOSPITAL TISHOMINGO INC",
+      "address": "1000 SOUTH BYRD ST",
+      "city": "TISHOMINGO",
+      "state": "OK",
+      "zip": "73460",
+      "phone": "(580) 371-2327",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TULSA": [
+    {
+      "name": "HILLCREST MEDICAL CENTER",
+      "address": "1120 SOUTH UTICA AVENUE",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74104",
+      "phone": "(918) 579-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OKLAHOMA STATE UNIVERSITY MEDICAL CENTER",
+      "address": "744 WEST 9TH STREET",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74127",
+      "phone": "(918) 599-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT FRANCIS HOSPITAL, INC",
+      "address": "6161 SOUTH YALE",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74136",
+      "phone": "(918) 494-8467",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASCENSION ST JOHN MEDICAL CENTER",
+      "address": "1923 SOUTH UTICA AVENUE",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74104",
+      "phone": "(918) 744-2296",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HILLCREST HOSPITAL SOUTH",
+      "address": "8801 SOUTH 101ST EAST AVENUE",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74133",
+      "phone": "(918) 294-4499",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OKLAHOMA SURGICAL HOSPITAL, LLC",
+      "address": "2408 EAST 81ST STREET, SUITE 300",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74137",
+      "phone": "(918) 477-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TULSA SPINE & SPECIALTY HOSPITAL",
+      "address": "6901 SOUTH OLYMPIA AVENUE",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74132",
+      "phone": "(918) 388-5701",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT FRANCIS HOSPITAL SOUTH, LLC",
+      "address": "10501 EAST 91ST STREET SOUTH",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74133",
+      "phone": "(918) 307-6010",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COUNCIL OAK COMPREHENSIVE HEALTHCARE",
+      "address": "10109 E 79TH ST",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74133",
+      "phone": "(918) 940-7543",
+      "type": "Acute Care Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BROOKHAVEN HOSPITAL, LLC",
+      "address": "201 SOUTH GARNETT ROAD",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74128",
+      "phone": "(918) 438-4257",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LAUREATE PSYCHIATRIC CLINIC AND HOSPITAL, INC",
+      "address": "6655 SOUTH YALE AVENUE",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74136",
+      "phone": "(918) 481-4000",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PARKSIDE, INC",
+      "address": "1239 S TRENTON AVE",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74120",
+      "phone": "(918) 582-2131",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TULSA CENTER FOR BEHAVIORAL HEALTH",
+      "address": "2323 S HARVARD AVE",
+      "city": "TULSA",
+      "state": "OK",
+      "zip": "74114",
+      "phone": "(918) 293-2140",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VINITA": [
+    {
+      "name": "SAINT FRANCIS HOSPITAL VINITA, INC",
+      "address": "735 NORTH FOREMAN STREET",
+      "city": "VINITA",
+      "state": "OK",
+      "zip": "74301",
+      "phone": "(918) 256-7551",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAGONER": [
+    {
+      "name": "WAGONER COMMUNITY HOSPITAL",
+      "address": "1200 WEST CHEROKEE STREET",
+      "city": "WAGONER",
+      "state": "OK",
+      "zip": "74467",
+      "phone": "(918) 485-5514",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WATONGA": [
+    {
+      "name": "MERCY HOSPITAL WATONGA, INC",
+      "address": "500 NORTH CLARENCE NASH BOULEVARD",
+      "city": "WATONGA",
+      "state": "OK",
+      "zip": "73772",
+      "phone": "(580) 623-7211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAURIKA": [
+    {
+      "name": "JEFFERSON COUNTY HOSPITAL",
+      "address": "INTERSECTION HYWS 81 & 70",
+      "city": "WAURIKA",
+      "state": "OK",
+      "zip": "73573",
+      "phone": "(580) 228-2344",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEATHERFORD": [
+    {
+      "name": "WEATHERFORD REGIONAL HOSPITAL, INC OF WEATHERFORD",
+      "address": "3701 E MAIN",
+      "city": "WEATHERFORD",
+      "state": "OK",
+      "zip": "73096",
+      "phone": "(580) 772-5551",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOODWARD": [
+    {
+      "name": "ALLIANCEHEALTH WOODWARD",
+      "address": "900 17TH STREET",
+      "city": "WOODWARD",
+      "state": "OK",
+      "zip": "73801",
+      "phone": "(580) 256-5511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YUKON": [
+    {
+      "name": "INTEGRIS CANADIAN VALLEY HOSPITAL",
+      "address": "1201 HEALTH CENTER PARKWAY",
+      "city": "YUKON",
+      "state": "OK",
+      "zip": "73099",
+      "phone": "(405) 717-6800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

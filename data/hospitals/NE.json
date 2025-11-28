@@ -1,0 +1,1365 @@
+{
+  "AINSWORTH": [
+    {
+      "name": "BROWN COUNTY HOSPITAL",
+      "address": "945 EAST ZERO ST",
+      "city": "AINSWORTH",
+      "state": "NE",
+      "zip": "69210",
+      "phone": "(402) 387-2800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALBION": [
+    {
+      "name": "BOONE COUNTY HEALTH CENTER",
+      "address": "P O BOX 151, 723 WEST FAIRVIEW ST",
+      "city": "ALBION",
+      "state": "NE",
+      "zip": "68620",
+      "phone": "(402) 395-2191",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALLIANCE": [
+    {
+      "name": "BOX BUTTE GENERAL HOSPITAL",
+      "address": "P O BOX 810, 2101 BOX BUTTE AVE",
+      "city": "ALLIANCE",
+      "state": "NE",
+      "zip": "69301",
+      "phone": "(308) 762-6660",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALMA": [
+    {
+      "name": "HARLAN COUNTY HEALTH SYSTEM",
+      "address": "717 BROWN ST",
+      "city": "ALMA",
+      "state": "NE",
+      "zip": "68920",
+      "phone": "(308) 928-2151",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ATKINSON": [
+    {
+      "name": "WEST HOLT MEMORIAL HOSPITAL",
+      "address": "406 W NEELY ST",
+      "city": "ATKINSON",
+      "state": "NE",
+      "zip": "68713",
+      "phone": "(402) 925-2811",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AUBURN": [
+    {
+      "name": "NEMAHA COUNTY HOSPITAL",
+      "address": "2022 13TH STREET",
+      "city": "AUBURN",
+      "state": "NE",
+      "zip": "68305",
+      "phone": "(402) 274-4366",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AURORA": [
+    {
+      "name": "MEMORIAL HOSPITAL",
+      "address": "1423 SEVENTH ST",
+      "city": "AURORA",
+      "state": "NE",
+      "zip": "68818",
+      "phone": "(402) 694-3171",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BASSETT": [
+    {
+      "name": "ROCK COUNTY HOSPITAL",
+      "address": "102 EAST SOUTH STREET",
+      "city": "BASSETT",
+      "state": "NE",
+      "zip": "68714",
+      "phone": "(402) 684-3366",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEATRICE": [
+    {
+      "name": "BEATRICE COMMUNITY HOSPITAL & HEALTH CENTER, INC",
+      "address": "P O BOX 278, 4800 HOSPITAL PARKWAY",
+      "city": "BEATRICE",
+      "state": "NE",
+      "zip": "68310",
+      "phone": "(402) 228-3344",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELLEVUE": [
+    {
+      "name": "BELLEVUE MEDICAL CENTER, LLC",
+      "address": "2500 BELLEVUE MEDICAL CENTER DR",
+      "city": "BELLEVUE",
+      "state": "NE",
+      "zip": "68123",
+      "phone": "(402) 763-3600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BENKELMAN": [
+    {
+      "name": "DUNDY COUNTY HOSPITAL",
+      "address": "P O BOX 626, 1313 NORTH CHEYENNE ST",
+      "city": "BENKELMAN",
+      "state": "NE",
+      "zip": "69021",
+      "phone": "(308) 423-2204",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLAIR": [
+    {
+      "name": "MEMORIAL COMMUNITY HOSPITAL & HEALTH SYSTEM",
+      "address": "810 NORTH 22ND ST",
+      "city": "BLAIR",
+      "state": "NE",
+      "zip": "68008",
+      "phone": "(402) 426-1502",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOYS TOWN": [
+    {
+      "name": "BOYS TOWN NATIONAL RESEARCH HOSPITAL",
+      "address": "14000 BOYS TOWN HOSPITAL ROAD",
+      "city": "BOYS TOWN",
+      "state": "NE",
+      "zip": "68010",
+      "phone": "(531) 355-6594",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRIDGEPORT": [
+    {
+      "name": "MORRILL COUNTY COMMUNITY HOSPITAL",
+      "address": "1313 S STREET",
+      "city": "BRIDGEPORT",
+      "state": "NE",
+      "zip": "69336",
+      "phone": "(308) 262-1616",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BROKEN BOW": [
+    {
+      "name": "JENNIE M MELHAM MEMORIAL MEDICAL CENTER",
+      "address": "145 MEMORIAL DRIVE",
+      "city": "BROKEN BOW",
+      "state": "NE",
+      "zip": "68822",
+      "phone": "(308) 872-4100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CALLAWAY": [
+    {
+      "name": "CALLAWAY DISTRICT HOSPITAL",
+      "address": "P O BOX 100, 211 E KIMBALL",
+      "city": "CALLAWAY",
+      "state": "NE",
+      "zip": "68825",
+      "phone": "(308) 836-2228",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAMBRIDGE": [
+    {
+      "name": "TRI VALLEY HEALTH SYSTEM",
+      "address": "1305 WEST HIGHWAY 6/34",
+      "city": "CAMBRIDGE",
+      "state": "NE",
+      "zip": "69022",
+      "phone": "(308) 697-3329",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CENTRAL CITY": [
+    {
+      "name": "MERRICK MEDICAL CENTER",
+      "address": "1715  26TH ST",
+      "city": "CENTRAL CITY",
+      "state": "NE",
+      "zip": "68826",
+      "phone": "(308) 946-3015",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHADRON": [
+    {
+      "name": "CHADRON COMMUNITY HOSPITAL AND HEALTH SERVICES",
+      "address": "825 CENTENNIAL DRIVE",
+      "city": "CHADRON",
+      "state": "NE",
+      "zip": "69337",
+      "phone": "(308) 432-5586",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUMBUS": [
+    {
+      "name": "COLUMBUS COMMUNITY HOSPITAL, INC",
+      "address": "4600 38TH ST",
+      "city": "COLUMBUS",
+      "state": "NE",
+      "zip": "68601",
+      "phone": "(402) 564-7118",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COZAD": [
+    {
+      "name": "COZAD COMMUNITY HOSPITAL",
+      "address": "P O BOX 108, 300 EAST 12TH ST",
+      "city": "COZAD",
+      "state": "NE",
+      "zip": "69130",
+      "phone": "(308) 784-2261",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CREIGHTON": [
+    {
+      "name": "AVERA CREIGHTON HOSPITAL",
+      "address": "P O BOX 186, 1503 MAIN ST",
+      "city": "CREIGHTON",
+      "state": "NE",
+      "zip": "68729",
+      "phone": "(402) 358-5700",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CRETE": [
+    {
+      "name": "CRETE AREA MEDICAL CENTER",
+      "address": "2910 BETTEN DR",
+      "city": "CRETE",
+      "state": "NE",
+      "zip": "68333",
+      "phone": "(402) 826-2102",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAVID CITY": [
+    {
+      "name": "BUTLER COUNTY HEALTH",
+      "address": "372 SOUTH 9TH STREET",
+      "city": "DAVID CITY",
+      "state": "NE",
+      "zip": "68632",
+      "phone": "(402) 367-1200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAIRBURY": [
+    {
+      "name": "JEFFERSON COMMUNITY HEALTH & LIFE",
+      "address": "P O BOX 277, 2200 H ST",
+      "city": "FAIRBURY",
+      "state": "NE",
+      "zip": "68352",
+      "phone": "(402) 729-3351",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FALLS CITY": [
+    {
+      "name": "COMMUNITY MEDICAL CENTER, INC",
+      "address": "P O BOX 399, 3307 BILL SCHOCK BOULEVARD",
+      "city": "FALLS CITY",
+      "state": "NE",
+      "zip": "68355",
+      "phone": "(402) 245-2428",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRANKLIN": [
+    {
+      "name": "FRANKLIN COUNTY MEMORIAL HOSPITAL",
+      "address": "1406 Q ST",
+      "city": "FRANKLIN",
+      "state": "NE",
+      "zip": "68939",
+      "phone": "(308) 425-6221",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FREMONT": [
+    {
+      "name": "METHODIST FREMONT HEALTH",
+      "address": "450 EAST 23RD ST",
+      "city": "FREMONT",
+      "state": "NE",
+      "zip": "68025",
+      "phone": "(402) 721-1610",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRIEND": [
+    {
+      "name": "FRIEND COMMUNITY HEALTHCARE SYSTEM",
+      "address": "905 SECOND STREET",
+      "city": "FRIEND",
+      "state": "NE",
+      "zip": "68359",
+      "phone": "(402) 947-2541",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GENEVA": [
+    {
+      "name": "FILLMORE COUNTY HOSPITAL",
+      "address": "P O BOX 193, 1900 F STREET",
+      "city": "GENEVA",
+      "state": "NE",
+      "zip": "68361",
+      "phone": "(402) 759-3167",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GENOA": [
+    {
+      "name": "GENOA COMMUNITY HOSPITAL",
+      "address": "P O BOX 310, 706 EWING AVE",
+      "city": "GENOA",
+      "state": "NE",
+      "zip": "68640",
+      "phone": "(402) 993-2283",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GORDON": [
+    {
+      "name": "GORDON MEMORIAL HOSPITAL DISTRICT",
+      "address": "300 EAST 8TH ST",
+      "city": "GORDON",
+      "state": "NE",
+      "zip": "69343",
+      "phone": "(308) 282-0401",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GOTHENBURG": [
+    {
+      "name": "GOTHENBURG HEALTH",
+      "address": "PO BOX 469 910 20TH ST",
+      "city": "GOTHENBURG",
+      "state": "NE",
+      "zip": "69138",
+      "phone": "(308) 537-3661",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAND ISLAND": [
+    {
+      "name": "CHI HEALTH ST. FRANCIS",
+      "address": "2620 WEST FAIDLEY AVE",
+      "city": "GRAND ISLAND",
+      "state": "NE",
+      "zip": "68803",
+      "phone": "(308) 384-4600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GRAND ISLAND REGIONAL MEDICAL CENTER",
+      "address": "3533 PRAIRIEVIEW STREET",
+      "city": "GRAND ISLAND",
+      "state": "NE",
+      "zip": "68803",
+      "phone": "(308) 675-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRANT": [
+    {
+      "name": "PERKINS COUNTY HEALTH SERVICES",
+      "address": "900 LINCOLN AVE",
+      "city": "GRANT",
+      "state": "NE",
+      "zip": "69140",
+      "phone": "(308) 352-7200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HASTINGS": [
+    {
+      "name": "MARY LANNING HEALTHCARE",
+      "address": "715 N ST JOSEPH AVE",
+      "city": "HASTINGS",
+      "state": "NE",
+      "zip": "68901",
+      "phone": "(402) 463-4521",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HEBRON": [
+    {
+      "name": "THAYER COUNTY HEALTH SERVICES",
+      "address": "120 PARK AVE",
+      "city": "HEBRON",
+      "state": "NE",
+      "zip": "68370",
+      "phone": "(402) 768-6041",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HENDERSON": [
+    {
+      "name": "HENDERSON COMMUNITY HOSPITAL",
+      "address": "1621 FRONT STREET",
+      "city": "HENDERSON",
+      "state": "NE",
+      "zip": "68371",
+      "phone": "(402) 723-4512",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOLDREGE": [
+    {
+      "name": "PHELPS MEMORIAL HEALTH CENTER",
+      "address": "1215 TIBBALS ST",
+      "city": "HOLDREGE",
+      "state": "NE",
+      "zip": "68949",
+      "phone": "(308) 995-2211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IMPERIAL": [
+    {
+      "name": "CHASE COUNTY COMMUNITY HOSPITAL",
+      "address": "P O BOX 819, 600 W 12TH ST",
+      "city": "IMPERIAL",
+      "state": "NE",
+      "zip": "69033",
+      "phone": "(308) 882-7111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KEARNEY": [
+    {
+      "name": "CHI HEALTH GOOD SAMARITAN",
+      "address": "P O BOX 1990, 10 EAST 31ST ST",
+      "city": "KEARNEY",
+      "state": "NE",
+      "zip": "68848",
+      "phone": "(308) 865-7900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KEARNEY REGIONAL MEDICAL CENTER",
+      "address": "804 22ND AVENUE",
+      "city": "KEARNEY",
+      "state": "NE",
+      "zip": "68845",
+      "phone": "(308) 455-3600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KIMBALL": [
+    {
+      "name": "KIMBALL HEALTH SERVICES",
+      "address": "505 SOUTH BURG ST",
+      "city": "KIMBALL",
+      "state": "NE",
+      "zip": "69145",
+      "phone": "(308) 235-1952",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEXINGTON": [
+    {
+      "name": "LEXINGTON REGIONAL HEALTH CENTER",
+      "address": "P O BOX 980, 1201 NORTH ERIE ST",
+      "city": "LEXINGTON",
+      "state": "NE",
+      "zip": "68850",
+      "phone": "(308) 324-5651",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LINCOLN": [
+    {
+      "name": "BRYAN MEDICAL CENTER",
+      "address": "1600 SOUTH 48TH ST",
+      "city": "LINCOLN",
+      "state": "NE",
+      "zip": "68506",
+      "phone": "(402) 481-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHI HEALTH ST. ELIZABETH",
+      "address": "555 SOUTH 70TH ST",
+      "city": "LINCOLN",
+      "state": "NE",
+      "zip": "68510",
+      "phone": "(402) 219-7700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LINCOLN SURGICAL HOSPITAL",
+      "address": "1710 SOUTH 70TH STREET",
+      "city": "LINCOLN",
+      "state": "NE",
+      "zip": "68506",
+      "phone": "(402) 484-9090",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHI HEALTH NEBRASKA HEART",
+      "address": "7500 SOUTH 91ST ST",
+      "city": "LINCOLN",
+      "state": "NE",
+      "zip": "68526",
+      "phone": "(402) 328-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LINCOLN REGIONAL CENTER",
+      "address": "801 W PROSPECTOR PLACE",
+      "city": "LINCOLN",
+      "state": "NE",
+      "zip": "68522",
+      "phone": "(402) 479-5207",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LYNCH": [
+    {
+      "name": "NIOBRARA VALLEY HOSPITAL",
+      "address": "P O BOX 118, 401 SOUTH 5TH STREET",
+      "city": "LYNCH",
+      "state": "NE",
+      "zip": "68746",
+      "phone": "(402) 569-2451",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MCCOOK": [
+    {
+      "name": "COMMUNITY HOSPITAL",
+      "address": "P O BOX 1328, 1301 EAST H ST",
+      "city": "MCCOOK",
+      "state": "NE",
+      "zip": "69001",
+      "phone": "(308) 344-2650",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MINDEN": [
+    {
+      "name": "KEARNEY COUNTY HEALTH SERVICES HOSPITAL",
+      "address": "727 EAST 1ST ST",
+      "city": "MINDEN",
+      "state": "NE",
+      "zip": "68959",
+      "phone": "(308) 832-3400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEBRASKA CITY": [
+    {
+      "name": "CHI HEALTH ST. MARYS",
+      "address": "1301 GRUNDMAN BLVD",
+      "city": "NEBRASKA CITY",
+      "state": "NE",
+      "zip": "68410",
+      "phone": "(402) 873-3321",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NELIGH": [
+    {
+      "name": "ANTELOPE MEMORIAL HOSPITAL",
+      "address": "P O BOX 229, 102 WEST 9TH ST",
+      "city": "NELIGH",
+      "state": "NE",
+      "zip": "68756",
+      "phone": "(402) 887-4151",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORFOLK": [
+    {
+      "name": "FAITH REGIONAL HEALTH SERVICES",
+      "address": "2700 WEST NORFOLK AVE",
+      "city": "NORFOLK",
+      "state": "NE",
+      "zip": "68701",
+      "phone": "(402) 371-4880",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTH PLATTE": [
+    {
+      "name": "GREAT PLAINS HEALTH",
+      "address": "601 WEST LEOTA ST",
+      "city": "NORTH PLATTE",
+      "state": "NE",
+      "zip": "69101",
+      "phone": "(308) 568-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "O' NEILL": [
+    {
+      "name": "AVERA ST ANTHONY'S HOSPITAL",
+      "address": "300 NORTH 2ND ST",
+      "city": "O' NEILL",
+      "state": "NE",
+      "zip": "68763",
+      "phone": "(402) 336-2611",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OGALLALA": [
+    {
+      "name": "OGALLALA COMMUNITY HOSPITAL",
+      "address": "2601 NORTH SPRUCE ST",
+      "city": "OGALLALA",
+      "state": "NE",
+      "zip": "69153",
+      "phone": "(308) 284-4011",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OMAHA": [
+    {
+      "name": "THE NEBRASKA MEDICAL CENTER",
+      "address": "988102 Nebrasks Medical Center",
+      "city": "OMAHA",
+      "state": "NE",
+      "zip": "68198",
+      "phone": "(402) 559-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE NEBRASKA METHODIST HOSPITAL",
+      "address": "8303 DODGE ST",
+      "city": "OMAHA",
+      "state": "NE",
+      "zip": "68114",
+      "phone": "(402) 354-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHI HEALTH BERGAN MERCY",
+      "address": "7500 MERCY RD",
+      "city": "OMAHA",
+      "state": "NE",
+      "zip": "68124",
+      "phone": "(402) 398-6020",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OMAHA VA MEDICAL CENTER (VA NEBRASKA WESTERN IOWA HEALTHCARE SYSTEM)",
+      "address": "4101 WOOLWORTH AVENUE",
+      "city": "OMAHA",
+      "state": "NE",
+      "zip": "68105",
+      "phone": "(402) 346-8800",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHI HEALTH IMMANUEL",
+      "address": "6901 NORTH 72ND ST",
+      "city": "OMAHA",
+      "state": "NE",
+      "zip": "68122",
+      "phone": "(402) 572-2121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NEBRASKA ORTHOPAEDIC HOSPITAL",
+      "address": "2808 SOUTH 143RD PLAZA",
+      "city": "OMAHA",
+      "state": "NE",
+      "zip": "68144",
+      "phone": "(402) 609-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHI HEALTH LAKESIDE",
+      "address": "16901 LAKESIDE HILLS CT",
+      "city": "OMAHA",
+      "state": "NE",
+      "zip": "68130",
+      "phone": "(402) 717-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MIDWEST SURGICAL HOSPITAL LLC",
+      "address": "7915 FARNAM DRIVE",
+      "city": "OMAHA",
+      "state": "NE",
+      "zip": "68114",
+      "phone": "(402) 399-1900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NEBRASKA SPINE HOSPITAL, LLC",
+      "address": "6901 NORTH 72ND ST, STE 20300",
+      "city": "OMAHA",
+      "state": "NE",
+      "zip": "68122",
+      "phone": "(402) 572-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDREN'S NEBRASKA",
+      "address": "8200 DODGE ST",
+      "city": "OMAHA",
+      "state": "NE",
+      "zip": "68114",
+      "phone": "(402) 955-5400",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DOUGLAS COUNTY COMMUNITY MENTAL HEALTH CENTER",
+      "address": "4102 WOOLWORTH AVE",
+      "city": "OMAHA",
+      "state": "NE",
+      "zip": "68105",
+      "phone": "(402) 444-7676",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ORD": [
+    {
+      "name": "VALLEY COUNTY HEALTH SYSTEM",
+      "address": "2707 L STREET",
+      "city": "ORD",
+      "state": "NE",
+      "zip": "68862",
+      "phone": "(308) 728-4200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSCEOLA": [
+    {
+      "name": "ANNIE JEFFREY MEMORIAL COUNTY HEALTH CENTER",
+      "address": "P O BOX 428, 531 BEEBE ST",
+      "city": "OSCEOLA",
+      "state": "NE",
+      "zip": "68651",
+      "phone": "(402) 747-2031",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSHKOSH": [
+    {
+      "name": "GARDEN COUNTY HEALTH SERVICES",
+      "address": "1100 WEST 2ND ST",
+      "city": "OSHKOSH",
+      "state": "NE",
+      "zip": "69154",
+      "phone": "(308) 772-3283",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSMOND": [
+    {
+      "name": "OSMOND GENERAL HOSPITAL",
+      "address": "402 NORTH MAPLE ST",
+      "city": "OSMOND",
+      "state": "NE",
+      "zip": "68765",
+      "phone": "(402) 748-3393",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAPILLION": [
+    {
+      "name": "CHI HEALTH MIDLANDS",
+      "address": "11111 SOUTH 84TH ST",
+      "city": "PAPILLION",
+      "state": "NE",
+      "zip": "68046",
+      "phone": "(402) 593-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAWNEE CITY": [
+    {
+      "name": "PAWNEE COUNTY MEMORIAL HOSPITAL",
+      "address": "600 I STREET",
+      "city": "PAWNEE CITY",
+      "state": "NE",
+      "zip": "68420",
+      "phone": "(402) 852-2231",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PENDER": [
+    {
+      "name": "PENDER COMMUNITY HOSPITAL",
+      "address": "100 HOSPITAL DRIVE, PO BOX 100",
+      "city": "PENDER",
+      "state": "NE",
+      "zip": "68047",
+      "phone": "(402) 385-3083",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLAINVIEW": [
+    {
+      "name": "CHI HEALTH PLAINVIEW HOSPITAL",
+      "address": "P O BOX 489, 704 NORTH THIRD ST",
+      "city": "PLAINVIEW",
+      "state": "NE",
+      "zip": "68769",
+      "phone": "(402) 582-4245",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RED CLOUD": [
+    {
+      "name": "WEBSTER COUNTY COMMUNITY HOSPITAL",
+      "address": "P O BOX 465, 621 N FRANKLIN ST",
+      "city": "RED CLOUD",
+      "state": "NE",
+      "zip": "68970",
+      "phone": "(402) 746-5600",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SCHUYLER": [
+    {
+      "name": "CHI HEALTH SCHUYLER",
+      "address": "104 WEST 17TH ST",
+      "city": "SCHUYLER",
+      "state": "NE",
+      "zip": "68661",
+      "phone": "(402) 352-2441",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SCOTTSBLUFF": [
+    {
+      "name": "REGIONAL WEST MEDICAL CENTER",
+      "address": "4021 AVE B",
+      "city": "SCOTTSBLUFF",
+      "state": "NE",
+      "zip": "69361",
+      "phone": "(308) 635-3711",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEWARD": [
+    {
+      "name": "MEMORIAL HEALTH CARE SYSTEMS",
+      "address": "300 NORTH COLUMBIA AVE",
+      "city": "SEWARD",
+      "state": "NE",
+      "zip": "68434",
+      "phone": "(402) 643-2971",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SIDNEY": [
+    {
+      "name": "SIDNEY REGIONAL MEDICAL CENTER",
+      "address": "1000 POLE CREEK CROSSING",
+      "city": "SIDNEY",
+      "state": "NE",
+      "zip": "69162",
+      "phone": "(308) 254-5825",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ST PAUL": [
+    {
+      "name": "HOWARD COUNTY MEDICAL CENTER",
+      "address": "P O BOX 406, 1113 SHERMAN ST",
+      "city": "ST PAUL",
+      "state": "NE",
+      "zip": "68873",
+      "phone": "(308) 754-4421",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUPERIOR": [
+    {
+      "name": "BRODSTONE HEALTHCARE",
+      "address": "P O BOX 187, 520 EAST 10TH ST",
+      "city": "SUPERIOR",
+      "state": "NE",
+      "zip": "68978",
+      "phone": "(402) 879-3281",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SYRACUSE": [
+    {
+      "name": "SYRACUSE AREA HEALTH",
+      "address": "2731 HEALTHCARE DR",
+      "city": "SYRACUSE",
+      "state": "NE",
+      "zip": "68446",
+      "phone": "(402) 269-2011",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TECUMSEH": [
+    {
+      "name": "JOHNSON COUNTY HOSPITAL",
+      "address": "202 HIGH ST",
+      "city": "TECUMSEH",
+      "state": "NE",
+      "zip": "68450",
+      "phone": "(402) 335-3361",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VALENTINE": [
+    {
+      "name": "CHERRY COUNTY HOSPITAL",
+      "address": "510 NORTH GREEN ST",
+      "city": "VALENTINE",
+      "state": "NE",
+      "zip": "69201",
+      "phone": "(402) 376-2525",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAHOO": [
+    {
+      "name": "SAUNDERS MEDICAL CENTER",
+      "address": "1760 COUNTY RD J",
+      "city": "WAHOO",
+      "state": "NE",
+      "zip": "68066",
+      "phone": "(402) 443-4191",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAYNE": [
+    {
+      "name": "PROVIDENCE MEDICAL CENTER",
+      "address": "1200 PROVIDENCE RD",
+      "city": "WAYNE",
+      "state": "NE",
+      "zip": "68787",
+      "phone": "(402) 375-3800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST POINT": [
+    {
+      "name": "ST FRANCIS MEMORIAL HOSPITAL",
+      "address": "430 NORTH MONITOR ST",
+      "city": "WEST POINT",
+      "state": "NE",
+      "zip": "68788",
+      "phone": "(402) 372-2404",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINNEBAGO": [
+    {
+      "name": "TWELVE CLANS UNITY HOSPITAL",
+      "address": "225 S BLUFF STREET",
+      "city": "WINNEBAGO",
+      "state": "NE",
+      "zip": "68071",
+      "phone": "(402) 878-2231",
+      "type": "Acute Care Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YORK": [
+    {
+      "name": "YORK GENERAL HEALTH CARE SERVICES",
+      "address": "2222 LINCOLN AVE",
+      "city": "YORK",
+      "state": "NE",
+      "zip": "68467",
+      "phone": "(402) 362-6671",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

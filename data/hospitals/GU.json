@@ -1,0 +1,32 @@
+{
+  "DEDEDO": [
+    {
+      "name": "GUAM REGIONAL MEDICAL CITY",
+      "address": "133 ROUTE 3",
+      "city": "DEDEDO",
+      "state": "GU",
+      "zip": "96929",
+      "phone": "(671) 645-5500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAMUNING": [
+    {
+      "name": "GUAM MEMORIAL  HOSPITAL AUTHORITY",
+      "address": "85O GOV CARLOS G CAMACHO ROAD",
+      "city": "TAMUNING",
+      "state": "GU",
+      "zip": "96913",
+      "phone": "(671) 647-2552",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

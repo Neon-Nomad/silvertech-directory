@@ -1,0 +1,1484 @@
+{
+  "APACHE JUNCTION": [
+    {
+      "name": "BANNER GOLDFIELD MEDICAL CENTER",
+      "address": "2050 WEST SOUTHERN AVENUE",
+      "city": "APACHE JUNCTION",
+      "state": "AZ",
+      "zip": "85120",
+      "phone": "(480) 733-3300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AVONDALE": [
+    {
+      "name": "COPPER SPRINGS EAST- GILBERT",
+      "address": "10550 WEST MCDOWELL ROAD",
+      "city": "AVONDALE",
+      "state": "AZ",
+      "zip": "85392",
+      "phone": "(480) 565-3035",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BENSON": [
+    {
+      "name": "BENSON HOSPITAL",
+      "address": "450 SOUTH OCOTILLO AVENUE",
+      "city": "BENSON",
+      "state": "AZ",
+      "zip": "85602",
+      "phone": "(520) 586-2261",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BISBEE": [
+    {
+      "name": "COPPER QUEEN COMMUNITY HOSPITAL",
+      "address": "101 COLE AVENUE",
+      "city": "BISBEE",
+      "state": "AZ",
+      "zip": "85603",
+      "phone": "(520) 432-6401",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BULLHEAD CITY": [
+    {
+      "name": "WESTERN ARIZONA REGIONAL MEDICAL CENTER",
+      "address": "2735 SILVER CREEK ROAD",
+      "city": "BULLHEAD CITY",
+      "state": "AZ",
+      "zip": "86442",
+      "phone": "(928) 763-2273",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EXCEPTIONAL COMMUNITY HOSPITAL BULLHEAD CITY",
+      "address": "2365 HIGHWAY 95",
+      "city": "BULLHEAD CITY",
+      "state": "AZ",
+      "zip": "86442",
+      "phone": "(469) 341-7800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CASA GRANDE": [
+    {
+      "name": "BANNER CASA GRANDE MEDICAL CENTER",
+      "address": "1800 EAST FLORENCE BOULEVARD",
+      "city": "CASA GRANDE",
+      "state": "AZ",
+      "zip": "85122",
+      "phone": "(520) 381-6300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHANDLER": [
+    {
+      "name": "CHANDLER REGIONAL MEDICAL CENTER",
+      "address": "1955 WEST FRYE ROAD",
+      "city": "CHANDLER",
+      "state": "AZ",
+      "zip": "85224",
+      "phone": "(480) 728-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BANNER OCOTILLO MEDICAL CENTER",
+      "address": "1405 SOUTH ALMA SCHOOL ROAD",
+      "city": "CHANDLER",
+      "state": "AZ",
+      "zip": "85286",
+      "phone": "(480) 256-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OASIS BEHAVIORAL HEALTH HOSPITAL",
+      "address": "2190 NORTH GRACE BOULEVARD, BUILDING A",
+      "city": "CHANDLER",
+      "state": "AZ",
+      "zip": "85225",
+      "phone": "(480) 917-9301",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHINLE": [
+    {
+      "name": "CHINLE COMPREHENSIVE HEALTH CARE FACILITY",
+      "address": "US HWY 191, HOSPITAL ROAD",
+      "city": "CHINLE",
+      "state": "AZ",
+      "zip": "86503",
+      "phone": "(928) 674-7001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COTTONWOOD": [
+    {
+      "name": "VERDE VALLEY MEDICAL CENTER",
+      "address": "269 SOUTH CANDY LANE",
+      "city": "COTTONWOOD",
+      "state": "AZ",
+      "zip": "86326",
+      "phone": "(928) 773-2357",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FLAGSTAFF": [
+    {
+      "name": "FLAGSTAFF MEDICAL CENTER",
+      "address": "1200 NORTH BEAVER STREET",
+      "city": "FLAGSTAFF",
+      "state": "AZ",
+      "zip": "86001",
+      "phone": "(928) 779-3366",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE GUIDANCE CENTER",
+      "address": "2187 NORTH VICKEY STREET",
+      "city": "FLAGSTAFF",
+      "state": "AZ",
+      "zip": "86004",
+      "phone": "(928) 527-1899",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT MOHAVE": [
+    {
+      "name": "VALLEY VIEW MEDICAL CENTER",
+      "address": "5330 SOUTH HIGHWAY 95",
+      "city": "FORT MOHAVE",
+      "state": "AZ",
+      "zip": "86426",
+      "phone": "(928) 788-2273",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FT. DEFIANCE": [
+    {
+      "name": "FORT DEFIANCE INDIAN HOSPITAL",
+      "address": "PO BOX 649",
+      "city": "FT. DEFIANCE",
+      "state": "AZ",
+      "zip": "86504",
+      "phone": "(928) 729-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GANADO": [
+    {
+      "name": "SAGE MEMORIAL HOSPITAL",
+      "address": "HIGHWAY 264 WEST AND 191 SOUTH",
+      "city": "GANADO",
+      "state": "AZ",
+      "zip": "86505",
+      "phone": "(928) 755-4500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GILBERT": [
+    {
+      "name": "MERCY GILBERT MEDICAL CENTER",
+      "address": "3555 SOUTH VAL VISTA DRIVE",
+      "city": "GILBERT",
+      "state": "AZ",
+      "zip": "85297",
+      "phone": "(480) 728-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BANNER GATEWAY MEDICAL CENTER",
+      "address": "1900 NORTH HIGLEY ROAD",
+      "city": "GILBERT",
+      "state": "AZ",
+      "zip": "85234",
+      "phone": "(480) 543-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EAST VALLEY ER & HOSPITAL",
+      "address": "5656 SOUTH POWER RD",
+      "city": "GILBERT",
+      "state": "AZ",
+      "zip": "85295",
+      "phone": "(713) 660-0557",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLENDALE": [
+    {
+      "name": "BANNER THUNDERBIRD MEDICAL CENTER",
+      "address": "5555 WEST THUNDERBIRD ROAD",
+      "city": "GLENDALE",
+      "state": "AZ",
+      "zip": "85306",
+      "phone": "(602) 865-4470",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ABRAZO ARROWHEAD HOSPITAL",
+      "address": "18701 NORTH 67TH AVENUE",
+      "city": "GLENDALE",
+      "state": "AZ",
+      "zip": "85308",
+      "phone": "(623) 561-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AURORA BEHAVIORAL HEALTH SYSTEM",
+      "address": "6015 WEST PEORIA  AVENUE",
+      "city": "GLENDALE",
+      "state": "AZ",
+      "zip": "85302",
+      "phone": "(623) 344-4400",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLOBE": [
+    {
+      "name": "COBRE VALLEY REGIONAL MEDICAL CENTER",
+      "address": "5880 SOUTH HOSPITAL DRIVE",
+      "city": "GLOBE",
+      "state": "AZ",
+      "zip": "85501",
+      "phone": "(928) 402-1122",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GOODYEAR": [
+    {
+      "name": "ABRAZO WEST CAMPUS",
+      "address": "13677 WEST MCDOWELL ROAD",
+      "city": "GOODYEAR",
+      "state": "AZ",
+      "zip": "85395",
+      "phone": "(623) 882-1970",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WESTERN REGIONAL MEDICAL CENTER",
+      "address": "14200 WEST CELEBRATE LIFE WAY",
+      "city": "GOODYEAR",
+      "state": "AZ",
+      "zip": "85338",
+      "phone": "(623) 207-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KINGMAN": [
+    {
+      "name": "KINGMAN REGIONAL MEDICAL CENTER",
+      "address": "3269 STOCKTON HILL ROAD",
+      "city": "KINGMAN",
+      "state": "AZ",
+      "zip": "86401",
+      "phone": "(928) 757-2101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE HAVASU CITY": [
+    {
+      "name": "HAVASU REGIONAL MEDICAL CENTER",
+      "address": "101 CIVIC CENTER LANE",
+      "city": "LAKE HAVASU CITY",
+      "state": "AZ",
+      "zip": "86403",
+      "phone": "(928) 855-8185",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKESIDE": [
+    {
+      "name": "CHANGEPOINT PSYCHIATRIC HOSPITAL",
+      "address": "1920 WEST COMMERCE DRIVE",
+      "city": "LAKESIDE",
+      "state": "AZ",
+      "zip": "85929",
+      "phone": "(928) 368-4110",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAVEEN": [
+    {
+      "name": "DIGNITY HEALTH - ARIZONA GENERAL HOSPITAL",
+      "address": "7171 SOUTH 51ST AVENUE",
+      "city": "LAVEEN",
+      "state": "AZ",
+      "zip": "85339",
+      "phone": "(623) 584-5100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARICOPA": [
+    {
+      "name": "EXCEPTIONAL COMMUNITY HOSPITAL - MARICOPA",
+      "address": "19060 NORTH JOHN WAYNE PARKWAY",
+      "city": "MARICOPA",
+      "state": "AZ",
+      "zip": "85139",
+      "phone": "(910) 988-9080",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MESA": [
+    {
+      "name": "BANNER DESERT MEDICAL CENTER",
+      "address": "1400 SOUTH  DOBSON ROAD",
+      "city": "MESA",
+      "state": "AZ",
+      "zip": "85202",
+      "phone": "(480) 412-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BANNER BAYWOOD MEDICAL CENTER",
+      "address": "6644 EAST BAYWOOD AVENUE",
+      "city": "MESA",
+      "state": "AZ",
+      "zip": "85206",
+      "phone": "(480) 321-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BANNER HEART HOSPITAL",
+      "address": "6750 EAST BAYWOOD AVENUE",
+      "city": "MESA",
+      "state": "AZ",
+      "zip": "85206",
+      "phone": "(480) 854-5050",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ARIZONA SPINE AND JOINT HOSPITAL",
+      "address": "4620 EAST BASELINE ROAD",
+      "city": "MESA",
+      "state": "AZ",
+      "zip": "85206",
+      "phone": "(480) 832-4770",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HONORHEALTH MOUNTAIN VISTA MEDICAL CENTER",
+      "address": "1301 SOUTH CRISMON ROAD",
+      "city": "MESA",
+      "state": "AZ",
+      "zip": "85209",
+      "phone": "(480) 358-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DIGNITY HEALTH ARIZONA GENERAL HOSPITAL",
+      "address": "9130 EAST ELLIOT ROAD",
+      "city": "MESA",
+      "state": "AZ",
+      "zip": "85212",
+      "phone": "(480) 410-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AGAVE RIDGE BEHAVIORAL HOSPITAL",
+      "address": "3322 SOUTH ELLSWORTH ROAD",
+      "city": "MESA",
+      "state": "AZ",
+      "zip": "85212",
+      "phone": "(615) 861-6000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NOGALES": [
+    {
+      "name": "HOLY CROSS HOSPITAL",
+      "address": "1171 WEST TARGET RANGE ROAD",
+      "city": "NOGALES",
+      "state": "AZ",
+      "zip": "85621",
+      "phone": "(520) 285-3000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ORO VALLEY": [
+    {
+      "name": "ORO VALLEY HOSPITAL",
+      "address": "1551 EAST TANGERINE ROAD",
+      "city": "ORO VALLEY",
+      "state": "AZ",
+      "zip": "85755",
+      "phone": "(520) 901-3500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAGE": [
+    {
+      "name": "PAGE HOSPITAL",
+      "address": "501 NORTH NAVAJO DRIVE",
+      "city": "PAGE",
+      "state": "AZ",
+      "zip": "86040",
+      "phone": "(928) 645-2424",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARKER": [
+    {
+      "name": "PARKER INDIAN HEALTH CENTER",
+      "address": "12033 AGENCY ROAD",
+      "city": "PARKER",
+      "state": "AZ",
+      "zip": "85344",
+      "phone": "(928) 669-2137",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LA PAZ REGIONAL HOSPITAL",
+      "address": "1200 WEST MOHAVE ROAD",
+      "city": "PARKER",
+      "state": "AZ",
+      "zip": "85344",
+      "phone": "(928) 669-9201",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAYSON": [
+    {
+      "name": "BANNER PAYSON MEDICAL CENTER",
+      "address": "807 SOUTH PONDEROSA DRIVE",
+      "city": "PAYSON",
+      "state": "AZ",
+      "zip": "85541",
+      "phone": "(928) 474-3222",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PERIDOT": [
+    {
+      "name": "SAN CARLOS APACHE HEALTHCARE CORPORATION",
+      "address": "103 MEDICINE WAY ROAD",
+      "city": "PERIDOT",
+      "state": "AZ",
+      "zip": "85542",
+      "phone": "(928) 475-1200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PHOENIX": [
+    {
+      "name": "BANNER - UNIVERSITY MEDICAL CENTER PHOENIX",
+      "address": "1111 EAST MCDOWELL ROAD",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85006",
+      "phone": "(602) 839-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HONOR HEALTH JOHN C. LINCOLN MEDICAL CENTER",
+      "address": "250 EAST DUNLAP AVENUE",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85020",
+      "phone": "(602) 943-2381",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VALLEYWISE HEALTH MEDICAL CENTER",
+      "address": "2601 EAST ROOSEVELT STREET",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85008",
+      "phone": "(602) 344-5011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST JOSEPHS HOSPITAL AND MEDICAL CENTER",
+      "address": "350 WEST THOMAS ROAD",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85013",
+      "phone": "(602) 406-8225",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ABRAZO CENTRAL CAMPUS",
+      "address": "2000 WEST BETHANY HOME ROAD",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85015",
+      "phone": "(602) 249-0212",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HONORHEALTH TEMPE MEDICAL CENTER",
+      "address": "1800 EAST VAN BUREN STREET",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85006",
+      "phone": "(602) 251-8156",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PHOENIX INDIAN MEDICAL CENTER",
+      "address": "4212 NORTH 16TH STREET",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85016",
+      "phone": "(602) 263-1200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ABRAZO SCOTTSDALE CAMPUS",
+      "address": "3929 EAST BELL ROAD",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85032",
+      "phone": "(602) 923-5609",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HONORHEALTH DEER VALLEY MEDICAL CENTER",
+      "address": "19829 NORTH 27TH AVENUE",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85027",
+      "phone": "(623) 879-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MAYO CLINIC HOSPITAL",
+      "address": "5777 EAST MAYO BOULEVARD",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85054",
+      "phone": "(480) 342-4201",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE CORE INSTITUTE SPECIALTY HOSP",
+      "address": "6501 NORTH 19TH AVENUE",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85015",
+      "phone": "(602) 795-6020",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ARIZONA ORTHOPEDIC AND SURGICAL SPECIALTY HOSPITAL",
+      "address": "750 NORTH 40TH STREET",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85008",
+      "phone": "(480) 603-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BANNER ESTRELLA MEDICAL CENTER",
+      "address": "9201 WEST THOMAS ROAD",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85037",
+      "phone": "(623) 327-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PHOENIX VA MEDICAL CENTER",
+      "address": "650 E. INDIAN SCHOOL ROAD",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85012",
+      "phone": "(602) 222-6444",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HONORHEALTH SONORAN CROSSING MEDICAL CENTER",
+      "address": "33400 NORTH 32ND AVENUE",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85085",
+      "phone": "(480) 882-4327",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PHOENIX CHILDREN'S HOSPITAL",
+      "address": "1919 EAST THOMAS ROAD",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85016",
+      "phone": "(602) 933-1000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST. LUKE'S BEHAVIORAL HOSPITAL, LP",
+      "address": "1800 EAST VAN BUREN",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85006",
+      "phone": "(602) 251-8535",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HAVEN BEHAVIORAL HOSPITAL OF PHOENIX",
+      "address": "1201 SOUTH 7TH AVENUE, SUITE 200",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85007",
+      "phone": "(623) 236-2000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ARIZONA STATE HOSPITAL",
+      "address": "2500 EAST VAN BUREN STREET",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85008",
+      "phone": "(602) 220-6000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VALLEY HOSPITAL",
+      "address": "3550 EAST PINCHOT AVENUE",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85018",
+      "phone": "(602) 952-3900",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "QUAIL RUN BEHAVIORAL HEALTH",
+      "address": "2545 WEST QUAIL AVENUE",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85027",
+      "phone": "(602) 455-5700",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PHOENIX MEDICAL PSYCHIATRIC HOSPITAL, LLC",
+      "address": "1346 EAST MCDOWELL ROAD",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85006",
+      "phone": "(833) 312-0320",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POLACCA": [
+    {
+      "name": "HOPI HEALTH CARE CENTER",
+      "address": "HIGHWAY 264, MILEPOST 388",
+      "city": "POLACCA",
+      "state": "AZ",
+      "zip": "86042",
+      "phone": "(928) 737-6000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRESCOTT": [
+    {
+      "name": "YAVAPAI REGIONAL MEDICAL CENTER",
+      "address": "1003 WILLOW CREEK ROAD",
+      "city": "PRESCOTT",
+      "state": "AZ",
+      "zip": "86301",
+      "phone": "(928) 445-2700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA NORTHERN ARIZONA HEALTHCARE SYSTEM",
+      "address": "500 HIGHWAY 89 NORTH",
+      "city": "PRESCOTT",
+      "state": "AZ",
+      "zip": "86313",
+      "phone": "(928) 445-4860",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE HEALING PLACE",
+      "address": "181 WHIPPLE ST",
+      "city": "PRESCOTT",
+      "state": "AZ",
+      "zip": "86301",
+      "phone": "(928) 445-5211",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "QUEEN CREEK": [
+    {
+      "name": "BANNER IRONWOOD MEDICAL CENTER",
+      "address": "37000 NORTH GANTZEL ROAD",
+      "city": "QUEEN CREEK",
+      "state": "AZ",
+      "zip": "85140",
+      "phone": "(480) 394-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SACATON": [
+    {
+      "name": "HUHU KAM MEMORIAL HOSPITAL",
+      "address": "483 WEST SEED FARM ROAD",
+      "city": "SACATON",
+      "state": "AZ",
+      "zip": "85147",
+      "phone": "(520) 562-3321",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAFFORD": [
+    {
+      "name": "MT. GRAHAM REGIONAL MEDICAL CENTER",
+      "address": "1600 SOUTH 20TH AVENUE",
+      "city": "SAFFORD",
+      "state": "AZ",
+      "zip": "85546",
+      "phone": "(928) 348-4000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAHUARITA": [
+    {
+      "name": "NORTHWEST MEDICAL CENTER SAHUARITA",
+      "address": "16260 SOUTH RANCHO SAHUARITA BOULEVARD",
+      "city": "SAHUARITA",
+      "state": "AZ",
+      "zip": "85629",
+      "phone": "(520) 416-7100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SCOTTSDALE": [
+    {
+      "name": "HONORHEALTH SCOTTSDALE OSBORN MEDICAL CENTER",
+      "address": "7400 EAST OSBORN ROAD",
+      "city": "SCOTTSDALE",
+      "state": "AZ",
+      "zip": "85251",
+      "phone": "(480) 882-4004",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HONORHEALTH SCOTTSDALE SHEA MEDICAL CENTER",
+      "address": "9003 EAST SHEA BOULEVARD",
+      "city": "SCOTTSDALE",
+      "state": "AZ",
+      "zip": "85260",
+      "phone": "(480) 323-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HONORHEALTH SCOTTSDALE THOMPSON PEAK MED CTR",
+      "address": "7400 EAST THOMPSON PEAK PARKWAY",
+      "city": "SCOTTSDALE",
+      "state": "AZ",
+      "zip": "85255",
+      "phone": "(480) 324-7001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BANNER BEHAVIORAL HEALTH HOSPITAL",
+      "address": "7575 EAST EARLL DRIVE",
+      "city": "SCOTTSDALE",
+      "state": "AZ",
+      "zip": "85251",
+      "phone": "(480) 448-7500",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VIA LINDA BEHAVIORAL HOSPITAL",
+      "address": "9160 EAST HORSESHOE RD",
+      "city": "SCOTTSDALE",
+      "state": "AZ",
+      "zip": "85258",
+      "phone": "(480) 476-7000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SELLS": [
+    {
+      "name": "SELLS HOSPITAL",
+      "address": "HIGHWAY 86, AT TOPAWA ROAD",
+      "city": "SELLS",
+      "state": "AZ",
+      "zip": "85634",
+      "phone": "(520) 362-7003",
+      "type": "Acute Care Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHOW LOW": [
+    {
+      "name": "SUMMIT HEALTHCARE REGIONAL MEDICAL CENTER",
+      "address": "2200 EAST SHOW LOW LAKE ROAD",
+      "city": "SHOW LOW",
+      "state": "AZ",
+      "zip": "85901",
+      "phone": "(928) 537-4375",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SIERRA VISTA": [
+    {
+      "name": "CANYON VISTA MEDICAL CENTER",
+      "address": "5700 EAST HIGHWAY 90",
+      "city": "SIERRA VISTA",
+      "state": "AZ",
+      "zip": "85635",
+      "phone": "(520) 263-2220",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPRINGERVILLE": [
+    {
+      "name": "WHITE MOUNTAIN REGIONAL MEDICAL CENTER",
+      "address": "118 SOUTH MOUNTAIN AVENUE",
+      "city": "SPRINGERVILLE",
+      "state": "AZ",
+      "zip": "85938",
+      "phone": "(928) 333-4368",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUN CITY": [
+    {
+      "name": "BANNER BOSWELL MEDICAL CENTER",
+      "address": "13632 N 99TH AVE",
+      "city": "SUN CITY",
+      "state": "AZ",
+      "zip": "85351",
+      "phone": "(623) 832-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUN CITY WEST": [
+    {
+      "name": "BANNER DEL E. WEBB MEDICAL CENTER",
+      "address": "14502 WEST MEEKER BOULEVARD",
+      "city": "SUN CITY WEST",
+      "state": "AZ",
+      "zip": "85375",
+      "phone": "(623) 524-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SURPRISE": [
+    {
+      "name": "DESTINY SPRINGS HEALTHCARE",
+      "address": "17300 NORTH DYSART ROAD",
+      "city": "SURPRISE",
+      "state": "AZ",
+      "zip": "85378",
+      "phone": "(623) 233-3000",
+      "type": "Psychiatric",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AVENIR BEHAVIORAL HEALTH CENTER",
+      "address": "16561 NORTH PARKVIEW PLACE",
+      "city": "SURPRISE",
+      "state": "AZ",
+      "zip": "85374",
+      "phone": "(480) 229-9894",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TEMPE": [
+    {
+      "name": "AURORA BEHAVIORAL HEALTHCARE-TEMPE",
+      "address": "6350 SOUTH MAPLE AVENUE",
+      "city": "TEMPE",
+      "state": "AZ",
+      "zip": "85283",
+      "phone": "(480) 345-5400",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TUBA CITY": [
+    {
+      "name": "TUBA CITY REGIONAL HEALTH CARE CORPORATION",
+      "address": "PO BOX 600",
+      "city": "TUBA CITY",
+      "state": "AZ",
+      "zip": "86045",
+      "phone": "(928) 283-2501",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TUCSON": [
+    {
+      "name": "TUCSON MEDICAL CENTER",
+      "address": "5301 EAST GRANT ROAD",
+      "city": "TUCSON",
+      "state": "AZ",
+      "zip": "85712",
+      "phone": "(520) 324-1399",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST. MARY'S HOSPITAL",
+      "address": "1601 WEST ST MARY'S ROAD",
+      "city": "TUCSON",
+      "state": "AZ",
+      "zip": "85745",
+      "phone": "(520) 872-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST JOSEPH'S HOSPITAL",
+      "address": "350 NORTH WILMOT ROAD",
+      "city": "TUCSON",
+      "state": "AZ",
+      "zip": "85711",
+      "phone": "(520) 873-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BANNER - UNIVERSITY MEDICAL CENTER TUCSON CAMPUS",
+      "address": "1625 NORTH CAMPBELL AVENUE",
+      "city": "TUCSON",
+      "state": "AZ",
+      "zip": "85719",
+      "phone": "(520) 874-4189",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTHWEST MEDICAL CENTER",
+      "address": "6200 NORTH LA CHOLLA BOULEVARD",
+      "city": "TUCSON",
+      "state": "AZ",
+      "zip": "85741",
+      "phone": "(520) 469-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BANNER-UNIVERSITY MEDICAL CENTER SOUTH CAMPUS",
+      "address": "2800 EAST AJO WAY",
+      "city": "TUCSON",
+      "state": "AZ",
+      "zip": "85713",
+      "phone": "(520) 874-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA S. ARIZONA HEALTHCARE SYSTEM",
+      "address": "3601 SOUTH SIXTH AVENUE",
+      "city": "TUCSON",
+      "state": "AZ",
+      "zip": "85723",
+      "phone": "(520) 629-1821",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SONORA BEHAVIORAL HEALTH HOSPITAL",
+      "address": "6050 NORTH CORONA ROAD",
+      "city": "TUCSON",
+      "state": "AZ",
+      "zip": "85704",
+      "phone": "(520) 469-8700",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PALO VERDE BEHAVIORAL HEALTH",
+      "address": "2695 NORTH CRAYCROFT ROAD",
+      "city": "TUCSON",
+      "state": "AZ",
+      "zip": "85712",
+      "phone": "(520) 322-2888",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EL DORADO SPRINGS",
+      "address": "1400 NORTH WILMOT ROAD",
+      "city": "TUCSON",
+      "state": "AZ",
+      "zip": "85712",
+      "phone": "(520) 222-8268",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHITERIVER": [
+    {
+      "name": "WHITERIVER PHS INDIAN HOSPITAL",
+      "address": "200 WEST HOSPITAL DRIVE  (PO BOX 860)",
+      "city": "WHITERIVER",
+      "state": "AZ",
+      "zip": "85941",
+      "phone": "(928) 338-4911",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WICKENBURG": [
+    {
+      "name": "WICKENBURG COMMUNITY HOSPITAL",
+      "address": "520 ROSE LANE",
+      "city": "WICKENBURG",
+      "state": "AZ",
+      "zip": "85390",
+      "phone": "(928) 684-5421",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILLCOX": [
+    {
+      "name": "NORTHERN COCHISE COMMUNITY HOSPITAL, INC.",
+      "address": "901 WEST REX ALLEN DRIVE",
+      "city": "WILLCOX",
+      "state": "AZ",
+      "zip": "85643",
+      "phone": "(520) 384-3541",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINSLOW": [
+    {
+      "name": "LITTLE COLORADO MEDICAL CENTER",
+      "address": "1501 NORTH WILLIAMSON AVENUE",
+      "city": "WINSLOW",
+      "state": "AZ",
+      "zip": "86047",
+      "phone": "(928) 289-4691",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YUMA": [
+    {
+      "name": "YUMA REGIONAL MEDICAL CENTER",
+      "address": "2400 SOUTH AVENUE A",
+      "city": "YUMA",
+      "state": "AZ",
+      "zip": "85364",
+      "phone": "(928) 336-7600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EXCEPTIONAL COMMUNITY HOSPITAL YUMA",
+      "address": "2648 SOUTH ARABY RD",
+      "city": "YUMA",
+      "state": "AZ",
+      "zip": "85365",
+      "phone": "(469) 341-7800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

@@ -1,0 +1,1381 @@
+{
+  "ABINGDON": [
+    {
+      "name": "JOHNSTON MEMORIAL HOSPITAL",
+      "address": "16000 JOHNSTON MEMORIAL DRIVE",
+      "city": "ABINGDON",
+      "state": "VA",
+      "zip": "24211",
+      "phone": "(276) 258-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALEXANDRIA": [
+    {
+      "name": "INOVA ALEXANDRIA HOSPITAL",
+      "address": "4320 SEMINARY RD",
+      "city": "ALEXANDRIA",
+      "state": "VA",
+      "zip": "22304",
+      "phone": "(703) 504-3167",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "INOVA MOUNT VERNON HOSPITAL",
+      "address": "2501 PARKERS LANE",
+      "city": "ALEXANDRIA",
+      "state": "VA",
+      "zip": "22306",
+      "phone": "(703) 664-7105",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARLINGTON": [
+    {
+      "name": "VIRGINIA HOSPITAL CENTER",
+      "address": "1701 NORTH GEORGE MASON DRIVE",
+      "city": "ARLINGTON",
+      "state": "VA",
+      "zip": "22205",
+      "phone": "(703) 558-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEDFORD": [
+    {
+      "name": "CENTRA BEDFORD MEMORIAL HOSPITAL",
+      "address": "1613 OAKWOOD STREET",
+      "city": "BEDFORD",
+      "state": "VA",
+      "zip": "24523",
+      "phone": "(540) 586-2441",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BIG STONE GAP": [
+    {
+      "name": "LONESOME PINE HOSPITAL",
+      "address": "1990 HOLTON AVENUE EAST",
+      "city": "BIG STONE GAP",
+      "state": "VA",
+      "zip": "24219",
+      "phone": "(276) 523-3111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLACKSBURG": [
+    {
+      "name": "LEWISGALE HOSPITAL MONTGOMERY",
+      "address": "3700 SOUTH MAIN STREET",
+      "city": "BLACKSBURG",
+      "state": "VA",
+      "zip": "24060",
+      "phone": "(540) 951-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CATAWBA": [
+    {
+      "name": "CATAWBA HOSPITAL",
+      "address": "5525 CATAWBA HOSPITAL DRIVE",
+      "city": "CATAWBA",
+      "state": "VA",
+      "zip": "24070",
+      "phone": "(540) 375-4200",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHARLOTTESVILLE": [
+    {
+      "name": "UNIVERSITY OF VIRGINIA MEDICAL CENTER",
+      "address": "1215 LEE STREET",
+      "city": "CHARLOTTESVILLE",
+      "state": "VA",
+      "zip": "22908",
+      "phone": "(434) 924-0000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SENTARA MARTHA JEFFERSON HOSPITAL",
+      "address": "500 MARTHA JEFFERSON DRIVE",
+      "city": "CHARLOTTESVILLE",
+      "state": "VA",
+      "zip": "22911",
+      "phone": "(434) 654-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHESAPEAKE": [
+    {
+      "name": "CHESAPEAKE GENERAL HOSPITAL",
+      "address": "736 BATTLEFIELD BLVD, NORTH",
+      "city": "CHESAPEAKE",
+      "state": "VA",
+      "zip": "23320",
+      "phone": "(757) 312-8121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHRISTIANSBURG": [
+    {
+      "name": "CARILION NEW RIVER VALLEY MEDICAL CENTER",
+      "address": "2900 LAMB CIRCLE",
+      "city": "CHRISTIANSBURG",
+      "state": "VA",
+      "zip": "24073",
+      "phone": "(540) 731-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLINTWOOD": [
+    {
+      "name": "DICKENSON COMMUNITY HOSPITAL",
+      "address": "312 HOSPITAL DRIVE",
+      "city": "CLINTWOOD",
+      "state": "VA",
+      "zip": "24228",
+      "phone": "(276) 926-0300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CULPEPER": [
+    {
+      "name": "UVA HEALTH CULPEPER MEDICAL CENTER",
+      "address": "501 SUNSET LANE",
+      "city": "CULPEPER",
+      "state": "VA",
+      "zip": "22701",
+      "phone": "(703) 829-4300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DANVILLE": [
+    {
+      "name": "SOVAH HEALTH DANVILLE",
+      "address": "142 SOUTH MAIN STREET",
+      "city": "DANVILLE",
+      "state": "VA",
+      "zip": "24541",
+      "phone": "(434) 799-2100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHERN VIRGINIA MENTAL HEALTH INSTITUTE",
+      "address": "382 TAYLOR DRIVE",
+      "city": "DANVILLE",
+      "state": "VA",
+      "zip": "24541",
+      "phone": "(434) 799-6220",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DULLES": [
+    {
+      "name": "STONESPRINGS HOSPITAL CENTER",
+      "address": "24440 STONE SPRINGS BOULEVARD",
+      "city": "DULLES",
+      "state": "VA",
+      "zip": "20166",
+      "phone": "(571) 349-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EMPORIA": [
+    {
+      "name": "BON SECOURS SOUTHERN VIRGINIA MEDICAL CENTER",
+      "address": "727 NORTH MAIN STREET",
+      "city": "EMPORIA",
+      "state": "VA",
+      "zip": "23847",
+      "phone": "(434) 348-4400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAIRFAX": [
+    {
+      "name": "INOVA FAIR OAKS HOSPITAL",
+      "address": "3600 JOSEPH SIEWICK DRIVE",
+      "city": "FAIRFAX",
+      "state": "VA",
+      "zip": "22033",
+      "phone": "(703) 391-4170",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FALLS CHURCH": [
+    {
+      "name": "INOVA FAIRFAX HOSPITAL",
+      "address": "3300 GALLOWS ROAD",
+      "city": "FALLS CHURCH",
+      "state": "VA",
+      "zip": "22042",
+      "phone": "(703) 698-1110",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTHERN VIRGINIA MENTAL HEALTH INSTI",
+      "address": "3302 GALLOWS RD",
+      "city": "FALLS CHURCH",
+      "state": "VA",
+      "zip": "22042",
+      "phone": "(703) 207-7100",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DOMINION HOSPITAL",
+      "address": "2960 SLEEPY HOLLOW ROAD",
+      "city": "FALLS CHURCH",
+      "state": "VA",
+      "zip": "22044",
+      "phone": "(703) 536-2000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FARMVILLE": [
+    {
+      "name": "SOUTHSIDE COMMUNITY HOSPITAL, INC",
+      "address": "800 OAK STREET",
+      "city": "FARMVILLE",
+      "state": "VA",
+      "zip": "23901",
+      "phone": "(434) 392-8811",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FISHERSVILLE": [
+    {
+      "name": "AUGUSTA HEALTH",
+      "address": "78 MEDICAL CENTER DRIVE",
+      "city": "FISHERSVILLE",
+      "state": "VA",
+      "zip": "22939",
+      "phone": "(540) 332-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRANKLIN": [
+    {
+      "name": "BON SECOURS SOUTHAMPTON MEMORIAL HOSPITAL",
+      "address": "100 FAIRVIEW DRIVE - PO BOX 817",
+      "city": "FRANKLIN",
+      "state": "VA",
+      "zip": "23851",
+      "phone": "(757) 569-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FREDERICKSBURG": [
+    {
+      "name": "MARY WASHINGTON HOSPITAL",
+      "address": "1001 SAM PERRY BOULEVARD",
+      "city": "FREDERICKSBURG",
+      "state": "VA",
+      "zip": "22401",
+      "phone": "(540) 741-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SPOTSYLVANIA REGIONAL MEDICAL CENTER",
+      "address": "4600 SPOTSYLVANIA PARKWAY",
+      "city": "FREDERICKSBURG",
+      "state": "VA",
+      "zip": "22408",
+      "phone": "(540) 498-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRONT ROYAL": [
+    {
+      "name": "WARREN MEMORIAL HOSPITAL",
+      "address": "351 VALLEY HEALTH WAY",
+      "city": "FRONT ROYAL",
+      "state": "VA",
+      "zip": "22630",
+      "phone": "(540) 636-0299",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Fort Belvoir": [
+    {
+      "name": "Fort Belvoir Community Hospital",
+      "address": "9300 DeWitt Loop",
+      "city": "Fort Belvoir",
+      "state": "VA",
+      "zip": "22060",
+      "phone": "(571) 231-3224",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GALAX": [
+    {
+      "name": "TWIN COUNTY REGIONAL HOSPITAL",
+      "address": "200 HOSPITAL DRIVE",
+      "city": "GALAX",
+      "state": "VA",
+      "zip": "24333",
+      "phone": "(276) 236-1650",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLOUCESTER": [
+    {
+      "name": "RIVERSIDE WALTER REED HOSPITAL",
+      "address": "7519 HOSPITAL ROAD",
+      "city": "GLOUCESTER",
+      "state": "VA",
+      "zip": "23061",
+      "phone": "(804) 693-8800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRUNDY": [
+    {
+      "name": "BUCHANAN GENERAL HOSPITAL",
+      "address": "1535 SLATE CREEK ROAD",
+      "city": "GRUNDY",
+      "state": "VA",
+      "zip": "24614",
+      "phone": "(276) 935-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAMPTON": [
+    {
+      "name": "HAMPTON VA MEDICAL CENTER",
+      "address": "100 EMANCIPATION DRIVE",
+      "city": "HAMPTON",
+      "state": "VA",
+      "zip": "23667",
+      "phone": "(757) 722-9961",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SENTARA CAREPLEX HOSPITAL",
+      "address": "3000 COLISEUM DRIVE",
+      "city": "HAMPTON",
+      "state": "VA",
+      "zip": "23666",
+      "phone": "(757) 827-2545",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARRISONBURG": [
+    {
+      "name": "SENTARA RMH MEDICAL CENTER",
+      "address": "2010 HEALTH CAMPUS DRIVE",
+      "city": "HARRISONBURG",
+      "state": "VA",
+      "zip": "22801",
+      "phone": "(540) 689-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAYMARKET": [
+    {
+      "name": "UVA HEALTH HAYMARKET MEDICAL CENTER",
+      "address": "15225 HEALTHCOTE BOULEVARD",
+      "city": "HAYMARKET",
+      "state": "VA",
+      "zip": "20169",
+      "phone": "(571) 284-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOPEWELL": [
+    {
+      "name": "JOHN RANDOLPH MEDICAL CENTER",
+      "address": "411 WEST RANDOLPH ROAD",
+      "city": "HOPEWELL",
+      "state": "VA",
+      "zip": "23860",
+      "phone": "(804) 541-1600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOT SPRINGS": [
+    {
+      "name": "BATH COMMUNITY HOSPITAL",
+      "address": "106 PARK DRIVE- PO DRAWER Z",
+      "city": "HOT SPRINGS",
+      "state": "VA",
+      "zip": "24445",
+      "phone": "(540) 839-7000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KILMARNOCK": [
+    {
+      "name": "RAPPAHANNOCK GENERAL HOSPITAL",
+      "address": "101 HARRIS ROAD",
+      "city": "KILMARNOCK",
+      "state": "VA",
+      "zip": "22482",
+      "phone": "(804) 435-8000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEBANON": [
+    {
+      "name": "RUSSELL COUNTY HOSPITAL",
+      "address": "58 CARROLL STREET",
+      "city": "LEBANON",
+      "state": "VA",
+      "zip": "24266",
+      "phone": "(276) 883-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEESBURG": [
+    {
+      "name": "INOVA LOUDOUN HOSPITAL",
+      "address": "44045 RIVERSIDE PARKWAY",
+      "city": "LEESBURG",
+      "state": "VA",
+      "zip": "20176",
+      "phone": "(703) 858-6600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEXINGTON": [
+    {
+      "name": "CARILION STONEWALL JACKSON HOSPITAL",
+      "address": "1 HEALTH CIRCLE",
+      "city": "LEXINGTON",
+      "state": "VA",
+      "zip": "24450",
+      "phone": "(540) 458-3503",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOW MOOR": [
+    {
+      "name": "LEWISGALE HOSPITAL ALLEGHANY",
+      "address": "ONE ARH LANE - PO BOX 7",
+      "city": "LOW MOOR",
+      "state": "VA",
+      "zip": "24457",
+      "phone": "(540) 862-6200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LURAY": [
+    {
+      "name": "PAGE MEMORIAL HOSPITAL, INC",
+      "address": "200 MEMORIAL DRIVE",
+      "city": "LURAY",
+      "state": "VA",
+      "zip": "22835",
+      "phone": "(540) 743-4561",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LYNCHBURG": [
+    {
+      "name": "CENTRA HEALTH -  LYNCHBURG GEN HOSPITAL",
+      "address": "1901 TATE SPRINGS ROAD",
+      "city": "LYNCHBURG",
+      "state": "VA",
+      "zip": "24501",
+      "phone": "(434) 200-4789",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANASSAS": [
+    {
+      "name": "NOVANT PRINCE WILLIAM MEDICAL CENTER",
+      "address": "8700 SUDLEY RD",
+      "city": "MANASSAS",
+      "state": "VA",
+      "zip": "20110",
+      "phone": "(703) 369-8736",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARION": [
+    {
+      "name": "SMYTH COUNTY COMMUNITY HOSPITAL",
+      "address": "245 MEDICAL PARK DRIVE",
+      "city": "MARION",
+      "state": "VA",
+      "zip": "24354",
+      "phone": "(276) 378-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHWESTERN VIRGINIA MENTAL HEALTH INSTITUTE",
+      "address": "340 BAGLEY CIRCLE",
+      "city": "MARION",
+      "state": "VA",
+      "zip": "24354",
+      "phone": "(276) 706-3300",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MECHANICSVILLE": [
+    {
+      "name": "BON SECOURS MEMORIAL REGIONAL MEDICAL CENTER",
+      "address": "8260 ATLEE ROAD",
+      "city": "MECHANICSVILLE",
+      "state": "VA",
+      "zip": "23116",
+      "phone": "(804) 764-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIDLOTHIAN": [
+    {
+      "name": "BON SECOURS ST FRANCIS MEDICAL CENTER",
+      "address": "13710 ST FRANCIS BOULEVARD",
+      "city": "MIDLOTHIAN",
+      "state": "VA",
+      "zip": "23114",
+      "phone": "(804) 594-7400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW KENT": [
+    {
+      "name": "CUMBERLAND HOSPITAL LLC",
+      "address": "9407 CUMBERLAND ROAD",
+      "city": "NEW KENT",
+      "state": "VA",
+      "zip": "23124",
+      "phone": "(804) 966-2242",
+      "type": "Childrens",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWPORT NEWS": [
+    {
+      "name": "MARY IMMACULATE HOSPITAL",
+      "address": "2 BERNARDINE DRIVE",
+      "city": "NEWPORT NEWS",
+      "state": "VA",
+      "zip": "23602",
+      "phone": "(757) 886-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIVERSIDE REGIONAL MEDICAL CENTER",
+      "address": "500 J CLYDE MORRIS BLVD",
+      "city": "NEWPORT NEWS",
+      "state": "VA",
+      "zip": "23601",
+      "phone": "(757) 594-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORFOLK": [
+    {
+      "name": "SENTARA NORFOLK GENERAL HOSPITAL",
+      "address": "600 GRESHAM DR",
+      "city": "NORFOLK",
+      "state": "VA",
+      "zip": "23507",
+      "phone": "(757) 388-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SENTARA LEIGH HOSPITAL",
+      "address": "830 KEMPSVILLE ROAD",
+      "city": "NORFOLK",
+      "state": "VA",
+      "zip": "23502",
+      "phone": "(757) 261-6700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDRENS HOSPITAL OF THE KINGS DAUGHTERS INC",
+      "address": "601 CHILDREN'S LANE",
+      "city": "NORFOLK",
+      "state": "VA",
+      "zip": "23507",
+      "phone": "(757) 668-9647",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ONANCOCK": [
+    {
+      "name": "RIVERSIDE SHORE MEMORIAL HOSPITAL",
+      "address": "20480 MARKET STREET",
+      "city": "ONANCOCK",
+      "state": "VA",
+      "zip": "23417",
+      "phone": "(757) 414-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PEARISBURG": [
+    {
+      "name": "CARILION GILES COMMUNITY HOSPITAL",
+      "address": "159 HARTLEY WAY",
+      "city": "PEARISBURG",
+      "state": "VA",
+      "zip": "24134",
+      "phone": "(540) 921-6000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PENNINGTON GAP": [
+    {
+      "name": "LEE COUNTY COMMUNITY HOSPITAL",
+      "address": "127 HEALTH CARE DRIVE",
+      "city": "PENNINGTON GAP",
+      "state": "VA",
+      "zip": "24277",
+      "phone": "(276) 299-5000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PETERSBURG": [
+    {
+      "name": "BON SECOURS SOUTHSIDE MEDICAL CENTER",
+      "address": "200 MEDICAL PARK BOULEVARD",
+      "city": "PETERSBURG",
+      "state": "VA",
+      "zip": "23805",
+      "phone": "(804) 765-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HIRAM W DAVIS MEDICAL CENTER",
+      "address": "P O BOX 4030",
+      "city": "PETERSBURG",
+      "state": "VA",
+      "zip": "23803",
+      "phone": "(804) 524-7112",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "POPLAR SPRINGS HOSPITAL",
+      "address": "350 POPLAR DRIVE  PO BOX 3060",
+      "city": "PETERSBURG",
+      "state": "VA",
+      "zip": "23805",
+      "phone": "(804) 733-6874",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORTSMOUTH": [
+    {
+      "name": "BON SECOURS MARYVIEW MEDICAL CENTER",
+      "address": "3636 HIGH STREET",
+      "city": "PORTSMOUTH",
+      "state": "VA",
+      "zip": "23707",
+      "phone": "(757) 398-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PULASKI": [
+    {
+      "name": "LEWISGALE HOSPITAL PULASKI",
+      "address": "2400 LEE HIGHWAY",
+      "city": "PULASKI",
+      "state": "VA",
+      "zip": "24301",
+      "phone": "(540) 994-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Portsmouth": [
+    {
+      "name": "NMC Portsmouth",
+      "address": "620 John Paul Jones Cir",
+      "city": "Portsmouth",
+      "state": "VA",
+      "zip": "23708",
+      "phone": "(757) 953-5000",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RESTON": [
+    {
+      "name": "RESTON HOSPITAL CENTER",
+      "address": "1850 TOWN CENTER PARKWAY",
+      "city": "RESTON",
+      "state": "VA",
+      "zip": "20190",
+      "phone": "(703) 689-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RICHLANDS": [
+    {
+      "name": "CLINCH VALLEY MEDICAL CENTER",
+      "address": "6801 Governor GC Perry Highway",
+      "city": "RICHLANDS",
+      "state": "VA",
+      "zip": "24641",
+      "phone": "(276) 596-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RICHMOND": [
+    {
+      "name": "MEDICAL COLLEGE OF VIRGINIA HOSPITALS",
+      "address": "1250 EAST MARSHALL STREET",
+      "city": "RICHMOND",
+      "state": "VA",
+      "zip": "23298",
+      "phone": "(804) 828-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BON SECOURS ST MARYS HOSPITAL",
+      "address": "5801 BREMO RD",
+      "city": "RICHMOND",
+      "state": "VA",
+      "zip": "23226",
+      "phone": "(804) 285-2011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BON SECOURS RICHMOND COMMUNITY HOSPITAL",
+      "address": "1500 N. 28TH STREET",
+      "city": "RICHMOND",
+      "state": "VA",
+      "zip": "23223",
+      "phone": "(804) 225-1701",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RICHMOND VA MEDICAL CENTER",
+      "address": "1201 BROAD ROCK BOULEVARD",
+      "city": "RICHMOND",
+      "state": "VA",
+      "zip": "23249",
+      "phone": "(804) 675-5000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CJW MEDICAL CENTER",
+      "address": "7101 JAHNKE ROAD",
+      "city": "RICHMOND",
+      "state": "VA",
+      "zip": "23225",
+      "phone": "(804) 483-0000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HENRICO DOCTORS' HOSPITAL",
+      "address": "1602 SKIPWITH ROAD",
+      "city": "RICHMOND",
+      "state": "VA",
+      "zip": "23229",
+      "phone": "(804) 289-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROANOKE": [
+    {
+      "name": "CARILION MEDICAL CENTER",
+      "address": "1906 BELLEVIEW AVENUE, SE",
+      "city": "ROANOKE",
+      "state": "VA",
+      "zip": "24014",
+      "phone": "(540) 981-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROCKY MOUNT": [
+    {
+      "name": "CARILION FRANKLIN MEMORIAL HOSPITAL",
+      "address": "180 FLOYD AVENUE",
+      "city": "ROCKY MOUNT",
+      "state": "VA",
+      "zip": "24151",
+      "phone": "(540) 483-5277",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALEM": [
+    {
+      "name": "LEWISGALE MEDICAL CENTER",
+      "address": "1900 ELECTRIC ROAD",
+      "city": "SALEM",
+      "state": "VA",
+      "zip": "24153",
+      "phone": "(540) 776-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SALEM VA MEDICAL CENTER",
+      "address": "1970 ROANOKE BOULEVARD",
+      "city": "SALEM",
+      "state": "VA",
+      "zip": "24153",
+      "phone": "(540) 982-2463",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTH BOSTON": [
+    {
+      "name": "SENTARA HALIFAX REGIONAL HOSPITAL",
+      "address": "2204 WILBORN AVENUE",
+      "city": "SOUTH BOSTON",
+      "state": "VA",
+      "zip": "24592",
+      "phone": "(434) 517-3100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTH HILL": [
+    {
+      "name": "COMMUNITY MEMORIAL HOSPITAL",
+      "address": "1755 NORTH MECKLENBURG AVENUE",
+      "city": "SOUTH HILL",
+      "state": "VA",
+      "zip": "23970",
+      "phone": "(434) 447-3151",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STAFFORD": [
+    {
+      "name": "STAFFORD HOSPITAL, LLC",
+      "address": "101 HOSPITAL CENTER BOULEVARD",
+      "city": "STAFFORD",
+      "state": "VA",
+      "zip": "22554",
+      "phone": "(540) 741-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STAUNTON": [
+    {
+      "name": "WESTERN STATE HOSPITAL",
+      "address": "1301 RICHMOND ROAD",
+      "city": "STAUNTON",
+      "state": "VA",
+      "zip": "24402",
+      "phone": "(540) 332-8000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUFFOLK": [
+    {
+      "name": "SENTARA OBICI HOSPITAL",
+      "address": "2800 GODWIN BOULEVARD",
+      "city": "SUFFOLK",
+      "state": "VA",
+      "zip": "23434",
+      "phone": "(757) 934-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAPPAHANNOCK": [
+    {
+      "name": "VCU HEALTH TAPPAHANNOCK HOSPITAL",
+      "address": "618 HOSPITAL ROAD",
+      "city": "TAPPAHANNOCK",
+      "state": "VA",
+      "zip": "22560",
+      "phone": "(804) 443-3311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAZEWELL": [
+    {
+      "name": "CARILION TAZEWELL COMMUNITY HOSPITAL",
+      "address": "388 BEN BOLT AVENUE",
+      "city": "TAZEWELL",
+      "state": "VA",
+      "zip": "24651",
+      "phone": "(276) 988-8700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VIRGINIA BEACH": [
+    {
+      "name": "SENTARA VIRGINIA BEACH GENERAL HOSPITAL",
+      "address": "1060 FIRST COLONIAL ROAD",
+      "city": "VIRGINIA BEACH",
+      "state": "VA",
+      "zip": "23454",
+      "phone": "(757) 395-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SENTARA PRINCESS ANNE HOSPITAL",
+      "address": "2025 GLENN MITCHELL DRIVE",
+      "city": "VIRGINIA BEACH",
+      "state": "VA",
+      "zip": "23456",
+      "phone": "(757) 507-1520",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VIRGINIA BEACH PSYCHIATRIC CENTER",
+      "address": "1100 FIRST COLONIAL ROAD",
+      "city": "VIRGINIA BEACH",
+      "state": "VA",
+      "zip": "23454",
+      "phone": "(757) 496-6000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WARRENTON": [
+    {
+      "name": "FAUQUIER HOSPITAL",
+      "address": "500 HOSPITAL DRIVE",
+      "city": "WARRENTON",
+      "state": "VA",
+      "zip": "20186",
+      "phone": "(540) 316-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILLIAMSBURG": [
+    {
+      "name": "SENTARA WILLIAMSBURG REGIONAL MEDICAL CENTER",
+      "address": "100 SENTARA CIRCLE",
+      "city": "WILLIAMSBURG",
+      "state": "VA",
+      "zip": "23185",
+      "phone": "(757) 984-8137",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIVERSIDE DOCTORS' HOSPITAL OF WILLIAMSBURG",
+      "address": "1500 COMMONWEALTH AVENUE",
+      "city": "WILLIAMSBURG",
+      "state": "VA",
+      "zip": "23185",
+      "phone": "(757) 585-2010",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE PAVILION AT WILLIAMSBURG PLACE",
+      "address": "5483 MOORETOWN ROAD",
+      "city": "WILLIAMSBURG",
+      "state": "VA",
+      "zip": "23188",
+      "phone": "(757) 941-6400",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINCHESTER": [
+    {
+      "name": "WINCHESTER MEDICAL CENTER",
+      "address": "1840 AMHERST ST",
+      "city": "WINCHESTER",
+      "state": "VA",
+      "zip": "22601",
+      "phone": "(540) 536-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOODBRIDGE": [
+    {
+      "name": "SENTARA NORTHERN VIRGINIA MEDICAL CENTER",
+      "address": "2300 OPITZ BOULEVARD",
+      "city": "WOODBRIDGE",
+      "state": "VA",
+      "zip": "22191",
+      "phone": "(703) 523-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOODSTOCK": [
+    {
+      "name": "SHENANDOAH MEMORIAL HOSPITAL",
+      "address": "759 SOUTH MAIN STREET",
+      "city": "WOODSTOCK",
+      "state": "VA",
+      "zip": "22664",
+      "phone": "(540) 459-1100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WYTHEVILLE": [
+    {
+      "name": "WYTHE COUNTY COMMUNITY HOSPITAL",
+      "address": "600 WEST RIDGE ROAD",
+      "city": "WYTHEVILLE",
+      "state": "VA",
+      "zip": "24382",
+      "phone": "(276) 228-0200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

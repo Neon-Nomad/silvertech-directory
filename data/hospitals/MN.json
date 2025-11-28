@@ -1,0 +1,2012 @@
+{
+  "ADA": [
+    {
+      "name": "ESSENTIA HEALTH ADA",
+      "address": "201 9TH STREET WEST",
+      "city": "ADA",
+      "state": "MN",
+      "zip": "56510",
+      "phone": "(218) 784-5000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AITKIN": [
+    {
+      "name": "RIVERWOOD HEALTHCARE CENTER",
+      "address": "200 BUNKER HILL DRIVE",
+      "city": "AITKIN",
+      "state": "MN",
+      "zip": "56431",
+      "phone": "(218) 927-5501",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALBERT LEA": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM - ALBERT LEA AND AUSTIN",
+      "address": "404 WEST FOUNTAIN STREET",
+      "city": "ALBERT LEA",
+      "state": "MN",
+      "zip": "56007",
+      "phone": "(507) 377-6490",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALEXANDRIA": [
+    {
+      "name": "ALOMERE HEALTH",
+      "address": "111 17TH AVENUE EAST",
+      "city": "ALEXANDRIA",
+      "state": "MN",
+      "zip": "56308",
+      "phone": "(320) 762-1511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMMUNITY BEHAVIORAL HEALTH HOSPITAL ALEXANDRIA",
+      "address": "1610 8TH AVENUE EAST",
+      "city": "ALEXANDRIA",
+      "state": "MN",
+      "zip": "56308",
+      "phone": "(320) 335-6201",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANNANDALE": [
+    {
+      "name": "COMMUNITY BEHAVIORAL HEALTH HOSPITAL ANNANDALE",
+      "address": "400 ANNANDALE BOULEVARD",
+      "city": "ANNANDALE",
+      "state": "MN",
+      "zip": "55302",
+      "phone": "(651) 259-3854",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANOKA": [
+    {
+      "name": "ANOKA METRO REGIONAL TREATMENT CENTER",
+      "address": "3301 7TH AVE NORTH",
+      "city": "ANOKA",
+      "state": "MN",
+      "zip": "55303",
+      "phone": "(651) 431-5003",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "APPLETON": [
+    {
+      "name": "APPLETON AREA HEALTH",
+      "address": "30 S BEHL ST",
+      "city": "APPLETON",
+      "state": "MN",
+      "zip": "56208",
+      "phone": "(320) 289-1580",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARLINGTON": [
+    {
+      "name": "RIDGEVIEW SIBLEY MEDICAL CENTER",
+      "address": "601 WEST CHANDLER",
+      "city": "ARLINGTON",
+      "state": "MN",
+      "zip": "55307",
+      "phone": "(507) 964-8415",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AURORA": [
+    {
+      "name": "ESSENTIA HEALTH NORTHERN PINES MEDICAL CENTER",
+      "address": "5211 HIGHWAY 110",
+      "city": "AURORA",
+      "state": "MN",
+      "zip": "55705",
+      "phone": "(218) 229-4222",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAGLEY": [
+    {
+      "name": "SANFORD BAGLEY MEDICAL CENTER",
+      "address": "203 4TH STREET NORTHWEST",
+      "city": "BAGLEY",
+      "state": "MN",
+      "zip": "56621",
+      "phone": "(218) 694-6501",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAUDETTE": [
+    {
+      "name": "LAKEWOOD HEALTH CENTER",
+      "address": "600 MAIN AVE S",
+      "city": "BAUDETTE",
+      "state": "MN",
+      "zip": "56623",
+      "phone": "(218) 634-2120",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAXTER": [
+    {
+      "name": "COMMUNITY BEHAVIORAL HEALTH HOSPITAL - BAXTER",
+      "address": "14241 GRAND OAKS DRIVE",
+      "city": "BAXTER",
+      "state": "MN",
+      "zip": "56425",
+      "phone": "(218) 316-3101",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEMIDJI": [
+    {
+      "name": "SANFORD BEMIDJI MEDICAL CENTER",
+      "address": "1300 ANNE ST NW",
+      "city": "BEMIDJI",
+      "state": "MN",
+      "zip": "56601",
+      "phone": "(218) 751-5430",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMMUNITY BEHAVIORAL HEALTH HOSPITAL - BEMIDJI",
+      "address": "800 BEMIDJI AVENUE NORTH",
+      "city": "BEMIDJI",
+      "state": "MN",
+      "zip": "56601",
+      "phone": "(218) 308-2400",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BENSON": [
+    {
+      "name": "CENTRACARE - BENSON",
+      "address": "1815 WISCONSIN AVENUE",
+      "city": "BENSON",
+      "state": "MN",
+      "zip": "56215",
+      "phone": "(320) 843-4232",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BIGFORK": [
+    {
+      "name": "BIGFORK VALLEY HOSPITAL",
+      "address": "258 PINE TREE DRIVE",
+      "city": "BIGFORK",
+      "state": "MN",
+      "zip": "56628",
+      "phone": "(218) 743-3177",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLUE EARTH": [
+    {
+      "name": "UNITED HOSPITAL DISTRICT",
+      "address": "515 SOUTH MOORE STREET",
+      "city": "BLUE EARTH",
+      "state": "MN",
+      "zip": "56013",
+      "phone": "(507) 526-3273",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRAINERD": [
+    {
+      "name": "ESSENTIA HEALTH ST JOSEPH'S MEDICAL CENTER",
+      "address": "523 NORTH 3RD STREET",
+      "city": "BRAINERD",
+      "state": "MN",
+      "zip": "56401",
+      "phone": "(218) 829-2861",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRECKENRIDGE": [
+    {
+      "name": "ST FRANCIS MEDICAL CENTER",
+      "address": "2400 ST FRANCIS DRIVE",
+      "city": "BRECKENRIDGE",
+      "state": "MN",
+      "zip": "56520",
+      "phone": "(218) 643-3000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BUFFALO": [
+    {
+      "name": "BUFFALO HOSPITAL",
+      "address": "303 CATLIN STREET",
+      "city": "BUFFALO",
+      "state": "MN",
+      "zip": "55313",
+      "phone": "(763) 682-1212",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURNSVILLE": [
+    {
+      "name": "M HEALTH FAIRVIEW RIDGES HOSPITAL",
+      "address": "201 EAST NICOLLET BOULEVARD",
+      "city": "BURNSVILLE",
+      "state": "MN",
+      "zip": "55337",
+      "phone": "(952) 892-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAMBRIDGE": [
+    {
+      "name": "CAMBRIDGE MEDICAL CENTER",
+      "address": "701 SOUTH DELLWOOD AVENUE",
+      "city": "CAMBRIDGE",
+      "state": "MN",
+      "zip": "55008",
+      "phone": "(763) 689-7700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CANBY": [
+    {
+      "name": "SANFORD CANBY MEDICAL CENTER",
+      "address": "112 ST OLAF AVENUE SOUTH",
+      "city": "CANBY",
+      "state": "MN",
+      "zip": "56220",
+      "phone": "(507) 223-7277",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CANNON FALLS": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM - CANNON FALLS",
+      "address": "32021 COUNTY 24 BOULEVARD",
+      "city": "CANNON FALLS",
+      "state": "MN",
+      "zip": "55009",
+      "phone": "(507) 263-6000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CASS LAKE": [
+    {
+      "name": "CASS LAKE INDIAN HEALTH SERVICES HOSPITAL",
+      "address": "425 7TH STREET NW",
+      "city": "CASS LAKE",
+      "state": "MN",
+      "zip": "56633",
+      "phone": "(218) 335-3205",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLOQUET": [
+    {
+      "name": "COMMUNITY MEMORIAL HOSPITAL",
+      "address": "512 SKYLINE BOULEVARD",
+      "city": "CLOQUET",
+      "state": "MN",
+      "zip": "55720",
+      "phone": "(218) 879-4641",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COOK": [
+    {
+      "name": "COOK HOSPITAL",
+      "address": "10 SE FIFTH ST",
+      "city": "COOK",
+      "state": "MN",
+      "zip": "55723",
+      "phone": "(218) 666-5945",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COON RAPIDS": [
+    {
+      "name": "MERCY HOSPITAL",
+      "address": "4050 COON RAPIDS BLVD",
+      "city": "COON RAPIDS",
+      "state": "MN",
+      "zip": "55433",
+      "phone": "(762) 236-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CROOKSTON": [
+    {
+      "name": "RIVERVIEW HOSPITAL",
+      "address": "323 SOUTH MINNESOTA",
+      "city": "CROOKSTON",
+      "state": "MN",
+      "zip": "56716",
+      "phone": "(218) 281-9200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CROSBY": [
+    {
+      "name": "CUYUNA REGIONAL MEDICAL CENTER",
+      "address": "320 EAST MAIN STREET",
+      "city": "CROSBY",
+      "state": "MN",
+      "zip": "56441",
+      "phone": "(218) 546-2300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAWSON": [
+    {
+      "name": "JOHNSON MEMORIAL HOSPITAL",
+      "address": "1282 WALNUT STREET",
+      "city": "DAWSON",
+      "state": "MN",
+      "zip": "56232",
+      "phone": "(320) 769-4323",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEER RIVER": [
+    {
+      "name": "ESSENTIA HEALTH DEER RIVER",
+      "address": "115 10TH AVENUE NORTHEAST",
+      "city": "DEER RIVER",
+      "state": "MN",
+      "zip": "56636",
+      "phone": "(218) 246-4200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DETROIT LAKES": [
+    {
+      "name": "ESSENTIA HEALTH ST MARYS - DETROIT LAKES",
+      "address": "1027 WASHINGTON AVE",
+      "city": "DETROIT LAKES",
+      "state": "MN",
+      "zip": "56501",
+      "phone": "(218) 847-0888",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DULUTH": [
+    {
+      "name": "ESSENTIA HEALTH ST MARY'S MEDICAL CENTER",
+      "address": "402 EAST SECOND STREET",
+      "city": "DULUTH",
+      "state": "MN",
+      "zip": "55805",
+      "phone": "(218) 786-3574",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ESSENTIA HEALTH DULUTH",
+      "address": "502 EAST SECOND STREET",
+      "city": "DULUTH",
+      "state": "MN",
+      "zip": "55805",
+      "phone": "(218) 786-2652",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST LUKES HOSPITAL",
+      "address": "915 EAST 1ST STREET",
+      "city": "DULUTH",
+      "state": "MN",
+      "zip": "55805",
+      "phone": "(218) 249-5555",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EDINA": [
+    {
+      "name": "M HEALTH FAIRVIEW SOUTHDALE HOSPITAL",
+      "address": "6401 FRANCE AVENUE SOUTH",
+      "city": "EDINA",
+      "state": "MN",
+      "zip": "55435",
+      "phone": "(952) 924-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELBOW LAKE": [
+    {
+      "name": "PRAIRIE RIDGE HOSPITAL AND HEALTH SERVICES",
+      "address": "1411 HIGHWAY 79 E",
+      "city": "ELBOW LAKE",
+      "state": "MN",
+      "zip": "56531",
+      "phone": "(218) 685-7300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELY": [
+    {
+      "name": "ELY - BLOOMENSON COMMUNITY HOSPITAL",
+      "address": "328 WEST CONAN STREET",
+      "city": "ELY",
+      "state": "MN",
+      "zip": "55731",
+      "phone": "(218) 365-3271",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAIRMONT": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM - FAIRMONT",
+      "address": "800 MEDICAL CENTER DRIVE",
+      "city": "FAIRMONT",
+      "state": "MN",
+      "zip": "56031",
+      "phone": "(507) 238-5064",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FARIBAULT": [
+    {
+      "name": "ALLINA HEALTH FARIBAULT MEDICAL CENTER",
+      "address": "200 STATE AVENUE",
+      "city": "FARIBAULT",
+      "state": "MN",
+      "zip": "55021",
+      "phone": "(507) 497-3733",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FERGUS FALLS": [
+    {
+      "name": "LAKE REGION HEALTHCARE CORPORATION",
+      "address": "712 SOUTH CASCADE STREET",
+      "city": "FERGUS FALLS",
+      "state": "MN",
+      "zip": "56537",
+      "phone": "(218) 736-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMMUNITY BEHAVIORAL HEALTH HOSPITAL FERGUS FALLS",
+      "address": "1801 WEST ALCOTT AVENUE",
+      "city": "FERGUS FALLS",
+      "state": "MN",
+      "zip": "56537",
+      "phone": "(218) 331-5005",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FOSSTON": [
+    {
+      "name": "ESSENTIA HEALTH FOSSTON",
+      "address": "900 HILLIGOSS BOULEVARD SE",
+      "city": "FOSSTON",
+      "state": "MN",
+      "zip": "56542",
+      "phone": "(218) 435-1133",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLENCOE": [
+    {
+      "name": "GLENCOE REGIONAL HEALTH",
+      "address": "1805 HENNEPIN AVENUE NORTH",
+      "city": "GLENCOE",
+      "state": "MN",
+      "zip": "55336",
+      "phone": "(320) 864-3121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLENWOOD": [
+    {
+      "name": "GLACIAL RIDGE HOSPITAL",
+      "address": "10 4TH AVENUE SOUTHEAST",
+      "city": "GLENWOOD",
+      "state": "MN",
+      "zip": "56334",
+      "phone": "(320) 634-4521",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRACEVILLE": [
+    {
+      "name": "ESSENTIA HEALTH HOLY TRINITY HOSPITAL",
+      "address": "115  SECOND STREET WEST, BOX 157",
+      "city": "GRACEVILLE",
+      "state": "MN",
+      "zip": "56240",
+      "phone": "(320) 748-7223",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAND MARAIS": [
+    {
+      "name": "NORTH SHORE HEALTH",
+      "address": "515 5TH AVE WEST",
+      "city": "GRAND MARAIS",
+      "state": "MN",
+      "zip": "55604",
+      "phone": "(218) 387-3040",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAND RAPIDS": [
+    {
+      "name": "GRAND ITASCA CLINIC AND HOSPITAL",
+      "address": "1601 GOLF COURSE ROAD",
+      "city": "GRAND RAPIDS",
+      "state": "MN",
+      "zip": "55744",
+      "phone": "(218) 326-3401",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRANITE FALLS": [
+    {
+      "name": "AVERA GRANITE FALLS",
+      "address": "345 TENTH AVENUE",
+      "city": "GRANITE FALLS",
+      "state": "MN",
+      "zip": "56241",
+      "phone": "(320) 564-6201",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HALLOCK": [
+    {
+      "name": "KITTSON HEALTHCARE",
+      "address": "1010 SOUTH BIRCH AVENUE",
+      "city": "HALLOCK",
+      "state": "MN",
+      "zip": "56728",
+      "phone": "(218) 843-3612",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HENDRICKS": [
+    {
+      "name": "HENDRICKS COMMUNITY HOSPITAL",
+      "address": "503 E LINCOLN STREET",
+      "city": "HENDRICKS",
+      "state": "MN",
+      "zip": "56136",
+      "phone": "(507) 275-3134",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HIBBING": [
+    {
+      "name": "RANGE REGIONAL HEALTH SERVICES",
+      "address": "750 EAST 34TH ST",
+      "city": "HIBBING",
+      "state": "MN",
+      "zip": "55746",
+      "phone": "(218) 362-6730",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUTCHINSON": [
+    {
+      "name": "HUTCHINSON HEALTH",
+      "address": "1095 HIGHWAY 15 SOUTH",
+      "city": "HUTCHINSON",
+      "state": "MN",
+      "zip": "55350",
+      "phone": "(320) 234-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "INTERNATIONAL FALLS": [
+    {
+      "name": "RAINY LAKE MEDICAL CENTER",
+      "address": "1400 HIGHWAY 71",
+      "city": "INTERNATIONAL FALLS",
+      "state": "MN",
+      "zip": "56649",
+      "phone": "(218) 283-4481",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JACKSON": [
+    {
+      "name": "SANFORD JACKSON MEDICAL CENTER",
+      "address": "1430 NORTH HIGHWAY",
+      "city": "JACKSON",
+      "state": "MN",
+      "zip": "56143",
+      "phone": "(507) 847-2420",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE CITY": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM - LAKE CITY",
+      "address": "500 WEST GRANT STREET",
+      "city": "LAKE CITY",
+      "state": "MN",
+      "zip": "55041",
+      "phone": "(651) 345-5955",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LE SUEUR": [
+    {
+      "name": "MINNESOTA VALLEY HEALTH CENTER  INC",
+      "address": "621 SOUTH FOURTH STREET",
+      "city": "LE SUEUR",
+      "state": "MN",
+      "zip": "56058",
+      "phone": "(507) 665-3375",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LITCHFIELD": [
+    {
+      "name": "MEEKER MEMORIAL HOSPITAL",
+      "address": "612 SOUTH SIBLEY AVENUE",
+      "city": "LITCHFIELD",
+      "state": "MN",
+      "zip": "55355",
+      "phone": "(320) 693-4500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LITTLE FALLS": [
+    {
+      "name": "ST GABRIELS HOSPITAL",
+      "address": "815 SOUTHEAST SECOND STREET",
+      "city": "LITTLE FALLS",
+      "state": "MN",
+      "zip": "56345",
+      "phone": "(320) 632-5441",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LONG PRAIRIE": [
+    {
+      "name": "CENTRACARE HEALTH SYSTEM - LONG PRAIRIE",
+      "address": "50 CENTRACARE DRIVE",
+      "city": "LONG PRAIRIE",
+      "state": "MN",
+      "zip": "56347",
+      "phone": "(320) 732-2141",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LUVERNE": [
+    {
+      "name": "SANFORD LUVERNE MEDICAL CENTER",
+      "address": "1600 N KNISS AVENUE P O BOX 1019",
+      "city": "LUVERNE",
+      "state": "MN",
+      "zip": "56156",
+      "phone": "(507) 283-2321",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MADELIA": [
+    {
+      "name": "MADELIA HEALTH",
+      "address": "121 DREW AVENUE SOUTHEAST",
+      "city": "MADELIA",
+      "state": "MN",
+      "zip": "56062",
+      "phone": "(507) 642-3255",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MADISON": [
+    {
+      "name": "MADISON HOSPITAL",
+      "address": "820 THIRD AVENUE",
+      "city": "MADISON",
+      "state": "MN",
+      "zip": "56256",
+      "phone": "(320) 598-7536",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAHNOMEN": [
+    {
+      "name": "MAHNOMEN HEALTH CENTER",
+      "address": "414 W JEFFERSON PO BOX 396",
+      "city": "MAHNOMEN",
+      "state": "MN",
+      "zip": "56557",
+      "phone": "(218) 935-2511",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANKATO": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM - MANKATO",
+      "address": "1025 MARSH STREET",
+      "city": "MANKATO",
+      "state": "MN",
+      "zip": "56002",
+      "phone": "(507) 625-4031",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAPLE GROVE": [
+    {
+      "name": "MAPLE GROVE HOSPITAL",
+      "address": "9875 HOSPITAL DRIVE",
+      "city": "MAPLE GROVE",
+      "state": "MN",
+      "zip": "55369",
+      "phone": "(763) 581-1563",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAPLEWOOD": [
+    {
+      "name": "M HEALTH FAIRVIEW ST JOHN'S HOSPITAL",
+      "address": "1575 BEAM AVENUE",
+      "city": "MAPLEWOOD",
+      "state": "MN",
+      "zip": "55109",
+      "phone": "(651) 232-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARSHALL": [
+    {
+      "name": "AVERA MARSHALL REGIONAL MEDICAL CTR",
+      "address": "300 SOUTH BRUCE STREET",
+      "city": "MARSHALL",
+      "state": "MN",
+      "zip": "56258",
+      "phone": "(507) 537-9661",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MELROSE": [
+    {
+      "name": "CENTRACARE HEALTH SYSTEM - MELROSE HOSPITAL",
+      "address": "525 WEST MAIN STREET",
+      "city": "MELROSE",
+      "state": "MN",
+      "zip": "56352",
+      "phone": "(320) 256-1805",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MINNEAPOLIS": [
+    {
+      "name": "HENNEPIN COUNTY MEDICAL CENTER",
+      "address": "701 PARK AVENUE",
+      "city": "MINNEAPOLIS",
+      "state": "MN",
+      "zip": "55415",
+      "phone": "(612) 873-6422",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MINNEAPOLIS VA MEDICAL CENTER",
+      "address": "ONE VETERANS DRIVE",
+      "city": "MINNEAPOLIS",
+      "state": "MN",
+      "zip": "55417",
+      "phone": "(612) 725-2000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ABBOTT NORTHWESTERN HOSPITAL",
+      "address": "800 EAST 28TH STREET",
+      "city": "MINNEAPOLIS",
+      "state": "MN",
+      "zip": "55407",
+      "phone": "(612) 863-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "M HEALTH FAIRVIEW UNIVERSITY OF MN",
+      "address": "2450 RIVERSIDE AVENUE",
+      "city": "MINNEAPOLIS",
+      "state": "MN",
+      "zip": "55454",
+      "phone": "(612) 624-1765",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDREN'S HOSPITALS & CLINICS OF MN",
+      "address": "2525 CHICAGO AVENUE SOUTH",
+      "city": "MINNEAPOLIS",
+      "state": "MN",
+      "zip": "55404",
+      "phone": "(612) 813-6112",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTEVIDEO": [
+    {
+      "name": "CHIPPEWA COUNTY HOSPITAL",
+      "address": "824 NORTH 11TH STREET",
+      "city": "MONTEVIDEO",
+      "state": "MN",
+      "zip": "56265",
+      "phone": "(320) 269-8877",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTICELLO": [
+    {
+      "name": "CENTRACARE HEALTH - MONTICELLO",
+      "address": "1013 HART BOULEVARD",
+      "city": "MONTICELLO",
+      "state": "MN",
+      "zip": "55362",
+      "phone": "(763) 295-2945",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOOSE LAKE": [
+    {
+      "name": "ESSENTIA HEALTH MOOSE LAKE",
+      "address": "4572 COUNTY ROAD 61",
+      "city": "MOOSE LAKE",
+      "state": "MN",
+      "zip": "55767",
+      "phone": "(218) 786-1367",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MORA": [
+    {
+      "name": "WELIA HEALTH",
+      "address": "301 SOUTH HIGHWAY 65",
+      "city": "MORA",
+      "state": "MN",
+      "zip": "55051",
+      "phone": "(320) 679-1212",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MORRIS": [
+    {
+      "name": "STEVENS COMMUNITY MEDICAL CENTER",
+      "address": "400 EAST FIRST STREET",
+      "city": "MORRIS",
+      "state": "MN",
+      "zip": "56267",
+      "phone": "(320) 589-1313",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW PRAGUE": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM NEW PRAGUE",
+      "address": "301 2ND STREET NORTHEAST",
+      "city": "NEW PRAGUE",
+      "state": "MN",
+      "zip": "56071",
+      "phone": "(952) 758-4431",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW ULM": [
+    {
+      "name": "NEW ULM MEDICAL CENTER",
+      "address": "1324 FIFTH NORTH STREET",
+      "city": "NEW ULM",
+      "state": "MN",
+      "zip": "56073",
+      "phone": "(507) 217-5000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTHFIELD": [
+    {
+      "name": "NORTHFIELD HOSPITAL",
+      "address": "2000 NORTH AVENUE",
+      "city": "NORTHFIELD",
+      "state": "MN",
+      "zip": "55057",
+      "phone": "(507) 646-1004",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OLIVIA": [
+    {
+      "name": "OLIVIA HOSPITAL & CLINIC",
+      "address": "100 HEALTHY WAY",
+      "city": "OLIVIA",
+      "state": "MN",
+      "zip": "56277",
+      "phone": "(320) 523-1261",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ONAMIA": [
+    {
+      "name": "MILLE LACS HEALTH SYSTEM",
+      "address": "200 NORTH ELM STREET",
+      "city": "ONAMIA",
+      "state": "MN",
+      "zip": "56359",
+      "phone": "(320) 532-3154",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ORTONVILLE": [
+    {
+      "name": "ORTONVILLE AREA HEALTH SERVICES",
+      "address": "450 EASTVOLD AVE",
+      "city": "ORTONVILLE",
+      "state": "MN",
+      "zip": "56278",
+      "phone": "(320) 839-2502",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OWATONNA": [
+    {
+      "name": "OWATONNA HOSPITAL",
+      "address": "2250 26TH STREET NORTHWEST",
+      "city": "OWATONNA",
+      "state": "MN",
+      "zip": "55060",
+      "phone": "(507) 451-3850",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARK RAPIDS": [
+    {
+      "name": "ST JOSEPHS AREA  HEALTH SERVICES",
+      "address": "600 PLEASANT AVENUE",
+      "city": "PARK RAPIDS",
+      "state": "MN",
+      "zip": "56470",
+      "phone": "(218) 732-3311",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAYNESVILLE": [
+    {
+      "name": "CENTRACARE HEALTH PAYNESVILLE LLC",
+      "address": "200 1ST STREET WEST",
+      "city": "PAYNESVILLE",
+      "state": "MN",
+      "zip": "56362",
+      "phone": "(320) 243-3767",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PERHAM": [
+    {
+      "name": "PERHAM HEALTH",
+      "address": "1000 CONEY STREET WEST",
+      "city": "PERHAM",
+      "state": "MN",
+      "zip": "56573",
+      "phone": "(218) 347-4500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PIPESTONE": [
+    {
+      "name": "PIPESTONE COUNTY  MEDICAL CENTER",
+      "address": "916 4TH AVENUE SOUTHWEST",
+      "city": "PIPESTONE",
+      "state": "MN",
+      "zip": "56164",
+      "phone": "(507) 825-5811",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRINCETON": [
+    {
+      "name": "FAIRVIEW NORTHLAND REGIONAL HOSPITAL",
+      "address": "911 NORTHLAND DRIVE",
+      "city": "PRINCETON",
+      "state": "MN",
+      "zip": "55371",
+      "phone": "(952) 892-2101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RED WING": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM IN RED WING",
+      "address": "701 HEWITT BOULEVARD",
+      "city": "RED WING",
+      "state": "MN",
+      "zip": "55066",
+      "phone": "(651) 267-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REDLAKE": [
+    {
+      "name": "RED LAKE HOSPITAL",
+      "address": "24760 HOSPITAL DRIVE",
+      "city": "REDLAKE",
+      "state": "MN",
+      "zip": "56671",
+      "phone": "(218) 679-3912",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REDWOOD FALLS": [
+    {
+      "name": "CENTRACARE - REDWOOD",
+      "address": "100 FALLWOOD ROAD",
+      "city": "REDWOOD FALLS",
+      "state": "MN",
+      "zip": "56283",
+      "phone": "(507) 637-4500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROBBINSDALE": [
+    {
+      "name": "NORTH MEMORIAL HEALTH HOSPITAL",
+      "address": "3300 OAKDALE NORTH",
+      "city": "ROBBINSDALE",
+      "state": "MN",
+      "zip": "55422",
+      "phone": "(763) 520-5200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROCHESTER": [
+    {
+      "name": "OLMSTED MEDICAL CENTER",
+      "address": "1650 FOURTH STREET SOUTHEAST",
+      "city": "ROCHESTER",
+      "state": "MN",
+      "zip": "55904",
+      "phone": "(507) 288-3443",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MAYO CLINIC HOSPITAL ROCHESTER",
+      "address": "1216 SECOND STREET SOUTHWEST",
+      "city": "ROCHESTER",
+      "state": "MN",
+      "zip": "55902",
+      "phone": "(507) 255-5123",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMMUNITY BEHAVIORAL HEALTH HOSPITAL ROCHESTER",
+      "address": "251 WOOD LAKE DRIVE SOUTHEAST",
+      "city": "ROCHESTER",
+      "state": "MN",
+      "zip": "55904",
+      "phone": "(507) 206-2561",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROSEAU": [
+    {
+      "name": "LIFECARE MEDICAL CENTER",
+      "address": "715 DELMORE DRIVE",
+      "city": "ROSEAU",
+      "state": "MN",
+      "zip": "56751",
+      "phone": "(218) 463-2500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT CLOUD": [
+    {
+      "name": "ST CLOUD HOSPITAL",
+      "address": "1406 6TH AVE NORTH",
+      "city": "SAINT CLOUD",
+      "state": "MN",
+      "zip": "56303",
+      "phone": "(320) 255-5661",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT LOUIS PARK": [
+    {
+      "name": "PARK NICOLLET METHODIST HOSPITAL",
+      "address": "6500 EXCELSIOR BLVD",
+      "city": "SAINT LOUIS PARK",
+      "state": "MN",
+      "zip": "55426",
+      "phone": "(952) 993-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT PAUL": [
+    {
+      "name": "ALLINA UNITED HOSPITAL",
+      "address": "333 NORTH SMITH AVENUE",
+      "city": "SAINT PAUL",
+      "state": "MN",
+      "zip": "55102",
+      "phone": "(763) 236-8205",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "REGIONS HOSPITAL",
+      "address": "640 JACKSON STREET",
+      "city": "SAINT PAUL",
+      "state": "MN",
+      "zip": "55101",
+      "phone": "(651) 254-1616",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GILLETTE CHILDRENS SPECIALTY HOSPITAL",
+      "address": "200 UNIVERSITY AVENUE EAST",
+      "city": "SAINT PAUL",
+      "state": "MN",
+      "zip": "55106",
+      "phone": "(651) 578-5611",
+      "type": "Childrens",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANDSTONE": [
+    {
+      "name": "ESSENTIA HEALTH SANDSTONE",
+      "address": "705 LUNDORFF DRIVE SOUTH",
+      "city": "SANDSTONE",
+      "state": "MN",
+      "zip": "55072",
+      "phone": "(218) 786-1367",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAUK CENTRE": [
+    {
+      "name": "CENTRACARE HEALTH SYSTEM - SAUK CENTRE",
+      "address": "425 NORTH ELM STREET",
+      "city": "SAUK CENTRE",
+      "state": "MN",
+      "zip": "56378",
+      "phone": "(320) 352-2221",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHAKOPEE": [
+    {
+      "name": "ST FRANCIS REGIONAL MEDICAL CENTER",
+      "address": "1455 ST FRANCIS AVENUE",
+      "city": "SHAKOPEE",
+      "state": "MN",
+      "zip": "55379",
+      "phone": "(952) 428-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SLAYTON": [
+    {
+      "name": "MURRAY COUNTY MEMORIAL HOSPITAL",
+      "address": "2042 JUNIPER AVENUE",
+      "city": "SLAYTON",
+      "state": "MN",
+      "zip": "56172",
+      "phone": "(507) 836-6111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SLEEPY EYE": [
+    {
+      "name": "SLEEPY EYE MEDICAL CENTER",
+      "address": "400 FOURTH AVENUE NORTHWEST",
+      "city": "SLEEPY EYE",
+      "state": "MN",
+      "zip": "56085",
+      "phone": "(507) 794-3571",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ST JAMES": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM ST. JAMES",
+      "address": "1101 MOULTON AND PARSONS DRIVE",
+      "city": "ST JAMES",
+      "state": "MN",
+      "zip": "56081",
+      "phone": "(507) 375-8602",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ST PETER": [
+    {
+      "name": "RIVER'S EDGE HOSPITAL & CLINIC",
+      "address": "1900 NORTH SUNRISE DRIVE",
+      "city": "ST PETER",
+      "state": "MN",
+      "zip": "56082",
+      "phone": "(507) 931-2200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ST. CLOUD": [
+    {
+      "name": "ST CLOUD VA MEDICAL CENTER",
+      "address": "4801 VETERANS DRIVE",
+      "city": "ST. CLOUD",
+      "state": "MN",
+      "zip": "56303",
+      "phone": "(320) 252-1670",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STAPLES": [
+    {
+      "name": "LAKEWOOD HEALTH SYSTEM",
+      "address": "49725 COUNTY ROAD 83",
+      "city": "STAPLES",
+      "state": "MN",
+      "zip": "56479",
+      "phone": "(218) 894-1515",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STILLWATER": [
+    {
+      "name": "LAKEVIEW MEMORIAL HOSPITAL",
+      "address": "927 WEST CHURCHILL STREET",
+      "city": "STILLWATER",
+      "state": "MN",
+      "zip": "55082",
+      "phone": "(651) 430-4509",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "THIEF RIVER FALLS": [
+    {
+      "name": "SANFORD THIEF RIVER FALLS MEDICAL CENTER",
+      "address": "3001 SANFORD PARKWAY",
+      "city": "THIEF RIVER FALLS",
+      "state": "MN",
+      "zip": "56701",
+      "phone": "(218) 683-2652",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SANFORD BEHAVIORAL HEALTH CENTER",
+      "address": "120 LABREE AVENUE SOUTH",
+      "city": "THIEF RIVER FALLS",
+      "state": "MN",
+      "zip": "56701",
+      "phone": "(218) 681-4240",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TRACY": [
+    {
+      "name": "SANFORD TRACY MEDICAL CENTER",
+      "address": "251 FIFTH STREET EAST",
+      "city": "TRACY",
+      "state": "MN",
+      "zip": "56175",
+      "phone": "(507) 629-8400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TWO HARBORS": [
+    {
+      "name": "LAKE VIEW MEMORIAL HOSPITAL",
+      "address": "325 ELEVENTH AVE",
+      "city": "TWO HARBORS",
+      "state": "MN",
+      "zip": "55616",
+      "phone": "(218) 834-7300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TYLER": [
+    {
+      "name": "AVERA TYLER HOSPITAL",
+      "address": "240 WILLOW STREET",
+      "city": "TYLER",
+      "state": "MN",
+      "zip": "56178",
+      "phone": "(507) 247-5521",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VIRGINIA": [
+    {
+      "name": "ESSENTIA HEALTH VIRGINIA",
+      "address": "901 9TH STREET NORTH",
+      "city": "VIRGINIA",
+      "state": "MN",
+      "zip": "55792",
+      "phone": "(218) 741-3340",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WABASHA": [
+    {
+      "name": "ST ELIZABETH MEDICAL CENTER",
+      "address": "1200 GRANT BLVD W",
+      "city": "WABASHA",
+      "state": "MN",
+      "zip": "55981",
+      "phone": "(651) 565-4531",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WACONIA": [
+    {
+      "name": "RIDGEVIEW MEDICAL CENTER",
+      "address": "500 SOUTH MAPLE STREET",
+      "city": "WACONIA",
+      "state": "MN",
+      "zip": "55387",
+      "phone": "(952) 442-2191",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WADENA": [
+    {
+      "name": "ASTERA HEALTH",
+      "address": "421 11TH STREET NW",
+      "city": "WADENA",
+      "state": "MN",
+      "zip": "56482",
+      "phone": "(218) 631-7489",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WARREN": [
+    {
+      "name": "NORTH VALLEY HEALTH CENTER",
+      "address": "300 WEST GOOD SAMARITAN DRIVE",
+      "city": "WARREN",
+      "state": "MN",
+      "zip": "56762",
+      "phone": "(218) 745-4211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WASECA": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM - WASECA",
+      "address": "501 NORTH STATE STREET",
+      "city": "WASECA",
+      "state": "MN",
+      "zip": "56093",
+      "phone": "(507) 835-1210",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTBROOK": [
+    {
+      "name": "SANFORD WESTBROOK MEDICAL CENTER",
+      "address": "920 BELL AVENUE PO BOX 188",
+      "city": "WESTBROOK",
+      "state": "MN",
+      "zip": "56183",
+      "phone": "(507) 274-1119",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHEATON": [
+    {
+      "name": "SANFORD WHEATON MEDICAL CENTER",
+      "address": "401 12TH STREET NORTH",
+      "city": "WHEATON",
+      "state": "MN",
+      "zip": "56296",
+      "phone": "(320) 563-8226",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILLMAR": [
+    {
+      "name": "CENTRACARE- RICE MEMORIAL HOSPITAL",
+      "address": "301 BECKER AVE SW",
+      "city": "WILLMAR",
+      "state": "MN",
+      "zip": "56201",
+      "phone": "(320) 235-4543",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILD AND ADOLESCENT BEHAVIORAL HEALTH HOSPITAL",
+      "address": "2301 TRANSPORTATION DRIVE NE",
+      "city": "WILLMAR",
+      "state": "MN",
+      "zip": "56201",
+      "phone": "(320) 441-0125",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINDOM": [
+    {
+      "name": "WINDOM AREA HEALTH",
+      "address": "2150 HOSPITAL DRIVE, PO BOX 339",
+      "city": "WINDOM",
+      "state": "MN",
+      "zip": "56101",
+      "phone": "(507) 831-2400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINONA": [
+    {
+      "name": "WINONA HEALTH SERVICES",
+      "address": "855 MANKATO AVENUE",
+      "city": "WINONA",
+      "state": "MN",
+      "zip": "55987",
+      "phone": "(507) 454-3650",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOODBURY": [
+    {
+      "name": "M HEALTH FAIRVIEW WOODWINDS HOSPITAL",
+      "address": "1925 WOODWINDS DRIVE",
+      "city": "WOODBURY",
+      "state": "MN",
+      "zip": "55125",
+      "phone": "(651) 232-2185",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WORTHINGTON": [
+    {
+      "name": "SANFORD WORTHINGTON MEDICAL CENTER",
+      "address": "1018 SIXTH AVENUE PO BOX 997",
+      "city": "WORTHINGTON",
+      "state": "MN",
+      "zip": "56187",
+      "phone": "(507) 372-3110",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WYOMING": [
+    {
+      "name": "FAIRVIEW LAKES HEALTH SERVICES",
+      "address": "5200 FAIRVIEW BOULEVARD",
+      "city": "WYOMING",
+      "state": "MN",
+      "zip": "55092",
+      "phone": "(952) 892-2101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

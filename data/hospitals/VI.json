@@ -1,0 +1,32 @@
+{
+  "ST CROIX": [
+    {
+      "name": "GOV JUAN F LUIS HOSPITAL & MEDICAL CTR",
+      "address": "#4007 EST DIAMOND RUBY, CHRISTIANSTED",
+      "city": "ST CROIX",
+      "state": "VI",
+      "zip": "00820",
+      "phone": "(340) 778-6311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ST THOMAS": [
+    {
+      "name": "ROY LESTER SCHNEIDER HOSPITAL,THE",
+      "address": "9048 SUGAR ESTATE",
+      "city": "ST THOMAS",
+      "state": "VI",
+      "zip": "00801",
+      "phone": "(809) 776-8311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

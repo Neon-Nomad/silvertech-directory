@@ -1,0 +1,912 @@
+{
+  "ABERDEEN": [
+    {
+      "name": "AVERA ST LUKES",
+      "address": "305 S STATE ST  POST OFFICE BOX 4450",
+      "city": "ABERDEEN",
+      "state": "SD",
+      "zip": "57401",
+      "phone": "(605) 622-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SANFORD MEDICAL CENTER ABERDEEN",
+      "address": "2905 3RD AVE SE",
+      "city": "ABERDEEN",
+      "state": "SD",
+      "zip": "57402",
+      "phone": "(605) 626-4200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARMOUR": [
+    {
+      "name": "DOUGLAS COUNTY MEMORIAL HOSPITAL-CAH",
+      "address": "708 8TH ST",
+      "city": "ARMOUR",
+      "state": "SD",
+      "zip": "57313",
+      "phone": "(605) 724-2159",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOWDLE": [
+    {
+      "name": "BOWDLE HOSPITAL - CAH",
+      "address": "8001 W 5TH  POST OFFICE BOX 556",
+      "city": "BOWDLE",
+      "state": "SD",
+      "zip": "57428",
+      "phone": "(605) 285-6146",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRITTON": [
+    {
+      "name": "MARSHALL COUNTY HEALTHCARE CENTER - CAH",
+      "address": "413 9TH STREET",
+      "city": "BRITTON",
+      "state": "SD",
+      "zip": "57430",
+      "phone": "(605) 448-2253",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BROOKINGS": [
+    {
+      "name": "BROOKINGS HEALTH SYSTEM",
+      "address": "300 22ND AVE",
+      "city": "BROOKINGS",
+      "state": "SD",
+      "zip": "57006",
+      "phone": "(605) 696-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURKE": [
+    {
+      "name": "COMMUNITY MEMORIAL HOSPITAL",
+      "address": "809 JACKSON",
+      "city": "BURKE",
+      "state": "SD",
+      "zip": "57523",
+      "phone": "(605) 775-2621",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CANTON": [
+    {
+      "name": "SANFORD CANTON-INWOOD MEDICAL CENTER - CAH",
+      "address": "440 NORTH HIAWATHA DRIVE",
+      "city": "CANTON",
+      "state": "SD",
+      "zip": "57013",
+      "phone": "(605) 764-1500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHAMBERLAIN": [
+    {
+      "name": "SANFORD CHAMBERLAIN MEDICAL CENTER",
+      "address": "300 S BYRON",
+      "city": "CHAMBERLAIN",
+      "state": "SD",
+      "zip": "57325",
+      "phone": "(605) 234-5511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLEAR LAKE": [
+    {
+      "name": "SANFORD CLEAR LAKE MEDICAL CENTER",
+      "address": "701 THIRD AVENUE SOUTH",
+      "city": "CLEAR LAKE",
+      "state": "SD",
+      "zip": "57226",
+      "phone": "(605) 874-2141",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CUSTER": [
+    {
+      "name": "MONUMENT HEALTH CUSTER HOSPITAL",
+      "address": "1220 MONTGOMERY STREET",
+      "city": "CUSTER",
+      "state": "SD",
+      "zip": "57730",
+      "phone": "(605) 673-9400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAKOTA DUNES": [
+    {
+      "name": "DUNES SURGICAL HOSPITAL",
+      "address": "600 N SIOUX POINT ROAD",
+      "city": "DAKOTA DUNES",
+      "state": "SD",
+      "zip": "57049",
+      "phone": "(605) 232-3332",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DE SMET": [
+    {
+      "name": "AVERA DE SMET MEMORIAL HOSPITAL - CAH",
+      "address": "306 PRAIRIE AVENUE SW  POST OFFICE BOX 160",
+      "city": "DE SMET",
+      "state": "SD",
+      "zip": "57231",
+      "phone": "(605) 854-3329",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEADWOOD": [
+    {
+      "name": "MONUMENT HEALTH LEAD-DEADWOOD HOSPITAL",
+      "address": "61 CHARLES STREET",
+      "city": "DEADWOOD",
+      "state": "SD",
+      "zip": "57732",
+      "phone": "(605) 717-6000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DELL RAPIDS": [
+    {
+      "name": "AVERA DELLS AREA HOSPITAL  - CAH",
+      "address": "909 N IOWA AVE",
+      "city": "DELL RAPIDS",
+      "state": "SD",
+      "zip": "57022",
+      "phone": "(605) 428-5431",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EAGLE BUTTE": [
+    {
+      "name": "EAGLE BUTTE INDIAN HEALTH SERVICE HOSPITAL",
+      "address": "24276 166TH AIRPORT ROAD",
+      "city": "EAGLE BUTTE",
+      "state": "SD",
+      "zip": "57625",
+      "phone": "(605) 964-3005",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EUREKA": [
+    {
+      "name": "EUREKA COMMUNITY HEALTH SERVICES - CAH",
+      "address": "200 J AVE POST OFFICE BOX 517",
+      "city": "EUREKA",
+      "state": "SD",
+      "zip": "57437",
+      "phone": "(605) 284-2661",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAULKTON": [
+    {
+      "name": "FAULKTON AREA MEDICAL CENTER",
+      "address": "1300 OAK STREET  POST OFFICE BOX 100",
+      "city": "FAULKTON",
+      "state": "SD",
+      "zip": "57438",
+      "phone": "(605) 598-6262",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FLANDREAU": [
+    {
+      "name": "AVERA FLANDREAU HOSPITAL - CAH",
+      "address": "214 NORTH PRAIRIE STREET",
+      "city": "FLANDREAU",
+      "state": "SD",
+      "zip": "57028",
+      "phone": "(605) 997-2433",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT MEADE": [
+    {
+      "name": "VA BLACK HILLS HEALTHCARE SYSTEM",
+      "address": "113 COMANCHE ROAD",
+      "city": "FORT MEADE",
+      "state": "SD",
+      "zip": "57741",
+      "phone": "(605) 347-2511",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FREEMAN": [
+    {
+      "name": "FREEMAN MEDICAL CENTER - CAH",
+      "address": "510 E 8TH ST  POST OFFICE BOX 370",
+      "city": "FREEMAN",
+      "state": "SD",
+      "zip": "57029",
+      "phone": "(605) 925-4000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GETTYSBURG": [
+    {
+      "name": "AVERA MISSOURI RIVER HEALTH CENTER",
+      "address": "606 EAST GARFIELD",
+      "city": "GETTYSBURG",
+      "state": "SD",
+      "zip": "57442",
+      "phone": "(605) 765-2488",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREGORY": [
+    {
+      "name": "AVERA GREGORY HOSPITAL",
+      "address": "110 S LOGAN AVE",
+      "city": "GREGORY",
+      "state": "SD",
+      "zip": "57533",
+      "phone": "(605) 835-8394",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOT SPRINGS": [
+    {
+      "name": "FALL RIVER HOSPITAL - CAH",
+      "address": "1201 HIGHWAY 71 SOUTH",
+      "city": "HOT SPRINGS",
+      "state": "SD",
+      "zip": "57747",
+      "phone": "(605) 745-8910",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HURON": [
+    {
+      "name": "HURON REGIONAL MEDICAL CENTER",
+      "address": "172 FOURTH STREET SE",
+      "city": "HURON",
+      "state": "SD",
+      "zip": "57350",
+      "phone": "(605) 353-6200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MADISON": [
+    {
+      "name": "MADISON REGIONAL HEALTH SYSTEM",
+      "address": "323 SW 10TH ST",
+      "city": "MADISON",
+      "state": "SD",
+      "zip": "57042",
+      "phone": "(605) 256-6551",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARTIN": [
+    {
+      "name": "BENNETT COUNTY HOSPITAL AND NURSING HOME - CAH",
+      "address": "102 MAJOR ALLEN   POST OFFICE BOX 70D",
+      "city": "MARTIN",
+      "state": "SD",
+      "zip": "57551",
+      "phone": "(605) 685-6622",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILBANK": [
+    {
+      "name": "MILBANK AREA HOSPITAL/AVERA HEALTH",
+      "address": "301 FLYNN DRIVE",
+      "city": "MILBANK",
+      "state": "SD",
+      "zip": "57252",
+      "phone": "(605) 432-4538",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILLER": [
+    {
+      "name": "AVERA HAND COUNTY MEMORIAL HOSPITAL AND CLINIC",
+      "address": "300 W 5TH ST",
+      "city": "MILLER",
+      "state": "SD",
+      "zip": "57362",
+      "phone": "(605) 853-2421",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MITCHELL": [
+    {
+      "name": "AVERA QUEEN OF PEACE",
+      "address": "525 NORTH FOSTER STREET",
+      "city": "MITCHELL",
+      "state": "SD",
+      "zip": "57301",
+      "phone": "(605) 995-2000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOBRIDGE": [
+    {
+      "name": "MOBRIDGE REGIONAL HOSPITAL - CAH",
+      "address": "1401 10TH AVE WEST",
+      "city": "MOBRIDGE",
+      "state": "SD",
+      "zip": "57601",
+      "phone": "(605) 845-3692",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARKSTON": [
+    {
+      "name": "AVERA ST BENEDICT HEALTH CENTER - CAH",
+      "address": "401 WEST GLYNN DRIVE",
+      "city": "PARKSTON",
+      "state": "SD",
+      "zip": "57366",
+      "phone": "(605) 928-3311",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PHILIP": [
+    {
+      "name": "HANS P PETERSON MEMORIAL HOSPITAL - CAH",
+      "address": "503 W PINE  POST OFFICE BOX 790",
+      "city": "PHILIP",
+      "state": "SD",
+      "zip": "57567",
+      "phone": "(605) 859-2511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PIERRE": [
+    {
+      "name": "AVERA ST MARY'S HOSPITAL",
+      "address": "801 E SIOUX",
+      "city": "PIERRE",
+      "state": "SD",
+      "zip": "57501",
+      "phone": "(605) 224-3100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PINE RIDGE": [
+    {
+      "name": "PINE RIDGE IHS HOSPITAL",
+      "address": "EAST HIGHWAY 18",
+      "city": "PINE RIDGE",
+      "state": "SD",
+      "zip": "57770",
+      "phone": "(605) 867-5131",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLATTE": [
+    {
+      "name": "PLATTE HEALTH CENTER",
+      "address": "601 E 7TH ST  POST OFFICE BOX 200",
+      "city": "PLATTE",
+      "state": "SD",
+      "zip": "57369",
+      "phone": "(605) 337-3364",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RAPID CITY": [
+    {
+      "name": "MONUMENT HEALTH RAPID CITY HOSPITAL",
+      "address": "353 FAIRMONT BLVD",
+      "city": "RAPID CITY",
+      "state": "SD",
+      "zip": "57701",
+      "phone": "(605) 755-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BLACK HILLS SURGICAL HOSPITAL LLC",
+      "address": "216 ANAMARIA DR",
+      "city": "RAPID CITY",
+      "state": "SD",
+      "zip": "57703",
+      "phone": "(605) 721-4700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAME DAY SURGERY CENTER LLC",
+      "address": "651 CATHEDRAL DRIVE",
+      "city": "RAPID CITY",
+      "state": "SD",
+      "zip": "57701",
+      "phone": "(605) 755-9900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "REHAB & CRITICAL CARE HOSPITAL OF THE BLACK HILLS",
+      "address": "2115 PROMISE ROAD",
+      "city": "RAPID CITY",
+      "state": "SD",
+      "zip": "57701",
+      "phone": "(605) 646-6040",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REDFIELD": [
+    {
+      "name": "COMMUNITY MEMORIAL HOSPITAL",
+      "address": "111 W 10TH AVE  POST OFFICE BOX 420",
+      "city": "REDFIELD",
+      "state": "SD",
+      "zip": "57469",
+      "phone": "(605) 472-1110",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROSEBUD": [
+    {
+      "name": "PHS INDIAN HOSPITAL AT ROSEBUD",
+      "address": "400 SOLDIER CREEK ROAD",
+      "city": "ROSEBUD",
+      "state": "SD",
+      "zip": "57570",
+      "phone": "(605) 747-2231",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SCOTLAND": [
+    {
+      "name": "LANDMANN-JUNGMAN MEMORIAL HOSPITAL - CAH",
+      "address": "600 BILLARS ST",
+      "city": "SCOTLAND",
+      "state": "SD",
+      "zip": "57059",
+      "phone": "(605) 583-2226",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SIOUX FALLS": [
+    {
+      "name": "AVERA MCKENNAN HOSPITAL & UNIVERSITY HEALTH CENTER",
+      "address": "1325 S CLIFF AVE  POST OFFICE BOX 5045",
+      "city": "SIOUX FALLS",
+      "state": "SD",
+      "zip": "57117",
+      "phone": "(605) 322-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SANFORD USD MEDICAL CENTER",
+      "address": "1305 W 18TH ST  POST OFFICE BOX 5039",
+      "city": "SIOUX FALLS",
+      "state": "SD",
+      "zip": "57117",
+      "phone": "(605) 333-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SIOUX FALLS VA MEDICAL CENTER",
+      "address": "2501 WEST 22ND STREET",
+      "city": "SIOUX FALLS",
+      "state": "SD",
+      "zip": "57117",
+      "phone": "(605) 336-3230",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SIOUX FALLS SPECIALTY HOSPITAL",
+      "address": "910 EAST 20TH STREET",
+      "city": "SIOUX FALLS",
+      "state": "SD",
+      "zip": "57105",
+      "phone": "(605) 334-6730",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AVERA HEART HOSPITAL OF SOUTH DAKOTA",
+      "address": "4500 W 69TH ST",
+      "city": "SIOUX FALLS",
+      "state": "SD",
+      "zip": "57108",
+      "phone": "(605) 977-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LIFESCAPE",
+      "address": "2501 W 26TH ST",
+      "city": "SIOUX FALLS",
+      "state": "SD",
+      "zip": "57105",
+      "phone": "(605) 444-9500",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SISSETON": [
+    {
+      "name": "COTEAU DES PRAIRIES HEALTH CARE SYSTEM",
+      "address": "205 ORCHARD DR",
+      "city": "SISSETON",
+      "state": "SD",
+      "zip": "57262",
+      "phone": "(605) 698-7647",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPEARFISH": [
+    {
+      "name": "MONUMENT HEALTH SPEARFISH HOSPITAL",
+      "address": "1440 N MAIN ST",
+      "city": "SPEARFISH",
+      "state": "SD",
+      "zip": "57783",
+      "phone": "(605) 644-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STURGIS": [
+    {
+      "name": "MONUMENT HEALTH STURGIS HOSPITAL",
+      "address": "2140 JUNCTION AVE",
+      "city": "STURGIS",
+      "state": "SD",
+      "zip": "57785",
+      "phone": "(605) 720-2400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TYNDALL": [
+    {
+      "name": "ST MICHAEL'S HOSPITAL - CAH",
+      "address": "410 W 16TH AVE",
+      "city": "TYNDALL",
+      "state": "SD",
+      "zip": "57066",
+      "phone": "(605) 589-2100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VERMILLION": [
+    {
+      "name": "SANFORD VERMILLION HOSPITAL",
+      "address": "20 SOUTH PLUM STREET",
+      "city": "VERMILLION",
+      "state": "SD",
+      "zip": "57069",
+      "phone": "(605) 624-2611",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VIBORG": [
+    {
+      "name": "PIONEER MEMORIAL HOSPITAL - CAH",
+      "address": "315 N WASHINGTON AVE  POST OFFICE BOX 368",
+      "city": "VIBORG",
+      "state": "SD",
+      "zip": "57070",
+      "phone": "(605) 326-5161",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAGNER": [
+    {
+      "name": "WAGNER COMMUNITY MEMORIAL HOSPITAL - CAH",
+      "address": "513 3RD ST SW",
+      "city": "WAGNER",
+      "state": "SD",
+      "zip": "57380",
+      "phone": "(605) 384-3611",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WATERTOWN": [
+    {
+      "name": "PRAIRIE LAKES HEALTHCARE SYSTEM, INC",
+      "address": "401 9TH AVENUE NW  POST OFFICE BOX 1210",
+      "city": "WATERTOWN",
+      "state": "SD",
+      "zip": "57201",
+      "phone": "(605) 882-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEBSTER": [
+    {
+      "name": "SANFORD HOSPITAL WEBSTER - CAH",
+      "address": "1401 W FIRST ST POST OFFICE BOX 489",
+      "city": "WEBSTER",
+      "state": "SD",
+      "zip": "57274",
+      "phone": "(605) 345-3336",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESSINGTON SPRINGS": [
+    {
+      "name": "AVERA WESKOTA MEMORIAL MEDICAL CENTER - CAH",
+      "address": "604 1ST ST NE",
+      "city": "WESSINGTON SPRINGS",
+      "state": "SD",
+      "zip": "57382",
+      "phone": "(605) 539-1201",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINNER": [
+    {
+      "name": "WINNER REGIONAL HEALTHCARE CENTER - CAH",
+      "address": "745 EAST 8TH STREET",
+      "city": "WINNER",
+      "state": "SD",
+      "zip": "57580",
+      "phone": "(605) 842-7100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YANKTON": [
+    {
+      "name": "AVERA SACRED HEART HOSPITAL",
+      "address": "501 SUMMIT ST",
+      "city": "YANKTON",
+      "state": "SD",
+      "zip": "57078",
+      "phone": "(605) 668-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTH DAKOTA HUMAN SERVICES CENTER",
+      "address": "3515 BROADWAY AVE   POST OFFICE BOX 7600",
+      "city": "YANKTON",
+      "state": "SD",
+      "zip": "57078",
+      "phone": "(605) 668-3100",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

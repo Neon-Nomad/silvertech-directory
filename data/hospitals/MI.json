@@ -1,0 +1,2141 @@
+{
+  "ADRIAN": [
+    {
+      "name": "PROMEDICA CHARLES AND VIRGINIA HICKMAN HOSPITAL",
+      "address": "5640 N ADRIAN HIGHWAY",
+      "city": "ADRIAN",
+      "state": "MI",
+      "zip": "49221",
+      "phone": "(517) 265-0900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALLEGAN": [
+    {
+      "name": "ASCENSION BORGESS ALLEGAN HOSPITAL",
+      "address": "555 LINN STREET",
+      "city": "ALLEGAN",
+      "state": "MI",
+      "zip": "49010",
+      "phone": "(269) 686-4101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALMA": [
+    {
+      "name": "MYMICHIGAN MEDICAL CENTER ALMA",
+      "address": "300 E WARWICK DR",
+      "city": "ALMA",
+      "state": "MI",
+      "zip": "48801",
+      "phone": "(989) 463-1101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALPENA": [
+    {
+      "name": "MYMICHIGAN MEDICAL CENTER ALPENA",
+      "address": "1501 W CHISHOLM ST",
+      "city": "ALPENA",
+      "state": "MI",
+      "zip": "49707",
+      "phone": "(989) 356-7390",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANN ARBOR": [
+    {
+      "name": "UNIVERSITY OF MICHIGAN HEALTH SYSTEM",
+      "address": "1500 E MEDICAL CENTER DRIVE, SPC 5474",
+      "city": "ANN ARBOR",
+      "state": "MI",
+      "zip": "48109",
+      "phone": "(734) 764-1505",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA ANN ARBOR HEALTHCARE SYSTEM",
+      "address": "2215 FULLER ROAD",
+      "city": "ANN ARBOR",
+      "state": "MI",
+      "zip": "48105",
+      "phone": "(734) 769-7100",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TRINITY HEALTH ANN ARBOR HOSPITAL",
+      "address": "5301 E HURON RIVER DR",
+      "city": "ANN ARBOR",
+      "state": "MI",
+      "zip": "48106",
+      "phone": "(734) 712-3456",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AUBURN HILLS": [
+    {
+      "name": "HAVENWYCK HOSPITAL",
+      "address": "1525 UNIVERSITY DRIVE",
+      "city": "AUBURN HILLS",
+      "state": "MI",
+      "zip": "48326",
+      "phone": "(248) 373-9200",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAD AXE": [
+    {
+      "name": "MCLAREN THUMB REGION",
+      "address": "1100 S VAN DYKE RD",
+      "city": "BAD AXE",
+      "state": "MI",
+      "zip": "48413",
+      "phone": "(989) 269-9521",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BATTLE CREEK": [
+    {
+      "name": "BRONSON BATTLE CREEK HOSPITAL",
+      "address": "300 NORTH AVENUE",
+      "city": "BATTLE CREEK",
+      "state": "MI",
+      "zip": "49017",
+      "phone": "(269) 966-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BATTLE CREEK VA MEDICAL CENTER",
+      "address": "5500 ARMSTRONG RD.",
+      "city": "BATTLE CREEK",
+      "state": "MI",
+      "zip": "49037",
+      "phone": "(269) 966-5600",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BRONSON BEHAVIORAL HEALTH HOSPITAL",
+      "address": "5550 GLENN CROSS RD",
+      "city": "BATTLE CREEK",
+      "state": "MI",
+      "zip": "49015",
+      "phone": "(269) 966-8374",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAY CITY": [
+    {
+      "name": "MCLAREN BAY REGION",
+      "address": "1900 COLUMBUS AVE",
+      "city": "BAY CITY",
+      "state": "MI",
+      "zip": "48708",
+      "phone": "(989) 894-9510",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BIG RAPIDS": [
+    {
+      "name": "COREWELL HEALTH BIG RAPIDS HOSPITAL",
+      "address": "605 OAK STREET",
+      "city": "BIG RAPIDS",
+      "state": "MI",
+      "zip": "49307",
+      "phone": "(231) 796-8691",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRIGHTON": [
+    {
+      "name": "ASCENSION BRIGHTON CENTER FOR RECOVERY",
+      "address": "12851 GRAND RIVER RD",
+      "city": "BRIGHTON",
+      "state": "MI",
+      "zip": "48116",
+      "phone": "(810) 227-1211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CADILLAC": [
+    {
+      "name": "MUNSON HEALTHCARE CADILLAC HOSPITAL",
+      "address": "400 HOBART ST",
+      "city": "CADILLAC",
+      "state": "MI",
+      "zip": "49601",
+      "phone": "(231) 876-7400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARO": [
+    {
+      "name": "MCLAREN CARO REGION",
+      "address": "401 N HOOPER ST",
+      "city": "CARO",
+      "state": "MI",
+      "zip": "48723",
+      "phone": "(989) 673-3141",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CARO PSYCHIATRIC HOSPITAL",
+      "address": "2040 CHAMBERS RD",
+      "city": "CARO",
+      "state": "MI",
+      "zip": "48723",
+      "phone": "(989) 673-3191",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARSON CITY": [
+    {
+      "name": "SPARROW CARSON HOSPITAL",
+      "address": "406 EAST ELM ST",
+      "city": "CARSON CITY",
+      "state": "MI",
+      "zip": "48811",
+      "phone": "(989) 584-3131",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CASS CITY": [
+    {
+      "name": "HILLS & DALES GENERAL HOSPITAL",
+      "address": "4675 HILL STREET",
+      "city": "CASS CITY",
+      "state": "MI",
+      "zip": "48726",
+      "phone": "(989) 872-2121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHARLEVOIX": [
+    {
+      "name": "CHARLEVOIX AREA HOSPITAL",
+      "address": "14700 LAKESHORE DRIVE",
+      "city": "CHARLEVOIX",
+      "state": "MI",
+      "zip": "49720",
+      "phone": "(231) 547-4024",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHARLOTTE": [
+    {
+      "name": "UNIVERSITY OF MICHIGAN HEALTH - SPARROW EATON",
+      "address": "321 E HARRIS STREET",
+      "city": "CHARLOTTE",
+      "state": "MI",
+      "zip": "48813",
+      "phone": "(517) 543-1050",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHELSEA": [
+    {
+      "name": "CHELSEA HOSPITAL",
+      "address": "775 S MAIN ST",
+      "city": "CHELSEA",
+      "state": "MI",
+      "zip": "48118",
+      "phone": "(734) 475-3911",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLARE": [
+    {
+      "name": "MYMICHIGAN MEDICAL CENTER CLARE",
+      "address": "703 N MCEWAN ST",
+      "city": "CLARE",
+      "state": "MI",
+      "zip": "48617",
+      "phone": "(989) 802-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLINTON TOWNSHIP": [
+    {
+      "name": "HENRY FORD MACOMB HOSPITAL",
+      "address": "15855 NINETEEN MILE RD",
+      "city": "CLINTON TOWNSHIP",
+      "state": "MI",
+      "zip": "48038",
+      "phone": "(586) 263-2300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLDWATER": [
+    {
+      "name": "INSIGHT HOSPITAL AND MEDICAL CENTER COLDWATER",
+      "address": "274 E CHICAGO ST",
+      "city": "COLDWATER",
+      "state": "MI",
+      "zip": "49036",
+      "phone": "(517) 279-5489",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COMMERCE TOWNSHIP": [
+    {
+      "name": "HURON VALLEY-SINAI HOSPITAL",
+      "address": "ONE WILLIAM CARLS DRIVE",
+      "city": "COMMERCE TOWNSHIP",
+      "state": "MI",
+      "zip": "48382",
+      "phone": "(248) 937-3370",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEARBORN": [
+    {
+      "name": "BEAUMONT HOSPITAL - DEARBORN",
+      "address": "18101 OAKWOOD BLVD",
+      "city": "DEARBORN",
+      "state": "MI",
+      "zip": "48124",
+      "phone": "(313) 593-7125",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "METROPOLITAN BEHAVIORAL HEALTH",
+      "address": "18001 ROTUNDA DRIVE",
+      "city": "DEARBORN",
+      "state": "MI",
+      "zip": "48124",
+      "phone": "(313) 633-2600",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DECKERVILLE": [
+    {
+      "name": "DECKERVILLE COMMUNITY HOSPITAL",
+      "address": "3559 PINE ST",
+      "city": "DECKERVILLE",
+      "state": "MI",
+      "zip": "48427",
+      "phone": "(810) 376-2835",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DETROIT": [
+    {
+      "name": "SINAI-GRACE HOSPITAL",
+      "address": "6071 W OUTER DRIVE",
+      "city": "DETROIT",
+      "state": "MI",
+      "zip": "48235",
+      "phone": "(313) 966-3300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HENRY FORD HEALTH HOSPITAL",
+      "address": "2799 W GRAND BLVD",
+      "city": "DETROIT",
+      "state": "MI",
+      "zip": "48202",
+      "phone": "(313) 916-2600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HARPER UNIVERSITY HOSPITAL",
+      "address": "3990 JOHN R STREET",
+      "city": "DETROIT",
+      "state": "MI",
+      "zip": "48201",
+      "phone": "(313) 745-6211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HENRY FORD HEALTH ST JOHN HOSPITAL",
+      "address": "22101 MOROSS RD",
+      "city": "DETROIT",
+      "state": "MI",
+      "zip": "48236",
+      "phone": "(313) 343-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DETROIT RECEIVING HOSPITAL",
+      "address": "4201 ST ANTOINE ST",
+      "city": "DETROIT",
+      "state": "MI",
+      "zip": "48201",
+      "phone": "(313) 745-2941",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KARMANOS CANCER CENTER",
+      "address": "4100 JOHN R",
+      "city": "DETROIT",
+      "state": "MI",
+      "zip": "48201",
+      "phone": "(800) 576-6266",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DETROIT (JOHN D. DINGELL) VA MEDICAL CENTER",
+      "address": "4646 JOHN R.",
+      "city": "DETROIT",
+      "state": "MI",
+      "zip": "48201",
+      "phone": "(313) 576-1000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDREN'S HOSPITAL OF MICHIGAN",
+      "address": "3901 BEAUBIEN STREET",
+      "city": "DETROIT",
+      "state": "MI",
+      "zip": "48201",
+      "phone": "(313) 745-5437",
+      "type": "Childrens",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BCA STONECREST CENTER",
+      "address": "15000 GRATIOT AVENUE",
+      "city": "DETROIT",
+      "state": "MI",
+      "zip": "48205",
+      "phone": "(313) 245-0600",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAMARITAN BEHAVIORAL CENTER",
+      "address": "5555 CONNER AVENUE, SUITE 3N",
+      "city": "DETROIT",
+      "state": "MI",
+      "zip": "48213",
+      "phone": "(313) 344-7730",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DOWAGIAC": [
+    {
+      "name": "ASCENSION BORGESS LEE HOSPITAL",
+      "address": "420 W HIGH ST",
+      "city": "DOWAGIAC",
+      "state": "MI",
+      "zip": "49047",
+      "phone": "(269) 782-8681",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EAST CHINA": [
+    {
+      "name": "ASCENSION RIVER DISTRICT HOSPITAL",
+      "address": "4100 RIVER RD",
+      "city": "EAST CHINA",
+      "state": "MI",
+      "zip": "48054",
+      "phone": "(810) 329-7111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EAST LANSING": [
+    {
+      "name": "BRIGHTWELL BEHAVIORAL HEALTH",
+      "address": "3512 COOLIDGE RD",
+      "city": "EAST LANSING",
+      "state": "MI",
+      "zip": "48823",
+      "phone": "(517) 375-7801",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EATON RAPIDS": [
+    {
+      "name": "EATON RAPIDS MEDICAL CENTER",
+      "address": "1500 S MAIN STREET",
+      "city": "EATON RAPIDS",
+      "state": "MI",
+      "zip": "48827",
+      "phone": "(517) 663-2671",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ESCANABA": [
+    {
+      "name": "OSF ST FRANCIS HOSPITAL AND MEDICAL GROUP",
+      "address": "3401 LUDINGTON ST",
+      "city": "ESCANABA",
+      "state": "MI",
+      "zip": "49829",
+      "phone": "(906) 786-3311",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FARMINGTON HILLS": [
+    {
+      "name": "BEAUMONT HOSPITAL - FARMINGTON HILLS",
+      "address": "28050 GRAND RIVER AVENUE",
+      "city": "FARMINGTON HILLS",
+      "state": "MI",
+      "zip": "48336",
+      "phone": "(248) 471-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FERNDALE": [
+    {
+      "name": "HENRY FORD HEALTH KINGSWOOD HOSPITAL",
+      "address": "10300 W EIGHT MILE ROAD",
+      "city": "FERNDALE",
+      "state": "MI",
+      "zip": "48220",
+      "phone": "(248) 398-3200",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FLINT": [
+    {
+      "name": "HURLEY MEDICAL CENTER",
+      "address": "ONE HURLEY PLAZA",
+      "city": "FLINT",
+      "state": "MI",
+      "zip": "48503",
+      "phone": "(810) 257-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MCLAREN FLINT",
+      "address": "401 S BALLENGER HIGHWAY",
+      "city": "FLINT",
+      "state": "MI",
+      "zip": "48532",
+      "phone": "(810) 342-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRANKFORT": [
+    {
+      "name": "PAUL OLIVER MEMORIAL HOSPITAL",
+      "address": "224 PARK AVENUE",
+      "city": "FRANKFORT",
+      "state": "MI",
+      "zip": "49635",
+      "phone": "(231) 352-2200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FREMONT": [
+    {
+      "name": "COREWELL HEALTH GERBER HOSPITAL",
+      "address": "212 S SULLIVAN ST",
+      "city": "FREMONT",
+      "state": "MI",
+      "zip": "49412",
+      "phone": "(231) 924-3300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GARDEN CITY": [
+    {
+      "name": "GARDEN CITY HOSPITAL",
+      "address": "6245 INKSTER RD",
+      "city": "GARDEN CITY",
+      "state": "MI",
+      "zip": "48135",
+      "phone": "(734) 421-3300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GAYLORD": [
+    {
+      "name": "MUNSON HEALTHCARE OTSEGO MEMORIAL HOSPITAL",
+      "address": "825 N CENTER AVE",
+      "city": "GAYLORD",
+      "state": "MI",
+      "zip": "49735",
+      "phone": "(989) 731-2100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLADWIN": [
+    {
+      "name": "MYMICHIGAN MEDICAL CENTER GLADWIN",
+      "address": "515 QUARTER STREET",
+      "city": "GLADWIN",
+      "state": "MI",
+      "zip": "48624",
+      "phone": "(989) 426-9286",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAND BLANC": [
+    {
+      "name": "ASCENSION GENESYS HOSPITAL",
+      "address": "ONE GENESYS PARKWAY",
+      "city": "GRAND BLANC",
+      "state": "MI",
+      "zip": "48439",
+      "phone": "(810) 606-6050",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAND HAVEN": [
+    {
+      "name": "TRINITY HEALTH GRAND HAVEN HOSPITAL",
+      "address": "1309 SHELDON RD",
+      "city": "GRAND HAVEN",
+      "state": "MI",
+      "zip": "49417",
+      "phone": "(616) 847-5268",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAND RAPIDS": [
+    {
+      "name": "SPECTRUM HEALTH",
+      "address": "100 MICHIGAN ST NE",
+      "city": "GRAND RAPIDS",
+      "state": "MI",
+      "zip": "49503",
+      "phone": "(616) 391-1774",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MERCY HEALTH SAINT MARY'S",
+      "address": "200 JEFFERSON AVENUE SE",
+      "city": "GRAND RAPIDS",
+      "state": "MI",
+      "zip": "49503",
+      "phone": "(616) 685-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PINE REST CHRISTIAN MENTAL HEALTH SERVICES",
+      "address": "300 - 68TH STREET, SE",
+      "city": "GRAND RAPIDS",
+      "state": "MI",
+      "zip": "49548",
+      "phone": "(616) 455-5000",
+      "type": "Psychiatric",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FOREST VIEW PSYCHIATRIC HOSPITAL",
+      "address": "1055 MEDICAL PARK SE",
+      "city": "GRAND RAPIDS",
+      "state": "MI",
+      "zip": "49546",
+      "phone": "(616) 942-9610",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAYLING": [
+    {
+      "name": "MUNSON HEALTHCARE GRAYLING HOSPITAL",
+      "address": "1100 E MICHIGAN AVE",
+      "city": "GRAYLING",
+      "state": "MI",
+      "zip": "49738",
+      "phone": "(989) 348-5461",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENVILLE": [
+    {
+      "name": "SPECTRUM HEALTH UNITED HOSPITAL",
+      "address": "615 S BOWER STREET",
+      "city": "GREENVILLE",
+      "state": "MI",
+      "zip": "48838",
+      "phone": "(616) 754-4691",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GROSSE POINTE": [
+    {
+      "name": "BEAUMONT HOSPITAL - GROSSE POINTE",
+      "address": "468 CADIEUX RD",
+      "city": "GROSSE POINTE",
+      "state": "MI",
+      "zip": "48230",
+      "phone": "(313) 473-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HANCOCK": [
+    {
+      "name": "UP HEALTH SYSTEM PORTAGE",
+      "address": "500 CAMPUS DRIVE",
+      "city": "HANCOCK",
+      "state": "MI",
+      "zip": "49930",
+      "phone": "(906) 483-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARBOR BEACH": [
+    {
+      "name": "HARBOR BEACH COMMUNITY HOSPITAL",
+      "address": "210 S FIRST ST",
+      "city": "HARBOR BEACH",
+      "state": "MI",
+      "zip": "48441",
+      "phone": "(517) 479-3201",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HASTINGS": [
+    {
+      "name": "COREWELL HEALTH PENNOCK HOSPITAL",
+      "address": "1009 W GREEN ST",
+      "city": "HASTINGS",
+      "state": "MI",
+      "zip": "49058",
+      "phone": "(269) 945-3451",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HILLSDALE": [
+    {
+      "name": "HILLSDALE HOSPITAL",
+      "address": "168 S HOWELL STREET",
+      "city": "HILLSDALE",
+      "state": "MI",
+      "zip": "49242",
+      "phone": "(517) 437-4451",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOLLAND": [
+    {
+      "name": "HOLLAND COMMUNITY HOSPITAL",
+      "address": "602 MICHIGAN AVE",
+      "city": "HOLLAND",
+      "state": "MI",
+      "zip": "49423",
+      "phone": "(616) 392-5141",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOWELL": [
+    {
+      "name": "SAINT JOSEPH MERCY LIVINGSTON HOSPITAL",
+      "address": "620 BYRON RD",
+      "city": "HOWELL",
+      "state": "MI",
+      "zip": "48843",
+      "phone": "(517) 545-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IONIA": [
+    {
+      "name": "SPARROW IONIA HOSPITAL",
+      "address": "3565 S STATE ROAD",
+      "city": "IONIA",
+      "state": "MI",
+      "zip": "48846",
+      "phone": "(616) 527-4200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IRON MOUNTAIN": [
+    {
+      "name": "DICKINSON COUNTY MEMORIAL HOSPITAL",
+      "address": "1721 S STEPHENSON AVE",
+      "city": "IRON MOUNTAIN",
+      "state": "MI",
+      "zip": "49801",
+      "phone": "(906) 774-1313",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "IRON MOUNTAIN MI VA MEDICAL CENTER",
+      "address": "325 EAST H STREET",
+      "city": "IRON MOUNTAIN",
+      "state": "MI",
+      "zip": "49801",
+      "phone": "(906) 774-3300",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IRON RIVER": [
+    {
+      "name": "ASPIRUS IRON RIVER HOSPITAL & CLINICS, INC",
+      "address": "1400 W ICE LAKE ROAD",
+      "city": "IRON RIVER",
+      "state": "MI",
+      "zip": "49935",
+      "phone": "(906) 265-6121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IRONWOOD": [
+    {
+      "name": "ASPIRUS IRONWOOD HOSPITAL",
+      "address": "N10561 GRAND VIEW LANE",
+      "city": "IRONWOOD",
+      "state": "MI",
+      "zip": "49938",
+      "phone": "(906) 932-2525",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ISHPEMING": [
+    {
+      "name": "BELL HOSPITAL",
+      "address": "901 LAKESHORE DRIVE",
+      "city": "ISHPEMING",
+      "state": "MI",
+      "zip": "49849",
+      "phone": "(906) 486-4431",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JACKSON": [
+    {
+      "name": "HENRY FORD ALLEGIANCE HEALTH",
+      "address": "205 N EAST AVE",
+      "city": "JACKSON",
+      "state": "MI",
+      "zip": "49201",
+      "phone": "(517) 788-4800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KALAMAZOO": [
+    {
+      "name": "BRONSON METHODIST HOSPITAL",
+      "address": "601 JOHN STREET",
+      "city": "KALAMAZOO",
+      "state": "MI",
+      "zip": "49007",
+      "phone": "(269) 341-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BORGESS MEDICAL CENTER",
+      "address": "1521 GULL ROAD",
+      "city": "KALAMAZOO",
+      "state": "MI",
+      "zip": "49048",
+      "phone": "(269) 226-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KALAMAZOO REGIONAL PSYCHIATRIC HOSPITAL",
+      "address": "1312 OAKLAND DR",
+      "city": "KALAMAZOO",
+      "state": "MI",
+      "zip": "49008",
+      "phone": "(269) 337-3309",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KALKASKA": [
+    {
+      "name": "KALKASKA MEMORIAL HEALTH CENTER",
+      "address": "419 S CORAL",
+      "city": "KALKASKA",
+      "state": "MI",
+      "zip": "49646",
+      "phone": "(231) 258-7500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "L' ANSE": [
+    {
+      "name": "BARAGA COUNTY MEMORIAL HOSPITAL",
+      "address": "18341 US HIGHWAY 41",
+      "city": "L' ANSE",
+      "state": "MI",
+      "zip": "49946",
+      "phone": "(906) 524-3300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LANSING": [
+    {
+      "name": "MCLAREN GREATER LANSING",
+      "address": "2900 COLLINS ROAD",
+      "city": "LANSING",
+      "state": "MI",
+      "zip": "48910",
+      "phone": "(517) 975-5600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EDWARD W SPARROW HOSPITAL",
+      "address": "1215 E MICHIGAN AVENUE",
+      "city": "LANSING",
+      "state": "MI",
+      "zip": "48912",
+      "phone": "(517) 364-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAPEER": [
+    {
+      "name": "MCLAREN LAPEER REGION",
+      "address": "1375 N MAIN ST",
+      "city": "LAPEER",
+      "state": "MI",
+      "zip": "48446",
+      "phone": "(810) 667-5500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAURIUM": [
+    {
+      "name": "ASPIRUS KEWEENAW HOSPITAL AND CLINICS",
+      "address": "205 OSCEOLA",
+      "city": "LAURIUM",
+      "state": "MI",
+      "zip": "49913",
+      "phone": "(906) 337-6500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LIVONIA": [
+    {
+      "name": "ST JOE MERCY HOSPITAL SYSTEM LIVONIA",
+      "address": "36475 FIVE MILE ROAD",
+      "city": "LIVONIA",
+      "state": "MI",
+      "zip": "48154",
+      "phone": "(734) 655-4800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LUDINGTON": [
+    {
+      "name": "COREWELL HEALTH LUDINGTON HOSPITAL",
+      "address": "ONE N ATKINSON DRIVE",
+      "city": "LUDINGTON",
+      "state": "MI",
+      "zip": "49431",
+      "phone": "(231) 843-2591",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANISTEE": [
+    {
+      "name": "MUNSON HEALTHCARE MANISTEE HOSPITAL",
+      "address": "1465 E PARKDALE AVE",
+      "city": "MANISTEE",
+      "state": "MI",
+      "zip": "49660",
+      "phone": "(231) 398-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANISTIQUE": [
+    {
+      "name": "SCHOOLCRAFT MEMORIAL HOSPITAL",
+      "address": "7870W US HIGHWAY 2",
+      "city": "MANISTIQUE",
+      "state": "MI",
+      "zip": "49854",
+      "phone": "(906) 341-3200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARLETTE": [
+    {
+      "name": "MARLETTE REGIONAL HOSPITAL",
+      "address": "2770 MAIN STREET",
+      "city": "MARLETTE",
+      "state": "MI",
+      "zip": "48453",
+      "phone": "(989) 635-4000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARQUETTE": [
+    {
+      "name": "UPHS MARQUETTE DLP HOSPITAL",
+      "address": "850 W BARAGA AVE",
+      "city": "MARQUETTE",
+      "state": "MI",
+      "zip": "49855",
+      "phone": "(906) 228-9440",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARSHALL": [
+    {
+      "name": "OAKLAWN HOSPITAL",
+      "address": "200 N MADISON",
+      "city": "MARSHALL",
+      "state": "MI",
+      "zip": "49068",
+      "phone": "(269) 781-4271",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIDLAND": [
+    {
+      "name": "MYMICHIGAN MEDICAL CENTER MIDLAND",
+      "address": "4000 WELLNESS DRIVE",
+      "city": "MIDLAND",
+      "state": "MI",
+      "zip": "48670",
+      "phone": "(989) 839-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONROE": [
+    {
+      "name": "PROMEDICA MONROE REGIONAL HOSPITAL",
+      "address": "718 N MACOMB ST",
+      "city": "MONROE",
+      "state": "MI",
+      "zip": "48162",
+      "phone": "(734) 240-8400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT CLEMENS": [
+    {
+      "name": "MCLAREN MACOMB",
+      "address": "1000 HARRINGTON ST",
+      "city": "MOUNT CLEMENS",
+      "state": "MI",
+      "zip": "48043",
+      "phone": "(586) 493-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT PLEASANT": [
+    {
+      "name": "MCLAREN CENTRAL MICHIGAN",
+      "address": "1221 SOUTH DRIVE",
+      "city": "MOUNT PLEASANT",
+      "state": "MI",
+      "zip": "48858",
+      "phone": "(989) 772-6700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MUNISING": [
+    {
+      "name": "MUNISING MEMORIAL HOSPITAL",
+      "address": "1500 SAND POINT RD",
+      "city": "MUNISING",
+      "state": "MI",
+      "zip": "49862",
+      "phone": "(906) 387-4110",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MUSKEGON": [
+    {
+      "name": "TRINITY HEALTH MUSKEGON HOSPITAL",
+      "address": "1500 E SHERMAN BLVD",
+      "city": "MUSKEGON",
+      "state": "MI",
+      "zip": "49441",
+      "phone": "(231) 726-3511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW BALTIMORE": [
+    {
+      "name": "HARBOR OAKS HOSPITAL",
+      "address": "35031 23 MILE RD",
+      "city": "NEW BALTIMORE",
+      "state": "MI",
+      "zip": "48047",
+      "phone": "(586) 725-5777",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWBERRY": [
+    {
+      "name": "HELEN NEWBERRY JOY HOSPITAL",
+      "address": "502 W HARRIE ST",
+      "city": "NEWBERRY",
+      "state": "MI",
+      "zip": "49868",
+      "phone": "(906) 293-9222",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OWOSSO": [
+    {
+      "name": "MEMORIAL HEALTHCARE",
+      "address": "826 WEST KING STREET",
+      "city": "OWOSSO",
+      "state": "MI",
+      "zip": "48867",
+      "phone": "(989) 723-5211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAW PAW": [
+    {
+      "name": "BRONSON LAKEVIEW HOSPITAL",
+      "address": "408 HAZEN STREET",
+      "city": "PAW PAW",
+      "state": "MI",
+      "zip": "49079",
+      "phone": "(269) 657-1400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PETOSKEY": [
+    {
+      "name": "MCLAREN NORTHERN MICHIGAN",
+      "address": "416 CONNABLE AVE",
+      "city": "PETOSKEY",
+      "state": "MI",
+      "zip": "49770",
+      "phone": "(231) 487-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PIGEON": [
+    {
+      "name": "SCHEURER HOSPITAL",
+      "address": "170 N CASEVILLE RD",
+      "city": "PIGEON",
+      "state": "MI",
+      "zip": "48755",
+      "phone": "(989) 453-3223",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PONTIAC": [
+    {
+      "name": "PONTIAC GENERAL HOSPITAL",
+      "address": "461 w huron st",
+      "city": "PONTIAC",
+      "state": "MI",
+      "zip": "48341",
+      "phone": "(248) 857-7200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TRINITY HEALTH OAKLAND HOSPITAL",
+      "address": "44405 WOODWARD AVE",
+      "city": "PONTIAC",
+      "state": "MI",
+      "zip": "48341",
+      "phone": "(248) 858-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MCLAREN OAKLAND",
+      "address": "50 N PERRY ST",
+      "city": "PONTIAC",
+      "state": "MI",
+      "zip": "48342",
+      "phone": "(248) 338-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORT HURON": [
+    {
+      "name": "LAKE HURON MEDICAL CENTER",
+      "address": "2601 ELECTRIC AVENUE",
+      "city": "PORT HURON",
+      "state": "MI",
+      "zip": "48060",
+      "phone": "(810) 985-1500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MCLAREN PORT HURON",
+      "address": "1221 PINE GROVE AVE",
+      "city": "PORT HURON",
+      "state": "MI",
+      "zip": "48061",
+      "phone": "(810) 987-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REED CITY": [
+    {
+      "name": "COREWELL HEALTH REED CITY HOSPITAL",
+      "address": "300 N PATTERSON, PO BOX 75",
+      "city": "REED CITY",
+      "state": "MI",
+      "zip": "49677",
+      "phone": "(616) 225-6901",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROCHESTER": [
+    {
+      "name": "ASCENSION PROVIDENCE ROCHESTER HOSPITAL",
+      "address": "1101 W UNIVERSITY DRIVE",
+      "city": "ROCHESTER",
+      "state": "MI",
+      "zip": "48307",
+      "phone": "(248) 652-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROYAL OAK": [
+    {
+      "name": "BEAUMONT HOSPITAL ROYAL OAK",
+      "address": "3601 W THIRTEEN MILE RD",
+      "city": "ROYAL OAK",
+      "state": "MI",
+      "zip": "48073",
+      "phone": "(248) 898-5400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAGINAW": [
+    {
+      "name": "COVENANT MEDICAL CENTER",
+      "address": "1447 N HARRISON",
+      "city": "SAGINAW",
+      "state": "MI",
+      "zip": "48602",
+      "phone": "(989) 583-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASCENSION ST MARY'S HOSPITAL",
+      "address": "800 S WASHINGTON AVENUE",
+      "city": "SAGINAW",
+      "state": "MI",
+      "zip": "48601",
+      "phone": "(989) 776-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HEALTHSOURCE SAGINAW",
+      "address": "3340 HOSPITAL ROAD",
+      "city": "SAGINAW",
+      "state": "MI",
+      "zip": "48603",
+      "phone": "(989) 790-7888",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT IGNACE": [
+    {
+      "name": "MACKINAC STRAITS HOSPITAL AND HEALTH CENTER",
+      "address": "1140 N STATE STREET",
+      "city": "SAINT IGNACE",
+      "state": "MI",
+      "zip": "49781",
+      "phone": "(906) 643-8585",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT JOHNS": [
+    {
+      "name": "SPARROW CLINTON HOSPITAL",
+      "address": "805 S OAKLAND",
+      "city": "SAINT JOHNS",
+      "state": "MI",
+      "zip": "48879",
+      "phone": "(989) 227-3400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CEDAR CREEK HOSPITAL",
+      "address": "101 WEST TOWNSEND ROAD",
+      "city": "SAINT JOHNS",
+      "state": "MI",
+      "zip": "48879",
+      "phone": "(989) 403-6022",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALINE": [
+    {
+      "name": "THE CENTER FOR FORENSIC PSYCHIATRY",
+      "address": "8303 PLATT ROAD",
+      "city": "SALINE",
+      "state": "MI",
+      "zip": "48176",
+      "phone": "(734) 429-2531",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANDUSKY": [
+    {
+      "name": "MCKENZIE HEALTH SYSTEM",
+      "address": "120 N DELAWARE STREET",
+      "city": "SANDUSKY",
+      "state": "MI",
+      "zip": "48471",
+      "phone": "(810) 648-3770",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAULT STE MARIE": [
+    {
+      "name": "CHIPPEWA COUNTY WAR MEMORIAL HOSPITAL",
+      "address": "500 OSBORN BLVD",
+      "city": "SAULT STE MARIE",
+      "state": "MI",
+      "zip": "49783",
+      "phone": "(906) 635-4460",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHELBY": [
+    {
+      "name": "MERCY HEALTH LAKESHORE CAMPUS",
+      "address": "72 SOUTH STATE STREET",
+      "city": "SHELBY",
+      "state": "MI",
+      "zip": "49455",
+      "phone": "(231) 861-2156",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHERIDAN": [
+    {
+      "name": "SHERIDAN COMMUNITY HOSPITAL",
+      "address": "301 N MAIN ST",
+      "city": "SHERIDAN",
+      "state": "MI",
+      "zip": "48884",
+      "phone": "(989) 291-3261",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTHFIELD": [
+    {
+      "name": "ASCENSION PROVIDENCE HOSPITAL, SOUTHFIELD AND NOVI",
+      "address": "16001 W NINE MILE RD",
+      "city": "SOUTHFIELD",
+      "state": "MI",
+      "zip": "48075",
+      "phone": "(248) 849-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "STRAITH HOSPITAL FOR SPECIAL SURGERY",
+      "address": "23901 LAHSER",
+      "city": "SOUTHFIELD",
+      "state": "MI",
+      "zip": "48033",
+      "phone": "(248) 357-3360",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SURGEONS CHOICE MEDICAL CENTER",
+      "address": "22401 FOSTER WINTER DRIVE",
+      "city": "SOUTHFIELD",
+      "state": "MI",
+      "zip": "48075",
+      "phone": "(248) 423-5110",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ST JOSEPH": [
+    {
+      "name": "LAKELAND HOSPITAL, ST JOSEPH",
+      "address": "1234 NAPIER AVENUE",
+      "city": "ST JOSEPH",
+      "state": "MI",
+      "zip": "49085",
+      "phone": "(269) 983-8300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STANDISH": [
+    {
+      "name": "SAINT MARY'S STANDISH COMMUNITY HOSPITAL",
+      "address": "805 W CEDAR ST",
+      "city": "STANDISH",
+      "state": "MI",
+      "zip": "48658",
+      "phone": "(989) 846-3400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STURGIS": [
+    {
+      "name": "STURGIS HOSPITAL",
+      "address": "916 MYRTLE AVE",
+      "city": "STURGIS",
+      "state": "MI",
+      "zip": "49091",
+      "phone": "(269) 651-7824",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAWAS CITY": [
+    {
+      "name": "TAWAS ST JOSEPH HOSPITAL",
+      "address": "200 HEMLOCK",
+      "city": "TAWAS CITY",
+      "state": "MI",
+      "zip": "48764",
+      "phone": "(989) 362-9301",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAYLOR": [
+    {
+      "name": "BEAUMONT HOSPITAL - TAYLOR",
+      "address": "10000 TELEGRAPH ROAD",
+      "city": "TAYLOR",
+      "state": "MI",
+      "zip": "48180",
+      "phone": "(313) 295-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "THREE RIVERS": [
+    {
+      "name": "THREE RIVERS HEALTH",
+      "address": "701 S HEALTH PARKWAY",
+      "city": "THREE RIVERS",
+      "state": "MI",
+      "zip": "49093",
+      "phone": "(269) 273-9602",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TRAVERSE CITY": [
+    {
+      "name": "MUNSON MEDICAL CENTER",
+      "address": "1105 SIXTH STREET",
+      "city": "TRAVERSE CITY",
+      "state": "MI",
+      "zip": "49684",
+      "phone": "(231) 935-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TRENTON": [
+    {
+      "name": "COREWELL HEALTH TRENTON HOSPITAL",
+      "address": "5450 FORT STREET",
+      "city": "TRENTON",
+      "state": "MI",
+      "zip": "48183",
+      "phone": "(734) 671-3800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TROY": [
+    {
+      "name": "BEAUMONT HOSPITAL, TROY",
+      "address": "44201 DEQUINDRE ROAD",
+      "city": "TROY",
+      "state": "MI",
+      "zip": "48085",
+      "phone": "(248) 964-8800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "W BLOOMFIELD": [
+    {
+      "name": "HENRY FORD HEALTH WEST BLOOMFIELD HOSPITAL",
+      "address": "6777 WEST MAPLE ROAD",
+      "city": "W BLOOMFIELD",
+      "state": "MI",
+      "zip": "48322",
+      "phone": "(248) 325-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WARREN": [
+    {
+      "name": "Henry Ford Health Warren Hospital",
+      "address": "11800 EAST TWELVE MILE ROAD",
+      "city": "WARREN",
+      "state": "MI",
+      "zip": "48093",
+      "phone": "(586) 573-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHEAST MICHIGAN SURGICAL HOSPITAL LLC",
+      "address": "21230 DEQUINDRE ROAD",
+      "city": "WARREN",
+      "state": "MI",
+      "zip": "48091",
+      "phone": "(586) 427-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE BEHAVIORAL CENTER OF MICHIGAN",
+      "address": "4050 E 12 MILE ROAD",
+      "city": "WARREN",
+      "state": "MI",
+      "zip": "48092",
+      "phone": "(586) 261-2266",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WATERVLIET": [
+    {
+      "name": "COREWELL HEALTH WATERVLIET HOSPITAL",
+      "address": "400 MEDICAL PARK DR",
+      "city": "WATERVLIET",
+      "state": "MI",
+      "zip": "49098",
+      "phone": "(269) 463-3111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAYNE": [
+    {
+      "name": "COREWELL HEALTH WAYNE HOSPITAL",
+      "address": "33155 ANNAPOLIS AVE",
+      "city": "WAYNE",
+      "state": "MI",
+      "zip": "48184",
+      "phone": "(734) 467-4175",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST BRANCH": [
+    {
+      "name": "MYMICHIGAN MEDICAL CENTER WEST BRANCH",
+      "address": "2463 SOUTH M-30",
+      "city": "WEST BRANCH",
+      "state": "MI",
+      "zip": "48661",
+      "phone": "(989) 345-3660",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTLAND": [
+    {
+      "name": "WALTER P REUTHER PSYCHIATRIC HOSPITAL",
+      "address": "30901 PALMER RD",
+      "city": "WESTLAND",
+      "state": "MI",
+      "zip": "48186",
+      "phone": "(734) 367-8400",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WYANDOTTE": [
+    {
+      "name": "WYANDOTTE HOSPITAL AND MEDICAL CENTER",
+      "address": "2333 BIDDLE AVE",
+      "city": "WYANDOTTE",
+      "state": "MI",
+      "zip": "48192",
+      "phone": "(734) 246-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WYOMING": [
+    {
+      "name": "UNIVERSITY OF MICHIGAN HEALTH - WEST",
+      "address": "5900 BYRON CENTER AVENUE, SW",
+      "city": "WYOMING",
+      "state": "MI",
+      "zip": "49519",
+      "phone": "(616) 252-7200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YPSILANTI": [
+    {
+      "name": "FOREST HEALTH MEDICAL CENTER",
+      "address": "135 S PROSPECT ST",
+      "city": "YPSILANTI",
+      "state": "MI",
+      "zip": "48198",
+      "phone": "(734) 547-4700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ZEELAND": [
+    {
+      "name": "COREWELL HEALTH ZEELAND HOSPITAL",
+      "address": "8333 FELCH ST",
+      "city": "ZEELAND",
+      "state": "MI",
+      "zip": "49464",
+      "phone": "(616) 772-4644",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

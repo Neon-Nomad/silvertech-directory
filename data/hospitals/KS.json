@@ -1,0 +1,2045 @@
+{
+  "ABILENE": [
+    {
+      "name": "MEMORIAL HOSPITAL",
+      "address": "511 NE 10TH ST",
+      "city": "ABILENE",
+      "state": "KS",
+      "zip": "67410",
+      "phone": "(785) 263-2100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANDOVER": [
+    {
+      "name": "KANSAS MEDICAL CENTER LLC",
+      "address": "1124 WEST 21ST STREET",
+      "city": "ANDOVER",
+      "state": "KS",
+      "zip": "67002",
+      "phone": "(316) 300-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANTHONY": [
+    {
+      "name": "HOSPITAL DISTRICT #6 PATTERSON HEALTH CENTER",
+      "address": "485 N. KS HWY 2",
+      "city": "ANTHONY",
+      "state": "KS",
+      "zip": "67003",
+      "phone": "(620) 914-1200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARKANSAS CITY": [
+    {
+      "name": "SOUTH CENTRAL KANSAS MEDICAL CENTER",
+      "address": "6401 PATTERSON PARKWAY",
+      "city": "ARKANSAS CITY",
+      "state": "KS",
+      "zip": "67005",
+      "phone": "(620) 442-2500",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ASHLAND": [
+    {
+      "name": "ASHLAND HEALTH CENTER",
+      "address": "625 SOUTH KENTUCKY STREET",
+      "city": "ASHLAND",
+      "state": "KS",
+      "zip": "67831",
+      "phone": "(620) 635-2241",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ATCHISON": [
+    {
+      "name": "AMBERWELL ATCHISON ASSOCIATION",
+      "address": "800 RAVEN HILL DRIVE",
+      "city": "ATCHISON",
+      "state": "KS",
+      "zip": "66002",
+      "phone": "(913) 367-2131",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ATWOOD": [
+    {
+      "name": "RAWLINS COUNTY HEALTH CENTER",
+      "address": "707 GRANT ST",
+      "city": "ATWOOD",
+      "state": "KS",
+      "zip": "67730",
+      "phone": "(785) 626-3211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEL AIRE": [
+    {
+      "name": "ST VERONICA",
+      "address": "6700 E 45TH ST N",
+      "city": "BEL AIRE",
+      "state": "KS",
+      "zip": "67226",
+      "phone": "(316) 744-2020",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELLEVILLE": [
+    {
+      "name": "REPUBLIC COUNTY HOSPITAL",
+      "address": "2420 G STREET",
+      "city": "BELLEVILLE",
+      "state": "KS",
+      "zip": "66935",
+      "phone": "(785) 527-2254",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELOIT": [
+    {
+      "name": "MITCHELL COUNTY HOSPITAL HEALTH SYSTEMS",
+      "address": "400 W 8TH STREET, P O BOX 399",
+      "city": "BELOIT",
+      "state": "KS",
+      "zip": "67420",
+      "phone": "(785) 738-2266",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURLINGTON": [
+    {
+      "name": "COFFEY COUNTY HOSPITAL",
+      "address": "801 N FOURTH STREET",
+      "city": "BURLINGTON",
+      "state": "KS",
+      "zip": "66839",
+      "phone": "(620) 364-2121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CALDWELL": [
+    {
+      "name": "CALDWELL REGIONAL MEDICAL CENTER",
+      "address": "761 W 175TH ST S",
+      "city": "CALDWELL",
+      "state": "KS",
+      "zip": "67022",
+      "phone": "(620) 845-6492",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHANUTE": [
+    {
+      "name": "NEOSHO MEMORIAL REGIONAL MEDICAL CENTER",
+      "address": "629 SOUTH PLUMMER AVE",
+      "city": "CHANUTE",
+      "state": "KS",
+      "zip": "66720",
+      "phone": "(620) 431-4000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLAY CENTER": [
+    {
+      "name": "CLAY COUNTY MEDICAL CENTER",
+      "address": "617 LIBERTY",
+      "city": "CLAY CENTER",
+      "state": "KS",
+      "zip": "67432",
+      "phone": "(785) 632-2144",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLBY": [
+    {
+      "name": "CITIZENS MEDICAL CENTER",
+      "address": "100 E COLLEGE DRIVE",
+      "city": "COLBY",
+      "state": "KS",
+      "zip": "67701",
+      "phone": "(785) 462-7511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLDWATER": [
+    {
+      "name": "COMANCHE COUNTY HOSPITAL",
+      "address": "202 S FRISCO STREET",
+      "city": "COLDWATER",
+      "state": "KS",
+      "zip": "67029",
+      "phone": "(620) 582-2144",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUMBUS": [
+    {
+      "name": "MERCY HOSPITAL COLUMBUS",
+      "address": "220 N PENNSYLVANIA AVENUE",
+      "city": "COLUMBUS",
+      "state": "KS",
+      "zip": "66725",
+      "phone": "(620) 429-2545",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CONCORDIA": [
+    {
+      "name": "CLOUD COUNTY HEALTH CENTER",
+      "address": "155 WEST COLLEGE DRIVE",
+      "city": "CONCORDIA",
+      "state": "KS",
+      "zip": "66901",
+      "phone": "(785) 243-1234",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COUNCIL GROVE": [
+    {
+      "name": "MORRIS COUNTY HOSPITAL",
+      "address": "600 N WASHINGTON ST",
+      "city": "COUNCIL GROVE",
+      "state": "KS",
+      "zip": "66846",
+      "phone": "(620) 767-6811",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DERBY": [
+    {
+      "name": "ROCK REGIONAL HOSPITAL, LLC",
+      "address": "3251 NORTH ROCK ROAD",
+      "city": "DERBY",
+      "state": "KS",
+      "zip": "67037",
+      "phone": "(316) 425-2400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DIGHTON": [
+    {
+      "name": "LANE COUNTY HOSPITAL",
+      "address": "235 WEST VINE  PO BOX 969",
+      "city": "DIGHTON",
+      "state": "KS",
+      "zip": "67839",
+      "phone": "(620) 397-5321",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DODGE CITY": [
+    {
+      "name": "CENTURA ST. CATHERINE-DODGE CITY",
+      "address": "3001 AVENUE A",
+      "city": "DODGE CITY",
+      "state": "KS",
+      "zip": "67801",
+      "phone": "(620) 225-8400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EL DORADO": [
+    {
+      "name": "SUSAN B ALLEN MEMORIAL HOSPITAL",
+      "address": "720 W CENTRAL ST",
+      "city": "EL DORADO",
+      "state": "KS",
+      "zip": "67042",
+      "phone": "(316) 321-3300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELKHART": [
+    {
+      "name": "MORTON COUNTY HOSPITAL",
+      "address": "445 HILLTOP STREET",
+      "city": "ELKHART",
+      "state": "KS",
+      "zip": "67950",
+      "phone": "(620) 697-2141",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELLINWOOD": [
+    {
+      "name": "ELLINWOOD DISTRICT HOSPITAL",
+      "address": "605 N MAIN STREET",
+      "city": "ELLINWOOD",
+      "state": "KS",
+      "zip": "67526",
+      "phone": "(620) 564-2548",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELLSWORTH": [
+    {
+      "name": "ELLSWORTH COUNTY MEDICAL CENTER",
+      "address": "1604 AYLWARD AVENUE",
+      "city": "ELLSWORTH",
+      "state": "KS",
+      "zip": "67439",
+      "phone": "(785) 472-3111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EMPORIA": [
+    {
+      "name": "NEWMAN REGIONAL HEALTH",
+      "address": "1201 WEST 12TH AVENUE",
+      "city": "EMPORIA",
+      "state": "KS",
+      "zip": "66801",
+      "phone": "(620) 343-6800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EUREKA": [
+    {
+      "name": "GREENWOOD COUNTY HOSPITAL",
+      "address": "100 W 16TH STREET",
+      "city": "EUREKA",
+      "state": "KS",
+      "zip": "67045",
+      "phone": "(620) 583-7451",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FREDONIA": [
+    {
+      "name": "FREDONIA REGIONAL HOSPITAL",
+      "address": "1527 MADISON",
+      "city": "FREDONIA",
+      "state": "KS",
+      "zip": "66736",
+      "phone": "(620) 378-2121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Fort Riley": [
+    {
+      "name": "Irwin ACH (FT Riley)",
+      "address": "650 Huebner Rd",
+      "city": "Fort Riley",
+      "state": "KS",
+      "zip": "66442",
+      "phone": "(785) 239-7000",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GALENA": [
+    {
+      "name": "MERCY SPECIALTY HOSPITAL SOUTHEAST KANSAS",
+      "address": "1619 K 66",
+      "city": "GALENA",
+      "state": "KS",
+      "zip": "66739",
+      "phone": "(620) 783-1732",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GARDEN CITY": [
+    {
+      "name": "ST. CATHERINE HOSPITAL - GARDEN CITY",
+      "address": "401 EAST SPRUCE",
+      "city": "GARDEN CITY",
+      "state": "KS",
+      "zip": "67846",
+      "phone": "(620) 225-8400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GARNETT": [
+    {
+      "name": "ANDERSON COUNTY HOSPITAL",
+      "address": "421 S MAPLE",
+      "city": "GARNETT",
+      "state": "KS",
+      "zip": "66032",
+      "phone": "(785) 448-3131",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GIRARD": [
+    {
+      "name": "GIRARD MEDICAL CENTER",
+      "address": "302 NORTH HOSPITAL DRIVE",
+      "city": "GIRARD",
+      "state": "KS",
+      "zip": "66743",
+      "phone": "(620) 724-8291",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GOODLAND": [
+    {
+      "name": "GOODLAND REGIONAL MEDICAL CENTER",
+      "address": "220 WEST SECOND STREET",
+      "city": "GOODLAND",
+      "state": "KS",
+      "zip": "67735",
+      "phone": "(785) 890-3625",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREAT BEND": [
+    {
+      "name": "UNIVERSITY  OF KS HLTH SYSTEM GREAT BEND CAMPUS",
+      "address": "514 CLEVELAND STREET",
+      "city": "GREAT BEND",
+      "state": "KS",
+      "zip": "67530",
+      "phone": "(620) 792-8833",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENSBURG": [
+    {
+      "name": "KIOWA COUNTY MEMORIAL HOSPITAL",
+      "address": "721 WEST KANSAS AVE",
+      "city": "GREENSBURG",
+      "state": "KS",
+      "zip": "67054",
+      "phone": "(620) 723-3341",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HANOVER": [
+    {
+      "name": "HANOVER HOSPITAL",
+      "address": "205 S HANOVER STREET",
+      "city": "HANOVER",
+      "state": "KS",
+      "zip": "66945",
+      "phone": "(785) 337-2214",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAYS": [
+    {
+      "name": "HAYS MEDICAL CENTER",
+      "address": "2220 CANTERBURY DRIVE",
+      "city": "HAYS",
+      "state": "KS",
+      "zip": "67601",
+      "phone": "(785) 623-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HIAWATHA": [
+    {
+      "name": "HIAWATHA COMMUNITY HOSPITAL",
+      "address": "300 UTAH STREET",
+      "city": "HIAWATHA",
+      "state": "KS",
+      "zip": "66434",
+      "phone": "(785) 742-2131",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HILL CITY": [
+    {
+      "name": "GRAHAM COUNTY HOSPITAL",
+      "address": "304 WEST PROUT STREET",
+      "city": "HILL CITY",
+      "state": "KS",
+      "zip": "67642",
+      "phone": "(785) 421-2121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HILLSBORO": [
+    {
+      "name": "HILLSBORO COMMUNITY HOSPITAL",
+      "address": "101 INDUSTRIAL ROAD",
+      "city": "HILLSBORO",
+      "state": "KS",
+      "zip": "67063",
+      "phone": "(620) 947-3114",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOISINGTON": [
+    {
+      "name": "CLARA BARTON HOSPITAL",
+      "address": "250 W 9TH STREET",
+      "city": "HOISINGTON",
+      "state": "KS",
+      "zip": "67544",
+      "phone": "(620) 653-2114",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOLTON": [
+    {
+      "name": "HOLTON COMMUNITY HOSPITAL",
+      "address": "1110 COLUMBINE DRIVE",
+      "city": "HOLTON",
+      "state": "KS",
+      "zip": "66436",
+      "phone": "(785) 364-2116",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOXIE": [
+    {
+      "name": "SHERIDAN COUNTY HOSPITAL",
+      "address": "826  18TH STREET",
+      "city": "HOXIE",
+      "state": "KS",
+      "zip": "67740",
+      "phone": "(785) 675-3281",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUGOTON": [
+    {
+      "name": "STEVENS COUNTY HOSPITAL",
+      "address": "1006 SOUTH JACKSON STREET",
+      "city": "HUGOTON",
+      "state": "KS",
+      "zip": "67951",
+      "phone": "(620) 544-8511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUTCHINSON": [
+    {
+      "name": "HUTCHINSON REGIONAL MEDICAL CENTER INC",
+      "address": "1701 E 23RD AVENUE",
+      "city": "HUTCHINSON",
+      "state": "KS",
+      "zip": "67502",
+      "phone": "(620) 665-2001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUMMIT SURGICAL, LLC",
+      "address": "1818 EAST 23RD AVENUE",
+      "city": "HUTCHINSON",
+      "state": "KS",
+      "zip": "67502",
+      "phone": "(620) 663-4800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IOLA": [
+    {
+      "name": "ALLEN COUNTY REGIONAL HOSPITAL",
+      "address": "3066 NORTH KENTUCKY STREET",
+      "city": "IOLA",
+      "state": "KS",
+      "zip": "66749",
+      "phone": "(620) 365-1021",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JETMORE": [
+    {
+      "name": "HODGEMAN COUNTY HEALTH CENTER",
+      "address": "809 BRAMLEY",
+      "city": "JETMORE",
+      "state": "KS",
+      "zip": "67854",
+      "phone": "(620) 357-8361",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JOHNSON": [
+    {
+      "name": "STANTON COUNTY HOSPITAL",
+      "address": "404 N CHESTNUT",
+      "city": "JOHNSON",
+      "state": "KS",
+      "zip": "67855",
+      "phone": "(620) 492-6250",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JUNCTION CITY": [
+    {
+      "name": "STORMONT VAIL HEALTH FLINT HILLS, LLC",
+      "address": "1102 ST MARY'S ROAD",
+      "city": "JUNCTION CITY",
+      "state": "KS",
+      "zip": "66441",
+      "phone": "(785) 210-3303",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KANSAS CITY": [
+    {
+      "name": "UNIVERSITY OF KANSAS HOSPITAL",
+      "address": "4000 CAMBRIDGE STREET",
+      "city": "KANSAS CITY",
+      "state": "KS",
+      "zip": "66160",
+      "phone": "(913) 588-7332",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PROVIDENCE MEDICAL CENTER",
+      "address": "8929 PARALLEL PARKWAY",
+      "city": "KANSAS CITY",
+      "state": "KS",
+      "zip": "66112",
+      "phone": "(913) 596-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KINGMAN": [
+    {
+      "name": "KINGMAN HEALTHCARE CENTER",
+      "address": "750 W AVE D",
+      "city": "KINGMAN",
+      "state": "KS",
+      "zip": "67068",
+      "phone": "(620) 532-3147",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KINSLEY": [
+    {
+      "name": "EDWARDS COUNTY MEDICAL CENTER",
+      "address": "620 WEST EIGHTH STREET",
+      "city": "KINSLEY",
+      "state": "KS",
+      "zip": "67547",
+      "phone": "(620) 659-3621",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KIOWA": [
+    {
+      "name": "KIOWA DISTRICT HOSPITAL",
+      "address": "1002 SOUTH 4TH STREET",
+      "city": "KIOWA",
+      "state": "KS",
+      "zip": "67070",
+      "phone": "(620) 825-4131",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LA CROSSE": [
+    {
+      "name": "RUSH COUNTY MEMORIAL HOSPITAL",
+      "address": "801 LOCUST ST",
+      "city": "LA CROSSE",
+      "state": "KS",
+      "zip": "67548",
+      "phone": "(785) 222-2545",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKIN": [
+    {
+      "name": "KEARNY COUNTY HOSPITAL",
+      "address": "500 THORPE STREET",
+      "city": "LAKIN",
+      "state": "KS",
+      "zip": "67860",
+      "phone": "(620) 355-7111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LARNED": [
+    {
+      "name": "PAWNEE VALLEY COMMUNITY HOSPITAL",
+      "address": "923 CARROLL AVENUE",
+      "city": "LARNED",
+      "state": "KS",
+      "zip": "67550",
+      "phone": "(620) 285-3162",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LARNED STATE HOSPITAL",
+      "address": "1301 KS HIGHWAY 264",
+      "city": "LARNED",
+      "state": "KS",
+      "zip": "67550",
+      "phone": "(620) 285-2131",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAWRENCE": [
+    {
+      "name": "LMH",
+      "address": "325 MAINE STREET",
+      "city": "LAWRENCE",
+      "state": "KS",
+      "zip": "66044",
+      "phone": "(785) 505-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEAVENWORTH": [
+    {
+      "name": "SAINT JOHN HOSPITAL",
+      "address": "3500 SOUTH 4TH STREET",
+      "city": "LEAVENWORTH",
+      "state": "KS",
+      "zip": "66048",
+      "phone": "(913) 680-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEAWOOD": [
+    {
+      "name": "KANSAS CITY ORTHOPAEDIC INSTITUTE",
+      "address": "3651 COLLEGE BLVD",
+      "city": "LEAWOOD",
+      "state": "KS",
+      "zip": "66211",
+      "phone": "(913) 319-7633",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASCENTIST HOSPITAL LLC",
+      "address": "4901 COLLEGE BLVD",
+      "city": "LEAWOOD",
+      "state": "KS",
+      "zip": "66211",
+      "phone": "(913) 529-1801",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LENEXA": [
+    {
+      "name": "MINIMALLY INVASIVE SURGERY HOSPITAL",
+      "address": "11217 LAKEVIEW AVENUE",
+      "city": "LENEXA",
+      "state": "KS",
+      "zip": "66219",
+      "phone": "(913) 322-7401",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEOTI": [
+    {
+      "name": "WICHITA COUNTY HEALTH CENTER",
+      "address": "211 E EARL STREET",
+      "city": "LEOTI",
+      "state": "KS",
+      "zip": "67861",
+      "phone": "(620) 375-2233",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LIBERAL": [
+    {
+      "name": "SOUTHWEST MEDICAL CENTER",
+      "address": "315 WEST 15TH STREET",
+      "city": "LIBERAL",
+      "state": "KS",
+      "zip": "67901",
+      "phone": "(620) 624-1651",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LINCOLN": [
+    {
+      "name": "LINCOLN COUNTY HOSPITAL",
+      "address": "624 N SECOND",
+      "city": "LINCOLN",
+      "state": "KS",
+      "zip": "67455",
+      "phone": "(785) 524-4403",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LINDSBORG": [
+    {
+      "name": "LINDSBORG COMMUNITY HOSPITAL",
+      "address": "605 W LINCOLN STREET",
+      "city": "LINDSBORG",
+      "state": "KS",
+      "zip": "67456",
+      "phone": "(785) 227-3308",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LYONS": [
+    {
+      "name": "HOSPITAL DISTRICT #1 OF RICE COUNTY",
+      "address": "619 SOUTH CLARK AVENUE",
+      "city": "LYONS",
+      "state": "KS",
+      "zip": "67554",
+      "phone": "(620) 257-5173",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANHATTAN": [
+    {
+      "name": "ASCENSION VIA CHRISTI HOSPITAL MANHATTAN, INC",
+      "address": "1823 COLLEGE AVE",
+      "city": "MANHATTAN",
+      "state": "KS",
+      "zip": "66502",
+      "phone": "(785) 776-2831",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MANHATTAN SURGICAL HOSPITAL LLC",
+      "address": "1829 COLLEGE AVENUE",
+      "city": "MANHATTAN",
+      "state": "KS",
+      "zip": "66502",
+      "phone": "(785) 776-5100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANKATO": [
+    {
+      "name": "JEWELL COUNTY HOSPITAL",
+      "address": "100 CRESTVUE AVE",
+      "city": "MANKATO",
+      "state": "KS",
+      "zip": "66956",
+      "phone": "(785) 378-3137",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARION": [
+    {
+      "name": "ST LUKE HOSPITAL & LIVING CENTER",
+      "address": "535 SOUTH FREEBORN",
+      "city": "MARION",
+      "state": "KS",
+      "zip": "66861",
+      "phone": "(620) 382-2177",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARYSVILLE": [
+    {
+      "name": "COMMUNITY MEMORIAL HEALTHCARE, INC.",
+      "address": "708 N 18TH STREET",
+      "city": "MARYSVILLE",
+      "state": "KS",
+      "zip": "66508",
+      "phone": "(785) 562-2311",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MCPHERSON": [
+    {
+      "name": "MCPHERSON HOSPITAL",
+      "address": "1000 HOSPITAL DRIVE",
+      "city": "MCPHERSON",
+      "state": "KS",
+      "zip": "67460",
+      "phone": "(620) 241-2250",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MEADE": [
+    {
+      "name": "MEADE DISTRICT HOSPITAL",
+      "address": "510 EAST CARTHAGE",
+      "city": "MEADE",
+      "state": "KS",
+      "zip": "67864",
+      "phone": "(620) 873-2141",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MEDICINE LODGE": [
+    {
+      "name": "MEDICINE LODGE MEMORIAL HOSPITAL",
+      "address": "710 N WALNUT STREET",
+      "city": "MEDICINE LODGE",
+      "state": "KS",
+      "zip": "67104",
+      "phone": "(620) 886-3771",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MINNEAPOLIS": [
+    {
+      "name": "OTTAWA COUNTY HEALTH CENTER",
+      "address": "215 E 8TH STREET",
+      "city": "MINNEAPOLIS",
+      "state": "KS",
+      "zip": "67467",
+      "phone": "(785) 392-2122",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MINNEOLA": [
+    {
+      "name": "MINNEOLA DISTRICT HOSPITAL",
+      "address": "212 MAIN",
+      "city": "MINNEOLA",
+      "state": "KS",
+      "zip": "67865",
+      "phone": "(620) 885-4264",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONUMENT": [
+    {
+      "name": "DECATUR HEALTH",
+      "address": "810 W  COLUMBIA STREET",
+      "city": "MONUMENT",
+      "state": "KS",
+      "zip": "67747",
+      "phone": "(785) 475-2208",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNDRIDGE": [
+    {
+      "name": "MERCY HOSPITAL, INC",
+      "address": "218 E PACK STREET",
+      "city": "MOUNDRIDGE",
+      "state": "KS",
+      "zip": "67107",
+      "phone": "(620) 345-6391",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEODESHA": [
+    {
+      "name": "WILSON MEDICAL CENTER",
+      "address": "2600 OTTAWA ROAD",
+      "city": "NEODESHA",
+      "state": "KS",
+      "zip": "66757",
+      "phone": "(620) 325-2611",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NESS CITY": [
+    {
+      "name": "NESS COUNTY HOSPITAL DISTRICT #2",
+      "address": "312 CUSTER STREET",
+      "city": "NESS CITY",
+      "state": "KS",
+      "zip": "67560",
+      "phone": "(785) 798-2291",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWTON": [
+    {
+      "name": "NMC HEALTH",
+      "address": "600 MEDICAL CENTER DRIVE",
+      "city": "NEWTON",
+      "state": "KS",
+      "zip": "67114",
+      "phone": "(316) 283-2700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PRAIRIE VIEW INC",
+      "address": "1901 E FIRST STREET PO BOX 467",
+      "city": "NEWTON",
+      "state": "KS",
+      "zip": "67114",
+      "phone": "(316) 284-6400",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTON": [
+    {
+      "name": "NORTON COUNTY HOSPITAL",
+      "address": "102 E HOLME STREET",
+      "city": "NORTON",
+      "state": "KS",
+      "zip": "67654",
+      "phone": "(785) 877-3351",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OAKLEY": [
+    {
+      "name": "LOGAN COUNTY HOSPITAL",
+      "address": "211 CHERRY AVENUE",
+      "city": "OAKLEY",
+      "state": "KS",
+      "zip": "67748",
+      "phone": "(785) 672-3211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OLATHE": [
+    {
+      "name": "OLATHE MEDICAL CENTER",
+      "address": "20333 WEST 151ST STREET",
+      "city": "OLATHE",
+      "state": "KS",
+      "zip": "66061",
+      "phone": "(913) 791-4200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COTTONWOOD SPRINGS LLC",
+      "address": "13351 S ARAPAHO DRIVE",
+      "city": "OLATHE",
+      "state": "KS",
+      "zip": "66062",
+      "phone": "(913) 353-3000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ONAGA": [
+    {
+      "name": "COMMUNITY HOSPITAL, ONAGA AND ST MARYS CAMPUS",
+      "address": "120 WEST 8TH STREET",
+      "city": "ONAGA",
+      "state": "KS",
+      "zip": "66521",
+      "phone": "(785) 889-4272",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSAWATOMIE": [
+    {
+      "name": "ADAIR ACUTE CARE AT OSAWATOMIE STATE HOSPITAL",
+      "address": "500 STATE HOSPITAL DRIVE",
+      "city": "OSAWATOMIE",
+      "state": "KS",
+      "zip": "66064",
+      "phone": "(913) 755-7100",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSBORNE": [
+    {
+      "name": "OSBORNE COUNTY MEMORIAL HOSPITAL",
+      "address": "237 W HARRISON STREET SUITE 100",
+      "city": "OSBORNE",
+      "state": "KS",
+      "zip": "67473",
+      "phone": "(785) 346-2121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OTTAWA": [
+    {
+      "name": "ADVENTHEALTH OTTAWA",
+      "address": "1301 S MAIN STREET",
+      "city": "OTTAWA",
+      "state": "KS",
+      "zip": "66067",
+      "phone": "(785) 229-8200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OVERLAND PARK": [
+    {
+      "name": "OVERLAND PARK REG MED CTR",
+      "address": "10500 QUIVIRA ROAD",
+      "city": "OVERLAND PARK",
+      "state": "KS",
+      "zip": "66215",
+      "phone": "(913) 541-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MENORAH MEDICAL CENTER",
+      "address": "5721 WEST 119TH STREET",
+      "city": "OVERLAND PARK",
+      "state": "KS",
+      "zip": "66209",
+      "phone": "(913) 498-6773",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT LUKE'S SOUTH HOSPITAL",
+      "address": "12300 METCALF AVENUE",
+      "city": "OVERLAND PARK",
+      "state": "KS",
+      "zip": "66213",
+      "phone": "(913) 317-3303",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTHEALTH SOUTH OVERLAND PARK, INC",
+      "address": "7820 W 165TH STREET",
+      "city": "OVERLAND PARK",
+      "state": "KS",
+      "zip": "66223",
+      "phone": "(913) 373-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDREN'S MERCY SOUTH",
+      "address": "5808 W 110TH STREET",
+      "city": "OVERLAND PARK",
+      "state": "KS",
+      "zip": "66211",
+      "phone": "(913) 696-8000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAOLA": [
+    {
+      "name": "MIAMI COUNTY MEDICAL CENTER",
+      "address": "2100 BAPTISTE DR",
+      "city": "PAOLA",
+      "state": "KS",
+      "zip": "66071",
+      "phone": "(913) 557-4385",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARSONS": [
+    {
+      "name": "LABETTE HEALTH",
+      "address": "1902 SOUTH US HWY 59",
+      "city": "PARSONS",
+      "state": "KS",
+      "zip": "67357",
+      "phone": "(620) 421-4880",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PHILLIPSBURG": [
+    {
+      "name": "PHILLIPS COUNTY HOSPITAL",
+      "address": "1150 STATE STREET",
+      "city": "PHILLIPSBURG",
+      "state": "KS",
+      "zip": "67661",
+      "phone": "(785) 543-5226",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PITTSBURG": [
+    {
+      "name": "MERCY HOSPITAL PITTSBURG, INC",
+      "address": "1 MT CARMEL WAY",
+      "city": "PITTSBURG",
+      "state": "KS",
+      "zip": "66762",
+      "phone": "(620) 231-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLAINVILLE": [
+    {
+      "name": "ROOKS COUNTY HEALTH CENTER",
+      "address": "1210 NORTH WASHINGTON",
+      "city": "PLAINVILLE",
+      "state": "KS",
+      "zip": "67663",
+      "phone": "(785) 688-4401",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRATT": [
+    {
+      "name": "PRATT REGIONAL MEDICAL CENTER",
+      "address": "200 COMMODORE ST",
+      "city": "PRATT",
+      "state": "KS",
+      "zip": "67124",
+      "phone": "(620) 450-1160",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "QUINTER": [
+    {
+      "name": "GOVE COUNTY MEDICAL CENTER",
+      "address": "520 WEST 5TH STREET",
+      "city": "QUINTER",
+      "state": "KS",
+      "zip": "67752",
+      "phone": "(785) 754-3341",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RANSOM": [
+    {
+      "name": "GRISELL MEMORIAL HOSPITAL",
+      "address": "210 SOUTH VERMONT AVENUE",
+      "city": "RANSOM",
+      "state": "KS",
+      "zip": "67572",
+      "phone": "(785) 731-2231",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RUSSELL": [
+    {
+      "name": "RUSSELL REGIONAL HOSPITAL",
+      "address": "200 S MAIN STREET",
+      "city": "RUSSELL",
+      "state": "KS",
+      "zip": "67665",
+      "phone": "(785) 483-3131",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SABETHA": [
+    {
+      "name": "GREAT PLAINS OF SABETHA",
+      "address": "603 S 14TH STREET",
+      "city": "SABETHA",
+      "state": "KS",
+      "zip": "66534",
+      "phone": "(785) 284-2121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALINA": [
+    {
+      "name": "SALINA REGIONAL HEALTH CENTER",
+      "address": "400 SOUTH SANTA FE AVENUE",
+      "city": "SALINA",
+      "state": "KS",
+      "zip": "67401",
+      "phone": "(785) 452-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SALINA SURGICAL HOSPITAL",
+      "address": "401 SOUTH SANTA FE AVENUE",
+      "city": "SALINA",
+      "state": "KS",
+      "zip": "67401",
+      "phone": "(785) 827-0610",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SATANTA": [
+    {
+      "name": "SATANTA DISTRICT HOSPITAL, CLINICS, & LTCU",
+      "address": "401 CHEYENNE",
+      "city": "SATANTA",
+      "state": "KS",
+      "zip": "67870",
+      "phone": "(620) 682-8414",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SCOTT CITY": [
+    {
+      "name": "SCOTT COUNTY HOSPITAL",
+      "address": "201 ALBERT AVENUE",
+      "city": "SCOTT CITY",
+      "state": "KS",
+      "zip": "67871",
+      "phone": "(620) 872-5811",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEDAN": [
+    {
+      "name": "SEDAN CITY HOSPITAL",
+      "address": "300 W NORTH STREET",
+      "city": "SEDAN",
+      "state": "KS",
+      "zip": "67361",
+      "phone": "(620) 725-3115",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SENECA": [
+    {
+      "name": "NEMAHA VALLEY COMMUNITY HOSPITAL",
+      "address": "1600 COMMUNITY DR",
+      "city": "SENECA",
+      "state": "KS",
+      "zip": "66538",
+      "phone": "(785) 336-6181",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHAWNEE MISSION": [
+    {
+      "name": "ADVENTHEALTH SHAWNEE MISSION",
+      "address": "9100 W 74TH STREET",
+      "city": "SHAWNEE MISSION",
+      "state": "KS",
+      "zip": "66204",
+      "phone": "(913) 676-2152",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SMITH CENTER": [
+    {
+      "name": "SMITH COUNTY MEMORIAL HOSPITAL",
+      "address": "921 E. HIGHWAY 36",
+      "city": "SMITH CENTER",
+      "state": "KS",
+      "zip": "66967",
+      "phone": "(785) 282-6845",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ST FRANCIS": [
+    {
+      "name": "CHEYENNE COUNTY HOSPITAL",
+      "address": "210 WEST 1ST STREET",
+      "city": "ST FRANCIS",
+      "state": "KS",
+      "zip": "67756",
+      "phone": "(785) 332-2104",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STAFFORD": [
+    {
+      "name": "STAFFORD COUNTY HOSPITAL",
+      "address": "502 S BUCKEYE",
+      "city": "STAFFORD",
+      "state": "KS",
+      "zip": "67578",
+      "phone": "(620) 234-5221",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SYRACUSE": [
+    {
+      "name": "HAMILTON COUNTY HOSPITAL",
+      "address": "700 NORTH HUSER STREET",
+      "city": "SYRACUSE",
+      "state": "KS",
+      "zip": "67878",
+      "phone": "(620) 384-7461",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TOPEKA": [
+    {
+      "name": "UNIVERSITY OF KANSAS HEALTH SYSTEM - ST FRANCIS CAMPUS",
+      "address": "1700 SW 7TH STREET",
+      "city": "TOPEKA",
+      "state": "KS",
+      "zip": "66606",
+      "phone": "(785) 295-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA EASTERN KANSAS HEALTHCARE SYSTEM",
+      "address": "2200 SW GAGE BOULEVARD",
+      "city": "TOPEKA",
+      "state": "KS",
+      "zip": "66622",
+      "phone": "(913) 682-2000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "STORMONT VAIL HOSPITAL",
+      "address": "1500 SW 10TH AVENUE",
+      "city": "TOPEKA",
+      "state": "KS",
+      "zip": "66604",
+      "phone": "(785) 354-6121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TRIBUNE": [
+    {
+      "name": "GREELEY COUNTY HEALTH SERVICES",
+      "address": "506 3RD STREET",
+      "city": "TRIBUNE",
+      "state": "KS",
+      "zip": "67879",
+      "phone": "(620) 376-4221",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ULYSSES": [
+    {
+      "name": "BOB WILSON MEMORIAL HOSPITAL",
+      "address": "415 N MAIN STREET",
+      "city": "ULYSSES",
+      "state": "KS",
+      "zip": "67880",
+      "phone": "(620) 356-1266",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAKEENEY": [
+    {
+      "name": "TREGO COUNTY LEMKE MEMORIAL HOSPITAL",
+      "address": "320 N THIRTEENTH ST",
+      "city": "WAKEENEY",
+      "state": "KS",
+      "zip": "67672",
+      "phone": "(785) 743-2182",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAMEGO": [
+    {
+      "name": "WAMEGO HEALTH CENTER",
+      "address": "711 GENN DRIVE",
+      "city": "WAMEGO",
+      "state": "KS",
+      "zip": "66547",
+      "phone": "(785) 456-2295",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WASHINGTON": [
+    {
+      "name": "WASHINGTON COUNTY HOSPITAL",
+      "address": "304 E 3RD STREET",
+      "city": "WASHINGTON",
+      "state": "KS",
+      "zip": "66968",
+      "phone": "(785) 325-2211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WICHITA": [
+    {
+      "name": "WICHITA VA MEDICAL CENTER",
+      "address": "5500 E. KELLOG",
+      "city": "WICHITA",
+      "state": "KS",
+      "zip": "67218",
+      "phone": "(316) 685-2221",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASCENSION VIA CHRISTI HOSPITALS WICHITA, INC.",
+      "address": "929 NORTH ST FRANCIS STREET",
+      "city": "WICHITA",
+      "state": "KS",
+      "zip": "67214",
+      "phone": "(316) 268-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WESLEY MEDICAL CENTER",
+      "address": "550 N HILLSIDE STREET",
+      "city": "WICHITA",
+      "state": "KS",
+      "zip": "67214",
+      "phone": "(316) 962-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KANSAS SURGERY & RECOVERY CENTER",
+      "address": "2770 NORTH WEBB ROAD",
+      "city": "WICHITA",
+      "state": "KS",
+      "zip": "67226",
+      "phone": "(316) 634-0090",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KANSAS HEART HOSPITAL",
+      "address": "3601 NORTH WEBB ROAD",
+      "city": "WICHITA",
+      "state": "KS",
+      "zip": "67226",
+      "phone": "(316) 630-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KANSAS SPINE & SPECIALTY HOSPITAL, LLC",
+      "address": "3333 NORTH WEBB ROAD",
+      "city": "WICHITA",
+      "state": "KS",
+      "zip": "67226",
+      "phone": "(316) 462-5310",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VIA CHRISTI HOSPITAL WICHITA ST TERESA, INC",
+      "address": "14800 WEST ST TERESA",
+      "city": "WICHITA",
+      "state": "KS",
+      "zip": "67235",
+      "phone": "(316) 268-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CORTERRA OF WICHITA LLC",
+      "address": "7447 WEST VILLAGE CIRCLE",
+      "city": "WICHITA",
+      "state": "KS",
+      "zip": "67205",
+      "phone": "(316) 372-8892",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINCHESTER": [
+    {
+      "name": "F W HUSTON MEDICAL CENTER",
+      "address": "408 DELAWARE STREET",
+      "city": "WINCHESTER",
+      "state": "KS",
+      "zip": "66097",
+      "phone": "(913) 774-4340",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINFIELD": [
+    {
+      "name": "WILLIAM NEWTON HOSPITAL",
+      "address": "1300 EAST FIFTH AVENUE",
+      "city": "WINFIELD",
+      "state": "KS",
+      "zip": "67156",
+      "phone": "(620) 221-2300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

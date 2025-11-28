@@ -1,0 +1,187 @@
+{
+  "DOVER": [
+    {
+      "name": "BAYHEALTH MEDICAL CENTER, KENT CAMPUS",
+      "address": "640 S STATE STREET",
+      "city": "DOVER",
+      "state": "DE",
+      "zip": "19901",
+      "phone": "(302) 744-7001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DOVER BEHAVIORAL HEALTH SYSTEM",
+      "address": "725 HORSEPOND ROAD",
+      "city": "DOVER",
+      "state": "DE",
+      "zip": "19901",
+      "phone": "(302) 741-0140",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GEORGETOWN": [
+    {
+      "name": "SUN BEHAVIORAL DELAWARE LLC",
+      "address": "21655 BIDEN AVENUE",
+      "city": "GEORGETOWN",
+      "state": "DE",
+      "zip": "19947",
+      "phone": "(302) 448-8415",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEWES": [
+    {
+      "name": "BEEBE MEDICAL CENTER",
+      "address": "424 SAVANNAH RD",
+      "city": "LEWES",
+      "state": "DE",
+      "zip": "19958",
+      "phone": "(302) 645-3300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILFORD": [
+    {
+      "name": "BAYHEALTH HOSPITAL, SUSSEX CAMPUS",
+      "address": "100 WELLNESS WAY",
+      "city": "MILFORD",
+      "state": "DE",
+      "zip": "19963",
+      "phone": "(302) 422-3311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW CASTLE": [
+    {
+      "name": "DELAWARE PSYCHIATRIC CENTER",
+      "address": "1901 N DUPONT HIGHWAY",
+      "city": "NEW CASTLE",
+      "state": "DE",
+      "zip": "19720",
+      "phone": "(302) 255-2700",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MEADOWWOOD BEHAVIORAL HEALTH SYSTEM",
+      "address": "575 SOUTH DUPONT HIGHWAY",
+      "city": "NEW CASTLE",
+      "state": "DE",
+      "zip": "19720",
+      "phone": "(302) 328-3330",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWARK": [
+    {
+      "name": "CHRISTIANA HOSPITAL",
+      "address": "4755 OGLETOWN-STANTON ROAD",
+      "city": "NEWARK",
+      "state": "DE",
+      "zip": "19718",
+      "phone": "(302) 733-3609",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ROCKFORD CENTER",
+      "address": "100 ROCKFORD DRIVE",
+      "city": "NEWARK",
+      "state": "DE",
+      "zip": "19713",
+      "phone": "(302) 996-5480",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEAFORD": [
+    {
+      "name": "TIDALHEALTH NANTICOKE, INC.",
+      "address": "801 MIDDLEFORD RD",
+      "city": "SEAFORD",
+      "state": "DE",
+      "zip": "19973",
+      "phone": "(302) 629-6611",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILMINGTON": [
+    {
+      "name": "ST FRANCIS HOSPITAL",
+      "address": "7TH AND CLAYTON STS",
+      "city": "WILMINGTON",
+      "state": "DE",
+      "zip": "19805",
+      "phone": "(302) 421-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WILMINGTON VA MEDICAL CENTER",
+      "address": "1601 KIRKWOOD HIGHWAY",
+      "city": "WILMINGTON",
+      "state": "DE",
+      "zip": "19805",
+      "phone": "(302) 994-2511",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NEMOURS CHILDREN'S HOSPITAL, DELAWARE",
+      "address": "1600 ROCKLAND RD PO BOX 269",
+      "city": "WILMINGTON",
+      "state": "DE",
+      "zip": "19899",
+      "phone": "(302) 651-4000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

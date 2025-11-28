@@ -1,0 +1,556 @@
+{
+  "AUGUSTA": [
+    {
+      "name": "MAINE GENERAL MEDICAL CENTER",
+      "address": "35 MEDICAL CENTER PARKWAY",
+      "city": "AUGUSTA",
+      "state": "ME",
+      "zip": "04330",
+      "phone": "(207) 626-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TOGUS VA MEDICAL CENTER",
+      "address": "1 VA CENTER",
+      "city": "AUGUSTA",
+      "state": "ME",
+      "zip": "04330",
+      "phone": "(207) 623-8411",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIVERVIEW PSYCHIATRIC CENTER",
+      "address": "250 ARSENAL ST",
+      "city": "AUGUSTA",
+      "state": "ME",
+      "zip": "04330",
+      "phone": "(207) 624-4683",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BANGOR": [
+    {
+      "name": "ST JOSEPH HOSPITAL",
+      "address": "360 BROADWAY",
+      "city": "BANGOR",
+      "state": "ME",
+      "zip": "04401",
+      "phone": "(207) 262-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTHERN LIGHT EASTERN MAINE MEDICAL CENTER",
+      "address": "489 STATE STREET",
+      "city": "BANGOR",
+      "state": "ME",
+      "zip": "04401",
+      "phone": "(207) 973-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DOROTHEA DIX PSYCHIATRIC CENTER",
+      "address": "656 STATE STREET",
+      "city": "BANGOR",
+      "state": "ME",
+      "zip": "04401",
+      "phone": "(207) 941-4000",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTHERN LIGHT ACADIA HOSPITAL",
+      "address": "268 STILLWATER AVE",
+      "city": "BANGOR",
+      "state": "ME",
+      "zip": "04401",
+      "phone": "(207) 973-6100",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAR HARBOR": [
+    {
+      "name": "MOUNT DESERT ISLAND HOSPITAL",
+      "address": "10 WAYMAN LANE",
+      "city": "BAR HARBOR",
+      "state": "ME",
+      "zip": "04609",
+      "phone": "(207) 288-5081",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELFAST": [
+    {
+      "name": "MAINEHEALTH WALDO HOSPITAL",
+      "address": "118 NORTHPORT AVE",
+      "city": "BELFAST",
+      "state": "ME",
+      "zip": "04915",
+      "phone": "(207) 338-2500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLUE HILL": [
+    {
+      "name": "NORTHERN LIGHT BLUE HILL MEMORIAL HOSPITAL",
+      "address": "57 WATER STREET",
+      "city": "BLUE HILL",
+      "state": "ME",
+      "zip": "04614",
+      "phone": "(207) 374-2836",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRIDGTON": [
+    {
+      "name": "BRIDGTON HOSPITAL",
+      "address": "10 HOSPITAL DRIVE",
+      "city": "BRIDGTON",
+      "state": "ME",
+      "zip": "04009",
+      "phone": "(207) 647-6000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRUNSWICK": [
+    {
+      "name": "MID COAST HOSPITAL",
+      "address": "123 MEDICAL CENTER DRIVE",
+      "city": "BRUNSWICK",
+      "state": "ME",
+      "zip": "04011",
+      "phone": "(207) 729-0181",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CALAIS": [
+    {
+      "name": "CALAIS COMMUNITY HOSPITAL",
+      "address": "24 HOSPITAL LANE",
+      "city": "CALAIS",
+      "state": "ME",
+      "zip": "04619",
+      "phone": "(207) 454-7521",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARIBOU": [
+    {
+      "name": "CARY MEDICAL CENTER",
+      "address": "163 VAN BUREN RD, SUITE 1",
+      "city": "CARIBOU",
+      "state": "ME",
+      "zip": "04736",
+      "phone": "(207) 498-3111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAMARISCOTTA": [
+    {
+      "name": "LINCOLNHEALTH",
+      "address": "35 MILES STREET",
+      "city": "DAMARISCOTTA",
+      "state": "ME",
+      "zip": "04543",
+      "phone": "(207) 563-1234",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DOVER FOXCROFT": [
+    {
+      "name": "NORTHERN LIGHT MAYO HOSPITAL",
+      "address": "897 WEST MAIN STREET",
+      "city": "DOVER FOXCROFT",
+      "state": "ME",
+      "zip": "04426",
+      "phone": "(207) 564-4251",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELLSWORTH": [
+    {
+      "name": "NORTHERN LIGHT MAINE COAST HOSPITAL",
+      "address": "50 UNION STREET",
+      "city": "ELLSWORTH",
+      "state": "ME",
+      "zip": "04605",
+      "phone": "(207) 667-5311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FARMINGTON": [
+    {
+      "name": "MAINEHEALTH FRANKLIN HOSPITAL",
+      "address": "111 FRANKLIN HEALTH COMMONS",
+      "city": "FARMINGTON",
+      "state": "ME",
+      "zip": "04938",
+      "phone": "(207) 778-6031",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT KENT": [
+    {
+      "name": "NORTHERN MAINE MEDICAL CENTER",
+      "address": "194 E MAIN STREET",
+      "city": "FORT KENT",
+      "state": "ME",
+      "zip": "04743",
+      "phone": "(207) 834-3195",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTHERN MAINE MEDICAL CENTER",
+      "address": "194 E MAIN STREET",
+      "city": "FORT KENT",
+      "state": "ME",
+      "zip": "04743",
+      "phone": "(207) 834-3195",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENVILLE": [
+    {
+      "name": "NORTHERN LIGHT C A DEAN HOSPITAL",
+      "address": "364 PRITHAM AVE",
+      "city": "GREENVILLE",
+      "state": "ME",
+      "zip": "04441",
+      "phone": "(207) 695-5209",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOULTON": [
+    {
+      "name": "HOULTON REGIONAL HOSPITAL",
+      "address": "20 HARTFORD STREET",
+      "city": "HOULTON",
+      "state": "ME",
+      "zip": "04730",
+      "phone": "(207) 532-2900",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEWISTON": [
+    {
+      "name": "CENTRAL MAINE MEDICAL CENTER",
+      "address": "300 MAIN STREET",
+      "city": "LEWISTON",
+      "state": "ME",
+      "zip": "04240",
+      "phone": "(207) 795-0111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST MARY'S REGIONAL MEDICAL CENTER",
+      "address": "93 CAMPUS AVENUE - PO BOX 291",
+      "city": "LEWISTON",
+      "state": "ME",
+      "zip": "04243",
+      "phone": "(207) 777-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LINCOLN": [
+    {
+      "name": "PENOBSCOT VALLEY HOSPITAL",
+      "address": "7 TRANSALPINE ROAD, PO BOX 368",
+      "city": "LINCOLN",
+      "state": "ME",
+      "zip": "04457",
+      "phone": "(207) 794-3321",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MACHIAS": [
+    {
+      "name": "DOWN EAST COMMUNITY HOSPITAL",
+      "address": "11 HOSPITAL DRIVE",
+      "city": "MACHIAS",
+      "state": "ME",
+      "zip": "04654",
+      "phone": "(207) 255-3356",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILLINOCKET": [
+    {
+      "name": "MILLINOCKET REGIONAL HOSPITAL",
+      "address": "200 SOMERSET STREET",
+      "city": "MILLINOCKET",
+      "state": "ME",
+      "zip": "04462",
+      "phone": "(207) 723-5161",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORWAY": [
+    {
+      "name": "MAINEHEALTH STEPHENS HOSPITAL",
+      "address": "181 MAIN STREET",
+      "city": "NORWAY",
+      "state": "ME",
+      "zip": "04268",
+      "phone": "(207) 743-5933",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PITTSFIELD": [
+    {
+      "name": "NORTHERN LIGHT SEBASTICOOK VALLEY HOSPITAL",
+      "address": "447 NORTH MAIN STREET",
+      "city": "PITTSFIELD",
+      "state": "ME",
+      "zip": "04967",
+      "phone": "(207) 487-5141",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORTLAND": [
+    {
+      "name": "NORTHERN LIGHT MERCY HOSPITAL",
+      "address": "144 STATE STREET",
+      "city": "PORTLAND",
+      "state": "ME",
+      "zip": "04101",
+      "phone": "(207) 879-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MAINEHEALTH MAINE MEDICAL CENTER",
+      "address": "22 BRAMHALL ST",
+      "city": "PORTLAND",
+      "state": "ME",
+      "zip": "04102",
+      "phone": "(207) 662-0111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRESQUE ISLE": [
+    {
+      "name": "NORTHERN LIGHT  A R GOULD HOSPITAL",
+      "address": "PO BOX 151",
+      "city": "PRESQUE ISLE",
+      "state": "ME",
+      "zip": "04769",
+      "phone": "(207) 768-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROCKPORT": [
+    {
+      "name": "MAINEHEALTH PEN BAY HOSPITAL",
+      "address": "6 GLEN COVE DRIVE",
+      "city": "ROCKPORT",
+      "state": "ME",
+      "zip": "04856",
+      "phone": "(207) 921-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RUMFORD": [
+    {
+      "name": "RUMFORD  HOSPITAL",
+      "address": "420 FRANKLIN STREET",
+      "city": "RUMFORD",
+      "state": "ME",
+      "zip": "04276",
+      "phone": "(207) 369-1000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SKOWHEGAN": [
+    {
+      "name": "REDINGTON FAIRVIEW GENERAL HOSPITAL",
+      "address": "46 FAIRVIEW AVE   PO BOX 468",
+      "city": "SKOWHEGAN",
+      "state": "ME",
+      "zip": "04976",
+      "phone": "(207) 474-5121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WATERVILLE": [
+    {
+      "name": "NORTHERN LIGHT INLAND HOSPITAL",
+      "address": "200 KENNEDY MEMORIAL DRIVE",
+      "city": "WATERVILLE",
+      "state": "ME",
+      "zip": "04901",
+      "phone": "(207) 861-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTBROOK": [
+    {
+      "name": "MAINEHEALTH BEHAVIORAL HEALTH AT SPRING HARBOR",
+      "address": "123 ANDOVER ROAD",
+      "city": "WESTBROOK",
+      "state": "ME",
+      "zip": "04092",
+      "phone": "(207) 761-2200",
+      "type": "Psychiatric",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YORK": [
+    {
+      "name": "YORK HOSPITAL",
+      "address": "15 HOSPITAL DRIVE",
+      "city": "YORK",
+      "state": "ME",
+      "zip": "03909",
+      "phone": "(207) 351-2478",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

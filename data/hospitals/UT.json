@@ -1,0 +1,743 @@
+{
+  "AMERICAN FORK": [
+    {
+      "name": "AMERICAN FORK HOSPITAL",
+      "address": "170 NORTH 1100 EAST",
+      "city": "AMERICAN FORK",
+      "state": "UT",
+      "zip": "84003",
+      "phone": "(801) 855-3305",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEAVER": [
+    {
+      "name": "BEAVER VALLEY HOSPITAL",
+      "address": "1109 NORTH 100 WEST",
+      "city": "BEAVER",
+      "state": "UT",
+      "zip": "84713",
+      "phone": "(435) 438-7100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLANDING": [
+    {
+      "name": "BLUE MOUNTAIN HOSPITAL",
+      "address": "802 SOUTH 200 WEST",
+      "city": "BLANDING",
+      "state": "UT",
+      "zip": "84511",
+      "phone": "(435) 678-3993",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOUNTIFUL": [
+    {
+      "name": "LAKEVIEW HOSPITAL",
+      "address": "630 EAST MEDICAL DRIVE",
+      "city": "BOUNTIFUL",
+      "state": "UT",
+      "zip": "84010",
+      "phone": "(801) 299-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRIGHAM CITY": [
+    {
+      "name": "BRIGHAM CITY COMMUNITY HOSPITAL",
+      "address": "950 SOUTH MEDICAL DRIVE",
+      "city": "BRIGHAM CITY",
+      "state": "UT",
+      "zip": "84302",
+      "phone": "(435) 734-9471",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CEDAR CITY": [
+    {
+      "name": "CEDAR CITY HOSPITAL",
+      "address": "1303 NORTH MAIN STREET",
+      "city": "CEDAR CITY",
+      "state": "UT",
+      "zip": "84721",
+      "phone": "(435) 868-5800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DELTA": [
+    {
+      "name": "INTERMOUNTAIN HEALTH DELTA COMMUNITY HOSPITAL",
+      "address": "126 SOUTH WHITE SAGE AVENUE",
+      "city": "DELTA",
+      "state": "UT",
+      "zip": "84624",
+      "phone": "(435) 864-5591",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DRAPER": [
+    {
+      "name": "LONE PEAK HOSPITAL",
+      "address": "11925 SOUTH STATE STREET",
+      "city": "DRAPER",
+      "state": "UT",
+      "zip": "84020",
+      "phone": "(801) 545-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FILLMORE": [
+    {
+      "name": "FILLMORE COMMUNITY HOSPITAL",
+      "address": "674 SOUTH HIGHWAY 99",
+      "city": "FILLMORE",
+      "state": "UT",
+      "zip": "84631",
+      "phone": "(435) 743-5591",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GUNNISON": [
+    {
+      "name": "GUNNISON VALLEY HOSPITAL",
+      "address": "64 EAST 100 NORTH",
+      "city": "GUNNISON",
+      "state": "UT",
+      "zip": "84634",
+      "phone": "(435) 528-2114",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HEBER CITY": [
+    {
+      "name": "INTERMOUNTAIN HEALTH HEBER VALLEY HOSPITAL",
+      "address": "454 EAST MEDICAL WAY",
+      "city": "HEBER CITY",
+      "state": "UT",
+      "zip": "84032",
+      "phone": "(435) 654-2500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KANAB": [
+    {
+      "name": "KANE COUNTY HOSPITAL",
+      "address": "355 NORTH MAIN STREET",
+      "city": "KANAB",
+      "state": "UT",
+      "zip": "84741",
+      "phone": "(435) 644-5811",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAYTON": [
+    {
+      "name": "HOLY CROSS HOSPITAL-DAVIS",
+      "address": "1600 WEST ANTELOPE DRIVE",
+      "city": "LAYTON",
+      "state": "UT",
+      "zip": "84041",
+      "phone": "(801) 807-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "INTERMOUNTAIN HEALTH LAYTON HOSPITAL",
+      "address": "201 WEST LAYTON PARKWAY",
+      "city": "LAYTON",
+      "state": "UT",
+      "zip": "84041",
+      "phone": "(801) 543-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOGAN": [
+    {
+      "name": "LOGAN REGIONAL HOSPITAL",
+      "address": "1400 NORTH 500 EAST",
+      "city": "LOGAN",
+      "state": "UT",
+      "zip": "84341",
+      "phone": "(435) 716-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILFORD": [
+    {
+      "name": "MILFORD MEMORIAL HOSPITAL",
+      "address": "850 NORTH MAIN STREET",
+      "city": "MILFORD",
+      "state": "UT",
+      "zip": "84751",
+      "phone": "(435) 387-2411",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOAB": [
+    {
+      "name": "MOAB REGIONAL HOSPITAL",
+      "address": "450 WEST WILLIAMS WAY",
+      "city": "MOAB",
+      "state": "UT",
+      "zip": "84532",
+      "phone": "(435) 719-3500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTICELLO": [
+    {
+      "name": "SAN JUAN HOSPITAL",
+      "address": "380 WEST 100 NORTH",
+      "city": "MONTICELLO",
+      "state": "UT",
+      "zip": "84535",
+      "phone": "(435) 587-2116",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT PLEASANT": [
+    {
+      "name": "INTERMOUNTAIN HEALTH SANPETE VALLEY HOSPITAL",
+      "address": "1100 SOUTH MEDICAL DRIVE",
+      "city": "MOUNT PLEASANT",
+      "state": "UT",
+      "zip": "84647",
+      "phone": "(435) 462-4123",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MURRAY": [
+    {
+      "name": "INTERMOUNTAIN MEDICAL CENTER",
+      "address": "5121 SOUTH COTTONWOOD STREET",
+      "city": "MURRAY",
+      "state": "UT",
+      "zip": "84107",
+      "phone": "(801) 507-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEPHI": [
+    {
+      "name": "CENTRAL VALLEY MEDICAL CENTER - CAH",
+      "address": "48 WEST 1500 NORTH",
+      "city": "NEPHI",
+      "state": "UT",
+      "zip": "84648",
+      "phone": "(435) 623-3000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTH LOGAN": [
+    {
+      "name": "CACHE VALLEY HOSPITAL",
+      "address": "2380 NORTH 400 EAST",
+      "city": "NORTH LOGAN",
+      "state": "UT",
+      "zip": "84341",
+      "phone": "(435) 713-9700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OGDEN": [
+    {
+      "name": "MCKAY-DEE HOSPITAL",
+      "address": "4401 HARRISON BOULEVARD",
+      "city": "OGDEN",
+      "state": "UT",
+      "zip": "84403",
+      "phone": "(801) 387-2800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OGDEN REGIONAL MEDICAL CENTER",
+      "address": "5475 SOUTH 500 EAST",
+      "city": "OGDEN",
+      "state": "UT",
+      "zip": "84405",
+      "phone": "(801) 479-2111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OREM": [
+    {
+      "name": "OREM COMMUNITY HOSPITAL",
+      "address": "331 NORTH 400 WEST",
+      "city": "OREM",
+      "state": "UT",
+      "zip": "84057",
+      "phone": "(801) 714-3307",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TIMPANOGOS REGIONAL HOSPITAL",
+      "address": "750 WEST 800 NORTH",
+      "city": "OREM",
+      "state": "UT",
+      "zip": "84057",
+      "phone": "(801) 714-6800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASPEN GROVE BEHAVIORAL HOSPITAL",
+      "address": "1350 EAST 750 NORTH",
+      "city": "OREM",
+      "state": "UT",
+      "zip": "84097",
+      "phone": "(801) 852-2273",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PANGUITCH": [
+    {
+      "name": "INTERMOUNTAIN HEALTH GARFIELD MEMORIAL HOSPITAL",
+      "address": "200 NORTH 400 EAST",
+      "city": "PANGUITCH",
+      "state": "UT",
+      "zip": "84759",
+      "phone": "(435) 676-1262",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARK CITY": [
+    {
+      "name": "PARK CITY HOSPITAL",
+      "address": "900 ROUND VALLEY DRIVE",
+      "city": "PARK CITY",
+      "state": "UT",
+      "zip": "84060",
+      "phone": "(435) 658-6700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAYSON": [
+    {
+      "name": "MOUNTAIN VIEW HOSPITAL",
+      "address": "1000 EAST 100 NORTH",
+      "city": "PAYSON",
+      "state": "UT",
+      "zip": "84651",
+      "phone": "(801) 465-7100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRICE": [
+    {
+      "name": "CASTLEVIEW HOSPITAL",
+      "address": "300 NORTH HOSPITAL DRIVE",
+      "city": "PRICE",
+      "state": "UT",
+      "zip": "84501",
+      "phone": "(435) 637-4800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PROVO": [
+    {
+      "name": "INTERMOUNTAIN HEALTH UTAH VALLEY HOSPITAL",
+      "address": "1034 NORTH 500 WEST",
+      "city": "PROVO",
+      "state": "UT",
+      "zip": "84604",
+      "phone": "(801) 373-7850",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UTAH STATE HOSPITAL",
+      "address": "1300 EAST CENTER STREET",
+      "city": "PROVO",
+      "state": "UT",
+      "zip": "84605",
+      "phone": "(801) 344-4400",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RICHFIELD": [
+    {
+      "name": "SEVIER VALLEY HOSPITAL",
+      "address": "1000 NORTH MAIN STREET",
+      "city": "RICHFIELD",
+      "state": "UT",
+      "zip": "84701",
+      "phone": "(435) 893-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RIVERTON": [
+    {
+      "name": "RIVERTON HOSPITAL",
+      "address": "3741 WEST 12600 SOUTH",
+      "city": "RIVERTON",
+      "state": "UT",
+      "zip": "84065",
+      "phone": "(801) 285-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROOSEVELT": [
+    {
+      "name": "UINTAH BASIN MEDICAL CENTER",
+      "address": "250 WEST 300 NORTH",
+      "city": "ROOSEVELT",
+      "state": "UT",
+      "zip": "84066",
+      "phone": "(435) 722-4691",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALT LAKE CITY": [
+    {
+      "name": "HOLY CROSS HOSPITAL - SALT LAKE",
+      "address": "1050 EAST SOUTH TEMPLE",
+      "city": "SALT LAKE CITY",
+      "state": "UT",
+      "zip": "84102",
+      "phone": "(801) 350-4111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LDS HOSPITAL",
+      "address": "8TH AVENUE AND C STREET",
+      "city": "SALT LAKE CITY",
+      "state": "UT",
+      "zip": "84143",
+      "phone": "(801) 408-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY OF UTAH HOSPITAL AND CLINICS",
+      "address": "50 NORTH MEDICAL DRIVE",
+      "city": "SALT LAKE CITY",
+      "state": "UT",
+      "zip": "84132",
+      "phone": "(801) 581-2121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA SALT LAKE CITY HEALTHCARE - GEORGE E. WAHLEN VA MEDICAL CENTER",
+      "address": "500 FOOTHILL BLVD.",
+      "city": "SALT LAKE CITY",
+      "state": "UT",
+      "zip": "84148",
+      "phone": "(801) 584-1211",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST MARK'S HOSPITAL",
+      "address": "1200 EAST 3900 SOUTH",
+      "city": "SALT LAKE CITY",
+      "state": "UT",
+      "zip": "84124",
+      "phone": "(801) 268-7111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PRIMARY CHILDREN'S HOSPITAL",
+      "address": "100 NORTH MARIO CAPECCHI DRIVE",
+      "city": "SALT LAKE CITY",
+      "state": "UT",
+      "zip": "84113",
+      "phone": "(801) 662-1000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MARIAN CENTER",
+      "address": "451 EAST BISHOP FEDERAL LANE",
+      "city": "SALT LAKE CITY",
+      "state": "UT",
+      "zip": "84115",
+      "phone": "(801) 468-6856",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SALT LAKE BEHAVIORAL HEALTH",
+      "address": "3802 SOUTH 700 EAST",
+      "city": "SALT LAKE CITY",
+      "state": "UT",
+      "zip": "84106",
+      "phone": "(801) 264-6000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANDY": [
+    {
+      "name": "INTERMOUNTAIN HEALTH ALTA VIEW HOSPITAL",
+      "address": "9660 SOUTH 1300 EAST",
+      "city": "SANDY",
+      "state": "UT",
+      "zip": "84094",
+      "phone": "(801) 501-2600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPANISH FORK": [
+    {
+      "name": "INTERMOUNTAIN HEALTH SPANISH FORK HOSPITAL",
+      "address": "765 EAST MARKET PLACE DRIVE",
+      "city": "SPANISH FORK",
+      "state": "UT",
+      "zip": "84660",
+      "phone": "(385) 344-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ST GEORGE": [
+    {
+      "name": "ST. GEORGE REGIONAL HOSPITAL",
+      "address": "1380 EAST MEDICAL CENTER DRIVE",
+      "city": "ST GEORGE",
+      "state": "UT",
+      "zip": "84790",
+      "phone": "(435) 251-2100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TOOELE": [
+    {
+      "name": "MOUNTAIN WEST MEDICAL CENTER",
+      "address": "2055 NORTH MAIN STREET",
+      "city": "TOOELE",
+      "state": "UT",
+      "zip": "84074",
+      "phone": "(435) 843-3700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TREMONTON": [
+    {
+      "name": "BEAR RIVER VALLEY HOSPITAL",
+      "address": "905 NORTH 1000 WEST",
+      "city": "TREMONTON",
+      "state": "UT",
+      "zip": "84337",
+      "phone": "(435) 207-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VERNAL": [
+    {
+      "name": "ASHLEY REGIONAL MEDICAL CENTER",
+      "address": "150 WEST 100 NORTH",
+      "city": "VERNAL",
+      "state": "UT",
+      "zip": "84078",
+      "phone": "(435) 789-3342",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST JORDAN": [
+    {
+      "name": "HOLY CROSS HOSPITAL-JORDAN VALLEY",
+      "address": "3580 WEST 9000 SOUTH",
+      "city": "WEST JORDAN",
+      "state": "UT",
+      "zip": "84088",
+      "phone": "(801) 561-8888",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

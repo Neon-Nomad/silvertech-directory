@@ -1,0 +1,1460 @@
+{
+  "ABERDEEN": [
+    {
+      "name": "GRAYS HARBOR COMMUNITY HOSPITAL",
+      "address": "915 ANDERSON DRIVE",
+      "city": "ABERDEEN",
+      "state": "WA",
+      "zip": "98520",
+      "phone": "(360) 532-8330",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANACORTES": [
+    {
+      "name": "ISLAND HOSPITAL",
+      "address": "1211  24TH STREET",
+      "city": "ANACORTES",
+      "state": "WA",
+      "zip": "98221",
+      "phone": "(360) 299-1300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARLINGTON": [
+    {
+      "name": "CASCADE VALLEY HOSPITAL",
+      "address": "330 S STILLAGUAMISH AVE",
+      "city": "ARLINGTON",
+      "state": "WA",
+      "zip": "98223",
+      "phone": "(360) 435-2133",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AUBURN": [
+    {
+      "name": "MULTICARE AUBURN MEDICAL CENTER",
+      "address": "202 NORTH DIVISION STREET PLAZA ONE",
+      "city": "AUBURN",
+      "state": "WA",
+      "zip": "98001",
+      "phone": "(253) 833-7711",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELLEVUE": [
+    {
+      "name": "OVERLAKE HOSPITAL MEDICAL CENTER",
+      "address": "1035-116TH AVE NE",
+      "city": "BELLEVUE",
+      "state": "WA",
+      "zip": "98004",
+      "phone": "(425) 688-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELLINGHAM": [
+    {
+      "name": "ST JOSEPH HOSPITAL",
+      "address": "2901 SQUALICUM PARKWAY",
+      "city": "BELLINGHAM",
+      "state": "WA",
+      "zip": "98225",
+      "phone": "(360) 734-5400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BREWSTER": [
+    {
+      "name": "THREE RIVERS HOSPITAL",
+      "address": "507 HOSPITAL WAY",
+      "city": "BREWSTER",
+      "state": "WA",
+      "zip": "98812",
+      "phone": "(509) 689-2517",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURIEN": [
+    {
+      "name": "HIGHLINE MEDICAL CENTER",
+      "address": "16251 SYLVESTER ROAD SW",
+      "city": "BURIEN",
+      "state": "WA",
+      "zip": "98166",
+      "phone": "(206) 431-5237",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CENTRALIA": [
+    {
+      "name": "PROVIDENCE CENTRALIA HOSPITAL",
+      "address": "914 S SCHEUBER ROAD",
+      "city": "CENTRALIA",
+      "state": "WA",
+      "zip": "98531",
+      "phone": "(360) 330-8530",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHELAN": [
+    {
+      "name": "LAKE CHELAN COMMUNITY HOSPITAL",
+      "address": "110 S APPLE BLOSSOM DR",
+      "city": "CHELAN",
+      "state": "WA",
+      "zip": "98816",
+      "phone": "(509) 682-3300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHEWELAH": [
+    {
+      "name": "PROVIDENCE ST JOSEPH HOSPITAL",
+      "address": "500 EAST WEBSTER",
+      "city": "CHEWELAH",
+      "state": "WA",
+      "zip": "99109",
+      "phone": "(509) 935-8211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLARKSTON": [
+    {
+      "name": "TRI-STATE MEMORIAL HOSPITAL",
+      "address": "1221 HIGHLAND AVENUE",
+      "city": "CLARKSTON",
+      "state": "WA",
+      "zip": "99403",
+      "phone": "(509) 758-5511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLFAX": [
+    {
+      "name": "WHITMAN HOSPITAL AND MEDICAL CENTER",
+      "address": "1200 WEST FAIRVIEW",
+      "city": "COLFAX",
+      "state": "WA",
+      "zip": "99111",
+      "phone": "(509) 397-3435",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLVILLE": [
+    {
+      "name": "PROVIDENCE MOUNT CARMEL HOSPITAL",
+      "address": "982 EAST COLUMBIA",
+      "city": "COLVILLE",
+      "state": "WA",
+      "zip": "99114",
+      "phone": "(509) 684-2561",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COUPEVILLE": [
+    {
+      "name": "WHIDBEYHEALTH MEDICAL CENTER",
+      "address": "101 NORTH MAIN STREET",
+      "city": "COUPEVILLE",
+      "state": "WA",
+      "zip": "98239",
+      "phone": "(360) 678-5151",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COVINGTON": [
+    {
+      "name": "MULTICARE COVINGTON MEDICAL CENTER",
+      "address": "17700 SE 272ND ST",
+      "city": "COVINGTON",
+      "state": "WA",
+      "zip": "98042",
+      "phone": "(253) 372-7400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAVENPORT": [
+    {
+      "name": "LINCOLN HOSPITAL",
+      "address": "10 NICHOLS STREET",
+      "city": "DAVENPORT",
+      "state": "WA",
+      "zip": "99122",
+      "phone": "(509) 725-7101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAYTON": [
+    {
+      "name": "DAYTON GENERAL HOSPITAL",
+      "address": "1012 SOUTH 3RD STREET",
+      "city": "DAYTON",
+      "state": "WA",
+      "zip": "99328",
+      "phone": "(509) 382-2531",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EDMONDS": [
+    {
+      "name": "SWEDISH EDMONDS HOSPITAL",
+      "address": "21601 76TH AVENUE WEST",
+      "city": "EDMONDS",
+      "state": "WA",
+      "zip": "98026",
+      "phone": "(425) 640-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELLENSBURG": [
+    {
+      "name": "KITTITAS VALLEY COMMUNITY HOSPITAL",
+      "address": "603 SOUTH CHESTNUT",
+      "city": "ELLENSBURG",
+      "state": "WA",
+      "zip": "98926",
+      "phone": "(509) 962-9841",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELMA": [
+    {
+      "name": "SUMMIT PACIFIC MEDICAL CENTER",
+      "address": "600 EAST MAIN STREET",
+      "city": "ELMA",
+      "state": "WA",
+      "zip": "98541",
+      "phone": "(360) 346-2222",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ENUMCLAW": [
+    {
+      "name": "ST ELIZABETH HOSPITAL",
+      "address": "1450 BATTERSBY AVENUE",
+      "city": "ENUMCLAW",
+      "state": "WA",
+      "zip": "98022",
+      "phone": "(360) 825-2505",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EPHRATA": [
+    {
+      "name": "COLUMBIA BASIN HOSPITAL",
+      "address": "200 NAT WASHINGTON WAY",
+      "city": "EPHRATA",
+      "state": "WA",
+      "zip": "98823",
+      "phone": "(509) 754-4631",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EVERETT": [
+    {
+      "name": "PROVIDENCE REGIONAL MEDICAL CENTER EVERETT",
+      "address": "1321 COLBY AVENUE",
+      "city": "EVERETT",
+      "state": "WA",
+      "zip": "98201",
+      "phone": "(425) 261-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FEDERAL WAY": [
+    {
+      "name": "ST FRANCIS COMMUNITY HOSPITAL",
+      "address": "34515 9TH AVENUE SOUTH",
+      "city": "FEDERAL WAY",
+      "state": "WA",
+      "zip": "98003",
+      "phone": "(253) 944-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORKS": [
+    {
+      "name": "FORKS COMMUNITY HOSPITAL",
+      "address": "530 BOGACHIEL WAY",
+      "city": "FORKS",
+      "state": "WA",
+      "zip": "98331",
+      "phone": "(360) 374-6271",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRIDAY HARBOR": [
+    {
+      "name": "PEACEHEALTH PEACE ISLAND MEDICAL CENTER",
+      "address": "1117 SPRING STREET",
+      "city": "FRIDAY HARBOR",
+      "state": "WA",
+      "zip": "98250",
+      "phone": "(360) 378-2141",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GIG HARBOR": [
+    {
+      "name": "ST ANTHONY HOSPITAL",
+      "address": "11567 CANTERWOOD BOULEVARD NW",
+      "city": "GIG HARBOR",
+      "state": "WA",
+      "zip": "98332",
+      "phone": "(253) 530-2050",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GOLDENDALE": [
+    {
+      "name": "KLICKITAT VALLEY HOSPITAL",
+      "address": "310 SOUTH ROOSEVELT",
+      "city": "GOLDENDALE",
+      "state": "WA",
+      "zip": "98620",
+      "phone": "(509) 773-4022",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAND COULEE": [
+    {
+      "name": "COULEE MEDICAL CENTER",
+      "address": "411 FORTUYN ROAD",
+      "city": "GRAND COULEE",
+      "state": "WA",
+      "zip": "99133",
+      "phone": "(509) 633-1753",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ILWACO": [
+    {
+      "name": "OCEAN BEACH HOSPITAL",
+      "address": "174 FIRST AVENUE NORTH",
+      "city": "ILWACO",
+      "state": "WA",
+      "zip": "98624",
+      "phone": "(360) 642-3181",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ISSAQUAH": [
+    {
+      "name": "SWEDISH ISSAQUAH",
+      "address": "751 NE BLAKELY DR",
+      "city": "ISSAQUAH",
+      "state": "WA",
+      "zip": "98029",
+      "phone": "(425) 313-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Joint Base Lewis-McChord": [
+    {
+      "name": "Madigan AMC (FT Lewis)",
+      "address": "9040A Jackson Ave",
+      "city": "Joint Base Lewis-McChord",
+      "state": "WA",
+      "zip": "98431",
+      "phone": "(253) 968-1110",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KENNEWICK": [
+    {
+      "name": "TRIOS HEALTH",
+      "address": "3780 PLAZA WAY",
+      "city": "KENNEWICK",
+      "state": "WA",
+      "zip": "99338",
+      "phone": "(509) 586-6111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KIRKLAND": [
+    {
+      "name": "EVERGREENHEALTH MEDICAL CENTER",
+      "address": "12040 NE 128TH STREET",
+      "city": "KIRKLAND",
+      "state": "WA",
+      "zip": "98034",
+      "phone": "(425) 899-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BHC FAIRFAX HOSPITAL",
+      "address": "10200 NE 132ND ST",
+      "city": "KIRKLAND",
+      "state": "WA",
+      "zip": "98034",
+      "phone": "(425) 821-2000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LACEY": [
+    {
+      "name": "SOUTH SOUND BEHAVIORAL HOSPITAL",
+      "address": "605 WOODLAND SQUARE LOOP SE",
+      "city": "LACEY",
+      "state": "WA",
+      "zip": "98503",
+      "phone": "(360) 000-0000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKEWOOD": [
+    {
+      "name": "ST CLARE HOSPITAL",
+      "address": "11315 BRIDGEPORT WAY S W",
+      "city": "LAKEWOOD",
+      "state": "WA",
+      "zip": "98499",
+      "phone": "(253) 588-1711",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEAVENWORTH": [
+    {
+      "name": "CASCADE MEDICAL CENTER",
+      "address": "817 COMMERCIAL STREET",
+      "city": "LEAVENWORTH",
+      "state": "WA",
+      "zip": "98826",
+      "phone": "(509) 548-5815",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LONGVIEW": [
+    {
+      "name": "PEACEHEALTH ST JOHN MEDICAL CENTER",
+      "address": "1615 DELAWARE STREET",
+      "city": "LONGVIEW",
+      "state": "WA",
+      "zip": "98632",
+      "phone": "(360) 414-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARYSVILLE": [
+    {
+      "name": "SMOKEY POINT BEHAVIORAL HOSPITAL",
+      "address": "3955 156TH ST NE",
+      "city": "MARYSVILLE",
+      "state": "WA",
+      "zip": "98271",
+      "phone": "(212) 243-5565",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MEDICAL LAKE": [
+    {
+      "name": "EASTERN STATE HOSPITAL",
+      "address": "850 MAPLE STREET - P O BOX  A",
+      "city": "MEDICAL LAKE",
+      "state": "WA",
+      "zip": "99022",
+      "phone": "(509) 565-4000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONROE": [
+    {
+      "name": "EVERGREENHEALTH MONROE",
+      "address": "14701 179TH AVE SE",
+      "city": "MONROE",
+      "state": "WA",
+      "zip": "98272",
+      "phone": "(360) 794-7497",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MORTON": [
+    {
+      "name": "ARBOR HEALTH MORTON HOSPITAL",
+      "address": "521 ADAMS STREET",
+      "city": "MORTON",
+      "state": "WA",
+      "zip": "98356",
+      "phone": "(360) 496-5112",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOSES LAKE": [
+    {
+      "name": "SAMARITAN HOSPITAL",
+      "address": "801 EAST WHEELER ROAD",
+      "city": "MOSES LAKE",
+      "state": "WA",
+      "zip": "98837",
+      "phone": "(509) 765-5606",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT VERNON": [
+    {
+      "name": "SKAGIT VALLEY HOSPITAL",
+      "address": "1415 KINCAID STREET",
+      "city": "MOUNT VERNON",
+      "state": "WA",
+      "zip": "98274",
+      "phone": "(360) 424-4111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWPORT": [
+    {
+      "name": "NEWPORT COMMUNITY HOSPITAL",
+      "address": "714 WEST PINE STREET",
+      "city": "NEWPORT",
+      "state": "WA",
+      "zip": "99156",
+      "phone": "(509) 447-2441",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ODESSA": [
+    {
+      "name": "ODESSA MEMORIAL HEALTHCARE CENTER",
+      "address": "502 E AMENDE DRIVE",
+      "city": "ODESSA",
+      "state": "WA",
+      "zip": "99159",
+      "phone": "(509) 982-2611",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OLYMPIA": [
+    {
+      "name": "PROVIDENCE ST PETER HOSPITAL",
+      "address": "413 LILLY ROAD NE",
+      "city": "OLYMPIA",
+      "state": "WA",
+      "zip": "98506",
+      "phone": "(360) 493-7179",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CAPITAL MEDICAL CENTER",
+      "address": "3900 CAPITAL MALL DR SW",
+      "city": "OLYMPIA",
+      "state": "WA",
+      "zip": "98502",
+      "phone": "(360) 956-2550",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OMAK": [
+    {
+      "name": "MID VALLEY HOSPITAL & CLINIC",
+      "address": "810 JASMINE STREET",
+      "city": "OMAK",
+      "state": "WA",
+      "zip": "98841",
+      "phone": "(509) 826-1760",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OTHELLO": [
+    {
+      "name": "OTHELLO COMMUNITY HOSPITAL",
+      "address": "315 NORTH 14TH AVENUE",
+      "city": "OTHELLO",
+      "state": "WA",
+      "zip": "99344",
+      "phone": "(509) 488-2636",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PASCO": [
+    {
+      "name": "LOURDES MEDICAL CENTER",
+      "address": "520 N FOURTH AVENUE",
+      "city": "PASCO",
+      "state": "WA",
+      "zip": "99301",
+      "phone": "(509) 546-2278",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POMEROY": [
+    {
+      "name": "GARFIELD COUNTY PUBLIC HOSPITAL DISTRICT #1",
+      "address": "66 NORTH SIXTH STREET",
+      "city": "POMEROY",
+      "state": "WA",
+      "zip": "99347",
+      "phone": "(509) 843-1591",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORT ANGELES": [
+    {
+      "name": "OLYMPIC MEDICAL CENTER",
+      "address": "939 CAROLINE ST",
+      "city": "PORT ANGELES",
+      "state": "WA",
+      "zip": "98362",
+      "phone": "(360) 417-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORT TOWNSEND": [
+    {
+      "name": "JEFFERSON HEALTHCARE",
+      "address": "834 SHERIDAN STREET",
+      "city": "PORT TOWNSEND",
+      "state": "WA",
+      "zip": "98368",
+      "phone": "(360) 385-2200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PROSSER": [
+    {
+      "name": "PROSSER MEMORIAL HOSPITAL",
+      "address": "723 MEMORIAL STREET",
+      "city": "PROSSER",
+      "state": "WA",
+      "zip": "99350",
+      "phone": "(509) 786-2222",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PULLMAN": [
+    {
+      "name": "PULLMAN REGIONAL HOSPITAL",
+      "address": "835 S BISHOP BLVD",
+      "city": "PULLMAN",
+      "state": "WA",
+      "zip": "99163",
+      "phone": "(509) 332-2541",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PUYALLUP": [
+    {
+      "name": "MULTICARE GOOD SAMARITAN HOSPITAL",
+      "address": "401 15TH AVENUE SE",
+      "city": "PUYALLUP",
+      "state": "WA",
+      "zip": "98372",
+      "phone": "(253) 697-2102",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "QUINCY": [
+    {
+      "name": "QUINCY VALLEY MEDICAL CENTER",
+      "address": "908 10TH AVENUE SOUTHWEST",
+      "city": "QUINCY",
+      "state": "WA",
+      "zip": "98848",
+      "phone": "(509) 787-3531",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RENTON": [
+    {
+      "name": "VALLEY MEDICAL CENTER",
+      "address": "400 S 43RD ST",
+      "city": "RENTON",
+      "state": "WA",
+      "zip": "98055",
+      "phone": "(425) 228-3450",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REPUBLIC": [
+    {
+      "name": "FERRY COUNTY MEMORIAL HOSPITAL",
+      "address": "36 KLONDIKE ROAD",
+      "city": "REPUBLIC",
+      "state": "WA",
+      "zip": "99166",
+      "phone": "(509) 775-3333",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RICHLAND": [
+    {
+      "name": "KADLEC REGIONAL MEDICAL CENTER",
+      "address": "888 SWIFT BLVD",
+      "city": "RICHLAND",
+      "state": "WA",
+      "zip": "99352",
+      "phone": "(509) 946-4611",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LOURDES COUNSELING CENTER",
+      "address": "1175 CARONDELET DRIVE",
+      "city": "RICHLAND",
+      "state": "WA",
+      "zip": "99352",
+      "phone": "(509) 943-9104",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RITZVILLE": [
+    {
+      "name": "EAST ADAMS RURAL HOSPITAL",
+      "address": "903 SOUTH ADAMS",
+      "city": "RITZVILLE",
+      "state": "WA",
+      "zip": "99169",
+      "phone": "(509) 659-1200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEATTLE": [
+    {
+      "name": "VIRGINIA MASON MEDICAL CENTER",
+      "address": "925 SENECA ST",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zip": "98101",
+      "phone": "(206) 223-6600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY OF WASHINGTON MEDICAL CTR",
+      "address": "1959 NE PACIFIC ST  BOX 356151",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zip": "98195",
+      "phone": "(206) 598-3300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SWEDISH MEDICAL CENTER / CHERRY HILL",
+      "address": "500 17TH AVENUE",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zip": "98122",
+      "phone": "(206) 320-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SWEDISH MEDICAL CENTER",
+      "address": "747 BROADWAY",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zip": "98122",
+      "phone": "(206) 386-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER PERMANENTE CENTRAL HOSPITAL",
+      "address": "201 - 16TH AVENUE EAST",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zip": "98112",
+      "phone": "(206) 326-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HARBORVIEW MEDICAL CENTER",
+      "address": "325 9TH AVENUE",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zip": "98104",
+      "phone": "(206) 744-9535",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SEATTLE VA MEDICAL CENTER (VA PUGET SOUND HEALTHCARE SYSTEM)",
+      "address": "1660 S. COLUMBIAN WAY",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zip": "98108",
+      "phone": "(206) 764-2299",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SEATTLE CHILDREN'S HOSPITAL",
+      "address": "4800 SAND POINT WAY NE, PO BOX C-5371",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zip": "98105",
+      "phone": "(206) 987-2000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NAVOS - INPATIENT SERVICES",
+      "address": "2600 SOUTHWEST HOLDEN",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zip": "98126",
+      "phone": "(206) 933-7299",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEDRO WOOLLEY": [
+    {
+      "name": "PEACEHEALTH UNITED GENERAL MEDICAL CENTER",
+      "address": "2000 HOSPITAL DRIVE",
+      "city": "SEDRO WOOLLEY",
+      "state": "WA",
+      "zip": "98284",
+      "phone": "(360) 856-6021",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHELTON": [
+    {
+      "name": "MASON GENERAL HOSPITAL & FAMILY OF CLINICS",
+      "address": "901 MT VIEW DRIVE",
+      "city": "SHELTON",
+      "state": "WA",
+      "zip": "98584",
+      "phone": "(360) 426-1611",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SILVERDALE": [
+    {
+      "name": "HARRISON MEDICAL CENTER",
+      "address": "1800 NW MYHRE RD",
+      "city": "SILVERDALE",
+      "state": "WA",
+      "zip": "98383",
+      "phone": "(360) 377-3911",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SNOQUALMIE": [
+    {
+      "name": "SNOQUALMIE VALLEY HOSPITAL",
+      "address": "9801 FRONTIER AVE SE",
+      "city": "SNOQUALMIE",
+      "state": "WA",
+      "zip": "98065",
+      "phone": "(425) 831-2300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTH BEND": [
+    {
+      "name": "WILLAPA HARBOR HOSPITAL",
+      "address": "800 ALDER STREET",
+      "city": "SOUTH BEND",
+      "state": "WA",
+      "zip": "98586",
+      "phone": "(360) 875-5526",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPOKANE": [
+    {
+      "name": "DEACONESS MEDICAL CENTER",
+      "address": "W 800 FIFTH AVENUE",
+      "city": "SPOKANE",
+      "state": "WA",
+      "zip": "99210",
+      "phone": "(509) 473-5800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PROV SACRED HRT MED CTR & CHILDS HOSP.",
+      "address": "101 WEST 8TH AVENUE",
+      "city": "SPOKANE",
+      "state": "WA",
+      "zip": "99220",
+      "phone": "(509) 474-3131",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PROVIDENCE HOLY FAMILY HOSPITAL",
+      "address": "5633 NORTH LIDGERWOOD",
+      "city": "SPOKANE",
+      "state": "WA",
+      "zip": "99208",
+      "phone": "(509) 482-0111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SPOKANE VA MEDICAL CENTER",
+      "address": "4815 N. ASSEMBLY STREET",
+      "city": "SPOKANE",
+      "state": "WA",
+      "zip": "99205",
+      "phone": "(509) 434-7000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHRINERS HOSPITAL FOR CHILDREN",
+      "address": "911 WEST 5TH AVENUE",
+      "city": "SPOKANE",
+      "state": "WA",
+      "zip": "99204",
+      "phone": "(509) 623-0422",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "INLAND NORTHWEST BEHAVIORAL HEALTH",
+      "address": "104 W 5TH AVE",
+      "city": "SPOKANE",
+      "state": "WA",
+      "zip": "99204",
+      "phone": "(425) 821-2000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPOKANE VALLEY": [
+    {
+      "name": "MULTICARE VALLEY HOSPITAL",
+      "address": "12606 EAST MISSION AVENUE",
+      "city": "SPOKANE VALLEY",
+      "state": "WA",
+      "zip": "99216",
+      "phone": "(509) 924-6650",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUNNYSIDE": [
+    {
+      "name": "ASTRIA SUNNYSIDE HOSPITAL",
+      "address": "1016 TACOMA AVENUE",
+      "city": "SUNNYSIDE",
+      "state": "WA",
+      "zip": "98944",
+      "phone": "(509) 837-1500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TACOMA": [
+    {
+      "name": "ST JOSEPH MEDICAL CENTER",
+      "address": "1717 SOUTH J STREET",
+      "city": "TACOMA",
+      "state": "WA",
+      "zip": "98405",
+      "phone": "(253) 627-4101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TACOMA GENERAL ALLENMORE HOSPITAL",
+      "address": "315 S MLK JR WAY",
+      "city": "TACOMA",
+      "state": "WA",
+      "zip": "98405",
+      "phone": "(253) 403-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MARY BRIDGE CHILDREN'S HOSPITAL",
+      "address": "317 MARTIN LUTHER KING JR W BOX 5299",
+      "city": "TACOMA",
+      "state": "WA",
+      "zip": "98415",
+      "phone": "(253) 403-1400",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WELLFOUND BEHAVIORAL HEALTH HOSPITAL",
+      "address": "3402 S 19TH ST",
+      "city": "TACOMA",
+      "state": "WA",
+      "zip": "98405",
+      "phone": "(253) 403-4565",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TONASKET": [
+    {
+      "name": "NORTH VALLEY HOSPITAL",
+      "address": "203 SOUTH WESTERN",
+      "city": "TONASKET",
+      "state": "WA",
+      "zip": "98855",
+      "phone": "(509) 486-2151",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TOPPENISH": [
+    {
+      "name": "ASTRIA TOPPENISH HOSPITAL",
+      "address": "502 W FOURTH AVE",
+      "city": "TOPPENISH",
+      "state": "WA",
+      "zip": "98948",
+      "phone": "(509) 865-1520",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VANCOUVER": [
+    {
+      "name": "PEACEHEALTH SOUTHWEST MEDICAL CENTER",
+      "address": "400 NE MOTHER JOSEPH PLACE",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "98664",
+      "phone": "(360) 256-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LEGACY SALMON CREEK MEDICAL CENTER",
+      "address": "2211 NE 139TH STREET",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "98686",
+      "phone": "(360) 487-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RAINIER SPRINGS",
+      "address": "2805 NE 129TH ST",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zip": "98686",
+      "phone": "(360) 356-1890",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WALLA WALLA": [
+    {
+      "name": "PROVIDENCE ST MARY MEDICAL CENTER",
+      "address": "401 W POPLAR ST",
+      "city": "WALLA WALLA",
+      "state": "WA",
+      "zip": "99362",
+      "phone": "(509) 522-5900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WENATCHEE": [
+    {
+      "name": "CONFLUENCE HEALTH HOSPITAL",
+      "address": "1201 S MILLER STREET",
+      "city": "WENATCHEE",
+      "state": "WA",
+      "zip": "98807",
+      "phone": "(509) 662-1511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHITE SALMON": [
+    {
+      "name": "SKYLINE HOSPITAL",
+      "address": "211 SKYLINE DRIVE",
+      "city": "WHITE SALMON",
+      "state": "WA",
+      "zip": "98672",
+      "phone": "(509) 491-1101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YAKIMA": [
+    {
+      "name": "YAKIMA VALLEY MEMORIAL",
+      "address": "2811 TIETON DRIVE",
+      "city": "YAKIMA",
+      "state": "WA",
+      "zip": "98902",
+      "phone": "(509) 575-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

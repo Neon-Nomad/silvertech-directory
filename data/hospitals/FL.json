@@ -1,0 +1,3147 @@
+{
+  "APALACHICOLA": [
+    {
+      "name": "GEORGE E WEEMS MEMORIAL HOSPITAL",
+      "address": "135 AVE G",
+      "city": "APALACHICOLA",
+      "state": "FL",
+      "zip": "32320",
+      "phone": "(850) 653-8853",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARCADIA": [
+    {
+      "name": "DESOTO MEMORIAL HOSPITAL",
+      "address": "900 N ROBERT AVE",
+      "city": "ARCADIA",
+      "state": "FL",
+      "zip": "34266",
+      "phone": "(863) 494-3535",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ATLANTIS": [
+    {
+      "name": "HCA FLORIDA JFK HOSPITAL",
+      "address": "5301 S CONGRESS AVE",
+      "city": "ATLANTIS",
+      "state": "FL",
+      "zip": "33462",
+      "phone": "(561) 965-7300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AVENTURA": [
+    {
+      "name": "HCA FLORIDA AVENTURA HOSPITAL",
+      "address": "20900 BISCAYNE BLVD",
+      "city": "AVENTURA",
+      "state": "FL",
+      "zip": "33180",
+      "phone": "(305) 682-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BARTOW": [
+    {
+      "name": "BARTOW REGIONAL MEDICAL CENTER",
+      "address": "2200 OSPREY BLVD",
+      "city": "BARTOW",
+      "state": "FL",
+      "zip": "33830",
+      "phone": "(863) 533-8111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAY PINES": [
+    {
+      "name": "BAY PINES VA MEDICAL CENTER",
+      "address": "10000 BAY PINES BLVD.",
+      "city": "BAY PINES",
+      "state": "FL",
+      "zip": "33744",
+      "phone": "(727) 398-6661",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELLE GLADE": [
+    {
+      "name": "LAKESIDE MEDICAL CENTER",
+      "address": "39200 HOOKER HWY",
+      "city": "BELLE GLADE",
+      "state": "FL",
+      "zip": "33430",
+      "phone": "(561) 996-6571",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLOUNTSTOWN": [
+    {
+      "name": "CALHOUN-LIBERTY HOSPITAL",
+      "address": "20370 NE BURNS AVE",
+      "city": "BLOUNTSTOWN",
+      "state": "FL",
+      "zip": "32424",
+      "phone": "(850) 674-5411",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOCA RATON": [
+    {
+      "name": "BOCA RATON REGIONAL HOSPITAL",
+      "address": "800 MEADOWS RD",
+      "city": "BOCA RATON",
+      "state": "FL",
+      "zip": "33486",
+      "phone": "(561) 955-4200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WEST BOCA MEDICAL CENTER",
+      "address": "21644 STATE RD 7",
+      "city": "BOCA RATON",
+      "state": "FL",
+      "zip": "33428",
+      "phone": "(561) 488-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BONIFAY": [
+    {
+      "name": "DOCTORS MEMORIAL HOSPITAL",
+      "address": "2600 HOSPITAL DR",
+      "city": "BONIFAY",
+      "state": "FL",
+      "zip": "32425",
+      "phone": "(850) 547-1120",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOYNTON BEACH": [
+    {
+      "name": "BETHESDA HOSPITAL EAST",
+      "address": "2815 S SEACREST BLVD",
+      "city": "BOYNTON BEACH",
+      "state": "FL",
+      "zip": "33435",
+      "phone": "(561) 737-7733",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRADENTON": [
+    {
+      "name": "MANATEE MEMORIAL HOSPITAL",
+      "address": "206 2ND ST E",
+      "city": "BRADENTON",
+      "state": "FL",
+      "zip": "34208",
+      "phone": "(941) 746-5111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA BLAKE HOSPITAL",
+      "address": "2020 59TH ST W",
+      "city": "BRADENTON",
+      "state": "FL",
+      "zip": "34209",
+      "phone": "(941) 798-6110",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LAKEWOOD RANCH MEDICAL CENTER",
+      "address": "8330 LAKEWOOD RANCH BLVD",
+      "city": "BRADENTON",
+      "state": "FL",
+      "zip": "34202",
+      "phone": "(941) 782-2100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTERSTONE OF FLORIDA",
+      "address": "2020 26TH AVE E",
+      "city": "BRADENTON",
+      "state": "FL",
+      "zip": "34208",
+      "phone": "(941) 782-4299",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUNCOAST BEHAVIORAL HEALTH CENTER",
+      "address": "4480 51ST ST W",
+      "city": "BRADENTON",
+      "state": "FL",
+      "zip": "34210",
+      "phone": "(941) 251-5000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRANDON": [
+    {
+      "name": "HCA FLORIDA BRANDON HOSPITAL",
+      "address": "119 OAKFIELD DR",
+      "city": "BRANDON",
+      "state": "FL",
+      "zip": "33511",
+      "phone": "(813) 916-0600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BROOKSVILLE": [
+    {
+      "name": "TAMPA GENERAL HOSPITAL BROOKSVILLE",
+      "address": "17240 CORTEZ BLVD",
+      "city": "BROOKSVILLE",
+      "state": "FL",
+      "zip": "34601",
+      "phone": "(352) 796-5111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA OAK HILL HOSPITAL",
+      "address": "11375 CORTEZ BLVD",
+      "city": "BROOKSVILLE",
+      "state": "FL",
+      "zip": "34613",
+      "phone": "(352) 596-6632",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SPRINGBROOK HOSPITAL",
+      "address": "7007 GROVE RD",
+      "city": "BROOKSVILLE",
+      "state": "FL",
+      "zip": "34609",
+      "phone": "(352) 596-4306",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAPE CORAL": [
+    {
+      "name": "CAPE CORAL HOSPITAL",
+      "address": "636 DEL PRADO BLVD",
+      "city": "CAPE CORAL",
+      "state": "FL",
+      "zip": "33990",
+      "phone": "(239) 424-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHATTAHOOCHEE": [
+    {
+      "name": "FLORIDA STATE HOSPITAL UNIT 31 MED",
+      "address": "100 N MAIN ST",
+      "city": "CHATTAHOOCHEE",
+      "state": "FL",
+      "zip": "32324",
+      "phone": "(850) 663-7536",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FLORIDA STATE HOSPITAL UNIT 14 PSYCH",
+      "address": "100 N MAIN ST",
+      "city": "CHATTAHOOCHEE",
+      "state": "FL",
+      "zip": "32324",
+      "phone": "(850) 663-7536",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHIPLEY": [
+    {
+      "name": "NORTHWEST FLORIDA COMMUNITY HOSPITAL",
+      "address": "1360 BRICKYARD RD",
+      "city": "CHIPLEY",
+      "state": "FL",
+      "zip": "32428",
+      "phone": "(850) 638-1610",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLEARWATER": [
+    {
+      "name": "MORTON PLANT HOSPITAL",
+      "address": "300 PINELLAS ST",
+      "city": "CLEARWATER",
+      "state": "FL",
+      "zip": "33756",
+      "phone": "(727) 462-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WINDMOOR HEALTHCARE OF CLEARWATER",
+      "address": "11300 US 19 N",
+      "city": "CLEARWATER",
+      "state": "FL",
+      "zip": "33764",
+      "phone": "(727) 541-2646",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLERMONT": [
+    {
+      "name": "ORLANDO HEALTH SOUTH LAKE HOSPITAL",
+      "address": "1900 DON WICKHAM DR",
+      "city": "CLERMONT",
+      "state": "FL",
+      "zip": "34711",
+      "phone": "(352) 394-4071",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLEWISTON": [
+    {
+      "name": "HENDRY REGIONAL MEDICAL CENTER",
+      "address": "524 W SAGAMORE AVE",
+      "city": "CLEWISTON",
+      "state": "FL",
+      "zip": "33440",
+      "phone": "(863) 902-3033",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COCOA BEACH": [
+    {
+      "name": "CAPE CANAVERAL HOSPITAL",
+      "address": "701 W COCOA BEACH CAUSEWAY",
+      "city": "COCOA BEACH",
+      "state": "FL",
+      "zip": "32931",
+      "phone": "(321) 799-7111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CORAL GABLES": [
+    {
+      "name": "CORAL GABLES HOSPITAL",
+      "address": "3100 DOUGLAS RD",
+      "city": "CORAL GABLES",
+      "state": "FL",
+      "zip": "33134",
+      "phone": "(305) 445-8461",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DOCTORS HOSPITAL",
+      "address": "5000 UNIVERSITY DR",
+      "city": "CORAL GABLES",
+      "state": "FL",
+      "zip": "33146",
+      "phone": "(786) 308-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CORAL SPRINGS": [
+    {
+      "name": "BROWARD HEALTH CORAL SPRINGS",
+      "address": "3000 CORAL HILLS DR",
+      "city": "CORAL SPRINGS",
+      "state": "FL",
+      "zip": "33065",
+      "phone": "(954) 344-3121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CRESTVIEW": [
+    {
+      "name": "NORTH OKALOOSA MEDICAL CENTER",
+      "address": "151 REDSTONE AVE SE",
+      "city": "CRESTVIEW",
+      "state": "FL",
+      "zip": "32539",
+      "phone": "(850) 689-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CRYSTAL RIVER": [
+    {
+      "name": "TAMPA GENERAL HOSPITAL CRYSTAL RIVER",
+      "address": "6201 N SUNCOAST BLVD",
+      "city": "CRYSTAL RIVER",
+      "state": "FL",
+      "zip": "34428",
+      "phone": "(352) 795-6560",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DADE CITY": [
+    {
+      "name": "ADVENTHEALTH DADE CITY",
+      "address": "13100 FT KING RD",
+      "city": "DADE CITY",
+      "state": "FL",
+      "zip": "33525",
+      "phone": "(352) 568-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAVENPORT": [
+    {
+      "name": "ADVENTHEALTH HEART OF FLORIDA",
+      "address": "40100 HWY 27",
+      "city": "DAVENPORT",
+      "state": "FL",
+      "zip": "33837",
+      "phone": "(863) 422-4971",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAVIE": [
+    {
+      "name": "HCA FLORIDA UNIVERSITY HOSPITAL",
+      "address": "3476 S UNIVERSITY DR.",
+      "city": "DAVIE",
+      "state": "FL",
+      "zip": "33328",
+      "phone": "(954) 475-4400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAYTONA BEACH": [
+    {
+      "name": "HALIFAX HEALTH MEDICAL CENTER",
+      "address": "303 N CLYDE MORRIS BLVD",
+      "city": "DAYTONA BEACH",
+      "state": "FL",
+      "zip": "32114",
+      "phone": "(386) 254-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTHEALTH DAYTONA BEACH",
+      "address": "301 MEMORIAL MEDICAL PARKWAY",
+      "city": "DAYTONA BEACH",
+      "state": "FL",
+      "zip": "32117",
+      "phone": "(386) 231-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEERFIELD BEACH": [
+    {
+      "name": "BROWARD HEALTH NORTH",
+      "address": "201 E SAMPLE RD",
+      "city": "DEERFIELD BEACH",
+      "state": "FL",
+      "zip": "33064",
+      "phone": "(954) 786-6400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEFUNIAK SPRINGS": [
+    {
+      "name": "NORTH WALTON DOCTORS HOSPITAL",
+      "address": "4413 US HWY 331 S",
+      "city": "DEFUNIAK SPRINGS",
+      "state": "FL",
+      "zip": "32435",
+      "phone": "(850) 920-2065",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DELAND": [
+    {
+      "name": "ADVENTHEALTH DELAND",
+      "address": "701 W PLYMOUTH AVE",
+      "city": "DELAND",
+      "state": "FL",
+      "zip": "32720",
+      "phone": "(386) 943-4522",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DELRAY BEACH": [
+    {
+      "name": "DELRAY MEDICAL CENTER",
+      "address": "5352 LINTON BLVD",
+      "city": "DELRAY BEACH",
+      "state": "FL",
+      "zip": "33484",
+      "phone": "(561) 498-4440",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DELTONA": [
+    {
+      "name": "HALIFAX HEALTH /UF HEALTH MEDICAL CENTER OF DELTON",
+      "address": "3300 HALIFAX CROSSINGS BLVD",
+      "city": "DELTONA",
+      "state": "FL",
+      "zip": "32725",
+      "phone": "(386) 425-4806",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DUNEDIN": [
+    {
+      "name": "MEASE DUNEDIN HOSPITAL",
+      "address": "601 MAIN ST",
+      "city": "DUNEDIN",
+      "state": "FL",
+      "zip": "34698",
+      "phone": "(727) 733-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ENGLEWOOD": [
+    {
+      "name": "HCA FLORIDA ENGLEWOOD HOSPITAL",
+      "address": "700 MEDICAL BLVD",
+      "city": "ENGLEWOOD",
+      "state": "FL",
+      "zip": "34223",
+      "phone": "(941) 475-6571",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Eglin AFB": [
+    {
+      "name": "96th Medical Group (Eglin AFB)",
+      "address": "96 MDG 307 Boatner Rd Suite 114",
+      "city": "Eglin AFB",
+      "state": "FL",
+      "zip": "32542",
+      "phone": "(850) 883-8600",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FERNANDINA BEACH": [
+    {
+      "name": "BAPTIST MEDICAL CENTER - NASSAU",
+      "address": "1250 S 18TH ST",
+      "city": "FERNANDINA BEACH",
+      "state": "FL",
+      "zip": "32034",
+      "phone": "(904) 321-3500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT LAUDERDALE": [
+    {
+      "name": "BROWARD HEALTH MEDICAL CENTER",
+      "address": "1600 S ANDREWS AVE",
+      "city": "FORT LAUDERDALE",
+      "state": "FL",
+      "zip": "33316",
+      "phone": "(954) 355-4400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BROWARD HEALTH IMPERIAL POINT",
+      "address": "6401 N FEDERAL HWY",
+      "city": "FORT LAUDERDALE",
+      "state": "FL",
+      "zip": "33308",
+      "phone": "(954) 776-8500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT MYERS": [
+    {
+      "name": "LEE MEMORIAL HOSPITAL",
+      "address": "2776 CLEVELAND AVE",
+      "city": "FORT MYERS",
+      "state": "FL",
+      "zip": "33901",
+      "phone": "(239) 343-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GULF COAST MEDICAL CENTER LEE HEALTH",
+      "address": "13681 DOCTORS WAY",
+      "city": "FORT MYERS",
+      "state": "FL",
+      "zip": "33912",
+      "phone": "(239) 343-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PARK ROYAL HOSPITAL",
+      "address": "9241 PARK ROYAL DR",
+      "city": "FORT MYERS",
+      "state": "FL",
+      "zip": "33908",
+      "phone": "(239) 332-0125",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT PIERCE": [
+    {
+      "name": "HCA FLORIDA LAWNWOOD HOSPITAL",
+      "address": "1700 S 23RD ST",
+      "city": "FORT PIERCE",
+      "state": "FL",
+      "zip": "34950",
+      "phone": "(772) 461-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT WALTON BEACH": [
+    {
+      "name": "HCA FLORIDA FORT WALTON-DESTIN HOSPITAL",
+      "address": "1000 MAR-WALT DR",
+      "city": "FORT WALTON BEACH",
+      "state": "FL",
+      "zip": "32547",
+      "phone": "(850) 862-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FT LAUDERDALE": [
+    {
+      "name": "HOLY CROSS HOSPITAL",
+      "address": "4725 N FEDERAL HWY",
+      "city": "FT LAUDERDALE",
+      "state": "FL",
+      "zip": "33308",
+      "phone": "(954) 771-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GAINESVILLE": [
+    {
+      "name": "UF HEALTH SHANDS HOSPITAL",
+      "address": "1600 SW ARCHER RD",
+      "city": "GAINESVILLE",
+      "state": "FL",
+      "zip": "32610",
+      "phone": "(352) 265-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA NORTH FLORIDA HOSPITAL",
+      "address": "6500 W NEWBERRY RD",
+      "city": "GAINESVILLE",
+      "state": "FL",
+      "zip": "32605",
+      "phone": "(352) 333-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA NORTH FLORIDA/SOUTH GEORGIA HEALTHCARE SYSTEM - GAINESVILLE",
+      "address": "1601 S W ARCHER ROAD",
+      "city": "GAINESVILLE",
+      "state": "FL",
+      "zip": "32608",
+      "phone": "(352) 376-1611",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GULF BREEZE": [
+    {
+      "name": "GULF BREEZE HOSPITAL",
+      "address": "1110 GULF BREEZE PKWY",
+      "city": "GULF BREEZE",
+      "state": "FL",
+      "zip": "32561",
+      "phone": "(850) 934-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HIALEAH": [
+    {
+      "name": "LARKIN COMMUNITY HOSPITAL PALM SPRINGS CAMPUS",
+      "address": "1475 W 49TH ST",
+      "city": "HIALEAH",
+      "state": "FL",
+      "zip": "33012",
+      "phone": "(305) 558-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HIALEAH HOSPITAL",
+      "address": "651 E 25TH ST",
+      "city": "HIALEAH",
+      "state": "FL",
+      "zip": "33013",
+      "phone": "(305) 693-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PALMETTO GENERAL HOSPITAL",
+      "address": "2001 W 68TH ST",
+      "city": "HIALEAH",
+      "state": "FL",
+      "zip": "33016",
+      "phone": "(305) 823-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHERN WINDS HOSPITAL",
+      "address": "4225 W 20TH AVE",
+      "city": "HIALEAH",
+      "state": "FL",
+      "zip": "33012",
+      "phone": "(305) 558-9700",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOLLYWOOD": [
+    {
+      "name": "MEMORIAL REGIONAL HOSPITAL",
+      "address": "3501 JOHNSON ST",
+      "city": "HOLLYWOOD",
+      "state": "FL",
+      "zip": "33021",
+      "phone": "(954) 987-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LARKIN COMMUNITY HOSPITAL BEHAVIORAL HEALTH SRVS",
+      "address": "1201 N 37TH AVE",
+      "city": "HOLLYWOOD",
+      "state": "FL",
+      "zip": "33021",
+      "phone": "(954) 962-1355",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOMESTEAD": [
+    {
+      "name": "HOMESTEAD HOSPITAL",
+      "address": "975 BAPTIST WAY",
+      "city": "HOMESTEAD",
+      "state": "FL",
+      "zip": "33033",
+      "phone": "(786) 243-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUDSON": [
+    {
+      "name": "HCA FLORIDA BAYONET POINT HOSPITAL",
+      "address": "14000 FIVAY RD",
+      "city": "HUDSON",
+      "state": "FL",
+      "zip": "34667",
+      "phone": "(727) 819-2929",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "INVERNESS": [
+    {
+      "name": "HCA FLORIDA CITRUS HOSPITAL",
+      "address": "502 W HIGHLAND BLVD",
+      "city": "INVERNESS",
+      "state": "FL",
+      "zip": "34452",
+      "phone": "(352) 726-1551",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JACKSONVILLE": [
+    {
+      "name": "SHANDS JACKSONVILLE",
+      "address": "655 W 8TH ST",
+      "city": "JACKSONVILLE",
+      "state": "FL",
+      "zip": "32209",
+      "phone": "(904) 244-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASCENSION ST VINCENT'S RIVERSIDE",
+      "address": "1 SHIRCLIFF WAY",
+      "city": "JACKSONVILLE",
+      "state": "FL",
+      "zip": "32204",
+      "phone": "(904) 308-7300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BAPTIST HEALTH MEDICAL CENTER - JACKSONVILLE",
+      "address": "800 PRUDENTIAL DR",
+      "city": "JACKSONVILLE",
+      "state": "FL",
+      "zip": "32207",
+      "phone": "(904) 202-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MAYO CLINIC",
+      "address": "4500 SAN PABLO RD",
+      "city": "JACKSONVILLE",
+      "state": "FL",
+      "zip": "32224",
+      "phone": "(904) 953-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA MEMORIAL HOSPITAL",
+      "address": "3625 UNIVERSITY BLVD S",
+      "city": "JACKSONVILLE",
+      "state": "FL",
+      "zip": "32216",
+      "phone": "(904) 702-6111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASCENSION ST VINCENT'S SOUTHSIDE",
+      "address": "4201 BELFORT RD",
+      "city": "JACKSONVILLE",
+      "state": "FL",
+      "zip": "32216",
+      "phone": "(904) 296-3700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIVER POINT BEHAVIORAL HEALTH",
+      "address": "6300 BEACH BLVD",
+      "city": "JACKSONVILLE",
+      "state": "FL",
+      "zip": "32216",
+      "phone": "(904) 724-9202",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WEKIVA SPRINGS",
+      "address": "3947 SALISBURY RD",
+      "city": "JACKSONVILLE",
+      "state": "FL",
+      "zip": "32216",
+      "phone": "(904) 296-3533",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JACKSONVILLE BEACH": [
+    {
+      "name": "BAPTIST MEDICAL CENTER  BEACHES",
+      "address": "1350 13TH AVE S",
+      "city": "JACKSONVILLE BEACH",
+      "state": "FL",
+      "zip": "32250",
+      "phone": "(904) 247-2900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JAY": [
+    {
+      "name": "JAY HOSPITAL",
+      "address": "14114 ALABAMA ST",
+      "city": "JAY",
+      "state": "FL",
+      "zip": "32565",
+      "phone": "(850) 675-4532",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JUPITER": [
+    {
+      "name": "JUPITER MEDICAL CENTER",
+      "address": "1210 S OLD DIXIE HWY",
+      "city": "JUPITER",
+      "state": "FL",
+      "zip": "33458",
+      "phone": "(561) 747-2234",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Jacksonville": [
+    {
+      "name": "NH Jacksonville",
+      "address": "2080 Child St",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip": "32214",
+      "phone": "(904) 542-7300",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KEY WEST": [
+    {
+      "name": "LOWER KEYS MEDICAL CENTER",
+      "address": "5900 COLLEGE ROAD",
+      "city": "KEY WEST",
+      "state": "FL",
+      "zip": "33040",
+      "phone": "(305) 294-5531",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KISSIMMEE": [
+    {
+      "name": "HCA FLORIDA OSCEOLA HOSPITAL",
+      "address": "700 WEST OAK STREET",
+      "city": "KISSIMMEE",
+      "state": "FL",
+      "zip": "34741",
+      "phone": "(407) 846-2266",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA POINCIANA HOSPITAL",
+      "address": "325 CYPRESS PKWY",
+      "city": "KISSIMMEE",
+      "state": "FL",
+      "zip": "34758",
+      "phone": "(407) 530-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE BUTLER": [
+    {
+      "name": "LAKE BUTLER HOSPITAL",
+      "address": "850 E MAIN ST",
+      "city": "LAKE BUTLER",
+      "state": "FL",
+      "zip": "32054",
+      "phone": "(386) 496-2323",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE CITY": [
+    {
+      "name": "HCA FLORIDA LAKE CITY HOSPITAL",
+      "address": "340 NW COMMERCE DR",
+      "city": "LAKE CITY",
+      "state": "FL",
+      "zip": "32055",
+      "phone": "(386) 719-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA NORTH FLORIDA/SOUTH GEORGIA HEALTHCARE SYSTEM - LAKE CITY",
+      "address": "619 SOUTH MARION AVENUE",
+      "city": "LAKE CITY",
+      "state": "FL",
+      "zip": "32025",
+      "phone": "(386) 755-3016",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE WALES": [
+    {
+      "name": "ADVENTHEALTH LAKE WALES",
+      "address": "410 S 11TH ST",
+      "city": "LAKE WALES",
+      "state": "FL",
+      "zip": "33853",
+      "phone": "(863) 676-1433",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKELAND": [
+    {
+      "name": "LAKELAND REGIONAL MEDICAL CENTER",
+      "address": "1324 LAKELAND HILLS BLVD",
+      "city": "LAKELAND",
+      "state": "FL",
+      "zip": "33805",
+      "phone": "(863) 687-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LARGO": [
+    {
+      "name": "HCA FLORIDA LARGO HOSPITAL",
+      "address": "201 14TH ST SW",
+      "city": "LARGO",
+      "state": "FL",
+      "zip": "33770",
+      "phone": "(727) 588-5200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEESBURG": [
+    {
+      "name": "UF HEALTH LEESBURG HOSPITAL",
+      "address": "600 E DIXIE AVE",
+      "city": "LEESBURG",
+      "state": "FL",
+      "zip": "34748",
+      "phone": "(352) 323-5762",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LIFESTREAM BEHAVIORAL CENTER",
+      "address": "2020 TALLY RD",
+      "city": "LEESBURG",
+      "state": "FL",
+      "zip": "34748",
+      "phone": "(352) 315-7800",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEHIGH ACRES": [
+    {
+      "name": "HCA FLORIDA LEHIGH REGIONAL MEDICAL CENTER",
+      "address": "1500 LEE BLVD",
+      "city": "LEHIGH ACRES",
+      "state": "FL",
+      "zip": "33936",
+      "phone": "(239) 369-2101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOXAHATCHEE": [
+    {
+      "name": "HCA FLORIDA PALMS WEST HOSPITAL",
+      "address": "13001 SOUTHERN BLVD",
+      "city": "LOXAHATCHEE",
+      "state": "FL",
+      "zip": "33470",
+      "phone": "(561) 798-3300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MACCLENNY": [
+    {
+      "name": "ED FRASER MEMORIAL HOSPITAL",
+      "address": "159 N 3RD ST",
+      "city": "MACCLENNY",
+      "state": "FL",
+      "zip": "32063",
+      "phone": "(904) 259-3151",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTHEAST FLORIDA STATE HOSPITAL",
+      "address": "7487 S STATE RD 121",
+      "city": "MACCLENNY",
+      "state": "FL",
+      "zip": "32063",
+      "phone": "(904) 330-2001",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MADISON": [
+    {
+      "name": "MADISON COUNTY MEMORIAL HOSPITAL",
+      "address": "224 NW CRANE AVE",
+      "city": "MADISON",
+      "state": "FL",
+      "zip": "32340",
+      "phone": "(850) 973-2271",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAGNONIA PARK": [
+    {
+      "name": "NEUROBEHAVIORAL HOSPITAL OF THE PALM BEACHES-NORTH",
+      "address": "993 45TH ST",
+      "city": "MAGNONIA PARK",
+      "state": "FL",
+      "zip": "33407",
+      "phone": "(954) 874-7866",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARATHON": [
+    {
+      "name": "FISHERMEN'S COMMUNITY HOSPITAL",
+      "address": "3301 OVERSEAS HWY",
+      "city": "MARATHON",
+      "state": "FL",
+      "zip": "33050",
+      "phone": "(305) 434-1000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARGATE": [
+    {
+      "name": "HCA FLORIDA NORTHWEST HOSPITAL",
+      "address": "2801 N STATE RD 7",
+      "city": "MARGATE",
+      "state": "FL",
+      "zip": "33063",
+      "phone": "(954) 974-0400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARIANNA": [
+    {
+      "name": "JACKSON HOSPITAL",
+      "address": "4250 HOSPITAL DR",
+      "city": "MARIANNA",
+      "state": "FL",
+      "zip": "32446",
+      "phone": "(850) 526-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MELBOURNE": [
+    {
+      "name": "HOLMES REGIONAL MEDICAL CENTER",
+      "address": "1350 S HICKORY ST",
+      "city": "MELBOURNE",
+      "state": "FL",
+      "zip": "32901",
+      "phone": "(321) 434-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ORLANDO HEALTH MELBOURNE HOSPITAL",
+      "address": "250 NORTH WICKHAM ROAD",
+      "city": "MELBOURNE",
+      "state": "FL",
+      "zip": "32935",
+      "phone": "(321) 752-1200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VIERA HOSPITAL",
+      "address": "8745 N WICKHAM RD",
+      "city": "MELBOURNE",
+      "state": "FL",
+      "zip": "32940",
+      "phone": "(321) 434-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CIRCLES OF CARE, INC",
+      "address": "400 E SHERIDAN RD",
+      "city": "MELBOURNE",
+      "state": "FL",
+      "zip": "32901",
+      "phone": "(321) 984-4900",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIAMI": [
+    {
+      "name": "BAPTIST HOSPITAL OF MIAMI",
+      "address": "8900 N KENDALL DR",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33176",
+      "phone": "(786) 596-1960",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "JACKSON HEALTH SYSTEM",
+      "address": "1611 NW 12TH AVE",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33136",
+      "phone": "(305) 585-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTH SHORE MEDICAL CENTER",
+      "address": "1100 NW 95TH ST",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33150",
+      "phone": "(305) 835-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTH MIAMI HOSPITAL",
+      "address": "6200 SW 73RD ST",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33143",
+      "phone": "(786) 662-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA KENDALL HOSPITAL",
+      "address": "11750 BIRD RD",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33175",
+      "phone": "(305) 223-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DOUGLAS GARDENS HOSPITAL",
+      "address": "5200 NE 2ND AVE",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33137",
+      "phone": "(305) 751-8626",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KERALTY HOSPITAL",
+      "address": "2500 SW 75TH AVE",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33155",
+      "phone": "(305) 263-9270",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WEST KENDALL BAPTIST HOSPITAL",
+      "address": "9555 SW 162 AVE",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33196",
+      "phone": "(786) 467-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MIAMI VA MEDICAL CENTER",
+      "address": "1201 N W 16TH STREET",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33125",
+      "phone": "(305) 324-4455",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NICKLAUS CHILDREN'S HOSPITAL",
+      "address": "3100 SW 62ND AVE",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33155",
+      "phone": "(305) 666-6511",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIAMI BEACH": [
+    {
+      "name": "MOUNT SINAI MEDICAL CENTER OF FLORIDA, INC",
+      "address": "4300 ALTON RD",
+      "city": "MIAMI BEACH",
+      "state": "FL",
+      "zip": "33140",
+      "phone": "(305) 674-2121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIDDLEBURG": [
+    {
+      "name": "ASCENSION ST VINCENT'S CLAY COUNTY",
+      "address": "1670 ST VINCENTS WAY",
+      "city": "MIDDLEBURG",
+      "state": "FL",
+      "zip": "32068",
+      "phone": "(904) 602-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILTON": [
+    {
+      "name": "SANTA ROSA MEDICAL CENTER",
+      "address": "6002 BERRYHILL RD",
+      "city": "MILTON",
+      "state": "FL",
+      "zip": "32570",
+      "phone": "(850) 626-7762",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIRAMAR": [
+    {
+      "name": "MEMORIAL HOSPITAL MIRAMAR",
+      "address": "1901 SW 172ND AVE",
+      "city": "MIRAMAR",
+      "state": "FL",
+      "zip": "33029",
+      "phone": "(954) 538-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIRAMAR BEACH": [
+    {
+      "name": "SACRED HEART HOSPITAL ON THE EMERALD COAST",
+      "address": "7800 US HWY 98 W",
+      "city": "MIRAMAR BEACH",
+      "state": "FL",
+      "zip": "32550",
+      "phone": "(850) 278-3600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NAPLES": [
+    {
+      "name": "NAPLES COMMUNITY HOSPITAL",
+      "address": "350 7TH ST N",
+      "city": "NAPLES",
+      "state": "FL",
+      "zip": "34102",
+      "phone": "(239) 624-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PHYSICIANS REGIONAL MEDICAL CENTER - PINE RIDGE",
+      "address": "6101 PINE RIDGE ROAD",
+      "city": "NAPLES",
+      "state": "FL",
+      "zip": "34119",
+      "phone": "(239) 304-5145",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WILLOUGH AT NAPLES, THE",
+      "address": "9001 TAMIAMI TRAIL EAST",
+      "city": "NAPLES",
+      "state": "FL",
+      "zip": "34113",
+      "phone": "(239) 775-4500",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW PORT RICHEY": [
+    {
+      "name": "MORTON PLANT NORTH BAY HOSPITAL",
+      "address": "6600 MADISON STREET",
+      "city": "NEW PORT RICHEY",
+      "state": "FL",
+      "zip": "34652",
+      "phone": "(727) 842-8468",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW SMYRNA BEACH": [
+    {
+      "name": "ADVENTHEALTH NEW SMYRNA BEACH",
+      "address": "401 PALMETTO ST",
+      "city": "NEW SMYRNA BEACH",
+      "state": "FL",
+      "zip": "32170",
+      "phone": "(386) 424-5100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NICEVILLE": [
+    {
+      "name": "HCA FLORIDA TWIN CITIES HOSPITAL",
+      "address": "2190 HWY 85 N",
+      "city": "NICEVILLE",
+      "state": "FL",
+      "zip": "32578",
+      "phone": "(850) 678-4131",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTH VENICE": [
+    {
+      "name": "SARASOTA MEMORIAL HOSPITAL - VENICE",
+      "address": "2600 LAUREL ROAD EAST",
+      "city": "NORTH VENICE",
+      "state": "FL",
+      "zip": "34275",
+      "phone": "(941) 917-7299",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OAKLAND PARK": [
+    {
+      "name": "FORT LAUDERDALE BEHAVIORAL HEALTH CENTER",
+      "address": "5757 N DIXIE HWY",
+      "city": "OAKLAND PARK",
+      "state": "FL",
+      "zip": "33334",
+      "phone": "(954) 734-2000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OCALA": [
+    {
+      "name": "ADVENTHEALTH OCALA",
+      "address": "1500 SW 1ST AVE",
+      "city": "OCALA",
+      "state": "FL",
+      "zip": "34474",
+      "phone": "(352) 351-7200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MARION COMMUNTIY HOSPITAL",
+      "address": "1431 SW 1ST AVE",
+      "city": "OCALA",
+      "state": "FL",
+      "zip": "34471",
+      "phone": "(352) 401-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE VINES HOSPITAL",
+      "address": "3130 SW 27TH AVE",
+      "city": "OCALA",
+      "state": "FL",
+      "zip": "34471",
+      "phone": "(352) 671-3130",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OCOEE": [
+    {
+      "name": "ORLANDO HEALTH-HEALTH CENTRAL HOSPITAL",
+      "address": "10000 W COLONIAL DR",
+      "city": "OCOEE",
+      "state": "FL",
+      "zip": "34761",
+      "phone": "(407) 296-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OKEECHOBEE": [
+    {
+      "name": "HCA FLORIDA RAULERSON HOSPITAL",
+      "address": "1796 HWY 441 NORTH",
+      "city": "OKEECHOBEE",
+      "state": "FL",
+      "zip": "34972",
+      "phone": "(863) 763-2151",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ORANGE CITY": [
+    {
+      "name": "ADVENTHEALTH FISH MEMORIAL",
+      "address": "1055 SAXON BLVD",
+      "city": "ORANGE CITY",
+      "state": "FL",
+      "zip": "32763",
+      "phone": "(386) 917-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ORANGE PARK": [
+    {
+      "name": "HCA FLORIDA ORANGE PARK HOSPITAL",
+      "address": "2001 KINGSLEY AVE",
+      "city": "ORANGE PARK",
+      "state": "FL",
+      "zip": "32073",
+      "phone": "(904) 276-8500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ORLANDO": [
+    {
+      "name": "ORLANDO HEALTH",
+      "address": "52 W UNDERWOOD ST",
+      "city": "ORLANDO",
+      "state": "FL",
+      "zip": "32806",
+      "phone": "(321) 841-5111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTHEALTH ORLANDO",
+      "address": "601 E ROLLINS ST",
+      "city": "ORLANDO",
+      "state": "FL",
+      "zip": "32803",
+      "phone": "(407) 303-1976",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UCF LAKE NONA HOSPITAL",
+      "address": "6700 LAKE NONA BLVD",
+      "city": "ORLANDO",
+      "state": "FL",
+      "zip": "32827",
+      "phone": "(850) 523-2115",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ORLANDO VA MEDICAL CENTER",
+      "address": "13800 VETERANS WAY",
+      "city": "ORLANDO",
+      "state": "FL",
+      "zip": "32827",
+      "phone": "(407) 631-1000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NEMOURS CHILDRENS HOSPITAL, FLORIDA",
+      "address": "6535 NEMOURS PKWY",
+      "city": "ORLANDO",
+      "state": "FL",
+      "zip": "32827",
+      "phone": "(407) 567-4000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASPIRE HEALTH PARTNERS",
+      "address": "1800 MERCY DR",
+      "city": "ORLANDO",
+      "state": "FL",
+      "zip": "32808",
+      "phone": "(407) 875-3700",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTRAL FLORIDA BEHAVIORAL HOSPITAL",
+      "address": "6601 CENTRAL FLORIDA PARKWAY",
+      "city": "ORLANDO",
+      "state": "FL",
+      "zip": "32821",
+      "phone": "(407) 370-0111",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY BEHAVIORAL CENTER",
+      "address": "2500 DISCOVERY DRIVE",
+      "city": "ORLANDO",
+      "state": "FL",
+      "zip": "32826",
+      "phone": "(407) 281-7000",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OVIEDO": [
+    {
+      "name": "OVIEDO MEDICAL CENTER",
+      "address": "8300 RED BUG LAKE RD",
+      "city": "OVIEDO",
+      "state": "FL",
+      "zip": "32765",
+      "phone": "(615) 850-6055",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PALATKA": [
+    {
+      "name": "HCA FLORIDA PUTNAM HOSPITAL",
+      "address": "611 ZEAGLER DR",
+      "city": "PALATKA",
+      "state": "FL",
+      "zip": "32177",
+      "phone": "(386) 328-5711",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PALM BAY": [
+    {
+      "name": "PALM BAY HOSPITAL",
+      "address": "1425 MALABAR RD, NE",
+      "city": "PALM BAY",
+      "state": "FL",
+      "zip": "32907",
+      "phone": "(321) 434-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PALM BEACH GARDENS": [
+    {
+      "name": "PALM BEACH GARDENS MEDICAL CENTER",
+      "address": "3360 BURNS RD",
+      "city": "PALM BEACH GARDENS",
+      "state": "FL",
+      "zip": "33410",
+      "phone": "(561) 622-1411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PALM COAST": [
+    {
+      "name": "FLORIDA HOSPITAL FLAGLER",
+      "address": "60 MEMORIAL MEDICAL PKWY",
+      "city": "PALM COAST",
+      "state": "FL",
+      "zip": "32164",
+      "phone": "(386) 586-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTHEALTH PALM COAST PARKWAY",
+      "address": "1 ADVENTHEALTH WAY",
+      "city": "PALM COAST",
+      "state": "FL",
+      "zip": "32137",
+      "phone": "(386) 302-1800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PANAMA CITY": [
+    {
+      "name": "ASCENSION SACRED HEART BAY",
+      "address": "615 N BONITA AVE",
+      "city": "PANAMA CITY",
+      "state": "FL",
+      "zip": "32401",
+      "phone": "(850) 769-1511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA GULF COAST HOSPITAL",
+      "address": "449 W 23RD ST",
+      "city": "PANAMA CITY",
+      "state": "FL",
+      "zip": "32405",
+      "phone": "(850) 747-7926",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EMERALD COAST BEHAVIORAL HOSPITAL",
+      "address": "1940 HARRISON AVE",
+      "city": "PANAMA CITY",
+      "state": "FL",
+      "zip": "32405",
+      "phone": "(850) 763-0017",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PEMBROKE PINES": [
+    {
+      "name": "MEMORIAL HOSPITAL PEMBROKE",
+      "address": "7800 SHERIDAN ST",
+      "city": "PEMBROKE PINES",
+      "state": "FL",
+      "zip": "33024",
+      "phone": "(954) 962-9650",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MEMORIAL HOSPITAL WEST",
+      "address": "703 N FLAMINGO RD",
+      "city": "PEMBROKE PINES",
+      "state": "FL",
+      "zip": "33028",
+      "phone": "(954) 436-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTH FLORIDA STATE HOSPITAL",
+      "address": "800 E CYPRESS DR",
+      "city": "PEMBROKE PINES",
+      "state": "FL",
+      "zip": "33025",
+      "phone": "(305) 967-7000",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PENSACOLA": [
+    {
+      "name": "SACRED HEART HOSPITAL",
+      "address": "5151 N 9TH AVE",
+      "city": "PENSACOLA",
+      "state": "FL",
+      "zip": "32504",
+      "phone": "(850) 416-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BAPTIST HOSPITAL",
+      "address": "123 BAPTIST WAY",
+      "city": "PENSACOLA",
+      "state": "FL",
+      "zip": "32503",
+      "phone": "(850) 434-4011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA WEST HOSPITAL",
+      "address": "8383 N DAVIS HWY",
+      "city": "PENSACOLA",
+      "state": "FL",
+      "zip": "32514",
+      "phone": "(850) 494-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PERRY": [
+    {
+      "name": "DOCTORS MEMORIAL HOSPITAL INC",
+      "address": "333 N BYRON BUTLER PKWY",
+      "city": "PERRY",
+      "state": "FL",
+      "zip": "32347",
+      "phone": "(850) 584-0800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLANT CITY": [
+    {
+      "name": "SOUTH FLORIDA BAPTIST HOSPITAL",
+      "address": "301 N ALEXANDER ST",
+      "city": "PLANT CITY",
+      "state": "FL",
+      "zip": "33563",
+      "phone": "(813) 757-1200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLANTATION": [
+    {
+      "name": "HCA FLORIDA MERCY HOSPITAL",
+      "address": "401 NW 42ND AVE",
+      "city": "PLANTATION",
+      "state": "FL",
+      "zip": "33317",
+      "phone": "(954) 587-5010",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WESTSIDE REGIONAL MEDICAL CENTER",
+      "address": "8201 W BROWARD BLVD",
+      "city": "PLANTATION",
+      "state": "FL",
+      "zip": "33324",
+      "phone": "(954) 473-6600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORT CHARLOTTE": [
+    {
+      "name": "SHOREPOINT HEALTH PORT CHARLOTTE",
+      "address": "2500 HARBOR BLVD",
+      "city": "PORT CHARLOTTE",
+      "state": "FL",
+      "zip": "33952",
+      "phone": "(941) 766-4122",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA FAWCETT HOSPITAL",
+      "address": "21298 OLEAN BLVD",
+      "city": "PORT CHARLOTTE",
+      "state": "FL",
+      "zip": "33952",
+      "phone": "(941) 629-1181",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORT SAINT JOE": [
+    {
+      "name": "ASCENSION SACRED HEART GULF",
+      "address": "3801 E HWY 98",
+      "city": "PORT SAINT JOE",
+      "state": "FL",
+      "zip": "32456",
+      "phone": "(850) 229-5600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORT SAINT LUCIE": [
+    {
+      "name": "ST LUCIE MEDICAL CENTER",
+      "address": "1800 SE TIFFANY AVE",
+      "city": "PORT SAINT LUCIE",
+      "state": "FL",
+      "zip": "34952",
+      "phone": "(772) 335-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PORT ST LUCIE HOSPITAL",
+      "address": "2550 SE WALTON RD",
+      "city": "PORT SAINT LUCIE",
+      "state": "FL",
+      "zip": "34952",
+      "phone": "(772) 335-0400",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PUNTA GORDA": [
+    {
+      "name": "SHOREPOINT HEALTH PUNTA GORDA",
+      "address": "809 E MARION AVE",
+      "city": "PUNTA GORDA",
+      "state": "FL",
+      "zip": "33950",
+      "phone": "(941) 639-3131",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RIVERVIEW": [
+    {
+      "name": "ADVENTHEALTH RIVERVIEW",
+      "address": "9330 US HWY 301 S",
+      "city": "RIVERVIEW",
+      "state": "FL",
+      "zip": "33578",
+      "phone": "(813) 929-5962",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROCKLEDGE": [
+    {
+      "name": "ORLANDO HEALTH ROCKLEDGE HOSPITAL",
+      "address": "110 LONGWOOD AVE",
+      "city": "ROCKLEDGE",
+      "state": "FL",
+      "zip": "32955",
+      "phone": "(321) 637-2603",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAFETY HARBOR": [
+    {
+      "name": "MEASE COUNTRYSIDE HOSPITAL",
+      "address": "3231 MCMULLEN BOOTH RD",
+      "city": "SAFETY HARBOR",
+      "state": "FL",
+      "zip": "34695",
+      "phone": "(727) 734-6950",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT AUGUSTINE": [
+    {
+      "name": "FLAGLER HOSPITAL",
+      "address": "400 HEALTH PARK BLVD",
+      "city": "SAINT AUGUSTINE",
+      "state": "FL",
+      "zip": "32086",
+      "phone": "(904) 819-5155",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT CLOUD": [
+    {
+      "name": "ORLANDO HEALTH ST CLOUD HOSPITAL",
+      "address": "2906 17TH STREET",
+      "city": "SAINT CLOUD",
+      "state": "FL",
+      "zip": "34769",
+      "phone": "(407) 892-2135",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BLACKBERRY CENTER - OGLETHORPE OF ORLANDO",
+      "address": "91 BEEHIVE CIR",
+      "city": "SAINT CLOUD",
+      "state": "FL",
+      "zip": "34769",
+      "phone": "(321) 805-5090",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT PETERSBURG": [
+    {
+      "name": "ORLANDO HEALTH BAYFRONT HOSPITAL",
+      "address": "701 6TH ST S",
+      "city": "SAINT PETERSBURG",
+      "state": "FL",
+      "zip": "33701",
+      "phone": "(727) 823-1234",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST ANTHONYS HOSPITAL",
+      "address": "1200 SEVENTH AVE N",
+      "city": "SAINT PETERSBURG",
+      "state": "FL",
+      "zip": "33705",
+      "phone": "(727) 825-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA PASADENA HOSPITAL",
+      "address": "1501 PASADENA AVE S",
+      "city": "SAINT PETERSBURG",
+      "state": "FL",
+      "zip": "33707",
+      "phone": "(727) 381-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA ST PETERSBURG HOSPITAL",
+      "address": "6500 38TH AVE N",
+      "city": "SAINT PETERSBURG",
+      "state": "FL",
+      "zip": "33710",
+      "phone": "(727) 384-1414",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA NORTHSIDE HOSPITAL",
+      "address": "6000 49TH ST N",
+      "city": "SAINT PETERSBURG",
+      "state": "FL",
+      "zip": "33709",
+      "phone": "(727) 521-5121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "JOHNS HOPKINS ALL CHILDREN'S HOSPITAL",
+      "address": "501 SIXTH AVENUE SOUTH",
+      "city": "SAINT PETERSBURG",
+      "state": "FL",
+      "zip": "33701",
+      "phone": "(713) 898-7451",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANFORD": [
+    {
+      "name": "CENTRAL FLORIDA LAKE MONROE HOSPITAL",
+      "address": "1401 W SEMINOLE BLVD",
+      "city": "SANFORD",
+      "state": "FL",
+      "zip": "32771",
+      "phone": "(407) 321-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SARASOTA": [
+    {
+      "name": "SARASOTA MEMORIAL HOSPITAL",
+      "address": "1700 S TAMIAMI TRL",
+      "city": "SARASOTA",
+      "state": "FL",
+      "zip": "34239",
+      "phone": "(941) 917-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA SARASOTA DOCTORS HOSPITAL",
+      "address": "5731 BEE RIDGE RD",
+      "city": "SARASOTA",
+      "state": "FL",
+      "zip": "34233",
+      "phone": "(941) 342-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEBASTIAN": [
+    {
+      "name": "ORLANDO HEALTH SEBASTIAN RIVER HOSPITAL",
+      "address": "13695 US HWY 1",
+      "city": "SEBASTIAN",
+      "state": "FL",
+      "zip": "32958",
+      "phone": "(772) 589-3187",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEBRING": [
+    {
+      "name": "HCA FLORIDA HIGHLANDS HOSPITAL",
+      "address": "3600 S HIGHLANDS AVE",
+      "city": "SEBRING",
+      "state": "FL",
+      "zip": "33870",
+      "phone": "(863) 385-6101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTHEALTH SEBRING",
+      "address": "4200 SUN N LAKE BLVD",
+      "city": "SEBRING",
+      "state": "FL",
+      "zip": "33872",
+      "phone": "(863) 314-4466",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTH MIAMI": [
+    {
+      "name": "LARKIN COMMUNITY HOSPITAL",
+      "address": "7031 SW 62ND AVE",
+      "city": "SOUTH MIAMI",
+      "state": "FL",
+      "zip": "33143",
+      "phone": "(305) 284-7500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ST. JOHNS": [
+    {
+      "name": "ASCENSION ST VINCENT'S ST JOHNS COUNTY",
+      "address": "205 TRINITY WAY",
+      "city": "ST. JOHNS",
+      "state": "FL",
+      "zip": "32259",
+      "phone": "(904) 450-6020",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STUART": [
+    {
+      "name": "CLEVELAND CLINIC MARTIN NORTH HOSPITAL",
+      "address": "200 SE HOSPITAL AVE",
+      "city": "STUART",
+      "state": "FL",
+      "zip": "34994",
+      "phone": "(772) 287-5200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CORAL SHORES BEHAVIORAL HEALTH",
+      "address": "5995 SE COMMUNITY DRIVE",
+      "city": "STUART",
+      "state": "FL",
+      "zip": "34997",
+      "phone": "(772) 403-4000",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUN CITY CENTER": [
+    {
+      "name": "HCA FLORIDA SOUTH SHORE HOSPITAL",
+      "address": "4016 SUN CITY CENTER BLVD",
+      "city": "SUN CITY CENTER",
+      "state": "FL",
+      "zip": "33573",
+      "phone": "(813) 634-3301",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TALLAHASSEE": [
+    {
+      "name": "TALLAHASSEE MEMORIAL HEALTHCARE",
+      "address": "1300 MICCOSUKEE RD",
+      "city": "TALLAHASSEE",
+      "state": "FL",
+      "zip": "32308",
+      "phone": "(850) 431-1155",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA CAPITAL HOSPITAL",
+      "address": "2626 CAPITAL MEDICAL BLVD",
+      "city": "TALLAHASSEE",
+      "state": "FL",
+      "zip": "32308",
+      "phone": "(850) 656-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EASTSIDE PSYCHIATRIC HOSPITAL",
+      "address": "2634B CAPITAL CIRCLE NE, 2ND FLR",
+      "city": "TALLAHASSEE",
+      "state": "FL",
+      "zip": "32308",
+      "phone": "(904) 487-2930",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAMARAC": [
+    {
+      "name": "UNIVERSITY HOSPITAL AND MEDICAL CENTER",
+      "address": "7201 N UNIVERSITY DR",
+      "city": "TAMARAC",
+      "state": "FL",
+      "zip": "33321",
+      "phone": "(954) 721-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAMPA": [
+    {
+      "name": "FLORIDA HOSPITAL CARROLLWOOD",
+      "address": "7171 N DALE MABRY HWY",
+      "city": "TAMPA",
+      "state": "FL",
+      "zip": "33614",
+      "phone": "(813) 615-7219",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST JOSEPHS HOSPITAL",
+      "address": "3001 W MARTIN LUTHER KING JR BLVD",
+      "city": "TAMPA",
+      "state": "FL",
+      "zip": "33607",
+      "phone": "(813) 870-4398",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TAMPA GENERAL HOSPITAL",
+      "address": "1 TAMPA GENERAL CIR",
+      "city": "TAMPA",
+      "state": "FL",
+      "zip": "33606",
+      "phone": "(813) 844-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTHEALTH TAMPA",
+      "address": "3100 E FLETCHER AVE",
+      "city": "TAMPA",
+      "state": "FL",
+      "zip": "33613",
+      "phone": "(813) 615-7200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA FLORIDA SOUTH TAMPA HOSPITAL",
+      "address": "2901 W SWANN AVE",
+      "city": "TAMPA",
+      "state": "FL",
+      "zip": "33609",
+      "phone": "(813) 873-6400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TAMPA VA MEDICAL CENTER",
+      "address": "13000 BRUCE B DOWNS BLVD.",
+      "city": "TAMPA",
+      "state": "FL",
+      "zip": "33612",
+      "phone": "(813) 972-2000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TARPON SPRINGS": [
+    {
+      "name": "ADVENTHEALTH NORTH PINELLAS",
+      "address": "1395 S PINELLAS AVE",
+      "city": "TARPON SPRINGS",
+      "state": "FL",
+      "zip": "34689",
+      "phone": "(813) 615-7219",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAVARES": [
+    {
+      "name": "ADVENTHEALTH WATERMAN",
+      "address": "1000 WATERMAN WAY",
+      "city": "TAVARES",
+      "state": "FL",
+      "zip": "32778",
+      "phone": "(352) 253-3368",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAVERNIER": [
+    {
+      "name": "MARINERS HOSPITAL",
+      "address": "91500 OVERSEAS HIGHWAY",
+      "city": "TAVERNIER",
+      "state": "FL",
+      "zip": "33070",
+      "phone": "(305) 434-3000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "THE VILLAGES": [
+    {
+      "name": "VILLAGES REGIONAL HOSPITAL, THE",
+      "address": "1451 EL CAMINO REAL",
+      "city": "THE VILLAGES",
+      "state": "FL",
+      "zip": "32159",
+      "phone": "(352) 751-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TITUSVILLE": [
+    {
+      "name": "PARRISH MEDICAL CENTER",
+      "address": "951 N WASHINGTON AVE",
+      "city": "TITUSVILLE",
+      "state": "FL",
+      "zip": "32796",
+      "phone": "(321) 268-6111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PALM POINT BEHAVIORAL HEALTH",
+      "address": "2355 TRUMAN SCARBOROUGH WAY",
+      "city": "TITUSVILLE",
+      "state": "FL",
+      "zip": "32796",
+      "phone": "(321) 603-6550",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TRINITY": [
+    {
+      "name": "HCA FLORIDA TRINITY HOSPITAL",
+      "address": "9330 SR 54",
+      "city": "TRINITY",
+      "state": "FL",
+      "zip": "34655",
+      "phone": "(727) 834-4900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VERO BEACH": [
+    {
+      "name": "CLEVELAND CLINIC INDIAN RIVER HOSPITAL",
+      "address": "1000 36TH ST",
+      "city": "VERO BEACH",
+      "state": "FL",
+      "zip": "32960",
+      "phone": "(772) 567-4311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAUCHULA": [
+    {
+      "name": "ADVENTHEALTH WAUCHULA",
+      "address": "735 S 5TH AVE",
+      "city": "WAUCHULA",
+      "state": "FL",
+      "zip": "33873",
+      "phone": "(863) 773-3101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WELLINGTON": [
+    {
+      "name": "WELLINGTON REGIONAL MEDICAL CENTER",
+      "address": "10101 FOREST HILL BLVD",
+      "city": "WELLINGTON",
+      "state": "FL",
+      "zip": "33414",
+      "phone": "(561) 798-8500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESLEY CHAPEL": [
+    {
+      "name": "ADVENTHEALTH WESLEY CHAPEL",
+      "address": "2600 BRUCE B DOWNS BLVD",
+      "city": "WESLEY CHAPEL",
+      "state": "FL",
+      "zip": "33544",
+      "phone": "(813) 929-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BAYCARE HOSPITAL WESLEY CHAPEL",
+      "address": "4501 BRUCE B DOWNS BLVD",
+      "city": "WESLEY CHAPEL",
+      "state": "FL",
+      "zip": "33544",
+      "phone": "(813) 914-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTH TAMPA BEHAVIORAL HEALTH",
+      "address": "29910 SR 56",
+      "city": "WESLEY CHAPEL",
+      "state": "FL",
+      "zip": "33543",
+      "phone": "(813) 333-0000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST PALM BEACH": [
+    {
+      "name": "GOOD SAMARITAN MEDICAL CENTER",
+      "address": "1309 N FLAGLER DR",
+      "city": "WEST PALM BEACH",
+      "state": "FL",
+      "zip": "33401",
+      "phone": "(561) 655-5511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST MARY'S MEDICAL CENTER",
+      "address": "901 45TH ST",
+      "city": "WEST PALM BEACH",
+      "state": "FL",
+      "zip": "33407",
+      "phone": "(561) 840-6202",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "W PALM BEACH VA MEDICAL CENTER",
+      "address": "7305 N. MILITARY TRAIL",
+      "city": "WEST PALM BEACH",
+      "state": "FL",
+      "zip": "33410",
+      "phone": "(561) 422-8600",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTON": [
+    {
+      "name": "CLEVELAND CLINIC HOSPITAL",
+      "address": "3100 WESTON RD",
+      "city": "WESTON",
+      "state": "FL",
+      "zip": "33331",
+      "phone": "(954) 689-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINTER HAVEN": [
+    {
+      "name": "WINTER HAVEN HOSPITAL",
+      "address": "200 AVE F NE",
+      "city": "WINTER HAVEN",
+      "state": "FL",
+      "zip": "33881",
+      "phone": "(863) 293-1121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ZEPHYRHILLS": [
+    {
+      "name": "FLORIDA HOSPITAL ZEPHYRHILLS",
+      "address": "7050 GALL BLVD",
+      "city": "ZEPHYRHILLS",
+      "state": "FL",
+      "zip": "33541",
+      "phone": "(813) 615-7219",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

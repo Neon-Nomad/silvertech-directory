@@ -1,0 +1,939 @@
+{
+  "ANACONDA": [
+    {
+      "name": "COMMUNITY HOSPITAL OF ANACONDA",
+      "address": "401 W PENNSYLVANIA",
+      "city": "ANACONDA",
+      "state": "MT",
+      "zip": "59711",
+      "phone": "(406) 563-8500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAKER": [
+    {
+      "name": "FALLON MEDICAL COMPLEX HOSPITAL",
+      "address": "202 S 4TH ST W",
+      "city": "BAKER",
+      "state": "MT",
+      "zip": "59313",
+      "phone": "(406) 778-3331",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BIG SANDY": [
+    {
+      "name": "BIG SANDY MEDICAL CENTER",
+      "address": "166 MONTANA AVE E",
+      "city": "BIG SANDY",
+      "state": "MT",
+      "zip": "59520",
+      "phone": "(406) 378-2188",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BIG SKY": [
+    {
+      "name": "BOZEMAN HEALTH BIG SKY MEDICAL CENTER",
+      "address": "334 TOWN CENTER AVE",
+      "city": "BIG SKY",
+      "state": "MT",
+      "zip": "59716",
+      "phone": "(406) 995-6995",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BIG TIMBER": [
+    {
+      "name": "PIONEER MEDICAL CENTER",
+      "address": "301 W 7TH AVE",
+      "city": "BIG TIMBER",
+      "state": "MT",
+      "zip": "59011",
+      "phone": "(406) 932-4603",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BILLINGS": [
+    {
+      "name": "BILLINGS CLINIC",
+      "address": "2800 10TH AVE N",
+      "city": "BILLINGS",
+      "state": "MT",
+      "zip": "59101",
+      "phone": "(406) 657-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "INTERMOUNTAIN HEALTH ST VINCENT REGIONAL HOSPITAL",
+      "address": "1233 N 30TH ST",
+      "city": "BILLINGS",
+      "state": "MT",
+      "zip": "59107",
+      "phone": "(406) 657-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOZEMAN": [
+    {
+      "name": "BOZEMAN HEALTH DEACONESS HOSPITAL",
+      "address": "915 HIGHLAND BLVD",
+      "city": "BOZEMAN",
+      "state": "MT",
+      "zip": "59715",
+      "phone": "(406) 585-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BROWNING": [
+    {
+      "name": "P H S INDIAN HOSPITAL AT BROWNING - BLACKFEET",
+      "address": "760 HOSPITAL CIRCLE, POST OFFICE BOX 760",
+      "city": "BROWNING",
+      "state": "MT",
+      "zip": "59417",
+      "phone": "(406) 338-8917",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BUTTE": [
+    {
+      "name": "ST JAMES HOSPITAL",
+      "address": "400 S CLARK ST",
+      "city": "BUTTE",
+      "state": "MT",
+      "zip": "59701",
+      "phone": "(406) 723-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHESTER": [
+    {
+      "name": "LOGAN HEALTH - CHESTER",
+      "address": "315 W MADISON AVE",
+      "city": "CHESTER",
+      "state": "MT",
+      "zip": "59522",
+      "phone": "(406) 759-5181",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHOTEAU": [
+    {
+      "name": "BENEFIS TETON MEDICAL CENTER",
+      "address": "915 4TH ST NW",
+      "city": "CHOTEAU",
+      "state": "MT",
+      "zip": "59422",
+      "phone": "(406) 466-5763",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CIRCLE": [
+    {
+      "name": "MCCONE COUNTY HEALTH CENTER",
+      "address": "605 SULLIVAN AVE",
+      "city": "CIRCLE",
+      "state": "MT",
+      "zip": "59215",
+      "phone": "(406) 485-3381",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUMBUS": [
+    {
+      "name": "STILLWATER BILLINGS CLINIC",
+      "address": "710 N 11TH ST",
+      "city": "COLUMBUS",
+      "state": "MT",
+      "zip": "59019",
+      "phone": "(406) 322-5316",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CONRAD": [
+    {
+      "name": "PONDERA MEDICAL CENTER",
+      "address": "805 SUNSET BLVD",
+      "city": "CONRAD",
+      "state": "MT",
+      "zip": "59425",
+      "phone": "(406) 271-3211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CROW AGENCY": [
+    {
+      "name": "P H S INDIAN HOSPITAL CROW / NORTHERN CHEYENNE",
+      "address": "1010 SOUTH 7650 EAST, POST OFFICE BOX 9",
+      "city": "CROW AGENCY",
+      "state": "MT",
+      "zip": "59022",
+      "phone": "(406) 638-2626",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CULBERTSON": [
+    {
+      "name": "ROOSEVELT MEDICAL CENTER",
+      "address": "818 2ND AVE E",
+      "city": "CULBERTSON",
+      "state": "MT",
+      "zip": "59218",
+      "phone": "(406) 787-6401",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CUT BANK": [
+    {
+      "name": "NORTHERN ROCKIES MEDICAL CENTER",
+      "address": "802 2ND ST SE",
+      "city": "CUT BANK",
+      "state": "MT",
+      "zip": "59427",
+      "phone": "(406) 873-2251",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEER LODGE": [
+    {
+      "name": "DEER LODGE MEDICAL CENTER",
+      "address": "1100 HOLLENBACK LN",
+      "city": "DEER LODGE",
+      "state": "MT",
+      "zip": "59722",
+      "phone": "(406) 846-2212",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DILLON": [
+    {
+      "name": "BARRETT HOSPITAL & HEALTHCARE",
+      "address": "600 MT HWY 91 S",
+      "city": "DILLON",
+      "state": "MT",
+      "zip": "59725",
+      "phone": "(406) 683-3000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EKALAKA": [
+    {
+      "name": "DAHL MEMORIAL HEALTHCARE ASSOCIATION INC",
+      "address": "215 SANDY ST",
+      "city": "EKALAKA",
+      "state": "MT",
+      "zip": "59324",
+      "phone": "(406) 775-8739",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ENNIS": [
+    {
+      "name": "MADISON VALLEY MEDICAL CENTER",
+      "address": "305 N MAIN",
+      "city": "ENNIS",
+      "state": "MT",
+      "zip": "59729",
+      "phone": "(406) 682-4222",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORSYTH": [
+    {
+      "name": "ROSEBUD HEALTH CARE CENTER",
+      "address": "383 N 17TH AV",
+      "city": "FORSYTH",
+      "state": "MT",
+      "zip": "59327",
+      "phone": "(406) 346-2161",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT BENTON": [
+    {
+      "name": "MISSOURI RIVER MEDICAL CENTER",
+      "address": "1501 ST CHARLES ST",
+      "city": "FORT BENTON",
+      "state": "MT",
+      "zip": "59442",
+      "phone": "(406) 622-3331",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT HARRISON": [
+    {
+      "name": "VA MONTANA HEALTHCARE SYSTEM",
+      "address": "3687 VETERANS DRIVE",
+      "city": "FORT HARRISON",
+      "state": "MT",
+      "zip": "59636",
+      "phone": "(406) 447-7900",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLASGOW": [
+    {
+      "name": "FRANCES MAHON DEACONESS HOSPITAL",
+      "address": "621 3RD ST S",
+      "city": "GLASGOW",
+      "state": "MT",
+      "zip": "59230",
+      "phone": "(406) 228-3500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLENDIVE": [
+    {
+      "name": "GLENDIVE MEDICAL CENTER",
+      "address": "202 PROSPECT DR",
+      "city": "GLENDIVE",
+      "state": "MT",
+      "zip": "59330",
+      "phone": "(406) 345-3306",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREAT FALLS": [
+    {
+      "name": "BENEFIS HOSPITALS INC",
+      "address": "1101 26TH ST S",
+      "city": "GREAT FALLS",
+      "state": "MT",
+      "zip": "59405",
+      "phone": "(406) 455-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GREAT FALLS CLINIC HOSPITAL",
+      "address": "3010 15TH AVENUE SOUTH",
+      "city": "GREAT FALLS",
+      "state": "MT",
+      "zip": "59405",
+      "phone": "(406) 216-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAMILTON": [
+    {
+      "name": "BITTERROOT HEALTH - DALY HOSPITAL",
+      "address": "1200 WESTWOOD DR",
+      "city": "HAMILTON",
+      "state": "MT",
+      "zip": "59840",
+      "phone": "(406) 363-2211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARDIN": [
+    {
+      "name": "BIG HORN HOSPITAL",
+      "address": "17 N MILES",
+      "city": "HARDIN",
+      "state": "MT",
+      "zip": "59034",
+      "phone": "(406) 665-2310",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARLEM": [
+    {
+      "name": "P H S INDIAN HOSPITAL-FT BELKNAP AT HARLEM - CAH",
+      "address": "456 GROS VENTRE AVE, RR 1",
+      "city": "HARLEM",
+      "state": "MT",
+      "zip": "59526",
+      "phone": "(406) 353-3100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARLOWTON": [
+    {
+      "name": "WHEATLAND MEMORIAL HOSPITAL",
+      "address": "530 3RD ST NW",
+      "city": "HARLOWTON",
+      "state": "MT",
+      "zip": "59036",
+      "phone": "(406) 632-4351",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAVRE": [
+    {
+      "name": "NORTHERN MONTANA HOSPITAL",
+      "address": "30 13TH ST",
+      "city": "HAVRE",
+      "state": "MT",
+      "zip": "59501",
+      "phone": "(406) 265-2211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HELENA": [
+    {
+      "name": "ST PETERS HEALTH",
+      "address": "2475 BROADWAY",
+      "city": "HELENA",
+      "state": "MT",
+      "zip": "59601",
+      "phone": "(406) 442-2480",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHODAIR CHILDREN'S HOSPITAL",
+      "address": "2755 COLONIAL DR",
+      "city": "HELENA",
+      "state": "MT",
+      "zip": "59601",
+      "phone": "(406) 444-7500",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JORDAN": [
+    {
+      "name": "GARFIELD COUNTY HEALTH CENTER",
+      "address": "332 LEAVITT AVE",
+      "city": "JORDAN",
+      "state": "MT",
+      "zip": "59337",
+      "phone": "(406) 557-2500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KALISPELL": [
+    {
+      "name": "LOGAN HEALTH MEDICAL CENTER",
+      "address": "310 SUNNYVIEW LANE",
+      "city": "KALISPELL",
+      "state": "MT",
+      "zip": "59901",
+      "phone": "(406) 752-5111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEWISTOWN": [
+    {
+      "name": "CENTRAL MONTANA MEDICAL CENTER",
+      "address": "408 WENDELL AVE",
+      "city": "LEWISTOWN",
+      "state": "MT",
+      "zip": "59457",
+      "phone": "(406) 535-7711",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LIBBY": [
+    {
+      "name": "CABINET PEAKS MEDICAL CENTER",
+      "address": "209 HEALTH PARK DR",
+      "city": "LIBBY",
+      "state": "MT",
+      "zip": "59923",
+      "phone": "(406) 283-7000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LIVINGSTON": [
+    {
+      "name": "LIVINGSTON HEALTHCARE",
+      "address": "320 ALPENGLOW LANE",
+      "city": "LIVINGSTON",
+      "state": "MT",
+      "zip": "59047",
+      "phone": "(406) 222-3541",
+      "type": "Critical Access Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MALTA": [
+    {
+      "name": "PHILLIPS COUNTY HOSPITAL - CAH",
+      "address": "311 S 8TH AVE E",
+      "city": "MALTA",
+      "state": "MT",
+      "zip": "59538",
+      "phone": "(406) 654-1100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILES CITY": [
+    {
+      "name": "HOLY ROSARY HOSPITAL",
+      "address": "2600 WILSON ST",
+      "city": "MILES CITY",
+      "state": "MT",
+      "zip": "59301",
+      "phone": "(406) 233-2600",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MISSOULA": [
+    {
+      "name": "ST. PATRICK HOSPITAL",
+      "address": "500 W BROADWAY",
+      "city": "MISSOULA",
+      "state": "MT",
+      "zip": "59802",
+      "phone": "(406) 543-7271",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMMUNITY MEDICAL CENTER",
+      "address": "2827 FORT MISSOULA RD",
+      "city": "MISSOULA",
+      "state": "MT",
+      "zip": "59804",
+      "phone": "(406) 728-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PHILIPSBURG": [
+    {
+      "name": "GRANITE COUNTY MEDICAL CENTER",
+      "address": "310 SANSOME ST",
+      "city": "PHILIPSBURG",
+      "state": "MT",
+      "zip": "59858",
+      "phone": "(406) 859-3271",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLAINS": [
+    {
+      "name": "CLARK FORK VALLEY HOSPITAL",
+      "address": "10 KRUGER RD",
+      "city": "PLAINS",
+      "state": "MT",
+      "zip": "59859",
+      "phone": "(406) 826-4800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLENTYWOOD": [
+    {
+      "name": "SHERIDAN MEMORIAL HOSPTIAL",
+      "address": "440 W LAUREL AVE",
+      "city": "PLENTYWOOD",
+      "state": "MT",
+      "zip": "59254",
+      "phone": "(406) 765-3700",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POLSON": [
+    {
+      "name": "PROVIDENCE ST JOSEPH MEDICAL CENTER",
+      "address": "6 13TH AVE E",
+      "city": "POLSON",
+      "state": "MT",
+      "zip": "59860",
+      "phone": "(406) 883-5377",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POPLAR": [
+    {
+      "name": "POPLAR COMMUNITY HOSPITAL",
+      "address": "211 H ST E",
+      "city": "POPLAR",
+      "state": "MT",
+      "zip": "59255",
+      "phone": "(406) 768-6100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RED LODGE": [
+    {
+      "name": "BEARTOOTH BILLINGS CLINIC",
+      "address": "2525 N BROADWAY",
+      "city": "RED LODGE",
+      "state": "MT",
+      "zip": "59068",
+      "phone": "(406) 446-2345",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RONAN": [
+    {
+      "name": "ST LUKE COMMUNITY HOSPITAL",
+      "address": "107 6TH AVE SW",
+      "city": "RONAN",
+      "state": "MT",
+      "zip": "59864",
+      "phone": "(406) 676-4441",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROUNDUP": [
+    {
+      "name": "ROUNDUP MEMORIAL HEALTHCARE",
+      "address": "1202 3RD ST W",
+      "city": "ROUNDUP",
+      "state": "MT",
+      "zip": "59072",
+      "phone": "(406) 323-2301",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SCOBEY": [
+    {
+      "name": "DANIELS MEMORIAL HOSPITAL",
+      "address": "105 5TH AVE E",
+      "city": "SCOBEY",
+      "state": "MT",
+      "zip": "59263",
+      "phone": "(406) 487-2296",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHELBY": [
+    {
+      "name": "LOGAN HEALTH - SHELBY",
+      "address": "640 PARK AVE",
+      "city": "SHELBY",
+      "state": "MT",
+      "zip": "59474",
+      "phone": "(406) 434-3200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHERIDAN": [
+    {
+      "name": "RUBY VALLEY MEDICAL CENTER",
+      "address": "321 MADISON ST",
+      "city": "SHERIDAN",
+      "state": "MT",
+      "zip": "59749",
+      "phone": "(406) 842-5453",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SIDNEY": [
+    {
+      "name": "SIDNEY HEALTH CENTER",
+      "address": "216 14TH AVE SW",
+      "city": "SIDNEY",
+      "state": "MT",
+      "zip": "59270",
+      "phone": "(406) 488-2100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUPERIOR": [
+    {
+      "name": "MINERAL COMMUNITY HOSPITAL",
+      "address": "1208 6TH AVE E",
+      "city": "SUPERIOR",
+      "state": "MT",
+      "zip": "59872",
+      "phone": "(406) 822-4841",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TERRY": [
+    {
+      "name": "PRAIRIE COMMUNITY CAH",
+      "address": "312 S ADAMS",
+      "city": "TERRY",
+      "state": "MT",
+      "zip": "59349",
+      "phone": "(406) 635-5511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TOWNSEND": [
+    {
+      "name": "BILLINGS CLINIC BROADWATER",
+      "address": "110 N OAK ST",
+      "city": "TOWNSEND",
+      "state": "MT",
+      "zip": "59644",
+      "phone": "(406) 266-3186",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHITE SULPHUR SPRING": [
+    {
+      "name": "MOUNTAINVIEW MEDICAL CENTER",
+      "address": "16 W MAIN ST",
+      "city": "WHITE SULPHUR SPRING",
+      "state": "MT",
+      "zip": "59645",
+      "phone": "(406) 547-3321",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHITEFISH": [
+    {
+      "name": "LOGAN HEALTH - WHITEFISH",
+      "address": "1600 HOSPITAL WAY",
+      "city": "WHITEFISH",
+      "state": "MT",
+      "zip": "59937",
+      "phone": "(406) 863-3550",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOLF POINT": [
+    {
+      "name": "TRINITY HOSPITAL",
+      "address": "315 KNAPP ST",
+      "city": "WOLF POINT",
+      "state": "MT",
+      "zip": "59201",
+      "phone": "(406) 653-2100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

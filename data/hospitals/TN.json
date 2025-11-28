@@ -1,0 +1,1761 @@
+{
+  "ASHLAND CITY": [
+    {
+      "name": "TRISTAR ASHLAND CITY MEDICAL CENTER",
+      "address": "313 NORTH MAIN ST",
+      "city": "ASHLAND CITY",
+      "state": "TN",
+      "zip": "37015",
+      "phone": "(615) 792-3030",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ATHENS": [
+    {
+      "name": "STARR REGIONAL MEDICAL CENTER ATHENS",
+      "address": "1114 W MADISON AVE",
+      "city": "ATHENS",
+      "state": "TN",
+      "zip": "37371",
+      "phone": "(423) 745-1411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BARTLETT": [
+    {
+      "name": "SAINT FRANCIS BARTLETT MEDICAL CENTER",
+      "address": "2986 KATE BOND RD",
+      "city": "BARTLETT",
+      "state": "TN",
+      "zip": "38133",
+      "phone": "(901) 820-7050",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOLIVAR": [
+    {
+      "name": "WEST TENNESSEE HEALTHCARE BOLIVAR HOSPITAL",
+      "address": "650 NUCKOLLS ROAD",
+      "city": "BOLIVAR",
+      "state": "TN",
+      "zip": "38008",
+      "phone": "(731) 658-3100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WESTERN MENTAL HEALTH INSTITUTE",
+      "address": "11100 OLD HWY 64 WEST",
+      "city": "BOLIVAR",
+      "state": "TN",
+      "zip": "38008",
+      "phone": "(731) 228-2000",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRISTOL": [
+    {
+      "name": "WELLMONT BRISTOL REGIONAL MEDICAL CENTER",
+      "address": "ONE MEDICAL PARK BLVD",
+      "city": "BRISTOL",
+      "state": "TN",
+      "zip": "37620",
+      "phone": "(423) 844-1121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BROWNSVILLE": [
+    {
+      "name": "HAYWOOD COUNTY COMMUNITY HOSPITAL",
+      "address": "2545 NORTH WASHINGTON AVENUE",
+      "city": "BROWNSVILLE",
+      "state": "TN",
+      "zip": "38012",
+      "phone": "(731) 968-3646",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAMDEN": [
+    {
+      "name": "WEST TENNESSEE HEALTHCARE CAMDEN HOSPITAL",
+      "address": "175 HOSPITAL DRIVE",
+      "city": "CAMDEN",
+      "state": "TN",
+      "zip": "38320",
+      "phone": "(731) 593-6300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARTHAGE": [
+    {
+      "name": "HIGHPOINT HEALTH-RIVERVIEW WITH ASCENSION SAINT TH",
+      "address": "158 HOSPITAL DRIVE",
+      "city": "CARTHAGE",
+      "state": "TN",
+      "zip": "37030",
+      "phone": "(615) 735-9815",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CENTERVILLE": [
+    {
+      "name": "SAINT THOMAS HICKMAN HOSPITAL",
+      "address": "135 EAST SWAN STREET",
+      "city": "CENTERVILLE",
+      "state": "TN",
+      "zip": "37033",
+      "phone": "(931) 729-4271",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHATTANOOGA": [
+    {
+      "name": "MEMORIAL HEALTHCARE SYSTEM, INC",
+      "address": "2525 DESALES AVE",
+      "city": "CHATTANOOGA",
+      "state": "TN",
+      "zip": "37404",
+      "phone": "(423) 495-2525",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ERLANGER MEDICAL CENTER",
+      "address": "975 E 3RD ST",
+      "city": "CHATTANOOGA",
+      "state": "TN",
+      "zip": "37403",
+      "phone": "(423) 778-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PARKRIDGE MEDICAL CENTER",
+      "address": "2333 MCCALLIE AVE",
+      "city": "CHATTANOOGA",
+      "state": "TN",
+      "zip": "37404",
+      "phone": "(423) 894-4220",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MOCCASIN BEND MENTAL HEALTH INSTITUTE",
+      "address": "100 MOCCASIN BEND ROAD",
+      "city": "CHATTANOOGA",
+      "state": "TN",
+      "zip": "37405",
+      "phone": "(423) 785-2271",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ERLANGER BEHAVIORAL HOSPITAL, LLC",
+      "address": "804 NORTH HOLTZCLAW AVENUE",
+      "city": "CHATTANOOGA",
+      "state": "TN",
+      "zip": "37404",
+      "phone": "(877) 249-2737",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLARKSVILLE": [
+    {
+      "name": "TENNOVA HEALTHCARE-CLARKSVILLE",
+      "address": "651 DUNLOP LANE",
+      "city": "CLARKSVILLE",
+      "state": "TN",
+      "zip": "37040",
+      "phone": "(931) 502-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNITY PSYCHIATRIC CARE-CLARKSVILLE",
+      "address": "930 PROFESSIONAL PARK DRIVE",
+      "city": "CLARKSVILLE",
+      "state": "TN",
+      "zip": "37040",
+      "phone": "(931) 538-6420",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLEVELAND": [
+    {
+      "name": "AFFILIATE OF VITRUVIAN HEALTH",
+      "address": "2305 CHAMBLISS AVE NW",
+      "city": "CLEVELAND",
+      "state": "TN",
+      "zip": "37311",
+      "phone": "(423) 339-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLLIERVILLE": [
+    {
+      "name": "BAPTIST MEMORIAL HOSPITAL-COLLIERVILLE",
+      "address": "1500 W POPLAR AVE",
+      "city": "COLLIERVILLE",
+      "state": "TN",
+      "zip": "38017",
+      "phone": "(901) 861-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUMBIA": [
+    {
+      "name": "MAURY REGIONAL HOSPITAL",
+      "address": "1224 TROTWOOD AVE",
+      "city": "COLUMBIA",
+      "state": "TN",
+      "zip": "38401",
+      "phone": "(931) 381-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNITY PSYCHIATRIC CARE-COLUMBIA",
+      "address": "1400 ROSEWOOD DRIVE",
+      "city": "COLUMBIA",
+      "state": "TN",
+      "zip": "38401",
+      "phone": "(931) 388-6573",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PINEWOOD SPRINGS",
+      "address": "1001 N JAMES CAMPBELL BLVD",
+      "city": "COLUMBIA",
+      "state": "TN",
+      "zip": "38401",
+      "phone": "(931) 777-6000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COOKEVILLE": [
+    {
+      "name": "COOKEVILLE REGIONAL MEDICAL CENTER",
+      "address": "1 MEDICAL CENTER BOULEVARD",
+      "city": "COOKEVILLE",
+      "state": "TN",
+      "zip": "38501",
+      "phone": "(931) 783-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COVINGTON": [
+    {
+      "name": "BAPTIST MEMORIAL HOSPITAL TIPTON",
+      "address": "1995 HIGHWAY 51 S",
+      "city": "COVINGTON",
+      "state": "TN",
+      "zip": "38019",
+      "phone": "(901) 476-2621",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CROSSVILLE": [
+    {
+      "name": "CUMBERLAND MEDICAL CENTER",
+      "address": "421 S MAIN ST",
+      "city": "CROSSVILLE",
+      "state": "TN",
+      "zip": "38555",
+      "phone": "(931) 484-9511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAYTON": [
+    {
+      "name": "RHEA MEDICAL CENTER",
+      "address": "9400 RHEA COUNTY HIGHWAY",
+      "city": "DAYTON",
+      "state": "TN",
+      "zip": "37321",
+      "phone": "(423) 775-1121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DICKSON": [
+    {
+      "name": "TRISTAR HORIZON MEDICAL CENTER",
+      "address": "111 HIGHWAY 70 EAST",
+      "city": "DICKSON",
+      "state": "TN",
+      "zip": "37055",
+      "phone": "(615) 446-0446",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DYERSBURG": [
+    {
+      "name": "DYERSBURG REGIONAL MEDICAL CENTER",
+      "address": "400 EAST TICKLE STREET",
+      "city": "DYERSBURG",
+      "state": "TN",
+      "zip": "38024",
+      "phone": "(731) 285-2410",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELIZABETHTON": [
+    {
+      "name": "SYCAMORE SHOALS HOSPITAL",
+      "address": "1501 WEST ELK AVENUE",
+      "city": "ELIZABETHTON",
+      "state": "TN",
+      "zip": "37643",
+      "phone": "(423) 542-1300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ERIN": [
+    {
+      "name": "HOUSTON COUNTY COMMUNITY HOSPITAL",
+      "address": "5001 EAST MAIN STREET",
+      "city": "ERIN",
+      "state": "TN",
+      "zip": "37061",
+      "phone": "(931) 289-4211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAYETTEVILLE": [
+    {
+      "name": "LINCOLN MEDICAL CENTER",
+      "address": "106 MEDICAL CENTER BLVD",
+      "city": "FAYETTEVILLE",
+      "state": "TN",
+      "zip": "37334",
+      "phone": "(931) 438-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRANKLIN": [
+    {
+      "name": "WILLIAMSON MEDICAL CENTER",
+      "address": "4321 CAROTHERS PARKWAY",
+      "city": "FRANKLIN",
+      "state": "TN",
+      "zip": "37067",
+      "phone": "(615) 435-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ROLLING HILLS PSYCHIATRIC HOSPITAL",
+      "address": "2014 QUAIL HOLLOW CIRCLE",
+      "city": "FRANKLIN",
+      "state": "TN",
+      "zip": "37067",
+      "phone": "(615) 226-4930",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GALLATIN": [
+    {
+      "name": "HIGHPOINT HEALTH-SUMNER WITH ASCENSION SAINT THOMA",
+      "address": "555 HARTSVILLE PIKE",
+      "city": "GALLATIN",
+      "state": "TN",
+      "zip": "37066",
+      "phone": "(615) 328-8888",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENEVILLE": [
+    {
+      "name": "GREENEVILLE COMMUNITY HOSPITAL",
+      "address": "1420 TUSCULUM BOULEVARD",
+      "city": "GREENEVILLE",
+      "state": "TN",
+      "zip": "37745",
+      "phone": "(423) 639-3151",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARRIMAN": [
+    {
+      "name": "ROANE MEDICAL CENTER",
+      "address": "8045 ROANE MEDICAL CENTER DRIVE",
+      "city": "HARRIMAN",
+      "state": "TN",
+      "zip": "37748",
+      "phone": "(865) 316-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARTSVILLE": [
+    {
+      "name": "HIGHPOINT HEALTH-TROUSDALE WITH ASCENSION SAINT",
+      "address": "500 CHURCH STREET",
+      "city": "HARTSVILLE",
+      "state": "TN",
+      "zip": "37074",
+      "phone": "(615) 374-2221",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HENDERSONVILLE": [
+    {
+      "name": "TRISTAR HENDERSONVILLE MEDICAL CENTER",
+      "address": "355 NEW SHACKLE ISLAND RD",
+      "city": "HENDERSONVILLE",
+      "state": "TN",
+      "zip": "37075",
+      "phone": "(615) 338-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HERMITAGE": [
+    {
+      "name": "TRISTAR SUMMIT MEDICAL CENTER",
+      "address": "5655 FRIST BLVD",
+      "city": "HERMITAGE",
+      "state": "TN",
+      "zip": "37076",
+      "phone": "(615) 316-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUNTINGDON": [
+    {
+      "name": "BAPTIST MEMORIAL HOSPITAL - CARROLL COUNTY",
+      "address": "631 RB WILSON DR",
+      "city": "HUNTINGDON",
+      "state": "TN",
+      "zip": "38344",
+      "phone": "(731) 986-4461",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JACKSON": [
+    {
+      "name": "JACKSON-MADISON COUNTY GENERAL HOSPITAL",
+      "address": "620 SKYLINE DRIVE",
+      "city": "JACKSON",
+      "state": "TN",
+      "zip": "38301",
+      "phone": "(731) 541-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PATHWAYS OF TENNESSEE, INC",
+      "address": "238 SUMMAR DR",
+      "city": "JACKSON",
+      "state": "TN",
+      "zip": "38301",
+      "phone": "(731) 935-8200",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PERIMETER BEHAVIORAL CENTER OF JACKSON",
+      "address": "49 OLD HICKORY BLVD",
+      "city": "JACKSON",
+      "state": "TN",
+      "zip": "38305",
+      "phone": "(731) 668-7073",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JEFFERSON CITY": [
+    {
+      "name": "TENNOVA HEALTHCARE-JEFFERSON MEMORIAL HOSPITAL",
+      "address": "110 HOSPITAL DRIVE",
+      "city": "JEFFERSON CITY",
+      "state": "TN",
+      "zip": "37760",
+      "phone": "(865) 471-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JOHNSON CITY": [
+    {
+      "name": "JOHNSON CITY MEDICAL CENTER",
+      "address": "400 N STATE OF FRANKLIN RD",
+      "city": "JOHNSON CITY",
+      "state": "TN",
+      "zip": "37604",
+      "phone": "(423) 431-6111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FRANKLIN WOODS COMMUNITY HOSPITAL",
+      "address": "300 MED TECH PARKWAY",
+      "city": "JOHNSON CITY",
+      "state": "TN",
+      "zip": "37604",
+      "phone": "(423) 302-1120",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KINGSPORT": [
+    {
+      "name": "WELLMONT HOLSTON VALLEY MEDICAL CENTER",
+      "address": "130 WEST RAVINE ROAD",
+      "city": "KINGSPORT",
+      "state": "TN",
+      "zip": "37662",
+      "phone": "(423) 224-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "INDIAN PATH COMMUNITY HOSPITAL",
+      "address": "2000 BROOKSIDE DR",
+      "city": "KINGSPORT",
+      "state": "TN",
+      "zip": "37660",
+      "phone": "(423) 857-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CREEKSIDE BEHAVIORAL HEALTH",
+      "address": "1025 EXECUTIVE PARK BLVD",
+      "city": "KINGSPORT",
+      "state": "TN",
+      "zip": "37660",
+      "phone": "(423) 830-8207",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KNOXVILLE": [
+    {
+      "name": "UNIVERSITY HEALTH SYSTEM, INC",
+      "address": "1924 ALCOA HIGHWAY",
+      "city": "KNOXVILLE",
+      "state": "TN",
+      "zip": "37920",
+      "phone": "(865) 305-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FORT SANDERS REGIONAL MEDICAL CENTER",
+      "address": "1901 W CLINCH AVE",
+      "city": "KNOXVILLE",
+      "state": "TN",
+      "zip": "37916",
+      "phone": "(865) 541-1101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PARKWEST MEDICAL CENTER",
+      "address": "9352 PARK WEST BLVD",
+      "city": "KNOXVILLE",
+      "state": "TN",
+      "zip": "37923",
+      "phone": "(865) 970-1001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EAST TENNESSEE CHILDRENS HOSPITAL",
+      "address": "2018 CLINCH AVE SW",
+      "city": "KNOXVILLE",
+      "state": "TN",
+      "zip": "37916",
+      "phone": "(865) 541-8000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KNOXVILLE CENTER FOR BEHAVIORAL MEDICINE",
+      "address": "1240 TENNOVA MEDICAL WAY",
+      "city": "KNOXVILLE",
+      "state": "TN",
+      "zip": "37909",
+      "phone": "(865) 323-7295",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EAST TENNESSEE BEHAVIORAL HEALTH",
+      "address": "1444 OLD WEISGARBER RD",
+      "city": "KNOXVILLE",
+      "state": "TN",
+      "zip": "37909",
+      "phone": "(865) 722-7780",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LA FOLLETTE": [
+    {
+      "name": "LAFOLLETTE MEDICAL CENTER",
+      "address": "923 EAST CENTRAL AVENUE",
+      "city": "LA FOLLETTE",
+      "state": "TN",
+      "zip": "37766",
+      "phone": "(423) 907-1200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAFAYETTE": [
+    {
+      "name": "MACON COMMUNITY HOSPITAL",
+      "address": "204 MEDICAL DRIVE",
+      "city": "LAFAYETTE",
+      "state": "TN",
+      "zip": "37083",
+      "phone": "(615) 666-2147",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAWRENCEBURG": [
+    {
+      "name": "SOUTHERN TENNESSEE REGIONAL HEALTH SYSTEM LAWRENCE",
+      "address": "1607 SOUTH LOCUST AVENUE",
+      "city": "LAWRENCEBURG",
+      "state": "TN",
+      "zip": "38464",
+      "phone": "(931) 762-6571",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEBANON": [
+    {
+      "name": "VANDERBILT WILSON COUNTY HOSPITAL",
+      "address": "1411 BADDOUR PARKWAY",
+      "city": "LEBANON",
+      "state": "TN",
+      "zip": "37087",
+      "phone": "(615) 444-2250",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LENOIR CITY": [
+    {
+      "name": "FORT LOUDOUN MEDICAL CENTER",
+      "address": "550 FORT LOUDON MEDICAL CENTER DR",
+      "city": "LENOIR CITY",
+      "state": "TN",
+      "zip": "37772",
+      "phone": "(865) 271-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEWISBURG": [
+    {
+      "name": "MARSHALL MEDICAL CENTER",
+      "address": "1080 NORTH ELLINGTON PARKWAY",
+      "city": "LEWISBURG",
+      "state": "TN",
+      "zip": "37091",
+      "phone": "(931) 359-6276",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEXINGTON": [
+    {
+      "name": "HENDERSON COUNTY COMMUNITY HOSPITAL",
+      "address": "200 W CHURCH ST",
+      "city": "LEXINGTON",
+      "state": "TN",
+      "zip": "38351",
+      "phone": "(731) 968-1801",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LIVINGSTON": [
+    {
+      "name": "LIVINGSTON REGIONAL HOSPITAL",
+      "address": "315 OAK ST BOX 550",
+      "city": "LIVINGSTON",
+      "state": "TN",
+      "zip": "38570",
+      "phone": "(931) 823-5611",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANCHESTER": [
+    {
+      "name": "UNITY MEDICAL CENTER",
+      "address": "481 INTERSTATE DRIVE",
+      "city": "MANCHESTER",
+      "state": "TN",
+      "zip": "37355",
+      "phone": "(931) 728-6354",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARTIN": [
+    {
+      "name": "VOLUNTEER COMMUNITY HOSPITAL",
+      "address": "161 MOUNT PELIA RD",
+      "city": "MARTIN",
+      "state": "TN",
+      "zip": "38237",
+      "phone": "(731) 479-6057",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNITY PSYCHIATRIC CARE-MARTIN",
+      "address": "458 HANNINGS LANE, P O BOX 1006",
+      "city": "MARTIN",
+      "state": "TN",
+      "zip": "38237",
+      "phone": "(731) 588-2830",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARYVILLE": [
+    {
+      "name": "BLOUNT MEMORIAL HOSPITAL",
+      "address": "907 E LAMAR ALEXANDER PARKWAY",
+      "city": "MARYVILLE",
+      "state": "TN",
+      "zip": "37804",
+      "phone": "(865) 983-7211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MCMINNVILLE": [
+    {
+      "name": "SAINT THOMAS RIVER PARK HOSPITAL",
+      "address": "1559 SPARTA STREET",
+      "city": "MCMINNVILLE",
+      "state": "TN",
+      "zip": "37110",
+      "phone": "(931) 815-4101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MEMPHIS": [
+    {
+      "name": "BAPTIST MEMORIAL HOSPITAL",
+      "address": "6019 WALNUT GROVE ROAD",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zip": "38120",
+      "phone": "(901) 226-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "METHODIST HOSPITALS OF MEMPHIS",
+      "address": "1265 UNION AVE SUITE 700",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zip": "38104",
+      "phone": "(901) 516-8274",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MEMPHIS VA MEDICAL CENTER",
+      "address": "116 N Pauline St",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zip": "38105",
+      "phone": "(901) 523-8990",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "REGIONAL ONE HEALTH",
+      "address": "877 JEFFERSON AVENUE",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zip": "38103",
+      "phone": "(901) 545-7928",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DELTA SPECIALTY HOSPITAL",
+      "address": "3000 GETWELL RD",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zip": "38118",
+      "phone": "(901) 369-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST FRANCIS HOSPITAL",
+      "address": "5959 PARK AVE",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zip": "38119",
+      "phone": "(901) 765-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST JUDE CHILDRENS RESEARCH HOSPITAL",
+      "address": "262 DANNY THOMAS PLACE",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zip": "38105",
+      "phone": "(901) 495-3300",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MEMPHIS MENTAL HEALTH INSTITUTE",
+      "address": "951 COURT AVENUE",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zip": "38103",
+      "phone": "(901) 577-1800",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LAKESIDE BEHAVIORAL HEALTH SYSTEM",
+      "address": "2911 BRUNSWICK RD",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zip": "38133",
+      "phone": "(901) 377-4700",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNITY PSYCHIATRIC CARE-MEMPHIS",
+      "address": "1505 N SECOND STREET",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zip": "38107",
+      "phone": "(901) 791-0600",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CRESTWYN BEHAVIORAL HEALTH",
+      "address": "9485 CRESTWYN HILLS COVE",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zip": "38125",
+      "phone": "(901) 457-5667",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMPASS INTERVENTION CENTER",
+      "address": "7890 LOWRANCE RD",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zip": "38125",
+      "phone": "(888) 266-7279",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILAN": [
+    {
+      "name": "WEST TENNESSEE HEALTHCARE MILAN HOSPITAL",
+      "address": "4039 HIGHLAND ST",
+      "city": "MILAN",
+      "state": "TN",
+      "zip": "38358",
+      "phone": "(731) 686-1591",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MORRISTOWN": [
+    {
+      "name": "MORRISTOWN HAMBLEN HOSPITAL ASSOCIATION",
+      "address": "908 W 4TH NORTH ST",
+      "city": "MORRISTOWN",
+      "state": "TN",
+      "zip": "37814",
+      "phone": "(423) 492-6900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNTAIN CITY": [
+    {
+      "name": "JOHNSON COUNTY COMMUNITY HOSPITAL",
+      "address": "1901 S SHADY ST",
+      "city": "MOUNTAIN CITY",
+      "state": "TN",
+      "zip": "37683",
+      "phone": "(423) 727-1110",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNTAIN HOME": [
+    {
+      "name": "MOUNTAIN HOME VA MEDICAL CENTER",
+      "address": "CORNER OF LAMONT STREET AND VETERANS WAY",
+      "city": "MOUNTAIN HOME",
+      "state": "TN",
+      "zip": "37684",
+      "phone": "(423) 926-1171",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MURFREESBORO": [
+    {
+      "name": "SAINT THOMAS RUTHERFORD HOSPITAL",
+      "address": "1700 MEDICAL CENTER PARKWAY",
+      "city": "MURFREESBORO",
+      "state": "TN",
+      "zip": "37129",
+      "phone": "(615) 396-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA MIDDLE TENNESSEE HEALTHCARE SYSTEM - MURFREESBORO",
+      "address": "3400 LEBANON PIKE",
+      "city": "MURFREESBORO",
+      "state": "TN",
+      "zip": "37129",
+      "phone": "(615) 867-6000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TRUSTPOINT HOSPITAL",
+      "address": "1009 NORTH THOMPSON LANE",
+      "city": "MURFREESBORO",
+      "state": "TN",
+      "zip": "37129",
+      "phone": "(615) 867-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NASHVILLE": [
+    {
+      "name": "TRISTAR SKYLINE MEDICAL CENTER",
+      "address": "3441 DICKERSON PIKE",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zip": "37207",
+      "phone": "(615) 769-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VANDERBILT UNIVERSITY MEDICAL CENTER",
+      "address": "1211 MEDICAL CENTER DRIVE",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zip": "37232",
+      "phone": "(615) 322-3454",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASCENSION SAINT THOMAS HOSPITAL",
+      "address": "4220 HARDING RD, PO BOX 380",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zip": "37205",
+      "phone": "(615) 222-2111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "METRO NASHVILLE GENERAL HOSPITAL",
+      "address": "1818 ALBION STREET",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zip": "37208",
+      "phone": "(615) 341-4490",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TRISTAR CENTENNIAL MEDICAL CENTER",
+      "address": "2300 PATTERSON STREET",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zip": "37203",
+      "phone": "(615) 342-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA MIDDLE TENNESSEE HEALTHCARE SYSTEM",
+      "address": "1310 24TH AVENUE SOUTH",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zip": "37212",
+      "phone": "(615) 327-5332",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TRISTAR SOUTHERN HILLS MEDICAL CENTER",
+      "address": "391 WALLACE RD",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zip": "37211",
+      "phone": "(615) 781-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT THOMAS HOSPITAL FOR SPINAL SURGERY",
+      "address": "2011 MURPHY AVENUE",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zip": "37203",
+      "phone": "(615) 515-8200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MIDDLE TN MENTAL HEALTH INSTITUTE",
+      "address": "221 STEWARTS FERRY PIKE",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zip": "37214",
+      "phone": "(615) 902-7565",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASCENSION SAINT THOMAS BEHAVIORAL HEALTH HOSPITAL",
+      "address": "300 GREAT CIRCLE ROAD",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zip": "37228",
+      "phone": "(615) 813-1880",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWPORT": [
+    {
+      "name": "TENNOVA HEALTHCARE - NEWPORT MEDICAL CENTER",
+      "address": "435 2ND ST",
+      "city": "NEWPORT",
+      "state": "TN",
+      "zip": "37821",
+      "phone": "(423) 625-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OAK RIDGE": [
+    {
+      "name": "METHODIST MEDICAL CENTER OF OAK RIDGE",
+      "address": "990 OAK RIDGE TURNPIKE BOX 529",
+      "city": "OAK RIDGE",
+      "state": "TN",
+      "zip": "37830",
+      "phone": "(865) 835-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIDGEVIEW PSYCHIATRIC HOSPITAL AND CENTER",
+      "address": "240 W TYRONE RD",
+      "city": "OAK RIDGE",
+      "state": "TN",
+      "zip": "37830",
+      "phone": "(865) 482-1076",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ONEIDA": [
+    {
+      "name": "BIG SOUTH FORK MEDICAL CENTER",
+      "address": "18797 ALBERTA STREET",
+      "city": "ONEIDA",
+      "state": "TN",
+      "zip": "37841",
+      "phone": "(423) 286-5300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARIS": [
+    {
+      "name": "WEST TENNESSEE HEALTHCARE HENRY COUNTY HOSPITAL",
+      "address": "301 TYSON AVENUE",
+      "city": "PARIS",
+      "state": "TN",
+      "zip": "38242",
+      "phone": "(731) 642-1220",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PIKEVILLE": [
+    {
+      "name": "ERLANGER BLEDSOE HOSPITAL",
+      "address": "71 WHEELERTOWN AVENUE",
+      "city": "PIKEVILLE",
+      "state": "TN",
+      "zip": "37367",
+      "phone": "(423) 447-2112",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POWELL": [
+    {
+      "name": "PHYSICIANS REGIONAL MEDICAL CENTER",
+      "address": "7565 DANNAHER WAY POWELL",
+      "city": "POWELL",
+      "state": "TN",
+      "zip": "37849",
+      "phone": "(865) 545-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PULASKI": [
+    {
+      "name": "SOUTHERN TENNESSEE REGIONAL HEALTH SYSTEM PULASKI",
+      "address": "1265 E COLLEGE ST",
+      "city": "PULASKI",
+      "state": "TN",
+      "zip": "38478",
+      "phone": "(931) 363-7531",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RIPLEY": [
+    {
+      "name": "LAUDERDALE COMMUNITY HOSPITAL",
+      "address": "340 ASBURY AVENUE",
+      "city": "RIPLEY",
+      "state": "TN",
+      "zip": "38063",
+      "phone": "(731) 221-2200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROGERSVILLE": [
+    {
+      "name": "HAWKINS COUNTY MEMORIAL HOSPITAL",
+      "address": "851 LOCUST STREET",
+      "city": "ROGERSVILLE",
+      "state": "TN",
+      "zip": "37857",
+      "phone": "(423) 921-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAVANNAH": [
+    {
+      "name": "HARDIN MEDICAL CENTER",
+      "address": "935 WAYNE ROAD",
+      "city": "SAVANNAH",
+      "state": "TN",
+      "zip": "38372",
+      "phone": "(731) 926-8121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEVIERVILLE": [
+    {
+      "name": "LECONTE MEDICAL CENTER",
+      "address": "742 MIDDLECREEK ROAD",
+      "city": "SEVIERVILLE",
+      "state": "TN",
+      "zip": "37862",
+      "phone": "(865) 446-7500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHELBYVILLE": [
+    {
+      "name": "VANDERBILT BEDFORD HOSPITAL",
+      "address": "2835 HWY 231 NORTH",
+      "city": "SHELBYVILLE",
+      "state": "TN",
+      "zip": "37160",
+      "phone": "(931) 685-5433",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SMITHVILLE": [
+    {
+      "name": "DEKALB COMMUNITY HOSPITAL",
+      "address": "520 W MAIN ST",
+      "city": "SMITHVILLE",
+      "state": "TN",
+      "zip": "37166",
+      "phone": "(615) 215-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SMYRNA": [
+    {
+      "name": "TRISTAR STONECREST MEDICAL CENTER",
+      "address": "200 STONECREST BOULEVARD",
+      "city": "SMYRNA",
+      "state": "TN",
+      "zip": "37167",
+      "phone": "(615) 768-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SNEEDVILLE": [
+    {
+      "name": "HANCOCK COUNTY HOSPITAL",
+      "address": "1519 MAIN STREET HWY 33",
+      "city": "SNEEDVILLE",
+      "state": "TN",
+      "zip": "37869",
+      "phone": "(423) 733-5001",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPARTA": [
+    {
+      "name": "SAINT THOMAS HIGHLANDS HOSPITAL",
+      "address": "401 SEWELL DR",
+      "city": "SPARTA",
+      "state": "TN",
+      "zip": "38583",
+      "phone": "(931) 738-9211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPRINGFIELD": [
+    {
+      "name": "TRISTAR NORTHCREST MEDICAL CENTER",
+      "address": "100 NORTHCREST DRIVE",
+      "city": "SPRINGFIELD",
+      "state": "TN",
+      "zip": "37172",
+      "phone": "(615) 384-2411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SWEETWATER": [
+    {
+      "name": "SWEETWATER HOSPITAL ASSOCIATION",
+      "address": "304 WRIGHT ST",
+      "city": "SWEETWATER",
+      "state": "TN",
+      "zip": "37874",
+      "phone": "(865) 213-8200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAZEWELL": [
+    {
+      "name": "CLAIBORNE MEDICAL CENTER",
+      "address": "1850 OLD KNOXVILLE HIGHWAY",
+      "city": "TAZEWELL",
+      "state": "TN",
+      "zip": "37879",
+      "phone": "(423) 626-4211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TULLAHOMA": [
+    {
+      "name": "VANDERBILT TULLAHOMA-HARTON HOSPITAL",
+      "address": "1801 N JACKSON ST BOX 460",
+      "city": "TULLAHOMA",
+      "state": "TN",
+      "zip": "37388",
+      "phone": "(931) 393-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "UNION CITY": [
+    {
+      "name": "BAPTIST MEMORIAL HOSPITAL UNION CITY",
+      "address": "1201 BISHOP ST, PO BOX 310",
+      "city": "UNION CITY",
+      "state": "TN",
+      "zip": "38261",
+      "phone": "(731) 885-2410",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAVERLY": [
+    {
+      "name": "ASCENSION SAINT THOMAS THREE RIVERS",
+      "address": "451 HIGHWAY 13 SOUTH",
+      "city": "WAVERLY",
+      "state": "TN",
+      "zip": "37185",
+      "phone": "(931) 296-4203",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAYNESBORO": [
+    {
+      "name": "WAYNE MEDICAL CENTER",
+      "address": "103 J V MANGUBAT DR",
+      "city": "WAYNESBORO",
+      "state": "TN",
+      "zip": "38485",
+      "phone": "(931) 722-5411",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINCHESTER": [
+    {
+      "name": "SOUTHERN TENNESSEE REGIONAL HEALTH SYSTEM WINCHEST",
+      "address": "185 HOSPITAL ROAD",
+      "city": "WINCHESTER",
+      "state": "TN",
+      "zip": "37398",
+      "phone": "(931) 967-8200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOODBURY": [
+    {
+      "name": "STONES RIVER HOSPITAL",
+      "address": "324 DOOLITTLE ROAD",
+      "city": "WOODBURY",
+      "state": "TN",
+      "zip": "37190",
+      "phone": "(615) 563-4001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}
