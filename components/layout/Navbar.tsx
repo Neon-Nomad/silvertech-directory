@@ -32,6 +32,12 @@ const Navbar: React.FC = () => {
               Blog
             </Link>
             <Link
+              to="/pricing"
+              className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
+            >
+              Pricing
+            </Link>
+            <Link
               to="/advertise"
               className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
             >
@@ -84,6 +90,13 @@ const Navbar: React.FC = () => {
               className="block text-slate-300 hover:text-white text-base font-medium"
             >
               Blog
+            </Link>
+            <Link
+              to="/pricing"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-slate-300 hover:text-white text-base font-medium"
+            >
+              Pricing
             </Link>
             <Link
               to="/advertise"
