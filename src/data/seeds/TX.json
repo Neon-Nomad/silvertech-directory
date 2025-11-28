@@ -1,0 +1,47 @@
+[
+    {
+        "name": "LONE STAR SENIOR LIVING",
+        "address_line1": "100 TEXAS AVE",
+        "city": "AUSTIN",
+        "state": "TX",
+        "postal_code": "78701",
+        "phone": "(512) 555-0201",
+        "latitude": 30.2672,
+        "longitude": -97.7431,
+        "license": {
+            "number": "100123",
+            "expiration": "2025-12-31",
+            "beds": 90
+        }
+    },
+    {
+        "name": "HOUSTON HEIGHTS CARE HOME",
+        "address_line1": "200 MAIN ST",
+        "city": "HOUSTON",
+        "state": "TX",
+        "postal_code": "77002",
+        "phone": "(713) 555-0202",
+        "latitude": 29.7604,
+        "longitude": -95.3698,
+        "license": {
+            "number": "100456",
+            "expiration": "2026-03-31",
+            "beds": 60
+        }
+    },
+    {
+        "name": "DALLAS MEMORY CARE CENTER",
+        "address_line1": "300 ELM ST",
+        "city": "DALLAS",
+        "state": "TX",
+        "postal_code": "75201",
+        "phone": "(214) 555-0203",
+        "latitude": 32.7767,
+        "longitude": -96.7970,
+        "license": {
+            "number": "100789",
+            "expiration": "2025-11-30",
+            "beds": 45
+        }
+    }
+]

@@ -1,0 +1,141 @@
+{
+    "aging_agencies": [
+        {
+            "state": "CA",
+            "program_name": "California Area Agencies on Aging (AAA)",
+            "description": "In California, the 33 Area Agencies on Aging (AAA) are the primary local resource for seniors. They coordinate the 'HICAP' (Health Insurance Counseling and Advocacy Program) and serve as the gateway to many Medi-Cal waiver programs.",
+            "services_provided": [
+                "HICAP (Medicare Counseling)",
+                "Information & Assistance (I&A)",
+                "Family Caregiver Support Program",
+                "Senior Employment (SCSEP)",
+                "Long-Term Care Ombudsman",
+                "Congregate & Home Delivered Meals",
+                "Legal Services"
+            ],
+            "eligibility_criteria": "Services are generally available to all Californians age 60+, with priority given to those with greatest economic or social need.",
+            "why_it_matters": [
+                "Official Gateway to Medi-Cal Waivers",
+                "Unbiased Medicare Advice (HICAP)",
+                "Caregiver Respite Funding",
+                "Legal Aid for Seniors"
+            ],
+            "contact": {
+                "phone": "1-800-510-2020",
+                "website": "https://aging.ca.gov/",
+                "find_local_url": "https://aging.ca.gov/Find_Services/"
+            }
+        },
+        {
+            "state": "NC",
+            "program_name": "North Carolina Area Agencies on Aging (AAA)",
+            "description": "North Carolina's 16 Area Agencies on Aging (AAA) facilitate and support the development of programs to address the needs of older adults. They serve as the primary portal for accessing home and community-based services.",
+            "services_provided": [
+                "Information & Assistance",
+                "Family Caregiver Support",
+                "Ombudsman Program",
+                "Senior Community Service Employment",
+                "Congregate & Home Delivered Meals",
+                "Transportation"
+            ],
+            "eligibility_criteria": "Generally age 60+ and their caregivers. Priority is given to those with greatest economic and social need.",
+            "why_it_matters": [
+                "Access to CAP/DA Waiver Info",
+                "Caregiver Respite Vouchers",
+                "Medicare Counseling (SHIIP)",
+                "Local Senior Center Activities"
+            ],
+            "contact": {
+                "phone": "919-855-3400",
+                "website": "https://www.ncdhhs.gov/divisions/aging-and-adult-services/area-agencies-aging",
+                "find_local_url": "https://www.ncdhhs.gov/divisions/aging-and-adult-services/adult-services-section/area-agencies-aging-directory"
+            }
+        },
+        {
+            "state": "IN",
+            "program_name": "Indiana Area Agencies on Aging (AAA)",
+            "description": "Indiana's Area Agencies on Aging (AAA) are the primary gateway to home and community-based services for seniors and adults with disabilities. These 15 regional agencies are designated by the state to help families navigate the complex system of long-term care, Medicaid waivers, and caregiver support. They serve as the 'single point of entry' for state-funded aging programs.",
+            "services_provided": [
+                "Aged and Disabled Waiver (A&D) Intake: The starting point for applying for Medicaid-funded in-home care and assisted living support.",
+                "Indiana CARES (Caregiver Support): Respite care vouchers, counseling, and training for unpaid family caregivers.",
+                "Home Delivered Meals (Meals on Wheels): Nutritional support for homebound seniors.",
+                "Transportation Assistance: Rides to medical appointments, pharmacies, and essential errands.",
+                "Case Management: Ongoing coordination of care for seniors with complex medical needs.",
+                "Home Modifications: Funding for ramps, grab bars, and safety upgrades to prevent falls.",
+                "Legal Assistance: Help with powers of attorney, guardianship, and elder rights."
+            ],
+            "eligibility_criteria": [
+                "Most services are available to Indiana residents age 60 and older.",
+                "Medicaid Waiver programs have specific income and asset limits (financial eligibility).",
+                "Must meet 'Nursing Facility Level of Care' (NFLOC) for waiver-funded in-home or assisted living services.",
+                "Family Caregiver Support Program is available to unpaid caregivers of seniors (60+) or adults with dementia.",
+                "Disability services available for adults 18+ with physical or intellectual disabilities."
+            ],
+            "why_it_matters": [
+                "Single Point of Entry: AAAs are the official intake points for the Aged & Disabled Waiver.",
+                "Objective Guidance: They provide unbiased counseling on long-term care options, unlike private agencies.",
+                "Financial Safety Net: They manage funds that can pay for assisted living room & board (via RCAP) or care services.",
+                "Caregiver Relief: They offer the only state-funded respite care specifically for burnout prevention.",
+                "Aging in Place: Their primary goal is to keep seniors in their own homes and out of nursing facilities."
+            ],
+            "contact": {
+                "phone": "1-800-986-3505",
+                "website": "https://www.in.gov/fssa/da/area-agencies-on-aging/",
+                "find_local_url": "https://www.iaaaa.org/map-of-aaas/"
+            }
+        },
+        {
+            "state": "PA",
+            "program_name": "Pennsylvania Area Agencies on Aging (AAA)",
+            "description": "Pennsylvania's 52 Area Agencies on Aging (AAA) provide a wide range of services to help older adults (age 60+) remain active and independent in their communities. They serve as the primary local resource for aging services, protective services, and caregiver support.",
+            "services_provided": [
+                "Information & Assistance",
+                "Care Management",
+                "Protective Services (Elder Abuse Prevention)",
+                "APPRISE (Medicare Counseling)",
+                "Family Caregiver Support Program",
+                "Senior Community Centers",
+                "Home Delivered Meals",
+                "Transportation"
+            ],
+            "eligibility_criteria": "Generally available to Pennsylvania residents age 60 and older. Some services have income or functional eligibility requirements.",
+            "why_it_matters": [
+                "Local Access Point for Aging Services",
+                "Elder Abuse Reporting & Investigation",
+                "Unbiased Medicare Counseling (APPRISE)",
+                "Support for Family Caregivers"
+            ],
+            "contact": {
+                "phone": "717-783-1550",
+                "website": "https://www.aging.pa.gov/local-resources/Pages/AAA.aspx",
+                "find_local_url": "https://www.aging.pa.gov/local-resources/Pages/AAA.aspx"
+            }
+        },
+        {
+            "state": "NY",
+            "program_name": "New York State Office for the Aging (NYSOFA)",
+            "description": "The New York State Office for the Aging (NYSOFA) contracts with 59 local Area Agencies on Aging (AAA) to provide services to older New Yorkers. They focus on helping seniors maintain independence and dignity in their own communities.",
+            "services_provided": [
+                "NY Connects (Information & Assistance)",
+                "Health Insurance Information, Counseling and Assistance Program (HIICAP)",
+                "Expanded In-home Services for the Elderly (EISEP)",
+                "Caregiver Resource Centers",
+                "Senior Employment",
+                "Nutrition Services (Meals)",
+                "Legal Assistance"
+            ],
+            "eligibility_criteria": "Most services are available to residents age 60+. EISEP has cost-sharing based on income for those above Medicaid limits.",
+            "why_it_matters": [
+                "Single Point of Entry (NY Connects)",
+                "Non-Medicaid Home Care (EISEP)",
+                "Medicare Counseling (HIICAP)",
+                "Caregiver Support"
+            ],
+            "contact": {
+                "phone": "1-800-342-9871",
+                "website": "https://aging.ny.gov/",
+                "find_local_url": "https://aging.ny.gov/local-offices"
+            }
+        }
+    ]
+}

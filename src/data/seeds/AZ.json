@@ -1,0 +1,47 @@
+[
+    {
+        "name": "DESERT SUNSET ASSISTED LIVING",
+        "address_line1": "123 CACTUS RD",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "postal_code": "85001",
+        "phone": "(602) 555-0301",
+        "latitude": 33.4484,
+        "longitude": -112.0740,
+        "license": {
+            "number": "AL-1234",
+            "expiration": "2025-12-31",
+            "beds": 50
+        }
+    },
+    {
+        "name": "SCOTTSDALE SENIOR ESTATES",
+        "address_line1": "456 CAMELBACK RD",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "postal_code": "85251",
+        "phone": "(480) 555-0302",
+        "latitude": 33.4942,
+        "longitude": -111.9261,
+        "license": {
+            "number": "AL-5678",
+            "expiration": "2026-06-30",
+            "beds": 110
+        }
+    },
+    {
+        "name": "TUCSON VALLEY CARE",
+        "address_line1": "789 SPEEDWAY BLVD",
+        "city": "TUCSON",
+        "state": "AZ",
+        "postal_code": "85701",
+        "phone": "(520) 555-0303",
+        "latitude": 32.2226,
+        "longitude": -110.9747,
+        "license": {
+            "number": "AL-9012",
+            "expiration": "2025-10-31",
+            "beds": 75
+        }
+    }
+]

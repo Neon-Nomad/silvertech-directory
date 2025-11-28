@@ -45,6 +45,21 @@ export const VeteransBenefitsList: React.FC = () => {
                   {benefit.description}
                 </p>
 
+                {/* @ts-ignore */}
+                {benefit.services_provided && (
+                    <div className="mb-4">
+                        <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Services Provided</h4>
+                        <ul className="list-disc list-inside space-y-1">
+                            {/* @ts-ignore */}
+                            {benefit.services_provided.map((service, i) => (
+                                <li key={i} className="text-sm text-slate-600 pl-2 -indent-2 ml-2">
+                                    {service}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+
                 <div className="mb-4">
                   <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Eligibility Criteria</h4>
                   <ul className="list-disc list-inside space-y-1">

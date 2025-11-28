@@ -1,0 +1,185 @@
+{
+    "medicaid_waivers": [
+        {
+            "state": "NC",
+            "program_name": "Community Alternatives Program for Disabled Adults (CAP/DA)",
+            "type": "HCBS Waiver",
+            "description": "North Carolina's CAP/DA waiver allows eligible disabled adults (18+) and seniors (65+) to receive care in their homes or community settings as an alternative to nursing facility placement. It covers a range of services to support independent living.",
+            "status": "Waitlist",
+            "care_services": [
+                "Adult Day Health",
+                "Personal Care Aide",
+                "Assistive Technology",
+                "Home Modifications",
+                "Respite Care",
+                "Meal Preparation"
+            ],
+            "financial_eligibility": {
+                "income_limit": "$1,255 / month (100% FPL)",
+                "asset_limit": "$2,000 (Individual)",
+                "notes": "Income limit is lower than many other states (100% FPL vs 300% SSI)."
+            },
+            "functional_eligibility": [
+                "Must be 18 years of age or older.",
+                "Must require an Intermediate Level of Care (comparable to nursing facility).",
+                "Must be able to live safely in the community with support."
+            ],
+            "application_process": [
+                "Contact the local CAP/DA Lead Agency (usually the county DSS or Health Dept).",
+                "Complete a service request form.",
+                "Undergo an assessment to determine level of care.",
+                "If approved and a slot is available, a plan of care is developed."
+            ],
+            "contact": {
+                "phone": "919-855-4340",
+                "website": "https://medicaid.ncdhhs.gov/providers/programs-and-services/long-term-care/community-alternatives-program-disabled-adults-capda"
+            }
+        },
+        {
+            "state": "IN",
+            "program_name": "Aged and Disabled (A&D) Waiver",
+            "type": "HCBS Waiver",
+            "description": "The Indiana Aged and Disabled (A&D) Waiver is a Medicaid program designed to help seniors and individuals with disabilities remain in their homes or community-based settings instead of nursing homes. It specifically covers 'Assisted Living' services, making it a critical financial resource for families who cannot afford private-pay senior living.",
+            "status": "Waitlist",
+            "care_services": [
+                "Assisted Living Services (Rent is NOT covered, but care is)",
+                "Attendant Care (In-home personal care)",
+                "Adult Day Service",
+                "Case Management",
+                "Home Modifications (Ramps, grab bars)",
+                "Respite Care",
+                "Transportation",
+                "Home Delivered Meals"
+            ],
+            "financial_eligibility": {
+                "income_limit": "$2,829 / month (300% of SSI)",
+                "asset_limit": "$2,000 (Individual) / $3,000 (Couple)",
+                "notes": "Miller Trust (QIT) can be used if income exceeds the limit."
+            },
+            "functional_eligibility": [
+                "Must be age 65+ OR disabled.",
+                "Must require 'Nursing Facility Level of Care' (NFLOC).",
+                "Must have substantial functional limitations in Activities of Daily Living (ADLs)."
+            ],
+            "application_process": [
+                "Contact your local Area Agency on Aging (AAA) to start the intake process.",
+                "Complete a functional assessment (Level of Care screening).",
+                "Apply for Medicaid financial eligibility through FSSA.",
+                "Once approved, a Case Manager will develop a care plan."
+            ],
+            "contact": {
+                "phone": "1-800-457-8283",
+                "website": "https://www.in.gov/fssa/da/medicaid-hcbs/"
+            }
+        },
+        {
+            "state": "CA",
+            "program_name": "Assisted Living Waiver (ALW)",
+            "type": "HCBS Waiver",
+            "description": "The California Assisted Living Waiver (ALW) is a Medi-Cal program that pays for assisted living services for eligible seniors and persons with disabilities. It is designed to facilitate a safe transition from a nursing facility to a community setting or to prevent nursing home placement altogether. It is NOT available in every county.",
+            "status": "Waitlist",
+            "care_services": [
+                "Assisted Living Services (Care & Supervision)",
+                "Care Coordination",
+                "Personal Care (Bathing, Grooming)",
+                "Medication Administration",
+                "Housekeeping & Laundry",
+                "Skilled Nursing (Intermittent)",
+                "Recreational Activities"
+            ],
+            "financial_eligibility": {
+                "income_limit": "$1,732 / month (approx)",
+                "asset_limit": "$130,000 (Individual) - drastically increased in 2024",
+                "notes": "Medi-Cal eligibility rules apply. Share of Cost may be required."
+            },
+            "functional_eligibility": [
+                "Must be age 21+.",
+                "Must have full-scope Medi-Cal eligibility.",
+                "Must require a Nursing Facility Level of Care (NFLOC).",
+                "Must be willing to live in an RCFE (Assisted Living) located in a participating county."
+            ],
+            "application_process": [
+                "Submit a Care Coordination Agency (CCA) request form.",
+                "Undergo an assessment by a registered nurse.",
+                "If eligible, you are placed on the waitlist.",
+                "Once a slot opens, you choose a participating facility."
+            ],
+            "contact": {
+                "phone": "1-916-552-9105",
+                "website": "https://www.dhcs.ca.gov/services/ltc/Pages/AssistedLivingWaiver.aspx"
+            }
+        },
+        {
+            "state": "PA",
+            "program_name": "Community HealthChoices (CHC)",
+            "type": "Managed Long-Term Services and Supports (MLTSS)",
+            "description": "Community HealthChoices (CHC) is Pennsylvania's mandatory managed care program for dual-eligible individuals (Medicare and Medicaid) and older adults requiring a nursing home level of care. It covers physical health, behavioral health, and long-term services and supports (LTSS) to help people live independently in their communities.",
+            "status": "Active",
+            "care_services": [
+                "Personal Assistance Services",
+                "Home Health Aides",
+                "Adult Daily Living Services",
+                "Respite Care",
+                "Home Adaptations",
+                "Non-Medical Transportation",
+                "Service Coordination",
+                "Personal Emergency Response System (PERS)"
+            ],
+            "financial_eligibility": {
+                "income_limit": "$2,829 / month (300% of SSI for Waiver services)",
+                "asset_limit": "$2,000 (Individual) / $8,000 (if income < $2,829)",
+                "notes": "Spousal impoverishment protections apply."
+            },
+            "functional_eligibility": [
+                "Must be age 21+.",
+                "Must require a Nursing Facility Clinically Eligible (NFCE) level of care.",
+                "Must be eligible for both Medicare and Medicaid OR eligible for Medicaid LTSS."
+            ],
+            "application_process": [
+                "Apply for Medicaid through COMPASS or your local County Assistance Office.",
+                "Undergo a functional assessment to determine level of care.",
+                "Choose a CHC Managed Care Organization (MCO) (e.g., UPMC, PA Health & Wellness, AmeriHealth Caritas).",
+                "Work with a Service Coordinator to develop a Person-Centered Service Plan."
+            ],
+            "contact": {
+                "phone": "1-833-735-4416",
+                "website": "https://www.dhs.pa.gov/CHC/Pages/default.aspx"
+            }
+        },
+        {
+            "state": "NY",
+            "program_name": "Assisted Living Program (ALP)",
+            "type": "Medicaid State Plan Service",
+            "description": "The New York Assisted Living Program (ALP) pays for the cost of services in licensed assisted living residences for qualified Medicaid recipients. It is one of the few programs in the country that covers assisted living costs for regular Medicaid beneficiaries without requiring a specific waiver slot, although beds are limited.",
+            "status": "Active (Limited Beds)",
+            "care_services": [
+                "Personal Care Services",
+                "Room and Board (SSI supplement)",
+                "Housekeeping",
+                "Supervision",
+                "Case Management",
+                "Nursing Services",
+                "Physical, Speech, and Occupational Therapy"
+            ],
+            "financial_eligibility": {
+                "income_limit": "$1,732 / month (approx)",
+                "asset_limit": "$31,175 (Individual) - significantly higher than most states",
+                "notes": "SSI recipients are automatically eligible."
+            },
+            "functional_eligibility": [
+                "Must be age 21+.",
+                "Must be medically stable and not require 24-hour skilled nursing care.",
+                "Must require a high level of personal care (Nursing Home Level of Care is NOT strictly required, but needs must be significant)."
+            ],
+            "application_process": [
+                "Contact a participating ALP facility directly to check for availability.",
+                "Undergo an assessment by the facility and a nurse from the local social services district.",
+                "Apply for Medicaid if not already enrolled."
+            ],
+            "contact": {
+                "phone": "1-800-541-2831",
+                "website": "https://www.health.ny.gov/facilities/assisted_living/"
+            }
+        }
+    ]
+}

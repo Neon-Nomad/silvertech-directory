@@ -1,0 +1,47 @@
+[
+    {
+        "name": "SUNSHINE MEADOWS ASSISTED LIVING",
+        "address_line1": "123 PALM BREEZE WAY",
+        "city": "ORLANDO",
+        "state": "FL",
+        "postal_code": "32801",
+        "phone": "(407) 555-0101",
+        "latitude": 28.5383,
+        "longitude": -81.3792,
+        "license": {
+            "number": "AL12345",
+            "expiration": "2025-12-31",
+            "beds": 85
+        }
+    },
+    {
+        "name": "COASTAL BREEZE SENIOR LIVING",
+        "address_line1": "456 OCEAN DRIVE",
+        "city": "MIAMI",
+        "state": "FL",
+        "postal_code": "33101",
+        "phone": "(305) 555-0102",
+        "latitude": 25.7617,
+        "longitude": -80.1918,
+        "license": {
+            "number": "AL67890",
+            "expiration": "2026-06-30",
+            "beds": 120
+        }
+    },
+    {
+        "name": "TAMPA BAY RETIREMENT VILLAGE",
+        "address_line1": "789 BAYSHORE BLVD",
+        "city": "TAMPA",
+        "state": "FL",
+        "postal_code": "33606",
+        "phone": "(813) 555-0103",
+        "latitude": 27.9506,
+        "longitude": -82.4572,
+        "license": {
+            "number": "AL11223",
+            "expiration": "2025-09-30",
+            "beds": 150
+        }
+    }
+]

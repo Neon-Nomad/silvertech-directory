@@ -24,64 +24,109 @@
         },
         {
             "program_name": "Housebound Allowance Pension Supplement",
-            "description": "An increased pension amount for Veterans or surviving spouses who are substantially confined to their home or immediate premises because of a permanent disability.",
+            "description": "The Housebound Allowance Pension Supplement is an enhanced monthly payment added to a Veteran’s or surviving spouse’s VA pension when their medical conditions confine them to their home or immediate surroundings. This benefit is specifically designed for individuals whose disabilities severely limit mobility, independence, and the ability to participate in daily activities outside the home.",
             "eligibility_criteria": [
-                "Must already be eligible for and receiving a VA pension.",
-                "Must have a single permanent disability rated 100% disabling AND be permanently housebound.",
-                "Alternatively eligible if a 100% disability is combined with other disabilities totaling at least 60%.",
-                "The Veteran must remain substantially confined to their dwelling and immediate premises.",
-                "Eligibility is based on disability severity and clinical need."
+                "Must already be eligible for — and receiving — a VA pension.",
+                "Have a single permanent disability rated 100 percent disabling (must be long-term and irreversible).",
+                "Permanently housebound due to disability (unsafe or impossible to leave home except for essential appointments).",
+                "Have one disability rated 100 percent plus additional disabilities totaling at least 60 percent (the '100% + 60% rule').",
+                "Substantially confined to their dwelling and immediate premises (defining legal criterion).",
+                "Eligibility is based on medical confinement, not just service-connected disability status."
             ],
+            "why_it_matters": [
+                "Supplements in-home caregiver expenses.",
+                "Offsets the cost of mobility equipment.",
+                "Helps pay for home modifications (ramps, safety bars, fall-prevention upgrades).",
+                "Supports partial-day assistance from home health aides.",
+                "Reduces financial strain on family caregivers.",
+                "Helps delay facility placement by keeping loved ones safely at home longer."
+            ],
+            "why_explore": "Many families never apply simply because they didn’t know the benefit existed. If a Veteran rarely leaves the home, needs help getting in/out, requires supervision, or has conditions that make travel unsafe, the Housebound Allowance may provide meaningful monthly financial support. Applying early is important because the VA can award retroactive benefits.",
             "official_va_url": "https://www.va.gov/pension/aid-attendance-housebound/",
-            "notes": "Cannot be received concurrently with the Aid & Attendance Allowance."
+            "notes": "Cannot be paid at the same time as Aid & Attendance. The VA will award whichever benefit is higher."
         },
         {
             "program_name": "Veteran Directed Care (VDC)",
-            "description": "A Home and Community-Based Services (HCBS) program that allows Veterans of all ages to manage their own long-term care budget and hire caregivers of their choice, including family members.",
+            "description": "Veteran Directed Care (VDC) is one of the most powerful and flexible long-term care programs offered through the Department of Veterans Affairs. Unlike traditional VA home-care services where the VA assigns agencies or determines the caregiver, VDC gives Veterans direct control over their care budget, the services they receive, and who provides that care — including the option to hire family members.",
             "eligibility_criteria": [
-                "Must be enrolled in VA health care.",
-                "Must require nursing-home-level care or significant assistance with daily living.",
-                "Must be clinically eligible for community-based long-term services.",
-                "Must live in an area where Veteran Directed Care is offered.",
-                "Veteran must be willing to participate in a consumer-directed care model."
+                "Enrolled in the VA Health Care System (no service-connected disability requirement).",
+                "Determined to need nursing-home-level care or significant daily support (e.g., frequent falls, cognitive decline, severe chronic illness).",
+                "Must be capable of (or supported in) directing their own care (can use a representative).",
+                "Must live in a region where VDC is offered.",
+                "Must be willing to participate in a consumer-directed care model (hiring, budgeting, scheduling)."
             ],
+            "why_it_matters": [
+                "Supports aging in place by preventing premature nursing home placement.",
+                "Provides more control than traditional home-care programs (Veteran chooses caregivers).",
+                "Allows family members (spouses, children, relatives) to be paid for caregiving.",
+                "Ideal for cognitive decline or chronic illness, providing daily supervision.",
+                "Makes assisted living more affordable by using funds for personal caregivers inside a community."
+            ],
+            "why_explore": "Many Veterans qualify without realizing it. VDC can provide thousands of dollars of caregiving support monthly and is less known than Aid & Attendance. It allows hiring family members, which is rare. Even Veterans with moderate income or mixed disabilities may qualify, and representatives can oversee the plan for those with cognitive impairment.",
             "official_va_url": "https://www.va.gov/geriatrics/pages/Veteran-Directed_Care.asp",
-            "notes": "Provides autonomy and flexibility by granting Veterans control over their care budget."
+            "notes": "VDC assigns a third-party Financial Management Service (FMS) to handle payroll and taxes, ensuring compliance."
         },
         {
             "program_name": "Geriatric & Extended Care (GEC) Services",
-            "description": "A suite of Home and Community-Based Services (HCBS) available under the VA Medical Benefits Package to help Veterans remain independent or receive skilled care.",
-            "services_include": [
-                "Geriatric Evaluation",
-                "Adult Day Health Care",
-                "Homemaker and Home Health Aide Care",
-                "Respite Care",
-                "Skilled Home Health Care",
-                "Home-Based Primary Care",
-                "Palliative Care",
-                "Hospice Care"
+            "description": "Geriatric & Extended Care (GEC) is a cornerstone of the VA’s long-term support system for older Veterans. Unlike residential VA programs that focus on institutional or nursing-home care, GEC provides a broad suite of Home and Community-Based Services (HCBS) designed to keep Veterans safe, supported, and independent in their own homes or assisted-living environments.",
+            "services_provided": [
+                "Geriatric Evaluation: A comprehensive assessment by a multidisciplinary team (medication, cognitive, mobility, nutrition) to develop a long-term care plan.",
+                "Homemaker and Home Health Aide (H/HHA) Care: Caregivers help with bathing, dressing, grooming, meal prep, and light housekeeping.",
+                "Skilled Home Health Care: Licensed medical professionals provide wound care, injections, and therapy (physical, occupational, speech).",
+                "Adult Day Health Care (ADHC): Structured daytime programs providing socialization, supervision, and medical monitoring.",
+                "Respite Care: Temporary relief for family caregivers (in-home or facility-based).",
+                "Palliative Care & Hospice Coordination: Support for serious illness, pain management, and end-of-life planning.",
+                "Home-Based Primary Care (HBPC): Primary care and care coordination delivered at home for Veterans with complex chronic conditions."
             ],
             "eligibility_criteria": [
-                "Must be enrolled in VA health care.",
-                "Eligibility is based on clinical need and functional status.",
-                "Services vary by local availability and medical center resources.",
-                "May require evaluation by a VA provider to determine appropriate level of care."
+                "Enrolled in VA health care (eligibility based on clinical need, not financial status).",
+                "Need help with Activities of Daily Living (ADLs).",
+                "Have chronic medical conditions requiring frequent monitoring.",
+                "Are unsafe living alone without support.",
+                "Have dementia or cognitive decline.",
+                "Require rehabilitation or skilled nursing support.",
+                "Cannot travel easily to VA appointments."
             ],
+            "why_it_matters": [
+                "Helps Veterans age in place safely by supporting independence.",
+                "Reduces caregiver burnout through respite and day programs.",
+                "Bridges the gap between home and assisted living (supplements facility care).",
+                "Supports complex medical needs (heart failure, COPD, dementia, etc.).",
+                "Prevents premature nursing home placement."
+            ],
+            "why_explore": "Many families do not realize the VA provides this level of home and community-based support. GEC can immediately benefit Veterans who struggle with daily tasks, mobility, or chronic illness. Because it is tied to clinical need—not income—it is one of the most underutilized VA resources available.",
             "official_va_url": "https://www.va.gov/geriatrics/pages/VA_Long_Term_Care_Services.asp",
-            "notes": "The VA does not pay for room and board in assisted living or other residential settings, but Veterans may receive GEC services while residing in such facilities."
+            "notes": "The VA does not pay for room and board in assisted living, but GEC services can be provided to Veterans residing in such facilities."
         },
         {
             "program_name": "Community Living Centers (CLC)",
-            "description": "VA-operated nursing homes that provide rehabilitative care, skilled nursing, long-term residential care, palliative support, and hospice care.",
-            "eligibility_criteria": [
-                "Must be enrolled in the VA health system.",
-                "Must be medically and psychiatrically stable.",
-                "Eligibility determined by clinical need, service-connected disability rating, income, and availability of services.",
-                "Copayments may apply for long-term stays (typically after day 21).",
-                "Hospice care is provided with no copayment."
+            "description": "Community Living Centers (CLCs) are nursing homes operated directly by the Department of Veterans Affairs. They provide rehabilitative care, skilled nursing, long-term residential support, palliative services, and hospice care for Veterans who can no longer safely live at home or in community-based settings. Unlike traditional private nursing homes, CLCs follow a Veteran-centered, household-style care model.",
+            "services_provided": [
+                "Skilled Nursing Care: 24/7 nursing support for chronic illnesses, wound care, and medication management.",
+                "Long-Term Residential Care: For Veterans requiring extended stays due to advanced illness or functional limitations.",
+                "Rehabilitation & Restorative Therapy: Physical, occupational, speech, and cognitive therapies.",
+                "Palliative & Comfort Care: Holistic support focusing on pain relief and quality of life.",
+                "Hospice Care: End-of-life care with no copayments, emphasizing dignity and family involvement.",
+                "Respite Care Stays: Short-term admissions to relieve family caregivers.",
+                "Social & Recreational Programming: Daily activities designed for emotional well-being."
             ],
+            "eligibility_criteria": [
+                "Must be enrolled in the VA Health Care System.",
+                "Must be medically and psychiatrically stable (not an emergency setting).",
+                "Must require long-term care, skilled nursing, or rehabilitative support (e.g., stroke recovery, dementia, fall risk).",
+                "Eligibility is based on clinical assessment, disability status, and income.",
+                "Copayments may apply for stays longer than 21 days (Hospice is always exempt)."
+            ],
+            "why_it_matters": [
+                "Veteran-Centered Alternative: Staffed by teams who understand military culture and trauma history.",
+                "Integrated Medical Oversight: Coordinated access to VA doctors, pharmacy, and mental health services.",
+                "Priority Placement: High-need Veterans with service-connected disabilities often receive priority.",
+                "Predictable Costs: Often significantly lower than private nursing homes ($8k–$12k/mo).",
+                "Seamless Access: Residents can easily access other VA benefits like prosthetics and specialized clinics."
+            ],
+            "why_explore": "Community Living Centers are an essential safety net for aging Veterans with advanced illness or progressive cognitive decline. They offer a high-quality, Veteran-focused alternative to private nursing homes. Early exploration is recommended as admission depends on availability and some centers have waitlists.",
             "official_va_url": "https://www.va.gov/geriatrics/pages/va_community_living_centers.asp",
-            "notes": "Community Living Centers specialize in rehabilitation, long-term care, and end-of-life support."
+            "notes": "Hospice care is always exempt from copayments, regardless of length of stay or disability status."
         }
     ]
 }

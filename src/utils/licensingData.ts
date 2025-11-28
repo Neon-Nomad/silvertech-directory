@@ -6,6 +6,7 @@ export interface LicensingAuthority {
     website_url: string;
     phone: string;
     complaint_intake_url: string;
+    verify_license_url?: string;
 }
 
 // Create a map for faster lookup

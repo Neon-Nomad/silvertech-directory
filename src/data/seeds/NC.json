@@ -1,0 +1,47 @@
+[
+    {
+        "name": "CHARLOTTE SENIOR HAVEN",
+        "address_line1": "100 TRYON ST",
+        "city": "CHARLOTTE",
+        "state": "NC",
+        "postal_code": "28202",
+        "phone": "(704) 555-0701",
+        "latitude": 35.2271,
+        "longitude": -80.8431,
+        "license": {
+            "number": "HAL-060-001",
+            "expiration": "2025-12-31",
+            "beds": 100
+        }
+    },
+    {
+        "name": "RALEIGH OAKS ASSISTED LIVING",
+        "address_line1": "200 FAYETTEVILLE ST",
+        "city": "RALEIGH",
+        "state": "NC",
+        "postal_code": "27601",
+        "phone": "(919) 555-0702",
+        "latitude": 35.7796,
+        "longitude": -78.6382,
+        "license": {
+            "number": "HAL-092-002",
+            "expiration": "2026-06-30",
+            "beds": 80
+        }
+    },
+    {
+        "name": "DURHAM BULL CITY CARE",
+        "address_line1": "300 MAIN ST",
+        "city": "DURHAM",
+        "state": "NC",
+        "postal_code": "27701",
+        "phone": "(919) 555-0703",
+        "latitude": 35.9940,
+        "longitude": -78.8986,
+        "license": {
+            "number": "HAL-032-003",
+            "expiration": "2025-11-30",
+            "beds": 60
+        }
+    }
+]

@@ -18,6 +18,8 @@ import { getOmbudsman, OmbudsmanProgram } from '@/src/utils/ombudsmanData';
 import { OmbudsmanCard } from '@/features/family/support/OmbudsmanCard';
 import { getLicensingAuthority, LicensingAuthority } from '@/src/utils/licensingData';
 import { LicensingAuthorityCard } from '@/features/family/support/LicensingAuthorityCard';
+import { getAgingAgency, AgingAgency } from '@/src/utils/agingAgencyData';
+import { AgingAgencyCard } from '@/features/family/support/AgingAgencyCard';
 
 export const FacilityDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -32,6 +34,7 @@ export const FacilityDetails: React.FC = () => {
   const [nearestHospital, setNearestHospital] = useState<{ hospital: Hospital; distance: number } | null>(null);
   const [ombudsman, setOmbudsman] = useState<OmbudsmanProgram | null>(null);
   const [licensingAuthority, setLicensingAuthority] = useState<LicensingAuthority | null>(null);
+  const [agingAgency, setAgingAgency] = useState<AgingAgency | null>(null);
 
   useEffect(() => {
     const fetchFacility = async () => {
@@ -87,13 +90,11 @@ export const FacilityDetails: React.FC = () => {
             }
         }
 
-        // Fetch Ombudsman & Licensing
+        // Fetch Ombudsman, Licensing, and Aging Agency
         if (data.state) {
-            const ombudsmanData = getOmbudsman(data.state);
-            setOmbudsman(ombudsmanData);
-
-            const licensingData = getLicensingAuthority(data.state);
-            setLicensingAuthority(licensingData);
+            setOmbudsman(getOmbudsman(data.state));
+            setLicensingAuthority(getLicensingAuthority(data.state));
+            setAgingAgency(getAgingAgency(data.state));
         }
       } catch (err) {
         console.error('Error fetching facility:', err);
@@ -417,6 +418,11 @@ export const FacilityDetails: React.FC = () => {
             {/* Licensing Authority Card */}
             {licensingAuthority && (
                 <LicensingAuthorityCard authority={licensingAuthority} />
+            )}
+
+            {/* Aging Agency Card */}
+            {agingAgency && (
+                <AgingAgencyCard agency={agingAgency} variant="compact" />
             )}
 
             {/* Claim Business Card */}

@@ -25,6 +25,10 @@ import { AdvertiseWithUs } from '@/features/public/advertise/AdvertiseWithUs';
 import { HonestCarePage } from '@/features/public/transparency/HonestCarePage';
 import { Blog } from './features/public/blog/Blog';
 import { LocationPage } from '@/features/seo/LocationPage';
+import { StateHubHome } from '@/features/locations/hub/StateHubHome';
+import { StateMedicaidPage } from '@/features/locations/hub/StateMedicaidPage';
+import { StateRulesPage } from '@/features/locations/hub/StateRulesPage';
+import { StateOmbudsmanPage } from '@/features/locations/hub/StateOmbudsmanPage';
 
 import { Home } from '@/features/family/landing/Home';
 import { FacilityDetails } from '@/features/family/discovery/FacilityDetails';
@@ -74,6 +78,15 @@ function App() {
                 <Route path="/providers" element={<ForProvidersPage />} />
                 <Route path="/products" element={<ProductsHub />} />
                 <Route path="/products/:category" element={<CategoryPage />} />
+                
+                {/* State Authority Hub */}
+                <Route path="/states/:state" element={<StateHubHome />} />
+                <Route path="/states/:state/medicaid" element={<StateMedicaidPage />} />
+                <Route path="/states/:state/rules" element={<StateRulesPage />} />
+                <Route path="/states/:state/ombudsman" element={<StateOmbudsmanPage />} />
+                <Route path="/states/:state/assisted-living" element={<StatePageTemplate />} />
+
+                {/* Legacy / Direct Routes */}
                 <Route path="/assisted-living/california" element={<CaliforniaPage />} />
                 <Route path="/assisted-living/indiana" element={<IndianaPage />} />
                 <Route path="/assisted-living/:state" element={<StatePageTemplate />} />

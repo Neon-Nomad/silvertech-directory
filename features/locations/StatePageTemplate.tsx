@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ALL_STATES } from '@/src/data/states';
-import { useJsonLd } from '@/src/hooks/useJsonLd';
-import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
-import { supabase } from '@/src/lib/supabase';
-import { getOmbudsman } from '@/src/utils/ombudsmanData';
-import { OmbudsmanCard } from '@/features/family/support/OmbudsmanCard';
-import { getLicensingAuthority } from '@/src/utils/licensingData';
-import { LicensingAuthorityCard } from '@/features/family/support/LicensingAuthorityCard';
+import { ALL_STATES } from '../../src/data/states';
+import { useJsonLd } from '../../src/hooks/useJsonLd';
+import { Breadcrumbs } from '../../components/ui/Breadcrumbs';
+import { supabase } from '../../src/lib/supabase';
+import { getOmbudsman } from '../../src/utils/ombudsmanData';
+import { OmbudsmanCard } from '../family/support/OmbudsmanCard';
+import { getLicensingAuthority } from '../../src/utils/licensingData';
+import { LicensingAuthorityCard } from '../family/support/LicensingAuthorityCard';
+import { getAgingAgency } from '../../src/utils/agingAgencyData';
+import { AgingAgencyCard } from '../family/support/AgingAgencyCard';
+import { getMedicaidWaiver } from '../../src/utils/medicaidData';
+import { MedicaidWaiverCard } from '../family/finance/MedicaidWaiverCard';
 
 interface CityStat {
   city: string;
@@ -232,12 +236,39 @@ export const StatePageTemplate: React.FC = () => {
           )}
         </div>
 
+        {/* Medicaid & Financial Aid Section */}
+        {stateDef && getMedicaidWaiver(stateDef.abbreviation) && (
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold mb-6">Medicaid & Financial Aid</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <MedicaidWaiverCard waiver={getMedicaidWaiver(stateDef.abbreviation)!} />
+              
+              <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                <h3 className="font-bold text-slate-900 mb-4">Does Medicaid Pay for Assisted Living?</h3>
+                <p className="text-slate-600 mb-4 leading-relaxed">
+                  In many states, Medicaid <strong>does not</strong> pay for room and board in assisted living. However, HCBS Waivers (like the one shown here) can pay for the <em>care services</em> provided in the facility.
+                </p>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                  <h4 className="font-semibold text-blue-900 text-sm mb-2">Key Takeaway</h4>
+                  <p className="text-sm text-blue-800">
+                    You typically still need to pay for "Room & Board" (rent + food) out of pocket or via SSI, while the Waiver covers the "Assisted Living Services" (care).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* State Resources */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold mb-6">State Resources & Consumer Protection</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {stateDef && getOmbudsman(stateDef.abbreviation) && (
               <OmbudsmanCard program={getOmbudsman(stateDef.abbreviation)!} variant="full" />
+            )}
+
+            {stateDef && getAgingAgency(stateDef.abbreviation) && (
+              <AgingAgencyCard agency={getAgingAgency(stateDef.abbreviation)!} variant="full" />
             )}
 
             {stateDef && getLicensingAuthority(stateDef.abbreviation) && (

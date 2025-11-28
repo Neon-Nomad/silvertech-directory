@@ -32,7 +32,8 @@
     "agency_name": "California Department of Social Services \u2013 Community Care Licensing Division",
     "website_url": "https://www.cdss.ca.gov/inforesources/senior-care-licensing",
     "phone": "916-657-2592",
-    "complaint_intake_url": "https://complaints.ccld.dss.ca.gov/"
+    "complaint_intake_url": "https://complaints.ccld.dss.ca.gov/",
+    "verify_license_url": "https://www.ccld.dss.ca.gov/carefacilitysearch/"
   },
   {
     "state": "Colorado",
@@ -67,7 +68,8 @@
     "agency_name": "Florida Agency for Health Care Administration \u2013 Bureau of Health Facility Regulation, Assisted Living Unit",
     "website_url": "https://quality.healthfinder.fl.gov/compare-tools/ALF",
     "phone": "850-412-4304",
-    "complaint_intake_url": "https://quality.healthfinder.fl.gov/compare-tools/ALF"
+    "complaint_intake_url": "https://quality.healthfinder.fl.gov/compare-tools/ALF",
+    "verify_license_url": "https://quality.healthfinder.fl.gov/index.html"
   },
   {
     "state": "Georgia",
@@ -228,14 +230,16 @@
     "agency_name": "New York State Department of Health",
     "website_url": "https://www.health.ny.gov/facilities/adult_care/",
     "phone": "1-866-893-6772",
-    "complaint_intake_url": "https://apps.health.ny.gov/pubpal/builder/survey/adult-care-facility-and-assisted"
+    "complaint_intake_url": "https://apps.health.ny.gov/pubpal/builder/survey/adult-care-facility-and-assisted",
+    "verify_license_url": "https://profiles.health.ny.gov/acf"
   },
   {
     "state": "North Carolina",
     "agency_name": "North Carolina Division of Health Service Regulation \u2013 Adult Care Licensure Section",
     "website_url": "https://info.ncdhhs.gov/dhsr/acls/index.html",
     "phone": "919-855-4500",
-    "complaint_intake_url": "https://info.ncdhhs.gov/dhsr/ciu/filecomplaint.html"
+    "complaint_intake_url": "https://info.ncdhhs.gov/dhsr/ciu/filecomplaint.html",
+    "verify_license_url": "https://info.ncdhhs.gov/dhsr/reports.htm"
   },
   {
     "state": "North Dakota",
