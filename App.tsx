@@ -17,6 +17,7 @@ import { CaliforniaPage } from '@/features/locations/CaliforniaPage';
 import { IndianaPage } from '@/features/locations/IndianaPage';
 import { PricingPage } from '@/features/public/pricing/PricingPage';
 import { ForProvidersPage } from '@/features/public/providers/ForProvidersPage';
+import { ContactSalesPage } from '@/features/public/providers/ContactSalesPage';
 import { ProductsHub } from '@/src/pages/products';
 import { CategoryPage } from '@/src/pages/products/CategoryPage';
 import { CityPageTemplate } from '@/features/locations/CityPageTemplate';
@@ -78,6 +79,7 @@ function App() {
                 <Route path="/providers" element={<ForProvidersPage />} />
                 <Route path="/products" element={<ProductsHub />} />
                 <Route path="/products/:category" element={<CategoryPage />} />
+                <Route path="/providers/contact-sales" element={<ContactSalesPage />} />
                 
                 {/* State Authority Hub */}
                 <Route path="/states/:state" element={<StateHubHome />} />

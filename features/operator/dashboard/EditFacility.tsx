@@ -30,7 +30,8 @@ export const EditFacility: React.FC = () => {
     state: '',
     postal_code: '',
     min_price: '',
-    max_price: ''
+    max_price: '',
+    plan: 'basic'
   });
 
   const [counts, setCounts] = useState({
@@ -97,7 +98,8 @@ export const EditFacility: React.FC = () => {
           state: data.state || '',
           postal_code: data.postal_code || '',
           min_price: data.min_price?.toString() || '',
-          max_price: data.max_price?.toString() || ''
+          max_price: data.max_price?.toString() || '',
+          plan: data.plan || 'basic'
         });
 
         await fetchCounts();
@@ -255,7 +257,26 @@ export const EditFacility: React.FC = () => {
             </div>
 
             {/* Photos */}
-            <div onClick={fetchCounts}> {/* Refresh counts on interaction */}
+            <div onClick={fetchCounts} className="relative">
+                {formData.plan === 'basic' && (
+                    <div className="absolute inset-0 bg-white/60 backdrop-blur-[1px] z-10 flex flex-col items-center justify-center border border-slate-200 rounded-xl">
+                        <div className="bg-white p-6 rounded-xl shadow-lg text-center max-w-sm border border-slate-100">
+                            <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <Globe className="w-6 h-6 text-purple-600" />
+                            </div>
+                            <h3 className="text-lg font-bold text-slate-900 mb-2">Unlock Photo Gallery</h3>
+                            <p className="text-slate-600 mb-4 text-sm">
+                                Upgrade to a Featured Listing to add photos, gain placement priority, and more.
+                            </p>
+                            <Button 
+                                onClick={() => navigate('/dashboard')} 
+                                className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+                            >
+                                Upgrade for $99/mo
+                            </Button>
+                        </div>
+                    </div>
+                )}
                 <FacilityPhotoManager facilityId={id} />
             </div>
 
