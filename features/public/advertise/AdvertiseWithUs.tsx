@@ -1,251 +1,199 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { TrendingUp, Users, ShieldCheck, XCircle, CheckCircle, ArrowRight, DollarSign } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
-
-gsap.registerPlugin(ScrollTrigger);
+import { Shield, CheckCircle, ArrowRight, DollarSign, Zap } from 'lucide-react';
 
 export const AdvertiseWithUs: React.FC = () => {
-  const graphRef = useRef<HTMLDivElement>(null);
-  const comparisonRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Animate Graph Bars
-    if (graphRef.current) {
-      const bars = graphRef.current.querySelectorAll('.graph-bar');
-      gsap.fromTo(bars, 
-        { scaleY: 0 },
-        { 
-          scaleY: 1, 
-          duration: 1.5, 
-          stagger: 0.2, 
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: graphRef.current,
-            start: "top 80%",
-          }
-        }
-      );
-    }
-
-    // Animate Comparison Items
-    if (comparisonRef.current) {
-      const items = comparisonRef.current.querySelectorAll('.comparison-item');
-      gsap.fromTo(items,
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          stagger: 0.1,
-          scrollTrigger: {
-            trigger: comparisonRef.current,
-            start: "top 75%",
-          }
-        }
-      );
-    }
-  }, []);
-
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans text-slate-900">
       <Helmet>
         <title>Advertise With Us | SilverTech Directory</title>
-        <meta name="description" content="Join the ethical alternative to big referral agencies. Direct leads, zero commissions, and transparent pricing for senior living operators." />
+        <meta name="description" content="Stop paying 100% commissions. SilverTech is the zero-commission alternative that puts control and revenue back in your hands." />
       </Helmet>
 
       {/* Hero Section */}
-      <div className="bg-slate-900 text-white pt-24 pb-32 overflow-hidden relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] opacity-10 bg-cover bg-center" />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 to-slate-900" />
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8">
-            Stop Paying <span className="text-red-500">100%</span> Commissions
+      <div className="bg-slate-900 text-white pt-24 pb-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-tight">
+            Stop Paying <span className="text-red-500">100% Commissions</span>.
+            <br />
+            Stop Losing a Month’s Rent Every Single Move-In.
           </h1>
-          <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-12">
-            Join the ethical revolution in senior care referrals. We believe in direct connections, transparent pricing, and keeping money in care—not in middleman pockets.
+          <p className="text-xl md:text-2xl text-slate-300 max-w-4xl mx-auto mb-10 leading-relaxed">
+            Every other referral platform drains senior living like a leech: one resident equals one full month of rent gone forever.
+            <br /><br />
+            <span className="text-white font-bold">SilverTech doesn’t play that game.</span>
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/claim-business">
-              <Button size="lg" className="text-lg px-8 py-4 bg-primary-600 hover:bg-primary-500">
-                Claim Your Profile
-              </Button>
-            </Link>
-            <Link to="/login">
-              <Button variant="outline-white" size="lg" className="text-lg px-8 py-4">
-                Operator Login
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Mission Section */}
-      <div className="py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">Our Mission</h2>
-            <p className="mt-4 text-xl text-slate-600 max-w-3xl mx-auto">
-              To dismantle the predatory "Place for Mom" model that drains resources from care facilities. We empower operators with direct leads and fair, flat-fee pricing.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="bg-white p-8 rounded-2xl shadow-sm text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <DollarSign className="w-8 h-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Zero Commissions</h3>
-              <p className="text-slate-600">
-                Keep your first month's rent. We charge a simple, low monthly subscription. No hidden fees, ever.
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Direct Connections</h3>
-              <p className="text-slate-600">
-                Families contact you directly. We don't gatekeep phone numbers or shadow-ban your website.
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <ShieldCheck className="w-8 h-8 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Verified Trust</h3>
-              <p className="text-slate-600">
-                Stand out with our "Verified Partner" badge. We vet facilities to ensure families find safe, quality care.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Us vs Them Comparison */}
-      <div className="py-24 bg-white" ref={comparisonRef}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-slate-900 mb-16">The SilverTech Difference</h2>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Them */}
-            <div className="bg-red-50 rounded-3xl p-8 border border-red-100 comparison-item">
-              <h3 className="text-2xl font-bold text-red-800 mb-6 flex items-center gap-3">
-                <XCircle className="w-8 h-8" />
-                The "Big Guys"
-              </h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3 text-red-900">
-                  <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
-                  <span>Charge 100-120% of first month's rent</span>
-                </li>
-                <li className="flex items-start gap-3 text-red-900">
-                  <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
-                  <span>Gatekeep family contact info</span>
-                </li>
-                <li className="flex items-start gap-3 text-red-900">
-                  <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
-                  <span>Sell leads to 5+ competitors simultaneously</span>
-                </li>
-                <li className="flex items-start gap-3 text-red-900">
-                  <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
-                  <span>Aggressive sales tactics with families</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Us */}
-            <div className="bg-green-50 rounded-3xl p-8 border border-green-100 comparison-item shadow-lg scale-105 transform">
-              <h3 className="text-2xl font-bold text-green-800 mb-6 flex items-center gap-3">
-                <CheckCircle className="w-8 h-8" />
-                SilverTech Directory
-              </h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3 text-green-900">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                  <span>Flat monthly subscription ($0 commissions)</span>
-                </li>
-                <li className="flex items-start gap-3 text-green-900">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                  <span>Direct phone calls & website clicks</span>
-                </li>
-                <li className="flex items-start gap-3 text-green-900">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                  <span>Exclusive leads (families choose YOU)</span>
-                </li>
-                <li className="flex items-start gap-3 text-green-900">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                  <span>Empathetic, pressure-free family support</span>
-                </li>
-              </ul>
-            </div>
+          <div className="flex flex-wrap justify-center gap-6 text-lg font-medium text-primary-400 mb-10">
+            <span className="flex items-center"><CheckCircle className="w-5 h-5 mr-2" /> We charge $0 commissions.</span>
+            <span className="flex items-center"><CheckCircle className="w-5 h-5 mr-2" /> Ever.</span>
+            <span className="flex items-center"><CheckCircle className="w-5 h-5 mr-2" /> Families connect directly to you.</span>
+            <span className="flex items-center"><CheckCircle className="w-5 h-5 mr-2" /> No middleman.</span>
           </div>
-        </div>
-      </div>
 
-      {/* Growth Graph */}
-      <div className="py-24 bg-slate-900 text-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-16">
-            <div className="flex-1">
-              <h2 className="text-3xl font-bold mb-6">Maximize Your ROI</h2>
-              <p className="text-xl text-slate-400 mb-8">
-                See how your marketing budget performs with SilverTech compared to traditional referral agencies. Keep your revenue where it belongs—in your facility.
-              </p>
-              <div className="flex items-center gap-4 text-green-400 mb-8">
-                <TrendingUp className="w-8 h-8" />
-                <span className="text-2xl font-bold">+400% ROI vs Competitors</span>
-              </div>
-              <Link to="/claim-business">
-                <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100">
-                  Start Growing Today <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-              </Link>
-            </div>
-
-            <div className="flex-1 w-full max-w-lg" ref={graphRef}>
-              <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700">
-                <h3 className="text-lg font-medium mb-8 text-center">Annual Cost for 10 Move-ins</h3>
-                <div className="flex items-end justify-around h-64 gap-8">
-                  <div className="w-full flex flex-col items-center gap-2">
-                    <span className="text-red-400 font-bold">$45,000</span>
-                    <div className="w-full bg-red-500/20 rounded-t-lg relative group h-full graph-bar" style={{ height: '100%' }}>
-                      <div className="absolute bottom-0 left-0 right-0 bg-red-500 rounded-t-lg transition-all duration-1000 h-full opacity-80 group-hover:opacity-100"></div>
-                    </div>
-                    <span className="text-sm text-slate-400 font-medium">Referral Agencies</span>
-                  </div>
-                  <div className="w-full flex flex-col items-center gap-2">
-                    <span className="text-green-400 font-bold">$2,400</span>
-                    <div className="w-full bg-green-500/20 rounded-t-lg relative group h-full graph-bar" style={{ height: '15%' }}>
-                      <div className="absolute bottom-0 left-0 right-0 bg-green-500 rounded-t-lg transition-all duration-1000 h-full opacity-80 group-hover:opacity-100"></div>
-                    </div>
-                    <span className="text-sm text-slate-400 font-medium">SilverTech</span>
-                  </div>
-                </div>
-                <p className="text-center text-xs text-slate-500 mt-6">
-                  *Based on avg. rent of $4,500/mo and 100% commission fee vs. SilverTech Pro plan.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* CTA */}
-      <div className="py-24 bg-primary-600">
-        <div className="max-w-4xl mx-auto px-4 text-center text-white">
-          <h2 className="text-4xl font-bold mb-6">Ready to Take Control?</h2>
-          <p className="text-xl text-primary-100 mb-10">
-            Join thousands of operators who have switched to the fair, transparent way to grow their census.
-          </p>
-          <Link to="/claim-business">
-            <Button size="lg" className="bg-white text-primary-600 hover:bg-slate-100 text-lg px-12 py-4 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link to="/claim-business" className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors shadow-lg shadow-primary-900/50">
               Claim Your Free Profile
-            </Button>
+            </Link>
+            <Link to="/login" className="bg-transparent border-2 border-slate-600 hover:border-white text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors">
+              Operator Login
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Mission */}
+      <div className="py-20 bg-white border-b border-slate-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-sm font-bold text-primary-600 uppercase tracking-widest mb-4">Our Mission</h2>
+          <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+            To dismantle the predatory commission model that siphons money from operators and hides information from families.
+          </h3>
+          <p className="text-xl text-slate-600">
+            We exist for one reason: to put control, transparency, and revenue back where it belongs — with <span className="font-bold text-slate-900">YOU</span> and the families you serve.
+          </p>
+        </div>
+      </div>
+
+      {/* Why Operators Switch */}
+      <div className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-16">Why Operators Switch to SilverTech</h2>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+              <div className="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-6">
+                <DollarSign className="w-8 h-8" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Zero Commissions</h3>
+              <p className="text-slate-600 mb-4">
+                Stop handing over <span className="font-bold text-red-600">$4,500–$9,000</span> per placement.
+              </p>
+              <p className="text-slate-600">
+                Your first month’s rent stays in <span className="font-bold text-slate-900">YOUR</span> community — not in a referral agency’s pocket.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+              <div className="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+                <Zap className="w-8 h-8" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Direct, Unfiltered Leads</h3>
+              <ul className="space-y-2 text-slate-600 mb-4">
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-blue-500" /> You get the calls.</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-blue-500" /> You get the emails.</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-blue-500" /> You get the tours.</li>
+              </ul>
+              <p className="text-slate-600 font-medium">
+                We do NOT intercept, gatekeep, redirect, or resell your leads — ever.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+              <div className="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6">
+                <Shield className="w-8 h-8" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Verified Trust Badge</h3>
+              <p className="text-slate-600 mb-4">
+                Earn a “SilverTech Verified Provider” badge and stand out in the directory.
+              </p>
+              <p className="text-slate-600">
+                Families want honesty. You get rewarded for providing it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Comparison Table */}
+      <div className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12">The SilverTech Difference</h2>
+          
+          <div className="overflow-hidden border border-slate-200 rounded-2xl shadow-sm">
+            <table className="min-w-full divide-y divide-slate-200">
+              <thead className="bg-slate-50">
+                <tr>
+                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-slate-500 uppercase tracking-wider">Feature</th>
+                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-red-600 uppercase tracking-wider">Commission Agencies</th>
+                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-primary-600 uppercase tracking-wider bg-primary-50">SilverTech Directory</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-slate-200">
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-slate-900">Cost per Move-In</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-600">1 full month’s rent ($4,500–$9,000)</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-primary-700 bg-primary-50">Flat monthly subscription</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-slate-900">Ownership of Leads</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-600">They own & gatekeep your leads</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-primary-700 bg-primary-50">YOU own every lead</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-slate-900">Lead Routing</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-600">Sold to multiple competitors</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-primary-700 bg-primary-50">Sent only to your community</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-slate-900">Transparency</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-600">Hidden fees & aggressive sales</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-primary-700 bg-primary-50">Ethical, pressure-free model</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-slate-900">Family Experience</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-600">Sales funnel, call center</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-primary-700 bg-primary-50">Direct, honest information</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      {/* ROI Section */}
+      <div className="py-20 bg-slate-900 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">Keep Your Revenue Where It Belongs</h2>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="bg-slate-800 p-8 rounded-2xl border border-red-900/50">
+              <h3 className="text-xl font-bold text-red-400 mb-4">Every operator knows the pain:</h3>
+              <div className="text-5xl font-bold text-white mb-2">10</div>
+              <div className="text-lg text-slate-400 mb-6">move-ins</div>
+              <div className="text-4xl font-bold text-red-500 mb-2">=$45,000</div>
+              <div className="text-slate-300">gone to agencies that did nothing but intercept your calls.</div>
+            </div>
+
+            <div className="bg-primary-900 p-8 rounded-2xl border-2 border-primary-500 shadow-2xl shadow-primary-900/50 relative overflow-hidden">
+              <div className="absolute top-0 right-0 bg-primary-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">WINNER</div>
+              <h3 className="text-xl font-bold text-primary-300 mb-4">With SilverTech?</h3>
+              <div className="text-5xl font-bold text-white mb-2">10</div>
+              <div className="text-lg text-primary-200 mb-6">move-ins</div>
+              <div className="text-4xl font-bold text-green-400 mb-2">=$2,400/yr</div>
+              <div className="text-primary-100">for the Pro plan — and you keep your first month’s rent every time.</div>
+            </div>
+          </div>
+          
+          <div className="mt-12 text-2xl font-bold text-white">
+            That’s more than a <span className="text-green-400">400% ROI</span>.
+          </div>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div className="py-24 bg-white text-center">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-slate-900 mb-6">Ready to Take Back Control?</h2>
+          <p className="text-xl text-slate-600 mb-10">
+            Thousands of operators are switching to the fair, transparent, family-first model.
+          </p>
+          <Link to="/claim-business" className="inline-flex items-center bg-primary-600 text-white px-10 py-5 rounded-lg text-xl font-bold hover:bg-primary-700 transition-colors shadow-lg">
+            Claim Your Free Profile Today <ArrowRight className="ml-2 w-6 h-6" />
           </Link>
         </div>
       </div>
