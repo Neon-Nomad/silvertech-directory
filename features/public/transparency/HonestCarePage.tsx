@@ -1,15 +1,73 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { Shield, AlertTriangle, CheckCircle, DollarSign, Heart, Info, Search } from 'lucide-react';
+import { Shield, AlertTriangle, CheckCircle, DollarSign, Heart, Info, Search, XCircle } from 'lucide-react';
 
 export const HonestCarePage: React.FC = () => {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do senior placement referral services make money?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many referral services charge senior living communities a commission of up to 100% of the first month's rent for every resident they place. This financial incentive can influence which facilities they recommend to families."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does commission-based placement matter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When a service is paid by commission, they may prioritize partners that pay the highest fees, hide budget-friendly options that don't pay, and pressure families to make quick decisions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is SilverTech Directory free for families?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, SilverTech Directory is completely free for families to use. We do not charge families any fees to search, compare, or contact facilities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does SilverTech Directory choose which facilities to list?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We list every licensed assisted living and memory care community we can find, regardless of whether they pay us. Our goal is to provide a complete and unbiased directory."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I contact facilities directly through SilverTech Directory?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Unlike other platforms that hide contact info to act as middlemen, we provide direct phone numbers and website links so you can speak directly with the communities."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900">
       <Helmet>
         <title>Why Transparency Matters | SilverTech Directory</title>
         <meta name="description" content="Learn how senior care referral services really work. SilverTech offers 100% transparency, zero commissions, and direct contact with communities." />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
       </Helmet>
+
+      {/* Top Banner */}
+      <div className="bg-primary-600 text-white py-3 px-4 text-center font-medium">
+        <p>
+          No commissions. No sales pressure. No hidden partners. 
+          <span className="opacity-90 ml-1">Just unbiased senior care information — for families, not sales funnels.</span>
+        </p>
+      </div>
 
       {/* Hero Section */}
       <div className="bg-slate-50 border-b border-slate-200">
@@ -168,6 +226,53 @@ export const HonestCarePage: React.FC = () => {
           </div>
         </section>
 
+        {/* Comparison Table */}
+        <section className="py-12">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">How We Compare</h2>
+          <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
+            SilverTech Directory is built for families, not commissions.
+          </p>
+          
+          <div className="overflow-hidden border border-slate-200 rounded-xl shadow-sm">
+            <table className="min-w-full divide-y divide-slate-200">
+              <thead className="bg-slate-50">
+                <tr>
+                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-slate-500 uppercase tracking-wider">Feature</th>
+                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-slate-500 uppercase tracking-wider">Referral Agencies</th>
+                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-primary-600 uppercase tracking-wider bg-primary-50">SilverTech Directory</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-slate-200">
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-slate-900">Commission Fees</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-red-600 font-medium">90 to 120 percent</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-green-600 font-bold bg-primary-50">0 percent</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-slate-900">Shows All Facilities</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-600"><XCircle className="w-5 h-5 text-red-400 inline mr-1" /> No</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900 font-medium bg-primary-50"><CheckCircle className="w-5 h-5 text-green-500 inline mr-1" /> Yes</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-slate-900">Direct Contact</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-600"><XCircle className="w-5 h-5 text-red-400 inline mr-1" /> No</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900 font-medium bg-primary-50"><CheckCircle className="w-5 h-5 text-green-500 inline mr-1" /> Yes</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-slate-900">Budget-Friendly Options</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-600">Not guaranteed</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900 font-medium bg-primary-50">Always included</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-slate-900">Sales Pressure</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-red-600 font-medium">High</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-green-600 font-bold bg-primary-50">None</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         {/* How We Make Money */}
         <section className="bg-slate-900 text-white p-8 rounded-2xl">
           <h2 className="text-2xl font-bold mb-6">How We Make Money (So You Always Know the Truth)</h2>
@@ -210,18 +315,14 @@ export const HonestCarePage: React.FC = () => {
           </div>
 
           <div className="bg-primary-50 p-8 rounded-2xl border border-primary-100 mb-12">
-            <h3 className="text-xl font-bold text-primary-900 mb-4">If You Take One Thing Away</h3>
+            <h3 className="text-xl font-bold text-primary-900 mb-4">Find Senior Care Without Pressure</h3>
             <p className="text-primary-800 text-lg mb-6">
-              Your family should never feel rushed or pressured into choosing a care community.
+              Search your state to see every licensed assisted living, memory care, and retirement community — with no commissions, no shared leads, and no hidden filters.
             </p>
-            <p className="text-primary-800">
-              SilverTech exists to give you the information, the options, and the transparency that traditional referral services won’t.
-            </p>
+            <Link to="/search" className="inline-flex items-center bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-primary-700 transition-colors shadow-lg">
+              Browse Your State <Heart className="ml-2 w-5 h-5" />
+            </Link>
           </div>
-
-          <Link to="/search" className="inline-flex items-center bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-primary-700 transition-colors shadow-lg">
-            Start Your Honest Search <Heart className="ml-2 w-5 h-5" />
-          </Link>
         </section>
 
       </div>

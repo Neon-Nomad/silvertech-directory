@@ -39,6 +39,12 @@ export const Home: React.FC = () => {
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Connect directly with verified communities. No hidden fees, no middleman, just the care they deserve.
             </p>
+            
+            <div className="pt-2">
+              <span onClick={() => navigate('/honest-care')} className="text-primary-600 hover:text-primary-700 font-medium cursor-pointer underline decoration-primary-300 hover:decoration-primary-600 underline-offset-4 transition-all">
+                Learn how "free" referral services really work
+              </span>
+            </div>
           </div>
 
           <div className="max-w-2xl mx-auto bg-white p-4 rounded-2xl shadow-xl border border-slate-200">

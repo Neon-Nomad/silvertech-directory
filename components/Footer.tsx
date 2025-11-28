@@ -29,7 +29,10 @@ export const Footer: React.FC = () => {
           <div className="mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} SilverTech Directory. All rights reserved.
           </div>
-          <div>
+          <div className="flex gap-6">
+            <a href="/honest-care" className="hover:text-primary-600 transition-colors">
+              Honest Care Policy
+            </a>
             <a href="mailto:andrew@silvertechdirectory.com" className="hover:text-primary-600 transition-colors">
               andrew@silvertechdirectory.com
             </a>

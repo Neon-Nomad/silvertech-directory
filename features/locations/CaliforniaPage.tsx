@@ -228,6 +228,21 @@ export const CaliforniaPage: React.FC = () => {
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
             
+            {/* Honest Care Callout */}
+            <div className="bg-primary-50 border border-primary-100 rounded-lg p-4 flex items-start gap-4">
+              <Shield className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-primary-900">Before you choose a facility</h3>
+                <p className="text-primary-800 text-sm mt-1">
+                  Most referral services charge hidden commissions that influence their recommendations. 
+                  <Link to="/honest-care" className="underline font-medium ml-1 hover:text-primary-600">
+                    Read our guide on transparency
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+
             {/* Overview Bullets */}
             <div className="bg-white rounded-lg shadow-sm p-6">
               <h2 className="text-2xl font-bold text-slate-900 mb-4">Types of Care</h2>
