@@ -5,12 +5,12 @@ interface ProductCardProps {
   name: string;
   image: string;
   stars: number;
-  reviews: number;
-  summary: string;
-  affiliate: string;
+  reviews?: number;
+  shortReview: string;
+  affiliateLink: string;
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({ name, image, stars, reviews, summary, affiliate }) => {
+export const ProductCard: React.FC<ProductCardProps> = ({ name, image, stars, reviews, shortReview, affiliateLink }) => {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col h-full">
       <div className="h-48 bg-slate-100 flex items-center justify-center relative">
@@ -30,11 +30,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({ name, image, stars, re
         </div>
 
         <p className="text-sm text-slate-600 mb-4 flex-1 line-clamp-3">
-          {summary || 'Product summary placeholder text. This will describe the key features and benefits of the product.'}
+          {shortReview || 'Product summary placeholder text. This will describe the key features and benefits of the product.'}
         </p>
 
         <a 
-          href={affiliate || '#'} 
+          href={affiliateLink || '#'} 
           target="_blank" 
           rel="noopener noreferrer"
           className="block w-full py-2 px-4 bg-primary-600 hover:bg-primary-700 text-white text-center font-medium rounded-lg transition-colors mt-auto"

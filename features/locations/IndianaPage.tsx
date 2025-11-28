@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, ExternalLink, Shield, AlertTriangle, FileText, HelpCircle, Info } from 'lucide-react';
 import { Breadcrumbs } from '../../components/ui/Breadcrumbs';
+import { stateContent } from '@/src/data/state_content';
+import { useJsonLd } from '@/src/hooks/useJsonLd';
 
 const INDIANA_CITIES = [
   'Indianapolis', 'Fort Wayne', 'Evansville', 'South Bend', 'Carmel',
@@ -10,6 +12,9 @@ const INDIANA_CITIES = [
 ];
 
 export const IndianaPage: React.FC = () => {
+  const content = stateContent.indiana;
+  useJsonLd(content.seo.schema);
+
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
       <Helmet>

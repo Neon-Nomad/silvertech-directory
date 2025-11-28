@@ -11,13 +11,14 @@ import CareFinderSurvey from '@/features/family/survey/CareFinderSurvey';
 import SurveyResults from '@/features/family/survey/SurveyResults';
 import { ClaimProfile } from '@/features/operator/claim/ClaimProfile';
 import { ClaimBusiness } from '@/features/operator/claim/ClaimBusiness';
+import { StatePageTemplate } from '@/features/locations/StatePageTemplate';
 import { CaliforniaPage } from '@/features/locations/CaliforniaPage';
 import { IndianaPage } from '@/features/locations/IndianaPage';
 import { PricingPage } from '@/features/public/pricing/PricingPage';
 import { ForProvidersPage } from '@/features/public/providers/ForProvidersPage';
 import { ProductsHub } from '@/src/pages/products';
 import { CategoryPage } from '@/src/pages/products/CategoryPage';
-import { LocationPage } from '@/features/seo/LocationPage';
+import { CityPageTemplate } from '@/features/locations/CityPageTemplate';
 import { FAQ } from '@/features/family/support/FAQ';
 import { AdvertiseWithUs } from '@/features/public/advertise/AdvertiseWithUs';
 import { HonestCarePage } from '@/features/public/transparency/HonestCarePage';
@@ -26,10 +27,13 @@ import { Blog } from './features/public/blog/Blog';
 import { Home } from '@/features/family/landing/Home';
 import { FacilityDetails } from '@/features/family/discovery/FacilityDetails';
 
+import { ScrollToTop } from '@/components/utils/ScrollToTop';
+
 function App() {
   return (
     <HelmetProvider>
-      <BrowserRouter>
+      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+        <ScrollToTop />
         <div className="min-h-screen bg-white">
         <Navbar />
         <Routes>
@@ -49,8 +53,8 @@ function App() {
           <Route path="/products/:category" element={<CategoryPage />} />
           <Route path="/assisted-living/california" element={<CaliforniaPage />} />
           <Route path="/assisted-living/indiana" element={<IndianaPage />} />
-          <Route path="/assisted-living/:state" element={<LocationPage />} />
-          <Route path="/assisted-living/:state/:city" element={<LocationPage />} />
+          <Route path="/assisted-living/:state" element={<StatePageTemplate />} />
+          <Route path="/assisted-living/:state/cities/:city" element={<CityPageTemplate />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/advertise" element={<AdvertiseWithUs />} />
           <Route path="/honest-care" element={<HonestCarePage />} />

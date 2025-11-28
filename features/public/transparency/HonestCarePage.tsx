@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Shield, AlertTriangle, CheckCircle, DollarSign, Heart, Info, Search, XCircle } from 'lucide-react';
+import { useJsonLd } from '@/src/hooks/useJsonLd';
 
 export const HonestCarePage: React.FC = () => {
   const faqSchema = {
@@ -51,14 +52,13 @@ export const HonestCarePage: React.FC = () => {
     ]
   };
 
+  useJsonLd(faqSchema);
+
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900">
       <Helmet>
         <title>Why Transparency Matters | SilverTech Directory</title>
         <meta name="description" content="Learn how senior care referral services really work. SilverTech offers 100% transparency, zero commissions, and direct contact with communities." />
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
       </Helmet>
 
       {/* Top Banner */}
