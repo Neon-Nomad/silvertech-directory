@@ -31,6 +31,15 @@ const Navbar: React.FC = () => {
             >
               Blog
             </Link>
+            
+            <div className="h-6 w-px bg-slate-700 mx-2" /> {/* Divider */}
+
+            <Link
+              to="/providers"
+              className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
+            >
+              For Providers
+            </Link>
             <Link
               to="/pricing"
               className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
@@ -38,29 +47,10 @@ const Navbar: React.FC = () => {
               Pricing
             </Link>
             <Link
-              to="/advertise"
-              className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
-            >
-              Advertise with Us
-            </Link>
-            <Link
-              to="/claim-business"
-              className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
-            >
-              Claim this business
-            </Link>
-            <Link
-              to="/faq"
-              className="text-slate-300 hover:text-white transition-colors text-sm font-medium"
-            >
-              FAQ
-            </Link>
-
-            <Link
               to="/login"
               className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
             >
-              Operator Login
+              Sign In
             </Link>
           </div>
 
@@ -91,6 +81,14 @@ const Navbar: React.FC = () => {
             >
               Blog
             </Link>
+            <div className="border-t border-slate-700 my-2" />
+            <Link
+              to="/providers"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-slate-300 hover:text-white text-base font-medium"
+            >
+              For Providers
+            </Link>
             <Link
               to="/pricing"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -99,32 +97,11 @@ const Navbar: React.FC = () => {
               Pricing
             </Link>
             <Link
-              to="/advertise"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-slate-300 hover:text-white text-base font-medium"
-            >
-              Advertise with Us
-            </Link>
-            <Link
-              to="/claim-business"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-slate-300 hover:text-white text-base font-medium"
-            >
-              Claim this business
-            </Link>
-            <Link
-              to="/faq"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-slate-300 hover:text-white text-base font-medium"
-            >
-              FAQ
-            </Link>
-            <Link
               to="/login"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-base font-medium text-center"
+              className="block bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-base font-medium text-center mt-4"
             >
-              Operator Login
+              Sign In
             </Link>
           </div>
         </div>
