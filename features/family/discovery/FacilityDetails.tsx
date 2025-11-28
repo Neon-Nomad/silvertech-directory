@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Star, DollarSign, CheckCircle, ArrowLeft, Shield, Users, Clock, Activity, Utensils, Wifi, AlertCircle, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
@@ -20,6 +20,8 @@ import { getLicensingAuthority, LicensingAuthority } from '@/src/utils/licensing
 import { LicensingAuthorityCard } from '@/features/family/support/LicensingAuthorityCard';
 import { getAgingAgency, AgingAgency } from '@/src/utils/agingAgencyData';
 import { AgingAgencyCard } from '@/features/family/support/AgingAgencyCard';
+import { ALL_STATES } from '@/src/data/states';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 
 export const FacilityDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -180,6 +182,14 @@ export const FacilityDetails: React.FC = () => {
     "url": window.location.href
   };
 
+
+
+// ... inside component ...
+
+  // Get state slug for links
+  const stateSlug = ALL_STATES.find(s => s.abbreviation === facility.state)?.slug || facility.state.toLowerCase();
+  const citySlug = facility.city.toLowerCase().replace(/ /g, '-');
+
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
       <Helmet>
@@ -193,13 +203,13 @@ export const FacilityDetails: React.FC = () => {
       {/* Header / Breadcrumbs */}
       <div className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <Button 
-                variant="ghost" 
-                className="text-slate-600 hover:text-slate-900 p-0 hover:bg-transparent"
-                onClick={() => navigate(-1)}
-            >
-                <ArrowLeft className="mr-2 h-4 w-4" /> Back to Results
-            </Button>
+            <Breadcrumbs items={[
+                { label: 'Home', path: '/' },
+                { label: 'Assisted Living', path: '/assisted-living' },
+                { label: facility.state, path: `/assisted-living/${stateSlug}` },
+                { label: facility.city, path: `/assisted-living/${stateSlug}/${citySlug}` },
+                { label: facility.name }
+            ]} />
         </div>
       </div>
 
@@ -213,7 +223,9 @@ export const FacilityDetails: React.FC = () => {
                     <div className="flex flex-wrap items-center gap-4 text-slate-600">
                         <span className="flex items-center gap-1">
                             <MapPin className="h-4 w-4 text-slate-400" /> 
-                            {fullAddress}
+                            <span>
+                                {facility.address_line1}, <Link to={`/assisted-living/${stateSlug}/${citySlug}`} className="hover:text-primary-600 hover:underline">{facility.city}</Link>, <Link to={`/assisted-living/${stateSlug}`} className="hover:text-primary-600 hover:underline">{facility.state}</Link> {facility.postal_code}
+                            </span>
                         </span>
                         <span className="flex items-center gap-1">
                             <Shield className="h-4 w-4 text-slate-400" />

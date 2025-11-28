@@ -154,7 +154,13 @@ async function seedFacilities() {
                             bed_capacity: licenseData.capacity || licenseData.bed_capacity || 0,
                             authority: facility.state === 'CA' ? 'California Department of Social Services' :
                                 facility.state === 'PA' ? 'Pennsylvania Department of Human Services' :
-                                    facility.state === 'NY' ? 'New York State Department of Health' : undefined
+                                    facility.state === 'NY' ? 'New York State Department of Health' :
+                                        facility.state === 'TX' ? 'Texas Health and Human Services' :
+                                            facility.state === 'OH' ? 'Ohio Department of Health' :
+                                                facility.state === 'HI' ? 'Hawaii Department of Health' :
+                                                    facility.state === 'AK' ? 'Alaska Department of Health' :
+                                                        facility.state === 'AL' ? 'Alabama Department of Public Health' :
+                                                            facility.state === 'IL' ? 'Illinois Department of Public Health' : undefined
                         });
                     }
                 }
