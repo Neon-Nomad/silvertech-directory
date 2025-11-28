@@ -1,17 +1,25 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Star, DollarSign, CheckCircle, ArrowLeft, Shield, Users, Clock, Activity, Utensils, Wifi, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Map } from '@/components/ui/Map';
 import { supabase } from '@/src/lib/supabase';
+import { AddToCompareButton } from '@/components/ui/AddToCompareButton';
+import { geocodeAddress } from '@/src/utils/geocoding';
+import { ReviewList } from '@/features/reviews/ReviewList';
+import { ReviewModal } from '@/features/reviews/ReviewModal';
+import { useAuth } from '@/src/context/AuthProvider';
 
 export const FacilityDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [facility, setFacility] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
+  const [refreshReviews, setRefreshReviews] = useState(0);
 
   useEffect(() => {
     const fetchFacility = async () => {
@@ -25,6 +33,18 @@ export const FacilityDetails: React.FC = () => {
           .single();
 
         if (error) throw error;
+        
+        // Fallback for missing coordinates using Geocoding API
+        if (!data.latitude || !data.longitude) {
+            const fullAddress = `${data.address_line1}, ${data.city}, ${data.state}`;
+            const coords = await geocodeAddress(fullAddress);
+            
+            if (coords) {
+                data.latitude = coords.lat;
+                data.longitude = coords.lng;
+            }
+        }
+
         setFacility(data);
       } catch (err) {
         console.error('Error fetching facility:', err);
@@ -132,29 +152,36 @@ export const FacilityDetails: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
         
         <div className="absolute bottom-0 left-0 right-0 p-8 max-w-7xl mx-auto">
-          <Button 
-            variant="outline" 
-            className="mb-6 text-white border-white/30 hover:bg-white/10 hover:border-white"
-            onClick={() => navigate(-1)}
-          >
-            <ArrowLeft className="mr-2 h-4 w-4" /> Back to Results
-          </Button>
-          
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 shadow-sm">{facility.name}</h1>
-          
-          <div className="flex flex-wrap items-center gap-4 text-white/90">
-            <span className="flex items-center gap-2 bg-black/30 px-3 py-1.5 rounded-lg backdrop-blur-sm border border-white/10">
-              <MapPin className="h-5 w-5 text-primary-400" /> 
-              {fullAddress}
-            </span>
-            <span className="flex items-center gap-2 bg-black/30 px-3 py-1.5 rounded-lg backdrop-blur-sm border border-white/10">
-              <Shield className="h-5 w-5 text-primary-400" />
-              Lic: {licenseNumber}
-            </span>
-            <span className="flex items-center gap-1 bg-green-500/90 px-3 py-1.5 rounded-full text-sm font-medium shadow-lg">
-              <CheckCircle className="h-4 w-4" /> Verified Provider
-            </span>
-          </div>
+            <div className="flex justify-between items-end">
+              <div>
+                <Button 
+                  variant="outline" 
+                  className="mb-6 text-white border-white/30 hover:bg-white/10 hover:border-white"
+                  onClick={() => navigate(-1)}
+                >
+                  <ArrowLeft className="mr-2 h-4 w-4" /> Back to Results
+                </Button>
+                
+                <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 shadow-sm">{facility.name}</h1>
+                
+                <div className="flex flex-wrap items-center gap-4 text-white/90">
+                  <span className="flex items-center gap-2 bg-black/30 px-3 py-1.5 rounded-lg backdrop-blur-sm border border-white/10">
+                    <MapPin className="h-5 w-5 text-primary-400" /> 
+                    {fullAddress}
+                  </span>
+                  <span className="flex items-center gap-2 bg-black/30 px-3 py-1.5 rounded-lg backdrop-blur-sm border border-white/10">
+                    <Shield className="h-5 w-5 text-primary-400" />
+                    Lic: {licenseNumber}
+                  </span>
+                  <span className="flex items-center gap-1 bg-green-500/90 px-3 py-1.5 rounded-full text-sm font-medium shadow-lg">
+                    <CheckCircle className="h-4 w-4" /> Verified Provider
+                  </span>
+                </div>
+              </div>
+              <div className="hidden md:block">
+                 <AddToCompareButton facility={facility} className="bg-white/10 text-white hover:bg-white/20 border border-white/30 rounded-lg px-4 py-2" />
+              </div>
+            </div>
         </div>
       </div>
 
@@ -211,7 +238,11 @@ export const FacilityDetails: React.FC = () => {
               <h2 className="text-2xl font-bold text-slate-900 mb-6">Location</h2>
               <div className="h-[400px] rounded-xl overflow-hidden bg-slate-100 border border-slate-200 relative">
                 {facility.latitude && facility.longitude ? (
-                   <Map center={[facility.latitude, facility.longitude]} />
+                   <Map 
+                     center={[facility.latitude, facility.longitude]} 
+                     facilities={[facility]}
+                     zoom={15}
+                   />
                 ) : (
                    <div className="w-full h-full flex items-center justify-center text-slate-400">
                      Map data unavailable
@@ -223,6 +254,28 @@ export const FacilityDetails: React.FC = () => {
                 {fullAddress}
               </p>
             </div>
+
+            {/* Reviews Section */}
+            <div className="bg-white rounded-xl shadow-sm p-8 border border-slate-100" id="reviews">
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-2xl font-bold text-slate-900">Reviews</h2>
+                <Button 
+                  variant="outline" 
+                  onClick={() => {
+                    if (user) {
+                      setIsReviewModalOpen(true);
+                    } else {
+                      navigate('/login');
+                    }
+                  }}
+                >
+                  Write a Review
+                </Button>
+              </div>
+              
+              <ReviewList facilityId={id!} refreshTrigger={refreshReviews} />
+            </div>
+
           </div>
 
           {/* Sidebar */}
@@ -271,6 +324,14 @@ export const FacilityDetails: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <ReviewModal 
+        isOpen={isReviewModalOpen}
+        onClose={() => setIsReviewModalOpen(false)}
+        facilityId={id!}
+        facilityName={facility.name}
+        onReviewSubmitted={() => setRefreshReviews(prev => prev + 1)}
+      />
     </div>
   );
 };

@@ -23,15 +23,15 @@ interface Facility {
   address: string;
   type: string;
   price: string;
+  latitude?: number;
+  longitude?: number;
 }
 
 interface MapProps {
-  facilities: Facility[];
+  facilities?: Facility[];
   center?: [number, number];
   zoom?: number;
 }
-
-
 
 // Deterministic random number generator
 const seededRandom = (seed: number) => {
@@ -41,6 +41,10 @@ const seededRandom = (seed: number) => {
 
 // Generate mock coordinates near a center point
 const getMockCoordinates = (facility: Facility, center: [number, number]): [number, number] => {
+  if (facility.latitude && facility.longitude) {
+      return [facility.latitude, facility.longitude];
+  }
+
   // Use facility ID to generate deterministic offset
   const seed = parseInt(facility.id.replace(/\D/g, '') || '0');
   
@@ -59,7 +63,7 @@ const MapUpdater: React.FC<{ center: [number, number]; zoom: number }> = ({ cent
   return null;
 };
 
-export const Map: React.FC<MapProps> = ({ facilities, center, zoom = 11 }) => {
+export const Map: React.FC<MapProps> = ({ facilities = [], center, zoom = 11 }) => {
   const [markers, setMarkers] = useState<Array<{ facility: Facility; position: [number, number] }>>([]);
 
   useEffect(() => {

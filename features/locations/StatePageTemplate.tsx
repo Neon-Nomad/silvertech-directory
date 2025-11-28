@@ -181,7 +181,7 @@ export const StatePageTemplate: React.FC = () => {
               {cities.slice(0, 6).map((city) => (
                 <Link 
                   key={city.city}
-                  to={`/assisted-living/${stateDef.slug}/${city.slug}`}
+                  to={`/assisted-living/${stateDef.slug}/cities/${city.slug}`}
                   className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-all group"
                 >
                   <h3 className="text-lg font-bold text-slate-900 group-hover:text-primary-700 mb-2">

@@ -322,7 +322,7 @@ export const IndianaPage: React.FC = () => {
                 {INDIANA_CITIES.map((city) => (
                   <Link 
                     key={city}
-                    to={`/assisted-living/indiana/${city.toLowerCase().replace(' ', '-')}`}
+                    to={`/assisted-living/indiana/cities/${city.toLowerCase().replace(' ', '-')}`}
                     className="block p-4 bg-slate-50 rounded-lg text-center hover:bg-primary-50 hover:text-primary-700 transition-colors"
                   >
                     <span className="font-medium text-slate-900">{city}</span>

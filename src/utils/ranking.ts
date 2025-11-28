@@ -2,6 +2,7 @@ export interface RankedFacility {
     id: string;
     name: string;
     address: string;
+    address_line1?: string; // Added to match DB
     city: string;
     state: string;
     postal_code: string;

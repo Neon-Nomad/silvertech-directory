@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { StatesDropdown } from '@/components/ui/StatesDropdown';
 
+import { UserMenu } from '@/components/ui/UserMenu';
+import { useAuth } from '@/src/context/AuthProvider';
+
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { user } = useAuth();
 
   const handleLogoClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -46,12 +50,8 @@ const Navbar: React.FC = () => {
             >
               Pricing
             </Link>
-            <Link
-              to="/login"
-              className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
-            >
-              Sign In
-            </Link>
+            
+            <UserMenu />
           </div>
 
           <div className="md:hidden">
@@ -96,13 +96,39 @@ const Navbar: React.FC = () => {
             >
               Pricing
             </Link>
-            <Link
-              to="/login"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-base font-medium text-center mt-4"
-            >
-              Sign In
-            </Link>
+            
+            {user ? (
+                <div className="pt-4 border-t border-slate-700">
+                    <div className="flex items-center gap-3 mb-3">
+                        <div className="h-8 w-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-700 font-bold">
+                            {user.email?.substring(0, 2).toUpperCase()}
+                        </div>
+                        <span className="text-white text-sm">{user.email}</span>
+                    </div>
+                    <Link
+                      to="/profile/reviews"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block text-slate-300 hover:text-white text-base font-medium py-1"
+                    >
+                      My Reviews
+                    </Link>
+                    <Link
+                      to="/profile/saved"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block text-slate-300 hover:text-white text-base font-medium py-1"
+                    >
+                      Saved Facilities
+                    </Link>
+                </div>
+            ) : (
+                <Link
+                  to="/login"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-base font-medium text-center mt-4"
+                >
+                  Sign In
+                </Link>
+            )}
           </div>
         </div>
       )}

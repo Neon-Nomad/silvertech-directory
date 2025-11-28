@@ -7,7 +7,15 @@ import { supabase } from '@/src/lib/supabase';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
 import { ALL_STATES as states } from '@/src/data/states';
 import { rankFacilities } from '@/src/utils/ranking';
-import { BestFacilitiesList } from './BestFacilitiesList';
+import { cityContent } from '@/src/data/city_content';
+import { generateCityContent } from '@/src/utils/contentGenerator';
+import { BestFacilitiesList } from '@/features/locations/BestFacilitiesList';
+import { AddToCompareButton } from '@/components/ui/AddToCompareButton';
+
+
+// ... (existing imports)
+
+
 
 // Helper to format strings (e.g., "san-francisco" -> "San Francisco")
 const formatName = (slug: string) => {
@@ -30,6 +38,10 @@ export const CityPageTemplate: React.FC = () => {
   const stateName = stateData ? stateData.name : formatName(stateSlug || '');
   const stateAbbr = stateData ? stateData.abbreviation : stateSlug?.toUpperCase();
 
+  // Get Rich Content (Premium or Generated)
+  const contentKey = `${citySlug}-${stateSlug}`;
+  const richContent = cityContent[contentKey] || generateCityContent(cityName, stateName, facilities.length);
+
   useEffect(() => {
     const fetchFacilities = async () => {
       if (!stateSlug || !citySlug) return;
@@ -37,12 +49,8 @@ export const CityPageTemplate: React.FC = () => {
       setLoading(true);
       try {
         // 1. Get facilities for the state
-        // We use the state abbreviation if we have it, otherwise the slug (less reliable if DB uses abbr)
-        // Ideally we should have a reliable way to get state abbr from slug. 
-        // We have `states` data now.
-        
         const targetState = stateData?.abbreviation || stateSlug;
-        const targetCity = cityName; // DB usually has "San Francisco" not "san-francisco"
+        const targetCity = cityName;
 
         const { data, error } = await supabase
           .from('facilities')
@@ -68,7 +76,7 @@ export const CityPageTemplate: React.FC = () => {
   // SEO & Schema
   const pageTitle = `Assisted Living in ${cityName}, ${stateAbbr} — Directory of Senior Care Facilities`;
   const pageDescription = `See the Top 10 Best Assisted Living Facilities in ${cityName}, ${stateName}. Compare prices, read reviews, and find verified senior care providers.`;
-  const canonicalUrl = `https://silvertech.com/assisted-living/${stateSlug}/cities/${citySlug}`; // Update domain as needed
+  const canonicalUrl = `https://silvertech.com/assisted-living/${stateSlug}/cities/${citySlug}`;
 
   // Use ranked facilities for Schema to highlight best ones first
   const rankedFacilities = rankFacilities(facilities);
@@ -114,7 +122,7 @@ export const CityPageTemplate: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Breadcrumbs items={[
             { label: 'Home', path: '/' },
-            { label: 'States', path: '/assisted-living' }, // Assuming there's a states index or redirect
+            { label: 'States', path: '/assisted-living' },
             { label: stateName, path: `/assisted-living/${stateSlug}` },
             { label: cityName }
           ]} />
@@ -127,11 +135,12 @@ export const CityPageTemplate: React.FC = () => {
           <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
             {cityName}, {stateAbbr} Assisted Living & Memory Care Directory
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl leading-relaxed">
-            We found <strong>{facilities.length}</strong> senior care providers in {cityName}. 
-            At SilverTech, we believe in transparency. We don't take commissions from these facilities, 
-            so you can trust our data is unbiased and family-first.
-          </p>
+          
+          {/* Rich Intro Content */}
+          <div 
+            className="text-xl text-slate-600 max-w-4xl prose prose-slate"
+            dangerouslySetInnerHTML={{ __html: richContent.intro }}
+          />
         </div>
       </div>
 
@@ -214,7 +223,7 @@ export const CityPageTemplate: React.FC = () => {
                         )}
                       </div>
 
-                      <div className="w-full md:w-auto flex flex-col items-end gap-4">
+                        <div className="w-full md:w-auto flex flex-col items-end gap-4">
                          {/* Price Placeholder - Future Feature */}
                          {facility.price && (
                              <div className="text-right">
@@ -223,12 +232,15 @@ export const CityPageTemplate: React.FC = () => {
                              </div>
                          )}
                          
-                         <Link 
-                            to={`/facility/${facility.id}`}
-                            className="w-full md:w-auto inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition-colors"
-                          >
-                            View Facility <ChevronRight size={16} className="ml-1" />
-                          </Link>
+                         <div className="flex flex-col gap-2 w-full md:w-auto">
+                           <Link 
+                              to={`/facility/${facility.id}`}
+                              className="w-full md:w-auto inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition-colors"
+                            >
+                              View Facility <ChevronRight size={16} className="ml-1" />
+                            </Link>
+                            <AddToCompareButton facility={facility} className="w-full justify-center" />
+                         </div>
                       </div>
                     </div>
                   </div>
