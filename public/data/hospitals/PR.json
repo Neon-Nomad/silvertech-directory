@@ -1,0 +1,836 @@
+{
+  "AGUADILLA": [
+    {
+      "name": "HOSPITAL  COMUNITARIO BUEN SAMARITANO INC",
+      "address": "CARR EST PR 460 KM 0 2 BO CAIMITAL BAJO",
+      "city": "AGUADILLA",
+      "state": "PR",
+      "zip": "00603",
+      "phone": "(787) 658-0000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AIBONITO": [
+    {
+      "name": "HOSPITAL MENONITA DE AIBONITO",
+      "address": "CALLE JOSE C VASQUEZ BO. CAONILLAS",
+      "city": "AIBONITO",
+      "state": "PR",
+      "zip": "00705",
+      "phone": "(787) 535-1001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTRO DE SALUD CONDUCTUAL MENONITA-CIMA",
+      "address": "CARR ESTATAL 14 INTERIOR SARGENTO GERARDO SANTIAGO",
+      "city": "AIBONITO",
+      "state": "PR",
+      "zip": "00705",
+      "phone": "(787) 714-2462",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARECIBO": [
+    {
+      "name": "HOSPITAL PAVIA ARECIBO",
+      "address": "CARRETERA 129 KM.1 AVENIDA SAN LUIS",
+      "city": "ARECIBO",
+      "state": "PR",
+      "zip": "00612",
+      "phone": "(787) 650-7272",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL METROPOLITANO  DR SUSONI",
+      "address": "CALLE  PALMA  NUM 55",
+      "city": "ARECIBO",
+      "state": "PR",
+      "zip": "00612",
+      "phone": "(787) 650-1030",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAYAMON": [
+    {
+      "name": "BAYAMON MEDICAL CENTER",
+      "address": "CARRETERA #2 KM 11 7",
+      "city": "BAYAMON",
+      "state": "PR",
+      "zip": "00960",
+      "phone": "(787) 620-8181",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DOCTORS' CENTER BAYAMON",
+      "address": "CALLE  J 9 EXTENSION  HERMANAS DAVILA",
+      "city": "BAYAMON",
+      "state": "PR",
+      "zip": "00960",
+      "phone": "(787) 622-5420",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL UNIVERSITARIO DR RUIZ ARNAU",
+      "address": "LAUREL AVE SANTA JUANITA #100",
+      "city": "BAYAMON",
+      "state": "PR",
+      "zip": "00956",
+      "phone": "(787) 787-5151",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL ESPANOL AUXILIO MUTUO SAN PABLO",
+      "address": "CALLE SANTA CRUZ NUM 70 URB SANTA CRUZ",
+      "city": "BAYAMON",
+      "state": "PR",
+      "zip": "00961",
+      "phone": "(787) 620-4747",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PUERTO RICO WOMEN AND CHILDREN HOSPITAL LLC",
+      "address": "CARR PR-2 KM11 6 INTERIOR ALEDANO HOSPITAL HERMANO",
+      "city": "BAYAMON",
+      "state": "PR",
+      "zip": "00959",
+      "phone": "(787) 474-8282",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BDA NUEVA": [
+    {
+      "name": "HOSPITAL METROPOLITANO DE LA MONTANA",
+      "address": "CALLE ISAAC GONZALEZ ESQUINA LEDESMA",
+      "city": "BDA NUEVA",
+      "state": "PR",
+      "zip": "00641",
+      "phone": "(787) 933-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CABO ROJO": [
+    {
+      "name": "HOSPITAL METROPOLITANO  PSIQUIATRICO DE CABO ROJO",
+      "address": "108 MUNOZ RIVERA STREET",
+      "city": "CABO ROJO",
+      "state": "PR",
+      "zip": "00623",
+      "phone": "(787) 851-2025",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAGUAS": [
+    {
+      "name": "HOSPITAL MENONITA CAGUAS INC",
+      "address": "CARR 172  EXIT 21 URB TURABO GARDENS",
+      "city": "CAGUAS",
+      "state": "PR",
+      "zip": "00725",
+      "phone": "(787) 653-0550",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL PAVIA CAGUAS",
+      "address": "URB MARIOLGA 100 AVE LUIS MUNOZ MARIN",
+      "city": "CAGUAS",
+      "state": "PR",
+      "zip": "00725",
+      "phone": "(787) 620-9770",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAROLINA": [
+    {
+      "name": "HOSPITAL UPR, DR  FEDERICO TRILLA",
+      "address": "CARR 3 KM 8  3 AVE 65TH INFANTERIA       BOX 6021",
+      "city": "CAROLINA",
+      "state": "PR",
+      "zip": "00984",
+      "phone": "(787) 757-1800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DOCTORS CENTER HOSPITAL  CAROLINA LLC",
+      "address": "EDIF JESUS T PINEIRO AVE FERNANDEZ JUNCOS BO PUEBL",
+      "city": "CAROLINA",
+      "state": "PR",
+      "zip": "00979",
+      "phone": "(787) 725-6038",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CASTANER": [
+    {
+      "name": "HOSPITAL GENERAL DE CASTANER",
+      "address": "CARR 135 KM 64 2",
+      "city": "CASTANER",
+      "state": "PR",
+      "zip": "00631",
+      "phone": "(787) 829-5010",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAYEY": [
+    {
+      "name": "HOSPITAL MENONITA DE CAYEY",
+      "address": "BO. RINCON SECTOR LAS LOMAS  KM.3.1 CARR 14",
+      "city": "CAYEY",
+      "state": "PR",
+      "zip": "00737",
+      "phone": "(787) 535-1001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CIDRA": [
+    {
+      "name": "FIRST HOSPITAL PANAMERICANO",
+      "address": "CARR ESTATAL NUM 787 KM 1 5",
+      "city": "CIDRA",
+      "state": "PR",
+      "zip": "00739",
+      "phone": "(787) 739-5555",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DORADO": [
+    {
+      "name": "DOCTORS CENTER HOSPITAL ORLANDO HEALTH DORADO",
+      "address": "900 CARRETERA 696",
+      "city": "DORADO",
+      "state": "PR",
+      "zip": "00646",
+      "phone": "(787) 625-9386",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAJARDO": [
+    {
+      "name": "CARIBBEAN MEDICAL CENTER",
+      "address": "151 AVE OSVALDO MOLINA",
+      "city": "FAJARDO",
+      "state": "PR",
+      "zip": "00738",
+      "phone": "(787) 801-0081",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GUAYAMA": [
+    {
+      "name": "HOSPITAL MENONITA GUAYAMA",
+      "address": "AVE. PEDRO ALBIZU CAMPOS URB. LA HACIENDA",
+      "city": "GUAYAMA",
+      "state": "PR",
+      "zip": "00785",
+      "phone": "(787) 864-4300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GUAYNABO": [
+    {
+      "name": "PROFESSIONAL HOSPITAL GUAYNABO INC",
+      "address": "8 AVE LAS CUMBRES",
+      "city": "GUAYNABO",
+      "state": "PR",
+      "zip": "00970",
+      "phone": "(787) 740-8787",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HATO REY": [
+    {
+      "name": "HOSPITAL PAVIA HATO REY, INC",
+      "address": "AVE PONCE DE LEON 435",
+      "city": "HATO REY",
+      "state": "PR",
+      "zip": "00919",
+      "phone": "(787) 754-0909",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUMACAO": [
+    {
+      "name": "HOPE MEDICAL CENTER",
+      "address": "3 CALLE FONT MARTELO",
+      "city": "HUMACAO",
+      "state": "PR",
+      "zip": "00791",
+      "phone": "(787) 852-2424",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RYDER MEMORIAL HOSPITAL INC",
+      "address": "355 AVE FONT MARTELO",
+      "city": "HUMACAO",
+      "state": "PR",
+      "zip": "00791",
+      "phone": "(787) 852-0768",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL MENONITA HUMACAO, INC",
+      "address": "300  AVE FONT MARTELLO",
+      "city": "HUMACAO",
+      "state": "PR",
+      "zip": "00792",
+      "phone": "(787) 434-1700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANATI": [
+    {
+      "name": "MANATI MEDICAL CENTER DR OTERO LOPEZ",
+      "address": "CARR 668 CALLE HERNANDEZ CARRION URB ATENAS",
+      "city": "MANATI",
+      "state": "PR",
+      "zip": "00674",
+      "phone": "(787) 621-3700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DOCTORS' CENTER HOSPITAL, INC",
+      "address": "MARGINAL CARRETERA NO 2, KM 47.7",
+      "city": "MANATI",
+      "state": "PR",
+      "zip": "00674",
+      "phone": "(787) 853-3322",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAYAGUEZ": [
+    {
+      "name": "BELLA VISTA HOSPITAL",
+      "address": "CARR 349 KM 2 7 CERRO LAS MESAS",
+      "city": "MAYAGUEZ",
+      "state": "PR",
+      "zip": "00681",
+      "phone": "(787) 652-6045",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MAYAGUEZ MEDICAL CENTER DR RAMON EMETERIO BETANCES",
+      "address": "CARR 2 BO SABALOS",
+      "city": "MAYAGUEZ",
+      "state": "PR",
+      "zip": "00682",
+      "phone": "(787) 652-9200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL PEREA",
+      "address": "15 DR BASORA STREET",
+      "city": "MAYAGUEZ",
+      "state": "PR",
+      "zip": "00681",
+      "phone": "(787) 834-0101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL SAN ANTONIO INC",
+      "address": "18 CALLE DR RAMOS E BETANCES N",
+      "city": "MAYAGUEZ",
+      "state": "PR",
+      "zip": "00680",
+      "phone": "(787) 834-0050",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOCA": [
+    {
+      "name": "HOSPITAL SAN CARLOS BORROMEO",
+      "address": "CALLE CONCEPCION VERA AYALA #550 S",
+      "city": "MOCA",
+      "state": "PR",
+      "zip": "00676",
+      "phone": "(787) 877-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PONCE": [
+    {
+      "name": "HOSPITAL METROPOLITANO DR PILA",
+      "address": "2435  BOULEVARD LUIS A FERRE",
+      "city": "PONCE",
+      "state": "PR",
+      "zip": "00717",
+      "phone": "(787) 848-6910",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL DAMAS INC",
+      "address": "PONCE BY PASS #2213",
+      "city": "PONCE",
+      "state": "PR",
+      "zip": "00717",
+      "phone": "(787) 840-8460",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL EPISCOPAL SAN LUCAS II",
+      "address": "917 AVE TITO CASTRO",
+      "city": "PONCE",
+      "state": "PR",
+      "zip": "00716",
+      "phone": "(787) 844-2080",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL MENONITA PONCE",
+      "address": "CARR PR 506 KM 1 0 BO COTO LAUREL",
+      "city": "PONCE",
+      "state": "PR",
+      "zip": "00780",
+      "phone": "(787) 290-3096",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RIO PIEDRAS": [
+    {
+      "name": "SAN JUAN MUNICIPAL HOSPITAL",
+      "address": "BARRIO MONACILLOS,CENTRO MEDICO",
+      "city": "RIO PIEDRAS",
+      "state": "PR",
+      "zip": "00928",
+      "phone": "(787) 748-0270",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL UNIVERSITARIO DE ADULTO",
+      "address": "BARRIO MONACILLOS CENTROMEDICO",
+      "city": "RIO PIEDRAS",
+      "state": "PR",
+      "zip": "00927",
+      "phone": "(787) 754-0101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAN JUAN CAPESTRANO  HOSPITAL INC",
+      "address": "CARR 877 KM 1 6 CAMINO LAS LOMAS RR2",
+      "city": "RIO PIEDRAS",
+      "state": "PR",
+      "zip": "00928",
+      "phone": "(787) 765-2900",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN GERMAN": [
+    {
+      "name": "HOSPITAL DE LA CONCEPCION",
+      "address": "ROAD NUMBER 2 KM 173.4 CAIN ALTO",
+      "city": "SAN GERMAN",
+      "state": "PR",
+      "zip": "00683",
+      "phone": "(787) 892-1860",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL METROPOLITANO DE SAN GERMAN",
+      "address": "CALLE JAVILLA  #8 AL COSTADO PARQUE DE BOMBAS",
+      "city": "SAN GERMAN",
+      "state": "PR",
+      "zip": "00683",
+      "phone": "(787) 852-5300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN JUAN": [
+    {
+      "name": "PRESBYTERIAN COMMUNITY HOSPITAL",
+      "address": "1451 ASHFORD AVENUE, EL CONDADO",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00907",
+      "phone": "(787) 721-2160",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASOCIACION HOSPITAL DEL MAESTRO, INC",
+      "address": "SERGIO CUEVAS BUSTAMANTE STREET 550",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00918",
+      "phone": "(787) 758-8383",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL ONCOLOGICO DR ISAAC GONZALEZ MARTINEZ",
+      "address": "BO. MONACILLOS 150 AVE AMERICO MIRANDA",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00936",
+      "phone": "(787) 763-4149",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AUXILIO MUTUO HOSPITAL",
+      "address": "PONCE DE LEON AVENUE  735 STOP 37 1/2",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00918",
+      "phone": "(787) 758-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL PAVIA SANTURCE",
+      "address": "STREET PROFESOR AUGUSTO RODRIGUEZ #1462",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00910",
+      "phone": "(787) 641-1616",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAN JUAN VA MEDICAL CENTER",
+      "address": "10 CALLE CASIA",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00921",
+      "phone": "(800) 449-8729",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL SAN FRANCISCO",
+      "address": "371 DE DIEGO AVE",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00923",
+      "phone": "(787) 767-5100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "METROPOLITAN HOSPITAL",
+      "address": "CARRETERA 21 1785 URB LAS LOMAS",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00915",
+      "phone": "(787) 782-9999",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTRO CARDIOVASCULAR DE PUERTO RICO Y EL CARIBE",
+      "address": "AVENIDA AMERICO MIRANDA, ENTRADA PRINCIPAL C M",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00936",
+      "phone": "(787) 754-8500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASEM",
+      "address": "EDIFICIO CENTRAL JULIO A PEREZ MEDICAL CENTER",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00935",
+      "phone": "(787) 777-3535",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE SAN JORGE HOSPITAL INC",
+      "address": "258 SAN JORGE STREET",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00912",
+      "phone": "(904) 425-1023",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL DEL CENTRO COMPRENSIVO DE CANCER",
+      "address": "CARR 18 INT  ARR 21  BO MONACILLOS",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00921",
+      "phone": "(787) 772-8300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HOSPITAL EPISCOPAL  SAN LUCAS METRO",
+      "address": "CARR 844 KM 0 5 CUPEY",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00928",
+      "phone": "(787) 761-8383",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY PEDIATRIC HOSPITAL",
+      "address": "PUERTO RICO MEDICAL CENTER IN RIO PIEDRAS",
+      "city": "SAN JUAN",
+      "state": "PR",
+      "zip": "00935",
+      "phone": "(787) 777-3232",
+      "type": "Childrens",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANTURCE": [
+    {
+      "name": "DOCTOR'S CENTER DE SAN JUAN",
+      "address": "PDA. 20 C/ SAN RAFAEL # 1395",
+      "city": "SANTURCE",
+      "state": "PR",
+      "zip": "00909",
+      "phone": "(787) 723-2950",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VEGA BAJA": [
+    {
+      "name": "CENTRO MEDICO WILMA N VAZQUEZ",
+      "address": "CARR. 2 KM 39.5    ROAD NUMBER 2 BO ALGARROBO",
+      "city": "VEGA BAJA",
+      "state": "PR",
+      "zip": "00693",
+      "phone": "(787) 858-1580",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YAUCO": [
+    {
+      "name": "HOSPITAL PAVIA YAUCO",
+      "address": "ROAD 128 KM 1.0",
+      "city": "YAUCO",
+      "state": "PR",
+      "zip": "00698",
+      "phone": "(787) 856-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

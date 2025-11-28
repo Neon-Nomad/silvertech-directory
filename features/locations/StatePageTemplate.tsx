@@ -5,6 +5,10 @@ import { ALL_STATES } from '@/src/data/states';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { supabase } from '@/src/lib/supabase';
+import { getOmbudsman } from '@/src/utils/ombudsmanData';
+import { OmbudsmanCard } from '@/features/family/support/OmbudsmanCard';
+import { getLicensingAuthority } from '@/src/utils/licensingData';
+import { LicensingAuthorityCard } from '@/features/family/support/LicensingAuthorityCard';
 
 interface CityStat {
   city: string;
@@ -226,6 +230,42 @@ export const StatePageTemplate: React.FC = () => {
               No facilities found in {stateDef.name} yet. We are actively expanding our database.
             </div>
           )}
+        </div>
+
+        {/* State Resources */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">State Resources & Consumer Protection</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {stateDef && getOmbudsman(stateDef.abbreviation) && (
+              <OmbudsmanCard program={getOmbudsman(stateDef.abbreviation)!} variant="full" />
+            )}
+
+            {stateDef && getLicensingAuthority(stateDef.abbreviation) && (
+                <LicensingAuthorityCard authority={getLicensingAuthority(stateDef.abbreviation)!} variant="full" />
+            )}
+            
+            <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+               <h3 className="font-bold text-slate-900 mb-4">Why Contact the Ombudsman?</h3>
+               <ul className="space-y-3 text-slate-600 text-sm">
+                 <li className="flex items-start gap-2">
+                   <span className="text-primary-600 font-bold">•</span>
+                   <span>Resolve complaints about quality of care or resident rights.</span>
+                 </li>
+                 <li className="flex items-start gap-2">
+                   <span className="text-primary-600 font-bold">•</span>
+                   <span>Get help with eviction or discharge notices.</span>
+                 </li>
+                 <li className="flex items-start gap-2">
+                   <span className="text-primary-600 font-bold">•</span>
+                   <span>Learn about facility inspection reports and history.</span>
+                 </li>
+                 <li className="flex items-start gap-2">
+                   <span className="text-primary-600 font-bold">•</span>
+                   <span>Advocate for better food, hygiene, and staffing levels.</span>
+                 </li>
+               </ul>
+            </div>
+          </div>
         </div>
 
       </div>

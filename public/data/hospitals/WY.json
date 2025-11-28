@@ -1,0 +1,444 @@
+{
+  "AFTON": [
+    {
+      "name": "STAR VALLEY MEDICAL CENTER",
+      "address": "901 ADAMS STREET",
+      "city": "AFTON",
+      "state": "WY",
+      "zip": "83110",
+      "phone": "(307) 885-5800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BASIN": [
+    {
+      "name": "SOUTH BIG HORN COUNTY HOSPITAL",
+      "address": "388 US HIGHWAY 20 SOUTH",
+      "city": "BASIN",
+      "state": "WY",
+      "zip": "82410",
+      "phone": "(307) 568-3311",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BUFFALO": [
+    {
+      "name": "JOHNSON COUNTY HEALTHCARE CENTER",
+      "address": "497 WEST LOTT",
+      "city": "BUFFALO",
+      "state": "WY",
+      "zip": "82834",
+      "phone": "(307) 684-5521",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CASPER": [
+    {
+      "name": "BANNER WYOMING MEDICAL CENTER",
+      "address": "1233 EAST 2ND ST",
+      "city": "CASPER",
+      "state": "WY",
+      "zip": "82601",
+      "phone": "(307) 577-7201",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUMMIT MEDICAL CENTER",
+      "address": "6350 E 2ND STREET",
+      "city": "CASPER",
+      "state": "WY",
+      "zip": "82609",
+      "phone": "(307) 232-6600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WYOMING BEHAVIORAL INSTITUTE",
+      "address": "2521 EAST 15TH STREET",
+      "city": "CASPER",
+      "state": "WY",
+      "zip": "82609",
+      "phone": "(307) 237-7444",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHEYENNE": [
+    {
+      "name": "CHEYENNE REGIONAL MEDICAL CENTER",
+      "address": "214 EAST 23RD STREET",
+      "city": "CHEYENNE",
+      "state": "WY",
+      "zip": "82001",
+      "phone": "(307) 633-2273",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHEYENNE VA MEDICAL CENTER",
+      "address": "2360 E. PERSHING BLVD.",
+      "city": "CHEYENNE",
+      "state": "WY",
+      "zip": "82001",
+      "phone": "(307) 778-7300",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CODY": [
+    {
+      "name": "CODY REGIONAL HEALTH",
+      "address": "707 SHERIDAN AVENUE",
+      "city": "CODY",
+      "state": "WY",
+      "zip": "82414",
+      "phone": "(307) 572-7501",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DOUGLAS": [
+    {
+      "name": "MEMORIAL HOSPITAL OF CONVERSE COUNTY",
+      "address": "111 SOUTH 5TH STREET",
+      "city": "DOUGLAS",
+      "state": "WY",
+      "zip": "82633",
+      "phone": "(307) 358-2122",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EVANSTON": [
+    {
+      "name": "EVANSTON REGIONAL HOSPITAL",
+      "address": "190 ARROWHEAD DR",
+      "city": "EVANSTON",
+      "state": "WY",
+      "zip": "82930",
+      "phone": "(307) 789-3636",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GILLETTE": [
+    {
+      "name": "CAMPBELL COUNTY HEALTH",
+      "address": "501 SOUTH BURMA AVENUE",
+      "city": "GILLETTE",
+      "state": "WY",
+      "zip": "82716",
+      "phone": "(307) 688-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JACKSON": [
+    {
+      "name": "ST JOHNS MEDICAL CENTER",
+      "address": "po box 428",
+      "city": "JACKSON",
+      "state": "WY",
+      "zip": "83001",
+      "phone": "(307) 733-3636",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KEMMERER": [
+    {
+      "name": "SOUTH LINCOLN MEDICAL CENTER - CAH",
+      "address": "711 ONYX STREET",
+      "city": "KEMMERER",
+      "state": "WY",
+      "zip": "83101",
+      "phone": "(307) 877-4401",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LARAMIE": [
+    {
+      "name": "IVINSON MEMORIAL HOSPITAL",
+      "address": "255 N 30TH",
+      "city": "LARAMIE",
+      "state": "WY",
+      "zip": "82072",
+      "phone": "(307) 755-4600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOVELL": [
+    {
+      "name": "NORTH BIG HORN HOSPITAL DISTRICT",
+      "address": "1115 LANE 12",
+      "city": "LOVELL",
+      "state": "WY",
+      "zip": "82431",
+      "phone": "(307) 548-5200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LUSK": [
+    {
+      "name": "NIOBRARA COUNTY HOSPITAL DISTRICT",
+      "address": "921 SOUTH BALLANCEE AVENUE",
+      "city": "LUSK",
+      "state": "WY",
+      "zip": "82225",
+      "phone": "(307) 334-4000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWCASTLE": [
+    {
+      "name": "WESTON COUNTY HEALTH SERVICES",
+      "address": "1124 WASHINGTON BOULEVARD",
+      "city": "NEWCASTLE",
+      "state": "WY",
+      "zip": "82701",
+      "phone": "(307) 746-4491",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POWELL": [
+    {
+      "name": "POWELL VALLEY HOSPITAL",
+      "address": "777 AVENUE H",
+      "city": "POWELL",
+      "state": "WY",
+      "zip": "82435",
+      "phone": "(307) 754-1107",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RAWLINS": [
+    {
+      "name": "MEMORIAL HOSPITAL OF CARBON COUNTY",
+      "address": "2221 WEST ELM STREET",
+      "city": "RAWLINS",
+      "state": "WY",
+      "zip": "82301",
+      "phone": "(307) 324-2221",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RIVERTON": [
+    {
+      "name": "SAGEWEST HEALTH CARE",
+      "address": "2100 W SUNSET DR",
+      "city": "RIVERTON",
+      "state": "WY",
+      "zip": "82501",
+      "phone": "(307) 856-4161",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROCK SPRINGS": [
+    {
+      "name": "MEMORIAL HOSPITAL SWEETWATER COUNTY",
+      "address": "1200 COLLEGE DRIVE",
+      "city": "ROCK SPRINGS",
+      "state": "WY",
+      "zip": "82901",
+      "phone": "(307) 362-3711",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SARATOGA": [
+    {
+      "name": "NORTH PLATTE VALLEY MEDICAL CENTER",
+      "address": "1300 WEST BRIDGE AVE",
+      "city": "SARATOGA",
+      "state": "WY",
+      "zip": "82331",
+      "phone": "(307) 326-3169",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHERIDAN": [
+    {
+      "name": "SHERIDAN MEMORIAL HOSPITAL",
+      "address": "1401 W 5TH ST",
+      "city": "SHERIDAN",
+      "state": "WY",
+      "zip": "82801",
+      "phone": "(307) 672-1044",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHERIDAN VA MEDICAL CENTER",
+      "address": "1898 FORT ROAD",
+      "city": "SHERIDAN",
+      "state": "WY",
+      "zip": "82801",
+      "phone": "(307) 672-1675",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUNDANCE": [
+    {
+      "name": "CROOK COUNTY HOSPITAL",
+      "address": "713 OAK STREET",
+      "city": "SUNDANCE",
+      "state": "WY",
+      "zip": "82729",
+      "phone": "(307) 283-3501",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "THERMOPOLIS": [
+    {
+      "name": "HOT SPRINGS COUNTY MEMORIAL HOSPITAL",
+      "address": "150 EAST ARAPAHOE",
+      "city": "THERMOPOLIS",
+      "state": "WY",
+      "zip": "82443",
+      "phone": "(307) 864-3121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TORRINGTON": [
+    {
+      "name": "COMMUNITY HOSPITAL",
+      "address": "2000 CAMPBELL DRIVE",
+      "city": "TORRINGTON",
+      "state": "WY",
+      "zip": "82240",
+      "phone": "(307) 532-4181",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHEATLAND": [
+    {
+      "name": "PLATTE COUNTY HOSPITAL",
+      "address": "201 14TH STREET",
+      "city": "WHEATLAND",
+      "state": "WY",
+      "zip": "82201",
+      "phone": "(307) 322-3636",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WORLAND": [
+    {
+      "name": "WASHAKIE MEDICAL CENTER",
+      "address": "400 SOUTH 15TH STREET",
+      "city": "WORLAND",
+      "state": "WY",
+      "zip": "82401",
+      "phone": "(307) 347-3221",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

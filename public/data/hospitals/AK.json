@@ -1,0 +1,369 @@
+{
+  "ANCHORAGE": [
+    {
+      "name": "PROVIDENCE ALASKA MEDICAL CENTER",
+      "address": "3200 PROVIDENCE DRIVE",
+      "city": "ANCHORAGE",
+      "state": "AK",
+      "zip": "99508",
+      "phone": "(907) 562-2211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ALASKA REGIONAL HOSPITAL",
+      "address": "2801 DEBARR ROAD",
+      "city": "ANCHORAGE",
+      "state": "AK",
+      "zip": "99508",
+      "phone": "(907) 276-1131",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ALASKA NATIVE MEDICAL CENTER",
+      "address": "4315 DIPLOMACY DR",
+      "city": "ANCHORAGE",
+      "state": "AK",
+      "zip": "99508",
+      "phone": "(907) 563-2662",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTH STAR HOSPITAL",
+      "address": "2530 DEBARR RD",
+      "city": "ANCHORAGE",
+      "state": "AK",
+      "zip": "99508",
+      "phone": "(907) 264-3526",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ALASKA PSYCHIATRIC INSTITUTE",
+      "address": "3700 PIPER STREET",
+      "city": "ANCHORAGE",
+      "state": "AK",
+      "zip": "99508",
+      "phone": "(907) 269-7100",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BARROW": [
+    {
+      "name": "SAMUEL SIMMONDS MEMORIAL HOSPITAL",
+      "address": "7000 UULA ST",
+      "city": "BARROW",
+      "state": "AK",
+      "zip": "99723",
+      "phone": "(907) 852-4611",
+      "type": "Critical Access Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BETHEL": [
+    {
+      "name": "YUKON KUSKOKWIM DELTA REG HOSPITAL",
+      "address": "PO BOX 287",
+      "city": "BETHEL",
+      "state": "AK",
+      "zip": "99559",
+      "phone": "(907) 543-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CORDOVA": [
+    {
+      "name": "CORDOVA COMMUNITY MEDICAL CENTER",
+      "address": "PO BOX 160 - 602 CHASE AVENUE",
+      "city": "CORDOVA",
+      "state": "AK",
+      "zip": "99574",
+      "phone": "(907) 424-8000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DILLINGHAM": [
+    {
+      "name": "BRISTOL BAY AREA HEALTH CORPORATION",
+      "address": "P O BOX 130",
+      "city": "DILLINGHAM",
+      "state": "AK",
+      "zip": "99576",
+      "phone": "(907) 842-5201",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAIRBANKS": [
+    {
+      "name": "FAIRBANKS MEMORIAL HOSPITAL",
+      "address": "1650 COWLES STREET",
+      "city": "FAIRBANKS",
+      "state": "AK",
+      "zip": "99701",
+      "phone": "(907) 452-8181",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Fort Wainwright": [
+    {
+      "name": "Bassett ACH (FT Wainwright)",
+      "address": "4076 Neely Rd",
+      "city": "Fort Wainwright",
+      "state": "AK",
+      "zip": "99703",
+      "phone": "(907) 361-4000",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOMER": [
+    {
+      "name": "SOUTH PENINSULA HOSPITAL",
+      "address": "4300 BARTLETT ST",
+      "city": "HOMER",
+      "state": "AK",
+      "zip": "99603",
+      "phone": "(907) 235-8101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JBER": [
+    {
+      "name": "673rd Medical Group (Joint Base Elmendorf-Richardson)",
+      "address": "673 MDG 5955 Zeamer Ave",
+      "city": "JBER",
+      "state": "AK",
+      "zip": "99506",
+      "phone": "(907) 384-1110",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JUNEAU": [
+    {
+      "name": "BARTLETT REGIONAL HOSPITAL",
+      "address": "3260 HOSPITAL DR",
+      "city": "JUNEAU",
+      "state": "AK",
+      "zip": "99801",
+      "phone": "(907) 796-8900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KETCHIKAN": [
+    {
+      "name": "PEACEHEALTH KETCHIKAN MEDICAL CENTER",
+      "address": "3100 TONGASS AVENUE",
+      "city": "KETCHIKAN",
+      "state": "AK",
+      "zip": "99901",
+      "phone": "(907) 225-5171",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KODIAK": [
+    {
+      "name": "PROVIDENCE KODIAK ISLAND MEDICAL CTR",
+      "address": "1915 EAST REZANOF DRIVE",
+      "city": "KODIAK",
+      "state": "AK",
+      "zip": "99615",
+      "phone": "(907) 486-3281",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KOTZEBUE": [
+    {
+      "name": "MANIILAQ HEALTH CENTER",
+      "address": "PO BOX 43",
+      "city": "KOTZEBUE",
+      "state": "AK",
+      "zip": "99752",
+      "phone": "(907) 442-3321",
+      "type": "Critical Access Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NOME": [
+    {
+      "name": "NORTON SOUND REGIONAL HOSPITAL",
+      "address": "1000 GREG KRUSCHEK AVENUE (P O BOX 966)",
+      "city": "NOME",
+      "state": "AK",
+      "zip": "99762",
+      "phone": "(907) 443-3311",
+      "type": "Critical Access Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PALMER": [
+    {
+      "name": "MAT-SU REGIONAL MEDICAL CENTER",
+      "address": "2500 SOUTH WOODWORTH LOOP",
+      "city": "PALMER",
+      "state": "AK",
+      "zip": "99645",
+      "phone": "(907) 861-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PETERSBURG": [
+    {
+      "name": "PETERSBURG MEDICAL CENTER",
+      "address": "PO BOX 589",
+      "city": "PETERSBURG",
+      "state": "AK",
+      "zip": "99833",
+      "phone": "(907) 772-4291",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEWARD": [
+    {
+      "name": "PROVIDENCE SEWARD HOSPITAL",
+      "address": "417 FIRST AVENUE, PO BOX 365",
+      "city": "SEWARD",
+      "state": "AK",
+      "zip": "99664",
+      "phone": "(907) 224-5205",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SITKA": [
+    {
+      "name": "SOUTHEAST ALASKA REGIONAL HEALTH CONSORTIUM",
+      "address": "222 TONGASS DR",
+      "city": "SITKA",
+      "state": "AK",
+      "zip": "99835",
+      "phone": "(907) 966-2411",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOLDOTNA": [
+    {
+      "name": "CENTRAL PENINSULA GENERAL HOSPITAL",
+      "address": "250 HOSPITAL PLACE",
+      "city": "SOLDOTNA",
+      "state": "AK",
+      "zip": "99669",
+      "phone": "(907) 262-4404",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VALDEZ": [
+    {
+      "name": "PROVIDENCE VALDEZ MEDICAL CENTER",
+      "address": "PO BOX 550",
+      "city": "VALDEZ",
+      "state": "AK",
+      "zip": "99686",
+      "phone": "(907) 835-2249",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WRANGELL": [
+    {
+      "name": "SEARHC WRANGELL MEDICAL CENTER-CAH",
+      "address": "232 WOOD STREET",
+      "city": "WRANGELL",
+      "state": "AK",
+      "zip": "99929",
+      "phone": "(907) 874-7000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Tribal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

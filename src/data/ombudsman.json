@@ -1,0 +1,410 @@
+{
+  "AL": {
+    "state": "Alabama",
+    "program_name": "The Office of the State Long-Term Care Ombudsman Program",
+    "phone": "(334) 242-5743 or 1-800-243-5463",
+    "email": "ageline@adss.alabama.gov",
+    "website": "https://alabamaageline.gov/ombudsman/",
+    "address": "RSA Tower, 201 Monroe Street, Suite 350, Montgomery, AL 36104"
+  },
+  "AK": {
+    "state": "Alaska",
+    "program_name": "The Office of Long Term Care Ombudsman",
+    "phone": "(907) 334-4480",
+    "email": "akoltco@alaska.gov",
+    "website": "https://akoltco.org/",
+    "address": "3745 Community Park Loop, Suite 200, Anchorage, Alaska 99508"
+  },
+  "AZ": {
+    "state": "Arizona",
+    "program_name": "Office of Arizona State Long-Term Care Ombudsman Program",
+    "phone": "(602) 542-6454",
+    "email": "ltcop@azdes.gov",
+    "website": "https://des.az.gov/LTCOP",
+    "address": "1789 W. Jefferson Street, Mail Drop 6288, Phoenix, Arizona 85007"
+  },
+  "AR": {
+    "state": "Arkansas",
+    "program_name": "Arkansas Long Term Care Ombudsman Program",
+    "phone": "(501) 682-8857",
+    "email": null,
+    "website": "https://humanservices.arkansas.gov/",
+    "address": "P.O. Box 1437, Little Rock, AR 72203"
+  },
+  "CA": {
+    "state": "California",
+    "program_name": "Office of the State Long-Term Care Ombudsman",
+    "phone": "(916) 419-7510",
+    "email": null,
+    "website": "https://aging.ca.gov/Programs_and_Services/Long-Term_Care_Ombudsman/",
+    "address": "2880 Gateway Oaks Drive, Suite 200, Sacramento, CA 95833"
+  },
+  "CO": {
+    "state": "Colorado",
+    "program_name": "Colorado State Long-Term Care Ombudsman Program",
+    "phone": "(303) 862-3524",
+    "email": "cdhs_ltcombudsman@state.co.us",
+    "website": "https://cdhs.colorado.gov/about-cdhs/performance-outcomes-and-reviews/ombudsman-offices/long-term-care-ombudsman",
+    "address": "1575 Sherman St. Denver, CO 80203"
+  },
+  "CT": {
+    "state": "Connecticut",
+    "program_name": "Connecticut Long Term Care Ombudsman Program",
+    "phone": "(860) 424-5200",
+    "email": "ltcop@ct.gov",
+    "website": "https://portal.ct.gov/ltcop",
+    "address": "55 Farmington Avenue, Hartford, CT 06105-3730"
+  },
+  "DE": {
+    "state": "Delaware",
+    "program_name": "Delaware Long-Term Care Ombudsman Program",
+    "phone": "1-855-773-1002",
+    "email": "DHSS_OSEC_Ombudsman@Delaware.gov",
+    "website": "https://dhss.delaware.gov/ltcop/",
+    "address": "1901 N. DuPont Highway, Main Building, New Castle, DE 19720"
+  },
+  "DC": {
+    "state": "District of Columbia",
+    "program_name": "Department of Aging and Community Living",
+    "phone": "(202) 724-5626",
+    "email": "dacl@dc.gov",
+    "website": "https://dacl.dc.gov/",
+    "address": "601 E Street NW, Washington, DC 20049"
+  },
+  "FL": {
+    "state": "Florida",
+    "program_name": "Long-Term Care Ombudsman Program",
+    "phone": "1-888-831-0404",
+    "email": "LTCOPInformer@elderaffairs.org",
+    "website": "https://ombudsman.elderaffairs.org/",
+    "address": "4040 Esplanade Way, Suite 380, Tallahassee, FL 32399-7000"
+  },
+  "GA": {
+    "state": "Georgia",
+    "program_name": "Office of the State Long-Term Care Ombudsman",
+    "phone": "(404) 657-5327",
+    "email": "Melanie.McNeil@osltco.ga.gov",
+    "website": "https://aging.georgia.gov/programs-and-services/long-term-care-ombudsman-program",
+    "address": "2 Peachtree Street, NW, 33rd Floor Atlanta, GA 30303-3142"
+  },
+  "HI": {
+    "state": "Hawaii",
+    "program_name": "Long-Term Care Ombudsman Program",
+    "phone": "(808) 586-7268",
+    "email": "john.mcdermott@doh.hawaii.gov",
+    "website": "https://health.hawaii.gov/eoa/home/long-term-care-ombudsman-program/",
+    "address": "250 South Hotel St. Suite 406, Honolulu, Hawaii 96813-2831"
+  },
+  "ID": {
+    "state": "Idaho",
+    "program_name": "Idaho State Long-Term Care Ombudsman Program",
+    "phone": "(208) 577-2855",
+    "email": "frmelnikovsky@aging.idaho.gov",
+    "website": "https://aging.idaho.gov/ombudsman-program/",
+    "address": "P.O. Box 83720 Boise, ID 83720-0007"
+  },
+  "IL": {
+    "state": "Illinois",
+    "program_name": "Illinois Long-Term Care Ombudsman Program",
+    "phone": "1-800-252-8966",
+    "email": "AGING.SLTCOProgram@illinois.gov",
+    "website": "https://ilaging.illinois.gov/programs/ltcombudsman.html",
+    "address": "Office of the State Long-Term Care Ombudsman Program, One Natural Resources Way, Suite 100, Springfield, IL 62702"
+  },
+  "IN": {
+    "state": "Indiana",
+    "program_name": "Office of the Long Term Care Ombudsman",
+    "phone": "1-800-622-4484",
+    "email": "LongTermCareOmbudsman@ombudsman.IN.gov",
+    "website": "https://www.in.gov/ombudsman/long-term-care-ombudsman/",
+    "address": "402 West Washington Street, Room W451, Indianapolis, Indiana 46207-7083"
+  },
+  "IA": {
+    "state": "Iowa",
+    "program_name": "Office of the State Long-Term Care Ombudsman",
+    "phone": "866-236-1430",
+    "email": "sltco@hhs.iowa.gov",
+    "website": "https://hhs.iowa.gov/contacts/office-state-long-term-care-ombudsman",
+    "address": "321 E. 12th St., 4th Floor, Des Moines, IA 50319"
+  },
+  "KS": {
+    "state": "Kansas",
+    "program_name": "Office of the Long Term Care Ombudsman",
+    "phone": "1-877-662-8362",
+    "email": "LTCO@ks.gov",
+    "website": "https://www.ombudsman.ks.gov/",
+    "address": "900 SW Jackson, Suite 1041, Topeka, Kansas 66612"
+  },
+  "KY": {
+    "state": "Kentucky",
+    "program_name": "Kentucky Long-Term Care Ombudsman Program",
+    "phone": "(800) 372-2991",
+    "email": null,
+    "website": "https://chfs.ky.gov/agencies/dail/Pages/ltcomb.aspx",
+    "address": "3138 Custer Drive, Suite 110, Lexington, KY 40517"
+  },
+  "LA": {
+    "state": "Louisiana",
+    "program_name": "State Long-Term Care Ombudsman Office, Governor's Office of Elderly Affairs",
+    "phone": "(225) 342-9723",
+    "email": "StateOmbudsman@la.gov",
+    "website": "https://goea.louisiana.gov/services/louisiana-ombudsman-program/",
+    "address": "P.O. Box 61, Baton Rouge, LA 70821-0061"
+  },
+  "ME": {
+    "state": "Maine",
+    "program_name": "The Maine Long-Term Care Ombudsman Program",
+    "phone": "(800) 499-0229",
+    "email": "MLTCOP@MaineOmbudsman.org",
+    "website": "https://www.maineombudsman.org/",
+    "address": "61 Winthrop St. Augusta, ME 04330"
+  },
+  "MD": {
+    "state": "Maryland",
+    "program_name": "Maryland Long-Term Care Ombudsman Program",
+    "phone": "(410) 767-2161",
+    "email": "ombudsman.mdoa@maryland.gov",
+    "website": "https://aging.maryland.gov/pages/state-long-term-care-ombudsman.aspx",
+    "address": "301 W. Preston Street, Room 1007, Baltimore, MD 21201"
+  },
+  "MA": {
+    "state": "Massachusetts",
+    "program_name": "Massachusetts Long-Term Care Ombudsman Program",
+    "phone": "(617) 222-7491",
+    "email": null,
+    "website": "https://www.mass.gov/orgs/massachusetts-long-term-care-ombudsman-program",
+    "address": "1 Ashburton Place, 10th Floor, Boston, MA 02108"
+  },
+  "MI": {
+    "state": "Michigan",
+    "program_name": "Michigan Long Term Care Ombudsman Program",
+    "phone": "1-866-485-9393",
+    "email": null,
+    "website": "https://www.michigan.gov/mdhhs/doing-business/providers/integrated/providers/resource-contact-information-for",
+    "address": "15851 South US 27, Suite 73, Lansing, MI 48906"
+  },
+  "MN": {
+    "state": "Minnesota",
+    "program_name": "Office of Ombudsman for Long-Term Care",
+    "phone": "1-800-657-3591",
+    "email": "MBA.OOLTC@state.mn.us",
+    "website": "https://mn.gov/ooltc/",
+    "address": "P.O. Box 64971, St. Paul, MN 55164-0971"
+  },
+  "MS": {
+    "state": "Mississippi",
+    "program_name": "Mississippi Long-Term Care Ombudsman Program",
+    "phone": "1-888-844-0041",
+    "email": "Ombudsman@mdhs.ms.gov",
+    "website": "https://www.mdhs.ms.gov/ombudsman/",
+    "address": "200 South Lamar St. Jackson, MS 39201"
+  },
+  "MO": {
+    "state": "Missouri",
+    "program_name": "State Office of Long-Term Care Ombudsman Program",
+    "phone": "(800) 309-3282",
+    "email": "LTCOmbudsman@health.mo.gov",
+    "website": "https://health.mo.gov/seniors/ombudsman/",
+    "address": "PO Box 570, Jefferson City, MO 65102-0570"
+  },
+  "MT": {
+    "state": "Montana",
+    "program_name": "The Long Term Care Ombudsman Program",
+    "phone": "1-800-332-2272",
+    "email": null,
+    "website": "https://dphhs.mt.gov/sltc/aging/longtermcareombudsman/",
+    "address": "PO Box 4210, Helena MT 59604"
+  },
+  "NE": {
+    "state": "Nebraska",
+    "program_name": "Long-Term Care Ombudsman Program",
+    "phone": "(800) 942-7830",
+    "email": "DHHS.LTCOmbudsman@nebraska.gov",
+    "website": "https://dhhs.ne.gov/Pages/Aging-Ombudsman.aspx",
+    "address": "301 Centennial Mall South, Lincoln, Nebraska 68509"
+  },
+  "NV": {
+    "state": "Nevada",
+    "program_name": "Nevada State Long Term Care Ombudsman Program",
+    "phone": "1-888-282-1155",
+    "email": "ltc.ombudsman@adsd.nv.gov",
+    "website": "https://adsd.nv.gov/programs/seniors/ltcombudsman/ltcombudsprog/",
+    "address": "9670 Gateway Dr, Ste 100 Reno, NV 89521"
+  },
+  "NH": {
+    "state": "New Hampshire",
+    "program_name": "Long-Term Care Ombudsman (OLTC)",
+    "phone": "1-800-442-5640",
+    "email": "OLTCO@dhhs.nh.gov",
+    "website": "https://www.dhhs.nh.gov/long-term-care-ombudsman-oltc",
+    "address": "Brown Building, 129 Pleasant Street, Concord, NH 03301"
+  },
+  "NJ": {
+    "state": "New Jersey",
+    "program_name": "New Jersey Long-Term Care Ombudsman",
+    "phone": "1-877-582-6995",
+    "email": "ombudsman@ltco.nj.gov",
+    "website": "https://www.nj.gov/ooie/",
+    "address": "NJ Long-Term Care Ombudsman P.O. Box 852 Trenton, NJ 08625-0852"
+  },
+  "NM": {
+    "state": "New Mexico",
+    "program_name": "Long-Term Care Ombudsman Program",
+    "phone": "866-451-2901",
+    "email": null,
+    "website": "https://www.aging.nm.gov/ombudsman/",
+    "address": "2550 Cerrillos Road, Santa Fe, NM 87505"
+  },
+  "NY": {
+    "state": "New York",
+    "program_name": "New York State Long Term Care Ombudsman Program",
+    "phone": "1-855-582-6769",
+    "email": "ombudsman@aging.ny.gov",
+    "website": "https://aging.ny.gov/long-term-care-ombudsman-program",
+    "address": "2 Empire State Plaza, 5th Floor, Albany, NY 12223"
+  },
+  "NC": {
+    "state": "North Carolina",
+    "program_name": "North Carolina Long Term Care Ombudsman Program",
+    "phone": "(919) 855-3400",
+    "email": "renee.kea@dhhs.nc.gov",
+    "website": "https://www.ncdhhs.gov/aging",
+    "address": "2101 Mail Service Center, Raleigh, North Carolina 27699-2101"
+  },
+  "ND": {
+    "state": "North Dakota",
+    "program_name": "Long-Term Care Ombudsman Program",
+    "phone": "1-855-462-5465",
+    "email": "dhsagingombud@nd.gov",
+    "website": "https://www.hhs.nd.gov/adults-and-aging/human-services/adults-and-aging/long-term-care-ombudsman-program",
+    "address": "1237 W. Divide Avenue, Suite 6, Bismarck, ND 58501-1208"
+  },
+  "OH": {
+    "state": "Ohio",
+    "program_name": "Office of the State Long-Term Care Ombudsman",
+    "phone": "1-800-282-1206",
+    "email": "OhioOmbudsman@age.ohio.gov",
+    "website": "https://aging.ohio.gov/care-and-living/ombudsman",
+    "address": "30 E. Broad St., 22nd Floor, Columbus, OH 43215"
+  },
+  "OK": {
+    "state": "Oklahoma",
+    "program_name": "Long-Term Care Ombudsman Program",
+    "phone": "(405) 521-6734",
+    "email": "ombudsmanfax@ltco.ok.gov",
+    "website": "https://oklahoma.gov/oag/about/divisions/ltco.html",
+    "address": "313 NE 21st Street, Oklahoma City, OK 73105"
+  },
+  "OR": {
+    "state": "Oregon",
+    "program_name": "Office of the Long-Term Care Ombudsman",
+    "phone": "1-800-522-2602",
+    "email": "ltco.info@rights.oregon.gov",
+    "website": "https://www.oltco.org/oltco/index.html",
+    "address": "830 D St. NE, Salem, OR 97301"
+  },
+  "PA": {
+    "state": "Pennsylvania",
+    "program_name": "Pennsylvania Long-Term Care Ombudsman Program",
+    "phone": "717-783-8975",
+    "email": "LTC-Ombudsman@pa.gov",
+    "website": "https://www.pa.gov/services/aging/request-assistance-from-a-long-term-care-ombudsman",
+    "address": "555 Walnut Street, 5th Floor, Harrisburg, PA 17101"
+  },
+  "RI": {
+    "state": "Rhode Island",
+    "program_name": "Office of the Rhode Island State Long Term Care Ombudsman",
+    "phone": "(401) 785-3340",
+    "email": null,
+    "website": "https://oha.ri.gov/resources/fraud-and-abuse/ombudsman-program",
+    "address": "25 Howard Ave, Building 57, Cranston, RI 02920"
+  },
+  "SC": {
+    "state": "South Carolina",
+    "program_name": "South Carolina Long Term Care Ombudsman Program",
+    "phone": "1-800-868-9095",
+    "email": null,
+    "website": "https://aging.sc.gov/programs-initiatives/long-term-care-ombudsman-program",
+    "address": "1301 Gervais Street, Suite 350, Columbia, SC 29201"
+  },
+  "SD": {
+    "state": "South Dakota",
+    "program_name": "South Dakota Long-Term Care Ombudsman Program",
+    "phone": "833-663-9673",
+    "email": "LTCO@state.sd.us",
+    "website": "https://dhs.sd.gov/ltss/ombudsman.aspx",
+    "address": "Division of Long Term Services and Supports, Hillsview Plaza, 3800 E Hwy 34, c/o 500 E. Capitol Avenue, Pierre, SD 57501"
+  },
+  "TN": {
+    "state": "Tennessee",
+    "program_name": "Tennessee Office of the State Long-Term Care Ombudsman",
+    "phone": "1-877-236-0013",
+    "email": "teresa.teeple@tn.gov",
+    "website": "https://www.tn.gov/disability-and-aging/disability-aging-programs/long-term-care-ombudsman.html",
+    "address": "502 Deaderick Street, 9th Floor, Nashville, TN 37243-0860"
+  },
+  "TX": {
+    "state": "Texas",
+    "program_name": "Office of the State Long-Term Care Ombudsman",
+    "phone": "800-252-2412",
+    "email": null,
+    "website": "https://ltco.texas.gov/",
+    "address": "4601 Guadalupe St. Austin, TX 78751"
+  },
+  "UT": {
+    "state": "Utah",
+    "program_name": "Utah Long-Term Care Ombudsman Program",
+    "phone": "(385) 222-1273",
+    "email": "asipes@utah.gov",
+    "website": "https://daas.utah.gov/long-term-care-ombudsman/",
+    "address": "195 North 1950 West, Salt Lake City, UT 84116"
+  },
+  "VT": {
+    "state": "Vermont",
+    "program_name": "Office of the State Long Term Care Ombudsman Program (SLTCOP)",
+    "phone": "800-889-2047",
+    "email": null,
+    "website": "https://asd.vermont.gov/services/ltc-ombudsman-program",
+    "address": "HC2 South, 280 State Drive, Waterbury, VT 05671-2020"
+  },
+  "VA": {
+    "state": "Virginia",
+    "program_name": "Office of the State Long-Term Care Ombudsman",
+    "phone": "(800) 552-5019",
+    "email": null,
+    "website": "https://www.elderrights.virginia.gov/",
+    "address": "8004 Franklin Farms Drive, Henrico, VA 23229-5019"
+  },
+  "WA": {
+    "state": "Washington",
+    "program_name": "Washington State Long-Term Care Ombudsman Program",
+    "phone": "1-800-562-6028",
+    "email": "ltcop@mschelps.org",
+    "website": "https://www.waombudsman.org/",
+    "address": "1200 S. 336th St, Federal Way, WA 98003"
+  },
+  "WV": {
+    "state": "West Virginia",
+    "program_name": "Long-Term Care Ombudsman Program",
+    "phone": "(304) 558-3317",
+    "email": null,
+    "website": "https://www.wvseniorservices.gov/StayingSafe/LongTermCareOmbudsmanProgram/tabid/81/Default.aspx",
+    "address": "1900 Kanawha Blvd. East, Charleston, WV 25305"
+  },
+  "WI": {
+    "state": "Wisconsin",
+    "program_name": "State of Wisconsin - Board on Aging & Long Term Care",
+    "phone": "1-800-815-0015",
+    "email": "BOALTC@Wisconsin.Gov",
+    "website": "https://longtermcare.wi.gov/",
+    "address": "1402 Pankratz Street, Suite 111, Madison, Wisconsin 53704"
+  },
+  "WY": {
+    "state": "Wyoming",
+    "program_name": "Wyoming Long-Term Care Ombudsman Program",
+    "phone": "(307) 777-2885",
+    "email": "patricia.hall1@wyo.gov",
+    "website": "https://health.wyo.gov/admin/long-term-care-ombudsman-program/",
+    "address": "2300 Capitol Avenue, Hathaway Building 4th Floor, Cheyenne, WY 82002"
+  }
+}

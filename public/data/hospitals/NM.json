@@ -1,0 +1,649 @@
+{
+  "ALAMOGORDO": [
+    {
+      "name": "CHRISTUS SOUTHERN NEW MEXICO",
+      "address": "2669 SCENIC DRIVE",
+      "city": "ALAMOGORDO",
+      "state": "NM",
+      "zip": "88310",
+      "phone": "(575) 439-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALBUQUERQUE": [
+    {
+      "name": "UNM HOSPITAL",
+      "address": "2211 LOMAS BOULEVARD NE",
+      "city": "ALBUQUERQUE",
+      "state": "NM",
+      "zip": "87106",
+      "phone": "(505) 272-2111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LOVELACE MEDICAL CENTER",
+      "address": "601 DR MARTIN LUTHER KING JR AVE NE",
+      "city": "ALBUQUERQUE",
+      "state": "NM",
+      "zip": "87102",
+      "phone": "(505) 727-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LOVELACE WOMEN'S HOSPITAL",
+      "address": "4701 MONTGOMERY BOULEVARD NE",
+      "city": "ALBUQUERQUE",
+      "state": "NM",
+      "zip": "87109",
+      "phone": "(505) 727-7805",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PRESBYTERIAN HOSPITAL",
+      "address": "1100 CENTRAL AVENUE SE",
+      "city": "ALBUQUERQUE",
+      "state": "NM",
+      "zip": "87106",
+      "phone": "(505) 724-8386",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA NEW MEXICO HEALTHCARE SYSTEM",
+      "address": "1501 SAN PEDRO DRIVE SE",
+      "city": "ALBUQUERQUE",
+      "state": "NM",
+      "zip": "87108",
+      "phone": "(505) 256-2889",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LOVELACE WESTSIDE HOSPITAL",
+      "address": "10501 GOLF COURSE ROAD NW",
+      "city": "ALBUQUERQUE",
+      "state": "NM",
+      "zip": "87114",
+      "phone": "(505) 727-2001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HAVEN BEHAVIORAL HOSPITAL OF ALBUQUERQUE",
+      "address": "5400 GIBSON BOULEVARD SE, 4TH FLOOR BOX# 8",
+      "city": "ALBUQUERQUE",
+      "state": "NM",
+      "zip": "87108",
+      "phone": "(505) 254-4500",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTRAL DESERT BEHAVIORAL HEALTH HOSPITAL",
+      "address": "1525 N RENAISSANCE BLVD NE",
+      "city": "ALBUQUERQUE",
+      "state": "NM",
+      "zip": "87102",
+      "phone": "(505) 243-3387",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARTESIA": [
+    {
+      "name": "ARTESIA GENERAL HOSPITAL",
+      "address": "702 N 13TH STREET",
+      "city": "ARTESIA",
+      "state": "NM",
+      "zip": "88210",
+      "phone": "(575) 748-3333",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARLSBAD": [
+    {
+      "name": "CARLSBAD MEDICAL CENTER",
+      "address": "2430 WEST PIERCE STREET",
+      "city": "CARLSBAD",
+      "state": "NM",
+      "zip": "88220",
+      "phone": "(575) 887-4570",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLAYTON": [
+    {
+      "name": "UNION COUNTY GENERAL HOSPITAL",
+      "address": "300 WILSON STREET",
+      "city": "CLAYTON",
+      "state": "NM",
+      "zip": "88415",
+      "phone": "(575) 374-7001",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLOVIS": [
+    {
+      "name": "PLAINS REGIONAL MEDICAL CENTER",
+      "address": "2100 N MARTIN LUTHER KING, JR, BLVD",
+      "city": "CLOVIS",
+      "state": "NM",
+      "zip": "88101",
+      "phone": "(575) 769-6332",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CROWNPOINT": [
+    {
+      "name": "CROWNPOINT HEALTHCARE FACILITY",
+      "address": "JUNCTION OF HWY 371",
+      "city": "CROWNPOINT",
+      "state": "NM",
+      "zip": "87313",
+      "phone": "(505) 786-5291",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEMING": [
+    {
+      "name": "MIMBRES MEMORIAL HOSPITAL",
+      "address": "900 W Ash Street",
+      "city": "DEMING",
+      "state": "NM",
+      "zip": "88031",
+      "phone": "(575) 546-5803",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ESPANOLA": [
+    {
+      "name": "PRESBYTERIAN ESPANOLA HOSPITAL",
+      "address": "1010 SPRUCE STREET",
+      "city": "ESPANOLA",
+      "state": "NM",
+      "zip": "87532",
+      "phone": "(505) 753-1502",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FARMINGTON": [
+    {
+      "name": "SAN JUAN REGIONAL MEDICAL CENTER INC",
+      "address": "801 WEST MAPLE STREET",
+      "city": "FARMINGTON",
+      "state": "NM",
+      "zip": "87401",
+      "phone": "(505) 609-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GALLUP": [
+    {
+      "name": "GALLUP INDIAN MEDICAL CENTER",
+      "address": "516 E NIZHONI BLVD",
+      "city": "GALLUP",
+      "state": "NM",
+      "zip": "87301",
+      "phone": "(505) 722-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "REHOBOTH MCKINLEY CHRISTIAN HEALTH CARE SERVICES",
+      "address": "1901 RED ROCK DRIVE",
+      "city": "GALLUP",
+      "state": "NM",
+      "zip": "87301",
+      "phone": "(505) 863-7000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRANTS": [
+    {
+      "name": "CIBOLA GENERAL HOSPITAL",
+      "address": "1016 E ROOSEVELT AVENUE",
+      "city": "GRANTS",
+      "state": "NM",
+      "zip": "87020",
+      "phone": "(505) 287-5300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOBBS": [
+    {
+      "name": "COVENANT HEALTH HOBBS HOSPITAL",
+      "address": "5419 N LOVINGTON HIGHWAY",
+      "city": "HOBBS",
+      "state": "NM",
+      "zip": "88240",
+      "phone": "(575) 492-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAS CRUCES": [
+    {
+      "name": "MEMORIAL MEDICAL CENTER",
+      "address": "2450 SOUTH TELSHOR BLVD",
+      "city": "LAS CRUCES",
+      "state": "NM",
+      "zip": "88011",
+      "phone": "(575) 522-8641",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MOUNTAIN VIEW REGIONAL MEDICAL CENTER",
+      "address": "4311 EAST LOHMAN AVENUE",
+      "city": "LAS CRUCES",
+      "state": "NM",
+      "zip": "88011",
+      "phone": "(575) 556-7610",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THREE CROSSES REGIONAL HOSPITAL LLC",
+      "address": "2560 SAMARITAN DRIVE",
+      "city": "LAS CRUCES",
+      "state": "NM",
+      "zip": "88001",
+      "phone": "(575) 421-8274",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BHC MESILLA VALLEY HOSPITAL, LLC",
+      "address": "3751 DEL REY BOULEVARD",
+      "city": "LAS CRUCES",
+      "state": "NM",
+      "zip": "88012",
+      "phone": "(575) 382-6614",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAS VEGAS": [
+    {
+      "name": "ALTA VISTA REGIONAL HOSPITAL",
+      "address": "104 LEGION DRIVE",
+      "city": "LAS VEGAS",
+      "state": "NM",
+      "zip": "87701",
+      "phone": "(505) 426-3930",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOS ALAMOS": [
+    {
+      "name": "LOS ALAMOS MEDICAL CENTER",
+      "address": "3917 WEST ROAD",
+      "city": "LOS ALAMOS",
+      "state": "NM",
+      "zip": "87544",
+      "phone": "(505) 662-4201",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOVINGTON": [
+    {
+      "name": "NOR-LEA HOSPITAL DISTRICT",
+      "address": "1600 NORTH MAIN AVE",
+      "city": "LOVINGTON",
+      "state": "NM",
+      "zip": "88260",
+      "phone": "(575) 396-6611",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORTALES": [
+    {
+      "name": "ROOSEVELT GENERAL HOSPITAL",
+      "address": "42121 US HIGHWAY 70",
+      "city": "PORTALES",
+      "state": "NM",
+      "zip": "88130",
+      "phone": "(575) 356-3412",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RATON": [
+    {
+      "name": "MINERS' COLFAX MEDICAL CENTER",
+      "address": "203 HOSPITAL DRIVE",
+      "city": "RATON",
+      "state": "NM",
+      "zip": "87740",
+      "phone": "(575) 445-3661",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROSWELL": [
+    {
+      "name": "EASTERN NEW MEXICO MEDICAL CENTER",
+      "address": "405 W COUNTRY CLUB ROAD",
+      "city": "ROSWELL",
+      "state": "NM",
+      "zip": "88201",
+      "phone": "(575) 624-8722",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LOVELACE REGIONAL HOSPITAL - ROSWELL",
+      "address": "117 EAST 19TH STREET",
+      "city": "ROSWELL",
+      "state": "NM",
+      "zip": "88201",
+      "phone": "(575) 625-3345",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RUIDOSO": [
+    {
+      "name": "LINCOLN COUNTY MEDICAL CENTER",
+      "address": "211 SUDDERTH DRIVE",
+      "city": "RUIDOSO",
+      "state": "NM",
+      "zip": "88345",
+      "phone": "(575) 257-2800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANTA FE": [
+    {
+      "name": "CHRISTUS ST VINCENT REGIONAL MEDICAL CENTER",
+      "address": "455 ST MICHAEL'S DRIVE",
+      "city": "SANTA FE",
+      "state": "NM",
+      "zip": "87505",
+      "phone": "(505) 913-3361",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SANTA FE PHS INDIAN HOSPITAL",
+      "address": "1700 CERRILLOS ROAD",
+      "city": "SANTA FE",
+      "state": "NM",
+      "zip": "87501",
+      "phone": "(505) 988-9821",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PRESBYTERIAN SANTA FE MEDICAL CENTER",
+      "address": "4801 BECKNER ROAD",
+      "city": "SANTA FE",
+      "state": "NM",
+      "zip": "87507",
+      "phone": "(505) 772-6216",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANTA ROSA": [
+    {
+      "name": "GUADALUPE COUNTY HOSPITAL",
+      "address": "117 CAMINO DE VIDA, SUITE 100",
+      "city": "SANTA ROSA",
+      "state": "NM",
+      "zip": "88435",
+      "phone": "(575) 472-3417",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANTA TERESA": [
+    {
+      "name": "PEAK BEHAVIORAL HEALTH SERVICES, LLC",
+      "address": "5045 MCNUTT ROAD (BLDG'S A, B, C & D)",
+      "city": "SANTA TERESA",
+      "state": "NM",
+      "zip": "88008",
+      "phone": "(575) 589-3000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHIPROCK": [
+    {
+      "name": "NORTHERN NAVAJO MEDICAL CENTER",
+      "address": "US HWY 491 NORTH",
+      "city": "SHIPROCK",
+      "state": "NM",
+      "zip": "87420",
+      "phone": "(505) 368-6001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SILVER CITY": [
+    {
+      "name": "GILA REGIONAL MEDICAL CENTER",
+      "address": "1313 E 32ND ST",
+      "city": "SILVER CITY",
+      "state": "NM",
+      "zip": "88061",
+      "phone": "(575) 538-4100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOCORRO": [
+    {
+      "name": "SOCORRO GENERAL HOSPITAL",
+      "address": "1202 HIGHWAY 60 WEST",
+      "city": "SOCORRO",
+      "state": "NM",
+      "zip": "87801",
+      "phone": "(575) 835-1140",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "T OR C": [
+    {
+      "name": "SIERRA VISTA HOSPITAL",
+      "address": "800 EAST 9TH AVENUE",
+      "city": "T OR C",
+      "state": "NM",
+      "zip": "87901",
+      "phone": "(575) 894-2111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TAOS": [
+    {
+      "name": "HOLY CROSS HOSPITAL A DIV OF TAOS HEALTH SYSTEMS",
+      "address": "1397 WEIMER ROAD",
+      "city": "TAOS",
+      "state": "NM",
+      "zip": "87571",
+      "phone": "(575) 758-8883",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TUCUMCARI": [
+    {
+      "name": "DR DAN C TRIGG MEMORIAL HOSPITAL",
+      "address": "301 EAST MIEL DE LUNA AVENUE",
+      "city": "TUCUMCARI",
+      "state": "NM",
+      "zip": "88401",
+      "phone": "(575) 461-7007",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ZUNI": [
+    {
+      "name": "ZUNI COMPREHENSIVE COMMUNITY HEALTH CENTER",
+      "address": "ROUTE 301 NORTH B STREET",
+      "city": "ZUNI",
+      "state": "NM",
+      "zip": "87327",
+      "phone": "(505) 782-4431",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

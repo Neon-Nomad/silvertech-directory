@@ -1,0 +1,697 @@
+{
+  "ASHLEY": [
+    {
+      "name": "ASHLEY MEDICAL CENTER",
+      "address": "612 CENTER AVENUE N",
+      "city": "ASHLEY",
+      "state": "ND",
+      "zip": "58413",
+      "phone": "(701) 288-3433",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELCOURT": [
+    {
+      "name": "P H S INDIAN HOSP AT BELCOURT-QUENTIN N BURDICK",
+      "address": "PO BOX 160",
+      "city": "BELCOURT",
+      "state": "ND",
+      "zip": "58316",
+      "phone": "(701) 477-6111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BISMARCK": [
+    {
+      "name": "CHI ST ALEXIUS HEALTH",
+      "address": "900 E BROADWAY",
+      "city": "BISMARCK",
+      "state": "ND",
+      "zip": "58501",
+      "phone": "(701) 530-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SANFORD MEDICAL CENTER BISMARCK",
+      "address": "300 N 7TH ST",
+      "city": "BISMARCK",
+      "state": "ND",
+      "zip": "58506",
+      "phone": "(701) 323-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOTTINEAU": [
+    {
+      "name": "ST ANDREW'S HOSPITAL",
+      "address": "316 OHMER STREET",
+      "city": "BOTTINEAU",
+      "state": "ND",
+      "zip": "58318",
+      "phone": "(701) 228-9300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOWMAN": [
+    {
+      "name": "SOUTHWEST HEALTHCARE SERVICES",
+      "address": "802 2ND ST NW",
+      "city": "BOWMAN",
+      "state": "ND",
+      "zip": "58623",
+      "phone": "(701) 523-6555",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CANDO": [
+    {
+      "name": "TOWNER COUNTY MEDICAL CENTER",
+      "address": "7448 HWY 281 N",
+      "city": "CANDO",
+      "state": "ND",
+      "zip": "58324",
+      "phone": "(701) 968-4411",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARRINGTON": [
+    {
+      "name": "CARRINGTON HEALTH CENTER",
+      "address": "PO BOX 461",
+      "city": "CARRINGTON",
+      "state": "ND",
+      "zip": "58421",
+      "phone": "(701) 652-3141",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAVALIER": [
+    {
+      "name": "PEMBINA COUNTY MEMORIAL HOSPITAL",
+      "address": "BOX 380",
+      "city": "CAVALIER",
+      "state": "ND",
+      "zip": "58220",
+      "phone": "(701) 265-8461",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COOPERSTOWN": [
+    {
+      "name": "COOPERSTOWN MEDICAL CENTER",
+      "address": "1200 ROBERTS AVE NE",
+      "city": "COOPERSTOWN",
+      "state": "ND",
+      "zip": "58425",
+      "phone": "(701) 797-2221",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CROSBY": [
+    {
+      "name": "ST LUKE'S HOSPITAL",
+      "address": "702 1ST ST SW",
+      "city": "CROSBY",
+      "state": "ND",
+      "zip": "58730",
+      "phone": "(701) 965-6384",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEVILS LAKE": [
+    {
+      "name": "CHI ST ALEXIUS HEALTH DEVILS LAKE",
+      "address": "1031 7TH ST NE",
+      "city": "DEVILS LAKE",
+      "state": "ND",
+      "zip": "58301",
+      "phone": "(701) 662-2131",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DICKINSON": [
+    {
+      "name": "CHI ST ALEXIUS HEALTH DICKINSON",
+      "address": "2500 FAIRWAY STREET",
+      "city": "DICKINSON",
+      "state": "ND",
+      "zip": "58601",
+      "phone": "(701) 456-4000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELGIN": [
+    {
+      "name": "JACOBSON MEMORIAL HOSPITAL CARE CENTER",
+      "address": "601 EAST ST N",
+      "city": "ELGIN",
+      "state": "ND",
+      "zip": "58533",
+      "phone": "(701) 584-2792",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FARGO": [
+    {
+      "name": "SANFORD MEDICAL CENTER FARGO",
+      "address": "801 BROADWAY NORTH",
+      "city": "FARGO",
+      "state": "ND",
+      "zip": "58122",
+      "phone": "(701) 234-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FARGO VA MEDICAL CENTER",
+      "address": "2101 ELM STREET",
+      "city": "FARGO",
+      "state": "ND",
+      "zip": "58102",
+      "phone": "(701) 232-3241",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ESSENTIA HEALTH",
+      "address": "3000 32ND AVE SOUTH",
+      "city": "FARGO",
+      "state": "ND",
+      "zip": "58104",
+      "phone": "(701) 364-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PRAIRIE ST JOHN'S",
+      "address": "510 4TH STREET SOUTH",
+      "city": "FARGO",
+      "state": "ND",
+      "zip": "58103",
+      "phone": "(701) 476-7200",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT YATES,": [
+    {
+      "name": "STANDING ROCK SERVICE UNIT",
+      "address": "10 NORTH RIVER ROAD",
+      "city": "FORT YATES,",
+      "state": "ND",
+      "zip": "58538",
+      "phone": "(701) 854-3831",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GARRISON": [
+    {
+      "name": "GARRISON MEMORIAL HOSPITAL",
+      "address": "407 3RD AVE SE",
+      "city": "GARRISON",
+      "state": "ND",
+      "zip": "58540",
+      "phone": "(701) 463-2275",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAFTON": [
+    {
+      "name": "UNITY MEDICAL CENTER",
+      "address": "164 W 13TH STREET",
+      "city": "GRAFTON",
+      "state": "ND",
+      "zip": "58237",
+      "phone": "(701) 352-1620",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAND FORKS": [
+    {
+      "name": "ALTRU HOSPITAL",
+      "address": "1200 S COLUMBIA RD",
+      "city": "GRAND FORKS",
+      "state": "ND",
+      "zip": "58201",
+      "phone": "(701) 780-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARVEY": [
+    {
+      "name": "SMP HEALTH ST ALOISIUS",
+      "address": "325 E BREWSTER ST",
+      "city": "HARVEY",
+      "state": "ND",
+      "zip": "58341",
+      "phone": "(701) 324-4651",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAZEN": [
+    {
+      "name": "SAKAKAWEA MEDICAL CENTER - CAH",
+      "address": "510 8TH AVENUE NE",
+      "city": "HAZEN",
+      "state": "ND",
+      "zip": "58545",
+      "phone": "(701) 748-2225",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HETTINGER": [
+    {
+      "name": "WEST RIVER REGIONAL MEDICAL CENTER",
+      "address": "1000 HIGHWAY 12",
+      "city": "HETTINGER",
+      "state": "ND",
+      "zip": "58639",
+      "phone": "(701) 567-4561",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HILLSBORO": [
+    {
+      "name": "SANFORD HILLSBORO",
+      "address": "12 THIRD STREET SE",
+      "city": "HILLSBORO",
+      "state": "ND",
+      "zip": "58045",
+      "phone": "(701) 636-3200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JAMESTOWN": [
+    {
+      "name": "JAMESTOWN REGIONAL MEDICAL CENTER",
+      "address": "2422 20TH ST SW",
+      "city": "JAMESTOWN",
+      "state": "ND",
+      "zip": "58401",
+      "phone": "(701) 252-1050",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTH DAKOTA STATE HOSPITAL",
+      "address": "2605 CIRCLE DRIVE",
+      "city": "JAMESTOWN",
+      "state": "ND",
+      "zip": "58401",
+      "phone": "(701) 253-3650",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KENMARE": [
+    {
+      "name": "TRINITY KENMARE COMMUNITY HOSPITAL",
+      "address": "PO BOX 697",
+      "city": "KENMARE",
+      "state": "ND",
+      "zip": "58746",
+      "phone": "(701) 385-4296",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LANGDON": [
+    {
+      "name": "CAVALIER COUNTY MEMORIAL HOSPITAL ASSOCIATION",
+      "address": "909 2ND ST",
+      "city": "LANGDON",
+      "state": "ND",
+      "zip": "58249",
+      "phone": "(701) 256-6100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LINTON": [
+    {
+      "name": "LINTON HOSPITAL - CAH",
+      "address": "111 ELM AVE W",
+      "city": "LINTON",
+      "state": "ND",
+      "zip": "58552",
+      "phone": "(701) 254-4511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LISBON": [
+    {
+      "name": "LISBON AREA HEALTH SERVICES",
+      "address": "905 MAIN ST",
+      "city": "LISBON",
+      "state": "ND",
+      "zip": "58054",
+      "phone": "(701) 683-6400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAYVILLE": [
+    {
+      "name": "SANFORD MAYVILLE",
+      "address": "42 6TH AVENUE SE",
+      "city": "MAYVILLE",
+      "state": "ND",
+      "zip": "58257",
+      "phone": "(701) 788-3800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MCVILLE": [
+    {
+      "name": "NELSON COUNTY HEALTH SYSTEM",
+      "address": "200 N MAIN ST",
+      "city": "MCVILLE",
+      "state": "ND",
+      "zip": "58254",
+      "phone": "(701) 322-4328",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MINOT": [
+    {
+      "name": "TRINITY HOSPITALS",
+      "address": "407 3RD ST SE",
+      "city": "MINOT",
+      "state": "ND",
+      "zip": "58701",
+      "phone": "(701) 857-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTHWOOD": [
+    {
+      "name": "NORTHWOOD DEACONESS HEALTH CENTER",
+      "address": "PO BOX 190",
+      "city": "NORTHWOOD",
+      "state": "ND",
+      "zip": "58267",
+      "phone": "(701) 587-6060",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OAKES": [
+    {
+      "name": "CHI OAKES HOSPITAL",
+      "address": "1200 N 7TH ST",
+      "city": "OAKES",
+      "state": "ND",
+      "zip": "58474",
+      "phone": "(701) 742-3291",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARK RIVER": [
+    {
+      "name": "FIRST CARE HEALTH CENTER",
+      "address": "115 VIVIAN ST",
+      "city": "PARK RIVER",
+      "state": "ND",
+      "zip": "58270",
+      "phone": "(701) 284-7500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROLLA": [
+    {
+      "name": "PRESENTATION MEDICAL CENTER",
+      "address": "213 SECOND AVE NE",
+      "city": "ROLLA",
+      "state": "ND",
+      "zip": "58367",
+      "phone": "(701) 477-3161",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RUGBY": [
+    {
+      "name": "HEART OF AMERICA MEDICAL CENTER",
+      "address": "800 S MAIN AVE",
+      "city": "RUGBY",
+      "state": "ND",
+      "zip": "58368",
+      "phone": "(701) 776-5261",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STANLEY": [
+    {
+      "name": "MOUNTRAIL COUNTY MEDICAL CENTER INC",
+      "address": "615 6TH ST SE",
+      "city": "STANLEY",
+      "state": "ND",
+      "zip": "58784",
+      "phone": "(701) 628-2424",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TIOGA": [
+    {
+      "name": "TIOGA MEDICAL CENTER",
+      "address": "810 N WELO ST",
+      "city": "TIOGA",
+      "state": "ND",
+      "zip": "58852",
+      "phone": "(701) 664-3305",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TURTLE LAKE": [
+    {
+      "name": "CHI ST ALEXIUS HEALTH TURTLE LAKE",
+      "address": "220 5TH AVE W",
+      "city": "TURTLE LAKE",
+      "state": "ND",
+      "zip": "58575",
+      "phone": "(701) 448-2331",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VALLEY CITY": [
+    {
+      "name": "CHI MERCY HEALTH",
+      "address": "570 CHAUTAUQUA BLVD",
+      "city": "VALLEY CITY",
+      "state": "ND",
+      "zip": "58072",
+      "phone": "(701) 845-6400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WATFORD CITY": [
+    {
+      "name": "MCKENZIE COUNTY HEALTHCARE SYSTEMS INC",
+      "address": "709 4TH AVE NE",
+      "city": "WATFORD CITY",
+      "state": "ND",
+      "zip": "58854",
+      "phone": "(701) 842-3000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILLISTON": [
+    {
+      "name": "CHI ST ALEXIUS HEALTH WILLISTON",
+      "address": "1301 15TH AVE W",
+      "city": "WILLISTON",
+      "state": "ND",
+      "zip": "58801",
+      "phone": "(701) 774-7400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WISHEK": [
+    {
+      "name": "SOUTH CENTRAL HEALTH",
+      "address": "1007 4TH AVE S",
+      "city": "WISHEK",
+      "state": "ND",
+      "zip": "58495",
+      "phone": "(701) 452-2326",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

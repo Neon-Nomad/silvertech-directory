@@ -1,0 +1,2780 @@
+{
+  "AKRON": [
+    {
+      "name": "SUMMA HEALTH SYSTEM",
+      "address": "525 EAST MARKET STREET",
+      "city": "AKRON",
+      "state": "OH",
+      "zip": "44309",
+      "phone": "(330) 375-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AKRON GENERAL MEDICAL CENTER",
+      "address": "1 AKRON GENERAL AVENUE",
+      "city": "AKRON",
+      "state": "OH",
+      "zip": "44307",
+      "phone": "(330) 344-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CRYSTAL CLINIC ORTHOPAEDIC CENTER",
+      "address": "444 NORTH MAIN STREET",
+      "city": "AKRON",
+      "state": "OH",
+      "zip": "44310",
+      "phone": "(330) 670-4152",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AKRON CHILDREN'S HOSPITAL",
+      "address": "1 PERKINS SQUARE",
+      "city": "AKRON",
+      "state": "OH",
+      "zip": "44308",
+      "phone": "(330) 543-8290",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALLIANCE": [
+    {
+      "name": "ALLIANCE COMMUNITY HOSPITAL",
+      "address": "200 EAST STATE STREET",
+      "city": "ALLIANCE",
+      "state": "OH",
+      "zip": "44601",
+      "phone": "(330) 596-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ASHLAND": [
+    {
+      "name": "UNIVERSITY HOSPITALS SAMARITAN MEDICAL CENTER",
+      "address": "1025 CENTER ST",
+      "city": "ASHLAND",
+      "state": "OH",
+      "zip": "44805",
+      "phone": "(419) 289-0491",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ASHTABULA": [
+    {
+      "name": "ASHTABULA COUNTY MEDICAL CENTER",
+      "address": "2420 LAKE AVENUE",
+      "city": "ASHTABULA",
+      "state": "OH",
+      "zip": "44004",
+      "phone": "(440) 997-2262",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ATHENS": [
+    {
+      "name": "OHIOHEALTH O'BLENESS HOSPITAL",
+      "address": "55 HOSPITAL DRIVE",
+      "city": "ATHENS",
+      "state": "OH",
+      "zip": "45701",
+      "phone": "(740) 593-5551",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "APPALACHIAN BEHAVIORAL HEALTH CARE",
+      "address": "100 HOSPITAL DRIVE",
+      "city": "ATHENS",
+      "state": "OH",
+      "zip": "45701",
+      "phone": "(740) 594-5000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AVON": [
+    {
+      "name": "CLEVELAND CLINIC AVON HOSPITAL",
+      "address": "33300 CLEVELAND CLINIC BLVD",
+      "city": "AVON",
+      "state": "OH",
+      "zip": "44011",
+      "phone": "(440) 695-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BARNESVILLE": [
+    {
+      "name": "BARNESVILLE HOSPITAL ASSOCIATION, INC",
+      "address": "639 WEST MAIN STREET",
+      "city": "BARNESVILLE",
+      "state": "OH",
+      "zip": "43713",
+      "phone": "(740) 425-3941",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BATAVIA": [
+    {
+      "name": "MERCY HEALTH - CLERMONT HOSPITAL",
+      "address": "3000 HOSPITAL DRIVE",
+      "city": "BATAVIA",
+      "state": "OH",
+      "zip": "45103",
+      "phone": "(513) 732-8278",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEACHWOOD": [
+    {
+      "name": "UNIVERSITY HOSPITALS AHUJA MEDICAL CENTER",
+      "address": "3999 RICHMOND ROAD",
+      "city": "BEACHWOOD",
+      "state": "OH",
+      "zip": "44122",
+      "phone": "(216) 593-5511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LAKE HEALTH BEACHWOOD MEDICAL CENTER",
+      "address": "25501 CHAGRIN BOULEVARD",
+      "city": "BEACHWOOD",
+      "state": "OH",
+      "zip": "44122",
+      "phone": "(216) 545-4800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HIGHLAND SPRINGS",
+      "address": "4199 MILL POND DRIVE",
+      "city": "BEACHWOOD",
+      "state": "OH",
+      "zip": "44122",
+      "phone": "(216) 206-8853",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEAVER CREEK": [
+    {
+      "name": "SOIN MEDICAL CENTER",
+      "address": "3535 PENTAGON PARK BLVD",
+      "city": "BEAVER CREEK",
+      "state": "OH",
+      "zip": "45431",
+      "phone": "(937) 702-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELLEFONTAINE": [
+    {
+      "name": "MARY RUTAN HOSPITAL",
+      "address": "205 PALMER AVENUE",
+      "city": "BELLEFONTAINE",
+      "state": "OH",
+      "zip": "43311",
+      "phone": "(937) 651-3257",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELLEVUE": [
+    {
+      "name": "BELLEVUE HOSPITAL",
+      "address": "1400 WEST MAIN STREET",
+      "city": "BELLEVUE",
+      "state": "OH",
+      "zip": "44811",
+      "phone": "(419) 483-4040",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLUFFTON": [
+    {
+      "name": "BLUFFTON HOSPITAL",
+      "address": "139 GARAU STREET",
+      "city": "BLUFFTON",
+      "state": "OH",
+      "zip": "45817",
+      "phone": "(419) 358-9010",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOARDMAN": [
+    {
+      "name": "HMHP ST ELIZABETH BOARDMAN HEALTH CENTER",
+      "address": "8401 MARKET STREET",
+      "city": "BOARDMAN",
+      "state": "OH",
+      "zip": "44512",
+      "phone": "(330) 729-2929",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOWLING GREEN": [
+    {
+      "name": "WOOD COUNTY HOSPITAL",
+      "address": "950 WEST WOOSTER STREET",
+      "city": "BOWLING GREEN",
+      "state": "OH",
+      "zip": "43402",
+      "phone": "(419) 354-8900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRYAN": [
+    {
+      "name": "COMMUNITY HOSPITALS AND WELLNESS CENTERS",
+      "address": "433 WEST HIGH STREET",
+      "city": "BRYAN",
+      "state": "OH",
+      "zip": "43506",
+      "phone": "(419) 636-1131",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BUCYRUS": [
+    {
+      "name": "BUCYRUS COMMUNITY HOSPITAL",
+      "address": "629 NORTH SANDUSKY AVENUE",
+      "city": "BUCYRUS",
+      "state": "OH",
+      "zip": "44820",
+      "phone": "(419) 563-9376",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CADIZ": [
+    {
+      "name": "HARRISON COMMUNITY HOSPITAL",
+      "address": "951 EAST MARKET STREET",
+      "city": "CADIZ",
+      "state": "OH",
+      "zip": "43907",
+      "phone": "(740) 942-8625",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAMBRIDGE": [
+    {
+      "name": "SOUTHEASTERN OHIO REGIONAL MEDICAL CENTER",
+      "address": "1341 NORTH CLARK STREET",
+      "city": "CAMBRIDGE",
+      "state": "OH",
+      "zip": "43725",
+      "phone": "(740) 439-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CANAL WINCHESTER": [
+    {
+      "name": "DILEY RIDGE MEDICAL CENTER",
+      "address": "7911 DILEY ROAD",
+      "city": "CANAL WINCHESTER",
+      "state": "OH",
+      "zip": "43110",
+      "phone": "(614) 838-7911",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CANTON": [
+    {
+      "name": "MERCY MEDICAL CENTER",
+      "address": "1320 MERCY DRIVE NW",
+      "city": "CANTON",
+      "state": "OH",
+      "zip": "44708",
+      "phone": "(330) 489-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AULTMAN HOSPITAL",
+      "address": "2600 SIXTH STREET SW",
+      "city": "CANTON",
+      "state": "OH",
+      "zip": "44710",
+      "phone": "(330) 363-9911",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUNRISE VISTA HEALTH AND WELLNESS",
+      "address": "1223 MARKET AVENUE NORTH",
+      "city": "CANTON",
+      "state": "OH",
+      "zip": "44714",
+      "phone": "(513) 489-7100",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHARDON": [
+    {
+      "name": "UH REGIONAL HOSPITALS",
+      "address": "13207 RAVENNA ROAD",
+      "city": "CHARDON",
+      "state": "OH",
+      "zip": "44024",
+      "phone": "(440) 285-6246",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHILLICOTHE": [
+    {
+      "name": "CHILLICOTHE VA MEDICAL CENTER",
+      "address": "17273 STATE ROUTE 104",
+      "city": "CHILLICOTHE",
+      "state": "OH",
+      "zip": "45601",
+      "phone": "(740) 773-1141",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADENA REGIONAL MEDICAL CENTER",
+      "address": "272 HOSPITAL ROAD",
+      "city": "CHILLICOTHE",
+      "state": "OH",
+      "zip": "45601",
+      "phone": "(740) 779-7500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CINCINNATI": [
+    {
+      "name": "MERCY HEALTH-ANDERSON HOSPITAL",
+      "address": "7500 STATE ROAD",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45255",
+      "phone": "(513) 624-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY OF CINCINNATI MEDICAL CENTER, LLC",
+      "address": "3188 BELLEVUE AVENUE",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45219",
+      "phone": "(513) 584-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE JEWISH HOSPITAL-MERCY HEALTH",
+      "address": "4777 EAST GALBRAITH ROAD",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45236",
+      "phone": "(513) 686-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CINCINNATI VA MEDICAL CENTER",
+      "address": "3200 VINE STREET",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45220",
+      "phone": "(513) 861-3100",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GOOD SAMARITAN HOSPITAL",
+      "address": "375 DIXMYTH AVENUE",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45220",
+      "phone": "(513) 862-2601",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHRIST HOSPITAL",
+      "address": "2139 AUBURN AVENUE",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45219",
+      "phone": "(513) 585-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BETHESDA NORTH",
+      "address": "10500 MONTGOMERY ROAD",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45242",
+      "phone": "(513) 865-5544",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MERCY HEALTH - WEST HOSPITAL",
+      "address": "3300 MERCY HEALTH BLVD",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45211",
+      "phone": "(513) 215-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CINCINNATI CHILDREN'S HOSPITAL MEDICAL CENTER",
+      "address": "3333 BURNET AVENUE",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45229",
+      "phone": "(513) 636-3333",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUMMIT BEHAVIORAL HEALTHCARE",
+      "address": "1101 SUMMIT ROAD",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45237",
+      "phone": "(513) 948-3940",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASSURANCE HEALTH CINCINNATI LLC",
+      "address": "11690 GROOMS ROAD",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45242",
+      "phone": "(513) 469-7800",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BLUERIDGE VISTA HEALTH AND WELLNESS",
+      "address": "5500 VERULAM AVENUE",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45213",
+      "phone": "(513) 841-3001",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GLENWOOD BEHAVIORAL HEALTH HOSPITAL",
+      "address": "2446 KIPLING AVENUE",
+      "city": "CINCINNATI",
+      "state": "OH",
+      "zip": "45239",
+      "phone": "(615) 861-7566",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CIRCLEVILLE": [
+    {
+      "name": "BERGER HOSPITAL",
+      "address": "600 NORTH PICKAWAY STREET",
+      "city": "CIRCLEVILLE",
+      "state": "OH",
+      "zip": "43113",
+      "phone": "(740) 420-8008",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLEVELAND": [
+    {
+      "name": "LOUIS STOKES CLEVELAND VA MEDICAL CENTER",
+      "address": "10701 EAST BLVD",
+      "city": "CLEVELAND",
+      "state": "OH",
+      "zip": "44106",
+      "phone": "(216) 791-3800",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "METROHEALTH SYSTEM",
+      "address": "2500 METROHEALTH DRIVE",
+      "city": "CLEVELAND",
+      "state": "OH",
+      "zip": "44109",
+      "phone": "(216) 778-7089",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FAIRVIEW HOSPITAL",
+      "address": "18101 LORAIN AVENUE",
+      "city": "CLEVELAND",
+      "state": "OH",
+      "zip": "44111",
+      "phone": "(216) 476-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LUTHERAN HOSPITAL",
+      "address": "1730 WEST 25TH STREET",
+      "city": "CLEVELAND",
+      "state": "OH",
+      "zip": "44113",
+      "phone": "(216) 696-4300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UH CLEVELAND MEDICAL CENTER",
+      "address": "11100 EUCLID AVENUE",
+      "city": "CLEVELAND",
+      "state": "OH",
+      "zip": "44106",
+      "phone": "(216) 844-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CLEVELAND CLINIC",
+      "address": "9500 EUCLID AVENUE",
+      "city": "CLEVELAND",
+      "state": "OH",
+      "zip": "44195",
+      "phone": "(216) 952-9829",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RAINBOW BABIES AND CHILDRENS HOSPITAL",
+      "address": "11100 EUCLID AVENUE",
+      "city": "CLEVELAND",
+      "state": "OH",
+      "zip": "44106",
+      "phone": "(216) 844-1000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CLEVELAND CLINIC CHILDREN'S HOSPITAL FOR REHAB",
+      "address": "2801 MARTIN LUTHER KING, JR DRIVE",
+      "city": "CLEVELAND",
+      "state": "OH",
+      "zip": "44104",
+      "phone": "(216) 448-6400",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLDWATER": [
+    {
+      "name": "MERCER COUNTY JOINT TOWNSHIP COMMUNITY HOSPITAL",
+      "address": "800 WEST MAIN STREET",
+      "city": "COLDWATER",
+      "state": "OH",
+      "zip": "45828",
+      "phone": "(419) 678-4843",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUMBUS": [
+    {
+      "name": "RIVERSIDE METHODIST HOSPITAL",
+      "address": "3535 OLENTANGY RIVER RD",
+      "city": "COLUMBUS",
+      "state": "OH",
+      "zip": "43214",
+      "phone": "(614) 566-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GRANT MEDICAL CENTER",
+      "address": "111 SOUTH GRANT AVENUE",
+      "city": "COLUMBUS",
+      "state": "OH",
+      "zip": "43215",
+      "phone": "(614) 566-9164",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MOUNT CARMEL EAST & WEST",
+      "address": "6001 EAST BROAD STREET",
+      "city": "COLUMBUS",
+      "state": "OH",
+      "zip": "43213",
+      "phone": "(614) 234-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OHIO STATE UNIVERSITY STATE HEALTH SYSTEM",
+      "address": "410 WEST 10TH AVENUE",
+      "city": "COLUMBUS",
+      "state": "OH",
+      "zip": "43210",
+      "phone": "(614) 293-9700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DOCTORS HOSPITAL",
+      "address": "5100 WEST  BROAD STREET",
+      "city": "COLUMBUS",
+      "state": "OH",
+      "zip": "43228",
+      "phone": "(614) 544-2136",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NATIONWIDE CHILDREN'S HOSPITAL",
+      "address": "700 CHILDREN'S DRIVE",
+      "city": "COLUMBUS",
+      "state": "OH",
+      "zip": "43205",
+      "phone": "(614) 722-2000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TWIN VALLEY BEHAVIORAL HEALTHCARE",
+      "address": "2200 WEST BROAD STREET",
+      "city": "COLUMBUS",
+      "state": "OH",
+      "zip": "43223",
+      "phone": "(614) 752-0333",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OHIO HOSPITAL FOR PSYCHIATRY",
+      "address": "880 GREENLAWN AVENUE",
+      "city": "COLUMBUS",
+      "state": "OH",
+      "zip": "43223",
+      "phone": "(614) 449-9664",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUN BEHAVIORAL COLUMBUS",
+      "address": "900 EAST DUBLIN GRANVILLE ROAD",
+      "city": "COLUMBUS",
+      "state": "OH",
+      "zip": "43229",
+      "phone": "(614) 706-2786",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIVER VISTA HEALTH AND WELLNESS LLC",
+      "address": "1599 ALUM CREEK DRIVE",
+      "city": "COLUMBUS",
+      "state": "OH",
+      "zip": "43209",
+      "phone": "(614) 643-5454",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MOUNT CARMEL BEHAVIORAL HEALTH",
+      "address": "4646 HILTON CORP0RATE DRIVE",
+      "city": "COLUMBUS",
+      "state": "OH",
+      "zip": "43232",
+      "phone": "(614) 852-4680",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CONCORD": [
+    {
+      "name": "LAKE HEALTH",
+      "address": "7590 AUBURN ROAD",
+      "city": "CONCORD",
+      "state": "OH",
+      "zip": "44077",
+      "phone": "(440) 953-9600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CONNEAUT": [
+    {
+      "name": "UNIVERSITY HOSPITALS CONNEAUT MEDICAL CENTER",
+      "address": "158 WEST MAIN ROAD",
+      "city": "CONNEAUT",
+      "state": "OH",
+      "zip": "44030",
+      "phone": "(440) 593-1131",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COSHOCTON": [
+    {
+      "name": "COSHOCTON REGIONAL MEDICAL CENTER",
+      "address": "1460 ORANGE STREET",
+      "city": "COSHOCTON",
+      "state": "OH",
+      "zip": "43812",
+      "phone": "(740) 622-6411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CUYAHOGA FALLS": [
+    {
+      "name": "SUMMA WESTERN RESERVE HOSPITAL",
+      "address": "1900 23RD STREET",
+      "city": "CUYAHOGA FALLS",
+      "state": "OH",
+      "zip": "44223",
+      "phone": "(330) 971-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAYTON": [
+    {
+      "name": "MIAMI VALLEY HOSPITAL",
+      "address": "ONE WYOMING STREET",
+      "city": "DAYTON",
+      "state": "OH",
+      "zip": "45409",
+      "phone": "(937) 208-3023",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DAYTON VA MEDICAL CENTER",
+      "address": "4100 WEST THIRD STREET",
+      "city": "DAYTON",
+      "state": "OH",
+      "zip": "45428",
+      "phone": "(937) 268-6511",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KETTERING HEALTH DAYTON",
+      "address": "405 GRAND AVENUE",
+      "city": "DAYTON",
+      "state": "OH",
+      "zip": "45405",
+      "phone": "(937) 723-3410",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DAYTON CHILDRENS HOSPITAL",
+      "address": "1 CHILDRENS PLZ",
+      "city": "DAYTON",
+      "state": "OH",
+      "zip": "45404",
+      "phone": "(937) 641-5509",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHRINERS HOSPITALS FOR CHILDREN",
+      "address": "1 CHILDREN'S PLAZA, 2 WEST",
+      "city": "DAYTON",
+      "state": "OH",
+      "zip": "45404",
+      "phone": "(513) 872-6000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HAVEN BEHAVIORAL HOSPITAL OF DAYTON",
+      "address": "ONE ELIZABETH PLACE, SUITE 10B",
+      "city": "DAYTON",
+      "state": "OH",
+      "zip": "45417",
+      "phone": "(937) 234-0151",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ACCESS HOSPITAL DAYTON, LLC",
+      "address": "2611 WAYNE AVENUE",
+      "city": "DAYTON",
+      "state": "OH",
+      "zip": "45420",
+      "phone": "(937) 256-7801",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEFIANCE": [
+    {
+      "name": "MERCY HEALTH - DEFIANCE HOSPITAL",
+      "address": "1404 EAST SECOND STREET",
+      "city": "DEFIANCE",
+      "state": "OH",
+      "zip": "43512",
+      "phone": "(419) 782-8444",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PROMEDICA DEFIANCE REGIONAL HOSPITAL",
+      "address": "1200 RALSTON AVENUE",
+      "city": "DEFIANCE",
+      "state": "OH",
+      "zip": "43512",
+      "phone": "(419) 783-6955",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DELAWARE": [
+    {
+      "name": "GRADY MEMORIAL HOSPITAL",
+      "address": "561 WEST CENTRAL AVENUE",
+      "city": "DELAWARE",
+      "state": "OH",
+      "zip": "43015",
+      "phone": "(740) 368-5145",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DENNISON": [
+    {
+      "name": "TWIN CITY MEDICAL CENTER",
+      "address": "819 NORTH FIRST STREET",
+      "city": "DENNISON",
+      "state": "OH",
+      "zip": "44621",
+      "phone": "(740) 922-2800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DOVER": [
+    {
+      "name": "UNION HOSPITAL",
+      "address": "659 BOULEVARD",
+      "city": "DOVER",
+      "state": "OH",
+      "zip": "44622",
+      "phone": "(330) 343-3311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DUBLIN": [
+    {
+      "name": "DUBLIN METHODIST HOSPITAL",
+      "address": "7500 HOSPITAL AVENUE",
+      "city": "DUBLIN",
+      "state": "OH",
+      "zip": "43016",
+      "phone": "(614) 544-8273",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DUBLIN SPRINGS",
+      "address": "7625 HOSPITAL DRIVE",
+      "city": "DUBLIN",
+      "state": "OH",
+      "zip": "43016",
+      "phone": "(614) 717-1800",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EAST LIVERPOOL": [
+    {
+      "name": "EAST LIVERPOOL CITY HOSPITAL",
+      "address": "425 WEST 5TH STREET",
+      "city": "EAST LIVERPOOL",
+      "state": "OH",
+      "zip": "43920",
+      "phone": "(330) 385-7200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELYRIA": [
+    {
+      "name": "UNIVERSITY HOSPITALS - ELYRIA MEDICAL CENTER",
+      "address": "630 EAST RIVER STREET",
+      "city": "ELYRIA",
+      "state": "OH",
+      "zip": "44035",
+      "phone": "(440) 329-7500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EUCLID": [
+    {
+      "name": "EUCLID HOSPITAL",
+      "address": "18901 LAKE SHORE BOULEVARD",
+      "city": "EUCLID",
+      "state": "OH",
+      "zip": "44119",
+      "phone": "(216) 531-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAIRFIELD": [
+    {
+      "name": "MERCY HEALTH - FAIRFIELD HOSPITAL",
+      "address": "3000 MACK ROAD",
+      "city": "FAIRFIELD",
+      "state": "OH",
+      "zip": "45014",
+      "phone": "(513) 870-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FINDLAY": [
+    {
+      "name": "BLANCHARD VALLEY HOSPITAL",
+      "address": "1900 SOUTH MAIN STREET",
+      "city": "FINDLAY",
+      "state": "OH",
+      "zip": "45840",
+      "phone": "(419) 423-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FOSTORIA": [
+    {
+      "name": "FOSTORIA COMMUNITY HOSPITAL",
+      "address": "501 VAN BUREN STREET",
+      "city": "FOSTORIA",
+      "state": "OH",
+      "zip": "44830",
+      "phone": "(419) 435-7734",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRANKLIN": [
+    {
+      "name": "ATRIUM MEDICAL CENTER",
+      "address": "ONE MEDICAL CENTER DRIVE",
+      "city": "FRANKLIN",
+      "state": "OH",
+      "zip": "45005",
+      "phone": "(513) 420-5102",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FREMONT": [
+    {
+      "name": "MEMORIAL HOSPITAL",
+      "address": "715 SOUTH TAFT AVENUE",
+      "city": "FREMONT",
+      "state": "OH",
+      "zip": "43420",
+      "phone": "(419) 334-6617",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GALION": [
+    {
+      "name": "GALION COMMUNITY HOSPITAL",
+      "address": "269 PORTLAND WAY SOUTH",
+      "city": "GALION",
+      "state": "OH",
+      "zip": "44833",
+      "phone": "(419) 468-4841",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GALLIPOLIS": [
+    {
+      "name": "HOLZER MEDICAL CENTER",
+      "address": "100 JACKSON PIKE",
+      "city": "GALLIPOLIS",
+      "state": "OH",
+      "zip": "45631",
+      "phone": "(740) 446-5030",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GARFIELD HEIGHTS": [
+    {
+      "name": "MARYMOUNT HOSPITAL",
+      "address": "12300 MCCRACKEN ROAD",
+      "city": "GARFIELD HEIGHTS",
+      "state": "OH",
+      "zip": "44125",
+      "phone": "(216) 587-8210",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GENEVA": [
+    {
+      "name": "UHHS MEMORIAL HOSPITAL OF GENEVA",
+      "address": "870 WEST MAIN STREET",
+      "city": "GENEVA",
+      "state": "OH",
+      "zip": "44041",
+      "phone": "(440) 415-0151",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GENERATIONS BEHAVIORAL HEALTH - GENEVA",
+      "address": "60 WEST STREET",
+      "city": "GENEVA",
+      "state": "OH",
+      "zip": "44041",
+      "phone": "(440) 491-0155",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GEORGETOWN": [
+    {
+      "name": "GEORGETOWN BEHAVIORAL HOSPITAL",
+      "address": "425 HOME STREET",
+      "city": "GEORGETOWN",
+      "state": "OH",
+      "zip": "45121",
+      "phone": "(937) 483-4933",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENFIELD": [
+    {
+      "name": "GREENFIELD AREA MEDICAL CENTER",
+      "address": "550 MIRABEAU STREET",
+      "city": "GREENFIELD",
+      "state": "OH",
+      "zip": "45123",
+      "phone": "(937) 981-9400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAMILTON": [
+    {
+      "name": "FORT HAMILTON HUGHES MEMORIAL HOSPITAL",
+      "address": "630 EATON AVENUE",
+      "city": "HAMILTON",
+      "state": "OH",
+      "zip": "45013",
+      "phone": "(513) 867-2123",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HILLSBORO": [
+    {
+      "name": "HIGHLAND DISTRICT HOSPITAL",
+      "address": "1275 NORTH HIGH STREET",
+      "city": "HILLSBORO",
+      "state": "OH",
+      "zip": "45133",
+      "phone": "(937) 393-6100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUDSON": [
+    {
+      "name": "ASSURANCE HEALTH HUDSON LLC",
+      "address": "6260 HUDSON CROSSING PKWY",
+      "city": "HUDSON",
+      "state": "OH",
+      "zip": "44236",
+      "phone": "(330) 208-9317",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JACKSON": [
+    {
+      "name": "HOLZER MEDICAL CENTER JACKSON",
+      "address": "500 BURLINGTON ROAD",
+      "city": "JACKSON",
+      "state": "OH",
+      "zip": "45640",
+      "phone": "(740) 395-8500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KENTON": [
+    {
+      "name": "HARDIN MEMORIAL HOSPITAL",
+      "address": "921 EAST FRANKLIN STREET",
+      "city": "KENTON",
+      "state": "OH",
+      "zip": "43326",
+      "phone": "(419) 673-0761",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KETTERING": [
+    {
+      "name": "KETTERING HEALTH MAIN CAMPUS",
+      "address": "3535 SOUTHERN BOULEVARD",
+      "city": "KETTERING",
+      "state": "OH",
+      "zip": "45429",
+      "phone": "(937) 298-4331",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LANCASTER": [
+    {
+      "name": "FAIRFIELD MEDICAL CENTER",
+      "address": "401 NORTH EWING STREET",
+      "city": "LANCASTER",
+      "state": "OH",
+      "zip": "43130",
+      "phone": "(740) 687-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LIMA": [
+    {
+      "name": "LIMA MEMORIAL HEALTH SYSTEM",
+      "address": "1001 BELLEFONTAINE AVENUE",
+      "city": "LIMA",
+      "state": "OH",
+      "zip": "45804",
+      "phone": "(419) 998-4731",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MERCY HEALTH-ST RITA'S MEDICAL CENTER",
+      "address": "730 WEST MARKET STREET",
+      "city": "LIMA",
+      "state": "OH",
+      "zip": "45801",
+      "phone": "(419) 227-3361",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "INSTITUTE FOR ORTHOPAEDIC SURGERY",
+      "address": "801 MEDICAL DRIVE, SUITE B",
+      "city": "LIMA",
+      "state": "OH",
+      "zip": "45804",
+      "phone": "(419) 224-7586",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LODI": [
+    {
+      "name": "LODI COMMUNITY HOSPITAL",
+      "address": "225 ELYRIA STREET",
+      "city": "LODI",
+      "state": "OH",
+      "zip": "44254",
+      "phone": "(330) 948-1222",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOGAN": [
+    {
+      "name": "HOCKING VALLEY COMMUNITY HOSPITAL",
+      "address": "601 STATE ROUTE 664N",
+      "city": "LOGAN",
+      "state": "OH",
+      "zip": "43138",
+      "phone": "(740) 380-8000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LONDON": [
+    {
+      "name": "MADISON HEALTH",
+      "address": "210 NORTH MAIN STREET",
+      "city": "LONDON",
+      "state": "OH",
+      "zip": "43140",
+      "phone": "(740) 845-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LORAIN": [
+    {
+      "name": "MERCY REGIONAL MEDICAL CENTER",
+      "address": "3700 KOLBE ROAD",
+      "city": "LORAIN",
+      "state": "OH",
+      "zip": "44053",
+      "phone": "(440) 960-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CLEAR VISTA HEALTH & WELLNESS",
+      "address": "3364 KOLBE ROAD",
+      "city": "LORAIN",
+      "state": "OH",
+      "zip": "44053",
+      "phone": "(440) 960-7960",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANSFIELD": [
+    {
+      "name": "OHIOHEALTH MANSFIELD HOSPITAL",
+      "address": "335 GLESSNER AVENUE",
+      "city": "MANSFIELD",
+      "state": "OH",
+      "zip": "44903",
+      "phone": "(419) 526-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARIETTA": [
+    {
+      "name": "MARIETTA MEMORIAL HOSPITAL",
+      "address": "401 MATTHEW STREET",
+      "city": "MARIETTA",
+      "state": "OH",
+      "zip": "45750",
+      "phone": "(740) 374-1400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SELBY GENERAL HOSPITAL",
+      "address": "1106 COLEGATE DRIVE",
+      "city": "MARIETTA",
+      "state": "OH",
+      "zip": "45750",
+      "phone": "(740) 568-2000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARION": [
+    {
+      "name": "MARION GENERAL HOSPITAL",
+      "address": "1000 MCKINLEY PARK DRIVE",
+      "city": "MARION",
+      "state": "OH",
+      "zip": "43302",
+      "phone": "(740) 383-8400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARTINS FERRY": [
+    {
+      "name": "EAST OHIO REGIONAL HOSPITAL",
+      "address": "90 NORTH FOURTH STREET",
+      "city": "MARTINS FERRY",
+      "state": "OH",
+      "zip": "43935",
+      "phone": "(740) 633-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARYSVILLE": [
+    {
+      "name": "MEMORIAL HOSPITAL",
+      "address": "500 LONDON AVENUE",
+      "city": "MARYSVILLE",
+      "state": "OH",
+      "zip": "43040",
+      "phone": "(937) 644-6115",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MASON": [
+    {
+      "name": "MERCY HEALTH KINGS MILLS HOSPITAL LLC",
+      "address": "5440 KINGS ISLAND DRIVE",
+      "city": "MASON",
+      "state": "OH",
+      "zip": "45040",
+      "phone": "(513) 637-9999",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LINDNER CENTER OF HOPE",
+      "address": "4075 OLD WESTERN ROW ROAD",
+      "city": "MASON",
+      "state": "OH",
+      "zip": "45040",
+      "phone": "(513) 536-4673",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MASSILLON": [
+    {
+      "name": "HEARTLAND BEHAVIORAL HEALTHCARE",
+      "address": "3000 ERIE SW",
+      "city": "MASSILLON",
+      "state": "OH",
+      "zip": "44648",
+      "phone": "(330) 833-3135",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAUMEE": [
+    {
+      "name": "ARROWHEAD BEHAVIORAL HEALTH",
+      "address": "1725 TIMBER LINE ROAD",
+      "city": "MAUMEE",
+      "state": "OH",
+      "zip": "43537",
+      "phone": "(419) 891-9333",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAYFIELD HEIGHTS": [
+    {
+      "name": "HILLCREST HOSPITAL",
+      "address": "6780 MAYFIELD ROAD",
+      "city": "MAYFIELD HEIGHTS",
+      "state": "OH",
+      "zip": "44124",
+      "phone": "(440) 312-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MEDINA": [
+    {
+      "name": "MEDINA HOSPITAL",
+      "address": "1000 EAST WASHINGTON STREET",
+      "city": "MEDINA",
+      "state": "OH",
+      "zip": "44256",
+      "phone": "(330) 725-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIAMISBURG": [
+    {
+      "name": "KETTERING HEALTH MIAMISBURG",
+      "address": "4000 MIAMISBURG-CENTERVILLE ROAD",
+      "city": "MIAMISBURG",
+      "state": "OH",
+      "zip": "45342",
+      "phone": "(937) 384-8760",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIDDLE POINT": [
+    {
+      "name": "RIDGEVIEW HOSPITAL",
+      "address": "17872 LINCOLN HIGHWAY",
+      "city": "MIDDLE POINT",
+      "state": "OH",
+      "zip": "45863",
+      "phone": "(419) 968-2950",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIDDLEBURG HEIGHTS": [
+    {
+      "name": "SOUTHWEST GENERAL HEALTH CENTER",
+      "address": "18697 BAGLEY ROAD",
+      "city": "MIDDLEBURG HEIGHTS",
+      "state": "OH",
+      "zip": "44130",
+      "phone": "(440) 816-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILLERSBURG": [
+    {
+      "name": "POMERENE HOSPITAL",
+      "address": "981 WOOSTER ROAD",
+      "city": "MILLERSBURG",
+      "state": "OH",
+      "zip": "44654",
+      "phone": "(330) 674-1015",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTPELIER": [
+    {
+      "name": "COMMUNITY HOSPITALS AND WELLNESS CENTERS",
+      "address": "909 EAST SNYDER AVENUE",
+      "city": "MONTPELIER",
+      "state": "OH",
+      "zip": "43543",
+      "phone": "(419) 636-1131",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT GILEAD": [
+    {
+      "name": "OHIOHEALTH MORROW COUNTY HOSPITAL",
+      "address": "651 WEST MARION ROAD",
+      "city": "MOUNT GILEAD",
+      "state": "OH",
+      "zip": "43338",
+      "phone": "(419) 946-5015",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT VERNON": [
+    {
+      "name": "KNOX COMMUNITY HOSPITAL",
+      "address": "1330 COSHOCTON ROAD",
+      "city": "MOUNT VERNON",
+      "state": "OH",
+      "zip": "43050",
+      "phone": "(740) 393-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NAPOLEON": [
+    {
+      "name": "HENRY COUNTY HOSPITAL, INC",
+      "address": "1600 EAST RIVERVIEW AVENUE",
+      "city": "NAPOLEON",
+      "state": "OH",
+      "zip": "43545",
+      "phone": "(419) 592-4015",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW ALBANY": [
+    {
+      "name": "MOUNT CARMEL NEW ALBANY SURGICAL HOSPITAL",
+      "address": "7333 SMITH'S MILL ROAD",
+      "city": "NEW ALBANY",
+      "state": "OH",
+      "zip": "43054",
+      "phone": "(614) 775-6600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWARK": [
+    {
+      "name": "LICKING MEMORIAL HOSPITAL",
+      "address": "1320 WEST MAIN STREET",
+      "city": "NEWARK",
+      "state": "OH",
+      "zip": "43055",
+      "phone": "(740) 348-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTHFIELD": [
+    {
+      "name": "NORTHCOAST BEHAVIORAL HEALTHCARE NORTHFIELD CAMPUS",
+      "address": "1756 SAGAMORE ROAD",
+      "city": "NORTHFIELD",
+      "state": "OH",
+      "zip": "44067",
+      "phone": "(330) 467-7131",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORWALK": [
+    {
+      "name": "FISHER-TITUS HOSPITAL",
+      "address": "272 BENEDICT AVENUE",
+      "city": "NORWALK",
+      "state": "OH",
+      "zip": "44857",
+      "phone": "(419) 668-8101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OBERLIN": [
+    {
+      "name": "MERCY ALLEN HOSPITAL",
+      "address": "200 WEST LORAIN STREET",
+      "city": "OBERLIN",
+      "state": "OH",
+      "zip": "44074",
+      "phone": "(440) 334-7039",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ONTARIO": [
+    {
+      "name": "AVITA ONTARIO",
+      "address": "715 RICHLAND MALL",
+      "city": "ONTARIO",
+      "state": "OH",
+      "zip": "44906",
+      "phone": "(419) 462-4534",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OREGON": [
+    {
+      "name": "BAY PARK COMMUNITY HOSPITAL",
+      "address": "2801 BAY PARK DRIVE",
+      "city": "OREGON",
+      "state": "OH",
+      "zip": "43616",
+      "phone": "(419) 690-7706",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ORRVILLE": [
+    {
+      "name": "AULTMAN ORRVILLE HOSPITAL",
+      "address": "832 SOUTH MAIN STREET",
+      "city": "ORRVILLE",
+      "state": "OH",
+      "zip": "44667",
+      "phone": "(330) 682-3010",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OXFORD": [
+    {
+      "name": "MCCULLOUGH-HYDE MEMORIAL HOSPITAL",
+      "address": "110 NORTH POPLAR STREET",
+      "city": "OXFORD",
+      "state": "OH",
+      "zip": "45056",
+      "phone": "(513) 523-2111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARMA": [
+    {
+      "name": "PARMA COMMUNITY GENERAL HOSPITAL",
+      "address": "7007 POWERS BOULEVARD",
+      "city": "PARMA",
+      "state": "OH",
+      "zip": "44129",
+      "phone": "(440) 743-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAULDING": [
+    {
+      "name": "PAULDING COUNTY HOSPITAL",
+      "address": "1035 WEST WAYNE ST.",
+      "city": "PAULDING",
+      "state": "OH",
+      "zip": "45879",
+      "phone": "(419) 399-4080",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORT CLINTON": [
+    {
+      "name": "MAGRUDER HOSPITAL",
+      "address": "615 FULTON ST",
+      "city": "PORT CLINTON",
+      "state": "OH",
+      "zip": "43452",
+      "phone": "(419) 734-3131",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORTSMOUTH": [
+    {
+      "name": "SOUTHERN OHIO MEDICAL CENTER",
+      "address": "1805 27TH STREET",
+      "city": "PORTSMOUTH",
+      "state": "OH",
+      "zip": "45662",
+      "phone": "(740) 356-5788",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KINGS DAUGHTERS MEDICAL CENTER OHIO",
+      "address": "1901 ARGONNE ROAD",
+      "city": "PORTSMOUTH",
+      "state": "OH",
+      "zip": "45662",
+      "phone": "(740) 991-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RAVENNA": [
+    {
+      "name": "UNIVERSITY HOSPITALS PORTAGE MEDICAL CENTER",
+      "address": "6847 N CHESTNUT",
+      "city": "RAVENNA",
+      "state": "OH",
+      "zip": "44266",
+      "phone": "(330) 297-2300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROCK CREEK": [
+    {
+      "name": "GLENBEIGH HEALTH SOURCES",
+      "address": "2863 STATE ROUTE 45",
+      "city": "ROCK CREEK",
+      "state": "OH",
+      "zip": "44084",
+      "phone": "(440) 563-3400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT MARYS": [
+    {
+      "name": "GRAND LAKE HEALTH SYSTEM",
+      "address": "200 SAINT CLAIR STREET",
+      "city": "SAINT MARYS",
+      "state": "OH",
+      "zip": "45885",
+      "phone": "(419) 394-3335",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALEM": [
+    {
+      "name": "SALEM REGIONAL MEDICAL CENTER",
+      "address": "1995 EAST STATE STREET",
+      "city": "SALEM",
+      "state": "OH",
+      "zip": "44460",
+      "phone": "(330) 332-7214",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANDUSKY": [
+    {
+      "name": "FIRELANDS REGIONAL MEDICAL CENTER",
+      "address": "1111 HAYES AVENUE",
+      "city": "SANDUSKY",
+      "state": "OH",
+      "zip": "44870",
+      "phone": "(419) 557-7400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEAMAN": [
+    {
+      "name": "ADAMS COUNTY REGIONAL MEDICAL CENTER",
+      "address": "230 MEDICAL CENTER DRIVE",
+      "city": "SEAMAN",
+      "state": "OH",
+      "zip": "45679",
+      "phone": "(937) 386-3400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHELBY": [
+    {
+      "name": "OHIOHEALTH SHELBY HOSPITAL",
+      "address": "199 WEST MAIN STREET",
+      "city": "SHELBY",
+      "state": "OH",
+      "zip": "44875",
+      "phone": "(419) 342-5015",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SIDNEY": [
+    {
+      "name": "WILSON MEMORIAL HOSPITAL",
+      "address": "915 WEST MICHIGAN STREET",
+      "city": "SIDNEY",
+      "state": "OH",
+      "zip": "45365",
+      "phone": "(937) 498-5405",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPRINGFIELD": [
+    {
+      "name": "SPRINGFIELD REGIONAL MEDICAL CENTER",
+      "address": "100 MEDICAL CENTER DRIVE",
+      "city": "SPRINGFIELD",
+      "state": "OH",
+      "zip": "45504",
+      "phone": "(937) 523-5500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OHIO VALLEY SURGICAL HOSPITAL",
+      "address": "100 WEST MAIN STREET",
+      "city": "SPRINGFIELD",
+      "state": "OH",
+      "zip": "45502",
+      "phone": "(937) 521-3900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MENTAL HEALTH SERVICES FOR CLARK AND MADISON COS",
+      "address": "474 NORTH YELLOW SPRINGS STREET",
+      "city": "SPRINGFIELD",
+      "state": "OH",
+      "zip": "45504",
+      "phone": "(937) 399-9500",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STEUBENVILLE": [
+    {
+      "name": "TRINITY MEDICAL CTR EAST &TRINITY MEDICAL CTR WEST",
+      "address": "380 SUMMIT AVENUE",
+      "city": "STEUBENVILLE",
+      "state": "OH",
+      "zip": "43952",
+      "phone": "(740) 264-7212",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SYLVANIA": [
+    {
+      "name": "ASSURANCE HEALTH TOLEDO LLC",
+      "address": "4040 KING ROAD",
+      "city": "SYLVANIA",
+      "state": "OH",
+      "zip": "43560",
+      "phone": "(419) 548-0100",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TIFFIN": [
+    {
+      "name": "MERCY HEALTH - TIFFIN HOSPITAL",
+      "address": "45 ST LAWRENCE DRIVE",
+      "city": "TIFFIN",
+      "state": "OH",
+      "zip": "44883",
+      "phone": "(419) 455-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOJOURN AT SENECA SENIOR BEHAVIORAL HEALTH HOSPITA",
+      "address": "50 ST LAWRENCE DRIVE",
+      "city": "TIFFIN",
+      "state": "OH",
+      "zip": "44883",
+      "phone": "(567) 207-2230",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TOLEDO": [
+    {
+      "name": "UNIVERSITY OF TOLEDO MEDICAL CENTER",
+      "address": "3000 ARLINGTON AVENUE",
+      "city": "TOLEDO",
+      "state": "OH",
+      "zip": "43614",
+      "phone": "(419) 383-3407",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PROMEDICA TOLEDO HOSPITAL",
+      "address": "2142 NORTH COVE BOULEVARD",
+      "city": "TOLEDO",
+      "state": "OH",
+      "zip": "43606",
+      "phone": "(419) 291-7463",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MERCY ST VINCENT MEDICAL CENTER",
+      "address": "2213 CHERRY STREET",
+      "city": "TOLEDO",
+      "state": "OH",
+      "zip": "43608",
+      "phone": "(419) 251-3232",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NATIONWIDE CHILDREN'S HOSPITAL TOLEDO, LLC",
+      "address": "2213 CHERRY STREET",
+      "city": "TOLEDO",
+      "state": "OH",
+      "zip": "43608",
+      "phone": "(419) 251-3232",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTHWEST OHIO PSYCHIATRIC HOSPITAL",
+      "address": "930 SOUTH DETROIT AVENUE",
+      "city": "TOLEDO",
+      "state": "OH",
+      "zip": "43614",
+      "phone": "(419) 381-1881",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TROY": [
+    {
+      "name": "UPPER VALLEY MEDICAL CENTER",
+      "address": "3130 N DIXIE HIGHWAY",
+      "city": "TROY",
+      "state": "OH",
+      "zip": "45373",
+      "phone": "(937) 440-7853",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KETTERING HEALTH TROY",
+      "address": "600 WEST MAIN STREET",
+      "city": "TROY",
+      "state": "OH",
+      "zip": "45373",
+      "phone": "(937) 980-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "UPPER SANDUSKY": [
+    {
+      "name": "WYANDOT MEMORIAL HOSPITAL",
+      "address": "885 NORTH SANDUSKY AVENUE",
+      "city": "UPPER SANDUSKY",
+      "state": "OH",
+      "zip": "43351",
+      "phone": "(419) 294-4991",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "URBANA": [
+    {
+      "name": "MERCY HEALTH - URBANA HOSPITAL",
+      "address": "904 SCIOTO STREET",
+      "city": "URBANA",
+      "state": "OH",
+      "zip": "43078",
+      "phone": "(937) 653-5231",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VAN WERT": [
+    {
+      "name": "VAN WERT COUNTY HOSPITAL",
+      "address": "1250 S WASHINGTON STREET",
+      "city": "VAN WERT",
+      "state": "OH",
+      "zip": "45891",
+      "phone": "(419) 238-8627",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WARREN": [
+    {
+      "name": "TRUMBULL REGIONAL MEDICAL CENTER",
+      "address": "1350 EAST MARKET STREET",
+      "city": "WARREN",
+      "state": "OH",
+      "zip": "44482",
+      "phone": "(330) 841-9011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MH ST JOSEPH WARREN HOSPITAL",
+      "address": "667 EASTLAND AVE SE",
+      "city": "WARREN",
+      "state": "OH",
+      "zip": "44484",
+      "phone": "(330) 841-4016",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WARRENSVILLE HEIGHTS": [
+    {
+      "name": "SOUTH POINTE HOSPITAL",
+      "address": "20000 HARVARD ROAD",
+      "city": "WARRENSVILLE HEIGHTS",
+      "state": "OH",
+      "zip": "44122",
+      "phone": "(216) 491-6523",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WASHINGTON CH": [
+    {
+      "name": "ADENA FAYETTE MEDICAL CENTER",
+      "address": "1430 COLUMBUS AVENUE",
+      "city": "WASHINGTON CH",
+      "state": "OH",
+      "zip": "43160",
+      "phone": "(740) 335-1210",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAUSEON": [
+    {
+      "name": "FULTON COUNTY HEALTH CENTER",
+      "address": "725 SOUTH SHOOP AVENUE",
+      "city": "WAUSEON",
+      "state": "OH",
+      "zip": "43567",
+      "phone": "(419) 335-2015",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAVERLY": [
+    {
+      "name": "ADENA PIKE MEDICAL CENTER",
+      "address": "100 DAWN LANE",
+      "city": "WAVERLY",
+      "state": "OH",
+      "zip": "45690",
+      "phone": "(740) 947-2186",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST CHESTER": [
+    {
+      "name": "WEST CHESTER HOSPITAL",
+      "address": "7700 UNIVERSITY DRIVE",
+      "city": "WEST CHESTER",
+      "state": "OH",
+      "zip": "45069",
+      "phone": "(513) 298-7701",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BECKETT SPRINGS",
+      "address": "8614 SHEPHERD FARM DRIVE",
+      "city": "WEST CHESTER",
+      "state": "OH",
+      "zip": "45069",
+      "phone": "(513) 942-9500",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTERVILLE": [
+    {
+      "name": "MOUNT CARMEL ST ANN'S",
+      "address": "500 SOUTH CLEVELAND AVENUE",
+      "city": "WESTERVILLE",
+      "state": "OH",
+      "zip": "43081",
+      "phone": "(614) 546-4034",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTLAKE": [
+    {
+      "name": "UH ST JOHN MEDICAL CENTER",
+      "address": "29000 CENTER RIDGE ROAD",
+      "city": "WESTLAKE",
+      "state": "OH",
+      "zip": "44145",
+      "phone": "(440) 835-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILLARD": [
+    {
+      "name": "MERCY HEALTH - WILLARD HOSPITAL",
+      "address": "1100 NEAL ZICK ROAD",
+      "city": "WILLARD",
+      "state": "OH",
+      "zip": "44890",
+      "phone": "(419) 964-5000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILLOUGHBY": [
+    {
+      "name": "WINDSOR LAURELWOOD CENTER FOR BEHAVORIAL MEDICINE",
+      "address": "35900 EUCLID AVENUE",
+      "city": "WILLOUGHBY",
+      "state": "OH",
+      "zip": "44094",
+      "phone": "(440) 953-3000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILMINGTON": [
+    {
+      "name": "CLINTON MEMORIAL HOSPITAL",
+      "address": "610 WEST MAIN STREET",
+      "city": "WILMINGTON",
+      "state": "OH",
+      "zip": "45177",
+      "phone": "(937) 382-9335",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOOSTER": [
+    {
+      "name": "WOOSTER COMMUNITY HOSPITAL",
+      "address": "1761 BEALL AVENUE",
+      "city": "WOOSTER",
+      "state": "OH",
+      "zip": "44691",
+      "phone": "(330) 263-8348",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Wright-Patterson AFB": [
+    {
+      "name": "88th Medical Group (Wright-Patterson AFB)",
+      "address": "88 MDG 4881 Sugar Maple Dr",
+      "city": "Wright-Patterson AFB",
+      "state": "OH",
+      "zip": "45433",
+      "phone": "(937) 257-9926",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "XENIA": [
+    {
+      "name": "KETTERING HEALTH GREENE MEMORIAL",
+      "address": "1141 NORTH MONROE DRIVE",
+      "city": "XENIA",
+      "state": "OH",
+      "zip": "45385",
+      "phone": "(937) 352-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YOUNGSTOWN": [
+    {
+      "name": "ST ELIZABETH YOUNGSTOWN HOSPITAL",
+      "address": "1044 BELMONT AVENUE",
+      "city": "YOUNGSTOWN",
+      "state": "OH",
+      "zip": "44501",
+      "phone": "(330) 480-3022",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SURGICAL HOSPITAL AT SOUTHWOODS",
+      "address": "7630 SOUTHERN BLVD",
+      "city": "YOUNGSTOWN",
+      "state": "OH",
+      "zip": "44512",
+      "phone": "(330) 729-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BELMONT PINES HOSPITAL",
+      "address": "615 CHURCHILL-HUBBARD RD",
+      "city": "YOUNGSTOWN",
+      "state": "OH",
+      "zip": "44505",
+      "phone": "(330) 545-7924",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GENERATIONS BEHAVIORAL HEALTH-YOUNGSTOWN LLC",
+      "address": "196 COLONIAL DRIVE",
+      "city": "YOUNGSTOWN",
+      "state": "OH",
+      "zip": "44504",
+      "phone": "(234) 232-7478",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ZANESVILLE": [
+    {
+      "name": "GENESIS HOSPITAL",
+      "address": "2951 MAPLE AVENUE",
+      "city": "ZANESVILLE",
+      "state": "OH",
+      "zip": "43701",
+      "phone": "(740) 454-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

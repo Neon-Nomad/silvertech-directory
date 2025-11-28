@@ -1,0 +1,802 @@
+{
+  "ABERDEEN": [
+    {
+      "name": "UM UPPER CHESAPEAKE BEHAVIORAL HEALTH PAVILION AT",
+      "address": "660 MCHENRY ROAD",
+      "city": "ABERDEEN",
+      "state": "MD",
+      "zip": "21001",
+      "phone": "(443) 843-5000",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANNAPOLIS": [
+    {
+      "name": "LUMINIS HEALTH ANNE ARUNDEL MEDICAL CENTER, INC",
+      "address": "2001 MEDICAL PARKWAY",
+      "city": "ANNAPOLIS",
+      "state": "MD",
+      "zip": "21401",
+      "phone": "(443) 481-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LUMINIS HEALTH J KENT MCNEW FAMILY MEDICAL CENTER",
+      "address": "175 HARRY S TRUMAN PARKWAY",
+      "city": "ANNAPOLIS",
+      "state": "MD",
+      "zip": "21401",
+      "phone": "(443) 481-1000",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BALTIMORE": [
+    {
+      "name": "UNIVERSITY OF MARYLAND MEDICAL CENTER",
+      "address": "22 SOUTH  GREENE STREET",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21201",
+      "phone": "(410) 328-8667",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MERCY MEDICAL CENTER INC",
+      "address": "301 SAINT PAUL PLACE",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21202",
+      "phone": "(410) 332-9237",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "JOHNS HOPKINS HOSPITAL, THE",
+      "address": "600 NORTH  WOLFE STREET",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21287",
+      "phone": "(410) 955-9540",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT AGNES HOSPITAL",
+      "address": "900 CATON AVENUE",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21229",
+      "phone": "(410) 368-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SINAI HOSPITAL OF BALTIMORE",
+      "address": "2401 WEST BELVEDERE AVENUE",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21215",
+      "phone": "(410) 601-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MEDSTAR UNION MEMORIAL HOSPITAL",
+      "address": "201 EAST UNIVERSITY PARKWAY",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21218",
+      "phone": "(410) 554-2227",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "JOHNS HOPKINS BAYVIEW MEDICAL CENTER",
+      "address": "4940 EASTERN AVENUE",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21224",
+      "phone": "(410) 550-0123",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MEDSTAR HARBOR HOSPITAL",
+      "address": "3001 SOUTH  HANOVER STREET",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21225",
+      "phone": "(410) 350-3201",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY OF MD MEDICAL CENTER MIDTOWN CAMPUS",
+      "address": "827 LINDEN AVENUE",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21201",
+      "phone": "(410) 225-8996",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GREATER BALTIMORE MEDICAL CENTER",
+      "address": "6701 NORTH  CHARLES STREET",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21204",
+      "phone": "(443) 849-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MEDSTAR GOOD SAMARITAN HOSPITAL",
+      "address": "5601 LOCH RAVEN BOULEVARD",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21239",
+      "phone": "(443) 444-3902",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UMD REHABILITATION &  ORTHOPAEDIC INSTITUTE",
+      "address": "2200 KERNAN DRIVE",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21207",
+      "phone": "(410) 448-6701",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LEVINDALE HEBREW GERIATRIC CENTER AND HOSPITAL",
+      "address": "2434 WEST BELVEDERE AVENUE",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21209",
+      "phone": "(410) 601-2400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA MARYLAND HEALTHCARE SYSTEM - BALTIMORE",
+      "address": "10 NORTH GREENE STREET",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21201",
+      "phone": "(410) 605-7016",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MOUNT WASHINGTON PEDIATRIC HOSPITAL",
+      "address": "1708 WEST ROGERS AVENUE",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21209",
+      "phone": "(410) 578-5050",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KENNEDY KRIEGER INSTITUTE",
+      "address": "707 NORTH  BROADWAY",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21205",
+      "phone": "(443) 923-9301",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHEPPARD AND ENOCH PRATT HOSPITAL, THE",
+      "address": "6501 NORTH  CHARLES STREET",
+      "city": "BALTIMORE",
+      "state": "MD",
+      "zip": "21204",
+      "phone": "(410) 938-3401",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEL AIR": [
+    {
+      "name": "UMD UPPER CHESAPEAKE MEDICAL CENTER",
+      "address": "500 UPPER CHESAPEAKE DRIVE",
+      "city": "BEL AIR",
+      "state": "MD",
+      "zip": "21014",
+      "phone": "(443) 643-3303",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BERLIN": [
+    {
+      "name": "ATLANTIC GENERAL HOSPITAL",
+      "address": "9733 HEALTHWAY DRIVE",
+      "city": "BERLIN",
+      "state": "MD",
+      "zip": "21811",
+      "phone": "(410) 641-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BETHESDA": [
+    {
+      "name": "SUBURBAN HOSPITAL",
+      "address": "8600 OLD GEORGETOWN ROAD",
+      "city": "BETHESDA",
+      "state": "MD",
+      "zip": "20814",
+      "phone": "(301) 896-2576",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Bethesda": [
+    {
+      "name": "Walter Reed National Military Med Cen",
+      "address": "4494 Palmer Rd N",
+      "city": "Bethesda",
+      "state": "MD",
+      "zip": "20814",
+      "phone": "(301) 295-4000",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAMBRIDGE": [
+    {
+      "name": "EASTERN SHORE HOSPITAL CENTER",
+      "address": "5262 WOODS ROAD",
+      "city": "CAMBRIDGE",
+      "state": "MD",
+      "zip": "21613",
+      "phone": "(410) 221-2525",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CATONSVILLE": [
+    {
+      "name": "SPRING GROVE HOSPITAL CENTER",
+      "address": "55 WADE AVENUE",
+      "city": "CATONSVILLE",
+      "state": "MD",
+      "zip": "21228",
+      "phone": "(410) 402-6000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHESTERTOWN": [
+    {
+      "name": "UNIVERSITY OF MD SHORE MEDICAL CTR AT CHESTERTOWN",
+      "address": "100 BROWN STREET",
+      "city": "CHESTERTOWN",
+      "state": "MD",
+      "zip": "21620",
+      "phone": "(410) 778-7668",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLINTON": [
+    {
+      "name": "MEDSTAR SOUTHERN MARYLAND HOSPITAL CENTER",
+      "address": "7503 SURRATTS ROAD",
+      "city": "CLINTON",
+      "state": "MD",
+      "zip": "20735",
+      "phone": "(301) 868-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUMBIA": [
+    {
+      "name": "JOHNS HOPKINS HOWARD COUNTY MEDICAL CENTER",
+      "address": "5755 CEDAR LANE",
+      "city": "COLUMBIA",
+      "state": "MD",
+      "zip": "21044",
+      "phone": "(410) 740-7890",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CUMBERLAND": [
+    {
+      "name": "WESTERN MARYLAND REGIONAL MEDICAL CENTER",
+      "address": "12500 WILLOWBROOK ROAD",
+      "city": "CUMBERLAND",
+      "state": "MD",
+      "zip": "21502",
+      "phone": "(240) 964-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THOMAS B FINAN CENTER",
+      "address": "10102 COUNTRY CLUB ROAD,  POST OFFICE BOX 1722",
+      "city": "CUMBERLAND",
+      "state": "MD",
+      "zip": "21502",
+      "phone": "(301) 777-2240",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EASTON": [
+    {
+      "name": "UNIVERSITY OF MD SHORE MEDICAL CENTER AT EASTON",
+      "address": "219 SOUTH  WASHINGTON STREET",
+      "city": "EASTON",
+      "state": "MD",
+      "zip": "21601",
+      "phone": "(410) 822-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELKTON": [
+    {
+      "name": "UNION HOSPITAL OF CECIL COUNTY",
+      "address": "106 BOW STREET",
+      "city": "ELKTON",
+      "state": "MD",
+      "zip": "21921",
+      "phone": "(410) 392-7009",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT WASHINGTON": [
+    {
+      "name": "ADVENTIST HEALTHCARE FORT WASHINGTON MEDICAL CTR",
+      "address": "11711 LIVINGSTON ROAD",
+      "city": "FORT WASHINGTON",
+      "state": "MD",
+      "zip": "20744",
+      "phone": "(301) 292-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FREDERICK": [
+    {
+      "name": "FREDERICK HEALTH HOSPITAL",
+      "address": "400 WEST SEVENTH ST",
+      "city": "FREDERICK",
+      "state": "MD",
+      "zip": "21701",
+      "phone": "(240) 566-3300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GERMANTOWN": [
+    {
+      "name": "HOLY CROSS GERMANTOWN HOSPITAL",
+      "address": "19801 OBSERVATION DRIVE",
+      "city": "GERMANTOWN",
+      "state": "MD",
+      "zip": "20876",
+      "phone": "(301) 557-6020",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLEN BURNIE": [
+    {
+      "name": "UNIVERSITY OF MD BALTIMORE WASHINGTON MEDICAL CENTER",
+      "address": "301 HOSPITAL DRIVE",
+      "city": "GLEN BURNIE",
+      "state": "MD",
+      "zip": "21061",
+      "phone": "(410) 595-1967",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAGERSTOWN": [
+    {
+      "name": "MERITUS MEDICAL CENTER",
+      "address": "11116 MEDICAL CAMPUS ROAD",
+      "city": "HAGERSTOWN",
+      "state": "MD",
+      "zip": "21742",
+      "phone": "(240) 313-9500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BROOK LANE HEALTH SERVICES",
+      "address": "13215  BROOK LANE DRIVE",
+      "city": "HAGERSTOWN",
+      "state": "MD",
+      "zip": "21742",
+      "phone": "(301) 733-0330",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LA PLATA": [
+    {
+      "name": "UNIVERSITY OF MD CHARLES REGIONAL  MEDICAL CENTER",
+      "address": "5 GARRETT AVENUE",
+      "city": "LA PLATA",
+      "state": "MD",
+      "zip": "20646",
+      "phone": "(301) 609-4265",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LANHAM": [
+    {
+      "name": "LUMINIS HEALTH DOCTORS COMMUNITY MEDICAL CTR, INC",
+      "address": "8118 GOOD LUCK ROAD",
+      "city": "LANHAM",
+      "state": "MD",
+      "zip": "20706",
+      "phone": "(301) 552-8118",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEONARDTOWN": [
+    {
+      "name": "MEDSTAR SAINT MARY'S HOSPITAL",
+      "address": "25500 POINT LOOKOUT ROAD",
+      "city": "LEONARDTOWN",
+      "state": "MD",
+      "zip": "20650",
+      "phone": "(301) 475-6001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OAKLAND": [
+    {
+      "name": "GARRETT REGIONAL MEDICAL CENTER",
+      "address": "251 NORTH  FOURTH STREET",
+      "city": "OAKLAND",
+      "state": "MD",
+      "zip": "21550",
+      "phone": "(301) 533-4173",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OLNEY": [
+    {
+      "name": "MEDSTAR MONTGOMERY MEDICAL CENTER",
+      "address": "18101 PRINCE PHILIP DRIVE",
+      "city": "OLNEY",
+      "state": "MD",
+      "zip": "20832",
+      "phone": "(301) 774-8771",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PERRY POINT": [
+    {
+      "name": "VA MARYLAND HEALTHCARE SYSTEM - PERRY POINT",
+      "address": "VA MEDICAL CENTER",
+      "city": "PERRY POINT",
+      "state": "MD",
+      "zip": "21902",
+      "phone": "(410) 642-2411",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRINCE FREDERICK": [
+    {
+      "name": "CALVERTHEALTH MEDICAL CENTER",
+      "address": "100 HOSPITAL ROAD",
+      "city": "PRINCE FREDERICK",
+      "state": "MD",
+      "zip": "20678",
+      "phone": "(410) 535-8240",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RANDALLSTOWN": [
+    {
+      "name": "NORTHWEST HOSPITAL CENTER",
+      "address": "5401 OLD COURT ROAD",
+      "city": "RANDALLSTOWN",
+      "state": "MD",
+      "zip": "21133",
+      "phone": "(410) 521-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROCKVILLE": [
+    {
+      "name": "ADVENTIST HEALTHCARE SHADY GROVE MEDICAL CENTER",
+      "address": "9901 MEDICAL CENTER DRIVE",
+      "city": "ROCKVILLE",
+      "state": "MD",
+      "zip": "20850",
+      "phone": "(240) 826-6517",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROSEDALE": [
+    {
+      "name": "MEDSTAR FRANKLIN SQUARE MEDICAL CENTER",
+      "address": "9000 FRANKLIN SQUARE DRIVE",
+      "city": "ROSEDALE",
+      "state": "MD",
+      "zip": "21237",
+      "phone": "(443) 777-7850",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALISBURY": [
+    {
+      "name": "TIDALHEALTH PENINSULA REGIONAL, INC",
+      "address": "100 EAST CARROLL AVENUE",
+      "city": "SALISBURY",
+      "state": "MD",
+      "zip": "21801",
+      "phone": "(410) 546-6400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SILVER SPRING": [
+    {
+      "name": "HOLY CROSS HOSPITAL",
+      "address": "1500 FOREST GLEN ROAD",
+      "city": "SILVER SPRING",
+      "state": "MD",
+      "zip": "20910",
+      "phone": "(301) 754-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTIST HEALTHCARE WHITE OAK MEDICAL CENTER",
+      "address": "11890 HEALING WAY",
+      "city": "SILVER SPRING",
+      "state": "MD",
+      "zip": "20904",
+      "phone": "(240) 637-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SYKESVILLE": [
+    {
+      "name": "SPRINGFIELD HOSPITAL CENTER",
+      "address": "6655 SYKESVILLE ROAD",
+      "city": "SYKESVILLE",
+      "state": "MD",
+      "zip": "21784",
+      "phone": "(410) 970-7000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TOWSON": [
+    {
+      "name": "UNIVERSITY OF MD ST JOSEPH MEDICAL CENTER",
+      "address": "7601 OSLER DRIVE",
+      "city": "TOWSON",
+      "state": "MD",
+      "zip": "21204",
+      "phone": "(410) 337-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "UPPER MARLBORO": [
+    {
+      "name": "UNIVERSITY OF MD CAPITAL REGION MEDICAL CENTER",
+      "address": "901 NORTH HARRY S TRUMAN DRIVE",
+      "city": "UPPER MARLBORO",
+      "state": "MD",
+      "zip": "20774",
+      "phone": "(301) 618-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTMINSTER": [
+    {
+      "name": "CARROLL HOSPITAL CENTER",
+      "address": "200 MEMORIAL AVENUE",
+      "city": "WESTMINSTER",
+      "state": "MD",
+      "zip": "21157",
+      "phone": "(410) 848-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

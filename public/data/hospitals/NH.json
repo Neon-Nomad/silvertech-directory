@@ -1,0 +1,414 @@
+{
+  "BERLIN": [
+    {
+      "name": "ANDROSCOGGIN VALLEY HOSPITAL",
+      "address": "59 PAGE HILL ROAD",
+      "city": "BERLIN",
+      "state": "NH",
+      "zip": "03570",
+      "phone": "(603) 752-2200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLAREMONT": [
+    {
+      "name": "VALLEY REGIONAL HOSPITAL",
+      "address": "243 ELM STREET",
+      "city": "CLAREMONT",
+      "state": "NH",
+      "zip": "03743",
+      "phone": "(603) 542-7771",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLEBROOK": [
+    {
+      "name": "UPPER CONNECTICUT VALLEY HOSPITAL",
+      "address": "181 CORLISS LANE",
+      "city": "COLEBROOK",
+      "state": "NH",
+      "zip": "03576",
+      "phone": "(603) 237-4971",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CONCORD": [
+    {
+      "name": "CONCORD HOSPITAL",
+      "address": "250 PLEASANT ST",
+      "city": "CONCORD",
+      "state": "NH",
+      "zip": "03301",
+      "phone": "(603) 225-2711",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NEW HAMPSHIRE HOSPITAL",
+      "address": "36 CLINTON STREET",
+      "city": "CONCORD",
+      "state": "NH",
+      "zip": "03301",
+      "phone": "(603) 271-5300",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DERRY": [
+    {
+      "name": "PARKLAND MEDICAL CENTER",
+      "address": "1 PARKLAND DRIVE",
+      "city": "DERRY",
+      "state": "NH",
+      "zip": "03038",
+      "phone": "(603) 421-2100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DOVER": [
+    {
+      "name": "WENTWORTH-DOUGLASS HOSPITAL",
+      "address": "789 CENTRAL AVE",
+      "city": "DOVER",
+      "state": "NH",
+      "zip": "03820",
+      "phone": "(603) 740-2580",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EXETER": [
+    {
+      "name": "EXETER HOSPITAL INC",
+      "address": "5 ALUMNI DRIVE",
+      "city": "EXETER",
+      "state": "NH",
+      "zip": "03833",
+      "phone": "(603) 778-7311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRANKLIN": [
+    {
+      "name": "CONCORD HOSPITAL- FRANKLIN",
+      "address": "15 AIKEN AVENUE",
+      "city": "FRANKLIN",
+      "state": "NH",
+      "zip": "03235",
+      "phone": "(603) 934-2060",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAMPSTEAD": [
+    {
+      "name": "HAMPSTEAD HOSPITAL",
+      "address": "218 EAST ROAD",
+      "city": "HAMPSTEAD",
+      "state": "NH",
+      "zip": "03841",
+      "phone": "(603) 329-5311",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KEENE": [
+    {
+      "name": "CHESHIRE MEDICAL CENTER",
+      "address": "580 COURT STREET",
+      "city": "KEENE",
+      "state": "NH",
+      "zip": "03431",
+      "phone": "(603) 354-5400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LACONIA": [
+    {
+      "name": "CONCORD HOSPITAL- LACONIA",
+      "address": "80 HIGHLAND ST",
+      "city": "LACONIA",
+      "state": "NH",
+      "zip": "03246",
+      "phone": "(603) 524-3211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LANCASTER": [
+    {
+      "name": "WEEKS MEDICAL CENTER",
+      "address": "173 MIDDLE STREET",
+      "city": "LANCASTER",
+      "state": "NH",
+      "zip": "03584",
+      "phone": "(603) 788-4911",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEBANON": [
+    {
+      "name": "MARY HITCHCOCK MEMORIAL HOSPITAL",
+      "address": "1 MEDICAL CENTER DRIVE",
+      "city": "LEBANON",
+      "state": "NH",
+      "zip": "03756",
+      "phone": "(603) 650-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ALICE PECK DAY MEMORIAL HOSPITAL",
+      "address": "10 ALICE PECK DAY DRIVE",
+      "city": "LEBANON",
+      "state": "NH",
+      "zip": "03766",
+      "phone": "(603) 448-3121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LITTLETON": [
+    {
+      "name": "LITTLETON REGIONAL HEALTHCARE",
+      "address": "600 ST JOHNSBURY ROAD",
+      "city": "LITTLETON",
+      "state": "NH",
+      "zip": "03561",
+      "phone": "(603) 444-9000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANCHESTER": [
+    {
+      "name": "ELLIOT HOSPITAL",
+      "address": "1 ELLIOT WAY",
+      "city": "MANCHESTER",
+      "state": "NH",
+      "zip": "03103",
+      "phone": "(603) 669-5300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CATHOLIC MEDICAL CENTER",
+      "address": "100 MCGREGOR STREET",
+      "city": "MANCHESTER",
+      "state": "NH",
+      "zip": "03102",
+      "phone": "(603) 668-3545",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NASHUA": [
+    {
+      "name": "ST JOSEPH HOSPITAL",
+      "address": "172 KINSLEY ST",
+      "city": "NASHUA",
+      "state": "NH",
+      "zip": "03060",
+      "phone": "(603) 882-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHERN NH MEDICAL CENTER",
+      "address": "8 PROSPECT STREET",
+      "city": "NASHUA",
+      "state": "NH",
+      "zip": "03060",
+      "phone": "(603) 577-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW LONDON": [
+    {
+      "name": "NEW LONDON HOSPITAL",
+      "address": "273 COUNTY ROAD",
+      "city": "NEW LONDON",
+      "state": "NH",
+      "zip": "03257",
+      "phone": "(603) 526-2911",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTH CONWAY": [
+    {
+      "name": "MEMORIAL HOSPITAL, THE",
+      "address": "3073 WHITE MOUNTAIN HIGHWAY",
+      "city": "NORTH CONWAY",
+      "state": "NH",
+      "zip": "03860",
+      "phone": "(603) 356-5461",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PETERBOROUGH": [
+    {
+      "name": "MONADNOCK COMMUNITY HOSPITAL",
+      "address": "452 OLD STREET ROAD",
+      "city": "PETERBOROUGH",
+      "state": "NH",
+      "zip": "03458",
+      "phone": "(603) 924-7191",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLYMOUTH": [
+    {
+      "name": "SPEARE MEMORIAL HOSPITAL",
+      "address": "16 HOSPITAL ROAD",
+      "city": "PLYMOUTH",
+      "state": "NH",
+      "zip": "03264",
+      "phone": "(603) 536-1120",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORTSMOUTH": [
+    {
+      "name": "PORTSMOUTH REGIONAL HOSPITAL",
+      "address": "333 BORTHWICK AVE",
+      "city": "PORTSMOUTH",
+      "state": "NH",
+      "zip": "03801",
+      "phone": "(603) 436-5110",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROCHESTER": [
+    {
+      "name": "FRISBIE MEMORIAL HOSPITAL",
+      "address": "11 WHITEHALL ROAD",
+      "city": "ROCHESTER",
+      "state": "NH",
+      "zip": "03867",
+      "phone": "(603) 332-5211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOLFEBORO": [
+    {
+      "name": "HUGGINS HOSPITAL",
+      "address": "240 SOUTH MAIN STREET",
+      "city": "WOLFEBORO",
+      "state": "NH",
+      "zip": "03894",
+      "phone": "(603) 569-7500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOODSVILLE": [
+    {
+      "name": "COTTAGE HOSPITAL",
+      "address": "90 SWIFTWATER RD",
+      "city": "WOODSVILLE",
+      "state": "NH",
+      "zip": "03785",
+      "phone": "(603) 747-9000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

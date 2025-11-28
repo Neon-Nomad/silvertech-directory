@@ -1,0 +1,1751 @@
+{
+  "ALBANY": [
+    {
+      "name": "MOSAIC MEDICAL CENTER ALBANY",
+      "address": "705 N COLLEGE STREET",
+      "city": "ALBANY",
+      "state": "MO",
+      "zip": "64402",
+      "phone": "(660) 726-3941",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "APPLETON CITY": [
+    {
+      "name": "ELLETT MEMORIAL HOSPITAL",
+      "address": "610 N OHIO STREET",
+      "city": "APPLETON CITY",
+      "state": "MO",
+      "zip": "64724",
+      "phone": "(660) 476-2111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AURORA": [
+    {
+      "name": "MERCY HOSPITAL AURORA",
+      "address": "500 PORTER AVENUE",
+      "city": "AURORA",
+      "state": "MO",
+      "zip": "65605",
+      "phone": "(417) 678-2122",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELTON": [
+    {
+      "name": "BELTON REGIONAL MEDICAL CENTER",
+      "address": "17065 S 71 HIGHWAY",
+      "city": "BELTON",
+      "state": "MO",
+      "zip": "64012",
+      "phone": "(816) 348-1200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BETHANY": [
+    {
+      "name": "HARRISON COUNTY COMMUNITY HOSPITAL",
+      "address": "2600 MILLER STREET",
+      "city": "BETHANY",
+      "state": "MO",
+      "zip": "64424",
+      "phone": "(660) 425-2211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLUE SPRINGS": [
+    {
+      "name": "ST MARY'S MEDICAL CENTER",
+      "address": "201 NW R D MIZE RD",
+      "city": "BLUE SPRINGS",
+      "state": "MO",
+      "zip": "64014",
+      "phone": "(816) 228-5900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOLIVAR": [
+    {
+      "name": "CITIZENS MEMORIAL HOSPITAL",
+      "address": "1500 N OAKLAND",
+      "city": "BOLIVAR",
+      "state": "MO",
+      "zip": "65613",
+      "phone": "(417) 326-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BONNE TERRE": [
+    {
+      "name": "PARKLAND HEALTH CENTER - BONNE TERRE",
+      "address": "7245 RAIDER ROAD",
+      "city": "BONNE TERRE",
+      "state": "MO",
+      "zip": "63628",
+      "phone": "(573) 358-1400",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRANSON": [
+    {
+      "name": "COX MEDICAL CENTER BRANSON",
+      "address": "525 BRANSON LANDING BLVD, PO BOX 650",
+      "city": "BRANSON",
+      "state": "MO",
+      "zip": "65615",
+      "phone": "(417) 335-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRIDGETON": [
+    {
+      "name": "SSM HEALTH DEPAUL HOSPITAL ST LOUIS",
+      "address": "12303 DEPAUL DRIVE",
+      "city": "BRIDGETON",
+      "state": "MO",
+      "zip": "63044",
+      "phone": "(314) 344-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BROOKFIELD": [
+    {
+      "name": "PERSHING MEMORIAL HOSPITAL",
+      "address": "130 EAST LOCKLING",
+      "city": "BROOKFIELD",
+      "state": "MO",
+      "zip": "64628",
+      "phone": "(660) 258-2222",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BUTLER": [
+    {
+      "name": "BATES COUNTY MEMORIAL HOSPITAL",
+      "address": "615 W NURSERY ST",
+      "city": "BUTLER",
+      "state": "MO",
+      "zip": "64730",
+      "phone": "(660) 200-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAMERON": [
+    {
+      "name": "CAMERON REGIONAL MEDICAL CENTER",
+      "address": "1600 E EVERGREEN",
+      "city": "CAMERON",
+      "state": "MO",
+      "zip": "64429",
+      "phone": "(816) 632-2101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAPE GIRARDEAU": [
+    {
+      "name": "MERCY HOSPITAL SOUTHEAST",
+      "address": "1701 LACEY ST",
+      "city": "CAPE GIRARDEAU",
+      "state": "MO",
+      "zip": "63701",
+      "phone": "(573) 334-4822",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT FRANCIS MEDICAL CENTER",
+      "address": "211 ST FRANCIS DR",
+      "city": "CAPE GIRARDEAU",
+      "state": "MO",
+      "zip": "63703",
+      "phone": "(573) 331-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHEAST BEHAVIORAL HOSPITAL",
+      "address": "639 SOUTH SILVER SPRINGS ROAD",
+      "city": "CAPE GIRARDEAU",
+      "state": "MO",
+      "zip": "63703",
+      "phone": "(601) 630-5669",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARROLLTON": [
+    {
+      "name": "CARROLL COUNTY MEMORIAL HOSPITAL",
+      "address": "1502 NORTH JEFFERSON",
+      "city": "CARROLLTON",
+      "state": "MO",
+      "zip": "64633",
+      "phone": "(660) 542-1695",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARTHAGE": [
+    {
+      "name": "MERCY HOSPITAL CARTHAGE",
+      "address": "3125 DR RUSSELL SMITH WAY",
+      "city": "CARTHAGE",
+      "state": "MO",
+      "zip": "64836",
+      "phone": "(417) 358-8121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CASSVILLE": [
+    {
+      "name": "MERCY HOSPITAL - CASSVILLE",
+      "address": "94 MAIN STREET",
+      "city": "CASSVILLE",
+      "state": "MO",
+      "zip": "65625",
+      "phone": "(417) 847-6065",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHESTERFIELD": [
+    {
+      "name": "ST LUKES HOSPITAL",
+      "address": "232 S WOODS MILL RD",
+      "city": "CHESTERFIELD",
+      "state": "MO",
+      "zip": "63017",
+      "phone": "(314) 434-1500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHILLICOTHE": [
+    {
+      "name": "HEDRICK MEDICAL CENTER",
+      "address": "2799 NORTH WASHINGTON STREET",
+      "city": "CHILLICOTHE",
+      "state": "MO",
+      "zip": "64601",
+      "phone": "(660) 646-1480",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLINTON": [
+    {
+      "name": "GOLDEN VALLEY MEMORIAL HOSPITAL",
+      "address": "1600 N 2ND ST",
+      "city": "CLINTON",
+      "state": "MO",
+      "zip": "64735",
+      "phone": "(660) 885-5511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUMBIA": [
+    {
+      "name": "BOONE HOSPITAL CENTER",
+      "address": "1600 E BROADWAY",
+      "city": "COLUMBIA",
+      "state": "MO",
+      "zip": "65201",
+      "phone": "(573) 815-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY OF MISSOURI HEALTH CARE",
+      "address": "ONE HOSPITAL DRIVE",
+      "city": "COLUMBIA",
+      "state": "MO",
+      "zip": "65212",
+      "phone": "(573) 882-4141",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COLUMBIA MO VA MEDICAL CENTER",
+      "address": "800 HOSPITAL DR",
+      "city": "COLUMBIA",
+      "state": "MO",
+      "zip": "65201",
+      "phone": "(573) 814-6000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTERPOINTE HOSPITAL OF COLUMBIA",
+      "address": "1201 INTERNATIONAL DRIVE",
+      "city": "COLUMBIA",
+      "state": "MO",
+      "zip": "65202",
+      "phone": "(855) 623-7016",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CREVE COEUR": [
+    {
+      "name": "BARNES-JEWISH WEST COUNTY HOSPITAL",
+      "address": "12634 OLIVE BOULEVARD",
+      "city": "CREVE COEUR",
+      "state": "MO",
+      "zip": "63141",
+      "phone": "(314) 996-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CRYSTAL CITY": [
+    {
+      "name": "MERCY HOSPITAL JEFFERSON",
+      "address": "1400 US HIGHWAY 61",
+      "city": "CRYSTAL CITY",
+      "state": "MO",
+      "zip": "63019",
+      "phone": "(636) 933-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEXTER": [
+    {
+      "name": "MERCY HOSPITAL STODDARD",
+      "address": "1200 N ONE MILE RD",
+      "city": "DEXTER",
+      "state": "MO",
+      "zip": "63841",
+      "phone": "(573) 624-5566",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EL DORADO SPRINGS": [
+    {
+      "name": "CEDAR COUNTY MEMORIAL HOSPITAL",
+      "address": "1401 SOUTH PARK STREET",
+      "city": "EL DORADO SPRINGS",
+      "state": "MO",
+      "zip": "64744",
+      "phone": "(417) 876-2511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EXCELSIOR SPRINGS": [
+    {
+      "name": "EXCELSIOR SPRINGS HOSPITAL",
+      "address": "1700 RAINBOW BOULEVARD",
+      "city": "EXCELSIOR SPRINGS",
+      "state": "MO",
+      "zip": "64024",
+      "phone": "(816) 630-6081",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAIRFAX": [
+    {
+      "name": "COMMUNITY HOSPITAL ASSOCIATION",
+      "address": "26136 US HIGHWAY 59, PO BOX 107",
+      "city": "FAIRFAX",
+      "state": "MO",
+      "zip": "64446",
+      "phone": "(660) 686-2211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FARMINGTON": [
+    {
+      "name": "PARKLAND HEALTH CENTER",
+      "address": "1101 W LIBERTY",
+      "city": "FARMINGTON",
+      "state": "MO",
+      "zip": "63640",
+      "phone": "(573) 431-6005",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHEAST MISSOURI MENTAL HLTH CTR",
+      "address": "1010 WEST COLUMBIA STREET",
+      "city": "FARMINGTON",
+      "state": "MO",
+      "zip": "63640",
+      "phone": "(573) 218-6792",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FENTON": [
+    {
+      "name": "SSM ST CLARE HEALTH CENTER",
+      "address": "1015 BOWLES",
+      "city": "FENTON",
+      "state": "MO",
+      "zip": "63026",
+      "phone": "(636) 496-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FREDERICKTOWN": [
+    {
+      "name": "MADISON MEDICAL CENTER",
+      "address": "611 W MAIN ST",
+      "city": "FREDERICKTOWN",
+      "state": "MO",
+      "zip": "63645",
+      "phone": "(573) 781-3341",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FULTON": [
+    {
+      "name": "CENTER FOR BEHAVIORAL MEDICINE",
+      "address": "600 EAST 5TH STREET",
+      "city": "FULTON",
+      "state": "MO",
+      "zip": "65251",
+      "phone": "(573) 592-4100",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Fort Leonard Wood": [
+    {
+      "name": "General Leonard Wood ACH (FT Leonard Wood)",
+      "address": "4430 Missouri Ave",
+      "city": "Fort Leonard Wood",
+      "state": "MO",
+      "zip": "65473",
+      "phone": "(573) 596-0035",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HANNIBAL": [
+    {
+      "name": "HANNIBAL REGIONAL HOSPITAL",
+      "address": "6000 HOSPITAL DR",
+      "city": "HANNIBAL",
+      "state": "MO",
+      "zip": "63401",
+      "phone": "(573) 248-1300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARRISONVILLE": [
+    {
+      "name": "CASS REGIONAL MEDICAL CENTER",
+      "address": "2800 E ROCK HAVEN ROAD",
+      "city": "HARRISONVILLE",
+      "state": "MO",
+      "zip": "64701",
+      "phone": "(816) 380-5888",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAYTI": [
+    {
+      "name": "PEMISCOT COUNTY MEMORIAL HOSPITAL",
+      "address": "946 EAST REED",
+      "city": "HAYTI",
+      "state": "MO",
+      "zip": "63851",
+      "phone": "(573) 359-1372",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HERMANN": [
+    {
+      "name": "HERMANN AREA DISTRICT HOSPITAL",
+      "address": "509 W 18TH ST",
+      "city": "HERMANN",
+      "state": "MO",
+      "zip": "65041",
+      "phone": "(573) 486-2191",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOUSTON": [
+    {
+      "name": "TEXAS COUNTY MEMORIAL HOSPITAL",
+      "address": "1333 SAM HOUSTON BOULEVARD",
+      "city": "HOUSTON",
+      "state": "MO",
+      "zip": "65483",
+      "phone": "(417) 967-3311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "INDEPENDENCE": [
+    {
+      "name": "CENTERPOINT MEDICAL CENTER",
+      "address": "19600 EAST 39TH STREET",
+      "city": "INDEPENDENCE",
+      "state": "MO",
+      "zip": "64057",
+      "phone": "(816) 698-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JEFFERSON CITY": [
+    {
+      "name": "SSM HEALTH ST. MARY'S HOSPITAL - JEFFERSON CITY",
+      "address": "2505 MISSION DRIVE",
+      "city": "JEFFERSON CITY",
+      "state": "MO",
+      "zip": "65109",
+      "phone": "(573) 681-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JOPLIN": [
+    {
+      "name": "MERCY HOSPITAL JOPLIN",
+      "address": "100 MERCY WAY",
+      "city": "JOPLIN",
+      "state": "MO",
+      "zip": "64804",
+      "phone": "(417) 781-2727",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FREEMAN HEALTH SYSTEM - FREEMAN WEST",
+      "address": "1102 WEST 32ND STREET",
+      "city": "JOPLIN",
+      "state": "MO",
+      "zip": "64804",
+      "phone": "(417) 347-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KANSAS CITY": [
+    {
+      "name": "RESEARCH MEDICAL CENTER",
+      "address": "2316 E MEYER BLVD",
+      "city": "KANSAS CITY",
+      "state": "MO",
+      "zip": "64132",
+      "phone": "(816) 276-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TRUMAN MEDICAL CENTER HOSPITAL HILL",
+      "address": "2301 HOLMES STREET",
+      "city": "KANSAS CITY",
+      "state": "MO",
+      "zip": "64108",
+      "phone": "(816) 404-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KANSAS CITY VA MEDICAL CENTER",
+      "address": "4801 LINWOOD BLVD.",
+      "city": "KANSAS CITY",
+      "state": "MO",
+      "zip": "64128",
+      "phone": "(816) 861-4700",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT LUKES NORTH HOSPITAL",
+      "address": "5830 N W BARRY ROAD",
+      "city": "KANSAS CITY",
+      "state": "MO",
+      "zip": "64154",
+      "phone": "(816) 891-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST JOSEPH MEDICAL CENTER",
+      "address": "1000 CARONDELET DR",
+      "city": "KANSAS CITY",
+      "state": "MO",
+      "zip": "64114",
+      "phone": "(816) 942-4400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY HEALTH LAKEWOOD MEDICAL CENTER",
+      "address": "7900 LEE'S SUMMIT RD",
+      "city": "KANSAS CITY",
+      "state": "MO",
+      "zip": "64139",
+      "phone": "(816) 404-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST LUKES HOSPITAL OF KANSAS CITY",
+      "address": "4401 WORNALL ROAD",
+      "city": "KANSAS CITY",
+      "state": "MO",
+      "zip": "64111",
+      "phone": "(816) 932-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE CHILDREN'S MERCY HOSPITAL",
+      "address": "2401 GILLHAM ROAD",
+      "city": "KANSAS CITY",
+      "state": "MO",
+      "zip": "64108",
+      "phone": "(816) 234-3000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTER FOR BEHAVIORAL MEDICINE",
+      "address": "1000 E 24TH STREET",
+      "city": "KANSAS CITY",
+      "state": "MO",
+      "zip": "64108",
+      "phone": "(816) 512-7000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KIRKSVILLE": [
+    {
+      "name": "NORTHEAST REGIONAL MEDICAL CENTER",
+      "address": "315 S OSTEOPATHY",
+      "city": "KIRKSVILLE",
+      "state": "MO",
+      "zip": "63501",
+      "phone": "(660) 785-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE SAINT LOUIS": [
+    {
+      "name": "SSM ST JOSEPH HOSPITAL WEST",
+      "address": "100 MEDICAL PLAZA",
+      "city": "LAKE SAINT LOUIS",
+      "state": "MO",
+      "zip": "63367",
+      "phone": "(636) 625-5200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAMAR": [
+    {
+      "name": "COX BARTON COUNTY HOSPITAL",
+      "address": "29 NW 1ST LANE",
+      "city": "LAMAR",
+      "state": "MO",
+      "zip": "64759",
+      "phone": "(417) 682-6081",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEBANON": [
+    {
+      "name": "MERCY HOSPITAL LEBANON",
+      "address": "100 HOSPITAL DRIVE",
+      "city": "LEBANON",
+      "state": "MO",
+      "zip": "65536",
+      "phone": "(417) 533-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEES SUMMIT": [
+    {
+      "name": "LEE'S SUMMIT MEDICAL CENTER",
+      "address": "2100 SE BLUE PARKWAY",
+      "city": "LEES SUMMIT",
+      "state": "MO",
+      "zip": "64063",
+      "phone": "(816) 282-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT LUKE'S EAST  HOSPITAL",
+      "address": "100 N E SAINT LUKE'S BOULEVARD",
+      "city": "LEES SUMMIT",
+      "state": "MO",
+      "zip": "64086",
+      "phone": "(816) 347-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEXINGTON": [
+    {
+      "name": "LAFAYETTE REGIONAL HEALTH CENTER",
+      "address": "1500 STATE STREET",
+      "city": "LEXINGTON",
+      "state": "MO",
+      "zip": "64067",
+      "phone": "(660) 259-2203",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LIBERTY": [
+    {
+      "name": "LIBERTY HOSPITAL",
+      "address": "2525 GLENN HENDREN DR",
+      "city": "LIBERTY",
+      "state": "MO",
+      "zip": "64068",
+      "phone": "(816) 781-7200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOUISIANA": [
+    {
+      "name": "PIKE COUNTY MEMORIAL HOSPITAL",
+      "address": "2305 WEST GEORGIA STREET",
+      "city": "LOUISIANA",
+      "state": "MO",
+      "zip": "63353",
+      "phone": "(573) 754-5531",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MACON": [
+    {
+      "name": "MACON COUNTY SAMARITAN MEMORIAL HOSPITAL",
+      "address": "1205 NORTH MISSOURI ST",
+      "city": "MACON",
+      "state": "MO",
+      "zip": "63552",
+      "phone": "(660) 385-8700",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARSHALL": [
+    {
+      "name": "FITZGIBBON HOSPITAL",
+      "address": "2305 S 65 HIGHWAY",
+      "city": "MARSHALL",
+      "state": "MO",
+      "zip": "65340",
+      "phone": "(660) 886-7431",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARYLAND HEIGHTS": [
+    {
+      "name": "RANKEN JORDAN PEDIATRIC BRIDGE HOSPITAL",
+      "address": "11365 DORSETT ROAD",
+      "city": "MARYLAND HEIGHTS",
+      "state": "MO",
+      "zip": "63043",
+      "phone": "(314) 872-6400",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MARYLAND HEIGHTS CENTER FOR BEHAVIORAL HEALTH",
+      "address": "11100 AYSHIRE DR",
+      "city": "MARYLAND HEIGHTS",
+      "state": "MO",
+      "zip": "63043",
+      "phone": "(314) 528-2700",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARYVILLE": [
+    {
+      "name": "MOSAIC MEDICAL CENTER - MARYVILLE",
+      "address": "2016 SOUTH MAIN ST",
+      "city": "MARYVILLE",
+      "state": "MO",
+      "zip": "64468",
+      "phone": "(660) 562-2600",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MEMPHIS": [
+    {
+      "name": "SCOTLAND COUNTY  HOSPITAL",
+      "address": "450 E SIGLER AVENUE",
+      "city": "MEMPHIS",
+      "state": "MO",
+      "zip": "63555",
+      "phone": "(660) 465-8511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILAN": [
+    {
+      "name": "SULLIVAN COUNTY MEMORIAL HOSPITAL",
+      "address": "630 WEST THIRD STREET",
+      "city": "MILAN",
+      "state": "MO",
+      "zip": "63556",
+      "phone": "(660) 265-4212",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOBERLY": [
+    {
+      "name": "MOBERLY REGIONAL MEDICAL CENTER",
+      "address": "1515 UNION AVE",
+      "city": "MOBERLY",
+      "state": "MO",
+      "zip": "65270",
+      "phone": "(660) 263-8400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONETT": [
+    {
+      "name": "COX MONETT HOSPITAL",
+      "address": "1000 E US HIGHWAY 60",
+      "city": "MONETT",
+      "state": "MO",
+      "zip": "65708",
+      "phone": "(417) 354-1400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNTAIN VIEW": [
+    {
+      "name": "MERCY ST FRANCIS HOSPITAL",
+      "address": "100 WEST HIGHWAY 60, PO BOX 82",
+      "city": "MOUNTAIN VIEW",
+      "state": "MO",
+      "zip": "65548",
+      "phone": "(417) 934-7000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEOSHO": [
+    {
+      "name": "FREEMAN NEOSHO HOSPITAL",
+      "address": "113 WEST HICKORY STREET",
+      "city": "NEOSHO",
+      "state": "MO",
+      "zip": "64850",
+      "phone": "(417) 451-1234",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEVADA": [
+    {
+      "name": "NEVADA REGIONAL MEDICAL CENTER",
+      "address": "800 S ASH ST",
+      "city": "NEVADA",
+      "state": "MO",
+      "zip": "64772",
+      "phone": "(417) 667-3355",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTH KANSAS CITY": [
+    {
+      "name": "NORTH KANSAS CITY HOSPITAL",
+      "address": "2800 CLAY EDWARDS DRIVE",
+      "city": "NORTH KANSAS CITY",
+      "state": "MO",
+      "zip": "64116",
+      "phone": "(816) 691-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OFALLON": [
+    {
+      "name": "PROGRESS WEST HOSPITAL",
+      "address": "2 PROGRESS POINT PKWY",
+      "city": "OFALLON",
+      "state": "MO",
+      "zip": "63368",
+      "phone": "(636) 344-2273",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSAGE BEACH": [
+    {
+      "name": "LAKE REGIONAL HEALTH SYSTEM",
+      "address": "54 HOSPITAL DRIVE",
+      "city": "OSAGE BEACH",
+      "state": "MO",
+      "zip": "65065",
+      "phone": "(573) 348-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OSAGE BEACH CENTER FOR BEHAVIORAL HEALTH",
+      "address": "840 PASSOVER ROAD",
+      "city": "OSAGE BEACH",
+      "state": "MO",
+      "zip": "65065",
+      "phone": "(573) 302-0319",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PERRYVILLE": [
+    {
+      "name": "MERCY HOSPITAL PERRY",
+      "address": "434 NORTH WEST STREET",
+      "city": "PERRYVILLE",
+      "state": "MO",
+      "zip": "63775",
+      "phone": "(573) 547-2536",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PILOT KNOB": [
+    {
+      "name": "IRON COUNTY MEDICAL CENTER",
+      "address": "301 NORTH HIGHWAY 21",
+      "city": "PILOT KNOB",
+      "state": "MO",
+      "zip": "63663",
+      "phone": "(573) 546-1260",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POPLAR BLUFF": [
+    {
+      "name": "POPLAR BLUFF VA MEDICAL CENTER",
+      "address": "1500 N. WESTWOOD BLVD.",
+      "city": "POPLAR BLUFF",
+      "state": "MO",
+      "zip": "63901",
+      "phone": "(573) 686-4151",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "POPLAR BLUFF REGIONAL MEDICAL CENTER",
+      "address": "3100 OAK GROVE ROAD",
+      "city": "POPLAR BLUFF",
+      "state": "MO",
+      "zip": "63901",
+      "phone": "(573) 785-7721",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POTOSI": [
+    {
+      "name": "WASHINGTON COUNTY MEMORIAL HOSPITAL",
+      "address": "300 HEALTH WAY",
+      "city": "POTOSI",
+      "state": "MO",
+      "zip": "63664",
+      "phone": "(573) 438-5451",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RICHMOND": [
+    {
+      "name": "RAY COUNTY MEMORIAL HOSPITAL",
+      "address": "904 WOLLARD BOULEVARD",
+      "city": "RICHMOND",
+      "state": "MO",
+      "zip": "64085",
+      "phone": "(816) 470-5432",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROLLA": [
+    {
+      "name": "PHELPS COUNTY REGIONAL MEDICAL CENTER",
+      "address": "1000 W 10TH ST",
+      "city": "ROLLA",
+      "state": "MO",
+      "zip": "65401",
+      "phone": "(573) 458-8899",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT CHARLES": [
+    {
+      "name": "SSM ST JOSEPH HEALTH CENTER",
+      "address": "300 1ST CAPITOL DR",
+      "city": "SAINT CHARLES",
+      "state": "MO",
+      "zip": "63301",
+      "phone": "(636) 947-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTERPOINTE HOSPITAL",
+      "address": "4801 WELDON SPRING PARKWAY",
+      "city": "SAINT CHARLES",
+      "state": "MO",
+      "zip": "63304",
+      "phone": "(636) 441-7300",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT JOSEPH": [
+    {
+      "name": "MOSAIC LIFE CARE AT ST JOSEPH",
+      "address": "5325 FARAON STREET",
+      "city": "SAINT JOSEPH",
+      "state": "MO",
+      "zip": "64506",
+      "phone": "(816) 271-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTHWEST MISSOURI PSYCHIATRIC REHAB CTR",
+      "address": "3505 FREDERICK AVENUE",
+      "city": "SAINT JOSEPH",
+      "state": "MO",
+      "zip": "64502",
+      "phone": "(816) 387-2300",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT LOUIS": [
+    {
+      "name": "MERCY HOSPITAL ST LOUIS",
+      "address": "615 NEW BALLAS ROAD",
+      "city": "SAINT LOUIS",
+      "state": "MO",
+      "zip": "63141",
+      "phone": "(314) 251-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BARNES JEWISH HOSPITAL",
+      "address": "ONE BARNES-JEWISH HOSPITAL PLAZA",
+      "city": "SAINT LOUIS",
+      "state": "MO",
+      "zip": "63110",
+      "phone": "(314) 747-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MERCY HOSPITAL SOUTH",
+      "address": "10010 KENNERLY ROAD",
+      "city": "SAINT LOUIS",
+      "state": "MO",
+      "zip": "63128",
+      "phone": "(314) 525-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SSM HEALTH ST MARY'S HOSPITAL - ST LOUIS",
+      "address": "6420 CLAYTON RD",
+      "city": "SAINT LOUIS",
+      "state": "MO",
+      "zip": "63117",
+      "phone": "(314) 768-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SSM HEALTH SAINT LOUIS UNIVERSITY HOSPITAL",
+      "address": "1201 S GRAND BLVD",
+      "city": "SAINT LOUIS",
+      "state": "MO",
+      "zip": "63104",
+      "phone": "(314) 257-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MISSOURI BAPTIST MEDICAL CENTER",
+      "address": "3015 N BALLAS RD",
+      "city": "SAINT LOUIS",
+      "state": "MO",
+      "zip": "63131",
+      "phone": "(314) 996-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHRISTIAN HOSPITAL NORTHEAST",
+      "address": "11133 DUNN ROAD",
+      "city": "SAINT LOUIS",
+      "state": "MO",
+      "zip": "63136",
+      "phone": "(314) 653-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST LOUIS CHILDRENS HOSPITAL",
+      "address": "ONE CHILDRENS PLACE",
+      "city": "SAINT LOUIS",
+      "state": "MO",
+      "zip": "63110",
+      "phone": "(314) 454-6000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHRINERS HOSPITALS FOR CHILDREN",
+      "address": "4400 CLAYTON AVE",
+      "city": "SAINT LOUIS",
+      "state": "MO",
+      "zip": "63110",
+      "phone": "(314) 432-3600",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST LOUIS FORENSIC TREATMENT CENTER",
+      "address": "5400 ARSENAL ST",
+      "city": "SAINT LOUIS",
+      "state": "MO",
+      "zip": "63139",
+      "phone": "(314) 644-8000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT PETERS": [
+    {
+      "name": "BARNES-JEWISH ST PETERS HOSPITAL",
+      "address": "10 HOSPITAL DR",
+      "city": "SAINT PETERS",
+      "state": "MO",
+      "zip": "63376",
+      "phone": "(636) 916-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINTE GENEVIEVE": [
+    {
+      "name": "STE GENEVIEVE COUNTY MEMORIAL HOSPITAL",
+      "address": "800 STE GENEVIEVE DRIVE, PO BOX 468",
+      "city": "SAINTE GENEVIEVE",
+      "state": "MO",
+      "zip": "63670",
+      "phone": "(573) 883-2751",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALEM": [
+    {
+      "name": "SALEM MEMORIAL DISTRICT HOSPITAL",
+      "address": "PO BOX 774,",
+      "city": "SALEM",
+      "state": "MO",
+      "zip": "65560",
+      "phone": "(573) 729-6626",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEDALIA": [
+    {
+      "name": "BOTHWELL REGIONAL HEALTH CENTER",
+      "address": "601 E 14TH ST",
+      "city": "SEDALIA",
+      "state": "MO",
+      "zip": "65301",
+      "phone": "(660) 826-8833",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SIKESTON": [
+    {
+      "name": "MISSOURI DELTA MEDICAL CENTER",
+      "address": "1008 NORTH MAIN ST",
+      "city": "SIKESTON",
+      "state": "MO",
+      "zip": "63801",
+      "phone": "(573) 472-7586",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPRINGFIELD": [
+    {
+      "name": "COX MEDICAL CENTERS",
+      "address": "3801 SOUTH NATIONAL AVENUE",
+      "city": "SPRINGFIELD",
+      "state": "MO",
+      "zip": "65807",
+      "phone": "(417) 269-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MERCY HOSPITAL SPRINGFIELD",
+      "address": "2115 S. Fremont Ave",
+      "city": "SPRINGFIELD",
+      "state": "MO",
+      "zip": "65804",
+      "phone": "(417) 820-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LAKELAND BEHAVIORAL HEALTH SYSTEM",
+      "address": "440 S MARKET",
+      "city": "SPRINGFIELD",
+      "state": "MO",
+      "zip": "65806",
+      "phone": "(417) 865-5581",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PERIMETER BEHAVIORAL HOSPITAL OF SPRINGFIELD",
+      "address": "2828 N NATIONAL",
+      "city": "SPRINGFIELD",
+      "state": "MO",
+      "zip": "65803",
+      "phone": "(417) 837-4000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ST LOUIS": [
+    {
+      "name": "ST LUKE'S DES PERES HOSPITAL",
+      "address": "2345 DOUGHERTY FERRY ROAD",
+      "city": "ST LOUIS",
+      "state": "MO",
+      "zip": "63122",
+      "phone": "(314) 966-9100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ST. LOUIS": [
+    {
+      "name": "ST LOUIS-JOHN COCHRAN VA MEDICAL CENTER",
+      "address": "915 NORTH GRAND",
+      "city": "ST. LOUIS",
+      "state": "MO",
+      "zip": "63106",
+      "phone": "(314) 652-4100",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SULLIVAN": [
+    {
+      "name": "MISSOURI BAPTIST SULLIVAN HOSPITAL",
+      "address": "751 SAPPINGTON BRIDGE RD",
+      "city": "SULLIVAN",
+      "state": "MO",
+      "zip": "63080",
+      "phone": "(573) 468-4186",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TRENTON": [
+    {
+      "name": "WRIGHT MEMORIAL HOSPITAL",
+      "address": "191 IOWA BOULEVARD",
+      "city": "TRENTON",
+      "state": "MO",
+      "zip": "64683",
+      "phone": "(660) 359-5621",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TROY": [
+    {
+      "name": "MERCY HOSPITAL LINCOLN",
+      "address": "1000 EAST CHERRY STREET",
+      "city": "TROY",
+      "state": "MO",
+      "zip": "63379",
+      "phone": "(636) 528-8551",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "UNIONVILLE": [
+    {
+      "name": "PUTNAM COUNTY MEMORIAL HOSPITAL",
+      "address": "1926 OAK STREET,  PO BOX 389",
+      "city": "UNIONVILLE",
+      "state": "MO",
+      "zip": "63565",
+      "phone": "(660) 947-2411",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WARRENSBURG": [
+    {
+      "name": "WESTERN MISSOURI MEDICAL CENTER",
+      "address": "403 BURKARTH ROAD",
+      "city": "WARRENSBURG",
+      "state": "MO",
+      "zip": "64093",
+      "phone": "(660) 747-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WASHINGTON": [
+    {
+      "name": "MERCY HOSPITAL WASHINGTON",
+      "address": "901 EAST 5TH STREET",
+      "city": "WASHINGTON",
+      "state": "MO",
+      "zip": "63090",
+      "phone": "(636) 239-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST PLAINS": [
+    {
+      "name": "OZARKS HEALTHCARE",
+      "address": "1100 KENTUCKY AVE",
+      "city": "WEST PLAINS",
+      "state": "MO",
+      "zip": "65775",
+      "phone": "(417) 256-9111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINDSOR": [
+    {
+      "name": "ROYAL OAKS HOSPITAL",
+      "address": "307 N MAIN",
+      "city": "WINDSOR",
+      "state": "MO",
+      "zip": "65360",
+      "phone": "(660) 647-2182",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

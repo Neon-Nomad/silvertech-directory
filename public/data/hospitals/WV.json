@@ -1,0 +1,803 @@
+{
+  "BECKLEY": [
+    {
+      "name": "BECKLEY VA MEDICAL CENTER",
+      "address": "200 VETERANS AVENUE",
+      "city": "BECKLEY",
+      "state": "WV",
+      "zip": "25801",
+      "phone": "(304) 255-2121",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BECKLEY ARH HOSPITAL",
+      "address": "306 STANAFORD ROAD",
+      "city": "BECKLEY",
+      "state": "WV",
+      "zip": "25801",
+      "phone": "(304) 255-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RALEIGH GENERAL HOSPITAL",
+      "address": "1710 HARPER ROAD",
+      "city": "BECKLEY",
+      "state": "WV",
+      "zip": "25801",
+      "phone": "(304) 256-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BERKELEY SPRINGS": [
+    {
+      "name": "VALLEY HEALTH WAR MEMORIAL HOSPITAL",
+      "address": "1 HEALTHY WAY",
+      "city": "BERKELEY SPRINGS",
+      "state": "WV",
+      "zip": "25411",
+      "phone": "(304) 258-1234",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRIDGEPORT": [
+    {
+      "name": "UNITED HOSPITAL CENTER, INC",
+      "address": "327 MEDICAL PARK DRIVE",
+      "city": "BRIDGEPORT",
+      "state": "WV",
+      "zip": "26330",
+      "phone": "(681) 342-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BUCKEYE": [
+    {
+      "name": "POCAHONTAS MEMORIAL HOSPITAL",
+      "address": "150 DUNCAN ROAD",
+      "city": "BUCKEYE",
+      "state": "WV",
+      "zip": "24924",
+      "phone": "(304) 799-7400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BUCKHANNON": [
+    {
+      "name": "ST JOSEPH'S HOSPITAL OF BUCKHANNON, INC",
+      "address": "1 AMALIA DRIVE",
+      "city": "BUCKHANNON",
+      "state": "WV",
+      "zip": "26201",
+      "phone": "(304) 472-2000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHARLESTON": [
+    {
+      "name": "CHARLESTON AREA MEDICAL CENTER",
+      "address": "501 MORRIS STREET",
+      "city": "CHARLESTON",
+      "state": "WV",
+      "zip": "25301",
+      "phone": "(304) 388-5432",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CAMC CHARLESTON SURGICAL HOSPITAL",
+      "address": "1306 KANAWHA BOULEVARD EAST",
+      "city": "CHARLESTON",
+      "state": "WV",
+      "zip": "25301",
+      "phone": "(304) 343-4371",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HIGHLAND HOSPITAL",
+      "address": "300 56TH STREET, SE",
+      "city": "CHARLESTON",
+      "state": "WV",
+      "zip": "25304",
+      "phone": "(304) 926-1600",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLARKSBURG": [
+    {
+      "name": "CLARKSBURG VA MEDICAL CENTER",
+      "address": "1 MEDICAL CENTER DRIVE",
+      "city": "CLARKSBURG",
+      "state": "WV",
+      "zip": "26301",
+      "phone": "(304) 623-3461",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HIGHLAND-CLARKSBURG HOSPITAL, INC",
+      "address": "3 HOSPITAL PLAZA",
+      "city": "CLARKSBURG",
+      "state": "WV",
+      "zip": "26301",
+      "phone": "(304) 969-3100",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELKINS": [
+    {
+      "name": "DAVIS MEDICAL CENTER",
+      "address": "812 GORMAN AVENUE",
+      "city": "ELKINS",
+      "state": "WV",
+      "zip": "26241",
+      "phone": "(304) 636-3300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GASSAWAY": [
+    {
+      "name": "BRAXTON COUNTY MEMORIAL HOSPITAL, INC",
+      "address": "100 HOYLMAN DRIVE",
+      "city": "GASSAWAY",
+      "state": "WV",
+      "zip": "26624",
+      "phone": "(304) 364-5156",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLEN DALE": [
+    {
+      "name": "REYNOLDS MEMORIAL HOSPITAL",
+      "address": "800 WHEELING AVE",
+      "city": "GLEN DALE",
+      "state": "WV",
+      "zip": "26038",
+      "phone": "(304) 843-3230",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAFTON": [
+    {
+      "name": "GRAFTON CITY HOSPITAL, INC",
+      "address": "1 HOSPITAL PLAZA",
+      "city": "GRAFTON",
+      "state": "WV",
+      "zip": "26354",
+      "phone": "(304) 265-0400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRANTSVILLE": [
+    {
+      "name": "MINNIE HAMILTON HEALTH SYSTEM",
+      "address": "186 HOSPITAL DRIVE",
+      "city": "GRANTSVILLE",
+      "state": "WV",
+      "zip": "26147",
+      "phone": "(304) 354-9244",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HINTON": [
+    {
+      "name": "SUMMERS COUNTY ARH HOSPITAL",
+      "address": "115 SUMMERS HOSPITAL ROAD",
+      "city": "HINTON",
+      "state": "WV",
+      "zip": "25951",
+      "phone": "(304) 466-1000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUNTINGTON": [
+    {
+      "name": "ST MARYS MEDICAL CENTER",
+      "address": "2900 1ST AVENUE",
+      "city": "HUNTINGTON",
+      "state": "WV",
+      "zip": "25702",
+      "phone": "(304) 526-1234",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HUNTINGTON VA MEDICAL CENTER",
+      "address": "1540 SPRING VALLEY ROAD",
+      "city": "HUNTINGTON",
+      "state": "WV",
+      "zip": "25704",
+      "phone": "(304) 429-0241",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CABELL HUNTINGTON HOSPITAL, INC",
+      "address": "1340 HAL GREER BOULEVARD",
+      "city": "HUNTINGTON",
+      "state": "WV",
+      "zip": "25701",
+      "phone": "(304) 526-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIVER PARK HOSPITAL",
+      "address": "1230 SIXTH AVENUE",
+      "city": "HUNTINGTON",
+      "state": "WV",
+      "zip": "25701",
+      "phone": "(304) 526-9100",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MILDRED MITCHELL-BATEMAN HOSPITAL",
+      "address": "1530 NORWAY AVENUE",
+      "city": "HUNTINGTON",
+      "state": "WV",
+      "zip": "25705",
+      "phone": "(304) 525-7801",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KEYSER": [
+    {
+      "name": "POTOMAC VALLEY HOSPITAL",
+      "address": "100 PIN OAK LANE",
+      "city": "KEYSER",
+      "state": "WV",
+      "zip": "26726",
+      "phone": "(304) 597-3500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KINGWOOD": [
+    {
+      "name": "PRESTON MEMORIAL HOSPITAL",
+      "address": "150 MEMORIAL DRIVE",
+      "city": "KINGWOOD",
+      "state": "WV",
+      "zip": "26537",
+      "phone": "(304) 329-1400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOGAN": [
+    {
+      "name": "LOGAN REGIONAL MEDICAL CENTER",
+      "address": "20 HOSPITAL DRIVE",
+      "city": "LOGAN",
+      "state": "WV",
+      "zip": "25601",
+      "phone": "(304) 831-1101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MADISON": [
+    {
+      "name": "BOONE MEMORIAL HOSPITAL",
+      "address": "701 MADISON AVENUE",
+      "city": "MADISON",
+      "state": "WV",
+      "zip": "25130",
+      "phone": "(304) 369-1230",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARTINSBURG": [
+    {
+      "name": "BERKELEY MEDICAL CENTER",
+      "address": "2500 HOSPITAL DRIVE",
+      "city": "MARTINSBURG",
+      "state": "WV",
+      "zip": "25401",
+      "phone": "(304) 264-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MARTINSBURG VA MEDICAL CENTER",
+      "address": "510 BUTLER AVE.",
+      "city": "MARTINSBURG",
+      "state": "WV",
+      "zip": "25405",
+      "phone": "(304) 263-0811",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTGOMERY": [
+    {
+      "name": "MONTGOMERY GENERAL HOSPITAL",
+      "address": "401 SIXTH AVENUE",
+      "city": "MONTGOMERY",
+      "state": "WV",
+      "zip": "25136",
+      "phone": "(304) 442-5151",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MORGANTOWN": [
+    {
+      "name": "WEST VIRGINIA UNIVERSITY HOSPITALS, INC",
+      "address": "MEDICAL CENTER DRIVE",
+      "city": "MORGANTOWN",
+      "state": "WV",
+      "zip": "26506",
+      "phone": "(304) 598-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MON HEALTH MEDICAL CENTER",
+      "address": "1200 JD ANDERSON DRIVE",
+      "city": "MORGANTOWN",
+      "state": "WV",
+      "zip": "26505",
+      "phone": "(304) 598-1200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW MARTINSVILLE": [
+    {
+      "name": "WETZEL COUNTY HOSPITAL",
+      "address": "#3 EAST BENJAMIN DRIVE",
+      "city": "NEW MARTINSVILLE",
+      "state": "WV",
+      "zip": "26155",
+      "phone": "(304) 455-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OAK HILL": [
+    {
+      "name": "CAMC PLATEAU MEDICAL CENTER, INC",
+      "address": "430 MAIN STREET, WEST",
+      "city": "OAK HILL",
+      "state": "WV",
+      "zip": "25901",
+      "phone": "(304) 469-8600",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARKERSBURG": [
+    {
+      "name": "CAMDEN CLARK MEDICAL CENTER",
+      "address": "800 GARFIELD AVE",
+      "city": "PARKERSBURG",
+      "state": "WV",
+      "zip": "26101",
+      "phone": "(304) 424-2111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PETERSBURG": [
+    {
+      "name": "GRANT MEMORIAL HOSPITAL",
+      "address": "117 HOSPITAL DRIVE",
+      "city": "PETERSBURG",
+      "state": "WV",
+      "zip": "26847",
+      "phone": "(304) 257-1026",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PHILIPPI": [
+    {
+      "name": "BROADDUS HOSPITAL ASSOCIATION, INC",
+      "address": "1 HEALTHCARE DRIVE MANSFIELD HILL",
+      "city": "PHILIPPI",
+      "state": "WV",
+      "zip": "26416",
+      "phone": "(304) 457-1760",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POINT PLEASANT": [
+    {
+      "name": "RIVERS HEALTH",
+      "address": "2520 VALLEY DRIVE",
+      "city": "POINT PLEASANT",
+      "state": "WV",
+      "zip": "25550",
+      "phone": "(304) 675-4340",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRINCETON": [
+    {
+      "name": "PRINCETON COMMUNITY HOSPITAL",
+      "address": "122 12TH STREET",
+      "city": "PRINCETON",
+      "state": "WV",
+      "zip": "24740",
+      "phone": "(304) 487-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RANSON": [
+    {
+      "name": "JEFFERSON MEDICAL CENTER",
+      "address": "300 SOUTH PRESTON STREET",
+      "city": "RANSON",
+      "state": "WV",
+      "zip": "25438",
+      "phone": "(304) 728-1600",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RIPLEY": [
+    {
+      "name": "JACKSON GENERAL HOSPITAL",
+      "address": "122 PINNELL ST",
+      "city": "RIPLEY",
+      "state": "WV",
+      "zip": "25271",
+      "phone": "(304) 372-2731",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROMNEY": [
+    {
+      "name": "HAMPSHIRE MEMORIAL HOSPITAL",
+      "address": "363 SUNRISE BOULEVARD",
+      "city": "ROMNEY",
+      "state": "WV",
+      "zip": "26757",
+      "phone": "(304) 822-4561",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RONCEVERTE": [
+    {
+      "name": "CAMC GREENBRIER VALLEY MEDICAL CENTER, INC",
+      "address": "1320 MAPLEWOOD AVENUE",
+      "city": "RONCEVERTE",
+      "state": "WV",
+      "zip": "24970",
+      "phone": "(304) 647-4411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SISTERSVILLE": [
+    {
+      "name": "SISTERSVILLE GENERAL HOSPITAL",
+      "address": "314 SOUTH WELLS STREET",
+      "city": "SISTERSVILLE",
+      "state": "WV",
+      "zip": "26175",
+      "phone": "(304) 652-2611",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTH CHARLESTON": [
+    {
+      "name": "THOMAS MEMORIAL HOSPITAL",
+      "address": "4605 MACCORKLE AVENUE SW",
+      "city": "SOUTH CHARLESTON",
+      "state": "WV",
+      "zip": "25309",
+      "phone": "(304) 766-3600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPENCER": [
+    {
+      "name": "ROANE GENERAL HOSPITAL",
+      "address": "200 HOSPITAL DRIVE",
+      "city": "SPENCER",
+      "state": "WV",
+      "zip": "25276",
+      "phone": "(304) 927-4444",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUMMERSVILLE": [
+    {
+      "name": "SUMMERSVILLE REGIONAL MEDICAL CENTER",
+      "address": "400 FAIRVIEW HEIGHTS ROAD",
+      "city": "SUMMERSVILLE",
+      "state": "WV",
+      "zip": "26651",
+      "phone": "(304) 872-2891",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEBSTER SPRINGS": [
+    {
+      "name": "WEBSTER MEMORIAL HOSPITAL",
+      "address": "125 DIANA DRIVE",
+      "city": "WEBSTER SPRINGS",
+      "state": "WV",
+      "zip": "26288",
+      "phone": "(304) 847-5682",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEIRTON": [
+    {
+      "name": "WEIRTON MEDICAL CENTER, INC",
+      "address": "601 COLLIERS WAY",
+      "city": "WEIRTON",
+      "state": "WV",
+      "zip": "26062",
+      "phone": "(304) 797-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WELCH": [
+    {
+      "name": "WELCH COMMUNITY HOSPITAL",
+      "address": "454 MCDOWELL STREET",
+      "city": "WELCH",
+      "state": "WV",
+      "zip": "24801",
+      "phone": "(304) 436-8461",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTON": [
+    {
+      "name": "STONEWALL JACKSON MEMORIAL HOSPITAL",
+      "address": "230 HOSPITAL PLAZA",
+      "city": "WESTON",
+      "state": "WV",
+      "zip": "26452",
+      "phone": "(304) 269-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WILLIAM R SHARPE, JR HOSPITAL",
+      "address": "936 SHARPE HOSPITAL ROAD",
+      "city": "WESTON",
+      "state": "WV",
+      "zip": "26452",
+      "phone": "(304) 269-1210",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHEELING": [
+    {
+      "name": "WHEELING HOSPITAL, INC",
+      "address": "1 MEDICAL PARK",
+      "city": "WHEELING",
+      "state": "WV",
+      "zip": "26003",
+      "phone": "(304) 243-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHITEHALL": [
+    {
+      "name": "MON HEALTH MARION",
+      "address": "140 MIDDLETOWN LOOP",
+      "city": "WHITEHALL",
+      "state": "WV",
+      "zip": "26554",
+      "phone": "(304) 333-1150",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILLIAMSON": [
+    {
+      "name": "WILLIAMSON MEMORIAL INC",
+      "address": "859 ALDERSON ST",
+      "city": "WILLIAMSON",
+      "state": "WV",
+      "zip": "25661",
+      "phone": "(304) 235-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

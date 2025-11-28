@@ -1,0 +1,702 @@
+{
+  "AMERICAN FALLS": [
+    {
+      "name": "POWER COUNTY HOSPITAL DISTRICT",
+      "address": "510 ROOSEVELT STREET",
+      "city": "AMERICAN FALLS",
+      "state": "ID",
+      "zip": "83211",
+      "phone": "(208) 226-3200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARCO": [
+    {
+      "name": "LOST RIVERS MEDICAL CENTER",
+      "address": "551 HIGHLAND DRIVE",
+      "city": "ARCO",
+      "state": "ID",
+      "zip": "83213",
+      "phone": "(208) 252-7654",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLACKFOOT": [
+    {
+      "name": "GROVE CREEK MEDICAL CENTER",
+      "address": "350 NORTH MERIDIAN STREET",
+      "city": "BLACKFOOT",
+      "state": "ID",
+      "zip": "83221",
+      "phone": "(208) 782-2900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BINGHAM MEMORIAL HOSPITAL",
+      "address": "98 POPLAR STREET",
+      "city": "BLACKFOOT",
+      "state": "ID",
+      "zip": "83221",
+      "phone": "(208) 785-4100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "STATE HOSPITAL SOUTH",
+      "address": "700 EAST ALICE STREET",
+      "city": "BLACKFOOT",
+      "state": "ID",
+      "zip": "83221",
+      "phone": "(208) 785-1200",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOISE": [
+    {
+      "name": "ST LUKE'S REGIONAL MEDICAL CENTER",
+      "address": "190 EAST BANNOCK STREET",
+      "city": "BOISE",
+      "state": "ID",
+      "zip": "83712",
+      "phone": "(208) 381-2222",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT ALPHONSUS REGIONAL MEDICAL CENTER",
+      "address": "1055 NORTH CURTIS ROAD",
+      "city": "BOISE",
+      "state": "ID",
+      "zip": "83706",
+      "phone": "(208) 367-2121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BOISE VA MEDICAL CENTER",
+      "address": "500 W. FORT STREET",
+      "city": "BOISE",
+      "state": "ID",
+      "zip": "83702",
+      "phone": "(208) 422-1000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TREASURE VALLEY HOSPITAL",
+      "address": "8800 WEST EMERALD STREET",
+      "city": "BOISE",
+      "state": "ID",
+      "zip": "83704",
+      "phone": "(208) 373-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "INTERMOUNTAIN HOSPITAL",
+      "address": "303 NORTH ALLUMBAUGH STREET",
+      "city": "BOISE",
+      "state": "ID",
+      "zip": "83704",
+      "phone": "(208) 377-8400",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LIFEWAYS HOSPITAL",
+      "address": "8050 WEST NORTHVIEW STREET",
+      "city": "BOISE",
+      "state": "ID",
+      "zip": "83704",
+      "phone": "(208) 327-0504",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BONNERS FERRY": [
+    {
+      "name": "BOUNDARY COMMUNITY HOSPITAL",
+      "address": "6640 KANIKSU STREET",
+      "city": "BONNERS FERRY",
+      "state": "ID",
+      "zip": "83805",
+      "phone": "(208) 267-3141",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURLEY": [
+    {
+      "name": "CASSIA REGIONAL HOSPITAL",
+      "address": "1501 HILAND AVENUE",
+      "city": "BURLEY",
+      "state": "ID",
+      "zip": "83318",
+      "phone": "(208) 678-4444",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CALDWELL": [
+    {
+      "name": "WEST VALLEY MEDICAL CENTER",
+      "address": "1717 ARLINGTON STREET",
+      "city": "CALDWELL",
+      "state": "ID",
+      "zip": "83605",
+      "phone": "(208) 459-4641",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CASCADE": [
+    {
+      "name": "CASCADE MEDICAL CENTER",
+      "address": "402 LAKE CASCADE PARKWAY",
+      "city": "CASCADE",
+      "state": "ID",
+      "zip": "83611",
+      "phone": "(208) 382-4242",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COEUR D'ALENE": [
+    {
+      "name": "KOOTENAI HEALTH",
+      "address": "2003 KOOTENAI HEALTH WAY",
+      "city": "COEUR D'ALENE",
+      "state": "ID",
+      "zip": "83814",
+      "phone": "(208) 625-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COTTONWOOD": [
+    {
+      "name": "ST MARY'S HOSPITAL",
+      "address": "701 LEWISTON ST",
+      "city": "COTTONWOOD",
+      "state": "ID",
+      "zip": "83522",
+      "phone": "(208) 962-3251",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DRIGGS": [
+    {
+      "name": "TETON VALLEY HOSPITAL",
+      "address": "120 EAST HOWARD AVE",
+      "city": "DRIGGS",
+      "state": "ID",
+      "zip": "83422",
+      "phone": "(208) 354-2383",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EMMETT": [
+    {
+      "name": "VALOR HEALTH",
+      "address": "1202 EAST LOCUST STREET",
+      "city": "EMMETT",
+      "state": "ID",
+      "zip": "83617",
+      "phone": "(208) 365-3561",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GOODING": [
+    {
+      "name": "NORTH CANYON MEDICAL CENTER",
+      "address": "267 NORTH CANYON DR",
+      "city": "GOODING",
+      "state": "ID",
+      "zip": "83330",
+      "phone": "(208) 934-4433",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRANGEVILLE": [
+    {
+      "name": "SYRINGA GENERAL HOSPITAL",
+      "address": "607 W MAIN STREET",
+      "city": "GRANGEVILLE",
+      "state": "ID",
+      "zip": "83530",
+      "phone": "(208) 983-1700",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IDAHO FALLS": [
+    {
+      "name": "EASTERN IDAHO REGIONAL MEDICAL CENTER",
+      "address": "3100 CHANNING WAY",
+      "city": "IDAHO FALLS",
+      "state": "ID",
+      "zip": "83404",
+      "phone": "(208) 529-6111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MOUNTAIN VIEW HOSPITAL",
+      "address": "2325 CORONADO STREET",
+      "city": "IDAHO FALLS",
+      "state": "ID",
+      "zip": "83404",
+      "phone": "(208) 557-2700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "IDAHO FALLS COMMUNITY HOSPITAL, LLC",
+      "address": "2327 CORONADO ST",
+      "city": "IDAHO FALLS",
+      "state": "ID",
+      "zip": "83404",
+      "phone": "(208) 528-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JEROME": [
+    {
+      "name": "ST LUKE'S JEROME",
+      "address": "709 NORTH LINCOLN AVENUE",
+      "city": "JEROME",
+      "state": "ID",
+      "zip": "83338",
+      "phone": "(208) 324-4301",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KELLOGG": [
+    {
+      "name": "SHOSHONE MEDICAL CENTER",
+      "address": "25 JACOBS GULCH ROAD",
+      "city": "KELLOGG",
+      "state": "ID",
+      "zip": "83837",
+      "phone": "(208) 784-1221",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KETCHUM": [
+    {
+      "name": "ST LUKE'S WOOD RIVER MEDICAL CENTER",
+      "address": "100 HOSPITAL DRIVE",
+      "city": "KETCHUM",
+      "state": "ID",
+      "zip": "83340",
+      "phone": "(208) 727-8800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEWISTON": [
+    {
+      "name": "ST JOSEPH REGIONAL MEDICAL CENTER",
+      "address": "415 SIXTH STREET",
+      "city": "LEWISTON",
+      "state": "ID",
+      "zip": "83501",
+      "phone": "(208) 799-5300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MALAD CITY": [
+    {
+      "name": "NELL J REDFIELD MEMORIAL HOSPITAL",
+      "address": "150 NORTH 200 WEST",
+      "city": "MALAD CITY",
+      "state": "ID",
+      "zip": "83252",
+      "phone": "(208) 766-2231",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MCCALL": [
+    {
+      "name": "ST LUKE'S MCCALL",
+      "address": "1000 STATE STREET",
+      "city": "MCCALL",
+      "state": "ID",
+      "zip": "83638",
+      "phone": "(208) 630-2395",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MERIDIAN": [
+    {
+      "name": "COTTONWOOD CREEK BEHAVIORAL HOSPITAL",
+      "address": "2131 s bonito way",
+      "city": "MERIDIAN",
+      "state": "ID",
+      "zip": "83642",
+      "phone": "(208) 202-4700",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTPELIER": [
+    {
+      "name": "BEAR LAKE MEMORIAL HOSPITAL",
+      "address": "164 SOUTH FIFTH STREET",
+      "city": "MONTPELIER",
+      "state": "ID",
+      "zip": "83254",
+      "phone": "(208) 847-1630",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOSCOW": [
+    {
+      "name": "GRITMAN MEDICAL CENTER",
+      "address": "700 SOUTH MAIN STREET",
+      "city": "MOSCOW",
+      "state": "ID",
+      "zip": "83843",
+      "phone": "(208) 882-4511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNTAIN HOME": [
+    {
+      "name": "ST LUKE'S ELMORE MEDICAL CENTER",
+      "address": "895 NORTH 6TH EAST",
+      "city": "MOUNTAIN HOME",
+      "state": "ID",
+      "zip": "83647",
+      "phone": "(208) 587-8401",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NAMPA": [
+    {
+      "name": "SAINT ALPHONSUS MEDICAL CENTER - NAMPA",
+      "address": "4300 E FLAMINGO AVE",
+      "city": "NAMPA",
+      "state": "ID",
+      "zip": "83687",
+      "phone": "(208) 463-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST LUKE'S NAMPA MEDICAL CENTER",
+      "address": "9850 WEST ST LUKES DRIVE",
+      "city": "NAMPA",
+      "state": "ID",
+      "zip": "83687",
+      "phone": "(208) 505-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OROFINO": [
+    {
+      "name": "CLEARWATER VALLEY HOSPITAL & CLINICS",
+      "address": "301 CEDAR STREET",
+      "city": "OROFINO",
+      "state": "ID",
+      "zip": "83544",
+      "phone": "(208) 476-4555",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POCATELLO": [
+    {
+      "name": "PORTNEUF MEDICAL CENTER",
+      "address": "777 HOSPITAL WAY",
+      "city": "POCATELLO",
+      "state": "ID",
+      "zip": "83201",
+      "phone": "(208) 239-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POST FALLS": [
+    {
+      "name": "NORTHWEST SPECIALTY HOSPITAL",
+      "address": "1593 EAST POLSTON AVENUE",
+      "city": "POST FALLS",
+      "state": "ID",
+      "zip": "83854",
+      "phone": "(208) 262-2300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRESTON": [
+    {
+      "name": "FRANKLIN COUNTY MEDICAL CENTER",
+      "address": "44 NORTH FIRST EAST",
+      "city": "PRESTON",
+      "state": "ID",
+      "zip": "83263",
+      "phone": "(208) 852-0137",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REXBURG": [
+    {
+      "name": "MADISON MEMORIAL HOSPITAL",
+      "address": "450 EAST MAIN STREET",
+      "city": "REXBURG",
+      "state": "ID",
+      "zip": "83440",
+      "phone": "(208) 359-6488",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RUPERT": [
+    {
+      "name": "MINIDOKA MEMORIAL HOSPITAL",
+      "address": "1224 8TH STREET",
+      "city": "RUPERT",
+      "state": "ID",
+      "zip": "83350",
+      "phone": "(208) 436-0481",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT MARIES": [
+    {
+      "name": "BENEWAH COMMUNITY HOSPITAL",
+      "address": "229 SOUTH 7TH STREET",
+      "city": "SAINT MARIES",
+      "state": "ID",
+      "zip": "83861",
+      "phone": "(208) 245-5551",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALMON": [
+    {
+      "name": "STEELE MEMORIAL MEDICAL CENTER",
+      "address": "203 SOUTH DAISY STREET",
+      "city": "SALMON",
+      "state": "ID",
+      "zip": "83467",
+      "phone": "(208) 756-5600",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANDPOINT": [
+    {
+      "name": "BONNER GENERAL HOSPITAL",
+      "address": "520 NORTH THIRD AVENUE",
+      "city": "SANDPOINT",
+      "state": "ID",
+      "zip": "83864",
+      "phone": "(208) 263-1441",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SODA SPRINGS": [
+    {
+      "name": "CARIBOU MEDICAL CENTER",
+      "address": "300 SOUTH 3RD WEST",
+      "city": "SODA SPRINGS",
+      "state": "ID",
+      "zip": "83276",
+      "phone": "(208) 547-3341",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TWIN FALLS": [
+    {
+      "name": "ST LUKES MAGIC VALLEY MEDICAL CENTER",
+      "address": "801 POLE LINE ROAD WEST",
+      "city": "TWIN FALLS",
+      "state": "ID",
+      "zip": "83301",
+      "phone": "(208) 814-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEISER": [
+    {
+      "name": "WEISER MEMORIAL HOSPITAL",
+      "address": "645 EAST 5TH STREET",
+      "city": "WEISER",
+      "state": "ID",
+      "zip": "83672",
+      "phone": "(208) 549-0370",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

@@ -1,0 +1,541 @@
+{
+  "BRANFORD": [
+    {
+      "name": "THE CONNECTICUT HOSPICE INC.",
+      "address": "100 DOUBLE BEACH ROAD",
+      "city": "BRANFORD",
+      "state": "CT",
+      "zip": "06405",
+      "phone": "(203) 315-7500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRIDGEPORT": [
+    {
+      "name": "BRIDGEPORT HOSPITAL",
+      "address": "267 GRANT STREET",
+      "city": "BRIDGEPORT",
+      "state": "CT",
+      "zip": "06610",
+      "phone": "(203) 384-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST VINCENT'S MEDICAL CENTER",
+      "address": "2800 MAIN ST",
+      "city": "BRIDGEPORT",
+      "state": "CT",
+      "zip": "06606",
+      "phone": "(203) 576-5551",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHWEST CONNECTICUT MENTAL HEALTH SYSTEM",
+      "address": "1635 CENTRAL AVE",
+      "city": "BRIDGEPORT",
+      "state": "CT",
+      "zip": "06610",
+      "phone": "(203) 551-7461",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRISTOL": [
+    {
+      "name": "BRISTOL HOSPITAL",
+      "address": "41 BREWSTER RD",
+      "city": "BRISTOL",
+      "state": "CT",
+      "zip": "06010",
+      "phone": "(860) 585-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DANBURY": [
+    {
+      "name": "DANBURY HOSPITAL",
+      "address": "24 HOSPITAL AVE",
+      "city": "DANBURY",
+      "state": "CT",
+      "zip": "06810",
+      "phone": "(203) 739-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DERBY": [
+    {
+      "name": "GRIFFIN HOSPITAL",
+      "address": "130 DIVISION ST",
+      "city": "DERBY",
+      "state": "CT",
+      "zip": "06418",
+      "phone": "(203) 732-7500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FARMINGTON": [
+    {
+      "name": "JOHN DEMPSEY HOSPITAL OF THE UNIVERSITY OF CONNECT",
+      "address": "263 FARMINGTON AVE",
+      "city": "FARMINGTON",
+      "state": "CT",
+      "zip": "06032",
+      "phone": "(860) 679-1145",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENWICH": [
+    {
+      "name": "GREENWICH HOSPITAL ASSOCIATION -",
+      "address": "5 PERRYRIDGE RD",
+      "city": "GREENWICH",
+      "state": "CT",
+      "zip": "06830",
+      "phone": "(203) 863-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARTFORD": [
+    {
+      "name": "ST FRANCIS HOSPITAL & MEDICAL CENTER",
+      "address": "114 WOODLAND STREET & 500 BLUE HILLS AVENUE",
+      "city": "HARTFORD",
+      "state": "CT",
+      "zip": "06105",
+      "phone": "(860) 714-5541",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HARTFORD HOSPITAL",
+      "address": "80 SEYMOUR STREET",
+      "city": "HARTFORD",
+      "state": "CT",
+      "zip": "06102",
+      "phone": "(860) 545-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CONNECTICUT CHILDRENS MEDICAL CENTER",
+      "address": "282 WASHINGTON STREET",
+      "city": "HARTFORD",
+      "state": "CT",
+      "zip": "06106",
+      "phone": "(860) 545-9000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANCHESTER": [
+    {
+      "name": "MANCHESTER MEMORIAL HOSPITAL",
+      "address": "71 HAYNES ST",
+      "city": "MANCHESTER",
+      "state": "CT",
+      "zip": "06040",
+      "phone": "(860) 647-4780",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANSFIELD CENTER": [
+    {
+      "name": "NATCHAUG HOSPITAL",
+      "address": "189 STORRS RD",
+      "city": "MANSFIELD CENTER",
+      "state": "CT",
+      "zip": "06250",
+      "phone": "(860) 456-1311",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MERIDEN": [
+    {
+      "name": "MIDSTATE MEDICAL CENTER",
+      "address": "435 LEWIS AVENUE",
+      "city": "MERIDEN",
+      "state": "CT",
+      "zip": "06450",
+      "phone": "(203) 694-8200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIDDLETOWN": [
+    {
+      "name": "MIDDLESEX HOSPITAL",
+      "address": "28 CRESCENT ST",
+      "city": "MIDDLETOWN",
+      "state": "CT",
+      "zip": "06457",
+      "phone": "(860) 344-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CONNECTICUT VALLEY HOSP",
+      "address": "1000 SILVER ST",
+      "city": "MIDDLETOWN",
+      "state": "CT",
+      "zip": "06457",
+      "phone": "(203) 344-2666",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ALBERT J SOLNIT CHILDREN'S CENTER - SOUTH CAMPUS",
+      "address": "915 RIVER ROAD",
+      "city": "MIDDLETOWN",
+      "state": "CT",
+      "zip": "06457",
+      "phone": "(860) 704-4090",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW BRITAIN": [
+    {
+      "name": "THE HOSPITAL OF CENTRAL CONNECTICUT",
+      "address": "100 GRAND STREET",
+      "city": "NEW BRITAIN",
+      "state": "CT",
+      "zip": "06050",
+      "phone": "(860) 224-5011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW CANAAN": [
+    {
+      "name": "SILVER HILL HOSPITAL INC",
+      "address": "208 VALLEY ROAD",
+      "city": "NEW CANAAN",
+      "state": "CT",
+      "zip": "06840",
+      "phone": "(203) 966-3561",
+      "type": "Psychiatric",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW HAVEN": [
+    {
+      "name": "YALE-NEW HAVEN HOSPITAL",
+      "address": "20 YORK ST",
+      "city": "NEW HAVEN",
+      "state": "CT",
+      "zip": "06504",
+      "phone": "(203) 688-4242",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CONNECTICUT MENTAL HEALTH CENTER",
+      "address": "34 PARK STREET",
+      "city": "NEW HAVEN",
+      "state": "CT",
+      "zip": "06508",
+      "phone": "(203) 974-3000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW LONDON": [
+    {
+      "name": "LAWRENCE & MEMORIAL HOSPITAL",
+      "address": "365 MONTAUK AVE",
+      "city": "NEW LONDON",
+      "state": "CT",
+      "zip": "06320",
+      "phone": "(860) 442-0711",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORWALK": [
+    {
+      "name": "NORWALK HOSPITAL",
+      "address": "24 STEVENS STREET",
+      "city": "NORWALK",
+      "state": "CT",
+      "zip": "06856",
+      "phone": "(203) 852-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORWICH": [
+    {
+      "name": "WILLIAM W BACKUS HOSPITAL",
+      "address": "326 WASHINGTON ST",
+      "city": "NORWICH",
+      "state": "CT",
+      "zip": "06360",
+      "phone": "(860) 889-8331",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PUTNAM": [
+    {
+      "name": "DAY KIMBALL HOSPITAL",
+      "address": "320 POMFRET STREET",
+      "city": "PUTNAM",
+      "state": "CT",
+      "zip": "06260",
+      "phone": "(860) 928-6541",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHARON": [
+    {
+      "name": "SHARON HOSPITAL",
+      "address": "50 HOSPITAL HILL ROAD",
+      "city": "SHARON",
+      "state": "CT",
+      "zip": "06069",
+      "phone": "(860) 364-4228",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STAFFORD SPRINGS": [
+    {
+      "name": "JOHNSON MEMORIAL HOSPITAL",
+      "address": "201 CHESTNUT HILL ROAD",
+      "city": "STAFFORD SPRINGS",
+      "state": "CT",
+      "zip": "06076",
+      "phone": "(860) 684-4251",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STAMFORD": [
+    {
+      "name": "STAMFORD HOSPITAL",
+      "address": "ONE HOSPITAL PLAZA",
+      "city": "STAMFORD",
+      "state": "CT",
+      "zip": "06904",
+      "phone": "(203) 276-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TORRINGTON": [
+    {
+      "name": "CHARLOTTE HUNGERFORD HOSPITAL",
+      "address": "540 LITCHFIELD ST",
+      "city": "TORRINGTON",
+      "state": "CT",
+      "zip": "06790",
+      "phone": "(860) 496-6666",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VERNON": [
+    {
+      "name": "ROCKVILLE GENERAL HOSPITAL",
+      "address": "31 UNION ST",
+      "city": "VERNON",
+      "state": "CT",
+      "zip": "06066",
+      "phone": "(860) 872-5160",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WALLINGFORD": [
+    {
+      "name": "MASONICARE HEALTH CENTER",
+      "address": "22 MASONIC AVE BLDG STURGES",
+      "city": "WALLINGFORD",
+      "state": "CT",
+      "zip": "06492",
+      "phone": "(203) 679-5900",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WATERBURY": [
+    {
+      "name": "WATERBURY HOSPITAL",
+      "address": "64 ROBBINS ST",
+      "city": "WATERBURY",
+      "state": "CT",
+      "zip": "06721",
+      "phone": "(203) 573-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT MARY'S HOSPITAL",
+      "address": "56 FRANKLIN STREET",
+      "city": "WATERBURY",
+      "state": "CT",
+      "zip": "06706",
+      "phone": "(203) 709-6020",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST HARTFORD": [
+    {
+      "name": "CONNECTICUT BEHAVIORAL HEALTH HOSPITAL",
+      "address": "1 ABRAHMS BOULEVARD",
+      "city": "WEST HARTFORD",
+      "state": "CT",
+      "zip": "06117",
+      "phone": "(860) 218-2300",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST HAVEN": [
+    {
+      "name": "WEST HAVEN VA MEDICAL CENTER",
+      "address": "950 CAMPBELL AVENUE",
+      "city": "WEST HAVEN",
+      "state": "CT",
+      "zip": "06516",
+      "phone": "(203) 932-5711",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILLIMANTIC": [
+    {
+      "name": "WINDHAM COMMUNITY MEMORIAL HOSPITAL",
+      "address": "112 MANSFIELD AVENUE",
+      "city": "WILLIMANTIC",
+      "state": "CT",
+      "zip": "06226",
+      "phone": "(860) 456-9116",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

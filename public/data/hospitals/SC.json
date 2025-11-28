@@ -1,0 +1,950 @@
+{
+  "ABBEVILLE": [
+    {
+      "name": "ABBEVILLE AREA MEDICAL CENTER",
+      "address": "420 THOMSON CIRCLE",
+      "city": "ABBEVILLE",
+      "state": "SC",
+      "zip": "29620",
+      "phone": "(864) 366-5011",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AIKEN": [
+    {
+      "name": "AIKEN REGIONAL MEDICAL CENTER",
+      "address": "302 UNIVERSITY PARKWAY",
+      "city": "AIKEN",
+      "state": "SC",
+      "zip": "29801",
+      "phone": "(803) 641-5900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANDERSON": [
+    {
+      "name": "ANMED HEALTH",
+      "address": "800 N FANT ST",
+      "city": "ANDERSON",
+      "state": "SC",
+      "zip": "29621",
+      "phone": "(864) 512-2830",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PATRICK B HARRIS PSYCHIATRIC HOSPITAL",
+      "address": "130 HIGHWAY 252",
+      "city": "ANDERSON",
+      "state": "SC",
+      "zip": "29622",
+      "phone": "(803) 231-2600",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEAUFORT": [
+    {
+      "name": "BEAUFORT COUNTY MEMORIAL HOSPITAL",
+      "address": "955 RIBAUT RD",
+      "city": "BEAUFORT",
+      "state": "SC",
+      "zip": "29902",
+      "phone": "(843) 522-5200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Beaufort": [
+    {
+      "name": "NH Beaufort",
+      "address": "1 Pinckney Blvd",
+      "city": "Beaufort",
+      "state": "SC",
+      "zip": "29902",
+      "phone": "(843) 228-5200",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAMDEN": [
+    {
+      "name": "KERSHAWHEALTH",
+      "address": "1315 ROBERTS STREET",
+      "city": "CAMDEN",
+      "state": "SC",
+      "zip": "29020",
+      "phone": "(803) 432-4311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHARLESTON": [
+    {
+      "name": "MUSC MEDICAL CENTER",
+      "address": "169 ASHLEY AVE",
+      "city": "CHARLESTON",
+      "state": "SC",
+      "zip": "29425",
+      "phone": "(843) 792-2300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BON SECOURS-ST FRANCIS XAVIER HOSPITAL",
+      "address": "2095 HENRY TECKLENBURG DRIVE",
+      "city": "CHARLESTON",
+      "state": "SC",
+      "zip": "29414",
+      "phone": "(843) 402-1006",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TRIDENT MEDICAL CENTER",
+      "address": "9330 MEDICAL PLAZA DR",
+      "city": "CHARLESTON",
+      "state": "SC",
+      "zip": "29406",
+      "phone": "(843) 847-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ROPER HOSPITAL",
+      "address": "316 CALHOUN ST",
+      "city": "CHARLESTON",
+      "state": "SC",
+      "zip": "29401",
+      "phone": "(843) 724-2800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHARLESTON VA MEDICAL CENTER",
+      "address": "109 BEE STREET",
+      "city": "CHARLESTON",
+      "state": "SC",
+      "zip": "29401",
+      "phone": "(843) 577-5011",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PALMETTO LOWCOUNTRY BEHAVIORAL HEALTH",
+      "address": "2777 SPEISSEGGER DRIVE",
+      "city": "CHARLESTON",
+      "state": "SC",
+      "zip": "29405",
+      "phone": "(843) 747-5830",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHERAW": [
+    {
+      "name": "MCLEOD HEALTH CHERAW",
+      "address": "711 CHESTERFIELD HIGHWAY",
+      "city": "CHERAW",
+      "state": "SC",
+      "zip": "29520",
+      "phone": "(843) 537-7881",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHESTER": [
+    {
+      "name": "MUSC HEALTH CHESTER MEDICAL CENTER",
+      "address": "1 MEDICAL PARK DRIVE",
+      "city": "CHESTER",
+      "state": "SC",
+      "zip": "29706",
+      "phone": "(803) 581-3151",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLINTON": [
+    {
+      "name": "PRISMA HEALTH LAURENS COUNTY HOSPITAL",
+      "address": "22725 HIGHWAY 76 EAST",
+      "city": "CLINTON",
+      "state": "SC",
+      "zip": "29325",
+      "phone": "(864) 833-9100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUMBIA": [
+    {
+      "name": "PRISMA HEALTH RICHLAND HOSPITAL",
+      "address": "5 MEDICAL PARK",
+      "city": "COLUMBIA",
+      "state": "SC",
+      "zip": "29203",
+      "phone": "(803) 296-2548",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MUSC HEALTH COLUMBIA MEDICAL CENTER DOWNTOWN",
+      "address": "2435 FOREST DRIVE",
+      "city": "COLUMBIA",
+      "state": "SC",
+      "zip": "29204",
+      "phone": "(803) 256-5300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PRISMA HEALTH BAPTIST",
+      "address": "1330 TAYLOR AT MARION ST",
+      "city": "COLUMBIA",
+      "state": "SC",
+      "zip": "29220",
+      "phone": "(803) 296-5678",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PRISMA HEALTH BAPTIST PARKRIDGE",
+      "address": "400 PALMETTO HEALTH PARKWAY",
+      "city": "COLUMBIA",
+      "state": "SC",
+      "zip": "29212",
+      "phone": "(803) 907-7011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COLUMBIA SC VA MEDICAL CENTER",
+      "address": "6439 GARNERS FERRY ROAD",
+      "city": "COLUMBIA",
+      "state": "SC",
+      "zip": "29209",
+      "phone": "(803) 695-7980",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "G WERBER BRYAN PSYCH HOSP",
+      "address": "220 FAISON DR",
+      "city": "COLUMBIA",
+      "state": "SC",
+      "zip": "29203",
+      "phone": "(803) 935-7143",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CONWAY": [
+    {
+      "name": "CONWAY MEDICAL CENTER",
+      "address": "300 SINGLETON RIDGE ROAD",
+      "city": "CONWAY",
+      "state": "SC",
+      "zip": "29526",
+      "phone": "(843) 347-8037",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LIGHTHOUSE BEHAVIORAL HEALTH HOSPITAL",
+      "address": "152 WACCAMAW MEDICAL PARK DRIVE",
+      "city": "CONWAY",
+      "state": "SC",
+      "zip": "29526",
+      "phone": "(843) 347-8871",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DILLON": [
+    {
+      "name": "MCLEOD MEDICAL CENTER - DILLON",
+      "address": "301 E JACKSON STREET PO BOX 1327",
+      "city": "DILLON",
+      "state": "SC",
+      "zip": "29536",
+      "phone": "(843) 774-4111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EASLEY": [
+    {
+      "name": "PRISMA HEALTH BAPTIST EASLEY HOSPITAL",
+      "address": "200 FLEETWOOD DRIVE",
+      "city": "EASLEY",
+      "state": "SC",
+      "zip": "29640",
+      "phone": "(864) 442-7606",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EDGEFIELD": [
+    {
+      "name": "EDGEFIELD COUNTY HEALTHCARE AN AFFILIATE OF SELF R",
+      "address": "300 RIDGE MEDICAL PLAZA",
+      "city": "EDGEFIELD",
+      "state": "SC",
+      "zip": "29384",
+      "phone": "(803) 637-3174",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAIRFAX": [
+    {
+      "name": "ALLENDALE COUNTY HOSPITAL",
+      "address": "1787 ALLENDALE FAIRFAX RD",
+      "city": "FAIRFAX",
+      "state": "SC",
+      "zip": "29827",
+      "phone": "(803) 632-3311",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FLORENCE": [
+    {
+      "name": "MCLEOD REGIONAL MEDICAL CENTER-PEE DEE",
+      "address": "555 E CHEVES ST BOX 8700",
+      "city": "FLORENCE",
+      "state": "SC",
+      "zip": "29506",
+      "phone": "(843) 777-2900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MUSC HEALTH FLORENCE MEDICAL CENTER",
+      "address": "805 PAMPLICO HWY BOX 100550",
+      "city": "FLORENCE",
+      "state": "SC",
+      "zip": "29505",
+      "phone": "(843) 674-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GAFFNEY": [
+    {
+      "name": "CHEROKEE MEDICAL CENTER",
+      "address": "1530 N LIMESTONE ST",
+      "city": "GAFFNEY",
+      "state": "SC",
+      "zip": "29340",
+      "phone": "(864) 487-4271",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GEORGETOWN": [
+    {
+      "name": "TIDELANDS GEORGETOWN MEMORIAL HOSPITAL",
+      "address": "606 BLACK RIVER RD DRAWER 1718",
+      "city": "GEORGETOWN",
+      "state": "SC",
+      "zip": "29440",
+      "phone": "(843) 527-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENVILLE": [
+    {
+      "name": "ST FRANCIS-DOWNTOWN",
+      "address": "ONE ST FRANCIS DR",
+      "city": "GREENVILLE",
+      "state": "SC",
+      "zip": "29601",
+      "phone": "(800) 805-5678",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PRISMA HEALTH GREENVILLE MEMORIAL HOSPITAL",
+      "address": "701 GROVE ROAD",
+      "city": "GREENVILLE",
+      "state": "SC",
+      "zip": "29605",
+      "phone": "(864) 455-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PRISMA HEALTH  PATEWOOD HOSPITAL",
+      "address": "175 PATEWOOD DRIVE",
+      "city": "GREENVILLE",
+      "state": "SC",
+      "zip": "29615",
+      "phone": "(864) 797-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHRINERS HOSPITALS FOR CHILDREN",
+      "address": "950 WEST FARIS ROAD",
+      "city": "GREENVILLE",
+      "state": "SC",
+      "zip": "29605",
+      "phone": "(864) 271-3444",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENWOOD": [
+    {
+      "name": "SELF REGIONAL HEALTHCARE",
+      "address": "1325 SPRING STREET",
+      "city": "GREENWOOD",
+      "state": "SC",
+      "zip": "29646",
+      "phone": "(864) 227-4111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREER": [
+    {
+      "name": "PELHAM MEDICAL CENTER",
+      "address": "250 WESTMORELAND ROAD",
+      "city": "GREER",
+      "state": "SC",
+      "zip": "29651",
+      "phone": "(864) 560-6554",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CAROLINA CTR FOR BEHAVIORAL HEALTH,THE",
+      "address": "2700 E PHILLIPS RD",
+      "city": "GREER",
+      "state": "SC",
+      "zip": "29650",
+      "phone": "(864) 235-2335",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARDEEVILLE": [
+    {
+      "name": "COASTAL CAROLINA HOSPITAL",
+      "address": "1000 MEDICAL CENTER DRIVE",
+      "city": "HARDEEVILLE",
+      "state": "SC",
+      "zip": "29927",
+      "phone": "(843) 784-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARTSVILLE": [
+    {
+      "name": "CAROLINA PINES REGIONAL MEDICAL CENTER",
+      "address": "1304 W BOBO NEWSOM HWY",
+      "city": "HARTSVILLE",
+      "state": "SC",
+      "zip": "29550",
+      "phone": "(864) 339-2100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HILTON HEAD ISLAND": [
+    {
+      "name": "HILTON HEAD REGIONAL MEDICAL CENTER",
+      "address": "25 HOSPITAL CENTER BLVD",
+      "city": "HILTON HEAD ISLAND",
+      "state": "SC",
+      "zip": "29926",
+      "phone": "(843) 681-6122",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LANCASTER": [
+    {
+      "name": "MUSC HEALTH LANCASTER MEDICAL CENTER",
+      "address": "800 W MEETING ST",
+      "city": "LANCASTER",
+      "state": "SC",
+      "zip": "29720",
+      "phone": "(803) 286-1481",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "REBOUND BEHAVIORAL HEALTH",
+      "address": "134 EAST REBOUND ROAD",
+      "city": "LANCASTER",
+      "state": "SC",
+      "zip": "29720",
+      "phone": "(803) 313-3700",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LORIS": [
+    {
+      "name": "MCLEOD LORIS  HOSPITAL",
+      "address": "3655 MITCHELL STREET",
+      "city": "LORIS",
+      "state": "SC",
+      "zip": "29569",
+      "phone": "(843) 716-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANNING": [
+    {
+      "name": "MCLEOD HEALTH CLARENDON",
+      "address": "10 EAST HOSPITAL STREET",
+      "city": "MANNING",
+      "state": "SC",
+      "zip": "29102",
+      "phone": "(803) 435-8463",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT PLEASANT": [
+    {
+      "name": "EAST COOPER MEDICAL CENTER",
+      "address": "2000 HOSPITAL DR",
+      "city": "MOUNT PLEASANT",
+      "state": "SC",
+      "zip": "29464",
+      "phone": "(843) 881-0100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MOUNT PLEASANT HOSPITAL",
+      "address": "3510 HIGHWAY 17 NORTH SUITE 140",
+      "city": "MOUNT PLEASANT",
+      "state": "SC",
+      "zip": "29466",
+      "phone": "(843) 724-2954",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MULLINS": [
+    {
+      "name": "MUSC HEALTH MARION MEDICAL CENTER",
+      "address": "2829 E HWY 76",
+      "city": "MULLINS",
+      "state": "SC",
+      "zip": "29574",
+      "phone": "(843) 431-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MURRELLS INLET": [
+    {
+      "name": "TIDELANDS WACCAMAW COMMUNITY HOSPITAL",
+      "address": "4070 HWY 17",
+      "city": "MURRELLS INLET",
+      "state": "SC",
+      "zip": "29576",
+      "phone": "(843) 652-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MYRTLE BEACH": [
+    {
+      "name": "GRAND STRAND REGIONAL MEDICAL CENTER",
+      "address": "809 82ND PARKWAY",
+      "city": "MYRTLE BEACH",
+      "state": "SC",
+      "zip": "29572",
+      "phone": "(843) 692-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWBERRY": [
+    {
+      "name": "NEWBERRY COUNTY MEMORIAL HOSPITAL",
+      "address": "2669 KINARD ST PO BOX 497",
+      "city": "NEWBERRY",
+      "state": "SC",
+      "zip": "29108",
+      "phone": "(803) 405-7145",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PICKENS": [
+    {
+      "name": "CANNON MEMORIAL HOSPITAL",
+      "address": "123 W G ACKER DRIVE",
+      "city": "PICKENS",
+      "state": "SC",
+      "zip": "29671",
+      "phone": "(864) 878-4791",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROCK HILL": [
+    {
+      "name": "PIEDMONT MEDICAL CENTER",
+      "address": "1731 FRANK GASTON BLVD",
+      "city": "ROCK HILL",
+      "state": "SC",
+      "zip": "29732",
+      "phone": "(803) 329-1234",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SENECA": [
+    {
+      "name": "PRISMA HEALTH OCONEE MEMORIAL HOSPITAL",
+      "address": "298 MEMORIAL DR",
+      "city": "SENECA",
+      "state": "SC",
+      "zip": "29672",
+      "phone": "(864) 482-3100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SIMPSONVILLE": [
+    {
+      "name": "PRISMA HEALTH HILLCREST HOSPITAL",
+      "address": "741 SOUTH EAST MAIN STREET",
+      "city": "SIMPSONVILLE",
+      "state": "SC",
+      "zip": "29681",
+      "phone": "(864) 454-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPARTANBURG": [
+    {
+      "name": "SPARTANBURG MEDICAL CENTER",
+      "address": "101 E WOOD ST",
+      "city": "SPARTANBURG",
+      "state": "SC",
+      "zip": "29303",
+      "phone": "(864) 560-6554",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PRISMA HEALTH GREER MEMORIAL HOSPITAL",
+      "address": "1413 JOHN B WHITE SR BLVD SUITE D",
+      "city": "SPARTANBURG",
+      "state": "SC",
+      "zip": "29306",
+      "phone": "(864) 848-8200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUMMERVILLE": [
+    {
+      "name": "ROPER ST FRANCIS HOSPITAL-BERKELEY INC",
+      "address": "100 CALLEN BLVD.",
+      "city": "SUMMERVILLE",
+      "state": "SC",
+      "zip": "29486",
+      "phone": "(854) 529-3002",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUMTER": [
+    {
+      "name": "PRISMA HEALTH TUOMEY HOSPITAL",
+      "address": "129 N WASHINGTON ST",
+      "city": "SUMTER",
+      "state": "SC",
+      "zip": "29150",
+      "phone": "(803) 774-8900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TRAVELERS REST": [
+    {
+      "name": "SPRINGBROOK BEHAVIORAL HEALTH SYSTEM",
+      "address": "ONE HAVENWOOD LANE  PO BOX 1005",
+      "city": "TRAVELERS REST",
+      "state": "SC",
+      "zip": "29690",
+      "phone": "(864) 834-8013",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "UNION": [
+    {
+      "name": "UNION MEDICAL CENTER",
+      "address": "322 WEST SOUTH STREET",
+      "city": "UNION",
+      "state": "SC",
+      "zip": "29379",
+      "phone": "(864) 301-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VARNVILLE": [
+    {
+      "name": "HAMPTON REGIONAL MEDICAL CENTER",
+      "address": "595 WEST CAROLINA AVENUE",
+      "city": "VARNVILLE",
+      "state": "SC",
+      "zip": "29944",
+      "phone": "(803) 943-2771",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WALTERBORO": [
+    {
+      "name": "COLLETON MEDICAL CENTER",
+      "address": "501 ROBERTSON BOULEVARD",
+      "city": "WALTERBORO",
+      "state": "SC",
+      "zip": "29488",
+      "phone": "(843) 782-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST COLUMBIA": [
+    {
+      "name": "LEXINGTON MEDICAL CENTER",
+      "address": "2720 SUNSET BLVD",
+      "city": "WEST COLUMBIA",
+      "state": "SC",
+      "zip": "29169",
+      "phone": "(803) 791-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THREE RIVERS BEHAVIORAL HEALTH",
+      "address": "2900 SUNSET BOULEVARD",
+      "city": "WEST COLUMBIA",
+      "state": "SC",
+      "zip": "29169",
+      "phone": "(803) 796-9911",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

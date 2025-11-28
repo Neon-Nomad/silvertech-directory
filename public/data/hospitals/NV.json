@@ -1,0 +1,631 @@
+{
+  "BATTE MTN": [
+    {
+      "name": "BATTLE MOUNTAIN GENERAL HOSPITAL",
+      "address": "535 SOUTH HUMBOLDT STREET",
+      "city": "BATTE MTN",
+      "state": "NV",
+      "zip": "89820",
+      "phone": "(775) 635-2550",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOULDER CITY": [
+    {
+      "name": "BOULDER CITY HOSPITAL",
+      "address": "901 ADAMS BLVD",
+      "city": "BOULDER CITY",
+      "state": "NV",
+      "zip": "89005",
+      "phone": "(702) 293-4111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CALIENTE": [
+    {
+      "name": "GROVER C DILS MEDICAL CENTER",
+      "address": "700 N SPRING ST, BOX 1010-C-ADM BLDG",
+      "city": "CALIENTE",
+      "state": "NV",
+      "zip": "89008",
+      "phone": "(775) 726-3171",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARSON CITY": [
+    {
+      "name": "CARSON TAHOE REGIONAL MEDICAL CENTER",
+      "address": "1600 MEDICAL PARKWAY",
+      "city": "CARSON CITY",
+      "state": "NV",
+      "zip": "89703",
+      "phone": "(775) 445-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELKO": [
+    {
+      "name": "NORTHEASTERN NEVADA REGIONAL HOSPITAL",
+      "address": "2001 ERRECART BLVD",
+      "city": "ELKO",
+      "state": "NV",
+      "zip": "89801",
+      "phone": "(775) 738-5151",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELY": [
+    {
+      "name": "WILLIAM BEE RIRIE HOSPITAL",
+      "address": "1500 AVENUE H",
+      "city": "ELY",
+      "state": "NV",
+      "zip": "89301",
+      "phone": "(775) 289-3001",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FALLON": [
+    {
+      "name": "BANNER CHURCHILL COMMUNITY HOSPITAL",
+      "address": "801 EAST WILLIAMS AVENUE",
+      "city": "FALLON",
+      "state": "NV",
+      "zip": "89406",
+      "phone": "(775) 423-3151",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GARDNERVILLE": [
+    {
+      "name": "CARSON VALLEY HEALTH",
+      "address": "1107 HIGHWAY 395",
+      "city": "GARDNERVILLE",
+      "state": "NV",
+      "zip": "89410",
+      "phone": "(775) 782-1500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAWTHORNE": [
+    {
+      "name": "MOUNT GRANT GENERAL HOSPITAL",
+      "address": "200 SOUTH A ST",
+      "city": "HAWTHORNE",
+      "state": "NV",
+      "zip": "89415",
+      "phone": "(702) 945-2461",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HENDERSON": [
+    {
+      "name": "SAINT ROSE DOMINICAN HOSPITALS - ROSE DE LIMA",
+      "address": "102 E LAKE MEAD DR",
+      "city": "HENDERSON",
+      "state": "NV",
+      "zip": "89015",
+      "phone": "(702) 616-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT ROSE DOMINICAN HOSPITALS - SIENA CAMPUS",
+      "address": "3001 ST ROSE PARKWAY",
+      "city": "HENDERSON",
+      "state": "NV",
+      "zip": "89052",
+      "phone": "(702) 616-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HENDERSON HOSPITAL",
+      "address": "1050 WEST GALLERIA DRIVE",
+      "city": "HENDERSON",
+      "state": "NV",
+      "zip": "89011",
+      "phone": "(702) 963-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WEST HENDERSON HOSPITAL",
+      "address": "1155 RAIDERS WAY",
+      "city": "HENDERSON",
+      "state": "NV",
+      "zip": "89052",
+      "phone": "(702) 369-7612",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SEVEN HILLS BEHAVIORAL INSTITUTE",
+      "address": "3021 W HORIZON RIDGE PKWY",
+      "city": "HENDERSON",
+      "state": "NV",
+      "zip": "89052",
+      "phone": "(702) 646-5000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "INCLINE VILLAGE": [
+    {
+      "name": "INCLINE VILLAGE COMMUNITY HOSPITAL",
+      "address": "880 ALDER STREET",
+      "city": "INCLINE VILLAGE",
+      "state": "NV",
+      "zip": "89451",
+      "phone": "(775) 833-4100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAS VEGAS": [
+    {
+      "name": "SUNRISE HOSPITAL AND MEDICAL CENTER",
+      "address": "3186 S MARYLAND PKWY",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89109",
+      "phone": "(702) 731-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY MEDICAL CENTER",
+      "address": "1800 W CHARLESTON BLVD",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89102",
+      "phone": "(702) 383-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VALLEY HOSPITAL MEDICAL CENTER",
+      "address": "620 SHADOW LANE",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89106",
+      "phone": "(702) 388-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MOUNTAINVIEW HOSPITAL",
+      "address": "3100 N TENAYA WAY",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89128",
+      "phone": "(702) 255-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUMMERLIN HOSPITAL MEDICAL CENTER",
+      "address": "657 TOWN CENTER DRIVE",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89144",
+      "phone": "(702) 233-7500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HARMON HOSPITAL",
+      "address": "2170 EAST HARMON AVENUE",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89119",
+      "phone": "(702) 794-0100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SPRING VALLEY HOSPITAL MEDICAL CENTER",
+      "address": "5400 SOUTH RAINBOW BLVD",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89118",
+      "phone": "(702) 853-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHERN HILLS HOSPITAL AND MEDICAL CENTER",
+      "address": "9300 WEST SUNSET RD",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89148",
+      "phone": "(702) 880-2100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT ROSE DOMINICAN HOSPITALS - SAN MARTIN CAMPUS",
+      "address": "8280 W WARM SPRINGS ROAD",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89113",
+      "phone": "(702) 492-8509",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTENNIAL HILLS HOSPITAL MEDICAL CENTER",
+      "address": "6900 N DURANGO DR",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89149",
+      "phone": "(702) 835-9700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHERN NEVADA ADULT MENTAL HEALTH SERVICES",
+      "address": "6161 W CHARLESTON BLVD",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89146",
+      "phone": "(702) 486-6000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SPRING MOUNTAIN SAHARA",
+      "address": "5460 WEST SAHARA",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89146",
+      "phone": "(702) 853-3000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SPRING MOUNTAIN TREATMENT CENTER",
+      "address": "7000 WEST SPRING MOUNTAIN ROAD",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89117",
+      "phone": "(702) 873-2400",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DESERT PARKWAY BEHAVIORAL HEALTHCARE HOSPITAL, LLC",
+      "address": "3247 S MARYLAND PARKWAY",
+      "city": "LAS VEGAS",
+      "state": "NV",
+      "zip": "89109",
+      "phone": "(248) 905-5096",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOVELOCK": [
+    {
+      "name": "PERSHING GENERAL HOSPITAL",
+      "address": "855 6TH STREET/PO BOX 661",
+      "city": "LOVELOCK",
+      "state": "NV",
+      "zip": "89419",
+      "phone": "(775) 273-2621",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MESQUITE": [
+    {
+      "name": "MESA VIEW REGIONAL HOSPITAL",
+      "address": "1299 BERTHA HOWE AVENUE",
+      "city": "MESQUITE",
+      "state": "NV",
+      "zip": "89027",
+      "phone": "(702) 345-4280",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "N. LAS VEGAS": [
+    {
+      "name": "VA SOUTHERN NEVADA HEALTHCARE SYSTEM",
+      "address": "6900 NORTH PECOS ROAD",
+      "city": "N. LAS VEGAS",
+      "state": "NV",
+      "zip": "89086",
+      "phone": "(702) 791-9024",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTH LAS VEGAS": [
+    {
+      "name": "NORTH VISTA HOSPITAL",
+      "address": "1409 EAST LAKE MEAD BLVD",
+      "city": "NORTH LAS VEGAS",
+      "state": "NV",
+      "zip": "89030",
+      "phone": "(702) 649-7711",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT ROSE DOMINICAN HOSPITALS - NORTH LAS VEGAS",
+      "address": "1550 W CRAIG RANCH",
+      "city": "NORTH LAS VEGAS",
+      "state": "NV",
+      "zip": "89031",
+      "phone": "(702) 777-3615",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Nellis AFB": [
+    {
+      "name": "99th Medical Group (Nellis AFB)",
+      "address": "99 MDG 4700 Las Vegas Blvd",
+      "city": "Nellis AFB",
+      "state": "NV",
+      "zip": "89191",
+      "phone": "(702) 653-2273",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAHRUMP": [
+    {
+      "name": "DESERT VIEW HOSPITAL",
+      "address": "360 SOUTH LOLA LANE",
+      "city": "PAHRUMP",
+      "state": "NV",
+      "zip": "89048",
+      "phone": "(775) 751-7500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RENO": [
+    {
+      "name": "RENOWN REGIONAL MEDICAL CENTER",
+      "address": "1155 MILL STREET",
+      "city": "RENO",
+      "state": "NV",
+      "zip": "89502",
+      "phone": "(775) 982-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT MARY'S REGIONAL MEDICAL CENTER",
+      "address": "235 W 6TH ST",
+      "city": "RENO",
+      "state": "NV",
+      "zip": "89503",
+      "phone": "(775) 770-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA SIERRA NEVADA HEALTHCARE SYSTEM",
+      "address": "975 KIRMAN AVENUE",
+      "city": "RENO",
+      "state": "NV",
+      "zip": "89502",
+      "phone": "(775) 328-1263",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RENOWN SOUTH MEADOWS MEDICAL CENTER",
+      "address": "10101 DOUBLE R BLVD",
+      "city": "RENO",
+      "state": "NV",
+      "zip": "89521",
+      "phone": "(775) 982-7063",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RENO BEHAVIORAL HEALTHCARE HOSPITAL, LLC",
+      "address": "6940 SIERRA CENTER PKWY",
+      "city": "RENO",
+      "state": "NV",
+      "zip": "89511",
+      "phone": "(248) 905-5091",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPARKS": [
+    {
+      "name": "NORTHERN NEVADA MEDICAL CENTER",
+      "address": "2375 E PRATER WAY",
+      "city": "SPARKS",
+      "state": "NV",
+      "zip": "89434",
+      "phone": "(775) 331-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DINI-TOWNSEND HOSPITAL AT NNMH",
+      "address": "480 GALLETTI WAY",
+      "city": "SPARKS",
+      "state": "NV",
+      "zip": "89431",
+      "phone": "(775) 688-2001",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINNEMUCCA": [
+    {
+      "name": "HUMBOLDT GENERAL HOSPITAL",
+      "address": "118 EAST HASKELL STREET",
+      "city": "WINNEMUCCA",
+      "state": "NV",
+      "zip": "89445",
+      "phone": "(775) 623-5222",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YERINGTON": [
+    {
+      "name": "SOUTH LYON MEDICAL CENTER",
+      "address": "213 S WHITACRE/PO BOX 940",
+      "city": "YERINGTON",
+      "state": "NV",
+      "zip": "89447",
+      "phone": "(775) 781-3761",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

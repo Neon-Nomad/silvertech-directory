@@ -1,0 +1,1511 @@
+{
+  "ALBANY": [
+    {
+      "name": "THE MEDICAL CENTER AT ALBANY",
+      "address": "723 BURKESVILLE ROAD",
+      "city": "ALBANY",
+      "state": "KY",
+      "zip": "42602",
+      "phone": "(606) 387-3651",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ASHLAND": [
+    {
+      "name": "KING'S DAUGHTERS' MEDICAL CENTER",
+      "address": "2201 LEXINGTON AVENUE",
+      "city": "ASHLAND",
+      "state": "KY",
+      "zip": "41101",
+      "phone": "(606) 408-4401",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BARBOURVILLE": [
+    {
+      "name": "KNOX COUNTY HOSPITAL",
+      "address": "80 HOSPITAL DRIVE",
+      "city": "BARBOURVILLE",
+      "state": "KY",
+      "zip": "40906",
+      "phone": "(606) 546-4175",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BARDSTOWN": [
+    {
+      "name": "CHI SAINT JOSEPH FLAGET MEMORIAL HOSPITAL",
+      "address": "4305 NEW SHEPHERDSVILLE ROAD",
+      "city": "BARDSTOWN",
+      "state": "KY",
+      "zip": "40004",
+      "phone": "(502) 350-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BENTON": [
+    {
+      "name": "MARSHALL COUNTY HOSPITAL",
+      "address": "615 OLD SYMSONIA ROAD",
+      "city": "BENTON",
+      "state": "KY",
+      "zip": "42025",
+      "phone": "(270) 527-4800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEREA": [
+    {
+      "name": "CHI SAINT JOSEPH BEREA NF",
+      "address": "305 ESTILL STREET",
+      "city": "BEREA",
+      "state": "KY",
+      "zip": "40403",
+      "phone": "(859) 986-3151",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOWLING GREEN": [
+    {
+      "name": "THE MEDICAL CENTER (BOWLING GREEN)",
+      "address": "250 PARK STREET",
+      "city": "BOWLING GREEN",
+      "state": "KY",
+      "zip": "42101",
+      "phone": "(270) 745-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TRISTAR GREENVIEW REGIONAL HOSPITAL",
+      "address": "1801 ASHLEY CIRCLE",
+      "city": "BOWLING GREEN",
+      "state": "KY",
+      "zip": "42104",
+      "phone": "(270) 793-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIVENDELL BEHAVIORAL HEALTH SERVICES",
+      "address": "1035 PORTER PIKE",
+      "city": "BOWLING GREEN",
+      "state": "KY",
+      "zip": "42103",
+      "phone": "(270) 843-1199",
+      "type": "Psychiatric",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURKESVILLE": [
+    {
+      "name": "CUMBERLAND COUNTY HOSPITAL",
+      "address": "299 GLASGOW ROAD",
+      "city": "BURKESVILLE",
+      "state": "KY",
+      "zip": "42717",
+      "phone": "(270) 864-2511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CADIZ": [
+    {
+      "name": "TRIGG COUNTY HOSPITAL",
+      "address": "254 MAIN STREET",
+      "city": "CADIZ",
+      "state": "KY",
+      "zip": "42211",
+      "phone": "(270) 522-3215",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAMPBELLSVILLE": [
+    {
+      "name": "TAYLOR REGIONAL HOSPITAL",
+      "address": "1700 OLD LEBANON ROAD",
+      "city": "CAMPBELLSVILLE",
+      "state": "KY",
+      "zip": "42718",
+      "phone": "(270) 465-3561",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARROLLTON": [
+    {
+      "name": "CARROLL COUNTY MEMORIAL HOSPITAL",
+      "address": "309 ELEVENTH STREET",
+      "city": "CARROLLTON",
+      "state": "KY",
+      "zip": "41008",
+      "phone": "(502) 732-4321",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUMBIA": [
+    {
+      "name": "TJ HEALTH COLUMBIA",
+      "address": "901 WESTLAKE DRIVE",
+      "city": "COLUMBIA",
+      "state": "KY",
+      "zip": "42728",
+      "phone": "(270) 384-4753",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CORBIN": [
+    {
+      "name": "BAPTIST HEALTH CORBIN",
+      "address": "ONE TRILLIUM WAY",
+      "city": "CORBIN",
+      "state": "KY",
+      "zip": "40701",
+      "phone": "(606) 528-1212",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CYNTHIANA": [
+    {
+      "name": "HARRISON MEMORIAL HOSPITAL",
+      "address": "1210 KY HWY 36 E",
+      "city": "CYNTHIANA",
+      "state": "KY",
+      "zip": "41031",
+      "phone": "(859) 234-2300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DANVILLE": [
+    {
+      "name": "EPHRAIM MCDOWELL REGIONAL MEDICAL CENTER",
+      "address": "217 SOUTH THIRD STREET",
+      "city": "DANVILLE",
+      "state": "KY",
+      "zip": "40422",
+      "phone": "(859) 239-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EDGEWOOD": [
+    {
+      "name": "ST ELIZABETH EDGEWOOD",
+      "address": "1 MEDICAL VILLAGE DRIVE",
+      "city": "EDGEWOOD",
+      "state": "KY",
+      "zip": "41017",
+      "phone": "(859) 301-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELIZABETHTOWN": [
+    {
+      "name": "BAPTIST HEALTH HARDIN",
+      "address": "913 NORTH DIXIE AVENUE",
+      "city": "ELIZABETHTOWN",
+      "state": "KY",
+      "zip": "42701",
+      "phone": "(270) 737-1212",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ERLANGER": [
+    {
+      "name": "SUN BEHAVIORAL HEALTH",
+      "address": "820 DOLWICK DRIVE",
+      "city": "ERLANGER",
+      "state": "KY",
+      "zip": "41018",
+      "phone": "(859) 429-5188",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FLEMINGSBURG": [
+    {
+      "name": "FLEMING COUNTY HOSPITAL",
+      "address": "55 FOUNDATION DRIVE",
+      "city": "FLEMINGSBURG",
+      "state": "KY",
+      "zip": "41041",
+      "phone": "(606) 849-2351",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FLORENCE": [
+    {
+      "name": "ST ELIZABETH FLORENCE",
+      "address": "4900 HOUSTON ROAD",
+      "city": "FLORENCE",
+      "state": "KY",
+      "zip": "41042",
+      "phone": "(859) 212-5220",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT THOMAS": [
+    {
+      "name": "ST ELIZABETH FT THOMAS",
+      "address": "85 NORTH GRAND AVENUE",
+      "city": "FORT THOMAS",
+      "state": "KY",
+      "zip": "41075",
+      "phone": "(859) 572-3100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRANKFORT": [
+    {
+      "name": "FRANKFORT REGIONAL MEDICAL CENTER",
+      "address": "299 KINGS DAUGHTERS DRIVE",
+      "city": "FRANKFORT",
+      "state": "KY",
+      "zip": "40601",
+      "phone": "(502) 875-5240",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRANKLIN": [
+    {
+      "name": "THE MEDICAL CENTER AT FRANKLIN",
+      "address": "1100 BROOKHAVEN ROAD",
+      "city": "FRANKLIN",
+      "state": "KY",
+      "zip": "42135",
+      "phone": "(270) 598-4800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Fort Campbell": [
+    {
+      "name": "Blanchfield ACH (FT Campbell)",
+      "address": "650 Joel Dr",
+      "city": "Fort Campbell",
+      "state": "KY",
+      "zip": "42223",
+      "phone": "(270) 798-8400",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GEORGETOWN": [
+    {
+      "name": "GEORGETOWN COMMUNITY HOSPITAL",
+      "address": "1140 LEXINGTON ROAD",
+      "city": "GEORGETOWN",
+      "state": "KY",
+      "zip": "40324",
+      "phone": "(502) 868-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLASGOW": [
+    {
+      "name": "T J SAMSON COMMUNITY HOSPITAL",
+      "address": "1301 NORTH RACE STREET",
+      "city": "GLASGOW",
+      "state": "KY",
+      "zip": "42141",
+      "phone": "(270) 651-4159",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENSBURG": [
+    {
+      "name": "JANE TODD CRAWFORD HOSPITAL",
+      "address": "290 INDUSTRIAL PARK ROAD",
+      "city": "GREENSBURG",
+      "state": "KY",
+      "zip": "42743",
+      "phone": "(270) 932-4211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENVILLE": [
+    {
+      "name": "OWENSBORO HEALTH MUHLENBERG COMMUNITY HOSPITAL",
+      "address": "440 HOPKINSVILLE STREET",
+      "city": "GREENVILLE",
+      "state": "KY",
+      "zip": "42345",
+      "phone": "(270) 338-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARDINSBURG": [
+    {
+      "name": "BRECKINRIDGE MEMORIAL HOSPITAL",
+      "address": "1011 OLD HIGHWAY 60",
+      "city": "HARDINSBURG",
+      "state": "KY",
+      "zip": "40143",
+      "phone": "(270) 756-7000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARLAN": [
+    {
+      "name": "HARLAN ARH HOSPITAL",
+      "address": "81 BALL PARK ROAD",
+      "city": "HARLAN",
+      "state": "KY",
+      "zip": "40831",
+      "phone": "(606) 573-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARRODSBURG": [
+    {
+      "name": "THE JAMES B. HAGGIN MEMORIAL HOSPITAL",
+      "address": "464 LINDEN AVENUE",
+      "city": "HARRODSBURG",
+      "state": "KY",
+      "zip": "40330",
+      "phone": "(859) 734-5441",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARTFORD": [
+    {
+      "name": "OHIO COUNTY HOSPITAL",
+      "address": "1211 OLD MAIN STREET",
+      "city": "HARTFORD",
+      "state": "KY",
+      "zip": "42347",
+      "phone": "(270) 298-7411",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAZARD": [
+    {
+      "name": "HAZARD ARH REGIONAL MEDICAL CENTER",
+      "address": "100 MEDICAL CENTER DRIVE",
+      "city": "HAZARD",
+      "state": "KY",
+      "zip": "41701",
+      "phone": "(606) 439-1331",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HENDERSON": [
+    {
+      "name": "DEACONESS HENDERSON HOSPITAL",
+      "address": "1305 N ELM ST",
+      "city": "HENDERSON",
+      "state": "KY",
+      "zip": "42420",
+      "phone": "(270) 827-7700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOPKINSVILLE": [
+    {
+      "name": "JENNIE STUART MEDICAL CENTER",
+      "address": "320 WEST 18TH STREET",
+      "city": "HOPKINSVILLE",
+      "state": "KY",
+      "zip": "42241",
+      "phone": "(270) 887-0100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WESTERN STATE HOSPITAL",
+      "address": "2400 RUSSELLVILLE ROAD",
+      "city": "HOPKINSVILLE",
+      "state": "KY",
+      "zip": "42240",
+      "phone": "(270) 889-6025",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CUMBERLAND HALL HOSPITAL",
+      "address": "270 WALTON WAY",
+      "city": "HOPKINSVILLE",
+      "state": "KY",
+      "zip": "42240",
+      "phone": "(270) 886-1919",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HORSE CAVE": [
+    {
+      "name": "CAVERNA MEMORIAL HOSPITAL",
+      "address": "1501 SOUTH DIXIE STREET",
+      "city": "HORSE CAVE",
+      "state": "KY",
+      "zip": "42749",
+      "phone": "(270) 786-2191",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HYDEN": [
+    {
+      "name": "MARY BRECKINRIDGE ARH HOSPITAL",
+      "address": "130 KATE IRELAND DRIVE",
+      "city": "HYDEN",
+      "state": "KY",
+      "zip": "41749",
+      "phone": "(606) 672-2901",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IRVINE": [
+    {
+      "name": "MARCUM AND WALLACE MEMORIAL HOSPITAL",
+      "address": "60 MERCY COURT",
+      "city": "IRVINE",
+      "state": "KY",
+      "zip": "40336",
+      "phone": "(606) 723-2115",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JACKSON": [
+    {
+      "name": "KENTUCKY RIVER MEDICAL CENTER",
+      "address": "540 JETT DRIVE",
+      "city": "JACKSON",
+      "state": "KY",
+      "zip": "41339",
+      "phone": "(606) 666-6000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LA GRANGE": [
+    {
+      "name": "BAPTIST HEALTH LAGRANGE",
+      "address": "1025 NEW MOODY LANE",
+      "city": "LA GRANGE",
+      "state": "KY",
+      "zip": "40031",
+      "phone": "(502) 222-5388",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEBANON": [
+    {
+      "name": "SPRING VIEW HOSPITAL",
+      "address": "320 LORETTO ROAD",
+      "city": "LEBANON",
+      "state": "KY",
+      "zip": "40033",
+      "phone": "(270) 692-3161",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEITCHFIELD": [
+    {
+      "name": "OWENSBORO HEALTH TWIN LAKES MEDICAL CENTER",
+      "address": "910 WALLACE AVENUE",
+      "city": "LEITCHFIELD",
+      "state": "KY",
+      "zip": "42754",
+      "phone": "(270) 259-9400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEXINGTON": [
+    {
+      "name": "SAINT JOSEPH HOSPITAL",
+      "address": "ONE SAINT JOSEPH DRIVE",
+      "city": "LEXINGTON",
+      "state": "KY",
+      "zip": "40504",
+      "phone": "(859) 313-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY OF KENTUCKY HOSPITAL",
+      "address": "800 ROSE STREET",
+      "city": "LEXINGTON",
+      "state": "KY",
+      "zip": "40536",
+      "phone": "(859) 257-2278",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LEXINGTON VA MEDICAL CENTER",
+      "address": "1101 VETERANS DRIVE",
+      "city": "LEXINGTON",
+      "state": "KY",
+      "zip": "40502",
+      "phone": "(859) 233-4511",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BAPTIST HEALTH LEXINGTON",
+      "address": "1740 NICHOLASVILLE ROAD",
+      "city": "LEXINGTON",
+      "state": "KY",
+      "zip": "40503",
+      "phone": "(859) 260-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT JOSEPH EAST",
+      "address": "150 NORTH EAGLE CREEK DRIVE",
+      "city": "LEXINGTON",
+      "state": "KY",
+      "zip": "40509",
+      "phone": "(859) 967-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EASTERN STATE HOSPITAL",
+      "address": "1350 BULL LEA ROAD",
+      "city": "LEXINGTON",
+      "state": "KY",
+      "zip": "40511",
+      "phone": "(859) 246-8000",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE RIDGE BEHAVIORAL HEALTH SYSTEM",
+      "address": "3050 RIO DOSA DRIVE",
+      "city": "LEXINGTON",
+      "state": "KY",
+      "zip": "40509",
+      "phone": "(859) 269-2325",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LIBERTY": [
+    {
+      "name": "CASEY COUNTY HOSPITAL",
+      "address": "187 WOLFORD AVENUE",
+      "city": "LIBERTY",
+      "state": "KY",
+      "zip": "42539",
+      "phone": "(606) 787-6275",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LONDON": [
+    {
+      "name": "SAINT JOSEPH LONDON",
+      "address": "1001 SAINT JOSEPH LANE",
+      "city": "LONDON",
+      "state": "KY",
+      "zip": "40741",
+      "phone": "(606) 330-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOUISA": [
+    {
+      "name": "THREE RIVERS MEDICAL CENTER",
+      "address": "2485 HIGHWAY 644",
+      "city": "LOUISA",
+      "state": "KY",
+      "zip": "41230",
+      "phone": "(606) 638-9451",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOUISVILLE": [
+    {
+      "name": "UOFL HEALTH - JEWISH HOSPITAL and Mary & Elizabeth Hospital",
+      "address": "200 ABRAHAM FLEXNER WAY",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40202",
+      "phone": "(502) 587-4011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LOUISVILLE VA MEDICAL CENTER",
+      "address": "800 ZORN AVENUE",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40206",
+      "phone": "(502) 287-4000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTON HOSPITALS, INC",
+      "address": "200 EAST CHESTNUT STREET",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40202",
+      "phone": "(502) 629-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BAPTIST HEALTH LOUISVILLE",
+      "address": "4000 KRESGE WAY",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40207",
+      "phone": "(502) 897-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY OF LOUISVILLE HOSPITAL",
+      "address": "530 SOUTH JACKSON STREET",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40202",
+      "phone": "(502) 562-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE BROOK HOSPITAL - DUPONT",
+      "address": "1405 BROWNS LANE",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40207",
+      "phone": "(502) 896-0495",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE BROOK HOSPITAL - KMI",
+      "address": "8521 LAGRANGE ROAD",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40242",
+      "phone": "(502) 426-6380",
+      "type": "Psychiatric",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTRAL STATE HOSPITAL",
+      "address": "10510 LAGRANGE ROAD",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40223",
+      "phone": "(502) 253-7045",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MADISONVILLE": [
+    {
+      "name": "BAPTIST HEALTH DEACONESS MADISONVILLE",
+      "address": "900 HOSPITAL DRIVE",
+      "city": "MADISONVILLE",
+      "state": "KY",
+      "zip": "42431",
+      "phone": "(270) 825-5100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANCHESTER": [
+    {
+      "name": "MANCHESTER MEMORIAL HOSPITAL",
+      "address": "210 MARIE LANGDON DRIVE",
+      "city": "MANCHESTER",
+      "state": "KY",
+      "zip": "40962",
+      "phone": "(606) 598-5104",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARION": [
+    {
+      "name": "CRITTENDEN COMMUNITY HOSPITAL",
+      "address": "520 WEST GUM STREET",
+      "city": "MARION",
+      "state": "KY",
+      "zip": "42064",
+      "phone": "(270) 965-5281",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARTIN": [
+    {
+      "name": "ARH OUR LADY OF THE WAY",
+      "address": "11203 MAIN STREET",
+      "city": "MARTIN",
+      "state": "KY",
+      "zip": "41649",
+      "phone": "(606) 285-6400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAYFIELD": [
+    {
+      "name": "JACKSON PURCHASE MEDICAL CENTER",
+      "address": "1099 MEDICAL CENTER CIRCLE",
+      "city": "MAYFIELD",
+      "state": "KY",
+      "zip": "42066",
+      "phone": "(270) 251-4585",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAYSVILLE": [
+    {
+      "name": "MEADOWVIEW REGIONAL MEDICAL CENTER",
+      "address": "989 MEDICAL PARK DRIVE",
+      "city": "MAYSVILLE",
+      "state": "KY",
+      "zip": "41056",
+      "phone": "(606) 759-5311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MC DOWELL": [
+    {
+      "name": "MCDOWELL ARH HOSPITAL",
+      "address": "9879 KENTUCKY ROUTE 122",
+      "city": "MC DOWELL",
+      "state": "KY",
+      "zip": "41647",
+      "phone": "(606) 377-3400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIDDLESBORO": [
+    {
+      "name": "MIDDLESBORO ARH HOSPITAL",
+      "address": "3600 WEST CUMBERLAND AVENUE",
+      "city": "MIDDLESBORO",
+      "state": "KY",
+      "zip": "40965",
+      "phone": "(606) 242-1101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTICELLO": [
+    {
+      "name": "WAYNE COUNTY HOSPITAL",
+      "address": "166 HOSPITAL STREET",
+      "city": "MONTICELLO",
+      "state": "KY",
+      "zip": "42633",
+      "phone": "(606) 348-9343",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOREHEAD": [
+    {
+      "name": "ST CLAIRE REGIONAL MEDICAL CENTER",
+      "address": "222 MEDICAL CIRCLE",
+      "city": "MOREHEAD",
+      "state": "KY",
+      "zip": "40351",
+      "phone": "(606) 783-6500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MORGANFIELD": [
+    {
+      "name": "METHODIST HOSPITAL UNION COUNTY",
+      "address": "4604 US HIGHWAY 60 WEST",
+      "city": "MORGANFIELD",
+      "state": "KY",
+      "zip": "42437",
+      "phone": "(270) 389-5000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT STERLING": [
+    {
+      "name": "SAINT JOSEPH MOUNT STERLING",
+      "address": "225 FALCON DRIVE",
+      "city": "MOUNT STERLING",
+      "state": "KY",
+      "zip": "40353",
+      "phone": "(859) 497-5018",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT VERNON": [
+    {
+      "name": "ROCKCASTLE COUNTY HOSPITAL, INC.",
+      "address": "145 NEWCOMB AVENUE",
+      "city": "MOUNT VERNON",
+      "state": "KY",
+      "zip": "40456",
+      "phone": "(606) 256-2195",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MURRAY": [
+    {
+      "name": "MURRAY-CALLOWAY COUNTY HOSPITAL",
+      "address": "803 POPLAR STREET",
+      "city": "MURRAY",
+      "state": "KY",
+      "zip": "42071",
+      "phone": "(270) 762-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OWENSBORO": [
+    {
+      "name": "OWENSBORO HEALTH REGIONAL HOSPITAL",
+      "address": "1201 PLEASANT VALLEY ROAD",
+      "city": "OWENSBORO",
+      "state": "KY",
+      "zip": "42303",
+      "phone": "(270) 417-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PADUCAH": [
+    {
+      "name": "MERCY HEALTH - LOURDES HOSPITAL",
+      "address": "1530 LONE OAK ROAD",
+      "city": "PADUCAH",
+      "state": "KY",
+      "zip": "42003",
+      "phone": "(270) 444-2444",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BAPTIST HEALTH PADUCAH",
+      "address": "2501 KENTUCKY AVENUE",
+      "city": "PADUCAH",
+      "state": "KY",
+      "zip": "42003",
+      "phone": "(270) 575-2100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAINTSVILLE": [
+    {
+      "name": "PAINTSVILLE ARH HOSPITAL",
+      "address": "625 JAMES S TRIMBLE BOULEVARD",
+      "city": "PAINTSVILLE",
+      "state": "KY",
+      "zip": "41240",
+      "phone": "(606) 789-3511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARIS": [
+    {
+      "name": "BOURBON COMMUNITY HOSPITAL",
+      "address": "9 LINVILLE DRIVE",
+      "city": "PARIS",
+      "state": "KY",
+      "zip": "40361",
+      "phone": "(859) 987-3600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PIKEVILLE": [
+    {
+      "name": "PIKEVILLE MEDICAL CENTER",
+      "address": "911 BYPASS ROAD",
+      "city": "PIKEVILLE",
+      "state": "KY",
+      "zip": "41501",
+      "phone": "(606) 437-3500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PINEVILLE": [
+    {
+      "name": "PINEVILLE COMMUNITY HEALTH CENTER, INC",
+      "address": "850 RIVERVIEW AVENUE",
+      "city": "PINEVILLE",
+      "state": "KY",
+      "zip": "40977",
+      "phone": "(606) 337-3051",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRESTONSBURG": [
+    {
+      "name": "HIGHLANDS ARH REGIONAL MEDICAL CENTER",
+      "address": "5000 KENTUCKY ROUTE 321",
+      "city": "PRESTONSBURG",
+      "state": "KY",
+      "zip": "41653",
+      "phone": "(606) 886-8511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRINCETON": [
+    {
+      "name": "CALDWELL MEDICAL CENTER",
+      "address": "100 MEDICAL CENTER DRIVE",
+      "city": "PRINCETON",
+      "state": "KY",
+      "zip": "42445",
+      "phone": "(270) 365-0300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RADCLIFF": [
+    {
+      "name": "LINCOLN TRAIL BEHAVIORAL HEALTH SYSTEM",
+      "address": "3909 S WILSON ROAD",
+      "city": "RADCLIFF",
+      "state": "KY",
+      "zip": "40160",
+      "phone": "(270) 351-9444",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RICHMOND": [
+    {
+      "name": "BAPTIST HEALTH RICHMOND",
+      "address": "801 EASTERN BYPASS",
+      "city": "RICHMOND",
+      "state": "KY",
+      "zip": "40475",
+      "phone": "(859) 625-3114",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RUSSELL SPRINGS": [
+    {
+      "name": "RUSSELL COUNTY HOSPITAL",
+      "address": "153 DOWELL ROAD",
+      "city": "RUSSELL SPRINGS",
+      "state": "KY",
+      "zip": "42642",
+      "phone": "(270) 866-4141",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RUSSELLVILLE": [
+    {
+      "name": "The Medical Center at Russellville",
+      "address": "1625 NASHVILLE STREET",
+      "city": "RUSSELLVILLE",
+      "state": "KY",
+      "zip": "42276",
+      "phone": "(270) 726-4011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALEM": [
+    {
+      "name": "LIVINGSTON HOSPITAL AND HEALTHCARE SERVICES, INC",
+      "address": "131 HOSPITAL DRIVE",
+      "city": "SALEM",
+      "state": "KY",
+      "zip": "42078",
+      "phone": "(270) 988-2299",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SCOTTSVILLE": [
+    {
+      "name": "THE MEDICAL CENTER AT SCOTTSVILLE",
+      "address": "456 BURNLEY ROAD",
+      "city": "SCOTTSVILLE",
+      "state": "KY",
+      "zip": "42164",
+      "phone": "(270) 622-2800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHELBYVILLE": [
+    {
+      "name": "UOFL HEALTH - SHELBYVILLE HOSPITAL",
+      "address": "727 HOSPITAL DRIVE",
+      "city": "SHELBYVILLE",
+      "state": "KY",
+      "zip": "40065",
+      "phone": "(502) 647-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOMERSET": [
+    {
+      "name": "LAKE CUMBERLAND REGIONAL HOSPITAL",
+      "address": "305 LANGDON STREET",
+      "city": "SOMERSET",
+      "state": "KY",
+      "zip": "42503",
+      "phone": "(606) 679-7441",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTH WILLIAMSON": [
+    {
+      "name": "TUG VALLEY ARH REGIONAL MEDICAL CENTER",
+      "address": "260 HOSPITAL DRIVE",
+      "city": "SOUTH WILLIAMSON",
+      "state": "KY",
+      "zip": "41503",
+      "phone": "(606) 237-1700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STANFORD": [
+    {
+      "name": "EPHRAIM MCDOWELL FORT LOGAN HOSPITAL",
+      "address": "110 METKER TRAIL",
+      "city": "STANFORD",
+      "state": "KY",
+      "zip": "40484",
+      "phone": "(606) 365-4600",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TOMPKINSVILLE": [
+    {
+      "name": "MONROE COUNTY MEDICAL CENTER",
+      "address": "529 CAPP HARLAN ROAD",
+      "city": "TOMPKINSVILLE",
+      "state": "KY",
+      "zip": "42167",
+      "phone": "(270) 487-9231",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VERSAILLES": [
+    {
+      "name": "BLUEGRASS COMMUNITY HOSPITAL",
+      "address": "360 AMSDEN AVENUE",
+      "city": "VERSAILLES",
+      "state": "KY",
+      "zip": "40383",
+      "phone": "(859) 873-3111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST LIBERTY": [
+    {
+      "name": "MORGAN COUNTY ARH HOSPITAL",
+      "address": "476 LIBERTY ROAD",
+      "city": "WEST LIBERTY",
+      "state": "KY",
+      "zip": "41472",
+      "phone": "(606) 743-3186",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHITESBURG": [
+    {
+      "name": "WHITESBURG ARH HOSPITAL",
+      "address": "240 HOSPITAL ROAD",
+      "city": "WHITESBURG",
+      "state": "KY",
+      "zip": "41858",
+      "phone": "(606) 633-3500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILLIAMSTOWN": [
+    {
+      "name": "ST ELIZABETH GRANT",
+      "address": "238 BARNES ROAD",
+      "city": "WILLIAMSTOWN",
+      "state": "KY",
+      "zip": "41097",
+      "phone": "(859) 824-8105",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINCHESTER": [
+    {
+      "name": "CLARK REGIONAL MEDICAL CENTER",
+      "address": "175 HOSPITAL DRIVE",
+      "city": "WINCHESTER",
+      "state": "KY",
+      "zip": "40391",
+      "phone": "(859) 737-8559",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

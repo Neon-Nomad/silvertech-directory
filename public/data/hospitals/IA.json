@@ -1,0 +1,1746 @@
+{
+  "ALBIA": [
+    {
+      "name": "MONROE COUNTY HOSPITAL",
+      "address": "6580 165TH STREET",
+      "city": "ALBIA",
+      "state": "IA",
+      "zip": "52531",
+      "phone": "(641) 932-2134",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALGONA": [
+    {
+      "name": "KOSSUTH REGIONAL HEALTH CENTER",
+      "address": "1515 SOUTH PHILLIPS STREET",
+      "city": "ALGONA",
+      "state": "IA",
+      "zip": "50511",
+      "phone": "(515) 295-2451",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AMES": [
+    {
+      "name": "MARY GREELEY MEDICAL CENTER",
+      "address": "1111 DUFF AVENUE",
+      "city": "AMES",
+      "state": "IA",
+      "zip": "50010",
+      "phone": "(515) 239-2011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANAMOSA": [
+    {
+      "name": "JONES REGIONAL MEDICAL CENTER",
+      "address": "1795 HIGHWAY 64 EAST",
+      "city": "ANAMOSA",
+      "state": "IA",
+      "zip": "52205",
+      "phone": "(319) 462-6131",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ATLANTIC": [
+    {
+      "name": "CASS COUNTY MEMORIAL HOSPITAL",
+      "address": "1501 EAST TENTH STREET",
+      "city": "ATLANTIC",
+      "state": "IA",
+      "zip": "50022",
+      "phone": "(712) 243-3250",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AUDUBON": [
+    {
+      "name": "AUDUBON COUNTY MEMORIAL HOSPITAL",
+      "address": "515 PACIFIC AVENUE",
+      "city": "AUDUBON",
+      "state": "IA",
+      "zip": "50025",
+      "phone": "(712) 563-2611",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELMOND": [
+    {
+      "name": "IOWA SPECIALTY HOSPITAL - BELMOND",
+      "address": "403 FIRST STREET SE",
+      "city": "BELMOND",
+      "state": "IA",
+      "zip": "50421",
+      "phone": "(641) 444-3223",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BETTENDORF": [
+    {
+      "name": "TRINITY - BETTENDORF",
+      "address": "4500 UTICA RIDGE ROAD",
+      "city": "BETTENDORF",
+      "state": "IA",
+      "zip": "52722",
+      "phone": "(563) 742-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EAGLE VIEW BEHAVIORAL HEALTH",
+      "address": "770 TANGLEFOOT LANE",
+      "city": "BETTENDORF",
+      "state": "IA",
+      "zip": "52722",
+      "phone": "(563) 396-2100",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLOOMFIELD": [
+    {
+      "name": "DAVIS COUNTY HOSPITAL",
+      "address": "509 NORTH MADISON STREET",
+      "city": "BLOOMFIELD",
+      "state": "IA",
+      "zip": "52537",
+      "phone": "(641) 664-2145",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOONE": [
+    {
+      "name": "BOONE COUNTY HOSPITAL",
+      "address": "1015 UNION STREET",
+      "city": "BOONE",
+      "state": "IA",
+      "zip": "50036",
+      "phone": "(515) 432-3140",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRITT": [
+    {
+      "name": "HANCOCK COUNTY HEALTH SYSTEM",
+      "address": "532 1ST ST NW",
+      "city": "BRITT",
+      "state": "IA",
+      "zip": "50423",
+      "phone": "(641) 843-5000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARROLL": [
+    {
+      "name": "ST ANTHONY REGIONAL HOSPITAL & NURSING HOME",
+      "address": "311 SOUTH CLARK STREET",
+      "city": "CARROLL",
+      "state": "IA",
+      "zip": "51401",
+      "phone": "(712) 792-3581",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CEDAR FALLS": [
+    {
+      "name": "SARTORI MEMORIAL HOSPITAL, INC",
+      "address": "515 COLLEGE STREET",
+      "city": "CEDAR FALLS",
+      "state": "IA",
+      "zip": "50613",
+      "phone": "(319) 268-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CEDAR RAPIDS": [
+    {
+      "name": "ST LUKES HOSPITAL",
+      "address": "1026 A AVE NE",
+      "city": "CEDAR RAPIDS",
+      "state": "IA",
+      "zip": "52402",
+      "phone": "(319) 369-7211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MERCY MEDICAL CENTER - CEDAR RAPIDS",
+      "address": "701 10TH STREET SE",
+      "city": "CEDAR RAPIDS",
+      "state": "IA",
+      "zip": "52403",
+      "phone": "(319) 398-6011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CENTERVILLE": [
+    {
+      "name": "MERCYONE CENTERVILLE MEDICAL CENTER",
+      "address": "ONE ST JOSEPH'S DRIVE",
+      "city": "CENTERVILLE",
+      "state": "IA",
+      "zip": "52544",
+      "phone": "(641) 437-4111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHARITON": [
+    {
+      "name": "LUCAS COUNTY HEALTH CENTER",
+      "address": "1200 NORTH 7TH STREET",
+      "city": "CHARITON",
+      "state": "IA",
+      "zip": "50049",
+      "phone": "(641) 774-3000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHARLES CITY": [
+    {
+      "name": "FLOYD COUNTY MEDICAL CENTER",
+      "address": "800 11TH ST",
+      "city": "CHARLES CITY",
+      "state": "IA",
+      "zip": "50616",
+      "phone": "(641) 228-6830",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHEROKEE": [
+    {
+      "name": "CHEROKEE REGIONAL MEDICAL CENTER",
+      "address": "300 SIOUX VALLEY DRIVE",
+      "city": "CHEROKEE",
+      "state": "IA",
+      "zip": "51012",
+      "phone": "(712) 225-5101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MENTAL HEALTH INSTITUTE",
+      "address": "1251 NORTH CEDAR LOOP",
+      "city": "CHEROKEE",
+      "state": "IA",
+      "zip": "51012",
+      "phone": "(712) 225-2594",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLARINDA": [
+    {
+      "name": "CLARINDA REGIONAL HEALTH CENTER",
+      "address": "220 ESSIE DAVISON DRIVE",
+      "city": "CLARINDA",
+      "state": "IA",
+      "zip": "51632",
+      "phone": "(712) 542-2176",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLARION": [
+    {
+      "name": "IOWA SPECIALTY HOSPITAL - CLARION",
+      "address": "1316 SOUTH MAIN STREET",
+      "city": "CLARION",
+      "state": "IA",
+      "zip": "50525",
+      "phone": "(515) 532-2811",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLINTON": [
+    {
+      "name": "MERCYONE CLINTON MEDICAL CENTER",
+      "address": "1410 NORTH 4TH STREET",
+      "city": "CLINTON",
+      "state": "IA",
+      "zip": "52732",
+      "phone": "(563) 244-5555",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLIVE": [
+    {
+      "name": "CLIVE BEHAVIORAL HEALTH",
+      "address": "1450 NW 114TH STREET",
+      "city": "CLIVE",
+      "state": "IA",
+      "zip": "50325",
+      "phone": "(515) 553-6200",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CORNING": [
+    {
+      "name": "CHI HEALTH - MERCY CORNING",
+      "address": "603 ROSARY DRIVE",
+      "city": "CORNING",
+      "state": "IA",
+      "zip": "50841",
+      "phone": "(641) 322-3121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CORYDON": [
+    {
+      "name": "WAYNE COUNTY HOSPITAL",
+      "address": "417 SOUTH EAST STREET",
+      "city": "CORYDON",
+      "state": "IA",
+      "zip": "50060",
+      "phone": "(641) 872-2260",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COUNCIL BLUFFS": [
+    {
+      "name": "CHI HEALTH MERCY COUNCIL BLUFFS",
+      "address": "800 MERCY DRIVE",
+      "city": "COUNCIL BLUFFS",
+      "state": "IA",
+      "zip": "51503",
+      "phone": "(712) 328-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "METHODIST JENNIE EDMUNDSON",
+      "address": "933 EAST PIERCE STREET",
+      "city": "COUNCIL BLUFFS",
+      "state": "IA",
+      "zip": "51503",
+      "phone": "(712) 396-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CRESCO": [
+    {
+      "name": "REGIONAL HEALTH SERVICES OF HOWARD COUNTY",
+      "address": "235 8TH AVENUE WEST",
+      "city": "CRESCO",
+      "state": "IA",
+      "zip": "52136",
+      "phone": "(563) 547-2101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CRESTON": [
+    {
+      "name": "GREATER REGIONAL MEDICAL CENTER",
+      "address": "1700 WEST TOWNLINE STREET",
+      "city": "CRESTON",
+      "state": "IA",
+      "zip": "50801",
+      "phone": "(641) 782-7091",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAVENPORT": [
+    {
+      "name": "GENESIS MEDICAL CENTER-DAVENPORT",
+      "address": "1227 EAST RUSHOLME STREET",
+      "city": "DAVENPORT",
+      "state": "IA",
+      "zip": "52803",
+      "phone": "(563) 421-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DECORAH": [
+    {
+      "name": "WINNMED",
+      "address": "901 MONTGOMERY STREET",
+      "city": "DECORAH",
+      "state": "IA",
+      "zip": "52101",
+      "phone": "(563) 382-2911",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DENISON": [
+    {
+      "name": "CRAWFORD COUNTY MEMORIAL HOSPITAL",
+      "address": "100 MEDICAL PARKWAY",
+      "city": "DENISON",
+      "state": "IA",
+      "zip": "51442",
+      "phone": "(712) 263-2500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DES MOINES": [
+    {
+      "name": "VA CENTRAL IOWA HEALTHCARE SYSTEM",
+      "address": "3600 30TH STREET",
+      "city": "DES MOINES",
+      "state": "IA",
+      "zip": "50310",
+      "phone": "(515) 699-5999",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNITYPOINT HEALTH - DES MOINES IOWA METHODIST MEDI",
+      "address": "1200 PLEASANT STREET",
+      "city": "DES MOINES",
+      "state": "IA",
+      "zip": "50309",
+      "phone": "(515) 343-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MERCYONE DES MOINES MEDICAL CENTER",
+      "address": "1111 6TH AVE",
+      "city": "DES MOINES",
+      "state": "IA",
+      "zip": "50314",
+      "phone": "(515) 247-4436",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BROADLAWNS MEDICAL CENTER",
+      "address": "1801 HICKMAN ROAD",
+      "city": "DES MOINES",
+      "state": "IA",
+      "zip": "50314",
+      "phone": "(515) 282-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEWITT": [
+    {
+      "name": "GENESIS MEDICAL CENTER-DEWITT",
+      "address": "1118 11TH STREET",
+      "city": "DEWITT",
+      "state": "IA",
+      "zip": "52742",
+      "phone": "(563) 659-4200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DUBUQUE": [
+    {
+      "name": "MERCYONE DUBUQUE MEDICAL CENTER",
+      "address": "250 MERCY DRIVE",
+      "city": "DUBUQUE",
+      "state": "IA",
+      "zip": "52001",
+      "phone": "(563) 589-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FINLEY HOSPITAL",
+      "address": "350 NORTH GRANDVIEW AVENUE",
+      "city": "DUBUQUE",
+      "state": "IA",
+      "zip": "52001",
+      "phone": "(563) 582-1881",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DYERSVILLE": [
+    {
+      "name": "MERCYONE DYERSVILLE MEDICAL CENTER",
+      "address": "1111 3RD STREET SW",
+      "city": "DYERSVILLE",
+      "state": "IA",
+      "zip": "52040",
+      "phone": "(563) 875-2900",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELKADER": [
+    {
+      "name": "MERCYONE ELKADER MEDICAL CENTER",
+      "address": "901 DAVIDSON STREET NW",
+      "city": "ELKADER",
+      "state": "IA",
+      "zip": "52043",
+      "phone": "(563) 245-7000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EMMETSBURG": [
+    {
+      "name": "PALO ALTO COUNTY HOSPITAL",
+      "address": "3201 1ST STREET",
+      "city": "EMMETSBURG",
+      "state": "IA",
+      "zip": "50536",
+      "phone": "(712) 852-5500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ESTHERVILLE": [
+    {
+      "name": "AVERA HOLY FAMILY HOSPITAL",
+      "address": "826 NORTH 8TH STREET",
+      "city": "ESTHERVILLE",
+      "state": "IA",
+      "zip": "51334",
+      "phone": "(712) 362-2631",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAIRFIELD": [
+    {
+      "name": "JEFFERSON COUNTY HEALTH CENTER",
+      "address": "2000 S MAIN",
+      "city": "FAIRFIELD",
+      "state": "IA",
+      "zip": "52556",
+      "phone": "(641) 472-4111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT DODGE": [
+    {
+      "name": "TRINITY REGIONAL MEDICAL CENTER",
+      "address": "802 KENYON RD",
+      "city": "FORT DODGE",
+      "state": "IA",
+      "zip": "50501",
+      "phone": "(515) 573-3101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENFIELD": [
+    {
+      "name": "ADAIR COUNTY MEMORIAL HOSPITAL",
+      "address": "609 SE KENT",
+      "city": "GREENFIELD",
+      "state": "IA",
+      "zip": "50849",
+      "phone": "(641) 743-2123",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRINNELL": [
+    {
+      "name": "GRINNELL REGIONAL MEDICAL CENTER",
+      "address": "210 FOURTH AVENUE",
+      "city": "GRINNELL",
+      "state": "IA",
+      "zip": "50112",
+      "phone": "(641) 236-2422",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRUNDY CENTER": [
+    {
+      "name": "GRUNDY COUNTY MEMORIAL HOSPITAL",
+      "address": "201 EAST J AVENUE",
+      "city": "GRUNDY CENTER",
+      "state": "IA",
+      "zip": "50638",
+      "phone": "(319) 824-5421",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GUTHRIE CENTER": [
+    {
+      "name": "GUTHRIE COUNTY HOSPITAL",
+      "address": "710 NORTH 12TH STREET",
+      "city": "GUTHRIE CENTER",
+      "state": "IA",
+      "zip": "50115",
+      "phone": "(641) 747-2201",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GUTTENBERG": [
+    {
+      "name": "GUTTENBERG MUNICIPAL HOSPITAL",
+      "address": "200 MAIN STREET",
+      "city": "GUTTENBERG",
+      "state": "IA",
+      "zip": "52052",
+      "phone": "(563) 252-1121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAMBURG": [
+    {
+      "name": "GEORGE C GRAPE COMMUNITY HOSPITAL",
+      "address": "2959 US HIGHWAY 275",
+      "city": "HAMBURG",
+      "state": "IA",
+      "zip": "51640",
+      "phone": "(712) 382-1515",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAMPTON": [
+    {
+      "name": "FRANKLIN GENERAL HOSPITAL",
+      "address": "1720 CENTRAL AVENUE EAST",
+      "city": "HAMPTON",
+      "state": "IA",
+      "zip": "50441",
+      "phone": "(641) 456-5000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARLAN": [
+    {
+      "name": "MYRTUE MEDICAL CENTER",
+      "address": "1213 GARFIELD AVENUE",
+      "city": "HARLAN",
+      "state": "IA",
+      "zip": "51537",
+      "phone": "(712) 755-5161",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAWARDEN": [
+    {
+      "name": "HAWARDEN REGIONAL HEALTHCARE",
+      "address": "1111 11TH STREET",
+      "city": "HAWARDEN",
+      "state": "IA",
+      "zip": "51023",
+      "phone": "(712) 551-3100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUMBOLDT": [
+    {
+      "name": "HUMBOLDT COUNTY MEMORIAL HOSPITAL",
+      "address": "1000 NORTH 15TH STREET",
+      "city": "HUMBOLDT",
+      "state": "IA",
+      "zip": "50548",
+      "phone": "(515) 332-4200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IDA GROVE": [
+    {
+      "name": "HORN MEMORIAL HOSPITAL",
+      "address": "701 E 2ND ST",
+      "city": "IDA GROVE",
+      "state": "IA",
+      "zip": "51445",
+      "phone": "(712) 364-3311",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "INDEPENDENCE": [
+    {
+      "name": "BUCHANAN COUNTY HEALTH CENTER",
+      "address": "1600 FIRST ST EAST",
+      "city": "INDEPENDENCE",
+      "state": "IA",
+      "zip": "50644",
+      "phone": "(319) 332-0999",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MENTAL HEALTH INSTITUTE",
+      "address": "2277 IOWA AVENUE",
+      "city": "INDEPENDENCE",
+      "state": "IA",
+      "zip": "50644",
+      "phone": "(319) 334-2583",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IOWA CITY": [
+    {
+      "name": "UNIVERSITY OF IOWA HEALTH CARE MEDICAL CENTER DOWN",
+      "address": "500 E MARKET STREET",
+      "city": "IOWA CITY",
+      "state": "IA",
+      "zip": "52245",
+      "phone": "(319) 339-0300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "IOWA CITY VA MEDICAL CENTER",
+      "address": "601 HIGHWAY 6 WEST",
+      "city": "IOWA CITY",
+      "state": "IA",
+      "zip": "52246",
+      "phone": "(319) 338-0581",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY OF IOWA HOSPITAL & CLINICS",
+      "address": "200 HAWKINS DRIVE",
+      "city": "IOWA CITY",
+      "state": "IA",
+      "zip": "52242",
+      "phone": "(319) 356-1616",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IOWA FALLS": [
+    {
+      "name": "HANSEN FAMILY HOSPITAL",
+      "address": "920 SOUTH OAK STREET",
+      "city": "IOWA FALLS",
+      "state": "IA",
+      "zip": "50126",
+      "phone": "(641) 648-4631",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JEFFERSON": [
+    {
+      "name": "GREENE COUNTY MEDICAL CENTER",
+      "address": "1000 WEST LINCOLN WAY",
+      "city": "JEFFERSON",
+      "state": "IA",
+      "zip": "50129",
+      "phone": "(515) 386-2114",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KEOSAUQUA": [
+    {
+      "name": "VAN BUREN COUNTY HOSPITAL",
+      "address": "304 FRANKLIN STREET",
+      "city": "KEOSAUQUA",
+      "state": "IA",
+      "zip": "52565",
+      "phone": "(319) 293-3171",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KNOXVILLE": [
+    {
+      "name": "KNOXVILLE HOSPITAL & CLINICS",
+      "address": "1002 SOUTH LINCOLN STREET",
+      "city": "KNOXVILLE",
+      "state": "IA",
+      "zip": "50138",
+      "phone": "(641) 842-2151",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE CITY": [
+    {
+      "name": "STEWART MEMORIAL COMMUNITY HOSPITAL",
+      "address": "1301 WEST MAIN STREET",
+      "city": "LAKE CITY",
+      "state": "IA",
+      "zip": "51449",
+      "phone": "(712) 464-3171",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LE MARS": [
+    {
+      "name": "FLOYD VALLEY HEALTHCARE",
+      "address": "714 LINCOLN ST NE",
+      "city": "LE MARS",
+      "state": "IA",
+      "zip": "51031",
+      "phone": "(712) 546-7871",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEON": [
+    {
+      "name": "DECATUR COUNTY HOSPITAL",
+      "address": "1405 NW CHURCH STREET",
+      "city": "LEON",
+      "state": "IA",
+      "zip": "50144",
+      "phone": "(641) 446-4871",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANCHESTER": [
+    {
+      "name": "REGIONAL MEDICAL CENTER",
+      "address": "709 W MAIN STREET",
+      "city": "MANCHESTER",
+      "state": "IA",
+      "zip": "52057",
+      "phone": "(563) 927-3232",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANNING": [
+    {
+      "name": "MANNING REGIONAL HEALTHCARE CENTER",
+      "address": "1550 SIXTH STREET",
+      "city": "MANNING",
+      "state": "IA",
+      "zip": "51455",
+      "phone": "(712) 655-2072",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAQUOKETA": [
+    {
+      "name": "JACKSON COUNTY REGIONAL HEALTH CENTER",
+      "address": "700 W GROVE ST",
+      "city": "MAQUOKETA",
+      "state": "IA",
+      "zip": "52060",
+      "phone": "(563) 652-2474",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARENGO": [
+    {
+      "name": "COMPASS MEMORIAL HEALTHCARE",
+      "address": "300 W MAY ST",
+      "city": "MARENGO",
+      "state": "IA",
+      "zip": "52301",
+      "phone": "(319) 642-5543",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARSHALLTOWN": [
+    {
+      "name": "UNITYPOINT HEALTH - MARSHALLTOWN",
+      "address": "55 UNITYPOINT WAY",
+      "city": "MARSHALLTOWN",
+      "state": "IA",
+      "zip": "50158",
+      "phone": "(641) 754-5151",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MASON CITY": [
+    {
+      "name": "MERCYONE NORTH IOWA MEDICAL CENTER",
+      "address": "1000 FOURTH STREET SW",
+      "city": "MASON CITY",
+      "state": "IA",
+      "zip": "50401",
+      "phone": "(641) 428-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MISSOURI VALLEY": [
+    {
+      "name": "CHI HEALTH MISSOURI VALLEY",
+      "address": "631 N 8TH ST",
+      "city": "MISSOURI VALLEY",
+      "state": "IA",
+      "zip": "51555",
+      "phone": "(712) 642-2784",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT AYR": [
+    {
+      "name": "RINGGOLD COUNTY HOSPITAL",
+      "address": "504 NORTH CLEVELAND STREET",
+      "city": "MOUNT AYR",
+      "state": "IA",
+      "zip": "50854",
+      "phone": "(641) 464-3226",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT PLEASANT": [
+    {
+      "name": "HENRY COUNTY HEALTH CENTER",
+      "address": "407 S WHITE ST",
+      "city": "MOUNT PLEASANT",
+      "state": "IA",
+      "zip": "52641",
+      "phone": "(319) 385-3141",
+      "type": "Critical Access Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MUSCATINE": [
+    {
+      "name": "TRINITY MUSCATINE",
+      "address": "1518 MULBERRY AVENUE",
+      "city": "MUSCATINE",
+      "state": "IA",
+      "zip": "52761",
+      "phone": "(563) 264-9100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEVADA": [
+    {
+      "name": "STORY COUNTY HOSPITAL",
+      "address": "640 SOUTH 19TH STREET",
+      "city": "NEVADA",
+      "state": "IA",
+      "zip": "50201",
+      "phone": "(515) 382-2111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW HAMPTON": [
+    {
+      "name": "MERCY MEDICAL CENTER-NEW HAMPTON",
+      "address": "308 NORTH MAPLE AVENUE",
+      "city": "NEW HAMPTON",
+      "state": "IA",
+      "zip": "50659",
+      "phone": "(641) 394-4121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWTON": [
+    {
+      "name": "MERCYONE NEWTON MEDICAL CENTER",
+      "address": "204 N 4TH AVE E",
+      "city": "NEWTON",
+      "state": "IA",
+      "zip": "50208",
+      "phone": "(641) 792-1273",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OELWEIN": [
+    {
+      "name": "MERCYONE OELWEIN MEDICAL CENTER",
+      "address": "201 EIGHTH AVENUE SE",
+      "city": "OELWEIN",
+      "state": "IA",
+      "zip": "50662",
+      "phone": "(319) 283-6000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ONAWA": [
+    {
+      "name": "BURGESS HEALTH CENTER",
+      "address": "1600 DIAMOND STREET",
+      "city": "ONAWA",
+      "state": "IA",
+      "zip": "51040",
+      "phone": "(712) 423-2311",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ORANGE CITY": [
+    {
+      "name": "ORANGE CITY AREA HEALTH SYSTEM",
+      "address": "1000 LINCOLN CIRCLE SE",
+      "city": "ORANGE CITY",
+      "state": "IA",
+      "zip": "51041",
+      "phone": "(712) 737-4984",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSAGE": [
+    {
+      "name": "MITCHELL COUNTY REGIONAL HEALTH",
+      "address": "616 NORTH EIGHTH STREET",
+      "city": "OSAGE",
+      "state": "IA",
+      "zip": "50461",
+      "phone": "(641) 732-6000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSCEOLA": [
+    {
+      "name": "CLARKE COUNTY HOSPITAL",
+      "address": "800 S FILLMORE ST",
+      "city": "OSCEOLA",
+      "state": "IA",
+      "zip": "50213",
+      "phone": "(641) 342-2184",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSKALOOSA": [
+    {
+      "name": "MAHASKA  HEALTH PARTNERSHIP",
+      "address": "1229 C AVENUE EAST",
+      "city": "OSKALOOSA",
+      "state": "IA",
+      "zip": "52577",
+      "phone": "(641) 672-3100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OTTUMWA": [
+    {
+      "name": "OTTUMWA REGIONAL HEALTH CENTER",
+      "address": "1001 E PENNSYLVANIA",
+      "city": "OTTUMWA",
+      "state": "IA",
+      "zip": "52501",
+      "phone": "(641) 682-7511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PELLA": [
+    {
+      "name": "PELLA REGIONAL HEALTH CENTER",
+      "address": "404 JEFFERSON STREET",
+      "city": "PELLA",
+      "state": "IA",
+      "zip": "50219",
+      "phone": "(641) 628-3150",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PERRY": [
+    {
+      "name": "DALLAS COUNTY HOSPITAL",
+      "address": "610 TENTH STREET",
+      "city": "PERRY",
+      "state": "IA",
+      "zip": "50220",
+      "phone": "(515) 465-3547",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POCAHONTAS": [
+    {
+      "name": "POCAHONTAS COMMUNITY HOSPITAL",
+      "address": "606 N W 7TH STREET",
+      "city": "POCAHONTAS",
+      "state": "IA",
+      "zip": "50574",
+      "phone": "(712) 335-3501",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RED OAK": [
+    {
+      "name": "MONTGOMERY COUNTY MEMORIAL HOSPITAL",
+      "address": "2301 EASTERN AVENUE",
+      "city": "RED OAK",
+      "state": "IA",
+      "zip": "51566",
+      "phone": "(712) 623-7000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROCK RAPIDS": [
+    {
+      "name": "AVERA MERRILL PIONEER HOSPITAL",
+      "address": "1100 S 10TH AVE",
+      "city": "ROCK RAPIDS",
+      "state": "IA",
+      "zip": "51246",
+      "phone": "(712) 472-2591",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROCK VALLEY": [
+    {
+      "name": "HEGG MEMORIAL HEALTH CENTER",
+      "address": "1202 21ST AVENUE",
+      "city": "ROCK VALLEY",
+      "state": "IA",
+      "zip": "51247",
+      "phone": "(712) 476-8000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAC CITY": [
+    {
+      "name": "LORING HOSPITAL",
+      "address": "211 HIGHLAND AVENUE PO BOX 217",
+      "city": "SAC CITY",
+      "state": "IA",
+      "zip": "50583",
+      "phone": "(712) 662-7105",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHELDON": [
+    {
+      "name": "SANFORD SHELDON MEDICAL CENTER",
+      "address": "118 NORTH 7TH AVENUE",
+      "city": "SHELDON",
+      "state": "IA",
+      "zip": "51201",
+      "phone": "(712) 324-5041",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHENANDOAH": [
+    {
+      "name": "SHENANDOAH MEDICAL CENTER",
+      "address": "300 PERSHING AVENUE",
+      "city": "SHENANDOAH",
+      "state": "IA",
+      "zip": "51601",
+      "phone": "(712) 246-1230",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SIBLEY": [
+    {
+      "name": "OSCEOLA COMMUNITY HOSPITAL",
+      "address": "600 9TH AVENUE NORTH",
+      "city": "SIBLEY",
+      "state": "IA",
+      "zip": "51249",
+      "phone": "(712) 754-2574",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SIGOURNEY": [
+    {
+      "name": "KEOKUK COUNTY HEALTH CENTER",
+      "address": "23019 HIGHWAY 149",
+      "city": "SIGOURNEY",
+      "state": "IA",
+      "zip": "52591",
+      "phone": "(641) 622-2720",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SIOUX CENTER": [
+    {
+      "name": "SIOUX CENTER HEALTH",
+      "address": "1101 9TH STREET SE",
+      "city": "SIOUX CENTER",
+      "state": "IA",
+      "zip": "51250",
+      "phone": "(712) 722-1271",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SIOUX CITY": [
+    {
+      "name": "ST LUKES REGIONAL MEDICAL CENTER",
+      "address": "2720 STONE PARK BOULEVARD",
+      "city": "SIOUX CITY",
+      "state": "IA",
+      "zip": "51104",
+      "phone": "(712) 279-3500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MERCYONE SIOUXLAND MEDICAL CENTER",
+      "address": "801 5TH ST",
+      "city": "SIOUX CITY",
+      "state": "IA",
+      "zip": "51101",
+      "phone": "(712) 279-2010",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPENCER": [
+    {
+      "name": "SPENCER MUNICIPAL HOSPITAL",
+      "address": "1200 1ST AVENUE EAST",
+      "city": "SPENCER",
+      "state": "IA",
+      "zip": "51301",
+      "phone": "(712) 264-6198",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPIRIT LAKE": [
+    {
+      "name": "LAKES REGIONAL HEALTHCARE",
+      "address": "2301 HIGHWAY 71",
+      "city": "SPIRIT LAKE",
+      "state": "IA",
+      "zip": "51360",
+      "phone": "(712) 336-1230",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STORM LAKE": [
+    {
+      "name": "BUENA VISTA REGIONAL MEDICAL CENTER",
+      "address": "1525 WEST 5TH STREET",
+      "city": "STORM LAKE",
+      "state": "IA",
+      "zip": "50588",
+      "phone": "(712) 732-4030",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUMNER": [
+    {
+      "name": "COMMUNITY MEMORIAL HOSPITAL MEDICAL CENTER",
+      "address": "909 WEST FIRST STREET",
+      "city": "SUMNER",
+      "state": "IA",
+      "zip": "50674",
+      "phone": "(563) 578-3275",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VINTON": [
+    {
+      "name": "VIRGINIA GAY HOSPITAL",
+      "address": "502 NORTH 9TH AVENUE",
+      "city": "VINTON",
+      "state": "IA",
+      "zip": "52349",
+      "phone": "(319) 472-6200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WASHINGTON": [
+    {
+      "name": "WASHINGTON COUNTY HOSPITAL AND CLINICS",
+      "address": "400 EAST POLK STREET",
+      "city": "WASHINGTON",
+      "state": "IA",
+      "zip": "52353",
+      "phone": "(319) 653-5481",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WATERLOO": [
+    {
+      "name": "MERCYONE WATERLOO MEDICAL CENTER",
+      "address": "3421 WEST NINTH STREET",
+      "city": "WATERLOO",
+      "state": "IA",
+      "zip": "50702",
+      "phone": "(319) 272-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ALLEN HOSPITAL",
+      "address": "1825 LOGAN AVENUE",
+      "city": "WATERLOO",
+      "state": "IA",
+      "zip": "50703",
+      "phone": "(319) 235-3941",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAUKON": [
+    {
+      "name": "VETERANS MEMORIAL HOSPITAL",
+      "address": "40 1ST STREET SE",
+      "city": "WAUKON",
+      "state": "IA",
+      "zip": "52172",
+      "phone": "(563) 568-3411",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAVERLY": [
+    {
+      "name": "WAVERLY HEALTH CENTER",
+      "address": "312  9TH STREET SW",
+      "city": "WAVERLY",
+      "state": "IA",
+      "zip": "50677",
+      "phone": "(319) 352-4120",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEBSTER CITY": [
+    {
+      "name": "VAN DIEST MEDICAL CENTER",
+      "address": "2350 HOSPITAL DRIVE",
+      "city": "WEBSTER CITY",
+      "state": "IA",
+      "zip": "50595",
+      "phone": "(515) 832-9400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST BURLINGTON": [
+    {
+      "name": "SOUTHEAST IOWA REGIONAL MEDICAL CENTER",
+      "address": "1221 SOUTH GEAR AVENUE",
+      "city": "WEST BURLINGTON",
+      "state": "IA",
+      "zip": "52655",
+      "phone": "(319) 768-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST UNION": [
+    {
+      "name": "GUNDERSEN PALMER LUTHERAN HOSPITAL AND CLINICS",
+      "address": "112 JEFFERSON STREET",
+      "city": "WEST UNION",
+      "state": "IA",
+      "zip": "52175",
+      "phone": "(563) 422-3811",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINTERSET": [
+    {
+      "name": "MADISON COUNTY HEALTH CARE SYSTEM",
+      "address": "300 WEST HUTCHINGS STREET",
+      "city": "WINTERSET",
+      "state": "IA",
+      "zip": "50273",
+      "phone": "(515) 462-2373",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

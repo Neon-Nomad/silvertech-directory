@@ -1,0 +1,906 @@
+{
+  "ALBANY": [
+    {
+      "name": "SAMARITAN ALBANY GENERAL HOSPITAL",
+      "address": "1046 6TH AVENUE SW",
+      "city": "ALBANY",
+      "state": "OR",
+      "zip": "97321",
+      "phone": "(541) 812-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ASHLAND": [
+    {
+      "name": "ASANTE ASHLAND COMMUNITY HOSPITAL",
+      "address": "280 MAPLE STREET",
+      "city": "ASHLAND",
+      "state": "OR",
+      "zip": "97520",
+      "phone": "(541) 482-2441",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ASTORIA": [
+    {
+      "name": "COLUMBIA MEMORIAL HOSPITAL",
+      "address": "2111 EXCHANGE STREET",
+      "city": "ASTORIA",
+      "state": "OR",
+      "zip": "97103",
+      "phone": "(503) 325-4321",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAKER CITY": [
+    {
+      "name": "ST. ALPHONSUS MEDICAL CENTER - BAKER CITY",
+      "address": "3325 POCAHONTAS ROAD",
+      "city": "BAKER CITY",
+      "state": "OR",
+      "zip": "97814",
+      "phone": "(541) 523-6461",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BANDON": [
+    {
+      "name": "SOUTHERN COOS HOSPITAL & HEALTH CENTER",
+      "address": "900 11TH STREET SE",
+      "city": "BANDON",
+      "state": "OR",
+      "zip": "97411",
+      "phone": "(541) 347-2426",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEND": [
+    {
+      "name": "ST CHARLES MEDICAL CENTER - BEND",
+      "address": "2500 NE NEFF ROAD",
+      "city": "BEND",
+      "state": "OR",
+      "zip": "97701",
+      "phone": "(541) 382-4321",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURNS": [
+    {
+      "name": "HARNEY DISTRICT HOSPITAL",
+      "address": "557 W WASHINGTON STREET",
+      "city": "BURNS",
+      "state": "OR",
+      "zip": "97720",
+      "phone": "(541) 573-7281",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLACKAMAS": [
+    {
+      "name": "KAISER SUNNYSIDE MEDICAL CENTER",
+      "address": "10180 SE SUNNYSIDE ROAD",
+      "city": "CLACKAMAS",
+      "state": "OR",
+      "zip": "97015",
+      "phone": "(503) 652-2880",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COOS BAY": [
+    {
+      "name": "BAY AREA HOSPITAL",
+      "address": "1775 THOMPSON ROAD",
+      "city": "COOS BAY",
+      "state": "OR",
+      "zip": "97420",
+      "phone": "(541) 269-8111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COQUILLE": [
+    {
+      "name": "COQUILLE VALLEY HOSPITAL",
+      "address": "940 EAST 5TH STREET",
+      "city": "COQUILLE",
+      "state": "OR",
+      "zip": "97423",
+      "phone": "(541) 396-3101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CORVALLIS": [
+    {
+      "name": "GOOD SAMARITAN REGIONAL MEDICAL CENTER",
+      "address": "3600 NW SAMARITAN DRIVE",
+      "city": "CORVALLIS",
+      "state": "OR",
+      "zip": "97339",
+      "phone": "(541) 768-5111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COTTAGE GROVE": [
+    {
+      "name": "PEACEHEALTH COTTAGE GROVE COMMUNITY MEDICAL CENTER",
+      "address": "1515 VILLAGE DRIVE",
+      "city": "COTTAGE GROVE",
+      "state": "OR",
+      "zip": "97424",
+      "phone": "(541) 942-0511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DALLAS": [
+    {
+      "name": "SALEM HEALTH WEST VALLEY HOSPITAL",
+      "address": "525 SE WASHINGTON STREET",
+      "city": "DALLAS",
+      "state": "OR",
+      "zip": "97338",
+      "phone": "(503) 623-8301",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ENTERPRISE": [
+    {
+      "name": "WALLOWA MEMORIAL HOSPITAL",
+      "address": "601 MEDICAL PARKWAY",
+      "city": "ENTERPRISE",
+      "state": "OR",
+      "zip": "97828",
+      "phone": "(541) 426-3111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FLORENCE": [
+    {
+      "name": "PEACE HARBOR MEDICAL CENTER",
+      "address": "400 9TH STREET",
+      "city": "FLORENCE",
+      "state": "OR",
+      "zip": "97439",
+      "phone": "(541) 997-8412",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GOLD BEACH": [
+    {
+      "name": "CURRY GENERAL HOSPITAL",
+      "address": "94220 FOURTH STREET",
+      "city": "GOLD BEACH",
+      "state": "OR",
+      "zip": "97444",
+      "phone": "(541) 247-3000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRANTS PASS": [
+    {
+      "name": "ASANTE THREE RIVERS MEDICAL CENTER",
+      "address": "500 SW RAMSEY AVENUE",
+      "city": "GRANTS PASS",
+      "state": "OR",
+      "zip": "97527",
+      "phone": "(541) 472-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRESHAM": [
+    {
+      "name": "LEGACY MOUNT HOOD MEDICAL CENTER",
+      "address": "24800 SE STARK STREET",
+      "city": "GRESHAM",
+      "state": "OR",
+      "zip": "97030",
+      "phone": "(503) 674-1122",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HEPPNER": [
+    {
+      "name": "PIONEER MEMORIAL HOSPITAL (HEPPNER)",
+      "address": "564 E PIONEER DRIVE",
+      "city": "HEPPNER",
+      "state": "OR",
+      "zip": "97836",
+      "phone": "(541) 676-9133",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HERMISTON": [
+    {
+      "name": "GOOD SHEPHERD MEDICAL CENTER",
+      "address": "610 NW 11TH STREET",
+      "city": "HERMISTON",
+      "state": "OR",
+      "zip": "97838",
+      "phone": "(541) 667-3400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HILLSBORO": [
+    {
+      "name": "HILLSBORO MEDICAL CENTER",
+      "address": "335 SE 8TH AVENUE",
+      "city": "HILLSBORO",
+      "state": "OR",
+      "zip": "97123",
+      "phone": "(503) 681-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL WESTSIDE",
+      "address": "2875 NW STUCKI AVE",
+      "city": "HILLSBORO",
+      "state": "OR",
+      "zip": "97124",
+      "phone": "(971) 310-0100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOOD RIVER": [
+    {
+      "name": "PROVIDENCE HOOD RIVER MEMORIAL HOSPITAL",
+      "address": "810 12TH STREET",
+      "city": "HOOD RIVER",
+      "state": "OR",
+      "zip": "97031",
+      "phone": "(541) 386-3911",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JOHN DAY": [
+    {
+      "name": "BLUE MOUNTAIN HOSPITAL",
+      "address": "170 FORD ROAD",
+      "city": "JOHN DAY",
+      "state": "OR",
+      "zip": "97845",
+      "phone": "(541) 575-1311",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KLAMATH FALLS": [
+    {
+      "name": "SKY LAKES MEDICAL CENTER",
+      "address": "2865 DAGGETT AVENUE",
+      "city": "KLAMATH FALLS",
+      "state": "OR",
+      "zip": "97601",
+      "phone": "(541) 882-6311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LA GRANDE": [
+    {
+      "name": "GRANDE RONDE HOSPITAL",
+      "address": "900 SUNSET DRIVE",
+      "city": "LA GRANDE",
+      "state": "OR",
+      "zip": "97850",
+      "phone": "(541) 963-8421",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKEVIEW": [
+    {
+      "name": "LAKE DISTRICT HOSPITAL",
+      "address": "700 SOUTH J STREET",
+      "city": "LAKEVIEW",
+      "state": "OR",
+      "zip": "97630",
+      "phone": "(541) 947-2114",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEBANON": [
+    {
+      "name": "SAMARITAN LEBANON COMMUNITY HOSPITAL",
+      "address": "525 N SANTIAM HIGHWAY",
+      "city": "LEBANON",
+      "state": "OR",
+      "zip": "97355",
+      "phone": "(541) 258-2101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LINCOLN CITY": [
+    {
+      "name": "SAMARITAN NORTH LINCOLN HOSPITAL",
+      "address": "3043 NE 28TH STREET",
+      "city": "LINCOLN CITY",
+      "state": "OR",
+      "zip": "97367",
+      "phone": "(541) 994-3661",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MADRAS": [
+    {
+      "name": "ST CHARLES MADRAS",
+      "address": "470 NE A STREET",
+      "city": "MADRAS",
+      "state": "OR",
+      "zip": "97741",
+      "phone": "(541) 475-3882",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MCMINNVILLE": [
+    {
+      "name": "WILLAMETTE VALLEY MEDICAL CENTER",
+      "address": "2700 SE STRATUS AVE.",
+      "city": "MCMINNVILLE",
+      "state": "OR",
+      "zip": "97128",
+      "phone": "(503) 472-6131",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MEDFORD": [
+    {
+      "name": "ASANTE ROGUE REGIONAL MEDICAL CENTER",
+      "address": "2825 E BARNETT ROAD",
+      "city": "MEDFORD",
+      "state": "OR",
+      "zip": "97504",
+      "phone": "(541) 789-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PROVIDENCE MEDFORD MEDICAL CENTER",
+      "address": "1111 CRATER LAKE AVENUE",
+      "city": "MEDFORD",
+      "state": "OR",
+      "zip": "97504",
+      "phone": "(541) 732-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILWAUKIE": [
+    {
+      "name": "PROVIDENCE MILWAUKIE HOSPITAL",
+      "address": "10150 SE 32ND AVENUE",
+      "city": "MILWAUKIE",
+      "state": "OR",
+      "zip": "97222",
+      "phone": "(503) 513-8300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWBERG": [
+    {
+      "name": "PROVIDENCE NEWBERG MEDICAL CENTER",
+      "address": "1001 PROVIDENCE DRIVE",
+      "city": "NEWBERG",
+      "state": "OR",
+      "zip": "97132",
+      "phone": "(503) 537-1555",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWPORT": [
+    {
+      "name": "SAMARITAN PACIFIC COMMUNITY HOSPITAL",
+      "address": "930 SW ABBEY STREET",
+      "city": "NEWPORT",
+      "state": "OR",
+      "zip": "97365",
+      "phone": "(541) 265-2244",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ONTARIO": [
+    {
+      "name": "SAINT ALPHONSUS MEDICAL CENTER ONTARIO",
+      "address": "351 SW 9TH STREET",
+      "city": "ONTARIO",
+      "state": "OR",
+      "zip": "97914",
+      "phone": "(541) 881-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OREGON CITY": [
+    {
+      "name": "PROVIDENCE WILLAMETTE FALLS MEDICAL CENTER",
+      "address": "1500 DIVISION STREET",
+      "city": "OREGON CITY",
+      "state": "OR",
+      "zip": "97045",
+      "phone": "(503) 656-1631",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PENDLETON": [
+    {
+      "name": "ST ANTHONY HOSPITAL",
+      "address": "2801 ST ANTHONY WAY",
+      "city": "PENDLETON",
+      "state": "OR",
+      "zip": "97801",
+      "phone": "(541) 276-5121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORTLAND": [
+    {
+      "name": "PROVIDENCE ST VINCENT MEDICAL CENTER",
+      "address": "9205 SW BARNES ROAD",
+      "city": "PORTLAND",
+      "state": "OR",
+      "zip": "97225",
+      "phone": "(503) 216-1234",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LEGACY EMANUEL MEDICAL CENTER",
+      "address": "2801 N GANTENBEIN AVENUE",
+      "city": "PORTLAND",
+      "state": "OR",
+      "zip": "97227",
+      "phone": "(503) 413-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OHSU HOSPITAL AND CLINICS",
+      "address": "3181 SW SAM JACKSON PARK ROAD",
+      "city": "PORTLAND",
+      "state": "OR",
+      "zip": "97239",
+      "phone": "(503) 494-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LEGACY GOOD SAMARITAN MEDICAL CENTER",
+      "address": "1015 NW 22ND AVENUE, W121",
+      "city": "PORTLAND",
+      "state": "OR",
+      "zip": "97210",
+      "phone": "(503) 413-7682",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PORTLAND VA MEDICAL CENTER",
+      "address": "3710 SW US VETERANS HOSPITAL",
+      "city": "PORTLAND",
+      "state": "OR",
+      "zip": "97239",
+      "phone": "(503) 220-8262",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTIST HEALTH PORTLAND",
+      "address": "10123 SE MARKET STREET",
+      "city": "PORTLAND",
+      "state": "OR",
+      "zip": "97216",
+      "phone": "(503) 257-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PROVIDENCE PORTLAND MEDICAL CENTER",
+      "address": "4805 NE GLISAN STREET",
+      "city": "PORTLAND",
+      "state": "OR",
+      "zip": "97213",
+      "phone": "(503) 215-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHRINERS HOSPITAL FOR CHILDREN - PORTLAND",
+      "address": "3101 SW SAM JACKSON PARK ROAD",
+      "city": "PORTLAND",
+      "state": "OR",
+      "zip": "97239",
+      "phone": "(541) 241-5090",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CEDAR HILLS HOSPITAL",
+      "address": "10300 SW EASTRIDGE STREET",
+      "city": "PORTLAND",
+      "state": "OR",
+      "zip": "97225",
+      "phone": "(503) 944-5000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRINEVILLE": [
+    {
+      "name": "ST CHARLES MEDICAL CENTER PRINEVILLE",
+      "address": "384 SE COMBS FLAT ROAD",
+      "city": "PRINEVILLE",
+      "state": "OR",
+      "zip": "97754",
+      "phone": "(541) 447-6254",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REEDSPORT": [
+    {
+      "name": "LOWER UMPQUA HOSPITAL DISTRICT",
+      "address": "600 RANCH ROAD",
+      "city": "REEDSPORT",
+      "state": "OR",
+      "zip": "97467",
+      "phone": "(541) 271-2171",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROSEBURG": [
+    {
+      "name": "MERCY MEDICAL CENTER",
+      "address": "2700 NW STEWART PARKWAY",
+      "city": "ROSEBURG",
+      "state": "OR",
+      "zip": "97471",
+      "phone": "(541) 673-0611",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA ROSEBURG HEALTHCARE SYSTEM",
+      "address": "913 NW GARDEN VALLEY BLVD.",
+      "city": "ROSEBURG",
+      "state": "OR",
+      "zip": "97471",
+      "phone": "(541) 440-1000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALEM": [
+    {
+      "name": "SALEM HOSPITAL",
+      "address": "890 OAK STREET, SE",
+      "city": "SALEM",
+      "state": "OR",
+      "zip": "97301",
+      "phone": "(503) 561-5200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OREGON STATE HOSPITAL DISTINCT PART",
+      "address": "2600 CENTER STREET NE",
+      "city": "SALEM",
+      "state": "OR",
+      "zip": "97310",
+      "phone": "(503) 945-2800",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEASIDE": [
+    {
+      "name": "PROVIDENCE SEASIDE HOSPITAL",
+      "address": "725 S WAHANNA ROAD",
+      "city": "SEASIDE",
+      "state": "OR",
+      "zip": "97138",
+      "phone": "(503) 717-7000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SILVERTON": [
+    {
+      "name": "LEGACY SILVERTON MEDICAL CENTER",
+      "address": "342 FAIRVIEW STREET",
+      "city": "SILVERTON",
+      "state": "OR",
+      "zip": "97381",
+      "phone": "(503) 873-1500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPRINGFIELD": [
+    {
+      "name": "MCKENZIE-WILLAMETTE MEDICAL CENTER",
+      "address": "1460 G STREET",
+      "city": "SPRINGFIELD",
+      "state": "OR",
+      "zip": "97477",
+      "phone": "(541) 726-4402",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SACRED HEART MEDICAL CENTER - RIVERBEND",
+      "address": "3333 RIVERBEND DRIVE",
+      "city": "SPRINGFIELD",
+      "state": "OR",
+      "zip": "97477",
+      "phone": "(541) 222-7300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STAYTON": [
+    {
+      "name": "SANTIAM HOSPITAL & CLINICS",
+      "address": "1401 N 10TH AVENUE",
+      "city": "STAYTON",
+      "state": "OR",
+      "zip": "97383",
+      "phone": "(503) 769-2175",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "THE DALLES": [
+    {
+      "name": "MID-COLUMBIA MEDICAL CENTER",
+      "address": "1700 E 19TH STREET",
+      "city": "THE DALLES",
+      "state": "OR",
+      "zip": "97058",
+      "phone": "(541) 296-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TILLAMOOK": [
+    {
+      "name": "ADVENTIST HEALTH TILLAMOOK",
+      "address": "1000 THIRD STREET",
+      "city": "TILLAMOOK",
+      "state": "OR",
+      "zip": "97141",
+      "phone": "(503) 815-2260",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TUALATIN": [
+    {
+      "name": "LEGACY MERIDIAN PARK MEDICAL CENTER",
+      "address": "19300 SW 65TH AVENUE",
+      "city": "TUALATIN",
+      "state": "OR",
+      "zip": "97062",
+      "phone": "(503) 692-1212",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

@@ -1,0 +1,2260 @@
+{
+  "ABBEVILLE": [
+    {
+      "name": "ABBEVILLE GENERAL HOSPITAL",
+      "address": "118 N HOSPITAL DR",
+      "city": "ABBEVILLE",
+      "state": "LA",
+      "zip": "70510",
+      "phone": "(337) 893-5466",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALEXANDRIA": [
+    {
+      "name": "CHRISTUS ST FRANCES CABRINI HOSPITAL",
+      "address": "3330 MASONIC DRIVE",
+      "city": "ALEXANDRIA",
+      "state": "LA",
+      "zip": "71301",
+      "phone": "(318) 487-1122",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RAPIDES REGIONAL MEDICAL CENTER",
+      "address": "211 4TH STREET",
+      "city": "ALEXANDRIA",
+      "state": "LA",
+      "zip": "71301",
+      "phone": "(318) 769-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHRISTUS CENTRAL LOUISIANA SURGICAL HOSPITAL",
+      "address": "651 NORTH BOLTON AVE",
+      "city": "ALEXANDRIA",
+      "state": "LA",
+      "zip": "71301",
+      "phone": "(318) 449-6400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ALEXANDRIA EMERGENCY HOSPITAL",
+      "address": "5900 COLISEUM BLVD",
+      "city": "ALEXANDRIA",
+      "state": "LA",
+      "zip": "71303",
+      "phone": "(318) 386-8110",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LONGLEAF HOSPITAL",
+      "address": "44 VERSAILLES BLVD",
+      "city": "ALEXANDRIA",
+      "state": "LA",
+      "zip": "71303",
+      "phone": "(318) 445-5111",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OCEANS BEHAVIORAL HOSPITAL OF ALEXANDRIA",
+      "address": "2621 NORTH BOLTON AVENUE",
+      "city": "ALEXANDRIA",
+      "state": "LA",
+      "zip": "71303",
+      "phone": "(318) 448-8473",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMPASS BEHAVIORAL CENTER OF ALEXANDRIA, INC",
+      "address": "6410 MASONIC DRIVE",
+      "city": "ALEXANDRIA",
+      "state": "LA",
+      "zip": "71301",
+      "phone": "(318) 442-3163",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AMITE": [
+    {
+      "name": "HOOD MEMORIAL HOSPITAL",
+      "address": "301 W WALNUT STREET",
+      "city": "AMITE",
+      "state": "LA",
+      "zip": "70422",
+      "phone": "(985) 748-9485",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARCADIA": [
+    {
+      "name": "BIENVILLE MEDICAL CENTER",
+      "address": "1175 PINE STREET",
+      "city": "ARCADIA",
+      "state": "LA",
+      "zip": "71001",
+      "phone": "(318) 263-4700",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BASTROP": [
+    {
+      "name": "MOREHOUSE GENERAL HOSPITAL",
+      "address": "323 W WALNUT",
+      "city": "BASTROP",
+      "state": "LA",
+      "zip": "71220",
+      "phone": "(318) 283-3600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FREEDOM BEHAVIORAL HOSPITAL OF BASTROP",
+      "address": "4673 EUGENE WARE ROAD",
+      "city": "BASTROP",
+      "state": "LA",
+      "zip": "71220",
+      "phone": "(318) 281-2448",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BATON ROUGE": [
+    {
+      "name": "OUR LADY OF THE LAKE REGIONAL MEDICAL CENTER",
+      "address": "5000 HENNESSY BLVD",
+      "city": "BATON ROUGE",
+      "state": "LA",
+      "zip": "70808",
+      "phone": "(225) 765-6565",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BATON ROUGE GENERAL MEDICAL CENTER",
+      "address": "8585 PICARDY AVE",
+      "city": "BATON ROUGE",
+      "state": "LA",
+      "zip": "70809",
+      "phone": "(225) 387-7767",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WOMANS HOSPITAL",
+      "address": "100 WOMAN'S WAY",
+      "city": "BATON ROUGE",
+      "state": "LA",
+      "zip": "70817",
+      "phone": "(225) 927-1300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OCHSNER MEDICAL CENTER - BATON ROUGE",
+      "address": "17000 MEDICAL CENTER DR",
+      "city": "BATON ROUGE",
+      "state": "LA",
+      "zip": "70816",
+      "phone": "(225) 752-2470",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SURGICAL SPECIALTY CENTER OF BATON ROUGE",
+      "address": "8080 BLUEBONNET BLVD",
+      "city": "BATON ROUGE",
+      "state": "LA",
+      "zip": "70810",
+      "phone": "(225) 408-8080",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE SPINE HOSPITAL OF LOUISIANA",
+      "address": "10105 PARK ROW CIRCLE, SUITE 250",
+      "city": "BATON ROUGE",
+      "state": "LA",
+      "zip": "70810",
+      "phone": "(225) 763-9900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE GENERAL",
+      "address": "3600 FLORIDA BLVD, SUITE 2020",
+      "city": "BATON ROUGE",
+      "state": "LA",
+      "zip": "70806",
+      "phone": "(225) 381-6393",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OCEANS BEHAVIORAL HOSPITAL OF BATON ROUGE",
+      "address": "11135 FLORIDA BLVD",
+      "city": "BATON ROUGE",
+      "state": "LA",
+      "zip": "70815",
+      "phone": "(225) 356-7030",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SEASIDE HEALTH SYSTEM",
+      "address": "4363 CONVENTION STREET",
+      "city": "BATON ROUGE",
+      "state": "LA",
+      "zip": "70806",
+      "phone": "(225) 522-4076",
+      "type": "Psychiatric",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "APOLLO BEHAVIORAL HEALTH HOSPITAL, L L C",
+      "address": "9938 AIRLINE HWY",
+      "city": "BATON ROUGE",
+      "state": "LA",
+      "zip": "70809",
+      "phone": "(225) 663-2881",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BATON ROUGE BEHAVIORAL HOSPITAL",
+      "address": "4040 NORTH BLVD.",
+      "city": "BATON ROUGE",
+      "state": "LA",
+      "zip": "70806",
+      "phone": "(225) 300-8470",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "REGIONS BEHAVIORAL HOSPITAL",
+      "address": "8416 CUMBERLAND",
+      "city": "BATON ROUGE",
+      "state": "LA",
+      "zip": "70806",
+      "phone": "(225) 408-6060",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BERNICE": [
+    {
+      "name": "REEVES MEMORIAL MEDICAL CENTER",
+      "address": "409 FIRST STREET",
+      "city": "BERNICE",
+      "state": "LA",
+      "zip": "71222",
+      "phone": "(318) 285-9066",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOGALUSA": [
+    {
+      "name": "OUR LADY OF THE ANGELS HOSPITAL",
+      "address": "433 PLAZA STREET",
+      "city": "BOGALUSA",
+      "state": "LA",
+      "zip": "70427",
+      "phone": "(985) 730-6700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOSSIER CITY": [
+    {
+      "name": "RED RIVER BEHAVIORAL CENTER, LLC",
+      "address": "2800 MELROSE AVENUE",
+      "city": "BOSSIER CITY",
+      "state": "LA",
+      "zip": "71111",
+      "phone": "(318) 549-2033",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BREAUX BRIDGE": [
+    {
+      "name": "OCHSNER ST MARTIN HOSPITAL",
+      "address": "210 CHAMPAGNE BOULEVARD",
+      "city": "BREAUX BRIDGE",
+      "state": "LA",
+      "zip": "70517",
+      "phone": "(337) 332-2178",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GENESIS BEHAVIORAL HOSPITAL",
+      "address": "606 LATIOLAIS ROAD",
+      "city": "BREAUX BRIDGE",
+      "state": "LA",
+      "zip": "70517",
+      "phone": "(337) 442-6254",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BROUSSARD": [
+    {
+      "name": "OCEANS HOSPITAL OF BROUSSARD",
+      "address": "420 ALBERTSONS PARKWAY",
+      "city": "BROUSSARD",
+      "state": "LA",
+      "zip": "70518",
+      "phone": "(337) 839-9008",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BUNKIE": [
+    {
+      "name": "BUNKIE GENERAL HOSPITAL",
+      "address": "427 EVERGREEN STREET",
+      "city": "BUNKIE",
+      "state": "LA",
+      "zip": "71322",
+      "phone": "(318) 346-6681",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BEACON BEHAVIORAL HOSPITAL - CENTRAL",
+      "address": "323 EVERGREEN STREET, SUITE B",
+      "city": "BUNKIE",
+      "state": "LA",
+      "zip": "71322",
+      "phone": "(318) 346-3143",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHALMETTE": [
+    {
+      "name": "ST BERNARD PARISH HOSPITAL",
+      "address": "8000 WEST JUDGE PEREZ DRIVE",
+      "city": "CHALMETTE",
+      "state": "LA",
+      "zip": "70043",
+      "phone": "(504) 826-9500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHURCH POINT": [
+    {
+      "name": "ACADIA ST LANDRY",
+      "address": "810 SOUTH BROADWAY STREET",
+      "city": "CHURCH POINT",
+      "state": "LA",
+      "zip": "70525",
+      "phone": "(337) 684-5435",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUMBIA": [
+    {
+      "name": "CITIZENS MEDICAL CENTER",
+      "address": "7939 U S HWY 165 SOUTH",
+      "city": "COLUMBIA",
+      "state": "LA",
+      "zip": "71418",
+      "phone": "(318) 649-6106",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CALDWELL MEMORIAL HOSPITAL, INC",
+      "address": "411 MAIN STREET",
+      "city": "COLUMBIA",
+      "state": "LA",
+      "zip": "71418",
+      "phone": "(318) 649-6111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COUSHATTA": [
+    {
+      "name": "CHRISTUS COUSHATTA HEALTH CARE CENTER",
+      "address": "1635 MARVEL STREET",
+      "city": "COUSHATTA",
+      "state": "LA",
+      "zip": "71019",
+      "phone": "(318) 932-2000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COVINGTON": [
+    {
+      "name": "ST TAMMANY PARISH HOSPITAL",
+      "address": "1202 S TYLER STREET",
+      "city": "COVINGTON",
+      "state": "LA",
+      "zip": "70433",
+      "phone": "(985) 898-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AVALA",
+      "address": "67252 INDUSTRY LANE",
+      "city": "COVINGTON",
+      "state": "LA",
+      "zip": "70433",
+      "phone": "(985) 809-9888",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GREENBRIER BEHAVIORAL HEALTH",
+      "address": "201 GREENBRIAR BLVD",
+      "city": "COVINGTON",
+      "state": "LA",
+      "zip": "70433",
+      "phone": "(985) 893-2970",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CROWLEY": [
+    {
+      "name": "ACADIA GENERAL HOSPITAL",
+      "address": "1305 CROWLEY RAYNE HIGHWAY",
+      "city": "CROWLEY",
+      "state": "LA",
+      "zip": "70526",
+      "phone": "(337) 783-3222",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CUT OFF": [
+    {
+      "name": "LADY OF THE SEA GENERAL HOSPITAL",
+      "address": "200 WEST 134TH PLACE",
+      "city": "CUT OFF",
+      "state": "LA",
+      "zip": "70345",
+      "phone": "(985) 632-6401",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DELHI": [
+    {
+      "name": "RICHLAND PARISH HOSPITAL-DELHI",
+      "address": "407 CINCINNATI STREET",
+      "city": "DELHI",
+      "state": "LA",
+      "zip": "71232",
+      "phone": "(318) 878-5171",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DENHAM SPRINGS": [
+    {
+      "name": "SAGE SPECIALTY HOSPITAL",
+      "address": "8375 FLORIDA BLVD",
+      "city": "DENHAM SPRINGS",
+      "state": "LA",
+      "zip": "70726",
+      "phone": "(225) 665-2664",
+      "type": "Long-term",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEQUINCY": [
+    {
+      "name": "DEQUINCY MEMORIAL HOSPITAL",
+      "address": "110 WEST 4TH STREET",
+      "city": "DEQUINCY",
+      "state": "LA",
+      "zip": "70633",
+      "phone": "(337) 786-1200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DERIDDER": [
+    {
+      "name": "BEAUREGARD MEMORIAL HOSPITAL",
+      "address": "600 S PINE STREET",
+      "city": "DERIDDER",
+      "state": "LA",
+      "zip": "70634",
+      "phone": "(337) 462-7100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OCEANS BEHAVIORAL HOSPITAL OF DERIDDER",
+      "address": "1420 BLANKENSHIP DRIVE",
+      "city": "DERIDDER",
+      "state": "LA",
+      "zip": "70634",
+      "phone": "(337) 460-9472",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DONALDSONVILLE": [
+    {
+      "name": "PREVOST MEMORIAL HOSPITAL",
+      "address": "301 MEMORIAL DR",
+      "city": "DONALDSONVILLE",
+      "state": "LA",
+      "zip": "70346",
+      "phone": "(225) 473-7931",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EUNICE": [
+    {
+      "name": "ACADIAN MEDICAL CENTER",
+      "address": "3501 HIGHWAY 190 EAST",
+      "city": "EUNICE",
+      "state": "LA",
+      "zip": "70535",
+      "phone": "(337) 580-7903",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FARMERVILLE": [
+    {
+      "name": "UNION GENERAL HOSPITAL",
+      "address": "901 JAMES AVE",
+      "city": "FARMERVILLE",
+      "state": "LA",
+      "zip": "71241",
+      "phone": "(318) 368-9751",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FERRIDAY": [
+    {
+      "name": "RIVERLAND MEDICAL CENTER",
+      "address": "6569 HWY 84",
+      "city": "FERRIDAY",
+      "state": "LA",
+      "zip": "71334",
+      "phone": "(318) 757-6551",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FREEDOM BEHAVIORAL HOSPITAL OF FERRIDAY",
+      "address": "1700 EE WALLACE BLVD. N",
+      "city": "FERRIDAY",
+      "state": "LA",
+      "zip": "71334",
+      "phone": "(318) 740-2400",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRANKLIN": [
+    {
+      "name": "BAYOU BEND HEALTH SYSTEM",
+      "address": "1097 NORTHWEST BLVD",
+      "city": "FRANKLIN",
+      "state": "LA",
+      "zip": "70538",
+      "phone": "(337) 828-0760",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRANKLINTON": [
+    {
+      "name": "RIVERSIDE MEDICAL CENTER",
+      "address": "1900 SOUTH MAIN ST",
+      "city": "FRANKLINTON",
+      "state": "LA",
+      "zip": "70438",
+      "phone": "(985) 795-4431",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Fort Johnson": [
+    {
+      "name": "Bayne-Jones ACH (Ft Johnson)",
+      "address": "1585 3rd St",
+      "city": "Fort Johnson",
+      "state": "LA",
+      "zip": "71459",
+      "phone": "(337) 531-3118",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GONZALES": [
+    {
+      "name": "ST JAMES BEHAVIORAL HEALTH HOSPITAL, INC",
+      "address": "3136 SOUTH ST LANDRY ROAD",
+      "city": "GONZALES",
+      "state": "LA",
+      "zip": "70737",
+      "phone": "(225) 647-7524",
+      "type": "Psychiatric",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENSBURG": [
+    {
+      "name": "ST HELENA PARISH HOSPITAL",
+      "address": "16874 HIGHWAY 43",
+      "city": "GREENSBURG",
+      "state": "LA",
+      "zip": "70441",
+      "phone": "(225) 222-6111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAMMOND": [
+    {
+      "name": "NORTH OAKS MEDICAL CENTER",
+      "address": "15790 PAUL VEGA MD DRIVE",
+      "city": "HAMMOND",
+      "state": "LA",
+      "zip": "70403",
+      "phone": "(985) 345-2700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CYPRESS POINTE SURGICAL HOSPITAL",
+      "address": "42570 SOUTH AIRPORT RD",
+      "city": "HAMMOND",
+      "state": "LA",
+      "zip": "70403",
+      "phone": "(985) 510-6200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSAL BEHAVIORAL HEALTH HOSPITAL",
+      "address": "800 S OAK ST",
+      "city": "HAMMOND",
+      "state": "LA",
+      "zip": "70403",
+      "phone": "(504) 615-6419",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOMER": [
+    {
+      "name": "CLAIBORNE MEMORIAL MEDICAL CENTER",
+      "address": "620 EAST COLLEGE STREET",
+      "city": "HOMER",
+      "state": "LA",
+      "zip": "71040",
+      "phone": "(318) 927-2024",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOUMA": [
+    {
+      "name": "TERREBONNE GENERAL MEDICAL CENTER - PARISH",
+      "address": "8166 MAIN STREET",
+      "city": "HOUMA",
+      "state": "LA",
+      "zip": "70360",
+      "phone": "(985) 873-4141",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LEONARD J CHABERT MEDICAL CENTER",
+      "address": "1978 INDUSTRIAL BLVD",
+      "city": "HOUMA",
+      "state": "LA",
+      "zip": "70363",
+      "phone": "(985) 873-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PHYSICIANS MEDICAL CENTER",
+      "address": "218 CORPORATE DRIVE",
+      "city": "HOUMA",
+      "state": "LA",
+      "zip": "70360",
+      "phone": "(985) 853-1390",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMPASS BEHAVIORAL CENTER OF HOUMA, LLC",
+      "address": "4701 WEST PARK AVENUE",
+      "city": "HOUMA",
+      "state": "LA",
+      "zip": "70364",
+      "phone": "(985) 876-1715",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "INDEPENDENCE": [
+    {
+      "name": "LALLIE KEMP MEDICAL CENTER",
+      "address": "52579 HIGHWAY 51 SOUTH",
+      "city": "INDEPENDENCE",
+      "state": "LA",
+      "zip": "70443",
+      "phone": "(985) 878-1333",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JACKSON": [
+    {
+      "name": "EASTERN LA MENTAL HEALTH SYSTEM",
+      "address": "4502 HIGHWAY 951",
+      "city": "JACKSON",
+      "state": "LA",
+      "zip": "70748",
+      "phone": "(225) 634-0100",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JENA": [
+    {
+      "name": "LASALLE GENERAL HOSPITAL",
+      "address": "187 NINTH ST/HWY 84 WEST",
+      "city": "JENA",
+      "state": "LA",
+      "zip": "71342",
+      "phone": "(318) 992-9200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JENNINGS": [
+    {
+      "name": "OCHSNER AMERICAN LEGION HOSPITAL",
+      "address": "1634 ELTON ROAD",
+      "city": "JENNINGS",
+      "state": "LA",
+      "zip": "70546",
+      "phone": "(337) 616-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMPASS SENIOR CARE HOSPITAL",
+      "address": "1 HOSPITAL DRIVE, SUITE 201",
+      "city": "JENNINGS",
+      "state": "LA",
+      "zip": "70546",
+      "phone": "(337) 824-1558",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JONESBORO": [
+    {
+      "name": "JACKSON PARISH HOSPITAL",
+      "address": "165 BEECH SPRINGS ROAD",
+      "city": "JONESBORO",
+      "state": "LA",
+      "zip": "71251",
+      "phone": "(318) 259-4435",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KAPLAN": [
+    {
+      "name": "ABROM KAPLAN MEMORIAL HOSPITAL",
+      "address": "1310 WEST SEVENTH STREET",
+      "city": "KAPLAN",
+      "state": "LA",
+      "zip": "70548",
+      "phone": "(337) 643-8300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KENNER": [
+    {
+      "name": "OCHSNER MEDICAL CENTER-KENNER",
+      "address": "180 WEST ESPLANADE AVENUE",
+      "city": "KENNER",
+      "state": "LA",
+      "zip": "70065",
+      "phone": "(504) 464-8065",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OCEANS BEHAVIORAL HOSPITAL OF GREATER NEW ORLEANS",
+      "address": "716 VILLAGE ROAD",
+      "city": "KENNER",
+      "state": "LA",
+      "zip": "70065",
+      "phone": "(504) 464-8895",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PERIMETER BEHAVIORAL HOSPITAL OF NEW ORLEANS",
+      "address": "3639 LOYOLA AVENUE",
+      "city": "KENNER",
+      "state": "LA",
+      "zip": "70065",
+      "phone": "(504) 305-2700",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KENTWOOD": [
+    {
+      "name": "OCEANS BEHAVIORAL HOSPITAL OF KENTWOOD",
+      "address": "921 AVENUE G",
+      "city": "KENTWOOD",
+      "state": "LA",
+      "zip": "70444",
+      "phone": "(985) 229-0717",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KINDER": [
+    {
+      "name": "ALLEN PARISH HOSPITAL",
+      "address": "108 6TH AVENUE",
+      "city": "KINDER",
+      "state": "LA",
+      "zip": "70648",
+      "phone": "(337) 738-9489",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LACOMBE": [
+    {
+      "name": "BEACON BEHAVIORAL HOSPITAL - NORTHSHORE, LLC",
+      "address": "64026 HWY 434, SUITE 300 (3RD FLOOR)",
+      "city": "LACOMBE",
+      "state": "LA",
+      "zip": "70445",
+      "phone": "(985) 882-0226",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAFAYETTE": [
+    {
+      "name": "OCHSNER LAFAYETTE GENERAL MEDICAL CENTER",
+      "address": "1214 COOLIDGE AVENUE",
+      "city": "LAFAYETTE",
+      "state": "LA",
+      "zip": "70503",
+      "phone": "(337) 289-7991",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OCHSNER UNIVERSITY HOSPITAL AND CLINICS",
+      "address": "2390 WEST CONGRESS",
+      "city": "LAFAYETTE",
+      "state": "LA",
+      "zip": "70506",
+      "phone": "(337) 261-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OUR LADY OF LOURDES REGIONAL MEDICAL CENTER, INC",
+      "address": "4801 AMBASSADOR CAFFERY PARKWAY",
+      "city": "LAFAYETTE",
+      "state": "LA",
+      "zip": "70508",
+      "phone": "(337) 470-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PARK PLACE SURGICAL HOSPITAL",
+      "address": "4811 AMBASSADOR CAFFERY PARKWAY",
+      "city": "LAFAYETTE",
+      "state": "LA",
+      "zip": "70508",
+      "phone": "(337) 237-8119",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LAFAYETTE SURGICAL SPECIALTY HOSPITAL",
+      "address": "1101 KALISTE SALOOM RD",
+      "city": "LAFAYETTE",
+      "state": "LA",
+      "zip": "70508",
+      "phone": "(337) 769-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VERMILION BEHAVIORAL HEALTH SYSTEMS",
+      "address": "2520 N UNIVERSITY AVENUE",
+      "city": "LAFAYETTE",
+      "state": "LA",
+      "zip": "70507",
+      "phone": "(337) 234-5614",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMPASS BEHAVIORAL CENTER OF LAFAYETTE",
+      "address": "312 YOUNGSVILLE HIGHWAY",
+      "city": "LAFAYETTE",
+      "state": "LA",
+      "zip": "70508",
+      "phone": "(337) 534-4655",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE CHARLES": [
+    {
+      "name": "CHRISTUS OCHSNER ST PATRICK HOSPITAL",
+      "address": "524 DR MICHAEL DEBAKEY DRIVE",
+      "city": "LAKE CHARLES",
+      "state": "LA",
+      "zip": "70601",
+      "phone": "(337) 436-2511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LAKE CHARLES MEMORIAL HOSPITAL",
+      "address": "1701 OAK PARK BLVD",
+      "city": "LAKE CHARLES",
+      "state": "LA",
+      "zip": "70601",
+      "phone": "(337) 494-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHRISTUS OCHSNER LAKE AREA HOSPITAL",
+      "address": "4200 NELSON ROAD",
+      "city": "LAKE CHARLES",
+      "state": "LA",
+      "zip": "70605",
+      "phone": "(337) 474-6370",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OCEANS BEHAVIORAL HOSPITAL OF LAKE CHARLES",
+      "address": "302 W MCNEESE ST",
+      "city": "LAKE CHARLES",
+      "state": "LA",
+      "zip": "70605",
+      "phone": "(337) 474-7581",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "STONEBRIDGE BEHAVIORAL HOSPITAL",
+      "address": "2837 ERNEST STREET, SUITE A",
+      "city": "LAKE CHARLES",
+      "state": "LA",
+      "zip": "70601",
+      "phone": "(337) 439-8111",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE PROVIDENCE": [
+    {
+      "name": "EAST CARROLL PARISH HOSPITAL",
+      "address": "336 NORTH HOOD STREET",
+      "city": "LAKE PROVIDENCE",
+      "state": "LA",
+      "zip": "71254",
+      "phone": "(318) 559-4023",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAPLACE": [
+    {
+      "name": "RIVER PLACE BEHAVIORAL HEALTH",
+      "address": "500 RUE DE SANTE",
+      "city": "LAPLACE",
+      "state": "LA",
+      "zip": "70068",
+      "phone": "(985) 303-2327",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LECOMPTE": [
+    {
+      "name": "MERCY BEHAVIORAL HOSPITAL",
+      "address": "2810 US HWY 71 S",
+      "city": "LECOMPTE",
+      "state": "LA",
+      "zip": "71346",
+      "phone": "(318) 443-4000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEESVILLE": [
+    {
+      "name": "BYRD REGIONAL HOSPITAL",
+      "address": "1020 FERTITTA BLVD",
+      "city": "LEESVILLE",
+      "state": "LA",
+      "zip": "71446",
+      "phone": "(337) 239-9041",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LULING": [
+    {
+      "name": "ST CHARLES PARISH HOSPITAL",
+      "address": "1057 PAUL MAILLARD ROAD",
+      "city": "LULING",
+      "state": "LA",
+      "zip": "70070",
+      "phone": "(985) 785-3644",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LUTCHER": [
+    {
+      "name": "ST JAMES PARISH HOSPITAL",
+      "address": "1645 LUTCHER AVENUE",
+      "city": "LUTCHER",
+      "state": "LA",
+      "zip": "70071",
+      "phone": "(225) 869-5512",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BEACON BEHAVIORAL HOSPITAL - LUTCHER",
+      "address": "2471 LOUISIANA AVE",
+      "city": "LUTCHER",
+      "state": "LA",
+      "zip": "70071",
+      "phone": "(225) 258-6103",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAMOU": [
+    {
+      "name": "SAVOY MEDICAL CENTER",
+      "address": "801 POINCIANA AVENUE",
+      "city": "MAMOU",
+      "state": "LA",
+      "zip": "70554",
+      "phone": "(337) 468-5261",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANDEVILLE": [
+    {
+      "name": "NORTHLAKE BEHAVIORAL HEALTH SYSTEM",
+      "address": "23515 HIGHWAY 190",
+      "city": "MANDEVILLE",
+      "state": "LA",
+      "zip": "70470",
+      "phone": "(985) 626-6300",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANSFIELD": [
+    {
+      "name": "DESOTO REGIONAL HEALTH SYSTEM",
+      "address": "207 JEFFERSON STREET",
+      "city": "MANSFIELD",
+      "state": "LA",
+      "zip": "71052",
+      "phone": "(318) 872-4610",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANY": [
+    {
+      "name": "SABINE MEDICAL CENTER",
+      "address": "240 HIGHLAND DRIVE",
+      "city": "MANY",
+      "state": "LA",
+      "zip": "71449",
+      "phone": "(318) 256-1232",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARKSVILLE": [
+    {
+      "name": "AVOYELLES HOSPITAL",
+      "address": "4231 HIGHWAY 1192",
+      "city": "MARKSVILLE",
+      "state": "LA",
+      "zip": "71351",
+      "phone": "(318) 253-8611",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARRERO": [
+    {
+      "name": "WEST JEFFERSON MEDICAL CENTER",
+      "address": "1101 MEDICAL CENTER BLVD",
+      "city": "MARRERO",
+      "state": "LA",
+      "zip": "70072",
+      "phone": "(504) 347-5511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "METAIRIE": [
+    {
+      "name": "EAST JEFFERSON GENERAL HOSPITAL",
+      "address": "4200 HOUMA BLVD",
+      "city": "METAIRIE",
+      "state": "LA",
+      "zip": "70006",
+      "phone": "(504) 988-5263",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OMEGA HOSPITAL, LLC",
+      "address": "2525 SEVERN AVENUE",
+      "city": "METAIRIE",
+      "state": "LA",
+      "zip": "70002",
+      "phone": "(504) 616-3897",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MINDEN": [
+    {
+      "name": "MINDEN MEDICAL CENTER",
+      "address": "NO 1 MEDICAL PLAZA",
+      "city": "MINDEN",
+      "state": "LA",
+      "zip": "71055",
+      "phone": "(318) 377-2321",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONROE": [
+    {
+      "name": "OCHSNER LSU HEALTH MONROE",
+      "address": "4864 JACKSON STREET",
+      "city": "MONROE",
+      "state": "LA",
+      "zip": "71202",
+      "phone": "(318) 388-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST FRANCIS MEDICAL CENTER",
+      "address": "309 JACKSON STREET",
+      "city": "MONROE",
+      "state": "LA",
+      "zip": "71201",
+      "phone": "(318) 966-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MONROE SURGICAL HOSPITAL",
+      "address": "2408 BROADMOOR BLVD",
+      "city": "MONROE",
+      "state": "LA",
+      "zip": "71201",
+      "phone": "(318) 410-0002",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FREEDOM BEHAVIORAL HOSPITAL OF MONROE",
+      "address": "4402 STERLINGTON ROAD",
+      "city": "MONROE",
+      "state": "LA",
+      "zip": "71203",
+      "phone": "(318) 966-4686",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MORGAN CITY": [
+    {
+      "name": "OCHSNER ST MARY",
+      "address": "1125 MARGUERITE STREET",
+      "city": "MORGAN CITY",
+      "state": "LA",
+      "zip": "70380",
+      "phone": "(985) 384-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NAPOLEONVILLE": [
+    {
+      "name": "ASSUMPTION COMMUNITY HOSPITAL",
+      "address": "135 HIGHWAY 402",
+      "city": "NAPOLEONVILLE",
+      "state": "LA",
+      "zip": "70390",
+      "phone": "(985) 369-3600",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NATCHITOCHES": [
+    {
+      "name": "NATCHITOCHES REGIONAL MEDICAL CENTER",
+      "address": "501 KEYSER AVE",
+      "city": "NATCHITOCHES",
+      "state": "LA",
+      "zip": "71457",
+      "phone": "(318) 214-4200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW IBERIA": [
+    {
+      "name": "IBERIA MEDICAL CENTER",
+      "address": "2315 E MAIN STREET",
+      "city": "NEW IBERIA",
+      "state": "LA",
+      "zip": "70560",
+      "phone": "(337) 364-0441",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW ORLEANS": [
+    {
+      "name": "UNIVERSITY MEDICAL CENTER NEW ORLEANS",
+      "address": "2000 CANAL STREET",
+      "city": "NEW ORLEANS",
+      "state": "LA",
+      "zip": "70112",
+      "phone": "(504) 702-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OCHSNER MEDICAL CENTER ACUTE",
+      "address": "1516 JEFFERSON HWY",
+      "city": "NEW ORLEANS",
+      "state": "LA",
+      "zip": "70121",
+      "phone": "(504) 842-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TOURO INFIRMARY",
+      "address": "1401 FOUCHER STREET",
+      "city": "NEW ORLEANS",
+      "state": "LA",
+      "zip": "70115",
+      "phone": "(504) 897-8247",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST CHARLES SURGICAL HOSPITAL",
+      "address": "1717 ST CHARLES AVE",
+      "city": "NEW ORLEANS",
+      "state": "LA",
+      "zip": "70130",
+      "phone": "(504) 529-6600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NEW ORLEANS EAST HOSPITAL",
+      "address": "5620 READ BLVD",
+      "city": "NEW ORLEANS",
+      "state": "LA",
+      "zip": "70127",
+      "phone": "(504) 592-6600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHEAST LOUISIANA VETERANS HEALTH CARE SYSTEM",
+      "address": "2400 CANAL STREET",
+      "city": "NEW ORLEANS",
+      "state": "LA",
+      "zip": "70119",
+      "phone": "(800) 935-8387",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDRENS HOSPITAL",
+      "address": "200 HENRY CLAY AVE",
+      "city": "NEW ORLEANS",
+      "state": "LA",
+      "zip": "70118",
+      "phone": "(504) 899-9511",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIVER OAKS HOSPITAL",
+      "address": "1525 RIVER OAKS WEST",
+      "city": "NEW ORLEANS",
+      "state": "LA",
+      "zip": "70123",
+      "phone": "(504) 734-1740",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMMUNITY CARE HOSPITAL",
+      "address": "1421 GENERAL TAYLOR",
+      "city": "NEW ORLEANS",
+      "state": "LA",
+      "zip": "70115",
+      "phone": "(504) 899-2500",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BEACON BEHAVIORAL HOSPITAL- NEW ORLEANS, LLC",
+      "address": "14500 HAYNES BLVD",
+      "city": "NEW ORLEANS",
+      "state": "LA",
+      "zip": "70128",
+      "phone": "(504) 210-0460",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW ROADS": [
+    {
+      "name": "POINTE COUPEE GENERAL HOSPITAL",
+      "address": "2202 FALSE RIVER DRIVE",
+      "city": "NEW ROADS",
+      "state": "LA",
+      "zip": "70760",
+      "phone": "(225) 638-6331",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OAK GROVE": [
+    {
+      "name": "WEST CARROLL MEMORIAL HOSPITAL",
+      "address": "706 ROSS STREET",
+      "city": "OAK GROVE",
+      "state": "LA",
+      "zip": "71263",
+      "phone": "(318) 428-3237",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OAKDALE": [
+    {
+      "name": "OAKDALE COMMUNITY HOSPITAL",
+      "address": "130 N HOSPITAL DR",
+      "city": "OAKDALE",
+      "state": "LA",
+      "zip": "71463",
+      "phone": "(318) 335-3700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OLLA": [
+    {
+      "name": "HARDTNER MEDICAL CENTER",
+      "address": "1102 N PINE ROAD",
+      "city": "OLLA",
+      "state": "LA",
+      "zip": "71465",
+      "phone": "(318) 495-3131",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OPELOUSAS": [
+    {
+      "name": "OPELOUSAS GENERAL HEALTH SYSTEM",
+      "address": "539 EAST PRUDHOMME STREET",
+      "city": "OPELOUSAS",
+      "state": "LA",
+      "zip": "70570",
+      "phone": "(337) 948-3011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OCEANS BEHAVIORAL HOSPITAL OF OPELOUSAS",
+      "address": "1310 HEATHER DRIVE",
+      "city": "OPELOUSAS",
+      "state": "LA",
+      "zip": "70570",
+      "phone": "(337) 948-8820",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PINEVILLE": [
+    {
+      "name": "ALEXANDRIA VA MEDICAL CENTER",
+      "address": "2495 SHREVEPORT HIGHWAY 71 N",
+      "city": "PINEVILLE",
+      "state": "LA",
+      "zip": "71360",
+      "phone": "(318) 473-0010",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTRAL LOUISIANA STATE HOSPITAL",
+      "address": "242 W SHAMROCK STREET",
+      "city": "PINEVILLE",
+      "state": "LA",
+      "zip": "71360",
+      "phone": "(318) 484-6200",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RACELAND": [
+    {
+      "name": "OCHSNER ST ANNE GENERAL HOSPITAL",
+      "address": "4608 HIGHWAY 1",
+      "city": "RACELAND",
+      "state": "LA",
+      "zip": "70394",
+      "phone": "(985) 537-6841",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RAYVILLE": [
+    {
+      "name": "RICHARDSON MEDICAL CENTER",
+      "address": "254 HIGHWAY 3048",
+      "city": "RAYVILLE",
+      "state": "LA",
+      "zip": "71269",
+      "phone": "(318) 728-8292",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RUSTON": [
+    {
+      "name": "NORTHERN LOUISIANA MEDICAL CENTER",
+      "address": "401 EAST VAUGHN AVENUE",
+      "city": "RUSTON",
+      "state": "LA",
+      "zip": "71270",
+      "phone": "(318) 254-2100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SERENITY SPRINGS SPECIALTY HOSPITAL",
+      "address": "1495 FRAZIER ROAD",
+      "city": "RUSTON",
+      "state": "LA",
+      "zip": "71270",
+      "phone": "(318) 202-3860",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT FRANCISVILLE": [
+    {
+      "name": "WEST FELICIANA PARISH HOSPITAL",
+      "address": "5266 COMMERCE STREET, BUILDING B",
+      "city": "SAINT FRANCISVILLE",
+      "state": "LA",
+      "zip": "70775",
+      "phone": "(225) 635-3811",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHREVEPORT": [
+    {
+      "name": "CHRISTUS SHREVEPORT-BOSSIER HEALTH SYSTEM",
+      "address": "1453 E BERT KOUNS INDUSTRIAL DRIVE",
+      "city": "SHREVEPORT",
+      "state": "LA",
+      "zip": "71105",
+      "phone": "(318) 681-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OCHSNER LSU HEALTH SHREVEPORT",
+      "address": "1541 KINGS HIGHWAY",
+      "city": "SHREVEPORT",
+      "state": "LA",
+      "zip": "71130",
+      "phone": "(318) 675-5058",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WILLIS KNIGHTON MEDICAL CENTER",
+      "address": "2600 GREENWOOD ROAD",
+      "city": "SHREVEPORT",
+      "state": "LA",
+      "zip": "71103",
+      "phone": "(318) 212-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SPECIALISTS HOSPITAL SHREVEPORT",
+      "address": "1500 LINE AVENUE",
+      "city": "SHREVEPORT",
+      "state": "LA",
+      "zip": "71101",
+      "phone": "(318) 213-3800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OCHSNER LSU HEALTH SHREVEPORT-ST MARY MEDICAL CENT",
+      "address": "1 ST MARY PLACE",
+      "city": "SHREVEPORT",
+      "state": "LA",
+      "zip": "71101",
+      "phone": "(318) 626-4300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OVERTON BROOKS VA MEDICAL CENTER (SHREVEPORT)",
+      "address": "510 EAST STONER AVENUE",
+      "city": "SHREVEPORT",
+      "state": "LA",
+      "zip": "71101",
+      "phone": "(318) 424-6037",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "INTENSIVE SPECIALTY HOSPITAL",
+      "address": "1800 IRVING PLACE",
+      "city": "SHREVEPORT",
+      "state": "LA",
+      "zip": "71101",
+      "phone": "(318) 425-4096",
+      "type": "Long-term",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BRENTWOOD HOSPITAL",
+      "address": "1006 HIGHLAND AVENUE",
+      "city": "SHREVEPORT",
+      "state": "LA",
+      "zip": "71106",
+      "phone": "(318) 678-7500",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PHYSICIANS BEHAVIORAL HOSPITAL",
+      "address": "2025 DESOTO ST",
+      "city": "SHREVEPORT",
+      "state": "LA",
+      "zip": "71103",
+      "phone": "(318) 550-0520",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LOUISIANA BEHAVIORAL HEALTH",
+      "address": "9320 LINWOOD AVENUE",
+      "city": "SHREVEPORT",
+      "state": "LA",
+      "zip": "71106",
+      "phone": "(318) 644-8830",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SLIDELL": [
+    {
+      "name": "SLIDELL MEMORIAL HOSPITAL",
+      "address": "1001 GAUSE BLVD",
+      "city": "SLIDELL",
+      "state": "LA",
+      "zip": "70458",
+      "phone": "(985) 643-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "STERLING SURGICAL HOSPITAL",
+      "address": "989 ROBERT BLVD",
+      "city": "SLIDELL",
+      "state": "LA",
+      "zip": "70458",
+      "phone": "(985) 690-8200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OUR LADY OF THE LAKE SURGICAL HOSPITAL",
+      "address": "1700 W LINDBERG DRIVE",
+      "city": "SLIDELL",
+      "state": "LA",
+      "zip": "70458",
+      "phone": "(985) 641-0600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPRINGHILL": [
+    {
+      "name": "SPRINGHILL MEDICAL CENTER",
+      "address": "2001 DOCTORS DRIVE",
+      "city": "SPRINGHILL",
+      "state": "LA",
+      "zip": "71075",
+      "phone": "(318) 539-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SULPHUR": [
+    {
+      "name": "WEST CALCASIEU CAMERON HOSPITAL",
+      "address": "701 EAST CYPRESS STREET",
+      "city": "SULPHUR",
+      "state": "LA",
+      "zip": "70663",
+      "phone": "(337) 527-4240",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TALLULAH": [
+    {
+      "name": "MADISON PARISH HOSPITAL",
+      "address": "900 JOHNSON STREET",
+      "city": "TALLULAH",
+      "state": "LA",
+      "zip": "71282",
+      "phone": "(318) 574-2374",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "THIBODAUX": [
+    {
+      "name": "THIBODAUX REGIONAL MEDICAL CENTER",
+      "address": "602 N ACADIA ROAD",
+      "city": "THIBODAUX",
+      "state": "LA",
+      "zip": "70301",
+      "phone": "(985) 447-5500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VILLE PLATTE": [
+    {
+      "name": "MERCY REGIONAL MEDICAL CENTER",
+      "address": "800 E MAIN",
+      "city": "VILLE PLATTE",
+      "state": "LA",
+      "zip": "70586",
+      "phone": "(337) 363-5684",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VIVIAN": [
+    {
+      "name": "NORTH CADDO MEDICAL CENTER",
+      "address": "815 SOUTH PINE STREET",
+      "city": "VIVIAN",
+      "state": "LA",
+      "zip": "71082",
+      "phone": "(318) 375-3235",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST MONROE": [
+    {
+      "name": "GLENWOOD REGIONAL MEDICAL CENTER",
+      "address": "503 MCMILLAN ROAD",
+      "city": "WEST MONROE",
+      "state": "LA",
+      "zip": "71291",
+      "phone": "(318) 329-4600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINNFIELD": [
+    {
+      "name": "WINN PARISH MEDICAL CENTER",
+      "address": "301 W BOUNDARY AVE",
+      "city": "WINNFIELD",
+      "state": "LA",
+      "zip": "71483",
+      "phone": "(318) 648-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINNSBORO": [
+    {
+      "name": "FRANKLIN MEDICAL CENTER",
+      "address": "2106 LOOP ROAD",
+      "city": "WINNSBORO",
+      "state": "LA",
+      "zip": "71295",
+      "phone": "(318) 435-9411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ZACHARY": [
+    {
+      "name": "LANE REGIONAL MEDICAL CENTER",
+      "address": "6300 MAIN STREET",
+      "city": "ZACHARY",
+      "state": "LA",
+      "zip": "70791",
+      "phone": "(225) 658-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

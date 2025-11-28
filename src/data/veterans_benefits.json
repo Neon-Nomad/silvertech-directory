@@ -1,0 +1,87 @@
+{
+    "veterans_benefits_authority": [
+        {
+            "program_name": "Aid & Attendance Pension Supplement",
+            "description": "The Aid & Attendance Pension Supplement is one of the most valuable financial support programs available to Veterans and surviving spouses who need help with long-term care. This enhanced monthly payment is added on top of the standard VA pension and can significantly offset the cost of assisted living, memory care, in-home caregivers, or skilled personal care services.",
+            "eligibility_criteria": [
+                "Require help with Activities of Daily Living (ADLs) such as bathing, dressing, eating, grooming, toileting, or adjusting prosthetic devices.",
+                "Need assistance to avoid common hazards (e.g., preventing falls, managing medications).",
+                "Bedridden due to illness or medical conditions.",
+                "Resident of a nursing home or memory-care facility due to physical or mental incapacity.",
+                "Severe visual impairment (corrected vision of 5/200 or worse in both eyes, or significant visual field loss).",
+                "Eligibility is ultimately determined by clinical need, functional ability, and income thresholds."
+            ],
+            "why_it_matters": [
+                "Reduces overall out-of-pocket senior-care costs.",
+                "Helps cover caregiver wages in the home.",
+                "Supports the move into assisted living or dementia care.",
+                "Offsets the cost of safety supervision for Veterans with cognitive decline.",
+                "Provides long-term financial stability for surviving spouses."
+            ],
+            "why_explore": "Many families do not realize that Aid & Attendance exists until after they have already spent years paying out of pocket for senior care. The application process requires medical documentation, care-provider statements, and financial records, but the payoff can be substantial. Veterans with serious medical needs may receive hundreds or even thousands of dollars per month in additional support.",
+            "official_va_url": "https://www.va.gov/pension/aid-attendance-housebound/",
+            "notes": "Cannot be combined with the Housebound Allowance. Veterans must qualify for one or the other."
+        },
+        {
+            "program_name": "Housebound Allowance Pension Supplement",
+            "description": "An increased pension amount for Veterans or surviving spouses who are substantially confined to their home or immediate premises because of a permanent disability.",
+            "eligibility_criteria": [
+                "Must already be eligible for and receiving a VA pension.",
+                "Must have a single permanent disability rated 100% disabling AND be permanently housebound.",
+                "Alternatively eligible if a 100% disability is combined with other disabilities totaling at least 60%.",
+                "The Veteran must remain substantially confined to their dwelling and immediate premises.",
+                "Eligibility is based on disability severity and clinical need."
+            ],
+            "official_va_url": "https://www.va.gov/pension/aid-attendance-housebound/",
+            "notes": "Cannot be received concurrently with the Aid & Attendance Allowance."
+        },
+        {
+            "program_name": "Veteran Directed Care (VDC)",
+            "description": "A Home and Community-Based Services (HCBS) program that allows Veterans of all ages to manage their own long-term care budget and hire caregivers of their choice, including family members.",
+            "eligibility_criteria": [
+                "Must be enrolled in VA health care.",
+                "Must require nursing-home-level care or significant assistance with daily living.",
+                "Must be clinically eligible for community-based long-term services.",
+                "Must live in an area where Veteran Directed Care is offered.",
+                "Veteran must be willing to participate in a consumer-directed care model."
+            ],
+            "official_va_url": "https://www.va.gov/geriatrics/pages/Veteran-Directed_Care.asp",
+            "notes": "Provides autonomy and flexibility by granting Veterans control over their care budget."
+        },
+        {
+            "program_name": "Geriatric & Extended Care (GEC) Services",
+            "description": "A suite of Home and Community-Based Services (HCBS) available under the VA Medical Benefits Package to help Veterans remain independent or receive skilled care.",
+            "services_include": [
+                "Geriatric Evaluation",
+                "Adult Day Health Care",
+                "Homemaker and Home Health Aide Care",
+                "Respite Care",
+                "Skilled Home Health Care",
+                "Home-Based Primary Care",
+                "Palliative Care",
+                "Hospice Care"
+            ],
+            "eligibility_criteria": [
+                "Must be enrolled in VA health care.",
+                "Eligibility is based on clinical need and functional status.",
+                "Services vary by local availability and medical center resources.",
+                "May require evaluation by a VA provider to determine appropriate level of care."
+            ],
+            "official_va_url": "https://www.va.gov/geriatrics/pages/VA_Long_Term_Care_Services.asp",
+            "notes": "The VA does not pay for room and board in assisted living or other residential settings, but Veterans may receive GEC services while residing in such facilities."
+        },
+        {
+            "program_name": "Community Living Centers (CLC)",
+            "description": "VA-operated nursing homes that provide rehabilitative care, skilled nursing, long-term residential care, palliative support, and hospice care.",
+            "eligibility_criteria": [
+                "Must be enrolled in the VA health system.",
+                "Must be medically and psychiatrically stable.",
+                "Eligibility determined by clinical need, service-connected disability rating, income, and availability of services.",
+                "Copayments may apply for long-term stays (typically after day 21).",
+                "Hospice care is provided with no copayment."
+            ],
+            "official_va_url": "https://www.va.gov/geriatrics/pages/va_community_living_centers.asp",
+            "notes": "Community Living Centers specialize in rehabilitation, long-term care, and end-of-life support."
+        }
+    ]
+}

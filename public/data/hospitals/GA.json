@@ -1,0 +1,2173 @@
+{
+  "ADEL": [
+    {
+      "name": "SOUTHWELL MEDICAL, A CAMPUS OF TRMC",
+      "address": "260 MJ TAYLOR ROAD",
+      "city": "ADEL",
+      "state": "GA",
+      "zip": "31620",
+      "phone": "(229) 896-8077",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALBANY": [
+    {
+      "name": "PHOEBE PUTNEY MEMORIAL HOSPITAL",
+      "address": "417 THIRD AVENUE",
+      "city": "ALBANY",
+      "state": "GA",
+      "zip": "31703",
+      "phone": "(229) 312-4068",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALMA": [
+    {
+      "name": "BACON COUNTY HOSPITAL",
+      "address": "302 SOUTH WAYNE STREET",
+      "city": "ALMA",
+      "state": "GA",
+      "zip": "31510",
+      "phone": "(912) 632-8961",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AMERICUS": [
+    {
+      "name": "PHOEBE SUMTER MEDICAL CENTER",
+      "address": "126 HIGHWAY 280 W",
+      "city": "AMERICUS",
+      "state": "GA",
+      "zip": "31719",
+      "phone": "(229) 931-1280",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ATHENS": [
+    {
+      "name": "ST MARY'S HOSPITAL",
+      "address": "1230 BAXTER STREET",
+      "city": "ATHENS",
+      "state": "GA",
+      "zip": "30606",
+      "phone": "(706) 389-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PIEDMONT ATHENS REGIONAL MEDICAL CENTER",
+      "address": "1199 PRINCE AVENUE",
+      "city": "ATHENS",
+      "state": "GA",
+      "zip": "30606",
+      "phone": "(706) 475-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ATLANTA": [
+    {
+      "name": "EMORY UNIVERSITY HOSPITAL",
+      "address": "1364 CLIFTON ROAD, NE",
+      "city": "ATLANTA",
+      "state": "GA",
+      "zip": "30322",
+      "phone": "(404) 686-8500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EMORY UNIVERSITY HOSPITAL MIDTOWN",
+      "address": "550 PEACHTREE STREET,  NE",
+      "city": "ATLANTA",
+      "state": "GA",
+      "zip": "30308",
+      "phone": "(404) 686-2450",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GRADY MEMORIAL HOSPITAL",
+      "address": "80 JESSE HILL, JR DRIVE SE",
+      "city": "ATLANTA",
+      "state": "GA",
+      "zip": "30303",
+      "phone": "(404) 616-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT JOSEPH'S HOSPITAL OF ATLANTA, INC",
+      "address": "5665 PEACHTREE DUNWOODY ROAD",
+      "city": "ATLANTA",
+      "state": "GA",
+      "zip": "30342",
+      "phone": "(678) 843-7001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PIEDMONT HOSPITAL, INC",
+      "address": "1968 PEACHTREE RD NW",
+      "city": "ATLANTA",
+      "state": "GA",
+      "zip": "30309",
+      "phone": "(404) 605-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTHSIDE HOSPITAL",
+      "address": "1000 JOHNSON FERRY ROAD, NE",
+      "city": "ATLANTA",
+      "state": "GA",
+      "zip": "30342",
+      "phone": "(404) 851-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ATHUR M BLANK HOSPITAL",
+      "address": "2220 NORTH DRUID HILLS ROAD NE",
+      "city": "ATLANTA",
+      "state": "GA",
+      "zip": "30329",
+      "phone": "(404) 785-4577",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDREN'S HEALTHCARE OF ATLANTA AT SCOTTISH RITE",
+      "address": "1001 JOHNSON FERRY ROAD",
+      "city": "ATLANTA",
+      "state": "GA",
+      "zip": "30342",
+      "phone": "(404) 785-5252",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PEACHFORD BEHAVIORAL HEALTH SYSTEM OF ATLANTA",
+      "address": "2151 PEACHFORD ROAD",
+      "city": "ATLANTA",
+      "state": "GA",
+      "zip": "30338",
+      "phone": "(770) 455-3200",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AUGUSTA": [
+    {
+      "name": "PIEDMONT AUGUSTA HOSPITAL",
+      "address": "1350 WALTON WAY",
+      "city": "AUGUSTA",
+      "state": "GA",
+      "zip": "30901",
+      "phone": "(706) 722-9011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WELLSTAR MCG HEALTH, AFFILIATED WITH MED COL",
+      "address": "1120 15TH STREET",
+      "city": "AUGUSTA",
+      "state": "GA",
+      "zip": "30912",
+      "phone": "(706) 721-6569",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DOCTORS HOSPITAL",
+      "address": "3651 WHEELER ROAD",
+      "city": "AUGUSTA",
+      "state": "GA",
+      "zip": "30909",
+      "phone": "(706) 651-6008",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AUGUSTA VA MEDICAL CENTER",
+      "address": "1 FREEDOM WAY",
+      "city": "AUGUSTA",
+      "state": "GA",
+      "zip": "30904",
+      "phone": "(706) 823-2201",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EAST CENTRAL REGIONAL HOSPITAL",
+      "address": "3405 MIKE PADGETT HWY",
+      "city": "AUGUSTA",
+      "state": "GA",
+      "zip": "30906",
+      "phone": "(706) 792-7006",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AUSTELL": [
+    {
+      "name": "WELLSTAR COBB MEDICAL CENTER",
+      "address": "3950 AUSTELL RD",
+      "city": "AUSTELL",
+      "state": "GA",
+      "zip": "30106",
+      "phone": "(770) 732-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAINBRIDGE": [
+    {
+      "name": "MEMORIAL HOSPITAL AND MANOR",
+      "address": "1500 E SHOTWELL STREET",
+      "city": "BAINBRIDGE",
+      "state": "GA",
+      "zip": "39819",
+      "phone": "(229) 246-3500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAXLEY": [
+    {
+      "name": "APPLING HEALTHCARE",
+      "address": "163 E TOLLISON STREET",
+      "city": "BAXLEY",
+      "state": "GA",
+      "zip": "31513",
+      "phone": "(912) 367-9841",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLAIRSVILLE": [
+    {
+      "name": "UNION GENERAL HOSPITAL",
+      "address": "35 HOSPITAL ROAD",
+      "city": "BLAIRSVILLE",
+      "state": "GA",
+      "zip": "30512",
+      "phone": "(706) 745-2111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLAKELY": [
+    {
+      "name": "LIFEBRITE COMMUNITY HOSPITAL OF EARLY",
+      "address": "11740 COLUMBIA STREET",
+      "city": "BLAKELY",
+      "state": "GA",
+      "zip": "39823",
+      "phone": "(229) 723-4241",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLUE RIDGE": [
+    {
+      "name": "BLUE RIDGE MEDICAL CENTER",
+      "address": "2855 OLD HIGHWAY 5 NORTH",
+      "city": "BLUE RIDGE",
+      "state": "GA",
+      "zip": "30513",
+      "phone": "(706) 632-3711",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BREMEN": [
+    {
+      "name": "HIGGINS GENERAL HOSPITAL",
+      "address": "200 ALLEN MEMORIAL DRIVE",
+      "city": "BREMEN",
+      "state": "GA",
+      "zip": "30110",
+      "phone": "(770) 812-2000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRUNSWICK": [
+    {
+      "name": "SOUTHEAST GEORGIA HEALTH SYSTEM- BRUNSWICK CAMPUS",
+      "address": "2415 PARKWOOD DRIVE",
+      "city": "BRUNSWICK",
+      "state": "GA",
+      "zip": "31520",
+      "phone": "(912) 466-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BYRON": [
+    {
+      "name": "ATRIUM HEALTH NAVICENT PEACH",
+      "address": "1960 HIGHWAY 247 CONNECTOR",
+      "city": "BYRON",
+      "state": "GA",
+      "zip": "31008",
+      "phone": "(478) 654-2000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAIRO": [
+    {
+      "name": "GRADY GENERAL HOSPITAL",
+      "address": "1155 5TH STREET, SE",
+      "city": "CAIRO",
+      "state": "GA",
+      "zip": "39828",
+      "phone": "(229) 377-0251",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CALHOUN": [
+    {
+      "name": "ADVENTHEALTH GORDON",
+      "address": "1035 RED BUD ROAD",
+      "city": "CALHOUN",
+      "state": "GA",
+      "zip": "30701",
+      "phone": "(706) 629-2895",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAMILLA": [
+    {
+      "name": "ARCHBOLD MITCHELL",
+      "address": "90  E STEPHENS STREET",
+      "city": "CAMILLA",
+      "state": "GA",
+      "zip": "31730",
+      "phone": "(229) 336-5284",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CANTON": [
+    {
+      "name": "NORTHSIDE HOSPITAL CHEROKEE",
+      "address": "450 NORTHSIDE CHEROKEE BOULEVARD",
+      "city": "CANTON",
+      "state": "GA",
+      "zip": "30115",
+      "phone": "(770) 244-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARROLLTON": [
+    {
+      "name": "TANNER MEDICAL CENTER - CARROLLTON",
+      "address": "705 DIXIE STREET",
+      "city": "CARROLLTON",
+      "state": "GA",
+      "zip": "30117",
+      "phone": "(770) 836-9580",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARTERSVILLE": [
+    {
+      "name": "PIEDMONT CARTERSVILLE MEDICAL CENTER",
+      "address": "960 JOE FRANK HARRIS PARKWAY",
+      "city": "CARTERSVILLE",
+      "state": "GA",
+      "zip": "30120",
+      "phone": "(470) 490-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CEDARTOWN": [
+    {
+      "name": "ATRIUM HEALTH FLOYD POLK MEDICAL CENTER",
+      "address": "2360 ROCKMART HIGHWAY",
+      "city": "CEDARTOWN",
+      "state": "GA",
+      "zip": "30125",
+      "phone": "(770) 748-2500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHATSWORTH": [
+    {
+      "name": "ADVENTHEALTH MURRAY",
+      "address": "707 OLD DALTON ELLIJAY ROAD, PO BOX 1406",
+      "city": "CHATSWORTH",
+      "state": "GA",
+      "zip": "30705",
+      "phone": "(706) 517-2031",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLAXTON": [
+    {
+      "name": "EVANS MEMORIAL HOSPITAL",
+      "address": "200 N RIVER STREET",
+      "city": "CLAXTON",
+      "state": "GA",
+      "zip": "30417",
+      "phone": "(912) 739-5105",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLAYTON": [
+    {
+      "name": "MOUNTAIN LAKES MEDICAL CENTER",
+      "address": "162 LEGACY POINT",
+      "city": "CLAYTON",
+      "state": "GA",
+      "zip": "30525",
+      "phone": "(706) 782-3100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COCHRAN": [
+    {
+      "name": "BLECKLEY MEMORIAL HOSPITAL",
+      "address": "145 PEACOCK STREET",
+      "city": "COCHRAN",
+      "state": "GA",
+      "zip": "31014",
+      "phone": "(478) 934-6211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLLEGE PARK": [
+    {
+      "name": "SO CRESCENT BEH HLTH SYS - ANCHOR HOSPITAL CAMPUS",
+      "address": "5454 YORKTOWNE DRIVE",
+      "city": "COLLEGE PARK",
+      "state": "GA",
+      "zip": "30349",
+      "phone": "(770) 991-6044",
+      "type": "Psychiatric",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLQUITT": [
+    {
+      "name": "MILLER COUNTY HOSPITAL",
+      "address": "209 N CUTHBERT STREET",
+      "city": "COLQUITT",
+      "state": "GA",
+      "zip": "39837",
+      "phone": "(229) 758-4231",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUMBUS": [
+    {
+      "name": "PIEDMONT COLUMBUS REGIONAL MIDTOWN",
+      "address": "710 CENTER STREET",
+      "city": "COLUMBUS",
+      "state": "GA",
+      "zip": "31901",
+      "phone": "(706) 571-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST FRANCIS HOSPITAL- EMORY HEALTHCARE",
+      "address": "2122 MANCHESTER EXPRESSWAY",
+      "city": "COLUMBUS",
+      "state": "GA",
+      "zip": "31995",
+      "phone": "(706) 596-4020",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PIEDMONT COLUMBUS REGIONAL NORTHSIDE",
+      "address": "100 FRIST COURT",
+      "city": "COLUMBUS",
+      "state": "GA",
+      "zip": "31909",
+      "phone": "(706) 494-2101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WEST CENTRAL GEORGIA REGIONAL HOSPITAL",
+      "address": "3000 SCHATULGA RD BOX 12435",
+      "city": "COLUMBUS",
+      "state": "GA",
+      "zip": "31917",
+      "phone": "(706) 568-5203",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CONYERS": [
+    {
+      "name": "PIEDMONT ROCKDALE HOSPITAL",
+      "address": "1412 MILSTEAD AVENUE, NE",
+      "city": "CONYERS",
+      "state": "GA",
+      "zip": "30012",
+      "phone": "(770) 918-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CORDELE": [
+    {
+      "name": "CRISP REGIONAL HOSPITAL",
+      "address": "902 7TH STREET NORTH",
+      "city": "CORDELE",
+      "state": "GA",
+      "zip": "31015",
+      "phone": "(229) 276-3100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COVINGTON": [
+    {
+      "name": "PIEDMONT NEWTON HOSPITAL",
+      "address": "5126 HOSPITAL DRIVE NE",
+      "city": "COVINGTON",
+      "state": "GA",
+      "zip": "30014",
+      "phone": "(770) 786-7053",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CUMMING": [
+    {
+      "name": "NORTHSIDE HOSPITAL FORSYTH",
+      "address": "1200 NORTHSIDE FORSYTH DRIVE",
+      "city": "CUMMING",
+      "state": "GA",
+      "zip": "30041",
+      "phone": "(770) 844-3200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAHLONEGA": [
+    {
+      "name": "NORTHEAST GEORGIA MEDICAL CENTER LUMPKIN",
+      "address": "227 MOUNTAIN DRIVE",
+      "city": "DAHLONEGA",
+      "state": "GA",
+      "zip": "30533",
+      "phone": "(770) 219-7146",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DALTON": [
+    {
+      "name": "HAMILTON MEDICAL CENTER",
+      "address": "1200 MEMORIAL DRIVE",
+      "city": "DALTON",
+      "state": "GA",
+      "zip": "30720",
+      "phone": "(706) 272-6105",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DECATUR": [
+    {
+      "name": "EMORY DECATUR HOSPITAL",
+      "address": "2701 N DECATUR ROAD",
+      "city": "DECATUR",
+      "state": "GA",
+      "zip": "30033",
+      "phone": "(404) 501-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DECATUR (ATLANTA) VA MEDICAL CENTER",
+      "address": "1670 CLAIRMONT ROAD",
+      "city": "DECATUR",
+      "state": "GA",
+      "zip": "30033",
+      "phone": "(404) 321-6111",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GEORGIA REGIONAL HOSPITAL ATLANTA",
+      "address": "3073 PANTHERSVILLE ROAD",
+      "city": "DECATUR",
+      "state": "GA",
+      "zip": "30034",
+      "phone": "(404) 243-2100",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEMOREST": [
+    {
+      "name": "NORTHEAST GEORGIA MEDICAL CENTER HABERSHAM",
+      "address": "541 HISTORIC HIGHWAY 441-NORTH",
+      "city": "DEMOREST",
+      "state": "GA",
+      "zip": "30535",
+      "phone": "(706) 754-2161",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DONALSONVILLE": [
+    {
+      "name": "DONALSONVILLE HOSPITAL INC",
+      "address": "102 HOSPITAL CIR",
+      "city": "DONALSONVILLE",
+      "state": "GA",
+      "zip": "39845",
+      "phone": "(229) 524-5217",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DOUGLAS": [
+    {
+      "name": "COFFEE REGIONAL MEDICAL CENTER, INC",
+      "address": "1101 OCILLA ROAD",
+      "city": "DOUGLAS",
+      "state": "GA",
+      "zip": "31642",
+      "phone": "(912) 384-1900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DOUGLASVILLE": [
+    {
+      "name": "WELLSTAR DOUGLAS MEDICAL CENTER",
+      "address": "8954 HOSPITAL DRIVE",
+      "city": "DOUGLASVILLE",
+      "state": "GA",
+      "zip": "30134",
+      "phone": "(770) 949-1500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DUBLIN": [
+    {
+      "name": "FAIRVIEW PARK HOSPITAL",
+      "address": "200 INDUSTRIAL BOULEVARD",
+      "city": "DUBLIN",
+      "state": "GA",
+      "zip": "31021",
+      "phone": "(478) 274-3100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DUBLIN VA MEDICAL CENTER",
+      "address": "1826 VETERANS BOULEVARD",
+      "city": "DUBLIN",
+      "state": "GA",
+      "zip": "31021",
+      "phone": "(478) 277-2701",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DULUTH": [
+    {
+      "name": "NORTHSIDE HOSPITAL DULUTH",
+      "address": "3620 HOWELL FERRY ROAD",
+      "city": "DULUTH",
+      "state": "GA",
+      "zip": "30096",
+      "phone": "(678) 312-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EASTMAN": [
+    {
+      "name": "DODGE COUNTY HOSPITAL",
+      "address": "901 GRIFFIN AVE",
+      "city": "EASTMAN",
+      "state": "GA",
+      "zip": "31023",
+      "phone": "(478) 448-4067",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EATONTON": [
+    {
+      "name": "PUTNAM GENERAL HOSPITAL",
+      "address": "101 LAKE OCONEE PARKWAY",
+      "city": "EATONTON",
+      "state": "GA",
+      "zip": "31024",
+      "phone": "(706) 485-2711",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELBERTON": [
+    {
+      "name": "ELBERT MEMORIAL HOSPITAL",
+      "address": "4 MEDICAL DRIVE",
+      "city": "ELBERTON",
+      "state": "GA",
+      "zip": "30635",
+      "phone": "(706) 213-2535",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAYETTEVILLE": [
+    {
+      "name": "PIEDMONT FAYETTE HOSPITAL",
+      "address": "1255 HIGHWAY 54 WEST",
+      "city": "FAYETTEVILLE",
+      "state": "GA",
+      "zip": "30214",
+      "phone": "(770) 719-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FITZGERALD": [
+    {
+      "name": "DORMINY MEDICAL CENTER",
+      "address": "200 PERRY HOUSE ROAD, BOX 1447",
+      "city": "FITZGERALD",
+      "state": "GA",
+      "zip": "31750",
+      "phone": "(229) 424-7100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORSYTH": [
+    {
+      "name": "MONROE COUNTY HOSPITAL",
+      "address": "88 MARTIN LUTHER KING JR DRIVE",
+      "city": "FORSYTH",
+      "state": "GA",
+      "zip": "31029",
+      "phone": "(478) 994-2521",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT OGLETHORPE": [
+    {
+      "name": "CHI MEMORIAL HOSPITAL- GEORGIA",
+      "address": "100 GROSS CRESCENT CIRCLE",
+      "city": "FORT OGLETHORPE",
+      "state": "GA",
+      "zip": "30742",
+      "phone": "(770) 874-5400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Fort Benning": [
+    {
+      "name": "Martin ACH (FT Benning)",
+      "address": "6600 Van Aalst Blvd",
+      "city": "Fort Benning",
+      "state": "GA",
+      "zip": "31905",
+      "phone": "(762) 408-2604",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Fort Gordon": [
+    {
+      "name": "Dwight Eisenhower AMC (FT Gordon)",
+      "address": "300 East Hospital Rd",
+      "city": "Fort Gordon",
+      "state": "GA",
+      "zip": "30905",
+      "phone": "(706) 787-5811",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Fort Stewart": [
+    {
+      "name": "Winn ACH (FT Stewart)",
+      "address": "1061 Harmon Ave",
+      "city": "Fort Stewart",
+      "state": "GA",
+      "zip": "31314",
+      "phone": "(912) 435-6633",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GAINESVILLE": [
+    {
+      "name": "NORTHEAST GEORGIA MEDICAL CENTER, INC",
+      "address": "743 SPRING STREET",
+      "city": "GAINESVILLE",
+      "state": "GA",
+      "zip": "30501",
+      "phone": "(770) 535-3553",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENSBORO": [
+    {
+      "name": "ST MARY'S GOOD SAMARITAN HOSPITAL",
+      "address": "5401 LAKE OCONEE PARKWAY",
+      "city": "GREENSBORO",
+      "state": "GA",
+      "zip": "30642",
+      "phone": "(706) 453-7331",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRIFFIN": [
+    {
+      "name": "WELLSTAR SPALDING MEDICAL CENTER",
+      "address": "601 SOUTH 8TH STREET",
+      "city": "GRIFFIN",
+      "state": "GA",
+      "zip": "30223",
+      "phone": "(770) 228-2721",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAWKINSVILLE": [
+    {
+      "name": "TAYLOR REGIONAL HOSPITAL",
+      "address": "222 PERRY HWY",
+      "city": "HAWKINSVILLE",
+      "state": "GA",
+      "zip": "31036",
+      "phone": "(478) 783-0200",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAZLEHURST": [
+    {
+      "name": "JEFF DAVIS HOSPITAL",
+      "address": "163 SOUTH TALLAHASSEE STREET",
+      "city": "HAZLEHURST",
+      "state": "GA",
+      "zip": "31539",
+      "phone": "(912) 375-7781",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HIAWASSEE": [
+    {
+      "name": "CHATUGE REGIONAL HOSPITAL",
+      "address": "110 S MAIN STREET",
+      "city": "HIAWASSEE",
+      "state": "GA",
+      "zip": "30546",
+      "phone": "(706) 896-2222",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HINESVILLE": [
+    {
+      "name": "LIBERTY REGIONAL MEDICAL CENTER",
+      "address": "462 E G MILES PARKWAY",
+      "city": "HINESVILLE",
+      "state": "GA",
+      "zip": "31313",
+      "phone": "(912) 369-9400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HIRAM": [
+    {
+      "name": "WELLSTAR PAULDING MEDICAL CENTER",
+      "address": "2518 JIMMY LEE SMITH PARKWAY",
+      "city": "HIRAM",
+      "state": "GA",
+      "zip": "30141",
+      "phone": "(470) 644-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOMERVILLE": [
+    {
+      "name": "CLINCH MEMORIAL HOSPITAL",
+      "address": "1050 VALDOSTA HIGHWAY",
+      "city": "HOMERVILLE",
+      "state": "GA",
+      "zip": "31634",
+      "phone": "(912) 487-5211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JACKSON": [
+    {
+      "name": "WELLSTAR SYLVAN GROVE MEDICAL CENTER",
+      "address": "1050 MCDONOUGH ROAD",
+      "city": "JACKSON",
+      "state": "GA",
+      "zip": "30233",
+      "phone": "(770) 775-7861",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JASPER": [
+    {
+      "name": "PIEDMONT MOUNTAINSIDE HOSPITAL INC",
+      "address": "1266 HIGHWAY 515 SOUTH",
+      "city": "JASPER",
+      "state": "GA",
+      "zip": "30143",
+      "phone": "(706) 692-2441",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JESUP": [
+    {
+      "name": "WAYNE MEMORIAL HOSPITAL",
+      "address": "865 SOUTH FIRST STREET",
+      "city": "JESUP",
+      "state": "GA",
+      "zip": "31545",
+      "phone": "(912) 427-6811",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JOHNS CREEK": [
+    {
+      "name": "EMORY JOHNS CREEK HOSPITAL",
+      "address": "6325 HOSPITAL PARKWAY",
+      "city": "JOHNS CREEK",
+      "state": "GA",
+      "zip": "30097",
+      "phone": "(678) 474-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAGRANGE": [
+    {
+      "name": "WELLSTAR WEST GEORGIA MEDICAL CENTER",
+      "address": "1514 VERNON ROAD",
+      "city": "LAGRANGE",
+      "state": "GA",
+      "zip": "30240",
+      "phone": "(706) 882-1411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKELAND": [
+    {
+      "name": "SGMC HEALTH LANIER",
+      "address": "116 WEST THIGPEN AVENUE",
+      "city": "LAKELAND",
+      "state": "GA",
+      "zip": "31635",
+      "phone": "(229) 482-8402",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAVONIA": [
+    {
+      "name": "TY COBB REGIONAL MEDICAL CENTER, LLC",
+      "address": "367 CLEAR CREEK PARKWAY",
+      "city": "LAVONIA",
+      "state": "GA",
+      "zip": "30553",
+      "phone": "(706) 356-7800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAWRENCEVILLE": [
+    {
+      "name": "NORTHSIDE HOSPITAL GWINNETT",
+      "address": "1000 MEDICAL CENTER BOULEVARD",
+      "city": "LAWRENCEVILLE",
+      "state": "GA",
+      "zip": "30045",
+      "phone": "(678) 312-4310",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUMMITRIDGE CENTER- PSYCHIATRY & ADDICTIVE MED",
+      "address": "250 SCENIC HIGHWAY",
+      "city": "LAWRENCEVILLE",
+      "state": "GA",
+      "zip": "30046",
+      "phone": "(678) 442-5800",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LITHONIA": [
+    {
+      "name": "EMORY HILLANDALE HOSPITAL",
+      "address": "2801 DEKALB MEDICAL PARKWAY",
+      "city": "LITHONIA",
+      "state": "GA",
+      "zip": "30058",
+      "phone": "(404) 501-8040",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOUISVILLE": [
+    {
+      "name": "JEFFERSON HOSPITAL",
+      "address": "1067 PEACHTREE ST",
+      "city": "LOUISVILLE",
+      "state": "GA",
+      "zip": "30434",
+      "phone": "(478) 625-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MACON": [
+    {
+      "name": "ATRIUM HEALTH NAVICENT THE MEDICAL CENTER",
+      "address": "777 HEMLOCK STREET",
+      "city": "MACON",
+      "state": "GA",
+      "zip": "31201",
+      "phone": "(478) 633-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COLISEUM MEDICAL CENTERS, LLC, DBA",
+      "address": "350 HOSPITAL DRIVE",
+      "city": "MACON",
+      "state": "GA",
+      "zip": "31217",
+      "phone": "(478) 765-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PIEDMONT MACON NORTH HOSPITAL",
+      "address": "400 CHARTER BOULEVARD",
+      "city": "MACON",
+      "state": "GA",
+      "zip": "31210",
+      "phone": "(478) 757-5990",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MADISON": [
+    {
+      "name": "MORGAN MEDICAL CENTER",
+      "address": "1740 LIONS CLUB ROAD",
+      "city": "MADISON",
+      "state": "GA",
+      "zip": "30650",
+      "phone": "(706) 342-1667",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARIETTA": [
+    {
+      "name": "WELLSTAR KENNESTONE REGIONAL MEDICAL CENTER",
+      "address": "677 CHURCH STREET",
+      "city": "MARIETTA",
+      "state": "GA",
+      "zip": "30060",
+      "phone": "(770) 793-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "METTER": [
+    {
+      "name": "CANDLER COUNTY HOSPITAL",
+      "address": "400 CEDAR STREET",
+      "city": "METTER",
+      "state": "GA",
+      "zip": "30439",
+      "phone": "(912) 685-5741",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILLEDGEVILLE": [
+    {
+      "name": "NAVICENT HEALTH BALDWIN",
+      "address": "821 NORTH COBB STREET",
+      "city": "MILLEDGEVILLE",
+      "state": "GA",
+      "zip": "31061",
+      "phone": "(478) 454-3550",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILLEN": [
+    {
+      "name": "JENKINS COUNTY MEDICAL CENTER",
+      "address": "931 EAST WINTHROPE AVENUE",
+      "city": "MILLEN",
+      "state": "GA",
+      "zip": "30442",
+      "phone": "(478) 982-4221",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONROE": [
+    {
+      "name": "PIEDMONT WALTON HOSPITAL",
+      "address": "2151 W SPRING STREET",
+      "city": "MONROE",
+      "state": "GA",
+      "zip": "30655",
+      "phone": "(770) 267-8461",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIDGEVIEW INSTITUTE MONROE",
+      "address": "709 BREEDLOVE DRIVE",
+      "city": "MONROE",
+      "state": "GA",
+      "zip": "30655",
+      "phone": "(678) 635-8730",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTEZUMA": [
+    {
+      "name": "FLINT RIVER COMMUNITY HOSPITAL",
+      "address": "509 SUMTER STREET, BOX 770",
+      "city": "MONTEZUMA",
+      "state": "GA",
+      "zip": "31063",
+      "phone": "(478) 472-3100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTICELLO": [
+    {
+      "name": "JASPER MEMORIAL HOSPITAL",
+      "address": "898 COLLEGE STREET",
+      "city": "MONTICELLO",
+      "state": "GA",
+      "zip": "31064",
+      "phone": "(706) 468-6411",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOULTRIE": [
+    {
+      "name": "COLQUITT REGIONAL MEDICAL CENTER",
+      "address": "3131 SOUTH MAIN STREET",
+      "city": "MOULTRIE",
+      "state": "GA",
+      "zip": "31768",
+      "phone": "(229) 985-3420",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TURNING POINT HOSPITAL",
+      "address": "3015 VETERANS PARKWAY",
+      "city": "MOULTRIE",
+      "state": "GA",
+      "zip": "31788",
+      "phone": "(229) 985-4815",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NASHVILLE": [
+    {
+      "name": "SGMC BERRIEN CAMPUS",
+      "address": "1221 E MCPHERSON AVENUE",
+      "city": "NASHVILLE",
+      "state": "GA",
+      "zip": "31639",
+      "phone": "(229) 543-7100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWNAN": [
+    {
+      "name": "PIEDMONT NEWNAN HOSPITAL, INC",
+      "address": "745 POPLAR ROAD",
+      "city": "NEWNAN",
+      "state": "GA",
+      "zip": "30265",
+      "phone": "(770) 400-2300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SOUTHEASTERN REGIONAL MEDICAL CENTER, INC",
+      "address": "600 CELEBRATE LIFE PARKWAY NORTH",
+      "city": "NEWNAN",
+      "state": "GA",
+      "zip": "30265",
+      "phone": "(404) 844-8334",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OCILLA": [
+    {
+      "name": "IRWIN COUNTY HOSPITAL",
+      "address": "710 N IRWIN AVENUE",
+      "city": "OCILLA",
+      "state": "GA",
+      "zip": "31774",
+      "phone": "(229) 468-3845",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PERRY": [
+    {
+      "name": "HOUSTON HEALTHCARE",
+      "address": "1120 MORNINGSIDE DR",
+      "city": "PERRY",
+      "state": "GA",
+      "zip": "31069",
+      "phone": "(478) 987-3600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "QUITMAN": [
+    {
+      "name": "ARCHBOLD BROOKS",
+      "address": "903 N COURT STREET",
+      "city": "QUITMAN",
+      "state": "GA",
+      "zip": "31643",
+      "phone": "(912) 263-4171",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REIDSVILLE": [
+    {
+      "name": "OPTIM MEDICAL CENTER - TATTNALL",
+      "address": "247 S MAIN STREET",
+      "city": "REIDSVILLE",
+      "state": "GA",
+      "zip": "30453",
+      "phone": "(912) 557-1000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RIVERDALE": [
+    {
+      "name": "SOUTHERN REGIONAL MEDICAL CENTER",
+      "address": "11 UPPER RIVERDALE ROAD, SW",
+      "city": "RIVERDALE",
+      "state": "GA",
+      "zip": "30274",
+      "phone": "(770) 991-8160",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIVERWOODS BEHAVIORAL HEALTH SYSTEM",
+      "address": "223 MEDICAL CENTER DRIVE",
+      "city": "RIVERDALE",
+      "state": "GA",
+      "zip": "30274",
+      "phone": "(770) 991-8500",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROME": [
+    {
+      "name": "ATRIUM HEALTH FLOYD MEDICAL CENTER",
+      "address": "304 TURNER MCCALL BOULEVARD",
+      "city": "ROME",
+      "state": "GA",
+      "zip": "30162",
+      "phone": "(706) 509-6900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTHEALTH REDMOND",
+      "address": "501 REDMOND ROAD NW",
+      "city": "ROME",
+      "state": "GA",
+      "zip": "30165",
+      "phone": "(706) 802-3012",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROSWELL": [
+    {
+      "name": "WELLSTAR NORTH FULTON MEDICAL CENTER",
+      "address": "3000 HOSPITAL BOULEVARD",
+      "city": "ROSWELL",
+      "state": "GA",
+      "zip": "30076",
+      "phone": "(770) 751-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT MARYS": [
+    {
+      "name": "SOUTHEAST GEORGIA HEALTH SYSTEM -- CAMDEN CAMPUS",
+      "address": "2000 DAN PROCTOR DRIVE",
+      "city": "SAINT MARYS",
+      "state": "GA",
+      "zip": "31558",
+      "phone": "(912) 576-6401",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT SIMONS ISLAND": [
+    {
+      "name": "ST SIMONS-BY-THE-SEA",
+      "address": "2927 DEMERE ROAD",
+      "city": "SAINT SIMONS ISLAND",
+      "state": "GA",
+      "zip": "31522",
+      "phone": "(912) 638-1999",
+      "type": "Psychiatric",
+      "ownership": "Government - Federal",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANDERSVILLE": [
+    {
+      "name": "WASHINGTON COUNTY REGIONAL MEDICAL CENTER",
+      "address": "610 SPARTA ROAD",
+      "city": "SANDERSVILLE",
+      "state": "GA",
+      "zip": "31082",
+      "phone": "(478) 240-2100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAVANNAH": [
+    {
+      "name": "CANDLER HOSPITAL",
+      "address": "5353 REYNOLDS STREET",
+      "city": "SAVANNAH",
+      "state": "GA",
+      "zip": "31405",
+      "phone": "(912) 819-5290",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAVANNAH HEALTH SERVICES LLC DBA MEMORIAL HEALTH UNIVERSITY MEDICAL CENTER",
+      "address": "4700 WATERS AVENUE",
+      "city": "SAVANNAH",
+      "state": "GA",
+      "zip": "31404",
+      "phone": "(912) 350-3691",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST JOSEPH'S HOSPITAL - SAVANNAH",
+      "address": "11705 MERCY BOULEVARD",
+      "city": "SAVANNAH",
+      "state": "GA",
+      "zip": "31419",
+      "phone": "(912) 819-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COASTAL HARBOR TREATMENT CENTER",
+      "address": "1150 CORNELL AVE",
+      "city": "SAVANNAH",
+      "state": "GA",
+      "zip": "31406",
+      "phone": "(912) 354-3911",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GEORGIA REGIONAL HOSP SAVANNAH",
+      "address": "1915 EISENHOWER DRIVE",
+      "city": "SAVANNAH",
+      "state": "GA",
+      "zip": "31416",
+      "phone": "(912) 356-2045",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SMYRNA": [
+    {
+      "name": "RIDGEVIEW INSTITUTE",
+      "address": "3995 S COBB DRIVE, SE",
+      "city": "SMYRNA",
+      "state": "GA",
+      "zip": "30080",
+      "phone": "(770) 434-4567",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SNELLVILLE": [
+    {
+      "name": "PIEDMONT EASTSIDE MEDICAL CENTER",
+      "address": "1700 MEDICAL WAY",
+      "city": "SNELLVILLE",
+      "state": "GA",
+      "zip": "30078",
+      "phone": "(770) 979-0200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPRINGFIELD": [
+    {
+      "name": "EFFINGHAM HEALTH SYSTEM",
+      "address": "459 GA HIGHWAY 119 SOUTH",
+      "city": "SPRINGFIELD",
+      "state": "GA",
+      "zip": "31329",
+      "phone": "(912) 754-0160",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STATESBORO": [
+    {
+      "name": "EAST GEORGIA REGIONAL MEDICAL CENTER",
+      "address": "1499 FAIR ROAD",
+      "city": "STATESBORO",
+      "state": "GA",
+      "zip": "30458",
+      "phone": "(912) 486-1500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STOCKBRIDGE": [
+    {
+      "name": "PIEDMONT HENRY HOSPITAL",
+      "address": "1133 EAGLE'S LANDING PARKWAY",
+      "city": "STOCKBRIDGE",
+      "state": "GA",
+      "zip": "30281",
+      "phone": "(678) 604-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SWAINSBORO": [
+    {
+      "name": "EMANUEL MEDICAL CENTER",
+      "address": "117 KITE ROAD",
+      "city": "SWAINSBORO",
+      "state": "GA",
+      "zip": "30401",
+      "phone": "(478) 289-1304",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SYLVANIA": [
+    {
+      "name": "OPTIM MEDICAL CENTER - SCREVEN",
+      "address": "215 MIMS ROAD",
+      "city": "SYLVANIA",
+      "state": "GA",
+      "zip": "30467",
+      "phone": "(912) 564-7426",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SYLVESTER": [
+    {
+      "name": "PHOEBE WORTH MEDICAL CENTER",
+      "address": "807 SOUTH ISABELLA STREET",
+      "city": "SYLVESTER",
+      "state": "GA",
+      "zip": "31791",
+      "phone": "(229) 777-3851",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "THOMASTON": [
+    {
+      "name": "UPSON REGIONAL MEDICAL CENTER",
+      "address": "801 W GORDON STREET",
+      "city": "THOMASTON",
+      "state": "GA",
+      "zip": "30286",
+      "phone": "(706) 647-8111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "THOMASVILLE": [
+    {
+      "name": "ARCHBOLD MEMORIAL HOSPITAL",
+      "address": "915 GORDON AVENUE & MIMOSA DRIVE",
+      "city": "THOMASVILLE",
+      "state": "GA",
+      "zip": "31792",
+      "phone": "(229) 228-2880",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "THOMSON": [
+    {
+      "name": "UNIVERSITY MCDUFFIE COUNTY REGIONAL MEDICAL CENTER",
+      "address": "2460 WASHINGTON ROAD",
+      "city": "THOMSON",
+      "state": "GA",
+      "zip": "30824",
+      "phone": "(706) 595-1411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TIFTON": [
+    {
+      "name": "TIFT REGIONAL MEDICAL CENTER",
+      "address": "901 E 18TH STREET",
+      "city": "TIFTON",
+      "state": "GA",
+      "zip": "31794",
+      "phone": "(229) 382-7120",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TOCCOA": [
+    {
+      "name": "STEPHENS COUNTY HOSPITAL",
+      "address": "163 HOSPITAL DRIVE",
+      "city": "TOCCOA",
+      "state": "GA",
+      "zip": "30577",
+      "phone": "(706) 282-4250",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VALDOSTA": [
+    {
+      "name": "SGMC HEALTH",
+      "address": "2501 NORTH PATTERSON STREET, PO BOX 1727",
+      "city": "VALDOSTA",
+      "state": "GA",
+      "zip": "31602",
+      "phone": "(229) 333-1020",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GREENLEAF CENTER",
+      "address": "2209 PINEVIEW DRIVE",
+      "city": "VALDOSTA",
+      "state": "GA",
+      "zip": "31602",
+      "phone": "(229) 671-6601",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VIDALIA": [
+    {
+      "name": "MEMORIAL HEALTH MEADOWS HOSPITAL",
+      "address": "ONE MEADOWS PARKWAY",
+      "city": "VIDALIA",
+      "state": "GA",
+      "zip": "30474",
+      "phone": "(912) 535-5828",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VILLA RICA": [
+    {
+      "name": "TANNER MEDICAL CENTER VILLA RICA",
+      "address": "601 DALLAS HIGHWAY",
+      "city": "VILLA RICA",
+      "state": "GA",
+      "zip": "30180",
+      "phone": "(770) 456-3101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WARM SPRINGS": [
+    {
+      "name": "WARM SPRINGS MEDICAL CENTER",
+      "address": "5995 SPRING STREET",
+      "city": "WARM SPRINGS",
+      "state": "GA",
+      "zip": "31830",
+      "phone": "(706) 655-9351",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WARNER ROBINS": [
+    {
+      "name": "HOUSTON HEALTHCARE",
+      "address": "1601 WATSON BOULEVARD",
+      "city": "WARNER ROBINS",
+      "state": "GA",
+      "zip": "31093",
+      "phone": "(478) 922-4281",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WASHINGTON": [
+    {
+      "name": "WILLS MEMORIAL HOSPITAL",
+      "address": "120 GORDON STREET",
+      "city": "WASHINGTON",
+      "state": "GA",
+      "zip": "30673",
+      "phone": "(706) 678-9212",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAYCROSS": [
+    {
+      "name": "Memorial Satilla Health",
+      "address": "1900 TEBEAU STREET",
+      "city": "WAYCROSS",
+      "state": "GA",
+      "zip": "31501",
+      "phone": "(912) 287-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAYNESBORO": [
+    {
+      "name": "BURKE MEDICAL CENTER",
+      "address": "351 SOUTH LIBERTY STREET",
+      "city": "WAYNESBORO",
+      "state": "GA",
+      "zip": "30830",
+      "phone": "(706) 554-4435",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINDER": [
+    {
+      "name": "NGMC BARROW, LLC",
+      "address": "316 NORTH BROAD STREET",
+      "city": "WINDER",
+      "state": "GA",
+      "zip": "30680",
+      "phone": "(770) 848-8611",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

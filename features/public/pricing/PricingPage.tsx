@@ -132,9 +132,9 @@ export const PricingPage: React.FC = () => {
               </ul>
             </div>
             <div className="p-8 bg-slate-50 border-t border-slate-100">
-              <Link to="/login" className="block w-full py-3 px-4 bg-slate-900 rounded-lg text-white font-medium text-center hover:bg-slate-800 transition-colors">
+              <a href="mailto:sales@silvertechdirectory.com?subject=Inquiry about Lead Capture Suite" className="block w-full py-3 px-4 bg-slate-900 rounded-lg text-white font-medium text-center hover:bg-slate-800 transition-colors">
                 Contact Sales
-              </Link>
+              </a>
             </div>
           </div>
 

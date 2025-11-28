@@ -1,0 +1,5388 @@
+{
+  "ALAMEDA": [
+    {
+      "name": "ALAMEDA HOSPITAL",
+      "address": "2070 CLINTON AVENUE",
+      "city": "ALAMEDA",
+      "state": "CA",
+      "zip": "94501",
+      "phone": "(510) 522-3700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALHAMBRA": [
+    {
+      "name": "ALHAMBRA HOSPITAL MEDICAL CENTER",
+      "address": "100 S RAYMOND AVE",
+      "city": "ALHAMBRA",
+      "state": "CA",
+      "zip": "91801",
+      "phone": "(626) 570-1606",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALISO VIEJO": [
+    {
+      "name": "ALISO RIDGE BEHAVIORAL HEALTH, LLC",
+      "address": "200 FREEDOM LN",
+      "city": "ALISO VIEJO",
+      "state": "CA",
+      "zip": "92656",
+      "phone": "(248) 839-5380",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ALTURAS": [
+    {
+      "name": "MODOC MEDICAL CENTER",
+      "address": "1111 N NAGLE STREET",
+      "city": "ALTURAS",
+      "state": "CA",
+      "zip": "96101",
+      "phone": "(530) 233-5131",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANAHEIM": [
+    {
+      "name": "AHMC ANAHEIM REGIONAL MEDICAL CENTER",
+      "address": "1111 W LA PALMA AVENUE",
+      "city": "ANAHEIM",
+      "state": "CA",
+      "zip": "92801",
+      "phone": "(714) 774-1450",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WEST ANAHEIM MEDICAL CENTER",
+      "address": "3033 W ORANGE AVENUE",
+      "city": "ANAHEIM",
+      "state": "CA",
+      "zip": "92804",
+      "phone": "(714) 827-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - ORANGE COUNTY - ANAHEIM",
+      "address": "3440 E LA PALMA AVE",
+      "city": "ANAHEIM",
+      "state": "CA",
+      "zip": "92806",
+      "phone": "(714) 279-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ANAHEIM GLOBAL MEDICAL CENTER",
+      "address": "1025 S ANAHEIM BLVD",
+      "city": "ANAHEIM",
+      "state": "CA",
+      "zip": "92805",
+      "phone": "(714) 533-6220",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ANAHEIM COMMUNITY HOSPITAL, LLC",
+      "address": "3350 W BALL RD",
+      "city": "ANAHEIM",
+      "state": "CA",
+      "zip": "92804",
+      "phone": "(248) 905-5091",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANTIOCH": [
+    {
+      "name": "SUTTER DELTA MEDICAL CENTER",
+      "address": "3901 LONE TREE WAY",
+      "city": "ANTIOCH",
+      "state": "CA",
+      "zip": "94509",
+      "phone": "(925) 779-7200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - ANTIOCH",
+      "address": "4501 SAND CREEK ROAD",
+      "city": "ANTIOCH",
+      "state": "CA",
+      "zip": "94531",
+      "phone": "(925) 813-6500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "APPLE VALLEY": [
+    {
+      "name": "PROVIDENCE ST MARY MEDICAL CENTER",
+      "address": "18300 HIGHWAY 18",
+      "city": "APPLE VALLEY",
+      "state": "CA",
+      "zip": "92307",
+      "phone": "(760) 242-2311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARCADIA": [
+    {
+      "name": "USC ARCADIA HOSPITAL",
+      "address": "300 W HUNTINGTON DR",
+      "city": "ARCADIA",
+      "state": "CA",
+      "zip": "91007",
+      "phone": "(626) 898-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ARCATA": [
+    {
+      "name": "MAD RIVER COMMUNITY HOSPITAL",
+      "address": "3800 JANES RD",
+      "city": "ARCATA",
+      "state": "CA",
+      "zip": "95521",
+      "phone": "(707) 822-3621",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AUBURN": [
+    {
+      "name": "SUTTER AUBURN FAITH HOSPITAL",
+      "address": "11815 EDUCATION STREET",
+      "city": "AUBURN",
+      "state": "CA",
+      "zip": "95603",
+      "phone": "(530) 888-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AVALON": [
+    {
+      "name": "CATALINA ISLAND MEDICAL CENTER",
+      "address": "100 FALLS CANYON ROAD",
+      "city": "AVALON",
+      "state": "CA",
+      "zip": "90704",
+      "phone": "(310) 510-0700",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAKERSFIELD": [
+    {
+      "name": "BAKERSFIELD MEMORIAL HOSPITAL",
+      "address": "420 34TH ST",
+      "city": "BAKERSFIELD",
+      "state": "CA",
+      "zip": "93301",
+      "phone": "(661) 327-1792",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GOOD SAMARITAN HOSPITAL",
+      "address": "901 OLIVE DRIVE",
+      "city": "BAKERSFIELD",
+      "state": "CA",
+      "zip": "93308",
+      "phone": "(661) 215-7500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MERCY HOSPITAL",
+      "address": "2215 TRUXTUN AVENUE",
+      "city": "BAKERSFIELD",
+      "state": "CA",
+      "zip": "93301",
+      "phone": "(661) 632-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KERN MEDICAL CENTER",
+      "address": "1700 MOUNT VERNON AVENUE",
+      "city": "BAKERSFIELD",
+      "state": "CA",
+      "zip": "93306",
+      "phone": "(661) 326-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTIST HEALTH BAKERSFIELD",
+      "address": "2615 CHESTER AVENUE",
+      "city": "BAKERSFIELD",
+      "state": "CA",
+      "zip": "93301",
+      "phone": "(661) 395-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BAKERSFIELD BEHAVIORAL HEALTHCARE HOSPITAL, LLC",
+      "address": "5201 WHITE LANE",
+      "city": "BAKERSFIELD",
+      "state": "CA",
+      "zip": "93309",
+      "phone": "(661) 398-1800",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BALDWIN PARK": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - BALDWIN PARK",
+      "address": "1011 BALDWIN PARK BLVD",
+      "city": "BALDWIN PARK",
+      "state": "CA",
+      "zip": "91706",
+      "phone": "(626) 851-1011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BANNING": [
+    {
+      "name": "SAN GORGONIO MEMORIAL HOSPITAL",
+      "address": "600 NORTH HIGHLAND SPRINGS AVENUE",
+      "city": "BANNING",
+      "state": "CA",
+      "zip": "92220",
+      "phone": "(951) 769-2101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BARSTOW": [
+    {
+      "name": "BARSTOW COMMUNITY HOSPITAL",
+      "address": "820 E MOUNTAIN VIEW STREET",
+      "city": "BARSTOW",
+      "state": "CA",
+      "zip": "92311",
+      "phone": "(760) 256-1761",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BERKELEY": [
+    {
+      "name": "ALTA BATES SUMMIT MEDICAL CENTER - ALTA BATES CAMP",
+      "address": "2450 ASHBY AVENUE",
+      "city": "BERKELEY",
+      "state": "CA",
+      "zip": "94705",
+      "phone": "(510) 204-4444",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BIG BEAR LAKE": [
+    {
+      "name": "BEAR VALLEY COMMUNITY HOSPITAL",
+      "address": "41870 GARSTIN DR",
+      "city": "BIG BEAR LAKE",
+      "state": "CA",
+      "zip": "92315",
+      "phone": "(909) 866-6501",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BISHOP": [
+    {
+      "name": "NORTHERN INYO HOSPITAL",
+      "address": "150 PIONEER LANE",
+      "city": "BISHOP",
+      "state": "CA",
+      "zip": "93514",
+      "phone": "(760) 873-5811",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLYTHE": [
+    {
+      "name": "PALO VERDE HOSPITAL",
+      "address": "250 NORTH FIRST STREET",
+      "city": "BLYTHE",
+      "state": "CA",
+      "zip": "92225",
+      "phone": "(760) 922-4115",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRAWLEY": [
+    {
+      "name": "PIONEERS MEMORIAL HEALTHCARE DISTRICT",
+      "address": "207 WEST LEGION ROAD",
+      "city": "BRAWLEY",
+      "state": "CA",
+      "zip": "92227",
+      "phone": "(760) 351-3333",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURBANK": [
+    {
+      "name": "PROVIDENCE SAINT JOSEPH MEDICAL CTR",
+      "address": "501 SOUTH BUENA VISTA STREET",
+      "city": "BURBANK",
+      "state": "CA",
+      "zip": "91505",
+      "phone": "(818) 843-5111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURLINGAME": [
+    {
+      "name": "PENINSULA MEDICAL CENTER",
+      "address": "1501 TROUSDALE DRIVE",
+      "city": "BURLINGAME",
+      "state": "CA",
+      "zip": "94010",
+      "phone": "(650) 696-5400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CARMICHAEL": [
+    {
+      "name": "MERCY SAN JUAN MEDICAL CENTER",
+      "address": "6501 COYLE AVE",
+      "city": "CARMICHAEL",
+      "state": "CA",
+      "zip": "95608",
+      "phone": "(916) 537-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CASTRO VALLEY": [
+    {
+      "name": "EDEN MEDICAL CENTER",
+      "address": "20103 LAKE CHABOT ROAD",
+      "city": "CASTRO VALLEY",
+      "state": "CA",
+      "zip": "94546",
+      "phone": "(510) 537-1234",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CEDARVILLE": [
+    {
+      "name": "SURPRISE VALLEY COMMUNITY HOSPITAL",
+      "address": "741 NORTH MAIN STREET",
+      "city": "CEDARVILLE",
+      "state": "CA",
+      "zip": "96104",
+      "phone": "(530) 279-6111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CERRITOS": [
+    {
+      "name": "COLLEGE HOSPITAL",
+      "address": "10802 COLLEGE PL",
+      "city": "CERRITOS",
+      "state": "CA",
+      "zip": "90703",
+      "phone": "(562) 924-9581",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHESTER": [
+    {
+      "name": "SENECA DISTRICT HOSPITAL",
+      "address": "130 BRENTWOOD DRIVE",
+      "city": "CHESTER",
+      "state": "CA",
+      "zip": "96020",
+      "phone": "(530) 258-2151",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHICO": [
+    {
+      "name": "ENLOE HEALTH",
+      "address": "1531 ESPLANADE",
+      "city": "CHICO",
+      "state": "CA",
+      "zip": "95926",
+      "phone": "(530) 332-7300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHINO": [
+    {
+      "name": "CHINO VALLEY MEDICAL CENTER",
+      "address": "5451 WALNUT AVE",
+      "city": "CHINO",
+      "state": "CA",
+      "zip": "91710",
+      "phone": "(909) 627-6111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CANYON RIDGE HOSPITAL",
+      "address": "5353 G STREET",
+      "city": "CHINO",
+      "state": "CA",
+      "zip": "91710",
+      "phone": "(909) 590-3700",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHULA VISTA": [
+    {
+      "name": "SHARP CHULA VISTA MEDICAL CENTER",
+      "address": "751 MEDICAL CENTER COURT",
+      "city": "CHULA VISTA",
+      "state": "CA",
+      "zip": "91911",
+      "phone": "(619) 502-5800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLEARLAKE": [
+    {
+      "name": "ADVENTIST HEALTH CLEARLAKE",
+      "address": "15630 18TH AVE - HWY 53",
+      "city": "CLEARLAKE",
+      "state": "CA",
+      "zip": "95422",
+      "phone": "(707) 994-6486",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLOVIS": [
+    {
+      "name": "CLOVIS COMMUNITY MEDICAL CENTER",
+      "address": "2755 HERNDON AVE",
+      "city": "CLOVIS",
+      "state": "CA",
+      "zip": "93611",
+      "phone": "(559) 324-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COALINGA": [
+    {
+      "name": "COALINGA REGIONAL MEDICAL CENTER",
+      "address": "1191 PHELPS AVENUE",
+      "city": "COALINGA",
+      "state": "CA",
+      "zip": "93210",
+      "phone": "(559) 821-6202",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLTON": [
+    {
+      "name": "ARROWHEAD REGIONAL MEDICAL CENTER",
+      "address": "400 NORTH PEPPER AVENUE",
+      "city": "COLTON",
+      "state": "CA",
+      "zip": "92324",
+      "phone": "(909) 580-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUSA": [
+    {
+      "name": "COLUSA MEDICAL CENTER",
+      "address": "199 E WEBSTER STREET",
+      "city": "COLUSA",
+      "state": "CA",
+      "zip": "95932",
+      "phone": "(530) 619-0800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CONCORD": [
+    {
+      "name": "JOHN MUIR MEDICAL CENTER - CONCORD CAMPUS",
+      "address": "2540 EAST ST",
+      "city": "CONCORD",
+      "state": "CA",
+      "zip": "94520",
+      "phone": "(925) 682-8200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "JOHN MUIR BEHAVIORAL HEALTH CENTER",
+      "address": "2740 GRANT STREET",
+      "city": "CONCORD",
+      "state": "CA",
+      "zip": "94520",
+      "phone": "(925) 674-4101",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CORONA": [
+    {
+      "name": "CORONA REGIONAL MEDICAL CENTER",
+      "address": "800 SOUTH MAIN STREET",
+      "city": "CORONA",
+      "state": "CA",
+      "zip": "92882",
+      "phone": "(951) 736-6240",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CORONADO": [
+    {
+      "name": "SHARP CORONADO HOSPITAL AND HLTHCR CTR",
+      "address": "250 PROSPECT PLACE",
+      "city": "CORONADO",
+      "state": "CA",
+      "zip": "92118",
+      "phone": "(619) 435-6251",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COSTA MESA": [
+    {
+      "name": "COLLEGE HOSPITAL COSTA MESA",
+      "address": "301 VICTORIA STREET",
+      "city": "COSTA MESA",
+      "state": "CA",
+      "zip": "92627",
+      "phone": "(949) 642-2734",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COVINA": [
+    {
+      "name": "EMANATE HEALTH INTER-COMMUNITY HOSPITAL",
+      "address": "210 W  SAN BERNARDINO ROAD",
+      "city": "COVINA",
+      "state": "CA",
+      "zip": "91723",
+      "phone": "(626) 814-2468",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AURORA CHARTER OAK",
+      "address": "1161 E COVINA BLVD",
+      "city": "COVINA",
+      "state": "CA",
+      "zip": "91724",
+      "phone": "(626) 966-1632",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CRESCENT CITY": [
+    {
+      "name": "SUTTER COAST HOSPITAL",
+      "address": "800 E WASHINGTON BLVD",
+      "city": "CRESCENT CITY",
+      "state": "CA",
+      "zip": "95531",
+      "phone": "(707) 464-8511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Camp Pendleton": [
+    {
+      "name": "NH Camp Pendleton",
+      "address": "200 Mercy Cir",
+      "city": "Camp Pendleton",
+      "state": "CA",
+      "zip": "92055",
+      "phone": "(760) 725-1288",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DALY CITY": [
+    {
+      "name": "AHMC SETON MEDICAL CENTER",
+      "address": "1900 SULLIVAN AVENUE",
+      "city": "DALY CITY",
+      "state": "CA",
+      "zip": "94015",
+      "phone": "(650) 992-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DAVIS": [
+    {
+      "name": "SUTTER DAVIS HOSPITAL",
+      "address": "2000 SUTTER PLACE",
+      "city": "DAVIS",
+      "state": "CA",
+      "zip": "95616",
+      "phone": "(530) 757-5108",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DELANO": [
+    {
+      "name": "ADVENTIST HEALTH DELANO",
+      "address": "1401 GARCES HIGHWAY",
+      "city": "DELANO",
+      "state": "CA",
+      "zip": "93215",
+      "phone": "(661) 725-4800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DOWNEY": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - DOWNEY",
+      "address": "9333 IMPERIAL HIGHWAY",
+      "city": "DOWNEY",
+      "state": "CA",
+      "zip": "90242",
+      "phone": "(562) 461-6007",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PIH HEALTH DOWNEY HOSPITAL",
+      "address": "11500 BROOKSHIRE AVENUE",
+      "city": "DOWNEY",
+      "state": "CA",
+      "zip": "90241",
+      "phone": "(562) 904-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LAC/RANCHO LOS AMIGOS NATIONAL REHABILITATION  CTR",
+      "address": "7601 EAST IMPERIAL HIGHWAY",
+      "city": "DOWNEY",
+      "state": "CA",
+      "zip": "90242",
+      "phone": "(562) 401-7022",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EL CENTRO": [
+    {
+      "name": "EL CENTRO REGIONAL MEDICAL CENTER",
+      "address": "1415 ROSS AVENUE",
+      "city": "EL CENTRO",
+      "state": "CA",
+      "zip": "92243",
+      "phone": "(760) 339-7100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ENCINITAS": [
+    {
+      "name": "SCRIPPS MEMORIAL HOSPITAL - ENCINITAS",
+      "address": "354 SANTA FE DRIVE",
+      "city": "ENCINITAS",
+      "state": "CA",
+      "zip": "92024",
+      "phone": "(760) 753-6501",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ENCINO": [
+    {
+      "name": "ENCINO HOSPITAL MEDICAL CENTER",
+      "address": "16237 VENTURA BLVD",
+      "city": "ENCINO",
+      "state": "CA",
+      "zip": "91436",
+      "phone": "(818) 995-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ESCONDIDO": [
+    {
+      "name": "PALOMAR HEALTH DOWNTOWN CAMPUS",
+      "address": "555 EAST VALLEY PARKWAY",
+      "city": "ESCONDIDO",
+      "state": "CA",
+      "zip": "92025",
+      "phone": "(760) 739-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EUREKA": [
+    {
+      "name": "PROVIDENCE ST JOSEPH HOSPITAL",
+      "address": "2700 DOLBEER ST",
+      "city": "EUREKA",
+      "state": "CA",
+      "zip": "95501",
+      "phone": "(707) 445-8121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SEMPERVIRENS",
+      "address": "720 WOOD ST",
+      "city": "EUREKA",
+      "state": "CA",
+      "zip": "95501",
+      "phone": "(707) 268-2990",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAIRFIELD": [
+    {
+      "name": "NORTHBAY MEDICAL CENTER",
+      "address": "1200 B  GALE WILSON BLVD",
+      "city": "FAIRFIELD",
+      "state": "CA",
+      "zip": "94533",
+      "phone": "(707) 646-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FALL RIVER MILLS": [
+    {
+      "name": "MAYERS MEMORIAL HOSPITAL",
+      "address": "43563 HWY 299 EAST",
+      "city": "FALL RIVER MILLS",
+      "state": "CA",
+      "zip": "96028",
+      "phone": "(530) 336-5511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FOLSOM": [
+    {
+      "name": "MERCY HOSPITAL OF FOLSOM",
+      "address": "1650 CREEKSIDE DRIVE",
+      "city": "FOLSOM",
+      "state": "CA",
+      "zip": "95630",
+      "phone": "(916) 983-7400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FONTANA": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL FONTANA/ONTARIO",
+      "address": "9961 SIERRA AVE",
+      "city": "FONTANA",
+      "state": "CA",
+      "zip": "92335",
+      "phone": "(909) 427-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT BRAGG": [
+    {
+      "name": "MENDOCINO COAST DISTRICT HOSPITAL",
+      "address": "700 RIVER DRIVE",
+      "city": "FORT BRAGG",
+      "state": "CA",
+      "zip": "95437",
+      "phone": "(707) 961-1234",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORTUNA": [
+    {
+      "name": "PROVIDENCE REDWOOD MEMORIAL HOSPITAL",
+      "address": "3300 RENNER DRIVE",
+      "city": "FORTUNA",
+      "state": "CA",
+      "zip": "95540",
+      "phone": "(707) 445-8121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FOUNTAIN VALLEY": [
+    {
+      "name": "UCI HEALTH - FOUNTAIN VALLEY",
+      "address": "17100 EUCLID STREET",
+      "city": "FOUNTAIN VALLEY",
+      "state": "CA",
+      "zip": "92708",
+      "phone": "(714) 966-7200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MEMORIALCARE ORANGE COAST MEDICAL CENTER",
+      "address": "9920 TALBERT AVENUE",
+      "city": "FOUNTAIN VALLEY",
+      "state": "CA",
+      "zip": "92708",
+      "phone": "(714) 378-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FREMONT": [
+    {
+      "name": "WASHINGTON HOSPITAL",
+      "address": "2000 MOWRY AVE",
+      "city": "FREMONT",
+      "state": "CA",
+      "zip": "94538",
+      "phone": "(510) 797-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - FREMONT",
+      "address": "39400 PASEO PADRE PKWY",
+      "city": "FREMONT",
+      "state": "CA",
+      "zip": "94538",
+      "phone": "(510) 784-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BHC FREMONT HOSPITAL INC",
+      "address": "39001 SUNDALE DRIVE",
+      "city": "FREMONT",
+      "state": "CA",
+      "zip": "94538",
+      "phone": "(510) 796-1100",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRENCH CAMP": [
+    {
+      "name": "SAN JOAQUIN GENERAL HOSPITAL",
+      "address": "500 W HOSPITAL ROAD",
+      "city": "FRENCH CAMP",
+      "state": "CA",
+      "zip": "95231",
+      "phone": "(209) 468-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRESNO": [
+    {
+      "name": "COMMUNITY REGIONAL MEDICAL CENTER",
+      "address": "2823 FRESNO STREET",
+      "city": "FRESNO",
+      "state": "CA",
+      "zip": "93721",
+      "phone": "(559) 459-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT AGNES MEDICAL CENTER",
+      "address": "1303 E HERNDON AVE",
+      "city": "FRESNO",
+      "state": "CA",
+      "zip": "93720",
+      "phone": "(559) 450-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FRESNO VA MEDICAL CENTER (VA CENTRAL CALIFORNIA HEALTHCARE SYSTEM)",
+      "address": "2615 E. CLINTON AVENUE",
+      "city": "FRESNO",
+      "state": "CA",
+      "zip": "93703",
+      "phone": "(559) 228-5338",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FRESNO SURGICAL HOSPITAL",
+      "address": "6125 NORTH FRESNO ST",
+      "city": "FRESNO",
+      "state": "CA",
+      "zip": "93710",
+      "phone": "(559) 431-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - FRESNO",
+      "address": "7300 NORTH FRESNO ST",
+      "city": "FRESNO",
+      "state": "CA",
+      "zip": "93720",
+      "phone": "(559) 448-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FULLERTON": [
+    {
+      "name": "PROVIDENCE ST. JUDE MEDICAL CENTER",
+      "address": "101 E VALENCIA MESA DRIVE",
+      "city": "FULLERTON",
+      "state": "CA",
+      "zip": "92835",
+      "phone": "(714) 992-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Fort Irwin": [
+    {
+      "name": "Weed ACH (FT Irwin)",
+      "address": "390 N Loop Rd",
+      "city": "Fort Irwin",
+      "state": "CA",
+      "zip": "92310",
+      "phone": "(866) 957-9224",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GARBERVILLE": [
+    {
+      "name": "JEROLD PHELPS COMMUNITY HOSPITAL",
+      "address": "733 CEDAR ST",
+      "city": "GARBERVILLE",
+      "state": "CA",
+      "zip": "95542",
+      "phone": "(707) 923-3921",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GARDEN GROVE": [
+    {
+      "name": "GARDEN GROVE HOSPITAL & MEDICAL CENTER",
+      "address": "12601 GARDEN GROVE BLVD",
+      "city": "GARDEN GROVE",
+      "state": "CA",
+      "zip": "92843",
+      "phone": "(714) 537-5160",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GARDENA": [
+    {
+      "name": "MEMORIAL HOSPITAL OF GARDENA",
+      "address": "1145 W REDONDO BEACH BLVD",
+      "city": "GARDENA",
+      "state": "CA",
+      "zip": "90247",
+      "phone": "(310) 532-4200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLENDALE": [
+    {
+      "name": "GLENDALE MEM HOSPITAL & HLTH CENTER",
+      "address": "1420 S CENTRAL AVE",
+      "city": "GLENDALE",
+      "state": "CA",
+      "zip": "91204",
+      "phone": "(818) 502-1900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "USC VERDUGO HILLS HOSPITAL",
+      "address": "1812 VERDUGO BLVD",
+      "city": "GLENDALE",
+      "state": "CA",
+      "zip": "91208",
+      "phone": "(818) 790-7100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GLENDALE ADVENTIST MEDICAL CENTER",
+      "address": "1509 E WILSON TERRACE",
+      "city": "GLENDALE",
+      "state": "CA",
+      "zip": "91206",
+      "phone": "(818) 409-8202",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLENDORA": [
+    {
+      "name": "EMANATE HEALTH FOOTHILL PRESBYTERIAN HOSPITAL",
+      "address": "250 S GRAND AVE",
+      "city": "GLENDORA",
+      "state": "CA",
+      "zip": "91740",
+      "phone": "(626) 963-8411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GLENDORA  HOSPITAL",
+      "address": "150 WEST ROUTE 66",
+      "city": "GLENDORA",
+      "state": "CA",
+      "zip": "91740",
+      "phone": "(626) 852-5050",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRASS VALLEY": [
+    {
+      "name": "SIERRA NEVADA MEMORIAL HOSPITAL",
+      "address": "155 GLASSON WAY",
+      "city": "GRASS VALLEY",
+      "state": "CA",
+      "zip": "95945",
+      "phone": "(530) 274-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREENBRAE": [
+    {
+      "name": "MARINHEALTH MEDICAL CENTER",
+      "address": "250 BON AIR ROAD",
+      "city": "GREENBRAE",
+      "state": "CA",
+      "zip": "94904",
+      "phone": "(415) 925-7900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRIDLEY": [
+    {
+      "name": "ORCHARD HOSPITAL",
+      "address": "240 SPRUCE STREET",
+      "city": "GRIDLEY",
+      "state": "CA",
+      "zip": "95948",
+      "phone": "(530) 846-5671",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HANFORD": [
+    {
+      "name": "ADVENTIST HEALTH HANFORD",
+      "address": "115 MALL DRIVE",
+      "city": "HANFORD",
+      "state": "CA",
+      "zip": "93230",
+      "phone": "(559) 582-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARBOR CITY": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - SOUTH BAY",
+      "address": "25825 SOUTH VERMONT AVENUE",
+      "city": "HARBOR CITY",
+      "state": "CA",
+      "zip": "90710",
+      "phone": "(310) 325-5111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAYWARD": [
+    {
+      "name": "ST ROSE HOSPITAL",
+      "address": "27200 CALAROGA AVE",
+      "city": "HAYWARD",
+      "state": "CA",
+      "zip": "94545",
+      "phone": "(510) 782-6200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HEALDSBURG": [
+    {
+      "name": "HEALDSBURG HOSPITAL",
+      "address": "1375 UNIVERSITY AVENUE",
+      "city": "HEALDSBURG",
+      "state": "CA",
+      "zip": "95448",
+      "phone": "(707) 431-6500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HEMET": [
+    {
+      "name": "HEMET GLOBAL MEDICAL CENTER",
+      "address": "1117 EAST DEVONSHIRE",
+      "city": "HEMET",
+      "state": "CA",
+      "zip": "92543",
+      "phone": "(951) 652-2811",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOLLISTER": [
+    {
+      "name": "HAZEL HAWKINS MEMORIAL HOSPITAL",
+      "address": "911 SUNSET DRIVE",
+      "city": "HOLLISTER",
+      "state": "CA",
+      "zip": "95032",
+      "phone": "(831) 637-5711",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOLLYWOOD": [
+    {
+      "name": "SOUTHERN CALIFORNIA HOSPITAL AT HOLLYWOOD",
+      "address": "6245 DE LONGPRE AVE",
+      "city": "HOLLYWOOD",
+      "state": "CA",
+      "zip": "90028",
+      "phone": "(323) 462-2271",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUNTINGTON BEACH": [
+    {
+      "name": "HUNTINGTON BEACH HOSPITAL",
+      "address": "17772 BEACH BLVD",
+      "city": "HUNTINGTON BEACH",
+      "state": "CA",
+      "zip": "92647",
+      "phone": "(714) 843-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUNTINGTON PARK": [
+    {
+      "name": "COMMUNITY HOSPITAL OF HUNTINGTON PARK",
+      "address": "2623 E SLAUSON AVE",
+      "city": "HUNTINGTON PARK",
+      "state": "CA",
+      "zip": "90255",
+      "phone": "(323) 583-1931",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "INDIO": [
+    {
+      "name": "JOHN F KENNEDY MEMORIAL HOSPITAL",
+      "address": "47111 MONROE STREET",
+      "city": "INDIO",
+      "state": "CA",
+      "zip": "92201",
+      "phone": "(760) 347-6191",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "INGLEWOOD": [
+    {
+      "name": "CENTINELA HOSPITAL MEDICAL CENTER",
+      "address": "555 EAST HARDY STREET",
+      "city": "INGLEWOOD",
+      "state": "CA",
+      "zip": "90301",
+      "phone": "(310) 673-4660",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "IRVINE": [
+    {
+      "name": "HOAG ORTHOPEDIC INSTITUTE",
+      "address": "16250 SAND CANYON AVENUE",
+      "city": "IRVINE",
+      "state": "CA",
+      "zip": "92618",
+      "phone": "(949) 727-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JACKSON": [
+    {
+      "name": "SUTTER AMADOR HOSPITAL",
+      "address": "200 MISSION BLVD",
+      "city": "JACKSON",
+      "state": "CA",
+      "zip": "95642",
+      "phone": "(209) 223-7500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JOSHUA TREE": [
+    {
+      "name": "HI-DESERT MEDICAL CENTER",
+      "address": "6601 WHITE FEATHER ROAD",
+      "city": "JOSHUA TREE",
+      "state": "CA",
+      "zip": "92252",
+      "phone": "(760) 366-3711",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KING CITY": [
+    {
+      "name": "SOUTHERN MONTEREY COUNTY MEMORIAL HOSPITAL",
+      "address": "300 CANAL STREET",
+      "city": "KING CITY",
+      "state": "CA",
+      "zip": "93930",
+      "phone": "(831) 385-6000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LA JOLLA": [
+    {
+      "name": "SCRIPPS MEMORIAL HOSPITAL LA JOLLA",
+      "address": "9888 GENESEE AVENUE",
+      "city": "LA JOLLA",
+      "state": "CA",
+      "zip": "92037",
+      "phone": "(858) 626-4123",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SCRIPPS GREEN HOSPITAL",
+      "address": "10666 NORTH TORREY PINES ROAD",
+      "city": "LA JOLLA",
+      "state": "CA",
+      "zip": "92037",
+      "phone": "(858) 554-3600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LA MESA": [
+    {
+      "name": "GROSSMONT HOSPITAL",
+      "address": "5555 GROSSMONT CENTER DRIVE BOX 58",
+      "city": "LA MESA",
+      "state": "CA",
+      "zip": "91942",
+      "phone": "(619) 465-0711",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ALVARADO PARKWAY INSTITUTE BEHAVIORAL HEALTH SYSTE",
+      "address": "7050 PARKWAY DRIVE",
+      "city": "LA MESA",
+      "state": "CA",
+      "zip": "91942",
+      "phone": "(619) 465-4411",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LA PALMA": [
+    {
+      "name": "LA PALMA INTERCOMMUNITY HOSPITAL",
+      "address": "7901 WALKER STREET",
+      "city": "LA PALMA",
+      "state": "CA",
+      "zip": "90623",
+      "phone": "(714) 670-7400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAGUNA HILLS": [
+    {
+      "name": "MEMORIALCARE SADDLEBACK MEDICAL CENTER",
+      "address": "24451 HEALTH CENTER DRIVE",
+      "city": "LAGUNA HILLS",
+      "state": "CA",
+      "zip": "92653",
+      "phone": "(949) 837-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE ARROWHEAD": [
+    {
+      "name": "MOUNTAINS COMMUNITY HOSPITAL",
+      "address": "29101 HOSPITAL ROAD",
+      "city": "LAKE ARROWHEAD",
+      "state": "CA",
+      "zip": "92352",
+      "phone": "(909) 336-3651",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE ISABELLA": [
+    {
+      "name": "KERN VALLEY HEALTHCARE DISTRICT",
+      "address": "6412 LAUREL AVE",
+      "city": "LAKE ISABELLA",
+      "state": "CA",
+      "zip": "93240",
+      "phone": "(760) 379-2681",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKEPORT": [
+    {
+      "name": "SUTTER LAKESIDE HOSPITAL",
+      "address": "5176 HILL ROAD EAST",
+      "city": "LAKEPORT",
+      "state": "CA",
+      "zip": "95453",
+      "phone": "(707) 262-5000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKEWOOD": [
+    {
+      "name": "UCI HEALTH-LAKEWOOD",
+      "address": "3700 SOUTH ST",
+      "city": "LAKEWOOD",
+      "state": "CA",
+      "zip": "90712",
+      "phone": "(562) 602-6751",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LANCASTER": [
+    {
+      "name": "ANTELOPE VALLEY HOSPITAL",
+      "address": "1600 W AVE J",
+      "city": "LANCASTER",
+      "state": "CA",
+      "zip": "93534",
+      "phone": "(661) 949-5500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LODI": [
+    {
+      "name": "ADVENTIST HEALTH LODI MEMORIAL",
+      "address": "975 S FAIRMONT AVENUE",
+      "city": "LODI",
+      "state": "CA",
+      "zip": "95240",
+      "phone": "(209) 334-3411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOMA LINDA": [
+    {
+      "name": "LOMA LINDA UNIVERSITY MEDICAL CENTER",
+      "address": "11234 ANDERSON ST",
+      "city": "LOMA LINDA",
+      "state": "CA",
+      "zip": "92354",
+      "phone": "(909) 558-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LOMA LINDA UNIVERSITY CHILDREN'S HOSPITAL",
+      "address": "11234 ANDERSON STREET SUITE A",
+      "city": "LOMA LINDA",
+      "state": "CA",
+      "zip": "92354",
+      "phone": "(909) 558-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LOMA LINDA VA MEDICAL CENTER",
+      "address": "11201 BENTON STREET",
+      "city": "LOMA LINDA",
+      "state": "CA",
+      "zip": "92357",
+      "phone": "(909) 825-7084",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOMPOC": [
+    {
+      "name": "LOMPOC VALLEY MEDICAL CENTER",
+      "address": "1515 E OCEAN AVENUE",
+      "city": "LOMPOC",
+      "state": "CA",
+      "zip": "93436",
+      "phone": "(805) 737-3300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LONE PINE": [
+    {
+      "name": "SOUTHERN INYO HOSPITAL",
+      "address": "501 EAST LOCUST STREET",
+      "city": "LONE PINE",
+      "state": "CA",
+      "zip": "93545",
+      "phone": "(760) 876-5501",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LONG BEACH": [
+    {
+      "name": "ST MARY MEDICAL CENTER",
+      "address": "1050 LINDEN AVE",
+      "city": "LONG BEACH",
+      "state": "CA",
+      "zip": "90813",
+      "phone": "(562) 491-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA LONG BEACH HEALTHCARE SYSTEM",
+      "address": "5901 E. SEVENTH STREET",
+      "city": "LONG BEACH",
+      "state": "CA",
+      "zip": "90822",
+      "phone": "(562) 826-8000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MEMORIALCARE LONG BEACH MEDICAL CENTER",
+      "address": "2801 ATLANTIC AVE",
+      "city": "LONG BEACH",
+      "state": "CA",
+      "zip": "90806",
+      "phone": "(562) 933-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COLLEGE MEDICAL CENTER",
+      "address": "2776 PACIFIC AVENUE",
+      "city": "LONG BEACH",
+      "state": "CA",
+      "zip": "90806",
+      "phone": "(562) 595-1911",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MEMORIAL CARE MILLER CHILDREN'S &  WOMEN'S HOSP LB",
+      "address": "2801 ATLANTIC AVENUE",
+      "city": "LONG BEACH",
+      "state": "CA",
+      "zip": "90806",
+      "phone": "(562) 933-8001",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "OCEAN VIEW PSYCHIATRIC HEALTH FACILITY",
+      "address": "2600 REDONDO AVENUE, SUITE 500",
+      "city": "LONG BEACH",
+      "state": "CA",
+      "zip": "90806",
+      "phone": "(844) 562-1212",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOS ALAMITOS": [
+    {
+      "name": "UCI HEALTH - LOS ALAMITOS",
+      "address": "3751 KATELLA AVENUE",
+      "city": "LOS ALAMITOS",
+      "state": "CA",
+      "zip": "90720",
+      "phone": "(562) 799-3220",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOS ANGELES": [
+    {
+      "name": "HOLLYWOOD PRESBYTERIAN MEDICAL CENTER",
+      "address": "1300 N VERMONT AVE",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90027",
+      "phone": "(213) 413-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTIST HEALTH WHITE MEMORIAL",
+      "address": "1720 CESAR E CHAVEZ AVENUE",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90033",
+      "phone": "(323) 268-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - LOS ANGELES",
+      "address": "4867 SUNSET BLVD",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90027",
+      "phone": "(323) 783-4011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CALIFORNIA HOSPITAL MEDICAL CENTER LA",
+      "address": "1401 SOUTH GRAND AVENUE",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90015",
+      "phone": "(213) 748-2411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RONALD REAGAN UCLA MEDICAL CENTER",
+      "address": "757 WESTWOOD PLAZA",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90095",
+      "phone": "(310) 825-6301",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LOS ANGELES GENERAL MEDICAL CENTER",
+      "address": "2051 MARENGO ST, ROOM C2K100",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90033",
+      "phone": "(323) 226-2800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PIH HEALTH GOOD SAMARITAN HOSPITAL",
+      "address": "1225 WILSHIRE BOULEVARD",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90017",
+      "phone": "(213) 977-2121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - WEST LA",
+      "address": "6041 CADILLAC AVE",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90034",
+      "phone": "(213) 857-2201",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CEDARS-SINAI MEDICAL CENTER",
+      "address": "8700 BEVERLY BLVD",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90048",
+      "phone": "(310) 423-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "EAST LOS ANGELES DOCTORS HOSPITAL",
+      "address": "4060 WHITTIER BLVD",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90023",
+      "phone": "(323) 268-5514",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LOS ANGELES COMMUNITY HOSPITAL",
+      "address": "4081 E OLYMPIC BLVD",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90023",
+      "phone": "(323) 267-0477",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KECK HOSPITAL OF USC",
+      "address": "1500 SAN PABLO STREET",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90033",
+      "phone": "(323) 442-8656",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "L A DOWNTOWN MEDICAL CENTER",
+      "address": "1711 WEST TEMPLE STREET",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90026",
+      "phone": "(213) 989-6123",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MARTIN LUTHER KING, JR. COMMUNITY HOSPITAL",
+      "address": "1680 EAST 120TH STREET",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90059",
+      "phone": "(424) 835-6808",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DOCS SURGICAL HOSPITAL",
+      "address": "6000 SAN VICENTE BLVD",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90036",
+      "phone": "(323) 930-1040",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA GREATER LOS ANGELES HEALTHCARE SYSTEM",
+      "address": "11301 WILSHIRE BLVD.",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90073",
+      "phone": "(310) 478-3711",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDREN'S HOSP OF LOS ANGELES",
+      "address": "4650 SUNSET BLVD, MS 108",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90027",
+      "phone": "(323) 669-2164",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RESNICK NEUROPSYCHIATRIC HOSPITAL AT UCLA",
+      "address": "150 MEDICAL PLAZA-RM-4230C",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90095",
+      "phone": "(310) 825-6962",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GATEWAYS HOSP  MENTAL HEALTH CTR",
+      "address": "1891 EFFIE ST",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90026",
+      "phone": "(213) 666-0171",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOS BANOS": [
+    {
+      "name": "MEMORIAL HOSPITAL LOS BANOS",
+      "address": "520 WEST I ST",
+      "city": "LOS BANOS",
+      "state": "CA",
+      "zip": "93635",
+      "phone": "(209) 826-0591",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LYNWOOD": [
+    {
+      "name": "SAINT FRANCIS MEDICAL CENTER",
+      "address": "3630 EAST IMPERIAL HIGHWAY",
+      "city": "LYNWOOD",
+      "state": "CA",
+      "zip": "90262",
+      "phone": "(310) 900-8900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MADERA": [
+    {
+      "name": "VALLEY CHILDREN'S HOSPITAL",
+      "address": "9300 VALLEY CHILDRENS PLACE",
+      "city": "MADERA",
+      "state": "CA",
+      "zip": "93636",
+      "phone": "(559) 353-5116",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIVER VISTA BEHAVIORAL HEALTH",
+      "address": "40886 GOODWIN WAY",
+      "city": "MADERA",
+      "state": "CA",
+      "zip": "93636",
+      "phone": "(559) 603-6000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAMMOTH LAKES": [
+    {
+      "name": "MAMMOTH HOSPITAL",
+      "address": "85 SIERRA PARK ROAD PO BOX 660",
+      "city": "MAMMOTH LAKES",
+      "state": "CA",
+      "zip": "93546",
+      "phone": "(760) 934-3311",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANTECA": [
+    {
+      "name": "DOCTORS HOSPITAL OF MANTECA",
+      "address": "1205 E NORTH STREET",
+      "city": "MANTECA",
+      "state": "CA",
+      "zip": "95336",
+      "phone": "(209) 823-3111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL MANTECA",
+      "address": "1777 WEST YOSEMITE AVE",
+      "city": "MANTECA",
+      "state": "CA",
+      "zip": "95337",
+      "phone": "(209) 825-3700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARINA DEL REY": [
+    {
+      "name": "CEDAR-SINAI MARINA DEL REY HOSPITAL",
+      "address": "4650 LINCOLN BLVD",
+      "city": "MARINA DEL REY",
+      "state": "CA",
+      "zip": "90292",
+      "phone": "(310) 823-8911",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARIPOSA": [
+    {
+      "name": "JOHN C FREMONT HEALTHCARE DISTRICT",
+      "address": "5189 HOSPITAL ROAD",
+      "city": "MARIPOSA",
+      "state": "CA",
+      "zip": "95338",
+      "phone": "(209) 966-3631",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARTINEZ": [
+    {
+      "name": "CONTRA COSTA REGIONAL MEDICAL CENTER",
+      "address": "2500 ALHAMBRA AVENUE",
+      "city": "MARTINEZ",
+      "state": "CA",
+      "zip": "94553",
+      "phone": "(925) 370-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARYSVILLE": [
+    {
+      "name": "ADVENTIST HEALTH AND RIDEOUT",
+      "address": "726 4TH ST",
+      "city": "MARYSVILLE",
+      "state": "CA",
+      "zip": "95901",
+      "phone": "(530) 749-4300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MATHER": [
+    {
+      "name": "VA N CALIFORNIA HEALTHCARE SYSTEM",
+      "address": "10535 HOSPITAL WAY",
+      "city": "MATHER",
+      "state": "CA",
+      "zip": "95655",
+      "phone": "(800) 382-8387",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MERCED": [
+    {
+      "name": "MERCY MEDICAL CENTER",
+      "address": "333 MERCY AVENUE",
+      "city": "MERCED",
+      "state": "CA",
+      "zip": "95340",
+      "phone": "(209) 564-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MISSION HILLS": [
+    {
+      "name": "PROVIDENCE HOLY CROSS MEDICAL CENTER",
+      "address": "15031 RINALDI ST",
+      "city": "MISSION HILLS",
+      "state": "CA",
+      "zip": "91346",
+      "phone": "(818) 365-8051",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MISSION VIEJO": [
+    {
+      "name": "PROVIDENCE MISSION HOSPITAL",
+      "address": "27700 MEDICAL CENTER RD",
+      "city": "MISSION VIEJO",
+      "state": "CA",
+      "zip": "92691",
+      "phone": "(949) 364-1400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDREN'S HOSPITAL AT MISSION",
+      "address": "27700 MEDICAL CENTER RD, 5TH FLOOR",
+      "city": "MISSION VIEJO",
+      "state": "CA",
+      "zip": "92691",
+      "phone": "(949) 365-2408",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MODESTO": [
+    {
+      "name": "DOCTORS MEDICAL CENTER",
+      "address": "1441 FLORIDA AVENUE",
+      "city": "MODESTO",
+      "state": "CA",
+      "zip": "95350",
+      "phone": "(209) 578-1211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MEMORIAL MEDICAL CENTER",
+      "address": "1700 COFFEE RD",
+      "city": "MODESTO",
+      "state": "CA",
+      "zip": "95355",
+      "phone": "(209) 526-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "STANISLAUS SURGICAL HOSPITAL",
+      "address": "1421 OAKDALE ROAD",
+      "city": "MODESTO",
+      "state": "CA",
+      "zip": "95355",
+      "phone": "(209) 572-2700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTCLAIR": [
+    {
+      "name": "MONTCLAIR HOSPITAL MEDICAL CENTER",
+      "address": "5000 SAN BERNARDINO ST",
+      "city": "MONTCLAIR",
+      "state": "CA",
+      "zip": "91763",
+      "phone": "(909) 625-8300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTEBELLO": [
+    {
+      "name": "ADVENTIST HEALTH WHITE MEMORIAL MONTEBELLO",
+      "address": "309 W BEVERLY BLVD",
+      "city": "MONTEBELLO",
+      "state": "CA",
+      "zip": "90640",
+      "phone": "(323) 726-1222",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTEREY": [
+    {
+      "name": "COMMUNITY HOSPITAL OF THE MONTEREY PENINSULA",
+      "address": "23625 W R HOLMAN HIGHWAY",
+      "city": "MONTEREY",
+      "state": "CA",
+      "zip": "93940",
+      "phone": "(831) 624-5311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTEREY PARK": [
+    {
+      "name": "MONTEREY PARK HOSPITAL",
+      "address": "900 S ATLANTIC BLVD",
+      "city": "MONTEREY PARK",
+      "state": "CA",
+      "zip": "91754",
+      "phone": "(626) 570-9000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GARFIELD MEDICAL CENTER",
+      "address": "525 N GARFIELD AVE",
+      "city": "MONTEREY PARK",
+      "state": "CA",
+      "zip": "91754",
+      "phone": "(626) 573-2222",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MORENO VALLEY": [
+    {
+      "name": "RIVERSIDE UNIVERSITY HEALTH SYSTEM-MEDICAL CENTER",
+      "address": "26520 CACTUS AVENUE",
+      "city": "MORENO VALLEY",
+      "state": "CA",
+      "zip": "92555",
+      "phone": "(951) 486-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL-MORENO VALLEY",
+      "address": "27300 IRIS AVENUE",
+      "city": "MORENO VALLEY",
+      "state": "CA",
+      "zip": "92555",
+      "phone": "(951) 251-6530",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT SHASTA": [
+    {
+      "name": "MERCY MEDICAL CENTER OF MT SHASTA",
+      "address": "914 PINE STREET",
+      "city": "MOUNT SHASTA",
+      "state": "CA",
+      "zip": "96067",
+      "phone": "(530) 926-6111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNTAIN VIEW": [
+    {
+      "name": "EL CAMINO HOSPITAL",
+      "address": "2500 GRANT ROAD",
+      "city": "MOUNTAIN VIEW",
+      "state": "CA",
+      "zip": "94040",
+      "phone": "(650) 940-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MURRIETA": [
+    {
+      "name": "SOUTHWEST HEALTHCARE RANCHO SPRINGS HOSPITAL",
+      "address": "25500 MEDICAL CENTER DRIVE",
+      "city": "MURRIETA",
+      "state": "CA",
+      "zip": "92562",
+      "phone": "(951) 696-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LOMA LINDA UNIVERSITY MEDICAL CENTER-MURRIETA",
+      "address": "28062 BAXTER ROAD",
+      "city": "MURRIETA",
+      "state": "CA",
+      "zip": "92563",
+      "phone": "(951) 290-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NAPA": [
+    {
+      "name": "PROVIDENCE QUEEN OF THE VALLEY MEDICAL CENTER",
+      "address": "1000 TRANCAS ST",
+      "city": "NAPA",
+      "state": "CA",
+      "zip": "94558",
+      "phone": "(707) 252-4411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DEPT OF STATE HOSPITALS - NAPA",
+      "address": "2100 NAPA VALLEJO HIGHWAY",
+      "city": "NAPA",
+      "state": "CA",
+      "zip": "94558",
+      "phone": "(707) 253-5000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NATIONAL CITY": [
+    {
+      "name": "PARADISE VALLEY HOSPITAL",
+      "address": "2400 EAST 4TH ST",
+      "city": "NATIONAL CITY",
+      "state": "CA",
+      "zip": "91950",
+      "phone": "(619) 470-4321",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEEDLES": [
+    {
+      "name": "COLORADO RIVER MEDICAL CENTER",
+      "address": "1401 BAILEY AVE",
+      "city": "NEEDLES",
+      "state": "CA",
+      "zip": "92363",
+      "phone": "(760) 326-7162",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWPORT BEACH": [
+    {
+      "name": "HOAG MEMORIAL HOSPITAL PRESBYTERIAN",
+      "address": "ONE HOAG DRIVE",
+      "city": "NEWPORT BEACH",
+      "state": "CA",
+      "zip": "92663",
+      "phone": "(949) 764-4624",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTH SACRAMENTO": [
+    {
+      "name": "SACRAMENTO BEHAVIORAL HEALTHCARE HOSPITAL, LLC",
+      "address": "1400 EXPO PARKWAY",
+      "city": "NORTH SACRAMENTO",
+      "state": "CA",
+      "zip": "95815",
+      "phone": "(916) 437-6410",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTHRIDGE": [
+    {
+      "name": "NORTHRIDGE HOSPITAL MEDICAL CENTER",
+      "address": "18300 ROSCOE BLVD",
+      "city": "NORTHRIDGE",
+      "state": "CA",
+      "zip": "91325",
+      "phone": "(818) 885-8500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORWALK": [
+    {
+      "name": "COAST PLAZA HOSPITAL",
+      "address": "13100 STUDERBAKER ROAD",
+      "city": "NORWALK",
+      "state": "CA",
+      "zip": "90650",
+      "phone": "(562) 868-3751",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DEPT OF STATE HOSPITALS - METROPOLITAN - PSY",
+      "address": "11401 S NORWALK BLVD",
+      "city": "NORWALK",
+      "state": "CA",
+      "zip": "90650",
+      "phone": "(562) 863-7011",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NOVATO": [
+    {
+      "name": "NOVATO COMMUNITY HOSPITAL",
+      "address": "180 ROWLAND WAY",
+      "city": "NOVATO",
+      "state": "CA",
+      "zip": "94945",
+      "phone": "(415) 209-1300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OAKDALE": [
+    {
+      "name": "OAK VALLEY HOSPITAL DISTRICT",
+      "address": "350 S OAK AVE",
+      "city": "OAKDALE",
+      "state": "CA",
+      "zip": "95361",
+      "phone": "(209) 847-3011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OAKLAND": [
+    {
+      "name": "ALTA BATES SUMMIT MEDICAL CENTER",
+      "address": "350 HAWTHORNE AVENUE",
+      "city": "OAKLAND",
+      "state": "CA",
+      "zip": "94609",
+      "phone": "(510) 655-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - OAKLAND/RICHMOND",
+      "address": "275 WEST MACARTHUR BOULEVARD",
+      "city": "OAKLAND",
+      "state": "CA",
+      "zip": "94611",
+      "phone": "(510) 752-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HIGHLAND HOSPITAL",
+      "address": "1411 EAST 31ST STREET",
+      "city": "OAKLAND",
+      "state": "CA",
+      "zip": "94602",
+      "phone": "(510) 437-4800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UCSF BENIOFF CHILDREN'S HOSPITAL OAKLAND",
+      "address": "747 52ND STREET",
+      "city": "OAKLAND",
+      "state": "CA",
+      "zip": "94609",
+      "phone": "(510) 428-3000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TELECARE HERITAGE PSYCHIATRIC HEALTH FACILITY",
+      "address": "2633 E 27TH STREET, BUILDING B",
+      "city": "OAKLAND",
+      "state": "CA",
+      "zip": "94601",
+      "phone": "(510) 535-5115",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OCEANSIDE": [
+    {
+      "name": "TRI-CITY MEDICAL CENTER",
+      "address": "4002 VISTA WAY",
+      "city": "OCEANSIDE",
+      "state": "CA",
+      "zip": "92056",
+      "phone": "(760) 724-8411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OJAI": [
+    {
+      "name": "COMMUNITY MEMORIAL HOSPITAL - OJAI",
+      "address": "1306 MARICOPA HWY",
+      "city": "OJAI",
+      "state": "CA",
+      "zip": "93023",
+      "phone": "(805) 646-1401",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ORANGE": [
+    {
+      "name": "PROVIDENCE ST. JOSEPH HOSPITAL",
+      "address": "1100 WEST STEWART DR",
+      "city": "ORANGE",
+      "state": "CA",
+      "zip": "92868",
+      "phone": "(714) 633-9111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UCI HEALTH-ORANGE",
+      "address": "101 CITY DRIVE SOUTH",
+      "city": "ORANGE",
+      "state": "CA",
+      "zip": "92868",
+      "phone": "(714) 456-7890",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHAPMAN GLOBAL MEDICAL CENTER",
+      "address": "2601 E CHAPMAN AVE",
+      "city": "ORANGE",
+      "state": "CA",
+      "zip": "92869",
+      "phone": "(714) 633-0011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDREN'S HOSPITAL OF ORANGE COUNTY",
+      "address": "1201 W LA VETA AVE",
+      "city": "ORANGE",
+      "state": "CA",
+      "zip": "92868",
+      "phone": "(714) 997-3000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HEALTHBRIDGE CHILDREN'S HOSPITAL - ORANGE",
+      "address": "393 S TUSTIN STREET",
+      "city": "ORANGE",
+      "state": "CA",
+      "zip": "92866",
+      "phone": "(714) 289-2400",
+      "type": "Childrens",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OROVILLE": [
+    {
+      "name": "OROVILLE HOSPITAL",
+      "address": "2767 OLIVE HIGHWAY",
+      "city": "OROVILLE",
+      "state": "CA",
+      "zip": "95966",
+      "phone": "(530) 533-8500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OXNARD": [
+    {
+      "name": "ST JOHNS REGIONAL MEDICAL CENTER",
+      "address": "1600 N ROSE AVE",
+      "city": "OXNARD",
+      "state": "CA",
+      "zip": "93030",
+      "phone": "(805) 988-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PALM SPRINGS": [
+    {
+      "name": "DESERT REGIONAL MEDICAL CENTER",
+      "address": "1150 NORTH INDIAN CANYON DRIVE",
+      "city": "PALM SPRINGS",
+      "state": "CA",
+      "zip": "92262",
+      "phone": "(760) 323-6511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PALMDALE": [
+    {
+      "name": "PALMDALE REGIONAL MEDICAL CENTER",
+      "address": "38600 MEDICAL CENTER DRIVE",
+      "city": "PALMDALE",
+      "state": "CA",
+      "zip": "93552",
+      "phone": "(661) 382-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PALO ALTO": [
+    {
+      "name": "PALO ALTO VA MEDICAL CENTER",
+      "address": "3801 MIRANDA AVENUE",
+      "city": "PALO ALTO",
+      "state": "CA",
+      "zip": "94304",
+      "phone": "(650) 858-3939",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LUCILE SALTER PACKARD CHILDREN'S HSP AT STANFORD",
+      "address": "725 WELCH ROAD",
+      "city": "PALO ALTO",
+      "state": "CA",
+      "zip": "94304",
+      "phone": "(650) 497-8000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PANORAMA CITY": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - PANORAMA CITY",
+      "address": "13652 CANTARA ST",
+      "city": "PANORAMA CITY",
+      "state": "CA",
+      "zip": "91402",
+      "phone": "(818) 375-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MISSION COMMUNITY HOSPITAL",
+      "address": "14850 ROSCOE BLVD",
+      "city": "PANORAMA CITY",
+      "state": "CA",
+      "zip": "91402",
+      "phone": "(818) 904-3100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PASADENA": [
+    {
+      "name": "HUNTINGTON HOSPITAL",
+      "address": "100 W  CALIFORNIA BLVD",
+      "city": "PASADENA",
+      "state": "CA",
+      "zip": "91109",
+      "phone": "(626) 397-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AURORA LAS ENCINAS",
+      "address": "2900 E DEL MAR BLVD",
+      "city": "PASADENA",
+      "state": "CA",
+      "zip": "91107",
+      "phone": "(626) 795-9901",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PETALUMA": [
+    {
+      "name": "PETALUMA VALLEY HOSPITAL",
+      "address": "400 N MCDOWELL BLVD",
+      "city": "PETALUMA",
+      "state": "CA",
+      "zip": "94954",
+      "phone": "(707) 778-1111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLACENTIA": [
+    {
+      "name": "UCI HEALTH - PLACENTIA LINDA",
+      "address": "1301 N ROSE DRIVE",
+      "city": "PLACENTIA",
+      "state": "CA",
+      "zip": "92870",
+      "phone": "(714) 993-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLACERVILLE": [
+    {
+      "name": "MARSHALL MEDICAL CENTER",
+      "address": "1100 MARSHALL WAY",
+      "city": "PLACERVILLE",
+      "state": "CA",
+      "zip": "95667",
+      "phone": "(530) 622-1441",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLEASANTON": [
+    {
+      "name": "STANFORD HEALTH CARE TRI-VALLEY",
+      "address": "5555 WEST LAS POSITAS BOULEVARD",
+      "city": "PLEASANTON",
+      "state": "CA",
+      "zip": "94588",
+      "phone": "(925) 847-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POMONA": [
+    {
+      "name": "POMONA VALLEY HOSPITAL MEDICAL CENTER",
+      "address": "1798 N GAREY AVE",
+      "city": "POMONA",
+      "state": "CA",
+      "zip": "91767",
+      "phone": "(909) 865-9500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CASA COLINA HOSPITAL",
+      "address": "255 E BONITA AVE",
+      "city": "POMONA",
+      "state": "CA",
+      "zip": "91767",
+      "phone": "(909) 596-7733",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORTERVILLE": [
+    {
+      "name": "SIERRA VIEW MEDICAL CENTER",
+      "address": "465 W PUTNAM AVE",
+      "city": "PORTERVILLE",
+      "state": "CA",
+      "zip": "93257",
+      "phone": "(559) 784-1110",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PORTERVILLE DEVELOPMENTAL CENTER",
+      "address": "26501 AVENUE 140",
+      "city": "PORTERVILLE",
+      "state": "CA",
+      "zip": "93258",
+      "phone": "(559) 782-2222",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORTOLA": [
+    {
+      "name": "EASTERN PLUMAS HOSPITAL - PORTOLA CAMPUS",
+      "address": "500 FIRST AVENUE",
+      "city": "PORTOLA",
+      "state": "CA",
+      "zip": "96122",
+      "phone": "(530) 832-6500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POWAY": [
+    {
+      "name": "PALOMAR MEDICAL CENTER POWAY",
+      "address": "15615 POMERADO ROAD",
+      "city": "POWAY",
+      "state": "CA",
+      "zip": "92064",
+      "phone": "(858) 485-6511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "QUINCY": [
+    {
+      "name": "PLUMAS DISTRICT HOSPITAL",
+      "address": "1065 BUCKS LAKE ROAD",
+      "city": "QUINCY",
+      "state": "CA",
+      "zip": "95971",
+      "phone": "(530) 283-2121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RANCHO MIRAGE": [
+    {
+      "name": "EISENHOWER MEDICAL CENTER",
+      "address": "39-000 BOB HOPE DRIVE",
+      "city": "RANCHO MIRAGE",
+      "state": "CA",
+      "zip": "92270",
+      "phone": "(760) 340-3911",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RED BLUFF": [
+    {
+      "name": "ST ELIZABETH COMMUNITY HOSPITAL",
+      "address": "2550 SISTER MARY COLUMBA DRIVE",
+      "city": "RED BLUFF",
+      "state": "CA",
+      "zip": "96080",
+      "phone": "(530) 529-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REDDING": [
+    {
+      "name": "MERCY MEDICAL CENTER REDDING",
+      "address": "2175 ROSALINE AVE, CLAIRMONT HGTS",
+      "city": "REDDING",
+      "state": "CA",
+      "zip": "96001",
+      "phone": "(530) 225-6102",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PATIENTS' HOSPITAL OF REDDING",
+      "address": "2900 EUREKA WAY",
+      "city": "REDDING",
+      "state": "CA",
+      "zip": "96001",
+      "phone": "(530) 225-8700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHASTA REGIONAL MEDICAL CENTER",
+      "address": "1100 BUTTE ST",
+      "city": "REDDING",
+      "state": "CA",
+      "zip": "96001",
+      "phone": "(530) 244-5454",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REDLANDS": [
+    {
+      "name": "REDLANDS COMMUNITY HOSPITAL",
+      "address": "350 TERRACINA BLVD",
+      "city": "REDLANDS",
+      "state": "CA",
+      "zip": "92373",
+      "phone": "(909) 335-5500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REDWOOD CITY": [
+    {
+      "name": "SEQUOIA HOSPITAL",
+      "address": "170 ALAMEDA DE LAS PULGAS",
+      "city": "REDWOOD CITY",
+      "state": "CA",
+      "zip": "94062",
+      "phone": "(650) 369-5811",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - REDWOOD CITY",
+      "address": "1100 VETERANS BOULEVARD",
+      "city": "REDWOOD CITY",
+      "state": "CA",
+      "zip": "94063",
+      "phone": "(650) 299-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REEDLEY": [
+    {
+      "name": "ADVENTIST HEALTH REEDLEY",
+      "address": "372 W CYPRESS AVE",
+      "city": "REEDLEY",
+      "state": "CA",
+      "zip": "93654",
+      "phone": "(559) 638-8155",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RESEDA": [
+    {
+      "name": "JOYCE EISENBERG KEEFER MEDICAL CENTER",
+      "address": "7150 TAMPA AVENUE",
+      "city": "RESEDA",
+      "state": "CA",
+      "zip": "91335",
+      "phone": "(818) 774-3314",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RIDGECREST": [
+    {
+      "name": "RIDGECREST REGIONAL HOSPITAL",
+      "address": "1081 NORTH CHINA LAKE BLVD",
+      "city": "RIDGECREST",
+      "state": "CA",
+      "zip": "93555",
+      "phone": "(760) 446-3551",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RIVERSIDE": [
+    {
+      "name": "RIVERSIDE COMMUNITY HOSPITAL",
+      "address": "4445 MAGNOLIA AVENUE",
+      "city": "RIVERSIDE",
+      "state": "CA",
+      "zip": "92501",
+      "phone": "(951) 788-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PARKVIEW COMMUNITY HOSPITAL MEDICAL CENTER",
+      "address": "3865 JACKSON STREET",
+      "city": "RIVERSIDE",
+      "state": "CA",
+      "zip": "92503",
+      "phone": "(951) 688-2211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL, RIVERSIDE",
+      "address": "10800 MAGNOLIA AVENUE",
+      "city": "RIVERSIDE",
+      "state": "CA",
+      "zip": "92505",
+      "phone": "(951) 353-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PACIFIC GROVE HOSPITAL",
+      "address": "5900 BROCKTON AVE",
+      "city": "RIVERSIDE",
+      "state": "CA",
+      "zip": "92506",
+      "phone": "(951) 275-8400",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROSEMEAD": [
+    {
+      "name": "BHC ALHAMBRA HOSPITAL",
+      "address": "4619 N ROSEMEAD BLVD",
+      "city": "ROSEMEAD",
+      "state": "CA",
+      "zip": "91770",
+      "phone": "(626) 286-1191",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROSEVILLE": [
+    {
+      "name": "SUTTER ROSEVILLE MEDICAL CENTER",
+      "address": "ONE MEDICAL PLAZA",
+      "city": "ROSEVILLE",
+      "state": "CA",
+      "zip": "95661",
+      "phone": "(916) 781-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - ROSEVILLE",
+      "address": "1600 EUREKA ROAD",
+      "city": "ROSEVILLE",
+      "state": "CA",
+      "zip": "95661",
+      "phone": "(916) 784-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SACRAMENTO": [
+    {
+      "name": "MERCY GENERAL HOSPITAL",
+      "address": "4001 J ST",
+      "city": "SACRAMENTO",
+      "state": "CA",
+      "zip": "95819",
+      "phone": "(916) 453-4453",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUTTER MEDICAL CENTER, SACRAMENTO",
+      "address": "2825 CAPITOL AVENUE",
+      "city": "SACRAMENTO",
+      "state": "CA",
+      "zip": "95816",
+      "phone": "(916) 454-2222",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - SACRAMENTO",
+      "address": "2025 MORSE AVENUE",
+      "city": "SACRAMENTO",
+      "state": "CA",
+      "zip": "95825",
+      "phone": "(916) 973-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "METHODIST HOSPITAL OF SACRAMENTO",
+      "address": "7500 HOSPITAL DRIVE",
+      "city": "SACRAMENTO",
+      "state": "CA",
+      "zip": "95823",
+      "phone": "(916) 423-6010",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY OF CALIFORNIA DAVIS MEDICAL CENTER",
+      "address": "2315 STOCKTON BOULEVARD",
+      "city": "SACRAMENTO",
+      "state": "CA",
+      "zip": "95817",
+      "phone": "(916) 734-2011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSP SO SACRAMENTO",
+      "address": "6600 BRUCEVILLE ROAD",
+      "city": "SACRAMENTO",
+      "state": "CA",
+      "zip": "95823",
+      "phone": "(916) 688-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHRINERS HOSPITALS FOR CHILDREN NORTHERN CALIF",
+      "address": "2425 STOCKTON BOULEVARD",
+      "city": "SACRAMENTO",
+      "state": "CA",
+      "zip": "95817",
+      "phone": "(916) 453-2000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BHC SIERRA VISTA HOSPITAL, INC",
+      "address": "8001 BRUCEVILLE ROAD",
+      "city": "SACRAMENTO",
+      "state": "CA",
+      "zip": "95823",
+      "phone": "(916) 423-2000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUTTER CENTER FOR PSYCHIATRY",
+      "address": "7700 FOLSOM BLVD",
+      "city": "SACRAMENTO",
+      "state": "CA",
+      "zip": "95826",
+      "phone": "(916) 386-3000",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HERITAGE OAKS HOSPITAL",
+      "address": "4250 AUBURN BLVD",
+      "city": "SACRAMENTO",
+      "state": "CA",
+      "zip": "95841",
+      "phone": "(916) 489-3336",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT HELENA": [
+    {
+      "name": "ADVENTIST HEALTH ST HELENA",
+      "address": "10 WOODLAND ROAD",
+      "city": "SAINT HELENA",
+      "state": "CA",
+      "zip": "94574",
+      "phone": "(707) 963-3611",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALINAS": [
+    {
+      "name": "NATIVIDAD MEDICAL CENTER",
+      "address": "1441 CONSTITUTION BOULEVARD",
+      "city": "SALINAS",
+      "state": "CA",
+      "zip": "93906",
+      "phone": "(831) 755-4111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SALINAS VALLEY MEMORIAL HOSPITAL",
+      "address": "450 EAST ROMIE LANE",
+      "city": "SALINAS",
+      "state": "CA",
+      "zip": "93901",
+      "phone": "(831) 757-4333",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN ANDREAS": [
+    {
+      "name": "MARK TWAIN MEDICAL CENTER",
+      "address": "768 MOUNTAIN RANCH RD",
+      "city": "SAN ANDREAS",
+      "state": "CA",
+      "zip": "95249",
+      "phone": "(209) 754-3521",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN BERNARDINO": [
+    {
+      "name": "COMMUNITY HOSPITAL OF SAN BERNARDINO",
+      "address": "1805 MEDICAL CENTER DRIVE",
+      "city": "SAN BERNARDINO",
+      "state": "CA",
+      "zip": "92411",
+      "phone": "(909) 887-6333",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST BERNARDINE MEDICAL CENTER",
+      "address": "2101 N WATERMAN AVE",
+      "city": "SAN BERNARDINO",
+      "state": "CA",
+      "zip": "92404",
+      "phone": "(909) 883-8711",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN DIEGO": [
+    {
+      "name": "UC SAN DIEGO HEALTH HILLCREST - HILLCREST MED CTR",
+      "address": "200 WEST ARBOR DRIVE",
+      "city": "SAN DIEGO",
+      "state": "CA",
+      "zip": "92103",
+      "phone": "(619) 543-6222",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SCRIPPS MERCY HOSPITAL",
+      "address": "4077 5TH AVE",
+      "city": "SAN DIEGO",
+      "state": "CA",
+      "zip": "92103",
+      "phone": "(619) 294-8111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHARP MEMORIAL HOSPITAL",
+      "address": "7901 FROST ST",
+      "city": "SAN DIEGO",
+      "state": "CA",
+      "zip": "92123",
+      "phone": "(858) 939-3400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - SAN DIEGO",
+      "address": "4647 ZION AVE",
+      "city": "SAN DIEGO",
+      "state": "CA",
+      "zip": "92120",
+      "phone": "(619) 528-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA SAN DIEGO HEALTHCARE SYSTEM",
+      "address": "3350 LA JOLLA VILLAGE DRIVE",
+      "city": "SAN DIEGO",
+      "state": "CA",
+      "zip": "92161",
+      "phone": "(858) 552-8585",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RADY CHILDREN'S HOSPITAL - SAN DIEGO",
+      "address": "3020 CHILDRENS WAY",
+      "city": "SAN DIEGO",
+      "state": "CA",
+      "zip": "92123",
+      "phone": "(858) 576-1700",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AURORA SAN DIEGO",
+      "address": "11878 AVENUE OF INDUSTRY",
+      "city": "SAN DIEGO",
+      "state": "CA",
+      "zip": "92128",
+      "phone": "(858) 487-3200",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHARP MESA VISTA HOSPITAL",
+      "address": "7850 VISTA HILL AVENUE",
+      "city": "SAN DIEGO",
+      "state": "CA",
+      "zip": "92123",
+      "phone": "(858) 278-4110",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN DIMAS": [
+    {
+      "name": "SAN DIMAS COMMUNITY HOSPITAL",
+      "address": "1350 W COVINA BLVD",
+      "city": "SAN DIMAS",
+      "state": "CA",
+      "zip": "91773",
+      "phone": "(909) 599-6811",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN FRANCISCO": [
+    {
+      "name": "CALIFORNIA PACIFIC MEDICAL CTR-DAVIES CAMPUS HOSP",
+      "address": "601 DUBOCE AVENUE",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94117",
+      "phone": "(415) 600-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CALIFORNIA PACIFIC MEDICAL CENTER- VAN NESS CAMPUS",
+      "address": "1101 VAN NESS AVENUE",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94109",
+      "phone": "(415) 600-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CALIFORNIA PACIFIC MEDICAL CENTER - MISSION BERNAL",
+      "address": "3555 CESAR CHAVEZ",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94110",
+      "phone": "(415) 641-6562",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - SAN FRANCISCO",
+      "address": "2425 GEARY BLVD",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94115",
+      "phone": "(415) 833-2646",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT FRANCIS MEMORIAL HOSPITAL",
+      "address": "900 HYDE ST",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94109",
+      "phone": "(415) 353-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ZUCKERBERG SAN FRANCISCO GENERAL HOSP & TRAUMA CTR",
+      "address": "1001 POTRERO AVENUE",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94110",
+      "phone": "(415) 206-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHINESE HOSPITAL",
+      "address": "845 JACKSON ST",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94133",
+      "phone": "(415) 982-2400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UCSF MEDICAL CENTER",
+      "address": "505 PARNASSUS AVE, BOX 0296",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94143",
+      "phone": "(415) 353-2733",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST MARY'S MEDICAL CENTER",
+      "address": "450 STANYAN ST",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94117",
+      "phone": "(415) 668-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LAGUNA HONDA HOSPITAL & REHABILITATION CENTER",
+      "address": "375 LAGUNA HONDA BLVD",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94116",
+      "phone": "(415) 759-2300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAN FRANCISCO VA MEDICAL CENTER",
+      "address": "4150 CLEMENT STREET",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94121",
+      "phone": "(415) 221-4810",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "JEWISH HOME & REHAB CENTER",
+      "address": "302  SILVER AVENUE",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94112",
+      "phone": "(415) 334-2500",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UCSF LANGLEY PORTER PSYCHIATRIC HOSPITAL AND CLINICS",
+      "address": "401 PARNASSUS AVENUE",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94143",
+      "phone": "(415) 476-7000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN GABRIEL": [
+    {
+      "name": "SAN GABRIEL VALLEY MEDICAL CENTER",
+      "address": "438 W LAS TUNAS DRIVE",
+      "city": "SAN GABRIEL",
+      "state": "CA",
+      "zip": "91776",
+      "phone": "(626) 289-5454",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN JOSE": [
+    {
+      "name": "SANTA CLARA VALLEY MEDICAL CENTER",
+      "address": "751 SOUTH BASCOM AVENUE",
+      "city": "SAN JOSE",
+      "state": "CA",
+      "zip": "95128",
+      "phone": "(408) 885-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "REGIONAL MEDICAL CENTER OF SAN JOSE",
+      "address": "225 N JACKSON AVENUE",
+      "city": "SAN JOSE",
+      "state": "CA",
+      "zip": "95116",
+      "phone": "(408) 259-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GOOD SAMARITAN HOSPITAL",
+      "address": "2425 SAMARITAN DRIVE",
+      "city": "SAN JOSE",
+      "state": "CA",
+      "zip": "95124",
+      "phone": "(408) 559-2011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL-SAN JOSE",
+      "address": "250 HOSPITAL PARKWAY",
+      "city": "SAN JOSE",
+      "state": "CA",
+      "zip": "95119",
+      "phone": "(408) 972-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAN JOSE BEHAVIORAL HEALTH",
+      "address": "455 SILICON VALLEY BOULEVARD",
+      "city": "SAN JOSE",
+      "state": "CA",
+      "zip": "95138",
+      "phone": "(669) 234-5959",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN LEANDRO": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - SAN LEANDRO",
+      "address": "2500 MERCED STREET",
+      "city": "SAN LEANDRO",
+      "state": "CA",
+      "zip": "94577",
+      "phone": "(510) 454-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WILLOW ROCK CENTER",
+      "address": "2050 FAIRMONT DRIVE",
+      "city": "SAN LEANDRO",
+      "state": "CA",
+      "zip": "94578",
+      "phone": "(510) 895-5502",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN LUIS OBISPO": [
+    {
+      "name": "FRENCH HOSPITAL MEDICAL CENTER",
+      "address": "1911 JOHNSON AVE",
+      "city": "SAN LUIS OBISPO",
+      "state": "CA",
+      "zip": "93401",
+      "phone": "(805) 543-5353",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTIST HEALTH SIERRA VISTA",
+      "address": "1010 MURRAY ST",
+      "city": "SAN LUIS OBISPO",
+      "state": "CA",
+      "zip": "93405",
+      "phone": "(850) 546-7600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN MARCOS": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - SAN MARCOS",
+      "address": "360 RUSH DR",
+      "city": "SAN MARCOS",
+      "state": "CA",
+      "zip": "92078",
+      "phone": "(760) 528-6295",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN MATEO": [
+    {
+      "name": "SAN MATEO MEDICAL CENTER",
+      "address": "222 W 39TH AVE",
+      "city": "SAN MATEO",
+      "state": "CA",
+      "zip": "94403",
+      "phone": "(650) 573-2222",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN PEDRO": [
+    {
+      "name": "PROVIDENCE LITTLE CO OF MARY MED CTR SAN PEDRO",
+      "address": "1300 W 7TH ST",
+      "city": "SAN PEDRO",
+      "state": "CA",
+      "zip": "90732",
+      "phone": "(310) 832-3311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN RAFAEL": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL",
+      "address": "99 MONTECILLO RD",
+      "city": "SAN RAFAEL",
+      "state": "CA",
+      "zip": "94903",
+      "phone": "(415) 444-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAN RAMON": [
+    {
+      "name": "SAN RAMON REGIONAL MEDICAL CENTER",
+      "address": "6001 NORRIS CANYON ROAD",
+      "city": "SAN RAMON",
+      "state": "CA",
+      "zip": "94583",
+      "phone": "(925) 275-9200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANTA ANA": [
+    {
+      "name": "ORANGE COUNTY GLOBAL MEDICAL CENTER",
+      "address": "1001 NORTH TUSTIN AVENUE",
+      "city": "SANTA ANA",
+      "state": "CA",
+      "zip": "92705",
+      "phone": "(714) 953-3500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COASTAL COMMUNITIES HOSPITAL",
+      "address": "2701 S BRISTOL ST",
+      "city": "SANTA ANA",
+      "state": "CA",
+      "zip": "92704",
+      "phone": "(714) 754-5454",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANTA BARBARA": [
+    {
+      "name": "GOLETA VALLEY COTTAGE HOSPITAL",
+      "address": "351 S PATTERSON AVE",
+      "city": "SANTA BARBARA",
+      "state": "CA",
+      "zip": "93111",
+      "phone": "(805) 967-3411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SANTA BARBARA COTTAGE HOSPITAL",
+      "address": "400 WEST PUEBLO",
+      "city": "SANTA BARBARA",
+      "state": "CA",
+      "zip": "93105",
+      "phone": "(805) 682-7111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SANTA BARBARA COUNTY PSYCHIATRIC HEALTH FACILITY",
+      "address": "315 CAMINO DEL REMEDIO",
+      "city": "SANTA BARBARA",
+      "state": "CA",
+      "zip": "93110",
+      "phone": "(805) 681-5244",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANTA CLARA": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL-SANTA CLARA",
+      "address": "700 LAWRENCE EXPRESSWAY",
+      "city": "SANTA CLARA",
+      "state": "CA",
+      "zip": "95051",
+      "phone": "(408) 236-6400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER PERMANENTE PSYCHIATRIC HEALTH FACILITY-SANT",
+      "address": "3840 HOMESTEAD ROAD",
+      "city": "SANTA CLARA",
+      "state": "CA",
+      "zip": "95051",
+      "phone": "(408) 851-4850",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANTA CRUZ": [
+    {
+      "name": "DOMINICAN HOSPITAL",
+      "address": "1555 SOQUEL DRIVE",
+      "city": "SANTA CRUZ",
+      "state": "CA",
+      "zip": "95065",
+      "phone": "(831) 462-7700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUTTER MATERNITY & SURGERY CENTER OF SANTA CRUZ",
+      "address": "2900 CHANTICLEER AVENUE",
+      "city": "SANTA CRUZ",
+      "state": "CA",
+      "zip": "95065",
+      "phone": "(831) 477-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SANTA CRUZ COUNTY PSYCHIATRIC HEALTH FACILITY",
+      "address": "2250 SOQUEL AVENUE, SUITE 150",
+      "city": "SANTA CRUZ",
+      "state": "CA",
+      "zip": "95062",
+      "phone": "(831) 600-2801",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANTA MARIA": [
+    {
+      "name": "MARIAN REGIONAL MEDICAL CENTER",
+      "address": "1400 E CHURCH ST",
+      "city": "SANTA MARIA",
+      "state": "CA",
+      "zip": "93454",
+      "phone": "(805) 739-3100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANTA MONICA": [
+    {
+      "name": "SANTA MONICA - UCLA MED CTR & ORTHOPAEDIC HOSPITAL",
+      "address": "1250 16TH STREET",
+      "city": "SANTA MONICA",
+      "state": "CA",
+      "zip": "90404",
+      "phone": "(310) 319-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT JOHN'S HEALTH CENTER",
+      "address": "2121 SANTA MONICA BLVD",
+      "city": "SANTA MONICA",
+      "state": "CA",
+      "zip": "90404",
+      "phone": "(310) 829-5511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SANTA ROSA": [
+    {
+      "name": "PROVIDENCE SANTA ROSA MEMORIAL HOSPITAL",
+      "address": "1165 MONTGOMERY DR",
+      "city": "SANTA ROSA",
+      "state": "CA",
+      "zip": "95405",
+      "phone": "(707) 525-5300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUTTER SANTA ROSA REGIONAL HOSPITAL",
+      "address": "30 MARK WEST SPRINGS ROAD",
+      "city": "SANTA ROSA",
+      "state": "CA",
+      "zip": "95403",
+      "phone": "(707) 576-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL-SANTA ROSA",
+      "address": "401 BICENTENNIAL WAY",
+      "city": "SANTA ROSA",
+      "state": "CA",
+      "zip": "95403",
+      "phone": "(707) 571-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AURORA BEHAVIORAL HEALTHCARE-SANTA ROSA, LLC",
+      "address": "1287 FULTON ROAD",
+      "city": "SANTA ROSA",
+      "state": "CA",
+      "zip": "95401",
+      "phone": "(707) 800-7700",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHERMAN OAKS": [
+    {
+      "name": "SHERMAN OAKS HOSPITAL",
+      "address": "4929 VAN NUYS BLVD",
+      "city": "SHERMAN OAKS",
+      "state": "CA",
+      "zip": "91403",
+      "phone": "(818) 981-7111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SIMI VALLEY": [
+    {
+      "name": "ADVENTIST HEALTH SIMI VALLEY",
+      "address": "2975 N SYCAMORE DR",
+      "city": "SIMI VALLEY",
+      "state": "CA",
+      "zip": "93065",
+      "phone": "(805) 955-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOLVANG": [
+    {
+      "name": "SANTA YNEZ VALLEY COTTAGE HOSPITAL",
+      "address": "2050 VIBORG RD",
+      "city": "SOLVANG",
+      "state": "CA",
+      "zip": "93463",
+      "phone": "(805) 688-6431",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SONOMA": [
+    {
+      "name": "SONOMA VALLEY HOSPITAL",
+      "address": "347 ANDRIEUX ST",
+      "city": "SONOMA",
+      "state": "CA",
+      "zip": "95476",
+      "phone": "(707) 935-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SONORA": [
+    {
+      "name": "ADVENTIST HEALTH SONORA",
+      "address": "1000 GREENLEY ROAD",
+      "city": "SONORA",
+      "state": "CA",
+      "zip": "95370",
+      "phone": "(209) 536-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTH EL MONTE": [
+    {
+      "name": "GREATER EL MONTE COMMUNITY HOSPITAL",
+      "address": "1701 SANTA ANITA AVE",
+      "city": "SOUTH EL MONTE",
+      "state": "CA",
+      "zip": "91733",
+      "phone": "(626) 350-7975",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTH LAKE TAHOE": [
+    {
+      "name": "BARTON MEMORIAL HOSPITAL",
+      "address": "2170 SOUTH AVENUE",
+      "city": "SOUTH LAKE TAHOE",
+      "state": "CA",
+      "zip": "96150",
+      "phone": "(530) 541-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOUTH SAN FRANCISCO": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - SOUTH SAN FRANCISCO",
+      "address": "1200 EL CAMINO REAL",
+      "city": "SOUTH SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94080",
+      "phone": "(650) 742-3200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STANFORD": [
+    {
+      "name": "STANFORD HEALTH CARE",
+      "address": "300 PASTEUR DRIVE",
+      "city": "STANFORD",
+      "state": "CA",
+      "zip": "94305",
+      "phone": "(650) 723-5708",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STOCKTON": [
+    {
+      "name": "ST JOSEPH'S MEDICAL CENTER OF STOCKTON",
+      "address": "1800 N CALIFORNIA ST",
+      "city": "STOCKTON",
+      "state": "CA",
+      "zip": "95204",
+      "phone": "(209) 943-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DAMERON HOSPITAL",
+      "address": "525 WEST ACACIA STREET",
+      "city": "STOCKTON",
+      "state": "CA",
+      "zip": "95203",
+      "phone": "(209) 944-5550",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST JOSEPH'S BEHAVIORAL HEALTH CENTER",
+      "address": "2510 N  CALIFORNIA ST",
+      "city": "STOCKTON",
+      "state": "CA",
+      "zip": "95204",
+      "phone": "(209) 461-2000",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUN CITY": [
+    {
+      "name": "MENIFEE GLOBAL MEDICAL CENTER",
+      "address": "28400 MCCALL BOULEVARD",
+      "city": "SUN CITY",
+      "state": "CA",
+      "zip": "92585",
+      "phone": "(951) 679-8888",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUN VALLEY": [
+    {
+      "name": "PACIFICA HOSPITAL OF THE VALLEY",
+      "address": "9449 SAN FERNANDO RD",
+      "city": "SUN VALLEY",
+      "state": "CA",
+      "zip": "91352",
+      "phone": "(818) 767-3310",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUSANVILLE": [
+    {
+      "name": "BANNER LASSEN MEDICAL CENTER",
+      "address": "1800 SPRING RIDGE DRIVE",
+      "city": "SUSANVILLE",
+      "state": "CA",
+      "zip": "96130",
+      "phone": "(530) 252-2000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SYLMAR": [
+    {
+      "name": "LAC/OLIVE VIEW-UCLA MEDICAL CENTER",
+      "address": "14445 OLIVE VIEW DRIVE",
+      "city": "SYLMAR",
+      "state": "CA",
+      "zip": "91342",
+      "phone": "(818) 364-1555",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "San Diego": [
+    {
+      "name": "NMC San Diego",
+      "address": "34800 Bob Wilson Dr",
+      "city": "San Diego",
+      "state": "CA",
+      "zip": "92134",
+      "phone": "(619) 532-6400",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TARZANA": [
+    {
+      "name": "PROVIDENCE CEDARS SINAI TARZANA MEDICAL CENTER",
+      "address": "18321 CLARK STREET",
+      "city": "TARZANA",
+      "state": "CA",
+      "zip": "91356",
+      "phone": "(818) 881-0800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TARZANA TREATMENT CENTER",
+      "address": "18646 OXNARD STREET",
+      "city": "TARZANA",
+      "state": "CA",
+      "zip": "91356",
+      "phone": "(818) 996-1051",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TEHACHAPI": [
+    {
+      "name": "ADVENTIST HEALTH TEHACHAPI VALLEY",
+      "address": "1100 MAGELLAN",
+      "city": "TEHACHAPI",
+      "state": "CA",
+      "zip": "93561",
+      "phone": "(661) 868-6800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TEMECULA": [
+    {
+      "name": "TEMECULA VALLEY HOSPITAL",
+      "address": "31700 TEMECULA PKWY",
+      "city": "TEMECULA",
+      "state": "CA",
+      "zip": "92592",
+      "phone": "(951) 331-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TEMPLETON": [
+    {
+      "name": "ADVENTIST HEALTH TWIN CITIES",
+      "address": "1100 LAS TABLAS RD",
+      "city": "TEMPLETON",
+      "state": "CA",
+      "zip": "93465",
+      "phone": "(805) 434-3500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "THOUSAND OAKS": [
+    {
+      "name": "LOS ROBLES HOSPITAL & MEDICAL CENTER",
+      "address": "215 W JANSS RD",
+      "city": "THOUSAND OAKS",
+      "state": "CA",
+      "zip": "91360",
+      "phone": "(805) 497-2727",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TORRANCE": [
+    {
+      "name": "TORRANCE MEMORIAL MEDICAL CENTER",
+      "address": "3330 LOMITA BLVD",
+      "city": "TORRANCE",
+      "state": "CA",
+      "zip": "90509",
+      "phone": "(310) 325-9110",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PROVIDENCE LITTLE COMPANY OF MARY MED CTR TORRANCE",
+      "address": "4101 TORRANCE BLVD",
+      "city": "TORRANCE",
+      "state": "CA",
+      "zip": "90503",
+      "phone": "(310) 540-7676",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LAC/HARBOR-UCLA MED CENTER",
+      "address": "1000 W CARSON ST",
+      "city": "TORRANCE",
+      "state": "CA",
+      "zip": "90509",
+      "phone": "(310) 222-2345",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DEL AMO HOSPITAL",
+      "address": "23700 CAMINO DEL SOL",
+      "city": "TORRANCE",
+      "state": "CA",
+      "zip": "90505",
+      "phone": "(310) 530-1151",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TRACY": [
+    {
+      "name": "SUTTER TRACY COMMUNITY HOSPITAL",
+      "address": "1420 NORTH TRACY BLVD",
+      "city": "TRACY",
+      "state": "CA",
+      "zip": "95376",
+      "phone": "(209) 835-1500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TRUCKEE": [
+    {
+      "name": "TAHOE FOREST HOSPITAL",
+      "address": "10121 PINE AVE",
+      "city": "TRUCKEE",
+      "state": "CA",
+      "zip": "96161",
+      "phone": "(530) 587-6011",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TULARE": [
+    {
+      "name": "ADVENTIST HEALTH TULARE",
+      "address": "869 NORTH CHERRY STREET",
+      "city": "TULARE",
+      "state": "CA",
+      "zip": "93274",
+      "phone": "(559) 688-0821",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TURLOCK": [
+    {
+      "name": "EMANUEL MEDICAL CENTER",
+      "address": "825 DELBON AVE",
+      "city": "TURLOCK",
+      "state": "CA",
+      "zip": "95382",
+      "phone": "(209) 667-4200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TUSTIN": [
+    {
+      "name": "FOOTHILL REGIONAL MEDICAL CENTER",
+      "address": "14662 NEWPORT AVE",
+      "city": "TUSTIN",
+      "state": "CA",
+      "zip": "92780",
+      "phone": "(714) 619-7700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Travis AFB": [
+    {
+      "name": "60th Medical Group (Travis AFB)",
+      "address": "101 Bodin Cir Bldg 777",
+      "city": "Travis AFB",
+      "state": "CA",
+      "zip": "94535",
+      "phone": "(707) 423-7300",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Twentynine Palms": [
+    {
+      "name": "NH Twentynine Palms",
+      "address": "1145 Sturgis Rd",
+      "city": "Twentynine Palms",
+      "state": "CA",
+      "zip": "92278",
+      "phone": "(760) 830-2190",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "UKIAH": [
+    {
+      "name": "ADVENTIST HEALTH UKIAH VALLEY",
+      "address": "275 HOSPITAL DRIVE",
+      "city": "UKIAH",
+      "state": "CA",
+      "zip": "95482",
+      "phone": "(707) 462-3111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "UPLAND": [
+    {
+      "name": "SAN ANTONIO REGIONAL HOSPITAL",
+      "address": "999 SAN BERNARDINO ROAD",
+      "city": "UPLAND",
+      "state": "CA",
+      "zip": "91786",
+      "phone": "(909) 985-2811",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VACAVILLE": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - VACAVILLE",
+      "address": "1 QUALITY DRIVE",
+      "city": "VACAVILLE",
+      "state": "CA",
+      "zip": "95688",
+      "phone": "(707) 624-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VALENCIA": [
+    {
+      "name": "HENRY MAYO NEWHALL  HOSPITAL",
+      "address": "23845  MCBEAN PKWY",
+      "city": "VALENCIA",
+      "state": "CA",
+      "zip": "91355",
+      "phone": "(661) 253-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VALLEJO": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL AND REHAB CENTER",
+      "address": "975 SERENO DR",
+      "city": "VALLEJO",
+      "state": "CA",
+      "zip": "94589",
+      "phone": "(707) 651-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUTTER SOLANO MEDICAL CENTER",
+      "address": "300 HOSPITAL DR",
+      "city": "VALLEJO",
+      "state": "CA",
+      "zip": "94589",
+      "phone": "(707) 554-5280",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ADVENTIST HEALTH VALLEJO",
+      "address": "525 OREGON ST",
+      "city": "VALLEJO",
+      "state": "CA",
+      "zip": "94590",
+      "phone": "(707) 648-2200",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VAN NUYS": [
+    {
+      "name": "VALLEY PRESBYTERIAN HOSPITAL",
+      "address": "15107 VANOWEN ST",
+      "city": "VAN NUYS",
+      "state": "CA",
+      "zip": "91405",
+      "phone": "(818) 782-6600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VENTURA": [
+    {
+      "name": "VENTURA COUNTY MEDICAL CENTER",
+      "address": "300 HILLMONT AVENUE",
+      "city": "VENTURA",
+      "state": "CA",
+      "zip": "93003",
+      "phone": "(805) 652-6075",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMMUNITY MEMORIAL HOSPITAL - VENTURA",
+      "address": "147 NORTH BRENT STREET",
+      "city": "VENTURA",
+      "state": "CA",
+      "zip": "93003",
+      "phone": "(805) 652-5011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AURORA VISTA DEL MAR HOSPITAL",
+      "address": "801 SENECA ST",
+      "city": "VENTURA",
+      "state": "CA",
+      "zip": "93001",
+      "phone": "(805) 653-6434",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VICTORVILLE": [
+    {
+      "name": "VICTOR VALLEY GLOBAL MEDICAL CENTER",
+      "address": "15248 11TH ST",
+      "city": "VICTORVILLE",
+      "state": "CA",
+      "zip": "92395",
+      "phone": "(760) 245-8691",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DESERT VALLEY HOSPITAL",
+      "address": "16850 BEAR VALLEY RD",
+      "city": "VICTORVILLE",
+      "state": "CA",
+      "zip": "92395",
+      "phone": "(760) 241-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VISALIA": [
+    {
+      "name": "KAWEAH HEALTH MEDICAL CENTER",
+      "address": "400 W MINERAL KING AVE",
+      "city": "VISALIA",
+      "state": "CA",
+      "zip": "93291",
+      "phone": "(559) 624-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WALNUT CREEK": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - WALNUT CREEK",
+      "address": "1425 S MAIN STREET",
+      "city": "WALNUT CREEK",
+      "state": "CA",
+      "zip": "94596",
+      "phone": "(925) 295-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "JOHN MUIR MEDICAL CENTER - WALNUT CREEK CAMPUS",
+      "address": "1601 YGNACIO VALLEY RD",
+      "city": "WALNUT CREEK",
+      "state": "CA",
+      "zip": "94598",
+      "phone": "(925) 939-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WATSONVILLE": [
+    {
+      "name": "WATSONVILLE COMMUNITY HOSPITAL",
+      "address": "75 NIELSON STREET",
+      "city": "WATSONVILLE",
+      "state": "CA",
+      "zip": "95076",
+      "phone": "(831) 724-4741",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEAVERVILLE": [
+    {
+      "name": "TRINITY HOSPITAL",
+      "address": "60 EASTER AVENUE",
+      "city": "WEAVERVILLE",
+      "state": "CA",
+      "zip": "96093",
+      "phone": "(530) 623-5541",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST HILLS": [
+    {
+      "name": "UCLA WEST VALLEY MEDICAL CENTER",
+      "address": "7300 MEDICAL CENTER DR",
+      "city": "WEST HILLS",
+      "state": "CA",
+      "zip": "91307",
+      "phone": "(818) 676-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHITTIER": [
+    {
+      "name": "PIH HEALTH HOSPITAL-WHITTIER",
+      "address": "12401 WASHINGTON BLVD",
+      "city": "WHITTIER",
+      "state": "CA",
+      "zip": "90602",
+      "phone": "(562) 698-0811",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WHITTIER HOSPITAL MEDICAL CENTER",
+      "address": "9080 COLIMA RD",
+      "city": "WHITTIER",
+      "state": "CA",
+      "zip": "90605",
+      "phone": "(562) 945-3561",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILLITS": [
+    {
+      "name": "ADVENTIST HEALTH HOWARD MEMORIAL",
+      "address": "1 MARCELA DR",
+      "city": "WILLITS",
+      "state": "CA",
+      "zip": "95490",
+      "phone": "(707) 456-3031",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILLOWS": [
+    {
+      "name": "GLENN MEDICAL CENTER",
+      "address": "1133 W SYCAMORE ST",
+      "city": "WILLOWS",
+      "state": "CA",
+      "zip": "95988",
+      "phone": "(530) 934-1818",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOODLAND": [
+    {
+      "name": "WOODLAND MEMORIAL HOSPITAL",
+      "address": "1325 COTTONWOOD STREET",
+      "city": "WOODLAND",
+      "state": "CA",
+      "zip": "95695",
+      "phone": "(530) 662-3961",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOODLAND HILLS": [
+    {
+      "name": "KAISER FOUNDATION HOSPITAL - WOODLAND HILLS",
+      "address": "5601 DE SOTO AVENUE",
+      "city": "WOODLAND HILLS",
+      "state": "CA",
+      "zip": "91367",
+      "phone": "(818) 719-3800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YREKA": [
+    {
+      "name": "FAIRCHILD MEDICAL CENTER",
+      "address": "444 BRUCE STREET",
+      "city": "YREKA",
+      "state": "CA",
+      "zip": "96097",
+      "phone": "(530) 842-4121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YUBA CITY": [
+    {
+      "name": "SUTTER SURGICAL HOSPITAL - NORTH VALLEY",
+      "address": "455 PLUMAS BLVD",
+      "city": "YUBA CITY",
+      "state": "CA",
+      "zip": "95991",
+      "phone": "(530) 749-5700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

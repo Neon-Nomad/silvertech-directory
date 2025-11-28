@@ -1,0 +1,1412 @@
+{
+  "ALAMOSA": [
+    {
+      "name": "SAN LUIS VALLEY REGIONAL  MEDICAL CENTER",
+      "address": "106 BLANCA AVE",
+      "city": "ALAMOSA",
+      "state": "CO",
+      "zip": "81101",
+      "phone": "(719) 587-1202",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ASPEN": [
+    {
+      "name": "ASPEN VALLEY HOSPITAL",
+      "address": "401 CASTLE CREEK RD",
+      "city": "ASPEN",
+      "state": "CO",
+      "zip": "81611",
+      "phone": "(970) 544-1261",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AURORA": [
+    {
+      "name": "UNIVERSITY OF COLORADO HOSPITAL AUTHORITY",
+      "address": "12605 E 16TH AVE",
+      "city": "AURORA",
+      "state": "CO",
+      "zip": "80045",
+      "phone": "(720) 848-0000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA EASTERN COLORADO HEALTHCARE SYSTEM",
+      "address": "1700 NORTH WHEELING STREET",
+      "city": "AURORA",
+      "state": "CO",
+      "zip": "80045",
+      "phone": "(303) 399-8020",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE MEDICAL CENTER OF AURORA & SOUTH HOSPITAL",
+      "address": "1501 S POTOMAC ST",
+      "city": "AURORA",
+      "state": "CO",
+      "zip": "80012",
+      "phone": "(303) 873-5511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDREN'S HOSPITAL COLORADO",
+      "address": "13123 E 16TH AVE",
+      "city": "AURORA",
+      "state": "CO",
+      "zip": "80045",
+      "phone": "(720) 777-1234",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOULDER": [
+    {
+      "name": "BOULDER COMMUNITY HEALTH",
+      "address": "4747 ARAPAHOE AVENUE",
+      "city": "BOULDER",
+      "state": "CO",
+      "zip": "80304",
+      "phone": "(303) 440-2273",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRIGHTON": [
+    {
+      "name": "INTERMOUNTAIN HEALTH PLATTE VALLEY HOSPITAL",
+      "address": "1600 PRAIRIE CENTER PKWY",
+      "city": "BRIGHTON",
+      "state": "CO",
+      "zip": "80601",
+      "phone": "(303) 498-1600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BROOMFIELD": [
+    {
+      "name": "UCHEALTH BROOMFIELD HOSPITAL",
+      "address": "11820 DESTINATION DR",
+      "city": "BROOMFIELD",
+      "state": "CO",
+      "zip": "80021",
+      "phone": "(303) 464-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRUSH": [
+    {
+      "name": "EAST MORGAN COUNTY HOSPITAL",
+      "address": "2400 W EDISON ST",
+      "city": "BRUSH",
+      "state": "CO",
+      "zip": "80723",
+      "phone": "(970) 842-6222",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURLINGTON": [
+    {
+      "name": "KIT CARSON COUNTY MEMORIAL HOSPITAL",
+      "address": "286 16TH ST",
+      "city": "BURLINGTON",
+      "state": "CO",
+      "zip": "80807",
+      "phone": "(719) 346-4824",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CANON CITY": [
+    {
+      "name": "ST THOMAS MORE HOSPITAL",
+      "address": "1338 PHAY AVE",
+      "city": "CANON CITY",
+      "state": "CO",
+      "zip": "81212",
+      "phone": "(719) 285-2000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CASTLE ROCK": [
+    {
+      "name": "ADVENTHEALTH CASTLE ROCK",
+      "address": "2350 MEADOWS BLVD",
+      "city": "CASTLE ROCK",
+      "state": "CO",
+      "zip": "80109",
+      "phone": "(720) 455-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHEYENNE WELLS": [
+    {
+      "name": "KEEFE MEMORIAL HOSPITAL",
+      "address": "602 N 6TH ST W",
+      "city": "CHEYENNE WELLS",
+      "state": "CO",
+      "zip": "80810",
+      "phone": "(719) 767-5661",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLORADO SPRINGS": [
+    {
+      "name": "UCH-MEMORIAL HEALTH SYSTEM",
+      "address": "1400 E BOULDER ST",
+      "city": "COLORADO SPRINGS",
+      "state": "CO",
+      "zip": "80909",
+      "phone": "(719) 365-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTURA HEALTH-PENROSE ST FRANCIS HEALTH SERVICES",
+      "address": "2222 N NEVADA AVE",
+      "city": "COLORADO SPRINGS",
+      "state": "CO",
+      "zip": "80907",
+      "phone": "(719) 776-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UCHEALTH GRANDVIEW HOSPITAL",
+      "address": "5623 PULPIT PEAK VW",
+      "city": "COLORADO SPRINGS",
+      "state": "CO",
+      "zip": "80918",
+      "phone": "(719) 365-3300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST FRANCIS HOSPITAL - INTERQUEST",
+      "address": "10860 NEW ALLEGIANCE DR",
+      "city": "COLORADO SPRINGS",
+      "state": "CO",
+      "zip": "80921",
+      "phone": "(719) 757-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDREN'S HOSPITAL COLORADO - COLORADO SPRINGS",
+      "address": "4090 BRIARGATE PKWY",
+      "city": "COLORADO SPRINGS",
+      "state": "CO",
+      "zip": "80920",
+      "phone": "(719) 305-9590",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CEDAR SPRINGS HOSPITAL",
+      "address": "2135 SOUTHGATE RD",
+      "city": "COLORADO SPRINGS",
+      "state": "CO",
+      "zip": "80906",
+      "phone": "(719) 633-4114",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PEAK VIEW BEHAVIORAL HEALTH",
+      "address": "7353 SISTERS GRV",
+      "city": "COLORADO SPRINGS",
+      "state": "CO",
+      "zip": "80923",
+      "phone": "(719) 444-8484",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CORTEZ": [
+    {
+      "name": "SOUTHWEST MEMORIAL HOSPITAL",
+      "address": "1311 N MILDRED RD",
+      "city": "CORTEZ",
+      "state": "CO",
+      "zip": "81321",
+      "phone": "(970) 565-6666",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CRAIG": [
+    {
+      "name": "MEMORIAL HOSPITAL, THE",
+      "address": "750 HOSPITAL LOOP",
+      "city": "CRAIG",
+      "state": "CO",
+      "zip": "81625",
+      "phone": "(970) 824-9411",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DEL NORTE": [
+    {
+      "name": "RIO GRANDE HOSPITAL",
+      "address": "310 COUNTY RD 14",
+      "city": "DEL NORTE",
+      "state": "CO",
+      "zip": "81132",
+      "phone": "(719) 657-2510",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DELTA": [
+    {
+      "name": "DELTA COUNTY MEMORIAL HOSPITAL",
+      "address": "1501 E 3RD ST",
+      "city": "DELTA",
+      "state": "CO",
+      "zip": "81416",
+      "phone": "(970) 874-7681",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DENVER": [
+    {
+      "name": "DENVER HEALTH & HOSPITAL AUTHORITY",
+      "address": "777 BANNOCK ST",
+      "city": "DENVER",
+      "state": "CO",
+      "zip": "80204",
+      "phone": "(303) 436-4927",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA HEALTHONE PRESBYTERIAN ST LUKES",
+      "address": "1719 E 19TH AVE",
+      "city": "DENVER",
+      "state": "CO",
+      "zip": "80218",
+      "phone": "(303) 839-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT JOSEPH HOSPITAL",
+      "address": "1375 E 19TH AVE",
+      "city": "DENVER",
+      "state": "CO",
+      "zip": "80218",
+      "phone": "(303) 812-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HCA HEALTHONE ROSE",
+      "address": "4567 E 9TH AVE",
+      "city": "DENVER",
+      "state": "CO",
+      "zip": "80220",
+      "phone": "(303) 320-2121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTURA HEALTH-PORTER ADVENTIST HOSPITAL",
+      "address": "2525 S DOWNING ST",
+      "city": "DENVER",
+      "state": "CO",
+      "zip": "80210",
+      "phone": "(303) 778-1955",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NATIONAL JEWISH HEALTH",
+      "address": "1400 JACKSON ST",
+      "city": "DENVER",
+      "state": "CO",
+      "zip": "80206",
+      "phone": "(303) 388-4461",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COLORADO MENTAL HEALTH HOSPITAL IN FORT LOGAN",
+      "address": "3520 W OXFORD AVE",
+      "city": "DENVER",
+      "state": "CO",
+      "zip": "80236",
+      "phone": "(303) 866-7080",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DURANGO": [
+    {
+      "name": "MERCY REGIONAL MEDICAL CENTER",
+      "address": "1010 THREE SPRINGS BLVD",
+      "city": "DURANGO",
+      "state": "CO",
+      "zip": "81301",
+      "phone": "(970) 247-4311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ANIMAS SURGICAL HOSPITAL, LLC",
+      "address": "575 RIVERGATE LN, UNIT 100",
+      "city": "DURANGO",
+      "state": "CO",
+      "zip": "81301",
+      "phone": "(970) 247-3537",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EADS": [
+    {
+      "name": "WEISBROD MEMORIAL COUNTY HOSPITAL",
+      "address": "1208 LUTHER ST",
+      "city": "EADS",
+      "state": "CO",
+      "zip": "81036",
+      "phone": "(719) 438-5401",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ENGLEWOOD": [
+    {
+      "name": "HCA-HEALTHONE DBA SWEDISH MEDICAL CENTER",
+      "address": "501 E HAMPDEN AVE",
+      "city": "ENGLEWOOD",
+      "state": "CO",
+      "zip": "80113",
+      "phone": "(303) 788-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "DENVER SPRINGS",
+      "address": "8835 AMERICAN WY",
+      "city": "ENGLEWOOD",
+      "state": "CO",
+      "zip": "80112",
+      "phone": "(720) 643-4300",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ESTES PARK": [
+    {
+      "name": "ESTES PARK MEDICAL CENTER",
+      "address": "555 PROSPECT AVE",
+      "city": "ESTES PARK",
+      "state": "CO",
+      "zip": "80517",
+      "phone": "(970) 577-4470",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT COLLINS": [
+    {
+      "name": "POUDRE VALLEY HOSPITAL",
+      "address": "1024 S LEMAY AVE",
+      "city": "FORT COLLINS",
+      "state": "CO",
+      "zip": "80524",
+      "phone": "(970) 495-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BANNER FORT COLLINS MEDICAL CENTER",
+      "address": "4700 LADY MOON DR",
+      "city": "FORT COLLINS",
+      "state": "CO",
+      "zip": "80528",
+      "phone": "(970) 821-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT MORGAN": [
+    {
+      "name": "ST ELIZABETH HOSPITAL",
+      "address": "1000 LINCOLN ST",
+      "city": "FORT MORGAN",
+      "state": "CO",
+      "zip": "80701",
+      "phone": "(970) 867-3391",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRISCO": [
+    {
+      "name": "ST ANTHONY SUMMIT MEDICAL CENTER",
+      "address": "340 PEAK ONE DRIVE",
+      "city": "FRISCO",
+      "state": "CO",
+      "zip": "80443",
+      "phone": "(970) 668-3300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRUITA": [
+    {
+      "name": "FAMILY HEALTH WEST HOSPITAL",
+      "address": "300 W OTTLEY AVE",
+      "city": "FRUITA",
+      "state": "CO",
+      "zip": "81521",
+      "phone": "(970) 858-9871",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Fort Carson": [
+    {
+      "name": "Evans ACH (FT Carson)",
+      "address": "Fort Carson MEDDAC 1650 Cochrane Cir",
+      "city": "Fort Carson",
+      "state": "CO",
+      "zip": "80913",
+      "phone": "(719) 526-7000",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLENWOOD SPRINGS": [
+    {
+      "name": "VALLEY VIEW HOSPITAL ASSOCIATION",
+      "address": "1906 BLAKE AVE",
+      "city": "GLENWOOD SPRINGS",
+      "state": "CO",
+      "zip": "81601",
+      "phone": "(970) 945-6535",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAND JUNCTION": [
+    {
+      "name": "INTERMOUNTAIN HEALTH ST. MARY'S REGIONAL HOSPITAL",
+      "address": "2635 N 7TH ST",
+      "city": "GRAND JUNCTION",
+      "state": "CO",
+      "zip": "81501",
+      "phone": "(970) 298-2260",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COMMUNITY HOSPITAL",
+      "address": "2351 'G' RD",
+      "city": "GRAND JUNCTION",
+      "state": "CO",
+      "zip": "81505",
+      "phone": "(970) 644-3011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GRAND JUNCTION VA MEDICAL CENTER",
+      "address": "2121 N. AVENUE",
+      "city": "GRAND JUNCTION",
+      "state": "CO",
+      "zip": "81501",
+      "phone": "(970) 244-1329",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WEST SPRINGS HOSPITAL, INC",
+      "address": "515 28 3/4 RD",
+      "city": "GRAND JUNCTION",
+      "state": "CO",
+      "zip": "81501",
+      "phone": "(970) 683-7085",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREELEY": [
+    {
+      "name": "BANNER NORTH COLORADO MEDICAL CENTER",
+      "address": "1801 16TH ST",
+      "city": "GREELEY",
+      "state": "CO",
+      "zip": "80631",
+      "phone": "(970) 810-4121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UCHEALTH GREELEY HOSPITAL",
+      "address": "6767 W 29TH ST",
+      "city": "GREELEY",
+      "state": "CO",
+      "zip": "80634",
+      "phone": "(970) 652-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GUNNISON": [
+    {
+      "name": "GUNNISON VALLEY HOSPITAL",
+      "address": "711 N TAYLOR ST",
+      "city": "GUNNISON",
+      "state": "CO",
+      "zip": "81230",
+      "phone": "(970) 641-1456",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAXTUN": [
+    {
+      "name": "HAXTUN HOSPITAL DISTRICT",
+      "address": "235 W FLETCHER ST",
+      "city": "HAXTUN",
+      "state": "CO",
+      "zip": "80731",
+      "phone": "(970) 774-6123",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HIGHLANDS RANCH": [
+    {
+      "name": "UCHEALTH HIGHLANDS RANCH HOSPITAL",
+      "address": "1500 PARK CENTRAL DR",
+      "city": "HIGHLANDS RANCH",
+      "state": "CO",
+      "zip": "80129",
+      "phone": "(720) 516-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOLYOKE": [
+    {
+      "name": "MELISSA MEMORIAL HOSPITAL",
+      "address": "1001 E JOHNSON ST",
+      "city": "HOLYOKE",
+      "state": "CO",
+      "zip": "80734",
+      "phone": "(970) 854-2241",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUGO": [
+    {
+      "name": "LINCOLN HEALTH HOSPITAL",
+      "address": "111 6TH ST",
+      "city": "HUGO",
+      "state": "CO",
+      "zip": "80821",
+      "phone": "(719) 743-2421",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JOHNSTOWN": [
+    {
+      "name": "JOHNSTOWN HEIGHTS BEHAVIORAL HEALTH",
+      "address": "4770 LARIMER PKWY",
+      "city": "JOHNSTOWN",
+      "state": "CO",
+      "zip": "80534",
+      "phone": "(970) 323-7709",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JULESBURG": [
+    {
+      "name": "SEDGWICK COUNTY MEMORIAL HOSPITAL",
+      "address": "900 CEDAR ST",
+      "city": "JULESBURG",
+      "state": "CO",
+      "zip": "80737",
+      "phone": "(970) 474-3323",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KREMMLING": [
+    {
+      "name": "MIDDLE PARK MEDICAL CENTER",
+      "address": "214 S 4TH ST",
+      "city": "KREMMLING",
+      "state": "CO",
+      "zip": "80459",
+      "phone": "(970) 724-3442",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LA JARA": [
+    {
+      "name": "SAN LUIS VALLEY HEALTH CONEJOS COUNTY HOSPITAL",
+      "address": "19021 US HIGHWAY 285",
+      "city": "LA JARA",
+      "state": "CO",
+      "zip": "81140",
+      "phone": "(719) 274-5121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAFAYETTE": [
+    {
+      "name": "GOOD SAMARITAN MEDICAL CENTER LLC",
+      "address": "200 EXEMPLA CIR",
+      "city": "LAFAYETTE",
+      "state": "CO",
+      "zip": "80026",
+      "phone": "(303) 689-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAJUNA": [
+    {
+      "name": "ARKANSAS VALLEY REGIONAL MEDICAL CENTER",
+      "address": "1100 CARSON AVENUE",
+      "city": "LAJUNA",
+      "state": "CO",
+      "zip": "81050",
+      "phone": "(719) 363-1428",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKEWOOD": [
+    {
+      "name": "CENTURA HEALTH-ST ANTHONY HOSPITAL",
+      "address": "11600 W 2ND PL",
+      "city": "LAKEWOOD",
+      "state": "CO",
+      "zip": "80228",
+      "phone": "(720) 321-0000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ORTHOCOLORADO HOSP AT ST ANTHONY MED CAMPUS",
+      "address": "11650 W 2ND PL",
+      "city": "LAKEWOOD",
+      "state": "CO",
+      "zip": "80228",
+      "phone": "(720) 321-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAMAR": [
+    {
+      "name": "PROWERS MEDICAL CENTER",
+      "address": "401 KENDALL DR",
+      "city": "LAMAR",
+      "state": "CO",
+      "zip": "81052",
+      "phone": "(719) 336-4343",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LEADVILLE": [
+    {
+      "name": "ST VINCENT GENERAL HOSPITAL DISTRICT",
+      "address": "816 W 4TH ST",
+      "city": "LEADVILLE",
+      "state": "CO",
+      "zip": "80461",
+      "phone": "(719) 486-0230",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LITTLETON": [
+    {
+      "name": "LITTLETON ADVENTIST HOSPITAL, CENTURA HEALTH",
+      "address": "7700 S BROADWAY",
+      "city": "LITTLETON",
+      "state": "CO",
+      "zip": "80122",
+      "phone": "(303) 730-8900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HIGHLANDS BEHAVIORAL HEALTH SYSTEM",
+      "address": "8565 S POPLAR WY",
+      "city": "LITTLETON",
+      "state": "CO",
+      "zip": "80130",
+      "phone": "(720) 348-2801",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LONE TREE": [
+    {
+      "name": "SKY RIDGE MEDICAL CENTER",
+      "address": "10101 RIDGEGATE PKWY",
+      "city": "LONE TREE",
+      "state": "CO",
+      "zip": "80124",
+      "phone": "(720) 225-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LONGMONT": [
+    {
+      "name": "LONGMONT UNITED HOSPITAL",
+      "address": "1950 MOUNTAIN VIEW AVE",
+      "city": "LONGMONT",
+      "state": "CO",
+      "zip": "80501",
+      "phone": "(303) 651-5111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LONGS PEAK HOSPITAL",
+      "address": "1750 E KEN PRATT BLVD",
+      "city": "LONGMONT",
+      "state": "CO",
+      "zip": "80504",
+      "phone": "(720) 718-3005",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOUISVILLE": [
+    {
+      "name": "CENTURA HEALTH-AVISTA ADVENTIST HOSPITAL",
+      "address": "100 HEALTH PARK DR",
+      "city": "LOUISVILLE",
+      "state": "CO",
+      "zip": "80027",
+      "phone": "(303) 673-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CENTENNIAL PEAKS HOSPITAL",
+      "address": "2255 S 88TH ST",
+      "city": "LOUISVILLE",
+      "state": "CO",
+      "zip": "80027",
+      "phone": "(303) 673-9990",
+      "type": "Psychiatric",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LOVELAND": [
+    {
+      "name": "BANNER MCKEE MEDICAL CENTER",
+      "address": "2000 BOISE AVE",
+      "city": "LOVELAND",
+      "state": "CO",
+      "zip": "80538",
+      "phone": "(970) 820-4640",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MEDICAL CENTER OF THE ROCKIES",
+      "address": "2500 ROCKY MOUNTAIN AVE",
+      "city": "LOVELAND",
+      "state": "CO",
+      "zip": "80538",
+      "phone": "(970) 624-2500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MEEKER": [
+    {
+      "name": "EASTERN RIO BLANCO COUNTY HEALTH SERVICE DISTRICT",
+      "address": "100 PIONEERS MEDICAL CENTER DR",
+      "city": "MEEKER",
+      "state": "CO",
+      "zip": "81641",
+      "phone": "(970) 878-5047",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTROSE": [
+    {
+      "name": "MONTROSE REGIONAL HEALTH",
+      "address": "800 S 3RD ST",
+      "city": "MONTROSE",
+      "state": "CO",
+      "zip": "81401",
+      "phone": "(970) 249-2211",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAGOSA SPRINGS": [
+    {
+      "name": "PAGOSA SPRINGS MEDICAL CENTER",
+      "address": "95 S PAGOSA BLVD",
+      "city": "PAGOSA SPRINGS",
+      "state": "CO",
+      "zip": "81147",
+      "phone": "(970) 731-3700",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARKER": [
+    {
+      "name": "PARKER ADVENTIST HOSPITAL",
+      "address": "9395 CROWN CREST BLVD",
+      "city": "PARKER",
+      "state": "CO",
+      "zip": "80138",
+      "phone": "(303) 269-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PUEBLO": [
+    {
+      "name": "ST MARY CORWIN MED CTR, CENTURA HEALTH",
+      "address": "1008 MINNEQUA AVE",
+      "city": "PUEBLO",
+      "state": "CO",
+      "zip": "81004",
+      "phone": "(719) 557-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PARKVIEW MEDICAL CENTER, INC",
+      "address": "400 W 16TH ST",
+      "city": "PUEBLO",
+      "state": "CO",
+      "zip": "81003",
+      "phone": "(719) 584-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "COLORADO MENTAL HEALTH HOSPITAL IN PUEBLO",
+      "address": "1600 W 24TH ST",
+      "city": "PUEBLO",
+      "state": "CO",
+      "zip": "81003",
+      "phone": "(719) 546-4747",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RANGELY": [
+    {
+      "name": "RANGELY DISTRICT HOSPITAL",
+      "address": "225 EAGLE CREST ST",
+      "city": "RANGELY",
+      "state": "CO",
+      "zip": "81648",
+      "phone": "(970) 675-5011",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RIFLE": [
+    {
+      "name": "GRAND RIVER HOSPITAL DISTRICT",
+      "address": "501 AIRPORT RD",
+      "city": "RIFLE",
+      "state": "CO",
+      "zip": "81650",
+      "phone": "(970) 625-1510",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALIDA": [
+    {
+      "name": "HEART OF THE ROCKIES REGIONAL MEDICAL CENTER",
+      "address": "1000 RUSH DR",
+      "city": "SALIDA",
+      "state": "CO",
+      "zip": "81201",
+      "phone": "(719) 530-2200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPRINGFIELD": [
+    {
+      "name": "SOUTHEAST COLORADO HOSPITAL DISTRICT",
+      "address": "373 E TENTH AVE",
+      "city": "SPRINGFIELD",
+      "state": "CO",
+      "zip": "81073",
+      "phone": "(719) 523-4501",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STEAMBOAT SPRINGS": [
+    {
+      "name": "UCHEALTH YAMPA VALLEY MEDICAL CENTER",
+      "address": "1024 CENTRAL PARK DR",
+      "city": "STEAMBOAT SPRINGS",
+      "state": "CO",
+      "zip": "80487",
+      "phone": "(970) 879-1322",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STERLING": [
+    {
+      "name": "STERLING REGIONAL MEDCENTER",
+      "address": "615 FAIRHURST ST",
+      "city": "STERLING",
+      "state": "CO",
+      "zip": "80751",
+      "phone": "(970) 522-0122",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "THORNTON": [
+    {
+      "name": "HCA HEALTHONE MOUNTAIN RIDGE",
+      "address": "9191 GRANT ST",
+      "city": "THORNTON",
+      "state": "CO",
+      "zip": "80229",
+      "phone": "(303) 451-7800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TRINIDAD": [
+    {
+      "name": "MT SAN RAFAEL HOSPITAL",
+      "address": "410 BENEDICTA AVE",
+      "city": "TRINIDAD",
+      "state": "CO",
+      "zip": "81082",
+      "phone": "(719) 846-9213",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VAIL": [
+    {
+      "name": "VAIL HEALTH HOSPITAL",
+      "address": "181 W MEADOW DR",
+      "city": "VAIL",
+      "state": "CO",
+      "zip": "81657",
+      "phone": "(970) 476-2451",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WALSENBURG": [
+    {
+      "name": "SPANISH PEAKS REGIONAL HEALTH CENTER",
+      "address": "23500 US HIGHWAY 160",
+      "city": "WALSENBURG",
+      "state": "CO",
+      "zip": "81089",
+      "phone": "(719) 738-5100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTMINSTER": [
+    {
+      "name": "CENTURA HEALTH-ST ANTHONY NORTH HEALTH CAMPUS",
+      "address": "14300 ORCHARD PKWY",
+      "city": "WESTMINSTER",
+      "state": "CO",
+      "zip": "80023",
+      "phone": "(720) 627-0000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WEST PINES BEHAVIORAL HOSPITAL",
+      "address": "11455 HURON ST",
+      "city": "WESTMINSTER",
+      "state": "CO",
+      "zip": "80234",
+      "phone": "(615) 861-6000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHEAT RIDGE": [
+    {
+      "name": "LUTHERAN MEDICAL CENTER",
+      "address": "8300 W 38TH AVE",
+      "city": "WHEAT RIDGE",
+      "state": "CO",
+      "zip": "80033",
+      "phone": "(303) 425-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOODLAND PARK": [
+    {
+      "name": "UCHEALTH PIKES PEAK REGIONAL HOSPITAL",
+      "address": "16420 W US HIGHWAY 24",
+      "city": "WOODLAND PARK",
+      "state": "CO",
+      "zip": "80863",
+      "phone": "(719) 374-6060",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WRAY": [
+    {
+      "name": "WRAY COMMUNITY DISTRICT HOSPITAL",
+      "address": "1017 W 7TH ST",
+      "city": "WRAY",
+      "state": "CO",
+      "zip": "80758",
+      "phone": "(970) 332-4811",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "YUMA": [
+    {
+      "name": "YUMA DISTRICT HOSPITAL",
+      "address": "1000 W 8TH AVE",
+      "city": "YUMA",
+      "state": "CO",
+      "zip": "80759",
+      "phone": "(970) 848-5405",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

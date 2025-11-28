@@ -11,6 +11,8 @@ import { cityContent } from '@/src/data/city_content';
 import { generateCityContent } from '@/src/utils/contentGenerator';
 import { BestFacilitiesList } from '@/features/locations/BestFacilitiesList';
 import { AddToCompareButton } from '@/components/ui/AddToCompareButton';
+import { HospitalList } from '@/features/locations/HospitalList';
+import { getHospitalsByCity, Hospital } from '@/src/utils/hospitalData';
 
 
 // ... (existing imports)
@@ -29,6 +31,7 @@ export const CityPageTemplate: React.FC = () => {
   const { state: stateSlug, city: citySlug } = useParams<{ state: string; city: string }>();
   
   const [facilities, setFacilities] = useState<any[]>([]);
+  const [hospitals, setHospitals] = useState<Hospital[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -62,6 +65,10 @@ export const CityPageTemplate: React.FC = () => {
         if (error) throw error;
 
         setFacilities(data || []);
+
+        // 2. Get hospitals for the city
+        const cityHospitals = await getHospitalsByCity(targetState, targetCity);
+        setHospitals(cityHospitals);
       } catch (err) {
         console.error('Error fetching city facilities:', err);
         setError('Failed to load facilities.');
@@ -252,6 +259,9 @@ export const CityPageTemplate: React.FC = () => {
           {/* Sidebar */}
           <div className="space-y-8">
             
+            {/* Hospital List */}
+            <HospitalList hospitals={hospitals} cityName={cityName} />
+
             {/* Quick Links */}
             <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-6">
               <h3 className="font-bold text-slate-900 mb-4">Resources</h3>

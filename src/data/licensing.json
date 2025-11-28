@@ -1,0 +1,359 @@
+[
+  {
+    "state": "Alabama",
+    "agency_name": "Alabama Department of Public Health, Bureau of Health Provider Standards",
+    "website_url": "https://www.alabamapublichealth.gov/providerstandards/index.html",
+    "phone": "866-873-0366",
+    "complaint_intake_url": "https://www.alabamapublichealth.gov/providerstandards/complaints.html"
+  },
+  {
+    "state": "Alaska",
+    "agency_name": "State of Alaska Department of Health - Residential Licensing Unit",
+    "website_url": "https://health.alaska.gov/en/services/assisted-living-licensing-and-renewals/",
+    "phone": "907-269-3640",
+    "complaint_intake_url": "https://health.alaska.gov/en/services/centralized-reporting/"
+  },
+  {
+    "state": "Arizona",
+    "agency_name": "Arizona Department of Health Services \u2013 Bureau of Assisted Living Facilities Licensing",
+    "website_url": "https://www.azdhs.gov/licensing/residential-facilities/index.php",
+    "phone": "602-542-1025",
+    "complaint_intake_url": "https://azcarecheck.azdhs.gov/s/complaints"
+  },
+  {
+    "state": "Arkansas",
+    "agency_name": "Arkansas Department of Human Services - Office of Long Term Care",
+    "website_url": "https://humanservices.arkansas.gov/divisions-shared-services/provider-services-quality-assurance/office-of-long-term-care/",
+    "phone": "501-682-8431",
+    "complaint_intake_url": "https://healthy.arkansas.gov/programs-services/licensing-military-member-licensure-permits-plan-reviews/health-facility-services/health-facility-services/"
+  },
+  {
+    "state": "California",
+    "agency_name": "California Department of Social Services \u2013 Community Care Licensing Division",
+    "website_url": "https://www.cdss.ca.gov/inforesources/senior-care-licensing",
+    "phone": "916-657-2592",
+    "complaint_intake_url": "https://complaints.ccld.dss.ca.gov/"
+  },
+  {
+    "state": "Colorado",
+    "agency_name": "Colorado Department of Public Health and Environment",
+    "website_url": "https://cdphe.colorado.gov/assisted-living-residences",
+    "phone": "303-691-4045",
+    "complaint_intake_url": "https://cdphe.colorado.gov/health-facilities/health-facilities-complaints"
+  },
+  {
+    "state": "Connecticut",
+    "agency_name": "Connecticut Department of Public Health \u2013 Facility Licensing and Investigations Section",
+    "website_url": "https://portal.ct.gov/dph/facility-licensing--investigations/facility-licensing--investigations-section-flis/facility-licensing",
+    "phone": "860-509-7400",
+    "complaint_intake_url": "https://dphflisevents.ct.gov/Complaints"
+  },
+  {
+    "state": "Delaware",
+    "agency_name": "Delaware Department of Health and Social Services \u2013 Division of Health Care Quality",
+    "website_url": "https://dhss.delaware.gov/dhcq/",
+    "phone": "302-421-7400",
+    "complaint_intake_url": "https://dhss.delaware.gov/dhcq/reportabuse/"
+  },
+  {
+    "state": "District of Columbia",
+    "agency_name": "DC Health - Health Regulation Administration - Community Residence Facilities Branch, Child and Residential Care Facilities Division",
+    "website_url": "https://dchealth.dc.gov/service/assisted-living-residences",
+    "phone": "877-672-2174",
+    "complaint_intake_url": "https://dchealth.dc.gov/page/doh-complaint-incident-report-form-please-allow-moment-webpage-load"
+  },
+  {
+    "state": "Florida",
+    "agency_name": "Florida Agency for Health Care Administration \u2013 Bureau of Health Facility Regulation, Assisted Living Unit",
+    "website_url": "https://quality.healthfinder.fl.gov/compare-tools/ALF",
+    "phone": "850-412-4304",
+    "complaint_intake_url": "https://quality.healthfinder.fl.gov/compare-tools/ALF"
+  },
+  {
+    "state": "Georgia",
+    "agency_name": "Georgia Department of Community Health \u2013 Healthcare Facility Regulation Division",
+    "website_url": "https://dch.georgia.gov/divisionsoffices/hfrd",
+    "phone": "404-657-5726",
+    "complaint_intake_url": "https://dch.georgia.gov/divisionsoffices/facility-licensure/hfrd-file-complaint"
+  },
+  {
+    "state": "Hawaii",
+    "agency_name": "Hawaii Department of Health, Office of Health Care Assurance, State Licensing Section",
+    "website_url": "https://health.hawaii.gov/ohca/",
+    "phone": "808-692-7400",
+    "complaint_intake_url": "https://health.hawaii.gov/ohca/files/2017/06/Complaint-Intake-Form-62017.pdf"
+  },
+  {
+    "state": "Idaho",
+    "agency_name": "Idaho Department of Health and Welfare - Residential Assisted Living Facilities Program",
+    "website_url": "https://healthandwelfare.idaho.gov/providers/residential-assisted-living/licensing",
+    "phone": "208-364-1962",
+    "complaint_intake_url": "https://publicdocuments.dhw.idaho.gov/WebLink/DocView.aspx?id=16221&dbid=0&repo=PUBLIC-DOCUMENTS"
+  },
+  {
+    "state": "Illinois",
+    "agency_name": "Illinois Department of Public Health \u2013 Division of Assisted Living",
+    "website_url": "https://dph.illinois.gov/topics-services/health-care-regulation/assisted-living.html",
+    "phone": "217-782-2448",
+    "complaint_intake_url": "https://llcs.dph.illinois.gov/s/file-a-complaint?language=en_US"
+  },
+  {
+    "state": "Indiana",
+    "agency_name": "Indiana Department of Health, Division of Long-Term Care",
+    "website_url": "https://www.in.gov/health/ltc/",
+    "phone": "317-233-1325",
+    "complaint_intake_url": "https://redcap.isdh.in.gov/surveys/?s=DCXFFLMPPE"
+  },
+  {
+    "state": "Iowa",
+    "agency_name": "Iowa Department of Inspections, Appeals, & Licensing",
+    "website_url": "https://dial.iowa.gov/licenses/health/facilities",
+    "phone": "515-381-7989",
+    "complaint_intake_url": "https://dial.iowa.gov/i-need/complaints"
+  },
+  {
+    "state": "Kansas",
+    "agency_name": "Kansas Department for Aging and Disability Services - Survey Certification and Credentialing Commission",
+    "website_url": "https://www.kdads.ks.gov/licensing-policy/adult-care-home-licensure-and-certification-information",
+    "phone": "800-842-0078",
+    "complaint_intake_url": "https://www.kdads.ks.gov/media-center/hotlines"
+  },
+  {
+    "state": "Kentucky",
+    "agency_name": "Kentucky Cabinet for Health and Family Services \u2013 Office of the Inspector General \u2013 Division of Health Care",
+    "website_url": "https://chfs.ky.gov/agencies/os/oig/dhc/Pages/ltc.aspx",
+    "phone": "502-564-7963",
+    "complaint_intake_url": "https://chfs.ky.gov/agencies/os/oig/dhc/Pages/default.aspx"
+  },
+  {
+    "state": "Louisiana",
+    "agency_name": "Louisiana Department of Health \u2013 Health Standards Section",
+    "website_url": "https://ldh.la.gov/health-standards-section/hss-adult-residential-care-provider-arcp",
+    "phone": "225-342-0138",
+    "complaint_intake_url": "https://ldh.la.gov/health-standards-section/complaints"
+  },
+  {
+    "state": "Maine",
+    "agency_name": "Maine Department of Health and Human Services - Division of Licensing and Certification",
+    "website_url": "https://www.maine.gov/dhhs/dlc/licensing-certification/assisted-housing",
+    "phone": "800-383-2441",
+    "complaint_intake_url": "https://www.maine.gov/dhhs/dlc/safety-reporting/file-a-complaint"
+  },
+  {
+    "state": "Maryland",
+    "agency_name": "Maryland Department of Health \u2013 Office of Health Care Quality",
+    "website_url": "https://health.maryland.gov/ohcq/Pages/Assisted-Living-Programs.aspx",
+    "phone": "410-402-8217",
+    "complaint_intake_url": "https://health.maryland.gov/ohcq/Pages/File-a-Complaint.aspx"
+  },
+  {
+    "state": "Massachusetts",
+    "agency_name": "Executive Office of Aging & Independence",
+    "website_url": "https://www.mass.gov/assisted-living-residences",
+    "phone": "617-727-7750",
+    "complaint_intake_url": "https://www.mass.gov/how-to/file-a-massachusetts-assisted-living-residence-alr-complaint-form"
+  },
+  {
+    "state": "Michigan",
+    "agency_name": "Michigan Department of Licensing and Regulatory Affairs \u2013 Bureau of Community and Health Systems",
+    "website_url": "https://www.michigan.gov/lara/bureau-list/bchs/adult",
+    "phone": "866-856-0126",
+    "complaint_intake_url": "https://www.michigan.gov/lara/bureau-list/bchs/adult/complaint"
+  },
+  {
+    "state": "Minnesota",
+    "agency_name": "Minnesota Department of Health \u2013 Health Regulation Division \u2013 Assisted Living Licensure",
+    "website_url": "https://www.health.mn.gov/facilities/regulation/assistedliving/index.html",
+    "phone": "651-201-4200",
+    "complaint_intake_url": "https://www.health.mn.gov/facilities/regulation/assistedliving/index.html"
+  },
+  {
+    "state": "Mississippi",
+    "agency_name": "Mississippi State Department of Health \u2013 Division of Health Facilities Licensure and Certification",
+    "website_url": "https://msdh.ms.gov/page/30,0,83.html",
+    "phone": "800-227-7308",
+    "complaint_intake_url": "https://msdh.ms.gov/page/30,0,83,787.html"
+  },
+  {
+    "state": "Missouri",
+    "agency_name": "Missouri Department of Health and Senior Services \u2013 Section for Long-Term Care Regulation",
+    "website_url": "https://health.mo.gov/seniors/nursinghomes/licensecert.php",
+    "phone": "573-526-8524",
+    "complaint_intake_url": "https://moapss.health.mo.gov/"
+  },
+  {
+    "state": "Montana",
+    "agency_name": "Montana Department of Public Health and Human Services - Quality Assurance Division - Licensure Bureau",
+    "website_url": "https://dphhs.mt.gov/qad/Licensure/HealthCareFacilityLicensure/lbfacilityapplications/ALF",
+    "phone": "406-444-2099",
+    "complaint_intake_url": "https://dphhs.mt.gov/qad/certificationcomplaintform"
+  },
+  {
+    "state": "Nebraska",
+    "agency_name": "Nebraska Department of Health and Human Services \u2013 Licensure Unit",
+    "website_url": "https://dhhs.ne.gov/licensure/Pages/Assisted-Living-Facilities.aspx",
+    "phone": "402-471-3324",
+    "complaint_intake_url": "https://dhhs.ne.gov/Pages/Facilities-Complaints.aspx"
+  },
+  {
+    "state": "Nevada",
+    "agency_name": "Nevada Department of Health and Human Services \u2013 Bureau of Health Care Quality and Compliance",
+    "website_url": "https://www.dpbh.nv.gov/regulatory/hcqc/health-facility-licensing-and-information/non-medical-facilities/residential-facility-for-groups-adult-group-care-assisted-living/",
+    "phone": "775-684-1030",
+    "complaint_intake_url": "https://www.dpbh.nv.gov/regulatory/hcqc/health-facility-licensing-and-information/health-facilities-complaints/"
+  },
+  {
+    "state": "New Hampshire",
+    "agency_name": "New Hampshire Department of Health and Human Services - Health Facility Licensing Unit",
+    "website_url": "https://www.dhhs.nh.gov/doing-business-dhhs/licensing-certification/health-facilities-administration",
+    "phone": "603-271-9039",
+    "complaint_intake_url": "https://www.dhhs.nh.gov/file-complaint-against-health-facility-nh"
+  },
+  {
+    "state": "New Jersey",
+    "agency_name": "New Jersey Department of Health \u2013 Division of Health Facilities Evaluation and Licensing",
+    "website_url": "https://www.nj.gov/health/healthfacilities/",
+    "phone": "800-792-9770",
+    "complaint_intake_url": "https://web.doh.nj.gov/fc/search.aspx"
+  },
+  {
+    "state": "New Mexico",
+    "agency_name": "New Mexico Health Care Authority \u2013 Division of Health Improvement",
+    "website_url": "https://www.hca.nm.gov/health-facility-licensing-and-certification/",
+    "phone": "800-752-8649",
+    "complaint_intake_url": "https://www.hca.nm.gov/nm-consumer-complaint-form/"
+  },
+  {
+    "state": "New York",
+    "agency_name": "New York State Department of Health",
+    "website_url": "https://www.health.ny.gov/facilities/adult_care/",
+    "phone": "1-866-893-6772",
+    "complaint_intake_url": "https://apps.health.ny.gov/pubpal/builder/survey/adult-care-facility-and-assisted"
+  },
+  {
+    "state": "North Carolina",
+    "agency_name": "North Carolina Division of Health Service Regulation \u2013 Adult Care Licensure Section",
+    "website_url": "https://info.ncdhhs.gov/dhsr/acls/index.html",
+    "phone": "919-855-4500",
+    "complaint_intake_url": "https://info.ncdhhs.gov/dhsr/ciu/filecomplaint.html"
+  },
+  {
+    "state": "North Dakota",
+    "agency_name": "North Dakota Department of Health and Human Services - Health Response and Licensure, Health Facilities Unit",
+    "website_url": "https://www.hhs.nd.gov/adults-and-aging/assisted-living",
+    "phone": "701-328-2352",
+    "complaint_intake_url": "https://www.hhs.nd.gov/health/regulation-licensure-and-certification/health-facilities-unit/health-facility-concerns"
+  },
+  {
+    "state": "Ohio",
+    "agency_name": "Ohio Department of Health \u2013 Bureau of Regulatory Operations, Residential Care Facilities/Assisted Living",
+    "website_url": "https://odh.ohio.gov/know-our-programs/residential-care-facilities-assisted-living",
+    "phone": "614-466-7713",
+    "complaint_intake_url": "https://complainttracking.odh.ohio.gov/publiccomplaint/publiccomplaintform"
+  },
+  {
+    "state": "Oklahoma",
+    "agency_name": "Oklahoma State Department of Health \u2013 Long Term Care Service",
+    "website_url": "https://oklahoma.gov/health/services/licensing-inspections/long-term-care-service.html",
+    "phone": "405-426-8200",
+    "complaint_intake_url": "https://oklahoma.gov/content/dam/ok/en/health/health2/aem-documents/protective-health/long-term-care-services/forms/LTC_Complaint_Form.pdf"
+  },
+  {
+    "state": "Oregon",
+    "agency_name": "Oregon Department of Human Services",
+    "website_url": "https://www.oregon.gov/odhs/licensing/community-based-care/pages/licensing.aspx",
+    "phone": "503-373-2227",
+    "complaint_intake_url": "https://www.oregon.gov/odhs/aging-disability-services/Pages/long-term-care-quality.aspx"
+  },
+  {
+    "state": "Pennsylvania",
+    "agency_name": "Pennsylvania Department of Human Services \u2013 Office of Long-Term Living\u2019s Bureau of Human Services Licensing",
+    "website_url": "https://www.pa.gov/agencies/dhs/resources/licensing/pch-alr-licensing",
+    "phone": "717-783-3670",
+    "complaint_intake_url": "https://forms.dhs.pa.gov/dhs-bhsl-complaint/"
+  },
+  {
+    "state": "Rhode Island",
+    "agency_name": "Rhode Island Department of Health - Center for Health Facility Regulations",
+    "website_url": "https://health.ri.gov/licensing/assisted-living",
+    "phone": "401-222-5960",
+    "complaint_intake_url": "https://health.ri.gov/licensing/submit-complaint"
+  },
+  {
+    "state": "South Carolina",
+    "agency_name": "South Carolina Department of Public Health",
+    "website_url": "https://dph.sc.gov/professionals/healthcare-quality/healthcare-facility-licensing/community-residential-care",
+    "phone": "803-545-4370",
+    "complaint_intake_url": "https://dph.sc.gov/professionals/healthcare-quality/file-complaint"
+  },
+  {
+    "state": "South Dakota",
+    "agency_name": "South Dakota Department of Health \u2013 Office of Health Care Facilities Licensure & Certification",
+    "website_url": "https://doh.sd.gov/healthcare-professionals/health-facility-licensure/facility-types/assisted-living-centers/",
+    "phone": "605-773-3356",
+    "complaint_intake_url": "https://doh.sd.gov/healthcare-professionals/health-facility-licensure/health-facility-complaints/"
+  },
+  {
+    "state": "Tennessee",
+    "agency_name": "Tennessee Health Facilities Commission - Division of Licensure and Regulation",
+    "website_url": "https://www.tn.gov/hfc/division-of-licensure-and-regulation.html",
+    "phone": "877-287-0010",
+    "complaint_intake_url": "https://tennesseehfc.govqa.us/WEBAPP/_rs/(S(ga2jd0lupb5l0xl00mngfdyq))/supporthome.aspx"
+  },
+  {
+    "state": "Texas",
+    "agency_name": "Texas Health and Human Services Commission",
+    "website_url": "https://www.hhs.texas.gov/providers/long-term-care-providers/assisted-living-facilities-alf",
+    "phone": "800-458-9858",
+    "complaint_intake_url": "https://www.hhs.texas.gov/contact/complaints-appeals/complaint-incident-intake"
+  },
+  {
+    "state": "Utah",
+    "agency_name": "Utah Department of Health and Human Services - Division of Licensing and Background Checks",
+    "website_url": "https://dlbc.utah.gov/home/office-of-licensing/health-facilities/",
+    "phone": "801-538-4242",
+    "complaint_intake_url": "https://dlbc.utah.gov/submit-a-concern/"
+  },
+  {
+    "state": "Vermont",
+    "agency_name": "Division of Licensing and Protection",
+    "website_url": "https://dlp.vermont.gov/survey-cert/facility-regs",
+    "phone": "802-241-0344",
+    "complaint_intake_url": "https://dlp.vermont.gov/survey-cert/sc-complaints"
+  },
+  {
+    "state": "Virginia",
+    "agency_name": "Virginia Department of Social Services - Division of Licensing Programs",
+    "website_url": "https://www.dss.virginia.gov/facility/alf.cgi",
+    "phone": "800-543-7545",
+    "complaint_intake_url": "https://www.dss.virginia.gov/about/email_licensing_complaint.cgi"
+  },
+  {
+    "state": "Washington",
+    "agency_name": "Washington State Department of Social and Health Services \u2013 Residential Care Services",
+    "website_url": "https://www.dshs.wa.gov/altsa/residential-care-services/residential-care-services",
+    "phone": "800-562-6078",
+    "complaint_intake_url": "https://www.dshs.wa.gov/altsa/home-and-community-services/report-concerns-involving-vulnerable-adults"
+  },
+  {
+    "state": "West Virginia",
+    "agency_name": "Office of Health Facility Licensure & Certification",
+    "website_url": "https://dhhr.wv.gov/bph/licensing/Pages/default.aspx",
+    "phone": "304-558-0050",
+    "complaint_intake_url": "https://dhhr.wv.gov/bph/licensing/Pages/default.aspx"
+  },
+  {
+    "state": "Wisconsin",
+    "agency_name": "Wisconsin Department of Health Services \u2013 Division of Quality Assurance (DQA)",
+    "website_url": "https://www.dhs.wisconsin.gov/regulations/assisted-living/resources.htm",
+    "phone": "800-642-6552",
+    "complaint_intake_url": "https://www.dhs.wisconsin.gov/guide/complaints.htm"
+  },
+  {
+    "state": "Wyoming",
+    "agency_name": "Wyoming Department of Health, Healthcare Licensing and Surveys",
+    "website_url": "https://health.wyo.gov/aging/hls/facility-types/assisted-living-facility-wyoming-licensure-information/",
+    "phone": "307-777-7123",
+    "complaint_intake_url": "https://health.wyo.gov/wp-content/uploads/2024/01/HLS-Complaint_Report_Form-01-17-2024.pdf"
+  }
+]

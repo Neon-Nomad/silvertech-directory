@@ -1,0 +1,255 @@
+{
+  "BARRE": [
+    {
+      "name": "CENTRAL VERMONT MEDICAL CENTER",
+      "address": "BOX 547",
+      "city": "BARRE",
+      "state": "VT",
+      "zip": "05641",
+      "phone": "(802) 371-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BENNINGTON": [
+    {
+      "name": "SOUTHWESTERN VERMONT MEDICAL CENTER",
+      "address": "100 HOSPITAL DRIVE",
+      "city": "BENNINGTON",
+      "state": "VT",
+      "zip": "05201",
+      "phone": "(802) 442-6361",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BERLIN": [
+    {
+      "name": "VERMONT PSYCHIATRIC CARE HOSPITAL",
+      "address": "350 FISHER ROAD",
+      "city": "BERLIN",
+      "state": "VT",
+      "zip": "05602",
+      "phone": "(802) 888-6770",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRATTLEBORO": [
+    {
+      "name": "BRATTLEBORO MEMORIAL HOSPITAL",
+      "address": "17 BELMONT AVE",
+      "city": "BRATTLEBORO",
+      "state": "VT",
+      "zip": "05301",
+      "phone": "(802) 257-0341",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BRATTLEBORO RETREAT",
+      "address": "ANNA MARSH LANE PO BOX 803",
+      "city": "BRATTLEBORO",
+      "state": "VT",
+      "zip": "05301",
+      "phone": "(802) 257-7785",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURLINGTON": [
+    {
+      "name": "UNIV. OF VERMONT - FLETCHER ALLEN HEALTH CARE",
+      "address": "111 COLCHESTER AVE",
+      "city": "BURLINGTON",
+      "state": "VT",
+      "zip": "05401",
+      "phone": "(802) 847-0000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIDDLEBURY": [
+    {
+      "name": "PORTER HOSPITAL, INC",
+      "address": "115 PORTER DRIVE",
+      "city": "MIDDLEBURY",
+      "state": "VT",
+      "zip": "05753",
+      "phone": "(802) 388-4701",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MORRISVILLE": [
+    {
+      "name": "COPLEY HOSPITAL",
+      "address": "528 WASHINGTON HIGHWAY",
+      "city": "MORRISVILLE",
+      "state": "VT",
+      "zip": "05661",
+      "phone": "(802) 888-4231",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWPORT": [
+    {
+      "name": "NORTH COUNTRY HOSPITAL AND HEALTH CENTER",
+      "address": "189 PROUTY DRIVE",
+      "city": "NEWPORT",
+      "state": "VT",
+      "zip": "05855",
+      "phone": "(802) 334-7331",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RANDOLPH": [
+    {
+      "name": "GIFFORD MEDICAL CENTER",
+      "address": "44 SOUTH MAIN STREET",
+      "city": "RANDOLPH",
+      "state": "VT",
+      "zip": "05060",
+      "phone": "(802) 728-4441",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RUTLAND": [
+    {
+      "name": "RUTLAND REGIONAL MEDICAL CENTER",
+      "address": "160 ALLEN ST",
+      "city": "RUTLAND",
+      "state": "VT",
+      "zip": "05701",
+      "phone": "(802) 775-7111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT ALBANS": [
+    {
+      "name": "NORTHWESTERN MEDICAL CENTER INC",
+      "address": "133 FAIRFIELD STREET",
+      "city": "SAINT ALBANS",
+      "state": "VT",
+      "zip": "05478",
+      "phone": "(802) 524-5911",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT JOHNSBURY": [
+    {
+      "name": "NORTHEASTERN VERMONT REGIONAL HOSPITAL",
+      "address": "1315 HOSPITAL DRIVE",
+      "city": "SAINT JOHNSBURY",
+      "state": "VT",
+      "zip": "05819",
+      "phone": "(802) 748-7400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPRINGFIELD": [
+    {
+      "name": "SPRINGFIELD HOSPITAL",
+      "address": "PO BOX 2003",
+      "city": "SPRINGFIELD",
+      "state": "VT",
+      "zip": "05156",
+      "phone": "(802) 885-2151",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TOWNSHEND": [
+    {
+      "name": "GRACE COTTAGE HOSPITAL",
+      "address": "po box 216",
+      "city": "TOWNSHEND",
+      "state": "VT",
+      "zip": "05353",
+      "phone": "(802) 365-7920",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHITE RIVER JUNCTION": [
+    {
+      "name": "WHITE RIVER JCT VA MEDICAL CENTER",
+      "address": "163 VETERANS DRIVE",
+      "city": "WHITE RIVER JUNCTION",
+      "state": "VT",
+      "zip": "05009",
+      "phone": "(802) 295-9363",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINDSOR": [
+    {
+      "name": "MT ASCUTNEY HOSPITAL",
+      "address": "289 COUNTY ROAD",
+      "city": "WINDSOR",
+      "state": "VT",
+      "zip": "05089",
+      "phone": "(802) 674-6711",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

@@ -9,7 +9,8 @@ import OperatorLogin from '@/features/auth/OperatorLogin';
 import PricingAudit from '@/features/public/wedge-tools/PricingAudit';
 import CareFinderSurvey from '@/features/family/survey/CareFinderSurvey';
 import SurveyResults from '@/features/family/survey/SurveyResults';
-import { ClaimProfile } from '@/features/operator/claim/ClaimProfile';
+import { ClaimFacilityPage } from '@/features/operator/ClaimFacilityPage';
+import { EditFacility } from '@/features/operator/dashboard/EditFacility';
 import { ClaimBusiness } from '@/features/operator/claim/ClaimBusiness';
 import { StatePageTemplate } from '@/features/locations/StatePageTemplate';
 import { CaliforniaPage } from '@/features/locations/CaliforniaPage';
@@ -60,8 +61,9 @@ function App() {
                 
                 {/* Operator Routes */}
                 <Route path="/dashboard" element={<OperatorDashboard />} />
+                <Route path="/dashboard/edit/:id" element={<EditFacility />} />
                 <Route path="/operator/login" element={<OperatorLogin />} />
-                <Route path="/claim/:code" element={<ClaimProfile />} />
+                <Route path="/claim/:id" element={<ClaimFacilityPage />} />
                 <Route path="/claim-business" element={<ClaimBusiness />} />
                 
                 <Route path="/tools/pricing-audit" element={<PricingAudit />} />

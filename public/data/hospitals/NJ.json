@@ -1,0 +1,1146 @@
+{
+  "ATLANTIC CITY": [
+    {
+      "name": "ATLANTICARE REGIONAL MEDICAL CENTER - CITY CAMPUS",
+      "address": "1925 PACIFIC AVENUE",
+      "city": "ATLANTIC CITY",
+      "state": "NJ",
+      "zip": "08401",
+      "phone": "(609) 441-8020",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BAYONNE": [
+    {
+      "name": "CAREPOINT HEALTH - BAYONNE MEDICAL CENTER",
+      "address": "29 EAST 29TH ST",
+      "city": "BAYONNE",
+      "state": "NJ",
+      "zip": "07002",
+      "phone": "(201) 858-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELLE MEAD": [
+    {
+      "name": "HACKENSACK MERIDIAN HEALTH CARRIER CLINIC",
+      "address": "252 ROUTE 601",
+      "city": "BELLE MEAD",
+      "state": "NJ",
+      "zip": "08502",
+      "phone": "(908) 281-1000",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELLEVILLE": [
+    {
+      "name": "CLARA MAASS MEDICAL CENTER",
+      "address": "ONE CLARA MAASS DRIVE",
+      "city": "BELLEVILLE",
+      "state": "NJ",
+      "zip": "07109",
+      "phone": "(973) 450-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BERKELEY HEIGHTS": [
+    {
+      "name": "MOUNTAINVIEW BEHAVIORAL HOSPITAL",
+      "address": "40 WATCHUNG WAY",
+      "city": "BERKELEY HEIGHTS",
+      "state": "NJ",
+      "zip": "07922",
+      "phone": "(908) 771-5857",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLACKWOOD": [
+    {
+      "name": "NORTHBROOK BEHAVIORAL HEALTH HOSPITAL",
+      "address": "425  WOODBURY TURNERSVILLE ROAD",
+      "city": "BLACKWOOD",
+      "state": "NJ",
+      "zip": "08012",
+      "phone": "(856) 374-6500",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRICK": [
+    {
+      "name": "OCEAN MEDICAL CENTER",
+      "address": "425 JACK MARTIN BLVD",
+      "city": "BRICK",
+      "state": "NJ",
+      "zip": "08724",
+      "phone": "(732) 840-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BROWNS MILLS": [
+    {
+      "name": "DEBORAH HEART AND LUNG CENTER",
+      "address": "200 TRENTON ROAD",
+      "city": "BROWNS MILLS",
+      "state": "NJ",
+      "zip": "08015",
+      "phone": "(609) 893-6611",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAMDEN": [
+    {
+      "name": "COOPER UNIVERSITY HOSPITAL",
+      "address": "1 COOPER PLAZA",
+      "city": "CAMDEN",
+      "state": "NJ",
+      "zip": "08103",
+      "phone": "(856) 342-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VIRTUA OUR LADY OF LOURDES HOSPITAL",
+      "address": "1600 HADDON AVENUE",
+      "city": "CAMDEN",
+      "state": "NJ",
+      "zip": "08103",
+      "phone": "(856) 886-5373",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAPE MAY COURT HOUSE": [
+    {
+      "name": "CAPE REGIONAL MEDICAL CENTER INC",
+      "address": "TWO STONE HARBOR BLVD",
+      "city": "CAPE MAY COURT HOUSE",
+      "state": "NJ",
+      "zip": "08210",
+      "phone": "(609) 463-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CEDAR GROVE": [
+    {
+      "name": "ESSEX COUNTY HOSPITAL CENTER",
+      "address": "204 GROVE AVENUE",
+      "city": "CEDAR GROVE",
+      "state": "NJ",
+      "zip": "07009",
+      "phone": "(973) 571-2801",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DENVILLE": [
+    {
+      "name": "SAINT CLARE'S HOSPITAL/ DENVILLE CAMPUS",
+      "address": "25 POCONO ROAD",
+      "city": "DENVILLE",
+      "state": "NJ",
+      "zip": "07834",
+      "phone": "(973) 983-5569",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EAST ORANGE": [
+    {
+      "name": "VA NEW JERSEY HEALTH CARE SYSTEM",
+      "address": "385 TREMONT AVENUE",
+      "city": "EAST ORANGE",
+      "state": "NJ",
+      "zip": "07018",
+      "phone": "(973) 676-1000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CAREWELL HEALTH MEDICAL CENTER",
+      "address": "300 CENTRAL AVE",
+      "city": "EAST ORANGE",
+      "state": "NJ",
+      "zip": "07018",
+      "phone": "(973) 672-8400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EDISON": [
+    {
+      "name": "JFK UNIVERSITY MEDICAL CENTER",
+      "address": "65 JAMES STREET",
+      "city": "EDISON",
+      "state": "NJ",
+      "zip": "08818",
+      "phone": "(732) 321-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELIZABETH": [
+    {
+      "name": "TRINITAS REGIONAL MEDICAL CENTER",
+      "address": "225 WILLIAMSON STREET",
+      "city": "ELIZABETH",
+      "state": "NJ",
+      "zip": "07207",
+      "phone": "(908) 994-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELMER": [
+    {
+      "name": "INSPIRA MEDICAL CENTER MULLICA HILL",
+      "address": "501 WEST FRONT STREET",
+      "city": "ELMER",
+      "state": "NJ",
+      "zip": "08318",
+      "phone": "(856) 363-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ENGLEWOOD": [
+    {
+      "name": "ENGLEWOOD HOSPITAL AND MEDICAL CENTER",
+      "address": "350 ENGLE ST",
+      "city": "ENGLEWOOD",
+      "state": "NJ",
+      "zip": "07631",
+      "phone": "(201) 894-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FLEMINGTON": [
+    {
+      "name": "HUNTERDON MEDICAL CENTER",
+      "address": "2100 WESCOTT DRIVE",
+      "city": "FLEMINGTON",
+      "state": "NJ",
+      "zip": "08822",
+      "phone": "(908) 788-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FREEHOLD": [
+    {
+      "name": "CENTRASTATE MEDICAL CENTER",
+      "address": "901 WEST MAIN STREET",
+      "city": "FREEHOLD",
+      "state": "NJ",
+      "zip": "07728",
+      "phone": "(732) 294-7012",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HACKENSACK": [
+    {
+      "name": "HACKENSACK UNIVERSITY MEDICAL CENTER",
+      "address": "30 PROSPECT AVE",
+      "city": "HACKENSACK",
+      "state": "NJ",
+      "zip": "07601",
+      "phone": "(551) 996-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HACKETTSTOWN": [
+    {
+      "name": "AHS HOSPITAL CORP",
+      "address": "651 WILLOW GROVE ST",
+      "city": "HACKETTSTOWN",
+      "state": "NJ",
+      "zip": "07840",
+      "phone": "(908) 852-5100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAMILTON": [
+    {
+      "name": "ROBERT WOOD JOHNSON UNIVERSITY HOSPITAL AT HAMILTON",
+      "address": "ONE HAMILTON HEALTH PLACE",
+      "city": "HAMILTON",
+      "state": "NJ",
+      "zip": "08690",
+      "phone": "(609) 586-7900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAMMONTON": [
+    {
+      "name": "ANCORA PSYCH HOSP",
+      "address": "ANCORA BRANCH",
+      "city": "HAMMONTON",
+      "state": "NJ",
+      "zip": "08037",
+      "phone": "(609) 561-1700",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOBOKEN": [
+    {
+      "name": "CAREPOINT HEALTH-HOBOKEN UNIVERSITY MEDICAL CENTER",
+      "address": "308 WILLOW AVE",
+      "city": "HOBOKEN",
+      "state": "NJ",
+      "zip": "07030",
+      "phone": "(201) 418-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOLMDEL": [
+    {
+      "name": "BAYSHORE MEDICAL CENTER",
+      "address": "727 N BEERS ST",
+      "city": "HOLMDEL",
+      "state": "NJ",
+      "zip": "07733",
+      "phone": "(732) 739-5900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JERSEY CITY": [
+    {
+      "name": "CAREPOINT HEALTH-CHRIST HOSPITAL",
+      "address": "176 PALISADE AVE",
+      "city": "JERSEY CITY",
+      "state": "NJ",
+      "zip": "07306",
+      "phone": "(201) 795-8200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "JERSEY CITY MEDICAL CENTER",
+      "address": "355 GRAND STREET",
+      "city": "JERSEY CITY",
+      "state": "NJ",
+      "zip": "07302",
+      "phone": "(201) 915-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKEWOOD": [
+    {
+      "name": "MONMOUTH MEDICAL CENTER-SOUTHERN CAMPUS",
+      "address": "600 RIVER AVE",
+      "city": "LAKEWOOD",
+      "state": "NJ",
+      "zip": "08701",
+      "phone": "(732) 363-1900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LIVINGSTON": [
+    {
+      "name": "COOPERMAN BARNABAS MEDICAL CENTER",
+      "address": "94 OLD SHORT HILLS ROAD",
+      "city": "LIVINGSTON",
+      "state": "NJ",
+      "zip": "07039",
+      "phone": "(973) 322-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LONG BRANCH": [
+    {
+      "name": "MONMOUTH MEDICAL CENTER",
+      "address": "300 SECOND AVENUE",
+      "city": "LONG BRANCH",
+      "state": "NJ",
+      "zip": "07740",
+      "phone": "(732) 222-5200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANAHAWKIN": [
+    {
+      "name": "SOUTHERN OCEAN MEDICAL CENTER",
+      "address": "1140 RT 72 W",
+      "city": "MANAHAWKIN",
+      "state": "NJ",
+      "zip": "08050",
+      "phone": "(609) 597-6011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARLTON": [
+    {
+      "name": "WEISMAN CHILDRENS REHABILITATION HOSPITAL",
+      "address": "92 BRICK ROAD, 3RD FLOOR",
+      "city": "MARLTON",
+      "state": "NJ",
+      "zip": "08053",
+      "phone": "(856) 489-4520",
+      "type": "Childrens",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTCLAIR": [
+    {
+      "name": "HACKENSACK MERIDIAN MOUNTAINSIDE MEDICAL",
+      "address": "1 BAY AVENUE",
+      "city": "MONTCLAIR",
+      "state": "NJ",
+      "zip": "07042",
+      "phone": "(973) 429-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MORRIS PLAINS": [
+    {
+      "name": "GREYSTONE PARK PSYCHIATRIC HOSPITAL",
+      "address": "59 KOCH AVENUE",
+      "city": "MORRIS PLAINS",
+      "state": "NJ",
+      "zip": "07950",
+      "phone": "(973) 538-1800",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MORRISTOWN": [
+    {
+      "name": "MORRISTOWN MEDICAL CENTER",
+      "address": "100 MADISON AVE",
+      "city": "MORRISTOWN",
+      "state": "NJ",
+      "zip": "07962",
+      "phone": "(973) 971-5450",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNT HOLLY": [
+    {
+      "name": "VIRTUA MOUNT HOLLY HOSPITAL",
+      "address": "175 MADISON AVE",
+      "city": "MOUNT HOLLY",
+      "state": "NJ",
+      "zip": "08060",
+      "phone": "(609) 267-0700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEPTUNE": [
+    {
+      "name": "JERSEY SHORE UNIVERSITY MEDICAL CENTER",
+      "address": "1945 RTE 33",
+      "city": "NEPTUNE",
+      "state": "NJ",
+      "zip": "07754",
+      "phone": "(732) 775-5500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW BRUNSWICK": [
+    {
+      "name": "ROBERT WOOD JOHNSON UNIVERSITY HOSPITAL",
+      "address": "ONE ROBERT WOOD JOHNSON PLACE",
+      "city": "NEW BRUNSWICK",
+      "state": "NJ",
+      "zip": "08901",
+      "phone": "(732) 828-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT PETER'S UNIVERSITY HOSPITAL",
+      "address": "254 EASTON AVE",
+      "city": "NEW BRUNSWICK",
+      "state": "NJ",
+      "zip": "08901",
+      "phone": "(732) 745-8600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDREN'S SPECIALIZED HOSPITAL",
+      "address": "200 SOMERSET ST",
+      "city": "NEW BRUNSWICK",
+      "state": "NJ",
+      "zip": "08901",
+      "phone": "(732) 258-7050",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWARK": [
+    {
+      "name": "NEWARK BETH ISRAEL MEDICAL CENTER",
+      "address": "201 LYONS AVE",
+      "city": "NEWARK",
+      "state": "NJ",
+      "zip": "07112",
+      "phone": "(973) 926-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT MICHAEL'S MEDICAL CENTER",
+      "address": "111 CENTRAL AVENUE",
+      "city": "NEWARK",
+      "state": "NJ",
+      "zip": "07102",
+      "phone": "(973) 877-5350",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THE UNIVERSITY HOSPITAL",
+      "address": "150 BERGEN ST",
+      "city": "NEWARK",
+      "state": "NJ",
+      "zip": "07103",
+      "phone": "(973) 972-4300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SILVER LAKE HOSPITAL LTACH",
+      "address": "495 NORTH 13TH STREET",
+      "city": "NEWARK",
+      "state": "NJ",
+      "zip": "07107",
+      "phone": "(973) 587-7713",
+      "type": "Long-term",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWTON": [
+    {
+      "name": "NEWTON MEDICAL CENTER",
+      "address": "175 HIGH ST",
+      "city": "NEWTON",
+      "state": "NJ",
+      "zip": "07860",
+      "phone": "(973) 383-2121",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTH BERGEN": [
+    {
+      "name": "PALISADES MEDICAL CENTER",
+      "address": "7600 RIVER RD",
+      "city": "NORTH BERGEN",
+      "state": "NJ",
+      "zip": "07047",
+      "phone": "(201) 854-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARAMUS": [
+    {
+      "name": "VALLEY HOSPITAL",
+      "address": "4 VALLEY HEALTH PLAZA",
+      "city": "PARAMUS",
+      "state": "NJ",
+      "zip": "07652",
+      "phone": "(201) 447-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BERGEN NEW BRIDGE MEDICAL CENTER",
+      "address": "230 EAST RIDGEWOOD AVE",
+      "city": "PARAMUS",
+      "state": "NJ",
+      "zip": "07652",
+      "phone": "(201) 967-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PASSAIC": [
+    {
+      "name": "ST MARY'S GENERAL HOSPITAL",
+      "address": "350 BOULEVARD",
+      "city": "PASSAIC",
+      "state": "NJ",
+      "zip": "07055",
+      "phone": "(973) 365-4300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PATERSON": [
+    {
+      "name": "ST JOSEPH'S UNIVERSITY MEDICAL CENTER INC",
+      "address": "703 MAIN ST",
+      "city": "PATERSON",
+      "state": "NJ",
+      "zip": "07503",
+      "phone": "(973) 754-2010",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PEMBERTON": [
+    {
+      "name": "ASPEN HILLS HEALTHCARE CENTER",
+      "address": "600 PEMBERTON-BROWNS MILLS ROAD",
+      "city": "PEMBERTON",
+      "state": "NJ",
+      "zip": "08068",
+      "phone": "(609) 836-6100",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PENNINGTON": [
+    {
+      "name": "CAPITAL HEALTH MEDICAL CENTER - HOPEWELL",
+      "address": "ONE CAPITAL WAY",
+      "city": "PENNINGTON",
+      "state": "NJ",
+      "zip": "08534",
+      "phone": "(609) 303-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PERTH AMBOY": [
+    {
+      "name": "RARITAN BAY MEDICAL CENTER",
+      "address": "530 NEW BRUNSWICK AVE",
+      "city": "PERTH AMBOY",
+      "state": "NJ",
+      "zip": "08861",
+      "phone": "(732) 324-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PHILLIPSBURG": [
+    {
+      "name": "ST LUKE'S WARREN HOSPITAL",
+      "address": "185 ROSEBERRY ST",
+      "city": "PHILLIPSBURG",
+      "state": "NJ",
+      "zip": "08865",
+      "phone": "(908) 847-6700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PISCATAWAY": [
+    {
+      "name": "UNIVERSITY BEHAVIORAL HEALTH CARE",
+      "address": "671 HOES LANE WEST",
+      "city": "PISCATAWAY",
+      "state": "NJ",
+      "zip": "08854",
+      "phone": "(732) 235-5900",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLAINSBORO": [
+    {
+      "name": "UNIVERSITY MEDICAL CENTER OF PRINCETON AT PLAINSBORO",
+      "address": "ONE-FIVE PLAINSBORO ROAD",
+      "city": "PLAINSBORO",
+      "state": "NJ",
+      "zip": "08536",
+      "phone": "(609) 853-6500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POMPTON PLAINS": [
+    {
+      "name": "CHILTON MEDICAL CENTER",
+      "address": "97 WEST PARKWAY",
+      "city": "POMPTON PLAINS",
+      "state": "NJ",
+      "zip": "07444",
+      "phone": "(973) 831-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RAHWAY": [
+    {
+      "name": "ROBERT WOOD JOHNSON UNIVERSITY HOSPITAL AT RAHWAY",
+      "address": "865 STONE ST",
+      "city": "RAHWAY",
+      "state": "NJ",
+      "zip": "07065",
+      "phone": "(732) 381-4200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RED BANK": [
+    {
+      "name": "RIVERVIEW MEDICAL CENTER",
+      "address": "ONE RIVERVIEW PLAZA",
+      "city": "RED BANK",
+      "state": "NJ",
+      "zip": "07701",
+      "phone": "(732) 741-2700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SECAUCUS": [
+    {
+      "name": "HUDSON REGIONAL HOSPITAL",
+      "address": "55 MEADOWLANDS PKWY",
+      "city": "SECAUCUS",
+      "state": "NJ",
+      "zip": "07094",
+      "phone": "(201) 392-3200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "HUDSON COUNTY MEADOWVIEW PSYCHIATRIC H",
+      "address": "595 COUNTY AVENUE",
+      "city": "SECAUCUS",
+      "state": "NJ",
+      "zip": "07094",
+      "phone": "(201) 369-5252",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOMERS POINT": [
+    {
+      "name": "SHORE MEDICAL CENTER",
+      "address": "100 MEDICAL CENTER WAY",
+      "city": "SOMERS POINT",
+      "state": "NJ",
+      "zip": "08244",
+      "phone": "(609) 653-3500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SOMERVILLE": [
+    {
+      "name": "ROBERT WOOD JOHNSON UNIVERSITY HOSPITAL - SOMERSET",
+      "address": "110 REHILL AVE",
+      "city": "SOMERVILLE",
+      "state": "NJ",
+      "zip": "08876",
+      "phone": "(908) 685-2200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STRATFORD": [
+    {
+      "name": "JEFFERSON STRATFORD HOSPITAL",
+      "address": "18 EAST LAUREL ROAD",
+      "city": "STRATFORD",
+      "state": "NJ",
+      "zip": "08084",
+      "phone": "(856) 346-7802",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUMMIT": [
+    {
+      "name": "OVERLOOK MEDICAL CENTER",
+      "address": "99 BEAUVOIR AVENUE",
+      "city": "SUMMIT",
+      "state": "NJ",
+      "zip": "07901",
+      "phone": "(908) 522-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SUMMIT OAKS HOSPITAL",
+      "address": "19 PROSPECT ST",
+      "city": "SUMMIT",
+      "state": "NJ",
+      "zip": "07901",
+      "phone": "(908) 522-7000",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TEANECK": [
+    {
+      "name": "HOLY NAME MEDICAL CENTER",
+      "address": "718 TEANECK RD",
+      "city": "TEANECK",
+      "state": "NJ",
+      "zip": "07666",
+      "phone": "(201) 833-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TOMS RIVER": [
+    {
+      "name": "COMMUNITY MEDICAL CENTER",
+      "address": "99 RT 37 WEST",
+      "city": "TOMS RIVER",
+      "state": "NJ",
+      "zip": "08755",
+      "phone": "(732) 557-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SAINT BARNABAS BEHAVIORAL HEALTH CENTER",
+      "address": "1691 HIGHWAY 9  -  CN2025",
+      "city": "TOMS RIVER",
+      "state": "NJ",
+      "zip": "08755",
+      "phone": "(732) 914-1688",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TRENTON": [
+    {
+      "name": "CAPITAL HEALTH REGIONAL MEDICAL CENTER",
+      "address": "750 BRUNSWICK AVE",
+      "city": "TRENTON",
+      "state": "NJ",
+      "zip": "08638",
+      "phone": "(609) 394-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TRENTON PSYCHIATRIC HOSP",
+      "address": "STATION A",
+      "city": "TRENTON",
+      "state": "NJ",
+      "zip": "08625",
+      "phone": "(609) 633-1586",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VINELAND": [
+    {
+      "name": "INSPIRA MEDICAL CENTER VINELAND",
+      "address": "1505 W SHERMAN AVE",
+      "city": "VINELAND",
+      "state": "NJ",
+      "zip": "08360",
+      "phone": "(856) 641-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VOORHEES": [
+    {
+      "name": "WEST JERSEY HOSPITAL",
+      "address": "100 BOWMAN DRIVE",
+      "city": "VOORHEES",
+      "state": "NJ",
+      "zip": "08043",
+      "phone": "(856) 247-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTWOOD": [
+    {
+      "name": "HACKENSACK MERIDIAN HEALTH PASCACK VALLEY MEDICAL",
+      "address": "250 OLD HOOK ROAD",
+      "city": "WESTWOOD",
+      "state": "NJ",
+      "zip": "07675",
+      "phone": "(201) 880-2700",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILLINGBORO": [
+    {
+      "name": "VIRTUA WILLINGBORO HOSPITAL",
+      "address": "218A SUNSET ROAD",
+      "city": "WILLINGBORO",
+      "state": "NJ",
+      "zip": "08046",
+      "phone": "(609) 835-2900",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WYCKOFF": [
+    {
+      "name": "RAMAPO RIDGE BEHAVIORAL HEALTH HOSPITAL",
+      "address": "301 SICOMAC AVE",
+      "city": "WYCKOFF",
+      "state": "NJ",
+      "zip": "07481",
+      "phone": "(201) 848-5805",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

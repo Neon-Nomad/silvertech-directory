@@ -1,0 +1,1314 @@
+{
+  "ARKADELPHIA": [
+    {
+      "name": "BAPTIST HEALTH MEDICAL CENTER-ARKADELPHIA",
+      "address": "3050 TWIN RIVERS DRIVE",
+      "city": "ARKADELPHIA",
+      "state": "AR",
+      "zip": "71923",
+      "phone": "(870) 245-2622",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ASHDOWN": [
+    {
+      "name": "LITTLE RIVER MEMORIAL HOSPITAL",
+      "address": "451 WEST LOCKE STREET",
+      "city": "ASHDOWN",
+      "state": "AR",
+      "zip": "71822",
+      "phone": "(870) 898-5011",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BARLING": [
+    {
+      "name": "VALLEY BEHAVIORAL HEALTH SYSTEM",
+      "address": "10301 MAYO DRIVE",
+      "city": "BARLING",
+      "state": "AR",
+      "zip": "72923",
+      "phone": "(479) 494-5700",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BATESVILLE": [
+    {
+      "name": "WHITE RIVER MEDICAL CENTER",
+      "address": "1710 HARRISON STREET",
+      "city": "BATESVILLE",
+      "state": "AR",
+      "zip": "72503",
+      "phone": "(870) 262-1200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BENTON": [
+    {
+      "name": "SALINE MEMORIAL HOSPITAL",
+      "address": "1 MEDICAL PARK DRIVE",
+      "city": "BENTON",
+      "state": "AR",
+      "zip": "72015",
+      "phone": "(501) 776-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "RIVENDELL BEHAVIORAL HEALTH SERVICES",
+      "address": "100 RIVENDELL DRIVE",
+      "city": "BENTON",
+      "state": "AR",
+      "zip": "72019",
+      "phone": "(501) 316-1255",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BERRYVILLE": [
+    {
+      "name": "MERCY HOSPITAL BERRYVILLE",
+      "address": "214 CARTER STREET",
+      "city": "BERRYVILLE",
+      "state": "AR",
+      "zip": "72616",
+      "phone": "(870) 423-3355",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLYTHEVILLE": [
+    {
+      "name": "GREAT RIVER MEDICAL CENTER",
+      "address": "1520 N DIVISION STREET",
+      "city": "BLYTHEVILLE",
+      "state": "AR",
+      "zip": "72315",
+      "phone": "(870) 838-7300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOONEVILLE": [
+    {
+      "name": "MERCY HOSPITAL BOONEVILLE",
+      "address": "880 WEST MAIN",
+      "city": "BOONEVILLE",
+      "state": "AR",
+      "zip": "72927",
+      "phone": "(479) 675-2800",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BRYANT": [
+    {
+      "name": "ARKANSAS HEART HOSPITAL-ENCORE",
+      "address": "1901 ENCORE WAY",
+      "city": "BRYANT",
+      "state": "AR",
+      "zip": "72019",
+      "phone": "(501) 213-4500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CALICO ROCK": [
+    {
+      "name": "IZARD REGIONAL HOSPITAL LLC",
+      "address": "61 GRASSE STREET",
+      "city": "CALICO ROCK",
+      "state": "AR",
+      "zip": "72519",
+      "phone": "(870) 297-2400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CAMDEN": [
+    {
+      "name": "OUACHITA COUNTY MEDICAL CENTER",
+      "address": "638 CALIFORNIA AVENUE",
+      "city": "CAMDEN",
+      "state": "AR",
+      "zip": "71701",
+      "phone": "(870) 836-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLARKSVILLE": [
+    {
+      "name": "JOHNSON REGIONAL MEDICAL CENTER",
+      "address": "1100 EAST POPLAR STREET",
+      "city": "CLARKSVILLE",
+      "state": "AR",
+      "zip": "72830",
+      "phone": "(479) 754-5454",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CLINTON": [
+    {
+      "name": "OZARK HEALTH",
+      "address": "2500 HIGHWAY 65 SOUTH",
+      "city": "CLINTON",
+      "state": "AR",
+      "zip": "72031",
+      "phone": "(501) 745-7000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CONWAY": [
+    {
+      "name": "CONWAY REGIONAL MEDICAL CENTER, INC",
+      "address": "2302 COLLEGE AVENUE",
+      "city": "CONWAY",
+      "state": "AR",
+      "zip": "72034",
+      "phone": "(501) 329-3831",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BAPTIST HEALTH MEDICAL CENTER- CONWAY",
+      "address": "1555 EXCHANGE AVENUE",
+      "city": "CONWAY",
+      "state": "AR",
+      "zip": "72032",
+      "phone": "(501) 585-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CONWAY BEHAVIORAL HEALTH",
+      "address": "2255 STURGIS ROAD",
+      "city": "CONWAY",
+      "state": "AR",
+      "zip": "72034",
+      "phone": "(501) 205-0011",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CROSSETT": [
+    {
+      "name": "ASHLEY COUNTY MEDICAL CENTER",
+      "address": "1015 UNITY ROAD",
+      "city": "CROSSETT",
+      "state": "AR",
+      "zip": "71635",
+      "phone": "(870) 364-4111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DANVILLE": [
+    {
+      "name": "CHAMBERS MEMORIAL HOSPITAL",
+      "address": "719 DETROIT STREET",
+      "city": "DANVILLE",
+      "state": "AR",
+      "zip": "72833",
+      "phone": "(479) 495-2241",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DARDANELLE": [
+    {
+      "name": "DARDANELLE REGIONAL MEDICAL CENTER",
+      "address": "200 NORTH THIRD STREET",
+      "city": "DARDANELLE",
+      "state": "AR",
+      "zip": "72834",
+      "phone": "(479) 229-4677",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DE QUEEN": [
+    {
+      "name": "SEVIER COUNTY MEDICAL CENTER",
+      "address": "960 HWY 71 N",
+      "city": "DE QUEEN",
+      "state": "AR",
+      "zip": "71832",
+      "phone": "(870) 642-6420",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DE WITT": [
+    {
+      "name": "DEWITT HOSPITAL & NURSING HOME, INC",
+      "address": "1641 WHITEHEAD DRIVE",
+      "city": "DE WITT",
+      "state": "AR",
+      "zip": "72042",
+      "phone": "(870) 946-3571",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DUMAS": [
+    {
+      "name": "DELTA MEMORIAL HOSPITAL",
+      "address": "811 HIGHWAY 65 SOUTH",
+      "city": "DUMAS",
+      "state": "AR",
+      "zip": "71639",
+      "phone": "(870) 382-4303",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EL DORADO": [
+    {
+      "name": "SOUTH ARKANSAS REGIONAL HOSPITAL LLC",
+      "address": "700 WEST GROVE STREET",
+      "city": "EL DORADO",
+      "state": "AR",
+      "zip": "71730",
+      "phone": "(870) 863-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EUREKA SPRINGS": [
+    {
+      "name": "EUREKA SPRINGS HOSPITAL COMMISSION",
+      "address": "24 NORRIS STREET",
+      "city": "EUREKA SPRINGS",
+      "state": "AR",
+      "zip": "72632",
+      "phone": "(479) 253-7400",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FAYETTEVILLE": [
+    {
+      "name": "WASHINGTON REGIONAL MEDICAL CENTER",
+      "address": "3215 N NORTH HILLS BOULEVARD",
+      "city": "FAYETTEVILLE",
+      "state": "AR",
+      "zip": "72703",
+      "phone": "(479) 463-5113",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FAYETTEVILLE AR VA MEDICAL CENTER",
+      "address": "1100 N. COLLEGE AVENUE",
+      "city": "FAYETTEVILLE",
+      "state": "AR",
+      "zip": "72703",
+      "phone": "(479) 444-5058",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VISTA HEALTH FAYETTEVILLE",
+      "address": "4253 CROSSOVER ROAD",
+      "city": "FAYETTEVILLE",
+      "state": "AR",
+      "zip": "72703",
+      "phone": "(479) 521-5731",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SPRINGWOODS BEHAVIORAL HEALTH SERVICES",
+      "address": "1955 WEST TRUCKER'S DRIVE",
+      "city": "FAYETTEVILLE",
+      "state": "AR",
+      "zip": "72704",
+      "phone": "(479) 973-6000",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORDYCE": [
+    {
+      "name": "DALLAS COUNTY MEDICAL CENTER",
+      "address": "201 CLIFTON STREET",
+      "city": "FORDYCE",
+      "state": "AR",
+      "zip": "71742",
+      "phone": "(870) 352-6300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORREST CITY": [
+    {
+      "name": "FORREST CITY MEDICAL CENTER",
+      "address": "1601 NEWCASTLE ROAD",
+      "city": "FORREST CITY",
+      "state": "AR",
+      "zip": "72335",
+      "phone": "(870) 261-0000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT SMITH": [
+    {
+      "name": "BAPTIST HEALTH - FORT SMITH",
+      "address": "1001 TOWSON AVENUE",
+      "city": "FORT SMITH",
+      "state": "AR",
+      "zip": "72901",
+      "phone": "(479) 441-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MERCY HOSPITAL FORT SMITH",
+      "address": "7301 ROGERS AVE",
+      "city": "FORT SMITH",
+      "state": "AR",
+      "zip": "72903",
+      "phone": "(479) 314-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAVETTE": [
+    {
+      "name": "OZARKS COMMUNITY HOSPITAL OF GRAVETTE",
+      "address": "1101 JACKSON STREET SW",
+      "city": "GRAVETTE",
+      "state": "AR",
+      "zip": "72736",
+      "phone": "(479) 787-5291",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARRISON": [
+    {
+      "name": "NORTH ARKANSAS REGIONAL MEDICAL CENTER",
+      "address": "620 NORTH MAIN STREET",
+      "city": "HARRISON",
+      "state": "AR",
+      "zip": "72601",
+      "phone": "(870) 414-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HEBER SPRINGS": [
+    {
+      "name": "BAPTIST HEALTH MEDICAL CENTER HEBER SPRINGS",
+      "address": "1800 BYPASS ROAD",
+      "city": "HEBER SPRINGS",
+      "state": "AR",
+      "zip": "72543",
+      "phone": "(501) 887-3000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HELENA": [
+    {
+      "name": "HELENA REGIONAL MEDICAL CENTER",
+      "address": "1801 MARTIN LUTHER KING JR DRIVE",
+      "city": "HELENA",
+      "state": "AR",
+      "zip": "72342",
+      "phone": "(870) 338-5800",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOPE": [
+    {
+      "name": "SOUTHWEST REGIONAL MEDICAL CENTER LLC",
+      "address": "2001 SOUTH MAIN",
+      "city": "HOPE",
+      "state": "AR",
+      "zip": "71801",
+      "phone": "(870) 722-3800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HOT SPRINGS": [
+    {
+      "name": "CHI ST. VINCENT HOSPITAL HOT SPRINGS",
+      "address": "300 WERNER STREET",
+      "city": "HOT SPRINGS",
+      "state": "AR",
+      "zip": "71903",
+      "phone": "(501) 622-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NATIONAL PARK MEDICAL CENTER",
+      "address": "1910 MALVERN AVENUE",
+      "city": "HOT SPRINGS",
+      "state": "AR",
+      "zip": "71901",
+      "phone": "(501) 321-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "LEO N LEVI MEMORIAL HOSPITAL",
+      "address": "300 PROSPECT AVE",
+      "city": "HOT SPRINGS",
+      "state": "AR",
+      "zip": "71901",
+      "phone": "(501) 624-1281",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JACKSONVILLE": [
+    {
+      "name": "UNITY HEALTH - JACKSONVILLE",
+      "address": "1400 BRADEN STREET",
+      "city": "JACKSONVILLE",
+      "state": "AR",
+      "zip": "72076",
+      "phone": "(501) 453-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JONESBORO": [
+    {
+      "name": "ST BERNARDS MEDICAL CENTER",
+      "address": "225 E WASHINGTON AVE",
+      "city": "JONESBORO",
+      "state": "AR",
+      "zip": "72401",
+      "phone": "(870) 972-4100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BAPTIST MEMORIAL HOSPITAL JONESBORO, INC.",
+      "address": "4800 EAST JOHNSON AVENUE",
+      "city": "JONESBORO",
+      "state": "AR",
+      "zip": "72405",
+      "phone": "(870) 972-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE VILLAGE": [
+    {
+      "name": "CHICOT MEMORIAL MEDICAL CENTER",
+      "address": "2729 SOUTH HIGHWAY 65 & 82",
+      "city": "LAKE VILLAGE",
+      "state": "AR",
+      "zip": "71653",
+      "phone": "(870) 265-5351",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LITTLE ROCK": [
+    {
+      "name": "CHI-ST VINCENT INFIRMARY",
+      "address": "TWO ST VINCENT CIRCLE",
+      "city": "LITTLE ROCK",
+      "state": "AR",
+      "zip": "72205",
+      "phone": "(501) 552-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UAMS MEDICAL CENTER",
+      "address": "4301 WEST MARKHAM STREET MAIL SLOT 612",
+      "city": "LITTLE ROCK",
+      "state": "AR",
+      "zip": "72205",
+      "phone": "(501) 686-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "VA CENTRAL AR. VETERANS HEALTHCARE SYSTEM LR",
+      "address": "4300 WEST SEVENTH STREET",
+      "city": "LITTLE ROCK",
+      "state": "AR",
+      "zip": "72205",
+      "phone": "(501) 257-1000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BAPTIST HEALTH MEDICAL CENTER-LITTLE ROCK",
+      "address": "9601 BAPTIST HEALTH DRIVE",
+      "city": "LITTLE ROCK",
+      "state": "AR",
+      "zip": "72205",
+      "phone": "(501) 202-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ARKANSAS HEART HOSPITAL, LLC",
+      "address": "1701 S SHACKLEFORD ROAD",
+      "city": "LITTLE ROCK",
+      "state": "AR",
+      "zip": "72211",
+      "phone": "(501) 219-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ARKANSAS CHILDREN'S HOSPITAL",
+      "address": "1 CHILDREN'S WAY, SLOT 301",
+      "city": "LITTLE ROCK",
+      "state": "AR",
+      "zip": "72202",
+      "phone": "(501) 364-1100",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ARKANSAS STATE HOSPITAL",
+      "address": "305 S PALM STREET",
+      "city": "LITTLE ROCK",
+      "state": "AR",
+      "zip": "72205",
+      "phone": "(501) 686-9000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAGNOLIA": [
+    {
+      "name": "MAGNOLIA HOSPITAL",
+      "address": "101 HOSPITAL DRIVE",
+      "city": "MAGNOLIA",
+      "state": "AR",
+      "zip": "71753",
+      "phone": "(870) 235-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MALVERN": [
+    {
+      "name": "BAPTIST HEALTH MEDICAL CENTER-HOT SPRINGS COUNTY",
+      "address": "1001 SCHNEIDER DRIVE",
+      "city": "MALVERN",
+      "state": "AR",
+      "zip": "72104",
+      "phone": "(501) 332-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAUMELLE": [
+    {
+      "name": "UNITED METHODIST BEHAVIORAL HOSPITAL",
+      "address": "1601 MURPHY DRIVE",
+      "city": "MAUMELLE",
+      "state": "AR",
+      "zip": "72113",
+      "phone": "(501) 803-3388",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MCGEHEE": [
+    {
+      "name": "MCGEHEE HOSPITAL",
+      "address": "900 SOUTH THIRD STREET",
+      "city": "MCGEHEE",
+      "state": "AR",
+      "zip": "71654",
+      "phone": "(870) 222-5600",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MENA": [
+    {
+      "name": "MENA REGIONAL HEALTH SYSTEM",
+      "address": "311 North Morrow Street",
+      "city": "MENA",
+      "state": "AR",
+      "zip": "71953",
+      "phone": "(479) 394-6100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONTICELLO": [
+    {
+      "name": "BAPTIST HEALTH MEDICAL CENTER-DREW COUNTY",
+      "address": "778 SCOGIN DRIVE",
+      "city": "MONTICELLO",
+      "state": "AR",
+      "zip": "71655",
+      "phone": "(870) 367-2411",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MORRILTON": [
+    {
+      "name": "CHI ST VINCENT MORRILTON",
+      "address": "#4 HOSPITAL DRIVE",
+      "city": "MORRILTON",
+      "state": "AR",
+      "zip": "72110",
+      "phone": "(501) 977-2300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNTAIN HOME": [
+    {
+      "name": "BAXTER REGIONAL MEDICAL CENTER",
+      "address": "624 HOSPITAL DRIVE",
+      "city": "MOUNTAIN HOME",
+      "state": "AR",
+      "zip": "72653",
+      "phone": "(870) 508-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MOUNTAIN VIEW": [
+    {
+      "name": "STONE COUNTY MEDICAL CENTER",
+      "address": "2106 EAST MAIN STREET",
+      "city": "MOUNTAIN VIEW",
+      "state": "AR",
+      "zip": "72560",
+      "phone": "(870) 269-4361",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NASHVILLE": [
+    {
+      "name": "HOWARD MEMORIAL HOSPITAL",
+      "address": "130 MEDICAL CIRCLE",
+      "city": "NASHVILLE",
+      "state": "AR",
+      "zip": "71852",
+      "phone": "(870) 845-4400",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEWPORT": [
+    {
+      "name": "UNITY HEALTH - NEWPORT",
+      "address": "1205 MCLAIN STREET",
+      "city": "NEWPORT",
+      "state": "AR",
+      "zip": "72112",
+      "phone": "(870) 523-8911",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NO LITTLE ROCK": [
+    {
+      "name": "ARKANSAS SURGICAL HOSPITAL",
+      "address": "5201 NORTH SHORE DRIVE",
+      "city": "NO LITTLE ROCK",
+      "state": "AR",
+      "zip": "72118",
+      "phone": "(501) 748-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NORTH LITTLE ROCK": [
+    {
+      "name": "BAPTIST HEALTH MEDICAL CENTER NORTH LITTLE ROCK",
+      "address": "3333 SPRINGHILL DRIVE",
+      "city": "NORTH LITTLE ROCK",
+      "state": "AR",
+      "zip": "72117",
+      "phone": "(501) 202-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BRIDGEWAY HOSPITAL",
+      "address": "21 BRIDGEWAY ROAD",
+      "city": "NORTH LITTLE ROCK",
+      "state": "AR",
+      "zip": "72113",
+      "phone": "(501) 771-1500",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSCEOLA": [
+    {
+      "name": "SOUTH MISSISSIPPI COUNTY REGIONAL MEDICAL CENTER",
+      "address": "611 WEST LEE AVENUE",
+      "city": "OSCEOLA",
+      "state": "AR",
+      "zip": "72370",
+      "phone": "(870) 563-7000",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OZARK": [
+    {
+      "name": "MERCY HOSPITAL OZARK",
+      "address": "801 WEST RIVER STREET",
+      "city": "OZARK",
+      "state": "AR",
+      "zip": "72949",
+      "phone": "(479) 667-4138",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARAGOULD": [
+    {
+      "name": "ARKANSAS METHODIST MEDICAL CENTER",
+      "address": "900 WEST KINGSHIGHWAY",
+      "city": "PARAGOULD",
+      "state": "AR",
+      "zip": "72450",
+      "phone": "(870) 239-7000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARIS": [
+    {
+      "name": "MERCY HOSPITAL PARIS",
+      "address": "500 EAST ACADEMY",
+      "city": "PARIS",
+      "state": "AR",
+      "zip": "72855",
+      "phone": "(479) 963-6101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PIGGOTT": [
+    {
+      "name": "PIGGOTT COMMUNITY HOSPITAL",
+      "address": "1206 GORDON DUCKWORTH DRIVE",
+      "city": "PIGGOTT",
+      "state": "AR",
+      "zip": "72454",
+      "phone": "(870) 598-3881",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PINE BLUFF": [
+    {
+      "name": "JEFFERSON REGIONAL MEDICAL CENTER",
+      "address": "1600 WEST 40TH AVENUE",
+      "city": "PINE BLUFF",
+      "state": "AR",
+      "zip": "71603",
+      "phone": "(870) 541-7100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "POCAHONTAS": [
+    {
+      "name": "ST BERNARDS FIVE RIVERS MEDICAL CENTER",
+      "address": "2801 MEDICAL CENTER DRIVE",
+      "city": "POCAHONTAS",
+      "state": "AR",
+      "zip": "72455",
+      "phone": "(870) 892-6000",
+      "type": "Rural Emergency Hospital",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ROGERS": [
+    {
+      "name": "MERCY HOSPITAL NORTHWEST ARKANSAS",
+      "address": "2710 SOUTH RIFE MEDICAL LANE",
+      "city": "ROGERS",
+      "state": "AR",
+      "zip": "72758",
+      "phone": "(479) 338-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RUSSELLVILLE": [
+    {
+      "name": "ST MARYS REGIONAL MEDICAL CENTER",
+      "address": "1808 WEST MAIN STREET",
+      "city": "RUSSELLVILLE",
+      "state": "AR",
+      "zip": "72801",
+      "phone": "(479) 968-2841",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SALEM": [
+    {
+      "name": "BAXTER HEALTH FULTON COUNTY HOSPITAL",
+      "address": "679 NORTH MAIN STREET",
+      "city": "SALEM",
+      "state": "AR",
+      "zip": "72576",
+      "phone": "(870) 895-2691",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SEARCY": [
+    {
+      "name": "WHITE COUNTY MEDICAL CENTER",
+      "address": "3214 EAST RACE AVENUE",
+      "city": "SEARCY",
+      "state": "AR",
+      "zip": "72143",
+      "phone": "(501) 278-3100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHERWOOD": [
+    {
+      "name": "ST VINCENT MEDICAL CENTER/NORTH",
+      "address": "2215 WILDWOOD AVENUE",
+      "city": "SHERWOOD",
+      "state": "AR",
+      "zip": "72120",
+      "phone": "(501) 552-7100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SILOAM SPRINGS": [
+    {
+      "name": "SILOAM SPRINGS REGIONAL HOSPITAL",
+      "address": "603 NORTH PROGRESS AVENUE",
+      "city": "SILOAM SPRINGS",
+      "state": "AR",
+      "zip": "72761",
+      "phone": "(479) 524-4141",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPRINGDALE": [
+    {
+      "name": "NORTHWEST MEDICAL CENTER-SPRINGDALE",
+      "address": "609 WEST MAPLE AVENUE",
+      "city": "SPRINGDALE",
+      "state": "AR",
+      "zip": "72764",
+      "phone": "(479) 751-5711",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ARKANSAS CHILDREN'S NORTHWEST, INC",
+      "address": "2601 GENE GEORGE BOULEVARD",
+      "city": "SPRINGDALE",
+      "state": "AR",
+      "zip": "72762",
+      "phone": "(479) 725-6800",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STUTTGART": [
+    {
+      "name": "BAPTIST HEALTH MEDICAL CENTER-STUTTGART",
+      "address": "1703 NORTH BUERKLE ST",
+      "city": "STUTTGART",
+      "state": "AR",
+      "zip": "72160",
+      "phone": "(870) 673-3511",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TEXARKANA": [
+    {
+      "name": "RIVERVIEW BEHAVIORAL HEALTH",
+      "address": "701 ARKANSAS BOULEVARD SUITE 300",
+      "city": "TEXARKANA",
+      "state": "AR",
+      "zip": "71854",
+      "phone": "(870) 772-5028",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VAN BUREN": [
+    {
+      "name": "BAPTIST HEALTH - VAN BUREN",
+      "address": "211 CRAWFORD MEMORIAL DRIVE",
+      "city": "VAN BUREN",
+      "state": "AR",
+      "zip": "72956",
+      "phone": "(479) 474-3401",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WALDRON": [
+    {
+      "name": "MERCY HOSPITAL WALDRON",
+      "address": "1341 WEST SIXTH STREET",
+      "city": "WALDRON",
+      "state": "AR",
+      "zip": "72958",
+      "phone": "(479) 637-4135",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WALNUT RIDGE": [
+    {
+      "name": "LAWRENCE MEMORIAL HOSPITAL",
+      "address": "1309 WEST MAIN STREET",
+      "city": "WALNUT RIDGE",
+      "state": "AR",
+      "zip": "72476",
+      "phone": "(870) 886-1200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WARREN": [
+    {
+      "name": "BRADLEY COUNTY MEDICAL CENTER",
+      "address": "404 SOUTH BRADLEY STREET",
+      "city": "WARREN",
+      "state": "AR",
+      "zip": "71671",
+      "phone": "(870) 226-3731",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST MEMPHIS": [
+    {
+      "name": "BAPTIST MEMORIAL HOSPITAL-CRITTENDEN, INC",
+      "address": "2100 NORTH SEVENTH STREET",
+      "city": "WEST MEMPHIS",
+      "state": "AR",
+      "zip": "72301",
+      "phone": "(870) 394-7800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "PERIMETER BEHAVIORAL HOSPITAL OF WEST MEMPHIS",
+      "address": "600 NORTH 7TH STREET",
+      "city": "WEST MEMPHIS",
+      "state": "AR",
+      "zip": "72301",
+      "phone": "(870) 394-4113",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WYNNE": [
+    {
+      "name": "CROSSRIDGE COMMUNITY HOSPITAL",
+      "address": "310 SOUTH FALLS BOULEVARD",
+      "city": "WYNNE",
+      "state": "AR",
+      "zip": "72396",
+      "phone": "(870) 238-3300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

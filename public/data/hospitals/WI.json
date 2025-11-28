@@ -1,0 +1,2066 @@
+{
+  "ALTOONA": [
+    {
+      "name": "OAKLEAF SURGICAL HOSPITAL",
+      "address": "1000 OAKLEAF WAY",
+      "city": "ALTOONA",
+      "state": "WI",
+      "zip": "54720",
+      "phone": "(715) 895-9435",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "AMERY": [
+    {
+      "name": "AMERY HOSPITAL & CLINIC",
+      "address": "265 GRIFFIN STREET EAST",
+      "city": "AMERY",
+      "state": "WI",
+      "zip": "54001",
+      "phone": "(715) 268-0300",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ANTIGO": [
+    {
+      "name": "LANGLADE HOSPITAL",
+      "address": "112 E FIFTH AVE",
+      "city": "ANTIGO",
+      "state": "WI",
+      "zip": "54409",
+      "phone": "(715) 623-2331",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "APPLETON": [
+    {
+      "name": "ASCENSION NE WISCONSIN - ST ELIZABETH CAMPUS",
+      "address": "1506 S ONEIDA ST",
+      "city": "APPLETON",
+      "state": "WI",
+      "zip": "54915",
+      "phone": "(920) 738-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "THEDACARE REGIONAL MEDICAL CENTER - APPLETON INC",
+      "address": "1818 N MEADE ST",
+      "city": "APPLETON",
+      "state": "WI",
+      "zip": "54911",
+      "phone": "(920) 731-4101",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ASHLAND": [
+    {
+      "name": "TAMARACK HEALTH ASHLAND MEDICAL CENTER",
+      "address": "1615 MAPLE LANE",
+      "city": "ASHLAND",
+      "state": "WI",
+      "zip": "54806",
+      "phone": "(715) 685-5500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BALDWIN": [
+    {
+      "name": "WESTERN WISCONSIN HEALTH",
+      "address": "730 10TH AVE",
+      "city": "BALDWIN",
+      "state": "WI",
+      "zip": "54002",
+      "phone": "(715) 684-1111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BARABOO": [
+    {
+      "name": "SSM HEALTH ST CLARE HOSPITAL - BARABOO",
+      "address": "707 14TH ST",
+      "city": "BARABOO",
+      "state": "WI",
+      "zip": "53913",
+      "phone": "(608) 356-1400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BARRON": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM-NORTHLAND",
+      "address": "1222 E WOODLAND AVE",
+      "city": "BARRON",
+      "state": "WI",
+      "zip": "54812",
+      "phone": "(715) 537-3186",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BEAVER DAM": [
+    {
+      "name": "MARSHFIELD MEDICAL CENTER - BEAVER DAM (MMC-BD)",
+      "address": "707 S UNIVERSITY AVE",
+      "city": "BEAVER DAM",
+      "state": "WI",
+      "zip": "53916",
+      "phone": "(920) 887-7181",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BELOIT": [
+    {
+      "name": "BELOIT HEALTH SYSTEM",
+      "address": "1969 W HART RD",
+      "city": "BELOIT",
+      "state": "WI",
+      "zip": "53511",
+      "phone": "(608) 364-5011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BERLIN": [
+    {
+      "name": "THEDACARE MEDICAL CENTER - BERLIN INC",
+      "address": "225 MEMORIAL DRIVE",
+      "city": "BERLIN",
+      "state": "WI",
+      "zip": "54923",
+      "phone": "(920) 361-1313",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLACK RIVER FALLS": [
+    {
+      "name": "BLACK RIVER MEMORIAL HOSPITAL",
+      "address": "711 W ADAMS ST",
+      "city": "BLACK RIVER FALLS",
+      "state": "WI",
+      "zip": "54615",
+      "phone": "(715) 284-5361",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BLOOMER": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM CHIPPEWA VALLEY",
+      "address": "1501 THOMPSON ST",
+      "city": "BLOOMER",
+      "state": "WI",
+      "zip": "54724",
+      "phone": "(715) 568-2000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BOSCOBEL": [
+    {
+      "name": "GUNDERSEN BOSCOBEL AREA HOSPITAL AND CLINICS",
+      "address": "205 PARKER ST",
+      "city": "BOSCOBEL",
+      "state": "WI",
+      "zip": "53805",
+      "phone": "(608) 375-4112",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "BURLINGTON": [
+    {
+      "name": "AURORA MEMORIAL HOSPITAL BURLINGTON",
+      "address": "252 MCHENRY ST",
+      "city": "BURLINGTON",
+      "state": "WI",
+      "zip": "53105",
+      "phone": "(262) 767-6545",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CHILTON": [
+    {
+      "name": "ASCENSION CALUMET HOSPITAL",
+      "address": "614 MEMORIAL DRIVE",
+      "city": "CHILTON",
+      "state": "WI",
+      "zip": "53014",
+      "phone": "(920) 849-2386",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "COLUMBUS": [
+    {
+      "name": "COLUMBUS COMMUNITY HOSPITAL",
+      "address": "1515 PARK AVE",
+      "city": "COLUMBUS",
+      "state": "WI",
+      "zip": "53925",
+      "phone": "(920) 623-2200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "CUMBERLAND": [
+    {
+      "name": "CUMBERLAND MEMORIAL HOSPITAL",
+      "address": "1705 16TH AVE",
+      "city": "CUMBERLAND",
+      "state": "WI",
+      "zip": "54829",
+      "phone": "(715) 822-7200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DARLINGTON": [
+    {
+      "name": "MEMORIAL HOSPITAL OF LAFAYETTE COUNTY",
+      "address": "211 BEV ANDERSON DR",
+      "city": "DARLINGTON",
+      "state": "WI",
+      "zip": "53530",
+      "phone": "(608) 776-4466",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DODGEVILLE": [
+    {
+      "name": "UPLAND HILLS HEALTH",
+      "address": "800 COMPASSION WAY",
+      "city": "DODGEVILLE",
+      "state": "WI",
+      "zip": "53533",
+      "phone": "(608) 930-8000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "DURAND": [
+    {
+      "name": "CHIPPEWA VALLEY HOSPITAL",
+      "address": "1220 3RD AVE W",
+      "city": "DURAND",
+      "state": "WI",
+      "zip": "54736",
+      "phone": "(715) 672-4211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EAGLE RIVER": [
+    {
+      "name": "ASPIRUS EAGLE RIVER HOSPITAL",
+      "address": "201 HOSPITAL ROAD",
+      "city": "EAGLE RIVER",
+      "state": "WI",
+      "zip": "54521",
+      "phone": "(715) 479-7411",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EAU CLAIRE": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM EAU CLAIRE HOSPITAL",
+      "address": "1221 WHIPPLE ST",
+      "city": "EAU CLAIRE",
+      "state": "WI",
+      "zip": "54703",
+      "phone": "(715) 838-3311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MARSHFIELD MEDICAL CENTER - EAU CLAIRE",
+      "address": "2310 CRAIG RD",
+      "city": "EAU CLAIRE",
+      "state": "WI",
+      "zip": "54701",
+      "phone": "(715) 858-8100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EDGERTON": [
+    {
+      "name": "EDGERTON HOSPITAL AND HEALTH SERVICES",
+      "address": "11101 N SHERMAN ROAD",
+      "city": "EDGERTON",
+      "state": "WI",
+      "zip": "53534",
+      "phone": "(608) 884-3441",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "ELKHORN": [
+    {
+      "name": "AURORA LAKELAND MEDICAL CENTER",
+      "address": "W3985 COUNTY ROAD NN",
+      "city": "ELKHORN",
+      "state": "WI",
+      "zip": "53121",
+      "phone": "(262) 741-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FOND DU LAC": [
+    {
+      "name": "SSM HEALTH ST AGNES HOSPITAL-FOND DU LAC",
+      "address": "430 E DIVISION ST",
+      "city": "FOND DU LAC",
+      "state": "WI",
+      "zip": "54935",
+      "phone": "(920) 929-2300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FOND DU LAC COUNTY ACUTE PSYCH UNIT",
+      "address": "459 E FIRST ST",
+      "city": "FOND DU LAC",
+      "state": "WI",
+      "zip": "54935",
+      "phone": "(920) 929-3500",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FORT ATKINSON": [
+    {
+      "name": "FORT MEMORIAL HOSPITAL",
+      "address": "611 SHERMAN AVE E",
+      "city": "FORT ATKINSON",
+      "state": "WI",
+      "zip": "53538",
+      "phone": "(920) 568-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRANKLIN": [
+    {
+      "name": "MIDWEST ORTHOPEDIC SPECIALTY HOSPITAL",
+      "address": "10101 SOUTH 27TH ST  2ND FLOOR",
+      "city": "FRANKLIN",
+      "state": "WI",
+      "zip": "53132",
+      "phone": "(414) 817-5800",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "FRIENDSHIP": [
+    {
+      "name": "GUNDERSEN MOUNDVIEW HOSPITAL AND CLINICS",
+      "address": "402 W LAKE ST",
+      "city": "FRIENDSHIP",
+      "state": "WI",
+      "zip": "53934",
+      "phone": "(608) 339-3331",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GLENDALE": [
+    {
+      "name": "ORTHOPAEDIC HOSPITAL OF WISCONSIN",
+      "address": "475 W RIVER WOODS PKWY",
+      "city": "GLENDALE",
+      "state": "WI",
+      "zip": "53212",
+      "phone": "(414) 961-6803",
+      "type": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRAFTON": [
+    {
+      "name": "AURORA MEDICAL CENTER",
+      "address": "975 PORT WASHINGTON ROAD",
+      "city": "GRAFTON",
+      "state": "WI",
+      "zip": "53024",
+      "phone": "(262) 329-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GRANTSBURG": [
+    {
+      "name": "BURNETT MEDICAL CENTER",
+      "address": "257 W ST GEORGE AVE",
+      "city": "GRANTSBURG",
+      "state": "WI",
+      "zip": "54840",
+      "phone": "(715) 463-5353",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "GREEN BAY": [
+    {
+      "name": "BELLIN MEMORIAL HOSPITAL",
+      "address": "744 S WEBSTER AVE",
+      "city": "GREEN BAY",
+      "state": "WI",
+      "zip": "54301",
+      "phone": "(920) 433-3500",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST VINCENT HOSPITAL",
+      "address": "835 S VAN BUREN ST",
+      "city": "GREEN BAY",
+      "state": "WI",
+      "zip": "54301",
+      "phone": "(920) 433-0111",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST MARYS HOSPITAL MEDICAL CTR",
+      "address": "1726 SHAWANO AVE",
+      "city": "GREEN BAY",
+      "state": "WI",
+      "zip": "54303",
+      "phone": "(920) 498-4200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AURORA BAYCARE MEDICAL CTR",
+      "address": "2845 GREENBRIER RD",
+      "city": "GREEN BAY",
+      "state": "WI",
+      "zip": "54313",
+      "phone": "(920) 288-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BROWN COUNTY COMMUNITY TREATMENT CTR",
+      "address": "3150 GERSHWIN DRIVE",
+      "city": "GREEN BAY",
+      "state": "WI",
+      "zip": "54311",
+      "phone": "(920) 391-4700",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "BELLIN PSYCHIATRIC CENTER",
+      "address": "301 E ST JOSEPH ST",
+      "city": "GREEN BAY",
+      "state": "WI",
+      "zip": "54301",
+      "phone": "(920) 433-3630",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WILLOW CREEK BEHAVIORAL HEALTH",
+      "address": "1351 ONTARIO RD",
+      "city": "GREEN BAY",
+      "state": "WI",
+      "zip": "54311",
+      "phone": "(920) 328-1220",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HARTFORD": [
+    {
+      "name": "AURORA MEDICAL CTR WASHINGTON COUNTY",
+      "address": "1032 E SUMNER ST",
+      "city": "HARTFORD",
+      "state": "WI",
+      "zip": "53027",
+      "phone": "(262) 673-2300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HAYWARD": [
+    {
+      "name": "TAMARACK HEALTH HAYWARD MEDICAL CENTER",
+      "address": "11040 N STATE RD 77",
+      "city": "HAYWARD",
+      "state": "WI",
+      "zip": "54843",
+      "phone": "(715) 934-4321",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HILLSBORO": [
+    {
+      "name": "GUNDERSEN ST JOSEPHS HOSPITAL AND CLINICS",
+      "address": "400 WATER AVE",
+      "city": "HILLSBORO",
+      "state": "WI",
+      "zip": "54634",
+      "phone": "(608) 489-8000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HUDSON": [
+    {
+      "name": "HUDSON HOSPITAL",
+      "address": "405 STAGELINE ROAD",
+      "city": "HUDSON",
+      "state": "WI",
+      "zip": "54016",
+      "phone": "(715) 531-6000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "JANESVILLE": [
+    {
+      "name": "MERCY HEALTH SYSTEM CORP",
+      "address": "1000 MINERAL POINT AVE",
+      "city": "JANESVILLE",
+      "state": "WI",
+      "zip": "53547",
+      "phone": "(608) 756-6161",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SSM HEALTH ST MARY'S HOSPITAL - JANESVILLE",
+      "address": "3400 EAST RACINE STREET",
+      "city": "JANESVILLE",
+      "state": "WI",
+      "zip": "53546",
+      "phone": "(608) 373-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KENOSHA": [
+    {
+      "name": "FROEDTERT SOUTH INC.",
+      "address": "6308 EIGHTH AVE",
+      "city": "KENOSHA",
+      "state": "WI",
+      "zip": "53143",
+      "phone": "(262) 656-2368",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AURORA MEDICAL CENTER KENOSHA",
+      "address": "10400 75TH ST",
+      "city": "KENOSHA",
+      "state": "WI",
+      "zip": "53142",
+      "phone": "(262) 948-5600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LA CROSSE": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM-FRANCISCAN MEDICAL CENTER INC",
+      "address": "700 WEST AVENUE SOUTH",
+      "city": "LA CROSSE",
+      "state": "WI",
+      "zip": "54601",
+      "phone": "(608) 785-0940",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GUNDERSEN LUTHERAN MEDICAL CENTER",
+      "address": "1910 SOUTH AVE",
+      "city": "LA CROSSE",
+      "state": "WI",
+      "zip": "54601",
+      "phone": "(608) 782-7300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LADYSMITH": [
+    {
+      "name": "MARSHFIELD MEDICAL CENTER - LADYSMITH",
+      "address": "900 COLLEGE AVE WEST",
+      "city": "LADYSMITH",
+      "state": "WI",
+      "zip": "54848",
+      "phone": "(715) 532-5561",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LAKE GENEVA": [
+    {
+      "name": "MERCY WALWORTH HOSPITAL & MEDICAL CENTER",
+      "address": "N2950 STATE ROAD 67",
+      "city": "LAKE GENEVA",
+      "state": "WI",
+      "zip": "53147",
+      "phone": "(262) 245-0535",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LANCASTER": [
+    {
+      "name": "GRANT REGIONAL HEALTH CENTER",
+      "address": "507 S MONROE ST",
+      "city": "LANCASTER",
+      "state": "WI",
+      "zip": "53813",
+      "phone": "(608) 723-2143",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MADISON": [
+    {
+      "name": "MADISON VA MEDICAL CENTER",
+      "address": "2500 OVERLOOK TERRACE",
+      "city": "MADISON",
+      "state": "WI",
+      "zip": "53705",
+      "phone": "(608) 256-1901",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SSM HEALTH ST MARY'S HOSPITAL - MADISON",
+      "address": "700 SOUTH PARK ST",
+      "city": "MADISON",
+      "state": "WI",
+      "zip": "53715",
+      "phone": "(608) 251-6100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNITYPOINT HEALTH - MERITER",
+      "address": "202 S PARK ST",
+      "city": "MADISON",
+      "state": "WI",
+      "zip": "53715",
+      "phone": "(608) 417-6210",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "UNIVERSITY OF WI  HOSPITALS & CLINICS AUTHORITY",
+      "address": "600 HIGHLAND AVENUE",
+      "city": "MADISON",
+      "state": "WI",
+      "zip": "53792",
+      "phone": "(608) 263-6400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MENDOTA MENTAL HEALTH INSTITUTE",
+      "address": "301 TROY DR",
+      "city": "MADISON",
+      "state": "WI",
+      "zip": "53704",
+      "phone": "(608) 301-1000",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MANITOWOC": [
+    {
+      "name": "HOLY FAMILY MEMORIAL",
+      "address": "2300 WESTERN AVE",
+      "city": "MANITOWOC",
+      "state": "WI",
+      "zip": "54221",
+      "phone": "(920) 320-2011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARINETTE": [
+    {
+      "name": "BAY AREA MEDICAL CENTER",
+      "address": "3003 UNIVERSITY DR",
+      "city": "MARINETTE",
+      "state": "WI",
+      "zip": "54143",
+      "phone": "(715) 735-4200",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MARSHFIELD": [
+    {
+      "name": "MARSHFIELD MEDICAL CENTER",
+      "address": "611 ST JOSEPH AVE",
+      "city": "MARSHFIELD",
+      "state": "WI",
+      "zip": "54449",
+      "phone": "(715) 387-9963",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORWOOD HEALTH CENTER",
+      "address": "1600 N CHESTNUT AVE",
+      "city": "MARSHFIELD",
+      "state": "WI",
+      "zip": "54449",
+      "phone": "(715) 384-2188",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MAUSTON": [
+    {
+      "name": "MILE BLUFF MEDICAL CENTER",
+      "address": "1050 DIVISION ST",
+      "city": "MAUSTON",
+      "state": "WI",
+      "zip": "53948",
+      "phone": "(608) 847-6161",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MEDFORD": [
+    {
+      "name": "ASPIRUS MEDFORD HOSPITAL & CLINICS, INC",
+      "address": "135 S GIBSON ST",
+      "city": "MEDFORD",
+      "state": "WI",
+      "zip": "54451",
+      "phone": "(715) 748-8100",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MENOMONEE FALLS": [
+    {
+      "name": "COMMUNITY MEMORIAL HOSPITAL",
+      "address": "W180 N8085 TOWN HALL RD",
+      "city": "MENOMONEE FALLS",
+      "state": "WI",
+      "zip": "53051",
+      "phone": "(262) 251-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASCENSION WISCONSIN HOSP MENOMONEE FALLS CAMPUS",
+      "address": "N88W14275 MAIN STREET, SUITE 100",
+      "city": "MENOMONEE FALLS",
+      "state": "WI",
+      "zip": "53051",
+      "phone": "(262) 415-2001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MENOMONIE": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM-RED CEDAR INC",
+      "address": "2321 STOUT RD",
+      "city": "MENOMONIE",
+      "state": "WI",
+      "zip": "54751",
+      "phone": "(715) 235-5531",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MERRILL": [
+    {
+      "name": "ASPIRUS MERRILL HOSPITAL",
+      "address": "601 S CENTER AVE",
+      "city": "MERRILL",
+      "state": "WI",
+      "zip": "54452",
+      "phone": "(715) 536-5511",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MIDDLETON": [
+    {
+      "name": "MIRAMONT BEHAVIORAL HEALTH",
+      "address": "3169 DEMING WAY",
+      "city": "MIDDLETON",
+      "state": "WI",
+      "zip": "53562",
+      "phone": "(608) 716-8288",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MILWAUKEE": [
+    {
+      "name": "MILWAUKEE VA MEDICAL CENTER",
+      "address": "5000 W. NATIONAL AVENUE",
+      "city": "MILWAUKEE",
+      "state": "WI",
+      "zip": "53295",
+      "phone": "(414) 384-2000",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASCENSION COLUMBIA ST MARYS HOSPITAL MILWAUKEE",
+      "address": "2323 N LAKE DR",
+      "city": "MILWAUKEE",
+      "state": "WI",
+      "zip": "53211",
+      "phone": "(414) 585-1374",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASCENSION ST FRANCIS HOSPITAL",
+      "address": "3237 S 16TH ST",
+      "city": "MILWAUKEE",
+      "state": "WI",
+      "zip": "53215",
+      "phone": "(414) 647-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ASCENSION SE WISCONSIN HOSPITAL",
+      "address": "5000 W CHAMBERS ST",
+      "city": "MILWAUKEE",
+      "state": "WI",
+      "zip": "53210",
+      "phone": "(414) 447-2130",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "AURORA ST LUKES MEDICAL CENTER",
+      "address": "2900 W OKLAHOMA AVE",
+      "city": "MILWAUKEE",
+      "state": "WI",
+      "zip": "53215",
+      "phone": "(414) 649-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "FROEDTERT MEMORIAL LUTHERAN HOSPITAL",
+      "address": "9200 W WISCONSIN AVE",
+      "city": "MILWAUKEE",
+      "state": "WI",
+      "zip": "53226",
+      "phone": "(414) 805-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDRENS HOSPITAL OF WISCONSIN",
+      "address": "9000 W WISCONSIN AVE",
+      "city": "MILWAUKEE",
+      "state": "WI",
+      "zip": "53226",
+      "phone": "(414) 266-3954",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MENTAL HEALTH EMERGENCY CENTER, INC",
+      "address": "1525 N 12TH ST",
+      "city": "MILWAUKEE",
+      "state": "WI",
+      "zip": "53205",
+      "phone": "(414) 966-3030",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MINOCQUA": [
+    {
+      "name": "MARSHFIELD MEDICAL CENTER - MINOCQUA",
+      "address": "9576 HIGHWAY 70",
+      "city": "MINOCQUA",
+      "state": "WI",
+      "zip": "54548",
+      "phone": "(715) 358-1710",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "MONROE": [
+    {
+      "name": "THE MONROE CLINIC",
+      "address": "515 22ND AVE",
+      "city": "MONROE",
+      "state": "WI",
+      "zip": "53566",
+      "phone": "(608) 324-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEENAH": [
+    {
+      "name": "THEDACARE REGIONAL MED CTR - NEENAH",
+      "address": "130 2ND ST",
+      "city": "NEENAH",
+      "state": "WI",
+      "zip": "54956",
+      "phone": "(920) 729-3100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "CHILDRENS HOSPITAL OF WISCONSIN FOX VALLEY",
+      "address": "130 SECOND ST",
+      "city": "NEENAH",
+      "state": "WI",
+      "zip": "54956",
+      "phone": "(920) 969-7900",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEILLSVILLE": [
+    {
+      "name": "MARSHFIELD MEDICAL CENTER - NEILLSVILLE",
+      "address": "216 SUNSET PLACE",
+      "city": "NEILLSVILLE",
+      "state": "WI",
+      "zip": "54456",
+      "phone": "(715) 743-3101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW BERLIN": [
+    {
+      "name": "FROEDTERT COMMUNITY HOSPITAL",
+      "address": "4805 S MOORLAND RD",
+      "city": "NEW BERLIN",
+      "state": "WI",
+      "zip": "53151",
+      "phone": "(262) 796-0001",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW LONDON": [
+    {
+      "name": "THEDACARE MEDICAL CENTER - NEW LONDON",
+      "address": "1405 MILL ST",
+      "city": "NEW LONDON",
+      "state": "WI",
+      "zip": "54961",
+      "phone": "(920) 531-2000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "NEW RICHMOND": [
+    {
+      "name": "WESTFIELDS HOSPITAL AND CLINIC",
+      "address": "535 HOSPITAL RD",
+      "city": "NEW RICHMOND",
+      "state": "WI",
+      "zip": "54017",
+      "phone": "(715) 246-2101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OCONOMOWOC": [
+    {
+      "name": "OCONOMOWOC MEMORIAL HOSPITAL",
+      "address": "791 E SUMMIT AVE",
+      "city": "OCONOMOWOC",
+      "state": "WI",
+      "zip": "53066",
+      "phone": "(262) 569-9400",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ROGERS MEMORIAL HOSPITAL",
+      "address": "34700 VALLEY RD",
+      "city": "OCONOMOWOC",
+      "state": "WI",
+      "zip": "53066",
+      "phone": "(262) 646-4411",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OCONTO": [
+    {
+      "name": "BELLIN HEALTH OCONTO HOSPITAL",
+      "address": "820 ARBUTUS AVE",
+      "city": "OCONTO",
+      "state": "WI",
+      "zip": "54153",
+      "phone": "(920) 835-1101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OCONTO FALLS": [
+    {
+      "name": "HSHS ST CLARE MEMORIAL HOSPITAL",
+      "address": "855 S MAIN ST",
+      "city": "OCONTO FALLS",
+      "state": "WI",
+      "zip": "54154",
+      "phone": "(920) 846-3444",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSCEOLA": [
+    {
+      "name": "LADD MEMORIAL HOSPITAL",
+      "address": "2600 65TH AVENUE",
+      "city": "OSCEOLA",
+      "state": "WI",
+      "zip": "54020",
+      "phone": "(715) 294-2111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSHKOSH": [
+    {
+      "name": "AURORA MEDICAL CTR OSHKOSH",
+      "address": "855 N WESTHAVEN DRIVE",
+      "city": "OSHKOSH",
+      "state": "WI",
+      "zip": "54904",
+      "phone": "(920) 456-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "OSSEO": [
+    {
+      "name": "MAYO CLINIC HEALTH SYSTEM OAKRIDGE",
+      "address": "13025 8TH ST",
+      "city": "OSSEO",
+      "state": "WI",
+      "zip": "54758",
+      "phone": "(715) 597-3121",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PARK FALLS": [
+    {
+      "name": "FLAMBEAU HOSPITAL",
+      "address": "98 SHERRY AVE",
+      "city": "PARK FALLS",
+      "state": "WI",
+      "zip": "54552",
+      "phone": "(715) 762-7500",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PLATTEVILLE": [
+    {
+      "name": "SOUTHWEST HEALTH CENTER",
+      "address": "1400 EAST SIDE RD",
+      "city": "PLATTEVILLE",
+      "state": "WI",
+      "zip": "53818",
+      "phone": "(608) 348-2331",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PORTAGE": [
+    {
+      "name": "ASPIRUS DIVINE SAVIOR HOSPITAL",
+      "address": "2817 NEW PINERY ROAD",
+      "city": "PORTAGE",
+      "state": "WI",
+      "zip": "53901",
+      "phone": "(608) 742-4131",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRAIRIE DU CHIEN": [
+    {
+      "name": "CROSSING RIVERS HEALTH MEDICAL CENTER",
+      "address": "37868 US HWY 18",
+      "city": "PRAIRIE DU CHIEN",
+      "state": "WI",
+      "zip": "53821",
+      "phone": "(608) 357-2000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PRAIRIE DU SAC": [
+    {
+      "name": "SAUK PRAIRIE HOSPITAL",
+      "address": "260 26TH STREET",
+      "city": "PRAIRIE DU SAC",
+      "state": "WI",
+      "zip": "53578",
+      "phone": "(608) 643-3311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RACINE": [
+    {
+      "name": "ASCENSION ALL SAINTS HOSPITAL",
+      "address": "3801 SPRING ST",
+      "city": "RACINE",
+      "state": "WI",
+      "zip": "53405",
+      "phone": "(262) 687-4011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "REEDSBURG": [
+    {
+      "name": "REEDSBURG AREA MEDICAL CENTER",
+      "address": "2000 N DEWEY AVE",
+      "city": "REEDSBURG",
+      "state": "WI",
+      "zip": "53959",
+      "phone": "(608) 524-6487",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RHINELANDER": [
+    {
+      "name": "ASPIRUS RHINELANDER HOSPITAL",
+      "address": "2251 NORTH SHORE DR",
+      "city": "RHINELANDER",
+      "state": "WI",
+      "zip": "54501",
+      "phone": "(715) 361-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RICE LAKE": [
+    {
+      "name": "MARSHFIELD MEDICAL CENTER - RICE LAKE",
+      "address": "1700 WEST STOUT STREET",
+      "city": "RICE LAKE",
+      "state": "WI",
+      "zip": "54868",
+      "phone": "(715) 234-1515",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RICHLAND CENTER": [
+    {
+      "name": "RICHLAND HOSPITAL",
+      "address": "333 E SECOND ST",
+      "city": "RICHLAND CENTER",
+      "state": "WI",
+      "zip": "53581",
+      "phone": "(608) 647-6321",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RIPON": [
+    {
+      "name": "RIPON MEDICAL CENTER",
+      "address": "845 PARKSIDE ST",
+      "city": "RIPON",
+      "state": "WI",
+      "zip": "54971",
+      "phone": "(920) 748-3101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "RIVER FALLS": [
+    {
+      "name": "RIVER FALLS AREA HOSPITAL",
+      "address": "1629 E DIVISION ST",
+      "city": "RIVER FALLS",
+      "state": "WI",
+      "zip": "54022",
+      "phone": "(715) 307-6000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SAINT CROIX FALLS": [
+    {
+      "name": "ST CROIX REGIONAL MEDICAL CENTER",
+      "address": "235 E STATE STREET",
+      "city": "SAINT CROIX FALLS",
+      "state": "WI",
+      "zip": "54024",
+      "phone": "(715) 483-0247",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHAWANO": [
+    {
+      "name": "THEDACARE MEDICAL CENTER - SHAWANO",
+      "address": "100 COUNTY RD B",
+      "city": "SHAWANO",
+      "state": "WI",
+      "zip": "54166",
+      "phone": "(715) 526-2111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHEBOYGAN": [
+    {
+      "name": "AURORA HEALTH CARE CENTRAL INC",
+      "address": "2629 N 7TH ST",
+      "city": "SHEBOYGAN",
+      "state": "WI",
+      "zip": "53083",
+      "phone": "(920) 451-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "ST NICHOLAS HOSPITAL",
+      "address": "3100 SUPERIOR AVE",
+      "city": "SHEBOYGAN",
+      "state": "WI",
+      "zip": "53081",
+      "phone": "(920) 459-8300",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SHELL LAKE": [
+    {
+      "name": "INDIANHEAD MEDICAL CTR",
+      "address": "113 4TH AVE",
+      "city": "SHELL LAKE",
+      "state": "WI",
+      "zip": "54871",
+      "phone": "(715) 468-7833",
+      "type": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPARTA": [
+    {
+      "name": "MAYO CLINIC HLTH SYSTM FRANCISCAN HLTHCARE SPARTA",
+      "address": "310 W MAIN ST",
+      "city": "SPARTA",
+      "state": "WI",
+      "zip": "54656",
+      "phone": "(608) 269-2132",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SPOONER": [
+    {
+      "name": "SPOONER HEALTH SYSTEM",
+      "address": "1280 CHANDLER DR",
+      "city": "SPOONER",
+      "state": "WI",
+      "zip": "54801",
+      "phone": "(715) 635-2111",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STANLEY": [
+    {
+      "name": "ASPIRUS STANLEY HOSPITAL",
+      "address": "1120 PINE ST",
+      "city": "STANLEY",
+      "state": "WI",
+      "zip": "54768",
+      "phone": "(715) 644-5571",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STEVENS POINT": [
+    {
+      "name": "ASPIRUS STEVENS POINT HOSPITAL & CLINICS, INC.",
+      "address": "900 ILLINOIS AVE",
+      "city": "STEVENS POINT",
+      "state": "WI",
+      "zip": "54481",
+      "phone": "(715) 346-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "MARSHFIELD MEDICAL CENTER - RIVER REGION",
+      "address": "4100 STATE HIGHWAY 66",
+      "city": "STEVENS POINT",
+      "state": "WI",
+      "zip": "54482",
+      "phone": "(715) 997-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STOUGHTON": [
+    {
+      "name": "STOUGHTON HOSPITAL",
+      "address": "900 RIDGE ST",
+      "city": "STOUGHTON",
+      "state": "WI",
+      "zip": "53589",
+      "phone": "(608) 873-6611",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "STURGEON BAY": [
+    {
+      "name": "DOOR COUNTY MEDICAL CENTER",
+      "address": "323 SOUTH 18TH AVENUE",
+      "city": "STURGEON BAY",
+      "state": "WI",
+      "zip": "54235",
+      "phone": "(920) 743-5566",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUMMIT": [
+    {
+      "name": "AURORA MEDICAL CENTER - SUMMIT",
+      "address": "36500 AURORA DRIVE",
+      "city": "SUMMIT",
+      "state": "WI",
+      "zip": "53066",
+      "phone": "(262) 434-1600",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "SUPERIOR": [
+    {
+      "name": "ST MARYS HOSPITAL SUPERIOR",
+      "address": "3500 TOWER AVE",
+      "city": "SUPERIOR",
+      "state": "WI",
+      "zip": "54880",
+      "phone": "(715) 817-7000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TOMAH": [
+    {
+      "name": "TOMAH VA MEDICAL CENTER",
+      "address": "500 EAST VETERANS STREET",
+      "city": "TOMAH",
+      "state": "WI",
+      "zip": "54660",
+      "phone": "(608) 372-3971",
+      "type": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "TOMAH MEMORIAL HOSPITAL",
+      "address": "501 GOPHER DR",
+      "city": "TOMAH",
+      "state": "WI",
+      "zip": "54660",
+      "phone": "(608) 372-2181",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TOMAHAWK": [
+    {
+      "name": "ASPIRUS TOMAHAWK HOSPITAL",
+      "address": "401 W MOHAWK DR  SUITE 100",
+      "city": "TOMAHAWK",
+      "state": "WI",
+      "zip": "54487",
+      "phone": "(715) 453-7700",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "TWO RIVERS": [
+    {
+      "name": "AURORA MEDICAL CTR MANITOWOC COUNTY",
+      "address": "5000 MEMORIAL DRIVE",
+      "city": "TWO RIVERS",
+      "state": "WI",
+      "zip": "54241",
+      "phone": "(920) 794-5000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "VIROQUA": [
+    {
+      "name": "VERNON MEMORIAL HOSPITAL",
+      "address": "507 SOUTH MAIN ST",
+      "city": "VIROQUA",
+      "state": "WI",
+      "zip": "54665",
+      "phone": "(608) 637-2101",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WATERTOWN": [
+    {
+      "name": "WATERTOWN MEMORIAL HOSPITAL",
+      "address": "125 HOSPITAL DRIVE",
+      "city": "WATERTOWN",
+      "state": "WI",
+      "zip": "53098",
+      "phone": "(920) 261-4210",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAUKESHA": [
+    {
+      "name": "WAUKESHA MEMORIAL HOSPITAL",
+      "address": "725 AMERICAN AVE",
+      "city": "WAUKESHA",
+      "state": "WI",
+      "zip": "53188",
+      "phone": "(262) 928-1000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "WAUKESHA COUNTY MENTAL HEALTH CTR",
+      "address": "1501 AIRPORT RD",
+      "city": "WAUKESHA",
+      "state": "WI",
+      "zip": "53188",
+      "phone": "(262) 548-7950",
+      "type": "Psychiatric",
+      "ownership": "Government - Local",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAUPACA": [
+    {
+      "name": "THEDACARE MEDICAL CENTER-WAUPACA",
+      "address": "800 RIVERSIDE DRIVE",
+      "city": "WAUPACA",
+      "state": "WI",
+      "zip": "54981",
+      "phone": "(715) 258-1000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAUPUN": [
+    {
+      "name": "WAUPUN MEMORIAL HOSPITAL",
+      "address": "620 W BROWN ST",
+      "city": "WAUPUN",
+      "state": "WI",
+      "zip": "53963",
+      "phone": "(920) 324-6512",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAUSAU": [
+    {
+      "name": "ASPIRUS WAUSAU HOSPITAL",
+      "address": "333 PINE RIDGE BLVD",
+      "city": "WAUSAU",
+      "state": "WI",
+      "zip": "54401",
+      "phone": "(715) 847-2000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "NORTH CENTRAL HEALTH CARE",
+      "address": "1150 LAKEVIEW DR",
+      "city": "WAUSAU",
+      "state": "WI",
+      "zip": "54403",
+      "phone": "(715) 848-4600",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAUWATOSA": [
+    {
+      "name": "AURORA PSYCHIATRIC HOSPITAL",
+      "address": "1220 DEWEY AVE",
+      "city": "WAUWATOSA",
+      "state": "WI",
+      "zip": "53213",
+      "phone": "(414) 454-6600",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST ALLIS": [
+    {
+      "name": "WEST ALLIS MEMORIAL HOSPITAL",
+      "address": "8901 W LINCOLN AVE",
+      "city": "WEST ALLIS",
+      "state": "WI",
+      "zip": "53227",
+      "phone": "(414) 328-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "GRANITE HILLS HOSPITAL",
+      "address": "1706 S 68TH ST",
+      "city": "WEST ALLIS",
+      "state": "WI",
+      "zip": "53214",
+      "phone": "(414) 667-4800",
+      "type": "Psychiatric",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WEST BEND": [
+    {
+      "name": "ST JOSEPHS COMMUNITY HOSPITAL WEST BEND",
+      "address": "3200 PLEASANT VALLEY ROAD",
+      "city": "WEST BEND",
+      "state": "WI",
+      "zip": "53095",
+      "phone": "(262) 334-5533",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WESTON": [
+    {
+      "name": "MARSHFIELD MEDICAL CENTER - WESTON",
+      "address": "3400 MINISTRY PARKWAY",
+      "city": "WESTON",
+      "state": "WI",
+      "zip": "54476",
+      "phone": "(715) 393-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WHITEHALL": [
+    {
+      "name": "GUNDERSEN TRI-COUNTY HOSPITAL & CLINICS",
+      "address": "18601 LINCOLN ST",
+      "city": "WHITEHALL",
+      "state": "WI",
+      "zip": "54773",
+      "phone": "(715) 538-4361",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WILD ROSE": [
+    {
+      "name": "THEDACARE MEDICAL CENTER - WILD ROSE",
+      "address": "601 GROVE AVE",
+      "city": "WILD ROSE",
+      "state": "WI",
+      "zip": "54984",
+      "phone": "(920) 622-3257",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WINNEBAGO": [
+    {
+      "name": "WINNEBAGO MENTAL HEALTH INSTITUTE",
+      "address": "4100 TREFFERT DR",
+      "city": "WINNEBAGO",
+      "state": "WI",
+      "zip": "54985",
+      "phone": "(920) 235-4910",
+      "type": "Psychiatric",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WISCONSIN RAPIDS": [
+    {
+      "name": "ASPIRUS RIVERVIEW HOSPITAL & CLINICS INC",
+      "address": "410 DEWEY ST",
+      "city": "WISCONSIN RAPIDS",
+      "state": "WI",
+      "zip": "54494",
+      "phone": "(715) 423-6060",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WOODRUFF": [
+    {
+      "name": "HOWARD YOUNG MEDICAL CENTER",
+      "address": "240 MAPLE ST",
+      "city": "WOODRUFF",
+      "state": "WI",
+      "zip": "54568",
+      "phone": "(715) 356-8000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

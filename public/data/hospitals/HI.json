@@ -1,0 +1,352 @@
+{
+  "AIEA": [
+    {
+      "name": "PALI MOMI MEDICAL CENTER",
+      "address": "98-1079 MOANALUA ROAD",
+      "city": "AIEA",
+      "state": "HI",
+      "zip": "96701",
+      "phone": "(808) 486-6000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "EWA BEACH": [
+    {
+      "name": "KAHI MOHALA",
+      "address": "91-2301 FORT WEAVER ROAD",
+      "city": "EWA BEACH",
+      "state": "HI",
+      "zip": "96706",
+      "phone": "(808) 671-8511",
+      "type": "Psychiatric",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HILO": [
+    {
+      "name": "HILO BENIOFF MEDICAL CENTER",
+      "address": "1190 WAIANUENUE AVENUE",
+      "city": "HILO",
+      "state": "HI",
+      "zip": "96720",
+      "phone": "(808) 932-3000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HONOKAA": [
+    {
+      "name": "HALE HO'OLA HAMAKUA",
+      "address": "45-547 PLUMERIA STREET",
+      "city": "HONOKAA",
+      "state": "HI",
+      "zip": "96727",
+      "phone": "(808) 932-4000",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "HONOLULU": [
+    {
+      "name": "THE QUEENS MEDICAL CENTER",
+      "address": "1301 PUNCHBOWL ST",
+      "city": "HONOLULU",
+      "state": "HI",
+      "zip": "96813",
+      "phone": "(808) 538-9011",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KUAKINI MEDICAL CENTER",
+      "address": "347 NORTH KUAKINI STREET",
+      "city": "HONOLULU",
+      "state": "HI",
+      "zip": "96817",
+      "phone": "(808) 536-2236",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAISER FOUNDATION HOSPITAL",
+      "address": "3288 MOANALUA RD",
+      "city": "HONOLULU",
+      "state": "HI",
+      "zip": "96819",
+      "phone": "(808) 432-0000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "STRAUB CLINIC AND HOSPITAL",
+      "address": "888 S KING STREET",
+      "city": "HONOLULU",
+      "state": "HI",
+      "zip": "96813",
+      "phone": "(808) 522-4000",
+      "type": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "KAPIOLANI MEDICAL CENTER FOR WOMEN & CHILDREN",
+      "address": "1319 PUNAHOU STREET",
+      "city": "HONOLULU",
+      "state": "HI",
+      "zip": "96826",
+      "phone": "(808) 983-6000",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "SHRINERS HOSPITAL FOR CHILDREN",
+      "address": "1310 PUNAHOU STREET",
+      "city": "HONOLULU",
+      "state": "HI",
+      "zip": "96826",
+      "phone": "(808) 941-4466",
+      "type": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "Honolulu": [
+    {
+      "name": "Tripler AMC (FT Shafter)",
+      "address": "1 Jarrett White Rd",
+      "city": "Honolulu",
+      "state": "HI",
+      "zip": "96859",
+      "phone": "(808) 433-2778",
+      "type": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KAHUKU": [
+    {
+      "name": "KAHUKU MEDICAL CENTER",
+      "address": "56-117 PUALALEA STREET",
+      "city": "KAHUKU",
+      "state": "HI",
+      "zip": "96731",
+      "phone": "(808) 293-6200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KAILUA": [
+    {
+      "name": "ADVENTIST HEALTH CASTLE",
+      "address": "640 ULUKAHIKI ST",
+      "city": "KAILUA",
+      "state": "HI",
+      "zip": "96734",
+      "phone": "(808) 263-5015",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KAMUELA": [
+    {
+      "name": "NORTH HAWAII COMMUNITY HOSPITAL, INC",
+      "address": "67 1125 MAMALAHOA HIGHWAY",
+      "city": "KAMUELA",
+      "state": "HI",
+      "zip": "96743",
+      "phone": "(808) 885-4444",
+      "type": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KAPAA": [
+    {
+      "name": "SAMUEL MAHELONA MEMORIAL HOSPITAL",
+      "address": "4800 KAWAIHAU ROAD",
+      "city": "KAPAA",
+      "state": "HI",
+      "zip": "96746",
+      "phone": "(808) 822-4961",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KAPAAU": [
+    {
+      "name": "KOHALA HOSPITAL",
+      "address": "54-383 HOSPITAL ROAD",
+      "city": "KAPAAU",
+      "state": "HI",
+      "zip": "96755",
+      "phone": "(808) 889-6211",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KAUNAKAKAI": [
+    {
+      "name": "MOLOKAI GENERAL HOSPITAL",
+      "address": "280 HOME OLU PLACE",
+      "city": "KAUNAKAKAI",
+      "state": "HI",
+      "zip": "96748",
+      "phone": "(808) 553-5331",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KEALAKEKUA": [
+    {
+      "name": "KONA COMMUNITY HOSPITAL",
+      "address": "79-1019 HAUKAPILA STREET",
+      "city": "KEALAKEKUA",
+      "state": "HI",
+      "zip": "96750",
+      "phone": "(808) 322-9311",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "KULA": [
+    {
+      "name": "KULA HOSPITAL",
+      "address": "100 KEOKEA PLACE",
+      "city": "KULA",
+      "state": "HI",
+      "zip": "96790",
+      "phone": "(808) 878-1221",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LANAI CITY": [
+    {
+      "name": "LANAI COMMUNITY HOSPITAL",
+      "address": "628 7TH STREET",
+      "city": "LANAI CITY",
+      "state": "HI",
+      "zip": "96763",
+      "phone": "(808) 565-8450",
+      "type": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "LIHUE": [
+    {
+      "name": "WILCOX MEMORIAL HOSPITAL",
+      "address": "3-3420 KUHIO HIGHWAY",
+      "city": "LIHUE",
+      "state": "HI",
+      "zip": "96766",
+      "phone": "(808) 245-1100",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "PAHALA": [
+    {
+      "name": "KAU HOSPITAL",
+      "address": "1 KAMANI STREET",
+      "city": "PAHALA",
+      "state": "HI",
+      "zip": "96777",
+      "phone": "(808) 932-4200",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAILUKU": [
+    {
+      "name": "MAUI MEMORIAL MEDICAL CENTER",
+      "address": "221 MAHALANI STREET",
+      "city": "WAILUKU",
+      "state": "HI",
+      "zip": "96793",
+      "phone": "(808) 244-9056",
+      "type": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "No",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "WAIMEA": [
+    {
+      "name": "KAUAI VETERANS MEMORIAL HOSPITAL",
+      "address": "4643 WAIMEA CANYON DRIVE",
+      "city": "WAIMEA",
+      "state": "HI",
+      "zip": "96796",
+      "phone": "(808) 338-9431",
+      "type": "Critical Access Hospitals",
+      "ownership": "Government - State",
+      "emergency_services": "Yes",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}
