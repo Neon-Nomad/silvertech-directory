@@ -12,6 +12,7 @@ import SurveyResults from '@/features/family/survey/SurveyResults';
 import { ClaimProfile } from '@/features/operator/claim/ClaimProfile';
 import { ClaimBusiness } from '@/features/operator/claim/ClaimBusiness';
 import { CaliforniaPage } from '@/features/locations/CaliforniaPage';
+import { PricingPage } from '@/features/public/pricing/PricingPage';
 import { LocationPage } from '@/features/seo/LocationPage';
 import { FAQ } from '@/features/family/support/FAQ';
 import { AdvertiseWithUs } from '@/features/public/advertise/AdvertiseWithUs';
@@ -37,6 +38,7 @@ function App() {
           <Route path="/results" element={<SurveyResults />} />
           <Route path="/claim/:code" element={<ClaimProfile />} />
           <Route path="/claim-business" element={<ClaimBusiness />} />
+          <Route path="/pricing" element={<PricingPage />} />
           <Route path="/assisted-living/california" element={<CaliforniaPage />} />
           <Route path="/assisted-living/:state" element={<LocationPage />} />
           <Route path="/assisted-living/:state/:city" element={<LocationPage />} />
