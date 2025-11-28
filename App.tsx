@@ -20,6 +20,7 @@ import { CategoryPage } from '@/src/pages/products/CategoryPage';
 import { LocationPage } from '@/features/seo/LocationPage';
 import { FAQ } from '@/features/family/support/FAQ';
 import { AdvertiseWithUs } from '@/features/public/advertise/AdvertiseWithUs';
+import { HonestCarePage } from '@/features/public/transparency/HonestCarePage';
 import { Blog } from './features/public/blog/Blog';
 
 import { Home } from '@/features/family/landing/Home';
@@ -52,6 +53,7 @@ function App() {
           <Route path="/assisted-living/:state/:city" element={<LocationPage />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/advertise" element={<AdvertiseWithUs />} />
+          <Route path="/honest-care" element={<HonestCarePage />} />
         <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
