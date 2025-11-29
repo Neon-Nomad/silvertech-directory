@@ -8,10 +8,10 @@ export const ComparisonBar: React.FC = () => {
   if (selectedFacilities.length === 0) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg z-50 animate-slide-up">
+    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg z-[900] animate-slide-up">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
-          
+
           <div className="flex items-center gap-6">
             <div className="hidden sm:block">
               <span className="font-bold text-slate-900">{selectedFacilities.length}</span>
@@ -53,6 +53,13 @@ export const ComparisonBar: React.FC = () => {
               className="inline-flex items-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
             >
               Compare Now <ArrowRight size={16} className="ml-2" />
+            </button>
+            <button
+              onClick={clearComparison}
+              className="p-2 text-slate-400 hover:text-slate-600 rounded-full hover:bg-slate-100 transition-colors"
+              title="Close Comparison Tool"
+            >
+              <X size={20} />
             </button>
           </div>
 

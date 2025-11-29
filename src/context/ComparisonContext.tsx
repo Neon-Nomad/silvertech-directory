@@ -48,10 +48,8 @@ export const ComparisonProvider: React.FC<{ children: ReactNode }> = ({ children
 
   const addToCompare = (facility: ComparisonFacility) => {
     if (selectedFacilities.find(f => f.id === facility.id)) return;
-    
+
     if (selectedFacilities.length >= 3) {
-      // Optional: Alert user or replace oldest? For now, just alert/no-op
-      alert("You can compare up to 3 facilities at a time.");
       return;
     }
 
@@ -68,10 +66,10 @@ export const ComparisonProvider: React.FC<{ children: ReactNode }> = ({ children
   };
 
   return (
-    <ComparisonContext.Provider value={{ 
-      selectedFacilities, 
-      addToCompare, 
-      removeFromCompare, 
+    <ComparisonContext.Provider value={{
+      selectedFacilities,
+      addToCompare,
+      removeFromCompare,
       clearComparison,
       isOpen,
       setIsOpen
