@@ -1,0 +1,2417 @@
+{
+  "state": "Montana",
+  "state_code": "MT",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 61,
+    "total_nursing_homes": 61,
+    "total_assisted_living": 0,
+    "total_certified_beds": 5196,
+    "counties_served": 34,
+    "average_beds_per_facility": 86.6
+  },
+  "quality_distribution": {
+    "five_star": 9,
+    "four_star": 11,
+    "three_star": 16,
+    "two_star": 11,
+    "one_star": 12
+  },
+  "counties": {
+    "Cascade": {
+      "facility_count": 4,
+      "total_beds": 417
+    },
+    "Yellowstone": {
+      "facility_count": 7,
+      "total_beds": 894
+    },
+    "Fergus": {
+      "facility_count": 2,
+      "total_beds": 218
+    },
+    "Flathead": {
+      "facility_count": 5,
+      "total_beds": 610
+    },
+    "Missoula": {
+      "facility_count": 3,
+      "total_beds": 318
+    },
+    "Lincoln": {
+      "facility_count": 2,
+      "total_beds": 150
+    },
+    "Lewis And Clark": {
+      "facility_count": 2,
+      "total_beds": 198
+    },
+    "Park": {
+      "facility_count": 1,
+      "total_beds": 115
+    },
+    "Lake": {
+      "facility_count": 2,
+      "total_beds": 145
+    },
+    "Jefferson": {
+      "facility_count": 1,
+      "total_beds": 70
+    },
+    "Silver Bow": {
+      "facility_count": 4,
+      "total_beds": 449
+    },
+    "Toole": {
+      "facility_count": 1,
+      "total_beds": 53
+    },
+    "Deer Lodge": {
+      "facility_count": 1,
+      "total_beds": 62
+    },
+    "Gallatin": {
+      "facility_count": 1,
+      "total_beds": 94
+    },
+    "Dawson": {
+      "facility_count": 2,
+      "total_beds": 155
+    },
+    "Sanders": {
+      "facility_count": 2,
+      "total_beds": 68
+    },
+    "Sheridan": {
+      "facility_count": 1,
+      "total_beds": 45
+    },
+    "Rosebud": {
+      "facility_count": 1,
+      "total_beds": 31
+    },
+    "Roosevelt": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Wibaux": {
+      "facility_count": 1,
+      "total_beds": 40
+    },
+    "Powder River": {
+      "facility_count": 1,
+      "total_beds": 41
+    },
+    "Valley": {
+      "facility_count": 1,
+      "total_beds": 96
+    },
+    "Glacier": {
+      "facility_count": 2,
+      "total_beds": 88
+    },
+    "Custer": {
+      "facility_count": 1,
+      "total_beds": 84
+    },
+    "Hill": {
+      "facility_count": 1,
+      "total_beds": 135
+    },
+    "Pondera": {
+      "facility_count": 1,
+      "total_beds": 59
+    },
+    "Richland": {
+      "facility_count": 1,
+      "total_beds": 93
+    },
+    "Beaverhead": {
+      "facility_count": 1,
+      "total_beds": 87
+    },
+    "Ravalli": {
+      "facility_count": 2,
+      "total_beds": 108
+    },
+    "Blaine": {
+      "facility_count": 1,
+      "total_beds": 42
+    },
+    "Powell": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Madison": {
+      "facility_count": 2,
+      "total_beds": 71
+    },
+    "Big Horn": {
+      "facility_count": 1,
+      "total_beds": 40
+    },
+    "Stillwater": {
+      "facility_count": 1,
+      "total_beds": 0
+    }
+  },
+  "facilities": [
+    {
+      "name": "BENEFIS SENIOR SERVICES - EASTVIEW",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2621 15TH AVE S",
+        "city": "GREAT FALLS",
+        "state": "MT",
+        "zip": "59405"
+      },
+      "contact": {
+        "phone": "4064555903",
+        "phone_formatted": "4064555903"
+      },
+      "location": {
+        "county": "Cascade",
+        "latitude": 47.4897,
+        "longitude": -111.26
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 146,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BENEFIS HOSPITALS INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SKYLINE HEIGHTS NURSING AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1807 24TH ST W",
+        "city": "BILLINGS",
+        "state": "MT",
+        "zip": "59102"
+      },
+      "contact": {
+        "phone": "4066565010",
+        "phone_formatted": "4066565010"
+      },
+      "location": {
+        "county": "Yellowstone",
+        "latitude": 45.7884,
+        "longitude": -108.58
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 150,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BILLINGS NURSING AND REHAB CENTER LLC",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "VALLE VISTA REHABILITATION AND NURSING LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "402 SUMMIT AVE",
+        "city": "LEWISTOWN",
+        "state": "MT",
+        "zip": "59457"
+      },
+      "contact": {
+        "phone": "4065388775",
+        "phone_formatted": "4065388775"
+      },
+      "location": {
+        "county": "Fergus",
+        "latitude": 47.0507,
+        "longitude": -109.43
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 101,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VALLE VISTA REHABILITATION AND NURSING LLC",
+        "chain_name": "CHARLY BELLO FAMILY, THE MAZE FAMILY, THE SWAIN FAMILY, & WALTER MYERS"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ST JOHN'S LUTHERAN HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3940 RIMROCK RD",
+        "city": "BILLINGS",
+        "state": "MT",
+        "zip": "59102"
+      },
+      "contact": {
+        "phone": "4066555600",
+        "phone_formatted": "4066555600"
+      },
+      "location": {
+        "county": "Yellowstone",
+        "latitude": 45.7986,
+        "longitude": -108.62
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 186,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST JOHNS LUTHERAN MINISTRIES INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "KALISPELL REHABILITATION AND NURSING LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "171 HERITAGE WAY",
+        "city": "KALISPELL",
+        "state": "MT",
+        "zip": "59901"
+      },
+      "contact": {
+        "phone": "4067550800",
+        "phone_formatted": "4067550800"
+      },
+      "location": {
+        "county": "Flathead",
+        "latitude": 48.2181,
+        "longitude": -114.33
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 140,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KALISPELL REHABILITATION AND NURSING LLC",
+        "chain_name": "CHARLY BELLO FAMILY, THE MAZE FAMILY, THE SWAIN FAMILY, & WALTER MYERS"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "YELLOWSTONE RIVER NURSING AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2115 CENTRAL AVE",
+        "city": "BILLINGS",
+        "state": "MT",
+        "zip": "59102"
+      },
+      "contact": {
+        "phone": "4066566500",
+        "phone_formatted": "4066566500"
+      },
+      "location": {
+        "county": "Yellowstone",
+        "latitude": 45.7698,
+        "longitude": -108.57
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 160,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "YELLOWSTONE NURSING AND REHAB CENTER LLC",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PARK PLACE TRANSITIONAL CARE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1500 32ND ST S",
+        "city": "GREAT FALLS",
+        "state": "MT",
+        "zip": "59405"
+      },
+      "contact": {
+        "phone": "4067614300",
+        "phone_formatted": "4067614300"
+      },
+      "location": {
+        "county": "Cascade",
+        "latitude": 47.4881,
+        "longitude": -111.25
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 189,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SWEETWATER GF OPCO LLC",
+        "chain_name": "SWEETWATER CARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MISSOULA HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3018 RATTLESNAKE DR",
+        "city": "MISSOULA",
+        "state": "MT",
+        "zip": "59802"
+      },
+      "contact": {
+        "phone": "4065490988",
+        "phone_formatted": "4065490988"
+      },
+      "location": {
+        "county": "Missoula",
+        "latitude": 46.8929,
+        "longitude": -113.97
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 53,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MISSOULA SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIBBY CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "308 E THIRD ST",
+        "city": "LIBBY",
+        "state": "MT",
+        "zip": "59923"
+      },
+      "contact": {
+        "phone": "4062936285",
+        "phone_formatted": "4062936285"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 48.3922,
+        "longitude": -115.55
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 101,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LIBBY OF CASCADIA",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "VILLAGE HEALTH & REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2651 SOUTH AVE W",
+        "city": "MISSOULA",
+        "state": "MT",
+        "zip": "59804"
+      },
+      "contact": {
+        "phone": "4067289162",
+        "phone_formatted": "4067289162"
+      },
+      "location": {
+        "county": "Missoula",
+        "latitude": 46.8487,
+        "longitude": -114.04
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 193,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COMMUNITY NURSING, INC",
+        "chain_name": "THE GOODMAN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MOUNT ASCENSION TRANSITIONAL CARE OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2475 WINNE AVE",
+        "city": "HELENA",
+        "state": "MT",
+        "zip": "59601"
+      },
+      "contact": {
+        "phone": "4064421350",
+        "phone_formatted": "4064421350"
+      },
+      "location": {
+        "county": "Lewis And Clark",
+        "latitude": 46.5814,
+        "longitude": -112.0
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 108,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HELENA EAST OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIVINGSTON HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "510 S 14TH ST",
+        "city": "LIVINGSTON",
+        "state": "MT",
+        "zip": "59047"
+      },
+      "contact": {
+        "phone": "4062220672",
+        "phone_formatted": "4062220672"
+      },
+      "location": {
+        "county": "Park",
+        "latitude": 45.6493,
+        "longitude": -110.57
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 115,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LIVINGSTON SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "POLSON HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "9 14TH AVE W",
+        "city": "POLSON",
+        "state": "MT",
+        "zip": "59860"
+      },
+      "contact": {
+        "phone": "4068834378",
+        "phone_formatted": "4068834378"
+      },
+      "location": {
+        "county": "Lake",
+        "latitude": 47.6824,
+        "longitude": -114.16
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 70,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "POLSON SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ELKHORN HEALTHCARE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "474 HWY 282",
+        "city": "CLANCY",
+        "state": "MT",
+        "zip": "59634"
+      },
+      "contact": {
+        "phone": "4069338311",
+        "phone_formatted": "4069338311"
+      },
+      "location": {
+        "county": "Jefferson",
+        "latitude": 46.4532,
+        "longitude": -111.98
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 70,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CLANCY NURSING AND REHAB CENTER LLC",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "COPPER RIDGE HEALTH AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3251 NETTIE ST",
+        "city": "BUTTE",
+        "state": "MT",
+        "zip": "59701"
+      },
+      "contact": {
+        "phone": "4067233225",
+        "phone_formatted": "4067233225"
+      },
+      "location": {
+        "county": "Silver Bow",
+        "latitude": 45.9904,
+        "longitude": -112.49
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 186,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COPPER RIDGE NURSING AND REHAB CENTER LLC",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LOGAN HEALTH CARE CENTER - SHELBY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "630 PARK DRIVE",
+        "city": "SHELBY",
+        "state": "MT",
+        "zip": "59474"
+      },
+      "contact": {
+        "phone": "4064343260",
+        "phone_formatted": "4064343260"
+      },
+      "location": {
+        "county": "Toole",
+        "latitude": 48.5086,
+        "longitude": -111.85
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 53,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LOGAN HEALTH CARE CENTER - SHELBY",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "COMMUNITY NURSING HOME OF ANACONDA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "615 MAIN ST",
+        "city": "ANACONDA",
+        "state": "MT",
+        "zip": "59711"
+      },
+      "contact": {
+        "phone": "4065638414",
+        "phone_formatted": "4065638414"
+      },
+      "location": {
+        "county": "Deer Lodge",
+        "latitude": 46.1252,
+        "longitude": -112.95
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COMMUNITY HOSPITAL OF ANACONDA",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GALLATIN REST HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1221 W DURSTON RD",
+        "city": "BOZEMAN",
+        "state": "MT",
+        "zip": "59715"
+      },
+      "contact": {
+        "phone": "4065823300",
+        "phone_formatted": "4065823300"
+      },
+      "location": {
+        "county": "Gallatin",
+        "latitude": 45.6856,
+        "longitude": -111.05
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 94,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GALLATIN COUNTY",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GLENDIVE MEDICAL CENTER N H",
+      "type": "Nursing Home",
+      "address": {
+        "street": "202 PROSPECT DR",
+        "city": "GLENDIVE",
+        "state": "MT",
+        "zip": "59330"
+      },
+      "contact": {
+        "phone": "4063453320",
+        "phone_formatted": "4063453320"
+      },
+      "location": {
+        "county": "Dawson",
+        "latitude": 47.1169,
+        "longitude": -104.7
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 75,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GLENDIVE MEDICAL CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HOT SPRINGS HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "600 1ST AVE N",
+        "city": "HOT SPRINGS",
+        "state": "MT",
+        "zip": "59845"
+      },
+      "contact": {
+        "phone": "4067412992",
+        "phone_formatted": "4067412992"
+      },
+      "location": {
+        "county": "Sanders",
+        "latitude": 47.6099,
+        "longitude": -114.68
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HOT SPRINGS SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SHERIDAN MEMORIAL NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "440 W LAUREL AVE",
+        "city": "PLENTYWOOD",
+        "state": "MT",
+        "zip": "59254"
+      },
+      "contact": {
+        "phone": "4067653700",
+        "phone_formatted": "4067653700"
+      },
+      "location": {
+        "county": "Sheridan",
+        "latitude": 48.7787,
+        "longitude": -104.56
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 45,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SHERIDAN MEMORIAL HOSPITAL ASSOCIATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ROSEBUD HEALTH CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "383 N 17TH AVE",
+        "city": "FORSYTH",
+        "state": "MT",
+        "zip": "59327"
+      },
+      "contact": {
+        "phone": "4063464243",
+        "phone_formatted": "4063464243"
+      },
+      "location": {
+        "county": "Rosebud",
+        "latitude": 46.2713,
+        "longitude": -106.67
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 31,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROSEBUD COMMUNITY HOSPITAL INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FAITH LUTHERAN HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1000 6TH AVE N",
+        "city": "WOLF POINT",
+        "state": "MT",
+        "zip": "59201"
+      },
+      "contact": {
+        "phone": "4066531400",
+        "phone_formatted": "4066531400"
+      },
+      "location": {
+        "county": "Roosevelt",
+        "latitude": 48.059,
+        "longitude": -106.05
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WIBAUX COUNTY NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "712 WIBAUX ST S",
+        "city": "WIBAUX",
+        "state": "MT",
+        "zip": "59353"
+      },
+      "contact": {
+        "phone": "4067962429",
+        "phone_formatted": "4067962429"
+      },
+      "location": {
+        "county": "Wibaux",
+        "latitude": 46.9806,
+        "longitude": -104.19
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WIBAUX COUNTY NURSING HOME OF WIBAUX MONTANA",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "COONEY HEALTHCARE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2555 E BROADWAY",
+        "city": "HELENA",
+        "state": "MT",
+        "zip": "59601"
+      },
+      "contact": {
+        "phone": "4064471651",
+        "phone_formatted": "4064471651"
+      },
+      "location": {
+        "county": "Lewis And Clark",
+        "latitude": 46.5842,
+        "longitude": -111.99
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HELENA NURSING AND REHAB CENTER LLC",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MOUNTAIN VIEW OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10 MOUNTAIN VIEW DR",
+        "city": "EUREKA",
+        "state": "MT",
+        "zip": "59917"
+      },
+      "contact": {
+        "phone": "4062972541",
+        "phone_formatted": "4062972541"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 48.8756,
+        "longitude": -115.04
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 49,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EUREKA OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "POWDER RIVER MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "104 N TRAUTMAN",
+        "city": "BROADUS",
+        "state": "MT",
+        "zip": "59317"
+      },
+      "contact": {
+        "phone": "4064362646",
+        "phone_formatted": "4064362646"
+      },
+      "location": {
+        "county": "Powder River",
+        "latitude": 45.4435,
+        "longitude": -105.41
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 41,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "POWDER RIVER COUNTY",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "VALLEY VIEW HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1225 PERRY LN",
+        "city": "GLASGOW",
+        "state": "MT",
+        "zip": "59230"
+      },
+      "contact": {
+        "phone": "4062282461",
+        "phone_formatted": "4062282461"
+      },
+      "location": {
+        "county": "Valley",
+        "latitude": 48.2083,
+        "longitude": -106.64
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 96,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AMERICAN LUTHERAN CHURCH VALLEY VIEW HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ST LUKE COMMUNITY NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "107 6TH AVE S W",
+        "city": "RONAN",
+        "state": "MT",
+        "zip": "59864"
+      },
+      "contact": {
+        "phone": "4066764441",
+        "phone_formatted": "4066764441"
+      },
+      "location": {
+        "county": "Lake",
+        "latitude": 47.5418,
+        "longitude": -114.14
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 75,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST LUKES COMMUNITY HOSPITAL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MONTANA VETERANS HOME N H",
+      "type": "Nursing Home",
+      "address": {
+        "street": "400 VETERANS DR",
+        "city": "COLUMBIA FALLS",
+        "state": "MT",
+        "zip": "59912"
+      },
+      "contact": {
+        "phone": "4068923256",
+        "phone_formatted": "4068923256"
+      },
+      "location": {
+        "county": "Flathead",
+        "latitude": 48.3653,
+        "longitude": -114.19
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF MONTANA",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CONTINENTAL CARE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2400 CONTINENTAL DR",
+        "city": "BUTTE",
+        "state": "MT",
+        "zip": "59701"
+      },
+      "contact": {
+        "phone": "4067236556",
+        "phone_formatted": "4067236556"
+      },
+      "location": {
+        "county": "Silver Bow",
+        "latitude": 45.9896,
+        "longitude": -112.49
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SWEETWATER BUTTE OPCO LLC",
+        "chain_name": "SWEETWATER CARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NORTHERN PINES REHABILITATION AND NURSING",
+      "type": "Nursing Home",
+      "address": {
+        "street": "707 3RD ST SE",
+        "city": "CUT BANK",
+        "state": "MT",
+        "zip": "59427"
+      },
+      "contact": {
+        "phone": "4068735600",
+        "phone_formatted": "4068735600"
+      },
+      "location": {
+        "county": "Glacier",
+        "latitude": 48.628,
+        "longitude": -112.33
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 41,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTHERN PINES REHABILITATION AND NURSING",
+        "chain_name": "CHARLY BELLO FAMILY, THE MAZE FAMILY, THE SWAIN FAMILY, & WALTER MYERS"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "INTERMOUNTAIN HEALTH HOLY ROSARY HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2600 WILSON ST",
+        "city": "MILES CITY",
+        "state": "MT",
+        "zip": "59301"
+      },
+      "contact": {
+        "phone": "4062332789",
+        "phone_formatted": "4062332789"
+      },
+      "location": {
+        "county": "Custer",
+        "latitude": 46.3974,
+        "longitude": -105.83
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 84,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HOLY ROSARY HEALTHCARE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CLARK FORK VALLEY NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10 KRUGER RD",
+        "city": "PLAINS",
+        "state": "MT",
+        "zip": "59859"
+      },
+      "contact": {
+        "phone": "4068264800",
+        "phone_formatted": "4068264800"
+      },
+      "location": {
+        "county": "Sanders",
+        "latitude": 47.4695,
+        "longitude": -114.89
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 28,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PLAINS HOSPITAL CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BRENDAN HOUSE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "350 CONWAY DR",
+        "city": "KALISPELL",
+        "state": "MT",
+        "zip": "59901"
+      },
+      "contact": {
+        "phone": "4067516500",
+        "phone_formatted": "4067516500"
+      },
+      "location": {
+        "county": "Flathead",
+        "latitude": 48.2136,
+        "longitude": -114.33
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 110,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTHWEST HORIZONS INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LAUREL HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "820 3RD AVE",
+        "city": "LAUREL",
+        "state": "MT",
+        "zip": "59044"
+      },
+      "contact": {
+        "phone": "4066288251",
+        "phone_formatted": "4066288251"
+      },
+      "location": {
+        "county": "Yellowstone",
+        "latitude": 45.6768,
+        "longitude": -108.77
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 79,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAUREL SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NORTHERN MONTANA CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "24 13TH ST",
+        "city": "HAVRE",
+        "state": "MT",
+        "zip": "59501"
+      },
+      "contact": {
+        "phone": "4062621900",
+        "phone_formatted": "4062621900"
+      },
+      "location": {
+        "county": "Hill",
+        "latitude": 48.5393,
+        "longitude": -109.69
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 135,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTHERN MONTANA CARE CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LOGAN HEALTH - CONRAD",
+      "type": "Nursing Home",
+      "address": {
+        "street": "805 SUNSET BLVD",
+        "city": "CONRAD",
+        "state": "MT",
+        "zip": "59425"
+      },
+      "contact": {
+        "phone": "4062713211",
+        "phone_formatted": "4062713211"
+      },
+      "location": {
+        "county": "Pondera",
+        "latitude": 48.1739,
+        "longitude": -111.96
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 59,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LOGAN HEALTH - CONRAD",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BILLINGS REHABILITATION AND NURSING LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "600 S 27TH ST",
+        "city": "BILLINGS",
+        "state": "MT",
+        "zip": "59101"
+      },
+      "contact": {
+        "phone": "4062598000",
+        "phone_formatted": "4062598000"
+      },
+      "location": {
+        "county": "Yellowstone",
+        "latitude": 45.7759,
+        "longitude": -108.5
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BILLINGS REHABILITATION AND NURSING LLC",
+        "chain_name": "CHARLY BELLO FAMILY, THE MAZE FAMILY, THE SWAIN FAMILY, & WALTER MYERS"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SIDNEY HEALTH CENTER EXTENDED CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "104 14TH AVE NW",
+        "city": "SIDNEY",
+        "state": "MT",
+        "zip": "59270"
+      },
+      "contact": {
+        "phone": "4064882300",
+        "phone_formatted": "4064882300"
+      },
+      "location": {
+        "county": "Richland",
+        "latitude": 47.717,
+        "longitude": -104.17
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 93,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SIDNEY HEALTH CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CREST NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3131 AMHERST AVE",
+        "city": "BUTTE",
+        "state": "MT",
+        "zip": "59701"
+      },
+      "contact": {
+        "phone": "4064947035",
+        "phone_formatted": "4064947035"
+      },
+      "location": {
+        "county": "Silver Bow",
+        "latitude": 45.9865,
+        "longitude": -112.49
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 103,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CNH ACQUISITIONS INC.",
+        "chain_name": "REAL PROPERTY HEALTH FACILITIES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RIVER RIDGE REHABILITATION AND NURSING LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1415 YELLOWSTONE RIVER RD",
+        "city": "BILLINGS",
+        "state": "MT",
+        "zip": "59105"
+      },
+      "contact": {
+        "phone": "4062459330",
+        "phone_formatted": "4062459330"
+      },
+      "location": {
+        "county": "Yellowstone",
+        "latitude": 45.8183,
+        "longitude": -108.45
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 129,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RIVER RIDGE REHABILITATION AND NURSING LLC",
+        "chain_name": "CHARLY BELLO FAMILY, THE MAZE FAMILY, THE SWAIN FAMILY, & WALTER MYERS"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PIONEER CARE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "200 N OREGON ST",
+        "city": "DILLON",
+        "state": "MT",
+        "zip": "59725"
+      },
+      "contact": {
+        "phone": "4066835105",
+        "phone_formatted": "4066835105"
+      },
+      "location": {
+        "county": "Beaverhead",
+        "latitude": 45.2122,
+        "longitude": -112.62
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 87,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SWEETWATER DILLON OPCO, LLC",
+        "chain_name": "SWEETWATER CARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE LIVING CENTRE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "57 MAIN ST",
+        "city": "STEVENSVILLE",
+        "state": "MT",
+        "zip": "59870"
+      },
+      "contact": {
+        "phone": "4067775411",
+        "phone_formatted": "4067775411"
+      },
+      "location": {
+        "county": "Ravalli",
+        "latitude": 46.5135,
+        "longitude": -114.09
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LIVING CENTRE LIMITED",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RIVERSIDE HEALTH & REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1301 E BROADWAY",
+        "city": "MISSOULA",
+        "state": "MT",
+        "zip": "59802"
+      },
+      "contact": {
+        "phone": "4067210680",
+        "phone_formatted": "4067210680"
+      },
+      "location": {
+        "county": "Missoula",
+        "latitude": 46.8645,
+        "longitude": -113.97
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RIVERSIDE HEALTH CARE CENTER",
+        "chain_name": "THE GOODMAN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SWEET MEMORIAL NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "125 AIRPORT RD",
+        "city": "CHINOOK",
+        "state": "MT",
+        "zip": "59523"
+      },
+      "contact": {
+        "phone": "4063572549",
+        "phone_formatted": "4063572549"
+      },
+      "location": {
+        "county": "Blaine",
+        "latitude": 48.5938,
+        "longitude": -109.25
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 42,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SWEET MEMORIAL NURSING HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "IMMANUEL SKILLED CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "185 CRESTLINE AVE",
+        "city": "KALISPELL",
+        "state": "MT",
+        "zip": "59901"
+      },
+      "contact": {
+        "phone": "4067529622",
+        "phone_formatted": "4067529622"
+      },
+      "location": {
+        "county": "Flathead",
+        "latitude": 48.2108,
+        "longitude": -114.32
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 155,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "IMMANUEL LUTHERAN CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WHITEFISH CARE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1305 E 7TH ST",
+        "city": "WHITEFISH",
+        "state": "MT",
+        "zip": "59937"
+      },
+      "contact": {
+        "phone": "4068623557",
+        "phone_formatted": "4068623557"
+      },
+      "location": {
+        "county": "Flathead",
+        "latitude": 48.4052,
+        "longitude": -114.33
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SWEETWATER WHITEFISH OPCO LLC",
+        "chain_name": "SWEETWATER CARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BLACKFEET CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "728 S GOVERNMENT SQ",
+        "city": "BROWNING",
+        "state": "MT",
+        "zip": "59417"
+      },
+      "contact": {
+        "phone": "4063382686",
+        "phone_formatted": "4063382686"
+      },
+      "location": {
+        "county": "Glacier",
+        "latitude": 48.5713,
+        "longitude": -113.21
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 47,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "IVY AT DEER LODGE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1100 TEXAS AVE",
+        "city": "DEER LODGE",
+        "state": "MT",
+        "zip": "59722"
+      },
+      "contact": {
+        "phone": "4068461655",
+        "phone_formatted": "4068461655"
+      },
+      "location": {
+        "county": "Powell",
+        "latitude": 46.3912,
+        "longitude": -112.72
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "IVY AT DEER LODGE LLC",
+        "chain_name": "SIMCHA HYMAN & NAFTALI ZANZIPER"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DISCOVERY CARE CENTRE LTD",
+      "type": "Nursing Home",
+      "address": {
+        "street": "601 N 10TH ST",
+        "city": "HAMILTON",
+        "state": "MT",
+        "zip": "59840"
+      },
+      "contact": {
+        "phone": "4063632273",
+        "phone_formatted": "4063632273"
+      },
+      "location": {
+        "county": "Ravalli",
+        "latitude": 46.2476,
+        "longitude": -114.17
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DISCOVERY CARE CENTRE, LLC",
+        "chain_name": "THE GOODMAN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MADISON VALLEY MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "211 N MAIN ST",
+        "city": "ENNIS",
+        "state": "MT",
+        "zip": "59729"
+      },
+      "contact": {
+        "phone": "4066827271",
+        "phone_formatted": "4066827271"
+      },
+      "location": {
+        "county": "Madison",
+        "latitude": 45.3488,
+        "longitude": -111.73
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 32,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MADISON COUNTY FINANCE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ASPEN MEADOWS HEALTH AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3155 AVE C",
+        "city": "BILLINGS",
+        "state": "MT",
+        "zip": "59102"
+      },
+      "contact": {
+        "phone": "4066568818",
+        "phone_formatted": "4066568818"
+      },
+      "location": {
+        "county": "Yellowstone",
+        "latitude": 45.7858,
+        "longitude": -108.59
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ASPEN MEADOWS SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "EASTERN MONTANA VETERANS HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2000 MONTANA AVE",
+        "city": "GLENDIVE",
+        "state": "MT",
+        "zip": "59330"
+      },
+      "contact": {
+        "phone": "4063778115",
+        "phone_formatted": "4063778115"
+      },
+      "location": {
+        "county": "Dawson",
+        "latitude": 47.1272,
+        "longitude": -104.69
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GLENDIVE NURSING AND REHAB CENTER, LLC",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TOBACCO ROOT MOUNTAINS CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "326 MADISON ST",
+        "city": "SHERIDAN",
+        "state": "MT",
+        "zip": "59749"
+      },
+      "contact": {
+        "phone": "4068425600",
+        "phone_formatted": "4068425600"
+      },
+      "location": {
+        "county": "Madison",
+        "latitude": 45.4532,
+        "longitude": -112.19
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 39,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MADISON COUNTY FINANCE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AWE KUALAWAACHE CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10131 S HERITAGE RD",
+        "city": "CROW AGENCY",
+        "state": "MT",
+        "zip": "59022"
+      },
+      "contact": {
+        "phone": "4066389111",
+        "phone_formatted": "4066389111"
+      },
+      "location": {
+        "county": "Big Horn",
+        "latitude": 45.5899,
+        "longitude": -107.45
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AWE KUALAWAACHE CARE CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SOUTHWEST MONTANA VETERANS HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "65 VETERANS CIRCLE",
+        "city": "BUTTE",
+        "state": "MT",
+        "zip": "59701"
+      },
+      "contact": {
+        "phone": "4067923100",
+        "phone_formatted": "4067923100"
+      },
+      "location": {
+        "county": "Silver Bow",
+        "latitude": 45.9467,
+        "longitude": -112.52
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BUTTE NURSING AND REHAB CENTER LLC",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BENEFIS SENIOR SERVICES - GRANDVIEW",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3015 18TH AVE S",
+        "city": "GREAT FALLS",
+        "state": "MT",
+        "zip": "59405"
+      },
+      "contact": {
+        "phone": "4067716200",
+        "phone_formatted": "4067716200"
+      },
+      "location": {
+        "county": "Cascade",
+        "latitude": 47.4847,
+        "longitude": -111.26
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 48,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BENEFIS HOSPITALS INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BENEFIS SENIOR SERVICES - WESTVIEW",
+      "type": "Nursing Home",
+      "address": {
+        "street": "500 15TH AVE S",
+        "city": "GREAT FALLS",
+        "state": "MT",
+        "zip": "59405"
+      },
+      "contact": {
+        "phone": "4064555902",
+        "phone_formatted": "4064555902"
+      },
+      "location": {
+        "county": "Cascade",
+        "latitude": 47.489,
+        "longitude": -111.3
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 34,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BEARTOOTH REHABILITATION AND NURSING LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "350 W PIKE AVE",
+        "city": "COLUMBUS",
+        "state": "MT",
+        "zip": "59019"
+      },
+      "contact": {
+        "phone": "4062905070",
+        "phone_formatted": "4062905070"
+      },
+      "location": {
+        "county": "Stillwater",
+        "latitude": 45.6391,
+        "longitude": -109.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": null,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BEARTOOTH REHABILITATION AND NURSING LLC",
+        "chain_name": "CHARLY BELLO FAMILY, THE MAZE FAMILY, THE SWAIN FAMILY, & WALTER MYERS"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MONTANA MENTAL HEALTH NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "800 CASINO CREEK DR",
+        "city": "LEWISTOWN",
+        "state": "MT",
+        "zip": "59457"
+      },
+      "contact": {
+        "phone": "4065387451",
+        "phone_formatted": "4065387451"
+      },
+      "location": {
+        "county": "Fergus",
+        "latitude": 47.0565,
+        "longitude": -109.42
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 117,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    }
+  ]
+}

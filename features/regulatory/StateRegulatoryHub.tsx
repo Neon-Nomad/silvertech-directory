@@ -132,11 +132,12 @@ export const StateRegulatoryHub: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>{`${stateDef.name} Senior Living Regulations & Resources`}</title>
+                <title>{`How to Pay for Memory Care & Assisted Living in ${stateDef.name} | Regulations`}</title>
                 <meta
                     name="description"
-                    content={`Complete guide to ${stateDef.name} senior living regulations, Medicaid waivers, licensing requirements, and ombudsman resources.`}
+                    content={`Complete guide to ${stateDef.name} senior living regulations, Medicaid waivers, licensing requirements, and how to pay for memory care and assisted living.`}
                 />
+                <link rel="canonical" href={`https://silvertechdirectory.com/states/${stateDef.slug}`} />
             </Helmet>
 
             <div className="bg-white min-h-screen">

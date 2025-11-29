@@ -22,6 +22,7 @@ import { ForProvidersPage } from '@/features/public/providers/ForProvidersPage';
 import { ContactSalesPage } from '@/features/public/providers/ContactSalesPage';
 import { ProductsHub } from '@/src/pages/products';
 import { CategoryPage } from '@/src/pages/products/CategoryPage';
+import { AffiliateProductPage } from '@/src/pages/products/AffiliateProductPage';
 import { StatesDirectoryPage } from '@/features/locations/StatesDirectoryPage';
 import { CityPageTemplate } from '@/features/locations/CityPageTemplate';
 import { FAQ } from '@/features/family/support/FAQ';
@@ -129,8 +130,9 @@ function App() {
                     <Route path="/pricing" element={<PricingPage />} />
                     <Route path="/providers" element={<ForProvidersPage />} />
                     <Route path="/products" element={<ProductsHub />} />
+                    <Route path="/products/affiliate" element={<AffiliateProductPage />} />
                     <Route path="/products/:category" element={<CategoryPage />} />
-                    <Route path="/products/:category" element={<CategoryPage />} />
+
                     <Route path="/providers/contact-sales" element={<ContactSalesPage />} />
 
                     {/* Company & Resources */}

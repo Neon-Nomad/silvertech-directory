@@ -1,62 +1,62 @@
 [
     {
-        "slug": "mobility",
-        "title": "Mobility & Fall Prevention",
-        "tagline": "Stay active and safe with walkers, canes, and fall monitors.",
-        "icon": "activity"
-    },
-    {
         "slug": "bathroom",
-        "title": "Bathroom & Toileting Aids",
-        "tagline": "Essential safety rails, shower chairs, and raised seats.",
+        "title": "Bathroom Safety & Accessibility",
+        "tagline": "Grab bars, raised seats, and safety rails for bathroom independence.",
         "icon": "bath"
     },
     {
-        "slug": "memory",
-        "title": "Memory Care Tools",
-        "tagline": "Clocks, reminders, and activities for cognitive support.",
-        "icon": "brain"
+        "slug": "mobility",
+        "title": "Mobility & Fall Prevention",
+        "tagline": "Rollators, walkers, and fall detection for safe movement.",
+        "icon": "activity"
     },
     {
-        "slug": "safety",
-        "title": "Safety & Monitoring Devices",
-        "tagline": "Cameras, alarms, and GPS trackers for peace of mind.",
-        "icon": "shield"
-    },
-    {
-        "slug": "daily-living",
-        "title": "Daily Living Essentials",
-        "tagline": "Tools to make dressing, eating, and reaching easier.",
-        "icon": "sun"
-    },
-    {
-        "slug": "medical-supplies",
-        "title": "Medical Supplies",
-        "tagline": "Home health basics, from blood pressure monitors to first aid.",
-        "icon": "stethoscope"
-    },
-    {
-        "slug": "bedding",
-        "title": "Bedding & Comfort",
-        "tagline": "Adjustable beds, pressure-relief mattresses, and wedges.",
+        "slug": "bedroom",
+        "title": "Bedroom Safety & Comfort",
+        "tagline": "Adjustable beds, rails, and monitoring for restful sleep.",
         "icon": "bed"
     },
     {
-        "slug": "nutrition",
-        "title": "Nutrition & Supplements",
-        "tagline": "High-protein shakes, vitamins, and hydration aids.",
-        "icon": "apple"
+        "slug": "kitchen",
+        "title": "Kitchen & Eating Aids",
+        "tagline": "Adaptive utensils and tools for independent dining.",
+        "icon": "coffee"
     },
     {
-        "slug": "incontinence",
-        "title": "Incontinence Products",
-        "tagline": "Discreet protection, briefs, and bed pads.",
+        "slug": "monitoring",
+        "title": "Home Monitoring & Tech",
+        "tagline": "Smart alarms, cameras, and sensors for peace of mind.",
+        "icon": "wifi"
+    },
+    {
+        "slug": "hygiene",
+        "title": "Personal Care & Hygiene",
+        "tagline": "Incontinence care, skin protection, and bathing aids.",
         "icon": "droplet"
     },
     {
-        "slug": "caregiver",
-        "title": "Caregiver Tools",
-        "tagline": "Gait belts, transfer boards, and wellness resources.",
-        "icon": "heart"
+        "slug": "medical",
+        "title": "Medical & Health Devices",
+        "tagline": "Monitors, nebulizers, and medication management.",
+        "icon": "stethoscope"
+    },
+    {
+        "slug": "dementia",
+        "title": "Cognitive Support & Dementia Care",
+        "tagline": "Memory aids, wandering prevention, and sensory tools.",
+        "icon": "brain"
+    },
+    {
+        "slug": "daily-living",
+        "title": "Home Environment & Daily Living",
+        "tagline": "Reachers, lighting, and tools for everyday tasks.",
+        "icon": "sun"
+    },
+    {
+        "slug": "outdoor",
+        "title": "Outdoor Mobility & Safety",
+        "tagline": "Scooters, ramps, and outdoor safety equipment.",
+        "icon": "mountain"
     }
 ]

@@ -13,7 +13,7 @@ export const StateHubHome: React.FC = () => {
     return <Navigate to="/" replace />;
   }
 
-  const pageTitle = `${stateDef.name} Senior Care Authority | Assisted Living, Medicaid & Rules`;
+  const pageTitle = `How to Pay for Senior Care in ${stateDef.name} | Assisted Living & Medicaid`;
   const pageDescription = `The definitive guide to senior living in ${stateDef.name}. Explore assisted living options, Medicaid financial aid, state regulations, and consumer protection resources.`;
 
   const hubLinks = [

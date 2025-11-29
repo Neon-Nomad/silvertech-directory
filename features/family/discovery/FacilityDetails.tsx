@@ -161,11 +161,16 @@ export const FacilityDetails: React.FC = () => {
   // Process Care Types
   const careTypes = facility.facility_care_types?.map((fct: any) => fct.care_types) || [];
 
+  // Check for Memory Care
+  const hasMemoryCare = careTypes.some((c: any) => c.name.toLowerCase().includes('memory') || c.name.toLowerCase().includes('dementia'));
+  const serviceTypeString = hasMemoryCare ? "Assisted Living & Memory Care" : "Assisted Living";
+
   // Schema Markup
   const schemaMarkup = {
     "@context": "https://schema.org",
     "@type": "SeniorLivingCommunity",
     "name": facility.name,
+    "identifier": licenseNumber !== 'Pending' ? licenseNumber : undefined,
     "address": {
       "@type": "PostalAddress",
       "streetAddress": facility.address_line1,
@@ -177,7 +182,7 @@ export const FacilityDetails: React.FC = () => {
     "telephone": facility.phone,
     "image": facility.facility_photos?.[0]?.url || facility.image || "https://silvertechdirectory.com/default-facility.jpg",
     "priceRange": facility.min_price ? `$${facility.min_price} - $${facility.max_price}` : "Call for Pricing",
-    "description": facility.description || `Assisted living facility in ${facility.city}, ${facility.state}.`,
+    "description": facility.description || `${serviceTypeString} facility in ${facility.city}, ${facility.state}.`,
     "geo": facility.latitude && facility.longitude ? {
       "@type": "GeoCoordinates",
       "latitude": facility.latitude,
@@ -186,19 +191,19 @@ export const FacilityDetails: React.FC = () => {
     "url": window.location.href
   };
 
-
-
   // ... inside component ...
 
   // Get state slug for links
   const stateSlug = ALL_STATES.find(s => s.abbreviation === facility.state)?.slug || facility.state.toLowerCase();
   const citySlug = facility.city.toLowerCase().replace(/ /g, '-');
+  const canonicalUrl = `https://silvertechdirectory.com/facility/${id}`;
 
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
       <Helmet>
-        <title>{`${facility.name} - Assisted Living in ${facility.city}, ${facility.state} | SilverTech`}</title>
-        <meta name="description" content={`Learn about ${facility.name} in ${facility.city}, ${facility.state}. View pricing, photos, amenities, and licensing information. Capacity: ${capacity} residents.`} />
+        <title>{`${facility.name} - ${serviceTypeString} in ${facility.city}, ${facility.state} | SilverTech`}</title>
+        <meta name="description" content={`Learn about ${facility.name}, a premier ${serviceTypeString} community in ${facility.city}, ${facility.state}. View pricing, photos, amenities, and licensing info (Lic: ${licenseNumber}). Capacity: ${capacity} beds.`} />
+        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>

@@ -135,18 +135,34 @@ async function generateSitemaps() {
     // 2. Fetch Facilities from DB
     console.log('Fetching facilities from Supabase...');
     // Fetch ID, State, City
-    // We need to paginate if there are too many, but for now let's try fetching all (up to 10000 limit usually)
-    const { data: facilities, error } = await supabase
-        .from('facilities')
-        .select('id, state, city')
-        .range(0, 9999);
+    let allFacilities: any[] = [];
+    let page = 0;
+    const pageSize = 1000;
+    let hasMore = true;
 
-    if (error) {
-        console.error('Error fetching facilities:', error);
-        return;
+    while (hasMore) {
+        const { data, error } = await supabase
+            .from('facilities')
+            .select('id, state, city')
+            .range(page * pageSize, (page + 1) * pageSize - 1);
+
+        if (error) {
+            console.error('Error fetching facilities:', error);
+            break;
+        }
+
+        if (data && data.length > 0) {
+            allFacilities = [...allFacilities, ...data];
+            console.log(`Fetched batch ${page + 1}: ${data.length} facilities`);
+            if (data.length < pageSize) hasMore = false;
+            page++;
+        } else {
+            hasMore = false;
+        }
     }
 
-    console.log(`Fetched ${facilities?.length || 0} facilities.`);
+    const facilities = allFacilities;
+    console.log(`Fetched total ${facilities.length} facilities.`);
 
     const stateUrls: string[] = [];
     const cityUrls: Set<string> = new Set();
@@ -180,6 +196,7 @@ async function generateSitemaps() {
             const slug = stateDef.slug;
             // State Hub Pages
             stateUrls.push(`${BASE_URL}/states/${slug}`);
+            stateUrls.push(`${BASE_URL}/states/${slug}/regulatory`);
             stateUrls.push(`${BASE_URL}/states/${slug}/medicaid`);
             stateUrls.push(`${BASE_URL}/states/${slug}/rules`);
             stateUrls.push(`${BASE_URL}/states/${slug}/ombudsman`);

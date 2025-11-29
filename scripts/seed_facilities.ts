@@ -182,7 +182,14 @@ async function seedFacilities() {
                                                     facility.state === 'AK' ? 'Alaska Department of Health' :
                                                         facility.state === 'AL' ? 'Alabama Department of Public Health' :
                                                             facility.state === 'IL' ? 'Illinois Department of Public Health' :
-                                                                facility.state === 'UT' ? 'Utah Department of Health and Human Services' : undefined
+                                                                facility.state === 'UT' ? 'Utah Department of Health and Human Services' :
+                                                                    facility.state === 'FL' ? 'Florida Agency for Health Care Administration' :
+                                                                        facility.state === 'NC' ? 'NC Department of Health and Human Services' :
+                                                                            facility.state === 'IA' ? 'Iowa Department of Inspections and Appeals' :
+                                                                                facility.state === 'KY' ? 'Kentucky Cabinet for Health and Family Services' :
+                                                                                    facility.state === 'LA' ? 'Louisiana Department of Health' :
+                                                                                        facility.state === 'MI' ? 'Michigan Department of Licensing and Regulatory Affairs' :
+                                                                                            facility.state === 'MT' ? 'Montana Department of Public Health and Human Services' : undefined
                         });
                     }
                 }

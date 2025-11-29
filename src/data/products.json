@@ -1,12 +1,760 @@
 {
-    "mobility": [],
-    "bathroom": [],
-    "memory": [],
-    "safety": [],
-    "daily-living": [],
-    "medical-supplies": [],
-    "bedding": [],
-    "nutrition": [],
-    "incontinence": [],
-    "caregiver": []
+    "bathroom": [
+        {
+            "name": "Grab bars (angled, vertical, suction)",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 120
+        },
+        {
+            "name": "Raised toilet seats (with arms / without arms)",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.5,
+            "reviews": 85
+        },
+        {
+            "name": "Toilet safety rails",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 92
+        },
+        {
+            "name": "Bidet attachments",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 150
+        },
+        {
+            "name": "Bariatric commodes",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 40
+        },
+        {
+            "name": "Transfer benches",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 110
+        },
+        {
+            "name": "Shower stools",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.5,
+            "reviews": 75
+        },
+        {
+            "name": "Anti-slip shower mats",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.4,
+            "reviews": 200
+        },
+        {
+            "name": "Anti-slip floor strips",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.3,
+            "reviews": 60
+        },
+        {
+            "name": "Handheld shower heads",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 130
+        },
+        {
+            "name": "Shower step reducer kits",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 30
+        },
+        {
+            "name": "Bathroom motion lights",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 180
+        },
+        {
+            "name": "No-slip bath rugs",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.5,
+            "reviews": 90
+        },
+        {
+            "name": "Waterproof call buttons",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 55
+        },
+        {
+            "name": "Walk-in bathtub conversion kits",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 25
+        }
+    ],
+    "mobility": [
+        {
+            "name": "Rollators (4-wheel)",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 300
+        },
+        {
+            "name": "Upright walkers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 150
+        },
+        {
+            "name": "Standard walkers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 120
+        },
+        {
+            "name": "Folding canes",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.5,
+            "reviews": 200
+        },
+        {
+            "name": "Quad canes",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 80
+        },
+        {
+            "name": "Transport wheelchairs",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 95
+        },
+        {
+            "name": "Lightweight wheelchairs",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 110
+        },
+        {
+            "name": "Power chairs",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 45
+        },
+        {
+            "name": "Gait belts",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 130
+        },
+        {
+            "name": "Bed handles",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 160
+        },
+        {
+            "name": "Bed rails (adjustable)",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 140
+        },
+        {
+            "name": "Fall detection wearable devices",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 250
+        },
+        {
+            "name": "Hip-protective pads",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.4,
+            "reviews": 30
+        },
+        {
+            "name": "Non-slip socks (hospital grade)",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.5,
+            "reviews": 500
+        },
+        {
+            "name": "Bed alarms",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 90
+        },
+        {
+            "name": "Chair alarms",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.5,
+            "reviews": 85
+        },
+        {
+            "name": "Wheelchair cushions (gel, memory)",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 120
+        },
+        {
+            "name": "Fall-proof bedside lighting",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 70
+        }
+    ],
+    "bedroom": [
+        {
+            "name": "Adjustable beds",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 80
+        },
+        {
+            "name": "Bed wedges",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 150
+        },
+        {
+            "name": "Overbed tables",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 110
+        },
+        {
+            "name": "Waterproof mattress protectors",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 300
+        },
+        {
+            "name": "Weighted blankets",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 200
+        },
+        {
+            "name": "Bedside commodes",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 90
+        },
+        {
+            "name": "Bedside fall mats",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 60
+        },
+        {
+            "name": "Oxygen tank holders",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.5,
+            "reviews": 40
+        },
+        {
+            "name": "CPAP machines",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 120
+        },
+        {
+            "name": "CPAP hose keepers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 80
+        },
+        {
+            "name": "Night lights with motion sensors",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 250
+        },
+        {
+            "name": "Senior-friendly alarm clocks",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 100
+        },
+        {
+            "name": "Bed risers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.5,
+            "reviews": 70
+        }
+    ],
+    "kitchen": [
+        {
+            "name": "Adaptive eating utensils",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 130
+        },
+        {
+            "name": "Non-spill bowls",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 90
+        },
+        {
+            "name": "Weighted utensils",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 110
+        },
+        {
+            "name": "Anti-tip drinking cups",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.5,
+            "reviews": 80
+        },
+        {
+            "name": "Electric jar openers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 200
+        },
+        {
+            "name": "Can-opening assist tools",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 150
+        },
+        {
+            "name": "Easy-grip knives",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 70
+        },
+        {
+            "name": "Counter-height stools with arms",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 60
+        },
+        {
+            "name": "Anti-fatigue kitchen mats",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 120
+        },
+        {
+            "name": "Reacher grabbers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 300
+        },
+        {
+            "name": "Plate guards",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.5,
+            "reviews": 50
+        },
+        {
+            "name": "Large-print measuring sets",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 40
+        },
+        {
+            "name": "Auto-shutoff kettles",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 90
+        }
+    ],
+    "monitoring": [
+        {
+            "name": "Medical alert devices",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 400
+        },
+        {
+            "name": "GPS location trackers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 150
+        },
+        {
+            "name": "Door sensors",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 100
+        },
+        {
+            "name": "Smart smoke alarms",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 200
+        },
+        {
+            "name": "Smart carbon monoxide alarms",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 180
+        },
+        {
+            "name": "Bed occupancy sensors",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 60
+        },
+        {
+            "name": "Motion-detecting cameras",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 250
+        },
+        {
+            "name": "Video doorbells",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 350
+        },
+        {
+            "name": "Smart plugs",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 120
+        },
+        {
+            "name": "Smart thermostats",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 150
+        },
+        {
+            "name": "Smart pill reminders",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 90
+        },
+        {
+            "name": "Caregiver apps",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 80
+        }
+    ],
+    "hygiene": [
+        {
+            "name": "Adult diapers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 500
+        },
+        {
+            "name": "Incontinence pads",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 400
+        },
+        {
+            "name": "Washable incontinence underwear",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 250
+        },
+        {
+            "name": "Skin-barrier creams",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 300
+        },
+        {
+            "name": "No-rinse shampoos",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.5,
+            "reviews": 150
+        },
+        {
+            "name": "Bathing wipes",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 200
+        },
+        {
+            "name": "Perineal cleansers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 100
+        },
+        {
+            "name": "Long-handled bath sponges",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 120
+        },
+        {
+            "name": "Easy-on compression socks",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 180
+        },
+        {
+            "name": "Adaptive clothing",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 90
+        },
+        {
+            "name": "Diabetic socks",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 140
+        }
+    ],
+    "medical": [
+        {
+            "name": "Blood pressure monitors",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 350
+        },
+        {
+            "name": "Glucometers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 200
+        },
+        {
+            "name": "Pulse oximeters",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 150
+        },
+        {
+            "name": "Thermometers (contactless)",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 300
+        },
+        {
+            "name": "TENS pain units",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 120
+        },
+        {
+            "name": "Nebulizers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 90
+        },
+        {
+            "name": "Prescription organizers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 250
+        },
+        {
+            "name": "Pill crushers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 80
+        },
+        {
+            "name": "Weekly pill boxes",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 300
+        },
+        {
+            "name": "Magnifying medicine readers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 60
+        }
+    ],
+    "dementia": [
+        {
+            "name": "Memory clocks",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 150
+        },
+        {
+            "name": "Wandering-prevention door bars",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 80
+        },
+        {
+            "name": "Wander alarms",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 100
+        },
+        {
+            "name": "Fidget blankets",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 120
+        },
+        {
+            "name": "Dementia ID bracelets",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 90
+        },
+        {
+            "name": "Orientation signage kits",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 50
+        },
+        {
+            "name": "Simplified TV remotes",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 110
+        },
+        {
+            "name": "Audio players (one-button)",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 70
+        },
+        {
+            "name": "Activity boards",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 60
+        },
+        {
+            "name": "Lock covers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 40
+        }
+    ],
+    "daily-living": [
+        {
+            "name": "Jar grippers",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 200
+        },
+        {
+            "name": "Extra-long shoehorns",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 150
+        },
+        {
+            "name": "Elastic shoe laces",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 180
+        },
+        {
+            "name": "Sock sliders",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 120
+        },
+        {
+            "name": "Reacher tools",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 250
+        },
+        {
+            "name": "Long-handled dustpans",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 90
+        },
+        {
+            "name": "Voice-controlled plugs",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 140
+        },
+        {
+            "name": "Easy-lift recliners",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 60
+        },
+        {
+            "name": "Low-glare lighting",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 80
+        },
+        {
+            "name": "Blue-light-filtering lamps",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 70
+        },
+        {
+            "name": "Large-button phones",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 100
+        },
+        {
+            "name": "Large-display remotes",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 110
+        },
+        {
+            "name": "Keyless entry pads",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 90
+        }
+    ],
+    "outdoor": [
+        {
+            "name": "Mobility scooters",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 120
+        },
+        {
+            "name": "Outdoor rollators",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 90
+        },
+        {
+            "name": "Porch ramps",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 80
+        },
+        {
+            "name": "Threshold ramps",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 150
+        },
+        {
+            "name": "Exterior grab bars",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.9,
+            "reviews": 70
+        },
+        {
+            "name": "Weather-resistant cane tips",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.6,
+            "reviews": 50
+        },
+        {
+            "name": "Cane/rollator cup holders",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.7,
+            "reviews": 100
+        },
+        {
+            "name": "Outdoor chair lifts",
+            "image": "/products/placeholder.jpg",
+            "stars": 4.8,
+            "reviews": 40
+        }
+    ]
 }
