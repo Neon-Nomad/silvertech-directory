@@ -7,7 +7,7 @@ import { LeadsView } from './LeadsView';
 import { Button } from '@/components/ui/Button';
 
 const OperatorDashboard: React.FC = () => {
-  const { user, signOut } = useAuth();
+  const { user, signOut, loading } = useAuth();
   const [activeTab, setActiveTab] = useState<'overview' | 'facilities' | 'leads' | 'billing' | 'settings'>('overview');
   const [facilities, setFacilities] = useState<any[]>([]);
   const [loadingBilling, setLoadingBilling] = useState(false);
@@ -42,7 +42,7 @@ const OperatorDashboard: React.FC = () => {
         body: {
           facilityId,
           priceId: 'price_1SYqV5RvhVZKgAjoodrRn0Mk', // Premium Plan
-          userId: user.id,
+          userId: user?.id,
           returnUrl: window.location.href, // Redirect back to current page
         }
       });
@@ -62,6 +62,14 @@ const OperatorDashboard: React.FC = () => {
     // For now, we'll just alert or link to a generic portal if we had one
     alert("To manage your subscription, please contact support or use the Stripe Customer Portal link sent to your email.");
   };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+      </div>
+    );
+  }
 
   if (!user) {
     return (
@@ -89,8 +97,8 @@ const OperatorDashboard: React.FC = () => {
           <button
             onClick={() => setActiveTab('overview')}
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${activeTab === 'overview'
-                ? 'bg-primary-50 text-primary-700'
-                : 'text-slate-600 hover:bg-slate-50'
+              ? 'bg-primary-50 text-primary-700'
+              : 'text-slate-600 hover:bg-slate-50'
               }`}
           >
             <LayoutDashboard className="w-5 h-5" />
@@ -100,8 +108,8 @@ const OperatorDashboard: React.FC = () => {
           <button
             onClick={() => setActiveTab('facilities')}
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${activeTab === 'facilities'
-                ? 'bg-primary-50 text-primary-700'
-                : 'text-slate-600 hover:bg-slate-50'
+              ? 'bg-primary-50 text-primary-700'
+              : 'text-slate-600 hover:bg-slate-50'
               }`}
           >
             <Building2 className="w-5 h-5" />
@@ -111,8 +119,8 @@ const OperatorDashboard: React.FC = () => {
           <button
             onClick={() => setActiveTab('leads')}
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${activeTab === 'leads'
-                ? 'bg-primary-50 text-primary-700'
-                : 'text-slate-600 hover:bg-slate-50'
+              ? 'bg-primary-50 text-primary-700'
+              : 'text-slate-600 hover:bg-slate-50'
               }`}
           >
             <Users className="w-5 h-5" />
@@ -122,8 +130,8 @@ const OperatorDashboard: React.FC = () => {
           <button
             onClick={() => setActiveTab('billing')}
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${activeTab === 'billing'
-                ? 'bg-primary-50 text-primary-700'
-                : 'text-slate-600 hover:bg-slate-50'
+              ? 'bg-primary-50 text-primary-700'
+              : 'text-slate-600 hover:bg-slate-50'
               }`}
           >
             <CreditCard className="w-5 h-5" />
@@ -133,8 +141,8 @@ const OperatorDashboard: React.FC = () => {
           <button
             onClick={() => setActiveTab('settings')}
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${activeTab === 'settings'
-                ? 'bg-primary-50 text-primary-700'
-                : 'text-slate-600 hover:bg-slate-50'
+              ? 'bg-primary-50 text-primary-700'
+              : 'text-slate-600 hover:bg-slate-50'
               }`}
           >
             <Settings className="w-5 h-5" />

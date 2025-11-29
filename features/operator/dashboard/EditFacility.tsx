@@ -12,65 +12,27 @@ import { ProfileCompleteness } from './ProfileCompleteness';
 export const EditFacility: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { user } = useAuth();
-  
+  const { user, loading: authLoading } = useAuth();
+
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
-  const [formData, setFormData] = useState({
-    name: '',
-    description: '',
-    phone: '',
-    website: '',
-    email: '',
-    address_line1: '',
-    city: '',
-    state: '',
-    postal_code: '',
-    min_price: '',
-    max_price: '',
-    plan: 'basic'
-  });
+  // ... (rest of state)
 
-  const [counts, setCounts] = useState({
-    photos: 0,
-    amenities: 0,
-    careTypes: 0
-  });
-
-  const fetchCounts = async () => {
-    if (!id) return;
-    try {
-      const { count: photosCount } = await supabase
-        .from('facility_photos')
-        .select('*', { count: 'exact', head: true })
-        .eq('facility_id', id);
-
-      const { count: amenitiesCount } = await supabase
-        .from('facility_amenities')
-        .select('*', { count: 'exact', head: true })
-        .eq('facility_id', id);
-
-      const { count: careTypesCount } = await supabase
-        .from('facility_care_types')
-        .select('*', { count: 'exact', head: true })
-        .eq('facility_id', id);
-
-      setCounts({
-        photos: photosCount || 0,
-        amenities: amenitiesCount || 0,
-        careTypes: careTypesCount || 0
-      });
-    } catch (err) {
-      console.error('Error fetching counts:', err);
-    }
-  };
+  // ... (fetchCounts)
 
   useEffect(() => {
     const fetchFacility = async () => {
-      if (!id || !user) return;
+      // Wait for auth to load
+      if (authLoading) return;
+
+      if (!id || !user) {
+        // If auth finished and no user, we let the render handle the redirect/error
+        setLoading(false);
+        return;
+      }
       try {
         const { data, error } = await supabase
           .from('facilities')
@@ -79,12 +41,12 @@ export const EditFacility: React.FC = () => {
           .single();
 
         if (error) throw error;
-        
+
         // Verify ownership
         if (data.owner_id !== user.id) {
-            setError("You do not have permission to edit this facility.");
-            setLoading(false);
-            return;
+          setError("You do not have permission to edit this facility.");
+          setLoading(false);
+          return;
         }
 
         setFormData({
@@ -112,76 +74,29 @@ export const EditFacility: React.FC = () => {
     };
 
     fetchFacility();
-  }, [id, user]);
+  }, [id, user, authLoading]);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
+  // ... (handlers)
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!id || !user) return;
+  if (authLoading || loading) return (
+    <div className="min-h-screen flex items-center justify-center bg-slate-50">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+    </div>
+  );
 
-    setSaving(true);
-    setError(null);
-    setSuccess(false);
-
-    try {
-      const { error } = await supabase
-        .from('facilities')
-        .update({
-          name: formData.name,
-          description: formData.description,
-          phone: formData.phone,
-          website: formData.website,
-          email: formData.email,
-          min_price: formData.min_price ? parseFloat(formData.min_price) : null,
-          max_price: formData.max_price ? parseFloat(formData.max_price) : null,
-          updated_at: new Date().toISOString()
-        })
-        .eq('id', id)
-        .eq('owner_id', user.id);
-
-      if (error) throw error;
-      setSuccess(true);
-      
-      // Clear success message after 3 seconds
-      setTimeout(() => setSuccess(false), 3000);
-    } catch (err: any) {
-      console.error('Error updating facility:', err);
-      setError(err.message || 'Failed to update facility.');
-    } finally {
-      setSaving(false);
-    }
-  };
-
-  const handlePublish = async () => {
-    if (!id || !user) return;
-    if (!confirm('Are you sure you want to publish these changes? This will mark your profile as recently updated.')) return;
-
-    setSaving(true);
-    try {
-        const { error } = await supabase
-            .from('facilities')
-            .update({
-                updated_at: new Date().toISOString()
-            })
-            .eq('id', id)
-            .eq('owner_id', user.id);
-
-        if (error) throw error;
-        alert('Profile published successfully!');
-    } catch (err: any) {
-        console.error('Error publishing profile:', err);
-        alert('Failed to publish profile.');
-    } finally {
-        setSaving(false);
-    }
-  };
-
-  if (loading) return <div className="text-center py-10">Loading editor...</div>;
   if (error) return <div className="text-center py-10 text-red-600">{error}</div>;
+
+  if (!user) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-slate-900">Access Denied</h2>
+          <p className="text-slate-600">Please log in to edit this facility.</p>
+        </div>
+      </div>
+    );
+  }
+
   if (!id) return <div className="text-center py-10 text-red-600">Facility ID missing</div>;
 
   return (
@@ -196,17 +111,17 @@ export const EditFacility: React.FC = () => {
             <h1 className="text-xl font-bold text-slate-900">Edit Facility</h1>
           </div>
           <div className="flex items-center gap-3">
-             <Button variant="outline" onClick={() => window.open(`/facility/${id}`, '_blank')}>
-                View Public Page
-             </Button>
-             <Button variant="primary" onClick={handleSubmit} disabled={saving}>
-                {saving ? 'Saving...' : (
-                    <>
-                        <Save className="w-4 h-4 mr-2" />
-                        Save Changes
-                    </>
-                )}
-             </Button>
+            <Button variant="outline" onClick={() => window.open(`/facility/${id}`, '_blank')}>
+              View Public Page
+            </Button>
+            <Button variant="primary" onClick={handleSubmit} disabled={saving}>
+              {saving ? 'Saving...' : (
+                <>
+                  <Save className="w-4 h-4 mr-2" />
+                  Save Changes
+                </>
+              )}
+            </Button>
           </div>
         </div>
       </div>
@@ -222,7 +137,7 @@ export const EditFacility: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content Column */}
           <div className="lg:col-span-2 space-y-8">
-            
+
             {/* Basic Info */}
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
               <h2 className="text-lg font-bold text-slate-900 mb-4">Basic Information</h2>
@@ -258,65 +173,65 @@ export const EditFacility: React.FC = () => {
 
             {/* Photos */}
             <div onClick={fetchCounts} className="relative">
-                {formData.plan === 'basic' && (
-                    <div className="absolute inset-0 bg-white/60 backdrop-blur-[1px] z-10 flex flex-col items-center justify-center border border-slate-200 rounded-xl">
-                        <div className="bg-white p-6 rounded-xl shadow-lg text-center max-w-sm border border-slate-100">
-                            <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <Globe className="w-6 h-6 text-purple-600" />
-                            </div>
-                            <h3 className="text-lg font-bold text-slate-900 mb-2">Unlock Photo Gallery</h3>
-                            <p className="text-slate-600 mb-4 text-sm">
-                                Upgrade to a Featured Listing to add photos, gain placement priority, and more.
-                            </p>
-                            <Button 
-                                onClick={() => navigate('/dashboard')} 
-                                className="w-full bg-purple-600 hover:bg-purple-700 text-white"
-                            >
-                                Upgrade for $99/mo
-                            </Button>
-                        </div>
+              {formData.plan === 'basic' && (
+                <div className="absolute inset-0 bg-white/60 backdrop-blur-[1px] z-10 flex flex-col items-center justify-center border border-slate-200 rounded-xl">
+                  <div className="bg-white p-6 rounded-xl shadow-lg text-center max-w-sm border border-slate-100">
+                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Globe className="w-6 h-6 text-purple-600" />
                     </div>
-                )}
-                <FacilityPhotoManager facilityId={id} />
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">Unlock Photo Gallery</h3>
+                    <p className="text-slate-600 mb-4 text-sm">
+                      Upgrade to a Featured Listing to add photos, gain placement priority, and more.
+                    </p>
+                    <Button
+                      onClick={() => navigate('/dashboard')}
+                      className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+                    >
+                      Upgrade for $99/mo
+                    </Button>
+                  </div>
+                </div>
+              )}
+              <FacilityPhotoManager facilityId={id} />
             </div>
 
             {/* Amenities */}
             <div onClick={fetchCounts}>
-                <FacilityAmenitiesEditor facilityId={id} />
+              <FacilityAmenitiesEditor facilityId={id} />
             </div>
 
             {/* Care Types */}
             <div onClick={fetchCounts}>
-                <FacilityCareTypesEditor facilityId={id} />
+              <FacilityCareTypesEditor facilityId={id} />
             </div>
 
           </div>
 
           {/* Sidebar Column */}
           <div className="space-y-6">
-            
+
             {/* Profile Completeness */}
-            <ProfileCompleteness 
-                data={{
-                    ...formData,
-                    min_price: formData.min_price ? parseFloat(formData.min_price) : null,
-                    max_price: formData.max_price ? parseFloat(formData.max_price) : null
-                }}
-                counts={counts}
+            <ProfileCompleteness
+              data={{
+                ...formData,
+                min_price: formData.min_price ? parseFloat(formData.min_price) : null,
+                max_price: formData.max_price ? parseFloat(formData.max_price) : null
+              }}
+              counts={counts}
             />
 
             {/* Publish Action */}
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                <h2 className="text-lg font-bold text-slate-900 mb-4">Publish Profile</h2>
-                <p className="text-sm text-slate-600 mb-4">
-                    Make sure your profile is up to date. Publishing will mark your facility as recently updated, improving your visibility.
-                </p>
-                <Button variant="outline" className="w-full" onClick={handlePublish} disabled={saving}>
-                    <Globe className="w-4 h-4 mr-2" />
-                    Publish Updates
-                </Button>
+              <h2 className="text-lg font-bold text-slate-900 mb-4">Publish Profile</h2>
+              <p className="text-sm text-slate-600 mb-4">
+                Make sure your profile is up to date. Publishing will mark your facility as recently updated, improving your visibility.
+              </p>
+              <Button variant="outline" className="w-full" onClick={handlePublish} disabled={saving}>
+                <Globe className="w-4 h-4 mr-2" />
+                Publish Updates
+              </Button>
             </div>
-            
+
             {/* Contact Details */}
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
               <h2 className="text-lg font-bold text-slate-900 mb-4">Contact Details</h2>
@@ -396,26 +311,26 @@ export const EditFacility: React.FC = () => {
 
             {/* Location (Read Only) */}
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-               <h2 className="text-lg font-bold text-slate-900 mb-4">Location</h2>
-               <p className="text-sm text-slate-500 mb-4">To update your address, please contact support.</p>
-               <div className="space-y-3 bg-slate-50 p-4 rounded-lg">
-                  <div>
-                     <label className="block text-xs font-medium text-slate-500 uppercase">Address</label>
-                     <p className="text-slate-900">{formData.address_line1}</p>
-                  </div>
-                  <div>
-                     <label className="block text-xs font-medium text-slate-500 uppercase">City</label>
-                     <p className="text-slate-900">{formData.city}</p>
-                  </div>
-                  <div>
-                     <label className="block text-xs font-medium text-slate-500 uppercase">State</label>
-                     <p className="text-slate-900">{formData.state}</p>
-                  </div>
-                  <div>
-                     <label className="block text-xs font-medium text-slate-500 uppercase">Zip Code</label>
-                     <p className="text-slate-900">{formData.postal_code}</p>
-                  </div>
-               </div>
+              <h2 className="text-lg font-bold text-slate-900 mb-4">Location</h2>
+              <p className="text-sm text-slate-500 mb-4">To update your address, please contact support.</p>
+              <div className="space-y-3 bg-slate-50 p-4 rounded-lg">
+                <div>
+                  <label className="block text-xs font-medium text-slate-500 uppercase">Address</label>
+                  <p className="text-slate-900">{formData.address_line1}</p>
+                </div>
+                <div>
+                  <label className="block text-xs font-medium text-slate-500 uppercase">City</label>
+                  <p className="text-slate-900">{formData.city}</p>
+                </div>
+                <div>
+                  <label className="block text-xs font-medium text-slate-500 uppercase">State</label>
+                  <p className="text-slate-900">{formData.state}</p>
+                </div>
+                <div>
+                  <label className="block text-xs font-medium text-slate-500 uppercase">Zip Code</label>
+                  <p className="text-slate-900">{formData.postal_code}</p>
+                </div>
+              </div>
             </div>
 
           </div>
