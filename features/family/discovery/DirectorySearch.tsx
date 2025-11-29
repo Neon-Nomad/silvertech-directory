@@ -8,6 +8,7 @@ import { useSearchParams } from 'react-router-dom';
 
 import { useGeolocation } from '@/src/hooks/useGeolocation';
 import { Loader2, Crosshair } from 'lucide-react';
+import { AddToCompareButton } from '@/components/ui/AddToCompareButton';
 
 const DirectorySearch: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -17,10 +18,10 @@ const DirectorySearch: React.FC = () => {
   const [selectedFacilityName, setSelectedFacilityName] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 50;
-  
+
   const [facilities, setFacilities] = useState<any[]>([]);
   const [dataLoading, setDataLoading] = useState(true);
-  
+
   const { loading: geoLoading, error: geoError, nearestCity, coordinates, getLocation } = useGeolocation();
 
   useEffect(() => {
@@ -39,56 +40,56 @@ const DirectorySearch: React.FC = () => {
         // We prioritize the RPC if coordinates are available and match the current location intent
         // But if the user types a different city, we should use that.
         // Let's use RPC if coordinates are present AND location matches nearestCity (implies "Use My Location" was used)
-        
+
         if (coordinates && location === nearestCity && !searchQuery) {
-             const { data: rpcData, error: rpcError } = await supabase
-                .rpc('get_nearby_facilities', {
-                    user_lat: coordinates.lat,
-                    user_lng: coordinates.lng,
-                    max_results: 50
-                });
-            
-            if (rpcData) {
-                const ids = rpcData.map((f: any) => f.id);
-                const { data: licenseData } = await supabase
-                    .from('facility_licensing')
-                    .select('*')
-                    .in('facility_id', ids);
-                
-                data = rpcData.map((f: any) => ({
-                    ...f,
-                    facility_licensing: licenseData?.filter((l: any) => l.facility_id === f.id) || []
-                }));
-            }
-            error = rpcError;
+          const { data: rpcData, error: rpcError } = await supabase
+            .rpc('get_nearby_facilities', {
+              user_lat: coordinates.lat,
+              user_lng: coordinates.lng,
+              max_results: 50
+            });
+
+          if (rpcData) {
+            const ids = rpcData.map((f: any) => f.id);
+            const { data: licenseData } = await supabase
+              .from('facility_licensing')
+              .select('*')
+              .in('facility_id', ids);
+
+            data = rpcData.map((f: any) => ({
+              ...f,
+              facility_licensing: licenseData?.filter((l: any) => l.facility_id === f.id) || []
+            }));
+          }
+          error = rpcError;
         } else {
-            // Standard query
-            let query = supabase
+          // Standard query
+          let query = supabase
             .from('facilities')
             .select('*, facility_licensing(bed_capacity)');
 
-            if (searchQuery) {
-                query = query.ilike('name', `%${searchQuery}%`);
-            }
+          if (searchQuery) {
+            query = query.ilike('name', `%${searchQuery}%`);
+          }
 
-            if (location) {
-                if (/^\d{5}$/.test(location)) {
-                    query = query.eq('postal_code', location);
-                } else {
-                    query = query.ilike('city', `%${location}%`);
-                }
+          if (location) {
+            if (/^\d{5}$/.test(location)) {
+              query = query.eq('postal_code', location);
+            } else {
+              query = query.ilike('city', `%${location}%`);
             }
-            
-            // Pagination
-            const from = (currentPage - 1) * itemsPerPage;
-            const to = from + itemsPerPage - 1;
-            query = query.range(from, to);
+          }
 
-            const result = await query;
-            data = result.data;
-            error = result.error;
+          // Pagination
+          const from = (currentPage - 1) * itemsPerPage;
+          const to = from + itemsPerPage - 1;
+          query = query.range(from, to);
+
+          const result = await query;
+          data = result.data;
+          error = result.error;
         }
-        
+
         if (error) {
           console.error('Error fetching facilities:', error);
         } else if (data) {
@@ -104,7 +105,9 @@ const DirectorySearch: React.FC = () => {
             verified: true,
             vacancy: false,
             phone: f.phone,
-            image: null
+            image: null,
+            city: f.city,
+            state: f.state
           }));
           setFacilities(mapped);
         }
@@ -120,10 +123,10 @@ const DirectorySearch: React.FC = () => {
 
   // Client-side filtering is removed, we use server-side now.
   // We need to handle the "Use My Location" button separately to trigger RPC.
-  
+
   const handleWriteReview = (facilityName: string) => {
     const isLoggedIn = localStorage.getItem('silvertech_user_token');
-    
+
     if (!isLoggedIn) {
       alert("You must login to view properties");
       return;
@@ -145,7 +148,7 @@ const DirectorySearch: React.FC = () => {
       hash = id.charCodeAt(i) + ((hash << 5) - hash);
     }
     const numericId = Math.abs(hash);
-    
+
     const colors = [
       { bg: '#4A5568', text: '#FFFFFF' },
       { bg: '#2D3748', text: '#FFFFFF' },
@@ -273,13 +276,13 @@ const DirectorySearch: React.FC = () => {
               <h2 className="text-2xl font-bold text-slate-900 mb-2">Search Results</h2>
               <p className="text-slate-600">
                 {dataLoading ? (
-                  <span className="flex items-center gap-2"><Loader2 className="animate-spin w-4 h-4"/> Loading facilities...</span>
+                  <span className="flex items-center gap-2"><Loader2 className="animate-spin w-4 h-4" /> Loading facilities...</span>
                 ) : (
                   `Showing ${filteredFacilities.length > 0 ? startIdx + 1 : 0}-${endIdx} of ${filteredFacilities.length} facilities`
                 )}
               </p>
             </div>
-            
+
             {dataLoading ? (
               <div className="flex justify-center py-20">
                 <Loader2 className="w-12 h-12 text-primary-600 animate-spin" />
@@ -316,72 +319,19 @@ const DirectorySearch: React.FC = () => {
                             )}
                           </div>
                           <div className="flex items-center bg-green-50 px-2 py-1 rounded-lg">
-                            <Star className="w-4 h-4 text-green-600 fill-current mr-1" />
-                            <span className="font-bold text-green-800">4.8</span>
-                          </div>
-                        </div>
-                        
-                        <div className="flex flex-wrap gap-2 mb-4">
-                          <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
-                            {facility.type}
-                          </span>
-                          <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
-                            Capacity: {facility.capacity}
-                          </span>
-                          {facility.verified && (
-                            <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
-                              ✓ Verified
-                            </span>
-                          )}
-                        </div>
-                        
-                        <div className="flex items-center justify-between mt-4">
-                          <div className="flex items-center gap-2 text-slate-900">
-                            <DollarSign size={20} className="text-accent-600" />
-                            <span className="font-bold text-lg">{facility.price}</span>
-                          </div>
-                          <div className="flex gap-2">
-                            <Button 
-                              variant="primary"
-                              onClick={() => window.location.href = `/facility/${facility.id}`}
-                            >
-                              View Details
-                            </Button>
-                            <Button 
-                              variant="outline"
-                              onClick={() => handleWriteReview(facility.name)}
-                            >
-                              Write Review
-                            </Button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-            
-            {/* Pagination Controls */}
-            {!dataLoading && filteredFacilities.length > 0 && (
-              <div className="flex justify-center items-center mt-8 space-x-4">
-                <Button
-                  variant="outline"
-                  onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
-                  disabled={currentPage === 1}
-                >
-                  Previous
-                </Button>
-                <span className="text-slate-600">Page {currentPage} of {totalPages}</span>
-                <Button
-                  variant="outline"
-                  onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
-                  disabled={currentPage === totalPages}
-                >
-                  Next
-                </Button>
-              </div>
-            )}
+          >
+            Previous
+          </Button>
+          <span className="text-slate-600">Page {currentPage} of {totalPages}</span>
+          <Button
+            variant="outline"
+            onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+            disabled={currentPage === totalPages}
+          >
+            Next
+          </Button>
+        </div>
+      )}
           </div>
         </div>
       </div>
@@ -392,7 +342,7 @@ const DirectorySearch: React.FC = () => {
         facilityName={selectedFacilityName} 
       />
     </div>
-  );
+            );
 };
 
-export default DirectorySearch;
+            export default DirectorySearch;
