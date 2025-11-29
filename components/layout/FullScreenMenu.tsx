@@ -81,14 +81,14 @@ export const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose 
                       onMouseEnter={() => setActiveCategory(cat.id)}
                       onClick={() => setActiveCategory(cat.id)}
                       className={`group relative p-6 rounded-2xl transition-all duration-300 text-left ${isActive
-                          ? 'bg-white shadow-xl scale-105'
-                          : 'bg-white/50 hover:bg-white hover:shadow-lg hover:scale-102'
+                        ? 'bg-white shadow-xl scale-105'
+                        : 'bg-white/50 hover:bg-white hover:shadow-lg hover:scale-102'
                         }`}
                     >
                       <div className="flex items-center gap-4">
                         <div className={`p-3 rounded-xl transition-colors ${isActive
-                            ? 'bg-primary-100 text-primary-600'
-                            : 'bg-slate-100 text-slate-600 group-hover:bg-primary-50 group-hover:text-primary-600'
+                          ? 'bg-primary-100 text-primary-600'
+                          : 'bg-slate-100 text-slate-600 group-hover:bg-primary-50 group-hover:text-primary-600'
                           }`}>
                           <Icon className="w-6 h-6" />
                         </div>
@@ -163,7 +163,7 @@ const RegulatoryContent = ({ onClose }: { onClose: () => void }) => (
         {US_STATES.map(state => (
           <Link
             key={state}
-            to={`/regulatory/${state.toLowerCase().replace(/ /g, '-')}`}
+            to={`/states/${state.toLowerCase().replace(/ /g, '-')}/regulatory`}
             onClick={onClose}
             className="text-sm text-slate-700 hover:text-primary-600 hover:bg-primary-50 px-3 py-2 rounded-lg transition-colors"
           >

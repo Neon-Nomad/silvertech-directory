@@ -40,7 +40,7 @@ export const StatesDirectoryPage: React.FC = () => {
                     {US_STATES.map((state) => (
                         <Link
                             key={state}
-                            to={`/assisted-living/${state.toLowerCase().replace(/ /g, '-')}`}
+                            to={`/states/${state.toLowerCase().replace(/ /g, '-')}`}
                             className="group bg-white p-6 rounded-xl border border-slate-200 hover:border-cyan-500/50 hover:shadow-lg transition-all duration-300 flex items-center justify-between"
                         >
                             <div className="flex items-center gap-3">

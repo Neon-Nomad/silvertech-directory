@@ -15,10 +15,11 @@ interface RegulatoryData {
     complaints_content: string;
     veterans_content: string;
     contacts_json: {
-        licensing: { name: string; phone: string; website?: string; };
-        ombudsman: { name: string; phone: string; website?: string; };
-        medicaid: { name: string; phone: string; website?: string; };
-        elderAbuse: { name: string; phone: string; };
+        licensing?: { name: string; phone?: string; website?: string; };
+        ombudsman?: { name: string; phone?: string; website?: string; };
+        medicaid?: { name: string; phone?: string; website?: string; };
+        elderAbuse?: { name: string; phone?: string; };
+        veterans?: { name: string; phone?: string; website?: string; };
     };
 }
 
@@ -35,14 +36,24 @@ export const StateRegulatoryHub: React.FC = () => {
 
             // 1. Try to load static JSON (Fastest)
             try {
-                // Dynamic import for static JSON
-                const staticData = await import(`../../generated/regulations/${stateSlug}.json`);
-                if (staticData) {
-                    setData(staticData.default || staticData);
-                    setLoading(false); // Show content immediately
+                // Use import.meta.glob for Vite compatibility
+                const regulations = import.meta.glob('../../generated/regulations/*.json');
+
+                // Convert kebab-case slug (new-jersey) to snake_case (new_jersey) for file matching
+                const fileSlug = stateSlug.replace(/-/g, '_');
+                const loadRegulation = regulations[`../../generated/regulations/${fileSlug}.json`];
+
+                if (loadRegulation) {
+                    const staticData: any = await loadRegulation();
+                    if (staticData) {
+                        setData(staticData.default || staticData);
+                        setLoading(false); // Show content immediately
+                    }
+                } else {
+                    console.warn(`Static data not found for ${stateSlug} (file: ${fileSlug}.json)`);
                 }
             } catch (e) {
-                console.warn(`Static data not found for ${stateSlug}`, e);
+                console.warn(`Error loading static data for ${stateSlug}`, e);
             }
 
             // 2. Fetch from Supabase (Live Truth)
@@ -248,70 +259,108 @@ export const StateRegulatoryHub: React.FC = () => {
 
                                             <div className="grid md:grid-cols-2 gap-8">
                                                 {/* Licensing */}
-                                                <div>
-                                                    <h3 className="text-lg font-medium text-white mb-1">{data.contacts_json.licensing.name}</h3>
-                                                    <p className="text-slate-400 text-sm mb-3">Licensing, inspections, enforcement</p>
-                                                    <div className="space-y-2">
-                                                        <div className="flex items-center gap-2 text-slate-300">
-                                                            <Phone size={16} />
-                                                            <a href={`tel:${data.contacts_json.licensing.phone}`} className="hover:text-white transition-colors">{data.contacts_json.licensing.phone}</a>
+                                                {data.contacts_json.licensing && (
+                                                    <div>
+                                                        <h3 className="text-lg font-medium text-white mb-1">{data.contacts_json.licensing.name}</h3>
+                                                        <p className="text-slate-400 text-sm mb-3">Licensing, inspections, enforcement</p>
+                                                        <div className="space-y-2">
+                                                            {data.contacts_json.licensing.phone && (
+                                                                <div className="flex items-center gap-2 text-slate-300">
+                                                                    <Phone size={16} />
+                                                                    <a href={`tel:${data.contacts_json.licensing.phone}`} className="hover:text-white transition-colors">{data.contacts_json.licensing.phone}</a>
+                                                                </div>
+                                                            )}
+                                                            {data.contacts_json.licensing.website && (
+                                                                <div className="flex items-center gap-2 text-slate-300">
+                                                                    <ExternalLink size={16} />
+                                                                    <a href={data.contacts_json.licensing.website} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Visit Website</a>
+                                                                </div>
+                                                            )}
                                                         </div>
-                                                        {data.contacts_json.licensing.website && (
-                                                            <div className="flex items-center gap-2 text-slate-300">
-                                                                <ExternalLink size={16} />
-                                                                <a href={data.contacts_json.licensing.website} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Visit Website</a>
-                                                            </div>
-                                                        )}
                                                     </div>
-                                                </div>
+                                                )}
 
                                                 {/* Ombudsman */}
-                                                <div>
-                                                    <h3 className="text-lg font-medium text-white mb-1">{data.contacts_json.ombudsman.name}</h3>
-                                                    <p className="text-slate-400 text-sm mb-3">Resident rights, complaint resolution</p>
-                                                    <div className="space-y-2">
-                                                        <div className="flex items-center gap-2 text-slate-300">
-                                                            <Phone size={16} />
-                                                            <a href={`tel:${data.contacts_json.ombudsman.phone}`} className="hover:text-white transition-colors">{data.contacts_json.ombudsman.phone}</a>
+                                                {data.contacts_json.ombudsman && (
+                                                    <div>
+                                                        <h3 className="text-lg font-medium text-white mb-1">{data.contacts_json.ombudsman.name}</h3>
+                                                        <p className="text-slate-400 text-sm mb-3">Resident rights, complaint resolution</p>
+                                                        <div className="space-y-2">
+                                                            {data.contacts_json.ombudsman.phone && (
+                                                                <div className="flex items-center gap-2 text-slate-300">
+                                                                    <Phone size={16} />
+                                                                    <a href={`tel:${data.contacts_json.ombudsman.phone}`} className="hover:text-white transition-colors">{data.contacts_json.ombudsman.phone}</a>
+                                                                </div>
+                                                            )}
+                                                            {data.contacts_json.ombudsman.website && (
+                                                                <div className="flex items-center gap-2 text-slate-300">
+                                                                    <ExternalLink size={16} />
+                                                                    <a href={data.contacts_json.ombudsman.website} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Visit Website</a>
+                                                                </div>
+                                                            )}
                                                         </div>
-                                                        {data.contacts_json.ombudsman.website && (
-                                                            <div className="flex items-center gap-2 text-slate-300">
-                                                                <ExternalLink size={16} />
-                                                                <a href={data.contacts_json.ombudsman.website} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Visit Website</a>
-                                                            </div>
-                                                        )}
                                                     </div>
-                                                </div>
+                                                )}
 
                                                 {/* Medicaid */}
-                                                <div>
-                                                    <h3 className="text-lg font-medium text-white mb-1">{data.contacts_json.medicaid.name}</h3>
-                                                    <p className="text-slate-400 text-sm mb-3">Waivers, eligibility, applications</p>
-                                                    <div className="space-y-2">
-                                                        <div className="flex items-center gap-2 text-slate-300">
-                                                            <Phone size={16} />
-                                                            <a href={`tel:${data.contacts_json.medicaid.phone}`} className="hover:text-white transition-colors">{data.contacts_json.medicaid.phone}</a>
+                                                {data.contacts_json.medicaid && (
+                                                    <div>
+                                                        <h3 className="text-lg font-medium text-white mb-1">{data.contacts_json.medicaid.name}</h3>
+                                                        <p className="text-slate-400 text-sm mb-3">Waivers, eligibility, applications</p>
+                                                        <div className="space-y-2">
+                                                            {data.contacts_json.medicaid.phone && (
+                                                                <div className="flex items-center gap-2 text-slate-300">
+                                                                    <Phone size={16} />
+                                                                    <a href={`tel:${data.contacts_json.medicaid.phone}`} className="hover:text-white transition-colors">{data.contacts_json.medicaid.phone}</a>
+                                                                </div>
+                                                            )}
+                                                            {data.contacts_json.medicaid.website && (
+                                                                <div className="flex items-center gap-2 text-slate-300">
+                                                                    <ExternalLink size={16} />
+                                                                    <a href={data.contacts_json.medicaid.website} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Visit Website</a>
+                                                                </div>
+                                                            )}
                                                         </div>
-                                                        {data.contacts_json.medicaid.website && (
-                                                            <div className="flex items-center gap-2 text-slate-300">
-                                                                <ExternalLink size={16} />
-                                                                <a href={data.contacts_json.medicaid.website} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Visit Website</a>
-                                                            </div>
-                                                        )}
                                                     </div>
-                                                </div>
+                                                )}
+
+                                                {/* Veterans */}
+                                                {data.contacts_json.veterans && (
+                                                    <div>
+                                                        <h3 className="text-lg font-medium text-white mb-1">{data.contacts_json.veterans.name}</h3>
+                                                        <p className="text-slate-400 text-sm mb-3">Veterans benefits, aid & attendance</p>
+                                                        <div className="space-y-2">
+                                                            {data.contacts_json.veterans.phone && (
+                                                                <div className="flex items-center gap-2 text-slate-300">
+                                                                    <Phone size={16} />
+                                                                    <a href={`tel:${data.contacts_json.veterans.phone}`} className="hover:text-white transition-colors">{data.contacts_json.veterans.phone}</a>
+                                                                </div>
+                                                            )}
+                                                            {data.contacts_json.veterans.website && (
+                                                                <div className="flex items-center gap-2 text-slate-300">
+                                                                    <ExternalLink size={16} />
+                                                                    <a href={data.contacts_json.veterans.website} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Visit Website</a>
+                                                                </div>
+                                                            )}
+                                                        </div>
+                                                    </div>
+                                                )}
 
                                                 {/* Elder Abuse */}
-                                                <div>
-                                                    <h3 className="text-lg font-medium text-white mb-1">{data.contacts_json.elderAbuse.name}</h3>
-                                                    <p className="text-slate-400 text-sm mb-3">Mandatory reporting, urgent concerns</p>
-                                                    <div className="space-y-2">
-                                                        <div className="flex items-center gap-2 text-red-400 font-medium">
-                                                            <Phone size={16} />
-                                                            <a href={`tel:${data.contacts_json.elderAbuse.phone}`} className="hover:text-red-300 transition-colors">{data.contacts_json.elderAbuse.phone}</a>
+                                                {data.contacts_json.elderAbuse && (
+                                                    <div>
+                                                        <h3 className="text-lg font-medium text-white mb-1">{data.contacts_json.elderAbuse.name}</h3>
+                                                        <p className="text-slate-400 text-sm mb-3">Mandatory reporting, urgent concerns</p>
+                                                        <div className="space-y-2">
+                                                            {data.contacts_json.elderAbuse.phone && (
+                                                                <div className="flex items-center gap-2 text-red-400 font-medium">
+                                                                    <Phone size={16} />
+                                                                    <a href={`tel:${data.contacts_json.elderAbuse.phone}`} className="hover:text-red-300 transition-colors">{data.contacts_json.elderAbuse.phone}</a>
+                                                                </div>
+                                                            )}
                                                         </div>
                                                     </div>
-                                                </div>
+                                                )}
                                             </div>
                                         </div>
                                     </section>

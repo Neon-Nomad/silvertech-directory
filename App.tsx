@@ -34,6 +34,7 @@ import { StateMedicaidPage } from '@/features/locations/hub/StateMedicaidPage';
 import { StateRegulatoryHub } from '@/features/regulatory/StateRegulatoryHub';
 import { StateRulesPage } from '@/features/locations/hub/StateRulesPage';
 import { StateOmbudsmanPage } from '@/features/locations/hub/StateOmbudsmanPage';
+import { StateVeteransPage } from '@/features/locations/hub/StateVeteransPage';
 import { RegulatoryLibrary } from '@/features/regulatory/RegulatoryLibrary';
 import { AboutPage } from '@/features/public/company/AboutPage';
 import { ContactPage } from '@/features/public/company/ContactPage';
@@ -145,7 +146,8 @@ function App() {
                     <Route path="/states/:state/medicaid" element={<StateMedicaidPage />} />
                     <Route path="/states/:state/rules" element={<StateRulesPage />} />
                     <Route path="/states/:state/ombudsman" element={<StateOmbudsmanPage />} />
-                    <Route path="/states/:state/assisted-living" element={<StatePageTemplate />} />
+                    <Route path="/states/:state/veterans" element={<StateVeteransPage />} />
+                    <Route path="/states/:state/assisted-living" element={<DirectorySearch />} />
                     <Route path="/regulatory-library" element={<RegulatoryLibrary />} />
 
                     {/* Legacy / Direct Routes */}

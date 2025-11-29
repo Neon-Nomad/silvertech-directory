@@ -36,7 +36,7 @@ const OperatorDashboard: React.FC = () => {
       // Fetch user's facilities
       const { data: facilitiesData, error: facilitiesError } = await supabase
         .from('facilities')
-        .select('id, name')
+        .select('id, name, assigned_plan_owner_id')
         .eq('owner_id', user?.id);
 
       if (facilitiesError) throw facilitiesError;
@@ -225,138 +225,180 @@ const OperatorDashboard: React.FC = () => {
 
           {activeTab === 'billing' && (
             <div className="space-y-8">
-              {/* Current Plan Status */}
-              {userProfile && userProfile.plan !== 'free' && (
-                <div className="bg-gradient-to-r from-primary-50 to-purple-50 p-6 rounded-xl border border-primary-200">
-                  <div className="flex justify-between items-start mb-4">
-                    <div>
-                      <h3 className="text-lg font-bold text-slate-900 mb-1">Current Plan: {PRICING_PLANS.find(p => p.id === userProfile.plan)?.name || userProfile.plan}</h3>
-                      <p className="text-slate-600">
-                        {userProfile.facility_assignments_remaining} of {PRICING_PLANS.find(p => p.id === userProfile.plan)?.slotCount || 0} facility slots remaining
-                      </p>
+              <div className="flex justify-between items-center">
+                <div>
+                  <h2 className="text-2xl font-bold text-slate-900">Billing & Plans</h2>
+                  <p className="text-slate-600">Manage your subscription and facility assignments.</p>
+                </div>
+                {userProfile?.stripe_customer_id && (
+                  <Button variant="outline" onClick={handleManageBilling} className="flex items-center gap-2">
+                    <CreditCard className="w-4 h-4" />
+                    Manage Payment Method
+                  </Button>
+                )}
+              </div>
+
+              {/* Current Plan Overview */}
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-lg font-bold text-slate-900 mb-4">Current Subscription</h3>
+                <div className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border border-slate-200">
+                  <div>
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="font-bold text-xl text-slate-900">
+                        {PRICING_PLANS.find(p => p.id === (userProfile?.plan || 'free'))?.name}
+                      </span>
+                      <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${userProfile?.plan === 'free' || !userProfile?.plan
+                          ? 'bg-slate-100 text-slate-600'
+                          : 'bg-primary-100 text-primary-700'
+                        }`}>
+                        {userProfile?.status === 'active' ? 'Active' : 'Free Tier'}
+                      </span>
                     </div>
-                    <div className="flex gap-2">
-                      <Button variant="outline" onClick={handleManageBilling}>
-                        Manage Billing
-                      </Button>
-                    </div>
+                    <p className="text-sm text-slate-600">
+                      {userProfile?.facility_assignments_remaining || 0} facility assignments remaining
+                    </p>
                   </div>
-                  {userProfile.billing_status === 'past_due' && (
-                    <div className="bg-red-100 text-red-800 px-4 py-2 rounded-lg flex items-center gap-2">
-                      <AlertCircle className="w-5 h-5" />
-                      <span>Payment past due. Please update your payment method.</span>
-                    </div>
+                  {userProfile?.plan !== 'lead_suite' && (
+                    <Button onClick={() => document.getElementById('upgrade-plans')?.scrollIntoView({ behavior: 'smooth' })}>
+                      Upgrade Plan
+                    </Button>
                   )}
                 </div>
-              )}
+              </div>
 
-              {/* Pricing Tiers */}
-              <div>
-                <h2 className="text-2xl font-bold text-slate-900 mb-2">Subscription Plans</h2>
-                <p className="text-slate-600 mb-6">Choose a plan that fits your needs. Upgrade, downgrade, or cancel anytime.</p>
+              {/* Facility Assignments */}
+              {userProfile?.plan !== 'free' && (
+                <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                  <h3 className="text-lg font-bold text-slate-900 mb-4">Facility Assignments</h3>
+                  <p className="text-slate-600 mb-4 text-sm">
+                    Assign your premium plan benefits to specific facilities. You have <strong>{userProfile?.facility_assignments_remaining}</strong> slots available.
+                  </p>
 
-                {loadingBilling ? (
-                  <div className="text-center py-12">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto"></div>
-                  </div>
-                ) : (
-                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {PRICING_PLANS.map(plan => {
-                      const isCurrentPlan = userProfile?.plan === plan.id;
-                      const isFree = plan.id === 'free';
-
+                  <div className="space-y-3">
+                    {facilities.map((facility) => {
+                      const isAssigned = facility.assigned_plan_owner_id === user?.id;
                       return (
-                        <div
-                          key={plan.id}
-                          className={`relative bg-white rounded-xl shadow-sm border-2 p-6 flex flex-col ${isCurrentPlan ? 'border-primary-500 shadow-lg' : 'border-slate-200'
-                            } ${plan.popular ? 'ring-2 ring-primary-200' : ''}`}
-                        >
-                          {plan.badge && (
-                            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold">
-                              {plan.badge}
-                            </div>
-                          )}
-                          {isCurrentPlan && (
-                            <div className="absolute -top-3 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
-                              <CheckCircle className="w-3 h-3" /> ACTIVE
-                            </div>
-                          )}
-
-                          <div className="mb-4">
-                            <h3 className="text-lg font-bold text-slate-900 mb-1">{plan.name}</h3>
-                            <div className="flex items-baseline gap-1">
-                              <span className="text-3xl font-bold text-slate-900">
-                                {plan.price === 0 ? 'Free' : `$${plan.price}`}
-                              </span>
-                              {plan.price > 0 && <span className="text-slate-500">/mo</span>}
-                            </div>
-                            {!isFree && (
-                              <p className="text-sm text-slate-500 mt-1">
-                                {plan.slotCount} facility {plan.slotCount === 1 ? 'profile' : 'profiles'}
+                        <div key={facility.id} className="flex items-center justify-between p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors">
+                          <div className="flex items-center gap-3">
+                            <Building2 className={`w-5 h-5 ${isAssigned ? 'text-primary-600' : 'text-slate-400'}`} />
+                            <div>
+                              <p className="font-medium text-slate-900">{facility.name}</p>
+                              <p className="text-xs text-slate-500">
+                                {isAssigned ? 'Premium benefits active' : 'Basic listing'}
                               </p>
-                            )}
+                            </div>
                           </div>
 
-                          <ul className="space-y-2 mb-6 flex-1">
-                            {plan.features.map((feature, idx) => (
-                              <li key={idx} className="flex items-start gap-2 text-sm text-slate-700">
-                                <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
-                                <span>{feature}</span>
-                              </li>
-                            ))}
-                          </ul>
+                          {isAssigned ? (
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="text-red-600 hover:text-red-700 hover:bg-red-50 border-red-200"
+                              onClick={async () => {
+                                // Logic to unassign would go here - for now just alert
+                                alert("To unassign a facility, please contact support or downgrade your plan.");
+                              }}
+                            >
+                              Unassign
+                            </Button>
+                          ) : (
+                            <Button
+                              size="sm"
+                              disabled={!userProfile?.facility_assignments_remaining || userProfile.facility_assignments_remaining <= 0}
+                              onClick={async () => {
+                                if (!userProfile?.facility_assignments_remaining) return;
+                                try {
+                                  // Optimistic update
+                                  const newRemaining = userProfile.facility_assignments_remaining - 1;
+                                  setUserProfile({ ...userProfile, facility_assignments_remaining: newRemaining });
 
-                          <div className="mt-auto">
-                            {isFree ? (
-                              <div className="text-center text-sm text-slate-500 py-2">
-                                Current default plan
-                              </div>
-                            ) : isCurrentPlan ? (
-                              <Button
-                                variant="outline"
-                                className="w-full"
-                                onClick={handleManageBilling}
-                              >
-                                Manage Plan
-                              </Button>
-                            ) : (
-                              <Button
-                                className={`w-full ${plan.popular ? 'bg-primary-600 hover:bg-primary-700' : ''}`}
-                                variant={plan.popular ? 'primary' : 'outline'}
-                                onClick={() => handleUpgrade(plan.stripePriceId)}
-                              >
-                                {userProfile?.plan === 'free' || !userProfile?.plan ? 'Subscribe' : 'Upgrade'}
-                              </Button>
-                            )}
-                          </div>
+                                  // Update facility
+                                  const { error } = await supabase
+                                    .from('facilities')
+                                    .update({ assigned_plan_owner_id: user?.id })
+                                    .eq('id', facility.id);
+
+                                  if (error) throw error;
+
+                                  // Update local facilities state
+                                  setFacilities(facilities.map(f => f.id === facility.id ? { ...f, assigned_plan_owner_id: user?.id } : f));
+
+                                  // Update profile remaining count in DB (handled by trigger usually, but good to sync)
+                                  await fetchBillingInfo();
+
+                                } catch (err) {
+                                  console.error("Error assigning facility:", err);
+                                  alert("Failed to assign facility. Please try again.");
+                                  await fetchBillingInfo(); // Revert optimistic update
+                                }
+                              }}
+                            >
+                              Assign Plan
+                            </Button>
+                          )}
                         </div>
                       );
                     })}
                   </div>
-                )}
-              </div>
-
-              {/* Facilities List (if they have facilities) */}
-              {facilities.length > 0 && (
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-4">
-                    Your Facilities ({facilities.length})
-                  </h3>
-                  <div className="bg-white rounded-xl border border-slate-200 p-6">
-                    <p className="text-slate-600 mb-4">
-                      You have {facilities.length} facility {facilities.length === 1 ? 'profile' : 'profiles'}.
-                      {userProfile?.plan !== 'free' && ` Your ${PRICING_PLANS.find(p => p.id === userProfile?.plan)?.name || 'plan'} allows ${userProfile?.facility_assignments_remaining || 0} more facility assignments.`}
-                    </p>
-                    <div className="grid gap-3">
-                      {facilities.map((facility: any) => (
-                        <div key={facility.id} className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
-                          <span className="font-medium text-slate-900">{facility.name}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
                 </div>
               )}
+
+              {/* Available Plans */}
+              <div id="upgrade-plans">
+                <h3 className="text-xl font-bold text-slate-900 mb-6">Available Plans</h3>
+                <div className="grid md:grid-cols-3 gap-6">
+                  {PRICING_PLANS.filter(p => p.id !== 'free').map((plan) => {
+                    const isCurrentPlan = userProfile?.plan === plan.id;
+                    return (
+                      <div
+                        key={plan.id}
+                        className={`relative bg-white rounded-xl border p-6 flex flex-col ${isCurrentPlan ? 'border-primary-500 ring-1 ring-primary-500' : 'border-slate-200'
+                          }`}
+                      >
+                        {plan.popular && (
+                          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            MOST POPULAR
+                          </div>
+                        )}
+
+                        <div className="mb-4">
+                          <h4 className="font-bold text-lg text-slate-900">{plan.name}</h4>
+                          <div className="flex items-baseline gap-1 mt-2">
+                            <span className="text-3xl font-bold text-slate-900">${plan.price}</span>
+                            <span className="text-slate-500">/month</span>
+                          </div>
+                          <p className="text-sm text-slate-600 mt-2">
+                            Includes {plan.slotCount} facility {plan.slotCount === 1 ? 'profile' : 'profiles'}
+                          </p>
+                        </div>
+
+                        <ul className="space-y-3 mb-8 flex-1">
+                          {plan.features.slice(0, 5).map((feature, i) => (
+                            <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
+                              <CheckCircle className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+
+                        {isCurrentPlan ? (
+                          <Button disabled className="w-full bg-slate-100 text-slate-500 border-slate-200">
+                            Current Plan
+                          </Button>
+                        ) : (
+                          <Button
+                            className="w-full"
+                            variant={plan.popular ? 'primary' : 'outline'}
+                            onClick={() => handleUpgrade(plan.stripePriceId)}
+                          >
+                            Upgrade
+                          </Button>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           )}
 

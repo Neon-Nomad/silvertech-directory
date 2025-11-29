@@ -3,7 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ALL_STATES } from '../../../src/data/states';
 import { Breadcrumbs } from '../../../components/ui/Breadcrumbs';
-import { Building2, Scale, HeartHandshake, ShieldCheck, MapPin, ArrowRight } from 'lucide-react';
+import { Building2, Scale, HeartHandshake, ShieldCheck, MapPin, ArrowRight, Flag } from 'lucide-react';
 
 export const StateHubHome: React.FC = () => {
   const { state } = useParams<{ state: string }>();
@@ -44,6 +44,13 @@ export const StateHubHome: React.FC = () => {
       icon: ShieldCheck,
       path: `/states/${stateDef.slug}/ombudsman`,
       color: 'bg-orange-50 text-orange-600'
+    },
+    {
+      title: 'Veterans Benefits',
+      description: 'Aid & Attendance and state veterans homes.',
+      icon: Flag, // You'll need to import Flag from lucide-react
+      path: `/states/${stateDef.slug}/veterans`,
+      color: 'bg-indigo-50 text-indigo-600'
     }
   ];
 
@@ -58,32 +65,32 @@ export const StateHubHome: React.FC = () => {
       {/* Hero Section */}
       <div className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <Breadcrumbs 
+          <Breadcrumbs
             items={[
               { label: 'Home', path: '/' },
               { label: 'States', path: '/states' }, // Placeholder for a future "All States" page
               { label: stateDef.name, path: `/states/${stateDef.slug}` },
-            ]} 
+            ]}
           />
-          
+
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mt-6 mb-4">
             {stateDef.name} Senior Care Authority
           </h1>
-          
+
           <p className="text-xl text-slate-600 max-w-3xl leading-relaxed">
-            Your complete guide to navigating senior living in {stateDef.name}. 
+            Your complete guide to navigating senior living in {stateDef.name}.
             We provide transparent data on costs, financial aid, and facility quality to help you make informed decisions.
           </p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        
+
         {/* Hub Navigation Grid */}
         <div className="grid md:grid-cols-2 gap-6 mb-16">
           {hubLinks.map((link) => (
-            <Link 
-              key={link.path} 
+            <Link
+              key={link.path}
               to={link.path}
               className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-all group flex items-start gap-6"
             >

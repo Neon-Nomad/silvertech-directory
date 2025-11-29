@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { CheckCircle, Phone, Mail, Building2, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { useAuth } from '@/src/context/AuthProvider';
+import { supabase } from '@/src/lib/supabase';
 
 export const ContactSalesPage: React.FC = () => {
   const navigate = useNavigate();
@@ -22,11 +23,30 @@ export const ContactSalesPage: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, send this to an API or email service
-    console.log('Sales Inquiry:', formData);
-    setSubmitted(true);
+
+    try {
+      const { error } = await supabase
+        .from('sales_inquiries')
+        .insert([
+          {
+            user_id: user?.id,
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            community_name: formData.communityName,
+            beds: formData.beds,
+            challenges: formData.challenges
+          }
+        ]);
+
+      if (error) throw error;
+      setSubmitted(true);
+    } catch (error) {
+      console.error('Error submitting inquiry:', error);
+      alert('Something went wrong. Please try again.');
+    }
   };
 
   if (submitted) {
@@ -189,7 +209,7 @@ export const ContactSalesPage: React.FC = () => {
                 Request Demo & Pricing
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              
+
               <p className="text-xs text-center text-slate-500">
                 By submitting this form, you agree to our Terms of Service and Privacy Policy.
               </p>
