@@ -264,9 +264,9 @@ export const EditFacility: React.FC = () => {
                     >
                       Upgrade for $99/mo
                     </Button>
-                    <p className="text-xs text-green-700 font-medium mt-2">
+                    <div className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
                       Includes 15-day free trial
-                    </p>
+                    </div>
                   </div>
                 </div>
               )}

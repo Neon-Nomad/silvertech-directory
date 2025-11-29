@@ -20,13 +20,17 @@ const Tier: React.FC<TierProps> = ({ name, price, features, isPopular, onSelect 
     <h3 className="text-lg font-bold text-slate-900 mb-2">{name}</h3>
     <div className="mb-6">
       <span className="text-3xl font-bold text-slate-900">{price}</span>
-      {price !== 'Free' && (
+      {price !== 'Free' ? (
         <>
           <span className="text-slate-500">/mo</span>
           <div className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
             15-Day Free Trial
           </div>
         </>
+      ) : (
+        <div className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800">
+          Free Forever
+        </div>
       )}
     </div>
     <ul className="space-y-3 mb-8 flex-1">

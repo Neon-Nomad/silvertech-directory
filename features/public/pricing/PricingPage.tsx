@@ -45,6 +45,9 @@ export const PricingPage: React.FC = () => {
               <div className="flex items-baseline gap-1">
                 <span className="text-4xl font-bold text-slate-900">Free</span>
               </div>
+              <div className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800">
+                Free Forever
+              </div>
               <p className="text-slate-500 mt-2 text-sm">Essential visibility for every community.</p>
             </div>
             <div className="p-8 flex-1">
