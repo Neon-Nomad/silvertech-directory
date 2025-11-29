@@ -43,7 +43,7 @@ const OperatorDashboard: React.FC = () => {
           facilityId,
           priceId: 'price_1SYqV5RvhVZKgAjoodrRn0Mk', // Premium Plan
           userId: user.id,
-          returnUrl: `${window.location.origin}/operator/dashboard`,
+          returnUrl: window.location.href, // Redirect back to current page
         }
       });
 
