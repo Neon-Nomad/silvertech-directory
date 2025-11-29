@@ -35,19 +35,29 @@ serve(async (req) => {
     switch (event.type) {
         case "checkout.session.completed": {
             const session = event.data.object
-            const facilityId = session.metadata?.facility_id
+            const userId = session.metadata?.supabase_user_id
+            const planId = session.metadata?.plan_id
+            const slotCount = parseInt(session.metadata?.slot_count || "0")
             const subscriptionId = session.subscription
 
-            if (facilityId) {
-                await supabaseClient
-                    .from("facilities")
+            console.log(`Checkout completed for user: ${userId}, plan: ${planId}`)
+
+            if (userId && planId) {
+                const { error } = await supabaseClient
+                    .from("user_profiles")
                     .update({
-                        plan: "featured",
+                        plan: planId,
                         billing_status: "active",
                         stripe_subscription_id: subscriptionId,
-                        plan_updated_at: new Date().toISOString(),
+                        facility_assignments_remaining: slotCount,
                     })
-                    .eq("id", facilityId)
+                    .eq("id", userId)
+
+                if (error) {
+                    console.error("Failed to update user profile:", error)
+                } else {
+                    console.log(`User ${userId} updated to plan ${planId} with ${slotCount} slots`)
+                }
             }
             break
         }
@@ -55,25 +65,38 @@ serve(async (req) => {
             const invoice = event.data.object
             const subscriptionId = invoice.subscription
 
-            // Find facility by subscription ID
-            await supabaseClient
-                .from("facilities")
+            console.log(`Payment failed for subscription: ${subscriptionId}`)
+
+            // Find user by subscription ID
+            const { error } = await supabaseClient
+                .from("user_profiles")
                 .update({ billing_status: "past_due" })
                 .eq("stripe_subscription_id", subscriptionId)
+
+            if (error) {
+                console.error("Failed to update billing status:", error)
+            }
             break
         }
         case "customer.subscription.deleted": {
             const subscription = event.data.object
             const subscriptionId = subscription.id
 
-            await supabaseClient
-                .from("facilities")
+            console.log(`Subscription deleted: ${subscriptionId}`)
+
+            const { error } = await supabaseClient
+                .from("user_profiles")
                 .update({
-                    plan: "basic",
+                    plan: "free",
                     billing_status: "canceled",
-                    stripe_subscription_id: null
+                    stripe_subscription_id: null,
+                    facility_assignments_remaining: 0,
                 })
                 .eq("stripe_subscription_id", subscriptionId)
+
+            if (error) {
+                console.error("Failed to update user profile:", error)
+            }
             break
         }
     }

@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { LayoutDashboard, Building2, Users, Settings, LogOut, CreditCard, CheckCircle, AlertCircle } from 'lucide-react';
+import { LayoutDashboard, Building2, Users, Settings, LogOut, CreditCard, CheckCircle, AlertCircle, Zap } from 'lucide-react';
 import { useAuth } from '@/src/context/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
 import { MyFacilities } from './MyFacilities';
 import { LeadsView } from './LeadsView';
 import { Button } from '@/components/ui/Button';
+import { PRICING_PLANS } from '@/src/config/pricing';
 
 const OperatorDashboard: React.FC = () => {
   const { user, signOut, loading } = useAuth();
   const [activeTab, setActiveTab] = useState<'overview' | 'facilities' | 'leads' | 'billing' | 'settings'>('overview');
   const [facilities, setFacilities] = useState<any[]>([]);
   const [loadingBilling, setLoadingBilling] = useState(false);
+  const [userProfile, setUserProfile] = useState<any>(null);
 
   useEffect(() => {
     if (activeTab === 'billing' && user) {
@@ -21,13 +23,24 @@ const OperatorDashboard: React.FC = () => {
   const fetchBillingInfo = async () => {
     setLoadingBilling(true);
     try {
-      const { data, error } = await supabase
+      // Fetch user profile with billing info
+      const { data: profile, error: profileError } = await supabase
+        .from('user_profiles')
+        .select('*')
+        .eq('id', user?.id)
+        .single();
+
+      if (profileError) throw profileError;
+      setUserProfile(profile);
+
+      // Fetch user's facilities
+      const { data: facilitiesData, error: facilitiesError } = await supabase
         .from('facilities')
-        .select('id, name, plan, billing_status, stripe_customer_id')
+        .select('id, name')
         .eq('owner_id', user?.id);
 
-      if (error) throw error;
-      setFacilities(data || []);
+      if (facilitiesError) throw facilitiesError;
+      setFacilities(facilitiesData || []);
     } catch (err) {
       console.error("Error fetching billing info:", err);
     } finally {
@@ -35,15 +48,12 @@ const OperatorDashboard: React.FC = () => {
     }
   };
 
-  const handleUpgrade = async (facilityId: string) => {
+  const handleUpgrade = async (priceId: string) => {
     try {
-      // Call Supabase Edge Function
       const { data, error } = await supabase.functions.invoke('create-checkout-session', {
         body: {
-          facilityId,
-          priceId: 'price_1SYqV5RvhVZKgAjoodrRn0Mk', // Premium Plan
-          userId: user?.id,
-          returnUrl: window.location.href, // Redirect back to current page
+          priceId,
+          returnUrl: window.location.href,
         }
       });
 
@@ -58,10 +68,23 @@ const OperatorDashboard: React.FC = () => {
   };
 
   const handleManageBilling = async () => {
-    // In a real app, this would call a function to create a portal session
-    // For now, we'll just alert or link to a generic portal if we had one
-    alert("To manage your subscription, please contact support or use the Stripe Customer Portal link sent to your email.");
+    try {
+      const { data, error } = await supabase.functions.invoke('create-portal-session', {
+        body: {
+          returnUrl: window.location.href,
+        }
+      });
+
+      if (error) throw error;
+      if (data?.url) {
+        window.location.href = data.url;
+      }
+    } catch (err) {
+      console.error("Error creating portal session:", err);
+      alert("Failed to open billing portal. Please try again or contact support.");
+    }
   };
+
 
   if (loading) {
     return (
@@ -213,69 +236,137 @@ const OperatorDashboard: React.FC = () => {
           {activeTab === 'leads' && <LeadsView />}
 
           {activeTab === 'billing' && (
-            <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-slate-900">Billing & Plans</h2>
-              <p className="text-slate-600">Manage your subscriptions and billing details.</p>
-
-              {loadingBilling ? (
-                <div>Loading billing info...</div>
-              ) : (
-                <div className="grid gap-6">
-                  {facilities.map(facility => (
-                    <div key={facility.id} className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                      <div>
-                        <h3 className="text-lg font-bold text-slate-900">{facility.name}</h3>
-                        <div className="flex items-center gap-2 mt-1">
-                          <span className="text-sm text-slate-500">Current Plan:</span>
-                          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium capitalize
-                                             ${facility.plan === 'featured' ? 'bg-purple-100 text-purple-800' :
-                              facility.plan === 'lead_suite' ? 'bg-blue-100 text-blue-800' :
-                                'bg-slate-100 text-slate-800'}`}>
-                            {facility.plan || 'Basic'}
-                          </span>
-                          {facility.billing_status === 'active' && (
-                            <span className="text-green-600 text-xs flex items-center gap-1">
-                              <CheckCircle className="w-3 h-3" /> Active
-                            </span>
-                          )}
-                          {facility.billing_status === 'past_due' && (
-                            <span className="text-red-600 text-xs flex items-center gap-1">
-                              <AlertCircle className="w-3 h-3" /> Past Due
-                            </span>
-                          )}
-                        </div>
-                      </div>
-
-                      <div className="flex items-center gap-3">
-                        {facility.plan === 'basic' && (
-                          <Button onClick={() => handleUpgrade(facility.id)} className="bg-purple-600 hover:bg-purple-700 text-white">
-                            Upgrade to Featured ($99/mo)
-                          </Button>
-                        )}
-                        {facility.plan === 'featured' && (
-                          <div className="flex gap-2">
-                            <Button variant="outline" onClick={handleManageBilling}>
-                              Manage Billing
-                            </Button>
-                            <Button variant="outline" onClick={() => window.location.href = '/providers/contact-sales'}>
-                              Contact Sales for Lead Suite
-                            </Button>
-                          </div>
-                        )}
-                        {facility.plan === 'lead_suite' && (
-                          <Button variant="outline" onClick={() => window.location.href = '/providers/contact-sales'}>
-                            Contact Sales
-                          </Button>
-                        )}
-                      </div>
+            <div className="space-y-8">
+              {/* Current Plan Status */}
+              {userProfile && userProfile.plan !== 'free' && (
+                <div className="bg-gradient-to-r from-primary-50 to-purple-50 p-6 rounded-xl border border-primary-200">
+                  <div className="flex justify-between items-start mb-4">
+                    <div>
+                      <h3 className="text-lg font-bold text-slate-900 mb-1">Current Plan: {PRICING_PLANS.find(p => p.id === userProfile.plan)?.name || userProfile.plan}</h3>
+                      <p className="text-slate-600">
+                        {userProfile.facility_assignments_remaining} of {PRICING_PLANS.find(p => p.id === userProfile.plan)?.slotCount || 0} facility slots remaining
+                      </p>
                     </div>
-                  ))}
-
-                  {facilities.length === 0 && (
-                    <div className="text-center py-10 bg-white rounded-xl border border-dashed border-slate-300">
-                      <p className="text-slate-500">No facilities found. Claim or add a facility to manage billing.</p>
+                    <div className="flex gap-2">
+                      <Button variant="outline" onClick={handleManageBilling}>
+                        Manage Billing
+                      </Button>
+                    </div>
+                  </div>
+                  {userProfile.billing_status === 'past_due' && (
+                    <div className="bg-red-100 text-red-800 px-4 py-2 rounded-lg flex items-center gap-2">
+                      <AlertCircle className="w-5 h-5" />
+                      <span>Payment past due. Please update your payment method.</span>
                     </div>
                   )}
+                </div>
+              )}
+
+              {/* Pricing Tiers */}
+              <div>
+                <h2 className="text-2xl font-bold text-slate-900 mb-2">Subscription Plans</h2>
+                <p className="text-slate-600 mb-6">Choose a plan that fits your needs. Upgrade, downgrade, or cancel anytime.</p>
+
+                {loadingBilling ? (
+                  <div className="text-center py-12">
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto"></div>
+                  </div>
+                ) : (
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {PRICING_PLANS.map(plan => {
+                      const isCurrentPlan = userProfile?.plan === plan.id;
+                      const isFree = plan.id === 'free';
+
+                      return (
+                        <div
+                          key={plan.id}
+                          className={`relative bg-white rounded-xl shadow-sm border-2 p-6 flex flex-col ${isCurrentPlan ? 'border-primary-500 shadow-lg' : 'border-slate-200'
+                            } ${plan.popular ? 'ring-2 ring-primary-200' : ''}`}
+                        >
+                          {plan.badge && (
+                            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                              {plan.badge}
+                            </div>
+                          )}
+                          {isCurrentPlan && (
+                            <div className="absolute -top-3 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+                              <CheckCircle className="w-3 h-3" /> ACTIVE
+                            </div>
+                          )}
+
+                          <div className="mb-4">
+                            <h3 className="text-lg font-bold text-slate-900 mb-1">{plan.name}</h3>
+                            <div className="flex items-baseline gap-1">
+                              <span className="text-3xl font-bold text-slate-900">
+                                {plan.price === 0 ? 'Free' : `$${plan.price}`}
+                              </span>
+                              {plan.price > 0 && <span className="text-slate-500">/mo</span>}
+                            </div>
+                            {!isFree && (
+                              <p className="text-sm text-slate-500 mt-1">
+                                {plan.slotCount} facility {plan.slotCount === 1 ? 'profile' : 'profiles'}
+                              </p>
+                            )}
+                          </div>
+
+                          <ul className="space-y-2 mb-6 flex-1">
+                            {plan.features.map((feature, idx) => (
+                              <li key={idx} className="flex items-start gap-2 text-sm text-slate-700">
+                                <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                                <span>{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+
+                          <div className="mt-auto">
+                            {isFree ? (
+                              <div className="text-center text-sm text-slate-500 py-2">
+                                Current default plan
+                              </div>
+                            ) : isCurrentPlan ? (
+                              <Button
+                                variant="outline"
+                                className="w-full"
+                                onClick={handleManageBilling}
+                              >
+                                Manage Plan
+                              </Button>
+                            ) : (
+                              <Button
+                                className={`w-full ${plan.popular ? 'bg-primary-600 hover:bg-primary-700' : ''}`}
+                                variant={plan.popular ? 'primary' : 'outline'}
+                                onClick={() => handleUpgrade(plan.stripePriceId)}
+                              >
+                                {userProfile?.plan === 'free' || !userProfile?.plan ? 'Subscribe' : 'Upgrade'}
+                              </Button>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+
+              {/* Facilities List (if they have facilities) */}
+              {facilities.length > 0 && (
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-4">
+                    Your Facilities ({facilities.length})
+                  </h3>
+                  <div className="bg-white rounded-xl border border-slate-200 p-6">
+                    <p className="text-slate-600 mb-4">
+                      You have {facilities.length} facility {facilities.length === 1 ? 'profile' : 'profiles'}.
+                      {userProfile?.plan !== 'free' && ` Your ${PRICING_PLANS.find(p => p.id === userProfile?.plan)?.name || 'plan'} allows ${userProfile?.facility_assignments_remaining || 0} more facility assignments.`}
+                    </p>
+                    <div className="grid gap-3">
+                      {facilities.map((facility: any) => (
+                        <div key={facility.id} className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+                          <span className="font-medium text-slate-900">{facility.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               )}
             </div>

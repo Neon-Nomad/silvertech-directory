@@ -1,2 +1,7 @@
 [functions.stripe-webhook]
+
+[functions.create-checkout-session]
+
+[functions.create-portal-session]
+
 verify_jwt = false

@@ -12,12 +12,20 @@ const corsHeaders = {
     "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
 }
 
+// Plan configuration matching frontend pricing.ts
+const PLAN_CONFIGS: Record<string, { slotCount: number; planId: string }> = {
+    'price_featured_monthly': { slotCount: 3, planId: 'featured' },
+    'price_priority_monthly': { slotCount: 10, planId: 'priority' },
+    'price_leadsuite_monthly': { slotCount: 25, planId: 'lead_suite' },
+}
+
 serve(async (req) => {
     if (req.method === "OPTIONS") {
         return new Response("ok", { headers: corsHeaders })
     }
 
     try {
+        // Initialize Supabase client with user's auth token
         const supabaseClient = createClient(
             Deno.env.get("SUPABASE_URL") ?? "",
             Deno.env.get("SUPABASE_ANON_KEY") ?? "",
@@ -28,6 +36,7 @@ serve(async (req) => {
             }
         )
 
+        // Verify user authentication
         const {
             data: { user },
         } = await supabaseClient.auth.getUser()
@@ -36,18 +45,65 @@ serve(async (req) => {
             throw new Error("User not authenticated")
         }
 
-        const { facilityId, priceId, returnUrl } = await req.json()
+        // Parse request body - no longer requires facilityId
+        const { priceId, returnUrl } = await req.json()
 
-        if (!facilityId) {
-            throw new Error("Missing facilityId")
+        if (!priceId) {
+            throw new Error("Missing priceId")
         }
 
-        // ... (ownership checks)
+        // Get plan configuration
+        const planConfig = PLAN_CONFIGS[priceId]
+        if (!planConfig) {
+            throw new Error("Invalid price ID")
+        }
 
-        // ... (customer creation)
+        console.log(`Processing checkout for user: ${user.id}, plan: ${planConfig.planId}`)
 
-        // Construct success/cancel URLs using the provided returnUrl
-        // Ensure we handle existing query parameters correctly
+        // Get or create user profile
+        const { data: profile, error: profileError } = await supabaseClient
+            .from("user_profiles")
+            .select("id, stripe_customer_id")
+            .eq("id", user.id)
+            .single()
+
+        if (profileError || !profile) {
+            throw new Error("User profile not found")
+        }
+
+        // Customer creation/retrieval logic
+        let customerId = profile.stripe_customer_id
+
+        if (!customerId) {
+            console.log("Creating new Stripe customer...")
+            // Create a new Stripe customer
+            const customer = await stripe.customers.create({
+                email: user.email,
+                metadata: {
+                    supabase_user_id: user.id,
+                },
+            })
+
+            customerId = customer.id
+            console.log(`Created Stripe customer: ${customerId}`)
+
+            // Save the customer ID back to the user profile
+            const { error: updateError } = await supabaseClient
+                .from("user_profiles")
+                .update({ stripe_customer_id: customerId })
+                .eq("id", user.id)
+
+            if (updateError) {
+                console.error("Failed to save customer ID:", updateError)
+                // Continue anyway - we have the customer ID
+            } else {
+                console.log("Saved customer ID to user profile")
+            }
+        } else {
+            console.log(`Using existing Stripe customer: ${customerId}`)
+        }
+
+        // Construct success/cancel URLs
         const successUrl = new URL(returnUrl || `${req.headers.get("origin")}/dashboard`);
         successUrl.searchParams.set('success', 'true');
         successUrl.searchParams.set('session_id', '{CHECKOUT_SESSION_ID}');
@@ -55,11 +111,14 @@ serve(async (req) => {
         const cancelUrl = new URL(returnUrl || `${req.headers.get("origin")}/dashboard`);
         cancelUrl.searchParams.set('canceled', 'true');
 
+        console.log(`Creating checkout session for price: ${priceId}`)
+
+        // Create Stripe checkout session
         const session = await stripe.checkout.sessions.create({
             customer: customerId,
             line_items: [
                 {
-                    price: priceId || 'price_featured_monthly',
+                    price: priceId,
                     quantity: 1,
                 },
             ],
@@ -67,10 +126,13 @@ serve(async (req) => {
             success_url: successUrl.toString(),
             cancel_url: cancelUrl.toString(),
             metadata: {
-                facility_id: facilityId,
-                supabase_user_id: user.id
+                supabase_user_id: user.id,
+                plan_id: planConfig.planId,
+                slot_count: planConfig.slotCount.toString(),
             }
         })
+
+        console.log(`Checkout session created: ${session.id}`)
 
         return new Response(
             JSON.stringify({ url: session.url }),
@@ -80,9 +142,16 @@ serve(async (req) => {
             }
         )
     } catch (error) {
-        return new Response(JSON.stringify({ error: error.message }), {
-            headers: { ...corsHeaders, "Content-Type": "application/json" },
-            status: 400,
-        })
+        console.error("Checkout session error:", error.message)
+        return new Response(
+            JSON.stringify({
+                error: error.message,
+                details: error.type || "unknown_error"
+            }),
+            {
+                headers: { ...corsHeaders, "Content-Type": "application/json" },
+                status: 400,
+            }
+        )
     }
 })
