@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+import { Elements } from '@stripe/react-stripe-js';
+import { stripePromise } from '@/src/lib/stripe';
 import Navbar from '@/components/layout/Navbar';
 
 import DirectorySearch from '@/features/family/discovery/DirectorySearch';
@@ -28,8 +30,13 @@ import { Blog } from './features/public/blog/Blog';
 import { LocationPage } from '@/features/seo/LocationPage';
 import { StateHubHome } from '@/features/locations/hub/StateHubHome';
 import { StateMedicaidPage } from '@/features/locations/hub/StateMedicaidPage';
+import { StateRegulatoryHub } from '@/features/regulatory/StateRegulatoryHub';
 import { StateRulesPage } from '@/features/locations/hub/StateRulesPage';
 import { StateOmbudsmanPage } from '@/features/locations/hub/StateOmbudsmanPage';
+import { RegulatoryLibrary } from '@/features/regulatory/RegulatoryLibrary';
+import { AboutPage } from '@/features/public/company/AboutPage';
+import { ContactPage } from '@/features/public/company/ContactPage';
+import { ResourcePage } from '@/features/resources/ResourcePage';
 
 import { Home } from '@/features/family/landing/Home';
 import { FacilityDetails } from '@/features/family/discovery/FacilityDetails';
@@ -51,58 +58,69 @@ function App() {
     <HelmetProvider>
       <AuthProvider>
         <ComparisonProvider>
-          <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
-            <ScrollToTop />
-            <div className="min-h-screen bg-white">
-              <Navbar />
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/search" element={<DirectorySearch />} />
-                <Route path="/facility/:id" element={<FacilityDetails />} />
-                
-                {/* Auth Routes */}
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/signup" element={<SignUpPage />} />
-                
-                {/* Operator Routes */}
-                <Route path="/dashboard" element={<OperatorDashboard />} />
-                <Route path="/dashboard/edit/:id" element={<EditFacility />} />
-                <Route path="/operator/login" element={<OperatorLogin />} />
-                <Route path="/claim/:id" element={<ClaimFacilityPage />} />
-                <Route path="/claim-business" element={<ClaimBusiness />} />
-                
-                <Route path="/tools/pricing-audit" element={<PricingAudit />} />
-                <Route path="/survey" element={<CareFinderSurvey />} />
-                <Route path="/results" element={<SurveyResults />} />
-                
-                <Route path="/pricing" element={<PricingPage />} />
-                <Route path="/providers" element={<ForProvidersPage />} />
-                <Route path="/products" element={<ProductsHub />} />
-                <Route path="/products/:category" element={<CategoryPage />} />
-                <Route path="/providers/contact-sales" element={<ContactSalesPage />} />
-                
-                {/* State Authority Hub */}
-                <Route path="/states/:state" element={<StateHubHome />} />
-                <Route path="/states/:state/medicaid" element={<StateMedicaidPage />} />
-                <Route path="/states/:state/rules" element={<StateRulesPage />} />
-                <Route path="/states/:state/ombudsman" element={<StateOmbudsmanPage />} />
-                <Route path="/states/:state/assisted-living" element={<StatePageTemplate />} />
+          <Elements stripe={stripePromise}>
+            <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+              <ScrollToTop />
+              <div className="min-h-screen bg-white">
+                <Navbar />
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/search" element={<DirectorySearch />} />
+                  <Route path="/facility/:id" element={<FacilityDetails />} />
 
-                {/* Legacy / Direct Routes */}
-                <Route path="/assisted-living/california" element={<CaliforniaPage />} />
-                <Route path="/assisted-living/indiana" element={<IndianaPage />} />
-                <Route path="/assisted-living/:state" element={<StatePageTemplate />} />
-                <Route path="/assisted-living/:state/:city" element={<LocationPage />} />
-                <Route path="/assisted-living/:state/cities/:city" element={<CityPageTemplate />} />
-                <Route path="/faq" element={<FAQ />} />
-                <Route path="/advertise" element={<AdvertiseWithUs />} />
-                <Route path="/honest-care" element={<HonestCarePage />} />
-                <Route path="/blog" element={<Blog />} />
-              </Routes>
-              <ComparisonBar />
-              <ComparisonModal />
-            </div>
-          </BrowserRouter>
+                  {/* Auth Routes */}
+                  <Route path="/login" element={<LoginPage />} />
+                  <Route path="/signup" element={<SignUpPage />} />
+
+                  {/* Operator Routes */}
+                  <Route path="/dashboard" element={<OperatorDashboard />} />
+                  <Route path="/dashboard/edit/:id" element={<EditFacility />} />
+                  <Route path="/operator/login" element={<OperatorLogin />} />
+                  <Route path="/claim/:id" element={<ClaimFacilityPage />} />
+                  <Route path="/claim-business" element={<ClaimBusiness />} />
+
+                  <Route path="/tools/pricing-audit" element={<PricingAudit />} />
+                  <Route path="/survey" element={<CareFinderSurvey />} />
+                  <Route path="/results" element={<SurveyResults />} />
+
+                  <Route path="/pricing" element={<PricingPage />} />
+                  <Route path="/providers" element={<ForProvidersPage />} />
+                  <Route path="/products" element={<ProductsHub />} />
+                  <Route path="/products/:category" element={<CategoryPage />} />
+                  <Route path="/products/:category" element={<CategoryPage />} />
+                  <Route path="/providers/contact-sales" element={<ContactSalesPage />} />
+
+                  {/* Company & Resources */}
+                  <Route path="/about" element={<AboutPage />} />
+                  <Route path="/contact" element={<ContactPage />} />
+                  <Route path="/resources/:type" element={<ResourcePage />} />
+                  <Route path="/claim" element={<ClaimBusiness />} />
+
+                  {/* State Authority Hub */}
+                  <Route path="/states/:state" element={<StateHubHome />} />
+                  <Route path="/states/:state/regulatory" element={<StateRegulatoryHub />} />
+                  <Route path="/states/:state/medicaid" element={<StateMedicaidPage />} />
+                  <Route path="/states/:state/rules" element={<StateRulesPage />} />
+                  <Route path="/states/:state/ombudsman" element={<StateOmbudsmanPage />} />
+                  <Route path="/states/:state/assisted-living" element={<StatePageTemplate />} />
+                  <Route path="/regulatory-library" element={<RegulatoryLibrary />} />
+
+                  {/* Legacy / Direct Routes */}
+                  <Route path="/assisted-living/california" element={<CaliforniaPage />} />
+                  <Route path="/assisted-living/indiana" element={<IndianaPage />} />
+                  <Route path="/assisted-living/:state" element={<StatePageTemplate />} />
+                  <Route path="/assisted-living/:state/:city" element={<LocationPage />} />
+                  <Route path="/assisted-living/:state/cities/:city" element={<CityPageTemplate />} />
+                  <Route path="/faq" element={<FAQ />} />
+                  <Route path="/advertise" element={<AdvertiseWithUs />} />
+                  <Route path="/honest-care" element={<HonestCarePage />} />
+                  <Route path="/blog" element={<Blog />} />
+                </Routes>
+                <ComparisonBar />
+                <ComparisonModal />
+              </div>
+            </BrowserRouter>
+          </Elements>
         </ComparisonProvider>
       </AuthProvider>
     </HelmetProvider>

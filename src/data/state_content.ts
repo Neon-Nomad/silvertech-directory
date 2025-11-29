@@ -60,6 +60,18 @@ export interface StateContent {
         description: string;
         schema: any;
     };
+    veteransBenefits: {
+        programs: Array<{
+            name: string;
+            description: string;
+        }>;
+    };
+    contacts: {
+        licensing: { name: string; phone: string; website?: string; };
+        ombudsman: { name: string; phone: string; website?: string; };
+        medicaid: { name: string; phone: string; website?: string; };
+        elderAbuse: { name: string; phone: string; };
+    };
     capitalCoordinates?: {
         lat: number;
         lng: number;
@@ -237,6 +249,15 @@ export const stateContent: Record<string, StateContent> = {
                 }
             }
         },
+        veteransBenefits: {
+            programs: []
+        },
+        contacts: {
+            licensing: { name: "California Department of Social Services", phone: "1-844-538-8766", website: "https://www.cdss.ca.gov" },
+            ombudsman: { name: "California Long-Term Care Ombudsman", phone: "1-800-231-4024", website: "https://www.aging.ca.gov/Programs_and_Services/Long-Term_Care_Ombudsman/" },
+            medicaid: { name: "Medi-Cal", phone: "1-800-541-5555", website: "https://www.dhcs.ca.gov/" },
+            elderAbuse: { name: "Adult Protective Services", phone: "1-833-401-0832" }
+        },
 
         capitalCoordinates: {
             lat: 38.5816,
@@ -397,9 +418,96 @@ export const stateContent: Record<string, StateContent> = {
                 }
             }
         },
+        veteransBenefits: {
+            programs: []
+        },
+        contacts: {
+            licensing: { name: "Indiana Department of Health", phone: "1-800-246-8909", website: "https://www.in.gov/health/" },
+            ombudsman: { name: "Indiana Long-Term Care Ombudsman", phone: "1-800-622-4484", website: "https://www.in.gov/ombudsman/" },
+            medicaid: { name: "Indiana Medicaid", phone: "1-800-457-4584", website: "https://www.in.gov/medicaid/" },
+            elderAbuse: { name: "Adult Protective Services", phone: "1-800-992-6978" }
+        },
         capitalCoordinates: {
             lat: 39.7684,
             lng: -86.1581
+        }
+    },
+    hawaii: {
+        name: "Hawaii",
+        abbreviation: "HI",
+        overview: {
+            title: "Hawaii Senior Living Regulation & Resources",
+            content: "A complete guide to state regulations, licensing requirements, Medicaid programs, and resident protection systems for assisted living and adult residential care in Hawaii.",
+            bullets: [
+                "Assisted Living Facilities (ALF)",
+                "Adult Residential Care Homes (ARCH)",
+                "Expanded ARCHs"
+            ]
+        },
+        licensing: {
+            authority: "Hawaii Department of Health",
+            division: "Office of Health Care Assurance (OHCA)",
+            website: "https://health.hawaii.gov/ohca/",
+            searchUrl: "https://health.hawaii.gov/ohca/state-licensing-section/",
+            regulations: "Title 11, Chapter 90",
+            hotline: "808-692-7400"
+        },
+        requirements: {
+            admission: { allowed: [], prohibited: [] },
+            staffing: []
+        },
+        medication: { allowed: [], prohibited: [] },
+        eviction: { noticeDays: 30, validReasons: [], rights: [] },
+        memoryCare: { requirements: [] },
+        financialAssistance: {
+            programs: [
+                {
+                    name: "Home and Community-Based Services (HCBS) Waiver",
+                    description: "Helps eligible seniors receive care in assisted living facilities or at home instead of institutional care.",
+                    coverage: ["Assisted living services", "Case management"],
+                    eligibility: ["Medicaid eligible", "Nursing facility level of care"]
+                },
+                {
+                    name: "State Plan Personal Care (SPPC)",
+                    description: "Covers assistance with activities of daily living, including bathing, dressing, toileting, and mobility.",
+                    coverage: ["ADL assistance"],
+                    eligibility: ["Medicaid eligible"]
+                },
+                {
+                    name: "Kupuna Care / Kupuna Caregivers Program",
+                    description: "State-funded program offering respite and caregiver support. Not technically Medicaid, but heavily related.",
+                    coverage: ["Respite care", "Caregiver support"],
+                    eligibility: ["Non-Medicaid eligible seniors"]
+                }
+            ]
+        },
+        complaints: {
+            methods: [
+                { name: "OHCA Licensing Authority", contact: "808-692-7400" },
+                { name: "Long-Term Care Ombudsman", contact: "808-586-0100" }
+            ],
+            scope: ["Neglect or poor care", "Resident rights violations", "Unsafe conditions", "Staffing issues", "Medication errors", "Abuse concerns"]
+        },
+        veteransBenefits: {
+            programs: [
+                { name: "Aid and Attendance", description: "Monthly pension addition for veterans requiring care." },
+                { name: "Housebound Allowance", description: "For veterans confined to their home due to disability." },
+                { name: "Veteran Directed Care", description: "Flexible budget for veterans to manage their own care." },
+                { name: "Community Living Centers", description: "VA nursing home alternatives." }
+            ]
+        },
+        contacts: {
+            licensing: { name: "Hawaii Department of Health – OHCA", phone: "808-692-7400", website: "https://health.hawaii.gov/ohca/" },
+            ombudsman: { name: "Hawaii Long-Term Care Ombudsman Program", phone: "808-586-0100", website: "https://health.hawaii.gov/eozoa/long-term-care-ombudsman-program/" },
+            medicaid: { name: "Medicaid Office / DHS", phone: "1-877-628-5076", website: "https://medquest.hawaii.gov/" },
+            elderAbuse: { name: "Elder Abuse Hotline", phone: "808-832-5115" }
+        },
+        legalNotices: [],
+        faqs: [],
+        seo: {
+            title: "Hawaii Senior Living Regulations & Resources",
+            description: "Complete guide to Hawaii assisted living regulations, Medicaid waivers, and licensing.",
+            schema: {}
         }
     }
 };

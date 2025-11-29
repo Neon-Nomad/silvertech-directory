@@ -1,0 +1,26 @@
+{
+  "state_slug": "maryland",
+  "medicaid_content": "",
+  "licensing_content": "",
+  "ombudsman_content": "",
+  "complaints_content": "",
+  "veterans_content": "",
+  "contacts_json": {
+    "licensing": {
+      "name": "",
+      "phone": ""
+    },
+    "ombudsman": {
+      "name": "",
+      "phone": ""
+    },
+    "medicaid": {
+      "name": "",
+      "phone": ""
+    },
+    "elderAbuse": {
+      "name": "",
+      "phone": ""
+    }
+  }
+}
