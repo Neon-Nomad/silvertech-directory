@@ -5,6 +5,7 @@ interface GeolocationState {
     loading: boolean;
     error: string | null;
     coordinates: { lat: number; lng: number } | null;
+    nearestCity: string | null;
 }
 
 export const useGeolocation = () => {

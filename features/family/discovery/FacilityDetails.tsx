@@ -17,25 +17,7 @@ import { HealthcareScoreCard } from '@/features/family/discovery/HealthcareScore
 import { getOmbudsman, OmbudsmanProgram } from '@/src/utils/ombudsmanData';
 import { OmbudsmanCard } from '@/features/family/support/OmbudsmanCard';
 import { getLicensingAuthority, LicensingAuthority } from '@/src/utils/licensingData';
-import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
-import { MapPin, Phone, Star, DollarSign, CheckCircle, ArrowLeft, Shield, Users, Clock, Activity, Utensils, Wifi, AlertCircle, Heart } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
-import { Map } from '@/components/ui/Map';
-import { supabase } from '@/src/lib/supabase';
-import { AddToCompareButton } from '@/components/ui/AddToCompareButton';
-import { geocodeAddress } from '@/src/utils/geocoding';
-import { ReviewList } from '@/features/reviews/ReviewList';
-import { ReviewModal } from '@/features/reviews/ReviewModal';
-import { useAuth } from '@/src/context/AuthProvider';
-import { PhotoGallery } from '@/components/ui/PhotoGallery';
-import { VeteransBenefitsList } from '@/components/resources/VeteransBenefitsList';
-import { calculateHealthcareScore, getNearestHospital, HealthcareScore, Hospital } from '@/src/utils/hospitalData';
-import { HealthcareScoreCard } from '@/features/family/discovery/HealthcareScoreCard';
-import { getOmbudsman, OmbudsmanProgram } from '@/src/utils/ombudsmanData';
-import { OmbudsmanCard } from '@/features/family/support/OmbudsmanCard';
-import { getLicensingAuthority, LicensingAuthority } from '@/src/utils/licensingData';
+
 import { LicensingAuthorityCard } from '@/features/family/support/LicensingAuthorityCard';
 import { getAgingAgency, AgingAgency } from '@/src/utils/agingAgencyData';
 import { AgingAgencyCard } from '@/features/family/support/AgingAgencyCard';
@@ -391,7 +373,7 @@ export const FacilityDetails: React.FC = () => {
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Pricing Card */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border border-primary-100 sticky top-24">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-primary-100">
               <div className="flex items-center justify-between mb-6">
                 <div>
                   <p className="text-sm text-slate-500 font-medium">Monthly Cost</p>

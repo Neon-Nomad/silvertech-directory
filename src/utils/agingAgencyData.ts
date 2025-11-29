@@ -5,7 +5,7 @@ export interface AgingAgency {
     program_name: string;
     description: string;
     services_provided: string[];
-    eligibility_criteria: string[];
+    eligibility_criteria: string | string[];
     why_it_matters: string[];
     contact: {
         phone: string;

@@ -19,9 +19,45 @@ export const EditFacility: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
-  // ... (rest of state)
+  const [formData, setFormData] = useState({
+    name: '',
+    description: '',
+    phone: '',
+    website: '',
+    email: '',
+    address_line1: '',
+    city: '',
+    state: '',
+    postal_code: '',
+    min_price: '',
+    max_price: '',
+    plan: 'basic'
+  });
 
-  // ... (fetchCounts)
+  const [counts, setCounts] = useState({
+    photos: 0,
+    amenities: 0,
+    careTypes: 0
+  });
+
+  const fetchCounts = async () => {
+    if (!id) return;
+    try {
+      const [photos, amenities, careTypes] = await Promise.all([
+        supabase.from('facility_photos').select('id', { count: 'exact' }).eq('facility_id', id),
+        supabase.from('facility_amenities').select('id', { count: 'exact' }).eq('facility_id', id),
+        supabase.from('facility_care_types').select('id', { count: 'exact' }).eq('facility_id', id)
+      ]);
+
+      setCounts({
+        photos: photos.count || 0,
+        amenities: amenities.count || 0,
+        careTypes: careTypes.count || 0
+      });
+    } catch (err) {
+      console.error('Error fetching counts:', err);
+    }
+  };
 
   useEffect(() => {
     const fetchFacility = async () => {
@@ -76,7 +112,46 @@ export const EditFacility: React.FC = () => {
     fetchFacility();
   }, [id, user, authLoading]);
 
-  // ... (handlers)
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async () => {
+    if (!id || !user) return;
+    setSaving(true);
+    setError(null);
+    setSuccess(false);
+
+    try {
+      const { error } = await supabase
+        .from('facilities')
+        .update({
+          name: formData.name,
+          description: formData.description,
+          phone: formData.phone,
+          website: formData.website,
+          email: formData.email,
+          min_price: formData.min_price ? parseFloat(formData.min_price) : null,
+          max_price: formData.max_price ? parseFloat(formData.max_price) : null,
+          updated_at: new Date().toISOString()
+        })
+        .eq('id', id);
+
+      if (error) throw error;
+      setSuccess(true);
+      setTimeout(() => setSuccess(false), 3000);
+    } catch (err) {
+      console.error('Error updating facility:', err);
+      setError('Failed to save changes. Please try again.');
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const handlePublish = async () => {
+    await handleSubmit();
+  };
 
   if (authLoading || loading) return (
     <div className="min-h-screen flex items-center justify-center bg-slate-50">
