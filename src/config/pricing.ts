@@ -9,6 +9,7 @@ export interface PricingPlan {
     features: string[];
     popular?: boolean;
     badge?: string;
+    paymentLink: string;
 }
 
 export const PRICING_PLANS: PricingPlan[] = [
@@ -19,6 +20,7 @@ export const PRICING_PLANS: PricingPlan[] = [
         priceLabel: 'Free',
         stripePriceId: 'price_free',
         slotCount: 0,
+        paymentLink: '',
         features: [
             'Basic directory listing',
             'Contact information displayed',
@@ -31,9 +33,10 @@ export const PRICING_PLANS: PricingPlan[] = [
         name: 'Featured Listing',
         price: 99,
         priceLabel: '$99/mo',
-        stripePriceId: 'price_1SYsb3RvhVZKgAjoV6KuADo7', // $99/month
+        stripePriceId: 'price_1SYsb3RvhVZKgAjoV6KuADo7',
         slotCount: 3,
         popular: true,
+        paymentLink: 'https://buy.stripe.com/eVqaEZ9gIaQwe6d15AcV201',
         features: [
             'Up to 3 facility profiles',
             'Enhanced search placement',
@@ -49,8 +52,9 @@ export const PRICING_PLANS: PricingPlan[] = [
         name: 'Priority Listing',
         price: 299,
         priceLabel: '$299/mo',
-        stripePriceId: 'price_1SYsb9RvhVZKgAjoDp1c37uB', // $299/month
+        stripePriceId: 'price_1SYsb9RvhVZKgAjoDp1c37uB',
         slotCount: 10,
+        paymentLink: 'https://buy.stripe.com/fZubJ350scYEfah7tYcV202',
         features: [
             'Up to 10 facility profiles',
             'Top search placement',
@@ -68,12 +72,13 @@ export const PRICING_PLANS: PricingPlan[] = [
         name: 'Lead Capture Suite',
         price: 499,
         priceLabel: '$499/mo',
-        stripePriceId: 'price_1SYsbDRvhVZKgAjoLqGs2qGR', // $499/month
+        stripePriceId: 'price_1SYsbDRvhVZKgAjoLqGs2qGR',
         slotCount: 25,
         badge: 'BEST VALUE',
+        paymentLink: 'https://buy.stripe.com/28EdRbfF65wc8LTbKecV203',
         features: [
             'Up to 25 facility profiles',
-            'Premium top placement',
+            'Premium to placement',
             'All Priority features',
             'AI Missed Call Lead Integration',
             'AI call transcription & lead scoring',

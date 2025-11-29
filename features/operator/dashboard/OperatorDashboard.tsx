@@ -48,8 +48,11 @@ const OperatorDashboard: React.FC = () => {
     }
   };
 
-  const handleUpgrade = async (priceId: string) => {
-    window.location.href = 'https://buy.stripe.com/aFa28t50sgaQ5zHaGacV200';
+  const handleUpgrade = async (stripePriceId: string) => {
+    const plan = PRICING_PLANS.find(p => p.stripePriceId === stripePriceId);
+    if (plan?.paymentLink) {
+      window.location.href = plan.paymentLink;
+    }
   };
 
   const handleManageBilling = async () => {
