@@ -15,6 +15,7 @@ export const AddToCompareButton: React.FC<AddToCompareButtonProps> = ({
 }) => {
   const { selectedFacilities, addToCompare, removeFromCompare } = useComparison();
 
+  const isSelected = selectedFacilities.some(f => f.id === facility.id);
   const isFull = selectedFacilities.length >= 3;
   const isDisabled = isFull && !isSelected;
 
@@ -37,10 +38,10 @@ export const AddToCompareButton: React.FC<AddToCompareButtonProps> = ({
         onClick={handleClick}
         disabled={isDisabled}
         className={`p-2 rounded-full transition-colors ${isSelected
-            ? 'bg-primary-100 text-primary-600 hover:bg-primary-200'
-            : isDisabled
-              ? 'bg-slate-50 text-slate-300 cursor-not-allowed border border-slate-100'
-              : 'bg-white text-slate-400 hover:text-primary-600 hover:bg-slate-50 border border-slate-200'
+          ? 'bg-primary-100 text-primary-600 hover:bg-primary-200'
+          : isDisabled
+            ? 'bg-slate-50 text-slate-300 cursor-not-allowed border border-slate-100'
+            : 'bg-white text-slate-400 hover:text-primary-600 hover:bg-slate-50 border border-slate-200'
           } ${className}`}
         title={isSelected ? "Remove from comparison" : isDisabled ? "Comparison list full (3/3)" : "Add to comparison"}
       >
@@ -54,10 +55,10 @@ export const AddToCompareButton: React.FC<AddToCompareButtonProps> = ({
       onClick={handleClick}
       disabled={isDisabled}
       className={`inline-flex items-center text-sm font-medium transition-colors ${isSelected
-          ? 'text-primary-600 hover:text-primary-700'
-          : isDisabled
-            ? 'text-slate-300 cursor-not-allowed'
-            : 'text-slate-500 hover:text-primary-600'
+        ? 'text-primary-600 hover:text-primary-700'
+        : isDisabled
+          ? 'text-slate-300 cursor-not-allowed'
+          : 'text-slate-500 hover:text-primary-600'
         } ${className}`}
       title={isDisabled ? "Comparison list full (3/3)" : ""}
     >
