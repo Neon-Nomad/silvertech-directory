@@ -367,7 +367,7 @@ const OperatorDashboard: React.FC = () => {
                             <span className="text-3xl font-bold text-slate-900">${plan.price}</span>
                             <span className="text-slate-500">/month</span>
                           </div>
-                          <div className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                          <div className="mt-2 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide bg-green-100 text-green-800 border border-green-200">
                             15-Day Free Trial
                           </div>
                           <p className="text-sm text-slate-600 mt-2">

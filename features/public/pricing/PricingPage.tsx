@@ -75,7 +75,7 @@ export const PricingPage: React.FC = () => {
                 <span className="text-4xl font-bold text-slate-900">$99</span>
                 <span className="text-slate-500">/mo</span>
               </div>
-              <div className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+              <div className="mt-2 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide bg-green-100 text-green-800 border border-green-200">
                 15-Day Free Trial
               </div>
               <p className="text-slate-500 mt-2 text-sm">Up to 3 facility profiles</p>
