@@ -17,11 +17,32 @@ import { HealthcareScoreCard } from '@/features/family/discovery/HealthcareScore
 import { getOmbudsman, OmbudsmanProgram } from '@/src/utils/ombudsmanData';
 import { OmbudsmanCard } from '@/features/family/support/OmbudsmanCard';
 import { getLicensingAuthority, LicensingAuthority } from '@/src/utils/licensingData';
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import { MapPin, Phone, Star, DollarSign, CheckCircle, ArrowLeft, Shield, Users, Clock, Activity, Utensils, Wifi, AlertCircle, Heart } from 'lucide-react';
+import { Button } from '@/components/ui/Button';
+import { Map } from '@/components/ui/Map';
+import { supabase } from '@/src/lib/supabase';
+import { AddToCompareButton } from '@/components/ui/AddToCompareButton';
+import { geocodeAddress } from '@/src/utils/geocoding';
+import { ReviewList } from '@/features/reviews/ReviewList';
+import { ReviewModal } from '@/features/reviews/ReviewModal';
+import { useAuth } from '@/src/context/AuthProvider';
+import { PhotoGallery } from '@/components/ui/PhotoGallery';
+import { VeteransBenefitsList } from '@/components/resources/VeteransBenefitsList';
+import { calculateHealthcareScore, getNearestHospital, HealthcareScore, Hospital } from '@/src/utils/hospitalData';
+import { HealthcareScoreCard } from '@/features/family/discovery/HealthcareScoreCard';
+import { getOmbudsman, OmbudsmanProgram } from '@/src/utils/ombudsmanData';
+import { OmbudsmanCard } from '@/features/family/support/OmbudsmanCard';
+import { getLicensingAuthority, LicensingAuthority } from '@/src/utils/licensingData';
 import { LicensingAuthorityCard } from '@/features/family/support/LicensingAuthorityCard';
 import { getAgingAgency, AgingAgency } from '@/src/utils/agingAgencyData';
 import { AgingAgencyCard } from '@/features/family/support/AgingAgencyCard';
 import { ALL_STATES } from '@/src/data/states';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+
+import { LeadModal } from '@/features/family/discovery/LeadModal';
 
 export const FacilityDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -31,6 +52,7 @@ export const FacilityDetails: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
+  const [isLeadModalOpen, setIsLeadModalOpen] = useState(false);
   const [refreshReviews, setRefreshReviews] = useState(0);
   const [healthcareScore, setHealthcareScore] = useState<HealthcareScore | null>(null);
   const [nearestHospital, setNearestHospital] = useState<{ hospital: Hospital; distance: number } | null>(null);
@@ -393,14 +415,14 @@ export const FacilityDetails: React.FC = () => {
                 <Button
                   variant="primary"
                   className="w-full py-4 text-lg shadow-md hover:shadow-lg transition-all"
-                  onClick={() => facility.phone && (window.location.href = `tel:${facility.phone}`)}
+                  onClick={() => setIsLeadModalOpen(true)}
                 >
                   Check Availability
                 </Button>
                 <Button
                   variant="outline"
                   className="w-full py-4 text-lg border-2"
-                  onClick={() => facility.phone && (window.location.href = `tel:${facility.phone}`)}
+                  onClick={() => setIsLeadModalOpen(true)}
                 >
                   Request Pricing
                 </Button>
@@ -471,6 +493,13 @@ export const FacilityDetails: React.FC = () => {
         facilityId={id!}
         facilityName={facility.name}
         onReviewSubmitted={() => setRefreshReviews(prev => prev + 1)}
+      />
+
+      <LeadModal
+        isOpen={isLeadModalOpen}
+        onClose={() => setIsLeadModalOpen(false)}
+        facilityId={id!}
+        facilityName={facility.name}
       />
     </div>
   );
