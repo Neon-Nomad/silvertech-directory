@@ -31,7 +31,7 @@ export const PRICING_PLANS: PricingPlan[] = [
         name: 'Featured Listing',
         price: 99,
         priceLabel: '$99/mo',
-        stripePriceId: 'price_featured_monthly',
+        stripePriceId: 'price_1SYqV5RvhVZKgAjoodrRn0Mk', // Real Stripe Price ID
         slotCount: 3,
         popular: true,
         features: [
