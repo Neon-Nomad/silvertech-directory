@@ -125,11 +125,23 @@ async function generateSitemaps() {
         `${BASE_URL}/pricing`,
         `${BASE_URL}/providers`,
         `${BASE_URL}/products`,
+        `${BASE_URL}/products/affiliate`,
         `${BASE_URL}/faq`,
         `${BASE_URL}/advertise`,
         `${BASE_URL}/honest-care`,
         `${BASE_URL}/blog`,
-        `${BASE_URL}/veterans-benefits`
+        `${BASE_URL}/veterans-benefits`,
+        // Product Categories
+        `${BASE_URL}/products/bathroom-safety`,
+        `${BASE_URL}/products/mobility-aids`,
+        `${BASE_URL}/products/bedroom-comfort`,
+        `${BASE_URL}/products/kitchen-aids`,
+        `${BASE_URL}/products/monitoring-safety`,
+        `${BASE_URL}/products/personal-hygiene`,
+        `${BASE_URL}/products/medical-supplies`,
+        `${BASE_URL}/products/dementia-care`,
+        `${BASE_URL}/products/daily-living-aids`,
+        `${BASE_URL}/products/outdoor-travel`
     ];
 
     // 2. Fetch Facilities from DB
