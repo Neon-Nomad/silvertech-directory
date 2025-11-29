@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-slate-900 shadow-2xl border-b border-slate-700">
+      <nav className="relative w-full z-50 transition-all duration-300 bg-slate-900 shadow-2xl border-b border-slate-700">
 
         {/* Gunmetal Gradient Background */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 opacity-95"></div>
@@ -90,8 +90,7 @@ const Navbar: React.FC = () => {
         </div>
       </nav>
 
-      {/* Spacer */}
-      <div className="h-24"></div>
+
 
       <FullScreenMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
     </>
