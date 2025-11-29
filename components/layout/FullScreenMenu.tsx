@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '@/src/context/AuthProvider';
-import { Search, MapPin, BookOpen, Scale, Building2, Users, HelpCircle } from 'lucide-react';
+import { Search, MapPin, BookOpen, Scale, Building2, Users, HelpCircle, ShoppingBag } from 'lucide-react';
 
 interface FullScreenMenuProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-type MenuCategory = 'care' | 'regulatory' | 'operators' | 'company';
+type MenuCategory = 'care' | 'products' | 'regulatory' | 'operators' | 'company';
 
 const US_STATES = [
   'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware',
@@ -53,6 +53,7 @@ export const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose 
 
   const categories = [
     { id: 'care' as MenuCategory, label: 'Find Care', icon: Search, color: 'primary' },
+    { id: 'products' as MenuCategory, label: 'Products', icon: ShoppingBag, color: 'green' },
     { id: 'regulatory' as MenuCategory, label: 'Regulatory Library', icon: Scale, color: 'blue' },
     { id: 'operators' as MenuCategory, label: 'For Providers', icon: Building2, color: 'purple' },
     { id: 'company' as MenuCategory, label: 'Company', icon: HelpCircle, color: 'slate' }
@@ -123,6 +124,7 @@ export const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose 
                   className="w-full"
                 >
                   {activeCategory === 'care' && <CareContent onClose={onClose} />}
+                  {activeCategory === 'products' && <ProductsContent onClose={onClose} />}
                   {activeCategory === 'regulatory' && <RegulatoryContent onClose={onClose} />}
                   {activeCategory === 'operators' && <OperatorsContent onClose={onClose} user={user} signOut={signOut} />}
                   {activeCategory === 'company' && <CompanyContent onClose={onClose} />}
@@ -142,6 +144,16 @@ const CareContent = ({ onClose }: { onClose: () => void }) => (
     <div className="grid grid-cols-2 gap-6">
       <NavCard to="/" onClick={onClose} icon={Search} title="Search Facilities" description="Find the perfect care option" />
       <NavCard to="/states" onClick={onClose} icon={MapPin} title="Browse by State" description="Explore all locations" />
+    </div>
+  </div>
+);
+
+const ProductsContent = ({ onClose }: { onClose: () => void }) => (
+  <div className="space-y-8">
+    <h2 className="text-3xl font-bold text-slate-900 mb-6">Silver Tech Approved Products</h2>
+    <div className="grid grid-cols-2 gap-6">
+      <NavCard to="/products" onClick={onClose} icon={ShoppingBag} title="Product Categories" description="Browse by category" />
+      <NavCard to="/products/affiliate" onClick={onClose} icon={Search} title="All Products" description="View full catalog" />
     </div>
   </div>
 );

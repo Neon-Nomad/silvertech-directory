@@ -9,36 +9,38 @@ export const Footer: React.FC = () => {
         <p className="text-slate-600 mb-10">
           The demographics are inevitable. The technology is available. The time is now.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
           <a href="https://drive.google.com/drive/folders/1tjOd8qf2qPxi4ELy8oRrzSMXJV-mhh3r?usp=drive_link" target="_blank" rel="noopener noreferrer">
             <Button variant="primary" className="px-8 py-4 text-lg w-full sm:w-auto">
               View Pitch Deck
             </Button>
           </a>
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             className="px-8 py-4 text-lg w-full sm:w-auto"
             onClick={() => window.location.href = 'mailto:andrew@silvertechdirectory.com?subject=Founder Inquiry'}
           >
             Contact the Founder
           </Button>
         </div>
-        
+
         <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
           <div className="mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} SilverTech Directory. All rights reserved.
           </div>
-          <div className="flex gap-6">
-            <a href="/honest-care" className="hover:text-primary-600 transition-colors">
-              Honest Care Policy
-            </a>
-            <a href="mailto:andrew@silvertechdirectory.com" className="hover:text-primary-600 transition-colors">
-              andrew@silvertechdirectory.com
-            </a>
-          </div>
+          <a href="/products" className="hover:text-primary-600 transition-colors">
+            Product Catalog
+          </a>
+          <a href="/honest-care" className="hover:text-primary-600 transition-colors">
+            Honest Care Policy
+          </a>
+          <a href="mailto:andrew@silvertechdirectory.com" className="hover:text-primary-600 transition-colors">
+            andrew@silvertechdirectory.com
+          </a>
         </div>
       </div>
-    </footer>
+    </div>
+    </footer >
   );
 };
