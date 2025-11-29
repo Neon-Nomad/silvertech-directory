@@ -60,43 +60,43 @@ export const FacilityDetails: React.FC = () => {
           .single();
 
         if (error) throw error;
-        
+
         // Fallback for missing coordinates using Geocoding API
         if (!data.latitude || !data.longitude) {
-            const fullAddress = `${data.address_line1}, ${data.city}, ${data.state}`;
-            const coords = await geocodeAddress(fullAddress);
-            
-            if (coords) {
-                data.latitude = coords.lat;
-                data.longitude = coords.lng;
-            }
+          const fullAddress = `${data.address_line1}, ${data.city}, ${data.state}`;
+          const coords = await geocodeAddress(fullAddress);
+
+          if (coords) {
+            data.latitude = coords.lat;
+            data.longitude = coords.lng;
+          }
         }
 
         // Sort photos by display_order
         if (data.facility_photos) {
-            data.facility_photos.sort((a: any, b: any) => (a.display_order || 0) - (b.display_order || 0));
+          data.facility_photos.sort((a: any, b: any) => (a.display_order || 0) - (b.display_order || 0));
         }
 
         setFacility(data);
 
         // Calculate Healthcare Score if lat/lng exists
         if (data.latitude && data.longitude && data.state) {
-            try {
-                const score = await calculateHealthcareScore(data.latitude, data.longitude, data.state);
-                setHealthcareScore(score);
+          try {
+            const score = await calculateHealthcareScore(data.latitude, data.longitude, data.state);
+            setHealthcareScore(score);
 
-                const nearest = await getNearestHospital(data.latitude, data.longitude, data.state);
-                setNearestHospital(nearest);
-            } catch (e) {
-                console.error("Error calculating healthcare score:", e);
-            }
+            const nearest = await getNearestHospital(data.latitude, data.longitude, data.state);
+            setNearestHospital(nearest);
+          } catch (e) {
+            console.error("Error calculating healthcare score:", e);
+          }
         }
 
         // Fetch Ombudsman, Licensing, and Aging Agency
         if (data.state) {
-            setOmbudsman(getOmbudsman(data.state));
-            setLicensingAuthority(getLicensingAuthority(data.state));
-            setAgingAgency(getAgingAgency(data.state));
+          setOmbudsman(getOmbudsman(data.state));
+          setLicensingAuthority(getLicensingAuthority(data.state));
+          setAgingAgency(getAgingAgency(data.state));
         }
       } catch (err) {
         console.error('Error fetching facility:', err);
@@ -138,7 +138,7 @@ export const FacilityDetails: React.FC = () => {
 
   // Construct address string
   const fullAddress = `${facility.address_line1}${facility.address_line2 ? ', ' + facility.address_line2 : ''}, ${facility.city}, ${facility.state} ${facility.postal_code}`;
-  
+
   // Get licensing info
   const license = facility.facility_licensing?.[0];
   const capacity = license?.bed_capacity || 0;
@@ -149,7 +149,7 @@ export const FacilityDetails: React.FC = () => {
   const groupedAmenities: Record<string, any[]> = {};
   amenitiesList.forEach((amenity: any) => {
     if (!groupedAmenities[amenity.category]) {
-        groupedAmenities[amenity.category] = [];
+      groupedAmenities[amenity.category] = [];
     }
     groupedAmenities[amenity.category].push(amenity);
   });
@@ -184,7 +184,7 @@ export const FacilityDetails: React.FC = () => {
 
 
 
-// ... inside component ...
+  // ... inside component ...
 
   // Get state slug for links
   const stateSlug = ALL_STATES.find(s => s.abbreviation === facility.state)?.slug || facility.state.toLowerCase();
@@ -203,64 +203,64 @@ export const FacilityDetails: React.FC = () => {
       {/* Header / Breadcrumbs */}
       <div className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <Breadcrumbs items={[
-                { label: 'Home', path: '/' },
-                { label: 'Assisted Living', path: '/assisted-living' },
-                { label: facility.state, path: `/assisted-living/${stateSlug}` },
-                { label: facility.city, path: `/assisted-living/${stateSlug}/${citySlug}` },
-                { label: facility.name }
-            ]} />
+          <Breadcrumbs items={[
+            { label: 'Home', path: '/' },
+            { label: 'Assisted Living', path: '/assisted-living' },
+            { label: facility.state, path: `/assisted-living/${stateSlug}` },
+            { label: facility.city, path: `/assisted-living/${stateSlug}/${citySlug}` },
+            { label: facility.name }
+          ]} />
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        
+
         {/* Title Section */}
         <div className="mb-8">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4">
-                <div>
-                    <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">{facility.name}</h1>
-                    <div className="flex flex-wrap items-center gap-4 text-slate-600">
-                        <span className="flex items-center gap-1">
-                            <MapPin className="h-4 w-4 text-slate-400" /> 
-                            <span>
-                                {facility.address_line1}, <Link to={`/assisted-living/${stateSlug}/${citySlug}`} className="hover:text-primary-600 hover:underline">{facility.city}</Link>, <Link to={`/assisted-living/${stateSlug}`} className="hover:text-primary-600 hover:underline">{facility.state}</Link> {facility.postal_code}
-                            </span>
-                        </span>
-                        <span className="flex items-center gap-1">
-                            <Shield className="h-4 w-4 text-slate-400" />
-                            Lic: {licenseNumber}
-                        </span>
-                        {facility.owner_id && (
-                            <span className="flex items-center gap-1 text-green-600 bg-green-50 px-2 py-0.5 rounded-full text-sm font-medium">
-                                <CheckCircle className="h-3 w-3" /> Verified Provider
-                            </span>
-                        )}
-                    </div>
-                </div>
-                <div className="hidden md:block">
-                    <AddToCompareButton facility={facility} />
-                </div>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4">
+            <div>
+              <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">{facility.name}</h1>
+              <div className="flex flex-wrap items-center gap-4 text-slate-600">
+                <span className="flex items-center gap-1">
+                  <MapPin className="h-4 w-4 text-slate-400" />
+                  <span>
+                    {facility.address_line1}, <Link to={`/assisted-living/${stateSlug}/${citySlug}`} className="hover:text-primary-600 hover:underline">{facility.city}</Link>, <Link to={`/assisted-living/${stateSlug}`} className="hover:text-primary-600 hover:underline">{facility.state}</Link> {facility.postal_code}
+                  </span>
+                </span>
+                <span className="flex items-center gap-1">
+                  <Shield className="h-4 w-4 text-slate-400" />
+                  Lic: {licenseNumber}
+                </span>
+                {facility.owner_id && (
+                  <span className="flex items-center gap-1 text-green-600 bg-green-50 px-2 py-0.5 rounded-full text-sm font-medium">
+                    <CheckCircle className="h-3 w-3" /> Verified Provider
+                  </span>
+                )}
+              </div>
             </div>
+            <div className="hidden md:block">
+              <AddToCompareButton facility={facility} />
+            </div>
+          </div>
 
-            {/* Photo Gallery */}
-            <PhotoGallery 
-                photos={facility.facility_photos || []} 
-                facilityName={facility.name} 
-            />
+          {/* Photo Gallery */}
+          <PhotoGallery
+            photos={facility.facility_photos || []}
+            facilityName={facility.name}
+          />
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
-            
+
             {/* Overview Card */}
             <div className="bg-white rounded-xl shadow-sm p-8 border border-slate-200">
               <h2 className="text-2xl font-bold text-slate-900 mb-4">About this Community</h2>
               <p className="text-slate-600 leading-relaxed text-lg whitespace-pre-line">
                 {facility.description || `${facility.name} is a licensed residential care facility for the elderly (RCFE) located in ${facility.city}, ${facility.state}. With a licensed capacity of ${capacity} residents, this community offers personalized care services in a supportive environment.`}
               </p>
-              
+
               <div className="mt-8 grid sm:grid-cols-3 gap-4">
                 <div className="bg-slate-50 p-4 rounded-lg border border-slate-100">
                   <p className="text-sm text-slate-500 font-medium uppercase tracking-wide">Capacity</p>
@@ -281,39 +281,39 @@ export const FacilityDetails: React.FC = () => {
 
             {/* Care Types */}
             {careTypes.length > 0 && (
-                <div className="bg-white rounded-xl shadow-sm p-8 border border-slate-200">
-                    <h2 className="text-2xl font-bold text-slate-900 mb-6">Care Services</h2>
-                    <div className="flex flex-wrap gap-3">
-                        {careTypes.map((care: any) => (
-                            <div key={care.id} className="flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-lg border border-blue-100">
-                                <Heart className="w-4 h-4" />
-                                <span className="font-medium">{care.name}</span>
-                            </div>
-                        ))}
+              <div className="bg-white rounded-xl shadow-sm p-8 border border-slate-200">
+                <h2 className="text-2xl font-bold text-slate-900 mb-6">Care Services</h2>
+                <div className="flex flex-wrap gap-3">
+                  {careTypes.map((care: any) => (
+                    <div key={care.id} className="flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-lg border border-blue-100">
+                      <Heart className="w-4 h-4" />
+                      <span className="font-medium">{care.name}</span>
                     </div>
+                  ))}
                 </div>
+              </div>
             )}
 
             {/* Amenities */}
             {amenitiesList.length > 0 && (
-                <div className="bg-white rounded-xl shadow-sm p-8 border border-slate-200">
+              <div className="bg-white rounded-xl shadow-sm p-8 border border-slate-200">
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">Amenities & Features</h2>
                 <div className="space-y-6">
-                    {Object.entries(groupedAmenities).map(([category, items]) => (
-                        <div key={category}>
-                            <h3 className="text-lg font-semibold text-slate-800 mb-3 border-b border-slate-100 pb-2">{category}</h3>
-                            <div className="grid sm:grid-cols-2 gap-3">
-                                {items.map((item: any) => (
-                                    <div key={item.id} className="flex items-center gap-3 text-slate-700">
-                                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                                        <span>{item.name}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
+                  {Object.entries(groupedAmenities).map(([category, items]) => (
+                    <div key={category}>
+                      <h3 className="text-lg font-semibold text-slate-800 mb-3 border-b border-slate-100 pb-2">{category}</h3>
+                      <div className="grid sm:grid-cols-2 gap-3">
+                        {items.map((item: any) => (
+                          <div key={item.id} className="flex items-center gap-3 text-slate-700">
+                            <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                            <span>{item.name}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
                 </div>
-                </div>
+              </div>
             )}
 
             {/* Map Section */}
@@ -321,15 +321,15 @@ export const FacilityDetails: React.FC = () => {
               <h2 className="text-2xl font-bold text-slate-900 mb-6">Location</h2>
               <div className="h-[400px] rounded-xl overflow-hidden bg-slate-100 border border-slate-200 relative">
                 {facility.latitude && facility.longitude ? (
-                   <Map 
-                     center={[facility.latitude, facility.longitude]} 
-                     facilities={[facility]}
-                     zoom={15}
-                   />
+                  <Map
+                    center={[facility.latitude, facility.longitude]}
+                    facilities={[facility]}
+                    zoom={15}
+                  />
                 ) : (
-                   <div className="w-full h-full flex items-center justify-center text-slate-400">
-                     Map data unavailable
-                   </div>
+                  <div className="w-full h-full flex items-center justify-center text-slate-400">
+                    Map data unavailable
+                  </div>
                 )}
               </div>
               <p className="mt-4 text-slate-600 flex items-center gap-2">
@@ -340,15 +340,15 @@ export const FacilityDetails: React.FC = () => {
 
             {/* Financial Resources - Veterans Benefits */}
             <div id="financial-help">
-                <VeteransBenefitsList />
+              <VeteransBenefitsList />
             </div>
 
             {/* Reviews Section */}
             <div className="bg-white rounded-xl shadow-sm p-8 border border-slate-200" id="reviews">
               <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-bold text-slate-900">Reviews</h2>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   onClick={() => {
                     if (user) {
                       setIsReviewModalOpen(true);
@@ -360,7 +360,7 @@ export const FacilityDetails: React.FC = () => {
                   Write a Review
                 </Button>
               </div>
-              
+
               <ReviewList facilityId={id!} refreshTrigger={refreshReviews} />
             </div>
 
@@ -376,7 +376,7 @@ export const FacilityDetails: React.FC = () => {
                   <div className="flex items-center gap-1 text-primary-700">
                     <DollarSign className="h-6 w-6" />
                     <span className="text-3xl font-bold">
-                        {facility.min_price ? `$${facility.min_price.toLocaleString()}` : 'Call'}
+                      {facility.min_price ? `$${facility.min_price.toLocaleString()}` : 'Call'}
                     </span>
                     {facility.max_price && <span className="text-sm text-slate-500 ml-1">- ${facility.max_price.toLocaleString()}</span>}
                   </div>
@@ -390,10 +390,18 @@ export const FacilityDetails: React.FC = () => {
               </div>
 
               <div className="space-y-3">
-                <Button variant="primary" className="w-full py-4 text-lg shadow-md hover:shadow-lg transition-all">
+                <Button
+                  variant="primary"
+                  className="w-full py-4 text-lg shadow-md hover:shadow-lg transition-all"
+                  onClick={() => facility.phone && (window.location.href = `tel:${facility.phone}`)}
+                >
                   Check Availability
                 </Button>
-                <Button variant="outline" className="w-full py-4 text-lg border-2">
+                <Button
+                  variant="outline"
+                  className="w-full py-4 text-lg border-2"
+                  onClick={() => facility.phone && (window.location.href = `tel:${facility.phone}`)}
+                >
                   Request Pricing
                 </Button>
               </div>
@@ -407,7 +415,7 @@ export const FacilityDetails: React.FC = () => {
                   </a>
                 </div>
               )}
-              
+
               <div className="mt-4 text-xs text-center text-slate-400">
                 100% Free Service for Families
               </div>
@@ -415,26 +423,26 @@ export const FacilityDetails: React.FC = () => {
 
             {/* Healthcare Score */}
             {healthcareScore && (
-                <HealthcareScoreCard 
-                    score={healthcareScore} 
-                    nearestHospital={nearestHospital?.hospital || null}
-                    nearestDistance={nearestHospital?.distance || null}
-                />
+              <HealthcareScoreCard
+                score={healthcareScore}
+                nearestHospital={nearestHospital?.hospital || null}
+                nearestDistance={nearestHospital?.distance || null}
+              />
             )}
 
             {/* Ombudsman Card */}
             {ombudsman && (
-                <OmbudsmanCard program={ombudsman} />
+              <OmbudsmanCard program={ombudsman} />
             )}
 
             {/* Licensing Authority Card */}
             {licensingAuthority && (
-                <LicensingAuthorityCard authority={licensingAuthority} />
+              <LicensingAuthorityCard authority={licensingAuthority} />
             )}
 
             {/* Aging Agency Card */}
             {agingAgency && (
-                <AgingAgencyCard agency={agingAgency} variant="compact" />
+              <AgingAgencyCard agency={agingAgency} variant="compact" />
             )}
 
             {/* Claim Business Card */}
@@ -444,8 +452,8 @@ export const FacilityDetails: React.FC = () => {
                 <p className="text-sm text-slate-600 mb-4">
                   Claim your profile to update details, add photos, and respond to reviews.
                 </p>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   className="w-full border-slate-300 hover:bg-white"
                   onClick={() => navigate(`/claim/${id}`)}
                 >
@@ -457,7 +465,7 @@ export const FacilityDetails: React.FC = () => {
         </div>
       </div>
 
-      <ReviewModal 
+      <ReviewModal
         isOpen={isReviewModalOpen}
         onClose={() => setIsReviewModalOpen(false)}
         facilityId={id!}
