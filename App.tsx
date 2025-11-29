@@ -59,7 +59,7 @@ function App() {
       <AuthProvider>
         <ComparisonProvider>
           <Elements stripe={stripePromise}>
-            <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+            <BrowserRouter basename={import.meta.env.BASE_URL} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
               <ScrollToTop />
               <div className="min-h-screen bg-white">
                 <Navbar />
