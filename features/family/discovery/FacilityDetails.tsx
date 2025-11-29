@@ -86,10 +86,10 @@ export const FacilityDetails: React.FC = () => {
         // Calculate Healthcare Score if lat/lng exists
         if (data.latitude && data.longitude && data.state) {
           try {
-            const score = await calculateHealthcareScore(data.latitude, data.longitude, data.state);
+            const score = await calculateHealthcareScore(data.latitude, data.longitude, data.state, data.city);
             setHealthcareScore(score);
 
-            const nearest = await getNearestHospital(data.latitude, data.longitude, data.state);
+            const nearest = await getNearestHospital(data.latitude, data.longitude, data.state, data.city);
             setNearestHospital(nearest);
           } catch (e) {
             console.error("Error calculating healthcare score:", e);
