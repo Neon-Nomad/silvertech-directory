@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 .env
 .env*.local
+stripe_backup_code.txt
+supabase/.temp/
