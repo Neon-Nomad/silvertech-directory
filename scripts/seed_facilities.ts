@@ -160,7 +160,8 @@ async function seedFacilities() {
                                                 facility.state === 'HI' ? 'Hawaii Department of Health' :
                                                     facility.state === 'AK' ? 'Alaska Department of Health' :
                                                         facility.state === 'AL' ? 'Alabama Department of Public Health' :
-                                                            facility.state === 'IL' ? 'Illinois Department of Public Health' : undefined
+                                                            facility.state === 'IL' ? 'Illinois Department of Public Health' :
+                                                                facility.state === 'UT' ? 'Utah Department of Health and Human Services' : undefined
                         });
                     }
                 }
