@@ -49,22 +49,7 @@ const OperatorDashboard: React.FC = () => {
   };
 
   const handleUpgrade = async (priceId: string) => {
-    try {
-      const { data, error } = await supabase.functions.invoke('create-checkout-session', {
-        body: {
-          priceId,
-          returnUrl: window.location.href,
-        }
-      });
-
-      if (error) throw error;
-      if (data?.url) {
-        window.location.href = data.url;
-      }
-    } catch (err) {
-      console.error("Error creating checkout session:", err);
-      alert("Failed to start checkout. Please try again.");
-    }
+    window.location.href = 'https://buy.stripe.com/aFa28t50sgaQ5zHaGacV200';
   };
 
   const handleManageBilling = async () => {

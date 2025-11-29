@@ -31,7 +31,7 @@ export const PRICING_PLANS: PricingPlan[] = [
         name: 'Featured Listing',
         price: 99,
         priceLabel: '$99/mo',
-        stripePriceId: 'price_1SYqV5RvhVZKgAjoodrRn0Mk', // Real Stripe Price ID
+        stripePriceId: 'price_1SYsb3RvhVZKgAjoV6KuADo7', // $99/month
         slotCount: 3,
         popular: true,
         features: [
@@ -49,7 +49,7 @@ export const PRICING_PLANS: PricingPlan[] = [
         name: 'Priority Listing',
         price: 299,
         priceLabel: '$299/mo',
-        stripePriceId: 'price_priority_monthly',
+        stripePriceId: 'price_1SYsb9RvhVZKgAjoDp1c37uB', // $299/month
         slotCount: 10,
         features: [
             'Up to 10 facility profiles',
@@ -68,7 +68,7 @@ export const PRICING_PLANS: PricingPlan[] = [
         name: 'Lead Capture Suite',
         price: 499,
         priceLabel: '$499/mo',
-        stripePriceId: 'price_leadsuite_monthly',
+        stripePriceId: 'price_1SYsbDRvhVZKgAjoLqGs2qGR', // $499/month
         slotCount: 25,
         badge: 'BEST VALUE',
         features: [
