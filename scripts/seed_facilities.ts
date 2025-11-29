@@ -39,7 +39,15 @@ async function seedFacilities() {
         let facilities = [];
 
         try {
-            facilities = JSON.parse(content);
+            const parsed = JSON.parse(content);
+            if (Array.isArray(parsed)) {
+                facilities = parsed;
+            } else if (parsed.facilities && Array.isArray(parsed.facilities)) {
+                facilities = parsed.facilities;
+            } else {
+                console.error(`Invalid format in ${file}: Expected array or object with 'facilities' array`);
+                continue;
+            }
         } catch (e) {
             console.error(`Error parsing ${file}:`, e);
             continue;
@@ -56,12 +64,25 @@ async function seedFacilities() {
 
             for (const f of chunk) {
                 // Normalize fields
-                const name = f.name;
-                const address_line1 = f.address_line1 || f.address;
-                const city = f.city;
-                const state = f.state;
-                const postal_code = f.postal_code || f.zip;
-                const phone = f.phone;
+                let name = f.name;
+                let address_line1 = f.address_line1 || f.address;
+                let city = f.city;
+                let state = f.state;
+                let postal_code = f.postal_code || f.zip;
+                let phone = f.phone;
+
+                // Handle nested address object (common in some scrapers)
+                if (typeof f.address === 'object' && f.address !== null) {
+                    address_line1 = f.address.street || f.address.address_line1;
+                    city = f.address.city || city;
+                    state = f.address.state || state;
+                    postal_code = f.address.zip || f.address.postal_code || postal_code;
+                }
+
+                // Handle nested contact object
+                if (typeof f.contact === 'object' && f.contact !== null) {
+                    phone = f.contact.phone || phone;
+                }
 
                 // Generate composite key for mapping
                 const key = `${name}|${address_line1}|${city}`;
