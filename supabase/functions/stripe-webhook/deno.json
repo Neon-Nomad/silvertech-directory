@@ -1,0 +1,5 @@
+{
+    "security": {
+        "verify_jwt": false
+    }
+}
