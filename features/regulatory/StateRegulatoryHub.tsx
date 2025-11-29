@@ -158,7 +158,7 @@ export const StateRegulatoryHub: React.FC = () => {
 
                         {/* Sidebar Navigation */}
                         <div className="lg:w-64 flex-shrink-0 hidden lg:block">
-                            <div className="sticky top-32">
+                            <div className="">
                                 <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">
                                     Contents
                                 </h3>
