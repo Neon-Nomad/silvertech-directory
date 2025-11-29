@@ -22,6 +22,7 @@ import { ForProvidersPage } from '@/features/public/providers/ForProvidersPage';
 import { ContactSalesPage } from '@/features/public/providers/ContactSalesPage';
 import { ProductsHub } from '@/src/pages/products';
 import { CategoryPage } from '@/src/pages/products/CategoryPage';
+import { StatesDirectoryPage } from '@/features/locations/StatesDirectoryPage';
 import { CityPageTemplate } from '@/features/locations/CityPageTemplate';
 import { FAQ } from '@/features/family/support/FAQ';
 import { AdvertiseWithUs } from '@/features/public/advertise/AdvertiseWithUs';
@@ -138,6 +139,7 @@ function App() {
                     <Route path="/claim" element={<ClaimBusiness />} />
 
                     {/* State Authority Hub */}
+                    <Route path="/states" element={<StatesDirectoryPage />} />
                     <Route path="/states/:state" element={<StateHubHome />} />
                     <Route path="/states/:state/regulatory" element={<StateRegulatoryHub />} />
                     <Route path="/states/:state/medicaid" element={<StateMedicaidPage />} />
