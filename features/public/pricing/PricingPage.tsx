@@ -22,12 +22,12 @@ export const PricingPage: React.FC = () => {
               SilverTech Directory is completely free for families.
             </p>
             <p>
-              Every senior living community in the country receives a basic listing at no cost. 
+              Every senior living community in the country receives a basic listing at no cost.
               We believe eldercare should be transparent and searchable, without forcing families into sales funnels or commission-based systems.
             </p>
             <p className="text-base">
-              Communities may upgrade their listings only if they want additional visibility or operational tools. 
-              Upgrades never affect how families use the site. They simply give providers optional advantages: 
+              Communities may upgrade their listings only if they want additional visibility or operational tools.
+              Upgrades never affect how families use the site. They simply give providers optional advantages:
               photos, analytics, lead protection, and AI-assisted call handling.
             </p>
           </div>
@@ -36,31 +36,24 @@ export const PricingPage: React.FC = () => {
 
       {/* Pricing Cards */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          {/* Basic Tier */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          {/* Free Tier */}
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col">
             <div className="p-8 border-b border-slate-100">
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Basic Listing</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Free Listing</h3>
               <div className="flex items-baseline gap-1">
                 <span className="text-4xl font-bold text-slate-900">Free</span>
               </div>
               <p className="text-slate-500 mt-2 text-sm">Essential visibility for every community.</p>
             </div>
             <div className="p-8 flex-1">
-              <ul className="space-y-4">
-                <FeatureItem text="Included in directory" included={true} />
-                <FeatureItem text="Placement priority" included={false} />
-                <FeatureItem text="Photos allowed" included={false} />
-                <FeatureItem text="Pricing transparency badge" included={false} />
-                <FeatureItem text="Schedule-a-Tour button" included={false} />
-                <FeatureItem text="Dedicated lead email" included={false} />
-                <FeatureItem text="Missed-call protection" included={false} />
-                <FeatureItem text="AI call transcription" included={false} />
-                <FeatureItem text="Lead scoring" included={false} />
-                <FeatureItem text="Monthly PDF report" included={false} />
-                <FeatureItem text="Virtual tour embed" included={false} />
-                <FeatureItem text="Priority support" included={false} />
+              <ul className="space-y-3">
+                <FeatureItem text="Basic directory listing" included={true} />
+                <FeatureItem text="Contact information displayed" included={true} />
+                <FeatureItem text="Standard search visibility" included={true} />
+                <FeatureItem text="Photos" included={false} />
+                <FeatureItem text="Enhanced placement" included={false} />
               </ul>
             </div>
             <div className="p-8 bg-slate-50 border-t border-slate-100">
@@ -70,70 +63,87 @@ export const PricingPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Featured Tier */}
-          <div className="bg-white rounded-2xl shadow-lg border border-primary-100 overflow-hidden flex flex-col relative transform md:-translate-y-4">
-            <div className="absolute top-0 inset-x-0 h-2 bg-primary-500" />
+          {/* Featured Tier $99 */}
+          <div className="bg-white rounded-2xl shadow-sm border border-primary-200 overflow-hidden flex flex-col">
             <div className="p-8 border-b border-slate-100">
-              <div className="text-primary-600 text-sm font-bold uppercase tracking-wide mb-2">Most Popular</div>
+              <div className="text-primary-600 text-xs font-bold uppercase tracking-wide mb-2">Popular</div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Featured Listing</h3>
               <div className="flex items-baseline gap-1">
                 <span className="text-4xl font-bold text-slate-900">$99</span>
                 <span className="text-slate-500">/mo</span>
               </div>
-              <p className="text-slate-500 mt-2 text-sm">Enhanced visibility and engagement tools.</p>
+              <p className="text-slate-500 mt-2 text-sm">Up to 3 facility profiles</p>
             </div>
             <div className="p-8 flex-1">
-              <ul className="space-y-4">
-                <FeatureItem text="Included in directory" included={true} />
-                <FeatureItem text="Placement priority" included={true} />
-                <FeatureItem text="Photos allowed" included={true} />
+              <ul className="space-y-3">
+                <FeatureItem text="Enhanced search placement" included={true} />
+                <FeatureItem text="Photo gallery (10 photos)" included={true} />
                 <FeatureItem text="Pricing transparency badge" included={true} />
                 <FeatureItem text="Schedule-a-Tour button" included={true} />
-                <FeatureItem text="Dedicated lead email" included={false} />
-                <FeatureItem text="Missed-call protection" included={false} />
-                <FeatureItem text="AI call transcription" included={false} />
-                <FeatureItem text="Lead scoring" included={false} />
-                <FeatureItem text="Monthly PDF report" included={false} />
-                <FeatureItem text="Virtual tour embed" included={false} />
+                <FeatureItem text="Basic analytics dashboard" included={true} />
                 <FeatureItem text="Priority support" included={true} />
               </ul>
             </div>
             <div className="p-8 bg-slate-50 border-t border-slate-100">
-              <Link to="/login" className="block w-full py-3 px-4 bg-primary-600 rounded-lg text-white font-medium text-center hover:bg-primary-700 transition-colors shadow-md">
-                Get Started
-              </Link>
+              <a href="https://buy.stripe.com/eVqaEZ9gIaQwe6d15AcV201" className="block w-full py-3 px-4 bg-primary-600 rounded-lg text-white font-medium text-center hover:bg-primary-700 transition-colors shadow-md">
+                Subscribe Now
+              </a>
             </div>
           </div>
 
-          {/* Lead Capture Suite */}
+          {/* Priority Tier $299 */}
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col">
             <div className="p-8 border-b border-slate-100">
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Priority Listing</h3>
+              <div className="flex items-baseline gap-1">
+                <span className="text-4xl font-bold text-slate-900">$299</span>
+                <span className="text-slate-500">/mo</span>
+              </div>
+              <p className="text-slate-500 mt-2 text-sm">Up to 10 facility profiles</p>
+            </div>
+            <div className="p-8 flex-1">
+              <ul className="space-y-3">
+                <FeatureItem text="Top search placement" included={true} />
+                <FeatureItem text="Unlimited photos & tours" included={true} />
+                <FeatureItem text="Advanced analytics & PDF reports" included={true} />
+                <FeatureItem text="Featured in city/state pages" included={true} />
+                <FeatureItem text="Dedicated lead email" included={true} />
+                <FeatureItem text="Priority support" included={true} />
+              </ul>
+            </div>
+            <div className="p-8 bg-slate-50 border-t border-slate-100">
+              <a href="https://buy.stripe.com/fZubJ350scYEfah7tYcV202" className="block w-full py-3 px-4 bg-slate-900 rounded-lg text-white font-medium text-center hover:bg-slate-800 transition-colors">
+                Subscribe Now
+              </a>
+            </div>
+          </div>
+
+          {/* Lead Capture Suite $499 */}
+          <div className="bg-white rounded-2xl shadow-lg border-2 border-primary-300 overflow-hidden flex flex-col relative">
+            <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary-600 to-purple-600" />
+            <div className="p-8 border-b border-slate-100">
+              <div className="text-primary-600 text-xs font-bold uppercase tracking-wide mb-2">Best Value</div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Lead Capture Suite</h3>
               <div className="flex items-baseline gap-1">
                 <span className="text-4xl font-bold text-slate-900">$499</span>
                 <span className="text-slate-500">/mo</span>
               </div>
-              <p className="text-slate-500 mt-2 text-sm">Complete automation and lead management.</p>
+              <p className="text-slate-500 mt-2 text-sm">Up to 25 facility profiles</p>
             </div>
             <div className="p-8 flex-1">
-              <ul className="space-y-4">
-                <FeatureItem text="Included in directory" included={true} />
-                <FeatureItem text="Placement priority" included={true} />
-                <FeatureItem text="Photos allowed" included={true} />
-                <FeatureItem text="Pricing transparency badge" included={true} />
-                <FeatureItem text="Schedule-a-Tour button" included={true} />
-                <FeatureItem text="Dedicated lead email" included={true} />
-                <FeatureItem text="Missed-call protection" included={true} />
-                <FeatureItem text="AI call transcription" included={true} />
-                <FeatureItem text="Lead scoring" included={true} />
-                <FeatureItem text="Monthly PDF report" included={true} />
-                <FeatureItem text="Virtual tour embed" included={true} />
-                <FeatureItem text="Priority support" included={true} />
+              <ul className="space-y-3">
+                <FeatureItem text="Premium top placement" included={true} />
+                <FeatureItem text="AI Missed Call Integration" included={true} />
+                <FeatureItem text="AI call transcription & scoring" included={true} />
+                <FeatureItem text="Automatic SMS notifications" included={true} />
+                <FeatureItem text="CRM integration support" included={true} />
+                <FeatureItem text="Dedicated account manager" included={true} />
+                <FeatureItem text="24/7 priority support" included={true} />
               </ul>
             </div>
             <div className="p-8 bg-slate-50 border-t border-slate-100">
-              <a href="mailto:sales@silvertechdirectory.com?subject=Inquiry about Lead Capture Suite" className="block w-full py-3 px-4 bg-slate-900 rounded-lg text-white font-medium text-center hover:bg-slate-800 transition-colors">
-                Contact Sales
+              <a href="https://buy.stripe.com/28EdRbfF65wc8LTbKecV203" className="block w-full py-3 px-4 bg-gradient-to-r from-primary-600 to-purple-600 rounded-lg text-white font-medium text-center hover:from-primary-700 hover:to-purple-700 transition-colors shadow-lg">
+                Subscribe Now
               </a>
             </div>
           </div>
