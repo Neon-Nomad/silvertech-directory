@@ -248,8 +248,8 @@ const OperatorDashboard: React.FC = () => {
                         {PRICING_PLANS.find(p => p.id === (userProfile?.plan || 'free'))?.name}
                       </span>
                       <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${userProfile?.plan === 'free' || !userProfile?.plan
-                          ? 'bg-slate-100 text-slate-600'
-                          : 'bg-primary-100 text-primary-700'
+                        ? 'bg-slate-100 text-slate-600'
+                        : 'bg-primary-100 text-primary-700'
                         }`}>
                         {userProfile?.status === 'active' ? 'Active' : 'Free Tier'}
                       </span>
@@ -366,6 +366,9 @@ const OperatorDashboard: React.FC = () => {
                           <div className="flex items-baseline gap-1 mt-2">
                             <span className="text-3xl font-bold text-slate-900">${plan.price}</span>
                             <span className="text-slate-500">/month</span>
+                          </div>
+                          <div className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                            15-Day Free Trial
                           </div>
                           <p className="text-sm text-slate-600 mt-2">
                             Includes {plan.slotCount} facility {plan.slotCount === 1 ? 'profile' : 'profiles'}

@@ -72,6 +72,9 @@ export const PricingPage: React.FC = () => {
                 <span className="text-4xl font-bold text-slate-900">$99</span>
                 <span className="text-slate-500">/mo</span>
               </div>
+              <div className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                15-Day Free Trial
+              </div>
               <p className="text-slate-500 mt-2 text-sm">Up to 3 facility profiles</p>
             </div>
             <div className="p-8 flex-1">
@@ -98,6 +101,9 @@ export const PricingPage: React.FC = () => {
               <div className="flex items-baseline gap-1">
                 <span className="text-4xl font-bold text-slate-900">$299</span>
                 <span className="text-slate-500">/mo</span>
+              </div>
+              <div className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                15-Day Free Trial
               </div>
               <p className="text-slate-500 mt-2 text-sm">Up to 10 facility profiles</p>
             </div>
@@ -127,6 +133,9 @@ export const PricingPage: React.FC = () => {
               <div className="flex items-baseline gap-1">
                 <span className="text-4xl font-bold text-slate-900">$499</span>
                 <span className="text-slate-500">/mo</span>
+              </div>
+              <div className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                15-Day Free Trial
               </div>
               <p className="text-slate-500 mt-2 text-sm">Up to 25 facility profiles</p>
             </div>

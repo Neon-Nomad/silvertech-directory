@@ -20,7 +20,14 @@ const Tier: React.FC<TierProps> = ({ name, price, features, isPopular, onSelect 
     <h3 className="text-lg font-bold text-slate-900 mb-2">{name}</h3>
     <div className="mb-6">
       <span className="text-3xl font-bold text-slate-900">{price}</span>
-      {price !== 'Free' && <span className="text-slate-500">/mo</span>}
+      {price !== 'Free' && (
+        <>
+          <span className="text-slate-500">/mo</span>
+          <div className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+            15-Day Free Trial
+          </div>
+        </>
+      )}
     </div>
     <ul className="space-y-3 mb-8 flex-1">
       {features.map((feature, i) => (
@@ -30,7 +37,7 @@ const Tier: React.FC<TierProps> = ({ name, price, features, isPopular, onSelect 
         </li>
       ))}
     </ul>
-    <button 
+    <button
       className={`w-full py-3 px-6 rounded-md font-medium transition-colors ${isPopular ? 'bg-primary-600 text-white hover:bg-primary-700' : 'bg-white text-slate-700 border border-slate-300 hover:bg-slate-50'}`}
       onClick={onSelect}
     >
@@ -48,11 +55,11 @@ export const SubscriptionTierSelector: React.FC = () => {
           Scale your occupancy with our data-driven tools. No commissions, ever.
         </p>
       </div>
-      
+
       <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
-        <Tier 
-          name="Standard" 
-          price="Free" 
+        <Tier
+          name="Standard"
+          price="Free"
           features={[
             "Basic Directory Listing",
             "Receive Inquiries via Email",
@@ -61,9 +68,9 @@ export const SubscriptionTierSelector: React.FC = () => {
           ]}
           onSelect={() => alert('Selected Free Plan - Your account has been updated.')}
         />
-        <Tier 
-          name="Pro" 
-          price="$299" 
+        <Tier
+          name="Pro"
+          price="$299"
           isPopular
           features={[
             "Priority Search Ranking",
@@ -74,9 +81,9 @@ export const SubscriptionTierSelector: React.FC = () => {
           ]}
           onSelect={() => alert('Selected Pro Plan - Payment integration coming soon!')}
         />
-        <Tier 
-          name="AI Connect" 
-          price="$499" 
+        <Tier
+          name="AI Connect"
+          price="$499"
           features={[
             "Everything in Pro",
             "AI Receptionist (24/7 Call Handling)",
