@@ -37,11 +37,11 @@ export const StateRegulatoryHub: React.FC = () => {
             // 1. Try to load static JSON (Fastest)
             try {
                 // Use import.meta.glob for Vite compatibility
-                const regulations = import.meta.glob('../../generated/regulations/*.json');
+                const regulations = import.meta.glob('../../src/generated/regulations/*.json');
 
                 // Convert kebab-case slug (new-jersey) to snake_case (new_jersey) for file matching
                 const fileSlug = stateSlug.replace(/-/g, '_');
-                const loadRegulation = regulations[`../../generated/regulations/${fileSlug}.json`];
+                const loadRegulation = regulations[`../../src/generated/regulations/${fileSlug}.json`];
 
                 if (loadRegulation) {
                     const staticData: any = await loadRegulation();
