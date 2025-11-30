@@ -22,7 +22,8 @@
     "sitemap": "npx tsx scripts/generate_sitemaps.ts",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "seed:digital-products": "tsx scripts/seed_digital_products.ts"
+    "seed:digital-products": "tsx scripts/seed_digital_products.ts",
+    "publish:reit": "tsx scripts/publish_reit_snapshot.ts"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "^5.4.1",
