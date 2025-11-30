@@ -24,8 +24,6 @@ type FacilityRow = {
   latitude?: number | null;
   longitude?: number | null;
   owner_id?: string | null;
-  min_price?: number | null;
-  max_price?: number | null;
   facility_licensing?: Array<{
     bed_capacity?: number | null;
     license_number?: string | null;
@@ -55,7 +53,7 @@ type InspectionRow = {
   url?: string | null;
 };
 
-const BATCH_SIZE = 500;
+const BATCH_SIZE = 200;
 
 function buildAddress(f: FacilityRow) {
   const parts = [
@@ -111,9 +109,7 @@ async function fetchFacilities(): Promise<FacilityRow[]> {
   while (true) {
     const { data, error } = await supabase
       .from('facilities')
-      .select(
-        'id,name,address_line1,address_line2,city,state,postal_code,latitude,longitude,owner_id,min_price,max_price,facility_licensing(*),facility_care_types(care_types(name))'
-      )
+      .select('id,name,address_line1,address_line2,city,state,postal_code,latitude,longitude,owner_id')
       .range(from, from + BATCH_SIZE - 1);
 
     if (error) {
@@ -131,9 +127,6 @@ async function fetchFacilities(): Promise<FacilityRow[]> {
 
 async function upsertFacilities(versionId: string, facilities: FacilityRow[]) {
   const payload = facilities.map((f) => {
-    const lic = f.facility_licensing?.[0];
-    const careTypes =
-      f.facility_care_types?.map((c) => c.care_types?.name).filter(Boolean) || [];
     return {
       id: f.id, // reuse operational id for traceability
       external_id: f.id,
@@ -144,12 +137,11 @@ async function upsertFacilities(versionId: string, facilities: FacilityRow[]) {
       postal_code: f.postal_code,
       latitude: f.latitude,
       longitude: f.longitude,
-      capacity: lic?.bed_capacity ?? null,
-      care_types: careTypes,
+      capacity: null,
+      care_types: [],
       owner: f.owner_id || null,
       operator: f.owner_id || null,
-      license_number: lic?.license_number || null,
-      license_status: lic?.license_status || null,
+      license_number: null,
       data_version: versionId,
     };
   });
@@ -162,28 +154,9 @@ async function upsertFacilities(versionId: string, facilities: FacilityRow[]) {
   return payload.length;
 }
 
-async function upsertPricing(versionId: string, facilities: FacilityRow[]) {
-  const rows: PricingRow[] = facilities
-    .filter((f) => f.min_price || f.max_price)
-    .map((f) => ({
-      facility_id: f.id,
-      min_price: f.min_price ?? null,
-      max_price: f.max_price ?? null,
-      currency: 'usd',
-      observed_on: new Date().toISOString().slice(0, 10),
-    }));
-
-  if (rows.length === 0) return 0;
-
-  const { error } = await supabase.from('re_pricing').upsert(
-    rows.map((r) => ({ ...r, data_version: versionId })),
-    { onConflict: 'facility_id,data_version' }
-  );
-  if (error) {
-    console.error('Failed to upsert re_pricing:', error.message);
-    process.exit(1);
-  }
-  return rows.length;
+async function upsertPricing(versionId: string, _facilities: FacilityRow[]) {
+  // No pricing source in current schema; keep no-op to avoid failures.
+  return 0;
 }
 
 async function upsertInspections(versionId: string) {

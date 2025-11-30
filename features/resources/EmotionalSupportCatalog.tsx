@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Heart, ShieldCheck, Sparkles, FileText, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { supabase } from '@/src/lib/supabase';
 
 type CatalogProduct = {
   title: string;
   price: string;
   value: string;
+  slug: string;
   downloadUrl: string;
 };
 
@@ -27,18 +29,21 @@ const CATEGORIES: CatalogCategory[] = [
     icon: <Heart className="w-5 h-5 text-rose-500" />,
     products: [
       {
+        slug: 'surviving-the-guilt',
         title: 'Surviving the Guilt: The Caregiver\'s Emotional Guide',
         price: '$19.99',
         value: 'Coping exercises and scripts to process guilt while staying present for your loved one.',
         downloadUrl: '/pdfs/emotional/surviving-the-guilt.pdf'
       },
       {
+        slug: 'finding-peace-boundaries',
         title: 'Finding Peace: Setting Boundaries After Placement',
         price: '$14.99',
         value: 'Redefines your role post-placement with boundary templates and self-care routines.',
         downloadUrl: '/pdfs/emotional/finding-peace-boundaries.pdf'
       },
       {
+        slug: 'first-30-days-diagnosis',
         title: 'Navigating the Diagnosis: A Partner\'s First 30 Days',
         price: '$14.99',
         value: 'A day-by-day emotional anchor for spouses processing an Alzheimer\'s diagnosis.',
@@ -54,12 +59,14 @@ const CATEGORIES: CatalogCategory[] = [
     icon: <ShieldCheck className="w-5 h-5 text-emerald-600" />,
     products: [
       {
+        slug: 'medicaid-planning-guide',
         title: 'The 50-State Medicaid Planning Guide: Simplified',
         price: '$29.99',
         value: 'State-by-state eligibility checkpoints, lookback rules, and action steps to protect assets.',
         downloadUrl: '/pdfs/emotional/medicaid-planning-guide.pdf'
       },
       {
+        slug: 'hidden-cost-finder',
         title: 'The Hidden Cost Finder: Fees, Commissions, and Budgeting',
         price: '$14.99',
         value: 'Identifies hidden referral fees, move-in costs, and ongoing charges so you can budget with confidence.',
@@ -75,18 +82,21 @@ const CATEGORIES: CatalogCategory[] = [
     icon: <Sparkles className="w-5 h-5 text-amber-500" />,
     products: [
       {
+        slug: '72-hour-crisis-checklist',
         title: 'The 72-Hour Memory Care Crisis Checklist',
         price: '$9.99',
         value: 'Step-by-step actions for emergency placements to reduce risk and keep control in a crisis.',
         downloadUrl: '/pdfs/emotional/72-hour-crisis-checklist.pdf'
       },
       {
+        slug: 'facility-interview-scorecard',
         title: 'The Facility Interview & Red Flag Scorecard',
         price: '$9.99',
         value: 'Question sets plus scoring guidance to interpret inspection reports and staffing claims.',
         downloadUrl: '/pdfs/emotional/facility-interview-scorecard.pdf'
       },
       {
+        slug: 'transitioning-well-move-in',
         title: 'Transitioning Well: 10 Steps for a Smooth Move-In',
         price: '$14.99',
         value: 'Logistical and emotional steps that calm your loved one and prepare the care team.',
@@ -102,12 +112,14 @@ const CATEGORIES: CatalogCategory[] = [
     icon: <FileText className="w-5 h-5 text-blue-500" />,
     products: [
       {
+        slug: 'maximizing-visits-connection',
         title: 'Maximizing Visits: Connecting with Memory Care Residents',
         price: '$19.99',
         value: 'Visit scripts, sensory prompts, and activities that create meaningful connection.',
         downloadUrl: '/pdfs/emotional/maximizing-visits-connection.pdf'
       },
       {
+        slug: 'care-team-handbook',
         title: 'The Care Team Handbook: How to Partner with Facility Staff',
         price: '$9.99',
         value: 'Communication cadences, escalation paths, and shared-notes templates to keep care aligned.',
@@ -118,6 +130,33 @@ const CATEGORIES: CatalogCategory[] = [
 ];
 
 const EmotionalSupportCatalog: React.FC = () => {
+  const [links, setLinks] = useState<Record<string, string>>({});
+
+  useEffect(() => {
+    const fetchLinks = async () => {
+      try {
+        const slugs = CATEGORIES.flatMap((cat) => cat.products.map((p) => p.slug));
+        const { data, error } = await supabase
+          .from('digital_products')
+          .select('slug,payment_link_url,download_url')
+          .in('slug', slugs);
+        if (error) {
+          console.error('Failed to fetch payment links', error);
+          return;
+        }
+        const map: Record<string, string> = {};
+        (data || []).forEach((row) => {
+          map[row.slug] = row.payment_link_url || row.download_url || '';
+        });
+        setLinks(map);
+      } catch (err) {
+        console.error('Unexpected error fetching links', err);
+      }
+    };
+
+    fetchLinks();
+  }, []);
+
   return (
     <div className="min-h-screen bg-slate-50 pb-16">
       {/* Hero */}
@@ -167,9 +206,9 @@ const EmotionalSupportCatalog: React.FC = () => {
                       <p className="text-sm text-slate-500">PDF</p>
                       <p className="text-xl font-bold text-slate-900">{product.price}</p>
                     </div>
-                    <a href={product.downloadUrl} target="_blank" rel="noreferrer">
+                    <a href={links[product.slug] || product.downloadUrl} target="_blank" rel="noreferrer">
                       <Button size="sm" variant="primary">
-                        Download
+                        {links[product.slug] ? 'Buy & Download' : 'Download'}
                       </Button>
                     </a>
                   </div>
