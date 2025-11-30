@@ -1,0 +1,4791 @@
+{
+  "state": "West Virginia",
+  "state_code": "WV",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 123,
+    "total_nursing_homes": 123,
+    "total_assisted_living": 0,
+    "total_certified_beds": 10711,
+    "counties_served": 54,
+    "average_beds_per_facility": 87.1
+  },
+  "quality_distribution": {
+    "five_star": 16,
+    "four_star": 26,
+    "three_star": 18,
+    "two_star": 29,
+    "one_star": 33
+  },
+  "counties": {
+    "Raleigh": {
+      "facility_count": 4,
+      "total_beds": 588
+    },
+    "Ohio": {
+      "facility_count": 3,
+      "total_beds": 486
+    },
+    "Cabell": {
+      "facility_count": 5,
+      "total_beds": 496
+    },
+    "Marion": {
+      "facility_count": 6,
+      "total_beds": 487
+    },
+    "Randolph": {
+      "facility_count": 3,
+      "total_beds": 295
+    },
+    "Mercer": {
+      "facility_count": 4,
+      "total_beds": 383
+    },
+    "Kanawha": {
+      "facility_count": 11,
+      "total_beds": 994
+    },
+    "Hancock": {
+      "facility_count": 3,
+      "total_beds": 230
+    },
+    "Berkeley": {
+      "facility_count": 2,
+      "total_beds": 188
+    },
+    "Wood": {
+      "facility_count": 5,
+      "total_beds": 498
+    },
+    "Monongalia": {
+      "facility_count": 4,
+      "total_beds": 382
+    },
+    "Upshur": {
+      "facility_count": 2,
+      "total_beds": 136
+    },
+    "Taylor": {
+      "facility_count": 2,
+      "total_beds": 129
+    },
+    "Fayette": {
+      "facility_count": 6,
+      "total_beds": 424
+    },
+    "Tucker": {
+      "facility_count": 1,
+      "total_beds": 94
+    },
+    "Mason": {
+      "facility_count": 2,
+      "total_beds": 236
+    },
+    "Jackson": {
+      "facility_count": 2,
+      "total_beds": 182
+    },
+    "Marshall": {
+      "facility_count": 2,
+      "total_beds": 189
+    },
+    "Mingo": {
+      "facility_count": 1,
+      "total_beds": 90
+    },
+    "Putnam": {
+      "facility_count": 2,
+      "total_beds": 244
+    },
+    "Harrison": {
+      "facility_count": 6,
+      "total_beds": 511
+    },
+    "Preston": {
+      "facility_count": 2,
+      "total_beds": 218
+    },
+    "Wetzel": {
+      "facility_count": 1,
+      "total_beds": 100
+    },
+    "Hampshire": {
+      "facility_count": 2,
+      "total_beds": 92
+    },
+    "Roane": {
+      "facility_count": 2,
+      "total_beds": 97
+    },
+    "Greenbrier": {
+      "facility_count": 4,
+      "total_beds": 298
+    },
+    "Gilmer": {
+      "facility_count": 1,
+      "total_beds": 65
+    },
+    "Barbour": {
+      "facility_count": 2,
+      "total_beds": 120
+    },
+    "Boone": {
+      "facility_count": 1,
+      "total_beds": 90
+    },
+    "Mineral": {
+      "facility_count": 2,
+      "total_beds": 188
+    },
+    "Brooke": {
+      "facility_count": 2,
+      "total_beds": 175
+    },
+    "Pendleton": {
+      "facility_count": 1,
+      "total_beds": 89
+    },
+    "Tyler": {
+      "facility_count": 1,
+      "total_beds": 68
+    },
+    "Morgan": {
+      "facility_count": 2,
+      "total_beds": 136
+    },
+    "Logan": {
+      "facility_count": 2,
+      "total_beds": 186
+    },
+    "Clay": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Grant": {
+      "facility_count": 1,
+      "total_beds": 110
+    },
+    "Jefferson": {
+      "facility_count": 3,
+      "total_beds": 244
+    },
+    "Lewis": {
+      "facility_count": 1,
+      "total_beds": 72
+    },
+    "Mc Dowell": {
+      "facility_count": 1,
+      "total_beds": 120
+    },
+    "Wyoming": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Webster": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Wayne": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Summers": {
+      "facility_count": 2,
+      "total_beds": 154
+    },
+    "Lincoln": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Hardy": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Braxton": {
+      "facility_count": 1,
+      "total_beds": 65
+    },
+    "Pocahontas": {
+      "facility_count": 1,
+      "total_beds": 68
+    },
+    "Ritchie": {
+      "facility_count": 1,
+      "total_beds": 56
+    },
+    "Monroe": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Pleasants": {
+      "facility_count": 1,
+      "total_beds": 68
+    },
+    "Wirt": {
+      "facility_count": 1,
+      "total_beds": 36
+    },
+    "Nicholas": {
+      "facility_count": 1,
+      "total_beds": 90
+    },
+    "Calhoun": {
+      "facility_count": 1,
+      "total_beds": 24
+    }
+  },
+  "facilities": [
+    {
+      "name": "PINE LODGE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "405 STANAFORD ROAD",
+        "city": "BECKLEY",
+        "state": "WV",
+        "zip": "25801"
+      },
+      "contact": {
+        "phone": "3042526317",
+        "phone_formatted": "3042526317"
+      },
+      "location": {
+        "county": "Raleigh",
+        "latitude": 37.8004,
+        "longitude": -81.168
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUNBRIDGE BECKLEY HEALTH CARE LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PETERSON REHABILITATION AND HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "20 HOMESTEAD AVENUE",
+        "city": "WHEELING",
+        "state": "WV",
+        "zip": "26003"
+      },
+      "contact": {
+        "phone": "3042340500",
+        "phone_formatted": "3042340500"
+      },
+      "location": {
+        "county": "Ohio",
+        "latitude": 40.0805,
+        "longitude": -80.694
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 150,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WHEELING REHABILITATION AND HEALTHCARE CENTER LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HUNTINGTON HEALTH AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1720 17TH STREET",
+        "city": "HUNTINGTON",
+        "state": "WV",
+        "zip": "25701"
+      },
+      "contact": {
+        "phone": "3045296031",
+        "phone_formatted": "3045296031"
+      },
+      "location": {
+        "county": "Cabell",
+        "latitude": 38.4085,
+        "longitude": -82.424
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 186,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HUNTINGTON SNF OPERATIONS LLC",
+        "chain_name": "HILL VALLEY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ST. BARBARA'S MEMORIAL NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "134 ST BARBARAS ROAD",
+        "city": "MONONGAH",
+        "state": "WV",
+        "zip": "26554"
+      },
+      "contact": {
+        "phone": "3045345220",
+        "phone_formatted": "3045345220"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 39.4596,
+        "longitude": -80.229
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 57,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST. BARBARAS MEMORIAL NURSING HOME INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MADISON PARK HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "700 MADISON AVENUE",
+        "city": "HUNTINGTON",
+        "state": "WV",
+        "zip": "25704"
+      },
+      "contact": {
+        "phone": "3045220032",
+        "phone_formatted": "3045220032"
+      },
+      "location": {
+        "county": "Cabell",
+        "latitude": 38.4127,
+        "longitude": -82.466
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 41,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FAIRHAVEN OPCO, LLC",
+        "chain_name": "PROVIDENCE HEALTH GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ELKINS REHABILITATION & CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2533 BEVERLY PIKE",
+        "city": "ELKINS",
+        "state": "WV",
+        "zip": "26241"
+      },
+      "contact": {
+        "phone": "3046361391",
+        "phone_formatted": "3046361391"
+      },
+      "location": {
+        "county": "Randolph",
+        "latitude": 38.8809,
+        "longitude": -79.842
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 111,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GLENWOOD HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1924 GLEN WOOD PARK ROAD",
+        "city": "PRINCETON",
+        "state": "WV",
+        "zip": "24739"
+      },
+      "contact": {
+        "phone": "3044258128",
+        "phone_formatted": "3044258128"
+      },
+      "location": {
+        "county": "Mercer",
+        "latitude": 37.3371,
+        "longitude": -81.153
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GLENWOOD PARK LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RIVERSIDE VALLEY OF JOURNEY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6500 MACCORKLE AVENUE SW",
+        "city": "SAINT ALBANS",
+        "state": "WV",
+        "zip": "25177"
+      },
+      "contact": {
+        "phone": "3047680002",
+        "phone_formatted": "3047680002"
+      },
+      "location": {
+        "county": "Kanawha",
+        "latitude": 38.3716,
+        "longitude": -81.77
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RIVERSIDE HEALTH AND REHABILITATION, LLC",
+        "chain_name": "JOURNEY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WEIRTON GERIATRIC CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2525 PENNSYLVANIA AVENUE",
+        "city": "WEIRTON",
+        "state": "WV",
+        "zip": "26062"
+      },
+      "contact": {
+        "phone": "3047234300",
+        "phone_formatted": "3047234300"
+      },
+      "location": {
+        "county": "Hancock",
+        "latitude": 40.4177,
+        "longitude": -80.558
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 137,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WEIRTON GERIATRIC CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SHEPHERD NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "159 EDGINGTON LANE",
+        "city": "WHEELING",
+        "state": "WV",
+        "zip": "26003"
+      },
+      "contact": {
+        "phone": "3042421093",
+        "phone_formatted": "3042421093"
+      },
+      "location": {
+        "county": "Ohio",
+        "latitude": 40.0784,
+        "longitude": -80.679
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 192,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GOOD SHEPHERD NURSING HOME LC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARTINSBURG HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "209 CLOVER STREET",
+        "city": "MARTINSBURG",
+        "state": "WV",
+        "zip": "25404"
+      },
+      "contact": {
+        "phone": "3042638921",
+        "phone_formatted": "3042638921"
+      },
+      "location": {
+        "county": "Berkeley",
+        "latitude": 39.4805,
+        "longitude": -77.954
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FOUR LEAF CLOVER LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WORTHINGTON HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2675 36TH STREET",
+        "city": "PARKERSBURG",
+        "state": "WV",
+        "zip": "26104"
+      },
+      "contact": {
+        "phone": "3044857447",
+        "phone_formatted": "3044857447"
+      },
+      "location": {
+        "county": "Wood",
+        "latitude": 39.2858,
+        "longitude": -81.515
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THIRTY SIX LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MORGANTOWN HEIGHTS OF JOURNEY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1379 VAN VOORHIS RD",
+        "city": "MORGANTOWN",
+        "state": "WV",
+        "zip": "26505"
+      },
+      "contact": {
+        "phone": "3045999480",
+        "phone_formatted": "3045999480"
+      },
+      "location": {
+        "county": "Monongalia",
+        "latitude": 39.6641,
+        "longitude": -79.962
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MORGANTOWN HEALTH AND REHABILITATION, LLC",
+        "chain_name": "JOURNEY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ST. JOSEPH'S HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "AMALIA DRIVE #1",
+        "city": "BUCKHANNON",
+        "state": "WV",
+        "zip": "26201"
+      },
+      "contact": {
+        "phone": "3044732000",
+        "phone_formatted": "3044732000"
+      },
+      "location": {
+        "county": "Upshur",
+        "latitude": 38.9835,
+        "longitude": -80.225
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 16,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST JOSEPH'S HOSPITAL OF BUCKHANNON INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MERCER HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1275 SOUTHVIEW DRIVE",
+        "city": "BLUEFIELD",
+        "state": "WV",
+        "zip": "24701"
+      },
+      "contact": {
+        "phone": "3043255448",
+        "phone_formatted": "3043255448"
+      },
+      "location": {
+        "county": "Mercer",
+        "latitude": 37.2432,
+        "longitude": -81.232
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 123,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SOUTHVIEW LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TYGART CENTER AT FAIRMONT CAMPUS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1539 COUNTRY CLUB ROAD",
+        "city": "FAIRMONT",
+        "state": "WV",
+        "zip": "26554"
+      },
+      "contact": {
+        "phone": "3043669100",
+        "phone_formatted": "3043669100"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 39.4739,
+        "longitude": -80.181
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 119,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "1539 COUNTRY CLUB ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CONTINUOUS CARE CENTER WHEELING HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "236 HULLIHEN PLACE",
+        "city": "WHEELING",
+        "state": "WV",
+        "zip": "26003"
+      },
+      "contact": {
+        "phone": "3042433800",
+        "phone_formatted": "3042433800"
+      },
+      "location": {
+        "county": "Ohio",
+        "latitude": 40.0694,
+        "longitude": -80.688
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 144,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WHEELING HOSPITAL INC",
+        "chain_name": "WVU MEDICINE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TAYLOR HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2 HOSPITAL PLAZA",
+        "city": "GRAFTON",
+        "state": "WV",
+        "zip": "26354"
+      },
+      "contact": {
+        "phone": "3042650008",
+        "phone_formatted": "3042650008"
+      },
+      "location": {
+        "county": "Taylor",
+        "latitude": 39.3436,
+        "longitude": -80.023
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HOSPITAL LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MORGANTOWN HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "30 MON GENERAL DRIVE",
+        "city": "MORGANTOWN",
+        "state": "WV",
+        "zip": "26505"
+      },
+      "contact": {
+        "phone": "3042852720",
+        "phone_formatted": "3042852720"
+      },
+      "location": {
+        "county": "Monongalia",
+        "latitude": 39.6599,
+        "longitude": -79.949
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MON GENERAL LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HERITAGE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "101-13TH STREET",
+        "city": "HUNTINGTON",
+        "state": "WV",
+        "zip": "25701"
+      },
+      "contact": {
+        "phone": "3045257622",
+        "phone_formatted": "3045257622"
+      },
+      "location": {
+        "county": "Cabell",
+        "latitude": 38.4019,
+        "longitude": -82.436
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 160,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "101 13TH STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HILLTOP CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "152 SADDLESHOP ROAD",
+        "city": "HILLTOP",
+        "state": "WV",
+        "zip": "25855"
+      },
+      "contact": {
+        "phone": "3044692966",
+        "phone_formatted": "3044692966"
+      },
+      "location": {
+        "county": "Fayette",
+        "latitude": 37.9324,
+        "longitude": -81.156
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SADDLE SHOP ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CORTLAND ACRES NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "39 CORTLAND ACRES LANE",
+        "city": "THOMAS",
+        "state": "WV",
+        "zip": "26292"
+      },
+      "contact": {
+        "phone": "3044634181",
+        "phone_formatted": "3044634181"
+      },
+      "location": {
+        "county": "Tucker",
+        "latitude": 39.142,
+        "longitude": -79.498
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 94,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PLEASANT VALLEY HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "640 SAND HILL ROAD",
+        "city": "POINT PLEASANT",
+        "state": "WV",
+        "zip": "25550"
+      },
+      "contact": {
+        "phone": "3046755236",
+        "phone_formatted": "3046755236"
+      },
+      "location": {
+        "county": "Mason",
+        "latitude": 38.8729,
+        "longitude": -82.12
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SANDHILL LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Mountain View Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "107 MILLER DRIVE",
+        "city": "RIPLEY",
+        "state": "WV",
+        "zip": "25271"
+      },
+      "contact": {
+        "phone": "3046334732",
+        "phone_formatted": "3046334732"
+      },
+      "location": {
+        "county": "Jackson",
+        "latitude": 38.8264,
+        "longitude": -81.724
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RIPLEY SNF OPERATIONS LLC",
+        "chain_name": "HILL VALLEY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Dunbar Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "501 CALDWELL LANE",
+        "city": "DUNBAR",
+        "state": "WV",
+        "zip": "25064"
+      },
+      "contact": {
+        "phone": "3047444761",
+        "phone_formatted": "3047444761"
+      },
+      "location": {
+        "county": "Kanawha",
+        "latitude": 38.3694,
+        "longitude": -81.716
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUNBRIDGE DUNBAR HEALTH CARE LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MOUNDSVILLE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2200 FLORAL STREET",
+        "city": "MOUNDSVILLE",
+        "state": "WV",
+        "zip": "26041"
+      },
+      "contact": {
+        "phone": "3048431035",
+        "phone_formatted": "3048431035"
+      },
+      "location": {
+        "county": "Marshall",
+        "latitude": 39.9298,
+        "longitude": -80.731
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 129,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FLORAL LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TRINITY HEALTH CARE OF MINGO",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 HILLCREST DRIVE",
+        "city": "WILLIAMSON",
+        "state": "WV",
+        "zip": "25661"
+      },
+      "contact": {
+        "phone": "3042357005",
+        "phone_formatted": "3042357005"
+      },
+      "location": {
+        "county": "Mingo",
+        "latitude": 37.6615,
+        "longitude": -82.254
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TRINITY HEALTH CARE SERVICES OF MINGO INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PUTNAM CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "300 SEVILLE ROAD",
+        "city": "HURRICANE",
+        "state": "WV",
+        "zip": "25526"
+      },
+      "contact": {
+        "phone": "3047576805",
+        "phone_formatted": "3047576805"
+      },
+      "location": {
+        "county": "Putnam",
+        "latitude": 38.4523,
+        "longitude": -81.952
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUNBRIDGE PUTNAM HEALTH CARE LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SALEM CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "255 SUNBRIDGE DRIVE",
+        "city": "SALEM",
+        "state": "WV",
+        "zip": "26426"
+      },
+      "contact": {
+        "phone": "3047823000",
+        "phone_formatted": "3047823000"
+      },
+      "location": {
+        "county": "Harrison",
+        "latitude": 39.2816,
+        "longitude": -80.559
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUNBRIDGE SALEM HEALTH CARE LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "KINGWOOD HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "300 MILLER ROAD",
+        "city": "KINGWOOD",
+        "state": "WV",
+        "zip": "26537"
+      },
+      "contact": {
+        "phone": "3043293195",
+        "phone_formatted": "3043293195"
+      },
+      "location": {
+        "county": "Preston",
+        "latitude": 39.4803,
+        "longitude": -79.671
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MILLER LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NEW MARTINSVILLE HEALTH & REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "225 RUSSELL  AVENUE",
+        "city": "NEW MARTINSVILLE",
+        "state": "WV",
+        "zip": "26155"
+      },
+      "contact": {
+        "phone": "3044552600",
+        "phone_formatted": "3044552600"
+      },
+      "location": {
+        "county": "Wetzel",
+        "latitude": 39.6551,
+        "longitude": -80.858
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARTINSVILLE SNF OPERATIONS LLC",
+        "chain_name": "HILL VALLEY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "JOHN MANCHIN SR HEALTH CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "401 GUFFEY STREET",
+        "city": "FAIRMONT",
+        "state": "WV",
+        "zip": "26554"
+      },
+      "contact": {
+        "phone": "3043632500",
+        "phone_formatted": "3043632500"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 39.4806,
+        "longitude": -80.135
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 41,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HOLBROOK HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "183 HOLBROOK ROAD",
+        "city": "BUCKHANNON",
+        "state": "WV",
+        "zip": "26201"
+      },
+      "contact": {
+        "phone": "3044723280",
+        "phone_formatted": "3044723280"
+      },
+      "location": {
+        "county": "Upshur",
+        "latitude": 38.9841,
+        "longitude": -80.211
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HOLBROOK LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WEIRTON MEDICAL CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "601 COLLIERS WAY",
+        "city": "WEIRTON",
+        "state": "WV",
+        "zip": "26062"
+      },
+      "contact": {
+        "phone": "3047976000",
+        "phone_formatted": "3047976000"
+      },
+      "location": {
+        "county": "Hancock",
+        "latitude": 40.3942,
+        "longitude": -80.529
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 33,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WEIRTON MEDICAL CENTER INC",
+        "chain_name": "WVU MEDICINE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAMPSHIRE MEMORIAL HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "363 SUNRISE BLVD",
+        "city": "ROMNEY",
+        "state": "WV",
+        "zip": "26757"
+      },
+      "contact": {
+        "phone": "3048224561",
+        "phone_formatted": "3048224561"
+      },
+      "location": {
+        "county": "Hampshire",
+        "latitude": 39.3322,
+        "longitude": -78.699
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 30,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAMPSHIRE MEMORIAL HOSPITAL, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MONTGOMERY GENERAL HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "401 6TH AVENUE",
+        "city": "MONTGOMERY",
+        "state": "WV",
+        "zip": "25136"
+      },
+      "contact": {
+        "phone": "3044425151",
+        "phone_formatted": "3044425151"
+      },
+      "location": {
+        "county": "Fayette",
+        "latitude": 38.1829,
+        "longitude": -81.324
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 44,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SUNDALE NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "800 J D ANDERSON DRIVE",
+        "city": "MORGANTOWN",
+        "state": "WV",
+        "zip": "26505"
+      },
+      "contact": {
+        "phone": "3045990497",
+        "phone_formatted": "3045990497"
+      },
+      "location": {
+        "county": "Monongalia",
+        "latitude": 39.6612,
+        "longitude": -79.948
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MONONGALIA HOME CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WILLOWS CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "723 SUMMERS STREET",
+        "city": "PARKERSBURG",
+        "state": "WV",
+        "zip": "26101"
+      },
+      "contact": {
+        "phone": "3044285573",
+        "phone_formatted": "3044285573"
+      },
+      "location": {
+        "county": "Wood",
+        "latitude": 39.252,
+        "longitude": -81.568
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 97,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "723 SUMMERS STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BECKLEY HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 HEARTLAND DRIVE",
+        "city": "BECKLEY",
+        "state": "WV",
+        "zip": "25801"
+      },
+      "contact": {
+        "phone": "3042561650",
+        "phone_formatted": "3042561650"
+      },
+      "location": {
+        "county": "Raleigh",
+        "latitude": 37.7987,
+        "longitude": -81.225
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 201,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HEARTLAND LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CEDAR RIDGE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "302 CEDAR RIDGE ROAD",
+        "city": "SISSONVILLE",
+        "state": "WV",
+        "zip": "25320"
+      },
+      "contact": {
+        "phone": "3049840046",
+        "phone_formatted": "3049840046"
+      },
+      "location": {
+        "county": "Kanawha",
+        "latitude": 38.5094,
+        "longitude": -81.645
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 119,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "302 CEDAR RIDGE ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Raleigh Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1631 RITTER DRIVE",
+        "city": "DANIELS",
+        "state": "WV",
+        "zip": "25832"
+      },
+      "contact": {
+        "phone": "3047633051",
+        "phone_formatted": "3047633051"
+      },
+      "location": {
+        "county": "Raleigh",
+        "latitude": 37.7372,
+        "longitude": -81.114
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "1631 RITTER DRIVE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CHARLESTON HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3819 CHESTERFIELD AVENUE",
+        "city": "CHARLESTON",
+        "state": "WV",
+        "zip": "25304"
+      },
+      "contact": {
+        "phone": "3049254771",
+        "phone_formatted": "3049254771"
+      },
+      "location": {
+        "county": "Kanawha",
+        "latitude": 38.3248,
+        "longitude": -81.595
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 150,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CHESTERFIELD LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ROANE GENERAL HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "200 HOSPITAL DRIVE",
+        "city": "SPENCER",
+        "state": "WV",
+        "zip": "25276"
+      },
+      "contact": {
+        "phone": "3049274444",
+        "phone_formatted": "3049274444"
+      },
+      "location": {
+        "county": "Roane",
+        "latitude": 38.8132,
+        "longitude": -81.369
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 35,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HOSPITAL DEVELOPMENT CO.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WHITE SULPHUR SPRINGS CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "345 POCAHONTAS TRAIL",
+        "city": "WHITE SULPHUR SPRING",
+        "state": "WV",
+        "zip": "24986"
+      },
+      "contact": {
+        "phone": "3045364661",
+        "phone_formatted": "3045364661"
+      },
+      "location": {
+        "county": "Greenbrier",
+        "latitude": 37.833,
+        "longitude": -80.259
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROUTE 92 OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PARKERSBURG CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1716 GIHON ROAD",
+        "city": "PARKERSBURG",
+        "state": "WV",
+        "zip": "26101"
+      },
+      "contact": {
+        "phone": "3044855511",
+        "phone_formatted": "3044855511"
+      },
+      "location": {
+        "county": "Wood",
+        "latitude": 39.233,
+        "longitude": -81.561
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUNBRIDGE CARE ENTERPRISES LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GLENVILLE HEALTH & REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "111 FAIRGROUND ROAD",
+        "city": "GLENVILLE",
+        "state": "WV",
+        "zip": "26351"
+      },
+      "contact": {
+        "phone": "3044625718",
+        "phone_formatted": "3044625718"
+      },
+      "location": {
+        "county": "Gilmer",
+        "latitude": 38.9374,
+        "longitude": -80.82
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 65,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GLENVILLE SNF OPERATIONS LLC",
+        "chain_name": "HILL VALLEY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MADISON, THE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "161 BAKERS RIDGE ROAD",
+        "city": "MORGANTOWN",
+        "state": "WV",
+        "zip": "26508"
+      },
+      "contact": {
+        "phone": "3042850692",
+        "phone_formatted": "3042850692"
+      },
+      "location": {
+        "county": "Monongalia",
+        "latitude": 39.6776,
+        "longitude": -79.928
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "161 BAKERS RIDGE ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ROSEWOOD CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8 ROSE STREET",
+        "city": "GRAFTON",
+        "state": "WV",
+        "zip": "26354"
+      },
+      "contact": {
+        "phone": "3042650095",
+        "phone_formatted": "3042650095"
+      },
+      "location": {
+        "county": "Taylor",
+        "latitude": 39.3365,
+        "longitude": -80.035
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 69,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "8 ROSE STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TEAYS VALLEY CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1390 NORTH POPLAR FORK ROAD",
+        "city": "HURRICANE",
+        "state": "WV",
+        "zip": "25526"
+      },
+      "contact": {
+        "phone": "3047577826",
+        "phone_formatted": "3047577826"
+      },
+      "location": {
+        "county": "Putnam",
+        "latitude": 38.4639,
+        "longitude": -81.952
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 124,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "590 NORTH POPLAR FORK ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "UNITED TRANSITIONAL CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "327 MEDICAL PARK DRIVE",
+        "city": "BRIDGEPORT",
+        "state": "WV",
+        "zip": "26330"
+      },
+      "contact": {
+        "phone": "6813425174",
+        "phone_formatted": "6813425174"
+      },
+      "location": {
+        "county": "Harrison",
+        "latitude": 39.3324,
+        "longitude": -80.241
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 32,
+        "provider_type": "Medicare",
+        "legal_business_name": "UNITED HOSPITAL CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THOMAS HOSPITALS SKILLED NURSING UNIT",
+      "type": "Nursing Home",
+      "address": {
+        "street": "333 LAIDLEY STREET",
+        "city": "CHARLESTON",
+        "state": "WV",
+        "zip": "25322"
+      },
+      "contact": {
+        "phone": "3043476500",
+        "phone_formatted": "3043476500"
+      },
+      "location": {
+        "county": "Kanawha",
+        "latitude": 38.3533,
+        "longitude": -81.633
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 29,
+        "provider_type": "Medicare",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "WVU MEDICINE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ST. MARY'S HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2900 FIRST STREET",
+        "city": "HUNTINGTON",
+        "state": "WV",
+        "zip": "25702"
+      },
+      "contact": {
+        "phone": "3045268983",
+        "phone_formatted": "3045268983"
+      },
+      "location": {
+        "county": "Cabell",
+        "latitude": 38.4317,
+        "longitude": -82.403
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 19,
+        "provider_type": "Medicare",
+        "legal_business_name": "ST. MARY'S MEDICAL CENTER, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TYGART VALLEY HEALTH & REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "216 SAMARITAN CIRCLE",
+        "city": "BELINGTON",
+        "state": "WV",
+        "zip": "26250"
+      },
+      "contact": {
+        "phone": "3048232555",
+        "phone_formatted": "3048232555"
+      },
+      "location": {
+        "county": "Barbour",
+        "latitude": 39.0265,
+        "longitude": -79.941
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BELINGTON SNF OPERATIONS LLC",
+        "chain_name": "HILL VALLEY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HILLCREST HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "462 KENMORE DRIVE",
+        "city": "DANVILLE",
+        "state": "WV",
+        "zip": "25053"
+      },
+      "contact": {
+        "phone": "3043690986",
+        "phone_formatted": "3043690986"
+      },
+      "location": {
+        "county": "Boone",
+        "latitude": 38.0839,
+        "longitude": -81.842
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KENMORE LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GLASGOW HILLS OF JOURNEY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "120 MELROSE DRIVE, BOX 350",
+        "city": "GLASGOW",
+        "state": "WV",
+        "zip": "25086"
+      },
+      "contact": {
+        "phone": "3045951155",
+        "phone_formatted": "3045951155"
+      },
+      "location": {
+        "county": "Kanawha",
+        "latitude": 38.2082,
+        "longitude": -81.419
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GLASGOW HEALTH AND REHABILITATION",
+        "chain_name": "JOURNEY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RIVER OAKS HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 PARKWAY DRIVE",
+        "city": "CLARKSBURG",
+        "state": "WV",
+        "zip": "26301"
+      },
+      "contact": {
+        "phone": "3046246401",
+        "phone_formatted": "3046246401"
+      },
+      "location": {
+        "county": "Harrison",
+        "latitude": 39.2665,
+        "longitude": -80.326
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "100 PARKWAY LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RAINELLE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "276 PENNSYLVANIA AVENUE",
+        "city": "RAINELLE",
+        "state": "WV",
+        "zip": "25962"
+      },
+      "contact": {
+        "phone": "3044386127",
+        "phone_formatted": "3044386127"
+      },
+      "location": {
+        "county": "Greenbrier",
+        "latitude": 37.9639,
+        "longitude": -80.77
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PENNSYLVANIA LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "KEYSER HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "135 SOUTHERN DRIVE",
+        "city": "KEYSER",
+        "state": "WV",
+        "zip": "26726"
+      },
+      "contact": {
+        "phone": "3047883415",
+        "phone_formatted": "3047883415"
+      },
+      "location": {
+        "county": "Mineral",
+        "latitude": 39.4299,
+        "longitude": -78.994
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 122,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SOUTHERN LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WELLSBURG HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "70 VALLEY HAVEN DR",
+        "city": "WELLSBURG",
+        "state": "WV",
+        "zip": "26070"
+      },
+      "contact": {
+        "phone": "3043945322",
+        "phone_formatted": "3043945322"
+      },
+      "location": {
+        "county": "Brooke",
+        "latitude": 40.274,
+        "longitude": -80.588
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PENDLETON MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "68 GOOD SAMARITAN DRIVE",
+        "city": "FRANKLIN",
+        "state": "WV",
+        "zip": "26807"
+      },
+      "contact": {
+        "phone": "3043582322",
+        "phone_formatted": "3043582322"
+      },
+      "location": {
+        "county": "Pendleton",
+        "latitude": 38.6206,
+        "longitude": -79.384
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 89,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PENDLETON MANOR, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CAMERON HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "20 WILSON DRIVE",
+        "city": "CAMERON",
+        "state": "WV",
+        "zip": "26033"
+      },
+      "contact": {
+        "phone": "3046863318",
+        "phone_formatted": "3046863318"
+      },
+      "location": {
+        "county": "Marshall",
+        "latitude": 39.8273,
+        "longitude": -80.568
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WILSON LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BRIGHTWOOD CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "840 LEE ROAD",
+        "city": "FOLLANSBEE",
+        "state": "WV",
+        "zip": "26037"
+      },
+      "contact": {
+        "phone": "3045271100",
+        "phone_formatted": "3045271100"
+      },
+      "location": {
+        "county": "Brooke",
+        "latitude": 40.3181,
+        "longitude": -80.591
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 115,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "840 LEE ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MANSFIELD PLACE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "95 HEALTHCARE DRIVE",
+        "city": "PHILIPPI",
+        "state": "WV",
+        "zip": "26416"
+      },
+      "contact": {
+        "phone": "3044571760",
+        "phone_formatted": "3044571760"
+      },
+      "location": {
+        "county": "Barbour",
+        "latitude": 39.1508,
+        "longitude": -80.04
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BROADDUS HOSPITAL ASSOCIATION INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "STONE PEAR PAVILION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "125 FOX LANE",
+        "city": "CHESTER",
+        "state": "WV",
+        "zip": "26034"
+      },
+      "contact": {
+        "phone": "3043870101",
+        "phone_formatted": "3043870101"
+      },
+      "location": {
+        "county": "Hancock",
+        "latitude": 40.6148,
+        "longitude": -80.55
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FOX NURSING HOME, INC",
+        "chain_name": "THE ORCHARDS"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SISTERSVILLE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "201 WOOD STREET",
+        "city": "SISTERSVILLE",
+        "state": "WV",
+        "zip": "26175"
+      },
+      "contact": {
+        "phone": "3046521032",
+        "phone_formatted": "3046521032"
+      },
+      "location": {
+        "county": "Tyler",
+        "latitude": 39.5719,
+        "longitude": -80.986
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "201 WOOD STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ANSTED CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "96 TYREE STREET",
+        "city": "ANSTED",
+        "state": "WV",
+        "zip": "25812"
+      },
+      "contact": {
+        "phone": "3046585271",
+        "phone_formatted": "3046585271"
+      },
+      "location": {
+        "county": "Fayette",
+        "latitude": 38.1359,
+        "longitude": -81.095
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "106 TYREE STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MEADOWBROOK ACRES",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2149 GREENBRIER STREET",
+        "city": "CHARLESTON",
+        "state": "WV",
+        "zip": "25311"
+      },
+      "contact": {
+        "phone": "3043444268",
+        "phone_formatted": "3043444268"
+      },
+      "location": {
+        "county": "Kanawha",
+        "latitude": 38.3779,
+        "longitude": -81.565
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HARRELL NURSING HOME",
+        "chain_name": "NURSING CARE MANAGEMENT OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BERKELEY SPRINGS HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "456 AUTUMN ACRES ROAD",
+        "city": "BERKELEY SPRINGS",
+        "state": "WV",
+        "zip": "25411"
+      },
+      "contact": {
+        "phone": "3042583673",
+        "phone_formatted": "3042583673"
+      },
+      "location": {
+        "county": "Morgan",
+        "latitude": 39.5728,
+        "longitude": -78.221
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AUTUMN LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TRINITY HEALTH CARE OF LOGAN",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1000 WEST PARK AVENUE",
+        "city": "LOGAN",
+        "state": "WV",
+        "zip": "25601"
+      },
+      "contact": {
+        "phone": "3047528723",
+        "phone_formatted": "3047528723"
+      },
+      "location": {
+        "county": "Logan",
+        "latitude": 37.8491,
+        "longitude": -81.987
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TRINITY HEALTH CARE SERVICES OF LOGAN INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BRIDGEPORT HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "41 CRESTVIEW TERRACE",
+        "city": "BRIDGEPORT",
+        "state": "WV",
+        "zip": "26330"
+      },
+      "contact": {
+        "phone": "3048427101",
+        "phone_formatted": "3048427101"
+      },
+      "location": {
+        "county": "Harrison",
+        "latitude": 39.302,
+        "longitude": -80.269
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CRESTVIEW TERRACE LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CLAY HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1053 CLINIC DRIVE",
+        "city": "IVYDALE",
+        "state": "WV",
+        "zip": "25113"
+      },
+      "contact": {
+        "phone": "3042864204",
+        "phone_formatted": "3042864204"
+      },
+      "location": {
+        "county": "Clay",
+        "latitude": 38.6027,
+        "longitude": -81.053
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CLINIC LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LEWISBURG HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "979 ROCKY HILL ROAD",
+        "city": "RONCEVERTE",
+        "state": "WV",
+        "zip": "24970"
+      },
+      "contact": {
+        "phone": "3046457270",
+        "phone_formatted": "3046457270"
+      },
+      "location": {
+        "county": "Greenbrier",
+        "latitude": 37.7592,
+        "longitude": -80.472
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROCKY HILL LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARMET CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "ONE SUTPHIN DRIVE",
+        "city": "MARMET",
+        "state": "WV",
+        "zip": "25315"
+      },
+      "contact": {
+        "phone": "3049491580",
+        "phone_formatted": "3049491580"
+      },
+      "location": {
+        "county": "Kanawha",
+        "latitude": 38.2359,
+        "longitude": -81.556
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "1 SUTPHIN DRIVE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HIDDEN VALLEY CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "422  23RD STREET",
+        "city": "OAK HILL",
+        "state": "WV",
+        "zip": "25901"
+      },
+      "contact": {
+        "phone": "3044651903",
+        "phone_formatted": "3044651903"
+      },
+      "location": {
+        "county": "Fayette",
+        "latitude": 37.9881,
+        "longitude": -81.127
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "422 23RD STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GRANT REHABILITATION AND CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "127 EARLY AVENUE",
+        "city": "PETERSBURG",
+        "state": "WV",
+        "zip": "26847"
+      },
+      "contact": {
+        "phone": "3042574233",
+        "phone_formatted": "3042574233"
+      },
+      "location": {
+        "county": "Grant",
+        "latitude": 38.9997,
+        "longitude": -79.131
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 110,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GRANT REHAB & CARE CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MONTGOMERY GENERAL ELDERLY CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "501 ADAMS STREET",
+        "city": "MONTGOMERY",
+        "state": "WV",
+        "zip": "25136"
+      },
+      "contact": {
+        "phone": "3044422469",
+        "phone_formatted": "3044422469"
+      },
+      "location": {
+        "county": "Fayette",
+        "latitude": 38.1825,
+        "longitude": -81.325
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MONTGOMERY GENERAL ELDERLY CARE CENTER, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FAYETTEVILLE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 HRESAN BOULEVARD",
+        "city": "FAYETTEVILLE",
+        "state": "WV",
+        "zip": "25840"
+      },
+      "contact": {
+        "phone": "3045740770",
+        "phone_formatted": "3045740770"
+      },
+      "location": {
+        "county": "Fayette",
+        "latitude": 38.0603,
+        "longitude": -81.096
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HRESAN LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PIERPONT CENTER AT FAIRMONT CAMPUS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1543 COUNTRY CLUB ROAD",
+        "city": "FAIRMONT",
+        "state": "WV",
+        "zip": "26554"
+      },
+      "contact": {
+        "phone": "3043632273",
+        "phone_formatted": "3043632273"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 39.4739,
+        "longitude": -80.181
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "1543 COUNTRY CLUB ROAD MANOR OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WILLOW TREE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1263 SOUTH GEORGE STREET",
+        "city": "CHARLES TOWN",
+        "state": "WV",
+        "zip": "25414"
+      },
+      "contact": {
+        "phone": "3047256575",
+        "phone_formatted": "3047256575"
+      },
+      "location": {
+        "county": "Jefferson",
+        "latitude": 39.2762,
+        "longitude": -77.85
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 104,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BLUE RIDGE NURSING LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "EAGLE POINTE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1600 27TH STREET",
+        "city": "PARKERSBURG",
+        "state": "WV",
+        "zip": "26101"
+      },
+      "contact": {
+        "phone": "3044856476",
+        "phone_formatted": "3044856476"
+      },
+      "location": {
+        "county": "Wood",
+        "latitude": 39.2798,
+        "longitude": -81.534
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 164,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "27TH STREET LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CRESTVIEW MANOR HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "199 COURT STREET",
+        "city": "JANE LEW",
+        "state": "WV",
+        "zip": "26378"
+      },
+      "contact": {
+        "phone": "3048847811",
+        "phone_formatted": "3048847811"
+      },
+      "location": {
+        "county": "Lewis",
+        "latitude": 39.108,
+        "longitude": -80.394
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COURT LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MCDOWELL HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "150 VENUS ROAD",
+        "city": "GARY",
+        "state": "WV",
+        "zip": "24836"
+      },
+      "contact": {
+        "phone": "3044482121",
+        "phone_formatted": "3044482121"
+      },
+      "location": {
+        "county": "Mc Dowell",
+        "latitude": 37.3625,
+        "longitude": -81.532
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VENUS LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "COMPLETE CARE AT DAWNVIEW LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1 DIANE DRIVE",
+        "city": "FORT ASHBY",
+        "state": "WV",
+        "zip": "26719"
+      },
+      "contact": {
+        "phone": "3042983602",
+        "phone_formatted": "3042983602"
+      },
+      "location": {
+        "county": "Mineral",
+        "latitude": 39.511,
+        "longitude": -78.776
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COMPLETE CARE AT DAWNVIEW LLC",
+        "chain_name": "COMPLETE CARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WYOMING HEALTHCARE  CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "236 WARRIOR WAY",
+        "city": "NEW RICHMOND",
+        "state": "WV",
+        "zip": "24867"
+      },
+      "contact": {
+        "phone": "3042947586",
+        "phone_formatted": "3042947586"
+      },
+      "location": {
+        "county": "Wyoming",
+        "latitude": 37.5717,
+        "longitude": -81.473
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WARRIOR LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WEBSTER HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "411 ERBACON ROAD",
+        "city": "COWEN",
+        "state": "WV",
+        "zip": "26206"
+      },
+      "contact": {
+        "phone": "3042265301",
+        "phone_formatted": "3042265301"
+      },
+      "location": {
+        "county": "Webster",
+        "latitude": 38.4201,
+        "longitude": -80.557
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ERBACON LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CLARKSBURG HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2096 DAVISSON RUN ROAD",
+        "city": "CLARKSBURG",
+        "state": "WV",
+        "zip": "26301"
+      },
+      "contact": {
+        "phone": "3046246500",
+        "phone_formatted": "3046246500"
+      },
+      "location": {
+        "county": "Harrison",
+        "latitude": 39.2708,
+        "longitude": -80.38
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 110,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DAVISSON RUN LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SHENANDOAH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "50 MULBERRY TREE STREET",
+        "city": "CHARLES TOWN",
+        "state": "WV",
+        "zip": "25414"
+      },
+      "contact": {
+        "phone": "3047241101",
+        "phone_formatted": "3047241101"
+      },
+      "location": {
+        "county": "Jefferson",
+        "latitude": 39.2902,
+        "longitude": -77.845
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 78,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "50 MULBERRY TREE STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WAYNE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6999 ROUTE 152",
+        "city": "WAYNE",
+        "state": "WV",
+        "zip": "25570"
+      },
+      "contact": {
+        "phone": "3046977007",
+        "phone_formatted": "3046977007"
+      },
+      "location": {
+        "county": "Wayne",
+        "latitude": 38.2386,
+        "longitude": -82.437
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROUTE 152 LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "VALLEY CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1000 LINCOLN DRIVE",
+        "city": "SOUTH CHARLESTON",
+        "state": "WV",
+        "zip": "25309"
+      },
+      "contact": {
+        "phone": "3047684400",
+        "phone_formatted": "3047684400"
+      },
+      "location": {
+        "county": "Kanawha",
+        "latitude": 38.3453,
+        "longitude": -81.748
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 130,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "1000 LINCOLN DRIVE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SUMMERS HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "198 JOHN COOK NURSING HOME ROAD",
+        "city": "HINTON",
+        "state": "WV",
+        "zip": "25951"
+      },
+      "contact": {
+        "phone": "3044660332",
+        "phone_formatted": "3044660332"
+      },
+      "location": {
+        "county": "Summers",
+        "latitude": 37.6426,
+        "longitude": -80.784
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "JOHN COOK LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LINCOLN HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "200 MONDAY DRIVE",
+        "city": "HAMLIN",
+        "state": "WV",
+        "zip": "25523"
+      },
+      "contact": {
+        "phone": "3048243133",
+        "phone_formatted": "3048243133"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 38.2868,
+        "longitude": -82.105
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MONDAY LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "E.A. HAWSE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "18086 STATE ROUTE 55",
+        "city": "BAKER",
+        "state": "WV",
+        "zip": "26801"
+      },
+      "contact": {
+        "phone": "3048975903",
+        "phone_formatted": "3048975903"
+      },
+      "location": {
+        "county": "Hardy",
+        "latitude": 39.0667,
+        "longitude": -78.788
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROUTE 55 LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "COMPLETE CARE AT OAK RIDGE LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1000 ASSOCIATION DRIVE",
+        "city": "CHARLESTON",
+        "state": "WV",
+        "zip": "25311"
+      },
+      "contact": {
+        "phone": "3043474372",
+        "phone_formatted": "3043474372"
+      },
+      "location": {
+        "county": "Kanawha",
+        "latitude": 38.3558,
+        "longitude": -81.611
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 74,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COMPLETE CARE AT OAK RIDGE LLC",
+        "chain_name": "COMPLETE CARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LOGAN CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "PO BOX 540",
+        "city": "LOGAN",
+        "state": "WV",
+        "zip": "25601"
+      },
+      "contact": {
+        "phone": "3047522273",
+        "phone_formatted": "3047522273"
+      },
+      "location": {
+        "county": "Logan",
+        "latitude": 37.8688,
+        "longitude": -81.989
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THREE MILE CURVE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAMPSHIRE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "260 SUNRISE BOULEVARD",
+        "city": "ROMNEY",
+        "state": "WV",
+        "zip": "26757"
+      },
+      "contact": {
+        "phone": "3048227527",
+        "phone_formatted": "3048227527"
+      },
+      "location": {
+        "county": "Hampshire",
+        "latitude": 39.3315,
+        "longitude": -78.702
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROMNEY HEALTH CARE CENTER LTD PTR",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RAVENSWOOD VILLAGE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "200 RITCHIE AVENUE",
+        "city": "RAVENSWOOD",
+        "state": "WV",
+        "zip": "26164"
+      },
+      "contact": {
+        "phone": "3042739385",
+        "phone_formatted": "3042739385"
+      },
+      "location": {
+        "county": "Jackson",
+        "latitude": 38.9543,
+        "longitude": -81.766
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "200 SOUTH RITCHIE AVENUE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CARE HAVEN CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2720 CHARLES TOWN ROAD",
+        "city": "MARTINSBURG",
+        "state": "WV",
+        "zip": "25401"
+      },
+      "contact": {
+        "phone": "3042630933",
+        "phone_formatted": "3042630933"
+      },
+      "location": {
+        "county": "Berkeley",
+        "latitude": 39.4254,
+        "longitude": -77.939
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "2720 CHARLES TOWN ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CANTERBURY CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "80 MADDEX DRIVE",
+        "city": "SHEPHERDSTOWN",
+        "state": "WV",
+        "zip": "25443"
+      },
+      "contact": {
+        "phone": "3048769422",
+        "phone_formatted": "3048769422"
+      },
+      "location": {
+        "county": "Jefferson",
+        "latitude": 39.4363,
+        "longitude": -77.818
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "80 MADDEX DRIVE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BRAXTON HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "859 DAYS DRIVE",
+        "city": "SUTTON",
+        "state": "WV",
+        "zip": "26601"
+      },
+      "contact": {
+        "phone": "3047652861",
+        "phone_formatted": "3047652861"
+      },
+      "location": {
+        "county": "Braxton",
+        "latitude": 38.6956,
+        "longitude": -80.657
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 65,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DAYS LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "OHIO VALLEY HEALTH CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "222 NICOLETTE ROAD",
+        "city": "PARKERSBURG",
+        "state": "WV",
+        "zip": "26104"
+      },
+      "contact": {
+        "phone": "3044855137",
+        "phone_formatted": "3044855137"
+      },
+      "location": {
+        "county": "Wood",
+        "latitude": 39.2179,
+        "longitude": -81.509
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "OHIO VALLEY HEALTH CORPORATION",
+        "chain_name": "WVU MEDICINE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MILETREE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "825 SUMMIT STREET",
+        "city": "SPENCER",
+        "state": "WV",
+        "zip": "25276"
+      },
+      "contact": {
+        "phone": "3049271007",
+        "phone_formatted": "3049271007"
+      },
+      "location": {
+        "county": "Roane",
+        "latitude": 38.8088,
+        "longitude": -81.368
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "825 SUMMIT STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "POCAHONTAS CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5 EVERETT TIBBS ROAD",
+        "city": "MARLINTON",
+        "state": "WV",
+        "zip": "24954"
+      },
+      "contact": {
+        "phone": "3047997375",
+        "phone_formatted": "3047997375"
+      },
+      "location": {
+        "county": "Pocahontas",
+        "latitude": 38.2186,
+        "longitude": -80.095
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STILLWELL ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PINE VIEW NURSING AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "400 MCKINLEY AVENUE",
+        "city": "HARRISVILLE",
+        "state": "WV",
+        "zip": "26362"
+      },
+      "contact": {
+        "phone": "3046432712",
+        "phone_formatted": "3046432712"
+      },
+      "location": {
+        "county": "Ritchie",
+        "latitude": 39.2104,
+        "longitude": -81.049
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 56,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "400 MCKINLEY AVENUE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SENECA TRAIL HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1115 MAPLEWOOD AVENUE",
+        "city": "LEWISBURG",
+        "state": "WV",
+        "zip": "24901"
+      },
+      "contact": {
+        "phone": "3046453076",
+        "phone_formatted": "3046453076"
+      },
+      "location": {
+        "county": "Greenbrier",
+        "latitude": 37.7761,
+        "longitude": -80.466
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GB WV MAPLEWOOD LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BLUESTONE HEALTH AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1600 BLAND STREET",
+        "city": "BLUEFIELD",
+        "state": "WV",
+        "zip": "24701"
+      },
+      "contact": {
+        "phone": "3043272485",
+        "phone_formatted": "3043272485"
+      },
+      "location": {
+        "county": "Mercer",
+        "latitude": 37.2591,
+        "longitude": -81.219
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAPLES SNF OPERATIONS LLC",
+        "chain_name": "HILL VALLEY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PRINCETON HEALTH CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "315 COURTHOUSE RD.",
+        "city": "PRINCETON",
+        "state": "WV",
+        "zip": "24740"
+      },
+      "contact": {
+        "phone": "3044873458",
+        "phone_formatted": "3044873458"
+      },
+      "location": {
+        "county": "Mercer",
+        "latitude": 37.3525,
+        "longitude": -81.118
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PRINCETON HEALTH CARE CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LINDSIDE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10797 SENECA TRAIL SOUTH",
+        "city": "LINDSIDE",
+        "state": "WV",
+        "zip": "24951"
+      },
+      "contact": {
+        "phone": "3047534332",
+        "phone_formatted": "3047534332"
+      },
+      "location": {
+        "county": "Monroe",
+        "latitude": 37.4783,
+        "longitude": -80.657
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SENECA TRAIL LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FAIRMONT REHABILITATION AND HEALTHCARE CENTER LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "130 KAUFMAN DRIVE",
+        "city": "FAIRMONT",
+        "state": "WV",
+        "zip": "26554"
+      },
+      "contact": {
+        "phone": "3043635633",
+        "phone_formatted": "3043635633"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 39.4621,
+        "longitude": -80.16
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GUARDIAN ELDER CARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BELMONT HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "506 RIVERVIEW ROAD",
+        "city": "BELMONT",
+        "state": "WV",
+        "zip": "26134"
+      },
+      "contact": {
+        "phone": "3046652065",
+        "phone_formatted": "3046652065"
+      },
+      "location": {
+        "county": "Pleasants",
+        "latitude": 39.3802,
+        "longitude": -81.263
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RIVERVIEW LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CABELL HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "30 HIDDEN BROOK WAY",
+        "city": "CULLODEN",
+        "state": "WV",
+        "zip": "25510"
+      },
+      "contact": {
+        "phone": "3043905709",
+        "phone_formatted": "3043905709"
+      },
+      "location": {
+        "county": "Cabell",
+        "latitude": 38.4228,
+        "longitude": -82.096
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HIDDEN BROOK LEASING CO., LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ARTHUR B HODGES CENTER, THE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "300 BAKER LANE",
+        "city": "CHARLESTON",
+        "state": "WV",
+        "zip": "25302"
+      },
+      "contact": {
+        "phone": "3047202740",
+        "phone_formatted": "3047202740"
+      },
+      "location": {
+        "county": "Kanawha",
+        "latitude": 38.376,
+        "longitude": -81.637
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 20,
+        "provider_type": "Medicare",
+        "legal_business_name": "EDGEWOOD SUMMIT INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MAPLEWOOD HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1081 MAPLEWOOD DRIVE",
+        "city": "BRIDGEPORT",
+        "state": "WV",
+        "zip": "26330"
+      },
+      "contact": {
+        "phone": "3048424135",
+        "phone_formatted": "3048424135"
+      },
+      "location": {
+        "county": "Harrison",
+        "latitude": 39.2931,
+        "longitude": -80.216
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 77,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BP WV MAPLEWOOD LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ELIZABETH CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "83 LITTLE KANAWHA PKWY",
+        "city": "ELIZABETH",
+        "state": "WV",
+        "zip": "26143"
+      },
+      "contact": {
+        "phone": "6812361010",
+        "phone_formatted": "6812361010"
+      },
+      "location": {
+        "county": "Wirt",
+        "latitude": 39.0544,
+        "longitude": -81.388
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EWV HOLDINGS LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NELLA'S AT AUTUMN LAKE HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "499 FERGUSON ROAD",
+        "city": "ELKINS",
+        "state": "WV",
+        "zip": "26241"
+      },
+      "contact": {
+        "phone": "3046361008",
+        "phone_formatted": "3046361008"
+      },
+      "location": {
+        "county": "Randolph",
+        "latitude": 38.9407,
+        "longitude": -79.881
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "499 FERGUSON ROAD OPCO LLC",
+        "chain_name": "AUTUMN LAKE HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AUTUMN LAKE HEALTHCARE AT CRYSTAL SPRINGS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "200 WHITMAN AVENUE",
+        "city": "ELKINS",
+        "state": "WV",
+        "zip": "26241"
+      },
+      "contact": {
+        "phone": "3046362033",
+        "phone_formatted": "3046362033"
+      },
+      "location": {
+        "county": "Randolph",
+        "latitude": 38.9424,
+        "longitude": -79.881
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 84,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "200 WHITMAN AVENUE OPCO LLC",
+        "chain_name": "AUTUMN LAKE HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SUMMERSVILLE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "712 PROFESSIONAL PARK DRIVE",
+        "city": "SUMMERSVILLE",
+        "state": "WV",
+        "zip": "26651"
+      },
+      "contact": {
+        "phone": "3048727600",
+        "phone_formatted": "3048727600"
+      },
+      "location": {
+        "county": "Nicholas",
+        "latitude": 38.3015,
+        "longitude": -80.83
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PROFESSIONAL PARK LEASING CO LLC",
+        "chain_name": "COMMUNICARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FAIRMONT MEDICAL CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1325 LOCUST AVENUE",
+        "city": "FAIRMONT",
+        "state": "WV",
+        "zip": "26554"
+      },
+      "contact": {
+        "phone": "3045347810",
+        "phone_formatted": "3045347810"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 39.4813,
+        "longitude": -80.163
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 30,
+        "provider_type": "Medicare",
+        "legal_business_name": "WEST VIRGINIA UNIVERSITY HOSPITALS INC",
+        "chain_name": "WVU MEDICINE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MINNIE HAMILTON HEALTH CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "186 HOSPITAL DRIVE",
+        "city": "GRANTSVILLE",
+        "state": "WV",
+        "zip": "26147"
+      },
+      "contact": {
+        "phone": "3043549244",
+        "phone_formatted": "3043549244"
+      },
+      "location": {
+        "county": "Calhoun",
+        "latitude": 38.923,
+        "longitude": -81.092
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 24,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "JACKIE WITHROW HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "105 SOUTH EISENHOWER DRIVE",
+        "city": "BECKLEY",
+        "state": "WV",
+        "zip": "25801"
+      },
+      "contact": {
+        "phone": "3042566600",
+        "phone_formatted": "3042566600"
+      },
+      "location": {
+        "county": "Raleigh",
+        "latitude": 37.7823,
+        "longitude": -81.168
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 199,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LAKIN HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "11522 OHIO RIVER ROAD",
+        "city": "WEST COLUMBIA",
+        "state": "WV",
+        "zip": "25287"
+      },
+      "contact": {
+        "phone": "3046750860",
+        "phone_formatted": "3046750860"
+      },
+      "location": {
+        "county": "Mason",
+        "latitude": 38.9539,
+        "longitude": -82.087
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 136,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HOPEMONT HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "150 HOPEMONT DRIVE",
+        "city": "TERRA ALTA",
+        "state": "WV",
+        "zip": "26764"
+      },
+      "contact": {
+        "phone": "3047892411",
+        "phone_formatted": "3047892411"
+      },
+      "location": {
+        "county": "Preston",
+        "latitude": 39.4382,
+        "longitude": -79.52
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 98,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WAR MEMORIAL HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1 HEALTHY WAY",
+        "city": "BERKELEY SPRINGS",
+        "state": "WV",
+        "zip": "25411"
+      },
+      "contact": {
+        "phone": "3042586502",
+        "phone_formatted": "3042586502"
+      },
+      "location": {
+        "county": "Morgan",
+        "latitude": 39.5498,
+        "longitude": -78.188
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 16,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MAIN STREET CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "115 SUMMERS HOSPITAL ROAD, SUITE 300",
+        "city": "HINTON",
+        "state": "WV",
+        "zip": "25951"
+      },
+      "contact": {
+        "phone": "3044666090",
+        "phone_formatted": "3044666090"
+      },
+      "location": {
+        "county": "Summers",
+        "latitude": 37.6674,
+        "longitude": -80.884
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 34,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    }
+  ]
+}
