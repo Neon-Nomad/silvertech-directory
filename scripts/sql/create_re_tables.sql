@@ -74,3 +74,8 @@ CREATE TABLE IF NOT EXISTS data_catalog (
   created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 CREATE INDEX IF NOT EXISTS data_catalog_version_idx ON data_catalog(data_version);
+
+-- Digital products enhancements (payment links)
+ALTER TABLE IF EXISTS digital_products
+ADD COLUMN IF NOT EXISTS payment_link_url TEXT,
+ADD COLUMN IF NOT EXISTS stripe_price_id TEXT;

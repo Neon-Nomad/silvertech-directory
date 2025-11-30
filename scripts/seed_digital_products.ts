@@ -19,6 +19,8 @@ type ProductSeed = {
   price_cents: number;
   currency: string;
   download_url: string;
+  stripe_price_id?: string | null;
+  payment_link_url?: string | null;
 };
 
 const products: ProductSeed[] = [

@@ -23,7 +23,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "seed:digital-products": "tsx scripts/seed_digital_products.ts",
-    "publish:reit": "tsx scripts/publish_reit_snapshot.ts"
+    "publish:reit": "tsx scripts/publish_reit_snapshot.ts",
+    "payments:create-pdf-links": "tsx scripts/create_pdf_payment_links.ts"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "^5.4.1",
