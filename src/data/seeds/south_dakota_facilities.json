@@ -1,0 +1,3784 @@
+{
+  "state": "South Dakota",
+  "state_code": "SD",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 96,
+    "total_nursing_homes": 96,
+    "total_assisted_living": 0,
+    "total_certified_beds": 5812,
+    "counties_served": 52,
+    "average_beds_per_facility": 60.5
+  },
+  "quality_distribution": {
+    "five_star": 14,
+    "four_star": 16,
+    "three_star": 16,
+    "two_star": 25,
+    "one_star": 23
+  },
+  "counties": {
+    "Brown": {
+      "facility_count": 5,
+      "total_beds": 344
+    },
+    "Grant": {
+      "facility_count": 2,
+      "total_beds": 115
+    },
+    "Beadle": {
+      "facility_count": 1,
+      "total_beds": 119
+    },
+    "Gregory": {
+      "facility_count": 1,
+      "total_beds": 30
+    },
+    "Pennington": {
+      "facility_count": 9,
+      "total_beds": 598
+    },
+    "Hughes": {
+      "facility_count": 2,
+      "total_beds": 145
+    },
+    "Butte": {
+      "facility_count": 1,
+      "total_beds": 83
+    },
+    "Codington": {
+      "facility_count": 2,
+      "total_beds": 161
+    },
+    "Roberts": {
+      "facility_count": 2,
+      "total_beds": 69
+    },
+    "Minnehaha": {
+      "facility_count": 10,
+      "total_beds": 868
+    },
+    "Lawrence": {
+      "facility_count": 1,
+      "total_beds": 105
+    },
+    "Spink": {
+      "facility_count": 2,
+      "total_beds": 81
+    },
+    "Tripp": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Clark": {
+      "facility_count": 1,
+      "total_beds": 35
+    },
+    "Hamlin": {
+      "facility_count": 2,
+      "total_beds": 108
+    },
+    "Davison": {
+      "facility_count": 2,
+      "total_beds": 234
+    },
+    "Union": {
+      "facility_count": 2,
+      "total_beds": 79
+    },
+    "Turner": {
+      "facility_count": 3,
+      "total_beds": 155
+    },
+    "Yankton": {
+      "facility_count": 2,
+      "total_beds": 256
+    },
+    "Day": {
+      "facility_count": 3,
+      "total_beds": 122
+    },
+    "Fall River": {
+      "facility_count": 2,
+      "total_beds": 130
+    },
+    "Kingsbury": {
+      "facility_count": 1,
+      "total_beds": 46
+    },
+    "Miner": {
+      "facility_count": 1,
+      "total_beds": 45
+    },
+    "Lake": {
+      "facility_count": 1,
+      "total_beds": 59
+    },
+    "Mc Pherson": {
+      "facility_count": 1,
+      "total_beds": 56
+    },
+    "Brookings": {
+      "facility_count": 2,
+      "total_beds": 146
+    },
+    "Faulk": {
+      "facility_count": 1,
+      "total_beds": 35
+    },
+    "Moody": {
+      "facility_count": 2,
+      "total_beds": 105
+    },
+    "Mc Cook": {
+      "facility_count": 2,
+      "total_beds": 91
+    },
+    "Douglas": {
+      "facility_count": 1,
+      "total_beds": 50
+    },
+    "Perkins": {
+      "facility_count": 1,
+      "total_beds": 42
+    },
+    "Hyde": {
+      "facility_count": 1,
+      "total_beds": 41
+    },
+    "Clay": {
+      "facility_count": 3,
+      "total_beds": 162
+    },
+    "Bon Homme": {
+      "facility_count": 2,
+      "total_beds": 113
+    },
+    "Charles Mix": {
+      "facility_count": 2,
+      "total_beds": 91
+    },
+    "Lincoln": {
+      "facility_count": 1,
+      "total_beds": 56
+    },
+    "Meade": {
+      "facility_count": 1,
+      "total_beds": 42
+    },
+    "Marshall": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Edmunds": {
+      "facility_count": 1,
+      "total_beds": 32
+    },
+    "Hutchinson": {
+      "facility_count": 3,
+      "total_beds": 135
+    },
+    "Sanborn": {
+      "facility_count": 1,
+      "total_beds": 42
+    },
+    "Walworth": {
+      "facility_count": 1,
+      "total_beds": 50
+    },
+    "Hand": {
+      "facility_count": 1,
+      "total_beds": 50
+    },
+    "Aurora": {
+      "facility_count": 1,
+      "total_beds": 44
+    },
+    "Jerauld": {
+      "facility_count": 1,
+      "total_beds": 40
+    },
+    "Haakon": {
+      "facility_count": 1,
+      "total_beds": 42
+    },
+    "Brule": {
+      "facility_count": 1,
+      "total_beds": 44
+    },
+    "Mellette": {
+      "facility_count": 1,
+      "total_beds": 52
+    },
+    "Jackson": {
+      "facility_count": 1,
+      "total_beds": 31
+    },
+    "Potter": {
+      "facility_count": 1,
+      "total_beds": 53
+    },
+    "Dewey": {
+      "facility_count": 1,
+      "total_beds": 50
+    },
+    "Custer": {
+      "facility_count": 1,
+      "total_beds": 10
+    }
+  },
+  "facilities": [
+    {
+      "name": "PRAIRIE HEIGHTS HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "400 8TH AVENUE NW",
+        "city": "ABERDEEN",
+        "state": "SD",
+        "zip": "57401"
+      },
+      "contact": {
+        "phone": "6052252550",
+        "phone_formatted": "6052252550"
+      },
+      "location": {
+        "county": "Brown",
+        "latitude": 45.4739,
+        "longitude": -98.494
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 99,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ABERDEEN NURSING AND REHAB CENTER LLC",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA MILBANK",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1103 SOUTH SECOND STREET",
+        "city": "MILBANK",
+        "state": "SD",
+        "zip": "57252"
+      },
+      "contact": {
+        "phone": "6054324556",
+        "phone_formatted": "6054324556"
+      },
+      "location": {
+        "county": "Grant",
+        "latitude": 45.2113,
+        "longitude": -96.637
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 55,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MILBANK SD SKILLED NURSING FACILITY, LLC",
+        "chain_name": "LEGACY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA HURON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1345 MICHIGAN AVENUE SW",
+        "city": "HURON",
+        "state": "SD",
+        "zip": "57350"
+      },
+      "contact": {
+        "phone": "6053528471",
+        "phone_formatted": "6053528471"
+      },
+      "location": {
+        "county": "Beadle",
+        "latitude": 44.3501,
+        "longitude": -98.231
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 119,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HURON SD SKILLED NURSING FACILITY, LLC",
+        "chain_name": "LEGACY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Avera Rosebud Country Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "126 S LOGAN AVE",
+        "city": "GREGORY",
+        "state": "SD",
+        "zip": "57533"
+      },
+      "contact": {
+        "phone": "6058358296",
+        "phone_formatted": "6058358296"
+      },
+      "location": {
+        "county": "Gregory",
+        "latitude": 43.2305,
+        "longitude": -99.423
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 30,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AVERA MCKENNAN",
+        "chain_name": "AVERA HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Westhills Village Health Care Facility",
+      "type": "Nursing Home",
+      "address": {
+        "street": "255 TEXAS ST",
+        "city": "RAPID CITY",
+        "state": "SD",
+        "zip": "57701"
+      },
+      "contact": {
+        "phone": "6053420255",
+        "phone_formatted": "6053420255"
+      },
+      "location": {
+        "county": "Pennington",
+        "latitude": 44.0494,
+        "longitude": -103.22
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 44,
+        "provider_type": "Medicare",
+        "legal_business_name": "PRESBYTERIAN RETIREMENT VILLAGE OF RAPID CITY, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVERA MARYHOUSE LONG TERM CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "717 EAST DAKOTA",
+        "city": "PIERRE",
+        "state": "SD",
+        "zip": "57501"
+      },
+      "contact": {
+        "phone": "6052243163",
+        "phone_formatted": "6052243163"
+      },
+      "location": {
+        "county": "Hughes",
+        "latitude": 44.3606,
+        "longitude": -100.34
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AVERA ST MARYS",
+        "chain_name": "AVERA HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ROLLING HILLS HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2200 13TH AVE",
+        "city": "BELLE FOURCHE",
+        "state": "SD",
+        "zip": "57717"
+      },
+      "contact": {
+        "phone": "6058923331",
+        "phone_formatted": "6058923331"
+      },
+      "location": {
+        "county": "Butte",
+        "latitude": 44.6504,
+        "longitude": -103.84
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 83,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BELLE FOURCHE NURSING AND REHAB CENTER LLC",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "JENKIN'S LIVING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "215 SOUTH MAPLE STREET",
+        "city": "WATERTOWN",
+        "state": "SD",
+        "zip": "57201"
+      },
+      "contact": {
+        "phone": "6058865777",
+        "phone_formatted": "6058865777"
+      },
+      "location": {
+        "county": "Codington",
+        "latitude": 44.8977,
+        "longitude": -97.114
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 110,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "JENKINS LIVING CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CLARKSON HEALTH CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1015 MT VIEW RD",
+        "city": "RAPID CITY",
+        "state": "SD",
+        "zip": "57702"
+      },
+      "contact": {
+        "phone": "6053435882",
+        "phone_formatted": "6053435882"
+      },
+      "location": {
+        "county": "Pennington",
+        "latitude": 44.063,
+        "longitude": -103.28
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 51,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PRESBYTERIAN RETIREMENT VILLAGE OF RAPID CITY, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TEKAKWITHA LIVING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6 E CHESTNUT",
+        "city": "SISSETON",
+        "state": "SD",
+        "zip": "57262"
+      },
+      "contact": {
+        "phone": "6056987693",
+        "phone_formatted": "6056987693"
+      },
+      "location": {
+        "county": "Roberts",
+        "latitude": 45.6674,
+        "longitude": -97.051
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TEKAKWITHA NURSING CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA NORTON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3600 SOUTH NORTON AVENUE",
+        "city": "SIOUX FALLS",
+        "state": "SD",
+        "zip": "57105"
+      },
+      "contact": {
+        "phone": "6053389891",
+        "phone_formatted": "6053389891"
+      },
+      "location": {
+        "county": "Minnehaha",
+        "latitude": 43.5126,
+        "longitude": -96.735
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 110,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTON SD SKILLED NURSING FACILITY LLC",
+        "chain_name": "CASCADE CAPITAL GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA MOUNTAIN VIEW",
+      "type": "Nursing Home",
+      "address": {
+        "street": "916 MOUNTAIN VIEW ROAD",
+        "city": "RAPID CITY",
+        "state": "SD",
+        "zip": "57702"
+      },
+      "contact": {
+        "phone": "6053438577",
+        "phone_formatted": "6053438577"
+      },
+      "location": {
+        "county": "Pennington",
+        "latitude": 44.0772,
+        "longitude": -103.25
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 101,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MOUNTAIN VIEW SD SKILLED NURSING FACILITY,LLC",
+        "chain_name": "LEGACY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ABERDEEN HEALTH AND REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1700 NORTH HIGHWAY 281",
+        "city": "ABERDEEN",
+        "state": "SD",
+        "zip": "57401"
+      },
+      "contact": {
+        "phone": "6052257315",
+        "phone_formatted": "6052257315"
+      },
+      "location": {
+        "county": "Brown",
+        "latitude": 45.4846,
+        "longitude": -98.511
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 78,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ABERDEEN HEALTHCARE CENTER INC",
+        "chain_name": "ACCURA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Avera Mother Joseph Manor Retirement Community",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1002 NORTH JAY STREET",
+        "city": "ABERDEEN",
+        "state": "SD",
+        "zip": "57401"
+      },
+      "contact": {
+        "phone": "6056225850",
+        "phone_formatted": "6056225850"
+      },
+      "location": {
+        "county": "Brown",
+        "latitude": 45.4758,
+        "longitude": -98.484
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 81,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AVERA ST LUKES",
+        "chain_name": "AVERA HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SPEARFISH CANYON HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1020 N 10TH STREET",
+        "city": "SPEARFISH",
+        "state": "SD",
+        "zip": "57783"
+      },
+      "contact": {
+        "phone": "6056422716",
+        "phone_formatted": "6056422716"
+      },
+      "location": {
+        "county": "Lawrence",
+        "latitude": 44.4943,
+        "longitude": -103.85
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SPEARFISH NURSING AND REHAB CENTER LLC",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY LUTHER MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1500 W 38TH ST",
+        "city": "SIOUX FALLS",
+        "state": "SD",
+        "zip": "57105"
+      },
+      "contact": {
+        "phone": "6053361997",
+        "phone_formatted": "6053361997"
+      },
+      "location": {
+        "county": "Minnehaha",
+        "latitude": 43.5176,
+        "longitude": -96.744
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 92,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY SIOUX FALLS VILLAGE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3901 S MARION RD",
+        "city": "SIOUX FALLS",
+        "state": "SD",
+        "zip": "57106"
+      },
+      "contact": {
+        "phone": "6053613311",
+        "phone_formatted": "6053613311"
+      },
+      "location": {
+        "county": "Minnehaha",
+        "latitude": 43.5101,
+        "longitude": -96.791
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 177,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY SIOUX FALLS CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "401 WEST SECOND STREET",
+        "city": "SIOUX FALLS",
+        "state": "SD",
+        "zip": "57104"
+      },
+      "contact": {
+        "phone": "6053366252",
+        "phone_formatted": "6053366252"
+      },
+      "location": {
+        "county": "Minnehaha",
+        "latitude": 43.5564,
+        "longitude": -96.731
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 98,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA PIERRE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "950 EAST PARK STREET",
+        "city": "PIERRE",
+        "state": "SD",
+        "zip": "57501"
+      },
+      "contact": {
+        "phone": "6052248628",
+        "phone_formatted": "6052248628"
+      },
+      "location": {
+        "county": "Hughes",
+        "latitude": 44.359,
+        "longitude": -100.34
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 65,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PIERRE SD SKILLED NURSING FACILITY, LLC",
+        "chain_name": "LEGACY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA GROTON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1106 NORTH SECOND STREET",
+        "city": "GROTON",
+        "state": "SD",
+        "zip": "57445"
+      },
+      "contact": {
+        "phone": "6053972365",
+        "phone_formatted": "6053972365"
+      },
+      "location": {
+        "county": "Brown",
+        "latitude": 45.4561,
+        "longitude": -98.1
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 0,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GROTON SD SKILLED NURSING FACILITY LLC",
+        "chain_name": "LEGACY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA ARROWHEAD",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2500 ARROWHEAD DR",
+        "city": "RAPID CITY",
+        "state": "SD",
+        "zip": "57702"
+      },
+      "contact": {
+        "phone": "6053480285",
+        "phone_formatted": "6053480285"
+      },
+      "location": {
+        "county": "Pennington",
+        "latitude": 44.0613,
+        "longitude": -103.27
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 65,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ARROWHEAD SD SKILLED NURSING FACILITY LLC",
+        "chain_name": "LEGACY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA REDFIELD",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1015 THIRD STREET EAST",
+        "city": "REDFIELD",
+        "state": "SD",
+        "zip": "57469"
+      },
+      "contact": {
+        "phone": "6054722288",
+        "phone_formatted": "6054722288"
+      },
+      "location": {
+        "county": "Spink",
+        "latitude": 44.8715,
+        "longitude": -98.513
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 51,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "REDFIELD SD SKILLED NURSING FACILITY, LLC",
+        "chain_name": "LEGACY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WINNER REGIONAL HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "805 E 8TH ST",
+        "city": "WINNER",
+        "state": "SD",
+        "zip": "57580"
+      },
+      "contact": {
+        "phone": "6058427200",
+        "phone_formatted": "6058427200"
+      },
+      "location": {
+        "county": "Tripp",
+        "latitude": 43.3709,
+        "longitude": -99.847
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WINNER REGIONAL HEALTHCARE CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA CLARK CITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "201 8TH AVENUE NW",
+        "city": "CLARK",
+        "state": "SD",
+        "zip": "57225"
+      },
+      "contact": {
+        "phone": "6055323431",
+        "phone_formatted": "6055323431"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 44.8847,
+        "longitude": -97.737
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 35,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CLARK CITY SD SKILLED NURSING FACILITY LLC",
+        "chain_name": "LEGACY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA LAKE NORDEN",
+      "type": "Nursing Home",
+      "address": {
+        "street": "803 PARK STREET",
+        "city": "LAKE NORDEN",
+        "state": "SD",
+        "zip": "57248"
+      },
+      "contact": {
+        "phone": "6057853654",
+        "phone_formatted": "6057853654"
+      },
+      "location": {
+        "county": "Hamlin",
+        "latitude": 44.5832,
+        "longitude": -97.212
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 48,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAKE NORDEN SD SKILLED NURSING FACILITY, LLC",
+        "chain_name": "LEGACY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA SAINT CLOUD",
+      "type": "Nursing Home",
+      "address": {
+        "street": "302 ST CLOUD STREET",
+        "city": "RAPID CITY",
+        "state": "SD",
+        "zip": "57701"
+      },
+      "contact": {
+        "phone": "6053434738",
+        "phone_formatted": "6053434738"
+      },
+      "location": {
+        "county": "Pennington",
+        "latitude": 44.0716,
+        "longitude": -103.23
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 78,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAINT CLOUD SD SKILLED NURSING FACILITY, LLC",
+        "chain_name": "LEGACY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVERA BRADY HEALTH AND REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "500 S OHLMAN",
+        "city": "MITCHELL",
+        "state": "SD",
+        "zip": "57301"
+      },
+      "contact": {
+        "phone": "6059967701",
+        "phone_formatted": "6059967701"
+      },
+      "location": {
+        "county": "Davison",
+        "latitude": 43.7067,
+        "longitude": -98.047
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 84,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AVERA QUEEN OF PEACE",
+        "chain_name": "AVERA HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Alcester Care And Rehab Center, Inc",
+      "type": "Nursing Home",
+      "address": {
+        "street": "101 CHURCH STREET",
+        "city": "ALCESTER",
+        "state": "SD",
+        "zip": "57001"
+      },
+      "contact": {
+        "phone": "6059342011",
+        "phone_formatted": "6059342011"
+      },
+      "location": {
+        "county": "Union",
+        "latitude": 43.0199,
+        "longitude": -96.626
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ALCESTER CARE & REHAB CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA NORTH",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1620 NORTH 7TH STREET",
+        "city": "RAPID CITY",
+        "state": "SD",
+        "zip": "57701"
+      },
+      "contact": {
+        "phone": "6053434958",
+        "phone_formatted": "6053434958"
+      },
+      "location": {
+        "county": "Pennington",
+        "latitude": 44.1006,
+        "longitude": -103.23
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RC NORTH SD SKILLED NURSING FACILITY LLC",
+        "chain_name": "LEGACY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVERA PRINCE OF PEACE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4513 SOUTH PRINCE OF PEACE PLACE",
+        "city": "SIOUX FALLS",
+        "state": "SD",
+        "zip": "57103"
+      },
+      "contact": {
+        "phone": "6053225600",
+        "phone_formatted": "6053225600"
+      },
+      "location": {
+        "county": "Minnehaha",
+        "latitude": 43.5035,
+        "longitude": -96.685
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 126,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AVERA MCKENNAN",
+        "chain_name": "AVERA HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVANTARA WATERTOWN",
+      "type": "Nursing Home",
+      "address": {
+        "street": "415 FOURTH AVE NE",
+        "city": "WATERTOWN",
+        "state": "SD",
+        "zip": "57201"
+      },
+      "contact": {
+        "phone": "6058868431",
+        "phone_formatted": "6058868431"
+      },
+      "location": {
+        "county": "Codington",
+        "latitude": 44.9059,
+        "longitude": -97.106
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 51,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WATERTOWN SD SKILLED NURSING FACILITY, LLC",
+        "chain_name": "LEGACY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Tieszen Memorial Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "312 EAST STATE ST",
+        "city": "MARION",
+        "state": "SD",
+        "zip": "57043"
+      },
+      "contact": {
+        "phone": "6056483611",
+        "phone_formatted": "6056483611"
+      },
+      "location": {
+        "county": "Turner",
+        "latitude": 43.4266,
+        "longitude": -97.255
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 64,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TIESZEN MEMORIAL HOME INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVERA SISTER JAMES CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2111 WEST 11TH STREET",
+        "city": "YANKTON",
+        "state": "SD",
+        "zip": "57078"
+      },
+      "contact": {
+        "phone": "6056688900",
+        "phone_formatted": "6056688900"
+      },
+      "location": {
+        "county": "Yankton",
+        "latitude": 42.8798,
+        "longitude": -97.428
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 187,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SACRED HEART HEALTH SERVICES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Bethesda Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "129 W HWY 12",
+        "city": "WEBSTER",
+        "state": "SD",
+        "zip": "57274"
+      },
+      "contact": {
+        "phone": "6053453331",
+        "phone_formatted": "6053453331"
+      },
+      "location": {
+        "county": "Day",
+        "latitude": 45.3409,
+        "longitude": -97.533
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BETHESDA HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SEVEN SISTERS LIVING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1201 HWY 71 SOUTH",
+        "city": "HOT SPRINGS",
+        "state": "SD",
+        "zip": "57747"
+      },
+      "contact": {
+        "phone": "6057458910",
+        "phone_formatted": "6057458910"
+      },
+      "location": {
+        "county": "Fall River",
+        "latitude": 43.3471,
+        "longitude": -103.55
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 52,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FALL RIVER HEALTH SERVICES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Bethesda Home of Aberdeen",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1224 S HIGH ST",
+        "city": "ABERDEEN",
+        "state": "SD",
+        "zip": "57401"
+      },
+      "contact": {
+        "phone": "6052257580",
+        "phone_formatted": "6052257580"
+      },
+      "location": {
+        "county": "Brown",
+        "latitude": 45.4622,
+        "longitude": -98.466
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 86,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BETHESDA HOME OF ABERDEEN, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY DE SMET",
+      "type": "Nursing Home",
+      "address": {
+        "street": "411 CALUMET AVENUE NW",
+        "city": "DE SMET",
+        "state": "SD",
+        "zip": "57231"
+      },
+      "contact": {
+        "phone": "6058543327",
+        "phone_formatted": "6058543327"
+      },
+      "location": {
+        "county": "Kingsbury",
+        "latitude": 44.3837,
+        "longitude": -97.55
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 46,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY HOWARD",
+      "type": "Nursing Home",
+      "address": {
+        "street": "300 WEST HAZEL AVENUE",
+        "city": "HOWARD",
+        "state": "SD",
+        "zip": "57349"
+      },
+      "contact": {
+        "phone": "6057724481",
+        "phone_formatted": "6057724481"
+      },
+      "location": {
+        "county": "Miner",
+        "latitude": 44.0164,
+        "longitude": -97.53
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 45,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Bethel Lutheran Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1001 S EGAN AVE",
+        "city": "MADISON",
+        "state": "SD",
+        "zip": "57042"
+      },
+      "contact": {
+        "phone": "6052564539",
+        "phone_formatted": "6052564539"
+      },
+      "location": {
+        "county": "Lake",
+        "latitude": 43.9943,
+        "longitude": -97.114
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 59,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BETHEL LUTHERAN HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Avera Eureka Health Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "202 J AVENUE",
+        "city": "EUREKA",
+        "state": "SD",
+        "zip": "57437"
+      },
+      "contact": {
+        "phone": "6052842145",
+        "phone_formatted": "6052842145"
+      },
+      "location": {
+        "county": "Mc Pherson",
+        "latitude": 45.7672,
+        "longitude": -99.613
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 56,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AVERA ST LUKES",
+        "chain_name": "AVERA HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "UNITED LIVING COMMUNITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "405 FIRST AVE",
+        "city": "BROOKINGS",
+        "state": "SD",
+        "zip": "57006"
+      },
+      "contact": {
+        "phone": "6056925351",
+        "phone_formatted": "6056925351"
+      },
+      "location": {
+        "county": "Brookings",
+        "latitude": 44.3097,
+        "longitude": -96.804
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 67,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "UNITED RETIREMENT CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Bethesda Of Beresford",
+      "type": "Nursing Home",
+      "address": {
+        "street": "606 W CEDAR",
+        "city": "BERESFORD",
+        "state": "SD",
+        "zip": "57004"
+      },
+      "contact": {
+        "phone": "6057632050",
+        "phone_formatted": "6057632050"
+      },
+      "location": {
+        "county": "Union",
+        "latitude": 43.0837,
+        "longitude": -96.783
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 39,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BETHESDA OF BERESFORD",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE NEIGHBORHOODS AT BROOKVIEW",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2421 YORKSHIRE DR",
+        "city": "BROOKINGS",
+        "state": "SD",
+        "zip": "57006"
+      },
+      "contact": {
+        "phone": "6056968700",
+        "phone_formatted": "6056968700"
+      },
+      "location": {
+        "county": "Brookings",
+        "latitude": 44.3061,
+        "longitude": -96.764
+      },
+      "facility_details": {
+        "ownership_type": "Government - City/county",
+        "certified_beds": 79,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CITY OF BROOKINGS",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FAULKTON SENIOR LIVING",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1401 PEARL ST",
+        "city": "FAULKTON",
+        "state": "SD",
+        "zip": "57438"
+      },
+      "contact": {
+        "phone": "6055986214",
+        "phone_formatted": "6055986214"
+      },
+      "location": {
+        "county": "Faulk",
+        "latitude": 45.0317,
+        "longitude": -99.132
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 35,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FAULKTON HEALTHCARE CENTER, INC",
+        "chain_name": "ACCURA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RIVERVIEW HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "611 EAST 2ND AVE",
+        "city": "FLANDREAU",
+        "state": "SD",
+        "zip": "57028"
+      },
+      "contact": {
+        "phone": "6059972481",
+        "phone_formatted": "6059972481"
+      },
+      "location": {
+        "county": "Moody",
+        "latitude": 44.0495,
+        "longitude": -96.587
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 63,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RIVERVIEW SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY CANISTOTA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "700 WEST MAIN ST",
+        "city": "CANISTOTA",
+        "state": "SD",
+        "zip": "57012"
+      },
+      "contact": {
+        "phone": "6052963442",
+        "phone_formatted": "6052963442"
+      },
+      "location": {
+        "county": "Mc Cook",
+        "latitude": 43.598,
+        "longitude": -97.297
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 55,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Centerville Care and Rehab Center Inc",
+      "type": "Nursing Home",
+      "address": {
+        "street": "500 VERMILLION ST",
+        "city": "CENTERVILLE",
+        "state": "SD",
+        "zip": "57014"
+      },
+      "contact": {
+        "phone": "6055632251",
+        "phone_formatted": "6055632251"
+      },
+      "location": {
+        "county": "Turner",
+        "latitude": 43.1197,
+        "longitude": -96.956
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 45,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CENTERVILLE CARE & REHAB CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Good Samaritan Society Corsica",
+      "type": "Nursing Home",
+      "address": {
+        "street": "455 NORTH DAKOTA",
+        "city": "CORSICA",
+        "state": "SD",
+        "zip": "57328"
+      },
+      "contact": {
+        "phone": "6059465467",
+        "phone_formatted": "6059465467"
+      },
+      "location": {
+        "county": "Douglas",
+        "latitude": 43.4274,
+        "longitude": -98.407
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Five Counties Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "405 6TH AVENUE WEST",
+        "city": "LEMMON",
+        "state": "SD",
+        "zip": "57638"
+      },
+      "contact": {
+        "phone": "6053743871",
+        "phone_formatted": "6053743871"
+      },
+      "location": {
+        "county": "Perkins",
+        "latitude": 45.9399,
+        "longitude": -102.17
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 42,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LEMMON AREA MEDICAL ASSOCIATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HIGHMORE HEALTH",
+      "type": "Nursing Home",
+      "address": {
+        "street": "410 8TH STREET SE",
+        "city": "HIGHMORE",
+        "state": "SD",
+        "zip": "57345"
+      },
+      "contact": {
+        "phone": "6058522255",
+        "phone_formatted": "6058522255"
+      },
+      "location": {
+        "county": "Hyde",
+        "latitude": 44.5131,
+        "longitude": -99.439
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 41,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HH HOLDINGS, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Sun Dial Manor",
+      "type": "Nursing Home",
+      "address": {
+        "street": "410 SECOND STREET",
+        "city": "BRISTOL",
+        "state": "SD",
+        "zip": "57219"
+      },
+      "contact": {
+        "phone": "6054923615",
+        "phone_formatted": "6054923615"
+      },
+      "location": {
+        "county": "Day",
+        "latitude": 45.3437,
+        "longitude": -97.751
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 37,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUN DIAL MANOR INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Wakonda Heritage Manor",
+      "type": "Nursing Home",
+      "address": {
+        "street": "515 OHIO STREET",
+        "city": "WAKONDA",
+        "state": "SD",
+        "zip": "57073"
+      },
+      "contact": {
+        "phone": "6052672081",
+        "phone_formatted": "6052672081"
+      },
+      "location": {
+        "county": "Clay",
+        "latitude": 43.0053,
+        "longitude": -97.103
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 38,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WAKONDA HERITAGE MANOR",
+        "chain_name": "AVERA HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY SCOTLAND",
+      "type": "Nursing Home",
+      "address": {
+        "street": "130 6TH STREET",
+        "city": "SCOTLAND",
+        "state": "SD",
+        "zip": "57059"
+      },
+      "contact": {
+        "phone": "6055832216",
+        "phone_formatted": "6055832216"
+      },
+      "location": {
+        "county": "Bon Homme",
+        "latitude": 43.1539,
+        "longitude": -97.713
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 45,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BETHANY HOME SIOUX FALLS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1901 SOUTH HOLLY AVENUE",
+        "city": "SIOUX FALLS",
+        "state": "SD",
+        "zip": "57105"
+      },
+      "contact": {
+        "phone": "6053382351",
+        "phone_formatted": "6053382351"
+      },
+      "location": {
+        "county": "Minnehaha",
+        "latitude": 43.5285,
+        "longitude": -96.754
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 52,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BETHANY LUTHERAN HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LAKE ANDES SENIOR LIVING",
+      "type": "Nursing Home",
+      "address": {
+        "street": "740 EAST LAKE ST",
+        "city": "LAKE ANDES",
+        "state": "SD",
+        "zip": "57356"
+      },
+      "contact": {
+        "phone": "6054877674",
+        "phone_formatted": "6054877674"
+      },
+      "location": {
+        "county": "Charles Mix",
+        "latitude": 43.1551,
+        "longitude": -98.535
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 43,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAKE ANDES HEALTH CARE CENTER, INC.",
+        "chain_name": "ACCURA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY TYNDALL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2304 LAUREL STREET",
+        "city": "TYNDALL",
+        "state": "SD",
+        "zip": "57066"
+      },
+      "contact": {
+        "phone": "6055893350",
+        "phone_formatted": "6055893350"
+      },
+      "location": {
+        "county": "Bon Homme",
+        "latitude": 42.9985,
+        "longitude": -97.864
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Estelline Nursing and Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "205 FJERESTAD AVENUE EAST",
+        "city": "ESTELLINE",
+        "state": "SD",
+        "zip": "57234"
+      },
+      "contact": {
+        "phone": "6058732278",
+        "phone_formatted": "6058732278"
+      },
+      "location": {
+        "county": "Hamlin",
+        "latitude": 44.6224,
+        "longitude": -96.959
+      },
+      "facility_details": {
+        "ownership_type": "Government - City",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CITY OF ESTELLINE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Sunset Manor Avera Health",
+      "type": "Nursing Home",
+      "address": {
+        "street": "129 E CLAY ST",
+        "city": "IRENE",
+        "state": "SD",
+        "zip": "57037"
+      },
+      "contact": {
+        "phone": "6052633318",
+        "phone_formatted": "6052633318"
+      },
+      "location": {
+        "county": "Clay",
+        "latitude": 43.0822,
+        "longitude": -97.157
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUNSET MANOR INC.",
+        "chain_name": "AVERA HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY CANTON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1022 NORTH DAKOTA AVENUE",
+        "city": "CANTON",
+        "state": "SD",
+        "zip": "57013"
+      },
+      "contact": {
+        "phone": "6059872696",
+        "phone_formatted": "6059872696"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 43.3094,
+        "longitude": -96.589
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 56,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MONUMENT HEALTH STURGIS CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2140 JUNCTION AVENUE",
+        "city": "STURGIS",
+        "state": "SD",
+        "zip": "57785"
+      },
+      "contact": {
+        "phone": "6057202400",
+        "phone_formatted": "6057202400"
+      },
+      "location": {
+        "county": "Meade",
+        "latitude": 44.4029,
+        "longitude": -103.51
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 42,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MONUMENT HEALTH NETWORK INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY NEW UNDERWOOD",
+      "type": "Nursing Home",
+      "address": {
+        "street": "412 SOUTH MADISON",
+        "city": "NEW UNDERWOOD",
+        "state": "SD",
+        "zip": "57761"
+      },
+      "contact": {
+        "phone": "6057546489",
+        "phone_formatted": "6057546489"
+      },
+      "location": {
+        "county": "Pennington",
+        "latitude": 44.0931,
+        "longitude": -102.83
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 41,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WHEATCREST HILLS HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1311 VANDER HORCK ST",
+        "city": "BRITTON",
+        "state": "SD",
+        "zip": "57430"
+      },
+      "contact": {
+        "phone": "6054482251",
+        "phone_formatted": "6054482251"
+      },
+      "location": {
+        "county": "Marshall",
+        "latitude": 45.7913,
+        "longitude": -97.76
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WHEATCREST HILLS SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BOWDLE NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8001 W 5TH STREET",
+        "city": "BOWDLE",
+        "state": "SD",
+        "zip": "57428"
+      },
+      "contact": {
+        "phone": "6052856146",
+        "phone_formatted": "6052856146"
+      },
+      "location": {
+        "county": "Edmunds",
+        "latitude": 45.4485,
+        "longitude": -99.659
+      },
+      "facility_details": {
+        "ownership_type": "Government - City",
+        "certified_beds": 32,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BOWDLE HOSPITAL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FIRESTEEL HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1120 EAST 7TH AVENUE",
+        "city": "MITCHELL",
+        "state": "SD",
+        "zip": "57301"
+      },
+      "contact": {
+        "phone": "6059966526",
+        "phone_formatted": "6059966526"
+      },
+      "location": {
+        "county": "Davison",
+        "latitude": 43.7156,
+        "longitude": -98.009
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 150,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FIRESTEEL SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Fountain Springs Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2000 WESLEYAN BLVD",
+        "city": "RAPID CITY",
+        "state": "SD",
+        "zip": "57702"
+      },
+      "contact": {
+        "phone": "6053433555",
+        "phone_formatted": "6053433555"
+      },
+      "location": {
+        "county": "Pennington",
+        "latitude": 44.1046,
+        "longitude": -103.25
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FOUNTAIN SPRINGS SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "OAKVIEW TERRACE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "510 E 8TH ST",
+        "city": "FREEMAN",
+        "state": "SD",
+        "zip": "57029"
+      },
+      "contact": {
+        "phone": "6059254000",
+        "phone_formatted": "6059254000"
+      },
+      "location": {
+        "county": "Hutchinson",
+        "latitude": 43.3475,
+        "longitude": -97.431
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 45,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FREEMAN REGIONAL HEALTH SERVICES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Menno-Olivet Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "402 S PINE STREET",
+        "city": "MENNO",
+        "state": "SD",
+        "zip": "57045"
+      },
+      "contact": {
+        "phone": "6053875139",
+        "phone_formatted": "6053875139"
+      },
+      "location": {
+        "county": "Hutchinson",
+        "latitude": 43.2373,
+        "longitude": -97.572
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 41,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MENNO-OLIVET RETIREMENT HOME INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DIAMOND CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "901 N MAIN AVE",
+        "city": "BRIDGEWATER",
+        "state": "SD",
+        "zip": "57319"
+      },
+      "contact": {
+        "phone": "6057292525",
+        "phone_formatted": "6057292525"
+      },
+      "location": {
+        "county": "Mc Cook",
+        "latitude": 43.5567,
+        "longitude": -97.502
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BRIDGEWATER NURSING HOME CORPORATION",
+        "chain_name": "LIFESPARK"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PALISADE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "920 4TH ST",
+        "city": "GARRETSON",
+        "state": "SD",
+        "zip": "57030"
+      },
+      "contact": {
+        "phone": "6055943466",
+        "phone_formatted": "6055943466"
+      },
+      "location": {
+        "county": "Minnehaha",
+        "latitude": 43.7173,
+        "longitude": -96.496
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 55,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PALISADE SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PRAIRIE VIEW HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "401 SOUTH FIRST AVENUE",
+        "city": "WOONSOCKET",
+        "state": "SD",
+        "zip": "57385"
+      },
+      "contact": {
+        "phone": "6057964467",
+        "phone_formatted": "6057964467"
+      },
+      "location": {
+        "county": "Sanborn",
+        "latitude": 44.0509,
+        "longitude": -98.28
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 42,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PRAIRIE VIEW SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Wilmot Care Center Inc",
+      "type": "Nursing Home",
+      "address": {
+        "street": "501 4TH ST",
+        "city": "WILMOT",
+        "state": "SD",
+        "zip": "57279"
+      },
+      "contact": {
+        "phone": "6059384418",
+        "phone_formatted": "6059384418"
+      },
+      "location": {
+        "county": "Roberts",
+        "latitude": 45.4117,
+        "longitude": -96.861
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 29,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WILMOT CARE CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Pioneer Memorial Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "315 NORTH WASHINGTON ST",
+        "city": "VIBORG",
+        "state": "SD",
+        "zip": "57070"
+      },
+      "contact": {
+        "phone": "6053265161",
+        "phone_formatted": "6053265161"
+      },
+      "location": {
+        "county": "Turner",
+        "latitude": 43.1736,
+        "longitude": -97.084
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 46,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PIONEER MEMORIAL HOSPITAL & HEALTH SERVICES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "St William's Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "103 N VIOLA ST",
+        "city": "MILBANK",
+        "state": "SD",
+        "zip": "57252"
+      },
+      "contact": {
+        "phone": "6054325811",
+        "phone_formatted": "6054325811"
+      },
+      "location": {
+        "county": "Grant",
+        "latitude": 45.2228,
+        "longitude": -96.628
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST WILLIAMS CARE CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Walworth County Care Center, Inc",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4861 LINCOLN AVENUE",
+        "city": "SELBY",
+        "state": "SD",
+        "zip": "57472"
+      },
+      "contact": {
+        "phone": "6056497663",
+        "phone_formatted": "6056497663"
+      },
+      "location": {
+        "county": "Walworth",
+        "latitude": 45.5074,
+        "longitude": -100.03
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WALWORTH COUNTY CARE CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Good Samaritan Society Miller",
+      "type": "Nursing Home",
+      "address": {
+        "street": "421 EAST 4TH ST",
+        "city": "MILLER",
+        "state": "SD",
+        "zip": "57362"
+      },
+      "contact": {
+        "phone": "6058532701",
+        "phone_formatted": "6058532701"
+      },
+      "location": {
+        "county": "Hand",
+        "latitude": 44.5196,
+        "longitude": -98.983
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Strand-Kjorsvig Community Rest Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "801 S MAIN",
+        "city": "ROSLYN",
+        "state": "SD",
+        "zip": "57261"
+      },
+      "contact": {
+        "phone": "6054864523",
+        "phone_formatted": "6054864523"
+      },
+      "location": {
+        "county": "Day",
+        "latitude": 45.494,
+        "longitude": -97.492
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 35,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STRAND-KJORSVIG COMMUNITY REST HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DOW RUMMEL VILLAGE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1321 W DOW RUMMEL ST",
+        "city": "SIOUX FALLS",
+        "state": "SD",
+        "zip": "57104"
+      },
+      "contact": {
+        "phone": "6053361490",
+        "phone_formatted": "6053361490"
+      },
+      "location": {
+        "county": "Minnehaha",
+        "latitude": 43.56,
+        "longitude": -96.746
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DOW RUMMEL VILLAGE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DELLS NURSING AND REHAB CENTER INC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1400 THRESHER DR",
+        "city": "DELL RAPIDS",
+        "state": "SD",
+        "zip": "57022"
+      },
+      "contact": {
+        "phone": "6054285478",
+        "phone_formatted": "6054285478"
+      },
+      "location": {
+        "county": "Minnehaha",
+        "latitude": 43.8325,
+        "longitude": -96.711
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 48,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DELLS NURSING & REHAB CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Bethany Home - Brandon",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3012 E ASPEN BLVD",
+        "city": "BRANDON",
+        "state": "SD",
+        "zip": "57005"
+      },
+      "contact": {
+        "phone": "6055825200",
+        "phone_formatted": "6055825200"
+      },
+      "location": {
+        "county": "Minnehaha",
+        "latitude": 43.5873,
+        "longitude": -96.541
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BETHANY LUTHERAN HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AURORA BRULE NURSING HOME INC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "408 SOUTH JOHNSTON STREET",
+        "city": "WHITE LAKE",
+        "state": "SD",
+        "zip": "57383"
+      },
+      "contact": {
+        "phone": "6052492216",
+        "phone_formatted": "6052492216"
+      },
+      "location": {
+        "county": "Aurora",
+        "latitude": 43.7245,
+        "longitude": -98.711
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 44,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AURORA-BRULE NURSING HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Weskota Manor Inc",
+      "type": "Nursing Home",
+      "address": {
+        "street": "608 1ST STREET NE",
+        "city": "WESSINGTON SPRINGS",
+        "state": "SD",
+        "zip": "57382"
+      },
+      "contact": {
+        "phone": "6055391621",
+        "phone_formatted": "6055391621"
+      },
+      "location": {
+        "county": "Jerauld",
+        "latitude": 44.0804,
+        "longitude": -98.564
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WESKOTA MANOR INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY - ST MARTIN VILLAGE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4825 JERICHO WAY",
+        "city": "RAPID CITY",
+        "state": "SD",
+        "zip": "57702"
+      },
+      "contact": {
+        "phone": "6053431919",
+        "phone_formatted": "6053431919"
+      },
+      "location": {
+        "county": "Pennington",
+        "latitude": 44.1052,
+        "longitude": -103.3
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SCOTCHMAN LIVING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "503 WEST PINE",
+        "city": "PHILIP",
+        "state": "SD",
+        "zip": "57567"
+      },
+      "contact": {
+        "phone": "6058592583",
+        "phone_formatted": "6058592583"
+      },
+      "location": {
+        "county": "Haakon",
+        "latitude": 44.0394,
+        "longitude": -101.67
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 42,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SD HUMAN SERVICES CENTER - GERIATRIC PROGRAM",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3515 BROADWAY AVE",
+        "city": "YANKTON",
+        "state": "SD",
+        "zip": "57078"
+      },
+      "contact": {
+        "phone": "6056683100",
+        "phone_formatted": "6056683100"
+      },
+      "location": {
+        "county": "Yankton",
+        "latitude": 42.9136,
+        "longitude": -97.398
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 69,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Platte Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "609 EAST 7TH",
+        "city": "PLATTE",
+        "state": "SD",
+        "zip": "57369"
+      },
+      "contact": {
+        "phone": "6053373131",
+        "phone_formatted": "6053373131"
+      },
+      "location": {
+        "county": "Charles Mix",
+        "latitude": 43.3842,
+        "longitude": -98.837
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 48,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SANFORD CHAMBERLAIN CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "300 S BYRON BLVD",
+        "city": "CHAMBERLAIN",
+        "state": "SD",
+        "zip": "57325"
+      },
+      "contact": {
+        "phone": "6052346518",
+        "phone_formatted": "6052346518"
+      },
+      "location": {
+        "county": "Brule",
+        "latitude": 43.7885,
+        "longitude": -99.327
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 44,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "White River Health Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "515 E 8TH STREET",
+        "city": "WHITE RIVER",
+        "state": "SD",
+        "zip": "57579"
+      },
+      "contact": {
+        "phone": "6052593161",
+        "phone_formatted": "6052593161"
+      },
+      "location": {
+        "county": "Mellette",
+        "latitude": 43.5732,
+        "longitude": -100.75
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 52,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SANFORD CARE CENTER VERMILLION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "125 S WALKER STREET",
+        "city": "VERMILLION",
+        "state": "SD",
+        "zip": "57069"
+      },
+      "contact": {
+        "phone": "6056773500",
+        "phone_formatted": "6056773500"
+      },
+      "location": {
+        "county": "Clay",
+        "latitude": 42.7777,
+        "longitude": -96.919
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 66,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Kadoka Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "605 MAPLE ST W",
+        "city": "KADOKA",
+        "state": "SD",
+        "zip": "57543"
+      },
+      "contact": {
+        "phone": "6058372247",
+        "phone_formatted": "6058372247"
+      },
+      "location": {
+        "county": "Jackson",
+        "latitude": 43.8358,
+        "longitude": -101.51
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 31,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVERA OAHE MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "700 E GARFIELD",
+        "city": "GETTYSBURG",
+        "state": "SD",
+        "zip": "57442"
+      },
+      "contact": {
+        "phone": "6057652461",
+        "phone_formatted": "6057652461"
+      },
+      "location": {
+        "county": "Potter",
+        "latitude": 45.0135,
+        "longitude": -99.948
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 53,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "EASTERN STAR HOME OF SOUTH DAKOTA, INC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "126 W 12TH AVENUE",
+        "city": "REDFIELD",
+        "state": "SD",
+        "zip": "57469"
+      },
+      "contact": {
+        "phone": "6054720658",
+        "phone_formatted": "6054720658"
+      },
+      "location": {
+        "county": "Spink",
+        "latitude": 44.8696,
+        "longitude": -98.521
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 30,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Michael J Fitzmaurice South Dakota Veterans Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2500 MINNEKAHTA AVENUE",
+        "city": "HOT SPRINGS",
+        "state": "SD",
+        "zip": "57747"
+      },
+      "contact": {
+        "phone": "6057455127",
+        "phone_formatted": "6057455127"
+      },
+      "location": {
+        "county": "Fall River",
+        "latitude": 43.438,
+        "longitude": -103.49
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 78,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVERA BORMANN MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "501 NORTH 4TH STREET",
+        "city": "PARKSTON",
+        "state": "SD",
+        "zip": "57366"
+      },
+      "contact": {
+        "phone": "6059283384",
+        "phone_formatted": "6059283384"
+      },
+      "location": {
+        "county": "Hutchinson",
+        "latitude": 43.3989,
+        "longitude": -97.99
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 49,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Medicine Wheel Village",
+      "type": "Nursing Home",
+      "address": {
+        "street": "24266 AIRPORT ROAD",
+        "city": "EAGLE BUTTE",
+        "state": "SD",
+        "zip": "57625"
+      },
+      "contact": {
+        "phone": "6059648155",
+        "phone_formatted": "6059648155"
+      },
+      "location": {
+        "county": "Dewey",
+        "latitude": 44.9949,
+        "longitude": -101.24
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 50,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FLANDREAU SANTEE SIOUX TRIBE CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "909 JONES DR",
+        "city": "FLANDREAU",
+        "state": "SD",
+        "zip": "57028"
+      },
+      "contact": {
+        "phone": "6055732100",
+        "phone_formatted": "6055732100"
+      },
+      "location": {
+        "county": "Moody",
+        "latitude": 44.04,
+        "longitude": -96.603
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 42,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CUSTER CARE AND REHAB CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1065 MONTGOMERY ST",
+        "city": "CUSTER",
+        "state": "SD",
+        "zip": "57730"
+      },
+      "contact": {
+        "phone": "6056732115",
+        "phone_formatted": "6056732115"
+      },
+      "location": {
+        "county": "Custer",
+        "latitude": 43.7722,
+        "longitude": -103.59
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 10,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    }
+  ]
+}

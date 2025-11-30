@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const inputFile = path.join(__dirname, '../hospitals_by_state_city.json');
+const inputFile = path.join(__dirname, '../src/data/seeds/hospitals_by_state_city.json');
 const outputDir = path.join(__dirname, '../public/data/hospitals');
 
 async function splitHospitals() {

@@ -6,8 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node -e \"require('fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
+    "build": "tsc && vite build",
     "preview": "vite preview",
+    "test": "vitest",
+    "flatten-medicare": "tsx scripts/flatten_medicare_data.ts",
+    "seed-facilities": "tsx scripts/seed_facilities.ts",
     "seed:ny": "npx tsx scripts/seed_facilities.ts NY",
     "seed:tx": "npx tsx scripts/seed_facilities.ts TX",
     "seed:oh": "npx tsx scripts/seed_facilities.ts OH",
