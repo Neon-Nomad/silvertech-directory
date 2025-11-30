@@ -151,9 +151,10 @@ const CareContent = ({ onClose }: { onClose: () => void }) => (
 const ProductsContent = ({ onClose }: { onClose: () => void }) => (
   <div className="space-y-8">
     <h2 className="text-3xl font-bold text-slate-900 mb-6">Silver Tech Approved Products</h2>
-    <div className="grid grid-cols-2 gap-6">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
       <NavCard to="/products" onClick={onClose} icon={ShoppingBag} title="Product Categories" description="Browse by category" />
       <NavCard to="/products/affiliate" onClick={onClose} icon={Search} title="All Products" description="View full catalog" />
+      <NavCard to="/resources/emotional-support" onClick={onClose} icon={BookOpen} title="Emotional Help & Guides" description="Self-help PDFs for caregivers" />
     </div>
   </div>
 );

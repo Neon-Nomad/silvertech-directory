@@ -40,6 +40,7 @@ import { RegulatoryLibrary } from '@/features/regulatory/RegulatoryLibrary';
 import { AboutPage } from '@/features/public/company/AboutPage';
 import { ContactPage } from '@/features/public/company/ContactPage';
 import { ResourcePage } from '@/features/resources/ResourcePage';
+import EmotionalSupportCatalog from '@/features/resources/EmotionalSupportCatalog';
 
 import { Home } from '@/features/family/landing/Home';
 import { FacilityDetails } from '@/features/family/discovery/FacilityDetails';
@@ -139,6 +140,7 @@ function App() {
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/resources/:type" element={<ResourcePage />} />
+                    <Route path="/resources/emotional-support" element={<EmotionalSupportCatalog />} />
                     <Route path="/claim" element={<ClaimBusiness />} />
 
                     {/* State Authority Hub */}

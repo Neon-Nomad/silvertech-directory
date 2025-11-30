@@ -1,16 +1,32 @@
 import React, { useState, useEffect } from 'react';
-import { Search, MapPin, DollarSign, Star, Filter, Phone } from 'lucide-react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
+import {
+  Search,
+  MapPin,
+  DollarSign,
+  Star,
+  Filter,
+  Phone,
+  Loader2,
+  Crosshair,
+  CheckCircle
+} from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { ReviewModal } from '../reviews/ReviewModal';
 import { supabase } from '@/src/lib/supabase';
-
-import { useSearchParams } from 'react-router-dom';
-
 import { useGeolocation } from '@/src/hooks/useGeolocation';
-import { Loader2, Crosshair } from 'lucide-react';
 import { AddToCompareButton } from '@/components/ui/AddToCompareButton';
+import { ComparisonFacility } from '@/src/context/ComparisonContext';
+
+type FacilityListItem = ComparisonFacility & {
+  capacity: number;
+  rating: number;
+  vacancy: boolean;
+  verified: boolean;
+};
 
 const DirectorySearch: React.FC = () => {
+  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
   const [location, setLocation] = useState(searchParams.get('location') || '');
@@ -19,8 +35,9 @@ const DirectorySearch: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 50;
 
-  const [facilities, setFacilities] = useState<any[]>([]);
+  const [facilities, setFacilities] = useState<FacilityListItem[]>([]);
   const [dataLoading, setDataLoading] = useState(true);
+  const [hasMore, setHasMore] = useState(false);
 
   const { loading: geoLoading, error: geoError, nearestCity, coordinates, getLocation } = useGeolocation();
 
@@ -34,7 +51,8 @@ const DirectorySearch: React.FC = () => {
     const fetchFacilities = async () => {
       setDataLoading(true);
       try {
-        let data, error;
+        let data;
+        let error;
 
         // If we have coordinates and no specific text search (or if the user just clicked "Use My Location"), use RPC
         // We prioritize the RPC if coordinates are available and match the current location intent
@@ -94,7 +112,7 @@ const DirectorySearch: React.FC = () => {
           console.error('Error fetching facilities:', error);
         } else if (data) {
           // Map DB structure to UI structure
-          const mapped = data.map((f: any) => ({
+          const mapped: FacilityListItem[] = data.map((f: any) => ({
             id: f.id,
             name: f.name,
             address: `${f.address_line1 || ''}${f.city ? ', ' + f.city : ''}${f.state ? ', ' + f.state : ''} ${f.postal_code || ''}`,
@@ -110,6 +128,7 @@ const DirectorySearch: React.FC = () => {
             state: f.state
           }));
           setFacilities(mapped);
+          setHasMore((data?.length || 0) === itemsPerPage);
         }
       } catch (err) {
         console.error('Unexpected error:', err);
@@ -170,7 +189,6 @@ const DirectorySearch: React.FC = () => {
   };
 
   const filteredFacilities = facilities; // Pass through as we filtered on server
-  const totalPages = 10; // Mock for server-side pagination or fetch count
   const startIdx = (currentPage - 1) * itemsPerPage;
   const endIdx = startIdx + facilities.length;
   const displayedFacilities = facilities;
@@ -220,10 +238,18 @@ const DirectorySearch: React.FC = () => {
                   )}
                 </button>
               </div>
-              <button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-md font-medium transition-colors whitespace-nowrap">
+              <button
+                className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-md font-medium transition-colors whitespace-nowrap"
+                onClick={() => setCurrentPage(1)}
+              >
                 Search
               </button>
             </div>
+            {geoError && (
+              <p className="text-sm text-red-600 mt-3">
+                {geoError}
+              </p>
+            )}
           </div>
         </div>
       </div>
@@ -289,60 +315,134 @@ const DirectorySearch: React.FC = () => {
               </div>
             ) : (
               <div className="space-y-4">
-                {displayedFacilities.map((facility, index) => (
-                  <div key={index} className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden">
-                    <div className="flex flex-col md:flex-row">
-                      <img
-                        src={getFacilityImage(facility.id, facility.name)}
-                        alt={facility.name}
-                        className="w-full md:w-64 h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                        onClick={() => handleClaimBusiness(facility.id)}
-                        title="Click to claim this business"
-                      />
-                      <div className="p-6 flex-1">
-                        <div className="flex justify-between items-start mb-3">
-                          <div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-1">{facility.name}</h3>
-                            <p className="text-slate-600 flex items-center gap-2">
-                              <MapPin size={16} />
-                              // @ts-ignore
-                              {facility.address}
-                            </p>
-                            {/* @ts-ignore */}
-                            {facility.phone && (
-                              <p className="text-slate-600 flex items-center gap-2 mt-1">
-                                <Phone size={16} />
-                                <a href={`tel:${facility.phone}`} className="hover:text-primary-600 transition-colors">
-                                  {facility.phone}
-                                </a>
+                {displayedFacilities.length === 0 ? (
+                  <div className="bg-white border border-slate-200 rounded-lg p-6 text-center text-slate-600">
+                    No facilities found. Try adjusting your search or location.
+                  </div>
+                ) : (
+                  displayedFacilities.map((facility) => (
+                    <div key={facility.id} className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden">
+                      <div className="flex flex-col md:flex-row">
+                        <img
+                          src={getFacilityImage(facility.id, facility.name)}
+                          alt={facility.name}
+                          className="w-full md:w-64 h-48 object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                          onClick={() => handleClaimBusiness(facility.id)}
+                          title="Click to claim this business"
+                        />
+                        <div className="p-6 flex-1 flex flex-col gap-4">
+                          <div className="flex justify-between items-start gap-4">
+                            <div className="space-y-2">
+                              <h3 className="text-xl font-bold text-slate-900">{facility.name}</h3>
+                              <p className="text-slate-600 flex items-center gap-2">
+                                <MapPin size={16} />
+                                <span>{facility.address}</span>
                               </p>
-                            )}
+                              {facility.phone && (
+                                <p className="text-slate-600 flex items-center gap-2">
+                                  <Phone size={16} />
+                                  <a href={`tel:${facility.phone}`} className="hover:text-primary-600 transition-colors">
+                                    {facility.phone}
+                                  </a>
+                                </p>
+                              )}
+                            </div>
+                            <div className="flex flex-col items-end gap-2">
+                              {facility.verified && (
+                                <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-semibold bg-green-50 text-green-700 border border-green-100">
+                                  <CheckCircle size={14} />
+                                  Verified
+                                </span>
+                              )}
+                              <AddToCompareButton facility={facility} />
+                            </div>
                           </div>
-                          <div className="flex items-center bg-green-50 px-2 py-1 rounded-lg">
-          >
-            Previous
-          </Button>
-          <span className="text-slate-600">Page {currentPage} of {totalPages}</span>
-          <Button
-            variant="outline"
-            onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
-            disabled={currentPage === totalPages}
-          >
-            Next
-          </Button>
-        </div>
-      )}
+
+                          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm text-slate-600">
+                            <div className="flex items-center gap-2">
+                              <DollarSign size={16} className="text-amber-500" />
+                              <span>{facility.price}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <Star size={16} className="text-yellow-400" />
+                              <span>{facility.rating ? facility.rating.toFixed(1) : 'New'}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <CheckCircle size={16} className="text-primary-600" />
+                              <span>{facility.capacity} beds</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <Phone size={16} className="text-slate-500" />
+                              <span>{facility.city}, {facility.state}</span>
+                            </div>
+                          </div>
+
+                          <div className="flex flex-wrap gap-3">
+                            <Button
+                              size="sm"
+                              onClick={() => navigate(`/facility/${facility.id}`)}
+                            >
+                              View Details
+                            </Button>
+                            <Button
+                              size="sm"
+                              variant="outline"
+                              onClick={() => handleClaimBusiness(facility.id)}
+                            >
+                              Claim this business
+                            </Button>
+                            <Button
+                              size="sm"
+                              variant="ghost"
+                              onClick={() => handleWriteReview(facility.name)}
+                            >
+                              Write a review
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))
+                )}
+              </div>
+            )}
+
+            {!dataLoading && (
+              <div className="flex flex-col sm:flex-row items-center justify-between mt-8 gap-4">
+                <div className="text-sm text-slate-500">
+                  Page {currentPage}
+                </div>
+                <div className="flex items-center gap-3">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                    disabled={currentPage === 1}
+                  >
+                    Previous
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => setCurrentPage((p) => p + 1)}
+                    disabled={!hasMore}
+                  >
+                    Next
+                  </Button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
 
-      <ReviewModal 
-        isOpen={reviewModalOpen} 
-        onClose={() => setReviewModalOpen(false)} 
-        facilityName={selectedFacilityName} 
+      <ReviewModal
+        isOpen={reviewModalOpen}
+        onClose={() => setReviewModalOpen(false)}
+        facilityName={selectedFacilityName}
       />
     </div>
-            );
+  );
 };
 
-            export default DirectorySearch;
+export default DirectorySearch;

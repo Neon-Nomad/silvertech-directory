@@ -40,7 +40,6 @@ export const Footer: React.FC = () => {
           </a>
         </div>
       </div>
-    </div>
-    </footer >
+    </footer>
   );
 };
