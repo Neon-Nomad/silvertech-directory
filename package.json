@@ -21,7 +21,8 @@
     "seed:national": "npx tsx scripts/seed_national.ts",
     "sitemap": "npx tsx scripts/generate_sitemaps.ts",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "seed:digital-products": "tsx scripts/seed_digital_products.ts"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "^5.4.1",
@@ -52,6 +53,7 @@
     "postcss": "^8.5.6",
     "supabase": "^2.63.1",
     "tailwindcss": "^3.4.17",
+    "tsx": "^4.20.6",
     "typescript": "~5.8.2",
     "vite": "^6.2.0",
     "vitest": "^4.0.14"
