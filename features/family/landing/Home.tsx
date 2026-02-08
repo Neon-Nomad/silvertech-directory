@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import { MapPin, ArrowRight, Loader2, Crosshair } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
@@ -22,6 +23,21 @@ export const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white flex flex-col">
+      <Helmet>
+        <title>SilverTech Directory | Commission-Free Senior Living</title>
+        <meta name="description" content="Find trusted memory care and assisted living communities with transparent, commission-free listings. Compare facilities and connect directly." />
+        <link rel="canonical" href="https://silvertechdirectory.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content="SilverTech Directory | Commission-Free Senior Living" />
+        <meta property="og:description" content="Find trusted memory care and assisted living communities with transparent, commission-free listings. Compare facilities and connect directly." />
+        <meta property="og:url" content="https://silvertechdirectory.com/" />
+        <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="SilverTech Directory | Commission-Free Senior Living" />
+        <meta name="twitter:description" content="Find trusted memory care and assisted living communities with transparent, commission-free listings. Compare facilities and connect directly." />
+        <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
+      </Helmet>
       <main className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl w-full space-y-12 text-center">
           

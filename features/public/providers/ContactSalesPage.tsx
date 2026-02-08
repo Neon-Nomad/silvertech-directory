@@ -4,6 +4,7 @@ import { CheckCircle, Phone, Mail, Building2, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { useAuth } from '@/src/context/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
+import { Helmet } from 'react-helmet-async';
 
 export const ContactSalesPage: React.FC = () => {
   const navigate = useNavigate();
@@ -52,6 +53,21 @@ export const ContactSalesPage: React.FC = () => {
   if (submitted) {
     return (
       <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
+        <Helmet>
+          <title>Contact Sales | SilverTech Directory</title>
+          <meta name="description" content="Contact SilverTech sales to learn about Lead Capture Suite and provider tools." />
+          <link rel="canonical" href="https://silvertechdirectory.com/providers/contact-sales" />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="SilverTech Directory" />
+          <meta property="og:title" content="Contact Sales | SilverTech Directory" />
+          <meta property="og:description" content="Contact SilverTech sales to learn about Lead Capture Suite and provider tools." />
+          <meta property="og:url" content="https://silvertechdirectory.com/providers/contact-sales" />
+          <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Contact Sales | SilverTech Directory" />
+          <meta name="twitter:description" content="Contact SilverTech sales to learn about Lead Capture Suite and provider tools." />
+          <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
+        </Helmet>
         <div className="bg-white max-w-lg w-full p-8 rounded-2xl shadow-lg text-center">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle className="w-8 h-8 text-green-600" />
@@ -70,6 +86,21 @@ export const ContactSalesPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50">
+      <Helmet>
+        <title>Contact Sales | SilverTech Directory</title>
+        <meta name="description" content="Contact SilverTech sales to learn about Lead Capture Suite and provider tools." />
+        <link rel="canonical" href="https://silvertechdirectory.com/providers/contact-sales" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content="Contact Sales | SilverTech Directory" />
+        <meta property="og:description" content="Contact SilverTech sales to learn about Lead Capture Suite and provider tools." />
+        <meta property="og:url" content="https://silvertechdirectory.com/providers/contact-sales" />
+        <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Sales | SilverTech Directory" />
+        <meta name="twitter:description" content="Contact SilverTech sales to learn about Lead Capture Suite and provider tools." />
+        <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
+      </Helmet>
       <div className="bg-slate-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Upgrade to Lead Capture Suite</h1>

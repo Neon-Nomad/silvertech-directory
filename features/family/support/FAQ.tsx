@@ -70,6 +70,17 @@ export const FAQ: React.FC = () => {
       <Helmet>
         <title>Frequently Asked Questions | SilverTech Directory</title>
         <meta name="description" content="Find answers to common questions about SilverTech Directory and senior care, including patient care concerns and aging." />
+        <link rel="canonical" href="https://silvertechdirectory.com/faq" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content="Frequently Asked Questions | SilverTech Directory" />
+        <meta property="og:description" content="Find answers to common questions about SilverTech Directory and senior care, including patient care concerns and aging." />
+        <meta property="og:url" content="https://silvertechdirectory.com/faq" />
+        <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Frequently Asked Questions | SilverTech Directory" />
+        <meta name="twitter:description" content="Find answers to common questions about SilverTech Directory and senior care, including patient care concerns and aging." />
+        <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

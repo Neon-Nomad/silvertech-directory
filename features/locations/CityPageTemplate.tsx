@@ -83,7 +83,7 @@ export const CityPageTemplate: React.FC = () => {
   // SEO & Schema
   const pageTitle = `Assisted Living in ${cityName}, ${stateAbbr} — Directory of Senior Care Facilities`;
   const pageDescription = `See the Top 10 Best Assisted Living Facilities in ${cityName}, ${stateName}. Compare prices, read reviews, and find verified senior care providers.`;
-  const canonicalUrl = `https://silvertech.com/assisted-living/${stateSlug}/cities/${citySlug}`;
+  const canonicalUrl = `https://silvertechdirectory.com/assisted-living/${stateSlug}/cities/${citySlug}`;
 
   // Use ranked facilities for Schema to highlight best ones first
   const rankedFacilities = rankFacilities(facilities);
@@ -107,7 +107,7 @@ export const CityPageTemplate: React.FC = () => {
           addressCountry: 'US'
         },
         telephone: f.phone,
-        url: `https://silvertech.com/facility/${f.id}`,
+        url: `https://silvertechdirectory.com/facility/${f.id}`,
         ...(f.image ? { image: f.image } : {}),
         ...(f.price ? { priceRange: f.price } : {})
       }
@@ -122,6 +122,16 @@ export const CityPageTemplate: React.FC = () => {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
 
       {/* Breadcrumbs */}

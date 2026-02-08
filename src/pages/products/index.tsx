@@ -11,6 +11,17 @@ export const ProductsHub: React.FC = () => {
       <Helmet>
         <title>Recommended Elder-Care Products | SilverTech Directory</title>
         <meta name="description" content="Independent recommendations curated to help families save time, confusion, and money. No commissions. No pay-to-rank." />
+        <link rel="canonical" href="https://silvertechdirectory.com/products" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content="Recommended Elder-Care Products | SilverTech Directory" />
+        <meta property="og:description" content="Independent recommendations curated to help families save time, confusion, and money. No commissions. No pay-to-rank." />
+        <meta property="og:url" content="https://silvertechdirectory.com/products" />
+        <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Recommended Elder-Care Products | SilverTech Directory" />
+        <meta name="twitter:description" content="Independent recommendations curated to help families save time, confusion, and money. No commissions. No pay-to-rank." />
+        <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

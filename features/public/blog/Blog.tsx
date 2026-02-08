@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, ShieldCheck, AlertTriangle, FileText, ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { Helmet } from 'react-helmet-async';
 
 export const Blog: React.FC = () => {
   const [selectedPostId, setSelectedPostId] = useState<number | null>(null);
@@ -323,8 +324,25 @@ export const Blog: React.FC = () => {
   const selectedPost = posts.find(p => p.id === selectedPostId);
 
   if (selectedPost) {
+    const postTitle = `${selectedPost.title} | SilverTech Directory`;
+    const postDescription = selectedPost.excerpt;
     return (
       <div className="min-h-screen bg-white font-inter">
+        <Helmet>
+          <title>{postTitle}</title>
+          <meta name="description" content={postDescription} />
+          <link rel="canonical" href="https://silvertechdirectory.com/blog" />
+          <meta property="og:type" content="article" />
+          <meta property="og:site_name" content="SilverTech Directory" />
+          <meta property="og:title" content={postTitle} />
+          <meta property="og:description" content={postDescription} />
+          <meta property="og:url" content="https://silvertechdirectory.com/blog" />
+          <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={postTitle} />
+          <meta name="twitter:description" content={postDescription} />
+          <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
+        </Helmet>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <Button 
             variant="ghost" 
@@ -357,6 +375,21 @@ export const Blog: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 font-inter">
+      <Helmet>
+        <title>Blog | SilverTech Directory</title>
+        <meta name="description" content="Expert insights, financial truths, and safety guides to help families navigate senior living." />
+        <link rel="canonical" href="https://silvertechdirectory.com/blog" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content="Blog | SilverTech Directory" />
+        <meta property="og:description" content="Expert insights, financial truths, and safety guides to help families navigate senior living." />
+        <meta property="og:url" content="https://silvertechdirectory.com/blog" />
+        <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Blog | SilverTech Directory" />
+        <meta name="twitter:description" content="Expert insights, financial truths, and safety guides to help families navigate senior living." />
+        <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
+      </Helmet>
       {/* Header */}
       <div className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">

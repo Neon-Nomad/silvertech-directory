@@ -44,11 +44,26 @@ export const CategoryPage: React.FC = () => {
     return <Navigate to="/products" replace />;
   }
 
+  const pageTitle = `${categoryMeta.title} | SilverTech Directory`;
+  const pageDescription = `Top recommended ${categoryMeta.title.toLowerCase()} for seniors. Independent reviews and guides.`;
+  const canonicalUrl = `https://silvertechdirectory.com/products/${categoryMeta.slug}`;
+
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
       <Helmet>
-        <title>{categoryMeta.title} | SilverTech Directory</title>
-        <meta name="description" content={`Top recommended ${categoryMeta.title.toLowerCase()} for seniors. Independent reviews and guides.`} />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

@@ -9,6 +9,17 @@ export const ForProvidersPage: React.FC = () => {
       <Helmet>
         <title>For Providers | SilverTech Directory</title>
         <meta name="description" content="Join the ethical alternative to senior living referral agencies. Zero commissions, direct leads, and complete transparency." />
+        <link rel="canonical" href="https://silvertechdirectory.com/providers" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content="For Providers | SilverTech Directory" />
+        <meta property="og:description" content="Join the ethical alternative to senior living referral agencies. Zero commissions, direct leads, and complete transparency." />
+        <meta property="og:url" content="https://silvertechdirectory.com/providers" />
+        <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="For Providers | SilverTech Directory" />
+        <meta name="twitter:description" content="Join the ethical alternative to senior living referral agencies. Zero commissions, direct leads, and complete transparency." />
+        <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
 
       {/* Hero Section */}

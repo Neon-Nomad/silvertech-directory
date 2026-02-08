@@ -22,6 +22,17 @@ export const RegulatoryLibrary: React.FC = () => {
                     name="description"
                     content="The complete national database of senior living regulations, Medicaid programs, and licensing authorities for all 50 states."
                 />
+                <link rel="canonical" href="https://silvertechdirectory.com/regulatory-library" />
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="SilverTech Directory" />
+                <meta property="og:title" content="Regulatory Library | SilverTech Directory" />
+                <meta property="og:description" content="The complete national database of senior living regulations, Medicaid programs, and licensing authorities for all 50 states." />
+                <meta property="og:url" content="https://silvertechdirectory.com/regulatory-library" />
+                <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Regulatory Library | SilverTech Directory" />
+                <meta name="twitter:description" content="The complete national database of senior living regulations, Medicaid programs, and licensing authorities for all 50 states." />
+                <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
             </Helmet>
 
             <div className="bg-white min-h-screen pb-20">

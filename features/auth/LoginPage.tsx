@@ -36,6 +36,8 @@ export const LoginPage: React.FC = () => {
     <div className="min-h-screen bg-slate-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <Helmet>
         <title>Sign In | SilverTech Directory</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="canonical" href="https://silvertechdirectory.com/login" />
       </Helmet>
 
       <div className="sm:mx-auto sm:w-full sm:max-w-md">

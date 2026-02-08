@@ -19,6 +19,17 @@ export const StatesDirectoryPage: React.FC = () => {
             <Helmet>
                 <title>Browse Senior Living by State | SilverTech Directory</title>
                 <meta name="description" content="Find senior living and assisted care facilities across all 50 states. Browse our comprehensive directory to find care near you." />
+                <link rel="canonical" href="https://silvertechdirectory.com/states" />
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="SilverTech Directory" />
+                <meta property="og:title" content="Browse Senior Living by State | SilverTech Directory" />
+                <meta property="og:description" content="Find senior living and assisted care facilities across all 50 states. Browse our comprehensive directory to find care near you." />
+                <meta property="og:url" content="https://silvertechdirectory.com/states" />
+                <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Browse Senior Living by State | SilverTech Directory" />
+                <meta name="twitter:description" content="Find senior living and assisted care facilities across all 50 states. Browse our comprehensive directory to find care near you." />
+                <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
             </Helmet>
 
             {/* Hero Section */}

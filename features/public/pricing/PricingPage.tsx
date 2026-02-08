@@ -9,6 +9,17 @@ export const PricingPage: React.FC = () => {
       <Helmet>
         <title>Pricing | SilverTech Directory</title>
         <meta name="description" content="Provider pricing for SilverTech Directory. Transparent, commission-free senior living marketing tools." />
+        <link rel="canonical" href="https://silvertechdirectory.com/pricing" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content="Pricing | SilverTech Directory" />
+        <meta property="og:description" content="Provider pricing for SilverTech Directory. Transparent, commission-free senior living marketing tools." />
+        <meta property="og:url" content="https://silvertechdirectory.com/pricing" />
+        <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Pricing | SilverTech Directory" />
+        <meta name="twitter:description" content="Provider pricing for SilverTech Directory. Transparent, commission-free senior living marketing tools." />
+        <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
 
       {/* Hero Section */}

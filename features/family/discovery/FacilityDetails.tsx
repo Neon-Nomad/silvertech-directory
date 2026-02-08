@@ -197,13 +197,26 @@ export const FacilityDetails: React.FC = () => {
   const stateSlug = ALL_STATES.find(s => s.abbreviation === facility.state)?.slug || facility.state.toLowerCase();
   const citySlug = facility.city.toLowerCase().replace(/ /g, '-');
   const canonicalUrl = `https://silvertechdirectory.com/facility/${id}`;
+  const shareImage = facility.facility_photos?.[0]?.url || facility.image || "https://silvertechdirectory.com/hero.png";
+  const pageTitle = `${facility.name} - ${serviceTypeString} in ${facility.city}, ${facility.state} | SilverTech`;
+  const pageDescription = `Learn about ${facility.name}, a premier ${serviceTypeString} community in ${facility.city}, ${facility.state}. View pricing, photos, amenities, and licensing info (Lic: ${licenseNumber}). Capacity: ${capacity} beds.`;
 
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
       <Helmet>
-        <title>{`${facility.name} - ${serviceTypeString} in ${facility.city}, ${facility.state} | SilverTech`}</title>
-        <meta name="description" content={`Learn about ${facility.name}, a premier ${serviceTypeString} community in ${facility.city}, ${facility.state}. View pricing, photos, amenities, and licensing info (Lic: ${licenseNumber}). Capacity: ${capacity} beds.`} />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
         <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content={shareImage} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={shareImage} />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>

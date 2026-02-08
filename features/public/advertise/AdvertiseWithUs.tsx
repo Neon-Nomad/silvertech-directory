@@ -9,6 +9,17 @@ export const AdvertiseWithUs: React.FC = () => {
       <Helmet>
         <title>Advertise With Us | SilverTech Directory</title>
         <meta name="description" content="Stop paying 100% commissions. SilverTech is the zero-commission alternative that puts control and revenue back in your hands." />
+        <link rel="canonical" href="https://silvertechdirectory.com/advertise" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content="Advertise With Us | SilverTech Directory" />
+        <meta property="og:description" content="Stop paying 100% commissions. SilverTech is the zero-commission alternative that puts control and revenue back in your hands." />
+        <meta property="og:url" content="https://silvertechdirectory.com/advertise" />
+        <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Advertise With Us | SilverTech Directory" />
+        <meta name="twitter:description" content="Stop paying 100% commissions. SilverTech is the zero-commission alternative that puts control and revenue back in your hands." />
+        <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
 
       {/* Hero Section */}

@@ -59,6 +59,17 @@ export const HonestCarePage: React.FC = () => {
       <Helmet>
         <title>Why Transparency Matters | SilverTech Directory</title>
         <meta name="description" content="Learn how senior care referral services really work. SilverTech offers 100% transparency, zero commissions, and direct contact with communities." />
+        <link rel="canonical" href="https://silvertechdirectory.com/honest-care" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content="Why Transparency Matters | SilverTech Directory" />
+        <meta property="og:description" content="Learn how senior care referral services really work. SilverTech offers 100% transparency, zero commissions, and direct contact with communities." />
+        <meta property="og:url" content="https://silvertechdirectory.com/honest-care" />
+        <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Why Transparency Matters | SilverTech Directory" />
+        <meta name="twitter:description" content="Learn how senior care referral services really work. SilverTech offers 100% transparency, zero commissions, and direct contact with communities." />
+        <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
 
       {/* Top Banner */}

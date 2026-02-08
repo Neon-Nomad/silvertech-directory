@@ -8,6 +8,17 @@ export const AboutPage: React.FC = () => {
             <Helmet>
                 <title>About Us | SilverTech Directory</title>
                 <meta name="description" content="Learn how SilverTech Directory provides transparent, commission-free senior care listings to help families find trustworthy care." />
+                <link rel="canonical" href="https://silvertechdirectory.com/about" />
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="SilverTech Directory" />
+                <meta property="og:title" content="About Us | SilverTech Directory" />
+                <meta property="og:description" content="Learn how SilverTech Directory provides transparent, commission-free senior care listings to help families find trustworthy care." />
+                <meta property="og:url" content="https://silvertechdirectory.com/about" />
+                <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="About Us | SilverTech Directory" />
+                <meta name="twitter:description" content="Learn how SilverTech Directory provides transparent, commission-free senior care listings to help families find trustworthy care." />
+                <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
             </Helmet>
 
             {/* Hero Section */}

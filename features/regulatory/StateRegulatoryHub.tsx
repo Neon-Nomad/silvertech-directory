@@ -137,7 +137,17 @@ export const StateRegulatoryHub: React.FC = () => {
                     name="description"
                     content={`Complete guide to ${stateDef.name} senior living regulations, Medicaid waivers, licensing requirements, and how to pay for memory care and assisted living.`}
                 />
-                <link rel="canonical" href={`https://silvertechdirectory.com/states/${stateDef.slug}`} />
+                <link rel="canonical" href={`https://silvertechdirectory.com/states/${stateDef.slug}/regulatory`} />
+                <meta property="og:type" content="article" />
+                <meta property="og:site_name" content="SilverTech Directory" />
+                <meta property="og:title" content={`How to Pay for Memory Care & Assisted Living in ${stateDef.name} | Regulations`} />
+                <meta property="og:description" content={`Complete guide to ${stateDef.name} senior living regulations, Medicaid waivers, licensing requirements, and how to pay for memory care and assisted living.`} />
+                <meta property="og:url" content={`https://silvertechdirectory.com/states/${stateDef.slug}/regulatory`} />
+                <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={`How to Pay for Memory Care & Assisted Living in ${stateDef.name} | Regulations`} />
+                <meta name="twitter:description" content={`Complete guide to ${stateDef.name} senior living regulations, Medicaid waivers, licensing requirements, and how to pay for memory care and assisted living.`} />
+                <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
             </Helmet>
 
             <div className="bg-white min-h-screen">
