@@ -50,7 +50,7 @@ export const Home: React.FC = () => {
             <div className="absolute top-5 left-5 bg-white/95 backdrop-blur-sm rounded-full px-4 py-2 border border-slate-200 shadow-sm">
               <p className="text-xs uppercase tracking-[0.2em] text-slate-500">SilverTech Directory</p>
             </div>
-            <div className="absolute left-1/2 bottom-12 transform -translate-x-1/2 w-[92%] max-w-3xl z-10">
+            <div className="absolute left-1/2 bottom-6 transform -translate-x-1/2 w-[92%] max-w-3xl z-10">
               <div className="bg-white/98 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-xl p-4 md:p-5">
                 <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-4">
                   <div className="flex-1 relative">
@@ -60,13 +60,13 @@ export const Home: React.FC = () => {
                       placeholder="City, State, or ZIP" 
                       value={location}
                       onChange={(e) => setLocation(e.target.value)}
-                      className="w-full pl-12 pr-12 py-4 bg-[#f6f1ea] border border-transparent focus:bg-white focus:border-primary-500 rounded-xl text-lg outline-none transition-all"
+                      className="w-full pl-12 pr-12 py-4 bg-[#f6f1ea] border border-transparent focus:bg-white focus:border-slate-400 rounded-xl text-lg outline-none transition-all"
                     />
                     <button
                       type="button"
                       onClick={getLocation}
                       disabled={loading}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-primary-600 transition-colors disabled:opacity-50"
+                      className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 transition-colors disabled:opacity-50"
                       title="Use my location"
                     >
                       {loading ? (
@@ -76,7 +76,7 @@ export const Home: React.FC = () => {
                       )}
                     </button>
                   </div>
-                  <Button type="submit" size="lg" className="px-8 text-lg h-auto py-4">
+                  <Button type="submit" size="lg" className="px-8 text-lg h-auto py-4 bg-slate-900 hover:bg-slate-800">
                     Search Directory
                   </Button>
                 </form>
@@ -89,7 +89,7 @@ export const Home: React.FC = () => {
           
           <div className="space-y-6">
             <div className="inline-flex items-center space-x-2 bg-white rounded-full px-4 py-1.5 shadow-sm border border-slate-200 mb-4">
-              <span className="text-xs font-bold bg-primary-600 text-white px-2 py-0.5 rounded-full">New</span>
+              <span className="text-xs font-bold bg-slate-900 text-white px-2 py-0.5 rounded-full">New</span>
               <span className="text-sm text-slate-600 font-medium">Commission-Free Senior Living</span>
             </div>
             
@@ -103,7 +103,7 @@ export const Home: React.FC = () => {
             </p>
             
             <div className="pt-2">
-              <span onClick={() => navigate('/honest-care')} className="text-primary-600 hover:text-primary-700 font-medium cursor-pointer underline decoration-primary-300 hover:decoration-primary-600 underline-offset-4 transition-all">
+              <span onClick={() => navigate('/honest-care')} className="text-slate-700 hover:text-slate-900 font-medium cursor-pointer underline decoration-slate-300 hover:decoration-slate-500 underline-offset-4 transition-all">
                 Learn how "free" referral services really work
               </span>
             </div>
@@ -117,7 +117,7 @@ export const Home: React.FC = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="group text-lg px-8 py-6 h-auto border-2 hover:border-primary-600 hover:text-primary-600"
+              className="group text-lg px-8 py-6 h-auto border-2 hover:border-slate-700 hover:text-slate-800"
               onClick={() => navigate('/survey')}
             >
               Not Sure? Start CareFinder Survey
