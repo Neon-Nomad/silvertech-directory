@@ -38,8 +38,25 @@ export const Home: React.FC = () => {
         <meta name="twitter:description" content="Find trusted memory care and assisted living communities with transparent, commission-free listings. Compare facilities and connect directly." />
         <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
-      <main className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl w-full space-y-12 text-center">
+      <main className="flex-1 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto pt-10 pb-16">
+          <div className="relative rounded-3xl overflow-hidden border border-slate-200 shadow-sm bg-white">
+            <img
+              src="/images/hero_image.jpeg"
+              alt="Senior living community interior"
+              className="w-full h-[360px] md:h-[440px] object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-slate-900/10 to-transparent" />
+            <div className="absolute left-1/2 bottom-6 transform -translate-x-1/2 bg-white/95 backdrop-blur-sm rounded-2xl px-6 py-4 border border-slate-200 shadow-md">
+              <div className="text-center">
+                <p className="text-xs uppercase tracking-[0.2em] text-slate-500">SilverTech Directory</p>
+                <p className="text-lg font-semibold text-slate-900">Find trusted senior living communities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-4xl w-full mx-auto space-y-12 text-center pb-16">
           
           <div className="space-y-6">
             <div className="inline-flex items-center space-x-2 bg-white rounded-full px-4 py-1.5 shadow-sm border border-slate-200 mb-4">
