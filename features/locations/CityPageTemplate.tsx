@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Building2, ChevronRight, Shield, Phone, AlertTriangle } from 'lucide-react';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -8,6 +8,7 @@ import { DataSourceNote } from '@/components/ui/DataSourceNote';
 import { supabase } from '@/src/lib/supabase';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
 import { ALL_STATES as states } from '@/src/data/states';
+import zipToCity from '@/src/data/zip_to_city.json';
 import { rankFacilities } from '@/src/utils/ranking';
 import { cityContent } from '@/src/data/city_content';
 import { generateCityContent } from '@/src/utils/contentGenerator';
@@ -29,8 +30,16 @@ const formatName = (slug: string) => {
     .join(' ');
 };
 
+const toSlug = (value: string) =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
 export const CityPageTemplate: React.FC = () => {
   const { state: stateSlug, city: citySlug } = useParams<{ state: string; city: string }>();
+  const navigate = useNavigate();
   
   const [facilities, setFacilities] = useState<any[]>([]);
   const [hospitals, setHospitals] = useState<Hospital[]>([]);
@@ -42,6 +51,20 @@ export const CityPageTemplate: React.FC = () => {
   const stateData = states.find(s => s.slug === stateSlug?.toLowerCase());
   const stateName = stateData ? stateData.name : formatName(stateSlug || '');
   const stateAbbr = stateData ? stateData.abbreviation : stateSlug?.toUpperCase();
+
+  // Redirect ZIP slugs to the correct city page
+  useEffect(() => {
+    if (!stateSlug || !citySlug) return;
+    if (!/^\d{5}$/.test(citySlug)) return;
+
+    const zipEntry = (zipToCity as Record<string, { city: string; state: string }>)[citySlug];
+    if (!zipEntry) return;
+
+    const zipState = states.find((s) => s.abbreviation.toLowerCase() === zipEntry.state.toLowerCase());
+    const targetStateSlug = zipState?.slug || stateSlug;
+    const targetCitySlug = toSlug(zipEntry.city);
+    navigate(`/assisted-living/${targetStateSlug}/cities/${targetCitySlug}`, { replace: true });
+  }, [stateSlug, citySlug, navigate]);
 
   // Get Rich Content (Premium or Generated)
   const contentKey = `${citySlug}-${stateSlug}`;
