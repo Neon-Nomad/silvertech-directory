@@ -3,18 +3,25 @@ import path from 'node:path';
 import { ALL_STATES } from '../../src/data/states';
 
 type Facility = {
-  id: string;
+  id?: string;
   name: string;
   city: string;
   state: string;
   address_line1?: string;
   postal_code?: string;
   phone?: string;
+  address?: string;
+  zip?: string;
+  license_number?: string;
+  source_url?: string;
 };
 
 const facilitiesPath = path.resolve(process.cwd(), 'src/data/seeds/assisted_living_facilities_national.json');
 const facilitiesRaw = fs.readFileSync(facilitiesPath, 'utf-8');
-const facilities: Facility[] = JSON.parse(facilitiesRaw);
+const facilitiesData: unknown = JSON.parse(facilitiesRaw);
+const facilitiesRawArray: Facility[] = Array.isArray(facilitiesData)
+  ? facilitiesData
+  : Object.values((facilitiesData || {}) as Record<string, Facility[]>).flat();
 
 const toSlug = (value: string) =>
   value
@@ -30,6 +37,55 @@ export const getStateSlug = (abbr: string) =>
   ALL_STATES.find((s) => s.abbreviation === abbr)?.slug || toSlug(getStateName(abbr));
 
 export const toCitySlug = (city: string) => toSlug(city);
+
+const hashString = (value: string) => {
+  let hash = 5381;
+  for (let i = 0; i < value.length; i += 1) {
+    hash = (hash * 33) ^ value.charCodeAt(i);
+  }
+  return (hash >>> 0).toString(36);
+};
+
+const getFacilityBaseId = (facility: Facility) => {
+  const keyParts = [
+    facility.name,
+    facility.city,
+    facility.state,
+    facility.license_number,
+    facility.phone,
+    facility.address || facility.address_line1,
+    facility.postal_code || facility.zip,
+    facility.source_url
+  ];
+  const key = keyParts.filter(Boolean).join('|');
+  const baseParts = [
+    facility.name,
+    facility.city,
+    facility.state,
+    facility.license_number || facility.postal_code || facility.zip || facility.phone
+  ];
+  const base = toSlug(baseParts.filter(Boolean).join(' '));
+  const hash = hashString(key || `${facility.name || 'facility'}-${facility.city || ''}-${facility.state || ''}`);
+  return base ? `${base}-${hash}` : `facility-${hash}`;
+};
+
+const facilities: Facility[] = (() => {
+  const seen = new Map<string, number>();
+  return facilitiesRawArray.map((facility, index) => {
+    const address_line1 = facility.address_line1 || facility.address || '';
+    const postal_code = facility.postal_code || facility.zip || '';
+    const baseId = getFacilityBaseId({ ...facility, address_line1, postal_code }) || `facility-${index + 1}`;
+    const count = seen.get(baseId) || 0;
+    seen.set(baseId, count + 1);
+    const id = count === 0 ? baseId : `${baseId}-${count + 1}`;
+    return {
+      ...facility,
+      id,
+      address_line1,
+      postal_code
+    };
+  });
+})();
 
 export const getCityIndex = () => {
   const map = new Map<string, { stateSlug: string; citySlug: string; stateAbbr: string; cityName: string; stateName: string }>();
