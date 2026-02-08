@@ -9,6 +9,7 @@ import { LicensingAuthorityCard } from '../../family/support/LicensingAuthorityC
 import { ArrowLeft, Scale, AlertTriangle, CheckCircle, Loader, FileText } from 'lucide-react';
 import { useRegulatoryContent } from '@/src/hooks/useRegulatoryContent';
 import { ContentMeta } from '@/components/ui/ContentMeta';
+import { DataSourceNote } from '@/components/ui/DataSourceNote';
 
 export const StateRulesPage: React.FC = () => {
     const { state } = useParams<{ state: string }>();
@@ -70,6 +71,9 @@ export const StateRulesPage: React.FC = () => {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                 <ContentMeta />
+                <div className="mt-3">
+                    <DataSourceNote note="Rules and licensing standards are compiled from official state statutes and regulatory publications." />
+                </div>
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

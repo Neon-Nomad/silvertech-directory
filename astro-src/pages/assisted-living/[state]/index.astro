@@ -1,0 +1,70 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { ALL_STATES } from '../../../../src/data/states';
+import { getCityIndex } from '../../../lib/data';
+
+export async function getStaticPaths() {
+  return ALL_STATES.map((s) => ({
+    params: { state: s.slug },
+    props: {
+      stateName: s.name,
+      stateAbbr: s.abbreviation,
+      stateSlug: s.slug
+    }
+  }));
+}
+
+const { stateName, stateAbbr, stateSlug } = Astro.props;
+const cities = getCityIndex().filter((c) => c.stateSlug === stateSlug);
+
+const title = `Assisted Living in ${stateName} | Senior Living Directory`;
+const description = `Browse assisted living and memory care facilities in ${stateName}. Compare city listings, licensing resources, and transparent data.`;
+const canonical = `https://silvertechdirectory.com/assisted-living/${stateSlug}`;
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://silvertechdirectory.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Assisted Living", "item": "https://silvertechdirectory.com/assisted-living" },
+    { "@type": "ListItem", "position": 3, "name": stateName, "item": canonical }
+  ]
+};
+---
+<Base title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <section class="container" style="padding: 2rem 1.5rem;">
+    <h1 style="font-size: 2rem; margin: 0 0 0.5rem;">{stateName} Assisted Living & Memory Care Directory</h1>
+    <p class="muted" style="margin: 0 0 1.5rem;">
+      A statewide index of licensed senior living communities in {stateName}.
+    </p>
+
+    <div class="meta">
+      <div><strong>Author:</strong> SilverTech Editorial Team</div>
+      <div><strong>Last updated:</strong> February 8, 2026</div>
+    </div>
+    <div class="note" style="margin-top: 0.75rem;">
+      <strong>Data source:</strong> Data is compiled from public records and official state licensing authorities.
+      Learn more in our <a href="/editorial-policy" style="color:#2563eb; text-decoration: underline;">Editorial Policy</a>.
+    </div>
+  </section>
+
+  <section class="container" style="padding: 0 1.5rem 2.5rem;">
+    <div class="card">
+      <h2 style="font-size: 1.25rem; margin: 0 0 1rem;">Cities in {stateName}</h2>
+      {cities.length === 0 ? (
+        <p class="muted">No cities found yet for this state.</p>
+      ) : (
+        <ul class="list" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+          {cities.map((c) => (
+            <li class="list-item" key={`${c.stateSlug}-${c.citySlug}`}>
+              <a href={`/assisted-living/${c.stateSlug}/cities/${c.citySlug}`} style="color:#0f172a;">
+                <strong>{c.cityName}</strong>
+              </a>
+              <span class="muted">{c.stateAbbr}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+</Base>

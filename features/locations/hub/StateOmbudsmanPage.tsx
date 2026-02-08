@@ -11,6 +11,7 @@ import { AgingAgencyCard } from '../../family/support/AgingAgencyCard';
 import { ArrowLeft, ShieldCheck, Phone, Loader, FileText } from 'lucide-react';
 import { useRegulatoryContent } from '@/src/hooks/useRegulatoryContent';
 import { ContentMeta } from '@/components/ui/ContentMeta';
+import { DataSourceNote } from '@/components/ui/DataSourceNote';
 
 export const StateOmbudsmanPage: React.FC = () => {
   const { state } = useParams<{ state: string }>();
@@ -73,6 +74,9 @@ export const StateOmbudsmanPage: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <ContentMeta />
+        <div className="mt-3">
+          <DataSourceNote note="Ombudsman and agency contacts are compiled from official state directories and public agency listings." />
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

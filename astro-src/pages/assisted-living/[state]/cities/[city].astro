@@ -1,0 +1,88 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCityIndex, getCityFacilities } from '../../../lib/data';
+
+export async function getStaticPaths() {
+  const cities = getCityIndex();
+  return cities.map((c) => ({
+    params: { state: c.stateSlug, city: c.citySlug },
+    props: c
+  }));
+}
+
+const { stateSlug, citySlug, cityName, stateName, stateAbbr } = Astro.props;
+const facilities = getCityFacilities(stateSlug, citySlug, 50);
+
+const title = `Assisted Living in ${cityName}, ${stateAbbr} | SilverTech Directory`;
+const description = `Compare assisted living and memory care facilities in ${cityName}, ${stateName}. View licensed communities, contact details, and transparent listings.`;
+const canonical = `https://silvertechdirectory.com/assisted-living/${stateSlug}/cities/${citySlug}`;
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": facilities.map((f, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "LocalBusiness",
+      "name": f.name,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": f.address_line1 || '',
+        "addressLocality": f.city || '',
+        "addressRegion": f.state || '',
+        "postalCode": f.postal_code || '',
+        "addressCountry": "US"
+      },
+      "telephone": f.phone || undefined,
+      "url": `https://silvertechdirectory.com/facility/${f.id}`
+    }
+  }))
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://silvertechdirectory.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Assisted Living", "item": "https://silvertechdirectory.com/assisted-living" },
+    { "@type": "ListItem", "position": 3, "name": stateName, "item": `https://silvertechdirectory.com/assisted-living/${stateSlug}` },
+    { "@type": "ListItem", "position": 4, "name": cityName, "item": canonical }
+  ]
+};
+---
+<Base title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <section class="container" style="padding: 2rem 1.5rem;">
+    <h1 style="font-size: 2rem; margin: 0 0 0.5rem;">{cityName}, {stateAbbr} Assisted Living & Memory Care</h1>
+    <p class="muted" style="margin: 0 0 1.5rem;">
+      Licensed senior living communities and verified resources for families in {cityName}, {stateName}.
+    </p>
+
+    <div class="meta">
+      <div><strong>Author:</strong> SilverTech Editorial Team</div>
+      <div><strong>Last updated:</strong> February 8, 2026</div>
+    </div>
+    <div class="note" style="margin-top: 0.75rem;">
+      <strong>Data source:</strong> Data is compiled from public records and official state licensing authorities.
+      Learn more in our <a href="/editorial-policy" style="color:#2563eb; text-decoration: underline;">Editorial Policy</a>.
+    </div>
+  </section>
+
+  <section class="container" style="padding: 0 1.5rem 2.5rem;">
+    <div class="card">
+      <h2 style="font-size: 1.25rem; margin: 0 0 1rem;">Facilities in {cityName}</h2>
+      {facilities.length === 0 ? (
+        <p class="muted">No facilities found in this city yet. Check a nearby city or browse the state page.</p>
+      ) : (
+        <ul class="list">
+          {facilities.map((f) => (
+            <li class="list-item" key={f.id}>
+              <strong>{f.name}</strong>
+              <span class="muted">{f.address_line1}{f.address_line1 ? ',' : ''} {f.city}, {f.state} {f.postal_code || ''}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+</Base>

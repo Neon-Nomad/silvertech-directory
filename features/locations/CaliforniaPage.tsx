@@ -7,6 +7,7 @@ import { Map } from '@/components/ui/Map';
 import { supabase } from '@/src/lib/supabase';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
 import { ContentMeta } from '@/components/ui/ContentMeta';
+import { DataSourceNote } from '@/components/ui/DataSourceNote';
 
 import { stateContent } from '@/src/data/state_content';
 
@@ -114,6 +115,9 @@ export const CaliforniaPage: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <ContentMeta />
+        <div className="mt-3">
+          <DataSourceNote />
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

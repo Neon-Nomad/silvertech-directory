@@ -6,6 +6,7 @@ import { ChevronRight, ShieldCheck, FileText, Users, Building2, AlertCircle, Pho
 import { supabase } from '@/src/lib/supabase';
 import ReactMarkdown from 'react-markdown';
 import { ContentMeta } from '@/components/ui/ContentMeta';
+import { DataSourceNote } from '@/components/ui/DataSourceNote';
 
 // Define the shape of our regulatory data
 interface RegulatoryData {
@@ -205,6 +206,9 @@ export const StateRegulatoryHub: React.FC = () => {
                             </header>
 
                             <ContentMeta />
+                            <div className="mt-3">
+                                <DataSourceNote note="Regulatory content is compiled from official state agencies and public regulatory documents." />
+                            </div>
 
                             <div className="space-y-16">
                                 {/* Medicaid Section */}

@@ -1,0 +1,57 @@
+---
+const {
+  title = 'SilverTech Directory',
+  description = 'Find trusted memory care and assisted living communities with transparent, commission-free listings.',
+  canonical = 'https://silvertechdirectory.com/',
+  ogImage = 'https://silvertechdirectory.com/hero.png'
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SilverTech Directory" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <style>
+      :root { color-scheme: light; }
+      body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; margin: 0; color: #0f172a; background: #f8fafc; }
+      a { color: inherit; text-decoration: none; }
+      .container { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem; }
+      .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; }
+      .meta { font-size: 0.875rem; color: #64748b; border: 1px solid #e2e8f0; border-radius: 10px; padding: 0.75rem 1rem; background: #fff; display: flex; gap: 1rem; flex-wrap: wrap; }
+      .note { font-size: 0.75rem; color: #64748b; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 0.75rem 1rem; }
+      .list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+      .list-item { display: grid; gap: 0.25rem; }
+      .muted { color: #64748b; }
+      header { background: #ffffff; border-bottom: 1px solid #e2e8f0; }
+      footer { border-top: 1px solid #e2e8f0; color: #64748b; font-size: 0.875rem; padding: 2rem 0; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container" style="padding: 1.25rem 1.5rem;">
+        <strong>SilverTech Directory</strong>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <div class="container">
+        © {new Date().getFullYear()} SilverTech Directory. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

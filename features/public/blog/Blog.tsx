@@ -4,6 +4,7 @@ import { ArrowRight, BookOpen, ShieldCheck, AlertTriangle, FileText, ArrowLeft }
 import { Button } from '@/components/ui/Button';
 import { Helmet } from 'react-helmet-async';
 import { ContentMeta } from '@/components/ui/ContentMeta';
+import { DataSourceNote } from '@/components/ui/DataSourceNote';
 
 export const Blog: React.FC = () => {
   const [selectedPostId, setSelectedPostId] = useState<number | null>(null);
@@ -367,6 +368,9 @@ export const Blog: React.FC = () => {
         </div>
 
         <ContentMeta />
+        <div className="mt-3">
+          <DataSourceNote note="Articles are based on public guidance and industry best practices." />
+        </div>
 
         <div className="prose prose-lg max-w-none text-slate-700">
           {selectedPost.content}

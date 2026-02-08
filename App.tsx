@@ -39,6 +39,7 @@ import { StateVeteransPage } from '@/features/locations/hub/StateVeteransPage';
 import { RegulatoryLibrary } from '@/features/regulatory/RegulatoryLibrary';
 import { AboutPage } from '@/features/public/company/AboutPage';
 import { ContactPage } from '@/features/public/company/ContactPage';
+import { EditorialPolicyPage } from '@/features/public/company/EditorialPolicyPage';
 import { ResourcePage } from '@/features/resources/ResourcePage';
 import EmotionalSupportCatalog from '@/features/resources/EmotionalSupportCatalog';
 
@@ -50,6 +51,7 @@ import { ScrollToTop } from '@/components/utils/ScrollToTop';
 import { ComparisonProvider } from '@/src/context/ComparisonContext';
 import { ComparisonBar } from '@/components/ui/ComparisonBar';
 import { ComparisonModal } from '@/components/ui/ComparisonModal';
+import { GlobalSchema } from '@/components/seo/GlobalSchema';
 
 import { AuthProvider } from '@/src/context/AuthProvider';
 import { LoginPage } from '@/features/auth/LoginPage';
@@ -106,6 +108,7 @@ function App() {
             <Elements stripe={stripePromise}>
               <BrowserRouter basename={import.meta.env.BASE_URL} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
                 <ScrollToTop />
+                <GlobalSchema />
                 <div className="min-h-screen bg-white">
                   <Navbar />
                   <Routes>
@@ -139,6 +142,7 @@ function App() {
                     {/* Company & Resources */}
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
                     <Route path="/resources/:type" element={<ResourcePage />} />
                     <Route path="/resources/emotional-support" element={<EmotionalSupportCatalog />} />
                     <Route path="/claim" element={<ClaimBusiness />} />

@@ -6,6 +6,7 @@ import { Breadcrumbs } from '../../components/ui/Breadcrumbs';
 import { stateContent } from '@/src/data/state_content';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
 import { ContentMeta } from '@/components/ui/ContentMeta';
+import { DataSourceNote } from '@/components/ui/DataSourceNote';
 
 const INDIANA_CITIES = [
   'Indianapolis', 'Fort Wayne', 'Evansville', 'South Bend', 'Carmel',
@@ -53,6 +54,9 @@ export const IndianaPage: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <ContentMeta />
+        <div className="mt-3">
+          <DataSourceNote />
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

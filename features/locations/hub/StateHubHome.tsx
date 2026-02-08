@@ -5,6 +5,7 @@ import { ALL_STATES } from '../../../src/data/states';
 import { Breadcrumbs } from '../../../components/ui/Breadcrumbs';
 import { Building2, Scale, HeartHandshake, ShieldCheck, MapPin, ArrowRight, Flag } from 'lucide-react';
 import { ContentMeta } from '@/components/ui/ContentMeta';
+import { DataSourceNote } from '@/components/ui/DataSourceNote';
 
 export const StateHubHome: React.FC = () => {
   const { state } = useParams<{ state: string }>();
@@ -97,6 +98,9 @@ export const StateHubHome: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <ContentMeta />
+        <div className="mt-3">
+          <DataSourceNote note="State hub information is compiled from public records and official state agencies." />
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

@@ -7,6 +7,7 @@ import { ALL_STATES } from '../../../src/data/states';
 import { Breadcrumbs } from '../../../components/ui/Breadcrumbs';
 import { useRegulatoryContent } from '../../../src/hooks/useRegulatoryContent';
 import { ContentMeta } from '@/components/ui/ContentMeta';
+import { DataSourceNote } from '@/components/ui/DataSourceNote';
 
 export const StateVeteransPage: React.FC = () => {
     const { state } = useParams<{ state: string }>();
@@ -67,6 +68,9 @@ export const StateVeteransPage: React.FC = () => {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                 <ContentMeta />
+                <div className="mt-3">
+                    <DataSourceNote note="Veterans benefits information is compiled from VA resources and state veterans affairs offices." />
+                </div>
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

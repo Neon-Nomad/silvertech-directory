@@ -1,0 +1,81 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getFacilityIndex, getStateName, getStateSlug, toCitySlug } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const facilities = getFacilityIndex();
+  return facilities.map((f) => ({
+    params: { id: String(f.id) },
+    props: f
+  }));
+}
+
+const facility = Astro.props;
+const stateName = getStateName(facility.state || '');
+
+const title = `${facility.name} | Assisted Living in ${facility.city}, ${facility.state}`;
+const description = `Learn about ${facility.name}, a senior living community in ${facility.city}, ${stateName}. View address, contact details, and verified data.`;
+const canonical = `https://silvertechdirectory.com/facility/${facility.id}`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "SeniorLivingCommunity",
+  "name": facility.name,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": facility.address_line1 || '',
+    "addressLocality": facility.city || '',
+    "addressRegion": facility.state || '',
+    "postalCode": facility.postal_code || '',
+    "addressCountry": "US"
+  },
+  "telephone": facility.phone || undefined,
+  "url": canonical
+};
+const stateSlug = getStateSlug(facility.state || '');
+const citySlug = toCitySlug(facility.city || '');
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://silvertechdirectory.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Assisted Living", "item": "https://silvertechdirectory.com/assisted-living" },
+    { "@type": "ListItem", "position": 3, "name": stateName, "item": `https://silvertechdirectory.com/assisted-living/${stateSlug}` },
+    { "@type": "ListItem", "position": 4, "name": facility.city, "item": `https://silvertechdirectory.com/assisted-living/${stateSlug}/cities/${citySlug}` },
+    { "@type": "ListItem", "position": 5, "name": facility.name, "item": canonical }
+  ]
+};
+---
+<Base title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <section class="container" style="padding: 2rem 1.5rem;">
+    <h1 style="font-size: 2rem; margin: 0 0 0.5rem;">{facility.name}</h1>
+    <p class="muted" style="margin: 0 0 1.5rem;">
+      Assisted Living in {facility.city}, {facility.state}
+    </p>
+
+    <div class="meta">
+      <div><strong>Author:</strong> SilverTech Editorial Team</div>
+      <div><strong>Last updated:</strong> February 8, 2026</div>
+    </div>
+    <div class="note" style="margin-top: 0.75rem;">
+      <strong>Data source:</strong> Facility details are compiled from public records and official state licensing authorities.
+      Learn more in our <a href="/editorial-policy" style="color:#2563eb; text-decoration: underline;">Editorial Policy</a>.
+    </div>
+  </section>
+
+  <section class="container" style="padding: 0 1.5rem 2.5rem;">
+    <div class="card">
+      <div class="list-item">
+        <strong>Address</strong>
+        <span class="muted">
+          {facility.address_line1 || 'Address unavailable'}{facility.address_line1 ? ',' : ''} {facility.city}, {facility.state} {facility.postal_code || ''}
+        </span>
+      </div>
+      <div class="list-item" style="margin-top: 1rem;">
+        <strong>Phone</strong>
+        <span class="muted">{facility.phone || 'Phone unavailable'}</span>
+      </div>
+    </div>
+  </section>
+</Base>

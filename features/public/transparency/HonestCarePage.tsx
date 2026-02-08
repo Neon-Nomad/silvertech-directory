@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Shield, AlertTriangle, CheckCircle, DollarSign, Heart, Info, Search, XCircle } from 'lucide-react';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
 import { ContentMeta } from '@/components/ui/ContentMeta';
+import { DataSourceNote } from '@/components/ui/DataSourceNote';
 
 export const HonestCarePage: React.FC = () => {
   const faqSchema = {
@@ -103,6 +104,7 @@ export const HonestCarePage: React.FC = () => {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
         <ContentMeta />
+        <DataSourceNote note="Policy content is based on public guidance, regulatory standards, and internal research." />
         
         {/* How Referral Services Work */}
         <section>

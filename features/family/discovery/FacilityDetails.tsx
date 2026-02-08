@@ -12,6 +12,7 @@ import { ReviewModal } from '@/features/reviews/ReviewModal';
 import { useAuth } from '@/src/context/AuthProvider';
 import { PhotoGallery } from '@/components/ui/PhotoGallery';
 import { ContentMeta } from '@/components/ui/ContentMeta';
+import { DataSourceNote } from '@/components/ui/DataSourceNote';
 import { VeteransBenefitsList } from '@/components/resources/VeteransBenefitsList';
 import { calculateHealthcareScore, getNearestHospital, HealthcareScore, Hospital } from '@/src/utils/hospitalData';
 import { HealthcareScoreCard } from '@/features/family/discovery/HealthcareScoreCard';
@@ -274,6 +275,9 @@ export const FacilityDetails: React.FC = () => {
         </div>
 
         <ContentMeta />
+        <div className="mt-3">
+          <DataSourceNote note="Facility details are compiled from public records, licensing data, and verified submissions." />
+        </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Main Content */}

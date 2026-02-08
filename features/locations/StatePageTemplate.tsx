@@ -5,6 +5,7 @@ import { ALL_STATES } from '../../src/data/states';
 import { useJsonLd } from '../../src/hooks/useJsonLd';
 import { Breadcrumbs } from '../../components/ui/Breadcrumbs';
 import { ContentMeta } from '@/components/ui/ContentMeta';
+import { DataSourceNote } from '@/components/ui/DataSourceNote';
 import { supabase } from '../../src/lib/supabase';
 import { getOmbudsman } from '../../src/utils/ombudsmanData';
 import { OmbudsmanCard } from '../family/support/OmbudsmanCard';
@@ -155,6 +156,9 @@ export const StatePageTemplate: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <ContentMeta />
+        <div className="mt-3">
+          <DataSourceNote />
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
