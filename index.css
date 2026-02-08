@@ -7,6 +7,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f6f1ea;
+  color: #0f172a;
+  font-family: 'Inter', sans-serif;
+}
+
 /* Custom Scrollbar Utilities */
 .no-scrollbar::-webkit-scrollbar {
   display: none;

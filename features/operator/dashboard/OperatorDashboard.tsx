@@ -1,5 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { LayoutDashboard, Building2, Users, Settings, LogOut, CreditCard, CheckCircle, AlertCircle, Zap } from 'lucide-react';
+import {
+  LayoutDashboard,
+  Building2,
+  Users,
+  Settings,
+  LogOut,
+  CreditCard,
+  CheckCircle,
+  Phone,
+  Mail,
+  TrendingUp,
+  BarChart3
+} from 'lucide-react';
 import { useAuth } from '@/src/context/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
 import { MyFacilities } from './MyFacilities';
@@ -94,129 +106,278 @@ const OperatorDashboard: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 flex">
-      {/* Sidebar */}
-      <div className="w-64 bg-white border-r border-slate-200 hidden md:flex flex-col">
-        <div className="p-6 border-b border-slate-200">
-          <h1 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-            <LayoutDashboard className="text-primary-600" />
-            Provider Portal
-          </h1>
-        </div>
-
-        <nav className="flex-1 p-4 space-y-1">
-          <button
-            onClick={() => setActiveTab('overview')}
-            className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${activeTab === 'overview'
-              ? 'bg-primary-50 text-primary-700'
-              : 'text-slate-600 hover:bg-slate-50'
-              }`}
-          >
-            <LayoutDashboard className="w-5 h-5" />
-            Overview
-          </button>
-
-          <button
-            onClick={() => setActiveTab('facilities')}
-            className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${activeTab === 'facilities'
-              ? 'bg-primary-50 text-primary-700'
-              : 'text-slate-600 hover:bg-slate-50'
-              }`}
-          >
-            <Building2 className="w-5 h-5" />
-            My Facilities
-          </button>
-
-          <button
-            onClick={() => setActiveTab('leads')}
-            className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${activeTab === 'leads'
-              ? 'bg-primary-50 text-primary-700'
-              : 'text-slate-600 hover:bg-slate-50'
-              }`}
-          >
-            <Users className="w-5 h-5" />
-            Leads
-          </button>
-
-          <button
-            onClick={() => setActiveTab('billing')}
-            className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${activeTab === 'billing'
-              ? 'bg-primary-50 text-primary-700'
-              : 'text-slate-600 hover:bg-slate-50'
-              }`}
-          >
-            <CreditCard className="w-5 h-5" />
-            Billing & Plan
-          </button>
-
-          <button
-            onClick={() => setActiveTab('settings')}
-            className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${activeTab === 'settings'
-              ? 'bg-primary-50 text-primary-700'
-              : 'text-slate-600 hover:bg-slate-50'
-              }`}
-          >
-            <Settings className="w-5 h-5" />
-            Settings
-          </button>
-        </nav>
-
-        <div className="p-4 border-t border-slate-200">
-          <div className="flex items-center gap-3 px-4 py-3 mb-2">
-            <div className="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-700 font-bold text-sm">
-              {user.email?.substring(0, 2).toUpperCase()}
+    <div className="min-h-screen bg-slate-50">
+      <header className="bg-white border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">
+                ST
+              </div>
+              <div>
+                <p className="text-sm text-slate-500 leading-none">SilverTech</p>
+                <p className="text-xs text-slate-400 leading-none">Operator Portal</p>
+              </div>
             </div>
-            <div className="overflow-hidden">
-              <p className="text-sm font-medium text-slate-900 truncate">{user.email}</p>
-              <p className="text-xs text-slate-500">Operator</p>
-            </div>
-          </div>
-          <button
-            onClick={() => signOut()}
-            className="w-full flex items-center gap-3 px-4 py-2 text-sm font-medium text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-          >
-            <LogOut className="w-5 h-5" />
-            Sign Out
-          </button>
-        </div>
-      </div>
 
-      {/* Main Content */}
-      <div className="flex-1 overflow-auto">
-        <header className="bg-white border-b border-slate-200 p-4 md:hidden flex items-center justify-between">
-          <h1 className="text-lg font-bold text-slate-900">Provider Portal</h1>
-          <button onClick={() => signOut()} className="text-slate-500">
-            <LogOut className="w-5 h-5" />
-          </button>
-        </header>
+            <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
+              <button
+                onClick={() => setActiveTab('overview')}
+                className={`pb-1 border-b-2 transition-colors ${activeTab === 'overview'
+                  ? 'text-slate-900 border-slate-900'
+                  : 'border-transparent hover:text-slate-900'
+                  }`}
+              >
+                Dashboard
+              </button>
+              <button
+                onClick={() => setActiveTab('facilities')}
+                className={`pb-1 border-b-2 transition-colors ${activeTab === 'facilities'
+                  ? 'text-slate-900 border-slate-900'
+                  : 'border-transparent hover:text-slate-900'
+                  }`}
+              >
+                Listings
+              </button>
+              <button
+                onClick={() => setActiveTab('leads')}
+                className={`pb-1 border-b-2 transition-colors ${activeTab === 'leads'
+                  ? 'text-slate-900 border-slate-900'
+                  : 'border-transparent hover:text-slate-900'
+                  }`}
+              >
+                Leads
+              </button>
+              <button
+                onClick={() => setActiveTab('overview')}
+                className={`pb-1 border-b-2 transition-colors ${activeTab === 'overview'
+                  ? 'text-slate-900 border-slate-900'
+                  : 'border-transparent hover:text-slate-900'
+                  }`}
+              >
+                Analytics
+              </button>
+              <button
+                onClick={() => setActiveTab('billing')}
+                className={`pb-1 border-b-2 transition-colors ${activeTab === 'billing'
+                  ? 'text-slate-900 border-slate-900'
+                  : 'border-transparent hover:text-slate-900'
+                  }`}
+              >
+                Billing
+              </button>
+              <button
+                onClick={() => setActiveTab('settings')}
+                className={`pb-1 border-b-2 transition-colors ${activeTab === 'settings'
+                  ? 'text-slate-900 border-slate-900'
+                  : 'border-transparent hover:text-slate-900'
+                  }`}
+              >
+                Settings
+              </button>
+            </nav>
 
-        <main className="p-8">
-          {activeTab === 'overview' && (
-            <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-slate-900">Dashboard Overview</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                  <p className="text-sm text-slate-500 font-medium uppercase">Total Views</p>
-                  <p className="text-3xl font-bold text-slate-900 mt-2">1,245</p>
-                  <span className="text-green-600 text-sm font-medium flex items-center gap-1 mt-2">
-                    +12% from last month
-                  </span>
+            <div className="flex items-center gap-4">
+              <div className="hidden sm:flex items-center gap-3">
+                <div className="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 text-sm font-bold">
+                  {user.email?.substring(0, 2).toUpperCase()}
                 </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                  <p className="text-sm text-slate-500 font-medium uppercase">Active Leads</p>
-                  <p className="text-3xl font-bold text-slate-900 mt-2">8</p>
-                  <span className="text-green-600 text-sm font-medium flex items-center gap-1 mt-2">
-                    3 new today
-                  </span>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                  <p className="text-sm text-slate-500 font-medium uppercase">Profile Score</p>
-                  <p className="text-3xl font-bold text-slate-900 mt-2">85%</p>
-                  <span className="text-slate-500 text-sm font-medium mt-2">
-                    Add photos to improve
-                  </span>
+                <div className="text-sm">
+                  <p className="text-slate-700 leading-none truncate max-w-[140px]">{user.email}</p>
+                  <p className="text-xs text-slate-400 leading-none">Operator</p>
                 </div>
               </div>
+              <button
+                onClick={() => signOut()}
+                className="text-sm font-medium text-slate-600 hover:text-slate-900"
+              >
+                Log Out
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main className="max-w-7xl mx-auto px-6 py-10">
+          {activeTab === 'overview' && (
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+              <section className="lg:col-span-4 space-y-6">
+                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                  <h2 className="text-lg font-semibold text-slate-900 mb-4">Quick Actions</h2>
+                  <div className="space-y-3">
+                    <button className="w-full bg-slate-900 text-white py-3 rounded-full font-medium flex items-center justify-center gap-2">
+                      <LayoutDashboard className="w-4 h-4" />
+                      View Public Profile
+                    </button>
+                    <button className="w-full bg-slate-700 text-white py-3 rounded-full font-medium flex items-center justify-center gap-2">
+                      <Building2 className="w-4 h-4" />
+                      Edit Listing
+                    </button>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h2 className="text-lg font-semibold text-slate-900">Premium Benefits</h2>
+                    <div className="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center text-amber-600">
+                      <CheckCircle className="w-5 h-5" />
+                    </div>
+                  </div>
+                  <div className="space-y-3 text-sm text-slate-600">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-amber-500" />
+                      Featured placement in results
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-amber-500" />
+                      Enhanced visibility across the directory
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-amber-500" />
+                      Priority support for family inquiries
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h2 className="text-lg font-semibold text-slate-900">Lead Attribution</h2>
+                    <span className="text-xs text-slate-400">Last 30 days</span>
+                  </div>
+                  <div className="space-y-3">
+                    {[
+                      { label: 'Google', value: 18 },
+                      { label: 'SilverTech', value: 12 },
+                      { label: 'Direct Link', value: 9 },
+                      { label: 'Referral', value: 6 }
+                    ].map((item) => (
+                      <div key={item.label}>
+                        <div className="flex items-center justify-between text-sm text-slate-600">
+                          <span>{item.label}</span>
+                          <span className="font-semibold text-slate-900">{item.value}</span>
+                        </div>
+                        <div className="h-2 bg-slate-100 rounded-full mt-2">
+                          <div
+                            className="h-2 rounded-full bg-slate-800"
+                            style={{ width: `${(item.value / 20) * 100}%` }}
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </section>
+
+              <section className="lg:col-span-8 space-y-6">
+                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm text-slate-500">
+                        Your listing is performing better than 68% of homes in your area.
+                      </p>
+                      <h2 className="text-lg font-semibold text-slate-900 mt-1">Performance Overview</h2>
+                    </div>
+                    <div className="text-xs text-slate-500 flex items-center gap-1">
+                      <TrendingUp className="w-4 h-4" />
+                      Updated today
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-4 mt-5">
+                    {[
+                      { label: 'Profile Views', value: '1,250' },
+                      { label: 'Leads Received', value: '45' },
+                      { label: 'Estimated Move-Ins', value: '3' },
+                      { label: 'Estimated Revenue', value: '$18,000' },
+                      { label: 'Avg. Response Time', value: '1h 12m' }
+                    ].map((stat) => (
+                      <div key={stat.label} className="border border-slate-200 rounded-xl p-4 text-center">
+                        <p className="text-xs text-slate-500 uppercase">{stat.label}</p>
+                        <p className="text-2xl font-semibold text-slate-900 mt-2">{stat.value}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h2 className="text-lg font-semibold text-slate-900">Recent Leads</h2>
+                    <button className="text-sm text-slate-500 hover:text-slate-700">View all</button>
+                  </div>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="text-left text-slate-500 border-b border-slate-200">
+                          <th className="py-2">Name</th>
+                          <th className="py-2">Date</th>
+                          <th className="py-2">Inquiry Type</th>
+                          <th className="py-2">Status</th>
+                          <th className="py-2 text-right">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody className="text-slate-700">
+                        {[
+                          { name: 'Jona Smith', date: '03/22/2023', type: 'Inquiry Form', status: 'New' },
+                          { name: 'John Anthrena', date: '03/22/2023', type: 'Inquiry Form', status: 'Contacted' },
+                          { name: 'Barky Jason', date: '03/22/2023', type: 'Inquiry Form', status: 'Follow-up' }
+                        ].map((lead) => (
+                          <tr key={lead.name} className="border-b border-slate-100">
+                            <td className="py-3 font-medium">{lead.name}</td>
+                            <td className="py-3">{lead.date}</td>
+                            <td className="py-3">{lead.type}</td>
+                            <td className="py-3">
+                              <span className="px-2 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-700">
+                                {lead.status}
+                              </span>
+                            </td>
+                            <td className="py-3">
+                              <div className="flex items-center justify-end gap-2">
+                                <button className="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center">
+                                  <Phone className="w-4 h-4" />
+                                </button>
+                                <button className="w-8 h-8 rounded-full bg-slate-700 text-white flex items-center justify-center">
+                                  <Mail className="w-4 h-4" />
+                                </button>
+                                <button className="px-4 py-1 rounded-full bg-slate-900 text-white text-xs font-medium">
+                                  Call
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="flex items-center gap-2">
+                      <BarChart3 className="w-5 h-5 text-slate-500" />
+                      <h2 className="text-lg font-semibold text-slate-900">Analytics</h2>
+                    </div>
+                    <select className="border border-slate-200 rounded-full px-3 py-1 text-sm text-slate-600">
+                      <option>Past month</option>
+                      <option>Past 3 months</option>
+                      <option>Past year</option>
+                    </select>
+                  </div>
+                  <div className="h-48 bg-slate-50 rounded-xl border border-dashed border-slate-200 relative overflow-hidden">
+                    <svg viewBox="0 0 600 200" className="absolute inset-0 w-full h-full">
+                      <path
+                        d="M0 160 C80 120, 140 120, 200 140 C260 160, 320 60, 380 80 C440 100, 520 40, 600 70"
+                        fill="none"
+                        stroke="#0f172a"
+                        strokeWidth="3"
+                      />
+                      <path
+                        d="M0 160 C80 120, 140 120, 200 140 C260 160, 320 60, 380 80 C440 100, 520 40, 600 70 L600 200 L0 200 Z"
+                        fill="rgba(15, 23, 42, 0.08)"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </section>
             </div>
           )}
 

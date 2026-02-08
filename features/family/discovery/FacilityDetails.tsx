@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { MapPin, Phone, Star, DollarSign, CheckCircle, ArrowLeft, Shield, Users, Clock, Activity, Utensils, Wifi, AlertCircle, Heart } from 'lucide-react';
+import { MapPin, Phone, Star, DollarSign, CheckCircle, AlertCircle, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Map } from '@/components/ui/Map';
 import { supabase } from '@/src/lib/supabase';
@@ -200,11 +200,12 @@ export const FacilityDetails: React.FC = () => {
   const citySlug = facility.city.toLowerCase().replace(/ /g, '-');
   const canonicalUrl = `https://silvertechdirectory.com/facility/${id}`;
   const shareImage = facility.facility_photos?.[0]?.url || facility.image || "https://silvertechdirectory.com/hero.png";
+  const heroImage = shareImage;
   const pageTitle = `${facility.name} - ${serviceTypeString} in ${facility.city}, ${facility.state} | SilverTech`;
   const pageDescription = `Learn about ${facility.name}, a premier ${serviceTypeString} community in ${facility.city}, ${facility.state}. View pricing, photos, amenities, and licensing info (Lic: ${licenseNumber}). Capacity: ${capacity} beds.`;
 
   return (
-    <div className="min-h-screen bg-slate-50 pb-20">
+    <div className="min-h-screen bg-[#f6f1ea] pb-20">
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
@@ -238,99 +239,102 @@ export const FacilityDetails: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-
-        {/* Title Section */}
-        <div className="mb-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4">
-            <div>
-              <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">{facility.name}</h1>
-              <div className="flex flex-wrap items-center gap-4 text-slate-600">
-                <span className="flex items-center gap-1">
-                  <MapPin className="h-4 w-4 text-slate-400" />
-                  <span>
-                    {facility.address_line1}, <Link to={`/assisted-living/${stateSlug}/${citySlug}`} className="hover:text-primary-600 hover:underline">{facility.city}</Link>, <Link to={`/assisted-living/${stateSlug}`} className="hover:text-primary-600 hover:underline">{facility.state}</Link> {facility.postal_code}
-                  </span>
-                </span>
-                <span className="flex items-center gap-1">
-                  <Shield className="h-4 w-4 text-slate-400" />
-                  Lic: {licenseNumber}
-                </span>
-                {facility.owner_id && (
-                  <span className="flex items-center gap-1 text-green-600 bg-green-50 px-2 py-0.5 rounded-full text-sm font-medium">
-                    <CheckCircle className="h-3 w-3" /> Verified Provider
-                  </span>
-                )}
+        <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div className="relative">
+            <img src={heroImage} alt={`${facility.name} hero`} className="w-full h-[360px] object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent" />
+            <div className="absolute left-1/2 -bottom-10 transform -translate-x-1/2 bg-white rounded-2xl shadow-md border border-slate-200 px-6 py-4 flex items-center gap-4">
+              <div className="w-14 h-14 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-700">
+                {facility.name?.charAt(0)}
               </div>
-            </div>
-            <div className="hidden md:block">
-              <AddToCompareButton facility={facility} />
+              <div>
+                <h1 className="text-xl font-semibold text-slate-900">{facility.name}</h1>
+                <div className="flex items-center gap-2 mt-1">
+                  <span className="text-xs text-slate-500 font-medium uppercase">Senior Living</span>
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-100">
+                    {facility.owner_id ? 'Premium Member' : 'Community Listing'}
+                  </span>
+                  {facility.owner_id && (
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-green-50 text-green-700 border border-green-100">
+                      Verified
+                    </span>
+                  )}
+                </div>
+              </div>
+              <div className="hidden md:block">
+                <AddToCompareButton facility={facility} />
+              </div>
             </div>
           </div>
 
-          {/* Photo Gallery */}
-          <PhotoGallery
-            photos={facility.facility_photos || []}
-            facilityName={facility.name}
-          />
+          <div className="pt-14 px-6">
+            <div className="flex flex-wrap gap-6 text-sm font-medium text-slate-600 border-b border-slate-200">
+              {[
+                { label: 'Overview', href: '#overview' },
+                { label: 'Photo Gallery', href: '#gallery' },
+                { label: 'Amenities', href: '#amenities' },
+                { label: 'Care Team', href: '#care-team' },
+                { label: 'Reviews', href: '#reviews' },
+                { label: 'Contact', href: '#contact' }
+              ].map((tab) => (
+                <a key={tab.label} href={tab.href} className="py-4 border-b-2 border-transparent hover:text-slate-900 hover:border-slate-300">
+                  {tab.label}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
 
-        <ContentMeta />
-        <div className="mt-3">
-          <DataSourceNote note="Facility details are compiled from public records, licensing data, and verified submissions." />
-        </div>
+        <div className="grid lg:grid-cols-12 gap-8 mt-8">
+          <div className="lg:col-span-8 space-y-8">
+            <section id="overview" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8">
+              <div className="flex items-center justify-between gap-4">
+                <h2 className="text-2xl font-semibold text-slate-900">Description</h2>
+                <div className="flex items-center gap-3 text-sm text-slate-500">
+                  <MapPin className="h-4 w-4" />
+                  <span>
+                    {facility.address_line1}, <Link to={`/assisted-living/${stateSlug}/${citySlug}`} className="hover:text-primary-600">{facility.city}</Link>, <Link to={`/assisted-living/${stateSlug}`} className="hover:text-primary-600">{facility.state}</Link> {facility.postal_code}
+                  </span>
+                </div>
+              </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
-
-            {/* Overview Card */}
-            <div className="bg-white rounded-xl shadow-sm p-8 border border-slate-200">
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">About this Community</h2>
-              <p className="text-slate-600 leading-relaxed text-lg whitespace-pre-line">
+              <p className="text-slate-600 leading-relaxed text-lg mt-4 whitespace-pre-line">
                 {facility.description || `${facility.name} is a licensed residential care facility for the elderly (RCFE) located in ${facility.city}, ${facility.state}. With a licensed capacity of ${capacity} residents, this community offers personalized care services in a supportive environment.`}
               </p>
 
-              <div className="mt-8 grid sm:grid-cols-3 gap-4">
+              <div className="mt-6 grid sm:grid-cols-3 gap-4">
                 <div className="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                  <p className="text-sm text-slate-500 font-medium uppercase tracking-wide">Capacity</p>
-                  <p className="text-xl font-bold text-slate-900">{capacity} Beds</p>
+                  <p className="text-xs text-slate-500 font-medium uppercase tracking-wide">Capacity</p>
+                  <p className="text-lg font-semibold text-slate-900">{capacity} Beds</p>
                 </div>
                 <div className="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                  <p className="text-sm text-slate-500 font-medium uppercase tracking-wide">License Status</p>
-                  <p className="text-xl font-bold text-green-600 flex items-center gap-2">
-                    Active <CheckCircle className="w-4 h-4" />
-                  </p>
+                  <p className="text-xs text-slate-500 font-medium uppercase tracking-wide">License</p>
+                  <p className="text-lg font-semibold text-slate-900">{licenseNumber}</p>
                 </div>
                 <div className="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                  <p className="text-sm text-slate-500 font-medium uppercase tracking-wide">Facility Type</p>
-                  <p className="text-xl font-bold text-slate-900">RCFE</p>
+                  <p className="text-xs text-slate-500 font-medium uppercase tracking-wide">Care Type</p>
+                  <p className="text-lg font-semibold text-slate-900">{serviceTypeString}</p>
                 </div>
               </div>
-            </div>
 
-            {/* Care Types */}
-            {careTypes.length > 0 && (
-              <div className="bg-white rounded-xl shadow-sm p-8 border border-slate-200">
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">Care Services</h2>
-                <div className="flex flex-wrap gap-3">
-                  {careTypes.map((care: any) => (
-                    <div key={care.id} className="flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-lg border border-blue-100">
-                      <Heart className="w-4 h-4" />
-                      <span className="font-medium">{care.name}</span>
-                    </div>
-                  ))}
-                </div>
+              <ContentMeta />
+              <div className="mt-3">
+                <DataSourceNote note="Facility details are compiled from public records, licensing data, and verified submissions." />
               </div>
-            )}
+            </section>
 
-            {/* Amenities */}
+            <section id="gallery" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8">
+              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Photo Gallery</h2>
+              <PhotoGallery photos={facility.facility_photos || []} facilityName={facility.name} />
+            </section>
+
             {amenitiesList.length > 0 && (
-              <div className="bg-white rounded-xl shadow-sm p-8 border border-slate-200">
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">Amenities & Features</h2>
+              <section id="amenities" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8">
+                <h2 className="text-2xl font-semibold text-slate-900 mb-6">Amenities</h2>
                 <div className="space-y-6">
                   {Object.entries(groupedAmenities).map(([category, items]) => (
                     <div key={category}>
-                      <h3 className="text-lg font-semibold text-slate-800 mb-3 border-b border-slate-100 pb-2">{category}</h3>
+                      <h3 className="text-lg font-semibold text-slate-800 mb-3">{category}</h3>
                       <div className="grid sm:grid-cols-2 gap-3">
                         {items.map((item: any) => (
                           <div key={item.id} className="flex items-center gap-3 text-slate-700">
@@ -342,40 +346,30 @@ export const FacilityDetails: React.FC = () => {
                     </div>
                   ))}
                 </div>
-              </div>
+              </section>
             )}
 
-            {/* Map Section */}
-            <div className="bg-white rounded-xl shadow-sm p-8 border border-slate-200">
-              <h2 className="text-2xl font-bold text-slate-900 mb-6">Location</h2>
-              <div className="h-[400px] rounded-xl overflow-hidden bg-slate-100 border border-slate-200 relative">
-                {facility.latitude && facility.longitude ? (
-                  <Map
-                    center={[facility.latitude, facility.longitude]}
-                    facilities={[facility]}
-                    zoom={15}
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center text-slate-400">
-                    Map data unavailable
-                  </div>
-                )}
-              </div>
-              <p className="mt-4 text-slate-600 flex items-center gap-2">
-                <MapPin className="w-5 h-5 text-slate-400" />
-                {fullAddress}
+            <section id="care-team" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8">
+              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Care Team</h2>
+              <p className="text-slate-600 leading-relaxed">
+                Ask about staff training, care ratios, and specialty programs. We encourage families to request a tour and
+                meet the team responsible for daily care and coordination.
               </p>
-            </div>
+              {careTypes.length > 0 && (
+                <div className="mt-6 flex flex-wrap gap-3">
+                  {careTypes.map((care: any) => (
+                    <div key={care.id} className="flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-lg border border-blue-100">
+                      <Heart className="w-4 h-4" />
+                      <span className="font-medium">{care.name}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </section>
 
-            {/* Financial Resources - Veterans Benefits */}
-            <div id="financial-help">
-              <VeteransBenefitsList />
-            </div>
-
-            {/* Reviews Section */}
-            <div className="bg-white rounded-xl shadow-sm p-8 border border-slate-200" id="reviews">
+            <section id="reviews" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8">
               <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl font-bold text-slate-900">Reviews</h2>
+                <h2 className="text-2xl font-semibold text-slate-900">Reviews</h2>
                 <Button
                   variant="outline"
                   onClick={() => {
@@ -389,68 +383,91 @@ export const FacilityDetails: React.FC = () => {
                   Write a Review
                 </Button>
               </div>
-
               <ReviewList facilityId={id!} refreshTrigger={refreshReviews} />
-            </div>
+            </section>
 
+            <section id="contact" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8">
+              <h2 className="text-2xl font-semibold text-slate-900 mb-6">Contact & Location</h2>
+              <div className="h-[360px] rounded-xl overflow-hidden bg-slate-100 border border-slate-200 relative">
+                {facility.latitude && facility.longitude ? (
+                  <Map center={[facility.latitude, facility.longitude]} facilities={[facility]} zoom={15} />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-slate-400">
+                    Map data unavailable
+                  </div>
+                )}
+              </div>
+              <p className="mt-4 text-slate-600 flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-slate-400" />
+                {fullAddress}
+              </p>
+            </section>
+
+            <div id="financial-help">
+              <VeteransBenefitsList />
+            </div>
           </div>
 
-          {/* Sidebar */}
-          <div className="space-y-6">
-            {/* Pricing Card */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border border-primary-100">
-              <div className="flex items-center justify-between mb-6">
-                <div>
-                  <p className="text-sm text-slate-500 font-medium">Monthly Cost</p>
-                  <div className="flex items-center gap-1 text-primary-700">
-                    <DollarSign className="h-6 w-6" />
-                    <span className="text-3xl font-bold">
-                      {facility.min_price ? `$${facility.min_price.toLocaleString()}` : 'Call'}
-                    </span>
-                    {facility.max_price && <span className="text-sm text-slate-500 ml-1">- ${facility.max_price.toLocaleString()}</span>}
-                  </div>
-                </div>
-                <div className="flex flex-col items-end">
-                  <div className="flex items-center gap-1 text-yellow-400 bg-yellow-50 px-2 py-1 rounded-lg border border-yellow-100">
-                    <Star className="h-4 w-4 fill-current" />
-                    <span className="text-slate-900 font-bold">New</span>
-                  </div>
-                </div>
+          <aside className="lg:col-span-4 space-y-6">
+            <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 text-center">
+              <div className="w-24 h-24 rounded-2xl bg-slate-100 mx-auto mb-4 flex items-center justify-center text-slate-500 font-semibold">
+                Director
               </div>
-
-              <div className="space-y-3">
-                <Button
-                  variant="primary"
-                  className="w-full py-4 text-lg shadow-md hover:shadow-lg transition-all"
-                  onClick={() => setIsLeadModalOpen(true)}
-                >
-                  Check Availability
-                </Button>
-                <Button
-                  variant="outline"
-                  className="w-full py-4 text-lg border-2"
-                  onClick={() => setIsLeadModalOpen(true)}
-                >
-                  Request Pricing
-                </Button>
-              </div>
-
+              <p className="text-sm text-slate-500">Community Director</p>
+              <p className="text-base font-semibold text-slate-900">Professional Director</p>
+              <Button
+                variant="primary"
+                className="w-full mt-4"
+                onClick={() => setIsLeadModalOpen(true)}
+              >
+                Schedule a Private Tour
+              </Button>
               {facility.phone && (
-                <div className="mt-6 pt-6 border-t border-slate-100 text-center">
-                  <p className="text-sm text-slate-500 mb-2 font-medium">Speak with an Advisor</p>
-                  <a href={`tel:${facility.phone}`} className="flex items-center justify-center gap-2 text-xl font-bold text-slate-900 hover:text-primary-600 transition-colors bg-slate-50 py-3 rounded-lg hover:bg-slate-100">
-                    <Phone className="h-5 w-5" />
-                    {facility.phone}
-                  </a>
-                </div>
+                <a
+                  href={`tel:${facility.phone}`}
+                  className="mt-3 inline-flex items-center justify-center gap-2 text-sm font-medium text-slate-700 hover:text-slate-900"
+                >
+                  <Phone className="w-4 h-4" />
+                  {facility.phone}
+                </a>
               )}
+            </div>
 
-              <div className="mt-4 text-xs text-center text-slate-400">
-                100% Free Service for Families
+            <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+              <h3 className="text-lg font-semibold text-slate-900 mb-4">Request Information</h3>
+              <div className="space-y-3">
+                <input className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" placeholder="First Name" />
+                <input className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" placeholder="Last Name" />
+                <input className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" placeholder="Email Address" />
+                <input className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" placeholder="Phone Number" />
+              </div>
+              <Button
+                variant="primary"
+                className="w-full mt-4"
+                onClick={() => setIsLeadModalOpen(true)}
+              >
+                Request Information
+              </Button>
+              <p className="text-xs text-slate-400 mt-3">
+                Your information is shared only with this facility.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+              <p className="text-sm text-slate-500 font-medium">Monthly Cost</p>
+              <div className="flex items-center gap-2 text-slate-900 mt-2">
+                <DollarSign className="h-6 w-6 text-slate-700" />
+                <span className="text-2xl font-semibold">
+                  {facility.min_price ? `$${facility.min_price.toLocaleString()}` : 'Call'}
+                </span>
+                {facility.max_price && <span className="text-sm text-slate-500">- ${facility.max_price.toLocaleString()}</span>}
+              </div>
+              <div className="mt-4 flex items-center gap-2 text-xs text-amber-700 bg-amber-50 border border-amber-100 rounded-full px-3 py-1">
+                <Star className="h-4 w-4 fill-current" />
+                Premium placement available
               </div>
             </div>
 
-            {/* Healthcare Score */}
             {healthcareScore && (
               <HealthcareScoreCard
                 score={healthcareScore}
@@ -459,24 +476,12 @@ export const FacilityDetails: React.FC = () => {
               />
             )}
 
-            {/* Ombudsman Card */}
-            {ombudsman && (
-              <OmbudsmanCard program={ombudsman} />
-            )}
+            {ombudsman && <OmbudsmanCard program={ombudsman} />}
+            {licensingAuthority && <LicensingAuthorityCard authority={licensingAuthority} />}
+            {agingAgency && <AgingAgencyCard agency={agingAgency} variant="compact" />}
 
-            {/* Licensing Authority Card */}
-            {licensingAuthority && (
-              <LicensingAuthorityCard authority={licensingAuthority} />
-            )}
-
-            {/* Aging Agency Card */}
-            {agingAgency && (
-              <AgingAgencyCard agency={agingAgency} variant="compact" />
-            )}
-
-            {/* Claim Business Card */}
             {!facility.owner_id && (
-              <div className="bg-slate-50 rounded-xl p-6 border border-slate-200 text-center">
+              <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 text-center">
                 <h3 className="font-semibold text-slate-900 mb-2">Own this facility?</h3>
                 <p className="text-sm text-slate-600 mb-4">
                   Claim your profile to update details, add photos, and respond to reviews.
@@ -490,7 +495,7 @@ export const FacilityDetails: React.FC = () => {
                 </Button>
               </div>
             )}
-          </div>
+          </aside>
         </div>
       </div>
 

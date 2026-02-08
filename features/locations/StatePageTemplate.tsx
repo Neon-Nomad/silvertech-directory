@@ -115,7 +115,7 @@ export const StatePageTemplate: React.FC = () => {
   useJsonLd(schema);
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
+    <div className="min-h-screen bg-[#f6f1ea] font-sans text-slate-900">
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />

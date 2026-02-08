@@ -79,22 +79,22 @@ const DirectorySearch: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50">
-      <div className="bg-gradient-to-r from-primary-600 to-secondary-500 py-16">
+    <div className="min-h-screen bg-[#f6f1ea]">
+      <div className="py-16 bg-white border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">Search Senior Living by City or State</h1>
-          <p className="text-lg text-white/90 mb-8">
+          <h1 className="text-4xl font-bold text-slate-900 mb-4">Search Senior Living by City or State</h1>
+          <p className="text-lg text-slate-600 mb-8">
             Choose a state or type a city or ZIP code (e.g., “Muncie, IN” or “47302”) to see every
             licensed facility.
           </p>
-          <div className="bg-white rounded-lg shadow-lg p-4">
+          <div className="bg-white rounded-2xl shadow-lg p-4 border border-slate-200">
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex-1">
                 <label className="block text-sm font-medium text-slate-700 mb-2">State</label>
                 <select
                   value={stateSlug}
                   onChange={(e) => setStateSlug(e.target.value)}
-                  className="w-full border border-slate-300 rounded-md px-3 py-3 text-sm focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                  className="w-full border border-slate-300 rounded-md px-3 py-3 text-sm focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-[#f6f1ea]"
                 >
                   <option value="">Select a state</option>
                   {stateOptions.map((state) => (
@@ -114,11 +114,11 @@ const DirectorySearch: React.FC = () => {
                   placeholder="Muncie, IN or 47302"
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                  className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-[#f6f1ea]"
                 />
               </div>
               <button
-                className="self-end bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-md font-medium transition-colors whitespace-nowrap"
+                className="self-end bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 rounded-md font-medium transition-colors whitespace-nowrap"
                 onClick={handleSearch}
               >
                 <span className="inline-flex items-center gap-2">
@@ -133,7 +133,7 @@ const DirectorySearch: React.FC = () => {
       </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white rounded-lg shadow p-6">
+        <div className="bg-white rounded-2xl shadow p-6 border border-slate-200">
           <h2 className="text-xl font-bold text-slate-900 mb-2">Browse all states</h2>
           <p className="text-slate-600 mb-4">
             Prefer to explore? You can jump straight to the full state directory.

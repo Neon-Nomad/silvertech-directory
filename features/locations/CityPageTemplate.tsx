@@ -119,7 +119,7 @@ export const CityPageTemplate: React.FC = () => {
   useJsonLd(itemListSchema);
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-[#f6f1ea]">
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />

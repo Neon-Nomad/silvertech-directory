@@ -22,7 +22,7 @@ export const Home: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white flex flex-col">
+    <div className="min-h-screen bg-[#f6f1ea] flex flex-col">
       <Helmet>
         <title>SilverTech Directory | Commission-Free Senior Living</title>
         <meta name="description" content="Find trusted memory care and assisted living communities with transparent, commission-free listings. Compare facilities and connect directly." />
@@ -72,7 +72,7 @@ export const Home: React.FC = () => {
                   placeholder="City, State, or ZIP" 
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
-                  className="w-full pl-12 pr-12 py-4 bg-slate-50 border-transparent focus:bg-white border focus:border-primary-500 rounded-xl text-lg outline-none transition-all"
+                  className="w-full pl-12 pr-12 py-4 bg-[#f6f1ea] border border-transparent focus:bg-white focus:border-primary-500 rounded-xl text-lg outline-none transition-all"
                 />
                 <button
                   type="button"
@@ -117,7 +117,7 @@ export const Home: React.FC = () => {
       </main>
       
       {/* Footer / Trust Indicators */}
-      <div className="py-8 border-t border-slate-100 bg-white/50">
+      <div className="py-8 border-t border-slate-200 bg-white/70">
         <div className="max-w-7xl mx-auto px-4 flex justify-center gap-8 md:gap-16 grayscale opacity-60">
            <div className="flex items-center gap-2 font-semibold text-slate-900">
              <div className="w-2 h-2 bg-green-500 rounded-full"></div> Real-Time Availability
