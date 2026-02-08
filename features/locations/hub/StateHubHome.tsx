@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { ALL_STATES } from '../../../src/data/states';
 import { Breadcrumbs } from '../../../components/ui/Breadcrumbs';
 import { Building2, Scale, HeartHandshake, ShieldCheck, MapPin, ArrowRight, Flag } from 'lucide-react';
+import { ContentMeta } from '@/components/ui/ContentMeta';
 
 export const StateHubHome: React.FC = () => {
   const { state } = useParams<{ state: string }>();
@@ -92,6 +93,10 @@ export const StateHubHome: React.FC = () => {
             We provide transparent data on costs, financial aid, and facility quality to help you make informed decisions.
           </p>
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <ContentMeta />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

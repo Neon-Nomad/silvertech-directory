@@ -8,6 +8,7 @@ import { getMedicaidWaiver } from '../../../src/utils/medicaidData';
 import { MedicaidWaiverCard } from '../../family/finance/MedicaidWaiverCard';
 import { ArrowLeft, DollarSign, FileText, Loader } from 'lucide-react';
 import { useRegulatoryContent } from '@/src/hooks/useRegulatoryContent';
+import { ContentMeta } from '@/components/ui/ContentMeta';
 
 export const StateMedicaidPage: React.FC = () => {
   const { state } = useParams<{ state: string }>();
@@ -65,6 +66,10 @@ export const StateMedicaidPage: React.FC = () => {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <ContentMeta />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

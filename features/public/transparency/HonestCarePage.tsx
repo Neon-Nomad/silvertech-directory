@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Shield, AlertTriangle, CheckCircle, DollarSign, Heart, Info, Search, XCircle } from 'lucide-react';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
+import { ContentMeta } from '@/components/ui/ContentMeta';
 
 export const HonestCarePage: React.FC = () => {
   const faqSchema = {
@@ -101,6 +102,7 @@ export const HonestCarePage: React.FC = () => {
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+        <ContentMeta />
         
         {/* How Referral Services Work */}
         <section>

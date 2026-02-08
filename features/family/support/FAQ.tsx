@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { ChevronDown, ChevronUp, HelpCircle, HeartPulse } from 'lucide-react';
+import { ContentMeta } from '@/components/ui/ContentMeta';
 
 interface FAQItem {
   question: string;
@@ -90,6 +91,8 @@ export const FAQ: React.FC = () => {
             Everything you need to know about our platform and caring for your loved ones.
           </p>
         </div>
+
+        <ContentMeta />
 
         <div className="space-y-8">
           {faqData.map((section) => (

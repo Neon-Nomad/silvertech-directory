@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Building2, ChevronRight, Shield, Phone, AlertTriangle } from 'lucide-react';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { ContentMeta } from '@/components/ui/ContentMeta';
 import { supabase } from '@/src/lib/supabase';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
 import { ALL_STATES as states } from '@/src/data/states';
@@ -159,6 +160,10 @@ export const CityPageTemplate: React.FC = () => {
             dangerouslySetInnerHTML={{ __html: richContent.intro }}
           />
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <ContentMeta />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

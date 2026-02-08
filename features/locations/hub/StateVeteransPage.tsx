@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import { ALL_STATES } from '../../../src/data/states';
 import { Breadcrumbs } from '../../../components/ui/Breadcrumbs';
 import { useRegulatoryContent } from '../../../src/hooks/useRegulatoryContent';
+import { ContentMeta } from '@/components/ui/ContentMeta';
 
 export const StateVeteransPage: React.FC = () => {
     const { state } = useParams<{ state: string }>();
@@ -62,6 +63,10 @@ export const StateVeteransPage: React.FC = () => {
                         </h1>
                     </div>
                 </div>
+            </div>
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <ContentMeta />
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

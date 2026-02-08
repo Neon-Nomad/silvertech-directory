@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { ALL_STATES } from '../../src/data/states';
 import { useJsonLd } from '../../src/hooks/useJsonLd';
 import { Breadcrumbs } from '../../components/ui/Breadcrumbs';
+import { ContentMeta } from '@/components/ui/ContentMeta';
 import { supabase } from '../../src/lib/supabase';
 import { getOmbudsman } from '../../src/utils/ombudsmanData';
 import { OmbudsmanCard } from '../family/support/OmbudsmanCard';
@@ -150,6 +151,10 @@ export const StatePageTemplate: React.FC = () => {
             We provide transparent information, direct contact details, and unbiased resources to help you make the right choice for your family.
           </p>
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <ContentMeta />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

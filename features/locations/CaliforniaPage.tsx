@@ -6,6 +6,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Map } from '@/components/ui/Map';
 import { supabase } from '@/src/lib/supabase';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
+import { ContentMeta } from '@/components/ui/ContentMeta';
 
 import { stateContent } from '@/src/data/state_content';
 
@@ -109,6 +110,10 @@ export const CaliforniaPage: React.FC = () => {
             {content.overview.content}
           </p>
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <ContentMeta />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

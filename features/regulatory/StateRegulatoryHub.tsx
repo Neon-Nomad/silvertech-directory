@@ -5,6 +5,7 @@ import { ALL_STATES } from '@/src/data/states';
 import { ChevronRight, ShieldCheck, FileText, Users, Building2, AlertCircle, Phone, ExternalLink } from 'lucide-react';
 import { supabase } from '@/src/lib/supabase';
 import ReactMarkdown from 'react-markdown';
+import { ContentMeta } from '@/components/ui/ContentMeta';
 
 // Define the shape of our regulatory data
 interface RegulatoryData {
@@ -202,6 +203,8 @@ export const StateRegulatoryHub: React.FC = () => {
                                     A complete guide to state regulations, licensing requirements, Medicaid programs, and resident protection systems for assisted living and adult residential care in {stateDef.name}.
                                 </p>
                             </header>
+
+                            <ContentMeta />
 
                             <div className="space-y-16">
                                 {/* Medicaid Section */}

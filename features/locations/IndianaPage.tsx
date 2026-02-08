@@ -5,6 +5,7 @@ import { MapPin, Phone, ExternalLink, Shield, AlertTriangle, FileText, HelpCircl
 import { Breadcrumbs } from '../../components/ui/Breadcrumbs';
 import { stateContent } from '@/src/data/state_content';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
+import { ContentMeta } from '@/components/ui/ContentMeta';
 
 const INDIANA_CITIES = [
   'Indianapolis', 'Fort Wayne', 'Evansville', 'South Bend', 'Carmel',
@@ -48,6 +49,10 @@ export const IndianaPage: React.FC = () => {
             This guide gives families straight answers on how care works in Indiana, how to pay for it, who regulates it, and where to turn when you need help.
           </p>
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <ContentMeta />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

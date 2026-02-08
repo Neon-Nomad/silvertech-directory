@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, ShieldCheck, AlertTriangle, FileText, ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Helmet } from 'react-helmet-async';
+import { ContentMeta } from '@/components/ui/ContentMeta';
 
 export const Blog: React.FC = () => {
   const [selectedPostId, setSelectedPostId] = useState<number | null>(null);
@@ -359,15 +360,17 @@ export const Blog: React.FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold text-slate-900 font-montserrat mt-4 mb-6 leading-tight">
               {selectedPost.title}
             </h1>
-            <div className="flex items-center text-slate-500 text-sm">
-              <BookOpen className="w-4 h-4 mr-2" />
-              {selectedPost.readTime}
-            </div>
+          <div className="flex items-center text-slate-500 text-sm">
+            <BookOpen className="w-4 h-4 mr-2" />
+            {selectedPost.readTime}
           </div>
+        </div>
 
-          <div className="prose prose-lg max-w-none text-slate-700">
-            {selectedPost.content}
-          </div>
+        <ContentMeta />
+
+        <div className="prose prose-lg max-w-none text-slate-700">
+          {selectedPost.content}
+        </div>
         </div>
       </div>
     );
@@ -400,6 +403,10 @@ export const Blog: React.FC = () => {
             Expert insights, financial truths, and safety guides to help you navigate the complex world of senior living.
           </p>
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <ContentMeta />
       </div>
 
       {/* Blog Posts Grid */}
