@@ -50,8 +50,8 @@ export const Home: React.FC = () => {
             <div className="absolute top-5 left-5 bg-white/95 backdrop-blur-sm rounded-full px-4 py-2 border border-slate-200 shadow-sm">
               <p className="text-xs uppercase tracking-[0.2em] text-slate-500">SilverTech Directory</p>
             </div>
-            <div className="absolute left-1/2 -bottom-8 transform -translate-x-1/2 w-[92%] max-w-3xl z-10">
-              <div className="bg-white/95 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-lg p-4 md:p-5">
+            <div className="absolute left-1/2 bottom-12 transform -translate-x-1/2 w-[92%] max-w-3xl z-10">
+              <div className="bg-white/98 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-xl p-4 md:p-5">
                 <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-4">
                   <div className="flex-1 relative">
                     <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
