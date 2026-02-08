@@ -1,7 +1,8 @@
-import React, { useMemo, useState } from 'react';
+﻿import React, { useMemo, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Search, MapPin } from 'lucide-react';
 import { ALL_STATES } from '@/src/data/states';
+import zipToCity from '@/src/data/zip_to_city.json';
 
 const toSlug = (value: string) =>
   value
@@ -35,10 +36,25 @@ const DirectorySearch: React.FC = () => {
   const handleSearch = () => {
     setError('');
     const rawLocation = location.trim();
+    const zipMatch = /^\\d{5}$/.test(rawLocation) ? rawLocation : '';
 
     let resolvedStateSlug = stateSlug;
     let city = rawLocation;
 
+    if (zipMatch) {
+      const zipEntry = (zipToCity as Record<string, { city: string; state: string }>)[zipMatch];
+      if (!zipEntry) {
+        setError('We could not find that ZIP code yet. Try a nearby city or select a state.');
+        return;
+      }
+      const zipState = findStateByInput(zipEntry.state);
+      if (!zipState) {
+        setError('We could not match that ZIP code to a state. Try a city instead.');
+        return;
+      }
+      resolvedStateSlug = zipState.slug;
+      city = zipEntry.city;
+    }
     if (!resolvedStateSlug && rawLocation.includes(',')) {
       const [cityPart, statePart] = rawLocation.split(',').map((part) => part.trim());
       const stateMatch = findStateByInput(statePart);
@@ -68,7 +84,8 @@ const DirectorySearch: React.FC = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold text-white mb-4">Search Senior Living by City or State</h1>
           <p className="text-lg text-white/90 mb-8">
-            Choose a state or type a city (e.g., �Muncie, IN�) to see every licensed facility.
+            Choose a state or type a city or ZIP code (e.g., “Muncie, IN” or “47302”) to see every
+            licensed facility.
           </p>
           <div className="bg-white rounded-lg shadow-lg p-4">
             <div className="flex flex-col md:flex-row gap-4">
@@ -88,11 +105,13 @@ const DirectorySearch: React.FC = () => {
                 </select>
               </div>
               <div className="flex-1 relative">
-                <label className="block text-sm font-medium text-slate-700 mb-2">City (optional)</label>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  City or ZIP (optional)
+                </label>
                 <MapPin className="absolute left-3 top-11 transform text-slate-400" size={20} />
                 <input
                   type="text"
-                  placeholder="Muncie, IN"
+                  placeholder="Muncie, IN or 47302"
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
                   className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
@@ -132,3 +151,4 @@ const DirectorySearch: React.FC = () => {
 };
 
 export default DirectorySearch;
+
