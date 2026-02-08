@@ -573,8 +573,7 @@ const OperatorDashboard: React.FC = () => {
               {/* Placeholder for settings */}
             </div>
           )}
-        </main>
-      </div>
+      </main>
     </div>
   );
 };
