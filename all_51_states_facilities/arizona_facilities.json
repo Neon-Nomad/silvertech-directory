@@ -1,0 +1,5252 @@
+{
+  "state": "Arizona",
+  "state_code": "AZ",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 140,
+    "total_nursing_homes": 140,
+    "total_assisted_living": 0,
+    "total_certified_beds": 16023,
+    "counties_served": 12,
+    "average_beds_per_facility": 114.5
+  },
+  "quality_distribution": {
+    "five_star": 43,
+    "four_star": 24,
+    "three_star": 31,
+    "two_star": 32,
+    "one_star": 9
+  },
+  "counties": {
+    "Maricopa": {
+      "facility_count": 77,
+      "total_beds": 9139
+    },
+    "Pima": {
+      "facility_count": 24,
+      "total_beds": 3042
+    },
+    "Cochise": {
+      "facility_count": 4,
+      "total_beds": 372
+    },
+    "Coconino": {
+      "facility_count": 4,
+      "total_beds": 303
+    },
+    "Yavapai": {
+      "facility_count": 7,
+      "total_beds": 556
+    },
+    "Yuma": {
+      "facility_count": 6,
+      "total_beds": 632
+    },
+    "Mohave": {
+      "facility_count": 6,
+      "total_beds": 608
+    },
+    "Pinal": {
+      "facility_count": 3,
+      "total_beds": 424
+    },
+    "Gila": {
+      "facility_count": 4,
+      "total_beds": 472
+    },
+    "Navajo": {
+      "facility_count": 3,
+      "total_beds": 289
+    },
+    "Graham": {
+      "facility_count": 1,
+      "total_beds": 106
+    },
+    "Apache": {
+      "facility_count": 1,
+      "total_beds": 80
+    }
+  },
+  "facilities": [
+    {
+      "name": "THE TERRACES OF PHOENIX",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7550 NORTH 16TH STREET",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85020"
+      },
+      "contact": {
+        "phone": "6029444455",
+        "phone_formatted": "6029444455"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5465,
+        "longitude": -112.05
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 64,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HUMANGOOD ARIZONA INC",
+        "chain_name": "HUMANGOOD"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SANTA ROSA CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1650 NORTH SANTA ROSA AVENUE",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85712"
+      },
+      "contact": {
+        "phone": "5207951610",
+        "phone_formatted": "5207951610"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2426,
+        "longitude": -110.89
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 144,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SRCV-ROSA LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DESERT TERRACE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2509 NORTH 24TH STREET",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85008"
+      },
+      "contact": {
+        "phone": "6022731347",
+        "phone_formatted": "6022731347"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4753,
+        "longitude": -112.03
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 108,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "24TH STREET HEALTHCARE ASSOCIATES LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HANDMAKER HOME FOR THE AGING",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2221 NORTH ROSEMONT BOULEVARD",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85712"
+      },
+      "contact": {
+        "phone": "5208812323",
+        "phone_formatted": "5208812323"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2481,
+        "longitude": -110.88
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 94,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HANDMAKER JEWISH SERVICES FOR THE AGING",
+        "chain_name": "POLLAK HOLDINGS"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF SCOTTSDALE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3293 NORTH DRINKWATER BOULEVARD",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "zip": "85251"
+      },
+      "contact": {
+        "phone": "4809477443",
+        "phone_formatted": "4809477443"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4856,
+        "longitude": -111.92
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 56,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF SCOTTSDALE LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DESERT HAVEN CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2645 EAST THOMAS ROAD",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85016"
+      },
+      "contact": {
+        "phone": "6022436121",
+        "phone_formatted": "6022436121"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4804,
+        "longitude": -112.02
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 115,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SRCV HAVEN, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FOOTHILLS REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2250 NORTH CRAYCROFT ROAD",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85712"
+      },
+      "contact": {
+        "phone": "5207338700",
+        "phone_formatted": "5207338700"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2488,
+        "longitude": -110.88
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 149,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FOOTHILLS REHABILITATION CENTER LLC",
+        "chain_name": "ATIED ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PUEBLO SPRINGS REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5545 EAST LEE STREET",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85712"
+      },
+      "contact": {
+        "phone": "5202962306",
+        "phone_formatted": "5202962306"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2416,
+        "longitude": -110.87
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 129,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WILLOW CANYON HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CASAS ADOBES POST ACUTE REHAB CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1919 WEST MEDICAL STREET",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85704"
+      },
+      "contact": {
+        "phone": "5202978311",
+        "phone_formatted": "5202978311"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.3221,
+        "longitude": -111.0
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 230,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SENTINEL PEAK HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MISSION PALMS POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6461 EAST BAYWOOD AVENUE",
+        "city": "MESA",
+        "state": "AZ",
+        "zip": "85206"
+      },
+      "contact": {
+        "phone": "4808325160",
+        "phone_formatted": "4808325160"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4103,
+        "longitude": -111.69
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 160,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROYAL VIEW HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PHOENIX MOUNTAIN POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "13232 NORTH TATUM BLVD",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85032"
+      },
+      "contact": {
+        "phone": "6029965200",
+        "phone_formatted": "6029965200"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6071,
+        "longitude": -111.98
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 130,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LOOKOUT MOUNTAIN HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN HEALTH GREEN VALLEY, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "150 NORTH LA CANADA DRIVE",
+        "city": "GREEN VALLEY",
+        "state": "AZ",
+        "zip": "85614"
+      },
+      "contact": {
+        "phone": "5206250178",
+        "phone_formatted": "5206250178"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 31.8727,
+        "longitude": -111.0
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 111,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN HEALTH GREEN VALLEY LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FRIENDSHIP VILLAGE OF TEMPE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2525 EAST SOUTHERN AVENUE",
+        "city": "TEMPE",
+        "state": "AZ",
+        "zip": "85282"
+      },
+      "contact": {
+        "phone": "4808313184",
+        "phone_formatted": "4808313184"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.393,
+        "longitude": -111.88
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 128,
+        "provider_type": "Medicare",
+        "legal_business_name": "TEMPE LIFE CARE VILLAGE INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "OSBORN HEALTH AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3333 NORTH CIVIC CENTER PLAZA",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "zip": "85251"
+      },
+      "contact": {
+        "phone": "4809941333",
+        "phone_formatted": "4809941333"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4861,
+        "longitude": -111.92
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 130,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RENEWCARE OF SCOTTSDALE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HERITAGE COURT POST ACUTE OF SCOTTSDALE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3339 NORTH DRINKWATER BOULEVARD",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "zip": "85251"
+      },
+      "contact": {
+        "phone": "4809495400",
+        "phone_formatted": "4809495400"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4868,
+        "longitude": -111.92
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 108,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ECHO CANYON HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PLAZA HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1475 NORTH GRANITE REEF ROAD",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "zip": "85257"
+      },
+      "contact": {
+        "phone": "4809901904",
+        "phone_formatted": "4809901904"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4642,
+        "longitude": -111.9
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 179,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PLAZA HC HOLDING COMPANY, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF SAGUARO VALLEY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6651 EAST CARONDELET DRIVE",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85710"
+      },
+      "contact": {
+        "phone": "5207318500",
+        "phone_formatted": "5207318500"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2256,
+        "longitude": -110.85
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF SAGUARO VALLEY LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF SIERRA VISTA, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "660 SOUTH CORONADO DRIVE",
+        "city": "SIERRA VISTA",
+        "state": "AZ",
+        "zip": "85635"
+      },
+      "contact": {
+        "phone": "5204594900",
+        "phone_formatted": "5204594900"
+      },
+      "location": {
+        "county": "Cochise",
+        "latitude": 31.5477,
+        "longitude": -110.28
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF SIERRA VISTA LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NORTH MOUNTAIN MEDICAL AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "9155 NORTH THIRD STREET",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85020"
+      },
+      "contact": {
+        "phone": "6029441666",
+        "phone_formatted": "6029441666"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5694,
+        "longitude": -112.07
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 155,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RADIANT HILLS HEALTH ASSOCIATES LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CAMELBACK POST ACUTE CARE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4635 NORTH 14TH STREET",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85014"
+      },
+      "contact": {
+        "phone": "6022649039",
+        "phone_formatted": "6022649039"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5047,
+        "longitude": -112.05
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 107,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HIGHLAND HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF FLAGSTAFF",
+      "type": "Nursing Home",
+      "address": {
+        "street": "800 WEST UNIVERSITY AVENUE",
+        "city": "FLAGSTAFF",
+        "state": "AZ",
+        "zip": "86001"
+      },
+      "contact": {
+        "phone": "9287796931",
+        "phone_formatted": "9287796931"
+      },
+      "location": {
+        "county": "Coconino",
+        "latitude": 35.1842,
+        "longitude": -111.66
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 83,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF FLAGSTAFF LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BELLA VITA HEALTH AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5125 NORTH 58TH AVENUE",
+        "city": "GLENDALE",
+        "state": "AZ",
+        "zip": "85301"
+      },
+      "contact": {
+        "phone": "6239315800",
+        "phone_formatted": "6239315800"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5118,
+        "longitude": -112.18
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 176,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GLENDALE HEALTHCARE ASSOCIATES LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF COTTONWOOD",
+      "type": "Nursing Home",
+      "address": {
+        "street": "197 SOUTH WILLARD STREET",
+        "city": "COTTONWOOD",
+        "state": "AZ",
+        "zip": "86326"
+      },
+      "contact": {
+        "phone": "9286345548",
+        "phone_formatted": "9286345548"
+      },
+      "location": {
+        "county": "Yavapai",
+        "latitude": 34.7371,
+        "longitude": -112.03
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF COTTONWOOD LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF SEDONA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "505 JACKS CANYON ROAD",
+        "city": "SEDONA",
+        "state": "AZ",
+        "zip": "86351"
+      },
+      "contact": {
+        "phone": "4809354300",
+        "phone_formatted": "4809354300"
+      },
+      "location": {
+        "county": "Coconino",
+        "latitude": 34.7793,
+        "longitude": -111.75
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF SEDONA LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Desert Cove Nursing Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1750 WEST FRYE ROAD",
+        "city": "CHANDLER",
+        "state": "AZ",
+        "zip": "85224"
+      },
+      "contact": {
+        "phone": "4808990641",
+        "phone_formatted": "4808990641"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.2987,
+        "longitude": -111.87
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CHANDLER UNITED MEDICAL INVESTORS LIMITED PARTNERSHIP",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF SANDPOINTE, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2222 SOUTH AVENUE A",
+        "city": "YUMA",
+        "state": "AZ",
+        "zip": "85364"
+      },
+      "contact": {
+        "phone": "9287838831",
+        "phone_formatted": "9287838831"
+      },
+      "location": {
+        "county": "Yuma",
+        "latitude": 32.6873,
+        "longitude": -114.63
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 143,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF SANDPOINTE LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE LEGACY REHAB & CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2812 SILVER CREEK ROAD",
+        "city": "BULLHEAD CITY",
+        "state": "AZ",
+        "zip": "86442"
+      },
+      "contact": {
+        "phone": "9287631404",
+        "phone_formatted": "9287631404"
+      },
+      "location": {
+        "county": "Mohave",
+        "latitude": 35.1098,
+        "longitude": -114.55
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SILVER RIDGE MANAGEMENT INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SANDSTONE OF TUCSON REHAB CENTRE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2900 EAST MILBER STREET",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85714"
+      },
+      "contact": {
+        "phone": "5202940005",
+        "phone_formatted": "5202940005"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.1727,
+        "longitude": -110.93
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 240,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SANDSTONE OF TUCSON REHAB CENTRE LLC",
+        "chain_name": "SANDSTONE HEALTHCARE GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVASU NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3576 KEARSAGE DRIVE",
+        "city": "LAKE HAVASU CITY",
+        "state": "AZ",
+        "zip": "86406"
+      },
+      "contact": {
+        "phone": "9284531500",
+        "phone_formatted": "9284531500"
+      },
+      "location": {
+        "county": "Mohave",
+        "latitude": 34.4544,
+        "longitude": -114.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 118,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVASU NURSING CENTER #2 INC",
+        "chain_name": "CIRCLE B ENTERPRISES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CHANDLER POST ACUTE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2121 WEST ELGIN STREET",
+        "city": "CHANDLER",
+        "state": "AZ",
+        "zip": "85224"
+      },
+      "contact": {
+        "phone": "4808996717",
+        "phone_formatted": "4808996717"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.2972,
+        "longitude": -111.88
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "OCOTILLO HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CITADEL POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5121 EAST BROADWAY ROAD",
+        "city": "MESA",
+        "state": "AZ",
+        "zip": "85206"
+      },
+      "contact": {
+        "phone": "4808325555",
+        "phone_formatted": "4808325555"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4084,
+        "longitude": -111.72
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 128,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HIGLEY HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SHEA POST ACUTE REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "11150 NORTH 92ND STREET",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "zip": "85260"
+      },
+      "contact": {
+        "phone": "4808601766",
+        "phone_formatted": "4808601766"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5868,
+        "longitude": -111.88
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DESERT COVE HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TEMPE POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6100 SOUTH RURAL ROAD",
+        "city": "TEMPE",
+        "state": "AZ",
+        "zip": "85283"
+      },
+      "contact": {
+        "phone": "4808318660",
+        "phone_formatted": "4808318660"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.3674,
+        "longitude": -111.93
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WESTERN CANAL HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF PHOENIX",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4202 NORTH 20TH AVENUE",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85015"
+      },
+      "contact": {
+        "phone": "6022643824",
+        "phone_formatted": "6022643824"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4966,
+        "longitude": -112.1
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 114,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF PHOENIX LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SUN WEST CHOICE HEALTHCARE & REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "14002 WEST MEEKER BLVD",
+        "city": "SUN CITY WEST",
+        "state": "AZ",
+        "zip": "85375"
+      },
+      "contact": {
+        "phone": "6235846161",
+        "phone_formatted": "6235846161"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6589,
+        "longitude": -112.36
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 140,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "APACHE TRAIL HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LAKE PLEASANT POST ACUTE REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "20625 NORTH LAKE PLEASANT ROAD",
+        "city": "PEORIA",
+        "state": "AZ",
+        "zip": "85382"
+      },
+      "contact": {
+        "phone": "6235660642",
+        "phone_formatted": "6235660642"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.671,
+        "longitude": -112.28
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 128,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAKE PLEASANT HEALTHCARE INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "APACHE JUNCTION HEALTH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2012 WEST SOUTHERN AVE",
+        "city": "APACHE JUNCTION",
+        "state": "AZ",
+        "zip": "85120"
+      },
+      "contact": {
+        "phone": "4809830700",
+        "phone_formatted": "4809830700"
+      },
+      "location": {
+        "county": "Pinal",
+        "latitude": 33.3933,
+        "longitude": -111.57
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 190,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "APACHE JUNCTION COMMUNITY HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MOUNTAIN VIEW MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1045 SANDRETTO DRIVE",
+        "city": "PRESCOTT",
+        "state": "AZ",
+        "zip": "86305"
+      },
+      "contact": {
+        "phone": "9287784837",
+        "phone_formatted": "9287784837"
+      },
+      "location": {
+        "county": "Yavapai",
+        "latitude": 34.6028,
+        "longitude": -112.46
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 116,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SANDRETTO HILLS NURSING CENTER 2",
+        "chain_name": "CIRCLE B ENTERPRISES"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE REHABILITATION CENTER AT THE PALAZZO",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6250 NORTH 19TH AVENUE",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85015"
+      },
+      "contact": {
+        "phone": "6024336300",
+        "phone_formatted": "6024336300"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5285,
+        "longitude": -112.1
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "APHZ LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PAYSON CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "107 EAST LONE PINE DRIVE",
+        "city": "PAYSON",
+        "state": "AZ",
+        "zip": "85541"
+      },
+      "contact": {
+        "phone": "9284746896",
+        "phone_formatted": "9284746896"
+      },
+      "location": {
+        "county": "Gila",
+        "latitude": 34.2312,
+        "longitude": -111.32
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 163,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PAYSON UNITED MEDICAL INVESTORS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF CAMP VERDE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "86 WEST SALT MINE ROAD",
+        "city": "CAMP VERDE",
+        "state": "AZ",
+        "zip": "86322"
+      },
+      "contact": {
+        "phone": "9285675253",
+        "phone_formatted": "9285675253"
+      },
+      "location": {
+        "county": "Yavapai",
+        "latitude": 34.5549,
+        "longitude": -111.86
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF CAMP VERDE LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MI CASA NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "330 SOUTH PINNULE CIRCLE",
+        "city": "MESA",
+        "state": "AZ",
+        "zip": "85206"
+      },
+      "contact": {
+        "phone": "4809810687",
+        "phone_formatted": "4809810687"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4108,
+        "longitude": -111.7
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 180,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MESA UNITED MEDICAL INVESTORS LIMITED PARTNERSHIP",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BOSWELL TRANSITIONAL CARE OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10601 WEST SANTA FE DRIVE",
+        "city": "SUN CITY",
+        "state": "AZ",
+        "zip": "85351"
+      },
+      "contact": {
+        "phone": "6238327000",
+        "phone_formatted": "6238327000"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6039,
+        "longitude": -112.29
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 115,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUN CITY OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RIDGECREST POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "16640 NORTH 38TH STREET",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85032"
+      },
+      "contact": {
+        "phone": "6024826671",
+        "phone_formatted": "6024826671"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.638,
+        "longitude": -112.0
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 200,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RIDGECREST COMMUNITY HEALTHCARE, LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF NORTH GLENDALE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "13620 NORTH 55TH AVENUE",
+        "city": "GLENDALE",
+        "state": "AZ",
+        "zip": "85304"
+      },
+      "contact": {
+        "phone": "6028438433",
+        "phone_formatted": "6028438433"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6076,
+        "longitude": -112.18
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 223,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GLENDALE MEDICAL INVESTORS LIMITED PARTNERSHIP",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN HEALTH PRESCOTT, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "864 DOUGHERTY STREET",
+        "city": "PRESCOTT",
+        "state": "AZ",
+        "zip": "86305"
+      },
+      "contact": {
+        "phone": "9287789667",
+        "phone_formatted": "9287789667"
+      },
+      "location": {
+        "county": "Yavapai",
+        "latitude": 34.5548,
+        "longitude": -112.49
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN HEALTH PRESCOTT LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ARCHSTONE CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1980 WEST PECOS ROAD",
+        "city": "CHANDLER",
+        "state": "AZ",
+        "zip": "85224"
+      },
+      "contact": {
+        "phone": "4808211268",
+        "phone_formatted": "4808211268"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.2914,
+        "longitude": -111.88
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PECOS HEALTHCARE LIMITED PTRSHP",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GRANITE CREEK HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1045 SCOTT DRIVE",
+        "city": "PRESCOTT",
+        "state": "AZ",
+        "zip": "86301"
+      },
+      "contact": {
+        "phone": "9287789603",
+        "phone_formatted": "9287789603"
+      },
+      "location": {
+        "county": "Yavapai",
+        "latitude": 34.5609,
+        "longitude": -112.47
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 128,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WATSON WOODS HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CORONADO HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "11411 NORTH 19TH AVE",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85029"
+      },
+      "contact": {
+        "phone": "6022567500",
+        "phone_formatted": "6022567500"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5894,
+        "longitude": -112.1
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 191,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH MOUNTAIN HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF YUMA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2450 SOUTH 19TH AVENUE",
+        "city": "YUMA",
+        "state": "AZ",
+        "zip": "85364"
+      },
+      "contact": {
+        "phone": "9283440425",
+        "phone_formatted": "9283440425"
+      },
+      "location": {
+        "county": "Yuma",
+        "latitude": 32.6828,
+        "longitude": -114.64
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 128,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LIFE CARE CENTERS OF AMERICA, INC.",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RIM COUNTRY HEALTH & RETIREMENT COMMUNITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "807 WEST LONGHORN ROAD",
+        "city": "PAYSON",
+        "state": "AZ",
+        "zip": "85541"
+      },
+      "contact": {
+        "phone": "9284741120",
+        "phone_formatted": "9284741120"
+      },
+      "location": {
+        "county": "Gila",
+        "latitude": 34.2393,
+        "longitude": -111.33
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 109,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RIM COUNTRY REHAB, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MONTECITO POST ACUTE CARE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "51 SOUTH 48TH STREET",
+        "city": "MESA",
+        "state": "AZ",
+        "zip": "85206"
+      },
+      "contact": {
+        "phone": "9494879500",
+        "phone_formatted": "9494879500"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4144,
+        "longitude": -111.73
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 222,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUNLAND HEALTH ASSOCIATES, LLC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF SIERRA VISTA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2305 EAST WILCOX DRIVE",
+        "city": "SIERRA VISTA",
+        "state": "AZ",
+        "zip": "85635"
+      },
+      "contact": {
+        "phone": "5204581050",
+        "phone_formatted": "5204581050"
+      },
+      "location": {
+        "county": "Cochise",
+        "latitude": 31.5521,
+        "longitude": -110.27
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 152,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SIERRA VISTA MEDICAL INVESTORS, LP",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF SHOW LOW",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2401 EAST HUNT STREET",
+        "city": "SHOW LOW",
+        "state": "AZ",
+        "zip": "85901"
+      },
+      "contact": {
+        "phone": "9285375333",
+        "phone_formatted": "9285375333"
+      },
+      "location": {
+        "county": "Navajo",
+        "latitude": 34.2037,
+        "longitude": -110.02
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF SHOW LOW LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF TUCSON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6211 NORTH LA CHOLLA BOULEVARD",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85741"
+      },
+      "contact": {
+        "phone": "5205750900",
+        "phone_formatted": "5205750900"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.3195,
+        "longitude": -111.01
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 162,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TUCSON MEDICAL INVESTORS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HERITAGE HEALTH CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1300  SOUTH STREET",
+        "city": "GLOBE",
+        "state": "AZ",
+        "zip": "85501"
+      },
+      "contact": {
+        "phone": "9284253118",
+        "phone_formatted": "9284253118"
+      },
+      "location": {
+        "county": "Gila",
+        "latitude": 33.3939,
+        "longitude": -110.77
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 96,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GLOBE MEDICAL INVESTORS, LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF SCOTTSDALE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "9494 EAST BECKER LANE",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "zip": "85260"
+      },
+      "contact": {
+        "phone": "4808606396",
+        "phone_formatted": "4808606396"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5841,
+        "longitude": -111.88
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 132,
+        "provider_type": "Medicare",
+        "legal_business_name": "COVE ASSOCIATES LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PEORIA POST ACUTE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "13215 NORTH 94TH DRIVE",
+        "city": "PEORIA",
+        "state": "AZ",
+        "zip": "85381"
+      },
+      "contact": {
+        "phone": "6239337722",
+        "phone_formatted": "6239337722"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6044,
+        "longitude": -112.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 179,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEORIA HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DEVON GABLES REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6150 EAST GRANT ROAD",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85712"
+      },
+      "contact": {
+        "phone": "5202966181",
+        "phone_formatted": "5202966181"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2506,
+        "longitude": -110.86
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 312,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DEVON GABLES REHABILITATION CENTER LLC",
+        "chain_name": "ATIED ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF PARADISE VALLEY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4065 EAST BELL ROAD",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85032"
+      },
+      "contact": {
+        "phone": "6028670212",
+        "phone_formatted": "6028670212"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6407,
+        "longitude": -112.0
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 210,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LIFE CARE CENTERS OF AMERICA, INC.",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "VILLA MARIA POST ACUTE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4310 EAST GRANT ROAD",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85712"
+      },
+      "contact": {
+        "phone": "5203239351",
+        "phone_formatted": "5203239351"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2506,
+        "longitude": -110.9
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 83,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MOUNT LEMMON HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SABINO CANYON REHABILITATION & CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5830 EAST PIMA STREET",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85712"
+      },
+      "contact": {
+        "phone": "5207225515",
+        "phone_formatted": "5207225515"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2434,
+        "longitude": -110.87
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ENSIGN SABINO LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "YUMA NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1850 WEST 25TH STREET",
+        "city": "YUMA",
+        "state": "AZ",
+        "zip": "85364"
+      },
+      "contact": {
+        "phone": "9287266700",
+        "phone_formatted": "9287266700"
+      },
+      "location": {
+        "county": "Yuma",
+        "latitude": 32.682,
+        "longitude": -114.64
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "YUMA NURSING CENTER 2 INC",
+        "chain_name": "CIRCLE B ENTERPRISES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PROVIDENCE PLACE AT GLENCROFT",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8641 NORTH 67TH AVE",
+        "city": "GLENDALE",
+        "state": "AZ",
+        "zip": "85302"
+      },
+      "contact": {
+        "phone": "6239399475",
+        "phone_formatted": "6239399475"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5612,
+        "longitude": -112.2
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 225,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FRIENDSHIP RETIREMENT CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Prescott Village Nursing & Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1030 SCOTT DRIVE",
+        "city": "PRESCOTT",
+        "state": "AZ",
+        "zip": "86301"
+      },
+      "contact": {
+        "phone": "9287782450",
+        "phone_formatted": "9287782450"
+      },
+      "location": {
+        "county": "Yavapai",
+        "latitude": 34.5608,
+        "longitude": -112.47
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HORIZON POST ACUTE AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4704 WEST DIANA AVENUE",
+        "city": "GLENDALE",
+        "state": "AZ",
+        "zip": "85302"
+      },
+      "contact": {
+        "phone": "6232473949",
+        "phone_formatted": "6232473949"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5631,
+        "longitude": -112.16
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 196,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VIEWPOINT HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DESERT BLOSSOM HEALTH & REHAB CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "60 SOUTH 58TH STREET",
+        "city": "MESA",
+        "state": "AZ",
+        "zip": "85206"
+      },
+      "contact": {
+        "phone": "4808323903",
+        "phone_formatted": "4808323903"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.414,
+        "longitude": -111.71
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 106,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RED MOUNTAIN HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF TUCSON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3705 NORTH SWAN ROAD",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85718"
+      },
+      "contact": {
+        "phone": "5202997088",
+        "phone_formatted": "5202997088"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2733,
+        "longitude": -110.89
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 118,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF TUCSON LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ESTRELLA HEALTH AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "350 EAST LA CANADA",
+        "city": "AVONDALE",
+        "state": "AZ",
+        "zip": "85323"
+      },
+      "contact": {
+        "phone": "6239322282",
+        "phone_formatted": "6239322282"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4462,
+        "longitude": -112.35
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 161,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COLDWATER SPRINGS HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DESERT HIGHLANDS CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1081 KATHLEEN AVE",
+        "city": "KINGMAN",
+        "state": "AZ",
+        "zip": "86401"
+      },
+      "contact": {
+        "phone": "9287535580",
+        "phone_formatted": "9287535580"
+      },
+      "location": {
+        "county": "Mohave",
+        "latitude": 35.2128,
+        "longitude": -114.04
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KINGMAN NO 1 LLC",
+        "chain_name": "CIRCLE B ENTERPRISES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ALTA MESA HEALTH AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5848 EAST UNIVERSITY DRIVE",
+        "city": "MESA",
+        "state": "AZ",
+        "zip": "85205"
+      },
+      "contact": {
+        "phone": "4809810098",
+        "phone_formatted": "4809810098"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4228,
+        "longitude": -111.71
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 70,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GOLDFIELD MOUNTAIN HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF SAFFORD",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1933 PEPPERTREE DRIVE",
+        "city": "SAFFORD",
+        "state": "AZ",
+        "zip": "85546"
+      },
+      "contact": {
+        "phone": "9284284910",
+        "phone_formatted": "9284284910"
+      },
+      "location": {
+        "county": "Graham",
+        "latitude": 32.8145,
+        "longitude": -109.73
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 106,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF SAFFORD LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CHRISTIAN CARE NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "11812 NORTH 19TH AVE",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85029"
+      },
+      "contact": {
+        "phone": "6024435405",
+        "phone_formatted": "6024435405"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5939,
+        "longitude": -112.1
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CHRISTIAN CARE NURSING CENTER INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PARK AVENUE HEALTH AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2001 NORTH PARK AVENUE",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85719"
+      },
+      "contact": {
+        "phone": "5208826151",
+        "phone_formatted": "5208826151"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2457,
+        "longitude": -110.96
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 200,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PARK WAVERLY HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DESERT PEAK CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8825 SOUTH 7TH STREET",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85042"
+      },
+      "contact": {
+        "phone": "6022436121",
+        "phone_formatted": "6022436121"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.3658,
+        "longitude": -112.07
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 194,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PHOENIX AZ OPCO LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BEATITUDES CAMPUS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1712 WEST GLENDALE AVENUE",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85021"
+      },
+      "contact": {
+        "phone": "6023358466",
+        "phone_formatted": "6023358466"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5386,
+        "longitude": -112.1
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE BEATITUDES CAMPUS",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF DOUGLAS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1400 NORTH SAN ANTONIO AVENUE",
+        "city": "DOUGLAS",
+        "state": "AZ",
+        "zip": "85607"
+      },
+      "contact": {
+        "phone": "4809354300",
+        "phone_formatted": "4809354300"
+      },
+      "location": {
+        "county": "Cochise",
+        "latitude": 31.3486,
+        "longitude": -109.53
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF DOUGLAS LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AZ - RIO VISTA POST ACUTE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10323 WEST OLIVE AVENUE",
+        "city": "PEORIA",
+        "state": "AZ",
+        "zip": "85345"
+      },
+      "contact": {
+        "phone": "6238750100",
+        "phone_formatted": "6238750100"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5657,
+        "longitude": -112.28
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 150,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUNRISE MOUNTAIN HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LA CANADA CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7970 NORTH LA CANADA DRIVE",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85704"
+      },
+      "contact": {
+        "phone": "5207971191",
+        "phone_formatted": "5207971191"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.3505,
+        "longitude": -111.0
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 128,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TORTOLITA HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CATALINA POST ACUTE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2611 NORTH WARREN AVENUE",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85719"
+      },
+      "contact": {
+        "phone": "5207959574",
+        "phone_formatted": "5207959574"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2543,
+        "longitude": -110.95
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PRESIDIO HEALTH ASSOCIATES LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Citrus Heights Respiratory and Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3130 EAST BROADWAY ROAD",
+        "city": "MESA",
+        "state": "AZ",
+        "zip": "85204"
+      },
+      "contact": {
+        "phone": "4809247777",
+        "phone_formatted": "4809247777"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4082,
+        "longitude": -111.76
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 204,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ALLEGIANT HEALTHCARE WEST LLC",
+        "chain_name": "ALLEGIANT HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SANDRIDGE POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "255 WEST BROWN ROAD",
+        "city": "MESA",
+        "state": "AZ",
+        "zip": "85201"
+      },
+      "contact": {
+        "phone": "4808333988",
+        "phone_formatted": "4808333988"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4352,
+        "longitude": -111.84
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 191,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MESA ARIZONA SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF YUMA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2470 SOUTH ARIZONA AVENUE",
+        "city": "YUMA",
+        "state": "AZ",
+        "zip": "85364"
+      },
+      "contact": {
+        "phone": "9283448541",
+        "phone_formatted": "9283448541"
+      },
+      "location": {
+        "county": "Yuma",
+        "latitude": 32.6826,
+        "longitude": -114.62
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF YUMA LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SUNCREST HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2211 EAST SOUTHERN AVENUE",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85040"
+      },
+      "contact": {
+        "phone": "6023057134",
+        "phone_formatted": "6023057134"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.3931,
+        "longitude": -112.03
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 115,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUNCREST HEALTH CARE INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Springdale Village Post Acute",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7255 EAST BROADWAY ROAD",
+        "city": "MESA",
+        "state": "AZ",
+        "zip": "85208"
+      },
+      "contact": {
+        "phone": "4809818844",
+        "phone_formatted": "4809818844"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4079,
+        "longitude": -111.67
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 122,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ALLEGIANT HEALTHCARE EAST LLC",
+        "chain_name": "ALLEGIANT HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "QUIBURI MISSION NURSING & REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "850 SOUTH HIGHWAY 80",
+        "city": "BENSON",
+        "state": "AZ",
+        "zip": "85602"
+      },
+      "contact": {
+        "phone": "5205862372",
+        "phone_formatted": "5205862372"
+      },
+      "location": {
+        "county": "Cochise",
+        "latitude": 31.9427,
+        "longitude": -110.29
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CARING HOUSE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "510 SOUTH OCOTILLO ROAD",
+        "city": "SACATON",
+        "state": "AZ",
+        "zip": "85147"
+      },
+      "contact": {
+        "phone": "5205627400",
+        "phone_formatted": "5205627400"
+      },
+      "location": {
+        "county": "Pinal",
+        "latitude": 33.0741,
+        "longitude": -111.75
+      },
+      "facility_details": {
+        "ownership_type": "Government - Federal",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE CARING HOUSE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "REHAB AT SCOTTSDALE VILLAGE SQUARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2620 NORTH 68TH STREET",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "zip": "85257"
+      },
+      "contact": {
+        "phone": "4809466571",
+        "phone_formatted": "4809466571"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4773,
+        "longitude": -111.93
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 141,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SCOTTSDALE AZ OPCO LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SUN CITY POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "9940 WEST UNION HILLS DRIVE",
+        "city": "SUN CITY",
+        "state": "AZ",
+        "zip": "85373"
+      },
+      "contact": {
+        "phone": "6239330022",
+        "phone_formatted": "6239330022"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6526,
+        "longitude": -112.28
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 118,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUN CITY SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MOUNTAIN VIEW CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1313 WEST MAGEE ROAD",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85704"
+      },
+      "contact": {
+        "phone": "5207972600",
+        "phone_formatted": "5207972600"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.3518,
+        "longitude": -110.99
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DA VINCI HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF GLOBE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1100 MONROE STREET",
+        "city": "GLOBE",
+        "state": "AZ",
+        "zip": "85501"
+      },
+      "contact": {
+        "phone": "9284255721",
+        "phone_formatted": "9284255721"
+      },
+      "location": {
+        "county": "Gila",
+        "latitude": 33.3944,
+        "longitude": -110.78
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 104,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF GLOBE LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ARIZONA STATE VETERAN HOME-PHX",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4141 NORTH S HERRERA WAY",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85012"
+      },
+      "contact": {
+        "phone": "6022481550",
+        "phone_formatted": "6022481550"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5815,
+        "longitude": -111.99
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 200,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF ARIZONA/STATE DEPT OF FINANCE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF LAKE HAVASU",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2781 OSBORNE DRIVE",
+        "city": "LAKE HAVASU CITY",
+        "state": "AZ",
+        "zip": "86406"
+      },
+      "contact": {
+        "phone": "9285055552",
+        "phone_formatted": "9285055552"
+      },
+      "location": {
+        "county": "Mohave",
+        "latitude": 34.4741,
+        "longitude": -114.28
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 104,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF LAKE HAVASU LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "South Mountain Post Acute",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8008 S. JESSE OWENS PARKWAY",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85042"
+      },
+      "contact": {
+        "phone": "6022432780",
+        "phone_formatted": "6022432780"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.3748,
+        "longitude": -112.07
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 124,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AZTEC HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DR GUY GORMAN SR CARE HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "HIGHWAY 191 & HOSPITAL ROAD",
+        "city": "CHINLE",
+        "state": "AZ",
+        "zip": "86503"
+      },
+      "contact": {
+        "phone": "9286745216",
+        "phone_formatted": "9286745216"
+      },
+      "location": {
+        "county": "Apache",
+        "latitude": 36.1595,
+        "longitude": -109.58
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Prescott Valley Nursing & Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3380 NORTH WINDSONG DRIVE",
+        "city": "PRESCOTT VALLEY",
+        "state": "AZ",
+        "zip": "86314"
+      },
+      "contact": {
+        "phone": "9287750045",
+        "phone_formatted": "9287750045"
+      },
+      "location": {
+        "county": "Yavapai",
+        "latitude": 34.5922,
+        "longitude": -112.33
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PRESCOTT VALLEY NURSING & REHABILITATION LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SUNVIEW RESPIRATORY AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "12207 NORTH 113TH AVENUE",
+        "city": "YOUNGTOWN",
+        "state": "AZ",
+        "zip": "85363"
+      },
+      "contact": {
+        "phone": "6239776532",
+        "phone_formatted": "6239776532"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5951,
+        "longitude": -112.3
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 127,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "YOUNGTOWN HEALTH, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARYLAND GARDENS POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "31 WEST MARYLAND AVENUE",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85013"
+      },
+      "contact": {
+        "phone": "6022657484",
+        "phone_formatted": "6022657484"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.531,
+        "longitude": -112.07
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARYLAND GARDENS SNF LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE GARDENS REHAB & CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3131 WESTERN AVENUE",
+        "city": "KINGMAN",
+        "state": "AZ",
+        "zip": "86401"
+      },
+      "contact": {
+        "phone": "9287180718",
+        "phone_formatted": "9287180718"
+      },
+      "location": {
+        "county": "Mohave",
+        "latitude": 35.2143,
+        "longitude": -114.04
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HEALTHCARE MANAGEMENT PROFESSIONAL, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "IMMANUEL CAMPUS OF CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "11301 NORTH 99TH AVENUE",
+        "city": "PEORIA",
+        "state": "AZ",
+        "zip": "85345"
+      },
+      "contact": {
+        "phone": "6239778373",
+        "phone_formatted": "6239778373"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5727,
+        "longitude": -112.27
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 228,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "IMMANUEL CARING MINISTRIES, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RIVER PARK POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2555 NORTH PRICE ROAD",
+        "city": "CHANDLER",
+        "state": "AZ",
+        "zip": "85224"
+      },
+      "contact": {
+        "phone": "4803458500",
+        "phone_formatted": "4803458500"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.344,
+        "longitude": -111.89
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MURIEL HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BROOKDALE SANTA CATALINA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7500 NORTH CALLE SIN ENVIDIA",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85718"
+      },
+      "contact": {
+        "phone": "5207426242",
+        "phone_formatted": "5207426242"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.3462,
+        "longitude": -110.93
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 42,
+        "provider_type": "Medicare",
+        "legal_business_name": "ARC SANTA CATALINA INC",
+        "chain_name": "BROOKDALE SENIOR LIVING"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WINSLOW CAMPUS OF CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "826 WEST DESMOND STREET",
+        "city": "WINSLOW",
+        "state": "AZ",
+        "zip": "86047"
+      },
+      "contact": {
+        "phone": "9282894678",
+        "phone_formatted": "9282894678"
+      },
+      "location": {
+        "county": "Navajo",
+        "latitude": 35.0374,
+        "longitude": -110.7
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 119,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WINSLOW CONVALESCENT CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Palm Valley Post Acute",
+      "type": "Nursing Home",
+      "address": {
+        "street": "13575 WEST MCDOWELL ROAD",
+        "city": "GOODYEAR",
+        "state": "AZ",
+        "zip": "85395"
+      },
+      "contact": {
+        "phone": "6235369911",
+        "phone_formatted": "6235369911"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4644,
+        "longitude": -112.35
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 180,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PALM VALLEY HEALTHCARE, LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FREEDOM PLAZA CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "13714 NORTH PLAZA DEL RIO BLVD",
+        "city": "PEORIA",
+        "state": "AZ",
+        "zip": "85381"
+      },
+      "contact": {
+        "phone": "6238156100",
+        "phone_formatted": "6238156100"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6081,
+        "longitude": -112.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 111,
+        "provider_type": "Medicare",
+        "legal_business_name": "FREEDOM PLAZA OPERATING COMPANY LLC",
+        "chain_name": "FREEDOM MANAGEMENT COMPANY"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE PEAKS HEALTH & REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3150 NORTH WINDING BROOK ROAD",
+        "city": "FLAGSTAFF",
+        "state": "AZ",
+        "zip": "86001"
+      },
+      "contact": {
+        "phone": "9287747106",
+        "phone_formatted": "9287747106"
+      },
+      "location": {
+        "county": "Coconino",
+        "latitude": 35.2342,
+        "longitude": -111.66
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTHERN ARIZONA SENIOR LIVING COMMUNITY, LLC",
+        "chain_name": "THE GOODMAN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Fountain Hills Post Acute",
+      "type": "Nursing Home",
+      "address": {
+        "street": "16300 EAST KEITH MCMAHAN DRIVE",
+        "city": "FOUNTAIN HILLS",
+        "state": "AZ",
+        "zip": "85268"
+      },
+      "contact": {
+        "phone": "4808364800",
+        "phone_formatted": "4808364800"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.609,
+        "longitude": -111.73
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 64,
+        "provider_type": "Medicare",
+        "legal_business_name": "THOMPSON PEAK HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE LINGENFELTER CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1099 SUNRISE AVENUE",
+        "city": "KINGMAN",
+        "state": "AZ",
+        "zip": "86401"
+      },
+      "contact": {
+        "phone": "9287184852",
+        "phone_formatted": "9287184852"
+      },
+      "location": {
+        "county": "Mohave",
+        "latitude": 35.2149,
+        "longitude": -114.04
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 88,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE LINGENFELTER CENTER, LTD",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ARCHIE HENDRICKS SENIOR SKILLED NURSING FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "FEDERAL ROUTE 15 MILE POST 9",
+        "city": "SELLS",
+        "state": "AZ",
+        "zip": "85634"
+      },
+      "contact": {
+        "phone": "5205855500",
+        "phone_formatted": "5205855500"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 31.91,
+        "longitude": -111.88
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ARCHIE HENDRICKS SR SKILLED NURSING FACILITY",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Sun Health La Loma Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "14260 SOUTH DENNY BOULEVARD",
+        "city": "LITCHFIELD PARK",
+        "state": "AZ",
+        "zip": "85340"
+      },
+      "contact": {
+        "phone": "6235377400",
+        "phone_formatted": "6235377400"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5109,
+        "longitude": -112.36
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 43,
+        "provider_type": "Medicare",
+        "legal_business_name": "LA LOMA SENIOR LIVING SERVICES, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SUN HEALTH GRANDVIEW CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "14505 WEST GRANITE VALLEY DRIVE",
+        "city": "SUN CITY WEST",
+        "state": "AZ",
+        "zip": "85375"
+      },
+      "contact": {
+        "phone": "6239758100",
+        "phone_formatted": "6239758100"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6631,
+        "longitude": -112.38
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 72,
+        "provider_type": "Medicare",
+        "legal_business_name": "SUN HEALTH GRANDVIEW TERRACE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ADVANCED HEALTHCARE OF MESA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5755 EAST MAIN STREET",
+        "city": "MESA",
+        "state": "AZ",
+        "zip": "85205"
+      },
+      "contact": {
+        "phone": "4802142400",
+        "phone_formatted": "4802142400"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4156,
+        "longitude": -111.71
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 38,
+        "provider_type": "Medicare",
+        "legal_business_name": "AHC OF MESA LLC",
+        "chain_name": "ADVANCED HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ADVANCE HEALTH CARE OF SCOTTSDALE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "9846 NORTH 95TH STREET",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "zip": "85258"
+      },
+      "contact": {
+        "phone": "4802144200",
+        "phone_formatted": "4802144200"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.5759,
+        "longitude": -111.88
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 38,
+        "provider_type": "Medicare",
+        "legal_business_name": "AHC OF SCOTTSDALE, LLC",
+        "chain_name": "ADVANCED HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Ahwatukee Post Acute",
+      "type": "Nursing Home",
+      "address": {
+        "street": "15810 SOUTH 42ND STREET",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85048"
+      },
+      "contact": {
+        "phone": "4807590358",
+        "phone_formatted": "4807590358"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.3036,
+        "longitude": -111.99
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 192,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LA ESTANCIA SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "VI AT GRAYHAWK, A VI AND PLAZA COMPANIES COMMUNITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7501 EAST THOMPSON PEAK PARKWAY",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "zip": "85255"
+      },
+      "contact": {
+        "phone": "4803613200",
+        "phone_formatted": "4803613200"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6691,
+        "longitude": -111.92
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 36,
+        "provider_type": "Medicare",
+        "legal_business_name": "CC/PDR-SCOTTSDALE, L.L.C.",
+        "chain_name": "VI LIVING"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SPLENDIDO AT RANCHO VISTOSO",
+      "type": "Nursing Home",
+      "address": {
+        "street": "13500 NORTH RANCHO VISTOSO BLVD",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85755"
+      },
+      "contact": {
+        "phone": "5208782600",
+        "phone_formatted": "5208782600"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.4448,
+        "longitude": -110.97
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 42,
+        "provider_type": "Medicare",
+        "legal_business_name": "TUCSON MATHER PLAZA LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ADVANCED HEALTH CARE OF GLENDALE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "16825 NORTH 63RD AVENUE",
+        "city": "GLENDALE",
+        "state": "AZ",
+        "zip": "85306"
+      },
+      "contact": {
+        "phone": "6027323400",
+        "phone_formatted": "6027323400"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6377,
+        "longitude": -112.2
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 54,
+        "provider_type": "Medicare",
+        "legal_business_name": "AHC OF GLENDALE LLC",
+        "chain_name": "ADVANCED HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "OASIS PAVILION NURSING & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "161 WEST RODEO ROAD SUITE 1",
+        "city": "CASA GRANDE",
+        "state": "AZ",
+        "zip": "85122"
+      },
+      "contact": {
+        "phone": "5208361772",
+        "phone_formatted": "5208361772"
+      },
+      "location": {
+        "county": "Pinal",
+        "latitude": 32.8939,
+        "longitude": -111.75
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 134,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "OASIS PAVILION NURSING AND REHABILITATION CENTER, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN OF LAKESIDE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3401 NORTH LOCKWOOD DRIVE",
+        "city": "LAKESIDE",
+        "state": "AZ",
+        "zip": "85929"
+      },
+      "contact": {
+        "phone": "9283682060",
+        "phone_formatted": "9283682060"
+      },
+      "location": {
+        "county": "Navajo",
+        "latitude": 34.2019,
+        "longitude": -110.02
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN OF LAKESIDE LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ACACIA HEALTH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4555 EAST MAYO BLVD",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85050"
+      },
+      "contact": {
+        "phone": "4803845600",
+        "phone_formatted": "4803845600"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6836,
+        "longitude": -112.01
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 78,
+        "provider_type": "Medicare",
+        "legal_business_name": "LCS-WESTMINSTER PARTNERSHIP IV LLP",
+        "chain_name": "LIFE CARE SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SANTE OF MESA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5358 EAST BASELINE ROAD",
+        "city": "MESA",
+        "state": "AZ",
+        "zip": "85206"
+      },
+      "contact": {
+        "phone": "4806999624",
+        "phone_formatted": "4806999624"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.3793,
+        "longitude": -111.72
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 70,
+        "provider_type": "Medicare",
+        "legal_business_name": "ASANTE OF MESA LLC",
+        "chain_name": "SANTE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "VI AT SILVERSTONE, A VI AND PLAZA COMPANIES COMMUN",
+      "type": "Nursing Home",
+      "address": {
+        "street": "22605 NORTH 74TH STREET",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "zip": "85255"
+      },
+      "contact": {
+        "phone": "4804786200",
+        "phone_formatted": "4804786200"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.7023,
+        "longitude": -111.92
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 24,
+        "provider_type": "Medicare",
+        "legal_business_name": "CC PDR SILVERSTONE L L C",
+        "chain_name": "VI LIVING"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SANTE OF SURPRISE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "14775 WEST YORKSHIRE DRIVE",
+        "city": "SURPRISE",
+        "state": "AZ",
+        "zip": "85374"
+      },
+      "contact": {
+        "phone": "6235945050",
+        "phone_formatted": "6235945050"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6603,
+        "longitude": -112.38
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 70,
+        "provider_type": "Medicare",
+        "legal_business_name": "ASANTE TRC OF SURPRISE LLC",
+        "chain_name": "SANTE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SANTE OF CHANDLER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "825 SOUTH 94TH STREET",
+        "city": "CHANDLER",
+        "state": "AZ",
+        "zip": "85224"
+      },
+      "contact": {
+        "phone": "4803616636",
+        "phone_formatted": "4803616636"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.2919,
+        "longitude": -111.88
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 70,
+        "provider_type": "Medicare",
+        "legal_business_name": "SANTE CHANDLER LLC",
+        "chain_name": "SANTE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ARIZONA STATE VETERAN HOME-TUCSON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "555 EAST AJO WAY",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85713"
+      },
+      "contact": {
+        "phone": "5206382150",
+        "phone_formatted": "5206382150"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.1779,
+        "longitude": -110.96
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF ARIZONA/STATE DEPT OF FINANCE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WELLSPRINGS OF GILBERT",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3319 SOUTH MERCY ROAD",
+        "city": "GILBERT",
+        "state": "AZ",
+        "zip": "85297"
+      },
+      "contact": {
+        "phone": "4807296500",
+        "phone_formatted": "4807296500"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.2917,
+        "longitude": -111.75
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 32,
+        "provider_type": "Medicare",
+        "legal_business_name": "HARBOR MESA HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SANTE OF NORTH SCOTTSDALE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "17490 NORTH 93RD STREET",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "zip": "85255"
+      },
+      "contact": {
+        "phone": "4805885386",
+        "phone_formatted": "4805885386"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6445,
+        "longitude": -111.88
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 72,
+        "provider_type": "Medicare",
+        "legal_business_name": "SCOTTSDALE OP CO LLC",
+        "chain_name": "SANTE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CENTER AT ARROWHEAD, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7201 W CAMINO SAN XAVIER AVE",
+        "city": "GLENDALE",
+        "state": "AZ",
+        "zip": "85308"
+      },
+      "contact": {
+        "phone": "6237736100",
+        "phone_formatted": "6237736100"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6405,
+        "longitude": -112.22
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 96,
+        "provider_type": "Medicare",
+        "legal_business_name": "CENTER AT ARROWHEAD LLC",
+        "chain_name": "VERITAS MANAGEMENT GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HAVEN HEALTH SKY HARBOR, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1880 EAST VAN BUREN STREET",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85006"
+      },
+      "contact": {
+        "phone": "6022534570",
+        "phone_formatted": "6022534570"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4514,
+        "longitude": -112.04
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAVEN HEALTH SKY HARBOR LLC",
+        "chain_name": "HAVEN HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE CENTER AT VAL VISTA, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3744 SOUTH ROME STREET",
+        "city": "GILBERT",
+        "state": "AZ",
+        "zip": "85297"
+      },
+      "contact": {
+        "phone": "4802249500",
+        "phone_formatted": "4802249500"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.2814,
+        "longitude": -111.75
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 96,
+        "provider_type": "Medicare",
+        "legal_business_name": "CENTER AT VAL VISTA LLC",
+        "chain_name": "VERITAS MANAGEMENT GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SANDSTONE ESTATES REHAB CENTRE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2040 NORTH WILMOT ROAD",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85712"
+      },
+      "contact": {
+        "phone": "5203006115",
+        "phone_formatted": "5203006115"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2481,
+        "longitude": -110.86
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 103,
+        "provider_type": "Medicare",
+        "legal_business_name": "SANDSTONE ESTATES REHAB CENTRE LLC",
+        "chain_name": "SANDSTONE HEALTHCARE GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE CENTER AT TUCSON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5020 EAST GLENN STREET",
+        "city": "TUCSON",
+        "state": "AZ",
+        "zip": "85712"
+      },
+      "contact": {
+        "phone": "5203475555",
+        "phone_formatted": "5203475555"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.2579,
+        "longitude": -110.89
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 96,
+        "provider_type": "Medicare",
+        "legal_business_name": "CENTER AT TUCSON LLC",
+        "chain_name": "VERITAS MANAGEMENT GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ASPIRE TRANSITIONAL CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1521 NORTH PINE CLIFF DRIVE",
+        "city": "FLAGSTAFF",
+        "state": "AZ",
+        "zip": "86001"
+      },
+      "contact": {
+        "phone": "9284402350",
+        "phone_formatted": "9284402350"
+      },
+      "location": {
+        "county": "Coconino",
+        "latitude": 35.208,
+        "longitude": -111.64
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare",
+        "legal_business_name": "FLAGSTAFF TRANSITIONAL CARE, LLC",
+        "chain_name": "THE GOODMAN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SURPRISE HEALTH AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "14660 WEST PARKWOOD DRIVE",
+        "city": "SURPRISE",
+        "state": "AZ",
+        "zip": "85374"
+      },
+      "contact": {
+        "phone": "6235465030",
+        "phone_formatted": "6235465030"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.6488,
+        "longitude": -112.38
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 100,
+        "provider_type": "Medicare",
+        "legal_business_name": "LUDDEN HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WELBROOK YUMA OPCO LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2271 SOUTH RIDGEVIEW DRIVE",
+        "city": "YUMA",
+        "state": "AZ",
+        "zip": "85364"
+      },
+      "contact": {
+        "phone": "9282564066",
+        "phone_formatted": "9282564066"
+      },
+      "location": {
+        "county": "Yuma",
+        "latitude": 32.6873,
+        "longitude": -114.64
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 41,
+        "provider_type": "Medicare",
+        "legal_business_name": "WELBROOK YUMA OPCO LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NORTHPARK HEALTH AND REHABILITATION OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2020 NORTH 95TH AVENUE",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85037"
+      },
+      "contact": {
+        "phone": "2084019600",
+        "phone_formatted": "2084019600"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.4687,
+        "longitude": -112.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 54,
+        "provider_type": "Medicare",
+        "legal_business_name": "ESTRELLA OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MIRABELLA AT ASU",
+      "type": "Nursing Home",
+      "address": {
+        "street": "65 EAST UNIVERSITY AVENUE",
+        "city": "TEMPE",
+        "state": "AZ",
+        "zip": "85281"
+      },
+      "contact": {
+        "phone": "6027777701",
+        "phone_formatted": "6027777701"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.422,
+        "longitude": -111.94
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 21,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MIRABELLA AT ASU, INC",
+        "chain_name": "PACIFIC RETIREMENT SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SKILLED NURSING UNIT AT ORO VALLEY HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1551 E TANGERINE RD",
+        "city": "ORO VALLEY",
+        "state": "AZ",
+        "zip": "85755"
+      },
+      "contact": {
+        "phone": "5209016164",
+        "phone_formatted": "5209016164"
+      },
+      "location": {
+        "county": "Pima",
+        "latitude": 32.4251,
+        "longitude": -110.96
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 33,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ORO VALLEY HOSPITAL LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DIAMONDBACK HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3000 N 91ST AVENUE",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "zip": "85037"
+      },
+      "contact": {
+        "phone": "6233032882",
+        "phone_formatted": "6233032882"
+      },
+      "location": {
+        "county": "Maricopa",
+        "latitude": 33.481,
+        "longitude": -112.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 94,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "91ST AVENUE OPERATIONS LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ARIZONA STATE VETERAN HOME - YUMA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6051 EAST 34TH STREET",
+        "city": "YUMA",
+        "state": "AZ",
+        "zip": "85365"
+      },
+      "contact": {
+        "phone": "9282478303",
+        "phone_formatted": "9282478303"
+      },
+      "location": {
+        "county": "Yuma",
+        "latitude": 32.6665,
+        "longitude": -114.52
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF ARIZONA/STATE DEPT OF FINANCE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    }
+  ]
+}

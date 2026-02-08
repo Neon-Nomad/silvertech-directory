@@ -1,0 +1,2522 @@
+{
+  "state": "Nevada",
+  "state_code": "NV",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 66,
+    "total_nursing_homes": 66,
+    "total_assisted_living": 0,
+    "total_certified_beds": 7235,
+    "counties_served": 14,
+    "average_beds_per_facility": 109.6
+  },
+  "quality_distribution": {
+    "five_star": 17,
+    "four_star": 8,
+    "three_star": 12,
+    "two_star": 14,
+    "one_star": 14
+  },
+  "counties": {
+    "Pershing": {
+      "facility_count": 1,
+      "total_beds": 25
+    },
+    "Mineral": {
+      "facility_count": 1,
+      "total_beds": 24
+    },
+    "Clark": {
+      "facility_count": 42,
+      "total_beds": 5025
+    },
+    "Lyon": {
+      "facility_count": 1,
+      "total_beds": 49
+    },
+    "Washoe": {
+      "facility_count": 9,
+      "total_beds": 1085
+    },
+    "Carson City": {
+      "facility_count": 4,
+      "total_beds": 419
+    },
+    "Humboldt": {
+      "facility_count": 1,
+      "total_beds": 42
+    },
+    "Lincoln": {
+      "facility_count": 1,
+      "total_beds": 16
+    },
+    "White Pine": {
+      "facility_count": 1,
+      "total_beds": 97
+    },
+    "Lander": {
+      "facility_count": 1,
+      "total_beds": 25
+    },
+    "Nye": {
+      "facility_count": 1,
+      "total_beds": 120
+    },
+    "Elko": {
+      "facility_count": 1,
+      "total_beds": 146
+    },
+    "Douglas": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Churchill": {
+      "facility_count": 1,
+      "total_beds": 102
+    }
+  },
+  "facilities": [
+    {
+      "name": "PERSHING GENERAL HOSPITAL SNF",
+      "type": "Nursing Home",
+      "address": {
+        "street": "855 6TH STREET",
+        "city": "LOVELOCK",
+        "state": "NV",
+        "zip": "89419"
+      },
+      "contact": {
+        "phone": "7752732621",
+        "phone_formatted": "7752732621"
+      },
+      "location": {
+        "county": "Pershing",
+        "latitude": 40.1766,
+        "longitude": -118.48
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 25,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PERSHING GENERAL HOSPITAL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LEFA SERAN SNF",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1ST AND A ST",
+        "city": "HAWTHORNE",
+        "state": "NV",
+        "zip": "89415"
+      },
+      "contact": {
+        "phone": "7759452461",
+        "phone_formatted": "7759452461"
+      },
+      "location": {
+        "county": "Mineral",
+        "latitude": 38.5997,
+        "longitude": -118.68
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 24,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MT GRANT GENERAL HOSPITAL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LAS VEGAS POST ACUTE & REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2832 S. MARYLAND PARKWAY",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89109"
+      },
+      "contact": {
+        "phone": "7027355848",
+        "phone_formatted": "7027355848"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.1383,
+        "longitude": -115.14
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 79,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAS VEGAS POST ACUTE & REHABILITATION LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "EL JEN SKILLED CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5538 W DUNCAN DR",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89130"
+      },
+      "contact": {
+        "phone": "7026452606",
+        "phone_formatted": "7026452606"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.2289,
+        "longitude": -115.22
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 144,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EL JEN SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SOUTH LYON MEDICAL CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "213 WHITACRE ST",
+        "city": "YERINGTON",
+        "state": "NV",
+        "zip": "89447"
+      },
+      "contact": {
+        "phone": "7754632301",
+        "phone_formatted": "7754632301"
+      },
+      "location": {
+        "county": "Lyon",
+        "latitude": 38.9838,
+        "longitude": -119.17
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 49,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SOUTH LYON HEALTH CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HORIZON HEALTH AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "660 MARTIN LUTHER KING BLVD",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89106"
+      },
+      "contact": {
+        "phone": "7023825580",
+        "phone_formatted": "7023825580"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.1777,
+        "longitude": -115.16
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 138,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THI OF NEVADA II AT DESERT LANE, LLC",
+        "chain_name": "FUNDAMENTAL HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ROSEWOOD REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2045 SILVERADA BLVD",
+        "city": "RENO",
+        "state": "NV",
+        "zip": "89512"
+      },
+      "contact": {
+        "phone": "7753593161",
+        "phone_formatted": "7753593161"
+      },
+      "location": {
+        "county": "Washoe",
+        "latitude": 39.5489,
+        "longitude": -119.78
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 99,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WILDCREEK HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PREMIER HEALTH & REHABILITATION CENTER OF LV, LP",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2945 CASA VEGAS STREET",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89169"
+      },
+      "contact": {
+        "phone": "7027357179",
+        "phone_formatted": "7027357179"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.1363,
+        "longitude": -115.13
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PREMIER HEALTH AND REHABILITATION CENTER OF LAS VEGAS, LP",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CARSON NURSING AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2898 HIGHWAY 50 EAST",
+        "city": "CARSON CITY",
+        "state": "NV",
+        "zip": "89701"
+      },
+      "contact": {
+        "phone": "7758823301",
+        "phone_formatted": "7758823301"
+      },
+      "location": {
+        "county": "Carson City",
+        "latitude": 39.1761,
+        "longitude": -119.74
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 73,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COVENANT CARE CARSON, LLC",
+        "chain_name": "COVENANT CARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HARMONY MANOR SKILLED NURSING FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "118 EAST HASKELL ST",
+        "city": "WINNEMUCCA",
+        "state": "NV",
+        "zip": "89445"
+      },
+      "contact": {
+        "phone": "7756235222",
+        "phone_formatted": "7756235222"
+      },
+      "location": {
+        "county": "Humboldt",
+        "latitude": 40.9716,
+        "longitude": -117.73
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 42,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HUMBOLDT GENERAL HOSPITAL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GROVER C DILS MEDICAL CENTER SNF",
+      "type": "Nursing Home",
+      "address": {
+        "street": "700 N SPRING ST, BOX 1010-C-ADM BLDG",
+        "city": "CALIENTE",
+        "state": "NV",
+        "zip": "89008"
+      },
+      "contact": {
+        "phone": "7757263171",
+        "phone_formatted": "7757263171"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 37.6254,
+        "longitude": -114.51
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 16,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LINCOLN COUNTY HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WHITE PINE CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1500 AVENUE G",
+        "city": "ELY",
+        "state": "NV",
+        "zip": "89301"
+      },
+      "contact": {
+        "phone": "7752898801",
+        "phone_formatted": "7752898801"
+      },
+      "location": {
+        "county": "White Pine",
+        "latitude": 39.2571,
+        "longitude": -114.86
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 97,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EVERGREEN AT ELY LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NORTH LAS VEGAS CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3215 E. CHEYENNE AVE.",
+        "city": "NORTH LAS VEGAS",
+        "state": "NV",
+        "zip": "89030"
+      },
+      "contact": {
+        "phone": "7026497800",
+        "phone_formatted": "7026497800"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.2176,
+        "longitude": -115.1
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 182,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THI OF NEVADA II AT NORTH LAS VEGAS, LLC",
+        "chain_name": "FUNDAMENTAL HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HENDERSON HEALTH AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1180 E. LAKE MEAD PARKWAY",
+        "city": "HENDERSON",
+        "state": "NV",
+        "zip": "89015"
+      },
+      "contact": {
+        "phone": "7025658555",
+        "phone_formatted": "7025658555"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.0624,
+        "longitude": -114.96
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 266,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MOON COVE HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SAINT JOSEPH TRANSITIONAL REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2035 W. CHARLESTON BLVD.",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89102"
+      },
+      "contact": {
+        "phone": "7023867980",
+        "phone_formatted": "7023867980"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.1588,
+        "longitude": -115.17
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST. JOSEPH TRANSITIONAL REHABILITATION CENTER, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "OASIS NURSING & REHAB OF GREEN VALLEY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 DELMAR GARDENS DRIVE",
+        "city": "HENDERSON",
+        "state": "NV",
+        "zip": "89074"
+      },
+      "contact": {
+        "phone": "7023616111",
+        "phone_formatted": "7023616111"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.0328,
+        "longitude": -115.1
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 242,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "DELMAR GARDENS"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ALPINE SKILLED NURSING AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3101 PLUMAS ST",
+        "city": "RENO",
+        "state": "NV",
+        "zip": "89509"
+      },
+      "contact": {
+        "phone": "7758297220",
+        "phone_formatted": "7758297220"
+      },
+      "location": {
+        "county": "Washoe",
+        "latitude": 39.4938,
+        "longitude": -119.81
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 189,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "REVIVE RENO LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HEARTHSTONE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1950 BARING BLVD",
+        "city": "SPARKS",
+        "state": "NV",
+        "zip": "89434"
+      },
+      "contact": {
+        "phone": "7756262224",
+        "phone_formatted": "7756262224"
+      },
+      "location": {
+        "county": "Washoe",
+        "latitude": 39.5583,
+        "longitude": -119.71
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 125,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TRUCKEE MEADOWS HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TORREY PINES POST ACUTE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1701 S. TORREY PINES DRIVE",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89146"
+      },
+      "contact": {
+        "phone": "7028710005",
+        "phone_formatted": "7028710005"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.1517,
+        "longitude": -115.23
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 95,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TORREY PINES REHABILITATION HOSPITAL LLC",
+        "chain_name": "DAVID & FRANK JOHNSON"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BOULDER CITY HOSPITAL SNF",
+      "type": "Nursing Home",
+      "address": {
+        "street": "901 ADAMS BLVD.",
+        "city": "BOULDER CITY",
+        "state": "NV",
+        "zip": "89005"
+      },
+      "contact": {
+        "phone": "7022934111",
+        "phone_formatted": "7022934111"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 35.9684,
+        "longitude": -114.84
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 47,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HARMON HOSPITAL - SNF",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2170 EAST HARMON AVE",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89119"
+      },
+      "contact": {
+        "phone": "7027940100",
+        "phone_formatted": "7027940100"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.1074,
+        "longitude": -115.12
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 10,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THI OF NEVADA AT LAS VEGAS I, LLC",
+        "chain_name": "FUNDAMENTAL HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": null,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF RENO",
+      "type": "Nursing Home",
+      "address": {
+        "street": "445 W. HOLCOMB LANE",
+        "city": "RENO",
+        "state": "NV",
+        "zip": "89511"
+      },
+      "contact": {
+        "phone": "7758510123",
+        "phone_formatted": "7758510123"
+      },
+      "location": {
+        "county": "Washoe",
+        "latitude": 39.4439,
+        "longitude": -119.78
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 198,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WEDGWOOD GROUP, LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF LAS VEGAS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6151 VEGAS DRIVE",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89108"
+      },
+      "contact": {
+        "phone": "7026484900",
+        "phone_formatted": "7026484900"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.1885,
+        "longitude": -115.23
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 178,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAS VEGAS OPERATIONS, LCC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "COLLEGE PARK REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2856 E. CHEYENNE AVE.",
+        "city": "NORTH LAS VEGAS",
+        "state": "NV",
+        "zip": "89030"
+      },
+      "contact": {
+        "phone": "7026441888",
+        "phone_formatted": "7026441888"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.2176,
+        "longitude": -115.11
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 188,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THI OF NEVADA AT CHEYENNE, LLC",
+        "chain_name": "FUNDAMENTAL HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BATTLE MOUNTAIN GENERAL HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "535 S. HUMBOLDT STREET",
+        "city": "BATTLE MOUNTAIN",
+        "state": "NV",
+        "zip": "89820"
+      },
+      "contact": {
+        "phone": "7756352550",
+        "phone_formatted": "7756352550"
+      },
+      "location": {
+        "county": "Lander",
+        "latitude": 40.6411,
+        "longitude": -116.94
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 25,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SILVER HILLS HEALTH CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3450 N BUFFALO DR",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89129"
+      },
+      "contact": {
+        "phone": "7029522273",
+        "phone_formatted": "7029522273"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.223,
+        "longitude": -115.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 155,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COVENANT CARE VEGAS, INC.",
+        "chain_name": "COVENANT CARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ORMSBY POST ACUTE REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3050 N ORMSBY ROAD",
+        "city": "CARSON CITY",
+        "state": "NV",
+        "zip": "89703"
+      },
+      "contact": {
+        "phone": "7758414646",
+        "phone_formatted": "7758414646"
+      },
+      "location": {
+        "county": "Carson City",
+        "latitude": 39.1873,
+        "longitude": -119.78
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ORMSBY SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HIGHLAND MANOR OF MESQUITE REHABILITATION LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "272 W PIONEER BLVD",
+        "city": "MESQUITE",
+        "state": "NV",
+        "zip": "89027"
+      },
+      "contact": {
+        "phone": "7023467666",
+        "phone_formatted": "7023467666"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.8173,
+        "longitude": -114.08
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DESERT HEALTH CARE FACILITIES INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS PLAZA REGENCY POST ACUTE REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6021 W. CHEYENNE AVE.",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89108"
+      },
+      "contact": {
+        "phone": "7026589494",
+        "phone_formatted": "7026589494"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.217,
+        "longitude": -115.23
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 188,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES II INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TLC CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1500 W WARM SPRINGS RD",
+        "city": "HENDERSON",
+        "state": "NV",
+        "zip": "89014"
+      },
+      "contact": {
+        "phone": "7025476700",
+        "phone_formatted": "7025476700"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.0562,
+        "longitude": -115.05
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 255,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TLC SNF OPERATIONS LLC",
+        "chain_name": "HILL VALLEY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SILVER RIDGE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1151 TORREY PINES DR.",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89146"
+      },
+      "contact": {
+        "phone": "7029388333",
+        "phone_formatted": "7029388333"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.1577,
+        "longitude": -115.23
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 148,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COVENANT CARE VEGAS, INC.",
+        "chain_name": "COVENANT CARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ROYAL SPRINGS HEALTHCARE AND REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8501 DEL WEBB BLVD",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89134"
+      },
+      "contact": {
+        "phone": "7028043000",
+        "phone_formatted": "7028043000"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.2102,
+        "longitude": -115.28
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 225,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROYAL SPRINGS HEALTHCARE AND REHAB, INC",
+        "chain_name": "IL & JOAN LEE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PAHRUMP HEALTH AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4501 N BLAGG ROAD",
+        "city": "PAHRUMP",
+        "state": "NV",
+        "zip": "89060"
+      },
+      "contact": {
+        "phone": "7757516600",
+        "phone_formatted": "7757516600"
+      },
+      "location": {
+        "county": "Nye",
+        "latitude": 36.2859,
+        "longitude": -116.01
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PAHRUMP SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF SOUTH LAS VEGAS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2325 E. HARMON AVE.",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89119"
+      },
+      "contact": {
+        "phone": "7027987990",
+        "phone_formatted": "7027987990"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.1073,
+        "longitude": -115.12
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SOUTH LAS VEGAS MEDICAL INVESTORS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ALTA SKILLED NURSING AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "555 HAMMILL LANE",
+        "city": "RENO",
+        "state": "NV",
+        "zip": "89511"
+      },
+      "contact": {
+        "phone": "7758285600",
+        "phone_formatted": "7758285600"
+      },
+      "location": {
+        "county": "Washoe",
+        "latitude": 39.4721,
+        "longitude": -119.79
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 180,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "REVIVE HEALTH SENIOR CARE LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HIGHLAND MANOR OF ELKO REHABILITATION LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2850 RUBY VISTA DRIVE",
+        "city": "ELKO",
+        "state": "NV",
+        "zip": "89801"
+      },
+      "contact": {
+        "phone": "7757535500",
+        "phone_formatted": "7757535500"
+      },
+      "location": {
+        "county": "Elko",
+        "latitude": 40.8588,
+        "longitude": -115.75
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 146,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DESERT HEALTH CARE FACILITIES INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MOUNTAIN VIEW HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "201 KOONTZ LANE",
+        "city": "CARSON CITY",
+        "state": "NV",
+        "zip": "89701"
+      },
+      "contact": {
+        "phone": "7758833622",
+        "phone_formatted": "7758833622"
+      },
+      "location": {
+        "county": "Carson City",
+        "latitude": 39.1339,
+        "longitude": -119.77
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 146,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MV SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MOUNTAIN VIEW CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "601 ADAMS BOULEVARD",
+        "city": "BOULDER CITY",
+        "state": "NV",
+        "zip": "89005"
+      },
+      "contact": {
+        "phone": "7022935151",
+        "phone_formatted": "7022935151"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 35.9692,
+        "longitude": -114.83
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 87,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BOULDER CITY NV OPCO LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NEVADA STATE VETERANS HOME - BOULDER CITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 VETERANS MEMORIAL DR",
+        "city": "BOULDER CITY",
+        "state": "NV",
+        "zip": "89005"
+      },
+      "contact": {
+        "phone": "7023326711",
+        "phone_formatted": "7023326711"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 35.9702,
+        "longitude": -114.87
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 180,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF NEVADA",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GARDNERVILLE HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1573 SOUTH MULLER PKWY",
+        "city": "GARDNERVILLE",
+        "state": "NV",
+        "zip": "89410"
+      },
+      "contact": {
+        "phone": "7757826620",
+        "phone_formatted": "7757826620"
+      },
+      "location": {
+        "county": "Douglas",
+        "latitude": 38.9457,
+        "longitude": -119.76
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GARDNERVILLE SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE HEIGHTS OF SUMMERLIN, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10550 PARK RUN DRIVE",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89144"
+      },
+      "contact": {
+        "phone": "7025156200",
+        "phone_formatted": "7025156200"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.1608,
+        "longitude": -115.32
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 190,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE HEIGHTS OF SUMMERLIN, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NEURORESTORATIVE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7690 CARMEN BLVD",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89128"
+      },
+      "contact": {
+        "phone": "7022557399",
+        "phone_formatted": "7022557399"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.185,
+        "longitude": -115.27
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 35,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CAREMERIDIAN LLC",
+        "chain_name": "NEURORESTORATIVE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HIGHLAND MANOR OF FALLON REHABILITATION LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "550 NORTH SHERMAN STREET",
+        "city": "FALLON",
+        "state": "NV",
+        "zip": "89406"
+      },
+      "contact": {
+        "phone": "7754237800",
+        "phone_formatted": "7754237800"
+      },
+      "location": {
+        "county": "Churchill",
+        "latitude": 39.4815,
+        "longitude": -118.77
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DESERT HEALTH CARE FACILITIES INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LAS VENTANAS RETIREMENT COMM SNF",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10401 WEST CHARLESTON BLVD",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89135"
+      },
+      "contact": {
+        "phone": "7023602662",
+        "phone_formatted": "7023602662"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.1588,
+        "longitude": -115.32
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HUMANGOOD NEVADA",
+        "chain_name": "HUMANGOOD"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WINGFIELD SKILLED NURSING AND REHABILITATION CENTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2350 WINGFIELD HILLS RD",
+        "city": "SPARKS",
+        "state": "NV",
+        "zip": "89436"
+      },
+      "contact": {
+        "phone": "7753358275",
+        "phone_formatted": "7753358275"
+      },
+      "location": {
+        "county": "Washoe",
+        "latitude": 39.6109,
+        "longitude": -119.7
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "REVIVE SPARKS LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS CARE AT CENTENNIAL HILLS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6351 N FORT APACHE RD",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89149"
+      },
+      "contact": {
+        "phone": "7025153000",
+        "phone_formatted": "7025153000"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.2764,
+        "longitude": -115.3
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES I, INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ADVANCED HEALTH CARE OF LAS VEGAS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5840 W SUNSET RD",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89118"
+      },
+      "contact": {
+        "phone": "7029676100",
+        "phone_formatted": "7029676100"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.0711,
+        "longitude": -115.22
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 38,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AHC OF LAS VEGAS LLC",
+        "chain_name": "ADVANCED HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NEURORESTORATIVE 4KIDS -BUFFALO",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3391 N BUFFALO DRIVE",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89129"
+      },
+      "contact": {
+        "phone": "7028008860",
+        "phone_formatted": "7028008860"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.2218,
+        "longitude": -115.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 24,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CAREMERIDIAN LLC",
+        "chain_name": "NEURORESTORATIVE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ADVANCED HEALTH CARE OF SUMMERLIN",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2860 N TENAYA WAY",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89128"
+      },
+      "contact": {
+        "phone": "7025469609",
+        "phone_formatted": "7025469609"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.2112,
+        "longitude": -115.25
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 38,
+        "provider_type": "Medicare",
+        "legal_business_name": "AHC OF LAS VEGAS II LLC",
+        "chain_name": "ADVANCED HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CANYON VISTA POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6352 MEDICAL CENTER STREET",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89148"
+      },
+      "contact": {
+        "phone": "7025416200",
+        "phone_formatted": "7025416200"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.074,
+        "longitude": -115.29
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "YATE HOLDINGS LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SPANISH HILLS WELLNESS SUITES",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5351 MONTESSOURI STREET",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89113"
+      },
+      "contact": {
+        "phone": "7022512200",
+        "phone_formatted": "7022512200"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.0796,
+        "longitude": -115.25
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 144,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SPRING VALLEY HEALTH CARE, LLC",
+        "chain_name": "FUNDAMENTAL HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SANDSTONE SPRING VALLEY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5650 SOUTH RAINBOW BLVD",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89118"
+      },
+      "contact": {
+        "phone": "7024701102",
+        "phone_formatted": "7024701102"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.0859,
+        "longitude": -115.24
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 160,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SANDSTONE SPRING VALLEY LLC",
+        "chain_name": "SANDSTONE HEALTHCARE GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ADVANCED HEALTH CARE OF RENO",
+      "type": "Nursing Home",
+      "address": {
+        "street": "961 KUENZLI STREET",
+        "city": "RENO",
+        "state": "NV",
+        "zip": "89502"
+      },
+      "contact": {
+        "phone": "7754707200",
+        "phone_formatted": "7754707200"
+      },
+      "location": {
+        "county": "Washoe",
+        "latitude": 39.5283,
+        "longitude": -119.8
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 42,
+        "provider_type": "Medicare",
+        "legal_business_name": "AHC OF RENO, LLC",
+        "chain_name": "ADVANCED HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SKYE CANYON POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6650 GRAND MONTECITO PARKWAY",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89149"
+      },
+      "contact": {
+        "phone": "7023331290",
+        "phone_formatted": "7023331290"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.2817,
+        "longitude": -115.28
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 45,
+        "provider_type": "Medicare",
+        "legal_business_name": "MISSION POINT OF LAS VEGAS LLC",
+        "chain_name": "MISSION POINT HEALTHCARE SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SAGE CREEK POST-ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2350 IONE ROAD",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89123"
+      },
+      "contact": {
+        "phone": "7027903000",
+        "phone_formatted": "7027903000"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.0235,
+        "longitude": -115.15
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare",
+        "legal_business_name": "GRAPE HOLDINGS LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CORONADO RIDGE SKILLED NURSING & REHABILITATION CE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2855 W. HORIZON RIDGE PARKWAY",
+        "city": "HENDERSON",
+        "state": "NV",
+        "zip": "89052"
+      },
+      "contact": {
+        "phone": "7028055050",
+        "phone_formatted": "7028055050"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 35.9988,
+        "longitude": -115.11
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 121,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GHC OF HENDERSON LLC",
+        "chain_name": "GENERATIONS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ADVANCED HEALTH CARE OF HENDERSON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1285 E CACTUS AVENUE",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89183"
+      },
+      "contact": {
+        "phone": "7027906300",
+        "phone_formatted": "7027906300"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 35.9992,
+        "longitude": -115.13
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 38,
+        "provider_type": "Medicare",
+        "legal_business_name": "AHC OF HENDERSON, LLC",
+        "chain_name": "ADVANCED HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CAREMERIDIAN LLC, DBA NEURORESTORATIVE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3980 LAKE PLACID DRIVE STE 2",
+        "city": "RENO",
+        "state": "NV",
+        "zip": "89511"
+      },
+      "contact": {
+        "phone": "7024999523",
+        "phone_formatted": "7024999523"
+      },
+      "location": {
+        "county": "Washoe",
+        "latitude": 39.5357,
+        "longitude": -119.81
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CAREMERIDIAN LLC",
+        "chain_name": "NEURORESTORATIVE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CARSON TAHOE TRANSITIONAL REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1001 MOUNTAIN STREET",
+        "city": "CARSON CITY",
+        "state": "NV",
+        "zip": "89703"
+      },
+      "contact": {
+        "phone": "3607357155",
+        "phone_formatted": "3607357155"
+      },
+      "location": {
+        "county": "Carson City",
+        "latitude": 39.1696,
+        "longitude": -119.77
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CARSON CITY SNF VENTURES LLC",
+        "chain_name": "PRESTIGE CARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NORTHERN NEVADA STATE VETERANS HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "36 BATTLEBORN WAY",
+        "city": "SPARKS",
+        "state": "NV",
+        "zip": "89431"
+      },
+      "contact": {
+        "phone": "7635375700",
+        "phone_formatted": "7635375700"
+      },
+      "location": {
+        "county": "Washoe",
+        "latitude": 39.5481,
+        "longitude": -119.73
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 96,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AVALON CARE CENTER - VA RENO, LLC",
+        "chain_name": "AVALON HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TRELLIS CENTENNIAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8565 W ROME BLVD",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89149"
+      },
+      "contact": {
+        "phone": "7029828555",
+        "phone_formatted": "7029828555"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.2809,
+        "longitude": -115.29
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 72,
+        "provider_type": "Medicare",
+        "legal_business_name": "LYCHEE HOLDINGS LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ADVANCED HEALTH CARE OF PARADISE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3455 PECOS-MCLEOD INTERCONNECT",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89121"
+      },
+      "contact": {
+        "phone": "7027906400",
+        "phone_formatted": "7027906400"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.1045,
+        "longitude": -115.07
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 38,
+        "provider_type": "Medicare",
+        "legal_business_name": "AHC OF PARADISE VALLEY LLC",
+        "chain_name": "ADVANCED HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SILVER STATE PEDIATRIC SKILLED NURSING FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2496 W CHARLESTON BLVD",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89102"
+      },
+      "contact": {
+        "phone": "7023103720",
+        "phone_formatted": "7023103720"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.159,
+        "longitude": -115.18
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CHARLESTON PEDIATRIC SNF LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TRELLIS PARADISE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4375 S. EASTERN AVENUE",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "zip": "89119"
+      },
+      "contact": {
+        "phone": "7024133930",
+        "phone_formatted": "7024133930"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.109,
+        "longitude": -115.12
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 83,
+        "provider_type": "Medicare",
+        "legal_business_name": "STARFRUIT HOLDINGS LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GREEN VALLEY HEALTH AND WELLNESS SUITES",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2965 WIGWAM PARKWAY",
+        "city": "HENDERSON",
+        "state": "NV",
+        "zip": "89074"
+      },
+      "contact": {
+        "phone": "4107731175",
+        "phone_formatted": "4107731175"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.035,
+        "longitude": -115.12
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 124,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HENDERSON LONG TERM CARE LLC",
+        "chain_name": "FUNDAMENTAL HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MISSION PINES NURSING AND REHAB CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2860 E. CHEYENNE AVENUE",
+        "city": "NORTH LAS VEGAS",
+        "state": "NV",
+        "zip": "89030"
+      },
+      "contact": {
+        "phone": "7026447777",
+        "phone_formatted": "7026447777"
+      },
+      "location": {
+        "county": "Clark",
+        "latitude": 36.2176,
+        "longitude": -115.11
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 240,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    }
+  ]
+}

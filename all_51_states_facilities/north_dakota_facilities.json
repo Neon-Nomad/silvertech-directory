@@ -1,0 +1,2873 @@
+{
+  "state": "North Dakota",
+  "state_code": "ND",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 73,
+    "total_nursing_homes": 73,
+    "total_assisted_living": 0,
+    "total_certified_beds": 5040,
+    "counties_served": 37,
+    "average_beds_per_facility": 69.0
+  },
+  "quality_distribution": {
+    "five_star": 20,
+    "four_star": 14,
+    "three_star": 9,
+    "two_star": 14,
+    "one_star": 15
+  },
+  "counties": {
+    "Cass": {
+      "facility_count": 8,
+      "total_beds": 829
+    },
+    "Ward": {
+      "facility_count": 2,
+      "total_beds": 269
+    },
+    "Richland": {
+      "facility_count": 2,
+      "total_beds": 83
+    },
+    "Williams": {
+      "facility_count": 2,
+      "total_beds": 125
+    },
+    "Morton": {
+      "facility_count": 5,
+      "total_beds": 382
+    },
+    "Wells": {
+      "facility_count": 1,
+      "total_beds": 70
+    },
+    "Griggs": {
+      "facility_count": 1,
+      "total_beds": 40
+    },
+    "Traill": {
+      "facility_count": 3,
+      "total_beds": 132
+    },
+    "Eddy": {
+      "facility_count": 1,
+      "total_beds": 51
+    },
+    "Adams": {
+      "facility_count": 1,
+      "total_beds": 45
+    },
+    "Mountrail": {
+      "facility_count": 1,
+      "total_beds": 36
+    },
+    "Foster": {
+      "facility_count": 1,
+      "total_beds": 64
+    },
+    "Dickey": {
+      "facility_count": 2,
+      "total_beds": 107
+    },
+    "Emmons": {
+      "facility_count": 1,
+      "total_beds": 38
+    },
+    "Cavalier": {
+      "facility_count": 1,
+      "total_beds": 49
+    },
+    "Nelson": {
+      "facility_count": 3,
+      "total_beds": 108
+    },
+    "Mercer": {
+      "facility_count": 1,
+      "total_beds": 86
+    },
+    "Pembina": {
+      "facility_count": 2,
+      "total_beds": 71
+    },
+    "Burleigh": {
+      "facility_count": 6,
+      "total_beds": 604
+    },
+    "Stark": {
+      "facility_count": 3,
+      "total_beds": 237
+    },
+    "Mclean": {
+      "facility_count": 2,
+      "total_beds": 78
+    },
+    "Mcintosh": {
+      "facility_count": 2,
+      "total_beds": 80
+    },
+    "Grand Forks": {
+      "facility_count": 3,
+      "total_beds": 374
+    },
+    "Towner": {
+      "facility_count": 1,
+      "total_beds": 26
+    },
+    "Ramsey": {
+      "facility_count": 1,
+      "total_beds": 78
+    },
+    "Mckenzie": {
+      "facility_count": 1,
+      "total_beds": 36
+    },
+    "Barnes": {
+      "facility_count": 1,
+      "total_beds": 170
+    },
+    "Stutsman": {
+      "facility_count": 2,
+      "total_beds": 179
+    },
+    "Rolette": {
+      "facility_count": 2,
+      "total_beds": 61
+    },
+    "Walsh": {
+      "facility_count": 2,
+      "total_beds": 131
+    },
+    "Dunn": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Bottineau": {
+      "facility_count": 1,
+      "total_beds": 52
+    },
+    "Logan": {
+      "facility_count": 1,
+      "total_beds": 36
+    },
+    "Sargent": {
+      "facility_count": 1,
+      "total_beds": 33
+    },
+    "La Moure": {
+      "facility_count": 1,
+      "total_beds": 36
+    },
+    "Ransom": {
+      "facility_count": 3,
+      "total_beds": 134
+    },
+    "Mchenry": {
+      "facility_count": 1,
+      "total_beds": 50
+    }
+  },
+  "facilities": [
+    {
+      "name": "THE MEADOWS ON UNIVERSITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1315 S UNIVERSITY DR",
+        "city": "FARGO",
+        "state": "ND",
+        "zip": "58103"
+      },
+      "contact": {
+        "phone": "7012373030",
+        "phone_formatted": "7012373030"
+      },
+      "location": {
+        "county": "Cass",
+        "latitude": 46.8611,
+        "longitude": -96.798
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FARGO NURSING AND REHAB CENTER LLC",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MINOT HEALTH AND REHAB, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "600 S MAIN ST",
+        "city": "MINOT",
+        "state": "ND",
+        "zip": "58701"
+      },
+      "contact": {
+        "phone": "7018521255",
+        "phone_formatted": "7018521255"
+      },
+      "location": {
+        "county": "Ward",
+        "latitude": 48.2312,
+        "longitude": -101.29
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 108,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MINOT HEALTH AND REHAB LLC",
+        "chain_name": "NORTH SHORE HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ST CATHERINES LIVING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1307 N 7TH ST",
+        "city": "WAHPETON",
+        "state": "ND",
+        "zip": "58075"
+      },
+      "contact": {
+        "phone": "7016426667",
+        "phone_formatted": "7016426667"
+      },
+      "location": {
+        "county": "Richland",
+        "latitude": 46.279,
+        "longitude": -96.609
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 49,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BENEDICTINE LIVING COMMUNITIES, INC.",
+        "chain_name": "BENEDICTINE HEALTH SYSTEM"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TIOGA MEDICAL CENTER LTC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "810 N WELO ST",
+        "city": "TIOGA",
+        "state": "ND",
+        "zip": "58852"
+      },
+      "contact": {
+        "phone": "7016643305",
+        "phone_formatted": "7016643305"
+      },
+      "location": {
+        "county": "Williams",
+        "latitude": 48.4023,
+        "longitude": -102.93
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 30,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TIOGA MEDICAL CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARIAN MANOR HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "604 ASH AVE E",
+        "city": "GLEN ULLIN",
+        "state": "ND",
+        "zip": "58631"
+      },
+      "contact": {
+        "phone": "7013483107",
+        "phone_formatted": "7013483107"
+      },
+      "location": {
+        "county": "Morton",
+        "latitude": 46.8141,
+        "longitude": -101.82
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 54,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARIAN MANOR COMMUNITY CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SMP HEALTH - ST ALOISIUS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "325 E BREWSTER ST",
+        "city": "HARVEY",
+        "state": "ND",
+        "zip": "58341"
+      },
+      "contact": {
+        "phone": "7013244651",
+        "phone_formatted": "7013244651"
+      },
+      "location": {
+        "county": "Wells",
+        "latitude": 47.7677,
+        "longitude": -99.932
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 70,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST ALOISIUS HOSPITAL, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ST GERARD'S COMMUNITY OF CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "613 1ST AVE SW",
+        "city": "HANKINSON",
+        "state": "ND",
+        "zip": "58041"
+      },
+      "contact": {
+        "phone": "7012427891",
+        "phone_formatted": "7012427891"
+      },
+      "location": {
+        "county": "Richland",
+        "latitude": 46.0671,
+        "longitude": -96.904
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 34,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST GERARDS COMMUNITY OF CARE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GRIGGS COUNTY CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "107 12TH ST S",
+        "city": "COOPERSTOWN",
+        "state": "ND",
+        "zip": "58425"
+      },
+      "contact": {
+        "phone": "7017972221",
+        "phone_formatted": "7017972221"
+      },
+      "location": {
+        "county": "Griggs",
+        "latitude": 47.4393,
+        "longitude": -98.119
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GRIGGS COUNTY NURSING HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LUTHER MEMORIAL HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "750 MAIN ST E",
+        "city": "MAYVILLE",
+        "state": "ND",
+        "zip": "58257"
+      },
+      "contact": {
+        "phone": "7017863401",
+        "phone_formatted": "7017863401"
+      },
+      "location": {
+        "county": "Traill",
+        "latitude": 47.5018,
+        "longitude": -97.315
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LUTHER MEMORIAL HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LUTHERAN HOME OF THE GOOD SHEPHERD",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1226 1ST AVE N",
+        "city": "NEW ROCKFORD",
+        "state": "ND",
+        "zip": "58356"
+      },
+      "contact": {
+        "phone": "7019472944",
+        "phone_formatted": "7019472944"
+      },
+      "location": {
+        "county": "Eddy",
+        "latitude": 47.6812,
+        "longitude": -99.146
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 51,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LUTHERAN HOME OF THE GOOD SHEPHERD",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WESTERN HORIZONS CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1104  HWY 12",
+        "city": "HETTINGER",
+        "state": "ND",
+        "zip": "58639"
+      },
+      "contact": {
+        "phone": "7015672401",
+        "phone_formatted": "7015672401"
+      },
+      "location": {
+        "county": "Adams",
+        "latitude": 46.0175,
+        "longitude": -102.69
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 45,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WESTERN HORIZONS LIVING CENTERS",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MOUNTRAIL BETHEL HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "615 6TH ST SE",
+        "city": "STANLEY",
+        "state": "ND",
+        "zip": "58784"
+      },
+      "contact": {
+        "phone": "7016282442",
+        "phone_formatted": "7016282442"
+      },
+      "location": {
+        "county": "Mountrail",
+        "latitude": 48.3134,
+        "longitude": -102.38
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MOUNTRAIL BETHEL HOME INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOLDEN ACRES MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1 E MAIN ST",
+        "city": "CARRINGTON",
+        "state": "ND",
+        "zip": "58421"
+      },
+      "contact": {
+        "phone": "7016523117",
+        "phone_formatted": "7016523117"
+      },
+      "location": {
+        "county": "Foster",
+        "latitude": 47.4144,
+        "longitude": -99.266
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 64,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ALPHA INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SMP HEALTH - ST CATHERINE NORTH",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1351 N BROADWAY",
+        "city": "FARGO",
+        "state": "ND",
+        "zip": "58102"
+      },
+      "contact": {
+        "phone": "7012777999",
+        "phone_formatted": "7012777999"
+      },
+      "location": {
+        "county": "Cass",
+        "latitude": 46.8952,
+        "longitude": -96.788
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 125,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SISTERS OF MARY OF THE PRESENTATION LONG TERM CARE",
+        "chain_name": "SMP HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PRINCE OF PEACE CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "201 8TH ST N",
+        "city": "ELLENDALE",
+        "state": "ND",
+        "zip": "58436"
+      },
+      "contact": {
+        "phone": "7013493312",
+        "phone_formatted": "7013493312"
+      },
+      "location": {
+        "county": "Dickey",
+        "latitude": 46.0098,
+        "longitude": -98.526
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 55,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BENEDICTINE LIVING COMMUNITIES, INC.",
+        "chain_name": "BENEDICTINE HEALTH SYSTEM"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "STRASBURG NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "409 S 3RD ST",
+        "city": "STRASBURG",
+        "state": "ND",
+        "zip": "58573"
+      },
+      "contact": {
+        "phone": "7013362651",
+        "phone_formatted": "7013362651"
+      },
+      "location": {
+        "county": "Emmons",
+        "latitude": 46.1369,
+        "longitude": -100.16
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 38,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STRASBURG NURSING HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MAPLE MANOR CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1116 9TH AVE",
+        "city": "LANGDON",
+        "state": "ND",
+        "zip": "58249"
+      },
+      "contact": {
+        "phone": "7012562987",
+        "phone_formatted": "7012562987"
+      },
+      "location": {
+        "county": "Cavalier",
+        "latitude": 48.7612,
+        "longitude": -98.38
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 49,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAPLE MANOR CARE CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HATTON PRAIRIE VILLAGE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "950 DAKOTA AVE",
+        "city": "HATTON",
+        "state": "ND",
+        "zip": "58240"
+      },
+      "contact": {
+        "phone": "7015433102",
+        "phone_formatted": "7015433102"
+      },
+      "location": {
+        "county": "Traill",
+        "latitude": 47.6368,
+        "longitude": -97.453
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 38,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TRI-COUNTY RETIREMENT & NURSING",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NELSON COUNTY HEALTH SYSTEM CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "108 E NYHUS AVE",
+        "city": "MCVILLE",
+        "state": "ND",
+        "zip": "58254"
+      },
+      "contact": {
+        "phone": "7013224314",
+        "phone_formatted": "7013224314"
+      },
+      "location": {
+        "county": "Nelson",
+        "latitude": 47.7686,
+        "longitude": -98.177
+      },
+      "facility_details": {
+        "ownership_type": "Government - City",
+        "certified_beds": 35,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NELSON COUNTY HEALTH SYSTEM",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "KNIFE RIVER CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "118 22ND ST NE",
+        "city": "BEULAH",
+        "state": "ND",
+        "zip": "58523"
+      },
+      "contact": {
+        "phone": "7018734322",
+        "phone_formatted": "7018734322"
+      },
+      "location": {
+        "county": "Mercer",
+        "latitude": 47.2846,
+        "longitude": -101.78
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 86,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BEULAH COMMUNITY NURSING HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PEMBILIER NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "500 DELANO AVE",
+        "city": "WALHALLA",
+        "state": "ND",
+        "zip": "58282"
+      },
+      "contact": {
+        "phone": "7015493831",
+        "phone_formatted": "7015493831"
+      },
+      "location": {
+        "county": "Pembina",
+        "latitude": 48.9204,
+        "longitude": -97.922
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 31,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WALHALLA COMMUNITY HOSPITAL ASSOCIATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BAPTIST HEALTH & REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3400 NEBRASKA DRIVE",
+        "city": "BISMARCK",
+        "state": "ND",
+        "zip": "58503"
+      },
+      "contact": {
+        "phone": "7012233040",
+        "phone_formatted": "7012233040"
+      },
+      "location": {
+        "county": "Burleigh",
+        "latitude": 46.8429,
+        "longitude": -100.75
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 140,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BAPTIST HOME, INC",
+        "chain_name": "CASSIA"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MISSOURI SLOPE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2425 HILLVIEW AVE",
+        "city": "BISMARCK",
+        "state": "ND",
+        "zip": "58501"
+      },
+      "contact": {
+        "phone": "7012239407",
+        "phone_formatted": "7012239407"
+      },
+      "location": {
+        "county": "Burleigh",
+        "latitude": 46.8177,
+        "longitude": -100.76
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 55,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MISSOURI SLOPE LUTHERAN CARE CENTER, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ST VINCENT'S - A PROSPERA COMMUNITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1021 N 26TH ST",
+        "city": "BISMARCK",
+        "state": "ND",
+        "zip": "58501"
+      },
+      "contact": {
+        "phone": "7013231999",
+        "phone_formatted": "7013231999"
+      },
+      "location": {
+        "county": "Burleigh",
+        "latitude": 46.8155,
+        "longitude": -100.75
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 97,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SANFORD HILLSBORO CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "12 3RD ST SE",
+        "city": "HILLSBORO",
+        "state": "ND",
+        "zip": "58045"
+      },
+      "contact": {
+        "phone": "7016363235",
+        "phone_formatted": "7016363235"
+      },
+      "location": {
+        "county": "Traill",
+        "latitude": 47.4036,
+        "longitude": -97.057
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 34,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SANFORD HEALTH NETWORK NORTH",
+        "chain_name": "SANFORD HEALTH GOOD SAMARITAN (PROSPERA)"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ST LUKES HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "242 10TH ST W",
+        "city": "DICKINSON",
+        "state": "ND",
+        "zip": "58601"
+      },
+      "contact": {
+        "phone": "7014835000",
+        "phone_formatted": "7014835000"
+      },
+      "location": {
+        "county": "Stark",
+        "latitude": 46.8905,
+        "longitude": -102.79
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 88,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST. LUKE'S HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BENEDICTINE LIVING CENTER OF GARRISON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "609 4TH AVE NE",
+        "city": "GARRISON",
+        "state": "ND",
+        "zip": "58540"
+      },
+      "contact": {
+        "phone": "7014632226",
+        "phone_formatted": "7014632226"
+      },
+      "location": {
+        "county": "Mclean",
+        "latitude": 47.6552,
+        "longitude": -101.41
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 52,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BENEDICTINE LIVING COMMUNITIES, INC.",
+        "chain_name": "BENEDICTINE HEALTH SYSTEM"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SUNSET DRIVE - A PROSPERA COMMUNITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1011 BOUNDARY ST NW",
+        "city": "MANDAN",
+        "state": "ND",
+        "zip": "58554"
+      },
+      "contact": {
+        "phone": "7013231411",
+        "phone_formatted": "7013231411"
+      },
+      "location": {
+        "county": "Morton",
+        "latitude": 46.8429,
+        "longitude": -100.91
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 128,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WISHEK LIVING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "400 S 4TH ST",
+        "city": "WISHEK",
+        "state": "ND",
+        "zip": "58495"
+      },
+      "contact": {
+        "phone": "7014522333",
+        "phone_formatted": "7014522333"
+      },
+      "location": {
+        "county": "Mcintosh",
+        "latitude": 46.2551,
+        "longitude": -99.561
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 49,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WISHEK HOME FOR THE AGED",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "VALLEY SENIOR LIVING ON COLUMBIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2900 14TH AVE S",
+        "city": "GRAND FORKS",
+        "state": "ND",
+        "zip": "58201"
+      },
+      "contact": {
+        "phone": "7017877900",
+        "phone_formatted": "7017877900"
+      },
+      "location": {
+        "county": "Grand Forks",
+        "latitude": 47.9072,
+        "longitude": -97.069
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 196,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VALLEY HOMES AND SERVICES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TOWNER COUNTY LIVING CTR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "228 1ST AVE",
+        "city": "CANDO",
+        "state": "ND",
+        "zip": "58324"
+      },
+      "contact": {
+        "phone": "7019682600",
+        "phone_formatted": "7019682600"
+      },
+      "location": {
+        "county": "Towner",
+        "latitude": 48.4922,
+        "longitude": -99.21
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 26,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TOWNER COUNTY MEDICAL CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "EVENTIDE HEARTLAND",
+      "type": "Nursing Home",
+      "address": {
+        "street": "620 14TH AVE NE",
+        "city": "DEVILS LAKE",
+        "state": "ND",
+        "zip": "58301"
+      },
+      "contact": {
+        "phone": "7016624905",
+        "phone_formatted": "7016624905"
+      },
+      "location": {
+        "county": "Ramsey",
+        "latitude": 48.1135,
+        "longitude": -98.844
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 78,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAKE REGION LUTHERAN HOME, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BETHEL LUTHERAN NURSING & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1515 2ND AVE WEST",
+        "city": "WILLISTON",
+        "state": "ND",
+        "zip": "58801"
+      },
+      "contact": {
+        "phone": "7015726766",
+        "phone_formatted": "7015726766"
+      },
+      "location": {
+        "county": "Williams",
+        "latitude": 48.1585,
+        "longitude": -103.63
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 95,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BETHEL LUTHERAN NURSING & REHABILITATION CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MCKENZIE COUNTY HEALTHCARE SYSTEMS LONG TERM CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "709 4TH AVENUE  NE",
+        "city": "WATFORD CITY",
+        "state": "ND",
+        "zip": "58854"
+      },
+      "contact": {
+        "phone": "7014442331",
+        "phone_formatted": "7014442331"
+      },
+      "location": {
+        "county": "Mckenzie",
+        "latitude": 47.8047,
+        "longitude": -103.27
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MCKENZIE COUNTY HEALTHCARE SYSTEMS INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TRINITY HOMES",
+      "type": "Nursing Home",
+      "address": {
+        "street": "305 8TH AVE NE",
+        "city": "MINOT",
+        "state": "ND",
+        "zip": "58703"
+      },
+      "contact": {
+        "phone": "7018575800",
+        "phone_formatted": "7018575800"
+      },
+      "location": {
+        "county": "Ward",
+        "latitude": 48.2437,
+        "longitude": -101.29
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 161,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TRINITY HOMES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SMP HEALTH - ST RAPHAEL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "979 CENTRAL AVE N",
+        "city": "VALLEY CITY",
+        "state": "ND",
+        "zip": "58072"
+      },
+      "contact": {
+        "phone": "7018458222",
+        "phone_formatted": "7018458222"
+      },
+      "location": {
+        "county": "Barnes",
+        "latitude": 46.9328,
+        "longitude": -98.003
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 170,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SISTERS OF MARY OF THE PRESENTATION LONG TERM CARE",
+        "chain_name": "SMP HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "EVENTIDE JAMESTOWN",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1300 2ND PL NE",
+        "city": "JAMESTOWN",
+        "state": "ND",
+        "zip": "58401"
+      },
+      "contact": {
+        "phone": "7012525881",
+        "phone_formatted": "7012525881"
+      },
+      "location": {
+        "county": "Stutsman",
+        "latitude": 46.9095,
+        "longitude": -98.691
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 79,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EVENTIDE JAMESTOWN LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SMP HEALTH - ST CATHERINE SOUTH",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3102 S UNIVERSITY DR",
+        "city": "FARGO",
+        "state": "ND",
+        "zip": "58103"
+      },
+      "contact": {
+        "phone": "7012937750",
+        "phone_formatted": "7012937750"
+      },
+      "location": {
+        "county": "Cass",
+        "latitude": 46.8528,
+        "longitude": -96.799
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 98,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SISTERS OF MARY OF THE PRESENTATION LONG TERM CARE",
+        "chain_name": "SMP HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DUNSEITH COM NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "15 1ST ST NE",
+        "city": "DUNSEITH",
+        "state": "ND",
+        "zip": "58329"
+      },
+      "contact": {
+        "phone": "7012445495",
+        "phone_formatted": "7012445495"
+      },
+      "location": {
+        "county": "Rolette",
+        "latitude": 48.8129,
+        "longitude": -100.06
+      },
+      "facility_details": {
+        "ownership_type": "Government - City",
+        "certified_beds": 30,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DUNSEITH COMMUNITY NURSING HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ROLETTE COMMUNITY CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "804 STATE STREET",
+        "city": "ROLETTE",
+        "state": "ND",
+        "zip": "58366"
+      },
+      "contact": {
+        "phone": "7012463786",
+        "phone_formatted": "7012463786"
+      },
+      "location": {
+        "county": "Rolette",
+        "latitude": 48.6672,
+        "longitude": -99.842
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 31,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROLETTE COMMUNITY CARE CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SMP HEALTH - AVE MARIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "501 19TH ST NE",
+        "city": "JAMESTOWN",
+        "state": "ND",
+        "zip": "58401"
+      },
+      "contact": {
+        "phone": "7012525660",
+        "phone_formatted": "7012525660"
+      },
+      "location": {
+        "county": "Stutsman",
+        "latitude": 46.9281,
+        "longitude": -98.703
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SISTERS OF MARY OF THE PRESENTATION LONG TERM CARE",
+        "chain_name": "SMP HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LUTHERAN SUNSET HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "333 EASTERN AVE",
+        "city": "GRAFTON",
+        "state": "ND",
+        "zip": "58237"
+      },
+      "contact": {
+        "phone": "7013521901",
+        "phone_formatted": "7013521901"
+      },
+      "location": {
+        "county": "Walsh",
+        "latitude": 48.4213,
+        "longitude": -97.399
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 87,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LUTHERAN SUNSET HOME CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BETHANY ON UNIVERSITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "201 S UNIVERSITY DR",
+        "city": "FARGO",
+        "state": "ND",
+        "zip": "58103"
+      },
+      "contact": {
+        "phone": "7012393000",
+        "phone_formatted": "7012393000"
+      },
+      "location": {
+        "county": "Cass",
+        "latitude": 46.8729,
+        "longitude": -96.798
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 172,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AMERICAN LUTHERAN HOMES INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WEDGEWOOD MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "804 MAIN ST W",
+        "city": "CAVALIER",
+        "state": "ND",
+        "zip": "58220"
+      },
+      "contact": {
+        "phone": "7012658453",
+        "phone_formatted": "7012658453"
+      },
+      "location": {
+        "county": "Pembina",
+        "latitude": 48.7934,
+        "longitude": -97.632
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEMBINA COUNTY MEMORIAL HOSPITAL ASSOCIATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY - PARK RIVER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "301 SOUTH COUNTY ROAD 12B",
+        "city": "PARK RIVER",
+        "state": "ND",
+        "zip": "58270"
+      },
+      "contact": {
+        "phone": "7012847115",
+        "phone_formatted": "7012847115"
+      },
+      "location": {
+        "county": "Walsh",
+        "latitude": 48.36,
+        "longitude": -97.795
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 44,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ST BENEDICTS HEALTH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "851 4TH AVE E",
+        "city": "DICKINSON",
+        "state": "ND",
+        "zip": "58601"
+      },
+      "contact": {
+        "phone": "7014567242",
+        "phone_formatted": "7014567242"
+      },
+      "location": {
+        "county": "Stark",
+        "latitude": 46.8876,
+        "longitude": -102.78
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BENEDICTINE LIVING COMMUNITIES, INC.",
+        "chain_name": "BENEDICTINE HEALTH SYSTEM"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ASHLEY MEDICAL CENTER NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "612 CENTER AVE N",
+        "city": "ASHLEY",
+        "state": "ND",
+        "zip": "58413"
+      },
+      "contact": {
+        "phone": "7012883433",
+        "phone_formatted": "7012883433"
+      },
+      "location": {
+        "county": "Mcintosh",
+        "latitude": 46.0396,
+        "longitude": -99.372
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 31,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ASHLEY MEDICAL CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HILL TOP HOME OF COMFORT INC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "95 HILL TOP DR",
+        "city": "KILLDEER",
+        "state": "ND",
+        "zip": "58640"
+      },
+      "contact": {
+        "phone": "7017645682",
+        "phone_formatted": "7017645682"
+      },
+      "location": {
+        "county": "Dunn",
+        "latitude": 47.3681,
+        "longitude": -102.76
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HILL TOP HOME OF COMFORT INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY - BOTTINEAU",
+      "type": "Nursing Home",
+      "address": {
+        "street": "725 E 10TH ST",
+        "city": "BOTTINEAU",
+        "state": "ND",
+        "zip": "58318"
+      },
+      "contact": {
+        "phone": "7012283796",
+        "phone_formatted": "7012283796"
+      },
+      "location": {
+        "county": "Bottineau",
+        "latitude": 48.8223,
+        "longitude": -100.43
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 52,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY - OAKES",
+      "type": "Nursing Home",
+      "address": {
+        "street": "213 N 9TH ST",
+        "city": "OAKES",
+        "state": "ND",
+        "zip": "58474"
+      },
+      "contact": {
+        "phone": "7017423274",
+        "phone_formatted": "7017423274"
+      },
+      "location": {
+        "county": "Dickey",
+        "latitude": 46.141,
+        "longitude": -98.088
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 52,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ANETA PARKVIEW HEALTH CTR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "113 5TH ST S",
+        "city": "ANETA",
+        "state": "ND",
+        "zip": "58212"
+      },
+      "contact": {
+        "phone": "7013264234",
+        "phone_formatted": "7013264234"
+      },
+      "location": {
+        "county": "Nelson",
+        "latitude": 47.6793,
+        "longitude": -97.991
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 35,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ANETA NURSING HOME INCORPORATED",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY - LARIMORE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "501 E FRONT ST",
+        "city": "LARIMORE",
+        "state": "ND",
+        "zip": "58251"
+      },
+      "contact": {
+        "phone": "7013436244",
+        "phone_formatted": "7013436244"
+      },
+      "location": {
+        "county": "Grand Forks",
+        "latitude": 47.9047,
+        "longitude": -97.618
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DAKOTA  ALPHA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1303 27TH STREET NW",
+        "city": "MANDAN",
+        "state": "ND",
+        "zip": "58554"
+      },
+      "contact": {
+        "phone": "7016630376",
+        "phone_formatted": "7016630376"
+      },
+      "location": {
+        "county": "Morton",
+        "latitude": 46.8502,
+        "longitude": -100.91
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 20,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HIT INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WENTZ LIVING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "555 LAKE AVE E",
+        "city": "NAPOLEON",
+        "state": "ND",
+        "zip": "58561"
+      },
+      "contact": {
+        "phone": "7017542381",
+        "phone_formatted": "7017542381"
+      },
+      "location": {
+        "county": "Logan",
+        "latitude": 46.501,
+        "longitude": -99.762
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NAPOLEON CARE CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FOUR SEASONS HEALTH CARE INC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "483 4TH ST SW",
+        "city": "FORMAN",
+        "state": "ND",
+        "zip": "58032"
+      },
+      "contact": {
+        "phone": "7017246211",
+        "phone_formatted": "7017246211"
+      },
+      "location": {
+        "county": "Sargent",
+        "latitude": 46.1037,
+        "longitude": -97.638
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 33,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FOUR SEASONS HEALTHCARE CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY - LAKOTA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "608 4TH AVE SW",
+        "city": "LAKOTA",
+        "state": "ND",
+        "zip": "58344"
+      },
+      "contact": {
+        "phone": "7012472902",
+        "phone_formatted": "7012472902"
+      },
+      "location": {
+        "county": "Nelson",
+        "latitude": 48.046,
+        "longitude": -98.348
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 38,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY MILLER POINTE A PROSPERA CO",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3500 21ST ST SE",
+        "city": "MANDAN",
+        "state": "ND",
+        "zip": "58554"
+      },
+      "contact": {
+        "phone": "7013231300",
+        "phone_formatted": "7013231300"
+      },
+      "location": {
+        "county": "Morton",
+        "latitude": 46.8043,
+        "longitude": -100.85
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ST ROSE CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "315 1ST ST SE",
+        "city": "LAMOURE",
+        "state": "ND",
+        "zip": "58458"
+      },
+      "contact": {
+        "phone": "7018835363",
+        "phone_formatted": "7018835363"
+      },
+      "location": {
+        "county": "La Moure",
+        "latitude": 46.3551,
+        "longitude": -98.293
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BENEDICTINE LIVING COMMUNITIES, INC.",
+        "chain_name": "BENEDICTINE HEALTH SYSTEM"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SMP HEALTH  - MARYHILL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "110 HILLCREST DR",
+        "city": "ENDERLIN",
+        "state": "ND",
+        "zip": "58027"
+      },
+      "contact": {
+        "phone": "7014373544",
+        "phone_formatted": "7014373544"
+      },
+      "location": {
+        "county": "Ransom",
+        "latitude": 46.6287,
+        "longitude": -97.608
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 42,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SISTERS OF MARY OF THE PRESENTATION LONG TERM CARE",
+        "chain_name": "SMP HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SOURIS VALLEY CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "300 MAIN ST S",
+        "city": "VELVA",
+        "state": "ND",
+        "zip": "58790"
+      },
+      "contact": {
+        "phone": "7013382072",
+        "phone_formatted": "7013382072"
+      },
+      "location": {
+        "county": "Mchenry",
+        "latitude": 48.0529,
+        "longitude": -100.93
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SOURIS VALLEY CARE CENTER, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ELM CREST MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 ELM AVE, #396",
+        "city": "NEW SALEM",
+        "state": "ND",
+        "zip": "58563"
+      },
+      "contact": {
+        "phone": "7018437526",
+        "phone_formatted": "7018437526"
+      },
+      "location": {
+        "county": "Morton",
+        "latitude": 46.8537,
+        "longitude": -101.44
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ELM CREST MANOR",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WOODSIDE VILLAGE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4000 24TH AVE S",
+        "city": "GRAND FORKS",
+        "state": "ND",
+        "zip": "58201"
+      },
+      "contact": {
+        "phone": "7017877500",
+        "phone_formatted": "7017877500"
+      },
+      "location": {
+        "county": "Grand Forks",
+        "latitude": 47.8966,
+        "longitude": -97.086
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 138,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "4000 VALLEY SQUARE INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NORTH DAKOTA VETERANS HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1600 VETERANS DRIVE",
+        "city": "LISBON",
+        "state": "ND",
+        "zip": "58054"
+      },
+      "contact": {
+        "phone": "7016836500",
+        "phone_formatted": "7016836500"
+      },
+      "location": {
+        "county": "Ransom",
+        "latitude": 46.4153,
+        "longitude": -97.653
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 52,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH DAKOTA VETERANS HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GARRISON MEM HOSP NSG FAC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "407 3RD AVE SE",
+        "city": "GARRISON",
+        "state": "ND",
+        "zip": "58540"
+      },
+      "contact": {
+        "phone": "7014632275",
+        "phone_formatted": "7014632275"
+      },
+      "location": {
+        "county": "Mclean",
+        "latitude": 47.6484,
+        "longitude": -101.41
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 26,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GARRISON MEMORIAL HOSPITAL",
+        "chain_name": "COMMONSPIRIT HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PARKSIDE LUTHERAN HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "501 3RD AVE W",
+        "city": "LISBON",
+        "state": "ND",
+        "zip": "58054"
+      },
+      "contact": {
+        "phone": "7016835239",
+        "phone_formatted": "7016835239"
+      },
+      "location": {
+        "county": "Ransom",
+        "latitude": 46.4435,
+        "longitude": -97.69
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PARKSIDE HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RICHARDTON HEALTH CENTER INC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8885 HIGHWAY 10",
+        "city": "RICHARDTON",
+        "state": "ND",
+        "zip": "58652"
+      },
+      "contact": {
+        "phone": "7019743304",
+        "phone_formatted": "7019743304"
+      },
+      "location": {
+        "county": "Stark",
+        "latitude": 46.8841,
+        "longitude": -102.32
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 29,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RICHARDTON HEALTH CENTER, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BETHANY ON 42ND",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4255 30TH AVE S",
+        "city": "FARGO",
+        "state": "ND",
+        "zip": "58104"
+      },
+      "contact": {
+        "phone": "7014788900",
+        "phone_formatted": "7014788900"
+      },
+      "location": {
+        "county": "Cass",
+        "latitude": 46.9156,
+        "longitude": -96.798
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 116,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BETHANY ON 42ND",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SHEYENNE CROSSINGS CARE CENTER/TCU",
+      "type": "Nursing Home",
+      "address": {
+        "street": "125 13TH AVENUE WEST",
+        "city": "WEST FARGO",
+        "state": "ND",
+        "zip": "58078"
+      },
+      "contact": {
+        "phone": "7014786100",
+        "phone_formatted": "7014786100"
+      },
+      "location": {
+        "county": "Cass",
+        "latitude": 46.8624,
+        "longitude": -96.9
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 64,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EVENTIDE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GOOD SAMARITAN SOCIETY AUGUSTA PLACE A PROSPERA CO",
+      "type": "Nursing Home",
+      "address": {
+        "street": "301 LORRAIN DRIVE",
+        "city": "BISMARCK",
+        "state": "ND",
+        "zip": "58503"
+      },
+      "contact": {
+        "phone": "7012551084",
+        "phone_formatted": "7012551084"
+      },
+      "location": {
+        "county": "Burleigh",
+        "latitude": 46.8496,
+        "longitude": -100.79
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 48,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ST GABRIEL'S COMMUNITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4580 COLEMAN STREET, SUITE 1",
+        "city": "BISMARCK",
+        "state": "ND",
+        "zip": "58503"
+      },
+      "contact": {
+        "phone": "7017514224",
+        "phone_formatted": "7017514224"
+      },
+      "location": {
+        "county": "Burleigh",
+        "latitude": 46.8597,
+        "longitude": -100.77
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BENEDICTINE LIVING COMMUNITIES-BISMARCK, INC.",
+        "chain_name": "BENEDICTINE HEALTH SYSTEM"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "EVENTIDE FARGO",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3225 51ST ST  S",
+        "city": "FARGO",
+        "state": "ND",
+        "zip": "58104"
+      },
+      "contact": {
+        "phone": "7014781800",
+        "phone_formatted": "7014781800"
+      },
+      "location": {
+        "county": "Cass",
+        "latitude": 46.8547,
+        "longitude": -96.871
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 98,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EVENTIDE FARGO LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MISSOURI SLOPE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4916 N WASHINGTON ST",
+        "city": "BISMARCK",
+        "state": "ND",
+        "zip": "58503"
+      },
+      "contact": {
+        "phone": "7012239407",
+        "phone_formatted": "7012239407"
+      },
+      "location": {
+        "county": "Burleigh",
+        "latitude": 46.8591,
+        "longitude": -100.79
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 192,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MISSOURI SLOPE LUTHERAN CARE CENTER, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FARGO ELIM HEALTH CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3534 UNIVERSITY DRIVE S",
+        "city": "FARGO",
+        "state": "ND",
+        "zip": "58104"
+      },
+      "contact": {
+        "phone": "7012711862",
+        "phone_formatted": "7012711862"
+      },
+      "location": {
+        "county": "Cass",
+        "latitude": 46.8259,
+        "longitude": -96.803
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 88,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ELIM HOMES INC",
+        "chain_name": "CASSIA"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    }
+  ]
+}

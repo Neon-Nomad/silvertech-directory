@@ -1,0 +1,657 @@
+{
+  "state": "District of Columbia",
+  "state_code": "DC",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 17,
+    "total_nursing_homes": 17,
+    "total_assisted_living": 0,
+    "total_certified_beds": 2485,
+    "counties_served": 1,
+    "average_beds_per_facility": 146.2
+  },
+  "quality_distribution": {
+    "five_star": 5,
+    "four_star": 1,
+    "three_star": 6,
+    "two_star": 3,
+    "one_star": 2
+  },
+  "counties": {
+    "District of Columbia": {
+      "facility_count": 17,
+      "total_beds": 2485
+    }
+  },
+  "facilities": [
+    {
+      "name": "WASHINGTON CTR FOR AGING SVCS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2601 18TH STREET NE",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20018"
+      },
+      "contact": {
+        "phone": "2025416080",
+        "phone_formatted": "2025416080"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.9234,
+        "longitude": -76.979
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 259,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STODDARD BAPTIST GLOBAL CARE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SERENITY REHABILITATION AND HEALTH CENTER LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1380 SOUTHERN AVE SE",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20032"
+      },
+      "contact": {
+        "phone": "2022795880",
+        "phone_formatted": "2022795880"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.8358,
+        "longitude": -76.983
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 183,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SERENITY REHABILITATION AND HEALTH CENTER LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DEANWOOD REHABILITATION AND WELLNESS CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5000 NANNIE HELEN BURROUGHS AVE. NE",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20019"
+      },
+      "contact": {
+        "phone": "2023997504",
+        "phone_formatted": "2023997504"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.8983,
+        "longitude": -76.93
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 296,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GRANT PARK SNF, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "STODDARD BAPTIST NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1818 NEWTON ST. NW",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20010"
+      },
+      "contact": {
+        "phone": "2023287400",
+        "phone_formatted": "2023287400"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.9342,
+        "longitude": -77.042
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 164,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STODDARD BAPTIST HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CAPITOL CITY REHAB AND HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2425 25TH STREET SE",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20020"
+      },
+      "contact": {
+        "phone": "2028893600",
+        "phone_formatted": "2028893600"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.8588,
+        "longitude": -76.97
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 360,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CAPITOL CITY SNF LLC",
+        "chain_name": "PRESTIGE HEALTHCARE ADMINISTRATIVE SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BRIDGEPOINT SUB-ACUTE & REHAB NATIONAL HARBORSIDE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4601 MARTIN LUTHER KING JR AVENUE SW",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20032"
+      },
+      "contact": {
+        "phone": "2025745700",
+        "phone_formatted": "2025745700"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.8246,
+        "longitude": -77.012
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 125,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DCA HADLEY SNF, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LISNER LOUISE DICKSON HURTHOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5425 WESTERN AVE NW",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20015"
+      },
+      "contact": {
+        "phone": "2029666667",
+        "phone_formatted": "2029666667"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.9625,
+        "longitude": -77.084
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ABRAHAM AND LAURA LISNER HOME FOR AGED WOMEN",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "KNOLLWOOD HSC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6200 OREGON AVE NW",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20015"
+      },
+      "contact": {
+        "phone": "2025410150",
+        "phone_formatted": "2025410150"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.971,
+        "longitude": -77.053
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 69,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE ARMY DISTAFF FOUNDATION INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BRIDGEPOINT SUBACUTE AND REHAB CAPITOL HILL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "223 7TH STREET NE",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20002"
+      },
+      "contact": {
+        "phone": "2025465700",
+        "phone_formatted": "2025465700"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.8925,
+        "longitude": -76.996
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 117,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DCA CAPITOL HILL SNF LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "INGLESIDE AT ROCK CREEK",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3050 MILITARY ROAD NW",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20015"
+      },
+      "contact": {
+        "phone": "2023638310",
+        "phone_formatted": "2023638310"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.961,
+        "longitude": -77.062
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 34,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "INGLESIDE AT ROCK CREEK INC",
+        "chain_name": "INGLESIDE ENGAGED LIVING"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SIBLEY MEM HOSP RENAISSANCE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5255 LOUGHBORO ROAD NW",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20016"
+      },
+      "contact": {
+        "phone": "2025374000",
+        "phone_formatted": "2025374000"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.9357,
+        "longitude": -77.109
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 45,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LUCY WEBB HAYES NATIONAL TRAINING SCHOOL FOR DEACONESSES & MISSIONARIE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "INSPIRE REHABILITATION AND HEALTH CENTER LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2131 O STREET NW",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20037"
+      },
+      "contact": {
+        "phone": "2027852577",
+        "phone_formatted": "2027852577"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.9086,
+        "longitude": -77.048
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 180,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "INSPIRE REHABILITATION AND HEALTH CENTER LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ASCENSION LIVING CARROLL MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "725 BUCHANAN ST., NE",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20017"
+      },
+      "contact": {
+        "phone": "2028547100",
+        "phone_formatted": "2028547100"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.9463,
+        "longitude": -76.997
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 252,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CARROLL MANOR",
+        "chain_name": "ASCENSION LIVING"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "UNIQUE REHABILITATION AND HEALTH CENTER LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "901 FIRST STREET NW",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20001"
+      },
+      "contact": {
+        "phone": "2025352011",
+        "phone_formatted": "2025352011"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.9013,
+        "longitude": -77.012
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 230,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "UNIQUE REHABILITATION AND HEALTH CENTER LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FOREST HILLS OF DC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4901 CONNECTICUT AVENUE, NW",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20008"
+      },
+      "contact": {
+        "phone": "2029667623",
+        "phone_formatted": "2029667623"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.9533,
+        "longitude": -77.069
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 55,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE METHODIST HOME OF THE DISTRICT OF COLUMBIA",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE HSC PEDIATRIC SKILLED NURSING FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1731 BUNKER HILL ROAD  NE",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20017"
+      },
+      "contact": {
+        "phone": "2028324400",
+        "phone_formatted": "2028324400"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.9422,
+        "longitude": -76.982
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 16,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HOSPITAL FOR SICK CHILDREN",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "JEANNE JUGAN RESIDENCE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4200 HAREWOOD ROAD NE",
+        "city": "WASHINGTON",
+        "state": "DC",
+        "zip": "20017"
+      },
+      "contact": {
+        "phone": "2022691831",
+        "phone_formatted": "2022691831"
+      },
+      "location": {
+        "county": "The District",
+        "latitude": 38.939,
+        "longitude": -77.003
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    }
+  ]
+}

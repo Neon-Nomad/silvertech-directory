@@ -16,12 +16,50 @@ type Facility = {
   source_url?: string;
 };
 
-const facilitiesPath = path.resolve(process.cwd(), 'src/data/seeds/assisted_living_facilities_national.json');
-const facilitiesRaw = fs.readFileSync(facilitiesPath, 'utf-8');
-const facilitiesData: unknown = JSON.parse(facilitiesRaw);
-const facilitiesRawArray: Facility[] = Array.isArray(facilitiesData)
-  ? facilitiesData
-  : Object.values((facilitiesData || {}) as Record<string, Facility[]>).flat();
+const loadFacilities = (): Facility[] => {
+  const root = process.cwd();
+  const stateDir = path.resolve(root, 'all_51_states_facilities');
+  if (fs.existsSync(stateDir)) {
+    const files = fs.readdirSync(stateDir).filter((file) => file.endsWith('.json'));
+    const merged: Facility[] = [];
+    for (const file of files) {
+      const raw = fs.readFileSync(path.join(stateDir, file), 'utf-8');
+      const data = JSON.parse(raw) as {
+        state?: string;
+        state_code?: string;
+        facilities?: Array<{
+          name?: string;
+          type?: string;
+          address?: { street?: string; city?: string; state?: string; zip?: string };
+          contact?: { phone?: string; phone_formatted?: string };
+          location?: { county?: string };
+        }>;
+      };
+      if (!Array.isArray(data.facilities)) continue;
+      for (const facility of data.facilities) {
+        const address = facility.address || {};
+        merged.push({
+          name: facility.name || 'Unknown Facility',
+          city: address.city || '',
+          state: address.state || data.state_code || '',
+          address_line1: address.street || '',
+          postal_code: address.zip || '',
+          phone: facility.contact?.phone_formatted || facility.contact?.phone || ''
+        });
+      }
+    }
+    return merged;
+  }
+
+  const facilitiesPath = path.resolve(root, 'src/data/seeds/assisted_living_facilities_national.json');
+  const facilitiesRaw = fs.readFileSync(facilitiesPath, 'utf-8');
+  const facilitiesData: unknown = JSON.parse(facilitiesRaw);
+  return Array.isArray(facilitiesData)
+    ? facilitiesData
+    : Object.values((facilitiesData || {}) as Record<string, Facility[]>).flat();
+};
+
+const facilitiesRawArray: Facility[] = loadFacilities();
 
 const toSlug = (value: string) =>
   value

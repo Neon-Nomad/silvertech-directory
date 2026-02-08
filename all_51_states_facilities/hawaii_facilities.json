@@ -1,0 +1,1594 @@
+{
+  "state": "Hawaii",
+  "state_code": "HI",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 42,
+    "total_nursing_homes": 42,
+    "total_assisted_living": 0,
+    "total_certified_beds": 4248,
+    "counties_served": 4,
+    "average_beds_per_facility": 101.1
+  },
+  "quality_distribution": {
+    "five_star": 15,
+    "four_star": 4,
+    "three_star": 13,
+    "two_star": 6,
+    "one_star": 3
+  },
+  "counties": {
+    "Hawaii": {
+      "facility_count": 7,
+      "total_beds": 779
+    },
+    "Maui": {
+      "facility_count": 4,
+      "total_beds": 457
+    },
+    "Kauai": {
+      "facility_count": 5,
+      "total_beds": 333
+    },
+    "Honolulu": {
+      "facility_count": 26,
+      "total_beds": 2679
+    }
+  },
+  "facilities": [
+    {
+      "name": "HILO BENIOFF MEDICAL CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1190 WAIANUENUE AVENUE",
+        "city": "HILO",
+        "state": "HI",
+        "zip": "96720"
+      },
+      "contact": {
+        "phone": "8089323000",
+        "phone_formatted": "8089323000"
+      },
+      "location": {
+        "county": "Hawaii",
+        "latitude": 19.7174,
+        "longitude": -155.11
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 52,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HILO BENIOFF MEDICAL CENTER",
+        "chain_name": "HAWAII HEALTH SYSTEMS CORPORATION"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "KULA HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 KEOKEA PLACE",
+        "city": "KULA",
+        "state": "HI",
+        "zip": "96790"
+      },
+      "contact": {
+        "phone": "8088781221",
+        "phone_formatted": "8088781221"
+      },
+      "location": {
+        "county": "Maui",
+        "latitude": 20.7012,
+        "longitude": -156.36
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAUI HEALTH SYSTEM A KAISER FOUNDATION HOSPITALS LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GARDEN ISLE HEALTHCARE AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3-3420 KUHIO HIGHWAY, SUITE 300",
+        "city": "LIHUE",
+        "state": "HI",
+        "zip": "96766"
+      },
+      "contact": {
+        "phone": "8082451802",
+        "phone_formatted": "8082451802"
+      },
+      "location": {
+        "county": "Kauai",
+        "latitude": 21.9789,
+        "longitude": -159.37
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 110,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GARDEN ISLE HEALTHCARE, LLC",
+        "chain_name": "OHANA PACIFIC MANAGEMENT CO."
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HALE MAKUA - KAHULUI",
+      "type": "Nursing Home",
+      "address": {
+        "street": "472 KAULANA STREET",
+        "city": "KAHULUI",
+        "state": "HI",
+        "zip": "96732"
+      },
+      "contact": {
+        "phone": "8088772761",
+        "phone_formatted": "8088772761"
+      },
+      "location": {
+        "county": "Maui",
+        "latitude": 20.8792,
+        "longitude": -156.48
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 252,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HALE MAKUA HEALTH SERVICES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Maluhia",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1027 Hala Drive",
+        "city": "Honolulu",
+        "state": "HI",
+        "zip": "96817"
+      },
+      "contact": {
+        "phone": "8088323000",
+        "phone_formatted": "8088323000"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3297,
+        "longitude": -157.86
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 158,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MALUHIA",
+        "chain_name": "HAWAII HEALTH SYSTEMS CORPORATION"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LEAHI HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3675 KILAUEA AVENUE",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96816"
+      },
+      "contact": {
+        "phone": "8087338000",
+        "phone_formatted": "8087338000"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.2736,
+        "longitude": -157.8
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 155,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LEAHI HOSPITAL",
+        "chain_name": "HAWAII HEALTH SYSTEMS CORPORATION"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HALE NANI REHABILITATION AND NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1677 PENSACOLA STREET",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96822"
+      },
+      "contact": {
+        "phone": "8085373371",
+        "phone_formatted": "8085373371"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3086,
+        "longitude": -157.84
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 288,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HALE NANI REHAB & NURSING CENTER LLC",
+        "chain_name": "VOLARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MAUNALANI NURSING AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5113 MAUNALANI CIRCLE",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96816"
+      },
+      "contact": {
+        "phone": "8087320771",
+        "phone_formatted": "8087320771"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.2979,
+        "longitude": -157.79
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAUNALANI NURSING AND REHABILITATION CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ARCADIA RETIREMENT RESIDENCE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1434 PUNAHOU STREET",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96822"
+      },
+      "contact": {
+        "phone": "8089410941",
+        "phone_formatted": "8089410941"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3015,
+        "longitude": -157.83
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 91,
+        "provider_type": "Medicare",
+        "legal_business_name": "ARCADIA RETIREMENT RESIDENCE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE CARE CENTER OF HONOLULU",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1900 BACHELOT STREET",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96817"
+      },
+      "contact": {
+        "phone": "8085315302",
+        "phone_formatted": "8085315302"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3234,
+        "longitude": -157.85
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 182,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DIVERSIFIED MEDICAL ENTERPRISES INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVALON CARE CENTER - HONOLULU, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1930 KAMEHAMEHA IV RD",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96819"
+      },
+      "contact": {
+        "phone": "8088474834",
+        "phone_formatted": "8088474834"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3452,
+        "longitude": -157.87
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 108,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AVALON CARE CENTER - HONOLULU, LLC",
+        "chain_name": "AVALON HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "KAUAI VETERANS MEMORIAL HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4643 WAIMEA CANYON DRIVE",
+        "city": "WAIMEA",
+        "state": "HI",
+        "zip": "96796"
+      },
+      "contact": {
+        "phone": "8083389431",
+        "phone_formatted": "8083389431"
+      },
+      "location": {
+        "county": "Kauai",
+        "latitude": 21.9604,
+        "longitude": -159.67
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 20,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KAUAI VETERANS MEMORIAL HOSPITAL",
+        "chain_name": "HAWAII HEALTH SYSTEMS CORPORATION"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LANAI COMMUNITY HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "628 7TH STREET",
+        "city": "LANAI CITY",
+        "state": "HI",
+        "zip": "96763"
+      },
+      "contact": {
+        "phone": "8085658450",
+        "phone_formatted": "8085658450"
+      },
+      "location": {
+        "county": "Maui",
+        "latitude": 20.8268,
+        "longitude": -156.92
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 10,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAUI HEALTH SYSTEM A KAISER FOUNDATION HOSPITALS LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NUUANU HALE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2900 PALI HIGHWAY",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96817"
+      },
+      "contact": {
+        "phone": "8085956311",
+        "phone_formatted": "8085956311"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3398,
+        "longitude": -157.86
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 75,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NUUANU HALE, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "KUAKINI GERIATRIC CARE, INC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "347 NORTH KUAKINI STREET",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96817"
+      },
+      "contact": {
+        "phone": "8085479357",
+        "phone_formatted": "8085479357"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3222,
+        "longitude": -157.86
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 187,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KUAKINI GERIATRIC CARE, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SAMUEL MAHELONA MEMORIAL HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4800 KAWAIHAU ROAD",
+        "city": "KAPAA",
+        "state": "HI",
+        "zip": "96746"
+      },
+      "contact": {
+        "phone": "8088224961",
+        "phone_formatted": "8088224961"
+      },
+      "location": {
+        "county": "Kauai",
+        "latitude": 22.0876,
+        "longitude": -159.31
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAMUEL MAHELONA MEMORIAL HOSPITAL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Honoka'a Hospital & Skilled Nursing",
+      "type": "Nursing Home",
+      "address": {
+        "street": "45-547 PLUMERIA STREET",
+        "city": "HONOKAA",
+        "state": "HI",
+        "zip": "96727"
+      },
+      "contact": {
+        "phone": "8089324100",
+        "phone_formatted": "8089324100"
+      },
+      "location": {
+        "county": "Hawaii",
+        "latitude": 20.0771,
+        "longitude": -155.47
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HONOKAA HOSPITAL & SKILLED NURSING",
+        "chain_name": "HAWAII HEALTH SYSTEMS CORPORATION"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HARRY AND JEANETTE WEINBERG CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "45-090 NAMOKU ST",
+        "city": "KANEOHE",
+        "state": "HI",
+        "zip": "96744"
+      },
+      "contact": {
+        "phone": "8082471670",
+        "phone_formatted": "8082471670"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.4014,
+        "longitude": -157.79
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 44,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Aloha Nursing & Rehab Centre",
+      "type": "Nursing Home",
+      "address": {
+        "street": "45-545 Kamehameha Highway",
+        "city": "Kaneohe",
+        "state": "HI",
+        "zip": "96744"
+      },
+      "contact": {
+        "phone": "8082472220",
+        "phone_formatted": "8082472220"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3771,
+        "longitude": -157.78
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 141,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ISLAND HEALTH CARE LIMITED PARTNERSHIP",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF HILO",
+      "type": "Nursing Home",
+      "address": {
+        "street": "944 WEST KAWAILANI STREET",
+        "city": "HILO",
+        "state": "HI",
+        "zip": "96720"
+      },
+      "contact": {
+        "phone": "8089599151",
+        "phone_formatted": "8089599151"
+      },
+      "location": {
+        "county": "Hawaii",
+        "latitude": 19.6828,
+        "longitude": -155.09
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 252,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HILO MEDICAL INVESTORS LTD",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LILIHA HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1814 LILIHA STREET",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96817"
+      },
+      "contact": {
+        "phone": "8085379557",
+        "phone_formatted": "8085379557"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3237,
+        "longitude": -157.86
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 92,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FAMILY HEALTH II, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "OAHU CARE FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1808 SOUTH BERETANIA STREET",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96826"
+      },
+      "contact": {
+        "phone": "8089731900",
+        "phone_formatted": "8089731900"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.2975,
+        "longitude": -157.83
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 82,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PSH OAHU LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PEARL CITY POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "919 LEHUA AVENUE",
+        "city": "PEARL CITY",
+        "state": "HI",
+        "zip": "96782"
+      },
+      "contact": {
+        "phone": "8084531919",
+        "phone_formatted": "8084531919"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3916,
+        "longitude": -157.97
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 122,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PSH PEARL CITY LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HALE ANUENUE RESTORATIVE CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1333 WAIANUENUE AVENUE",
+        "city": "HILO",
+        "state": "HI",
+        "zip": "96720"
+      },
+      "contact": {
+        "phone": "8089616644",
+        "phone_formatted": "8089616644"
+      },
+      "location": {
+        "county": "Hawaii",
+        "latitude": 19.7173,
+        "longitude": -155.11
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HILO MEDICAL INVESTORS LTD",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PU'UWAI 'O MAKAHA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "84-390 JADE STREET",
+        "city": "WAIANAE",
+        "state": "HI",
+        "zip": "96792"
+      },
+      "contact": {
+        "phone": "8086959508",
+        "phone_formatted": "8086959508"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.4656,
+        "longitude": -158.21
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 93,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "INTEGRATED HEALTH RESOURCES, LLC",
+        "chain_name": "OHANA PACIFIC MANAGEMENT CO."
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ANN PEARL NURSING FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "45-181 WAIKALUA ROAD",
+        "city": "KANEOHE",
+        "state": "HI",
+        "zip": "96744"
+      },
+      "contact": {
+        "phone": "8082478558",
+        "phone_formatted": "8082478558"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.4149,
+        "longitude": -157.79
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 104,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ANN PEARL CARE HOME, INC",
+        "chain_name": "OHANA PACIFIC MANAGEMENT CO."
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HALE MALAMALAMA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6163 SUMMER STREET",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96821"
+      },
+      "contact": {
+        "phone": "8083960537",
+        "phone_formatted": "8083960537"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.2855,
+        "longitude": -157.72
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ONO ENTERPRISE LTD",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "KA PUNAWAI OLA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "91-575 FARRINGTON HIGHWAY",
+        "city": "KAPOLEI",
+        "state": "HI",
+        "zip": "96707"
+      },
+      "contact": {
+        "phone": "8086749262",
+        "phone_formatted": "8086749262"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3404,
+        "longitude": -158.1
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "OAHU HEALTHCARE, LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF KONA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "78-6957 KAMEHAMEHA III ROAD",
+        "city": "KAILUA KONA",
+        "state": "HI",
+        "zip": "96740"
+      },
+      "contact": {
+        "phone": "8083222790",
+        "phone_formatted": "8083222790"
+      },
+      "location": {
+        "county": "Hawaii",
+        "latitude": 19.5629,
+        "longitude": -155.96
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 94,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KONA MEDICAL INVESTORS, LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Hi'olani Care Center at Kahala Nui",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4389 Malia Street",
+        "city": "Honolulu",
+        "state": "HI",
+        "zip": "96821"
+      },
+      "contact": {
+        "phone": "8082187052",
+        "phone_formatted": "8082187052"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.2805,
+        "longitude": -157.78
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 20,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KAHALA SENIOR LIVING COMMUNITY INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HALE MAKUA - WAILUKU",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1540 LOWER MAIN STREET",
+        "city": "WAILUKU",
+        "state": "HI",
+        "zip": "96793"
+      },
+      "contact": {
+        "phone": "8082431722",
+        "phone_formatted": "8082431722"
+      },
+      "location": {
+        "county": "Maui",
+        "latitude": 20.8933,
+        "longitude": -156.49
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HALE MAKUA HEALTH SERVICES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Kulana Malama",
+      "type": "Nursing Home",
+      "address": {
+        "street": "91-1360 KARAYAN STREET",
+        "city": "EWA BEACH",
+        "state": "HI",
+        "zip": "96706"
+      },
+      "contact": {
+        "phone": "8086811200",
+        "phone_formatted": "8086811200"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3483,
+        "longitude": -158.03
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 33,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PSH KM LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "YUKIO OKUTSU STATE VETERANS HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1180 WAIANUENUE AVENUE",
+        "city": "HILO",
+        "state": "HI",
+        "zip": "96720"
+      },
+      "contact": {
+        "phone": "8089611500",
+        "phone_formatted": "8089611500"
+      },
+      "location": {
+        "county": "Hawaii",
+        "latitude": 19.7175,
+        "longitude": -155.11
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 95,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HAWAII HEALTH SYSTEMS CORPORATION",
+        "chain_name": "HAWAII HEALTH SYSTEMS CORPORATION"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PALOLO CHINESE HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2459 10TH AVENUE",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96816"
+      },
+      "contact": {
+        "phone": "8087372555",
+        "phone_formatted": "8087372555"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3036,
+        "longitude": -157.79
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 113,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PALOLO CHINESE HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Kauai Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "9611 Waena Road",
+        "city": "Waimea",
+        "state": "HI",
+        "zip": "96796"
+      },
+      "contact": {
+        "phone": "8083381681",
+        "phone_formatted": "8083381681"
+      },
+      "location": {
+        "county": "Kauai",
+        "latitude": 21.9577,
+        "longitude": -159.67
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 53,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KAUAI CARE CENTER, LLC",
+        "chain_name": "REGENCY PACIFIC MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HALE KUPUNA HERITAGE HOME, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4297A OMAO ROAD",
+        "city": "KOLOA",
+        "state": "HI",
+        "zip": "96756"
+      },
+      "contact": {
+        "phone": "8087427591",
+        "phone_formatted": "8087427591"
+      },
+      "location": {
+        "county": "Kauai",
+        "latitude": 21.9259,
+        "longitude": -159.49
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 84,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HALE KUPUNA HERITAGE HOME, LLC",
+        "chain_name": "OHANA PACIFIC MANAGEMENT CO."
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "15 CRAIGSIDE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "15 CRAIGSIDE PLACE",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96817"
+      },
+      "contact": {
+        "phone": "8085237000",
+        "phone_formatted": "8085237000"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3232,
+        "longitude": -157.85
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 45,
+        "provider_type": "Medicare",
+        "legal_business_name": "CRAIGSIDE RETIREMENT RESIDENCE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE CHING VILLAS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2230 LILIHA STREET",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96817"
+      },
+      "contact": {
+        "phone": "8085476000",
+        "phone_formatted": "8085476000"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.3285,
+        "longitude": -157.85
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 163,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LILIHA KUPUNA SNF LLC",
+        "chain_name": "OHANA PACIFIC MANAGEMENT CO."
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LEGACY HILO REHABILITATION & NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "563 KAUMANA DRIVE",
+        "city": "HILO",
+        "state": "HI",
+        "zip": "96720"
+      },
+      "contact": {
+        "phone": "8084980184",
+        "phone_formatted": "8084980184"
+      },
+      "location": {
+        "county": "Hawaii",
+        "latitude": 19.7043,
+        "longitude": -155.11
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HILO SNF LLC",
+        "chain_name": "OHANA PACIFIC MANAGEMENT CO."
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "KALAKAUA GARDENS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1723 KALAKAUA AVENUE",
+        "city": "HONOLULU",
+        "state": "HI",
+        "zip": "96826"
+      },
+      "contact": {
+        "phone": "8085182273",
+        "phone_formatted": "8085182273"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.2917,
+        "longitude": -157.84
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 49,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ISLAND PARADISE INVESTMENTS LP",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Islands Skilled Nursing & Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1205 Alexander Street",
+        "city": "Honolulu",
+        "state": "HI",
+        "zip": "96826"
+      },
+      "contact": {
+        "phone": "8087738700",
+        "phone_formatted": "8087738700"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.2976,
+        "longitude": -157.83
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 42,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ISLANDS SKILLED NURSING AND REHABILITATION, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HALE OLA KINO BY ARCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1314 KALAKAUA AVE SECOND FLOOR",
+        "city": "HON",
+        "state": "HI",
+        "zip": "96826"
+      },
+      "contact": {
+        "phone": "8089834444",
+        "phone_formatted": "8089834444"
+      },
+      "location": {
+        "county": "Honolulu",
+        "latitude": 21.2941,
+        "longitude": -157.83
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 32,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HALE OLA KINO BY ARCADIA",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    }
+  ]
+}
