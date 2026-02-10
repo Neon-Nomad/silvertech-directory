@@ -148,7 +148,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
                 <span className="text-[10px] uppercase tracking-[0.3em] text-primary-600 font-semibold">Your Selection</span>
                 <div className="mt-3 rounded-xl overflow-hidden bg-slate-100 h-44">
                   {baseFacility.image ? (
-                    <img src={baseFacility.image} alt={baseFacility.name} className="w-full h-full object-cover" />
+                    <img src={baseFacility.image} alt={baseFacility.name} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-2xl font-bold text-slate-400">
                       {baseFacility.name?.charAt(0)}
@@ -182,7 +182,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
                 </div>
                 <div className="mt-3 rounded-xl overflow-hidden bg-slate-100 h-44">
                   {selected?.image ? (
-                    <img src={selected.image} alt={selected.name} className="w-full h-full object-cover" />
+                    <img src={selected.image} alt={selected.name} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-2xl font-bold text-slate-400">
                       {selected?.name?.charAt(0)}
@@ -280,7 +280,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
                         <div className="flex items-center gap-3">
                           <div className="w-14 h-14 rounded-lg overflow-hidden bg-slate-100">
                             {facility.image ? (
-                              <img src={facility.image} alt={facility.name} className="w-full h-full object-cover" />
+                              <img src={facility.image} alt={facility.name} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                             ) : (
                               <div className="w-full h-full flex items-center justify-center text-slate-400 font-semibold">
                                 {facility.name?.charAt(0)}

@@ -361,7 +361,14 @@ export const FacilityDetails: React.FC = () => {
             </div>
 
             <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src={heroImage} alt={`${facility.name} hero`} className="w-full h-[260px] object-cover" />
+              <img
+                src={heroImage}
+                alt={`${facility.name} hero`}
+                className="w-full h-[260px] object-cover"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
+              />
             </div>
           </div>
         </Card>

@@ -60,7 +60,7 @@ export const MyFacilities: React.FC = () => {
               <div className="flex gap-4">
                 <div className="w-24 h-24 bg-slate-100 rounded-lg overflow-hidden flex-shrink-0">
                   {facility.image ? (
-                    <img src={facility.image} alt={facility.name} className="w-full h-full object-cover" />
+                    <img src={facility.image} alt={facility.name} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-slate-400">No Img</div>
                   )}

@@ -170,6 +170,8 @@ export const FacilityPhotoManager: React.FC<FacilityPhotoManagerProps> = ({ faci
                 src={photo.url} 
                 alt={photo.caption || 'Facility photo'} 
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
                 <button

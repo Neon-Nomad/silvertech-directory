@@ -98,6 +98,9 @@ export const Home: React.FC = () => {
               src="/images/hero_image.jpeg"
               alt="Senior living community"
               className="w-full h-full object-cover"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
             />
             <div className="absolute inset-0 bg-slate-900/25" />
             <div className="absolute inset-0 flex flex-col justify-end p-8 pb-24">
@@ -226,7 +229,7 @@ export const Home: React.FC = () => {
                 onClick={() => navigate('/search')}
               >
                 <div className="w-24 h-24 flex-shrink-0">
-                  <img className="w-full h-full object-cover" src={item.image} alt={item.title} />
+                  <img className="w-full h-full object-cover" src={item.image} alt={item.title} loading="lazy" decoding="async" />
                 </div>
                 <div className="px-4 py-2 flex-1 text-left">
                   <h4 className="font-serif font-semibold text-slate-900">{item.title}</h4>

@@ -44,6 +44,8 @@ export const FacilitiesPartnerPage: React.FC = () => {
               src="/images/hero_image.jpeg"
               alt="Senior living community"
               className="w-full h-64 object-cover"
+              loading="eager"
+              decoding="async"
             />
           </div>
           <Card>

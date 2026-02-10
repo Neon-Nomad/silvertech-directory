@@ -38,7 +38,7 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
               {/* Image Placeholder or Real Image */}
               <div className="w-full md:w-48 h-32 bg-slate-100 rounded-lg flex-shrink-0 flex items-center justify-center">
                 {facility.image ? (
-                  <img src={facility.image} alt={facility.name} className="w-full h-full object-cover rounded-lg" />
+                  <img src={facility.image} alt={facility.name} className="w-full h-full object-cover rounded-lg" loading="lazy" decoding="async" />
                 ) : (
                   <Building2 className="w-12 h-12 text-slate-300" />
                 )}
