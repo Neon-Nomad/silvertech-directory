@@ -26,6 +26,7 @@ import { ALL_STATES } from '@/src/data/states';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { CompareToolModal } from '@/features/family/discovery/CompareToolModal';
 import { LeadModal } from '@/features/family/discovery/LeadModal';
+import { trackEvent } from '@/src/utils/analytics';
 import { Card } from '@/components/ui/Card';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { FactGrid } from '@/components/ui/FactGrid';
@@ -563,9 +564,16 @@ export const FacilityDetails: React.FC = () => {
           <Card>
             <SectionHeader title="Next step" helper="When you're ready, take the next action." />
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
-              <Button variant="primary" className="w-full sm:w-auto" onClick={() => setIsLeadModalOpen(true)}>
-                Schedule a Tour
-              </Button>
+                <Button
+                  variant="primary"
+                  className="w-full sm:w-auto"
+                  onClick={() => {
+                    trackEvent('lead_cta_clicked', { source: 'next_step', facilityId: facility.id });
+                    setIsLeadModalOpen(true);
+                  }}
+                >
+                  Schedule a Tour
+                </Button>
               {facility.phone && (
                 <Button
                   variant="outline"
@@ -587,7 +595,14 @@ export const FacilityDetails: React.FC = () => {
           <Card>
             <SectionHeader title="Your next actions" />
             <div className="mt-4 space-y-3">
-              <Button variant="primary" className="w-full" onClick={() => setIsLeadModalOpen(true)}>
+              <Button
+                variant="primary"
+                className="w-full"
+                onClick={() => {
+                  trackEvent('lead_cta_clicked', { source: 'sidebar', facilityId: facility.id });
+                  setIsLeadModalOpen(true);
+                }}
+              >
                 Schedule a Private Tour
               </Button>
               <Button

@@ -3,6 +3,7 @@ import { supabase } from '@/src/lib/supabase';
 import { Button } from '@/components/ui/Button';
 import { X, Loader2, Send, Phone, Calendar, User, Mail, MessageSquare } from 'lucide-react';
 import { useAuth } from '@/src/context/AuthProvider';
+import { trackEvent } from '@/src/utils/analytics';
 
 interface LeadModalProps {
     isOpen: boolean;
@@ -36,6 +37,7 @@ export const LeadModal: React.FC<LeadModalProps> = ({
         e.preventDefault();
         setLoading(true);
         setError(null);
+        trackEvent('lead_submit_attempt', { facilityId });
 
         try {
             const { error } = await supabase.from('leads').insert({
@@ -51,14 +53,11 @@ export const LeadModal: React.FC<LeadModalProps> = ({
             if (error) throw error;
 
             setSuccess(true);
-            setTimeout(() => {
-                onClose();
-                setSuccess(false);
-                setFormData({ ...formData, message: 'I am interested in learning more about pricing and availability.' }); // Reset message but keep contact info
-            }, 3000);
+            trackEvent('lead_submit_success', { facilityId });
         } catch (err: any) {
             console.error('Error submitting lead:', err);
             setError(err.message || 'Failed to submit inquiry. Please try again.');
+            trackEvent('lead_submit_error', { facilityId });
         } finally {
             setLoading(false);
         }
@@ -68,17 +67,44 @@ export const LeadModal: React.FC<LeadModalProps> = ({
         return (
             <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
                 <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md p-8 text-center transform transition-all scale-100">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <Send className="w-8 h-8 text-green-600" />
+                    <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <Send className="w-8 h-8 text-primary-600" />
                     </div>
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">Inquiry Sent!</h3>
                     <p className="text-slate-600 mb-6">
                         Thank you for contacting <span className="font-semibold text-slate-900">{facilityName}</span>.
                         They have received your message and will be in touch shortly.
                     </p>
-                    <Button variant="primary" onClick={onClose} className="w-full">
-                        Close
-                    </Button>
+                    <div className="bg-[#f8f4ef] border border-slate-200 rounded-xl p-4 text-sm text-slate-600 mb-6 text-left">
+                        <p className="font-semibold text-slate-800 mb-2">Next steps</p>
+                        <ul className="space-y-2">
+                            <li>We typically confirm availability within 24 hours.</li>
+                            <li>Consider calling for the fastest response.</li>
+                            <li>Save this facility to compare later.</li>
+                        </ul>
+                    </div>
+                    <div className="space-y-3">
+                        {formData.phone && (
+                            <Button
+                                variant="outline"
+                                className="w-full border-slate-300 hover:bg-slate-100"
+                                onClick={() => window.location.href = `tel:${formData.phone}`}
+                            >
+                                Call Facility
+                            </Button>
+                        )}
+                        <Button
+                            variant="primary"
+                            onClick={() => {
+                                setSuccess(false);
+                                onClose();
+                                setFormData({ ...formData, message: 'I am interested in learning more about pricing and availability.' });
+                            }}
+                            className="w-full"
+                        >
+                            Close
+                        </Button>
+                    </div>
                 </div>
             </div>
         );
