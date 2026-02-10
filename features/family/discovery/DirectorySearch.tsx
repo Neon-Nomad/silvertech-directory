@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Search, MapPin } from 'lucide-react';
 import { ALL_STATES } from '@/src/data/states';
 import zipToCity from '@/src/data/zip_to_city.json';
+import { getLocationSuggestions, LocationSuggestion } from '@/src/utils/locationSuggestions';
 
 const toSlug = (value: string) =>
   value
@@ -27,6 +28,8 @@ const DirectorySearch: React.FC = () => {
   const [location, setLocation] = useState(searchParams.get('location') || '');
   const [stateSlug, setStateSlug] = useState('');
   const [error, setError] = useState('');
+  const [suggestions, setSuggestions] = useState<LocationSuggestion[]>([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
 
   const stateOptions = useMemo(
     () => ALL_STATES.map((s) => ({ label: s.name, value: s.slug, abbr: s.abbreviation })),
@@ -36,7 +39,7 @@ const DirectorySearch: React.FC = () => {
   const handleSearch = () => {
     setError('');
     const rawLocation = location.trim();
-    const zipMatch = /^\\d{5}$/.test(rawLocation) ? rawLocation : '';
+    const zipMatch = /^\d{5}$/.test(rawLocation) ? rawLocation : '';
 
     let resolvedStateSlug = stateSlug;
     let city = rawLocation;
@@ -78,6 +81,35 @@ const DirectorySearch: React.FC = () => {
     navigate(`/assisted-living/${resolvedStateSlug}`);
   };
 
+  const handleSuggestionSelect = (suggestion: LocationSuggestion) => {
+    if (suggestion.type === 'city') {
+      setLocation(`${suggestion.city}, ${suggestion.state}`);
+      const stateMatch = findStateByInput(suggestion.state);
+      if (stateMatch) setStateSlug(stateMatch.slug);
+    }
+    if (suggestion.type === 'zip') {
+      setLocation(suggestion.zip);
+      const stateMatch = findStateByInput(suggestion.state);
+      if (stateMatch) setStateSlug(stateMatch.slug);
+    }
+    if (suggestion.type === 'state') {
+      setLocation('');
+      setStateSlug(suggestion.stateSlug);
+    }
+    setShowSuggestions(false);
+  };
+
+  const handleLocationChange = (value: string) => {
+    setLocation(value);
+    if (value.trim().length > 0) {
+      setSuggestions(getLocationSuggestions(value));
+      setShowSuggestions(true);
+    } else {
+      setSuggestions([]);
+      setShowSuggestions(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#f6f1ea]">
       <div className="py-16 bg-white border-b border-slate-200">
@@ -113,9 +145,27 @@ const DirectorySearch: React.FC = () => {
                   type="text"
                   placeholder="Muncie, IN or 47302"
                   value={location}
-                  onChange={(e) => setLocation(e.target.value)}
+                  onChange={(e) => handleLocationChange(e.target.value)}
+                  onFocus={() => location.trim() && setShowSuggestions(true)}
+                  onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
                   className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-[#f6f1ea]"
                 />
+                {showSuggestions && suggestions.length > 0 && (
+                  <div className="absolute z-10 w-full mt-2 bg-white border border-slate-200 rounded-xl shadow-lg text-left">
+                    {suggestions.map((suggestion, index) => (
+                      <button
+                        key={`${suggestion.type}-${suggestion.label}-${index}`}
+                        className="w-full px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 flex items-center justify-between"
+                        onMouseDown={() => handleSuggestionSelect(suggestion)}
+                      >
+                        <span>{suggestion.label}</span>
+                        <span className="text-xs text-slate-400 uppercase">
+                          {suggestion.type === 'zip' ? 'ZIP' : suggestion.type === 'state' ? 'State' : 'City'}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
               <button
                 className="self-end bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 rounded-md font-medium transition-colors whitespace-nowrap"
@@ -151,4 +201,3 @@ const DirectorySearch: React.FC = () => {
 };
 
 export default DirectorySearch;
-

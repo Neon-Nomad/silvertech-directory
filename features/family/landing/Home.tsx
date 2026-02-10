@@ -16,11 +16,14 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { useGeolocation } from '@/src/hooks/useGeolocation';
+import { getLocationSuggestions, LocationSuggestion } from '@/src/utils/locationSuggestions';
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();
   const [location, setLocation] = useState('');
   const [careType, setCareType] = useState('Assisted Living');
+  const [suggestions, setSuggestions] = useState<LocationSuggestion[]>([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
   const { loading, nearestCity, getLocation } = useGeolocation();
 
   React.useEffect(() => {
@@ -32,6 +35,30 @@ export const Home: React.FC = () => {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     navigate(`/search?location=${encodeURIComponent(location)}`);
+  };
+
+  const handleLocationChange = (value: string) => {
+    setLocation(value);
+    if (value.trim().length > 0) {
+      setSuggestions(getLocationSuggestions(value));
+      setShowSuggestions(true);
+    } else {
+      setSuggestions([]);
+      setShowSuggestions(false);
+    }
+  };
+
+  const handleSuggestionSelect = (suggestion: LocationSuggestion) => {
+    if (suggestion.type === 'city') {
+      setLocation(`${suggestion.city}, ${suggestion.state}`);
+    }
+    if (suggestion.type === 'zip') {
+      setLocation(suggestion.zip);
+    }
+    if (suggestion.type === 'state') {
+      setLocation(suggestion.label);
+    }
+    setShowSuggestions(false);
   };
 
   return (
@@ -91,7 +118,9 @@ export const Home: React.FC = () => {
                     className="w-full pt-6 pb-2 px-3 border-b border-slate-200 text-sm focus:outline-none focus:border-primary-500 bg-transparent"
                     placeholder="City or Zip Code"
                     value={location}
-                    onChange={(e) => setLocation(e.target.value)}
+                    onChange={(e) => handleLocationChange(e.target.value)}
+                    onFocus={() => location.trim() && setShowSuggestions(true)}
+                    onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
                   />
                   <button
                     type="button"
@@ -102,6 +131,22 @@ export const Home: React.FC = () => {
                   >
                     <MapPin className="w-4 h-4" />
                   </button>
+                  {showSuggestions && suggestions.length > 0 && (
+                    <div className="absolute z-10 w-full mt-2 bg-white border border-slate-200 rounded-xl shadow-lg text-left">
+                      {suggestions.map((suggestion, index) => (
+                        <button
+                          key={`${suggestion.type}-${suggestion.label}-${index}`}
+                          className="w-full px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 flex items-center justify-between"
+                          onMouseDown={() => handleSuggestionSelect(suggestion)}
+                        >
+                          <span>{suggestion.label}</span>
+                          <span className="text-xs text-slate-400 uppercase">
+                            {suggestion.type === 'zip' ? 'ZIP' : suggestion.type === 'state' ? 'State' : 'City'}
+                          </span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 <div className="relative">
