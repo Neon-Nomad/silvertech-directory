@@ -191,6 +191,16 @@ export const FacilityDetails: React.FC = () => {
   const hasMemoryCare = careTypes.some((c: any) => c.name.toLowerCase().includes('memory') || c.name.toLowerCase().includes('dementia'));
   const serviceTypeString = hasMemoryCare ? 'Assisted Living & Memory Care' : 'Assisted Living';
 
+  const lastUpdatedRaw =
+    license?.updated_at ||
+    facility.updated_at ||
+    facility.created_at ||
+    null;
+
+  const lastUpdated = lastUpdatedRaw
+    ? new Date(lastUpdatedRaw).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+    : 'Not available';
+
   const schemaMarkup = {
     '@context': 'https://schema.org',
     '@type': 'SeniorLivingCommunity',
@@ -213,7 +223,8 @@ export const FacilityDetails: React.FC = () => {
       latitude: facility.latitude,
       longitude: facility.longitude
     } : undefined,
-    url: window.location.href
+    url: window.location.href,
+    dateModified: lastUpdatedRaw || undefined
   };
 
   const stateSlug = ALL_STATES.find(s => s.abbreviation === facility.state)?.slug || facility.state.toLowerCase();
@@ -498,8 +509,8 @@ export const FacilityDetails: React.FC = () => {
                 </div>
               </div>
 
-              <ContentMeta />
-              <DataSourceNote note="Facility details are compiled from public records, licensing data, and verified submissions." />
+              <ContentMeta updated={lastUpdated} />
+              <DataSourceNote note="Sources: State licensing authority, CMS datasets, and verified provider submissions." />
 
               {licensingAuthority && <LicensingAuthorityCard authority={licensingAuthority} />}
               {ombudsman && <OmbudsmanCard program={ombudsman} />}
