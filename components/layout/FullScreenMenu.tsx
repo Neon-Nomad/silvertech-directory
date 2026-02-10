@@ -212,6 +212,7 @@ const OperatorsContent = ({ onClose, user, signOut }: { onClose: () => void; use
         </>
       )}
       <NavCard to="/pricing" onClick={onClose} icon={Search} title="Pricing & Plans" description="Upgrade your listing" />
+      <NavCard to="/for-facilities" onClick={onClose} icon={Building2} title="For Facilities" description="Partner with SilverTech" />
     </div>
   </div>
 );
@@ -223,6 +224,7 @@ const CompanyContent = ({ onClose }: { onClose: () => void }) => (
       <NavCard to="/about" onClick={onClose} icon={HelpCircle} title="About Us" description="Our mission & story" />
       <NavCard to="/blog" onClick={onClose} icon={BookOpen} title="Blog" description="Industry insights" />
       <NavCard to="/contact" onClick={onClose} icon={Users} title="Contact" description="Get in touch" />
+      <NavCard to="/methodology" onClick={onClose} icon={Scale} title="Methodology" description="How we compare facilities" />
     </div>
   </div>
 );

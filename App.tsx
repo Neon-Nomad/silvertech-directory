@@ -20,6 +20,7 @@ import { IndianaPage } from '@/features/locations/IndianaPage';
 import { PricingPage } from '@/features/public/pricing/PricingPage';
 import { ForProvidersPage } from '@/features/public/providers/ForProvidersPage';
 import { ContactSalesPage } from '@/features/public/providers/ContactSalesPage';
+import { FacilitiesPartnerPage } from '@/features/public/providers/FacilitiesPartnerPage';
 import { ProductsHub } from '@/src/pages/products';
 import { CategoryPage } from '@/src/pages/products/CategoryPage';
 import { AffiliateProductPage } from '@/src/pages/products/AffiliateProductPage';
@@ -28,6 +29,7 @@ import { CityPageTemplate } from '@/features/locations/CityPageTemplate';
 import { FAQ } from '@/features/family/support/FAQ';
 import { AdvertiseWithUs } from '@/features/public/advertise/AdvertiseWithUs';
 import { HonestCarePage } from '@/features/public/transparency/HonestCarePage';
+import { MethodologyPage } from '@/features/public/transparency/MethodologyPage';
 import { Blog } from './features/public/blog/Blog';
 import { LocationPage } from '@/features/seo/LocationPage';
 import { StateHubHome } from '@/features/locations/hub/StateHubHome';
@@ -133,6 +135,7 @@ function App() {
 
                     <Route path="/pricing" element={<PricingPage />} />
                     <Route path="/providers" element={<ForProvidersPage />} />
+                    <Route path="/for-facilities" element={<FacilitiesPartnerPage />} />
                     <Route path="/products" element={<ProductsHub />} />
                     <Route path="/products/affiliate" element={<AffiliateProductPage />} />
                     <Route path="/products/:category" element={<CategoryPage />} />
@@ -167,6 +170,7 @@ function App() {
                     <Route path="/faq" element={<FAQ />} />
                     <Route path="/advertise" element={<AdvertiseWithUs />} />
                     <Route path="/honest-care" element={<HonestCarePage />} />
+                    <Route path="/methodology" element={<MethodologyPage />} />
                     <Route path="/blog" element={<Blog />} />
                   </Routes>
                 </div>

@@ -8,9 +8,13 @@ html {
 }
 
 body {
-  background-color: #f6f1ea;
-  color: #0f172a;
-  font-family: 'Inter', sans-serif;
+  background-color: #f8f4ef;
+  color: #1f1c17;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', serif;
 }
 
 /* Custom Scrollbar Utilities */

@@ -35,6 +35,12 @@ export const Footer: React.FC = () => {
           <a href="/honest-care" className="hover:text-primary-600 transition-colors">
             Honest Care Policy
           </a>
+          <a href="/methodology" className="hover:text-primary-600 transition-colors">
+            Methodology
+          </a>
+          <a href="/for-facilities" className="hover:text-primary-600 transition-colors">
+            For Facilities
+          </a>
           <a href="/editorial-policy" className="hover:text-primary-600 transition-colors">
             Editorial Policy
           </a>

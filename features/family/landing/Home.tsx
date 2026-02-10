@@ -1,14 +1,27 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
-import { MapPin, ArrowRight, Loader2, Crosshair } from 'lucide-react';
+import {
+  Compass,
+  Menu,
+  MapPin,
+  ShieldCheck,
+  BadgeCheck,
+  FileText,
+  ChevronRight,
+  Search,
+  Heart,
+  Calendar,
+  User
+} from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { useGeolocation } from '@/src/hooks/useGeolocation';
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();
   const [location, setLocation] = useState('');
-  const { loading, error, nearestCity, getLocation } = useGeolocation();
+  const [careType, setCareType] = useState('Assisted Living');
+  const { loading, nearestCity, getLocation } = useGeolocation();
 
   React.useEffect(() => {
     if (nearestCity) {
@@ -22,7 +35,7 @@ export const Home: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#f6f1ea] flex flex-col">
+    <div className="min-h-screen bg-[#f8f4ef] text-slate-900">
       <Helmet>
         <title>SilverTech Directory | Commission-Free Senior Living</title>
         <meta name="description" content="Find trusted memory care and assisted living communities with transparent, commission-free listings. Compare facilities and connect directly." />
@@ -38,113 +51,205 @@ export const Home: React.FC = () => {
         <meta name="twitter:description" content="Find trusted memory care and assisted living communities with transparent, commission-free listings. Compare facilities and connect directly." />
         <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
-      <main className="flex-1 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto pt-10 pb-16">
-          <div className="relative rounded-3xl overflow-hidden border border-slate-200 shadow-sm bg-white">
+
+      <header className="bg-[#f8f4ef]/95 backdrop-blur-sm px-6 py-5 flex items-center justify-between sticky top-0 z-50 border-b border-slate-200">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-full bg-primary-500/10 flex items-center justify-center">
+            <Compass className="w-4 h-4 text-primary-600" />
+          </div>
+          <span className="text-lg font-semibold tracking-tight">SilverTech</span>
+        </div>
+        <button className="p-2 text-slate-700 hover:text-slate-900" aria-label="Open menu">
+          <Menu className="w-5 h-5" />
+        </button>
+      </header>
+
+      <main className="max-w-6xl mx-auto">
+        <section className="relative">
+          <div className="h-[420px] sm:h-[520px] relative overflow-hidden">
             <img
               src="/images/hero_image.jpeg"
-              alt="Senior living community interior"
-              className="w-full h-[360px] md:h-[440px] object-cover"
+              alt="Senior living community"
+              className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-slate-900/10 to-transparent" />
-            <div className="absolute top-5 left-5 bg-white/95 backdrop-blur-sm rounded-full px-4 py-2 border border-slate-200 shadow-sm">
-              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">SilverTech Directory</p>
+            <div className="absolute inset-0 bg-slate-900/25" />
+            <div className="absolute inset-0 flex flex-col justify-end p-8 pb-24">
+              <h1 className="text-4xl sm:text-5xl text-white font-serif font-semibold leading-tight">
+                Navigate Senior Living with Confidence
+              </h1>
             </div>
-            <div className="absolute left-1/2 bottom-6 transform -translate-x-1/2 w-[92%] max-w-3xl z-10">
-              <div className="bg-white/98 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-xl p-4 md:p-5">
-                <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-4">
-                  <div className="flex-1 relative">
-                    <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                    <input 
-                      type="text" 
-                      placeholder="City, State, or ZIP" 
-                      value={location}
-                      onChange={(e) => setLocation(e.target.value)}
-                      className="w-full pl-12 pr-12 py-4 bg-[#f6f1ea] border border-transparent focus:bg-white focus:border-slate-400 rounded-xl text-lg outline-none transition-all"
-                    />
-                    <button
-                      type="button"
-                      onClick={getLocation}
-                      disabled={loading}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 transition-colors disabled:opacity-50"
-                      title="Use my location"
-                    >
-                      {loading ? (
-                        <Loader2 className="w-5 h-5 animate-spin" />
-                      ) : (
-                        <Crosshair className="w-5 h-5" />
-                      )}
-                    </button>
-                  </div>
-                  <Button type="submit" size="lg" className="px-8 text-lg h-auto py-4 bg-slate-900 hover:bg-slate-800">
-                    Search Directory
-                  </Button>
-                </form>
+          </div>
+
+          <div className="px-6 -mt-14 relative z-10">
+            <div className="bg-white p-6 shadow-xl border border-slate-200 rounded-lg">
+              <form onSubmit={handleSearch} className="space-y-4">
+                <div className="relative">
+                  <label className="text-[10px] uppercase tracking-[0.3em] font-semibold text-slate-400 absolute top-2 left-3">
+                    Location
+                  </label>
+                  <input
+                    className="w-full pt-6 pb-2 px-3 border-b border-slate-200 text-sm focus:outline-none focus:border-primary-500 bg-transparent"
+                    placeholder="City or Zip Code"
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
+                  />
+                  <button
+                    type="button"
+                    onClick={getLocation}
+                    disabled={loading}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 disabled:opacity-50"
+                    title="Use my location"
+                  >
+                    <MapPin className="w-4 h-4" />
+                  </button>
+                </div>
+
+                <div className="relative">
+                  <label className="text-[10px] uppercase tracking-[0.3em] font-semibold text-slate-400 absolute top-2 left-3">
+                    Care Type
+                  </label>
+                  <select
+                    className="w-full pt-6 pb-2 px-3 border-b border-slate-200 text-sm focus:outline-none focus:border-primary-500 bg-transparent appearance-none"
+                    value={careType}
+                    onChange={(e) => setCareType(e.target.value)}
+                  >
+                    <option>Assisted Living</option>
+                    <option>Memory Care</option>
+                    <option>Independent Living</option>
+                  </select>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-primary-500 text-white py-4 rounded-md font-semibold uppercase tracking-widest text-xs shadow-lg hover:bg-primary-600 transition-colors"
+                >
+                  Find Care Near Me
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-6 py-16 space-y-12">
+          <div className="text-center">
+            <span className="text-[10px] uppercase tracking-[0.3em] font-semibold text-primary-600 mb-2 block">Our Commitment</span>
+            <h2 className="text-2xl font-serif font-semibold">Trust Built on Transparency</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-200 mb-4">
+                <ShieldCheck className="w-7 h-7 text-primary-600" />
+              </div>
+              <h3 className="font-serif font-semibold text-lg mb-2">No Referral Fees</h3>
+              <p className="text-sm text-slate-600 leading-relaxed px-4">
+                Our recommendations are unbiased. We never accept payment for placement.
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-200 mb-4">
+                <BadgeCheck className="w-7 h-7 text-primary-600" />
+              </div>
+              <h3 className="font-serif font-semibold text-lg mb-2">Verified Pricing</h3>
+              <p className="text-sm text-slate-600 leading-relaxed px-4">
+                Direct-from-source cost data updated monthly to prevent hidden surprises.
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-200 mb-4">
+                <FileText className="w-7 h-7 text-primary-600" />
+              </div>
+              <h3 className="font-serif font-semibold text-lg mb-2">Official Inspection Reports</h3>
+              <p className="text-sm text-slate-600 leading-relaxed px-4">
+                Direct access to state health surveys and safety violation records.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-6 py-16 bg-white/60">
+          <h2 className="text-2xl font-serif font-semibold mb-8">Browse by Care Type</h2>
+          <div className="space-y-4">
+            {[
+              { title: 'Assisted Living', count: '42 Facilities Available', image: '/images/hero_image.jpeg' },
+              { title: 'Memory Care', count: '18 Specialized Centers', image: '/hero.png' },
+              { title: 'Independent Living', count: '24 Active Communities', image: '/images/hero_image.jpeg' }
+            ].map((item) => (
+              <button
+                key={item.title}
+                className="w-full bg-white border border-slate-200 p-1 flex items-center shadow-sm hover:shadow-md transition-shadow"
+                onClick={() => navigate('/search')}
+              >
+                <div className="w-24 h-24 flex-shrink-0">
+                  <img className="w-full h-full object-cover" src={item.image} alt={item.title} />
+                </div>
+                <div className="px-4 py-2 flex-1 text-left">
+                  <h4 className="font-serif font-semibold text-slate-900">{item.title}</h4>
+                  <p className="text-[10px] text-slate-400 font-semibold uppercase tracking-widest mt-1">{item.count}</p>
+                </div>
+                <div className="pr-4">
+                  <ChevronRight className="text-primary-500" />
+                </div>
+              </button>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      <footer className="bg-slate-900 text-white px-8 py-16 mt-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12">
+            <h2 className="text-2xl font-serif font-semibold mb-6">Transparency Pledge</h2>
+            <p className="text-sm text-slate-300 leading-relaxed mb-8">
+              At SilverTech, our data methodology is simple: truth first. We aggregate data from the CMS, State Departments of Health,
+              and direct on-site verifications.
+            </p>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <span className="text-primary-400 text-sm">●</span>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-slate-200">Data Source</p>
+                  <p className="text-xs text-slate-400">Medicare.gov / CMS Data Archives 2024</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-primary-400 text-sm">●</span>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-slate-200">Verification</p>
+                  <p className="text-xs text-slate-400">Quarterly Independent Audits</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="max-w-4xl w-full mx-auto space-y-12 text-center pb-16 pt-12">
-          
-          <div className="space-y-6">
-            <div className="inline-flex items-center space-x-2 bg-white rounded-full px-4 py-1.5 shadow-sm border border-slate-200 mb-4">
-              <span className="text-xs font-bold bg-slate-900 text-white px-2 py-0.5 rounded-full">New</span>
-              <span className="text-sm text-slate-600 font-medium">Commission-Free Senior Living</span>
+          <div className="pt-8 border-t border-white/10 text-center">
+            <div className="flex items-center justify-center space-x-2 mb-4 opacity-70">
+              <Compass className="text-primary-400 w-4 h-4" />
+              <span className="text-lg font-semibold">SilverTech</span>
             </div>
-            
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 leading-tight">
-              Find Trusted Memory Care <br className="hidden md:block" />
-              <span className="text-slate-500">for Your Loved One.</span>
-            </h1>
-            
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Connect directly with verified communities. No hidden fees, no middleman, just the care they deserve.
-            </p>
-            
-            <div className="pt-2">
-              <span onClick={() => navigate('/honest-care')} className="text-slate-700 hover:text-slate-900 font-medium cursor-pointer underline decoration-slate-300 hover:decoration-slate-500 underline-offset-4 transition-all">
-                Learn how "free" referral services really work
-              </span>
-            </div>
+            <p className="text-[10px] text-slate-400 uppercase tracking-widest">© 2026 SilverTech Trust. All Rights Reserved.</p>
           </div>
-
-          <div className="flex items-center justify-center gap-4">
-            <span className="text-slate-400 font-medium uppercase text-sm tracking-wider">or</span>
-          </div>
-
-          <div>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="group text-lg px-8 py-6 h-auto border-2 hover:border-slate-700 hover:text-slate-800"
-              onClick={() => navigate('/survey')}
-            >
-              Not Sure? Start CareFinder Survey
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <p className="mt-3 text-sm text-slate-500">
-              Take a deep breath; we'll handle the data.
-            </p>
-          </div>
-
         </div>
-      </main>
-      
-      {/* Footer / Trust Indicators */}
-      <div className="py-8 border-t border-slate-200 bg-white/70">
-        <div className="max-w-7xl mx-auto px-4 flex justify-center gap-8 md:gap-16 grayscale opacity-60">
-           <div className="flex items-center gap-2 font-semibold text-slate-900">
-             <div className="w-2 h-2 bg-green-500 rounded-full"></div> Real-Time Availability
-           </div>
-           <div className="flex items-center gap-2 font-semibold text-slate-900">
-             <div className="w-2 h-2 bg-blue-500 rounded-full"></div> Zero Commissions
-           </div>
-           <div className="flex items-center gap-2 font-semibold text-slate-900">
-             <div className="w-2 h-2 bg-purple-500 rounded-full"></div> Verified Data
-           </div>
-        </div>
-      </div>
+      </footer>
+
+      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-6 py-3 flex justify-between items-center z-50 md:hidden">
+        <button className="flex flex-col items-center text-primary-600">
+          <Search className="w-5 h-5" />
+          <span className="text-[9px] font-semibold uppercase tracking-widest mt-1">Search</span>
+        </button>
+        <button className="flex flex-col items-center text-slate-400">
+          <Heart className="w-5 h-5" />
+          <span className="text-[9px] font-semibold uppercase tracking-widest mt-1">Saved</span>
+        </button>
+        <button className="flex flex-col items-center text-slate-400">
+          <Calendar className="w-5 h-5" />
+          <span className="text-[9px] font-semibold uppercase tracking-widest mt-1">Tours</span>
+        </button>
+        <button className="flex flex-col items-center text-slate-400">
+          <User className="w-5 h-5" />
+          <span className="text-[9px] font-semibold uppercase tracking-widest mt-1">Account</span>
+        </button>
+      </nav>
     </div>
   );
 };
