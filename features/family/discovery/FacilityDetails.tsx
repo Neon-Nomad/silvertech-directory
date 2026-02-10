@@ -5,7 +5,6 @@ import { MapPin, Phone, Star, DollarSign, CheckCircle, AlertCircle, Heart } from
 import { Button } from '@/components/ui/Button';
 import { Map } from '@/components/ui/Map';
 import { supabase } from '@/src/lib/supabase';
-import { AddToCompareButton } from '@/components/ui/AddToCompareButton';
 import { geocodeAddress } from '@/src/utils/geocoding';
 import { ReviewList } from '@/features/reviews/ReviewList';
 import { ReviewModal } from '@/features/reviews/ReviewModal';
@@ -25,6 +24,7 @@ import { getAgingAgency, AgingAgency } from '@/src/utils/agingAgencyData';
 import { AgingAgencyCard } from '@/features/family/support/AgingAgencyCard';
 import { ALL_STATES } from '@/src/data/states';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { CompareToolModal } from '@/features/family/discovery/CompareToolModal';
 
 import { LeadModal } from '@/features/family/discovery/LeadModal';
 
@@ -37,6 +37,7 @@ export const FacilityDetails: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
   const [isLeadModalOpen, setIsLeadModalOpen] = useState(false);
+  const [isCompareModalOpen, setIsCompareModalOpen] = useState(false);
   const [refreshReviews, setRefreshReviews] = useState(0);
   const [healthcareScore, setHealthcareScore] = useState<HealthcareScore | null>(null);
   const [nearestHospital, setNearestHospital] = useState<{ hospital: Hospital; distance: number } | null>(null);
@@ -262,7 +263,13 @@ export const FacilityDetails: React.FC = () => {
                 </div>
               </div>
               <div className="hidden md:block">
-                <AddToCompareButton facility={facility} />
+                <Button
+                  variant="outline"
+                  className="border-slate-300 hover:bg-slate-100"
+                  onClick={() => setIsCompareModalOpen(true)}
+                >
+                  Compare Similar Homes
+                </Button>
               </div>
             </div>
           </div>
@@ -409,6 +416,19 @@ export const FacilityDetails: React.FC = () => {
           </div>
 
           <aside className="lg:col-span-4 space-y-6">
+            <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+              <h3 className="text-lg font-semibold text-slate-900 mb-2">Compare Similar Homes</h3>
+              <p className="text-sm text-slate-600 mb-4">
+                Instantly compare this community with the most similar options nearby.
+              </p>
+              <Button
+                variant="outline"
+                className="w-full border-slate-300 hover:bg-slate-100"
+                onClick={() => setIsCompareModalOpen(true)}
+              >
+                Open Comparison Tool
+              </Button>
+            </div>
             <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 text-center">
               <div className="w-24 h-24 rounded-2xl bg-slate-100 mx-auto mb-4 flex items-center justify-center text-slate-500 font-semibold">
                 Director
@@ -512,6 +532,12 @@ export const FacilityDetails: React.FC = () => {
         onClose={() => setIsLeadModalOpen(false)}
         facilityId={id!}
         facilityName={facility.name}
+      />
+
+      <CompareToolModal
+        isOpen={isCompareModalOpen}
+        onClose={() => setIsCompareModalOpen(false)}
+        baseFacility={facility}
       />
     </div>
   );

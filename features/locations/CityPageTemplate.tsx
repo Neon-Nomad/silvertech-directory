@@ -13,7 +13,6 @@ import { rankFacilities } from '@/src/utils/ranking';
 import { cityContent } from '@/src/data/city_content';
 import { generateCityContent } from '@/src/utils/contentGenerator';
 import { BestFacilitiesList } from '@/features/locations/BestFacilitiesList';
-import { AddToCompareButton } from '@/components/ui/AddToCompareButton';
 import { HospitalList } from '@/features/locations/HospitalList';
 import { getHospitalsByCity, Hospital } from '@/src/utils/hospitalData';
 
@@ -288,7 +287,6 @@ export const CityPageTemplate: React.FC = () => {
                             >
                               View Facility <ChevronRight size={16} className="ml-1" />
                             </Link>
-                            <AddToCompareButton facility={facility} className="w-full justify-center" />
                          </div>
                       </div>
                     </div>

@@ -49,8 +49,6 @@ import { FacilityDetails } from '@/features/family/discovery/FacilityDetails';
 import { ScrollToTop } from '@/components/utils/ScrollToTop';
 
 import { ComparisonProvider } from '@/src/context/ComparisonContext';
-import { ComparisonBar } from '@/components/ui/ComparisonBar';
-import { ComparisonModal } from '@/components/ui/ComparisonModal';
 import { GlobalSchema } from '@/components/seo/GlobalSchema';
 
 import { AuthProvider } from '@/src/context/AuthProvider';
@@ -169,8 +167,6 @@ function App() {
                     <Route path="/honest-care" element={<HonestCarePage />} />
                     <Route path="/blog" element={<Blog />} />
                   </Routes>
-                  <ComparisonBar />
-                  <ComparisonModal />
                 </div>
               </BrowserRouter>
             </Elements>
