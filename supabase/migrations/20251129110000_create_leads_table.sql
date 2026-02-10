@@ -20,8 +20,16 @@ ALTER TABLE leads ENABLE ROW LEVEL SECURITY;
 -- Public insert access (anyone can submit a lead)
 CREATE POLICY "Public insert leads" ON leads FOR INSERT WITH CHECK (true);
 
--- Facility owners can view leads for their facilities (This requires a join or a more complex policy, 
--- for now we'll allow users to see leads they submitted)
+-- Facility owners can view leads for their facilities
+CREATE POLICY "Owners can view leads" ON leads FOR SELECT USING (
+  EXISTS (
+    SELECT 1 FROM facilities
+    WHERE facilities.id = leads.facility_id
+    AND facilities.owner_id = auth.uid()
+  )
+);
+
+-- Users can view leads they submitted
 CREATE POLICY "Users can view their own leads" ON leads FOR SELECT USING (auth.uid() = user_id);
 
 -- Service role has full access

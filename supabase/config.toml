@@ -5,3 +5,15 @@
 [functions.create-portal-session]
 
 verify_jwt = false
+
+[db]
+port = 54330
+
+[api]
+port = 54335
+
+[studio]
+port = 54331
+
+[inbucket]
+port = 54336
