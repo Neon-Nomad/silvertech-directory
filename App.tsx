@@ -50,6 +50,7 @@ import { ScrollToTop } from '@/components/utils/ScrollToTop';
 
 import { ComparisonProvider } from '@/src/context/ComparisonContext';
 import { GlobalSchema } from '@/components/seo/GlobalSchema';
+import { LocationPrompt } from '@/components/ui/LocationPrompt';
 
 import { AuthProvider } from '@/src/context/AuthProvider';
 import { LoginPage } from '@/features/auth/LoginPage';
@@ -108,6 +109,7 @@ function App() {
                 <ScrollToTop />
                 <GlobalSchema />
                 <div className="min-h-screen bg-white">
+                  <LocationPrompt />
                   <Navbar />
                   <Routes>
                     <Route path="/" element={<Home />} />
