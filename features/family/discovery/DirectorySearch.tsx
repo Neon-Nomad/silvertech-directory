@@ -63,12 +63,12 @@ const DirectorySearch: React.FC = () => {
       const zipState = zipEntry ? findStateByInput(zipEntry.state) : null;
       if (zipState) resolvedStateSlug = zipState.slug;
     }
-    if (!resolvedStateSlug && rawLocation.includes(',')) {
+    if (rawLocation.includes(',')) {
       const [cityPart, statePart] = rawLocation.split(',').map((part) => part.trim());
+      if (cityPart) city = cityPart;
       const stateMatch = findStateByInput(statePart);
-      if (stateMatch) {
+      if (stateMatch && (!resolvedStateSlug || resolvedStateSlug !== stateMatch.slug)) {
         resolvedStateSlug = stateMatch.slug;
-        city = cityPart;
       }
     }
 
