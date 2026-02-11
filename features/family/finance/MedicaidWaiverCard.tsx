@@ -14,17 +14,17 @@ export const MedicaidWaiverCard: React.FC<MedicaidWaiverCardProps> = ({ waiver }
   return (
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden h-full flex flex-col">
       {/* Header */}
-      <div className="bg-blue-50 p-4 border-b border-blue-100">
+      <div className="bg-primary-50 p-4 border-b border-primary-100">
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-start gap-3">
-            <div className="p-2 bg-blue-100 rounded-lg text-blue-700">
+            <div className="p-2 bg-primary-100 rounded-lg text-primary-700">
               <DollarSign size={24} />
             </div>
             <div>
               <h3 className="font-bold text-slate-900 text-lg leading-tight">
                 {waiver.program_name}
               </h3>
-              <p className="text-blue-700 text-sm font-medium mt-1">
+              <p className="text-primary-700 text-sm font-medium mt-1">
                 {waiver.type}
               </p>
             </div>
@@ -69,12 +69,12 @@ export const MedicaidWaiverCard: React.FC<MedicaidWaiverCardProps> = ({ waiver }
         {/* Services Covered */}
         <div>
           <h4 className="font-semibold text-slate-900 text-sm mb-2 flex items-center gap-2">
-            <Activity size={16} className="text-blue-500" />
+            <Activity size={16} className="text-primary-500" />
             Services Covered
           </h4>
           <div className="flex flex-wrap gap-2">
             {waiver.care_services.map((service, idx) => (
-              <span key={idx} className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-100">
+              <span key={idx} className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-50 text-primary-700 border border-primary-100">
                 {service}
               </span>
             ))}
@@ -104,14 +104,14 @@ export const MedicaidWaiverCard: React.FC<MedicaidWaiverCardProps> = ({ waiver }
             href={waiver.contact.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-blue-300 text-slate-700 font-medium py-2 rounded-lg transition-colors text-sm"
+            className="flex-1 flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-primary-300 text-slate-700 font-medium py-2 rounded-lg transition-colors text-sm"
         >
-            <ExternalLink size={16} className="text-blue-600" />
+            <ExternalLink size={16} className="text-primary-600" />
             Official Details
         </a>
         <a 
             href={`tel:${waiver.contact.phone}`}
-            className="flex-1 flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition-colors text-sm"
+            className="flex-1 flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 rounded-lg transition-colors text-sm"
         >
             <Phone size={16} />
             {waiver.contact.phone}

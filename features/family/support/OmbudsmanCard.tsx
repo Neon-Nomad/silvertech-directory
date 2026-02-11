@@ -10,11 +10,11 @@ interface OmbudsmanCardProps {
 export const OmbudsmanCard: React.FC<OmbudsmanCardProps> = ({ program, variant = 'compact' }) => {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-      <div className="bg-blue-50 p-4 border-b border-blue-100 flex items-start gap-3">
-        <Shield className="w-6 h-6 text-blue-700 flex-shrink-0 mt-0.5" />
+      <div className="bg-primary-50 p-4 border-b border-primary-100 flex items-start gap-3">
+        <Shield className="w-6 h-6 text-primary-700 flex-shrink-0 mt-0.5" />
         <div>
-          <h3 className="font-bold text-blue-900">Consumer Protection</h3>
-          <p className="text-xs text-blue-700">Official State Ombudsman</p>
+          <h3 className="font-bold text-primary-900">Consumer Protection</h3>
+          <p className="text-xs text-primary-700">Official State Ombudsman</p>
         </div>
       </div>
       
@@ -56,7 +56,7 @@ export const OmbudsmanCard: React.FC<OmbudsmanCardProps> = ({ program, variant =
                 rel="noopener noreferrer" 
                 className="text-primary-600 font-medium hover:underline flex items-center gap-1"
               >
-                Visit Official Site <ExternalLink size={12} />
+                Visit Ombudsman Site <ExternalLink size={12} />
               </a>
             </div>
           </div>

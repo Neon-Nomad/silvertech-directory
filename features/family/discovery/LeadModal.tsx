@@ -75,7 +75,7 @@ export const LeadModal: React.FC<LeadModalProps> = ({
                         Thank you for contacting <span className="font-semibold text-slate-900">{facilityName}</span>.
                         They have received your message and will be in touch shortly.
                     </p>
-                    <div className="bg-[#f8f4ef] border border-slate-200 rounded-xl p-4 text-sm text-slate-600 mb-6 text-left">
+                    <div className="bg-warm-gray border border-slate-200 rounded-xl p-4 text-sm text-slate-600 mb-6 text-left">
                         <p className="font-semibold text-slate-800 mb-2">Next steps</p>
                         <ul className="space-y-2">
                             <li>We typically confirm availability within 24 hours.</li>

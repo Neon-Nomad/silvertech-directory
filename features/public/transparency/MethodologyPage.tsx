@@ -6,7 +6,7 @@ import { Card } from '@/components/ui/Card';
 
 export const MethodologyPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#f8f4ef] text-slate-900">
+    <div className="min-h-screen bg-warm-gray text-slate-900">
       <Helmet>
         <title>How We Compare | SilverTech Methodology</title>
         <meta

@@ -18,18 +18,18 @@ export const Problem: React.FC = () => {
       title: "Broken Workflow",
       description: "Supply-side operators lack digital tools. They rely on spreadsheets and fax machines, leading to lost leads and inaccurate vacancy data.",
       color: "primary",
-      gradient: "from-indigo-50 to-indigo-100",
-      iconColor: "text-indigo-600",
-      borderColor: "group-hover:border-indigo-200"
+      gradient: "from-primary-50 to-primary-100",
+      iconColor: "text-primary-600",
+      borderColor: "group-hover:border-primary-200"
     },
     {
       icon: EyeOff,
       title: "Zero Transparency",
       description: "Families face opaque pricing and confusing options. They are overwhelmed by aggressive sales calls from lead aggregators selling their data.",
       color: "secondary",
-      gradient: "from-teal-50 to-teal-100",
-      iconColor: "text-teal-600",
-      borderColor: "group-hover:border-teal-200"
+      gradient: "from-primary-50 to-primary-100",
+      iconColor: "text-primary-600",
+      borderColor: "group-hover:border-primary-200"
     }
   ];
 
@@ -38,7 +38,7 @@ export const Problem: React.FC = () => {
       {/* Background Pattern */}
       <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
         <div className="absolute right-0 top-0 w-1/2 h-1/2 bg-gradient-to-bl from-primary-500 to-transparent rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
-        <div className="absolute left-0 bottom-0 w-1/2 h-1/2 bg-gradient-to-tr from-secondary-500 to-transparent rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3"></div>
+        <div className="absolute left-0 bottom-0 w-1/2 h-1/2 bg-gradient-to-tr from-primary-500 to-transparent rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3"></div>
       </div>
 
       <div className="relative z-10 mb-16 max-w-3xl">

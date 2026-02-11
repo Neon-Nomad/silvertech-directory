@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-secondary-500/20 rounded-2xl transform rotate-3 scale-105 blur-2xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-primary-500/20 rounded-2xl transform rotate-3 scale-105 blur-2xl"></div>
             <img 
               src={`${import.meta.env.BASE_URL}hero.png`} 
               alt="Modern Senior Living Facility" 

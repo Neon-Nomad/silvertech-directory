@@ -89,14 +89,14 @@ export const AdvertiseWithUs: React.FC = () => {
 
             {/* Card 2 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-              <div className="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+              <div className="w-14 h-14 bg-primary-100 text-primary-600 rounded-xl flex items-center justify-center mb-6">
                 <Zap className="w-8 h-8" />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Direct, Unfiltered Leads</h3>
               <ul className="space-y-2 text-slate-600 mb-4">
-                <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-blue-500" /> You get the calls.</li>
-                <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-blue-500" /> You get the emails.</li>
-                <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-blue-500" /> You get the tours.</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-primary-500" /> You get the calls.</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-primary-500" /> You get the emails.</li>
+                <li className="flex items-center"><CheckCircle className="w-4 h-4 mr-2 text-primary-500" /> You get the tours.</li>
               </ul>
               <p className="text-slate-600 font-medium">
                 We do NOT intercept, gatekeep, redirect, or resell your leads — ever.
@@ -105,7 +105,7 @@ export const AdvertiseWithUs: React.FC = () => {
 
             {/* Card 3 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-              <div className="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6">
+              <div className="w-14 h-14 bg-primary-100 text-primary-600 rounded-xl flex items-center justify-center mb-6">
                 <Shield className="w-8 h-8" />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Verified Trust Badge</h3>

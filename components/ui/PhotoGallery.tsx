@@ -17,16 +17,15 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  if (!photos || photos.length === 0) {
-    return (
-      <div className="h-[400px] w-full bg-slate-100 flex items-center justify-center rounded-xl border border-slate-200">
-        <div className="text-center text-slate-400">
-          <ImageIcon className="w-12 h-12 mx-auto mb-2 opacity-50" />
-          <p>No photos available</p>
-        </div>
-      </div>
-    );
-  }
+  const samplePhotos: Photo[] = [
+    { id: 'sample-1', url: '/images/hero_image.png', caption: 'Sample common area' },
+    { id: 'sample-2', url: '/images/hero_image.png', caption: 'Sample dining space' },
+    { id: 'sample-3', url: '/images/hero_image.png', caption: 'Sample resident lounge' },
+    { id: 'sample-4', url: '/images/hero_image.png', caption: 'Sample outdoor courtyard' },
+  ];
+
+  const isSampleGallery = !photos || photos.length === 0;
+  const galleryPhotos = isSampleGallery ? samplePhotos : photos;
 
   const openLightbox = (index: number) => {
     setCurrentIndex(index);
@@ -51,16 +50,26 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
   // Let's stick to a standard "Hero + Thumbnails" or "Grid" layout.
   // Standard Real Estate Layout: 1 Large Main, 4 Small Side (if 5+).
   
-  const displayPhotos = photos.slice(0, 5);
-  const remainingCount = photos.length - 5;
+  const displayPhotos = galleryPhotos.slice(0, 5);
+  const remainingCount = galleryPhotos.length - 5;
 
   return (
     <>
+      {isSampleGallery && (
+        <div className="mb-3 rounded-lg border border-warm-gray bg-warm-white px-4 py-3 text-xs text-charcoal/70">
+          <div className="flex items-center gap-2">
+            <ImageIcon className="w-4 h-4 text-charcoal/40" />
+            <span>
+              Sample gallery only — official photos have not been provided by {facilityName}.
+            </span>
+          </div>
+        </div>
+      )}
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-2 h-[400px] rounded-xl overflow-hidden">
         {/* Main Hero Image */}
         <div 
-          className={`relative cursor-pointer group ${photos.length === 1 ? 'md:col-span-4' : 'md:col-span-2 row-span-2'}`}
+          className={`relative cursor-pointer group ${galleryPhotos.length === 1 ? 'md:col-span-4' : 'md:col-span-2 row-span-2'}`}
           onClick={() => openLightbox(0)}
         >
           <img 
@@ -69,6 +78,11 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+          {isSampleGallery && (
+            <div className="absolute left-3 top-3 bg-charcoal/80 text-white text-[10px] uppercase tracking-widest px-2 py-1 rounded">
+              Sample
+            </div>
+          )}
         </div>
 
         {/* Side Images */}
@@ -96,10 +110,10 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
       </div>
 
       {/* Mobile "View All" Button (if more than 1 photo) */}
-      {photos.length > 1 && (
+      {galleryPhotos.length > 1 && (
         <div className="md:hidden mt-2">
            <Button variant="outline" className="w-full" onClick={() => openLightbox(0)}>
-             View All {photos.length} Photos
+             View All {galleryPhotos.length} Photos
            </Button>
         </div>
       )}
@@ -123,17 +137,17 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
 
           <div className="max-w-5xl max-h-[85vh] w-full px-4 flex flex-col items-center">
             <img 
-              src={photos[currentIndex].url} 
-              alt={photos[currentIndex].caption || facilityName} 
+              src={galleryPhotos[currentIndex].url} 
+              alt={galleryPhotos[currentIndex].caption || facilityName} 
               className="max-h-[80vh] w-auto object-contain rounded-lg shadow-2xl"
             />
-            {photos[currentIndex].caption && (
+            {galleryPhotos[currentIndex].caption && (
               <p className="text-white/90 mt-4 text-lg font-medium">
-                {photos[currentIndex].caption}
+                {galleryPhotos[currentIndex].caption}
               </p>
             )}
             <p className="text-white/50 mt-2 text-sm">
-              {currentIndex + 1} / {photos.length}
+              {currentIndex + 1} / {galleryPhotos.length}
             </p>
           </div>
 

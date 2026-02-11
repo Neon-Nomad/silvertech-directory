@@ -102,12 +102,12 @@ export const IndianaPage: React.FC = () => {
                   <p className="text-sm text-slate-500 mt-2 italic">RCFs must be licensed by the Indiana Department of Health (IDOH).</p>
                 </div>
 
-                <div className="border-l-4 border-blue-400 pl-4">
+                <div className="border-l-4 border-primary-400 pl-4">
                   <h3 className="text-lg font-bold text-slate-900">2. Housing with Services Establishments</h3>
                   <p className="text-slate-600">Independent senior apartments offering optional care through third-party agencies. These are registered but not medically licensed.</p>
                 </div>
 
-                <div className="border-l-4 border-purple-400 pl-4">
+                <div className="border-l-4 border-primary-400 pl-4">
                   <h3 className="text-lg font-bold text-slate-900">3. Memory Care Programs</h3>
                   <p className="text-slate-600">Typically contained within licensed RCFs. Provide structured Alzheimer’s and dementia care.</p>
                 </div>

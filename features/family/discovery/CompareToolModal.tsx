@@ -40,6 +40,9 @@ const getMatchPercent = (score: number) => {
   return Math.max(35, percent);
 };
 
+const isUuid = (value?: string) =>
+  Boolean(value && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value));
+
 export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onClose, baseFacility }) => {
   const [comparables, setComparables] = useState<any[]>([]);
   const [selected, setSelected] = useState<any | null>(null);
@@ -123,17 +126,17 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
             .select(`
               id,
               name,
-              image,
               city,
               state,
               address_line1,
               postal_code,
               phone,
-              min_price,
-              max_price,
+              facility_photos(url,display_order),
               facility_care_types(care_types(name))
             `)
-            .neq('id', baseFacility.id);
+          if (isUuid(baseFacility?.id)) {
+            query.neq('id', baseFacility.id);
+          }
 
           if (filters.state) query.eq('state', filters.state);
           if (filters.city) query.eq('city', filters.city);
@@ -145,8 +148,9 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
 
         const cityResults = await fetchFacilities({ city, state });
         const scoredCity = cityResults.map((facility: any) => {
+          const photos = (facility.facility_photos || []).slice().sort((a: any, b: any) => (a.display_order || 0) - (b.display_order || 0));
           const scoring = scoreFacility(baseFacility, facility);
-          return { ...facility, _score: scoring.score };
+          return { ...facility, image: photos[0]?.url, _score: scoring.score };
         });
 
         let combined = scoredCity;
@@ -158,8 +162,9 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
           );
 
           const scoredState = filteredState.map((facility: any) => {
+            const photos = (facility.facility_photos || []).slice().sort((a: any, b: any) => (a.display_order || 0) - (b.display_order || 0));
             const scoring = scoreFacility(baseFacility, facility);
-            return { ...facility, _score: scoring.score };
+            return { ...facility, image: photos[0]?.url, _score: scoring.score };
           });
 
           combined = [...combined, ...scoredState];
@@ -190,7 +195,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
       <div className="absolute inset-0 bg-slate-900/70 no-print" onClick={onClose} />
 
       <div className="relative max-w-6xl mx-auto mt-12 mb-10 bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden">
-        <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-[#f8f4ef] no-print">
+        <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-warm-gray no-print">
           <div>
             <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Research Tool • SilverTech</p>
             <h2 className="text-2xl font-serif font-semibold text-slate-900">Compare Similar Homes</h2>
@@ -361,7 +366,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
                 </div>
               )}
 
-              <div className="mt-4 bg-[#f8f4ef] border border-slate-200 rounded-xl p-3 text-xs text-slate-600">
+              <div className="mt-4 bg-warm-gray border border-slate-200 rounded-xl p-3 text-xs text-slate-600">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-primary-600 mt-0.5" />
                   <span>Matches prioritize care type overlap, price range, and city proximity.</span>

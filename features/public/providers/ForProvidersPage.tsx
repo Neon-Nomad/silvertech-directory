@@ -117,7 +117,7 @@ export const ForProvidersPage: React.FC = () => {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6">
-              <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Shield className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Trust & Transparency</h3>
@@ -135,7 +135,7 @@ export const ForProvidersPage: React.FC = () => {
               </p>
             </div>
             <div className="text-center p-6">
-              <div className="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Heart className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Mission Aligned</h3>

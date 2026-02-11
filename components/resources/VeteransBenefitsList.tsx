@@ -13,8 +13,8 @@ export const VeteransBenefitsList: React.FC = () => {
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
       <div className="p-6 border-b border-slate-100 bg-slate-50">
         <div className="flex items-center gap-3 mb-2">
-          <div className="p-2 bg-blue-100 rounded-lg">
-            <ShieldCheck className="w-6 h-6 text-blue-700" />
+          <div className="p-2 bg-primary-100 rounded-lg">
+            <ShieldCheck className="w-6 h-6 text-primary-700" />
           </div>
           <h2 className="text-xl font-bold text-slate-900">Veterans Benefits Authority</h2>
         </div>
@@ -88,9 +88,9 @@ export const VeteransBenefitsList: React.FC = () => {
 
                 {/* @ts-ignore */}
                 {benefit.why_explore && (
-                    <div className="mb-4 bg-blue-50 p-4 rounded-lg border border-blue-100">
-                        <h4 className="text-xs font-bold text-blue-800 uppercase tracking-wide mb-2">Why Explore This?</h4>
-                        <p className="text-sm text-blue-900 leading-relaxed">
+                    <div className="mb-4 bg-primary-50 p-4 rounded-lg border border-primary-100">
+                        <h4 className="text-xs font-bold text-primary-800 uppercase tracking-wide mb-2">Why Explore This?</h4>
+                        <p className="text-sm text-primary-900 leading-relaxed">
                             {/* @ts-ignore */}
                             {benefit.why_explore}
                         </p>

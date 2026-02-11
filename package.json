@@ -28,7 +28,11 @@
     "deploy": "gh-pages -d dist",
     "seed:digital-products": "tsx scripts/seed_digital_products.ts",
     "publish:reit": "tsx scripts/publish_reit_snapshot.ts",
-    "payments:create-pdf-links": "tsx scripts/create_pdf_payment_links.ts"
+    "payments:create-pdf-links": "tsx scripts/create_pdf_payment_links.ts",
+    "redirects": "npx tsx scripts/generate_redirects.ts",
+    "sitemap:verify": "npx tsx scripts/verify_sitemap.ts",
+    "typesense:index": "tsx scripts/typesense_index.ts",
+    "typesense:search-key": "tsx scripts/typesense_create_search_key.ts"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "^5.4.1",
@@ -47,7 +51,8 @@
     "react-leaflet": "^4.2.1",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^6.22.3",
-    "stripe": "^20.0.0"
+    "stripe": "^20.0.0",
+    "typesense": "^3.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",
@@ -58,6 +63,7 @@
     "autoprefixer": "^10.4.22",
     "gh-pages": "^6.3.0",
     "jsdom": "^27.2.0",
+    "pg": "^8.18.0",
     "postcss": "^8.5.6",
     "supabase": "^2.63.1",
     "tailwindcss": "^3.4.17",

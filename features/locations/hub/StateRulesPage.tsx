@@ -100,7 +100,7 @@ export const StateRulesPage: React.FC = () => {
                                 {regulatoryData?.licensing_content && (
                                     <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 prose prose-slate max-w-none">
                                         <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2 not-prose">
-                                            <Scale className="w-6 h-6 text-purple-600" />
+                                            <Scale className="w-6 h-6 text-primary-600" />
                                             Licensing Standards
                                         </h2>
                                         <ReactMarkdown>{regulatoryData.licensing_content}</ReactMarkdown>
@@ -121,7 +121,7 @@ export const StateRulesPage: React.FC = () => {
                                 {!regulatoryData?.licensing_content && (
                                     <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
                                         <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                                            <Scale className="w-6 h-6 text-purple-600" />
+                                            <Scale className="w-6 h-6 text-primary-600" />
                                             Key Resident Rights
                                         </h2>
                                         <div className="space-y-6">
@@ -208,14 +208,14 @@ export const StateRulesPage: React.FC = () => {
                         </div>
 
                         {regulatoryData?.contacts_json?.licensing && (
-                            <div className="bg-purple-50 p-6 rounded-xl border border-purple-100">
-                                <h3 className="font-bold text-purple-900 mb-2">Licensing Contact</h3>
-                                <p className="font-medium text-purple-900">{regulatoryData.contacts_json.licensing.name}</p>
+                            <div className="bg-primary-50 p-6 rounded-xl border border-primary-100">
+                                <h3 className="font-bold text-primary-900 mb-2">Licensing Contact</h3>
+                                <p className="font-medium text-primary-900">{regulatoryData.contacts_json.licensing.name}</p>
                                 {regulatoryData.contacts_json.licensing.phone && (
-                                    <p className="text-purple-800 mt-2">Phone: {regulatoryData.contacts_json.licensing.phone}</p>
+                                    <p className="text-primary-800 mt-2">Phone: {regulatoryData.contacts_json.licensing.phone}</p>
                                 )}
                                 {regulatoryData.contacts_json.licensing.website && (
-                                    <a href={regulatoryData.contacts_json.licensing.website} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-purple-700 hover:underline mt-3 text-sm">
+                                    <a href={regulatoryData.contacts_json.licensing.website} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-primary-700 hover:underline mt-3 text-sm">
                                         <FileText className="w-4 h-4" />
                                         Official Website
                                     </a>

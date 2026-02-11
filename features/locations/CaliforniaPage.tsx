@@ -154,9 +154,9 @@ export const CaliforniaPage: React.FC = () => {
             </div>
 
             {/* Licensing */}
-            <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-blue-500">
+            <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-primary-500">
               <div className="flex items-start gap-4">
-                <Shield className="w-8 h-8 text-blue-600 flex-shrink-0" />
+                <Shield className="w-8 h-8 text-primary-600 flex-shrink-0" />
                 <div>
                   <h2 className="text-xl font-bold text-slate-900 mb-2">Licensing Authority</h2>
                   <p className="text-slate-700 mb-2">

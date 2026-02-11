@@ -7,6 +7,7 @@ import { Breadcrumbs } from '../../components/ui/Breadcrumbs';
 import { ContentMeta } from '@/components/ui/ContentMeta';
 import { DataSourceNote } from '@/components/ui/DataSourceNote';
 import { supabase } from '../../src/lib/supabase';
+import { loadCityIndex } from '@/src/utils/facilityIndex';
 import { getOmbudsman } from '../../src/utils/ombudsmanData';
 import { OmbudsmanCard } from '../family/support/OmbudsmanCard';
 import { getLicensingAuthority } from '../../src/utils/licensingData';
@@ -34,42 +35,62 @@ export const StatePageTemplate: React.FC = () => {
 
     const fetchCities = async () => {
       setLoading(true);
-      // 1. Get all facilities for this state
-      const { data, error } = await supabase
-        .from('facilities')
-        .select('city')
-        .eq('state', stateDef.abbreviation);
+      try {
+        // 1. Get all facilities for this state (Supabase primary)
+        const { data, error } = await supabase
+          .from('facilities')
+          .select('city')
+          .eq('state', stateDef.abbreviation);
 
-      if (error) {
-        console.error('Error fetching cities:', error);
+        if (error) throw error;
+
+        if (data) {
+          setFacilityCount(data.length);
+
+          // 2. Aggregate cities and counts
+          const cityMap = new Map<string, number>();
+          data.forEach(f => {
+            if (f.city) {
+              const city = f.city.trim();
+              cityMap.set(city, (cityMap.get(city) || 0) + 1);
+            }
+          });
+
+          // 3. Convert to array and sort
+          const cityList: CityStat[] = Array.from(cityMap.entries())
+            .map(([city, count]) => ({
+              city,
+              count,
+              slug: city.toLowerCase().replace(/ /g, '-')
+            }))
+            .sort((a, b) => a.city.localeCompare(b.city));
+
+          setCities(cityList);
+          setLoading(false);
+          return;
+        }
+      } catch (err) {
+        console.error('Error fetching cities from Supabase:', err);
+      }
+
+      try {
+        // Fallback to static index
+        const cityIndex = await loadCityIndex();
+        const stateCities = cityIndex
+          .filter((entry) => entry.stateSlug === stateDef.slug)
+          .sort((a, b) => a.cityName.localeCompare(b.cityName));
+
+        setFacilityCount(stateCities.reduce((sum, entry) => sum + entry.count, 0));
+        setCities(stateCities.map((entry) => ({
+          city: entry.cityName,
+          count: entry.count,
+          slug: entry.citySlug
+        })));
+      } catch (err) {
+        console.error('Error loading static city index:', err);
+      } finally {
         setLoading(false);
-        return;
       }
-
-      if (data) {
-        setFacilityCount(data.length);
-
-        // 2. Aggregate cities and counts
-        const cityMap = new Map<string, number>();
-        data.forEach(f => {
-          if (f.city) {
-            const city = f.city.trim();
-            cityMap.set(city, (cityMap.get(city) || 0) + 1);
-          }
-        });
-
-        // 3. Convert to array and sort
-        const cityList: CityStat[] = Array.from(cityMap.entries())
-          .map(([city, count]) => ({
-            city,
-            count,
-            slug: city.toLowerCase().replace(/ /g, '-')
-          }))
-          .sort((a, b) => a.city.localeCompare(b.city));
-
-        setCities(cityList);
-      }
-      setLoading(false);
     };
 
     fetchCities();
@@ -115,7 +136,7 @@ export const StatePageTemplate: React.FC = () => {
   useJsonLd(schema);
 
   return (
-    <div className="min-h-screen bg-[#f6f1ea] font-sans text-slate-900">
+    <div className="min-h-screen bg-warm-gray font-sans text-slate-900">
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
@@ -267,9 +288,9 @@ export const StatePageTemplate: React.FC = () => {
                 <p className="text-slate-600 mb-4 leading-relaxed">
                   In many states, Medicaid <strong>does not</strong> pay for room and board in assisted living. However, HCBS Waivers (like the one shown here) can pay for the <em>care services</em> provided in the facility.
                 </p>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
-                  <h4 className="font-semibold text-blue-900 text-sm mb-2">Key Takeaway</h4>
-                  <p className="text-sm text-blue-800">
+                <div className="bg-primary-50 p-4 rounded-lg border border-primary-100">
+                  <h4 className="font-semibold text-primary-900 text-sm mb-2">Key Takeaway</h4>
+                  <p className="text-sm text-primary-800">
                     You typically still need to pay for "Room & Board" (rent + food) out of pocket or via SSI, while the Waiver covers the "Assisted Living Services" (care).
                   </p>
                 </div>

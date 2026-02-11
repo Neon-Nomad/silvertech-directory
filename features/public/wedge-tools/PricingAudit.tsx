@@ -43,7 +43,7 @@ const PricingAudit: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-primary-600 to-accent-600 py-20">
+      <div className="bg-gradient-to-r from-primary-600 to-primary-600 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Free Pricing Competitive Analysis
@@ -218,11 +218,11 @@ const PricingAudit: React.FC = () => {
                 </div>
               </div>
 
-              <div className={`border rounded-xl p-6 mb-8 ${analysis.isBelowMarket ? 'bg-blue-50 border-blue-100' : 'bg-orange-50 border-orange-100'}`}>
-                <h3 className={`text-lg font-bold mb-2 ${analysis.isBelowMarket ? 'text-blue-900' : 'text-orange-900'}`}>
+              <div className={`border rounded-xl p-6 mb-8 ${analysis.isBelowMarket ? 'bg-primary-50 border-primary-100' : 'bg-orange-50 border-orange-100'}`}>
+                <h3 className={`text-lg font-bold mb-2 ${analysis.isBelowMarket ? 'text-primary-900' : 'text-orange-900'}`}>
                   {analysis.isBelowMarket ? 'Recommendation: Opportunity to Increase Rates' : 'Recommendation: Focus on Value & Occupancy'}
                 </h3>
-                <p className={analysis.isBelowMarket ? 'text-blue-700' : 'text-orange-700'}>
+                <p className={analysis.isBelowMarket ? 'text-primary-700' : 'text-orange-700'}>
                   {analysis.isBelowMarket ? (
                     <>
                       Your facility is priced <strong>{analysis.percentDiff}% below market average</strong> for {careType} in this area. 
@@ -275,8 +275,8 @@ const PricingAudit: React.FC = () => {
           </div>
 
           <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-            <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <TrendingUp className="text-secondary-600" size={32} />
+            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <TrendingUp className="text-primary-600" size={32} />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Pricing Recommendations</h3>
             <p className="text-slate-600">
@@ -285,8 +285,8 @@ const PricingAudit: React.FC = () => {
           </div>
 
           <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-            <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Download className="text-accent-600" size={32} />
+            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Download className="text-primary-600" size={32} />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Downloadable PDF</h3>
             <p className="text-slate-600">
@@ -307,7 +307,7 @@ const PricingAudit: React.FC = () => {
           </p>
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
+            className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
           >
             Get Started - It's Free
           </button>

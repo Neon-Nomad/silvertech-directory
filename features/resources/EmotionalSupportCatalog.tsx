@@ -109,7 +109,7 @@ const CATEGORIES: CatalogCategory[] = [
     label: 'Category 4',
     headline: 'Ongoing Communication',
     description: 'Keeps family bonds and care-team collaboration strong after move-in.',
-    icon: <FileText className="w-5 h-5 text-blue-500" />,
+    icon: <FileText className="w-5 h-5 text-primary-500" />,
     products: [
       {
         slug: 'maximizing-visits-connection',
@@ -160,7 +160,7 @@ const EmotionalSupportCatalog: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50 pb-16">
       {/* Hero */}
-      <div className="bg-gradient-to-r from-primary-600 to-secondary-500 text-white">
+      <div className="bg-gradient-to-r from-primary-600 to-primary-500 text-white">
         <div className="max-w-5xl mx-auto px-6 py-16">
           <p className="uppercase tracking-wide text-white/80 text-sm font-semibold">Digital Self-Help Catalog</p>
           <h1 className="text-4xl font-bold mt-3 mb-4">Emotional Support for Memory Care Families</h1>

@@ -30,12 +30,15 @@ if (!fs.existsSync(PUBLIC_DIR)) {
     fs.mkdirSync(PUBLIC_DIR, { recursive: true });
 }
 
+const buildTime = new Date().toISOString();
+
 // Helper to write XML
 const writeSitemap = (filename: string, urls: string[]) => {
     const content = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(url => `  <url>
     <loc>${url}</loc>
+    <lastmod>${buildTime}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`).join('\n')}
@@ -49,7 +52,7 @@ const writeSitemapIndex = (filenames: string[]) => {
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${filenames.map(filename => `  <sitemap>
     <loc>${BASE_URL}/${filename}</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
+    <lastmod>${buildTime}</lastmod>
   </sitemap>`).join('\n')}
 </sitemapindex>`;
     fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-index.xml'), content);
@@ -117,8 +120,6 @@ async function generateSitemaps() {
     const staticUrls = [
         `${BASE_URL}/`,
         `${BASE_URL}/search`,
-        `${BASE_URL}/login`,
-        `${BASE_URL}/signup`,
         `${BASE_URL}/tools/pricing-audit`,
         `${BASE_URL}/claim-business`,
         `${BASE_URL}/survey`,
@@ -144,37 +145,44 @@ async function generateSitemaps() {
         `${BASE_URL}/products/outdoor-travel`
     ];
 
-    // 2. Fetch Facilities from DB
-    console.log('Fetching facilities from Supabase...');
-    // Fetch ID, State, City
-    let allFacilities: any[] = [];
-    let page = 0;
-    const pageSize = 1000;
-    let hasMore = true;
+    // 2. Fetch Facilities
+    console.log('Loading facilities for sitemaps...');
+    const facilityIndexPath = path.join(PUBLIC_DIR, 'facilities_index.json');
+    let facilities: any[] = [];
+    if (fs.existsSync(facilityIndexPath)) {
+        facilities = JSON.parse(fs.readFileSync(facilityIndexPath, 'utf-8'));
+        console.log(`Loaded ${facilities.length} facilities from facilities_index.json.`);
+    } else {
+        console.log('facilities_index.json not found. Falling back to Supabase.');
+        let allFacilities: any[] = [];
+        let page = 0;
+        const pageSize = 1000;
+        let hasMore = true;
 
-    while (hasMore) {
-        const { data, error } = await supabase
-            .from('facilities')
-            .select('id, state, city')
-            .range(page * pageSize, (page + 1) * pageSize - 1);
+        while (hasMore) {
+            const { data, error } = await supabase
+                .from('facilities')
+                .select('id, state, city')
+                .range(page * pageSize, (page + 1) * pageSize - 1);
 
-        if (error) {
-            console.error('Error fetching facilities:', error);
-            break;
+            if (error) {
+                console.error('Error fetching facilities:', error);
+                break;
+            }
+
+            if (data && data.length > 0) {
+                allFacilities = [...allFacilities, ...data];
+                console.log(`Fetched batch ${page + 1}: ${data.length} facilities`);
+                if (data.length < pageSize) hasMore = false;
+                page++;
+            } else {
+                hasMore = false;
+            }
         }
 
-        if (data && data.length > 0) {
-            allFacilities = [...allFacilities, ...data];
-            console.log(`Fetched batch ${page + 1}: ${data.length} facilities`);
-            if (data.length < pageSize) hasMore = false;
-            page++;
-        } else {
-            hasMore = false;
-        }
+        facilities = allFacilities;
+        console.log(`Fetched total ${facilities.length} facilities.`);
     }
-
-    const facilities = allFacilities;
-    console.log(`Fetched total ${facilities.length} facilities.`);
 
     const stateUrls: string[] = [];
     const cityUrls: Set<string> = new Set();
@@ -187,7 +195,7 @@ async function generateSitemaps() {
 
             activeStates.add(facility.state);
 
-            // Facility Page
+            // Facility Page (canonical slug id from index if available)
             facilityUrls.push(`${BASE_URL}/facility/${facility.id}`);
 
             // City Page
@@ -195,7 +203,7 @@ async function generateSitemaps() {
                 const stateDef = ALL_STATES.find(s => s.abbreviation === facility.state);
                 if (stateDef) {
                     const citySlug = facility.city.trim().toLowerCase().replace(/ /g, '-');
-                    cityUrls.add(`${BASE_URL}/assisted-living/${stateDef.slug}/${citySlug}`);
+                    cityUrls.add(`${BASE_URL}/assisted-living/${stateDef.slug}/cities/${citySlug}`);
                 }
             }
         }
@@ -239,7 +247,7 @@ async function generateSitemaps() {
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${facilityChunks.map(filename => `  <sitemap>
     <loc>${BASE_URL}/${filename}</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
+    <lastmod>${buildTime}</lastmod>
   </sitemap>`).join('\n')}
 </sitemapindex>`;
     fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-facilities.xml'), facilityIndexContent);
@@ -250,19 +258,19 @@ ${facilityChunks.map(filename => `  <sitemap>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>${BASE_URL}/sitemap-static.xml</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
+    <lastmod>${buildTime}</lastmod>
   </sitemap>
   <sitemap>
     <loc>${BASE_URL}/sitemap-states.xml</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
+    <lastmod>${buildTime}</lastmod>
   </sitemap>
   <sitemap>
     <loc>${BASE_URL}/sitemap-cities.xml</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
+    <lastmod>${buildTime}</lastmod>
   </sitemap>
   <sitemap>
     <loc>${BASE_URL}/sitemap-facilities.xml</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
+    <lastmod>${buildTime}</lastmod>
   </sitemap>
 </sitemapindex>`;
     fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap.xml'), masterIndexContent);

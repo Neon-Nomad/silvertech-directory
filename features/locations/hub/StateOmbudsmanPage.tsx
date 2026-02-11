@@ -141,12 +141,12 @@ export const StateOmbudsmanPage: React.FC = () => {
 
           {/* Sidebar */}
           <div className="space-y-6">
-            <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
-              <h3 className="font-bold text-blue-900 mb-2">In an Emergency</h3>
-              <p className="text-sm text-blue-800 mb-4">
+            <div className="bg-primary-50 p-6 rounded-xl border border-primary-100">
+              <h3 className="font-bold text-primary-900 mb-2">In an Emergency</h3>
+              <p className="text-sm text-primary-800 mb-4">
                 If you suspect immediate physical danger or a life-threatening situation, do not wait for an ombudsman.
               </p>
-              <div className="flex items-center gap-2 font-bold text-blue-900 text-lg">
+              <div className="flex items-center gap-2 font-bold text-primary-900 text-lg">
                 <Phone className="w-5 h-5" />
                 Call 911
               </div>

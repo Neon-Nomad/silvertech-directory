@@ -15,7 +15,7 @@ const US_STATES = [
 
 export const StatesDirectoryPage: React.FC = () => {
     return (
-        <div className="min-h-screen bg-[#f6f1ea]">
+        <div className="min-h-screen bg-warm-gray">
             <Helmet>
                 <title>Browse Senior Living by State | SilverTech Directory</title>
                 <meta name="description" content="Find senior living and assisted care facilities across all 50 states. Browse our comprehensive directory to find care near you." />
@@ -35,7 +35,7 @@ export const StatesDirectoryPage: React.FC = () => {
             {/* Hero Section */}
             <div className="bg-white text-slate-900 py-20 px-4 border-b border-slate-200">
                 <div className="max-w-7xl mx-auto text-center">
-                    <div className="inline-flex items-center justify-center p-3 bg-[#f6f1ea] rounded-xl mb-6 border border-slate-200">
+                    <div className="inline-flex items-center justify-center p-3 bg-warm-gray rounded-xl mb-6 border border-slate-200">
                         <MapPin className="w-8 h-8 text-slate-600" />
                     </div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Browse by State</h1>

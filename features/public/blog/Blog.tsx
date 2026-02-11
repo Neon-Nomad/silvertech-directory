@@ -15,11 +15,11 @@ export const Blog: React.FC = () => {
       title: "The Hidden Costs of Dementia Care: What Your Budget Max Misses",
       excerpt: "Base rent is just the beginning. Learn about care levels, medication management fees, and incontinence supplies that can double your monthly bill.",
       category: "Financial Planning",
-      icon: <AlertTriangle className="w-6 h-6 text-orange-500" />,
+      icon: <AlertTriangle className="w-6 h-6 text-primary-500" />,
       readTime: "5 min read",
       content: (
-        <div className="space-y-8 text-lg text-slate-700 leading-relaxed">
-          <p className="font-medium text-xl text-slate-900">
+        <div className="space-y-8 text-lg text-charcoal leading-relaxed">
+          <p className="font-medium text-xl text-charcoal">
             Base rent is just the beginning. Learn about care levels, medication management fees, and incontinence supplies that can double your monthly bill.
           </p>
           <p>
@@ -32,19 +32,19 @@ export const Blog: React.FC = () => {
             Here are the three most common hidden costs you must verify before signing a contract:
           </p>
 
-          <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-lg">
-            <h3 className="text-xl font-bold text-orange-900 mb-2">1. The Care Level Conundrum (The Biggest Surprise)</h3>
+          <div className="bg-primary-50 border-l-4 border-primary-500 p-6 rounded-r-lg">
+            <h3 className="text-xl font-bold text-primary-900 mb-2">1. The Care Level Conundrum (The Biggest Surprise)</h3>
             <p className="mb-4">Most assisted living facilities—even those with memory care units—use a tiered pricing model based on "levels of care."</p>
             <ul className="space-y-2">
               <li><strong>Initial Quote:</strong> Often based on "Level 1" or "Base Rent," which assumes the resident is relatively independent.</li>
               <li><strong>The Reality:</strong> If your loved one needs frequent assistance (e.g., help with dressing, bathing, or mobility), they will be assessed within the first 30 days and moved to "Level 3" or "Level 4."</li>
               <li><strong>The Cost Jump:</strong> Each jump in level typically adds $500 to $1,500 per month to your bill. For families dealing with moderate to late-stage dementia, a Level 4 placement is often mandatory from the start.</li>
             </ul>
-            <p className="mt-4 font-bold text-orange-800">Action: Always ask for the price breakdown for the highest expected level of care and insist on seeing the facility's official assessment criteria before touring.</p>
+            <p className="mt-4 font-bold text-primary-800">Action: Always ask for the price breakdown for the highest expected level of care and insist on seeing the facility's official assessment criteria before touring.</p>
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">2. Medication Management and Supply Fees</h3>
+            <h3 className="text-2xl font-bold text-charcoal mb-4">2. Medication Management and Supply Fees</h3>
             <p className="mb-4">Medication management is non-negotiable for memory care, but the cost structure is often separate from the base rent.</p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Medication Administration Fee:</strong> This fee covers the staff's time in managing, sorting, and dispensing medication. It can range from $150 to $400 per month.</li>
@@ -54,7 +54,7 @@ export const Blog: React.FC = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">3. Move-In Fees and Community Fees</h3>
+            <h3 className="text-2xl font-bold text-charcoal mb-4">3. Move-In Fees and Community Fees</h3>
             <p className="mb-4">These are one-time costs that act as an upfront tax on your placement decision.</p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Community Fee / Move-In Fee:</strong> This one-time, non-refundable charge can range from $1,000 up to the cost of one full month's rent ($4,500 - $7,000). Facilities use this fee to cover administration, cleaning, and occasionally, sales commissions.</li>
@@ -81,11 +81,11 @@ export const Blog: React.FC = () => {
       title: "How to Read a State Citation Report (TX, FL, CA Explained)",
       excerpt: "Don't let 'deficiencies' scare you without context. We break down the difference between administrative paperwork errors and actual patient harm.",
       category: "Trust & Safety",
-      icon: <FileText className="w-6 h-6 text-blue-500" />,
+      icon: <FileText className="w-6 h-6 text-primary-500" />,
       readTime: "7 min read",
       content: (
-        <div className="space-y-8 text-lg text-slate-700 leading-relaxed">
-          <p className="font-medium text-xl text-slate-900">
+        <div className="space-y-8 text-lg text-charcoal leading-relaxed">
+          <p className="font-medium text-xl text-charcoal">
             Don't let 'deficiencies' scare you without context. We break down the difference between administrative paperwork errors and actual patient harm.
           </p>
           <p>
@@ -99,7 +99,7 @@ export const Blog: React.FC = () => {
           </p>
 
           <div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">1. Understanding the Severity Score (The Most Critical Filter)</h3>
+            <h3 className="text-2xl font-bold text-charcoal mb-4">1. Understanding the Severity Score (The Most Critical Filter)</h3>
             <p className="mb-4">The most important step is looking past the mere existence of a citation and checking its severity level. Every state uses a scale, and you must know what the letters mean.</p>
             
             <div className="grid md:grid-cols-2 gap-6 mt-6">
@@ -120,28 +120,28 @@ export const Blog: React.FC = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">2. The California System (The RCFE Scale)</h3>
+            <h3 className="text-2xl font-bold text-charcoal mb-4">2. The California System (The RCFE Scale)</h3>
             <p className="mb-4">California's Community Care Licensing Division (CCLD) focuses on classifying the violations clearly:</p>
             
             <div className="overflow-x-auto">
               <table className="min-w-full text-sm text-left">
-                <thead className="bg-slate-100 text-slate-900 font-bold">
+                <thead className="bg-warm-gray text-charcoal font-bold">
                   <tr>
                     <th className="p-3 rounded-tl-lg">Violation Code</th>
                     <th className="p-3">Definition</th>
                     <th className="p-3 rounded-tr-lg">Family Impact</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200 border border-slate-200">
+                <tbody className="divide-y divide-slate-200 border border-warm-gray">
                   <tr className="bg-red-50">
                     <td className="p-3 font-bold text-red-800">Type A</td>
                     <td className="p-3">Immediate Health/Safety Risk. The deficiency caused, or could cause, death or serious injury.</td>
                     <td className="p-3 font-bold text-red-800">CRITICAL RED FLAG. Requires immediate correction and often leads to fines.</td>
                   </tr>
-                  <tr className="bg-orange-50">
-                    <td className="p-3 font-bold text-orange-800">Type B</td>
+                  <tr className="bg-primary-50">
+                    <td className="p-3 font-bold text-primary-800">Type B</td>
                     <td className="p-3">Risk to Health or Safety. A less severe violation that still has an impact on the resident.</td>
-                    <td className="p-3 font-bold text-orange-800">Serious Concern. Indicates a system failure that needs deep investigation.</td>
+                    <td className="p-3 font-bold text-primary-800">Serious Concern. Indicates a system failure that needs deep investigation.</td>
                   </tr>
                   <tr className="bg-green-50">
                     <td className="p-3 font-bold text-green-800">Type C</td>
@@ -154,12 +154,12 @@ export const Blog: React.FC = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">3. The Texas & Florida System (Focusing on Scope and Severity)</h3>
+            <h3 className="text-2xl font-bold text-charcoal mb-4">3. The Texas & Florida System (Focusing on Scope and Severity)</h3>
             <p className="mb-4">Texas (HHSC) and Florida (AHCA) often use scales that combine the severity (the actual harm caused) with the scope (how many residents were affected).</p>
             
             <div className="overflow-x-auto">
               <table className="min-w-full text-sm text-left">
-                <thead className="bg-slate-100 text-slate-900 font-bold">
+                <thead className="bg-warm-gray text-charcoal font-bold">
                   <tr>
                     <th className="p-3 rounded-tl-lg">Severity Level</th>
                     <th className="p-3">Definition (Harm)</th>
@@ -167,18 +167,18 @@ export const Blog: React.FC = () => {
                     <th className="p-3 rounded-tr-lg">Family Takeaway</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200 border border-slate-200">
+                <tbody className="divide-y divide-slate-200 border border-warm-gray">
                   <tr className="bg-green-50">
                     <td className="p-3 font-bold text-green-800">A</td>
                     <td className="p-3">Potential for Minimal Harm</td>
                     <td className="p-3">Isolated incident.</td>
                     <td className="p-3 font-bold text-green-800">Low risk.</td>
                   </tr>
-                  <tr className="bg-orange-50">
-                    <td className="p-3 font-bold text-orange-800">B</td>
+                  <tr className="bg-primary-50">
+                    <td className="p-3 font-bold text-primary-800">B</td>
                     <td className="p-3">Minimal Harm/No Harm Caused</td>
                     <td className="p-3">Pattern (Multiple residents).</td>
-                    <td className="p-3 font-bold text-orange-800">Moderate risk. Indicates a systemic problem.</td>
+                    <td className="p-3 font-bold text-primary-800">Moderate risk. Indicates a systemic problem.</td>
                   </tr>
                   <tr className="bg-red-50">
                     <td className="p-3 font-bold text-red-800">C</td>
@@ -191,19 +191,19 @@ export const Blog: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-            <h3 className="text-xl font-bold text-blue-900 mb-4">The SilverTech Action Plan for Families</h3>
+          <div className="bg-primary-50 border-l-4 border-primary-500 p-6 rounded-r-lg">
+            <h3 className="text-xl font-bold text-primary-900 mb-4">The SilverTech Action Plan for Families</h3>
             <ul className="space-y-4">
               <li className="flex gap-3">
-                <span className="font-bold text-blue-600">1.</span>
+                <span className="font-bold text-primary-600">1.</span>
                 <p><strong>Don't Panic at the Citation Count:</strong> A facility with 10 minor Type C citations may be safer than a facility with one recent Type A citation. Focus on the type, not the quantity.</p>
               </li>
               <li className="flex gap-3">
-                <span className="font-bold text-blue-600">2.</span>
+                <span className="font-bold text-primary-600">2.</span>
                 <p><strong>Verify the Correction:</strong> For any citation (especially high-severity ones), ask the facility: "What was your official Plan of Correction, and can you show me the evidence that the state approved it?"</p>
               </li>
               <li className="flex gap-3">
-                <span className="font-bold text-blue-600">3.</span>
+                <span className="font-bold text-primary-600">3.</span>
                 <p><strong>Use Our Data:</strong> Compare the citation history with the Verified Review Scorecard (Staff Responsiveness, Quality of Care). If a facility has high staff turnover and a high-severity citation, that is a clear signal to avoid it.</p>
               </li>
             </ul>
@@ -231,8 +231,8 @@ export const Blog: React.FC = () => {
       icon: <ShieldCheck className="w-6 h-6 text-red-500" />,
       readTime: "4 min read",
       content: (
-        <div className="space-y-8 text-lg text-slate-700 leading-relaxed">
-          <p className="font-medium text-xl text-slate-900">
+        <div className="space-y-8 text-lg text-charcoal leading-relaxed">
+          <p className="font-medium text-xl text-charcoal">
             Staff turnover is the #1 predictor of care quality. Here are the subtle signs to look for when you walk through the door.
           </p>
           <p>
@@ -246,8 +246,8 @@ export const Blog: React.FC = () => {
           </p>
 
           <div className="grid gap-6">
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">1. The "Whose Job Is This?" Syndrome (Staff Knowledge)</h3>
+            <div className="bg-warm-white p-6 rounded-xl border border-warm-gray">
+              <h3 className="text-xl font-bold text-charcoal mb-3">1. The "Whose Job Is This?" Syndrome (Staff Knowledge)</h3>
               <p className="mb-4">The best indicator of high turnover is the caregiver's knowledge of the resident's specific routine, history, and preferences.</p>
               <div className="space-y-3">
                 <div className="flex gap-3">
@@ -255,14 +255,14 @@ export const Blog: React.FC = () => {
                     <p className="text-sm">You ask a staff member a basic question about a resident (e.g., "What is Mrs. Smith's favorite afternoon activity?" or "When does Mr. Jones usually take his nap?"). The staff member replies, "I'm not sure, I just started this week," or "You'd have to ask the usual person."</p>
                 </div>
                 <div className="flex gap-3">
-                    <span className="font-bold text-slate-600 min-w-[80px]">Implication:</span>
+                    <span className="font-bold text-charcoal/70 min-w-[80px]">Implication:</span>
                     <p className="text-sm">This confirms a high volume of new or temporary staff who have not been adequately trained or connected with the residents, leading to inconsistent, task-focused care.</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">2. The Missing Whiteboards (Communication Failure)</h3>
+            <div className="bg-warm-white p-6 rounded-xl border border-warm-gray">
+              <h3 className="text-xl font-bold text-charcoal mb-3">2. The Missing Whiteboards (Communication Failure)</h3>
               <p className="mb-4">High turnover makes documentation and information transfer critical, yet often chaotic.</p>
               <div className="space-y-3">
                 <div className="flex gap-3">
@@ -270,14 +270,14 @@ export const Blog: React.FC = () => {
                     <p className="text-sm">Look for key communication tools that are blank, generic, or outdated. This includes the daily activities board, the meal menu posted in the kitchen, or the communication log near the nurse's station.</p>
                 </div>
                 <div className="flex gap-3">
-                    <span className="font-bold text-slate-600 min-w-[80px]">Implication:</span>
+                    <span className="font-bold text-charcoal/70 min-w-[80px]">Implication:</span>
                     <p className="text-sm">If information isn't being recorded in a centralized, visible manner, it means critical care notes (like hydration status or mood changes) are being lost during shift changes—a major safety hazard.</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">3. The Atmosphere of Rushed Chaos (Staff Stress)</h3>
+            <div className="bg-warm-white p-6 rounded-xl border border-warm-gray">
+              <h3 className="text-xl font-bold text-charcoal mb-3">3. The Atmosphere of Rushed Chaos (Staff Stress)</h3>
               <p className="mb-4">In homes with high turnover, the remaining staff are overworked, stressed, and focused purely on urgent tasks.</p>
               <div className="space-y-3">
                 <div className="flex gap-3">
@@ -285,14 +285,14 @@ export const Blog: React.FC = () => {
                     <p className="text-sm">Staff members avoid eye contact, speak quickly and curtly, or are constantly running between rooms. You may see staff huddled together, complaining or looking deeply fatigued.</p>
                 </div>
                 <div className="flex gap-3">
-                    <span className="font-bold text-slate-600 min-w-[80px]">Implication:</span>
+                    <span className="font-bold text-charcoal/70 min-w-[80px]">Implication:</span>
                     <p className="text-sm">Staff who are always rushed cannot provide the patient, person-centered engagement that memory care requires. They are focused on tasks (meds, feeding) rather than quality of life.</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">4. The "No One Is Around" Effect (Understaffing)</h3>
+            <div className="bg-warm-white p-6 rounded-xl border border-warm-gray">
+              <h3 className="text-xl font-bold text-charcoal mb-3">4. The "No One Is Around" Effect (Understaffing)</h3>
               <p className="mb-4">While good staffing ratios are essential, look for signs of intentional staff invisibility designed to cut costs.</p>
               <div className="space-y-3">
                 <div className="flex gap-3">
@@ -300,7 +300,7 @@ export const Blog: React.FC = () => {
                     <p className="text-sm">The facility has long stretches where you see no staff members in common areas or hallways, or you see the same staff member performing multiple roles (e.g., serving food and then immediately helping a resident transfer).</p>
                 </div>
                 <div className="flex gap-3">
-                    <span className="font-bold text-slate-600 min-w-[80px]">Implication:</span>
+                    <span className="font-bold text-charcoal/70 min-w-[80px]">Implication:</span>
                     <p className="text-sm">High turnover often leads directly to understaffing. The state requires a minimum ratio, but a facility running lean to save money is placing residents at risk, confirming poor financial management.</p>
                 </div>
               </div>
@@ -329,7 +329,7 @@ export const Blog: React.FC = () => {
     const postTitle = `${selectedPost.title} | SilverTech Directory`;
     const postDescription = selectedPost.excerpt;
     return (
-      <div className="min-h-screen bg-white font-inter">
+      <div className="min-h-screen bg-white font-sans">
         <Helmet>
           <title>{postTitle}</title>
           <meta name="description" content={postDescription} />
@@ -349,7 +349,7 @@ export const Blog: React.FC = () => {
           <Button 
             variant="ghost" 
             onClick={() => setSelectedPostId(null)}
-            className="mb-8 text-slate-500 hover:text-slate-900 pl-0"
+            className="mb-8 text-charcoal/60 hover:text-charcoal pl-0"
           >
             <ArrowLeft className="w-4 h-4 mr-2" /> Back to Blog
           </Button>
@@ -358,10 +358,10 @@ export const Blog: React.FC = () => {
             <span className="text-xs font-bold uppercase tracking-wider text-primary-600 bg-primary-50 px-3 py-1 rounded-full">
               {selectedPost.category}
             </span>
-            <h1 className="text-3xl md:text-5xl font-bold text-slate-900 font-montserrat mt-4 mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-bold text-charcoal font-serif mt-4 mb-6 leading-tight">
               {selectedPost.title}
             </h1>
-          <div className="flex items-center text-slate-500 text-sm">
+          <div className="flex items-center text-charcoal/60 text-sm">
             <BookOpen className="w-4 h-4 mr-2" />
             {selectedPost.readTime}
           </div>
@@ -372,7 +372,7 @@ export const Blog: React.FC = () => {
           <DataSourceNote note="Articles are based on public guidance and industry best practices." />
         </div>
 
-        <div className="prose prose-lg max-w-none text-slate-700">
+        <div className="prose prose-lg max-w-none text-charcoal">
           {selectedPost.content}
         </div>
         </div>
@@ -381,7 +381,7 @@ export const Blog: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 font-inter">
+    <div className="min-h-screen bg-warm-white font-sans">
       <Helmet>
         <title>Blog | SilverTech Directory</title>
         <meta name="description" content="Expert insights, financial truths, and safety guides to help families navigate senior living." />
@@ -398,12 +398,12 @@ export const Blog: React.FC = () => {
         <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
       {/* Header */}
-      <div className="bg-white border-b border-slate-200">
+      <div className="bg-white border-b border-warm-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <h1 className="text-4xl font-bold text-slate-900 font-montserrat mb-4">
+          <h1 className="text-4xl font-bold text-charcoal font-serif mb-4">
             Transparency Driven Care
           </h1>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-xl text-charcoal/70 max-w-2xl mx-auto">
             Expert insights, financial truths, and safety guides to help you navigate the complex world of senior living.
           </p>
         </div>
@@ -417,23 +417,23 @@ export const Blog: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-3 gap-8">
           {posts.map((post) => (
-            <div key={post.id} className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+            <div key={post.id} className="bg-white rounded-xl shadow-sm border border-warm-gray overflow-hidden hover:shadow-md transition-shadow flex flex-col">
               <div className="p-6 flex-1">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-1 rounded">
+                  <span className="text-xs font-bold uppercase tracking-wider text-charcoal/60 bg-warm-gray px-2 py-1 rounded">
                     {post.category}
                   </span>
-                  <div className="flex items-center text-slate-400 text-xs">
+                  <div className="flex items-center text-charcoal/40 text-xs">
                     <BookOpen className="w-3 h-3 mr-1" />
                     {post.readTime}
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-slate-900 mb-3 font-montserrat leading-tight">
+                <h3 className="text-xl font-bold text-charcoal mb-3 font-serif leading-tight">
                   {post.title}
                 </h3>
                 
-                <p className="text-slate-600 mb-6 text-sm leading-relaxed">
+                <p className="text-charcoal/70 mb-6 text-sm leading-relaxed">
                   {post.excerpt}
                 </p>
               </div>
@@ -453,12 +453,12 @@ export const Blog: React.FC = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-slate-900 text-white py-20">
+      <div className="bg-charcoal text-white py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-montserrat mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold font-serif mb-6">
             Ready to use transparent data?
           </h2>
-          <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-charcoal/30 mb-10 max-w-2xl mx-auto">
             Stop guessing. Start matching. Use our data-driven survey to find facilities that meet your budget and care needs.
           </p>
           <Link to="/survey">

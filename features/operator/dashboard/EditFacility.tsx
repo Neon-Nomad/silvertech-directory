@@ -251,8 +251,8 @@ export const EditFacility: React.FC = () => {
               {formData.plan === 'basic' && (
                 <div className="absolute inset-0 bg-white/60 backdrop-blur-[1px] z-10 flex flex-col items-center justify-center border border-slate-200 rounded-xl">
                   <div className="bg-white p-6 rounded-xl shadow-lg text-center max-w-sm border border-slate-100">
-                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Globe className="w-6 h-6 text-purple-600" />
+                    <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Globe className="w-6 h-6 text-primary-600" />
                     </div>
                     <h3 className="text-lg font-bold text-slate-900 mb-2">Unlock Photo Gallery</h3>
                     <p className="text-slate-600 mb-4 text-sm">
@@ -260,7 +260,7 @@ export const EditFacility: React.FC = () => {
                     </p>
                     <Button
                       onClick={() => navigate('/dashboard')}
-                      className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+                      className="w-full bg-primary-600 hover:bg-primary-700 text-white"
                     >
                       Upgrade for $99/mo
                     </Button>

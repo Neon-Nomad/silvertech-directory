@@ -134,15 +134,15 @@ export const ContactSalesPage: React.FC = () => {
               </ul>
             </div>
 
-            <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
+            <div className="bg-primary-50 p-6 rounded-xl border border-primary-100">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center shrink-0">
-                  <Phone className="w-5 h-5 text-blue-600" />
+                <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center shrink-0">
+                  <Phone className="w-5 h-5 text-primary-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-blue-900">Prefer to talk now?</h4>
-                  <p className="text-blue-700 text-sm mb-2">Call our sales team directly.</p>
-                  <a href="tel:+15551234567" className="text-blue-800 font-bold hover:underline">
+                  <h4 className="font-bold text-primary-900">Prefer to talk now?</h4>
+                  <p className="text-primary-700 text-sm mb-2">Call our sales team directly.</p>
+                  <a href="tel:+15551234567" className="text-primary-800 font-bold hover:underline">
                     (555) 123-4567
                   </a>
                 </div>
@@ -236,7 +236,7 @@ export const ContactSalesPage: React.FC = () => {
                 />
               </div>
 
-              <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg">
+              <Button type="submit" className="w-full bg-primary-600 hover:bg-primary-700 text-white py-3 text-lg">
                 Request Demo & Pricing
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

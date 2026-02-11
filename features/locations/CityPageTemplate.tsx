@@ -6,6 +6,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { ContentMeta } from '@/components/ui/ContentMeta';
 import { DataSourceNote } from '@/components/ui/DataSourceNote';
 import { supabase } from '@/src/lib/supabase';
+import { filterFacilitiesByLocation, loadFacilityIndex } from '@/src/utils/facilityIndex';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
 import { ALL_STATES as states } from '@/src/data/states';
 import zipToCity from '@/src/data/zip_to_city.json';
@@ -74,11 +75,12 @@ export const CityPageTemplate: React.FC = () => {
       if (!stateSlug || !citySlug) return;
 
       setLoading(true);
-      try {
-        // 1. Get facilities for the state
-        const targetState = stateData?.abbreviation || stateSlug;
-        const targetCity = cityName;
+      setError(null);
+      const targetState = stateData?.abbreviation || stateSlug;
+      const targetCity = cityName;
 
+      try {
+        // 1. Get facilities for the state (Supabase primary)
         const { data, error } = await supabase
           .from('facilities')
           .select('*')
@@ -89,14 +91,24 @@ export const CityPageTemplate: React.FC = () => {
         if (error) throw error;
 
         setFacilities(data || []);
-
-        // 2. Get hospitals for the city
-        const cityHospitals = await getHospitalsByCity(targetState, targetCity);
-        setHospitals(cityHospitals);
       } catch (err) {
-        console.error('Error fetching city facilities:', err);
-        setError('Failed to load facilities.');
+        console.error('Error fetching city facilities from Supabase:', err);
+        try {
+          // Fallback to static index
+          const index = await loadFacilityIndex();
+          const filtered = filterFacilitiesByLocation(index, targetState, targetCity);
+          setFacilities(filtered);
+        } catch (fallbackError) {
+          console.error('Error loading static facility index:', fallbackError);
+          setError('Failed to load facilities.');
+        }
       } finally {
+        try {
+          const cityHospitals = await getHospitalsByCity(targetState, targetCity);
+          setHospitals(cityHospitals);
+        } catch (hospitalError) {
+          console.error('Error loading hospitals:', hospitalError);
+        }
         setLoading(false);
       }
     };
@@ -141,7 +153,7 @@ export const CityPageTemplate: React.FC = () => {
   useJsonLd(itemListSchema);
 
   return (
-    <div className="min-h-screen bg-[#f6f1ea]">
+    <div className="min-h-screen bg-warm-gray">
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
@@ -328,12 +340,12 @@ export const CityPageTemplate: React.FC = () => {
             </div>
 
             {/* Safety Tip */}
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
+            <div className="bg-primary-50 rounded-lg p-6 border border-primary-100">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                <AlertTriangle className="w-6 h-6 text-primary-600 flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-blue-900 text-sm mb-1">Safety Tip</h4>
-                  <p className="text-sm text-blue-800">
+                  <h4 className="font-bold text-primary-900 text-sm mb-1">Safety Tip</h4>
+                  <p className="text-sm text-primary-800">
                     Always verify the facility's license with the {stateName} state department before signing any contracts.
                   </p>
                 </div>

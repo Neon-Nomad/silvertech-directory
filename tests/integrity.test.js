@@ -57,10 +57,12 @@ describe('Backend Integrity', () => {
         const { data } = await supabase
             .from('facility_licensing')
             .select('license_number')
+            .not('license_number', 'is', null)
             .limit(1);
 
         if (data && data.length > 0) {
             const license = data[0].license_number;
+            if (!license) return;
             const { count } = await supabase
                 .from('facility_licensing')
                 .select('*', { count: 'exact', head: true })

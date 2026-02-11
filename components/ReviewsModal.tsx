@@ -96,7 +96,7 @@ const ReviewsModal: React.FC<ReviewsModalProps> = ({ isOpen, onClose, facilityNa
               <div key={review.id} className="border-b border-slate-200 pb-6 last:border-0">
                 <div className="flex items-start gap-4">
                   {/* Avatar */}
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center text-white font-bold flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-500 to-primary-500 flex items-center justify-center text-white font-bold flex-shrink-0">
                     {review.reviewerName.charAt(0)}
                   </div>
                   

@@ -62,13 +62,13 @@ export const AgingAgencyCard: React.FC<AgingAgencyCardProps> = ({ agency, varian
         {isFull && (
           <div className="bg-slate-50 rounded-lg p-4 border border-slate-100">
             <h4 className="font-semibold text-slate-900 text-sm mb-2 flex items-center gap-2">
-              <ShieldCheck size={16} className="text-blue-500" />
+              <ShieldCheck size={16} className="text-primary-500" />
               Why Contact Your Local AAA?
             </h4>
             <ul className="space-y-2">
               {agency.why_it_matters.map((item, idx) => (
                 <li key={idx} className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">•</span>
+                  <span className="text-primary-400 mt-1">•</span>
                   <span>{item}</span>
                 </li>
               ))}

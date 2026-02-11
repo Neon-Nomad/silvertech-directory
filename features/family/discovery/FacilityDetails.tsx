@@ -1,10 +1,11 @@
-﻿import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Star, DollarSign, CheckCircle, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Map } from '@/components/ui/Map';
 import { supabase } from '@/src/lib/supabase';
+import { loadFacilityIndex } from '@/src/utils/facilityIndex';
 import { geocodeAddress } from '@/src/utils/geocoding';
 import { ReviewList } from '@/features/reviews/ReviewList';
 import { ReviewModal } from '@/features/reviews/ReviewModal';
@@ -33,6 +34,8 @@ import { FactGrid } from '@/components/ui/FactGrid';
 import { StickySectionTabs } from '@/components/ui/StickySectionTabs';
 
 const toRad = (value: number) => (value * Math.PI) / 180;
+const isUuid = (value?: string) =>
+  Boolean(value && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value));
 const getDistanceMiles = (a: { lat: number; lng: number }, b: { lat: number; lng: number }) => {
   const R = 3958.8;
   const dLat = toRad(b.lat - a.lat);
@@ -81,25 +84,87 @@ export const FacilityDetails: React.FC = () => {
   }, []);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (userCoords) return;
+    if (!navigator.geolocation) return;
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        const coords = { lat: latitude, lng: longitude };
+        localStorage.setItem('geo_coords', JSON.stringify(coords));
+        localStorage.setItem('geo_status', 'granted');
+        setUserCoords(coords);
+      },
+      () => {
+        localStorage.setItem('geo_status', 'denied');
+      }
+    );
+  }, [userCoords]);
+
+  useEffect(() => {
     const fetchFacility = async () => {
       if (!id) return;
       setLoading(true);
+      setError(null);
       try {
-        const { data, error } = await supabase
-          .from('facilities')
-          .select(`
-            *,
-            facility_licensing(*),
-            facility_photos(*),
-            facility_amenities(
-              amenities(*)
-            ),
-            facility_care_types(
-              care_types(*)
-            )
-          `)
-          .eq('id', id)
-          .single();
+        let data = null;
+        let error = null;
+
+        if (isUuid(id)) {
+          const result = await supabase
+            .from('facilities')
+            .select(`
+              *,
+              facility_licensing(*),
+              facility_photos(*),
+              facility_amenities(
+                amenities(*)
+              ),
+              facility_care_types(
+                care_types(*)
+              )
+            `)
+            .eq('id', id)
+            .single();
+          data = result.data;
+          error = result.error;
+        } else {
+          const index = await loadFacilityIndex();
+          const fallback = index.find((item) => item.id === id);
+          if (fallback) {
+            const result = await supabase
+              .from('facilities')
+              .select(`
+                *,
+                facility_licensing(*),
+                facility_photos(*),
+                facility_amenities(
+                  amenities(*)
+                ),
+                facility_care_types(
+                  care_types(*)
+                )
+              `)
+              .eq('name', fallback.name)
+              .eq('city', fallback.city)
+              .eq('state', fallback.state)
+              .eq('postal_code', fallback.postal_code || '')
+              .maybeSingle();
+            data = result.data;
+            error = result.error;
+            if (!data) {
+              data = {
+                ...fallback,
+                address_line2: '',
+                facility_licensing: [],
+                facility_photos: [],
+                facility_amenities: [],
+                facility_care_types: []
+              };
+            }
+          }
+        }
 
         if (error) throw error;
 
@@ -137,8 +202,28 @@ export const FacilityDetails: React.FC = () => {
           setAgingAgency(getAgingAgency(data.state));
         }
       } catch (err) {
-        console.error('Error fetching facility:', err);
-        setError('Failed to load facility details.');
+        console.error('Error fetching facility from Supabase:', err);
+        try {
+          const index = await loadFacilityIndex();
+          const fallback = index.find((item) => item.id === id);
+          if (!fallback) throw err;
+          setFacility({
+            ...fallback,
+            address_line2: '',
+            facility_licensing: [],
+            facility_photos: [],
+            facility_amenities: [],
+            facility_care_types: []
+          });
+          if (fallback.state) {
+            setOmbudsman(getOmbudsman(fallback.state));
+            setLicensingAuthority(getLicensingAuthority(fallback.state));
+            setAgingAgency(getAgingAgency(fallback.state));
+          }
+        } catch (fallbackError) {
+          console.error('Error loading static facility index:', fallbackError);
+          setError('Failed to load facility details.');
+        }
       } finally {
         setLoading(false);
       }
@@ -147,9 +232,59 @@ export const FacilityDetails: React.FC = () => {
     fetchFacility();
   }, [id]);
 
+  const distanceMiles = useMemo(() => {
+    if (!userCoords) return null;
+    const lat = Number(facility?.latitude);
+    const lng = Number(facility?.longitude);
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
+    return getDistanceMiles(userCoords, { lat, lng });
+  }, [userCoords, facility?.latitude, facility?.longitude]);
+
+  const driveMinutes = useMemo(() => {
+    if (!distanceMiles) return null;
+    const mph = 30;
+    return Math.max(5, Math.round((distanceMiles / mph) * 60));
+  }, [distanceMiles]);
+
+  const distanceLabel = distanceMiles
+    ? `${distanceMiles.toFixed(1)} miles${driveMinutes ? ` (${driveMinutes} min)` : ''}`
+    : userCoords
+      ? 'Distance unavailable'
+      : 'Enable location for distance';
+
+  const mapUrl = useMemo(() => {
+    if (!facility?.latitude || !facility?.longitude) return null;
+    const destination = `${facility.latitude},${facility.longitude}`;
+    const origin = userCoords ? `${userCoords.lat},${userCoords.lng}` : '';
+    if (origin) {
+      return `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}`;
+    }
+    return `https://www.google.com/maps/search/?api=1&query=${destination}`;
+  }, [facility?.latitude, facility?.longitude, userCoords]);
+
+  const PricingCta = ({ className = '' }: { className?: string }) => (
+    <div className="relative inline-flex group">
+      <Button
+        variant="primary"
+        className={`bg-gold text-white hover:bg-gold-dark focus-visible:ring-gold/40 ${className}`}
+        onClick={() => {
+          if (pricingRequestLink) {
+            window.location.href = pricingRequestLink;
+          }
+        }}
+        disabled={!pricingRequestLink}
+      >
+        Request Transparent Pricing
+      </Button>
+      <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-full mt-2 w-64 bg-charcoal text-white text-xs rounded-md px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity z-50">
+        We’ll contact this facility and ask them to share updated pricing for families.
+      </div>
+    </div>
+  );
+
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+      <div className="min-h-screen flex items-center justify-center bg-warm-white">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
       </div>
     );
@@ -157,12 +292,12 @@ export const FacilityDetails: React.FC = () => {
 
   if (error || !facility) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+      <div className="min-h-screen flex items-center justify-center bg-warm-white">
         <div className="text-center max-w-md px-4">
           <div className="bg-white p-8 rounded-xl shadow-sm">
             <AlertCircle className="h-12 w-12 text-red-500 mx-auto mb-4" />
-            <h2 className="text-2xl font-bold text-slate-900 mb-2">Facility Not Found</h2>
-            <p className="text-slate-600 mb-6">
+            <h2 className="text-2xl font-bold text-charcoal mb-2">Facility Not Found</h2>
+            <p className="text-charcoal/70 mb-6">
               We couldn't find the facility you're looking for. It may have been removed or the link is incorrect.
             </p>
             <Button variant="primary" onClick={() => navigate('/search')}>
@@ -202,6 +337,15 @@ export const FacilityDetails: React.FC = () => {
     ? new Date(lastUpdatedRaw).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
     : 'Not available';
 
+  const pricingMissing = !facility.min_price;
+  const facilityEmail = facility.email || facility.contact_email || facility.contactEmail || null;
+  const pricingRequestSubject = `Request for Transparent Pricing - ${facility.name}`;
+  const pricingRequestBody = `Hello ${facility.name} team,%0D%0A%0D%0AI'm using SilverTech Directory to compare senior living options and would appreciate your most current pricing and care level ranges for ${facility.name} in ${facility.city}, ${facility.state}.%0D%0A%0D%0AIf you can share updated pricing, we can reflect it accurately for families researching your community.%0D%0A%0D%0AListing: ${encodeURIComponent(window.location.href)}%0D%0A%0D%0AThank you,%0D%0A`;
+  const pricingRequestLink = facilityEmail
+    ? `mailto:${facilityEmail}?subject=${encodeURIComponent(pricingRequestSubject)}&body=${pricingRequestBody}`
+    : null;
+
+  const defaultImage = `${window.location.origin}/hero.png`;
   const schemaMarkup = {
     '@context': 'https://schema.org',
     '@type': 'SeniorLivingCommunity',
@@ -216,8 +360,8 @@ export const FacilityDetails: React.FC = () => {
       addressCountry: 'US'
     },
     telephone: facility.phone,
-    image: facility.facility_photos?.[0]?.url || facility.image || 'https://silvertechdirectory.com/default-facility.jpg',
-    priceRange: facility.min_price ? `$${facility.min_price} - $${facility.max_price}` : 'Call for Pricing',
+    image: facility.facility_photos?.[0]?.url || facility.image || defaultImage,
+    priceRange: facility.min_price ? `$${facility.min_price} - $${facility.max_price}` : 'Pricing pending',
     description: facility.description || `${serviceTypeString} facility in ${facility.city}, ${facility.state}.`,
     geo: facility.latitude && facility.longitude ? {
       '@type': 'GeoCoordinates',
@@ -231,31 +375,10 @@ export const FacilityDetails: React.FC = () => {
   const stateSlug = ALL_STATES.find(s => s.abbreviation === facility.state)?.slug || facility.state.toLowerCase();
   const citySlug = facility.city.toLowerCase().replace(/ /g, '-');
   const canonicalUrl = `https://silvertechdirectory.com/facility/${id}`;
-  const shareImage = facility.facility_photos?.[0]?.url || facility.image || 'https://silvertechdirectory.com/hero.png';
+  const shareImage = facility.facility_photos?.[0]?.url || facility.image || defaultImage;
   const heroImage = shareImage;
   const pageTitle = `${facility.name} - ${serviceTypeString} in ${facility.city}, ${facility.state} | SilverTech`;
   const pageDescription = `Learn about ${facility.name}, a premier ${serviceTypeString} community in ${facility.city}, ${facility.state}. View pricing, photos, amenities, and licensing info (Lic: ${licenseNumber}). Capacity: ${capacity} beds.`;
-
-  const distanceMiles = useMemo(() => {
-    if (!userCoords || !facility.latitude || !facility.longitude) return null;
-    return getDistanceMiles(userCoords, { lat: facility.latitude, lng: facility.longitude });
-  }, [userCoords, facility.latitude, facility.longitude]);
-
-  const driveMinutes = useMemo(() => {
-    if (!distanceMiles) return null;
-    const mph = 30;
-    return Math.max(5, Math.round((distanceMiles / mph) * 60));
-  }, [distanceMiles]);
-
-  const mapUrl = useMemo(() => {
-    if (!facility.latitude || !facility.longitude) return null;
-    const destination = `${facility.latitude},${facility.longitude}`;
-    const origin = userCoords ? `${userCoords.lat},${userCoords.lng}` : '';
-    if (origin) {
-      return `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}`;
-    }
-    return `https://www.google.com/maps/search/?api=1&query=${destination}`;
-  }, [facility.latitude, facility.longitude, userCoords]);
 
   const tabs = [
     { label: 'Overview', href: '#overview' },
@@ -267,7 +390,7 @@ export const FacilityDetails: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f6f1ea] pb-20">
+    <div className="min-h-screen bg-warm-gray pb-20">
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
@@ -285,13 +408,13 @@ export const FacilityDetails: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </Helmet>
 
-      <div className="bg-[#f6f1ea]">
+      <div className="bg-warm-gray">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8 pt-6">
           <Breadcrumbs items={[
             { label: 'Home', path: '/' },
             { label: 'Assisted Living', path: '/assisted-living' },
             { label: facility.state, path: `/assisted-living/${stateSlug}` },
-            { label: facility.city, path: `/assisted-living/${stateSlug}/${citySlug}` },
+            { label: facility.city, path: `/assisted-living/${stateSlug}/cities/${citySlug}` },
             { label: facility.name }
           ]} />
         </div>
@@ -301,41 +424,41 @@ export const FacilityDetails: React.FC = () => {
         <Card className="p-6 md:p-8">
           <div className="grid lg:grid-cols-[1.4fr_1fr] gap-8 items-start">
             <div>
-              <div className="flex flex-wrap gap-2 text-xs font-medium text-slate-500 uppercase tracking-wide">
-                <span className="px-2 py-1 rounded-full bg-slate-100 border border-slate-200">{serviceTypeString}</span>
-                <span className="px-2 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-100">
+              <div className="flex flex-wrap gap-2 text-xs font-medium text-charcoal/60 uppercase tracking-wide">
+                <span className="px-2 py-1 rounded-full bg-warm-gray border border-warm-gray">{serviceTypeString}</span>
+                <span className="px-2 py-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100">
                   {facility.owner_id ? 'Premium Member' : 'Community Listing'}
                 </span>
                 {facility.owner_id && (
-                  <span className="px-2 py-1 rounded-full bg-green-50 text-green-700 border border-green-100">Verified</span>
+                  <span className="px-2 py-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100">Verified</span>
                 )}
               </div>
 
-              <h1 className="text-[26px] md:text-[28px] font-semibold text-slate-900 mt-3">
+              <h1 className="text-[26px] md:text-[28px] font-semibold text-charcoal mt-3">
                 {facility.name}
               </h1>
 
-              <div className="flex flex-wrap items-center gap-2 text-sm text-slate-600 mt-2">
-                <MapPin className="h-4 w-4 text-slate-400" />
+              <div className="flex flex-wrap items-center gap-2 text-sm text-charcoal/70 mt-2">
+                <MapPin className="h-4 w-4 text-charcoal/40" />
                 <span>
                   {facility.city}, {facility.state}
                 </span>
-                <span className="text-slate-300">|</span>
+                <span className="text-charcoal/30">|</span>
                 <span>{fullAddress}</span>
               </div>
 
               <div className="mt-4 grid sm:grid-cols-2 gap-4">
-                <div className="bg-slate-50 border border-slate-100 rounded-lg px-4 py-3">
-                  <p className="text-[12px] uppercase tracking-wide text-slate-500 font-medium">Price range</p>
-                  <p className="text-[16px] font-semibold text-slate-900">
-                    {facility.min_price ? `$${facility.min_price.toLocaleString()} - $${facility.max_price?.toLocaleString() || ''}` : 'Call for Pricing'}
+                <div className="bg-warm-white border border-warm-gray rounded-lg px-4 py-3">
+                  <p className="text-[12px] uppercase tracking-wide text-charcoal/60 font-medium">Price range</p>
+                  <p className="text-[16px] font-semibold text-charcoal">
+                    {facility.min_price ? `$${facility.min_price.toLocaleString()} - $${facility.max_price?.toLocaleString() || ''}` : ''}
                   </p>
+                  {!facility.min_price && <PricingCta className="mt-2 w-full sm:w-auto text-sm" />}
                 </div>
-                <div className="bg-slate-50 border border-slate-100 rounded-lg px-4 py-3">
-                  <p className="text-[12px] uppercase tracking-wide text-slate-500 font-medium">Distance</p>
-                  <p className="text-[16px] font-semibold text-slate-900">
-                    {distanceMiles ? `${distanceMiles.toFixed(1)} miles` : 'Approximate'}
-                    {driveMinutes ? ` (${driveMinutes} min)` : ''}
+                <div className="bg-warm-white border border-warm-gray rounded-lg px-4 py-3">
+                  <p className="text-[12px] uppercase tracking-wide text-charcoal/60 font-medium">Distance</p>
+                  <p className="text-[16px] font-semibold text-charcoal">
+                    {distanceLabel}
                   </p>
                 </div>
               </div>
@@ -343,7 +466,7 @@ export const FacilityDetails: React.FC = () => {
               <div className="mt-5 flex flex-wrap gap-3">
                 <Button
                   variant="outline"
-                  className="border-slate-300 hover:bg-slate-100"
+                  className="border-warm-gray hover:bg-warm-gray"
                   onClick={() => setIsCompareModalOpen(true)}
                 >
                   Compare
@@ -351,7 +474,7 @@ export const FacilityDetails: React.FC = () => {
                 {mapUrl && (
                   <Button
                     variant="outline"
-                    className="border-slate-300 hover:bg-slate-100"
+                    className="border-warm-gray hover:bg-warm-gray"
                     onClick={() => window.open(mapUrl, '_blank')}
                   >
                     Directions
@@ -360,7 +483,7 @@ export const FacilityDetails: React.FC = () => {
               </div>
             </div>
 
-            <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+            <div className="rounded-xl overflow-hidden border border-warm-gray shadow-sm">
               <img
                 src={heroImage}
                 alt={`${facility.name} hero`}
@@ -383,11 +506,11 @@ export const FacilityDetails: React.FC = () => {
             <div className="mt-6">
               <FactGrid
                 items={[
-                  { label: 'Price range', value: facility.min_price ? `$${facility.min_price.toLocaleString()} - $${facility.max_price?.toLocaleString() || ''}` : 'Call for Pricing' },
+                  { label: 'Price range', value: facility.min_price ? `$${facility.min_price.toLocaleString()} - $${facility.max_price?.toLocaleString() || ''}` : 'Request Transparent Pricing' },
                   { label: 'Care types', value: careTypes.length ? careTypes.map((c: any) => c.name).join(', ') : serviceTypeString },
                   { label: 'Capacity', value: `${capacity} beds` },
                   { label: 'License', value: licenseNumber },
-                  { label: 'Distance', value: distanceMiles ? `${distanceMiles.toFixed(1)} miles` : 'Approximate' },
+                  { label: 'Distance', value: distanceLabel },
                   { label: 'Rating', value: facility.rating ? `${facility.rating}/5` : 'Not yet rated' }
                 ]}
               />
@@ -397,31 +520,31 @@ export const FacilityDetails: React.FC = () => {
           <Card>
             <SectionHeader title="Helping you decide" helper="Short, practical answers to the most important questions." />
             <div className="mt-6 grid md:grid-cols-2 gap-4">
-              <div className="border border-slate-200 rounded-lg p-4">
-                <h3 className="text-[16px] font-semibold text-slate-900">Best for</h3>
-                <ul className="mt-3 text-sm text-slate-600 space-y-2">
+              <div className="border border-warm-gray rounded-lg p-4">
+                <h3 className="text-[16px] font-semibold text-charcoal">Best for</h3>
+                <ul className="mt-3 text-sm text-charcoal/70 space-y-2">
                   <li>Families needing {serviceTypeString.toLowerCase()} in {facility.city}.</li>
                   <li>Residents who prefer a smaller community (capacity {capacity} beds).</li>
                   <li>Those prioritizing a licensed, regulated environment.</li>
                 </ul>
               </div>
-              <div className="border border-slate-200 rounded-lg p-4">
-                <h3 className="text-[16px] font-semibold text-slate-900">Not ideal if</h3>
-                <ul className="mt-3 text-sm text-slate-600 space-y-2">
+              <div className="border border-warm-gray rounded-lg p-4">
+                <h3 className="text-[16px] font-semibold text-charcoal">Not ideal if</h3>
+                <ul className="mt-3 text-sm text-charcoal/70 space-y-2">
                   <li>You need a lower monthly price than listed.</li>
                   <li>You are looking for a hospital-level medical setting.</li>
                 </ul>
               </div>
-              <div className="border border-slate-200 rounded-lg p-4">
-                <h3 className="text-[16px] font-semibold text-slate-900">Cost clarity</h3>
-                <ul className="mt-3 text-sm text-slate-600 space-y-2">
+              <div className="border border-warm-gray rounded-lg p-4">
+                <h3 className="text-[16px] font-semibold text-charcoal">Cost clarity</h3>
+                <ul className="mt-3 text-sm text-charcoal/70 space-y-2">
                   <li>Base pricing reflects standard care and housing.</li>
                   <li>Higher care needs can raise monthly costs.</li>
                 </ul>
               </div>
-              <div className="border border-slate-200 rounded-lg p-4">
-                <h3 className="text-[16px] font-semibold text-slate-900">Safety snapshot</h3>
-                <ul className="mt-3 text-sm text-slate-600 space-y-2">
+              <div className="border border-warm-gray rounded-lg p-4">
+                <h3 className="text-[16px] font-semibold text-charcoal">Safety snapshot</h3>
+                <ul className="mt-3 text-sm text-charcoal/70 space-y-2">
                   <li>Licensed facility with ID: {licenseNumber}.</li>
                   <li>Regulated by state licensing authorities.</li>
                 </ul>
@@ -433,19 +556,28 @@ export const FacilityDetails: React.FC = () => {
             <SectionHeader title="Pricing" helper="Understand baseline pricing and what can change it." />
             <div className="mt-6">
               <div className="grid sm:grid-cols-2 gap-4">
-                <div className="border border-slate-200 rounded-lg p-4">
-                  <p className="text-[12px] uppercase tracking-wide text-slate-500 font-medium">Starting range</p>
-                  <p className="text-[16px] font-semibold text-slate-900 mt-1">
-                    {facility.min_price ? `$${facility.min_price.toLocaleString()} - $${facility.max_price?.toLocaleString() || ''}` : 'Call for Pricing'}
+                <div className="border border-warm-gray rounded-lg p-4">
+                  <p className="text-[12px] uppercase tracking-wide text-charcoal/60 font-medium">
+                    {facility.min_price ? 'Starting range' : 'Pricing update'}
+                  </p>
+                  <p className="text-[16px] font-semibold text-charcoal mt-1">
+                    {facility.min_price ? `$${facility.min_price.toLocaleString()} - $${facility.max_price?.toLocaleString() || ''}` : 'Coming soon'}
                   </p>
                 </div>
-                <div className="border border-slate-200 rounded-lg p-4">
-                  <p className="text-[12px] uppercase tracking-wide text-slate-500 font-medium">Includes</p>
-                  <p className="text-sm text-slate-600 mt-1">Housing, meals, and baseline care services.</p>
+                <div className="border border-warm-gray rounded-lg p-4">
+                  <p className="text-[12px] uppercase tracking-wide text-charcoal/60 font-medium">Includes</p>
+                  <p className="text-sm text-charcoal/70 mt-1">Housing, meals, and baseline care services.</p>
                 </div>
               </div>
-              <div className="mt-4 text-sm text-slate-600">
+              <div className="mt-4 text-sm text-charcoal/70">
                 Costs can change based on care level, room type, and additional services. Request a tour for a tailored quote.
+              </div>
+              <div className="mt-6 border border-warm-gray rounded-xl p-4 bg-warm-white">
+                <p className="text-sm font-semibold text-charcoal">Our transparency pledge</p>
+                <p className="text-sm text-charcoal/70 mt-1">
+                  SilverTech is committed to clear, verified pricing so families can compare with confidence.
+                </p>
+                {!facility.min_price && <PricingCta className="mt-4 w-full sm:w-auto text-sm" />}
               </div>
             </div>
           </Card>
@@ -455,32 +587,32 @@ export const FacilityDetails: React.FC = () => {
             <div className="mt-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
-                  <h3 className="text-[16px] font-semibold text-slate-900 mb-3">Care services</h3>
+                  <h3 className="text-[16px] font-semibold text-charcoal mb-3">Care services</h3>
                   {careTypes.length > 0 ? (
                     <div className="flex flex-wrap gap-2">
                       {careTypes.map((care: any) => (
-                        <span key={care.id} className="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm border border-slate-200">
+                        <span key={care.id} className="px-3 py-1 rounded-full bg-warm-gray text-charcoal text-sm border border-warm-gray">
                           {care.name}
                         </span>
                       ))}
                     </div>
                   ) : (
-                    <p className="text-sm text-slate-600">Care types not listed yet.</p>
+                    <p className="text-sm text-charcoal/70">Care types not listed yet.</p>
                   )}
                 </div>
                 <div>
-                  <h3 className="text-[16px] font-semibold text-slate-900 mb-3">Amenities</h3>
+                  <h3 className="text-[16px] font-semibold text-charcoal mb-3">Amenities</h3>
                   {amenitiesList.length > 0 ? (
-                    <div className="grid sm:grid-cols-2 gap-2 text-sm text-slate-600">
+                    <div className="grid sm:grid-cols-2 gap-2 text-sm text-charcoal/70">
                       {amenitiesList.slice(0, 8).map((item: any) => (
                         <div key={item.id} className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-emerald-500" />
+                          <CheckCircle className="w-4 h-4 text-primary-500" />
                           <span>{item.name}</span>
                         </div>
                       ))}
                     </div>
                   ) : (
-                    <p className="text-sm text-slate-600">Amenities not listed yet.</p>
+                    <p className="text-sm text-charcoal/70">Amenities not listed yet.</p>
                   )}
                 </div>
               </div>
@@ -507,13 +639,13 @@ export const FacilityDetails: React.FC = () => {
             <SectionHeader title="Safety & legitimacy" helper="Verified through state licensing and oversight bodies." />
             <div className="mt-6 space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
-                <div className="border border-slate-200 rounded-lg p-4">
-                  <p className="text-[12px] uppercase tracking-wide text-slate-500 font-medium">License number</p>
-                  <p className="text-[16px] font-semibold text-slate-900 mt-1">{licenseNumber}</p>
+                <div className="border border-warm-gray rounded-lg p-4">
+                  <p className="text-[12px] uppercase tracking-wide text-charcoal/60 font-medium">License number</p>
+                  <p className="text-[16px] font-semibold text-charcoal mt-1">{licenseNumber}</p>
                 </div>
-                <div className="border border-slate-200 rounded-lg p-4">
-                  <p className="text-[12px] uppercase tracking-wide text-slate-500 font-medium">Authority</p>
-                  <p className="text-[16px] font-semibold text-slate-900 mt-1">{licensingAuthority?.agency_name || 'State licensing authority'}</p>
+                <div className="border border-warm-gray rounded-lg p-4">
+                  <p className="text-[12px] uppercase tracking-wide text-charcoal/60 font-medium">Authority</p>
+                  <p className="text-[16px] font-semibold text-charcoal mt-1">{licensingAuthority?.agency_name || 'State licensing authority'}</p>
                 </div>
               </div>
 
@@ -529,10 +661,10 @@ export const FacilityDetails: React.FC = () => {
           <Card>
             <SectionHeader title="Comparison mode" helper="See how this community stacks up against nearby options." />
             <div className="mt-6 flex flex-wrap gap-3">
-              <Button variant="outline" className="border-slate-300 hover:bg-slate-100" onClick={() => setIsCompareModalOpen(true)}>
+              <Button variant="outline" className="border-warm-gray hover:bg-warm-gray" onClick={() => setIsCompareModalOpen(true)}>
                 Compare similar homes
               </Button>
-              <Button variant="outline" className="border-slate-300 hover:bg-slate-100" onClick={() => navigate(`/assisted-living/${stateSlug}/${citySlug}`)}>
+              <Button variant="outline" className="border-warm-gray hover:bg-warm-gray" onClick={() => navigate(`/assisted-living/${stateSlug}/cities/${citySlug}`)}>
                 View all in {facility.city}
               </Button>
             </div>
@@ -540,7 +672,7 @@ export const FacilityDetails: React.FC = () => {
 
           <Card>
             <SectionHeader title="Who this community is right for" helper="A quick mental shortcut to help with the decision." />
-            <div className="mt-6 text-sm text-slate-600 space-y-2">
+            <div className="mt-6 text-sm text-charcoal/70 space-y-2">
               <p>This community may be a good fit for families seeking {serviceTypeString.toLowerCase()} care in {facility.city} with a licensed setting.</p>
               <p>It is best for residents who value structured support and a community size of about {capacity} beds.</p>
             </div>
@@ -549,7 +681,7 @@ export const FacilityDetails: React.FC = () => {
           <Card id="reviews">
             <SectionHeader title="Reviews" helper="Verified feedback and family impressions." />
             <div className="mt-6 flex justify-between items-center">
-              <h3 className="text-[16px] font-semibold text-slate-900">Latest reviews</h3>
+              <h3 className="text-[16px] font-semibold text-charcoal">Latest reviews</h3>
               <Button
                 variant="outline"
                 onClick={() => {
@@ -564,7 +696,11 @@ export const FacilityDetails: React.FC = () => {
               </Button>
             </div>
             <div className="mt-6">
-              <ReviewList facilityId={id!} refreshTrigger={refreshReviews} />
+      {isUuid(facility.id) ? (
+        <ReviewList facilityId={facility.id} refreshTrigger={refreshReviews} />
+      ) : (
+        <p className="text-sm text-charcoal/60">Reviews are available once this listing is matched to a verified facility record.</p>
+      )}
             </div>
           </Card>
 
@@ -584,7 +720,7 @@ export const FacilityDetails: React.FC = () => {
               {facility.phone && (
                 <Button
                   variant="outline"
-                  className="w-full sm:w-auto border-slate-300 hover:bg-slate-100"
+                  className="w-full sm:w-auto border-warm-gray hover:bg-warm-gray"
                   onClick={() => window.location.href = `tel:${facility.phone}`}
                 >
                   Call {facility.phone}
@@ -614,15 +750,15 @@ export const FacilityDetails: React.FC = () => {
               </Button>
               <Button
                 variant="outline"
-                className="w-full border-slate-300 hover:bg-slate-100"
+                className="w-full border-warm-gray hover:bg-warm-gray"
                 onClick={() => setIsCompareModalOpen(true)}
               >
                 Compare similar homes
               </Button>
               <Button
                 variant="outline"
-                className="w-full border-slate-300 hover:bg-slate-100"
-                onClick={() => navigate(`/assisted-living/${stateSlug}/${citySlug}`)}
+                className="w-full border-warm-gray hover:bg-warm-gray"
+                onClick={() => navigate(`/assisted-living/${stateSlug}/cities/${citySlug}`)}
               >
                 Back to {facility.city} list
               </Button>
@@ -631,15 +767,15 @@ export const FacilityDetails: React.FC = () => {
 
           <Card>
             <SectionHeader title="Contact" />
-            <div className="mt-4 space-y-3 text-sm text-slate-600">
+            <div className="mt-4 space-y-3 text-sm text-charcoal/70">
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-slate-400" />
+                <MapPin className="w-4 h-4 text-charcoal/40" />
                 <span>{fullAddress}</span>
               </div>
               {facility.phone && (
                 <a
                   href={`tel:${facility.phone}`}
-                  className="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900"
+                  className="inline-flex items-center gap-2 text-charcoal hover:text-charcoal"
                 >
                   <Phone className="w-4 h-4" />
                   {facility.phone}
@@ -651,14 +787,18 @@ export const FacilityDetails: React.FC = () => {
           <Card>
             <SectionHeader title="Monthly cost" />
             <div className="mt-4">
-              <div className="flex items-center gap-2 text-slate-900">
-                <DollarSign className="h-6 w-6 text-slate-700" />
-                <span className="text-[22px] font-semibold">
-                  {facility.min_price ? `$${facility.min_price.toLocaleString()}` : 'Call'}
-                </span>
-                {facility.max_price && <span className="text-sm text-slate-500">- ${facility.max_price.toLocaleString()}</span>}
+              <div className="flex items-center gap-2 text-charcoal">
+                <DollarSign className="h-6 w-6 text-charcoal" />
+                {facility.min_price ? (
+                  <span className="text-[22px] font-semibold">
+                    ${facility.min_price.toLocaleString()}
+                  </span>
+                ) : (
+                  <PricingCta className="text-sm px-3 py-2" />
+                )}
+                {facility.max_price && <span className="text-sm text-charcoal/60">- ${facility.max_price.toLocaleString()}</span>}
               </div>
-              <div className="mt-3 text-xs text-amber-700 bg-amber-50 border border-amber-100 rounded-full px-3 py-1 inline-flex items-center gap-2">
+              <div className="mt-3 text-xs text-primary-700 bg-primary-50 border border-primary-100 rounded-full px-3 py-1 inline-flex items-center gap-2">
                 <Star className="h-4 w-4 fill-current" />
                 Premium placement available
               </div>
@@ -683,12 +823,14 @@ export const FacilityDetails: React.FC = () => {
         onReviewSubmitted={() => setRefreshReviews(prev => prev + 1)}
       />
 
-      <LeadModal
-        isOpen={isLeadModalOpen}
-        onClose={() => setIsLeadModalOpen(false)}
-        facilityId={id!}
-        facilityName={facility.name}
-      />
+      {isUuid(facility.id) && (
+        <LeadModal
+          isOpen={isLeadModalOpen}
+          onClose={() => setIsLeadModalOpen(false)}
+          facilityId={facility.id}
+          facilityName={facility.name}
+        />
+      )}
 
       <CompareToolModal
         isOpen={isCompareModalOpen}

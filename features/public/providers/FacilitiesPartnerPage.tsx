@@ -6,7 +6,7 @@ import { Card } from '@/components/ui/Card';
 
 export const FacilitiesPartnerPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#f8f4ef] text-slate-900">
+    <div className="min-h-screen bg-warm-gray text-slate-900">
       <Helmet>
         <title>For Facilities | SilverTech Partners</title>
         <meta
@@ -16,7 +16,7 @@ export const FacilitiesPartnerPage: React.FC = () => {
         <link rel="canonical" href="https://silvertechdirectory.com/for-facilities" />
       </Helmet>
 
-      <header className="sticky top-0 z-40 bg-[#f8f4ef]/95 backdrop-blur-md border-b border-slate-200 px-6 py-4 flex items-center justify-between">
+      <header className="sticky top-0 z-40 bg-warm-gray/95 backdrop-blur-md border-b border-slate-200 px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-primary-500 rounded-md flex items-center justify-center">
             <Building2 className="w-4 h-4 text-white" />

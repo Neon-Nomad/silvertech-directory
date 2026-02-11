@@ -16,7 +16,7 @@ export const HospitalList: React.FC<HospitalListProps> = ({ hospitals, cityName 
     <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-6">
       <div className="flex items-center justify-between mb-4">
         <h3 className="font-bold text-slate-900">Nearby Hospitals</h3>
-        <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">
+        <span className="bg-primary-100 text-primary-800 text-xs font-medium px-2.5 py-0.5 rounded-full">
           {hospitals.length} Total
         </span>
       </div>

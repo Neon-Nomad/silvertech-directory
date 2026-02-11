@@ -59,7 +59,7 @@ export const StateVeteransPage: React.FC = () => {
                             <ArrowLeft className="w-6 h-6 text-slate-600" />
                         </Link>
                         <h1 className="text-3xl md:text-4xl font-bold text-slate-900 flex items-center gap-3">
-                            <Flag className="w-8 h-8 text-blue-600" />
+                            <Flag className="w-8 h-8 text-primary-600" />
                             Veterans Benefits in {stateDef.name}
                         </h1>
                     </div>
@@ -80,7 +80,7 @@ export const StateVeteransPage: React.FC = () => {
                         <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 prose prose-slate max-w-none">
                             {loading ? (
                                 <div className="flex items-center justify-center py-12">
-                                    <Loader className="w-8 h-8 text-blue-600 animate-spin" />
+                                    <Loader className="w-8 h-8 text-primary-600 animate-spin" />
                                 </div>
                             ) : error ? (
                                 <div className="text-red-600 p-4 bg-red-50 rounded-lg">
@@ -112,15 +112,15 @@ export const StateVeteransPage: React.FC = () => {
 
                     {/* Sidebar */}
                     <div className="space-y-6">
-                        <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
-                            <h3 className="text-lg font-bold text-blue-900 mb-4">Need Help?</h3>
-                            <p className="text-blue-800 mb-4">
+                        <div className="bg-primary-50 p-6 rounded-xl border border-primary-100">
+                            <h3 className="text-lg font-bold text-primary-900 mb-4">Need Help?</h3>
+                            <p className="text-primary-800 mb-4">
                                 Navigating veterans benefits can be complex. A local Veterans Service Officer (VSO) can help you file claims for free.
                             </p>
                             {regulatoryData?.contacts_json?.veterans ? (
                                 <div className="space-y-3">
                                     {regulatoryData.contacts_json.veterans.phone && (
-                                        <div className="flex items-center gap-2 text-blue-900">
+                                        <div className="flex items-center gap-2 text-primary-900">
                                             <span className="font-semibold">Phone:</span>
                                             <a href={`tel:${regulatoryData.contacts_json.veterans.phone}`} className="hover:underline">
                                                 {regulatoryData.contacts_json.veterans.phone}
@@ -132,7 +132,7 @@ export const StateVeteransPage: React.FC = () => {
                                             href={regulatoryData.contacts_json.veterans.website}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="block w-full py-2 px-4 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition-colors"
+                                            className="block w-full py-2 px-4 bg-primary-600 text-white text-center rounded-lg hover:bg-primary-700 transition-colors"
                                         >
                                             Visit Official Website
                                         </a>
@@ -143,7 +143,7 @@ export const StateVeteransPage: React.FC = () => {
                                     href="https://www.va.gov/find-locations/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="block w-full py-2 px-4 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition-colors"
+                                    className="block w-full py-2 px-4 bg-primary-600 text-white text-center rounded-lg hover:bg-primary-700 transition-colors"
                                 >
                                     Find a VSO Near You
                                 </a>

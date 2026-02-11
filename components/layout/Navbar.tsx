@@ -99,13 +99,13 @@ const NavDropdown: React.FC<{
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-slate-100 py-2 z-50">
+        <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-warm-gray py-2 z-50">
           {category.items.map((item) => (
             <Link
               key={item.label}
               to={item.href}
               onClick={onClose}
-              className="block px-4 py-2.5 text-sm text-slate-600 hover:text-charcoal hover:bg-warm-gray transition-colors"
+              className="block px-4 py-2.5 text-sm text-charcoal/70 hover:text-charcoal hover:bg-warm-gray transition-colors"
             >
               {item.label}
             </Link>
@@ -124,7 +124,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="w-full sticky top-0 z-50 bg-white border-b border-slate-200">
+    <nav className="w-full sticky top-0 z-50 bg-white border-b border-warm-gray">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -146,21 +146,21 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Utility Navigation — desktop */}
-          <div className="hidden lg:flex items-center gap-5 border-l border-slate-200 pl-6">
-            <Link to="/search" className="text-slate-500 hover:text-charcoal transition-colors" title="Search">
+          <div className="hidden lg:flex items-center gap-5 border-l border-warm-gray pl-6">
+            <Link to="/search" className="text-charcoal/60 hover:text-charcoal transition-colors" title="Search">
               <Search className="w-5 h-5" />
             </Link>
-            <button className="text-slate-500 hover:text-charcoal transition-colors" title="Saved">
+            <button className="text-charcoal/60 hover:text-charcoal transition-colors" title="Saved">
               <Heart className="w-5 h-5" />
             </button>
-            <button className="flex items-center gap-1.5 text-slate-500 hover:text-charcoal transition-colors text-sm" title="Location">
+            <button className="flex items-center gap-1.5 text-charcoal/60 hover:text-charcoal transition-colors text-sm" title="Location">
               <MapPin className="w-4 h-4" />
             </button>
           </div>
 
           {/* Mobile — tap to toggle categories */}
           <div className="lg:hidden flex items-center gap-4">
-            <Link to="/search" className="text-slate-500 hover:text-charcoal" title="Search">
+            <Link to="/search" className="text-charcoal/60 hover:text-charcoal" title="Search">
               <Search className="w-5 h-5" />
             </Link>
             <button
@@ -175,7 +175,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile dropdown panel */}
         {openCategory === 'mobile' && (
-          <div className="lg:hidden border-t border-slate-100 py-4 space-y-4">
+          <div className="lg:hidden border-t border-warm-gray py-4 space-y-4">
             {NAV_CATEGORIES.map((category) => (
               <MobileNavSection
                 key={category.label}
@@ -212,7 +212,7 @@ const MobileNavSection: React.FC<{
               key={item.label}
               to={item.href}
               onClick={onClose}
-              className="block py-1.5 text-sm text-slate-600 hover:text-gold"
+              className="block py-1.5 text-sm text-charcoal/70 hover:text-gold"
             >
               {item.label}
             </Link>

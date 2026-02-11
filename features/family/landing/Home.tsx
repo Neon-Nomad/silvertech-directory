@@ -25,17 +25,9 @@ export const Home: React.FC = () => {
   const [location, setLocation] = useState('');
   const [suggestions, setSuggestions] = useState<LocationSuggestion[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const { loading, nearestCity, getLocation } = useGeolocation();
+  const { loading, getLocation } = useGeolocation();
 
   // Store detected city but don't auto-fill — show placeholder until user clicks
-  const [detectedCity, setDetectedCity] = useState('');
-
-  React.useEffect(() => {
-    if (nearestCity) {
-      setDetectedCity(nearestCity);
-    }
-  }, [nearestCity]);
-
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     navigate(`/search?location=${encodeURIComponent(location)}`);
@@ -95,7 +87,7 @@ export const Home: React.FC = () => {
               className="w-full h-full object-cover"
               loading="eager"
               decoding="async"
-              fetchPriority="high"
+              fetchpriority="high"
             />
             <div className="absolute inset-0 bg-charcoal/50" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
@@ -119,9 +111,6 @@ export const Home: React.FC = () => {
                       value={location}
                       onChange={(e) => handleLocationChange(e.target.value)}
                       onFocus={() => {
-                        if (!location.trim() && detectedCity) {
-                          setLocation(detectedCity);
-                        }
                         if (location.trim()) setShowSuggestions(true);
                       }}
                       onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
@@ -352,7 +341,7 @@ export const Home: React.FC = () => {
         </section>
 
         {/* ── Section 6: Cost Transparency / Browse by State ── */}
-        <section className="py-20 bg-[#4A4A4A] text-white">
+        <section className="py-20 bg-slate-900 text-white">
           <div className="max-w-[1200px] mx-auto px-6">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
               <div>

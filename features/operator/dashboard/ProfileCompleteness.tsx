@@ -83,7 +83,7 @@ export const ProfileCompleteness: React.FC<ProfileCompletenessProps> = ({ data, 
       </div>
 
       {percentage < 100 && (
-        <div className="mt-6 p-3 bg-blue-50 text-blue-700 text-sm rounded-lg flex items-start gap-2">
+        <div className="mt-6 p-3 bg-primary-50 text-primary-700 text-sm rounded-lg flex items-start gap-2">
           <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
           <p>
             Complete your profile to improve your ranking and attract more families.

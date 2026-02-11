@@ -24,7 +24,7 @@ export const StateHubHome: React.FC = () => {
       description: `Browse all licensed facilities in ${stateDef.name}.`,
       icon: Building2,
       path: `/states/${stateDef.slug}/assisted-living`,
-      color: 'bg-blue-50 text-blue-600'
+      color: 'bg-primary-50 text-primary-600'
     },
     {
       title: 'Medicaid & Financial Aid',
@@ -38,7 +38,7 @@ export const StateHubHome: React.FC = () => {
       description: 'Licensing standards and resident rights.',
       icon: Scale,
       path: `/states/${stateDef.slug}/rules`,
-      color: 'bg-purple-50 text-purple-600'
+      color: 'bg-primary-50 text-primary-600'
     },
     {
       title: 'Ombudsman & Complaints',
@@ -52,7 +52,7 @@ export const StateHubHome: React.FC = () => {
       description: 'Aid & Attendance and state veterans homes.',
       icon: Flag, // You'll need to import Flag from lucide-react
       path: `/states/${stateDef.slug}/veterans`,
-      color: 'bg-indigo-50 text-indigo-600'
+      color: 'bg-primary-50 text-primary-600'
     }
   ];
 

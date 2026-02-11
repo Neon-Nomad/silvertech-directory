@@ -25,9 +25,9 @@ export const LeadManagementCRM: React.FC = () => {
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'New': return 'bg-blue-100 text-blue-800';
+      case 'New': return 'bg-primary-100 text-primary-800';
       case 'Contacted': return 'bg-yellow-100 text-yellow-800';
-      case 'Touring': return 'bg-purple-100 text-purple-800';
+      case 'Touring': return 'bg-primary-100 text-primary-800';
       case 'Won': return 'bg-green-100 text-green-800';
       case 'Lost': return 'bg-slate-100 text-slate-600';
       default: return 'bg-slate-100 text-slate-800';

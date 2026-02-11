@@ -3,10 +3,10 @@ import { Button } from './ui/Button';
 
 export const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="bg-[#f1e9df] pt-20 pb-10 border-t border-slate-200">
+    <footer id="contact" className="bg-warm-gray pt-20 pb-10 border-t border-charcoal/10">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-slate-900 mb-6">Invest in the Infrastructure of Aging</h2>
-        <p className="text-slate-600 mb-10">
+        <h2 className="text-3xl font-bold text-charcoal mb-6">Invest in the Infrastructure of Aging</h2>
+        <p className="text-charcoal/70 mb-10">
           The demographics are inevitable. The technology is available. The time is now.
         </p>
 
@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
           </Button>
         </div>
 
-        <div className="border-t border-slate-300/60 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+        <div className="border-t border-charcoal/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-charcoal/60">
           <div className="mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} SilverTech Directory. All rights reserved.
           </div>

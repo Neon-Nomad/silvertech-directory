@@ -233,7 +233,7 @@ const NavCard = ({ to, onClick, icon: Icon, title, description }: any) => (
   <Link
     to={to}
     onClick={onClick}
-    className="group bg-slate-50 hover:bg-gradient-to-br hover:from-primary-50 hover:to-purple-50 p-6 rounded-xl transition-all border border-slate-200 hover:border-primary-200 hover:shadow-lg"
+    className="group bg-slate-50 hover:bg-gradient-to-br hover:from-primary-50 hover:to-primary-50 p-6 rounded-xl transition-all border border-slate-200 hover:border-primary-200 hover:shadow-lg"
   >
     <div className="flex items-center gap-4 mb-2">
       <div className="p-3 bg-white rounded-lg group-hover:bg-primary-100 transition-colors shadow-sm">

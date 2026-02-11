@@ -12,6 +12,7 @@ import {
   TrendingUp,
   BarChart3
 } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import { useAuth } from '@/src/context/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
 import { MyFacilities } from './MyFacilities';
@@ -88,7 +89,7 @@ const OperatorDashboard: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+      <div className="min-h-screen flex items-center justify-center bg-warm-white">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
       </div>
     );
@@ -96,36 +97,41 @@ const OperatorDashboard: React.FC = () => {
 
   if (!user) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+      <div className="min-h-screen flex items-center justify-center bg-warm-white">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-slate-900">Access Denied</h2>
-          <p className="text-slate-600">Please log in to access the dashboard.</p>
+          <h2 className="text-2xl font-bold text-charcoal">Access Denied</h2>
+          <p className="text-charcoal/70">Please log in to access the dashboard.</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-slate-50">
-      <header className="bg-white border-b border-slate-200">
+    <div className="min-h-screen bg-warm-white">
+      <Helmet>
+        <title>Operator Dashboard | SilverTech Directory</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="canonical" href="https://silvertechdirectory.com/dashboard" />
+      </Helmet>
+      <header className="bg-white border-b border-warm-gray">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">
+              <div className="w-9 h-9 rounded-full bg-charcoal text-white flex items-center justify-center font-bold">
                 ST
               </div>
               <div>
-                <p className="text-sm text-slate-500 leading-none">SilverTech</p>
-                <p className="text-xs text-slate-400 leading-none">Operator Portal</p>
+                <p className="text-sm text-charcoal/60 leading-none">SilverTech</p>
+                <p className="text-xs text-charcoal/40 leading-none">Operator Portal</p>
               </div>
             </div>
 
-            <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
+            <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-charcoal/70">
               <button
                 onClick={() => setActiveTab('overview')}
                 className={`pb-1 border-b-2 transition-colors ${activeTab === 'overview'
-                  ? 'text-slate-900 border-slate-900'
-                  : 'border-transparent hover:text-slate-900'
+                  ? 'text-charcoal border-slate-900'
+                  : 'border-transparent hover:text-charcoal'
                   }`}
               >
                 Dashboard
@@ -133,8 +139,8 @@ const OperatorDashboard: React.FC = () => {
               <button
                 onClick={() => setActiveTab('facilities')}
                 className={`pb-1 border-b-2 transition-colors ${activeTab === 'facilities'
-                  ? 'text-slate-900 border-slate-900'
-                  : 'border-transparent hover:text-slate-900'
+                  ? 'text-charcoal border-slate-900'
+                  : 'border-transparent hover:text-charcoal'
                   }`}
               >
                 Listings
@@ -142,8 +148,8 @@ const OperatorDashboard: React.FC = () => {
               <button
                 onClick={() => setActiveTab('leads')}
                 className={`pb-1 border-b-2 transition-colors ${activeTab === 'leads'
-                  ? 'text-slate-900 border-slate-900'
-                  : 'border-transparent hover:text-slate-900'
+                  ? 'text-charcoal border-slate-900'
+                  : 'border-transparent hover:text-charcoal'
                   }`}
               >
                 Leads
@@ -151,8 +157,8 @@ const OperatorDashboard: React.FC = () => {
               <button
                 onClick={() => setActiveTab('overview')}
                 className={`pb-1 border-b-2 transition-colors ${activeTab === 'overview'
-                  ? 'text-slate-900 border-slate-900'
-                  : 'border-transparent hover:text-slate-900'
+                  ? 'text-charcoal border-slate-900'
+                  : 'border-transparent hover:text-charcoal'
                   }`}
               >
                 Analytics
@@ -160,8 +166,8 @@ const OperatorDashboard: React.FC = () => {
               <button
                 onClick={() => setActiveTab('billing')}
                 className={`pb-1 border-b-2 transition-colors ${activeTab === 'billing'
-                  ? 'text-slate-900 border-slate-900'
-                  : 'border-transparent hover:text-slate-900'
+                  ? 'text-charcoal border-slate-900'
+                  : 'border-transparent hover:text-charcoal'
                   }`}
               >
                 Billing
@@ -169,8 +175,8 @@ const OperatorDashboard: React.FC = () => {
               <button
                 onClick={() => setActiveTab('settings')}
                 className={`pb-1 border-b-2 transition-colors ${activeTab === 'settings'
-                  ? 'text-slate-900 border-slate-900'
-                  : 'border-transparent hover:text-slate-900'
+                  ? 'text-charcoal border-slate-900'
+                  : 'border-transparent hover:text-charcoal'
                   }`}
               >
                 Settings
@@ -179,17 +185,17 @@ const OperatorDashboard: React.FC = () => {
 
             <div className="flex items-center gap-4">
               <div className="hidden sm:flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 text-sm font-bold">
+                <div className="w-9 h-9 rounded-full bg-warm-gray flex items-center justify-center text-charcoal text-sm font-bold">
                   {user.email?.substring(0, 2).toUpperCase()}
                 </div>
                 <div className="text-sm">
-                  <p className="text-slate-700 leading-none truncate max-w-[140px]">{user.email}</p>
-                  <p className="text-xs text-slate-400 leading-none">Operator</p>
+                  <p className="text-charcoal leading-none truncate max-w-[140px]">{user.email}</p>
+                  <p className="text-xs text-charcoal/40 leading-none">Operator</p>
                 </div>
               </div>
               <button
                 onClick={() => signOut()}
-                className="text-sm font-medium text-slate-600 hover:text-slate-900"
+                className="text-sm font-medium text-charcoal/70 hover:text-charcoal"
               >
                 Log Out
               </button>
@@ -202,47 +208,47 @@ const OperatorDashboard: React.FC = () => {
           {activeTab === 'overview' && (
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
               <section className="lg:col-span-4 space-y-6">
-                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
-                  <h2 className="text-lg font-semibold text-slate-900 mb-4">Quick Actions</h2>
+                <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
+                  <h2 className="text-lg font-semibold text-charcoal mb-4">Quick Actions</h2>
                   <div className="space-y-3">
-                    <button className="w-full bg-slate-900 text-white py-3 rounded-full font-medium flex items-center justify-center gap-2">
+                    <button className="w-full bg-charcoal text-white py-3 rounded-full font-medium flex items-center justify-center gap-2">
                       <LayoutDashboard className="w-4 h-4" />
                       View Public Profile
                     </button>
-                    <button className="w-full bg-slate-700 text-white py-3 rounded-full font-medium flex items-center justify-center gap-2">
+                    <button className="w-full bg-charcoal/80 text-white py-3 rounded-full font-medium flex items-center justify-center gap-2">
                       <Building2 className="w-4 h-4" />
                       Edit Listing
                     </button>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-lg font-semibold text-slate-900">Premium Benefits</h2>
-                    <div className="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center text-amber-600">
+                    <h2 className="text-lg font-semibold text-charcoal">Premium Benefits</h2>
+                    <div className="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center text-primary-600">
                       <CheckCircle className="w-5 h-5" />
                     </div>
                   </div>
-                  <div className="space-y-3 text-sm text-slate-600">
+                  <div className="space-y-3 text-sm text-charcoal/70">
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-amber-500" />
+                      <CheckCircle className="w-4 h-4 text-gold" />
                       Featured placement in results
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-amber-500" />
+                      <CheckCircle className="w-4 h-4 text-gold" />
                       Enhanced visibility across the directory
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-amber-500" />
+                      <CheckCircle className="w-4 h-4 text-gold" />
                       Priority support for family inquiries
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-lg font-semibold text-slate-900">Lead Attribution</h2>
-                    <span className="text-xs text-slate-400">Last 30 days</span>
+                    <h2 className="text-lg font-semibold text-charcoal">Lead Attribution</h2>
+                    <span className="text-xs text-charcoal/40">Last 30 days</span>
                   </div>
                   <div className="space-y-3">
                     {[
@@ -252,13 +258,13 @@ const OperatorDashboard: React.FC = () => {
                       { label: 'Referral', value: 6 }
                     ].map((item) => (
                       <div key={item.label}>
-                        <div className="flex items-center justify-between text-sm text-slate-600">
+                        <div className="flex items-center justify-between text-sm text-charcoal/70">
                           <span>{item.label}</span>
-                          <span className="font-semibold text-slate-900">{item.value}</span>
+                          <span className="font-semibold text-charcoal">{item.value}</span>
                         </div>
-                        <div className="h-2 bg-slate-100 rounded-full mt-2">
+                        <div className="h-2 bg-warm-gray rounded-full mt-2">
                           <div
-                            className="h-2 rounded-full bg-slate-800"
+                            className="h-2 rounded-full bg-charcoal/90"
                             style={{ width: `${(item.value / 20) * 100}%` }}
                           />
                         </div>
@@ -269,15 +275,15 @@ const OperatorDashboard: React.FC = () => {
               </section>
 
               <section className="lg:col-span-8 space-y-6">
-                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-sm text-slate-500">
+                      <p className="text-sm text-charcoal/60">
                         Your listing is performing better than 68% of homes in your area.
                       </p>
-                      <h2 className="text-lg font-semibold text-slate-900 mt-1">Performance Overview</h2>
+                      <h2 className="text-lg font-semibold text-charcoal mt-1">Performance Overview</h2>
                     </div>
-                    <div className="text-xs text-slate-500 flex items-center gap-1">
+                    <div className="text-xs text-charcoal/60 flex items-center gap-1">
                       <TrendingUp className="w-4 h-4" />
                       Updated today
                     </div>
@@ -291,23 +297,23 @@ const OperatorDashboard: React.FC = () => {
                       { label: 'Estimated Revenue', value: '$18,000' },
                       { label: 'Avg. Response Time', value: '1h 12m' }
                     ].map((stat) => (
-                      <div key={stat.label} className="border border-slate-200 rounded-xl p-4 text-center">
-                        <p className="text-xs text-slate-500 uppercase">{stat.label}</p>
-                        <p className="text-2xl font-semibold text-slate-900 mt-2">{stat.value}</p>
+                      <div key={stat.label} className="border border-warm-gray rounded-xl p-4 text-center">
+                        <p className="text-xs text-charcoal/60 uppercase">{stat.label}</p>
+                        <p className="text-2xl font-semibold text-charcoal mt-2">{stat.value}</p>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-lg font-semibold text-slate-900">Recent Leads</h2>
-                    <button className="text-sm text-slate-500 hover:text-slate-700">View all</button>
+                    <h2 className="text-lg font-semibold text-charcoal">Recent Leads</h2>
+                    <button className="text-sm text-charcoal/60 hover:text-charcoal">View all</button>
                   </div>
                   <div className="overflow-x-auto">
                     <table className="w-full text-sm">
                       <thead>
-                        <tr className="text-left text-slate-500 border-b border-slate-200">
+                        <tr className="text-left text-charcoal/60 border-b border-warm-gray">
                           <th className="py-2">Name</th>
                           <th className="py-2">Date</th>
                           <th className="py-2">Inquiry Type</th>
@@ -315,30 +321,30 @@ const OperatorDashboard: React.FC = () => {
                           <th className="py-2 text-right">Actions</th>
                         </tr>
                       </thead>
-                      <tbody className="text-slate-700">
+                      <tbody className="text-charcoal">
                         {[
                           { name: 'Jona Smith', date: '03/22/2023', type: 'Inquiry Form', status: 'New' },
                           { name: 'John Anthrena', date: '03/22/2023', type: 'Inquiry Form', status: 'Contacted' },
                           { name: 'Barky Jason', date: '03/22/2023', type: 'Inquiry Form', status: 'Follow-up' }
                         ].map((lead) => (
-                          <tr key={lead.name} className="border-b border-slate-100">
+                          <tr key={lead.name} className="border-b border-warm-gray">
                             <td className="py-3 font-medium">{lead.name}</td>
                             <td className="py-3">{lead.date}</td>
                             <td className="py-3">{lead.type}</td>
                             <td className="py-3">
-                              <span className="px-2 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-700">
+                              <span className="px-2 py-1 rounded-full text-xs font-medium bg-warm-gray text-charcoal">
                                 {lead.status}
                               </span>
                             </td>
                             <td className="py-3">
                               <div className="flex items-center justify-end gap-2">
-                                <button className="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center">
+                                <button className="w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center">
                                   <Phone className="w-4 h-4" />
                                 </button>
-                                <button className="w-8 h-8 rounded-full bg-slate-700 text-white flex items-center justify-center">
+                                <button className="w-8 h-8 rounded-full bg-charcoal/80 text-white flex items-center justify-center">
                                   <Mail className="w-4 h-4" />
                                 </button>
-                                <button className="px-4 py-1 rounded-full bg-slate-900 text-white text-xs font-medium">
+                                <button className="px-4 py-1 rounded-full bg-charcoal text-white text-xs font-medium">
                                   Call
                                 </button>
                               </div>
@@ -350,29 +356,29 @@ const OperatorDashboard: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center gap-2">
-                      <BarChart3 className="w-5 h-5 text-slate-500" />
-                      <h2 className="text-lg font-semibold text-slate-900">Analytics</h2>
+                      <BarChart3 className="w-5 h-5 text-charcoal/60" />
+                      <h2 className="text-lg font-semibold text-charcoal">Analytics</h2>
                     </div>
-                    <select className="border border-slate-200 rounded-full px-3 py-1 text-sm text-slate-600">
+                    <select className="border border-warm-gray rounded-full px-3 py-1 text-sm text-charcoal/70">
                       <option>Past month</option>
                       <option>Past 3 months</option>
                       <option>Past year</option>
                     </select>
                   </div>
-                  <div className="h-48 bg-slate-50 rounded-xl border border-dashed border-slate-200 relative overflow-hidden">
+                  <div className="h-48 bg-warm-white rounded-xl border border-dashed border-warm-gray relative overflow-hidden">
                     <svg viewBox="0 0 600 200" className="absolute inset-0 w-full h-full">
                       <path
                         d="M0 160 C80 120, 140 120, 200 140 C260 160, 320 60, 380 80 C440 100, 520 40, 600 70"
                         fill="none"
-                        stroke="#0f172a"
+                        stroke="#2D2D2D"
                         strokeWidth="3"
                       />
                       <path
                         d="M0 160 C80 120, 140 120, 200 140 C260 160, 320 60, 380 80 C440 100, 520 40, 600 70 L600 200 L0 200 Z"
-                        fill="rgba(15, 23, 42, 0.08)"
+                        fill="rgba(45, 45, 45, 0.08)"
                       />
                     </svg>
                   </div>
@@ -388,8 +394,8 @@ const OperatorDashboard: React.FC = () => {
             <div className="space-y-8">
               <div className="flex justify-between items-center">
                 <div>
-                  <h2 className="text-2xl font-bold text-slate-900">Billing & Plans</h2>
-                  <p className="text-slate-600">Manage your subscription and facility assignments.</p>
+                  <h2 className="text-2xl font-bold text-charcoal">Billing & Plans</h2>
+                  <p className="text-charcoal/70">Manage your subscription and facility assignments.</p>
                 </div>
                 {userProfile?.stripe_customer_id && (
                   <Button variant="outline" onClick={handleManageBilling} className="flex items-center gap-2">
@@ -400,22 +406,22 @@ const OperatorDashboard: React.FC = () => {
               </div>
 
               {/* Current Plan Overview */}
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                <h3 className="text-lg font-bold text-slate-900 mb-4">Current Subscription</h3>
-                <div className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border border-slate-200">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-warm-gray">
+                <h3 className="text-lg font-bold text-charcoal mb-4">Current Subscription</h3>
+                <div className="flex items-center justify-between p-4 bg-warm-white rounded-lg border border-warm-gray">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="font-bold text-xl text-slate-900">
+                      <span className="font-bold text-xl text-charcoal">
                         {PRICING_PLANS.find(p => p.id === (userProfile?.plan || 'free'))?.name}
                       </span>
                       <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${userProfile?.plan === 'free' || !userProfile?.plan
-                        ? 'bg-slate-100 text-slate-600'
+                        ? 'bg-warm-gray text-charcoal/70'
                         : 'bg-primary-100 text-primary-700'
                         }`}>
                         {userProfile?.status === 'active' ? 'Active' : 'Free Tier'}
                       </span>
                     </div>
-                    <p className="text-sm text-slate-600">
+                    <p className="text-sm text-charcoal/70">
                       {userProfile?.facility_assignments_remaining || 0} facility assignments remaining
                     </p>
                   </div>
@@ -429,9 +435,9 @@ const OperatorDashboard: React.FC = () => {
 
               {/* Facility Assignments */}
               {userProfile?.plan !== 'free' && (
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Facility Assignments</h3>
-                  <p className="text-slate-600 mb-4 text-sm">
+                <div className="bg-white p-6 rounded-xl shadow-sm border border-warm-gray">
+                  <h3 className="text-lg font-bold text-charcoal mb-4">Facility Assignments</h3>
+                  <p className="text-charcoal/70 mb-4 text-sm">
                     Assign your premium plan benefits to specific facilities. You have <strong>{userProfile?.facility_assignments_remaining}</strong> slots available.
                   </p>
 
@@ -439,12 +445,12 @@ const OperatorDashboard: React.FC = () => {
                     {facilities.map((facility) => {
                       const isAssigned = facility.assigned_plan_owner_id === user?.id;
                       return (
-                        <div key={facility.id} className="flex items-center justify-between p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors">
+                        <div key={facility.id} className="flex items-center justify-between p-4 border border-warm-gray rounded-lg hover:bg-warm-white transition-colors">
                           <div className="flex items-center gap-3">
-                            <Building2 className={`w-5 h-5 ${isAssigned ? 'text-primary-600' : 'text-slate-400'}`} />
+                            <Building2 className={`w-5 h-5 ${isAssigned ? 'text-primary-600' : 'text-charcoal/40'}`} />
                             <div>
-                              <p className="font-medium text-slate-900">{facility.name}</p>
-                              <p className="text-xs text-slate-500">
+                              <p className="font-medium text-charcoal">{facility.name}</p>
+                              <p className="text-xs text-charcoal/60">
                                 {isAssigned ? 'Premium benefits active' : 'Basic listing'}
                               </p>
                             </div>
@@ -506,14 +512,14 @@ const OperatorDashboard: React.FC = () => {
 
               {/* Available Plans */}
               <div id="upgrade-plans">
-                <h3 className="text-xl font-bold text-slate-900 mb-6">Available Plans</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-6">Available Plans</h3>
                 <div className="grid md:grid-cols-3 gap-6">
                   {PRICING_PLANS.filter(p => p.id !== 'free').map((plan) => {
                     const isCurrentPlan = userProfile?.plan === plan.id;
                     return (
                       <div
                         key={plan.id}
-                        className={`relative bg-white rounded-xl border p-6 flex flex-col ${isCurrentPlan ? 'border-primary-500 ring-1 ring-primary-500' : 'border-slate-200'
+                        className={`relative bg-white rounded-xl border p-6 flex flex-col ${isCurrentPlan ? 'border-primary-500 ring-1 ring-primary-500' : 'border-warm-gray'
                           }`}
                       >
                         {plan.popular && (
@@ -523,30 +529,30 @@ const OperatorDashboard: React.FC = () => {
                         )}
 
                         <div className="mb-4">
-                          <h4 className="font-bold text-lg text-slate-900">{plan.name}</h4>
+                          <h4 className="font-bold text-lg text-charcoal">{plan.name}</h4>
                           <div className="flex items-baseline gap-1 mt-2">
-                            <span className="text-3xl font-bold text-slate-900">${plan.price}</span>
-                            <span className="text-slate-500">/month</span>
+                            <span className="text-3xl font-bold text-charcoal">${plan.price}</span>
+                            <span className="text-charcoal/60">/month</span>
                           </div>
-                          <div className="mt-2 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide bg-green-100 text-green-800 border border-green-200">
+                          <div className="mt-2 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide bg-primary-100 text-primary-800 border border-primary-200">
                             15-Day Free Trial
                           </div>
-                          <p className="text-sm text-slate-600 mt-2">
+                          <p className="text-sm text-charcoal/70 mt-2">
                             Includes {plan.slotCount} facility {plan.slotCount === 1 ? 'profile' : 'profiles'}
                           </p>
                         </div>
 
                         <ul className="space-y-3 mb-8 flex-1">
                           {plan.features.slice(0, 5).map((feature, i) => (
-                            <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
-                              <CheckCircle className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
+                            <li key={i} className="flex items-start gap-2 text-sm text-charcoal/70">
+                              <CheckCircle className="w-4 h-4 text-primary-500 shrink-0 mt-0.5" />
                               <span>{feature}</span>
                             </li>
                           ))}
                         </ul>
 
                         {isCurrentPlan ? (
-                          <Button disabled className="w-full bg-slate-100 text-slate-500 border-slate-200">
+                          <Button disabled className="w-full bg-warm-gray text-charcoal/60 border-warm-gray">
                             Current Plan
                           </Button>
                         ) : (
@@ -567,9 +573,9 @@ const OperatorDashboard: React.FC = () => {
           )}
 
           {activeTab === 'settings' && (
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">Account Settings</h2>
-              <p className="text-slate-600">Manage your account preferences and notifications here.</p>
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-warm-gray">
+              <h2 className="text-2xl font-bold text-charcoal mb-4">Account Settings</h2>
+              <p className="text-charcoal/70">Manage your account preferences and notifications here.</p>
               {/* Placeholder for settings */}
             </div>
           )}

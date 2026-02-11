@@ -5,7 +5,9 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 const supabaseUrl = process.env.VITE_SUPABASE_URL;
-const supabaseKey = process.env.VITE_SUPABASE_ANON_KEY;
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_ANON_KEY;
+const batchSize = Number(process.env.GEOCODE_BATCH || 50);
+const maxUpdates = Number(process.env.GEOCODE_MAX || 0);
 
 if (!supabaseUrl || !supabaseKey) {
     console.error('Missing Supabase credentials');
@@ -46,6 +48,7 @@ async function geocodeAddress(address: string): Promise<{ lat: number; lng: numb
 
 async function geocodeFacilities() {
     console.log('Starting bulk geocoding process...');
+    let processed = 0;
 
     while (true) {
         // 1. Get facilities with NULL lat/lng
@@ -53,7 +56,7 @@ async function geocodeFacilities() {
             .from('facilities')
             .select('id, address_line1, city, state, postal_code')
             .is('latitude', null)
-            .limit(50); // Process in small batches
+            .limit(batchSize); // Process in small batches
 
         if (error) {
             console.error('Error fetching facilities:', error);
@@ -68,6 +71,10 @@ async function geocodeFacilities() {
         console.log(`Processing batch of ${facilities.length} facilities...`);
 
         for (const facility of facilities) {
+            if (maxUpdates && processed >= maxUpdates) {
+                console.log('\nReached GEOCODE_MAX limit. Stopping.');
+                return;
+            }
             const fullAddress = `${facility.address_line1}, ${facility.city}, ${facility.state} ${facility.postal_code}`;
             // console.log(`Geocoding: ${fullAddress}`);
 
@@ -83,6 +90,7 @@ async function geocodeFacilities() {
                 if (updateError) {
                     console.error(`\nError updating DB for ${facility.id}:`, updateError);
                 }
+                processed += 1;
             } else {
                 process.stdout.write('x'); // Failure indicator
             }

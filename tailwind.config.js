@@ -14,7 +14,7 @@ export default {
             },
             colors: {
                 charcoal: '#2D2D2D',
-                gold: '#B8860B',
+                gold: '#b88749',
                 'warm-white': '#FDFCF9',
                 'warm-gray': '#F5F3EF',
                 slate: {
@@ -169,7 +169,7 @@ export default {
                 DEFAULT: {
                     css: {
                         fontFamily: 'Manrope, "Source Sans 3", sans-serif',
-                        color: '#475569',
+                        color: '#2D2D2D',
                         maxWidth: 'none',
                         'h1, h2, h3, h4': {
                             fontFamily: '"Cormorant Garamond", serif',
@@ -177,7 +177,7 @@ export default {
                             fontWeight: '700',
                         },
                         a: {
-                            color: '#B8860B',
+                            color: '#b88749',
                             textDecoration: 'none',
                             '&:hover': {
                                 textDecoration: 'underline',
@@ -197,9 +197,9 @@ export default {
                             fontSize: '0.875rem',
                         },
                         blockquote: {
-                            borderLeftColor: '#B8860B',
+                            borderLeftColor: '#b88749',
                             fontStyle: 'normal',
-                            color: '#475569',
+                            color: '#6b6560',
                         },
                     },
                 },

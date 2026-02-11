@@ -75,7 +75,7 @@ export const MyFacilities: React.FC = () => {
                     <span className="bg-green-100 text-green-700 text-xs font-medium px-2.5 py-0.5 rounded-full">
                       Active
                     </span>
-                    <span className="bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded-full">
+                    <span className="bg-primary-100 text-primary-700 text-xs font-medium px-2.5 py-0.5 rounded-full">
                       Verified Owner
                     </span>
                   </div>
