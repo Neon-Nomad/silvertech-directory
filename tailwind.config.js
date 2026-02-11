@@ -9,10 +9,14 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['"Source Sans 3"', 'sans-serif'],
+                sans: ['Manrope', '"Source Sans 3"', 'sans-serif'],
                 serif: ['"Cormorant Garamond"', 'serif'],
             },
             colors: {
+                charcoal: '#2D2D2D',
+                gold: '#B8860B',
+                'warm-white': '#FDFCF9',
+                'warm-gray': '#F5F3EF',
                 slate: {
                     850: '#26221d',
                     900: '#1f1c17',

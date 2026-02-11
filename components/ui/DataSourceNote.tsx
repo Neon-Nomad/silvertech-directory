@@ -16,7 +16,7 @@ export const DataSourceNote: React.FC<DataSourceNoteProps> = ({
       {showEditorialLink ? (
         <>
           {' '}Learn more in our{' '}
-          <Link to="/editorial-policy" className="text-primary-600 hover:underline">
+          <Link to="/editorial-policy" className="text-gold hover:underline">
             Editorial Policy
           </Link>
           .
