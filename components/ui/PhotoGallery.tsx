@@ -17,12 +17,31 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const samplePhotos: Photo[] = [
-    { id: 'sample-1', url: '/images/hero_image.png', caption: 'Sample common area' },
-    { id: 'sample-2', url: '/images/hero_image.png', caption: 'Sample dining space' },
-    { id: 'sample-3', url: '/images/hero_image.png', caption: 'Sample resident lounge' },
-    { id: 'sample-4', url: '/images/hero_image.png', caption: 'Sample outdoor courtyard' },
-  ];
+  const sampleImageUrls = Array.from({ length: 25 }, (_, i) => `/gallery_images/${i + 1}.png`);
+
+  const hashSeed = (value: string) => {
+    let hash = 0;
+    for (let i = 0; i < value.length; i += 1) {
+      hash = (hash * 31 + value.charCodeAt(i)) % 2147483647;
+    }
+    return hash;
+  };
+
+  const pickSamplePhotos = () => {
+    const seed = hashSeed(facilityName || 'silvertech');
+    const shuffled = [...sampleImageUrls];
+    for (let i = shuffled.length - 1; i > 0; i -= 1) {
+      const j = (seed + i * 17) % (i + 1);
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled.slice(0, 6).map((url, idx) => ({
+      id: `sample-${idx + 1}`,
+      url,
+      caption: 'Sample community photo',
+    }));
+  };
+
+  const samplePhotos: Photo[] = pickSamplePhotos();
 
   const isSampleGallery = !photos || photos.length === 0;
   const galleryPhotos = isSampleGallery ? samplePhotos : photos;
@@ -34,12 +53,12 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
 
   const nextPhoto = (e?: React.MouseEvent) => {
     e?.stopPropagation();
-    setCurrentIndex((prev) => (prev + 1) % photos.length);
+    setCurrentIndex((prev) => (prev + 1) % galleryPhotos.length);
   };
 
   const prevPhoto = (e?: React.MouseEvent) => {
     e?.stopPropagation();
-    setCurrentIndex((prev) => (prev - 1 + photos.length) % photos.length);
+    setCurrentIndex((prev) => (prev - 1 + galleryPhotos.length) % galleryPhotos.length);
   };
 
   // Grid Layout Logic
@@ -60,7 +79,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
           <div className="flex items-center gap-2">
             <ImageIcon className="w-4 h-4 text-charcoal/40" />
             <span>
-              Sample gallery only — official photos have not been provided by {facilityName}.
+              Sample gallery only -- official photos have not been provided by {facilityName}.
             </span>
           </div>
         </div>
