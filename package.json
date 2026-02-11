@@ -31,6 +31,7 @@
     "payments:create-pdf-links": "tsx scripts/create_pdf_payment_links.ts",
     "redirects": "npx tsx scripts/generate_redirects.ts",
     "sitemap:verify": "npx tsx scripts/verify_sitemap.ts",
+    "sitemap:check-live": "npx tsx scripts/check_sitemap_http.ts",
     "typesense:index": "tsx scripts/typesense_index.ts",
     "typesense:search-key": "tsx scripts/typesense_create_search_key.ts"
   },
