@@ -1,5 +1,5 @@
 ﻿import React, { useMemo, useState, useEffect } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams, useParams } from 'react-router-dom';
 import { Search, MapPin } from 'lucide-react';
 import { ALL_STATES } from '@/src/data/states';
 import zipToCity from '@/src/data/zip_to_city.json';
@@ -28,6 +28,7 @@ const findStateByInput = (input: string) => {
 const DirectorySearch: React.FC = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
+  const { state: routeState } = useParams();
   const [location, setLocation] = useState(searchParams.get('location') || '');
   const [nameQuery, setNameQuery] = useState(searchParams.get('name') || '');
   const [stateSlug, setStateSlug] = useState(searchParams.get('state') || '');
@@ -253,6 +254,17 @@ const DirectorySearch: React.FC = () => {
 
   useEffect(() => {
     if (hasAutoSearched) return;
+    if (routeState) {
+      if (stateSlug !== routeState) {
+        setStateSlug(routeState);
+        setLocation('');
+        setNameQuery('');
+        return;
+      }
+      setHasAutoSearched(true);
+      handleSearch();
+      return;
+    }
     if (location.trim().length === 0 && nameQuery.trim().length === 0) return;
     setHasAutoSearched(true);
     handleSearch();
