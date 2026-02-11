@@ -32,6 +32,8 @@
     "redirects": "npx tsx scripts/generate_redirects.ts",
     "sitemap:verify": "npx tsx scripts/verify_sitemap.ts",
     "sitemap:check-live": "npx tsx scripts/check_sitemap_http.ts",
+    "update:online-presence": "npx tsx scripts/update_facility_online_presence.ts",
+    "sql:run": "npx tsx scripts/run_sql.ts",
     "typesense:index": "tsx scripts/typesense_index.ts",
     "typesense:search-key": "tsx scripts/typesense_create_search_key.ts"
   },

@@ -781,6 +781,28 @@ export const FacilityDetails: React.FC = () => {
                   {facility.phone}
                 </a>
               )}
+              {facility.website_url ? (
+                <a
+                  href={facility.website_url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 text-charcoal hover:text-charcoal"
+                >
+                  Visit facility website
+                </a>
+              ) : (
+                <span className="text-xs text-charcoal/50">Facility website not available yet.</span>
+              )}
+              {facility.google_maps_url && (
+                <a
+                  href={facility.google_maps_url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 text-charcoal hover:text-charcoal"
+                >
+                  View on Google Maps
+                </a>
+              )}
             </div>
           </Card>
 

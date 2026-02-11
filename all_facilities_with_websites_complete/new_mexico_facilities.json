@@ -1,0 +1,2632 @@
+{
+  "state": "New Mexico",
+  "state_code": "NM",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 68,
+    "total_nursing_homes": 68,
+    "total_assisted_living": 0,
+    "total_certified_beds": 6903,
+    "counties_served": 23,
+    "average_beds_per_facility": 101.5
+  },
+  "quality_distribution": {
+    "five_star": 13,
+    "four_star": 9,
+    "three_star": 17,
+    "two_star": 14,
+    "one_star": 14
+  },
+  "counties": {
+    "Santa Fe": {
+      "facility_count": 2,
+      "total_beds": 238
+    },
+    "Bernalillo": {
+      "facility_count": 18,
+      "total_beds": 2263
+    },
+    "Sandoval": {
+      "facility_count": 3,
+      "total_beds": 328
+    },
+    "Dona Ana": {
+      "facility_count": 6,
+      "total_beds": 521
+    },
+    "Lea": {
+      "facility_count": 3,
+      "total_beds": 260
+    },
+    "Otero": {
+      "facility_count": 3,
+      "total_beds": 247
+    },
+    "Chaves": {
+      "facility_count": 3,
+      "total_beds": 290
+    },
+    "Los Alamos": {
+      "facility_count": 1,
+      "total_beds": 66
+    },
+    "Cibola": {
+      "facility_count": 2,
+      "total_beds": 138
+    },
+    "Sierra": {
+      "facility_count": 2,
+      "total_beds": 229
+    },
+    "San Miguel": {
+      "facility_count": 2,
+      "total_beds": 278
+    },
+    "San Juan": {
+      "facility_count": 6,
+      "total_beds": 595
+    },
+    "Valencia": {
+      "facility_count": 1,
+      "total_beds": 120
+    },
+    "Mckinley": {
+      "facility_count": 2,
+      "total_beds": 164
+    },
+    "Socorro": {
+      "facility_count": 1,
+      "total_beds": 61
+    },
+    "Curry": {
+      "facility_count": 3,
+      "total_beds": 264
+    },
+    "Luna": {
+      "facility_count": 1,
+      "total_beds": 66
+    },
+    "Eddy": {
+      "facility_count": 2,
+      "total_beds": 177
+    },
+    "Grant": {
+      "facility_count": 2,
+      "total_beds": 300
+    },
+    "Union": {
+      "facility_count": 1,
+      "total_beds": 45
+    },
+    "Taos": {
+      "facility_count": 1,
+      "total_beds": 102
+    },
+    "Roosevelt": {
+      "facility_count": 1,
+      "total_beds": 80
+    },
+    "Colfax": {
+      "facility_count": 2,
+      "total_beds": 71
+    }
+  },
+  "facilities": [
+    {
+      "name": "Santa Fe Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "635 Harkle Road",
+        "city": "Santa Fe",
+        "state": "NM",
+        "zip": "87505"
+      },
+      "contact": {
+        "phone": "5059822574",
+        "phone_formatted": "5059822574"
+      },
+      "location": {
+        "county": "Santa Fe",
+        "latitude": 35.6593,
+        "longitude": -105.95
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DIAMOND CARE SANTA FE LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Sandia Ridge Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2216 Lester Drive NE",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87112"
+      },
+      "contact": {
+        "phone": "5052964808",
+        "phone_formatted": "5052964808"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.1078,
+        "longitude": -106.55
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 140,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST. JOHN HEALTHCARE AND REHABILITATION CENTER, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Rio Rancho Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4210 Sabana Grande SE",
+        "city": "Rio Rancho",
+        "state": "NM",
+        "zip": "87124"
+      },
+      "contact": {
+        "phone": "5058167566",
+        "phone_formatted": "5058167566"
+      },
+      "location": {
+        "county": "Sandoval",
+        "latitude": 35.2431,
+        "longitude": -106.65
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEAK MEDICAL NEW MEXICO NO 3 LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "The Rehabilitation Center of Albuquerque",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5900 Forest Hills Drive NE",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87109"
+      },
+      "contact": {
+        "phone": "5058226000",
+        "phone_formatted": "5058226000"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.1573,
+        "longitude": -106.59
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE REHABILITATION CENTER OF ALBUQUERQUE, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "La Vida Llena",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10501 Lagrima De Oro NE",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87111"
+      },
+      "contact": {
+        "phone": "5052966700",
+        "phone_formatted": "5052966700"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.132,
+        "longitude": -106.52
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Las Palomas Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8100 Palomas Avenue Ne",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87109"
+      },
+      "contact": {
+        "phone": "5058214200",
+        "phone_formatted": "5058214200"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.1728,
+        "longitude": -106.56
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEAK MEDICAL NEW MEXICO NO 3 LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Ladera Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5901 Ouray Road Nw",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87120"
+      },
+      "contact": {
+        "phone": "5058360023",
+        "phone_formatted": "5058360023"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.1125,
+        "longitude": -106.71
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEAK MEDICAL NEW MEXICO NO 3 LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Casa Real",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1650 Galisteo Street",
+        "city": "Santa Fe",
+        "state": "NM",
+        "zip": "87505"
+      },
+      "contact": {
+        "phone": "5059848313",
+        "phone_formatted": "5059848313"
+      },
+      "location": {
+        "county": "Santa Fe",
+        "latitude": 35.662,
+        "longitude": -105.95
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 118,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "1650 GALISTEO STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Calibre Post Acute, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2029 Sagecrest Ave",
+        "city": "Las Cruces",
+        "state": "NM",
+        "zip": "88011"
+      },
+      "contact": {
+        "phone": "5755227000",
+        "phone_formatted": "5755227000"
+      },
+      "location": {
+        "county": "Dona Ana",
+        "latitude": 32.3261,
+        "longitude": -106.75
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CALIBRE POST ACUTE LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "White Sands Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5715 North Lovington Highway",
+        "city": "Hobbs",
+        "state": "NM",
+        "zip": "88240"
+      },
+      "contact": {
+        "phone": "5753926845",
+        "phone_formatted": "5753926845"
+      },
+      "location": {
+        "county": "Lea",
+        "latitude": 32.7644,
+        "longitude": -103.18
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 118,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WHITE SANDS HEALTHCARE LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Uptown Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7900 Constitution Avenue NE",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87110"
+      },
+      "contact": {
+        "phone": "5052965565",
+        "phone_formatted": "5052965565"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.0946,
+        "longitude": -106.56
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 134,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST. THERESA HEALTHCARE AND REHABILITATION CENTER, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Casa Arena Healthcare LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "205 Moonglow",
+        "city": "Alamogordo",
+        "state": "NM",
+        "zip": "88310"
+      },
+      "contact": {
+        "phone": "5754344510",
+        "phone_formatted": "5754344510"
+      },
+      "location": {
+        "county": "Otero",
+        "latitude": 32.891,
+        "longitude": -105.94
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 117,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CASA ARENA HEALTHCARE LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Mission Arch Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3200 Mission Arch Drive",
+        "city": "Roswell",
+        "state": "NM",
+        "zip": "88201"
+      },
+      "contact": {
+        "phone": "5756242583",
+        "phone_formatted": "5756242583"
+      },
+      "location": {
+        "county": "Chaves",
+        "latitude": 33.4354,
+        "longitude": -104.51
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEAK MEDICAL ROSWELL LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Princeton Health & Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "500 Louisiana Boulevard NE",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87108"
+      },
+      "contact": {
+        "phone": "5052551717",
+        "phone_formatted": "5052551717"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.0836,
+        "longitude": -106.57
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 369,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "369 ALBUQUERQUE OPS LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Casa De Oro Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1005 Lujan Hill Road",
+        "city": "Las Cruces",
+        "state": "NM",
+        "zip": "88005"
+      },
+      "contact": {
+        "phone": "5755234573",
+        "phone_formatted": "5755234573"
+      },
+      "location": {
+        "county": "Dona Ana",
+        "latitude": 32.4214,
+        "longitude": -106.86
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 158,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEAK MEDICAL LAS CRUCES NO 2 LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Canyon Transitional Rehabilitation Center, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10101 Lagrima De Oro Road NE",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87111"
+      },
+      "contact": {
+        "phone": "5052981231",
+        "phone_formatted": "5052981231"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.1321,
+        "longitude": -106.53
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 74,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CANYON TRANSITIONAL REHABILITATION CENTER, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Los Alamos Wellness & Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1011 Sombrillo Court",
+        "city": "Los Alamos",
+        "state": "NM",
+        "zip": "87544"
+      },
+      "contact": {
+        "phone": "5056624300",
+        "phone_formatted": "5056624300"
+      },
+      "location": {
+        "county": "Los Alamos",
+        "latitude": 35.883,
+        "longitude": -106.29
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LOS ALAMOS WELLNESS & REHABILITATION LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Lovington Healthcare LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1600 West Avenue I",
+        "city": "Lovington",
+        "state": "NM",
+        "zip": "88260"
+      },
+      "contact": {
+        "phone": "5753965212",
+        "phone_formatted": "5753965212"
+      },
+      "location": {
+        "county": "Lea",
+        "latitude": 32.9389,
+        "longitude": -103.37
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LOVINGTON HEALTHCARE LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Grants Wellness & Rehabilitation LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "840 Lobo Canyon Road",
+        "city": "Grants",
+        "state": "NM",
+        "zip": "87020"
+      },
+      "contact": {
+        "phone": "5052878868",
+        "phone_formatted": "5052878868"
+      },
+      "location": {
+        "county": "Cibola",
+        "latitude": 35.1624,
+        "longitude": -107.83
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GRANTS WELLNESS & REHABILITATION LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Odelia Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1509 University Boulevard Ne",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87102"
+      },
+      "contact": {
+        "phone": "5052432257",
+        "phone_formatted": "5052432257"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.0999,
+        "longitude": -106.63
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 119,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ODELIA HEALTHCARE LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Betty Dare Wellness & Rehabilitation LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3101 North Florida Avenue",
+        "city": "Alamogordo",
+        "state": "NM",
+        "zip": "88310"
+      },
+      "contact": {
+        "phone": "5754340033",
+        "phone_formatted": "5754340033"
+      },
+      "location": {
+        "county": "Otero",
+        "latitude": 32.9297,
+        "longitude": -105.95
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BETTY DARE WELLNESS & REHABILITATION LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Paloma Springs Healthcare LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1400 North Silver Street",
+        "city": "T OR C",
+        "state": "NM",
+        "zip": "87901"
+      },
+      "contact": {
+        "phone": "5758947855",
+        "phone_formatted": "5758947855"
+      },
+      "location": {
+        "county": "Sierra",
+        "latitude": 33.1351,
+        "longitude": -107.24
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 94,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PALOMA SPRINGS HEALTHCARE LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Skies Healthcare & Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "9150 Mcmahon Boulevard NW",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87114"
+      },
+      "contact": {
+        "phone": "5058987986",
+        "phone_formatted": "5058987986"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.2111,
+        "longitude": -106.69
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SKIES HEALTHCARE AND REHABILITATION CENTER, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "La Vida Buena Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2301 Collins Drive",
+        "city": "Las Vegas",
+        "state": "NM",
+        "zip": "87701"
+      },
+      "contact": {
+        "phone": "5054259362",
+        "phone_formatted": "5054259362"
+      },
+      "location": {
+        "county": "San Miguel",
+        "latitude": 35.6166,
+        "longitude": -105.22
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LA VIDA BUENA HEALTHCARE LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Bloomfield Nursing and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "803 Hacienda Lane",
+        "city": "Bloomfield",
+        "state": "NM",
+        "zip": "87413"
+      },
+      "contact": {
+        "phone": "5056321823",
+        "phone_formatted": "5056321823"
+      },
+      "location": {
+        "county": "San Juan",
+        "latitude": 36.7188,
+        "longitude": -107.98
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 95,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "803 HACIENDA LANE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Las Cruces Village Nursing & Rehabilitation LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3025 TERRACE DRIVE",
+        "city": "LAS CRUCES",
+        "state": "NM",
+        "zip": "88011"
+      },
+      "contact": {
+        "phone": "5755221362",
+        "phone_formatted": "5755221362"
+      },
+      "location": {
+        "county": "Dona Ana",
+        "latitude": 32.2935,
+        "longitude": -106.73
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 94,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAS CRUCES VILLAGE NURSING & REHABILITATION LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Belen Meadows Healthcare and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1831 Camino Del Llano",
+        "city": "Belen",
+        "state": "NM",
+        "zip": "87002"
+      },
+      "contact": {
+        "phone": "5058641600",
+        "phone_formatted": "5058641600"
+      },
+      "location": {
+        "county": "Valencia",
+        "latitude": 34.6542,
+        "longitude": -106.79
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BELEN MEADOWS HEALTHCARE AND REHABILITATION CENTER, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Albuquerque Heights Healthcare and Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "103 Hospital Loop NE",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87109"
+      },
+      "contact": {
+        "phone": "5053488300",
+        "phone_formatted": "5053488300"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.1328,
+        "longitude": -106.59
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 134,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ALBUQUERQUE HEIGHTS HEALTHCARE AND REHABILITATION CENTER, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Red Rocks Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3720 Church Rock Road",
+        "city": "Gallup",
+        "state": "NM",
+        "zip": "87301"
+      },
+      "contact": {
+        "phone": "5057222261",
+        "phone_formatted": "5057222261"
+      },
+      "location": {
+        "county": "Mckinley",
+        "latitude": 35.5285,
+        "longitude": -108.67
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "3720 CHURCH ROCK STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Aztec Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "500 Care Lane",
+        "city": "Aztec",
+        "state": "NM",
+        "zip": "87410"
+      },
+      "contact": {
+        "phone": "5053349445",
+        "phone_formatted": "5053349445"
+      },
+      "location": {
+        "county": "San Juan",
+        "latitude": 36.8342,
+        "longitude": -108.02
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AZTEC HEALTHCARE LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Socorro Wellness & Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1203 Highway 60 West",
+        "city": "Socorro",
+        "state": "NM",
+        "zip": "87801"
+      },
+      "contact": {
+        "phone": "5758352724",
+        "phone_formatted": "5758352724"
+      },
+      "location": {
+        "county": "Socorro",
+        "latitude": 34.0524,
+        "longitude": -106.9
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 61,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SOCORRO WELLNESS & REHABILITATION LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Manzano Del Sol by Purehealth",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5201 Roma Avenue NE",
+        "city": "ALBUQUERQUE",
+        "state": "NM",
+        "zip": "87108"
+      },
+      "contact": {
+        "phone": "5052622311",
+        "phone_formatted": "5052622311"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.0855,
+        "longitude": -106.59
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 117,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE EVANGELICAL LUTHERAN GOOD SAMARITAN SOCIETY",
+        "chain_name": "GOOD SAMARITAN SOCIETY"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "St. Anthony Healthcare and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1400 West 21st Street",
+        "city": "Clovis",
+        "state": "NM",
+        "zip": "88101"
+      },
+      "contact": {
+        "phone": "5757624705",
+        "phone_formatted": "5757624705"
+      },
+      "location": {
+        "county": "Curry",
+        "latitude": 34.4193,
+        "longitude": -103.22
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 70,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST. ANTHONY HEALTHCARE AND REHABILITATION CENTER, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Clovis Healthcare and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1201 North Norris Street",
+        "city": "Clovis",
+        "state": "NM",
+        "zip": "88101"
+      },
+      "contact": {
+        "phone": "5757623753",
+        "phone_formatted": "5757623753"
+      },
+      "location": {
+        "county": "Curry",
+        "latitude": 34.4102,
+        "longitude": -103.18
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CLOVIS HEALTHCARE AND REHABILITATION CENTER, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Retirement Ranches Inc.",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2221 Dillon",
+        "city": "Clovis",
+        "state": "NM",
+        "zip": "88101"
+      },
+      "contact": {
+        "phone": "5757624495",
+        "phone_formatted": "5757624495"
+      },
+      "location": {
+        "county": "Curry",
+        "latitude": 34.4219,
+        "longitude": -103.23
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 104,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RETIREMENT RANCHES, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Luna Wellness Rehabilitation LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "900 West Ash Street",
+        "city": "Deming",
+        "state": "NM",
+        "zip": "88031"
+      },
+      "contact": {
+        "phone": "5752992800",
+        "phone_formatted": "5752992800"
+      },
+      "location": {
+        "county": "Luna",
+        "latitude": 32.2613,
+        "longitude": -107.77
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "San Juan Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "806 West Maple Street",
+        "city": "Farmington",
+        "state": "NM",
+        "zip": "87401"
+      },
+      "contact": {
+        "phone": "5053252910",
+        "phone_formatted": "5053252910"
+      },
+      "location": {
+        "county": "San Juan",
+        "latitude": 36.7243,
+        "longitude": -108.22
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 93,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAN JUAN CARE CENTER LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Casa Maria Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1601 South Main Street",
+        "city": "Roswell",
+        "state": "NM",
+        "zip": "88203"
+      },
+      "contact": {
+        "phone": "5756236008",
+        "phone_formatted": "5756236008"
+      },
+      "location": {
+        "county": "Chaves",
+        "latitude": 33.3745,
+        "longitude": -104.52
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 118,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CASA MARIA HEALTHCARE LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Northgate Unit Of Lakeview Christian Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1905 West Pierce Street",
+        "city": "Carlsbad",
+        "state": "NM",
+        "zip": "88220"
+      },
+      "contact": {
+        "phone": "5758853161",
+        "phone_formatted": "5758853161"
+      },
+      "location": {
+        "county": "Eddy",
+        "latitude": 32.437,
+        "longitude": -104.25
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAKEVIEW CHRISTIAN HOME OF THE SOUTHWEST, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Silver City Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3514 Fowler Avenue",
+        "city": "Silver City",
+        "state": "NM",
+        "zip": "88061"
+      },
+      "contact": {
+        "phone": "5753883127",
+        "phone_formatted": "5753883127"
+      },
+      "location": {
+        "county": "Grant",
+        "latitude": 32.7988,
+        "longitude": -108.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "3514 FOWLER AVENUE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "New Mexico State Veterans Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "992 South Broadway",
+        "city": "Truth or Consequences",
+        "state": "NM",
+        "zip": "87901"
+      },
+      "contact": {
+        "phone": "5758944200",
+        "phone_formatted": "5758944200"
+      },
+      "location": {
+        "county": "Sierra",
+        "latitude": 33.1227,
+        "longitude": -107.26
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 135,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF NEW MEXICO",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Clayton Nursing and Rehab Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "419 Harding Street",
+        "city": "Clayton",
+        "state": "NM",
+        "zip": "88415"
+      },
+      "contact": {
+        "phone": "5753742353",
+        "phone_formatted": "5753742353"
+      },
+      "location": {
+        "county": "Union",
+        "latitude": 36.4531,
+        "longitude": -103.19
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 45,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "419 HARDING STREET OPERATION LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Life Care Center of Farmington",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1101 West Murray Drive",
+        "city": "Farmington",
+        "state": "NM",
+        "zip": "87401"
+      },
+      "contact": {
+        "phone": "5053261600",
+        "phone_formatted": "5053261600"
+      },
+      "location": {
+        "county": "San Juan",
+        "latitude": 36.7272,
+        "longitude": -108.23
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 144,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FARMINGTON OPERATIONS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "The NM Behavioral Health Institute at Las Vegas",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3695 Hot Springs Boulevard",
+        "city": "Las Vegas",
+        "state": "NM",
+        "zip": "87701"
+      },
+      "contact": {
+        "phone": "5054542100",
+        "phone_formatted": "5054542100"
+      },
+      "location": {
+        "county": "San Miguel",
+        "latitude": 35.602,
+        "longitude": -105.24
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 176,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF NEW MEXICO",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Taos Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1340 Maestas Road",
+        "city": "Taos",
+        "state": "NM",
+        "zip": "87571"
+      },
+      "contact": {
+        "phone": "5757582300",
+        "phone_formatted": "5757582300"
+      },
+      "location": {
+        "county": "Taos",
+        "latitude": 36.3684,
+        "longitude": -105.57
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TAOS HEALTHCARE LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Casa Del Sol Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2905 East Missouri Avenue",
+        "city": "Las Cruces",
+        "state": "NM",
+        "zip": "88011"
+      },
+      "contact": {
+        "phone": "5755220404",
+        "phone_formatted": "5755220404"
+      },
+      "location": {
+        "county": "Dona Ana",
+        "latitude": 32.3001,
+        "longitude": -106.74
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEAK MEDICAL LAS CRUCES LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "The Village at Northrise - Desert Willow I",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2884 North Road Runner Parkway",
+        "city": "Las Cruces",
+        "state": "NM",
+        "zip": "88011"
+      },
+      "contact": {
+        "phone": "5755221110",
+        "phone_formatted": "5755221110"
+      },
+      "location": {
+        "county": "Dona Ana",
+        "latitude": 32.3555,
+        "longitude": -106.75
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 31,
+        "provider_type": "Medicare",
+        "legal_business_name": "PEAK MEDICAL ASSISTED LIVING LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Cedar Ridge Inn",
+      "type": "Nursing Home",
+      "address": {
+        "street": "800 Saguaro Trail",
+        "city": "Farmington",
+        "state": "NM",
+        "zip": "87401"
+      },
+      "contact": {
+        "phone": "5052505448",
+        "phone_formatted": "5052505448"
+      },
+      "location": {
+        "county": "San Juan",
+        "latitude": 36.7751,
+        "longitude": -108.19
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 101,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FARMINGTON OPERATIONS LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Coronado Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1604 West 18th Street",
+        "city": "Portales",
+        "state": "NM",
+        "zip": "88130"
+      },
+      "contact": {
+        "phone": "5753594719",
+        "phone_formatted": "5753594719"
+      },
+      "location": {
+        "county": "Roosevelt",
+        "latitude": 34.1712,
+        "longitude": -103.35
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CORONADO CARE CENTER LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Mescalero Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "454 Lipan Avenue",
+        "city": "Mescalero",
+        "state": "NM",
+        "zip": "88340"
+      },
+      "contact": {
+        "phone": "5754644802",
+        "phone_formatted": "5754644802"
+      },
+      "location": {
+        "county": "Otero",
+        "latitude": 33.1575,
+        "longitude": -105.77
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MESCALERO CARE CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": null,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Sunset Villa Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1515 South Sunset Avenue",
+        "city": "Roswell",
+        "state": "NM",
+        "zip": "88203"
+      },
+      "contact": {
+        "phone": "5756237097",
+        "phone_formatted": "5756237097"
+      },
+      "location": {
+        "county": "Chaves",
+        "latitude": 33.3755,
+        "longitude": -104.54
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 52,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUNSET VILLA HEALTHCARE LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Gallup Nursing & Rehabilitation LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "306 East Nizhoni Blvd",
+        "city": "Gallup",
+        "state": "NM",
+        "zip": "87301"
+      },
+      "contact": {
+        "phone": "5058639551",
+        "phone_formatted": "5058639551"
+      },
+      "location": {
+        "county": "Mckinley",
+        "latitude": 35.5084,
+        "longitude": -108.73
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GALLUP NURSING & REHABILITATION LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Advanced Health Care of Albuquerque",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2701 Richmond Drive NE",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87107"
+      },
+      "contact": {
+        "phone": "5059674200",
+        "phone_formatted": "5059674200"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.1115,
+        "longitude": -106.61
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 47,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AHC OF ALBUQUERQUE LLC",
+        "chain_name": "ADVANCED HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Fort Bayard Medical Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "41 Fort Bayard Road",
+        "city": "Santa Clara",
+        "state": "NM",
+        "zip": "88026"
+      },
+      "contact": {
+        "phone": "5755378604",
+        "phone_formatted": "5755378604"
+      },
+      "location": {
+        "county": "Grant",
+        "latitude": 32.7758,
+        "longitude": -108.15
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 200,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF NEW MEXICO",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Fiesta Park Wellness & Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8820 Horizon Boulevard NE",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87113"
+      },
+      "contact": {
+        "phone": "5059981551",
+        "phone_formatted": "5059981551"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.1874,
+        "longitude": -106.6
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FIESTA PARK WELLNESS & REHABILITATION LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Bear Canyon Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5123 Juan Tabo Boulevard NE",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87111"
+      },
+      "contact": {
+        "phone": "5052923333",
+        "phone_formatted": "5052923333"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.1392,
+        "longitude": -106.52
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 178,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST. CATHERINE HEALTHCARE AND REHABILITATION CENTER, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Las Estancias by Pure Health",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3620 Las Estancias Dr Sw",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87121"
+      },
+      "contact": {
+        "phone": "5056323018",
+        "phone_formatted": "5056323018"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.0188,
+        "longitude": -106.72
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PH OPS OF LAS ESTANCIAS LLC",
+        "chain_name": "PUREHEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "The Suites Rio Vista",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2410 19th Street SE",
+        "city": "Rio Rancho",
+        "state": "NM",
+        "zip": "87124"
+      },
+      "contact": {
+        "phone": "5054524200",
+        "phone_formatted": "5054524200"
+      },
+      "location": {
+        "county": "Sandoval",
+        "latitude": 35.2201,
+        "longitude": -106.7
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 136,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CABEZON NURSING AND REHAB CENTER LLC",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Artesia Healthcare & Rehabilitation Center, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1402 West Gilchrist Ave",
+        "city": "Artesia",
+        "state": "NM",
+        "zip": "88210"
+      },
+      "contact": {
+        "phone": "5757466006",
+        "phone_formatted": "5757466006"
+      },
+      "location": {
+        "county": "Eddy",
+        "latitude": 32.8535,
+        "longitude": -104.41
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 65,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ARTESIA HEALTHCARE & REHABILITATION CENTER, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Desert Springs Health Care LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1701 N Turner Street",
+        "city": "Hobbs",
+        "state": "NM",
+        "zip": "88240"
+      },
+      "contact": {
+        "phone": "5753970870",
+        "phone_formatted": "5753970870"
+      },
+      "location": {
+        "county": "Lea",
+        "latitude": 32.7179,
+        "longitude": -103.14
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DESERT SPRINGS HEALTHCARE LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "The Neighborhood In Rio Rancho",
+      "type": "Nursing Home",
+      "address": {
+        "street": "900 Loma Colorado Blvd NE",
+        "city": "Rio Rancho",
+        "state": "NM",
+        "zip": "87124"
+      },
+      "contact": {
+        "phone": "5059942296",
+        "phone_formatted": "5059942296"
+      },
+      "location": {
+        "county": "Sandoval",
+        "latitude": 35.2726,
+        "longitude": -106.66
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE NEIGHBORHOOD IN RIO RANCHO",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Spanish Trails Rehabilitation Suites",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1610 N Renaissance Blvd NE",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87107"
+      },
+      "contact": {
+        "phone": "5056004800",
+        "phone_formatted": "5056004800"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.1375,
+        "longitude": -106.61
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 134,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RENAISSANCE HEALTH CARE LLC",
+        "chain_name": "FUNDAMENTAL HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Las Cruces Wellness & Rehabilitation LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "175 N Roadrunner Parkway",
+        "city": "Las Cruces",
+        "state": "NM",
+        "zip": "88011"
+      },
+      "contact": {
+        "phone": "5753865800",
+        "phone_formatted": "5753865800"
+      },
+      "location": {
+        "county": "Dona Ana",
+        "latitude": 32.3252,
+        "longitude": -106.74
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 56,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAS CRUCES WELLNESS & REHABILITATION LLC",
+        "chain_name": "OPCO SKILLED MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Farmington Wellness & Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "201 Nelson Avenue",
+        "city": "Farmington",
+        "state": "NM",
+        "zip": "87401"
+      },
+      "contact": {
+        "phone": "5056754545",
+        "phone_formatted": "5056754545"
+      },
+      "location": {
+        "county": "San Juan",
+        "latitude": 36.7238,
+        "longitude": -108.22
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 50,
+        "provider_type": "Medicare",
+        "legal_business_name": "WELBROOK SENIOR LIVING FARMINGTON LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Laguna Rainbow Nursing Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "240 Casa Blanca Road",
+        "city": "Casa Blanca",
+        "state": "NM",
+        "zip": "87007"
+      },
+      "contact": {
+        "phone": "5055526034",
+        "phone_formatted": "5055526034"
+      },
+      "location": {
+        "county": "Cibola",
+        "latitude": 35.0244,
+        "longitude": -107.48
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAGUNA RAINBOW CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Miners Colfax Medical Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "900 South 6th Street",
+        "city": "Raton",
+        "state": "NM",
+        "zip": "87740"
+      },
+      "contact": {
+        "phone": "5754457788",
+        "phone_formatted": "5754457788"
+      },
+      "location": {
+        "county": "Colfax",
+        "latitude": 36.8945,
+        "longitude": -104.45
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 37,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Colfax General LTC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "615 Prospect Avenue",
+        "city": "SPRINGER",
+        "state": "NM",
+        "zip": "87747"
+      },
+      "contact": {
+        "phone": "5754833300",
+        "phone_formatted": "5754833300"
+      },
+      "location": {
+        "county": "Colfax",
+        "latitude": 36.363,
+        "longitude": -104.59
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 34,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "South Valley Care Center LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1629 Bowe Lane Sw",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": "87105"
+      },
+      "contact": {
+        "phone": "5058772200",
+        "phone_formatted": "5058772200"
+      },
+      "location": {
+        "county": "Bernalillo",
+        "latitude": 35.0603,
+        "longitude": -106.68
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 62,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    }
+  ]
+}

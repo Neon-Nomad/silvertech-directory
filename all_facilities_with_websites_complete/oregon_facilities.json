@@ -1,0 +1,4872 @@
+{
+  "state": "Oregon",
+  "state_code": "OR",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 128,
+    "total_nursing_homes": 128,
+    "total_assisted_living": 0,
+    "total_certified_beds": 10619,
+    "counties_served": 28,
+    "average_beds_per_facility": 83.0
+  },
+  "quality_distribution": {
+    "five_star": 29,
+    "four_star": 18,
+    "three_star": 27,
+    "two_star": 29,
+    "one_star": 24
+  },
+  "counties": {
+    "Multnomah": {
+      "facility_count": 33,
+      "total_beds": 2776
+    },
+    "Marion": {
+      "facility_count": 8,
+      "total_beds": 635
+    },
+    "Jackson": {
+      "facility_count": 5,
+      "total_beds": 450
+    },
+    "Lane": {
+      "facility_count": 13,
+      "total_beds": 1190
+    },
+    "Wasco": {
+      "facility_count": 3,
+      "total_beds": 362
+    },
+    "Josephine": {
+      "facility_count": 4,
+      "total_beds": 410
+    },
+    "Benton": {
+      "facility_count": 1,
+      "total_beds": 135
+    },
+    "Hood River": {
+      "facility_count": 1,
+      "total_beds": 100
+    },
+    "Linn": {
+      "facility_count": 5,
+      "total_beds": 474
+    },
+    "Clackamas": {
+      "facility_count": 13,
+      "total_beds": 862
+    },
+    "Washington": {
+      "facility_count": 9,
+      "total_beds": 910
+    },
+    "Klamath": {
+      "facility_count": 1,
+      "total_beds": 77
+    },
+    "Deschutes": {
+      "facility_count": 4,
+      "total_beds": 230
+    },
+    "Douglas": {
+      "facility_count": 3,
+      "total_beds": 340
+    },
+    "Clatsop": {
+      "facility_count": 1,
+      "total_beds": 71
+    },
+    "Coos": {
+      "facility_count": 3,
+      "total_beds": 241
+    },
+    "Umatilla": {
+      "facility_count": 3,
+      "total_beds": 234
+    },
+    "Lincoln": {
+      "facility_count": 1,
+      "total_beds": 52
+    },
+    "Curry": {
+      "facility_count": 1,
+      "total_beds": 59
+    },
+    "Yamhill": {
+      "facility_count": 6,
+      "total_beds": 415
+    },
+    "Jefferson": {
+      "facility_count": 1,
+      "total_beds": 20
+    },
+    "Polk": {
+      "facility_count": 2,
+      "total_beds": 201
+    },
+    "Union": {
+      "facility_count": 1,
+      "total_beds": 76
+    },
+    "Columbia": {
+      "facility_count": 2,
+      "total_beds": 132
+    },
+    "Tillamook": {
+      "facility_count": 1,
+      "total_beds": 50
+    },
+    "Crook": {
+      "facility_count": 1,
+      "total_beds": 44
+    },
+    "Malheur": {
+      "facility_count": 1,
+      "total_beds": 33
+    },
+    "Grant": {
+      "facility_count": 1,
+      "total_beds": 40
+    }
+  },
+  "facilities": [
+    {
+      "name": "LAURELHURST POST ACUTE & REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3060 SE STARK STREET",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97214"
+      },
+      "contact": {
+        "phone": "5035354700",
+        "phone_formatted": "5035354700"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5193,
+        "longitude": -122.63
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 159,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "REGENCY GRESHAM NURSING & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5905 SE POWELL VALLEY RD",
+        "city": "GRESHAM",
+        "state": "OR",
+        "zip": "97080"
+      },
+      "contact": {
+        "phone": "5036651151",
+        "phone_formatted": "5036651151"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4882,
+        "longitude": -122.37
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 128,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "REGENCY GRESHAM NURSING & REHABILITATION CENTER, LLC",
+        "chain_name": "REGENCY PACIFIC MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MT ANGEL HEALTH AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "540 SOUTH MAIN STREET",
+        "city": "MOUNT ANGEL",
+        "state": "OR",
+        "zip": "97362"
+      },
+      "contact": {
+        "phone": "5038456841",
+        "phone_formatted": "5038456841"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 45.0649,
+        "longitude": -122.8
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 93,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PROVIDENCE HEALTH & SERVICES OREGON",
+        "chain_name": "PROVIDENCE HEALTH & SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE HEALTH SERVICES OF ROGUE VALLEY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "625 STEVENS STREET",
+        "city": "MEDFORD",
+        "state": "OR",
+        "zip": "97504"
+      },
+      "contact": {
+        "phone": "5417793551",
+        "phone_formatted": "5417793551"
+      },
+      "location": {
+        "county": "Jackson",
+        "latitude": 42.3346,
+        "longitude": -122.87
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 91,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MEDFORD OPERATIONS, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE CRESTVIEW OF PORTLAND",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6530 SW 30TH AVENUE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97239"
+      },
+      "contact": {
+        "phone": "5032447533",
+        "phone_formatted": "5032447533"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4767,
+        "longitude": -122.71
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 127,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CRESTVIEW OPERATIONS LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MENLO PARK POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "745 NE 122ND AVENUE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97230"
+      },
+      "contact": {
+        "phone": "5032520241",
+        "phone_formatted": "5032520241"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5281,
+        "longitude": -122.54
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 83,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MENLO PARK SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PORTHAVEN POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5330 NE PRESCOTT STREET",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97218"
+      },
+      "contact": {
+        "phone": "5032886585",
+        "phone_formatted": "5032886585"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5555,
+        "longitude": -122.61
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 99,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PORTHAVEN SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HILLSIDE HEIGHTS REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1201 MCLEAN BLVD.",
+        "city": "EUGENE",
+        "state": "OR",
+        "zip": "97405"
+      },
+      "contact": {
+        "phone": "5416832155",
+        "phone_formatted": "5416832155"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 44.0262,
+        "longitude": -123.11
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 83,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COLLEGE HILL REHAB CENTER LLC",
+        "chain_name": "VOLARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "COLUMBIA BASIN CARE FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1015 WEBBER STREET",
+        "city": "THE DALLES",
+        "state": "OR",
+        "zip": "97058"
+      },
+      "contact": {
+        "phone": "5412962156",
+        "phone_formatted": "5412962156"
+      },
+      "location": {
+        "county": "Wasco",
+        "latitude": 45.6075,
+        "longitude": -121.21
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WASCO COUNTY NURSING CARE, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Avamere Rehabilitation Of Eugene",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2360 CHAMBERS STREET",
+        "city": "EUGENE",
+        "state": "OR",
+        "zip": "97405"
+      },
+      "contact": {
+        "phone": "5416871310",
+        "phone_formatted": "5416871310"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 44.0335,
+        "longitude": -123.12
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 92,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EUGENE REHABILITATION, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "REEDWOOD POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3540 SE FRANCIS STREET",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97202"
+      },
+      "contact": {
+        "phone": "5032325767",
+        "phone_formatted": "5032325767"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4948,
+        "longitude": -122.63
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 64,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CRESTON SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "REGENCY CARE OF ROGUE VALLEY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1710 NE FAIRVIEW AVENUE",
+        "city": "GRANTS PASS",
+        "state": "OR",
+        "zip": "97526"
+      },
+      "contact": {
+        "phone": "5414792606",
+        "phone_formatted": "5414792606"
+      },
+      "location": {
+        "county": "Josephine",
+        "latitude": 42.4381,
+        "longitude": -123.31
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BD GRANTS PASS I LLC",
+        "chain_name": "REGENCY PACIFIC MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "VILLAGE HEALTH CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3955 SE 182ND AVENUE",
+        "city": "GRESHAM",
+        "state": "OR",
+        "zip": "97030"
+      },
+      "contact": {
+        "phone": "5036650183",
+        "phone_formatted": "5036650183"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4936,
+        "longitude": -122.48
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 106,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VILLAGE SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CORVALLIS MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "160 NE CONIFER BLVD",
+        "city": "CORVALLIS",
+        "state": "OR",
+        "zip": "97330"
+      },
+      "contact": {
+        "phone": "5417571651",
+        "phone_formatted": "5417571651"
+      },
+      "location": {
+        "county": "Benton",
+        "latitude": 44.5969,
+        "longitude": -123.25
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 135,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CONIFER NURSING CENTER LLC",
+        "chain_name": "VOLARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS SPRINGFIELD",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1333 N. 1ST STREET",
+        "city": "SPRINGFIELD",
+        "state": "OR",
+        "zip": "97477"
+      },
+      "contact": {
+        "phone": "5417362700",
+        "phone_formatted": "5417362700"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 44.0589,
+        "longitude": -123.01
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 136,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES I, INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HEARTHSTONE NURSING & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2901 E. BARNETT ROAD",
+        "city": "MEDFORD",
+        "state": "OR",
+        "zip": "97504"
+      },
+      "contact": {
+        "phone": "5417794221",
+        "phone_formatted": "5417794221"
+      },
+      "location": {
+        "county": "Jackson",
+        "latitude": 42.3165,
+        "longitude": -122.83
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 87,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MEDFORD NURSING & REHAB CENTER LLC",
+        "chain_name": "VOLARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HOOD RIVER POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "729 HENDERSON ROAD",
+        "city": "HOOD RIVER",
+        "state": "OR",
+        "zip": "97031"
+      },
+      "contact": {
+        "phone": "5413862688",
+        "phone_formatted": "5413862688"
+      },
+      "location": {
+        "county": "Hood River",
+        "latitude": 45.6993,
+        "longitude": -121.54
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HOOD RIVER SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TIMBERLINE POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1023 6TH AVE SW",
+        "city": "ALBANY",
+        "state": "OR",
+        "zip": "97321"
+      },
+      "contact": {
+        "phone": "5419268664",
+        "phone_formatted": "5419268664"
+      },
+      "location": {
+        "county": "Linn",
+        "latitude": 44.6322,
+        "longitude": -123.12
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 67,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "PRESTIGE CARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WEST HILLS HEALTH & REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5701 SW MULTNOMAH BLVD",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97219"
+      },
+      "contact": {
+        "phone": "5032441107",
+        "phone_formatted": "5032441107"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4675,
+        "longitude": -122.74
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 180,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WEST HILLS CONVALESCENT CENTER LIMITED PARTNERSHIP",
+        "chain_name": "THE GOODMAN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FRENCH PRAIRIE NURSING & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "601 EVERGREEN ROAD",
+        "city": "WOODBURN",
+        "state": "OR",
+        "zip": "97071"
+      },
+      "contact": {
+        "phone": "5039820111",
+        "phone_formatted": "5039820111"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 45.1474,
+        "longitude": -122.88
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EVERGREEN ESTATES NURSING & REHABILITATION CENTER LLC",
+        "chain_name": "VOLARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "VALLEY WEST HEALTH CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2300 WARREN STREET",
+        "city": "EUGENE",
+        "state": "OR",
+        "zip": "97405"
+      },
+      "contact": {
+        "phone": "5416862828",
+        "phone_formatted": "5416862828"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 44.0306,
+        "longitude": -123.15
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 121,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VALLEY WEST OPERATIONS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FRIENDSHIP HEALTH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3320 SE HOLGATE BLVD",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97202"
+      },
+      "contact": {
+        "phone": "5032311411",
+        "phone_formatted": "5032311411"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4906,
+        "longitude": -122.63
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FRIENDSHIP HEALTH CENTER, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE REHABILITATION OF OREGON CITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1400 DIVISION STREET",
+        "city": "OREGON CITY",
+        "state": "OR",
+        "zip": "97045"
+      },
+      "contact": {
+        "phone": "5036560367",
+        "phone_formatted": "5036560367"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.3549,
+        "longitude": -122.59
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 111,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MOUNTAIN VIEW REHAB, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE AT THREE FOUNTAINS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "835 CRATER LAKE AVENUE",
+        "city": "MEDFORD",
+        "state": "OR",
+        "zip": "97504"
+      },
+      "contact": {
+        "phone": "5417737717",
+        "phone_formatted": "5417737717"
+      },
+      "location": {
+        "county": "Jackson",
+        "latitude": 42.3375,
+        "longitude": -122.86
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 117,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WATERFORD OPERATIONS, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE REHABILITATION OF KING CITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "16485 SW PACIFIC HIGHWAY",
+        "city": "TIGARD",
+        "state": "OR",
+        "zip": "97224"
+      },
+      "contact": {
+        "phone": "5036205141",
+        "phone_formatted": "5036205141"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 45.3999,
+        "longitude": -122.8
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 148,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KING CITY REHAB, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FAIRLAWN HEALTH AND REHAB OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3457 NE DIVISION STREET",
+        "city": "GRESHAM",
+        "state": "OR",
+        "zip": "97030"
+      },
+      "contact": {
+        "phone": "5036671965",
+        "phone_formatted": "5036671965"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5048,
+        "longitude": -122.4
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 82,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GRESHAM OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GLISAN POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "9750 NE GLISAN STREET",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97220"
+      },
+      "contact": {
+        "phone": "5032563920",
+        "phone_formatted": "5032563920"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5263,
+        "longitude": -122.56
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GLISAN SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS PLUM RIDGE POST ACUTE REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1401 BRYANT WILLIAMS DR.",
+        "city": "KLAMATH FALLS",
+        "state": "OR",
+        "zip": "97601"
+      },
+      "contact": {
+        "phone": "5418826691",
+        "phone_formatted": "5418826691"
+      },
+      "location": {
+        "county": "Klamath",
+        "latitude": 42.252,
+        "longitude": -121.78
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 77,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES II INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PILOT BUTTE REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1876 NE HIGHWAY 20",
+        "city": "BEND",
+        "state": "OR",
+        "zip": "97701"
+      },
+      "contact": {
+        "phone": "5413825531",
+        "phone_formatted": "5413825531"
+      },
+      "location": {
+        "county": "Deschutes",
+        "latitude": 44.0555,
+        "longitude": -121.28
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 74,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BD BEND II LLC",
+        "chain_name": "REGENCY PACIFIC MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Mt. Tabor Health & Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6040 SE BELMONT STREET",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97215"
+      },
+      "contact": {
+        "phone": "5032317166",
+        "phone_formatted": "5032317166"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5168,
+        "longitude": -122.6
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES I, INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "REGENCY FLORENCE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1951 E. 21ST STREET",
+        "city": "FLORENCE",
+        "state": "OR",
+        "zip": "97439"
+      },
+      "contact": {
+        "phone": "5419978436",
+        "phone_formatted": "5419978436"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 43.9851,
+        "longitude": -124.1
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "REGENCY FLORENCE, LLC",
+        "chain_name": "REGENCY PACIFIC MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "UMPQUA VALLEY NURSING & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "525 W. UMPQUA STREET",
+        "city": "ROSEBURG",
+        "state": "OR",
+        "zip": "97471"
+      },
+      "contact": {
+        "phone": "5414647100",
+        "phone_formatted": "5414647100"
+      },
+      "location": {
+        "county": "Douglas",
+        "latitude": 43.2165,
+        "longitude": -123.36
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 118,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "UMPQUA RIVER NURSING & REHAB LLC",
+        "chain_name": "VOLARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CLATSOP CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "646 16TH STREET",
+        "city": "ASTORIA",
+        "state": "OR",
+        "zip": "97103"
+      },
+      "contact": {
+        "phone": "5033250313",
+        "phone_formatted": "5033250313"
+      },
+      "location": {
+        "county": "Clatsop",
+        "latitude": 46.1867,
+        "longitude": -123.83
+      },
+      "facility_details": {
+        "ownership_type": "Government - City/county",
+        "certified_beds": 71,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CLATSOP CARE CENTER HEALTH DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ROBISON JEWISH HEALTH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6125 SW BOUNDARY STREET",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97221"
+      },
+      "contact": {
+        "phone": "5035354300",
+        "phone_formatted": "5035354300"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4858,
+        "longitude": -122.74
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 92,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROBISON JEWISH HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CREEKSIDE HEALTH AND REHAB OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3500 HILYARD STREET",
+        "city": "EUGENE",
+        "state": "OR",
+        "zip": "97405"
+      },
+      "contact": {
+        "phone": "5416879211",
+        "phone_formatted": "5416879211"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 44.019,
+        "longitude": -123.08
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 106,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EUGENE OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ROYALE GARDENS HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2075 NW HIGHLAND AVENUE",
+        "city": "GRANTS PASS",
+        "state": "OR",
+        "zip": "97526"
+      },
+      "contact": {
+        "phone": "5414768891",
+        "phone_formatted": "5414768891"
+      },
+      "location": {
+        "county": "Josephine",
+        "latitude": 42.4652,
+        "longitude": -123.33
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 145,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GILBERT CREEK HEALTH & REHABILITATION CENTER LLC",
+        "chain_name": "VOLARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HIGHLAND HOUSE NURSING & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2201 NW HIGHLAND AVENUE",
+        "city": "GRANTS PASS",
+        "state": "OR",
+        "zip": "97526"
+      },
+      "contact": {
+        "phone": "5414741901",
+        "phone_formatted": "5414741901"
+      },
+      "location": {
+        "county": "Josephine",
+        "latitude": 42.4641,
+        "longitude": -123.33
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 119,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GRANTS PASS NURSING & REHAB CENTER LLC",
+        "chain_name": "VOLARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WOODSIDE POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "301 RIDINGS AVENUE",
+        "city": "MOLALLA",
+        "state": "OR",
+        "zip": "97038"
+      },
+      "contact": {
+        "phone": "5038295591",
+        "phone_formatted": "5038295591"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.1504,
+        "longitude": -122.59
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 92,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WOODSIDE SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ROSE HAVEN NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "740 NW HILL",
+        "city": "ROSEBURG",
+        "state": "OR",
+        "zip": "97471"
+      },
+      "contact": {
+        "phone": "5416721631",
+        "phone_formatted": "5416721631"
+      },
+      "location": {
+        "county": "Douglas",
+        "latitude": 43.2303,
+        "longitude": -123.36
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 193,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SWEET BRIAR NURSING CENTER LLC",
+        "chain_name": "VOLARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "COTTAGE GROVE POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "515 GRANT STREET",
+        "city": "COTTAGE GROVE",
+        "state": "OR",
+        "zip": "97424"
+      },
+      "contact": {
+        "phone": "5419425528",
+        "phone_formatted": "5419425528"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 43.7825,
+        "longitude": -123.06
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COTTAGE GROVE SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FOREST GROVE POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3900 PACIFIC AVENUE",
+        "city": "FOREST GROVE",
+        "state": "OR",
+        "zip": "97116"
+      },
+      "contact": {
+        "phone": "5033590449",
+        "phone_formatted": "5033590449"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 45.5202,
+        "longitude": -123.08
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 114,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FOREST GROVE SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GREEN VALLEY REHABILITATION HEALTH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1735 ADKINS STREET",
+        "city": "EUGENE",
+        "state": "OR",
+        "zip": "97401"
+      },
+      "contact": {
+        "phone": "5416835032",
+        "phone_formatted": "5416835032"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 44.0836,
+        "longitude": -123.07
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 110,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KENSINGTON REHABILITATION HEALTH CENTER LLC",
+        "chain_name": "VOLARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF COOS BAY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2890 OCEAN BLVD",
+        "city": "COOS BAY",
+        "state": "OR",
+        "zip": "97420"
+      },
+      "contact": {
+        "phone": "5412675433",
+        "phone_formatted": "5412675433"
+      },
+      "location": {
+        "county": "Coos",
+        "latitude": 43.3816,
+        "longitude": -124.25
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 114,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LIFE CARE CENTERS OF AMERICA, INC.",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MILTON FREEWATER HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "120 ELZORA STREET",
+        "city": "MILTON FREEWATER",
+        "state": "OR",
+        "zip": "97862"
+      },
+      "contact": {
+        "phone": "5419383318",
+        "phone_formatted": "5419383318"
+      },
+      "location": {
+        "county": "Umatilla",
+        "latitude": 45.9382,
+        "longitude": -118.39
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 70,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MILTON FREEWATER SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE REHABILITATION OF NEWPORT",
+      "type": "Nursing Home",
+      "address": {
+        "street": "835 SW 11TH STREET",
+        "city": "NEWPORT",
+        "state": "OR",
+        "zip": "97365"
+      },
+      "contact": {
+        "phone": "5412655356",
+        "phone_formatted": "5412655356"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 44.6281,
+        "longitude": -124.06
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 52,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NEWPORT REHABILITATION, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AIDAN SENIOR LIVING AT REEDSPORT",
+      "type": "Nursing Home",
+      "address": {
+        "street": "600 RANCH ROAD",
+        "city": "REEDSPORT",
+        "state": "OR",
+        "zip": "97467"
+      },
+      "contact": {
+        "phone": "5412715841",
+        "phone_formatted": "5412715841"
+      },
+      "location": {
+        "county": "Douglas",
+        "latitude": 43.6953,
+        "longitude": -124.14
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 29,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AIDAN SENIOR LIVING AT REEDSPORT INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CURRY VILLAGE HEALTH AND REHAB OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1 PARK AVENUE",
+        "city": "BROOKINGS",
+        "state": "OR",
+        "zip": "97415"
+      },
+      "contact": {
+        "phone": "5414693111",
+        "phone_formatted": "5414693111"
+      },
+      "location": {
+        "county": "Curry",
+        "latitude": 42.0539,
+        "longitude": -124.28
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 59,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BROOKINGS OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARYVILLE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "14645 SW FARMINGTON ROAD",
+        "city": "BEAVERTON",
+        "state": "OR",
+        "zip": "97007"
+      },
+      "contact": {
+        "phone": "5036438626",
+        "phone_formatted": "5036438626"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 45.4857,
+        "longitude": -122.83
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 165,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SISTERS OF ST. MARY OF OREGON MARYVILLE CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SOUTH HILLS REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1166 E. 28TH AVENUE",
+        "city": "EUGENE",
+        "state": "OR",
+        "zip": "97403"
+      },
+      "contact": {
+        "phone": "5413450534",
+        "phone_formatted": "5413450534"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 44.0271,
+        "longitude": -123.08
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 110,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CAMAS RIDGE REHABILITATION CENTER LLC",
+        "chain_name": "VOLARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE REHABILITATION OF LEBANON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "350 S. 8TH",
+        "city": "LEBANON",
+        "state": "OR",
+        "zip": "97355"
+      },
+      "contact": {
+        "phone": "5412591221",
+        "phone_formatted": "5412591221"
+      },
+      "location": {
+        "county": "Linn",
+        "latitude": 44.5429,
+        "longitude": -122.92
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 84,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LEBANON CARE CENTER, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF MCMINNVILLE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1309  NE 27TH STREET",
+        "city": "MCMINNVILLE",
+        "state": "OR",
+        "zip": "97128"
+      },
+      "contact": {
+        "phone": "5034724678",
+        "phone_formatted": "5034724678"
+      },
+      "location": {
+        "county": "Yamhill",
+        "latitude": 45.2282,
+        "longitude": -123.19
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 110,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MCMINNVILLE MEDICAL INVESTORS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THE DALLES HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1023 W. 25TH STREET",
+        "city": "THE DALLES",
+        "state": "OR",
+        "zip": "97058"
+      },
+      "contact": {
+        "phone": "5412985158",
+        "phone_formatted": "5412985158"
+      },
+      "location": {
+        "county": "Wasco",
+        "latitude": 45.5946,
+        "longitude": -121.21
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 121,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE DALLES SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS NEWBERG",
+      "type": "Nursing Home",
+      "address": {
+        "street": "441 WERTH BLVD",
+        "city": "NEWBERG",
+        "state": "OR",
+        "zip": "97132"
+      },
+      "contact": {
+        "phone": "5035389436",
+        "phone_formatted": "5035389436"
+      },
+      "location": {
+        "county": "Yamhill",
+        "latitude": 45.3025,
+        "longitude": -122.94
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 54,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES I, INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "EAST CASCADE RETIREMENT COMMUNITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "175 NE 16TH STREET",
+        "city": "MADRAS",
+        "state": "OR",
+        "zip": "97741"
+      },
+      "contact": {
+        "phone": "5414752273",
+        "phone_formatted": "5414752273"
+      },
+      "location": {
+        "county": "Jefferson",
+        "latitude": 44.6385,
+        "longitude": -121.12
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 20,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EAST CASCADE RETIREMENT COMMUNITY LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CRESWELL POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "735 SOUTH 2ND STREET",
+        "city": "CRESWELL",
+        "state": "OR",
+        "zip": "97426"
+      },
+      "contact": {
+        "phone": "5418953333",
+        "phone_formatted": "5418953333"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 43.9128,
+        "longitude": -123.02
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 76,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CRESWELL SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS CENTENNIAL POST ACUTE REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "725 SE 202ND AVENUE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97233"
+      },
+      "contact": {
+        "phone": "5036653118",
+        "phone_formatted": "5036653118"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5177,
+        "longitude": -122.46
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES II INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE RIVERPARK OF EUGENE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "425 ALEXANDER LOOP",
+        "city": "EUGENE",
+        "state": "OR",
+        "zip": "97401"
+      },
+      "contact": {
+        "phone": "5413456199",
+        "phone_formatted": "5413456199"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 44.0789,
+        "longitude": -123.11
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 119,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RIVERPARK OPERATIONS, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CASCADE TERRACE POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5601 SE 122ND AVENUE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97236"
+      },
+      "contact": {
+        "phone": "5037613181",
+        "phone_formatted": "5037613181"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4822,
+        "longitude": -122.54
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CASCADE TERRACE SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "INDEPENDENCE HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1525 MONMOUTH STREET",
+        "city": "INDEPENDENCE",
+        "state": "OR",
+        "zip": "97351"
+      },
+      "contact": {
+        "phone": "5038380001",
+        "phone_formatted": "5038380001"
+      },
+      "location": {
+        "county": "Polk",
+        "latitude": 44.8512,
+        "longitude": -123.21
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "INDEPENDENCE SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE TRANSITIONAL CARE AT SUNNYSIDE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4515 SUNNYSIDE ROAD SE",
+        "city": "SALEM",
+        "state": "OR",
+        "zip": "97302"
+      },
+      "contact": {
+        "phone": "5033708284",
+        "phone_formatted": "5033708284"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 44.89,
+        "longitude": -123.04
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 88,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUNNYSIDE OPERATIONS LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GRESHAM POST ACUTE CARE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "405 NE 5TH STREET",
+        "city": "GRESHAM",
+        "state": "OR",
+        "zip": "97030"
+      },
+      "contact": {
+        "phone": "5036665600",
+        "phone_formatted": "5036665600"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.501,
+        "longitude": -122.43
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 78,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAPPHIRE AT GRESHAM REHAB, LLC",
+        "chain_name": "SAPPHIRE HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Avamere Rehabilitation Of Beaverton",
+      "type": "Nursing Home",
+      "address": {
+        "street": "11850 SW ALLEN BLVD.",
+        "city": "BEAVERTON",
+        "state": "OR",
+        "zip": "97008"
+      },
+      "contact": {
+        "phone": "5036467164",
+        "phone_formatted": "5036467164"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 45.4765,
+        "longitude": -122.8
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 104,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BEAVERTON REHAB & SPECIALTY CARE, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ASHLAND POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "135 MAPLE STREET",
+        "city": "ASHLAND",
+        "state": "OR",
+        "zip": "97520"
+      },
+      "contact": {
+        "phone": "5414822341",
+        "phone_formatted": "5414822341"
+      },
+      "location": {
+        "county": "Jackson",
+        "latitude": 42.2065,
+        "longitude": -122.72
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 87,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ASHLAND SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CHEHALEM POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1900 E. FULTON STREET",
+        "city": "NEWBERG",
+        "state": "OR",
+        "zip": "97132"
+      },
+      "contact": {
+        "phone": "5035382108",
+        "phone_formatted": "5035382108"
+      },
+      "location": {
+        "county": "Yamhill",
+        "latitude": 45.3063,
+        "longitude": -122.96
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 84,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CHEHALEM SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WILLAMETTE VIEW HEALTH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "13145 SE RIVER ROAD",
+        "city": "MILWAUKIE",
+        "state": "OR",
+        "zip": "97222"
+      },
+      "contact": {
+        "phone": "5033537000",
+        "phone_formatted": "5033537000"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.4278,
+        "longitude": -122.65
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 6,
+        "provider_type": "Medicare",
+        "legal_business_name": "WILLAMETTE VIEW INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WILLOWBROOK POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "707 SW 37TH STREET",
+        "city": "PENDLETON",
+        "state": "OR",
+        "zip": "97801"
+      },
+      "contact": {
+        "phone": "5412763374",
+        "phone_formatted": "5412763374"
+      },
+      "location": {
+        "county": "Umatilla",
+        "latitude": 45.6559,
+        "longitude": -118.82
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 59,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CARE CENTER WILLOWBROOK INC",
+        "chain_name": "PRESTIGE CARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE REHABILITATION OF CLACKAMAS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "220 E. HEREFORD",
+        "city": "GLADSTONE",
+        "state": "OR",
+        "zip": "97027"
+      },
+      "contact": {
+        "phone": "5036560393",
+        "phone_formatted": "5036560393"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.3835,
+        "longitude": -122.59
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 87,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CLACKAMAS REHABILITATION, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS FOREST GROVE POST ACUTE REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3300 19TH AVENUE",
+        "city": "FOREST GROVE",
+        "state": "OR",
+        "zip": "97116"
+      },
+      "contact": {
+        "phone": "5033577119",
+        "phone_formatted": "5033577119"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 45.5183,
+        "longitude": -123.09
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 63,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES II INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MENNONITE HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5353 COLUMBUS STREET SE",
+        "city": "ALBANY",
+        "state": "OR",
+        "zip": "97321"
+      },
+      "contact": {
+        "phone": "5419287232",
+        "phone_formatted": "5419287232"
+      },
+      "location": {
+        "county": "Linn",
+        "latitude": 44.592,
+        "longitude": -123.08
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 95,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MENNONITE HOME OF ALBANY, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "DALLAS RETIREMENT VILLAGE HEALTH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "377 NW JASPER STREET",
+        "city": "DALLAS",
+        "state": "OR",
+        "zip": "97338"
+      },
+      "contact": {
+        "phone": "5036235581",
+        "phone_formatted": "5036235581"
+      },
+      "location": {
+        "county": "Polk",
+        "latitude": 44.9315,
+        "longitude": -123.32
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 121,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DALLAS HEALTH CARE CENTER L L C",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS PIEDMONT POST ACUTE REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "319 NE RUSSET",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97211"
+      },
+      "contact": {
+        "phone": "5032895571",
+        "phone_formatted": "5032895571"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5779,
+        "longitude": -122.66
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 70,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES II INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LA GRANDE POST ACUTE REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "91 ARIES LANE",
+        "city": "LA GRANDE",
+        "state": "OR",
+        "zip": "97850"
+      },
+      "contact": {
+        "phone": "5419638678",
+        "phone_formatted": "5419638678"
+      },
+      "location": {
+        "county": "Union",
+        "latitude": 45.311,
+        "longitude": -118.08
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 76,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LA GRANDE SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS MILL PARK",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1475 SE 100TH AVENUE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97216"
+      },
+      "contact": {
+        "phone": "5032626000",
+        "phone_formatted": "5032626000"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5127,
+        "longitude": -122.56
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 77,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES I, INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HILLSBORO HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1778 NE CORNELL ROAD",
+        "city": "HILLSBORO",
+        "state": "OR",
+        "zip": "97124"
+      },
+      "contact": {
+        "phone": "5036486621",
+        "phone_formatted": "5036486621"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 45.5307,
+        "longitude": -122.96
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 78,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HILLSBORO SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS VERMONT HILLS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6010 SW SHATTUCK ROAD",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97221"
+      },
+      "contact": {
+        "phone": "5032468811",
+        "phone_formatted": "5032468811"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4816,
+        "longitude": -122.74
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 73,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES I, INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "REGENCY ALBANY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "805 19TH AVENUE SE",
+        "city": "ALBANY",
+        "state": "OR",
+        "zip": "97321"
+      },
+      "contact": {
+        "phone": "5419264741",
+        "phone_formatted": "5419264741"
+      },
+      "location": {
+        "county": "Linn",
+        "latitude": 44.6225,
+        "longitude": -123.11
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 74,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "REGENCY ALBANY, LLC",
+        "chain_name": "REGENCY PACIFIC MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS OREGON CITY POST ACUTE REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1680 MOLALLA AVENUE",
+        "city": "OREGON CITY",
+        "state": "OR",
+        "zip": "97045"
+      },
+      "contact": {
+        "phone": "5036552588",
+        "phone_formatted": "5036552588"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.3333,
+        "longitude": -122.59
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES II INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SAINT HELENS POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "75 SHORE DRIVE",
+        "city": "SAINT HELENS",
+        "state": "OR",
+        "zip": "97051"
+      },
+      "contact": {
+        "phone": "5033972713",
+        "phone_formatted": "5033972713"
+      },
+      "location": {
+        "county": "Columbia",
+        "latitude": 45.8609,
+        "longitude": -122.82
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 92,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "CALDERA CARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "WINDSOR HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "820 COTTAGE STREET NE",
+        "city": "SALEM",
+        "state": "OR",
+        "zip": "97301"
+      },
+      "contact": {
+        "phone": "5033991135",
+        "phone_formatted": "5033991135"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 44.9464,
+        "longitude": -123.03
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WINDSOR SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "EVAN TERRACE POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "421 SE EVANS STREET",
+        "city": "MCMINNVILLE",
+        "state": "OR",
+        "zip": "97128"
+      },
+      "contact": {
+        "phone": "5034723141",
+        "phone_formatted": "5034723141"
+      },
+      "location": {
+        "county": "Yamhill",
+        "latitude": 45.2109,
+        "longitude": -123.19
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 96,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EVAN TERRACE SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PORTLAND HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "12441 SE STARK STREET",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97233"
+      },
+      "contact": {
+        "phone": "5032557040",
+        "phone_formatted": "5032557040"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.519,
+        "longitude": -122.54
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PORTLAND SNF OPERATIONS LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE REHABILITATION OF JUNCTION CITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "530 BIRCH STREET",
+        "city": "JUNCTION CITY",
+        "state": "OR",
+        "zip": "97448"
+      },
+      "contact": {
+        "phone": "5419982395",
+        "phone_formatted": "5419982395"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 44.2188,
+        "longitude": -123.2
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 53,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "JUNCTION CITY REHABILITATION, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "REGENCY REDMOND REHABILITATION AND NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3025 SW RESERVOIR DRIVE",
+        "city": "REDMOND",
+        "state": "OR",
+        "zip": "97756"
+      },
+      "contact": {
+        "phone": "5415485066",
+        "phone_formatted": "5415485066"
+      },
+      "location": {
+        "county": "Deschutes",
+        "latitude": 44.2484,
+        "longitude": -121.2
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BD REDMOND IV LLC",
+        "chain_name": "REGENCY PACIFIC MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LAUREL HILL NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "859 NE 6TH STREET",
+        "city": "GRANTS PASS",
+        "state": "OR",
+        "zip": "97526"
+      },
+      "contact": {
+        "phone": "5414793700",
+        "phone_formatted": "5414793700"
+      },
+      "location": {
+        "county": "Josephine",
+        "latitude": 42.4458,
+        "longitude": -123.32
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 44,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BD GRANTS PASS II LLC",
+        "chain_name": "REGENCY PACIFIC MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE COURT AT KEIZER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5210 RIVER ROAD N.",
+        "city": "KEIZER",
+        "state": "OR",
+        "zip": "97303"
+      },
+      "contact": {
+        "phone": "5033933624",
+        "phone_formatted": "5033933624"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 45.0006,
+        "longitude": -123.03
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 69,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KEIZER CAMPUS OPERATIONS, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SALEM TRANSITIONAL CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3445 BOONE ROAD SE",
+        "city": "SALEM",
+        "state": "OR",
+        "zip": "97317"
+      },
+      "contact": {
+        "phone": "5035763000",
+        "phone_formatted": "5035763000"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 44.8828,
+        "longitude": -122.99
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SOUTH SALEM REHABILITATION LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FERNHILL REHABILITATION AND CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5737 NE 37TH AVENUE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97211"
+      },
+      "contact": {
+        "phone": "5032885967",
+        "phone_formatted": "5032885967"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5643,
+        "longitude": -122.63
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 63,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAPPHIRE AT FERNHILL LLC",
+        "chain_name": "SAPPHIRE HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE REHABILITATION OF COOS BAY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2625 KOOS BAY BLVD",
+        "city": "COOS BAY",
+        "state": "OR",
+        "zip": "97420"
+      },
+      "contact": {
+        "phone": "5412672161",
+        "phone_formatted": "5412672161"
+      },
+      "location": {
+        "county": "Coos",
+        "latitude": 43.386,
+        "longitude": -124.22
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 92,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COOS BAY REHABILITATION, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "KEIZER NURSING AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4062 ARLETA AVENUE NE",
+        "city": "KEIZER",
+        "state": "OR",
+        "zip": "97303"
+      },
+      "contact": {
+        "phone": "5033902271",
+        "phone_formatted": "5033902271"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 44.9844,
+        "longitude": -123.02
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 49,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KEIZER NURSING & REHAB CENTER LLC",
+        "chain_name": "VOLARE HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "NEHALEM VALLEY CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "280 ROWE STREET",
+        "city": "WHEELER",
+        "state": "OR",
+        "zip": "97147"
+      },
+      "contact": {
+        "phone": "5033685171",
+        "phone_formatted": "5033685171"
+      },
+      "location": {
+        "county": "Tillamook",
+        "latitude": 45.6859,
+        "longitude": -123.88
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WHEELER CARE CENTER LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RIVERCREST POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "148 HOOD STREET",
+        "city": "OREGON CITY",
+        "state": "OR",
+        "zip": "97045"
+      },
+      "contact": {
+        "phone": "5036564035",
+        "phone_formatted": "5036564035"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.3389,
+        "longitude": -122.6
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 53,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RIVERCREST SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ROGUE VALLEY MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1200 MIRA MAR AVENUE",
+        "city": "MEDFORD",
+        "state": "OR",
+        "zip": "97504"
+      },
+      "contact": {
+        "phone": "5418577777",
+        "phone_formatted": "5418577777"
+      },
+      "location": {
+        "county": "Jackson",
+        "latitude": 42.3067,
+        "longitude": -122.84
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 68,
+        "provider_type": "Medicare",
+        "legal_business_name": "ROGUE VALLEY MANOR",
+        "chain_name": "PACIFIC RETIREMENT SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVAMERE REHABILITATION OF HILLSBORO",
+      "type": "Nursing Home",
+      "address": {
+        "street": "650 SE OAK STREET",
+        "city": "HILLSBORO",
+        "state": "OR",
+        "zip": "97123"
+      },
+      "contact": {
+        "phone": "5036488588",
+        "phone_formatted": "5036488588"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 45.5188,
+        "longitude": -122.98
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 87,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PECKHAM-MILLER, INC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BEND TRANSITIONAL CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "900 NE 27TH STREET",
+        "city": "BEND",
+        "state": "OR",
+        "zip": "97701"
+      },
+      "contact": {
+        "phone": "5413820479",
+        "phone_formatted": "5413820479"
+      },
+      "location": {
+        "county": "Deschutes",
+        "latitude": 44.0592,
+        "longitude": -121.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "OHANA HARMONY HOUSE, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MYRTLE POINT REHABILITATION & CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "637 ASH STREET",
+        "city": "MYRTLE POINT",
+        "state": "OR",
+        "zip": "97458"
+      },
+      "contact": {
+        "phone": "5415722066",
+        "phone_formatted": "5415722066"
+      },
+      "location": {
+        "county": "Coos",
+        "latitude": 43.0656,
+        "longitude": -124.14
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 35,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAPPHIRE AT MYRTLE POINT, LLC",
+        "chain_name": "SAPPHIRE HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "OREGON VETERANS HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "700 VETERANS DRIVE",
+        "city": "THE DALLES",
+        "state": "OR",
+        "zip": "97058"
+      },
+      "contact": {
+        "phone": "5412967190",
+        "phone_formatted": "5412967190"
+      },
+      "location": {
+        "county": "Wasco",
+        "latitude": 45.6004,
+        "longitude": -121.13
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 151,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF OREGON DEPARTMENT OF VETERANS AFFAIRS",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "EVERGREEN POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8643 NE BEECH STREET",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97220"
+      },
+      "contact": {
+        "phone": "5032562151",
+        "phone_formatted": "5032562151"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5496,
+        "longitude": -122.57
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 55,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EVERGREEN SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "HOLLADAY PARK PLAZA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1300 NE 16TH AVENUE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97232"
+      },
+      "contact": {
+        "phone": "5032886671",
+        "phone_formatted": "5032886671"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.532,
+        "longitude": -122.65
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 51,
+        "provider_type": "Medicare",
+        "legal_business_name": "HOLLADAY PARK PLAZA INC",
+        "chain_name": "PACIFIC RETIREMENT SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS HOPE VILLAGE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1577 S IVY",
+        "city": "CANBY",
+        "state": "OR",
+        "zip": "97013"
+      },
+      "contact": {
+        "phone": "5032665541",
+        "phone_formatted": "5032665541"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.2494,
+        "longitude": -122.69
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES I, INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "REGENCY PRINEVILLE REHABILITATION & NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "950 NE ELM STREET",
+        "city": "PRINEVILLE",
+        "state": "OR",
+        "zip": "97754"
+      },
+      "contact": {
+        "phone": "5414477667",
+        "phone_formatted": "5414477667"
+      },
+      "location": {
+        "county": "Crook",
+        "latitude": 44.3088,
+        "longitude": -120.84
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 44,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BD PRINEVILLE II LLC",
+        "chain_name": "REGENCY PACIFIC MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "REGENCY HERMISTON NURSING & REHAB CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "970 W JUNIPER AVENUE",
+        "city": "HERMISTON",
+        "state": "OR",
+        "zip": "97838"
+      },
+      "contact": {
+        "phone": "5415678337",
+        "phone_formatted": "5415678337"
+      },
+      "location": {
+        "county": "Umatilla",
+        "latitude": 45.8373,
+        "longitude": -119.31
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "REGENCY HERMISTON NURSING & REHABILITATION CENTER, LLC",
+        "chain_name": "REGENCY PACIFIC MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "SECORA REHABILITATION OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10435 SE CORA STREET",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97266"
+      },
+      "contact": {
+        "phone": "5037601737",
+        "phone_formatted": "5037601737"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4907,
+        "longitude": -122.56
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 53,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PORTLAND OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS WILSONVILLE POST ACUTE REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "30900 SW PARKWAY AVENUE",
+        "city": "WILSONVILLE",
+        "state": "OR",
+        "zip": "97070"
+      },
+      "contact": {
+        "phone": "5036822840",
+        "phone_formatted": "5036822840"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.2967,
+        "longitude": -122.77
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES II INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GATEWAY CARE AND RETIREMENT",
+      "type": "Nursing Home",
+      "address": {
+        "street": "39 NE 102ND AVENUE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97220"
+      },
+      "contact": {
+        "phone": "5032522461",
+        "phone_formatted": "5032522461"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.523,
+        "longitude": -122.56
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 59,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAPPHIRE AT GATEWAY LLC",
+        "chain_name": "SAPPHIRE HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "VILLAGE AT HILLSIDE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "400 NW HILLSIDE PARK WAY",
+        "city": "MCMINNVILLE",
+        "state": "OR",
+        "zip": "97128"
+      },
+      "contact": {
+        "phone": "5034729534",
+        "phone_formatted": "5034729534"
+      },
+      "location": {
+        "county": "Yamhill",
+        "latitude": 45.2096,
+        "longitude": -123.23
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 20,
+        "provider_type": "Medicare",
+        "legal_business_name": "HG HILLSIDE, LLC",
+        "chain_name": "HUMANGOOD"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "STANLEY POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "12045 SE STANLEY AVENUE",
+        "city": "MILWAUKIE",
+        "state": "OR",
+        "zip": "97222"
+      },
+      "contact": {
+        "phone": "5036592323",
+        "phone_formatted": "5036592323"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.4369,
+        "longitude": -122.6
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 96,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STANLEY SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PEARL AT KRUSE WAY, THE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4550 CARMAN DRIVE",
+        "city": "LAKE OSWEGO",
+        "state": "OR",
+        "zip": "97035"
+      },
+      "contact": {
+        "phone": "5036756055",
+        "phone_formatted": "5036756055"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.4193,
+        "longitude": -122.72
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 74,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AVAMERE LAKE OSWEGO OPERATIONS INVESTORS, LLC",
+        "chain_name": "AVAMERE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TIGARD REHABILITATION AND CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "14145 SW 105TH AVENUE",
+        "city": "TIGARD",
+        "state": "OR",
+        "zip": "97224"
+      },
+      "contact": {
+        "phone": "5036391144",
+        "phone_formatted": "5036391144"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 45.4181,
+        "longitude": -122.79
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAPPHIRE AT TIGARD REHAB LLC",
+        "chain_name": "SAPPHIRE HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PIONEER NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1060 D STREET WEST",
+        "city": "VALE",
+        "state": "OR",
+        "zip": "97918"
+      },
+      "contact": {
+        "phone": "5414733131",
+        "phone_formatted": "5414733131"
+      },
+      "location": {
+        "county": "Malheur",
+        "latitude": 43.9798,
+        "longitude": -117.25
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 33,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PIONEER NURSING HOME HEALTH DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MIRABELLA PORTLAND",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3550 S BOND AVE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97239"
+      },
+      "contact": {
+        "phone": "5032454742",
+        "phone_formatted": "5032454742"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4976,
+        "longitude": -122.67
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 44,
+        "provider_type": "Medicare",
+        "legal_business_name": "MIRABELLA AT SOUTH WATERFRONT",
+        "chain_name": "PACIFIC RETIREMENT SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "RIVERS EDGE REHABILITATION AND CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "411 SE SHERIDAN ROAD",
+        "city": "SHERIDAN",
+        "state": "OR",
+        "zip": "97378"
+      },
+      "contact": {
+        "phone": "5038432204",
+        "phone_formatted": "5038432204"
+      },
+      "location": {
+        "county": "Yamhill",
+        "latitude": 45.0969,
+        "longitude": -123.39
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 51,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAPPHIRE AT RIVERS EDGE LLC",
+        "chain_name": "SAPPHIRE HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CASCADE MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "65 WEST 30TH AVENUE",
+        "city": "EUGENE",
+        "state": "OR",
+        "zip": "97405"
+      },
+      "contact": {
+        "phone": "5413425901",
+        "phone_formatted": "5413425901"
+      },
+      "location": {
+        "county": "Lane",
+        "latitude": 44.0242,
+        "longitude": -123.09
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 32,
+        "provider_type": "Medicare",
+        "legal_business_name": "CASCADE MANOR, INC.",
+        "chain_name": "PACIFIC RETIREMENT SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BELMONT CARE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "812 SE 48TH AVENUE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97215"
+      },
+      "contact": {
+        "phone": "5032362624",
+        "phone_formatted": "5032362624"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5171,
+        "longitude": -122.61
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 41,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAPPHIRE AT BELMONT, LLC",
+        "chain_name": "SAPPHIRE HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "ROSE LINN CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2330 DEBOK ROAD",
+        "city": "WEST LINN",
+        "state": "OR",
+        "zip": "97068"
+      },
+      "contact": {
+        "phone": "5036550474",
+        "phone_formatted": "5036550474"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.3536,
+        "longitude": -122.66
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 71,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WEST LINN CARE CENTER OPERATING COMPANY LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS TUALATIN POST ACUTE REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "19945 SW BOONES FERRY ROAD",
+        "city": "TUALATIN",
+        "state": "OR",
+        "zip": "97062"
+      },
+      "contact": {
+        "phone": "5036125400",
+        "phone_formatted": "5036125400"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.3757,
+        "longitude": -122.77
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 54,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARQUIS COMPANIES II INC",
+        "chain_name": "MARQUIS COMPANIES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "LEBANON VETERANS HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "600 NORTH 5TH STREET",
+        "city": "LEBANON",
+        "state": "OR",
+        "zip": "97355"
+      },
+      "contact": {
+        "phone": "5414977265",
+        "phone_formatted": "5414977265"
+      },
+      "location": {
+        "county": "Linn",
+        "latitude": 44.5518,
+        "longitude": -122.91
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 154,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF OREGON DEPARTMENT OF VETERANS AFFAIRS",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "REGENCY CARE OF CENTRAL OREGON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "119 SE WILSON AVENUE",
+        "city": "BEND",
+        "state": "OR",
+        "zip": "97702"
+      },
+      "contact": {
+        "phone": "5413827161",
+        "phone_formatted": "5413827161"
+      },
+      "location": {
+        "county": "Deschutes",
+        "latitude": 44.0443,
+        "longitude": -121.3
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 46,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BD BEND III LLC",
+        "chain_name": "REGENCY PACIFIC MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVALON CARE CENTER - SCAPPOOSE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "33910 E. COLUMBIA AVENUE",
+        "city": "SCAPPOOSE",
+        "state": "OR",
+        "zip": "97056"
+      },
+      "contact": {
+        "phone": "5035437131",
+        "phone_formatted": "5035437131"
+      },
+      "location": {
+        "county": "Columbia",
+        "latitude": 45.7567,
+        "longitude": -122.87
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AVALON CARE CENTER - SCAPPOOSE, LLC",
+        "chain_name": "AVALON HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "CEDAR CROSSINGS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6003 SE 136TH AVENUE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97236"
+      },
+      "contact": {
+        "phone": "9719781268",
+        "phone_formatted": "9719781268"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4788,
+        "longitude": -122.52
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 89,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAPPHIRE AT CEDAR CROSSINGS, LLC",
+        "chain_name": "SAPPHIRE HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "PROVIDENCE CHILD CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "830 NE 47TH AVENUE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97213"
+      },
+      "contact": {
+        "phone": "5032152400",
+        "phone_formatted": "5032152400"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5295,
+        "longitude": -122.61
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 58,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "MARQUIS AUTUMN HILLS MEMORY CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6630 SW BEAVERTON-HILLSDALE HWY",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97225"
+      },
+      "contact": {
+        "phone": "5032927874",
+        "phone_formatted": "5032927874"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 45.487,
+        "longitude": -122.74
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 39,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "FERNWOOD SUPPORTIVE LIVING AT MADRONA GROVE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "13505 SE RIVER ROAD",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97222"
+      },
+      "contact": {
+        "phone": "5036543171",
+        "phone_formatted": "5036543171"
+      },
+      "location": {
+        "county": "Clackamas",
+        "latitude": 45.4256,
+        "longitude": -122.65
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 16,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "BLUE MOUNTAIN CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "112 EAST FIFTH STREET",
+        "city": "PRAIRIE CITY",
+        "state": "OR",
+        "zip": "97869"
+      },
+      "contact": {
+        "phone": "5418203341",
+        "phone_formatted": "5418203341"
+      },
+      "location": {
+        "county": "Grant",
+        "latitude": 44.4619,
+        "longitude": -118.71
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 40,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "TIERRA ROSE CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4254 WEATHERS STREET NE",
+        "city": "SALEM",
+        "state": "OR",
+        "zip": "97301"
+      },
+      "contact": {
+        "phone": "5035854602",
+        "phone_formatted": "5035854602"
+      },
+      "location": {
+        "county": "Marion",
+        "latitude": 44.9458,
+        "longitude": -122.98
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 76,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Rose City Nursing and Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "11325 NE WEIDLER STREET",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97220"
+      },
+      "contact": {
+        "phone": "5032310276",
+        "phone_formatted": "5032310276"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.5337,
+        "longitude": -122.55
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 55,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "AVALON CARE CENTER - PORTLAND",
+      "type": "Nursing Home",
+      "address": {
+        "street": "12640 SE BUSH",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97236"
+      },
+      "contact": {
+        "phone": "5037616621",
+        "phone_formatted": "5037616621"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4945,
+        "longitude": -122.53
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 40,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "VILLAGE MANOR OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2060 NE 238TH DRIVE",
+        "city": "WOOD VILLAGE",
+        "state": "OR",
+        "zip": "97060"
+      },
+      "contact": {
+        "phone": "5034910553",
+        "phone_formatted": "5034910553"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.538,
+        "longitude": -122.42
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "GRACELEN CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10948 S.E. BOISE",
+        "city": "PORTLAND",
+        "state": "OR",
+        "zip": "97266"
+      },
+      "contact": {
+        "phone": "5037601727",
+        "phone_formatted": "5037601727"
+      },
+      "location": {
+        "county": "Multnomah",
+        "latitude": 45.4849,
+        "longitude": -122.56
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 80,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    }
+  ]
+}

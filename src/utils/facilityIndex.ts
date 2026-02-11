@@ -6,6 +6,11 @@ export type FacilityIndexItem = {
   address_line1?: string;
   postal_code?: string;
   phone?: string;
+  website_url?: string;
+  google_maps_url?: string;
+  verified_phone?: string;
+  business_status?: string;
+  online_presence_updated_at?: string;
 };
 
 export type CityIndexEntry = {

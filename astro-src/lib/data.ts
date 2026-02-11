@@ -10,6 +10,11 @@ type Facility = {
   address_line1?: string;
   postal_code?: string;
   phone?: string;
+  website_url?: string;
+  google_maps_url?: string;
+  verified_phone?: string;
+  business_status?: string;
+  online_presence_updated_at?: string;
   address?: string;
   zip?: string;
   license_number?: string;
@@ -18,12 +23,14 @@ type Facility = {
 
 const loadFacilities = (): Facility[] => {
   const root = process.cwd();
+  const websitesDir = path.resolve(root, 'all_facilities_with_websites_complete');
   const stateDir = path.resolve(root, 'all_51_states_facilities');
-  if (fs.existsSync(stateDir)) {
-    const files = fs.readdirSync(stateDir).filter((file) => file.endsWith('.json'));
+
+  const loadFromDir = (dirPath: string) => {
+    const files = fs.readdirSync(dirPath).filter((file) => file.endsWith('.json'));
     const merged: Facility[] = [];
     for (const file of files) {
-      const raw = fs.readFileSync(path.join(stateDir, file), 'utf-8');
+      const raw = fs.readFileSync(path.join(dirPath, file), 'utf-8');
       const data = JSON.parse(raw) as {
         state?: string;
         state_code?: string;
@@ -33,22 +40,43 @@ const loadFacilities = (): Facility[] => {
           address?: { street?: string; city?: string; state?: string; zip?: string };
           contact?: { phone?: string; phone_formatted?: string };
           location?: { county?: string };
+          online_presence?: {
+            website?: string;
+            google_maps_url?: string;
+            verified_phone?: string;
+            business_status?: string;
+            last_updated?: string;
+          };
         }>;
       };
       if (!Array.isArray(data.facilities)) continue;
       for (const facility of data.facilities) {
         const address = facility.address || {};
+        const online = facility.online_presence;
         merged.push({
           name: facility.name || 'Unknown Facility',
           city: address.city || '',
           state: address.state || data.state_code || '',
           address_line1: address.street || '',
           postal_code: address.zip || '',
-          phone: facility.contact?.phone_formatted || facility.contact?.phone || ''
+          phone: facility.contact?.phone_formatted || facility.contact?.phone || '',
+          website_url: online?.website,
+          google_maps_url: online?.google_maps_url,
+          verified_phone: online?.verified_phone,
+          business_status: online?.business_status,
+          online_presence_updated_at: online?.last_updated
         });
       }
     }
     return merged;
+  };
+
+  if (fs.existsSync(websitesDir)) {
+    return loadFromDir(websitesDir);
+  }
+
+  if (fs.existsSync(stateDir)) {
+    return loadFromDir(stateDir);
   }
 
   const facilitiesPath = path.resolve(root, 'src/data/seeds/assisted_living_facilities_national.json');
@@ -171,6 +199,11 @@ export const getFacilityIndex = () => {
     state: f.state,
     address_line1: f.address_line1,
     postal_code: f.postal_code,
-    phone: f.phone
+    phone: f.phone,
+    website_url: f.website_url,
+    google_maps_url: f.google_maps_url,
+    verified_phone: f.verified_phone,
+    business_status: f.business_status,
+    online_presence_updated_at: f.online_presence_updated_at
   }));
 };

@@ -1,0 +1,1444 @@
+{
+  "state": "Wyoming",
+  "state_code": "WY",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 36,
+    "total_nursing_homes": 36,
+    "total_assisted_living": 0,
+    "total_certified_beds": 2918,
+    "counties_served": 22,
+    "average_beds_per_facility": 81.1
+  },
+  "quality_distribution": {
+    "five_star": 6,
+    "four_star": 8,
+    "three_star": 2,
+    "two_star": 11,
+    "one_star": 6
+  },
+  "counties": {
+    "Laramie": {
+      "facility_count": 3,
+      "total_beds": 411
+    },
+    "Sublette": {
+      "facility_count": 1,
+      "total_beds": 50
+    },
+    "Big Horn": {
+      "facility_count": 2,
+      "total_beds": 175
+    },
+    "Campbell": {
+      "facility_count": 1,
+      "total_beds": 160
+    },
+    "Weston": {
+      "facility_count": 1,
+      "total_beds": 58
+    },
+    "Natrona": {
+      "facility_count": 3,
+      "total_beds": 432
+    },
+    "Sheridan": {
+      "facility_count": 3,
+      "total_beds": 278
+    },
+    "Park": {
+      "facility_count": 2,
+      "total_beds": 194
+    },
+    "Crook": {
+      "facility_count": 1,
+      "total_beds": 32
+    },
+    "Fremont": {
+      "facility_count": 4,
+      "total_beds": 206
+    },
+    "Sweetwater": {
+      "facility_count": 2,
+      "total_beds": 141
+    },
+    "Carbon": {
+      "facility_count": 1,
+      "total_beds": 62
+    },
+    "Uinta": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Converse": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Albany": {
+      "facility_count": 1,
+      "total_beds": 105
+    },
+    "Teton": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Washakie": {
+      "facility_count": 1,
+      "total_beds": 87
+    },
+    "Hot Springs": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Platte": {
+      "facility_count": 1,
+      "total_beds": 50
+    },
+    "Goshen": {
+      "facility_count": 1,
+      "total_beds": 103
+    },
+    "Lincoln": {
+      "facility_count": 2,
+      "total_beds": 48
+    },
+    "Johnson": {
+      "facility_count": 2,
+      "total_beds": 86
+    }
+  },
+  "facilities": [
+    {
+      "name": "Granite SNF Operations LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3128 Boxelder Dr",
+        "city": "Cheyenne",
+        "state": "WY",
+        "zip": "82001"
+      },
+      "contact": {
+        "phone": "3076347901",
+        "phone_formatted": "3076347901"
+      },
+      "location": {
+        "county": "Laramie",
+        "latitude": 41.1391,
+        "longitude": -104.78
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 146,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GRANITE SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Sublette County Health",
+      "type": "Nursing Home",
+      "address": {
+        "street": "333 N Bridger Ave",
+        "city": "Pinedale",
+        "state": "WY",
+        "zip": "82941"
+      },
+      "contact": {
+        "phone": "3073674161",
+        "phone_formatted": "3073674161"
+      },
+      "location": {
+        "county": "Sublette",
+        "latitude": 42.8697,
+        "longitude": -109.86
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUBLETTE COUNTY HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Wyoming Retirement Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "890 US HWY 20 SOUTH",
+        "city": "Basin",
+        "state": "WY",
+        "zip": "82410"
+      },
+      "contact": {
+        "phone": "3075682431",
+        "phone_formatted": "3075682431"
+      },
+      "location": {
+        "county": "Big Horn",
+        "latitude": 44.3602,
+        "longitude": -108.04
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF WYOMING",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "The Legacy Living and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1000 S Douglas Way",
+        "city": "Gillette",
+        "state": "WY",
+        "zip": "82716"
+      },
+      "contact": {
+        "phone": "3076887000",
+        "phone_formatted": "3076887000"
+      },
+      "location": {
+        "county": "Campbell",
+        "latitude": 44.2834,
+        "longitude": -105.49
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 160,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CAMPBELL COUNTY HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Weston County Health Services",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1124 Washington Blvd",
+        "city": "Newcastle",
+        "state": "WY",
+        "zip": "82701"
+      },
+      "contact": {
+        "phone": "3077462793",
+        "phone_formatted": "3077462793"
+      },
+      "location": {
+        "county": "Weston",
+        "latitude": 43.8488,
+        "longitude": -104.19
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WESTON COUNTY HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Casper Mountain Rehabilitation and Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4305 S Poplar",
+        "city": "Casper",
+        "state": "WY",
+        "zip": "82601"
+      },
+      "contact": {
+        "phone": "3072372561",
+        "phone_formatted": "3072372561"
+      },
+      "location": {
+        "county": "Natrona",
+        "latitude": 42.8084,
+        "longitude": -106.34
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CASPER OPCO LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Polaris Rehabilitation and Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2700 E 12th Street",
+        "city": "Cheyenne",
+        "state": "WY",
+        "zip": "82001"
+      },
+      "contact": {
+        "phone": "3076347986",
+        "phone_formatted": "3076347986"
+      },
+      "location": {
+        "county": "Laramie",
+        "latitude": 41.1366,
+        "longitude": -104.78
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH BIG HORN HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Big Horn Rehabilitation and Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1851 Big Horn Ave",
+        "city": "Sheridan",
+        "state": "WY",
+        "zip": "82801"
+      },
+      "contact": {
+        "phone": "3076744416",
+        "phone_formatted": "3076744416"
+      },
+      "location": {
+        "county": "Sheridan",
+        "latitude": 44.7774,
+        "longitude": -106.96
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 128,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH BIG HORN HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Cody Regional Health Long Term Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "707 Sheridan Ave",
+        "city": "Cody",
+        "state": "WY",
+        "zip": "82414"
+      },
+      "contact": {
+        "phone": "3075782434",
+        "phone_formatted": "3075782434"
+      },
+      "location": {
+        "county": "Park",
+        "latitude": 44.526,
+        "longitude": -109.07
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 94,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WEST PARK HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Crook County Medical Services District Long Term C",
+      "type": "Nursing Home",
+      "address": {
+        "street": "713 Oak St",
+        "city": "Sundance",
+        "state": "WY",
+        "zip": "82729"
+      },
+      "contact": {
+        "phone": "3072833501",
+        "phone_formatted": "3072833501"
+      },
+      "location": {
+        "county": "Crook",
+        "latitude": 44.4075,
+        "longitude": -104.38
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 32,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CROOK COUNTY MEDICAL SERVICES DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "New Horizons Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1111 Lane 12",
+        "city": "Lovell",
+        "state": "WY",
+        "zip": "82431"
+      },
+      "contact": {
+        "phone": "3075485200",
+        "phone_formatted": "3075485200"
+      },
+      "location": {
+        "county": "Big Horn",
+        "latitude": 44.8258,
+        "longitude": -108.39
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 85,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH BIG HORN HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Wind River SNF Operations LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1002 Forest Dr",
+        "city": "Riverton",
+        "state": "WY",
+        "zip": "82501"
+      },
+      "contact": {
+        "phone": "3078569471",
+        "phone_formatted": "3078569471"
+      },
+      "location": {
+        "county": "Fremont",
+        "latitude": 43.0333,
+        "longitude": -108.38
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 81,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WIND RIVER SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Life Care Center Of Cheyenne",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1330 Prairie Ave",
+        "city": "Cheyenne",
+        "state": "WY",
+        "zip": "82009"
+      },
+      "contact": {
+        "phone": "3077788997",
+        "phone_formatted": "3077788997"
+      },
+      "location": {
+        "county": "Laramie",
+        "latitude": 41.1641,
+        "longitude": -104.81
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 160,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CHEYENNE OPERATIONS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Mission at Castle Rock",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1445 Uinta Dr",
+        "city": "Green River",
+        "state": "WY",
+        "zip": "82935"
+      },
+      "contact": {
+        "phone": "3078724600",
+        "phone_formatted": "3078724600"
+      },
+      "location": {
+        "county": "Sweetwater",
+        "latitude": 41.5085,
+        "longitude": -109.48
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 59,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MISSION HEALTH SERVICES",
+        "chain_name": "MISSION HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Westward Heights Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "150 Caring Way",
+        "city": "LANDER",
+        "state": "WY",
+        "zip": "82520"
+      },
+      "contact": {
+        "phone": "3073325560",
+        "phone_formatted": "3073325560"
+      },
+      "location": {
+        "county": "Fremont",
+        "latitude": 42.8281,
+        "longitude": -108.72
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WESTWARD HEIGHTS CORP",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Rawlins SNF Operations LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "542 16th St",
+        "city": "Rawlins",
+        "state": "WY",
+        "zip": "82301"
+      },
+      "contact": {
+        "phone": "3073242759",
+        "phone_formatted": "3073242759"
+      },
+      "location": {
+        "county": "Carbon",
+        "latitude": 41.7893,
+        "longitude": -107.25
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RAWLINS SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Rocky Mountain Care - Evanston",
+      "type": "Nursing Home",
+      "address": {
+        "street": "475 Yellow Creek Rd",
+        "city": "EVANSTON",
+        "state": "WY",
+        "zip": "82930"
+      },
+      "contact": {
+        "phone": "3077890726",
+        "phone_formatted": "3077890726"
+      },
+      "location": {
+        "county": "Uinta",
+        "latitude": 41.2331,
+        "longitude": -110.99
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH BIG HORN HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Westview Health Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1990 West Loucks St",
+        "city": "Sheridan",
+        "state": "WY",
+        "zip": "82801"
+      },
+      "contact": {
+        "phone": "3076729789",
+        "phone_formatted": "3076729789"
+      },
+      "location": {
+        "county": "Sheridan",
+        "latitude": 44.7924,
+        "longitude": -106.98
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WESTVIEW OPERATIONS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Douglas Care Center LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1108 Birch Street",
+        "city": "Douglas",
+        "state": "WY",
+        "zip": "82633"
+      },
+      "contact": {
+        "phone": "3073583397",
+        "phone_formatted": "3073583397"
+      },
+      "location": {
+        "county": "Converse",
+        "latitude": 42.7526,
+        "longitude": -105.37
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DOUGLAS CARE CENTER, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Shepherd of the Valley SNF Operations LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "60 Magnolia St",
+        "city": "Casper",
+        "state": "WY",
+        "zip": "82604"
+      },
+      "contact": {
+        "phone": "3072349381",
+        "phone_formatted": "3072349381"
+      },
+      "location": {
+        "county": "Natrona",
+        "latitude": 42.8204,
+        "longitude": -106.4
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 192,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SHEPHERD OF THE VALLEY SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Cottonwood Health and Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "503 S 18th St",
+        "city": "Laramie",
+        "state": "WY",
+        "zip": "82070"
+      },
+      "contact": {
+        "phone": "3077423728",
+        "phone_formatted": "3077423728"
+      },
+      "location": {
+        "county": "Albany",
+        "latitude": 41.3083,
+        "longitude": -105.57
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SNH WY TENANT LLC",
+        "chain_name": "STELLAR SENIOR LIVING"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Powell Valley Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "777 Avenue H",
+        "city": "Powell",
+        "state": "WY",
+        "zip": "82435"
+      },
+      "contact": {
+        "phone": "3077541107",
+        "phone_formatted": "3077541107"
+      },
+      "location": {
+        "county": "Park",
+        "latitude": 44.7566,
+        "longitude": -108.77
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "St John's Health Sage Living",
+      "type": "Nursing Home",
+      "address": {
+        "street": "625 East Broadway, Building b",
+        "city": "Jackson",
+        "state": "WY",
+        "zip": "83001"
+      },
+      "contact": {
+        "phone": "3077397661",
+        "phone_formatted": "3077397661"
+      },
+      "location": {
+        "county": "Teton",
+        "latitude": 43.472,
+        "longitude": -110.77
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TETON COUNTY HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Worland Healthcare and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1901 Howell Ave",
+        "city": "Worland",
+        "state": "WY",
+        "zip": "82401"
+      },
+      "contact": {
+        "phone": "3073474285",
+        "phone_formatted": "3073474285"
+      },
+      "location": {
+        "county": "Washakie",
+        "latitude": 44.0117,
+        "longitude": -107.94
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 87,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SNH WY TENANT LLC",
+        "chain_name": "STELLAR SENIOR LIVING"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Life Care Center of Casper",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4041 South Poplar St",
+        "city": "Casper",
+        "state": "WY",
+        "zip": "82601"
+      },
+      "contact": {
+        "phone": "3072660000",
+        "phone_formatted": "3072660000"
+      },
+      "location": {
+        "county": "Natrona",
+        "latitude": 42.8102,
+        "longitude": -106.34
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CASPER OPERATIONS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Morning Star Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4 North Fork Rd",
+        "city": "Fort Washakie",
+        "state": "WY",
+        "zip": "82514"
+      },
+      "contact": {
+        "phone": "3073326902",
+        "phone_formatted": "3073326902"
+      },
+      "location": {
+        "county": "Fremont",
+        "latitude": 43.0038,
+        "longitude": -108.88
+      },
+      "facility_details": {
+        "ownership_type": "Government - Federal",
+        "certified_beds": 45,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MORNING STAR CARE CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "THERMOPOLIS REHABILITATION AND WELLNESS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1210 CANYON HILLS RD",
+        "city": "THERMOPOLIS",
+        "state": "WY",
+        "zip": "82443"
+      },
+      "contact": {
+        "phone": "3078645591",
+        "phone_formatted": "3078645591"
+      },
+      "location": {
+        "county": "Hot Springs",
+        "latitude": 43.637,
+        "longitude": -108.22
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THERMOPOLIS SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Platte County Legacy Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 19th St",
+        "city": "Wheatland",
+        "state": "WY",
+        "zip": "82201"
+      },
+      "contact": {
+        "phone": "3073227351",
+        "phone_formatted": "3073227351"
+      },
+      "location": {
+        "county": "Platte",
+        "latitude": 42.0529,
+        "longitude": -104.97
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PLATTE COUNTY HOSPITAL DISTRICT BOARD",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Green House Living for Sheridan",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2311 Shirley Cove",
+        "city": "Sheridan",
+        "state": "WY",
+        "zip": "82801"
+      },
+      "contact": {
+        "phone": "3076720600",
+        "phone_formatted": "3076720600"
+      },
+      "location": {
+        "county": "Sheridan",
+        "latitude": 44.7865,
+        "longitude": -106.97
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 48,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ALTERNATIVE ELDER LIVING INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Sage View SNF Operations LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1325 Sage St",
+        "city": "Rock Springs",
+        "state": "WY",
+        "zip": "82901"
+      },
+      "contact": {
+        "phone": "3073623780",
+        "phone_formatted": "3073623780"
+      },
+      "location": {
+        "county": "Sweetwater",
+        "latitude": 41.5736,
+        "longitude": -109.21
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 82,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAGE VIEW SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Goshen Healthcare Community",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2009 Laramie St",
+        "city": "Torrington",
+        "state": "WY",
+        "zip": "82240"
+      },
+      "contact": {
+        "phone": "3075324038",
+        "phone_formatted": "3075324038"
+      },
+      "location": {
+        "county": "Goshen",
+        "latitude": 42.0843,
+        "longitude": -104.19
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 103,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VETRAS TORRINGTON SNF LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Mountain View Skilled Nursing Community at WLRC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8204 Wyoming State Highway 789",
+        "city": "Lander",
+        "state": "WY",
+        "zip": "82520"
+      },
+      "contact": {
+        "phone": "3073356700",
+        "phone_formatted": "3073356700"
+      },
+      "location": {
+        "county": "Fremont",
+        "latitude": 42.8415,
+        "longitude": -108.73
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 20,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF WYOMING",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Star Valley Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "130 Hospital Lane",
+        "city": "Afton",
+        "state": "WY",
+        "zip": "83110"
+      },
+      "contact": {
+        "phone": "3078855900",
+        "phone_formatted": "3078855900"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 42.7162,
+        "longitude": -110.93
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 24,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH LINCOLN COUNTY HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Wyoming Veterans' Skilled Nursing Facility",
+      "type": "Nursing Home",
+      "address": {
+        "street": "700 Veteran's Lane",
+        "city": "Buffalo",
+        "state": "WY",
+        "zip": "82834"
+      },
+      "contact": {
+        "phone": "3076845511",
+        "phone_formatted": "3076845511"
+      },
+      "location": {
+        "county": "Johnson",
+        "latitude": 44.3351,
+        "longitude": -106.74
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF WYOMING",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "Amie Holt Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "497 W Lott",
+        "city": "Buffalo",
+        "state": "WY",
+        "zip": "82834"
+      },
+      "contact": {
+        "phone": "3076845521",
+        "phone_formatted": "3076845521"
+      },
+      "location": {
+        "county": "Johnson",
+        "latitude": 44.3497,
+        "longitude": -106.71
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 50,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    },
+    {
+      "name": "South Lincoln Nursing Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "711 Onyx St",
+        "city": "Kemmerer",
+        "state": "WY",
+        "zip": "83101"
+      },
+      "contact": {
+        "phone": "3078775717",
+        "phone_formatted": "3078775717"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 41.7895,
+        "longitude": -110.54
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 24,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      }
+    }
+  ]
+}
