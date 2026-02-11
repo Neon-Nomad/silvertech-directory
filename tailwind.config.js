@@ -165,6 +165,45 @@ export default {
                     900: '#553c22',
                 },
             },
+            typography: {
+                DEFAULT: {
+                    css: {
+                        fontFamily: 'Manrope, "Source Sans 3", sans-serif',
+                        color: '#475569',
+                        maxWidth: 'none',
+                        'h1, h2, h3, h4': {
+                            fontFamily: '"Cormorant Garamond", serif',
+                            color: '#2D2D2D',
+                            fontWeight: '700',
+                        },
+                        a: {
+                            color: '#B8860B',
+                            textDecoration: 'none',
+                            '&:hover': {
+                                textDecoration: 'underline',
+                            },
+                        },
+                        strong: {
+                            color: '#2D2D2D',
+                        },
+                        'thead th': {
+                            color: '#2D2D2D',
+                            fontWeight: '600',
+                        },
+                        'tbody td': {
+                            verticalAlign: 'top',
+                        },
+                        table: {
+                            fontSize: '0.875rem',
+                        },
+                        blockquote: {
+                            borderLeftColor: '#B8860B',
+                            fontStyle: 'normal',
+                            color: '#475569',
+                        },
+                    },
+                },
+            },
             backgroundImage: {
                 'gradient-primary': 'linear-gradient(135deg, #b88749 0%, #d4ae7a 100%)',
                 'gradient-secondary': 'linear-gradient(135deg, #3f8f87 0%, #8ac5be 100%)',
@@ -173,5 +212,7 @@ export default {
             }
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/typography'),
+    ],
 }

@@ -408,18 +408,26 @@ export const StateRegulatoryHub: React.FC = () => {
     loadData();
   }, [stateSlug]);
 
-  // Key facts derived from contacts
+  // Key facts derived from contacts + content fallbacks
   const keyFacts = useMemo(() => {
-    if (!data?.contacts_json) return [];
-    const facts = [];
-    if (data.contacts_json.licensing?.name)
-      facts.push({ label: 'Licensing Body', value: data.contacts_json.licensing.name, icon: Building2 });
-    if (data.contacts_json.ombudsman?.name)
-      facts.push({ label: 'Ombudsman Program', value: data.contacts_json.ombudsman.name, icon: Heart });
-    if (data.contacts_json.medicaid?.name)
-      facts.push({ label: 'Medicaid Agency', value: data.contacts_json.medicaid.name, icon: ShieldCheck });
-    if (data.contacts_json.veterans?.name)
-      facts.push({ label: 'Veterans Services', value: data.contacts_json.veterans.name, icon: BadgeCheck });
+    if (!data) return [];
+    const facts: { label: string; value: string; icon: typeof Building2 }[] = [];
+    const c = data.contacts_json;
+    if (c?.licensing?.name)
+      facts.push({ label: 'Licensing Body', value: c.licensing.name, icon: Building2 });
+    if (c?.ombudsman?.name)
+      facts.push({ label: 'Ombudsman Program', value: c.ombudsman.name, icon: Heart });
+    if (c?.medicaid?.name)
+      facts.push({ label: 'Medicaid Agency', value: c.medicaid.name, icon: ShieldCheck });
+    if (c?.veterans?.name)
+      facts.push({ label: 'Veterans Services', value: c.veterans.name, icon: BadgeCheck });
+    // Fallback: derive facts from content when contacts are empty
+    if (facts.length === 0) {
+      if (data.licensing_content) facts.push({ label: 'Licensing', value: 'State licensing guide available', icon: Building2 });
+      if (data.ombudsman_content) facts.push({ label: 'Ombudsman', value: 'Advocacy program guide available', icon: Heart });
+      if (data.medicaid_content) facts.push({ label: 'Medicaid', value: 'Waiver program guide available', icon: ShieldCheck });
+      if (data.veterans_content) facts.push({ label: 'Veterans', value: 'Benefits guide available', icon: BadgeCheck });
+    }
     return facts;
   }, [data]);
 
@@ -647,6 +655,52 @@ export const StateRegulatoryHub: React.FC = () => {
           </div>
         </div>
 
+        {/* ── Topic Guides Grid ── */}
+        <section className="max-w-[1200px] mx-auto px-6 py-12 border-b border-slate-200">
+          <div className="flex items-center justify-between flex-wrap gap-4 mb-8">
+            <div>
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">
+                In-Depth Guides
+              </span>
+              <h2 className="text-2xl font-serif font-bold text-charcoal">
+                Explore {stateDef.name} Regulations by Topic
+              </h2>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {SECTIONS.filter((s) => s.linkType === 'page').map((section) => {
+              const href = section.linkUrl
+                ? `/states/${stateDef.slug}/${section.linkUrl}`
+                : `/states/${stateDef.slug}/regulations/${section.topicSlug}`;
+              return (
+                <Link
+                  key={section.id}
+                  to={href}
+                  className="group bg-white border border-slate-200 rounded-2xl p-6 hover:border-gold hover:shadow-md transition-all"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-warm-gray rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-gold/10 transition-colors">
+                      <section.icon className="w-5 h-5 text-slate-400 group-hover:text-gold transition-colors" />
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="font-semibold text-charcoal group-hover:text-gold transition-colors mb-1">
+                        {section.title}
+                      </h3>
+                      <p className="text-xs text-slate-500 leading-relaxed">
+                        {section.description}
+                      </p>
+                      <span className="inline-flex items-center gap-1 mt-3 text-xs font-semibold text-slate-400 group-hover:text-gold transition-colors uppercase tracking-widest">
+                        Read guide
+                        <ArrowRight className="w-3 h-3" />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+
         {/* ── Two-Column Layout ── */}
         <div className="max-w-[1200px] mx-auto px-6 py-12">
           <div className="flex gap-12">
@@ -713,6 +767,18 @@ export const StateRegulatoryHub: React.FC = () => {
 
             {/* Main Content */}
             <div className="flex-1 min-w-0 space-y-16">
+              <div>
+                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">
+                  Financial & Benefits Programs
+                </span>
+                <h2 className="text-2xl font-serif font-bold text-charcoal">
+                  Paying for Care in {stateDef.name}
+                </h2>
+                <p className="text-slate-600 text-sm mt-2 max-w-2xl">
+                  Detailed guides on Medicaid waivers, veterans benefits, and financial assistance programs
+                  available for senior living in {stateDef.name}.
+                </p>
+              </div>
               {/* Regulation Sections */}
               {SECTIONS.filter((s) => s.contentKey !== null && s.linkType !== 'page').map((section) => {
                 const cards = parseRegulationCards(data[section.contentKey!]);
@@ -803,6 +869,12 @@ export const StateRegulatoryHub: React.FC = () => {
 
               {/* ── Verified Contacts Section ── */}
               {data.contacts_json && (
+                data.contacts_json.licensing?.name ||
+                data.contacts_json.ombudsman?.name ||
+                data.contacts_json.medicaid?.name ||
+                data.contacts_json.veterans?.name ||
+                data.contacts_json.elderAbuse?.name
+              ) && (
                 <section id="contacts" className="scroll-mt-32">
                   <div className="bg-[#4A4A4A] rounded-2xl p-8 md:p-10 text-white">
                     <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">

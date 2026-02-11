@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronRight, Home } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 export interface BreadcrumbItem {
   label: string;
@@ -13,31 +13,23 @@ interface BreadcrumbsProps {
 
 export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
   return (
-    <nav className="flex" aria-label="Breadcrumb">
-      <ol className="inline-flex items-center space-x-1 md:space-x-3">
-        <li className="inline-flex items-center">
-          <Link to="/" className="inline-flex items-center text-sm font-medium text-slate-700 hover:text-primary-600">
-            <Home className="w-4 h-4 mr-2" />
-            Home
-          </Link>
-        </li>
+    <nav className="flex mb-4" aria-label="Breadcrumb">
+      <ol className="inline-flex items-center gap-1">
         {items.map((item, index) => (
-          <li key={index}>
-            <div className="flex items-center">
-              <ChevronRight className="w-4 h-4 text-slate-400" />
-              {item.path ? (
-                <Link
-                  to={item.path}
-                  className="ml-1 text-sm font-medium text-slate-700 hover:text-primary-600 md:ml-2"
-                >
-                  {item.label}
-                </Link>
-              ) : (
-                <span className="ml-1 text-sm font-medium text-slate-500 md:ml-2">
-                  {item.label}
-                </span>
-              )}
-            </div>
+          <li key={index} className="inline-flex items-center">
+            {index > 0 && <ChevronRight className="w-3.5 h-3.5 text-slate-300 mx-1" />}
+            {item.path && index < items.length - 1 ? (
+              <Link
+                to={item.path}
+                className="text-sm text-slate-500 hover:text-gold transition-colors"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <span className="text-sm font-medium text-charcoal">
+                {item.label}
+              </span>
+            )}
           </li>
         ))}
       </ol>
