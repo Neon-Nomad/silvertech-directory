@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { Elements } from '@stripe/react-stripe-js';
 import { stripePromise } from '@/src/lib/stripe';
@@ -39,6 +39,7 @@ import { StateRulesPage } from '@/features/locations/hub/StateRulesPage';
 import { StateOmbudsmanPage } from '@/features/locations/hub/StateOmbudsmanPage';
 import { StateVeteransPage } from '@/features/locations/hub/StateVeteransPage';
 import { RegulatoryLibrary } from '@/features/regulatory/RegulatoryLibrary';
+import { StateRegulationTopicPage } from '@/features/regulatory/StateRegulationTopicPage';
 import { AboutPage } from '@/features/public/company/AboutPage';
 import { ContactPage } from '@/features/public/company/ContactPage';
 import { EditorialPolicyPage } from '@/features/public/company/EditorialPolicyPage';
@@ -153,7 +154,9 @@ function App() {
                     {/* State Authority Hub */}
                     <Route path="/states" element={<StatesDirectoryPage />} />
                     <Route path="/states/:state" element={<StateHubHome />} />
-                    <Route path="/states/:state/regulatory" element={<StateRegulatoryHub />} />
+                    <Route path="/states/:state/regulatory" element={<Navigate to="regulations" replace />} />
+                    <Route path="/states/:state/regulations" element={<StateRegulatoryHub />} />
+                    <Route path="/states/:state/regulations/:topic" element={<StateRegulationTopicPage />} />
                     <Route path="/states/:state/medicaid" element={<StateMedicaidPage />} />
                     <Route path="/states/:state/rules" element={<StateRulesPage />} />
                     <Route path="/states/:state/ombudsman" element={<StateOmbudsmanPage />} />

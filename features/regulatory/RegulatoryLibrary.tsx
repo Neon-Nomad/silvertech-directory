@@ -86,7 +86,7 @@ export const RegulatoryLibrary: React.FC = () => {
                     {groupedStates[letter].map((state) => (
                       <Link
                         key={state.slug}
-                        to={`/states/${state.slug}/regulatory`}
+                        to={`/states/${state.slug}/regulations`}
                         className="bg-white border border-slate-200 rounded-xl p-5 hover:border-gold hover:shadow-md transition-all group"
                       >
                         <div className="flex items-start gap-4">

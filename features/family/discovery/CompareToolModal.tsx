@@ -2,6 +2,7 @@
 import { X, MapPin, Phone, CheckCircle, ArrowRight, Info } from 'lucide-react';
 import { supabase } from '@/src/lib/supabase';
 import { Button } from '@/components/ui/Button';
+import { COMPARE_TOPICS, CompareQuestion } from '@/src/data/compareQuestions';
 
 interface CompareToolModalProps {
   isOpen: boolean;
@@ -44,8 +45,66 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
   const [selected, setSelected] = useState<any | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [activeTopic, setActiveTopic] = useState(COMPARE_TOPICS[0]?.id || 'licensing');
+  const [answers, setAnswers] = useState<Record<string, Record<string, string>>>({});
+  const [printMode, setPrintMode] = useState<'filled' | 'blank'>('filled');
 
   const baseCareTypes = useMemo(() => getCareTypes(baseFacility), [baseFacility]);
+  const storageKey = useMemo(() => 'silvertech_compare_answers', []);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    try {
+      const raw = localStorage.getItem(storageKey);
+      if (raw) setAnswers(JSON.parse(raw));
+    } catch (e) {
+      console.warn('Failed to load compare answers', e);
+    }
+  }, [isOpen, storageKey]);
+
+  useEffect(() => {
+    const handleAfterPrint = () => setPrintMode('filled');
+    const handleVisibility = () => {
+      if (document.visibilityState === 'visible') {
+        setPrintMode('filled');
+      }
+    };
+    window.addEventListener('afterprint', handleAfterPrint);
+    document.addEventListener('visibilitychange', handleVisibility);
+    return () => {
+      window.removeEventListener('afterprint', handleAfterPrint);
+      document.removeEventListener('visibilitychange', handleVisibility);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(answers));
+    } catch (e) {
+      console.warn('Failed to save compare answers', e);
+    }
+  }, [answers, isOpen, storageKey]);
+
+  const setAnswer = (facilityId: string, questionId: string, value: string) => {
+    setAnswers((prev) => ({
+      ...prev,
+      [facilityId]: {
+        ...(prev[facilityId] || {}),
+        [questionId]: value,
+      },
+    }));
+  };
+
+  const getAnswer = (facilityId: string | undefined, questionId: string) => {
+    if (!facilityId) return '';
+    return answers[facilityId]?.[questionId] || '';
+  };
+
+  const getAnsweredCount = (facilityId: string | undefined, questions: CompareQuestion[]) => {
+    if (!facilityId) return 0;
+    return questions.filter((q) => (answers[facilityId]?.[q.id] || '').trim().length > 0).length;
+  };
 
   useEffect(() => {
     if (!isOpen || !baseFacility) return;
@@ -128,10 +187,10 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
 
   return (
     <div className="fixed inset-0 z-[70]">
-      <div className="absolute inset-0 bg-slate-900/70" onClick={onClose} />
+      <div className="absolute inset-0 bg-slate-900/70 no-print" onClick={onClose} />
 
       <div className="relative max-w-6xl mx-auto mt-12 mb-10 bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden">
-        <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-[#f8f4ef]">
+        <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-[#f8f4ef] no-print">
           <div>
             <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Research Tool • SilverTech</p>
             <h2 className="text-2xl font-serif font-semibold text-slate-900">Compare Similar Homes</h2>
@@ -141,8 +200,8 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
           </button>
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-6 px-6 py-6">
-          <section className="lg:col-span-8 space-y-6">
+        <div className="grid lg:grid-cols-12 gap-6 px-6 py-6 no-print">
+          <section className="lg:col-span-7 space-y-6">
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
                 <span className="text-[10px] uppercase tracking-[0.3em] text-primary-600 font-semibold">Your Selection</span>
@@ -249,7 +308,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
             </div>
           </section>
 
-          <section className="lg:col-span-4">
+          <section className="lg:col-span-5 space-y-6">
             <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-semibold text-slate-900">Top comparable homes</h3>
@@ -309,9 +368,212 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
                 </div>
               </div>
             </div>
+
+            <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
+              <div className="flex items-center justify-between mb-4">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Tour Notes & Answers</p>
+                  <h3 className="text-lg font-semibold text-slate-900">Use these questions to compare</h3>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Button
+                    variant="outline"
+                    className="border-slate-300 hover:bg-slate-100"
+                    onClick={() => {
+                      setPrintMode('filled');
+                      setTimeout(() => window.print(), 50);
+                      setTimeout(() => {
+                        setPrintMode('filled');
+                      }, 23000);
+                    }}
+                  >
+                    Print checklist
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="border-slate-300 hover:bg-slate-100"
+                    onClick={() => {
+                      setPrintMode('blank');
+                      setTimeout(() => window.print(), 50);
+                      setTimeout(() => {
+                        setPrintMode('filled');
+                      }, 23000);
+                    }}
+                  >
+                    Print blank checklist
+                  </Button>
+                </div>
+              </div>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {COMPARE_TOPICS.map((topic) => {
+                  const total = topic.questions.length;
+                  const baseAnswered = getAnsweredCount(baseFacility?.id, topic.questions);
+                  const selectedAnswered = getAnsweredCount(selected?.id, topic.questions);
+                  const label = `${topic.label} ${Math.max(baseAnswered, selectedAnswered)}/${total}`;
+                  return (
+                    <button
+                      key={topic.id}
+                      onClick={() => setActiveTopic(topic.id)}
+                      className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition ${
+                        activeTopic === topic.id
+                          ? 'border-primary-500 bg-primary-50 text-primary-700'
+                          : 'border-slate-200 text-slate-600 hover:border-slate-400'
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  );
+                })}
+              </div>
+
+              <div className="grid grid-cols-1 gap-4">
+                {COMPARE_TOPICS.filter((t) => t.id === activeTopic).map((topic) => (
+                  <div key={topic.id} className="space-y-4">
+                    {topic.questions.map((question) => (
+                      <div key={question.id} className="border border-slate-200 rounded-xl p-3">
+                        <p className="text-sm font-semibold text-slate-900 mb-3">{question.prompt}</p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                          <div className="space-y-2">
+                            <p className="text-xs uppercase tracking-[0.2em] text-slate-400">{baseFacility.name}</p>
+                            <AnswerField
+                              value={getAnswer(baseFacility?.id, question.id)}
+                              onChange={(value) => setAnswer(baseFacility?.id, question.id, value)}
+                              type={question.answerType}
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <p className="text-xs uppercase tracking-[0.2em] text-slate-400">{selected?.name || 'Select a home'}</p>
+                            <AnswerField
+                              value={getAnswer(selected?.id, question.id)}
+                              onChange={(value) => selected?.id && setAnswer(selected?.id, question.id, value)}
+                              type={question.answerType}
+                              disabled={!selected?.id}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
           </section>
+        </div>
+
+        <div className="print-only px-8 py-8">
+          <div className="border-b border-slate-300 pb-4 mb-6">
+            <h1 className="text-2xl font-serif font-semibold text-slate-900">SilverTech Tour Comparison</h1>
+            <p className="text-sm text-slate-600 mt-1">
+              {baseFacility.name} vs {selected?.name || 'Second community'}
+            </p>
+            {printMode === 'blank' && (
+              <p className="text-xs text-slate-500 mt-1">Tour checklist to complete during visits or calls</p>
+            )}
+            <p className="text-xs text-slate-500 mt-1">
+              Printed on {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+          </div>
+
+          {COMPARE_TOPICS.map((topic) => (
+            <div key={topic.id} className="print-section mb-6">
+              <h2 className="text-sm uppercase tracking-[0.2em] text-slate-500 mb-3">{topic.label}</h2>
+              <div className="space-y-4">
+                {topic.questions.map((question) => {
+                  const baseValue =
+                    printMode === 'blank'
+                      ? '____________________________'
+                      : getAnswer(baseFacility?.id, question.id).trim() || '____________________________';
+                  const selectedValue =
+                    printMode === 'blank'
+                      ? '____________________________'
+                      : getAnswer(selected?.id, question.id).trim() || '____________________________';
+                  return (
+                    <div key={question.id} className="border border-slate-200 rounded-md p-3">
+                      <p className="text-sm font-semibold text-slate-900 mb-2">{question.prompt}</p>
+                      <div className="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                          <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-1">{baseFacility.name}</p>
+                          <p className="text-slate-700">{baseValue}</p>
+                        </div>
+                        <div>
+                          <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-1">{selected?.name || 'Second community'}</p>
+                          <p className="text-slate-700">{selectedValue}</p>
+                        </div>
+                      </div>
+                      {printMode === 'blank' && question.answerType === 'yes_no' && (
+                        <div className="mt-2 text-xs text-slate-500">Yes ___   No ___</div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
+  );
+};
+
+const AnswerField: React.FC<{
+  value: string;
+  onChange: (value: string) => void;
+  type?: 'yes_no' | 'text' | 'rating';
+  disabled?: boolean;
+}> = ({ value, onChange, type = 'text', disabled }) => {
+  if (type === 'yes_no') {
+    return (
+      <div className="flex gap-2">
+        {['Yes', 'No'].map((option) => (
+          <button
+            key={option}
+            type="button"
+            disabled={disabled}
+            onClick={() => onChange(option)}
+            className={`px-3 py-2 rounded-md text-xs font-semibold border transition ${
+              value === option
+                ? 'border-primary-500 bg-primary-50 text-primary-700'
+                : 'border-slate-200 text-slate-600 hover:border-slate-400'
+            } ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+          >
+            {option}
+          </button>
+        ))}
+      </div>
+    );
+  }
+
+  if (type === 'rating') {
+    return (
+      <div className="flex gap-2">
+        {[1, 2, 3, 4, 5].map((score) => (
+          <button
+            key={score}
+            type="button"
+            disabled={disabled}
+            onClick={() => onChange(String(score))}
+            className={`w-9 h-9 rounded-md text-xs font-semibold border transition ${
+              value === String(score)
+                ? 'border-primary-500 bg-primary-50 text-primary-700'
+                : 'border-slate-200 text-slate-600 hover:border-slate-400'
+            } ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+          >
+            {score}
+          </button>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <input
+      type="text"
+      value={value}
+      onChange={(event) => onChange(event.target.value)}
+      placeholder={disabled ? 'Select a home to compare' : 'Add notes'}
+      disabled={disabled}
+      className="w-full border border-slate-200 rounded-md px-3 py-2 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-primary-200 focus:border-primary-500 disabled:bg-slate-100"
+    />
   );
 };

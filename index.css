@@ -26,3 +26,24 @@ h1, h2, h3, h4 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+@media print {
+  body {
+    background: #ffffff;
+    color: #111111;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
+.print-only {
+  display: none;
+}

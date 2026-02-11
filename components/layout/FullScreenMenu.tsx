@@ -176,7 +176,7 @@ const RegulatoryContent = ({ onClose }: { onClose: () => void }) => (
         {US_STATES.map(state => (
           <Link
             key={state}
-            to={`/states/${state.toLowerCase().replace(/ /g, '-')}/regulatory`}
+            to={`/states/${state.toLowerCase().replace(/ /g, '-')}/regulations`}
             onClick={onClose}
             className="text-sm text-slate-700 hover:text-primary-600 hover:bg-primary-50 px-3 py-2 rounded-lg transition-colors"
           >
