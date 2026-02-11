@@ -782,16 +782,21 @@ export const FacilityDetails: React.FC = () => {
                 </a>
               )}
               {facility.website_url ? (
-                <a
-                  href={facility.website_url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 text-charcoal hover:text-charcoal"
-                >
-                  Visit facility website
-                </a>
+                <div className="flex flex-wrap items-center gap-2">
+                  <a
+                    href={facility.website_url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 text-charcoal hover:text-charcoal"
+                  >
+                    Visit facility website
+                  </a>
+                  <span className="inline-flex items-center gap-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100 px-2 py-1 text-[10px] uppercase tracking-widest">
+                    Verified community
+                  </span>
+                </div>
               ) : (
-                <span className="text-xs text-charcoal/50">Facility website not available yet.</span>
+                <span className="text-xs text-charcoal/50">Website unavailable</span>
               )}
               {facility.google_maps_url && (
                 <a
