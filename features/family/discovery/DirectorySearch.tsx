@@ -383,6 +383,17 @@ const DirectorySearch: React.FC = () => {
                     {facility.phone && (
                       <p className="text-sm text-charcoal/60">{facility.phone}</p>
                     )}
+                    <div className="mt-2 flex flex-wrap items-center gap-2 text-[10px] uppercase tracking-widest">
+                      {facility.website_url ? (
+                        <span className="rounded-full bg-primary-50 text-primary-700 border border-primary-100 px-2 py-1">
+                          Verified community
+                        </span>
+                      ) : (
+                        <span className="rounded-full bg-warm-gray text-charcoal/60 border border-warm-gray px-2 py-1">
+                          Website unavailable
+                        </span>
+                      )}
+                    </div>
                   </div>
                   <button
                     className="bg-charcoal text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-black"

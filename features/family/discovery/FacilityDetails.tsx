@@ -432,6 +432,9 @@ export const FacilityDetails: React.FC = () => {
                 {facility.owner_id && (
                   <span className="px-2 py-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100">Verified</span>
                 )}
+                {facility.website_url && (
+                  <span className="px-2 py-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100">Verified community</span>
+                )}
               </div>
 
               <h1 className="text-[26px] md:text-[28px] font-semibold text-charcoal mt-3">
