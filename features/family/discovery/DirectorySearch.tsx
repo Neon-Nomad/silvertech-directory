@@ -31,7 +31,7 @@ const DirectorySearch: React.FC = () => {
   const { state: routeState } = useParams();
   const [location, setLocation] = useState(searchParams.get('location') || '');
   const [nameQuery, setNameQuery] = useState(searchParams.get('name') || '');
-  const [stateSlug, setStateSlug] = useState(searchParams.get('state') || '');
+  const [stateSlug, setStateSlug] = useState(routeState || searchParams.get('state') || '');
   const [error, setError] = useState('');
   const [suggestions, setSuggestions] = useState<LocationSuggestion[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -55,7 +55,7 @@ const DirectorySearch: React.FC = () => {
       ? (zipToCity as Record<string, { city: string; state: string }>)[zipMatch]
       : null;
 
-    let resolvedStateSlug = stateSlug;
+    let resolvedStateSlug = stateSlug || routeState || '';
     let city = rawLocation;
     let stateAbbr = '';
 
@@ -88,7 +88,7 @@ const DirectorySearch: React.FC = () => {
     if (resolvedStateSlug) nextParams.set('state', resolvedStateSlug);
     navigate(`/search?${nextParams.toString()}`);
 
-    const performSearch = async (filters: { city?: string; state?: string; zip?: string }) => {
+      const performSearch = async (filters: { city?: string; state?: string; zip?: string }) => {
       if (hasTypesense && typesenseClient) {
         const searchParams: any = {
           q: rawName || '*',
@@ -107,7 +107,11 @@ const DirectorySearch: React.FC = () => {
           .collections('facilities')
           .documents()
           .search(searchParams);
-        return (searchResult?.hits || []).map((hit: any) => hit.document) as FacilityIndexItem[];
+        const hits = (searchResult?.hits || []).map((hit: any) => hit.document) as FacilityIndexItem[];
+        if (hits.length === 0 && filters.state && !filters.city && !filters.zip && !rawName) {
+          throw new Error('Typesense returned 0 for state-only search.');
+        }
+        return hits;
       }
 
       try {
@@ -128,7 +132,7 @@ const DirectorySearch: React.FC = () => {
 
         let query = supabase
           .from('facilities')
-          .select('id,name,city,state,address_line1,postal_code,phone')
+          .select('id,name,city,state,address_line1,postal_code,phone,website_url')
           .order('name', { ascending: true });
 
         if (filters.state) query = query.eq('state', filters.state);
@@ -253,23 +257,20 @@ const DirectorySearch: React.FC = () => {
   };
 
   useEffect(() => {
+    if (routeState && stateSlug !== routeState) {
+      setStateSlug(routeState);
+      setLocation('');
+      setNameQuery('');
+    }
+  }, [routeState, stateSlug]);
+
+  useEffect(() => {
     if (hasAutoSearched) return;
-    if (routeState) {
-      if (stateSlug !== routeState) {
-        setStateSlug(routeState);
-        setLocation('');
-        setNameQuery('');
-        return;
-      }
+    if (routeState || location.trim().length > 0 || nameQuery.trim().length > 0) {
       setHasAutoSearched(true);
       handleSearch();
-      return;
     }
-    if (location.trim().length === 0 && nameQuery.trim().length === 0) return;
-    setHasAutoSearched(true);
-    handleSearch();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [routeState, location, nameQuery, hasAutoSearched]);
 
   return (
     <div className="min-h-screen bg-warm-gray">

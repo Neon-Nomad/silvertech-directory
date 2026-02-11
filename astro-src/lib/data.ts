@@ -23,7 +23,10 @@ type Facility = {
 
 const loadFacilities = (): Facility[] => {
   const root = process.cwd();
-  const websitesDir = path.resolve(root, 'all_facilities_with_websites_complete');
+  const preferredWebsitesDir = path.resolve(root, 'FINAL_all_facilities_with_websites');
+  const websitesDir = fs.existsSync(preferredWebsitesDir)
+    ? preferredWebsitesDir
+    : path.resolve(root, 'all_facilities_with_websites_complete');
   const stateDir = path.resolve(root, 'all_51_states_facilities');
 
   const loadFromDir = (dirPath: string) => {

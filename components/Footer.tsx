@@ -29,6 +29,9 @@ export const Footer: React.FC = () => {
           <div className="mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} SilverTech Directory. All rights reserved.
           </div>
+          <div className="mb-4 md:mb-0 text-xs text-charcoal/60">
+            SilverTech never profits from your decision. Facilities pay a subscription, not referral fees.
+          </div>
           <a href="/products" className="hover:text-primary-600 transition-colors">
             Product Catalog
           </a>

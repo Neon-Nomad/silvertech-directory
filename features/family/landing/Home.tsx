@@ -93,11 +93,11 @@ export const Home: React.FC = () => {
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-extrabold text-white leading-tight max-w-4xl">
                 Find senior living communities with{' '}
-                <span className="underline decoration-gold decoration-2 underline-offset-8">clear pricing</span>{' '}
+                <span className="underline decoration-gold decoration-2 underline-offset-8">zero referral fees</span>{' '}
                 and verified information.
               </h1>
               <p className="mt-6 text-lg text-white/90 max-w-2xl">
-                Compare communities, understand costs, and make decisions with confidence. No marketing calls, no hidden fees.
+                We never profit from your decision. No commissions, no broker pressure, no hidden incentives.
               </p>
 
               {/* Search bar */}
@@ -154,30 +154,7 @@ export const Home: React.FC = () => {
           </div>
         </section>
 
-        {/* ── Section 2: Care Type Grid ── */}
-        <section className="py-14 bg-warm-white">
-          <div className="max-w-[1200px] mx-auto px-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                { title: 'Assisted Living', icon: Building2, slug: 'assisted-living' },
-                { title: 'Memory Care', icon: Users, slug: 'memory-care' },
-                { title: 'Independent Living', icon: Heart, slug: 'independent-living' },
-                { title: 'Nursing Homes', icon: ShieldCheck, slug: 'nursing-homes' },
-              ].map((type) => (
-                <button
-                  key={type.title}
-                  onClick={() => navigate(`/search?type=${type.slug}`)}
-                  className="bg-white p-6 rounded-xl border border-slate-200 hover:border-gold transition-all text-center group"
-                >
-                  <type.icon className="w-8 h-8 text-gold mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                  <span className="font-bold text-xs uppercase tracking-widest">{type.title}</span>
-                </button>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── Section 3: The SilverTech Standard ── */}
+        {/* ── Section 2: The SilverTech Standard ── */}
         <section className="py-20 bg-warm-gray">
           <div className="max-w-[1200px] mx-auto px-6">
             <h2 className="text-center text-xs font-bold uppercase tracking-[0.3em] text-gold mb-12">
@@ -187,8 +164,8 @@ export const Home: React.FC = () => {
               {[
                 {
                   icon: DollarSign,
-                  title: 'Price Transparency',
-                  desc: 'View real base rates and care tier costs before you ever pick up the phone.',
+                  title: 'No Referral Fees',
+                  desc: 'We never profit from your decision. Facilities pay subscriptions, not commissions.',
                 },
                 {
                   icon: PhoneOff,
@@ -203,7 +180,7 @@ export const Home: React.FC = () => {
                 {
                   icon: BadgeCheck,
                   title: 'Verified Info',
-                  desc: 'Information cross-referenced with state health departments and licensing bureaus.',
+                  desc: 'Information is cross-referenced with state health departments and licensing bureaus.',
                 },
               ].map((item) => (
                 <div key={item.title} className="space-y-4">
@@ -309,19 +286,19 @@ export const Home: React.FC = () => {
                   title: 'How to choose',
                   desc: 'A step-by-step framework for evaluating care levels and community culture.',
                   cta: 'Read Guide',
-                  href: '/resources/guides',
+                  href: '/guides/how-to-choose',
                 },
                 {
                   title: 'What it costs',
                   desc: 'Understanding community fees, care tiers, and financial assistance programs.',
                   cta: 'View Pricing',
-                  href: '/resources/guides',
+                  href: '/guides/what-it-costs',
                 },
                 {
                   title: 'Tour questions',
                   desc: 'Printable checklist of critical questions to ask during your facility tour.',
                   cta: 'Get Checklist',
-                  href: '/resources/guides',
+                  href: '/guides/tour-questions',
                 },
               ].map((card) => (
                 <Link
@@ -340,15 +317,14 @@ export const Home: React.FC = () => {
           </div>
         </section>
 
-        {/* ── Section 6: Cost Transparency / Browse by State ── */}
+        {/* ── Section 6: Trust Standard / Browse by State ── */}
         <section className="py-20 bg-slate-900 text-white">
           <div className="max-w-[1200px] mx-auto px-6">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
               <div>
-                <h2 className="text-3xl font-serif font-bold mb-4">Cost Transparency Index</h2>
+                <h2 className="text-3xl font-serif font-bold mb-4">The SilverTech Trust Standard</h2>
                 <p className="text-slate-400">
-                  Current national average for Assisted Living:{' '}
-                  <span className="text-white font-bold">$4,500/mo</span>
+                  A commission-free directory built on verified data and direct-to-family access.
                 </p>
               </div>
               <div className="flex gap-3">
@@ -421,7 +397,7 @@ export const Home: React.FC = () => {
                 <div className="w-24 h-24 mb-4 border-2 border-gold rounded-full flex flex-col items-center justify-center text-gold">
                   <BadgeCheck className="w-10 h-10" />
                 </div>
-                <span className="text-xs font-bold uppercase tracking-widest">Pricing Badge</span>
+                <span className="text-xs font-bold uppercase tracking-widest">Integrity Badge</span>
               </div>
             </div>
           </div>
@@ -431,7 +407,7 @@ export const Home: React.FC = () => {
       {/* ── Footer ── */}
       <footer className="bg-white border-t border-slate-200 py-20">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
             <div>
               <div className="mb-6">
                 <img src="/images/logo2.png" alt="SilverTech Directory" className="h-8 w-auto" />
@@ -441,30 +417,9 @@ export const Home: React.FC = () => {
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-xs uppercase tracking-widest mb-6">Explore</h4>
+              <h4 className="font-bold text-xs uppercase tracking-widest mb-6">Search</h4>
               <ul className="space-y-3 text-sm text-slate-600">
-                <li><Link to="/search?type=assisted-living" className="hover:text-gold">Assisted Living</Link></li>
-                <li><Link to="/search?type=memory-care" className="hover:text-gold">Memory Care</Link></li>
-                <li><Link to="/search?type=independent-living" className="hover:text-gold">Independent Living</Link></li>
                 <li><Link to="/states" className="hover:text-gold">Browse by State</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-xs uppercase tracking-widest mb-6">Support</h4>
-              <ul className="space-y-3 text-sm text-slate-600">
-                <li><Link to="/resources/guides" className="hover:text-gold">How to Choose</Link></li>
-                <li><Link to="/faq" className="hover:text-gold">FAQ</Link></li>
-                <li><Link to="/methodology" className="hover:text-gold">Methodology</Link></li>
-                <li><Link to="/contact" className="hover:text-gold">Contact Us</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-xs uppercase tracking-widest mb-6">Company</h4>
-              <ul className="space-y-3 text-sm text-slate-600">
-                <li><Link to="/about" className="hover:text-gold">About</Link></li>
-                <li><Link to="/blog" className="hover:text-gold">Blog</Link></li>
-                <li><Link to="/for-facilities" className="hover:text-gold">For Facilities</Link></li>
-                <li><Link to="/pricing" className="hover:text-gold">Pricing Plans</Link></li>
               </ul>
             </div>
           </div>
@@ -482,22 +437,10 @@ export const Home: React.FC = () => {
       </footer>
 
       {/* ── Mobile Bottom Bar ── */}
-      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-6 py-3 flex justify-between items-center z-50 md:hidden">
-        <button onClick={() => navigate('/search')} className="flex flex-col items-center text-gold">
+      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-6 py-3 flex justify-center items-center z-50 md:hidden">
+        <button onClick={() => navigate('/states')} className="flex flex-col items-center text-gold">
           <Search className="w-5 h-5" />
-          <span className="text-[9px] font-semibold uppercase tracking-widest mt-1">Search</span>
-        </button>
-        <button className="flex flex-col items-center text-slate-400">
-          <Heart className="w-5 h-5" />
-          <span className="text-[9px] font-semibold uppercase tracking-widest mt-1">Saved</span>
-        </button>
-        <button className="flex flex-col items-center text-slate-400">
-          <GitCompareArrows className="w-5 h-5" />
-          <span className="text-[9px] font-semibold uppercase tracking-widest mt-1">Compare</span>
-        </button>
-        <button className="flex flex-col items-center text-slate-400">
-          <User className="w-5 h-5" />
-          <span className="text-[9px] font-semibold uppercase tracking-widest mt-1">Account</span>
+          <span className="text-[9px] font-semibold uppercase tracking-widest mt-1">States</span>
         </button>
       </nav>
     </div>

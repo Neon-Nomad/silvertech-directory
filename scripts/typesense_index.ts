@@ -38,6 +38,7 @@ const collectionSchema = {
     { name: 'postal_code', type: 'string', facet: true },
     { name: 'address_line1', type: 'string', optional: true },
     { name: 'phone', type: 'string', optional: true },
+    { name: 'website_url', type: 'string', optional: true },
     { name: 'premium_tier', type: 'int32', optional: true, facet: true }
   ]
 };
@@ -46,7 +47,8 @@ const ensureCollection = async () => {
   try {
     const existing = await typesense.collections(collectionName).retrieve();
     const hasPremium = existing?.fields?.some((field: any) => field?.name === 'premium_tier');
-    if (!hasPremium) {
+    const hasWebsite = existing?.fields?.some((field: any) => field?.name === 'website_url');
+    if (!hasPremium || !hasWebsite) {
       await typesense.collections(collectionName).delete();
       await typesense.collections().create(collectionSchema as any);
     }
@@ -58,7 +60,7 @@ const ensureCollection = async () => {
 const fetchBatch = async (from: number, to: number) => {
   const { data, error } = await supabase
     .from('facilities')
-    .select('id,name,city,state,postal_code,address_line1,phone,assigned_plan_owner_id')
+    .select('id,name,city,state,postal_code,address_line1,phone,website_url,assigned_plan_owner_id')
     .order('name', { ascending: true })
     .range(from, to);
 
@@ -84,7 +86,8 @@ const run = async () => {
       postal_code: row.postal_code,
       address_line1: row.address_line1,
       phone: row.phone,
-      premium_tier: row.assigned_plan_owner_id ? 1 : 0
+      premium_tier: row.assigned_plan_owner_id ? 1 : 0,
+      website_url: row.website_url
     }));
 
     await typesense.collections(collectionName).documents().import(documents, { action: 'upsert' });

@@ -1,0 +1,4420 @@
+{
+    "state": "Utah",
+    "state_code": "UT",
+    "search_date": "2025-11-29",
+    "summary": {
+        "total_facilities": 98,
+        "total_nursing_homes": 98,
+        "total_assisted_living": 0,
+        "total_certified_beds": 8381,
+        "counties_served": 21,
+        "average_beds_per_facility": 85.5
+    },
+    "quality_distribution": {
+        "five_star": 28,
+        "four_star": 17,
+        "three_star": 20,
+        "two_star": 25,
+        "one_star": 7
+    },
+    "counties": {
+        "Utah": {
+            "facility_count": 13,
+            "total_beds": 1097
+        },
+        "Washington": {
+            "facility_count": 8,
+            "total_beds": 753
+        },
+        "Salt Lake": {
+            "facility_count": 35,
+            "total_beds": 2998
+        },
+        "Grand": {
+            "facility_count": 1,
+            "total_beds": 36
+        },
+        "Iron": {
+            "facility_count": 2,
+            "total_beds": 170
+        },
+        "Weber": {
+            "facility_count": 11,
+            "total_beds": 1120
+        },
+        "Davis": {
+            "facility_count": 7,
+            "total_beds": 555
+        },
+        "San Juan": {
+            "facility_count": 1,
+            "total_beds": 104
+        },
+        "Garfield": {
+            "facility_count": 1,
+            "total_beds": 21
+        },
+        "Cache": {
+            "facility_count": 4,
+            "total_beds": 403
+        },
+        "Box Elder": {
+            "facility_count": 3,
+            "total_beds": 197
+        },
+        "Millard": {
+            "facility_count": 1,
+            "total_beds": 60
+        },
+        "Sanpete": {
+            "facility_count": 1,
+            "total_beds": 46
+        },
+        "Juab": {
+            "facility_count": 1,
+            "total_beds": 80
+        },
+        "Carbon": {
+            "facility_count": 2,
+            "total_beds": 158
+        },
+        "Wasatch": {
+            "facility_count": 1,
+            "total_beds": 92
+        },
+        "Tooele": {
+            "facility_count": 1,
+            "total_beds": 112
+        },
+        "Emery": {
+            "facility_count": 1,
+            "total_beds": 51
+        },
+        "Sevier": {
+            "facility_count": 2,
+            "total_beds": 128
+        },
+        "Duchesne": {
+            "facility_count": 1,
+            "total_beds": 90
+        },
+        "Uintah": {
+            "facility_count": 1,
+            "total_beds": 110
+        }
+    },
+    "facilities": [
+        {
+            "name": "Advanced Health Care of Salem",
+            "type": "Nursing Home",
+            "address": {
+                "street": "555 West SR 164",
+                "city": "Salem",
+                "state": "UT",
+                "zip": "84653"
+            },
+            "contact": {
+                "phone": "8017547200",
+                "phone_formatted": "8017547200"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.0323,
+                "longitude": -111.66
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 16,
+                "provider_type": "Medicare",
+                "legal_business_name": "AHC OF SALEM LLC",
+                "chain_name": "ADVANCED HEALTH CARE"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 5.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.ahcfacilities.com/salem",
+                "google_maps_url": "https://maps.google.com/?cid=15881270350065490884",
+                "verified_phone": "+1 801-754-7200",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:21:53.759418"
+            }
+        },
+        {
+            "name": "Advanced Health Care of St. George",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1934  East Riverside Drive",
+                "city": "St George",
+                "state": "UT",
+                "zip": "84790"
+            },
+            "contact": {
+                "phone": "4355222100",
+                "phone_formatted": "4355222100"
+            },
+            "location": {
+                "county": "Washington",
+                "latitude": 37.0888,
+                "longitude": -113.55
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 100,
+                "provider_type": "Medicare",
+                "legal_business_name": "AHC OF ST. GEORGE LLC",
+                "chain_name": "ADVANCED HEALTH CARE"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.ahcfacilities.com/st-george",
+                "google_maps_url": "https://maps.google.com/?cid=11920424048395609568",
+                "verified_phone": "+1 435-522-2100",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:21:54.681741"
+            }
+        },
+        {
+            "name": "Alpine Meadow Rehabilitation and Nursing",
+            "type": "Nursing Home",
+            "address": {
+                "street": "2520 South Redwood Road",
+                "city": "West Valley City",
+                "state": "UT",
+                "zip": "84119"
+            },
+            "contact": {
+                "phone": "8019721050",
+                "phone_formatted": "8019721050"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.7162,
+                "longitude": -111.94
+            },
+            "facility_details": {
+                "ownership_type": "Government - City/county",
+                "certified_beds": 42,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "BEAVER VALLEY HOSPITAL"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://alpinemeadowrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=2305141544390960733",
+                "verified_phone": null,
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:21:55.528402"
+            }
+        },
+        {
+            "name": "Aspen Ridge Transitional Rehab",
+            "type": "Nursing Home",
+            "address": {
+                "street": "963 East 6600 South",
+                "city": "Murray",
+                "state": "UT",
+                "zip": "84121"
+            },
+            "contact": {
+                "phone": "8017133100",
+                "phone_formatted": "8017133100"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6315,
+                "longitude": -111.87
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 38,
+                "provider_type": "Medicare",
+                "legal_business_name": "AHC OF MURRAY LLC",
+                "chain_name": "ADVANCED HEALTH CARE"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 5.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.ahcfacilities.com/aspen-ridge-transitional-rehab/",
+                "google_maps_url": "https://maps.google.com/?cid=5672848584748838978",
+                "verified_phone": "+1 801-713-3100",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:21:56.361259"
+            }
+        },
+        {
+            "name": "Aspen Ridge West Transitional Rehab",
+            "type": "Nursing Home",
+            "address": {
+                "street": "5323 South Murray Boulevard",
+                "city": "Murray",
+                "state": "UT",
+                "zip": "84123"
+            },
+            "contact": {
+                "phone": "8017133200",
+                "phone_formatted": "8017133200"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6605,
+                "longitude": -111.9
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 38,
+                "provider_type": "Medicare",
+                "legal_business_name": "AHC OF MURRAY II, LLC",
+                "chain_name": "ADVANCED HEALTH CARE"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 5.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.ahcfacilities.com/aspen-ridge-west-transitional-rehab/",
+                "google_maps_url": "https://maps.google.com/?cid=10571886291501332134",
+                "verified_phone": "+1 801-713-3200",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:21:57.195395"
+            }
+        },
+        {
+            "name": "Aspen Ridge of Utah Valley",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1992 South Columbia Lane",
+                "city": "Orem",
+                "state": "UT",
+                "zip": "84097"
+            },
+            "contact": {
+                "phone": "8017246500",
+                "phone_formatted": "8017246500"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.2608,
+                "longitude": -111.68
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 24,
+                "provider_type": "Medicare",
+                "legal_business_name": "AHC OF OREM LLC",
+                "chain_name": "ADVANCED HEALTH CARE"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.aspenridgeofutahvalley.com/",
+                "google_maps_url": "https://maps.google.com/?cid=17822670081062277517",
+                "verified_phone": "+1 801-724-6500",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:21:58.030343"
+            }
+        },
+        {
+            "name": "Bella Terra St George",
+            "type": "Nursing Home",
+            "address": {
+                "street": "178 South 1200 East",
+                "city": "St. George",
+                "state": "UT",
+                "zip": "84790"
+            },
+            "contact": {
+                "phone": "4356881207",
+                "phone_formatted": "4356881207"
+            },
+            "location": {
+                "county": "Washington",
+                "latitude": 37.105,
+                "longitude": -113.56
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 149,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "BEAVER VALLEY HOSPITAL"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://stgbellaterra.com/",
+                "google_maps_url": "https://maps.google.com/?cid=11281482992858314811",
+                "verified_phone": "+1 435-688-1207",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:21:58.866392"
+            }
+        },
+        {
+            "name": "Canyonland Care Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "390 West Williams Way",
+                "city": "Moab",
+                "state": "UT",
+                "zip": "84532"
+            },
+            "contact": {
+                "phone": "4357194400",
+                "phone_formatted": "4357194400"
+            },
+            "location": {
+                "county": "Grand",
+                "latitude": 38.5743,
+                "longitude": -109.56
+            },
+            "facility_details": {
+                "ownership_type": "Government - County",
+                "certified_beds": 36,
+                "provider_type": "Medicaid",
+                "legal_business_name": "Legal Business Name Not Available",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://canyonlandscarecenter.com/",
+                "google_maps_url": "https://maps.google.com/?cid=6632413132486844242",
+                "verified_phone": "+1 435-719-4400",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:21:59.707467"
+            }
+        },
+        {
+            "name": "Cascades at Orchard Park",
+            "type": "Nursing Home",
+            "address": {
+                "street": "740 North 300 East",
+                "city": "Orem",
+                "state": "UT",
+                "zip": "84057"
+            },
+            "contact": {
+                "phone": "8012240921",
+                "phone_formatted": "8012240921"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.3108,
+                "longitude": -111.69
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 52,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "CASCADES HEALTHCARE"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://orchardparkrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=2292314105727684882",
+                "verified_phone": "+1 801-224-0921",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:00.542377"
+            }
+        },
+        {
+            "name": "Cascades at Riverwalk",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1012 West Jordan River Boulevard",
+                "city": "Midvale",
+                "state": "UT",
+                "zip": "84047"
+            },
+            "contact": {
+                "phone": "8015650800",
+                "phone_formatted": "8015650800"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6234,
+                "longitude": -111.92
+            },
+            "facility_details": {
+                "ownership_type": "Government - City/county",
+                "certified_beds": 120,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "CASCADES HEALTHCARE"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://cascadesatriverwalk.com/",
+                "google_maps_url": "https://maps.google.com/?cid=7534378588566391655",
+                "verified_phone": "+1 801-565-0800",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:01.380263"
+            }
+        },
+        {
+            "name": "Cedar Health and Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "411 West 1325 North",
+                "city": "Cedar City",
+                "state": "UT",
+                "zip": "84721"
+            },
+            "contact": {
+                "phone": "4355866481",
+                "phone_formatted": "4355866481"
+            },
+            "location": {
+                "county": "Iron",
+                "latitude": 37.7011,
+                "longitude": -113.07
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 120,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 3.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://cedarhealthandrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=10889810793214686079",
+                "verified_phone": "+1 435-586-6481",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:02.214520"
+            }
+        },
+        {
+            "name": "City Creek Post Acute",
+            "type": "Nursing Home",
+            "address": {
+                "street": "165 South 1000 East",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84102"
+            },
+            "contact": {
+                "phone": "8013225521",
+                "phone_formatted": "8013225521"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.7606,
+                "longitude": -111.86
+            },
+            "facility_details": {
+                "ownership_type": "Government - Hospital district",
+                "certified_beds": 108,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://citycreekpostacute.com/",
+                "google_maps_url": "https://maps.google.com/?cid=383221149036185928",
+                "verified_phone": "+1 801-322-5521",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:03.052037"
+            }
+        },
+        {
+            "name": "Copper Ridge Health Care",
+            "type": "Nursing Home",
+            "address": {
+                "street": "3706 West 9000 South",
+                "city": "West Jordan",
+                "state": "UT",
+                "zip": "84088"
+            },
+            "contact": {
+                "phone": "8012802273",
+                "phone_formatted": "8012802273"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.5878,
+                "longitude": -111.98
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 120,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.copperridgehealth.com/",
+                "google_maps_url": "https://maps.google.com/?cid=15720601812798786668",
+                "verified_phone": "+1 801-280-2273",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:03.887431"
+            }
+        },
+        {
+            "name": "Coral Desert Rehabilitation and Care",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1490 East Foremaster Drive",
+                "city": "St. George",
+                "state": "UT",
+                "zip": "84790"
+            },
+            "contact": {
+                "phone": "4356745195",
+                "phone_formatted": "4356745195"
+            },
+            "location": {
+                "county": "Washington",
+                "latitude": 37.0963,
+                "longitude": -113.55
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 60,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "RED CLIFFS HEALTHCARE INC",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://coraldesertrehabilitation.com/",
+                "google_maps_url": "https://maps.google.com/?cid=10676112665163730458",
+                "verified_phone": "+1 435-674-5195",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:04.718532"
+            }
+        },
+        {
+            "name": "Crestwood Rehabilitation and Nursing",
+            "type": "Nursing Home",
+            "address": {
+                "street": "3665 Brinker Avenue",
+                "city": "Ogden",
+                "state": "UT",
+                "zip": "84403"
+            },
+            "contact": {
+                "phone": "8016272273",
+                "phone_formatted": "8016272273"
+            },
+            "location": {
+                "county": "Weber",
+                "latitude": 41.1965,
+                "longitude": -111.95
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 88,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "BEAVER VALLEY HOSPITAL"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": null,
+                "google_maps_url": "https://maps.google.com/?cid=8157800626647167188",
+                "verified_phone": "+1 801-627-2273",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:05.567346"
+            }
+        },
+        {
+            "name": "Draper Rehabilitation and Care Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "12702 South Fort Street",
+                "city": "Draper",
+                "state": "UT",
+                "zip": "84020"
+            },
+            "contact": {
+                "phone": "8015712704",
+                "phone_formatted": "8015712704"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.5215,
+                "longitude": -111.86
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 93,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 5.0,
+                "quality_measure_rating": 2.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.drapercare.com/",
+                "google_maps_url": "https://maps.google.com/?cid=15026793288872113979",
+                "verified_phone": "+1 801-571-2704",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:06.405053"
+            }
+        },
+        {
+            "name": "Fairfield Village Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1203 North Fairfield Road",
+                "city": "Layton",
+                "state": "UT",
+                "zip": "84041"
+            },
+            "contact": {
+                "phone": "8018070113",
+                "phone_formatted": "8018070113"
+            },
+            "location": {
+                "county": "Davis",
+                "latitude": 41.0772,
+                "longitude": -111.95
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 40,
+                "provider_type": "Medicare",
+                "legal_business_name": "CHP LAYTON UT TENANT CORP",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://fairfieldvillagelayton.com/transitional-rehabilitation/",
+                "google_maps_url": "https://maps.google.com/?cid=10159059502825014953",
+                "verified_phone": "+1 801-807-0113",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:07.235066"
+            }
+        },
+        {
+            "name": "Four Corners Regional Care Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "818 North 400 West",
+                "city": "Blanding",
+                "state": "UT",
+                "zip": "84511"
+            },
+            "contact": {
+                "phone": "4356382251",
+                "phone_formatted": "4356382251"
+            },
+            "location": {
+                "county": "San Juan",
+                "latitude": 37.6369,
+                "longitude": -109.48
+            },
+            "facility_details": {
+                "ownership_type": "Government - County",
+                "certified_beds": 104,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "CASCADES HEALTHCARE"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://fourcornerscare.com/",
+                "google_maps_url": "https://maps.google.com/?cid=14102384662483368493",
+                "verified_phone": "+1 435-678-2251",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:08.089620"
+            }
+        },
+        {
+            "name": "Garfield County Nursing Home",
+            "type": "Nursing Home",
+            "address": {
+                "street": "200 North 450 East",
+                "city": "Panguitch",
+                "state": "UT",
+                "zip": "84759"
+            },
+            "contact": {
+                "phone": "4356761262",
+                "phone_formatted": "4356761262"
+            },
+            "location": {
+                "county": "Garfield",
+                "latitude": 37.7744,
+                "longitude": -112.59
+            },
+            "facility_details": {
+                "ownership_type": "Government - County",
+                "certified_beds": 21,
+                "provider_type": "Medicaid",
+                "legal_business_name": "Legal Business Name Not Available",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 3.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://intermountainhealthcare.org/?utm_campaign=gmb&utm_medium=organic&utm_source=local",
+                "google_maps_url": "https://maps.google.com/?cid=16334846937004146195",
+                "verified_phone": "+1 435-676-1265",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:08.922630"
+            }
+        },
+        {
+            "name": "George E. Wahlen Ogden Veterans Home",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1102 North 1200 West",
+                "city": "Ogden",
+                "state": "UT",
+                "zip": "84404"
+            },
+            "contact": {
+                "phone": "8013344300",
+                "phone_formatted": "8013344300"
+            },
+            "location": {
+                "county": "Weber",
+                "latitude": 41.2767,
+                "longitude": -112.01
+            },
+            "facility_details": {
+                "ownership_type": "Government - State",
+                "certified_beds": 120,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "AVALON CARE CENTER - VA OGDEN LLC",
+                "chain_name": "AVALON HEALTH CARE"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.avalonhealthcare.com/ogden/",
+                "google_maps_url": "https://maps.google.com/?cid=6375075863544714894",
+                "verified_phone": "+1 801-334-4300",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:09.759226"
+            }
+        },
+        {
+            "name": "Harrison Pointe Healthcare and Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "3430 Harrison Boulevard",
+                "city": "Ogden",
+                "state": "UT",
+                "zip": "84403"
+            },
+            "contact": {
+                "phone": "8013995609",
+                "phone_formatted": "8013995609"
+            },
+            "location": {
+                "county": "Weber",
+                "latitude": 41.2009,
+                "longitude": -111.95
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 63,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://harrisonpointehealthcare.com/",
+                "google_maps_url": "https://maps.google.com/?cid=2688708058846875175",
+                "verified_phone": "+1 801-399-5609",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:10.602089"
+            }
+        },
+        {
+            "name": "Heritage Park Healthcare and Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "2700 West 5600 South",
+                "city": "Roy",
+                "state": "UT",
+                "zip": "84067"
+            },
+            "contact": {
+                "phone": "8018259731",
+                "phone_formatted": "8018259731"
+            },
+            "location": {
+                "county": "Weber",
+                "latitude": 41.1616,
+                "longitude": -112.05
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Partnership",
+                "certified_beds": 176,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.heritageparkrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=9773957536197189125",
+                "verified_phone": "+1 801-825-9731",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:11.434481"
+            }
+        },
+        {
+            "name": "Highland Care Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "4285 South Highland Drive",
+                "city": "Holladay",
+                "state": "UT",
+                "zip": "84124"
+            },
+            "contact": {
+                "phone": "8012782839",
+                "phone_formatted": "8012782839"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6781,
+                "longitude": -111.84
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 103,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "EDURO HEALTHCARE"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.highlandcarecenter.com/",
+                "google_maps_url": "https://maps.google.com/?cid=18395775169601322726",
+                "verified_phone": "+1 801-278-2839",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:12.265829"
+            }
+        },
+        {
+            "name": "Holladay Healthcare Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "4782 South Holladay Boulevard",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84117"
+            },
+            "contact": {
+                "phone": "8012777002",
+                "phone_formatted": "8012777002"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6657,
+                "longitude": -111.82
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 120,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.holladayhealthcare.net/",
+                "google_maps_url": "https://maps.google.com/?cid=11578234712556117738",
+                "verified_phone": "+1 801-277-7002",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:13.111400"
+            }
+        },
+        {
+            "name": "Hurricane Health and Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "416 North State Street",
+                "city": "Hurricane",
+                "state": "UT",
+                "zip": "84737"
+            },
+            "contact": {
+                "phone": "4356359833",
+                "phone_formatted": "4356359833"
+            },
+            "location": {
+                "county": "Washington",
+                "latitude": 37.1828,
+                "longitude": -113.28
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 60,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 2.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://hurricanehealthandrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=14355665456785119350",
+                "verified_phone": "+1 435-635-9833",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:13.963962"
+            }
+        },
+        {
+            "name": "Legacy Village Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "3251 West 5400 South",
+                "city": "Taylorsville",
+                "state": "UT",
+                "zip": "84129"
+            },
+            "contact": {
+                "phone": "8016134600",
+                "phone_formatted": "8016134600"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6531,
+                "longitude": -111.97
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Partnership",
+                "certified_beds": 40,
+                "provider_type": "Medicare",
+                "legal_business_name": "LEGACY VILLAGE HEALTHCARE LLC",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.legacyretire.com/communities/legacy-village-rehabilitation/",
+                "google_maps_url": "https://maps.google.com/?cid=1183668428590928934",
+                "verified_phone": "+1 801-613-4600",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:14.794787"
+            }
+        },
+        {
+            "name": "Little Cottonwood Rehabilitation and Nursing",
+            "type": "Nursing Home",
+            "address": {
+                "street": "3094 South State Street",
+                "city": "South Salt Lake",
+                "state": "UT",
+                "zip": "84115"
+            },
+            "contact": {
+                "phone": "8014859007",
+                "phone_formatted": "8014859007"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.7037,
+                "longitude": -111.89
+            },
+            "facility_details": {
+                "ownership_type": "Government - City/county",
+                "certified_beds": 37,
+                "provider_type": "Medicaid",
+                "legal_business_name": "Legal Business Name Not Available",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 5.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": null,
+                "google_maps_url": "https://maps.google.com/?cid=6562905828762701563",
+                "verified_phone": "+1 801-485-9007",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:15.628818"
+            }
+        },
+        {
+            "name": "Logan Regional Hospital Transitional Care Unit",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1400 North 500 East",
+                "city": "Logan",
+                "state": "UT",
+                "zip": "84341"
+            },
+            "contact": {
+                "phone": "4357165450",
+                "phone_formatted": "4357165450"
+            },
+            "location": {
+                "county": "Cache",
+                "latitude": 41.757,
+                "longitude": -111.82
+            },
+            "facility_details": {
+                "ownership_type": "Non profit - Corporation",
+                "certified_beds": 11,
+                "provider_type": "Medicare",
+                "legal_business_name": "IHC HEALTH SERVICES INC",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 5.0,
+                "quality_measure_rating": 3.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://intermountainhealthcare.org/locations/location-details/logan-regional-hospital/logan-regional-hospital/logan-regional-hospital-transitional-care/?utm_campaign=gmb&utm_medium=organic&utm_source=local",
+                "google_maps_url": "https://maps.google.com/?cid=8338023964732356248",
+                "verified_phone": "+1 435-716-5866",
+                "business_status": "CLOSED_PERMANENTLY",
+                "last_updated": "2026-02-11T12:22:16.463972"
+            }
+        },
+        {
+            "name": "Lomond Peak Nursing and Rehabilitation, LLC",
+            "type": "Nursing Home",
+            "address": {
+                "street": "524 East 800 North",
+                "city": "Ogden",
+                "state": "UT",
+                "zip": "84404"
+            },
+            "contact": {
+                "phone": "8017823740",
+                "phone_formatted": "8017823740"
+            },
+            "location": {
+                "county": "Weber",
+                "latitude": 41.2721,
+                "longitude": -111.97
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 86,
+                "provider_type": "Medicaid",
+                "legal_business_name": "Legal Business Name Not Available",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://lomondrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=1681272805199815005",
+                "verified_phone": "+1 801-782-3740",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:17.299256"
+            }
+        },
+        {
+            "name": "MSM Brigham City LLC",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1010 South Medical Drive",
+                "city": "Brigham",
+                "state": "UT",
+                "zip": "84302"
+            },
+            "contact": {
+                "phone": "4353105800",
+                "phone_formatted": "4353105800"
+            },
+            "location": {
+                "county": "Box Elder",
+                "latitude": 41.4916,
+                "longitude": -112.02
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 41,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MISSION HEALTH SERVICES"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.missionhealthservices.org/mission-bear-river-rehabilitation-center/",
+                "google_maps_url": "https://maps.google.com/?cid=5171340951987915846",
+                "verified_phone": "+1 435-310-5800",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:18.131835"
+            }
+        },
+        {
+            "name": "Maple Ridge Rehabilitation and Nursing",
+            "type": "Nursing Home",
+            "address": {
+                "street": "455 South 900 East",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84102"
+            },
+            "contact": {
+                "phone": "8013556891",
+                "phone_formatted": "8013556891"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.7594,
+                "longitude": -111.87
+            },
+            "facility_details": {
+                "ownership_type": "Government - City/county",
+                "certified_beds": 36,
+                "provider_type": "Medicaid",
+                "legal_business_name": "Legal Business Name Not Available",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://mapleridgerhc.com/",
+                "google_maps_url": "https://maps.google.com/?cid=7188983382730866011",
+                "verified_phone": "+1 570-288-5496",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:18.973602"
+            }
+        },
+        {
+            "name": "Maple Springs Senior Living",
+            "type": "Nursing Home",
+            "address": {
+                "street": "350 East 2200 North",
+                "city": "North Logan",
+                "state": "UT",
+                "zip": "84341"
+            },
+            "contact": {
+                "phone": "4357539400",
+                "phone_formatted": "4357539400"
+            },
+            "location": {
+                "county": "Cache",
+                "latitude": 41.7721,
+                "longitude": -111.82
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 100,
+                "provider_type": "Medicare",
+                "legal_business_name": "MAPLE SPRINGS MANAGEMENT LLC",
+                "chain_name": "MAPLE SPRINGS LIVING"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://maplespringsliving.com/north-logan/",
+                "google_maps_url": "https://maps.google.com/?cid=8326131908430222751",
+                "verified_phone": "+1 435-753-9400",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:19.804228"
+            }
+        },
+        {
+            "name": "Meadow Brook Rehabilitation and Nursing",
+            "type": "Nursing Home",
+            "address": {
+                "street": "433 East 2700 South",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84115"
+            },
+            "contact": {
+                "phone": "8014872248",
+                "phone_formatted": "8014872248"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.7127,
+                "longitude": -111.88
+            },
+            "facility_details": {
+                "ownership_type": "Government - Hospital district",
+                "certified_beds": 41,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "CASCADES HEALTHCARE"
+            },
+            "ratings": {
+                "overall_rating": 1.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.meadowbrookrehab.net/",
+                "google_maps_url": "https://maps.google.com/?cid=15635773405780191895",
+                "verified_phone": "+1 801-487-2248",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:20.658584"
+            }
+        },
+        {
+            "name": "Meadow Peak Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "6084 South Summit Vista Boulevard",
+                "city": "Taylorsville",
+                "state": "UT",
+                "zip": "84129"
+            },
+            "contact": {
+                "phone": "3852551105",
+                "phone_formatted": "3852551105"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6963,
+                "longitude": -112.02
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 75,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://missionhealthservices.org/communities/meadow-peak-at-summit-vista-living/",
+                "google_maps_url": "https://maps.google.com/?cid=2800967210766293400",
+                "verified_phone": "+1 385-255-1105",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:21.496759"
+            }
+        },
+        {
+            "name": "Mervyn Sharp Bennion Central Utah Veterans Home",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1551 North Main Street",
+                "city": "Payson",
+                "state": "UT",
+                "zip": "84651"
+            },
+            "contact": {
+                "phone": "8014655400",
+                "phone_formatted": "8014655400"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.0545,
+                "longitude": -111.73
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 108,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "AVALON CARE CENTER - VA PAYSON LLC",
+                "chain_name": "AVALON HEALTH CARE"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.avalonhealthcare.com/payson/",
+                "google_maps_url": "https://maps.google.com/?cid=11282575702516673852",
+                "verified_phone": "+1 801-465-5400",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:22.422754"
+            }
+        },
+        {
+            "name": "Midtown Manor",
+            "type": "Nursing Home",
+            "address": {
+                "street": "125 South 900 West",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84104"
+            },
+            "contact": {
+                "phone": "8013636340",
+                "phone_formatted": "8013636340"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.7669,
+                "longitude": -111.92
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 82,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "MILFORD MEMORIAL HOSPITAL",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": null,
+                "google_maps_url": "https://maps.google.com/?cid=2891683943785940052",
+                "verified_phone": "+1 801-363-6340",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:23.305089"
+            }
+        },
+        {
+            "name": "Millard County Care and Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "150 South White Sage Avenue",
+                "city": "Delta",
+                "state": "UT",
+                "zip": "84624"
+            },
+            "contact": {
+                "phone": "4358642944",
+                "phone_formatted": "4358642944"
+            },
+            "location": {
+                "county": "Millard",
+                "latitude": 39.352,
+                "longitude": -112.56
+            },
+            "facility_details": {
+                "ownership_type": "Government - County",
+                "certified_beds": 60,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "MILLARD COUNTY CARE & REHABILITATION INC",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.millardcare.com/",
+                "google_maps_url": "https://maps.google.com/?cid=17107850600525982240",
+                "verified_phone": "+1 435-864-2944",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:24.185242"
+            }
+        },
+        {
+            "name": "Millcreek Rehabilitation and Nursing LLC",
+            "type": "Nursing Home",
+            "address": {
+                "street": "3520 South Highland Drive",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84106"
+            },
+            "contact": {
+                "phone": "8014847638",
+                "phone_formatted": "8014847638"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.7107,
+                "longitude": -111.85
+            },
+            "facility_details": {
+                "ownership_type": "Government - City/county",
+                "certified_beds": 61,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "BEAVER VALLEY HOSPITAL"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": null,
+                "google_maps_url": "https://maps.google.com/?cid=9394391811959529593",
+                "verified_phone": "+1 801-484-7638",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:25.339088"
+            }
+        },
+        {
+            "name": "Mission at Alpine Rehabilitation Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "25 East Alpine Drive",
+                "city": "Pleasant Grove",
+                "state": "UT",
+                "zip": "84062"
+            },
+            "contact": {
+                "phone": "8017853568",
+                "phone_formatted": "8017853568"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.3569,
+                "longitude": -111.74
+            },
+            "facility_details": {
+                "ownership_type": "Non profit - Corporation",
+                "certified_beds": 52,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MISSION HEALTH SERVICES"
+            },
+            "ratings": {
+                "overall_rating": 1.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 3.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://missionhealthservices.org/communities/mission-at-alpine-valley/",
+                "google_maps_url": "https://maps.google.com/?cid=13510278862531439773",
+                "verified_phone": "+1 801-785-3568",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:26.161580"
+            }
+        },
+        {
+            "name": "Mission at Community Living Rehabilitation Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "10 West 400 South",
+                "city": "Centerfield",
+                "state": "UT",
+                "zip": "84622"
+            },
+            "contact": {
+                "phone": "4355282800",
+                "phone_formatted": "4355282800"
+            },
+            "location": {
+                "county": "Sanpete",
+                "latitude": 39.119,
+                "longitude": -111.82
+            },
+            "facility_details": {
+                "ownership_type": "Government - County",
+                "certified_beds": 46,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MISSION HEALTH SERVICES"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 2.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.missionhealthservices.org/?community=mission-at-community-living-rehabilitation-center",
+                "google_maps_url": "https://maps.google.com/?cid=11664834509697772674",
+                "verified_phone": "+1 435-528-2800",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:27.401060"
+            }
+        },
+        {
+            "name": "Monument Healthcare American Fork",
+            "type": "Nursing Home",
+            "address": {
+                "street": "350 East 300 North",
+                "city": "American Fork",
+                "state": "UT",
+                "zip": "84003"
+            },
+            "contact": {
+                "phone": "8017565293",
+                "phone_formatted": "8017565293"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.383,
+                "longitude": -111.79
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 106,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://monumenthg.com/location/american-fork/american-fork/",
+                "google_maps_url": "https://maps.google.com/?cid=15250245833682995254",
+                "verified_phone": "+1 801-756-5293",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:28.262208"
+            }
+        },
+        {
+            "name": "Monument Healthcare Bountiful",
+            "type": "Nursing Home",
+            "address": {
+                "street": "460 West 2600 South",
+                "city": "Bountiful",
+                "state": "UT",
+                "zip": "84010"
+            },
+            "contact": {
+                "phone": "8012953135",
+                "phone_formatted": "8012953135"
+            },
+            "location": {
+                "county": "Davis",
+                "latitude": 40.8616,
+                "longitude": -111.89
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 100,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "MILFORD MEMORIAL HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://monumenthg.com/location/bountiful/bountiful/",
+                "google_maps_url": "https://maps.google.com/?cid=9736490260712344541",
+                "verified_phone": "+1 801-295-3135",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:29.030681"
+            }
+        },
+        {
+            "name": "Monument Healthcare Brigham City",
+            "type": "Nursing Home",
+            "address": {
+                "street": "775 North 200 East",
+                "city": "Brigham City",
+                "state": "UT",
+                "zip": "84302"
+            },
+            "contact": {
+                "phone": "4357237777",
+                "phone_formatted": "4357237777"
+            },
+            "location": {
+                "county": "Box Elder",
+                "latitude": 41.5262,
+                "longitude": -112.01
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 84,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://monumenthg.com/location/brigham-city/brigham-city/",
+                "google_maps_url": "https://maps.google.com/?cid=6338177924004220469",
+                "verified_phone": "+1 435-723-7777",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:29.906873"
+            }
+        },
+        {
+            "name": "Monument Healthcare Canyon Rim",
+            "type": "Nursing Home",
+            "address": {
+                "street": "2730 East 3300 South",
+                "city": "Millcreek",
+                "state": "UT",
+                "zip": "84109"
+            },
+            "contact": {
+                "phone": "8014870897",
+                "phone_formatted": "8014870897"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6999,
+                "longitude": -111.81
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 90,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://monumenthg.com/location/salt-lake-city/canyon-rim/",
+                "google_maps_url": "https://maps.google.com/?cid=6316822747877286292",
+                "verified_phone": "+1 801-487-0896",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:30.857372"
+            }
+        },
+        {
+            "name": "Monument Healthcare Cottonwood Creek",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1205 East 4725 South",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84117"
+            },
+            "contact": {
+                "phone": "8012622908",
+                "phone_formatted": "8012622908"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.7598,
+                "longitude": -111.87
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 77,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://monumenthg.com/location/salt-lake-city/cottonwood-creek/",
+                "google_maps_url": "https://maps.google.com/?cid=9335751290577459111",
+                "verified_phone": "+1 801-262-2908",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:31.797168"
+            }
+        },
+        {
+            "name": "Monument Healthcare Millcreek",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1201 East 4500 South",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84117"
+            },
+            "contact": {
+                "phone": "8012613664",
+                "phone_formatted": "8012613664"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6743,
+                "longitude": -111.86
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 120,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "MILFORD MEMORIAL HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://monumenthg.com/location/salt-lake-city/millcreek/",
+                "google_maps_url": "https://maps.google.com/?cid=1293739720833379741",
+                "verified_phone": "+1 801-261-3664",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:32.710229"
+            }
+        },
+        {
+            "name": "Monument Healthcare Murray Creek",
+            "type": "Nursing Home",
+            "address": {
+                "street": "3855 South 700 East",
+                "city": "Millcreek",
+                "state": "UT",
+                "zip": "84106"
+            },
+            "contact": {
+                "phone": "8012684766",
+                "phone_formatted": "8012684766"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6881,
+                "longitude": -111.87
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 184,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://monumenthg.com/location/salt-lake-city/murray-creek/",
+                "google_maps_url": "https://maps.google.com/?cid=6550117156852149165",
+                "verified_phone": "+1 801-268-4766",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:33.570401"
+            }
+        },
+        {
+            "name": "Monument Healthcare Nephi (Mission at Nephi Nursin",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1100 North 400 East",
+                "city": "Nephi",
+                "state": "UT",
+                "zip": "84648"
+            },
+            "contact": {
+                "phone": "4356231721",
+                "phone_formatted": "4356231721"
+            },
+            "location": {
+                "county": "Juab",
+                "latitude": 39.7239,
+                "longitude": -111.83
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 80,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://missionhealthservices.org/communities/mission-at-nephi/",
+                "google_maps_url": "https://maps.google.com/?cid=4130732653598188616",
+                "verified_phone": "+1 435-623-1721",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:34.601216"
+            }
+        },
+        {
+            "name": "Monument Healthcare North Park",
+            "type": "Nursing Home",
+            "address": {
+                "street": "350 South 400 East",
+                "city": "Bountiful",
+                "state": "UT",
+                "zip": "84010"
+            },
+            "contact": {
+                "phone": "3853997800",
+                "phone_formatted": "3853997800"
+            },
+            "location": {
+                "county": "Davis",
+                "latitude": 40.8857,
+                "longitude": -111.87
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 0,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://monumenthg.com/location/bountiful/bountiful/",
+                "google_maps_url": "https://maps.google.com/?cid=9736490260712344541",
+                "verified_phone": "+1 801-295-3135",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:35.493209"
+            }
+        },
+        {
+            "name": "Monument Healthcare Pioneer Trail",
+            "type": "Nursing Home",
+            "address": {
+                "street": "815 South 200 West",
+                "city": "Brigham City",
+                "state": "UT",
+                "zip": "84302"
+            },
+            "contact": {
+                "phone": "4357235289",
+                "phone_formatted": "4357235289"
+            },
+            "location": {
+                "county": "Box Elder",
+                "latitude": 41.4949,
+                "longitude": -112.02
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 72,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://monumenthg.com/location/brigham-city/pioneer-trail/",
+                "google_maps_url": "https://maps.google.com/?cid=954488633718655728",
+                "verified_phone": "+1 435-723-5289",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:36.543021"
+            }
+        },
+        {
+            "name": "Monument Healthcare South Salt Lake",
+            "type": "Nursing Home",
+            "address": {
+                "street": "2472 South 300 East",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84115"
+            },
+            "contact": {
+                "phone": "8014662211",
+                "phone_formatted": "8014662211"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.717,
+                "longitude": -111.88
+            },
+            "facility_details": {
+                "ownership_type": "Government - Hospital district",
+                "certified_beds": 140,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://monumenthg.com/location/salt-lake-city/south-salt-lake/",
+                "google_maps_url": "https://maps.google.com/?cid=219914611158491492",
+                "verified_phone": "+1 801-466-2211",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:37.562316"
+            }
+        },
+        {
+            "name": "Monument Healthcare Stonecreek",
+            "type": "Nursing Home",
+            "address": {
+                "street": "523 North Main Street",
+                "city": "Bountiful",
+                "state": "UT",
+                "zip": "84010"
+            },
+            "contact": {
+                "phone": "8019512273",
+                "phone_formatted": "8019512273"
+            },
+            "location": {
+                "county": "Davis",
+                "latitude": 40.8949,
+                "longitude": -111.88
+            },
+            "facility_details": {
+                "ownership_type": "Government - Hospital district",
+                "certified_beds": 122,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://monumenthg.com/location/bountiful/stonecreek/",
+                "google_maps_url": "https://maps.google.com/?cid=2832337055335930699",
+                "verified_phone": "+1 801-951-2273",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:38.598278"
+            }
+        },
+        {
+            "name": "Monument Healthcare Taylorsville",
+            "type": "Nursing Home",
+            "address": {
+                "street": "6246 South Redwood Road",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84123"
+            },
+            "contact": {
+                "phone": "8019691420",
+                "phone_formatted": "8019691420"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6374,
+                "longitude": -111.94
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 120,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://monumenthg.com/location/salt-lake-city/taylorsville/",
+                "google_maps_url": "https://maps.google.com/?cid=16259950457393339456",
+                "verified_phone": "+1 801-969-1420",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:39.603003"
+            }
+        },
+        {
+            "name": "Mountain View Health Services",
+            "type": "Nursing Home",
+            "address": {
+                "street": "5865 South Wasatch Drive",
+                "city": "Ogden",
+                "state": "UT",
+                "zip": "84403"
+            },
+            "contact": {
+                "phone": "8014798480",
+                "phone_formatted": "8014798480"
+            },
+            "location": {
+                "county": "Weber",
+                "latitude": 41.1562,
+                "longitude": -111.94
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 155,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "COUNTRY MEADOW SNF LC",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": null,
+                "google_maps_url": "https://maps.google.com/?cid=5222975234269434294",
+                "verified_phone": "+1 801-479-8500",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:40.470301"
+            }
+        },
+        {
+            "name": "Mt Ogden Health and Rehabilitation Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "375 East 5350 South",
+                "city": "Washington Terrace",
+                "state": "UT",
+                "zip": "84405"
+            },
+            "contact": {
+                "phone": "8014795700",
+                "phone_formatted": "8014795700"
+            },
+            "location": {
+                "county": "Weber",
+                "latitude": 41.167,
+                "longitude": -111.97
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 108,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 2.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://mtogdennursing.com/",
+                "google_maps_url": "https://maps.google.com/?cid=16661528053616759971",
+                "verified_phone": "+1 801-479-5700",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:41.258132"
+            }
+        },
+        {
+            "name": "Mt. Olympus Rehabilitation Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "2200 East 3300 South",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84109"
+            },
+            "contact": {
+                "phone": "8014862096",
+                "phone_formatted": "8014862096"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6999,
+                "longitude": -111.83
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 100,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "CASCADES HEALTHCARE"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://mtolympusrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=6316528659544039162",
+                "verified_phone": "+1 801-486-2096",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:42.221873"
+            }
+        },
+        {
+            "name": "NeuroRestorative",
+            "type": "Nursing Home",
+            "address": {
+                "street": "13747 South Redwood Road",
+                "city": "Riverton",
+                "state": "UT",
+                "zip": "84065"
+            },
+            "contact": {
+                "phone": "8014179400",
+                "phone_formatted": "8014179400"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.5016,
+                "longitude": -111.94
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 64,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "CAREMERIDIAN LLC",
+                "chain_name": "NEURORESTORATIVE"
+            },
+            "ratings": {
+                "overall_rating": 1.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 3.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://neurorestorative.com/state-location/riverton/",
+                "google_maps_url": "https://maps.google.com/?cid=6408879413706209738",
+                "verified_phone": "+1 801-417-9400",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:43.048852"
+            }
+        },
+        {
+            "name": "Orem Rehabilitation and Nursing Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "575 East 1400 South",
+                "city": "Orem",
+                "state": "UT",
+                "zip": "84097"
+            },
+            "contact": {
+                "phone": "8012254741",
+                "phone_formatted": "8012254741"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.2715,
+                "longitude": -111.68
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 120,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://oremrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=2567483922333349765",
+                "verified_phone": "+1 801-225-4741",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:43.945532"
+            }
+        },
+        {
+            "name": "Paramount Health and Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "4035 South 500 East",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84107"
+            },
+            "contact": {
+                "phone": "8012629181",
+                "phone_formatted": "8012629181"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6843,
+                "longitude": -111.88
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 99,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.paramounthealth.net/",
+                "google_maps_url": "https://maps.google.com/?cid=5361226321121920939",
+                "verified_phone": "+1 801-262-9181",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:44.770955"
+            }
+        },
+        {
+            "name": "Parkdale Health and Rehab",
+            "type": "Nursing Home",
+            "address": {
+                "street": "250 East 600 North",
+                "city": "Price",
+                "state": "UT",
+                "zip": "84501"
+            },
+            "contact": {
+                "phone": "4356372621",
+                "phone_formatted": "4356372621"
+            },
+            "location": {
+                "county": "Carbon",
+                "latitude": 39.5964,
+                "longitude": -110.82
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 58,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "CASCADES HEALTHCARE"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 3.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://parkdalerehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=8903096987538227229",
+                "verified_phone": "+1 435-637-2621",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:45.714786"
+            }
+        },
+        {
+            "name": "Pine Creek Rehabilitation and Nursing",
+            "type": "Nursing Home",
+            "address": {
+                "street": "876 West 700 South",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84104"
+            },
+            "contact": {
+                "phone": "8013559649",
+                "phone_formatted": "8013559649"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.7541,
+                "longitude": -111.91
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 34,
+                "provider_type": "Medicaid",
+                "legal_business_name": "Legal Business Name Not Available",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 1.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 2.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://pinecreekrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=10597197877020807314",
+                "verified_phone": "+1 801-355-9649",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:46.679929"
+            }
+        },
+        {
+            "name": "Pine View Transitional Rehab",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1497 East Skyline Drive",
+                "city": "Ogden",
+                "state": "UT",
+                "zip": "84405"
+            },
+            "contact": {
+                "phone": "8016891600",
+                "phone_formatted": "8016891600"
+            },
+            "location": {
+                "county": "Weber",
+                "latitude": 41.1515,
+                "longitude": -111.94
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 30,
+                "provider_type": "Medicare",
+                "legal_business_name": "AHC OGDEN LLC",
+                "chain_name": "ADVANCED HEALTH CARE"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 5.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.ahcfacilities.com/pine-view/",
+                "google_maps_url": "https://maps.google.com/?cid=14366266558100079587",
+                "verified_phone": "+1 801-689-1600",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:47.632886"
+            }
+        },
+        {
+            "name": "Pinnacle Nursing and Rehabilitation Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1340 East 300 North",
+                "city": "Price",
+                "state": "UT",
+                "zip": "84501"
+            },
+            "contact": {
+                "phone": "4356379213",
+                "phone_formatted": "4356379213"
+            },
+            "location": {
+                "county": "Carbon",
+                "latitude": 39.5952,
+                "longitude": -110.79
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 100,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.pinnaclenursing.com/",
+                "google_maps_url": "https://maps.google.com/?cid=14188939014151482050",
+                "verified_phone": "+1 435-637-9213",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:48.476108"
+            }
+        },
+        {
+            "name": "Pointe Meadows Health and Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "2750 North Digital Drive",
+                "city": "Lehi",
+                "state": "UT",
+                "zip": "84043"
+            },
+            "contact": {
+                "phone": "3853745600",
+                "phone_formatted": "3853745600"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.4283,
+                "longitude": -111.89
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 99,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://pointemeadows.com/",
+                "google_maps_url": "https://maps.google.com/?cid=13528237830756495809",
+                "verified_phone": "+1 385-374-5600",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:49.342451"
+            }
+        },
+        {
+            "name": "Provo Rehabilitation and Nursing",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1001 North 500 West",
+                "city": "Provo",
+                "state": "UT",
+                "zip": "84604"
+            },
+            "contact": {
+                "phone": "8013779661",
+                "phone_formatted": "8013779661"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.2464,
+                "longitude": -111.67
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 220,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.provorehabilitation.com/",
+                "google_maps_url": "https://maps.google.com/?cid=11976012344588136869",
+                "verified_phone": "+1 801-377-9661",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:50.318258"
+            }
+        },
+        {
+            "name": "Red Cliffs Health and Rehab",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1745 East 280 North",
+                "city": "St George",
+                "state": "UT",
+                "zip": "84790"
+            },
+            "contact": {
+                "phone": "4356287770",
+                "phone_formatted": "4356287770"
+            },
+            "location": {
+                "county": "Washington",
+                "latitude": 37.1132,
+                "longitude": -113.54
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 124,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "CASCADES HEALTHCARE"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://redcliffsrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=8410688878006557101",
+                "verified_phone": "+1 435-628-7770",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:51.171651"
+            }
+        },
+        {
+            "name": "Rocky Mountain Care - Cottage on Vine",
+            "type": "Nursing Home",
+            "address": {
+                "street": "835 East Vine Street",
+                "city": "Murray",
+                "state": "UT",
+                "zip": "84107"
+            },
+            "contact": {
+                "phone": "8016933800",
+                "phone_formatted": "8016933800"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6454,
+                "longitude": -111.87
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Individual",
+                "certified_beds": 61,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "ROCKY MOUNTAIN CARE"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 2.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.rmcare.com/",
+                "google_maps_url": "https://maps.google.com/?cid=8097692299537250927",
+                "verified_phone": "+1 801-693-3800",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:52.051836"
+            }
+        },
+        {
+            "name": "Rocky Mountain Care - Hunter Hollow",
+            "type": "Nursing Home",
+            "address": {
+                "street": "4090 West Pioneer Parkway",
+                "city": "West Valley City",
+                "state": "UT",
+                "zip": "84120"
+            },
+            "contact": {
+                "phone": "8013974400",
+                "phone_formatted": "8013974400"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6984,
+                "longitude": -111.99
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 124,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "ROCKY MOUNTAIN CARE"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://rockymountaincare.com/locations/hunter-hollow-west-valley-city-ut/",
+                "google_maps_url": "https://maps.google.com/?cid=15285335146002605429",
+                "verified_phone": "+1 801-397-4400",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:52.976068"
+            }
+        },
+        {
+            "name": "Rocky Mountain Care - Maple Dell",
+            "type": "Nursing Home",
+            "address": {
+                "street": "55 South Professional Way",
+                "city": "Payson",
+                "state": "UT",
+                "zip": "84651"
+            },
+            "contact": {
+                "phone": "8014659211",
+                "phone_formatted": "8014659211"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.0438,
+                "longitude": -111.71
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 76,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "CANYONLANDS HEALTH CARE SPECIAL SERVICE DISTRICT",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 1.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 3.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://rockymountaincare.com/locations/maple-dell-payson-ut/",
+                "google_maps_url": "https://maps.google.com/?cid=6958523749914063106",
+                "verified_phone": "+1 801-465-9211",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:54.151796"
+            }
+        },
+        {
+            "name": "Rocky Mountain Care - Riverton",
+            "type": "Nursing Home",
+            "address": {
+                "street": "3419 West 12600 South",
+                "city": "Riverton",
+                "state": "UT",
+                "zip": "84065"
+            },
+            "contact": {
+                "phone": "8016933900",
+                "phone_formatted": "8016933900"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.5223,
+                "longitude": -111.97
+            },
+            "facility_details": {
+                "ownership_type": "Non profit - Corporation",
+                "certified_beds": 40,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "ROCKY MOUNTAIN CARE"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.rmcare.com/locations/utah/rocky-mountain-care-riverton/",
+                "google_maps_url": "https://maps.google.com/?cid=18296024879456957286",
+                "verified_phone": "+1 801-693-3900",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:55.233489"
+            }
+        },
+        {
+            "name": "Rocky Mountain Care - The Lodge",
+            "type": "Nursing Home",
+            "address": {
+                "street": "544 East 1200 South",
+                "city": "Heber City",
+                "state": "UT",
+                "zip": "84032"
+            },
+            "contact": {
+                "phone": "4356545500",
+                "phone_formatted": "4356545500"
+            },
+            "location": {
+                "county": "Wasatch",
+                "latitude": 40.4928,
+                "longitude": -111.4
+            },
+            "facility_details": {
+                "ownership_type": "Non profit - Corporation",
+                "certified_beds": 92,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "ROCKY MOUNTAIN CARE"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.rmcare.com/locations/utah/rocky-mountain-care-the-lodge/",
+                "google_maps_url": "https://maps.google.com/?cid=10020630403790415276",
+                "verified_phone": "+1 435-654-5500",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:56.272507"
+            }
+        },
+        {
+            "name": "Rocky Mountain Care - Willow Springs",
+            "type": "Nursing Home",
+            "address": {
+                "street": "85 East 2000 North",
+                "city": "Tooele",
+                "state": "UT",
+                "zip": "84074"
+            },
+            "contact": {
+                "phone": "4358432000",
+                "phone_formatted": "4358432000"
+            },
+            "location": {
+                "county": "Tooele",
+                "latitude": 40.5656,
+                "longitude": -112.3
+            },
+            "facility_details": {
+                "ownership_type": "Non profit - Corporation",
+                "certified_beds": 112,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "ROCKY MOUNTAIN CARE"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.rmcare.com/locations/utah/rocky-mountain-care-willow-springs/",
+                "google_maps_url": "https://maps.google.com/?cid=9435409523094546807",
+                "verified_phone": "+1 435-843-2000",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:57.177085"
+            }
+        },
+        {
+            "name": "Rocky Mountain Care Logan",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1480 North 400 East",
+                "city": "Logan",
+                "state": "UT",
+                "zip": "84341"
+            },
+            "contact": {
+                "phone": "4357505501",
+                "phone_formatted": "4357505501"
+            },
+            "location": {
+                "county": "Cache",
+                "latitude": 41.7593,
+                "longitude": -111.82
+            },
+            "facility_details": {
+                "ownership_type": "Non profit - Other",
+                "certified_beds": 120,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "ROCKY MOUNTAIN CARE"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://rockymountaincare.com/locations/rocky-mountain-care-logan-ut/",
+                "google_maps_url": "https://maps.google.com/?cid=14964281686191625662",
+                "verified_phone": "+1 435-750-5501",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:58.015263"
+            }
+        },
+        {
+            "name": "Rocky Mountain Care- Clearfield",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1481 East 1450 South",
+                "city": "Clearfield",
+                "state": "UT",
+                "zip": "84015"
+            },
+            "contact": {
+                "phone": "8017284300",
+                "phone_formatted": "8017284300"
+            },
+            "location": {
+                "county": "Davis",
+                "latitude": 41.0928,
+                "longitude": -112.0
+            },
+            "facility_details": {
+                "ownership_type": "Non profit - Corporation",
+                "certified_beds": 168,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "ROCKY MOUNTAIN CARE"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://rockymountaincare.com/locations/rocky-mountain-care-clearfield-ut/",
+                "google_maps_url": "https://maps.google.com/?cid=12449064324223162101",
+                "verified_phone": "+1 801-728-4300",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:58.425547"
+            }
+        },
+        {
+            "name": "San Rafael Health and Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "455 West Mill Road",
+                "city": "Ferron",
+                "state": "UT",
+                "zip": "84523"
+            },
+            "contact": {
+                "phone": "4353842301",
+                "phone_formatted": "4353842301"
+            },
+            "location": {
+                "county": "Emery",
+                "latitude": 39.0916,
+                "longitude": -111.14
+            },
+            "facility_details": {
+                "ownership_type": "Government - County",
+                "certified_beds": 51,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "EMERY COUNTY CARE AND REHABILITATION CENTER",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 1.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 3.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://emery.utah.gov/home/residents/care-rehab/",
+                "google_maps_url": "https://maps.google.com/?cid=17318289381827898012",
+                "verified_phone": "+1 435-384-2301",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:58.787617"
+            }
+        },
+        {
+            "name": "Sandstone Richfield (Monument Healthcare / Mission",
+            "type": "Nursing Home",
+            "address": {
+                "street": "163 East 1000 North",
+                "city": "Richfield",
+                "state": "UT",
+                "zip": "84701"
+            },
+            "contact": {
+                "phone": "4358968211",
+                "phone_formatted": "4358968211"
+            },
+            "location": {
+                "county": "Sevier",
+                "latitude": 38.782,
+                "longitude": -112.08
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 98,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "GUNNISON VALLEY HOSPITAL",
+                "chain_name": "MONUMENT HEALTH GROUP"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://missionhealthservices.org/communities/mission-at-richfield-nursing-rehabilitation/",
+                "google_maps_url": "https://maps.google.com/?cid=9176040059892659555",
+                "verified_phone": "+1 435-896-8211",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:59.146381"
+            }
+        },
+        {
+            "name": "Sandy Health and Rehab",
+            "type": "Nursing Home",
+            "address": {
+                "street": "50 East 9000 South",
+                "city": "Sandy",
+                "state": "UT",
+                "zip": "84070"
+            },
+            "contact": {
+                "phone": "8015619839",
+                "phone_formatted": "8015619839"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.5881,
+                "longitude": -111.89
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 141,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "CASCADES HEALTHCARE"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 1.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://sandyrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=6340003049370793316",
+                "verified_phone": "+1 801-561-9839",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:59.502955"
+            }
+        },
+        {
+            "name": "Seasons Healthcare and Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "242 North 200 West",
+                "city": "St. George",
+                "state": "UT",
+                "zip": "84770"
+            },
+            "contact": {
+                "phone": "4356281601",
+                "phone_formatted": "4356281601"
+            },
+            "location": {
+                "county": "Washington",
+                "latitude": 37.1123,
+                "longitude": -113.59
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 53,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "CANYONLANDS HEALTH CARE SPECIAL SERVICE DISTRICT",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 2.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.seasonshealthgroup.com/",
+                "google_maps_url": "https://maps.google.com/?cid=14710312020901602819",
+                "verified_phone": "+1 435-628-1601",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:22:59.868212"
+            }
+        },
+        {
+            "name": "South Davis Specialty Care",
+            "type": "Nursing Home",
+            "address": {
+                "street": "481 South 400 East",
+                "city": "Bountiful",
+                "state": "UT",
+                "zip": "84010"
+            },
+            "contact": {
+                "phone": "8012952361",
+                "phone_formatted": "8012952361"
+            },
+            "location": {
+                "county": "Davis",
+                "latitude": 40.8845,
+                "longitude": -111.87
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Partnership",
+                "certified_beds": 95,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "HOLBROOK HEALTHCARE LLC",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.sdch.com/",
+                "google_maps_url": "https://maps.google.com/?cid=17462803257292041923",
+                "verified_phone": "+1 801-295-2361",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:00.239792"
+            }
+        },
+        {
+            "name": "South Ogden Post-Acute",
+            "type": "Nursing Home",
+            "address": {
+                "street": "5540 South 1050 East",
+                "city": "Ogden",
+                "state": "UT",
+                "zip": "84405"
+            },
+            "contact": {
+                "phone": "8014798455",
+                "phone_formatted": "8014798455"
+            },
+            "location": {
+                "county": "Weber",
+                "latitude": 41.162,
+                "longitude": -111.95
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 122,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "CASCADES HEALTHCARE"
+            },
+            "ratings": {
+                "overall_rating": null,
+                "health_inspection_rating": null,
+                "quality_measure_rating": null,
+                "staffing_rating": null
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://southogdenrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=13706349403322468085",
+                "verified_phone": "+1 801-479-8455",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:00.604641"
+            }
+        },
+        {
+            "name": "Southern Utah Veterans Home - Ivins",
+            "type": "Nursing Home",
+            "address": {
+                "street": "160 North 200 East",
+                "city": "Ivins",
+                "state": "UT",
+                "zip": "84738"
+            },
+            "contact": {
+                "phone": "4356345220",
+                "phone_formatted": "4356345220"
+            },
+            "location": {
+                "county": "Washington",
+                "latitude": 37.1711,
+                "longitude": -113.68
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 108,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "AVALON CARE CENTER - VA IVINS LLC",
+                "chain_name": "AVALON HEALTH CARE"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 3.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.avalonhealthcare.com/ivins/",
+                "google_maps_url": "https://maps.google.com/?cid=4942316391235569480",
+                "verified_phone": "+1 435-634-5220",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:00.963356"
+            }
+        },
+        {
+            "name": "Spanish Fork Rehabilitation and Nursing",
+            "type": "Nursing Home",
+            "address": {
+                "street": "151 East Center Street",
+                "city": "Spanish Fork",
+                "state": "UT",
+                "zip": "84660"
+            },
+            "contact": {
+                "phone": "8017986220",
+                "phone_formatted": "8017986220"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.1098,
+                "longitude": -111.65
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 45,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "BEAVER VALLEY HOSPITAL"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://spanishforkrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=14190238920014420927",
+                "verified_phone": "+1 801-798-6220",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:01.324954"
+            }
+        },
+        {
+            "name": "Spring Creek Healthcare Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "4600 South Highland Drive",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84117"
+            },
+            "contact": {
+                "phone": "8012721892",
+                "phone_formatted": "8012721892"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.6687,
+                "longitude": -111.84
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 92,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "CASCADES HEALTHCARE"
+            },
+            "ratings": {
+                "overall_rating": 1.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 2.0,
+                "staffing_rating": 1.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.springcreekhc.com/",
+                "google_maps_url": "https://maps.google.com/?cid=13408267501087818939",
+                "verified_phone": "+1 801-272-1892",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:01.691763"
+            }
+        },
+        {
+            "name": "St Joseph Villa",
+            "type": "Nursing Home",
+            "address": {
+                "street": "451 East Bishop Federal Lane",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84115"
+            },
+            "contact": {
+                "phone": "8014877557",
+                "phone_formatted": "8014877557"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.728,
+                "longitude": -111.88
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 221,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.stjosephvilla.com/",
+                "google_maps_url": "https://maps.google.com/?cid=12438120883146412710",
+                "verified_phone": "+1 801-487-7557",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:02.058388"
+            }
+        },
+        {
+            "name": "St. George Rehabilitation",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1032 East 100 South",
+                "city": "St. George",
+                "state": "UT",
+                "zip": "84770"
+            },
+            "contact": {
+                "phone": "4356280488",
+                "phone_formatted": "4356280488"
+            },
+            "location": {
+                "county": "Washington",
+                "latitude": 37.1064,
+                "longitude": -113.56
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Partnership",
+                "certified_beds": 99,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 2.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://stgeorgerehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=2516082396331798019",
+                "verified_phone": "+1 435-628-0488",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:02.435849"
+            }
+        },
+        {
+            "name": "Stonehenge of American Fork",
+            "type": "Nursing Home",
+            "address": {
+                "street": "538 South 500 East",
+                "city": "American Fork",
+                "state": "UT",
+                "zip": "84003"
+            },
+            "contact": {
+                "phone": "8016422000",
+                "phone_formatted": "8016422000"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.3669,
+                "longitude": -111.79
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 119,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "KANE COUNTY HUMAN RESOURCE SPECIAL SERVICE DISTRICT",
+                "chain_name": "STONEHENGE OF UTAH"
+            },
+            "ratings": {
+                "overall_rating": 3.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 2.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.stonehengeutah.com/",
+                "google_maps_url": "https://maps.google.com/?cid=7866943775253761842",
+                "verified_phone": "+1 801-642-2000",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:02.791726"
+            }
+        },
+        {
+            "name": "Stonehenge of Cedar City",
+            "type": "Nursing Home",
+            "address": {
+                "street": "333 West 1425 North",
+                "city": "Cedar City",
+                "state": "UT",
+                "zip": "84721"
+            },
+            "contact": {
+                "phone": "4352671700",
+                "phone_formatted": "4352671700"
+            },
+            "location": {
+                "county": "Iron",
+                "latitude": 37.703,
+                "longitude": -113.07
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 50,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "KANE COUNTY HUMAN RESOURCE SPECIAL SERVICE DISTRICT",
+                "chain_name": "STONEHENGE OF UTAH"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.stonehengeutah.com/cedar-city",
+                "google_maps_url": "https://maps.google.com/?cid=5824955220563613777",
+                "verified_phone": "+1 435-267-1700",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:03.157182"
+            }
+        },
+        {
+            "name": "Stonehenge of Ogden",
+            "type": "Nursing Home",
+            "address": {
+                "street": "5648 South Adams Avenue",
+                "city": "Washington Terrace",
+                "state": "UT",
+                "zip": "84405"
+            },
+            "contact": {
+                "phone": "8014750500",
+                "phone_formatted": "8014750500"
+            },
+            "location": {
+                "county": "Weber",
+                "latitude": 41.1809,
+                "longitude": -111.97
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 52,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "KANE COUNTY HUMAN RESOURCE SPECIAL SERVICE DISTRICT",
+                "chain_name": "STONEHENGE OF UTAH"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.stonehengeutah.com/ogden",
+                "google_maps_url": "https://maps.google.com/?cid=9846317493912630663",
+                "verified_phone": "+1 801-475-0500",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:03.546019"
+            }
+        },
+        {
+            "name": "Stonehenge of Orem",
+            "type": "Nursing Home",
+            "address": {
+                "street": "435 West Center Street",
+                "city": "Orem",
+                "state": "UT",
+                "zip": "84057"
+            },
+            "contact": {
+                "phone": "8018505454",
+                "phone_formatted": "8018505454"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.2972,
+                "longitude": -111.71
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 34,
+                "provider_type": "Medicare",
+                "legal_business_name": "STONEHENGE OF OREM, LLC",
+                "chain_name": "STONEHENGE OF UTAH"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 5.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.stonehengeutah.com/",
+                "google_maps_url": "https://maps.google.com/?cid=10642599440509363111",
+                "verified_phone": "+1 801-850-5454",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:03.917452"
+            }
+        },
+        {
+            "name": "Stonehenge of Richfield",
+            "type": "Nursing Home",
+            "address": {
+                "street": "125 East 600 North",
+                "city": "Richfield",
+                "state": "UT",
+                "zip": "84701"
+            },
+            "contact": {
+                "phone": "4358962000",
+                "phone_formatted": "4358962000"
+            },
+            "location": {
+                "county": "Sevier",
+                "latitude": 38.7765,
+                "longitude": -112.08
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 30,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "KANE COUNTY HUMAN RESOURCE SPECIAL SERVICE DISTRICT",
+                "chain_name": "STONEHENGE OF UTAH"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.stonehengeutah.com/richfield",
+                "google_maps_url": "https://maps.google.com/?cid=11343917493887024099",
+                "verified_phone": "+1 435-896-2000",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:04.320402"
+            }
+        },
+        {
+            "name": "Stonehenge of South Jordan",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1371 West South Jordan Parkway",
+                "city": "South Jordan",
+                "state": "UT",
+                "zip": "84095"
+            },
+            "contact": {
+                "phone": "8012531370",
+                "phone_formatted": "8012531370"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.5622,
+                "longitude": -111.93
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 32,
+                "provider_type": "Medicare",
+                "legal_business_name": "STONEHENGE OF SOUTH JORDAN LLC",
+                "chain_name": "STONEHENGE OF UTAH"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 5.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.stonehengeutah.com/south-jordan",
+                "google_maps_url": "https://maps.google.com/?cid=15876629270846806027",
+                "verified_phone": "+1 801-253-1370",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:04.679475"
+            }
+        },
+        {
+            "name": "Stonehenge of Springville",
+            "type": "Nursing Home",
+            "address": {
+                "street": "909 West 450 South",
+                "city": "Springville",
+                "state": "UT",
+                "zip": "84663"
+            },
+            "contact": {
+                "phone": "8014891900",
+                "phone_formatted": "8014891900"
+            },
+            "location": {
+                "county": "Utah",
+                "latitude": 40.1607,
+                "longitude": -111.65
+            },
+            "facility_details": {
+                "ownership_type": "Government - Hospital district",
+                "certified_beds": 50,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "KANE COUNTY HUMAN RESOURCE SPECIAL SERVICE DISTRICT",
+                "chain_name": "STONEHENGE OF UTAH"
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 4.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://stonehengeofspringville.com/",
+                "google_maps_url": "https://maps.google.com/?cid=5573212411949276872",
+                "verified_phone": "+1 801-489-1900",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:05.038586"
+            }
+        },
+        {
+            "name": "Sunshine Terrace Skilled Nursing",
+            "type": "Nursing Home",
+            "address": {
+                "street": "248 West 300 North",
+                "city": "Logan",
+                "state": "UT",
+                "zip": "84321"
+            },
+            "contact": {
+                "phone": "4357520411",
+                "phone_formatted": "4357520411"
+            },
+            "location": {
+                "county": "Cache",
+                "latitude": 41.7372,
+                "longitude": -111.84
+            },
+            "facility_details": {
+                "ownership_type": "Government - Hospital district",
+                "certified_beds": 172,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "MILFORD MEMORIAL HOSPITAL",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 4.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 3.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "http://www.sunshineterrace.org/",
+                "google_maps_url": "https://maps.google.com/?cid=14827266344603791499",
+                "verified_phone": "+1 435-752-0411",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:05.423805"
+            }
+        },
+        {
+            "name": "Thatcher Brook Rehabilitation & Care Center",
+            "type": "Nursing Home",
+            "address": {
+                "street": "1795 South Chelemes Way",
+                "city": "Clearfieldd",
+                "state": "UT",
+                "zip": "84015"
+            },
+            "contact": {
+                "phone": "8016145700",
+                "phone_formatted": "8016145700"
+            },
+            "location": {
+                "county": "Davis",
+                "latitude": 41.0826,
+                "longitude": -112.02
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 30,
+                "provider_type": "Medicare",
+                "legal_business_name": "THATCHER BROOK REHABILITATION AND CARE CENTER LLC",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 3.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://thatcherbrookrehab.com/",
+                "google_maps_url": "https://maps.google.com/?cid=15682574264101334763",
+                "verified_phone": "+1 801-614-5700",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:05.800735"
+            }
+        },
+        {
+            "name": "The Terrace at Mt. Ogden (The Terrace Transitional",
+            "type": "Nursing Home",
+            "address": {
+                "street": "400 East 5350 South",
+                "city": "Ogden",
+                "state": "UT",
+                "zip": "84405"
+            },
+            "contact": {
+                "phone": "8014799855",
+                "phone_formatted": "8014799855"
+            },
+            "location": {
+                "county": "Weber",
+                "latitude": 41.1667,
+                "longitude": -111.97
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Corporation",
+                "certified_beds": 120,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "BEAVER VALLEY HOSPITAL",
+                "chain_name": "THE ENSIGN GROUP"
+            },
+            "ratings": {
+                "overall_rating": 2.0,
+                "health_inspection_rating": 2.0,
+                "quality_measure_rating": 4.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://theterracetransitional.com/",
+                "google_maps_url": "https://maps.google.com/?cid=13448141133741106186",
+                "verified_phone": "+1 801-479-9855",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:06.162985"
+            }
+        },
+        {
+            "name": "Uintah Basin Rehabilitation and Senior Villa",
+            "type": "Nursing Home",
+            "address": {
+                "street": "265 North 300 West",
+                "city": "Roosevelt",
+                "state": "UT",
+                "zip": "84066"
+            },
+            "contact": {
+                "phone": "4357222497",
+                "phone_formatted": "4357222497"
+            },
+            "location": {
+                "county": "Duchesne",
+                "latitude": 40.3029,
+                "longitude": -110.0
+            },
+            "facility_details": {
+                "ownership_type": "Government - County",
+                "certified_beds": 90,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "COUNTY OF DUCHESNE",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 5.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 3.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://ubh.org/the-villa/",
+                "google_maps_url": "https://maps.google.com/?cid=762461838898724008",
+                "verified_phone": "+1 435-722-2497",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:06.527387"
+            }
+        },
+        {
+            "name": "Uintah Health Care Special Service District",
+            "type": "Nursing Home",
+            "address": {
+                "street": "510 South 500 West",
+                "city": "Vernal",
+                "state": "UT",
+                "zip": "84078"
+            },
+            "contact": {
+                "phone": "4357813505",
+                "phone_formatted": "4357813505"
+            },
+            "location": {
+                "county": "Uintah",
+                "latitude": 40.463,
+                "longitude": -109.54
+            },
+            "facility_details": {
+                "ownership_type": "Government - County",
+                "certified_beds": 110,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "UINTAH HEALTH CARE SPECIAL SERVICE DISTRICT",
+                "chain_name": null
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 5.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.uintahhealthcaressd.org/uintah-care-center",
+                "google_maps_url": "https://maps.google.com/?cid=5335651148488163270",
+                "verified_phone": "+1 435-781-3523",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:06.895751"
+            }
+        },
+        {
+            "name": "William E Christofferson Salt Lake Veterans Home",
+            "type": "Nursing Home",
+            "address": {
+                "street": "700 South Foothill Drive",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "zip": "84113"
+            },
+            "contact": {
+                "phone": "8015841900",
+                "phone_formatted": "8015841900"
+            },
+            "location": {
+                "county": "Salt Lake",
+                "latitude": 40.7549,
+                "longitude": -111.83
+            },
+            "facility_details": {
+                "ownership_type": "For profit - Limited Liability company",
+                "certified_beds": 81,
+                "provider_type": "Medicare and Medicaid",
+                "legal_business_name": "AVALON CARE CENTER - VA SALT LAKE II LLC",
+                "chain_name": "AVALON HEALTH CARE"
+            },
+            "ratings": {
+                "overall_rating": 5.0,
+                "health_inspection_rating": 4.0,
+                "quality_measure_rating": 5.0,
+                "staffing_rating": 5.0
+            },
+            "data_source": {
+                "source": "CMS Provider Data Catalog",
+                "dataset": "Nursing Homes Including Rehab Services",
+                "date": "November 2025"
+            },
+            "online_presence": {
+                "website": "https://www.avalonhealthcare.com/slveterans/",
+                "google_maps_url": "https://maps.google.com/?cid=3706257782030256591",
+                "verified_phone": "+1 801-584-1900",
+                "business_status": "OPERATIONAL",
+                "last_updated": "2026-02-11T12:23:07.290172"
+            }
+        }
+    ]
+}

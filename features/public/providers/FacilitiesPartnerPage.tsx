@@ -1,10 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useNavigate } from 'react-router-dom';
 import { BadgeCheck, BarChart3, ShieldCheck, Star, Headphones, Building2 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 
 export const FacilitiesPartnerPage: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-warm-gray text-slate-900">
       <Helmet>
@@ -23,7 +26,12 @@ export const FacilitiesPartnerPage: React.FC = () => {
           </div>
           <span className="font-semibold text-lg tracking-tight">SilverTech</span>
         </div>
-        <Button variant="primary" size="sm" className="px-4 py-2 text-xs uppercase tracking-widest">
+        <Button
+          variant="primary"
+          size="sm"
+          className="px-4 py-2 text-xs uppercase tracking-widest"
+          onClick={() => navigate('/pricing')}
+        >
           Claim Listing
         </Button>
       </header>
@@ -74,7 +82,13 @@ export const FacilitiesPartnerPage: React.FC = () => {
                   <li className="flex items-center gap-2"><BarChart3 className="w-4 h-4 text-primary-600" /> Lead analytics dashboard</li>
                   <li className="flex items-center gap-2"><Headphones className="w-4 h-4 text-primary-600" /> Dedicated success manager</li>
                 </ul>
-                <Button variant="primary" className="w-full mt-4">Upgrade Today</Button>
+                <Button
+                  variant="primary"
+                  className="w-full mt-4"
+                  onClick={() => navigate('/pricing')}
+                >
+                  Upgrade Today
+                </Button>
               </div>
             </div>
           </Card>
@@ -90,7 +104,7 @@ export const FacilitiesPartnerPage: React.FC = () => {
           </p>
         </section>
 
-        <section>
+        <section id="claim-listing">
           <Card>
             <h2 className="text-2xl font-serif font-semibold mb-2">Claim Your Listing</h2>
             <p className="text-sm text-slate-600 mb-6">

@@ -1,0 +1,3256 @@
+{
+  "state": "Rhode Island",
+  "state_code": "RI",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 73,
+    "total_nursing_homes": 73,
+    "total_assisted_living": 0,
+    "total_certified_beds": 8231,
+    "counties_served": 5,
+    "average_beds_per_facility": 112.8
+  },
+  "quality_distribution": {
+    "five_star": 10,
+    "four_star": 22,
+    "three_star": 15,
+    "two_star": 12,
+    "one_star": 13
+  },
+  "counties": {
+    "Providence": {
+      "facility_count": 42,
+      "total_beds": 5071
+    },
+    "Washington": {
+      "facility_count": 9,
+      "total_beds": 799
+    },
+    "Kent": {
+      "facility_count": 11,
+      "total_beds": 1360
+    },
+    "Bristol": {
+      "facility_count": 5,
+      "total_beds": 486
+    },
+    "Newport": {
+      "facility_count": 6,
+      "total_beds": 515
+    }
+  },
+  "facilities": [
+    {
+      "name": "Hattie Ide Chaffee Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "200 Wampanoag Trail",
+        "city": "East Providence",
+        "state": "RI",
+        "zip": "2915"
+      },
+      "contact": {
+        "phone": "4014341520",
+        "phone_formatted": "4014341520"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.7961,
+        "longitude": -71.355
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 69,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HATTIE IDE CHAFFEE NURSING HOME INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.hattieidechaffee.com/",
+        "google_maps_url": "https://maps.google.com/?cid=1766335098213928574",
+        "verified_phone": "(401) 434-1520",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Royal of Westerly Nursing Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "79 Beach Street",
+        "city": "Westerly",
+        "state": "RI",
+        "zip": "2891"
+      },
+      "contact": {
+        "phone": "4015964925",
+        "phone_formatted": "4015964925"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 41.362,
+        "longitude": -71.829
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROYAL WESTERLY LLC",
+        "chain_name": "ROYAL HEALTH GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.royalhealthgroup.com/facility/royal-health-westerly/",
+        "google_maps_url": "https://maps.google.com/?cid=1163259237700460466",
+        "verified_phone": "(401) 596-4925",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Greenwood Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1139 Main Avenue",
+        "city": "Warwick",
+        "state": "RI",
+        "zip": "2886"
+      },
+      "contact": {
+        "phone": "4017396600",
+        "phone_formatted": "4017396600"
+      },
+      "location": {
+        "county": "Kent",
+        "latitude": 41.7163,
+        "longitude": -71.461
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 130,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HARBORSIDE RHODE ISLAND LIMITED PARTNERSHIP",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://greenwoodrnc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=4497701269235783020",
+        "verified_phone": "(401) 739-6600",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Kent Regency Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "660 Commonwealth Avenue",
+        "city": "Warwick",
+        "state": "RI",
+        "zip": "2886"
+      },
+      "contact": {
+        "phone": "4017394241",
+        "phone_formatted": "4017394241"
+      },
+      "location": {
+        "county": "Kent",
+        "latitude": 41.7014,
+        "longitude": -71.48
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 153,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "660 COMMONWEALTH AVENUE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/KentRegency",
+        "google_maps_url": "https://maps.google.com/?cid=173802163745103383",
+        "verified_phone": "(401) 739-4241",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Saint Elizabeth Home East Greenwich",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1 Saint Elizabeth Way",
+        "city": "East Greenwich",
+        "state": "RI",
+        "zip": "2818"
+      },
+      "contact": {
+        "phone": "4014716060",
+        "phone_formatted": "4014716060"
+      },
+      "location": {
+        "county": "Kent",
+        "latitude": 41.6394,
+        "longitude": -71.472
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 168,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAINT ELIZABETH HOME EAST GREENWICH",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://stelizabethcommunity.org/locations/saint-elizabeth-home",
+        "google_maps_url": "https://maps.google.com/?cid=17536429073839347015",
+        "verified_phone": "(401) 471-6060",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Briarcliffe Manor",
+      "type": "Nursing Home",
+      "address": {
+        "street": "49 Old Pocasset Road",
+        "city": "Johnston",
+        "state": "RI",
+        "zip": "2919"
+      },
+      "contact": {
+        "phone": "4019442450",
+        "phone_formatted": "4019442450"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8155,
+        "longitude": -71.515
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 122,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MEDICAL HOMES OF RHODE ISLAND INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://briarclifferi.com/?utm_source=Google-Listing&utm_medium=MANOR&utm_campaign=GOOGLE",
+        "google_maps_url": "https://maps.google.com/?cid=15273788551031955993",
+        "verified_phone": "(401) 944-2450",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Grace Barker Nursing Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "54 Barker Avenue",
+        "city": "Warren",
+        "state": "RI",
+        "zip": "2885"
+      },
+      "contact": {
+        "phone": "4012459100",
+        "phone_formatted": "4012459100"
+      },
+      "location": {
+        "county": "Bristol",
+        "latitude": 41.7277,
+        "longitude": -71.264
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 86,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GRACE BARKER NURSING CENTER, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.gracebarkerhealth.com/",
+        "google_maps_url": "https://maps.google.com/?cid=12856389358688991572",
+        "verified_phone": "(401) 245-9100",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Grandview Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 Chambers Street",
+        "city": "Cumberland",
+        "state": "RI",
+        "zip": "2864"
+      },
+      "contact": {
+        "phone": "4017247500",
+        "phone_formatted": "4017247500"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.9069,
+        "longitude": -71.397
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "100 CHAMBERS STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/Grandview",
+        "google_maps_url": "https://maps.google.com/?cid=3973760288947763035",
+        "verified_phone": "(401) 724-7500",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Sunny View Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "83 Corona Street",
+        "city": "Warwick",
+        "state": "RI",
+        "zip": "2886"
+      },
+      "contact": {
+        "phone": "4017379193",
+        "phone_formatted": "4017379193"
+      },
+      "location": {
+        "county": "Kent",
+        "latitude": 41.7232,
+        "longitude": -71.459
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 57,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "83 CORONA STREET EDEN OPERATIONS LLC",
+        "chain_name": "EDEN HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://sunnyviewnursing.com/",
+        "google_maps_url": "https://maps.google.com/?cid=4405053508984024930",
+        "verified_phone": "(401) 737-9193",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Oak Hill Center for Rehabilitation & Health Care",
+      "type": "Nursing Home",
+      "address": {
+        "street": "544 Pleasant Street",
+        "city": "Pawtucket",
+        "state": "RI",
+        "zip": "2860"
+      },
+      "contact": {
+        "phone": "4017258888",
+        "phone_formatted": "4017258888"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8639,
+        "longitude": -71.383
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 129,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "OAK HILL OPERATIONS ASSOCIATES LLC",
+        "chain_name": "CENTERS HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://oakhillrhc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=14768212327268679302",
+        "verified_phone": "(724) 837-7100",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "West Shore Health Center Inc",
+      "type": "Nursing Home",
+      "address": {
+        "street": "109 West Shore Road",
+        "city": "Warwick",
+        "state": "RI",
+        "zip": "2889"
+      },
+      "contact": {
+        "phone": "4017399440",
+        "phone_formatted": "4017399440"
+      },
+      "location": {
+        "county": "Kent",
+        "latitude": 41.7332,
+        "longitude": -71.402
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 145,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WARWICK HEALTH CENTRE INC.",
+        "chain_name": "HEALTH CONCEPTS, LTD."
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.healthconceptsltd.com/west-shore-health-center/",
+        "google_maps_url": "https://maps.google.com/?cid=11252097554585356064",
+        "verified_phone": "(401) 739-9440",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Golden Crest Nursing Centre",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 Smithfield Road",
+        "city": "North Providence",
+        "state": "RI",
+        "zip": "2904"
+      },
+      "contact": {
+        "phone": "4013531710",
+        "phone_formatted": "4013531710"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.856,
+        "longitude": -71.449
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 152,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEZZELLI NURSING HOME, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://goldencrestnursingcentre.com/",
+        "google_maps_url": "https://maps.google.com/?cid=16142825616372430093",
+        "verified_phone": "(401) 353-1710",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Silver Creek Rehab and Healthcare Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7 Creek Lane",
+        "city": "Bristol",
+        "state": "RI",
+        "zip": "2809"
+      },
+      "contact": {
+        "phone": "4012533000",
+        "phone_formatted": "4012533000"
+      },
+      "location": {
+        "county": "Bristol",
+        "latitude": 41.6795,
+        "longitude": -71.277
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 128,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SILVER CREEK MANOR SNF LLC",
+        "chain_name": "GREEN TREE HEALTHCARE MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://silvercreekhc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=14988913603845047329",
+        "verified_phone": "(401) 253-3000",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Cedar Crest Nursing Centre Inc",
+      "type": "Nursing Home",
+      "address": {
+        "street": "125 Scituate Avenue",
+        "city": "Cranston",
+        "state": "RI",
+        "zip": "2920"
+      },
+      "contact": {
+        "phone": "4019448500",
+        "phone_formatted": "4019448500"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.7791,
+        "longitude": -71.477
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 156,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CEDAR CREST NURSING CENTRE INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.cedarsliving.com/",
+        "google_maps_url": "https://maps.google.com/?cid=12227464720476608177",
+        "verified_phone": "(401) 944-8500",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Heatherwood Rehabilitation and Health Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "398 Bellevue Avenue",
+        "city": "Newport",
+        "state": "RI",
+        "zip": "2840"
+      },
+      "contact": {
+        "phone": "4018496600",
+        "phone_formatted": "4018496600"
+      },
+      "location": {
+        "county": "Newport",
+        "latitude": 41.4768,
+        "longitude": -71.308
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 114,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HEATHERWOOD RI LLC",
+        "chain_name": "ATHENA HEALTHCARE SYSTEMS"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.adviniacare.com/adviniacare-newport/",
+        "google_maps_url": "https://maps.google.com/?cid=10309078195313155983",
+        "verified_phone": "(401) 849-6600",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Grand Islander Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "333 Green End Avenue",
+        "city": "Middletown",
+        "state": "RI",
+        "zip": "2842"
+      },
+      "contact": {
+        "phone": "4018497100",
+        "phone_formatted": "4018497100"
+      },
+      "location": {
+        "county": "Newport",
+        "latitude": 41.5066,
+        "longitude": -71.286
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 146,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "333 GREEN END AVENUE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/GrandIslander",
+        "google_maps_url": "https://maps.google.com/?cid=14398274305083252579",
+        "verified_phone": "(401) 849-7100",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Lincolnwood Rehabilitation and Healthcare Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "610 Smithfield Road",
+        "city": "North Providence",
+        "state": "RI",
+        "zip": "2904"
+      },
+      "contact": {
+        "phone": "4013536300",
+        "phone_formatted": "4013536300"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8651,
+        "longitude": -71.469
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 200,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LINCOLNWOOD OPERATOR LLC",
+        "chain_name": "MARQUIS HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://lincolnwoodhc.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=main_button",
+        "google_maps_url": "https://maps.google.com/?cid=16447337479138315262",
+        "verified_phone": "(401) 353-6300",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Bannister Center for Rehabilitation and Health Car",
+      "type": "Nursing Home",
+      "address": {
+        "street": "135 Dodge Street",
+        "city": "Providence",
+        "state": "RI",
+        "zip": "2907"
+      },
+      "contact": {
+        "phone": "4015219600",
+        "phone_formatted": "4015219600"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8136,
+        "longitude": -71.425
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 161,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ADVINIACARE PROVIDENCE DODGE REHAB CENTER LLC",
+        "chain_name": "ADVINIACARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.adviniacare.com/adviniacareprovidence/",
+        "google_maps_url": "https://maps.google.com/?cid=12629710355503582409",
+        "verified_phone": "(401) 521-9600",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Heritage Hills Nursing & Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "80 Douglas Pike",
+        "city": "Smithfield",
+        "state": "RI",
+        "zip": "2917"
+      },
+      "contact": {
+        "phone": "4012312700",
+        "phone_formatted": "4012312700"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8761,
+        "longitude": -71.47
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HERITAGE HILLS OPERATOR LLC",
+        "chain_name": "MARQUIS HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://completecareheritage.com/",
+        "google_maps_url": "https://maps.google.com/?cid=2620975834313100360",
+        "verified_phone": "(410) 282-6310",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Royal Middletown Nursing Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "193 Forest Avenue",
+        "city": "Middletown",
+        "state": "RI",
+        "zip": "2842"
+      },
+      "contact": {
+        "phone": "4018472777",
+        "phone_formatted": "4018472777"
+      },
+      "location": {
+        "county": "Newport",
+        "latitude": 41.5282,
+        "longitude": -71.289
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROYAL MIDDLETOWN NURSING CENTER LLC",
+        "chain_name": "ROYAL HEALTH GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": null,
+        "google_maps_url": "https://maps.google.com/?cid=6778267715638853499",
+        "verified_phone": "(401) 847-2777",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Woonsocket Health Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "262 Poplar Street",
+        "city": "Woonsocket",
+        "state": "RI",
+        "zip": "2895"
+      },
+      "contact": {
+        "phone": "4017652100",
+        "phone_formatted": "4017652100"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 42.009,
+        "longitude": -71.487
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 150,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CON-V-CARE, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://woonsockethealthcentre.com/",
+        "google_maps_url": "https://maps.google.com/?cid=14208846428420969326",
+        "verified_phone": "(401) 765-2100",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Waterview Villa Rehabilitation and Health Care Cen",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1275 South Broadway",
+        "city": "East Providence",
+        "state": "RI",
+        "zip": "2914"
+      },
+      "contact": {
+        "phone": "4014387020",
+        "phone_formatted": "4014387020"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8064,
+        "longitude": -71.373
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 132,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WATERVIEW RI SNF, LLC",
+        "chain_name": "ATHENA HEALTHCARE SYSTEMS"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.adviniacare.com/adviniacare-waterviewvillas/",
+        "google_maps_url": "https://maps.google.com/?cid=3994102081635739158",
+        "verified_phone": "(401) 438-7020",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "The Friendly Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "303 Rhodes Avenue",
+        "city": "Woonsocket",
+        "state": "RI",
+        "zip": "2895"
+      },
+      "contact": {
+        "phone": "4017697220",
+        "phone_formatted": "4017697220"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 42.0057,
+        "longitude": -71.533
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 126,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FRIENDLY EDEN OPERATIONS LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://thefriendlynursinghome.com/",
+        "google_maps_url": "https://maps.google.com/?cid=4811917426414947868",
+        "verified_phone": "(401) 769-7220",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Overlook Nursing and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "14 Rock Avenue",
+        "city": "Pascoag",
+        "state": "RI",
+        "zip": "2859"
+      },
+      "contact": {
+        "phone": "4015682549",
+        "phone_formatted": "4015682549"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.9549,
+        "longitude": -71.706
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "OVERLOOK EDEN OPERATIONS LLC",
+        "chain_name": "EDEN HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.overlooknursing.com/",
+        "google_maps_url": "https://maps.google.com/?cid=3200836467796234485",
+        "verified_phone": "(401) 568-2549",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Hebert Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "180 Log Road",
+        "city": "Smithfield",
+        "state": "RI",
+        "zip": "2917"
+      },
+      "contact": {
+        "phone": "4012317016",
+        "phone_formatted": "4012317016"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.9108,
+        "longitude": -71.552
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 133,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ASLC RI II LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://heberthealthcenter.com/",
+        "google_maps_url": "https://maps.google.com/?cid=4523870453620220135",
+        "verified_phone": "(401) 231-7016",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "The Dawn Hill Home for Rehab and Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "One Dawn Hill Road",
+        "city": "Bristol",
+        "state": "RI",
+        "zip": "2809"
+      },
+      "contact": {
+        "phone": "4012532300",
+        "phone_formatted": "4012532300"
+      },
+      "location": {
+        "county": "Bristol",
+        "latitude": 41.6875,
+        "longitude": -71.27
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 133,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GREENTREE NURSING AND REHAB LLC",
+        "chain_name": "GREEN TREE HEALTHCARE MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://dawnhillhc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=10678387047376866240",
+        "verified_phone": "(401) 253-2300",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "SCANDINAVIAN HOME INC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1811 BROAD STREET",
+        "city": "CRANSTON",
+        "state": "RI",
+        "zip": "2905"
+      },
+      "contact": {
+        "phone": "4014611433",
+        "phone_formatted": "4014611433"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.7765,
+        "longitude": -71.4
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 74,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SCANDINAVIAN HOME INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.scandinaviancommunities.org/",
+        "google_maps_url": "https://maps.google.com/?cid=11261616242767503411",
+        "verified_phone": "(401) 461-1433",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Cherry Hill Manor",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2 Cherry Hill Road",
+        "city": "Johnston",
+        "state": "RI",
+        "zip": "2919"
+      },
+      "contact": {
+        "phone": "4012313102",
+        "phone_formatted": "4012313102"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8368,
+        "longitude": -71.482
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 171,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LIFE CARE CENTERS OF AMERICA, INC.",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://lcca.com/locations/ri/cherry-hill-manor/",
+        "google_maps_url": "https://maps.google.com/?cid=4319789015460765788",
+        "verified_phone": "(401) 231-3102",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "South Kingstown Nursing and Rehab Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2115 South County Trail",
+        "city": "West Kingston",
+        "state": "RI",
+        "zip": "2892"
+      },
+      "contact": {
+        "phone": "4017838568",
+        "phone_formatted": "4017838568"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 41.5014,
+        "longitude": -71.562
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ALLENS HEALTH CENTRE INC",
+        "chain_name": "HEALTH CONCEPTS, LTD."
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.healthconceptsltd.com/south-kingstown/",
+        "google_maps_url": "https://maps.google.com/?cid=4930616461239926743",
+        "verified_phone": "(401) 783-8568",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Evergreen House Health Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1 Evergreen Drive",
+        "city": "East Providence",
+        "state": "RI",
+        "zip": "2914"
+      },
+      "contact": {
+        "phone": "4014383250",
+        "phone_formatted": "4014383250"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8077,
+        "longitude": -71.345
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 160,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LIFE CARE CENTERS OF AMERICA, INC.",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://lcca.com/locations/ri/evergreen-house/",
+        "google_maps_url": "https://maps.google.com/?cid=12229542814005328915",
+        "verified_phone": "(401) 438-3250",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Elderwood Of Scallop Shell at Wakefield",
+      "type": "Nursing Home",
+      "address": {
+        "street": "55 Scallop Shell Way",
+        "city": "South Kingstown",
+        "state": "RI",
+        "zip": "2883"
+      },
+      "contact": {
+        "phone": "4017893006",
+        "phone_formatted": "4017893006"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 41.4516,
+        "longitude": -71.501
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "981 KINGS TOWN ROAD OPERATING COMPANY LLC",
+        "chain_name": "ELDERWOOD"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.elderwood.com/locations/elderwood-of-scallop-shell-at-wakefield",
+        "google_maps_url": "https://maps.google.com/?cid=13265508315483376465",
+        "verified_phone": "(401) 789-3006",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Orchard View Manor",
+      "type": "Nursing Home",
+      "address": {
+        "street": "135 Tripps Lane",
+        "city": "East Providence",
+        "state": "RI",
+        "zip": "2915"
+      },
+      "contact": {
+        "phone": "4014382250",
+        "phone_formatted": "4014382250"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.7906,
+        "longitude": -71.355
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 166,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ATHENA ORCHARD VIEW LLC",
+        "chain_name": "ATHENA HEALTHCARE SYSTEMS"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.adviniacare.com/adviniacare-orchardview/",
+        "google_maps_url": "https://maps.google.com/?cid=8723270775920732426",
+        "verified_phone": "(401) 438-2250",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Avalon Nursing Home INC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "57 Stokes Street",
+        "city": "Warwick",
+        "state": "RI",
+        "zip": "2889"
+      },
+      "contact": {
+        "phone": "4017381200",
+        "phone_formatted": "4017381200"
+      },
+      "location": {
+        "county": "Kent",
+        "latitude": 41.7195,
+        "longitude": -71.375
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 31,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AVALON NURSING HOME, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://avalonnhri.com/",
+        "google_maps_url": "https://maps.google.com/?cid=10065972275480022305",
+        "verified_phone": "(401) 738-1200",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Brentwood Health Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4000 Post Road",
+        "city": "Warwick",
+        "state": "RI",
+        "zip": "2886"
+      },
+      "contact": {
+        "phone": "4018848020",
+        "phone_formatted": "4018848020"
+      },
+      "location": {
+        "county": "Kent",
+        "latitude": 41.6825,
+        "longitude": -71.451
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 96,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "4000 POST ROAD EDEN OPERATIONS LLC",
+        "chain_name": "EDEN HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://brentwoodnursinghome.com/",
+        "google_maps_url": "https://maps.google.com/?cid=5787632153359887745",
+        "verified_phone": "(401) 884-8020",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Morgan Health Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "80 Morgan Avenue",
+        "city": "Johnston",
+        "state": "RI",
+        "zip": "2919"
+      },
+      "contact": {
+        "phone": "4019447800",
+        "phone_formatted": "4019447800"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8023,
+        "longitude": -71.475
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MORGAN OPERATOR LLC",
+        "chain_name": "MARQUIS HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://morganrehab.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=main_button",
+        "google_maps_url": "https://maps.google.com/?cid=7573099924379258563",
+        "verified_phone": "(401) 944-7800",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Bayview Rehabilitation and Healthcare Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "860 North Quidnessett Road",
+        "city": "North Kingstown",
+        "state": "RI",
+        "zip": "2852"
+      },
+      "contact": {
+        "phone": "4018841802",
+        "phone_formatted": "4018841802"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 41.6397,
+        "longitude": -71.424
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BAYVIEW OPERATOR, LLC",
+        "chain_name": "MARQUIS HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://bayviewrehabhc.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=main_button",
+        "google_maps_url": "https://maps.google.com/?cid=821069064460166462",
+        "verified_phone": "(401) 884-1802",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Pawtucket Falls Healthcare Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "70 Gill Ave",
+        "city": "Pawtucket",
+        "state": "RI",
+        "zip": "2861"
+      },
+      "contact": {
+        "phone": "4017227900",
+        "phone_formatted": "4017227900"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8628,
+        "longitude": -71.352
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 154,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VIOLET SNF HOLDCO LLC",
+        "chain_name": "THE MAYER FAMILY"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://pawtucketfallshc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=8704094132149456668",
+        "verified_phone": "(401) 722-7900",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Cra-Mar Meadows",
+      "type": "Nursing Home",
+      "address": {
+        "street": "575 Seven Mile Road",
+        "city": "Cranston",
+        "state": "RI",
+        "zip": "2920"
+      },
+      "contact": {
+        "phone": "4018285010",
+        "phone_formatted": "4018285010"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.7449,
+        "longitude": -71.55
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 41,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CRA-MAR CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.cramarmeadows.com/",
+        "google_maps_url": "https://maps.google.com/?cid=14860468397698314513",
+        "verified_phone": "(401) 828-5010",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "West View Nursing & Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "239 Legris Avenue",
+        "city": "West Warwick",
+        "state": "RI",
+        "zip": "2893"
+      },
+      "contact": {
+        "phone": "4018289000",
+        "phone_formatted": "4018289000"
+      },
+      "location": {
+        "county": "Kent",
+        "latitude": 41.6964,
+        "longitude": -71.507
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "239 LEGRIS AVENUE OPERATIONS LLC",
+        "chain_name": "EDEN HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://westviewnursing.com/",
+        "google_maps_url": "https://maps.google.com/?cid=14092361317405102867",
+        "verified_phone": "(401) 828-9000",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Warren Skilled Nursing and Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "642 Metacom Avenue",
+        "city": "Warren",
+        "state": "RI",
+        "zip": "2885"
+      },
+      "contact": {
+        "phone": "4012452860",
+        "phone_formatted": "4012452860"
+      },
+      "location": {
+        "county": "Bristol",
+        "latitude": 41.7134,
+        "longitude": -71.268
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 63,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://warrenrnc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=6337514001751771948",
+        "verified_phone": "(401) 245-2860",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Crestwood Nursing & Rehabilitation Center Inc",
+      "type": "Nursing Home",
+      "address": {
+        "street": "568 Child Street",
+        "city": "Warren",
+        "state": "RI",
+        "zip": "2885"
+      },
+      "contact": {
+        "phone": "4012451574",
+        "phone_formatted": "4012451574"
+      },
+      "location": {
+        "county": "Bristol",
+        "latitude": 41.7321,
+        "longitude": -71.255
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 76,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.vmrc.org/",
+        "google_maps_url": "https://maps.google.com/?cid=5033263073888096658",
+        "verified_phone": null,
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "South County Nursing and Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "740 Oak Hill Road",
+        "city": "North Kingstown",
+        "state": "RI",
+        "zip": "2852"
+      },
+      "contact": {
+        "phone": "4012944545",
+        "phone_formatted": "4012944545"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 41.5607,
+        "longitude": -71.488
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SOUTH COUNTY EDEN OPERATIONS LLC",
+        "chain_name": "EDEN HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://lakesidenursingrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=420669215238019433",
+        "verified_phone": "(401) 294-4545",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Elmwood Nursing and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "225 Elmwood Avenue",
+        "city": "Providence",
+        "state": "RI",
+        "zip": "2907"
+      },
+      "contact": {
+        "phone": "4012720600",
+        "phone_formatted": "4012720600"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8067,
+        "longitude": -71.425
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 70,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ELMWOOD HEALTH CENTER INC",
+        "chain_name": "HEALTH CONCEPTS, LTD."
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.healthconceptsltd.com/elmwood-health-center/",
+        "google_maps_url": "https://maps.google.com/?cid=2338022110013000120",
+        "verified_phone": "(401) 272-0600",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Jeanne Jugan Residence",
+      "type": "Nursing Home",
+      "address": {
+        "street": "964 Main Street",
+        "city": "Pawtucket",
+        "state": "RI",
+        "zip": "2860"
+      },
+      "contact": {
+        "phone": "4017234314",
+        "phone_formatted": "4017234314"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8652,
+        "longitude": -71.399
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 49,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "JEANNE JUGAN RESIDENCE OF THE LITTLE SISTERS OF THE POOR, INC.",
+        "chain_name": "LITTLE SISTERS OF THE POOR"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://littlesistersofthepoorpawtucket.org/",
+        "google_maps_url": "https://maps.google.com/?cid=16980078787249074104",
+        "verified_phone": "(401) 723-4314",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Village House Nursing & Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "70 Harrison Avenue",
+        "city": "Newport",
+        "state": "RI",
+        "zip": "2840"
+      },
+      "contact": {
+        "phone": "4018495222",
+        "phone_formatted": "4018495222"
+      },
+      "location": {
+        "county": "Newport",
+        "latitude": 41.4714,
+        "longitude": -71.323
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 95,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VILLAGE HOUSE CONVALESCENT HOME INC",
+        "chain_name": "HEALTH CONCEPTS, LTD."
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.healthconceptsltd.com/village-house/",
+        "google_maps_url": "https://maps.google.com/?cid=6058177917131164197",
+        "verified_phone": "(401) 849-5222",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Holiday Retirement Home Inc",
+      "type": "Nursing Home",
+      "address": {
+        "street": "30 Sayles Hill Road",
+        "city": "Manville",
+        "state": "RI",
+        "zip": "2838"
+      },
+      "contact": {
+        "phone": "4017651440",
+        "phone_formatted": "4017651440"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.9655,
+        "longitude": -71.483
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 170,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE HOLIDAY RETIREMENT HOME, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.holidayretirement.com/skilled-nursing-rehab/",
+        "google_maps_url": "https://maps.google.com/?cid=7937289933798747467",
+        "verified_phone": "(401) 765-1440",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "John Clarke Senior Living",
+      "type": "Nursing Home",
+      "address": {
+        "street": "600 Valley Road",
+        "city": "Middletown",
+        "state": "RI",
+        "zip": "2842"
+      },
+      "contact": {
+        "phone": "4018460743",
+        "phone_formatted": "4018460743"
+      },
+      "location": {
+        "county": "Newport",
+        "latitude": 41.5046,
+        "longitude": -71.289
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "JOHN CLARKE RETIREMENT CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.johnclarkeseniorliving.org/",
+        "google_maps_url": "https://maps.google.com/?cid=10520046607196461478",
+        "verified_phone": "(401) 846-0743",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Respiratory and Rehabilitation Center of RI",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10 Woodland Drive",
+        "city": "Coventry",
+        "state": "RI",
+        "zip": "2816"
+      },
+      "contact": {
+        "phone": "4018262000",
+        "phone_formatted": "4018262000"
+      },
+      "location": {
+        "county": "Kent",
+        "latitude": 41.6724,
+        "longitude": -71.593
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 210,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://coventryrnc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=11785324886951588811",
+        "verified_phone": "(401) 826-2000",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Trinity Health and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4 St Joseph Street",
+        "city": "Woonsocket",
+        "state": "RI",
+        "zip": "2895"
+      },
+      "contact": {
+        "phone": "4017655844",
+        "phone_formatted": "4017655844"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.9969,
+        "longitude": -71.506
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 185,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ASLC OPCO RI I, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://trinityhealthrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=1332243565715887458",
+        "verified_phone": "(401) 765-5844",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Bayberry Commons",
+      "type": "Nursing Home",
+      "address": {
+        "street": "181 Davis Drive",
+        "city": "Pascoag",
+        "state": "RI",
+        "zip": "2859"
+      },
+      "contact": {
+        "phone": "4015680600",
+        "phone_formatted": "4015680600"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.9366,
+        "longitude": -71.684
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 110,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BURRILLVILLE HEALTH CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.healthconceptsltd.com/bayberry-commons/",
+        "google_maps_url": "https://maps.google.com/?cid=15284339785454299989",
+        "verified_phone": "(401) 568-0600",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Westerly Health Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "280 High Street",
+        "city": "Westerly",
+        "state": "RI",
+        "zip": "2891"
+      },
+      "contact": {
+        "phone": "4013480020",
+        "phone_formatted": "4013480020"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 41.391,
+        "longitude": -71.823
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WESTERLY OPERATOR LLC",
+        "chain_name": "MARQUIS HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://westerlyrehab.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=main_button",
+        "google_maps_url": "https://maps.google.com/?cid=5820455051965276274",
+        "verified_phone": "(401) 348-0020",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Riverview Healthcare Community",
+      "type": "Nursing Home",
+      "address": {
+        "street": "546 Main Street",
+        "city": "Coventry",
+        "state": "RI",
+        "zip": "2816"
+      },
+      "contact": {
+        "phone": "4018216837",
+        "phone_formatted": "4018216837"
+      },
+      "location": {
+        "county": "Kent",
+        "latitude": 41.7271,
+        "longitude": -71.54
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 190,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RIVERVIEW OPERATOR LLC",
+        "chain_name": "MARQUIS HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://riverviewrehabhc.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=main_button",
+        "google_maps_url": "https://maps.google.com/?cid=15473688761350886574",
+        "verified_phone": "(401) 821-6837",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Eastgate Nursing & Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "198 Waterman Avenue",
+        "city": "East Providence",
+        "state": "RI",
+        "zip": "2914"
+      },
+      "contact": {
+        "phone": "4014312087",
+        "phone_formatted": "4014312087"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8219,
+        "longitude": -71.371
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "198 WATERMAN AVENUE LLC",
+        "chain_name": "HEALTH CONCEPTS, LTD."
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.healthconceptsltd.com/eastgate/",
+        "google_maps_url": "https://maps.google.com/?cid=18345864245345155602",
+        "verified_phone": "(401) 431-2087",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Elmhurst Rehabilitation and Healthcare Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "50 Maude Street",
+        "city": "Providence",
+        "state": "RI",
+        "zip": "2908"
+      },
+      "contact": {
+        "phone": "4014562600",
+        "phone_formatted": "4014562600"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8373,
+        "longitude": -71.434
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 206,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ELMHURST OPERATOR LLC",
+        "chain_name": "MARQUIS HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://elmhurstrehabhc.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=main_button",
+        "google_maps_url": "https://maps.google.com/?cid=8461689432361928620",
+        "verified_phone": "(401) 456-2600",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Mount St Rita Health Centre",
+      "type": "Nursing Home",
+      "address": {
+        "street": "15 Sumner Brown Road",
+        "city": "Cumberland",
+        "state": "RI",
+        "zip": "2864"
+      },
+      "contact": {
+        "phone": "4013336352",
+        "phone_formatted": "4013336352"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 42.0156,
+        "longitude": -71.405
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 98,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MOUNT ST. RITA HEALTH CENTRE",
+        "chain_name": "COVENANT HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.mountstrita.org/",
+        "google_maps_url": "https://maps.google.com/?cid=4127760884019292281",
+        "verified_phone": "(401) 333-6352",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Greenville Skilled Nursing and Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "735 Putnam Pike",
+        "city": "Greenville",
+        "state": "RI",
+        "zip": "2828"
+      },
+      "contact": {
+        "phone": "4019491200",
+        "phone_formatted": "4019491200"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8796,
+        "longitude": -71.576
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 131,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://greenvillernc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=13194946623252568007",
+        "verified_phone": "(401) 949-1200",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Alpine Nursing Home Inc",
+      "type": "Nursing Home",
+      "address": {
+        "street": "557 Weaver Hill Road",
+        "city": "Coventry",
+        "state": "RI",
+        "zip": "2816"
+      },
+      "contact": {
+        "phone": "4013975001",
+        "phone_formatted": "4013975001"
+      },
+      "location": {
+        "county": "Kent",
+        "latitude": 41.6662,
+        "longitude": -71.666
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ALPINE NURSING HOME INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://alpinenursinghome.com/",
+        "google_maps_url": "https://maps.google.com/?cid=10868058386496886068",
+        "verified_phone": "(401) 397-5001",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Steere House Nursing and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 Borden Street",
+        "city": "Providence",
+        "state": "RI",
+        "zip": "2903"
+      },
+      "contact": {
+        "phone": "4014547970",
+        "phone_formatted": "4014547970"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8133,
+        "longitude": -71.411
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STEERE HOUSE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.steerehouse.org/",
+        "google_maps_url": "https://maps.google.com/?cid=4664683186335894254",
+        "verified_phone": "(401) 454-7970",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Bethany Home of Rhode Island",
+      "type": "Nursing Home",
+      "address": {
+        "street": "111 South Angell Street",
+        "city": "Providence",
+        "state": "RI",
+        "zip": "2906"
+      },
+      "contact": {
+        "phone": "4018312870",
+        "phone_formatted": "4018312870"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8292,
+        "longitude": -71.384
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 33,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BETHANY HOME OF RHODE ISLAND",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": null,
+        "google_maps_url": null,
+        "verified_phone": null,
+        "business_status": null,
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Mansion Nursing and Rehab Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "104 Clay Street",
+        "city": "Central Falls",
+        "state": "RI",
+        "zip": "2863"
+      },
+      "contact": {
+        "phone": "4017220830",
+        "phone_formatted": "4017220830"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8833,
+        "longitude": -71.39
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MANSION, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mansionnursing.com/",
+        "google_maps_url": "https://maps.google.com/?cid=11385329105555425681",
+        "verified_phone": "(401) 722-0830",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Harris Health Center LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "833 Broadway",
+        "city": "East Providence",
+        "state": "RI",
+        "zip": "2914"
+      },
+      "contact": {
+        "phone": "4014347404",
+        "phone_formatted": "4014347404"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8177,
+        "longitude": -71.369
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 31,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HARRIS HEALTH CENTER, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": null,
+        "google_maps_url": "https://maps.google.com/?cid=11059452489596217861",
+        "verified_phone": "(401) 434-7404",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Crystal Lake Rehabilitation and Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "999 South Main Street",
+        "city": "Pascoag",
+        "state": "RI",
+        "zip": "2859"
+      },
+      "contact": {
+        "phone": "4015683091",
+        "phone_formatted": "4015683091"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.9365,
+        "longitude": -71.681
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 71,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CL OPERATING LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://crystallakerehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=1379556409933312207",
+        "verified_phone": "(401) 568-3091",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Roberts Health Centre Inc",
+      "type": "Nursing Home",
+      "address": {
+        "street": "25 Roberts Way",
+        "city": "North Kingstown",
+        "state": "RI",
+        "zip": "2852"
+      },
+      "contact": {
+        "phone": "4012943587",
+        "phone_formatted": "4012943587"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 41.5799,
+        "longitude": -71.493
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROBERTS HEALTH CENTRE, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": null,
+        "google_maps_url": "https://maps.google.com/?cid=11727494324417324345",
+        "verified_phone": "(401) 294-3587",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "St Antoine Residence",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10 Rhodes Avenue",
+        "city": "North Smithfield",
+        "state": "RI",
+        "zip": "2896"
+      },
+      "contact": {
+        "phone": "4017673500",
+        "phone_formatted": "4017673500"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 42.0045,
+        "longitude": -71.539
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 260,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAINT ANTOINE RESIDENCE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.stantoine.net/",
+        "google_maps_url": "https://maps.google.com/?cid=9524505640245589590",
+        "verified_phone": "(401) 767-3500",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "KINGSTON CENTER FOR REHABILITATION AND HEALTH CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "415 GARDNER ROAD",
+        "city": "WEST KINGSTON",
+        "state": "RI",
+        "zip": "2892"
+      },
+      "contact": {
+        "phone": "4012958520",
+        "phone_formatted": "4012958520"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 41.5643,
+        "longitude": -71.621
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 55,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SHADY ACRES OPERATIONS ASSOC LLC",
+        "chain_name": "CENTERS HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://kingston-center.facilities.centershealthcare.org/",
+        "google_maps_url": "https://maps.google.com/?cid=10120675568816799276",
+        "verified_phone": "(401) 295-8520",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Harris Health Care Center North",
+      "type": "Nursing Home",
+      "address": {
+        "street": "60 Eben Brown Lane",
+        "city": "Central Falls",
+        "state": "RI",
+        "zip": "2863"
+      },
+      "contact": {
+        "phone": "4017226000",
+        "phone_formatted": "4017226000"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8953,
+        "longitude": -71.39
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 32,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "QUALITY GERONTOLOGICAL SERVICES, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.harrishealth.com/",
+        "google_maps_url": "https://maps.google.com/?cid=16272571388870441635",
+        "verified_phone": "(401) 722-6000",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Oakland Grove Health Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "560 Cumberland Hill Road",
+        "city": "Woonsocket",
+        "state": "RI",
+        "zip": "2895"
+      },
+      "contact": {
+        "phone": "4017690800",
+        "phone_formatted": "4017690800"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.9974,
+        "longitude": -71.49
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 178,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "OAKLAND GROVE ASSOCIATES",
+        "chain_name": "ATHENA HEALTHCARE SYSTEMS"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.adviniacare.com/adviniacare-oaklandgrove/",
+        "google_maps_url": "https://maps.google.com/?cid=8338420847735655047",
+        "verified_phone": "(401) 769-0800",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "St Clare Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "309 Spring Street",
+        "city": "Newport",
+        "state": "RI",
+        "zip": "2840"
+      },
+      "contact": {
+        "phone": "4018493204",
+        "phone_formatted": "4018493204"
+      },
+      "location": {
+        "county": "Newport",
+        "latitude": 41.4824,
+        "longitude": -71.313
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST. CLARE HOME, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://stclarenewport.com/",
+        "google_maps_url": "https://maps.google.com/?cid=11664666811847779514",
+        "verified_phone": "(401) 849-3204",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Tockwotton on the Waterfront",
+      "type": "Nursing Home",
+      "address": {
+        "street": "500 Waterfront Drive",
+        "city": "East Providence",
+        "state": "RI",
+        "zip": "2914"
+      },
+      "contact": {
+        "phone": "4012725280",
+        "phone_formatted": "4012725280"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8153,
+        "longitude": -71.389
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 52,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TOCKWOTTON HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://tockwotton.org/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+        "google_maps_url": "https://maps.google.com/?cid=5131169504193052232",
+        "verified_phone": "(401) 272-5280",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Berkshire Place",
+      "type": "Nursing Home",
+      "address": {
+        "street": "455 Douglas Avenue",
+        "city": "Providence",
+        "state": "RI",
+        "zip": "2908"
+      },
+      "contact": {
+        "phone": "4015538600",
+        "phone_formatted": "4015538600"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8422,
+        "longitude": -71.428
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 220,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BERKSHIRE PLACE SNF LLC",
+        "chain_name": "GREEN TREE HEALTHCARE MANAGEMENT"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://berkshirerhc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=12231064774865574392",
+        "verified_phone": "(401) 553-8600",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Apple Rehab Clipper",
+      "type": "Nursing Home",
+      "address": {
+        "street": "161 Post Road",
+        "city": "Westerly",
+        "state": "RI",
+        "zip": "2891"
+      },
+      "contact": {
+        "phone": "4013228081",
+        "phone_formatted": "4013228081"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 41.3508,
+        "longitude": -71.782
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE CLIPPER HOME INC",
+        "chain_name": "APPLE REHAB"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.apple-rehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=17848262253485560615",
+        "verified_phone": "(401) 322-8081",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Stillwater Assisted Living and Skilled Nursing Com",
+      "type": "Nursing Home",
+      "address": {
+        "street": "20 Austin Avenue",
+        "city": "Greenville",
+        "state": "RI",
+        "zip": "2828"
+      },
+      "contact": {
+        "phone": "4019493880",
+        "phone_formatted": "4019493880"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.876,
+        "longitude": -71.556
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CORTLAND PLACE REHAB CENTER LLC",
+        "chain_name": "EDEN HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://stillwater-care.com/",
+        "google_maps_url": "https://maps.google.com/?cid=3534889656299839113",
+        "verified_phone": "(401) 949-3880",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Summit Commons Rehabilitation and Health Care Cent",
+      "type": "Nursing Home",
+      "address": {
+        "street": "99 Hillside Avenue",
+        "city": "Providence",
+        "state": "RI",
+        "zip": "2906"
+      },
+      "contact": {
+        "phone": "4015744800",
+        "phone_formatted": "4015744800"
+      },
+      "location": {
+        "county": "Providence",
+        "latitude": 41.8568,
+        "longitude": -71.394
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 165,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUMMIT RI SNF, LLC",
+        "chain_name": "ATHENA HEALTHCARE SYSTEMS"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.adviniacare.com/adviniacare-summitcommons/",
+        "google_maps_url": "https://maps.google.com/?cid=815841271923505217",
+        "verified_phone": "(401) 574-4800",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    }
+  ]
+}

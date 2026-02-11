@@ -1,0 +1,960 @@
+{
+  "state": "Alaska",
+  "state_code": "AK",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 20,
+    "total_nursing_homes": 20,
+    "total_assisted_living": 0,
+    "total_certified_beds": 815,
+    "counties_served": 14,
+    "average_beds_per_facility": 40.8
+  },
+  "quality_distribution": {
+    "five_star": 7,
+    "four_star": 6,
+    "three_star": 1,
+    "two_star": 3,
+    "one_star": 3
+  },
+  "counties": {
+    "Ketchikan Gateway": {
+      "facility_count": 1,
+      "total_beds": 29
+    },
+    "Wrangell": {
+      "facility_count": 1,
+      "total_beds": 18
+    },
+    "Anchorage": {
+      "facility_count": 3,
+      "total_beds": 248
+    },
+    "Petersburg": {
+      "facility_count": 1,
+      "total_beds": 15
+    },
+    "Fairbanks North Star": {
+      "facility_count": 1,
+      "total_beds": 71
+    },
+    "Kenai Peninsula": {
+      "facility_count": 3,
+      "total_beds": 128
+    },
+    "Nome": {
+      "facility_count": 1,
+      "total_beds": 18
+    },
+    "Juneau": {
+      "facility_count": 1,
+      "total_beds": 57
+    },
+    "Chugach": {
+      "facility_count": 2,
+      "total_beds": 20
+    },
+    "Kodiak Island": {
+      "facility_count": 1,
+      "total_beds": 22
+    },
+    "Sitka": {
+      "facility_count": 1,
+      "total_beds": 19
+    },
+    "Northwest Arctic": {
+      "facility_count": 1,
+      "total_beds": 18
+    },
+    "Bethel": {
+      "facility_count": 1,
+      "total_beds": 18
+    },
+    "Matanuska-Susitna": {
+      "facility_count": 2,
+      "total_beds": 134
+    }
+  },
+  "facilities": [
+    {
+      "name": "KETCHIKAN MED CTR NEW HORIZONS TRANSITIONAL CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3100 TONGASS AVENUE",
+        "city": "KETCHIKAN",
+        "state": "AK",
+        "zip": "99901"
+      },
+      "contact": {
+        "phone": "9072255171",
+        "phone_formatted": "9072255171"
+      },
+      "location": {
+        "county": "Ketchikan Gateway",
+        "latitude": 55.3119,
+        "longitude": -131.59
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 29,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEACEHEALTH",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.peacehealth.org/locations/ketchikan/new-horizons-transitional-care-peacehealth-ketchikan-medical-center?utm_source=gbp&utm_medium=organic&utm_content=KETC-022&utm_campaign=gmb",
+        "google_maps_url": "https://maps.google.com/?cid=5736132469423898733",
+        "verified_phone": "(907) 228-7614",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "WRANGELL MEDICAL CENTER LTC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "232 WOOD STREET",
+        "city": "WRANGELL",
+        "state": "AK",
+        "zip": "99929"
+      },
+      "contact": {
+        "phone": "9078747000",
+        "phone_formatted": "9078747000"
+      },
+      "location": {
+        "county": "Wrangell",
+        "latitude": 56.4575,
+        "longitude": -132.37
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 18,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SOUTHEAST ALASKA REGIONAL HEALTH CONSORTIUM",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://searhc.org/location/wrangell-medical-center/",
+        "google_maps_url": "https://maps.google.com/?cid=13457216746880400782",
+        "verified_phone": "(907) 874-7000",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "POLARIS TRANSITIONAL CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "910 COMPASSION CIRCLE",
+        "city": "ANCHORAGE",
+        "state": "AK",
+        "zip": "99504"
+      },
+      "contact": {
+        "phone": "9072129200",
+        "phone_formatted": "9072129200"
+      },
+      "location": {
+        "county": "Anchorage",
+        "latitude": 61.2131,
+        "longitude": -149.78
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KORSIN HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://polaristransitionalcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=6852279266789964491",
+        "verified_phone": "(907) 212-9200",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "PETERSBURG MEDICAL CENTER LTC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "103 FRAM STREET",
+        "city": "PETERSBURG",
+        "state": "AK",
+        "zip": "99833"
+      },
+      "contact": {
+        "phone": "9077724291",
+        "phone_formatted": "9077724291"
+      },
+      "location": {
+        "county": "Petersburg",
+        "latitude": 56.8125,
+        "longitude": -132.96
+      },
+      "facility_details": {
+        "ownership_type": "Government - City/county",
+        "certified_beds": 15,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE PETERSBURG MEDICAL CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.pmcak.org/",
+        "google_maps_url": "https://maps.google.com/?cid=1130245847903090366",
+        "verified_phone": "(907) 772-4291",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "DENALI CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1510 19TH AVENUE",
+        "city": "FAIRBANKS",
+        "state": "AK",
+        "zip": "99701"
+      },
+      "contact": {
+        "phone": "9074585100",
+        "phone_formatted": "9074585100"
+      },
+      "location": {
+        "county": "Fairbanks North Star",
+        "latitude": 64.8304,
+        "longitude": -147.74
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 71,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DENALI CENTER LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.foundationhealth.org/services/assisted_longterm_care/dc",
+        "google_maps_url": "https://maps.google.com/?cid=6436195975552636571",
+        "verified_phone": "(907) 458-5100",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "HERITAGE PLACE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "232 ROCKWELL AVENUE",
+        "city": "SOLDOTNA",
+        "state": "AK",
+        "zip": "99669"
+      },
+      "contact": {
+        "phone": "9072622545",
+        "phone_formatted": "9072622545"
+      },
+      "location": {
+        "county": "Kenai Peninsula",
+        "latitude": 60.4932,
+        "longitude": -151.08
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CENTRAL PENINSULA GENERAL HOSPITAL INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.cpgh.org/continuingcareheritageplace",
+        "google_maps_url": "https://maps.google.com/?cid=859788912851436799",
+        "verified_phone": "(907) 714-5000",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "PROVIDENCE SEWARD MOUNTAIN HAVEN",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2203 OAK STREET",
+        "city": "SEWARD",
+        "state": "AK",
+        "zip": "99664"
+      },
+      "contact": {
+        "phone": "9072245241",
+        "phone_formatted": "9072245241"
+      },
+      "location": {
+        "county": "Kenai Peninsula",
+        "latitude": 60.1328,
+        "longitude": -149.44
+      },
+      "facility_details": {
+        "ownership_type": "Government - City",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CITY OF SEWARD",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.providence.org/locations/ak/seward-mountain-haven?ls=location&y_source=1_OTU3NTcwNi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+        "google_maps_url": "https://maps.google.com/?cid=5087187526164834837",
+        "verified_phone": "(907) 224-2900",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "CENTENNIAL POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "9100 CENTENNIAL DRIVE",
+        "city": "ANCHORAGE",
+        "state": "AK",
+        "zip": "99504"
+      },
+      "contact": {
+        "phone": "9073338100",
+        "phone_formatted": "9073338100"
+      },
+      "location": {
+        "county": "Anchorage",
+        "latitude": 61.2257,
+        "longitude": -149.71
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CENTENNIAL SNF HEALTHCARE LLC",
+        "chain_name": "PACS GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://centennialpa.com/",
+        "google_maps_url": "https://maps.google.com/?cid=6942811950442079139",
+        "verified_phone": "(907) 333-8100",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "QUYANNA CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1100 GREG KRUSCHEK AVENUE",
+        "city": "NOME",
+        "state": "AK",
+        "zip": "99762"
+      },
+      "contact": {
+        "phone": "9074433311",
+        "phone_formatted": "9074433311"
+      },
+      "location": {
+        "county": "Nome",
+        "latitude": 64.5027,
+        "longitude": -165.39
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 18,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTON SOUND HEALTH CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.nortonsoundhealth.org/Divisions/Quyanna-Care-Center",
+        "google_maps_url": "https://maps.google.com/?cid=9940840617395821206",
+        "verified_phone": "(907) 443-3311",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "WILDFLOWER COURT",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2000 SALMON CREEK LANE",
+        "city": "JUNEAU",
+        "state": "AK",
+        "zip": "99801"
+      },
+      "contact": {
+        "phone": "9074638700",
+        "phone_formatted": "9074638700"
+      },
+      "location": {
+        "county": "Juneau",
+        "latitude": 58.3311,
+        "longitude": -134.47
+      },
+      "facility_details": {
+        "ownership_type": "Government - City/county",
+        "certified_beds": 57,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BARTLETT REGIONAL HOSPITAL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.bartletthospital.org/services/wildflowercourt/",
+        "google_maps_url": "https://maps.google.com/?cid=2791487063660095357",
+        "verified_phone": "(907) 796-8140",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "CORDOVA COMMUNITY MED LTC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "602 CHASE AVE",
+        "city": "CORDOVA",
+        "state": "AK",
+        "zip": "99574"
+      },
+      "contact": {
+        "phone": "9074248000",
+        "phone_formatted": "9074248000"
+      },
+      "location": {
+        "county": "Chugach",
+        "latitude": 60.5416,
+        "longitude": -145.75
+      },
+      "facility_details": {
+        "ownership_type": "Government - City/county",
+        "certified_beds": 10,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.cdvcmc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=17362957034431924730",
+        "verified_phone": "(907) 424-8000",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "PROVIDENCE KODIAK ISLAND MED LTC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1915 E REZANOF DRIVE",
+        "city": "KODIAK",
+        "state": "AK",
+        "zip": "99615"
+      },
+      "contact": {
+        "phone": "9074867800",
+        "phone_formatted": "9074867800"
+      },
+      "location": {
+        "county": "Kodiak Island",
+        "latitude": 57.801,
+        "longitude": -152.37
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 22,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "PROVIDENCE HEALTH & SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.providence.org/locations/ak/kodiak-island-medical-center?ls=location&y_source=1_OTU3NTcwNS03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+        "google_maps_url": "https://maps.google.com/?cid=3028223216330320464",
+        "verified_phone": "(907) 486-9500",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "SOUTH PENINSULA HOSPITAL LTC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4300 BARTLETT STREET",
+        "city": "HOMER",
+        "state": "AK",
+        "zip": "99603"
+      },
+      "contact": {
+        "phone": "9072350235",
+        "phone_formatted": "9072350235"
+      },
+      "location": {
+        "county": "Kenai Peninsula",
+        "latitude": 59.6516,
+        "longitude": -151.55
+      },
+      "facility_details": {
+        "ownership_type": "Government - City/county",
+        "certified_beds": 28,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SOUTH PENINSULA HOSPITAL INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.sphosp.org/",
+        "google_maps_url": "https://maps.google.com/?cid=2210102556520297750",
+        "verified_phone": "(907) 235-8101",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "SEARHC SITKA LONG TERM CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "209 MOLLER AVENUE",
+        "city": "SITKA",
+        "state": "AK",
+        "zip": "99835"
+      },
+      "contact": {
+        "phone": "9077471701",
+        "phone_formatted": "9077471701"
+      },
+      "location": {
+        "county": "Sitka",
+        "latitude": 57.0594,
+        "longitude": -135.34
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 19,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SOUTHEAST ALASKA REGIONAL HEALTH CONSORTIUM",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://searhc.org/location/sitka-long-term-care/",
+        "google_maps_url": "https://maps.google.com/?cid=7121311896064920250",
+        "verified_phone": "(907) 747-1701",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "PROVIDENCE VALDEZ MEDICAL CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "911 MEALS AVENUE",
+        "city": "VALDEZ",
+        "state": "AK",
+        "zip": "99686"
+      },
+      "contact": {
+        "phone": "9078341825",
+        "phone_formatted": "9078341825"
+      },
+      "location": {
+        "county": "Chugach",
+        "latitude": 61.1363,
+        "longitude": -146.35
+      },
+      "facility_details": {
+        "ownership_type": "Government - City",
+        "certified_beds": 10,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CITY OF VALDEZ",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.providence.org/locations/ak/valdez-medical-center?ls=location&y_source=1_OTU3NTcwOC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+        "google_maps_url": "https://maps.google.com/?cid=11758941617151562118",
+        "verified_phone": "(907) 835-2249",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "UTUQQANAAT INAAT",
+      "type": "Nursing Home",
+      "address": {
+        "street": "436 MISSION STREET",
+        "city": "KOTZEBUE",
+        "state": "AK",
+        "zip": "99752"
+      },
+      "contact": {
+        "phone": "9074423321",
+        "phone_formatted": "9074423321"
+      },
+      "location": {
+        "county": "Northwest Arctic",
+        "latitude": 66.8951,
+        "longitude": -162.59
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 18,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.maniilaq.org/long-term-care/",
+        "google_maps_url": "https://maps.google.com/?cid=15363526630104498837",
+        "verified_phone": "(907) 442-3321",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Polaris Extended Care",
+      "type": "Nursing Home",
+      "address": {
+        "street": "920 COMPASSION CIRCLE",
+        "city": "ANCHORAGE",
+        "state": "AK",
+        "zip": "99504"
+      },
+      "contact": {
+        "phone": "9072129200",
+        "phone_formatted": "9072129200"
+      },
+      "location": {
+        "county": "Anchorage",
+        "latitude": 61.2131,
+        "longitude": -149.78
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 96,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KORSIN HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://polaristransitionalcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=6852279266789964491",
+        "verified_phone": "(907) 212-9200",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "YUKON KUSKOKWIM ELDER'S HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1100 CHIEF EDDIE HOFFMAN HWY",
+        "city": "BETHEL",
+        "state": "AK",
+        "zip": "99559"
+      },
+      "contact": {
+        "phone": "9075436782",
+        "phone_formatted": "9075436782"
+      },
+      "location": {
+        "county": "Bethel",
+        "latitude": 60.7858,
+        "longitude": -161.79
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 18,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "YUKON-KUSKOKWIM HEALTH CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.ykhc.org/",
+        "google_maps_url": "https://maps.google.com/?cid=14719374093493185417",
+        "verified_phone": "(907) 543-6000",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "MAPLE SPRINGS OF WASILLA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3265 E MERIDIAN LOOP",
+        "city": "WASILLA",
+        "state": "AK",
+        "zip": "99654"
+      },
+      "contact": {
+        "phone": "9078411217",
+        "phone_formatted": "9078411217"
+      },
+      "location": {
+        "county": "Matanuska-Susitna",
+        "latitude": 61.5879,
+        "longitude": -149.36
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 67,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAPLE SPRINGS OF WASILLA SNF HOLDINGS LLC",
+        "chain_name": "MAPLE SPRINGS LIVING"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://maplespringsliving.com/wasilla",
+        "google_maps_url": "https://maps.google.com/?cid=14610215129936301408",
+        "verified_phone": "(907) 802-6645",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "MAPLE SPRINGS OF PALMER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "12130 EAST MAPLE SPRINGS WAY",
+        "city": "PALMER",
+        "state": "AK",
+        "zip": "99645"
+      },
+      "contact": {
+        "phone": "9078026641",
+        "phone_formatted": "9078026641"
+      },
+      "location": {
+        "county": "Matanuska-Susitna",
+        "latitude": 61.5977,
+        "longitude": -149.14
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 67,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAPLE SPRINGS OF PALMER SNF HOLDINGS, LLC",
+        "chain_name": "MAPLE SPRINGS LIVING"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://maplespringsliving.com/palmer",
+        "google_maps_url": "https://maps.google.com/?cid=4660380807654587003",
+        "verified_phone": "(907) 802-6641",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    }
+  ]
+}

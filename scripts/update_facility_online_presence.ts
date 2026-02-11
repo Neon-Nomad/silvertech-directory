@@ -40,10 +40,31 @@ const normalize = (value?: string | null) =>
     .replace(/\s+/g, ' ')
     .replace(/[^a-z0-9 ]/g, '');
 
-const makeKey = (name?: string | null, address?: string | null, city?: string | null, state?: string | null, zip?: string | null) =>
-  `${normalize(name)}|${normalize(address)}|${normalize(city)}|${(state || '').toString().trim().toUpperCase()}|${(zip || '')
+const normalizeState = (value?: string | null) => (value || '').toString().trim().toUpperCase();
+
+const makeKey = (
+  name?: string | null,
+  address?: string | null,
+  city?: string | null,
+  state?: string | null,
+  zip?: string | null
+) =>
+  `${normalize(name)}|${normalize(address)}|${normalize(city)}|${normalizeState(state)}|${(zip || '')
     .toString()
     .trim()}`;
+
+const makeLooseKey = (
+  name?: string | null,
+  city?: string | null,
+  state?: string | null,
+  zip?: string | null
+) =>
+  `${normalize(name)}|${normalize(city)}|${normalizeState(state)}|${(zip || '')
+    .toString()
+    .trim()}`;
+
+const makeNameCityStateKey = (name?: string | null, city?: string | null, state?: string | null) =>
+  `${normalize(name)}|${normalize(city)}|${normalizeState(state)}`;
 
 const loadFacilitiesWithWebsites = (dirPath: string) => {
   const files = fs.readdirSync(dirPath).filter((file) => file.endsWith('.json'));
@@ -88,9 +109,11 @@ const fetchAllFacilities = async () => {
 };
 
 const main = async () => {
-  const dirPath = path.resolve(process.cwd(), 'all_facilities_with_websites_complete');
+  const preferredDir = path.resolve(process.cwd(), 'FINAL_all_facilities_with_websites');
+  const fallbackDir = path.resolve(process.cwd(), 'all_facilities_with_websites_complete');
+  const dirPath = fs.existsSync(preferredDir) ? preferredDir : fallbackDir;
   if (!fs.existsSync(dirPath)) {
-    console.error(`Missing directory: ${dirPath}`);
+    console.error(`Missing directory: ${preferredDir} (and fallback ${fallbackDir})`);
     process.exit(1);
   }
 
@@ -110,9 +133,20 @@ const main = async () => {
       postal_code: string | null;
     }
   >();
+  const looseMap = new Map<string, typeof supabaseFacilities>();
+  const nameCityStateMap = new Map<string, typeof supabaseFacilities>();
+
   for (const row of supabaseFacilities) {
-    const key = makeKey(row.name, row.address_line1, row.city, row.state, row.postal_code);
-    facilityMap.set(key, row);
+    const fullKey = makeKey(row.name, row.address_line1, row.city, row.state, row.postal_code);
+    facilityMap.set(fullKey, row);
+
+    const looseKey = makeLooseKey(row.name, row.city, row.state, row.postal_code);
+    if (!looseMap.has(looseKey)) looseMap.set(looseKey, []);
+    looseMap.get(looseKey)!.push(row);
+
+    const nameCityStateKey = makeNameCityStateKey(row.name, row.city, row.state);
+    if (!nameCityStateMap.has(nameCityStateKey)) nameCityStateMap.set(nameCityStateKey, []);
+    nameCityStateMap.get(nameCityStateKey)!.push(row);
   }
 
   const updates: Array<{
@@ -141,7 +175,29 @@ const main = async () => {
       address.state || facility.state_code,
       address.zip
     );
-    const record = facilityMap.get(key);
+    let record = facilityMap.get(key);
+    if (!record) {
+      const looseKey = makeLooseKey(
+        facility.name,
+        address.city,
+        address.state || facility.state_code,
+        address.zip
+      );
+      const looseMatches = looseMap.get(looseKey) || [];
+      if (looseMatches.length === 1) {
+        record = looseMatches[0];
+      } else {
+        const nameCityStateKey = makeNameCityStateKey(
+          facility.name,
+          address.city,
+          address.state || facility.state_code
+        );
+        const nameCityStateMatches = nameCityStateMap.get(nameCityStateKey) || [];
+        if (nameCityStateMatches.length === 1) {
+          record = nameCityStateMatches[0];
+        }
+      }
+    }
     if (!record) {
       skipped += 1;
       continue;

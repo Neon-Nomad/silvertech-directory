@@ -1,0 +1,3320 @@
+{
+  "state": "New Hampshire",
+  "state_code": "NH",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 74,
+    "total_nursing_homes": 74,
+    "total_assisted_living": 0,
+    "total_certified_beds": 7386,
+    "counties_served": 10,
+    "average_beds_per_facility": 99.8
+  },
+  "quality_distribution": {
+    "five_star": 15,
+    "four_star": 14,
+    "three_star": 15,
+    "two_star": 16,
+    "one_star": 13
+  },
+  "counties": {
+    "Hillsborough": {
+      "facility_count": 21,
+      "total_beds": 2236
+    },
+    "Merrimack": {
+      "facility_count": 7,
+      "total_beds": 900
+    },
+    "Strafford": {
+      "facility_count": 6,
+      "total_beds": 598
+    },
+    "Grafton": {
+      "facility_count": 5,
+      "total_beds": 547
+    },
+    "Rockingham": {
+      "facility_count": 12,
+      "total_beds": 1132
+    },
+    "Belknap": {
+      "facility_count": 4,
+      "total_beds": 396
+    },
+    "Sullivan": {
+      "facility_count": 3,
+      "total_beds": 277
+    },
+    "Cheshire": {
+      "facility_count": 7,
+      "total_beds": 541
+    },
+    "Coos": {
+      "facility_count": 5,
+      "total_beds": 420
+    },
+    "Carroll": {
+      "facility_count": 4,
+      "total_beds": 339
+    }
+  },
+  "facilities": [
+    {
+      "name": "Southern New Hampshire Rehabilitation & Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "55 HARRIS ROAD",
+        "city": "NASHUA",
+        "state": "NH",
+        "zip": "3062"
+      },
+      "contact": {
+        "phone": "6038881573",
+        "phone_formatted": "6038881573"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.732,
+        "longitude": -71.475
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 290,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "STELLAR HEALTH GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.snhhealth.org/our-locations/popular-services/physical-therapy-and-rehab",
+        "google_maps_url": "https://maps.google.com/?cid=9676380502184904461",
+        "verified_phone": "(603) 577-8400",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:34.753227"
+      }
+    },
+    {
+      "name": "HANOVER HILL HEALTH CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "700 HANOVER STREET",
+        "city": "MANCHESTER",
+        "state": "NH",
+        "zip": "3104"
+      },
+      "contact": {
+        "phone": "6036273826",
+        "phone_formatted": "6036273826"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.9892,
+        "longitude": -71.435
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 124,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HANOVER HILL HEALTH CARE CENTER SERVICES INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://hanoverhill.com/",
+        "google_maps_url": "https://maps.google.com/?cid=7909452463572334210",
+        "verified_phone": "(603) 627-3826",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:36.274455"
+      }
+    },
+    {
+      "name": "HAVENWOOD-HERITAGE HEIGHTS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "33 CHRISTIAN AVENUE",
+        "city": "CONCORD",
+        "state": "NH",
+        "zip": "3301"
+      },
+      "contact": {
+        "phone": "6032245363",
+        "phone_formatted": "6032245363"
+      },
+      "location": {
+        "county": "Merrimack",
+        "latitude": 43.2172,
+        "longitude": -71.512
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 70,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "UNITED CHURCH OF CHRIST RETIREMENT COMMUNITY INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.hhhinfo.com/",
+        "google_maps_url": "https://maps.google.com/?cid=12870947993739993362",
+        "verified_phone": "(603) 224-5363",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:37.553586"
+      }
+    },
+    {
+      "name": "DOVER CENTER FOR HEALTH & REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "307 PLAZA DRIVE",
+        "city": "DOVER",
+        "state": "NH",
+        "zip": "3820"
+      },
+      "contact": {
+        "phone": "6037422676",
+        "phone_formatted": "6037422676"
+      },
+      "location": {
+        "county": "Strafford",
+        "latitude": 43.2136,
+        "longitude": -70.89
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VK DOVER LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.dovercenterrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=12037104132811085096",
+        "verified_phone": "(603) 742-2676",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:38.930439"
+      }
+    },
+    {
+      "name": "HANOVER TERRACE HEALTH AND REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "49 LYME ROAD",
+        "city": "HANOVER",
+        "state": "NH",
+        "zip": "3755"
+      },
+      "contact": {
+        "phone": "6036432854",
+        "phone_formatted": "6036432854"
+      },
+      "location": {
+        "county": "Grafton",
+        "latitude": 43.72,
+        "longitude": -72.273
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BEAR MT HANOVER LLC",
+        "chain_name": "BEAR MOUNTAIN HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.bearmountainhc.com/locations/hanover-terrace-health-rehabilitation-center/",
+        "google_maps_url": "https://maps.google.com/?cid=2735493067002336648",
+        "verified_phone": "(603) 643-2854",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:40.245083"
+      }
+    },
+    {
+      "name": "EDGEWOOD CENTRE (THE)",
+      "type": "Nursing Home",
+      "address": {
+        "street": "928 SOUTH STREET",
+        "city": "PORTSMOUTH",
+        "state": "NH",
+        "zip": "3801"
+      },
+      "contact": {
+        "phone": "6034360099",
+        "phone_formatted": "6034360099"
+      },
+      "location": {
+        "county": "Rockingham",
+        "latitude": 43.0636,
+        "longitude": -70.763
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 156,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EDGEWOOD REHAB AND HEALTHCARE CENTER LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://edgewoodcrh.com/",
+        "google_maps_url": "https://maps.google.com/?cid=10609670925484905694",
+        "verified_phone": "(603) 436-0099",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:41.457451"
+      }
+    },
+    {
+      "name": "ROCHESTER MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "40 WHITEHALL ROAD",
+        "city": "ROCHESTER",
+        "state": "NH",
+        "zip": "3867"
+      },
+      "contact": {
+        "phone": "6033327711",
+        "phone_formatted": "6033327711"
+      },
+      "location": {
+        "county": "Strafford",
+        "latitude": 43.2984,
+        "longitude": -70.955
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 108,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "40 WHITEHALL ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/rochester",
+        "google_maps_url": "https://maps.google.com/?cid=3713589278476580984",
+        "verified_phone": "(603) 332-7711",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:42.792900"
+      }
+    },
+    {
+      "name": "MAPLE LEAF HEALTH CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "198 PEARL STREET",
+        "city": "MANCHESTER",
+        "state": "NH",
+        "zip": "3104"
+      },
+      "contact": {
+        "phone": "6036691660",
+        "phone_formatted": "6036691660"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.9965,
+        "longitude": -71.455
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 114,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BH MAPLE LEAF LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://mapleleafhcc.com/?utm_source=google&utm_medium=gbp",
+        "google_maps_url": "https://maps.google.com/?cid=16816095676750675034",
+        "verified_phone": "(603) 669-1660",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:43.988655"
+      }
+    },
+    {
+      "name": "Courville at Nashua",
+      "type": "Nursing Home",
+      "address": {
+        "street": "22 HUNT STREET",
+        "city": "NASHUA",
+        "state": "NH",
+        "zip": "3060"
+      },
+      "contact": {
+        "phone": "6038895450",
+        "phone_formatted": "6038895450"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.7468,
+        "longitude": -71.471
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 94,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COURVILLE AT NASHUA INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.thecourvilles.com/nashua-nh-aynsley",
+        "google_maps_url": "https://maps.google.com/?cid=7851109403310631728",
+        "verified_phone": "(603) 889-5450",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:45.418396"
+      }
+    },
+    {
+      "name": "HACKETT HILL HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "191 HACKETT HILL ROAD",
+        "city": "MANCHESTER",
+        "state": "NH",
+        "zip": "3102"
+      },
+      "contact": {
+        "phone": "6036688161",
+        "phone_formatted": "6036688161"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 43.0383,
+        "longitude": -71.484
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 70,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "191 HACKETT HILL ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/HackettHill",
+        "google_maps_url": "https://maps.google.com/?cid=17358109847550687058",
+        "verified_phone": "(603) 668-8161",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:46.804161"
+      }
+    },
+    {
+      "name": "PLEASANT VALLEY SNF LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8 PEABODY ROAD",
+        "city": "DERRY",
+        "state": "NH",
+        "zip": "3038"
+      },
+      "contact": {
+        "phone": "6034341566",
+        "phone_formatted": "6034341566"
+      },
+      "location": {
+        "county": "Rockingham",
+        "latitude": 42.8915,
+        "longitude": -71.32
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 112,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PLEASANT VALLEY SNF LLC",
+        "chain_name": "SEAN STEVENSON"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.pleasantvnc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=14065140664005350471",
+        "verified_phone": "(603) 434-1566",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:47.975990"
+      }
+    },
+    {
+      "name": "LACONIA REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "175 BLUEBERRY LANE",
+        "city": "LACONIA",
+        "state": "NH",
+        "zip": "3246"
+      },
+      "contact": {
+        "phone": "6035243340",
+        "phone_formatted": "6035243340"
+      },
+      "location": {
+        "county": "Belknap",
+        "latitude": 43.5392,
+        "longitude": -71.488
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "175 BLUEBERRY LANE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/Laconia",
+        "google_maps_url": "https://maps.google.com/?cid=14800845532984675821",
+        "verified_phone": "(603) 524-3340",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:49.503047"
+      }
+    },
+    {
+      "name": "ELM WOOD CENTER AT CLAREMONT",
+      "type": "Nursing Home",
+      "address": {
+        "street": "290 HANOVER STREET",
+        "city": "CLAREMONT",
+        "state": "NH",
+        "zip": "3743"
+      },
+      "contact": {
+        "phone": "6035422606",
+        "phone_formatted": "6035422606"
+      },
+      "location": {
+        "county": "Sullivan",
+        "latitude": 43.3918,
+        "longitude": -72.339
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "290 HANOVER STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/ElmWood",
+        "google_maps_url": "https://maps.google.com/?cid=9825643500358602498",
+        "verified_phone": "(603) 542-2606",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:50.812183"
+      }
+    },
+    {
+      "name": "WARDE HEALTH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "21 SEARLES ROAD",
+        "city": "WINDHAM",
+        "state": "NH",
+        "zip": "3087"
+      },
+      "contact": {
+        "phone": "6038901290",
+        "phone_formatted": "6038901290"
+      },
+      "location": {
+        "county": "Rockingham",
+        "latitude": 42.8119,
+        "longitude": -71.263
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 32,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WARDE REHABILITATION AND NURSING CENTER",
+        "chain_name": "CATHOLIC CHARITIES NEW HAMPSHIRE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.wardeseniorliving.org/",
+        "google_maps_url": "https://maps.google.com/?cid=18066672837928491157",
+        "verified_phone": "(603) 890-1290",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:52.191553"
+      }
+    },
+    {
+      "name": "GOLDEN VIEW HEALTH CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "19 NH ROUTE 104",
+        "city": "MEREDITH",
+        "state": "NH",
+        "zip": "3253"
+      },
+      "contact": {
+        "phone": "6032798111",
+        "phone_formatted": "6032798111"
+      },
+      "location": {
+        "county": "Belknap",
+        "latitude": 43.6004,
+        "longitude": -71.486
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 131,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "METRO HEALTH FOUNDATION OF NEW HAMPSHIRE, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.goldenview.org/",
+        "google_maps_url": "https://maps.google.com/?cid=4217342245338112421",
+        "verified_phone": "(603) 279-8111",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:53.611229"
+      }
+    },
+    {
+      "name": "PLEASANT VIEW CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "239 PLEASANT STREET",
+        "city": "CONCORD",
+        "state": "NH",
+        "zip": "3301"
+      },
+      "contact": {
+        "phone": "6032246561",
+        "phone_formatted": "6032246561"
+      },
+      "location": {
+        "county": "Merrimack",
+        "latitude": 43.196,
+        "longitude": -71.561
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 176,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PLEASANT VIEW OPERATING GROUP LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.pleasantviewcenter.net/",
+        "google_maps_url": "https://maps.google.com/?cid=9339556236091837341",
+        "verified_phone": "(603) 224-6561",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:54.877451"
+      }
+    },
+    {
+      "name": "Rockingham County Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "117 NORTH ROAD",
+        "city": "BRENTWOOD",
+        "state": "NH",
+        "zip": "3833"
+      },
+      "contact": {
+        "phone": "6036795335",
+        "phone_formatted": "6036795335"
+      },
+      "location": {
+        "county": "Rockingham",
+        "latitude": 43.0116,
+        "longitude": -71.053
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 226,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COUNTY OF ROCKINGHAM",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://rockinghamcountyseniorliving.com/",
+        "google_maps_url": "https://maps.google.com/?cid=16428993017297119519",
+        "verified_phone": "(603) 679-5335",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:55.972023"
+      }
+    },
+    {
+      "name": "RIVERSIDE REST HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "276 COUNTY FARM ROAD",
+        "city": "DOVER",
+        "state": "NH",
+        "zip": "3820"
+      },
+      "contact": {
+        "phone": "6037421348",
+        "phone_formatted": "6037421348"
+      },
+      "location": {
+        "county": "Strafford",
+        "latitude": 43.2195,
+        "longitude": -70.94
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 215,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COUNTY OF STRAFFORD",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://riversideresthome.com/",
+        "google_maps_url": "https://maps.google.com/?cid=2110726134072742942",
+        "verified_phone": "(603) 742-1348",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:57.262048"
+      }
+    },
+    {
+      "name": "HILLSBOROUGH COUNTY NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "400 MAST ROAD",
+        "city": "GOFFSTOWN",
+        "state": "NH",
+        "zip": "3045"
+      },
+      "contact": {
+        "phone": "6036275540",
+        "phone_formatted": "6036275540"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 43.0094,
+        "longitude": -71.538
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 300,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COUNTY OF HILLSBOROUGH",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://hcnh.org/Departments/Nursing-Home",
+        "google_maps_url": "https://maps.google.com/?cid=16968788726669377402",
+        "verified_phone": "(603) 627-5540",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:58.379111"
+      }
+    },
+    {
+      "name": "RIVERWOODS AT EXETER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6 WHITE OAK DRIVE",
+        "city": "EXETER",
+        "state": "NH",
+        "zip": "3833"
+      },
+      "contact": {
+        "phone": "6037724700",
+        "phone_formatted": "6037724700"
+      },
+      "location": {
+        "county": "Rockingham",
+        "latitude": 42.9721,
+        "longitude": -70.986
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 23,
+        "provider_type": "Medicare",
+        "legal_business_name": "THE RIVERWOODS COMPANY AT EXETER NEW HAMPSHIRE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://riverwoodsnh.org/exeter/three-neighborhoods/the-ridge/?utm_source=local-listing&utm_medium=organic&utm_campaign=gbp",
+        "google_maps_url": "https://maps.google.com/?cid=4912898088139286380",
+        "verified_phone": "(603) 294-1071",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:56:59.558832"
+      }
+    },
+    {
+      "name": "LEBANON CENTER, GENESIS HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "24 OLD ETNA ROAD",
+        "city": "LEBANON",
+        "state": "NH",
+        "zip": "3766"
+      },
+      "contact": {
+        "phone": "6034482234",
+        "phone_formatted": "6034482234"
+      },
+      "location": {
+        "county": "Grafton",
+        "latitude": 43.6569,
+        "longitude": -72.249
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 110,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "24 OLD ETNA ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/lebanon",
+        "google_maps_url": "https://maps.google.com/?cid=1699014053145389190",
+        "verified_phone": "(603) 448-2234",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:00.880218"
+      }
+    },
+    {
+      "name": "KEENE  CENTER, GENESIS HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "677 COURT STREET",
+        "city": "KEENE",
+        "state": "NH",
+        "zip": "3431"
+      },
+      "contact": {
+        "phone": "6033573800",
+        "phone_formatted": "6033573800"
+      },
+      "location": {
+        "county": "Cheshire",
+        "latitude": 42.9539,
+        "longitude": -72.296
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 106,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "677 COURT STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/Keene",
+        "google_maps_url": "https://maps.google.com/?cid=1908839035270712149",
+        "verified_phone": "(603) 357-3800",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:02.272305"
+      }
+    },
+    {
+      "name": "RIDGEWOOD CENTER, GENESIS HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "25 RIDGEWOOD ROAD",
+        "city": "BEDFORD",
+        "state": "NH",
+        "zip": "3110"
+      },
+      "contact": {
+        "phone": "6036238805",
+        "phone_formatted": "6036238805"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.9601,
+        "longitude": -71.481
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 150,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "25 RIDGEWOOD ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/RidgewoodNH",
+        "google_maps_url": "https://maps.google.com/?cid=2367539442424421783",
+        "verified_phone": "(603) 623-8805",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:03.639102"
+      }
+    },
+    {
+      "name": "GRAFTON COUNTY NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3855 DARTMOUTH COLLEGE HIGHWAY",
+        "city": "NORTH HAVERHILL",
+        "state": "NH",
+        "zip": "3774"
+      },
+      "contact": {
+        "phone": "6037876971",
+        "phone_formatted": "6037876971"
+      },
+      "location": {
+        "county": "Grafton",
+        "latitude": 44.1152,
+        "longitude": -72.04
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 135,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COUNTY OF GRAFTON",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.co.grafton.nh.us/all-departments/nursing-home/",
+        "google_maps_url": "https://maps.google.com/?cid=11172002781104819237",
+        "verified_phone": "(603) 787-6971",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:04.789765"
+      }
+    },
+    {
+      "name": "CHESHIRE COUNTY HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "201 RIVER ROAD",
+        "city": "WESTMORELAND",
+        "state": "NH",
+        "zip": "3467"
+      },
+      "contact": {
+        "phone": "6033994912",
+        "phone_formatted": "6033994912"
+      },
+      "location": {
+        "county": "Cheshire",
+        "latitude": 42.9728,
+        "longitude": -72.466
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 150,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COUNTY OF CHESHIRE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.co.cheshire.nh.us/departments/maplewood-nursing-home/",
+        "google_maps_url": "https://maps.google.com/?cid=278935707061500755",
+        "verified_phone": "(603) 399-4912",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:06.087130"
+      }
+    },
+    {
+      "name": "OCEANSIDE SKILLED NURSING AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "22 TUCK ROAD",
+        "city": "HAMPTON",
+        "state": "NH",
+        "zip": "3842"
+      },
+      "contact": {
+        "phone": "6039264551",
+        "phone_formatted": "6039264551"
+      },
+      "location": {
+        "county": "Rockingham",
+        "latitude": 42.9479,
+        "longitude": -70.831
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 117,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "22 TUCK ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/Oceanside",
+        "google_maps_url": "https://maps.google.com/?cid=10056531224618624997",
+        "verified_phone": "(603) 926-4551",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:07.228764"
+      }
+    },
+    {
+      "name": "MERRIMACK COUNTY NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "325 DANIEL WEBSTER HIGHWAY",
+        "city": "BOSCAWEN",
+        "state": "NH",
+        "zip": "3303"
+      },
+      "contact": {
+        "phone": "6037962165",
+        "phone_formatted": "6037962165"
+      },
+      "location": {
+        "county": "Merrimack",
+        "latitude": 43.3589,
+        "longitude": -71.647
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 290,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COUNTY OF MERRIMACK",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://merrimackcounty.net/departments/nursing_home/index.php",
+        "google_maps_url": "https://maps.google.com/?cid=18311161955055274700",
+        "verified_phone": "(603) 796-2165",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:08.666873"
+      }
+    },
+    {
+      "name": "COURVILLE AT MANCHESTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "44 WEST WEBSTER STREET",
+        "city": "MANCHESTER",
+        "state": "NH",
+        "zip": "3104"
+      },
+      "contact": {
+        "phone": "6036475900",
+        "phone_formatted": "6036475900"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 43.0062,
+        "longitude": -71.466
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 76,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COURVILLE AT MANCHESTER LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.thecourvilles.com/manchester-nh-thecourvilles",
+        "google_maps_url": "https://maps.google.com/?cid=11500400065910645839",
+        "verified_phone": "(603) 647-5900",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:09.918868"
+      }
+    },
+    {
+      "name": "SALEMHAVEN",
+      "type": "Nursing Home",
+      "address": {
+        "street": "23 GEREMONTY DRIVE",
+        "city": "SALEM",
+        "state": "NH",
+        "zip": "3079"
+      },
+      "contact": {
+        "phone": "6038935586",
+        "phone_formatted": "6038935586"
+      },
+      "location": {
+        "county": "Rockingham",
+        "latitude": 42.7834,
+        "longitude": -71.21
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 110,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SALEMHAVEN, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://salemhaven.com/",
+        "google_maps_url": "https://maps.google.com/?cid=17195825215344004105",
+        "verified_phone": "(603) 893-5586",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:11.143888"
+      }
+    },
+    {
+      "name": "PHEASANT WOOD CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "50 PHEASANT ROAD",
+        "city": "PETERBOROUGH",
+        "state": "NH",
+        "zip": "3458"
+      },
+      "contact": {
+        "phone": "6039247267",
+        "phone_formatted": "6039247267"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.9074,
+        "longitude": -71.936
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 99,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "50 PHEASANT ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/PheasantWood",
+        "google_maps_url": "https://maps.google.com/?cid=18005404689678625964",
+        "verified_phone": "(603) 924-7267",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:12.228023"
+      }
+    },
+    {
+      "name": "BEDFORD HILLS CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "30 COLBY COURT",
+        "city": "BEDFORD",
+        "state": "NH",
+        "zip": "3110"
+      },
+      "contact": {
+        "phone": "6036256462",
+        "phone_formatted": "6036256462"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.9632,
+        "longitude": -71.484
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 147,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BEDFORD HILLS SNF OPCO LLC",
+        "chain_name": "SEAN STEVENSON"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.bedfordhillshc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=9988270686523399284",
+        "verified_phone": "(603) 625-6462",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:13.585532"
+      }
+    },
+    {
+      "name": "CRESTWOOD CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "40 CROSBY STREET",
+        "city": "MILFORD",
+        "state": "NH",
+        "zip": "3055"
+      },
+      "contact": {
+        "phone": "6036737061",
+        "phone_formatted": "6036737061"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.8355,
+        "longitude": -71.664
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 82,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "40 CROSBY STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/Crestwood",
+        "google_maps_url": "https://maps.google.com/?cid=12414297650290163941",
+        "verified_phone": "(603) 673-7061",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:14.956142"
+      }
+    },
+    {
+      "name": "ALPINE HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "298 MAIN STREET",
+        "city": "KEENE",
+        "state": "NH",
+        "zip": "3431"
+      },
+      "contact": {
+        "phone": "6033527311",
+        "phone_formatted": "6033527311"
+      },
+      "location": {
+        "county": "Cheshire",
+        "latitude": 42.9261,
+        "longitude": -72.277
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 85,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEAK HEALTHCARE AT KEENE LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://alpine-hc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=11996667791267877804",
+        "verified_phone": "(603) 352-7311",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:16.121100"
+      }
+    },
+    {
+      "name": "PRESIDENTIAL OAKS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "200 PLEASANT STREET",
+        "city": "CONCORD",
+        "state": "NH",
+        "zip": "3301"
+      },
+      "contact": {
+        "phone": "6032256644",
+        "phone_formatted": "6032256644"
+      },
+      "location": {
+        "county": "Merrimack",
+        "latitude": 43.1983,
+        "longitude": -71.554
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 85,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NEW HAMPSHIRE ODDFELLOWS HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://presidentialoaks.org/",
+        "google_maps_url": "https://maps.google.com/?cid=6449501150736255176",
+        "verified_phone": "(603) 225-6644",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:17.254455"
+      }
+    },
+    {
+      "name": "EXETER CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8 HAMPTON ROAD",
+        "city": "EXETER",
+        "state": "NH",
+        "zip": "3833"
+      },
+      "contact": {
+        "phone": "6037780531",
+        "phone_formatted": "6037780531"
+      },
+      "location": {
+        "county": "Rockingham",
+        "latitude": 42.9764,
+        "longitude": -70.913
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 81,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUNBRIDGE GOODWIN NURSING HOME LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/Exeter",
+        "google_maps_url": "https://maps.google.com/?cid=3164085985984310589",
+        "verified_phone": "(603) 778-0531",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:18.571499"
+      }
+    },
+    {
+      "name": "APPLEWOOD CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8 SNOW ROAD",
+        "city": "WINCHESTER",
+        "state": "NH",
+        "zip": "3470"
+      },
+      "contact": {
+        "phone": "6032396355",
+        "phone_formatted": "6032396355"
+      },
+      "location": {
+        "county": "Cheshire",
+        "latitude": 42.7633,
+        "longitude": -72.384
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "8 SNOW ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/Applewood",
+        "google_maps_url": "https://maps.google.com/?cid=2670846237352630475",
+        "verified_phone": "(603) 239-6355",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:19.894423"
+      }
+    },
+    {
+      "name": "SAINT VINCENT REHABILITATION & NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "29 PROVIDENCE AVENUE",
+        "city": "BERLIN",
+        "state": "NH",
+        "zip": "3570"
+      },
+      "contact": {
+        "phone": "6037521820",
+        "phone_formatted": "6037521820"
+      },
+      "location": {
+        "county": "Coos",
+        "latitude": 44.4942,
+        "longitude": -71.165
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST VINCENT REHABILITATION & NURSING CENTER",
+        "chain_name": "CATHOLIC CHARITIES NEW HAMPSHIRE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.stvincentrehabcenter.org/",
+        "google_maps_url": "https://maps.google.com/?cid=14678886406790631361",
+        "verified_phone": "(603) 752-1820",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:21.000804"
+      }
+    },
+    {
+      "name": "MOUNT CARMEL REHABILITATION AND NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "235 MYRTLE STREET",
+        "city": "MANCHESTER",
+        "state": "NH",
+        "zip": "3104"
+      },
+      "contact": {
+        "phone": "6036273811",
+        "phone_formatted": "6036273811"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.9982,
+        "longitude": -71.453
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 122,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MOUNT CARMEL REHABILITATION & NURSING CENTER",
+        "chain_name": "CATHOLIC CHARITIES NEW HAMPSHIRE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.mtcarmelrehabcenter.org/",
+        "google_maps_url": "https://maps.google.com/?cid=1521134486740321421",
+        "verified_phone": "(603) 627-3811",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:22.383329"
+      }
+    },
+    {
+      "name": "THE ELMS CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "71 ELM STREET",
+        "city": "MILFORD",
+        "state": "NH",
+        "zip": "3055"
+      },
+      "contact": {
+        "phone": "6036732907",
+        "phone_formatted": "6036732907"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.8357,
+        "longitude": -71.658
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 52,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MILFORD SNF OPCO LLC",
+        "chain_name": "SEAN STEVENSON"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.theelmshc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=15373006836835849335",
+        "verified_phone": "(603) 673-2907",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:23.677249"
+      }
+    },
+    {
+      "name": "SAINT ANN REHABILITATION AND NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "195 DOVER POINT ROAD",
+        "city": "DOVER",
+        "state": "NH",
+        "zip": "3820"
+      },
+      "contact": {
+        "phone": "6037422612",
+        "phone_formatted": "6037422612"
+      },
+      "location": {
+        "county": "Strafford",
+        "latitude": 43.1536,
+        "longitude": -70.84
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 54,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST ANN REHABILITATION & NURSING CENTER",
+        "chain_name": "CATHOLIC CHARITIES NEW HAMPSHIRE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.stannrehabcenter.org/",
+        "google_maps_url": "https://maps.google.com/?cid=2481641764344791490",
+        "verified_phone": "(603) 742-2612",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:24.825062"
+      }
+    },
+    {
+      "name": "SAINT FRANCIS REHABILITATION AND NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "406 COURT STREET",
+        "city": "LACONIA",
+        "state": "NH",
+        "zip": "3246"
+      },
+      "contact": {
+        "phone": "6035240466",
+        "phone_formatted": "6035240466"
+      },
+      "location": {
+        "county": "Belknap",
+        "latitude": 43.5187,
+        "longitude": -71.482
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 51,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST FRANCIS REHABILITATION & NURSING CENTER",
+        "chain_name": "CATHOLIC CHARITIES NEW HAMPSHIRE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.stfrancisrehabcenter.org/",
+        "google_maps_url": "https://maps.google.com/?cid=9804472218751191869",
+        "verified_phone": "(603) 524-0466",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:26.118830"
+      }
+    },
+    {
+      "name": "SAINT TERESA REHABILITATION & NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "519 BRIDGE STREET",
+        "city": "MANCHESTER",
+        "state": "NH",
+        "zip": "3104"
+      },
+      "contact": {
+        "phone": "6036682373",
+        "phone_formatted": "6036682373"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.9958,
+        "longitude": -71.438
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 51,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST TERESA REHABILITATION & NURSING CENTER",
+        "chain_name": "CATHOLIC CHARITIES NEW HAMPSHIRE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.stteresarehabcenter.org/",
+        "google_maps_url": "https://maps.google.com/?cid=3706287157656607285",
+        "verified_phone": "(603) 668-2373",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:27.324025"
+      }
+    },
+    {
+      "name": "JAFFREY REHABILITATION AND NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "20 PLANTATION DRIVE",
+        "city": "JAFFREY",
+        "state": "NH",
+        "zip": "3452"
+      },
+      "contact": {
+        "phone": "6035328762",
+        "phone_formatted": "6035328762"
+      },
+      "location": {
+        "county": "Cheshire",
+        "latitude": 42.8048,
+        "longitude": -72.01
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 83,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "JAFFREY REHABILITATION AND NURSING CENTER, LLC",
+        "chain_name": "EPHRAM LAHASKY"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.jaffreyrnc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=5882583889176532475",
+        "verified_phone": "(603) 532-8762",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:28.640651"
+      }
+    },
+    {
+      "name": "HOLY CROSS HEALTH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "357 ISLAND POND ROAD",
+        "city": "MANCHESTER",
+        "state": "NH",
+        "zip": "3109"
+      },
+      "contact": {
+        "phone": "6036283550",
+        "phone_formatted": "6036283550"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.9721,
+        "longitude": -71.417
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HOLY CROSS HEALTH CENTER INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://holycrosshc.org/",
+        "google_maps_url": "https://maps.google.com/?cid=2782331959316917923",
+        "verified_phone": "(603) 628-3550",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:30.045102"
+      }
+    },
+    {
+      "name": "Mountain Ridge Center, Genesis HealthCare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7 BALDWIN STREET",
+        "city": "FRANKLIN",
+        "state": "NH",
+        "zip": "3235"
+      },
+      "contact": {
+        "phone": "6039342541",
+        "phone_formatted": "6039342541"
+      },
+      "location": {
+        "county": "Merrimack",
+        "latitude": 43.4387,
+        "longitude": -71.631
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 86,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "7 BALDWIN STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/mountainridge",
+        "google_maps_url": "https://maps.google.com/?cid=12066139056216394355",
+        "verified_phone": "(603) 934-2541",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:31.204975"
+      }
+    },
+    {
+      "name": "COUNTRY VILLAGE CENTER, GENESIS HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "91 COUNTRY VILLAGE ROAD",
+        "city": "LANCASTER",
+        "state": "NH",
+        "zip": "3584"
+      },
+      "contact": {
+        "phone": "6037884735",
+        "phone_formatted": "6037884735"
+      },
+      "location": {
+        "county": "Coos",
+        "latitude": 44.4996,
+        "longitude": -71.578
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 86,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "91 COUNTRY VILLAGE ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/CountryVillage",
+        "google_maps_url": "https://maps.google.com/?cid=2371465924655545398",
+        "verified_phone": "(603) 788-4735",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:32.577343"
+      }
+    },
+    {
+      "name": "LAFAYETTE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "93 MAIN STREET",
+        "city": "FRANCONIA",
+        "state": "NH",
+        "zip": "3580"
+      },
+      "contact": {
+        "phone": "6038235502",
+        "phone_formatted": "6038235502"
+      },
+      "location": {
+        "county": "Grafton",
+        "latitude": 44.2313,
+        "longitude": -71.755
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAFAYETTE OPERATING GROUP LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.lafayettecenter.net/",
+        "google_maps_url": "https://maps.google.com/?cid=13534628837676257413",
+        "verified_phone": "(603) 823-5502",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:33.763800"
+      }
+    },
+    {
+      "name": "HARRIS HILL CENTER, GENESIS HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "20 MAITLAND STREET",
+        "city": "CONCORD",
+        "state": "NH",
+        "zip": "3301"
+      },
+      "contact": {
+        "phone": "6032241319",
+        "phone_formatted": "6032241319"
+      },
+      "location": {
+        "county": "Merrimack",
+        "latitude": 43.1909,
+        "longitude": -71.532
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 85,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "20 MAITLAND STREET OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/HarrisHill",
+        "google_maps_url": "https://maps.google.com/?cid=13120478631473414167",
+        "verified_phone": "(603) 224-1319",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:35.286904"
+      }
+    },
+    {
+      "name": "VILLA CREST NURSING AND RETIREMENT CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1276 HANOVER STREET",
+        "city": "MANCHESTER",
+        "state": "NH",
+        "zip": "3104"
+      },
+      "contact": {
+        "phone": "6036223262",
+        "phone_formatted": "6036223262"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.9892,
+        "longitude": -71.409
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 126,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BH VILLA CREST LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://villacresthcc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=4692909948321535878",
+        "verified_phone": "(603) 622-3262",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:36.465732"
+      }
+    },
+    {
+      "name": "EPSOM HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "901 SUNCOOK VALLEY HIGHWAY",
+        "city": "EPSOM",
+        "state": "NH",
+        "zip": "3234"
+      },
+      "contact": {
+        "phone": "6037364772",
+        "phone_formatted": "6037364772"
+      },
+      "location": {
+        "county": "Merrimack",
+        "latitude": 43.2322,
+        "longitude": -71.361
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 108,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BH EPSOM LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://epsomhcc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=1515162604893158600",
+        "verified_phone": "(603) 736-4772",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:37.751861"
+      }
+    },
+    {
+      "name": "BIRCH HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "62 ROCHESTER HILL ROAD",
+        "city": "ROCHESTER",
+        "state": "NH",
+        "zip": "3867"
+      },
+      "contact": {
+        "phone": "6033353955",
+        "phone_formatted": "6033353955"
+      },
+      "location": {
+        "county": "Strafford",
+        "latitude": 43.2933,
+        "longitude": -70.955
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 79,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEAK HEALTHCARE AT ROCHESTER LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://birch-hc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=1857989180371615282",
+        "verified_phone": "(603) 335-3955",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:39.002132"
+      }
+    },
+    {
+      "name": "CEDAR HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "188 JONES AVENUE",
+        "city": "PORTSMOUTH",
+        "state": "NH",
+        "zip": "3801"
+      },
+      "contact": {
+        "phone": "6034312530",
+        "phone_formatted": "6034312530"
+      },
+      "location": {
+        "county": "Rockingham",
+        "latitude": 43.0605,
+        "longitude": -70.758
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PEAK HEALTHCARE AT PORTSMOUTH LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://cedar-hc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=4481235877436097602",
+        "verified_phone": "(603) 431-2530",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:40.152951"
+      }
+    },
+    {
+      "name": "WOLFEBORO BAY CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "39 CLIPPER DRIVE",
+        "city": "WOLFEBORO",
+        "state": "NH",
+        "zip": "3894"
+      },
+      "contact": {
+        "phone": "6035693950",
+        "phone_formatted": "6035693950"
+      },
+      "location": {
+        "county": "Carroll",
+        "latitude": 43.5762,
+        "longitude": -71.204
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 104,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WOLFEBORO SNF OPCO LLC",
+        "chain_name": "SEAN STEVENSON"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.wolfeborobayhc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=6764280913049365539",
+        "verified_phone": "(603) 569-3950",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:41.471494"
+      }
+    },
+    {
+      "name": "MINERAL SPRINGS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1251 WHITE MOUNTAIN HIGHWAY",
+        "city": "NORTH CONWAY",
+        "state": "NH",
+        "zip": "3860"
+      },
+      "contact": {
+        "phone": "6033567294",
+        "phone_formatted": "6033567294"
+      },
+      "location": {
+        "county": "Carroll",
+        "latitude": 44.0127,
+        "longitude": -71.113
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 87,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH CONWAY SNF OPCO LLC",
+        "chain_name": "SEAN STEVENSON"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.mineralspringshc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=7067177200140115972",
+        "verified_phone": "(603) 356-7294",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:42.612143"
+      }
+    },
+    {
+      "name": "LANGDON PLACE OF KEENE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "136 A ARCH STREET",
+        "city": "KEENE",
+        "state": "NH",
+        "zip": "3431"
+      },
+      "contact": {
+        "phone": "6033573902",
+        "phone_formatted": "6033573902"
+      },
+      "location": {
+        "county": "Cheshire",
+        "latitude": 42.939,
+        "longitude": -72.286
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 25,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.langdonkeene.com/",
+        "google_maps_url": "https://maps.google.com/?cid=11505478142672974397",
+        "verified_phone": "(603) 357-3902",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:43.846102"
+      }
+    },
+    {
+      "name": "BEDFORD NURSING & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "480 DONALD STREET",
+        "city": "BEDFORD",
+        "state": "NH",
+        "zip": "3110"
+      },
+      "contact": {
+        "phone": "6036274147",
+        "phone_formatted": "6036274147"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.9696,
+        "longitude": -71.501
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BEDFORD SNF OPCO LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.bnrc-hc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=4687582541318067433",
+        "verified_phone": "(603) 627-4147",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:45.117309"
+      }
+    },
+    {
+      "name": "MOUNTAIN VIEW COMMUNITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "93 WATER VILLAGE ROAD",
+        "city": "OSSIPEE",
+        "state": "NH",
+        "zip": "3864"
+      },
+      "contact": {
+        "phone": "6035397511",
+        "phone_formatted": "6035397511"
+      },
+      "location": {
+        "county": "Carroll",
+        "latitude": 43.6851,
+        "longitude": -71.138
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 103,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COUNTY OF CARROLL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.carrollcountynh.gov/205/Mountain-View-Community",
+        "google_maps_url": "https://maps.google.com/?cid=461542049217171389",
+        "verified_phone": "(603) 539-7511",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:46.228920"
+      }
+    },
+    {
+      "name": "ST JOSEPH RESIDENCE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "495 MAMMOTH RD",
+        "city": "MANCHESTER",
+        "state": "NH",
+        "zip": "3104"
+      },
+      "contact": {
+        "phone": "6036686011",
+        "phone_formatted": "6036686011"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.99,
+        "longitude": -71.434
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 22,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAINT JOSEPH RESIDENCE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": null,
+        "google_maps_url": "https://maps.google.com/?cid=3749078551313059322",
+        "verified_phone": "(603) 668-6011",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:47.581958"
+      }
+    },
+    {
+      "name": "LANGDON PLACE OF DOVER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "60 MIDDLE ROAD",
+        "city": "DOVER",
+        "state": "NH",
+        "zip": "3820"
+      },
+      "contact": {
+        "phone": "6037434110",
+        "phone_formatted": "6037434110"
+      },
+      "location": {
+        "county": "Strafford",
+        "latitude": 43.1816,
+        "longitude": -70.859
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 30,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DOVER SNF OPCO LLC",
+        "chain_name": "SEAN STEVENSON"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.langdondover.com/",
+        "google_maps_url": "https://maps.google.com/?cid=5000454935493267463",
+        "verified_phone": "(603) 743-4110",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:48.957094"
+      }
+    },
+    {
+      "name": "COLONIAL POPLIN NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "442 MAIN STREET",
+        "city": "FREMONT",
+        "state": "NH",
+        "zip": "3044"
+      },
+      "contact": {
+        "phone": "6038953126",
+        "phone_formatted": "6038953126"
+      },
+      "location": {
+        "county": "Rockingham",
+        "latitude": 42.9842,
+        "longitude": -71.13
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COLONIAL POPLIN NURSING HOME INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.colonialpoplin.com/",
+        "google_maps_url": "https://maps.google.com/?cid=669968611731038041",
+        "verified_phone": "(603) 895-3126",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:50.131062"
+      }
+    },
+    {
+      "name": "HILLSBORO HOUSE NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "PO BOX 400 67 SCHOOL STREET",
+        "city": "HILLSBORO",
+        "state": "NH",
+        "zip": "3244"
+      },
+      "contact": {
+        "phone": "6034645561",
+        "phone_formatted": "6034645561"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 43.1328,
+        "longitude": -71.929
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 33,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SCHOOL STREET ASSOCIATES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.hillsborohouse.org/",
+        "google_maps_url": "https://maps.google.com/?cid=5448993610176010511",
+        "verified_phone": "(603) 464-5561",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:51.273875"
+      }
+    },
+    {
+      "name": "SULLIVAN COUNTY HEALTH CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5 NURSING HOME DRIVE",
+        "city": "UNITY",
+        "state": "NH",
+        "zip": "3743"
+      },
+      "contact": {
+        "phone": "6035429511",
+        "phone_formatted": "6035429511"
+      },
+      "location": {
+        "county": "Sullivan",
+        "latitude": 43.3101,
+        "longitude": -72.31
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 156,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SULLIVAN COUNTY COMMISSIONERS",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.sullivancountynh.gov/152/Sullivan-County-Health-Care",
+        "google_maps_url": "https://maps.google.com/?cid=10688806908803427246",
+        "verified_phone": "(603) 542-9511",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:52.450015"
+      }
+    },
+    {
+      "name": "MORRISON NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6 TERRACE STREET",
+        "city": "WHITEFIELD",
+        "state": "NH",
+        "zip": "3598"
+      },
+      "contact": {
+        "phone": "6038372541",
+        "phone_formatted": "6038372541"
+      },
+      "location": {
+        "county": "Coos",
+        "latitude": 44.3751,
+        "longitude": -71.615
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 57,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MORRISON HOSPITAL ASSOCIATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.themorrisoncommunities.org/",
+        "google_maps_url": "https://maps.google.com/?cid=1798177225921793367",
+        "verified_phone": "(603) 837-2541",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:53.805860"
+      }
+    },
+    {
+      "name": "DERRY CENTER FOR REHABILITATION AND HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "20 CHESTER ROAD",
+        "city": "DERRY",
+        "state": "NH",
+        "zip": "3038"
+      },
+      "contact": {
+        "phone": "6034323801",
+        "phone_formatted": "6034323801"
+      },
+      "location": {
+        "county": "Rockingham",
+        "latitude": 42.8963,
+        "longitude": -71.309
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DERRY REHABILITATION AND NURSING CENTER LLC",
+        "chain_name": "EPHRAM LAHASKY"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://derryrnc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=16865207273307811923",
+        "verified_phone": "(603) 432-3801",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:55.150326"
+      }
+    },
+    {
+      "name": "GOFFSTOWN NURSING AND REHAB CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "29 CENTER STREET",
+        "city": "GOFFSTOWN",
+        "state": "NH",
+        "zip": "3045"
+      },
+      "contact": {
+        "phone": "6034974871",
+        "phone_formatted": "6034974871"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 43.0231,
+        "longitude": -71.551
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 41,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MORE COWBELL LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://hcnh.org/Departments/Nursing-Home",
+        "google_maps_url": "https://maps.google.com/?cid=16968788726669377402",
+        "verified_phone": "(603) 627-5540",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:56.461186"
+      }
+    },
+    {
+      "name": "WOODLAWN HEALTHCARE CENTER LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "84 PINE STREET",
+        "city": "NEWPORT",
+        "state": "NH",
+        "zip": "3773"
+      },
+      "contact": {
+        "phone": "6038631020",
+        "phone_formatted": "6038631020"
+      },
+      "location": {
+        "county": "Sullivan",
+        "latitude": 43.3641,
+        "longitude": -72.182
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 53,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.woodlawncarecenter.com/",
+        "google_maps_url": "https://maps.google.com/?cid=335999019209524607",
+        "verified_phone": "(603) 863-1020",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:57.963026"
+      }
+    },
+    {
+      "name": "WEBSTER AT RYE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "795 WASHINGTON ROAD",
+        "city": "RYE",
+        "state": "NH",
+        "zip": "3870"
+      },
+      "contact": {
+        "phone": "6039648144",
+        "phone_formatted": "6039648144"
+      },
+      "location": {
+        "county": "Rockingham",
+        "latitude": 43.0057,
+        "longitude": -70.784
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 61,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RANNIE WEBSTER FOUNDATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.websteratrye.com/",
+        "google_maps_url": "https://maps.google.com/?cid=9096651298220236776",
+        "verified_phone": "(603) 964-8144",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:57:59.317383"
+      }
+    },
+    {
+      "name": "FAIRVIEW NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "203 LOWELL ROAD",
+        "city": "HUDSON",
+        "state": "NH",
+        "zip": "3051"
+      },
+      "contact": {
+        "phone": "6038825261",
+        "phone_formatted": "6038825261"
+      },
+      "location": {
+        "county": "Hillsborough",
+        "latitude": 42.7318,
+        "longitude": -71.425
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 101,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MERRIMAC MEDICAL INVESTORS, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://fairviewseniorliving.com/service/assisted-living/",
+        "google_maps_url": "https://maps.google.com/?cid=10089478694044875333",
+        "verified_phone": "(603) 883-2419",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:58:00.521973"
+      }
+    },
+    {
+      "name": "BELKNAP COUNTY NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "30 COUNTY DRIVE",
+        "city": "LACONIA",
+        "state": "NH",
+        "zip": "3246"
+      },
+      "contact": {
+        "phone": "6035275410",
+        "phone_formatted": "6035275410"
+      },
+      "location": {
+        "county": "Belknap",
+        "latitude": 43.5434,
+        "longitude": -71.484
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 94,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BELKNAP COUNTY",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://facebook.com/pages/category/Nursing-Home/Belknap-County-Nursing-Home-281348111895070/",
+        "google_maps_url": "https://maps.google.com/?cid=16776085128376760107",
+        "verified_phone": "(603) 527-5410",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:58:01.884770"
+      }
+    },
+    {
+      "name": "COOS COUNTY NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "364 CATES HILL RD  PO BOX 416",
+        "city": "BERLIN",
+        "state": "NH",
+        "zip": "3570"
+      },
+      "contact": {
+        "phone": "6037522343",
+        "phone_formatted": "6037522343"
+      },
+      "location": {
+        "county": "Coos",
+        "latitude": 44.4763,
+        "longitude": -71.177
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COOS COUNTY NURSING HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.cooscountynh.gov/government/departments/nursing_homes/coos_county_nursing_home_berlin/index.php",
+        "google_maps_url": "https://maps.google.com/?cid=5372209563036717768",
+        "verified_phone": "(603) 752-2343",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:58:03.067438"
+      }
+    },
+    {
+      "name": "COVENANT LIVING OF KEENE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 WYMAN RD",
+        "city": "KEENE",
+        "state": "NH",
+        "zip": "3431"
+      },
+      "contact": {
+        "phone": "6033523235",
+        "phone_formatted": "6033523235"
+      },
+      "location": {
+        "county": "Cheshire",
+        "latitude": 42.9689,
+        "longitude": -72.335
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 20,
+        "provider_type": "Medicare",
+        "legal_business_name": "COVENANT LIVING OF KEENE",
+        "chain_name": "COVENANT LIVING"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://covlivingkeene.org/?_vsrefdom=googlemap-organic-seo-local---google-map&CMM=644019c4bf52cd45f9785fdf&utm_medium=organic&utm_source=googlemap&utm_campaign=legacy-covenant-living-of-keene&utm_content=seo-local---google-map",
+        "google_maps_url": "https://maps.google.com/?cid=2103469817202319000",
+        "verified_phone": "(877) 381-3360",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:58:04.445647"
+      }
+    },
+    {
+      "name": "GLENCLIFF HOME FOR THE ELDERLY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "393 HIGH STREET",
+        "city": "GLENCLIFF",
+        "state": "NH",
+        "zip": "3238"
+      },
+      "contact": {
+        "phone": "6039893111",
+        "phone_formatted": "6039893111"
+      },
+      "location": {
+        "county": "Grafton",
+        "latitude": 44.0015,
+        "longitude": -71.88
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 130,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.dhhs.nh.gov/about-dhhs/locations-facilities/glencliff-home",
+        "google_maps_url": "https://maps.google.com/?cid=4410406545549757023",
+        "verified_phone": "(603) 989-3111",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:58:05.781338"
+      }
+    },
+    {
+      "name": "MERRIMAN HOUSE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3073 WHITE MOUNTAIN HIGHWAY",
+        "city": "NORTH CONWAY",
+        "state": "NH",
+        "zip": "3860"
+      },
+      "contact": {
+        "phone": "6033560699",
+        "phone_formatted": "6033560699"
+      },
+      "location": {
+        "county": "Carroll",
+        "latitude": 44.0608,
+        "longitude": -71.139
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 45,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mainehealth.org/memorial-hospital?utm_source=google&utm_medium=local",
+        "google_maps_url": "https://maps.google.com/?cid=16274707803274269967",
+        "verified_phone": "(603) 356-5461",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:58:07.162523"
+      }
+    },
+    {
+      "name": "COOS COUNTY NURSING HOSPITAL",
+      "type": "Nursing Home",
+      "address": {
+        "street": "136 COUNTY FARM ROAD",
+        "city": "WEST STEWARTSTOWN",
+        "state": "NH",
+        "zip": "3597"
+      },
+      "contact": {
+        "phone": "6032463321",
+        "phone_formatted": "6032463321"
+      },
+      "location": {
+        "county": "Coos",
+        "latitude": 44.9889,
+        "longitude": -71.533
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 97,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.cooscountynh.us/co%C3%B6s-county-nursing-hospital-w-stewartstown",
+        "google_maps_url": "https://maps.google.com/?cid=9670789173404783833",
+        "verified_phone": "(603) 246-3321",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:58:08.567530"
+      }
+    }
+  ]
+}

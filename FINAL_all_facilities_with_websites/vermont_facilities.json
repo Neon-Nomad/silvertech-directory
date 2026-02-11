@@ -1,0 +1,1568 @@
+{
+  "state": "Vermont",
+  "state_code": "VT",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 34,
+    "total_nursing_homes": 34,
+    "total_assisted_living": 0,
+    "total_certified_beds": 2964,
+    "counties_served": 12,
+    "average_beds_per_facility": 87.2
+  },
+  "quality_distribution": {
+    "five_star": 5,
+    "four_star": 5,
+    "three_star": 9,
+    "two_star": 7,
+    "one_star": 7
+  },
+  "counties": {
+    "Chittenden": {
+      "facility_count": 5,
+      "total_beds": 526
+    },
+    "Windham": {
+      "facility_count": 3,
+      "total_beds": 183
+    },
+    "Rutland": {
+      "facility_count": 3,
+      "total_beds": 386
+    },
+    "Addison": {
+      "facility_count": 1,
+      "total_beds": 98
+    },
+    "Caledonia": {
+      "facility_count": 2,
+      "total_beds": 159
+    },
+    "Washington": {
+      "facility_count": 4,
+      "total_beds": 414
+    },
+    "Franklin": {
+      "facility_count": 3,
+      "total_beds": 209
+    },
+    "Windsor": {
+      "facility_count": 3,
+      "total_beds": 187
+    },
+    "Bennington": {
+      "facility_count": 4,
+      "total_beds": 497
+    },
+    "Orleans": {
+      "facility_count": 4,
+      "total_beds": 203
+    },
+    "Lamoille": {
+      "facility_count": 1,
+      "total_beds": 72
+    },
+    "Orange": {
+      "facility_count": 1,
+      "total_beds": 30
+    }
+  },
+  "facilities": [
+    {
+      "name": "Birchwood Terrace Rehab & Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "43 Starr Farm Rd",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "5408"
+      },
+      "contact": {
+        "phone": "8028636384",
+        "phone_formatted": "8028636384"
+      },
+      "location": {
+        "county": "Chittenden",
+        "latitude": 44.5162,
+        "longitude": -73.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 144,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BIRCHWOOD OPERATIONS LLC",
+        "chain_name": "STELLAR HEALTH GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://birchwoodterrace.com/",
+        "google_maps_url": "https://maps.google.com/?cid=17509852158091802524",
+        "verified_phone": "(802) 863-6384",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:17.929560"
+      }
+    },
+    {
+      "name": "Vernon Green Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "61 Greenway Drive",
+        "city": "Vernon",
+        "state": "VT",
+        "zip": "5354"
+      },
+      "contact": {
+        "phone": "8022546041",
+        "phone_formatted": "8022546041"
+      },
+      "location": {
+        "county": "Windham",
+        "latitude": 42.7628,
+        "longitude": -72.508
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VERNON ADVENT CHRISTIAN HOME, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.vernonhomes.org/",
+        "google_maps_url": "https://maps.google.com/?cid=8492447364645714845",
+        "verified_phone": "(802) 254-6041",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:18.802867"
+      }
+    },
+    {
+      "name": "Mountain View Center Genesis Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "9 Haywood Avenue",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "5701"
+      },
+      "contact": {
+        "phone": "8027750007",
+        "phone_formatted": "8027750007"
+      },
+      "location": {
+        "county": "Rutland",
+        "latitude": 43.5939,
+        "longitude": -72.961
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 158,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NINE HAYWOOD AVENUE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/MountainView",
+        "google_maps_url": "https://maps.google.com/?cid=15732723219064026898",
+        "verified_phone": "(802) 775-0007",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:19.592618"
+      }
+    },
+    {
+      "name": "Premier Rehab and Healthcare at Burlington",
+      "type": "Nursing Home",
+      "address": {
+        "street": "300 Pearl Street",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "5401"
+      },
+      "contact": {
+        "phone": "8026584200",
+        "phone_formatted": "8026584200"
+      },
+      "location": {
+        "county": "Chittenden",
+        "latitude": 44.4806,
+        "longitude": -73.207
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 126,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "300 PEARL STREET OPCO LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://premierburlington.com/",
+        "google_maps_url": "https://maps.google.com/?cid=10596035611596899193",
+        "verified_phone": "(802) 658-4200",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:20.565884"
+      }
+    },
+    {
+      "name": "Helen Porter Healthcare & Rehab",
+      "type": "Nursing Home",
+      "address": {
+        "street": "30 Porter Drive",
+        "city": "Middlebury",
+        "state": "VT",
+        "zip": "5753"
+      },
+      "contact": {
+        "phone": "8023884001",
+        "phone_formatted": "8023884001"
+      },
+      "location": {
+        "county": "Addison",
+        "latitude": 43.9994,
+        "longitude": -73.17
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 98,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HELEN PORTER NURSING HOME, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.uvmhealth.org/locations/helen-porter-rehabilitation-nursing-uvm-health-porter-medical-center",
+        "google_maps_url": "https://maps.google.com/?cid=8094647380563962556",
+        "verified_phone": "(802) 388-4001",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:21.332733"
+      }
+    },
+    {
+      "name": "The Pines at Rutland Center for Nursing & Rehabili",
+      "type": "Nursing Home",
+      "address": {
+        "street": "99 Allen Street",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "5701"
+      },
+      "contact": {
+        "phone": "8027752331",
+        "phone_formatted": "8027752331"
+      },
+      "location": {
+        "county": "Rutland",
+        "latitude": 43.598,
+        "longitude": -72.961
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 125,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RUTLAND CROSSINGS LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://pinesrutland.com/",
+        "google_maps_url": "https://maps.google.com/?cid=14310610228934116897",
+        "verified_phone": "(802) 775-2331",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:22.640681"
+      }
+    },
+    {
+      "name": "St. Johnsbury Health & Rehab",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1248 Hospital Drive",
+        "city": "Saint Johnsbury",
+        "state": "VT",
+        "zip": "5819"
+      },
+      "contact": {
+        "phone": "8027488757",
+        "phone_formatted": "8027488757"
+      },
+      "location": {
+        "county": "Caledonia",
+        "latitude": 44.4453,
+        "longitude": -72.012
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 99,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.nchcvt.org/locations-providers/st-johnsbury-community-health-center/",
+        "google_maps_url": "https://maps.google.com/?cid=13093101666599713172",
+        "verified_phone": "(802) 748-5041",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:23.354186"
+      }
+    },
+    {
+      "name": "Premier Rehab and Healthcare at Berlin",
+      "type": "Nursing Home",
+      "address": {
+        "street": "98 Hospitality Drive",
+        "city": "Barre",
+        "state": "VT",
+        "zip": "5641"
+      },
+      "contact": {
+        "phone": "8022290308",
+        "phone_formatted": "8022290308"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 44.2174,
+        "longitude": -72.555
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 115,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BERLIN OPERATIONS LLC",
+        "chain_name": "STELLAR HEALTH GROUP"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.genesishcc.com/berlinhealth",
+        "google_maps_url": "https://maps.google.com/?cid=18009336163644020057",
+        "verified_phone": "(802) 229-0308",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:24.065404"
+      }
+    },
+    {
+      "name": "Saint Albans Healthcare and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "596 Sheldon Road",
+        "city": "Saint Albans",
+        "state": "VT",
+        "zip": "5478"
+      },
+      "contact": {
+        "phone": "8025246534",
+        "phone_formatted": "8025246534"
+      },
+      "location": {
+        "county": "Franklin",
+        "latitude": 44.8271,
+        "longitude": -73.069
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 115,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FIVE NINETY SIX SHELDON ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/SaintAlbans",
+        "google_maps_url": "https://maps.google.com/?cid=11058047516924466018",
+        "verified_phone": "(802) 524-6534",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:24.907691"
+      }
+    },
+    {
+      "name": "Pine Heights at Brattleboro Center for Nursing & R",
+      "type": "Nursing Home",
+      "address": {
+        "street": "187 Oak Grove Avenue",
+        "city": "Brattleboro",
+        "state": "VT",
+        "zip": "5301"
+      },
+      "contact": {
+        "phone": "8022570307",
+        "phone_formatted": "8022570307"
+      },
+      "location": {
+        "county": "Windham",
+        "latitude": 42.8421,
+        "longitude": -72.563
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BRATTLEBORO CROSSINGS LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://pineheightsbrattleboro.com/",
+        "google_maps_url": "https://maps.google.com/?cid=6902344010257984891",
+        "verified_phone": "(802) 257-0307",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:25.609120"
+      }
+    },
+    {
+      "name": "Springfield Health & Rehab",
+      "type": "Nursing Home",
+      "address": {
+        "street": "105 Chester Road",
+        "city": "Springfield",
+        "state": "VT",
+        "zip": "5156"
+      },
+      "contact": {
+        "phone": "8028855741",
+        "phone_formatted": "8028855741"
+      },
+      "location": {
+        "county": "Windsor",
+        "latitude": 43.3011,
+        "longitude": -72.507
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.northstarfqhc.org/springfield-health-center",
+        "google_maps_url": "https://maps.google.com/?cid=8174947943659945442",
+        "verified_phone": "(802) 886-8900",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:26.375777"
+      }
+    },
+    {
+      "name": "Bennington Health & Rehab",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2 Blackberry Lane",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "5201"
+      },
+      "contact": {
+        "phone": "8024428525",
+        "phone_formatted": "8024428525"
+      },
+      "location": {
+        "county": "Bennington",
+        "latitude": 42.8693,
+        "longitude": -73.205
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.missioncareatbennington.com/",
+        "google_maps_url": "https://maps.google.com/?cid=3431943923402053718",
+        "verified_phone": "(802) 442-8525",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:26.998463"
+      }
+    },
+    {
+      "name": "Center for Living & Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "160 Hospital Drive",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "5201"
+      },
+      "contact": {
+        "phone": "8024471547",
+        "phone_formatted": "8024471547"
+      },
+      "location": {
+        "county": "Bennington",
+        "latitude": 42.8734,
+        "longitude": -73.207
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 130,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CLR OPCO LLC",
+        "chain_name": "ALLAIRE HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://centerforliving.org/",
+        "google_maps_url": "https://maps.google.com/?cid=6956083597803258016",
+        "verified_phone": "(646) 347-1823",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:27.872969"
+      }
+    },
+    {
+      "name": "Elderwood at Burlington",
+      "type": "Nursing Home",
+      "address": {
+        "street": "98 Starr Farm Rd.",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "5408"
+      },
+      "contact": {
+        "phone": "8026586717",
+        "phone_formatted": "8026586717"
+      },
+      "location": {
+        "county": "Chittenden",
+        "latitude": 44.5132,
+        "longitude": -73.266
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 150,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "98 STARR FARM ROAD OPERATING COMPANY, LLC",
+        "chain_name": "ELDERWOOD"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.elderwood.com/locations/elderwood-at-burlington",
+        "google_maps_url": "https://maps.google.com/?cid=182006901583842361",
+        "verified_phone": "(802) 658-6717",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:28.559266"
+      }
+    },
+    {
+      "name": "Vermont Veterans' Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "325 North Street",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "5201"
+      },
+      "contact": {
+        "phone": "8024476510",
+        "phone_formatted": "8024476510"
+      },
+      "location": {
+        "county": "Bennington",
+        "latitude": 42.885,
+        "longitude": -73.197
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 177,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VERMONT VETERANS' HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://vvh.vermont.gov/",
+        "google_maps_url": "https://maps.google.com/?cid=14060863669988073592",
+        "verified_phone": "(802) 447-6510",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:29.240374"
+      }
+    },
+    {
+      "name": "Crescent Manor Care Ctrs",
+      "type": "Nursing Home",
+      "address": {
+        "street": "312 Crescent Blvd",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "5201"
+      },
+      "contact": {
+        "phone": "8024471501",
+        "phone_formatted": "8024471501"
+      },
+      "location": {
+        "county": "Bennington",
+        "latitude": 42.8717,
+        "longitude": -73.191
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "PHILIPSON FAMILY"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://crescentmanor.com/",
+        "google_maps_url": "https://maps.google.com/?cid=7883701961246991117",
+        "verified_phone": "(802) 447-1501",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:30.132243"
+      }
+    },
+    {
+      "name": "Union House Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3086 Glover Street",
+        "city": "Glover",
+        "state": "VT",
+        "zip": "5839"
+      },
+      "contact": {
+        "phone": "8025256600",
+        "phone_formatted": "8025256600"
+      },
+      "location": {
+        "county": "Orleans",
+        "latitude": 44.6644,
+        "longitude": -72.216
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 44,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "UNION HOUSE NURSING HOME, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": null,
+        "google_maps_url": "https://maps.google.com/?cid=16871041890430800332",
+        "verified_phone": "(802) 525-6600",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:30.851323"
+      }
+    },
+    {
+      "name": "Barre Gardens Nursing and Rehab, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "378 Prospect Street",
+        "city": "Barre",
+        "state": "VT",
+        "zip": "5641"
+      },
+      "contact": {
+        "phone": "8024764166",
+        "phone_formatted": "8024764166"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 44.196,
+        "longitude": -72.521
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 96,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BARRE GARDENS NURSING AND REHAB LLC",
+        "chain_name": "PRIORITY HEALTHCARE GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://barregardens.com/",
+        "google_maps_url": "https://maps.google.com/?cid=15879322616223183361",
+        "verified_phone": "(802) 476-4166",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:31.745483"
+      }
+    },
+    {
+      "name": "Rutland Healthcare & Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "46 Nichols Street",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "5701"
+      },
+      "contact": {
+        "phone": "8027752941",
+        "phone_formatted": "8027752941"
+      },
+      "location": {
+        "county": "Rutland",
+        "latitude": 43.6113,
+        "longitude": -72.975
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 103,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://rutlandclr.com/",
+        "google_maps_url": "https://maps.google.com/?cid=8324136137749512182",
+        "verified_phone": "(802) 775-2941",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:32.347879"
+      }
+    },
+    {
+      "name": "Green Mountain Nursing and Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "475 Ethan Allen Avenue",
+        "city": "Colchester",
+        "state": "VT",
+        "zip": "5446"
+      },
+      "contact": {
+        "phone": "8026551025",
+        "phone_formatted": "8026551025"
+      },
+      "location": {
+        "county": "Chittenden",
+        "latitude": 44.5035,
+        "longitude": -73.151
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 73,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GM OPERATIONS LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://greenmountainnh.com/",
+        "google_maps_url": "https://maps.google.com/?cid=7443765431257084321",
+        "verified_phone": "(802) 655-1025",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:33.197834"
+      }
+    },
+    {
+      "name": "Maple Lane Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "60 Maple Lane",
+        "city": "Barton",
+        "state": "VT",
+        "zip": "5822"
+      },
+      "contact": {
+        "phone": "8027548575",
+        "phone_formatted": "8027548575"
+      },
+      "location": {
+        "county": "Orleans",
+        "latitude": 44.7864,
+        "longitude": -72.189
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 71,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KINGDOM REHAB CENTER, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": null,
+        "google_maps_url": "https://maps.google.com/?cid=9043662234135851109",
+        "verified_phone": "(802) 754-8575",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:34.119024"
+      }
+    },
+    {
+      "name": "Greensboro Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "47 Maggie's Pond Road",
+        "city": "Greensboro",
+        "state": "VT",
+        "zip": "5841"
+      },
+      "contact": {
+        "phone": "8025337051",
+        "phone_formatted": "8025337051"
+      },
+      "location": {
+        "county": "Orleans",
+        "latitude": 44.5803,
+        "longitude": -72.287
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 30,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GREENSBORO HOSPITAL ASSOC INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.greensboronursinghome.org/",
+        "google_maps_url": "https://maps.google.com/?cid=4122436697787807441",
+        "verified_phone": "(802) 533-7051",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:35.097856"
+      }
+    },
+    {
+      "name": "Pines Rehab & Health Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "601 Red Village Road",
+        "city": "Lyndonville",
+        "state": "VT",
+        "zip": "5851"
+      },
+      "contact": {
+        "phone": "8026263367",
+        "phone_formatted": "8026263367"
+      },
+      "location": {
+        "county": "Caledonia",
+        "latitude": 44.5134,
+        "longitude": -71.996
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PINE KNOLL NURSING HOME, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.thepinesrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=10543434386725561738",
+        "verified_phone": "(215) 708-1200",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:35.950059"
+      }
+    },
+    {
+      "name": "Woodridge Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "142 Woodridge Drive",
+        "city": "Barre",
+        "state": "VT",
+        "zip": "5641"
+      },
+      "contact": {
+        "phone": "8023714700",
+        "phone_formatted": "8023714700"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 44.191,
+        "longitude": -72.489
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 153,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CENTRAL VERMONT MEDICAL CENTER INC",
+        "chain_name": "UNIVERSITY OF VERMONT HEALTH NETWORK"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.uvmhealth.org/locations/woodridge-rehabilitation-and-nursing-uvm-health-central-vermont-medical-center",
+        "google_maps_url": "https://maps.google.com/?cid=5296450372671980159",
+        "verified_phone": "(802) 371-4700",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:36.752089"
+      }
+    },
+    {
+      "name": "Cedar Hill Health Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "49 Cedar Hill Drive",
+        "city": "Windsor",
+        "state": "VT",
+        "zip": "5089"
+      },
+      "contact": {
+        "phone": "8026746609",
+        "phone_formatted": "8026746609"
+      },
+      "location": {
+        "county": "Windsor",
+        "latitude": 43.4351,
+        "longitude": -72.397
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 39,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CEDAR HILL HEALTH CARE CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.cedarhillccc.com/cedar-hill-health-care-nursing-home",
+        "google_maps_url": "https://maps.google.com/?cid=4799560296061625839",
+        "verified_phone": "(802) 674-6609",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:37.592642"
+      }
+    },
+    {
+      "name": "Franklin County Rehab Center, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "110 Fairfax Road",
+        "city": "St. Albans",
+        "state": "VT",
+        "zip": "5478"
+      },
+      "contact": {
+        "phone": "8027521600",
+        "phone_formatted": "8027521600"
+      },
+      "location": {
+        "county": "Franklin",
+        "latitude": 44.8036,
+        "longitude": -73.07
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 64,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FRANKLIN COUNTY REHAB CENTER LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.franklincountyrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=7398052823913786865",
+        "verified_phone": "(802) 752-1600",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:38.349103"
+      }
+    },
+    {
+      "name": "Bel Aire Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "35 Bel-Aire Drive",
+        "city": "Newport",
+        "state": "VT",
+        "zip": "5855"
+      },
+      "contact": {
+        "phone": "8023342878",
+        "phone_formatted": "8023342878"
+      },
+      "location": {
+        "county": "Orleans",
+        "latitude": 44.9417,
+        "longitude": -72.203
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THIRTY FIVE BEL-AIRE DRIVE SNF OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/BelAire",
+        "google_maps_url": "https://maps.google.com/?cid=832214013370911093",
+        "verified_phone": "(802) 334-2878",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:39.273178"
+      }
+    },
+    {
+      "name": "Thompson House Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "80 Maple Street",
+        "city": "Brattleboro",
+        "state": "VT",
+        "zip": "5301"
+      },
+      "contact": {
+        "phone": "8022544977",
+        "phone_formatted": "8022544977"
+      },
+      "location": {
+        "county": "Windham",
+        "latitude": 42.8446,
+        "longitude": -72.566
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 43,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BRATTLEBORO MUTUAL AID ASSOCIATION, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://thompsonhouse.info/",
+        "google_maps_url": "https://maps.google.com/?cid=12736352714185726276",
+        "verified_phone": "(802) 254-4977",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:40.132179"
+      }
+    },
+    {
+      "name": "Gill Odd Fellows Home of Vermont",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8 Gill Terrace",
+        "city": "Ludlow",
+        "state": "VT",
+        "zip": "5149"
+      },
+      "contact": {
+        "phone": "8022284571",
+        "phone_formatted": "8022284571"
+      },
+      "location": {
+        "county": "Windsor",
+        "latitude": 43.3972,
+        "longitude": -72.697
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 46,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE TRUSTEES OF THE GILL ODD FELLOWS HOME OF VERMONT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://thegilloddfellowshomeofvermontinc.org/",
+        "google_maps_url": "https://maps.google.com/?cid=10974820007731276653",
+        "verified_phone": "(802) 228-4571",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:40.758884"
+      }
+    },
+    {
+      "name": "Mayo Healthcare Inc.",
+      "type": "Nursing Home",
+      "address": {
+        "street": "71 Richardson Avenue",
+        "city": "Northfield",
+        "state": "VT",
+        "zip": "5663"
+      },
+      "contact": {
+        "phone": "8024853161",
+        "phone_formatted": "8024853161"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 44.1466,
+        "longitude": -72.665
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAYO HEALTHCARE INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mayohc.org/",
+        "google_maps_url": "https://maps.google.com/?cid=215509491297410308",
+        "verified_phone": "(802) 485-3161",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:41.458690"
+      }
+    },
+    {
+      "name": "The Villa Rehab",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7 Forest Hill Drive",
+        "city": "St. Albans",
+        "state": "VT",
+        "zip": "5478"
+      },
+      "contact": {
+        "phone": "8025243498",
+        "phone_formatted": "8025243498"
+      },
+      "location": {
+        "county": "Franklin",
+        "latitude": 44.8099,
+        "longitude": -73.074
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 30,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE VILLA REHAB CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/SaintAlbans",
+        "google_maps_url": "https://maps.google.com/?cid=11058047516924466018",
+        "verified_phone": "(802) 524-6534",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:42.190548"
+      }
+    },
+    {
+      "name": "Wake Robin-Linden Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "200 Wake Robin Drive",
+        "city": "Shelburne",
+        "state": "VT",
+        "zip": "5482"
+      },
+      "contact": {
+        "phone": "8022645100",
+        "phone_formatted": "8022645100"
+      },
+      "location": {
+        "county": "Chittenden",
+        "latitude": 44.357,
+        "longitude": -73.248
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 33,
+        "provider_type": "Medicare",
+        "legal_business_name": "WAKE ROBIN CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.wakerobin.com/",
+        "google_maps_url": "https://maps.google.com/?cid=2190351764881093505",
+        "verified_phone": "(802) 264-5100",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:42.900541"
+      }
+    },
+    {
+      "name": "The Manor, Inc.",
+      "type": "Nursing Home",
+      "address": {
+        "street": "577 Washington Highway",
+        "city": "Morrisville",
+        "state": "VT",
+        "zip": "5661"
+      },
+      "contact": {
+        "phone": "8028888700",
+        "phone_formatted": "8028888700"
+      },
+      "location": {
+        "county": "Lamoille",
+        "latitude": 44.5541,
+        "longitude": -72.59
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE MANOR INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.themanorvt.org/",
+        "google_maps_url": "https://maps.google.com/?cid=14528469012779823865",
+        "verified_phone": "(802) 888-8700",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:43.677515"
+      }
+    },
+    {
+      "name": "Menig Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "215 Tom Wicker Lane",
+        "city": "Randolph Center",
+        "state": "VT",
+        "zip": "5061"
+      },
+      "contact": {
+        "phone": "8027287800",
+        "phone_formatted": "8027287800"
+      },
+      "location": {
+        "county": "Orange",
+        "latitude": 43.9446,
+        "longitude": -72.61
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 30,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GIFFORD RETIREMENT COMMUNITY, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://morganorchards.com/",
+        "google_maps_url": "https://maps.google.com/?cid=830033077812389886",
+        "verified_phone": "(802) 728-7800",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T12:19:44.436471"
+      }
+    }
+  ]
+}

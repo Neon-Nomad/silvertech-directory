@@ -1,0 +1,3678 @@
+{
+  "state": "Idaho",
+  "state_code": "ID",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 80,
+    "total_nursing_homes": 80,
+    "total_assisted_living": 0,
+    "total_certified_beds": 6123,
+    "counties_served": 33,
+    "average_beds_per_facility": 76.5,
+    "websites_found": 80,
+    "website_success_rate": "100.0%"
+  },
+  "quality_distribution": {
+    "five_star": 20,
+    "four_star": 19,
+    "three_star": 15,
+    "two_star": 14,
+    "one_star": 11
+  },
+  "counties": {
+    "Boundary": {
+      "facility_count": 1,
+      "total_beds": 28
+    },
+    "Elmore": {
+      "facility_count": 1,
+      "total_beds": 38
+    },
+    "Bingham": {
+      "facility_count": 2,
+      "total_beds": 112
+    },
+    "Washington": {
+      "facility_count": 1,
+      "total_beds": 76
+    },
+    "Bannock": {
+      "facility_count": 4,
+      "total_beds": 308
+    },
+    "Canyon": {
+      "facility_count": 7,
+      "total_beds": 625
+    },
+    "Payette": {
+      "facility_count": 1,
+      "total_beds": 80
+    },
+    "Gem": {
+      "facility_count": 2,
+      "total_beds": 114
+    },
+    "Nez Perce": {
+      "facility_count": 6,
+      "total_beds": 507
+    },
+    "Ada": {
+      "facility_count": 14,
+      "total_beds": 1379
+    },
+    "Kootenai": {
+      "facility_count": 7,
+      "total_beds": 635
+    },
+    "Clearwater": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Bonner": {
+      "facility_count": 2,
+      "total_beds": 197
+    },
+    "Lincoln": {
+      "facility_count": 1,
+      "total_beds": 36
+    },
+    "Shoshone": {
+      "facility_count": 2,
+      "total_beds": 118
+    },
+    "Franklin": {
+      "facility_count": 1,
+      "total_beds": 35
+    },
+    "Oneida": {
+      "facility_count": 1,
+      "total_beds": 33
+    },
+    "Minidoka": {
+      "facility_count": 1,
+      "total_beds": 46
+    },
+    "Power": {
+      "facility_count": 1,
+      "total_beds": 20
+    },
+    "Latah": {
+      "facility_count": 2,
+      "total_beds": 134
+    },
+    "Cassia": {
+      "facility_count": 2,
+      "total_beds": 154
+    },
+    "Blaine": {
+      "facility_count": 1,
+      "total_beds": 32
+    },
+    "Bear Lake": {
+      "facility_count": 1,
+      "total_beds": 36
+    },
+    "Benewah": {
+      "facility_count": 1,
+      "total_beds": 74
+    },
+    "Idaho": {
+      "facility_count": 1,
+      "total_beds": 60
+    },
+    "Valley": {
+      "facility_count": 1,
+      "total_beds": 65
+    },
+    "Twin Falls": {
+      "facility_count": 5,
+      "total_beds": 406
+    },
+    "Owyhee": {
+      "facility_count": 1,
+      "total_beds": 58
+    },
+    "Bonneville": {
+      "facility_count": 4,
+      "total_beds": 340
+    },
+    "Fremont": {
+      "facility_count": 1,
+      "total_beds": 38
+    },
+    "Madison": {
+      "facility_count": 2,
+      "total_beds": 154
+    },
+    "Lemhi": {
+      "facility_count": 1,
+      "total_beds": 45
+    },
+    "Gooding": {
+      "facility_count": 1,
+      "total_beds": 80
+    }
+  },
+  "facilities": [
+    {
+      "name": "BOUNDARY COUNTY NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6640 KANIKSU STREET",
+        "city": "BONNERS FERRY",
+        "state": "ID",
+        "zip": "83805"
+      },
+      "contact": {
+        "phone": "2082673141",
+        "phone_formatted": "2082673141"
+      },
+      "location": {
+        "county": "Boundary",
+        "latitude": 48.7026,
+        "longitude": -116.32
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 28,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BOUNDARY COMMUNITY HOSPITAL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.boundarycommunityhospital.org/",
+        "google_maps_url": "https://maps.google.com/?cid=5614893246283290946",
+        "verified_phone": "(208) 267-3141",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "ST LUKE'S ELMORE LONG TERM CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "895 NORTH 6TH EAST",
+        "city": "MOUNTAIN HOME",
+        "state": "ID",
+        "zip": "83647"
+      },
+      "contact": {
+        "phone": "2085870360",
+        "phone_formatted": "2085870360"
+      },
+      "location": {
+        "county": "Elmore",
+        "latitude": 43.1393,
+        "longitude": -115.69
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 38,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST LUKES REGIONAL MEDICAL CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.stlukesonline.org/communities-and-locations/facilities/hospitals-and-medical-centers/long-term-care-and-rehabilitation-at-st-lukes-elmore",
+        "google_maps_url": "https://maps.google.com/?cid=10382030733971197845",
+        "verified_phone": "(208) 587-0360",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "BINGHAM MEMORIAL SKILLED NURSING & REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "98 POPLAR STREET",
+        "city": "BLACKFOOT",
+        "state": "ID",
+        "zip": "83221"
+      },
+      "contact": {
+        "phone": "2087854101",
+        "phone_formatted": "2087854101"
+      },
+      "location": {
+        "county": "Bingham",
+        "latitude": 43.1937,
+        "longitude": -112.35
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 70,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BMH INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://binghamhealthcare.org/bmh-services/snrc-services/",
+        "google_maps_url": "https://maps.google.com/?cid=17620352421724236685",
+        "verified_phone": "(208) 785-4101",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "WEISER CARE OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "331 EAST PARK STREET",
+        "city": "WEISER",
+        "state": "ID",
+        "zip": "83672"
+      },
+      "contact": {
+        "phone": "2085492416",
+        "phone_formatted": "2085492416"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 44.2493,
+        "longitude": -116.97
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 76,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WEISER OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://weisercareofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=12500275865625869212",
+        "verified_phone": "(208) 549-2416",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "GATEWAY TRANSITIONAL CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "527 MEMORIAL DRIVE",
+        "city": "POCATELLO",
+        "state": "ID",
+        "zip": "83201"
+      },
+      "contact": {
+        "phone": "2084783333",
+        "phone_formatted": "2084783333"
+      },
+      "location": {
+        "county": "Bannock",
+        "latitude": 42.8683,
+        "longitude": -112.43
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 88,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "POCATELLO HEALTH SERVICES, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.gatewaytransitional.com/",
+        "google_maps_url": "https://maps.google.com/?cid=3098035468847491418",
+        "verified_phone": "(208) 478-3333",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "CALDWELL CARE OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "210 CLEVELAND BOULEVARD",
+        "city": "CALDWELL",
+        "state": "ID",
+        "zip": "83605"
+      },
+      "contact": {
+        "phone": "2084591522",
+        "phone_formatted": "2084591522"
+      },
+      "location": {
+        "county": "Canyon",
+        "latitude": 43.6685,
+        "longitude": -116.7
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 71,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CALDWELL OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.caldwellcareofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=2242619914183938244",
+        "verified_phone": "(208) 459-1522",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "PAYETTE HEALTHCARE OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1019 THIRD AVENUE SOUTH",
+        "city": "PAYETTE",
+        "state": "ID",
+        "zip": "83661"
+      },
+      "contact": {
+        "phone": "2086424455",
+        "phone_formatted": "2086424455"
+      },
+      "location": {
+        "county": "Payette",
+        "latitude": 44.0715,
+        "longitude": -116.93
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PAYETTE OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.payettehealthcareofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=5898315796639388704",
+        "verified_phone": "(208) 642-4455",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "MONTE VISTA HILLS HEALTHCARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1071 RENEE AVENUE",
+        "city": "POCATELLO",
+        "state": "ID",
+        "zip": "83201"
+      },
+      "contact": {
+        "phone": "2082331411",
+        "phone_formatted": "2082331411"
+      },
+      "location": {
+        "county": "Bannock",
+        "latitude": 42.8935,
+        "longitude": -112.43
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 113,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VALLEY VIEW HEALTH SERVICES, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://montevistahills.com/",
+        "google_maps_url": "https://maps.google.com/?cid=3024798193810897167",
+        "verified_phone": "(208) 233-1411",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "ORCHARDS OF CASCADIA, THE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "404 NORTH HORTON STREET",
+        "city": "NAMPA",
+        "state": "ID",
+        "zip": "83651"
+      },
+      "contact": {
+        "phone": "2084669292",
+        "phone_formatted": "2084669292"
+      },
+      "location": {
+        "county": "Canyon",
+        "latitude": 43.5873,
+        "longitude": -116.59
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NAMPA WEST OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://theorchardsofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=2831779231744947890",
+        "verified_phone": "(208) 466-9292",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "River's Edge Rehabilitation & Living Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "714 NORTH BUTTE AVENUE",
+        "city": "EMMETT",
+        "state": "ID",
+        "zip": "83617"
+      },
+      "contact": {
+        "phone": "2083654425",
+        "phone_formatted": "2083654425"
+      },
+      "location": {
+        "county": "Gem",
+        "latitude": 43.881,
+        "longitude": -116.49
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 74,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GEM HEALTHCARE, INC.",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.riversedgerehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=11874913955042946357",
+        "verified_phone": "(208) 365-4425",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "LEWISTON TRANSITIONAL CARE OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3315 8TH STREET",
+        "city": "LEWISTON",
+        "state": "ID",
+        "zip": "83501"
+      },
+      "contact": {
+        "phone": "2087439543",
+        "phone_formatted": "2087439543"
+      },
+      "location": {
+        "county": "Nez Perce",
+        "latitude": 46.3828,
+        "longitude": -116.99
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 96,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LEWISTON OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.lewistontransitionalcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=14352066827942833221",
+        "verified_phone": "(208) 743-9543",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF BOISE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "808 NORTH CURTIS ROAD",
+        "city": "BOISE",
+        "state": "ID",
+        "zip": "83706"
+      },
+      "contact": {
+        "phone": "2083765273",
+        "phone_formatted": "2083765273"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.6117,
+        "longitude": -116.25
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 153,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BOISE SNF OPERATIONS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://lifecarecenterofboise.com/",
+        "google_maps_url": "https://maps.google.com/?cid=8269064707351818052",
+        "verified_phone": "(208) 376-5273",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "LAKESIDE REHABILITATION AND CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "210 WEST LACROSSE AVENUE",
+        "city": "COEUR D'ALENE",
+        "state": "ID",
+        "zip": "83814"
+      },
+      "contact": {
+        "phone": "2086642185",
+        "phone_formatted": "2086642185"
+      },
+      "location": {
+        "county": "Kootenai",
+        "latitude": 47.6899,
+        "longitude": -116.79
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "CALDERA CARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://lakesiderehabandcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=8770373445855166872",
+        "verified_phone": "(208) 664-2185",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "CLEARWATER HEALTH & REHABILITATION OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1204 SHRIVER ROAD",
+        "city": "OROFINO",
+        "state": "ID",
+        "zip": "83544"
+      },
+      "contact": {
+        "phone": "2084764568",
+        "phone_formatted": "2084764568"
+      },
+      "location": {
+        "county": "Clearwater",
+        "latitude": 46.493,
+        "longitude": -116.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CLEARWATER OF CASCADIA",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.clearwaterhealthandrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=16446604894841257961",
+        "verified_phone": "(208) 476-4568",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "CANYON WEST OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2814 SOUTH INDIANA AVENUE",
+        "city": "CALDWELL",
+        "state": "ID",
+        "zip": "83605"
+      },
+      "contact": {
+        "phone": "2084590808",
+        "phone_formatted": "2084590808"
+      },
+      "location": {
+        "county": "Canyon",
+        "latitude": 43.6453,
+        "longitude": -116.67
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 103,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CANYON WEST OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.canyonwestofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=11252969106871953121",
+        "verified_phone": "(208) 459-0808",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "COEUR D ALENE HEALTH OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2514 NORTH SEVENTH STREET",
+        "city": "COEUR D'ALENE",
+        "state": "ID",
+        "zip": "83814"
+      },
+      "contact": {
+        "phone": "2086648128",
+        "phone_formatted": "2086648128"
+      },
+      "location": {
+        "county": "Kootenai",
+        "latitude": 47.6999,
+        "longitude": -116.78
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 117,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COEUR D ALENE OF CASCADIA",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.coeurdalenehealth.com/",
+        "google_maps_url": "https://maps.google.com/?cid=15177996780642205587",
+        "verified_phone": "(208) 664-8128",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "IRONWOOD REHABILITATION AND CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2200 IRONWOOD PLACE",
+        "city": "COEUR D'ALENE",
+        "state": "ID",
+        "zip": "83814"
+      },
+      "contact": {
+        "phone": "2086676486",
+        "phone_formatted": "2086676486"
+      },
+      "location": {
+        "county": "Kootenai",
+        "latitude": 47.6968,
+        "longitude": -116.8
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "CALDERA CARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://ironwoodrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=13940900711665132211",
+        "verified_phone": "(208) 667-6486",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "Valley Vista Care Center of Sandpoint",
+      "type": "Nursing Home",
+      "address": {
+        "street": "220 SOUTH DIVISION AVE",
+        "city": "SANDPOINT",
+        "state": "ID",
+        "zip": "83864"
+      },
+      "contact": {
+        "phone": "2082654514",
+        "phone_formatted": "2082654514"
+      },
+      "location": {
+        "county": "Bonner",
+        "latitude": 48.2718,
+        "longitude": -116.57
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 73,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VALLEY VISTA CARE CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.valleyvista.org/",
+        "google_maps_url": "https://maps.google.com/?cid=7585016524548771108",
+        "verified_phone": "(208) 265-4514",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "LINCOLN COUNTY CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "511 EAST FOURTH STREET",
+        "city": "SHOSHONE",
+        "state": "ID",
+        "zip": "83352"
+      },
+      "contact": {
+        "phone": "2088862228",
+        "phone_formatted": "2088862228"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 42.939,
+        "longitude": -114.4
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CASCADES AT LINCOLN COUNTY, LLC",
+        "chain_name": "CASCADES HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.lincolncountycarecenter.com/",
+        "google_maps_url": "https://maps.google.com/?cid=8136740003650987097",
+        "verified_phone": "(208) 886-2228",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "SILVERTON HEALTH AND REHABILITATION OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "405 WEST SEVENTH STREET",
+        "city": "SILVERTON",
+        "state": "ID",
+        "zip": "83867"
+      },
+      "contact": {
+        "phone": "2085561147",
+        "phone_formatted": "2085561147"
+      },
+      "location": {
+        "county": "Shoshone",
+        "latitude": 47.4972,
+        "longitude": -115.96
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SILVERTON OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.silvertonofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=8444738572467693033",
+        "verified_phone": "(208) 556-1147",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "FRANKLIN COUNTY TRANSITIONAL CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "44 NORTH 1ST EAST",
+        "city": "PRESTON",
+        "state": "ID",
+        "zip": "83263"
+      },
+      "contact": {
+        "phone": "2088524130",
+        "phone_formatted": "2088524130"
+      },
+      "location": {
+        "county": "Franklin",
+        "latitude": 42.0974,
+        "longitude": -111.87
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 35,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FRANKLIN COUNTY MEDICAL CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.fcmc.org/",
+        "google_maps_url": "https://maps.google.com/?cid=4095275047283191447",
+        "verified_phone": "(208) 852-0137",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "ONEIDA COUNTY HOSPITAL & LONG TERM CARE FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "150 NORTH 200 WEST",
+        "city": "MALAD",
+        "state": "ID",
+        "zip": "83252"
+      },
+      "contact": {
+        "phone": "2087662231",
+        "phone_formatted": "2087662231"
+      },
+      "location": {
+        "county": "Oneida",
+        "latitude": 42.1892,
+        "longitude": -112.25
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 33,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ONEIDA COUNTY HOSPITAL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.oneidacountyhospital.com/",
+        "google_maps_url": "https://maps.google.com/?cid=13443728537242763054",
+        "verified_phone": "(208) 766-2231",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "COUNTRYSIDE CARE & REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1224 EIGHTH STREET",
+        "city": "RUPERT",
+        "state": "ID",
+        "zip": "83350"
+      },
+      "contact": {
+        "phone": "2084340232",
+        "phone_formatted": "2084340232"
+      },
+      "location": {
+        "county": "Minidoka",
+        "latitude": 42.6196,
+        "longitude": -113.68
+      },
+      "facility_details": {
+        "ownership_type": "Government - County",
+        "certified_beds": 46,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MINIDOKA MEMORIAL HOSPITAL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://minidokamemorial.org/",
+        "google_maps_url": "https://maps.google.com/?cid=17956177981616511249",
+        "verified_phone": "(208) 436-0481",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "MOUNTAIN VALLEY OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "601 WEST CAMERON AVENUE",
+        "city": "KELLOGG",
+        "state": "ID",
+        "zip": "83837"
+      },
+      "contact": {
+        "phone": "2087841283",
+        "phone_formatted": "2087841283"
+      },
+      "location": {
+        "county": "Shoshone",
+        "latitude": 47.5444,
+        "longitude": -116.13
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KELLOG OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.mountainvalleyofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=6666544340908663951",
+        "verified_phone": "(208) 784-1283",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "POWER COUNTY SKILLED NURSING FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "510 ROOSEVELT STREET",
+        "city": "AMERICAN FALLS",
+        "state": "ID",
+        "zip": "83211"
+      },
+      "contact": {
+        "phone": "2082263200",
+        "phone_formatted": "2082263200"
+      },
+      "location": {
+        "county": "Power",
+        "latitude": 42.7819,
+        "longitude": -112.85
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 20,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "POWER COUNTY HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.pchd.net/",
+        "google_maps_url": "https://maps.google.com/?cid=3049993349827794986",
+        "verified_phone": "(208) 226-3200",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "PARADISE CREEK HEALTH AND REHAB OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "640 NORTH EISENHOWER STREET",
+        "city": "MOSCOW",
+        "state": "ID",
+        "zip": "83843"
+      },
+      "contact": {
+        "phone": "2088826560",
+        "phone_formatted": "2088826560"
+      },
+      "location": {
+        "county": "Latah",
+        "latitude": 46.7388,
+        "longitude": -116.97
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 64,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MOSCOW NORTH OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.paradisecreekrl.com/",
+        "google_maps_url": "https://maps.google.com/?cid=6943986449118095690",
+        "verified_phone": "(208) 882-6560",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "PARKE VIEW REHABILITATION & CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2303 PARKE AVENUE",
+        "city": "BURLEY",
+        "state": "ID",
+        "zip": "83318"
+      },
+      "contact": {
+        "phone": "2086773073",
+        "phone_formatted": "2086773073"
+      },
+      "location": {
+        "county": "Cassia",
+        "latitude": 42.5244,
+        "longitude": -113.8
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 86,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "JRT HEALTHCARE INC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.parkeviewrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=8907538153802749054",
+        "verified_phone": "(208) 677-3073",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "COVE OF CASCADIA, THE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "620 NORTH SIXTH STREET",
+        "city": "BELLEVUE",
+        "state": "ID",
+        "zip": "83313"
+      },
+      "contact": {
+        "phone": "2087887180",
+        "phone_formatted": "2087887180"
+      },
+      "location": {
+        "county": "Blaine",
+        "latitude": 43.4714,
+        "longitude": -114.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 32,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BELLEVUE OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.thecoveofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=12233452704990890282",
+        "verified_phone": "(208) 788-7180",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "BEAR LAKE MEMORIAL SKILLED NURSING FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "164 SOUTH FIFTH STREET",
+        "city": "MONTPELIER",
+        "state": "ID",
+        "zip": "83254"
+      },
+      "contact": {
+        "phone": "2088474441",
+        "phone_formatted": "2088474441"
+      },
+      "location": {
+        "county": "Bear Lake",
+        "latitude": 42.3165,
+        "longitude": -111.3
+      },
+      "facility_details": {
+        "ownership_type": "Government - City/county",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BEAR LAKE COUNTY MEMORIAL HOSPITAL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.blmhospital.com/elderly-services/skilled-nursing-facility/?utm_source=GMBSocialClimb&utm_medium=BearLakeMemorialSkilledNursingFacility",
+        "google_maps_url": "https://maps.google.com/?cid=16849740827356980914",
+        "verified_phone": "(208) 847-1630",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "VALLEY VISTA CARE CENTER OF ST MARIES",
+      "type": "Nursing Home",
+      "address": {
+        "street": "820 ELM STREET",
+        "city": "ST MARIES",
+        "state": "ID",
+        "zip": "83861"
+      },
+      "contact": {
+        "phone": "2082454576",
+        "phone_formatted": "2082454576"
+      },
+      "location": {
+        "county": "Benewah",
+        "latitude": 47.3099,
+        "longitude": -116.56
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 74,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VALLEY VISTA CARE CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://valleyvista.org/",
+        "google_maps_url": "https://maps.google.com/?cid=5464669531705973886",
+        "verified_phone": "(208) 245-4576",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "MEADOW VIEW NURSING AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "46 NORTH MIDLAND BOULEVARD",
+        "city": "NAMPA",
+        "state": "ID",
+        "zip": "83651"
+      },
+      "contact": {
+        "phone": "2084667803",
+        "phone_formatted": "2084667803"
+      },
+      "location": {
+        "county": "Canyon",
+        "latitude": 43.5796,
+        "longitude": -116.59
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 122,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MIDLAND NAMPA HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://meadowviewnursingandrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=6138627105262442684",
+        "verified_phone": "(208) 466-7803",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "SKYLINE TRANSITIONAL CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1001 SOUTH HILTON STREET",
+        "city": "BOISE",
+        "state": "ID",
+        "zip": "83705"
+      },
+      "contact": {
+        "phone": "2083454464",
+        "phone_formatted": "2083454464"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.5959,
+        "longitude": -116.25
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 111,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STEELHEAD HEALTHCARE INC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://skylinetransitional.com/",
+        "google_maps_url": "https://maps.google.com/?cid=7482947533880101059",
+        "verified_phone": "(208) 345-4464",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "ARBOR VALLEY OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8211 USTICK ROAD",
+        "city": "BOISE",
+        "state": "ID",
+        "zip": "83704"
+      },
+      "contact": {
+        "phone": "2083753700",
+        "phone_formatted": "2083753700"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.6339,
+        "longitude": -116.28
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 148,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BOISE WEST OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.arborvalleyofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=18197074158974092354",
+        "verified_phone": "(208) 375-3700",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "GRANGEVILLE HEALTH & REHABILITATION OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "410 EAST NORTH SECOND STREET",
+        "city": "GRANGEVILLE",
+        "state": "ID",
+        "zip": "83530"
+      },
+      "contact": {
+        "phone": "2089831131",
+        "phone_formatted": "2089831131"
+      },
+      "location": {
+        "county": "Idaho",
+        "latitude": 45.9262,
+        "longitude": -116.11
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GRANGEVILLE OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://grangevillehealthandrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=7886647957054762897",
+        "verified_phone": "(208) 983-1131",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "MINI-CASSIA CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1729 MILLER STREET EAST",
+        "city": "BURLEY",
+        "state": "ID",
+        "zip": "83318"
+      },
+      "contact": {
+        "phone": "2086789474",
+        "phone_formatted": "2086789474"
+      },
+      "location": {
+        "county": "Cassia",
+        "latitude": 42.5313,
+        "longitude": -113.8
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 68,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CHAROLAIS CARE I, INC",
+        "chain_name": "CASCADES HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.mini-cassiacarecenter.com/",
+        "google_maps_url": "https://maps.google.com/?cid=15100720829937760715",
+        "verified_phone": "(208) 678-9474",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "MCCALL REHABILITATION AND CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "418 FLOYDE STREET",
+        "city": "MCCALL",
+        "state": "ID",
+        "zip": "83638"
+      },
+      "contact": {
+        "phone": "2086342112",
+        "phone_formatted": "2086342112"
+      },
+      "location": {
+        "county": "Valley",
+        "latitude": 44.9014,
+        "longitude": -116.1
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 65,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MCCALL HEALTHCARE, LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mccallrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=10313065865814153211",
+        "verified_phone": "(208) 634-2112",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "OAK CREEK REHABILITATION CENTER OF KIMBERLY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "500 POLK STREET EAST",
+        "city": "KIMBERLY",
+        "state": "ID",
+        "zip": "83341"
+      },
+      "contact": {
+        "phone": "2084235591",
+        "phone_formatted": "2084235591"
+      },
+      "location": {
+        "county": "Twin Falls",
+        "latitude": 42.5409,
+        "longitude": -114.36
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 57,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CHAROLAIS CARE II, INC",
+        "chain_name": "CASCADES HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.oakcreekrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=508004492672334418",
+        "verified_phone": "(208) 423-5591",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "OWYHEE HEALTH & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "108 WEST OWYHEE",
+        "city": "HOMEDALE",
+        "state": "ID",
+        "zip": "83628"
+      },
+      "contact": {
+        "phone": "2083373168",
+        "phone_formatted": "2083373168"
+      },
+      "location": {
+        "county": "Owyhee",
+        "latitude": 43.6187,
+        "longitude": -116.94
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HOMEDALE HEALTHCARE INC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://owyheehealth.com/",
+        "google_maps_url": "https://maps.google.com/?cid=1655212420905798011",
+        "verified_phone": "(208) 337-3168",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "CASCADES AT DESERT VIEW",
+      "type": "Nursing Home",
+      "address": {
+        "street": "820 SPRAGUE AVENUE",
+        "city": "BUHL",
+        "state": "ID",
+        "zip": "83316"
+      },
+      "contact": {
+        "phone": "2085436401",
+        "phone_formatted": "2085436401"
+      },
+      "location": {
+        "county": "Twin Falls",
+        "latitude": 42.5923,
+        "longitude": -114.75
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 57,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CASCADES AT DESERT VIEW LLC",
+        "chain_name": "CASCADES HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.desertviewcarecenter.com/",
+        "google_maps_url": "https://maps.google.com/?cid=7917847090258521225",
+        "verified_phone": "(208) 543-6401",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "SHAW MOUNTAIN OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "909 RESERVE STREET",
+        "city": "BOISE",
+        "state": "ID",
+        "zip": "83712"
+      },
+      "contact": {
+        "phone": "2083437717",
+        "phone_formatted": "2083437717"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.6152,
+        "longitude": -116.18
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 108,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SHAW MOUNTAIN OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.shawmountainofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=4730524335552318488",
+        "verified_phone": "(208) 343-7717",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF IDAHO FALLS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2725 EAST 17TH STREET",
+        "city": "IDAHO FALLS",
+        "state": "ID",
+        "zip": "83406"
+      },
+      "contact": {
+        "phone": "2085294567",
+        "phone_formatted": "2085294567"
+      },
+      "location": {
+        "county": "Bonneville",
+        "latitude": 43.4821,
+        "longitude": -111.98
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 109,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GEM MEDICAL INVESTORS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://lifecarecenterofidahofallsid.com/",
+        "google_maps_url": "https://maps.google.com/?cid=8579848973598102991",
+        "verified_phone": "(208) 529-4567",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "EAGLE ROCK HEALTH AND REHABILITATION OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "840 EAST ELVA STREET",
+        "city": "IDAHO FALLS",
+        "state": "ID",
+        "zip": "83401"
+      },
+      "contact": {
+        "phone": "2085234795",
+        "phone_formatted": "2085234795"
+      },
+      "location": {
+        "county": "Bonneville",
+        "latitude": 43.504,
+        "longitude": -112.02
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 113,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "IDAHO FALLS NORTH OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.eaglerockhealthandrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=3700623015176268196",
+        "verified_phone": "(208) 523-4795",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "ASPEN PARK OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "420 ROWE STREET",
+        "city": "MOSCOW",
+        "state": "ID",
+        "zip": "83843"
+      },
+      "contact": {
+        "phone": "2088824576",
+        "phone_formatted": "2088824576"
+      },
+      "location": {
+        "county": "Latah",
+        "latitude": 46.7205,
+        "longitude": -116.99
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 70,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MOSCOW OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.aspenparkofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=3423950580208875572",
+        "verified_phone": "(208) 882-4576",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "WELLSPRING HEALTH & REHABILITATION OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2105 12TH AVENUE ROAD",
+        "city": "NAMPA",
+        "state": "ID",
+        "zip": "83686"
+      },
+      "contact": {
+        "phone": "2084675721",
+        "phone_formatted": "2084675721"
+      },
+      "location": {
+        "county": "Canyon",
+        "latitude": 43.5333,
+        "longitude": -116.57
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CANYON COUNTY OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.wellspringofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=5857443003310522744",
+        "verified_phone": "(208) 467-5721",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "CHERRY RIDGE OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "501 WEST IDAHO BOULEVARD",
+        "city": "EMMETT",
+        "state": "ID",
+        "zip": "83617"
+      },
+      "contact": {
+        "phone": "2086648128",
+        "phone_formatted": "2086648128"
+      },
+      "location": {
+        "county": "Gem",
+        "latitude": 43.8936,
+        "longitude": -116.51
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EMMETT OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.cherryridgeofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=10160745593468854054",
+        "verified_phone": "(208) 365-3597",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "ASHTON MEMORIAL  LIVING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "700 NORTH SECOND STREET",
+        "city": "ASHTON",
+        "state": "ID",
+        "zip": "83420"
+      },
+      "contact": {
+        "phone": "2086527461",
+        "phone_formatted": "2086527461"
+      },
+      "location": {
+        "county": "Fremont",
+        "latitude": 44.0782,
+        "longitude": -111.45
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 38,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ASHTON MEMORIAL INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://ashtonmemorial.com/services/ashton-living-center",
+        "google_maps_url": "https://maps.google.com/?cid=18267490143503354841",
+        "verified_phone": "(208) 652-7461",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "VALLEY VIEW NURSING & REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1140 NORTH ALLUMBAUGH STREET",
+        "city": "BOISE",
+        "state": "ID",
+        "zip": "83704"
+      },
+      "contact": {
+        "phone": "9869860001",
+        "phone_formatted": "9869860001"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.6111,
+        "longitude": -116.27
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "EDURO HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://timberspringscare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=4561461659262139367",
+        "verified_phone": "(208) 854-8500",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "SUNNY RIDGE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2609 SUNNYBROOK DRIVE",
+        "city": "NAMPA",
+        "state": "ID",
+        "zip": "83686"
+      },
+      "contact": {
+        "phone": "2084677298",
+        "phone_formatted": "2084677298"
+      },
+      "location": {
+        "county": "Canyon",
+        "latitude": 43.5448,
+        "longitude": -116.57
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 43,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CASCADES AT SUNNY RIDGE LLC",
+        "chain_name": "CASCADES HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://chcsunnyridge.com/",
+        "google_maps_url": "https://maps.google.com/?cid=2363680017190236227",
+        "verified_phone": "(208) 467-7298",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "ORCHARD VIEW POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1014 BURRELL AVENUE",
+        "city": "LEWISTON",
+        "state": "ID",
+        "zip": "83501"
+      },
+      "contact": {
+        "phone": "2087434558",
+        "phone_formatted": "2087434558"
+      },
+      "location": {
+        "county": "Nez Perce",
+        "latitude": 46.3767,
+        "longitude": -116.98
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 127,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CARE CENTER LEWISTON INC",
+        "chain_name": "PRESTIGE CARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://orchardviewpa.com/",
+        "google_maps_url": "https://maps.google.com/?cid=2838958930196349629",
+        "verified_phone": "(208) 743-4558",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "TWIN FALLS TRANSITIONAL CARE OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "674 EASTLAND DRIVE",
+        "city": "TWIN FALLS",
+        "state": "ID",
+        "zip": "83301"
+      },
+      "contact": {
+        "phone": "2087344264",
+        "phone_formatted": "2087344264"
+      },
+      "location": {
+        "county": "Twin Falls",
+        "latitude": 42.5577,
+        "longitude": -114.44
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 116,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TWIN FALLS OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.twinfallstransitionalofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=18399361310032568837",
+        "verified_phone": "(208) 734-4264",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "TEMPLE VIEW TRANSITIONAL CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "660 SOUTH SECOND STREET WEST",
+        "city": "REXBURG",
+        "state": "ID",
+        "zip": "83440"
+      },
+      "contact": {
+        "phone": "2083560220",
+        "phone_formatted": "2083560220"
+      },
+      "location": {
+        "county": "Madison",
+        "latitude": 43.812,
+        "longitude": -111.79
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 119,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CRESS CREEK HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://templeviewcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=12482737998227859043",
+        "verified_phone": "(208) 356-0220",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "KARCHER POST ACUTE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1127 CALDWELL BOULEVARD",
+        "city": "NAMPA",
+        "state": "ID",
+        "zip": "83651"
+      },
+      "contact": {
+        "phone": "2084654935",
+        "phone_formatted": "2084654935"
+      },
+      "location": {
+        "county": "Canyon",
+        "latitude": 43.6002,
+        "longitude": -116.6
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "PRESTIGE CARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://karcherpa.com/",
+        "google_maps_url": "https://maps.google.com/?cid=15605764615032980963",
+        "verified_phone": "(208) 465-4935",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "SYRINGA CHALET NURSING FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "700 EAST ALICE STREET",
+        "city": "BLACKFOOT",
+        "state": "ID",
+        "zip": "83221"
+      },
+      "contact": {
+        "phone": "2087851200",
+        "phone_formatted": "2087851200"
+      },
+      "location": {
+        "county": "Bingham",
+        "latitude": 43.1873,
+        "longitude": -112.34
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 42,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.healthandwelfare.idaho.gov/medical/mentalhealth/statehospitals/tabid/495/default.aspx",
+        "google_maps_url": "https://maps.google.com/?cid=857919306276144678",
+        "verified_phone": "(208) 785-1200",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "BRIDGEVIEW ESTATES",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1828 BRIDGEVIEW BLVD SUITE 2",
+        "city": "TWIN FALLS",
+        "state": "ID",
+        "zip": "83301"
+      },
+      "contact": {
+        "phone": "2087355730",
+        "phone_formatted": "2087355730"
+      },
+      "location": {
+        "county": "Twin Falls",
+        "latitude": 42.4474,
+        "longitude": -114.54
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 116,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BRIDGEVIEW MEDICAL INVESTORS, LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://bridgeviewestatesid.com/",
+        "google_maps_url": "https://maps.google.com/?cid=369499760656634937",
+        "verified_phone": "(208) 735-5730",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "ROYAL PLAZA HEALTH AND REHABILITATION OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2870 JUNIPER DRIVE",
+        "city": "LEWISTON",
+        "state": "ID",
+        "zip": "83501"
+      },
+      "contact": {
+        "phone": "2087462855",
+        "phone_formatted": "2087462855"
+      },
+      "location": {
+        "county": "Nez Perce",
+        "latitude": 46.3963,
+        "longitude": -116.99
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 63,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LEWISTON CENTER OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://royalplazaliving.com/",
+        "google_maps_url": "https://maps.google.com/?cid=16951896849015601414",
+        "verified_phone": "(208) 746-2800",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF COEUR D'ALENE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "500 WEST AQUA AVENUE",
+        "city": "COEUR D ALENE",
+        "state": "ID",
+        "zip": "83815"
+      },
+      "contact": {
+        "phone": "2087621122",
+        "phone_formatted": "2087621122"
+      },
+      "location": {
+        "county": "Kootenai",
+        "latitude": 47.7417,
+        "longitude": -116.79
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LAKE CITY MEDICAL INVESTORS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://lifecarecenterofcoeurdalene.com/",
+        "google_maps_url": "https://maps.google.com/?cid=13445539046776853981",
+        "verified_phone": "(208) 762-1122",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF TREASURE VALLEY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "502 NORTH KIMBALL PLACE",
+        "city": "BOISE",
+        "state": "ID",
+        "zip": "83704"
+      },
+      "contact": {
+        "phone": "2083771900",
+        "phone_formatted": "2083771900"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.6094,
+        "longitude": -116.3
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EMERALD MEDICAL INVESTORS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://lifecarecenteroftreasurevalley.com/",
+        "google_maps_url": "https://maps.google.com/?cid=10240299796825103739",
+        "verified_phone": "(208) 377-1900",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "CREEKSIDE TRANSITIONAL CARE AND REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1351 WEST PINE AVENUE",
+        "city": "MERIDIAN",
+        "state": "ID",
+        "zip": "83642"
+      },
+      "contact": {
+        "phone": "2088887049",
+        "phone_formatted": "2088887049"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.6119,
+        "longitude": -116.41
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 139,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MERIDIAN HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://creeksidetransitional.com/",
+        "google_maps_url": "https://maps.google.com/?cid=6714103191733767590",
+        "verified_phone": "(208) 888-7049",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF SANDPOINT",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1125 NORTH DIVISION AVENUE",
+        "city": "SANDPOINT",
+        "state": "ID",
+        "zip": "83864"
+      },
+      "contact": {
+        "phone": "2082659299",
+        "phone_formatted": "2082659299"
+      },
+      "location": {
+        "county": "Bonner",
+        "latitude": 48.2838,
+        "longitude": -116.57
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 124,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SANDPOINT MEDICAL INVESTORS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://lifecarecenterofsandpoint.com/",
+        "google_maps_url": "https://maps.google.com/?cid=6393678296658708890",
+        "verified_phone": "(208) 265-9299",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF LEWISTON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "325 WARNER DRIVE",
+        "city": "LEWISTON",
+        "state": "ID",
+        "zip": "83501"
+      },
+      "contact": {
+        "phone": "2087988500",
+        "phone_formatted": "2087988500"
+      },
+      "location": {
+        "county": "Nez Perce",
+        "latitude": 46.3831,
+        "longitude": -117.01
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 121,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CLEARWATER OPERATIONS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://lifecarecenteroflewiston.com/",
+        "google_maps_url": "https://maps.google.com/?cid=5761233019931985235",
+        "verified_phone": "(208) 798-8500",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "DISCOVERY REHABILITATION AND LIVING",
+      "type": "Nursing Home",
+      "address": {
+        "street": "600 SHANAFELT STREET",
+        "city": "SALMON",
+        "state": "ID",
+        "zip": "83467"
+      },
+      "contact": {
+        "phone": "2087568391",
+        "phone_formatted": "2087568391"
+      },
+      "location": {
+        "county": "Lemhi",
+        "latitude": 45.1764,
+        "longitude": -113.89
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 45,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAWTOOTH HEALTHCARE INC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://discoveryrehabandliving.com/",
+        "google_maps_url": "https://maps.google.com/?cid=897746214644269585",
+        "verified_phone": "(208) 756-8391",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "ASPEN TRANSITIONAL REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2867 EAST COPPER POINT DRIVE",
+        "city": "MERIDIAN",
+        "state": "ID",
+        "zip": "83642"
+      },
+      "contact": {
+        "phone": "2084019100",
+        "phone_formatted": "2084019100"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.5836,
+        "longitude": -116.35
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 30,
+        "provider_type": "Medicare",
+        "legal_business_name": "AHC OF BOISE LLC",
+        "chain_name": "ADVANCED HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.ahcfacilities.com/aspen-transitional-rehab/",
+        "google_maps_url": "https://maps.google.com/?cid=18205411923776284317",
+        "verified_phone": "(208) 401-9100",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "IDAHO STATE VETERANS HOME - BOISE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "320 COLLINS ROAD",
+        "city": "BOISE",
+        "state": "ID",
+        "zip": "83702"
+      },
+      "contact": {
+        "phone": "2087801600",
+        "phone_formatted": "2087801600"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.6176,
+        "longitude": -116.19
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 122,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DIVISION OF VETERANS SERVICES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://veterans.idaho.gov/veterans-homes/boise-veterans-home/",
+        "google_maps_url": "https://maps.google.com/?cid=6886421402683272191",
+        "verified_phone": "(208) 780-1600",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "IDAHO STATE VETERANS HOME - POCATELLO",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1957 ALVIN RICKEN DRIVE",
+        "city": "POCATELLO",
+        "state": "ID",
+        "zip": "83201"
+      },
+      "contact": {
+        "phone": "2082357800",
+        "phone_formatted": "2082357800"
+      },
+      "location": {
+        "county": "Bannock",
+        "latitude": 42.8689,
+        "longitude": -112.41
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DIVISION OF VETERANS SERVICES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.veterans.idaho.gov/",
+        "google_maps_url": "https://maps.google.com/?cid=8001176539981286642",
+        "verified_phone": "(208) 235-7800",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "IDAHO STATE VETERANS HOME - LEWISTON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "821 21ST AVENUE",
+        "city": "LEWISTON",
+        "state": "ID",
+        "zip": "83501"
+      },
+      "contact": {
+        "phone": "2087503600",
+        "phone_formatted": "2087503600"
+      },
+      "location": {
+        "county": "Nez Perce",
+        "latitude": 46.3986,
+        "longitude": -117.02
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 66,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DIVISION OF VETERANS SERVICES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.veterans.idaho.gov/",
+        "google_maps_url": "https://maps.google.com/?cid=10064726689721146698",
+        "verified_phone": "(208) 750-3600",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "BENNETT HILLS REHABILITATION AND CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1220 MONTANA STREET",
+        "city": "GOODING",
+        "state": "ID",
+        "zip": "83330"
+      },
+      "contact": {
+        "phone": "2089345601",
+        "phone_formatted": "2089345601"
+      },
+      "location": {
+        "county": "Gooding",
+        "latitude": 42.9333,
+        "longitude": -114.71
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BENNETT HEALTHCARE LLC",
+        "chain_name": "THE ENSIGN GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://bennetthillscare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=865044779123751667",
+        "verified_phone": "(208) 934-5601",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "LIFE CARE CENTER OF POST FALLS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "460 NORTH GARDEN PLAZA COURT",
+        "city": "POST FALLS",
+        "state": "ID",
+        "zip": "83854"
+      },
+      "contact": {
+        "phone": "2087770318",
+        "phone_formatted": "2087770318"
+      },
+      "location": {
+        "county": "Kootenai",
+        "latitude": 47.7135,
+        "longitude": -116.91
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "POST FALLS MEDICAL INVESTORS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://lifecarecenterofpostfalls.com/",
+        "google_maps_url": "https://maps.google.com/?cid=8304475266412526948",
+        "verified_phone": "(208) 777-0318",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "QUINN MEADOWS REHABILITATION AND CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1033 W QUINN ROAD",
+        "city": "POCATELLO",
+        "state": "ID",
+        "zip": "83202"
+      },
+      "contact": {
+        "phone": "2086378888",
+        "phone_formatted": "2086378888"
+      },
+      "location": {
+        "county": "Bannock",
+        "latitude": 42.9057,
+        "longitude": -112.47
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 41,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TANABELL HEALTH SERVICES, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://tanabell.com/quinn-meadows-rehabilitation-and-care/",
+        "google_maps_url": "https://maps.google.com/?cid=4002845988271293743",
+        "verified_phone": "(208) 637-8888",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "PROMONTORY POINT REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3909 SOUTH 25TH EAST",
+        "city": "AMMON",
+        "state": "ID",
+        "zip": "83406"
+      },
+      "contact": {
+        "phone": "2085284000",
+        "phone_formatted": "2085284000"
+      },
+      "location": {
+        "county": "Bonneville",
+        "latitude": 43.4461,
+        "longitude": -111.98
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 30,
+        "provider_type": "Medicare",
+        "legal_business_name": "SNF AMMON OPERATING COMPANY LLC.",
+        "chain_name": "PROMONTORY HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.promontoryrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=7041560645893586438",
+        "verified_phone": "(208) 528-4000",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "TETON HEALTHCARE OF CASCADIA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3111 CHANNING WAY",
+        "city": "IDAHO FALLS",
+        "state": "ID",
+        "zip": "83404"
+      },
+      "contact": {
+        "phone": "2085290067",
+        "phone_formatted": "2085290067"
+      },
+      "location": {
+        "county": "Bonneville",
+        "latitude": 43.4699,
+        "longitude": -111.99
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 88,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "IDAHO FALLS OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://tetonhealthcareofcascadia.com/",
+        "google_maps_url": "https://maps.google.com/?cid=12403724742201164146",
+        "verified_phone": "(208) 529-0067",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "SUNTERRA SPRINGS RIVERVIEW",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3550 WEST AMERICANA TERRACE",
+        "city": "BOISE",
+        "state": "ID",
+        "zip": "83706"
+      },
+      "contact": {
+        "phone": "2086154940",
+        "phone_formatted": "2086154940"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.6159,
+        "longitude": -116.22
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 30,
+        "provider_type": "Medicare",
+        "legal_business_name": "SNF BOISE OPERATING COMPANY LLC",
+        "chain_name": "SUNTERRA SPRINGS"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.sunterrasprings.com/Facility/riverview-rehabilitation",
+        "google_maps_url": "https://maps.google.com/?cid=14440120738482879310",
+        "verified_phone": "(208) 615-4940",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "MADISON CARRIAGE COVE SHORT STAY REHABILITATION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "410 WEST 1ST NORTH",
+        "city": "REXBURG",
+        "state": "ID",
+        "zip": "83440"
+      },
+      "contact": {
+        "phone": "2083597676",
+        "phone_formatted": "2083597676"
+      },
+      "location": {
+        "county": "Madison",
+        "latitude": 43.8282,
+        "longitude": -111.8
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 35,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TANABELL HEALTH SERVICES, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://tanabell.com/carriage-cove/",
+        "google_maps_url": "https://maps.google.com/?cid=17554027173513813383",
+        "verified_phone": "(208) 359-7676",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "TERRACES OF BOISE, THE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5301 E WARM SPRINGS AVE",
+        "city": "BOISE",
+        "state": "ID",
+        "zip": "83716"
+      },
+      "contact": {
+        "phone": "2083365550",
+        "phone_formatted": "2083365550"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.5677,
+        "longitude": -116.12
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 48,
+        "provider_type": "Medicare",
+        "legal_business_name": "HUMANGOOD IDAHO",
+        "chain_name": "HUMANGOOD"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.humangood.org/the-terraces-of-boise",
+        "google_maps_url": "https://maps.google.com/?cid=15786313550118234700",
+        "verified_phone": "(208) 336-5550",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "ADVANCED HEALTH CARE OF COEUR D'ALENE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1578 W RIVERSTONE DRIVE",
+        "city": "COEUR D'ALENE",
+        "state": "ID",
+        "zip": "83814"
+      },
+      "contact": {
+        "phone": "2087690400",
+        "phone_formatted": "2087690400"
+      },
+      "location": {
+        "county": "Kootenai",
+        "latitude": 47.6951,
+        "longitude": -116.81
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 34,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AHC OF COEUR D ALENE LLC",
+        "chain_name": "ADVANCED HEALTH CARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.ahcfacilities.com/coeur-dalene/",
+        "google_maps_url": "https://maps.google.com/?cid=10604662302647526971",
+        "verified_phone": "(208) 769-0400",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "SERENITY TRANSITIONAL CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1134 CHENEY DR WEST",
+        "city": "TWIN FALLS",
+        "state": "ID",
+        "zip": "83301"
+      },
+      "contact": {
+        "phone": "2086447100",
+        "phone_formatted": "2086447100"
+      },
+      "location": {
+        "county": "Twin Falls",
+        "latitude": 42.589,
+        "longitude": -114.49
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TANABELL HEALTH SERVICES, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://tanabell.com/serenity/",
+        "google_maps_url": "https://maps.google.com/?cid=17714997884929244906",
+        "verified_phone": "(208) 644-7100",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "CASCADIA OF NAMPA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "900 N HAPPY VALLEY RD",
+        "city": "NAMPA",
+        "state": "ID",
+        "zip": "83687"
+      },
+      "contact": {
+        "phone": "2084019639",
+        "phone_formatted": "2084019639"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.5922,
+        "longitude": -116.51
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 99,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NAMPA OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.cascadiaofnampa.com/",
+        "google_maps_url": "https://maps.google.com/?cid=5028490002422675294",
+        "verified_phone": "(208) 401-9639",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "CASCADIA OF LEWISTON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2852 JUNIPER DRIVE",
+        "city": "LEWISTON",
+        "state": "ID",
+        "zip": "83501"
+      },
+      "contact": {
+        "phone": "2087487700",
+        "phone_formatted": "2087487700"
+      },
+      "location": {
+        "county": "Nez Perce",
+        "latitude": 46.396,
+        "longitude": -116.99
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 34,
+        "provider_type": "Medicare",
+        "legal_business_name": "LEWISTON NORTH OF CASCADIA, LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://cascadiaoflewiston.com/",
+        "google_maps_url": "https://maps.google.com/?cid=7277809113850842231",
+        "verified_phone": "(208) 748-7700",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "CASCADIA OF BOISE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6000 W DENTON ST",
+        "city": "BOISE",
+        "state": "ID",
+        "zip": "83704"
+      },
+      "contact": {
+        "phone": "2086294383",
+        "phone_formatted": "2086294383"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.6099,
+        "longitude": -116.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 99,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BOISE OF CASCADIA LLC",
+        "chain_name": "CASCADIA HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.cascadiaofboise.com/",
+        "google_maps_url": "https://maps.google.com/?cid=9987341503777856705",
+        "verified_phone": "(208) 629-4383",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "MERIDIAN MEADOWS TRANSITIONAL CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2656 E MAGIC VIEW DRIVE",
+        "city": "MERIDIAN",
+        "state": "ID",
+        "zip": "83642"
+      },
+      "contact": {
+        "phone": "2089962801",
+        "phone_formatted": "2089962801"
+      },
+      "location": {
+        "county": "Ada",
+        "latitude": 43.6,
+        "longitude": -116.36
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 52,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TANABELL HEALTH SERVICES, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://tanabell.com/meridianmeadowstransitional/",
+        "google_maps_url": "https://maps.google.com/?cid=14115687563422346210",
+        "verified_phone": "(208) 996-2801",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    },
+    {
+      "name": "IDAHO STATE VETERANS HOME - POST FALLS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "590 S PLEASANT VIEW RD",
+        "city": "POST FALLS",
+        "state": "ID",
+        "zip": "83854"
+      },
+      "contact": {
+        "phone": "2084153430",
+        "phone_formatted": "2084153430"
+      },
+      "location": {
+        "county": "Kootenai",
+        "latitude": 47.702,
+        "longitude": -117.0
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 64,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DIVISION OF VETERANS SERVICES",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://veterans.idaho.gov/veterans-homes/post-falls-veterans-home/",
+        "google_maps_url": "https://maps.google.com/?cid=4372937351488056633",
+        "verified_phone": "(208) 415-3430",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11"
+      }
+    }
+  ]
+}

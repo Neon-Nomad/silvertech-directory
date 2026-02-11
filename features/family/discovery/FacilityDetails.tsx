@@ -277,7 +277,7 @@ export const FacilityDetails: React.FC = () => {
         Request Transparent Pricing
       </Button>
       <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-full mt-2 w-64 bg-charcoal text-white text-xs rounded-md px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity z-50">
-        We’ll contact this facility and ask them to share updated pricing for families.
+        We'll contact this facility and ask them to share updated pricing for families.
       </div>
     </div>
   );
@@ -361,7 +361,7 @@ export const FacilityDetails: React.FC = () => {
     },
     telephone: facility.phone,
     image: facility.facility_photos?.[0]?.url || facility.image || defaultImage,
-    priceRange: facility.min_price ? `$${facility.min_price} - $${facility.max_price}` : 'Pricing pending',
+    priceRange: facility.min_price ? `$${facility.min_price} - $${facility.max_price}` : 'Pricing not publicly available',
     description: facility.description || `${serviceTypeString} facility in ${facility.city}, ${facility.state}.`,
     geo: facility.latitude && facility.longitude ? {
       '@type': 'GeoCoordinates',
@@ -378,7 +378,7 @@ export const FacilityDetails: React.FC = () => {
   const shareImage = facility.facility_photos?.[0]?.url || facility.image || defaultImage;
   const heroImage = shareImage;
   const pageTitle = `${facility.name} - ${serviceTypeString} in ${facility.city}, ${facility.state} | SilverTech`;
-  const pageDescription = `Learn about ${facility.name}, a premier ${serviceTypeString} community in ${facility.city}, ${facility.state}. View pricing, photos, amenities, and licensing info (Lic: ${licenseNumber}). Capacity: ${capacity} beds.`;
+  const pageDescription = `Learn about ${facility.name}, a ${serviceTypeString} community in ${facility.city}, ${facility.state}. View pricing, photos, amenities, and licensing info (Lic: ${licenseNumber}). Capacity: ${capacity} beds.`;
 
   const tabs = [
     { label: 'Overview', href: '#overview' },
@@ -432,8 +432,14 @@ export const FacilityDetails: React.FC = () => {
                 {facility.owner_id && (
                   <span className="px-2 py-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100">Verified</span>
                 )}
-                {facility.website_url && (
-                  <span className="px-2 py-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100">Verified community</span>
+                {facility.website_url ? (
+                  <span className="px-2 py-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100">
+                    Verified community
+                  </span>
+                ) : (
+                  <span className="px-2 py-1 rounded-full bg-warm-gray text-charcoal/60 border border-warm-gray">
+                    Website unavailable
+                  </span>
                 )}
               </div>
 
@@ -452,9 +458,9 @@ export const FacilityDetails: React.FC = () => {
 
               <div className="mt-4 grid sm:grid-cols-2 gap-4">
                 <div className="bg-warm-white border border-warm-gray rounded-lg px-4 py-3">
-                  <p className="text-[12px] uppercase tracking-wide text-charcoal/60 font-medium">Price range</p>
+                  <p className="text-[12px] uppercase tracking-wide text-charcoal/60 font-medium">Pricing</p>
                   <p className="text-[16px] font-semibold text-charcoal">
-                    {facility.min_price ? `$${facility.min_price.toLocaleString()} - $${facility.max_price?.toLocaleString() || ''}` : ''}
+                    {facility.min_price ? `$${facility.min_price.toLocaleString()} - $${facility.max_price?.toLocaleString() || ''}` : 'Pricing not publicly available'}
                   </p>
                   {!facility.min_price && <PricingCta className="mt-2 w-full sm:w-auto text-sm" />}
                 </div>
@@ -509,7 +515,7 @@ export const FacilityDetails: React.FC = () => {
             <div className="mt-6">
               <FactGrid
                 items={[
-                  { label: 'Price range', value: facility.min_price ? `$${facility.min_price.toLocaleString()} - $${facility.max_price?.toLocaleString() || ''}` : 'Request Transparent Pricing' },
+                  { label: 'Pricing', value: facility.min_price ? `$${facility.min_price.toLocaleString()} - $${facility.max_price?.toLocaleString() || ''}` : 'Pricing not publicly available' },
                   { label: 'Care types', value: careTypes.length ? careTypes.map((c: any) => c.name).join(', ') : serviceTypeString },
                   { label: 'Capacity', value: `${capacity} beds` },
                   { label: 'License', value: licenseNumber },
@@ -561,10 +567,10 @@ export const FacilityDetails: React.FC = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="border border-warm-gray rounded-lg p-4">
                   <p className="text-[12px] uppercase tracking-wide text-charcoal/60 font-medium">
-                    {facility.min_price ? 'Starting range' : 'Pricing update'}
+                    {facility.min_price ? 'Starting range' : 'Pricing not publicly available'}
                   </p>
                   <p className="text-[16px] font-semibold text-charcoal mt-1">
-                    {facility.min_price ? `$${facility.min_price.toLocaleString()} - $${facility.max_price?.toLocaleString() || ''}` : 'Coming soon'}
+                    {facility.min_price ? `$${facility.min_price.toLocaleString()} - $${facility.max_price?.toLocaleString() || ''}` : 'Request Transparent Pricing'}
                   </p>
                 </div>
                 <div className="border border-warm-gray rounded-lg p-4">
@@ -573,12 +579,12 @@ export const FacilityDetails: React.FC = () => {
                 </div>
               </div>
               <div className="mt-4 text-sm text-charcoal/70">
-                Costs can change based on care level, room type, and additional services. Request a tour for a tailored quote.
+                If pricing isn't published, request it directly and we'll ask the facility to share updated ranges for families.
               </div>
               <div className="mt-6 border border-warm-gray rounded-xl p-4 bg-warm-white">
                 <p className="text-sm font-semibold text-charcoal">Our transparency pledge</p>
                 <p className="text-sm text-charcoal/70 mt-1">
-                  SilverTech is committed to clear, verified pricing so families can compare with confidence.
+                  SilverTech never profits from your decision. We exist to help families compare care with confidence.
                 </p>
                 {!facility.min_price && <PricingCta className="mt-4 w-full sm:w-auto text-sm" />}
               </div>

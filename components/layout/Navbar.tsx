@@ -28,24 +28,24 @@ const NAV_CATEGORIES: NavCategory[] = [
     items: [
       { label: 'Compare Communities', href: '/search' },
       { label: 'Saved Communities', href: '/search' },
-      { label: 'How to Compare', href: '/resources/guides' },
+      { label: 'How to Compare', href: '/guides/how-to-choose' },
     ],
   },
   {
     label: 'Pricing',
     items: [
       { label: 'Average Costs by State', href: '/states' },
-      { label: 'What Affects Pricing', href: '/resources/guides' },
-      { label: 'Paying for Senior Living', href: '/resources/guides' },
+      { label: 'What Affects Pricing', href: '/guides/what-it-costs' },
+      { label: 'Paying for Senior Living', href: '/guides/what-it-costs' },
     ],
   },
   {
     label: 'Resources',
     items: [
-      { label: 'How to Choose a Community', href: '/resources/guides' },
-      { label: 'Questions to Ask on a Tour', href: '/resources/guides' },
+      { label: 'How to Choose a Community', href: '/guides/how-to-choose' },
+      { label: 'Questions to Ask on a Tour', href: '/guides/tour-questions' },
       { label: 'State Regulations', href: '/regulatory-library' },
-      { label: 'Ombudsman Contacts', href: '/resources/guides' },
+      { label: 'Ombudsman Contacts', href: '/regulatory-library' },
       { label: 'FAQ', href: '/faq' },
     ],
   },

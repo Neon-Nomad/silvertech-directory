@@ -21,6 +21,7 @@ import { PricingPage } from '@/features/public/pricing/PricingPage';
 import { ForProvidersPage } from '@/features/public/providers/ForProvidersPage';
 import { ContactSalesPage } from '@/features/public/providers/ContactSalesPage';
 import { FacilitiesPartnerPage } from '@/features/public/providers/FacilitiesPartnerPage';
+import { FacilitiesPricingPage } from '@/features/public/providers/FacilitiesPricingPage';
 import { ProductsHub } from '@/src/pages/products';
 import { CategoryPage } from '@/src/pages/products/CategoryPage';
 import { AffiliateProductPage } from '@/src/pages/products/AffiliateProductPage';
@@ -45,6 +46,9 @@ import { ContactPage } from '@/features/public/company/ContactPage';
 import { EditorialPolicyPage } from '@/features/public/company/EditorialPolicyPage';
 import { ResourcePage } from '@/features/resources/ResourcePage';
 import EmotionalSupportCatalog from '@/features/resources/EmotionalSupportCatalog';
+import { HowToChooseGuide } from '@/features/resources/HowToChooseGuide';
+import { CostsGuide } from '@/features/resources/CostsGuide';
+import { TourQuestionsGuide } from '@/features/resources/TourQuestionsGuide';
 
 import { Home } from '@/features/family/landing/Home';
 import { FacilityDetails } from '@/features/family/discovery/FacilityDetails';
@@ -137,6 +141,7 @@ function App() {
                     <Route path="/pricing" element={<PricingPage />} />
                     <Route path="/providers" element={<ForProvidersPage />} />
                     <Route path="/for-facilities" element={<FacilitiesPartnerPage />} />
+                    <Route path="/pricing" element={<FacilitiesPricingPage />} />
                     <Route path="/products" element={<ProductsHub />} />
                     <Route path="/products/affiliate" element={<AffiliateProductPage />} />
                     <Route path="/products/:category" element={<CategoryPage />} />
@@ -149,6 +154,9 @@ function App() {
                     <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
                     <Route path="/resources/:type" element={<ResourcePage />} />
                     <Route path="/resources/emotional-support" element={<EmotionalSupportCatalog />} />
+                    <Route path="/guides/how-to-choose" element={<HowToChooseGuide />} />
+                    <Route path="/guides/what-it-costs" element={<CostsGuide />} />
+                    <Route path="/guides/tour-questions" element={<TourQuestionsGuide />} />
                     <Route path="/claim" element={<ClaimBusiness />} />
 
                     {/* State Authority Hub */}

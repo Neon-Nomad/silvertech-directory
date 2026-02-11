@@ -1,0 +1,3518 @@
+{
+  "state": "Maine",
+  "state_code": "ME",
+  "search_date": "2025-11-29",
+  "summary": {
+    "total_facilities": 78,
+    "total_nursing_homes": 78,
+    "total_assisted_living": 0,
+    "total_certified_beds": 5851,
+    "counties_served": 15,
+    "average_beds_per_facility": 75.0
+  },
+  "quality_distribution": {
+    "five_star": 16,
+    "four_star": 19,
+    "three_star": 9,
+    "two_star": 16,
+    "one_star": 17
+  },
+  "counties": {
+    "Cumberland": {
+      "facility_count": 17,
+      "total_beds": 1502
+    },
+    "Piscataquis": {
+      "facility_count": 1,
+      "total_beds": 93
+    },
+    "Androscoggin": {
+      "facility_count": 6,
+      "total_beds": 540
+    },
+    "York": {
+      "facility_count": 9,
+      "total_beds": 714
+    },
+    "Aroostook": {
+      "facility_count": 7,
+      "total_beds": 434
+    },
+    "Penobscot": {
+      "facility_count": 11,
+      "total_beds": 792
+    },
+    "Kennebec": {
+      "facility_count": 7,
+      "total_beds": 688
+    },
+    "Somerset": {
+      "facility_count": 4,
+      "total_beds": 202
+    },
+    "Lincoln": {
+      "facility_count": 2,
+      "total_beds": 118
+    },
+    "Franklin": {
+      "facility_count": 3,
+      "total_beds": 153
+    },
+    "Oxford": {
+      "facility_count": 5,
+      "total_beds": 259
+    },
+    "Sagadahoc": {
+      "facility_count": 1,
+      "total_beds": 72
+    },
+    "Washington": {
+      "facility_count": 2,
+      "total_beds": 90
+    },
+    "Waldo": {
+      "facility_count": 1,
+      "total_beds": 40
+    },
+    "Knox": {
+      "facility_count": 2,
+      "total_beds": 154
+    }
+  },
+  "facilities": [
+    {
+      "name": "CEDARS NURSING CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "630 OCEAN AVENUE",
+        "city": "PORTLAND",
+        "state": "ME",
+        "zip": "4112"
+      },
+      "contact": {
+        "phone": "2077725456",
+        "phone_formatted": "2077725456"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.6878,
+        "longitude": -70.267
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CEDARS NURSING CARE CENTER, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.thecedarsportland.org/",
+        "google_maps_url": "https://maps.google.com/?cid=12597331708242549550",
+        "verified_phone": "(207) 221-7000",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:43.415667"
+      }
+    },
+    {
+      "name": "HIBBARD SKILLED NURSING & REHABILITATION CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1037 WEST MAIN STREET",
+        "city": "DOVER FOXCROFT",
+        "state": "ME",
+        "zip": "4426"
+      },
+      "contact": {
+        "phone": "2075648129",
+        "phone_formatted": "2075648129"
+      },
+      "location": {
+        "county": "Piscataquis",
+        "latitude": 45.1827,
+        "longitude": -69.253
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 93,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DOVER-FOXCROFT HEALTHCARE LLC",
+        "chain_name": "FIRST ATLANTIC HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://hibbardnursinghome.com/",
+        "google_maps_url": "https://maps.google.com/?cid=743392787748590044",
+        "verified_phone": "(207) 564-8129",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:44.104337"
+      }
+    },
+    {
+      "name": "MONTELLO MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "540 COLLEGE ST",
+        "city": "LEWISTON",
+        "state": "ME",
+        "zip": "4240"
+      },
+      "contact": {
+        "phone": "2077832039",
+        "phone_formatted": "2077832039"
+      },
+      "location": {
+        "county": "Androscoggin",
+        "latitude": 44.1196,
+        "longitude": -70.193
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 37,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROUSSEAU ENTERPRISES LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.montellomanor.com/",
+        "google_maps_url": "https://maps.google.com/?cid=11407327909433120467",
+        "verified_phone": "(207) 783-2039",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:44.797231"
+      }
+    },
+    {
+      "name": "BARRON CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1145 BRIGHTON AVE",
+        "city": "PORTLAND",
+        "state": "ME",
+        "zip": "4102"
+      },
+      "contact": {
+        "phone": "2075416548",
+        "phone_formatted": "2075416548"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.6761,
+        "longitude": -70.326
+      },
+      "facility_details": {
+        "ownership_type": "Government - City/county",
+        "certified_beds": 219,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CITY OF PORTLAND",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.portlandmaine.gov/222/Barron-Center",
+        "google_maps_url": "https://maps.google.com/?cid=12103388407083424518",
+        "verified_phone": "(207) 541-6500",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:45.469774"
+      }
+    },
+    {
+      "name": "SUMMER COMMONS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "21 JUNE STREET",
+        "city": "SANFORD",
+        "state": "ME",
+        "zip": "4073"
+      },
+      "contact": {
+        "phone": "2072061360",
+        "phone_formatted": "2072061360"
+      },
+      "location": {
+        "county": "York",
+        "latitude": 43.4468,
+        "longitude": -70.766
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 64,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SANFORD SENIOR CARE OPERATIONS, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mainesailcare.com/location/summer-commons/",
+        "google_maps_url": "https://maps.google.com/?cid=5009051269131582832",
+        "verified_phone": "(207) 206-1360",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:46.154680"
+      }
+    },
+    {
+      "name": "AROOSTOOK HEALTH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "15 HIGHLAND AVE",
+        "city": "MARS HILL",
+        "state": "ME",
+        "zip": "4758"
+      },
+      "contact": {
+        "phone": "2077684915",
+        "phone_formatted": "2077684915"
+      },
+      "location": {
+        "county": "Aroostook",
+        "latitude": 46.5169,
+        "longitude": -67.871
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "AROOSTOOK MEDICAL CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://northernlighthealth.org/Our-System/Mars-Hill/About-us/Info/AHC-History",
+        "google_maps_url": "https://maps.google.com/?cid=10689695620311021831",
+        "verified_phone": "(207) 768-4915",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:46.919867"
+      }
+    },
+    {
+      "name": "Bangor Nursing & Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "103 TEXAS AVE",
+        "city": "BANGOR",
+        "state": "ME",
+        "zip": "4401"
+      },
+      "contact": {
+        "phone": "2079474557",
+        "phone_formatted": "2079474557"
+      },
+      "location": {
+        "county": "Penobscot",
+        "latitude": 44.8058,
+        "longitude": -68.802
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Church related",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BANGOR NURSING & REHABILITATION CENTER",
+        "chain_name": "COVENANT HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.bangornrc.com/",
+        "google_maps_url": "https://maps.google.com/?cid=13700064253668687580",
+        "verified_phone": "(207) 947-4557",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:47.603558"
+      }
+    },
+    {
+      "name": "ORONO COMMONS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "117 BENNOCH RD",
+        "city": "ORONO",
+        "state": "ME",
+        "zip": "4473"
+      },
+      "contact": {
+        "phone": "2078664914",
+        "phone_formatted": "2078664914"
+      },
+      "location": {
+        "county": "Penobscot",
+        "latitude": 44.8908,
+        "longitude": -68.678
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ORONO OPERATIONS, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/OronoCommons",
+        "google_maps_url": "https://maps.google.com/?cid=17769525186822380314",
+        "verified_phone": "(207) 866-4914",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:48.272034"
+      }
+    },
+    {
+      "name": "RUSSELL PARK REHABILITATION & LIVING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "158 RUSSELL ST",
+        "city": "LEWISTON",
+        "state": "ME",
+        "zip": "4240"
+      },
+      "contact": {
+        "phone": "2077860691",
+        "phone_formatted": "2077860691"
+      },
+      "location": {
+        "county": "Androscoggin",
+        "latitude": 44.1054,
+        "longitude": -70.196
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MEDICAL CARE MANAGEMENT, INC",
+        "chain_name": "NORTH COUNTRY ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://northcountryassociats.com/",
+        "google_maps_url": "https://maps.google.com/?cid=5013812161936504676",
+        "verified_phone": "(207) 786-0691",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:48.972648"
+      }
+    },
+    {
+      "name": "ST MARY'S D'YOUVILLE PAVILION",
+      "type": "Nursing Home",
+      "address": {
+        "street": "102 CAMPUS AVE",
+        "city": "LEWISTON",
+        "state": "ME",
+        "zip": "4240"
+      },
+      "contact": {
+        "phone": "2077774200",
+        "phone_formatted": "2077774200"
+      },
+      "location": {
+        "county": "Androscoggin",
+        "latitude": 44.1016,
+        "longitude": -70.199
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 210,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST MARYS REGIONAL MEDICAL CENTER",
+        "chain_name": "COVENANT HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.stmarysmaine.com/departments-services/dyouville-pavilion/st-marys-dyouville-pavilion",
+        "google_maps_url": "https://maps.google.com/?cid=14793967607768309775",
+        "verified_phone": "(207) 777-4200",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:49.682502"
+      }
+    },
+    {
+      "name": "MAINEGENERAL REHAB & LONG TERM CARE - GRAY BIRCH",
+      "type": "Nursing Home",
+      "address": {
+        "street": "37 GRAY BIRCH DRIVE",
+        "city": "AUGUSTA",
+        "state": "ME",
+        "zip": "4330"
+      },
+      "contact": {
+        "phone": "2076217100",
+        "phone_formatted": "2076217100"
+      },
+      "location": {
+        "county": "Kennebec",
+        "latitude": 44.3092,
+        "longitude": -69.801
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 77,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAINE GENERAL HEALTH REHABILITATION & LONG TERM CARE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.mainegeneral.org/locations/locations-profile/physical-rehab-unit/",
+        "google_maps_url": "https://maps.google.com/?cid=11997450324493156578",
+        "verified_phone": "(855) 464-4463",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:50.406213"
+      }
+    },
+    {
+      "name": "CEDAR RIDGE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "23 CEDAR RIDGE DRIVE",
+        "city": "SKOWHEGAN",
+        "state": "ME",
+        "zip": "4976"
+      },
+      "contact": {
+        "phone": "2074749686",
+        "phone_formatted": "2074749686"
+      },
+      "location": {
+        "county": "Somerset",
+        "latitude": 44.7829,
+        "longitude": -69.705
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 75,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SKOWHEGAN SNF OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/CedarRidge",
+        "google_maps_url": "https://maps.google.com/?cid=10097504303468099015",
+        "verified_phone": "(207) 474-9686",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:51.087207"
+      }
+    },
+    {
+      "name": "BREWER CENTER FOR HEALTH & REHABILITATION, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "74 PARKWAY SOUTH",
+        "city": "BREWER",
+        "state": "ME",
+        "zip": "4412"
+      },
+      "contact": {
+        "phone": "2079897300",
+        "phone_formatted": "2079897300"
+      },
+      "location": {
+        "county": "Penobscot",
+        "latitude": 44.7812,
+        "longitude": -68.756
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 111,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VK BREWER LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://brewercenterrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=2898604890816296734",
+        "verified_phone": "(207) 989-7300",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:51.750967"
+      }
+    },
+    {
+      "name": "CLOVER HEALTH CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "440 MINOT AVE",
+        "city": "AUBURN",
+        "state": "ME",
+        "zip": "4210"
+      },
+      "contact": {
+        "phone": "2077843573",
+        "phone_formatted": "2077843573"
+      },
+      "location": {
+        "county": "Androscoggin",
+        "latitude": 44.0837,
+        "longitude": -70.245
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 109,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CLOVER MANOR INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.seniorlifestyle.com/property/maine/clover-health-care/?utm_source=GMB&utm_medium=organic&utm_campaign=310&utm_content=clover-health-care",
+        "google_maps_url": "https://maps.google.com/?cid=17068880013970276783",
+        "verified_phone": "(207) 784-3573",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:52.426763"
+      }
+    },
+    {
+      "name": "ROSS MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "758 BROADWAY",
+        "city": "BANGOR",
+        "state": "ME",
+        "zip": "4401"
+      },
+      "contact": {
+        "phone": "2079418400",
+        "phone_formatted": "2079418400"
+      },
+      "location": {
+        "county": "Penobscot",
+        "latitude": 44.8264,
+        "longitude": -68.782
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 103,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ROSS MANOR ASSOCIATES",
+        "chain_name": "FIRST ATLANTIC HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.ross-manor.com/",
+        "google_maps_url": "https://maps.google.com/?cid=10082072425880112459",
+        "verified_phone": "(207) 941-8400",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:53.100982"
+      }
+    },
+    {
+      "name": "RIVER RIDGE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3 BRAZIER LANE",
+        "city": "KENNEBUNK",
+        "state": "ME",
+        "zip": "4043"
+      },
+      "contact": {
+        "phone": "2079853030",
+        "phone_formatted": "2079853030"
+      },
+      "location": {
+        "county": "York",
+        "latitude": 43.3896,
+        "longitude": -70.551
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KENNEBUNK OPERATIONS, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/RiverRidge",
+        "google_maps_url": "https://maps.google.com/?cid=10432672239201110097",
+        "verified_phone": "(207) 985-3030",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:53.777265"
+      }
+    },
+    {
+      "name": "COVE'S EDGE INC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "26 SCHOONER STREET",
+        "city": "DAMARISCOTTA",
+        "state": "ME",
+        "zip": "4543"
+      },
+      "contact": {
+        "phone": "2075634608",
+        "phone_formatted": "2075634608"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 44.024,
+        "longitude": -69.531
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 76,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LINCOLNHEALTH COVES EDGE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.chasepoint.org/coves-edge-nursing-home/",
+        "google_maps_url": "https://maps.google.com/?cid=17255038776614552949",
+        "verified_phone": "(207) 563-4600",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:54.432575"
+      }
+    },
+    {
+      "name": "SPRINGBROOK CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "300 SPRING ST",
+        "city": "WESTBROOK",
+        "state": "ME",
+        "zip": "4092"
+      },
+      "contact": {
+        "phone": "2078561230",
+        "phone_formatted": "2078561230"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.6664,
+        "longitude": -70.359
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 123,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WESTBROOK OPERATIONS, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/SpringbrookME",
+        "google_maps_url": "https://maps.google.com/?cid=15191915594678845300",
+        "verified_phone": "(207) 856-1230",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:55.105075"
+      }
+    },
+    {
+      "name": "SANDY RIVER CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "119 LIVERMORE FALLS RD",
+        "city": "FARMINGTON",
+        "state": "ME",
+        "zip": "4938"
+      },
+      "contact": {
+        "phone": "2077786591",
+        "phone_formatted": "2077786591"
+      },
+      "location": {
+        "county": "Franklin",
+        "latitude": 44.6246,
+        "longitude": -70.161
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 82,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FARMINGTON OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/SandyRiver",
+        "google_maps_url": "https://maps.google.com/?cid=4108486156655181723",
+        "verified_phone": "(207) 778-6591",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:55.768649"
+      }
+    },
+    {
+      "name": "PINE POINT CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "67 PINE POINT RD",
+        "city": "SCARBOROUGH",
+        "state": "ME",
+        "zip": "4074"
+      },
+      "contact": {
+        "phone": "2078832468",
+        "phone_formatted": "2078832468"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.5687,
+        "longitude": -70.379
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 61,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SCARBOROUGH OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/PinePoint",
+        "google_maps_url": "https://maps.google.com/?cid=4245705052942128301",
+        "verified_phone": "(207) 883-2468",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:56.432162"
+      }
+    },
+    {
+      "name": "MARSHWOOD CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "33 ROGER STREET",
+        "city": "LEWISTON",
+        "state": "ME",
+        "zip": "4240"
+      },
+      "contact": {
+        "phone": "2077840108",
+        "phone_formatted": "2077840108"
+      },
+      "location": {
+        "county": "Androscoggin",
+        "latitude": 44.1019,
+        "longitude": -70.161
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 108,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LEWISTON OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/Marshwood",
+        "google_maps_url": "https://maps.google.com/?cid=2894831388180542494",
+        "verified_phone": "(207) 784-0108",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:57.098063"
+      }
+    },
+    {
+      "name": "SEASIDE NURSING AND RETIREMENT HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "850 BAXTER BOULEVARD",
+        "city": "PORTLAND",
+        "state": "ME",
+        "zip": "4103"
+      },
+      "contact": {
+        "phone": "2077747878",
+        "phone_formatted": "2077747878"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.6791,
+        "longitude": -70.263
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 137,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SEASIDE HEALTHCARE LLC",
+        "chain_name": "FIRST ATLANTIC HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://seaside-healthcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=4868369384649199538",
+        "verified_phone": "(207) 774-7878",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:57.753674"
+      }
+    },
+    {
+      "name": "Market Square Health Care Center, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3 MARKET SQUARE",
+        "city": "SOUTH PARIS",
+        "state": "ME",
+        "zip": "4281"
+      },
+      "contact": {
+        "phone": "2077437086",
+        "phone_formatted": "2077437086"
+      },
+      "location": {
+        "county": "Oxford",
+        "latitude": 44.2236,
+        "longitude": -70.513
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 76,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARKET SQUARE HEALTH CARE CENTER LLC",
+        "chain_name": "NORTH COUNTRY ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://northcountryassociates.com/",
+        "google_maps_url": "https://maps.google.com/?cid=9866204879973357736",
+        "verified_phone": "(207) 743-7086",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:58.424273"
+      }
+    },
+    {
+      "name": "AUGUSTA CENTER FOR HEALTH & REHABILITATION, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "188 EASTERN AVE",
+        "city": "AUGUSTA",
+        "state": "ME",
+        "zip": "4330"
+      },
+      "contact": {
+        "phone": "2076223121",
+        "phone_formatted": "2076223121"
+      },
+      "location": {
+        "county": "Kennebec",
+        "latitude": 44.3078,
+        "longitude": -69.754
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VK AUGUSTA LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.augustahealth.com/",
+        "google_maps_url": "https://maps.google.com/?cid=9185195785822272592",
+        "verified_phone": "(540) 332-4000",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:59.089450"
+      }
+    },
+    {
+      "name": "WINSHIP GREEN CENTER FOR HEALTH & REHAB, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "51 WINSHIP ST",
+        "city": "BATH",
+        "state": "ME",
+        "zip": "4530"
+      },
+      "contact": {
+        "phone": "2074439772",
+        "phone_formatted": "2074439772"
+      },
+      "location": {
+        "county": "Sagadahoc",
+        "latitude": 43.9309,
+        "longitude": -69.817
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VK BATH LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://winshipgreencenterrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=14082761602334707826",
+        "verified_phone": "(207) 443-9772",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:44:59.753847"
+      }
+    },
+    {
+      "name": "BRENTWOOD CENTER FOR HEALTH & REHABILITATION, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "370 PORTLAND ST",
+        "city": "YARMOUTH",
+        "state": "ME",
+        "zip": "4096"
+      },
+      "contact": {
+        "phone": "2078469021",
+        "phone_formatted": "2078469021"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.7886,
+        "longitude": -70.194
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 78,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VK YARMOUTH LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.unityhealthcare.org/",
+        "google_maps_url": "https://maps.google.com/?cid=14751988149824563861",
+        "verified_phone": "(202) 469-4699",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:00.503984"
+      }
+    },
+    {
+      "name": "PINNACLE HEALTH & REHAB AT SANFORD",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1142 MAIN ST",
+        "city": "SANFORD",
+        "state": "ME",
+        "zip": "4073"
+      },
+      "contact": {
+        "phone": "2073242273",
+        "phone_formatted": "2073242273"
+      },
+      "location": {
+        "county": "York",
+        "latitude": 43.4248,
+        "longitude": -70.763
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 86,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PINNACLE GROUP OF HUDSON VALLEY II LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.mypinnaclehealthcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=3810111962812847391",
+        "verified_phone": "(703) 957-9420",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:01.190704"
+      }
+    },
+    {
+      "name": "MADIGAN ESTATES",
+      "type": "Nursing Home",
+      "address": {
+        "street": "93 MILITARY STREET",
+        "city": "HOULTON",
+        "state": "ME",
+        "zip": "4730"
+      },
+      "contact": {
+        "phone": "2075326593",
+        "phone_formatted": "2075326593"
+      },
+      "location": {
+        "county": "Aroostook",
+        "latitude": 46.1248,
+        "longitude": -67.831
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 99,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAPLE GROVE NURSING HOME, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.madiganestates.com/",
+        "google_maps_url": "https://maps.google.com/?cid=14834862436327032095",
+        "verified_phone": "(207) 532-6593",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:01.860443"
+      }
+    },
+    {
+      "name": "HORIZONS LIVING AND REHAB CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "29 MAURICE DRIVE",
+        "city": "BRUNSWICK",
+        "state": "ME",
+        "zip": "4011"
+      },
+      "contact": {
+        "phone": "2077257495",
+        "phone_formatted": "2077257495"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.897,
+        "longitude": -69.979
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 65,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HORIZONS LIVING AND REHAB CENTER, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.horizonslivingandrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=1075359070556701741",
+        "verified_phone": "(207) 725-7495",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:02.536110"
+      }
+    },
+    {
+      "name": "PINNACLE HEALTH & REHAB AT N BERWICK",
+      "type": "Nursing Home",
+      "address": {
+        "street": "47 ELM ST",
+        "city": "NORTH BERWICK",
+        "state": "ME",
+        "zip": "3906"
+      },
+      "contact": {
+        "phone": "2076762242",
+        "phone_formatted": "2076762242"
+      },
+      "location": {
+        "county": "York",
+        "latitude": 43.303,
+        "longitude": -70.74
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 64,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PINNACLE GROUP OF HUDSON VALLEY III LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.mypinnaclehealthcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=3810111962812847391",
+        "verified_phone": "(703) 957-9420",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:03.198991"
+      }
+    },
+    {
+      "name": "BORDERVIEW REHAB & LIVING CTR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "208 STATE STREET",
+        "city": "VAN BUREN",
+        "state": "ME",
+        "zip": "4785"
+      },
+      "contact": {
+        "phone": "2078685211",
+        "phone_formatted": "2078685211"
+      },
+      "location": {
+        "county": "Aroostook",
+        "latitude": 47.1476,
+        "longitude": -67.939
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 55,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BORDERVIEW HOLDINGS CORP",
+        "chain_name": "NORTH COUNTRY ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://northcountryassociates.com/",
+        "google_maps_url": "https://maps.google.com/?cid=18016033273522949244",
+        "verified_phone": "(207) 868-5211",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:03.869920"
+      }
+    },
+    {
+      "name": "OAK GROVE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "27 COOL ST",
+        "city": "WATERVILLE",
+        "state": "ME",
+        "zip": "4901"
+      },
+      "contact": {
+        "phone": "2078730721",
+        "phone_formatted": "2078730721"
+      },
+      "location": {
+        "county": "Kennebec",
+        "latitude": 44.5467,
+        "longitude": -69.645
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WATERVILLE SNF OPERATIONS, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/OakGrove",
+        "google_maps_url": "https://maps.google.com/?cid=11899774520911682615",
+        "verified_phone": "(207) 873-0721",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:04.539558"
+      }
+    },
+    {
+      "name": "KENNEBUNK CENTER FOR HEALTH & REHABILITATION, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "158 ROSS RD",
+        "city": "KENNEBUNK",
+        "state": "ME",
+        "zip": "4043"
+      },
+      "contact": {
+        "phone": "2079857141",
+        "phone_formatted": "2079857141"
+      },
+      "location": {
+        "county": "York",
+        "latitude": 43.4002,
+        "longitude": -70.553
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 78,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VK KENNEBUNK LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://kennebunkcenterrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=17786577400908772849",
+        "verified_phone": "(207) 985-7141",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:05.214135"
+      }
+    },
+    {
+      "name": "NORWAY CENTER FOR HEALTH & REHABILITATION, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "29 MARION AVE",
+        "city": "NORWAY",
+        "state": "ME",
+        "zip": "4268"
+      },
+      "contact": {
+        "phone": "2077437075",
+        "phone_formatted": "2077437075"
+      },
+      "location": {
+        "county": "Oxford",
+        "latitude": 44.2047,
+        "longitude": -70.533
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 42,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VK NORWAY LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://norwaycenterrehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=5602665506605034559",
+        "verified_phone": "(207) 743-7075",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:05.874019"
+      }
+    },
+    {
+      "name": "HAWTHORNE HOUSE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "6 OLD COUNTY RD",
+        "city": "FREEPORT",
+        "state": "ME",
+        "zip": "4032"
+      },
+      "contact": {
+        "phone": "2078654782",
+        "phone_formatted": "2078654782"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.8297,
+        "longitude": -70.138
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 81,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FREEPORT CONVALESCENT CENTER INC",
+        "chain_name": "FIRST ATLANTIC HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://hawthorne-healthcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=2952337500879924387",
+        "verified_phone": "(207) 865-4782",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:06.528426"
+      }
+    },
+    {
+      "name": "RUMFORD COMMUNITY HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "11 JOHN F KENNEDY LANE",
+        "city": "RUMFORD",
+        "state": "ME",
+        "zip": "4276"
+      },
+      "contact": {
+        "phone": "2073647863",
+        "phone_formatted": "2073647863"
+      },
+      "location": {
+        "county": "Oxford",
+        "latitude": 44.5246,
+        "longitude": -70.557
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 32,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RUMFORD COMMUNITY HOME CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.cmhc.org/rumford-hospital/medical-services-at-rumford/long-term-care?utm_source=local-listing&utm_medium=organic&utm_campaign=website-link",
+        "google_maps_url": "https://maps.google.com/?cid=3101309934381175797",
+        "verified_phone": "(207) 364-7863",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:07.196104"
+      }
+    },
+    {
+      "name": "PINNACLE HEALTH & REHAB  CANTON",
+      "type": "Nursing Home",
+      "address": {
+        "street": "26 PLEASANT ST",
+        "city": "CANTON",
+        "state": "ME",
+        "zip": "4221"
+      },
+      "contact": {
+        "phone": "2075972510",
+        "phone_formatted": "2075972510"
+      },
+      "location": {
+        "county": "Oxford",
+        "latitude": 44.4416,
+        "longitude": -70.316
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 47,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PINNACLE GROUP OF HUDSON VALLEY LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.mypinnaclehealthcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=3810111962812847391",
+        "verified_phone": "(703) 957-9420",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:07.862707"
+      }
+    },
+    {
+      "name": "SEAL ROCK HEALTHCARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "88 HARBOR DRIVE",
+        "city": "SACO",
+        "state": "ME",
+        "zip": "4072"
+      },
+      "contact": {
+        "phone": "2072833646",
+        "phone_formatted": "2072833646"
+      },
+      "location": {
+        "county": "York",
+        "latitude": 43.4944,
+        "longitude": -70.421
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SEAL ROCK ASSOCIATES LLC",
+        "chain_name": "FIRST ATLANTIC HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://atlanticheightsretirement.com/seal-rock/",
+        "google_maps_url": "https://maps.google.com/?cid=4442171343803530586",
+        "verified_phone": "(207) 283-3646",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:08.518099"
+      }
+    },
+    {
+      "name": "WESTGATE CENTER FOR REHAB & ALZHEIMERS CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "750 UNION ST",
+        "city": "BANGOR",
+        "state": "ME",
+        "zip": "4401"
+      },
+      "contact": {
+        "phone": "2079427336",
+        "phone_formatted": "2079427336"
+      },
+      "location": {
+        "county": "Penobscot",
+        "latitude": 44.8109,
+        "longitude": -68.798
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 65,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WESTGATE CENTER FOR HEALTH AND REHABILITATION, LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://westgatehillshc.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=main_button",
+        "google_maps_url": "https://maps.google.com/?cid=12916393901939462654",
+        "verified_phone": "(410) 646-2100",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:09.243375"
+      }
+    },
+    {
+      "name": "EASTSIDE CENTER FOR HEALTH & REHABILITATION, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "516 MT HOPE AVENUE",
+        "city": "BANGOR",
+        "state": "ME",
+        "zip": "4401"
+      },
+      "contact": {
+        "phone": "2079476131",
+        "phone_formatted": "2079476131"
+      },
+      "location": {
+        "county": "Penobscot",
+        "latitude": 44.8207,
+        "longitude": -68.745
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 67,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VK BANGOR LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.ohiohealth.com/locations/health-center/eastside-health-center/?utm_source=yext&utm_medium=listings&utm_campaign=websiteclicksfacility",
+        "google_maps_url": "https://maps.google.com/?cid=10569927726348965056",
+        "verified_phone": "(614) 566-0899",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:09.912280"
+      }
+    },
+    {
+      "name": "ST ANDRE HEALTH CARE FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "407 POOL ST",
+        "city": "BIDDEFORD",
+        "state": "ME",
+        "zip": "4005"
+      },
+      "contact": {
+        "phone": "2072825171",
+        "phone_formatted": "2072825171"
+      },
+      "location": {
+        "county": "York",
+        "latitude": 43.4753,
+        "longitude": -70.415
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 96,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ST. ANDRE HEALTH CARE FACILITY",
+        "chain_name": "COVENANT HEALTH"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.standre.org/",
+        "google_maps_url": "https://maps.google.com/?cid=3789261829369162459",
+        "verified_phone": "(207) 282-5171",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:10.572499"
+      }
+    },
+    {
+      "name": "MARSHALL HEALTH CARE AND REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "16 BEAL STREET",
+        "city": "MACHIAS",
+        "state": "ME",
+        "zip": "4654"
+      },
+      "contact": {
+        "phone": "2072553387",
+        "phone_formatted": "2072553387"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 44.7119,
+        "longitude": -67.467
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 64,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MARSHALL HEALTHCARE",
+        "chain_name": "FIRST ATLANTIC HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://marshalls-healthcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=7241968018205659662",
+        "verified_phone": "(207) 255-3387",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:11.260800"
+      }
+    },
+    {
+      "name": "HIGH VIEW REHABILITATION AND LIVING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "517 RIVERVIEW ST",
+        "city": "MADAWASKA",
+        "state": "ME",
+        "zip": "4756"
+      },
+      "contact": {
+        "phone": "2077283338",
+        "phone_formatted": "2077283338"
+      },
+      "location": {
+        "county": "Aroostook",
+        "latitude": 47.3533,
+        "longitude": -68.312
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 51,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HIGH VIEW MANOR",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": null,
+        "google_maps_url": "https://maps.google.com/?cid=15068868594099144983",
+        "verified_phone": "(207) 728-3338",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:11.949269"
+      }
+    },
+    {
+      "name": "DEXTER HEALTH CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "64 PARK STREET",
+        "city": "DEXTER",
+        "state": "ME",
+        "zip": "4930"
+      },
+      "contact": {
+        "phone": "2079245516",
+        "phone_formatted": "2079245516"
+      },
+      "location": {
+        "county": "Penobscot",
+        "latitude": 45.0268,
+        "longitude": -69.282
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 53,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DEXTER MANOR ASSOCIATES",
+        "chain_name": "FIRST ATLANTIC HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://dexter-healthcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=8741201798022105547",
+        "verified_phone": "(207) 924-5516",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:12.611708"
+      }
+    },
+    {
+      "name": "STILLWATER HEALTH CARE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "335 STILLWATER AVE",
+        "city": "BANGOR",
+        "state": "ME",
+        "zip": "4401"
+      },
+      "contact": {
+        "phone": "2079471111",
+        "phone_formatted": "2079471111"
+      },
+      "location": {
+        "county": "Penobscot",
+        "latitude": 44.8221,
+        "longitude": -68.761
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 63,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STILLWATER HEALTHCARE LLC",
+        "chain_name": "FIRST ATLANTIC HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://stillwater-healthcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=9699219563840314610",
+        "verified_phone": "(207) 947-1111",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:13.277137"
+      }
+    },
+    {
+      "name": "CARIBOU REHAB AND NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10 BERNADETTE ST",
+        "city": "CARIBOU",
+        "state": "ME",
+        "zip": "4736"
+      },
+      "contact": {
+        "phone": "2074983102",
+        "phone_formatted": "2074983102"
+      },
+      "location": {
+        "county": "Aroostook",
+        "latitude": 46.8705,
+        "longitude": -68.011
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CARIBOU NURSING HOME INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://caribourehab.com/",
+        "google_maps_url": "https://maps.google.com/?cid=5187177757437164126",
+        "verified_phone": "(207) 498-3102",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:13.969712"
+      }
+    },
+    {
+      "name": "WATERVILLE CENTER FOR HEALTH AND REHAB",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7 HIGHWOOD ST",
+        "city": "WATERVILLE",
+        "state": "ME",
+        "zip": "4901"
+      },
+      "contact": {
+        "phone": "2078730705",
+        "phone_formatted": "2078730705"
+      },
+      "location": {
+        "county": "Kennebec",
+        "latitude": 44.5689,
+        "longitude": -69.622
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 111,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WATERVILLE CENTER FOR HEALTH AND REHAB LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mountjosephwaterville.com/",
+        "google_maps_url": "https://maps.google.com/?cid=8608447838223834572",
+        "verified_phone": "(207) 873-0705",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:14.620694"
+      }
+    },
+    {
+      "name": "PINNACLE HEALTH & REHAB AT SOUTH PORTLAND",
+      "type": "Nursing Home",
+      "address": {
+        "street": "42 ANTHOINE ST",
+        "city": "SO PORTLAND",
+        "state": "ME",
+        "zip": "4106"
+      },
+      "contact": {
+        "phone": "2077998561",
+        "phone_formatted": "2077998561"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.632,
+        "longitude": -70.258
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 73,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PINNACLE GROUP OF HUDSON VALLEY IV LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.mypinnaclehealthcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=3810111962812847391",
+        "verified_phone": "(703) 957-9420",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:15.282803"
+      }
+    },
+    {
+      "name": "HARBOR HILL CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2 FOOTBRIDGE RD",
+        "city": "BELFAST",
+        "state": "ME",
+        "zip": "4915"
+      },
+      "contact": {
+        "phone": "2073385307",
+        "phone_formatted": "2073385307"
+      },
+      "location": {
+        "county": "Waldo",
+        "latitude": 44.4334,
+        "longitude": -69.006
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BELFAST OPERATIONS, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/HarborHill",
+        "google_maps_url": "https://maps.google.com/?cid=17937133451318915132",
+        "verified_phone": "(207) 338-5307",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:15.940639"
+      }
+    },
+    {
+      "name": "BREAKWATER COMMONS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 COMMONS DRIVE",
+        "city": "ROCKLAND",
+        "state": "ME",
+        "zip": "4841"
+      },
+      "contact": {
+        "phone": "2073016810",
+        "phone_formatted": "2073016810"
+      },
+      "location": {
+        "county": "Knox",
+        "latitude": 44.1093,
+        "longitude": -69.113
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 96,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BREAKWATER COMMONS OPERATIONS, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mainesailcare.com/location/breakwater-commons/",
+        "google_maps_url": "https://maps.google.com/?cid=17649596702168539106",
+        "verified_phone": "(207) 466-8788",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:16.610021"
+      }
+    },
+    {
+      "name": "MAINE VETERANS HOME - AUGUSTA",
+      "type": "Nursing Home",
+      "address": {
+        "street": "35 HEROES WAY",
+        "city": "AUGUSTA",
+        "state": "ME",
+        "zip": "4330"
+      },
+      "contact": {
+        "phone": "2076222454",
+        "phone_formatted": "2076222454"
+      },
+      "location": {
+        "county": "Kennebec",
+        "latitude": 44.3536,
+        "longitude": -69.731
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 108,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAINE VETERANS' HOME",
+        "chain_name": "MAINE VETERANS' HOME"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mainevets.org/",
+        "google_maps_url": "https://maps.google.com/?cid=2603739147360700244",
+        "verified_phone": "(207) 622-2454",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:17.286372"
+      }
+    },
+    {
+      "name": "MAINE VETERANS HOME - SCARBOROUGH",
+      "type": "Nursing Home",
+      "address": {
+        "street": "290 US RT 1",
+        "city": "SCARBOROUGH",
+        "state": "ME",
+        "zip": "4074"
+      },
+      "contact": {
+        "phone": "2078837184",
+        "phone_formatted": "2078837184"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.585,
+        "longitude": -70.371
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAINE VETERANS' HOME",
+        "chain_name": "MAINE VETERANS' HOME"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mainevets.org/",
+        "google_maps_url": "https://maps.google.com/?cid=13600031941542863891",
+        "verified_phone": "(207) 883-7184",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:17.948804"
+      }
+    },
+    {
+      "name": "MAPLECREST REHAB & LIVING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "174 MAIN ST",
+        "city": "MADISON",
+        "state": "ME",
+        "zip": "4950"
+      },
+      "contact": {
+        "phone": "2076968225",
+        "phone_formatted": "2076968225"
+      },
+      "location": {
+        "county": "Somerset",
+        "latitude": 44.7981,
+        "longitude": -69.877
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH COUNTRY ASSOCIATES, INC",
+        "chain_name": "NORTH COUNTRY ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.maplecrestnursing.com/",
+        "google_maps_url": "https://maps.google.com/?cid=11414685858055110271",
+        "verified_phone": "(330) 755-1466",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:18.603905"
+      }
+    },
+    {
+      "name": "Edgewood Rehab & Living Ctr",
+      "type": "Nursing Home",
+      "address": {
+        "street": "221 Fairbanks Rd",
+        "city": "FARMINGTON",
+        "state": "ME",
+        "zip": "4938"
+      },
+      "contact": {
+        "phone": "2077783386",
+        "phone_formatted": "2077783386"
+      },
+      "location": {
+        "county": "Franklin",
+        "latitude": 44.6806,
+        "longitude": -70.157
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 33,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH COUNTRY ASSOCIATES, INC",
+        "chain_name": "NORTH COUNTRY ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": null,
+        "google_maps_url": "https://maps.google.com/?cid=1060196062904657052",
+        "verified_phone": "(410) 671-7374",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:19.273000"
+      }
+    },
+    {
+      "name": "DURGIN PINES",
+      "type": "Nursing Home",
+      "address": {
+        "street": "9 LEWIS RD",
+        "city": "KITTERY",
+        "state": "ME",
+        "zip": "3904"
+      },
+      "contact": {
+        "phone": "2074399800",
+        "phone_formatted": "2074399800"
+      },
+      "location": {
+        "county": "York",
+        "latitude": 43.1222,
+        "longitude": -70.716
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 81,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SENTRY COMMONS LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.durginpines.com/",
+        "google_maps_url": "https://maps.google.com/?cid=7733711246734699310",
+        "verified_phone": "(207) 439-9800",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:19.935870"
+      }
+    },
+    {
+      "name": "Fallbrook Commons",
+      "type": "Nursing Home",
+      "address": {
+        "street": "91 Merrymeeting Dr",
+        "city": "PORTLAND",
+        "state": "ME",
+        "zip": "4103"
+      },
+      "contact": {
+        "phone": "2073319292",
+        "phone_formatted": "2073319292"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.7014,
+        "longitude": -70.283
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FALLBROOK CARE OPERATIONS, LLC",
+        "chain_name": "NORTH COUNTRY ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mainesailcare.com/location/fallbrook-commons/",
+        "google_maps_url": "https://maps.google.com/?cid=13192568130058642322",
+        "verified_phone": "(207) 331-9292",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:20.595599"
+      }
+    },
+    {
+      "name": "SOUTHRIDGE REHAB & LIVING CTR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "10 MAY ST",
+        "city": "BIDDEFORD",
+        "state": "ME",
+        "zip": "4005"
+      },
+      "contact": {
+        "phone": "2072824138",
+        "phone_formatted": "2072824138"
+      },
+      "location": {
+        "county": "York",
+        "latitude": 43.4922,
+        "longitude": -70.467
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 78,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH COUNTRY ASSOCIATES, INC",
+        "chain_name": "NORTH COUNTRY ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://northcountryassociates.com/",
+        "google_maps_url": "https://maps.google.com/?cid=15966261564499013241",
+        "verified_phone": "(207) 282-4138",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:21.279505"
+      }
+    },
+    {
+      "name": "Ledgewood Manor",
+      "type": "Nursing Home",
+      "address": {
+        "street": "200 ROUTE 115",
+        "city": "WINDHAM",
+        "state": "ME",
+        "zip": "4062"
+      },
+      "contact": {
+        "phone": "2078922261",
+        "phone_formatted": "2078922261"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.8368,
+        "longitude": -70.426
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "LEDGEWOOD MANOR INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://ledgewood.me/",
+        "google_maps_url": "https://maps.google.com/?cid=10485040339304258852",
+        "verified_phone": "(207) 892-2261",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:21.965640"
+      }
+    },
+    {
+      "name": "LAKEWOOD A CONTINUING CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "220 KENNEDY MEMORIAL DR",
+        "city": "WATERVILLE",
+        "state": "ME",
+        "zip": "4901"
+      },
+      "contact": {
+        "phone": "2078735125",
+        "phone_formatted": "2078735125"
+      },
+      "location": {
+        "county": "Kennebec",
+        "latitude": 44.5432,
+        "longitude": -69.664
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EASTERN MAINE HEALTHCARE SYSTEMS",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://northernlighthealth.org/Our-System/Lakewood/Continuing-Care",
+        "google_maps_url": "https://maps.google.com/?cid=951265628067205591",
+        "verified_phone": "(207) 873-5125",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:22.624764"
+      }
+    },
+    {
+      "name": "MAINEGENERAL REHAB & LONG TERM CARE - GLENRIDGE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "40 GLENRIDGE DRIVE",
+        "city": "AUGUSTA",
+        "state": "ME",
+        "zip": "4330"
+      },
+      "contact": {
+        "phone": "2076262600",
+        "phone_formatted": "2076262600"
+      },
+      "location": {
+        "county": "Kennebec",
+        "latitude": 44.3037,
+        "longitude": -69.765
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 125,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAINE GENERAL HEALTH REHABILITATION & LONG TERM CARE",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.mainegeneral.org/locations/locations-profile/physical-rehab-unit/",
+        "google_maps_url": "https://maps.google.com/?cid=11997450324493156578",
+        "verified_phone": "(855) 464-4463",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:23.299306"
+      }
+    },
+    {
+      "name": "CUMMINGS HEALTH CARE FACILITY",
+      "type": "Nursing Home",
+      "address": {
+        "street": "5 CROCKER STREET",
+        "city": "HOWLAND",
+        "state": "ME",
+        "zip": "4448"
+      },
+      "contact": {
+        "phone": "2077324121",
+        "phone_formatted": "2077324121"
+      },
+      "location": {
+        "county": "Penobscot",
+        "latitude": 45.251,
+        "longitude": -68.666
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 34,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CUMMINGS HEALTH CARE FACILITY INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": null,
+        "google_maps_url": "https://maps.google.com/?cid=2123203136277526388",
+        "verified_phone": "(207) 732-4121",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:23.959713"
+      }
+    },
+    {
+      "name": "EASTPORT MEMORIAL NURSING HOME",
+      "type": "Nursing Home",
+      "address": {
+        "street": "23 BOYNTON STREET",
+        "city": "EASTPORT",
+        "state": "ME",
+        "zip": "4631"
+      },
+      "contact": {
+        "phone": "2078532531",
+        "phone_formatted": "2078532531"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 44.9053,
+        "longitude": -66.988
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 26,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "EASTPORT MEMORIAL HOSPITAL",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.eastport-me.gov/home/pages/eastport-memorial-nursing-home",
+        "google_maps_url": "https://maps.google.com/?cid=18315051190688701498",
+        "verified_phone": "(207) 853-2531",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:24.650233"
+      }
+    },
+    {
+      "name": "KATAHDIN HEALTH CARE LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "22 WALNUT STREET",
+        "city": "MILLINOCKET",
+        "state": "ME",
+        "zip": "4462"
+      },
+      "contact": {
+        "phone": "2077234711",
+        "phone_formatted": "2077234711"
+      },
+      "location": {
+        "county": "Penobscot",
+        "latitude": 45.656,
+        "longitude": -68.694
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KATAHDIN HEALTH CARE LLC",
+        "chain_name": "FIRST ATLANTIC HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://katahdin-healthcare.com/",
+        "google_maps_url": "https://maps.google.com/?cid=16502603280087503686",
+        "verified_phone": "(207) 723-4711",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:25.369888"
+      }
+    },
+    {
+      "name": "MAINE VETERANS HOME - CARIBOU",
+      "type": "Nursing Home",
+      "address": {
+        "street": "163 VAN BUREN RD SUITE 2",
+        "city": "CARIBOU",
+        "state": "ME",
+        "zip": "4736"
+      },
+      "contact": {
+        "phone": "2074986074",
+        "phone_formatted": "2074986074"
+      },
+      "location": {
+        "county": "Aroostook",
+        "latitude": 46.8478,
+        "longitude": -68.01
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAINE VETERANS' HOME",
+        "chain_name": "MAINE VETERANS' HOME"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mainevets.org/",
+        "google_maps_url": "https://maps.google.com/?cid=1511449905251906590",
+        "verified_phone": "(207) 498-6074",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:26.735498"
+      }
+    },
+    {
+      "name": "WOODLAWN REHABILITATION & NURSING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "59 WEST FRONT ST",
+        "city": "SKOWHEGAN",
+        "state": "ME",
+        "zip": "4976"
+      },
+      "contact": {
+        "phone": "2074749300",
+        "phone_formatted": "2074749300"
+      },
+      "location": {
+        "county": "Somerset",
+        "latitude": 44.7602,
+        "longitude": -69.722
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 46,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WOODLAWN NURSING HOME INC",
+        "chain_name": "FIRST ATLANTIC HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://aultman.org/locations/woodlawn/#/",
+        "google_maps_url": "https://maps.google.com/?cid=13812983787004485721",
+        "verified_phone": "(330) 479-4800",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:27.901026"
+      }
+    },
+    {
+      "name": "COASTAL MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "20 WEST MAIN STREET",
+        "city": "YARMOUTH",
+        "state": "ME",
+        "zip": "4096"
+      },
+      "contact": {
+        "phone": "2078462250",
+        "phone_formatted": "2078462250"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.8041,
+        "longitude": -70.195
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 39,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "COASTAL MANOR CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.coastalmanornursinghome.com/",
+        "google_maps_url": "https://maps.google.com/?cid=3337349255867489350",
+        "verified_phone": "(207) 846-2250",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:29.015942"
+      }
+    },
+    {
+      "name": "GREGORY WING OF ST ANDREWS VILLAGE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "145 EMERY LANE",
+        "city": "BOOTHBAY HARBOR",
+        "state": "ME",
+        "zip": "4538"
+      },
+      "contact": {
+        "phone": "2076336996",
+        "phone_formatted": "2076336996"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 43.8647,
+        "longitude": -69.636
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 42,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAINEHEALTH",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.standrewsvillage.com/",
+        "google_maps_url": "https://maps.google.com/?cid=1334448915665060813",
+        "verified_phone": "(207) 633-6996",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:30.186966"
+      }
+    },
+    {
+      "name": "SEDGEWOOD COMMONS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "22 NORTHBROOK DR",
+        "city": "FALMOUTH",
+        "state": "ME",
+        "zip": "4105"
+      },
+      "contact": {
+        "phone": "2077815775",
+        "phone_formatted": "2077815775"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.736,
+        "longitude": -70.222
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 91,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FALMOUTH OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/SedgewoodCommons",
+        "google_maps_url": "https://maps.google.com/?cid=8495465505412383585",
+        "verified_phone": "(207) 781-5775",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:31.278262"
+      }
+    },
+    {
+      "name": "MID COAST SENIOR HEALTH CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "58 BARIBEAU DRIVE",
+        "city": "BRUNSWICK",
+        "state": "ME",
+        "zip": "4011"
+      },
+      "contact": {
+        "phone": "2073733600",
+        "phone_formatted": "2073733600"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.8986,
+        "longitude": -69.979
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 42,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MID COAST GERIATRIC SERVICES CORP",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.midcoastseniorhealth.com/",
+        "google_maps_url": "https://maps.google.com/?cid=667374536853624132",
+        "verified_phone": "(207) 373-3646",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:32.645319"
+      }
+    },
+    {
+      "name": "GORHAM HOUSE",
+      "type": "Nursing Home",
+      "address": {
+        "street": "50 NEW PORTLAND RD",
+        "city": "GORHAM",
+        "state": "ME",
+        "zip": "4038"
+      },
+      "contact": {
+        "phone": "2078395757",
+        "phone_formatted": "2078395757"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.6806,
+        "longitude": -70.434
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 69,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GORHAM HEALTH CARE, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://www.seniorlifestyle.com/property/maine/gorham-house/?utm_source=GMB&utm_medium=organic&utm_campaign=316&utm_content=gorham-house",
+        "google_maps_url": "https://maps.google.com/?cid=161702720872795146",
+        "verified_phone": "(207) 839-5757",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:33.948817"
+      }
+    },
+    {
+      "name": "ORCHARD PARK REHAB & LIVING",
+      "type": "Nursing Home",
+      "address": {
+        "street": "107 ORCHARD ST",
+        "city": "FARMINGTON",
+        "state": "ME",
+        "zip": "4938"
+      },
+      "contact": {
+        "phone": "2077784416",
+        "phone_formatted": "2077784416"
+      },
+      "location": {
+        "county": "Franklin",
+        "latitude": 44.674,
+        "longitude": -70.147
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 38,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH COUNTRY ASSOCIATES, INC",
+        "chain_name": "NORTH COUNTRY ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://orchardhillrehab.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=main_button",
+        "google_maps_url": "https://maps.google.com/?cid=1929580718886092881",
+        "verified_phone": "(410) 828-6500",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:35.166926"
+      }
+    },
+    {
+      "name": "ODD FELLOWS HEALTH CARE CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "85 CARON LANE",
+        "city": "AUBURN",
+        "state": "ME",
+        "zip": "4210"
+      },
+      "contact": {
+        "phone": "2077864616",
+        "phone_formatted": "2077864616"
+      },
+      "location": {
+        "county": "Androscoggin",
+        "latitude": 44.0832,
+        "longitude": -70.238
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 26,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "INDEPENDENT ORDER OF ODD FELLOWS",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://homeofmaine.com/",
+        "google_maps_url": "https://maps.google.com/?cid=17288454223963559670",
+        "verified_phone": "(207) 786-4616",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:36.250368"
+      }
+    },
+    {
+      "name": "SANFIELD REHAB & LIVING CENTER",
+      "type": "Nursing Home",
+      "address": {
+        "street": "95 MAIN STREET",
+        "city": "HARTLAND",
+        "state": "ME",
+        "zip": "4943"
+      },
+      "contact": {
+        "phone": "2079382616",
+        "phone_formatted": "2079382616"
+      },
+      "location": {
+        "county": "Somerset",
+        "latitude": 44.8825,
+        "longitude": -69.452
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 23,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH COUNTRY ASSOCIATES, INC",
+        "chain_name": "NORTH COUNTRY ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://northcountryassociates.com/",
+        "google_maps_url": "https://maps.google.com/?cid=116786519194366260",
+        "verified_phone": "(207) 938-2616",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:37.463506"
+      }
+    },
+    {
+      "name": "FOREST HILL MANOR",
+      "type": "Nursing Home",
+      "address": {
+        "street": "25 BOLDUC AVE",
+        "city": "FORT KENT",
+        "state": "ME",
+        "zip": "4743"
+      },
+      "contact": {
+        "phone": "2078343915",
+        "phone_formatted": "2078343915"
+      },
+      "location": {
+        "county": "Aroostook",
+        "latitude": 47.2645,
+        "longitude": -68.589
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 45,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTHERN MAINE MEDICAL CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.nmmc.org/",
+        "google_maps_url": "https://maps.google.com/?cid=5054468807056546541",
+        "verified_phone": "(207) 834-3915",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:38.494101"
+      }
+    },
+    {
+      "name": "WINDWARD GARDENS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "105 MECHANIC ST",
+        "city": "CAMDEN",
+        "state": "ME",
+        "zip": "4843"
+      },
+      "contact": {
+        "phone": "2072364197",
+        "phone_formatted": "2072364197"
+      },
+      "location": {
+        "county": "Knox",
+        "latitude": 44.2086,
+        "longitude": -69.08
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CAMDEN OPERATIONS, LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.genesishcc.com/WindwardGardens",
+        "google_maps_url": "https://maps.google.com/?cid=4627933770446860551",
+        "verified_phone": "(207) 236-4197",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:39.746865"
+      }
+    },
+    {
+      "name": "Maine Veterans Home - So Paris",
+      "type": "Nursing Home",
+      "address": {
+        "street": "477 HIGH ST",
+        "city": "SOUTH PARIS",
+        "state": "ME",
+        "zip": "4281"
+      },
+      "contact": {
+        "phone": "2077436300",
+        "phone_formatted": "2077436300"
+      },
+      "location": {
+        "county": "Oxford",
+        "latitude": 44.2523,
+        "longitude": -70.528
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAINE VETERANS' HOME",
+        "chain_name": "MAINE VETERANS' HOME"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mainevets.org/",
+        "google_maps_url": "https://maps.google.com/?cid=629602301571392931",
+        "verified_phone": "(207) 743-6300",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:41.497696"
+      }
+    },
+    {
+      "name": "Maine Veterans Home - Bangor",
+      "type": "Nursing Home",
+      "address": {
+        "street": "44 HOGAN RD",
+        "city": "BANGOR",
+        "state": "ME",
+        "zip": "4401"
+      },
+      "contact": {
+        "phone": "2079422333",
+        "phone_formatted": "2079422333"
+      },
+      "location": {
+        "county": "Penobscot",
+        "latitude": 44.8158,
+        "longitude": -68.738
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Other",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAINE VETERANS' HOME",
+        "chain_name": "MAINE VETERANS' HOME"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "https://mainevets.org/",
+        "google_maps_url": "https://maps.google.com/?cid=7236140598814725507",
+        "verified_phone": "(207) 942-2333",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:42.875537"
+      }
+    },
+    {
+      "name": "PIPER SHORES",
+      "type": "Nursing Home",
+      "address": {
+        "street": "15 PIPER ROAD",
+        "city": "SCARBOROUGH",
+        "state": "ME",
+        "zip": "4074"
+      },
+      "contact": {
+        "phone": "2078838700",
+        "phone_formatted": "2078838700"
+      },
+      "location": {
+        "county": "Cumberland",
+        "latitude": 43.5626,
+        "longitude": -70.29
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 40,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAINE LIFE CARE RETIREMENT COMMUNITY, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "online_presence": {
+        "website": "http://www.pipershores.org/",
+        "google_maps_url": "https://maps.google.com/?cid=4654611918175172648",
+        "verified_phone": "(207) 883-8700",
+        "business_status": "OPERATIONAL",
+        "last_updated": "2026-02-11T11:45:44.380739"
+      }
+    }
+  ],
+  "websites_found": 75,
+  "total_facilities": 78
+}
