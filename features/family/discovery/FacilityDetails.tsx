@@ -499,7 +499,6 @@ export const FacilityDetails: React.FC = () => {
                 className="w-full h-[260px] object-cover"
                 loading="eager"
                 decoding="async"
-                fetchpriority="high"
               />
             </div>
           </div>

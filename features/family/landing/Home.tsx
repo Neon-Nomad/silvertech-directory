@@ -87,7 +87,6 @@ export const Home: React.FC = () => {
               className="w-full h-full object-cover"
               loading="eager"
               decoding="async"
-              fetchpriority="high"
             />
             <div className="absolute inset-0 bg-charcoal/50" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">

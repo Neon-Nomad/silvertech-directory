@@ -66,10 +66,10 @@ const NavDropdown: React.FC<{
   onClose: () => void;
 }> = ({ category, isOpen, onOpen, onClose }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const handleMouseEnter = () => {
-    clearTimeout(timeoutRef.current);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
     onOpen();
   };
 
@@ -78,7 +78,9 @@ const NavDropdown: React.FC<{
   };
 
   useEffect(() => {
-    return () => clearTimeout(timeoutRef.current);
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
   }, []);
 
   return (
