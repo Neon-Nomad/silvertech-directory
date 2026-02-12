@@ -82,7 +82,7 @@ export const Home: React.FC = () => {
         <section className="relative">
           <div className="h-[480px] sm:h-[560px] relative overflow-hidden">
             <img
-              src="/images/hero_image.jpeg"
+              src="/images/hero_image.png"
               alt="Senior living community"
               className="w-full h-full object-cover"
               loading="eager"
