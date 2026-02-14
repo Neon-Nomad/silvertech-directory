@@ -59,6 +59,20 @@ ${filenames.map(filename => `  <sitemap>
     console.log(`Generated sitemap-index.xml linking to ${filenames.length} sitemaps`);
 };
 
+const removeStaleFacilityChunks = () => {
+    const staleFiles = fs
+        .readdirSync(PUBLIC_DIR)
+        .filter((file) => /^sitemap-facilities-\d{4}\.xml$/.test(file));
+
+    for (const file of staleFiles) {
+        fs.unlinkSync(path.join(PUBLIC_DIR, file));
+    }
+
+    if (staleFiles.length > 0) {
+        console.log(`Removed ${staleFiles.length} stale facility chunk file(s)`);
+    }
+};
+
 // State Data
 const ALL_STATES = [
     { name: "Alabama", abbreviation: "AL", slug: "alabama" },
@@ -115,6 +129,7 @@ const ALL_STATES = [
 
 async function generateSitemaps() {
     console.log('Starting sitemap generation...');
+    removeStaleFacilityChunks();
 
     // 1. Static & Hub Pages
     const staticUrls = [
