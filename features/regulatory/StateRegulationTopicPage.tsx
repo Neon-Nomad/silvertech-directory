@@ -71,6 +71,27 @@ const stripMarkdown = (text: string) =>
     .replace(/\s+/g, ' ')
     .trim();
 
+const stripGeneratorAuditLines = (markdown: string) =>
+  markdown
+    .replace(/\r/g, '')
+    .split('\n')
+    .filter((line) => {
+      const trimmed = line.trim();
+      if (!trimmed) return true;
+      const normalized = trimmed.toLowerCase();
+      if (normalized.includes('word count')) return false;
+      if (normalized.includes('word count check')) return false;
+      if (normalized.includes('the content above is approximately') && normalized.includes('word')) return false;
+      if (normalized.includes('the generated content is approximately') && normalized.includes('word')) return false;
+      if (normalized.includes('meeting the minimum requirement') && normalized.includes('word')) return false;
+      if (normalized.includes('meeting the 2000+ word requirement')) return false;
+      if (normalized.includes('the structure is comprehensive') && normalized.includes('cites external sources')) return false;
+      return true;
+    })
+    .join('\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+
 const getFirstParagraph = (markdown: string) => {
   const blocks = markdown
     .replace(/\r/g, '')
@@ -261,7 +282,8 @@ export const StateRegulationTopicPage: React.FC = () => {
     return <Navigate to="/" replace />;
   }
 
-  const content = data?.[config.baseContentKey] || '';
+  const rawContent = data?.[config.baseContentKey] || '';
+  const content = useMemo(() => stripGeneratorAuditLines(rawContent), [rawContent]);
   const topicSections = useMemo(() => extractTopicSections(content, config.keywords), [content, config.keywords]);
   const directAnswerRaw = topicSections.length > 0 ? toPlainEnglish(getFirstParagraph(topicSections[0].body)) : '';
   const directAnswer = limitSentences(directAnswerRaw, 3);
@@ -428,7 +450,7 @@ export const StateRegulationTopicPage: React.FC = () => {
         <div className="grid lg:grid-cols-[1.4fr_1fr] gap-10">
           <div className="space-y-8">
             <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">Direct answer</span>
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">Direct answer</span>
               <p className="text-slate-700 text-base leading-relaxed">
                 {directAnswerLine || directAnswer || 'This rule sets baseline expectations for how communities operate and what families can ask about during tours. We are compiling the latest state guidance for this topic.'}
               </p>
@@ -440,7 +462,7 @@ export const StateRegulationTopicPage: React.FC = () => {
             </section>
 
             <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">SilverTech explanation</span>
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">SilverTech explanation</span>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {silverTechInsight ? `${insightLead} ${silverTechInsight}` : 'Use this section to understand how the rule is applied in real day-to-day operations.'}
               </p>
@@ -458,8 +480,8 @@ export const StateRegulationTopicPage: React.FC = () => {
             </section>
 
             <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">Questions you can ask</span>
-              <p className="text-xs text-slate-500 mb-3">
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">Questions you can ask</span>
+              <p className="text-sm text-slate-600 mb-3">
                 When you visit or call a community, these questions can help you understand how the rules are applied in real life.
               </p>
               <div className="space-y-2 text-sm text-slate-600">
@@ -473,11 +495,11 @@ export const StateRegulationTopicPage: React.FC = () => {
             </section>
 
             <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">Quick facts</span>
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">Quick facts</span>
               <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
                 {quickFacts.map((fact) => (
                   <div key={fact.label} className="border border-slate-200 rounded-xl p-4 bg-warm-gray/60">
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">{fact.label}</p>
+                    <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">{fact.label}</p>
                     {fact.href ? (
                       <a href={fact.href} target="_blank" rel="noreferrer" className="text-sm font-semibold text-charcoal hover:text-gold">
                         {fact.value}
@@ -488,18 +510,18 @@ export const StateRegulationTopicPage: React.FC = () => {
                   </div>
                 ))}
                 <div className="border border-slate-200 rounded-xl p-4 bg-warm-gray/60">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Inspection cadence</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Inspection cadence</p>
                   <p className="text-sm font-semibold text-charcoal">{inspectionCadence || 'See state inspection guidance'}</p>
                 </div>
                 <div className="border border-slate-200 rounded-xl p-4 bg-warm-gray/60">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Last reviewed</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Last reviewed</p>
                   <p className="text-sm font-semibold text-charcoal">{updatedLabel}</p>
                 </div>
               </div>
             </section>
 
             <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">Official wording</span>
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">Official wording</span>
               {loading ? (
                 <p className="text-slate-500 text-sm">Loading official guidance...</p>
               ) : hasTopicContent ? (
@@ -582,7 +604,7 @@ export const StateRegulationTopicPage: React.FC = () => {
             )}
           </aside>
         </div>
-        <div className="mt-10 text-xs text-slate-500">
+        <div className="mt-10 text-sm text-slate-600">
           SilverTech reviews state regulatory sources regularly to keep this information accurate and current.
         </div>
       </div>

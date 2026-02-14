@@ -14,15 +14,15 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props
 }) => {
-  const baseStyles = "inline-flex items-center justify-center border font-medium rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2";
+  const baseStyles = "inline-flex items-center justify-center border font-medium rounded-md transition-all duration-200 min-h-[2.75rem] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900";
 
   const variants = {
-    primary: "border-transparent text-white bg-charcoal hover:bg-black focus:ring-charcoal shadow-sm",
-    secondary: "border-transparent text-primary-700 bg-primary-100 hover:bg-primary-200 focus:ring-primary-500",
-    outline: "border-warm-gray text-charcoal bg-white hover:bg-warm-gray focus:ring-primary-500",
-    white: "border-transparent text-charcoal bg-white hover:bg-warm-gray focus:ring-white",
-    "outline-white": "border-white text-white bg-transparent hover:bg-white/10 focus:ring-white",
-    ghost: "border-transparent text-charcoal/70 hover:text-charcoal hover:bg-warm-gray focus:ring-primary-500",
+    primary: "border-transparent text-white bg-charcoal hover:bg-black shadow-sm",
+    secondary: "border-transparent text-primary-700 bg-primary-100 hover:bg-primary-200",
+    outline: "border-warm-gray text-charcoal bg-white hover:bg-warm-gray",
+    white: "border-transparent text-charcoal bg-white hover:bg-warm-gray",
+    "outline-white": "border-white text-white bg-transparent hover:bg-white/10",
+    ghost: "border-transparent text-charcoal/70 hover:text-charcoal hover:bg-warm-gray",
   };
 
   const sizes = {

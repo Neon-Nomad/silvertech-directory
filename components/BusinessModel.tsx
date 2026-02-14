@@ -70,7 +70,7 @@ export const BusinessModel: React.FC = () => {
           </div>
           <h3 className="text-lg font-bold text-white mb-2">Layer 4: Data Intel</h3>
           <p className="text-sm text-slate-400 font-medium mb-4 uppercase tracking-wide">The Exit Play</p>
-          <p className="text-sm italic text-slate-300 mb-4">"The Bloomberg Terminal for Senior Living"</p>
+          <p className="text-sm italic text-slate-300 mb-4">"A trusted data layer for better senior living decisions"</p>
           <ul className="space-y-3 mb-8 flex-grow">
             {['Real-time Pricing APIs', 'Demand Heat Maps', 'Vacancy Insights', 'Sold to REITs & PE'].map((feature, i) => (
               <li key={i} className="flex items-start text-sm text-slate-300">

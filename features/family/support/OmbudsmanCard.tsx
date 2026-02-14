@@ -14,7 +14,7 @@ export const OmbudsmanCard: React.FC<OmbudsmanCardProps> = ({ program, variant =
         <Shield className="w-6 h-6 text-primary-700 flex-shrink-0 mt-0.5" />
         <div>
           <h3 className="font-bold text-primary-900">Consumer Protection</h3>
-          <p className="text-xs text-primary-700">Official State Ombudsman</p>
+          <p className="text-sm text-primary-700">Official State Ombudsman</p>
         </div>
       </div>
       
@@ -27,7 +27,7 @@ export const OmbudsmanCard: React.FC<OmbudsmanCardProps> = ({ program, variant =
           <div className="flex items-start gap-3">
             <Phone className="w-4 h-4 text-slate-400 mt-1" />
             <div>
-              <p className="text-xs font-medium text-slate-500 uppercase">Phone</p>
+              <p className="text-sm font-medium text-slate-600 uppercase">Phone</p>
               <a href={`tel:${program.phone}`} className="text-slate-900 font-semibold hover:text-primary-600">
                 {program.phone}
               </a>
@@ -38,7 +38,7 @@ export const OmbudsmanCard: React.FC<OmbudsmanCardProps> = ({ program, variant =
             <div className="flex items-start gap-3">
               <Mail className="w-4 h-4 text-slate-400 mt-1" />
               <div>
-                <p className="text-xs font-medium text-slate-500 uppercase">Email</p>
+                <p className="text-sm font-medium text-slate-600 uppercase">Email</p>
                 <a href={`mailto:${program.email}`} className="text-slate-900 font-medium hover:text-primary-600 break-all">
                   {program.email}
                 </a>
@@ -49,7 +49,7 @@ export const OmbudsmanCard: React.FC<OmbudsmanCardProps> = ({ program, variant =
           <div className="flex items-start gap-3">
             <Globe className="w-4 h-4 text-slate-400 mt-1" />
             <div>
-              <p className="text-xs font-medium text-slate-500 uppercase">Website</p>
+              <p className="text-sm font-medium text-slate-600 uppercase">Website</p>
               <a 
                 href={program.website} 
                 target="_blank" 
@@ -65,7 +65,7 @@ export const OmbudsmanCard: React.FC<OmbudsmanCardProps> = ({ program, variant =
             <div className="flex items-start gap-3 pt-2 border-t border-slate-100">
               <MapPin className="w-4 h-4 text-slate-400 mt-1" />
               <div>
-                <p className="text-xs font-medium text-slate-500 uppercase">Office Address</p>
+                <p className="text-sm font-medium text-slate-600 uppercase">Office Address</p>
                 <p className="text-sm text-slate-700">{program.address}</p>
               </div>
             </div>

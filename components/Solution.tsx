@@ -9,7 +9,7 @@ export const Solution: React.FC = () => {
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
             Not a Listing Site.<br />
-            <span className="text-primary-600">A Vertical Operating System.</span>
+            <span className="text-primary-600">A trusted Senior Living Directory.</span>
           </h2>
           <p className="text-lg text-slate-600 mb-8 leading-relaxed">
             SilverTech Directory replaces the middleman with infrastructure. We connect supply and demand directly through a SaaS-enabled marketplace powered by real-time state licensing data.

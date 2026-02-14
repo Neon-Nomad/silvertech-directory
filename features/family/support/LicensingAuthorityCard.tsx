@@ -14,7 +14,7 @@ export const LicensingAuthorityCard: React.FC<LicensingAuthorityCardProps> = ({ 
         <Building2 className="w-6 h-6 text-slate-700 flex-shrink-0 mt-0.5" />
         <div>
           <h3 className="font-bold text-slate-900">State Licensing Authority</h3>
-          <p className="text-xs text-slate-500">Official Regulatory Agency</p>
+          <p className="text-sm text-slate-600">Official Regulatory Agency</p>
         </div>
       </div>
       
@@ -27,7 +27,7 @@ export const LicensingAuthorityCard: React.FC<LicensingAuthorityCardProps> = ({ 
           <div className="flex items-start gap-3">
             <Phone className="w-4 h-4 text-slate-400 mt-1" />
             <div>
-              <p className="text-xs font-medium text-slate-500 uppercase">Agency Phone</p>
+              <p className="text-sm font-medium text-slate-600 uppercase">Agency Phone</p>
               <a href={`tel:${authority.phone}`} className="text-slate-900 font-semibold hover:text-primary-600">
                 {authority.phone}
               </a>
@@ -37,7 +37,7 @@ export const LicensingAuthorityCard: React.FC<LicensingAuthorityCardProps> = ({ 
           <div className="flex items-start gap-3">
             <FileText className="w-4 h-4 text-slate-400 mt-1" />
             <div>
-              <p className="text-xs font-medium text-slate-500 uppercase">License Verification</p>
+              <p className="text-sm font-medium text-slate-600 uppercase">License Verification</p>
               <a 
                 href={authority.website_url} 
                 target="_blank" 
@@ -52,7 +52,7 @@ export const LicensingAuthorityCard: React.FC<LicensingAuthorityCardProps> = ({ 
           <div className="flex items-start gap-3">
             <AlertTriangle className="w-4 h-4 text-amber-500 mt-1" />
             <div>
-              <p className="text-xs font-medium text-slate-500 uppercase">Complaints</p>
+              <p className="text-sm font-medium text-slate-600 uppercase">Complaints</p>
               <a 
                 href={authority.complaint_intake_url} 
                 target="_blank" 

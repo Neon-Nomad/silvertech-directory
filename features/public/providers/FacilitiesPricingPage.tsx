@@ -1,107 +1,218 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useNavigate } from 'react-router-dom';
-import { BadgeCheck, BarChart3, ShieldCheck, Star, Headphones, Building2, Sparkles } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
-import { Card } from '@/components/ui/Card';
+import { useNavigate, Link } from 'react-router-dom';
+import {
+  BadgeCheck,
+  BarChart3,
+  ShieldCheck,
+  Star,
+  TrendingUp,
+  Building2,
+  Sparkles,
+  Target,
+  Crown,
+  Lock,
+  UserCheck,
+  Zap,
+  LayoutGrid,
+  ArrowRight,
+} from 'lucide-react';
+
+const plans = [
+  {
+    name: 'Protector',
+    price: { monthly: 99 },
+    href: '/claim-business',
+    description: 'Defend your brand and prove direct demand with attribution.',
+    features: [
+      { text: 'Verified Representative badge', icon: <UserCheck className="h-5 w-5" /> },
+      { text: 'Brand Protection (removes stale warning)', icon: <ShieldCheck className="h-5 w-5" /> },
+      { text: 'Attribution Suite with Verified Unique Interest', icon: <BarChart3 className="h-5 w-5" /> },
+    ],
+    mostPopular: false,
+  },
+  {
+    name: 'Accelerator',
+    price: { monthly: 249 },
+    href: '/claim-business',
+    description: 'Hunt new demand and improve conversion velocity.',
+    features: [
+      { text: 'No-results demand feed + Express Interest', icon: <TrendingUp className="h-5 w-5" /> },
+      { text: 'Priority ranking via profile health score', icon: <Star className="h-5 w-5" /> },
+      { text: 'Schedule a Tour CTA on search cards', icon: <Target className="h-5 w-5" /> },
+      { text: 'All Protector features included', icon: <BadgeCheck className="h-5 w-5" /> },
+    ],
+    mostPopular: true,
+  },
+  {
+    name: 'Dominator',
+    price: { monthly: 499 },
+    href: '/claim-business',
+    description: 'Operate with market intelligence and custom value proofs.',
+    features: [
+      { text: 'Competitive comparison intelligence', icon: <BarChart3 className="h-5 w-5" /> },
+      { text: 'Custom ROI modeling from actual rent', icon: <Crown className="h-5 w-5" /> },
+      { text: 'Featured authority with pinned and recommended Q&A', icon: <LayoutGrid className="h-5 w-5" /> },
+      { text: 'All Accelerator features included', icon: <BadgeCheck className="h-5 w-5" /> },
+    ],
+    mostPopular: false,
+  },
+];
 
 export const FacilitiesPricingPage: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-warm-gray text-slate-900">
+    <div className="relative min-h-screen w-full overflow-x-hidden bg-slate-900 font-sans text-white">
       <Helmet>
         <title>Pricing | SilverTech Partners</title>
         <meta
           name="description"
           content="Choose the SilverTech plan that fits your community. Transparent pricing, verified listings, and premium placement options."
         />
-        <link rel="canonical" href="https://silvertechdirectory.com/pricing" />
+        <link rel="canonical" href="https://silvertechdirectory.com/for-facilities/pricing" />
       </Helmet>
 
-      <header className="sticky top-0 z-40 bg-warm-gray/95 backdrop-blur-md border-b border-slate-200 px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-primary-500 rounded-md flex items-center justify-center">
-            <Building2 className="w-4 h-4 text-white" />
-          </div>
-          <span className="font-semibold text-lg tracking-tight">SilverTech</span>
+      {/* Background Aurora */}
+      <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
+        <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[150%] h-[150%]">
+          <div className="absolute w-full h-full inset-0 bg-[radial-gradient(circle_400px_at_50%_300px,#3b82f640,transparent)]"></div>
+          <div className="absolute w-full h-full inset-0 bg-[radial-gradient(circle_400px_at_50%_800px,#a855f750,transparent)] opacity-70"></div>
         </div>
-        <Button variant="outline" size="sm" className="px-4 py-2 text-xs uppercase tracking-widest border-slate-300" onClick={() => navigate('/for-facilities')}>
-          Back
-        </Button>
-      </header>
+      </div>
 
-      <main className="max-w-5xl mx-auto px-6 py-12 space-y-12">
-        <section className="text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-semibold text-slate-900 leading-tight mb-4">
-            Choose Your Plan
+      <div className="relative z-10">
+        {/* Header */}
+        <header className="sticky top-0 z-40 bg-slate-900/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex items-center justify-between">
+            <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-primary-500 rounded-md flex items-center justify-center">
+                    <Building2 className="w-4 h-4 text-white" />
+                </div>
+                <span className="font-semibold text-lg tracking-tight text-white">SilverTech</span>
+            </div>
+            <Link to="/for-facilities" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border border-white/20 hover:bg-white/10 h-9 px-4 py-2 relative text-white">
+                Back to Facilities Hub
+            </Link>
+        </header>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
+          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-b from-white/90 to-white/60">
+            Choose Your Partnership
           </h1>
-          <p className="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+          <p className="mt-6 max-w-3xl mx-auto text-lg text-slate-300">
             Transparent pricing for communities that value verified data, honest visibility, and qualified leads.
           </p>
-        </section>
+        </div>
+        
+        {/* Pricing Cards */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+            {plans.map((plan) => (
+              <div 
+                key={plan.name} 
+                className={`relative flex flex-col rounded-3xl p-8 transition-transform duration-300 ease-in-out hover:scale-[1.03]
+                  ${plan.mostPopular 
+                    ? 'bg-slate-800/50 border-2 border-primary-500/80 shadow-[0_0_30px_theme(colors.primary.500/0.4)]' 
+                    : 'bg-slate-900/50 border border-white/20'
+                  }
+                  ${!plan.mostPopular ? 'backdrop-blur-xl' : 'backdrop-blur-2xl'}`
+                }>
 
-        <section className="grid md:grid-cols-2 gap-6 items-stretch">
-          <Card className="border border-slate-200">
-            <div className="flex items-center justify-between mb-3">
-              <span className="font-semibold text-lg">Free</span>
-              <span className="text-xs uppercase tracking-widest text-slate-400">Standard listing</span>
-            </div>
-            <p className="text-sm text-slate-600 mb-4">
-              Keep a basic presence in the directory while you evaluate the platform.
-            </p>
-            <ul className="text-sm text-slate-600 space-y-2">
-              <li>Basic facility details</li>
-              <li>Standard search indexing</li>
-              <li>Community profile page</li>
-            </ul>
-            <Button
-              variant="outline"
-              className="w-full mt-6 border-slate-300"
-              onClick={() => navigate('/for-facilities#claim-listing')}
-            >
-              Claim Listing
-            </Button>
-          </Card>
+                {plan.mostPopular && (
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                      <div className="flex items-center gap-x-2 rounded-full bg-primary-500 px-4 py-1.5 text-sm font-semibold text-white shadow-md">
+                          <Star className="h-4 w-4" />
+                          Most Popular
+                      </div>
+                  </div>
+                )}
+                
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold leading-7 text-white">{plan.name}</h3>
+                  <p className="mt-2 text-sm leading-6 text-slate-300">{plan.description}</p>
+                  
+                  <div className="mt-6 flex items-baseline gap-x-2">
+                    <span className="text-5xl font-bold tracking-tight text-white">${plan.price.monthly}</span>
+                    <span className="text-base font-semibold leading-7 text-slate-300">/month</span>
+                  </div>
+                  
+                  <ul role="list" className="mt-8 space-y-4">
+                    {plan.features.map((feature) => (
+                      <li key={feature.text} className="flex items-center gap-x-3">
+                        <div className={`flex h-7 w-7 flex-none items-center justify-center rounded-lg ${plan.mostPopular ? 'bg-primary-500/20 text-primary-400' : 'bg-white/10 text-slate-300'}`}>
+                          {feature.icon}
+                        </div>
+                        <span className="text-sm leading-6 text-slate-200">{feature.text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
-          <Card className="border-2 border-primary-500 shadow-md bg-white">
-            <div className="flex items-center justify-between mb-3">
-              <span className="font-semibold text-lg text-primary-700">Premium</span>
-              <span className="text-[10px] uppercase tracking-widest bg-primary-100 text-primary-700 px-2 py-1 rounded-full">
-                Most Popular
-              </span>
-            </div>
-            <p className="text-sm text-slate-600 mb-4">
-              Upgrade for verified visibility, higher placement, and actionable lead insights.
-            </p>
-            <ul className="text-sm text-slate-700 space-y-2">
-              <li className="flex items-center gap-2"><BadgeCheck className="w-4 h-4 text-primary-600" /> Verified partner badge</li>
-              <li className="flex items-center gap-2"><Star className="w-4 h-4 text-primary-600" /> Priority placement</li>
-              <li className="flex items-center gap-2"><BarChart3 className="w-4 h-4 text-primary-600" /> Lead analytics dashboard</li>
-              <li className="flex items-center gap-2"><Headphones className="w-4 h-4 text-primary-600" /> Dedicated success manager</li>
-              <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-primary-600" /> Verified pricing support</li>
-            </ul>
-            <Button
-              variant="primary"
-              className="w-full mt-6"
-              onClick={() => navigate('/for-facilities#claim-listing')}
-            >
-              Start Premium
-            </Button>
-          </Card>
-        </section>
-
-        <section className="bg-slate-900 text-white rounded-2xl p-8">
-          <div className="flex items-center gap-3 mb-4">
-            <Sparkles className="w-6 h-6 text-primary-400" />
-            <h2 className="text-2xl font-serif font-semibold">Why partners choose SilverTech</h2>
+                <Link 
+                  to={plan.href} 
+                  className={`mt-8 block rounded-lg py-3 px-3.5 text-center text-sm font-semibold transition-colors
+                    ${plan.mostPopular 
+                      ? 'bg-gradient-to-br from-primary-500 to-blue-500 text-white shadow-lg hover:from-primary-600' 
+                      : 'bg-white/10 text-white hover:bg-white/20'}`
+                  }>
+                  Get Started
+                </Link>
+              </div>
+            ))}
           </div>
-          <p className="text-white/80 leading-relaxed">
-            We focus on trust, verified data, and measurable outcomes — not pay-to-play rankings. Every upgrade improves
-            transparency for families and quality leads for your team.
-          </p>
-        </section>
-      </main>
+        </div>
+        
+        {/* Free Plan Section - Adapted from original Free Hook */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+            <div className="bg-slate-900/50 border border-white/20 backdrop-blur-xl rounded-3xl p-8 text-center grid lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                    Every Community Gets a Free Listing
+                  </h2>
+                  <p className="mt-4 text-lg text-slate-300">
+                    Maintain a basic presence and engage with our platform at no cost.
+                  </p>
+                  <ul className="mt-6 space-y-4 text-left">
+                    <li className="flex gap-x-3 items-center">
+                        <BadgeCheck className="h-6 w-6 flex-none text-white/50" />
+                        <span className="text-slate-200">Basic facility details & contact info</span>
+                    </li>
+                    <li className="flex gap-x-3 items-center">
+                        <Lock className="h-6 w-6 flex-none text-white/50" />
+                        <span className="text-slate-200">Standard search indexing & Public Transparency Score</span>
+                    </li>
+                    <li className="flex gap-x-3 items-center">
+                        <Zap className="h-6 w-6 flex-none text-white/50" />
+                        <span className="text-slate-200">Lead Pulse visibility after claim login</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="mt-8 lg:mt-0">
+                    <h3 className="text-xl font-semibold text-white">Claim Your Free Listing</h3>
+                    <p className="mt-2 text-slate-300">Verify your community's information and start connecting with families today.</p>
+                    <Link to="/claim-business" className="mt-6 inline-flex items-center gap-x-2 rounded-lg py-3 px-4 text-sm font-semibold transition-colors bg-white/10 text-white hover:bg-white/20">
+                        Claim Now <ArrowRight className="h-4 w-4" />
+                    </Link>
+                </div>
+            </div>
+        </div>
+
+        {/* Why Partners Choose Us */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+            <div className="bg-slate-900/50 border border-white/20 backdrop-blur-xl rounded-3xl p-8 flex flex-col sm:flex-row items-center gap-8">
+                <div className="flex-shrink-0">
+                    <Sparkles className="w-12 h-12 text-primary-400" />
+                </div>
+                <div>
+                    <h2 className="text-2xl font-semibold text-white">Why partners choose SilverTech</h2>
+                    <p className="mt-2 text-slate-300 leading-relaxed">
+                        We focus on trust, verified data, and measurable outcomes — not pay-to-play rankings. Every upgrade improves transparency for families and provides quality leads for your team.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+      </div>
     </div>
   );
 };

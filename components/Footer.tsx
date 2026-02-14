@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from './ui/Button';
 
 export const Footer: React.FC = () => {
@@ -32,21 +33,21 @@ export const Footer: React.FC = () => {
           <div className="mb-4 md:mb-0 text-xs text-charcoal/60">
             SilverTech never profits from your decision. Facilities pay a subscription, not referral fees.
           </div>
-          <a href="/products" className="hover:text-primary-600 transition-colors">
+          <Link to="/products" className="hover:text-primary-600 transition-colors">
             Product Catalog
-          </a>
-          <a href="/honest-care" className="hover:text-primary-600 transition-colors">
+          </Link>
+          <Link to="/honest-care" className="hover:text-primary-600 transition-colors">
             Honest Care Policy
-          </a>
-          <a href="/methodology" className="hover:text-primary-600 transition-colors">
+          </Link>
+          <Link to="/methodology" className="hover:text-primary-600 transition-colors">
             Methodology
-          </a>
-          <a href="/for-facilities" className="hover:text-primary-600 transition-colors">
+          </Link>
+          <Link to="/for-facilities" className="hover:text-primary-600 transition-colors">
             For Facilities
-          </a>
-          <a href="/editorial-policy" className="hover:text-primary-600 transition-colors">
+          </Link>
+          <Link to="/editorial-policy" className="hover:text-primary-600 transition-colors">
             Editorial Policy
-          </a>
+          </Link>
           <a href="mailto:andrew@silvertechdirectory.com" className="hover:text-primary-600 transition-colors">
             andrew@silvertechdirectory.com
           </a>

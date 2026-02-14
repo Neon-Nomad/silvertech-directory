@@ -1,67 +1,64 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { Elements } from '@stripe/react-stripe-js';
 import { stripePromise } from '@/src/lib/stripe';
 import Navbar from '@/components/layout/Navbar';
-
-import DirectorySearch from '@/features/family/discovery/DirectorySearch';
-import OperatorDashboard from '@/features/operator/dashboard/OperatorDashboard';
-import OperatorLogin from '@/features/auth/OperatorLogin';
-import PricingAudit from '@/features/public/wedge-tools/PricingAudit';
-import CareFinderSurvey from '@/features/family/survey/CareFinderSurvey';
-import SurveyResults from '@/features/family/survey/SurveyResults';
-import { ClaimFacilityPage } from '@/features/operator/ClaimFacilityPage';
-import { EditFacility } from '@/features/operator/dashboard/EditFacility';
-import { ClaimBusiness } from '@/features/operator/claim/ClaimBusiness';
-import { StatePageTemplate } from '@/features/locations/StatePageTemplate';
-import { CaliforniaPage } from '@/features/locations/CaliforniaPage';
-import { IndianaPage } from '@/features/locations/IndianaPage';
-import { PricingPage } from '@/features/public/pricing/PricingPage';
-import { ForProvidersPage } from '@/features/public/providers/ForProvidersPage';
-import { ContactSalesPage } from '@/features/public/providers/ContactSalesPage';
-import { FacilitiesPartnerPage } from '@/features/public/providers/FacilitiesPartnerPage';
-import { FacilitiesPricingPage } from '@/features/public/providers/FacilitiesPricingPage';
-import { ProductsHub } from '@/src/pages/products';
-import { CategoryPage } from '@/src/pages/products/CategoryPage';
-import { AffiliateProductPage } from '@/src/pages/products/AffiliateProductPage';
-import { StatesDirectoryPage } from '@/features/locations/StatesDirectoryPage';
-import { CityPageTemplate } from '@/features/locations/CityPageTemplate';
-import { FAQ } from '@/features/family/support/FAQ';
-import { AdvertiseWithUs } from '@/features/public/advertise/AdvertiseWithUs';
-import { HonestCarePage } from '@/features/public/transparency/HonestCarePage';
-import { MethodologyPage } from '@/features/public/transparency/MethodologyPage';
-import { Blog } from './features/public/blog/Blog';
-import { LocationPage } from '@/features/seo/LocationPage';
-import { StateHubHome } from '@/features/locations/hub/StateHubHome';
-import { StateMedicaidPage } from '@/features/locations/hub/StateMedicaidPage';
-import { StateRegulatoryHub } from '@/features/regulatory/StateRegulatoryHub';
-import { StateRulesPage } from '@/features/locations/hub/StateRulesPage';
-import { StateOmbudsmanPage } from '@/features/locations/hub/StateOmbudsmanPage';
-import { StateVeteransPage } from '@/features/locations/hub/StateVeteransPage';
-import { RegulatoryLibrary } from '@/features/regulatory/RegulatoryLibrary';
-import { StateRegulationTopicPage } from '@/features/regulatory/StateRegulationTopicPage';
-import { AboutPage } from '@/features/public/company/AboutPage';
-import { ContactPage } from '@/features/public/company/ContactPage';
-import { EditorialPolicyPage } from '@/features/public/company/EditorialPolicyPage';
-import { ResourcePage } from '@/features/resources/ResourcePage';
-import EmotionalSupportCatalog from '@/features/resources/EmotionalSupportCatalog';
-import { HowToChooseGuide } from '@/features/resources/HowToChooseGuide';
-import { CostsGuide } from '@/features/resources/CostsGuide';
-import { TourQuestionsGuide } from '@/features/resources/TourQuestionsGuide';
-
 import { Home } from '@/features/family/landing/Home';
-import { FacilityDetails } from '@/features/family/discovery/FacilityDetails';
-
 import { ScrollToTop } from '@/components/utils/ScrollToTop';
-
 import { ComparisonProvider } from '@/src/context/ComparisonContext';
 import { GlobalSchema } from '@/components/seo/GlobalSchema';
 import { LocationPrompt } from '@/components/ui/LocationPrompt';
-
 import { AuthProvider } from '@/src/context/AuthProvider';
-import { LoginPage } from '@/features/auth/LoginPage';
-import { SignUpPage } from '@/features/auth/SignUpPage';
+
+const DirectorySearch = lazy(() => import('@/features/family/discovery/DirectorySearch'));
+const OperatorDashboard = lazy(() => import('@/features/operator/dashboard/OperatorDashboard'));
+const OperatorLogin = lazy(() => import('@/features/auth/OperatorLogin'));
+const PricingAudit = lazy(() => import('@/features/public/wedge-tools/PricingAudit'));
+const CareFinderSurvey = lazy(() => import('@/features/family/survey/CareFinderSurvey'));
+const SurveyResults = lazy(() => import('@/features/family/survey/SurveyResults'));
+const ClaimFacilityPage = lazy(() => import('@/features/operator/ClaimFacilityPage').then((m) => ({ default: m.ClaimFacilityPage })));
+const EditFacility = lazy(() => import('@/features/operator/dashboard/EditFacility').then((m) => ({ default: m.EditFacility })));
+const ClaimBusiness = lazy(() => import('@/features/operator/claim/ClaimBusiness').then((m) => ({ default: m.ClaimBusiness })));
+const StatePageTemplate = lazy(() => import('@/features/locations/StatePageTemplate').then((m) => ({ default: m.StatePageTemplate })));
+const CaliforniaPage = lazy(() => import('@/features/locations/CaliforniaPage').then((m) => ({ default: m.CaliforniaPage })));
+const IndianaPage = lazy(() => import('@/features/locations/IndianaPage').then((m) => ({ default: m.IndianaPage })));
+const PricingPage = lazy(() => import('@/features/public/pricing/PricingPage').then((m) => ({ default: m.PricingPage })));
+const ForProvidersPage = lazy(() => import('@/features/public/providers/ForProvidersPage').then((m) => ({ default: m.ForProvidersPage })));
+const ContactSalesPage = lazy(() => import('@/features/public/providers/ContactSalesPage').then((m) => ({ default: m.ContactSalesPage })));
+const FacilitiesPartnerPage = lazy(() => import('@/features/public/providers/FacilitiesPartnerPage').then((m) => ({ default: m.FacilitiesPartnerPage })));
+const FacilitiesPricingPage = lazy(() => import('@/features/public/providers/FacilitiesPricingPage').then((m) => ({ default: m.FacilitiesPricingPage })));
+const ProductsHub = lazy(() => import('@/src/pages/products').then((m) => ({ default: m.ProductsHub })));
+const CategoryPage = lazy(() => import('@/src/pages/products/CategoryPage').then((m) => ({ default: m.CategoryPage })));
+const AffiliateProductPage = lazy(() => import('@/src/pages/products/AffiliateProductPage').then((m) => ({ default: m.AffiliateProductPage })));
+const StatesDirectoryPage = lazy(() => import('@/features/locations/StatesDirectoryPage').then((m) => ({ default: m.StatesDirectoryPage })));
+const CityPageTemplate = lazy(() => import('@/features/locations/CityPageTemplate').then((m) => ({ default: m.CityPageTemplate })));
+const FAQ = lazy(() => import('@/features/family/support/FAQ').then((m) => ({ default: m.FAQ })));
+const AdvertiseWithUs = lazy(() => import('@/features/public/advertise/AdvertiseWithUs').then((m) => ({ default: m.AdvertiseWithUs })));
+const HonestCarePage = lazy(() => import('@/features/public/transparency/HonestCarePage').then((m) => ({ default: m.HonestCarePage })));
+const MethodologyPage = lazy(() => import('@/features/public/transparency/MethodologyPage').then((m) => ({ default: m.MethodologyPage })));
+const Blog = lazy(() => import('./features/public/blog/Blog').then((m) => ({ default: m.Blog })));
+const LocationPage = lazy(() => import('@/features/seo/LocationPage').then((m) => ({ default: m.LocationPage })));
+const StateHubHome = lazy(() => import('@/features/locations/hub/StateHubHome').then((m) => ({ default: m.StateHubHome })));
+const StateMedicaidPage = lazy(() => import('@/features/locations/hub/StateMedicaidPage').then((m) => ({ default: m.StateMedicaidPage })));
+const StateRegulatoryHub = lazy(() => import('@/features/regulatory/StateRegulatoryHub').then((m) => ({ default: m.StateRegulatoryHub })));
+const StateRulesPage = lazy(() => import('@/features/locations/hub/StateRulesPage').then((m) => ({ default: m.StateRulesPage })));
+const StateOmbudsmanPage = lazy(() => import('@/features/locations/hub/StateOmbudsmanPage').then((m) => ({ default: m.StateOmbudsmanPage })));
+const StateVeteransPage = lazy(() => import('@/features/locations/hub/StateVeteransPage').then((m) => ({ default: m.StateVeteransPage })));
+const RegulatoryLibrary = lazy(() => import('@/features/regulatory/RegulatoryLibrary').then((m) => ({ default: m.RegulatoryLibrary })));
+const StateRegulationTopicPage = lazy(() => import('@/features/regulatory/StateRegulationTopicPage').then((m) => ({ default: m.StateRegulationTopicPage })));
+const AboutPage = lazy(() => import('@/features/public/company/AboutPage').then((m) => ({ default: m.AboutPage })));
+const ContactPage = lazy(() => import('@/features/public/company/ContactPage').then((m) => ({ default: m.ContactPage })));
+const EditorialPolicyPage = lazy(() => import('@/features/public/company/EditorialPolicyPage').then((m) => ({ default: m.EditorialPolicyPage })));
+const CommunityGuidelinesPage = lazy(() => import('@/features/public/company/CommunityGuidelinesPage').then((m) => ({ default: m.CommunityGuidelinesPage })));
+const ResourcePage = lazy(() => import('@/features/resources/ResourcePage').then((m) => ({ default: m.ResourcePage })));
+const EmotionalSupportCatalog = lazy(() => import('@/features/resources/EmotionalSupportCatalog'));
+const HowToChooseGuide = lazy(() => import('@/features/resources/HowToChooseGuide').then((m) => ({ default: m.HowToChooseGuide })));
+const CostsGuide = lazy(() => import('@/features/resources/CostsGuide').then((m) => ({ default: m.CostsGuide })));
+const TourQuestionsGuide = lazy(() => import('@/features/resources/TourQuestionsGuide').then((m) => ({ default: m.TourQuestionsGuide })));
+const FacilityDetails = lazy(() => import('@/features/family/discovery/FacilityDetails').then((m) => ({ default: m.FacilityDetails })));
+const LoginPage = lazy(() => import('@/features/auth/LoginPage').then((m) => ({ default: m.LoginPage })));
+const SignUpPage = lazy(() => import('@/features/auth/SignUpPage').then((m) => ({ default: m.SignUpPage })));
 
 // ...
 
@@ -106,6 +103,12 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { has
 }
 
 function App() {
+  const routeFallback = (
+    <div className="min-h-[60vh] flex items-center justify-center">
+      <div className="h-10 w-10 rounded-full border-2 border-slate-300 border-t-slate-700 animate-spin" />
+    </div>
+  );
+
   return (
     <ErrorBoundary>
       <HelmetProvider>
@@ -113,15 +116,23 @@ function App() {
           <ComparisonProvider>
             <Elements stripe={stripePromise}>
               <BrowserRouter basename={import.meta.env.BASE_URL} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+                <a
+                  href="#main-content"
+                  className="fixed -left-[9999px] top-auto z-[100] h-px w-px overflow-hidden whitespace-nowrap focus:left-4 focus:top-4 focus:h-auto focus:w-auto focus:overflow-visible focus:bg-white focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded focus:shadow-md"
+                >
+                  Skip to main content
+                </a>
                 <ScrollToTop />
                 <GlobalSchema />
                 <div className="min-h-screen bg-white">
                   <LocationPrompt />
                   <Navbar />
-                  <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/search" element={<DirectorySearch />} />
-                    <Route path="/facility/:id" element={<FacilityDetails />} />
+                  <main id="main-content">
+                    <Suspense fallback={routeFallback}>
+                      <Routes>
+                      <Route path="/" element={<Home />} />
+                      <Route path="/search" element={<DirectorySearch />} />
+                      <Route path="/facility/:id" element={<FacilityDetails />} />
 
                     {/* Auth Routes */}
                     <Route path="/login" element={<LoginPage />} />
@@ -141,7 +152,7 @@ function App() {
                     <Route path="/pricing" element={<PricingPage />} />
                     <Route path="/providers" element={<ForProvidersPage />} />
                     <Route path="/for-facilities" element={<FacilitiesPartnerPage />} />
-                    <Route path="/pricing" element={<FacilitiesPricingPage />} />
+                    <Route path="/for-facilities/pricing" element={<FacilitiesPricingPage />} />
                     <Route path="/products" element={<ProductsHub />} />
                     <Route path="/products/affiliate" element={<AffiliateProductPage />} />
                     <Route path="/products/:category" element={<CategoryPage />} />
@@ -152,6 +163,7 @@ function App() {
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
+                    <Route path="/community-guidelines" element={<CommunityGuidelinesPage />} />
                     <Route path="/resources/:type" element={<ResourcePage />} />
                     <Route path="/resources/emotional-support" element={<EmotionalSupportCatalog />} />
                     <Route path="/guides/how-to-choose" element={<HowToChooseGuide />} />
@@ -182,8 +194,10 @@ function App() {
                     <Route path="/advertise" element={<AdvertiseWithUs />} />
                     <Route path="/honest-care" element={<HonestCarePage />} />
                     <Route path="/methodology" element={<MethodologyPage />} />
-                    <Route path="/blog" element={<Blog />} />
-                  </Routes>
+                        <Route path="/blog" element={<Blog />} />
+                      </Routes>
+                    </Suspense>
+                  </main>
                 </div>
               </BrowserRouter>
             </Elements>

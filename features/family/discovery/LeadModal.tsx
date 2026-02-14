@@ -4,6 +4,8 @@ import { Button } from '@/components/ui/Button';
 import { X, Loader2, Send, Phone, Calendar, User, Mail, MessageSquare } from 'lucide-react';
 import { useAuth } from '@/src/context/AuthProvider';
 import { trackEvent } from '@/src/utils/analytics';
+import { useDialogFocusManagement } from '@/src/hooks/useDialogFocusManagement';
+import { useLeadTracking } from '@/src/hooks/useLeadTracking';
 
 interface LeadModalProps {
     isOpen: boolean;
@@ -18,7 +20,12 @@ export const LeadModal: React.FC<LeadModalProps> = ({
     facilityId,
     facilityName,
 }) => {
+    const dialogTitleId = 'lead-modal-title';
+    const dialogDescriptionId = 'lead-modal-description';
+    const formErrorId = 'lead-modal-error';
     const { user } = useAuth();
+    const { getSessionId, trackLeadEvent } = useLeadTracking();
+    const dialogRef = useDialogFocusManagement<HTMLDivElement>({ isOpen, onClose });
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState<string | null>(null);
@@ -48,12 +55,21 @@ export const LeadModal: React.FC<LeadModalProps> = ({
                 phone: formData.phone,
                 move_in_timeframe: formData.moveInTimeframe,
                 message: formData.message,
+                source: 'facility_inquiry',
+                session_id: getSessionId(),
+                metadata: {
+                    entry_point: 'lead_modal',
+                },
             });
 
             if (error) throw error;
 
             setSuccess(true);
             trackEvent('lead_submit_success', { facilityId });
+            await trackLeadEvent(facilityId, 'schedule_tour', {
+                source: 'lead_modal_submit',
+                moveInTimeframe: formData.moveInTimeframe,
+            });
         } catch (err: any) {
             console.error('Error submitting lead:', err);
             setError(err.message || 'Failed to submit inquiry. Please try again.');
@@ -65,12 +81,21 @@ export const LeadModal: React.FC<LeadModalProps> = ({
 
     if (success) {
         return (
-            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
-                <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md p-8 text-center transform transition-all scale-100">
+            <div
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby={dialogTitleId}
+                className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200"
+            >
+                <div
+                    ref={dialogRef}
+                    tabIndex={-1}
+                    className="bg-white rounded-2xl shadow-2xl w-full max-w-md p-8 text-center transform transition-all scale-100"
+                >
                     <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <Send className="w-8 h-8 text-primary-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-2">Inquiry Sent!</h3>
+                    <h3 id={dialogTitleId} className="text-2xl font-bold text-slate-900 mb-2">Inquiry Sent!</h3>
                     <p className="text-slate-600 mb-6">
                         Thank you for contacting <span className="font-semibold text-slate-900">{facilityName}</span>.
                         They have received your message and will be in touch shortly.
@@ -112,18 +137,27 @@ export const LeadModal: React.FC<LeadModalProps> = ({
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
-            <div className="bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden flex flex-col max-h-[90vh]">
+            <div
+                ref={dialogRef}
+                tabIndex={-1}
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby={dialogTitleId}
+                aria-describedby={dialogDescriptionId}
+                className="bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden flex flex-col max-h-[90vh]"
+            >
 
                 {/* Header */}
                 <div className="bg-primary-600 p-6 text-white flex justify-between items-start">
                     <div>
-                        <h3 className="text-xl font-bold">Contact Facility</h3>
-                        <p className="text-primary-100 text-sm mt-1">
+                        <h3 id={dialogTitleId} className="text-xl font-bold">Contact Facility</h3>
+                        <p id={dialogDescriptionId} className="text-primary-100 text-sm mt-1">
                             Request pricing & availability from {facilityName}
                         </p>
                     </div>
                     <button
                         onClick={onClose}
+                        aria-label="Close contact facility dialog"
                         className="text-white/80 hover:text-white hover:bg-white/10 p-2 rounded-full transition-colors"
                     >
                         <X className="h-5 w-5" />
@@ -134,7 +168,12 @@ export const LeadModal: React.FC<LeadModalProps> = ({
                 <div className="p-6 overflow-y-auto">
                     <form onSubmit={handleSubmit} className="space-y-5">
                         {error && (
-                            <div className="bg-red-50 text-red-600 text-sm p-4 rounded-xl border border-red-100 flex items-start gap-3">
+                            <div
+                                id={formErrorId}
+                                role="alert"
+                                aria-live="assertive"
+                                className="bg-red-50 text-red-600 text-sm p-4 rounded-xl border border-red-100 flex items-start gap-3"
+                            >
                                 <div className="mt-0.5"><X className="w-4 h-4" /></div>
                                 {error}
                             </div>
@@ -153,6 +192,8 @@ export const LeadModal: React.FC<LeadModalProps> = ({
                                     placeholder="Your full name"
                                     value={formData.name}
                                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                                    aria-invalid={Boolean(error)}
+                                    aria-describedby={error ? formErrorId : undefined}
                                 />
                             </div>
 
@@ -168,6 +209,8 @@ export const LeadModal: React.FC<LeadModalProps> = ({
                                     placeholder="(555) 123-4567"
                                     value={formData.phone}
                                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                                    aria-invalid={Boolean(error)}
+                                    aria-describedby={error ? formErrorId : undefined}
                                 />
                             </div>
                         </div>
@@ -184,6 +227,8 @@ export const LeadModal: React.FC<LeadModalProps> = ({
                                 placeholder="your@email.com"
                                 value={formData.email}
                                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                aria-invalid={Boolean(error)}
+                                aria-describedby={error ? formErrorId : undefined}
                             />
                         </div>
 
@@ -196,6 +241,8 @@ export const LeadModal: React.FC<LeadModalProps> = ({
                                 className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all bg-white"
                                 value={formData.moveInTimeframe}
                                 onChange={(e) => setFormData({ ...formData, moveInTimeframe: e.target.value })}
+                                aria-invalid={Boolean(error)}
+                                aria-describedby={error ? formErrorId : undefined}
                             >
                                 <option>Immediately</option>
                                 <option>Within 30 days</option>
@@ -215,6 +262,8 @@ export const LeadModal: React.FC<LeadModalProps> = ({
                                 className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all resize-none"
                                 value={formData.message}
                                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                                aria-invalid={Boolean(error)}
+                                aria-describedby={error ? formErrorId : undefined}
                             />
                         </div>
 

@@ -170,6 +170,27 @@ const stripMarkdown = (text: string) =>
     .replace(/\s+/g, ' ')
     .trim();
 
+const stripGeneratorAuditLines = (markdown: string) =>
+  markdown
+    .replace(/\r/g, '')
+    .split('\n')
+    .filter((line) => {
+      const trimmed = line.trim();
+      if (!trimmed) return true;
+      const normalized = trimmed.toLowerCase();
+      if (normalized.includes('word count')) return false;
+      if (normalized.includes('word count check')) return false;
+      if (normalized.includes('the content above is approximately') && normalized.includes('word')) return false;
+      if (normalized.includes('the generated content is approximately') && normalized.includes('word')) return false;
+      if (normalized.includes('meeting the minimum requirement') && normalized.includes('word')) return false;
+      if (normalized.includes('meeting the 2000+ word requirement')) return false;
+      if (normalized.includes('the structure is comprehensive') && normalized.includes('cites external sources')) return false;
+      return true;
+    })
+    .join('\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+
 const toPlainEnglish = (text: string) => {
   if (!text) return '';
   let output = stripMarkdown(text);
@@ -452,7 +473,7 @@ export const StateRegulatoryHub: React.FC = () => {
         {/* ── Hero ── */}
         <section className="bg-warm-gray border-b border-slate-200">
           <div className="max-w-[1200px] mx-auto px-6 py-16">
-            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold mb-4 block">
               Verified Authority
             </span>
             <h1 className="text-3xl md:text-4xl font-serif font-bold text-charcoal mb-6 leading-tight">
@@ -479,7 +500,7 @@ export const StateRegulatoryHub: React.FC = () => {
                 {keyFacts.map((fact) => (
                   <div key={fact.label} className="bg-white border border-slate-200 rounded-xl p-5">
                     <fact.icon className="w-5 h-5 text-gold mb-3" />
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">{fact.label}</p>
+                    <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-1">{fact.label}</p>
                     <p className="text-sm font-semibold text-charcoal leading-snug">{fact.value}</p>
                   </div>
                 ))}
@@ -491,14 +512,14 @@ export const StateRegulatoryHub: React.FC = () => {
         {/* ── Mobile TOC ── */}
         <div className="lg:hidden border-b border-slate-200">
           <div className="max-w-[1200px] mx-auto px-6 py-8">
-            <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold mb-6">On This Page</h2>
+            <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-gold mb-6">On This Page</h2>
             <div className="space-y-3">
               {SECTIONS.map((section) => (
                 <a key={section.id} href={`#${section.id}`} className="flex items-start gap-3 group">
                   <section.icon className="w-4 h-4 text-slate-400 group-hover:text-gold mt-0.5 transition-colors" />
                   <div>
                     <p className="text-sm font-semibold text-charcoal group-hover:text-gold transition-colors">{section.title}</p>
-                    <p className="text-xs text-slate-500">{section.description}</p>
+                    <p className="text-sm text-slate-600">{section.description}</p>
                   </div>
                 </a>
               ))}
@@ -513,7 +534,7 @@ export const StateRegulatoryHub: React.FC = () => {
             {/* Sticky Sidebar TOC — desktop */}
             <aside className="hidden lg:block w-64 flex-shrink-0">
               <div className="sticky top-24">
-                <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold mb-6">On This Page</h3>
+                <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-gold mb-6">On This Page</h3>
                 <nav className="space-y-1 relative">
                   {SECTIONS.map((section) => {
                     const isActive = activeSection === section.id;
@@ -532,7 +553,7 @@ export const StateRegulatoryHub: React.FC = () => {
                         <section.icon size={16} className={isActive ? 'text-gold' : 'text-slate-400'} />
                         <div>
                           <p>{section.title}</p>
-                          <p className="text-xs text-slate-500 font-normal">{section.description}</p>
+                          <p className="text-sm text-slate-600 font-normal">{section.description}</p>
                         </div>
                       </a>
                     );
@@ -547,12 +568,12 @@ export const StateRegulatoryHub: React.FC = () => {
                       onMouseLeave={handlePreviewLeave}
                     >
                       <div className="p-5">
-                        <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">
+                        <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">
                           In-Depth Guide
                         </span>
                         <p className="text-sm font-semibold text-charcoal mb-1">{TOPIC_GUIDES[hoverPreview].title}</p>
-                        <p className="text-xs text-slate-500 mb-3">{TOPIC_GUIDES[hoverPreview].caption}</p>
-                        <span className="inline-flex items-center gap-1 text-xs font-semibold text-gold uppercase tracking-widest">
+                        <p className="text-sm text-slate-600 mb-3">{TOPIC_GUIDES[hoverPreview].caption}</p>
+                        <span className="inline-flex items-center gap-1 text-sm font-semibold text-gold uppercase tracking-widest">
                           Read guide <ArrowRight className="w-3 h-3" />
                         </span>
                       </div>
@@ -567,7 +588,7 @@ export const StateRegulatoryHub: React.FC = () => {
 
               {/* Content sections */}
               {SECTIONS.filter((s) => s.contentKey !== null).map((section) => {
-                const content = data[section.contentKey!];
+                const content = stripGeneratorAuditLines(data[section.contentKey!]);
                 if (!content) return null;
                 const cards = parseRegulationCards(content);
                 const sectionSummary = cards[0]?.summary || section.description;
@@ -585,7 +606,7 @@ export const StateRegulatoryHub: React.FC = () => {
                   <section key={section.id} id={section.id} className="scroll-mt-28">
                     <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
                       {/* Section header */}
-                      <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">
+                      <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">
                         {section.title}
                       </span>
                       <h2 className="text-2xl font-serif font-bold text-charcoal mb-3 flex items-center gap-3">
@@ -615,7 +636,7 @@ export const StateRegulatoryHub: React.FC = () => {
                       {/* Questions to ask */}
                       {sectionQuestions.length > 0 && (
                         <div className="mt-8 border-t border-slate-100 pt-6">
-                          <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">
+                          <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-3">
                             Questions to ask about this
                           </p>
                           <ul className="space-y-2 text-sm text-slate-600">
@@ -660,7 +681,7 @@ export const StateRegulatoryHub: React.FC = () => {
                     <div className="mt-6 pt-4 border-t border-slate-100">
                       <a
                         href="#top"
-                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-400 hover:text-gold transition-colors uppercase tracking-widest"
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-500 hover:text-gold transition-colors uppercase tracking-widest"
                       >
                         <ArrowUp className="w-3.5 h-3.5" />
                         Back to top
@@ -674,7 +695,7 @@ export const StateRegulatoryHub: React.FC = () => {
               {hasContacts && (
                 <section id="contacts" className="scroll-mt-28">
                   <div className="bg-slate-900 rounded-2xl p-8 md:p-10 text-white">
-                    <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">
+                    <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">
                       Official Directory
                     </span>
                     <h2 className="text-2xl font-serif font-bold mb-8 flex items-center gap-3">
@@ -709,7 +730,7 @@ export const StateRegulatoryHub: React.FC = () => {
                     </div>
                   </div>
                   <div className="mt-6 pt-4 border-t border-slate-100">
-                    <a href="#top" className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-400 hover:text-gold transition-colors uppercase tracking-widest">
+                    <a href="#top" className="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-500 hover:text-gold transition-colors uppercase tracking-widest">
                       <ArrowUp className="w-3.5 h-3.5" />
                       Back to top
                     </a>
@@ -721,13 +742,13 @@ export const StateRegulatoryHub: React.FC = () => {
               {sourcesAndLinks.length > 0 && (
                 <section id="sources" className="scroll-mt-28">
                   <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-                    <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">Sources</span>
+                    <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">Sources</span>
                     <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">Official Sources</h2>
                     <div className="space-y-3">
                       {sourcesAndLinks.map((source) => (
                         <a key={source.label} href={source.url} target="_blank" rel="noreferrer" className="flex items-center justify-between gap-4 border border-slate-200 rounded-xl p-4 hover:border-gold transition-colors">
                           <span className="text-sm font-semibold text-charcoal">{source.label}</span>
-                          <span className="text-xs text-slate-400 uppercase tracking-widest flex items-center gap-1">
+                          <span className="text-sm text-slate-500 uppercase tracking-widest flex items-center gap-1">
                             Visit <ExternalLink size={12} />
                           </span>
                         </a>
@@ -741,7 +762,7 @@ export const StateRegulatoryHub: React.FC = () => {
               {stateDef && (
                 <section className="scroll-mt-28">
                   <div className="bg-warm-gray border border-slate-200 rounded-2xl p-6 md:p-8">
-                    <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold block mb-2">
+                    <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">
                       In-Depth Guides
                     </span>
                     <h2 className="text-xl font-serif font-bold text-charcoal mb-6">
@@ -757,7 +778,7 @@ export const StateRegulatoryHub: React.FC = () => {
                           <p className="text-sm font-semibold text-charcoal group-hover:text-gold transition-colors capitalize">
                             {slug.replace(/-/g, ' ')}
                           </p>
-                          <span className="inline-flex items-center gap-1 mt-2 text-xs text-slate-400 group-hover:text-gold transition-colors">
+                          <span className="inline-flex items-center gap-1 mt-2 text-sm text-slate-500 group-hover:text-gold transition-colors">
                             Read guide <ArrowRight className="w-3 h-3" />
                           </span>
                         </Link>
@@ -820,7 +841,7 @@ const RegulationCard: React.FC<{
 
     {official && (
       <details className="mt-4">
-        <summary className="text-xs font-semibold uppercase tracking-widest text-slate-500 cursor-pointer hover:text-gold transition-colors select-none">
+        <summary className="text-sm font-semibold uppercase tracking-widest text-slate-600 cursor-pointer hover:text-gold transition-colors select-none">
           Official regulation text
         </summary>
         <div className="mt-3 prose prose-sm prose-slate max-w-none prose-headings:font-serif prose-headings:text-charcoal prose-a:text-gold prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-blockquote:border-l-gold">
@@ -831,20 +852,20 @@ const RegulationCard: React.FC<{
 
     {plainEnglish && (
       <div className="mt-4">
-        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Plain-English summary</p>
+        <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Plain-English summary</p>
         <p className="text-sm text-slate-600">{plainEnglish}</p>
       </div>
     )}
 
     {insight && (
       <div className="mt-4 rounded-lg bg-gold/10 border border-gold/20 p-4">
-        <p className="text-[10px] font-bold uppercase tracking-widest text-gold mb-2">SilverTech Insight</p>
+        <p className="text-xs font-bold uppercase tracking-widest text-gold mb-2">SilverTech Insight</p>
         <p className="text-sm text-slate-700">{insight}</p>
       </div>
     )}
 
     {misunderstanding && (
-      <div className="mt-3 text-xs text-slate-500">
+      <div className="mt-3 text-sm text-slate-600">
         <span className="font-semibold uppercase tracking-widest text-slate-400 mr-2">Common misunderstanding:</span>
         {misunderstanding}
       </div>
@@ -853,14 +874,14 @@ const RegulationCard: React.FC<{
     {sources.length > 0 && (
       <div className="mt-4 flex flex-wrap gap-3">
         {sources.slice(0, 2).map((source) => (
-          <a key={source} href={source} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-xs font-semibold text-slate-500 hover:text-gold transition-colors">
+          <a key={source} href={source} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-gold transition-colors">
             <ExternalLink size={12} /> Source
           </a>
         ))}
       </div>
     )}
 
-    <div className="mt-4 text-xs text-slate-500 flex flex-wrap items-center gap-2">
+    <div className="mt-4 text-sm text-slate-600 flex flex-wrap items-center gap-2">
       <span className="uppercase tracking-widest text-slate-400">Source:</span>
       {sourceUrl ? (
         <a href={sourceUrl} target="_blank" rel="noreferrer" className="hover:text-gold transition-colors">{sourceLabel}</a>

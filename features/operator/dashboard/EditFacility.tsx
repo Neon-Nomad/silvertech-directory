@@ -247,7 +247,7 @@ export const EditFacility: React.FC = () => {
             </div>
 
             {/* Photos */}
-            <div onClick={fetchCounts} className="relative">
+            <div onClick={fetchCounts} onFocusCapture={fetchCounts} className="relative">
               {formData.plan === 'basic' && (
                 <div className="absolute inset-0 bg-white/60 backdrop-blur-[1px] z-10 flex flex-col items-center justify-center border border-slate-200 rounded-xl">
                   <div className="bg-white p-6 rounded-xl shadow-lg text-center max-w-sm border border-slate-100">
@@ -274,12 +274,12 @@ export const EditFacility: React.FC = () => {
             </div>
 
             {/* Amenities */}
-            <div onClick={fetchCounts}>
+            <div onClick={fetchCounts} onFocusCapture={fetchCounts}>
               <FacilityAmenitiesEditor facilityId={id} />
             </div>
 
             {/* Care Types */}
-            <div onClick={fetchCounts}>
+            <div onClick={fetchCounts} onFocusCapture={fetchCounts}>
               <FacilityCareTypesEditor facilityId={id} />
             </div>
 

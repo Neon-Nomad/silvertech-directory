@@ -27,10 +27,12 @@ export const ReviewModal: React.FC<ReviewModalProps> = ({
   const [error, setError] = useState<string | null>(null);
 
   if (!isOpen) return null;
+  if (!user) {
+    return null;
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!user) return;
     if (rating === 0) {
       setError('Please select a rating');
       return;

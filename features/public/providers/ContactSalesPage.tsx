@@ -76,8 +76,8 @@ export const ContactSalesPage: React.FC = () => {
           <p className="text-slate-600 mb-8">
             Thanks for your interest in the Lead Capture Suite. Our team will review your information and reach out within 24 hours to schedule a demo.
           </p>
-          <Button onClick={() => navigate('/dashboard')} className="w-full">
-            Return to Dashboard
+          <Button onClick={() => navigate(user ? '/dashboard' : '/for-facilities')} className="w-full">
+            {user ? 'Return to Dashboard' : 'Return to Provider Overview'}
           </Button>
         </div>
       </div>

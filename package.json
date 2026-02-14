@@ -13,6 +13,8 @@
     "build:hybrid": "npm run build && npm run astro:build && node scripts/merge_astro.mjs",
     "preview": "vite preview",
     "test": "vitest",
+    "test:unit": "vitest --run",
+    "test:integration": "node -e \"const { spawnSync } = require('node:child_process'); const cmd = process.platform === 'win32' ? 'npx.cmd' : 'npx'; const result = spawnSync(cmd, ['vitest', '--run', 'tests/integrity.test.js'], { stdio: 'inherit', env: { ...process.env, RUN_INTEGRATION_TESTS: 'true' } }); process.exit(result.status ?? 1);\"",
     "flatten-medicare": "tsx scripts/flatten_medicare_data.ts",
     "seed-facilities": "tsx scripts/seed_facilities.ts",
     "seed:ny": "npx tsx scripts/seed_facilities.ts NY",

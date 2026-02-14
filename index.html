@@ -4,28 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SilverTech Directory | Vertical Operating System</title>
+  <title>SilverTech Directory | Senior Living Directory</title>
   <meta name="google-site-verification" content="USGHsohyzjkn-LTwTZXKLZf5xtoplzyfpLbfrAvuXAQ" />
-  <meta name="description" content="Find trusted memory care and assisted living communities with transparent, commission-free listings. Compare facilities and connect directly." />
+  <meta name="description" content="Search a trusted senior living directory for assisted living and memory care communities. Compare licensed facilities and connect directly." />
+  <meta name="keywords" content="senior living directory, assisted living directory, memory care directory, licensed senior living facilities, compare senior living communities" />
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="SilverTech Directory" />
-  <meta property="og:title" content="SilverTech Directory | Commission-Free Senior Living" />
-  <meta property="og:description" content="Find trusted memory care and assisted living communities with transparent, commission-free listings. Compare facilities and connect directly." />
+  <meta property="og:title" content="SilverTech Directory | Senior Living Directory" />
+  <meta property="og:description" content="Search assisted living and memory care communities with verified directory data and direct contact information." />
   <meta property="og:url" content="https://silvertechdirectory.com/" />
   <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SilverTech Directory | Commission-Free Senior Living" />
-  <meta name="twitter:description" content="Find trusted memory care and assisted living communities with transparent, commission-free listings. Compare facilities and connect directly." />
+  <meta name="twitter:title" content="SilverTech Directory | Senior Living Directory" />
+  <meta name="twitter:description" content="Search assisted living and memory care communities with verified directory data and direct contact information." />
   <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
-
-  <script src="https://analytics.ahrefs.com/analytics.js" data-key="4PnqDPO+k2mCucd6LUx7fA" async></script>
 
   <!-- Google AdSense - Anchor Ads Only (Least Intrusive) -->
   <link rel="icon" href="/images/favicon.ico" sizes="any" />
-  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
   <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png" />
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
   <link rel="manifest" href="/images/site.webmanifest" />
@@ -33,13 +31,56 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660191869695450"
     crossorigin="anonymous"></script>
   <script>
+    if (location.hostname !== 'localhost') {
+      const loadAhrefs = () => {
+        if (window.__ahrefsLoaded) return;
+        const script = document.createElement('script');
+        script.src = 'https://analytics.ahrefs.com/analytics.js';
+        script.async = true;
+        script.setAttribute('data-key', '4PnqDPO+k2mCucd6LUx7fA');
+        document.head.appendChild(script);
+        window.__ahrefsLoaded = true;
+      };
+
+      const scheduleAhrefs = () => {
+        if ('requestIdleCallback' in window) {
+          window.requestIdleCallback(loadAhrefs, { timeout: 3000 });
+        } else {
+          setTimeout(loadAhrefs, 2000);
+        }
+      };
+
+      if (document.readyState === 'complete') {
+        scheduleAhrefs();
+      } else {
+        window.addEventListener('load', scheduleAhrefs, { once: true });
+      }
+    }
+
     if (location.hostname !== 'localhost' && !window.__adsPageLevelInitialized) {
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-8660191869695450",
-        enable_page_level_ads: true,
-        overlays: { bottom: true }
-      });
-      window.__adsPageLevelInitialized = true;
+      const initAds = () => {
+        if (window.__adsPageLevelInitialized) return;
+        (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-8660191869695450",
+          enable_page_level_ads: true,
+          overlays: { bottom: true }
+        });
+        window.__adsPageLevelInitialized = true;
+      };
+
+      const scheduleInit = () => {
+        if ('requestIdleCallback' in window) {
+          window.requestIdleCallback(initAds, { timeout: 2500 });
+        } else {
+          setTimeout(initAds, 1500);
+        }
+      };
+
+      if (document.readyState === 'complete') {
+        scheduleInit();
+      } else {
+        window.addEventListener('load', scheduleInit, { once: true });
+      }
     }
   </script>
 

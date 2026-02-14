@@ -4,6 +4,7 @@ import { Building2, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 
 export const ClaimBusiness: React.FC = () => {
+  const loginPath = `/login?redirect_to=${encodeURIComponent('/claim-business')}`;
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
@@ -47,13 +48,13 @@ export const ClaimBusiness: React.FC = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <Link to="/login">
+          <Link to={loginPath}>
             <Button size="lg" className="px-8 py-3 text-lg">
               Get Started
             </Button>
           </Link>
           <p className="mt-4 text-sm text-slate-500">
-            Already have an account? <Link to="/login" className="text-primary-600 hover:text-primary-500 font-medium">Log in</Link>
+            Already have an account? <Link to={loginPath} className="text-primary-600 hover:text-primary-500 font-medium">Log in</Link>
           </p>
         </div>
       </div>

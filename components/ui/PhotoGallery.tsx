@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { useDialogFocusManagement } from '@/src/hooks/useDialogFocusManagement';
 
 interface Photo {
   id: string;
@@ -16,6 +17,10 @@ interface PhotoGalleryProps {
 export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const dialogRef = useDialogFocusManagement<HTMLDivElement>({
+    isOpen,
+    onClose: () => setIsOpen(false),
+  });
 
   const sampleImageUrls = Array.from({ length: 25 }, (_, i) => `/gallery_images/${i + 1}.png`);
 
@@ -75,7 +80,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
   return (
     <>
       {isSampleGallery && (
-        <div className="mb-3 rounded-lg border border-warm-gray bg-warm-white px-4 py-3 text-xs text-charcoal/70">
+        <div className="mb-3 rounded-lg border border-warm-gray bg-warm-white px-4 py-3 text-sm text-charcoal/70">
           <div className="flex items-center gap-2">
             <ImageIcon className="w-4 h-4 text-charcoal/40" />
             <span>
@@ -87,9 +92,11 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-2 h-[400px] rounded-xl overflow-hidden">
         {/* Main Hero Image */}
-        <div 
-          className={`relative cursor-pointer group ${galleryPhotos.length === 1 ? 'md:col-span-4' : 'md:col-span-2 row-span-2'}`}
+        <button
+          type="button"
+          className={`relative cursor-pointer group text-left ${galleryPhotos.length === 1 ? 'md:col-span-4' : 'md:col-span-2 row-span-2'}`}
           onClick={() => openLightbox(0)}
+          aria-label={`Open photo 1 of ${galleryPhotos.length} for ${facilityName}`}
         >
           <img 
             src={displayPhotos[0].url} 
@@ -98,18 +105,20 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
           />
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
           {isSampleGallery && (
-            <div className="absolute left-3 top-3 bg-charcoal/80 text-white text-[10px] uppercase tracking-widest px-2 py-1 rounded">
+            <div className="absolute left-3 top-3 bg-charcoal/80 text-white text-xs uppercase tracking-widest px-2 py-1 rounded">
               Sample
             </div>
           )}
-        </div>
+        </button>
 
         {/* Side Images */}
         {displayPhotos.slice(1).map((photo, idx) => (
-          <div 
+          <button
+            type="button"
             key={photo.id} 
-            className="relative cursor-pointer group hidden md:block h-full"
+            className="relative cursor-pointer group hidden md:block h-full text-left"
             onClick={() => openLightbox(idx + 1)}
+            aria-label={`Open photo ${idx + 2} of ${galleryPhotos.length} for ${facilityName}`}
           >
             <img 
               src={photo.url} 
@@ -124,7 +133,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
                 <span className="text-white font-bold text-lg">+{remainingCount} more</span>
               </div>
             )}
-          </div>
+          </button>
         ))}
       </div>
 
@@ -139,10 +148,18 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
 
       {/* Lightbox Modal */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center backdrop-blur-sm">
+        <div
+          ref={dialogRef}
+          tabIndex={-1}
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center backdrop-blur-sm"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${facilityName} photo gallery`}
+        >
           <button 
             onClick={() => setIsOpen(false)}
             className="absolute top-4 right-4 text-white/70 hover:text-white p-2 rounded-full hover:bg-white/10 transition-colors"
+            aria-label="Close photo gallery"
           >
             <X className="w-8 h-8" />
           </button>
@@ -150,6 +167,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
           <button 
             onClick={prevPhoto}
             className="absolute left-4 text-white/70 hover:text-white p-2 rounded-full hover:bg-white/10 transition-colors"
+            aria-label="Previous photo"
           >
             <ChevronLeft className="w-10 h-10" />
           </button>
@@ -173,6 +191,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
           <button 
             onClick={nextPhoto}
             className="absolute right-4 text-white/70 hover:text-white p-2 rounded-full hover:bg-white/10 transition-colors"
+            aria-label="Next photo"
           >
             <ChevronRight className="w-10 h-10" />
           </button>

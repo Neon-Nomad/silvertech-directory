@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Lock, Mail, ArrowRight } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
 import { supabase } from '../../src/lib/supabase';
 
 const OperatorLogin: React.FC = () => {
   const navigate = useNavigate();
+  const formErrorId = 'operator-login-error';
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -79,7 +80,12 @@ const OperatorLogin: React.FC = () => {
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10 border border-slate-200">
           {error && (
-            <div className="mb-4 bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-md text-sm">
+            <div
+              id={formErrorId}
+              role="alert"
+              aria-live="assertive"
+              className="mb-4 bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-md text-sm"
+            >
               {error}
             </div>
           )}
@@ -141,6 +147,8 @@ const OperatorLogin: React.FC = () => {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  aria-invalid={Boolean(error)}
+                  aria-describedby={error ? formErrorId : undefined}
                   className="block w-full pl-10 pr-3 py-2 border border-slate-300 rounded-md leading-5 bg-white placeholder-slate-500 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                   placeholder="admin@facility.com"
                 />
@@ -163,6 +171,8 @@ const OperatorLogin: React.FC = () => {
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
+                  aria-invalid={Boolean(error)}
+                  aria-describedby={error ? formErrorId : undefined}
                   className="block w-full pl-10 pr-3 py-2 border border-slate-300 rounded-md leading-5 bg-white placeholder-slate-500 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                   placeholder="••••••••"
                 />
@@ -183,9 +193,9 @@ const OperatorLogin: React.FC = () => {
               </div>
 
               <div className="text-sm">
-                <a href="#" className="font-medium text-primary-600 hover:text-primary-500">
+                <Link to="/contact" className="font-medium text-primary-600 hover:text-primary-500">
                   Forgot your password?
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -215,7 +225,7 @@ const OperatorLogin: React.FC = () => {
             </div>
 
             <div className="mt-6 grid grid-cols-1 gap-3">
-              <Button variant="outline" className="w-full justify-center">
+              <Button variant="outline" className="w-full justify-center" onClick={() => navigate('/claim-business')}>
                 Apply for Access
               </Button>
             </div>

@@ -1,4 +1,4 @@
-﻿import React, { useMemo, useState, useEffect } from 'react';
+﻿import React, { useMemo, useState, useEffect, useRef } from 'react';
 import { useNavigate, useSearchParams, useParams } from 'react-router-dom';
 import { Search, MapPin } from 'lucide-react';
 import { ALL_STATES } from '@/src/data/states';
@@ -7,6 +7,18 @@ import { getLocationSuggestions, LocationSuggestion } from '@/src/utils/location
 import { supabase } from '@/src/lib/supabase';
 import { loadFacilityIndex, FacilityIndexItem } from '@/src/utils/facilityIndex';
 import { hasTypesense, typesenseClient } from '@/src/lib/typesense';
+import { trackEvent } from '@/src/utils/analytics';
+import { FEATURE_FLAGS } from '@/src/config/featureFlags';
+import { NoResults } from '@/features/family/discovery/NoResults';
+
+type SearchFacilityResult = FacilityIndexItem & {
+  owner_id?: string | null;
+  listing_tier?: string;
+  waiting_question_count?: number;
+};
+
+const isUuid = (value?: string) =>
+  Boolean(value && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value));
 
 const toSlug = (value: string) =>
   value
@@ -35,7 +47,7 @@ const DirectorySearch: React.FC = () => {
   const [error, setError] = useState('');
   const [suggestions, setSuggestions] = useState<LocationSuggestion[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const [results, setResults] = useState<FacilityIndexItem[]>([]);
+  const [results, setResults] = useState<SearchFacilityResult[]>([]);
   const [resultsLoading, setResultsLoading] = useState(false);
   const [resultsError, setResultsError] = useState('');
   const [hasAutoSearched, setHasAutoSearched] = useState(false);
@@ -88,7 +100,7 @@ const DirectorySearch: React.FC = () => {
     if (resolvedStateSlug) nextParams.set('state', resolvedStateSlug);
     navigate(`/search?${nextParams.toString()}`);
 
-      const performSearch = async (filters: { city?: string; state?: string; zip?: string }) => {
+    const performSearch = async (filters: { city?: string; state?: string; zip?: string }) => {
       if (hasTypesense && typesenseClient) {
         const searchParams: any = {
           q: rawName || '*',
@@ -107,7 +119,7 @@ const DirectorySearch: React.FC = () => {
           .collections('facilities')
           .documents()
           .search(searchParams);
-        const hits = (searchResult?.hits || []).map((hit: any) => hit.document) as FacilityIndexItem[];
+        const hits = (searchResult?.hits || []).map((hit: any) => hit.document) as SearchFacilityResult[];
         if (hits.length === 0 && filters.state && !filters.city && !filters.zip && !rawName) {
           throw new Error('Typesense returned 0 for state-only search.');
         }
@@ -125,14 +137,14 @@ const DirectorySearch: React.FC = () => {
             offset_count: 0
           });
         if (error) throw error;
-        return (data as FacilityIndexItem[]) || [];
+        return (data as SearchFacilityResult[]) || [];
       } catch (err: any) {
         const message = err?.message || '';
         if (!message.includes('Could not find the function')) throw err;
 
         let query = supabase
           .from('facilities')
-          .select('id,name,city,state,address_line1,postal_code,phone,website_url')
+          .select('id,name,city,state,address_line1,postal_code,phone,website_url,owner_id')
           .order('name', { ascending: true });
 
         if (filters.state) query = query.eq('state', filters.state);
@@ -143,7 +155,11 @@ const DirectorySearch: React.FC = () => {
         const { data, error } = await query.limit(50);
         if (error) throw error;
         setResultsError('Search RPC not ready yet. Using direct database search.');
-        return (data as FacilityIndexItem[]) || [];
+        const fallbackRows = ((data as SearchFacilityResult[]) || []).map((row) => ({
+          ...row,
+          waiting_question_count: 0,
+        }));
+        return fallbackRows;
       }
     };
 
@@ -227,6 +243,9 @@ const DirectorySearch: React.FC = () => {
     }
   };
 
+  const handleSearchRef = useRef(handleSearch);
+  handleSearchRef.current = handleSearch;
+
   const handleSuggestionSelect = (suggestion: LocationSuggestion) => {
     if (suggestion.type === 'city') {
       setLocation(`${suggestion.city}, ${suggestion.state}`);
@@ -268,9 +287,27 @@ const DirectorySearch: React.FC = () => {
     if (hasAutoSearched) return;
     if (routeState || location.trim().length > 0 || nameQuery.trim().length > 0) {
       setHasAutoSearched(true);
-      handleSearch();
+      handleSearchRef.current();
     }
   }, [routeState, location, nameQuery, hasAutoSearched]);
+
+  useEffect(() => {
+    if (!FEATURE_FLAGS.qa_waiting_badges) return;
+    if (typeof window === 'undefined') return;
+
+    for (const facility of results) {
+      const waiting = Number(facility.waiting_question_count || 0);
+      if (waiting <= 0) continue;
+      const key = `qa_waiting_badge_viewed_search_${facility.id}`;
+      if (sessionStorage.getItem(key) === '1') continue;
+      sessionStorage.setItem(key, '1');
+      trackEvent('qa_waiting_badge_viewed', {
+        source: 'search_card',
+        facilityId: facility.id,
+        waitingCount: waiting,
+      });
+    }
+  }, [results]);
 
   return (
     <div className="min-h-screen bg-warm-gray">
@@ -321,7 +358,7 @@ const DirectorySearch: React.FC = () => {
                         onMouseDown={() => handleSuggestionSelect(suggestion)}
                       >
                         <span>{suggestion.label}</span>
-                        <span className="text-xs text-charcoal/40 uppercase">
+                        <span className="text-sm text-charcoal/60 uppercase">
                           {suggestion.type === 'zip' ? 'ZIP' : suggestion.type === 'state' ? 'State' : 'City'}
                         </span>
                       </button>
@@ -368,9 +405,7 @@ const DirectorySearch: React.FC = () => {
           {resultsLoading ? (
             <div className="text-sm text-charcoal/60">Loading results...</div>
           ) : results.length === 0 ? (
-            <div className="text-sm text-charcoal/60">
-              No facilities found yet. Try a nearby city or search by facility name.
-            </div>
+            <NoResults requestedLocation={location || stateOptions.find((s) => s.value === stateSlug)?.label || 'this area'} />
           ) : (
             <div className="space-y-4">
               {results.map((facility) => (
@@ -384,7 +419,7 @@ const DirectorySearch: React.FC = () => {
                     {facility.phone && (
                       <p className="text-sm text-charcoal/60">{facility.phone}</p>
                     )}
-                    <div className="mt-2 flex flex-wrap items-center gap-2 text-[10px] uppercase tracking-widest">
+                    <div className="mt-2 flex flex-wrap items-center gap-2 text-xs uppercase tracking-widest">
                       {facility.website_url ? (
                         <span className="rounded-full bg-primary-50 text-primary-700 border border-primary-100 px-2 py-1">
                           Verified community
@@ -394,14 +429,29 @@ const DirectorySearch: React.FC = () => {
                           Website unavailable
                         </span>
                       )}
+                      {FEATURE_FLAGS.qa_waiting_badges && Number(facility.waiting_question_count || 0) > 0 && (
+                        <span className="rounded-full bg-amber-50 text-amber-700 border border-amber-200 px-2 py-1">
+                          {facility.waiting_question_count} waiting
+                        </span>
+                      )}
                     </div>
                   </div>
-                  <button
-                    className="bg-charcoal text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-black"
-                    onClick={() => navigate(`/facility/${facility.id}`)}
-                  >
-                    View details
-                  </button>
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    <button
+                      className="bg-charcoal text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-black"
+                      onClick={() => navigate(`/facility/${facility.id}`)}
+                    >
+                      View details
+                    </button>
+                    {!facility.owner_id && isUuid(facility.id) && (
+                      <button
+                        className="bg-primary-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-primary-700"
+                        onClick={() => navigate(`/claim/${facility.id}`)}
+                      >
+                        Claim this listing
+                      </button>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { supabase } from '@/src/lib/supabase';
 import { Button } from '@/components/ui/Button';
 import { Helmet } from 'react-helmet-async';
@@ -7,6 +7,12 @@ import { AlertCircle, Loader2 } from 'lucide-react';
 
 export const SignUpPage: React.FC = () => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const formErrorId = 'signup-form-error';
+  const passwordHintId = 'signup-password-hint';
+  const redirectToParam = searchParams.get('redirect_to') || '/';
+  const redirectTo = redirectToParam.startsWith('/') ? redirectToParam : '/';
+  const loginPath = redirectTo !== '/' ? `/login?redirect_to=${encodeURIComponent(redirectTo)}` : '/login';
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -28,7 +34,7 @@ export const SignUpPage: React.FC = () => {
       // For now, we'll just redirect to login or show a success message
       // In a real app, you might want to show a "Check your email" message
       alert('Account created! Please check your email to verify your account.');
-      navigate('/login');
+      navigate(loginPath, { replace: true });
     } catch (err: any) {
       setError(err.message || 'Failed to sign up');
     } finally {
@@ -50,7 +56,7 @@ export const SignUpPage: React.FC = () => {
         </h2>
         <p className="mt-2 text-center text-sm text-slate-600">
           Or{' '}
-          <Link to="/login" className="font-medium text-primary-600 hover:text-primary-500">
+          <Link to={loginPath} className="font-medium text-primary-600 hover:text-primary-500">
             sign in to existing account
           </Link>
         </p>
@@ -60,7 +66,12 @@ export const SignUpPage: React.FC = () => {
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <form className="space-y-6" onSubmit={handleSignUp}>
             {error && (
-              <div className="bg-red-50 border border-red-200 rounded-md p-4 flex items-start gap-3">
+              <div
+                id={formErrorId}
+                role="alert"
+                aria-live="assertive"
+                className="bg-red-50 border border-red-200 rounded-md p-4 flex items-start gap-3"
+              >
                 <AlertCircle className="h-5 w-5 text-red-500 mt-0.5" />
                 <p className="text-sm text-red-700">{error}</p>
               </div>
@@ -79,6 +90,8 @@ export const SignUpPage: React.FC = () => {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  aria-invalid={Boolean(error)}
+                  aria-describedby={error ? formErrorId : undefined}
                   className="appearance-none block w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                 />
               </div>
@@ -98,9 +111,11 @@ export const SignUpPage: React.FC = () => {
                   minLength={6}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
+                  aria-invalid={Boolean(error)}
+                  aria-describedby={error ? `${passwordHintId} ${formErrorId}` : passwordHintId}
                   className="appearance-none block w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                 />
-                <p className="mt-1 text-xs text-slate-500">Must be at least 6 characters</p>
+                <p id={passwordHintId} className="mt-1 text-xs text-slate-500">Must be at least 6 characters</p>
               </div>
             </div>
 

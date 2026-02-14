@@ -2,7 +2,7 @@
 
 # 🏢 SilverTech Directory
 
-### *The Operating System for the Senior Living Economy*
+### *A Trusted Senior Living Directory*
 
 [![Live Demo](https://img.shields.io/badge/demo-live-success)](https://silvertechdirectory.com)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -19,7 +19,7 @@
 
 ## 🎯 What is SilverTech Directory?
 
-SilverTech Directory is **not a listing site**—it's a vertically-integrated AgeTech platform designed to become the **Bloomberg Terminal of Senior Living**. By unifying supply, workflow, intelligence, and marketplace layers into a single operating system, we're transforming how families find care, operators manage their business, and investors make decisions.
+SilverTech Directory is a senior living directory focused on transparency, verified information, and direct connections between families and facilities.
 
 ---
 
@@ -65,7 +65,7 @@ Long-term defensible data layer:
 
 ## 🚀 Vision
 
-> **SilverTech becomes the vertical OS powering the entire senior living lifecycle:**  
+> **SilverTech supports the senior living lifecycle with trusted directory data and decision support:**  
 > Families → Operators → REITs → PE Groups → Service Providers → Data Clients
 
 - **The directory** is the wedge
@@ -217,7 +217,7 @@ DATABASE_URL=your_database_url_here
 <div align="center">
 
 **SilverTech Directory**  
-*The Operating System for Senior Living*
+*Trusted Senior Living Directory*
 
 Made with ❤️ for families navigating senior care
 

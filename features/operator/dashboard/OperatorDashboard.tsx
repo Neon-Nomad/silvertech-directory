@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import {
   LayoutDashboard,
   Building2,
@@ -17,15 +18,35 @@ import { useAuth } from '@/src/context/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
 import { MyFacilities } from './MyFacilities';
 import { LeadsView } from './LeadsView';
+import { OperatorQA } from './OperatorQA';
 import { Button } from '@/components/ui/Button';
 import { PRICING_PLANS } from '@/src/config/pricing';
 
 const OperatorDashboard: React.FC = () => {
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { user, signOut, loading } = useAuth();
-  const [activeTab, setActiveTab] = useState<'overview' | 'facilities' | 'leads' | 'billing' | 'settings'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'facilities' | 'leads' | 'qa' | 'billing' | 'settings'>('overview');
+  const [highlightQuestionId, setHighlightQuestionId] = useState<string | null>(null);
   const [facilities, setFacilities] = useState<any[]>([]);
   const [loadingBilling, setLoadingBilling] = useState(false);
   const [userProfile, setUserProfile] = useState<any>(null);
+
+  useEffect(() => {
+    const requestedTab = searchParams.get('tab');
+    const questionId = searchParams.get('question_id');
+
+    if (questionId) {
+      setActiveTab('qa');
+      setHighlightQuestionId(questionId);
+      return;
+    }
+
+    if (requestedTab === 'qa') {
+      setActiveTab('qa');
+      setHighlightQuestionId(null);
+    }
+  }, [searchParams]);
 
   useEffect(() => {
     if (activeTab === 'billing' && user) {
@@ -155,6 +176,15 @@ const OperatorDashboard: React.FC = () => {
                 Leads
               </button>
               <button
+                onClick={() => setActiveTab('qa')}
+                className={`pb-1 border-b-2 transition-colors ${activeTab === 'qa'
+                  ? 'text-charcoal border-slate-900'
+                  : 'border-transparent hover:text-charcoal'
+                  }`}
+              >
+                Q&A
+              </button>
+              <button
                 onClick={() => setActiveTab('overview')}
                 className={`pb-1 border-b-2 transition-colors ${activeTab === 'overview'
                   ? 'text-charcoal border-slate-900'
@@ -211,11 +241,17 @@ const OperatorDashboard: React.FC = () => {
                 <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
                   <h2 className="text-lg font-semibold text-charcoal mb-4">Quick Actions</h2>
                   <div className="space-y-3">
-                    <button className="w-full bg-charcoal text-white py-3 rounded-full font-medium flex items-center justify-center gap-2">
+                    <button
+                      onClick={() => navigate('/search')}
+                      className="w-full bg-charcoal text-white py-3 rounded-full font-medium flex items-center justify-center gap-2"
+                    >
                       <LayoutDashboard className="w-4 h-4" />
                       View Public Profile
                     </button>
-                    <button className="w-full bg-charcoal/80 text-white py-3 rounded-full font-medium flex items-center justify-center gap-2">
+                    <button
+                      onClick={() => setActiveTab('facilities')}
+                      className="w-full bg-charcoal/80 text-white py-3 rounded-full font-medium flex items-center justify-center gap-2"
+                    >
                       <Building2 className="w-4 h-4" />
                       Edit Listing
                     </button>
@@ -308,7 +344,7 @@ const OperatorDashboard: React.FC = () => {
                 <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
                   <div className="flex items-center justify-between mb-4">
                     <h2 className="text-lg font-semibold text-charcoal">Recent Leads</h2>
-                    <button className="text-sm text-charcoal/60 hover:text-charcoal">View all</button>
+                    <button onClick={() => setActiveTab('leads')} className="text-sm text-charcoal/60 hover:text-charcoal">View all</button>
                   </div>
                   <div className="overflow-x-auto">
                     <table className="w-full text-sm">
@@ -323,9 +359,9 @@ const OperatorDashboard: React.FC = () => {
                       </thead>
                       <tbody className="text-charcoal">
                         {[
-                          { name: 'Jona Smith', date: '03/22/2023', type: 'Inquiry Form', status: 'New' },
-                          { name: 'John Anthrena', date: '03/22/2023', type: 'Inquiry Form', status: 'Contacted' },
-                          { name: 'Barky Jason', date: '03/22/2023', type: 'Inquiry Form', status: 'Follow-up' }
+                          { name: 'Jona Smith', date: '03/22/2023', type: 'Inquiry Form', status: 'New', phone: '(555) 555-0111', email: 'jona@example.com' },
+                          { name: 'John Anthrena', date: '03/22/2023', type: 'Inquiry Form', status: 'Contacted', phone: '(555) 555-0112', email: 'john@example.com' },
+                          { name: 'Barky Jason', date: '03/22/2023', type: 'Inquiry Form', status: 'Follow-up', phone: '(555) 555-0113', email: 'barky@example.com' }
                         ].map((lead) => (
                           <tr key={lead.name} className="border-b border-warm-gray">
                             <td className="py-3 font-medium">{lead.name}</td>
@@ -338,15 +374,24 @@ const OperatorDashboard: React.FC = () => {
                             </td>
                             <td className="py-3">
                               <div className="flex items-center justify-end gap-2">
-                                <button className="w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center">
+                                <a
+                                  href={`tel:${lead.phone.replace(/[^0-9+]/g, '')}`}
+                                  className="w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center"
+                                >
                                   <Phone className="w-4 h-4" />
-                                </button>
-                                <button className="w-8 h-8 rounded-full bg-charcoal/80 text-white flex items-center justify-center">
+                                </a>
+                                <a
+                                  href={`mailto:${lead.email}`}
+                                  className="w-8 h-8 rounded-full bg-charcoal/80 text-white flex items-center justify-center"
+                                >
                                   <Mail className="w-4 h-4" />
-                                </button>
-                                <button className="px-4 py-1 rounded-full bg-charcoal text-white text-xs font-medium">
+                                </a>
+                                <a
+                                  href={`tel:${lead.phone.replace(/[^0-9+]/g, '')}`}
+                                  className="px-4 py-1 rounded-full bg-charcoal text-white text-xs font-medium"
+                                >
                                   Call
-                                </button>
+                                </a>
                               </div>
                             </td>
                           </tr>
@@ -389,6 +434,7 @@ const OperatorDashboard: React.FC = () => {
 
           {activeTab === 'facilities' && <MyFacilities />}
           {activeTab === 'leads' && <LeadsView />}
+          {activeTab === 'qa' && <OperatorQA highlightQuestionId={highlightQuestionId} />}
 
           {activeTab === 'billing' && (
             <div className="space-y-8">
@@ -462,8 +508,19 @@ const OperatorDashboard: React.FC = () => {
                               size="sm"
                               className="text-red-600 hover:text-red-700 hover:bg-red-50 border-red-200"
                               onClick={async () => {
-                                // Logic to unassign would go here - for now just alert
-                                alert("To unassign a facility, please contact support or downgrade your plan.");
+                                try {
+                                  const { error } = await supabase
+                                    .from('facilities')
+                                    .update({ assigned_plan_owner_id: null })
+                                    .eq('id', facility.id)
+                                    .eq('assigned_plan_owner_id', user?.id);
+
+                                  if (error) throw error;
+                                  await fetchBillingInfo();
+                                } catch (err) {
+                                  console.error("Error unassigning facility:", err);
+                                  alert("Failed to unassign facility. Please try again.");
+                                }
                               }}
                             >
                               Unassign

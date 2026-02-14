@@ -32,10 +32,22 @@ import { Card } from '@/components/ui/Card';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { FactGrid } from '@/components/ui/FactGrid';
 import { StickySectionTabs } from '@/components/ui/StickySectionTabs';
+import { FacilityQA } from '@/features/family/discovery/FacilityQA';
+import { useFacilityQuestions } from '@/src/hooks/useFacilityQuestions';
+import { FEATURE_FLAGS } from '@/src/config/featureFlags';
+import { useLeadTracking } from '@/src/hooks/useLeadTracking';
 
 const toRad = (value: number) => (value * Math.PI) / 180;
 const isUuid = (value?: string) =>
   Boolean(value && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value));
+const maskPhoneNumber = (phone?: string | null) => {
+  if (!phone) return '';
+  const digits = phone.replace(/\D/g, '');
+  if (digits.length < 10) return phone;
+  const area = digits.slice(0, 3);
+  const prefix = digits.slice(3, 6);
+  return `(${area}) ${prefix[0]}XX-XXXX`;
+};
 const getDistanceMiles = (a: { lat: number; lng: number }, b: { lat: number; lng: number }) => {
   const R = 3958.8;
   const dLat = toRad(b.lat - a.lat);
@@ -68,6 +80,8 @@ export const FacilityDetails: React.FC = () => {
   const [licensingAuthority, setLicensingAuthority] = useState<LicensingAuthority | null>(null);
   const [agingAgency, setAgingAgency] = useState<AgingAgency | null>(null);
   const [userCoords, setUserCoords] = useState<{ lat: number; lng: number } | null>(null);
+  const [phoneRevealed, setPhoneRevealed] = useState(false);
+  const { trackLeadEvent } = useLeadTracking();
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -261,6 +275,41 @@ export const FacilityDetails: React.FC = () => {
     }
     return `https://www.google.com/maps/search/?api=1&query=${destination}`;
   }, [facility?.latitude, facility?.longitude, userCoords]);
+  const qaEnabled = isUuid(facility?.id);
+  const {
+    questions: qaQuestions,
+    loading: qaLoading,
+    error: qaError,
+    refetch: refetchQa,
+  } = useFacilityQuestions(qaEnabled ? facility?.id || '' : '');
+  const topQuestions = qaQuestions.slice(0, 3);
+  const waitingCount = useMemo(
+    () => qaQuestions.filter((q) => !q.answers.some((a) => a.is_operator)).length,
+    [qaQuestions]
+  );
+  const isPremiumFacility = facility?.listing_tier && facility.listing_tier !== 'free';
+
+  useEffect(() => {
+    if (!FEATURE_FLAGS.qa_waiting_badges || waitingCount <= 0 || !facility?.id) return;
+    if (typeof window === 'undefined') return;
+    const key = `qa_waiting_badge_viewed_facility_${facility.id}`;
+    if (sessionStorage.getItem(key) === '1') return;
+    sessionStorage.setItem(key, '1');
+    trackEvent('qa_waiting_badge_viewed', { source: 'facility_header', facilityId: facility.id, waitingCount });
+  }, [waitingCount, facility?.id]);
+
+  useEffect(() => {
+    setPhoneRevealed(false);
+  }, [facility?.id]);
+
+  useEffect(() => {
+    if (!isUuid(facility?.id)) return;
+    if (typeof window === 'undefined') return;
+    const key = `lead_event_page_view_${facility.id}`;
+    if (sessionStorage.getItem(key) === '1') return;
+    sessionStorage.setItem(key, '1');
+    void trackLeadEvent(facility.id, 'page_view', { source: 'facility_details' });
+  }, [facility?.id, trackLeadEvent]);
 
   const PricingCta = ({ className = '' }: { className?: string }) => (
     <div className="relative inline-flex group">
@@ -374,6 +423,9 @@ export const FacilityDetails: React.FC = () => {
 
   const stateSlug = ALL_STATES.find(s => s.abbreviation === facility.state)?.slug || facility.state.toLowerCase();
   const citySlug = facility.city.toLowerCase().replace(/ /g, '-');
+  const regulatoryTopic = healthcareScore && ['D', 'F'].includes(healthcareScore.grade) ? 'inspections' : 'licensing';
+  const regulatoryTopicUrl = `/states/${stateSlug}/regulations/${regulatoryTopic}`;
+  const hasRegulatoryAlert = Boolean(healthcareScore && ['C', 'D', 'F'].includes(healthcareScore.grade));
   const canonicalUrl = `https://silvertechdirectory.com/facility/${id}`;
   const shareImage = facility.facility_photos?.[0]?.url || facility.image || defaultImage;
   const heroImage = shareImage;
@@ -386,7 +438,8 @@ export const FacilityDetails: React.FC = () => {
     { label: 'Services', href: '#services' },
     { label: 'Map', href: '#map' },
     { label: 'Licensing', href: '#licensing' },
-    { label: 'Reviews', href: '#reviews' }
+    { label: 'Reviews', href: '#reviews' },
+    ...(qaEnabled ? [{ label: 'Q&A', href: '#qa' }] : [])
   ];
 
   return (
@@ -407,12 +460,11 @@ export const FacilityDetails: React.FC = () => {
         <meta name="twitter:image" content={shareImage} />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </Helmet>
-
       <div className="bg-warm-gray">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8 pt-6">
           <Breadcrumbs items={[
             { label: 'Home', path: '/' },
-            { label: 'Assisted Living', path: '/assisted-living' },
+            { label: 'Directory', path: '/search' },
             { label: facility.state, path: `/assisted-living/${stateSlug}` },
             { label: facility.city, path: `/assisted-living/${stateSlug}/cities/${citySlug}` },
             { label: facility.name }
@@ -431,6 +483,11 @@ export const FacilityDetails: React.FC = () => {
                 </span>
                 {facility.owner_id && (
                   <span className="px-2 py-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100">Verified</span>
+                )}
+                {FEATURE_FLAGS.qa_waiting_badges && waitingCount > 0 && (
+                  <span className="px-2 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-200">
+                    {waitingCount} question{waitingCount === 1 ? '' : 's'} waiting for response
+                  </span>
                 )}
                 {facility.website_url ? (
                   <span className="px-2 py-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100">
@@ -472,11 +529,34 @@ export const FacilityDetails: React.FC = () => {
                 </div>
               </div>
 
+              <div className={`mt-4 rounded-lg border px-4 py-3 ${hasRegulatoryAlert ? 'border-amber-300 bg-amber-50' : 'border-warm-gray bg-warm-white'}`}>
+                <p className="text-[12px] uppercase tracking-wide text-charcoal/60 font-medium">Regulatory snapshot</p>
+                <p className="text-sm text-charcoal/70 mt-1">
+                  {hasRegulatoryAlert && healthcareScore
+                    ? `Healthcare access is currently graded ${healthcareScore.grade}. Review state oversight guidance before touring.`
+                    : 'Review this state\'s licensing, complaint, and inspection guidance before making a decision.'}
+                </p>
+                <div className="mt-3">
+                  <Button
+                    variant="outline"
+                    className="border-warm-gray hover:bg-warm-gray"
+                    onClick={() => navigate(regulatoryTopicUrl)}
+                  >
+                    View regulation guide
+                  </Button>
+                </div>
+              </div>
+
               <div className="mt-5 flex flex-wrap gap-3">
                 <Button
                   variant="outline"
                   className="border-warm-gray hover:bg-warm-gray"
-                  onClick={() => setIsCompareModalOpen(true)}
+                  onClick={() => {
+                    if (isUuid(facility.id)) {
+                      void trackLeadEvent(facility.id, 'comparison_added', { source: 'header' });
+                    }
+                    setIsCompareModalOpen(true);
+                  }}
                 >
                   Compare
                 </Button>
@@ -484,12 +564,48 @@ export const FacilityDetails: React.FC = () => {
                   <Button
                     variant="outline"
                     className="border-warm-gray hover:bg-warm-gray"
-                    onClick={() => window.open(mapUrl, '_blank')}
+                    onClick={() => {
+                      if (isUuid(facility.id)) {
+                        void trackLeadEvent(facility.id, 'directions_clicked', { source: 'header', mapProvider: 'google_maps' });
+                      }
+                      window.open(mapUrl, '_blank');
+                    }}
                   >
                     Directions
                   </Button>
                 )}
               </div>
+
+              {qaEnabled && (
+                <div className="mt-5 border border-warm-gray rounded-lg bg-warm-white p-4">
+                  <p className="text-[12px] uppercase tracking-wide text-charcoal/60 font-medium">Top family questions</p>
+                  {qaLoading ? (
+                    <p className="mt-2 text-sm text-charcoal/70">Loading questions...</p>
+                  ) : qaError ? (
+                    <p className="mt-2 text-sm text-red-700">Unable to load questions right now.</p>
+                  ) : topQuestions.length > 0 ? (
+                    <ul className="mt-2 space-y-2">
+                      {topQuestions.map((question) => (
+                        <li key={question.id}>
+                          <a
+                            href={`#qa-${question.id}`}
+                            className="text-sm text-charcoal hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded"
+                          >
+                            {question.question_text}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <a
+                      href="#qa"
+                      className="mt-2 inline-flex text-sm font-semibold text-primary-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded"
+                    >
+                      Be the first to ask a question about {facility.name}.
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
 
             <div className="rounded-xl overflow-hidden border border-warm-gray shadow-sm">
@@ -555,6 +671,12 @@ export const FacilityDetails: React.FC = () => {
                 <ul className="mt-3 text-sm text-charcoal/70 space-y-2">
                   <li>Licensed facility with ID: {licenseNumber}.</li>
                   <li>Regulated by state licensing authorities.</li>
+                  <li>
+                    View detailed rules in the{' '}
+                    <Link to={regulatoryTopicUrl} className="text-primary-700 underline underline-offset-2">
+                      state regulation guide
+                    </Link>.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -669,7 +791,16 @@ export const FacilityDetails: React.FC = () => {
           <Card>
             <SectionHeader title="Comparison mode" helper="See how this community stacks up against nearby options." />
             <div className="mt-6 flex flex-wrap gap-3">
-              <Button variant="outline" className="border-warm-gray hover:bg-warm-gray" onClick={() => setIsCompareModalOpen(true)}>
+              <Button
+                variant="outline"
+                className="border-warm-gray hover:bg-warm-gray"
+                onClick={() => {
+                  if (isUuid(facility.id)) {
+                    void trackLeadEvent(facility.id, 'comparison_added', { source: 'comparison_section' });
+                  }
+                  setIsCompareModalOpen(true);
+                }}
+              >
                 Compare similar homes
               </Button>
               <Button variant="outline" className="border-warm-gray hover:bg-warm-gray" onClick={() => navigate(`/assisted-living/${stateSlug}/cities/${citySlug}`)}>
@@ -690,18 +821,21 @@ export const FacilityDetails: React.FC = () => {
             <SectionHeader title="Reviews" helper="Verified feedback and family impressions." />
             <div className="mt-6 flex justify-between items-center">
               <h3 className="text-[16px] font-semibold text-charcoal">Latest reviews</h3>
-              <Button
-                variant="outline"
-                onClick={() => {
-                  if (user) {
-                    setIsReviewModalOpen(true);
-                  } else {
-                    navigate('/login');
-                  }
-                }}
-              >
-                Write a Review
-              </Button>
+              {user ? (
+                <Button
+                  variant="outline"
+                  onClick={() => setIsReviewModalOpen(true)}
+                >
+                  Write a Review
+                </Button>
+              ) : (
+                <Button
+                  variant="outline"
+                  onClick={() => navigate(`/login?redirect_to=${encodeURIComponent(`/facility/${facility.id}`)}`)}
+                >
+                  Log in to Review
+                </Button>
+              )}
             </div>
             <div className="mt-6">
       {isUuid(facility.id) ? (
@@ -712,6 +846,22 @@ export const FacilityDetails: React.FC = () => {
             </div>
           </Card>
 
+          {isUuid(facility.id) && (
+            <section id="qa">
+              <FacilityQA
+                facilityId={facility.id}
+                facilityName={facility.name}
+                questions={qaQuestions}
+                loading={qaLoading}
+                error={qaError}
+                onRefresh={refetchQa}
+                hasOwner={Boolean(facility.owner_id)}
+                claimedAt={facility.claimed_at || null}
+                isPremiumFacility={Boolean(isPremiumFacility)}
+              />
+            </section>
+          )}
+
           <Card>
             <SectionHeader title="Next step" helper="When you're ready, take the next action." />
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
@@ -720,19 +870,37 @@ export const FacilityDetails: React.FC = () => {
                   className="w-full sm:w-auto"
                   onClick={() => {
                     trackEvent('lead_cta_clicked', { source: 'next_step', facilityId: facility.id });
+                    if (isUuid(facility.id)) {
+                      void trackLeadEvent(facility.id, 'schedule_tour', { source: 'next_step_cta' });
+                    }
                     setIsLeadModalOpen(true);
                   }}
                 >
                   Schedule a Tour
                 </Button>
               {facility.phone && (
-                <Button
-                  variant="outline"
-                  className="w-full sm:w-auto border-warm-gray hover:bg-warm-gray"
-                  onClick={() => window.location.href = `tel:${facility.phone}`}
-                >
-                  Call {facility.phone}
-                </Button>
+                phoneRevealed ? (
+                  <Button
+                    variant="outline"
+                    className="w-full sm:w-auto border-warm-gray hover:bg-warm-gray"
+                    onClick={() => window.location.href = `tel:${facility.phone}`}
+                  >
+                    Call {facility.phone}
+                  </Button>
+                ) : (
+                  <Button
+                    variant="outline"
+                    className="w-full sm:w-auto border-warm-gray hover:bg-warm-gray"
+                    onClick={() => {
+                      if (isUuid(facility.id)) {
+                        void trackLeadEvent(facility.id, 'phone_reveal', { source: 'next_step_cta' });
+                      }
+                      setPhoneRevealed(true);
+                    }}
+                  >
+                    Show number ({maskPhoneNumber(facility.phone)})
+                  </Button>
+                )
               )}
             </div>
           </Card>
@@ -751,6 +919,9 @@ export const FacilityDetails: React.FC = () => {
                 className="w-full"
                 onClick={() => {
                   trackEvent('lead_cta_clicked', { source: 'sidebar', facilityId: facility.id });
+                  if (isUuid(facility.id)) {
+                    void trackLeadEvent(facility.id, 'schedule_tour', { source: 'sidebar_cta' });
+                  }
                   setIsLeadModalOpen(true);
                 }}
               >
@@ -759,7 +930,12 @@ export const FacilityDetails: React.FC = () => {
               <Button
                 variant="outline"
                 className="w-full border-warm-gray hover:bg-warm-gray"
-                onClick={() => setIsCompareModalOpen(true)}
+                onClick={() => {
+                  if (isUuid(facility.id)) {
+                    void trackLeadEvent(facility.id, 'comparison_added', { source: 'sidebar_cta' });
+                  }
+                  setIsCompareModalOpen(true);
+                }}
               >
                 Compare similar homes
               </Button>
@@ -781,13 +957,29 @@ export const FacilityDetails: React.FC = () => {
                 <span>{fullAddress}</span>
               </div>
               {facility.phone && (
-                <a
-                  href={`tel:${facility.phone}`}
-                  className="inline-flex items-center gap-2 text-charcoal hover:text-charcoal"
-                >
-                  <Phone className="w-4 h-4" />
-                  {facility.phone}
-                </a>
+                phoneRevealed ? (
+                  <a
+                    href={`tel:${facility.phone}`}
+                    className="inline-flex items-center gap-2 text-charcoal hover:text-charcoal"
+                  >
+                    <Phone className="w-4 h-4" />
+                    {facility.phone}
+                  </a>
+                ) : (
+                  <button
+                    type="button"
+                    className="inline-flex items-center gap-2 text-charcoal hover:text-charcoal"
+                    onClick={() => {
+                      if (isUuid(facility.id)) {
+                        void trackLeadEvent(facility.id, 'phone_reveal', { source: 'sidebar_contact' });
+                      }
+                      setPhoneRevealed(true);
+                    }}
+                  >
+                    <Phone className="w-4 h-4" />
+                    Show number ({maskPhoneNumber(facility.phone)})
+                  </button>
+                )
               )}
               {facility.website_url ? (
                 <div className="flex flex-wrap items-center gap-2">
@@ -799,12 +991,12 @@ export const FacilityDetails: React.FC = () => {
                   >
                     Visit facility website
                   </a>
-                  <span className="inline-flex items-center gap-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100 px-2 py-1 text-[10px] uppercase tracking-widest">
+                  <span className="inline-flex items-center gap-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100 px-2 py-1 text-xs uppercase tracking-widest">
                     Verified community
                   </span>
                 </div>
               ) : (
-                <span className="text-xs text-charcoal/50">Website unavailable</span>
+                <span className="text-sm text-charcoal/60">Website unavailable</span>
               )}
               {facility.google_maps_url && (
                 <a
@@ -812,6 +1004,11 @@ export const FacilityDetails: React.FC = () => {
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 text-charcoal hover:text-charcoal"
+                  onClick={() => {
+                    if (isUuid(facility.id)) {
+                      void trackLeadEvent(facility.id, 'directions_clicked', { source: 'sidebar_google_maps_link' });
+                    }
+                  }}
                 >
                   View on Google Maps
                 </a>
@@ -833,7 +1030,7 @@ export const FacilityDetails: React.FC = () => {
                 )}
                 {facility.max_price && <span className="text-sm text-charcoal/60">- ${facility.max_price.toLocaleString()}</span>}
               </div>
-              <div className="mt-3 text-xs text-primary-700 bg-primary-50 border border-primary-100 rounded-full px-3 py-1 inline-flex items-center gap-2">
+              <div className="mt-3 text-sm text-primary-700 bg-primary-50 border border-primary-100 rounded-full px-3 py-1 inline-flex items-center gap-2">
                 <Star className="h-4 w-4 fill-current" />
                 Premium placement available
               </div>

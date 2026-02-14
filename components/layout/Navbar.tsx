@@ -16,11 +16,7 @@ const NAV_CATEGORIES: NavCategory[] = [
   {
     label: 'Find Care',
     items: [
-      { label: 'Assisted Living', href: '/search?type=assisted-living' },
-      { label: 'Memory Care', href: '/search?type=memory-care' },
-      { label: 'Independent Living', href: '/search?type=independent-living' },
-      { label: 'Nursing Homes', href: '/search?type=nursing-homes' },
-      { label: 'Browse by State', href: '/states' },
+      { label: 'By State', href: '/states' },
     ],
   },
   {
@@ -34,6 +30,7 @@ const NAV_CATEGORIES: NavCategory[] = [
   {
     label: 'Pricing',
     items: [
+      { label: 'Provider Pricing Plans', href: '/for-facilities/pricing' },
       { label: 'Average Costs by State', href: '/states' },
       { label: 'What Affects Pricing', href: '/guides/what-it-costs' },
       { label: 'Paying for Senior Living', href: '/guides/what-it-costs' },
@@ -45,7 +42,7 @@ const NAV_CATEGORIES: NavCategory[] = [
       { label: 'How to Choose a Community', href: '/guides/how-to-choose' },
       { label: 'Questions to Ask on a Tour', href: '/guides/tour-questions' },
       { label: 'State Regulations', href: '/regulatory-library' },
-      { label: 'Ombudsman Contacts', href: '/regulatory-library' },
+      { label: 'Ombudsman Contacts', href: '/states' },
       { label: 'FAQ', href: '/faq' },
     ],
   },
@@ -53,7 +50,7 @@ const NAV_CATEGORIES: NavCategory[] = [
     label: 'For Facilities',
     items: [
       { label: 'Claim a Listing', href: '/for-facilities' },
-      { label: 'Pricing Plans', href: '/pricing' },
+      { label: 'Pricing Plans', href: '/for-facilities/pricing' },
       { label: 'Why List With Us', href: '/providers' },
     ],
   },
@@ -92,6 +89,9 @@ const NavDropdown: React.FC<{
     >
       <button
         onClick={() => (isOpen ? onClose() : onOpen())}
+        aria-expanded={isOpen}
+        aria-haspopup="menu"
+        aria-controls={`nav-menu-${category.label.toLowerCase().replace(/\s+/g, '-')}`}
         className={`flex items-center gap-1 text-sm font-medium transition-colors ${
           isOpen ? 'text-gold' : 'text-charcoal hover:text-gold'
         }`}
@@ -101,13 +101,17 @@ const NavDropdown: React.FC<{
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-warm-gray py-2 z-50">
+        <div
+          id={`nav-menu-${category.label.toLowerCase().replace(/\s+/g, '-')}`}
+          role="menu"
+          className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-warm-gray py-2 z-50"
+        >
           {category.items.map((item) => (
             <Link
               key={item.label}
               to={item.href}
               onClick={onClose}
-              className="block px-4 py-2.5 text-sm text-charcoal/70 hover:text-charcoal hover:bg-warm-gray transition-colors"
+              className="block px-4 py-2.5 text-sm text-charcoal/70 hover:text-charcoal hover:bg-warm-gray transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1"
             >
               {item.label}
             </Link>
@@ -122,16 +126,16 @@ const Navbar: React.FC = () => {
   const [openCategory, setOpenCategory] = useState<string | null>(null);
 
   const handleLogoClick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'auto' });
   };
 
   return (
-    <nav className="w-full sticky top-0 z-50 bg-white border-b border-warm-gray">
+    <nav aria-label="Primary" className="w-full sticky top-0 z-50 bg-white border-b border-warm-gray">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" onClick={handleLogoClick} className="flex-shrink-0">
-            <img src="/images/logo2.png" alt="SilverTech Directory" className="h-[128px] w-auto" />
+          <Link to="/" onClick={handleLogoClick} className="flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded">
+            <img src="/images/logo2.png" alt="SilverTech Directory" className="h-10 md:h-11 w-auto" />
           </Link>
 
           {/* Primary Navigation — desktop */}
@@ -149,25 +153,45 @@ const Navbar: React.FC = () => {
 
           {/* Utility Navigation — desktop */}
           <div className="hidden lg:flex items-center gap-5 border-l border-warm-gray pl-6">
-            <Link to="/search" className="text-charcoal/60 hover:text-charcoal transition-colors" title="Search">
+            <Link
+              to="/search"
+              className="text-charcoal/60 hover:text-charcoal transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded"
+              title="Search"
+              aria-label="Search directory"
+            >
               <Search className="w-5 h-5" />
             </Link>
-            <button className="text-charcoal/60 hover:text-charcoal transition-colors" title="Saved">
+            <button
+              className="text-charcoal/60 hover:text-charcoal transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded"
+              title="Saved"
+              aria-label="Saved communities"
+            >
               <Heart className="w-5 h-5" />
             </button>
-            <button className="flex items-center gap-1.5 text-charcoal/60 hover:text-charcoal transition-colors text-sm" title="Location">
+            <button
+              className="flex items-center gap-1.5 text-charcoal/60 hover:text-charcoal transition-colors text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded"
+              title="Location"
+              aria-label="Location settings"
+            >
               <MapPin className="w-4 h-4" />
             </button>
           </div>
 
           {/* Mobile — tap to toggle categories */}
           <div className="lg:hidden flex items-center gap-4">
-            <Link to="/search" className="text-charcoal/60 hover:text-charcoal" title="Search">
+            <Link
+              to="/search"
+              className="text-charcoal/60 hover:text-charcoal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded"
+              title="Search"
+              aria-label="Search directory"
+            >
               <Search className="w-5 h-5" />
             </Link>
             <button
               onClick={() => setOpenCategory(openCategory ? null : 'mobile')}
-              className="flex items-center gap-1 text-sm font-medium text-charcoal"
+              className="flex items-center gap-1 text-sm font-medium text-charcoal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded"
+              aria-expanded={openCategory === 'mobile'}
+              aria-controls="mobile-nav-panel"
             >
               Menu
               <ChevronDown className={`w-4 h-4 transition-transform ${openCategory === 'mobile' ? 'rotate-180' : ''}`} />
@@ -177,7 +201,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile dropdown panel */}
         {openCategory === 'mobile' && (
-          <div className="lg:hidden border-t border-warm-gray py-4 space-y-4">
+          <div id="mobile-nav-panel" className="lg:hidden border-t border-warm-gray py-4 space-y-4">
             {NAV_CATEGORIES.map((category) => (
               <MobileNavSection
                 key={category.label}
@@ -202,19 +226,21 @@ const MobileNavSection: React.FC<{
     <div>
       <button
         onClick={() => setExpanded(!expanded)}
-        className="flex items-center justify-between w-full text-sm font-semibold text-charcoal py-1"
+        className="flex items-center justify-between w-full text-sm font-semibold text-charcoal py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded"
+        aria-expanded={expanded}
+        aria-controls={`mobile-submenu-${category.label.toLowerCase().replace(/\s+/g, '-')}`}
       >
         {category.label}
         <ChevronDown className={`w-4 h-4 transition-transform ${expanded ? 'rotate-180' : ''}`} />
       </button>
       {expanded && (
-        <div className="mt-1 ml-3 space-y-1">
+        <div id={`mobile-submenu-${category.label.toLowerCase().replace(/\s+/g, '-')}`} className="mt-1 ml-3 space-y-1">
           {category.items.map((item) => (
             <Link
               key={item.label}
               to={item.href}
               onClick={onClose}
-              className="block py-1.5 text-sm text-charcoal/70 hover:text-gold"
+              className="block py-1.5 text-sm text-charcoal/70 hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
             >
               {item.label}
             </Link>

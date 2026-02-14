@@ -17,7 +17,7 @@ export const Vision: React.FC = () => {
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl font-bold mb-8 drop-shadow-lg">The Vision</h2>
         <p className="text-xl md:text-2xl text-slate-100 leading-relaxed mb-12 font-light drop-shadow-md">
-          The directory is only the wedge. The product is the <span className="text-white font-semibold">Vertical Operating System</span>.
+          The product is a trusted, easy-to-use <span className="text-white font-semibold">Senior Living Directory</span> for families and providers.
         </p>
         
         <div className="grid md:grid-cols-2 gap-8 text-left">

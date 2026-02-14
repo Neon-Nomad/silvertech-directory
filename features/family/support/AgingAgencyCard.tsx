@@ -51,7 +51,7 @@ export const AgingAgencyCard: React.FC<AgingAgencyCardProps> = ({ agency, varian
               </li>
             ))}
             {!isFull && agency.services_provided.length > 3 && (
-              <li className="text-xs text-emerald-600 font-medium pl-3">
+              <li className="text-sm text-emerald-700 font-medium pl-3">
                 + {agency.services_provided.length - 3} more services...
               </li>
             )}

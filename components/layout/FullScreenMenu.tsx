@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '@/src/context/AuthProvider';
 import { Search, MapPin, BookOpen, Scale, Building2, Users, HelpCircle, ShoppingBag } from 'lucide-react';
+import { useDialogFocusManagement } from '@/src/hooks/useDialogFocusManagement';
 
 interface FullScreenMenuProps {
   isOpen: boolean;
@@ -24,15 +25,7 @@ const US_STATES = [
 export const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose }) => {
   const { user, signOut } = useAuth();
   const [activeCategory, setActiveCategory] = useState<MenuCategory>('care');
-
-  // Close on ESC key
-  useEffect(() => {
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', handleEsc);
-    return () => window.removeEventListener('keydown', handleEsc);
-  }, [onClose]);
+  const dialogRef = useDialogFocusManagement<HTMLDivElement>({ isOpen, onClose });
 
   // Prevent scrolling when menu is open
   useEffect(() => {
@@ -63,6 +56,11 @@ export const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose 
     <AnimatePresence>
       {isOpen && (
         <motion.div
+          ref={dialogRef}
+          tabIndex={-1}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Site navigation menu"
           initial="closed"
           animate="open"
           exit="closed"

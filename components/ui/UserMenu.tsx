@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '@/src/context/AuthProvider';
-import { User, LogOut, Heart, Star, Settings } from 'lucide-react';
+import { LogOut } from 'lucide-react';
 
 export const UserMenu: React.FC = () => {
   const { user, signOut } = useAuth();
@@ -59,33 +59,6 @@ export const UserMenu: React.FC = () => {
             <p className="text-xs text-slate-500 truncate">{user.email}</p>
           </div>
           
-          <div className="py-1">
-            <Link
-              to="/profile/reviews"
-              className="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
-              onClick={() => setIsOpen(false)}
-            >
-              <Star className="h-4 w-4 text-slate-400" />
-              My Reviews
-            </Link>
-            <Link
-              to="/profile/saved"
-              className="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
-              onClick={() => setIsOpen(false)}
-            >
-              <Heart className="h-4 w-4 text-slate-400" />
-              Saved Facilities
-            </Link>
-            <Link
-              to="/profile/settings"
-              className="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
-              onClick={() => setIsOpen(false)}
-            >
-              <Settings className="h-4 w-4 text-slate-400" />
-              Settings
-            </Link>
-          </div>
-
           <div className="border-t border-slate-50 py-1">
             <button
               onClick={() => {

@@ -1,7 +1,16 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
-import { BadgeCheck, BarChart3, ShieldCheck, Star, Headphones, Building2 } from 'lucide-react';
+import {
+  BadgeCheck,
+  BarChart3,
+  ShieldCheck,
+  Star,
+  TrendingUp,
+  Building2,
+  Target,
+  Crown,
+} from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 
@@ -30,7 +39,7 @@ export const FacilitiesPartnerPage: React.FC = () => {
           variant="primary"
           size="sm"
           className="px-4 py-2 text-xs uppercase tracking-widest"
-          onClick={() => navigate('/pricing')}
+          onClick={() => navigate('/claim-business')}
         >
           Claim Listing
         </Button>
@@ -61,33 +70,76 @@ export const FacilitiesPartnerPage: React.FC = () => {
             <div className="space-y-4">
               <div className="border border-slate-200 rounded-lg p-4">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="font-semibold">Free</span>
-                  <span className="text-xs uppercase tracking-widest text-slate-400">Standard listing</span>
+                  <span className="font-semibold">Free Hook</span>
+                  <span className="text-xs uppercase tracking-widest text-slate-400">
+                    Standard listing
+                  </span>
                 </div>
                 <ul className="text-sm text-slate-600 space-y-2">
                   <li>Basic facility details</li>
                   <li>Standard search indexing</li>
+                  <li>Public Transparency Score on your profile</li>
+                  <li>Lead Pulse visibility after claim login</li>
+                </ul>
+              </div>
+              <div className="border rounded-lg p-4">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="font-semibold text-slate-900">Protector</span>
+                  <span className="text-xs font-semibold text-slate-500">$99/mo</span>
+                </div>
+                <ul className="text-sm text-slate-700 space-y-2">
+                  <li className="flex items-center gap-2">
+                    <BadgeCheck className="w-4 h-4 text-primary-600" /> Verified Representative badge
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <ShieldCheck className="w-4 h-4 text-primary-600" /> Removes inactive warning via brand
+                    protection
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <BarChart3 className="w-4 h-4 text-primary-600" /> Attribution Suite with Verified Unique Interest from phone,
+                    directions, and comparison signals
+                  </li>
                 </ul>
               </div>
               <div className="border-2 border-primary-500 rounded-lg p-5 bg-white shadow-md">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="font-semibold text-primary-700">Premium</span>
+                  <span className="font-semibold text-primary-700">Accelerator</span>
                   <span className="text-[10px] uppercase tracking-widest bg-primary-100 text-primary-700 px-2 py-1 rounded-full">
                     Most Popular
                   </span>
                 </div>
                 <ul className="text-sm text-slate-700 space-y-2">
-                  <li className="flex items-center gap-2"><BadgeCheck className="w-4 h-4 text-primary-600" /> Verified partner badge</li>
-                  <li className="flex items-center gap-2"><Star className="w-4 h-4 text-primary-600" /> Priority placement</li>
-                  <li className="flex items-center gap-2"><BarChart3 className="w-4 h-4 text-primary-600" /> Lead analytics dashboard</li>
-                  <li className="flex items-center gap-2"><Headphones className="w-4 h-4 text-primary-600" /> Dedicated success manager</li>
+                  <li className="flex items-center gap-2"><TrendingUp className="w-4 h-4 text-primary-600" /> No-results demand feed with Express Interest</li>
+                  <li className="flex items-center gap-2"><Star className="w-4 h-4 text-primary-600" /> Priority search ranking via profile health score</li>
+                  <li className="flex items-center gap-2"><Target className="w-4 h-4 text-primary-600" /> Schedule a Tour CTA on search result cards</li>
+                </ul>
+                <p className="mt-3 text-xs text-slate-500">$249/mo</p>
+              </div>
+              <div className="border rounded-lg p-4">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="font-semibold text-slate-900">Dominator</span>
+                  <span className="text-xs font-semibold text-slate-500">$499/mo</span>
+                </div>
+                <ul className="text-sm text-slate-700 space-y-2">
+                  <li className="flex items-center gap-2">
+                    <BarChart3 className="w-4 h-4 text-primary-600" /> Market intelligence for local comparison
+                    behavior
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <TrendingUp className="w-4 h-4 text-primary-600" /> Custom ROI modeling using your real rent
+                    inputs
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Crown className="w-4 h-4 text-primary-600" /> Featured authority with pinned FAQs and
+                    recommended answers
+                  </li>
                 </ul>
                 <Button
                   variant="primary"
                   className="w-full mt-4"
-                  onClick={() => navigate('/pricing')}
+                  onClick={() => navigate('/claim-business')}
                 >
-                  Upgrade Today
+                  Claim and Upgrade
                 </Button>
               </div>
             </div>
@@ -146,3 +198,4 @@ export const FacilitiesPartnerPage: React.FC = () => {
     </div>
   );
 };
+

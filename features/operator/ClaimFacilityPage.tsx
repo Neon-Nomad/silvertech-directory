@@ -9,6 +9,8 @@ export const ClaimFacilityPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { user } = useAuth();
+  const formErrorId = 'claim-facility-error';
+  const businessEmailHintId = 'claim-business-email-hint';
   
   const [facility, setFacility] = useState<any>(null);
   const [loading, setLoading] = useState(true);
@@ -25,9 +27,8 @@ export const ClaimFacilityPage: React.FC = () => {
 
   useEffect(() => {
     if (!user) {
-        // Redirect to login if not authenticated, but save return url
-        // For now just redirect to login
-        navigate('/login');
+        const returnPath = id ? `/claim/${id}` : '/claim-business';
+        navigate(`/login?redirect_to=${encodeURIComponent(returnPath)}`);
         return;
     }
 
@@ -139,7 +140,12 @@ export const ClaimFacilityPage: React.FC = () => {
 
           <div className="p-8">
             {error && (
-              <div className="mb-6 bg-red-50 text-red-700 p-4 rounded-lg flex items-center gap-2">
+              <div
+                id={formErrorId}
+                role="alert"
+                aria-live="assertive"
+                className="mb-6 bg-red-50 text-red-700 p-4 rounded-lg flex items-center gap-2"
+              >
                 <AlertCircle className="h-5 w-5" />
                 {error}
               </div>
@@ -147,43 +153,52 @@ export const ClaimFacilityPage: React.FC = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1">
+                <label htmlFor="business-email" className="block text-sm font-medium text-slate-700 mb-1">
                   Business Email
                 </label>
                 <input
+                  id="business-email"
                   type="email"
                   required
                   className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                   placeholder="name@facility.com"
                   value={formData.businessEmail}
                   onChange={(e) => setFormData({...formData, businessEmail: e.target.value})}
+                  aria-invalid={Boolean(error)}
+                  aria-describedby={error ? `${businessEmailHintId} ${formErrorId}` : businessEmailHintId}
                 />
-                <p className="mt-1 text-xs text-slate-500">Please use an email address associated with the facility.</p>
+                <p id={businessEmailHintId} className="mt-1 text-xs text-slate-500">Please use an email address associated with the facility.</p>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1">
+                <label htmlFor="business-phone" className="block text-sm font-medium text-slate-700 mb-1">
                   Business Phone
                 </label>
                 <input
+                  id="business-phone"
                   type="tel"
                   required
                   className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                   placeholder="(555) 123-4567"
                   value={formData.phone}
                   onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                  aria-invalid={Boolean(error)}
+                  aria-describedby={error ? formErrorId : undefined}
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1">
+                <label htmlFor="business-role" className="block text-sm font-medium text-slate-700 mb-1">
                   Your Role
                 </label>
                 <select
+                  id="business-role"
                   required
                   className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                   value={formData.role}
                   onChange={(e) => setFormData({...formData, role: e.target.value})}
+                  aria-invalid={Boolean(error)}
+                  aria-describedby={error ? formErrorId : undefined}
                 >
                   <option value="">Select your role...</option>
                   <option value="Owner">Owner</option>
@@ -194,14 +209,17 @@ export const ClaimFacilityPage: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1">
+                <label htmlFor="verification-notes" className="block text-sm font-medium text-slate-700 mb-1">
                   Additional Verification Notes
                 </label>
                 <textarea
+                  id="verification-notes"
                   className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 h-24"
                   placeholder="Please provide any details that help us verify your identity (e.g. license number, website URL)..."
                   value={formData.notes}
                   onChange={(e) => setFormData({...formData, notes: e.target.value})}
+                  aria-invalid={Boolean(error)}
+                  aria-describedby={error ? formErrorId : undefined}
                 />
               </div>
 

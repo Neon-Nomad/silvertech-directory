@@ -2,19 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global accessibility and scale defaults */
+:root {
+  font-size: 100%;
+  --focus-ring-color: #0f172a;
+  --focus-ring-offset-color: #ffffff;
+}
+
 /* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
   background-color: #FDFCF9;
   color: #2D2D2D;
   font-family: 'Manrope', 'Source Sans 3', sans-serif;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Cormorant Garamond', serif;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+p, li, dt, dd {
+  overflow-wrap: anywhere;
+}
+
+/* Consistent keyboard focus treatment */
+a[href]:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible,
+[role="tab"]:focus-visible {
+  outline: 3px solid var(--focus-ring-color);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--focus-ring-offset-color);
+}
+
+/* Better default sizing for text and controls when users zoom */
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  min-height: 2.75rem;
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --focus-ring-color: #000000;
+    --focus-ring-offset-color: #ffffff;
+  }
+
+  /* Raise low-contrast utility text colors in high-contrast mode */
+  [class*="text-slate-400"],
+  [class*="text-slate-500"],
+  [class*="text-charcoal/60"],
+  [class*="text-charcoal/70"] {
+    color: #1f2937 !important;
+  }
+
+  /* Avoid very small utility text becoming unreadable */
+  [class*="text-[10px]"],
+  [class*="text-[11px]"],
+  [class*="text-xs"] {
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Strengthen subtle borders that convey structure */
+  [class*="border-slate-200"],
+  [class*="border-warm-gray"] {
+    border-color: #334155 !important;
+  }
+
+  a[href] {
+    text-decoration-thickness: 0.14em;
+    text-underline-offset: 0.18em;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    border-width: 2px;
+  }
 }
 
 /* Custom Scrollbar Utilities */
@@ -46,4 +131,39 @@ h1, h2, h3, h4 {
 
 .print-only {
   display: none;
+}
+
+@media (forced-colors: active) {
+  :root {
+    --focus-ring-color: Highlight;
+    --focus-ring-offset-color: Canvas;
+  }
+
+  a[href]:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [role="button"]:focus-visible,
+  [role="tab"]:focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    forced-color-adjust: auto;
+    border: 1px solid ButtonText;
+  }
+
+  /* Keep small utility text legible in system high-contrast themes */
+  [class*="text-[10px]"],
+  [class*="text-[11px]"],
+  [class*="text-xs"] {
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+  }
 }

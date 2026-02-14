@@ -42,7 +42,7 @@ export const RegulatoryLibrary: React.FC = () => {
         {/* ── Hero ── */}
         <section className="bg-warm-gray border-b border-slate-200">
           <div className="max-w-[1200px] mx-auto px-6 py-16 md:py-20">
-            <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold mb-4 block">
+            <span className="text-sm font-bold uppercase tracking-[0.3em] text-gold mb-4 block">
               50 State Directory
             </span>
             <h1 className="text-3xl md:text-4xl font-serif font-bold text-charcoal mb-6">
@@ -97,7 +97,7 @@ export const RegulatoryLibrary: React.FC = () => {
                             <h3 className="font-bold text-charcoal group-hover:text-gold transition-colors">
                               {state.name}
                             </h3>
-                            <p className="text-xs text-slate-500 mt-1">
+                            <p className="text-sm text-slate-600 mt-1">
                               Regulations, Medicaid, Licensing
                             </p>
                           </div>

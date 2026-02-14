@@ -133,8 +133,9 @@ const main = async () => {
       postal_code: string | null;
     }
   >();
-  const looseMap = new Map<string, typeof supabaseFacilities>();
-  const nameCityStateMap = new Map<string, typeof supabaseFacilities>();
+  type FacilityRow = typeof supabaseFacilities[number];
+  const looseMap = new Map<string, FacilityRow[]>();
+  const nameCityStateMap = new Map<string, FacilityRow[]>();
 
   for (const row of supabaseFacilities) {
     const fullKey = makeKey(row.name, row.address_line1, row.city, row.state, row.postal_code);
