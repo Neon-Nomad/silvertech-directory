@@ -513,7 +513,7 @@ export const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
             <div>
               <div className="mb-6">
-                <img src="/images/logo2.png" alt="SilverTech Directory" className="h-8 w-auto" />
+                <img src="/logo.png" alt="SilverTech Directory" className="h-8 w-auto" />
               </div>
               <p className="text-sm text-slate-600 leading-relaxed">
                 The commission-free senior care directory focused on trust and data integrity. Built for families, by researchers.

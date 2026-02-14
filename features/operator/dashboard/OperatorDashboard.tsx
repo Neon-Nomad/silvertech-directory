@@ -138,8 +138,8 @@ const OperatorDashboard: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-charcoal text-white flex items-center justify-center font-bold">
-                ST
+              <div className="w-9 h-9 rounded-full bg-white border border-warm-gray flex items-center justify-center overflow-hidden">
+                <img src="/logo.png" alt="SilverTech" className="h-7 w-auto" />
               </div>
               <div>
                 <p className="text-sm text-charcoal/60 leading-none">SilverTech</p>

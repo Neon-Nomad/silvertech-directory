@@ -135,7 +135,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" onClick={handleLogoClick} className="flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded">
-            <img src="/images/logo2.png" alt="SilverTech Directory" className="h-10 md:h-11 w-auto" />
+            <img src="/logo.png" alt="SilverTech Directory" className="h-12 w-auto" />
           </Link>
 
           {/* Primary Navigation — desktop */}

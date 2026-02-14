@@ -7,7 +7,6 @@ import {
   ShieldCheck,
   Star,
   TrendingUp,
-  Building2,
   Sparkles,
   Target,
   Crown,
@@ -85,8 +84,8 @@ export const FacilitiesPricingPage: React.FC = () => {
         {/* Header */}
         <header className="sticky top-0 z-40 bg-slate-900/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-primary-500 rounded-md flex items-center justify-center">
-                    <Building2 className="w-4 h-4 text-white" />
+                <div className="w-10 h-10 bg-white rounded-md border border-white/20 flex items-center justify-center overflow-hidden">
+                    <img src="/logo.png" alt="SilverTech" className="h-8 w-auto" />
                 </div>
                 <span className="font-semibold text-lg tracking-tight text-white">SilverTech</span>
             </div>
