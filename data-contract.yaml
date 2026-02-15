@@ -1,0 +1,48 @@
+version: 1.0.0
+last_updated: 2026-02-15
+context: SilverTech Ingestion and API Foundation
+
+entities:
+  facility:
+    primary_key: id
+    pii: false
+  lead:
+    primary_key: id
+    pii: true
+  lead_event:
+    primary_key: id
+    pii: false
+  facility_profile:
+    primary_key: facility_id
+    pii: false
+  qa_question:
+    primary_key: id
+    pii: false
+  qa_answer:
+    primary_key: id
+    pii: false
+  billing_event:
+    primary_key: id
+    pii: false
+
+event_contract:
+  required_fields:
+    - schema_version
+    - source_system
+    - canonical_entity
+    - occurred_at
+    - payload
+  idempotency_key:
+    - source_system
+    - source_event_id
+
+raw_layer:
+  append_only_tables:
+    - raw_events
+    - raw_source_snapshots
+  allowed_payload_types:
+    raw_events: object
+    raw_source_snapshots:
+      - object
+      - array
+
