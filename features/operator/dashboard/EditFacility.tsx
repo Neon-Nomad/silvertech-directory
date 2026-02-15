@@ -454,6 +454,113 @@ export const EditFacility: React.FC = () => {
               <FacilityCareTypesEditor facilityId={id} />
             </div>
 
+            {/* Mobile Contact Details */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 lg:hidden">
+              <h2 className="text-lg font-bold text-slate-900 mb-4">Contact Details</h2>
+              <div className="space-y-4">
+                <div>
+                  <label htmlFor="phone-mobile" className="block text-sm font-medium text-slate-700 mb-1">Phone Number</label>
+                  <input
+                    id="phone-mobile"
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email-mobile" className="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
+                  <input
+                    id="email-mobile"
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="website-mobile" className="block text-sm font-medium text-slate-700 mb-1">Website URL</label>
+                  <input
+                    id="website-mobile"
+                    type="url"
+                    name="website"
+                    value={formData.website}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile Pricing */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 lg:hidden">
+              <h2 className="text-lg font-bold text-slate-900 mb-4">Pricing</h2>
+              <div className="space-y-4">
+                <div>
+                  <label htmlFor="min_price_mobile" className="block text-sm font-medium text-slate-700 mb-1">Minimum Monthly Cost</label>
+                  <div className="relative">
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
+                    <input
+                      id="min_price_mobile"
+                      type="number"
+                      inputMode="decimal"
+                      min={0}
+                      step="1"
+                      name="min_price"
+                      value={formData.min_price}
+                      onChange={handleInputChange}
+                      className="w-full pl-8 pr-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500"
+                      placeholder="0"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label htmlFor="max_price_mobile" className="block text-sm font-medium text-slate-700 mb-1">Maximum Monthly Cost</label>
+                  <div className="relative">
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
+                    <input
+                      id="max_price_mobile"
+                      type="number"
+                      inputMode="decimal"
+                      min={0}
+                      step="1"
+                      name="max_price"
+                      value={formData.max_price}
+                      onChange={handleInputChange}
+                      className="w-full pl-8 pr-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500"
+                      placeholder="0"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile Location (Read Only) */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 lg:hidden">
+              <h2 className="text-lg font-bold text-slate-900 mb-4">Location</h2>
+              <p className="text-sm text-slate-500 mb-4">To update your address, please contact support.</p>
+              <div className="space-y-3 bg-slate-50 p-4 rounded-lg">
+                <div>
+                  <label className="block text-xs font-medium text-slate-500 uppercase">Address</label>
+                  <p className="text-slate-900">{formData.address_line1}</p>
+                </div>
+                <div>
+                  <label className="block text-xs font-medium text-slate-500 uppercase">City</label>
+                  <p className="text-slate-900">{formData.city}</p>
+                </div>
+                <div>
+                  <label className="block text-xs font-medium text-slate-500 uppercase">State</label>
+                  <p className="text-slate-900">{formData.state}</p>
+                </div>
+                <div>
+                  <label className="block text-xs font-medium text-slate-500 uppercase">Zip Code</label>
+                  <p className="text-slate-900">{formData.postal_code}</p>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           {/* Sidebar Column */}

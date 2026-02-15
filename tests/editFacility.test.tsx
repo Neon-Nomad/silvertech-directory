@@ -99,10 +99,28 @@ describe('EditFacility Phase 5 versioning workflow', () => {
   it('uses decimal-friendly mobile keypad settings for pricing inputs', async () => {
     render(<EditFacility />);
 
-    const minInput = await screen.findByLabelText('Minimum Monthly Cost');
-    const maxInput = await screen.findByLabelText('Maximum Monthly Cost');
+    await waitFor(() => {
+      expect(screen.getAllByLabelText('Minimum Monthly Cost').length).toBeGreaterThan(1);
+      expect(screen.getAllByLabelText('Maximum Monthly Cost').length).toBeGreaterThan(1);
+    });
+    for (const min of screen.getAllByLabelText('Minimum Monthly Cost')) {
+      expect(min).toHaveAttribute('inputmode', 'decimal');
+    }
+    for (const max of screen.getAllByLabelText('Maximum Monthly Cost')) {
+      expect(max).toHaveAttribute('inputmode', 'decimal');
+    }
+  });
 
-    expect(minInput).toHaveAttribute('inputmode', 'decimal');
-    expect(maxInput).toHaveAttribute('inputmode', 'decimal');
+  it('keeps core contact and location sections available in mobile layout', async () => {
+    render(<EditFacility />);
+
+    await waitFor(() => {
+      expect(screen.getAllByText('Basic Information').length).toBeGreaterThan(0);
+    });
+
+    expect(screen.getAllByLabelText('Phone Number').length).toBeGreaterThan(1);
+    expect(screen.getAllByLabelText('Email Address').length).toBeGreaterThan(1);
+    expect(screen.getAllByLabelText('Website URL').length).toBeGreaterThan(1);
+    expect(screen.getAllByText('Location').length).toBeGreaterThan(0);
   });
 });
