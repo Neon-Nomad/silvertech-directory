@@ -1,0 +1,38 @@
+name: Data Pipeline
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+      PIPELINE_NORMALIZE_BATCH_SIZE: "200"
+      PIPELINE_NORMALIZE_MAX_BATCHES: "20"
+      PIPELINE_MAX_PENDING_EVENTS: "500"
+      PIPELINE_RAW_MAX_MINUTES: "180"
+      PIPELINE_NORMALIZED_MAX_MINUTES: "240"
+      PIPELINE_READ_MODEL_MAX_MINUTES: "360"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run data pipeline
+        run: npm run pipeline:run
+
