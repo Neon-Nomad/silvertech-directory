@@ -1,10 +1,30 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Building2, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { useAuth } from '@/src/context/AuthProvider';
 
 export const ClaimBusiness: React.FC = () => {
+  const navigate = useNavigate();
+  const { user, loading } = useAuth();
   const loginPath = `/login?redirect_to=${encodeURIComponent('/claim-business')}`;
+
+  useEffect(() => {
+    if (!loading && user) {
+      navigate('/dashboard', { replace: true });
+    }
+  }, [loading, user, navigate]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-white flex items-center justify-center">
+        <p className="text-slate-500">Loading...</p>
+      </div>
+    );
+  }
+
+  if (user) return null;
+
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
@@ -50,11 +70,14 @@ export const ClaimBusiness: React.FC = () => {
         <div className="mt-16 text-center">
           <Link to={loginPath}>
             <Button size="lg" className="px-8 py-3 text-lg">
-              Get Started
+              Sign In
             </Button>
           </Link>
           <p className="mt-4 text-sm text-slate-500">
-            Already have an account? <Link to={loginPath} className="text-primary-600 hover:text-primary-500 font-medium">Log in</Link>
+            Already have an account?{' '}
+            <Link to={loginPath} className="text-primary-600 hover:text-primary-500 font-medium">
+              Sign In
+            </Link>
           </p>
         </div>
       </div>

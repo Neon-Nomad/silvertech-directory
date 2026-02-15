@@ -316,6 +316,15 @@ export const OperatorQA: React.FC<OperatorQAProps> = ({ highlightQuestionId = nu
         <h2 className="text-2xl font-bold text-slate-900">Facility Q&A</h2>
       </div>
 
+      <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-3 sm:p-4">
+        <div className="inline-flex min-h-11 items-center rounded-lg border border-primary-200 bg-primary-50 px-4 text-sm font-semibold text-primary-800">
+          Official Responses
+        </div>
+        <p className="mt-2 text-xs text-slate-600">
+          Community discussion and moderation are deferred to V1.5. V1 is focused on official, verified operator responses.
+        </p>
+      </div>
+
       {groupedByFacility.map(({ facility, questions: facilityQuestions, faqs: facilityFaqs, staleAnswers }) => (
         <div key={facility.id} className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
           <div className="flex items-center justify-between mb-4">
@@ -344,7 +353,7 @@ export const OperatorQA: React.FC<OperatorQAProps> = ({ highlightQuestionId = nu
                 Upgrade to publish Official FAQs and unlock premium FAQ schema benefits.
                 <button
                   type="button"
-                  className="ml-2 underline font-semibold"
+                  className="ml-2 inline-flex min-h-11 items-center underline font-semibold"
                   onClick={() => {
                     trackEvent('qa_shadow_answer_click', { feature: 'official-faqs', facilityId: facility.id });
                     setUpgradeFeature('official-faqs');
@@ -392,6 +401,7 @@ export const OperatorQA: React.FC<OperatorQAProps> = ({ highlightQuestionId = nu
             <div className="mt-3">
               <Button
                 size="sm"
+                className="min-h-11"
                 onClick={() => handleAddFaq(facility.id)}
                 disabled={faqSavingFacilityId === facility.id || isShadowMode}
               >
@@ -460,7 +470,7 @@ export const OperatorQA: React.FC<OperatorQAProps> = ({ highlightQuestionId = nu
                             Upgrade to respond as a Verified Representative.
                             <button
                               type="button"
-                              className="ml-2 underline font-semibold"
+                              className="ml-2 inline-flex min-h-11 items-center underline font-semibold"
                               onClick={() => {
                                 trackEvent('qa_shadow_answer_click', { questionId: question.id, facilityId: question.facility_id });
                                 setUpgradeFeature('verified-answers');
@@ -500,6 +510,7 @@ export const OperatorQA: React.FC<OperatorQAProps> = ({ highlightQuestionId = nu
                               <Button
                                 variant="primary"
                                 size="sm"
+                                className="min-h-11 px-4"
                                 disabled={submittingQuestionId === question.id || !withinBounds}
                                 onClick={() => handleSubmitAnswer(question, facility.name)}
                               >

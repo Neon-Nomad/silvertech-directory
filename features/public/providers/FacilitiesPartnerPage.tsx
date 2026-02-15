@@ -27,23 +27,6 @@ export const FacilitiesPartnerPage: React.FC = () => {
         <link rel="canonical" href="https://silvertechdirectory.com/for-facilities" />
       </Helmet>
 
-      <header className="sticky top-0 z-40 bg-warm-gray/95 backdrop-blur-md border-b border-slate-200 px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-white rounded-md border border-slate-200 flex items-center justify-center overflow-hidden">
-            <img src="/logo.png" alt="SilverTech" className="h-8 w-auto" />
-          </div>
-          <span className="font-semibold text-lg tracking-tight">SilverTech</span>
-        </div>
-        <Button
-          variant="primary"
-          size="sm"
-          className="px-4 py-2 text-xs uppercase tracking-widest"
-          onClick={() => navigate('/claim-business')}
-        >
-          Claim Listing
-        </Button>
-      </header>
-
       <main className="max-w-5xl mx-auto px-6 py-12 space-y-12">
         <section className="text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-semibold text-slate-900 leading-tight mb-4">
@@ -197,4 +180,3 @@ export const FacilitiesPartnerPage: React.FC = () => {
     </div>
   );
 };
-

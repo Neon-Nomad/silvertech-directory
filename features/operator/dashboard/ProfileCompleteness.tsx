@@ -1,25 +1,29 @@
 import React from 'react';
 import { CheckCircle2, Circle, AlertCircle } from 'lucide-react';
 
-interface ProfileCompletenessProps {
-  data: {
-    name?: string;
-    description?: string;
-    phone?: string;
-    email?: string;
-    website?: string;
-    address_line1?: string;
-    min_price?: number | null;
-    max_price?: number | null;
-  };
-  counts: {
-    photos: number;
-    amenities: number;
-    careTypes: number;
-  };
+export interface ProfileCompletenessData {
+  name?: string;
+  description?: string;
+  phone?: string;
+  email?: string;
+  website?: string;
+  address_line1?: string;
+  min_price?: number | null;
+  max_price?: number | null;
 }
 
-export const ProfileCompleteness: React.FC<ProfileCompletenessProps> = ({ data, counts }) => {
+export interface ProfileCompletenessCounts {
+  photos: number;
+  amenities: number;
+  careTypes: number;
+}
+
+interface ProfileCompletenessProps {
+  data: ProfileCompletenessData;
+  counts: ProfileCompletenessCounts;
+}
+
+export const getProfileCompleteness = (data: ProfileCompletenessData, counts: ProfileCompletenessCounts) => {
   const criteria = [
     { label: 'Facility Name', met: !!data.name },
     { label: 'Description', met: !!data.description && data.description.length > 50 },
@@ -36,6 +40,12 @@ export const ProfileCompleteness: React.FC<ProfileCompletenessProps> = ({ data, 
   const metCount = criteria.filter(c => c.met).length;
   const totalCount = criteria.length;
   const percentage = Math.round((metCount / totalCount) * 100);
+
+  return { criteria, metCount, totalCount, percentage };
+};
+
+export const ProfileCompleteness: React.FC<ProfileCompletenessProps> = ({ data, counts }) => {
+  const { criteria, percentage } = getProfileCompleteness(data, counts);
 
   const getStatusColor = () => {
     if (percentage < 50) return 'text-red-600 bg-red-50 border-red-200';

@@ -9,7 +9,8 @@ interface DropdownItem {
 
 interface NavCategory {
   label: string;
-  items: DropdownItem[];
+  items?: DropdownItem[];
+  href?: string;
 }
 
 const NAV_CATEGORIES: NavCategory[] = [
@@ -47,6 +48,17 @@ const NAV_CATEGORIES: NavCategory[] = [
     ],
   },
   {
+    label: 'Why This Exists',
+    href: '/why-this-exists',
+  },
+  {
+    label: 'Sign In',
+    items: [
+      { label: 'Family Sign In', href: '/login' },
+      { label: 'Facility Sign In', href: '/operator/login' },
+    ],
+  },
+  {
     label: 'For Facilities',
     items: [
       { label: 'Claim a Listing', href: '/for-facilities' },
@@ -62,6 +74,18 @@ const NavDropdown: React.FC<{
   onOpen: () => void;
   onClose: () => void;
 }> = ({ category, isOpen, onOpen, onClose }) => {
+  if (category.href) {
+    return (
+      <Link
+        to={category.href}
+        className="text-sm font-medium text-charcoal hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
+      >
+        {category.label}
+      </Link>
+    );
+  }
+
+  const menuItems = category.items || [];
   const ref = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -106,7 +130,7 @@ const NavDropdown: React.FC<{
           role="menu"
           className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-warm-gray py-2 z-50"
         >
-          {category.items.map((item) => (
+          {menuItems.map((item) => (
             <Link
               key={item.label}
               to={item.href}
@@ -134,8 +158,12 @@ const Navbar: React.FC = () => {
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" onClick={handleLogoClick} className="flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded">
-            <img src="/logo.png" alt="SilverTech Directory" className="h-12 w-auto" />
+          <Link
+            to="/"
+            onClick={handleLogoClick}
+            className="flex-shrink-0 w-[220px] md:w-[250px] h-10 md:h-11 flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded"
+          >
+            <img src="/logo-nav.png" alt="SilverTech Directory" className="w-full h-full object-contain -translate-y-[6px] scale-90" />
           </Link>
 
           {/* Primary Navigation — desktop */}
@@ -220,6 +248,19 @@ const MobileNavSection: React.FC<{
   category: NavCategory;
   onClose: () => void;
 }> = ({ category, onClose }) => {
+  if (category.href) {
+    return (
+      <Link
+        to={category.href}
+        onClick={onClose}
+        className="block py-1.5 text-sm font-semibold text-charcoal hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
+      >
+        {category.label}
+      </Link>
+    );
+  }
+
+  const menuItems = category.items || [];
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -235,7 +276,7 @@ const MobileNavSection: React.FC<{
       </button>
       {expanded && (
         <div id={`mobile-submenu-${category.label.toLowerCase().replace(/\s+/g, '-')}`} className="mt-1 ml-3 space-y-1">
-          {category.items.map((item) => (
+          {menuItems.map((item) => (
             <Link
               key={item.label}
               to={item.href}

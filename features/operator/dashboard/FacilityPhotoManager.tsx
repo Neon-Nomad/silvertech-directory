@@ -127,6 +127,7 @@ export const FacilityPhotoManager: React.FC<FacilityPhotoManagerProps> = ({ faci
             type="file"
             multiple
             accept="image/*"
+            capture="environment"
             name="gallery-upload"
             onChange={handleFileUpload}
             className="hidden"
@@ -135,7 +136,7 @@ export const FacilityPhotoManager: React.FC<FacilityPhotoManagerProps> = ({ faci
           />
           <label
             htmlFor="gallery-upload"
-            className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors cursor-pointer ${
+            className={`inline-flex min-h-11 items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors cursor-pointer ${
               uploading 
                 ? 'bg-slate-100 text-slate-400 cursor-not-allowed' 
                 : 'bg-primary-50 text-primary-700 hover:bg-primary-100'

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Save, ArrowLeft, Globe } from 'lucide-react';
+import { Save, ArrowLeft, Globe, CheckCircle2, ShieldCheck, X, UploadCloud } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { supabase } from '@/src/lib/supabase';
 import { useAuth } from '@/src/context/AuthProvider';
 import { FacilityPhotoManager } from './FacilityPhotoManager';
 import { FacilityAmenitiesEditor } from './FacilityAmenitiesEditor';
 import { FacilityCareTypesEditor } from './FacilityCareTypesEditor';
-import { ProfileCompleteness } from './ProfileCompleteness';
+import { ProfileCompleteness, getProfileCompleteness } from './ProfileCompleteness';
 
 export const EditFacility: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -16,8 +16,13 @@ export const EditFacility: React.FC = () => {
 
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
+  const [publishing, setPublishing] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState(false);
+  const [success, setSuccess] = useState<{ title: string; body: string } | null>(null);
+  const [showMobileHealth, setShowMobileHealth] = useState(false);
+  const [versioningEnabled, setVersioningEnabled] = useState(false);
+  const [draftVersionNo, setDraftVersionNo] = useState<number | null>(null);
+  const [publishedVersionNo, setPublishedVersionNo] = useState<number | null>(null);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -85,7 +90,7 @@ export const EditFacility: React.FC = () => {
           return;
         }
 
-        setFormData({
+        const nextFormData = {
           name: data.name || '',
           description: data.description || '',
           phone: data.phone || '',
@@ -98,7 +103,34 @@ export const EditFacility: React.FC = () => {
           min_price: data.min_price?.toString() || '',
           max_price: data.max_price?.toString() || '',
           plan: data.plan || 'basic'
-        });
+        };
+        setFormData(nextFormData);
+
+        const { data: profileState, error: profileStateError } = await supabase
+          .rpc('get_operator_facility_profile_state', { p_facility_id: id });
+
+        if (!profileStateError && Array.isArray(profileState) && profileState.length > 0) {
+          const row = profileState[0] as any;
+          const payload = (row?.payload || {}) as Record<string, any>;
+          setVersioningEnabled(true);
+          setDraftVersionNo(typeof row?.draft_version_no === 'number' ? row.draft_version_no : null);
+          setPublishedVersionNo(typeof row?.published_version_no === 'number' ? row.published_version_no : null);
+
+          setFormData({
+            name: payload.name ?? nextFormData.name,
+            description: payload.description ?? nextFormData.description,
+            phone: payload.phone ?? nextFormData.phone,
+            website: payload.website ?? nextFormData.website,
+            email: payload.email ?? nextFormData.email,
+            address_line1: payload.address_line1 ?? nextFormData.address_line1,
+            city: payload.city ?? nextFormData.city,
+            state: payload.state ?? nextFormData.state,
+            postal_code: payload.postal_code ?? nextFormData.postal_code,
+            min_price: payload.min_price !== null && payload.min_price !== undefined ? String(payload.min_price) : nextFormData.min_price,
+            max_price: payload.max_price !== null && payload.max_price !== undefined ? String(payload.max_price) : nextFormData.max_price,
+            plan: payload.plan ?? nextFormData.plan
+          });
+        }
 
         await fetchCounts();
       } catch (err) {
@@ -117,11 +149,26 @@ export const EditFacility: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async () => {
+  const buildPayload = () => ({
+    name: formData.name,
+    description: formData.description,
+    phone: formData.phone,
+    website: formData.website,
+    email: formData.email,
+    address_line1: formData.address_line1,
+    city: formData.city,
+    state: formData.state,
+    postal_code: formData.postal_code,
+    min_price: formData.min_price,
+    max_price: formData.max_price,
+    plan: formData.plan,
+  });
+
+  const handleSaveLiveFallback = async () => {
     if (!id || !user) return;
     setSaving(true);
     setError(null);
-    setSuccess(false);
+    setSuccess(null);
 
     try {
       const { error } = await supabase
@@ -139,8 +186,11 @@ export const EditFacility: React.FC = () => {
         .eq('id', id);
 
       if (error) throw error;
-      setSuccess(true);
-      setTimeout(() => setSuccess(false), 3000);
+      setSuccess({
+        title: 'Changes Saved & Live',
+        body: 'Your facility profile has been updated across the directory.',
+      });
+      setTimeout(() => setSuccess(null), 3000);
     } catch (err) {
       console.error('Error updating facility:', err);
       setError('Failed to save changes. Please try again.');
@@ -149,8 +199,81 @@ export const EditFacility: React.FC = () => {
     }
   };
 
+  const handleSaveDraft = async () => {
+    if (!id || !user) return;
+    if (!versioningEnabled) {
+      await handleSaveLiveFallback();
+      return;
+    }
+
+    setSaving(true);
+    setError(null);
+    setSuccess(null);
+
+    try {
+      const { data: draftData, error: draftError } = await supabase.rpc('save_operator_facility_profile_draft', {
+        p_facility_id: id,
+        p_payload: buildPayload(),
+      });
+      if (draftError) throw draftError;
+
+      const row = Array.isArray(draftData) ? draftData[0] : null;
+      if (row?.version_no) setDraftVersionNo(Number(row.version_no));
+
+      setSuccess({
+        title: 'Draft Saved',
+        body: 'Your changes were saved as a draft. Publish when ready.',
+      });
+      setTimeout(() => setSuccess(null), 3000);
+    } catch (err) {
+      console.error('Error saving draft:', err);
+      setError('Failed to save draft. Please try again.');
+    } finally {
+      setSaving(false);
+    }
+  };
+
   const handlePublish = async () => {
-    await handleSubmit();
+    if (!id || !user) return;
+    if (!versioningEnabled) {
+      await handleSaveLiveFallback();
+      return;
+    }
+
+    setPublishing(true);
+    setError(null);
+    setSuccess(null);
+    try {
+      const { data: draftData, error: draftError } = await supabase.rpc('save_operator_facility_profile_draft', {
+        p_facility_id: id,
+        p_payload: buildPayload(),
+      });
+      if (draftError) throw draftError;
+      const draftRow = Array.isArray(draftData) ? draftData[0] : null;
+      if (draftRow?.version_no) setDraftVersionNo(Number(draftRow.version_no));
+
+      const { data: publishData, error: publishError } = await supabase.rpc('publish_operator_facility_profile', {
+        p_facility_id: id,
+      });
+      if (publishError) throw publishError;
+
+      const publishRow = Array.isArray(publishData) ? publishData[0] : null;
+      if (publishRow?.version_no) {
+        setPublishedVersionNo(Number(publishRow.version_no));
+        setDraftVersionNo(null);
+      }
+
+      setSuccess({
+        title: 'Changes Published Live',
+        body: 'Your facility profile is now live across the directory.',
+      });
+      setTimeout(() => setSuccess(null), 3000);
+    } catch (err) {
+      console.error('Error publishing profile:', err);
+      setError('Failed to publish changes. Please try again.');
+    } finally {
+      setPublishing(false);
+    }
   };
 
   if (authLoading || loading) return (
@@ -174,26 +297,57 @@ export const EditFacility: React.FC = () => {
 
   if (!id) return <div className="text-center py-10 text-red-600">Facility ID missing</div>;
 
+  const completenessData = {
+    ...formData,
+    min_price: formData.min_price ? parseFloat(formData.min_price) : null,
+    max_price: formData.max_price ? parseFloat(formData.max_price) : null
+  };
+  const profileHealth = getProfileCompleteness(completenessData, counts);
+
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
+      {success && (
+        <div
+          className="fixed top-20 right-4 z-50 max-w-sm rounded-lg border-l-4 border-green-500 bg-green-50 p-4 shadow-lg sm:right-6"
+          role="status"
+          aria-live="polite"
+        >
+          <div className="flex items-start gap-3">
+            <CheckCircle2 className="mt-0.5 h-5 w-5 text-green-600" />
+            <div>
+              <p className="text-sm font-semibold text-green-900">{success.title}</p>
+              <p className="text-xs text-green-700">{success.body}</p>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <div className="bg-white border-b border-slate-200 sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <Button variant="ghost" onClick={() => navigate('/dashboard')} className="p-2">
+            <Button variant="ghost" onClick={() => navigate('/dashboard')} className="p-2 min-h-11 min-w-11">
               <ArrowLeft className="w-5 h-5" />
             </Button>
             <h1 className="text-xl font-bold text-slate-900">Edit Facility</h1>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3">
             <Button variant="outline" onClick={() => window.open(`/facility/${id}`, '_blank')}>
               View Public Page
             </Button>
-            <Button variant="primary" onClick={handleSubmit} disabled={saving}>
+            <Button variant="outline" onClick={handleSaveDraft} disabled={saving || publishing}>
               {saving ? 'Saving...' : (
                 <>
                   <Save className="w-4 h-4 mr-2" />
-                  Save Changes
+                  Save Draft
+                </>
+              )}
+            </Button>
+            <Button variant="primary" onClick={handlePublish} disabled={saving || publishing}>
+              {publishing ? 'Publishing...' : (
+                <>
+                  <UploadCloud className="w-4 h-4 mr-2" />
+                  Publish Live
                 </>
               )}
             </Button>
@@ -201,14 +355,31 @@ export const EditFacility: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {success && (
-          <div className="mb-6 bg-green-50 text-green-700 p-4 rounded-lg flex items-center gap-2 animate-fade-in">
-            <Save className="h-5 w-5" />
-            Changes saved successfully!
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 lg:hidden">
+        <div className="rounded-xl border border-slate-200 bg-white p-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-sm text-slate-500">Profile Health</p>
+              <p className="text-xl font-bold text-slate-900">{profileHealth.percentage}% complete</p>
+              {versioningEnabled && (
+                <p className="text-xs text-slate-500 mt-1">
+                  {draftVersionNo ? `Draft v${draftVersionNo}` : 'No draft'}
+                  {publishedVersionNo ? ` • Live v${publishedVersionNo}` : ''}
+                </p>
+              )}
+            </div>
+            <Button
+              variant="outline"
+              className="min-h-11 px-4"
+              onClick={() => setShowMobileHealth(true)}
+            >
+              View Checklist
+            </Button>
           </div>
-        )}
+        </div>
+      </div>
 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content Column */}
           <div className="lg:col-span-2 space-y-8">
@@ -286,28 +457,35 @@ export const EditFacility: React.FC = () => {
           </div>
 
           {/* Sidebar Column */}
-          <div className="space-y-6">
+          <div className="hidden lg:block space-y-6">
 
             {/* Profile Completeness */}
-            <ProfileCompleteness
-              data={{
-                ...formData,
-                min_price: formData.min_price ? parseFloat(formData.min_price) : null,
-                max_price: formData.max_price ? parseFloat(formData.max_price) : null
-              }}
-              counts={counts}
-            />
+            <ProfileCompleteness data={completenessData} counts={counts} />
 
-            {/* Publish Action */}
+            {/* Save Action */}
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-              <h2 className="text-lg font-bold text-slate-900 mb-4">Publish Profile</h2>
+              <h2 className="text-lg font-bold text-slate-900 mb-4">Version Control</h2>
               <p className="text-sm text-slate-600 mb-4">
-                Make sure your profile is up to date. Publishing will mark your facility as recently updated, improving your visibility.
+                {versioningEnabled
+                  ? 'Save a draft anytime, then publish when you are ready for changes to go live.'
+                  : 'Save updates to keep your listing accurate and visible to families.'}
               </p>
-              <Button variant="outline" className="w-full" onClick={handlePublish} disabled={saving}>
-                <Globe className="w-4 h-4 mr-2" />
-                Publish Updates
-              </Button>
+              {versioningEnabled && (
+                <div className="mb-3 text-xs text-slate-500">
+                  {draftVersionNo ? `Draft v${draftVersionNo}` : 'No draft'}
+                  {publishedVersionNo ? ` • Live v${publishedVersionNo}` : ''}
+                </div>
+              )}
+              <div className="grid grid-cols-1 gap-2">
+                <Button variant="outline" className="w-full min-h-11" onClick={handleSaveDraft} disabled={saving || publishing}>
+                  <Save className="w-4 h-4 mr-2" />
+                  {saving ? 'Saving...' : 'Save Draft'}
+                </Button>
+                <Button variant="primary" className="w-full min-h-11" onClick={handlePublish} disabled={saving || publishing}>
+                  <UploadCloud className="w-4 h-4 mr-2" />
+                  {publishing ? 'Publishing...' : 'Publish Live'}
+                </Button>
+              </div>
             </div>
 
             {/* Contact Details */}
@@ -361,6 +539,9 @@ export const EditFacility: React.FC = () => {
                     <input
                       id="min_price"
                       type="number"
+                      inputMode="decimal"
+                      min={0}
+                      step="1"
                       name="min_price"
                       value={formData.min_price}
                       onChange={handleInputChange}
@@ -376,6 +557,9 @@ export const EditFacility: React.FC = () => {
                     <input
                       id="max_price"
                       type="number"
+                      inputMode="decimal"
+                      min={0}
+                      step="1"
                       name="max_price"
                       value={formData.max_price}
                       onChange={handleInputChange}
@@ -412,6 +596,63 @@ export const EditFacility: React.FC = () => {
             </div>
 
           </div>
+        </div>
+      </div>
+
+      {showMobileHealth && (
+        <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label="Profile health details">
+          <button
+            className="absolute inset-0 bg-slate-900/50"
+            onClick={() => setShowMobileHealth(false)}
+            aria-label="Close profile health drawer"
+          />
+          <div className="absolute bottom-0 left-0 right-0 max-h-[85vh] overflow-y-auto rounded-t-2xl bg-white p-4 shadow-2xl">
+            <div className="mb-4 flex items-center justify-between border-b border-slate-200 pb-3">
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="h-5 w-5 text-slate-700" />
+                <h2 className="text-base font-semibold text-slate-900">Profile Health</h2>
+              </div>
+              <button
+                type="button"
+                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg text-slate-500 hover:bg-slate-100"
+                onClick={() => setShowMobileHealth(false)}
+                aria-label="Close"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <ProfileCompleteness data={completenessData} counts={counts} />
+            <div className="mt-4 rounded-xl border border-slate-200 p-4">
+              <p className="text-sm text-slate-600 mb-3">
+                {versioningEnabled ? 'Save draft updates and publish when ready.' : 'Changes are saved live across your listing.'}
+              </p>
+              <div className="grid grid-cols-1 gap-2">
+                <Button variant="outline" className="w-full min-h-11 justify-center" onClick={handleSaveDraft} disabled={saving || publishing}>
+                  {saving ? 'Saving...' : 'Save Draft'}
+                </Button>
+                <Button variant="primary" className="w-full min-h-11 justify-center" onClick={handlePublish} disabled={saving || publishing}>
+                  {publishing ? 'Publishing...' : 'Publish Live'}
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div
+        className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 p-3 backdrop-blur md:hidden"
+        style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}
+      >
+        <div className="mx-auto flex max-w-7xl items-center gap-3">
+          <Button variant="outline" className="flex-1 justify-center min-h-11" onClick={() => window.open(`/facility/${id}`, '_blank')}>
+            View Public Page
+          </Button>
+          <Button variant="outline" className="flex-1 justify-center min-h-11" onClick={handleSaveDraft} disabled={saving || publishing}>
+            {saving ? 'Saving...' : 'Save Draft'}
+          </Button>
+          <Button variant="primary" className="flex-1 justify-center min-h-11" onClick={handlePublish} disabled={saving || publishing}>
+            {publishing ? 'Publishing...' : 'Publish Live'}
+          </Button>
         </div>
       </div>
     </div>

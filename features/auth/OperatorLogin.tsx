@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { Lock, Mail, ArrowRight } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
 import { supabase } from '../../src/lib/supabase';
 
 const OperatorLogin: React.FC = () => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const redirectToParam = searchParams.get('redirect_to') || '/dashboard';
+  const redirectTo = redirectToParam.startsWith('/') ? redirectToParam : '/dashboard';
   const formErrorId = 'operator-login-error';
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -17,7 +20,7 @@ const OperatorLogin: React.FC = () => {
     const checkUser = async () => {
       const { data: { session } } = await supabase.auth.getSession();
       if (session) {
-        navigate('/dashboard');
+        navigate(redirectTo, { replace: true });
       }
     };
     checkUser();
@@ -25,12 +28,12 @@ const OperatorLogin: React.FC = () => {
     // Listen for auth changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       if (session) {
-        navigate('/dashboard');
+        navigate(redirectTo, { replace: true });
       }
     });
 
     return () => subscription.unsubscribe();
-  }, [navigate]);
+  }, [navigate, redirectTo]);
 
   const handleGoogleLogin = async () => {
     try {
@@ -39,7 +42,7 @@ const OperatorLogin: React.FC = () => {
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `${window.location.origin}${import.meta.env.BASE_URL}dashboard`,
+          redirectTo: `${window.location.origin}${import.meta.env.BASE_URL}${redirectTo.replace(/^\//, '')}`,
         },
       });
       if (error) throw error;
@@ -227,6 +230,9 @@ const OperatorLogin: React.FC = () => {
             <div className="mt-6 grid grid-cols-1 gap-3">
               <Button variant="outline" className="w-full justify-center" onClick={() => navigate('/claim-business')}>
                 Apply for Access
+              </Button>
+              <Button variant="outline" className="w-full justify-center" onClick={() => navigate('/login')}>
+                Family Sign In
               </Button>
             </div>
           </div>

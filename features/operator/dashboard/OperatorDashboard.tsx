@@ -1,17 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams, useParams } from 'react-router-dom';
 import {
-  LayoutDashboard,
-  Building2,
-  Users,
-  Settings,
-  LogOut,
-  CreditCard,
-  CheckCircle,
-  Phone,
-  Mail,
-  TrendingUp,
-  BarChart3
+  LifeBuoy
 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { useAuth } from '@/src/context/AuthProvider';
@@ -21,32 +11,49 @@ import { LeadsView } from './LeadsView';
 import { OperatorQA } from './OperatorQA';
 import { Button } from '@/components/ui/Button';
 import { PRICING_PLANS } from '@/src/config/pricing';
+import { DashboardTab, dashboardPathForTab, normalizeDashboardTab } from '@/src/utils/dashboardRouting';
+import { BillingUiError, entitlementErrorCtaMap, parseEntitlementError } from '@/src/utils/billingErrors';
+import { HelpCenter } from './HelpCenter';
+import { HelpRouteKey } from '@/src/types/helpRegistry';
+import { DashboardOverview } from './DashboardOverview';
+import { BillingPlansView } from './BillingPlansView';
 
 const OperatorDashboard: React.FC = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
+  const { tab } = useParams<{ tab?: string }>();
   const { user, signOut, loading } = useAuth();
-  const [activeTab, setActiveTab] = useState<'overview' | 'facilities' | 'leads' | 'qa' | 'billing' | 'settings'>('overview');
   const [highlightQuestionId, setHighlightQuestionId] = useState<string | null>(null);
   const [facilities, setFacilities] = useState<any[]>([]);
-  const [loadingBilling, setLoadingBilling] = useState(false);
   const [userProfile, setUserProfile] = useState<any>(null);
+  const [billingUiError, setBillingUiError] = useState<BillingUiError | null>(null);
+  const [showContextHelp, setShowContextHelp] = useState(false);
+  const activeTab: DashboardTab = normalizeDashboardTab(tab) || 'overview';
+  const helpRouteByTab: Record<DashboardTab, HelpRouteKey> = {
+    overview: 'dashboard_overview',
+    listings: 'dashboard_listings',
+    leads: 'dashboard_leads',
+    qa: 'dashboard_qa',
+    billing: 'dashboard_billing',
+    help: 'dashboard_help',
+  };
 
   useEffect(() => {
-    const requestedTab = searchParams.get('tab');
     const questionId = searchParams.get('question_id');
-
-    if (questionId) {
-      setActiveTab('qa');
-      setHighlightQuestionId(questionId);
+    if (!questionId) {
+      setHighlightQuestionId(null);
       return;
     }
 
-    if (requestedTab === 'qa') {
-      setActiveTab('qa');
-      setHighlightQuestionId(null);
+    setHighlightQuestionId(questionId);
+    if (activeTab !== 'qa') {
+      navigate(`/dashboard/qa?question_id=${encodeURIComponent(questionId)}`, { replace: true });
     }
-  }, [searchParams]);
+  }, [activeTab, navigate, searchParams]);
+
+  const goToTab = (nextTab: DashboardTab) => {
+    navigate(dashboardPathForTab(nextTab));
+  };
 
   useEffect(() => {
     if (activeTab === 'billing' && user) {
@@ -54,8 +61,17 @@ const OperatorDashboard: React.FC = () => {
     }
   }, [activeTab, user]);
 
+  useEffect(() => {
+    if (activeTab !== 'billing' && billingUiError) {
+      setBillingUiError(null);
+    }
+  }, [activeTab, billingUiError]);
+
+  useEffect(() => {
+    setShowContextHelp(false);
+  }, [activeTab]);
+
   const fetchBillingInfo = async () => {
-    setLoadingBilling(true);
     try {
       // Fetch user profile with billing info
       const { data: profile, error: profileError } = await supabase
@@ -77,8 +93,6 @@ const OperatorDashboard: React.FC = () => {
       setFacilities(facilitiesData || []);
     } catch (err) {
       console.error("Error fetching billing info:", err);
-    } finally {
-      setLoadingBilling(false);
     }
   };
 
@@ -103,7 +117,88 @@ const OperatorDashboard: React.FC = () => {
       }
     } catch (err) {
       console.error("Error creating portal session:", err);
-      alert("Failed to open billing portal. Please try again or contact support.");
+      const mapped = parseEntitlementError(err);
+      if (mapped) {
+        setBillingUiError(mapped);
+      } else {
+        setBillingUiError({
+          code: 'ERR_PLAN_RESTRICTED',
+          message: 'Unable to open billing portal right now. Please try again.',
+        });
+      }
+    }
+  };
+
+  const handleBillingErrorCta = (code: BillingUiError['code']) => {
+    const cta = entitlementErrorCtaMap[code];
+    if (!cta) return;
+    if (cta.action === 'billing') {
+      handleManageBilling();
+      return;
+    }
+    document.getElementById('upgrade-plans')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleUnassignFacility = async (facilityId: string) => {
+    try {
+      const { error } = await supabase
+        .from('facilities')
+        .update({ assigned_plan_owner_id: null })
+        .eq('id', facilityId)
+        .eq('assigned_plan_owner_id', user?.id);
+
+      if (error) throw error;
+      setBillingUiError(null);
+      await fetchBillingInfo();
+    } catch (err) {
+      console.error("Error unassigning facility:", err);
+      const mapped = parseEntitlementError(err);
+      if (mapped) {
+        setBillingUiError(mapped);
+      } else {
+        setBillingUiError({
+          code: 'ERR_PLAN_RESTRICTED',
+          message: 'Failed to unassign facility. Please try again.',
+        });
+      }
+    }
+  };
+
+  const handleAssignFacility = async (facilityId: string) => {
+    if (!userProfile?.facility_assignments_remaining || userProfile.facility_assignments_remaining <= 0) {
+      setBillingUiError({
+        code: 'ERR_SLOT_LIMIT',
+        message: `You've reached your limit for the current plan.`,
+      });
+      return;
+    }
+
+    try {
+      const newRemaining = userProfile.facility_assignments_remaining - 1;
+      setUserProfile({ ...userProfile, facility_assignments_remaining: newRemaining });
+
+      const { error } = await supabase
+        .from('facilities')
+        .update({ assigned_plan_owner_id: user?.id })
+        .eq('id', facilityId);
+
+      if (error) throw error;
+
+      setFacilities((prev) => prev.map((f) => (f.id === facilityId ? { ...f, assigned_plan_owner_id: user?.id } : f)));
+      setBillingUiError(null);
+      await fetchBillingInfo();
+    } catch (err) {
+      console.error("Error assigning facility:", err);
+      const mapped = parseEntitlementError(err);
+      if (mapped) {
+        setBillingUiError(mapped);
+      } else {
+        setBillingUiError({
+          code: 'ERR_PLAN_RESTRICTED',
+          message: 'Failed to assign facility. Please try again.',
+        });
+      }
+      await fetchBillingInfo();
     }
   };
 
@@ -138,18 +233,15 @@ const OperatorDashboard: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-white border border-warm-gray flex items-center justify-center overflow-hidden">
-                <img src="/logo.png" alt="SilverTech" className="h-7 w-auto" />
-              </div>
+              <img src="/logo.png" alt="SilverTech" className="h-11 w-auto" />
               <div>
-                <p className="text-sm text-charcoal/60 leading-none">SilverTech</p>
                 <p className="text-xs text-charcoal/40 leading-none">Operator Portal</p>
               </div>
             </div>
 
             <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-charcoal/70">
               <button
-                onClick={() => setActiveTab('overview')}
+                onClick={() => goToTab('overview')}
                 className={`pb-1 border-b-2 transition-colors ${activeTab === 'overview'
                   ? 'text-charcoal border-slate-900'
                   : 'border-transparent hover:text-charcoal'
@@ -158,8 +250,8 @@ const OperatorDashboard: React.FC = () => {
                 Dashboard
               </button>
               <button
-                onClick={() => setActiveTab('facilities')}
-                className={`pb-1 border-b-2 transition-colors ${activeTab === 'facilities'
+                onClick={() => goToTab('listings')}
+                className={`pb-1 border-b-2 transition-colors ${activeTab === 'listings'
                   ? 'text-charcoal border-slate-900'
                   : 'border-transparent hover:text-charcoal'
                   }`}
@@ -167,7 +259,7 @@ const OperatorDashboard: React.FC = () => {
                 Listings
               </button>
               <button
-                onClick={() => setActiveTab('leads')}
+                onClick={() => goToTab('leads')}
                 className={`pb-1 border-b-2 transition-colors ${activeTab === 'leads'
                   ? 'text-charcoal border-slate-900'
                   : 'border-transparent hover:text-charcoal'
@@ -176,7 +268,7 @@ const OperatorDashboard: React.FC = () => {
                 Leads
               </button>
               <button
-                onClick={() => setActiveTab('qa')}
+                onClick={() => goToTab('qa')}
                 className={`pb-1 border-b-2 transition-colors ${activeTab === 'qa'
                   ? 'text-charcoal border-slate-900'
                   : 'border-transparent hover:text-charcoal'
@@ -185,16 +277,7 @@ const OperatorDashboard: React.FC = () => {
                 Q&A
               </button>
               <button
-                onClick={() => setActiveTab('overview')}
-                className={`pb-1 border-b-2 transition-colors ${activeTab === 'overview'
-                  ? 'text-charcoal border-slate-900'
-                  : 'border-transparent hover:text-charcoal'
-                  }`}
-              >
-                Analytics
-              </button>
-              <button
-                onClick={() => setActiveTab('billing')}
+                onClick={() => goToTab('billing')}
                 className={`pb-1 border-b-2 transition-colors ${activeTab === 'billing'
                   ? 'text-charcoal border-slate-900'
                   : 'border-transparent hover:text-charcoal'
@@ -203,17 +286,35 @@ const OperatorDashboard: React.FC = () => {
                 Billing
               </button>
               <button
-                onClick={() => setActiveTab('settings')}
-                className={`pb-1 border-b-2 transition-colors ${activeTab === 'settings'
+                onClick={() => goToTab('help')}
+                className={`pb-1 border-b-2 transition-colors ${activeTab === 'help'
                   ? 'text-charcoal border-slate-900'
                   : 'border-transparent hover:text-charcoal'
                   }`}
               >
-                Settings
+                Help
               </button>
             </nav>
 
             <div className="flex items-center gap-4">
+              <div className="lg:hidden">
+                <label htmlFor="dashboard-tab-select" className="sr-only">
+                  Dashboard section
+                </label>
+                <select
+                  id="dashboard-tab-select"
+                  value={activeTab}
+                  onChange={(e) => goToTab(e.target.value as DashboardTab)}
+                  className="min-h-11 rounded-md border border-warm-gray bg-white px-3 py-2 text-sm text-charcoal"
+                >
+                  <option value="overview">Dashboard</option>
+                  <option value="listings">Listings</option>
+                  <option value="leads">Leads</option>
+                  <option value="qa">Q&A</option>
+                  <option value="billing">Billing</option>
+                  <option value="help">Help</option>
+                </select>
+              </div>
               <div className="hidden sm:flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-warm-gray flex items-center justify-center text-charcoal text-sm font-bold">
                   {user.email?.substring(0, 2).toUpperCase()}
@@ -236,407 +337,86 @@ const OperatorDashboard: React.FC = () => {
 
       <main className="max-w-7xl mx-auto px-6 py-10">
           {activeTab === 'overview' && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-              <section className="lg:col-span-4 space-y-6">
-                <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
-                  <h2 className="text-lg font-semibold text-charcoal mb-4">Quick Actions</h2>
-                  <div className="space-y-3">
-                    <button
-                      onClick={() => navigate('/search')}
-                      className="w-full bg-charcoal text-white py-3 rounded-full font-medium flex items-center justify-center gap-2"
-                    >
-                      <LayoutDashboard className="w-4 h-4" />
-                      View Public Profile
-                    </button>
-                    <button
-                      onClick={() => setActiveTab('facilities')}
-                      className="w-full bg-charcoal/80 text-white py-3 rounded-full font-medium flex items-center justify-center gap-2"
-                    >
-                      <Building2 className="w-4 h-4" />
-                      Edit Listing
-                    </button>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-lg font-semibold text-charcoal">Premium Benefits</h2>
-                    <div className="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center text-primary-600">
-                      <CheckCircle className="w-5 h-5" />
-                    </div>
-                  </div>
-                  <div className="space-y-3 text-sm text-charcoal/70">
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-gold" />
-                      Featured placement in results
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-gold" />
-                      Enhanced visibility across the directory
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-gold" />
-                      Priority support for family inquiries
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-lg font-semibold text-charcoal">Lead Attribution</h2>
-                    <span className="text-xs text-charcoal/40">Last 30 days</span>
-                  </div>
-                  <div className="space-y-3">
-                    {[
-                      { label: 'Google', value: 18 },
-                      { label: 'SilverTech', value: 12 },
-                      { label: 'Direct Link', value: 9 },
-                      { label: 'Referral', value: 6 }
-                    ].map((item) => (
-                      <div key={item.label}>
-                        <div className="flex items-center justify-between text-sm text-charcoal/70">
-                          <span>{item.label}</span>
-                          <span className="font-semibold text-charcoal">{item.value}</span>
-                        </div>
-                        <div className="h-2 bg-warm-gray rounded-full mt-2">
-                          <div
-                            className="h-2 rounded-full bg-charcoal/90"
-                            style={{ width: `${(item.value / 20) * 100}%` }}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </section>
-
-              <section className="lg:col-span-8 space-y-6">
-                <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-sm text-charcoal/60">
-                        Your listing is performing better than 68% of homes in your area.
-                      </p>
-                      <h2 className="text-lg font-semibold text-charcoal mt-1">Performance Overview</h2>
-                    </div>
-                    <div className="text-xs text-charcoal/60 flex items-center gap-1">
-                      <TrendingUp className="w-4 h-4" />
-                      Updated today
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-4 mt-5">
-                    {[
-                      { label: 'Profile Views', value: '1,250' },
-                      { label: 'Leads Received', value: '45' },
-                      { label: 'Estimated Move-Ins', value: '3' },
-                      { label: 'Estimated Revenue', value: '$18,000' },
-                      { label: 'Avg. Response Time', value: '1h 12m' }
-                    ].map((stat) => (
-                      <div key={stat.label} className="border border-warm-gray rounded-xl p-4 text-center">
-                        <p className="text-xs text-charcoal/60 uppercase">{stat.label}</p>
-                        <p className="text-2xl font-semibold text-charcoal mt-2">{stat.value}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-lg font-semibold text-charcoal">Recent Leads</h2>
-                    <button onClick={() => setActiveTab('leads')} className="text-sm text-charcoal/60 hover:text-charcoal">View all</button>
-                  </div>
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-sm">
-                      <thead>
-                        <tr className="text-left text-charcoal/60 border-b border-warm-gray">
-                          <th className="py-2">Name</th>
-                          <th className="py-2">Date</th>
-                          <th className="py-2">Inquiry Type</th>
-                          <th className="py-2">Status</th>
-                          <th className="py-2 text-right">Actions</th>
-                        </tr>
-                      </thead>
-                      <tbody className="text-charcoal">
-                        {[
-                          { name: 'Jona Smith', date: '03/22/2023', type: 'Inquiry Form', status: 'New', phone: '(555) 555-0111', email: 'jona@example.com' },
-                          { name: 'John Anthrena', date: '03/22/2023', type: 'Inquiry Form', status: 'Contacted', phone: '(555) 555-0112', email: 'john@example.com' },
-                          { name: 'Barky Jason', date: '03/22/2023', type: 'Inquiry Form', status: 'Follow-up', phone: '(555) 555-0113', email: 'barky@example.com' }
-                        ].map((lead) => (
-                          <tr key={lead.name} className="border-b border-warm-gray">
-                            <td className="py-3 font-medium">{lead.name}</td>
-                            <td className="py-3">{lead.date}</td>
-                            <td className="py-3">{lead.type}</td>
-                            <td className="py-3">
-                              <span className="px-2 py-1 rounded-full text-xs font-medium bg-warm-gray text-charcoal">
-                                {lead.status}
-                              </span>
-                            </td>
-                            <td className="py-3">
-                              <div className="flex items-center justify-end gap-2">
-                                <a
-                                  href={`tel:${lead.phone.replace(/[^0-9+]/g, '')}`}
-                                  className="w-8 h-8 rounded-full bg-charcoal text-white flex items-center justify-center"
-                                >
-                                  <Phone className="w-4 h-4" />
-                                </a>
-                                <a
-                                  href={`mailto:${lead.email}`}
-                                  className="w-8 h-8 rounded-full bg-charcoal/80 text-white flex items-center justify-center"
-                                >
-                                  <Mail className="w-4 h-4" />
-                                </a>
-                                <a
-                                  href={`tel:${lead.phone.replace(/[^0-9+]/g, '')}`}
-                                  className="px-4 py-1 rounded-full bg-charcoal text-white text-xs font-medium"
-                                >
-                                  Call
-                                </a>
-                              </div>
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-2xl border border-warm-gray shadow-sm p-6">
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="flex items-center gap-2">
-                      <BarChart3 className="w-5 h-5 text-charcoal/60" />
-                      <h2 className="text-lg font-semibold text-charcoal">Analytics</h2>
-                    </div>
-                    <select className="border border-warm-gray rounded-full px-3 py-1 text-sm text-charcoal/70">
-                      <option>Past month</option>
-                      <option>Past 3 months</option>
-                      <option>Past year</option>
-                    </select>
-                  </div>
-                  <div className="h-48 bg-warm-white rounded-xl border border-dashed border-warm-gray relative overflow-hidden">
-                    <svg viewBox="0 0 600 200" className="absolute inset-0 w-full h-full">
-                      <path
-                        d="M0 160 C80 120, 140 120, 200 140 C260 160, 320 60, 380 80 C440 100, 520 40, 600 70"
-                        fill="none"
-                        stroke="#2D2D2D"
-                        strokeWidth="3"
-                      />
-                      <path
-                        d="M0 160 C80 120, 140 120, 200 140 C260 160, 320 60, 380 80 C440 100, 520 40, 600 70 L600 200 L0 200 Z"
-                        fill="rgba(45, 45, 45, 0.08)"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </section>
-            </div>
+            <DashboardOverview
+              onGoToListings={() => goToTab('listings')}
+              onGoToLeads={() => goToTab('leads')}
+              onViewPublicProfile={() => navigate('/search')}
+            />
           )}
 
-          {activeTab === 'facilities' && <MyFacilities />}
+          {activeTab === 'listings' && <MyFacilities />}
           {activeTab === 'leads' && <LeadsView />}
           {activeTab === 'qa' && <OperatorQA highlightQuestionId={highlightQuestionId} />}
 
           {activeTab === 'billing' && (
+            <BillingPlansView
+              userId={user.id}
+              userProfile={userProfile}
+              facilities={facilities}
+              billingUiError={billingUiError}
+              onManageBilling={handleManageBilling}
+              onBillingErrorCta={handleBillingErrorCta}
+              onUpgrade={handleUpgrade}
+              onAssignFacility={handleAssignFacility}
+              onUnassignFacility={handleUnassignFacility}
+            />
+          )}
+
+          {activeTab === 'help' && (
             <div className="space-y-8">
-              <div className="flex justify-between items-center">
+              <div className="flex items-center justify-between">
                 <div>
-                  <h2 className="text-2xl font-bold text-charcoal">Billing & Plans</h2>
-                  <p className="text-charcoal/70">Manage your subscription and facility assignments.</p>
+                  <h2 className="text-2xl font-bold text-charcoal">Help Center</h2>
+                  <p className="text-charcoal/70">Guides, troubleshooting, and policies for operators.</p>
                 </div>
-                {userProfile?.stripe_customer_id && (
-                  <Button variant="outline" onClick={handleManageBilling} className="flex items-center gap-2">
-                    <CreditCard className="w-4 h-4" />
-                    Manage Payment Method
-                  </Button>
-                )}
-              </div>
-
-              {/* Current Plan Overview */}
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-warm-gray">
-                <h3 className="text-lg font-bold text-charcoal mb-4">Current Subscription</h3>
-                <div className="flex items-center justify-between p-4 bg-warm-white rounded-lg border border-warm-gray">
-                  <div>
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="font-bold text-xl text-charcoal">
-                        {PRICING_PLANS.find(p => p.id === (userProfile?.plan || 'free'))?.name}
-                      </span>
-                      <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${userProfile?.plan === 'free' || !userProfile?.plan
-                        ? 'bg-warm-gray text-charcoal/70'
-                        : 'bg-primary-100 text-primary-700'
-                        }`}>
-                        {userProfile?.status === 'active' ? 'Active' : 'Free Tier'}
-                      </span>
-                    </div>
-                    <p className="text-sm text-charcoal/70">
-                      {userProfile?.facility_assignments_remaining || 0} facility assignments remaining
-                    </p>
-                  </div>
-                  {userProfile?.plan !== 'lead_suite' && (
-                    <Button onClick={() => document.getElementById('upgrade-plans')?.scrollIntoView({ behavior: 'smooth' })}>
-                      Upgrade Plan
-                    </Button>
-                  )}
+                <div className="hidden sm:flex items-center gap-2 rounded-full border border-warm-gray bg-white px-4 py-2 text-sm text-charcoal/70">
+                  <LifeBuoy className="h-4 w-4" />
+                  Context-aware support
                 </div>
               </div>
-
-              {/* Facility Assignments */}
-              {userProfile?.plan !== 'free' && (
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-warm-gray">
-                  <h3 className="text-lg font-bold text-charcoal mb-4">Facility Assignments</h3>
-                  <p className="text-charcoal/70 mb-4 text-sm">
-                    Assign your premium plan benefits to specific facilities. You have <strong>{userProfile?.facility_assignments_remaining}</strong> slots available.
-                  </p>
-
-                  <div className="space-y-3">
-                    {facilities.map((facility) => {
-                      const isAssigned = facility.assigned_plan_owner_id === user?.id;
-                      return (
-                        <div key={facility.id} className="flex items-center justify-between p-4 border border-warm-gray rounded-lg hover:bg-warm-white transition-colors">
-                          <div className="flex items-center gap-3">
-                            <Building2 className={`w-5 h-5 ${isAssigned ? 'text-primary-600' : 'text-charcoal/40'}`} />
-                            <div>
-                              <p className="font-medium text-charcoal">{facility.name}</p>
-                              <p className="text-xs text-charcoal/60">
-                                {isAssigned ? 'Premium benefits active' : 'Basic listing'}
-                              </p>
-                            </div>
-                          </div>
-
-                          {isAssigned ? (
-                            <Button
-                              variant="outline"
-                              size="sm"
-                              className="text-red-600 hover:text-red-700 hover:bg-red-50 border-red-200"
-                              onClick={async () => {
-                                try {
-                                  const { error } = await supabase
-                                    .from('facilities')
-                                    .update({ assigned_plan_owner_id: null })
-                                    .eq('id', facility.id)
-                                    .eq('assigned_plan_owner_id', user?.id);
-
-                                  if (error) throw error;
-                                  await fetchBillingInfo();
-                                } catch (err) {
-                                  console.error("Error unassigning facility:", err);
-                                  alert("Failed to unassign facility. Please try again.");
-                                }
-                              }}
-                            >
-                              Unassign
-                            </Button>
-                          ) : (
-                            <Button
-                              size="sm"
-                              disabled={!userProfile?.facility_assignments_remaining || userProfile.facility_assignments_remaining <= 0}
-                              onClick={async () => {
-                                if (!userProfile?.facility_assignments_remaining) return;
-                                try {
-                                  // Optimistic update
-                                  const newRemaining = userProfile.facility_assignments_remaining - 1;
-                                  setUserProfile({ ...userProfile, facility_assignments_remaining: newRemaining });
-
-                                  // Update facility
-                                  const { error } = await supabase
-                                    .from('facilities')
-                                    .update({ assigned_plan_owner_id: user?.id })
-                                    .eq('id', facility.id);
-
-                                  if (error) throw error;
-
-                                  // Update local facilities state
-                                  setFacilities(facilities.map(f => f.id === facility.id ? { ...f, assigned_plan_owner_id: user?.id } : f));
-
-                                  // Update profile remaining count in DB (handled by trigger usually, but good to sync)
-                                  await fetchBillingInfo();
-
-                                } catch (err) {
-                                  console.error("Error assigning facility:", err);
-                                  alert("Failed to assign facility. Please try again.");
-                                  await fetchBillingInfo(); // Revert optimistic update
-                                }
-                              }}
-                            >
-                              Assign Plan
-                            </Button>
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-
-              {/* Available Plans */}
-              <div id="upgrade-plans">
-                <h3 className="text-xl font-bold text-charcoal mb-6">Available Plans</h3>
-                <div className="grid md:grid-cols-3 gap-6">
-                  {PRICING_PLANS.filter(p => p.id !== 'free').map((plan) => {
-                    const isCurrentPlan = userProfile?.plan === plan.id;
-                    return (
-                      <div
-                        key={plan.id}
-                        className={`relative bg-white rounded-xl border p-6 flex flex-col ${isCurrentPlan ? 'border-primary-500 ring-1 ring-primary-500' : 'border-warm-gray'
-                          }`}
-                      >
-                        {plan.popular && (
-                          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-bold">
-                            MOST POPULAR
-                          </div>
-                        )}
-
-                        <div className="mb-4">
-                          <h4 className="font-bold text-lg text-charcoal">{plan.name}</h4>
-                          <div className="flex items-baseline gap-1 mt-2">
-                            <span className="text-3xl font-bold text-charcoal">${plan.price}</span>
-                            <span className="text-charcoal/60">/month</span>
-                          </div>
-                          <div className="mt-2 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide bg-primary-100 text-primary-800 border border-primary-200">
-                            15-Day Free Trial
-                          </div>
-                          <p className="text-sm text-charcoal/70 mt-2">
-                            Includes {plan.slotCount} facility {plan.slotCount === 1 ? 'profile' : 'profiles'}
-                          </p>
-                        </div>
-
-                        <ul className="space-y-3 mb-8 flex-1">
-                          {plan.features.slice(0, 5).map((feature, i) => (
-                            <li key={i} className="flex items-start gap-2 text-sm text-charcoal/70">
-                              <CheckCircle className="w-4 h-4 text-primary-500 shrink-0 mt-0.5" />
-                              <span>{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-
-                        {isCurrentPlan ? (
-                          <Button disabled className="w-full bg-warm-gray text-charcoal/60 border-warm-gray">
-                            Current Plan
-                          </Button>
-                        ) : (
-                          <Button
-                            className="w-full"
-                            variant={plan.popular ? 'primary' : 'outline'}
-                            onClick={() => handleUpgrade(plan.stripePriceId)}
-                          >
-                            Upgrade
-                          </Button>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
+              <HelpCenter routeKey={helpRouteByTab[activeTab]} />
             </div>
           )}
 
-          {activeTab === 'settings' && (
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-warm-gray">
-              <h2 className="text-2xl font-bold text-charcoal mb-4">Account Settings</h2>
-              <p className="text-charcoal/70">Manage your account preferences and notifications here.</p>
-              {/* Placeholder for settings */}
-            </div>
-          )}
       </main>
+
+      {activeTab !== 'help' && (
+        <>
+          <button
+            type="button"
+            aria-label="Open contextual help"
+            onClick={() => setShowContextHelp(true)}
+            className="fixed bottom-6 right-6 z-40 inline-flex min-h-11 items-center gap-2 rounded-full bg-slate-900 px-4 py-3 text-sm font-semibold text-white shadow-lg hover:bg-slate-800"
+          >
+            <LifeBuoy className="h-4 w-4" />
+            Help
+          </button>
+
+          {showContextHelp && (
+            <div className="fixed inset-0 z-50" role="dialog" aria-modal="true" aria-label="Contextual help panel">
+              <button
+                type="button"
+                aria-label="Close help panel"
+                className="absolute inset-0 bg-slate-900/50"
+                onClick={() => setShowContextHelp(false)}
+              />
+              <div className="absolute right-0 top-0 h-full w-full max-w-2xl overflow-y-auto border-l border-warm-gray bg-warm-white p-6 shadow-2xl">
+                <div className="mb-4 flex items-center justify-between border-b border-warm-gray pb-3">
+                  <h2 className="text-lg font-semibold text-charcoal">Contextual Help</h2>
+                  <button
+                    type="button"
+                    className="min-h-11 rounded-md px-3 text-sm font-medium text-charcoal/70 hover:bg-warm-gray hover:text-charcoal"
+                    onClick={() => setShowContextHelp(false)}
+                  >
+                    Close
+                  </button>
+                </div>
+                <HelpCenter routeKey={helpRouteByTab[activeTab]} />
+              </div>
+            </div>
+          )}
+        </>
+      )}
     </div>
   );
 };

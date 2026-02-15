@@ -28,7 +28,7 @@ export const ClaimFacilityPage: React.FC = () => {
   useEffect(() => {
     if (!user) {
         const returnPath = id ? `/claim/${id}` : '/claim-business';
-        navigate(`/login?redirect_to=${encodeURIComponent(returnPath)}`);
+        navigate(`/operator/login?redirect_to=${encodeURIComponent(returnPath)}`);
         return;
     }
 

@@ -1,8 +1,16 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Activity, Calendar, DollarSign, Mail, Phone, Search, Shield, TrendingDown, TrendingUp } from 'lucide-react';
+import { Activity, Calendar, DollarSign, Info, Mail, Phone, Search, Shield, TrendingDown, TrendingUp } from 'lucide-react';
 import { supabase } from '@/src/lib/supabase';
 import { useAuth } from '@/src/context/AuthProvider';
 import { useOperatorPlan } from '@/src/hooks/useOperatorPlan';
+import {
+  getMetric,
+  getInsufficientDataPlaceholder,
+  getMetricConfidenceThreshold,
+  getMetricTrustLabel,
+  getRoiGuardrailsPercent,
+} from '@/src/config/metricsDictionary';
+import { formatAsOfLabel, formatRelativeTime } from '@/src/utils/timeFormatting';
 
 type FunnelRange = 'week' | 'month' | 'all';
 
@@ -76,6 +84,40 @@ const INTENT_WEIGHTS = {
   comparison_added: 0.20,
 };
 
+const ROI_GUARDRAILS = getRoiGuardrailsPercent();
+const ROI_AVG_MONTHLY_RATE = 4500;
+
+const KPI_TRUST_LABELS = {
+  family_journey: getMetricTrustLabel('family_journey', 'Session-deduped family journey based on verified lead events across your owned facilities.'),
+  roi_estimated_impact: getMetricTrustLabel('roi_estimated_impact', 'Based on your custom baseline and average monthly rate.'),
+  profile_completeness: getMetricTrustLabel('profile_completeness', 'A measure of how detailed your facility information is for families.'),
+} as const;
+
+const MethodologyTrigger: React.FC<{ metricKey: string; fallbackLabel: string }> = ({ metricKey, fallbackLabel }) => {
+  const metric = getMetric(metricKey);
+  const displayName = metric?.display_name || 'Methodology';
+  const trustLabel = metric?.trust_label || fallbackLabel;
+  const calculationLogic = metric?.calculation_logic;
+
+  return (
+    <details className="relative group">
+      <summary className="list-none cursor-pointer text-slate-400 hover:text-slate-600 transition-colors" aria-label="How is this calculated?">
+        <Info className="w-3.5 h-3.5" />
+      </summary>
+      <div className="absolute right-0 z-20 mt-2 w-72 rounded-md border border-slate-200 bg-white p-3 text-left shadow-lg">
+        <p className="text-xs font-semibold text-slate-900">{displayName}</p>
+        <p className="mt-1 text-xs text-slate-600">{trustLabel}</p>
+        {calculationLogic && (
+          <details className="mt-2">
+            <summary className="cursor-pointer text-[11px] font-medium text-slate-700">Technical details</summary>
+            <code className="mt-1 block rounded bg-slate-50 p-2 text-[10px] text-slate-700 break-words">{calculationLogic}</code>
+          </details>
+        )}
+      </div>
+    </details>
+  );
+};
+
 const computeHealthScore = (row: ProfileHealthRow): number => {
   let score = 0;
   if (row.has_photos) score += 20;
@@ -97,21 +139,24 @@ export const LeadsView: React.FC = () => {
   const [funnel, setFunnel] = useState<FunnelData | null>(null);
   const [funnelRange, setFunnelRange] = useState<FunnelRange>('month');
   const [healthRows, setHealthRows] = useState<ProfileHealthRow[]>([]);
-  const [brokerBaseline, setBrokerBaseline] = useState<number>(() => {
-    if (typeof window === 'undefined') return 4500;
-    const stored = window.localStorage.getItem('std_broker_baseline');
-    const parsed = stored ? Number(stored) : 4500;
-    return Number.isFinite(parsed) && parsed >= 1000 ? parsed : 4500;
+  const [brokerBaselinePercent, setBrokerBaselinePercent] = useState<number>(() => {
+    if (typeof window === 'undefined') return ROI_GUARDRAILS.marketDefault;
+    const stored = window.localStorage.getItem('std_roi_baseline_pct');
+    const parsed = stored ? Number(stored) : ROI_GUARDRAILS.marketDefault;
+    return Number.isFinite(parsed)
+      ? Math.min(ROI_GUARDRAILS.hardMax, Math.max(ROI_GUARDRAILS.hardMin, parsed))
+      : ROI_GUARDRAILS.marketDefault;
   });
   const [benchmark, setBenchmark] = useState<{ your_signals_week: number; peer_avg_week: number } | null>(null);
   const [interestedLeadIds, setInterestedLeadIds] = useState<Set<string>>(new Set());
   const [submittingInterestFor, setSubmittingInterestFor] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [kpiDataAsOf, setKpiDataAsOf] = useState<string>(new Date().toISOString());
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
-    window.localStorage.setItem('std_broker_baseline', String(brokerBaseline));
-  }, [brokerBaseline]);
+    window.localStorage.setItem('std_roi_baseline_pct', String(brokerBaselinePercent));
+  }, [brokerBaselinePercent]);
 
   useEffect(() => {
     const fetchLeads = async () => {
@@ -206,6 +251,7 @@ export const LeadsView: React.FC = () => {
           setNoResultsLeads([]);
           setInterestedLeadIds(new Set());
         }
+        setKpiDataAsOf(new Date().toISOString());
       } catch (err) {
         console.error('Error fetching leads:', err);
       } finally {
@@ -242,19 +288,36 @@ export const LeadsView: React.FC = () => {
 
   const brokerFreeValue = useMemo(() => {
     if (!funnel) return 0;
+    const baselineRate = brokerBaselinePercent / 100;
     return Math.round(
       (funnel.tour_requests * INTENT_WEIGHTS.schedule_tour +
         funnel.phone_reveals * INTENT_WEIGHTS.phone_reveal +
         funnel.directions * INTENT_WEIGHTS.directions_clicked +
         funnel.comparisons * INTENT_WEIGHTS.comparison_added) *
-        brokerBaseline
+        ROI_AVG_MONTHLY_RATE *
+        baselineRate
     );
-  }, [funnel, brokerBaseline]);
+  }, [funnel, brokerBaselinePercent]);
 
   const averageHealth = useMemo(() => {
     if (healthRows.length === 0) return 0;
     return Math.round(healthRows.reduce((sum, row) => sum + computeHealthScore(row), 0) / healthRows.length);
   }, [healthRows]);
+
+  const roiConfidenceThreshold = getMetricConfidenceThreshold('roi_estimated_impact', 3);
+  const roiConfidenceCount = Number(funnel?.tour_requests || 0);
+  const roiBelowConfidence = roiConfidenceCount < roiConfidenceThreshold;
+  const roiRemaining = Math.max(0, roiConfidenceThreshold - roiConfidenceCount);
+  const roiOutsideSafeZone = brokerBaselinePercent < ROI_GUARDRAILS.safeMin || brokerBaselinePercent > ROI_GUARDRAILS.safeMax;
+  const insufficientDataPlaceholder = getInsufficientDataPlaceholder();
+  const familyJourneyConfidenceThreshold = getMetricConfidenceThreshold('family_journey', 5);
+  const familyJourneyCount = Number(funnel?.impressions || 0);
+  const familyJourneyBelowConfidence = familyJourneyCount < familyJourneyConfidenceThreshold;
+  const familyJourneyRemaining = Math.max(0, familyJourneyConfidenceThreshold - familyJourneyCount);
+  const profileConfidenceThreshold = getMetricConfidenceThreshold('profile_completeness', 1);
+  const profileCount = healthRows.length;
+  const profileBelowConfidence = profileCount < profileConfidenceThreshold;
+  const profileRemaining = Math.max(0, profileConfidenceThreshold - profileCount);
 
   const missingItems = useMemo(() => {
     if (healthRows.length === 0) return [] as string[];
@@ -324,7 +387,13 @@ export const LeadsView: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className="lg:col-span-2 bg-white rounded-xl shadow-sm border border-slate-200 p-5">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-base font-semibold text-slate-900">Family Journey</h3>
+            <div>
+              <div className="flex items-center gap-1.5">
+                <h3 className="text-base font-semibold text-slate-900">Family Journey</h3>
+                <MethodologyTrigger metricKey="family_journey" fallbackLabel={KPI_TRUST_LABELS.family_journey} />
+              </div>
+              <p className="text-[11px] text-slate-500 mt-0.5">{formatAsOfLabel(kpiDataAsOf, 'relative')}</p>
+            </div>
             <select
               value={funnelRange}
               onChange={(e) => setFunnelRange(e.target.value as FunnelRange)}
@@ -341,36 +410,48 @@ export const LeadsView: React.FC = () => {
           >
             Verified Unique Interest uses honest counting so repeated clicks from one family are not inflated.
           </p>
-          <div className="space-y-4">
-            {funnelStages.map((stage) => {
-              const widthPercent = Math.max(4, Math.round((stage.value / maxFunnel) * 100));
-              const delta = stage.value - stage.prev;
-              const deltaLabel = delta > 0 ? `+${delta}` : delta < 0 ? `${delta}` : '—';
-              const deltaClass =
-                delta > 0
-                  ? 'text-emerald-700 bg-emerald-50 border-emerald-200'
-                  : delta < 0
-                    ? 'text-red-700 bg-red-50 border-red-200'
-                    : 'text-slate-600 bg-slate-50 border-slate-200';
-              return (
-                <div key={stage.key}>
-                  <div className="flex items-center justify-between mb-1.5">
-                    <div className="text-sm font-medium text-slate-700">{stage.label}</div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm font-semibold text-slate-900">{stage.value.toLocaleString()}</span>
-                      <span className={`inline-flex items-center gap-1 text-xs border rounded-full px-2 py-0.5 ${deltaClass}`}>
-                        {delta > 0 ? <TrendingUp className="w-3 h-3" /> : delta < 0 ? <TrendingDown className="w-3 h-3" /> : null}
-                        {deltaLabel}
-                      </span>
+          {familyJourneyBelowConfidence ? (
+            <div className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3">
+              <p className="text-sm font-semibold text-slate-900">{insufficientDataPlaceholder.title}</p>
+              <p className="text-xs text-slate-600 mt-1">
+                {insufficientDataPlaceholder.body
+                  .replace('{remaining}', String(familyJourneyRemaining))
+                  .replace('{unit}', `verified impression${familyJourneyRemaining === 1 ? '' : 's'}`)}
+              </p>
+              <p className="text-xs text-primary-700 mt-2 font-medium">{insufficientDataPlaceholder.cta}</p>
+            </div>
+          ) : (
+            <div className="space-y-4">
+              {funnelStages.map((stage) => {
+                const widthPercent = Math.max(4, Math.round((stage.value / maxFunnel) * 100));
+                const delta = stage.value - stage.prev;
+                const deltaLabel = delta > 0 ? `+${delta}` : delta < 0 ? `${delta}` : '0';
+                const deltaClass =
+                  delta > 0
+                    ? 'text-emerald-700 bg-emerald-50 border-emerald-200'
+                    : delta < 0
+                      ? 'text-red-700 bg-red-50 border-red-200'
+                      : 'text-slate-600 bg-slate-50 border-slate-200';
+                return (
+                  <div key={stage.key}>
+                    <div className="flex items-center justify-between mb-1.5">
+                      <div className="text-sm font-medium text-slate-700">{stage.label}</div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm font-semibold text-slate-900">{stage.value.toLocaleString()}</span>
+                        <span className={`inline-flex items-center gap-1 text-xs border rounded-full px-2 py-0.5 ${deltaClass}`}>
+                          {delta > 0 ? <TrendingUp className="w-3 h-3" /> : delta < 0 ? <TrendingDown className="w-3 h-3" /> : null}
+                          {deltaLabel}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                      <div className={`h-2.5 ${stage.color} rounded-full`} style={{ width: `${widthPercent}%` }} />
                     </div>
                   </div>
-                  <div className="h-2.5 bg-slate-100 rounded-full overflow-hidden">
-                    <div className={`h-2.5 ${stage.color} rounded-full`} style={{ width: `${widthPercent}%` }} />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          )}
         </div>
 
         <div className="space-y-4">
@@ -378,65 +459,115 @@ export const LeadsView: React.FC = () => {
             <div className="flex items-start justify-between gap-2 mb-2">
               <div>
                 <p className="text-xs uppercase tracking-wide text-slate-500">Estimated</p>
-                <h3 className="text-base font-semibold text-slate-900">Broker-Free Value</h3>
+                <div className="flex items-center gap-1.5">
+                  <h3 className="text-base font-semibold text-slate-900">Broker-Free Value</h3>
+                  <MethodologyTrigger metricKey="roi_estimated_impact" fallbackLabel={KPI_TRUST_LABELS.roi_estimated_impact} />
+                </div>
+                <p className="text-[11px] text-slate-500 mt-0.5">{formatAsOfLabel(kpiDataAsOf, 'absolute')}</p>
               </div>
               <DollarSign className="w-5 h-5 text-emerald-600" />
             </div>
-            <p className="text-3xl font-bold text-slate-900">${brokerFreeValue.toLocaleString()}</p>
-            <p className="text-xs text-slate-600 mt-1">
-              Modeled equivalent of broker-fee outcomes for current range.
-            </p>
+            {roiBelowConfidence ? (
+              <div className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3">
+                <p className="text-sm font-semibold text-slate-900">{insufficientDataPlaceholder.title}</p>
+                <p className="text-xs text-slate-600 mt-1">
+                  {insufficientDataPlaceholder.body
+                    .replace('{remaining}', String(roiRemaining))
+                    .replace('{unit}', `verified conversion${roiRemaining === 1 ? '' : 's'}`)}
+                </p>
+                <p className="text-xs text-primary-700 mt-2 font-medium">{insufficientDataPlaceholder.cta}</p>
+              </div>
+            ) : (
+              <>
+                <p className="text-3xl font-bold text-slate-900">${brokerFreeValue.toLocaleString()}</p>
+                <p className="text-xs text-slate-600 mt-1">Estimated impact equivalent for current range.</p>
+              </>
+            )}
             {benchmark && (
               <p className="text-xs text-slate-500 mt-1">
                 Your weekly signals: {benchmark.your_signals_week}; peer avg: {Number(benchmark.peer_avg_week || 0).toFixed(1)}.
               </p>
             )}
             <div className="mt-4">
-              <label className="text-xs text-slate-600">Broker baseline: ${brokerBaseline.toLocaleString()}</label>
+              <div className="flex items-center justify-between gap-2">
+                <label className="text-xs text-slate-600">
+                  Baseline move-in rate: {brokerBaselinePercent.toFixed(1)}%
+                </label>
+                {roiOutsideSafeZone && (
+                  <span className="inline-flex items-center rounded-full border border-amber-300 bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-800">
+                    Custom Baseline Applied
+                  </span>
+                )}
+              </div>
               <input
                 type="range"
-                min={1000}
-                max={15000}
-                step={500}
-                value={brokerBaseline}
-                onChange={(e) => setBrokerBaseline(Number(e.target.value))}
-                className="w-full mt-2"
+                min={ROI_GUARDRAILS.hardMin}
+                max={ROI_GUARDRAILS.hardMax}
+                step={0.5}
+                value={brokerBaselinePercent}
+                onChange={(e) => setBrokerBaselinePercent(Number(e.target.value))}
+                className={`w-full mt-2 ${roiOutsideSafeZone ? 'accent-amber-500' : ''}`}
               />
+              <div className="mt-1 flex items-center justify-between text-[10px] text-slate-500">
+                <span>{ROI_GUARDRAILS.hardMin}%</span>
+                <span>Safe zone: {ROI_GUARDRAILS.safeMin}% - {ROI_GUARDRAILS.safeMax}%</span>
+                <span>{ROI_GUARDRAILS.hardMax}%</span>
+              </div>
             </div>
             <p
               className="text-xs text-slate-500 mt-3"
               title={`Weights: Tour ${INTENT_WEIGHTS.schedule_tour}x, Phone ${INTENT_WEIGHTS.phone_reveal}x, Directions ${INTENT_WEIGHTS.directions_clicked}x, Compare ${INTENT_WEIGHTS.comparison_added}x`}
             >
-              Lead Intelligence weighting: tour, phone reveal, directions, and comparison intent.
+              Estimated impact uses weighted lead intent, baseline rate, and average monthly rate.
             </p>
           </div>
 
           <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-base font-semibold text-slate-900">Profile Health</h3>
+              <div>
+                <div className="flex items-center gap-1.5">
+                  <h3 className="text-base font-semibold text-slate-900">Profile Health</h3>
+                  <MethodologyTrigger metricKey="profile_completeness" fallbackLabel={KPI_TRUST_LABELS.profile_completeness} />
+                </div>
+                <p className="text-[11px] text-slate-500 mt-0.5">{formatAsOfLabel(kpiDataAsOf, 'absolute')}</p>
+              </div>
               <Shield className="w-5 h-5 text-blue-600" />
             </div>
             <div className="flex items-center gap-4">
-              <svg width="100" height="100" viewBox="0 0 100 100" className="shrink-0">
-                <circle cx="50" cy="50" r="42" fill="none" stroke="#e5e7eb" strokeWidth="8" />
-                <circle
-                  cx="50"
-                  cy="50"
-                  r="42"
-                  fill="none"
-                  stroke="#2563eb"
-                  strokeWidth="8"
-                  strokeLinecap="round"
-                  strokeDasharray={healthCircumference}
-                  strokeDashoffset={healthStrokeOffset}
-                  transform="rotate(-90 50 50)"
-                />
-                <text x="50" y="55" textAnchor="middle" className="fill-slate-900 text-lg font-bold">{averageHealth}%</text>
-              </svg>
-              <div className="text-sm text-slate-700">
-                <p className="font-medium text-slate-900">{healthRows.length} facilities scored</p>
-                <p className="text-slate-600">Completeness + Q&A response coverage.</p>
-              </div>
+              {profileBelowConfidence ? (
+                <div className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3 w-full">
+                  <p className="text-sm font-semibold text-slate-900">{insufficientDataPlaceholder.title}</p>
+                  <p className="text-xs text-slate-600 mt-1">
+                    {insufficientDataPlaceholder.body
+                      .replace('{remaining}', String(profileRemaining))
+                      .replace('{unit}', `facility profile${profileRemaining === 1 ? '' : 's'}`)}
+                  </p>
+                  <p className="text-xs text-primary-700 mt-2 font-medium">{insufficientDataPlaceholder.cta}</p>
+                </div>
+              ) : (
+                <>
+                  <svg width="100" height="100" viewBox="0 0 100 100" className="shrink-0">
+                    <circle cx="50" cy="50" r="42" fill="none" stroke="#e5e7eb" strokeWidth="8" />
+                    <circle
+                      cx="50"
+                      cy="50"
+                      r="42"
+                      fill="none"
+                      stroke="#2563eb"
+                      strokeWidth="8"
+                      strokeLinecap="round"
+                      strokeDasharray={healthCircumference}
+                      strokeDashoffset={healthStrokeOffset}
+                      transform="rotate(-90 50 50)"
+                    />
+                    <text x="50" y="55" textAnchor="middle" className="fill-slate-900 text-lg font-bold">{averageHealth}%</text>
+                  </svg>
+                  <div className="text-sm text-slate-700">
+                    <p className="font-medium text-slate-900">{healthRows.length} facilities scored</p>
+                    <p className="text-slate-600">Completeness + Q&A response coverage.</p>
+                  </div>
+                </>
+              )}
             </div>
             {missingItems.length > 0 && (
               <ul className="mt-4 space-y-1 text-xs text-slate-600">
@@ -465,7 +596,7 @@ export const LeadsView: React.FC = () => {
                   {signal.facilities?.name ? ` - ${signal.facilities.name}` : ''}
                 </div>
                 <div className="text-xs text-slate-500 whitespace-nowrap">
-                  {new Date(signal.created_at).toLocaleString()}
+                  {formatRelativeTime(signal.created_at)}
                 </div>
               </div>
             ))}
@@ -484,57 +615,93 @@ export const LeadsView: React.FC = () => {
           {noResultsLeads.length === 0 ? (
             <div className="px-6 py-6 text-sm text-slate-500">No no-results demand leads yet.</div>
           ) : (
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-sm">
-                <thead className="bg-white border-b border-slate-200">
-                  <tr>
-                    <th className="px-6 py-3 font-semibold text-slate-900">Location</th>
-                    <th className="px-6 py-3 font-semibold text-slate-900">Care Type</th>
-                    <th className="px-6 py-3 font-semibold text-slate-900">Budget</th>
-                    <th className="px-6 py-3 font-semibold text-slate-900">Contact</th>
-                    <th className="px-6 py-3 font-semibold text-slate-900">Date</th>
-                    <th className="px-6 py-3 font-semibold text-slate-900">Action</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-200">
-                  {noResultsLeads.map((lead) => {
-                    const claimed = interestedLeadIds.has(lead.id);
-                    const submitting = submittingInterestFor === lead.id;
-                    return (
-                      <tr key={lead.id} className="hover:bg-slate-50 transition-colors">
-                        <td className="px-6 py-4 text-slate-700">{lead.requested_location || '-'}</td>
-                        <td className="px-6 py-4 text-slate-700">{lead.care_type || '-'}</td>
-                        <td className="px-6 py-4 text-slate-700">{lead.budget || '-'}</td>
-                        <td className="px-6 py-4">
-                          <div className="flex flex-col gap-1">
-                            <a href={`mailto:${lead.email}`} className="flex items-center gap-2 text-slate-600 hover:text-primary-600">
-                              <Mail className="w-3 h-3" /> {lead.email}
-                            </a>
-                            {lead.phone && (
-                              <a href={`tel:${lead.phone}`} className="flex items-center gap-2 text-slate-600 hover:text-primary-600">
-                                <Phone className="w-3 h-3" /> {lead.phone}
+            <>
+              <div className="divide-y divide-slate-200 md:hidden">
+                {noResultsLeads.map((lead) => {
+                  const claimed = interestedLeadIds.has(lead.id);
+                  const submitting = submittingInterestFor === lead.id;
+                  return (
+                    <div key={lead.id} className="px-4 py-4 space-y-2">
+                      <div className="flex items-center justify-between gap-3">
+                        <p className="text-sm font-semibold text-slate-900">{lead.requested_location || '-'}</p>
+                        <p className="text-xs text-slate-500">{new Date(lead.created_at).toLocaleDateString()}</p>
+                      </div>
+                      <p className="text-xs text-slate-600">Care: {lead.care_type || '-'}</p>
+                      <p className="text-xs text-slate-600">Budget: {lead.budget || '-'}</p>
+                      <div className="flex flex-col gap-1">
+                        <a href={`mailto:${lead.email}`} className="inline-flex min-h-11 items-center gap-2 text-slate-600 hover:text-primary-600 text-sm">
+                          <Mail className="w-3 h-3" /> {lead.email}
+                        </a>
+                        {lead.phone && (
+                          <a href={`tel:${lead.phone}`} className="inline-flex min-h-11 items-center gap-2 text-slate-600 hover:text-primary-600 text-sm">
+                            <Phone className="w-3 h-3" /> {lead.phone}
+                          </a>
+                        )}
+                      </div>
+                      <button
+                        onClick={() => handleExpressInterest(lead.id)}
+                        disabled={claimed || submitting}
+                        className={`mt-1 text-sm font-medium min-h-11 px-2 rounded ${claimed ? 'text-slate-400 cursor-default' : 'text-primary-600 hover:text-primary-700'}`}
+                      >
+                        {claimed ? 'Interested' : submitting ? 'Saving...' : 'Express Interest'}
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="hidden md:block overflow-x-auto">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-white border-b border-slate-200">
+                    <tr>
+                      <th className="px-6 py-3 font-semibold text-slate-900">Location</th>
+                      <th className="px-6 py-3 font-semibold text-slate-900">Care Type</th>
+                      <th className="px-6 py-3 font-semibold text-slate-900">Budget</th>
+                      <th className="px-6 py-3 font-semibold text-slate-900">Contact</th>
+                      <th className="px-6 py-3 font-semibold text-slate-900">Date</th>
+                      <th className="px-6 py-3 font-semibold text-slate-900">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200">
+                    {noResultsLeads.map((lead) => {
+                      const claimed = interestedLeadIds.has(lead.id);
+                      const submitting = submittingInterestFor === lead.id;
+                      return (
+                        <tr key={lead.id} className="hover:bg-slate-50 transition-colors">
+                          <td className="px-6 py-4 text-slate-700">{lead.requested_location || '-'}</td>
+                          <td className="px-6 py-4 text-slate-700">{lead.care_type || '-'}</td>
+                          <td className="px-6 py-4 text-slate-700">{lead.budget || '-'}</td>
+                          <td className="px-6 py-4">
+                            <div className="flex flex-col gap-1">
+                              <a href={`mailto:${lead.email}`} className="flex items-center gap-2 text-slate-600 hover:text-primary-600">
+                                <Mail className="w-3 h-3" /> {lead.email}
                               </a>
-                            )}
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 text-slate-500 whitespace-nowrap">
-                          {new Date(lead.created_at).toLocaleDateString()}
-                        </td>
-                        <td className="px-6 py-4">
-                          <button
-                            onClick={() => handleExpressInterest(lead.id)}
-                            disabled={claimed || submitting}
-                            className={`font-medium ${claimed ? 'text-slate-400 cursor-default' : 'text-primary-600 hover:text-primary-700'}`}
-                          >
-                            {claimed ? 'Interested' : submitting ? 'Saving...' : 'Express Interest'}
-                          </button>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
+                              {lead.phone && (
+                                <a href={`tel:${lead.phone}`} className="flex items-center gap-2 text-slate-600 hover:text-primary-600">
+                                  <Phone className="w-3 h-3" /> {lead.phone}
+                                </a>
+                              )}
+                            </div>
+                          </td>
+                          <td className="px-6 py-4 text-slate-500 whitespace-nowrap">
+                            {new Date(lead.created_at).toLocaleDateString()}
+                          </td>
+                          <td className="px-6 py-4">
+                            <button
+                              onClick={() => handleExpressInterest(lead.id)}
+                              disabled={claimed || submitting}
+                              className={`font-medium ${claimed ? 'text-slate-400 cursor-default' : 'text-primary-600 hover:text-primary-700'}`}
+                            >
+                              {claimed ? 'Interested' : submitting ? 'Saving...' : 'Express Interest'}
+                            </button>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </>
           )}
         </div>
       )}
@@ -546,7 +713,31 @@ export const LeadsView: React.FC = () => {
         </div>
       ) : (
         <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-          <div className="overflow-x-auto">
+          <div className="divide-y divide-slate-200 md:hidden">
+            {leads.map((lead) => (
+              <div key={lead.id} className="px-4 py-4 space-y-2">
+                <div className="flex items-start justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{lead.name}</p>
+                  <p className="text-xs text-slate-500">{new Date(lead.created_at).toLocaleDateString()}</p>
+                </div>
+                <p className="text-xs text-slate-600">{lead.facilities?.name || 'Facility'}</p>
+                <div className="flex flex-col gap-1">
+                  <a href={`mailto:${lead.email}`} className="inline-flex min-h-11 items-center gap-2 text-slate-600 hover:text-primary-600 text-sm">
+                    <Mail className="w-3 h-3" /> {lead.email}
+                  </a>
+                  {lead.phone && (
+                    <a href={`tel:${lead.phone}`} className="inline-flex min-h-11 items-center gap-2 text-slate-600 hover:text-primary-600 text-sm">
+                      <Phone className="w-3 h-3" /> {lead.phone}
+                    </a>
+                  )}
+                </div>
+                <p className="text-sm text-slate-700">{lead.message || '-'}</p>
+                <button className="text-sm text-primary-600 hover:text-primary-700 font-medium min-h-11 px-2 rounded">View Details</button>
+              </div>
+            ))}
+          </div>
+
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full text-left text-sm">
               <thead className="bg-slate-50 border-b border-slate-200">
                 <tr>

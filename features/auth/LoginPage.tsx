@@ -47,12 +47,18 @@ export const LoginPage: React.FC = () => {
 
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-charcoal">
-          Sign in to your account
+          Family Sign In
         </h2>
         <p className="mt-2 text-center text-sm text-charcoal/70">
-          Or{' '}
+          New to SilverTech?{' '}
           <Link to={signUpPath} className="font-medium text-primary-600 hover:text-primary-500">
-            create a new account
+            Create an account
+          </Link>
+        </p>
+        <p className="mt-1 text-center text-sm text-charcoal/70">
+          Are you a facility operator?{' '}
+          <Link to={`/operator/login?redirect_to=${encodeURIComponent(redirectTo)}`} className="font-medium text-primary-600 hover:text-primary-500">
+            Facility sign in
           </Link>
         </p>
       </div>

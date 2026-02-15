@@ -1,4 +1,9 @@
 # Auto-generated redirect rules. Do not edit manually.
+# Static trust artifacts must bypass SPA fallback
+/help-registry.json /help-registry.json 200!
+/sitemap.xml /sitemap.xml 200!
+/sitemap-index.xml /sitemap-index.xml 200!
+/sitemap-* /sitemap-:splat 200!
 # City route canonicalization
 /assisted-living/:state/:city /assisted-living/:state/cities/:city 301
 # Facility UUID -> slug canonicalization

@@ -81,18 +81,6 @@ export const FacilitiesPricingPage: React.FC = () => {
       </div>
 
       <div className="relative z-10">
-        {/* Header */}
-        <header className="sticky top-0 z-40 bg-slate-900/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex items-center justify-between">
-            <div className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-white rounded-md border border-white/20 flex items-center justify-center overflow-hidden">
-                    <img src="/logo.png" alt="SilverTech" className="h-8 w-auto" />
-                </div>
-                <span className="font-semibold text-lg tracking-tight text-white">SilverTech</span>
-            </div>
-            <Link to="/for-facilities" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border border-white/20 hover:bg-white/10 h-9 px-4 py-2 relative text-white">
-                Back to Facilities Hub
-            </Link>
-        </header>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-b from-white/90 to-white/60">

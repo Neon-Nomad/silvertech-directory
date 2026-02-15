@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useLocation, useParams } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { Elements } from '@stripe/react-stripe-js';
 import { stripePromise } from '@/src/lib/stripe';
@@ -9,7 +9,9 @@ import { ScrollToTop } from '@/components/utils/ScrollToTop';
 import { ComparisonProvider } from '@/src/context/ComparisonContext';
 import { GlobalSchema } from '@/components/seo/GlobalSchema';
 import { LocationPrompt } from '@/components/ui/LocationPrompt';
-import { AuthProvider } from '@/src/context/AuthProvider';
+import { AuthProvider, useAuth } from '@/src/context/AuthProvider';
+import { dashboardPathForTab, normalizeDashboardTab } from '@/src/utils/dashboardRouting';
+import { reportFrontendError } from '@/src/monitoring/reportError';
 
 const DirectorySearch = lazy(() => import('@/features/family/discovery/DirectorySearch'));
 const OperatorDashboard = lazy(() => import('@/features/operator/dashboard/OperatorDashboard'));
@@ -48,6 +50,7 @@ const StateVeteransPage = lazy(() => import('@/features/locations/hub/StateVeter
 const RegulatoryLibrary = lazy(() => import('@/features/regulatory/RegulatoryLibrary').then((m) => ({ default: m.RegulatoryLibrary })));
 const StateRegulationTopicPage = lazy(() => import('@/features/regulatory/StateRegulationTopicPage').then((m) => ({ default: m.StateRegulationTopicPage })));
 const AboutPage = lazy(() => import('@/features/public/company/AboutPage').then((m) => ({ default: m.AboutPage })));
+const WhyThisExistsPage = lazy(() => import('@/features/public/company/WhyThisExistsPage').then((m) => ({ default: m.WhyThisExistsPage })));
 const ContactPage = lazy(() => import('@/features/public/company/ContactPage').then((m) => ({ default: m.ContactPage })));
 const EditorialPolicyPage = lazy(() => import('@/features/public/company/EditorialPolicyPage').then((m) => ({ default: m.EditorialPolicyPage })));
 const CommunityGuidelinesPage = lazy(() => import('@/features/public/company/CommunityGuidelinesPage').then((m) => ({ default: m.CommunityGuidelinesPage })));
@@ -59,6 +62,7 @@ const TourQuestionsGuide = lazy(() => import('@/features/resources/TourQuestions
 const FacilityDetails = lazy(() => import('@/features/family/discovery/FacilityDetails').then((m) => ({ default: m.FacilityDetails })));
 const LoginPage = lazy(() => import('@/features/auth/LoginPage').then((m) => ({ default: m.LoginPage })));
 const SignUpPage = lazy(() => import('@/features/auth/SignUpPage').then((m) => ({ default: m.SignUpPage })));
+const IntegrityHarness = lazy(() => import('@/features/e2e/IntegrityHarness').then((m) => ({ default: m.IntegrityHarness })));
 
 // ...
 
@@ -75,6 +79,16 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { has
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
     console.error("Uncaught error:", error, errorInfo);
+    reportFrontendError({
+      source: 'react-boundary',
+      message: error.message,
+      stack: error.stack,
+      path: window.location.pathname,
+      userAgent: navigator.userAgent,
+      extra: {
+        componentStack: errorInfo.componentStack,
+      },
+    });
   }
 
   render() {
@@ -102,7 +116,90 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { has
   }
 }
 
+const DashboardRouteGate: React.FC = () => {
+  const location = useLocation();
+  const { tab } = useParams<{ tab?: string }>();
+  const { user, loading } = useAuth();
+
+  const searchParams = new URLSearchParams(location.search);
+  const legacyTab = normalizeDashboardTab(searchParams.get('tab'));
+
+  if (legacyTab) {
+    const nextParams = new URLSearchParams(searchParams);
+    nextParams.delete('tab');
+    const nextSearch = nextParams.toString();
+    return <Navigate to={`${dashboardPathForTab(legacyTab)}${nextSearch ? `?${nextSearch}` : ''}`} replace />;
+  }
+
+  if (loading) {
+    return (
+      <div className="min-h-[60vh] flex items-center justify-center">
+        <div className="h-10 w-10 rounded-full border-2 border-slate-300 border-t-slate-700 animate-spin" />
+      </div>
+    );
+  }
+
+  if (!user) {
+    const redirectTo = `${location.pathname}${location.search}`;
+    return <Navigate to={`/operator/login?redirect_to=${encodeURIComponent(redirectTo)}`} replace />;
+  }
+
+  if (tab && !normalizeDashboardTab(tab)) {
+    return <Navigate to="/dashboard" replace />;
+  }
+
+  return <OperatorDashboard />;
+};
+
+const LegacyDashboardEditRedirect: React.FC = () => {
+  const { id } = useParams<{ id?: string }>();
+  if (!id) return <Navigate to="/dashboard/listings" replace />;
+  return <Navigate to={`/dashboard/facility/${id}/edit`} replace />;
+};
+
 function App() {
+  const enableIntegrityHarness =
+    import.meta.env.DEV ||
+    import.meta.env.MODE === 'test' ||
+    import.meta.env.VITE_ENABLE_E2E_ROUTES === 'true' ||
+    window.location.pathname.startsWith('/__integrity');
+
+  React.useEffect(() => {
+    const onError = (event: ErrorEvent) => {
+      reportFrontendError({
+        source: 'window-error',
+        message: event.message || 'Unknown window error',
+        stack: event.error?.stack,
+        path: window.location.pathname,
+        userAgent: navigator.userAgent,
+        extra: {
+          filename: event.filename,
+          lineno: event.lineno,
+          colno: event.colno,
+        },
+      });
+    };
+
+    const onUnhandledRejection = (event: PromiseRejectionEvent) => {
+      const reason = event.reason as any;
+      reportFrontendError({
+        source: 'unhandled-rejection',
+        message: reason?.message || String(reason || 'Unhandled promise rejection'),
+        stack: reason?.stack,
+        path: window.location.pathname,
+        userAgent: navigator.userAgent,
+      });
+    };
+
+    window.addEventListener('error', onError);
+    window.addEventListener('unhandledrejection', onUnhandledRejection);
+
+    return () => {
+      window.removeEventListener('error', onError);
+      window.removeEventListener('unhandledrejection', onUnhandledRejection);
+    };
+  }, []);
+
   const routeFallback = (
     <div className="min-h-[60vh] flex items-center justify-center">
       <div className="h-10 w-10 rounded-full border-2 border-slate-300 border-t-slate-700 animate-spin" />
@@ -139,9 +236,12 @@ function App() {
                     <Route path="/signup" element={<SignUpPage />} />
 
                     {/* Operator Routes */}
-                    <Route path="/dashboard" element={<OperatorDashboard />} />
-                    <Route path="/dashboard/edit/:id" element={<EditFacility />} />
+                    <Route path="/dashboard" element={<DashboardRouteGate />} />
+                    <Route path="/dashboard/:tab" element={<DashboardRouteGate />} />
+                    <Route path="/dashboard/edit/:id" element={<LegacyDashboardEditRedirect />} />
+                    <Route path="/dashboard/facility/:id/edit" element={<EditFacility />} />
                     <Route path="/operator/login" element={<OperatorLogin />} />
+                    {enableIntegrityHarness && <Route path="/__integrity" element={<IntegrityHarness />} />}
                     <Route path="/claim/:id" element={<ClaimFacilityPage />} />
                     <Route path="/claim-business" element={<ClaimBusiness />} />
 
@@ -161,6 +261,7 @@ function App() {
 
                     {/* Company & Resources */}
                     <Route path="/about" element={<AboutPage />} />
+                    <Route path="/why-this-exists" element={<WhyThisExistsPage />} />
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
                     <Route path="/community-guidelines" element={<CommunityGuidelinesPage />} />

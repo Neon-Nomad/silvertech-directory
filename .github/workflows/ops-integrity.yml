@@ -1,0 +1,98 @@
+name: Ops Integrity
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Unit tests
+        run: npm run test:unit
+
+      - name: Build
+        run: npm run build
+
+      - name: Phase 6 release gate contract checks
+        run: npm run gate:phase6
+
+  phase1-monitor:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Phase 1 monitor
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://silvertechdirectory.com' }}
+          ALERT_WEBHOOK_URL: ${{ secrets.OPS_ALERT_WEBHOOK_URL }}
+        run: npm run monitor:phase1
+
+      - name: Notify Slack on failure
+        if: failure() && secrets.OPS_ALERT_WEBHOOK_URL != ''
+        env:
+          WEBHOOK: ${{ secrets.OPS_ALERT_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data "{\"text\":\"Ops Integrity workflow failed for ${GITHUB_REPOSITORY} on ${GITHUB_REF_NAME}.\"}" \
+          "$WEBHOOK"
+
+  phase6-monitor:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Phase 6 monitor
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://silvertechdirectory.com' }}
+          ALERT_WEBHOOK_URL: ${{ secrets.OPS_ALERT_WEBHOOK_URL }}
+          STRICT_LIVE_HELP_REGISTRY: "true"
+        run: npm run monitor:phase6
+
+      - name: Notify Slack on failure
+        if: failure() && secrets.OPS_ALERT_WEBHOOK_URL != ''
+        env:
+          WEBHOOK: ${{ secrets.OPS_ALERT_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data "{\"text\":\"Phase 6 monitor failed for ${GITHUB_REPOSITORY} on ${GITHUB_REF_NAME}.\"}" \
+          "$WEBHOOK"

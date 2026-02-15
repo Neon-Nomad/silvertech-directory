@@ -13,7 +13,8 @@
     "build:hybrid": "npm run build && npm run astro:build && node scripts/merge_astro.mjs",
     "preview": "vite preview",
     "test": "vitest",
-    "test:unit": "vitest --run",
+    "test:unit": "vitest --run tests",
+    "test:e2e": "playwright test",
     "test:integration": "node -e \"const { spawnSync } = require('node:child_process'); const cmd = process.platform === 'win32' ? 'npx.cmd' : 'npx'; const result = spawnSync(cmd, ['vitest', '--run', 'tests/integrity.test.js'], { stdio: 'inherit', env: { ...process.env, RUN_INTEGRATION_TESTS: 'true' } }); process.exit(result.status ?? 1);\"",
     "flatten-medicare": "tsx scripts/flatten_medicare_data.ts",
     "seed-facilities": "tsx scripts/seed_facilities.ts",
@@ -34,6 +35,9 @@
     "redirects": "npx tsx scripts/generate_redirects.ts",
     "sitemap:verify": "npx tsx scripts/verify_sitemap.ts",
     "sitemap:check-live": "npx tsx scripts/check_sitemap_http.ts",
+    "monitor:phase1": "npx tsx scripts/monitor_phase1.ts",
+    "monitor:phase6": "npx tsx scripts/monitor_phase6.ts",
+    "gate:phase6": "npx tsx scripts/release_gate_phase6.ts",
     "update:online-presence": "npx tsx scripts/update_facility_online_presence.ts",
     "sql:run": "npx tsx scripts/run_sql.ts",
     "typesense:index": "tsx scripts/typesense_index.ts",
@@ -60,6 +64,7 @@
     "typesense": "^3.0.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.2",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@types/node": "^22.14.0",

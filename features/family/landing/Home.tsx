@@ -284,8 +284,8 @@ export const Home: React.FC = () => {
             <div className="flex-1">
               <h2 className="text-3xl font-serif font-bold mb-6">Compare side-by-side.</h2>
               <p className="text-slate-600 mb-8 leading-relaxed">
-                Our comparison tool allows you to compare up to 3 communities across 40+ data points,
-                including safety violations, staffing ratios, and all-inclusive cost projections.
+                Build your comparison from real listings. Save up to 3 communities while browsing to compare
+                pricing, staffing, and key quality signals in one place.
               </p>
               <div className="space-y-4">
                 {[
@@ -303,7 +303,7 @@ export const Home: React.FC = () => {
                 onClick={() => navigate('/search')}
                 className="mt-10 px-8 py-3 border-2 border-charcoal text-charcoal font-bold rounded-lg hover:bg-charcoal hover:text-white transition-all"
               >
-                Try Comparison Tool
+                Start Comparing Listings
               </button>
             </div>
             <div className="flex-1 w-full">
@@ -330,7 +330,7 @@ export const Home: React.FC = () => {
                     <div className="w-2.5 h-2.5 rounded-full bg-slate-300" />
                   </div>
                   <div className="flex-1 mx-4 bg-white rounded-md px-3 py-1 text-xs text-slate-500 border border-slate-200">
-                    silvertechdirectory.com/compare
+                    silvertechdirectory.com/search
                   </div>
                 </div>
                 {/* Comparison tool mockup */}
@@ -442,16 +442,14 @@ export const Home: React.FC = () => {
                 })}
               </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-x-8 gap-y-4 text-sm text-slate-400 border-t border-white/10 pt-10">
-              {ALL_STATES.map((state) => (
-                <Link
-                  key={state.abbreviation}
-                  to={`/states/${state.slug}`}
-                  className="hover:text-gold transition-colors"
-                >
-                  {state.name}
-                </Link>
-              ))}
+            <div className="border-t border-white/10 pt-8">
+              <Link
+                to="/states"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-gold transition-colors"
+              >
+                Browse all states
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </section>
@@ -531,6 +529,7 @@ export const Home: React.FC = () => {
               &copy; {new Date().getFullYear()} SilverTech Directory. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm text-slate-500">
+              <Link to="/why-this-exists" className="hover:text-gold">Why This Exists</Link>
               <Link to="/editorial-policy" className="hover:text-gold">Editorial Policy</Link>
               <Link to="/honest-care" className="hover:text-gold">Honest Care</Link>
               <a href="mailto:andrew@silvertechdirectory.com" className="hover:text-gold">Email</a>

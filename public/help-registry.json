@@ -1,0 +1,310 @@
+{
+  "version": "1.1.0",
+  "last_updated": "2026-02-15",
+  "routes": {
+    "dashboard_overview": {
+      "title": "Dashboard Overview",
+      "article_ids": [
+        "overview-reading-kpis",
+        "overview-priority-actions",
+        "overview-data-freshness",
+        "overview-daily-operator-routine",
+        "overview-weekly-review-routine",
+        "overview-alert-priority-matrix"
+      ],
+      "contextual_tip": "Start with profile strength, unanswered Q&A, and lead response time. Those three indicators drive most operator outcomes."
+    },
+    "dashboard_listings": {
+      "title": "Managing Your Facilities",
+      "article_ids": [
+        "listings-status-badges",
+        "listings-edit-workflow",
+        "listings-photos-best-practices",
+        "listings-profile-health-checklist",
+        "listings-address-change-policy",
+        "listings-publish-quality-gate"
+      ],
+      "contextual_tip": "A complete, accurate listing is the foundation for ranking, trust, and qualified family inquiries."
+    },
+    "dashboard_leads": {
+      "title": "Lead Lifecycle and Estimated Impact",
+      "article_ids": [
+        "leads-status-definitions",
+        "leads-roi-methodology",
+        "leads-response-time",
+        "leads-conversion-funnel-playbook",
+        "leads-followup-cadence",
+        "leads-low-confidence-recovery"
+      ],
+      "contextual_tip": "Keep lead statuses current within one business day to preserve reporting accuracy and reliable benchmarks."
+    },
+    "dashboard_qa": {
+      "title": "Official Q&A Responses",
+      "article_ids": [
+        "qa-official-response-guidelines",
+        "qa-stale-answer-policy",
+        "qa-notification-expectations",
+        "qa-answer-quality-rubric",
+        "qa-sensitive-topic-handling",
+        "qa-compliance-guardrails"
+      ],
+      "contextual_tip": "Treat official answers as public policy statements. Be accurate, current, and aligned with your facility operations."
+    },
+    "dashboard_billing": {
+      "title": "Billing and Plan Management",
+      "article_ids": [
+        "billing-slot-management",
+        "billing-entitlement-errors",
+        "billing-stripe-portal",
+        "billing-assignment-troubleshooting",
+        "billing-upgrade-readiness-check",
+        "billing-refund-and-dispute-policy"
+      ],
+      "contextual_tip": "When a billing action fails, use the exact error CTA first. It routes to the shortest resolution path."
+    },
+    "dashboard_help": {
+      "title": "Help Center",
+      "article_ids": [
+        "help-getting-started",
+        "help-account-security",
+        "help-contact-support",
+        "help-severity-and-escalation",
+        "help-incident-report-template",
+        "help-common-fixes-index",
+        "help-release-notes-and-changes",
+        "help-training-plan-new-staff"
+      ],
+      "contextual_tip": "Use this center as your operating manual. Search by workflow, error code, or metric name."
+    }
+  },
+  "articles": {
+    "overview-reading-kpis": {
+      "id": "overview-reading-kpis",
+      "slug": "overview-reading-kpis",
+      "title": "How to Read Dashboard KPIs",
+      "content_md": "### KPI trust model\nEvery KPI uses a trust layer before display.\n\n- Each card shows **Data as of** timestamp.\n- If confidence is below threshold, you will see **Gathering Insights**.\n- Use the **(i)** icon on metrics to view methodology labels.\n\n### Operator action\nIf a KPI is in placeholder state, improve source data quality first before making strategy decisions."
+    },
+    "overview-priority-actions": {
+      "id": "overview-priority-actions",
+      "slug": "overview-priority-actions",
+      "title": "Priority Action Order",
+      "content_md": "### Suggested sequence\n1. Resolve profile completeness gaps.\n2. Respond to new leads.\n3. Publish official Q&A updates.\n4. Review weekly trend movement.\n\nThis order provides the fastest operational impact for most facilities."
+    },
+    "overview-data-freshness": {
+      "id": "overview-data-freshness",
+      "slug": "overview-data-freshness",
+      "title": "Understanding Data Freshness",
+      "content_md": "### Time display policy\n- High-frequency data uses relative labels like **Updated 5m ago**.\n- Lower-frequency benchmark data uses absolute labels like **As of Feb 14, 2026**.\n\n### Troubleshooting stale cards\n- Confirm lead statuses are updated.\n- Confirm recent listing edits were saved or published.\n- Refresh after one processing cycle."
+    },
+    "overview-daily-operator-routine": {
+      "id": "overview-daily-operator-routine",
+      "slug": "overview-daily-operator-routine",
+      "title": "Daily Operator Routine",
+      "content_md": "### 15-minute daily checklist\n1. Check new leads and mark response state.\n2. Answer highest-priority Q&A items.\n3. Validate profile changes made by staff.\n4. Review alerts for ranking or confidence changes.\n\n### Target\nMaintain lead and response data freshness to keep trust metrics stable."
+    },
+    "overview-weekly-review-routine": {
+      "id": "overview-weekly-review-routine",
+      "slug": "overview-weekly-review-routine",
+      "title": "Weekly Review Routine",
+      "content_md": "### Weekly operations review\n- Compare this week vs prior week lead volume.\n- Audit profile health score movement.\n- Identify top 3 unanswered family concerns from Q&A.\n- Review billing slot assignments and plan utilization.\n\n### Output\nCreate a weekly action list with owner and due date for each item."
+    },
+    "overview-alert-priority-matrix": {
+      "id": "overview-alert-priority-matrix",
+      "slug": "overview-alert-priority-matrix",
+      "title": "Alert Priority Matrix",
+      "content_md": "### Severity guide\n- **P1**: Data integrity or access issues blocking operations.\n- **P2**: Lead workflow or billing blockers with workaround.\n- **P3**: Content or UX issues with low immediate impact.\n\n### Escalation\nIf unresolved in one business day, open support with logs, timestamps, and facility ID."
+    },
+    "listings-status-badges": {
+      "id": "listings-status-badges",
+      "slug": "listings-status-badges",
+      "title": "Listing Status Badges",
+      "content_md": "### Badge meanings\n- **Verified**: Listing is active and trusted.\n- **Pending Review**: Claim submitted and under validation.\n- **Offline**: Listing not publicly visible yet.\n\nStatus badges are tied to verification state and profile quality rules."
+    },
+    "listings-edit-workflow": {
+      "id": "listings-edit-workflow",
+      "slug": "listings-edit-workflow",
+      "title": "Editing Workflow",
+      "content_md": "### Save and publish behavior\nUse **Save Draft** to stage updates and **Publish Live** to push changes.\n\nIf versioning is unavailable for a record, Save applies live directly."
+    },
+    "listings-photos-best-practices": {
+      "id": "listings-photos-best-practices",
+      "slug": "listings-photos-best-practices",
+      "title": "Photo Best Practices",
+      "content_md": "### Media checklist\n- Include exterior, rooms, dining, and common spaces.\n- Prefer recent images with accurate representation.\n- Avoid heavy filters or misleading staging.\n\nFacilities with complete galleries generally see stronger engagement quality."
+    },
+    "listings-profile-health-checklist": {
+      "id": "listings-profile-health-checklist",
+      "slug": "listings-profile-health-checklist",
+      "title": "Profile Health Checklist",
+      "content_md": "### Required completeness blocks\n- Facility description\n- Contact details\n- Pricing range\n- Care types\n- Amenities\n- Photos\n\n### Publish rule\nComplete core blocks before promotion-focused edits. This prevents ranking volatility."
+    },
+    "listings-address-change-policy": {
+      "id": "listings-address-change-policy",
+      "slug": "listings-address-change-policy",
+      "title": "Address Change Policy",
+      "content_md": "### Why address is controlled\nAddress updates require verification to preserve directory trust and map consistency.\n\n### Submit request\nInclude current address, requested address, reason, and documentation."
+    },
+    "listings-publish-quality-gate": {
+      "id": "listings-publish-quality-gate",
+      "slug": "listings-publish-quality-gate",
+      "title": "Pre-Publish Quality Gate",
+      "content_md": "### Before publishing\n1. Validate phone and website.\n2. Confirm pricing is current.\n3. Confirm at least one recent photo set.\n4. Confirm no stale policy answers in Q&A.\n\nPublishing without this check can reduce operator trust with families."
+    },
+    "leads-status-definitions": {
+      "id": "leads-status-definitions",
+      "slug": "leads-status-definitions",
+      "title": "Lead Status Definitions",
+      "content_md": "### Standard statuses\n- **New**\n- **Contacted**\n- **Tour Scheduled**\n- **Tour Completed**\n- **Moved In**\n- **Lost**\n\nUse consistent status definitions across your team."
+    },
+    "leads-roi-methodology": {
+      "id": "leads-roi-methodology",
+      "slug": "leads-roi-methodology",
+      "title": "Estimated Impact Methodology",
+      "content_md": "### Estimated impact model\nThe model combines verified lead activity with configurable baseline assumptions.\n\nGuardrails:\n- Hard bounds: **0.5% to 20.0%**\n- Safe zone: **1.0% to 15.0%**\n\nOutside safe zone, a **Custom Baseline Applied** warning appears."
+    },
+    "leads-response-time": {
+      "id": "leads-response-time",
+      "slug": "leads-response-time",
+      "title": "Response Time Guidance",
+      "content_md": "### Operational target\nRespond within one business day.\n\n### Why it matters\nDelays reduce lead quality and confidence in trend reporting."
+    },
+    "leads-conversion-funnel-playbook": {
+      "id": "leads-conversion-funnel-playbook",
+      "slug": "leads-conversion-funnel-playbook",
+      "title": "Conversion Funnel Playbook",
+      "content_md": "### Funnel optimization sequence\n1. Increase complete profile coverage.\n2. Improve first-response consistency.\n3. Reduce friction to tour scheduling.\n4. Track loss reasons and act on patterns.\n\n### Weekly KPI checks\n- Intent to conversion trend\n- Tour completion ratio\n- Lost lead reason concentration"
+    },
+    "leads-followup-cadence": {
+      "id": "leads-followup-cadence",
+      "slug": "leads-followup-cadence",
+      "title": "Recommended Follow-Up Cadence",
+      "content_md": "### Suggested cadence\n- Day 0: Initial response\n- Day 1: Follow-up with scheduling options\n- Day 3: Clarify care fit and pricing\n- Day 7: Close loop or mark outcome\n\nKeep notes brief and factual to improve team handoffs."
+    },
+    "leads-low-confidence-recovery": {
+      "id": "leads-low-confidence-recovery",
+      "slug": "leads-low-confidence-recovery",
+      "title": "Recovering from Low Confidence Metrics",
+      "content_md": "### When cards show Gathering Insights\n- Verify minimum data threshold not met.\n- Backfill missing lead statuses.\n- Ensure duplicate handling is correct.\n\n### Recovery target\nReach threshold with clean data before using benchmark comparisons."
+    },
+    "qa-official-response-guidelines": {
+      "id": "qa-official-response-guidelines",
+      "slug": "qa-official-response-guidelines",
+      "title": "Official Response Guidelines",
+      "content_md": "### Quality standards\n- Be accurate and operationally true.\n- Use plain language and clear next steps.\n- Avoid unsupported claims.\n\nOfficial responses represent the facility publicly."
+    },
+    "qa-stale-answer-policy": {
+      "id": "qa-stale-answer-policy",
+      "slug": "qa-stale-answer-policy",
+      "title": "Stale Answer Policy",
+      "content_md": "### Refresh interval\nAnswers older than six months should be reviewed and refreshed to maintain verified information quality."
+    },
+    "qa-notification-expectations": {
+      "id": "qa-notification-expectations",
+      "slug": "qa-notification-expectations",
+      "title": "Q&A Notification Expectations",
+      "content_md": "### Notification behavior\nQuestion alerts and stale-answer reminders are sent by email according to notification settings."
+    },
+    "qa-answer-quality-rubric": {
+      "id": "qa-answer-quality-rubric",
+      "slug": "qa-answer-quality-rubric",
+      "title": "Answer Quality Rubric",
+      "content_md": "### Rubric\n- **Completeness**: addresses full question scope\n- **Specificity**: includes concrete policy detail\n- **Clarity**: easy to read and non-ambiguous\n- **Actionability**: includes next step for family\n\nScore each response before publishing for consistency."
+    },
+    "qa-sensitive-topic-handling": {
+      "id": "qa-sensitive-topic-handling",
+      "slug": "qa-sensitive-topic-handling",
+      "title": "Handling Sensitive Topics",
+      "content_md": "### Sensitive topics\nFor pricing disputes, staffing complaints, or medical concerns:\n- acknowledge concern\n- provide verified policy\n- offer direct follow-up channel\n\nDo not publish private health information."
+    },
+    "qa-compliance-guardrails": {
+      "id": "qa-compliance-guardrails",
+      "slug": "qa-compliance-guardrails",
+      "title": "Q&A Compliance Guardrails",
+      "content_md": "### Guardrails\n- No misleading promises\n- No confidential resident information\n- No discriminatory language\n- Keep policy references current\n\nEscalate uncertain responses to facility leadership before publishing."
+    },
+    "billing-slot-management": {
+      "id": "billing-slot-management",
+      "slug": "billing-slot-management",
+      "title": "Slot Management",
+      "content_md": "### Assignment rules\nYour active plan controls premium slot count.\n\nUnassign one facility before assigning another if slots are full."
+    },
+    "billing-entitlement-errors": {
+      "id": "billing-entitlement-errors",
+      "slug": "billing-entitlement-errors",
+      "title": "Billing and Entitlement Errors",
+      "content_md": "### Error actions\n- **ERR_SLOT_LIMIT**: Upgrade to increase slots.\n- **ERR_PLAN_RESTRICTED**: View plans for required tier.\n- **ERR_PENDING_PAYMENT**: Open billing and resolve outstanding balance.\n\nAlways use the in-UI CTA first."
+    },
+    "billing-stripe-portal": {
+      "id": "billing-stripe-portal",
+      "slug": "billing-stripe-portal",
+      "title": "Stripe Billing Portal",
+      "content_md": "### Portal capabilities\nUpdate payment methods, review invoices, and manage subscription details in Stripe."
+    },
+    "billing-assignment-troubleshooting": {
+      "id": "billing-assignment-troubleshooting",
+      "slug": "billing-assignment-troubleshooting",
+      "title": "Assignment Troubleshooting",
+      "content_md": "### Common failures\n- Slot limit reached\n- Plan restriction\n- Pending payment\n\n### Resolution sequence\n1. Read error code in banner.\n2. Use mapped CTA.\n3. Retry assignment after state update."
+    },
+    "billing-upgrade-readiness-check": {
+      "id": "billing-upgrade-readiness-check",
+      "slug": "billing-upgrade-readiness-check",
+      "title": "Upgrade Readiness Check",
+      "content_md": "### Before upgrading\n- Confirm target facility list\n- Confirm active slot utilization\n- Confirm billing owner permissions\n- Confirm payment method status\n\nThis avoids failed upgrades and rework."
+    },
+    "billing-refund-and-dispute-policy": {
+      "id": "billing-refund-and-dispute-policy",
+      "slug": "billing-refund-and-dispute-policy",
+      "title": "Refund and Dispute Policy",
+      "content_md": "### Billing policy summary\nFor disputes, include invoice ID, charge date, amount, and issue summary in the first support request to speed resolution."
+    },
+    "help-getting-started": {
+      "id": "help-getting-started",
+      "slug": "help-getting-started",
+      "title": "Getting Started Checklist",
+      "content_md": "### First-day checklist\n1. Confirm profile basics and contact channels.\n2. Complete pricing and amenities.\n3. Add media and publish.\n4. Review leads and Q&A daily."
+    },
+    "help-account-security": {
+      "id": "help-account-security",
+      "slug": "help-account-security",
+      "title": "Account Security",
+      "content_md": "### Security practices\n- Use strong unique credentials.\n- Restrict operator access by role.\n- Review account activity regularly.\n\nReport suspected unauthorized access immediately."
+    },
+    "help-contact-support": {
+      "id": "help-contact-support",
+      "slug": "help-contact-support",
+      "title": "Contact Support",
+      "content_md": "### Required support packet\nInclude:\n- Facility ID and name\n- Exact timestamp and timezone\n- Screenshot or screen recording\n- Error code if present\n- Steps to reproduce\n\nThis reduces first-response back-and-forth."
+    },
+    "help-severity-and-escalation": {
+      "id": "help-severity-and-escalation",
+      "slug": "help-severity-and-escalation",
+      "title": "Severity and Escalation",
+      "content_md": "### Incident severity\n- **P1**: Security, access, or critical data integrity\n- **P2**: Core workflow blocked with workaround\n- **P3**: Non-blocking defect or content issue\n\n### Escalate when\n- P1 unresolved immediately\n- P2 unresolved in one business day\n- repeated recurrence after fix"
+    },
+    "help-incident-report-template": {
+      "id": "help-incident-report-template",
+      "slug": "help-incident-report-template",
+      "title": "Incident Report Template",
+      "content_md": "### Template\n- Summary\n- Impacted users\n- Start time\n- Detection method\n- Current status\n- Mitigation applied\n- Next checkpoint\n\nUse this format for internal and support handoff consistency."
+    },
+    "help-common-fixes-index": {
+      "id": "help-common-fixes-index",
+      "slug": "help-common-fixes-index",
+      "title": "Common Fixes Index",
+      "content_md": "### Quick fixes\n- Lead card stale: refresh statuses and wait one cycle\n- Billing assignment failed: resolve mapped error code\n- Q&A stale warning: update old answers\n- Missing KPI: verify confidence threshold and source data volume"
+    },
+    "help-release-notes-and-changes": {
+      "id": "help-release-notes-and-changes",
+      "slug": "help-release-notes-and-changes",
+      "title": "Release Notes and Change Awareness",
+      "content_md": "### Change discipline\nReview release notes before weekly operations review. Note any metric definition or workflow behavior updates and align team SOPs."
+    },
+    "help-training-plan-new-staff": {
+      "id": "help-training-plan-new-staff",
+      "slug": "help-training-plan-new-staff",
+      "title": "Training Plan for New Staff",
+      "content_md": "### 7-day onboarding plan\nDay 1: Dashboard orientation\nDay 2: Lead workflow\nDay 3: Q&A standards\nDay 4: Listing quality control\nDay 5: Billing basics\nDay 6: Incident handling\nDay 7: supervised execution\n\nRequire sign-off on each module before independent access."
+    }
+  }
+}

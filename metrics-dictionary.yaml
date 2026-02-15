@@ -1,0 +1,49 @@
+version: 1.0.0
+last_updated: 2026-02-15
+context: Operator Dashboard V1
+
+metrics:
+  roi_estimated_impact:
+    display_name: "Estimated ROI Impact"
+    type: currency
+    confidence_threshold: 3
+    calculation_logic: "(verified_leads * baseline_move_in_rate) * avg_monthly_rate"
+    guardrails:
+      hard_min: 0.005
+      hard_max: 0.20
+      safe_min: 0.01
+      safe_max: 0.15
+      market_default: 0.05
+    trust_label: "Based on your custom baseline and average monthly rate."
+
+  lead_velocity:
+    display_name: "Lead Velocity"
+    type: percentage
+    confidence_threshold: 5
+    calculation_logic: "((current_period_leads - prior_period_leads) / prior_period_leads) * 100"
+    trust_label: "Comparison of lead volume against the previous 30-day window."
+
+  profile_completeness:
+    display_name: "Profile Strength"
+    type: score
+    confidence_threshold: 1
+    calculation_logic: "weighted_sum(photos: 30, description: 20, pricing: 20, care_types: 30)"
+    trust_label: "A measure of how detailed your facility information is for families."
+
+  family_journey:
+    display_name: "Family Journey"
+    type: funnel
+    confidence_threshold: 5
+    calculation_logic: "session_deduped_funnel(impressions, engagement, intent, conversions)"
+    trust_label: "Session-deduped family journey based on verified lead events across your owned facilities."
+
+  community_engagement_rate:
+    display_name: "Response Rate"
+    status: v1.5_deferred
+    calculation_logic: "(official_responses / total_questions) * 100"
+
+placeholders:
+  insufficient_data:
+    title: "Gathering Insights"
+    body: "We need {remaining} more {unit} to generate a confident benchmark."
+    cta: "Update Lead Status"

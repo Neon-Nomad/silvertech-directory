@@ -37,6 +37,14 @@ const findStateByInput = (input: string) => {
   );
 };
 
+const STATE_SEARCH_EXAMPLES: Record<string, { cityState: string; zip: string }> = {
+  CA: { cityState: 'Los Angeles, CA', zip: '90001' },
+  FL: { cityState: 'Orlando, FL', zip: '32801' },
+  TX: { cityState: 'Austin, TX', zip: '78701' },
+  NY: { cityState: 'Buffalo, NY', zip: '14201' },
+  IN: { cityState: 'Muncie, IN', zip: '47302' },
+};
+
 const DirectorySearch: React.FC = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
@@ -56,6 +64,19 @@ const DirectorySearch: React.FC = () => {
     () => ALL_STATES.map((s) => ({ label: s.name, value: s.slug, abbr: s.abbreviation })),
     []
   );
+  const selectedState = useMemo(
+    () => ALL_STATES.find((s) => s.slug === (stateSlug || routeState || '')),
+    [stateSlug, routeState]
+  );
+  const locationExample = useMemo(() => {
+    if (!selectedState) {
+      return { cityState: 'Los Angeles, CA', zip: '90001' };
+    }
+    return STATE_SEARCH_EXAMPLES[selectedState.abbreviation] || {
+      cityState: `City, ${selectedState.abbreviation}`,
+      zip: '12345',
+    };
+  }, [selectedState]);
 
   const handleSearch = async () => {
     setError('');
@@ -85,7 +106,7 @@ const DirectorySearch: React.FC = () => {
     }
 
     if (!resolvedStateSlug && !rawName) {
-      setError('Please select a state or type a city followed by a state (e.g., "Muncie, IN").');
+      setError(`Please select a state or type a city followed by a state (e.g., "${locationExample.cityState}").`);
       return;
     }
 
@@ -315,8 +336,7 @@ const DirectorySearch: React.FC = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold text-charcoal mb-4">Search Senior Living by City or State</h1>
           <p className="text-lg text-charcoal/70 mb-8">
-            Choose a state or type a city or ZIP code (e.g., “Muncie, IN” or “47302”) to see every
-            licensed facility.
+            Choose a state or type a city or ZIP code (e.g., {`"${locationExample.cityState}"`} or {`"${locationExample.zip}"`}) to see every licensed facility.
           </p>
           <div className="bg-white rounded-2xl shadow-lg p-4 border border-warm-gray">
             <div className="flex flex-col md:flex-row gap-4">
@@ -342,7 +362,7 @@ const DirectorySearch: React.FC = () => {
                 <MapPin className="absolute left-3 top-11 transform text-charcoal/40" size={20} />
                 <input
                   type="text"
-                  placeholder="Muncie, IN or 47302"
+                  placeholder={`${locationExample.cityState} or ${locationExample.zip}`}
                   value={location}
                   onChange={(e) => handleLocationChange(e.target.value)}
                   onFocus={() => location.trim() && setShowSuggestions(true)}
