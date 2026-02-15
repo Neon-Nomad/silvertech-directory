@@ -1,0 +1,84 @@
+name: Founder Autopilot
+
+on:
+  schedule:
+    # Frequent lightweight inbox of actionable exceptions.
+    - cron: "15 */4 * * *"
+    # Daily full founder autopilot run.
+    - cron: "30 12 * * *"
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Which automation task to run"
+        required: true
+        default: "both"
+        type: choice
+        options:
+          - daily
+          - exceptions
+          - both
+
+concurrency:
+  group: founder-autopilot
+  cancel-in-progress: false
+
+jobs:
+  founder-exceptions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    if: |
+      github.event_name == 'workflow_dispatch' && (inputs.task == 'exceptions' || inputs.task == 'both') ||
+      github.event_name == 'schedule' && github.event.schedule == '15 */4 * * *'
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL || vars.SUPABASE_URL || vars.VITE_SUPABASE_URL }}
+      VITE_SUPABASE_URL: ${{ secrets.SUPABASE_URL || vars.SUPABASE_URL || vars.VITE_SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.VITE_SUPABASE_SERVICE_ROLE_KEY }}
+      VITE_SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.VITE_SUPABASE_SERVICE_ROLE_KEY }}
+      FOUNDER_DAILY_WEBHOOK_URL: ${{ secrets.OPS_ALERT_WEBHOOK_URL || secrets.ALERT_WEBHOOK_URL }}
+      FOUNDER_EXCEPTIONS_NOTIFY: "true"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run founder exceptions inbox
+        run: npm run founder:exceptions
+
+  founder-daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    if: |
+      github.event_name == 'workflow_dispatch' && (inputs.task == 'daily' || inputs.task == 'both') ||
+      github.event_name == 'schedule' && github.event.schedule == '30 12 * * *'
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL || vars.SUPABASE_URL || vars.VITE_SUPABASE_URL }}
+      VITE_SUPABASE_URL: ${{ secrets.SUPABASE_URL || vars.SUPABASE_URL || vars.VITE_SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.VITE_SUPABASE_SERVICE_ROLE_KEY }}
+      VITE_SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.VITE_SUPABASE_SERVICE_ROLE_KEY }}
+      FOUNDER_DAILY_WEBHOOK_URL: ${{ secrets.OPS_ALERT_WEBHOOK_URL || secrets.ALERT_WEBHOOK_URL }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run founder daily automation
+        run: npm run founder:daily
+
