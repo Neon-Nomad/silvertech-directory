@@ -38,6 +38,7 @@
     "monitor:phase1": "npx tsx scripts/monitor_phase1.ts",
     "monitor:phase6": "npx tsx scripts/monitor_phase6.ts",
     "gate:phase6": "npx tsx scripts/release_gate_phase6.ts",
+    "founder:daily": "npx tsx scripts/founder_daily.ts",
     "pipeline:normalize": "npx tsx scripts/pipeline_normalize.ts",
     "pipeline:retry": "npx tsx scripts/pipeline_retry_dead_letters.ts",
     "pipeline:refresh-models": "npx tsx scripts/pipeline_refresh_read_models.ts",
