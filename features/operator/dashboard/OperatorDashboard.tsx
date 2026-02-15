@@ -17,6 +17,7 @@ import { HelpCenter } from './HelpCenter';
 import { HelpRouteKey } from '@/src/types/helpRegistry';
 import { DashboardOverview } from './DashboardOverview';
 import { BillingPlansView } from './BillingPlansView';
+import { FacilityLineageView } from './FacilityLineageView';
 
 const OperatorDashboard: React.FC = () => {
   const navigate = useNavigate();
@@ -35,6 +36,7 @@ const OperatorDashboard: React.FC = () => {
     leads: 'dashboard_leads',
     qa: 'dashboard_qa',
     billing: 'dashboard_billing',
+    lineage: 'dashboard_help',
     help: 'dashboard_help',
   };
 
@@ -286,6 +288,15 @@ const OperatorDashboard: React.FC = () => {
                 Billing
               </button>
               <button
+                onClick={() => goToTab('lineage')}
+                className={`pb-1 border-b-2 transition-colors ${activeTab === 'lineage'
+                  ? 'text-charcoal border-slate-900'
+                  : 'border-transparent hover:text-charcoal'
+                  }`}
+              >
+                Lineage
+              </button>
+              <button
                 onClick={() => goToTab('help')}
                 className={`pb-1 border-b-2 transition-colors ${activeTab === 'help'
                   ? 'text-charcoal border-slate-900'
@@ -312,6 +323,7 @@ const OperatorDashboard: React.FC = () => {
                   <option value="leads">Leads</option>
                   <option value="qa">Q&A</option>
                   <option value="billing">Billing</option>
+                  <option value="lineage">Lineage</option>
                   <option value="help">Help</option>
                 </select>
               </div>
@@ -361,6 +373,8 @@ const OperatorDashboard: React.FC = () => {
               onUnassignFacility={handleUnassignFacility}
             />
           )}
+
+          {activeTab === 'lineage' && <FacilityLineageView />}
 
           {activeTab === 'help' && (
             <div className="space-y-8">

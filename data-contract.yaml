@@ -55,3 +55,23 @@ api_read_models:
   required_fields:
     - data_as_of
     - confidence_score
+
+trust_enrichment:
+  facility_trigger: normalize_success
+  injected_fields:
+    - profile_strength
+    - market_benchmark
+    - enriched_at
+  profile_strength_range:
+    min: 0
+    max: 100
+  market_benchmark:
+    scope_priority:
+      - zip
+      - state
+    required_fields:
+      - scope
+      - facility_count
+      - avg_monthly_rate
+      - confidence
+  lineage_view: api_internal_facility_lineage

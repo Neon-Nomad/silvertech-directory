@@ -52,12 +52,27 @@ const upsertCanonical = async (evt: PendingRawEvent) => {
   const dedupeKey = toDedupeKey(evt.canonical_entity, payload, sourceEventId);
 
   if (evt.canonical_entity === 'facility') {
+    const facilityId = asString(payload.facility_id);
+    let canonicalPayload = payload;
+
+    if (facilityId) {
+      const { data: enrichedPayload, error: enrichmentError } = await supabase.rpc(
+        'enrich_canonical_facility_payload',
+        {
+          p_facility_id: facilityId,
+          p_payload: payload,
+        }
+      );
+      if (enrichmentError) throw enrichmentError;
+      canonicalPayload = asObject(enrichedPayload);
+    }
+
     const row = {
-      facility_id: asString(payload.facility_id),
+      facility_id: facilityId,
       source_system: evt.source_system,
       schema_version: evt.schema_version,
       dedupe_key: dedupeKey,
-      canonical_payload: payload,
+      canonical_payload: canonicalPayload,
       confidence_score: Number(payload.confidence_score ?? 0.75),
       pii_present: false,
       last_normalized_at: new Date().toISOString(),

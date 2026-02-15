@@ -1,6 +1,6 @@
-export type DashboardTab = 'overview' | 'listings' | 'leads' | 'qa' | 'billing' | 'help';
+export type DashboardTab = 'overview' | 'listings' | 'leads' | 'qa' | 'billing' | 'lineage' | 'help';
 
-const CANONICAL_TABS: DashboardTab[] = ['overview', 'listings', 'leads', 'qa', 'billing', 'help'];
+const CANONICAL_TABS: DashboardTab[] = ['overview', 'listings', 'leads', 'qa', 'billing', 'lineage', 'help'];
 
 export const isDashboardTab = (value: string | null | undefined): value is DashboardTab =>
   typeof value === 'string' && CANONICAL_TABS.includes(value as DashboardTab);
@@ -19,4 +19,3 @@ export const normalizeDashboardTab = (value: string | null | undefined): Dashboa
 
 export const dashboardPathForTab = (tab: DashboardTab): string =>
   tab === 'overview' ? '/dashboard' : `/dashboard/${tab}`;
-
