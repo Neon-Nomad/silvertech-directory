@@ -46,3 +46,12 @@ raw_layer:
       - object
       - array
 
+api_read_models:
+  version_prefix: api_v1_
+  models:
+    - api_v1_facility_profile_summary
+    - api_v1_lead_lifecycle
+    - api_v1_attribution_funnel_daily
+  required_fields:
+    - data_as_of
+    - confidence_score
