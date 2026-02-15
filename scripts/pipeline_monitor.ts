@@ -55,6 +55,10 @@ const main = async () => {
   const rawLag = minutesSince(snapshot.latest_raw_ingested_at);
   const normalizedLag = minutesSince(snapshot.latest_normalized_at);
   const readModelLag = minutesSince(snapshot.latest_read_model_refresh_at);
+  const { count: deadLetterCount, error: deadLetterError } = await supabase
+    .from('normalization_dead_letters')
+    .select('id', { count: 'exact', head: true });
+  if (deadLetterError) throw deadLetterError;
 
   const failures: string[] = [];
   if (snapshot.pending_raw_events > MAX_PENDING) {
@@ -69,10 +73,13 @@ const main = async () => {
   if (readModelLag > READ_MODEL_MAX_MINUTES) {
     failures.push(`read_model_lag_minutes=${readModelLag} exceeds ${READ_MODEL_MAX_MINUTES}`);
   }
+  if ((deadLetterCount || 0) > 0) {
+    failures.push(`dead_letter_count=${deadLetterCount} (manual review required)`);
+  }
 
   const summary =
     `pending=${snapshot.pending_raw_events} ` +
-    `rawLagMin=${rawLag} normalizedLagMin=${normalizedLag} readModelLagMin=${readModelLag}`;
+    `rawLagMin=${rawLag} normalizedLagMin=${normalizedLag} readModelLagMin=${readModelLag} deadLetters=${deadLetterCount || 0}`;
 
   if (failures.length > 0) {
     const message = `Data pipeline monitor FAILED: ${summary}\n${failures.map((f) => `- ${f}`).join('\n')}`;
@@ -94,4 +101,3 @@ main().catch(async (err) => {
   }
   process.exit(1);
 });
-
