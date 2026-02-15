@@ -8,6 +8,8 @@ on:
     - cron: "30 12 * * *"
     # Weekly founder KPI + action digest.
     - cron: "45 12 * * 1"
+    # Monthly founder board digest.
+    - cron: "0 13 1 * *"
   workflow_dispatch:
     inputs:
       task:
@@ -19,6 +21,7 @@ on:
           - daily
           - exceptions
           - weekly
+          - monthly
           - both
 
 concurrency:
@@ -114,3 +117,33 @@ jobs:
 
       - name: Run founder weekly digest
         run: npm run founder:weekly-digest
+
+  founder-monthly-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    if: |
+      github.event_name == 'workflow_dispatch' && (inputs.task == 'monthly' || inputs.task == 'both') ||
+      github.event_name == 'schedule' && github.event.schedule == '0 13 1 * *'
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL || vars.SUPABASE_URL || vars.VITE_SUPABASE_URL }}
+      VITE_SUPABASE_URL: ${{ secrets.SUPABASE_URL || vars.SUPABASE_URL || vars.VITE_SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.VITE_SUPABASE_SERVICE_ROLE_KEY }}
+      VITE_SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.VITE_SUPABASE_SERVICE_ROLE_KEY }}
+      FOUNDER_DAILY_WEBHOOK_URL: ${{ secrets.OPS_ALERT_WEBHOOK_URL || secrets.ALERT_WEBHOOK_URL }}
+      FOUNDER_MONTHLY_NOTIFY: "true"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run founder monthly digest
+        run: npm run founder:monthly-digest

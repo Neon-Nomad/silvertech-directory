@@ -41,6 +41,7 @@
     "founder:daily": "npx tsx scripts/founder_daily.ts",
     "founder:exceptions": "npx tsx scripts/founder_exception_inbox.ts",
     "founder:weekly-digest": "npx tsx scripts/founder_weekly_digest.ts",
+    "founder:monthly-digest": "npx tsx scripts/founder_monthly_digest.ts",
     "pipeline:normalize": "npx tsx scripts/pipeline_normalize.ts",
     "pipeline:retry": "npx tsx scripts/pipeline_retry_dead_letters.ts",
     "pipeline:refresh-models": "npx tsx scripts/pipeline_refresh_read_models.ts",
