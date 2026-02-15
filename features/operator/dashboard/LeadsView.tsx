@@ -93,11 +93,17 @@ const KPI_TRUST_LABELS = {
   profile_completeness: getMetricTrustLabel('profile_completeness', 'A measure of how detailed your facility information is for families.'),
 } as const;
 
+const METHOD_HELP_ARTICLE_BY_METRIC: Record<string, string> = {
+  family_journey: 'leads-conversion-funnel-playbook',
+  roi_estimated_impact: 'leads-roi-methodology',
+  profile_completeness: 'listings-profile-health-checklist',
+};
+
 const MethodologyTrigger: React.FC<{ metricKey: string; fallbackLabel: string }> = ({ metricKey, fallbackLabel }) => {
   const metric = getMetric(metricKey);
   const displayName = metric?.display_name || 'Methodology';
   const trustLabel = metric?.trust_label || fallbackLabel;
-  const calculationLogic = metric?.calculation_logic;
+  const helpSlug = METHOD_HELP_ARTICLE_BY_METRIC[metricKey] || 'help-common-fixes-index';
 
   return (
     <details className="relative group">
@@ -107,12 +113,12 @@ const MethodologyTrigger: React.FC<{ metricKey: string; fallbackLabel: string }>
       <div className="absolute right-0 z-20 mt-2 w-72 rounded-md border border-slate-200 bg-white p-3 text-left shadow-lg">
         <p className="text-xs font-semibold text-slate-900">{displayName}</p>
         <p className="mt-1 text-xs text-slate-600">{trustLabel}</p>
-        {calculationLogic && (
-          <details className="mt-2">
-            <summary className="cursor-pointer text-[11px] font-medium text-slate-700">Technical details</summary>
-            <code className="mt-1 block rounded bg-slate-50 p-2 text-[10px] text-slate-700 break-words">{calculationLogic}</code>
-          </details>
-        )}
+        <a
+          href={`/dashboard/help#${helpSlug}`}
+          className="mt-2 inline-flex text-[11px] font-medium text-primary-700 hover:text-primary-800 underline"
+        >
+          Open full methodology
+        </a>
       </div>
     </details>
   );

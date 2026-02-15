@@ -147,6 +147,8 @@ describe('LeadsView confidence states', () => {
     });
     expect(screen.queryByText('Gathering Insights')).not.toBeInTheDocument();
     expect(screen.getAllByLabelText('How is this calculated?').length).toBeGreaterThan(0);
+    expect(screen.queryByText('Technical details')).not.toBeInTheDocument();
+    expect(screen.getAllByText('Open full methodology').length).toBeGreaterThan(0);
   });
 
   it('shows safe-zone warning badge when baseline is outside safe range', async () => {
