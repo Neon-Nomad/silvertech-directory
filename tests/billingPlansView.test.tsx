@@ -36,6 +36,27 @@ describe('BillingPlansView', () => {
     expect(onBillingErrorCta).toHaveBeenCalledWith('ERR_SLOT_LIMIT');
   });
 
+  it('renders View Plans CTA for ERR_PLAN_RESTRICTED', () => {
+    render(
+      <BillingPlansView
+        userId="u-1"
+        userProfile={{ plan: 'free', status: 'active' }}
+        facilities={[]}
+        billingUiError={{
+          code: 'ERR_PLAN_RESTRICTED',
+          message: 'This feature requires a higher subscription plan.',
+        }}
+        onManageBilling={vi.fn()}
+        onBillingErrorCta={vi.fn()}
+        onUpgrade={vi.fn()}
+        onAssignFacility={vi.fn(async () => undefined)}
+        onUnassignFacility={vi.fn(async () => undefined)}
+      />
+    );
+
+    expect(screen.getByRole('button', { name: /View Plans/i })).toBeInTheDocument();
+  });
+
   it('calls assign/unassign handlers from facility controls', () => {
     const onAssignFacility = vi.fn(async () => undefined);
     const onUnassignFacility = vi.fn(async () => undefined);
