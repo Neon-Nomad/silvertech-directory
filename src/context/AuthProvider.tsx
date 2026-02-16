@@ -1,10 +1,13 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Session, User } from '@supabase/supabase-js';
 import { supabase } from '@/src/lib/supabase';
+import { getUserRole, isOperatorUser, type AppRole } from '@/src/utils/authRole';
 
 interface AuthContextType {
   session: Session | null;
   user: User | null;
+  role: AppRole;
+  isOperator: boolean;
   loading: boolean;
   signOut: () => Promise<void>;
 }
@@ -12,6 +15,8 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType>({
   session: null,
   user: null,
+  role: 'unknown',
+  isOperator: false,
   loading: true,
   signOut: async () => {},
 });
@@ -52,6 +57,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const value = {
     session,
     user,
+    role: getUserRole(user),
+    isOperator: isOperatorUser(user),
     loading,
     signOut,
   };

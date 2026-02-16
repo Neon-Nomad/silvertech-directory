@@ -11,6 +11,8 @@ import {
   getRoiGuardrailsPercent,
 } from '@/src/config/metricsDictionary';
 import { formatAsOfLabel, formatRelativeTime } from '@/src/utils/timeFormatting';
+import { trackActivationEvent, type PlanTier } from '@/src/config/activationEvents';
+import { getActivationSessionId } from '@/src/utils/activationSession';
 
 type FunnelRange = 'week' | 'month' | 'all';
 
@@ -99,14 +101,17 @@ const METHOD_HELP_ARTICLE_BY_METRIC: Record<string, string> = {
   profile_completeness: 'listings-profile-health-checklist',
 };
 
-const MethodologyTrigger: React.FC<{ metricKey: string; fallbackLabel: string }> = ({ metricKey, fallbackLabel }) => {
+const MethodologyTrigger: React.FC<{ metricKey: string; fallbackLabel: string; onViewed?: (metricKey: string) => void }> = ({ metricKey, fallbackLabel, onViewed }) => {
   const metric = getMetric(metricKey);
   const displayName = metric?.display_name || 'Methodology';
   const trustLabel = metric?.trust_label || fallbackLabel;
   const helpSlug = METHOD_HELP_ARTICLE_BY_METRIC[metricKey] || 'help-common-fixes-index';
 
   return (
-    <details className="relative group">
+    <details className="relative group" onToggle={(event) => {
+      const target = event.currentTarget as HTMLDetailsElement;
+      if (target.open) onViewed?.(metricKey);
+    }}>
       <summary className="list-none cursor-pointer text-slate-400 hover:text-slate-600 transition-colors" aria-label="How is this calculated?">
         <Info className="w-3.5 h-3.5" />
       </summary>
@@ -158,6 +163,13 @@ export const LeadsView: React.FC = () => {
   const [submittingInterestFor, setSubmittingInterestFor] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [kpiDataAsOf, setKpiDataAsOf] = useState<string>(new Date().toISOString());
+  const trackedEmptyStateViews = React.useRef<Set<string>>(new Set());
+
+  const resolvePlanTier = (): PlanTier => {
+    if (plan === 'free') return 'free';
+    if (isPremium) return 'premium';
+    return 'unknown';
+  };
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -310,6 +322,63 @@ export const LeadsView: React.FC = () => {
     return Math.round(healthRows.reduce((sum, row) => sum + computeHealthScore(row), 0) / healthRows.length);
   }, [healthRows]);
 
+  const baseContext = useMemo(() => ({
+    operator_id: user?.id || 'unknown',
+    facility_id: leads[0]?.facility_id || healthRows[0]?.facility_id || 'unknown',
+    session_id: getActivationSessionId(),
+    plan_tier: resolvePlanTier(),
+    activation_score: averageHealth,
+    source_screen: 'dashboard_leads',
+  }), [user?.id, leads, healthRows, plan, isPremium, averageHealth]);
+
+  const trackMethodologyView = (metricKey: string) => {
+    if (!user) return;
+    trackActivationEvent('methodology_viewed', baseContext, { metric_key: metricKey });
+  };
+
+  const trackEmptyStateViewed = (key: string) => {
+    if (!user || trackedEmptyStateViews.current.has(key)) return;
+    trackedEmptyStateViews.current.add(key);
+    trackActivationEvent('empty_state_viewed', baseContext, { empty_state_key: key });
+  };
+
+  const trackEmptyStateAction = (key: string, action: string) => {
+    if (!user) return;
+    trackActivationEvent('empty_state_action_clicked', baseContext, {
+      empty_state_key: key,
+      action,
+    });
+  };
+
+  const goToListings = () => {
+    if (typeof window !== 'undefined') window.location.assign('/dashboard/listings');
+  };
+
+  useEffect(() => {
+    if (!user) return;
+    trackActivationEvent('roi_module_viewed', baseContext, {
+      baseline_pct: Number(brokerBaselinePercent.toFixed(1)),
+      safe_zone_min: ROI_GUARDRAILS.safeMin,
+      safe_zone_max: ROI_GUARDRAILS.safeMax,
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user]);
+
+  useEffect(() => {
+    if (!user || !benchmark) return;
+    trackActivationEvent('benchmark_module_viewed', baseContext, {
+      your_signals_week: benchmark.your_signals_week,
+      peer_avg_week: Number(benchmark.peer_avg_week || 0),
+    });
+  }, [user, benchmark, baseContext]);
+
+  useEffect(() => {
+    if (!user || loading) return;
+    if (signals.length === 0) trackEmptyStateViewed('signals_empty');
+    if (leads.length === 0) trackEmptyStateViewed('leads_empty');
+    if (isPremium && noResultsLeads.length === 0) trackEmptyStateViewed('no_results_demand_empty');
+  }, [user, loading, signals.length, leads.length, isPremium, noResultsLeads.length]);
+
   const roiConfidenceThreshold = getMetricConfidenceThreshold('roi_estimated_impact', 3);
   const roiConfidenceCount = Number(funnel?.tour_requests || 0);
   const roiBelowConfidence = roiConfidenceCount < roiConfidenceThreshold;
@@ -396,7 +465,7 @@ export const LeadsView: React.FC = () => {
             <div>
               <div className="flex items-center gap-1.5">
                 <h3 className="text-base font-semibold text-slate-900">Family Journey</h3>
-                <MethodologyTrigger metricKey="family_journey" fallbackLabel={KPI_TRUST_LABELS.family_journey} />
+                  <MethodologyTrigger metricKey="family_journey" fallbackLabel={KPI_TRUST_LABELS.family_journey} onViewed={trackMethodologyView} />
               </div>
               <p className="text-[11px] text-slate-500 mt-0.5">{formatAsOfLabel(kpiDataAsOf, 'relative')}</p>
             </div>
@@ -418,7 +487,12 @@ export const LeadsView: React.FC = () => {
           </p>
           {familyJourneyBelowConfidence ? (
             <div className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3">
-              <p className="text-sm font-semibold text-slate-900">{insufficientDataPlaceholder.title}</p>
+              <p
+                className="text-sm font-semibold text-slate-900"
+                onMouseEnter={() => user && trackActivationEvent('confidence_label_hovered', baseContext, { metric_key: 'family_journey' })}
+              >
+                {insufficientDataPlaceholder.title}
+              </p>
               <p className="text-xs text-slate-600 mt-1">
                 {insufficientDataPlaceholder.body
                   .replace('{remaining}', String(familyJourneyRemaining))
@@ -467,7 +541,7 @@ export const LeadsView: React.FC = () => {
                 <p className="text-xs uppercase tracking-wide text-slate-500">Estimated</p>
                 <div className="flex items-center gap-1.5">
                   <h3 className="text-base font-semibold text-slate-900">Broker-Free Value</h3>
-                  <MethodologyTrigger metricKey="roi_estimated_impact" fallbackLabel={KPI_TRUST_LABELS.roi_estimated_impact} />
+                  <MethodologyTrigger metricKey="roi_estimated_impact" fallbackLabel={KPI_TRUST_LABELS.roi_estimated_impact} onViewed={trackMethodologyView} />
                 </div>
                 <p className="text-[11px] text-slate-500 mt-0.5">{formatAsOfLabel(kpiDataAsOf, 'absolute')}</p>
               </div>
@@ -475,7 +549,12 @@ export const LeadsView: React.FC = () => {
             </div>
             {roiBelowConfidence ? (
               <div className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3">
-                <p className="text-sm font-semibold text-slate-900">{insufficientDataPlaceholder.title}</p>
+                <p
+                  className="text-sm font-semibold text-slate-900"
+                  onMouseEnter={() => user && trackActivationEvent('confidence_label_hovered', baseContext, { metric_key: 'roi_estimated_impact' })}
+                >
+                  {insufficientDataPlaceholder.title}
+                </p>
                 <p className="text-xs text-slate-600 mt-1">
                   {insufficientDataPlaceholder.body
                     .replace('{remaining}', String(roiRemaining))
@@ -533,7 +612,7 @@ export const LeadsView: React.FC = () => {
               <div>
                 <div className="flex items-center gap-1.5">
                   <h3 className="text-base font-semibold text-slate-900">Profile Health</h3>
-                  <MethodologyTrigger metricKey="profile_completeness" fallbackLabel={KPI_TRUST_LABELS.profile_completeness} />
+                  <MethodologyTrigger metricKey="profile_completeness" fallbackLabel={KPI_TRUST_LABELS.profile_completeness} onViewed={trackMethodologyView} />
                 </div>
                 <p className="text-[11px] text-slate-500 mt-0.5">{formatAsOfLabel(kpiDataAsOf, 'absolute')}</p>
               </div>
@@ -542,7 +621,12 @@ export const LeadsView: React.FC = () => {
             <div className="flex items-center gap-4">
               {profileBelowConfidence ? (
                 <div className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-3 w-full">
-                  <p className="text-sm font-semibold text-slate-900">{insufficientDataPlaceholder.title}</p>
+                  <p
+                    className="text-sm font-semibold text-slate-900"
+                    onMouseEnter={() => user && trackActivationEvent('confidence_label_hovered', baseContext, { metric_key: 'profile_completeness' })}
+                  >
+                    {insufficientDataPlaceholder.title}
+                  </p>
                   <p className="text-xs text-slate-600 mt-1">
                     {insufficientDataPlaceholder.body
                       .replace('{remaining}', String(profileRemaining))
@@ -592,7 +676,22 @@ export const LeadsView: React.FC = () => {
           <h3 className="text-base font-semibold text-slate-900">Recent activity log</h3>
         </div>
         {signals.length === 0 ? (
-          <p className="text-sm text-slate-500">No verified family interest yet.</p>
+          <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+            <p className="text-sm font-semibold text-slate-900">No verified family interest yet.</p>
+            <p className="text-xs text-slate-600 mt-1">
+              We are still gathering engagement signals for your listing.
+            </p>
+            <button
+              className="mt-3 text-xs font-semibold text-primary-700 hover:text-primary-800 underline"
+              onClick={() => {
+                trackEmptyStateAction('signals_empty', 'improve_profile');
+                goToListings();
+              }}
+            >
+              Improve profile to increase signal volume
+            </button>
+            <p className="text-[11px] text-slate-500 mt-1">Expected benefit: better visibility into what families care about.</p>
+          </div>
         ) : (
           <div className="space-y-2">
             {signals.slice(0, 12).map((signal) => (
@@ -619,7 +718,24 @@ export const LeadsView: React.FC = () => {
             </p>
           </div>
           {noResultsLeads.length === 0 ? (
-            <div className="px-6 py-6 text-sm text-slate-500">No no-results demand leads yet.</div>
+            <div className="px-6 py-6">
+              <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <p className="text-sm font-semibold text-slate-900">No no-results demand leads yet.</p>
+                <p className="text-xs text-slate-600 mt-1">
+                  We haven’t detected unmatched demand in your target areas yet.
+                </p>
+                <button
+                  className="mt-3 text-xs font-semibold text-primary-700 hover:text-primary-800 underline"
+                  onClick={() => {
+                    trackEmptyStateAction('no_results_demand_empty', 'expand_listing_coverage');
+                    goToListings();
+                  }}
+                >
+                  Expand listing coverage
+                </button>
+                <p className="text-[11px] text-slate-500 mt-1">Expected benefit: capture demand where options are currently limited.</p>
+              </div>
+            </div>
           ) : (
             <>
               <div className="divide-y divide-slate-200 md:hidden">
@@ -715,7 +831,17 @@ export const LeadsView: React.FC = () => {
       {leads.length === 0 ? (
         <div className="bg-white p-12 rounded-xl shadow-sm border border-slate-200 text-center">
           <h3 className="text-lg font-medium text-slate-900 mb-2">No leads yet</h3>
-          <p className="text-slate-500">When potential residents contact your facility, they will appear here.</p>
+          <p className="text-slate-500">Families have not submitted direct inquiries yet.</p>
+          <button
+            className="mt-4 text-sm font-semibold text-primary-700 hover:text-primary-800 underline"
+            onClick={() => {
+              trackEmptyStateAction('leads_empty', 'complete_listing');
+              goToListings();
+            }}
+          >
+            Complete your listing profile
+          </button>
+          <p className="mt-2 text-xs text-slate-500">Expected benefit: more qualified inquiries from families actively searching.</p>
         </div>
       ) : (
         <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">

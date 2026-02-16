@@ -16,6 +16,7 @@ import { reportFrontendError } from '@/src/monitoring/reportError';
 const DirectorySearch = lazy(() => import('@/features/family/discovery/DirectorySearch'));
 const OperatorDashboard = lazy(() => import('@/features/operator/dashboard/OperatorDashboard'));
 const OperatorLogin = lazy(() => import('@/features/auth/OperatorLogin'));
+const OperatorSignUp = lazy(() => import('@/features/auth/OperatorSignUp'));
 const PricingAudit = lazy(() => import('@/features/public/wedge-tools/PricingAudit'));
 const CareFinderSurvey = lazy(() => import('@/features/family/survey/CareFinderSurvey'));
 const SurveyResults = lazy(() => import('@/features/family/survey/SurveyResults'));
@@ -119,7 +120,7 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { has
 const DashboardRouteGate: React.FC = () => {
   const location = useLocation();
   const { tab } = useParams<{ tab?: string }>();
-  const { user, loading } = useAuth();
+  const { user, loading, isOperator } = useAuth();
 
   const searchParams = new URLSearchParams(location.search);
   const legacyTab = normalizeDashboardTab(searchParams.get('tab'));
@@ -142,6 +143,16 @@ const DashboardRouteGate: React.FC = () => {
   if (!user) {
     const redirectTo = `${location.pathname}${location.search}`;
     return <Navigate to={`/operator/login?redirect_to=${encodeURIComponent(redirectTo)}`} replace />;
+  }
+
+  if (!isOperator) {
+    const redirectTo = `${location.pathname}${location.search}`;
+    return (
+      <Navigate
+        to={`/operator/login?redirect_to=${encodeURIComponent(redirectTo)}&role_mismatch=1`}
+        replace
+      />
+    );
   }
 
   if (tab && !normalizeDashboardTab(tab)) {
@@ -241,6 +252,7 @@ function App() {
                     <Route path="/dashboard/edit/:id" element={<LegacyDashboardEditRedirect />} />
                     <Route path="/dashboard/facility/:id/edit" element={<EditFacility />} />
                     <Route path="/operator/login" element={<OperatorLogin />} />
+                    <Route path="/operator/signup" element={<OperatorSignUp />} />
                     {enableIntegrityHarness && <Route path="/__integrity" element={<IntegrityHarness />} />}
                     <Route path="/claim/:id" element={<ClaimFacilityPage />} />
                     <Route path="/claim-business" element={<ClaimBusiness />} />

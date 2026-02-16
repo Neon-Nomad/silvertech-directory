@@ -4,6 +4,9 @@ import { Shield, CheckCircle, AlertCircle, Building2 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { supabase } from '@/src/lib/supabase';
 import { useAuth } from '@/src/context/AuthProvider';
+import { isOperatorUser } from '@/src/utils/authRole';
+import { trackActivationEvent } from '@/src/config/activationEvents';
+import { getActivationSessionId } from '@/src/utils/activationSession';
 
 export const ClaimFacilityPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -30,6 +33,12 @@ export const ClaimFacilityPage: React.FC = () => {
         const returnPath = id ? `/claim/${id}` : '/claim-business';
         navigate(`/operator/login?redirect_to=${encodeURIComponent(returnPath)}`);
         return;
+    }
+
+    if (!isOperatorUser(user)) {
+      setError('This account is a family account. Please sign in with an operator account to claim a facility profile.');
+      setLoading(false);
+      return;
     }
 
     const fetchFacility = async () => {
@@ -79,6 +88,18 @@ export const ClaimFacilityPage: React.FC = () => {
         });
 
       if (error) throw error;
+      trackActivationEvent(
+        'operator_claim_completed',
+        {
+          operator_id: user.id,
+          facility_id: facility.id,
+          session_id: getActivationSessionId(),
+          plan_tier: 'unknown',
+          activation_score: 0,
+          source_screen: 'claim_facility',
+        },
+        { claim_status: 'pending' },
+      );
       setSuccess(true);
     } catch (err: any) {
       console.error('Error submitting claim:', err);

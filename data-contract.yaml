@@ -75,3 +75,30 @@ trust_enrichment:
       - avg_monthly_rate
       - confidence
   lineage_view: api_internal_facility_lineage
+
+activation_analytics:
+  table: operator_activation_events
+  required_fields:
+    - operator_id
+    - facility_id
+    - session_id
+    - plan_tier
+    - activation_score
+    - source_screen
+    - occurred_at
+  benchmark_thresholds:
+    min_profile_views: 25
+    min_inquiries: 5
+  cta_gate:
+    checklist_completion_lt: 0.8
+    photos_lt: 10
+    benchmark_gap_pct_gte: 0.03
+  funnel_steps:
+    - operator_claim_completed
+    - operator_activation_screen_viewed
+    - field_updated
+    - checklist_step_completed
+    - benchmark_module_viewed
+    - roi_module_viewed
+    - premium_cta_clicked
+    - premium_trial_started

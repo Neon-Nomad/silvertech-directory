@@ -19,17 +19,19 @@ describe('DashboardOverview', () => {
       />
     );
 
-    expect(screen.getByText('Quick Actions')).toBeInTheDocument();
+    expect(screen.getByText('Insights')).toBeInTheDocument();
     expect(screen.getByText('Performance Overview')).toBeInTheDocument();
     expect(screen.getByText('Recent Leads')).toBeInTheDocument();
+    expect(screen.getByText('Next best fix: Add pricing range (worth +20 score).')).toBeInTheDocument();
 
+    fireEvent.click(screen.getByText('Insights'));
     fireEvent.click(screen.getByRole('button', { name: /View Public Profile/i }));
     fireEvent.click(screen.getByRole('button', { name: /Edit Listing/i }));
     fireEvent.click(screen.getByRole('button', { name: /View all/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^Update pricing$/ }));
 
     expect(onViewPublicProfile).toHaveBeenCalledTimes(1);
-    expect(onGoToListings).toHaveBeenCalledTimes(1);
+    expect(onGoToListings).toHaveBeenCalledTimes(2);
     expect(onGoToLeads).toHaveBeenCalledTimes(1);
   });
 });
-

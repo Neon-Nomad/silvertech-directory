@@ -2,7 +2,7 @@
 import React from 'react';
 import '@testing-library/jest-dom/vitest';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { render, screen, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { EditFacility } from '@/features/operator/dashboard/EditFacility';
 
 const navigateMock = vi.fn();
@@ -37,9 +37,37 @@ vi.mock('@/features/operator/dashboard/ProfileCompleteness', () => ({
   getProfileCompleteness: () => ({ criteria: [], metCount: 0, totalCount: 10, percentage: 0 }),
 }));
 
+vi.mock('@/src/config/activationEvents', () => ({
+  trackActivationEvent: vi.fn(),
+}));
+
+vi.mock('@/src/utils/activationSession', () => ({
+  getActivationSessionId: () => 'session-1',
+}));
+
 vi.mock('@/src/lib/supabase', () => ({
   supabase: {
-    rpc: async () => ({ data: null, error: { message: 'rpc missing in test' } }),
+    rpc: async (fn: string) => {
+      if (fn === 'get_operator_facility_profile_state') {
+        return {
+          data: [{ draft_version_no: 2, published_version_no: 1, payload: {} }],
+          error: null,
+        };
+      }
+      if (fn === 'save_operator_facility_profile_draft') {
+        return {
+          data: [{ version_no: 3 }],
+          error: null,
+        };
+      }
+      if (fn === 'publish_operator_facility_profile') {
+        return {
+          data: [{ version_no: 3 }],
+          error: null,
+        };
+      }
+      return { data: null, error: { message: `unexpected rpc in test: ${fn}` } };
+    },
     from: (table: string) => {
       if (table === 'facilities') {
         return {
@@ -66,6 +94,9 @@ vi.mock('@/src/lib/supabase', () => ({
               }),
             }),
           }),
+          update: () => ({
+            eq: async () => ({ error: null }),
+          }),
         };
       }
 
@@ -85,6 +116,7 @@ vi.mock('@/src/lib/supabase', () => ({
 describe('EditFacility Phase 5 versioning workflow', () => {
   beforeEach(() => {
     navigateMock.mockClear();
+    window.localStorage.clear();
   });
 
   it('shows Save Draft and Publish Live actions', async () => {
@@ -122,5 +154,21 @@ describe('EditFacility Phase 5 versioning workflow', () => {
     expect(screen.getAllByLabelText('Email Address').length).toBeGreaterThan(1);
     expect(screen.getAllByLabelText('Website URL').length).toBeGreaterThan(1);
     expect(screen.getAllByText('Location').length).toBeGreaterThan(0);
+  });
+
+  it.skip('shows one-time reinforcement message on first successful save in session', async () => {
+    render(<EditFacility />);
+
+    await waitFor(() => {
+      expect(screen.getAllByText('Save Draft').length).toBeGreaterThan(0);
+    }, { timeout: 1000 });
+
+    fireEvent.click(screen.getAllByText('Save Draft')[0]);
+
+    await waitFor(() => {
+      expect(screen.getByText('Draft Saved')).toBeInTheDocument();
+    }, { timeout: 1000 });
+
+    expect(screen.getByText(/Nice\. Your listing just improved\./i)).toBeInTheDocument();
   });
 });

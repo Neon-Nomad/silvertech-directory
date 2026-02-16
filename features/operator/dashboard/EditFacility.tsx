@@ -8,6 +8,10 @@ import { FacilityPhotoManager } from './FacilityPhotoManager';
 import { FacilityAmenitiesEditor } from './FacilityAmenitiesEditor';
 import { FacilityCareTypesEditor } from './FacilityCareTypesEditor';
 import { ProfileCompleteness, getProfileCompleteness } from './ProfileCompleteness';
+import { trackActivationEvent } from '@/src/config/activationEvents';
+import { getActivationSessionId } from '@/src/utils/activationSession';
+
+const getFirstSaveAckKey = (sessionId: string) => `std_operator_first_save_ack_${sessionId}`;
 
 export const EditFacility: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -23,6 +27,17 @@ export const EditFacility: React.FC = () => {
   const [versioningEnabled, setVersioningEnabled] = useState(false);
   const [draftVersionNo, setDraftVersionNo] = useState<number | null>(null);
   const [publishedVersionNo, setPublishedVersionNo] = useState<number | null>(null);
+  const trackedFieldUpdatesRef = React.useRef<Set<string>>(new Set());
+  const maybeAppendFirstSaveReinforcement = (body: string) => {
+    if (typeof window === 'undefined') return body;
+    const sessionId = getActivationSessionId();
+    const key = getFirstSaveAckKey(sessionId);
+    if (window.localStorage.getItem(key)) {
+      return body;
+    }
+    window.localStorage.setItem(key, '1');
+    return `${body} Nice. Your listing just improved.`;
+  };
 
   const [formData, setFormData] = useState({
     name: '',
@@ -147,6 +162,21 @@ export const EditFacility: React.FC = () => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+    if (user && id && !trackedFieldUpdatesRef.current.has(name)) {
+      trackedFieldUpdatesRef.current.add(name);
+      trackActivationEvent(
+        'field_updated',
+        {
+          operator_id: user.id,
+          facility_id: id,
+          session_id: getActivationSessionId(),
+          plan_tier: formData.plan === 'basic' ? 'free' : 'premium',
+          activation_score: 0,
+          source_screen: 'edit_facility',
+        },
+        { field_name: name },
+      );
+    }
   };
 
   const buildPayload = () => ({
@@ -171,6 +201,18 @@ export const EditFacility: React.FC = () => {
     setSuccess(null);
 
     try {
+      trackActivationEvent(
+        'autosave_triggered',
+        {
+          operator_id: user.id,
+          facility_id: id,
+          session_id: getActivationSessionId(),
+          plan_tier: formData.plan === 'basic' ? 'free' : 'premium',
+          activation_score: 0,
+          source_screen: 'edit_facility',
+        },
+        { mode: 'save_live' },
+      );
       const { error } = await supabase
         .from('facilities')
         .update({
@@ -188,7 +230,7 @@ export const EditFacility: React.FC = () => {
       if (error) throw error;
       setSuccess({
         title: 'Changes Saved & Live',
-        body: 'Your facility profile has been updated across the directory.',
+        body: maybeAppendFirstSaveReinforcement('Your facility profile has been updated across the directory.'),
       });
       setTimeout(() => setSuccess(null), 3000);
     } catch (err) {
@@ -211,6 +253,18 @@ export const EditFacility: React.FC = () => {
     setSuccess(null);
 
     try {
+      trackActivationEvent(
+        'autosave_triggered',
+        {
+          operator_id: user.id,
+          facility_id: id,
+          session_id: getActivationSessionId(),
+          plan_tier: formData.plan === 'basic' ? 'free' : 'premium',
+          activation_score: 0,
+          source_screen: 'edit_facility',
+        },
+        { mode: 'save_draft' },
+      );
       const { data: draftData, error: draftError } = await supabase.rpc('save_operator_facility_profile_draft', {
         p_facility_id: id,
         p_payload: buildPayload(),
@@ -222,7 +276,7 @@ export const EditFacility: React.FC = () => {
 
       setSuccess({
         title: 'Draft Saved',
-        body: 'Your changes were saved as a draft. Publish when ready.',
+        body: maybeAppendFirstSaveReinforcement('Your changes were saved as a draft. Publish when ready.'),
       });
       setTimeout(() => setSuccess(null), 3000);
     } catch (err) {
@@ -244,6 +298,18 @@ export const EditFacility: React.FC = () => {
     setError(null);
     setSuccess(null);
     try {
+      trackActivationEvent(
+        'autosave_triggered',
+        {
+          operator_id: user.id,
+          facility_id: id,
+          session_id: getActivationSessionId(),
+          plan_tier: formData.plan === 'basic' ? 'free' : 'premium',
+          activation_score: 0,
+          source_screen: 'edit_facility',
+        },
+        { mode: 'publish_live' },
+      );
       const { data: draftData, error: draftError } = await supabase.rpc('save_operator_facility_profile_draft', {
         p_facility_id: id,
         p_payload: buildPayload(),
@@ -265,7 +331,7 @@ export const EditFacility: React.FC = () => {
 
       setSuccess({
         title: 'Changes Published Live',
-        body: 'Your facility profile is now live across the directory.',
+        body: maybeAppendFirstSaveReinforcement('Your facility profile is now live across the directory.'),
       });
       setTimeout(() => setSuccess(null), 3000);
     } catch (err) {

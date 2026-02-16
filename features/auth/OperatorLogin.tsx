@@ -3,12 +3,15 @@ import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { Lock, Mail, ArrowRight } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
 import { supabase } from '../../src/lib/supabase';
+import { isOperatorUser } from '@/src/utils/authRole';
 
 const OperatorLogin: React.FC = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const redirectToParam = searchParams.get('redirect_to') || '/dashboard';
+  const roleMismatch = searchParams.get('role_mismatch') === '1';
   const redirectTo = redirectToParam.startsWith('/') ? redirectToParam : '/dashboard';
+  const signUpPath = `/operator/signup?redirect_to=${encodeURIComponent(redirectTo)}`;
   const formErrorId = 'operator-login-error';
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -20,7 +23,11 @@ const OperatorLogin: React.FC = () => {
     const checkUser = async () => {
       const { data: { session } } = await supabase.auth.getSession();
       if (session) {
-        navigate(redirectTo, { replace: true });
+        if (isOperatorUser(session.user)) {
+          navigate(redirectTo, { replace: true });
+          return;
+        }
+        setError('This account does not have operator access. Sign out and use an operator account.');
       }
     };
     checkUser();
@@ -28,12 +35,22 @@ const OperatorLogin: React.FC = () => {
     // Listen for auth changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       if (session) {
-        navigate(redirectTo, { replace: true });
+        if (isOperatorUser(session.user)) {
+          navigate(redirectTo, { replace: true });
+          return;
+        }
+        setError('This account does not have operator access. Sign out and use an operator account.');
       }
     });
 
     return () => subscription.unsubscribe();
   }, [navigate, redirectTo]);
+
+  useEffect(() => {
+    if (roleMismatch) {
+      setError('Operator dashboard access requires an operator account. Please sign in with the correct account.');
+    }
+  }, [roleMismatch]);
 
   const handleGoogleLogin = async () => {
     try {
@@ -69,6 +86,18 @@ const OperatorLogin: React.FC = () => {
     }
   };
 
+  const handleSwitchAccount = async () => {
+    setIsLoading(true);
+    try {
+      await supabase.auth.signOut();
+      setError(null);
+    } catch (err: any) {
+      setError(err.message || 'Failed to sign out');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
@@ -92,6 +121,18 @@ const OperatorLogin: React.FC = () => {
               {error}
             </div>
           )}
+
+          <div className="mb-4">
+            <Button
+              type="button"
+              variant="outline"
+              className="w-full"
+              onClick={handleSwitchAccount}
+              disabled={isLoading}
+            >
+              Sign out and switch account
+            </Button>
+          </div>
 
           <div className="mb-6">
             <Button
@@ -228,8 +269,8 @@ const OperatorLogin: React.FC = () => {
             </div>
 
             <div className="mt-6 grid grid-cols-1 gap-3">
-              <Button variant="outline" className="w-full justify-center" onClick={() => navigate('/claim-business')}>
-                Apply for Access
+              <Button variant="outline" className="w-full justify-center" onClick={() => navigate(signUpPath)}>
+                Create Operator Account
               </Button>
               <Button variant="outline" className="w-full justify-center" onClick={() => navigate('/login')}>
                 Family Sign In

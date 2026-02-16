@@ -18,6 +18,8 @@ import { HelpRouteKey } from '@/src/types/helpRegistry';
 import { DashboardOverview } from './DashboardOverview';
 import { BillingPlansView } from './BillingPlansView';
 import { FacilityLineageView } from './FacilityLineageView';
+import { trackActivationEvent } from '@/src/config/activationEvents';
+import { getActivationSessionId } from '@/src/utils/activationSession';
 
 const OperatorDashboard: React.FC = () => {
   const navigate = useNavigate();
@@ -72,6 +74,18 @@ const OperatorDashboard: React.FC = () => {
   useEffect(() => {
     setShowContextHelp(false);
   }, [activeTab]);
+
+  useEffect(() => {
+    if (!user || activeTab !== 'overview') return;
+    trackActivationEvent('operator_activation_screen_viewed', {
+      operator_id: user.id,
+      facility_id: 'unknown',
+      session_id: getActivationSessionId(),
+      plan_tier: 'unknown',
+      activation_score: 0,
+      source_screen: 'dashboard_overview',
+    });
+  }, [activeTab, user]);
 
   const fetchBillingInfo = async () => {
     try {

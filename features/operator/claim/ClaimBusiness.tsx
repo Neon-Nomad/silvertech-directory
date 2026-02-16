@@ -7,7 +7,8 @@ import { useAuth } from '@/src/context/AuthProvider';
 export const ClaimBusiness: React.FC = () => {
   const navigate = useNavigate();
   const { user, loading } = useAuth();
-  const loginPath = `/login?redirect_to=${encodeURIComponent('/claim-business')}`;
+  const loginPath = `/operator/login?redirect_to=${encodeURIComponent('/claim-business')}`;
+  const signUpPath = `/operator/signup?redirect_to=${encodeURIComponent('/claim-business')}`;
 
   useEffect(() => {
     if (!loading && user) {
@@ -68,9 +69,9 @@ export const ClaimBusiness: React.FC = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <Link to={loginPath}>
+          <Link to={signUpPath}>
             <Button size="lg" className="px-8 py-3 text-lg">
-              Sign In
+              Create Operator Account
             </Button>
           </Link>
           <p className="mt-4 text-sm text-slate-500">
