@@ -19,6 +19,8 @@ const findings = {
   facilityUuid: 0,
   cityCanonical: 0,
   facilityCanonical: 0,
+  stateRegulationsCanonical: 0,
+  stateRegulatoryLegacy: 0,
   sitemapFilesChecked: 0,
 };
 
@@ -32,6 +34,8 @@ const checkUrl = (url: string) => {
   if (url.includes('/signup')) findings.hasSignup += 1;
   if (/\/assisted-living\/[^/]+\/cities\/[^/]+/.test(url)) findings.cityCanonical += 1;
   if (/\/assisted-living\/[^/]+\/(?!cities\/)[^/]+$/.test(url)) findings.cityNonCanonical += 1;
+  if (/\/states\/[^/]+\/regulations(?:\/|$)/.test(url)) findings.stateRegulationsCanonical += 1;
+  if (/\/states\/[^/]+\/regulatory(?:\/|$)/.test(url)) findings.stateRegulatoryLegacy += 1;
   if (/\/facility\//.test(url)) {
     if (uuidRegex.test(url)) findings.facilityUuid += 1;
     else findings.facilityCanonical += 1;
@@ -77,6 +81,8 @@ const report = [
   `City non-canonical URLs: ${findings.cityNonCanonical}`,
   `Facility canonical URLs (slug): ${findings.facilityCanonical}`,
   `Facility UUID URLs (non-canonical): ${findings.facilityUuid}`,
+  `State regulations canonical URLs: ${findings.stateRegulationsCanonical}`,
+  `State regulatory legacy URLs (non-canonical): ${findings.stateRegulatoryLegacy}`,
 ];
 
 console.log(report.join('\n'));
@@ -86,7 +92,8 @@ if (
   findings.hasLogin > 0 ||
   findings.hasSignup > 0 ||
   findings.cityNonCanonical > 0 ||
-  findings.facilityUuid > 0
+  findings.facilityUuid > 0 ||
+  findings.stateRegulatoryLegacy > 0
 ) {
   console.error('Sitemap verification failed. Resolve the issues above.');
   process.exit(1);

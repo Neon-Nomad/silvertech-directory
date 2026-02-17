@@ -146,7 +146,6 @@ async function generateSitemaps() {
         `${BASE_URL}/advertise`,
         `${BASE_URL}/honest-care`,
         `${BASE_URL}/blog`,
-        `${BASE_URL}/veterans-benefits`,
         // Product Categories
         `${BASE_URL}/products/bathroom-safety`,
         `${BASE_URL}/products/mobility-aids`,
@@ -231,7 +230,7 @@ async function generateSitemaps() {
             const slug = stateDef.slug;
             // State Hub Pages
             stateUrls.push(`${BASE_URL}/states/${slug}`);
-            stateUrls.push(`${BASE_URL}/states/${slug}/regulatory`);
+            stateUrls.push(`${BASE_URL}/states/${slug}/regulations`);
             stateUrls.push(`${BASE_URL}/states/${slug}/medicaid`);
             stateUrls.push(`${BASE_URL}/states/${slug}/rules`);
             stateUrls.push(`${BASE_URL}/states/${slug}/ombudsman`);

@@ -117,7 +117,7 @@ export const CityPageTemplate: React.FC = () => {
   }, [stateSlug, citySlug, cityName, stateData]);
 
   // SEO & Schema
-  const pageTitle = `Assisted Living in ${cityName}, ${stateAbbr} — Directory of Senior Care Facilities`;
+  const pageTitle = `Assisted Living in ${cityName}, ${stateAbbr} - Directory of Senior Care Facilities`;
   const pageDescription = `See the Top 10 Best Assisted Living Facilities in ${cityName}, ${stateName}. Compare prices, read reviews, and find verified senior care providers.`;
   const canonicalUrl = `https://silvertechdirectory.com/assisted-living/${stateSlug}/cities/${citySlug}`;
 
