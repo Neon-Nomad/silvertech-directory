@@ -1,0 +1,11 @@
+/facilities_index.json
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/city_index.json
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/facilities_index_shards/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/help-registry.json
+  Cache-Control: public, max-age=300, stale-while-revalidate=3600
