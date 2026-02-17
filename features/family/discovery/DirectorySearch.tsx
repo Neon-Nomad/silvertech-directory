@@ -5,7 +5,7 @@ import { ALL_STATES } from '@/src/data/states';
 import zipToCity from '@/src/data/zip_to_city.json';
 import { getLocationSuggestions, LocationSuggestion } from '@/src/utils/locationSuggestions';
 import { supabase } from '@/src/lib/supabase';
-import { loadFacilityIndex, FacilityIndexItem } from '@/src/utils/facilityIndex';
+import { loadFacilityIndexWithOptions, FacilityIndexItem } from '@/src/utils/facilityIndex';
 import { hasTypesense, typesenseClient } from '@/src/lib/typesense';
 import { trackEvent } from '@/src/utils/analytics';
 import { FEATURE_FLAGS } from '@/src/config/featureFlags';
@@ -185,7 +185,7 @@ const DirectorySearch: React.FC = () => {
     };
 
     const performOfflineSearch = async (filters: { city?: string; state?: string; zip?: string }) => {
-      const index = await loadFacilityIndex();
+      const index = await loadFacilityIndexWithOptions({ stateAbbr: filters.state });
       let filtered = index;
       if (filters.state) {
         filtered = filtered.filter((f) => f.state?.toLowerCase() === filters.state?.toLowerCase());

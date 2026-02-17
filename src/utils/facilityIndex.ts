@@ -23,6 +23,8 @@ export type CityIndexEntry = {
 };
 
 let facilityIndexCache: FacilityIndexItem[] | null = null;
+const facilityStateShardCache = new Map<string, FacilityIndexItem[]>();
+const missingFacilityShards = new Set<string>();
 let cityIndexCache: CityIndexEntry[] | null = null;
 
 const fetchJson = async <T>(path: string): Promise<T> => {
@@ -37,6 +39,40 @@ export const loadFacilityIndex = async (): Promise<FacilityIndexItem[]> => {
   if (facilityIndexCache) return facilityIndexCache;
   facilityIndexCache = await fetchJson<FacilityIndexItem[]>('/facilities_index.json');
   return facilityIndexCache;
+};
+
+type FacilityIndexLoadOptions = {
+  stateAbbr?: string | null;
+};
+
+const loadFacilityIndexShard = async (stateAbbr: string): Promise<FacilityIndexItem[] | null> => {
+  const key = stateAbbr.trim().toUpperCase();
+  if (!key || missingFacilityShards.has(key)) return null;
+  const cached = facilityStateShardCache.get(key);
+  if (cached) return cached;
+
+  try {
+    const shard = await fetchJson<FacilityIndexItem[]>(`/facilities_index_shards/${key}.json`);
+    facilityStateShardCache.set(key, shard);
+    return shard;
+  } catch (error: any) {
+    if (String(error?.message || '').includes('404')) {
+      missingFacilityShards.add(key);
+      return null;
+    }
+    throw error;
+  }
+};
+
+export const loadFacilityIndexWithOptions = async (
+  options?: FacilityIndexLoadOptions
+): Promise<FacilityIndexItem[]> => {
+  const stateAbbr = options?.stateAbbr?.trim();
+  if (stateAbbr) {
+    const shard = await loadFacilityIndexShard(stateAbbr);
+    if (shard) return shard;
+  }
+  return loadFacilityIndex();
 };
 
 export const loadCityIndex = async (): Promise<CityIndexEntry[]> => {

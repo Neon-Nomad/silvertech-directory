@@ -43,9 +43,38 @@ const cityIndex = Array.from(cityMap.values()).sort((a, b) => {
 });
 
 const outDir = path.resolve(process.cwd(), 'public');
+const shardsDir = path.join(outDir, 'facilities_index_shards');
 fs.mkdirSync(outDir, { recursive: true });
+fs.mkdirSync(shardsDir, { recursive: true });
 fs.writeFileSync(path.join(outDir, 'facilities_index.json'), JSON.stringify(facilities, null, 2));
 fs.writeFileSync(path.join(outDir, 'city_index.json'), JSON.stringify(cityIndex, null, 2));
 
+const facilitiesByState = new Map<string, typeof facilities>();
+for (const facility of facilities) {
+  const state = (facility.state || '').trim().toUpperCase();
+  if (!state) continue;
+  const existing = facilitiesByState.get(state);
+  if (existing) {
+    existing.push(facility);
+  } else {
+    facilitiesByState.set(state, [facility]);
+  }
+}
+
+const shardStates = Array.from(facilitiesByState.keys()).sort();
+for (const state of shardStates) {
+  const shardPath = path.join(shardsDir, `${state}.json`);
+  fs.writeFileSync(shardPath, JSON.stringify(facilitiesByState.get(state) || [], null, 2));
+}
+fs.writeFileSync(
+  path.join(shardsDir, 'manifest.json'),
+  JSON.stringify(
+    shardStates.map((state) => ({ state, file: `${state}.json`, count: (facilitiesByState.get(state) || []).length })),
+    null,
+    2
+  )
+);
+
 console.log(`Wrote ${facilities.length} facilities to public/facilities_index.json`);
 console.log(`Wrote ${cityIndex.length} city entries to public/city_index.json`);
+console.log(`Wrote ${shardStates.length} state shards to public/facilities_index_shards/`);

@@ -6,7 +6,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { ContentMeta } from '@/components/ui/ContentMeta';
 import { DataSourceNote } from '@/components/ui/DataSourceNote';
 import { supabase } from '@/src/lib/supabase';
-import { filterFacilitiesByLocation, loadFacilityIndex } from '@/src/utils/facilityIndex';
+import { filterFacilitiesByLocation, loadFacilityIndexWithOptions } from '@/src/utils/facilityIndex';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
 import { ALL_STATES as states } from '@/src/data/states';
 import zipToCity from '@/src/data/zip_to_city.json';
@@ -95,7 +95,7 @@ export const CityPageTemplate: React.FC = () => {
         console.error('Error fetching city facilities from Supabase:', err);
         try {
           // Fallback to static index
-          const index = await loadFacilityIndex();
+          const index = await loadFacilityIndexWithOptions({ stateAbbr: targetState });
           const filtered = filterFacilitiesByLocation(index, targetState, targetCity);
           setFacilities(filtered);
         } catch (fallbackError) {
