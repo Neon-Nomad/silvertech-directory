@@ -17,6 +17,7 @@ import {
 import { getActivationSessionId } from '@/src/utils/activationSession';
 import { formatAsOfLabel } from '@/src/utils/timeFormatting';
 import { buildActivationSnapshot } from '@/src/utils/activationSnapshot';
+import type { ActivationFunnelStage, ActivationQuickWinId } from '@/src/utils/activationSnapshot';
 import { supabase } from '@/src/lib/supabase';
 
 type DashboardOverviewProps = {
@@ -55,7 +56,7 @@ type ChecklistItem = {
 };
 
 type QuickWin = {
-  id: string;
+  id: ActivationQuickWinId;
   field: string;
   why: string;
   cta: string;
@@ -65,13 +66,6 @@ type QuickWin = {
 type ActivationEventRow = {
   session_id: string;
   event_name: string;
-};
-
-type FunnelStage = {
-  id: string;
-  label: string;
-  count: number;
-  rate: number;
 };
 
 export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
@@ -91,7 +85,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
   const hasTrackedActivationScoreView = React.useRef(false);
   const previousActivationScoreRef = React.useRef<number | null>(null);
   const [dataAsOf] = React.useState<string>(new Date().toISOString());
-  const [funnelStages, setFunnelStages] = React.useState<FunnelStage[]>([]);
+  const [funnelStages, setFunnelStages] = React.useState<ActivationFunnelStage[]>([]);
   const [funnelLoading, setFunnelLoading] = React.useState(false);
   const insightsRef = React.useRef<HTMLDetailsElement | null>(null);
 
@@ -164,7 +158,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
   const checklistCompletion = snapshot.checklist.completedCount / snapshot.checklist.totalCount;
   const photoCount = snapshot.score.breakdown.photos > 0 ? 10 : 2;
 
-  const quickWinTemplates: Record<string, Omit<QuickWin, 'id'>> = React.useMemo(() => ({
+  const quickWinTemplates: Record<ActivationQuickWinId, Omit<QuickWin, 'id'>> = React.useMemo(() => ({
     photos_missing: {
       field: 'Photo gallery',
       why: 'Families engage more when they can see rooms and common areas.',
@@ -233,7 +227,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
         const countStage = (eventName: string) =>
           Array.from(bySession.values()).filter((events) => events.has(eventName)).length;
 
-        const stages: FunnelStage[] = [
+        const stages = ([
           { id: 'claim', label: 'Claim completed', count: countStage('operator_claim_completed'), rate: 0 },
           { id: 'view', label: 'Dashboard viewed', count: countStage('operator_activation_screen_viewed'), rate: 0 },
           { id: 'edit', label: 'First edit made', count: countStage('field_updated'), rate: 0 },
@@ -242,7 +236,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
           { id: 'roi', label: 'ROI viewed', count: countStage('roi_module_viewed'), rate: 0 },
           { id: 'cta', label: 'Premium CTA clicked', count: countStage('premium_cta_clicked'), rate: 0 },
           { id: 'trial', label: 'Trial started', count: countStage('premium_trial_started'), rate: 0 },
-        ].map((stage) => ({
+        ] satisfies ActivationFunnelStage[]).map((stage) => ({
           ...stage,
           rate: totalSessions > 0 ? stage.count / totalSessions : 0,
         }));
