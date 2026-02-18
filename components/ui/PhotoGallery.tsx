@@ -22,7 +22,14 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
     onClose: () => setIsOpen(false),
   });
 
-  const sampleImageUrls = Array.from({ length: 25 }, (_, i) => `/gallery_images/${i + 1}.png`);
+  const sampleImageUrls = Array.from({ length: 30 }, (_, i) => `/gallery_images/${i + 1}.avif`);
+
+  const fallbackToPng = (event: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = event.currentTarget;
+    if (!img.src.endsWith('.avif')) return;
+    img.onerror = null;
+    img.src = img.src.replace(/\.avif$/, '.png');
+  };
 
   const hashSeed = (value: string) => {
     let hash = 0;
@@ -101,6 +108,9 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
           <img 
             src={displayPhotos[0].url} 
             alt={displayPhotos[0].caption || `${facilityName} - Main View`} 
+            loading="lazy"
+            decoding="async"
+            onError={fallbackToPng}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
@@ -123,6 +133,9 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
             <img 
               src={photo.url} 
               alt={photo.caption || `${facilityName} - View ${idx + 2}`} 
+              loading="lazy"
+              decoding="async"
+              onError={fallbackToPng}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
@@ -176,6 +189,8 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, facilityName
             <img 
               src={galleryPhotos[currentIndex].url} 
               alt={galleryPhotos[currentIndex].caption || facilityName} 
+              decoding="async"
+              onError={fallbackToPng}
               className="max-h-[80vh] w-auto object-contain rounded-lg shadow-2xl"
             />
             {galleryPhotos[currentIndex].caption && (
