@@ -426,7 +426,7 @@ export const FacilityDetails: React.FC = () => {
   const regulatoryTopic = healthcareScore && ['D', 'F'].includes(healthcareScore.grade) ? 'inspections' : 'licensing';
   const regulatoryTopicUrl = `/states/${stateSlug}/regulations/${regulatoryTopic}`;
   const hasRegulatoryAlert = Boolean(healthcareScore && ['C', 'D', 'F'].includes(healthcareScore.grade));
-  const canonicalUrl = `https://silvertechdirectory.com/facility/${id}`;
+  const canonicalUrl = `https://silvertechdirectory.com/facility/${id}/`;
   const shareImage = facility.facility_photos?.[0]?.url || facility.image || defaultImage;
   const heroImage = shareImage;
   const pageTitle = `${facility.name} - ${serviceTypeString} in ${facility.city}, ${facility.state} | SilverTech`;

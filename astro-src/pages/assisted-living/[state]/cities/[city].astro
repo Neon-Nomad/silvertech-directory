@@ -15,7 +15,7 @@ const facilities = getCityFacilities(stateSlug, citySlug, 50);
 
 const title = `Assisted Living in ${cityName}, ${stateAbbr} | SilverTech Directory`;
 const description = `Compare assisted living and memory care facilities in ${cityName}, ${stateName}. View licensed communities, contact details, and transparent listings.`;
-const canonical = `https://silvertechdirectory.com/assisted-living/${stateSlug}/cities/${citySlug}`;
+const canonical = `https://silvertechdirectory.com/assisted-living/${stateSlug}/cities/${citySlug}/`;
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -34,7 +34,7 @@ const itemListSchema = {
         "addressCountry": "US"
       },
       "telephone": f.phone || undefined,
-      "url": `https://silvertechdirectory.com/facility/${f.id}`
+      "url": `https://silvertechdirectory.com/facility/${f.id}/`
     }
   }))
 };
@@ -44,7 +44,7 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://silvertechdirectory.com/" },
     { "@type": "ListItem", "position": 2, "name": "Assisted Living", "item": "https://silvertechdirectory.com/assisted-living" },
-    { "@type": "ListItem", "position": 3, "name": stateName, "item": `https://silvertechdirectory.com/assisted-living/${stateSlug}` },
+    { "@type": "ListItem", "position": 3, "name": stateName, "item": `https://silvertechdirectory.com/assisted-living/${stateSlug}/` },
     { "@type": "ListItem", "position": 4, "name": cityName, "item": canonical }
   ]
 };

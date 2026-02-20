@@ -210,14 +210,14 @@ async function generateSitemaps() {
             activeStates.add(facility.state);
 
             // Facility Page (canonical slug id from index if available)
-            facilityUrls.push(`${BASE_URL}/facility/${facility.id}`);
+            facilityUrls.push(`${BASE_URL}/facility/${facility.id}/`);
 
             // City Page
             if (facility.city && facility.state) {
                 const stateDef = ALL_STATES.find(s => s.abbreviation === facility.state);
                 if (stateDef) {
                     const citySlug = facility.city.trim().toLowerCase().replace(/ /g, '-');
-                    cityUrls.add(`${BASE_URL}/assisted-living/${stateDef.slug}/cities/${citySlug}`);
+                    cityUrls.add(`${BASE_URL}/assisted-living/${stateDef.slug}/cities/${citySlug}/`);
                 }
             }
         }
@@ -236,7 +236,7 @@ async function generateSitemaps() {
             stateUrls.push(`${BASE_URL}/states/${slug}/ombudsman`);
 
             // Assisted Living State Page
-            stateUrls.push(`${BASE_URL}/assisted-living/${slug}`);
+            stateUrls.push(`${BASE_URL}/assisted-living/${slug}/`);
         }
     }
 

@@ -119,7 +119,7 @@ export const CityPageTemplate: React.FC = () => {
   // SEO & Schema
   const pageTitle = `Assisted Living in ${cityName}, ${stateAbbr} - Directory of Senior Care Facilities`;
   const pageDescription = `See the Top 10 Best Assisted Living Facilities in ${cityName}, ${stateName}. Compare prices, read reviews, and find verified senior care providers.`;
-  const canonicalUrl = `https://silvertechdirectory.com/assisted-living/${stateSlug}/cities/${citySlug}`;
+  const canonicalUrl = `https://silvertechdirectory.com/assisted-living/${stateSlug}/cities/${citySlug}/`;
 
   // Use ranked facilities for Schema to highlight best ones first
   const rankedFacilities = rankFacilities(facilities);
@@ -143,7 +143,7 @@ export const CityPageTemplate: React.FC = () => {
           addressCountry: 'US'
         },
         telephone: f.phone,
-        url: `https://silvertechdirectory.com/facility/${f.id}`,
+        url: `https://silvertechdirectory.com/facility/${f.id}/`,
         ...(f.image ? { image: f.image } : {}),
         ...(f.price ? { priceRange: f.price } : {})
       }

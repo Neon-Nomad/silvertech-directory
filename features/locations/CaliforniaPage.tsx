@@ -81,7 +81,7 @@ export const CaliforniaPage: React.FC = () => {
       <Helmet>
         <title>{content.seo.title}</title>
         <meta name="description" content={content.seo.description} />
-        <link rel="canonical" href="https://silvertechdirectory.com/assisted-living/california" />
+        <link rel="canonical" href="https://silvertechdirectory.com/assisted-living/california/" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="SilverTech Directory" />
         <meta property="og:title" content={content.seo.title} />

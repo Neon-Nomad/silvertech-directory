@@ -140,7 +140,7 @@ export const StatePageTemplate: React.FC = () => {
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
-        <link rel="canonical" href={`https://silvertechdirectory.com/assisted-living/${stateDef.slug}`} />
+        <link rel="canonical" href={`https://silvertechdirectory.com/assisted-living/${stateDef.slug}/`} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SilverTech Directory" />
         <meta property="og:title" content={pageTitle} />

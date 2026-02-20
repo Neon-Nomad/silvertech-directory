@@ -28,7 +28,7 @@ export const FacilityQASchema: React.FC<FacilityQASchemaProps> = ({
     trackEvent('qa_faq_schema_rendered', { facilityId });
   }, [hasFAQPage, facilityId]);
 
-  const canonicalUrl = `https://silvertechdirectory.com/facility/${facilityId}`;
+  const canonicalUrl = `https://silvertechdirectory.com/facility/${facilityId}/`;
 
   const qaSchema = {
     '@context': 'https://schema.org',

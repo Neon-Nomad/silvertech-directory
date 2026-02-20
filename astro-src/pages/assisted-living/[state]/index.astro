@@ -19,7 +19,7 @@ const cities = getCityIndex().filter((c) => c.stateSlug === stateSlug);
 
 const title = `Assisted Living in ${stateName} | Senior Living Directory`;
 const description = `Browse assisted living and memory care facilities in ${stateName}. Compare city listings, licensing resources, and transparent data.`;
-const canonical = `https://silvertechdirectory.com/assisted-living/${stateSlug}`;
+const canonical = `https://silvertechdirectory.com/assisted-living/${stateSlug}/`;
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -57,7 +57,7 @@ const breadcrumbSchema = {
         <ul class="list" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
           {cities.map((c) => (
             <li class="list-item" key={`${c.stateSlug}-${c.citySlug}`}>
-              <a href={`/assisted-living/${c.stateSlug}/cities/${c.citySlug}`} style="color:#0f172a;">
+              <a href={`/assisted-living/${c.stateSlug}/cities/${c.citySlug}/`} style="color:#0f172a;">
                 <strong>{c.cityName}</strong>
               </a>
               <span class="muted">{c.stateAbbr}</span>
