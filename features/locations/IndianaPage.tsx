@@ -27,7 +27,7 @@ export const IndianaPage: React.FC = () => {
         <meta property="og:site_name" content="SilverTech Directory" />
         <meta property="og:title" content="Assisted Living in Indiana | State Guide & Licensing" />
         <meta property="og:description" content="Complete guide to assisted living in Indiana. Medicaid waivers, licensing rules (IDOH), financial assistance, and how to file complaints." />
-        <meta property="og:url" content="https://silvertechdirectory.com/assisted-living/indiana" />
+        <meta property="og:url" content="https://silvertechdirectory.com/assisted-living/indiana/" />
         <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Assisted Living in Indiana | State Guide & Licensing" />

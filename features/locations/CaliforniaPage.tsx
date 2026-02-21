@@ -86,7 +86,7 @@ export const CaliforniaPage: React.FC = () => {
         <meta property="og:site_name" content="SilverTech Directory" />
         <meta property="og:title" content={content.seo.title} />
         <meta property="og:description" content={content.seo.description} />
-        <meta property="og:url" content="https://silvertechdirectory.com/assisted-living/california" />
+        <meta property="og:url" content="https://silvertechdirectory.com/assisted-living/california/" />
         <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={content.seo.title} />

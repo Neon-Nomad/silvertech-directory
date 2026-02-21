@@ -23,9 +23,6 @@ const SurveyResults = lazy(() => import('@/features/family/survey/SurveyResults'
 const ClaimFacilityPage = lazy(() => import('@/features/operator/ClaimFacilityPage').then((m) => ({ default: m.ClaimFacilityPage })));
 const EditFacility = lazy(() => import('@/features/operator/dashboard/EditFacility').then((m) => ({ default: m.EditFacility })));
 const ClaimBusiness = lazy(() => import('@/features/operator/claim/ClaimBusiness').then((m) => ({ default: m.ClaimBusiness })));
-const StatePageTemplate = lazy(() => import('@/features/locations/StatePageTemplate').then((m) => ({ default: m.StatePageTemplate })));
-const CaliforniaPage = lazy(() => import('@/features/locations/CaliforniaPage').then((m) => ({ default: m.CaliforniaPage })));
-const IndianaPage = lazy(() => import('@/features/locations/IndianaPage').then((m) => ({ default: m.IndianaPage })));
 const PricingPage = lazy(() => import('@/features/public/pricing/PricingPage').then((m) => ({ default: m.PricingPage })));
 const ForProvidersPage = lazy(() => import('@/features/public/providers/ForProvidersPage').then((m) => ({ default: m.ForProvidersPage })));
 const ContactSalesPage = lazy(() => import('@/features/public/providers/ContactSalesPage').then((m) => ({ default: m.ContactSalesPage })));
@@ -35,13 +32,11 @@ const ProductsHub = lazy(() => import('@/src/pages/products').then((m) => ({ def
 const CategoryPage = lazy(() => import('@/src/pages/products/CategoryPage').then((m) => ({ default: m.CategoryPage })));
 const AffiliateProductPage = lazy(() => import('@/src/pages/products/AffiliateProductPage').then((m) => ({ default: m.AffiliateProductPage })));
 const StatesDirectoryPage = lazy(() => import('@/features/locations/StatesDirectoryPage').then((m) => ({ default: m.StatesDirectoryPage })));
-const CityPageTemplate = lazy(() => import('@/features/locations/CityPageTemplate').then((m) => ({ default: m.CityPageTemplate })));
 const FAQ = lazy(() => import('@/features/family/support/FAQ').then((m) => ({ default: m.FAQ })));
 const AdvertiseWithUs = lazy(() => import('@/features/public/advertise/AdvertiseWithUs').then((m) => ({ default: m.AdvertiseWithUs })));
 const HonestCarePage = lazy(() => import('@/features/public/transparency/HonestCarePage').then((m) => ({ default: m.HonestCarePage })));
 const MethodologyPage = lazy(() => import('@/features/public/transparency/MethodologyPage').then((m) => ({ default: m.MethodologyPage })));
 const Blog = lazy(() => import('./features/public/blog/Blog').then((m) => ({ default: m.Blog })));
-const LocationPage = lazy(() => import('@/features/seo/LocationPage').then((m) => ({ default: m.LocationPage })));
 const StateHubHome = lazy(() => import('@/features/locations/hub/StateHubHome').then((m) => ({ default: m.StateHubHome })));
 const StateMedicaidPage = lazy(() => import('@/features/locations/hub/StateMedicaidPage').then((m) => ({ default: m.StateMedicaidPage })));
 const StateRegulatoryHub = lazy(() => import('@/features/regulatory/StateRegulatoryHub').then((m) => ({ default: m.StateRegulatoryHub })));
@@ -174,6 +169,54 @@ const LegacyStateAssistedLivingRedirect: React.FC = () => {
   return <Navigate to={`/states/${state}`} replace />;
 };
 
+const AssistedLivingStateAstroRedirect: React.FC = () => {
+  const { state } = useParams<{ state?: string }>();
+  const location = useLocation();
+  if (!state) return <Navigate to="/states" replace />;
+
+  const target = `/assisted-living/${state}/`;
+  React.useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const next = `${target}${location.search}${location.hash}`;
+    if (`${window.location.pathname}${window.location.search}${window.location.hash}` !== next) {
+      window.location.replace(next);
+    }
+  }, [target, location.search, location.hash]);
+
+  return (
+    <div className="min-h-[40vh] flex items-center justify-center">
+      <div className="h-10 w-10 rounded-full border-2 border-slate-300 border-t-slate-700 animate-spin" />
+    </div>
+  );
+};
+
+const AssistedLivingCityAstroRedirect: React.FC = () => {
+  const { state, city } = useParams<{ state?: string; city?: string }>();
+  const location = useLocation();
+  if (!state || !city) return <Navigate to="/states" replace />;
+
+  const target = `/assisted-living/${state}/cities/${city}/`;
+  React.useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const next = `${target}${location.search}${location.hash}`;
+    if (`${window.location.pathname}${window.location.search}${window.location.hash}` !== next) {
+      window.location.replace(next);
+    }
+  }, [target, location.search, location.hash]);
+
+  return (
+    <div className="min-h-[40vh] flex items-center justify-center">
+      <div className="h-10 w-10 rounded-full border-2 border-slate-300 border-t-slate-700 animate-spin" />
+    </div>
+  );
+};
+
+const LegacyAssistedLivingCityPathRedirect: React.FC = () => {
+  const { state, city } = useParams<{ state?: string; city?: string }>();
+  if (!state || !city) return <Navigate to="/states" replace />;
+  return <Navigate to={`/assisted-living/${state}/cities/${city}/`} replace />;
+};
+
 function App() {
   const enableIntegrityHarness =
     import.meta.env.DEV ||
@@ -304,11 +347,9 @@ function App() {
                     <Route path="/regulatory-library" element={<RegulatoryLibrary />} />
 
                     {/* Legacy / Direct Routes */}
-                    <Route path="/assisted-living/california" element={<CaliforniaPage />} />
-                    <Route path="/assisted-living/indiana" element={<IndianaPage />} />
-                    <Route path="/assisted-living/:state" element={<StatePageTemplate />} />
-                    <Route path="/assisted-living/:state/:city" element={<LocationPage />} />
-                    <Route path="/assisted-living/:state/cities/:city" element={<CityPageTemplate />} />
+                    <Route path="/assisted-living/:state" element={<AssistedLivingStateAstroRedirect />} />
+                    <Route path="/assisted-living/:state/:city" element={<LegacyAssistedLivingCityPathRedirect />} />
+                    <Route path="/assisted-living/:state/cities/:city" element={<AssistedLivingCityAstroRedirect />} />
                     <Route path="/faq" element={<FAQ />} />
                     <Route path="/advertise" element={<AdvertiseWithUs />} />
                     <Route path="/honest-care" element={<HonestCarePage />} />
