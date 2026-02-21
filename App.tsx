@@ -168,6 +168,12 @@ const LegacyDashboardEditRedirect: React.FC = () => {
   return <Navigate to={`/dashboard/facility/${id}/edit`} replace />;
 };
 
+const LegacyStateAssistedLivingRedirect: React.FC = () => {
+  const { state } = useParams<{ state?: string }>();
+  if (!state) return <Navigate to="/states" replace />;
+  return <Navigate to={`/states/${state}`} replace />;
+};
+
 function App() {
   const enableIntegrityHarness =
     import.meta.env.DEV ||
@@ -294,7 +300,7 @@ function App() {
                     <Route path="/states/:state/rules" element={<StateRulesPage />} />
                     <Route path="/states/:state/ombudsman" element={<StateOmbudsmanPage />} />
                     <Route path="/states/:state/veterans" element={<StateVeteransPage />} />
-                    <Route path="/states/:state/assisted-living" element={<DirectorySearch />} />
+                    <Route path="/states/:state/assisted-living" element={<LegacyStateAssistedLivingRedirect />} />
                     <Route path="/regulatory-library" element={<RegulatoryLibrary />} />
 
                     {/* Legacy / Direct Routes */}
