@@ -50,46 +50,158 @@ const supportiveGuide = {
   href: '/guides/guilt-about-placing-parent-in-memory-care/',
   label: 'Guilt About Placing a Parent in Memory Care'
 };
+const stateDirectoryHref = `/assisted-living/${stateSlug}/`;
+const cityDirectoryHref = `/assisted-living/${stateSlug}/cities/${citySlug}/`;
 ---
 <Base title={title} description={description} canonical={canonical}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
-  <section class="container" style="padding: 2rem 1.5rem;">
-    <h1 style="font-size: 2rem; margin: 0 0 0.5rem;">{facility.name}</h1>
-    <p class="muted" style="margin: 0 0 1.5rem;">
-      Assisted Living in {facility.city}, {facility.state}
-    </p>
+  <section class="container facility-shell">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href={stateDirectoryHref}>{stateName}</a>
+      <span>/</span>
+      <a href={cityDirectoryHref}>{facility.city}</a>
+      <span>/</span>
+      <span>{facility.name}</span>
+    </nav>
+
+    <div class="hero">
+      <p class="kicker">Verified Listing</p>
+      <h1>{facility.name}</h1>
+      <p class="subhead">Assisted Living in {facility.city}, {facility.state}</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href={cityDirectoryHref}>Browse {facility.city} Directory</a>
+        <a class="btn btn-ghost" href={stateDirectoryHref}>Explore {stateName}</a>
+      </div>
+    </div>
 
     <div class="meta">
       <div><strong>Author:</strong> SilverTech Editorial Team</div>
       <div><strong>Last updated:</strong> February 8, 2026</div>
     </div>
-    <div class="note" style="margin-top: 0.75rem;">
+    <div class="note note-gap">
       <strong>Data source:</strong> Facility details are compiled from public records and official state licensing authorities.
       Learn more in our <a href="/editorial-policy" style="color:#2563eb; text-decoration: underline;">Editorial Policy</a>.
     </div>
-  </section>
 
-  <section class="container" style="padding: 0 1.5rem 2.5rem;">
-    <div class="card">
+    <div class="card info-card">
       <div class="list-item">
         <strong>Address</strong>
         <span class="muted">
           {facility.address_line1 || 'Address unavailable'}{facility.address_line1 ? ',' : ''} {facility.city}, {facility.state} {facility.postal_code || ''}
         </span>
       </div>
-      <div class="list-item" style="margin-top: 1rem;">
+      <div class="list-item info-gap">
         <strong>Phone</strong>
         <span class="muted">{facility.phone || 'Phone unavailable'}</span>
       </div>
       {isMemoryCareTagged && (
-        <p class="muted" style="margin: 1rem 0 0; font-size: 0.92rem;">
+        <p class="muted memory-note">
           Families navigating difficult memory care decisions may find this helpful:
-          <a href={supportiveGuide.href} style="color:#ca8a04; font-weight: 700; text-decoration: underline; margin-left: 0.35rem;">
+          <a href={supportiveGuide.href} class="memory-link">
             {supportiveGuide.label}
           </a>
         </p>
       )}
     </div>
   </section>
+
+  <style>
+    .facility-shell {
+      padding-top: 1.5rem;
+      padding-bottom: 2.5rem;
+    }
+    .crumbs {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      color: #64748b;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+    .crumbs a:hover {
+      color: #0f172a;
+      text-decoration: underline;
+    }
+    .hero {
+      background: linear-gradient(135deg, #111827 0%, #1f2937 45%, #374151 100%);
+      color: #fff;
+      border-radius: 16px;
+      padding: 1.4rem;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      margin-bottom: 1rem;
+    }
+    .kicker {
+      font-size: 0.74rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #facc15;
+      margin: 0;
+    }
+    h1 {
+      margin: 0.35rem 0 0;
+      font-size: clamp(1.8rem, 3vw, 2.35rem);
+      line-height: 1.05;
+    }
+    .subhead {
+      margin: 0.65rem 0 0;
+      color: #e5e7eb;
+      font-size: 1.05rem;
+    }
+    .hero-actions {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.58rem 0.9rem;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+    .btn-primary {
+      background: #eab308;
+      color: #111827;
+    }
+    .btn-primary:hover {
+      background: #facc15;
+    }
+    .btn-ghost {
+      border-color: rgba(255, 255, 255, 0.4);
+      color: #fff;
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+    .note-gap {
+      margin-top: 0.75rem;
+    }
+    .info-card {
+      margin-top: 1rem;
+    }
+    .info-gap {
+      margin-top: 1rem;
+    }
+    .memory-note {
+      margin: 1rem 0 0;
+      font-size: 0.92rem;
+    }
+    .memory-link {
+      color: #ca8a04;
+      font-weight: 700;
+      text-decoration: underline;
+      margin-left: 0.35rem;
+    }
+  </style>
 </Base>
