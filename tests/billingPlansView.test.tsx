@@ -106,4 +106,25 @@ describe('BillingPlansView', () => {
     expect(screen.getAllByRole('button', { name: /Assign Plan/i })[0]).toBeDisabled();
     expect(screen.getAllByRole('button', { name: /Upgrade/i })[0]).toBeDisabled();
   });
+
+  it('disables lower tier plan actions when user is already on a higher plan', () => {
+    render(
+      <BillingPlansView
+        userId="u-1"
+        userProfile={{ plan: 'lead_suite', billing_status: 'active' }}
+        facilities={[]}
+        billingUiError={null}
+        onManageBilling={vi.fn()}
+        onBillingErrorCta={vi.fn()}
+        onUpgrade={vi.fn()}
+        onAssignFacility={vi.fn(async () => undefined)}
+        onUnassignFacility={vi.fn(async () => undefined)}
+      />
+    );
+
+    const includedButtons = screen.getAllByRole('button', { name: /Included in your plan/i });
+    expect(includedButtons.length).toBeGreaterThan(0);
+    includedButtons.forEach((button) => expect(button).toBeDisabled());
+    expect(screen.getByRole('button', { name: /Current Plan/i })).toBeDisabled();
+  });
 });

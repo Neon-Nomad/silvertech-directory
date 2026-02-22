@@ -76,6 +76,7 @@ describe('DashboardOverview trust-layer contract', () => {
 
     render(
       <DashboardOverview
+        userProfile={{ plan: 'free' }}
         onGoToListings={vi.fn()}
         onGoToLeads={vi.fn()}
         onViewPublicProfile={vi.fn()}

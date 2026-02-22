@@ -26,6 +26,7 @@
     "seed:al": "npx tsx scripts/seed_facilities.ts AL",
     "seed:il": "npx tsx scripts/seed_facilities.ts IL",
     "seed:national": "npx tsx scripts/seed_national.ts",
+    "seed:claimed-facility": "npx tsx scripts/seed_claimed_facility_dashboard.ts",
     "sitemap": "npx tsx scripts/generate_sitemaps.ts",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

@@ -21,6 +21,7 @@ import type { ActivationFunnelStage, ActivationQuickWinId } from '@/src/utils/ac
 import { supabase } from '@/src/lib/supabase';
 
 type DashboardOverviewProps = {
+  userProfile: any;
   onGoToListings: () => void;
   onGoToLeads: () => void;
   onViewPublicProfile: () => void;
@@ -69,6 +70,7 @@ type ActivationEventRow = {
 };
 
 export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
+  userProfile,
   onGoToListings,
   onGoToLeads,
   onViewPublicProfile,
@@ -142,6 +144,9 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
 
   const activationScore = snapshot.score.value;
   const completionPct = snapshot.checklist.completionPct;
+  const roundedCompletionPct = Math.round(completionPct);
+  const isPaidPlan = Boolean(userProfile?.plan && userProfile.plan !== 'free');
+  const showProfileDataWarning = isPaidPlan && roundedCompletionPct < 80;
   const benchmarkReady = snapshot.benchmark.ready;
   const benchmarkConfidenceLabel = snapshot.benchmark.confidenceLabel;
   const yourConversion = snapshot.benchmark.yourConversion;
@@ -483,6 +488,25 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
   return (
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
       <section className="space-y-6 lg:col-span-4">
+        {showProfileDataWarning && (
+          <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 shadow-sm">
+            <p className="text-sm font-semibold text-amber-900">Complete your profile to power your dashboard</p>
+            <p className="mt-1 text-xs text-amber-800">
+              You are on a paid plan, but setup is {roundedCompletionPct}% complete. Add missing listing details so
+              your dashboard insights and ranking signals are more accurate.
+            </p>
+            <button
+              onClick={() => {
+                trackQuickWin('complete_profile_setup');
+                onGoToListings();
+              }}
+              className="mt-3 inline-flex min-h-11 items-center justify-center rounded-full bg-amber-900 px-4 py-2 text-xs font-semibold text-white hover:bg-amber-950"
+            >
+              Complete profile setup
+            </button>
+          </div>
+        )}
+
         <div className="rounded-2xl border border-warm-gray bg-white p-6 shadow-sm">
           <div className="mb-3 flex items-center justify-between">
             <h2 className="text-lg font-semibold text-charcoal">Next Best Fix</h2>

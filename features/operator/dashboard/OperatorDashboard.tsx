@@ -29,8 +29,12 @@ const OperatorDashboard: React.FC = () => {
   const [highlightQuestionId, setHighlightQuestionId] = useState<string | null>(null);
   const [facilities, setFacilities] = useState<any[]>([]);
   const [userProfile, setUserProfile] = useState<any>(null);
+  const [ownedFacilityCount, setOwnedFacilityCount] = useState<number | null>(null);
+  const [ownedFacilityCountLoading, setOwnedFacilityCountLoading] = useState(false);
   const [billingUiError, setBillingUiError] = useState<BillingUiError | null>(null);
   const [showContextHelp, setShowContextHelp] = useState(false);
+  const [showPlanPeek, setShowPlanPeek] = useState(false);
+  const planPeekTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
   const activeTab: DashboardTab = normalizeDashboardTab(tab) || 'overview';
   const helpRouteByTab: Record<DashboardTab, HelpRouteKey> = {
     overview: 'dashboard_overview',
@@ -38,7 +42,7 @@ const OperatorDashboard: React.FC = () => {
     leads: 'dashboard_leads',
     qa: 'dashboard_qa',
     billing: 'dashboard_billing',
-    lineage: 'dashboard_help',
+    vault: 'dashboard_help',
     help: 'dashboard_help',
   };
 
@@ -75,6 +79,38 @@ const OperatorDashboard: React.FC = () => {
     setShowContextHelp(false);
   }, [activeTab]);
 
+  const clearPlanPeekTimer = () => {
+    if (!planPeekTimerRef.current) return;
+    clearTimeout(planPeekTimerRef.current);
+    planPeekTimerRef.current = null;
+  };
+
+  useEffect(() => () => clearPlanPeekTimer(), []);
+
+  const currentPlan = PRICING_PLANS.find((plan) => plan.id === (userProfile?.plan || 'free'));
+  const currentPlanName = currentPlan?.name || 'Free Listing';
+  const normalizedBillingStatus = String(userProfile?.billing_status || userProfile?.status || '').toLowerCase();
+  const isPaidPlan = Boolean(userProfile?.plan && userProfile?.plan !== 'free');
+  const planStatusLabel = ['active', 'trialing', 'past_due'].includes(normalizedBillingStatus)
+    ? 'Active'
+    : isPaidPlan
+      ? 'Manual Access'
+      : 'Free Tier';
+
+  const handleUserPlanPeek = () => {
+    clearPlanPeekTimer();
+    setShowPlanPeek(true);
+    planPeekTimerRef.current = setTimeout(() => {
+      setShowPlanPeek(false);
+      planPeekTimerRef.current = null;
+    }, 900);
+  };
+
+  const hideUserPlanPeek = () => {
+    clearPlanPeekTimer();
+    setShowPlanPeek(false);
+  };
+
   useEffect(() => {
     if (!user || activeTab !== 'overview') return;
     trackActivationEvent('operator_activation_screen_viewed', {
@@ -87,18 +123,79 @@ const OperatorDashboard: React.FC = () => {
     });
   }, [activeTab, user]);
 
+  useEffect(() => {
+    let mounted = true;
+    const loadUserProfile = async () => {
+      if (!user) {
+        if (mounted) {
+          setUserProfile(null);
+          setFacilities([]);
+        }
+        return;
+      }
+
+      try {
+        const { data: profile, error } = await supabase
+          .from('user_profiles')
+          .select('*')
+          .eq('id', user.id)
+          .single();
+
+        if (error) throw error;
+        if (mounted) setUserProfile(profile);
+      } catch (err) {
+        console.error('Error loading user profile:', err);
+      }
+    };
+
+    void loadUserProfile();
+    return () => {
+      mounted = false;
+    };
+  }, [user]);
+
+  useEffect(() => {
+    let mounted = true;
+    const loadOwnedFacilityCount = async () => {
+      if (!user) {
+        if (mounted) {
+          setOwnedFacilityCount(null);
+          setOwnedFacilityCountLoading(false);
+        }
+        return;
+      }
+
+      setOwnedFacilityCountLoading(true);
+      try {
+        const { count, error } = await supabase
+          .from('facilities')
+          .select('id', { head: true, count: 'exact' })
+          .eq('owner_id', user.id);
+        if (error) throw error;
+        if (mounted) setOwnedFacilityCount(count ?? 0);
+      } catch (err) {
+        console.error('Failed to load owned facility count:', err);
+        if (mounted) setOwnedFacilityCount(0);
+      } finally {
+        if (mounted) setOwnedFacilityCountLoading(false);
+      }
+    };
+
+    loadOwnedFacilityCount();
+    return () => {
+      mounted = false;
+    };
+  }, [user]);
+
+  useEffect(() => {
+    if (!user || ownedFacilityCountLoading) return;
+    if (ownedFacilityCount === 0 && activeTab === 'overview') {
+      navigate('/dashboard/listings?onboarding=claim', { replace: true });
+    }
+  }, [activeTab, navigate, ownedFacilityCount, ownedFacilityCountLoading, user]);
+
   const fetchBillingInfo = async () => {
     try {
-      // Fetch user profile with billing info
-      const { data: profile, error: profileError } = await supabase
-        .from('user_profiles')
-        .select('*')
-        .eq('id', user?.id)
-        .single();
-
-      if (profileError) throw profileError;
-      setUserProfile(profile);
-
       // Fetch user's facilities
       const { data: facilitiesData, error: facilitiesError } = await supabase
         .from('facilities')
@@ -302,13 +399,13 @@ const OperatorDashboard: React.FC = () => {
                 Billing
               </button>
               <button
-                onClick={() => goToTab('lineage')}
-                className={`pb-1 border-b-2 transition-colors ${activeTab === 'lineage'
+                onClick={() => goToTab('vault')}
+                className={`pb-1 border-b-2 transition-colors ${activeTab === 'vault'
                   ? 'text-charcoal border-slate-900'
                   : 'border-transparent hover:text-charcoal'
                   }`}
               >
-                Lineage
+                Vault
               </button>
               <button
                 onClick={() => goToTab('help')}
@@ -337,18 +434,28 @@ const OperatorDashboard: React.FC = () => {
                   <option value="leads">Leads</option>
                   <option value="qa">Q&A</option>
                   <option value="billing">Billing</option>
-                  <option value="lineage">Lineage</option>
+                  <option value="vault">Vault</option>
                   <option value="help">Help</option>
                 </select>
               </div>
-              <div className="hidden sm:flex items-center gap-3">
+              <div
+                className="hidden sm:flex items-center gap-3 relative"
+                onMouseEnter={handleUserPlanPeek}
+                onMouseLeave={hideUserPlanPeek}
+              >
                 <div className="w-9 h-9 rounded-full bg-warm-gray flex items-center justify-center text-charcoal text-sm font-bold">
                   {user.email?.substring(0, 2).toUpperCase()}
                 </div>
                 <div className="text-sm">
-                  <p className="text-charcoal leading-none truncate max-w-[140px]">{user.email}</p>
+                  <p className="text-charcoal leading-none truncate max-w-[220px] lg:max-w-[280px]" title={user.email || ''}>{user.email}</p>
                   <p className="text-xs text-charcoal/40 leading-none">Operator</p>
                 </div>
+                {showPlanPeek && (
+                  <div className="pointer-events-none absolute right-0 top-full mt-2 z-20 rounded-md border border-warm-gray bg-white px-3 py-2 text-xs text-charcoal shadow-lg whitespace-nowrap">
+                    <span className="font-semibold">{currentPlanName}</span>
+                    <span className="ml-2 text-charcoal/60">{planStatusLabel}</span>
+                  </div>
+                )}
               </div>
               <button
                 onClick={() => signOut()}
@@ -365,6 +472,7 @@ const OperatorDashboard: React.FC = () => {
           <h1 className="sr-only">Operator Dashboard</h1>
           {activeTab === 'overview' && (
             <DashboardOverview
+              userProfile={userProfile}
               onGoToListings={() => goToTab('listings')}
               onGoToLeads={() => goToTab('leads')}
               onViewPublicProfile={() => navigate('/search')}
@@ -389,7 +497,7 @@ const OperatorDashboard: React.FC = () => {
             />
           )}
 
-          {activeTab === 'lineage' && <FacilityLineageView />}
+          {activeTab === 'vault' && <FacilityLineageView />}
 
           {activeTab === 'help' && (
             <div className="space-y-8">

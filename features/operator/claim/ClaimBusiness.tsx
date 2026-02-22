@@ -1,20 +1,33 @@
 import React, { useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { Building2, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { useAuth } from '@/src/context/AuthProvider';
 
+type PlanIntent = 'featured' | 'priority' | 'lead_suite';
+
+const toPlanIntent = (value: string | null): PlanIntent | null => {
+  if (!value) return null;
+  if (value === 'featured' || value === 'priority' || value === 'lead_suite') return value;
+  return null;
+};
+
 export const ClaimBusiness: React.FC = () => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { user, loading } = useAuth();
-  const loginPath = `/operator/login?redirect_to=${encodeURIComponent('/claim-business')}`;
-  const signUpPath = `/operator/signup?redirect_to=${encodeURIComponent('/claim-business')}`;
+  const selectedPlan = toPlanIntent(searchParams.get('plan'));
+  const postAuthPath = selectedPlan
+    ? `/dashboard/billing?selected_plan=${encodeURIComponent(selectedPlan)}`
+    : '/dashboard/listings?onboarding=claim';
+  const loginPath = `/operator/login?redirect_to=${encodeURIComponent(postAuthPath)}`;
+  const signUpPath = `/operator/signup?redirect_to=${encodeURIComponent(postAuthPath)}`;
 
   useEffect(() => {
     if (!loading && user) {
-      navigate('/dashboard', { replace: true });
+      navigate(postAuthPath, { replace: true });
     }
-  }, [loading, user, navigate]);
+  }, [loading, user, navigate, postAuthPath]);
 
   if (loading) {
     return (
@@ -36,6 +49,11 @@ export const ClaimBusiness: React.FC = () => {
           <p className="mt-5 max-w-xl mx-auto text-xl text-slate-500">
             Take control of your facility's presence on SilverTech Directory. Update your information, respond to reviews, and reach more families.
           </p>
+          {selectedPlan && (
+            <p className="mt-3 max-w-xl mx-auto text-sm font-medium text-amber-700">
+              Plan selected: <span className="uppercase">{selectedPlan}</span>. Premium access activates only after Stripe checkout succeeds.
+            </p>
+          )}
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">

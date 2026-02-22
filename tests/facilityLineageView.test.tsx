@@ -87,7 +87,7 @@ describe('FacilityLineageView', () => {
 
     fireEvent.change(screen.getByLabelText('Source'), { target: { value: 'web' } });
     await waitFor(() => {
-      expect(screen.getByText('No lineage rows found.')).toBeInTheDocument();
+      expect(screen.getByText('No vault records found.')).toBeInTheDocument();
     });
   });
 
@@ -146,5 +146,17 @@ describe('FacilityLineageView', () => {
     expect(screen.getAllByText('authority').length).toBeGreaterThan(0);
     expect(screen.getByText('$4,200')).toBeInTheDocument();
     expect(screen.getByText('Rows')).toBeInTheDocument();
+  });
+
+  it('persists Vault intro dismissal until manually reset', async () => {
+    render(<FacilityLineageView />);
+
+    expect(screen.getByTestId('vault-intro')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Dismiss Vault help' }));
+    expect(screen.queryByTestId('vault-intro')).not.toBeInTheDocument();
+
+    cleanup();
+    render(<FacilityLineageView />);
+    expect(screen.queryByTestId('vault-intro')).not.toBeInTheDocument();
   });
 });

@@ -4,6 +4,7 @@ import { formatRelativeTime } from '@/src/utils/timeFormatting';
 import { Button } from '@/components/ui/Button';
 
 const LINEAGE_FILTERS_STORAGE_KEY = 'std_lineage_filters_v1';
+const VAULT_INTRO_DISMISSED_STORAGE_KEY = 'std_vault_intro_dismissed_v1';
 
 type MarketBenchmark = {
   scope?: string | null;
@@ -73,6 +74,10 @@ export const FacilityLineageView: React.FC = () => {
   >(storedFilters?.sourceFilter ?? 'all');
   const [fromDate, setFromDate] = React.useState(storedFilters?.fromDate ?? '');
   const [toDate, setToDate] = React.useState(storedFilters?.toDate ?? '');
+  const [showVaultIntro, setShowVaultIntro] = React.useState(() => {
+    if (typeof window === 'undefined') return true;
+    return window.localStorage.getItem(VAULT_INTRO_DISMISSED_STORAGE_KEY) !== '1';
+  });
 
   const loadLineage = React.useCallback(async () => {
     setLoading(true);
@@ -87,7 +92,7 @@ export const FacilityLineageView: React.FC = () => {
 
     if (fetchError) {
       setRows([]);
-      setError(fetchError.message || 'Failed to load lineage data');
+      setError(fetchError.message || 'Failed to load vault data');
       setLoading(false);
       return;
     }
@@ -116,6 +121,15 @@ export const FacilityLineageView: React.FC = () => {
       // ignore storage write failures
     }
   }, [facilityFilter, statusFilter, sourceFilter, fromDate, toDate]);
+
+  const dismissVaultIntro = React.useCallback(() => {
+    setShowVaultIntro(false);
+    try {
+      window.localStorage.setItem(VAULT_INTRO_DISMISSED_STORAGE_KEY, '1');
+    } catch {
+      // ignore storage write failures
+    }
+  }, []);
 
   const filteredRows = React.useMemo(() => {
     const needle = facilityFilter.trim().toLowerCase();
@@ -193,7 +207,7 @@ export const FacilityLineageView: React.FC = () => {
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = `facility-lineage-${new Date().toISOString().slice(0, 10)}.csv`;
+    anchor.download = `facility-vault-${new Date().toISOString().slice(0, 10)}.csv`;
     document.body.appendChild(anchor);
     anchor.click();
     document.body.removeChild(anchor);
@@ -204,9 +218,9 @@ export const FacilityLineageView: React.FC = () => {
     <section className="space-y-6">
       <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
-          <h2 className="text-2xl font-bold text-charcoal">Facility Lineage</h2>
+          <h2 className="text-2xl font-bold text-charcoal">Vault</h2>
           <p className="text-charcoal/70">
-            Internal trace from raw event to canonical listing authority state.
+            Data source and update history for your listings.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
@@ -277,6 +291,28 @@ export const FacilityLineageView: React.FC = () => {
         </div>
       </div>
 
+      {showVaultIntro && (
+        <div className="rounded-lg border border-primary-200 bg-primary-50 px-4 py-3" data-testid="vault-intro">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <p className="text-sm font-semibold text-primary-900">How to use Vault</p>
+              <p className="mt-1 text-xs text-primary-800">
+                Filter by facility, status, or source to trace where listing fields came from, verify processing, and
+                export records when you need support.
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={dismissVaultIntro}
+              className="min-h-11 min-w-11 rounded-md px-3 text-xs font-semibold text-primary-900 hover:bg-primary-100"
+              aria-label="Dismiss Vault help"
+            >
+              X
+            </button>
+          </div>
+        </div>
+      )}
+
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <div className="rounded-lg border border-warm-gray bg-white p-4">
           <p className="text-xs uppercase tracking-wide text-charcoal/60">Rows</p>
@@ -300,7 +336,7 @@ export const FacilityLineageView: React.FC = () => {
 
       {loading ? (
         <div className="rounded-lg border border-warm-gray bg-white p-8 text-center text-charcoal/70">
-          Loading lineage...
+          Loading vault records...
         </div>
       ) : (
         <div className="overflow-x-auto rounded-lg border border-warm-gray bg-white">
@@ -360,7 +396,7 @@ export const FacilityLineageView: React.FC = () => {
               {filteredRows.length === 0 && (
                 <tr>
                   <td colSpan={6} className="px-4 py-8 text-center text-charcoal/60">
-                    No lineage rows found.
+                    No vault records found.
                   </td>
                 </tr>
               )}

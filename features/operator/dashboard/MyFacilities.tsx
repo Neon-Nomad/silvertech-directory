@@ -3,7 +3,7 @@ import { Edit, ExternalLink, MapPin, Plus, Search, SlidersHorizontal, ArrowUpDow
 import { Button } from '@/components/ui/Button';
 import { supabase } from '@/src/lib/supabase';
 import { useAuth } from '@/src/context/AuthProvider';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 type FilterStatus = 'all' | 'verified' | 'pending';
 type SortMode = 'updated_desc' | 'name_asc';
@@ -29,6 +29,8 @@ const getProfileStrength = (facility: any): number => {
 export const MyFacilities: React.FC = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const onboardingClaim = searchParams.get('onboarding') === 'claim';
   const [facilities, setFacilities] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
@@ -91,11 +93,25 @@ export const MyFacilities: React.FC = () => {
           <h2 className="text-3xl font-bold text-slate-900">My Facilities</h2>
           <p className="mt-1 text-slate-600">Manage and update your senior care community listings.</p>
         </div>
-        <Button variant="primary" className="min-h-11" onClick={() => navigate('/claim-business')}>
+        <Button variant="primary" className="min-h-11" onClick={() => navigate('/search?claim=1')}>
           <Plus className="mr-2 h-4 w-4" />
-          Claim New Facility
+          Find Facility To Claim
         </Button>
       </div>
+
+      {onboardingClaim && (
+        <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
+          <h3 className="text-sm font-semibold text-amber-900">Next step: claim your first facility</h3>
+          <p className="mt-1 text-sm text-amber-800">
+            Your operator account is ready. Search by ZIP, open your community profile, then click the claim action to submit verification.
+          </p>
+          <div className="mt-3">
+            <Button size="sm" className="min-h-11" onClick={() => navigate('/search?claim=1')}>
+              Search By ZIP To Claim
+            </Button>
+          </div>
+        </div>
+      )}
 
       <div className="rounded-xl border border-slate-200 bg-white p-4">
         <div className="flex flex-col gap-3 md:flex-row md:items-center">
@@ -142,9 +158,9 @@ export const MyFacilities: React.FC = () => {
       {filteredFacilities.length === 0 ? (
         <div className="rounded-xl border border-slate-200 bg-white p-12 text-center">
           <h3 className="mb-2 text-lg font-semibold text-slate-900">No facilities match your filters</h3>
-          <p className="mb-6 text-slate-500">Try updating search or status filters, or claim a new facility.</p>
-          <Button variant="outline" className="min-h-11" onClick={() => navigate('/claim-business')}>
-            Claim Facility
+          <p className="mb-6 text-slate-500">Try updating search or status filters, or search by ZIP to claim your facility.</p>
+          <Button variant="outline" className="min-h-11" onClick={() => navigate('/search?claim=1')}>
+            Search By ZIP To Claim
           </Button>
         </div>
       ) : (

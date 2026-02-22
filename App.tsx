@@ -119,12 +119,17 @@ const DashboardRouteGate: React.FC = () => {
 
   const searchParams = new URLSearchParams(location.search);
   const legacyTab = normalizeDashboardTab(searchParams.get('tab'));
+  const normalizedPathTab = normalizeDashboardTab(tab);
 
   if (legacyTab) {
     const nextParams = new URLSearchParams(searchParams);
     nextParams.delete('tab');
     const nextSearch = nextParams.toString();
     return <Navigate to={`${dashboardPathForTab(legacyTab)}${nextSearch ? `?${nextSearch}` : ''}`} replace />;
+  }
+
+  if (tab && normalizedPathTab && tab.toLowerCase() !== normalizedPathTab) {
+    return <Navigate to={`${dashboardPathForTab(normalizedPathTab)}${location.search}`} replace />;
   }
 
   if (loading) {
@@ -150,7 +155,7 @@ const DashboardRouteGate: React.FC = () => {
     );
   }
 
-  if (tab && !normalizeDashboardTab(tab)) {
+  if (tab && !normalizedPathTab) {
     return <Navigate to="/dashboard" replace />;
   }
 

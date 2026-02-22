@@ -45,6 +45,7 @@ vi.mock('react-router-dom', async () => {
   return {
     ...actual,
     useNavigate: () => navigateMock,
+    useSearchParams: () => [new URLSearchParams(''), vi.fn()],
   };
 });
 
@@ -99,5 +100,13 @@ describe('MyFacilities', () => {
 
     fireEvent.click(screen.getByRole('button', { name: 'Documentation' }));
     expect(navigateMock).toHaveBeenCalledWith('/dashboard/help');
+  });
+
+  it('routes claim CTA to ZIP-focused claim search', async () => {
+    render(<MyFacilities />);
+    await screen.findByText('Golden Oaks');
+
+    fireEvent.click(screen.getByRole('button', { name: /find facility to claim/i }));
+    expect(navigateMock).toHaveBeenCalledWith('/search?claim=1');
   });
 });

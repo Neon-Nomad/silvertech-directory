@@ -13,6 +13,7 @@ describe('DashboardOverview', () => {
 
     render(
       <DashboardOverview
+        userProfile={{ plan: 'free' }}
         onGoToListings={onGoToListings}
         onGoToLeads={onGoToLeads}
         onViewPublicProfile={onViewPublicProfile}
@@ -33,5 +34,22 @@ describe('DashboardOverview', () => {
     expect(onViewPublicProfile).toHaveBeenCalledTimes(1);
     expect(onGoToListings).toHaveBeenCalledTimes(2);
     expect(onGoToLeads).toHaveBeenCalledTimes(1);
+  });
+
+  it('shows paid-plan profile readiness warning and routes to listings', () => {
+    const onGoToListings = vi.fn();
+
+    render(
+      <DashboardOverview
+        userProfile={{ plan: 'lead_suite', billing_status: 'active' }}
+        onGoToListings={onGoToListings}
+        onGoToLeads={vi.fn()}
+        onViewPublicProfile={vi.fn()}
+      />
+    );
+
+    expect(screen.getByText(/Complete your profile to power your dashboard/i)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Complete profile setup/i }));
+    expect(onGoToListings).toHaveBeenCalledTimes(1);
   });
 });

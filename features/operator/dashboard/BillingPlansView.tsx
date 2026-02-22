@@ -35,9 +35,20 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
 }) => {
   const actionsLockedForBilling = billingUiError?.code === 'ERR_PENDING_PAYMENT';
   const currentPlan = PRICING_PLANS.find((p) => p.id === (userProfile?.plan || 'free'));
+  const currentPlanPrice = currentPlan?.price ?? 0;
   const slotCount = currentPlan?.slotCount || 0;
   const assignedCount = facilities.filter((f) => f.assigned_plan_owner_id === userId).length;
   const slotPercent = slotCount > 0 ? Math.min(100, Math.round((assignedCount / slotCount) * 100)) : 0;
+  const normalizedBillingStatus = String(userProfile?.billing_status || userProfile?.status || '').toLowerCase();
+  const isPaidPlan = Boolean(userProfile?.plan && userProfile.plan !== 'free');
+  const hasStripeSubscription = Boolean(userProfile?.stripe_subscription_id || userProfile?.stripe_customer_id);
+  const isActiveSubscription =
+    ['active', 'trialing', 'past_due'].includes(normalizedBillingStatus) ||
+    (isPaidPlan && hasStripeSubscription);
+  const subscriptionBadgeLabel = isActiveSubscription ? 'Active' : isPaidPlan ? 'Manual Access' : 'Free Tier';
+  const subscriptionBadgeClass = isPaidPlan
+    ? 'bg-primary-100 text-primary-700'
+    : 'bg-warm-gray text-charcoal/70';
 
   return (
     <div className="space-y-8">
@@ -76,14 +87,8 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
               <div className="mb-3 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-xl font-bold text-charcoal">{currentPlan?.name || 'Free Listing'}</span>
-                  <span
-                    className={`rounded-full px-2 py-0.5 text-xs font-medium ${
-                      userProfile?.plan === 'free' || !userProfile?.plan
-                        ? 'bg-warm-gray text-charcoal/70'
-                        : 'bg-primary-100 text-primary-700'
-                    }`}
-                  >
-                    {userProfile?.status === 'active' ? 'Active' : 'Free Tier'}
+                  <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${subscriptionBadgeClass}`}>
+                    {subscriptionBadgeLabel}
                   </span>
                 </div>
                 <span className="text-sm text-charcoal/60">Next renewal: {userProfile?.current_period_end || 'N/A'}</span>
@@ -227,11 +232,11 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
               </div>
               <div className="flex items-center justify-between border-b border-white/10 pb-2">
                 <span>Search Ranking</span>
-                <span className="font-semibold">Normal → Priority</span>
+                <span className="font-semibold">Normal -&gt; Priority</span>
               </div>
               <div className="flex items-center justify-between border-b border-white/10 pb-2">
                 <span>Lead Analytics</span>
-                <span className="font-semibold">Basic → Advanced</span>
+                <span className="font-semibold">Basic -&gt; Advanced</span>
               </div>
               <div className="flex items-center justify-between">
                 <span>Direct Inquiries</span>
@@ -244,6 +249,7 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
             <h3 className="text-lg font-bold text-charcoal">Available Plans</h3>
             {PRICING_PLANS.filter((p) => p.id !== 'free').map((plan) => {
               const isCurrentPlan = userProfile?.plan === plan.id;
+              const isLowerOrEqualTier = plan.price <= currentPlanPrice;
               return (
                 <div key={plan.id} className="rounded-xl border border-warm-gray bg-white p-4 shadow-sm">
                   <div className="mb-2 flex items-center justify-between">
@@ -264,6 +270,10 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
                   {isCurrentPlan ? (
                     <Button disabled className="w-full border-warm-gray bg-warm-gray text-charcoal/60">
                       Current Plan
+                    </Button>
+                  ) : isLowerOrEqualTier ? (
+                    <Button disabled variant="outline" className="w-full border-warm-gray text-charcoal/60">
+                      Included in your plan
                     </Button>
                   ) : (
                     <Button

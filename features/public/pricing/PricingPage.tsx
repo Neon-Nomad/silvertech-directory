@@ -23,7 +23,7 @@ const plans = [
   {
     name: 'Protector',
     price: { monthly: 99 },
-    href: '/claim-business',
+    href: '/claim-business?plan=featured',
     description: 'Defend your brand and prove direct demand with attribution.',
     features: [
       { text: 'Verified Representative badge', icon: <UserCheck className="h-5 w-5" /> },
@@ -35,7 +35,7 @@ const plans = [
   {
     name: 'Accelerator',
     price: { monthly: 249 },
-    href: '/claim-business',
+    href: '/claim-business?plan=priority',
     description: 'Hunt new demand and improve conversion velocity.',
     features: [
       { text: 'No-results demand feed + Express Interest', icon: <TrendingUp className="h-5 w-5" /> },
@@ -48,7 +48,7 @@ const plans = [
   {
     name: 'Dominator',
     price: { monthly: 499 },
-    href: '/claim-business',
+    href: '/claim-business?plan=lead_suite',
     description: 'Operate with market intelligence and custom value proofs.',
     features: [
       { text: 'Competitive comparison intelligence', icon: <BarChart3 className="h-5 w-5" /> },
