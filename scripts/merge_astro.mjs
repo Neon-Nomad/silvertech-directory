@@ -5,7 +5,8 @@ const root = process.cwd();
 const astroRoot = path.join(root, 'dist-astro');
 const targets = [
   { src: path.join(astroRoot, 'assisted-living'), dest: path.join(root, 'dist', 'assisted-living') },
-  { src: path.join(astroRoot, 'facility'), dest: path.join(root, 'dist', 'facility') },
+  // Facility detail URLs must resolve through the React app route (`/facility/:id`)
+  // so the full dynamic template renders instead of the static Astro shell.
   { src: path.join(astroRoot, 'guides'), dest: path.join(root, 'dist', 'guides') }
 ];
 
