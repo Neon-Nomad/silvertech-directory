@@ -358,6 +358,29 @@ const OperatorDashboard: React.FC = () => {
     }
   };
 
+  const handleCompleteProfileSetup = async () => {
+    if (!user) return;
+    try {
+      const { data, error } = await supabase
+        .from('facilities')
+        .select('id')
+        .eq('owner_id', user.id)
+        .order('updated_at', { ascending: false })
+        .limit(1)
+        .maybeSingle();
+
+      if (error) throw error;
+      if (data?.id) {
+        navigate(`/dashboard/facility/${data.id}/edit`);
+        return;
+      }
+    } catch (err) {
+      console.error('Failed to route to facility edit from dashboard setup CTA:', err);
+    }
+
+    goToTab('listings');
+  };
+
 
   if (loading) {
     return (
@@ -517,6 +540,7 @@ const OperatorDashboard: React.FC = () => {
             <DashboardOverview
               userProfile={userProfile}
               onGoToListings={() => goToTab('listings')}
+              onCompleteProfileSetup={handleCompleteProfileSetup}
               onGoToLeads={() => goToTab('leads')}
               onViewPublicProfile={() => navigate('/search')}
             />

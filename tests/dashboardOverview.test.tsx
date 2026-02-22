@@ -15,6 +15,7 @@ describe('DashboardOverview', () => {
       <DashboardOverview
         userProfile={{ plan: 'free' }}
         onGoToListings={onGoToListings}
+        onCompleteProfileSetup={vi.fn()}
         onGoToLeads={onGoToLeads}
         onViewPublicProfile={onViewPublicProfile}
       />
@@ -38,11 +39,13 @@ describe('DashboardOverview', () => {
 
   it('shows paid-plan profile readiness warning and routes to listings', () => {
     const onGoToListings = vi.fn();
+    const onCompleteProfileSetup = vi.fn();
 
     render(
       <DashboardOverview
         userProfile={{ plan: 'lead_suite', billing_status: 'active' }}
         onGoToListings={onGoToListings}
+        onCompleteProfileSetup={onCompleteProfileSetup}
         onGoToLeads={vi.fn()}
         onViewPublicProfile={vi.fn()}
       />
@@ -50,6 +53,7 @@ describe('DashboardOverview', () => {
 
     expect(screen.getByText(/Complete your profile to power your dashboard/i)).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /Complete profile setup/i }));
-    expect(onGoToListings).toHaveBeenCalledTimes(1);
+    expect(onGoToListings).toHaveBeenCalledTimes(0);
+    expect(onCompleteProfileSetup).toHaveBeenCalledTimes(1);
   });
 });

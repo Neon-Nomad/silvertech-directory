@@ -23,6 +23,7 @@ import { supabase } from '@/src/lib/supabase';
 type DashboardOverviewProps = {
   userProfile: any;
   onGoToListings: () => void;
+  onCompleteProfileSetup: () => void | Promise<void>;
   onGoToLeads: () => void;
   onViewPublicProfile: () => void;
 };
@@ -85,6 +86,7 @@ const isMissingActivationEventsResource = (err: unknown): boolean => {
 export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
   userProfile,
   onGoToListings,
+  onCompleteProfileSetup,
   onGoToLeads,
   onViewPublicProfile,
 }) => {
@@ -522,7 +524,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
             <button
               onClick={() => {
                 trackQuickWin('complete_profile_setup');
-                onGoToListings();
+                void onCompleteProfileSetup();
               }}
               className="mt-3 inline-flex min-h-11 items-center justify-center rounded-full bg-amber-900 px-4 py-2 text-xs font-semibold text-white hover:bg-amber-950"
             >
