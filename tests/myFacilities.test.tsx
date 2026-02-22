@@ -69,6 +69,11 @@ vi.mock('@/src/lib/supabase', () => ({
             }),
           };
         }
+        if (table === 'claim_reviewers') {
+          return {
+            eq: async () => ({ count: 0, error: null }),
+          };
+        }
         return {
           eq: async () => ({ data: [], error: null }),
         };

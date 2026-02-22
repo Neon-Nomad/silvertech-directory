@@ -86,6 +86,21 @@ export const MyFacilities: React.FC = () => {
       setReviewerLoading(true);
       setReviewError(null);
       try {
+        const { count: reviewerCount, error: reviewerLookupError } = await supabase
+          .from('claim_reviewers')
+          .select('user_id', { head: true, count: 'exact' })
+          .eq('user_id', user.id);
+
+        if (reviewerLookupError) {
+          throw reviewerLookupError;
+        }
+
+        if ((reviewerCount ?? 0) === 0) {
+          setReviewerEnabled(false);
+          setReviewClaims([]);
+          return;
+        }
+
         const { data, error } = await supabase.rpc('get_pending_facility_claims_for_review');
         if (error) throw error;
         setReviewerEnabled(true);
