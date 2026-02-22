@@ -46,9 +46,9 @@ export const LoginPage: React.FC = () => {
       </Helmet>
 
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="mt-6 text-center text-3xl font-extrabold text-charcoal">
+        <h1 className="mt-6 text-center text-3xl font-extrabold text-charcoal">
           Family Sign In
-        </h2>
+        </h1>
         <p className="mt-2 text-center text-sm text-charcoal/70">
           New to SilverTech?{' '}
           <Link to={signUpPath} className="font-medium text-primary-600 hover:text-primary-500">

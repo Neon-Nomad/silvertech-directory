@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Lock, Star, CheckCircle, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { Helmet } from 'react-helmet-async';
 
 export const SurveyResults: React.FC = () => {
   const [isUnlocked, setIsUnlocked] = useState(false);
@@ -26,6 +27,16 @@ export const SurveyResults: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 py-12 px-4">
+      <Helmet>
+        <title>Survey Matches | SilverTech Directory</title>
+        <meta
+          name="description"
+          content="Preview your top senior living matches based on the answers you provided in the CareFinder survey."
+        />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://silvertechdirectory.com/results" />
+      </Helmet>
+
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">

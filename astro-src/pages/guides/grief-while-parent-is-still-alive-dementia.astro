@@ -1,0 +1,205 @@
+---
+import GuideArticle from '../../components/GuideArticle.astro';
+
+const published = '2026-02-21';
+const modified = '2026-02-21';
+const title = 'Grief While Parent Is Still Alive With Dementia: Family Guide | SilverTech Directory';
+const description = 'Grief while a parent is still alive with dementia is called ambiguous loss. Learn what it feels like, why it is valid, and practical ways families cope without guilt.';
+const canonical = 'https://silvertechdirectory.com/guides/grief-while-parent-is-still-alive-dementia/';
+const ogImage = 'https://silvertechdirectory.com/hero.png';
+
+const h1 = 'Grief While Parent Is Still Alive With Dementia: Understanding Ambiguous Loss';
+const deck = 'Grief while a parent is still alive with dementia can feel disorienting and isolating. This guide explains ambiguous loss, what it looks like in daily life, and how caregivers build emotional support that actually helps.';
+
+const toc = [
+  { id: 'what-is-ambiguous-loss', label: 'What ambiguous loss means' },
+  { id: 'why-this-grief-feels-different', label: 'Why this grief feels different' },
+  { id: 'daily-triggers', label: 'Common daily grief triggers' },
+  { id: 'what-helps', label: 'What helps in real life' },
+  { id: 'family-communication', label: 'How to explain this grief to family' },
+  { id: 'when-to-get-professional-help', label: 'When to get professional support' }
+];
+
+const faqItems = [
+  {
+    question: 'Is it normal to grieve a parent who is still alive with dementia?',
+    answer: 'Yes. This is a recognized response called ambiguous loss. Families can grieve cognitive and relational loss before physical death.'
+  },
+  {
+    question: 'Why does this kind of grief feel confusing?',
+    answer: 'You are experiencing loss and ongoing caregiving at the same time. There is no clear ending point, which makes emotions harder to organize.'
+  },
+  {
+    question: 'Can ambiguous loss cause anxiety or depression?',
+    answer: 'It can. Persistent stress, sleep disruption, and unresolved grief can contribute to anxiety and depressive symptoms. Professional support can help.'
+  },
+  {
+    question: 'How do I support siblings who process this differently?',
+    answer: 'Use concrete updates, shared language, and clear role definitions. Different emotional styles do not always mean lack of care.'
+  },
+  {
+    question: 'Will these feelings improve after memory care placement?',
+    answer: 'Many caregivers report reduced crisis stress after placement, but grief may continue. Structured support and realistic expectations are key.'
+  }
+];
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://silvertechdirectory.com/guides/' },
+    { '@type': 'ListItem', position: 3, name: 'Grief While Parent Is Still Alive With Dementia', item: canonical }
+  ]
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: h1,
+  description,
+  url: canonical,
+  datePublished: published,
+  dateModified: modified,
+  image: ogImage,
+  author: {
+    '@type': 'Organization',
+    name: 'SilverTech Editorial Team',
+    url: 'https://silvertechdirectory.com/'
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'SilverTech Directory',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://silvertechdirectory.com/logo.png'
+    }
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonical
+  }
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer
+    }
+  }))
+};
+---
+
+<GuideArticle
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogImage={ogImage}
+  h1={h1}
+  deck={deck}
+  heroEyebrow="Caregiver Grief Guide"
+  published={published}
+  modified={modified}
+  readTime="12 min read"
+  toc={toc}
+  faqItems={faqItems}
+  resourceLinks={[
+    { href: '/guides/guilt-about-placing-parent-in-memory-care/', label: 'Guilt and placement guide' },
+    { href: '/guides/caregiver-resentment-toward-parent/', label: 'Caregiver resentment guide' },
+    { href: '/survey', label: 'CareFinder survey' }
+  ]}
+  relatedLinks={[
+    { href: '/guides/caregiver-at-breaking-point/', label: 'Caregiver at Breaking Point' },
+    { href: '/guides/sibling-not-helping-parent-care/', label: 'Sibling Not Helping With Parent Care' },
+    { href: '/guides/hidden-costs-of-memory-care/', label: 'Hidden Costs of Memory Care' }
+  ]}
+  keywordPills={[
+    'grief while parent is still alive dementia',
+    'ambiguous loss dementia',
+    'caregiver grief',
+    'anticipatory grief'
+  ]}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+
+  <section id="what-is-ambiguous-loss">
+    <h2>What Ambiguous Loss Means in Dementia Care</h2>
+    <p>
+      Grief while a parent is still alive with dementia is often called ambiguous loss. The person is physically present, but memory, personality,
+      and shared history may be changing in painful ways. That mismatch creates grief without the social rituals people usually rely on.
+    </p>
+    <p>
+      Many caregivers think, "I should not feel this way because my parent is still here." In clinical practice, this is exactly why the grief is
+      so hard. You are losing pieces over time instead of once.
+    </p>
+  </section>
+
+  <section id="why-this-grief-feels-different">
+    <h2>Why This Grief Feels Different From Bereavement</h2>
+    <ul>
+      <li>There is no clear endpoint, so emotional closure is delayed.</li>
+      <li>You must grieve and provide care simultaneously.</li>
+      <li>Family members can be in different stages of acceptance.</li>
+      <li>Daily caregiving tasks can suppress emotional processing.</li>
+    </ul>
+    <p>
+      This pattern can produce numbness one day and intense sadness the next. Emotional variability is expected and does not mean you are unstable.
+    </p>
+  </section>
+
+  <section id="daily-triggers">
+    <h2>Common Daily Triggers Families Report</h2>
+    <h3>Recognition changes</h3>
+    <p>
+      A parent forgetting names, stories, or key life events can trigger sharp grief episodes. These moments are often more intense than families expect.
+    </p>
+    <h3>Role reversal stress</h3>
+    <p>
+      Managing finances, medications, appointments, and crisis response can create a constant high-alert state that amplifies grief and fatigue.
+    </p>
+    <h3>Family conflict</h3>
+    <p>
+      When siblings disagree about care decisions, emotional grief often gets displaced into arguments about logistics and money.
+    </p>
+  </section>
+
+  <section id="what-helps">
+    <h2>What Helps in Real Life</h2>
+    <ul>
+      <li><strong>Name the loss clearly:</strong> "I am grieving changes while caregiving."</li>
+      <li><strong>Use short reflection rituals:</strong> 10-minute journaling or voice notes after difficult visits.</li>
+      <li><strong>Set support cadence:</strong> weekly support group, therapy, or caregiver check-in.</li>
+      <li><strong>Reduce crisis load:</strong> add respite, adult day support, or professional memory care when needed.</li>
+      <li><strong>Keep connection simple:</strong> use music, photos, touch, and routine instead of memory tests.</li>
+    </ul>
+  </section>
+
+  <section id="family-communication">
+    <h2>How to Explain This Grief to Family Members</h2>
+    <p>
+      Use concrete language: "I am not grieving death right now. I am grieving ongoing changes while still caring every day." This helps relatives
+      understand why emotions can look intense even when practical tasks are getting done.
+    </p>
+    <p>
+      Set a simple update system for siblings: care status, major events, current needs, and next decision date. Clear structure reduces conflict and blame cycles.
+    </p>
+  </section>
+
+  <section id="when-to-get-professional-help">
+    <h2>When to Get Professional Support</h2>
+    <p>
+      Seek licensed support if grief symptoms are persistent and severe: insomnia, panic, hopelessness, inability to function at work, or frequent thoughts of collapse.
+      A therapist familiar with caregiver stress can help you separate grief, burnout, and decision anxiety.
+    </p>
+    <p>
+      Getting help early protects both caregiver health and care quality. It is not a sign you are weak. It is a stability strategy.
+    </p>
+  </section>
+</GuideArticle>

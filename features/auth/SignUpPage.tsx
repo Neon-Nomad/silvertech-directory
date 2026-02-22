@@ -31,9 +31,19 @@ export const SignUpPage: React.FC = () => {
 
       if (error) throw error;
       
-      // For now, we'll just redirect to login or show a success message
-      // In a real app, you might want to show a "Check your email" message
-      alert('Account created! Please check your email to verify your account.');
+      // IMPORTANT: Disable Supabase's default email verification for this to work.
+      // Call the edge function to send a registration email through Brevo
+      const { error: functionError } = await supabase.functions.invoke('send-registration-email', {
+        body: { email },
+      });
+
+      if (functionError) {
+        console.error('Failed to send registration email:', functionError);
+        // We can still proceed, but we should log this error
+      }
+
+
+      alert('Account created! Please check your email to get started.');
       navigate(loginPath, { replace: true });
     } catch (err: any) {
       setError(err.message || 'Failed to sign up');
@@ -51,9 +61,9 @@ export const SignUpPage: React.FC = () => {
       </Helmet>
 
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="mt-6 text-center text-3xl font-extrabold text-slate-900">
+        <h1 className="mt-6 text-center text-3xl font-extrabold text-slate-900">
           Create your account
-        </h2>
+        </h1>
         <p className="mt-2 text-center text-sm text-slate-600">
           Or{' '}
           <Link to={loginPath} className="font-medium text-primary-600 hover:text-primary-500">

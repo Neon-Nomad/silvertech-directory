@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import { ALL_STATES } from '../../../../src/data/states';
-import { getCityIndex } from '../../../lib/data';
+import { getCityIndex, getFacilityIndex, getStateSlug, toCitySlug } from '../../../lib/data';
 
 export async function getStaticPaths() {
   return ALL_STATES.map((s) => ({
@@ -16,31 +16,159 @@ export async function getStaticPaths() {
 
 const { stateName, stateAbbr, stateSlug } = Astro.props;
 const cities = getCityIndex().filter((c) => c.stateSlug === stateSlug);
+const stateFacilities = getFacilityIndex().filter((facility) => getStateSlug((facility.state || '').trim()) === stateSlug);
+
+const cityFacilityCount = new Map<string, number>();
+for (const facility of stateFacilities) {
+  const citySlug = toCitySlug(facility.city || '');
+  if (!citySlug) continue;
+  cityFacilityCount.set(citySlug, (cityFacilityCount.get(citySlug) || 0) + 1);
+}
+
+const cityCards = cities
+  .map((city) => ({
+    ...city,
+    facilityCount: cityFacilityCount.get(city.citySlug) || 0
+  }))
+  .sort((a, b) => {
+    if (b.facilityCount !== a.facilityCount) return b.facilityCount - a.facilityCount;
+    return a.cityName.localeCompare(b.cityName);
+  });
+
+const featuredCities = cityCards.slice(0, 24);
+const nearbyStates = ALL_STATES.filter((state) => state.slug !== stateSlug).slice(0, 8);
+
+const facilityCountText = stateFacilities.length.toLocaleString();
+const cityCountText = cities.length.toLocaleString();
+const topCitiesCoverageText = featuredCities.length.toLocaleString();
+
+const searchHref = `/search?state=${encodeURIComponent(stateAbbr)}`;
+const emotionalGuideLinks = [
+  {
+    href: '/guides/guilt-about-placing-parent-in-memory-care/',
+    label: 'Guilt About Placing a Parent in Memory Care'
+  },
+  {
+    href: '/guides/caregiver-at-breaking-point/',
+    label: 'I Cannot Do This Anymore Caring for My Parent'
+  },
+  {
+    href: '/guides/sibling-not-helping-parent-care/',
+    label: 'Sibling Not Helping With Parent Care'
+  }
+];
 
 const title = `Assisted Living in ${stateName} | Senior Living Directory`;
 const description = `Browse assisted living and memory care facilities in ${stateName}. Compare city listings, licensing resources, and transparent data.`;
 const canonical = `https://silvertechdirectory.com/assisted-living/${stateSlug}/`;
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  'name': title,
+  'description': description,
+  'url': canonical,
+  'isPartOf': {
+    '@type': 'WebSite',
+    'name': 'SilverTech Directory',
+    'url': 'https://silvertechdirectory.com/'
+  }
+};
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://silvertechdirectory.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Assisted Living", "item": "https://silvertechdirectory.com/assisted-living" },
-    { "@type": "ListItem", "position": 3, "name": stateName, "item": canonical }
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', 'position': 2, 'name': 'Assisted Living', 'item': 'https://silvertechdirectory.com/assisted-living' },
+    { '@type': 'ListItem', 'position': 3, 'name': stateName, 'item': canonical }
   ]
+};
+const cityListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  'itemListElement': featuredCities.map((city, index) => ({
+    '@type': 'ListItem',
+    'position': index + 1,
+    'url': `https://silvertechdirectory.com/assisted-living/${city.stateSlug}/cities/${city.citySlug}/`,
+    'name': `Assisted Living in ${city.cityName}, ${city.stateAbbr}`
+  }))
+};
+
+const faqItems = [
+  {
+    question: `How do I compare assisted living options across ${stateName}?`,
+    answer: `Start with city-level pages for the markets you care about, review facility profiles, and compare contacts, location, and fit before scheduling tours.`
+  },
+  {
+    question: `Where can I verify ${stateName} licensing and inspection details?`,
+    answer: `Use the official state regulatory and complaint resources linked on this page, plus our state regulations hub for reference.`
+  },
+  {
+    question: `Should I start with a state page or a city page?`,
+    answer: `Use the state page to understand the full market, then move to city pages for local comparisons and shortlists.`
+  },
+  {
+    question: `Can I search all ${stateName} listings directly?`,
+    answer: `Yes. Use the browse/search action on this page to filter by city and view matching facilities.`
+  }
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': faqItems.map((faq) => ({
+    '@type': 'Question',
+    'name': faq.question,
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': faq.answer
+    }
+  }))
 };
 ---
 <Base title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)}></script>
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(cityListSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
   <section class="container" style="padding: 2rem 1.5rem;">
-    <h1 style="font-size: 2rem; margin: 0 0 0.5rem;">{stateName} Assisted Living & Memory Care Directory</h1>
-    <p class="muted" style="margin: 0 0 1.5rem;">
-      A statewide index of licensed senior living communities in {stateName}.
-    </p>
-
-    <div class="meta">
+    <nav aria-label="Breadcrumb" class="breadcrumbs">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span>{stateName}</span>
+    </nav>
+    <div class="state-hero">
+      <picture class="hero-image">
+        <source srcset="/hero.avif" type="image/avif" />
+        <source srcset="/hero.webp" type="image/webp" />
+        <img
+          src="/hero.png"
+          width="1600"
+          height="900"
+          loading="eager"
+          decoding="async"
+          alt={`${stateName} assisted living directory overview`}
+        />
+      </picture>
+      <div class="state-hero-content">
+        <p class="eyebrow">Statewide Assisted Living Index</p>
+        <h1>Assisted Living in {stateName}</h1>
+        <p>
+          Explore city-level assisted living options, open verified facility profiles, and review state regulatory links.
+        </p>
+        <div class="hero-stats">
+          <span><strong>{facilityCountText}</strong> facilities indexed</span>
+          <span><strong>{cityCountText}</strong> city pages generated</span>
+          <span><strong>{topCitiesCoverageText}</strong> top cities highlighted below</span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn-primary" href={searchHref}>Browse {stateName} directory</a>
+          <a class="btn-secondary" href={`/states/${stateSlug}/regulations`}>View regulations</a>
+        </div>
+      </div>
+    </div>
+    <div class="meta" style="margin-top: 1rem;">
       <div><strong>Author:</strong> SilverTech Editorial Team</div>
-      <div><strong>Last updated:</strong> February 8, 2026</div>
+      <div><strong>Last updated:</strong> February 21, 2026</div>
     </div>
     <div class="note" style="margin-top: 0.75rem;">
       <strong>Data source:</strong> Data is compiled from public records and official state licensing authorities.
@@ -48,23 +176,279 @@ const breadcrumbSchema = {
     </div>
   </section>
 
-  <section class="container" style="padding: 0 1.5rem 2.5rem;">
-    <div class="card">
-      <h2 style="font-size: 1.25rem; margin: 0 0 1rem;">Cities in {stateName}</h2>
-      {cities.length === 0 ? (
+  <section class="container state-layout">
+    <div class="card main-card">
+      <div class="section-head">
+        <h2>Cities in {stateName}</h2>
+        <a href={searchHref}>Search all {stateName} listings</a>
+      </div>
+      {featuredCities.length === 0 ? (
         <p class="muted">No cities found yet for this state.</p>
       ) : (
-        <ul class="list" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
-          {cities.map((c) => (
-            <li class="list-item" key={`${c.stateSlug}-${c.citySlug}`}>
-              <a href={`/assisted-living/${c.stateSlug}/cities/${c.citySlug}/`} style="color:#0f172a;">
-                <strong>{c.cityName}</strong>
+        <ul class="city-grid">
+          {featuredCities.map((city) => (
+            <li key={`${city.stateSlug}-${city.citySlug}`}>
+              <a href={`/assisted-living/${city.stateSlug}/cities/${city.citySlug}/`}>
+                <strong>{city.cityName}</strong>
+                <span class="muted">{city.facilityCount.toLocaleString()} facilities</span>
               </a>
-              <span class="muted">{c.stateAbbr}</span>
             </li>
           ))}
         </ul>
       )}
     </div>
+
+    <aside class="side-stack">
+      <section class="card">
+        <h2>{stateName} Resource Links</h2>
+        <ul class="simple-list">
+          <li><a href={`/states/${stateSlug}/regulations`}>State regulations</a></li>
+          <li><a href={`/states/${stateSlug}/medicaid`}>Medicaid programs</a></li>
+          <li><a href={`/states/${stateSlug}/rules`}>Licensing rules</a></li>
+          <li><a href={`/states/${stateSlug}/ombudsman`}>Ombudsman contacts</a></li>
+          <li><a href={`/states/${stateSlug}/veterans`}>Veterans benefits</a></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Explore More States</h2>
+        <ul class="simple-list">
+          {nearbyStates.map((state) => (
+            <li key={state.slug}>
+              <a href={`/assisted-living/${state.slug}/`}>Assisted living in {state.name}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Emotional &amp; Family Guidance</h2>
+        <p class="support-copy">
+          Practical support for families navigating high-stress memory care decisions.
+        </p>
+        <ul class="simple-list">
+          {emotionalGuideLinks.map((guide) => (
+            <li key={guide.href}>
+              <a href={guide.href}>{guide.label}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </aside>
   </section>
+
+  <section class="container" style="padding: 0 1.5rem 2.5rem;">
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        {faqItems.map((faq) => (
+          <details key={faq.question}>
+            <summary>{faq.question}</summary>
+            <p>{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .breadcrumbs {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #64748b;
+      margin-bottom: 1rem;
+    }
+    .state-hero {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      min-height: 360px;
+      border: 1px solid #e2e8f0;
+      background: #0f172a;
+    }
+    .hero-image img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(1) brightness(0.38);
+    }
+    .state-hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+      max-width: 720px;
+      color: #f8fafc;
+      background: linear-gradient(90deg, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0));
+      min-height: 360px;
+      display: grid;
+      align-content: center;
+      gap: 0.75rem;
+    }
+    .eyebrow {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #facc15;
+      margin: 0;
+      font-weight: 700;
+    }
+    .state-hero-content h1 {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      margin: 0;
+      line-height: 1.15;
+    }
+    .state-hero-content p {
+      margin: 0;
+      color: rgba(248, 250, 252, 0.92);
+    }
+    .hero-stats {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+    .hero-stats span {
+      background: rgba(15, 23, 42, 0.64);
+      border: 1px solid rgba(226, 232, 240, 0.2);
+      border-radius: 999px;
+      padding: 0.35rem 0.75rem;
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .btn-primary,
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border: 1px solid transparent;
+    }
+    .btn-primary {
+      background: #facc15;
+      color: #0f172a;
+    }
+    .btn-secondary {
+      border-color: rgba(226, 232, 240, 0.4);
+      color: #f8fafc;
+      background: rgba(15, 23, 42, 0.32);
+    }
+    .state-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+      gap: 1rem;
+      padding: 0 1.5rem 2rem;
+    }
+    .main-card h2,
+    .side-stack h2,
+    .card h2 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .section-head a {
+      font-size: 0.85rem;
+      color: #ca8a04;
+      font-weight: 700;
+    }
+    .city-grid {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.7rem;
+    }
+    .city-grid a {
+      display: grid;
+      gap: 0.35rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 0.75rem;
+      background: #fff;
+      color: #0f172a;
+    }
+    .city-grid a:hover {
+      border-color: #facc15;
+    }
+    .side-stack {
+      display: grid;
+      gap: 1rem;
+      align-content: start;
+    }
+    .simple-list {
+      list-style: none;
+      margin: 1rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.7rem;
+    }
+    .simple-list li {
+      padding: 0.6rem 0.7rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .simple-list a {
+      font-weight: 700;
+      color: #0f172a;
+      text-decoration: none;
+    }
+    .simple-list a:hover {
+      text-decoration: underline;
+    }
+    .support-copy {
+      margin: 0.75rem 0 0;
+      color: #475569;
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+    .faq-list {
+      display: grid;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+    .faq-list details {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      background: #fff;
+    }
+    .faq-list summary {
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .faq-list p {
+      margin: 0.75rem 0 0;
+      color: #334155;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    @media (max-width: 980px) {
+      .state-layout {
+        grid-template-columns: 1fr;
+      }
+      .city-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </Base>

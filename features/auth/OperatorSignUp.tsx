@@ -36,7 +36,18 @@ const OperatorSignUp: React.FC = () => {
 
       if (signUpError) throw signUpError;
 
-      alert('Operator account created. Please check your email to verify your account.');
+      // IMPORTANT: Disable Supabase's default email verification for this to work.
+      // Call the edge function to send a registration email through Brevo
+      const { error: functionError } = await supabase.functions.invoke('send-registration-email', {
+        body: { email },
+      });
+
+      if (functionError) {
+        console.error('Failed to send registration email:', functionError);
+        // We can still proceed, but we should log this error
+      }
+
+      alert('Operator account created. Please check your email to get started.');
       navigate(loginPath, { replace: true });
     } catch (err: any) {
       setError(err.message || 'Failed to create operator account');

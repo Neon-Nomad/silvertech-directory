@@ -44,6 +44,12 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 5, "name": facility.name, "item": canonical }
   ]
 };
+const facilityDescriptor = `${facility.facility_type || ''} ${facility.name || ''}`.toLowerCase();
+const isMemoryCareTagged = /memory|dementia|alzheimer/.test(facilityDescriptor);
+const supportiveGuide = {
+  href: '/guides/guilt-about-placing-parent-in-memory-care/',
+  label: 'Guilt About Placing a Parent in Memory Care'
+};
 ---
 <Base title={title} description={description} canonical={canonical}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
@@ -76,6 +82,14 @@ const breadcrumbSchema = {
         <strong>Phone</strong>
         <span class="muted">{facility.phone || 'Phone unavailable'}</span>
       </div>
+      {isMemoryCareTagged && (
+        <p class="muted" style="margin: 1rem 0 0; font-size: 0.92rem;">
+          Families navigating difficult memory care decisions may find this helpful:
+          <a href={supportiveGuide.href} style="color:#ca8a04; font-weight: 700; text-decoration: underline; margin-left: 0.35rem;">
+            {supportiveGuide.label}
+          </a>
+        </p>
+      )}
     </div>
   </section>
 </Base>

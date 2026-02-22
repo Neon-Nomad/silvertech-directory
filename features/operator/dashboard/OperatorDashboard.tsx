@@ -362,6 +362,7 @@ const OperatorDashboard: React.FC = () => {
       </header>
 
       <main className="max-w-7xl mx-auto px-6 py-10">
+          <h1 className="sr-only">Operator Dashboard</h1>
           {activeTab === 'overview' && (
             <DashboardOverview
               onGoToListings={() => goToTab('listings')}

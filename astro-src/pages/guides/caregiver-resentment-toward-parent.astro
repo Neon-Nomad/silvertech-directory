@@ -1,0 +1,214 @@
+---
+import GuideArticle from '../../components/GuideArticle.astro';
+
+const published = '2026-02-21';
+const modified = '2026-02-21';
+const title = 'Caregiver Resentment Toward Parent: What It Means and What To Do | SilverTech Directory';
+const description = 'Caregiver resentment toward a parent is common, especially in dementia care. Learn why it happens, how to reduce harm, and when to change the care setup.';
+const canonical = 'https://silvertechdirectory.com/guides/caregiver-resentment-toward-parent/';
+const ogImage = 'https://silvertechdirectory.com/hero.png';
+
+const h1 = 'Caregiver Resentment Toward Parent: A Real and Common Dementia Care Signal';
+const deck = 'Caregiver resentment toward a parent can feel shameful, but it usually signals chronic overload and unmet support needs. This guide helps families address resentment early and rebuild a safer care plan.';
+
+const toc = [
+  { id: 'why-resentment-happens', label: 'Why resentment happens' },
+  { id: 'warning-signs', label: 'Warning signs to address now' },
+  { id: 'situation-vs-person', label: 'Resenting the situation vs the person' },
+  { id: 'reset-plan', label: 'A practical reset plan' },
+  { id: 'when-home-care-breaks', label: 'When home care is no longer sustainable' },
+  { id: 'conversation-scripts', label: 'Conversation scripts for family meetings' }
+];
+
+const faqItems = [
+  {
+    question: 'Is caregiver resentment normal in dementia care?',
+    answer: 'Yes. Caregiver resentment is common when one person carries prolonged emotional and logistical burden with limited support.'
+  },
+  {
+    question: 'Does resentment mean I do not love my parent?',
+    answer: 'No. Resentment usually reflects chronic stress, role strain, and exhaustion. It does not erase love or commitment.'
+  },
+  {
+    question: 'How do I reduce resentment quickly?',
+    answer: 'Reduce task load fast: delegate, use respite, narrow non-essential responsibilities, and create protected recovery time each week.'
+  },
+  {
+    question: 'When should families consider memory care placement?',
+    answer: 'Consider placement when safety risk, caregiver health decline, or behavior complexity exceed what home care can manage reliably.'
+  },
+  {
+    question: 'Should I tell siblings I feel resentment?',
+    answer: 'Yes, with structure. Use concrete workload data and specific requests rather than blame language.'
+  }
+];
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://silvertechdirectory.com/guides/' },
+    { '@type': 'ListItem', position: 3, name: 'Caregiver Resentment Toward Parent', item: canonical }
+  ]
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: h1,
+  description,
+  url: canonical,
+  datePublished: published,
+  dateModified: modified,
+  image: ogImage,
+  author: {
+    '@type': 'Organization',
+    name: 'SilverTech Editorial Team',
+    url: 'https://silvertechdirectory.com/'
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'SilverTech Directory',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://silvertechdirectory.com/logo.png'
+    }
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonical
+  }
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer
+    }
+  }))
+};
+---
+
+<GuideArticle
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogImage={ogImage}
+  h1={h1}
+  deck={deck}
+  heroEyebrow="Caregiver Burnout Guide"
+  published={published}
+  modified={modified}
+  readTime="12 min read"
+  toc={toc}
+  faqItems={faqItems}
+  resourceLinks={[
+    { href: '/guides/caregiver-at-breaking-point/', label: 'Caregiver at Breaking Point' },
+    { href: '/guides/sibling-not-helping-parent-care/', label: 'Sibling support strategy' },
+    { href: '/search', label: 'Compare care options' }
+  ]}
+  relatedLinks={[
+    { href: '/guides/guilt-about-placing-parent-in-memory-care/', label: 'Guilt About Placing a Parent in Memory Care' },
+    { href: '/guides/grief-while-parent-is-still-alive-dementia/', label: 'Grief While Parent Is Still Alive' },
+    { href: '/guides/hidden-costs-of-memory-care/', label: 'Hidden Costs of Memory Care' }
+  ]}
+  keywordPills={[
+    'caregiver resentment toward parent',
+    'caregiver burnout',
+    'dementia stress',
+    'family caregiving overload'
+  ]}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+
+  <section id="why-resentment-happens">
+    <h2>Why Caregiver Resentment Toward Parent Happens</h2>
+    <p>
+      Caregiver resentment toward a parent usually develops when care demands expand faster than support. You may be handling medication,
+      finances, appointments, behavior episodes, and emergency response while also working and parenting.
+    </p>
+    <p>
+      Resentment is often a system alarm, not a character flaw. It signals that emotional labor and practical labor are out of balance for too long.
+    </p>
+  </section>
+
+  <section id="warning-signs">
+    <h2>Warning Signs to Address Now</h2>
+    <ul>
+      <li>Frequent anger spikes over minor requests.</li>
+      <li>Avoiding calls or visits because you feel immediate dread.</li>
+      <li>Sleep disruption, concentration loss, or physical exhaustion.</li>
+      <li>Internal self-criticism after moments of frustration.</li>
+      <li>Growing thoughts of "I cannot do this anymore."</li>
+    </ul>
+    <p>
+      If these signs persist, it is time to reduce load quickly before conflict or health decline worsens.
+    </p>
+  </section>
+
+  <section id="situation-vs-person">
+    <h2>Resenting the Situation vs Resenting the Person</h2>
+    <p>
+      Families often confuse these. You may resent the constant pressure, role reversal, and lack of relief, while still loving your parent deeply.
+      Naming this difference reduces shame and makes problem-solving possible.
+    </p>
+    <p>
+      Dementia can also produce behaviors that are hard to tolerate. Responding to those behaviors with limits and support is a care skill, not cruelty.
+    </p>
+  </section>
+
+  <section id="reset-plan">
+    <h2>A Practical Reset Plan</h2>
+    <h3>Step 1: Quantify workload</h3>
+    <p>
+      Track one week of tasks by minutes and stress level. You need objective data before you can reassign responsibilities.
+    </p>
+    <h3>Step 2: Remove non-essential tasks</h3>
+    <p>
+      Drop anything not directly tied to safety, medical care, legal requirements, or financial stability.
+    </p>
+    <h3>Step 3: Add formal relief</h3>
+    <p>
+      Use respite care, adult day services, or in-home aide support to create predictable recovery blocks each week.
+    </p>
+    <h3>Step 4: Reassess care level</h3>
+    <p>
+      If crisis events continue after relief is added, evaluate structured memory care or higher-support settings.
+    </p>
+  </section>
+
+  <section id="when-home-care-breaks">
+    <h2>When Home Care Is No Longer Sustainable</h2>
+    <p>
+      Home care is often no longer sustainable when safety incidents keep repeating, caregiver health is deteriorating, and family collaboration remains limited.
+      In that case, placement is not giving up. It is risk management and continuity planning.
+    </p>
+    <p>
+      Transitioning to memory care can lower daily conflict and let family relationships shift from task-heavy to connection-focused.
+    </p>
+  </section>
+
+  <section id="conversation-scripts">
+    <h2>Conversation Scripts for Family Meetings</h2>
+    <h3>Request support with data</h3>
+    <p>
+      "I tracked 34 care hours last week. I can continue 20, but I need 14 hours covered by family or paid support by next month."
+    </p>
+    <h3>Set decision deadlines</h3>
+    <p>
+      "If we do not agree by Friday on task coverage, I will move forward with respite scheduling and memory care tours."
+    </p>
+    <h3>Stay outcome-focused</h3>
+    <p>
+      "The goal is stable care and safety, not proving who is right."
+    </p>
+  </section>
+</GuideArticle>

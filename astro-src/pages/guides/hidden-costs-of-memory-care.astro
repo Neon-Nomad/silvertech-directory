@@ -1,0 +1,301 @@
+---
+import GuideArticle from '../../components/GuideArticle.astro';
+
+const published = '2026-02-21';
+const modified = '2026-02-21';
+const title = 'Hidden Costs of Memory Care: What Families Are Never Told Up Front | SilverTech Directory';
+const description = 'The monthly rent quote is only the floor. Learn how care level fees, medication management, supplies, and move-in charges change the real monthly memory care bill.';
+const canonical = 'https://silvertechdirectory.com/guides/hidden-costs-of-memory-care/';
+const ogImage = 'https://silvertechdirectory.com/hero.png';
+
+const h1 = 'Hidden Costs of Memory Care: What Families Are Never Told Up Front';
+const deck = 'Hidden costs of memory care are often the difference between the tour quote and the bill families actually pay. This guide breaks down the exact fee categories so you can budget with fewer surprises.';
+
+const toc = [
+  { id: 'pricing-model', label: 'How memory care pricing actually works' },
+  { id: 'care-level-fees', label: 'Care level upcharges' },
+  { id: 'medication-fees', label: 'Medication management fees' },
+  { id: 'supply-fees', label: 'Supply and incontinence fees' },
+  { id: 'move-in-fees', label: 'Move-in and community fees' },
+  { id: 'other-fees', label: 'Other contract fees' },
+  { id: 'example-bill', label: 'Real-world monthly bill example' },
+  { id: 'checklist', label: 'Checklist to use on every tour' }
+];
+
+const faqItems = [
+  {
+    question: 'What is the average total monthly cost of memory care in the US?',
+    answer: 'A typical base rate may start around 5,800 to 6,500 dollars, but all-in monthly cost for moderate to advanced dementia often lands in the 7,000 to 9,500 dollar range after care, medication, and supply fees are added.'
+  },
+  {
+    question: 'What are care level fees in memory care?',
+    answer: 'Care level fees are monthly surcharges tied to resident needs. As support needs increase, communities move residents to higher levels with higher monthly fees.'
+  },
+  {
+    question: 'Is medication management included in memory care rent?',
+    answer: 'Usually no. Medication management is commonly billed as either a flat monthly fee or a per-medication fee.'
+  },
+  {
+    question: 'What is a community fee in assisted living or memory care?',
+    answer: 'A community fee is a one-time move-in charge, often non-refundable, that is separate from monthly rent and security deposits.'
+  },
+  {
+    question: 'How much do incontinence supplies cost in memory care?',
+    answer: 'Many communities charge separately for supplies, either with a flat monthly fee or usage-based billing. The amount usually rises as care needs increase.'
+  }
+];
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://silvertechdirectory.com/guides/' },
+    { '@type': 'ListItem', position: 3, name: 'Hidden Costs of Memory Care', item: canonical }
+  ]
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: h1,
+  description,
+  url: canonical,
+  datePublished: published,
+  dateModified: modified,
+  image: ogImage,
+  author: {
+    '@type': 'Organization',
+    name: 'SilverTech Editorial Team',
+    url: 'https://silvertechdirectory.com/'
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'SilverTech Directory',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://silvertechdirectory.com/logo.png'
+    }
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonical
+  }
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer
+    }
+  }))
+};
+---
+
+<GuideArticle
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogImage={ogImage}
+  h1={h1}
+  deck={deck}
+  heroEyebrow="Memory Care Cost Strategy"
+  published={published}
+  modified={modified}
+  readTime="15 min read"
+  toc={toc}
+  faqItems={faqItems}
+  resourceLinks={[
+    { href: '/survey', label: 'Take the CareFinder survey' },
+    { href: '/pricing', label: 'Review SilverTech pricing plans' },
+    { href: '/guides/', label: 'Browse all family guides' }
+  ]}
+  relatedLinks={[
+    { href: '/guides/guilt-about-placing-parent-in-memory-care/', label: 'Guilt About Placing a Parent in Memory Care' },
+    { href: '/guides/caregiver-at-breaking-point/', label: 'I Cannot Do This Anymore Caring for My Parent' },
+    { href: '/guides/sibling-not-helping-parent-care/', label: 'Sibling Not Helping With Parent Care' }
+  ]}
+  keywordPills={[
+    'hidden costs of memory care',
+    'memory care pricing',
+    'care level upcharges',
+    'medication management fees',
+    'assisted living fees'
+  ]}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+
+  <section id="pricing-model">
+    <h2>How Memory Care Pricing Actually Works</h2>
+    <p>
+      Hidden costs of memory care come from the structure of pricing itself. Most communities quote base rent first, but
+      base rent is not the full bill. It usually covers room, meals, and core operations. Clinical support intensity is billed
+      through add-on categories.
+    </p>
+    <p>
+      Families comparing communities by base rent alone often believe they are making a clean comparison. In practice, one
+      provider can show a low rent and high add-on fees while another provider does the opposite. The only reliable comparison
+      is an all-in monthly estimate based on your parent&apos;s current needs and likely 12 to 24 month progression.
+    </p>
+  </section>
+
+  <section id="care-level-fees">
+    <h2>Care Level Upcharges: The Largest Cost Driver</h2>
+    <p>
+      Care levels are monthly surcharges tied to assistance needs such as toileting, transfers, behavior support, and night checks.
+      As dementia progresses, reassessments move residents up levels, and monthly charges rise.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Level</th>
+          <th scope="col">Typical surcharge</th>
+          <th scope="col">Common profile</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Level 1</td>
+          <td>$300-$600</td>
+          <td>Prompting and light support</td>
+        </tr>
+        <tr>
+          <td>Level 2</td>
+          <td>$600-$1,100</td>
+          <td>Regular ADL assistance</td>
+        </tr>
+        <tr>
+          <td>Level 3</td>
+          <td>$1,100-$1,700</td>
+          <td>Frequent hands-on support</td>
+        </tr>
+        <tr>
+          <td>Level 4+</td>
+          <td>$1,700-$3,500+</td>
+          <td>High supervision or intensive support</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Ask each community two direct questions: how often reassessments occur, and how much notice they give before a new level takes effect.
+    </p>
+  </section>
+
+  <section id="medication-fees">
+    <h2>Medication Management Fees</h2>
+    <p>
+      Medication management is rarely included in base rent. Many communities charge either a flat monthly service fee or a per-medication
+      fee. Residents with dementia frequently have medication adjustments, which means this line item tends to grow over time.
+    </p>
+    <p>
+      Clarify whether injected medications, controlled medications, or after-hours pharmacy coordination have extra charges. Also confirm
+      whether a required partner pharmacy changes actual drug costs.
+    </p>
+  </section>
+
+  <section id="supply-fees">
+    <h2>Supply and Incontinence Fees</h2>
+    <p>
+      Incontinence products and related care supplies are commonly billed separately. Billing can be flat monthly or usage-based. Usage-based
+      models can be harder to forecast because spend rises with progression.
+    </p>
+    <p>
+      Ask whether family-provided products are allowed. In many communities, this one policy can materially reduce monthly spend.
+    </p>
+  </section>
+
+  <section id="move-in-fees">
+    <h2>Move-In and Community Fees</h2>
+    <p>
+      One-time move-in charges often include a community fee, assessment fee, and deposit. Community fees frequently run from
+      1,000 to 5,000 dollars and are often non-refundable.
+    </p>
+    <p>
+      Request written refund terms before signing. If move-in timing is flexible, ask if occupancy incentives can reduce one-time fees.
+    </p>
+  </section>
+
+  <section id="other-fees">
+    <h2>Other Contract Fees Families Miss</h2>
+    <ul>
+      <li><strong>Transportation:</strong> common per-trip charge for appointments.</li>
+      <li><strong>One-on-one staffing:</strong> hourly cost during high-acuity periods.</li>
+      <li><strong>Behavior support programs:</strong> additional monthly support fee in some communities.</li>
+      <li><strong>Annual escalation:</strong> base rent increases often run 3 to 7 percent yearly.</li>
+    </ul>
+    <p>
+      These line items are not always unreasonable. The risk is signing without a clear all-in model.
+    </p>
+  </section>
+
+  <section id="example-bill">
+    <h2>What the Real Monthly Bill Can Look Like</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Category</th>
+          <th scope="col">Move-in month</th>
+          <th scope="col">18 months later</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Base rent</td>
+          <td>$4,800</td>
+          <td>$4,944</td>
+        </tr>
+        <tr>
+          <td>Care level</td>
+          <td>$900</td>
+          <td>$2,100</td>
+        </tr>
+        <tr>
+          <td>Medication management</td>
+          <td>$280</td>
+          <td>$350</td>
+        </tr>
+        <tr>
+          <td>Supplies</td>
+          <td>$0</td>
+          <td>$200</td>
+        </tr>
+        <tr>
+          <td>Transportation</td>
+          <td>$75</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td><strong>Estimated total</strong></td>
+          <td><strong>$6,055</strong></td>
+          <td><strong>$7,744</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      The base quote here is 4,800 dollars, but the operating monthly reality becomes much higher. Build budget decisions around the all-in number.
+    </p>
+  </section>
+
+  <section id="checklist">
+    <h2>Checklist to Use on Every Tour</h2>
+    <ul>
+      <li>Ask what is included in base rent and what is excluded.</li>
+      <li>Request the full care level matrix with fee ranges.</li>
+      <li>Ask reassessment cadence and rate-change notice period.</li>
+      <li>Confirm medication billing model and partner pharmacy policy.</li>
+      <li>Confirm whether incontinence supplies are included or separate.</li>
+      <li>Get written move-in fee, deposit, and refund language.</li>
+      <li>Ask for an all-in estimate based on current care needs.</li>
+    </ul>
+    <p>
+      If a team cannot provide these answers in writing, treat that as a risk signal and compare additional communities.
+    </p>
+  </section>
+</GuideArticle>

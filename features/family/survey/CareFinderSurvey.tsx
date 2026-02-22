@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ChevronRight, Heart, MapPin, DollarSign, Activity, Check } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { Helmet } from 'react-helmet-async';
 
 interface SurveyData {
   budget: string;
@@ -131,7 +132,18 @@ export const CareFinderSurvey: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4" ref={containerRef}>
+      <Helmet>
+        <title>CareFinder Survey | SilverTech Directory</title>
+        <meta
+          name="description"
+          content="Answer a few guided questions so SilverTech can match your family with senior living options that fit your budget, location, and care needs."
+        />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://silvertechdirectory.com/survey" />
+      </Helmet>
+
       <div className="max-w-2xl w-full">
+        <h1 className="sr-only">CareFinder Survey</h1>
         {/* Progress Bar */}
         <div className="mb-8">
           <div className="h-2 bg-slate-200 rounded-full overflow-hidden">

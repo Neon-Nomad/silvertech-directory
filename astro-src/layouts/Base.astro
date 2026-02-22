@@ -1,9 +1,14 @@
----
+﻿---
 const {
   title = 'SilverTech Directory',
   description = 'Find trusted memory care and assisted living communities with transparent, commission-free listings.',
   canonical = 'https://silvertechdirectory.com/',
-  ogImage = 'https://silvertechdirectory.com/hero.png'
+  ogImage = 'https://silvertechdirectory.com/hero.png',
+  ogType = 'website',
+  twitterSite,
+  robots,
+  publishedTime,
+  modifiedTime
 } = Astro.props;
 ---
 <!doctype html>
@@ -14,16 +19,21 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <meta property="og:type" content="website" />
+    {robots && <meta name="robots" content={robots} />}
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content="SilverTech Directory" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
+    {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+    {twitterSite && <meta name="twitter:site" content={twitterSite} />}
+    <slot name="head" />
     <style>
       :root { color-scheme: light; }
       body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; margin: 0; color: #0f172a; background: #f8fafc; }
@@ -50,7 +60,7 @@ const {
     </main>
     <footer>
       <div class="container">
-        © {new Date().getFullYear()} SilverTech Directory. All rights reserved.
+        (c) {new Date().getFullYear()} SilverTech Directory. All rights reserved.
       </div>
     </footer>
   </body>

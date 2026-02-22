@@ -7,6 +7,8 @@ type Facility = {
   name: string;
   city: string;
   state: string;
+  facility_type?: string;
+  type?: string;
   address_line1?: string;
   postal_code?: string;
   phone?: string;
@@ -60,6 +62,8 @@ const loadFacilities = (): Facility[] => {
           name: facility.name || 'Unknown Facility',
           city: address.city || '',
           state: address.state || data.state_code || '',
+          facility_type: facility.type || '',
+          type: facility.type || '',
           address_line1: address.street || '',
           postal_code: address.zip || '',
           phone: facility.contact?.phone_formatted || facility.contact?.phone || '',
@@ -200,6 +204,7 @@ export const getFacilityIndex = () => {
     name: f.name,
     city: f.city,
     state: f.state,
+    facility_type: f.facility_type || f.type || '',
     address_line1: f.address_line1,
     postal_code: f.postal_code,
     phone: f.phone,

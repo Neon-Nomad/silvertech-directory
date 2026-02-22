@@ -4,6 +4,7 @@ import { Lock, Mail, ArrowRight } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
 import { supabase } from '../../src/lib/supabase';
 import { isOperatorUser } from '@/src/utils/authRole';
+import { Helmet } from 'react-helmet-async';
 
 const OperatorLogin: React.FC = () => {
   const navigate = useNavigate();
@@ -100,9 +101,15 @@ const OperatorLogin: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <Helmet>
+        <title>Operator Sign In | SilverTech Directory</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="canonical" href="https://silvertechdirectory.com/operator/login" />
+      </Helmet>
+
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-slate-900">Operator Portal</h2>
+          <h1 className="text-3xl font-bold text-slate-900">Operator Portal</h1>
           <p className="mt-2 text-sm text-slate-600">
             Sign in to manage your facility and leads
           </p>

@@ -1,0 +1,207 @@
+---
+import GuideArticle from '../../components/GuideArticle.astro';
+
+const published = '2026-02-21';
+const modified = '2026-02-21';
+const title = 'Sibling Not Helping With Parent Care: Action Plan for Caregivers | SilverTech Directory';
+const description = 'If a sibling is not helping with parent care, use this guide to reset expectations, assign responsibilities, and decide when to move forward without full sibling buy-in.';
+const canonical = 'https://silvertechdirectory.com/guides/sibling-not-helping-parent-care/';
+const ogImage = 'https://silvertechdirectory.com/hero.png';
+
+const h1 = 'Sibling Not Helping With Parent Care: How To Move From Anger To Action';
+const deck = 'Sibling not helping with parent care is one of the most common family stress patterns in dementia. This guide gives practical scripts, workload models, and decision rules so care does not stall while conflict grows.';
+
+const toc = [
+  { id: 'why-siblings-disengage', label: 'Why siblings disengage' },
+  { id: 'what-not-to-do', label: 'What usually makes conflict worse' },
+  { id: 'workload-model', label: 'A workload model that reduces arguments' },
+  { id: 'family-meeting', label: 'How to run a focused family meeting' },
+  { id: 'legal-authority', label: 'Legal authority and decision rights' },
+  { id: 'when-to-act-alone', label: 'When one caregiver must act alone' }
+];
+
+const faqItems = [
+  {
+    question: 'What should I do when a sibling refuses to help with parent care?',
+    answer: 'Use objective workload data, request specific contributions, and set deadlines. If no response, build a plan using paid support and proceed.'
+  },
+  {
+    question: 'How do I ask siblings for help without starting a fight?',
+    answer: 'Ask for defined tasks and due dates, not general help. Keep tone factual and centered on resident safety and continuity.'
+  },
+  {
+    question: 'Can one sibling decide on memory care placement?',
+    answer: 'If one sibling holds legal authority through durable power of attorney or guardianship, that person can make decisions within that authority.'
+  },
+  {
+    question: 'What if siblings disagree about placement?',
+    answer: 'Document safety incidents, physician recommendations, and current care limits. Use evidence-based criteria and legal authority to move decisions forward.'
+  },
+  {
+    question: 'Should siblings contribute money if they cannot provide time?',
+    answer: 'In many families, financial contribution is the most practical way for distant or constrained siblings to support care.'
+  }
+];
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://silvertechdirectory.com/guides/' },
+    { '@type': 'ListItem', position: 3, name: 'Sibling Not Helping With Parent Care', item: canonical }
+  ]
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: h1,
+  description,
+  url: canonical,
+  datePublished: published,
+  dateModified: modified,
+  image: ogImage,
+  author: {
+    '@type': 'Organization',
+    name: 'SilverTech Editorial Team',
+    url: 'https://silvertechdirectory.com/'
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'SilverTech Directory',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://silvertechdirectory.com/logo.png'
+    }
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonical
+  }
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer
+    }
+  }))
+};
+---
+
+<GuideArticle
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogImage={ogImage}
+  h1={h1}
+  deck={deck}
+  heroEyebrow="Family Dynamics Guide"
+  published={published}
+  modified={modified}
+  readTime="12 min read"
+  toc={toc}
+  faqItems={faqItems}
+  resourceLinks={[
+    { href: '/guides/caregiver-resentment-toward-parent/', label: 'Caregiver resentment guide' },
+    { href: '/guides/caregiver-at-breaking-point/', label: 'Breaking point guide' },
+    { href: '/search', label: 'Start comparing care communities' }
+  ]}
+  relatedLinks={[
+    { href: '/guides/guilt-about-placing-parent-in-memory-care/', label: 'Guilt About Placement' },
+    { href: '/guides/grief-while-parent-is-still-alive-dementia/', label: 'Grief While Parent Is Still Alive' },
+    { href: '/guides/hidden-costs-of-memory-care/', label: 'Hidden Costs of Memory Care' }
+  ]}
+  keywordPills={[
+    'sibling not helping parent care',
+    'family conflict dementia care',
+    'caregiver workload split',
+    'memory care placement decisions'
+  ]}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+
+  <section id="why-siblings-disengage">
+    <h2>Why Siblings Disengage in Parent Care Situations</h2>
+    <p>
+      When a sibling is not helping with parent care, the explanation is often a mix of denial, distance, family history, and role assumptions.
+      One sibling becomes operational by default while others stay advisory or absent.
+    </p>
+    <p>
+      Understanding this does not remove frustration, but it helps you design a realistic plan. Waiting for equal emotional readiness across siblings
+      usually delays urgent care decisions.
+    </p>
+  </section>
+
+  <section id="what-not-to-do">
+    <h2>What Usually Makes Conflict Worse</h2>
+    <ul>
+      <li>Making broad accusations without concrete workload data.</li>
+      <li>Requesting "more help" without naming specific tasks and deadlines.</li>
+      <li>Arguing history instead of current risk and current responsibilities.</li>
+      <li>Letting urgent decisions drift while trying to gain unanimous agreement.</li>
+    </ul>
+    <p>
+      Conflict de-escalates when requests are specific, time-bound, and tied to safety outcomes.
+    </p>
+  </section>
+
+  <section id="workload-model">
+    <h2>A Workload Model That Reduces Arguments</h2>
+    <h3>Step 1: List all weekly tasks</h3>
+    <p>
+      Include care coordination, appointment transport, medication management, legal paperwork, and financial admin.
+    </p>
+    <h3>Step 2: Assign each task to one owner</h3>
+    <p>
+      Shared ownership is where tasks die. One owner per task with a backup owner is more reliable.
+    </p>
+    <h3>Step 3: Offer multiple contribution types</h3>
+    <p>
+      Time, money, admin work, and logistics are all valid. Not every sibling can provide direct hands-on care.
+    </p>
+  </section>
+
+  <section id="family-meeting">
+    <h2>How to Run a Focused Family Meeting</h2>
+    <p>
+      Use a 45-minute format: 10 minutes status review, 20 minutes assignments, 10 minutes unresolved risks, 5 minutes deadlines.
+      Send written notes within 24 hours.
+    </p>
+    <h3>Example request language</h3>
+    <p>
+      "I need one person to own medical appointment scheduling and one person to own monthly billing checks by next Friday. If we do not assign this, I will
+      hire support and share the cost split proposal."
+    </p>
+  </section>
+
+  <section id="legal-authority">
+    <h2>Legal Authority and Decision Rights</h2>
+    <p>
+      In high-conflict families, decisions should follow legal authority documents, not volume of opinion. Durable power of attorney, health proxy,
+      or guardianship typically defines decision rights.
+    </p>
+    <p>
+      If no legal authority is in place and capacity is declining, consult elder-law counsel early to reduce future gridlock.
+    </p>
+  </section>
+
+  <section id="when-to-act-alone">
+    <h2>When One Caregiver Must Act Alone</h2>
+    <p>
+      If safety incidents continue and sibling support does not materialize, acting alone may be necessary. Document incidents, medical recommendations,
+      and attempted collaboration. Then proceed with respite or memory care placement based on risk, not family comfort.
+    </p>
+    <p>
+      A delayed decision that preserves harmony can still produce worse outcomes. In dementia care, clear action usually protects everyone.
+    </p>
+  </section>
+</GuideArticle>

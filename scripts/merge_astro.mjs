@@ -5,7 +5,8 @@ const root = process.cwd();
 const astroRoot = path.join(root, 'dist-astro');
 const targets = [
   { src: path.join(astroRoot, 'assisted-living'), dest: path.join(root, 'dist', 'assisted-living') },
-  { src: path.join(astroRoot, 'facility'), dest: path.join(root, 'dist', 'facility') }
+  { src: path.join(astroRoot, 'facility'), dest: path.join(root, 'dist', 'facility') },
+  { src: path.join(astroRoot, 'guides'), dest: path.join(root, 'dist', 'guides') }
 ];
 
 let copiedAny = false;

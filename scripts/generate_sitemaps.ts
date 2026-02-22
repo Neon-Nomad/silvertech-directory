@@ -146,6 +146,13 @@ async function generateSitemaps() {
         `${BASE_URL}/advertise`,
         `${BASE_URL}/honest-care`,
         `${BASE_URL}/blog`,
+        `${BASE_URL}/guides/`,
+        `${BASE_URL}/guides/hidden-costs-of-memory-care/`,
+        `${BASE_URL}/guides/guilt-about-placing-parent-in-memory-care/`,
+        `${BASE_URL}/guides/grief-while-parent-is-still-alive-dementia/`,
+        `${BASE_URL}/guides/caregiver-resentment-toward-parent/`,
+        `${BASE_URL}/guides/sibling-not-helping-parent-care/`,
+        `${BASE_URL}/guides/caregiver-at-breaking-point/`,
         // Product Categories
         `${BASE_URL}/products/bathroom-safety`,
         `${BASE_URL}/products/mobility-aids`,
