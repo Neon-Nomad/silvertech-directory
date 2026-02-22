@@ -30,12 +30,15 @@ export const MyFacilities: React.FC = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
-  const onboardingClaim = searchParams.get('onboarding') === 'claim';
+  const onboardingMode = searchParams.get('onboarding');
+  const onboardingClaim = onboardingMode === 'claim';
+  const onboardingPendingClaim = onboardingMode === 'pending-claim';
   const [facilities, setFacilities] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<FilterStatus>('all');
   const [sortMode, setSortMode] = useState<SortMode>('updated_desc');
+  const [pendingClaimsCount, setPendingClaimsCount] = useState(0);
 
   useEffect(() => {
     const fetchFacilities = async () => {
@@ -56,6 +59,30 @@ export const MyFacilities: React.FC = () => {
     };
 
     fetchFacilities();
+  }, [user]);
+
+  useEffect(() => {
+    const fetchPendingClaimsCount = async () => {
+      if (!user) {
+        setPendingClaimsCount(0);
+        return;
+      }
+      try {
+        const { count, error } = await supabase
+          .from('facility_claims')
+          .select('id', { head: true, count: 'exact' })
+          .eq('user_id', user.id)
+          .eq('status', 'pending');
+
+        if (error) throw error;
+        setPendingClaimsCount(count ?? 0);
+      } catch (err) {
+        console.error('Error fetching pending claims:', err);
+        setPendingClaimsCount(0);
+      }
+    };
+
+    fetchPendingClaimsCount();
   }, [user]);
 
   const filteredFacilities = useMemo(() => {
@@ -99,7 +126,17 @@ export const MyFacilities: React.FC = () => {
         </Button>
       </div>
 
-      {onboardingClaim && (
+      {(onboardingPendingClaim || pendingClaimsCount > 0) && (
+        <div className="rounded-xl border border-blue-200 bg-blue-50 p-4">
+          <h3 className="text-sm font-semibold text-blue-900">Claim submitted and under review</h3>
+          <p className="mt-1 text-sm text-blue-800">
+            We received your claim request{pendingClaimsCount > 1 ? 's' : ''}. Verification typically takes 24-48 hours.
+            You can continue setting up your account while we review.
+          </p>
+        </div>
+      )}
+
+      {onboardingClaim && pendingClaimsCount === 0 && (
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
           <h3 className="text-sm font-semibold text-amber-900">Next step: claim your first facility</h3>
           <p className="mt-1 text-sm text-amber-800">

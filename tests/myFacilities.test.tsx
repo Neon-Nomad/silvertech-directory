@@ -55,10 +55,24 @@ vi.mock('@/src/context/AuthProvider', () => ({
 
 vi.mock('@/src/lib/supabase', () => ({
   supabase: {
-    from: () => ({
-      select: () => ({
-        eq: async () => ({ data: facilitiesFixture, error: null }),
-      }),
+    from: (table: string) => ({
+      select: () => {
+        if (table === 'facilities') {
+          return {
+            eq: async () => ({ data: facilitiesFixture, error: null }),
+          };
+        }
+        if (table === 'facility_claims') {
+          return {
+            eq: () => ({
+              eq: async () => ({ count: 0, error: null }),
+            }),
+          };
+        }
+        return {
+          eq: async () => ({ data: [], error: null }),
+        };
+      },
     }),
   },
 }));

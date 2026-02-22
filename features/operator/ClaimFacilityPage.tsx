@@ -133,7 +133,7 @@ export const ClaimFacilityPage: React.FC = () => {
             You can continue setting up your operator account while this claim is under review.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Button variant="primary" className="w-full min-h-11" onClick={() => navigate('/dashboard/listings?onboarding=claim')}>
+            <Button variant="primary" className="w-full min-h-11" onClick={() => navigate('/dashboard/listings?onboarding=pending-claim')}>
               Go To Dashboard
             </Button>
             <Button variant="outline" className="w-full min-h-11" onClick={() => navigate('/search?claim=1')}>
