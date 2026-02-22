@@ -127,7 +127,8 @@ export const ClaimFacilityPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900 mb-2">Claim Submitted!</h2>
           <p className="text-slate-600 mb-6">
             We have received your request to claim <strong>{facility?.name}</strong>. 
-            Our team will review your information and verify your identity within 24-48 hours.
+            If your business details match our trust checks, verification can happen automatically.
+            Otherwise our team reviews within 24-48 hours.
           </p>
           <p className="text-sm text-slate-500 mb-4">
             You can continue setting up your operator account while this claim is under review.
