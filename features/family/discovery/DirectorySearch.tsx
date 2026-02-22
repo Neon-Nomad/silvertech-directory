@@ -195,32 +195,7 @@ const DirectorySearch: React.FC = () => {
     if (claimMode) nextParams.set('claim', '1');
     navigate(`/search?${nextParams.toString()}`);
 
-    const performSearch = async (filters: { city?: string; state?: string; zip?: string }) => {
-      if (hasTypesense && typesenseClient) {
-        const searchParams: any = {
-          q: rawName || '*',
-          query_by: 'name,city,state,postal_code',
-          query_by_weights: '8,3,2,2',
-          sort_by: 'premium_tier:desc,_text_match:desc',
-          per_page: 50
-        };
-        const filterParts: string[] = [];
-        if (filters.state) filterParts.push(`state:=${filters.state}`);
-        if (filters.city) filterParts.push(`city:=${filters.city}`);
-        if (filters.zip) filterParts.push(`postal_code:=${filters.zip}`);
-        if (filterParts.length > 0) searchParams.filter_by = filterParts.join(' && ');
-
-        const searchResult: any = await typesenseClient
-          .collections('facilities')
-          .documents()
-          .search(searchParams);
-        const hits = (searchResult?.hits || []).map((hit: any) => hit.document) as SearchFacilityResult[];
-        if (hits.length === 0 && filters.state && !filters.city && !filters.zip && !rawName) {
-          throw new Error('Typesense returned 0 for state-only search.');
-        }
-        return hits;
-      }
-
+    const searchViaSupabase = async (filters: { city?: string; state?: string; zip?: string }) => {
       try {
         const { data, error } = await supabase
           .rpc('search_facilities', {
@@ -258,7 +233,43 @@ const DirectorySearch: React.FC = () => {
       }
     };
 
-    const performOfflineSearch = async (filters: { city?: string; state?: string; zip?: string }) => {
+    const performSearch = async (filters: { city?: string; state?: string; zip?: string }) => {
+      if (hasTypesense && typesenseClient) {
+        try {
+          const searchParams: any = {
+            q: rawName || '*',
+            query_by: 'name,city,state,postal_code',
+            query_by_weights: '8,3,2,2',
+            sort_by: 'premium_tier:desc,_text_match:desc',
+            per_page: 50
+          };
+          const filterParts: string[] = [];
+          if (filters.state) filterParts.push(`state:=${filters.state}`);
+          if (filters.city) filterParts.push(`city:=${filters.city}`);
+          if (filters.zip) filterParts.push(`postal_code:=${filters.zip}`);
+          if (filterParts.length > 0) searchParams.filter_by = filterParts.join(' && ');
+
+          const searchResult: any = await typesenseClient
+            .collections('facilities')
+            .documents()
+            .search(searchParams);
+          const hits = (searchResult?.hits || []).map((hit: any) => hit.document) as SearchFacilityResult[];
+
+          if (hits.length > 0) return hits;
+          // Important: stale Typesense indexes can return 0 despite data existing in Supabase.
+          // Fall through to database-backed search on zero-hit responses.
+        } catch {
+          // Fall through to Supabase search on any Typesense failure.
+        }
+      }
+
+      return searchViaSupabase(filters);
+    };
+
+    const performOfflineSearch = async (
+      filters: { city?: string; state?: string; zip?: string },
+      message?: string
+    ) => {
       const index = await loadFacilityIndexWithOptions({ stateAbbr: filters.state });
       let filtered = index;
       if (filters.state) {
@@ -274,9 +285,9 @@ const DirectorySearch: React.FC = () => {
         const needle = rawName.toLowerCase();
         filtered = filtered.filter((f) => (f.name || '').toLowerCase().includes(needle));
       }
-      setResultsError(claimMode
+      setResultsError(message || (claimMode
         ? 'Live search is unavailable. Showing nearby offline results.'
-        : 'Live search is unavailable. Showing offline results.');
+        : 'Live search is unavailable. Showing offline results.'));
       return filtered.slice(0, 50);
     };
 
@@ -326,6 +337,21 @@ const DirectorySearch: React.FC = () => {
           if (hits.length > 0) {
             setResultsError('No ZIP or city matches. Showing statewide results instead.');
           }
+        }
+      }
+
+      if (claimMode && hits.length === 0) {
+        const offlineFilters = {
+          state: stateAbbr || (zipEntry ? findStateByInput(zipEntry.state)?.abbreviation : undefined),
+          city: zipMatch ? zipEntry?.city : (city || geoCity),
+          zip: zipMatch || undefined
+        };
+        const offlineHits = await performOfflineSearch(
+          offlineFilters,
+          'No live matches for that ZIP yet. Showing offline directory matches.'
+        );
+        if (offlineHits.length > 0) {
+          hits = offlineHits;
         }
       }
 
