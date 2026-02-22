@@ -129,9 +129,24 @@ export const ClaimFacilityPage: React.FC = () => {
             We have received your request to claim <strong>{facility?.name}</strong>. 
             Our team will review your information and verify your identity within 24-48 hours.
           </p>
-          <Button variant="primary" onClick={() => navigate('/')}>
+          <p className="text-sm text-slate-500 mb-4">
+            You can continue setting up your operator account while this claim is under review.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Button variant="primary" className="w-full min-h-11" onClick={() => navigate('/dashboard/listings?onboarding=claim')}>
+              Go To Dashboard
+            </Button>
+            <Button variant="outline" className="w-full min-h-11" onClick={() => navigate('/search?claim=1')}>
+              Claim Another Listing
+            </Button>
+          </div>
+          <button
+            type="button"
+            className="mt-4 text-sm text-charcoal/70 hover:text-charcoal underline"
+            onClick={() => navigate('/')}
+          >
             Return Home
-          </Button>
+          </button>
         </div>
       </div>
     );
