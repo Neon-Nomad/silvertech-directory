@@ -4,6 +4,8 @@ import path from 'node:path';
 const root = process.cwd();
 const astroRoot = path.join(root, 'dist-astro');
 const targets = [
+  // Shared Astro CSS/assets required by state/city/guide pages.
+  { src: path.join(astroRoot, '_astro'), dest: path.join(root, 'dist', '_astro') },
   { src: path.join(astroRoot, 'assisted-living'), dest: path.join(root, 'dist', 'assisted-living') },
   // Facility detail URLs must resolve through the React app route (`/facility/:id`)
   // so the full dynamic template renders instead of the static Astro shell.
