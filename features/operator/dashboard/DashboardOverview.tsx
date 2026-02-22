@@ -69,6 +69,19 @@ type ActivationEventRow = {
   event_name: string;
 };
 
+const ACTIVATION_EVENTS_MISSING_STORAGE_KEY = 'std_activation_events_missing_v1';
+
+const isMissingActivationEventsResource = (err: unknown): boolean => {
+  const anyErr = err as { code?: string; status?: number; message?: string };
+  if (anyErr?.status === 404 || anyErr?.code === 'PGRST205') return true;
+  const message = String(anyErr?.message || '').toLowerCase();
+  return message.includes('operator_activation_events') && (
+    message.includes('not found') ||
+    message.includes('could not find') ||
+    message.includes('does not exist')
+  );
+};
+
 export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
   userProfile,
   onGoToListings,
@@ -89,6 +102,10 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
   const [dataAsOf] = React.useState<string>(new Date().toISOString());
   const [funnelStages, setFunnelStages] = React.useState<ActivationFunnelStage[]>([]);
   const [funnelLoading, setFunnelLoading] = React.useState(false);
+  const [funnelResourceMissing, setFunnelResourceMissing] = React.useState(() => {
+    if (typeof window === 'undefined') return false;
+    return window.sessionStorage.getItem(ACTIVATION_EVENTS_MISSING_STORAGE_KEY) === '1';
+  });
   const insightsRef = React.useRef<HTMLDetailsElement | null>(null);
 
   const onboardingViews = 32;
@@ -208,7 +225,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
 
   React.useEffect(() => {
     const loadFunnel = async () => {
-      if (!user) return;
+      if (!user || funnelResourceMissing) return;
       setFunnelLoading(true);
       try {
         const since = new Date();
@@ -248,7 +265,14 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
 
         setFunnelStages(stages);
       } catch (err) {
-        console.error('Failed to load activation funnel', err);
+        if (isMissingActivationEventsResource(err)) {
+          setFunnelResourceMissing(true);
+          if (typeof window !== 'undefined') {
+            window.sessionStorage.setItem(ACTIVATION_EVENTS_MISSING_STORAGE_KEY, '1');
+          }
+        } else {
+          console.error('Failed to load activation funnel', err);
+        }
         setFunnelStages([]);
       } finally {
         setFunnelLoading(false);
@@ -256,7 +280,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
     };
 
     loadFunnel();
-  }, [user]);
+  }, [funnelResourceMissing, user]);
 
   React.useEffect(() => {
     if (!user) return;
