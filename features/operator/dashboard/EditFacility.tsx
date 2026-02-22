@@ -30,6 +30,7 @@ export const EditFacility: React.FC = () => {
   const [draftVersionNo, setDraftVersionNo] = useState<number | null>(null);
   const [publishedVersionNo, setPublishedVersionNo] = useState<number | null>(null);
   const trackedFieldUpdatesRef = React.useRef<Set<string>>(new Set());
+  const facilityColumnsRef = React.useRef<Set<string>>(new Set());
   const maybeAppendFirstSaveReinforcement = (body: string) => {
     if (typeof window === 'undefined') return body;
     const sessionId = getActivationSessionId();
@@ -66,9 +67,9 @@ export const EditFacility: React.FC = () => {
     if (!id) return;
     try {
       const [photos, amenities, careTypes] = await Promise.all([
-        supabase.from('facility_photos').select('id', { count: 'exact' }).eq('facility_id', id),
-        supabase.from('facility_amenities').select('id', { count: 'exact' }).eq('facility_id', id),
-        supabase.from('facility_care_types').select('id', { count: 'exact' }).eq('facility_id', id)
+        supabase.from('facility_photos').select('id', { count: 'exact', head: true }).eq('facility_id', id),
+        supabase.from('facility_amenities').select('amenity_id', { count: 'exact', head: true }).eq('facility_id', id),
+        supabase.from('facility_care_types').select('care_type_id', { count: 'exact', head: true }).eq('facility_id', id)
       ]);
 
       setCounts({
@@ -107,46 +108,60 @@ export const EditFacility: React.FC = () => {
           return;
         }
 
+        facilityColumnsRef.current = new Set(Object.keys(data || {}));
+        const hasColumn = (column: string) => facilityColumnsRef.current.has(column);
+
         const nextFormData = {
           name: data.name || '',
-          description: data.description || '',
+          description: (data.description as string | undefined) || '',
           phone: data.phone || '',
-          website: data.website || '',
-          email: data.email || '',
+          website: (data.website as string | undefined) || (data.website_url as string | undefined) || '',
+          email: (data.email as string | undefined) || '',
           address_line1: data.address_line1 || '',
           city: data.city || '',
           state: data.state || '',
           postal_code: data.postal_code || '',
-          min_price: data.min_price?.toString() || '',
-          max_price: data.max_price?.toString() || '',
-          plan: data.plan || 'basic'
+          min_price: typeof data.min_price === 'number' ? data.min_price.toString() : '',
+          max_price: typeof data.max_price === 'number' ? data.max_price.toString() : '',
+          plan: (data.plan as string | undefined) || ((data.listing_tier as string | undefined) === 'free' ? 'basic' : (data.listing_tier as string | undefined)) || 'basic'
         };
         setFormData(nextFormData);
 
-        const { data: profileState, error: profileStateError } = await supabase
-          .rpc('get_operator_facility_profile_state', { p_facility_id: id });
+        // Older databases may not have profile version columns; avoid noisy 400s.
+        const canUseProfileVersioning =
+          hasColumn('description') &&
+          hasColumn('website') &&
+          hasColumn('email') &&
+          hasColumn('min_price') &&
+          hasColumn('max_price') &&
+          hasColumn('plan');
 
-        if (!profileStateError && Array.isArray(profileState) && profileState.length > 0) {
-          const row = profileState[0] as any;
-          const payload = (row?.payload || {}) as Record<string, any>;
-          setVersioningEnabled(true);
-          setDraftVersionNo(typeof row?.draft_version_no === 'number' ? row.draft_version_no : null);
-          setPublishedVersionNo(typeof row?.published_version_no === 'number' ? row.published_version_no : null);
+        if (canUseProfileVersioning) {
+          const { data: profileState, error: profileStateError } = await supabase
+            .rpc('get_operator_facility_profile_state', { p_facility_id: id });
 
-          setFormData({
-            name: payload.name ?? nextFormData.name,
-            description: payload.description ?? nextFormData.description,
-            phone: payload.phone ?? nextFormData.phone,
-            website: payload.website ?? nextFormData.website,
-            email: payload.email ?? nextFormData.email,
-            address_line1: payload.address_line1 ?? nextFormData.address_line1,
-            city: payload.city ?? nextFormData.city,
-            state: payload.state ?? nextFormData.state,
-            postal_code: payload.postal_code ?? nextFormData.postal_code,
-            min_price: payload.min_price !== null && payload.min_price !== undefined ? String(payload.min_price) : nextFormData.min_price,
-            max_price: payload.max_price !== null && payload.max_price !== undefined ? String(payload.max_price) : nextFormData.max_price,
-            plan: payload.plan ?? nextFormData.plan
-          });
+          if (!profileStateError && Array.isArray(profileState) && profileState.length > 0) {
+            const row = profileState[0] as any;
+            const payload = (row?.payload || {}) as Record<string, any>;
+            setVersioningEnabled(true);
+            setDraftVersionNo(typeof row?.draft_version_no === 'number' ? row.draft_version_no : null);
+            setPublishedVersionNo(typeof row?.published_version_no === 'number' ? row.published_version_no : null);
+
+            setFormData({
+              name: payload.name ?? nextFormData.name,
+              description: payload.description ?? nextFormData.description,
+              phone: payload.phone ?? nextFormData.phone,
+              website: payload.website ?? nextFormData.website,
+              email: payload.email ?? nextFormData.email,
+              address_line1: payload.address_line1 ?? nextFormData.address_line1,
+              city: payload.city ?? nextFormData.city,
+              state: payload.state ?? nextFormData.state,
+              postal_code: payload.postal_code ?? nextFormData.postal_code,
+              min_price: payload.min_price !== null && payload.min_price !== undefined ? String(payload.min_price) : nextFormData.min_price,
+              max_price: payload.max_price !== null && payload.max_price !== undefined ? String(payload.max_price) : nextFormData.max_price,
+              plan: payload.plan ?? nextFormData.plan
+            });
+          }
         }
 
         await fetchCounts();
@@ -203,6 +218,20 @@ export const EditFacility: React.FC = () => {
     setSuccess(null);
 
     try {
+      const hasColumn = (column: string) => facilityColumnsRef.current.has(column);
+      const updatePayload: Record<string, any> = {
+        name: formData.name,
+        phone: formData.phone,
+        updated_at: new Date().toISOString(),
+      };
+
+      if (hasColumn('description')) updatePayload.description = formData.description;
+      if (hasColumn('website')) updatePayload.website = formData.website || null;
+      if (hasColumn('website_url')) updatePayload.website_url = formData.website || null;
+      if (hasColumn('email')) updatePayload.email = formData.email || null;
+      if (hasColumn('min_price')) updatePayload.min_price = formData.min_price ? parseFloat(formData.min_price) : null;
+      if (hasColumn('max_price')) updatePayload.max_price = formData.max_price ? parseFloat(formData.max_price) : null;
+
       trackActivationEvent(
         'autosave_triggered',
         {
@@ -217,16 +246,7 @@ export const EditFacility: React.FC = () => {
       );
       const { error } = await supabase
         .from('facilities')
-        .update({
-          name: formData.name,
-          description: formData.description,
-          phone: formData.phone,
-          website: formData.website,
-          email: formData.email,
-          min_price: formData.min_price ? parseFloat(formData.min_price) : null,
-          max_price: formData.max_price ? parseFloat(formData.max_price) : null,
-          updated_at: new Date().toISOString()
-        })
+        .update(updatePayload)
         .eq('id', id);
 
       if (error) throw error;
