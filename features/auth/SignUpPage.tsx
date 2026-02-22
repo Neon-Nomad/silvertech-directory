@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { supabase } from '@/src/lib/supabase';
 import { Button } from '@/components/ui/Button';
@@ -13,10 +13,20 @@ export const SignUpPage: React.FC = () => {
   const redirectToParam = searchParams.get('redirect_to') || '/';
   const redirectTo = redirectToParam.startsWith('/') ? redirectToParam : '/';
   const loginPath = redirectTo !== '/' ? `/login?redirect_to=${encodeURIComponent(redirectTo)}` : '/login';
+  const operatorSignUpPath = `/operator/signup?redirect_to=${encodeURIComponent(redirectTo)}`;
+  const operatorIntent =
+    redirectTo === '/claim-business' || redirectTo.startsWith('/claim/') || redirectTo.startsWith('/dashboard');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!operatorIntent) return;
+    navigate(operatorSignUpPath, { replace: true });
+  }, [navigate, operatorIntent, operatorSignUpPath]);
+
+  if (operatorIntent) return null;
 
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault();

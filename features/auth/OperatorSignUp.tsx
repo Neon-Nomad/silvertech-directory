@@ -5,6 +5,19 @@ import { supabase } from '@/src/lib/supabase';
 import { Button } from '@/components/ui/Button';
 import { Helmet } from 'react-helmet-async';
 
+const buildOperatorEmailRedirect = (redirectTo: string): string | undefined => {
+  if (typeof window === 'undefined') return undefined;
+
+  const basePath = import.meta.env.BASE_URL || '/';
+  const normalizedBase = basePath.startsWith('/') ? basePath : `/${basePath}`;
+  const trimmedBase = normalizedBase.endsWith('/') ? normalizedBase.slice(0, -1) : normalizedBase;
+  const loginPath = `${trimmedBase}/operator/login`;
+
+  const url = new URL(loginPath || '/operator/login', window.location.origin);
+  url.searchParams.set('redirect_to', redirectTo);
+  return url.toString();
+};
+
 const OperatorSignUp: React.FC = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
@@ -24,14 +37,21 @@ const OperatorSignUp: React.FC = () => {
     setError(null);
 
     try {
+      const emailRedirectTo = buildOperatorEmailRedirect(redirectTo);
+      const signUpOptions: { data: { role: 'operator' }; emailRedirectTo?: string } = {
+        data: {
+          role: 'operator',
+        },
+      };
+
+      if (emailRedirectTo) {
+        signUpOptions.emailRedirectTo = emailRedirectTo;
+      }
+
       const { data, error: signUpError } = await supabase.auth.signUp({
         email,
         password,
-        options: {
-          data: {
-            role: 'operator',
-          },
-        },
+        options: signUpOptions,
       });
 
       if (signUpError) throw signUpError;

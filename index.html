@@ -60,12 +60,21 @@
     if (location.hostname !== 'localhost' && !window.__adsPageLevelInitialized) {
       const initAds = () => {
         if (window.__adsPageLevelInitialized) return;
-        (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-8660191869695450",
-          enable_page_level_ads: true,
-          overlays: { bottom: true }
-        });
-        window.__adsPageLevelInitialized = true;
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-8660191869695450",
+            enable_page_level_ads: true,
+            overlays: { bottom: true }
+          });
+          window.__adsPageLevelInitialized = true;
+        } catch (err) {
+          const message = String(err?.message || '');
+          if (message.includes("Only one 'enable_page_level_ads'")) {
+            window.__adsPageLevelInitialized = true;
+          } else {
+            console.warn('AdSense initialization failed:', err);
+          }
+        }
       };
 
       const scheduleInit = () => {

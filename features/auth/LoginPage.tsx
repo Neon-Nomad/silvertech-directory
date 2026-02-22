@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { supabase } from '@/src/lib/supabase';
 import { Button } from '@/components/ui/Button';
@@ -12,10 +12,20 @@ export const LoginPage: React.FC = () => {
   const redirectToParam = searchParams.get('redirect_to') || '/';
   const redirectTo = redirectToParam.startsWith('/') ? redirectToParam : '/';
   const signUpPath = redirectTo !== '/' ? `/signup?redirect_to=${encodeURIComponent(redirectTo)}` : '/signup';
+  const operatorLoginPath = `/operator/login?redirect_to=${encodeURIComponent(redirectTo)}`;
+  const operatorIntent =
+    redirectTo === '/claim-business' || redirectTo.startsWith('/claim/') || redirectTo.startsWith('/dashboard');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!operatorIntent) return;
+    navigate(operatorLoginPath, { replace: true });
+  }, [navigate, operatorIntent, operatorLoginPath]);
+
+  if (operatorIntent) return null;
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -62,7 +72,7 @@ export const LoginPage: React.FC = () => {
         </p>
         <p className="mt-1 text-center text-sm text-charcoal/70">
           Are you a facility operator?{' '}
-          <Link to={`/operator/login?redirect_to=${encodeURIComponent(redirectTo)}`} className="font-medium text-primary-600 hover:text-primary-500">
+          <Link to={operatorLoginPath} className="font-medium text-primary-600 hover:text-primary-500">
             Facility sign in
           </Link>
         </p>
