@@ -10,6 +10,7 @@ import { FacilityCareTypesEditor } from './FacilityCareTypesEditor';
 import { ProfileCompleteness, getProfileCompleteness } from './ProfileCompleteness';
 import { trackActivationEvent } from '@/src/config/activationEvents';
 import { getActivationSessionId } from '@/src/utils/activationSession';
+import { useOperatorPlan } from '@/src/hooks/useOperatorPlan';
 
 const getFirstSaveAckKey = (sessionId: string) => `std_operator_first_save_ack_${sessionId}`;
 
@@ -17,6 +18,7 @@ export const EditFacility: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { user, loading: authLoading } = useAuth();
+  const { isPremium, loading: planLoading } = useOperatorPlan();
 
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -170,7 +172,7 @@ export const EditFacility: React.FC = () => {
           operator_id: user.id,
           facility_id: id,
           session_id: getActivationSessionId(),
-          plan_tier: formData.plan === 'basic' ? 'free' : 'premium',
+          plan_tier: isPremium ? 'premium' : 'free',
           activation_score: 0,
           source_screen: 'edit_facility',
         },
@@ -207,7 +209,7 @@ export const EditFacility: React.FC = () => {
           operator_id: user.id,
           facility_id: id,
           session_id: getActivationSessionId(),
-          plan_tier: formData.plan === 'basic' ? 'free' : 'premium',
+          plan_tier: isPremium ? 'premium' : 'free',
           activation_score: 0,
           source_screen: 'edit_facility',
         },
@@ -259,7 +261,7 @@ export const EditFacility: React.FC = () => {
           operator_id: user.id,
           facility_id: id,
           session_id: getActivationSessionId(),
-          plan_tier: formData.plan === 'basic' ? 'free' : 'premium',
+          plan_tier: isPremium ? 'premium' : 'free',
           activation_score: 0,
           source_screen: 'edit_facility',
         },
@@ -304,7 +306,7 @@ export const EditFacility: React.FC = () => {
           operator_id: user.id,
           facility_id: id,
           session_id: getActivationSessionId(),
-          plan_tier: formData.plan === 'basic' ? 'free' : 'premium',
+          plan_tier: isPremium ? 'premium' : 'free',
           activation_score: 0,
           source_screen: 'edit_facility',
         },
@@ -485,7 +487,7 @@ export const EditFacility: React.FC = () => {
 
             {/* Photos */}
             <div onClick={fetchCounts} onFocusCapture={fetchCounts} className="relative">
-              {formData.plan === 'basic' && (
+              {!planLoading && !isPremium && (
                 <div className="absolute inset-0 bg-white/60 backdrop-blur-[1px] z-10 flex flex-col items-center justify-center border border-slate-200 rounded-xl">
                   <div className="bg-white p-6 rounded-xl shadow-lg text-center max-w-sm border border-slate-100">
                     <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -496,7 +498,7 @@ export const EditFacility: React.FC = () => {
                       Upgrade to a Featured Listing to add photos, gain placement priority, and more.
                     </p>
                     <Button
-                      onClick={() => navigate('/dashboard')}
+                      onClick={() => navigate('/dashboard/billing?selected_plan=featured')}
                       className="w-full bg-primary-600 hover:bg-primary-700 text-white"
                     >
                       Upgrade for $99/mo
