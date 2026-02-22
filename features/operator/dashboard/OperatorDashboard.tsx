@@ -31,6 +31,8 @@ const OperatorDashboard: React.FC = () => {
   const [userProfile, setUserProfile] = useState<any>(null);
   const [ownedFacilityCount, setOwnedFacilityCount] = useState<number | null>(null);
   const [ownedFacilityCountLoading, setOwnedFacilityCountLoading] = useState(false);
+  const [hasPendingClaim, setHasPendingClaim] = useState(false);
+  const [pendingClaimLoading, setPendingClaimLoading] = useState(false);
   const [billingUiError, setBillingUiError] = useState<BillingUiError | null>(null);
   const [showContextHelp, setShowContextHelp] = useState(false);
   const [showPlanPeek, setShowPlanPeek] = useState(false);
@@ -188,11 +190,52 @@ const OperatorDashboard: React.FC = () => {
   }, [user]);
 
   useEffect(() => {
-    if (!user || ownedFacilityCountLoading) return;
-    if (ownedFacilityCount === 0 && activeTab === 'overview') {
+    let mounted = true;
+    const loadPendingClaimState = async () => {
+      if (!user) {
+        if (mounted) {
+          setHasPendingClaim(false);
+          setPendingClaimLoading(false);
+        }
+        return;
+      }
+
+      setPendingClaimLoading(true);
+      try {
+        const { count, error } = await supabase
+          .from('facility_claims')
+          .select('id', { head: true, count: 'exact' })
+          .eq('user_id', user.id)
+          .eq('status', 'pending');
+        if (error) throw error;
+        if (mounted) setHasPendingClaim((count ?? 0) > 0);
+      } catch (err) {
+        console.error('Failed to load pending claim state:', err);
+        if (mounted) setHasPendingClaim(false);
+      } finally {
+        if (mounted) setPendingClaimLoading(false);
+      }
+    };
+
+    loadPendingClaimState();
+    return () => {
+      mounted = false;
+    };
+  }, [user]);
+
+  useEffect(() => {
+    if (!user || ownedFacilityCountLoading || pendingClaimLoading) return;
+    if (ownedFacilityCount === 0 && !hasPendingClaim && activeTab === 'overview') {
+      const oncePerSessionKey = `std_claim_onboarding_redirected_${user.id}`;
+      if (typeof window !== 'undefined' && window.sessionStorage.getItem(oncePerSessionKey) === '1') {
+        return;
+      }
+      if (typeof window !== 'undefined') {
+        window.sessionStorage.setItem(oncePerSessionKey, '1');
+      }
       navigate('/dashboard/listings?onboarding=claim', { replace: true });
     }
-  }, [activeTab, navigate, ownedFacilityCount, ownedFacilityCountLoading, user]);
+  }, [activeTab, hasPendingClaim, navigate, ownedFacilityCount, ownedFacilityCountLoading, pendingClaimLoading, user]);
 
   const fetchBillingInfo = async () => {
     try {
