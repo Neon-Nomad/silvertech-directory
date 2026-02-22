@@ -24,7 +24,7 @@ const OperatorSignUp: React.FC = () => {
     setError(null);
 
     try {
-      const { error: signUpError } = await supabase.auth.signUp({
+      const { data, error: signUpError } = await supabase.auth.signUp({
         email,
         password,
         options: {
@@ -36,8 +36,19 @@ const OperatorSignUp: React.FC = () => {
 
       if (signUpError) throw signUpError;
 
-      // IMPORTANT: Disable Supabase's default email verification for this to work.
-      // Call the edge function to send a registration email through Brevo
+      const createdUser = data.user;
+      if (!createdUser) {
+        throw new Error('Unable to create operator account right now. Please try again.');
+      }
+
+      const hasIdentity = !Array.isArray(createdUser.identities) || createdUser.identities.length > 0;
+      if (!hasIdentity) {
+        throw new Error(
+          'This email already has an account. Use a different email for operator access, or sign in and request an account role upgrade.',
+        );
+      }
+
+      // Send welcome email via edge function.
       const { error: functionError } = await supabase.functions.invoke('send-registration-email', {
         body: { email },
       });
@@ -47,10 +58,20 @@ const OperatorSignUp: React.FC = () => {
         // We can still proceed, but we should log this error
       }
 
-      alert('Operator account created. Please check your email to get started.');
+      const needsEmailConfirmation = !data.session && !createdUser.email_confirmed_at;
+      alert(
+        needsEmailConfirmation
+          ? 'Operator account created. Confirm your email using the Supabase verification email before signing in.'
+          : 'Operator account created. You can now sign in.',
+      );
       navigate(loginPath, { replace: true });
     } catch (err: any) {
-      setError(err.message || 'Failed to create operator account');
+      const message = String(err?.message || 'Failed to create operator account');
+      if (message.toLowerCase().includes('email not confirmed')) {
+        setError('Email confirmation is pending. Please confirm your email first, then sign in.');
+      } else {
+        setError(message);
+      }
     } finally {
       setLoading(false);
     }

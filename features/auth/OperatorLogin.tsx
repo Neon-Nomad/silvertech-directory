@@ -65,7 +65,12 @@ const OperatorLogin: React.FC = () => {
       });
       if (error) throw error;
     } catch (err: any) {
-      setError(err.message);
+      const message = String(err?.message || 'Failed to sign in');
+      if (message.toLowerCase().includes('email not confirmed')) {
+        setError('Your account exists but email confirmation is pending. Open the Supabase verification email first.');
+      } else {
+        setError(message);
+      }
       setIsLoading(false);
     }
   };

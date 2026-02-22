@@ -24,15 +24,22 @@ export const SignUpPage: React.FC = () => {
     setError(null);
 
     try {
-      const { error } = await supabase.auth.signUp({
+      const { data, error } = await supabase.auth.signUp({
         email,
         password,
       });
 
       if (error) throw error;
-      
-      // IMPORTANT: Disable Supabase's default email verification for this to work.
-      // Call the edge function to send a registration email through Brevo
+      const createdUser = data.user;
+      if (!createdUser) {
+        throw new Error('Unable to create account right now. Please try again.');
+      }
+
+      const hasIdentity = !Array.isArray(createdUser.identities) || createdUser.identities.length > 0;
+      if (!hasIdentity) {
+        throw new Error('An account with this email already exists. Please sign in instead.');
+      }
+
       const { error: functionError } = await supabase.functions.invoke('send-registration-email', {
         body: { email },
       });
@@ -43,10 +50,20 @@ export const SignUpPage: React.FC = () => {
       }
 
 
-      alert('Account created! Please check your email to get started.');
+      const needsEmailConfirmation = !data.session && !createdUser.email_confirmed_at;
+      alert(
+        needsEmailConfirmation
+          ? 'Account created. Please confirm your email via the Supabase verification email before signing in.'
+          : 'Account created. You can now sign in.',
+      );
       navigate(loginPath, { replace: true });
     } catch (err: any) {
-      setError(err.message || 'Failed to sign up');
+      const message = String(err?.message || 'Failed to sign up');
+      if (message.toLowerCase().includes('email not confirmed')) {
+        setError('Your account exists but email confirmation is still pending. Please confirm your email first.');
+      } else {
+        setError(message);
+      }
     } finally {
       setLoading(false);
     }

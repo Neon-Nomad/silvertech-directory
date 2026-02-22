@@ -1,5 +1,4 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
-import * as Brevo from "https://esm.sh/@getbrevo/brevo@2.0.0"
 
 const corsHeaders = {
     "Access-Control-Allow-Origin": "*",
@@ -7,6 +6,8 @@ const corsHeaders = {
 }
 
 const brevoApiKey = Deno.env.get("BREVO_API_KEY");
+const brevoSenderEmail = Deno.env.get("BREVO_SENDER_EMAIL") || "andrew@silvertechdirectory.com";
+const brevoSenderName = Deno.env.get("BREVO_SENDER_NAME") || "SilverTech Directory";
 
 serve(async (req) => {
     if (req.method === "OPTIONS") {
@@ -24,15 +25,11 @@ serve(async (req) => {
             throw new Error("Missing email in request body");
         }
 
-        const api = new Brevo.TransactionalEmailsApi();
-        api.setApiKey(Brevo.TransactionalEmailsApiApiKeys.apiKey, brevoApiKey);
-
-
-        const sendSmtpEmail = new Brevo.SendSmtpEmail();
-        sendSmtpEmail.sender = { name: "SilverTech Directory", email: "noreply@silvertechdirectory.com" };
-        sendSmtpEmail.to = [{ email }];
-        sendSmtpEmail.subject = "Welcome to SilverTech Directory!";
-        sendSmtpEmail.htmlContent = `
+        const payload = {
+            sender: { name: brevoSenderName, email: brevoSenderEmail },
+            to: [{ email }],
+            subject: "Welcome to SilverTech Directory!",
+            htmlContent: `
             <html>
                 <body>
                     <h1>Welcome to SilverTech Directory!</h1>
@@ -41,15 +38,28 @@ serve(async (req) => {
                     <a href="https://silvertechdirectory.com/login">Login Now</a>
                 </body>
             </html>
-        `;
-        sendSmtpEmail.textContent = `
+        `,
+            textContent: `
             Welcome to SilverTech Directory!
             Thank you for signing up. We're excited to have you on board.
             You can now log in to your account by visiting https://silvertechdirectory.com/login
-        `;
-        
+        `,
+        };
 
-        await api.sendTransacEmail(sendSmtpEmail);
+        const brevoResponse = await fetch("https://api.brevo.com/v3/smtp/email", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                "api-key": brevoApiKey,
+            },
+            body: JSON.stringify(payload),
+        });
+
+        if (!brevoResponse.ok) {
+            const errorText = await brevoResponse.text();
+            throw new Error(`Brevo API request failed (${brevoResponse.status}): ${errorText}`);
+        }
 
         return new Response(
             JSON.stringify({ message: "Registration email sent successfully." }),

@@ -31,7 +31,12 @@ export const LoginPage: React.FC = () => {
       if (error) throw error;
       navigate(redirectTo, { replace: true });
     } catch (err: any) {
-      setError(err.message || 'Failed to sign in');
+      const message = String(err?.message || 'Failed to sign in');
+      if (message.toLowerCase().includes('email not confirmed')) {
+        setError('Your account exists but email confirmation is pending. Please confirm your email first.');
+      } else {
+        setError(message);
+      }
     } finally {
       setLoading(false);
     }
