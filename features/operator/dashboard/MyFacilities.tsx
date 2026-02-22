@@ -7,6 +7,15 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 
 type FilterStatus = 'all' | 'verified' | 'pending';
 type SortMode = 'updated_desc' | 'name_asc';
+type ClaimReviewItem = {
+  claim_id: string;
+  facility_id: string;
+  facility_name: string;
+  claimant_user_id: string;
+  business_email: string | null;
+  phone: string | null;
+  created_at: string;
+};
 
 const getStatus = (facility: any): FilterStatus => {
   if (facility.owner_id && facility.owner_id === facility.assigned_plan_owner_id) return 'verified';
@@ -39,6 +48,11 @@ export const MyFacilities: React.FC = () => {
   const [statusFilter, setStatusFilter] = useState<FilterStatus>('all');
   const [sortMode, setSortMode] = useState<SortMode>('updated_desc');
   const [pendingClaimsCount, setPendingClaimsCount] = useState(0);
+  const [reviewClaims, setReviewClaims] = useState<ClaimReviewItem[]>([]);
+  const [reviewerEnabled, setReviewerEnabled] = useState(false);
+  const [reviewerLoading, setReviewerLoading] = useState(false);
+  const [reviewError, setReviewError] = useState<string | null>(null);
+  const [reviewBusyClaimId, setReviewBusyClaimId] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchFacilities = async () => {
@@ -60,6 +74,57 @@ export const MyFacilities: React.FC = () => {
 
     fetchFacilities();
   }, [user]);
+
+  useEffect(() => {
+    const fetchReviewQueue = async () => {
+      if (!user) {
+        setReviewerEnabled(false);
+        setReviewClaims([]);
+        return;
+      }
+
+      setReviewerLoading(true);
+      setReviewError(null);
+      try {
+        const { data, error } = await supabase.rpc('get_pending_facility_claims_for_review');
+        if (error) throw error;
+        setReviewerEnabled(true);
+        setReviewClaims((data || []) as ClaimReviewItem[]);
+      } catch (err: any) {
+        const message = String(err?.message || '');
+        if (message.toLowerCase().includes('not authorized')) {
+          setReviewerEnabled(false);
+          setReviewClaims([]);
+        } else {
+          setReviewerEnabled(true);
+          setReviewError('Failed to load claim review queue.');
+        }
+      } finally {
+        setReviewerLoading(false);
+      }
+    };
+
+    fetchReviewQueue();
+  }, [user]);
+
+  const handleReviewClaim = async (claimId: string, decision: 'approved' | 'rejected') => {
+    setReviewBusyClaimId(claimId);
+    setReviewError(null);
+    try {
+      const { error } = await supabase.rpc('review_facility_claim', {
+        p_claim_id: claimId,
+        p_decision: decision,
+      });
+
+      if (error) throw error;
+      setReviewClaims((prev) => prev.filter((claim) => claim.claim_id !== claimId));
+    } catch (err) {
+      console.error('Error reviewing claim:', err);
+      setReviewError('Unable to update claim status right now.');
+    } finally {
+      setReviewBusyClaimId(null);
+    }
+  };
 
   useEffect(() => {
     const fetchPendingClaimsCount = async () => {
@@ -125,6 +190,70 @@ export const MyFacilities: React.FC = () => {
           Find Facility To Claim
         </Button>
       </div>
+
+      {reviewerEnabled && (
+        <div className="rounded-xl border border-slate-200 bg-white p-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <h3 className="text-sm font-semibold text-slate-900">Claim Review Queue</h3>
+              <p className="mt-1 text-sm text-slate-600">
+                Approve or reject pending facility ownership claims.
+              </p>
+            </div>
+            <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
+              {reviewClaims.length} pending
+            </span>
+          </div>
+          {reviewerLoading ? (
+            <p className="mt-4 text-sm text-slate-500">Loading review queue...</p>
+          ) : reviewClaims.length === 0 ? (
+            <p className="mt-4 text-sm text-slate-500">No pending claims right now.</p>
+          ) : (
+            <div className="mt-4 space-y-3">
+              {reviewClaims.map((claim) => (
+                <div
+                  key={claim.claim_id}
+                  className="rounded-lg border border-slate-200 bg-slate-50 p-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+                >
+                  <div>
+                    <p className="text-sm font-semibold text-slate-900">{claim.facility_name}</p>
+                    <p className="text-xs text-slate-600">
+                      {claim.business_email || 'No business email provided'} {claim.phone ? `| ${claim.phone}` : ''}
+                    </p>
+                    <p className="text-xs text-slate-500">
+                      Submitted {new Date(claim.created_at).toLocaleString()}
+                    </p>
+                  </div>
+                  <div className="flex gap-2">
+                    <Button
+                      size="sm"
+                      className="min-h-11"
+                      disabled={reviewBusyClaimId === claim.claim_id}
+                      onClick={() => handleReviewClaim(claim.claim_id, 'approved')}
+                    >
+                      Approve
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="min-h-11"
+                      disabled={reviewBusyClaimId === claim.claim_id}
+                      onClick={() => handleReviewClaim(claim.claim_id, 'rejected')}
+                    >
+                      Reject
+                    </Button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+          {reviewError && (
+            <p className="mt-3 text-sm text-red-700" role="alert">
+              {reviewError}
+            </p>
+          )}
+        </div>
+      )}
 
       {(onboardingPendingClaim || pendingClaimsCount > 0) && (
         <div className="rounded-xl border border-blue-200 bg-blue-50 p-4">

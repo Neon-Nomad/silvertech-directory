@@ -74,6 +74,15 @@ vi.mock('@/src/lib/supabase', () => ({
         };
       },
     }),
+    rpc: async (fn: string) => {
+      if (fn === 'get_pending_facility_claims_for_review') {
+        return { data: null, error: { message: 'Not authorized to review claims' } };
+      }
+      if (fn === 'review_facility_claim') {
+        return { data: null, error: null };
+      }
+      return { data: null, error: null };
+    },
   },
 }));
 
