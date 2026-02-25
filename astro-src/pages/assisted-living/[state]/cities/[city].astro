@@ -1,6 +1,7 @@
 ---
 import Base from '../../../../layouts/Base.astro';
 import { getCityIndex, getCityFacilities } from '../../../../lib/data';
+import { CITY_COORDINATES } from '../../../../../src/data/city_coordinates';
 
 export async function getStaticPaths() {
   const cities = getCityIndex();
@@ -13,13 +14,52 @@ export async function getStaticPaths() {
 const { stateSlug, citySlug, cityName, stateName, stateAbbr } = Astro.props;
 const facilities = getCityFacilities(stateSlug, citySlug, 50);
 const featuredFacilities = facilities.slice(0, 12);
+const toRad = (degrees: number) => (degrees * Math.PI) / 180;
+const distanceKm = (a: [number, number], b: [number, number]) => {
+  const earthRadiusKm = 6371;
+  const dLat = toRad(b[0] - a[0]);
+  const dLng = toRad(b[1] - a[1]);
+  const lat1 = toRad(a[0]);
+  const lat2 = toRad(b[0]);
+
+  const sinDLat = Math.sin(dLat / 2);
+  const sinDLng = Math.sin(dLng / 2);
+  const h = sinDLat * sinDLat + Math.cos(lat1) * Math.cos(lat2) * sinDLng * sinDLng;
+  const c = 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
+  return earthRadiusKm * c;
+};
+
+const currentCoord = CITY_COORDINATES[citySlug];
 const relatedCities = getCityIndex()
   .filter((city) => city.stateSlug === stateSlug && city.citySlug !== citySlug)
-  .slice(0, 9);
+  .map((city) => {
+    const candidateCoord = CITY_COORDINATES[city.citySlug];
+    const distance = currentCoord && candidateCoord ? distanceKm(currentCoord, candidateCoord) : null;
+    return { ...city, distanceKm: distance };
+  })
+  .sort((a, b) => {
+    if (a.distanceKm !== null && b.distanceKm !== null) return a.distanceKm - b.distanceKm;
+    if (a.distanceKm !== null) return -1;
+    if (b.distanceKm !== null) return 1;
+    return a.cityName.localeCompare(b.cityName);
+  })
+  .slice(0, 5);
 const cityKey = `${stateSlug}/${citySlug}`;
 
-const title = `Assisted Living in ${cityName}, ${stateAbbr} | SilverTech Directory`;
-const description = `Compare assisted living and memory care facilities in ${cityName}, ${stateName}. View licensed communities, contact details, and transparent listings.`;
+const cityKeywordTargets = [
+  `senior care in ${cityName}, ${stateAbbr}`,
+  `senior living in ${cityName}, ${stateAbbr}`,
+  `assisted living in ${cityName}, ${stateAbbr}`,
+  `memory care in ${cityName}, ${stateAbbr}`,
+  `nursing homes in ${cityName}, ${stateAbbr}`,
+  `independent living in ${cityName}, ${stateAbbr}`,
+  `assisted living cost in ${cityName}, ${stateAbbr}`,
+  `memory care cost in ${cityName}, ${stateAbbr}`
+];
+
+const title = `Senior Care in ${cityName}, ${stateAbbr} | Assisted Living, Memory Care & Nursing Homes`;
+const description = `Compare senior care in ${cityName}, ${stateName}, including assisted living, memory care, nursing homes, and independent living. View licensed communities and transparent listings.`;
+const keywords = cityKeywordTargets.join(', ');
 const canonical = `https://silvertechdirectory.com/assisted-living/${stateSlug}/cities/${citySlug}/`;
 const searchHref = `/search?state=${encodeURIComponent(stateAbbr)}&city=${encodeURIComponent(cityName)}`;
 const isMemoryCareFacility = (facility: { name?: string; facility_type?: string }) => {
@@ -28,6 +68,45 @@ const isMemoryCareFacility = (facility: { name?: string; facility_type?: string 
 };
 const memoryCareFacilityCount = facilities.filter((facility) => isMemoryCareFacility(facility)).length;
 const shouldShowDecisionGuides = memoryCareFacilityCount >= 3;
+
+const normalizeCareType = (value?: string) => {
+  const raw = (value || '').trim().toLowerCase();
+  if (!raw) return 'assisted living';
+  if (/memory|dementia|alzheimer/.test(raw)) return 'memory care';
+  if (/nursing|skilled|snf/.test(raw)) return 'nursing home care';
+  if (/independent/.test(raw)) return 'independent living';
+  if (/respite/.test(raw)) return 'respite care';
+  return raw.replace(/[_-]+/g, ' ');
+};
+
+const careTypeCounts = new Map<string, number>();
+const postalCodeCounts = new Map<string, number>();
+for (const facility of facilities) {
+  const careType = normalizeCareType(facility.facility_type || facility.type);
+  careTypeCounts.set(careType, (careTypeCounts.get(careType) || 0) + 1);
+
+  const postal = (facility.postal_code || '').trim().slice(0, 5);
+  if (postal) postalCodeCounts.set(postal, (postalCodeCounts.get(postal) || 0) + 1);
+}
+
+const topCareTypes = Array.from(careTypeCounts.entries())
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 4);
+const topCareTypeText = topCareTypes.map(([type, count]) => `${type} (${count})`).join(', ') || 'assisted living';
+
+const topPostalCodes = Array.from(postalCodeCounts.entries())
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 3)
+  .map(([postal]) => postal);
+const zipCoverageText = topPostalCodes.length > 0 ? topPostalCodes.join(', ') : `${cityName} area`;
+
+const phoneCoveragePct = facilities.length
+  ? Math.round((facilities.filter((facility) => Boolean(facility.phone)).length / facilities.length) * 100)
+  : 0;
+const websiteCoveragePct = facilities.length
+  ? Math.round((facilities.filter((facility) => Boolean(facility.website_url)).length / facilities.length) * 100)
+  : 0;
+
 const decisionGuideLinks = [
   {
     href: '/guides/guilt-about-placing-parent-in-memory-care/',
@@ -142,6 +221,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   'name': title,
   'description': description,
+  'keywords': cityKeywordTargets,
   'url': canonical,
   'isPartOf': {
     '@type': 'WebSite',
@@ -195,11 +275,20 @@ const faqSchema = {
 };
 ---
 <Base title={title} description={description} canonical={canonical}>
-  <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)}></script>
-  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
-  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+  <meta slot="head" name="keywords" content={keywords} />
   <section class="container" style="padding: 2rem 1.5rem;">
+    <h1 class="sr-only">Senior Care in {cityName}, {stateAbbr}</h1>
+    <div class="crawl-priority-signals">
+      <h2>Local Data Signals</h2>
+      <p class="decision-copy">
+        Real listing-level distribution for {cityName}: {topCareTypeText}. ZIP concentration focus: {zipCoverageText}.
+      </p>
+      <ul class="simple-list compact">
+        <li><strong>Facilities indexed:</strong> {facilityCountText}</li>
+        <li><strong>Listings with phone:</strong> {phoneCoveragePct}%</li>
+        <li><strong>Listings with website:</strong> {websiteCoveragePct}%</li>
+      </ul>
+    </div>
     <nav aria-label="Breadcrumb" class="breadcrumbs">
       <a href="/">Home</a>
       <span>/</span>
@@ -222,9 +311,9 @@ const faqSchema = {
       </picture>
       <div class="city-hero-content">
         <p class="eyebrow">City Licensing Snapshot</p>
-        <h1>{cityName}, {stateAbbr} Assisted Living Directory</h1>
+        <p class="hero-title">Senior Care in {cityName}, {stateAbbr}</p>
         <p>
-          Compare licensed communities, open facility profiles, and evaluate nearby options in {stateName}.
+          Compare assisted living, memory care, nursing homes, and independent living options with licensed community profiles and nearby alternatives in {stateName}.
         </p>
         <div class="hero-stats">
           <span><strong>{facilityCountText}</strong> city facilities indexed</span>
@@ -253,6 +342,11 @@ const faqSchema = {
         <h2>Featured Licensed Facilities in {cityName}</h2>
         <a href={searchHref}>View all city results</a>
       </div>
+      <p class="decision-copy">
+        Families searching for <strong>senior care in {cityName}</strong> can use this page to compare
+        <strong> assisted living in {cityName}</strong>, <strong>memory care in {cityName}</strong>,
+        and <strong>nursing homes in {cityName}</strong> in one place.
+      </p>
       {facilities.length === 0 ? (
         <p class="muted">No facilities found in this city yet. Check a nearby city or browse the state page.</p>
       ) : (
@@ -358,7 +452,43 @@ const faqSchema = {
     </div>
   </section>
 
+  <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+
   <style>
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .crawl-priority-signals {
+      margin-bottom: 1rem;
+      border: 1px solid #dbeafe;
+      border-radius: 10px;
+      padding: 0.8rem 0.9rem;
+      background: #eff6ff;
+    }
+    .crawl-priority-signals h2 {
+      margin: 0;
+      font-size: 1rem;
+    }
+    .simple-list.compact {
+      margin-top: 0.6rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.55rem;
+    }
+    .simple-list.compact li {
+      padding: 0.5rem 0.6rem;
+      font-size: 0.82rem;
+    }
     .breadcrumbs {
       display: flex;
       gap: 0.5rem;
@@ -405,10 +535,11 @@ const faqSchema = {
       margin: 0;
       font-weight: 700;
     }
-    .city-hero-content h1 {
+    .hero-title {
       font-size: clamp(1.8rem, 3vw, 2.5rem);
       margin: 0;
       line-height: 1.15;
+      font-weight: 800;
     }
     .city-hero-content p {
       margin: 0;
@@ -609,6 +740,9 @@ const faqSchema = {
       border-color: #facc15;
     }
     @media (max-width: 980px) {
+      .simple-list.compact {
+        grid-template-columns: 1fr;
+      }
       .city-layout {
         grid-template-columns: 1fr;
       }

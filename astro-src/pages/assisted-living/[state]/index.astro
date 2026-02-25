@@ -42,7 +42,49 @@ const facilityCountText = stateFacilities.length.toLocaleString();
 const cityCountText = cities.length.toLocaleString();
 const topCitiesCoverageText = featuredCities.length.toLocaleString();
 
+const normalizeCareType = (value?: string) => {
+  const raw = (value || '').trim().toLowerCase();
+  if (!raw) return 'assisted living';
+  if (/memory|dementia|alzheimer/.test(raw)) return 'memory care';
+  if (/nursing|skilled|snf/.test(raw)) return 'nursing home care';
+  if (/independent/.test(raw)) return 'independent living';
+  if (/respite/.test(raw)) return 'respite care';
+  return raw.replace(/[_-]+/g, ' ');
+};
+
+const careTypeCounts = new Map<string, number>();
+for (const facility of stateFacilities) {
+  const careType = normalizeCareType(facility.facility_type);
+  careTypeCounts.set(careType, (careTypeCounts.get(careType) || 0) + 1);
+}
+
+const topStateCareTypes = Array.from(careTypeCounts.entries())
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 5);
+const topStateCareTypeText = topStateCareTypes.map(([type, count]) => `${type} (${count})`).join(', ') || 'assisted living';
+
+const statePhoneCoveragePct = stateFacilities.length
+  ? Math.round((stateFacilities.filter((facility) => Boolean(facility.phone)).length / stateFacilities.length) * 100)
+  : 0;
+const stateWebsiteCoveragePct = stateFacilities.length
+  ? Math.round((stateFacilities.filter((facility) => Boolean(facility.website_url)).length / stateFacilities.length) * 100)
+  : 0;
+const topCitiesByInventory = cityCards
+  .slice(0, 5)
+  .map((city) => `${city.cityName} (${city.facilityCount})`)
+  .join(', ');
+
 const searchHref = `/search?state=${encodeURIComponent(stateAbbr)}`;
+const stateKeywordTargets = [
+  `senior care in ${stateName}`,
+  `senior living in ${stateName}`,
+  `assisted living in ${stateName}`,
+  `memory care in ${stateName}`,
+  `nursing homes in ${stateName}`,
+  `independent living in ${stateName}`,
+  `assisted living cost in ${stateName}`,
+  `memory care cost in ${stateName}`
+];
 const emotionalGuideLinks = [
   {
     href: '/guides/guilt-about-placing-parent-in-memory-care/',
@@ -58,14 +100,16 @@ const emotionalGuideLinks = [
   }
 ];
 
-const title = `Assisted Living in ${stateName} | Senior Living Directory`;
-const description = `Browse assisted living and memory care facilities in ${stateName}. Compare city listings, licensing resources, and transparent data.`;
+const title = `Senior Care in ${stateName} | Assisted Living, Memory Care & Nursing Homes`;
+const description = `Compare senior care in ${stateName}, including assisted living, memory care, nursing homes, and independent living. Browse licensed city listings and state resources.`;
+const keywords = stateKeywordTargets.join(', ');
 const canonical = `https://silvertechdirectory.com/assisted-living/${stateSlug}/`;
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   'name': title,
   'description': description,
+  'keywords': stateKeywordTargets,
   'url': canonical,
   'isPartOf': {
     '@type': 'WebSite',
@@ -126,11 +170,20 @@ const faqSchema = {
 };
 ---
 <Base title={title} description={description} canonical={canonical}>
-  <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)}></script>
-  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
-  <script type="application/ld+json" set:html={JSON.stringify(cityListSchema)}></script>
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+  <meta slot="head" name="keywords" content={keywords} />
   <section class="container" style="padding: 2rem 1.5rem;">
+    <h1 class="sr-only">Senior Care in {stateName}</h1>
+    <div class="crawl-priority-signals">
+      <h2>Statewide Data Signals</h2>
+      <p class="support-copy">
+        Current listing descriptor mix in {stateName}: {topStateCareTypeText}. Top inventory markets: {topCitiesByInventory || 'N/A'}.
+      </p>
+      <ul class="simple-list compact">
+        <li><strong>Listings with phone:</strong> {statePhoneCoveragePct}%</li>
+        <li><strong>Listings with website:</strong> {stateWebsiteCoveragePct}%</li>
+        <li><strong>Facilities indexed:</strong> {facilityCountText}</li>
+      </ul>
+    </div>
     <nav aria-label="Breadcrumb" class="breadcrumbs">
       <a href="/">Home</a>
       <span>/</span>
@@ -151,9 +204,9 @@ const faqSchema = {
       </picture>
       <div class="state-hero-content">
         <p class="eyebrow">Statewide Assisted Living Index</p>
-        <h1>Assisted Living in {stateName}</h1>
+        <p class="hero-title">Senior Care in {stateName}</p>
         <p>
-          Explore city-level assisted living options, open verified facility profiles, and review state regulatory links.
+          Explore assisted living, memory care, nursing homes, and independent living options with verified facility profiles and state regulatory links.
         </p>
         <div class="hero-stats">
           <span><strong>{facilityCountText}</strong> facilities indexed</span>
@@ -182,6 +235,11 @@ const faqSchema = {
         <h2>Cities in {stateName}</h2>
         <a href={searchHref}>Search all {stateName} listings</a>
       </div>
+      <p class="support-copy">
+        Families searching for <strong>senior care in {stateName}</strong> use this page to compare
+        <strong> assisted living in {stateName}</strong>, <strong>memory care in {stateName}</strong>,
+        and <strong>nursing homes in {stateName}</strong> by city.
+      </p>
       {featuredCities.length === 0 ? (
         <p class="muted">No cities found yet for this state.</p>
       ) : (
@@ -196,6 +254,7 @@ const faqSchema = {
           ))}
         </ul>
       )}
+
     </div>
 
     <aside class="side-stack">
@@ -251,7 +310,43 @@ const faqSchema = {
     </div>
   </section>
 
+  <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(cityListSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+
   <style>
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .crawl-priority-signals {
+      margin-bottom: 1rem;
+      border: 1px solid #dbeafe;
+      border-radius: 10px;
+      padding: 0.8rem 0.9rem;
+      background: #eff6ff;
+    }
+    .crawl-priority-signals h2 {
+      margin: 0;
+      font-size: 1rem;
+    }
+    .simple-list.compact {
+      margin-top: 0.6rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.55rem;
+    }
+    .simple-list.compact li {
+      padding: 0.5rem 0.6rem;
+      font-size: 0.82rem;
+    }
     .breadcrumbs {
       display: flex;
       gap: 0.5rem;
@@ -298,10 +393,11 @@ const faqSchema = {
       margin: 0;
       font-weight: 700;
     }
-    .state-hero-content h1 {
+    .hero-title {
       font-size: clamp(1.8rem, 3vw, 2.5rem);
       margin: 0;
       line-height: 1.15;
+      font-weight: 800;
     }
     .state-hero-content p {
       margin: 0;
@@ -443,6 +539,9 @@ const faqSchema = {
       line-height: 1.5;
     }
     @media (max-width: 980px) {
+      .simple-list.compact {
+        grid-template-columns: 1fr;
+      }
       .state-layout {
         grid-template-columns: 1fr;
       }

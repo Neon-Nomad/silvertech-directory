@@ -1,8 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useLocation, useParams } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { Elements } from '@stripe/react-stripe-js';
-import { stripePromise } from '@/src/lib/stripe';
 import Navbar from '@/components/layout/Navbar';
 import { Home } from '@/features/family/landing/Home';
 import { ScrollToTop } from '@/components/utils/ScrollToTop';
@@ -276,22 +274,21 @@ function App() {
       <HelmetProvider>
         <AuthProvider>
           <ComparisonProvider>
-            <Elements stripe={stripePromise}>
-              <BrowserRouter basename={import.meta.env.BASE_URL} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
-                <a
-                  href="#main-content"
-                  className="fixed -left-[9999px] top-auto z-[100] h-px w-px overflow-hidden whitespace-nowrap focus:left-4 focus:top-4 focus:h-auto focus:w-auto focus:overflow-visible focus:bg-white focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded focus:shadow-md"
-                >
-                  Skip to main content
-                </a>
-                <ScrollToTop />
-                <GlobalSchema />
-                <div className="min-h-screen bg-white">
-                  <LocationPrompt />
-                  <Navbar />
-                  <main id="main-content">
-                    <Suspense fallback={routeFallback}>
-                      <Routes>
+            <BrowserRouter basename={import.meta.env.BASE_URL} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+              <a
+                href="#main-content"
+                className="fixed -left-[9999px] top-auto z-[100] h-px w-px overflow-hidden whitespace-nowrap focus:left-4 focus:top-4 focus:h-auto focus:w-auto focus:overflow-visible focus:bg-white focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded focus:shadow-md"
+              >
+                Skip to main content
+              </a>
+              <ScrollToTop />
+              <GlobalSchema />
+              <div className="min-h-screen bg-white">
+                <LocationPrompt />
+                <Navbar />
+                <main id="main-content">
+                  <Suspense fallback={routeFallback}>
+                    <Routes>
                       <Route path="/" element={<Home />} />
                       <Route path="/search" element={<DirectorySearch />} />
                       <Route path="/facility/:id" element={<FacilityDetails />} />
@@ -360,12 +357,11 @@ function App() {
                     <Route path="/honest-care" element={<HonestCarePage />} />
                     <Route path="/methodology" element={<MethodologyPage />} />
                         <Route path="/blog" element={<Blog />} />
-                      </Routes>
-                    </Suspense>
-                  </main>
-                </div>
-              </BrowserRouter>
-            </Elements>
+                    </Routes>
+                  </Suspense>
+                </main>
+              </div>
+            </BrowserRouter>
           </ComparisonProvider>
         </AuthProvider>
       </HelmetProvider>

@@ -59,18 +59,49 @@ ${filenames.map(filename => `  <sitemap>
     console.log(`Generated sitemap-index.xml linking to ${filenames.length} sitemaps`);
 };
 
-const removeStaleFacilityChunks = () => {
+const removeStaleChunkFiles = (prefix: string) => {
+    const pattern = new RegExp(`^${prefix}-\\d{4}\\.xml$`);
     const staleFiles = fs
         .readdirSync(PUBLIC_DIR)
-        .filter((file) => /^sitemap-facilities-\d{4}\.xml$/.test(file));
+        .filter((file) => pattern.test(file));
 
     for (const file of staleFiles) {
         fs.unlinkSync(path.join(PUBLIC_DIR, file));
     }
 
     if (staleFiles.length > 0) {
-        console.log(`Removed ${staleFiles.length} stale facility chunk file(s)`);
+        console.log(`Removed ${staleFiles.length} stale ${prefix} chunk file(s)`);
     }
+};
+
+const writeChunkedSitemapGroup = (baseName: string, urls: string[], chunkSize = 45000) => {
+    removeStaleChunkFiles(baseName);
+    const groupIndexFilename = `${baseName}.xml`;
+
+    if (urls.length <= chunkSize) {
+        writeSitemap(groupIndexFilename, urls);
+        return groupIndexFilename;
+    }
+
+    const chunkFiles: string[] = [];
+    for (let i = 0; i < urls.length; i += chunkSize) {
+        const chunk = urls.slice(i, i + chunkSize);
+        const filename = `${baseName}-${String(Math.floor(i / chunkSize) + 1).padStart(4, '0')}.xml`;
+        writeSitemap(filename, chunk);
+        chunkFiles.push(filename);
+    }
+
+    const nestedIndex = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${chunkFiles.map(filename => `  <sitemap>
+    <loc>${BASE_URL}/${filename}</loc>
+    <lastmod>${buildTime}</lastmod>
+  </sitemap>`).join('\n')}
+</sitemapindex>`;
+    fs.writeFileSync(path.join(PUBLIC_DIR, groupIndexFilename), nestedIndex);
+    console.log(`Generated ${groupIndexFilename} linking to ${chunkFiles.length} chunk files`);
+
+    return groupIndexFilename;
 };
 
 // State Data
@@ -129,7 +160,9 @@ const ALL_STATES = [
 
 async function generateSitemaps() {
     console.log('Starting sitemap generation...');
-    removeStaleFacilityChunks();
+    removeStaleChunkFiles('sitemap-facilities');
+    removeStaleChunkFiles('sitemap-cities');
+    removeStaleChunkFiles('sitemap-states');
 
     // 1. Static & Hub Pages
     const staticUrls = [
@@ -249,30 +282,9 @@ async function generateSitemaps() {
 
     // Write Files
     writeSitemap('sitemap-static.xml', staticUrls);
-    writeSitemap('sitemap-states.xml', stateUrls);
-    writeSitemap('sitemap-cities.xml', Array.from(cityUrls));
-
-    // Facility Chunks
-    const CHUNK_SIZE = 5000;
-    const facilityChunks: string[] = [];
-
-    for (let i = 0; i < facilityUrls.length; i += CHUNK_SIZE) {
-        const chunk = facilityUrls.slice(i, i + CHUNK_SIZE);
-        const filename = `sitemap-facilities-${String(Math.floor(i / CHUNK_SIZE) + 1).padStart(4, '0')}.xml`;
-        writeSitemap(filename, chunk);
-        facilityChunks.push(filename);
-    }
-
-    // Facility Index (Nested Index)
-    const facilityIndexContent = `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${facilityChunks.map(filename => `  <sitemap>
-    <loc>${BASE_URL}/${filename}</loc>
-    <lastmod>${buildTime}</lastmod>
-  </sitemap>`).join('\n')}
-</sitemapindex>`;
-    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-facilities.xml'), facilityIndexContent);
-    console.log(`Generated sitemap-facilities.xml linking to ${facilityChunks.length} chunks`);
+    const statesIndexFile = writeChunkedSitemapGroup('sitemap-states', stateUrls);
+    const citiesIndexFile = writeChunkedSitemapGroup('sitemap-cities', Array.from(cityUrls), 45000);
+    const facilitiesIndexFile = writeChunkedSitemapGroup('sitemap-facilities', facilityUrls, 5000);
 
     // Master Index
     const masterIndexContent = `<?xml version="1.0" encoding="UTF-8"?>
@@ -282,15 +294,15 @@ ${facilityChunks.map(filename => `  <sitemap>
     <lastmod>${buildTime}</lastmod>
   </sitemap>
   <sitemap>
-    <loc>${BASE_URL}/sitemap-states.xml</loc>
+    <loc>${BASE_URL}/${statesIndexFile}</loc>
     <lastmod>${buildTime}</lastmod>
   </sitemap>
   <sitemap>
-    <loc>${BASE_URL}/sitemap-cities.xml</loc>
+    <loc>${BASE_URL}/${citiesIndexFile}</loc>
     <lastmod>${buildTime}</lastmod>
   </sitemap>
   <sitemap>
-    <loc>${BASE_URL}/sitemap-facilities.xml</loc>
+    <loc>${BASE_URL}/${facilitiesIndexFile}</loc>
     <lastmod>${buildTime}</lastmod>
   </sitemap>
 </sitemapindex>`;

@@ -93,8 +93,11 @@ export const Home: React.FC = () => {
               <img
                 src="/images/hero_image.png"
                 alt="Senior living community"
+                width={1536}
+                height={1024}
                 className="w-full h-full object-cover"
                 loading="eager"
+                fetchPriority="high"
                 decoding="async"
               />
             </picture>
@@ -511,14 +514,14 @@ export const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
             <div>
               <div className="mb-6">
-                <img src="/logo.png" alt="SilverTech Directory" className="h-8 w-auto" />
+                <img src="/logo.png" alt="SilverTech Directory" width={256} height={256} className="h-8 w-auto" loading="lazy" decoding="async" />
               </div>
               <p className="text-sm text-slate-600 leading-relaxed">
                 The commission-free senior care directory focused on trust and data integrity. Built for families, by researchers.
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-sm uppercase tracking-widest mb-6">Search</h4>
+              <h3 className="font-bold text-sm uppercase tracking-widest mb-6">Search</h3>
               <ul className="space-y-3 text-sm text-slate-600">
                 <li><Link to="/states" className="hover:text-gold">Browse by State</Link></li>
               </ul>

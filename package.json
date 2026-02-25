@@ -51,7 +51,11 @@
     "update:online-presence": "npx tsx scripts/update_facility_online_presence.ts",
     "sql:run": "npx tsx scripts/run_sql.ts",
     "typesense:index": "tsx scripts/typesense_index.ts",
-    "typesense:search-key": "tsx scripts/typesense_create_search_key.ts"
+    "typesense:search-key": "tsx scripts/typesense_create_search_key.ts",
+    "seo:geo-keywords": "tsx scripts/generate_geo_keyword_map.ts",
+    "seo:geo-keywords:expanded": "tsx scripts/generate_geo_keyword_map.ts --expanded",
+    "seo:geo-briefs": "tsx scripts/generate_geo_content_briefs.ts",
+    "seo:audit-html": "tsx scripts/audit_html_budget.ts"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "^5.4.1",

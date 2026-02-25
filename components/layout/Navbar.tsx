@@ -163,7 +163,15 @@ const Navbar: React.FC = () => {
             onClick={handleLogoClick}
             className="flex-shrink-0 w-[220px] md:w-[250px] h-10 md:h-11 flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 rounded"
           >
-            <img src="/logo-nav.png" alt="SilverTech Directory" className="w-full h-full object-contain -translate-y-[6px] scale-90" />
+            <img
+              src="/logo-nav.png"
+              alt="SilverTech Directory"
+              width={500}
+              height={106}
+              className="w-full h-full object-contain -translate-y-[6px] scale-90"
+              loading="eager"
+              decoding="async"
+            />
           </Link>
 
           {/* Primary Navigation — desktop */}

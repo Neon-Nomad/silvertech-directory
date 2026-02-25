@@ -412,7 +412,7 @@ const OperatorDashboard: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="SilverTech" className="h-11 w-auto" />
+              <img src="/logo.png" alt="SilverTech" width={256} height={256} className="h-11 w-auto" loading="lazy" decoding="async" />
               <div>
                 <p className="text-xs text-charcoal/40 leading-none">Operator Portal</p>
               </div>
