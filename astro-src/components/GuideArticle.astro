@@ -35,6 +35,16 @@ const {
 } = Astro.props;
 
 const authorName = 'SilverTech Editorial Team';
+const topCityGeoLinks: LinkItem[] = [
+  { href: '/assisted-living/california/cities/san-francisco/', label: 'Memory care in San Francisco, CA' },
+  { href: '/assisted-living/florida/cities/saint-petersburg/', label: 'Senior care in Saint Petersburg, FL' },
+  { href: '/assisted-living/florida/cities/fort-myers/', label: 'Memory care in Fort Myers, FL' },
+  { href: '/assisted-living/oklahoma/cities/oklahoma-city/', label: 'Senior care in Oklahoma City, OK' },
+  { href: '/assisted-living/alabama/cities/birmingham/', label: 'Senior care in Birmingham, AL' },
+  { href: '/assisted-living/michigan/cities/grand-rapids/', label: 'Senior care in Grand Rapids, MI' },
+  { href: '/assisted-living/arkansas/cities/little-rock/', label: 'Senior care in Little Rock, AR' },
+  { href: '/assisted-living/louisiana/cities/baton-rouge/', label: 'Senior care in Baton Rouge, LA' }
+];
 ---
 
 <Base
@@ -44,12 +54,26 @@ const authorName = 'SilverTech Editorial Team';
   ogImage={ogImage}
   ogType="article"
   twitterSite="@SilverTechCare"
+  liteHead={true}
   publishedTime={published}
   modifiedTime={modified}
 >
-  <slot name="head" slot="head" />
+  <link slot="head" rel="stylesheet" href="/styles/guide-article.css" />
 
   <section class="container guide-shell">
+    <h1 class="sr-only">{h1}</h1>
+    <div class="crawl-priority-signals">
+      <h2>Guide Evidence Signals</h2>
+      <p>
+        Editorial guide by {authorName}. Published <time datetime={published}>{published}</time>, updated
+        <time datetime={modified}>{modified}</time>.
+      </p>
+      <ul class="signal-list">
+        <li><strong>Read time:</strong> {readTime}</li>
+        <li><strong>Topics indexed:</strong> {keywordPills.length || toc.length || 1}</li>
+        <li><strong>FAQ coverage:</strong> {faqItems.length > 0 ? `${faqItems.length} answers` : 'Not included'}</li>
+      </ul>
+    </div>
     <nav aria-label="Breadcrumb" class="breadcrumbs">
       <a href="/">Home</a>
       <span>/</span>
@@ -73,7 +97,7 @@ const authorName = 'SilverTech Editorial Team';
       </picture>
       <div class="guide-hero-content">
         <p class="eyebrow">{heroEyebrow}</p>
-        <h1>{h1}</h1>
+        <p class="hero-title">{h1}</p>
         <p>{deck}</p>
         <div class="hero-meta">
           <span><strong>By:</strong> {authorName}</span>
@@ -139,6 +163,18 @@ const authorName = 'SilverTech Editorial Team';
         </section>
       )}
 
+      <section class="card side-card">
+        <h2>Top City Care Hubs</h2>
+        <p class="side-note">
+          Compare local options in major markets where families frequently begin memory care and assisted living searches.
+        </p>
+        <ul class="simple-list">
+          {topCityGeoLinks.map((link) => (
+            <li><a href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+      </section>
+
       {keywordPills.length > 0 && (
         <section class="card side-card">
           <h2>Topics Covered</h2>
@@ -158,312 +194,5 @@ const authorName = 'SilverTech Editorial Team';
     </aside>
   </section>
 
-  <style>
-    .guide-shell {
-      padding: 2rem 1.5rem 1rem;
-    }
-
-    .breadcrumbs {
-      display: flex;
-      gap: 0.5rem;
-      align-items: center;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #64748b;
-      margin-bottom: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .guide-hero {
-      position: relative;
-      border-radius: 14px;
-      overflow: hidden;
-      min-height: 360px;
-      border: 1px solid #e2e8f0;
-      background: #0f172a;
-    }
-
-    .hero-image img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: grayscale(1) brightness(0.34);
-    }
-
-    .guide-hero-content {
-      position: relative;
-      z-index: 1;
-      padding: 2rem;
-      max-width: 840px;
-      color: #f8fafc;
-      background: linear-gradient(90deg, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.58), rgba(15, 23, 42, 0));
-      min-height: 360px;
-      display: grid;
-      align-content: center;
-      gap: 0.8rem;
-    }
-
-    .eyebrow {
-      margin: 0;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #facc15;
-      font-weight: 700;
-    }
-
-    .guide-hero-content h1 {
-      margin: 0;
-      font-size: clamp(1.9rem, 3.2vw, 2.8rem);
-      line-height: 1.12;
-    }
-
-    .guide-hero-content p {
-      margin: 0;
-      color: rgba(248, 250, 252, 0.94);
-      max-width: 68ch;
-      line-height: 1.6;
-    }
-
-    .hero-meta {
-      display: flex;
-      gap: 0.7rem;
-      flex-wrap: wrap;
-      font-size: 0.85rem;
-    }
-
-    .hero-meta span {
-      background: rgba(15, 23, 42, 0.64);
-      border: 1px solid rgba(226, 232, 240, 0.25);
-      border-radius: 999px;
-      padding: 0.32rem 0.72rem;
-    }
-
-    .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 8px;
-      padding: 0.72rem 1rem;
-      font-weight: 700;
-      font-size: 0.92rem;
-      border: 1px solid transparent;
-      background: #facc15;
-      color: #0f172a;
-      width: fit-content;
-    }
-
-    .guide-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
-      gap: 1rem;
-      padding: 0 1.5rem 2.5rem;
-      align-items: start;
-    }
-
-    .guide-main {
-      display: grid;
-      gap: 1rem;
-    }
-
-    .guide-main h2 {
-      margin: 0;
-      font-size: clamp(1.32rem, 2vw, 1.7rem);
-      line-height: 1.2;
-    }
-
-    .guide-main h3 {
-      margin: 0.9rem 0 0.35rem;
-      font-size: 1.05rem;
-      line-height: 1.3;
-      color: #0f172a;
-    }
-
-    .guide-main p,
-    .guide-main li {
-      color: #1e293b;
-      line-height: 1.68;
-      font-size: 1rem;
-      margin-top: 0;
-    }
-
-    .guide-main ul,
-    .guide-main ol {
-      margin: 0;
-      padding-left: 1.2rem;
-      display: grid;
-      gap: 0.35rem;
-    }
-
-    .guide-main section {
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 1rem;
-      background: #fff;
-      display: grid;
-      gap: 0.75rem;
-    }
-
-    .toc {
-      border: 1px solid #fde68a;
-      border-radius: 10px;
-      background: #fffbeb;
-      padding: 0.85rem 0.95rem;
-      display: grid;
-      gap: 0.5rem;
-    }
-
-    .toc p {
-      margin: 0;
-      color: #78350f;
-    }
-
-    .toc ol {
-      margin: 0;
-      padding-left: 1.2rem;
-      display: grid;
-      gap: 0.35rem;
-    }
-
-    .toc a {
-      color: #92400e;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      border: 1px solid #e2e8f0;
-      font-size: 0.94rem;
-    }
-
-    th,
-    td {
-      border: 1px solid #e2e8f0;
-      padding: 0.58rem;
-      text-align: left;
-      vertical-align: top;
-    }
-
-    th {
-      background: #f8fafc;
-      font-weight: 700;
-    }
-
-    .faq-block {
-      display: grid;
-      gap: 0.8rem;
-    }
-
-    .faq-list {
-      display: grid;
-      gap: 0.65rem;
-    }
-
-    .faq-list details {
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 0.8rem;
-      background: #fff;
-    }
-
-    .faq-list summary {
-      cursor: pointer;
-      font-weight: 700;
-      color: #0f172a;
-    }
-
-    .faq-list p {
-      margin: 0.55rem 0 0;
-      color: #334155;
-    }
-
-    .related-block ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      gap: 0.45rem;
-    }
-
-    .related-block a {
-      color: #ca8a04;
-      font-weight: 700;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .side-stack {
-      display: grid;
-      gap: 1rem;
-      align-content: start;
-    }
-
-    .side-card h2 {
-      margin: 0;
-      font-size: 1.08rem;
-    }
-
-    .simple-list {
-      list-style: none;
-      margin: 1rem 0 0;
-      padding: 0;
-      display: grid;
-      gap: 0.65rem;
-    }
-
-    .simple-list li {
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      padding: 0.62rem 0.68rem;
-      background: #fff;
-    }
-
-    .simple-list a {
-      color: #0f172a;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .simple-list a:hover {
-      text-decoration: underline;
-    }
-
-    .pill-list {
-      list-style: none;
-      margin: 1rem 0 0;
-      padding: 0;
-      display: flex;
-      gap: 0.45rem;
-      flex-wrap: wrap;
-    }
-
-    .pill-list li {
-      border-radius: 999px;
-      border: 1px solid #fde68a;
-      background: #fffbeb;
-      color: #854d0e;
-      padding: 0.32rem 0.58rem;
-      font-size: 0.78rem;
-      font-weight: 700;
-    }
-
-    .cta-card p {
-      margin: 0.65rem 0 0.9rem;
-      color: #334155;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 980px) {
-      .guide-layout {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <slot name="head" />
 </Base>

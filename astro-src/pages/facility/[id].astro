@@ -16,6 +16,14 @@ const stateName = getStateName(facility.state || '');
 const title = `${facility.name} | Assisted Living in ${facility.city}, ${facility.state}`;
 const description = `Learn about ${facility.name}, a senior living community in ${facility.city}, ${stateName}. View address, contact details, and verified data.`;
 const canonical = `https://silvertechdirectory.com/facility/${facility.id}/`;
+const facilityKeywordTargets = [
+  `${facility.name} assisted living`,
+  `${facility.name} ${facility.city} ${facility.state}`,
+  `assisted living in ${facility.city}, ${facility.state}`,
+  `senior care in ${facility.city}, ${facility.state}`,
+  `memory care near ${facility.city}, ${facility.state}`
+];
+const keywords = facilityKeywordTargets.join(', ');
 const schema = {
   "@context": "https://schema.org",
   "@type": "SeniorLivingCommunity",
@@ -50,12 +58,51 @@ const supportiveGuide = {
   href: '/guides/guilt-about-placing-parent-in-memory-care/',
   label: 'Guilt About Placing a Parent in Memory Care'
 };
+const primaryGuideLink = isMemoryCareTagged
+  ? supportiveGuide
+  : {
+      href: '/guides/hidden-costs-of-memory-care/',
+      label: 'Hidden Costs of Memory Care: What Families Are Never Told Up Front'
+    };
+const secondaryGuideLink = isMemoryCareTagged
+  ? {
+      href: '/guides/caregiver-at-breaking-point/',
+      label: 'I Cannot Do This Anymore Caring for My Parent'
+    }
+  : {
+      href: '/guides/guilt-about-placing-parent-in-memory-care/',
+      label: 'Guilt About Placing a Parent in Memory Care'
+    };
 const stateDirectoryHref = `/assisted-living/${stateSlug}/`;
 const cityDirectoryHref = `/assisted-living/${stateSlug}/cities/${citySlug}/`;
+
+const normalizeFacilityType = (value?: string) => {
+  const raw = (value || '').trim().toLowerCase();
+  if (!raw) return 'assisted living';
+  return raw.replace(/[_-]+/g, ' ');
+};
+const facilityTypeText = normalizeFacilityType(facility.facility_type || facility.type);
+const hasWebsite = Boolean(facility.website_url);
+const hasPhone = Boolean(facility.phone);
+const hasAddress = Boolean(facility.address_line1);
 ---
-<Base title={title} description={description} canonical={canonical}>
-  <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
-  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+<Base title={title} description={description} canonical={canonical} liteHead={true} loadFonts={false}>
+  <meta slot="head" name="keywords" content={keywords} />
+  <link slot="head" rel="stylesheet" href="/styles/facility-page.css" />
+  <section slot="pre-body" class="container crawl-priority-prelude" aria-label="Facility Data Signals">
+    <h1 class="sr-only">{facility.name}</h1>
+    <div class="crawl-priority-signals">
+      <h2>Facility Data Signals</h2>
+      <p class="signal-copy">
+        Facility classification: {facilityTypeText}. Directory locality: {facility.city}, {facility.state}.
+      </p>
+      <ul class="signal-list">
+        <li><strong>Verified phone:</strong> {hasPhone ? 'Available' : 'Not listed'}</li>
+        <li><strong>Address record:</strong> {hasAddress ? 'Available' : 'Not listed'}</li>
+        <li><strong>Website:</strong> {hasWebsite ? 'Available' : 'Not listed'}</li>
+      </ul>
+    </div>
+  </section>
   <section class="container facility-shell">
     <nav class="crumbs" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -69,7 +116,7 @@ const cityDirectoryHref = `/assisted-living/${stateSlug}/cities/${citySlug}/`;
 
     <div class="hero">
       <p class="kicker">Verified Listing</p>
-      <h1>{facility.name}</h1>
+      <p class="hero-title">{facility.name}</p>
       <p class="subhead">Assisted Living in {facility.city}, {facility.state}</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href={cityDirectoryHref}>Browse {facility.city} Directory</a>
@@ -106,102 +153,40 @@ const cityDirectoryHref = `/assisted-living/${stateSlug}/cities/${citySlug}/`;
         </p>
       )}
     </div>
+
+    <div class="card prep-card">
+      <h2>What to Confirm Before You Tour</h2>
+      <ul>
+        <li>Ask for a written pricing sheet with base rent and care-level add-ons.</li>
+        <li>Confirm how medication management and after-hours staffing are handled.</li>
+        <li>Request recent inspection context for {stateName} licensing compliance.</li>
+        <li>Verify emergency transfer process and family notification standards.</li>
+        <li>Compare this listing against nearby options in {facility.city} before signing.</li>
+      </ul>
+      <p class="muted">
+        Use <a href={cityDirectoryHref}>city comparisons</a> and <a href={stateDirectoryHref}>{stateName} statewide data</a> to benchmark fit, not just first impressions.
+      </p>
+    </div>
+
+    <div class="card link-mesh-card">
+      <h2>Planning and Licensing Links</h2>
+      <ul class="link-mesh-list">
+        <li>
+          <a href={stateDirectoryHref}>Understanding {stateName} licensing and oversight requirements</a>
+        </li>
+        <li>
+          <a href={primaryGuideLink.href}>{primaryGuideLink.label}</a>
+        </li>
+        <li>
+          <a href={secondaryGuideLink.href}>{secondaryGuideLink.label}</a>
+        </li>
+        <li>
+          <a href={cityDirectoryHref}>Senior care in {facility.city}, {facility.state}</a>
+        </li>
+      </ul>
+    </div>
   </section>
 
-  <style>
-    .facility-shell {
-      padding-top: 1.5rem;
-      padding-bottom: 2.5rem;
-    }
-    .crumbs {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      color: #64748b;
-      font-size: 0.85rem;
-      margin-bottom: 1rem;
-    }
-    .crumbs a:hover {
-      color: #0f172a;
-      text-decoration: underline;
-    }
-    .hero {
-      background: linear-gradient(135deg, #111827 0%, #1f2937 45%, #374151 100%);
-      color: #fff;
-      border-radius: 16px;
-      padding: 1.4rem;
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      margin-bottom: 1rem;
-    }
-    .kicker {
-      font-size: 0.74rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: #facc15;
-      margin: 0;
-    }
-    h1 {
-      margin: 0.35rem 0 0;
-      font-size: clamp(1.8rem, 3vw, 2.35rem);
-      line-height: 1.05;
-    }
-    .subhead {
-      margin: 0.65rem 0 0;
-      color: #e5e7eb;
-      font-size: 1.05rem;
-    }
-    .hero-actions {
-      margin-top: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.58rem 0.9rem;
-      border-radius: 9px;
-      font-weight: 700;
-      font-size: 0.9rem;
-      border: 1px solid transparent;
-      transition: all 0.2s ease;
-    }
-    .btn-primary {
-      background: #eab308;
-      color: #111827;
-    }
-    .btn-primary:hover {
-      background: #facc15;
-    }
-    .btn-ghost {
-      border-color: rgba(255, 255, 255, 0.4);
-      color: #fff;
-      background: rgba(255, 255, 255, 0.04);
-    }
-    .btn-ghost:hover {
-      background: rgba(255, 255, 255, 0.12);
-    }
-    .note-gap {
-      margin-top: 0.75rem;
-    }
-    .info-card {
-      margin-top: 1rem;
-    }
-    .info-gap {
-      margin-top: 1rem;
-    }
-    .memory-note {
-      margin: 1rem 0 0;
-      font-size: 0.92rem;
-    }
-    .memory-link {
-      color: #ca8a04;
-      font-weight: 700;
-      text-decoration: underline;
-      margin-left: 0.35rem;
-    }
-  </style>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
 </Base>

@@ -2,10 +2,13 @@
 const {
   title = 'SilverTech Directory',
   description = 'Find trusted memory care and assisted living communities with transparent, commission-free listings.',
+  keywords,
   canonical = 'https://silvertechdirectory.com/',
   ogImage = 'https://silvertechdirectory.com/hero.png',
   ogType = 'website',
   twitterSite,
+  liteHead = false,
+  loadFonts = true,
   robots,
   publishedTime,
   modifiedTime
@@ -18,157 +21,42 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {keywords && <meta name="keywords" content={keywords} />}
     <link rel="canonical" href={canonical} />
     {robots && <meta name="robots" content={robots} />}
-    <meta property="og:type" content={ogType} />
-    <meta property="og:site_name" content="SilverTech Directory" />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={ogImage} />
-    {publishedTime && <meta property="article:published_time" content={publishedTime} />}
-    {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={ogImage} />
-    {twitterSite && <meta name="twitter:site" content={twitterSite} />}
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    {!liteHead && (
+      <>
+        <meta property="og:type" content={ogType} />
+        <meta property="og:site_name" content="SilverTech Directory" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:image" content={ogImage} />
+        {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+        {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={ogImage} />
+        {twitterSite && <meta name="twitter:site" content={twitterSite} />}
+      </>
+    )}
+    {loadFonts && (
+      <>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+      </>
+    )}
+    <link rel="stylesheet" href="/styles/astro-base.css" />
     <slot name="head" />
-    <style>
-      :root {
-        color-scheme: light;
-        --bg: #f8f8f5;
-        --surface: #ffffff;
-        --ink: #1f2937;
-        --muted: #64748b;
-        --line: #e2e8f0;
-        --gold: #d4a00b;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        color: var(--ink);
-        background: var(--bg);
-        font-family: "Public Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
-      }
-      a { color: inherit; text-decoration: none; }
-      .container { max-width: 1160px; margin: 0 auto; padding: 0 1rem; }
-      .card {
-        background: var(--surface);
-        border: 1px solid var(--line);
-        border-radius: 14px;
-        padding: 1.25rem;
-      }
-      .meta {
-        font-size: 0.9rem;
-        color: var(--muted);
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        padding: 0.75rem 0.9rem;
-        background: var(--surface);
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-      .note {
-        font-size: 0.85rem;
-        color: var(--muted);
-        background: #f7f9fc;
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        padding: 0.75rem 0.9rem;
-      }
-      .list-item { display: grid; gap: 0.25rem; }
-      .muted { color: var(--muted); }
-
-      .site-header {
-        position: sticky;
-        top: 0;
-        z-index: 30;
-        background: rgba(255, 255, 255, 0.96);
-        backdrop-filter: blur(8px);
-        border-bottom: 1px solid var(--line);
-      }
-      .site-header-inner {
-        height: 72px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-      }
-      .brand {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.75rem;
-        font-weight: 700;
-      }
-      .brand img {
-        height: 38px;
-        width: auto;
-        object-fit: contain;
-      }
-      .brand-fallback {
-        font-size: 1.8rem;
-        color: var(--gold);
-      }
-      .site-nav {
-        display: inline-flex;
-        align-items: center;
-        gap: 1.1rem;
-        font-size: 0.95rem;
-        color: #334155;
-      }
-      .site-nav a:hover {
-        color: #111827;
-      }
-      .site-nav .cta {
-        background: #111827;
-        color: #fff;
-        padding: 0.5rem 0.8rem;
-        border-radius: 9px;
-        font-weight: 600;
-      }
-
-      main { min-height: calc(100vh - 170px); }
-
-      .site-footer {
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-        font-size: 0.875rem;
-        background: var(--surface);
-      }
-      .site-footer-inner {
-        padding: 1.6rem 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-      .footer-links {
-        display: inline-flex;
-        gap: 1rem;
-      }
-      .footer-links a:hover {
-        color: #0f172a;
-      }
-
-      @media (max-width: 900px) {
-        .site-nav {
-          display: none;
-        }
-      }
-    </style>
   </head>
   <body>
+    <slot name="pre-body" />
     <header class="site-header">
       <div class="container site-header-inner">
         <a class="brand" href="/" aria-label="SilverTech home">
-          <img src="/logo-nav.png" alt="SilverTech" loading="eager" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'" />
-          <span class="brand-fallback" style="display:none;">SilverTech</span>
+          <img src="/logo-nav.png" alt="SilverTech" width="500" height="106" loading="eager" decoding="async" />
         </a>
         <nav class="site-nav" aria-label="Main">
           <a href="/">Find Care</a>
