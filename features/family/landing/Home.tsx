@@ -67,18 +67,18 @@ export const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-warm-white text-charcoal">
       <Helmet>
-        <title>SilverTech Directory | Senior Living Directory</title>
+        <title>SilverTech Directory | Senior Care & Living Guide</title>
         <meta name="description" content="Search a trusted senior living directory for assisted living and memory care communities. Compare licensed facilities and connect directly." />
         <meta name="keywords" content="senior living directory, assisted living directory, memory care directory, licensed senior living facilities, compare senior living communities" />
         <link rel="canonical" href="https://silvertechdirectory.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SilverTech Directory" />
-        <meta property="og:title" content="SilverTech Directory | Senior Living Directory" />
+        <meta property="og:title" content="SilverTech Directory | Senior Care & Living Guide" />
         <meta property="og:description" content="Search assisted living and memory care communities with verified directory data and direct contact information." />
         <meta property="og:url" content="https://silvertechdirectory.com/" />
         <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="SilverTech Directory | Senior Living Directory" />
+        <meta name="twitter:title" content="SilverTech Directory | Senior Care & Living Guide" />
         <meta name="twitter:description" content="Search assisted living and memory care communities with verified directory data and direct contact information." />
         <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
