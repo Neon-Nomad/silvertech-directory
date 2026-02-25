@@ -49,8 +49,10 @@ vi.mock('react-router-dom', async () => {
   };
 });
 
+const stableUser = { id: 'user-1' };
+
 vi.mock('@/src/context/AuthProvider', () => ({
-  useAuth: () => ({ user: { id: 'user-1' } }),
+  useAuth: () => ({ user: stableUser }),
 }));
 
 vi.mock('@/src/lib/supabase', () => ({
