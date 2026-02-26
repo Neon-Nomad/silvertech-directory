@@ -35,8 +35,10 @@ export const LocationPrompt: React.FC = () => {
           <Button
             variant="primary"
             className="w-full bg-slate-900 hover:bg-slate-800"
-            onClick={() => getLocation()}
-            disabled={loading}
+            onClick={() => {
+              getLocation();
+              setDismissed(true);
+            }}
           >
             {loading ? 'Requesting...' : 'Enable Location'}
           </Button>
