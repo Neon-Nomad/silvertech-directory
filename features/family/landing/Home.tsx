@@ -88,8 +88,16 @@ export const Home: React.FC = () => {
         <section className="relative">
           <div className="h-[480px] sm:h-[560px] relative overflow-hidden">
             <picture>
-              <source srcSet="/images/hero_image.avif" type="image/avif" />
-              <source srcSet="/images/hero_image.webp" type="image/webp" />
+              <source
+                type="image/avif"
+                srcSet="/images/hero_image-640w.avif 640w, /images/hero_image-960w.avif 960w, /images/hero_image.avif 1536w"
+                sizes="100vw"
+              />
+              <source
+                type="image/webp"
+                srcSet="/images/hero_image-640w.webp 640w, /images/hero_image-960w.webp 960w, /images/hero_image.webp 1536w"
+                sizes="100vw"
+              />
               <img
                 src="/images/hero_image.png"
                 alt="Senior living community"
