@@ -1,4 +1,10 @@
 (function () {
+  // Activate Google Fonts: switch from print-only to all media (CSP-safe, no inline handler)
+  var fontsLink = document.getElementById("google-fonts");
+  if (fontsLink) {
+    fontsLink.media = "all";
+  }
+
   if (location.hostname === "localhost") {
     return;
   }

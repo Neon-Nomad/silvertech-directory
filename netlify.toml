@@ -1,0 +1,10 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Force www → non-www at the edge (before _redirects processing)
+[[redirects]]
+  from = "https://www.silvertechdirectory.com/*"
+  to = "https://silvertechdirectory.com/:splat"
+  status = 301
+  force = true
