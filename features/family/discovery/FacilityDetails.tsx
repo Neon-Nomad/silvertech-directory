@@ -81,6 +81,7 @@ export const FacilityDetails: React.FC = () => {
   const [agingAgency, setAgingAgency] = useState<AgingAgency | null>(null);
   const [userCoords, setUserCoords] = useState<{ lat: number; lng: number } | null>(null);
   const [phoneRevealed, setPhoneRevealed] = useState(false);
+  const [resolvedSlug, setResolvedSlug] = useState<string | null>(null);
   const { trackLeadEvent } = useLeadTracking();
 
   useEffect(() => {
@@ -198,7 +199,7 @@ export const FacilityDetails: React.FC = () => {
 
         setFacility(data);
 
-        // When accessed via UUID, redirect to the canonical slug URL
+        // When accessed via UUID, resolve the canonical slug
         if (isUuid(id)) {
           try {
             const stateIndex = await loadFacilityIndexWithOptions({ stateAbbr: data.state });
@@ -212,11 +213,12 @@ export const FacilityDetails: React.FC = () => {
                 (entry.postal_code || '').trim() === (data.postal_code || '').trim()
             );
             if (match) {
+              setResolvedSlug(match.id);
               navigate(`/facility/${match.id}`, { replace: true });
               return;
             }
           } catch {
-            // Slug lookup failed — continue rendering with UUID URL
+            // Slug lookup failed — noindex + no canonical will protect against indexing
           }
         }
 
@@ -416,6 +418,12 @@ export const FacilityDetails: React.FC = () => {
     ? `mailto:${facilityEmail}?subject=${encodeURIComponent(pricingRequestSubject)}&body=${pricingRequestBody}`
     : null;
 
+  const isUuidUrl = isUuid(id);
+  const canonicalSlug = isUuidUrl ? resolvedSlug : id;
+  const canonicalUrl = canonicalSlug
+    ? `https://silvertechdirectory.com/facility/${canonicalSlug}/`
+    : null;
+
   const defaultImage = `${window.location.origin}/hero.png`;
   const schemaMarkup = {
     '@context': 'https://schema.org',
@@ -439,7 +447,7 @@ export const FacilityDetails: React.FC = () => {
       latitude: facility.latitude,
       longitude: facility.longitude
     } : undefined,
-    url: window.location.href,
+    url: canonicalUrl || undefined,
     dateModified: lastUpdatedRaw || undefined
   };
 
@@ -448,8 +456,6 @@ export const FacilityDetails: React.FC = () => {
   const regulatoryTopic = healthcareScore && ['D', 'F'].includes(healthcareScore.grade) ? 'inspections' : 'licensing';
   const regulatoryTopicUrl = `/states/${stateSlug}/regulations/${regulatoryTopic}`;
   const hasRegulatoryAlert = Boolean(healthcareScore && ['C', 'D', 'F'].includes(healthcareScore.grade));
-  const isUuidUrl = isUuid(id);
-  const canonicalUrl = `https://silvertechdirectory.com/facility/${id}/`;
   const shareImage = facility.facility_photos?.[0]?.url || facility.image || defaultImage;
   const heroImage = shareImage;
   const pageTitle = `${facility.name} - ${serviceTypeString} in ${facility.city}, ${facility.state} | SilverTech`;
@@ -471,12 +477,12 @@ export const FacilityDetails: React.FC = () => {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         {isUuidUrl && <meta name="robots" content="noindex, follow" />}
-        <link rel="canonical" href={canonicalUrl} />
+        {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="SilverTech Directory" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:url" content={canonicalUrl} />
+        {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
         <meta property="og:image" content={shareImage} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
