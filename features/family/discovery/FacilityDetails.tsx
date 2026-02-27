@@ -5,7 +5,7 @@ import { MapPin, Phone, Star, DollarSign, CheckCircle, AlertCircle } from 'lucid
 import { Button } from '@/components/ui/Button';
 import { Map } from '@/components/ui/Map';
 import { supabase } from '@/src/lib/supabase';
-import { loadFacilityIndex } from '@/src/utils/facilityIndex';
+import { loadFacilityIndex, loadFacilityIndexWithOptions } from '@/src/utils/facilityIndex';
 import { geocodeAddress } from '@/src/utils/geocoding';
 import { ReviewList } from '@/features/reviews/ReviewList';
 import { ReviewModal } from '@/features/reviews/ReviewModal';
@@ -197,6 +197,28 @@ export const FacilityDetails: React.FC = () => {
         }
 
         setFacility(data);
+
+        // When accessed via UUID, redirect to the canonical slug URL
+        if (isUuid(id)) {
+          try {
+            const stateIndex = await loadFacilityIndexWithOptions({ stateAbbr: data.state });
+            const normalize = (v?: string | null) =>
+              (v || '').toString().trim().toLowerCase().replace(/\s+/g, ' ').replace(/[^a-z0-9 ]/g, '');
+            const match = stateIndex.find(
+              (entry) =>
+                normalize(entry.name) === normalize(data.name) &&
+                normalize(entry.city) === normalize(data.city) &&
+                (entry.state || '').trim().toUpperCase() === (data.state || '').trim().toUpperCase() &&
+                (entry.postal_code || '').trim() === (data.postal_code || '').trim()
+            );
+            if (match) {
+              navigate(`/facility/${match.id}`, { replace: true });
+              return;
+            }
+          } catch {
+            // Slug lookup failed — continue rendering with UUID URL
+          }
+        }
 
         if (data.latitude && data.longitude && data.state) {
           try {
@@ -426,6 +448,7 @@ export const FacilityDetails: React.FC = () => {
   const regulatoryTopic = healthcareScore && ['D', 'F'].includes(healthcareScore.grade) ? 'inspections' : 'licensing';
   const regulatoryTopicUrl = `/states/${stateSlug}/regulations/${regulatoryTopic}`;
   const hasRegulatoryAlert = Boolean(healthcareScore && ['C', 'D', 'F'].includes(healthcareScore.grade));
+  const isUuidUrl = isUuid(id);
   const canonicalUrl = `https://silvertechdirectory.com/facility/${id}/`;
   const shareImage = facility.facility_photos?.[0]?.url || facility.image || defaultImage;
   const heroImage = shareImage;
@@ -447,6 +470,7 @@ export const FacilityDetails: React.FC = () => {
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
+        {isUuidUrl && <meta name="robots" content="noindex, follow" />}
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="SilverTech Directory" />
