@@ -5,7 +5,7 @@ import { ALL_STATES } from '@/src/data/states';
 import zipToCity from '@/src/data/zip_to_city.json';
 import { getLocationSuggestions, LocationSuggestion } from '@/src/utils/locationSuggestions';
 import { supabase } from '@/src/lib/supabase';
-import { loadFacilityIndexWithOptions, FacilityIndexItem } from '@/src/utils/facilityIndex';
+import { loadFacilityIndexWithOptions, FacilityIndexItem, resolveSlugs } from '@/src/utils/facilityIndex';
 import { hasTypesense, typesenseClient } from '@/src/lib/typesense';
 import { trackEvent } from '@/src/utils/analytics';
 import { FEATURE_FLAGS } from '@/src/config/featureFlags';
@@ -355,7 +355,7 @@ const DirectorySearch: React.FC = () => {
         }
       }
 
-      setResults(applyDistance(hits));
+      setResults(await resolveSlugs(applyDistance(hits)));
     } catch (err) {
       try {
         const offlineFilters = {

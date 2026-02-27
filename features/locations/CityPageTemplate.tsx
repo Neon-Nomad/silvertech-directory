@@ -6,7 +6,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { ContentMeta } from '@/components/ui/ContentMeta';
 import { DataSourceNote } from '@/components/ui/DataSourceNote';
 import { supabase } from '@/src/lib/supabase';
-import { filterFacilitiesByLocation, loadFacilityIndexWithOptions } from '@/src/utils/facilityIndex';
+import { filterFacilitiesByLocation, loadFacilityIndexWithOptions, resolveSlugs } from '@/src/utils/facilityIndex';
 import { useJsonLd } from '@/src/hooks/useJsonLd';
 import { ALL_STATES as states } from '@/src/data/states';
 import zipToCity from '@/src/data/zip_to_city.json';
@@ -90,7 +90,9 @@ export const CityPageTemplate: React.FC = () => {
 
         if (error) throw error;
 
-        setFacilities(data || []);
+        // Resolve Supabase UUIDs to canonical slugs for public-facing URLs
+        const resolved = await resolveSlugs(data || []);
+        setFacilities(resolved);
       } catch (err) {
         console.error('Error fetching city facilities from Supabase:', err);
         try {

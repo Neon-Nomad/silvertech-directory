@@ -81,6 +81,73 @@ export const loadCityIndex = async (): Promise<CityIndexEntry[]> => {
   return cityIndexCache;
 };
 
+const normalizeField = (v?: string | null) =>
+  (v || '').toString().trim().toLowerCase().replace(/\s+/g, ' ').replace(/[^a-z0-9 ]/g, '');
+
+/**
+ * Given a facility object (typically from Supabase with a UUID id),
+ * look up its canonical slug from the facility index.
+ * Returns the slug string, or the original id if no match is found.
+ */
+export const resolveSlug = async (
+  facility: { id: string; name?: string | null; city?: string | null; state?: string | null; postal_code?: string | null }
+): Promise<string> => {
+  try {
+    const index = await loadFacilityIndexWithOptions({ stateAbbr: facility.state });
+    const match = index.find(
+      (entry) =>
+        normalizeField(entry.name) === normalizeField(facility.name) &&
+        normalizeField(entry.city) === normalizeField(facility.city) &&
+        (entry.state || '').trim().toUpperCase() === (facility.state || '').trim().toUpperCase() &&
+        (entry.postal_code || '').trim() === (facility.postal_code || '').trim()
+    );
+    return match ? match.id : facility.id;
+  } catch {
+    return facility.id;
+  }
+};
+
+/**
+ * Batch-resolve slugs for an array of facilities.
+ * Loads the index once per state and resolves all matches.
+ */
+export const resolveSlugs = async <T extends { id: string; name?: string | null; city?: string | null; state?: string | null; postal_code?: string | null }>(
+  facilities: T[]
+): Promise<T[]> => {
+  if (facilities.length === 0) return facilities;
+
+  // Group by state to load each shard only once
+  const states = new Set(facilities.map((f) => (f.state || '').trim().toUpperCase()).filter(Boolean));
+  const indexByState = new Map<string, FacilityIndexItem[]>();
+
+  await Promise.all(
+    Array.from(states).map(async (stateAbbr) => {
+      try {
+        const index = await loadFacilityIndexWithOptions({ stateAbbr });
+        indexByState.set(stateAbbr, index);
+      } catch {
+        // skip — facilities in this state will keep their original id
+      }
+    })
+  );
+
+  return facilities.map((facility) => {
+    const stateKey = (facility.state || '').trim().toUpperCase();
+    const index = indexByState.get(stateKey);
+    if (!index) return facility;
+
+    const match = index.find(
+      (entry) =>
+        normalizeField(entry.name) === normalizeField(facility.name) &&
+        normalizeField(entry.city) === normalizeField(facility.city) &&
+        (entry.state || '').trim().toUpperCase() === stateKey &&
+        (entry.postal_code || '').trim() === (facility.postal_code || '').trim()
+    );
+
+    return match ? { ...facility, id: match.id } : facility;
+  });
+};
+
 export const filterFacilitiesByLocation = (
   facilities: FacilityIndexItem[],
   stateAbbr: string,

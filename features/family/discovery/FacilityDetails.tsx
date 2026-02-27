@@ -5,7 +5,7 @@ import { MapPin, Phone, Star, DollarSign, CheckCircle, AlertCircle } from 'lucid
 import { Button } from '@/components/ui/Button';
 import { Map } from '@/components/ui/Map';
 import { supabase } from '@/src/lib/supabase';
-import { loadFacilityIndex, loadFacilityIndexWithOptions } from '@/src/utils/facilityIndex';
+import { loadFacilityIndex, resolveSlug } from '@/src/utils/facilityIndex';
 import { geocodeAddress } from '@/src/utils/geocoding';
 import { ReviewList } from '@/features/reviews/ReviewList';
 import { ReviewModal } from '@/features/reviews/ReviewModal';
@@ -199,27 +199,15 @@ export const FacilityDetails: React.FC = () => {
 
         setFacility(data);
 
-        // When accessed via UUID, resolve the canonical slug
+        // When accessed via UUID, resolve the canonical slug and redirect
         if (isUuid(id)) {
-          try {
-            const stateIndex = await loadFacilityIndexWithOptions({ stateAbbr: data.state });
-            const normalize = (v?: string | null) =>
-              (v || '').toString().trim().toLowerCase().replace(/\s+/g, ' ').replace(/[^a-z0-9 ]/g, '');
-            const match = stateIndex.find(
-              (entry) =>
-                normalize(entry.name) === normalize(data.name) &&
-                normalize(entry.city) === normalize(data.city) &&
-                (entry.state || '').trim().toUpperCase() === (data.state || '').trim().toUpperCase() &&
-                (entry.postal_code || '').trim() === (data.postal_code || '').trim()
-            );
-            if (match) {
-              setResolvedSlug(match.id);
-              navigate(`/facility/${match.id}`, { replace: true });
-              return;
-            }
-          } catch {
-            // Slug lookup failed — noindex + no canonical will protect against indexing
+          const slug = await resolveSlug(data);
+          if (slug !== id) {
+            setResolvedSlug(slug);
+            navigate(`/facility/${slug}`, { replace: true });
+            return;
           }
+          // Slug lookup failed — noindex + no canonical will protect against indexing
         }
 
         if (data.latitude && data.longitude && data.state) {
