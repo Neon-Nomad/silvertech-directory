@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "npm run build"
+  command = "npm run build:hybrid"
 
 # Force www → non-www at the edge (before _redirects processing)
 [[redirects]]
