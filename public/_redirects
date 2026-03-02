@@ -6,5 +6,13 @@
 /sitemap-* /sitemap-:splat 200!
 # City route canonicalization
 /assisted-living/:state/:city /assisted-living/:state/cities/:city 301
+# Legacy hashed asset compatibility (prevents stale HTML from loading index fallback)
+/assets/index-:hash.js /assets/index.js 200
+/assets/maps-:hash.js /assets/maps.js 200
+/assets/react-:hash.js /assets/react.js 200
+/assets/supabase-:hash.js /assets/supabase.js 200
+/assets/vendor-:hash.js /assets/vendor.js 200
+/assets/index-:hash.css /assets/index.css 200
+/assets/maps-:hash.css /assets/maps.css 200
 # SPA fallback
 /* /index.html 200
