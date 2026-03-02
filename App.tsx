@@ -181,9 +181,17 @@ const AssistedLivingStateAstroRedirect: React.FC = () => {
   React.useEffect(() => {
     if (typeof window === 'undefined') return;
     const next = `${target}${location.search}${location.hash}`;
-    if (`${window.location.pathname}${window.location.search}${window.location.hash}` !== next) {
-      window.location.replace(next);
+    const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+    if (current === next) {
+      const navigationEntry = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
+      if (navigationEntry?.type === 'reload') {
+        window.location.replace(`/states/${state}`);
+        return;
+      }
+      window.location.reload();
+      return;
     }
+    window.location.replace(next);
   }, [target, location.search, location.hash]);
 
   return (
@@ -202,9 +210,17 @@ const AssistedLivingCityAstroRedirect: React.FC = () => {
   React.useEffect(() => {
     if (typeof window === 'undefined') return;
     const next = `${target}${location.search}${location.hash}`;
-    if (`${window.location.pathname}${window.location.search}${window.location.hash}` !== next) {
-      window.location.replace(next);
+    const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+    if (current === next) {
+      const navigationEntry = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
+      if (navigationEntry?.type === 'reload') {
+        window.location.replace(`/states/${state}`);
+        return;
+      }
+      window.location.reload();
+      return;
     }
+    window.location.replace(next);
   }, [target, location.search, location.hash]);
 
   return (
