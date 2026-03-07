@@ -239,6 +239,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425003",
+        "cms_certification_number": "425003",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -276,6 +285,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "175981",
+        "cms_certification_number": "425004",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -313,6 +330,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NCF602",
+        "cms_certification_number": "425005",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Skilled Nursing Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (425005) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1801895685"
       }
     },
     {
@@ -350,6 +378,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1002",
+        "cms_certification_number": "425008",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -387,6 +423,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0927NF",
+        "cms_certification_number": "425009",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -424,6 +468,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "164704",
+        "cms_certification_number": "425012",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -461,6 +513,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0880NF",
+        "cms_certification_number": "425013",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -498,6 +558,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0810NF",
+        "cms_certification_number": "425014",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -535,6 +603,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1025",
+        "cms_certification_number": "425016",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -572,6 +648,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0508NH",
+        "cms_certification_number": "425017",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -609,6 +693,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1026",
+        "cms_certification_number": "425018",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -646,6 +738,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0460NH",
+        "cms_certification_number": "425024",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -683,6 +783,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "291168",
+        "cms_certification_number": "425027",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -720,6 +828,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0863NF",
+        "cms_certification_number": "425032",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -757,6 +873,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "446550",
+        "cms_certification_number": "425035",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -794,6 +918,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0805NF",
+        "cms_certification_number": "425042",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -831,6 +963,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "400001",
+        "cms_certification_number": "425047",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -868,6 +1008,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0633NF",
+        "cms_certification_number": "425048",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -905,6 +1053,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "262441",
+        "cms_certification_number": "425052",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -942,6 +1098,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0711NF",
+        "cms_certification_number": "425053",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -979,6 +1143,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "155210",
+        "cms_certification_number": "425054",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1016,6 +1188,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0929NF",
+        "cms_certification_number": "425055",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1053,6 +1233,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "330090",
+        "cms_certification_number": "425057",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1090,6 +1278,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0895NF",
+        "cms_certification_number": "425061",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1127,6 +1323,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1067",
+        "cms_certification_number": "425062",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1164,6 +1368,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "400227",
+        "cms_certification_number": "425063",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1201,6 +1413,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0890NF",
+        "cms_certification_number": "425064",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1238,6 +1458,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0898NF",
+        "cms_certification_number": "425067",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1275,6 +1503,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0461NH",
+        "cms_certification_number": "425068",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1312,6 +1548,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0829NF",
+        "cms_certification_number": "425070",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1349,6 +1593,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0601NH",
+        "cms_certification_number": "425071",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1386,6 +1638,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "136078",
+        "cms_certification_number": "425074",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1423,6 +1683,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "245060",
+        "cms_certification_number": "425075",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1460,6 +1728,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0462NH",
+        "cms_certification_number": "425077",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1497,6 +1773,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "271877",
+        "cms_certification_number": "425078",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1534,6 +1818,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "332258",
+        "cms_certification_number": "425080",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1571,6 +1863,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "421834",
+        "cms_certification_number": "425081",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1608,6 +1908,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "00870NF",
+        "cms_certification_number": "425082",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1645,6 +1953,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1102",
+        "cms_certification_number": "425084",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1682,6 +1998,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1006",
+        "cms_certification_number": "425085",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1719,6 +2043,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "240637",
+        "cms_certification_number": "425086",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1756,6 +2088,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0459NH",
+        "cms_certification_number": "425088",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1793,6 +2133,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0565NH",
+        "cms_certification_number": "425089",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1830,6 +2178,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0860NF",
+        "cms_certification_number": "425090",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1867,6 +2223,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0867NF",
+        "cms_certification_number": "425091",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1904,6 +2268,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0865NF",
+        "cms_certification_number": "425093",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1941,6 +2313,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "377597",
+        "cms_certification_number": "425095",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1978,6 +2358,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0495NH",
+        "cms_certification_number": "425096",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2015,6 +2403,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1011",
+        "cms_certification_number": "425097",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2052,6 +2448,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "332134",
+        "cms_certification_number": "425100",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2089,6 +2493,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1016",
+        "cms_certification_number": "425102",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2126,6 +2538,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "118285",
+        "cms_certification_number": "425103",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2163,6 +2583,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1007",
+        "cms_certification_number": "425104",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2200,6 +2628,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0948NF",
+        "cms_certification_number": "425105",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2237,6 +2673,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0952NF",
+        "cms_certification_number": "425106",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2274,6 +2718,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0919NF",
+        "cms_certification_number": "425107",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2311,6 +2763,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0471NH",
+        "cms_certification_number": "425109",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2348,6 +2808,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0896NF",
+        "cms_certification_number": "425110",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2385,6 +2853,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0881NF",
+        "cms_certification_number": "425111",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2422,6 +2898,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1019",
+        "cms_certification_number": "425112",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2459,6 +2943,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0835NF",
+        "cms_certification_number": "425113",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2496,6 +2988,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0737NF",
+        "cms_certification_number": "425114",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2533,6 +3033,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "117042",
+        "cms_certification_number": "425115",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2570,6 +3078,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0858NF",
+        "cms_certification_number": "425116",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2607,6 +3123,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "145223",
+        "cms_certification_number": "425117",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2644,6 +3168,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0897NF",
+        "cms_certification_number": "425118",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2681,6 +3213,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "192677",
+        "cms_certification_number": "425119",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2718,6 +3258,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0899NF",
+        "cms_certification_number": "425121",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2755,6 +3303,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0864NF",
+        "cms_certification_number": "425122",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2792,6 +3348,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0836NF",
+        "cms_certification_number": "425127",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2829,6 +3393,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0458NH",
+        "cms_certification_number": "425128",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2866,6 +3438,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "173286",
+        "cms_certification_number": "425129",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2903,6 +3483,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "323391",
+        "cms_certification_number": "425131",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2940,6 +3528,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0553NH",
+        "cms_certification_number": "425132",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2977,6 +3573,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1017",
+        "cms_certification_number": "425138",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3014,6 +3618,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0917NF",
+        "cms_certification_number": "425139",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3051,6 +3663,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0943",
+        "cms_certification_number": "425140",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3088,6 +3708,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1000",
+        "cms_certification_number": "425142",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3125,6 +3753,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0924NF",
+        "cms_certification_number": "425143",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3162,6 +3798,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0942NF",
+        "cms_certification_number": "425145",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3199,6 +3843,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1009",
+        "cms_certification_number": "425146",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3236,6 +3888,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0725NF",
+        "cms_certification_number": "425147",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3273,6 +3933,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0928NF",
+        "cms_certification_number": "425149",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3310,6 +3978,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425150",
+        "cms_certification_number": "425150",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -3347,6 +4024,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NCF-450",
+        "cms_certification_number": "425154",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Skilled Nursing Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (425154) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1699761908"
       }
     },
     {
@@ -3384,6 +4072,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0551NH",
+        "cms_certification_number": "425155",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3421,6 +4117,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0923NF",
+        "cms_certification_number": "425156",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3458,6 +4162,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0453NH",
+        "cms_certification_number": "425157",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3495,6 +4207,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0776NF",
+        "cms_certification_number": "425158",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3532,6 +4252,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0464NF",
+        "cms_certification_number": "425159",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3569,6 +4297,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425160",
+        "cms_certification_number": "425160",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -3606,6 +4343,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0840NF",
+        "cms_certification_number": "425163",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3643,6 +4388,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0859NF",
+        "cms_certification_number": "425165",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3680,6 +4433,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0626NH",
+        "cms_certification_number": "425168",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3717,6 +4478,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0925NF",
+        "cms_certification_number": "425169",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3754,6 +4523,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0505NH",
+        "cms_certification_number": "425170",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3791,6 +4568,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1024",
+        "cms_certification_number": "425171",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3828,6 +4613,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0866NF",
+        "cms_certification_number": "425172",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3865,6 +4658,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0518NH",
+        "cms_certification_number": "425173",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3902,6 +4703,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0539NH",
+        "cms_certification_number": "425174",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3939,6 +4748,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0861NF",
+        "cms_certification_number": "425175",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3976,6 +4793,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0891NF",
+        "cms_certification_number": "425176",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4013,6 +4838,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0823NF",
+        "cms_certification_number": "425179",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4050,6 +4883,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0868NF",
+        "cms_certification_number": "425287",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4087,6 +4928,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0710NF",
+        "cms_certification_number": "425288",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4124,6 +4973,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1003",
+        "cms_certification_number": "425289",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4161,6 +5018,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0466NH",
+        "cms_certification_number": "425290",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4198,6 +5063,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425291",
+        "cms_certification_number": "425291",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -4235,6 +5109,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0591NH",
+        "cms_certification_number": "425293",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4272,6 +5154,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0953NF",
+        "cms_certification_number": "425294",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4309,6 +5199,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0930NF",
+        "cms_certification_number": "425295",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4346,6 +5244,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1004",
+        "cms_certification_number": "425296",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4383,6 +5289,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0754NF",
+        "cms_certification_number": "425297",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4420,6 +5334,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1018",
+        "cms_certification_number": "425298",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4457,6 +5379,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0736NF",
+        "cms_certification_number": "425300",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4494,6 +5424,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0549NH",
+        "cms_certification_number": "425301",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4531,6 +5469,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0552NH",
+        "cms_certification_number": "425302",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4568,6 +5514,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0862NF",
+        "cms_certification_number": "425303",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4605,6 +5559,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1020",
+        "cms_certification_number": "425305",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4642,6 +5604,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1005",
+        "cms_certification_number": "425306",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4679,6 +5649,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1015",
+        "cms_certification_number": "425307",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4716,6 +5694,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0558NH",
+        "cms_certification_number": "425308",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4753,6 +5739,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0918NF",
+        "cms_certification_number": "425309",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4790,6 +5784,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1029",
+        "cms_certification_number": "425310",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4827,6 +5829,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1027",
+        "cms_certification_number": "425311",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4864,6 +5874,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1010",
+        "cms_certification_number": "425312",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4901,6 +5919,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1013",
+        "cms_certification_number": "425314",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4938,6 +5964,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0922NF",
+        "cms_certification_number": "425315",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -4975,6 +6009,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0857NF",
+        "cms_certification_number": "425316",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5012,6 +6054,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1023",
+        "cms_certification_number": "425317",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5049,6 +6099,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0755NF",
+        "cms_certification_number": "425319",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5086,6 +6144,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0569NH",
+        "cms_certification_number": "425320",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5123,6 +6189,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0730NF",
+        "cms_certification_number": "425321",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5160,6 +6234,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0570NH",
+        "cms_certification_number": "425322",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5197,6 +6279,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0573NH",
+        "cms_certification_number": "425323",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5234,6 +6324,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0574NH",
+        "cms_certification_number": "425324",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5271,6 +6369,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425325",
+        "cms_certification_number": "425325",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -5308,6 +6415,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0932NF",
+        "cms_certification_number": "425326",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5345,6 +6460,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0878NF",
+        "cms_certification_number": "425332",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5382,6 +6505,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0629NH",
+        "cms_certification_number": "425333",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5419,6 +6550,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0435NF",
+        "cms_certification_number": "425334",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5456,6 +6595,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0634NF",
+        "cms_certification_number": "425337",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5493,6 +6640,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0738NF",
+        "cms_certification_number": "425341",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5530,6 +6685,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NN",
+        "cms_certification_number": "425351",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5567,6 +6730,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0722NF",
+        "cms_certification_number": "425352",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5604,6 +6775,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0732NH",
+        "cms_certification_number": "425359",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5641,6 +6820,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0726NF",
+        "cms_certification_number": "425360",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5678,6 +6865,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0869NF",
+        "cms_certification_number": "425361",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5715,6 +6910,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1001",
+        "cms_certification_number": "425362",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5752,6 +6955,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1014",
+        "cms_certification_number": "425368",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5789,6 +7000,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0946NF",
+        "cms_certification_number": "425370",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5826,6 +7045,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0189NF",
+        "cms_certification_number": "425372",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -5863,6 +7090,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425373",
+        "cms_certification_number": "425373",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -5900,6 +7136,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425374",
+        "cms_certification_number": "425374",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -5937,6 +7182,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425375",
+        "cms_certification_number": "425375",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -5974,6 +7228,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425376",
+        "cms_certification_number": "425376",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6011,6 +7274,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0837NF",
+        "cms_certification_number": "425379",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -6048,6 +7319,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425380",
+        "cms_certification_number": "425380",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6085,6 +7365,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425381",
+        "cms_certification_number": "425381",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6122,6 +7411,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425384",
+        "cms_certification_number": "425384",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6159,6 +7457,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425385",
+        "cms_certification_number": "425385",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6196,6 +7503,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0921NF",
+        "cms_certification_number": "425386",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -6233,6 +7548,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425387",
+        "cms_certification_number": "425387",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6270,6 +7594,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425388",
+        "cms_certification_number": "425388",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6307,6 +7640,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425389",
+        "cms_certification_number": "425389",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6344,6 +7686,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425390",
+        "cms_certification_number": "425390",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6381,6 +7732,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0870NF",
+        "cms_certification_number": "425391",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -6418,6 +7777,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425392",
+        "cms_certification_number": "425392",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6455,6 +7823,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425393",
+        "cms_certification_number": "425393",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6492,6 +7869,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425394",
+        "cms_certification_number": "425394",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6529,6 +7915,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425395",
+        "cms_certification_number": "425395",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6566,6 +7961,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1034",
+        "cms_certification_number": "425396",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -6603,6 +8006,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1008",
+        "cms_certification_number": "425397",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -6640,6 +8051,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NF1012",
+        "cms_certification_number": "425400",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -6677,6 +8096,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425401",
+        "cms_certification_number": "425401",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6714,6 +8142,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425403",
+        "cms_certification_number": "425403",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6751,6 +8188,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425406",
+        "cms_certification_number": "425406",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6788,6 +8234,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425407",
+        "cms_certification_number": "425407",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6825,6 +8280,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425408",
+        "cms_certification_number": "425408",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6862,6 +8326,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425411",
+        "cms_certification_number": "425411",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6899,6 +8372,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425412",
+        "cms_certification_number": "425412",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6936,6 +8418,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425413",
+        "cms_certification_number": "425413",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -6973,6 +8464,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425414",
+        "cms_certification_number": "425414",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -7010,6 +8510,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425415",
+        "cms_certification_number": "425415",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -7047,6 +8556,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425416",
+        "cms_certification_number": "425416",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -7084,6 +8602,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425418",
+        "cms_certification_number": "425418",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -7121,6 +8648,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "425419",
+        "cms_certification_number": "425419",
+        "issuing_agency": "South Carolina Department of Health and Environmental Control",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     }
   ]

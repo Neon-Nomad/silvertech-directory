@@ -495,6 +495,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5002",
+        "cms_certification_number": "495002",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.76"
       }
     },
     {
@@ -532,6 +540,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4950119",
+        "cms_certification_number": "495011",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -569,6 +585,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4950135",
+        "cms_certification_number": "495013",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -606,6 +630,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5015",
+        "cms_certification_number": "495015",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.94"
       }
     },
     {
@@ -643,6 +675,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5019",
+        "cms_certification_number": "495019",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.82"
       }
     },
     {
@@ -680,6 +720,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5034",
+        "cms_certification_number": "495034",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -717,6 +765,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5038",
+        "cms_certification_number": "495038",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.88"
       }
     },
     {
@@ -754,6 +810,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4950453",
+        "cms_certification_number": "495045",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -791,6 +855,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4950461",
+        "cms_certification_number": "495046",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -828,6 +900,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5057",
+        "cms_certification_number": "495057",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -865,6 +945,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5068",
+        "cms_certification_number": "495068",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -902,6 +990,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4958535",
+        "cms_certification_number": "495071",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -939,6 +1035,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4950771",
+        "cms_certification_number": "495077",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -976,6 +1080,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4950798",
+        "cms_certification_number": "495079",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -1013,6 +1125,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5085",
+        "cms_certification_number": "495085",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -1050,6 +1170,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5086",
+        "cms_certification_number": "495086",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -1087,6 +1215,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4950879",
+        "cms_certification_number": "495087",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -1124,6 +1260,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5092",
+        "cms_certification_number": "495092",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -1161,6 +1305,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5093",
+        "cms_certification_number": "495093",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.72"
       }
     },
     {
@@ -1198,6 +1350,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5096",
+        "cms_certification_number": "495096",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -1235,6 +1395,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5097",
+        "cms_certification_number": "495097",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.97"
       }
     },
     {
@@ -1272,6 +1440,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5099",
+        "cms_certification_number": "495099",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.95"
       }
     },
     {
@@ -1309,6 +1485,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4951026",
+        "cms_certification_number": "495102",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -1346,6 +1530,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5105",
+        "cms_certification_number": "495105",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -1383,6 +1575,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5107",
+        "cms_certification_number": "495107",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.90"
       }
     },
     {
@@ -1420,6 +1620,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5108",
+        "cms_certification_number": "495108",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -1457,6 +1665,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NH2705",
+        "cms_certification_number": "495109",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Skilled Nursing Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (495109) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1821109117"
       }
     },
     {
@@ -1494,6 +1713,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5112",
+        "cms_certification_number": "495112",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -1531,6 +1758,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4957504",
+        "cms_certification_number": "495113",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -1568,6 +1803,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5114",
+        "cms_certification_number": "495114",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -1605,6 +1848,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4951131",
+        "cms_certification_number": "495115",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -1642,6 +1893,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4951174",
+        "cms_certification_number": "495117",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -1679,6 +1938,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5118",
+        "cms_certification_number": "495118",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -1716,6 +1983,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5120",
+        "cms_certification_number": "495120",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -1753,6 +2028,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5121",
+        "cms_certification_number": "495121",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.89"
       }
     },
     {
@@ -1790,6 +2073,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5123",
+        "cms_certification_number": "495123",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.92"
       }
     },
     {
@@ -1827,6 +2118,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4951263",
+        "cms_certification_number": "495126",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -1864,6 +2163,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NH2724",
+        "cms_certification_number": "495127",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (495127) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1073541645"
       }
     },
     {
@@ -1901,6 +2211,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5131",
+        "cms_certification_number": "495131",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.94"
       }
     },
     {
@@ -1938,6 +2256,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5133",
+        "cms_certification_number": "495133",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -1975,6 +2301,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5134",
+        "cms_certification_number": "495134",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2012,6 +2346,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5135",
+        "cms_certification_number": "495135",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2049,6 +2391,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5139",
+        "cms_certification_number": "495139",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2086,6 +2436,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5140",
+        "cms_certification_number": "495140",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2123,6 +2481,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5141",
+        "cms_certification_number": "495141",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2160,6 +2526,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5142",
+        "cms_certification_number": "495142",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2197,6 +2571,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5143",
+        "cms_certification_number": "495143",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2234,6 +2616,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5144",
+        "cms_certification_number": "495144",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2271,6 +2661,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4951468",
+        "cms_certification_number": "495146",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -2308,6 +2706,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4951476",
+        "cms_certification_number": "495147",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -2345,6 +2751,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5149",
+        "cms_certification_number": "495149",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2382,6 +2796,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4951506",
+        "cms_certification_number": "495150",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -2419,6 +2841,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4951514",
+        "cms_certification_number": "495151",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -2456,6 +2886,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5152",
+        "cms_certification_number": "495152",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2493,6 +2931,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5153",
+        "cms_certification_number": "495153",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2530,6 +2976,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5155",
+        "cms_certification_number": "495155",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2567,6 +3021,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4951565",
+        "cms_certification_number": "495156",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -2604,6 +3066,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5157",
+        "cms_certification_number": "495157",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.93"
       }
     },
     {
@@ -2641,6 +3111,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5160",
+        "cms_certification_number": "495160",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2678,6 +3156,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5165",
+        "cms_certification_number": "495165",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2715,6 +3201,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5166",
+        "cms_certification_number": "495166",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.72"
       }
     },
     {
@@ -2752,6 +3246,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5167",
+        "cms_certification_number": "495167",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.79"
       }
     },
     {
@@ -2789,6 +3291,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5168",
+        "cms_certification_number": "495168",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2826,6 +3336,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5171",
+        "cms_certification_number": "495171",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2863,6 +3381,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5173",
+        "cms_certification_number": "495173",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -2900,6 +3426,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5174",
+        "cms_certification_number": "495174",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.87"
       }
     },
     {
@@ -2937,6 +3471,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "004951778",
+        "cms_certification_number": "495177",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -2974,6 +3516,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5178",
+        "cms_certification_number": "495178",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.88"
       }
     },
     {
@@ -3011,6 +3561,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4951794",
+        "cms_certification_number": "495179",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -3048,6 +3606,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5181",
+        "cms_certification_number": "495181",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3085,6 +3651,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5183",
+        "cms_certification_number": "495183",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3122,6 +3696,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5184",
+        "cms_certification_number": "495184",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3159,6 +3741,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5185",
+        "cms_certification_number": "495185",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3196,6 +3786,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5150",
+        "cms_certification_number": "495186",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.72"
       }
     },
     {
@@ -3233,6 +3831,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5187",
+        "cms_certification_number": "495187",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3270,6 +3876,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5188",
+        "cms_certification_number": "495188",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3307,6 +3921,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5189",
+        "cms_certification_number": "495189",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.88"
       }
     },
     {
@@ -3344,6 +3966,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5190",
+        "cms_certification_number": "495190",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.99"
       }
     },
     {
@@ -3381,6 +4011,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5191",
+        "cms_certification_number": "495191",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3418,6 +4056,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5192",
+        "cms_certification_number": "495192",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.74"
       }
     },
     {
@@ -3455,6 +4101,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5193",
+        "cms_certification_number": "495193",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3492,6 +4146,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5194",
+        "cms_certification_number": "495194",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3529,6 +4191,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5196",
+        "cms_certification_number": "495196",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3566,6 +4236,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5197",
+        "cms_certification_number": "495197",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.78"
       }
     },
     {
@@ -3603,6 +4281,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5199",
+        "cms_certification_number": "495199",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.90"
       }
     },
     {
@@ -3640,6 +4326,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5200",
+        "cms_certification_number": "495200",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3677,6 +4371,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5201",
+        "cms_certification_number": "495201",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3714,6 +4416,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5202",
+        "cms_certification_number": "495202",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.87"
       }
     },
     {
@@ -3751,6 +4461,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "004952031",
+        "cms_certification_number": "495203",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -3788,6 +4506,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5204",
+        "cms_certification_number": "495204",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3825,6 +4551,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952057",
+        "cms_certification_number": "495205",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -3862,6 +4596,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5247",
+        "cms_certification_number": "495206",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.78"
       }
     },
     {
@@ -3899,6 +4641,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5207",
+        "cms_certification_number": "495207",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3936,6 +4686,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5209",
+        "cms_certification_number": "495209",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -3973,6 +4731,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5210",
+        "cms_certification_number": "495210",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.88"
       }
     },
     {
@@ -4010,6 +4776,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952111",
+        "cms_certification_number": "495211",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4047,6 +4821,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5213",
+        "cms_certification_number": "495213",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -4084,6 +4866,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5214",
+        "cms_certification_number": "495214",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.73"
       }
     },
     {
@@ -4121,6 +4911,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952154",
+        "cms_certification_number": "495215",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4158,6 +4956,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5216",
+        "cms_certification_number": "495216",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.90"
       }
     },
     {
@@ -4195,6 +5001,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952171",
+        "cms_certification_number": "495217",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4232,6 +5046,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952189",
+        "cms_certification_number": "495218",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4269,6 +5091,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5220",
+        "cms_certification_number": "495220",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.81"
       }
     },
     {
@@ -4306,6 +5136,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952219",
+        "cms_certification_number": "495221",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4343,6 +5181,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5225",
+        "cms_certification_number": "495225",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.91"
       }
     },
     {
@@ -4380,6 +5226,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5226",
+        "cms_certification_number": "495226",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -4417,6 +5271,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5227",
+        "cms_certification_number": "495227",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.95"
       }
     },
     {
@@ -4454,6 +5316,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952308",
+        "cms_certification_number": "495230",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4491,6 +5361,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5232",
+        "cms_certification_number": "495232",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -4528,6 +5406,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952332",
+        "cms_certification_number": "495233",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4565,6 +5451,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5086",
+        "cms_certification_number": "495234",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.90"
       }
     },
     {
@@ -4602,6 +5496,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5235",
+        "cms_certification_number": "495235",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.73"
       }
     },
     {
@@ -4639,6 +5541,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "004952367",
+        "cms_certification_number": "495236",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4676,6 +5586,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5237",
+        "cms_certification_number": "495237",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.93"
       }
     },
     {
@@ -4713,6 +5631,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952405",
+        "cms_certification_number": "495240",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4750,6 +5676,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5241",
+        "cms_certification_number": "495241",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -4787,6 +5721,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5242",
+        "cms_certification_number": "495242",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -4824,6 +5766,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952430",
+        "cms_certification_number": "495243",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4861,6 +5811,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5244",
+        "cms_certification_number": "495244",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -4898,6 +5856,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5246",
+        "cms_certification_number": "495246",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -4935,6 +5901,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5247",
+        "cms_certification_number": "495247",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -4972,6 +5946,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5248",
+        "cms_certification_number": "495248",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.86"
       }
     },
     {
@@ -5009,6 +5991,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5249",
+        "cms_certification_number": "495249",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5046,6 +6036,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5250",
+        "cms_certification_number": "495250",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.90"
       }
     },
     {
@@ -5083,6 +6081,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5252",
+        "cms_certification_number": "495252",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5120,6 +6126,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952537",
+        "cms_certification_number": "495253",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -5157,6 +6171,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5254",
+        "cms_certification_number": "495254",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5194,6 +6216,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "004952553",
+        "cms_certification_number": "495255",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -5231,6 +6261,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952561",
+        "cms_certification_number": "495256",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -5268,6 +6306,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5257",
+        "cms_certification_number": "495257",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5305,6 +6351,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5258",
+        "cms_certification_number": "495258",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5342,6 +6396,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5259",
+        "cms_certification_number": "495259",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5379,6 +6441,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952600",
+        "cms_certification_number": "495260",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -5416,6 +6486,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5261",
+        "cms_certification_number": "495261",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5453,6 +6531,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5262",
+        "cms_certification_number": "495262",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5490,6 +6576,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5264",
+        "cms_certification_number": "495264",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5527,6 +6621,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5266",
+        "cms_certification_number": "495266",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.88"
       }
     },
     {
@@ -5564,6 +6666,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5267",
+        "cms_certification_number": "495267",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.81"
       }
     },
     {
@@ -5601,6 +6711,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5268",
+        "cms_certification_number": "495268",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5638,6 +6756,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5269",
+        "cms_certification_number": "495269",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5675,6 +6801,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5270",
+        "cms_certification_number": "495270",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.83"
       }
     },
     {
@@ -5712,6 +6846,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5272",
+        "cms_certification_number": "495272",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5749,6 +6891,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5273",
+        "cms_certification_number": "495273",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5786,6 +6936,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5274",
+        "cms_certification_number": "495274",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5823,6 +6981,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952758",
+        "cms_certification_number": "495275",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -5860,6 +7026,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952766",
+        "cms_certification_number": "495276",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -5897,6 +7071,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952774",
+        "cms_certification_number": "495277",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -5934,6 +7116,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5279",
+        "cms_certification_number": "495279",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -5971,6 +7161,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5280",
+        "cms_certification_number": "495280",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6008,6 +7206,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5282",
+        "cms_certification_number": "495282",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6045,6 +7251,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952839",
+        "cms_certification_number": "495283",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6082,6 +7296,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952863",
+        "cms_certification_number": "495286",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6119,6 +7341,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952871",
+        "cms_certification_number": "495287",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6156,6 +7386,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4952910",
+        "cms_certification_number": "495291",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6193,6 +7431,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5293",
+        "cms_certification_number": "495293",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.72"
       }
     },
     {
@@ -6230,6 +7476,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5294",
+        "cms_certification_number": "495294",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.73"
       }
     },
     {
@@ -6267,6 +7521,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5295",
+        "cms_certification_number": "495295",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.81"
       }
     },
     {
@@ -6304,6 +7566,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5296",
+        "cms_certification_number": "495296",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6341,6 +7611,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5297",
+        "cms_certification_number": "495297",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6378,6 +7656,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5299",
+        "cms_certification_number": "495299",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.94"
       }
     },
     {
@@ -6415,6 +7701,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5300",
+        "cms_certification_number": "495300",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6452,6 +7746,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5301",
+        "cms_certification_number": "495301",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6489,6 +7791,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5302",
+        "cms_certification_number": "495302",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6526,6 +7836,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953037",
+        "cms_certification_number": "495303",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6563,6 +7881,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953053",
+        "cms_certification_number": "495305",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6600,6 +7926,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5306",
+        "cms_certification_number": "495306",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6637,6 +7971,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953088",
+        "cms_certification_number": "495308",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6674,6 +8016,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953096",
+        "cms_certification_number": "495309",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6711,6 +8061,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5311",
+        "cms_certification_number": "495311",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6748,6 +8106,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5312",
+        "cms_certification_number": "495312",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.90"
       }
     },
     {
@@ -6785,6 +8151,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953151",
+        "cms_certification_number": "495315",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6822,6 +8196,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5316",
+        "cms_certification_number": "495316",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6859,6 +8241,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5317",
+        "cms_certification_number": "495317",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6896,6 +8286,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5318",
+        "cms_certification_number": "495318",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6933,6 +8331,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5319",
+        "cms_certification_number": "495319",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -6970,6 +8376,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5320",
+        "cms_certification_number": "495320",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7007,6 +8421,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5321",
+        "cms_certification_number": "495321",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7044,6 +8466,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5323",
+        "cms_certification_number": "495323",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7081,6 +8511,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5324",
+        "cms_certification_number": "495324",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.88"
       }
     },
     {
@@ -7118,6 +8556,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5325",
+        "cms_certification_number": "495325",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.92"
       }
     },
     {
@@ -7155,6 +8601,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5326",
+        "cms_certification_number": "495326",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7192,6 +8646,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953274",
+        "cms_certification_number": "495327",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -7229,6 +8691,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5328",
+        "cms_certification_number": "495328",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7266,6 +8736,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5330",
+        "cms_certification_number": "495330",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7303,6 +8781,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5331",
+        "cms_certification_number": "495331",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7340,6 +8826,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953321",
+        "cms_certification_number": "495332",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -7377,6 +8871,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NH2588",
+        "cms_certification_number": "495333",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (495333) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1033180534"
       }
     },
     {
@@ -7414,6 +8919,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5334",
+        "cms_certification_number": "495334",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7451,6 +8964,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5336",
+        "cms_certification_number": "495336",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.88"
       }
     },
     {
@@ -7488,6 +9009,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953371",
+        "cms_certification_number": "495337",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -7525,6 +9054,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953380",
+        "cms_certification_number": "495338",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -7562,6 +9099,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5339",
+        "cms_certification_number": "495339",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7599,6 +9144,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5340",
+        "cms_certification_number": "495340",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.87"
       }
     },
     {
@@ -7636,6 +9189,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5342",
+        "cms_certification_number": "495342",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.73"
       }
     },
     {
@@ -7673,6 +9234,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "004953436",
+        "cms_certification_number": "495343",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -7710,6 +9279,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953444",
+        "cms_certification_number": "495344",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -7747,6 +9324,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953452",
+        "cms_certification_number": "495345",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -7784,6 +9369,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5347",
+        "cms_certification_number": "495347",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7821,6 +9414,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5348",
+        "cms_certification_number": "495348",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7858,6 +9459,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5349",
+        "cms_certification_number": "495349",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7895,6 +9504,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5350",
+        "cms_certification_number": "495350",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7932,6 +9549,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5352",
+        "cms_certification_number": "495352",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -7969,6 +9594,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5353",
+        "cms_certification_number": "495353",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8006,6 +9639,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5354",
+        "cms_certification_number": "495354",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8043,6 +9684,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5355",
+        "cms_certification_number": "495355",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8080,6 +9729,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5356",
+        "cms_certification_number": "495356",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8117,6 +9774,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5357",
+        "cms_certification_number": "495357",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8154,6 +9819,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "004953584",
+        "cms_certification_number": "495358",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -8191,6 +9864,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5359",
+        "cms_certification_number": "495359",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.78"
       }
     },
     {
@@ -8228,6 +9909,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5360",
+        "cms_certification_number": "495360",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.89"
       }
     },
     {
@@ -8265,6 +9954,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953614",
+        "cms_certification_number": "495361",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -8302,6 +9999,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5362",
+        "cms_certification_number": "495362",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.88"
       }
     },
     {
@@ -8339,6 +10044,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4967232",
+        "cms_certification_number": "495363",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -8376,6 +10089,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5364",
+        "cms_certification_number": "495364",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8413,6 +10134,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953657",
+        "cms_certification_number": "495365",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -8450,6 +10179,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5366",
+        "cms_certification_number": "495366",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8487,6 +10224,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4968093",
+        "cms_certification_number": "495367",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -8524,6 +10269,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5368",
+        "cms_certification_number": "495368",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8561,6 +10314,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "495369",
+        "cms_certification_number": "495369",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -8598,6 +10360,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5370",
+        "cms_certification_number": "495370",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8635,6 +10405,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5371",
+        "cms_certification_number": "495371",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8672,6 +10450,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4953223",
+        "cms_certification_number": "495372",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -8709,6 +10495,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5373",
+        "cms_certification_number": "495373",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8746,6 +10540,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4967267",
+        "cms_certification_number": "495374",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -8783,6 +10585,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5375",
+        "cms_certification_number": "495375",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8820,6 +10630,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NH2754",
+        "cms_certification_number": "495377",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Skilled Nursing Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (495377) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1578519500"
       }
     },
     {
@@ -8857,6 +10678,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5378",
+        "cms_certification_number": "495378",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.89"
       }
     },
     {
@@ -8894,6 +10723,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4960793",
+        "cms_certification_number": "495379",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -8931,6 +10768,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5380",
+        "cms_certification_number": "495380",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -8968,6 +10813,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5381",
+        "cms_certification_number": "495381",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.87"
       }
     },
     {
@@ -9005,6 +10858,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "495383",
+        "cms_certification_number": "495383",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -9042,6 +10904,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5384",
+        "cms_certification_number": "495384",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9079,6 +10949,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5385",
+        "cms_certification_number": "495385",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9116,6 +10994,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5386",
+        "cms_certification_number": "495386",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9153,6 +11039,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5387",
+        "cms_certification_number": "495387",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.85"
       }
     },
     {
@@ -9190,6 +11084,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5388",
+        "cms_certification_number": "495388",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.90"
       }
     },
     {
@@ -9227,6 +11129,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4965370",
+        "cms_certification_number": "495389",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -9264,6 +11174,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5390",
+        "cms_certification_number": "495390",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9301,6 +11219,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5391",
+        "cms_certification_number": "495391",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.83"
       }
     },
     {
@@ -9338,6 +11264,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4968379",
+        "cms_certification_number": "495392",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -9375,6 +11309,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5393",
+        "cms_certification_number": "495393",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.92"
       }
     },
     {
@@ -9412,6 +11354,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5394",
+        "cms_certification_number": "495394",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9449,6 +11399,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5395",
+        "cms_certification_number": "495395",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9486,6 +11444,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5396",
+        "cms_certification_number": "495396",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.87"
       }
     },
     {
@@ -9523,6 +11489,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5397",
+        "cms_certification_number": "495397",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9560,6 +11534,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5398",
+        "cms_certification_number": "495398",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9597,6 +11579,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5399",
+        "cms_certification_number": "495399",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9634,6 +11624,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5400",
+        "cms_certification_number": "495400",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9671,6 +11669,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5401",
+        "cms_certification_number": "495401",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9708,6 +11714,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5402",
+        "cms_certification_number": "495402",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9745,6 +11759,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5403",
+        "cms_certification_number": "495403",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9782,6 +11804,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5404",
+        "cms_certification_number": "495404",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -9819,6 +11849,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4960726",
+        "cms_certification_number": "495405",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -9856,6 +11894,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5406",
+        "cms_certification_number": "495406",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.92"
       }
     },
     {
@@ -9893,6 +11939,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "495407",
+        "cms_certification_number": "495407",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -9930,6 +11985,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5408",
+        "cms_certification_number": "495408",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.95"
       }
     },
     {
@@ -9967,6 +12030,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5409",
+        "cms_certification_number": "495409",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.87"
       }
     },
     {
@@ -10004,6 +12075,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5410",
+        "cms_certification_number": "495410",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -10041,6 +12120,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "495411",
+        "cms_certification_number": "495411",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -10078,6 +12166,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "495412",
+        "cms_certification_number": "495412",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -10115,6 +12212,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5413",
+        "cms_certification_number": "495413",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -10152,6 +12257,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5415",
+        "cms_certification_number": "495415",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -10189,6 +12302,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5416",
+        "cms_certification_number": "495416",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -10226,6 +12347,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "495417",
+        "cms_certification_number": "495417",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -10263,6 +12393,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5419",
+        "cms_certification_number": "495419",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -10300,6 +12438,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5420",
+        "cms_certification_number": "495420",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.86"
       }
     },
     {
@@ -10337,6 +12483,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5421",
+        "cms_certification_number": "495421",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -10374,6 +12528,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5422",
+        "cms_certification_number": "495422",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.88"
       }
     },
     {
@@ -10411,6 +12573,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5272",
+        "cms_certification_number": "495423",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.74"
       }
     },
     {
@@ -10448,6 +12618,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "495424",
+        "cms_certification_number": "495424",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -10485,6 +12664,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5425",
+        "cms_certification_number": "495425",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -10522,6 +12709,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5426",
+        "cms_certification_number": "495426",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.92"
       }
     },
     {
@@ -10559,6 +12754,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "495427",
+        "cms_certification_number": "495427",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -10596,6 +12800,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-E151",
+        "cms_certification_number": "495428",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -10633,6 +12845,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4967348",
+        "cms_certification_number": "495429",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -10670,6 +12890,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4966767",
+        "cms_certification_number": "495430",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -10707,6 +12935,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-5431",
+        "cms_certification_number": "495431",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -10744,6 +12980,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NP",
+        "cms_certification_number": "495432",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -10781,6 +13025,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "495433",
+        "cms_certification_number": "495433",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -10818,6 +13071,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NP",
+        "cms_certification_number": "495434",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     },
     {
@@ -10855,6 +13116,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NH2649",
+        "cms_certification_number": "49A007",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (49A007) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1013081314"
       }
     },
     {
@@ -10892,6 +13164,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49A022",
+        "cms_certification_number": "49A022",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -10929,6 +13210,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NH2499",
+        "cms_certification_number": "49E004",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (49E004) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1669440715"
       }
     },
     {
@@ -10966,6 +13258,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NH2635",
+        "cms_certification_number": "49E050",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (49E050) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1861422644"
       }
     },
     {
@@ -11003,6 +13306,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-E075",
+        "cms_certification_number": "49E075",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_0.85"
       }
     },
     {
@@ -11040,6 +13351,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NH2692",
+        "cms_certification_number": "49E076",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (49E076) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1225061583"
       }
     },
     {
@@ -11077,6 +13399,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NH2710",
+        "cms_certification_number": "49E084",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (49E084) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1669432951"
       }
     },
     {
@@ -11114,6 +13447,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4966350",
+        "cms_certification_number": "49E131",
+        "issuing_agency": "Virginia Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -11151,6 +13492,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49-E256",
+        "cms_certification_number": "49E256",
+        "issuing_agency": "VA State Health Department",
+        "license_type": "Nursing Home License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "fuzzy_name_city_1.00"
       }
     }
   ]

@@ -139,6 +139,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "11103L",
+        "cms_certification_number": "315001",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -176,6 +185,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315002",
+        "cms_certification_number": "315002",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -213,6 +231,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062008",
+        "cms_certification_number": "315005",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -250,6 +277,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060405",
+        "cms_certification_number": "315008",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -287,6 +323,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "22001L",
+        "cms_certification_number": "315009",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -324,6 +369,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "32003",
+        "cms_certification_number": "315010",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -361,6 +415,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060403",
+        "cms_certification_number": "315013",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -398,6 +461,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061704",
+        "cms_certification_number": "315014",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -435,6 +507,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061217",
+        "cms_certification_number": "315015",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -472,6 +553,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "10201L",
+        "cms_certification_number": "315017",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -509,6 +599,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "11402L",
+        "cms_certification_number": "315019",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -546,6 +645,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "031601",
+        "cms_certification_number": "315021",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -583,6 +691,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "031102",
+        "cms_certification_number": "315022",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -620,6 +737,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030703",
+        "cms_certification_number": "315029",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -657,6 +783,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060706",
+        "cms_certification_number": "315036",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -694,6 +829,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060217",
+        "cms_certification_number": "315037",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -731,6 +875,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060739",
+        "cms_certification_number": "315038",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -768,6 +921,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "021203",
+        "cms_certification_number": "315039",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -805,6 +967,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061408",
+        "cms_certification_number": "315042",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -842,6 +1013,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061902",
+        "cms_certification_number": "315044",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -879,6 +1059,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060314",
+        "cms_certification_number": "315047",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -916,6 +1105,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060301",
+        "cms_certification_number": "315050",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -953,6 +1151,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061413",
+        "cms_certification_number": "315053",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -990,6 +1197,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060106",
+        "cms_certification_number": "315054",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1027,6 +1243,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061304",
+        "cms_certification_number": "315056",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1064,6 +1289,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061410",
+        "cms_certification_number": "315057",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1101,6 +1335,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061703",
+        "cms_certification_number": "315058",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1138,6 +1381,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30402",
+        "cms_certification_number": "315060",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1175,6 +1427,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060602",
+        "cms_certification_number": "315061",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1212,6 +1473,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062002",
+        "cms_certification_number": "315064",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1249,6 +1519,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060714",
+        "cms_certification_number": "315066",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1286,6 +1565,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060402",
+        "cms_certification_number": "315068",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1323,6 +1611,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061331",
+        "cms_certification_number": "315069",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1360,6 +1657,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "031402",
+        "cms_certification_number": "315072",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1397,6 +1703,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315077",
+        "cms_certification_number": "315077",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1434,6 +1749,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060909",
+        "cms_certification_number": "315083",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1471,6 +1795,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061605",
+        "cms_certification_number": "315085",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1508,6 +1841,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061315",
+        "cms_certification_number": "315087",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1545,6 +1887,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062006",
+        "cms_certification_number": "315091",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1582,6 +1933,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061312",
+        "cms_certification_number": "315092",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1619,6 +1979,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061106",
+        "cms_certification_number": "315094",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1656,6 +2025,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061620",
+        "cms_certification_number": "315096",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1693,6 +2071,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062009",
+        "cms_certification_number": "315101",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1730,6 +2117,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061614",
+        "cms_certification_number": "315103",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1767,6 +2163,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062004",
+        "cms_certification_number": "315104",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1804,6 +2209,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061317",
+        "cms_certification_number": "315105",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1841,6 +2255,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "62007X",
+        "cms_certification_number": "315106",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1878,6 +2301,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0485713",
+        "cms_certification_number": "315110",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -1915,6 +2346,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "61105",
+        "cms_certification_number": "315111",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1952,6 +2392,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060902",
+        "cms_certification_number": "315112",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1989,6 +2438,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061104",
+        "cms_certification_number": "315113",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2026,6 +2484,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061504",
+        "cms_certification_number": "315115",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2063,6 +2530,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061301",
+        "cms_certification_number": "315119",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2100,6 +2576,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061407",
+        "cms_certification_number": "315120",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2137,6 +2622,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062013",
+        "cms_certification_number": "315122",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2174,6 +2668,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061101",
+        "cms_certification_number": "315124",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2211,6 +2714,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061501",
+        "cms_certification_number": "315125",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2248,6 +2760,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060601",
+        "cms_certification_number": "315126",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2285,6 +2806,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "21126L",
+        "cms_certification_number": "315127",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2322,6 +2852,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "60310",
+        "cms_certification_number": "315128",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2359,6 +2898,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060207",
+        "cms_certification_number": "315129",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2396,6 +2944,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061202",
+        "cms_certification_number": "315132",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2433,6 +2990,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060221",
+        "cms_certification_number": "315133",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2470,6 +3036,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061806",
+        "cms_certification_number": "315134",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2507,6 +3082,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061502",
+        "cms_certification_number": "315135",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2544,6 +3128,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061326",
+        "cms_certification_number": "315136",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2581,6 +3174,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061903",
+        "cms_certification_number": "315137",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2618,6 +3220,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061416",
+        "cms_certification_number": "315138",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2655,6 +3266,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061809",
+        "cms_certification_number": "315140",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2692,6 +3312,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061805",
+        "cms_certification_number": "315141",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2729,6 +3358,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061611",
+        "cms_certification_number": "315142",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2766,6 +3404,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061406",
+        "cms_certification_number": "315143",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2803,6 +3450,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315144",
+        "cms_certification_number": "315144",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -2840,6 +3496,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315146",
+        "cms_certification_number": "315146",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -2877,6 +3542,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060704",
+        "cms_certification_number": "315147",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2914,6 +3588,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060205",
+        "cms_certification_number": "315152",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2951,6 +3634,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061307",
+        "cms_certification_number": "315153",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2988,6 +3680,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061417",
+        "cms_certification_number": "315157",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3025,6 +3726,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060215",
+        "cms_certification_number": "315158",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3062,6 +3772,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060411",
+        "cms_certification_number": "315159",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3099,6 +3818,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060206",
+        "cms_certification_number": "315164",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3136,6 +3864,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030306",
+        "cms_certification_number": "315166",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3173,6 +3910,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060223",
+        "cms_certification_number": "315171",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3210,6 +3956,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060804",
+        "cms_certification_number": "315174",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3247,6 +4002,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060313",
+        "cms_certification_number": "315176",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3284,6 +4048,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061305",
+        "cms_certification_number": "315177",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3321,6 +4094,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060722",
+        "cms_certification_number": "315178",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3358,6 +4140,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060505",
+        "cms_certification_number": "315179",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3395,6 +4186,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061209",
+        "cms_certification_number": "315180",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3432,6 +4232,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061811",
+        "cms_certification_number": "315182",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3469,6 +4278,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060409",
+        "cms_certification_number": "315183",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3506,6 +4324,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060104",
+        "cms_certification_number": "315185",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3543,6 +4370,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060408",
+        "cms_certification_number": "315187",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3580,6 +4416,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061515",
+        "cms_certification_number": "315190",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3617,6 +4462,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "10909",
+        "cms_certification_number": "315192",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3654,6 +4508,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060503",
+        "cms_certification_number": "315193",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.99",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3691,6 +4554,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060737",
+        "cms_certification_number": "315194",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3728,6 +4600,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062016",
+        "cms_certification_number": "315195",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3765,6 +4646,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "61517",
+        "cms_certification_number": "315196",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3802,6 +4692,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062018",
+        "cms_certification_number": "315198",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3839,6 +4738,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061335",
+        "cms_certification_number": "315199",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3876,6 +4784,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062017",
+        "cms_certification_number": "315200",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3913,6 +4830,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030305",
+        "cms_certification_number": "315201",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3950,6 +4876,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062105",
+        "cms_certification_number": "315202",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3987,6 +4922,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060729",
+        "cms_certification_number": "315204",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4024,6 +4968,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060412",
+        "cms_certification_number": "315205",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4061,6 +5014,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061520",
+        "cms_certification_number": "315206",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4098,6 +5060,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060413",
+        "cms_certification_number": "315207",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4135,6 +5106,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060113",
+        "cms_certification_number": "315209",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4172,6 +5152,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060102",
+        "cms_certification_number": "315210",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4209,6 +5198,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061518",
+        "cms_certification_number": "315213",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4246,6 +5244,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061216",
+        "cms_certification_number": "315214",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4283,6 +5290,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "031101",
+        "cms_certification_number": "315215",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4320,6 +5336,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060720",
+        "cms_certification_number": "315216",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4357,6 +5382,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062020",
+        "cms_certification_number": "315217",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4394,6 +5428,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061522",
+        "cms_certification_number": "315218",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4431,6 +5474,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060414",
+        "cms_certification_number": "315219",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4468,6 +5520,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061627",
+        "cms_certification_number": "315221",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4505,6 +5566,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061524",
+        "cms_certification_number": "315222",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4542,6 +5612,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061111",
+        "cms_certification_number": "315223",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4579,6 +5658,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062103",
+        "cms_certification_number": "315224",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4616,6 +5704,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060415",
+        "cms_certification_number": "315225",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4653,6 +5750,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061007",
+        "cms_certification_number": "315226",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4690,6 +5796,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060507",
+        "cms_certification_number": "315228",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4727,6 +5842,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4495705",
+        "cms_certification_number": "315229",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4764,6 +5887,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060806",
+        "cms_certification_number": "315231",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4801,6 +5933,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060607",
+        "cms_certification_number": "315233",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4838,6 +5979,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061625",
+        "cms_certification_number": "315234",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4875,6 +6025,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061112",
+        "cms_certification_number": "315235",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4912,6 +6071,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060713",
+        "cms_certification_number": "315236",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4949,6 +6117,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061706",
+        "cms_certification_number": "315237",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4986,6 +6163,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "22249L",
+        "cms_certification_number": "315239",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5023,6 +6209,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060608",
+        "cms_certification_number": "315243",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5060,6 +6255,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060115",
+        "cms_certification_number": "315244",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5097,6 +6301,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060417",
+        "cms_certification_number": "315245",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5134,6 +6347,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060807",
+        "cms_certification_number": "315246",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5171,6 +6393,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060734",
+        "cms_certification_number": "315247",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5208,6 +6439,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061409",
+        "cms_certification_number": "315249",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5245,6 +6485,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061218",
+        "cms_certification_number": "315251",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5282,6 +6531,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061342",
+        "cms_certification_number": "315252",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5319,6 +6577,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061812",
+        "cms_certification_number": "315253",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5356,6 +6623,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4478606",
+        "cms_certification_number": "315257",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -5393,6 +6668,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062021",
+        "cms_certification_number": "315259",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5430,6 +6714,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060302",
+        "cms_certification_number": "315260",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5467,6 +6760,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061621",
+        "cms_certification_number": "315261",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5504,6 +6806,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315262",
+        "cms_certification_number": "315262",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -5541,6 +6852,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060307",
+        "cms_certification_number": "315263",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5578,6 +6898,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061529",
+        "cms_certification_number": "315264",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5615,6 +6944,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061531",
+        "cms_certification_number": "315265",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5652,6 +6990,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060733",
+        "cms_certification_number": "315266",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5689,6 +7036,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060418",
+        "cms_certification_number": "315267",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5726,6 +7082,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060732",
+        "cms_certification_number": "315268",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5763,6 +7128,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061219",
+        "cms_certification_number": "315269",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5800,6 +7174,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061702",
+        "cms_certification_number": "315271",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5837,6 +7220,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062022",
+        "cms_certification_number": "315273",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5874,6 +7266,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061532",
+        "cms_certification_number": "315274",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5911,6 +7312,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061519",
+        "cms_certification_number": "315275",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5948,6 +7358,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061612",
+        "cms_certification_number": "315276",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5985,6 +7404,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061205",
+        "cms_certification_number": "315279",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6022,6 +7450,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060407",
+        "cms_certification_number": "315280",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6059,6 +7496,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4489705",
+        "cms_certification_number": "315282",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6096,6 +7541,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062023",
+        "cms_certification_number": "315283",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6133,6 +7587,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061318",
+        "cms_certification_number": "315284",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6170,6 +7633,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061325",
+        "cms_certification_number": "315286",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6207,6 +7679,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061521",
+        "cms_certification_number": "315288",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6244,6 +7725,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060416",
+        "cms_certification_number": "315289",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6281,6 +7771,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060232",
+        "cms_certification_number": "315290",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6318,6 +7817,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4495802",
+        "cms_certification_number": "315291",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6355,6 +7862,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061343",
+        "cms_certification_number": "315292",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6392,6 +7908,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061534",
+        "cms_certification_number": "315293",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6429,6 +7954,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060501",
+        "cms_certification_number": "315294",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6466,6 +8000,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060231",
+        "cms_certification_number": "315295",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6503,6 +8046,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4470800",
+        "cms_certification_number": "315297",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6540,6 +8091,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061533",
+        "cms_certification_number": "315298",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6577,6 +8137,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061341",
+        "cms_certification_number": "315299",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6614,6 +8183,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060906",
+        "cms_certification_number": "315300",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6651,6 +8229,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061004",
+        "cms_certification_number": "315302",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6688,6 +8275,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061411",
+        "cms_certification_number": "315303",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6725,6 +8321,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "62102",
+        "cms_certification_number": "315304",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6762,6 +8367,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061201",
+        "cms_certification_number": "315305",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6799,6 +8413,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060222",
+        "cms_certification_number": "315306",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6836,6 +8459,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060907",
+        "cms_certification_number": "315307",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6873,6 +8505,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061523",
+        "cms_certification_number": "315309",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6910,6 +8551,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060905",
+        "cms_certification_number": "315310",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6947,6 +8597,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062101",
+        "cms_certification_number": "315311",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6984,6 +8643,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061535",
+        "cms_certification_number": "315312",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7021,6 +8689,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315313",
+        "cms_certification_number": "315313",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -7058,6 +8735,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061303",
+        "cms_certification_number": "315314",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7095,6 +8781,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062106",
+        "cms_certification_number": "315316",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7132,6 +8827,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060103",
+        "cms_certification_number": "315317",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7169,6 +8873,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061223",
+        "cms_certification_number": "315318",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7206,6 +8919,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061526",
+        "cms_certification_number": "315320",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7243,6 +8965,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061220",
+        "cms_certification_number": "315321",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7280,6 +9011,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060708",
+        "cms_certification_number": "315322",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7317,6 +9057,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061113",
+        "cms_certification_number": "315324",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7354,6 +9103,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061536",
+        "cms_certification_number": "315327",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7391,6 +9149,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060224",
+        "cms_certification_number": "315328",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7428,6 +9195,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061424",
+        "cms_certification_number": "315329",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7465,6 +9241,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060315",
+        "cms_certification_number": "315330",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7502,6 +9287,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "706000",
+        "cms_certification_number": "315331",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7539,6 +9333,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "080413",
+        "cms_certification_number": "315332",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7576,6 +9379,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061537",
+        "cms_certification_number": "315333",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7613,6 +9425,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061601",
+        "cms_certification_number": "315335",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7650,6 +9471,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061109",
+        "cms_certification_number": "315336",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7687,6 +9517,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061813",
+        "cms_certification_number": "315337",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7724,6 +9563,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "031103",
+        "cms_certification_number": "315338",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7761,6 +9609,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060234",
+        "cms_certification_number": "315339",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7798,6 +9655,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4463102",
+        "cms_certification_number": "315340",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_ccn_fix"
       }
     },
     {
@@ -7835,6 +9700,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062211",
+        "cms_certification_number": "315341",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7872,6 +9746,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "656001",
+        "cms_certification_number": "315342",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7909,6 +9792,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060738",
+        "cms_certification_number": "315343",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7946,6 +9838,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060910",
+        "cms_certification_number": "315344",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7983,6 +9884,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315346",
+        "cms_certification_number": "315346",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -8020,6 +9930,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "7225008",
+        "cms_certification_number": "315347",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -8057,6 +9975,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061631",
+        "cms_certification_number": "315348",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8094,6 +10021,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060210",
+        "cms_certification_number": "315349",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8131,6 +10067,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "62200",
+        "cms_certification_number": "315350",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8168,6 +10113,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061222",
+        "cms_certification_number": "315351",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8205,6 +10159,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062209",
+        "cms_certification_number": "315352",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8242,6 +10205,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061224",
+        "cms_certification_number": "315353",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8279,6 +10251,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061329",
+        "cms_certification_number": "315354",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8316,6 +10297,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061423",
+        "cms_certification_number": "315355",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8353,6 +10343,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315356",
+        "cms_certification_number": "315356",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -8390,6 +10389,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "306000",
+        "cms_certification_number": "315357",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8427,6 +10435,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060101",
+        "cms_certification_number": "315358",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8464,6 +10481,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060736",
+        "cms_certification_number": "315359",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8501,6 +10527,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060202",
+        "cms_certification_number": "315360",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8538,6 +10573,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4497309",
+        "cms_certification_number": "315361",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -8575,6 +10618,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061345",
+        "cms_certification_number": "315362",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8612,6 +10664,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060702",
+        "cms_certification_number": "315363",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8649,6 +10710,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "62214",
+        "cms_certification_number": "315364",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8686,6 +10756,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061344",
+        "cms_certification_number": "315365",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8723,6 +10802,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NJ11952",
+        "cms_certification_number": "315366",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8760,6 +10848,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061801",
+        "cms_certification_number": "315367",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8797,6 +10894,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "60218",
+        "cms_certification_number": "315369",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8834,6 +10940,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "62202",
+        "cms_certification_number": "315370",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8871,6 +10986,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060721",
+        "cms_certification_number": "315372",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8908,6 +11032,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "62207",
+        "cms_certification_number": "315374",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8945,6 +11078,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "62203",
+        "cms_certification_number": "315375",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8982,6 +11124,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "4463501",
+        "cms_certification_number": "315376",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -9019,6 +11169,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030201",
+        "cms_certification_number": "315377",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9056,6 +11215,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061905",
+        "cms_certification_number": "315378",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9093,6 +11261,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061210",
+        "cms_certification_number": "315381",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9130,6 +11307,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061421",
+        "cms_certification_number": "315383",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9167,6 +11353,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061204",
+        "cms_certification_number": "315384",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9204,6 +11399,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "60203",
+        "cms_certification_number": "315386",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9241,6 +11445,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061314",
+        "cms_certification_number": "315387",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9278,6 +11491,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "062005",
+        "cms_certification_number": "315390",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9315,6 +11537,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030706",
+        "cms_certification_number": "315392",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9352,6 +11583,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060731",
+        "cms_certification_number": "315393",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9389,6 +11629,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030501",
+        "cms_certification_number": "315394",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9426,6 +11675,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060603",
+        "cms_certification_number": "315396",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9463,6 +11721,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061330",
+        "cms_certification_number": "315397",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9500,6 +11767,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030401",
+        "cms_certification_number": "315404",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9537,6 +11813,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060805",
+        "cms_certification_number": "315405",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9574,6 +11859,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061904",
+        "cms_certification_number": "315409",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9611,6 +11905,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030904",
+        "cms_certification_number": "315413",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9648,6 +11951,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061310",
+        "cms_certification_number": "315414",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9685,6 +11997,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30707",
+        "cms_certification_number": "315416",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9722,6 +12043,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030709",
+        "cms_certification_number": "315417",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9759,6 +12089,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030307",
+        "cms_certification_number": "315418",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9796,6 +12135,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "031804",
+        "cms_certification_number": "315419",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9833,6 +12181,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061511",
+        "cms_certification_number": "315421",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9870,6 +12227,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061103",
+        "cms_certification_number": "315423",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9907,6 +12273,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061803",
+        "cms_certification_number": "315425",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9944,6 +12319,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315426",
+        "cms_certification_number": "315426",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -9981,6 +12365,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030801",
+        "cms_certification_number": "315427",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10018,6 +12411,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "62104",
+        "cms_certification_number": "315429",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10055,6 +12457,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061006",
+        "cms_certification_number": "315433",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10092,6 +12503,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060227",
+        "cms_certification_number": "315434",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10129,6 +12549,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060719",
+        "cms_certification_number": "315435",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10166,6 +12595,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061333",
+        "cms_certification_number": "315437",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10203,6 +12641,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0088633",
+        "cms_certification_number": "315438",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -10240,6 +12686,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "031901",
+        "cms_certification_number": "315439",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10277,6 +12732,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "12001L",
+        "cms_certification_number": "315442",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10314,6 +12778,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "22248L",
+        "cms_certification_number": "315443",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10351,6 +12824,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315445",
+        "cms_certification_number": "315445",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -10388,6 +12870,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030301",
+        "cms_certification_number": "315448",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.91",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10425,6 +12916,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "306001",
+        "cms_certification_number": "315449",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10462,6 +12962,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061211",
+        "cms_certification_number": "315451",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10499,6 +13008,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030905",
+        "cms_certification_number": "315452",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10536,6 +13054,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "656003",
+        "cms_certification_number": "315453",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10573,6 +13100,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "656002",
+        "cms_certification_number": "315454",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10610,6 +13146,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "476002",
+        "cms_certification_number": "315455",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10647,6 +13192,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "656004",
+        "cms_certification_number": "315456",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10684,6 +13238,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315457",
+        "cms_certification_number": "315457",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -10721,6 +13284,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "06730",
+        "cms_certification_number": "315458",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10758,6 +13330,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315459",
+        "cms_certification_number": "315459",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -10795,6 +13376,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "056300",
+        "cms_certification_number": "315460",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10832,6 +13422,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "156001",
+        "cms_certification_number": "315461",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10869,6 +13468,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "656005",
+        "cms_certification_number": "315462",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10906,6 +13514,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "556200",
+        "cms_certification_number": "315463",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10943,6 +13560,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "156002",
+        "cms_certification_number": "315464",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10980,6 +13606,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "406001",
+        "cms_certification_number": "315465",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11017,6 +13652,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061003",
+        "cms_certification_number": "315467",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11054,6 +13698,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "PSIFQU",
+        "cms_certification_number": "315468",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11091,6 +13744,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "Q3VL3S",
+        "cms_certification_number": "315469",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11128,6 +13790,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1B4IGL",
+        "cms_certification_number": "315471",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11165,6 +13836,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NJNDFH9U",
+        "cms_certification_number": "315472",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11202,6 +13882,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "JZ24OP",
+        "cms_certification_number": "315473",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11239,6 +13928,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "60918",
+        "cms_certification_number": "315476",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11276,6 +13974,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0944564",
+        "cms_certification_number": "315477",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -11313,6 +14019,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "306301",
+        "cms_certification_number": "315479",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11350,6 +14065,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106100",
+        "cms_certification_number": "315482",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11387,6 +14111,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "602030",
+        "cms_certification_number": "315483",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11424,6 +14157,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "556213",
+        "cms_certification_number": "315485",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11461,6 +14203,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "806112",
+        "cms_certification_number": "315486",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11498,6 +14249,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "476003",
+        "cms_certification_number": "315487",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11535,6 +14295,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "60921",
+        "cms_certification_number": "315488",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11572,6 +14341,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "656100",
+        "cms_certification_number": "315490",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11609,6 +14387,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "60922",
+        "cms_certification_number": "315491",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11646,6 +14433,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "061415",
+        "cms_certification_number": "315492",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11683,6 +14479,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "056301",
+        "cms_certification_number": "315494",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11720,6 +14525,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315496",
+        "cms_certification_number": "315496",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -11757,6 +14571,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "060201",
+        "cms_certification_number": "315497",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11794,6 +14617,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "04002",
+        "cms_certification_number": "315499",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11831,6 +14663,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "158336",
+        "cms_certification_number": "315500",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11868,6 +14709,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "13301",
+        "cms_certification_number": "315501",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11905,6 +14755,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02002",
+        "cms_certification_number": "315502",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11942,6 +14801,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "018254",
+        "cms_certification_number": "315503",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -11979,6 +14847,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "13004",
+        "cms_certification_number": "315504",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12016,6 +14893,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "08004",
+        "cms_certification_number": "315506",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12053,6 +14939,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "16008",
+        "cms_certification_number": "315507",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12090,6 +14985,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "05001",
+        "cms_certification_number": "315508",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12127,6 +15031,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "12023",
+        "cms_certification_number": "315509",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12164,6 +15077,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "18104",
+        "cms_certification_number": "315510",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12201,6 +15123,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "14004",
+        "cms_certification_number": "315511",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12238,6 +15169,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "09006",
+        "cms_certification_number": "315512",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12275,6 +15215,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "04007",
+        "cms_certification_number": "315513",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12312,6 +15261,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "01001",
+        "cms_certification_number": "315514",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12349,6 +15307,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "031304",
+        "cms_certification_number": "315515",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12386,6 +15353,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "08007",
+        "cms_certification_number": "315516",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12423,6 +15399,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "03009",
+        "cms_certification_number": "315517",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12460,6 +15445,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "12035",
+        "cms_certification_number": "315518",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12497,6 +15491,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "11014",
+        "cms_certification_number": "315519",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12534,6 +15537,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "18109",
+        "cms_certification_number": "315520",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12571,6 +15583,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "08008",
+        "cms_certification_number": "315521",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12608,6 +15629,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "12056",
+        "cms_certification_number": "315522",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12645,6 +15675,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "315523",
+        "cms_certification_number": "315523",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -12682,6 +15721,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "03015",
+        "cms_certification_number": "315524",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12719,6 +15767,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "030901",
+        "cms_certification_number": "315525",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12756,6 +15813,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NH07001",
+        "cms_certification_number": "315526",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12793,6 +15859,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "07028",
+        "cms_certification_number": "315527",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12830,6 +15905,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "13011",
+        "cms_certification_number": "315528",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12867,6 +15951,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "NH14002",
+        "cms_certification_number": "315529",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12904,6 +15997,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "60920",
+        "cms_certification_number": "315530",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12941,6 +16043,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "031602",
+        "cms_certification_number": "315531",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -12978,6 +16089,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "406100",
+        "cms_certification_number": "315431",
+        "issuing_agency": "New Jersey Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_ccn_fix"
       }
     }
   ]

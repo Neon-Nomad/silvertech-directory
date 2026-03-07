@@ -111,6 +111,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5010",
+        "license_id": "LTC-004",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Brenda Thornton",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025010"
       }
     },
     {
@@ -148,6 +159,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5015",
+        "license_id": "N/A-Tribal",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Kay Turner",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025015"
       }
     },
     {
@@ -185,6 +207,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5018",
+        "license_id": "LTC-006",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Tammy Rose",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025018"
       }
     },
     {
@@ -222,6 +255,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5019",
+        "license_id": "LTC-009",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Phillip Hofstetter",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025019"
       }
     },
     {
@@ -259,6 +303,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5020",
+        "license_id": "LTC-002",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Tina Whetstine",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025020"
       }
     },
     {
@@ -296,6 +351,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5021",
+        "license_id": "LTC-003",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Cathy Reaktenwalt",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025021"
       }
     },
     {
@@ -333,6 +399,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5024",
+        "license_id": "LTC-014",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Helena Jagielski",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025024"
       }
     },
     {
@@ -370,6 +447,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "Pending",
+        "license_id": "LTC-005",
+        "issuing_agency": "Alaska Department of Health - HFLC",
+        "license_type": "Long Term Care",
+        "administrator": "Sariah Hughes",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "fuzzy_name_1.00",
+        "cms_certification_number": "025025"
       }
     },
     {
@@ -407,6 +495,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5026",
+        "license_id": "N/A-Tribal",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Angie Gorn",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025026"
       }
     },
     {
@@ -444,6 +543,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5027",
+        "license_id": "LTC-013",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Deborah Koelsch",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025027"
       }
     },
     {
@@ -481,6 +591,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5028",
+        "license_id": "LTC-001",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Hannah Sanders, MD",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025028"
       }
     },
     {
@@ -518,6 +639,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5030",
+        "license_id": "LTC-007",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Rebecca Wald",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025030"
       }
     },
     {
@@ -555,6 +687,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5031",
+        "license_id": "LTC-012",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Katie Martin",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025031"
       }
     },
     {
@@ -592,6 +735,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5032",
+        "license_id": "N/A-Tribal",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Kay Turner",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025032"
       }
     },
     {
@@ -629,6 +783,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5034",
+        "license_id": "LTC-008",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Pauline Doucet",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025034"
       }
     },
     {
@@ -666,6 +831,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5035",
+        "license_id": "N/A-Tribal",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Mary Willis",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025035"
       }
     },
     {
@@ -703,6 +879,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5036",
+        "license_id": "LTC-016",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Tammy Rose",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025036"
       }
     },
     {
@@ -740,6 +927,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5037",
+        "license_id": "N/A-Tribal",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Katrina Wilson",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025037"
       }
     },
     {
@@ -777,6 +975,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5038",
+        "license_id": "LTC-017",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Nathan Dahl",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025038"
       }
     },
     {
@@ -814,6 +1023,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02-5039",
+        "license_id": "LTC-018",
+        "issuing_agency": "Alaska Department of Health - Health Facilities Licensing and Certification (HFLC)",
+        "license_type": "Long Term Care",
+        "administrator": "Jesse Christensen",
+        "last_verified_date": "2026-02-27",
+        "source_file_date": "2025-09-22",
+        "match_method": "ccn_direct",
+        "cms_certification_number": "025039"
       }
     }
   ]

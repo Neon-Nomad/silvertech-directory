@@ -143,6 +143,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106167400",
+        "cms_certification_number": "535013",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -180,6 +188,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106426600",
+        "cms_certification_number": "535017",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -217,6 +233,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "100176100",
+        "cms_certification_number": "535021",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -254,6 +278,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "102421300",
+        "cms_certification_number": "535022",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -291,6 +323,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "114292505",
+        "cms_certification_number": "535023",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -328,6 +368,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "107451200",
+        "cms_certification_number": "535024",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -365,6 +413,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "107449100",
+        "cms_certification_number": "535025",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -402,6 +458,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "120857800",
+        "cms_certification_number": "535026",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -439,6 +503,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106133004",
+        "cms_certification_number": "535027",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -476,6 +548,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "07-127",
+        "cms_certification_number": "535029",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "General Acute Care Hospital, Critical Access",
+        "license_note": "State license number not available via public portal. CMS CCN (535029) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1871660159"
       }
     },
     {
@@ -513,6 +596,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "107370201",
+        "cms_certification_number": "535030",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -550,6 +641,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "113234200",
+        "cms_certification_number": "535031",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -587,6 +686,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "105575500",
+        "cms_certification_number": "535032",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -624,6 +731,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106428200",
+        "cms_certification_number": "535033",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -661,6 +776,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106450900",
+        "cms_certification_number": "535034",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -698,6 +821,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "113233400",
+        "cms_certification_number": "535036",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -735,6 +866,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "123864700",
+        "cms_certification_number": "535038",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -772,6 +911,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "107070300",
+        "cms_certification_number": "535039",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -809,6 +956,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "123218500",
+        "cms_certification_number": "535040",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -846,6 +1001,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106292100",
+        "cms_certification_number": "535042",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -883,6 +1046,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "115810400",
+        "cms_certification_number": "535043",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -920,6 +1091,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "107185806",
+        "cms_certification_number": "535045",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -957,6 +1136,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106299901",
+        "cms_certification_number": "535046",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -994,6 +1181,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "115809100",
+        "cms_certification_number": "535048",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1031,6 +1226,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "108784300",
+        "cms_certification_number": "535049",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1068,6 +1271,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "115247500",
+        "cms_certification_number": "535050",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1105,6 +1316,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "102422100",
+        "cms_certification_number": "535051",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1142,6 +1361,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106545901",
+        "cms_certification_number": "535053",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1179,6 +1406,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "133658400",
+        "cms_certification_number": "535054",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1216,6 +1451,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "535056",
+        "cms_certification_number": "535056",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1253,6 +1497,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "102301200",
+        "cms_certification_number": "535057",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1290,6 +1542,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "535058",
+        "cms_certification_number": "535058",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1327,6 +1588,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "108294906",
+        "cms_certification_number": "535059",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1364,6 +1633,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "535061",
+        "cms_certification_number": "535061",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1401,6 +1679,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106561101",
+        "cms_certification_number": "53A002",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1438,6 +1724,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "105993907",
+        "cms_certification_number": "53A051",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     }
   ]

@@ -67,6 +67,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1083",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "10/01/25",
+        "license_expiration_date": "09/30/26",
+        "licensed_beds": "104",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085001"
       }
     },
     {
@@ -104,6 +117,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1107",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "10/01/25",
+        "license_expiration_date": "09/30/26",
+        "licensed_beds": "150",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085002"
       }
     },
     {
@@ -141,6 +167,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1097",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "07/02/25",
+        "license_expiration_date": "07/01/26",
+        "licensed_beds": "48",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085003"
       }
     },
     {
@@ -178,6 +217,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1001",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "05/13/25",
+        "license_expiration_date": "05/12/26",
+        "licensed_beds": "169",
+        "match_method": "fuzzy (0.93)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085004"
       }
     },
     {
@@ -215,6 +267,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1079",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "09/01/25",
+        "license_expiration_date": "08/31/26",
+        "licensed_beds": "172",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085006"
       }
     },
     {
@@ -252,6 +317,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1207",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "07/02/25",
+        "license_expiration_date": "07/01/26",
+        "licensed_beds": "60",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085009"
       }
     },
     {
@@ -289,6 +367,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1155",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "09/02/25",
+        "license_expiration_date": "12/02/25",
+        "licensed_beds": "136",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085010"
       }
     },
     {
@@ -326,6 +417,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1202",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "08/04/25",
+        "license_expiration_date": "11/03/25",
+        "licensed_beds": "100",
+        "match_method": "fuzzy (0.97)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085012"
       }
     },
     {
@@ -363,6 +467,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1070",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "06/01/25",
+        "license_expiration_date": "05/31/26",
+        "licensed_beds": "106",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085013"
       }
     },
     {
@@ -400,6 +517,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1155",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "09/02/25",
+        "license_expiration_date": "12/02/25",
+        "licensed_beds": "136",
+        "match_method": "fuzzy (0.73)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085015"
       }
     },
     {
@@ -437,6 +567,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1162",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "07/02/25",
+        "license_expiration_date": "07/01/26",
+        "licensed_beds": "45",
+        "match_method": "fuzzy (0.99)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085017"
       }
     },
     {
@@ -474,6 +617,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1037",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "08/29/25",
+        "license_expiration_date": "08/28/26",
+        "licensed_beds": "77",
+        "match_method": "fuzzy (0.92)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085019"
       }
     },
     {
@@ -511,6 +667,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1160",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "08/02/25",
+        "license_expiration_date": "06/30/26",
+        "licensed_beds": "151",
+        "match_method": "fuzzy (0.91)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085020"
       }
     },
     {
@@ -548,6 +717,18 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1307",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "07/01/25",
+        "license_expiration_date": "06/30/26",
+        "licensed_beds": "110",
+        "match_method": "manual_name_map",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -585,6 +766,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1031",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "10/01/25",
+        "license_expiration_date": "09/30/26",
+        "licensed_beds": "101",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085025"
       }
     },
     {
@@ -622,6 +816,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1122",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "09/01/25",
+        "license_expiration_date": "08/31/26",
+        "licensed_beds": "49",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085026"
       }
     },
     {
@@ -659,6 +866,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1116",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "06/01/25",
+        "license_expiration_date": "05/31/26",
+        "licensed_beds": "120",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085027"
       }
     },
     {
@@ -696,6 +916,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1137",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "08/01/25",
+        "license_expiration_date": "07/31/26",
+        "licensed_beds": "138",
+        "match_method": "fuzzy (0.89)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085028"
       }
     },
     {
@@ -733,6 +966,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1068",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "04/01/25",
+        "license_expiration_date": "07/31/26",
+        "licensed_beds": "139",
+        "match_method": "fuzzy (0.97)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085029"
       }
     },
     {
@@ -770,6 +1016,18 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1169",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "07/01/25",
+        "license_expiration_date": "06/30/26",
+        "licensed_beds": "82",
+        "match_method": "manual_name_map",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -807,6 +1065,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1130",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "05/01/25",
+        "license_expiration_date": "04/30/26",
+        "licensed_beds": "75",
+        "match_method": "fuzzy (0.75)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085032"
       }
     },
     {
@@ -844,6 +1115,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1090",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "08/01/25",
+        "license_expiration_date": "11/01/25",
+        "licensed_beds": "177",
+        "match_method": "fuzzy (0.89)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085033"
       }
     },
     {
@@ -881,6 +1165,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1067",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "10/01/25",
+        "license_expiration_date": "09/30/26",
+        "licensed_beds": "179",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085034"
       }
     },
     {
@@ -918,6 +1215,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1046",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "01/01/25",
+        "license_expiration_date": "12/31/25",
+        "licensed_beds": "205",
+        "match_method": "fuzzy (0.85)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085035"
       }
     },
     {
@@ -955,6 +1265,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1100",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "08/02/25",
+        "license_expiration_date": "02/01/26",
+        "licensed_beds": "181",
+        "match_method": "fuzzy (0.92)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085037"
       }
     },
     {
@@ -992,6 +1315,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1008",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "02/01/25",
+        "license_expiration_date": "01/31/26",
+        "licensed_beds": "120",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085039"
       }
     },
     {
@@ -1029,6 +1365,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1088",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "09/12/25",
+        "license_expiration_date": "09/11/26",
+        "licensed_beds": "110",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085040"
       }
     },
     {
@@ -1066,6 +1415,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1028",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "06/29/25",
+        "license_expiration_date": "06/28/26",
+        "licensed_beds": "109",
+        "match_method": "fuzzy (0.96)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085041"
       }
     },
     {
@@ -1103,6 +1465,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1118",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "06/01/25",
+        "license_expiration_date": "05/31/26",
+        "licensed_beds": "104",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085042"
       }
     },
     {
@@ -1140,6 +1515,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1154",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "12/31/24",
+        "license_expiration_date": "12/30/25",
+        "licensed_beds": "90",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085043"
       }
     },
     {
@@ -1177,6 +1565,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1063",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "07/01/25",
+        "license_expiration_date": "06/30/26",
+        "licensed_beds": "96",
+        "match_method": "manual_name_map",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085047"
       }
     },
     {
@@ -1214,6 +1615,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1022",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "04/01/25",
+        "license_expiration_date": "03/31/26",
+        "licensed_beds": "120",
+        "match_method": "manual_name_map",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085048"
       }
     },
     {
@@ -1251,6 +1665,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1956",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "06/01/25",
+        "license_expiration_date": "05/31/26",
+        "licensed_beds": "120",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085050"
       }
     },
     {
@@ -1288,6 +1715,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2029",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "06/11/25",
+        "license_expiration_date": "06/10/26",
+        "licensed_beds": "144",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085051"
       }
     },
     {
@@ -1325,6 +1765,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2155",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "04/01/25",
+        "license_expiration_date": "03/31/26",
+        "licensed_beds": "130",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085052"
       }
     },
     {
@@ -1362,6 +1815,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2136",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "10/01/25",
+        "license_expiration_date": "09/30/26",
+        "licensed_beds": "40",
+        "match_method": "fuzzy (0.76)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085053"
       }
     },
     {
@@ -1399,6 +1865,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2348",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "06/01/25",
+        "license_expiration_date": "05/31/26",
+        "licensed_beds": "177",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085054"
       }
     },
     {
@@ -1436,6 +1915,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2559",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "11/01/24",
+        "license_expiration_date": "11/20/25",
+        "licensed_beds": "128",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085056"
       }
     },
     {
@@ -1473,6 +1965,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2880",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "02/07/25",
+        "license_expiration_date": "02/06/26",
+        "licensed_beds": "80",
+        "match_method": "fuzzy (0.80)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085057"
       }
     },
     {
@@ -1510,6 +2015,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3060",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "03/15/25",
+        "license_expiration_date": "03/14/26",
+        "licensed_beds": "100",
+        "match_method": "fuzzy (0.91)",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "085058"
       }
     },
     {
@@ -1547,6 +2065,18 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1058",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "07/01/25",
+        "license_expiration_date": "06/30/26",
+        "licensed_beds": "46",
+        "match_method": "manual_name_map",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1584,6 +2114,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1133",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "07/01/25",
+        "license_expiration_date": "06/30/26",
+        "licensed_beds": "40",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "08A006"
       }
     },
     {
@@ -1621,6 +2164,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1967",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "04/01/25",
+        "license_expiration_date": "03/31/26",
+        "licensed_beds": "46",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "08A015"
       }
     },
     {
@@ -1658,6 +2214,19 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1104",
+        "issuing_agency": "Delaware DHSS - Division of Long Term Care Residents Protection (DLTCRP)",
+        "license_type": "Nursing Home",
+        "license_status": "Active",
+        "license_issued_date": "01/20/25",
+        "license_expiration_date": "01/19/26",
+        "licensed_beds": "67",
+        "match_method": "name_zip_exact",
+        "source": "DLTCRP Nursing Homes List (September 2025)",
+        "last_verified_date": "2026-02-27",
+        "cms_certification_number": "08A020"
       }
     }
   ]

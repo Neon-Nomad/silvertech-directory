@@ -139,6 +139,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "814904260001",
+        "cms_certification_number": "465189",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -176,6 +184,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465190",
+        "cms_certification_number": "465190",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -213,6 +230,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271938001",
+        "cms_certification_number": "465191",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -250,6 +275,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465159",
+        "cms_certification_number": "465159",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -287,6 +321,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465166",
+        "cms_certification_number": "465166",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -324,6 +367,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465170",
+        "cms_certification_number": "465170",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -361,6 +413,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937031",
+        "cms_certification_number": "465152",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -398,6 +458,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870391981001",
+        "cms_certification_number": "46A070",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -435,6 +503,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271952001",
+        "cms_certification_number": "465090",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -472,6 +548,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "461003359002",
+        "cms_certification_number": "465184",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -509,6 +593,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937030",
+        "cms_certification_number": "465143",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -546,6 +638,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271945001",
+        "cms_certification_number": "465072",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -583,6 +683,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271943001",
+        "cms_certification_number": "465108",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -620,6 +728,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465160",
+        "cms_certification_number": "465160",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -657,6 +774,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "812025581002",
+        "cms_certification_number": "465083",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -694,6 +819,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271940001",
+        "cms_certification_number": "465091",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -731,6 +864,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465174",
+        "cms_certification_number": "465174",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -768,6 +910,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937009",
+        "cms_certification_number": "465057",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -805,6 +955,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "876000319001",
+        "cms_certification_number": "46A072",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -842,6 +1000,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "270332350001",
+        "cms_certification_number": "465172",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -879,6 +1045,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271951001",
+        "cms_certification_number": "465009",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -916,6 +1090,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271953001",
+        "cms_certification_number": "465003",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -953,6 +1135,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "264828698003",
+        "cms_certification_number": "465078",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -990,6 +1180,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271946001",
+        "cms_certification_number": "465109",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1027,6 +1225,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271942001",
+        "cms_certification_number": "465101",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1064,6 +1270,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465171",
+        "cms_certification_number": "465171",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1101,6 +1316,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937020",
+        "cms_certification_number": "46A066",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1138,6 +1361,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465123",
+        "cms_certification_number": "465123",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1175,6 +1407,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937024",
+        "cms_certification_number": "46A071",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1212,6 +1452,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212456013",
+        "cms_certification_number": "465165",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1249,6 +1497,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "461376951002",
+        "cms_certification_number": "46A058",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1286,6 +1542,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465186",
+        "cms_certification_number": "465186",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1323,6 +1588,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937027",
+        "cms_certification_number": "465158",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1360,6 +1633,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "851735200001",
+        "cms_certification_number": "465192",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1397,6 +1678,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "800843551001",
+        "cms_certification_number": "465181",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1434,6 +1723,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "264634218001",
+        "cms_certification_number": "465124",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1471,6 +1768,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "261925543001",
+        "cms_certification_number": "465157",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1508,6 +1813,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937022",
+        "cms_certification_number": "465185",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1545,6 +1858,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212457001",
+        "cms_certification_number": "465088",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1582,6 +1903,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212456009",
+        "cms_certification_number": "465175",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1619,6 +1948,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212467001",
+        "cms_certification_number": "465097",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1656,6 +1993,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "621263541005",
+        "cms_certification_number": "465112",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1693,6 +2038,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212463002",
+        "cms_certification_number": "465093",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1730,6 +2083,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212467002",
+        "cms_certification_number": "465096",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1767,6 +2128,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212466002",
+        "cms_certification_number": "465074",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1804,6 +2173,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "621304772003",
+        "cms_certification_number": "465139",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1841,6 +2218,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212460001",
+        "cms_certification_number": "465094",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1878,6 +2263,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212461002",
+        "cms_certification_number": "465107",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1915,6 +2308,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212464001",
+        "cms_certification_number": "465163",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1952,6 +2353,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212463001",
+        "cms_certification_number": "465020",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1989,6 +2398,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212467004",
+        "cms_certification_number": "465146",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2026,6 +2443,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212467003",
+        "cms_certification_number": "465156",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2063,6 +2488,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212461001",
+        "cms_certification_number": "465066",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2100,6 +2533,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "113724074001",
+        "cms_certification_number": "465086",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2137,6 +2578,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "571237939001",
+        "cms_certification_number": "465069",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2174,6 +2623,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271944001",
+        "cms_certification_number": "465006",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2211,6 +2668,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "263221201001",
+        "cms_certification_number": "465179",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2248,6 +2713,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271939001",
+        "cms_certification_number": "465104",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2285,6 +2758,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271941001",
+        "cms_certification_number": "465100",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2322,6 +2803,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937011",
+        "cms_certification_number": "465102",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2359,6 +2848,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937019",
+        "cms_certification_number": "46A064",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2396,6 +2893,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465155",
+        "cms_certification_number": "465155",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -2433,6 +2939,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271947001",
+        "cms_certification_number": "465098",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2470,6 +2984,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465188",
+        "cms_certification_number": "465188",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -2507,6 +3030,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271948001",
+        "cms_certification_number": "465119",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2544,6 +3075,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937012",
+        "cms_certification_number": "465137",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2581,6 +3120,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937006",
+        "cms_certification_number": "465125",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2618,6 +3165,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937026",
+        "cms_certification_number": "465075",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2655,6 +3210,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870391983001",
+        "cms_certification_number": "465129",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2692,6 +3255,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465168",
+        "cms_certification_number": "465168",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -2729,6 +3301,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937003",
+        "cms_certification_number": "465147",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2766,6 +3346,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937007",
+        "cms_certification_number": "465089",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2803,6 +3391,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937014",
+        "cms_certification_number": "465116",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2840,6 +3436,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937005",
+        "cms_certification_number": "465067",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2877,6 +3481,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "690870111001",
+        "cms_certification_number": "465085",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2914,6 +3526,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870212466001",
+        "cms_certification_number": "465059",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2951,6 +3571,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937010",
+        "cms_certification_number": "465111",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2988,6 +3616,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870391981",
+        "cms_certification_number": "465144",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3025,6 +3661,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870257695002",
+        "cms_certification_number": "465187",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3062,6 +3706,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937029",
+        "cms_certification_number": "465117",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3099,6 +3751,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "320385160001",
+        "cms_certification_number": "465180",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3136,6 +3796,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937028",
+        "cms_certification_number": "465183",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3173,6 +3841,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271937008",
+        "cms_certification_number": "465049",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3210,6 +3886,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271949001",
+        "cms_certification_number": "465095",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3247,6 +3931,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271950001",
+        "cms_certification_number": "465064",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3284,6 +3976,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "272931656002",
+        "cms_certification_number": "465178",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3321,6 +4021,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870528143001",
+        "cms_certification_number": "465153",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3358,6 +4066,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465182",
+        "cms_certification_number": "465182",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -3395,6 +4112,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "261325556001",
+        "cms_certification_number": "465167",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3432,6 +4157,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "263287644002",
+        "cms_certification_number": "465173",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3469,6 +4202,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465176",
+        "cms_certification_number": "465176",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -3506,6 +4248,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870440524001",
+        "cms_certification_number": "465130",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3543,6 +4293,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870208619006",
+        "cms_certification_number": "465079",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3580,6 +4338,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "465169",
+        "cms_certification_number": "465169",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -3617,6 +4384,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "870271956001",
+        "cms_certification_number": "465115",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3654,6 +4429,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "542125294002",
+        "cms_certification_number": "465084",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3691,6 +4474,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "519160002004",
+        "cms_certification_number": "465092",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -3728,6 +4519,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "262931020001",
+        "cms_certification_number": "465150",
+        "issuing_agency": "Utah Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     }
   ]

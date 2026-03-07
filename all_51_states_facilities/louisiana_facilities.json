@@ -299,6 +299,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203786742",
+        "cms_certification_number": "195136",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -336,6 +345,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203781627",
+        "cms_certification_number": "195139",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.83",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -373,6 +391,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1551465",
+        "cms_certification_number": "195150",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -410,6 +436,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "161",
+        "cms_certification_number": "195156",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -447,6 +482,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785421",
+        "cms_certification_number": "195177",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -484,6 +528,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203783756",
+        "cms_certification_number": "195180",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -521,6 +574,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "959",
+        "cms_certification_number": "195184",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -558,6 +620,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203782312",
+        "cms_certification_number": "195185",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.90",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -595,6 +666,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785785",
+        "cms_certification_number": "195199",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -632,6 +712,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784770",
+        "cms_certification_number": "195201",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -669,6 +758,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "855",
+        "cms_certification_number": "195203",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -706,6 +804,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203782578",
+        "cms_certification_number": "195204",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.95",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -743,6 +850,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785774",
+        "cms_certification_number": "195210",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -780,6 +896,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "978",
+        "cms_certification_number": "195213",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -817,6 +942,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "459",
+        "cms_certification_number": "195214",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -854,6 +988,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "969",
+        "cms_certification_number": "195220",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -891,6 +1034,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "803",
+        "cms_certification_number": "195221",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -928,6 +1080,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203786204",
+        "cms_certification_number": "195247",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -965,6 +1126,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "398",
+        "cms_certification_number": "195248",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1002,6 +1172,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785958",
+        "cms_certification_number": "195249",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1039,6 +1218,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "23",
+        "cms_certification_number": "195257",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.96",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1076,6 +1264,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "998",
+        "cms_certification_number": "195258",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1113,6 +1310,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "139",
+        "cms_certification_number": "195265",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1150,6 +1356,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "858",
+        "cms_certification_number": "195272",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1187,6 +1402,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "766",
+        "cms_certification_number": "195275",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1224,6 +1448,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "854",
+        "cms_certification_number": "195278",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1261,6 +1494,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "764",
+        "cms_certification_number": "195279",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1298,6 +1540,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "816",
+        "cms_certification_number": "195281",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1335,6 +1586,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1522180",
+        "cms_certification_number": "195293",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -1372,6 +1631,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "312",
+        "cms_certification_number": "195297",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1409,6 +1677,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "960",
+        "cms_certification_number": "195301",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1446,6 +1723,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784591",
+        "cms_certification_number": "195302",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1483,6 +1769,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "322",
+        "cms_certification_number": "195303",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1520,6 +1815,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1017",
+        "cms_certification_number": "195304",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1557,6 +1861,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784571",
+        "cms_certification_number": "195309",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1594,6 +1907,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "820",
+        "cms_certification_number": "195310",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1631,6 +1953,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "822",
+        "cms_certification_number": "195312",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1668,6 +1999,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "423",
+        "cms_certification_number": "195313",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.95",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1705,6 +2045,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "744",
+        "cms_certification_number": "195314",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1742,6 +2091,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "814",
+        "cms_certification_number": "195315",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1779,6 +2137,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "812",
+        "cms_certification_number": "195316",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1816,6 +2183,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "965",
+        "cms_certification_number": "195318",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1853,6 +2229,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784801",
+        "cms_certification_number": "195319",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1890,6 +2275,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "977",
+        "cms_certification_number": "195321",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1927,6 +2321,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203786192",
+        "cms_certification_number": "195323",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1964,6 +2367,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203786156",
+        "cms_certification_number": "195324",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2001,6 +2413,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "825",
+        "cms_certification_number": "195325",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2038,6 +2459,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "818",
+        "cms_certification_number": "195326",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2075,6 +2505,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "813",
+        "cms_certification_number": "195327",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2112,6 +2551,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "817",
+        "cms_certification_number": "195328",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2149,6 +2597,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784781",
+        "cms_certification_number": "195329",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2186,6 +2643,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "815",
+        "cms_certification_number": "195336",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2223,6 +2689,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1011",
+        "cms_certification_number": "195342",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2260,6 +2735,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "441",
+        "cms_certification_number": "195343",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2297,6 +2781,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784297",
+        "cms_certification_number": "195344",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2334,6 +2827,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1522163",
+        "cms_certification_number": "195346",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -2371,6 +2872,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203786482",
+        "cms_certification_number": "195348",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2408,6 +2918,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785035",
+        "cms_certification_number": "195349",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2445,6 +2964,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "943",
+        "cms_certification_number": "195350",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2482,6 +3010,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203786725",
+        "cms_certification_number": "195353",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2519,6 +3056,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785417",
+        "cms_certification_number": "195356",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2556,6 +3102,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784598",
+        "cms_certification_number": "195359",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2593,6 +3148,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "963",
+        "cms_certification_number": "195361",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2630,6 +3194,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "886",
+        "cms_certification_number": "195362",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.88",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2667,6 +3240,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784776",
+        "cms_certification_number": "195363",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2704,6 +3286,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785075",
+        "cms_certification_number": "195365",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2741,6 +3332,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785557",
+        "cms_certification_number": "195369",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2778,6 +3378,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785578",
+        "cms_certification_number": "195373",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2815,6 +3424,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "968",
+        "cms_certification_number": "195374",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2852,6 +3470,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203782405",
+        "cms_certification_number": "195376",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.87",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2889,6 +3516,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784292",
+        "cms_certification_number": "195380",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2926,6 +3562,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "690",
+        "cms_certification_number": "195381",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2963,6 +3608,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785757",
+        "cms_certification_number": "195382",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.96",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3000,6 +3654,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "397",
+        "cms_certification_number": "195385",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3037,6 +3700,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784567",
+        "cms_certification_number": "195386",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3074,6 +3746,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784548",
+        "cms_certification_number": "195388",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3111,6 +3792,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784288",
+        "cms_certification_number": "195389",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3148,6 +3838,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "930",
+        "cms_certification_number": "195390",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.86",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3185,6 +3884,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784512",
+        "cms_certification_number": "195392",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3222,6 +3930,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "948",
+        "cms_certification_number": "195393",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.87",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3259,6 +3976,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203783916",
+        "cms_certification_number": "195394",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3296,6 +4022,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1522147",
+        "cms_certification_number": "195396",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -3333,6 +4067,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "467",
+        "cms_certification_number": "195398",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3370,6 +4113,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1520250",
+        "cms_certification_number": "195399",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -3407,6 +4158,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "954",
+        "cms_certification_number": "195401",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3444,6 +4204,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1514900",
+        "cms_certification_number": "195404",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -3481,6 +4249,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785547",
+        "cms_certification_number": "195405",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3518,6 +4295,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "204",
+        "cms_certification_number": "195406",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3555,6 +4341,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1522139",
+        "cms_certification_number": "195407",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -3592,6 +4386,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "784",
+        "cms_certification_number": "195408",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3629,6 +4432,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "384",
+        "cms_certification_number": "195410",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3666,6 +4478,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "833",
+        "cms_certification_number": "195412",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.95",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3703,6 +4524,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "799",
+        "cms_certification_number": "195413",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3740,6 +4570,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "149",
+        "cms_certification_number": "195414",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.95",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3777,6 +4616,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "875",
+        "cms_certification_number": "195416",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.95",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3814,6 +4662,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "882",
+        "cms_certification_number": "195420",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.88",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3851,6 +4708,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "852",
+        "cms_certification_number": "195422",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3888,6 +4754,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784817",
+        "cms_certification_number": "195423",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3925,6 +4800,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "760",
+        "cms_certification_number": "195424",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3962,6 +4846,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "846",
+        "cms_certification_number": "195425",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3999,6 +4892,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203781792",
+        "cms_certification_number": "195426",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4036,6 +4938,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785315",
+        "cms_certification_number": "195430",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.87",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4073,6 +4984,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "850",
+        "cms_certification_number": "195431",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4110,6 +5030,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203781674",
+        "cms_certification_number": "195437",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4147,6 +5076,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "689",
+        "cms_certification_number": "195438",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.85",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4184,6 +5122,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1522171",
+        "cms_certification_number": "195439",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4221,6 +5167,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "386",
+        "cms_certification_number": "195442",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4258,6 +5213,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784352",
+        "cms_certification_number": "195443",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4295,6 +5259,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785316",
+        "cms_certification_number": "195445",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4332,6 +5305,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785289",
+        "cms_certification_number": "195446",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4369,6 +5351,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203782206",
+        "cms_certification_number": "195447",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4406,6 +5397,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203786671",
+        "cms_certification_number": "195449",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4443,6 +5443,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785707",
+        "cms_certification_number": "195452",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4480,6 +5489,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1522155",
+        "cms_certification_number": "195454",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -4517,6 +5534,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "476",
+        "cms_certification_number": "195458",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4554,6 +5580,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "836",
+        "cms_certification_number": "195459",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.99",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4591,6 +5626,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "314",
+        "cms_certification_number": "195460",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4628,6 +5672,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "712",
+        "cms_certification_number": "195463",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4665,6 +5718,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "256",
+        "cms_certification_number": "195464",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4702,6 +5764,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "785",
+        "cms_certification_number": "195466",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4739,6 +5810,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "331",
+        "cms_certification_number": "195469",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4776,6 +5856,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "751",
+        "cms_certification_number": "195471",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4813,6 +5902,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203782554",
+        "cms_certification_number": "195472",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4850,6 +5948,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785760",
+        "cms_certification_number": "195473",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4887,6 +5994,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "894",
+        "cms_certification_number": "195476",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4924,6 +6040,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785901",
+        "cms_certification_number": "195477",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4961,6 +6086,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203786067",
+        "cms_certification_number": "195478",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4998,6 +6132,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784285",
+        "cms_certification_number": "195480",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5035,6 +6178,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203781924",
+        "cms_certification_number": "195481",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5072,6 +6224,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785659",
+        "cms_certification_number": "195482",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5109,6 +6270,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784748",
+        "cms_certification_number": "195483",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5146,6 +6316,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784123",
+        "cms_certification_number": "195484",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5183,6 +6362,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784686",
+        "cms_certification_number": "195485",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5220,6 +6408,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "940",
+        "cms_certification_number": "195486",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5257,6 +6454,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203782453",
+        "cms_certification_number": "195487",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5294,6 +6500,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784829",
+        "cms_certification_number": "195488",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5331,6 +6546,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203781986",
+        "cms_certification_number": "195489",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5368,6 +6592,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203781572",
+        "cms_certification_number": "195490",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5405,6 +6638,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785643",
+        "cms_certification_number": "195491",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5442,6 +6684,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "435",
+        "cms_certification_number": "195492",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5479,6 +6730,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "360",
+        "cms_certification_number": "195493",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.96",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5516,6 +6776,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "789",
+        "cms_certification_number": "195494",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5553,6 +6822,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1006",
+        "cms_certification_number": "195496",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5590,6 +6868,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785919",
+        "cms_certification_number": "195497",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5627,6 +6914,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785593",
+        "cms_certification_number": "195498",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5664,6 +6960,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "734",
+        "cms_certification_number": "195499",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.93",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5701,6 +7006,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "332",
+        "cms_certification_number": "195500",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5738,6 +7052,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784584",
+        "cms_certification_number": "195501",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5775,6 +7098,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "840",
+        "cms_certification_number": "195502",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5812,6 +7144,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "908",
+        "cms_certification_number": "195504",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.89",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5849,6 +7190,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784721",
+        "cms_certification_number": "195505",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5886,6 +7236,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203782907",
+        "cms_certification_number": "195507",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5923,6 +7282,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785302",
+        "cms_certification_number": "195508",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.91",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5960,6 +7328,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785773",
+        "cms_certification_number": "195509",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5997,6 +7374,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1522121",
+        "cms_certification_number": "195510",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -6034,6 +7419,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784832",
+        "cms_certification_number": "195512",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6071,6 +7465,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784281",
+        "cms_certification_number": "195513",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6108,6 +7511,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784295",
+        "cms_certification_number": "195515",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6145,6 +7557,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "164",
+        "cms_certification_number": "195516",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6182,6 +7603,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785199",
+        "cms_certification_number": "195517",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.98",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6219,6 +7649,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "772",
+        "cms_certification_number": "195518",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6256,6 +7695,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203782204",
+        "cms_certification_number": "195519",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6293,6 +7741,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "931",
+        "cms_certification_number": "195520",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6330,6 +7787,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "733",
+        "cms_certification_number": "195522",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6367,6 +7833,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784160",
+        "cms_certification_number": "195523",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6404,6 +7879,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203783096",
+        "cms_certification_number": "195524",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6441,6 +7925,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "229",
+        "cms_certification_number": "195525",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6478,6 +7971,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784263",
+        "cms_certification_number": "195526",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6515,6 +8017,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "857",
+        "cms_certification_number": "195527",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6552,6 +8063,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "974",
+        "cms_certification_number": "195528",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6589,6 +8109,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "729",
+        "cms_certification_number": "195529",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6626,6 +8155,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203781913",
+        "cms_certification_number": "195530",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6663,6 +8201,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203781710",
+        "cms_certification_number": "195531",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6700,6 +8247,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784855",
+        "cms_certification_number": "195532",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6737,6 +8293,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "449",
+        "cms_certification_number": "195533",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6774,6 +8339,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "885",
+        "cms_certification_number": "195535",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6811,6 +8385,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784842",
+        "cms_certification_number": "195536",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6848,6 +8431,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785758",
+        "cms_certification_number": "195537",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6885,6 +8477,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784267",
+        "cms_certification_number": "195538",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6922,6 +8523,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "474",
+        "cms_certification_number": "195539",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6959,6 +8569,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1007",
+        "cms_certification_number": "195541",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6996,6 +8615,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "388",
+        "cms_certification_number": "195542",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7033,6 +8661,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784923",
+        "cms_certification_number": "195543",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7070,6 +8707,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785115",
+        "cms_certification_number": "195544",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7107,6 +8753,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203782944",
+        "cms_certification_number": "195545",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7144,6 +8799,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "333",
+        "cms_certification_number": "195546",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.94",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7181,6 +8845,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "929",
+        "cms_certification_number": "195547",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7218,6 +8891,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785292",
+        "cms_certification_number": "195550",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7255,6 +8937,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203783984",
+        "cms_certification_number": "195551",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7292,6 +8983,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "444",
+        "cms_certification_number": "195552",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7329,6 +9029,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1521124",
+        "cms_certification_number": "195553",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -7366,6 +9074,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "895",
+        "cms_certification_number": "195554",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.87",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7403,6 +9120,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "380",
+        "cms_certification_number": "195555",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7440,6 +9166,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "805",
+        "cms_certification_number": "195556",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7477,6 +9212,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784467",
+        "cms_certification_number": "195557",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7514,6 +9258,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "944",
+        "cms_certification_number": "195558",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.84",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7551,6 +9304,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785300",
+        "cms_certification_number": "195559",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7588,6 +9350,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "976",
+        "cms_certification_number": "195560",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7625,6 +9396,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785271",
+        "cms_certification_number": "195561",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7662,6 +9442,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "224",
+        "cms_certification_number": "195562",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7699,6 +9488,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "982",
+        "cms_certification_number": "195563",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.87",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7736,6 +9534,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785440",
+        "cms_certification_number": "195564",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7773,6 +9580,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784592",
+        "cms_certification_number": "195565",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_city_1.00",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7810,6 +9626,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "246",
+        "cms_certification_number": "195566",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7847,6 +9672,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1521876",
+        "cms_certification_number": "195567",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies"
       }
     },
     {
@@ -7884,6 +9717,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "151",
+        "cms_certification_number": "195568",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7921,6 +9763,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785177",
+        "cms_certification_number": "195570",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7958,6 +9809,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "970",
+        "cms_certification_number": "195571",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7995,6 +9855,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "859",
+        "cms_certification_number": "195572",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8032,6 +9901,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785301",
+        "cms_certification_number": "195573",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8069,6 +9947,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "464",
+        "cms_certification_number": "195574",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8106,6 +9993,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203786075",
+        "cms_certification_number": "195575",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8143,6 +10039,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "452",
+        "cms_certification_number": "195577",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8180,6 +10085,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "390",
+        "cms_certification_number": "195578",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8217,6 +10131,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "248",
+        "cms_certification_number": "195579",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8254,6 +10177,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "240",
+        "cms_certification_number": "195580",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8291,6 +10223,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785927",
+        "cms_certification_number": "195582",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8328,6 +10269,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "989",
+        "cms_certification_number": "195583",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8365,6 +10315,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1009",
+        "cms_certification_number": "195584",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8402,6 +10361,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785162",
+        "cms_certification_number": "195585",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8439,6 +10407,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "838",
+        "cms_certification_number": "195588",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8476,6 +10453,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785772",
+        "cms_certification_number": "195589",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8513,6 +10499,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785845",
+        "cms_certification_number": "195590",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8550,6 +10545,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785249",
+        "cms_certification_number": "195592",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8587,6 +10591,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "966",
+        "cms_certification_number": "195593",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8624,6 +10637,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784294",
+        "cms_certification_number": "195594",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8661,6 +10683,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "41",
+        "cms_certification_number": "195596",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8698,6 +10729,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "378",
+        "cms_certification_number": "195597",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8735,6 +10775,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "227",
+        "cms_certification_number": "195598",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8772,6 +10821,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "385",
+        "cms_certification_number": "195599",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8809,6 +10867,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "980",
+        "cms_certification_number": "195600",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8846,6 +10913,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "958",
+        "cms_certification_number": "195601",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8883,6 +10959,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "306",
+        "cms_certification_number": "195602",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.99",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8920,6 +11005,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785181",
+        "cms_certification_number": "195603",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8957,6 +11051,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784284",
+        "cms_certification_number": "195604",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -8994,6 +11097,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "330",
+        "cms_certification_number": "195605",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9031,6 +11143,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "936",
+        "cms_certification_number": "195606",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.93",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9068,6 +11189,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "00",
+        "cms_certification_number": "195608",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9105,6 +11235,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "453",
+        "cms_certification_number": "195610",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9142,6 +11281,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "327",
+        "cms_certification_number": "195611",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9179,6 +11327,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "842",
+        "cms_certification_number": "195612",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9216,6 +11373,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785953",
+        "cms_certification_number": "195613",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.85",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9253,6 +11419,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "91",
+        "cms_certification_number": "195614",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9290,6 +11465,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784279",
+        "cms_certification_number": "195615",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.96",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9327,6 +11511,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785244",
+        "cms_certification_number": "195617",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9364,6 +11557,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785426",
+        "cms_certification_number": "195618",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9401,6 +11603,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785363",
+        "cms_certification_number": "195619",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9438,6 +11649,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "945",
+        "cms_certification_number": "195620",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9475,6 +11695,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203781514",
+        "cms_certification_number": "195621",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9512,6 +11741,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203781655",
+        "cms_certification_number": "195622",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9549,6 +11787,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "000",
+        "cms_certification_number": "195623",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9586,6 +11833,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203783120",
+        "cms_certification_number": "195624",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9623,6 +11879,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0",
+        "cms_certification_number": "195625",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9660,6 +11925,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0",
+        "cms_certification_number": "195628",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.90",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9697,6 +11971,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0",
+        "cms_certification_number": "195629",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9734,6 +12017,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "975",
+        "cms_certification_number": "195630",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9771,6 +12063,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "311",
+        "cms_certification_number": "195632",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9808,6 +12109,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "994",
+        "cms_certification_number": "195633",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9845,6 +12155,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203783947",
+        "cms_certification_number": "195635",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9882,6 +12201,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784126",
+        "cms_certification_number": "195636",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9919,6 +12247,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203786369",
+        "cms_certification_number": "195637",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9956,6 +12293,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784459",
+        "cms_certification_number": "195638",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -9993,6 +12339,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203784343",
+        "cms_certification_number": "195639",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "fuzzy_name_zip_0.95",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10030,6 +12385,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "195643",
+        "cms_certification_number": "195643",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -10067,6 +12431,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2203785492",
+        "cms_certification_number": "195644",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -10104,6 +12477,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "810",
+        "cms_certification_number": "195645",
+        "issuing_agency": "Louisiana Department of Health",
+        "license_type": "Nursing Home License",
+        "license_note": null,
+        "match_method": "name_zip_exact",
+        "last_verified_date": "2026-03-06"
       }
     }
   ]

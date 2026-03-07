@@ -95,6 +95,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30011351",
+        "cms_certification_number": "305005",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -132,6 +140,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "03562",
+        "cms_certification_number": "305009",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (305009) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1235245390"
       }
     },
     {
@@ -169,6 +188,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3078147",
+        "cms_certification_number": "305016",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -206,6 +233,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "80305018",
+        "cms_certification_number": "305018",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -243,6 +278,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "80305020",
+        "cms_certification_number": "305020",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -280,6 +323,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3077497",
+        "cms_certification_number": "305022",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -317,6 +368,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30100130",
+        "cms_certification_number": "305024",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -354,6 +413,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30101907",
+        "cms_certification_number": "305030",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -391,6 +458,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "80305037",
+        "cms_certification_number": "305037",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -428,6 +503,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "80005038",
+        "cms_certification_number": "305038",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -465,6 +548,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3096252",
+        "cms_certification_number": "305039",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -502,6 +593,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30108783",
+        "cms_certification_number": "305040",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -539,6 +638,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30106946",
+        "cms_certification_number": "305041",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -576,6 +683,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3078166",
+        "cms_certification_number": "305043",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -613,6 +728,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3076977",
+        "cms_certification_number": "305044",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -650,6 +773,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3077749",
+        "cms_certification_number": "305045",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -687,6 +818,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "49750052",
+        "cms_certification_number": "305046",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -724,6 +863,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3071061",
+        "cms_certification_number": "305047",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -761,6 +908,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "83016930",
+        "cms_certification_number": "305048",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -798,6 +953,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "305049",
+        "cms_certification_number": "305049",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -835,6 +999,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30108778",
+        "cms_certification_number": "305050",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -872,6 +1044,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30108786",
+        "cms_certification_number": "305051",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -909,6 +1089,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30108779",
+        "cms_certification_number": "305052",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -946,6 +1134,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "00636",
+        "cms_certification_number": "305053",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (305053) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1659377869"
       }
     },
     {
@@ -983,6 +1182,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "80848085",
+        "cms_certification_number": "305054",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1020,6 +1227,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30107008",
+        "cms_certification_number": "305055",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1057,6 +1272,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3078723",
+        "cms_certification_number": "305056",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1094,6 +1317,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "02263",
+        "cms_certification_number": "305057",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Skilled Nursing Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (305057) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1699740043"
       }
     },
     {
@@ -1131,6 +1365,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "99305036",
+        "cms_certification_number": "305058",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1168,6 +1410,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30009034",
+        "cms_certification_number": "305059",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1205,6 +1455,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30009033",
+        "cms_certification_number": "305060",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1242,6 +1500,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30009031",
+        "cms_certification_number": "305061",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1279,6 +1545,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30009035",
+        "cms_certification_number": "305062",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1316,6 +1590,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "99750047",
+        "cms_certification_number": "305063",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1353,6 +1635,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "99750132",
+        "cms_certification_number": "305064",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1390,6 +1680,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30009030",
+        "cms_certification_number": "305065",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1427,6 +1725,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "00403",
+        "cms_certification_number": "305066",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Skilled Nursing Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (305066) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1104805613"
       }
     },
     {
@@ -1464,6 +1773,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3071565",
+        "cms_certification_number": "305067",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1501,6 +1818,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30009032",
+        "cms_certification_number": "305068",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1538,6 +1863,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "00403",
+        "cms_certification_number": "305069",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Skilled Nursing Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (305069) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1104805613"
       }
     },
     {
@@ -1575,6 +1911,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "00403",
+        "cms_certification_number": "305070",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Skilled Nursing Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (305070) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1104805613"
       }
     },
     {
@@ -1612,6 +1959,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "00403",
+        "cms_certification_number": "305071",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Skilled Nursing Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (305071) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1104805613"
       }
     },
     {
@@ -1649,6 +2007,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3071574",
+        "cms_certification_number": "305072",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1686,6 +2052,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30009262",
+        "cms_certification_number": "305074",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1723,6 +2097,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30108785",
+        "cms_certification_number": "305075",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1760,6 +2142,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30108777",
+        "cms_certification_number": "305076",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1797,6 +2187,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30108787",
+        "cms_certification_number": "305077",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1834,6 +2232,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30108787",
+        "cms_certification_number": "305078",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1871,6 +2277,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30101897",
+        "cms_certification_number": "305079",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1908,6 +2322,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3094362",
+        "cms_certification_number": "305080",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1945,6 +2367,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30001712",
+        "cms_certification_number": "305081",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1982,6 +2412,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "99750159",
+        "cms_certification_number": "305082",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2019,6 +2457,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "99750169",
+        "cms_certification_number": "305083",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2056,6 +2502,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30002362",
+        "cms_certification_number": "305084",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2093,6 +2547,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30100462",
+        "cms_certification_number": "305085",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2130,6 +2592,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3080835",
+        "cms_certification_number": "305086",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2167,6 +2637,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "99750012",
+        "cms_certification_number": "305087",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2204,6 +2682,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3077269",
+        "cms_certification_number": "305088",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2241,6 +2727,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30100460",
+        "cms_certification_number": "305089",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2278,6 +2772,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30009862",
+        "cms_certification_number": "305091",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2315,6 +2817,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "99750029",
+        "cms_certification_number": "305092",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2352,6 +2862,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3077772",
+        "cms_certification_number": "305093",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2389,6 +2907,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "80848045",
+        "cms_certification_number": "305094",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2426,6 +2952,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30106899",
+        "cms_certification_number": "305095",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2463,6 +2997,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "00000594",
+        "cms_certification_number": "305096",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2500,6 +3042,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "99750164",
+        "cms_certification_number": "305097",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2537,6 +3087,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30002028",
+        "cms_certification_number": "305099",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2574,6 +3132,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30E032",
+        "cms_certification_number": "305100",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (305100) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1659368322"
       }
     },
     {
@@ -2611,6 +3180,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "30102355",
+        "cms_certification_number": "305101",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2648,6 +3225,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "00636",
+        "cms_certification_number": "305102",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (305102) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1659377869"
       }
     },
     {
@@ -2685,6 +3273,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "305103",
+        "cms_certification_number": "305103",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -2722,6 +3319,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "3077265",
+        "cms_certification_number": "30E059",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2759,6 +3364,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "750153",
+        "cms_certification_number": "30E062",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -2796,6 +3409,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "00636",
+        "cms_certification_number": "30E076",
+        "issuing_agency": "New Hampshire Department of Health and Human Services",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (30E076) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1659377869"
       }
     }
   ]

@@ -91,6 +91,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "000009589",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075011",
+        "federal_provider_number": "075011",
+        "total_licensed_beds": "108",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -128,6 +139,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2496",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075017",
+        "federal_provider_number": "075017",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.71)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -165,6 +187,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2217-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075031",
+        "federal_provider_number": "075031",
+        "total_licensed_beds": "100",
+        "match_method": "fuzzy_city (0.80)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -202,6 +235,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "606-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075034",
+        "federal_provider_number": "075034",
+        "total_licensed_beds": "229",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -239,6 +283,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2029C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5044",
+        "federal_provider_number": "07-5044",
+        "total_licensed_beds": "160",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -276,6 +331,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2297",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075047",
+        "federal_provider_number": "075047",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.97)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -313,6 +379,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2452",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5057",
+        "federal_provider_number": "07-5057",
+        "total_licensed_beds": "97",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -350,6 +427,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2453",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075060",
+        "federal_provider_number": "075060",
+        "total_licensed_beds": "126",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -387,6 +475,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2414",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075061",
+        "federal_provider_number": "075061",
+        "total_licensed_beds": "156",
+        "match_method": "manual_rebrand",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -424,6 +523,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1347",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH/RHNS",
+        "license_status": "Active",
+        "cms_certification_number": "075063",
+        "federal_provider_number": "",
+        "total_licensed_beds": "199",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -461,6 +571,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1056-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075064",
+        "federal_provider_number": "",
+        "total_licensed_beds": "120",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -498,6 +619,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2359",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5070",
+        "federal_provider_number": "07-5070",
+        "total_licensed_beds": "120",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -535,6 +667,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "461",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5074",
+        "federal_provider_number": "07-5074",
+        "total_licensed_beds": "64",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -572,6 +715,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "930C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5078",
+        "federal_provider_number": "07-5078",
+        "total_licensed_beds": "103",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -609,6 +763,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2441",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5079",
+        "federal_provider_number": "07-5079",
+        "total_licensed_beds": "120",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -646,6 +811,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2464",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5084",
+        "federal_provider_number": "07-5084",
+        "total_licensed_beds": "62",
+        "match_method": "fuzzy_city (0.95)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -683,6 +859,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0219",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5085",
+        "federal_provider_number": "07-5085",
+        "total_licensed_beds": "231",
+        "match_method": "fuzzy_city (0.89)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -720,6 +907,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2017C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5089",
+        "federal_provider_number": "07-5089",
+        "total_licensed_beds": "70",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -757,6 +955,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2420",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075105",
+        "federal_provider_number": "075105",
+        "total_licensed_beds": "75",
+        "match_method": "fuzzy_city (0.95)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -794,6 +1003,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2439",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075109",
+        "federal_provider_number": "075109",
+        "total_licensed_beds": "257",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -831,6 +1051,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1096C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075111",
+        "federal_provider_number": "075111",
+        "total_licensed_beds": "60",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -868,6 +1099,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2206C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075113",
+        "federal_provider_number": "075113",
+        "total_licensed_beds": "90",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -905,6 +1147,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "564C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5117",
+        "federal_provider_number": "07-5117",
+        "total_licensed_beds": "202",
+        "match_method": "fuzzy_city (0.83)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -942,6 +1195,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "119C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5135",
+        "federal_provider_number": "07-5135",
+        "total_licensed_beds": "260",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -979,6 +1243,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "000913C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5138",
+        "federal_provider_number": "07-5138",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.97)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1016,6 +1291,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1068C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5144",
+        "federal_provider_number": "07-5144",
+        "total_licensed_beds": "90",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1053,6 +1339,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0704C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "060769641",
+        "federal_provider_number": "060769641",
+        "total_licensed_beds": "58",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1090,6 +1387,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2432",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5513",
+        "federal_provider_number": "07-5513",
+        "total_licensed_beds": "128",
+        "match_method": "fuzzy_city (0.81)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1127,6 +1435,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2440",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5158",
+        "federal_provider_number": "07-5158",
+        "total_licensed_beds": "120",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1164,6 +1483,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2391",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075159",
+        "federal_provider_number": "075159",
+        "total_licensed_beds": "150",
+        "match_method": "manual_rebrand",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1201,6 +1531,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "812C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5163",
+        "federal_provider_number": "07-5163",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.70)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1238,6 +1579,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1082C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5181",
+        "federal_provider_number": "07-5181",
+        "total_licensed_beds": "110",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1275,6 +1627,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "10439",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5182",
+        "federal_provider_number": "07-5182",
+        "total_licensed_beds": "160",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1312,6 +1675,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2479",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "1922725043",
+        "federal_provider_number": "1922725043",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_statewide (1.00)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1349,6 +1723,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2463",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5192",
+        "federal_provider_number": "07-5192",
+        "total_licensed_beds": "115",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1386,6 +1771,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2435",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075195",
+        "federal_provider_number": "075195",
+        "total_licensed_beds": "130",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1423,6 +1819,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2436",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075196",
+        "federal_provider_number": "075196",
+        "total_licensed_beds": "128",
+        "match_method": "fuzzy_city (0.68)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1460,6 +1867,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2056C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075198",
+        "federal_provider_number": "075198",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.81)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1497,6 +1915,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2385",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5200",
+        "federal_provider_number": "07-5200",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.94)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1534,6 +1963,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2466",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5201",
+        "federal_provider_number": "07-5201",
+        "total_licensed_beds": "98",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1571,6 +2011,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0843C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5202",
+        "federal_provider_number": "07-5202",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.85)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1608,6 +2059,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2330",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5208",
+        "federal_provider_number": "07-5208",
+        "total_licensed_beds": "95",
+        "match_method": "fuzzy_city (0.97)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1645,6 +2107,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2153",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5211",
+        "federal_provider_number": "07-5211",
+        "total_licensed_beds": "119",
+        "match_method": "fuzzy_city (0.94)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1682,6 +2155,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2410",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5213",
+        "federal_provider_number": "07-5213",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.86)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1719,6 +2203,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "871-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "1003947177",
+        "federal_provider_number": "1003947177",
+        "total_licensed_beds": "65",
+        "match_method": "fuzzy_city (0.96)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1756,6 +2251,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "884C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075216",
+        "federal_provider_number": "075216",
+        "total_licensed_beds": "89",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1793,6 +2299,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0021150",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5219",
+        "federal_provider_number": "07-5219",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.94)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1830,6 +2347,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2329",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075221",
+        "federal_provider_number": "",
+        "total_licensed_beds": "132",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -1867,6 +2395,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2407",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5222",
+        "federal_provider_number": "07-5222",
+        "total_licensed_beds": "85",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1904,6 +2443,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2199c",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075228",
+        "federal_provider_number": "075228",
+        "total_licensed_beds": "271",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1941,6 +2491,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2046C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "75230",
+        "federal_provider_number": "75230",
+        "total_licensed_beds": "60",
+        "match_method": "fuzzy_city (0.94)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -1978,6 +2539,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1090C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5231",
+        "federal_provider_number": "07-5231",
+        "total_licensed_beds": "60",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2015,6 +2587,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0813C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "060846977",
+        "federal_provider_number": "060846977",
+        "total_licensed_beds": "60",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2052,6 +2635,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2264",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "300071036",
+        "federal_provider_number": "300071036",
+        "total_licensed_beds": "75",
+        "match_method": "fuzzy_city (0.78)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2089,6 +2683,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "936C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH/RHNS",
+        "license_status": "Active",
+        "cms_certification_number": "07-5236",
+        "federal_provider_number": "07-5236",
+        "total_licensed_beds": "91",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2126,6 +2731,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1076C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5279",
+        "federal_provider_number": "07-5279",
+        "total_licensed_beds": "110",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2163,6 +2779,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "940C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "223619631",
+        "federal_provider_number": "223619631",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.84)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2200,6 +2827,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2371",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "cms_certification_number": "075240",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2237,6 +2872,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "001577 (2280)",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "1629076542 (07-5241)",
+        "federal_provider_number": "1629076542 (07-5241)",
+        "total_licensed_beds": "120",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2274,6 +2920,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2458",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5243",
+        "federal_provider_number": "07-5243",
+        "total_licensed_beds": "72",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2311,6 +2968,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "938C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5244",
+        "federal_provider_number": "07-5244",
+        "total_licensed_beds": "120",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2348,6 +3016,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2411",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5246",
+        "federal_provider_number": "07-5246",
+        "total_licensed_beds": "150",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2385,6 +3064,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2451",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5250A",
+        "federal_provider_number": "07-5250A",
+        "total_licensed_beds": "145",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2422,6 +3112,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2291",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5252",
+        "federal_provider_number": "07-5252",
+        "total_licensed_beds": "162",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2459,6 +3160,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2375 (2462)",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5253 (315134)",
+        "federal_provider_number": "07-5253 (315134)",
+        "total_licensed_beds": "124",
+        "match_method": "fuzzy_city (0.95)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2496,6 +3208,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1000C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5257",
+        "federal_provider_number": "07-5257",
+        "total_licensed_beds": "345",
+        "match_method": "fuzzy_city (0.96)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2533,6 +3256,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2445",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5258",
+        "federal_provider_number": "07-5258",
+        "total_licensed_beds": "90",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2570,6 +3304,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "9084",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075261",
+        "federal_provider_number": "",
+        "total_licensed_beds": "130",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -2607,6 +3352,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2343",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5263",
+        "federal_provider_number": "07-5263",
+        "total_licensed_beds": "175",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2644,6 +3400,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2221C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075264",
+        "federal_provider_number": "075264",
+        "total_licensed_beds": "150",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2681,6 +3448,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "666C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075265",
+        "federal_provider_number": "075265",
+        "total_licensed_beds": "90",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2718,6 +3496,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2222C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "911950838",
+        "federal_provider_number": "911950838",
+        "total_licensed_beds": "134",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2755,6 +3544,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1484",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5270",
+        "federal_provider_number": "07-5270",
+        "total_licensed_beds": "130",
+        "match_method": "manual_rebrand",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2792,6 +3592,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2320",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075271",
+        "federal_provider_number": "075271",
+        "total_licensed_beds": "100",
+        "match_method": "fuzzy_city (0.91)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2829,6 +3640,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "901-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH/RHNS",
+        "license_status": "Active",
+        "cms_certification_number": "075272",
+        "federal_provider_number": "075272",
+        "total_licensed_beds": "83",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2866,6 +3688,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2149",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075274",
+        "federal_provider_number": "075274",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.95)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2903,6 +3736,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2383",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5275",
+        "federal_provider_number": "07-5275",
+        "total_licensed_beds": "114",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2940,6 +3784,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1057-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075278",
+        "federal_provider_number": "075278",
+        "total_licensed_beds": "160",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -2977,6 +3832,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2477",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5237",
+        "federal_provider_number": "07-5237",
+        "total_licensed_beds": "150",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3014,6 +3880,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2406",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5286",
+        "federal_provider_number": "07-5286",
+        "total_licensed_beds": "180",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3051,6 +3928,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "258C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5288",
+        "federal_provider_number": "07-5288",
+        "total_licensed_beds": "120",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3088,6 +3976,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "985C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5290",
+        "federal_provider_number": "07-5290",
+        "total_licensed_beds": "30",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3125,6 +4024,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2402",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "47-1544485",
+        "federal_provider_number": "47-1544485",
+        "total_licensed_beds": "282",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3162,6 +4072,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "993-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5293",
+        "federal_provider_number": "07-5293",
+        "total_licensed_beds": "104",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3199,6 +4120,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2443",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075294",
+        "federal_provider_number": "075294",
+        "total_licensed_beds": "90",
+        "match_method": "fuzzy_city (0.97)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3236,6 +4168,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2488",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5295",
+        "federal_provider_number": "07-5295",
+        "total_licensed_beds": "90",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3273,6 +4216,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2470",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5296",
+        "federal_provider_number": "07-5296",
+        "total_licensed_beds": "190",
+        "match_method": "manual_rebrand",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3310,6 +4264,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2220C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075299",
+        "federal_provider_number": "075299",
+        "total_licensed_beds": "234",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3347,6 +4312,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2298",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH/RHNS",
+        "license_status": "Active",
+        "cms_certification_number": "07-5300",
+        "federal_provider_number": "07-5300",
+        "total_licensed_beds": "109",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3384,6 +4360,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "075301",
+        "cms_certification_number": "075301",
+        "issuing_agency": "Connecticut Department of Public Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -3421,6 +4406,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "092064",
+        "cms_certification_number": "075306",
+        "issuing_agency": "Connecticut Department of Public Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_ccn_fix"
       }
     },
     {
@@ -3458,6 +4451,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2196C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH/RHNS",
+        "license_status": "Active",
+        "cms_certification_number": "07-5307",
+        "federal_provider_number": "07-5307",
+        "total_licensed_beds": "76",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3495,6 +4499,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2403",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5309",
+        "federal_provider_number": "07-5309",
+        "total_licensed_beds": "217",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3532,6 +4547,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "20032",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075310",
+        "federal_provider_number": "075310",
+        "total_licensed_beds": "90",
+        "match_method": "fuzzy_city (0.98)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3569,6 +4595,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "000020256",
+        "cms_certification_number": "075312",
+        "issuing_agency": "Connecticut Department of Public Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_ccn_fix"
       }
     },
     {
@@ -3606,6 +4640,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "000020248",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5313",
+        "federal_provider_number": "07-5313",
+        "total_licensed_beds": "132",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3643,6 +4688,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2290",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075314",
+        "federal_provider_number": "",
+        "total_licensed_beds": "131",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -3680,6 +4736,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2028C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5316",
+        "federal_provider_number": "07-5316",
+        "total_licensed_beds": "105",
+        "match_method": "manual_rebrand",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3717,6 +4784,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2032-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5317",
+        "federal_provider_number": "07-5317",
+        "total_licensed_beds": "148",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3754,6 +4832,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2033C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075318",
+        "federal_provider_number": "075318",
+        "total_licensed_beds": "37",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3791,6 +4880,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2034C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH/RHNS",
+        "license_status": "Active",
+        "cms_certification_number": "075319",
+        "federal_provider_number": "075319",
+        "total_licensed_beds": "160",
+        "match_method": "manual_rebrand",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3828,6 +4928,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2457",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5320",
+        "federal_provider_number": "07-5320",
+        "total_licensed_beds": "124",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3865,6 +4976,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "000020397",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075321",
+        "federal_provider_number": "075321",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.93)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3902,6 +5024,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2450",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5322",
+        "federal_provider_number": "07-5322",
+        "total_licensed_beds": "45",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -3939,6 +5072,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "000020488",
+        "cms_certification_number": "075323",
+        "issuing_agency": "Connecticut Department of Public Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_ccn_fix"
       }
     },
     {
@@ -3976,6 +5117,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2050-c",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075324",
+        "federal_provider_number": "075324",
+        "total_licensed_beds": "127",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4013,6 +5165,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2051C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075325",
+        "federal_provider_number": "",
+        "total_licensed_beds": "94",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4050,6 +5213,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2417",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "cms_certification_number": "075326",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4087,6 +5258,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1063C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5327",
+        "federal_provider_number": "07-5327",
+        "total_licensed_beds": "60",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4124,6 +5306,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2056C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5329",
+        "federal_provider_number": "07-5329",
+        "total_licensed_beds": "128",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4161,6 +5354,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2323 (001970)",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5330",
+        "federal_provider_number": "07-5330",
+        "total_licensed_beds": "144",
+        "match_method": "fuzzy_city (0.97)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4198,6 +5402,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2202C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5331",
+        "federal_provider_number": "07-5331",
+        "total_licensed_beds": "90",
+        "match_method": "fuzzy_city (0.81)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4235,6 +5450,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1070C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075332",
+        "federal_provider_number": "075332",
+        "total_licensed_beds": "151",
+        "match_method": "fuzzy_city (0.67)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4272,6 +5498,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2237C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5333",
+        "federal_provider_number": "07-5333",
+        "total_licensed_beds": "126",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4309,6 +5546,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2472",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "88-1082802",
+        "federal_provider_number": "88-1082802",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.97)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4346,6 +5594,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2077C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075335",
+        "federal_provider_number": "",
+        "total_licensed_beds": "60",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4383,6 +5642,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2060-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5336",
+        "federal_provider_number": "07-5336",
+        "total_licensed_beds": "130",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4420,6 +5690,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2448",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075337",
+        "federal_provider_number": "075337",
+        "total_licensed_beds": "158",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4457,6 +5738,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1840",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "cms_certification_number": "075338",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4494,6 +5783,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "968-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5339",
+        "federal_provider_number": "07-5339",
+        "total_licensed_beds": "190",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4531,6 +5831,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2309",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075341",
+        "federal_provider_number": "075341",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.70)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4568,6 +5879,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2065-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075343",
+        "federal_provider_number": "075343",
+        "total_licensed_beds": "94",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4605,6 +5927,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2074C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5345",
+        "federal_provider_number": "07-5345",
+        "total_licensed_beds": "100",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4642,6 +5975,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2075",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "cms_certification_number": "075347",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4679,6 +6020,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2434",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5348",
+        "federal_provider_number": "07-5348",
+        "total_licensed_beds": "226",
+        "match_method": "fuzzy_city (0.97)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4716,6 +6068,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "932C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5349",
+        "federal_provider_number": "07-5349",
+        "total_licensed_beds": "60",
+        "match_method": "fuzzy_city (0.94)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4753,6 +6116,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2004C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5350",
+        "federal_provider_number": "07-5350",
+        "total_licensed_beds": "146",
+        "match_method": "fuzzy_city (0.94)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4790,6 +6164,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1023C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5352",
+        "federal_provider_number": "07-5352",
+        "total_licensed_beds": "60",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4827,6 +6212,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2431",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5353",
+        "federal_provider_number": "07-5353",
+        "total_licensed_beds": "294",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4864,6 +6260,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "10678",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5354",
+        "federal_provider_number": "07-5354",
+        "total_licensed_beds": "141",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4901,6 +6308,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2446",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "cms_certification_number": "075355",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -4938,6 +6353,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "286C [001929]",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5356",
+        "federal_provider_number": "07-5356",
+        "total_licensed_beds": "60",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -4975,6 +6401,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2178C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5358",
+        "federal_provider_number": "07-5358",
+        "total_licensed_beds": "48",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5012,6 +6449,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2219C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075359",
+        "federal_provider_number": "075359",
+        "total_licensed_beds": "134",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5049,6 +6497,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0942-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075361",
+        "federal_provider_number": "075361",
+        "total_licensed_beds": "76",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5086,6 +6545,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2438",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5362",
+        "federal_provider_number": "07-5362",
+        "total_licensed_beds": "50",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5123,6 +6593,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "541C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075365",
+        "federal_provider_number": "",
+        "total_licensed_beds": "60",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5160,6 +6641,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2427",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075366",
+        "federal_provider_number": "075366",
+        "total_licensed_beds": "153",
+        "match_method": "fuzzy_city (0.97)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5197,6 +6689,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2342 [2080-C]",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH/RHNS",
+        "license_status": "Active",
+        "cms_certification_number": "07-5367",
+        "federal_provider_number": "07-5367",
+        "total_licensed_beds": "90",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5234,6 +6737,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2296",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075368",
+        "federal_provider_number": "075368",
+        "total_licensed_beds": "130",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5271,6 +6785,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "699-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH/RHNS",
+        "license_status": "Active",
+        "cms_certification_number": "075371",
+        "federal_provider_number": "075371",
+        "total_licensed_beds": "134",
+        "match_method": "fuzzy_city (0.93)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5308,6 +6833,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2141C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075373",
+        "federal_provider_number": "",
+        "total_licensed_beds": "75",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5345,6 +6881,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "933C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5374",
+        "federal_provider_number": "07-5374",
+        "total_licensed_beds": "60",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5382,6 +6929,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2475",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5375",
+        "federal_provider_number": "07-5375",
+        "total_licensed_beds": "130",
+        "match_method": "fuzzy_city (0.74)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5419,6 +6977,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2404",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5377",
+        "federal_provider_number": "07-5377",
+        "total_licensed_beds": "120",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5456,6 +7025,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2093C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "cms_certification_number": "075378",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -5493,6 +7070,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2382",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5379",
+        "federal_provider_number": "07-5379",
+        "total_licensed_beds": "88",
+        "match_method": "manual_rebrand",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5530,6 +7118,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2122C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5380",
+        "federal_provider_number": "07-5380",
+        "total_licensed_beds": "85",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5567,6 +7166,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2097C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5381",
+        "federal_provider_number": "07-5381",
+        "total_licensed_beds": "150",
+        "match_method": "fuzzy_city (0.97)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5604,6 +7214,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "001995",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5382",
+        "federal_provider_number": "07-5382",
+        "total_licensed_beds": "130",
+        "match_method": "fuzzy_city (0.66)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5641,6 +7262,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2103C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5383",
+        "federal_provider_number": "07-5383",
+        "total_licensed_beds": "72",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5678,6 +7310,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2105C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH/RHNS",
+        "license_status": "Active",
+        "cms_certification_number": "07-5384",
+        "federal_provider_number": "07-5384",
+        "total_licensed_beds": "120",
+        "match_method": "fuzzy_city (0.97)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5715,6 +7358,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2107-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5386",
+        "federal_provider_number": "07-5386",
+        "total_licensed_beds": "128",
+        "match_method": "fuzzy_city (0.67)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5752,6 +7406,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2401",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075387",
+        "federal_provider_number": "075387",
+        "total_licensed_beds": "150",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5789,6 +7454,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1035C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5388",
+        "federal_provider_number": "07-5388",
+        "total_licensed_beds": "60",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5826,6 +7502,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1986",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5389",
+        "federal_provider_number": "07-5389",
+        "total_licensed_beds": "120",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5863,6 +7550,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2182-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5390",
+        "federal_provider_number": "07-5390",
+        "total_licensed_beds": "126",
+        "match_method": "fuzzy_city (0.68)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5900,6 +7598,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2108-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5393",
+        "federal_provider_number": "07-5393",
+        "total_licensed_beds": "71",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5937,6 +7646,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "21197",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5394",
+        "federal_provider_number": "07-5394",
+        "total_licensed_beds": "120",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -5974,6 +7694,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2247 [2146-C]",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5395",
+        "federal_provider_number": "07-5395",
+        "total_licensed_beds": "126",
+        "match_method": "fuzzy_city (0.79)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6011,6 +7742,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2125-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "066040513",
+        "federal_provider_number": "066040513",
+        "total_licensed_beds": "100",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6048,6 +7790,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2421",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5397",
+        "federal_provider_number": "07-5397",
+        "total_licensed_beds": "150",
+        "match_method": "fuzzy_city (0.94)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6085,6 +7838,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2218C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5400",
+        "federal_provider_number": "07-5400",
+        "total_licensed_beds": "161",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6122,6 +7886,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2132C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075402",
+        "federal_provider_number": "075402",
+        "total_licensed_beds": "88",
+        "match_method": "fuzzy_statewide (0.97)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6159,6 +7934,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2170",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5403",
+        "federal_provider_number": "07-5403",
+        "total_licensed_beds": "90",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6196,6 +7982,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2142C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "cms_certification_number": "075404",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6233,6 +8027,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2486",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075405",
+        "federal_provider_number": "075405",
+        "total_licensed_beds": "89",
+        "match_method": "fuzzy_city (0.76)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6270,6 +8075,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2485",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5407",
+        "federal_provider_number": "07-5407",
+        "total_licensed_beds": "75",
+        "match_method": "fuzzy_city (0.82)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6307,6 +8123,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2167C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5408",
+        "federal_provider_number": "07-5408",
+        "total_licensed_beds": "30",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6344,6 +8171,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2168C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075410",
+        "federal_provider_number": "075410",
+        "total_licensed_beds": "60",
+        "match_method": "fuzzy_city (0.85)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6381,6 +8219,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "989C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "cms_certification_number": "075411",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6418,6 +8264,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2197-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5412",
+        "federal_provider_number": "07-5412",
+        "total_licensed_beds": "60",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6455,6 +8312,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2183-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5413",
+        "federal_provider_number": "07-5413",
+        "total_licensed_beds": "145",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6492,6 +8360,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "21858",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5414",
+        "federal_provider_number": "07-5414",
+        "total_licensed_beds": "96",
+        "match_method": "fuzzy_city (0.98)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6529,6 +8408,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2426",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075416",
+        "federal_provider_number": "",
+        "total_licensed_beds": "148",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6566,6 +8456,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2400",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075418",
+        "federal_provider_number": "075418",
+        "total_licensed_beds": "90",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6603,6 +8504,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2480",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075419",
+        "federal_provider_number": "075419",
+        "total_licensed_beds": "130",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6640,6 +8552,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "000009464",
+        "cms_certification_number": "075420",
+        "issuing_agency": "Connecticut Department of Public Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_ccn_fix"
       }
     },
     {
@@ -6677,6 +8597,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2380",
+        "cms_certification_number": "075421",
+        "issuing_agency": "Connecticut Department of Public Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_ccn_fix"
       }
     },
     {
@@ -6714,6 +8642,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2396",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075423",
+        "federal_provider_number": "075423",
+        "total_licensed_beds": "190",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6751,6 +8690,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2397",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "cms_certification_number": "075425",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -6788,6 +8735,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2266",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075429",
+        "federal_provider_number": "075429",
+        "total_licensed_beds": "62",
+        "match_method": "fuzzy_statewide (1.00)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6825,6 +8783,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2315",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5431",
+        "federal_provider_number": "07-5431",
+        "total_licensed_beds": "44",
+        "match_method": "fuzzy_city (0.85)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6862,6 +8831,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "144RH",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "RHNS",
+        "license_status": "Active",
+        "cms_certification_number": "542999",
+        "federal_provider_number": "542999",
+        "total_licensed_beds": "43",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6899,6 +8879,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2449",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5434",
+        "federal_provider_number": "07-5434",
+        "total_licensed_beds": "60",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6936,6 +8927,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0045",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5436",
+        "federal_provider_number": "07-5436",
+        "total_licensed_beds": "57",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -6973,6 +8975,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2425",
+        "cms_certification_number": "075437",
+        "issuing_agency": "Connecticut Department of Public Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_ccn_fix"
       }
     },
     {
@@ -7010,6 +9020,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2306",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075438",
+        "federal_provider_number": "075438",
+        "total_licensed_beds": "130",
+        "match_method": "name_city_exact",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -7047,6 +9068,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2157-C",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075439",
+        "federal_provider_number": "",
+        "total_licensed_beds": "30",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7084,6 +9116,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2431",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075440",
+        "federal_provider_number": "075440",
+        "total_licensed_beds": "23",
+        "match_method": "fuzzy_city (0.70)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -7121,6 +9164,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2429",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "07-5441",
+        "federal_provider_number": "07-5441",
+        "total_licensed_beds": "34",
+        "match_method": "fuzzy_city (0.69)",
+        "last_verified_date": "2026-02-27"
       }
     },
     {
@@ -7158,6 +9212,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "2389",
+        "issuing_agency": "Connecticut DPH - Health Care Quality and Safety Branch",
+        "license_type": "CCNH",
+        "license_status": "Active",
+        "cms_certification_number": "075442",
+        "federal_provider_number": "",
+        "total_licensed_beds": "95",
+        "match_method": "phone_exact",
+        "last_verified_date": "2026-03-06"
       }
     },
     {
@@ -7195,6 +9260,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "075443",
+        "cms_certification_number": "075443",
+        "issuing_agency": "Connecticut Department of Public Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     }
   ]

@@ -71,6 +71,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "OHCA# 44-N",
+        "cms_certification_number": "125002",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (125002) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1609949775"
       }
     },
     {
@@ -108,6 +119,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "OHCA35-N",
+        "cms_certification_number": "125003",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (125003) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1295813350"
       }
     },
     {
@@ -145,6 +167,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "125004",
+        "cms_certification_number": "125004",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -182,6 +213,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "08434701",
+        "cms_certification_number": "125007",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -219,6 +258,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "OCHA# 18-N",
+        "cms_certification_number": "125009",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (125009) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1235218835"
       }
     },
     {
@@ -256,6 +306,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "40-N",
+        "cms_certification_number": "125010",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (125010) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1548344781"
       }
     },
     {
@@ -293,6 +354,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "54614501",
+        "cms_certification_number": "125011",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -330,6 +399,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "5N",
+        "cms_certification_number": "125013",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Skilled Nursing Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (125013) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1558346528"
       }
     },
     {
@@ -367,6 +447,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "125014",
+        "cms_certification_number": "125014",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -404,6 +493,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "000786",
+        "cms_certification_number": "125019",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -441,6 +538,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "54946201",
+        "cms_certification_number": "125020",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -478,6 +583,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "39-N",
+        "cms_certification_number": "125021",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (125021) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1376601658"
       }
     },
     {
@@ -515,6 +631,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "43-N",
+        "cms_certification_number": "125023",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (125023) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1356423974"
       }
     },
     {
@@ -552,6 +679,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0042",
+        "cms_certification_number": "125024",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -589,6 +724,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "25-N",
+        "cms_certification_number": "125026",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (125026) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1154325405"
       }
     },
     {
@@ -626,6 +772,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "27-N",
+        "cms_certification_number": "125029",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (125029) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1528129442"
       }
     },
     {
@@ -663,6 +820,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "OHCA# 41-N",
+        "cms_certification_number": "125032",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (125032) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1053497040"
       }
     },
     {
@@ -700,6 +868,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "049807",
+        "cms_certification_number": "125033",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -737,6 +913,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "03114001",
+        "cms_certification_number": "125038",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -774,6 +958,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "A44626",
+        "cms_certification_number": "125040",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -811,6 +1003,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "008890",
+        "cms_certification_number": "125041",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -848,6 +1048,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0024703",
+        "cms_certification_number": "125042",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -885,6 +1093,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0204537",
+        "cms_certification_number": "125043",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -922,6 +1138,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "125045",
+        "cms_certification_number": "125045",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -959,6 +1184,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "A46993",
+        "cms_certification_number": "125046",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -996,6 +1229,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "A00475",
+        "cms_certification_number": "125048",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1033,6 +1274,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "00196801",
+        "cms_certification_number": "125050",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1070,6 +1319,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "51852401",
+        "cms_certification_number": "125051",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1107,6 +1364,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0232454",
+        "cms_certification_number": "125052",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1144,6 +1409,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "580127",
+        "cms_certification_number": "125055",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1181,6 +1454,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "08155301",
+        "cms_certification_number": "125056",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1218,6 +1499,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "125057",
+        "cms_certification_number": "125057",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1255,6 +1545,14 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "616956",
+        "cms_certification_number": "125058",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
       }
     },
     {
@@ -1292,6 +1590,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "70-N",
+        "cms_certification_number": "125059",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (125059) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1619157922"
       }
     },
     {
@@ -1329,6 +1638,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "125061",
+        "cms_certification_number": "125061",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1366,6 +1684,17 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "61-N",
+        "cms_certification_number": "125062",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (125062) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1992792733"
       }
     },
     {
@@ -1403,6 +1732,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "125063",
+        "cms_certification_number": "125063",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1440,6 +1778,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "125064",
+        "cms_certification_number": "125064",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1477,6 +1824,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "125065",
+        "cms_certification_number": "125065",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1514,6 +1870,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "125066",
+        "cms_certification_number": "125066",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1551,6 +1916,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "125067",
+        "cms_certification_number": "125067",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     },
     {
@@ -1588,6 +1962,15 @@
         "source": "CMS Provider Data Catalog",
         "dataset": "Nursing Homes Including Rehab Services",
         "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "125069",
+        "cms_certification_number": "125069",
+        "issuing_agency": "Hawaii Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
       }
     }
   ]
