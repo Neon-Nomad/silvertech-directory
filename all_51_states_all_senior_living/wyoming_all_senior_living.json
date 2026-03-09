@@ -1,0 +1,2869 @@
+{
+  "state": "Wyoming",
+  "state_abbreviation": "WY",
+  "total_facilities": 69,
+  "by_care_type": {
+    "Nursing Home": 36,
+    "Assisted Living": 33
+  },
+  "coverage": {
+    "state_license_number": "69/69 (100.0%)",
+    "cms_certification_number": "36/69 (52.2%)"
+  },
+  "last_updated": "2026-03-09",
+  "facilities": [
+    {
+      "name": "Granite SNF Operations LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3128 Boxelder Dr",
+        "city": "Cheyenne",
+        "state": "WY",
+        "zip": "82001"
+      },
+      "contact": {
+        "phone": "3076347901",
+        "phone_formatted": "3076347901"
+      },
+      "location": {
+        "county": "Laramie",
+        "latitude": 41.1391,
+        "longitude": -104.78
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 146,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GRANITE SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106167400",
+        "cms_certification_number": "535013",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Sublette County Health",
+      "type": "Nursing Home",
+      "address": {
+        "street": "333 N Bridger Ave",
+        "city": "Pinedale",
+        "state": "WY",
+        "zip": "82941"
+      },
+      "contact": {
+        "phone": "3073674161",
+        "phone_formatted": "3073674161"
+      },
+      "location": {
+        "county": "Sublette",
+        "latitude": 42.8697,
+        "longitude": -109.86
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SUBLETTE COUNTY HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106426600",
+        "cms_certification_number": "535017",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Wyoming Retirement Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "890 US HWY 20 SOUTH",
+        "city": "Basin",
+        "state": "WY",
+        "zip": "82410"
+      },
+      "contact": {
+        "phone": "3075682431",
+        "phone_formatted": "3075682431"
+      },
+      "location": {
+        "county": "Big Horn",
+        "latitude": 44.3602,
+        "longitude": -108.04
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF WYOMING",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "100176100",
+        "cms_certification_number": "535021",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "The Legacy Living and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1000 S Douglas Way",
+        "city": "Gillette",
+        "state": "WY",
+        "zip": "82716"
+      },
+      "contact": {
+        "phone": "3076887000",
+        "phone_formatted": "3076887000"
+      },
+      "location": {
+        "county": "Campbell",
+        "latitude": 44.2834,
+        "longitude": -105.49
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 160,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CAMPBELL COUNTY HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "102421300",
+        "cms_certification_number": "535022",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Weston County Health Services",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1124 Washington Blvd",
+        "city": "Newcastle",
+        "state": "WY",
+        "zip": "82701"
+      },
+      "contact": {
+        "phone": "3077462793",
+        "phone_formatted": "3077462793"
+      },
+      "location": {
+        "county": "Weston",
+        "latitude": 43.8488,
+        "longitude": -104.19
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WESTON COUNTY HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "114292505",
+        "cms_certification_number": "535023",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Casper Mountain Rehabilitation and Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4305 S Poplar",
+        "city": "Casper",
+        "state": "WY",
+        "zip": "82601"
+      },
+      "contact": {
+        "phone": "3072372561",
+        "phone_formatted": "3072372561"
+      },
+      "location": {
+        "county": "Natrona",
+        "latitude": 42.8084,
+        "longitude": -106.34
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CASPER OPCO LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "107451200",
+        "cms_certification_number": "535024",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Polaris Rehabilitation and Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2700 E 12th Street",
+        "city": "Cheyenne",
+        "state": "WY",
+        "zip": "82001"
+      },
+      "contact": {
+        "phone": "3076347986",
+        "phone_formatted": "3076347986"
+      },
+      "location": {
+        "county": "Laramie",
+        "latitude": 41.1366,
+        "longitude": -104.78
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH BIG HORN HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "107449100",
+        "cms_certification_number": "535025",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Big Horn Rehabilitation and Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1851 Big Horn Ave",
+        "city": "Sheridan",
+        "state": "WY",
+        "zip": "82801"
+      },
+      "contact": {
+        "phone": "3076744416",
+        "phone_formatted": "3076744416"
+      },
+      "location": {
+        "county": "Sheridan",
+        "latitude": 44.7774,
+        "longitude": -106.96
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 128,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH BIG HORN HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "120857800",
+        "cms_certification_number": "535026",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Cody Regional Health Long Term Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "707 Sheridan Ave",
+        "city": "Cody",
+        "state": "WY",
+        "zip": "82414"
+      },
+      "contact": {
+        "phone": "3075782434",
+        "phone_formatted": "3075782434"
+      },
+      "location": {
+        "county": "Park",
+        "latitude": 44.526,
+        "longitude": -109.07
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 94,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WEST PARK HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106133004",
+        "cms_certification_number": "535027",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Crook County Medical Services District Long Term C",
+      "type": "Nursing Home",
+      "address": {
+        "street": "713 Oak St",
+        "city": "Sundance",
+        "state": "WY",
+        "zip": "82729"
+      },
+      "contact": {
+        "phone": "3072833501",
+        "phone_formatted": "3072833501"
+      },
+      "location": {
+        "county": "Crook",
+        "latitude": 44.4075,
+        "longitude": -104.38
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 32,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CROOK COUNTY MEDICAL SERVICES DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "07-127",
+        "cms_certification_number": "535029",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "General Acute Care Hospital, Critical Access",
+        "license_note": "State license number not available via public portal. CMS CCN (535029) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1871660159"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "New Horizons Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1111 Lane 12",
+        "city": "Lovell",
+        "state": "WY",
+        "zip": "82431"
+      },
+      "contact": {
+        "phone": "3075485200",
+        "phone_formatted": "3075485200"
+      },
+      "location": {
+        "county": "Big Horn",
+        "latitude": 44.8258,
+        "longitude": -108.39
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 85,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH BIG HORN HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "107370201",
+        "cms_certification_number": "535030",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Wind River SNF Operations LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1002 Forest Dr",
+        "city": "Riverton",
+        "state": "WY",
+        "zip": "82501"
+      },
+      "contact": {
+        "phone": "3078569471",
+        "phone_formatted": "3078569471"
+      },
+      "location": {
+        "county": "Fremont",
+        "latitude": 43.0333,
+        "longitude": -108.38
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 81,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WIND RIVER SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "113234200",
+        "cms_certification_number": "535031",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Life Care Center Of Cheyenne",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1330 Prairie Ave",
+        "city": "Cheyenne",
+        "state": "WY",
+        "zip": "82009"
+      },
+      "contact": {
+        "phone": "3077788997",
+        "phone_formatted": "3077788997"
+      },
+      "location": {
+        "county": "Laramie",
+        "latitude": 41.1641,
+        "longitude": -104.81
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 160,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CHEYENNE OPERATIONS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "105575500",
+        "cms_certification_number": "535032",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Mission at Castle Rock",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1445 Uinta Dr",
+        "city": "Green River",
+        "state": "WY",
+        "zip": "82935"
+      },
+      "contact": {
+        "phone": "3078724600",
+        "phone_formatted": "3078724600"
+      },
+      "location": {
+        "county": "Sweetwater",
+        "latitude": 41.5085,
+        "longitude": -109.48
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 59,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MISSION HEALTH SERVICES",
+        "chain_name": "MISSION HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106428200",
+        "cms_certification_number": "535033",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Westward Heights Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "150 Caring Way",
+        "city": "LANDER",
+        "state": "WY",
+        "zip": "82520"
+      },
+      "contact": {
+        "phone": "3073325560",
+        "phone_formatted": "3073325560"
+      },
+      "location": {
+        "county": "Fremont",
+        "latitude": 42.8281,
+        "longitude": -108.72
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WESTWARD HEIGHTS CORP",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106450900",
+        "cms_certification_number": "535034",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Rawlins SNF Operations LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "542 16th St",
+        "city": "Rawlins",
+        "state": "WY",
+        "zip": "82301"
+      },
+      "contact": {
+        "phone": "3073242759",
+        "phone_formatted": "3073242759"
+      },
+      "location": {
+        "county": "Carbon",
+        "latitude": 41.7893,
+        "longitude": -107.25
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 62,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RAWLINS SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "113233400",
+        "cms_certification_number": "535036",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Rocky Mountain Care - Evanston",
+      "type": "Nursing Home",
+      "address": {
+        "street": "475 Yellow Creek Rd",
+        "city": "EVANSTON",
+        "state": "WY",
+        "zip": "82930"
+      },
+      "contact": {
+        "phone": "3077890726",
+        "phone_formatted": "3077890726"
+      },
+      "location": {
+        "county": "Uinta",
+        "latitude": 41.2331,
+        "longitude": -110.99
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH BIG HORN HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "123864700",
+        "cms_certification_number": "535038",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Westview Health Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1990 West Loucks St",
+        "city": "Sheridan",
+        "state": "WY",
+        "zip": "82801"
+      },
+      "contact": {
+        "phone": "3076729789",
+        "phone_formatted": "3076729789"
+      },
+      "location": {
+        "county": "Sheridan",
+        "latitude": 44.7924,
+        "longitude": -106.98
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "WESTVIEW OPERATIONS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "107070300",
+        "cms_certification_number": "535039",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Douglas Care Center LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1108 Birch Street",
+        "city": "Douglas",
+        "state": "WY",
+        "zip": "82633"
+      },
+      "contact": {
+        "phone": "3073583397",
+        "phone_formatted": "3073583397"
+      },
+      "location": {
+        "county": "Converse",
+        "latitude": 42.7526,
+        "longitude": -105.37
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "DOUGLAS CARE CENTER, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "123218500",
+        "cms_certification_number": "535040",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Shepherd of the Valley SNF Operations LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "60 Magnolia St",
+        "city": "Casper",
+        "state": "WY",
+        "zip": "82604"
+      },
+      "contact": {
+        "phone": "3072349381",
+        "phone_formatted": "3072349381"
+      },
+      "location": {
+        "county": "Natrona",
+        "latitude": 42.8204,
+        "longitude": -106.4
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 192,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SHEPHERD OF THE VALLEY SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106292100",
+        "cms_certification_number": "535042",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Cottonwood Health and Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "503 S 18th St",
+        "city": "Laramie",
+        "state": "WY",
+        "zip": "82070"
+      },
+      "contact": {
+        "phone": "3077423728",
+        "phone_formatted": "3077423728"
+      },
+      "location": {
+        "county": "Albany",
+        "latitude": 41.3083,
+        "longitude": -105.57
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 105,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SNH WY TENANT LLC",
+        "chain_name": "STELLAR SENIOR LIVING"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "115810400",
+        "cms_certification_number": "535043",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Powell Valley Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "777 Avenue H",
+        "city": "Powell",
+        "state": "WY",
+        "zip": "82435"
+      },
+      "contact": {
+        "phone": "3077541107",
+        "phone_formatted": "3077541107"
+      },
+      "location": {
+        "county": "Park",
+        "latitude": 44.7566,
+        "longitude": -108.77
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "107185806",
+        "cms_certification_number": "535045",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "St John's Health Sage Living",
+      "type": "Nursing Home",
+      "address": {
+        "street": "625 East Broadway, Building b",
+        "city": "Jackson",
+        "state": "WY",
+        "zip": "83001"
+      },
+      "contact": {
+        "phone": "3077397661",
+        "phone_formatted": "3077397661"
+      },
+      "location": {
+        "county": "Teton",
+        "latitude": 43.472,
+        "longitude": -110.77
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "TETON COUNTY HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106299901",
+        "cms_certification_number": "535046",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Worland Healthcare and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1901 Howell Ave",
+        "city": "Worland",
+        "state": "WY",
+        "zip": "82401"
+      },
+      "contact": {
+        "phone": "3073474285",
+        "phone_formatted": "3073474285"
+      },
+      "location": {
+        "county": "Washakie",
+        "latitude": 44.0117,
+        "longitude": -107.94
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 87,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SNH WY TENANT LLC",
+        "chain_name": "STELLAR SENIOR LIVING"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "115809100",
+        "cms_certification_number": "535048",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Life Care Center of Casper",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4041 South Poplar St",
+        "city": "Casper",
+        "state": "WY",
+        "zip": "82601"
+      },
+      "contact": {
+        "phone": "3072660000",
+        "phone_formatted": "3072660000"
+      },
+      "location": {
+        "county": "Natrona",
+        "latitude": 42.8102,
+        "longitude": -106.34
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 120,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CASPER OPERATIONS LLC",
+        "chain_name": "LIFE CARE CENTERS OF AMERICA"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "108784300",
+        "cms_certification_number": "535049",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Morning Star Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "4 North Fork Rd",
+        "city": "Fort Washakie",
+        "state": "WY",
+        "zip": "82514"
+      },
+      "contact": {
+        "phone": "3073326902",
+        "phone_formatted": "3073326902"
+      },
+      "location": {
+        "county": "Fremont",
+        "latitude": 43.0038,
+        "longitude": -108.88
+      },
+      "facility_details": {
+        "ownership_type": "Government - Federal",
+        "certified_beds": 45,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MORNING STAR CARE CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "115247500",
+        "cms_certification_number": "535050",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "THERMOPOLIS REHABILITATION AND WELLNESS",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1210 CANYON HILLS RD",
+        "city": "THERMOPOLIS",
+        "state": "WY",
+        "zip": "82443"
+      },
+      "contact": {
+        "phone": "3078645591",
+        "phone_formatted": "3078645591"
+      },
+      "location": {
+        "county": "Hot Springs",
+        "latitude": 43.637,
+        "longitude": -108.22
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THERMOPOLIS SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "102422100",
+        "cms_certification_number": "535051",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Platte County Legacy Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "100 19th St",
+        "city": "Wheatland",
+        "state": "WY",
+        "zip": "82201"
+      },
+      "contact": {
+        "phone": "3073227351",
+        "phone_formatted": "3073227351"
+      },
+      "location": {
+        "county": "Platte",
+        "latitude": 42.0529,
+        "longitude": -104.97
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PLATTE COUNTY HOSPITAL DISTRICT BOARD",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106545901",
+        "cms_certification_number": "535053",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Green House Living for Sheridan",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2311 Shirley Cove",
+        "city": "Sheridan",
+        "state": "WY",
+        "zip": "82801"
+      },
+      "contact": {
+        "phone": "3076720600",
+        "phone_formatted": "3076720600"
+      },
+      "location": {
+        "county": "Sheridan",
+        "latitude": 44.7865,
+        "longitude": -106.97
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 48,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "ALTERNATIVE ELDER LIVING INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "133658400",
+        "cms_certification_number": "535054",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Sage View SNF Operations LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1325 Sage St",
+        "city": "Rock Springs",
+        "state": "WY",
+        "zip": "82901"
+      },
+      "contact": {
+        "phone": "3073623780",
+        "phone_formatted": "3073623780"
+      },
+      "location": {
+        "county": "Sweetwater",
+        "latitude": 41.5736,
+        "longitude": -109.21
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 82,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "SAGE VIEW SNF OPERATIONS, LLC",
+        "chain_name": "EMPRES OPERATED BY EVERGREEN"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "535056",
+        "cms_certification_number": "535056",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Goshen Healthcare Community",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2009 Laramie St",
+        "city": "Torrington",
+        "state": "WY",
+        "zip": "82240"
+      },
+      "contact": {
+        "phone": "3075324038",
+        "phone_formatted": "3075324038"
+      },
+      "location": {
+        "county": "Goshen",
+        "latitude": 42.0843,
+        "longitude": -104.19
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 103,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VETRAS TORRINGTON SNF LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "102301200",
+        "cms_certification_number": "535057",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Mountain View Skilled Nursing Community at WLRC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8204 Wyoming State Highway 789",
+        "city": "Lander",
+        "state": "WY",
+        "zip": "82520"
+      },
+      "contact": {
+        "phone": "3073356700",
+        "phone_formatted": "3073356700"
+      },
+      "location": {
+        "county": "Fremont",
+        "latitude": 42.8415,
+        "longitude": -108.73
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 20,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF WYOMING",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "535058",
+        "cms_certification_number": "535058",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Star Valley Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "130 Hospital Lane",
+        "city": "Afton",
+        "state": "WY",
+        "zip": "83110"
+      },
+      "contact": {
+        "phone": "3078855900",
+        "phone_formatted": "3078855900"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 42.7162,
+        "longitude": -110.93
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 24,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NORTH LINCOLN COUNTY HOSPITAL DISTRICT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "108294906",
+        "cms_certification_number": "535059",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Wyoming Veterans' Skilled Nursing Facility",
+      "type": "Nursing Home",
+      "address": {
+        "street": "700 Veteran's Lane",
+        "city": "Buffalo",
+        "state": "WY",
+        "zip": "82834"
+      },
+      "contact": {
+        "phone": "3076845511",
+        "phone_formatted": "3076845511"
+      },
+      "location": {
+        "county": "Johnson",
+        "latitude": 44.3351,
+        "longitude": -106.74
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 36,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "STATE OF WYOMING",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "535061",
+        "cms_certification_number": "535061",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Amie Holt Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "497 W Lott",
+        "city": "Buffalo",
+        "state": "WY",
+        "zip": "82834"
+      },
+      "contact": {
+        "phone": "3076845521",
+        "phone_formatted": "3076845521"
+      },
+      "location": {
+        "county": "Johnson",
+        "latitude": 44.3497,
+        "longitude": -106.71
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 50,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "106561101",
+        "cms_certification_number": "53A002",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "South Lincoln Nursing Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "711 Onyx St",
+        "city": "Kemmerer",
+        "state": "WY",
+        "zip": "83101"
+      },
+      "contact": {
+        "phone": "3078775717",
+        "phone_formatted": "3078775717"
+      },
+      "location": {
+        "county": "Lincoln",
+        "latitude": 41.7895,
+        "longitude": -110.54
+      },
+      "facility_details": {
+        "ownership_type": "Government - Hospital district",
+        "certified_beds": 24,
+        "provider_type": "Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "105993907",
+        "cms_certification_number": "53A051",
+        "issuing_agency": "Wyoming Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "WY"
+    },
+    {
+      "name": "Beyond Homes Assisted Living",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "153 DOYLE CHILD CIR.",
+        "city": "Afton",
+        "state": "WY",
+        "zip": "83110",
+        "county": "Lincoln"
+      },
+      "contact": {
+        "phone": "307-885-2263",
+        "email": "beyondhomewy@gmail.com"
+      },
+      "facility_details": {
+        "beds": 13,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.7187106,
+        "longitude": -110.9299158
+      },
+      "state_license": {
+        "state_license_number": "P-655",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Agape Manor Inc",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "830 NORTH MAIN ST",
+        "city": "Buffalo",
+        "state": "WY",
+        "zip": "82834",
+        "county": "Johnson"
+      },
+      "contact": {
+        "phone": "307-684-5504",
+        "email": "renee@agapemanor.com"
+      },
+      "facility_details": {
+        "beds": 26,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.3589538,
+        "longitude": -106.6989648
+      },
+      "state_license": {
+        "state_license_number": "15005",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Veterans' Home Of Wyoming",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "700 VETERANS' LANE",
+        "city": "Buffalo",
+        "state": "WY",
+        "zip": "82834",
+        "county": "Johnson"
+      },
+      "contact": {
+        "phone": "307-684-5511",
+        "email": "bruce.allison@wyo.gov"
+      },
+      "facility_details": {
+        "beds": 117,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.3331052,
+        "longitude": -106.738863
+      },
+      "state_license": {
+        "state_license_number": "15006",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Willow Creek Homes Of  Buffalo",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "1 NORTH KLONDIKE",
+        "city": "Buffalo",
+        "state": "WY",
+        "zip": "82834",
+        "county": "Johnson"
+      },
+      "contact": {
+        "phone": "307-684-8669",
+        "email": "willowcreekofbuffalo@gmail.com"
+      },
+      "facility_details": {
+        "beds": 15,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.3468072,
+        "longitude": -106.7053741
+      },
+      "state_license": {
+        "state_license_number": "15259",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Garden Square Of Casper",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "1950 SOUTH BEVERLY ST",
+        "city": "Casper",
+        "state": "WY",
+        "zip": "82609",
+        "county": "Natrona"
+      },
+      "contact": {
+        "phone": "307-472-1153",
+        "email": "administrator@gardensquarecasper.com"
+      },
+      "facility_details": {
+        "beds": 50,
+        "ownership_type": "",
+        "licensee": "CASPER ASSISTED LIVING LLC"
+      },
+      "location": {
+        "latitude": 42.8303927,
+        "longitude": -106.2988314
+      },
+      "state_license": {
+        "state_license_number": "15007",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Edgewood Meadow Wind",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "3955 EAST 12TH ST",
+        "city": "Casper",
+        "state": "WY",
+        "zip": "82609",
+        "county": "Natrona"
+      },
+      "contact": {
+        "phone": "307-577-3045",
+        "email": "kandus.brooks@edgewoodvista.com"
+      },
+      "facility_details": {
+        "beds": 155,
+        "ownership_type": "",
+        "licensee": "EMG CASPER MW LLC"
+      },
+      "location": {
+        "latitude": 42.8382387,
+        "longitude": -106.2747859
+      },
+      "state_license": {
+        "state_license_number": "15254",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Park Place Assisted Living Community",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "1930 EAST 12TH ST",
+        "city": "Casper",
+        "state": "WY",
+        "zip": "82601",
+        "county": "Natrona"
+      },
+      "contact": {
+        "phone": "307-265-2273",
+        "email": "heather.froling@edgewoodvista.com"
+      },
+      "facility_details": {
+        "beds": 116,
+        "ownership_type": "",
+        "licensee": "EMG CASPER PP LLC"
+      },
+      "location": {
+        "latitude": 42.8396918,
+        "longitude": -106.3009924
+      },
+      "state_license": {
+        "state_license_number": "15261",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Mountain Plaza Assisted Living",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "4154 TALON DR",
+        "city": "Casper",
+        "state": "WY",
+        "zip": "82604",
+        "county": "Natrona"
+      },
+      "contact": {
+        "phone": "307-232-0100",
+        "email": "kenyne@mountainplazaal.com"
+      },
+      "facility_details": {
+        "beds": 62,
+        "ownership_type": "",
+        "licensee": "EP-MPAL LLC"
+      },
+      "location": {
+        "latitude": 42.8151156,
+        "longitude": -106.3725431
+      },
+      "state_license": {
+        "state_license_number": "15009",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Primrose Retirement Community Of Casper",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "1865 SOUTH BEVERLY ST",
+        "city": "Casper",
+        "state": "WY",
+        "zip": "82609",
+        "county": "Natrona"
+      },
+      "contact": {
+        "phone": "307-266-4800",
+        "email": "opspecialist@primroseretirement.com"
+      },
+      "facility_details": {
+        "beds": 42,
+        "ownership_type": "",
+        "licensee": "TSMM MANAGEMENT LLC"
+      },
+      "location": {
+        "latitude": 42.8311867,
+        "longitude": -106.2964405
+      },
+      "state_license": {
+        "state_license_number": "15011",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Aspen Wind Assisted Living Community",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "4010 NORTH COLLEGE DR",
+        "city": "Cheyenne",
+        "state": "WY",
+        "zip": "82001",
+        "county": "Laramie"
+      },
+      "contact": {
+        "phone": "307-778-9511",
+        "email": "leslie.milliken@edgewoodvista.com"
+      },
+      "facility_details": {
+        "beds": 94,
+        "ownership_type": "",
+        "licensee": "EMG CHEYENNE AW LLC"
+      },
+      "location": {
+        "latitude": 41.1550972,
+        "longitude": -104.7620754
+      },
+      "state_license": {
+        "state_license_number": "15264",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Pointe Frontier Retirement Community",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "1406 PRAIRIE AVE",
+        "city": "Cheyenne",
+        "state": "WY",
+        "zip": "82009",
+        "county": "Laramie"
+      },
+      "contact": {
+        "phone": "307-635-6953",
+        "email": "msturman@centurypa.com"
+      },
+      "facility_details": {
+        "beds": 50,
+        "ownership_type": "",
+        "licensee": "CHEYENNE RETIREMENT INVESTORS LIMITED PARTNERSHIP"
+      },
+      "location": {
+        "latitude": 41.1650466,
+        "longitude": -104.8068862
+      },
+      "state_license": {
+        "state_license_number": "15169",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Primrose Retirement Community Of Cheyenne",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "1530 DOROTHY LANE",
+        "city": "Cheyenne",
+        "state": "WY",
+        "zip": "82009",
+        "county": "Laramie"
+      },
+      "contact": {
+        "phone": "307-634-1530",
+        "email": "opspecialist@primroseretirement.com"
+      },
+      "facility_details": {
+        "beds": 45,
+        "ownership_type": "",
+        "licensee": "CHEYENNE RETIREMENT LLC"
+      },
+      "location": {
+        "latitude": 41.1879086,
+        "longitude": -104.8021472
+      },
+      "state_license": {
+        "state_license_number": "15013",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Sierra Hills Assisted Living Community",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "4606 NORTH COLLEGE DR",
+        "city": "Cheyenne",
+        "state": "WY",
+        "zip": "82001",
+        "county": "Laramie"
+      },
+      "contact": {
+        "phone": "307-638-7798",
+        "email": "amy.brinley@edgewoodmail.com"
+      },
+      "facility_details": {
+        "beds": 100,
+        "ownership_type": "",
+        "licensee": "EMG CHEYENNE SH LLC"
+      },
+      "location": {
+        "latitude": 41.1612675,
+        "longitude": -104.7616652
+      },
+      "state_license": {
+        "state_license_number": "15263",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Cottonwood Creek Of Cheyenne",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "6800 FAITH DRIVE",
+        "city": "Cheyenne",
+        "state": "WY",
+        "zip": "82009",
+        "county": "Laramie"
+      },
+      "contact": {
+        "phone": "307-514-1472",
+        "email": "tcrawford@liveatthecreek.com"
+      },
+      "facility_details": {
+        "beds": 16,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 41.1820327,
+        "longitude": -104.8075084
+      },
+      "state_license": {
+        "state_license_number": "P-951",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Absaroka Senior Living",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "2401 COUGAR AVE",
+        "city": "Cody",
+        "state": "WY",
+        "zip": "82414",
+        "county": "Park"
+      },
+      "contact": {
+        "phone": "307-527-7080",
+        "email": "koberosler@absarokasl.com"
+      },
+      "facility_details": {
+        "beds": 51,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.5303375,
+        "longitude": -109.043721
+      },
+      "state_license": {
+        "state_license_number": "15349",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Warm Valley Lodge Assisted Living",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "5643 US HWY 26",
+        "city": "Dubois",
+        "state": "WY",
+        "zip": "82513",
+        "county": "Fremont"
+      },
+      "contact": {
+        "phone": "307-455-2645",
+        "email": "jenmc@wyoming.com"
+      },
+      "facility_details": {
+        "beds": 25,
+        "ownership_type": "",
+        "licensee": "DUBOIS ASSISTED LIVING INC"
+      },
+      "location": {
+        "latitude": 43.5266639,
+        "longitude": -109.6150074
+      },
+      "state_license": {
+        "state_license_number": "15016",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Mountain Lodge Llc",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "1110 BIRCH STREET",
+        "city": "Douglas",
+        "state": "WY",
+        "zip": "82633",
+        "county": "Converse"
+      },
+      "contact": {
+        "phone": "307-358-1897",
+        "email": "aanderson@hmsmt.com"
+      },
+      "facility_details": {
+        "beds": 34,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.7527207,
+        "longitude": -105.3722216
+      },
+      "state_license": {
+        "state_license_number": "15303",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Compassionate Journey Llc",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "624 TWIN RIDGE  AVE",
+        "city": "Evanston",
+        "state": "WY",
+        "zip": "82930",
+        "county": "Uinta"
+      },
+      "contact": {
+        "phone": "307-444-8969",
+        "email": "joy@cjrny.com"
+      },
+      "facility_details": {
+        "beds": 16,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 41.2512046,
+        "longitude": -110.973902
+      },
+      "state_license": {
+        "state_license_number": "15352",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Willow Creek Homes Of Evanston",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "1949 WEST UINTA ST",
+        "city": "Evanston",
+        "state": "WY",
+        "zip": "82930",
+        "county": "Uinta"
+      },
+      "contact": {
+        "phone": "307-444-4483",
+        "email": "willowcreekofevanston@gmail.com"
+      },
+      "facility_details": {
+        "beds": 16,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 41.2658434,
+        "longitude": -110.977907
+      },
+      "state_license": {
+        "state_license_number": "15260",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Primrose Retirement Community Of Gillette",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "921 MOUNTAIN MEADOW LANE",
+        "city": "Gillette",
+        "state": "WY",
+        "zip": "82716",
+        "county": "Campbell"
+      },
+      "contact": {
+        "phone": "307-682-8800",
+        "email": "opspecialist@primroseretirement.com"
+      },
+      "facility_details": {
+        "beds": 45,
+        "ownership_type": "",
+        "licensee": "GILLETTE RETIREMENT LLC"
+      },
+      "location": {
+        "latitude": 44.3036165,
+        "longitude": -105.5323487
+      },
+      "state_license": {
+        "state_license_number": "15019",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Mission At The Villa",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "1445 UINTA DR",
+        "city": "Green",
+        "state": "WY",
+        "zip": "000WY",
+        "county": "Sweetwater"
+      },
+      "contact": {
+        "phone": "307-872-4690",
+        "email": "bobbijo.drozd@missionhealthservices.org"
+      },
+      "facility_details": {
+        "beds": 27,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 41.5070511,
+        "longitude": -109.4765538
+      },
+      "state_license": {
+        "state_license_number": "15274",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Showboat Retirement Center",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "150 WYOMING ST",
+        "city": "Lander",
+        "state": "WY",
+        "zip": "82520",
+        "county": "Fremont"
+      },
+      "contact": {
+        "phone": "307-332-6788",
+        "email": "arikaalong@gmail.com"
+      },
+      "facility_details": {
+        "beds": 50,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.8236768,
+        "longitude": -108.7312326
+      },
+      "state_license": {
+        "state_license_number": "15021",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Spring Wind Assisted Living Community",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "1072 NORTH 22ND ST",
+        "city": "Laramie",
+        "state": "WY",
+        "zip": "82072",
+        "county": "Albany"
+      },
+      "contact": {
+        "phone": "307-755-5811",
+        "email": "rschriner@edgewoodmail.com"
+      },
+      "facility_details": {
+        "beds": 117,
+        "ownership_type": "",
+        "licensee": "EMG LARAMIE LLC"
+      },
+      "location": {
+        "latitude": 41.320884,
+        "longitude": -105.5680468
+      },
+      "state_license": {
+        "state_license_number": "15283",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "New Horizons Assisted Living Facility",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "1111 LANE 12",
+        "city": "Lovell",
+        "state": "WY",
+        "zip": "82431",
+        "county": "Big Horn"
+      },
+      "contact": {
+        "phone": "307-548-5200",
+        "email": "smoore8@nbhh.com"
+      },
+      "facility_details": {
+        "beds": 9,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.8257945,
+        "longitude": -108.3906688
+      },
+      "state_license": {
+        "state_license_number": "15023",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Mondell Heights Retirement Community",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "106 EAST MAIN",
+        "city": "Newcastle",
+        "state": "WY",
+        "zip": "82701",
+        "county": "Weston"
+      },
+      "contact": {
+        "phone": "307-941-1919",
+        "email": "mondellheights@gmail.com"
+      },
+      "facility_details": {
+        "beds": 23,
+        "ownership_type": "",
+        "licensee": "BAIRD HUDSON ENTERPRISES LLC"
+      },
+      "location": {
+        "latitude": 43.8559568,
+        "longitude": -104.1999481
+      },
+      "state_license": {
+        "state_license_number": "15024",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Heartland Assisted Living",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "777 AVE H",
+        "city": "Powell",
+        "state": "WY",
+        "zip": "82435",
+        "county": "Park"
+      },
+      "contact": {
+        "phone": "307-754-2267",
+        "email": "scoguill@pvhc.org"
+      },
+      "facility_details": {
+        "beds": 24,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.7569964,
+        "longitude": -108.7714524
+      },
+      "state_license": {
+        "state_license_number": "15025",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Deer Trail Assisted Living",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "2360 REAGAN AVE",
+        "city": "Rock",
+        "state": "WY",
+        "zip": "000WY",
+        "county": "Sweetwater"
+      },
+      "contact": {
+        "phone": "307-362-0100",
+        "email": "jeff@deertrailassistedliving.com"
+      },
+      "facility_details": {
+        "beds": 62,
+        "ownership_type": "",
+        "licensee": "EP-RSAL LLC"
+      },
+      "location": {
+        "latitude": 41.5954146,
+        "longitude": -109.2564835
+      },
+      "state_license": {
+        "state_license_number": "15026",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Homestead Assisted Living",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "950 HOMESTEAD AVE",
+        "city": "Riverton",
+        "state": "WY",
+        "zip": "82501",
+        "county": "Fremont"
+      },
+      "contact": {
+        "phone": "307-856-5789",
+        "email": "homestead@wyoming.com"
+      },
+      "facility_details": {
+        "beds": 55,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.0293363,
+        "longitude": -108.4045203
+      },
+      "state_license": {
+        "state_license_number": "15250",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Elmcroft Of Sugarland Ridge",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "1551 SUGARLAND DRIVE",
+        "city": "Sheridan",
+        "state": "WY",
+        "zip": "82801",
+        "county": "Sheridan"
+      },
+      "contact": {
+        "phone": "307-674-5575",
+        "email": "tamara.yelton-boone@elmcroft.com"
+      },
+      "facility_details": {
+        "beds": 65,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.7820229,
+        "longitude": -106.9384057
+      },
+      "state_license": {
+        "state_license_number": "15289",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Sundance Assisted Care",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "108 ABBY LANE",
+        "city": "Sundance",
+        "state": "WY",
+        "zip": "82729",
+        "county": "Crook"
+      },
+      "contact": {
+        "phone": "307-283-1042",
+        "email": "wjohnson60@yahoo.com"
+      },
+      "facility_details": {
+        "beds": 15,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4063746,
+        "longitude": -104.3757816
+      },
+      "state_license": {
+        "state_license_number": "15028",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Legacy Homes Assisted Living & Adult Day Care",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "2391 MUDDY STRING CO RD 117",
+        "city": "Thayne",
+        "state": "WY",
+        "zip": "83127",
+        "county": "Lincoln"
+      },
+      "contact": {
+        "phone": "307-883-3800",
+        "email": "emerritt@silverstar.com"
+      },
+      "facility_details": {
+        "beds": 16,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.9825306,
+        "longitude": -110.9728897
+      },
+      "state_license": {
+        "state_license_number": "15029",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Wyoming Pioneer Home",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "141 PIONEER HOME DR",
+        "city": "Thermopolis",
+        "state": "WY",
+        "zip": "82443",
+        "county": "Hot Springs"
+      },
+      "contact": {
+        "phone": "307-864-3151",
+        "email": "julie.hoffman@wyo.gov"
+      },
+      "facility_details": {
+        "beds": 61,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6490989,
+        "longitude": -108.1989797
+      },
+      "state_license": {
+        "state_license_number": "15030",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Platte County Assisted Living",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "WY",
+      "address": {
+        "street": "98 19TH ST",
+        "city": "Wheatland",
+        "state": "WY",
+        "zip": "82201",
+        "county": "Platte"
+      },
+      "contact": {
+        "phone": "307-322-7400",
+        "email": "josie.lauck@pcmnh.com"
+      },
+      "facility_details": {
+        "beds": 16,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.0491708,
+        "longitude": -104.9686815
+      },
+      "state_license": {
+        "state_license_number": "15231",
+        "cms_certification_number": null,
+        "issuing_agency": "Wyoming State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    }
+  ]
+}

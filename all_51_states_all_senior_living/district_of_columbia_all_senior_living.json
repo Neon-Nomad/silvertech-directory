@@ -1,0 +1,576 @@
+{
+  "state": "District of Columbia",
+  "state_abbreviation": "DC",
+  "total_facilities": 16,
+  "by_care_type": {
+    "Assisted Living": 13,
+    "Residential Care Home": 3
+  },
+  "coverage": {
+    "state_license_number": "0/16 (0.0%)",
+    "cms_certification_number": "0/16 (0.0%)"
+  },
+  "last_updated": "2026-03-09",
+  "facilities": [
+    {
+      "name": "The Marigold At 11Th Street",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 671-6553",
+        "email": "marigoldadmin@comcase.net"
+      },
+      "facility_details": {
+        "beds": 8,
+        "ownership_type": "",
+        "licensee": "2905 ALF, LLC"
+      },
+      "location": {
+        "latitude": 38.9009772,
+        "longitude": -77.0418822
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Knollwood",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "6200 OREGON AVENUE, NW",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20015",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 541-0499",
+        "email": "depps@knollwoodcommunity.org"
+      },
+      "facility_details": {
+        "beds": 45,
+        "ownership_type": "",
+        "licensee": "THE ARMY DISTAFF FOUNDATION, INC."
+      },
+      "location": {
+        "latitude": 38.9718339,
+        "longitude": -77.0555774
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Bvm Chevy Chase, Tenant, Llc",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "5420 CONNECTICUT AVENUE, NW",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20015",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 686-5504",
+        "email": "ccho.adm@merdiansenior.com"
+      },
+      "facility_details": {
+        "beds": 131,
+        "ownership_type": "",
+        "licensee": "CHEVY CHASE HOUSE"
+      },
+      "location": {
+        "latitude": 38.9623242,
+        "longitude": -77.0746592
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Forest Hills Of Dc",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "4901 CONNECTICUT AVENUE, NW",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20008",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 966-7623",
+        "email": "cscott@foresthillsdc.life"
+      },
+      "facility_details": {
+        "beds": 65,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 38.9540837,
+        "longitude": -77.0680489
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Forest Side Memory Care 2 Nd Location",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "2701 MILITARY RD, NW",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20015",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 696-1908",
+        "email": "cscott@foresthillsdc.life"
+      },
+      "facility_details": {
+        "beds": 33,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 38.9613569,
+        "longitude": -77.0567612
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Ingleside At Rock Creek",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "3050 MILITARY ROAD, NW",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20015",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 363-8310",
+        "email": "kwilson@inglesideonline.org"
+      },
+      "facility_details": {
+        "beds": 53,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 38.960517,
+        "longitude": -77.0616788
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Joye Assisted Living Services",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(301)728-5788",
+        "email": "gloria.richardson@joyeassistedliving.com"
+      },
+      "facility_details": {
+        "beds": 8,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 38.9009772,
+        "longitude": -77.0418822
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Lisner Louise Dickson Hurt Home",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "5425 WESTERN AVENUE, NW",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20015",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 966-6667",
+        "email": "shargreaves@lldhhome.org"
+      },
+      "facility_details": {
+        "beds": 25,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 38.9620649,
+        "longitude": -77.0833795
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Grand Oaks Assisted Living",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "5901 MACARTHUR BLVD, NW",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20016",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 349-3400",
+        "email": "lhenley3@jhmi.edu"
+      },
+      "facility_details": {
+        "beds": 200,
+        "ownership_type": "",
+        "licensee": "LUCY WEBB HAYES NTFDM"
+      },
+      "location": {
+        "latitude": 38.9363465,
+        "longitude": -77.1115457
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Massachusetts Senior Care, Llc",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "1330 MASSACHUSETTS AVENUE, NW",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20005",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 628-3844",
+        "email": "squist@seniorlifestyle.com"
+      },
+      "facility_details": {
+        "beds": 55,
+        "ownership_type": "",
+        "licensee": "THE RESIDENCES AT THOMAS CIRCLE"
+      },
+      "location": {
+        "latitude": 38.9049865,
+        "longitude": -77.0311092
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Maple Heights Senior Living",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "5100 GEORGIA AVENUE, NW",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20011",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 774-8553",
+        "email": "carla@psliving.com"
+      },
+      "facility_details": {
+        "beds": 55,
+        "ownership_type": "",
+        "licensee": "PARADISE AT GEORGIA AVENUE"
+      },
+      "location": {
+        "latitude": 38.9521594,
+        "longitude": -77.0278733
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Livingston Place At Southern Ave.",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "4656 LIVINGSTON PLACE, SE",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20032",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 519-0982",
+        "email": "gjernigan@prioritylc.com"
+      },
+      "facility_details": {
+        "beds": 152,
+        "ownership_type": "",
+        "licensee": "SOUTHERN AVE SP, LLC"
+      },
+      "location": {
+        "latitude": 38.822249,
+        "longitude": -77.001461
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Sunrise On Connecticut Avenue",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "DC",
+      "address": {
+        "street": "5111 CONNECTICUT AVENUE, NW",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20008",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 966-8020",
+        "email": "connecticutave.ed@sunriseseniorliving.com"
+      },
+      "facility_details": {
+        "beds": 120,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 38.956963,
+        "longitude": -77.0705289
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Banks Place Community Facility",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "DC",
+      "address": {
+        "street": "",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 396-1019",
+        "email": "vidahose@aol.com"
+      },
+      "facility_details": {
+        "beds": 8,
+        "ownership_type": "",
+        "licensee": "ALVETTA HOSE"
+      },
+      "location": {
+        "latitude": 38.9009772,
+        "longitude": -77.0418822
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Abraham & Laura Lisner Home For Aged Women Aka Lisnerlouise-Dickerson-Hurt Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "DC",
+      "address": {
+        "street": "5425 WESTERN AVE., N.W.",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20005",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 966-6667",
+        "email": "shargreaves@lldhhome.org"
+      },
+      "facility_details": {
+        "beds": 45,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 38.9620649,
+        "longitude": -77.0833795
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Seabury Resources For Aging",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "DC",
+      "address": {
+        "street": "",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "",
+        "county": "District of Columbia"
+      },
+      "contact": {
+        "phone": "(202) 635-9384",
+        "email": "vgrayton@seaburyresources.org"
+      },
+      "facility_details": {
+        "beds": 8,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 38.9009772,
+        "longitude": -77.0418822
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "District of Columbia State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "8/5/21",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    }
+  ]
+}

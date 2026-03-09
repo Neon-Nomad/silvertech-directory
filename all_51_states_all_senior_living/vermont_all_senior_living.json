@@ -1,0 +1,5749 @@
+{
+  "state": "Vermont",
+  "state_abbreviation": "VT",
+  "total_facilities": 152,
+  "by_care_type": {
+    "Nursing Home": 34,
+    "Assisted Living": 16,
+    "Residential Care Home": 102
+  },
+  "coverage": {
+    "state_license_number": "34/152 (22.4%)",
+    "cms_certification_number": "34/152 (22.4%)"
+  },
+  "last_updated": "2026-03-09",
+  "facilities": [
+    {
+      "name": "Birchwood Terrace Rehab & Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "43 Starr Farm Rd",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "5408"
+      },
+      "contact": {
+        "phone": "8028636384",
+        "phone_formatted": "8028636384"
+      },
+      "location": {
+        "county": "Chittenden",
+        "latitude": 44.5162,
+        "longitude": -73.26
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Individual",
+        "certified_beds": 144,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BIRCHWOOD OPERATIONS LLC",
+        "chain_name": "STELLAR HEALTH GROUP"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "475003",
+        "cms_certification_number": "475003",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Vernon Green Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "61 Greenway Drive",
+        "city": "Vernon",
+        "state": "VT",
+        "zip": "5354"
+      },
+      "contact": {
+        "phone": "8022546041",
+        "phone_formatted": "8022546041"
+      },
+      "location": {
+        "county": "Windham",
+        "latitude": 42.7628,
+        "longitude": -72.508
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VERNON ADVENT CHRISTIAN HOME, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475008",
+        "cms_certification_number": "475008",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Mountain View Center Genesis Healthcare",
+      "type": "Nursing Home",
+      "address": {
+        "street": "9 Haywood Avenue",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "5701"
+      },
+      "contact": {
+        "phone": "8027750007",
+        "phone_formatted": "8027750007"
+      },
+      "location": {
+        "county": "Rutland",
+        "latitude": 43.5939,
+        "longitude": -72.961
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 158,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "NINE HAYWOOD AVENUE OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475012",
+        "cms_certification_number": "475012",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Premier Rehab and Healthcare at Burlington",
+      "type": "Nursing Home",
+      "address": {
+        "street": "300 Pearl Street",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "5401"
+      },
+      "contact": {
+        "phone": "8026584200",
+        "phone_formatted": "8026584200"
+      },
+      "location": {
+        "county": "Chittenden",
+        "latitude": 44.4806,
+        "longitude": -73.207
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 126,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "300 PEARL STREET OPCO LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475014",
+        "cms_certification_number": "475014",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Helen Porter Healthcare & Rehab",
+      "type": "Nursing Home",
+      "address": {
+        "street": "30 Porter Drive",
+        "city": "Middlebury",
+        "state": "VT",
+        "zip": "5753"
+      },
+      "contact": {
+        "phone": "8023884001",
+        "phone_formatted": "8023884001"
+      },
+      "location": {
+        "county": "Addison",
+        "latitude": 43.9994,
+        "longitude": -73.17
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 98,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "HELEN PORTER NURSING HOME, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475017",
+        "cms_certification_number": "475017",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "The Pines at Rutland Center for Nursing & Rehabili",
+      "type": "Nursing Home",
+      "address": {
+        "street": "99 Allen Street",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "5701"
+      },
+      "contact": {
+        "phone": "8027752331",
+        "phone_formatted": "8027752331"
+      },
+      "location": {
+        "county": "Rutland",
+        "latitude": 43.598,
+        "longitude": -72.961
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 125,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "RUTLAND CROSSINGS LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475018",
+        "cms_certification_number": "475018",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "St. Johnsbury Health & Rehab",
+      "type": "Nursing Home",
+      "address": {
+        "street": "1248 Hospital Drive",
+        "city": "Saint Johnsbury",
+        "state": "VT",
+        "zip": "5819"
+      },
+      "contact": {
+        "phone": "8027488757",
+        "phone_formatted": "8027488757"
+      },
+      "location": {
+        "county": "Caledonia",
+        "latitude": 44.4453,
+        "longitude": -72.012
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 99,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475019",
+        "cms_certification_number": "475019",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Premier Rehab and Healthcare at Berlin",
+      "type": "Nursing Home",
+      "address": {
+        "street": "98 Hospitality Drive",
+        "city": "Barre",
+        "state": "VT",
+        "zip": "5641"
+      },
+      "contact": {
+        "phone": "8022290308",
+        "phone_formatted": "8022290308"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 44.2174,
+        "longitude": -72.555
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 115,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BERLIN OPERATIONS LLC",
+        "chain_name": "STELLAR HEALTH GROUP"
+      },
+      "ratings": {
+        "overall_rating": null,
+        "health_inspection_rating": null,
+        "quality_measure_rating": null,
+        "staffing_rating": null
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "475020",
+        "cms_certification_number": "475020",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Saint Albans Healthcare and Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "596 Sheldon Road",
+        "city": "Saint Albans",
+        "state": "VT",
+        "zip": "5478"
+      },
+      "contact": {
+        "phone": "8025246534",
+        "phone_formatted": "8025246534"
+      },
+      "location": {
+        "county": "Franklin",
+        "latitude": 44.8271,
+        "longitude": -73.069
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 115,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FIVE NINETY SIX SHELDON ROAD OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1017919",
+        "cms_certification_number": "475021",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Pine Heights at Brattleboro Center for Nursing & R",
+      "type": "Nursing Home",
+      "address": {
+        "street": "187 Oak Grove Avenue",
+        "city": "Brattleboro",
+        "state": "VT",
+        "zip": "5301"
+      },
+      "contact": {
+        "phone": "8022570307",
+        "phone_formatted": "8022570307"
+      },
+      "location": {
+        "county": "Windham",
+        "latitude": 42.8421,
+        "longitude": -72.563
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 80,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BRATTLEBORO CROSSINGS LLC",
+        "chain_name": "NATIONAL HEALTH CARE ASSOCIATES"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475023",
+        "cms_certification_number": "475023",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Springfield Health & Rehab",
+      "type": "Nursing Home",
+      "address": {
+        "street": "105 Chester Road",
+        "city": "Springfield",
+        "state": "VT",
+        "zip": "5156"
+      },
+      "contact": {
+        "phone": "8028855741",
+        "phone_formatted": "8028855741"
+      },
+      "location": {
+        "county": "Windsor",
+        "latitude": 43.3011,
+        "longitude": -72.507
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 102,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475025",
+        "cms_certification_number": "475025",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Bennington Health & Rehab",
+      "type": "Nursing Home",
+      "address": {
+        "street": "2 Blackberry Lane",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "5201"
+      },
+      "contact": {
+        "phone": "8024428525",
+        "phone_formatted": "8024428525"
+      },
+      "location": {
+        "county": "Bennington",
+        "latitude": 42.8693,
+        "longitude": -73.205
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 100,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475027",
+        "cms_certification_number": "475027",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Center for Living & Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "160 Hospital Drive",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "5201"
+      },
+      "contact": {
+        "phone": "8024471547",
+        "phone_formatted": "8024471547"
+      },
+      "location": {
+        "county": "Bennington",
+        "latitude": 42.8734,
+        "longitude": -73.207
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 130,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CLR OPCO LLC",
+        "chain_name": "ALLAIRE HEALTH SERVICES"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475029",
+        "cms_certification_number": "475029",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Elderwood at Burlington",
+      "type": "Nursing Home",
+      "address": {
+        "street": "98 Starr Farm Rd.",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "5408"
+      },
+      "contact": {
+        "phone": "8026586717",
+        "phone_formatted": "8026586717"
+      },
+      "location": {
+        "county": "Chittenden",
+        "latitude": 44.5132,
+        "longitude": -73.266
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 150,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "98 STARR FARM ROAD OPERATING COMPANY, LLC",
+        "chain_name": "ELDERWOOD"
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475030",
+        "cms_certification_number": "475030",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Vermont Veterans' Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "325 North Street",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "5201"
+      },
+      "contact": {
+        "phone": "8024476510",
+        "phone_formatted": "8024476510"
+      },
+      "location": {
+        "county": "Bennington",
+        "latitude": 42.885,
+        "longitude": -73.197
+      },
+      "facility_details": {
+        "ownership_type": "Government - State",
+        "certified_beds": 177,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "VERMONT VETERANS' HOME",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475032",
+        "cms_certification_number": "475032",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Crescent Manor Care Ctrs",
+      "type": "Nursing Home",
+      "address": {
+        "street": "312 Crescent Blvd",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "5201"
+      },
+      "contact": {
+        "phone": "8024471501",
+        "phone_formatted": "8024471501"
+      },
+      "location": {
+        "county": "Bennington",
+        "latitude": 42.8717,
+        "longitude": -73.191
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 90,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "PHILIPSON FAMILY"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475033",
+        "cms_certification_number": "475033",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Union House Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "3086 Glover Street",
+        "city": "Glover",
+        "state": "VT",
+        "zip": "5839"
+      },
+      "contact": {
+        "phone": "8025256600",
+        "phone_formatted": "8025256600"
+      },
+      "location": {
+        "county": "Orleans",
+        "latitude": 44.6644,
+        "longitude": -72.216
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 44,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "UNION HOUSE NURSING HOME, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475036",
+        "cms_certification_number": "475036",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Barre Gardens Nursing and Rehab, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "378 Prospect Street",
+        "city": "Barre",
+        "state": "VT",
+        "zip": "5641"
+      },
+      "contact": {
+        "phone": "8024764166",
+        "phone_formatted": "8024764166"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 44.196,
+        "longitude": -72.521
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Partnership",
+        "certified_beds": 96,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BARRE GARDENS NURSING AND REHAB LLC",
+        "chain_name": "PRIORITY HEALTHCARE GROUP"
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 2.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475037",
+        "cms_certification_number": "475037",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Rutland Healthcare & Rehabilitation Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "46 Nichols Street",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "5701"
+      },
+      "contact": {
+        "phone": "8027752941",
+        "phone_formatted": "8027752941"
+      },
+      "location": {
+        "county": "Rutland",
+        "latitude": 43.6113,
+        "longitude": -72.975
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 103,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "Legal Business Name Not Available",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "1017920",
+        "cms_certification_number": "475039",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Green Mountain Nursing and Rehabilitation",
+      "type": "Nursing Home",
+      "address": {
+        "street": "475 Ethan Allen Avenue",
+        "city": "Colchester",
+        "state": "VT",
+        "zip": "5446"
+      },
+      "contact": {
+        "phone": "8026551025",
+        "phone_formatted": "8026551025"
+      },
+      "location": {
+        "county": "Chittenden",
+        "latitude": 44.5035,
+        "longitude": -73.151
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 73,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GM OPERATIONS LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 1.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475040",
+        "cms_certification_number": "475040",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Maple Lane Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "60 Maple Lane",
+        "city": "Barton",
+        "state": "VT",
+        "zip": "5822"
+      },
+      "contact": {
+        "phone": "8027548575",
+        "phone_formatted": "8027548575"
+      },
+      "location": {
+        "county": "Orleans",
+        "latitude": 44.7864,
+        "longitude": -72.189
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 71,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "KINGDOM REHAB CENTER, LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475042",
+        "cms_certification_number": "475042",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Greensboro Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "47 Maggie's Pond Road",
+        "city": "Greensboro",
+        "state": "VT",
+        "zip": "5841"
+      },
+      "contact": {
+        "phone": "8025337051",
+        "phone_formatted": "8025337051"
+      },
+      "location": {
+        "county": "Orleans",
+        "latitude": 44.5803,
+        "longitude": -72.287
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 30,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GREENSBORO HOSPITAL ASSOC INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475043",
+        "cms_certification_number": "475043",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Pines Rehab & Health Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "601 Red Village Road",
+        "city": "Lyndonville",
+        "state": "VT",
+        "zip": "5851"
+      },
+      "contact": {
+        "phone": "8026263367",
+        "phone_formatted": "8026263367"
+      },
+      "location": {
+        "county": "Caledonia",
+        "latitude": 44.5134,
+        "longitude": -71.996
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 60,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "PINE KNOLL NURSING HOME, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475044",
+        "cms_certification_number": "475044",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Woodridge Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "142 Woodridge Drive",
+        "city": "Barre",
+        "state": "VT",
+        "zip": "5641"
+      },
+      "contact": {
+        "phone": "8023714700",
+        "phone_formatted": "8023714700"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 44.191,
+        "longitude": -72.489
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 153,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CENTRAL VERMONT MEDICAL CENTER INC",
+        "chain_name": "UNIVERSITY OF VERMONT HEALTH NETWORK"
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475045",
+        "cms_certification_number": "475045",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Cedar Hill Health Care Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "49 Cedar Hill Drive",
+        "city": "Windsor",
+        "state": "VT",
+        "zip": "5089"
+      },
+      "contact": {
+        "phone": "8026746609",
+        "phone_formatted": "8026746609"
+      },
+      "location": {
+        "county": "Windsor",
+        "latitude": 43.4351,
+        "longitude": -72.397
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 39,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "CEDAR HILL HEALTH CARE CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475046",
+        "cms_certification_number": "475046",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Franklin County Rehab Center, LLC",
+      "type": "Nursing Home",
+      "address": {
+        "street": "110 Fairfax Road",
+        "city": "St. Albans",
+        "state": "VT",
+        "zip": "5478"
+      },
+      "contact": {
+        "phone": "8027521600",
+        "phone_formatted": "8027521600"
+      },
+      "location": {
+        "county": "Franklin",
+        "latitude": 44.8036,
+        "longitude": -73.07
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 64,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "FRANKLIN COUNTY REHAB CENTER LLC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475047",
+        "cms_certification_number": "475047",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Bel Aire Center",
+      "type": "Nursing Home",
+      "address": {
+        "street": "35 Bel-Aire Drive",
+        "city": "Newport",
+        "state": "VT",
+        "zip": "5855"
+      },
+      "contact": {
+        "phone": "8023342878",
+        "phone_formatted": "8023342878"
+      },
+      "location": {
+        "county": "Orleans",
+        "latitude": 44.9417,
+        "longitude": -72.203
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Corporation",
+        "certified_beds": 58,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THIRTY FIVE BEL-AIRE DRIVE SNF OPERATIONS LLC",
+        "chain_name": "GENESIS HEALTHCARE"
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 3.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475049",
+        "cms_certification_number": "475049",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Thompson House Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "80 Maple Street",
+        "city": "Brattleboro",
+        "state": "VT",
+        "zip": "5301"
+      },
+      "contact": {
+        "phone": "8022544977",
+        "phone_formatted": "8022544977"
+      },
+      "location": {
+        "county": "Windham",
+        "latitude": 42.8446,
+        "longitude": -72.566
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 43,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "BRATTLEBORO MUTUAL AID ASSOCIATION, INC.",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 5.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475050",
+        "cms_certification_number": "475050",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Gill Odd Fellows Home of Vermont",
+      "type": "Nursing Home",
+      "address": {
+        "street": "8 Gill Terrace",
+        "city": "Ludlow",
+        "state": "VT",
+        "zip": "5149"
+      },
+      "contact": {
+        "phone": "8022284571",
+        "phone_formatted": "8022284571"
+      },
+      "location": {
+        "county": "Windsor",
+        "latitude": 43.3972,
+        "longitude": -72.697
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 46,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE TRUSTEES OF THE GILL ODD FELLOWS HOME OF VERMONT",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 4.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475052",
+        "cms_certification_number": "475052",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Mayo Healthcare Inc.",
+      "type": "Nursing Home",
+      "address": {
+        "street": "71 Richardson Avenue",
+        "city": "Northfield",
+        "state": "VT",
+        "zip": "5663"
+      },
+      "contact": {
+        "phone": "8024853161",
+        "phone_formatted": "8024853161"
+      },
+      "location": {
+        "county": "Washington",
+        "latitude": 44.1466,
+        "longitude": -72.665
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 50,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "MAYO HEALTHCARE INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 3.0,
+        "health_inspection_rating": 4.0,
+        "quality_measure_rating": 1.0,
+        "staffing_rating": 3.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475053",
+        "cms_certification_number": "475053",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "The Villa Rehab",
+      "type": "Nursing Home",
+      "address": {
+        "street": "7 Forest Hill Drive",
+        "city": "St. Albans",
+        "state": "VT",
+        "zip": "5478"
+      },
+      "contact": {
+        "phone": "8025243498",
+        "phone_formatted": "8025243498"
+      },
+      "location": {
+        "county": "Franklin",
+        "latitude": 44.8099,
+        "longitude": -73.074
+      },
+      "facility_details": {
+        "ownership_type": "For profit - Limited Liability company",
+        "certified_beds": 30,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE VILLA REHAB CENTER",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 3.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "475055",
+        "cms_certification_number": "475055",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Wake Robin-Linden Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "200 Wake Robin Drive",
+        "city": "Shelburne",
+        "state": "VT",
+        "zip": "5482"
+      },
+      "contact": {
+        "phone": "8022645100",
+        "phone_formatted": "8022645100"
+      },
+      "location": {
+        "county": "Chittenden",
+        "latitude": 44.357,
+        "longitude": -73.248
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 33,
+        "provider_type": "Medicare",
+        "legal_business_name": "WAKE ROBIN CORPORATION",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 5.0,
+        "health_inspection_rating": 5.0,
+        "quality_measure_rating": 4.0,
+        "staffing_rating": 5.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "475056",
+        "cms_certification_number": "475056",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_final",
+        "license_number_type": "CMS_CCN_FALLBACK"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "The Manor, Inc.",
+      "type": "Nursing Home",
+      "address": {
+        "street": "577 Washington Highway",
+        "city": "Morrisville",
+        "state": "VT",
+        "zip": "5661"
+      },
+      "contact": {
+        "phone": "8028888700",
+        "phone_formatted": "8028888700"
+      },
+      "location": {
+        "county": "Lamoille",
+        "latitude": 44.5541,
+        "longitude": -72.59
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 72,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "THE MANOR INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 1.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 1.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0270000273",
+        "cms_certification_number": "475057",
+        "issuing_agency": "Vermont Department of Disabilities, Aging and Independent Living",
+        "license_type": "Nursing Facility/Intermediate Care Facility",
+        "license_note": "State license number not available via public portal. CMS CCN (475057) serves as primary regulatory identifier.",
+        "match_method": "cms_exact_name_zip",
+        "last_verified_date": "2026-03-06",
+        "license_status": "Active",
+        "npi": "1366522005"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Menig Nursing Home",
+      "type": "Nursing Home",
+      "address": {
+        "street": "215 Tom Wicker Lane",
+        "city": "Randolph Center",
+        "state": "VT",
+        "zip": "5061"
+      },
+      "contact": {
+        "phone": "8027287800",
+        "phone_formatted": "8027287800"
+      },
+      "location": {
+        "county": "Orange",
+        "latitude": 43.9446,
+        "longitude": -72.61
+      },
+      "facility_details": {
+        "ownership_type": "Non profit - Corporation",
+        "certified_beds": 30,
+        "provider_type": "Medicare and Medicaid",
+        "legal_business_name": "GIFFORD RETIREMENT COMMUNITY, INC",
+        "chain_name": null
+      },
+      "ratings": {
+        "overall_rating": 2.0,
+        "health_inspection_rating": 2.0,
+        "quality_measure_rating": 2.0,
+        "staffing_rating": 4.0
+      },
+      "data_source": {
+        "source": "CMS Provider Data Catalog",
+        "dataset": "Nursing Homes Including Rehab Services",
+        "date": "November 2025"
+      },
+      "state_license": {
+        "state_license_number": "0475058",
+        "cms_certification_number": "475058",
+        "issuing_agency": "Vermont Department of Health",
+        "license_type": "Nursing Facility License",
+        "last_verified_date": "2026-03-07",
+        "match_method": "cms_iqies_mdcd_vndr_num"
+      },
+      "care_type": "Nursing Home",
+      "state_abbr": "VT"
+    },
+    {
+      "name": "Cathedral Square Senior Living",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "3 CATHEDRAL SQUARE",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "05401",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-863-1479",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4794974,
+        "longitude": -73.217846
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Converse Home, Inc",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "272 CHURCH STREET",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "05401",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-862-0401",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4725427,
+        "longitude": -73.2117112
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Mansfield Place",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "18 CARMICHAEL STREET",
+        "city": "Essex Junction",
+        "state": "VT",
+        "zip": "05452",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-871-5808",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.5096308,
+        "longitude": -73.0811087
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Margaret Pratt Community",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "210 PLATEAU ACRES",
+        "city": "Bradford",
+        "state": "VT",
+        "zip": "05033",
+        "county": "Orange"
+      },
+      "contact": {
+        "phone": "802-222-5554",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.9860399,
+        "longitude": -72.1285476
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Meadows At East Mountain",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "240 GABLES PLACE",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "05701",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-775-3300",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6269393,
+        "longitude": -72.9452079
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Memory Care At Allen Brook",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "99 ALLEN BROOK LANE",
+        "city": "Williston",
+        "state": "VT",
+        "zip": "05495",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-859-8885",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4509099,
+        "longitude": -73.1039678
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "The Residence At Otter Creek",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "350 LODGE ROAD",
+        "city": "Middlebury",
+        "state": "VT",
+        "zip": "05753",
+        "county": "Addison"
+      },
+      "contact": {
+        "phone": "802-388-1220",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.9925906,
+        "longitude": -73.1560037
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "The Residence At Quarry Hill",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "465 QUARRY HILL ROAD",
+        "city": "South Burlington",
+        "state": "VT",
+        "zip": "05403",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-652-4114",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4676316,
+        "longitude": -73.187508
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "The Residence At Shelburne Bay East",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "185 PINE HAVEN SHORES ROAD",
+        "city": "Shelburne",
+        "state": "VT",
+        "zip": "05482",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-985-9847",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4177482,
+        "longitude": -73.2151738
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "The Village At White River Junction",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "101 CURRIER STREET",
+        "city": "White River Junction",
+        "state": "VT",
+        "zip": "05001",
+        "county": "Windsor"
+      },
+      "contact": {
+        "phone": "802-295-7500",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6470989,
+        "longitude": -72.3201045
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Valley Terrace",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "2820 CHRISTIAN STREET",
+        "city": "White River Junction",
+        "state": "VT",
+        "zip": "05001",
+        "county": "Windsor"
+      },
+      "contact": {
+        "phone": "802-280-1910",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6950932,
+        "longitude": -72.3204071
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Vernon Assisted Living Residence",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "13 GREENWAY DRIVE",
+        "city": "Vernon",
+        "state": "VT",
+        "zip": "05354",
+        "county": "Windham"
+      },
+      "contact": {
+        "phone": "802-254-8091",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.7623023,
+        "longitude": -72.5091133
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Village At Cedar Hill, Inc.",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "92 CEDAR HILL DRIVE",
+        "city": "Windsor",
+        "state": "VT",
+        "zip": "05089",
+        "county": "Windsor"
+      },
+      "contact": {
+        "phone": "802-674-2254",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.4357628,
+        "longitude": -72.3976741
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Vista Senior Living",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "103 US ROUTE 4",
+        "city": "Killington",
+        "state": "VT",
+        "zip": "05751",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-772-7118",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6584515,
+        "longitude": -72.8723172
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "West River Valley Assisted Living Residence",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "461 GRAFTON ROAD",
+        "city": "Townshend",
+        "state": "VT",
+        "zip": "05353",
+        "county": "Windham"
+      },
+      "contact": {
+        "phone": "802-365-7190",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.053262,
+        "longitude": -72.6662547
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Woodstock Terrace",
+      "type": "Assisted Living",
+      "care_type": "Assisted Living",
+      "state_abbr": "VT",
+      "address": {
+        "street": "456 WOODSTOCK ROAD",
+        "city": "Woodstock",
+        "state": "VT",
+        "zip": "05091",
+        "county": "Windsor"
+      },
+      "contact": {
+        "phone": "802-457-2228",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6293876,
+        "longitude": -72.5052771
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Assisted Living License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "(Frances) Atkinson Residence For The Retired",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "4717 MAIN STREET",
+        "city": "Newbury",
+        "state": "VT",
+        "zip": "05051",
+        "county": "Orange"
+      },
+      "contact": {
+        "phone": "802-866-5582",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.0819663,
+        "longitude": -72.0535213
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "7 Royce Street",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "7 ROYCE STREET",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "05701",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-773-1495",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6027789,
+        "longitude": -72.9720999
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Allen Harbor Senior Living",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "90 ALLEN ROAD",
+        "city": "South Burlington",
+        "state": "VT",
+        "zip": "05403",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-863-7897",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4230543,
+        "longitude": -73.2064946
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Arbors",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "687 HARBOR ROAD",
+        "city": "Shelburne",
+        "state": "VT",
+        "zip": "05482",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-985-8600",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.3826135,
+        "longitude": -73.2411123
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Arioli Community Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "15 ARIOLI AVENUE",
+        "city": "Barre",
+        "state": "VT",
+        "zip": "05641",
+        "county": "Washington"
+      },
+      "contact": {
+        "phone": "802-479-1439",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.1963661,
+        "longitude": -72.5185255
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Ascutney House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "5157 ROUTE 5",
+        "city": "Ascutney",
+        "state": "VT",
+        "zip": "05030",
+        "county": "Windsor"
+      },
+      "contact": {
+        "phone": "802-674-4328",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.4068106,
+        "longitude": -72.407182
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Autumn House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "141 SOUTH BRANCH STREET",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "05201",
+        "county": "Bennington"
+      },
+      "contact": {
+        "phone": "802-442-1243",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.8770096,
+        "longitude": -73.1815631
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Ave Maria Community Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "19 SCHOOL STREET",
+        "city": "Richford",
+        "state": "VT",
+        "zip": "05476",
+        "county": "Franklin"
+      },
+      "contact": {
+        "phone": "802-848-3003",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.9954239,
+        "longitude": -72.6736447
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Averill Place",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "24 AVERILL STREET",
+        "city": "Barre",
+        "state": "VT",
+        "zip": "05641",
+        "county": "Washington"
+      },
+      "contact": {
+        "phone": "802-622-8122",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.1982891,
+        "longitude": -72.4984426
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Averte-Bradford House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "996 LOWER PLAIN",
+        "city": "Bradford",
+        "state": "VT",
+        "zip": "05033",
+        "county": "Orange"
+      },
+      "contact": {
+        "phone": "802-222-4601",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.9792376,
+        "longitude": -72.1200243
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Barbara'S 1840 House, Inc.",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "147 GRANGER STREET",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "05701",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-747-0545",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.5991868,
+        "longitude": -72.9796194
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Blue Spruce Home For The Retired",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "70 BIRCH STREET",
+        "city": "Bradford",
+        "state": "VT",
+        "zip": "05033",
+        "county": "Orange"
+      },
+      "contact": {
+        "phone": "802-222-5332",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.0116388,
+        "longitude": -72.1130765
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Bromley Manor",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "2595 DEPOT STREET",
+        "city": "Manchester",
+        "state": "VT",
+        "zip": "05255",
+        "county": "Bennington"
+      },
+      "contact": {
+        "phone": "802-367-3988",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.1810241,
+        "longitude": -73.0114247
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Brookdale At Fillmore Pond",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "300 VILLAGE LANE",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "05201",
+        "county": "Bennington"
+      },
+      "contact": {
+        "phone": "802-447-7000",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.8830033,
+        "longitude": -73.2341926
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Brookwood",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "2 SCHOOL STREET",
+        "city": "North Springfield",
+        "state": "VT",
+        "zip": "05150",
+        "county": "Windsor"
+      },
+      "contact": {
+        "phone": "802-886-2464",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.3330495,
+        "longitude": -72.5260145
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Brownway Residence",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "328 SCHOOL STREET",
+        "city": "Enosburg Falls",
+        "state": "VT",
+        "zip": "05450",
+        "county": "Franklin"
+      },
+      "contact": {
+        "phone": "802-933-2315",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.9041267,
+        "longitude": -72.7979118
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Canterbury Inn",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "46 CHERRY STREET",
+        "city": "St. Johnsbury",
+        "state": "VT",
+        "zip": "05819",
+        "county": "Caledonia"
+      },
+      "contact": {
+        "phone": "802-748-5556",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4189074,
+        "longitude": -72.0173479
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Cedar Lane Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "76 CEDAR LANE",
+        "city": "Danville",
+        "state": "VT",
+        "zip": "05828",
+        "county": "Caledonia"
+      },
+      "contact": {
+        "phone": "802-684-8061",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.407327,
+        "longitude": -72.139186
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Copley House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "379 WASHINGTON HIGHWAY",
+        "city": "Morrisville",
+        "state": "VT",
+        "zip": "05661",
+        "county": "Lamoille"
+      },
+      "contact": {
+        "phone": "802-888-7323",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.5552284,
+        "longitude": -72.5937801
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Craftsbury Community Care Center",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "1784 EAST CRAFTSBURY ROAD",
+        "city": "Craftsbury",
+        "state": "VT",
+        "zip": "05826",
+        "county": "Orleans"
+      },
+      "contact": {
+        "phone": "802-586-2414",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.6407099,
+        "longitude": -72.3416761
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Davis Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "45 STATE STREET",
+        "city": "Windsor",
+        "state": "VT",
+        "zip": "05089",
+        "county": "Windsor"
+      },
+      "contact": {
+        "phone": "802-674-5300",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.4803829,
+        "longitude": -72.3887563
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "East Terrace",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "71 EAST TERRACE",
+        "city": "South Burlington",
+        "state": "VT",
+        "zip": "05403",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-660-4383",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4637951,
+        "longitude": -73.1900317
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Eastview At Middlebury",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "100 EASTVIEW TERRACE",
+        "city": "Middlebury",
+        "state": "VT",
+        "zip": "05753",
+        "county": "Addison"
+      },
+      "contact": {
+        "phone": "802-989-7500",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.9971301,
+        "longitude": -73.1697786
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Emma'S Place",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "212 NORTH MAIN STREET",
+        "city": "Wallingford",
+        "state": "VT",
+        "zip": "05773",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-446-3574",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.4745413,
+        "longitude": -72.9764594
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Equinox Terrace",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "324 EQUINOX TERRACE ROAD",
+        "city": "Manchester Center",
+        "state": "VT",
+        "zip": "05255",
+        "county": "Bennington"
+      },
+      "contact": {
+        "phone": "802-362-5141",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.1712494,
+        "longitude": -73.0559772
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Ethan Allen Residence",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "1200 NORTH AVENUE",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "05408",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-658-1573",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.5085612,
+        "longitude": -73.2463869
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Fairwinds Residential Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "108 MECHANIC STREET",
+        "city": "North Bennington",
+        "state": "VT",
+        "zip": "05257",
+        "county": "Bennington"
+      },
+      "contact": {
+        "phone": "802-442-4067",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.9272162,
+        "longitude": -73.2302528
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Forest Hill Residential Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "213 CLARK DRIVE",
+        "city": "Hyde Park",
+        "state": "VT",
+        "zip": "05655",
+        "county": "Lamoille"
+      },
+      "contact": {
+        "phone": "802-888-1700",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.5875351,
+        "longitude": -72.5802467
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Four Seasons Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "135 SOUTH MAIN STREET",
+        "city": "Northfield",
+        "state": "VT",
+        "zip": "05663",
+        "county": "Washington"
+      },
+      "contact": {
+        "phone": "802-485-8163",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.1467401,
+        "longitude": -72.6559296
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Gatling House Group Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "106 JOHN STREET",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "05201",
+        "county": "Bennington"
+      },
+      "contact": {
+        "phone": "802-442-3378",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.8823611,
+        "longitude": -73.1825541
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Gazebo Senior Living-Gazebo Apartments",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "1510 WILLISTON ROAD",
+        "city": "South Burlington",
+        "state": "VT",
+        "zip": "05403",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-865-4461",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4661131,
+        "longitude": -73.1647346
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Gazebo Senior Living-Gazebo North",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "1530 WILLISTON ROAD",
+        "city": "South Burlington",
+        "state": "VT",
+        "zip": "05403",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-863-2386",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4657533,
+        "longitude": -73.163824
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Giordano Manor",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "34 CANADA STREET",
+        "city": "Swanton",
+        "state": "VT",
+        "zip": "05488",
+        "county": "Franklin"
+      },
+      "contact": {
+        "phone": "802-868-3903",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.9202296,
+        "longitude": -73.1217523
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Heaton Woods",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "10 HEATON STREET",
+        "city": "Montpelier",
+        "state": "VT",
+        "zip": "05602",
+        "county": "Washington"
+      },
+      "contact": {
+        "phone": "802-223-1157",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.2596712,
+        "longitude": -72.5651204
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Hill Street",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "201 HILL STREET",
+        "city": "Barre",
+        "state": "VT",
+        "zip": "05641",
+        "county": "Washington"
+      },
+      "contact": {
+        "phone": "802-479-1477",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.1922405,
+        "longitude": -72.4881298
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Hilltop Recovery Residence",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "94 WESTMINSTER TERRACE",
+        "city": "Westminster",
+        "state": "VT",
+        "zip": "05101",
+        "county": "Windham"
+      },
+      "contact": {
+        "phone": "802-732-8343",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.1241573,
+        "longitude": -72.4426192
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Historic Homes Of Runnemede - Evarts House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "34 MAXWELL PERKINS LANE",
+        "city": "Windsor",
+        "state": "VT",
+        "zip": "05089",
+        "county": "Windsor"
+      },
+      "contact": {
+        "phone": "802-674-6733",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.4826762,
+        "longitude": -72.3859249
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Historic Homes Of Runnemede - Stoughton House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "46 MAIN STREET",
+        "city": "Windsor",
+        "state": "VT",
+        "zip": "05089",
+        "county": "Windsor"
+      },
+      "contact": {
+        "phone": "802-674-6733",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.4817094,
+        "longitude": -72.38619
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Holton (Memorial) Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "158 WESTERN AVENUE",
+        "city": "Brattleboro",
+        "state": "VT",
+        "zip": "05301",
+        "county": "Windham"
+      },
+      "contact": {
+        "phone": "802-254-4155",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.8512418,
+        "longitude": -72.5723325
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Homestead Senior Living",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "64 HARBORVIEW DRIVE",
+        "city": "St. Albans",
+        "state": "VT",
+        "zip": "05478",
+        "county": "Franklin"
+      },
+      "contact": {
+        "phone": "802-752-2102",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.7912011,
+        "longitude": -73.0949753
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Johnson Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "919 VT ROUTE 100",
+        "city": "Hancock",
+        "state": "VT",
+        "zip": "05748",
+        "county": "Addison"
+      },
+      "contact": {
+        "phone": "802-767-4404",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.9221743,
+        "longitude": -72.8401332
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Kingdom Way Group Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "97 KINGDOM WAY",
+        "city": "Newport",
+        "state": "VT",
+        "zip": "05855",
+        "county": "Orleans"
+      },
+      "contact": {
+        "phone": "802-334-4598",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.924617,
+        "longitude": -72.199875
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "King'S Daughters Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "10 RUGG STREET",
+        "city": "St. Albans",
+        "state": "VT",
+        "zip": "05478",
+        "county": "Franklin"
+      },
+      "contact": {
+        "phone": "802-524-5744",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.806966,
+        "longitude": -73.0803353
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Kirby House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "64 SOUTH MAIN STREET",
+        "city": "Waterbury",
+        "state": "VT",
+        "zip": "05676",
+        "county": "Washington"
+      },
+      "contact": {
+        "phone": "802-244-8998",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.3358046,
+        "longitude": -72.7537864
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Klm Enterprises, Inc",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "88 A-B RIVER STREET",
+        "city": "Wallingford",
+        "state": "VT",
+        "zip": "05773",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-446-6030",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.4755025,
+        "longitude": -72.9796223
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Lakeview Community Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "332 ST. PAUL STREET",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "05401",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-488-7033",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4705925,
+        "longitude": -73.2123379
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Lenny Burke'S Farm",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "1409 US RTE 7 SOUTH",
+        "city": "Wallingford",
+        "state": "VT",
+        "zip": "05773",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-446-6020",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.4529635,
+        "longitude": -72.9854882
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Lincoln House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "120 HILL STREET",
+        "city": "Barre",
+        "state": "VT",
+        "zip": "05641",
+        "county": "Washington"
+      },
+      "contact": {
+        "phone": "802-476-3283",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.193715,
+        "longitude": -72.491493
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Linden Residential Care",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "200 WAKE ROBIN DRIVE",
+        "city": "Shelburne",
+        "state": "VT",
+        "zip": "05482",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-264-5150",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.3602579,
+        "longitude": -73.2483788
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Loch Lomond",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "700 WILLSON ROAD",
+        "city": "North Concord",
+        "state": "VT",
+        "zip": "05858",
+        "county": "Essex"
+      },
+      "contact": {
+        "phone": "802-695-3366",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4746751,
+        "longitude": -71.8676502
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Loretto Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "59 MEADOW STREET",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "05701",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-773-8840",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.602746,
+        "longitude": -72.986621
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Manes House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "127 UNION STREET",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "05201",
+        "county": "Bennington"
+      },
+      "contact": {
+        "phone": "802-442-8900",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.8769948,
+        "longitude": -73.1941225
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Maple Lane Retirement Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "33 MAPLE LANE",
+        "city": "Barton",
+        "state": "VT",
+        "zip": "05822",
+        "county": "Orleans"
+      },
+      "contact": {
+        "phone": "802-754-2323",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.7863846,
+        "longitude": -72.1889172
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Maple Ridge Memory Care",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "6 FREEMAN WOODS",
+        "city": "Essex",
+        "state": "VT",
+        "zip": "05451",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-872-1700",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.5033686,
+        "longitude": -73.0779981
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Maplewood Recovery Residence",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "195 STRATTON ROAD",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "05701",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-770-5003",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6038124,
+        "longitude": -72.9568065
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Mayo Residential Care",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "610 WATER STREET",
+        "city": "Northfield",
+        "state": "VT",
+        "zip": "05663",
+        "county": "Washington"
+      },
+      "contact": {
+        "phone": "802-485-3168",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.145489,
+        "longitude": -72.664984
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Meadowview Recovery Residence",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "24 FARMHOUSE SQUARE",
+        "city": "Brattleboro",
+        "state": "VT",
+        "zip": "05301",
+        "county": "Windham"
+      },
+      "contact": {
+        "phone": "802-275-4971",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.86242,
+        "longitude": -72.5671107
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Michaud Memorial Manor",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "47 HERRICK ROAD",
+        "city": "Derby Line",
+        "state": "VT",
+        "zip": "05830",
+        "county": "Orleans"
+      },
+      "contact": {
+        "phone": "802-873-3152",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 45.0041893,
+        "longitude": -72.0866558
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Misty Heather Morn Community Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "174 BLISSVILLE ROAD",
+        "city": "Hydeville",
+        "state": "VT",
+        "zip": "05750",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-265-3300",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6024837,
+        "longitude": -73.2331789
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Newport Residential Care",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "148 PROUTY DRIVE",
+        "city": "Newport",
+        "state": "VT",
+        "zip": "05855",
+        "county": "Orleans"
+      },
+      "contact": {
+        "phone": "802-334-7321",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.9539371,
+        "longitude": -72.2017039
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Our House At Park Terrace",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "48 SOUTH MAIN STREET",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "05701",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-773-1776",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6051391,
+        "longitude": -72.9713157
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Our House Outback",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "196 MUSSEY STREET",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "05701",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-775-7550",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.5964682,
+        "longitude": -72.9636344
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Our House Residential Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "162 JACKSON AVENUE",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "05701",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-773-4294",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6048947,
+        "longitude": -72.9562528
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Our House Too Residential Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "69 1/2 ALLEN STREET",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "05701",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-773-4272",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.5959608,
+        "longitude": -72.9698425
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Our Lady Of Providence",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "47 WEST SPRING STREET",
+        "city": "Winooski",
+        "state": "VT",
+        "zip": "05404",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-655-2395",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4954806,
+        "longitude": -73.1881146
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Our Lady Of The Meadows",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "1 PINNACLE MEADOWS",
+        "city": "Richford",
+        "state": "VT",
+        "zip": "05476",
+        "county": "Franklin"
+      },
+      "contact": {
+        "phone": "802-848-7106",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.9782505,
+        "longitude": -72.6885602
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Parkway House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "1111 MAIN STREET",
+        "city": "St. Johnsbury",
+        "state": "VT",
+        "zip": "05819",
+        "county": "Caledonia"
+      },
+      "contact": {
+        "phone": "802-748-1572",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4175589,
+        "longitude": -72.0208142
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Pennington House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "1822 NORTH AVENUE",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "05408",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-863-3231",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.519107,
+        "longitude": -73.260888
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Pine Knoll Community Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "601 RED VILLAGE ROAD",
+        "city": "Lyndonville",
+        "state": "VT",
+        "zip": "05851",
+        "county": "Caledonia"
+      },
+      "contact": {
+        "phone": "802-626-3361",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.5134647,
+        "longitude": -71.9954893
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Residential Care At The Manor",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "577 WASHINGTON HIGHWAY",
+        "city": "Morrisville",
+        "state": "VT",
+        "zip": "05661",
+        "county": "Lamoille"
+      },
+      "contact": {
+        "phone": "802-888-8700",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.5553807,
+        "longitude": -72.589657
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Ringer'S Home Care",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "195 GREEN STREET",
+        "city": "Vergennes",
+        "state": "VT",
+        "zip": "05491",
+        "county": "Addison"
+      },
+      "contact": {
+        "phone": "802-877-1363",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.1588198,
+        "longitude": -73.2401604
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Riverbend Residential Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "307 VT ROUTE 110",
+        "city": "Chelsea",
+        "state": "VT",
+        "zip": "05038",
+        "county": "Orange"
+      },
+      "contact": {
+        "phone": "802-685-2250",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.9903013,
+        "longitude": -72.447644
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Rivers Edge Community Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "5 HUNT STREET",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "05201",
+        "county": "Bennington"
+      },
+      "contact": {
+        "phone": "802-442-5081",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.8933274,
+        "longitude": -73.20387
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Riverview Life Skills Center",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "197 HIGHLANDER DRIVE",
+        "city": "Jeffersonville",
+        "state": "VT",
+        "zip": "05484",
+        "county": "Lamoille"
+      },
+      "contact": {
+        "phone": "802-644-8708",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.626952,
+        "longitude": -72.8262638
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Roadhouse",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "5 GIUDICI STREET",
+        "city": "Barre",
+        "state": "VT",
+        "zip": "05641",
+        "county": "Washington"
+      },
+      "contact": {
+        "phone": "802-479-0534",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.2063938,
+        "longitude": -72.5077706
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Saltis Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "1141 MAIN STREET",
+        "city": "Castleton",
+        "state": "VT",
+        "zip": "05735",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-468-5185",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6092745,
+        "longitude": -73.1876973
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Second Spring North",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "1071 VT ROUTE 15",
+        "city": "Westford",
+        "state": "VT",
+        "zip": "05494",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-899-1328",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.6125981,
+        "longitude": -72.9269373
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Second Spring South",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "118 CLARK ROAD",
+        "city": "Williamstown",
+        "state": "VT",
+        "zip": "05679",
+        "county": "Orange"
+      },
+      "contact": {
+        "phone": "802-433-6183",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.11887,
+        "longitude": -72.57299
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Shard Villa",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "1177 SHARD VILLA ROAD",
+        "city": "Salisbury",
+        "state": "VT",
+        "zip": "05769",
+        "county": "Addison"
+      },
+      "contact": {
+        "phone": "802-352-4369",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.9396918,
+        "longitude": -73.1542933
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Single Steps",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "62 BARRE STREET",
+        "city": "Montpelier",
+        "state": "VT",
+        "zip": "05602",
+        "county": "Washington"
+      },
+      "contact": {
+        "phone": "802-229-4109",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.2571808,
+        "longitude": -72.5742932
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "South Bay Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "121 KINGDOM WAY",
+        "city": "Newport",
+        "state": "VT",
+        "zip": "05855",
+        "county": "Orleans"
+      },
+      "contact": {
+        "phone": "802-334-1053",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.9248033,
+        "longitude": -72.2000611
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "South Harbor Senior Living",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "20 HARBOR VIEW ROAD",
+        "city": "South Burlington",
+        "state": "VT",
+        "zip": "05403",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-863-7897",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4238121,
+        "longitude": -73.2058835
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "St. Joseph Kervick Residence Iii",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "131 CONVENT AVENUE",
+        "city": "Rutland",
+        "state": "VT",
+        "zip": "05701",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-775-5133",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6030321,
+        "longitude": -72.9858724
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "St. Joseph'S Residential Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "243 NORTH PROSPECT STREET",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "05401",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-864-0264",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4876239,
+        "longitude": -73.20255
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Sterling House At Richmond",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "61 FARR ROAD",
+        "city": "Richmond",
+        "state": "VT",
+        "zip": "05477",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-434-7181",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.3979459,
+        "longitude": -73.0019425
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Sterling House At Rockingham",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "33 ATKINSON STREET",
+        "city": "Bellows Falls",
+        "state": "VT",
+        "zip": "05101",
+        "county": "Windham"
+      },
+      "contact": {
+        "phone": "802-463-0137",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.1304594,
+        "longitude": -72.4474969
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "The Bradley House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "65 HARRIS AVENUE",
+        "city": "Brattleboro",
+        "state": "VT",
+        "zip": "05301",
+        "county": "Windham"
+      },
+      "contact": {
+        "phone": "802-254-5524",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.8599476,
+        "longitude": -72.5559284
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "The Gary Residence",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "149 MAIN STREET",
+        "city": "Montpelier",
+        "state": "VT",
+        "zip": "05602",
+        "county": "Washington"
+      },
+      "contact": {
+        "phone": "802-223-3881",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.2622807,
+        "longitude": -72.5722252
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "The Homestead, Inc.",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "73 RIVER STREET",
+        "city": "Woodstock",
+        "state": "VT",
+        "zip": "05091",
+        "county": "Windsor"
+      },
+      "contact": {
+        "phone": "802-457-1310",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.6222916,
+        "longitude": -72.5282008
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "The Residence At Otter Creek",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "350 LODGE ROAD",
+        "city": "Middlebury",
+        "state": "VT",
+        "zip": "05753",
+        "county": "Addison"
+      },
+      "contact": {
+        "phone": "802-388-1220",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.9925906,
+        "longitude": -73.1560037
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "The Residence At Shelburne Bay West",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "185 PINE HAVEN SHORES ROAD",
+        "city": "Shelburne",
+        "state": "VT",
+        "zip": "05482",
+        "county": "Chittenden"
+      },
+      "contact": {
+        "phone": "802-985-9847",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.4177482,
+        "longitude": -73.2151738
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Thompson Residential Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "80 MAPLE STREET",
+        "city": "Brattleboro",
+        "state": "VT",
+        "zip": "05301",
+        "county": "Windham"
+      },
+      "contact": {
+        "phone": "802-254-4977",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.8440468,
+        "longitude": -72.5660482
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Valley View Home For The Retired",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "69 OAK LANE",
+        "city": "Fairlee",
+        "state": "VT",
+        "zip": "05045",
+        "county": "Orange"
+      },
+      "contact": {
+        "phone": "802-333-4829",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.8872799,
+        "longitude": -72.1726543
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Vergennes Residential Care",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "34 NORTH STREET",
+        "city": "Vergennes",
+        "state": "VT",
+        "zip": "05491",
+        "county": "Addison"
+      },
+      "contact": {
+        "phone": "802-877-3562",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.1687391,
+        "longitude": -73.2523722
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Vermont Veterans' Home Domiciliary",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "325 NORTH STREET",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "05201",
+        "county": "Bennington"
+      },
+      "contact": {
+        "phone": "802-447-6510",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.8859095,
+        "longitude": -73.1983119
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Washington Elms",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "126 ELM STREET",
+        "city": "Bennington",
+        "state": "VT",
+        "zip": "05201",
+        "county": "Bennington"
+      },
+      "contact": {
+        "phone": "802-447-1219",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.876616,
+        "longitude": -73.2000908
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Watson House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "18 PROSPECT STREET",
+        "city": "North Bennington",
+        "state": "VT",
+        "zip": "05257",
+        "county": "Bennington"
+      },
+      "contact": {
+        "phone": "802-447-1161",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 42.927329,
+        "longitude": -73.2393766
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Westview Meadows At Montpelier",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "171 WESTVIEW MEADOWS ROAD",
+        "city": "Montpelier",
+        "state": "VT",
+        "zip": "05602",
+        "county": "Washington"
+      },
+      "contact": {
+        "phone": "802-223-1068",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 44.2443926,
+        "longitude": -72.5817882
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Willows Of Windsor",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "121 STATE STREET",
+        "city": "Windsor",
+        "state": "VT",
+        "zip": "05089",
+        "county": "Windsor"
+      },
+      "contact": {
+        "phone": "802-674-5534",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.4810333,
+        "longitude": -72.3936996
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Windover House",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "451 VT ROUTE 66",
+        "city": "Randolph",
+        "state": "VT",
+        "zip": "05060",
+        "county": "Orange"
+      },
+      "contact": {
+        "phone": "802-728-3802",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.932587,
+        "longitude": -72.649277
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Wintergreen Residential Care Home",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "3 UNION STREET",
+        "city": "Brandon",
+        "state": "VT",
+        "zip": "05733",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-465-4101",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.7970716,
+        "longitude": -73.0881573
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    },
+    {
+      "name": "Wintergreen Residential Care Home - North",
+      "type": "Residential Care Home",
+      "care_type": "Residential Care Home",
+      "state_abbr": "VT",
+      "address": {
+        "street": "360 NEW ROAD",
+        "city": "Brandon",
+        "state": "VT",
+        "zip": "05733",
+        "county": "Rutland"
+      },
+      "contact": {
+        "phone": "802-465-8340",
+        "email": ""
+      },
+      "facility_details": {
+        "beds": null,
+        "ownership_type": "",
+        "licensee": ""
+      },
+      "location": {
+        "latitude": 43.81383,
+        "longitude": -73.1047827
+      },
+      "state_license": {
+        "state_license_number": null,
+        "cms_certification_number": null,
+        "issuing_agency": "Vermont State Health Department",
+        "license_type": "Residential Care Home License",
+        "last_verified_date": "2022-01-01",
+        "match_method": "princeton_dataset"
+      },
+      "data_source": "Princeton ALF Dataset 2022 + State Health Departments"
+    }
+  ]
+}
