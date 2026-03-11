@@ -166,76 +166,6 @@ const LegacyDashboardEditRedirect: React.FC = () => {
   return <Navigate to={`/dashboard/facility/${id}/edit`} replace />;
 };
 
-const LegacyStateAssistedLivingRedirect: React.FC = () => {
-  const { state } = useParams<{ state?: string }>();
-  if (!state) return <Navigate to="/states" replace />;
-  return <Navigate to={`/states/${state}`} replace />;
-};
-
-const AssistedLivingStateAstroRedirect: React.FC = () => {
-  const { state } = useParams<{ state?: string }>();
-  const location = useLocation();
-  if (!state) return <Navigate to="/states" replace />;
-
-  const target = `/assisted-living/${state}/`;
-  React.useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const next = `${target}${location.search}${location.hash}`;
-    const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
-    if (current === next) {
-      const navigationEntry = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
-      if (navigationEntry?.type === 'reload') {
-        window.location.replace(`/states/${state}`);
-        return;
-      }
-      window.location.reload();
-      return;
-    }
-    window.location.replace(next);
-  }, [target, location.search, location.hash]);
-
-  return (
-    <div className="min-h-[40vh] flex items-center justify-center">
-      <div className="h-10 w-10 rounded-full border-2 border-slate-300 border-t-slate-700 animate-spin" />
-    </div>
-  );
-};
-
-const AssistedLivingCityAstroRedirect: React.FC = () => {
-  const { state, city } = useParams<{ state?: string; city?: string }>();
-  const location = useLocation();
-  if (!state || !city) return <Navigate to="/states" replace />;
-
-  const target = `/assisted-living/${state}/cities/${city}/`;
-  React.useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const next = `${target}${location.search}${location.hash}`;
-    const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
-    if (current === next) {
-      const navigationEntry = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
-      if (navigationEntry?.type === 'reload') {
-        window.location.replace(`/states/${state}`);
-        return;
-      }
-      window.location.reload();
-      return;
-    }
-    window.location.replace(next);
-  }, [target, location.search, location.hash]);
-
-  return (
-    <div className="min-h-[40vh] flex items-center justify-center">
-      <div className="h-10 w-10 rounded-full border-2 border-slate-300 border-t-slate-700 animate-spin" />
-    </div>
-  );
-};
-
-const LegacyAssistedLivingCityPathRedirect: React.FC = () => {
-  const { state, city } = useParams<{ state?: string; city?: string }>();
-  if (!state || !city) return <Navigate to="/states" replace />;
-  return <Navigate to={`/assisted-living/${state}/cities/${city}/`} replace />;
-};
-
 function App() {
   const enableIntegrityHarness =
     import.meta.env.DEV ||
@@ -361,13 +291,9 @@ function App() {
                     <Route path="/states/:state/rules" element={<StateRulesPage />} />
                     <Route path="/states/:state/ombudsman" element={<StateOmbudsmanPage />} />
                     <Route path="/states/:state/veterans" element={<StateVeteransPage />} />
-                    <Route path="/states/:state/assisted-living" element={<LegacyStateAssistedLivingRedirect />} />
                     <Route path="/regulatory-library" element={<RegulatoryLibrary />} />
 
                     {/* Legacy / Direct Routes */}
-                    <Route path="/assisted-living/:state" element={<AssistedLivingStateAstroRedirect />} />
-                    <Route path="/assisted-living/:state/:city" element={<LegacyAssistedLivingCityPathRedirect />} />
-                    <Route path="/assisted-living/:state/cities/:city" element={<AssistedLivingCityAstroRedirect />} />
                     <Route path="/faq" element={<FAQ />} />
                     <Route path="/advertise" element={<AdvertiseWithUs />} />
                     <Route path="/honest-care" element={<HonestCarePage />} />

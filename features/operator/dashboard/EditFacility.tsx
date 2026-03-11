@@ -133,8 +133,7 @@ export const EditFacility: React.FC = () => {
           hasColumn('website') &&
           hasColumn('email') &&
           hasColumn('min_price') &&
-          hasColumn('max_price') &&
-          hasColumn('plan');
+          hasColumn('max_price');
 
         if (canUseProfileVersioning) {
           const { data: profileState, error: profileStateError } = await supabase

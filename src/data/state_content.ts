@@ -242,7 +242,7 @@ export const stateContent: Record<string, StateContent> = {
                 "@type": "WebPage",
                 "name": "Assisted Living in California",
                 "description": "Full guide to assisted living in California. Licensing rules, RCFE laws, Medi Cal Assisted Living Waiver, resident rights, complaints, inspections, and how to choose the right facility.",
-                "url": "https://silvertechdirectory.com/assisted-living/california",
+                "url": "https://silvertechdirectory.com/senior-living/california/",
                 "about": {
                     "@type": "State",
                     "name": "California"
@@ -411,7 +411,7 @@ export const stateContent: Record<string, StateContent> = {
                 "@type": "WebPage",
                 "name": "Assisted Living in Indiana",
                 "description": "Complete guide to assisted living in Indiana. Find licensed facilities, understand costs, Medicaid waivers, and regulations.",
-                "url": "https://silvertechdirectory.com/assisted-living/indiana",
+                "url": "https://silvertechdirectory.com/senior-living/indiana/",
                 "about": {
                     "@type": "State",
                     "name": "Indiana"

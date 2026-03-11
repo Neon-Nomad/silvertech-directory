@@ -63,7 +63,7 @@ export const CityPageTemplate: React.FC = () => {
     const zipState = states.find((s) => s.abbreviation.toLowerCase() === zipEntry.state.toLowerCase());
     const targetStateSlug = zipState?.slug || stateSlug;
     const targetCitySlug = toSlug(zipEntry.city);
-    navigate(`/assisted-living/${targetStateSlug}/cities/${targetCitySlug}`, { replace: true });
+    navigate(`/senior-living/${targetStateSlug}/${targetCitySlug}/assisted-living/`, { replace: true });
   }, [stateSlug, citySlug, navigate]);
 
   // Get Rich Content (Premium or Generated)
@@ -121,7 +121,7 @@ export const CityPageTemplate: React.FC = () => {
   // SEO & Schema
   const pageTitle = `Assisted Living in ${cityName}, ${stateAbbr} - Directory of Senior Care Facilities`;
   const pageDescription = `See the Top 10 Best Assisted Living Facilities in ${cityName}, ${stateName}. Compare prices, read reviews, and find verified senior care providers.`;
-  const canonicalUrl = `https://silvertechdirectory.com/assisted-living/${stateSlug}/cities/${citySlug}/`;
+  const canonicalUrl = `https://silvertechdirectory.com/senior-living/${stateSlug}/${citySlug}/assisted-living/`;
 
   // Use ranked facilities for Schema to highlight best ones first
   const rankedFacilities = rankFacilities(facilities);
@@ -177,8 +177,8 @@ export const CityPageTemplate: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Breadcrumbs items={[
             { label: 'Home', path: '/' },
-            { label: 'States', path: '/assisted-living' },
-            { label: stateName, path: `/assisted-living/${stateSlug}` },
+            { label: 'States', path: '/senior-living/' },
+            { label: stateName, path: `/senior-living/${stateSlug}/` },
             { label: cityName }
           ]} />
         </div>
@@ -246,7 +246,7 @@ export const CityPageTemplate: React.FC = () => {
                   We are constantly updating our directory. Try searching for a nearby city or browse the state page.
                 </p>
                 <Link 
-                  to={`/assisted-living/${stateSlug}`}
+                  to={`/senior-living/${stateSlug}/`}
                   className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700"
                 >
                   Browse {stateName}
@@ -333,7 +333,7 @@ export const CityPageTemplate: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to={`/assisted-living/${stateSlug}`} className="flex items-center text-slate-600 hover:text-primary-600">
+                  <Link to={`/senior-living/${stateSlug}/`} className="flex items-center text-slate-600 hover:text-primary-600">
                     <ChevronRight size={16} className="mr-2 text-slate-400" />
                     All {stateName} Cities
                   </Link>

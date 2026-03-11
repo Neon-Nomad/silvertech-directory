@@ -1,5 +1,13 @@
 -- Phase 5: Facility profile versioning with draft + publish workflow
 
+-- Compatibility for environments where profile fields were never added.
+alter table public.facilities
+  add column if not exists description text,
+  add column if not exists website text,
+  add column if not exists email text,
+  add column if not exists min_price numeric,
+  add column if not exists max_price numeric;
+
 create table if not exists public.facility_profile_versions (
   id uuid primary key default gen_random_uuid(),
   facility_id uuid not null references public.facilities(id) on delete cascade,
@@ -122,7 +130,12 @@ begin
     'postal_code', coalesce(f.postal_code, ''),
     'min_price', f.min_price,
     'max_price', f.max_price,
-    'plan', coalesce(f.plan, 'basic')
+    'listing_tier', coalesce(f.listing_tier, 'free'),
+    'plan',
+      case
+        when coalesce(f.listing_tier, 'free') = 'free' then 'basic'
+        else coalesce(f.listing_tier, 'free')
+      end
   )
   into v_base_payload
   from public.facilities f
@@ -268,7 +281,12 @@ begin
       'postal_code', coalesce(f.postal_code, ''),
       'min_price', f.min_price,
       'max_price', f.max_price,
-      'plan', coalesce(f.plan, 'basic')
+      'listing_tier', coalesce(f.listing_tier, 'free'),
+      'plan',
+        case
+          when coalesce(f.listing_tier, 'free') = 'free' then 'basic'
+          else coalesce(f.listing_tier, 'free')
+        end
     )
     into v_payload
     from public.facilities f

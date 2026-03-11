@@ -1,0 +1,98 @@
+---
+import Base from '../../layouts/Base.astro';
+import { ALL_STATES } from '../../../src/data/states';
+import { getAllStates, getFacilitiesByState } from '../../lib/seniorDataContract';
+import { getSeniorLivingStates, getBuildDate, formatDateLong } from '../../lib/seniorLivingData';
+
+const toTitleCase = (value: string) =>
+  value
+    .split('-')
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+
+type StateCard = {
+  stateSlug: string;
+  stateName: string;
+  facilityCount: number;
+  cityCount: number;
+};
+
+let states: StateCard[] = getSeniorLivingStates()
+  .filter((state) => state.facilityCount > 0)
+  .sort((a, b) => b.facilityCount - a.facilityCount)
+  .map((state) => ({
+    stateSlug: state.stateSlug,
+    stateName: state.stateName,
+    facilityCount: state.facilityCount,
+    cityCount: state.cityCount,
+  }));
+
+if (states.length === 0) {
+  const stateSlugs = await getAllStates();
+  const stateMetaBySlug = new Map(ALL_STATES.map((state) => [state.slug, state]));
+  const fallbackStates = await Promise.all(
+    stateSlugs.map(async (stateSlug) => {
+      const facilities = await getFacilitiesByState(stateSlug);
+      if (facilities.length === 0) return null;
+      const citySet = new Set(
+        facilities.map((facility) =>
+          facility.city
+            .toLowerCase()
+            .trim()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/(^-|-$)/g, ''),
+        ),
+      );
+      const stateMeta = stateMetaBySlug.get(stateSlug);
+      return {
+        stateSlug,
+        stateName: stateMeta?.name || toTitleCase(stateSlug),
+        facilityCount: facilities.length,
+        cityCount: citySet.size,
+      };
+    }),
+  );
+
+  states = fallbackStates
+    .filter((state): state is StateCard => Boolean(state))
+    .sort((a, b) => b.facilityCount - a.facilityCount);
+}
+
+const buildDateLabel = formatDateLong(getBuildDate());
+const title = 'Senior Living Directory by State | SilverTech';
+const description = 'Browse statewide senior living directories with city-level market intelligence, care-type filters, and facility records.';
+const canonical = 'https://silvertechdirectory.com/senior-living/';
+---
+<Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
+
+  <div class="container sl-page">
+    <section class="sl-hero">
+      <p class="sl-eyebrow">National State Hub</p>
+      <h1>Senior Living by State</h1>
+      <p>
+        Browse statewide senior living authority pages with city-level facility coverage, care-type segmentation, and regulatory context.
+      </p>
+    </section>
+
+    <section class="sl-section" style="margin-top:1rem;">
+      <h2>State Pages</h2>
+      <div class="sl-nearby-grid" style="grid-template-columns:repeat(4,minmax(0,1fr));">
+        {states.map((state) => (
+          <a href={`/senior-living/${state.stateSlug}/`}>
+            <strong>{state.stateName}</strong>
+            <span>{state.facilityCount.toLocaleString()} facilities - {state.cityCount.toLocaleString()} cities</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <footer class="sl-trust-footer">
+      <span><strong>Author:</strong> SilverTech Editorial Team</span>
+      <span><strong>Last Updated:</strong> {buildDateLabel}</span>
+      <span><strong>Data Source:</strong> Public licensing datasets + SilverTech normalization pipeline</span>
+      <span><a href="/editorial-policy/">Editorial Policy</a></span>
+    </footer>
+  </div>
+</Base>

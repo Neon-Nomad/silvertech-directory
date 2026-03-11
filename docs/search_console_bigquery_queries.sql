@@ -5,18 +5,19 @@
 -- 1) State Hub and City Spoke performance in last 7 days
 SELECT
   CASE
-    WHEN REGEXP_CONTAINS(url, r'/assisted-living/[^/]+/cities/[^/]+/?$') THEN 'city_spoke'
-    WHEN REGEXP_CONTAINS(url, r'/assisted-living/[^/]+/?$') THEN 'state_hub'
+    WHEN REGEXP_CONTAINS(url, r'/senior-living/[^/]+/[^/]+/[^/]+/?$') THEN 'city_spoke'
+    WHEN REGEXP_CONTAINS(url, r'/senior-living/[^/]+/[^/]+/?$') THEN 'city_hub'
+    WHEN REGEXP_CONTAINS(url, r'/senior-living/[^/]+/?$') THEN 'state_hub'
     ELSE 'other'
   END AS page_scope,
-  REGEXP_EXTRACT(url, r'/assisted-living/([^/]+)/') AS state_slug,
+  REGEXP_EXTRACT(url, r'/senior-living/([^/]+)/') AS state_slug,
   COUNT(DISTINCT url) AS pages_seen,
   SUM(impressions) AS total_impressions,
   SUM(clicks) AS total_clicks,
   SAFE_DIVIDE(SUM(clicks), NULLIF(SUM(impressions), 0)) AS ctr
 FROM `your_project.searchconsole.searchdata_url_impression`
 WHERE data_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY)
-  AND REGEXP_CONTAINS(url, r'/assisted-living/')
+  AND REGEXP_CONTAINS(url, r'/senior-living/')
 GROUP BY page_scope, state_slug
 ORDER BY total_impressions DESC;
 
@@ -24,12 +25,12 @@ ORDER BY total_impressions DESC;
 WITH this_week AS (
   SELECT
     url,
-    REGEXP_EXTRACT(url, r'/assisted-living/([^/]+)/') AS state_slug,
+    REGEXP_EXTRACT(url, r'/senior-living/([^/]+)/') AS state_slug,
     SUM(impressions) AS impressions_7d,
     SUM(clicks) AS clicks_7d
   FROM `your_project.searchconsole.searchdata_url_impression`
   WHERE data_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY)
-    AND REGEXP_CONTAINS(url, r'/assisted-living/[^/]+/cities/[^/]+/?$')
+    AND REGEXP_CONTAINS(url, r'/senior-living/[^/]+/[^/]+/[^/]+/?$')
   GROUP BY url, state_slug
 ),
 prev_week AS (
@@ -39,7 +40,7 @@ prev_week AS (
   FROM `your_project.searchconsole.searchdata_url_impression`
   WHERE data_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 14 DAY)
     AND data_date < DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY)
-    AND REGEXP_CONTAINS(url, r'/assisted-living/[^/]+/cities/[^/]+/?$')
+    AND REGEXP_CONTAINS(url, r'/senior-living/[^/]+/[^/]+/[^/]+/?$')
   GROUP BY url
 )
 SELECT
@@ -56,13 +57,13 @@ LIMIT 500;
 
 -- 3) Priority internal-link targets: state hubs with rising impressions but weak CTR
 SELECT
-  REGEXP_EXTRACT(url, r'/assisted-living/([^/]+)/') AS state_slug,
+  REGEXP_EXTRACT(url, r'/senior-living/([^/]+)/') AS state_slug,
   SUM(impressions) AS impressions_7d,
   SUM(clicks) AS clicks_7d,
   SAFE_DIVIDE(SUM(clicks), NULLIF(SUM(impressions), 0)) AS ctr
 FROM `your_project.searchconsole.searchdata_url_impression`
 WHERE data_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY)
-  AND REGEXP_CONTAINS(url, r'/assisted-living/[^/]+/?$')
+  AND REGEXP_CONTAINS(url, r'/senior-living/[^/]+/?$')
 GROUP BY state_slug
 HAVING impressions_7d >= 500
 ORDER BY ctr ASC, impressions_7d DESC;

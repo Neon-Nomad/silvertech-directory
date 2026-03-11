@@ -22,12 +22,12 @@ export const IndianaPage: React.FC = () => {
       <Helmet>
         <title>Assisted Living in Indiana | State Guide & Licensing</title>
         <meta name="description" content="Complete guide to assisted living in Indiana. Medicaid waivers, licensing rules (IDOH), financial assistance, and how to file complaints." />
-        <link rel="canonical" href="https://silvertechdirectory.com/assisted-living/indiana/" />
+        <link rel="canonical" href="https://silvertechdirectory.com/senior-living/indiana/" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="SilverTech Directory" />
         <meta property="og:title" content="Assisted Living in Indiana | State Guide & Licensing" />
         <meta property="og:description" content="Complete guide to assisted living in Indiana. Medicaid waivers, licensing rules (IDOH), financial assistance, and how to file complaints." />
-        <meta property="og:url" content="https://silvertechdirectory.com/assisted-living/indiana/" />
+        <meta property="og:url" content="https://silvertechdirectory.com/senior-living/indiana/" />
         <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Assisted Living in Indiana | State Guide & Licensing" />
@@ -38,7 +38,7 @@ export const IndianaPage: React.FC = () => {
       {/* Hero Section */}
       <div className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <Breadcrumbs items={[{ label: 'Indiana', path: '/assisted-living/indiana' }]} />
+          <Breadcrumbs items={[{ label: 'Indiana', path: '/senior-living/indiana/' }]} />
           
           <h1 className="text-4xl font-bold text-slate-900 mt-6 mb-4">
             Assisted Living in Indiana: A Complete Guide for Families
@@ -342,7 +342,7 @@ export const IndianaPage: React.FC = () => {
                 {INDIANA_CITIES.map((city) => (
                   <Link 
                     key={city}
-                    to={`/assisted-living/indiana/cities/${city.toLowerCase().replace(' ', '-')}`}
+                    to={`/senior-living/indiana/${city.toLowerCase().replace(' ', '-')}/assisted-living/`}
                     className="block p-4 bg-slate-50 rounded-lg text-center hover:bg-primary-50 hover:text-primary-700 transition-colors"
                   >
                     <span className="font-medium text-slate-900">{city}</span>

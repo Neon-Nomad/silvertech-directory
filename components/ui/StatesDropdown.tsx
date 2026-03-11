@@ -13,7 +13,7 @@ export const StatesDropdown: React.FC<StatesDropdownProps> = ({ className = '', 
   const handleStateChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const slug = e.target.value;
     if (slug) {
-      navigate(`/assisted-living/${slug}`);
+      navigate(`/senior-living/${slug}/`);
       onStateSelect?.();
     }
   };

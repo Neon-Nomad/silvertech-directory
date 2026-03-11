@@ -27,6 +27,9 @@
     "seed:il": "npx tsx scripts/seed_facilities.ts IL",
     "seed:national": "npx tsx scripts/seed_national.ts",
     "seed:claimed-facility": "npx tsx scripts/seed_claimed_facility_dashboard.ts",
+    "import:facilities:csv": "npx tsx scripts/import_facilities_from_csv.ts",
+    "geocode:facilities": "npx tsx scripts/geocode_facilities.ts",
+    "backfill:care-types": "npx tsx scripts/backfill_facility_care_types_from_csv.ts",
     "sitemap": "npx tsx scripts/generate_sitemaps.ts",
     "predeploy": "npm run build:hybrid",
     "deploy": "gh-pages -d dist",
@@ -63,6 +66,8 @@
     "seo:audit-html": "tsx scripts/audit_html_budget.ts"
   },
   "dependencies": {
+    "@astrojs/react": "^5.0.0",
+    "@astrojs/sitemap": "^3.7.1",
     "@stripe/react-stripe-js": "^5.4.1",
     "@stripe/stripe-js": "^8.5.3",
     "@supabase/supabase-js": "^2.86.0",
@@ -72,6 +77,7 @@
     "framer-motion": "^12.23.24",
     "gsap": "^3.13.0",
     "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3",
     "lucide-react": "^0.554.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

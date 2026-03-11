@@ -483,8 +483,8 @@ export const FacilityDetails: React.FC = () => {
           <Breadcrumbs items={[
             { label: 'Home', path: '/' },
             { label: 'Directory', path: '/search' },
-            { label: facility.state, path: `/assisted-living/${stateSlug}` },
-            { label: facility.city, path: `/assisted-living/${stateSlug}/cities/${citySlug}` },
+            { label: facility.state, path: `/senior-living/${stateSlug}/` },
+            { label: facility.city, path: `/senior-living/${stateSlug}/${citySlug}/assisted-living/` },
             { label: facility.name }
           ]} />
         </div>
@@ -821,7 +821,7 @@ export const FacilityDetails: React.FC = () => {
               >
                 Compare similar homes
               </Button>
-              <Button variant="outline" className="border-warm-gray hover:bg-warm-gray" onClick={() => navigate(`/assisted-living/${stateSlug}/cities/${citySlug}`)}>
+              <Button variant="outline" className="border-warm-gray hover:bg-warm-gray" onClick={() => navigate(`/senior-living/${stateSlug}/${citySlug}/assisted-living/`)}>
                 View all in {facility.city}
               </Button>
             </div>
@@ -960,7 +960,7 @@ export const FacilityDetails: React.FC = () => {
               <Button
                 variant="outline"
                 className="w-full border-warm-gray hover:bg-warm-gray"
-                onClick={() => navigate(`/assisted-living/${stateSlug}/cities/${citySlug}`)}
+                onClick={() => navigate(`/senior-living/${stateSlug}/${citySlug}/assisted-living/`)}
               >
                 Back to {facility.city} list
               </Button>

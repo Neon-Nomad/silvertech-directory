@@ -1,315 +1,394 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { createClient } from '@supabase/supabase-js';
 import * as dotenv from 'dotenv';
 
-// Load env vars
 dotenv.config();
 
-// ES Module fix for __dirname
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const BASE_URL = 'https://silvertechdirectory.com';
 const PUBLIC_DIR = path.join(__dirname, '../public');
+const buildTime = new Date().toISOString();
 
-// Supabase Setup
-const supabaseUrl = process.env.VITE_SUPABASE_URL;
+const CARE_TYPE_CITY_CHUNK_SIZE = 50000;
+const DEFAULT_CHUNK_SIZE = 50000;
+const FACILITY_CHUNK_SIZE = 5000;
+
+const STATE_PAGE_PRIORITY = 1.0;
+const CITY_PAGE_PRIORITY = 0.9;
+const CARE_TYPE_CITY_PRIORITY = 0.8;
+
+const supabaseUrl = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_ANON_KEY;
 
 if (!supabaseUrl || !supabaseKey) {
-    console.error('Missing Supabase credentials. Ensure .env has VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY');
-    process.exit(1);
+  console.error(
+    'Missing Supabase credentials. Ensure .env has SUPABASE_URL/VITE_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY or VITE_SUPABASE_ANON_KEY.',
+  );
+  process.exit(1);
 }
 
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = createClient(supabaseUrl, supabaseKey, {
+  auth: { persistSession: false },
+});
 
-// Ensure public dir exists
 if (!fs.existsSync(PUBLIC_DIR)) {
-    fs.mkdirSync(PUBLIC_DIR, { recursive: true });
+  fs.mkdirSync(PUBLIC_DIR, { recursive: true });
 }
 
-const buildTime = new Date().toISOString();
+type SitemapEntry = {
+  url: string;
+  changefreq: 'daily' | 'weekly' | 'monthly';
+  priority: number;
+};
 
-// Helper to write XML
-const writeSitemap = (filename: string, urls: string[]) => {
-    const content = `<?xml version="1.0" encoding="UTF-8"?>
+type FacilitySeedRow = {
+  id: string;
+  name: string | null;
+  city: string | null;
+  state: string | null;
+  address_line1: string | null;
+  postal_code: string | null;
+  phone: string | null;
+  state_license_number: string | null;
+};
+
+const escapeXml = (value: string): string =>
+  value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+
+const formatPriority = (priority: number): string => priority.toFixed(1);
+
+const toSlug = (value: string): string =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
+const hashString = (value: string): string => {
+  let hash = 5381;
+  for (let i = 0; i < value.length; i += 1) {
+    hash = (hash * 33) ^ value.charCodeAt(i);
+  }
+  return (hash >>> 0).toString(36);
+};
+
+const buildFacilityRouteId = (facility: FacilitySeedRow): string => {
+  const keyParts = [
+    facility.name || '',
+    facility.city || '',
+    facility.state || '',
+    facility.state_license_number || '',
+    facility.phone || '',
+    facility.address_line1 || '',
+    facility.postal_code || '',
+    facility.id || '',
+  ];
+  const key = keyParts.filter(Boolean).join('|');
+  const baseParts = [
+    facility.name || '',
+    facility.city || '',
+    facility.state || '',
+    facility.state_license_number || facility.postal_code || facility.phone || '',
+  ];
+  const base = toSlug(baseParts.filter(Boolean).join(' '));
+  const hash = hashString(key || facility.id);
+  return base ? `${base}-${hash}` : `facility-${hash}`;
+};
+
+const writeSitemap = (filename: string, entries: SitemapEntry[]): void => {
+  const content = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(url => `  <url>
-    <loc>${url}</loc>
+${entries
+  .map(
+    (entry) => `  <url>
+    <loc>${escapeXml(entry.url)}</loc>
     <lastmod>${buildTime}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>`).join('\n')}
+    <changefreq>${entry.changefreq}</changefreq>
+    <priority>${formatPriority(entry.priority)}</priority>
+  </url>`,
+  )
+  .join('\n')}
 </urlset>`;
-    fs.writeFileSync(path.join(PUBLIC_DIR, filename), content);
-    console.log(`Generated ${filename} with ${urls.length} URLs`);
+
+  fs.writeFileSync(path.join(PUBLIC_DIR, filename), content);
+  console.log(`Generated ${filename} with ${entries.length} URLs`);
 };
 
-const writeSitemapIndex = (filenames: string[]) => {
-    const content = `<?xml version="1.0" encoding="UTF-8"?>
+const writeSitemapIndex = (filename: string, sitemapFiles: string[]): void => {
+  const content = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${filenames.map(filename => `  <sitemap>
-    <loc>${BASE_URL}/${filename}</loc>
+${sitemapFiles
+  .map(
+    (sitemapFile) => `  <sitemap>
+    <loc>${BASE_URL}/${sitemapFile}</loc>
     <lastmod>${buildTime}</lastmod>
-  </sitemap>`).join('\n')}
+  </sitemap>`,
+  )
+  .join('\n')}
 </sitemapindex>`;
-    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-index.xml'), content);
-    console.log(`Generated sitemap-index.xml linking to ${filenames.length} sitemaps`);
+
+  fs.writeFileSync(path.join(PUBLIC_DIR, filename), content);
+  console.log(`Generated ${filename} linking to ${sitemapFiles.length} files`);
 };
 
-const removeStaleChunkFiles = (prefix: string) => {
-    const pattern = new RegExp(`^${prefix}-\\d{4}\\.xml$`);
-    const staleFiles = fs
-        .readdirSync(PUBLIC_DIR)
-        .filter((file) => pattern.test(file));
-
-    for (const file of staleFiles) {
-        fs.unlinkSync(path.join(PUBLIC_DIR, file));
-    }
-
-    if (staleFiles.length > 0) {
-        console.log(`Removed ${staleFiles.length} stale ${prefix} chunk file(s)`);
-    }
+const removeFileIfExists = (filename: string): void => {
+  const fullPath = path.join(PUBLIC_DIR, filename);
+  if (fs.existsSync(fullPath)) {
+    fs.unlinkSync(fullPath);
+  }
 };
 
-const writeChunkedSitemapGroup = (baseName: string, urls: string[], chunkSize = 45000) => {
-    removeStaleChunkFiles(baseName);
-    const groupIndexFilename = `${baseName}.xml`;
+const removeStaleChunkFiles = (prefix: string): void => {
+  const escapedPrefix = prefix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = new RegExp(`^${escapedPrefix}-\\d+\\.xml$`);
+  const staleFiles = fs.readdirSync(PUBLIC_DIR).filter((file) => pattern.test(file));
 
-    if (urls.length <= chunkSize) {
-        writeSitemap(groupIndexFilename, urls);
-        return groupIndexFilename;
-    }
+  for (const file of staleFiles) {
+    fs.unlinkSync(path.join(PUBLIC_DIR, file));
+  }
 
-    const chunkFiles: string[] = [];
-    for (let i = 0; i < urls.length; i += chunkSize) {
-        const chunk = urls.slice(i, i + chunkSize);
-        const filename = `${baseName}-${String(Math.floor(i / chunkSize) + 1).padStart(4, '0')}.xml`;
-        writeSitemap(filename, chunk);
-        chunkFiles.push(filename);
-    }
-
-    const nestedIndex = `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${chunkFiles.map(filename => `  <sitemap>
-    <loc>${BASE_URL}/${filename}</loc>
-    <lastmod>${buildTime}</lastmod>
-  </sitemap>`).join('\n')}
-</sitemapindex>`;
-    fs.writeFileSync(path.join(PUBLIC_DIR, groupIndexFilename), nestedIndex);
-    console.log(`Generated ${groupIndexFilename} linking to ${chunkFiles.length} chunk files`);
-
-    return groupIndexFilename;
+  if (staleFiles.length > 0) {
+    console.log(`Removed ${staleFiles.length} stale ${prefix} chunk file(s)`);
+  }
 };
 
-// State Data
-const ALL_STATES = [
-    { name: "Alabama", abbreviation: "AL", slug: "alabama" },
-    { name: "Alaska", abbreviation: "AK", slug: "alaska" },
-    { name: "Arizona", abbreviation: "AZ", slug: "arizona" },
-    { name: "Arkansas", abbreviation: "AR", slug: "arkansas" },
-    { name: "California", abbreviation: "CA", slug: "california" },
-    { name: "Colorado", abbreviation: "CO", slug: "colorado" },
-    { name: "Connecticut", abbreviation: "CT", slug: "connecticut" },
-    { name: "Delaware", abbreviation: "DE", slug: "delaware" },
-    { name: "Florida", abbreviation: "FL", slug: "florida" },
-    { name: "Georgia", abbreviation: "GA", slug: "georgia" },
-    { name: "Hawaii", abbreviation: "HI", slug: "hawaii" },
-    { name: "Idaho", abbreviation: "ID", slug: "idaho" },
-    { name: "Illinois", abbreviation: "IL", slug: "illinois" },
-    { name: "Indiana", abbreviation: "IN", slug: "indiana" },
-    { name: "Iowa", abbreviation: "IA", slug: "iowa" },
-    { name: "Kansas", abbreviation: "KS", slug: "kansas" },
-    { name: "Kentucky", abbreviation: "KY", slug: "kentucky" },
-    { name: "Louisiana", abbreviation: "LA", slug: "louisiana" },
-    { name: "Maine", abbreviation: "ME", slug: "maine" },
-    { name: "Maryland", abbreviation: "MD", slug: "maryland" },
-    { name: "Massachusetts", abbreviation: "MA", slug: "massachusetts" },
-    { name: "Michigan", abbreviation: "MI", slug: "michigan" },
-    { name: "Minnesota", abbreviation: "MN", slug: "minnesota" },
-    { name: "Mississippi", abbreviation: "MS", slug: "mississippi" },
-    { name: "Missouri", abbreviation: "MO", slug: "missouri" },
-    { name: "Montana", abbreviation: "MT", slug: "montana" },
-    { name: "Nebraska", abbreviation: "NE", slug: "nebraska" },
-    { name: "Nevada", abbreviation: "NV", slug: "nevada" },
-    { name: "New Hampshire", abbreviation: "NH", slug: "new-hampshire" },
-    { name: "New Jersey", abbreviation: "NJ", slug: "new-jersey" },
-    { name: "New Mexico", abbreviation: "NM", slug: "new-mexico" },
-    { name: "New York", abbreviation: "NY", slug: "new-york" },
-    { name: "North Carolina", abbreviation: "NC", slug: "north-carolina" },
-    { name: "North Dakota", abbreviation: "ND", slug: "north-dakota" },
-    { name: "Ohio", abbreviation: "OH", slug: "ohio" },
-    { name: "Oklahoma", abbreviation: "OK", slug: "oklahoma" },
-    { name: "Oregon", abbreviation: "OR", slug: "oregon" },
-    { name: "Pennsylvania", abbreviation: "PA", slug: "pennsylvania" },
-    { name: "Rhode Island", abbreviation: "RI", slug: "rhode-island" },
-    { name: "South Carolina", abbreviation: "SC", slug: "south-carolina" },
-    { name: "South Dakota", abbreviation: "SD", slug: "south-dakota" },
-    { name: "Tennessee", abbreviation: "TN", slug: "tennessee" },
-    { name: "Texas", abbreviation: "TX", slug: "texas" },
-    { name: "Utah", abbreviation: "UT", slug: "utah" },
-    { name: "Vermont", abbreviation: "VT", slug: "vermont" },
-    { name: "Virginia", abbreviation: "VA", slug: "virginia" },
-    { name: "Washington", abbreviation: "WA", slug: "washington" },
-    { name: "West Virginia", abbreviation: "WV", slug: "west-virginia" },
-    { name: "Wisconsin", abbreviation: "WI", slug: "wisconsin" },
-    { name: "Wyoming", abbreviation: "WY", slug: "wyoming" }
-];
+const uniqueEntries = (entries: SitemapEntry[]): SitemapEntry[] => {
+  const byUrl = new Map<string, SitemapEntry>();
+  for (const entry of entries) {
+    if (!byUrl.has(entry.url)) byUrl.set(entry.url, entry);
+  }
+  return Array.from(byUrl.values()).sort((a, b) => a.url.localeCompare(b.url));
+};
+
+type ChunkOptions = {
+  baseName: string;
+  entries: SitemapEntry[];
+  chunkSize?: number;
+  forceNumbered?: boolean;
+};
+
+const writeChunkedSitemaps = ({
+  baseName,
+  entries,
+  chunkSize = DEFAULT_CHUNK_SIZE,
+  forceNumbered = false,
+}: ChunkOptions): string[] => {
+  removeStaleChunkFiles(baseName);
+  removeFileIfExists(`${baseName}.xml`);
+
+  if (entries.length === 0) return [];
+
+  if (!forceNumbered && entries.length <= chunkSize) {
+    const singleFile = `${baseName}.xml`;
+    writeSitemap(singleFile, entries);
+    return [singleFile];
+  }
+
+  const files: string[] = [];
+  for (let i = 0; i < entries.length; i += chunkSize) {
+    const chunk = entries.slice(i, i + chunkSize);
+    const index = Math.floor(i / chunkSize) + 1;
+    const filename = `${baseName}-${index}.xml`;
+    writeSitemap(filename, chunk);
+    files.push(filename);
+  }
+
+  return files;
+};
+
+const toStaticEntry = (url: string, priority = 0.6): SitemapEntry => ({
+  url,
+  changefreq: 'weekly',
+  priority,
+});
+
+const loadFacilityRows = async (): Promise<Array<{ routeId: string }>> => {
+  console.log('Loading facility sitemap seeds directly from Supabase facilities table...');
+  const allFacilities: FacilitySeedRow[] = [];
+  const pageSize = 1000;
+  let page = 0;
+
+  while (true) {
+    const { data, error } = await supabase
+      .from('facilities')
+      .select('id,name,city,state,address_line1,postal_code,phone,state_license_number,created_at')
+      .order('created_at', { ascending: true })
+      .range(page * pageSize, (page + 1) * pageSize - 1);
+
+    if (error) {
+      throw error;
+    }
+
+    if (!data || data.length === 0) {
+      break;
+    }
+
+    allFacilities.push(...(data as FacilitySeedRow[]));
+    console.log(`Fetched batch ${page + 1}: ${data.length} facilities`);
+
+    if (data.length < pageSize) {
+      break;
+    }
+
+    page += 1;
+  }
+
+  const seenRouteIds = new Map<string, number>();
+  const routeSeeds = allFacilities.map((facility) => {
+    const baseRouteId = buildFacilityRouteId(facility);
+    const currentCount = seenRouteIds.get(baseRouteId) || 0;
+    seenRouteIds.set(baseRouteId, currentCount + 1);
+    const routeId = currentCount === 0 ? baseRouteId : `${baseRouteId}-${currentCount + 1}`;
+    return { routeId };
+  });
+
+  console.log(
+    `Loaded ${routeSeeds.length} facilities from Supabase (${seenRouteIds.size} unique base facility route ids).`,
+  );
+  return routeSeeds;
+};
 
 async function generateSitemaps() {
-    console.log('Starting sitemap generation...');
-    removeStaleChunkFiles('sitemap-facilities');
-    removeStaleChunkFiles('sitemap-cities');
-    removeStaleChunkFiles('sitemap-states');
+  console.log('Starting sitemap generation...');
 
-    // 1. Static & Hub Pages
-    const staticUrls = [
-        `${BASE_URL}/`,
-        `${BASE_URL}/search`,
-        `${BASE_URL}/tools/pricing-audit`,
-        `${BASE_URL}/claim-business`,
-        `${BASE_URL}/survey`,
-        `${BASE_URL}/pricing`,
-        `${BASE_URL}/providers`,
-        `${BASE_URL}/products`,
-        `${BASE_URL}/products/affiliate`,
-        `${BASE_URL}/faq`,
-        `${BASE_URL}/advertise`,
-        `${BASE_URL}/honest-care`,
-        `${BASE_URL}/blog`,
-        `${BASE_URL}/guides/`,
-        `${BASE_URL}/guides/hidden-costs-of-memory-care/`,
-        `${BASE_URL}/guides/guilt-about-placing-parent-in-memory-care/`,
-        `${BASE_URL}/guides/grief-while-parent-is-still-alive-dementia/`,
-        `${BASE_URL}/guides/caregiver-resentment-toward-parent/`,
-        `${BASE_URL}/guides/sibling-not-helping-parent-care/`,
-        `${BASE_URL}/guides/caregiver-at-breaking-point/`,
-        // Product Categories
-        `${BASE_URL}/products/bathroom-safety`,
-        `${BASE_URL}/products/mobility-aids`,
-        `${BASE_URL}/products/bedroom-comfort`,
-        `${BASE_URL}/products/kitchen-aids`,
-        `${BASE_URL}/products/monitoring-safety`,
-        `${BASE_URL}/products/personal-hygiene`,
-        `${BASE_URL}/products/medical-supplies`,
-        `${BASE_URL}/products/dementia-care`,
-        `${BASE_URL}/products/daily-living-aids`,
-        `${BASE_URL}/products/outdoor-travel`
-    ];
+  const staticEntries = uniqueEntries(
+    [
+      `${BASE_URL}/`,
+      `${BASE_URL}/senior-living/`,
+      `${BASE_URL}/search`,
+      `${BASE_URL}/tools/pricing-audit`,
+      `${BASE_URL}/claim-business`,
+      `${BASE_URL}/survey`,
+      `${BASE_URL}/pricing`,
+      `${BASE_URL}/providers`,
+      `${BASE_URL}/products`,
+      `${BASE_URL}/products/affiliate`,
+      `${BASE_URL}/faq`,
+      `${BASE_URL}/advertise`,
+      `${BASE_URL}/honest-care`,
+      `${BASE_URL}/blog`,
+      `${BASE_URL}/guides/`,
+      `${BASE_URL}/guides/hidden-costs-of-memory-care/`,
+      `${BASE_URL}/guides/guilt-about-placing-parent-in-memory-care/`,
+      `${BASE_URL}/guides/grief-while-parent-is-still-alive-dementia/`,
+      `${BASE_URL}/guides/caregiver-resentment-toward-parent/`,
+      `${BASE_URL}/guides/sibling-not-helping-parent-care/`,
+      `${BASE_URL}/guides/caregiver-at-breaking-point/`,
+      `${BASE_URL}/products/bathroom-safety`,
+      `${BASE_URL}/products/mobility-aids`,
+      `${BASE_URL}/products/bedroom-comfort`,
+      `${BASE_URL}/products/kitchen-aids`,
+      `${BASE_URL}/products/monitoring-safety`,
+      `${BASE_URL}/products/personal-hygiene`,
+      `${BASE_URL}/products/medical-supplies`,
+      `${BASE_URL}/products/dementia-care`,
+      `${BASE_URL}/products/daily-living-aids`,
+      `${BASE_URL}/products/outdoor-travel`,
+    ].map((url) => toStaticEntry(url, url === `${BASE_URL}/` ? 0.7 : 0.6)),
+  );
 
-    // 2. Fetch Facilities
-    console.log('Loading facilities for sitemaps...');
-    const facilityIndexPath = path.join(PUBLIC_DIR, 'facilities_index.json');
-    let facilities: any[] = [];
-    if (fs.existsSync(facilityIndexPath)) {
-        facilities = JSON.parse(fs.readFileSync(facilityIndexPath, 'utf-8'));
-        console.log(`Loaded ${facilities.length} facilities from facilities_index.json.`);
-    } else {
-        console.log('facilities_index.json not found. Falling back to Supabase.');
-        let allFacilities: any[] = [];
-        let page = 0;
-        const pageSize = 1000;
-        let hasMore = true;
+  console.log('Loading state/city/care-type path seeds from data contract...');
+  const { getAllStates, getAllCities, getAllCityCareCombos } = await import(
+    '../astro-src/lib/seniorDataContract'
+  );
+  const [states, cities, cityCareCombos, facilities] = await Promise.all([
+    getAllStates(),
+    getAllCities(),
+    getAllCityCareCombos(),
+    loadFacilityRows(),
+  ]);
 
-        while (hasMore) {
-            const { data, error } = await supabase
-                .from('facilities')
-                .select('id, state, city')
-                .range(page * pageSize, (page + 1) * pageSize - 1);
+  const stateEntries = uniqueEntries(
+    states.map((stateSlug) => ({
+      url: `${BASE_URL}/senior-living/${stateSlug}/`,
+      changefreq: 'weekly',
+      priority: STATE_PAGE_PRIORITY,
+    })),
+  );
 
-            if (error) {
-                console.error('Error fetching facilities:', error);
-                break;
-            }
+  const cityEntries = uniqueEntries(
+    cities.map(({ state, city }) => ({
+      url: `${BASE_URL}/senior-living/${state}/${city}/`,
+      changefreq: 'weekly',
+      priority: CITY_PAGE_PRIORITY,
+    })),
+  );
 
-            if (data && data.length > 0) {
-                allFacilities = [...allFacilities, ...data];
-                console.log(`Fetched batch ${page + 1}: ${data.length} facilities`);
-                if (data.length < pageSize) hasMore = false;
-                page++;
-            } else {
-                hasMore = false;
-            }
-        }
+  const careTypeCityEntries = uniqueEntries(
+    cityCareCombos.map(({ state, city, careTypeSlug }) => ({
+      url: `${BASE_URL}/senior-living/${state}/${city}/${careTypeSlug}/`,
+      changefreq: 'weekly',
+      priority: CARE_TYPE_CITY_PRIORITY,
+    })),
+  );
 
-        facilities = allFacilities;
-        console.log(`Fetched total ${facilities.length} facilities.`);
-    }
+  const facilityEntries = uniqueEntries(
+    facilities
+      .filter((facility): facility is { routeId: string } => Boolean(facility?.routeId))
+      .map((facility) => ({
+        url: `${BASE_URL}/facility/${facility.routeId}/`,
+        changefreq: 'weekly',
+        priority: 0.7,
+      })),
+  );
 
-    const stateUrls: string[] = [];
-    const cityUrls: Set<string> = new Set();
-    const facilityUrls: string[] = [];
-    const activeStates = new Set<string>();
+  if (stateEntries.length === 0 || cityEntries.length === 0 || careTypeCityEntries.length === 0) {
+    throw new Error(
+      `Data contract returned empty senior-living seeds (states=${stateEntries.length}, cities=${cityEntries.length}, careTypeCities=${careTypeCityEntries.length}). Refusing to emit incomplete sitemap.`,
+    );
+  }
 
-    if (facilities) {
-        for (const facility of facilities) {
-            if (!facility.state) continue;
+  console.log(
+    `Prepared URLs: states=${stateEntries.length}, cities=${cityEntries.length}, care-type-cities=${careTypeCityEntries.length}, facilities=${facilityEntries.length}`,
+  );
 
-            activeStates.add(facility.state);
+  writeSitemap('sitemap-static.xml', staticEntries);
 
-            // Facility Page (canonical slug id from index if available)
-            facilityUrls.push(`${BASE_URL}/facility/${facility.id}/`);
+  const stateSitemapFiles = writeChunkedSitemaps({
+    baseName: 'sitemap-states',
+    entries: stateEntries,
+  });
+  const citySitemapFiles = writeChunkedSitemaps({
+    baseName: 'sitemap-cities',
+    entries: cityEntries,
+  });
+  const careTypeSitemapFiles = writeChunkedSitemaps({
+    baseName: 'sitemap-care-type-cities',
+    entries: careTypeCityEntries,
+    chunkSize: CARE_TYPE_CITY_CHUNK_SIZE,
+    forceNumbered: true,
+  });
+  const facilitySitemapFiles = writeChunkedSitemaps({
+    baseName: 'sitemap-facilities',
+    entries: facilityEntries,
+    chunkSize: FACILITY_CHUNK_SIZE,
+  });
 
-            // City Page
-            if (facility.city && facility.state) {
-                const stateDef = ALL_STATES.find(s => s.abbreviation === facility.state);
-                if (stateDef) {
-                    const citySlug = facility.city.trim().toLowerCase().replace(/ /g, '-');
-                    cityUrls.add(`${BASE_URL}/assisted-living/${stateDef.slug}/cities/${citySlug}/`);
-                }
-            }
-        }
-    }
+  const sitemapFiles = [
+    'sitemap-static.xml',
+    ...stateSitemapFiles,
+    ...citySitemapFiles,
+    ...careTypeSitemapFiles,
+    ...facilitySitemapFiles,
+  ];
 
-    // Generate State URLs for active states
-    for (const abbr of activeStates) {
-        const stateDef = ALL_STATES.find(s => s.abbreviation === abbr);
-        if (stateDef) {
-            const slug = stateDef.slug;
-            // State Hub Pages
-            stateUrls.push(`${BASE_URL}/states/${slug}`);
-            stateUrls.push(`${BASE_URL}/states/${slug}/regulations`);
-            stateUrls.push(`${BASE_URL}/states/${slug}/medicaid`);
-            stateUrls.push(`${BASE_URL}/states/${slug}/rules`);
-            stateUrls.push(`${BASE_URL}/states/${slug}/ombudsman`);
+  writeSitemapIndex('sitemap-index.xml', sitemapFiles);
+  writeSitemapIndex('sitemap.xml', sitemapFiles);
 
-            // Assisted Living State Page
-            stateUrls.push(`${BASE_URL}/assisted-living/${slug}/`);
-        }
-    }
-
-    // Write Files
-    writeSitemap('sitemap-static.xml', staticUrls);
-    const statesIndexFile = writeChunkedSitemapGroup('sitemap-states', stateUrls);
-    const citiesIndexFile = writeChunkedSitemapGroup('sitemap-cities', Array.from(cityUrls), 45000);
-    const facilitiesIndexFile = writeChunkedSitemapGroup('sitemap-facilities', facilityUrls, 5000);
-
-    // Master Index
-    const masterIndexContent = `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>${BASE_URL}/sitemap-static.xml</loc>
-    <lastmod>${buildTime}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${BASE_URL}/${statesIndexFile}</loc>
-    <lastmod>${buildTime}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${BASE_URL}/${citiesIndexFile}</loc>
-    <lastmod>${buildTime}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${BASE_URL}/${facilitiesIndexFile}</loc>
-    <lastmod>${buildTime}</lastmod>
-  </sitemap>
-</sitemapindex>`;
-    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap.xml'), masterIndexContent);
-    console.log('Generated sitemap.xml (Master Index)');
-
-    console.log('Sitemap generation complete!');
+  console.log('Sitemap generation complete.');
+  console.log('Submit only https://silvertechdirectory.com/sitemap-index.xml in Search Console.');
 }
 
-generateSitemaps();
+generateSitemaps().catch((error) => {
+  console.error('Failed to generate sitemaps:', error);
+  process.exit(1);
+});

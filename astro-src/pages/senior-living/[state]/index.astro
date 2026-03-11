@@ -1,0 +1,445 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { ALL_STATES } from '../../../../src/data/states';
+import { getAllStates, getFacilitiesByState } from '../../../lib/seniorDataContract';
+import {
+  getSeniorLivingState,
+  getCareTypes,
+  getCareTypeLabel,
+  getRegulatoryContext,
+  getBuildDate,
+  formatDateLong,
+  formatCurrency,
+  getCostBand,
+} from '../../../lib/seniorLivingData';
+
+export async function getStaticPaths() {
+  const states = await getAllStates();
+  return states.map((state) => ({ params: { state } }));
+}
+
+const { state: stateSlug } = Astro.params;
+const toTitleCase = (value: string) =>
+  value
+    .split('-')
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+
+const stateMetaBySlug = new Map(ALL_STATES.map((state) => [state.slug, state]));
+const stateMetaByAbbr = new Map(ALL_STATES.map((state) => [state.abbreviation.toLowerCase(), state]));
+const resolvedStateMeta =
+  stateSlug
+    ? stateMetaBySlug.get(stateSlug) || stateMetaByAbbr.get(stateSlug.toLowerCase()) || null
+    : null;
+
+const buildFallbackStateData = async () => {
+  if (!stateSlug) return null;
+
+  const normalizedFacilities = await getFacilitiesByState(stateSlug);
+  if (normalizedFacilities.length === 0) return null;
+
+  const facilities = normalizedFacilities.map((facility) => ({
+    id: facility.id,
+    name: facility.name,
+    city: facility.city,
+    state: facility.state,
+    websiteUrl: facility.websiteUrl,
+    phone: facility.phone,
+    verifiedPhone: null,
+    careTypes: facility.careTypes,
+    ownershipType: facility.ownershipType,
+    postalCode: facility.postalCode,
+    medicareCertified: facility.medicareCertified,
+  }));
+
+  const cityCounts = new Map<string, { cityName: string; citySlug: string; facilityCount: number }>();
+  for (const facility of facilities) {
+    const citySlug = facility.city
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/(^-|-$)/g, '');
+    if (!citySlug) continue;
+    if (!cityCounts.has(citySlug)) {
+      cityCounts.set(citySlug, { cityName: facility.city, citySlug, facilityCount: 0 });
+    }
+    cityCounts.get(citySlug)!.facilityCount += 1;
+  }
+
+  const careTypeCounts: Record<string, number> = {};
+  for (const facility of facilities) {
+    for (const careType of facility.careTypes) {
+      careTypeCounts[careType] = (careTypeCounts[careType] || 0) + 1;
+    }
+  }
+
+  const withPhone = facilities.filter((facility) => Boolean(facility.phone)).length;
+  const withWebsite = facilities.filter((facility) => Boolean(facility.websiteUrl)).length;
+  const medicareCertifiedCount = facilities.filter((facility) => facility.medicareCertified).length;
+
+  const zipCounts = new Map<string, number>();
+  for (const facility of facilities) {
+    const zip = (facility.postalCode || '').trim();
+    if (!zip) continue;
+    zipCounts.set(zip, (zipCounts.get(zip) || 0) + 1);
+  }
+  const topZips = Array.from(zipCounts.entries())
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .slice(0, 6)
+    .map(([zip]) => zip);
+
+  const ownershipCounts = {
+    forProfit: facilities.filter((facility) => facility.ownershipType === 'for-profit').length,
+    nonProfit: facilities.filter((facility) => facility.ownershipType === 'nonprofit').length,
+    government: facilities.filter((facility) => facility.ownershipType === 'government').length,
+  };
+
+  const totalFacilities = facilities.length;
+  const stateAbbr = resolvedStateMeta?.abbreviation || facilities[0]?.state || stateSlug.toUpperCase();
+  const resolvedSlug = resolvedStateMeta?.slug || stateSlug;
+  const stateName =
+    resolvedStateMeta?.name || (stateSlug.length === 2 ? stateSlug.toUpperCase() : toTitleCase(stateSlug));
+
+  return {
+    stateName,
+    stateSlug: resolvedSlug,
+    stateAbbr,
+    facilities,
+    facilityCount: totalFacilities,
+    cityCount: cityCounts.size,
+    topCities: Array.from(cityCounts.values())
+      .sort((a, b) => b.facilityCount - a.facilityCount || a.cityName.localeCompare(b.cityName))
+      .slice(0, 24)
+      .map((city) => ({
+        cityName: city.cityName,
+        citySlug: city.citySlug,
+        facilityCount: city.facilityCount,
+        stateSlug: resolvedSlug,
+        stateAbbr,
+      })),
+    stats: {
+      totalFacilities,
+      withPhone,
+      withWebsite,
+      phoneCoveragePct: totalFacilities === 0 ? 0 : Math.round((withPhone / totalFacilities) * 100),
+      websiteCoveragePct: totalFacilities === 0 ? 0 : Math.round((withWebsite / totalFacilities) * 100),
+      dominantCareType:
+        Object.entries(careTypeCounts).sort((a, b) => b[1] - a[1])[0]?.[0] || 'assisted-living',
+      careTypeCounts,
+      medicareCertifiedPct:
+        totalFacilities === 0 ? 0 : Math.round((medicareCertifiedCount / totalFacilities) * 100),
+      topZips,
+      ownershipSplitPct: {
+        forProfit: totalFacilities === 0 ? 0 : Math.round((ownershipCounts.forProfit / totalFacilities) * 100),
+        nonProfit: totalFacilities === 0 ? 0 : Math.round((ownershipCounts.nonProfit / totalFacilities) * 100),
+        government: totalFacilities === 0 ? 0 : Math.round((ownershipCounts.government / totalFacilities) * 100),
+      },
+    },
+  };
+};
+
+let stateData = stateSlug ? getSeniorLivingState(stateSlug) : null;
+if (!stateData) {
+  stateData = await buildFallbackStateData();
+}
+
+if (!stateData) {
+  throw new Error(`State page not found for slug: ${stateSlug || 'unknown'}`);
+}
+
+const buildDate = getBuildDate();
+const buildDateLabel = formatDateLong(buildDate);
+const title = `Senior Living in ${stateData.stateName} | Assisted Living, Memory Care & Nursing Homes`;
+const description = `Statewide senior living guide for ${stateData.stateName} with city-level facility coverage, care type mix, regulatory contacts, and public assistance links.`;
+const canonical = `https://silvertechdirectory.com/senior-living/${stateData.stateSlug}/`;
+
+const careTypes = getCareTypes()
+  .map((care) => ({
+    ...care,
+    count: stateData.stats.careTypeCounts[care.slug] || 0,
+  }))
+  .filter((care) => care.count > 0)
+  .sort((a, b) => b.count - a.count);
+
+const topFacilities = [...stateData.facilities]
+  .sort((a, b) => {
+    const aScore = Number(Boolean(a.websiteUrl)) + Number(Boolean(a.phone || a.verifiedPhone)) + Number(a.careTypes.length > 1);
+    const bScore = Number(Boolean(b.websiteUrl)) + Number(Boolean(b.phone || b.verifiedPhone)) + Number(b.careTypes.length > 1);
+    if (bScore !== aScore) return bScore - aScore;
+    return a.name.localeCompare(b.name);
+  })
+  .slice(0, 10);
+
+const regulatory = getRegulatoryContext(stateData.stateSlug);
+const assistedCost = getCostBand('assisted-living');
+const memoryCost = getCostBand('memory-care');
+const nursingCost = getCostBand('nursing-homes');
+
+const faqItems = [
+  {
+    question: `How many licensed senior living facilities are currently indexed in ${stateData.stateName}?`,
+    answer: `SilverTech currently indexes ${stateData.facilityCount.toLocaleString()} senior living facilities across ${stateData.stateName}. The index includes assisted living communities, memory care settings, nursing homes, and additional care formats such as residential care homes and adult day services. Because licensing and ownership can change during the year, this page is refreshed on a recurring data cycle and linked to state regulatory resources so families, operators, and analysts can cross-check records before final decisions.`,
+  },
+  {
+    question: `What does this statewide page help me do before comparing individual facilities?`,
+    answer: `This statewide guide is designed to provide market context first. You can review where inventory clusters by city, which care types dominate the state, and what share of listings include phone and website records for direct outreach. That context helps families avoid comparing one facility in isolation and helps investors or operators benchmark city-level supply patterns before drilling into specific communities.`,
+  },
+  {
+    question: `Where do I verify licensing and complaints in ${stateData.stateName}?`,
+    answer: `Use the state licensing agency and complaint intake links listed in the regulatory section below. SilverTech keeps these contacts visible on every statewide page so users can quickly move from directory data to official oversight channels. For escalation support, you can also use the ombudsman contact listed for ${stateData.stateName}. That combination of directory + regulator + ombudsman gives a stronger due-diligence workflow than a listings-only directory.`,
+  },
+  {
+    question: `Are statewide cost numbers exact quotes for each city and community?`,
+    answer: `No. Cost values on this page are broad market ranges intended for planning. Final monthly pricing depends on care acuity, staffing intensity, room type, and contract structure at each community. Use these estimates as an initial budget framework, then request itemized pricing from facilities in your target cities. Comparing written fee schedules across multiple providers is the most reliable way to identify true all-in monthly cost.`,
+  },
+];
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  url: canonical,
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Senior Care', item: 'https://silvertechdirectory.com/senior-living/' },
+    { '@type': 'ListItem', position: 3, name: stateData.stateName, item: canonical },
+  ],
+};
+
+const cityListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: stateData.topCities.map((city, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: `Senior Living in ${city.cityName}, ${city.stateAbbr}`,
+    url: `https://silvertechdirectory.com/senior-living/${city.stateSlug}/${city.citySlug}/`,
+  })),
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+};
+---
+<Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
+
+  <div class="container sl-page">
+    <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span>Senior Living</span>
+      <span>/</span>
+      <span>{stateData.stateName}</span>
+    </nav>
+
+    <section class="sl-hero">
+      <p class="sl-eyebrow">Statewide Senior Care Index</p>
+      <h1>Senior Living in {stateData.stateName}</h1>
+      <p>
+        This page summarizes the senior care market across {stateData.stateName}, including assisted living, memory care,
+        nursing homes, residential care homes, and adult day services. Use this statewide view to understand where supply
+        is concentrated before moving into city-level comparisons and facility profiles.
+      </p>
+      <div class="sl-hero-meta">
+        <span><strong>{stateData.facilityCount.toLocaleString()}</strong> facilities indexed</span>
+        <span><strong>{stateData.cityCount.toLocaleString()}</strong> cities covered</span>
+        <span><strong>{stateData.stats.phoneCoveragePct}%</strong> with phone contacts</span>
+      </div>
+      <div class="sl-hero-actions">
+        <a class="sl-btn sl-btn-primary" href={`/search?state=${encodeURIComponent(stateData.stateAbbr)}`}>Browse Facilities</a>
+        <a class="sl-btn sl-btn-secondary" href={`/states/${stateData.stateSlug}/regulations`}>View Regulatory Library</a>
+      </div>
+    </section>
+
+    <section class="sl-stats-grid">
+      <article class="sl-stat">
+        <p class="k">Facilities Indexed</p>
+        <p class="v">{stateData.stats.totalFacilities.toLocaleString()}</p>
+        <p class="s">Statewide listing coverage</p>
+      </article>
+      <article class="sl-stat">
+        <p class="k">Phone Coverage</p>
+        <p class="v">{stateData.stats.phoneCoveragePct}%</p>
+        <p class="s">{stateData.stats.withPhone.toLocaleString()} listings with phone</p>
+      </article>
+      <article class="sl-stat">
+        <p class="k">Website Coverage</p>
+        <p class="v">{stateData.stats.websiteCoveragePct}%</p>
+        <p class="s">{stateData.stats.withWebsite.toLocaleString()} listings with website</p>
+      </article>
+      <article class="sl-stat">
+        <p class="k">Dominant Care Type</p>
+        <p class="v" style="font-size:1.05rem">{getCareTypeLabel(stateData.stats.dominantCareType)}</p>
+        <p class="s">Largest documented category</p>
+      </article>
+    </section>
+
+    <section class="sl-grid">
+      <article class="sl-section">
+        <h2>{stateData.stateName} Senior Care Overview</h2>
+        <p>
+          SilverTech tracks {stateData.facilityCount.toLocaleString()} senior living facilities in {stateData.stateName},
+          distributed across {stateData.cityCount.toLocaleString()} cities. The largest share of inventory is currently in
+          {` ${stateData.topCities.slice(0, 3).map((city) => city.cityName).join(', ')}`}, which function as major regional
+          care hubs for surrounding counties. Statewide, {stateData.stats.phoneCoveragePct}% of records include direct phone
+          contact and {stateData.stats.websiteCoveragePct}% include website references.
+        </p>
+        <p>
+          Ownership profile is {stateData.stats.ownershipSplitPct.forProfit}% for-profit, {stateData.stats.ownershipSplitPct.nonProfit}% non-profit,
+          and {stateData.stats.ownershipSplitPct.government}% government-linked facilities, with the remainder categorized as other or not declared.
+          This mix helps explain variation in pricing models, admissions standards, and long-term care specialization across metro and non-metro markets.
+        </p>
+      </article>
+      <aside class="sl-section">
+        <h2>Top State Signals</h2>
+        <ul class="sl-pill-list">
+          <li><strong>Medicare-certified share:</strong> {stateData.stats.medicareCertifiedPct}%</li>
+          <li><strong>Top ZIP clusters:</strong> {stateData.stats.topZips.join(', ') || 'N/A'}</li>
+          <li><strong>Largest city market:</strong> {stateData.topCities[0]?.cityName || 'N/A'}</li>
+          <li><strong>Care mix leader:</strong> {getCareTypeLabel(stateData.stats.dominantCareType)}</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="sl-section" style="margin-top:0.9rem;">
+      <h2>Care Types Available Across {stateData.stateName}</h2>
+      <p>
+        Families often compare multiple care models before making a final placement decision. The badges below reflect the
+        current statewide inventory tracked in our dataset. Each care type links to city pages where that category is active,
+        helping you move directly into local market comparisons.
+      </p>
+      <div class="sl-badge-row">
+        {careTypes.map((care) => (
+          <span class={`sl-badge ${care.badgeColorClass}`}>{care.label} ({care.count.toLocaleString()})</span>
+        ))}
+      </div>
+    </section>
+
+    <section class="sl-section" style="margin-top:0.9rem;">
+      <h2>Statewide Cost Overview</h2>
+      <p>
+        Cost planning is one of the highest-volume search topics in senior care. In broad market terms, assisted living in
+        {` ${stateData.stateName}`} often lands around {formatCurrency(assistedCost.low)} to {formatCurrency(assistedCost.high)} per month.
+        Memory care is typically higher, commonly ranging from {formatCurrency(memoryCost.low)} to {formatCurrency(memoryCost.high)} due to
+        specialized staffing and secure-unit requirements. Skilled nursing can exceed {formatCurrency(nursingCost.low)} per month in many markets.
+      </p>
+      <p>
+        These are planning ranges, not guaranteed quotes. Always separate room-and-board pricing from care-service add-ons
+        when comparing communities. A written all-in fee schedule remains the strongest way to compare true monthly cost.
+      </p>
+    </section>
+
+    <section class="sl-regulatory">
+      <h2>Licensing and Public Assistance Infrastructure</h2>
+      <p>
+        The statewide directory is paired with direct oversight and assistance contacts to improve decision quality. Families,
+        operators, and market analysts can move from listings to regulator and ombudsman channels without leaving the page.
+      </p>
+      <div class="sl-reg-cards">
+        <article class="sl-reg-card">
+          <h3>Licensing Authority</h3>
+          <p>{regulatory.licensing?.agencyName || 'State licensing authority reference'}</p>
+          {regulatory.licensing?.websiteUrl && <a href={regulatory.licensing.websiteUrl} target="_blank" rel="noopener noreferrer nofollow">Visit Agency</a>}
+        </article>
+        <article class="sl-reg-card">
+          <h3>Complaint Intake</h3>
+          <p>{regulatory.licensing?.phone || 'Hotline listed in agency resources'}</p>
+          {regulatory.licensing?.complaintIntakeUrl && <a href={regulatory.licensing.complaintIntakeUrl} target="_blank" rel="noopener noreferrer nofollow">File Complaint</a>}
+        </article>
+        <article class="sl-reg-card">
+          <h3>Medicaid Program</h3>
+          <p>{regulatory.medicaid?.programName || 'State waiver information unavailable'}</p>
+          {regulatory.medicaid?.website && <a href={regulatory.medicaid.website} target="_blank" rel="noopener noreferrer nofollow">View Program</a>}
+        </article>
+        <article class="sl-reg-card">
+          <h3>Long-Term Care Ombudsman</h3>
+          <p>{regulatory.ombudsman?.programName || 'Ombudsman contact pending'}</p>
+          {regulatory.ombudsman?.website && <a href={regulatory.ombudsman.website} target="_blank" rel="noopener noreferrer nofollow">Open Ombudsman</a>}
+        </article>
+      </div>
+    </section>
+
+    <section class="sl-grid">
+      <article class="sl-section">
+        <div class="sl-section-head">
+          <h2>Major Senior Living Markets in {stateData.stateName}</h2>
+        </div>
+        <p>
+          City-level hubs below represent the largest facility concentrations in the state. Each city page contains care-type
+          filters, map coverage, facility cards, local hospital references, and neighborhood-level context for long-tail search
+          queries and practical family comparison workflows.
+        </p>
+        <div class="sl-nearby-grid" style="grid-template-columns:repeat(4,minmax(0,1fr));">
+          {stateData.topCities.map((city) => (
+            <a href={`/senior-living/${city.stateSlug}/${city.citySlug}/`}>
+              <strong>{city.cityName}</strong>
+              <span>{city.facilityCount.toLocaleString()} facilities</span>
+            </a>
+          ))}
+        </div>
+      </article>
+      <aside class="sl-section">
+        <h2>Featured Records</h2>
+        <ul class="sl-pill-list">
+          {topFacilities.slice(0, 6).map((facility) => (
+            <li>
+              <a href={`/facility/${facility.id}/`}><strong>{facility.name}</strong></a>
+              <div class="sl-muted">{facility.city}, {facility.state}</div>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    </section>
+
+    <section class="sl-section" style="margin-top:0.9rem;">
+      <h2>Frequently Asked Questions</h2>
+      <div class="sl-faq">
+        {faqItems.map((faq) => (
+          <details>
+            <summary>{faq.question}</summary>
+            <p>{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <section class="sl-section" style="margin-top:0.9rem;">
+      <h2>State Resources</h2>
+      <ul class="sl-pill-list">
+        <li><a href={`/states/${stateData.stateSlug}/regulations`}><strong>State regulations library</strong></a></li>
+        <li><a href={`/states/${stateData.stateSlug}/medicaid`}><strong>Medicaid and waiver guidance</strong></a></li>
+        <li><a href={`/states/${stateData.stateSlug}/ombudsman`}><strong>Ombudsman and complaint help</strong></a></li>
+        <li><a href={`/states/${stateData.stateSlug}/veterans`}><strong>Veterans long-term care benefits</strong></a></li>
+      </ul>
+    </section>
+
+    <footer class="sl-trust-footer">
+      <span><strong>Author:</strong> SilverTech Editorial Team</span>
+      <span><strong>Last Updated:</strong> {buildDateLabel}</span>
+      <span><strong>Data Source:</strong> Public licensing datasets + SilverTech normalization pipeline</span>
+      <span><a href="/editorial-policy/">Editorial Policy</a></span>
+    </footer>
+  </div>
+
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(webPageSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(cityListSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+</Base>

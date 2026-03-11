@@ -81,12 +81,12 @@ export const CaliforniaPage: React.FC = () => {
       <Helmet>
         <title>{content.seo.title}</title>
         <meta name="description" content={content.seo.description} />
-        <link rel="canonical" href="https://silvertechdirectory.com/assisted-living/california/" />
+        <link rel="canonical" href="https://silvertechdirectory.com/senior-living/california/" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="SilverTech Directory" />
         <meta property="og:title" content={content.seo.title} />
         <meta property="og:description" content={content.seo.description} />
-        <meta property="og:url" content="https://silvertechdirectory.com/assisted-living/california/" />
+        <meta property="og:url" content="https://silvertechdirectory.com/senior-living/california/" />
         <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={content.seo.title} />
@@ -98,7 +98,7 @@ export const CaliforniaPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Breadcrumbs items={[
             { label: 'Assisted Living', path: '/search' },
-            { label: 'California', path: '/assisted-living/california' }
+            { label: 'California', path: '/senior-living/california/' }
           ]} />
         </div>
       </div>
@@ -247,7 +247,7 @@ export const CaliforniaPage: React.FC = () => {
               {majorCities.map((c) => (
                 <Link
                   key={c}
-                  to={`/assisted-living/california/cities/${c.toLowerCase().replace(/ /g, '-')}`}
+                  to={`/senior-living/california/${c.toLowerCase().replace(/ /g, '-')}/assisted-living/`}
                   className="bg-white p-4 rounded-lg shadow-sm border border-slate-200 hover:border-primary-500 hover:shadow-md transition-all flex items-center justify-between group"
                 >
                   <span className="font-medium text-slate-700 group-hover:text-primary-700">

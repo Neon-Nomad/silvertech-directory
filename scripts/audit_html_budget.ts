@@ -31,8 +31,9 @@ const csvEscape = (value: string): string => {
 };
 
 const getUniquenessMarker = (relativePath: string): string => {
-  if (/assisted-living\/[^/]+\/cities\/[^/]+\/index\.html$/i.test(relativePath)) return 'Local Data Signals';
-  if (/assisted-living\/[^/]+\/index\.html$/i.test(relativePath)) return 'Statewide Data Signals';
+  if (/senior-living\/[^/]+\/[^/]+\/[^/]+\/index\.html$/i.test(relativePath)) return 'Local Data Signals';
+  if (/senior-living\/[^/]+\/[^/]+\/index\.html$/i.test(relativePath)) return 'Citywide Data Signals';
+  if (/senior-living\/[^/]+\/index\.html$/i.test(relativePath)) return 'Statewide Data Signals';
   if (/facility\/[^/]+\/index\.html$/i.test(relativePath)) return 'Facility Data Signals';
   if (/guides\/index\.html$/i.test(relativePath)) return 'Editorial Integrity Signals';
   if (/guides\/[^/]+\/index\.html$/i.test(relativePath)) return 'Guide Evidence Signals';

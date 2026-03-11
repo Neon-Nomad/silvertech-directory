@@ -21,9 +21,9 @@ describe('astro internal link mesh contract', () => {
     const guideLayout = read('astro-src/components/GuideArticle.astro');
 
     expect(guideLayout).toContain('const topCityGeoLinks: LinkItem[] = [');
-    expect(guideLayout).toContain("href: '/assisted-living/california/cities/san-francisco/'");
-    expect(guideLayout).toContain("href: '/assisted-living/florida/cities/saint-petersburg/'");
-    expect(guideLayout).toContain("href: '/assisted-living/oklahoma/cities/oklahoma-city/'");
+    expect(guideLayout).toContain("href: '/senior-living/california/san-francisco/memory-care/'");
+    expect(guideLayout).toContain("href: '/senior-living/florida/saint-petersburg/'");
+    expect(guideLayout).toContain("href: '/senior-living/oklahoma/oklahoma-city/'");
     expect(guideLayout).toContain('Top City Care Hubs');
     expect(guideLayout).toContain('{topCityGeoLinks.map((link) => (');
   });

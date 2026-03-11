@@ -5,7 +5,7 @@ export const LocationPage: React.FC = () => {
   const { state, city } = useParams<{ state: string; city: string }>();
   
   if (state && city) {
-    return <Navigate to={`/assisted-living/${state}/cities/${city}`} replace />;
+    return <Navigate to={`/senior-living/${state}/${city}/assisted-living/`} replace />;
   }
   
   return <Navigate to="/" replace />;

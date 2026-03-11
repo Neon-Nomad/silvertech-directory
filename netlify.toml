@@ -1,8 +1,8 @@
 [build]
   publish = "dist"
-  command = "npm run build:hybrid"
+  command = "BUILD_TIME=$(date -u +\"%Y-%m-%dT%H:%M:%SZ\") npm run build:hybrid"
 
-# Force www → non-www at the edge (before _redirects processing)
+# Force www -> non-www at the edge (before _redirects processing)
 [[redirects]]
   from = "https://www.silvertechdirectory.com/*"
   to = "https://silvertechdirectory.com/:splat"

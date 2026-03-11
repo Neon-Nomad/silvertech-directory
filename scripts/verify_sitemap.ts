@@ -1,11 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const sitemapPath = path.join(process.cwd(), 'public', 'sitemap.xml');
+const sitemapIndexPath = path.join(process.cwd(), 'public', 'sitemap-index.xml');
+const sitemapFallbackPath = path.join(process.cwd(), 'public', 'sitemap.xml');
+const sitemapPath = fs.existsSync(sitemapIndexPath) ? sitemapIndexPath : sitemapFallbackPath;
 
 if (!fs.existsSync(sitemapPath)) {
-  console.error(`Missing sitemap at ${sitemapPath}`);
+  console.error(`Missing sitemap index at ${sitemapIndexPath} (and fallback sitemap at ${sitemapFallbackPath}).`);
   process.exit(1);
+}
+
+if (sitemapPath === sitemapFallbackPath) {
+  console.warn('sitemap-index.xml not found; falling back to sitemap.xml for verification.');
 }
 
 const uuidRegex = /[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}/i;
@@ -15,9 +21,10 @@ const findings = {
   nonHttps: 0,
   hasLogin: 0,
   hasSignup: 0,
-  cityNonCanonical: 0,
+  legacyAssistedLiving: 0,
   facilityUuid: 0,
   cityCanonical: 0,
+  careTypeCityCanonical: 0,
   facilityCanonical: 0,
   stateRegulationsCanonical: 0,
   stateRegulatoryLegacy: 0,
@@ -32,8 +39,9 @@ const checkUrl = (url: string) => {
   if (!url.startsWith('https://')) findings.nonHttps += 1;
   if (url.includes('/login')) findings.hasLogin += 1;
   if (url.includes('/signup')) findings.hasSignup += 1;
-  if (/\/assisted-living\/[^/]+\/cities\/[^/]+/.test(url)) findings.cityCanonical += 1;
-  if (/\/assisted-living\/[^/]+\/(?!cities\/)[^/]+$/.test(url)) findings.cityNonCanonical += 1;
+  if (/https?:\/\/[^/]+\/assisted-living\/[^/]+/i.test(url)) findings.legacyAssistedLiving += 1;
+  if (/\/senior-living\/[^/]+\/[^/]+\/?$/.test(url)) findings.cityCanonical += 1;
+  if (/\/senior-living\/[^/]+\/[^/]+\/[^/]+\/?$/.test(url)) findings.careTypeCityCanonical += 1;
   if (/\/states\/[^/]+\/regulations(?:\/|$)/.test(url)) findings.stateRegulationsCanonical += 1;
   if (/\/states\/[^/]+\/regulatory(?:\/|$)/.test(url)) findings.stateRegulatoryLegacy += 1;
   if (/\/facility\//.test(url)) {
@@ -78,7 +86,8 @@ const report = [
   `Login URLs: ${findings.hasLogin}`,
   `Signup URLs: ${findings.hasSignup}`,
   `City canonical URLs: ${findings.cityCanonical}`,
-  `City non-canonical URLs: ${findings.cityNonCanonical}`,
+  `Care-type city canonical URLs: ${findings.careTypeCityCanonical}`,
+  `Legacy assisted-living URLs (non-canonical): ${findings.legacyAssistedLiving}`,
   `Facility canonical URLs (slug): ${findings.facilityCanonical}`,
   `Facility UUID URLs (non-canonical): ${findings.facilityUuid}`,
   `State regulations canonical URLs: ${findings.stateRegulationsCanonical}`,
@@ -91,7 +100,7 @@ if (
   findings.nonHttps > 0 ||
   findings.hasLogin > 0 ||
   findings.hasSignup > 0 ||
-  findings.cityNonCanonical > 0 ||
+  findings.legacyAssistedLiving > 0 ||
   findings.facilityUuid > 0 ||
   findings.stateRegulatoryLegacy > 0
 ) {

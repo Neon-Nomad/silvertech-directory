@@ -20,8 +20,8 @@ if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 
-const minutesSince = (iso: string | null) => {
-  if (!iso) return Number.POSITIVE_INFINITY;
+const minutesSince = (iso: string | null): number | null => {
+  if (!iso) return null;
   const diffMs = Date.now() - new Date(iso).getTime();
   return Math.max(0, Math.floor(diffMs / 60000));
 };
@@ -64,14 +64,17 @@ const main = async () => {
   if (snapshot.pending_raw_events > MAX_PENDING) {
     failures.push(`pending_raw_events=${snapshot.pending_raw_events} exceeds ${MAX_PENDING}`);
   }
-  if (rawLag > RAW_MAX_MINUTES) {
+  if (rawLag !== null && rawLag > RAW_MAX_MINUTES) {
     failures.push(`raw_lag_minutes=${rawLag} exceeds ${RAW_MAX_MINUTES}`);
   }
-  if (normalizedLag > NORMALIZED_MAX_MINUTES) {
+  if (normalizedLag !== null && normalizedLag > NORMALIZED_MAX_MINUTES) {
     failures.push(`normalized_lag_minutes=${normalizedLag} exceeds ${NORMALIZED_MAX_MINUTES}`);
   }
-  if (readModelLag > READ_MODEL_MAX_MINUTES) {
+  if (readModelLag !== null && readModelLag > READ_MODEL_MAX_MINUTES) {
     failures.push(`read_model_lag_minutes=${readModelLag} exceeds ${READ_MODEL_MAX_MINUTES}`);
+  }
+  if (snapshot.pending_raw_events > 0 && rawLag === null) {
+    failures.push('raw_lag_minutes unavailable while pending_raw_events > 0');
   }
   if ((deadLetterCount || 0) > 0) {
     failures.push(`dead_letter_count=${deadLetterCount} (manual review required)`);
@@ -79,7 +82,7 @@ const main = async () => {
 
   const summary =
     `pending=${snapshot.pending_raw_events} ` +
-    `rawLagMin=${rawLag} normalizedLagMin=${normalizedLag} readModelLagMin=${readModelLag} deadLetters=${deadLetterCount || 0}`;
+    `rawLagMin=${rawLag ?? 'n/a'} normalizedLagMin=${normalizedLag ?? 'n/a'} readModelLagMin=${readModelLag ?? 'n/a'} deadLetters=${deadLetterCount || 0}`;
 
   if (failures.length > 0) {
     const message = `Data pipeline monitor FAILED: ${summary}\n${failures.map((f) => `- ${f}`).join('\n')}`;

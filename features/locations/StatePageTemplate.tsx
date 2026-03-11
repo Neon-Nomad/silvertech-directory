@@ -122,7 +122,7 @@ export const StatePageTemplate: React.FC = () => {
           "@type": "ListItem",
           "position": 2,
           "name": "Assisted Living",
-          "item": "https://silvertechdirectory.com/assisted-living"
+          "item": "https://silvertechdirectory.com/senior-living"
         },
         {
           "@type": "ListItem",
@@ -140,12 +140,12 @@ export const StatePageTemplate: React.FC = () => {
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
-        <link rel="canonical" href={`https://silvertechdirectory.com/assisted-living/${stateDef.slug}/`} />
+        <link rel="canonical" href={`https://silvertechdirectory.com/senior-living/${stateDef.slug}/`} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SilverTech Directory" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:url" content={`https://silvertechdirectory.com/assisted-living/${stateDef.slug}/`} />
+        <meta property="og:url" content={`https://silvertechdirectory.com/senior-living/${stateDef.slug}/`} />
         <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
@@ -159,8 +159,8 @@ export const StatePageTemplate: React.FC = () => {
           <Breadcrumbs 
             items={[
               { label: 'Home', path: '/' },
-              { label: 'Assisted Living', path: '/assisted-living' },
-              { label: stateDef.name, path: `/assisted-living/${stateDef.slug}` },
+              { label: 'Assisted Living', path: '/senior-living' },
+              { label: stateDef.name, path: `/senior-living/${stateDef.slug}/` },
             ]} 
           />
           
@@ -229,7 +229,7 @@ export const StatePageTemplate: React.FC = () => {
               {cities.slice(0, 6).map((city) => (
                 <Link 
                   key={city.city}
-                  to={`/assisted-living/${stateDef.slug}/cities/${city.slug}/`}
+                  to={`/senior-living/${stateDef.slug}/${city.slug}/assisted-living/`}
                   className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-all group"
                 >
                   <h3 className="text-lg font-bold text-slate-900 group-hover:text-primary-700 mb-2">
@@ -257,7 +257,7 @@ export const StatePageTemplate: React.FC = () => {
               {cities.map((city) => (
                 <Link 
                   key={city.city}
-                  to={`/assisted-living/${stateDef.slug}/cities/${city.slug}/`}
+                  to={`/senior-living/${stateDef.slug}/${city.slug}/assisted-living/`}
                   className="bg-white p-4 rounded-lg border border-slate-200 hover:border-primary-500 hover:shadow-md transition-all flex justify-between items-center group"
                 >
                   <span className="font-medium text-slate-700 group-hover:text-primary-700">

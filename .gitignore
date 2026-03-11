@@ -31,3 +31,9 @@ supabase/.temp/
 supabase/.branches/
 .claude/
 typesense-data/
+artifacts/
+all_senior_living_complete.csv
+all_states_nursing_homes_with_licenses.json
+*_nursing_homes_with_licenses.json
+public/sitemap-*.xml
+public/sitemap.xml

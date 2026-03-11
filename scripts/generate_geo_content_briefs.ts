@@ -116,7 +116,7 @@ const buildStateBrief = (row: KeywordMapRow) => {
     schemaFocus: 'WebPage | BreadcrumbList | ItemList | FAQPage',
     wordCountTarget: '1400-2200',
     cta: `Browse ${row.state_name} directory and compare city pages`,
-    urlPattern: '/assisted-living/[state]/',
+    urlPattern: '/senior-living/[state]/',
     briefType: 'state-programmatic'
   };
 };
@@ -127,7 +127,7 @@ const buildCityBrief = (row: KeywordMapRow) => {
   const h1 = `Senior Care in ${row.city_name}, ${row.state_abbr}`;
   const introHook = `Families searching for ${row.primary_keyword} can use this page to compare assisted living, memory care, nursing homes, and independent living in one local view.`;
   const internalLinks = [
-    `/assisted-living/${row.state_slug}/`,
+    `/senior-living/${row.state_slug}/`,
     `/states/${row.state_slug}/regulations`,
     `/states/${row.state_slug}/medicaid`,
     `/states/${row.state_slug}/ombudsman`,
@@ -144,7 +144,7 @@ const buildCityBrief = (row: KeywordMapRow) => {
     schemaFocus: 'WebPage | BreadcrumbList | ItemList | FAQPage',
     wordCountTarget: '900-1400',
     cta: `Browse ${row.city_name} directory and compare licensed communities`,
-    urlPattern: '/assisted-living/[state]/cities/[city]/',
+    urlPattern: '/senior-living/[state]/[city]/assisted-living/',
     briefType: 'city-programmatic'
   };
 };

@@ -175,7 +175,7 @@ export const StateHubHome: React.FC = () => {
               {cities.map((city) => (
                 <Link
                   key={city.slug}
-                  to={`/assisted-living/${stateDef.slug}/cities/${city.slug}/`}
+                  to={`/senior-living/${stateDef.slug}/${city.slug}/assisted-living/`}
                   className="flex items-center justify-between rounded-lg border border-slate-200 px-3 py-2 text-sm hover:border-slate-400"
                 >
                   <span className="font-medium text-slate-800 truncate pr-2">{city.city}</span>

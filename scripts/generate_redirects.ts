@@ -107,8 +107,6 @@ const buildRedirects = async () => {
     '/sitemap.xml /sitemap.xml 200!',
     '/sitemap-index.xml /sitemap-index.xml 200!',
     '/sitemap-* /sitemap-:splat 200!',
-    '# City route canonicalization',
-    '/assisted-living/:state/:city /assisted-living/:state/cities/:city 301',
     '# Legacy hashed asset compatibility (prevents stale HTML from loading index fallback)',
     '/assets/index-:hash.js /assets/index.js 200',
     '/assets/maps-:hash.js /assets/maps.js 200',
