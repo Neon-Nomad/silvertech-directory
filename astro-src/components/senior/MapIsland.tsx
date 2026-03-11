@@ -1,4 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet.markercluster/dist/MarkerCluster.css';
+import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 
 type CareTypeSlug =
   | 'assisted-living'
@@ -134,6 +137,7 @@ export default function MapIsland({
   const facilityLayerRef = useRef<any>(null);
   const hospitalLayerRef = useRef<any>(null);
   const [mapReady, setMapReady] = useState(false);
+  const [mapError, setMapError] = useState<string | null>(null);
   const [showHospitals, setShowHospitals] = useState(false);
 
   const validPoints = useMemo(
@@ -151,9 +155,6 @@ export default function MapIsland({
     const initializeMap = async () => {
       if (!mapContainerRef.current) return;
 
-      await import('leaflet/dist/leaflet.css');
-      await import('leaflet.markercluster/dist/MarkerCluster.css');
-      await import('leaflet.markercluster/dist/MarkerCluster.Default.css');
       const leafletModule = await import('leaflet');
       await import('leaflet.markercluster');
 
@@ -177,11 +178,13 @@ export default function MapIsland({
         })
         .addTo(map);
 
+      setMapError(null);
       setMapReady(true);
     };
 
     initializeMap().catch((error) => {
       console.error('Map initialization failed:', error);
+      setMapError('Map failed to initialize. Please refresh and try again.');
     });
 
     return () => {
@@ -303,7 +306,7 @@ export default function MapIsland({
 
       {!mapReady ? (
         <div className="sl-map-loading">
-          <p>Loading map...</p>
+          <p>{mapError || 'Loading map...'}</p>
         </div>
       ) : (
         <div className="sl-map-controls">
