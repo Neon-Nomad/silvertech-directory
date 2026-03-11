@@ -99,7 +99,7 @@ const toFacilityPopupHtml = (point: FacilityPoint): string => {
   const licenseLine = point.licenseNumber
     ? `<p>License: ${escapeHtml(point.licenseNumber)}</p>`
     : '';
-  const profileUrl = point.profileUrl || `/facility/${encodeURIComponent(point.id)}/`;
+  const profileUrl = point.profileUrl || `/search?facility=${encodeURIComponent(point.id)}`;
 
   return `
     <article class="sl-map-popup-card">

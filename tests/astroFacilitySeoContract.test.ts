@@ -8,7 +8,9 @@ describe('astro facility seo contract', () => {
   it('keeps slash-final canonical URL and facility schema wiring', () => {
     const facilityTemplate = read('astro-src/pages/facility/[id].astro');
 
-    expect(facilityTemplate).toContain('const canonical = `https://silvertechdirectory.com/facility/${facility.id}/`;');
+    expect(facilityTemplate).toContain(
+      'const canonical = `https://silvertechdirectory.com/senior-living/${stateSlug}/${citySlug}/${encodedFacilityId}/`;'
+    );
     expect(facilityTemplate).toContain('<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>');
     expect(facilityTemplate).toContain('<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>');
   });

@@ -220,7 +220,7 @@ const itemListSchema = {
     item: {
       '@type': 'MedicalBusiness',
       name: facility.name,
-      url: `https://silvertechdirectory.com/facility/${facility.id}/`,
+      url: `https://silvertechdirectory.com/senior-living/${cityData.stateSlug}/${cityData.citySlug}/${facility.id}/`,
       telephone: facility.verifiedPhone || facility.phone || undefined,
       identifier: facility.licenseNumber
         ? {
@@ -372,7 +372,7 @@ const faqSchema = {
         {visibleFacilities.map((facility) => (
           <li class="sl-facility-item">
             <div class="sl-facility-top">
-              <h3><a href={`/facility/${facility.id}/`}>{facility.name}</a></h3>
+              <h3><a href={`/senior-living/${cityData.stateSlug}/${cityData.citySlug}/${facility.id}/`}>{facility.name}</a></h3>
               <span class="sl-muted">{facility.ownershipType || 'Ownership not listed'}</span>
             </div>
             <p class="sl-muted">{[facility.street, `${facility.city}, ${facility.state} ${facility.zip}`].filter(Boolean).join(', ')}</p>
@@ -387,7 +387,7 @@ const faqSchema = {
               })}
             </div>
             <div class="sl-facility-actions">
-              <a href={`/facility/${facility.id}/`}>View Profile</a>
+              <a href={`/senior-living/${cityData.stateSlug}/${cityData.citySlug}/${facility.id}/`}>View Profile</a>
               {facility.googleMapsUrl ? (
                 <a href={facility.googleMapsUrl} target="_blank" rel="noopener noreferrer nofollow">Map</a>
               ) : null}

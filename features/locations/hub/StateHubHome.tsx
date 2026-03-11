@@ -13,6 +13,13 @@ type CityStat = {
   slug: string;
 };
 
+const toSlug = (value: string) =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
 export const StateHubHome: React.FC = () => {
   const { state } = useParams<{ state: string }>();
   const stateDef = ALL_STATES.find((s) => s.slug === state);
@@ -27,6 +34,39 @@ export const StateHubHome: React.FC = () => {
     const fetchCities = async () => {
       setLoading(true);
       try {
+        const { data, error } = await supabase
+          .from('facilities')
+          .select('city')
+          .eq('state', stateDef.abbreviation);
+
+        if (error) throw error;
+
+        const cityMap = new Map<string, number>();
+        (data || []).forEach((row) => {
+          const city = (row.city || '').trim();
+          if (!city) return;
+          cityMap.set(city, (cityMap.get(city) || 0) + 1);
+        });
+
+        const stateCities: CityStat[] = Array.from(cityMap.entries())
+          .map(([city, count]) => ({
+            city,
+            count,
+            slug: toSlug(city),
+          }))
+          .sort((a, b) => a.city.localeCompare(b.city));
+
+        const total = stateCities.reduce((sum, entry) => sum + entry.count, 0);
+        if (!mounted) return;
+        setCities(stateCities);
+        setFacilityCount(total);
+        setLoading(false);
+        return;
+      } catch (err) {
+        console.error('Supabase city lookup failed, using city index fallback:', err);
+      }
+
+      try {
         const cityIndex = await loadCityIndex();
         const stateCities = cityIndex
           .filter((entry) => entry.stateSlug === stateDef.slug)
@@ -40,38 +80,8 @@ export const StateHubHome: React.FC = () => {
         if (!mounted) return;
         setCities(stateCities);
         setFacilityCount(stateCities.reduce((sum, entry) => sum + entry.count, 0));
-        setLoading(false);
-        return;
       } catch (err) {
-        console.error('City index fallback to Supabase:', err);
-      }
-
-      try {
-        const { data, error } = await supabase
-          .from('facilities')
-          .select('city')
-          .eq('state', stateDef.abbreviation);
-
-        if (error) throw error;
-        const cityMap = new Map<string, number>();
-        (data || []).forEach((row) => {
-          const city = (row.city || '').trim();
-          if (!city) return;
-          cityMap.set(city, (cityMap.get(city) || 0) + 1);
-        });
-
-        if (!mounted) return;
-        const computed: CityStat[] = Array.from(cityMap.entries())
-          .map(([city, count]) => ({
-            city,
-            count,
-            slug: city.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
-          }))
-          .sort((a, b) => a.city.localeCompare(b.city));
-        setCities(computed);
-        setFacilityCount((data || []).length);
-      } catch (err) {
-        console.error('Unable to load state cities:', err);
+        console.error('Unable to load state cities from any source:', err);
       } finally {
         if (mounted) setLoading(false);
       }

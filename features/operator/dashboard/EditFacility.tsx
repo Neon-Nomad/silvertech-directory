@@ -11,6 +11,7 @@ import { ProfileCompleteness, getProfileCompleteness } from './ProfileCompletene
 import { trackActivationEvent } from '@/src/config/activationEvents';
 import { getActivationSessionId } from '@/src/utils/activationSession';
 import { useOperatorPlan } from '@/src/hooks/useOperatorPlan';
+import { buildFacilityDetailPath } from '@/src/utils/facilityPath';
 
 const getFirstSaveAckKey = (sessionId: string) => `std_operator_first_save_ack_${sessionId}`;
 
@@ -390,6 +391,11 @@ export const EditFacility: React.FC = () => {
     max_price: formData.max_price ? parseFloat(formData.max_price) : null
   };
   const profileHealth = getProfileCompleteness(completenessData, counts);
+  const publicFacilityPath = buildFacilityDetailPath({
+    id,
+    state: formData.state,
+    city: formData.city,
+  });
 
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
@@ -419,7 +425,7 @@ export const EditFacility: React.FC = () => {
             <h1 className="text-xl font-bold text-slate-900">Edit Facility</h1>
           </div>
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="outline" onClick={() => window.open(`/facility/${id}`, '_blank')}>
+            <Button variant="outline" onClick={() => window.open(publicFacilityPath, '_blank')}>
               View Public Page
             </Button>
             <Button variant="outline" onClick={handleSaveDraft} disabled={saving || publishing}>
@@ -838,7 +844,7 @@ export const EditFacility: React.FC = () => {
         style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}
       >
         <div className="mx-auto flex max-w-7xl items-center gap-3">
-          <Button variant="outline" className="flex-1 justify-center min-h-11" onClick={() => window.open(`/facility/${id}`, '_blank')}>
+          <Button variant="outline" className="flex-1 justify-center min-h-11" onClick={() => window.open(publicFacilityPath, '_blank')}>
             View Public Page
           </Button>
           <Button variant="outline" className="flex-1 justify-center min-h-11" onClick={handleSaveDraft} disabled={saving || publishing}>

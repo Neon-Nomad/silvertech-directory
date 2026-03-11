@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Star, Award, ChevronRight, Phone } from 'lucide-react';
 import { RankedFacility } from '@/src/utils/ranking';
+import { buildFacilityDetailPath } from '@/src/utils/facilityPath';
 
 interface BestFacilitiesListProps {
   facilities: RankedFacility[];
@@ -48,7 +49,10 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
                 <div className="flex justify-between items-start">
                   <div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">
-                      <Link to={`/facility/${facility.id}`} className="hover:text-primary-600">
+                      <Link
+                        to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}
+                        className="hover:text-primary-600"
+                      >
                         {facility.name}
                       </Link>
                     </h3>
@@ -72,7 +76,7 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
                   
                   <div className="text-right hidden md:block">
                      <Link 
-                        to={`/facility/${facility.id}`}
+                        to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}
                         className="inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition-colors"
                       >
                         View Details <ChevronRight size={16} className="ml-1" />
@@ -83,7 +87,7 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
                 {/* Mobile CTA */}
                 <div className="mt-4 md:hidden">
                     <Link 
-                        to={`/facility/${facility.id}`}
+                        to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}
                         className="w-full inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition-colors"
                       >
                         View Details <ChevronRight size={16} className="ml-1" />

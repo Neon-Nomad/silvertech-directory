@@ -7,7 +7,7 @@ const targets = [
   // Shared Astro CSS/assets required by state/city/guide pages.
   { src: path.join(astroRoot, '_astro'), dest: path.join(root, 'dist', '_astro') },
   { src: path.join(astroRoot, 'senior-living'), dest: path.join(root, 'dist', 'senior-living') },
-  // Facility detail URLs must resolve through the React app route (`/facility/:id`)
+  // Facility detail URLs resolve through the React route under `/senior-living/:state/:city/:leaf`
   // so the full dynamic template renders instead of the static Astro shell.
   { src: path.join(astroRoot, 'guides'), dest: path.join(root, 'dist', 'guides') }
 ];

@@ -4,6 +4,7 @@ import { supabase } from '@/src/lib/supabase';
 import { resolveSlugs } from '@/src/utils/facilityIndex';
 import { Button } from '@/components/ui/Button';
 import { COMPARE_TOPICS, CompareQuestion } from '@/src/data/compareQuestions';
+import { buildFacilityDetailPath } from '@/src/utils/facilityPath';
 
 interface CompareToolModalProps {
   isOpen: boolean;
@@ -305,7 +306,16 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
                   <Button
                     variant="outline"
                     className="border-slate-300 hover:bg-slate-100"
-                    onClick={() => window.open(`/facility/${selected.id}`, '_blank')}
+                    onClick={() =>
+                      window.open(
+                        buildFacilityDetailPath({
+                          id: selected.id,
+                          state: selected.state,
+                          city: selected.city,
+                        }),
+                        '_blank',
+                      )
+                    }
                   >
                     View Full Profile
                   </Button>

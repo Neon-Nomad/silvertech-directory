@@ -2,6 +2,7 @@ import React from 'react';
 import { X, Check, Minus, MapPin, Phone, Building2, Shield } from 'lucide-react';
 import { useComparison } from '@/src/context/ComparisonContext';
 import { Link } from 'react-router-dom';
+import { buildFacilityDetailPath } from '@/src/utils/facilityPath';
 
 export const ComparisonModal: React.FC = () => {
   const { selectedFacilities, isOpen, setIsOpen, removeFromCompare } = useComparison();
@@ -55,7 +56,7 @@ export const ComparisonModal: React.FC = () => {
                           )}
                         </div>
                         <Link 
-                          to={`/facility/${facility.id}`}
+                          to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}
                           className="text-lg font-bold text-slate-900 hover:text-primary-600 block mb-1"
                           onClick={() => setIsOpen(false)}
                         >
@@ -146,7 +147,7 @@ export const ComparisonModal: React.FC = () => {
                     {selectedFacilities.map((f) => (
                       <td key={f.id} className="p-4">
                         <Link
-                          to={`/facility/${f.id}`}
+                          to={buildFacilityDetailPath({ id: f.id, state: f.state, city: f.city })}
                           className="block w-full text-center px-4 py-2 border border-primary-600 text-primary-600 rounded-md hover:bg-primary-50 font-medium transition-colors"
                           onClick={() => setIsOpen(false)}
                         >

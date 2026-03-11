@@ -12,10 +12,13 @@ export async function getStaticPaths() {
 
 const facility = Astro.props;
 const stateName = getStateName(facility.state || '');
+const stateSlug = getStateSlug(facility.state || '');
+const citySlug = toCitySlug(facility.city || '');
+const encodedFacilityId = encodeURIComponent(String(facility.id || '').trim());
 
 const title = `${facility.name} | Senior Living in ${facility.city}, ${facility.state}`;
 const description = `Learn about ${facility.name}, a senior living community in ${facility.city}, ${stateName}. View address, contact details, and verified data.`;
-const canonical = `https://silvertechdirectory.com/facility/${facility.id}/`;
+const canonical = `https://silvertechdirectory.com/senior-living/${stateSlug}/${citySlug}/${encodedFacilityId}/`;
 const facilityKeywordTargets = [
   `${facility.name} assisted living`,
   `${facility.name} ${facility.city} ${facility.state}`,
@@ -39,8 +42,6 @@ const schema = {
   "telephone": facility.phone || undefined,
   "url": canonical
 };
-const stateSlug = getStateSlug(facility.state || '');
-const citySlug = toCitySlug(facility.city || '');
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

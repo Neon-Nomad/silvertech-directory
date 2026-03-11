@@ -16,6 +16,7 @@ import { generateCityContent } from '@/src/utils/contentGenerator';
 import { BestFacilitiesList } from '@/features/locations/BestFacilitiesList';
 import { HospitalList } from '@/features/locations/HospitalList';
 import { getHospitalsByCity, Hospital } from '@/src/utils/hospitalData';
+import { buildFacilityDetailPath, isCareTypeRouteSlug } from '@/src/utils/facilityPath';
 
 
 // ... (existing imports)
@@ -38,7 +39,7 @@ const toSlug = (value: string) =>
     .replace(/(^-|-$)/g, '');
 
 export const CityPageTemplate: React.FC = () => {
-  const { state: stateSlug, city: citySlug } = useParams<{ state: string; city: string }>();
+  const { state: stateSlug, city: citySlug, leaf } = useParams<{ state: string; city: string; leaf?: string }>();
   const navigate = useNavigate();
   
   const [facilities, setFacilities] = useState<any[]>([]);
@@ -48,6 +49,7 @@ export const CityPageTemplate: React.FC = () => {
 
   // Derived state
   const cityName = citySlug ? formatName(citySlug) : '';
+  const normalizedCitySlug = (citySlug || '').trim().toLowerCase();
   const stateData = states.find(s => s.slug === stateSlug?.toLowerCase());
   const stateName = stateData ? stateData.name : formatName(stateSlug || '');
   const stateAbbr = stateData ? stateData.abbreviation : stateSlug?.toUpperCase();
@@ -63,7 +65,7 @@ export const CityPageTemplate: React.FC = () => {
     const zipState = states.find((s) => s.abbreviation.toLowerCase() === zipEntry.state.toLowerCase());
     const targetStateSlug = zipState?.slug || stateSlug;
     const targetCitySlug = toSlug(zipEntry.city);
-    navigate(`/senior-living/${targetStateSlug}/${targetCitySlug}/assisted-living/`, { replace: true });
+    navigate(`/senior-living/${targetStateSlug}/${targetCitySlug}/`, { replace: true });
   }, [stateSlug, citySlug, navigate]);
 
   // Get Rich Content (Premium or Generated)
@@ -76,22 +78,36 @@ export const CityPageTemplate: React.FC = () => {
 
       setLoading(true);
       setError(null);
-      const targetState = stateData?.abbreviation || stateSlug;
+      const targetState = (stateData?.abbreviation || stateSlug).toUpperCase();
       const targetCity = cityName;
+      const cityLikePattern = `%${normalizedCitySlug.split('-').join('%')}%`;
 
       try {
-        // 1. Get facilities for the state (Supabase primary)
+        // Supabase primary: city-filtered query + normalized slug match.
         const { data, error } = await supabase
           .from('facilities')
-          .select('*')
-          .ilike('state', targetState)
-          .ilike('city', targetCity)
+          .select('id,name,city,state,address_line1,address_line2,postal_code,phone,website_url,latitude,longitude,listing_tier')
+          .eq('state', targetState)
+          .ilike('city', cityLikePattern)
           .order('name', { ascending: true });
 
         if (error) throw error;
 
+        let cityMatches = (data || []).filter((row) => toSlug(row.city || '') === normalizedCitySlug);
+
+        // If punctuation/format drift defeated the city filter, do one state-level retry.
+        if (cityMatches.length === 0) {
+          const { data: stateRows, error: stateError } = await supabase
+            .from('facilities')
+            .select('id,name,city,state,address_line1,address_line2,postal_code,phone,website_url,latitude,longitude,listing_tier')
+            .eq('state', targetState)
+            .order('name', { ascending: true });
+          if (stateError) throw stateError;
+          cityMatches = (stateRows || []).filter((row) => toSlug(row.city || '') === normalizedCitySlug);
+        }
+
         // Resolve Supabase UUIDs to canonical slugs for public-facing URLs
-        const resolved = await resolveSlugs(data || []);
+        const resolved = await resolveSlugs(cityMatches);
         setFacilities(resolved);
       } catch (err) {
         console.error('Error fetching city facilities from Supabase:', err);
@@ -116,12 +132,20 @@ export const CityPageTemplate: React.FC = () => {
     };
 
     fetchFacilities();
-  }, [stateSlug, citySlug, cityName, stateData]);
+  }, [stateSlug, citySlug, cityName, normalizedCitySlug, stateData]);
 
   // SEO & Schema
-  const pageTitle = `Assisted Living in ${cityName}, ${stateAbbr} - Directory of Senior Care Facilities`;
-  const pageDescription = `See the Top 10 Best Assisted Living Facilities in ${cityName}, ${stateName}. Compare prices, read reviews, and find verified senior care providers.`;
-  const canonicalUrl = `https://silvertechdirectory.com/senior-living/${stateSlug}/${citySlug}/assisted-living/`;
+  const careTypeSlug = isCareTypeRouteSlug(leaf) ? leaf!.toLowerCase() : null;
+  const careTypeLabel = careTypeSlug ? formatName(careTypeSlug) : null;
+  const pageTitle = careTypeLabel
+    ? `${careTypeLabel} in ${cityName}, ${stateAbbr} - Directory of Senior Care Facilities`
+    : `Senior Living in ${cityName}, ${stateAbbr} - Directory of Senior Care Facilities`;
+  const pageDescription = careTypeLabel
+    ? `See ${careTypeLabel.toLowerCase()} facilities in ${cityName}, ${stateName}. Compare prices, read reviews, and find verified senior care providers.`
+    : `See senior living facilities in ${cityName}, ${stateName}. Compare prices, read reviews, and find verified senior care providers.`;
+  const canonicalUrl = careTypeSlug
+    ? `https://silvertechdirectory.com/senior-living/${stateSlug}/${citySlug}/${careTypeSlug}/`
+    : `https://silvertechdirectory.com/senior-living/${stateSlug}/${citySlug}/`;
 
   // Use ranked facilities for Schema to highlight best ones first
   const rankedFacilities = rankFacilities(facilities);
@@ -145,7 +169,7 @@ export const CityPageTemplate: React.FC = () => {
           addressCountry: 'US'
         },
         telephone: f.phone,
-        url: `https://silvertechdirectory.com/facility/${f.id}/`,
+        url: `https://silvertechdirectory.com${buildFacilityDetailPath({ id: f.id, state: f.state, city: f.city })}`,
         ...(f.image ? { image: f.image } : {}),
         ...(f.price ? { priceRange: f.price } : {})
       }
@@ -259,7 +283,10 @@ export const CityPageTemplate: React.FC = () => {
                     <div className="flex flex-col md:flex-row justify-between items-start gap-4">
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-slate-900 mb-2">
-                          <Link to={`/facility/${facility.id}`} className="hover:text-primary-600 transition-colors">
+                          <Link
+                            to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}
+                            className="hover:text-primary-600 transition-colors"
+                          >
                             {facility.name}
                           </Link>
                         </h3>
@@ -296,7 +323,7 @@ export const CityPageTemplate: React.FC = () => {
                          
                          <div className="flex flex-col gap-2 w-full md:w-auto">
                            <Link 
-                              to={`/facility/${facility.id}`}
+                              to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}
                               className="w-full md:w-auto inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition-colors"
                             >
                               View Facility <ChevronRight size={16} className="ml-1" />

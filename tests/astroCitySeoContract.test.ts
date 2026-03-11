@@ -19,13 +19,13 @@ describe('astro city seo contract', () => {
     expect(cityTemplate).toContain("const itemListSchema = {");
     expect(cityTemplate).toContain("const breadcrumbSchema = {");
     expect(cityTemplate).toContain("const faqSchema = {");
-    expect(cityTemplate).toContain('<script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>');
+    expect(cityTemplate).toContain('<script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>');
   });
 
   it('contains crawlable facility links and care-type link mesh', () => {
     const cityTemplate = read('astro-src/pages/senior-living/[state]/[city]/[care]/index.astro');
 
-    expect(cityTemplate).toContain('href={`/facility/${facility.id}/`}');
+    expect(cityTemplate).toContain('href={`/senior-living/${cityData.stateSlug}/${cityData.citySlug}/${facility.id}/`}');
     expect(cityTemplate).toContain('href={`/senior-living/${cityData.stateSlug}/${cityData.citySlug}/${care.slug}/`}');
     expect(cityTemplate).toContain('href={`/senior-living/${cityData.stateSlug}/${cityData.citySlug}/`}');
   });

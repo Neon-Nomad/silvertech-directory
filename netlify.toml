@@ -8,3 +8,7 @@
   to = "https://silvertechdirectory.com/:splat"
   status = 301
   force = true
+
+[[edge_functions]]
+  path = "/senior-living/*"
+  function = "facility-metadata"

@@ -4,6 +4,7 @@ import { FacilityQuestion } from '@/src/hooks/useFacilityQuestions';
 import { FacilityFaq } from '@/src/hooks/useFacilityFaqs';
 import { FEATURE_FLAGS } from '@/src/config/featureFlags';
 import { trackEvent } from '@/src/utils/analytics';
+import { buildFacilityCanonicalUrl } from '@/src/utils/facilityPath';
 
 interface FacilityQASchemaProps {
   facilityId: string;
@@ -28,7 +29,10 @@ export const FacilityQASchema: React.FC<FacilityQASchemaProps> = ({
     trackEvent('qa_faq_schema_rendered', { facilityId });
   }, [hasFAQPage, facilityId]);
 
-  const canonicalUrl = `https://silvertechdirectory.com/facility/${facilityId}/`;
+  const canonicalUrl =
+    typeof window !== 'undefined'
+      ? `${window.location.origin}${window.location.pathname}`
+      : buildFacilityCanonicalUrl({ id: facilityId });
 
   const qaSchema = {
     '@context': 'https://schema.org',

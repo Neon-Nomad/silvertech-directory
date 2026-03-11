@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import dotenv from 'dotenv';
 import { createClient } from '@supabase/supabase-js';
+import { ALL_STATES } from '../src/data/states';
 
 dotenv.config();
 
@@ -33,6 +34,26 @@ const makeKey = (name?: string | null, city?: string | null, state?: string | nu
   `${normalize(name)}|${normalize(city)}|${(state || '').toString().trim().toUpperCase()}|${(postal || '')
     .toString()
     .trim()}`;
+const toSlug = (value?: string | null) =>
+  (value || '')
+    .toString()
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
+const resolveStateSlug = (state?: string | null) => {
+  const raw = (state || '').toString().trim();
+  if (!raw) return '';
+
+  const normalized = raw.toLowerCase();
+  return (
+    ALL_STATES.find((entry) => entry.slug === normalized)?.slug ||
+    ALL_STATES.find((entry) => entry.abbreviation.toLowerCase() === normalized)?.slug ||
+    ALL_STATES.find((entry) => entry.name.toLowerCase() === normalized)?.slug ||
+    toSlug(raw)
+  );
+};
 
 const rootDir = process.cwd();
 const indexPath = path.join(rootDir, 'public', 'facilities_index.json');
@@ -96,8 +117,18 @@ const buildRedirects = async () => {
       missing += 1;
       continue;
     }
+    const stateSlug = resolveStateSlug(facility.state);
+    const citySlug = toSlug(facility.city);
+    if (!stateSlug || !citySlug) {
+      missing += 1;
+      continue;
+    }
     matched += 1;
-    redirectLines.push(`/facility/${facility.id} /facility/${slug} 301`);
+    redirectLines.push(
+      `/facility/${encodeURIComponent(facility.id)} /senior-living/${stateSlug}/${citySlug}/${encodeURIComponent(
+        slug
+      )}/ 301`
+    );
   }
 
   const outputLines = [

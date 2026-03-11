@@ -10,6 +10,7 @@ import { LocationPrompt } from '@/components/ui/LocationPrompt';
 import { AuthProvider, useAuth } from '@/src/context/AuthProvider';
 import { dashboardPathForTab, normalizeDashboardTab } from '@/src/utils/dashboardRouting';
 import { reportFrontendError } from '@/src/monitoring/reportError';
+import { isCareTypeRouteSlug } from '@/src/utils/facilityPath';
 
 const DirectorySearch = lazy(() => import('@/features/family/discovery/DirectorySearch'));
 const OperatorDashboard = lazy(() => import('@/features/operator/dashboard/OperatorDashboard'));
@@ -36,6 +37,8 @@ const HonestCarePage = lazy(() => import('@/features/public/transparency/HonestC
 const MethodologyPage = lazy(() => import('@/features/public/transparency/MethodologyPage').then((m) => ({ default: m.MethodologyPage })));
 const Blog = lazy(() => import('./features/public/blog/Blog').then((m) => ({ default: m.Blog })));
 const StateHubHome = lazy(() => import('@/features/locations/hub/StateHubHome').then((m) => ({ default: m.StateHubHome })));
+const StatePageTemplate = lazy(() => import('@/features/locations/StatePageTemplate').then((m) => ({ default: m.StatePageTemplate })));
+const CityPageTemplate = lazy(() => import('@/features/locations/CityPageTemplate').then((m) => ({ default: m.CityPageTemplate })));
 const StateMedicaidPage = lazy(() => import('@/features/locations/hub/StateMedicaidPage').then((m) => ({ default: m.StateMedicaidPage })));
 const StateRegulatoryHub = lazy(() => import('@/features/regulatory/StateRegulatoryHub').then((m) => ({ default: m.StateRegulatoryHub })));
 const StateRulesPage = lazy(() => import('@/features/locations/hub/StateRulesPage').then((m) => ({ default: m.StateRulesPage })));
@@ -166,6 +169,20 @@ const LegacyDashboardEditRedirect: React.FC = () => {
   return <Navigate to={`/dashboard/facility/${id}/edit`} replace />;
 };
 
+const LegacyFacilityRouteRedirect: React.FC = () => {
+  const { id } = useParams<{ id?: string }>();
+  if (!id) return <Navigate to="/search" replace />;
+  return <Navigate to={`/senior-living/unknown/unknown/${encodeURIComponent(id)}/`} replace />;
+};
+
+const SeniorLivingLeafRoute: React.FC = () => {
+  const { leaf } = useParams<{ leaf?: string }>();
+  if (isCareTypeRouteSlug(leaf)) {
+    return <CityPageTemplate />;
+  }
+  return <FacilityDetails />;
+};
+
 function App() {
   const enableIntegrityHarness =
     import.meta.env.DEV ||
@@ -237,7 +254,7 @@ function App() {
                     <Routes>
                       <Route path="/" element={<Home />} />
                       <Route path="/search" element={<DirectorySearch />} />
-                      <Route path="/facility/:id" element={<FacilityDetails />} />
+                      <Route path="/facility/:id" element={<LegacyFacilityRouteRedirect />} />
 
                     {/* Auth Routes */}
                     <Route path="/login" element={<LoginPage />} />
@@ -292,6 +309,12 @@ function App() {
                     <Route path="/states/:state/ombudsman" element={<StateOmbudsmanPage />} />
                     <Route path="/states/:state/veterans" element={<StateVeteransPage />} />
                     <Route path="/regulatory-library" element={<RegulatoryLibrary />} />
+
+                    {/* Senior Living Frontend Routes (dev/runtime parity with static build) */}
+                    <Route path="/senior-living" element={<Navigate to="/states" replace />} />
+                    <Route path="/senior-living/:state" element={<StatePageTemplate />} />
+                    <Route path="/senior-living/:state/:city" element={<CityPageTemplate />} />
+                    <Route path="/senior-living/:state/:city/:leaf" element={<SeniorLivingLeafRoute />} />
 
                     {/* Legacy / Direct Routes */}
                     <Route path="/faq" element={<FAQ />} />

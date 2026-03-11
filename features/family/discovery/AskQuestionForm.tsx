@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/Button';
 import { useAuth } from '@/src/context/AuthProvider';
 import { supabase } from '@/src/lib/supabase';
@@ -10,6 +10,7 @@ import {
   recordQuestionSubmission,
   sanitizeInput,
 } from '@/src/utils/qaGuards';
+import { buildFacilityDetailPath } from '@/src/utils/facilityPath';
 
 interface AskQuestionFormProps {
   facilityId: string;
@@ -30,6 +31,7 @@ const formHintId = 'qa-question-form-hint';
 
 export const AskQuestionForm: React.FC<AskQuestionFormProps> = ({ facilityId, facilityName, onSubmitted }) => {
   const { user } = useAuth();
+  const location = useLocation();
   const [questionText, setQuestionText] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -38,7 +40,8 @@ export const AskQuestionForm: React.FC<AskQuestionFormProps> = ({ facilityId, fa
   const [ownQuestions, setOwnQuestions] = useState<OwnQuestion[]>([]);
   const [approvedQuestionTexts, setApprovedQuestionTexts] = useState<string[]>([]);
 
-  const redirectPath = `/login?redirect_to=${encodeURIComponent(`/facility/${facilityId}`)}`;
+  const currentPath = location.pathname || buildFacilityDetailPath({ id: facilityId });
+  const redirectPath = `/login?redirect_to=${encodeURIComponent(currentPath)}`;
   const trimmedLength = questionText.trim().length;
   const isValidLength = trimmedLength >= MIN_LEN && trimmedLength <= MAX_LEN;
   const pendingCount = ownQuestions.filter((q) => q.status === 'pending').length;

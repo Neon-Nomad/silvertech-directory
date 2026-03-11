@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createClient } from '@supabase/supabase-js';
 import * as dotenv from 'dotenv';
+import { ALL_STATES } from '../src/data/states';
 
 dotenv.config();
 
@@ -72,6 +73,17 @@ const toSlug = (value: string): string =>
     .trim()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
+
+const STATE_SLUG_BY_ABBR = new Map(
+  ALL_STATES.map((state) => [state.abbreviation.toLowerCase(), state.slug]),
+);
+
+const resolveStateSlug = (state: string | null): string => {
+  const raw = (state || '').trim();
+  if (!raw) return '';
+  const normalized = raw.toLowerCase();
+  return STATE_SLUG_BY_ABBR.get(normalized) || toSlug(raw);
+};
 
 const hashString = (value: string): string => {
   let hash = 5381;
@@ -211,7 +223,7 @@ const toStaticEntry = (url: string, priority = 0.6): SitemapEntry => ({
   priority,
 });
 
-const loadFacilityRows = async (): Promise<Array<{ routeId: string }>> => {
+const loadFacilityRows = async (): Promise<Array<{ routeId: string; stateSlug: string; citySlug: string }>> => {
   console.log('Loading facility sitemap seeds directly from Supabase facilities table...');
   const allFacilities: FacilitySeedRow[] = [];
   const pageSize = 1000;
@@ -243,13 +255,19 @@ const loadFacilityRows = async (): Promise<Array<{ routeId: string }>> => {
   }
 
   const seenRouteIds = new Map<string, number>();
-  const routeSeeds = allFacilities.map((facility) => {
-    const baseRouteId = buildFacilityRouteId(facility);
-    const currentCount = seenRouteIds.get(baseRouteId) || 0;
-    seenRouteIds.set(baseRouteId, currentCount + 1);
-    const routeId = currentCount === 0 ? baseRouteId : `${baseRouteId}-${currentCount + 1}`;
-    return { routeId };
-  });
+  const routeSeeds = allFacilities
+    .map((facility) => {
+      const stateSlug = resolveStateSlug(facility.state);
+      const citySlug = toSlug(facility.city || '');
+      if (!stateSlug || !citySlug) return null;
+
+      const baseRouteId = buildFacilityRouteId(facility);
+      const currentCount = seenRouteIds.get(baseRouteId) || 0;
+      seenRouteIds.set(baseRouteId, currentCount + 1);
+      const routeId = currentCount === 0 ? baseRouteId : `${baseRouteId}-${currentCount + 1}`;
+      return { routeId, stateSlug, citySlug };
+    })
+    .filter((facility): facility is { routeId: string; stateSlug: string; citySlug: string } => Boolean(facility));
 
   console.log(
     `Loaded ${routeSeeds.length} facilities from Supabase (${seenRouteIds.size} unique base facility route ids).`,
@@ -333,9 +351,12 @@ async function generateSitemaps() {
 
   const facilityEntries = uniqueEntries(
     facilities
-      .filter((facility): facility is { routeId: string } => Boolean(facility?.routeId))
+      .filter(
+        (facility): facility is { routeId: string; stateSlug: string; citySlug: string } =>
+          Boolean(facility?.routeId && facility?.stateSlug && facility?.citySlug),
+      )
       .map((facility) => ({
-        url: `${BASE_URL}/facility/${facility.routeId}/`,
+        url: `${BASE_URL}/senior-living/${facility.stateSlug}/${facility.citySlug}/${facility.routeId}/`,
         changefreq: 'weekly',
         priority: 0.7,
       })),

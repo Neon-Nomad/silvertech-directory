@@ -828,7 +828,7 @@ export const getCityMapPoints = (
       phone: facility.verifiedPhone || facility.phone || '',
       licenseNumber: facility.licenseNumber || '',
       listingTier: facility.listingTier || '',
-      profileUrl: `/facility/${facility.id}/`,
+      profileUrl: `/senior-living/${stateSlug}/${citySlug}/${facility.id}/`,
     }));
 };
 

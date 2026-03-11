@@ -11,6 +11,7 @@ import { trackEvent } from '@/src/utils/analytics';
 import { FEATURE_FLAGS } from '@/src/config/featureFlags';
 import { NoResults } from '@/features/family/discovery/NoResults';
 import { useGeolocation } from '@/src/hooks/useGeolocation';
+import { buildFacilityDetailPath } from '@/src/utils/facilityPath';
 
 type SearchFacilityResult = FacilityIndexItem & {
   owner_id?: string | null;
@@ -19,6 +20,15 @@ type SearchFacilityResult = FacilityIndexItem & {
   latitude?: number | null;
   longitude?: number | null;
   distance_miles?: number;
+};
+
+const normalizeFacilityKey = (facility: SearchFacilityResult): string => {
+  const state = (facility.state || '').trim().toUpperCase();
+  const city = toSlug(facility.city || '');
+  const name = (facility.name || '').toLowerCase().trim();
+  const address = (facility.address_line1 || '').toLowerCase().trim();
+  const postal = (facility.postal_code || '').trim();
+  return `${name}|${address}|${city}|${state}|${postal}`;
 };
 
 const isUuid = (value?: string) =>
@@ -169,6 +179,22 @@ const DirectorySearch: React.FC = () => {
       }
     }
 
+    // Accept "City ST" input when users omit the comma (e.g., "Orlando FL").
+    if (!zipMatch && rawLocation && !rawLocation.includes(',')) {
+      const tokens = rawLocation.split(/\s+/).filter(Boolean);
+      if (tokens.length >= 2) {
+        const maybeState = tokens[tokens.length - 1];
+        const stateMatch = findStateByInput(maybeState);
+        if (stateMatch) {
+          const cityPart = tokens.slice(0, -1).join(' ').trim();
+          if (cityPart) city = cityPart;
+          if (!resolvedStateSlug || resolvedStateSlug !== stateMatch.slug) {
+            resolvedStateSlug = stateMatch.slug;
+          }
+        }
+      }
+    }
+
     if (claimMode && !zipMatch && !geoCity) {
       setError('Enter a 5-digit ZIP code or use your location to find your facility.');
       return;
@@ -195,11 +221,16 @@ const DirectorySearch: React.FC = () => {
     if (claimMode) nextParams.set('claim', '1');
     navigate(`/search?${nextParams.toString()}`);
 
-    const searchViaSupabase = async (filters: { city?: string; state?: string; zip?: string }) => {
+    const searchViaSupabase = async (
+      filters: { city?: string; state?: string; zip?: string },
+      options?: { queryText?: string | null }
+    ) => {
+      const effectiveQueryText =
+        options?.queryText !== undefined ? options.queryText : (rawName || null);
       try {
         const { data, error } = await supabase
           .rpc('search_facilities', {
-            query_text: rawName || null,
+            query_text: effectiveQueryText,
             state_filter: filters.state || null,
             city_filter: filters.city || null,
             postal_filter: filters.zip || null,
@@ -209,18 +240,23 @@ const DirectorySearch: React.FC = () => {
         if (error) throw error;
         return (data as SearchFacilityResult[]) || [];
       } catch (err: any) {
-        const message = err?.message || '';
-        if (!message.includes('Could not find the function')) throw err;
+        const message = String(err?.message || '');
+        const code = String(err?.code || '');
+        const rpcMissing =
+          code === 'PGRST202' ||
+          message.includes('Could not find the function') ||
+          message.includes('No function matches the given name');
+        if (!rpcMissing) throw err;
 
         let query = supabase
           .from('facilities')
-          .select('id,name,city,state,address_line1,postal_code,phone,website_url,owner_id')
+          .select('id,name,city,state,address_line1,postal_code,phone,website_url,owner_id,latitude,longitude,listing_tier')
           .order('name', { ascending: true });
 
         if (filters.state) query = query.eq('state', filters.state);
         if (filters.city) query = query.ilike('city', filters.city);
         if (filters.zip) query = query.eq('postal_code', filters.zip);
-        if (rawName) query = query.ilike('name', `%${rawName}%`);
+        if (effectiveQueryText) query = query.ilike('name', `%${effectiveQueryText}%`);
 
         const { data, error } = await query.limit(50);
         if (error) throw error;
@@ -233,11 +269,20 @@ const DirectorySearch: React.FC = () => {
       }
     };
 
-    const performSearch = async (filters: { city?: string; state?: string; zip?: string }) => {
-      if (hasTypesense && typesenseClient) {
+    const performSearch = async (
+      filters: { city?: string; state?: string; zip?: string },
+      options?: { queryText?: string | null }
+    ) => {
+      const effectiveQueryText =
+        options?.queryText !== undefined ? options.queryText : (rawName || null);
+      try {
+        return await searchViaSupabase(filters, options);
+      } catch (supabaseError) {
+        if (!hasTypesense || !typesenseClient) throw supabaseError;
+
         try {
           const searchParams: any = {
-            q: rawName || '*',
+            q: effectiveQueryText || '*',
             query_by: 'name,city,state,postal_code',
             query_by_weights: '8,3,2,2',
             sort_by: 'premium_tier:desc,_text_match:desc',
@@ -254,16 +299,12 @@ const DirectorySearch: React.FC = () => {
             .documents()
             .search(searchParams);
           const hits = (searchResult?.hits || []).map((hit: any) => hit.document) as SearchFacilityResult[];
-
-          if (hits.length > 0) return hits;
-          // Important: stale Typesense indexes can return 0 despite data existing in Supabase.
-          // Fall through to database-backed search on zero-hit responses.
+          setResultsError('Primary search is unavailable. Showing fallback search results.');
+          return hits;
         } catch {
-          // Fall through to Supabase search on any Typesense failure.
+          throw supabaseError;
         }
       }
-
-      return searchViaSupabase(filters);
     };
 
     const performOfflineSearch = async (
@@ -308,22 +349,143 @@ const DirectorySearch: React.FC = () => {
       );
     };
 
+    const exactCitySlug = !zipMatch && city ? toSlug(city) : '';
+    const enforceExactCity = (items: SearchFacilityResult[]) => {
+      if (!exactCitySlug) return items;
+      return items.filter((item) => toSlug(item.city || '') === exactCitySlug);
+    };
+
+    const dedupeFacilities = (items: SearchFacilityResult[]) => {
+      const seen = new Set<string>();
+      const unique: SearchFacilityResult[] = [];
+      for (const item of items) {
+        const key = normalizeFacilityKey(item);
+        if (seen.has(key)) continue;
+        seen.add(key);
+        unique.push(item);
+      }
+      return unique;
+    };
+
+    const getGuaranteedFallback = async (options?: { preferClaimLocal?: boolean }) => {
+      const stateOnly = stateAbbr || (zipEntry ? findStateByInput(zipEntry.state)?.abbreviation : undefined);
+      const locationPattern = city ? `%${toSlug(city).split('-').join('%')}%` : undefined;
+      const stateDef = stateOnly
+        ? ALL_STATES.find((s) => s.abbreviation.toUpperCase() === stateOnly.toUpperCase())
+        : null;
+      const stateLabel = stateDef?.name || stateOnly || '';
+      const cityLabel = city || zipEntry?.city || '';
+      const localLabel = cityLabel && stateOnly
+        ? `${cityLabel}, ${stateOnly}`
+        : (cityLabel || stateLabel || 'your selected area');
+      const queryLabel = rawName ? `"${rawName}"` : localLabel;
+      const localScopeLabel = cityLabel && stateOnly
+        ? `${cityLabel}, ${stateOnly}`
+        : (stateLabel || localLabel);
+      const attempts: Array<{
+        message: string;
+        run: () => Promise<SearchFacilityResult[]>;
+      }> = [];
+
+      if (rawName) {
+        attempts.push({
+          message: `No results for ${queryLabel} in ${localLabel}. Showing facilities in ${localScopeLabel} without the name filter.`,
+          run: async () => {
+            const rows = await performSearch(
+              {
+                state: stateOnly,
+                city: zipMatch ? undefined : locationPattern,
+                zip: zipMatch || undefined,
+              },
+              { queryText: null }
+            );
+            return enforceExactCity(rows);
+          },
+        });
+      }
+
+      if (options?.preferClaimLocal && zipEntry?.city && zipEntry?.state) {
+        const zipState = findStateByInput(zipEntry.state);
+        const zipLabel = zipState?.abbreviation
+          ? `${zipEntry.city}, ${zipState.abbreviation}`
+          : zipEntry.city;
+        attempts.push({
+          message: `No direct results for ZIP ${zipMatch}. Showing nearby facilities in ${zipLabel}.`,
+          run: async () =>
+            performSearch(
+              {
+                state: zipState?.abbreviation,
+                city: `%${toSlug(zipEntry.city).split('-').join('%')}%`,
+              },
+              { queryText: null }
+            ),
+        });
+      }
+
+      if (stateOnly) {
+        attempts.push({
+          message: `No results for ${queryLabel} in ${localLabel}. Showing facilities across ${stateLabel}.`,
+          run: async () => performSearch({ state: stateOnly }, { queryText: null }),
+        });
+      }
+
+      attempts.push({
+        message: `No results for ${queryLabel}${localLabel ? ` in ${localLabel}` : ''}. Showing facilities nationwide.`,
+        run: async () => performSearch({}, { queryText: null }),
+      });
+
+      for (const attempt of attempts) {
+        try {
+          const rows = dedupeFacilities(await attempt.run());
+          if (rows.length > 0) {
+            setResultsError(attempt.message);
+            return rows;
+          }
+        } catch {
+          // Try the next fallback source.
+        }
+      }
+
+      try {
+        const offlineRows = await performOfflineSearch(
+          { state: stateOnly, city: zipMatch ? zipEntry?.city : city || undefined, zip: zipMatch || undefined },
+          'Live search is unavailable. Showing offline backup listings.'
+        );
+        if (offlineRows.length > 0) return dedupeFacilities(offlineRows);
+      } catch {
+        // Continue to final offline global fallback.
+      }
+
+      const offlineGlobal = await performOfflineSearch(
+        {},
+        'Live search is unavailable. Showing offline national backup listings.'
+      );
+      return dedupeFacilities(offlineGlobal);
+    };
+
     setResultsLoading(true);
     try {
+      const cityPattern = city ? `%${toSlug(city).split('-').join('%')}%` : undefined;
       const primaryFilters = {
         state: stateAbbr || undefined,
-        city: zipMatch ? undefined : city || undefined,
+        city: zipMatch ? undefined : cityPattern,
         zip: zipMatch || undefined
       };
-      let hits = await performSearch(primaryFilters);
+      let hits = enforceExactCity(await performSearch(primaryFilters));
+
+      if (!zipMatch && hits.length === 0 && cityPattern && stateAbbr) {
+        // Retry without city SQL filter, then apply strict city slug filtering client-side.
+        const stateOnlyHits = await performSearch({ state: stateAbbr, zip: undefined });
+        hits = enforceExactCity(stateOnlyHits);
+      }
 
       if (zipMatch && hits.length === 0 && zipEntry?.city && zipEntry?.state) {
         const zipState = findStateByInput(zipEntry.state);
         const fallbackFilters = {
           state: zipState?.abbreviation,
-          city: zipEntry.city
+          city: `%${toSlug(zipEntry.city).split('-').join('%')}%`
         };
-        hits = await performSearch(fallbackFilters);
+        hits = enforceExactCity(await performSearch(fallbackFilters));
         if (hits.length > 0) {
           setResultsError('No direct ZIP results. Showing the closest city matches instead.');
         }
@@ -355,27 +517,20 @@ const DirectorySearch: React.FC = () => {
         }
       }
 
-      setResults(await resolveSlugs(applyDistance(hits)));
+      if (hits.length === 0) {
+        hits = await getGuaranteedFallback({ preferClaimLocal: claimMode });
+      }
+
+      const resolved = await resolveSlugs(dedupeFacilities(hits));
+      setResults(applyDistance(resolved));
     } catch (err) {
+      console.error('Search failed:', err);
       try {
-        const offlineFilters = {
-          state: stateAbbr || (zipEntry ? findStateByInput(zipEntry.state)?.abbreviation : undefined),
-          city: zipMatch ? zipEntry?.city : (city || geoCity),
-          zip: zipMatch || undefined
-        };
-        let offlineHits = await performOfflineSearch(offlineFilters);
-        if (!claimMode && zipMatch && offlineHits.length === 0) {
-          const stateOnly = offlineFilters.state;
-          if (stateOnly) {
-            offlineHits = await performOfflineSearch({ state: stateOnly });
-            if (offlineHits.length > 0) {
-              setResultsError('No ZIP or city matches. Showing statewide results instead.');
-            }
-          }
-        }
-        setResults(applyDistance(offlineHits));
+        const fallbackHits = await getGuaranteedFallback({ preferClaimLocal: claimMode });
+        const resolved = await resolveSlugs(dedupeFacilities(fallbackHits));
+        setResults(applyDistance(resolved));
       } catch (fallbackError) {
-        console.error('Search failed:', fallbackError);
+        console.error('Search fallback failed:', fallbackError);
         setResultsError('Search failed. Please try again in a moment.');
       }
     } finally {
@@ -662,7 +817,15 @@ const DirectorySearch: React.FC = () => {
                   <div className="flex flex-col sm:flex-row gap-2">
                     <button
                       className="bg-charcoal text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-black"
-                      onClick={() => navigate(`/facility/${facility.id}`)}
+                      onClick={() =>
+                        navigate(
+                          buildFacilityDetailPath({
+                            id: facility.id,
+                            state: facility.state,
+                            city: facility.city,
+                          }),
+                        )
+                      }
                     >
                       View details
                     </button>

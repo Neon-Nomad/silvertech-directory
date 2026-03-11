@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Card } from '@/components/ui/Card';
 import { FacilityQuestion } from '@/src/hooks/useFacilityQuestions';
 import { useFacilityFaqs } from '@/src/hooks/useFacilityFaqs';
@@ -10,6 +10,7 @@ import { supabase } from '@/src/lib/supabase';
 import { trackEvent } from '@/src/utils/analytics';
 import { FEATURE_FLAGS } from '@/src/config/featureFlags';
 import { useLeadTracking } from '@/src/hooks/useLeadTracking';
+import { buildFacilityDetailPath } from '@/src/utils/facilityPath';
 
 interface FacilityQAProps {
   facilityId: string;
@@ -38,6 +39,7 @@ export const FacilityQA: React.FC<FacilityQAProps> = ({
   isPremiumFacility,
 }) => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { user } = useAuth();
   const { trackLeadEvent } = useLeadTracking();
   const { faqs: officialFaqs } = useFacilityFaqs(facilityId);
@@ -51,6 +53,9 @@ export const FacilityQA: React.FC<FacilityQAProps> = ({
   const [submittingReport, setSubmittingReport] = useState(false);
   const [reportError, setReportError] = useState<string | null>(null);
   const hasTrackedView = useRef(false);
+  const loginRedirect = `/login?redirect_to=${encodeURIComponent(
+    location.pathname || buildFacilityDetailPath({ id: facilityId })
+  )}`;
 
   useEffect(() => {
     const sessionKey = `qa_section_viewed_${facilityId}`;
@@ -101,7 +106,7 @@ export const FacilityQA: React.FC<FacilityQAProps> = ({
 
   const handleVote = async (questionId: string) => {
     if (!user) {
-      navigate(`/login?redirect_to=${encodeURIComponent(`/facility/${facilityId}`)}`);
+      navigate(loginRedirect);
       return;
     }
 
@@ -295,7 +300,7 @@ export const FacilityQA: React.FC<FacilityQAProps> = ({
                             type="button"
                             onClick={() => {
                               if (!user) {
-                                navigate(`/login?redirect_to=${encodeURIComponent(`/facility/${facilityId}`)}`);
+                                navigate(loginRedirect);
                                 return;
                               }
                               setReportingTarget({ kind: 'question', id: question.id });
@@ -338,7 +343,7 @@ export const FacilityQA: React.FC<FacilityQAProps> = ({
                                 type="button"
                                 onClick={() => {
                                   if (!user) {
-                                    navigate(`/login?redirect_to=${encodeURIComponent(`/facility/${facilityId}`)}`);
+                                    navigate(loginRedirect);
                                     return;
                                   }
                                   setReportingTarget({ kind: 'answer', id: answer.id });

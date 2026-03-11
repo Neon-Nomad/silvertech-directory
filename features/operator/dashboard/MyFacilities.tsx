@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/Button';
 import { supabase } from '@/src/lib/supabase';
 import { useAuth } from '@/src/context/AuthProvider';
 import { useNavigate, useSearchParams } from 'react-router-dom';
+import { buildFacilityDetailPath } from '@/src/utils/facilityPath';
 
 type FilterStatus = 'all' | 'verified' | 'pending';
 type SortMode = 'updated_desc' | 'name_asc';
@@ -381,7 +382,16 @@ export const MyFacilities: React.FC = () => {
                     <Button
                       variant="outline"
                       className="min-h-11 justify-center"
-                      onClick={() => window.open(`/facility/${facility.id}`, '_blank')}
+                      onClick={() =>
+                        window.open(
+                          buildFacilityDetailPath({
+                            id: facility.id,
+                            state: facility.state,
+                            city: facility.city,
+                          }),
+                          '_blank',
+                        )
+                      }
                     >
                       <ExternalLink className="mr-2 h-4 w-4" />
                       View Public Page

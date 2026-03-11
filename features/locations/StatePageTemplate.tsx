@@ -23,6 +23,13 @@ interface CityStat {
   slug: string;
 }
 
+const toSlug = (value: string) =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
 export const StatePageTemplate: React.FC = () => {
   const { state } = useParams<{ state: string }>();
   const stateDef = ALL_STATES.find(s => s.slug === state);
@@ -61,7 +68,7 @@ export const StatePageTemplate: React.FC = () => {
             .map(([city, count]) => ({
               city,
               count,
-              slug: city.toLowerCase().replace(/ /g, '-')
+              slug: toSlug(city)
             }))
             .sort((a, b) => a.city.localeCompare(b.city));
 
@@ -229,7 +236,7 @@ export const StatePageTemplate: React.FC = () => {
               {cities.slice(0, 6).map((city) => (
                 <Link 
                   key={city.city}
-                  to={`/senior-living/${stateDef.slug}/${city.slug}/assisted-living/`}
+                  to={`/senior-living/${stateDef.slug}/${city.slug}/`}
                   className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-all group"
                 >
                   <h3 className="text-lg font-bold text-slate-900 group-hover:text-primary-700 mb-2">
@@ -257,7 +264,7 @@ export const StatePageTemplate: React.FC = () => {
               {cities.map((city) => (
                 <Link 
                   key={city.city}
-                  to={`/senior-living/${stateDef.slug}/${city.slug}/assisted-living/`}
+                  to={`/senior-living/${stateDef.slug}/${city.slug}/`}
                   className="bg-white p-4 rounded-lg border border-slate-200 hover:border-primary-500 hover:shadow-md transition-all flex justify-between items-center group"
                 >
                   <span className="font-medium text-slate-700 group-hover:text-primary-700">

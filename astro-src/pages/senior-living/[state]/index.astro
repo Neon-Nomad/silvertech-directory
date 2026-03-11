@@ -26,12 +26,29 @@ const toTitleCase = (value: string) =>
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join(' ');
 
+const toRouteSlug = (value: string) =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
 const stateMetaBySlug = new Map(ALL_STATES.map((state) => [state.slug, state]));
 const stateMetaByAbbr = new Map(ALL_STATES.map((state) => [state.abbreviation.toLowerCase(), state]));
 const resolvedStateMeta =
   stateSlug
     ? stateMetaBySlug.get(stateSlug) || stateMetaByAbbr.get(stateSlug.toLowerCase()) || null
     : null;
+
+const toFacilityProfileHref = (facility: { id: string; state?: string; stateSlug?: string; city?: string; citySlug?: string }) => {
+  const facilityStateSlug =
+    facility.stateSlug ||
+    (facility.state ? stateMetaByAbbr.get(facility.state.toLowerCase())?.slug : null) ||
+    stateSlug ||
+    '';
+  const facilityCitySlug = facility.citySlug || toRouteSlug(facility.city || '');
+  return `/senior-living/${facilityStateSlug}/${facilityCitySlug}/${facility.id}/`;
+};
 
 const buildFallbackStateData = async () => {
   if (!stateSlug) return null;
@@ -400,7 +417,7 @@ const faqSchema = {
         <ul class="sl-pill-list">
           {topFacilities.slice(0, 6).map((facility) => (
             <li>
-              <a href={`/facility/${facility.id}/`}><strong>{facility.name}</strong></a>
+              <a href={toFacilityProfileHref(facility)}><strong>{facility.name}</strong></a>
               <div class="sl-muted">{facility.city}, {facility.state}</div>
             </li>
           ))}

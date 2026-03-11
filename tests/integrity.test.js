@@ -77,5 +77,56 @@ describeIfIntegration('Backend Integrity', () => {
     expect(error).toBeNull();
     expect(count).toBeGreaterThan(0);
   }, 15000);
-});
 
+  it('search_facilities RPC should return live rows for a valid state filter', async () => {
+    const { data, error } = await supabase.rpc('search_facilities', {
+      query_text: null,
+      state_filter: 'CA',
+      city_filter: null,
+      postal_filter: null,
+      limit_count: 20,
+      offset_count: 0,
+    });
+
+    expect(error).toBeNull();
+    expect(Array.isArray(data)).toBe(true);
+    expect(data.length).toBeGreaterThan(0);
+    expect((data[0] || {}).state).toBe('CA');
+  }, 15000);
+
+  it('search_facilities RPC should return deduplicated rows in-page', async () => {
+    const { data, error } = await supabase.rpc('search_facilities', {
+      query_text: 'Sunrise',
+      state_filter: null,
+      city_filter: null,
+      postal_filter: null,
+      limit_count: 50,
+      offset_count: 0,
+    });
+
+    expect(error).toBeNull();
+    expect(Array.isArray(data)).toBe(true);
+    expect(data.length).toBeGreaterThan(0);
+
+    const toSlug = (value) =>
+      String(value || '')
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/(^-|-$)/g, '');
+
+    const keys = new Set();
+    for (const row of data) {
+      const key = [
+        String(row.name || '').toLowerCase().trim(),
+        String(row.address_line1 || '').toLowerCase().trim(),
+        toSlug(row.city || ''),
+        String(row.state || '').trim().toUpperCase(),
+        String(row.postal_code || '').trim(),
+      ].join('|');
+      keys.add(key);
+    }
+
+    expect(keys.size).toBe(data.length);
+  }, 15000);
+});
