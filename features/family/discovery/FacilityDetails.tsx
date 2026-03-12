@@ -62,6 +62,16 @@ const safeJson = (value: unknown): Record<string, any> | null => {
   }
 };
 
+const toBoolean = (value: unknown): boolean => {
+  if (typeof value === 'boolean') return value;
+  if (typeof value === 'number') return value !== 0;
+  if (typeof value === 'string') {
+    const normalized = value.trim().toLowerCase();
+    return normalized === 'true' || normalized === '1' || normalized === 'yes';
+  }
+  return false;
+};
+
 const monthYear = (value?: string | null) => {
   if (!value) return null;
   const date = new Date(value);
@@ -226,7 +236,8 @@ export const FacilityDetails: React.FC = () => {
         }
 
         const canonicalPath = buildFacilityDetailPath({
-          id: data.id || routeFacilityId,
+          // Keep the active route id to avoid UUID <-> slug redirect ping-pong.
+          id: routeFacilityId,
           state: data.state || routeState,
           city: data.city || routeCity,
         });
@@ -366,6 +377,16 @@ export const FacilityDetails: React.FC = () => {
     license?.cms_provider_id ||
     canonicalPayload?.cms_provider_id ||
     'Pending';
+  const medicareCertified =
+    toBoolean(canonicalPayload?.medicare_certified) ||
+    Boolean(
+      facility.cms_provider_id ||
+      facility.cms_certification_number ||
+      facility.cms_certified_number ||
+      license?.cms_provider_id ||
+      canonicalPayload?.cms_provider_id
+    );
+  const medicareCertificationLabel = medicareCertified ? 'Certified' : 'Not listed';
   const ownershipType =
     facility.ownership_type || canonicalPayload?.ownership_type || canonicalPayload?.ownership || 'Not reported';
   const qualityRating = healthcareScore?.grade || canonicalPayload?.overall_rating || facility.overall_rating || 'N/A';
@@ -520,7 +541,7 @@ export const FacilityDetails: React.FC = () => {
             <div>
               <h1 className="text-4xl md:text-6xl font-bold">{facility.name}</h1>
               <p className="mt-3 text-sm font-semibold text-green-700 uppercase tracking-wide">
-                ✓ Verified Facility • CMS Verified: {cmsVerificationLabel}
+                ✓ Verified Facility • Medicare: {medicareCertificationLabel} • CMS Verified: {cmsVerificationLabel}
               </p>
             </div>
 
@@ -591,7 +612,11 @@ export const FacilityDetails: React.FC = () => {
                   <p className="mt-1 text-2xl font-mono tracking-wide">{licenseNumber}</p>
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.16em] text-white/55">CMS Provider ID</p>
+                  <p className="text-[10px] uppercase tracking-[0.16em] text-white/55">Medicare Status</p>
+                  <p className="mt-1 text-2xl font-mono tracking-wide">{medicareCertificationLabel.toUpperCase()}</p>
+                </div>
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.16em] text-white/55">Medicare Provider ID (CMS)</p>
                   <p className="mt-1 text-2xl font-mono tracking-wide">{cmsProviderId}</p>
                 </div>
                 <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/15">

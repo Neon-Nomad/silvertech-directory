@@ -127,7 +127,8 @@ if (facilities.length === 0 && stateSlug && citySlug) {
             : 'unknown',
     listingTier: facility.listingTier,
     licenseNumber: facility.licenseNumber,
-    cmsCertificationNumber: facility.medicareCertified ? facility.id : null,
+    cmsCertificationNumber: null,
+    medicareCertified: facility.medicareCertified,
   }));
 }
 if (facilities.length === 0) {
@@ -160,6 +161,11 @@ const hospitalMapPoints = hospitals
 const careColors = Object.fromEntries(getCareTypes().map((care) => [care.slug, care.mapColor]));
 const costBand = getCostBand(careType.slug);
 const visibleFacilities = facilities.slice(0, 30);
+const isFacilityMedicareCertified = (facility: { cmsCertificationNumber?: string | null; medicareCertified?: boolean | null }) =>
+  Boolean(facility.medicareCertified || facility.cmsCertificationNumber);
+const medicareCertifiedPct = Math.round(
+  (facilities.filter((item) => isFacilityMedicareCertified(item)).length / facilities.length) * 100,
+);
 const nearbyCareCitiesRaw =
   stateSlug && citySlug ? await getNearbyCities(stateSlug, citySlug, careType.slug) : [];
 const nearbyCareCities = nearbyCareCitiesRaw.map((nearby) => ({
@@ -281,7 +287,7 @@ const faqSchema = {
       </p>
       <div class="sl-hero-meta">
         <span><strong>{facilities.length.toLocaleString()}</strong> facilities in this category</span>
-        <span><strong>{Math.round((facilities.filter((item) => item.cmsCertificationNumber).length / facilities.length) * 100)}%</strong> Medicare-certified</span>
+        <span><strong>{medicareCertifiedPct}%</strong> Medicare-certified</span>
         <span><strong>{primaryHospital?.name || 'Hospital coverage by city'}</strong></span>
       </div>
       <div class="sl-hero-actions">
@@ -380,6 +386,9 @@ const faqSchema = {
               <span class="sl-muted">{facility.ownershipType || 'Ownership not listed'}</span>
             </div>
             <p class="sl-muted">{[facility.street, `${facility.city}, ${facility.state} ${facility.zip}`].filter(Boolean).join(', ')}</p>
+            <p class="sl-muted">
+              License: {facility.licenseNumber || 'Pending'} • Medicare: {isFacilityMedicareCertified(facility) ? 'Certified' : 'Not listed'}
+            </p>
             <div class="sl-badge-row">
               {facility.careTypes.map((careSlugItem) => {
                 const care = getCareTypeBySlug(careSlugItem);

@@ -94,6 +94,7 @@ const buildFallbackCityData = async () => {
     careTypes: facility.careTypes,
     ownershipType: facility.ownershipType,
     licenseNumber: facility.licenseNumber,
+    medicareCertified: facility.medicareCertified,
     listingTier: facility.listingTier,
   }));
 
@@ -171,6 +172,9 @@ const topFacilities = [...cityData.facilities]
     return a.name.localeCompare(b.name);
   })
   .slice(0, 24);
+
+const isFacilityMedicareCertified = (facility: { cmsCertificationNumber?: string | null; medicareCertified?: boolean | null }) =>
+  Boolean(facility.medicareCertified || facility.cmsCertificationNumber);
 
 const assistedCost = getCostBand('assisted-living');
 const memoryCost = getCostBand('memory-care');
@@ -444,6 +448,9 @@ const faqSchema = {
               <span class="sl-muted">{facility.ownershipType || 'Ownership not listed'}</span>
             </div>
             <p class="sl-muted">{[facility.street, `${facility.city}, ${facility.state} ${facility.zip}`].filter(Boolean).join(', ')}</p>
+            <p class="sl-muted">
+              License: {facility.licenseNumber || 'Pending'} • Medicare: {isFacilityMedicareCertified(facility) ? 'Certified' : 'Not listed'}
+            </p>
             <div class="sl-badge-row">
               {facility.careTypes.map((careTypeSlug) => {
                 const careType = getCareTypeBySlug(careTypeSlug);
