@@ -14,6 +14,8 @@ if (!enableStaticSeniorLiving) {
 const targets = [
   // Shared Astro CSS/assets required by state/city/guide pages.
   { src: path.join(astroRoot, '_astro'), dest: path.join(root, 'dist', '_astro') },
+  // Static compliance hubs under /states/*/regulations for crawlability.
+  { src: path.join(astroRoot, 'states'), dest: path.join(root, 'dist', 'states') },
   // High-cardinality /senior-living/* pages are served via the React runtime + SPA fallback.
   // Publishing all static variants (city + care-type pages) can exceed Netlify deploy upload limits.
   ...(enableStaticSeniorLiving

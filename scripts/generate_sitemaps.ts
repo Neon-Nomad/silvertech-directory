@@ -278,6 +278,10 @@ const loadFacilityRows = async (): Promise<Array<{ routeId: string; stateSlug: s
 async function generateSitemaps() {
   console.log('Starting sitemap generation...');
 
+  const regulatoryEntries = ALL_STATES.map((state) =>
+    toStaticEntry(`${BASE_URL}/states/${state.slug}/regulations`, 0.7),
+  );
+
   const staticEntries = uniqueEntries(
     [
       `${BASE_URL}/`,
@@ -311,7 +315,9 @@ async function generateSitemaps() {
       `${BASE_URL}/products/dementia-care`,
       `${BASE_URL}/products/daily-living-aids`,
       `${BASE_URL}/products/outdoor-travel`,
-    ].map((url) => toStaticEntry(url, url === `${BASE_URL}/` ? 0.7 : 0.6)),
+    ]
+      .map((url) => toStaticEntry(url, url === `${BASE_URL}/` ? 0.7 : 0.6))
+      .concat(regulatoryEntries),
   );
 
   console.log('Loading state/city/care-type path seeds from data contract...');
