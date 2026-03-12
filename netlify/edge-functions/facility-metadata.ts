@@ -224,13 +224,17 @@ const fetchFacilityFromSupabase = async (
     'id,name,city,state,address_line1,address_line2,postal_code,phone,website_url,ownership_type,cms_provider_id,cms_certification_number,cms_certified_number,updated_at,facility_licensing(license_number,bed_capacity,updated_at)';
 
   const runQuery = async (query: string) => {
-    const response = await fetch(`${base}?select=${encodeURIComponent(select)}&${query}&limit=1`, {
-      headers,
-    });
-    if (!response.ok) return cacheKey ? setCacheValue(facilityRecordCache, cacheKey, null) : null;
-    const rows = (await response.json()) as FacilityRecord[];
-    const firstRow = rows?.[0] || null;
-    return cacheKey ? setCacheValue(facilityRecordCache, cacheKey, firstRow) : firstRow;
+    try {
+      const response = await fetch(`${base}?select=${encodeURIComponent(select)}&${query}&limit=1`, {
+        headers,
+      });
+      if (!response.ok) return cacheKey ? setCacheValue(facilityRecordCache, cacheKey, null) : null;
+      const rows = (await response.json()) as FacilityRecord[];
+      const firstRow = rows?.[0] || null;
+      return cacheKey ? setCacheValue(facilityRecordCache, cacheKey, firstRow) : firstRow;
+    } catch {
+      return cacheKey ? setCacheValue(facilityRecordCache, cacheKey, null) : null;
+    }
   };
 
   if (args.id && UUID_REGEX.test(args.id)) {
@@ -368,136 +372,162 @@ const hiddenH1 = (name: string) =>
     name
   )}</h1>`;
 
-export default async (request: Request, context: Context) => {
-  const startedAt = Date.now();
-  const url = new URL(request.url);
-  const pathParts = parseFacilityPath(url.pathname);
-  if (!pathParts) return context.next();
-  const { facilityPathId } = pathParts;
-  let slugLookupMs = 0;
-  let supabaseLookupMs = 0;
-  let rewriteMs = 0;
-
-  const supabaseUrl = getNetlifyEnv('VITE_SUPABASE_URL');
-  const supabaseAnonKey = getNetlifyEnv('VITE_SUPABASE_ANON_KEY');
-
-  let slugEntry: FacilityIndexItem | null = null;
-  if (!UUID_REGEX.test(facilityPathId)) {
-    const slugLookupStartedAt = Date.now();
-    slugEntry = await resolveSlugEntry(request, facilityPathId, url);
-    slugLookupMs = Date.now() - slugLookupStartedAt;
+const errorToMessage = (error: unknown): string => {
+  if (error instanceof Error) return error.message;
+  if (typeof error === 'string') return error;
+  try {
+    return JSON.stringify(error);
+  } catch {
+    return 'unknown error';
   }
+};
 
-  const supabaseLookupStartedAt = Date.now();
-  const facilityRecord =
-    supabaseUrl && supabaseAnonKey
-      ? await fetchFacilityFromSupabase(supabaseUrl, supabaseAnonKey, {
-          id: facilityPathId,
-          slugEntry,
+export default async (request: Request, context: Context) => {
+  try {
+    const startedAt = Date.now();
+    const url = new URL(request.url);
+    const pathParts = parseFacilityPath(url.pathname);
+    if (!pathParts) return context.next();
+    const { facilityPathId } = pathParts;
+    let slugLookupMs = 0;
+    let supabaseLookupMs = 0;
+    let rewriteMs = 0;
+
+    const supabaseUrl = getNetlifyEnv('VITE_SUPABASE_URL');
+    const supabaseAnonKey = getNetlifyEnv('VITE_SUPABASE_ANON_KEY');
+
+    let slugEntry: FacilityIndexItem | null = null;
+    if (!UUID_REGEX.test(facilityPathId)) {
+      const slugLookupStartedAt = Date.now();
+      slugEntry = await resolveSlugEntry(request, facilityPathId, url);
+      slugLookupMs = Date.now() - slugLookupStartedAt;
+    }
+
+    const supabaseLookupStartedAt = Date.now();
+    const facilityRecord =
+      supabaseUrl && supabaseAnonKey
+        ? await fetchFacilityFromSupabase(supabaseUrl, supabaseAnonKey, {
+            id: facilityPathId,
+            slugEntry,
+          })
+        : null;
+    supabaseLookupMs = Date.now() - supabaseLookupStartedAt;
+
+    if (!facilityRecord && !slugEntry) {
+      return context.next();
+    }
+
+    const meta = buildMetadata(pathParts, facilityRecord, slugEntry);
+    const response = await context.next();
+    const contentType = response.headers.get('content-type') || '';
+    if (!contentType.includes('text/html')) return response;
+
+    const headMeta = buildHeadMeta(meta);
+    const initialH1 = hiddenH1(meta.name);
+    const rewriteStartedAt = Date.now();
+
+    let transformed: Response;
+    try {
+      transformed = new HTMLRewriter()
+        .on('title', {
+          element(element) {
+            element.setInnerContent(meta.title);
+          },
         })
-      : null;
-  supabaseLookupMs = Date.now() - supabaseLookupStartedAt;
+        .on('meta[name="description"]', {
+          element(element) {
+            element.setAttribute('content', meta.description);
+          },
+        })
+        .on('meta[property="og:title"]', {
+          element(element) {
+            element.setAttribute('content', meta.title);
+          },
+        })
+        .on('meta[property="og:description"]', {
+          element(element) {
+            element.setAttribute('content', meta.description);
+          },
+        })
+        .on('meta[property="og:url"]', {
+          element(element) {
+            element.setAttribute('content', meta.canonical);
+          },
+        })
+        .on('meta[property="og:image"]', {
+          element(element) {
+            element.setAttribute('content', meta.shareImage);
+          },
+        })
+        .on('meta[name="twitter:title"]', {
+          element(element) {
+            element.setAttribute('content', meta.title);
+          },
+        })
+        .on('meta[name="twitter:description"]', {
+          element(element) {
+            element.setAttribute('content', meta.description);
+          },
+        })
+        .on('meta[name="twitter:image"]', {
+          element(element) {
+            element.setAttribute('content', meta.shareImage);
+          },
+        })
+        .on('link[rel="canonical"]', {
+          element(element) {
+            element.setAttribute('href', meta.canonical);
+          },
+        })
+        .on('head', {
+          element(element) {
+            element.append(headMeta, { html: true });
+          },
+        })
+        .on('body', {
+          element(element) {
+            element.prepend(initialH1, { html: true });
+          },
+        })
+        .transform(response);
+    } catch (rewriteError) {
+      console.error(
+        `[facility-metadata] html rewrite failed for ${url.pathname}: ${errorToMessage(rewriteError)}`
+      );
+      return response;
+    }
+    rewriteMs = Date.now() - rewriteStartedAt;
 
-  if (!facilityRecord && !slugEntry) {
+    const totalMs = Date.now() - startedAt;
+    const headers = new Headers(transformed.headers);
+    headers.set('Cache-Control', FACILITY_CACHE_CONTROL);
+    headers.set(
+      'Server-Timing',
+      [
+        `edge;dur=${totalMs.toFixed(1)}`,
+        `slug;dur=${slugLookupMs.toFixed(1)}`,
+        `db;dur=${supabaseLookupMs.toFixed(1)}`,
+        `rewrite;dur=${rewriteMs.toFixed(1)}`,
+      ].join(', ')
+    );
+
+    if (totalMs > SLOW_EDGE_WARN_MS) {
+      console.warn(
+        `[facility-metadata] slow edge request ${totalMs}ms for ${url.pathname} (slug=${slugLookupMs}ms db=${supabaseLookupMs}ms rewrite=${rewriteMs}ms)`
+      );
+    }
+
+    return new Response(transformed.body, {
+      status: transformed.status,
+      statusText: transformed.statusText,
+      headers,
+    });
+  } catch (error) {
+    console.error(
+      `[facility-metadata] unhandled edge error for ${request.url}: ${errorToMessage(error)}`
+    );
     return context.next();
   }
-
-  const meta = buildMetadata(pathParts, facilityRecord, slugEntry);
-  const response = await context.next();
-  const contentType = response.headers.get('content-type') || '';
-  if (!contentType.includes('text/html')) return response;
-
-  const headMeta = buildHeadMeta(meta);
-  const initialH1 = hiddenH1(meta.name);
-  const rewriteStartedAt = Date.now();
-  const transformed = new HTMLRewriter()
-    .on('title', {
-      element(element) {
-        element.setInnerContent(meta.title);
-      },
-    })
-    .on('meta[name="description"]', {
-      element(element) {
-        element.setAttribute('content', meta.description);
-      },
-    })
-    .on('meta[property="og:title"]', {
-      element(element) {
-        element.setAttribute('content', meta.title);
-      },
-    })
-    .on('meta[property="og:description"]', {
-      element(element) {
-        element.setAttribute('content', meta.description);
-      },
-    })
-    .on('meta[property="og:url"]', {
-      element(element) {
-        element.setAttribute('content', meta.canonical);
-      },
-    })
-    .on('meta[property="og:image"]', {
-      element(element) {
-        element.setAttribute('content', meta.shareImage);
-      },
-    })
-    .on('meta[name="twitter:title"]', {
-      element(element) {
-        element.setAttribute('content', meta.title);
-      },
-    })
-    .on('meta[name="twitter:description"]', {
-      element(element) {
-        element.setAttribute('content', meta.description);
-      },
-    })
-    .on('meta[name="twitter:image"]', {
-      element(element) {
-        element.setAttribute('content', meta.shareImage);
-      },
-    })
-    .on('link[rel="canonical"]', {
-      element(element) {
-        element.setAttribute('href', meta.canonical);
-      },
-    })
-    .on('head', {
-      element(element) {
-        element.append(headMeta, { html: true });
-      },
-    })
-    .on('body', {
-      element(element) {
-        element.prepend(initialH1, { html: true });
-      },
-    })
-    .transform(response);
-  rewriteMs = Date.now() - rewriteStartedAt;
-
-  const totalMs = Date.now() - startedAt;
-  const headers = new Headers(transformed.headers);
-  headers.set('Cache-Control', FACILITY_CACHE_CONTROL);
-  headers.set(
-    'Server-Timing',
-    [
-      `edge;dur=${totalMs.toFixed(1)}`,
-      `slug;dur=${slugLookupMs.toFixed(1)}`,
-      `db;dur=${supabaseLookupMs.toFixed(1)}`,
-      `rewrite;dur=${rewriteMs.toFixed(1)}`,
-    ].join(', ')
-  );
-
-  if (totalMs > SLOW_EDGE_WARN_MS) {
-    console.warn(
-      `[facility-metadata] slow edge request ${totalMs}ms for ${url.pathname} (slug=${slugLookupMs}ms db=${supabaseLookupMs}ms rewrite=${rewriteMs}ms)`
-    );
-  }
-
-  return new Response(transformed.body, {
-    status: transformed.status,
-    statusText: transformed.statusText,
-    headers,
-  });
 };
 
 export const config = {
