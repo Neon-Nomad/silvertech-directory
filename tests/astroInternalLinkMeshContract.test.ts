@@ -5,16 +5,12 @@ import { resolve } from 'node:path';
 const read = (file: string) => readFileSync(resolve(process.cwd(), file), 'utf8');
 
 describe('astro internal link mesh contract', () => {
-  it('ensures facility pages include a persistent guide and licensing link mesh', () => {
-    const facilityTemplate = read('astro-src/pages/facility/[id].astro');
+  it('ensures city templates link facilities via hierarchical helper paths', () => {
+    const cityTemplate = read('features/locations/CityPageTemplate.tsx');
 
-    expect(facilityTemplate).toContain('const primaryGuideLink = isMemoryCareTagged');
-    expect(facilityTemplate).toContain('const secondaryGuideLink = isMemoryCareTagged');
-    expect(facilityTemplate).toContain('Planning and Licensing Links');
-    expect(facilityTemplate).toContain('Understanding {stateName} licensing and oversight requirements');
-    expect(facilityTemplate).toContain('href={primaryGuideLink.href}');
-    expect(facilityTemplate).toContain('href={secondaryGuideLink.href}');
-    expect(facilityTemplate).toContain('Senior care in {facility.city}, {facility.state}');
+    expect(cityTemplate).toContain("import { buildFacilityDetailPath, isCareTypeRouteSlug } from '@/src/utils/facilityPath';");
+    expect(cityTemplate).toContain('to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}');
+    expect(cityTemplate).toContain('url: `https://silvertechdirectory.com${buildFacilityDetailPath({ id: f.id, state: f.state, city: f.city })}`,');
   });
 
   it('ensures guide pages include shared geo backlinks to city hubs', () => {
