@@ -26,6 +26,10 @@ import {
 } from '../../../../../lib/seniorLivingData';
 
 export async function getStaticPaths() {
+  const enableStaticSeniorLiving =
+    process.env.ENABLE_STATIC_SENIOR_LIVING === '1' ||
+    process.env.ENABLE_STATIC_SENIOR_LIVING === 'true';
+  if (!enableStaticSeniorLiving) return [];
   const combos = await getAllCityCareCombos();
   return combos.map(({ state, city, careTypeSlug }) => ({
     params: { state, city, care: careTypeSlug },

@@ -19,6 +19,10 @@ import {
 } from '../../../../lib/seniorLivingData';
 
 export async function getStaticPaths() {
+  const enableStaticSeniorLiving =
+    process.env.ENABLE_STATIC_SENIOR_LIVING === '1' ||
+    process.env.ENABLE_STATIC_SENIOR_LIVING === 'true';
+  if (!enableStaticSeniorLiving) return [];
   const cities = await getAllCities();
   return cities.map(({ state, city }) => ({ params: { state, city } }));
 }

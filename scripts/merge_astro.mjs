@@ -3,10 +3,22 @@ import path from 'node:path';
 
 const root = process.cwd();
 const astroRoot = path.join(root, 'dist-astro');
+const enableStaticSeniorLiving =
+  process.env.ENABLE_STATIC_SENIOR_LIVING === '1' ||
+  process.env.ENABLE_STATIC_SENIOR_LIVING === 'true';
+
+if (!enableStaticSeniorLiving) {
+  console.log('[merge_astro] Skipping static /senior-living copy (runtime route mode).');
+}
+
 const targets = [
   // Shared Astro CSS/assets required by state/city/guide pages.
   { src: path.join(astroRoot, '_astro'), dest: path.join(root, 'dist', '_astro') },
-  { src: path.join(astroRoot, 'senior-living'), dest: path.join(root, 'dist', 'senior-living') },
+  // High-cardinality /senior-living/* pages are served via the React runtime + SPA fallback.
+  // Publishing all static variants (city + care-type pages) can exceed Netlify deploy upload limits.
+  ...(enableStaticSeniorLiving
+    ? [{ src: path.join(astroRoot, 'senior-living'), dest: path.join(root, 'dist', 'senior-living') }]
+    : []),
   // Facility detail URLs resolve through the React route under `/senior-living/:state/:city/:leaf`
   // so the full dynamic template renders instead of the static Astro shell.
   { src: path.join(astroRoot, 'guides'), dest: path.join(root, 'dist', 'guides') }
