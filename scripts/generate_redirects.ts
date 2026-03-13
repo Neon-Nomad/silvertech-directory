@@ -14,26 +14,17 @@ if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
   process.exit(1);
 }
 
-type FacilityIndexEntry = {
+type FacilityRedirectSeedRow = {
   id: string;
-  name: string;
-  city: string;
-  state: string;
-  postal_code?: string;
+  name: string | null;
+  city: string | null;
+  state: string | null;
+  address_line1: string | null;
+  postal_code: string | null;
+  phone: string | null;
+  state_license_number: string | null;
 };
 
-const normalize = (value?: string | null) =>
-  (value || '')
-    .toString()
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, ' ')
-    .replace(/[^a-z0-9 ]/g, '');
-
-const makeKey = (name?: string | null, city?: string | null, state?: string | null, postal?: string | null) =>
-  `${normalize(name)}|${normalize(city)}|${(state || '').toString().trim().toUpperCase()}|${(postal || '')
-    .toString()
-    .trim()}`;
 const toSlug = (value?: string | null) =>
   (value || '')
     .toString()
@@ -55,22 +46,38 @@ const resolveStateSlug = (state?: string | null) => {
   );
 };
 
-const rootDir = process.cwd();
-const indexPath = path.join(rootDir, 'public', 'facilities_index.json');
-if (!fs.existsSync(indexPath)) {
-  console.error(`Missing facilities index file at ${indexPath}`);
-  process.exit(1);
-}
-
-const indexEntries = JSON.parse(fs.readFileSync(indexPath, 'utf-8')) as FacilityIndexEntry[];
-const indexMap = new Map<string, string>();
-
-for (const entry of indexEntries) {
-  const key = makeKey(entry.name, entry.city, entry.state, entry.postal_code);
-  if (!indexMap.has(key)) {
-    indexMap.set(key, entry.id);
+const hashString = (value: string): string => {
+  let hash = 5381;
+  for (let i = 0; i < value.length; i += 1) {
+    hash = (hash * 33) ^ value.charCodeAt(i);
   }
-}
+  return (hash >>> 0).toString(36);
+};
+
+const buildFacilityRouteId = (facility: FacilityRedirectSeedRow): string => {
+  const keyParts = [
+    facility.name || '',
+    facility.city || '',
+    facility.state || '',
+    facility.state_license_number || '',
+    facility.phone || '',
+    facility.address_line1 || '',
+    facility.postal_code || '',
+    facility.id || '',
+  ];
+  const key = keyParts.filter(Boolean).join('|');
+  const baseParts = [
+    facility.name || '',
+    facility.city || '',
+    facility.state || '',
+    facility.state_license_number || facility.postal_code || facility.phone || '',
+  ];
+  const base = toSlug(baseParts.filter(Boolean).join(' '));
+  const hash = hashString(key || facility.id);
+  return base ? `${base}-${hash}` : `facility-${hash}`;
+};
+
+const rootDir = process.cwd();
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
   auth: { persistSession: false },
@@ -78,14 +85,15 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
 
 const fetchFacilities = async () => {
   const pageSize = 1000;
-  let from = 0;
-  const rows: Array<{ id: string; name: string; city: string; state: string; postal_code: string | null }> = [];
+  let page = 0;
+  const rows: FacilityRedirectSeedRow[] = [];
 
   while (true) {
     const { data, error } = await supabase
       .from('facilities')
-      .select('id,name,city,state,postal_code')
-      .range(from, from + pageSize - 1);
+      .select('id,name,city,state,address_line1,postal_code,phone,state_license_number,created_at')
+      .order('created_at', { ascending: true })
+      .range(page * pageSize, (page + 1) * pageSize - 1);
 
     if (error) {
       throw error;
@@ -97,7 +105,7 @@ const fetchFacilities = async () => {
     if (data.length < pageSize) {
       break;
     }
-    from += pageSize;
+    page += 1;
   }
 
   return rows;
@@ -107,26 +115,27 @@ const buildRedirects = async () => {
   const facilities = await fetchFacilities();
 
   const redirectLines: string[] = [];
+  const seenRouteIds = new Map<string, number>();
   let matched = 0;
   let missing = 0;
 
   for (const facility of facilities) {
-    const key = makeKey(facility.name, facility.city, facility.state, facility.postal_code);
-    const slug = indexMap.get(key);
-    if (!slug) {
-      missing += 1;
-      continue;
-    }
     const stateSlug = resolveStateSlug(facility.state);
     const citySlug = toSlug(facility.city);
     if (!stateSlug || !citySlug) {
       missing += 1;
       continue;
     }
+
+    const baseRouteId = buildFacilityRouteId(facility);
+    const currentCount = seenRouteIds.get(baseRouteId) || 0;
+    seenRouteIds.set(baseRouteId, currentCount + 1);
+    const routeId = currentCount === 0 ? baseRouteId : `${baseRouteId}-${currentCount + 1}`;
+
     matched += 1;
     redirectLines.push(
       `/facility/${encodeURIComponent(facility.id)} /senior-living/${stateSlug}/${citySlug}/${encodeURIComponent(
-        slug
+        routeId
       )}/ 301`
     );
   }
