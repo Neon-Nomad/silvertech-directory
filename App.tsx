@@ -169,12 +169,6 @@ const LegacyDashboardEditRedirect: React.FC = () => {
   return <Navigate to={`/dashboard/facility/${id}/edit`} replace />;
 };
 
-const LegacyFacilityRouteRedirect: React.FC = () => {
-  const { id } = useParams<{ id?: string }>();
-  if (!id) return <Navigate to="/search" replace />;
-  return <Navigate to={`/senior-living/unknown/unknown/${encodeURIComponent(id)}/`} replace />;
-};
-
 const SeniorLivingLeafRoute: React.FC = () => {
   const { leaf } = useParams<{ leaf?: string }>();
   if (isCareTypeRouteSlug(leaf)) {
@@ -254,7 +248,7 @@ function App() {
                     <Routes>
                       <Route path="/" element={<Home />} />
                       <Route path="/search" element={<DirectorySearch />} />
-                      <Route path="/facility/:id" element={<LegacyFacilityRouteRedirect />} />
+                      <Route path="/facility/:id" element={<FacilityDetails />} />
 
                     {/* Auth Routes */}
                     <Route path="/login" element={<LoginPage />} />
