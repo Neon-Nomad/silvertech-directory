@@ -14,6 +14,13 @@ describe('indexing coverage fix contract', () => {
     expect(netlifyConfig).toContain('to = "/senior-living/:state/:city/"');
   });
 
+  it('keeps generated _redirects aligned to canonical host and legacy path rules', () => {
+    const redirectsGenerator = read('scripts/generate_redirects.ts');
+
+    expect(redirectsGenerator).toContain('http://www.silvertechdirectory.com/* https://silvertechdirectory.com/:splat 301!');
+    expect(redirectsGenerator).toContain('/assisted-living/:state/cities/:city /senior-living/:state/:city/ 301');
+  });
+
   it('ships static states pages into dist during hybrid merge', () => {
     const mergeScript = read('scripts/merge_astro.mjs');
 
@@ -25,7 +32,7 @@ describe('indexing coverage fix contract', () => {
     const regulationsTemplate = read('astro-src/pages/states/[state]/regulations/index.astro');
 
     expect(regulationsTemplate).toContain('export async function getStaticPaths()');
-    expect(regulationsTemplate).toContain('const canonical = `https://silvertechdirectory.com/states/${stateMeta.slug}/regulations`;');
+    expect(regulationsTemplate).toContain('const canonical = `https://silvertechdirectory.com/states/${stateMeta.slug}/regulations/`;');
     expect(regulationsTemplate).toContain('<h1>{stateMeta.name} Senior Care Regulations</h1>');
   });
 
@@ -33,6 +40,6 @@ describe('indexing coverage fix contract', () => {
     const sitemapScript = read('scripts/generate_sitemaps.ts');
 
     expect(sitemapScript).toContain('const regulatoryEntries = ALL_STATES.map((state) =>');
-    expect(sitemapScript).toContain('toStaticEntry(`${BASE_URL}/states/${state.slug}/regulations`, 0.7)');
+    expect(sitemapScript).toContain('toStaticEntry(`${BASE_URL}/states/${state.slug}/regulations/`, 0.7)');
   });
 });

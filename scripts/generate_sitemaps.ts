@@ -279,7 +279,7 @@ async function generateSitemaps() {
   console.log('Starting sitemap generation...');
 
   const regulatoryEntries = ALL_STATES.map((state) =>
-    toStaticEntry(`${BASE_URL}/states/${state.slug}/regulations`, 0.7),
+    toStaticEntry(`${BASE_URL}/states/${state.slug}/regulations/`, 0.7),
   );
 
   const staticEntries = uniqueEntries(

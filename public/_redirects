@@ -1,4 +1,11 @@
 # Auto-generated redirect rules. Do not edit manually.
+# Canonical host redirects
+http://www.silvertechdirectory.com/* https://silvertechdirectory.com/:splat 301!
+http://silvertechdirectory.com/* https://silvertechdirectory.com/:splat 301!
+https://www.silvertechdirectory.com/* https://silvertechdirectory.com/:splat 301!
+# Legacy URL shape redirects
+/assisted-living/:state/cities/:city /senior-living/:state/:city/ 301
+/assisted-living/:state/cities/:city/ /senior-living/:state/:city/ 301
 # Static trust artifacts must bypass SPA fallback
 /help-registry.json /help-registry.json 200!
 /sitemap.xml /sitemap.xml 200!
