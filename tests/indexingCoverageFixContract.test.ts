@@ -21,6 +21,7 @@ describe('indexing coverage fix contract', () => {
     expect(redirectsGenerator).toContain('/assisted-living/:state/cities/:city /senior-living/:state/:city/ 301');
     expect(redirectsGenerator).toContain("state_license_number");
     expect(redirectsGenerator).toContain('const buildFacilityRouteId = (facility: FacilityRedirectSeedRow): string =>');
+    expect(redirectsGenerator).toContain(".order('id', { ascending: true })");
   });
 
   it('ships static states pages into dist during hybrid merge', () => {
@@ -43,5 +44,6 @@ describe('indexing coverage fix contract', () => {
 
     expect(sitemapScript).toContain('const regulatoryEntries = ALL_STATES.map((state) =>');
     expect(sitemapScript).toContain('toStaticEntry(`${BASE_URL}/states/${state.slug}/regulations/`, 0.7)');
+    expect(sitemapScript).toContain(".order('id', { ascending: true })");
   });
 });

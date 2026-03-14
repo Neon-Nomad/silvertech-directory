@@ -22,6 +22,7 @@ type FacilityRecord = {
   name?: string;
   city?: string;
   state?: string;
+  state_license_number?: string;
   address_line1?: string;
   address_line2?: string;
   postal_code?: string;
@@ -117,6 +118,45 @@ const parseFacilityPath = (pathname: string): ParsedFacilityPath | null => {
 const inferStateAbbrFromSlug = (slug: string) => {
   const match = slug.match(/-([a-z]{2})-(?:\d{5}(?:-\d{4})?)-[a-z0-9]+$/i);
   return match?.[1]?.toUpperCase() || null;
+};
+
+const toSlug = (value: string): string =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
+const hashString = (value: string): string => {
+  let hash = 5381;
+  for (let i = 0; i < value.length; i += 1) {
+    hash = (hash * 33) ^ value.charCodeAt(i);
+  }
+  return (hash >>> 0).toString(36);
+};
+
+const buildFacilityRouteId = (
+  facilityPathId: string,
+  record: FacilityRecord,
+  slugEntry: FacilityIndexItem | null
+): string => {
+  const licenseNumber =
+    toCleanString(record.facility_licensing?.[0]?.license_number, '') ||
+    toCleanString(record.state_license_number, '');
+  const name = toCleanString(record.name ?? slugEntry?.name, '');
+  const city = toCleanString(record.city ?? slugEntry?.city, '');
+  const state = toCleanString(record.state ?? slugEntry?.state, '');
+  const addressLine1 = toCleanString(record.address_line1 ?? slugEntry?.address_line1, '');
+  const postalCode = toCleanString(record.postal_code ?? slugEntry?.postal_code, '');
+  const phone = toCleanString(record.phone ?? slugEntry?.phone, '');
+
+  const keyParts = [name, city, state, licenseNumber, phone, addressLine1, postalCode, facilityPathId];
+  const key = keyParts.filter(Boolean).join('|');
+  const baseParts = [name, city, state, licenseNumber || postalCode || phone || ''];
+  const base = toSlug(baseParts.filter(Boolean).join(' '));
+  const hash = hashString(key || facilityPathId);
+
+  return base ? `${base}-${hash}` : `facility-${hash}`;
 };
 
 const escapeHtml = (value: string) =>
@@ -221,7 +261,7 @@ const fetchFacilityFromSupabase = async (
     accept: 'application/json',
   };
   const select =
-    'id,name,city,state,address_line1,address_line2,postal_code,phone,website_url,ownership_type,cms_provider_id,cms_certification_number,cms_certified_number,updated_at,facility_licensing(license_number,bed_capacity,updated_at)';
+    'id,name,city,state,state_license_number,address_line1,address_line2,postal_code,phone,website_url,ownership_type,cms_provider_id,cms_certification_number,cms_certified_number,updated_at,facility_licensing(license_number,bed_capacity,updated_at)';
 
   const runQuery = async (query: string) => {
     try {
@@ -412,6 +452,22 @@ export default async (request: Request, context: Context) => {
           })
         : null;
     supabaseLookupMs = Date.now() - supabaseLookupStartedAt;
+
+    if (UUID_REGEX.test(facilityPathId) && facilityRecord) {
+      const routeId = buildFacilityRouteId(facilityPathId, facilityRecord, slugEntry);
+      if (routeId && routeId !== facilityPathId) {
+        const canonicalPath = `/senior-living/${pathParts.stateSlug}/${pathParts.citySlug}/${encodeURIComponent(
+          routeId
+        )}/`;
+        const normalizedCurrentPath = url.pathname.replace(/\/+$/, '') || '/';
+        const normalizedCanonicalPath = canonicalPath.replace(/\/+$/, '') || '/';
+        if (normalizedCurrentPath !== normalizedCanonicalPath) {
+          const redirectUrl = new URL(request.url);
+          redirectUrl.pathname = canonicalPath;
+          return Response.redirect(redirectUrl.toString(), 301);
+        }
+      }
+    }
 
     if (!facilityRecord && !slugEntry) {
       return context.next();

@@ -14,6 +14,7 @@ import { useFacilityQuestions } from '@/src/hooks/useFacilityQuestions';
 import { trackEvent } from '@/src/utils/analytics';
 import { useLeadTracking } from '@/src/hooks/useLeadTracking';
 import { buildFacilityCanonicalUrl, buildFacilityDetailPath } from '@/src/utils/facilityPath';
+import { buildFacilityRouteId } from '@/src/utils/facilityRouteId';
 
 const toRad = (value: number) => (value * Math.PI) / 180;
 
@@ -227,7 +228,19 @@ export const FacilityDetails: React.FC = () => {
         setFacility(data);
 
         if (isUuid(routeFacilityId)) {
-          const slug = await resolveSlug(data);
+          const slugFromIndex = await resolveSlug(data);
+          const slugFromRecord = buildFacilityRouteId({
+            id: data.id || routeFacilityId,
+            name: data.name,
+            city: data.city,
+            state: data.state,
+            address_line1: data.address_line1,
+            postal_code: data.postal_code,
+            phone: data.phone,
+            state_license_number: data.state_license_number,
+            facility_licensing: data.facility_licensing,
+          });
+          const slug = slugFromIndex !== routeFacilityId ? slugFromIndex : slugFromRecord || routeFacilityId;
           if (slug !== routeFacilityId) {
             setResolvedSlug(slug);
             navigate(buildFacilityDetailPath({ id: slug, state: data.state, city: data.city }), { replace: true });
@@ -430,7 +443,18 @@ export const FacilityDetails: React.FC = () => {
         : null;
 
   const isUuidUrl = isUuid(routeFacilityId);
-  const canonicalSlug = isUuidUrl ? resolvedSlug : routeFacilityId;
+  const derivedRouteSlug = buildFacilityRouteId({
+    id: facility.id || routeFacilityId,
+    name: facility.name,
+    city: facility.city,
+    state: facility.state,
+    address_line1: facility.address_line1,
+    postal_code: facility.postal_code,
+    phone: facility.phone,
+    state_license_number: facility.state_license_number,
+    facility_licensing: facility.facility_licensing,
+  });
+  const canonicalSlug = isUuidUrl ? resolvedSlug || derivedRouteSlug : routeFacilityId;
   const canonicalUrl = canonicalSlug
     ? buildFacilityCanonicalUrl({
         id: canonicalSlug,
@@ -498,7 +522,7 @@ export const FacilityDetails: React.FC = () => {
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
-        {isUuidUrl && <meta name="robots" content="noindex, follow" />}
+        {isUuidUrl && !canonicalSlug && <meta name="robots" content="noindex, follow" />}
         {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="SilverTech Directory" />

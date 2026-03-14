@@ -234,6 +234,7 @@ const loadFacilityRows = async (): Promise<Array<{ routeId: string; stateSlug: s
       .from('facilities')
       .select('id,name,city,state,address_line1,postal_code,phone,state_license_number,created_at')
       .order('created_at', { ascending: true })
+      .order('id', { ascending: true })
       .range(page * pageSize, (page + 1) * pageSize - 1);
 
     if (error) {
