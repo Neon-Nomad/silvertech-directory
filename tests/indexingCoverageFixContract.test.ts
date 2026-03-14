@@ -19,6 +19,8 @@ describe('indexing coverage fix contract', () => {
 
     expect(redirectsGenerator).toContain('http://www.silvertechdirectory.com/* https://silvertechdirectory.com/:splat 301!');
     expect(redirectsGenerator).toContain('/assisted-living/:state/cities/:city /senior-living/:state/:city/ 301');
+    expect(redirectsGenerator).not.toContain('/assets/index-:hash.js /assets/index.js 200');
+    expect(redirectsGenerator).not.toContain('/assets/vendor-:hash.js /assets/vendor.js 200');
     expect(redirectsGenerator).toContain("state_license_number");
     expect(redirectsGenerator).toContain('const buildFacilityRouteId = (facility: FacilityRedirectSeedRow): string =>');
     expect(redirectsGenerator).toContain(".order('id', { ascending: true })");

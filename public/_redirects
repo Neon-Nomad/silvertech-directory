@@ -11,14 +11,6 @@ https://www.silvertechdirectory.com/* https://silvertechdirectory.com/:splat 301
 /sitemap.xml /sitemap.xml 200!
 /sitemap-index.xml /sitemap-index.xml 200!
 /sitemap-* /sitemap-:splat 200!
-# Legacy hashed asset compatibility (prevents stale HTML from loading index fallback)
-/assets/index-:hash.js /assets/index.js 200
-/assets/maps-:hash.js /assets/maps.js 200
-/assets/react-:hash.js /assets/react.js 200
-/assets/supabase-:hash.js /assets/supabase.js 200
-/assets/vendor-:hash.js /assets/vendor.js 200
-/assets/index-:hash.css /assets/index.css 200
-/assets/maps-:hash.css /assets/maps.css 200
 # Facility UUID -> slug canonicalization
 /facility/01d463a8-5b1b-4f05-aaf0-15f2b4ea2517 /senior-living/alabama/northport/glen-haven-health-and-rehabilitation-llc-northport-al-n6301-k6806a/ 301
 /facility/040d130a-06ed-4a2f-b75e-7db0d03ac984 /senior-living/alabama/gadsden/northside-health-care-gadsden-al-n2806-43b5g3/ 301
