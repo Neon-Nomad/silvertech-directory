@@ -330,6 +330,14 @@ async function generateSitemaps() {
     ),
   );
 
+  const stateHubEntries = uniqueEntries(
+    states.map((stateSlug) => ({
+      url: `${BASE_URL}/states/${stateSlug}/`,
+      changefreq: 'weekly' as const,
+      priority: 0.7,
+    })),
+  );
+
   const careTypeCityEntries = uniqueEntries(
     cityCareCombos.map(({ state, city, careTypeSlug }) => ({
       url: `${BASE_URL}/${careTypeSlug}/${state}/${city}/`,
@@ -355,11 +363,15 @@ async function generateSitemaps() {
   }
 
   console.log(
-    `Prepared URLs: care-type-states=${careTypeStateEntries.length}, care-type-cities=${careTypeCityEntries.length}, facilities=${facilityEntries.length}`,
+    `Prepared URLs: care-type-states=${careTypeStateEntries.length}, state-hubs=${stateHubEntries.length}, care-type-cities=${careTypeCityEntries.length}, facilities=${facilityEntries.length}`,
   );
 
   writeSitemap('sitemap-static.xml', staticEntries);
 
+  const stateHubSitemapFiles = writeChunkedSitemaps({
+    baseName: 'sitemap-states',
+    entries: stateHubEntries,
+  });
   const careTypeStateSitemapFiles = writeChunkedSitemaps({
     baseName: 'sitemap-care-type-states',
     entries: careTypeStateEntries,
@@ -378,6 +390,7 @@ async function generateSitemaps() {
 
   const sitemapFiles = [
     'sitemap-static.xml',
+    ...stateHubSitemapFiles,
     ...careTypeStateSitemapFiles,
     ...careTypeSitemapFiles,
     ...facilitySitemapFiles,

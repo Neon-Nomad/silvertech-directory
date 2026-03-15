@@ -50,31 +50,77 @@ const itemListSchema = {
 };
 ---
 <Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
+  <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
 
-  <div class="container sl-page">
+  <div class="container sl-page sl-state-page">
     <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span>/</span>
       <span>{careType.label}</span>
     </nav>
 
-    <section class="sl-hero">
-      <p class="sl-eyebrow">Care Type Directory</p>
-      <h1>{careType.label} by State</h1>
-      <p>
-        Browse clean state-level landing pages for {careType.label.toLowerCase()} and move into city directories from there.
-      </p>
-      <div class="sl-hero-meta">
-        <span><strong>{states.length.toLocaleString()}</strong> states with coverage</span>
+    <section class="sl-state-hero">
+      <div class="sl-state-hero-bg">
+        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=80&w=2000" alt="National directory background" />
+      </div>
+      <div class="sl-state-hero-overlay"></div>
+      <div class="sl-state-hero-copy">
+        <div class="sl-state-hero-badge-row">
+          <span class="sl-state-hero-flag" aria-hidden="true">US</span>
+          <span class="sl-state-hero-kicker">National {careType.label} Directory</span>
+        </div>
+        <h1 class="sl-state-hero-title">
+          <span>{careType.label} </span>
+          <span class="sl-state-hero-accent">by State</span>
+        </h1>
+        <p class="sl-state-hero-lead">
+          Browse clean state-level landing pages for {careType.label.toLowerCase()} and move into city directories from there. Compare licensed providers without referral agency pressure.
+        </p>
+        <div class="sl-state-hero-actions">
+          <a class="sl-btn sl-btn-primary" href="#state-index">View All States</a>
+          <a class="sl-btn sl-btn-secondary" href="/search">Search All Communities</a>
+        </div>
       </div>
     </section>
 
-    <section class="sl-section" style="margin-top:0.9rem;">
-      <h2>States with {careType.label} Coverage</h2>
-      <div class="sl-nearby-grid" style="grid-template-columns:repeat(3,minmax(0,1fr));">
+    <section class="sl-state-stats" aria-label="National coverage stats">
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">{states.length.toLocaleString()}</p>
+        <p class="sl-state-stat-label">States covered</p>
+        <p class="sl-state-stat-note">National directory depth</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">100%</p>
+        <p class="sl-state-stat-label">Commission-Free</p>
+        <p class="sl-state-stat-note">Direct-to-operator contact</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">Verified</p>
+        <p class="sl-state-stat-label">Licensing data</p>
+        <p class="sl-state-stat-note">State-sourced records</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">Real-Time</p>
+        <p class="sl-state-stat-label">Market context</p>
+        <p class="sl-state-stat-note">Price transparency goals</p>
+      </article>
+    </section>
+
+    <section class="sl-state-section" id="state-index">
+      <div class="sl-state-section-head">
+        <div>
+          <p class="sl-state-section-kicker">Regional Directories</p>
+          <h2>States with {careType.label} Coverage</h2>
+          <p>Select a state to view city-level directories, local pricing benchmarks, and regulatory resources.</p>
+        </div>
+      </div>
+
+      <div class="sl-state-market-grid">
         {states.map((state) => (
-          <a href={`/${careType.slug}/${state.stateSlug}/`}>
+          <a class="sl-state-market-link" href={`/${careType.slug}/${state.stateSlug}/`}>
             <strong>{state.stateName}</strong>
             <span>{state.stats.careTypeCounts[careType.slug].toLocaleString()} listings</span>
           </a>

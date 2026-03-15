@@ -2,9 +2,18 @@
 import Base from '../../layouts/Base.astro';
 import { ALL_STATES } from '../../../src/data/states';
 
-const title = 'Regulations | SilverTech Directory';
-const description = 'Browse senior living regulations, licensing references, and Medicaid guidance by state.';
-const canonical = 'https://silvertechdirectory.com/regulations/';
+const title = 'Senior Living by State | SilverTech Directory';
+const description = 'Browse senior living directories by state and compare local market coverage for assisted living, memory care, and nursing homes.';
+const canonical = 'https://silvertechdirectory.com/states/';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'States', item: canonical },
+  ],
+};
 ---
 <Base title={title} description={description} canonical={canonical}>
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,25 +25,25 @@ const canonical = 'https://silvertechdirectory.com/regulations/';
     <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span>/</span>
-      <span>Regulations</span>
+      <span>States</span>
     </nav>
 
     <section class="sl-state-hero">
       <div class="sl-state-hero-bg">
-        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2000" alt="Regulatory library background" />
+        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=80&w=2000" alt="National coverage background" />
       </div>
       <div class="sl-state-hero-overlay"></div>
       <div class="sl-state-hero-copy">
         <div class="sl-state-hero-badge-row">
           <span class="sl-state-hero-flag" aria-hidden="true">US</span>
-          <span class="sl-state-hero-kicker">Regulatory Library</span>
+          <span class="sl-state-hero-kicker">National Coverage</span>
         </div>
         <h1 class="sl-state-hero-title">
-          <span>Oversight </span>
+          <span>Senior Living </span>
           <span class="sl-state-hero-accent">by State</span>
         </h1>
         <p class="sl-state-hero-lead">
-          Browse senior living regulations, licensing references, and Medicaid guidance by state. Our regulatory hubs provide direct access to state intake channels, license verification tools, and resident advocacy resources.
+          Select a state to view specialized directories, local pricing benchmarks, and official regulatory resources. SilverTech tracks thousands of licensed communities across the country.
         </p>
         <div class="sl-state-hero-actions">
           <a class="sl-btn sl-btn-primary" href="#state-index">View All States</a>
@@ -43,46 +52,47 @@ const canonical = 'https://silvertechdirectory.com/regulations/';
       </div>
     </section>
 
-    <section class="sl-state-stats" aria-label="Oversight stats">
+    <section class="sl-state-stats" aria-label="Directory stats">
       <article class="sl-state-stat">
         <p class="sl-state-stat-value">51</p>
         <p class="sl-state-stat-label">Jurisdictions</p>
         <p class="sl-state-stat-note">Full state coverage</p>
       </article>
       <article class="sl-state-stat">
-        <p class="sl-state-stat-value">Direct</p>
-        <p class="sl-state-stat-label">Complaints</p>
-        <p class="sl-state-stat-note">Official state links</p>
-      </article>
-      <article class="sl-state-stat">
         <p class="sl-state-stat-value">Verified</p>
-        <p class="sl-state-stat-label">Licenses</p>
-        <p class="sl-state-stat-note">Real-time check tools</p>
+        <p class="sl-state-stat-label">Data</p>
+        <p class="sl-state-stat-note">Official state sources</p>
       </article>
       <article class="sl-state-stat">
-        <p class="sl-state-stat-value">Active</p>
-        <p class="sl-state-stat-label">Advocacy</p>
-        <p class="sl-state-stat-note">Ombudsman contacts</p>
+        <p class="sl-state-stat-value">Direct</p>
+        <p class="sl-state-stat-label">Access</p>
+        <p class="sl-state-stat-note">No broker middlemen</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">100%</p>
+        <p class="sl-state-stat-label">Free</p>
+        <p class="sl-state-stat-note">No commission model</p>
       </article>
     </section>
 
     <section class="sl-state-section" id="state-index">
       <div class="sl-state-section-head">
         <div>
-          <p class="sl-state-section-kicker">State Hubs</p>
-          <h2>Browse Oversight Rules</h2>
-          <p>Select a state to review local licensing authority, ombudsman programs, and Medicaid long-term care waivers.</p>
+          <p class="sl-state-section-kicker">Regional Hubs</p>
+          <h2>All States</h2>
         </div>
       </div>
 
       <div class="sl-state-market-grid">
         {ALL_STATES.map((state) => (
-          <a class="sl-state-market-link" href={`/regulations/${state.slug}/`}>
+          <a class="sl-state-market-link" href={`/states/${state.slug}/`}>
             <strong>{state.name}</strong>
-            <span>Regulatory hub</span>
+            <span>State directory hub</span>
           </a>
         ))}
       </div>
     </section>
   </div>
+
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
 </Base>

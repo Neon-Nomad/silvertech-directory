@@ -1,0 +1,236 @@
+---
+import Base from '../../../layouts/Base.astro';
+import {
+  getRegulatoryContext,
+  getSeniorLivingState,
+} from '../../../lib/seniorLivingData';
+
+export async function getStaticPaths() {
+  const { getSeniorLivingStates } = await import('../../../lib/seniorLivingData');
+  const states = getSeniorLivingStates();
+  return states.map((state) => ({ params: { state: state.stateSlug } }));
+}
+
+const { state } = Astro.params;
+const stateData = state ? getSeniorLivingState(state) : null;
+
+if (!stateData) {
+  throw new Error(`State page not found for slug: ${state || 'unknown'}`);
+}
+
+const toDisplayName = (value: string): string => {
+  if (value !== value.toUpperCase()) return value;
+  // Simplified version for the hub
+  return value.toLowerCase().split(' ').map(s => s.charAt(0).toUpperCase() + s.substring(1)).join(' ');
+};
+
+const formatCountLabel = (count: number, singular: string, plural: string): string =>
+  `${count.toLocaleString()} ${count === 1 ? singular : plural}`;
+
+const activeCities = stateData.cities
+  .sort((a, b) => b.facilityCount - a.facilityCount || a.cityName.localeCompare(b.cityName));
+const featuredCities = activeCities.slice(0, 4);
+const additionalCities = activeCities.slice(4, 20);
+
+const licensedCount = stateData.facilities.filter((facility) => Boolean(facility.licenseNumber)).length;
+const licensedPct = stateData.facilityCount > 0 ? Math.round((licensedCount / stateData.facilityCount) * 100) : 0;
+const currentYear = new Date().getFullYear();
+const regulatoryContext = getRegulatoryContext(stateData.stateSlug);
+
+const title = `Senior Living in ${stateData.stateName} | SilverTech Directory`;
+const description = `Compare ${formatCountLabel(stateData.facilityCount, 'senior living community', 'senior living communities')} across ${stateData.stateName}. Explore assisted living, memory care, and nursing home directories.`;
+const canonical = `https://silvertechdirectory.com/states/${stateData.stateSlug}/`;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'States', item: 'https://silvertechdirectory.com/states/' },
+    { '@type': 'ListItem', position: 3, name: stateData.stateName, item: canonical },
+  ],
+};
+
+const supportCards: Array<{ title: string; href: string; detail: string; external: boolean }> = [
+  {
+    title: `${stateData.stateName} Regulations`,
+    href: `/regulations/${stateData.stateSlug}/`,
+    detail: `Browse rule summaries and oversight pages.`,
+    external: false,
+  },
+];
+
+if (regulatoryContext.licensing?.verifyLicenseUrl) {
+  supportCards.push({
+    title: 'License Verification',
+    href: regulatoryContext.licensing.verifyLicenseUrl,
+    detail: `Verify licenses in ${stateData.stateName}`,
+    external: true,
+  });
+}
+
+if (regulatoryContext.ombudsman?.website) {
+  supportCards.push({
+    title: 'LTC Ombudsman',
+    href: regulatoryContext.ombudsman.website,
+    detail: 'Resident advocacy support',
+    external: true,
+  });
+}
+
+if (regulatoryContext.medicaid?.website) {
+  supportCards.push({
+    title: `${stateData.stateName} Medicaid`,
+    href: regulatoryContext.medicaid.website,
+    detail: 'State Medicaid support',
+    external: true,
+  });
+}
+---
+<Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
+  <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
+
+  <div class="container sl-page sl-state-page">
+    <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href="/states/">States</a>
+      <span>/</span>
+      <span>{stateData.stateName}</span>
+    </nav>
+
+    <section class="sl-state-hero">
+      <div class="sl-state-hero-bg">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIay462NKLnyaxp-HnnPP-CW4Ls1yZsxsOfDgueTLNK9tB5eFufma01fEMzmmC8CEQojygVXyBNQw-2DnX5ncPHhYFJWH7_EPakuVBM4GN8cw9GGMpJQdBEZMVCEzTHBedwK2WXayYapdMkrHS6Oe-1T986Z8gejWVY3zCK9CqPjT2EQ1gB91OLJGV38FzsGBG1mreuuHPUvP1mvuXS4WU7qS9y5ouoiPK2hw3bWUPMn2dWwWTg8vrOVdKLjW1RHBbGJtTMzZA5w" alt={`${stateData.stateName} flag texture`} />
+      </div>
+      <div class="sl-state-hero-overlay"></div>
+      <div class="sl-state-hero-copy">
+        <div class="sl-state-hero-badge-row">
+          <span class="sl-state-hero-flag" aria-hidden="true">{stateData.stateAbbr}</span>
+          <span class="sl-state-hero-kicker">Statewide Authority Hub</span>
+        </div>
+        <h1 class="sl-state-hero-title">
+          <span>Senior Living in </span>
+          <span class="sl-state-hero-accent">{stateData.stateName}</span>
+        </h1>
+        <p class="sl-state-hero-lead">
+          Access specialized directories for assisted living, memory care, and nursing homes across {stateData.stateName}. Compare verified providers using official state licensing context.
+        </p>
+        <div class="sl-state-hero-actions">
+          <a class="sl-btn sl-btn-primary" href="#care-types">View Care Types</a>
+          <a class="sl-btn sl-btn-secondary" href={`/regulations/${stateData.stateSlug}/`}>State Regulations</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sl-state-stats" aria-label="Statewide care stats">
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">{stateData.facilityCount.toLocaleString()}</p>
+        <p class="sl-state-stat-label">Total Listings</p>
+        <p class="sl-state-stat-note">Across all care types</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">{stateData.cityCount.toLocaleString()}</p>
+        <p class="sl-state-stat-label">Cities Covered</p>
+        <p class="sl-state-stat-note">Local market depth</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">{licensedPct}%</p>
+        <p class="sl-state-stat-label">Verified Licensed</p>
+        <p class="sl-state-stat-note">State-sourced records</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">Direct</p>
+        <p class="sl-state-stat-label">Contact</p>
+        <p class="sl-state-stat-note">No referral middlemen</p>
+      </article>
+    </section>
+
+    <section class="sl-state-section" id="care-types">
+      <div class="sl-state-section-head">
+        <div>
+          <p class="sl-state-section-kicker">Specialized Directories</p>
+          <h2>Search by Care Level in {stateData.stateName}</h2>
+        </div>
+      </div>
+      <div class="sl-state-method-grid" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+        <article class="sl-state-method-card">
+          <h3>Assisted Living</h3>
+          <p>Compare licensed assisted living communities and residential care homes in {stateData.stateName}.</p>
+          <div style="margin-top: 1rem;"><a href={`/assisted-living/${stateData.stateSlug}/`} class="sl-city-section-link">Open Directory</a></div>
+        </article>
+        <article class="sl-state-method-card">
+          <h3>Memory Care</h3>
+          <p>Specialized dementia and Alzheimer's care environments with verified staffing signals.</p>
+          <div style="margin-top: 1rem;"><a href={`/memory-care/${stateData.stateSlug}/`} class="sl-city-section-link">Open Directory</a></div>
+        </article>
+        <article class="sl-state-method-card">
+          <h3>Nursing Homes</h3>
+          <p>Skilled nursing facilities with Medicare-linked records and quality transparency.</p>
+          <div style="margin-top: 1rem;"><a href={`/nursing-homes/${stateData.stateSlug}/`} class="sl-city-section-link">Open Directory</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="sl-state-section" id="state-top-hubs">
+      <div class="sl-state-section-head sl-state-section-head--split">
+        <div>
+          <p class="sl-state-section-kicker">Regional Search</p>
+          <h2>Top {stateData.stateName} Hubs</h2>
+        </div>
+        {additionalCities.length > 0 && <a class="sl-state-section-link" href="#state-additional-markets">View all cities</a>}
+      </div>
+
+      <div class="sl-state-hub-grid">
+        {featuredCities.map((city, index) => {
+          return (
+            <a
+              class:list={[
+                'sl-state-hub-card',
+                index === 0 && 'is-featured',
+                index === 1 && 'is-secondary',
+                index > 1 && 'is-compact',
+              ]}
+              href={`/assisted-living/${stateData.stateSlug}/${city.citySlug}/`}
+            >
+              <p class="sl-state-hub-region">{city.county ? `${toDisplayName(city.county)} County` : `${stateData.stateName} market`}</p>
+              <h3>{toDisplayName(city.cityName)}</h3>
+              <p class="sl-state-hub-meta">{city.facilityCount.toLocaleString()} listings</p>
+              <span class="sl-state-hub-cta">View City Guide</span>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+
+    <section class="sl-state-resources">
+      <div class="sl-state-resources-copy">
+        <p class="sl-state-section-kicker">Official Network</p>
+        <h2>{stateData.stateName} Care Resources</h2>
+        <p>
+          Connect to state regulations, license checks, and resident advocacy resources.
+        </p>
+      </div>
+
+      <div class="sl-state-resource-grid">
+        {supportCards.slice(0, 4).map((card) => (
+          <a
+            class="sl-state-resource-card"
+            href={card.href}
+            rel={card.external ? 'noreferrer' : undefined}
+            target={card.external ? '_blank' : undefined}
+          >
+            <strong>{card.title}</strong>
+            <span>{card.detail}</span>
+            <span>{card.external ? 'Open external resource' : 'Open SilverTech page'}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+</Base>

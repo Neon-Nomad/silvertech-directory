@@ -1,6 +1,11 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import { getCareTypeBySlug, getSeniorLivingState } from '../../../lib/seniorLivingData';
+import {
+  getCareTypeBySlug,
+  getCostBand,
+  getRegulatoryContext,
+  getSeniorLivingState,
+} from '../../../lib/seniorLivingData';
 
 export async function getStaticPaths() {
   const careTypes = [
@@ -29,12 +34,165 @@ if (!careType || !stateData) {
   throw new Error(`Care/state page not found for ${care || 'unknown'}/${state || 'unknown'}`);
 }
 
+const toDisplayName = (value: string): string => {
+  if (value !== value.toUpperCase()) return value;
+
+  const uppercaseTokens = new Set([
+    'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA', 'HI', 'IA', 'ID', 'IL', 'IN', 'KS', 'KY', 'LA',
+    'MA', 'MD', 'ME', 'MI', 'MN', 'MO', 'MS', 'MT', 'NC', 'ND', 'NE', 'NH', 'NJ', 'NM', 'NV', 'NY', 'OH', 'OK', 'OR',
+    'PA', 'RI', 'SC', 'SD', 'SE', 'SW', 'TN', 'TX', 'UT', 'VA', 'VT', 'WA', 'WI', 'WV', 'WY', 'NE', 'NW', 'SE', 'SW',
+    'N', 'S', 'E', 'W', 'PO', 'US', 'VA', 'CMS', 'ER', 'ICU', 'ICF', 'SNF', 'ALF', 'CCRC', 'RN', 'LPN', 'CNA',
+    'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'LLC', 'LLP', 'LP', 'LTD', 'INC', 'PLC', 'PC', 'PA', 'IU',
+  ]);
+
+  const lowerWords = new Set(['and', 'or', 'of', 'the', 'at', 'in', 'on', 'for', 'to', 'a', 'an']);
+
+  const formatSegment = (segment: string, wordIndex: number): string => {
+    if (!/[A-Za-z]/.test(segment)) return segment;
+
+    const ordinalMatch = segment.match(/^(\d+)(ST|ND|RD|TH)$/);
+    if (ordinalMatch) {
+      return `${ordinalMatch[1]}${ordinalMatch[2].toLowerCase()}`;
+    }
+
+    const upperSegment = segment.toUpperCase();
+    if (uppercaseTokens.has(upperSegment)) {
+      return upperSegment;
+    }
+
+    const lowerSegment = segment.toLowerCase();
+    if (wordIndex > 0 && lowerWords.has(lowerSegment)) {
+      return lowerSegment;
+    }
+
+    return `${lowerSegment[0]?.toUpperCase() || ''}${lowerSegment.slice(1)}`;
+  };
+
+  return value
+    .toLowerCase()
+    .split(/\s+/)
+    .map((word, wordIndex) =>
+      word
+        .split(/([\-'/&])/)
+        .map((segment, segmentIndex, segments) => {
+          if (segment.length === 1 && /[\-'/&]/.test(segment)) return segment;
+          if (segments[segmentIndex - 1] === "'" && /^[a-z]{1,2}$/.test(segment)) return segment.toLowerCase();
+          return formatSegment(segment, wordIndex);
+        })
+        .join('')
+    )
+    .join(' ');
+};
+
+const toSentenceList = (items: string[]): string => {
+  if (items.length === 0) return '';
+  if (items.length === 1) return items[0];
+  if (items.length === 2) return `${items[0]} and ${items[1]}`;
+  return `${items.slice(0, -1).join(', ')}, and ${items[items.length - 1]}`;
+};
+
+const formatCountLabel = (count: number, singular: string, plural: string): string =>
+  `${count.toLocaleString()} ${count === 1 ? singular : plural}`;
+
+const h1CareLabel =
+  careType.slug === 'nursing-homes'
+    ? 'Nursing Homes'
+    : careType.slug === 'ccrc'
+      ? 'Life Plan Communities'
+      : careType.label;
+const careUnitSingular =
+  careType.slug === 'ccrc'
+    ? 'life plan community'
+    : careType.slug === 'nursing-homes'
+      ? 'nursing home'
+      : careType.slug === 'assisted-living'
+        ? 'assisted living community'
+        : careType.slug === 'memory-care'
+          ? 'memory care community'
+          : careType.slug === 'independent-living'
+            ? 'independent living community'
+            : careType.slug === 'residential-care'
+              ? 'residential care home'
+              : careType.slug === 'adult-day-services'
+                ? 'adult day program'
+                : `${careType.label.toLowerCase()} community`;
+const careUnitPlural =
+  careType.slug === 'ccrc'
+    ? 'life plan communities'
+    : careType.slug === 'nursing-homes'
+      ? 'nursing homes'
+      : careType.slug === 'assisted-living'
+        ? 'assisted living communities'
+        : careType.slug === 'memory-care'
+          ? 'memory care communities'
+          : careType.slug === 'independent-living'
+            ? 'independent living communities'
+            : careType.slug === 'residential-care'
+              ? 'residential care homes'
+              : careType.slug === 'adult-day-services'
+                ? 'adult day programs'
+                : `${careType.label.toLowerCase()} communities`;
+const careSentenceLabel =
+  careType.slug === 'nursing-homes'
+    ? 'nursing home and skilled nursing care'
+    : careType.slug === 'ccrc'
+      ? 'life plan communities'
+      : careType.label.toLowerCase();
+const cityUnitSingular = 'city';
+const cityUnitPlural = 'cities';
+
+const scopedFacilities = stateData.facilities.filter((facility) => facility.careTypes.includes(careType.slug));
 const activeCities = stateData.cities
   .filter((city) => city.careTypeCounts[careType.slug] > 0)
   .sort((a, b) => b.careTypeCounts[careType.slug] - a.careTypeCounts[careType.slug] || a.cityName.localeCompare(b.cityName));
+const featuredCities = activeCities.slice(0, 4);
+const additionalCities = activeCities.slice(4, 20);
 
-const title = `${careType.label} in ${stateData.stateName} | SilverTech Directory`;
-const description = `Explore ${careType.label.toLowerCase()} listings across ${stateData.stateName}, including city-level directories and clean community links.`;
+const licensedCount = scopedFacilities.filter((facility) => Boolean(facility.licenseNumber)).length;
+const websiteCount = scopedFacilities.filter((facility) => Boolean(facility.websiteUrl)).length;
+const phoneCount = scopedFacilities.filter((facility) => Boolean(facility.verifiedPhone || facility.phone)).length;
+const medicareCount = scopedFacilities.filter((facility) => Boolean(facility.cmsCertificationNumber)).length;
+const licensedPct = scopedFacilities.length > 0 ? Math.round((licensedCount / scopedFacilities.length) * 100) : 0;
+const topHubNames = featuredCities.slice(0, 4).map((city) => toDisplayName(city.cityName));
+const topHubSentence =
+  topHubNames.length > 1
+    ? `${toSentenceList(topHubNames)} shape the strongest local markets, but smaller cities and suburban counties can look very different in operator mix, hospital access, and pricing.`
+    : topHubNames.length === 1
+      ? `${topHubNames[0]} is the clearest local starting point in ${stateData.stateName}, but smaller cities and suburban counties can look very different in operator mix, hospital access, and pricing.`
+    : `Local markets inside ${stateData.stateName} can vary widely in operator mix, specialist access, and how clearly communities explain care transitions.`;
+const costBand = getCostBand(careType.slug);
+const costBandLabel = `$${costBand.low.toLocaleString()} - $${costBand.high.toLocaleString()}`;
+const currentYear = new Date().getFullYear();
+const regulatoryContext = getRegulatoryContext(stateData.stateSlug);
+const fourthStatLabel = medicareCount > 0 ? 'Medicare-linked records' : 'Official websites listed';
+const fourthStatValue = medicareCount > 0 ? medicareCount.toLocaleString() : websiteCount.toLocaleString();
+const fourthStatNote =
+  medicareCount > 0
+    ? websiteCount > 0
+      ? `${formatCountLabel(websiteCount, 'listing', 'listings')} ${websiteCount === 1 ? 'links' : 'link'} to an official website`
+      : 'Official website coverage is still limited in the current public dataset'
+    : phoneCount > 0
+      ? `${formatCountLabel(phoneCount, 'listing', 'listings')} ${phoneCount === 1 ? 'publishes' : 'publish'} a phone number`
+      : 'Phone coverage is still limited in the current public dataset';
+const licenseCoverageSummary =
+  licensedCount > 0
+    ? `${formatCountLabel(licensedCount, 'listing', 'listings')} ${licensedCount === 1 ? 'shows' : 'show'} a listed state license number`
+    : 'license coverage is still limited in the current public dataset';
+const websiteCoverageSummary =
+  websiteCount > 0
+    ? `${formatCountLabel(websiteCount, 'listing', 'listings')} ${websiteCount === 1 ? 'links' : 'link'} to an official website`
+    : 'official website coverage is still limited in the current public dataset';
+const medicareCoverageSummary =
+  medicareCount > 0
+    ? `${formatCountLabel(medicareCount, 'listing', 'listings')} ${medicareCount === 1 ? 'connects' : 'connect'} to Medicare-linked records, which gives families a stronger starting point when they want to compare care quality signals alongside what operators publish directly.`
+    : 'Medicare-linked records are still limited in the current public dataset, so the strongest starting signals on this page are licensing context, city coverage, and the direct contact details operators publish.';
+const listedLicenseNote =
+  licensedCount > 0
+    ? `${formatCountLabel(licensedCount, 'listing', 'listings')} with a license number`
+    : 'License coverage is still limited in the current public dataset';
+
+const title = `${h1CareLabel} in ${stateData.stateName} | SilverTech Directory`;
+const description = `Compare ${formatCountLabel(scopedFacilities.length, careUnitSingular, careUnitPlural)} across ${formatCountLabel(activeCities.length, cityUnitSingular, cityUnitPlural)} in ${stateData.stateName}. Explore top city directories, regulations, Medicaid, ombudsman, and trust signals on SilverTech.`;
 const canonical = `https://silvertechdirectory.com/${careType.slug}/${stateData.stateSlug}/`;
 
 const breadcrumbSchema = {
@@ -53,15 +211,101 @@ const itemListSchema = {
   itemListElement: activeCities.slice(0, 24).map((city, index) => ({
     '@type': 'ListItem',
     position: index + 1,
-    name: `${careType.label} in ${city.cityName}, ${stateData.stateAbbr}`,
+    name: `${h1CareLabel} in ${toDisplayName(city.cityName)}, ${stateData.stateAbbr}`,
     item: `https://silvertechdirectory.com/${careType.slug}/${stateData.stateSlug}/${city.citySlug}/`,
   })),
 };
+
+const licensingSentence = regulatoryContext.licensing
+  ? `${regulatoryContext.licensing.agencyName} anchors the statewide oversight layer, which is why this page keeps licensing, complaint, and verification links close to the city directories.`
+  : `State licensing agencies shape the oversight layer behind these listings, and SilverTech keeps the statewide regulations and verification tools attached to the directory.`;
+
+const overviewParagraphs = [
+  `Choosing ${careSentenceLabel} in ${stateData.stateName} usually starts broad and narrows fast. Families need to understand how deep the statewide market is, which metro areas have the strongest provider mix, and where trust signals like license numbers, Medicare-linked records, and official websites are actually visible before they start calling. SilverTech currently tracks ${formatCountLabel(scopedFacilities.length, careUnitSingular, careUnitPlural)} across ${formatCountLabel(activeCities.length, cityUnitSingular, cityUnitPlural)} in ${stateData.stateName}. Right now, ${licenseCoverageSummary}, and ${websiteCoverageSummary}.`,
+  `${topHubSentence} That statewide view matters because families often compare more than one market at once: the city closest to adult children, the market with stronger specialist access, and the place where the care budget can stretch further. ${medicareCoverageSummary}`,
+  `Typical monthly costs for ${careSentenceLabel} often land in the ${costBandLabel} range, though acuity, unit type, therapies, and included services can move the number substantially. ${licensingSentence} Use the top city hubs below to move into local pages, compare providers on canonical community URLs, and keep the statewide support tools in view while your short list gets smaller.`,
+];
+
+const comparisonCards = [
+  {
+    title: 'Licensing & oversight',
+    body: `Start with the state licensing layer before you compare brand claims. Families researching ${careSentenceLabel} in ${stateData.stateName} should confirm the listed license, the oversight agency, and whether complaint or inspection pathways are easy to verify.`,
+    bullets: ['State license verification', 'Complaint and inspection access'],
+  },
+  {
+    title: careType.slug === 'memory-care' ? 'Training & care scope' : careType.slug === 'nursing-homes' ? 'Medicare & care quality' : 'Care scope & transitions',
+    body:
+      careType.slug === 'memory-care'
+        ? `Specialized training, secured environments, and a clear explanation of how dementia care is delivered matter more than marketing language. Use the city pages to compare how operators describe staffing, supervision, and care transitions.`
+        : careType.slug === 'nursing-homes'
+          ? `Skilled nursing decisions often hinge on rehab scope, hospital discharge planning, and the availability of Medicare-linked records. The statewide view helps families spot which local markets publish the strongest trust signals first.`
+          : `Families usually need to compare what is included in the base rate, when a move to a higher-acuity setting might be needed, and whether a provider clearly explains care transitions across the broader state market.`,
+    bullets:
+      careType.slug === 'nursing-homes'
+        ? ['Hospital discharge context', 'Medicare-linked records']
+        : ['Care scope clarity', 'Transition planning'],
+  },
+  {
+    title: 'Staffing, location, and access',
+    body: `The strongest statewide short lists balance staffing confidence with geography. Look at the city hubs, hospital access, commute realities for family, and whether local markets publish enough contact and website detail to support a serious first call.`,
+    bullets: ['Regional market comparison', 'Family access and logistics'],
+  },
+];
+
+const supportCards: Array<{ title: string; href: string; detail: string; external: boolean }> = [
+  {
+    title: `${stateData.stateName} Regulations`,
+    href: `/regulations/${stateData.stateSlug}/`,
+    detail: `Browse the rule summaries, inspections, and oversight pages tied to ${careSentenceLabel}.`,
+    external: false,
+  },
+];
+
+if (regulatoryContext.licensing?.verifyLicenseUrl) {
+  supportCards.push({
+    title: 'License Verification',
+    href: regulatoryContext.licensing.verifyLicenseUrl,
+    detail: regulatoryContext.licensing.agencyName || `Verify licenses in ${stateData.stateName}`,
+    external: true,
+  });
+}
+
+if (regulatoryContext.ombudsman?.website) {
+  supportCards.push({
+    title: 'Long-Term Care Ombudsman',
+    href: regulatoryContext.ombudsman.website,
+    detail: regulatoryContext.ombudsman.programName || 'Resident advocacy and complaint support',
+    external: true,
+  });
+}
+
+if (regulatoryContext.medicaid?.website) {
+  supportCards.push({
+    title: `${stateData.stateName} Medicaid`,
+    href: regulatoryContext.medicaid.website,
+    detail: regulatoryContext.medicaid.programName || 'State Medicaid long-term care support',
+    external: true,
+  });
+}
+
+if (supportCards.length < 4 && (regulatoryContext.agingAgency?.findLocalUrl || regulatoryContext.agingAgency?.website)) {
+  supportCards.push({
+    title: 'Area Agency on Aging',
+    href: regulatoryContext.agingAgency?.findLocalUrl || regulatoryContext.agingAgency?.website || `/regulations/${stateData.stateSlug}/`,
+    detail: regulatoryContext.agingAgency?.programName || 'Local caregiver and aging services',
+    external: true,
+  });
+}
+
+const topCityCountLabel = featuredCities.length === 1 ? 'city hub' : 'city hubs';
 ---
 <Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
+  <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
 
-  <div class="container sl-page">
+  <div class="container sl-page sl-state-page">
     <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span>/</span>
@@ -70,32 +314,189 @@ const itemListSchema = {
       <span>{stateData.stateName}</span>
     </nav>
 
-    <section class="sl-hero">
-      <p class="sl-eyebrow">State Directory</p>
-      <h1>{careType.label} in {stateData.stateName}</h1>
-      <p>
-        Browse city-level {careType.label.toLowerCase()} pages in {stateData.stateName} and compare communities on clean canonical URLs.
-      </p>
-      <div class="sl-hero-meta">
-        <span><strong>{stateData.stats.careTypeCounts[careType.slug].toLocaleString()}</strong> listings indexed</span>
-        <span><strong>{activeCities.length.toLocaleString()}</strong> cities covered</span>
+    <section class="sl-state-hero">
+      <div class="sl-state-hero-bg">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIay462NKLnyaxp-HnnPP-CW4Ls1yZsxsOfDgueTLNK9tB5eFufma01fEMzmmC8CEQojygVXyBNQw-2DnX5ncPHhYFJWH7_EPakuVBM4GN8cw9GGMpJQdBEZMVCEzTHBedwK2WXayYapdMkrHS6Oe-1T986Z8gejWVY3zCK9CqPjT2EQ1gB91OLJGV38FzsGBG1mreuuHPUvP1mvuXS4WU7qS9y5ouoiPK2hw3bWUPMn2dWwWTg8vrOVdKLjW1RHBbGJtTMzZA5w" alt={`${stateData.stateName} flag texture`} />
       </div>
-      <div class="sl-hero-actions">
-        <a class="sl-btn sl-btn-primary" href={`/regulations/${stateData.stateSlug}/`}>View Regulations</a>
+      <div class="sl-state-hero-overlay"></div>
+      <div class="sl-state-hero-copy">
+        <div class="sl-state-hero-badge-row">
+          <span class="sl-state-hero-flag" aria-hidden="true">{stateData.stateAbbr}</span>
+          <span class="sl-state-hero-kicker">Official {currentYear} Statewide Directory</span>
+        </div>
+        <h1 class="sl-state-hero-title">
+          <span>{h1CareLabel} in </span>
+          <span class="sl-state-hero-accent">{stateData.stateName}</span>
+        </h1>
+        <p class="sl-state-hero-lead">
+          A statewide, license-aware guide to help families compare local markets, move into the strongest city pages, and keep regulations close while they narrow the shortlist.
+        </p>
+        <div class="sl-state-hero-actions">
+          <a class="sl-btn sl-btn-primary" href="#state-top-hubs">Explore Locations</a>
+          <a class="sl-btn sl-btn-secondary" href={`/regulations/${stateData.stateSlug}/`}>{stateData.stateName} Regulations</a>
+        </div>
       </div>
     </section>
 
-    <section class="sl-section" style="margin-top:0.9rem;">
-      <h2>Top Cities in {stateData.stateName}</h2>
-      <div class="sl-nearby-grid" style="grid-template-columns:repeat(4,minmax(0,1fr));">
-        {activeCities.map((city) => (
-          <a href={`/${careType.slug}/${stateData.stateSlug}/${city.citySlug}/`}>
-            <strong>{city.cityName}</strong>
-            <span>{city.careTypeCounts[careType.slug].toLocaleString()} listings</span>
+    <section class="sl-state-stats" aria-label="Statewide care stats">
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">{scopedFacilities.length.toLocaleString()}</p>
+        <p class="sl-state-stat-label">Facilities listed</p>
+        <p class="sl-state-stat-note">Statewide {careSentenceLabel}</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">{activeCities.length.toLocaleString()}</p>
+        <p class="sl-state-stat-label">Cities covered</p>
+        <p class="sl-state-stat-note">{featuredCities.length.toLocaleString()} primary {topCityCountLabel}</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">{licensedPct}%</p>
+        <p class="sl-state-stat-label">Listed license data</p>
+        <p class="sl-state-stat-note">{listedLicenseNote}</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">{fourthStatValue}</p>
+        <p class="sl-state-stat-label">{fourthStatLabel}</p>
+        <p class="sl-state-stat-note">{fourthStatNote}</p>
+      </article>
+    </section>
+
+    <section class="sl-state-overview">
+      <div class="sl-state-section-head">
+        <div>
+          <p class="sl-state-section-kicker">Landscape Overview</p>
+          <h2>The statewide view families actually need</h2>
+        </div>
+      </div>
+      <div class="sl-state-overview-copy">
+        {overviewParagraphs.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
+      </div>
+    </section>
+
+    <section class="sl-state-section" id="state-top-hubs">
+      <div class="sl-state-section-head sl-state-section-head--split">
+        <div>
+          <p class="sl-state-section-kicker">Regional Search</p>
+          <h2>Top Care Hubs</h2>
+          <p>Use the strongest city markets first, then widen the statewide search when you need more depth or a better fit.</p>
+        </div>
+        {additionalCities.length > 0 && <a class="sl-state-section-link" href="#state-additional-markets">View all {activeCities.length.toLocaleString()} cities</a>}
+      </div>
+
+      <div class="sl-state-hub-grid">
+        {featuredCities.map((city, index) => {
+          const cityCount = city.careTypeCounts[careType.slug];
+          const sharePct = scopedFacilities.length > 0 ? Math.round((cityCount / scopedFacilities.length) * 100) : 0;
+          return (
+            <a
+              class:list={[
+                'sl-state-hub-card',
+                index === 0 && 'is-featured',
+                index === 1 && 'is-secondary',
+                index > 1 && 'is-compact',
+              ]}
+              href={`/${careType.slug}/${stateData.stateSlug}/${city.citySlug}/`}
+            >
+              <p class="sl-state-hub-region">{city.county ? `${toDisplayName(city.county)} County` : `${stateData.stateName} market`}</p>
+              <h3>{toDisplayName(city.cityName)}</h3>
+              <p class="sl-state-hub-meta">{cityCount.toLocaleString()} {cityCount === 1 ? careUnitSingular : careUnitPlural}</p>
+              <p class="sl-state-hub-note">{sharePct}% of statewide inventory</p>
+              <span class="sl-state-hub-cta">{index === 0 ? 'Browse Metro' : index === 1 ? 'Explore Region' : 'Open City Guide'}</span>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+
+    <section class="sl-state-method">
+      <div class="sl-state-section-head">
+        <div>
+          <p class="sl-state-section-kicker">Methodology</p>
+          <h2>The Gold Standard of Comparison</h2>
+        </div>
+      </div>
+
+      <div class="sl-state-method-grid">
+        {comparisonCards.map((card) => (
+          <article class="sl-state-method-card">
+            <h3>{card.title}</h3>
+            <p>{card.body}</p>
+            <ul>
+              {card.bullets.map((bullet) => (
+                <li>{bullet}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+
+        <article class="sl-state-method-card sl-state-method-card--cost">
+          <p class="sl-state-method-kicker">Cost Considerations</p>
+          <h3>{stateData.stateName} cost range</h3>
+          <p>
+            Typical monthly costs for {careSentenceLabel} often land between {costBandLabel}, depending on acuity, unit type,
+            therapies, and the mix of services included in the base rate.
+          </p>
+          <div class="sl-state-cost-pill">
+            <span>Statewide range</span>
+            <strong>{costBandLabel}</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="sl-state-resources">
+      <div class="sl-state-resources-copy">
+        <p class="sl-state-section-kicker">Official Resource Network</p>
+        <h2>Official {stateData.stateName} Care Resource Network</h2>
+        <p>
+          The statewide authority layer should do more than list cities. It should connect families to regulations, license checks,
+          public-program guidance, and advocacy resources without forcing them to leave the care search.
+        </p>
+        <div class="sl-state-trust-callout">
+          <strong>Verified data</strong>
+          <span>Built from statewide licensing context, public records, and canonical city pages that keep trust signals visible.</span>
+        </div>
+      </div>
+
+      <div class="sl-state-resource-grid">
+        {supportCards.slice(0, 4).map((card) => (
+          <a
+            class="sl-state-resource-card"
+            href={card.href}
+            rel={card.external ? 'noreferrer' : undefined}
+            target={card.external ? '_blank' : undefined}
+          >
+            <strong>{card.title}</strong>
+            <span>{card.detail}</span>
+            <span>{card.external ? 'Open external resource' : 'Open SilverTech page'}</span>
           </a>
         ))}
       </div>
     </section>
+
+    {additionalCities.length > 0 && (
+      <section class="sl-state-section sl-state-section--markets" id="state-additional-markets">
+        <div class="sl-state-section-head">
+          <div>
+            <p class="sl-state-section-kicker">Additional {stateData.stateName} Markets</p>
+            <h2>More city directories across the state</h2>
+          </div>
+        </div>
+        <div class="sl-state-market-grid">
+          {additionalCities.map((city) => {
+            const cityCount = city.careTypeCounts[careType.slug];
+            return (
+              <a class="sl-state-market-link" href={`/${careType.slug}/${stateData.stateSlug}/${city.citySlug}/`}>
+                <strong>{toDisplayName(city.cityName)}</strong>
+                <span>{cityCount.toLocaleString()} {cityCount === 1 ? careUnitSingular : careUnitPlural}</span>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    )}
   </div>
 
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>

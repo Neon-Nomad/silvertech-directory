@@ -1,0 +1,140 @@
+---
+import Base from '../layouts/Base.astro';
+import { ALL_STATES } from '../../src/data/states';
+import { getCareTypes } from '../lib/seniorLivingData';
+
+const careTypes = getCareTypes();
+const title = 'SilverTech Directory | Senior Care & Living Guide';
+const description = 'Search a trusted senior living directory for assisted living and memory care communities. Compare licensed facilities and connect directly.';
+const canonical = 'https://silvertechdirectory.com/';
+
+const featuredStates = ALL_STATES.slice(0, 12);
+---
+<Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
+  <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
+
+  <div class="container sl-page sl-state-page">
+    <section class="sl-state-hero">
+      <div class="sl-state-hero-bg">
+        <img src="https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=2000" alt="Care OS Background" />
+      </div>
+      <div class="sl-state-hero-overlay"></div>
+      <div class="sl-state-hero-copy">
+        <div class="sl-state-hero-badge-row">
+          <span class="sl-state-hero-flag" aria-hidden="true">US</span>
+          <span class="sl-state-hero-kicker">Commission-Free Directory</span>
+        </div>
+        <h1 class="sl-state-hero-title">
+          <span>The </span>
+          <span class="sl-state-hero-accent">Care OS</span>
+        </h1>
+        <p class="sl-state-hero-lead">
+          Stop paying commission taxes on crisis decisions. Find transparent, commission-free memory care and assisted living. Unbiased information powered by public data and direct facility verification.
+        </p>
+        <div class="sl-state-hero-actions">
+          <a class="sl-btn sl-btn-primary" href="/search">Search All Communities</a>
+          <a class="sl-btn sl-btn-secondary" href="/regulations/">View State Regulations</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sl-state-stats" aria-label="Directory standards">
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">Direct</p>
+        <p class="sl-state-stat-label">Contact</p>
+        <p class="sl-state-stat-note">No middleman brokers</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">Verified</p>
+        <p class="sl-state-stat-label">Licensing</p>
+        <p class="sl-state-stat-note">Official state data</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">100%</p>
+        <p class="sl-state-stat-label">Transparent</p>
+        <p class="sl-state-stat-note">No referral fees</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">Real-Time</p>
+        <p class="sl-state-stat-label">Market Info</p>
+        <p class="sl-state-stat-note">Pricing & vacancy goals</p>
+      </article>
+    </section>
+
+    <section class="sl-state-section">
+      <div class="sl-state-section-head">
+        <div>
+          <p class="sl-state-section-kicker">Care Type Directories</p>
+          <h2>Search by Care Level</h2>
+          <p>Navigate our specialized directories to find the right environment for your family's specific needs.</p>
+        </div>
+      </div>
+
+      <div class="sl-state-method-grid">
+        {careTypes.map((type) => (
+          <article class="sl-state-method-card">
+            <h3 style="font-size: 1.25rem;">{type.label}</h3>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Explore {type.label.toLowerCase()} options by state and city with verified trust signals.</p>
+            <div style="margin-top: 1rem;">
+              <a href={`/${type.slug}/`} class="sl-city-section-link">View Directory</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="sl-state-resources">
+      <div class="sl-state-resources-copy">
+        <p class="sl-state-section-kicker">States with Coverage</p>
+        <h2>Browse by State</h2>
+        <p>
+          Access statewide directories, local pricing benchmarks, and regulatory hubs for senior living oversight.
+        </p>
+        <div style="margin-top: 1.5rem;">
+          <a href="/states" class="sl-btn sl-btn-primary">View All 51 Jurisdictions</a>
+        </div>
+      </div>
+
+      <div class="sl-state-market-grid" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+        {featuredStates.map((state) => (
+          <a class="sl-state-market-link" href={`/assisted-living/${state.slug}/`} style="border-color: rgba(226, 213, 187, 0.2); color: #f8efdf;">
+            <strong style="color: #fffaf0;">{state.name}</strong>
+            <span style="color: rgba(247, 240, 226, 0.6);">Assisted Living Hub</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="sl-state-method">
+      <div class="sl-state-section-head">
+        <div>
+          <p class="sl-state-section-kicker">The SilverTech Standard</p>
+          <h2>The Gold Standard of Comparison</h2>
+        </div>
+      </div>
+
+      <div class="sl-state-method-grid">
+        <article class="sl-state-method-card">
+          <h3>No Referral Fees</h3>
+          <p>We never profit from your decision. Facilities pay subscriptions for data management, not commissions for "leads."</p>
+        </article>
+        <article class="sl-state-method-card">
+          <h3>No Call Centers</h3>
+          <p>We are a directory, not a brokerage. We never sell your phone number to sales teams or aggressive follow-up agents.</p>
+        </article>
+        <article class="sl-state-method-card">
+          <h3>Direct Listings</h3>
+          <p>Connect directly with community administrators. We surface official phone numbers and websites whenever available.</p>
+        </article>
+        <article class="sl-state-method-card--cost">
+          <p class="sl-state-method-kicker">Our Data Commitment</p>
+          <h3>Verified Records</h3>
+          <p>Information is cross-referenced with CMS.gov and state regulatory licensing bureaus to ensure accuracy.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</Base>

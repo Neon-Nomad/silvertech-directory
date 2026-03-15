@@ -65,69 +65,85 @@ const itemListSchema = {
 };
 ---
 
-<Base title={title} description={description} canonical={canonical} liteHead={true} loadFonts={false}>
-  <meta slot="head" name="keywords" content={keywords} />
-  <link slot="head" rel="stylesheet" href="/styles/guides-index.css" />
-  <section slot="pre-body" class="container crawl-priority-prelude">
-    <h1 class="sr-only">Senior Living Guides for Real Family Decisions</h1>
-    <div class="crawl-priority-signals">
-      <h2>Editorial Integrity Signals</h2>
-      <p>SilverTech Editorial Team curation with practical caregiver decision frameworks and direct care-navigation links.</p>
-      <ul class="signal-list">
-        <li><strong>Guides published:</strong> {guides.length}</li>
-        <li><strong>Topic focus:</strong> Dementia care, stress, placement, and cost planning</li>
-        <li><strong>Action path:</strong> Direct transition to licensed care search</li>
-      </ul>
-    </div>
-  </section>
+<Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
+  <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
 
-  <section class="container guide-shell">
-    <nav aria-label="Breadcrumb" class="breadcrumbs">
+  <div class="container sl-page sl-state-page">
+    <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span>/</span>
       <span>Guides</span>
     </nav>
 
-    <div class="guide-hero">
-      <picture class="hero-image">
-        <source srcset="/hero.avif" type="image/avif" />
-        <source srcset="/hero.webp" type="image/webp" />
-        <img
-          src="/hero.png"
-          width="1600"
-          height="900"
-          loading="eager"
-          decoding="async"
-          alt="SilverTech senior living guides"
-        />
-      </picture>
-      <div class="guide-hero-content">
-        <p class="eyebrow">SilverTech Editorial Hub</p>
-        <p class="hero-title">Senior Living Guides for Real Family Decisions</p>
-        <p>
-          These guides target practical and emotional questions families ask during dementia care. Every page is written for
-          clarity under stress, with direct paths to compare licensed communities when you are ready.
+    <section class="sl-state-hero">
+      <div class="sl-state-hero-copy">
+        <div class="sl-state-hero-badge-row">
+          <span class="sl-state-hero-flag" aria-hidden="true">US</span>
+          <span class="sl-state-hero-kicker">SilverTech Editorial Hub</span>
+        </div>
+        <h1 class="sl-state-hero-title">
+          <span>Family </span>
+          <span class="sl-state-hero-accent">Care Guides</span>
+        </h1>
+        <p class="sl-state-hero-lead">
+          Practical and emotional support for families navigating dementia care and senior living decisions. Every guide is written for clarity under stress, providing direct paths to compare licensed communities without referral agency pressure.
         </p>
+        <div class="sl-state-hero-actions">
+          <a class="sl-btn sl-btn-primary" href="#guides-index">Browse All Guides</a>
+          <a class="sl-btn sl-btn-secondary" href="/search">Search Communities</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="container" style="padding: 0 1.5rem 2.5rem;">
-    <div class="card">
-      <div class="section-head">
-        <h2>Featured Guides</h2>
-        <a href="/search">Browse care options</a>
+    <section class="sl-state-stats" aria-label="Editorial stats">
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">{guides.length}</p>
+        <p class="sl-state-stat-label">Published Guides</p>
+        <p class="sl-state-stat-note">Evidence-based resources</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">Real</p>
+        <p class="sl-state-stat-label">Advice</p>
+        <p class="sl-state-stat-note">Practical family support</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">Direct</p>
+        <p class="sl-state-stat-label">Search</p>
+        <p class="sl-state-stat-note">Commission-free model</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">51</p>
+        <p class="sl-state-stat-label">States</p>
+        <p class="sl-state-stat-note">National market access</p>
+      </article>
+    </section>
+
+    <section class="sl-state-section" id="guides-index">
+      <div class="sl-state-section-head">
+        <div>
+          <p class="sl-state-section-kicker">Featured Resources</p>
+          <h2>Senior Living Decision Guides</h2>
+          <p>Dementia care planning, emotional stress management, and financial transparency tools for families.</p>
+        </div>
       </div>
-      <ul class="guide-list">
+
+      <div class="sl-state-method-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
         {guides.map((guide) => (
-          <li>
-            <a href={guide.href}>{guide.title}</a>
+          <article class="sl-state-method-card">
+            <h3><a href={guide.href} style="color: inherit; text-decoration: none;">{guide.title}</a></h3>
             <p>{guide.summary}</p>
-          </li>
+            <div style="margin-top: 1.5rem;">
+              <a href={guide.href} class="sl-city-section-link">Read Full Guide</a>
+            </div>
+          </article>
         ))}
-      </ul>
-    </div>
-  </section>
-  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
-  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
+      </div>
+    </section>
+  </div>
+
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
 </Base>

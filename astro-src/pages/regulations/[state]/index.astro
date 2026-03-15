@@ -52,9 +52,12 @@ const description = `Licensing, complaint, and oversight reference page for seni
 const canonical = `https://silvertechdirectory.com/regulations/${stateMeta.slug}/`;
 ---
 <Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
+  <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
 
-  <div class="container sl-page">
+  <div class="container sl-page sl-state-page">
     <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span>/</span>
@@ -63,49 +66,94 @@ const canonical = `https://silvertechdirectory.com/regulations/${stateMeta.slug}
       <span>{stateMeta.name}</span>
     </nav>
 
-    <section class="sl-hero">
-      <p class="sl-eyebrow">State Regulatory Hub</p>
-      <h1>{stateMeta.name} Regulations</h1>
-      <p>
-        Licensing, complaint, and oversight reference page for senior care facilities in {stateMeta.name}.
-      </p>
-      <div class="sl-hero-actions">
-        <a class="sl-btn sl-btn-primary" href={`/assisted-living/${stateMeta.slug}/`}>View {stateMeta.name} Directory</a>
+    <section class="sl-state-hero">
+      <div class="sl-state-hero-bg">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIay462NKLnyaxp-HnnPP-CW4Ls1yZsxsOfDgueTLNK9tB5eFufma01fEMzmmC8CEQojygVXyBNQw-2DnX5ncPHhYFJWH7_EPakuVBM4GN8cw9GGMpJQdBEZMVCEzTHBedwK2WXayYapdMkrHS6Oe-1T986Z8gejWVY3zCK9CqPjT2EQ1gB91OLJGV38FzsGBG1mreuuHPUvP1mvuXS4WU7qS9y5ouoiPK2hw3bWUPMn2dWwWTg8vrOVdKLjW1RHBbGJtTMzZA5w" alt={`${stateMeta.name} flag texture`} />
+      </div>
+      <div class="sl-state-hero-overlay"></div>
+      <div class="sl-state-hero-copy">
+        <div class="sl-state-hero-badge-row">
+          <span class="sl-state-hero-flag" aria-hidden="true">{stateMeta.abbreviation}</span>
+          <span class="sl-state-hero-kicker">Official State Regulatory Hub</span>
+        </div>
+        <h1 class="sl-state-hero-title">
+          <span>{stateMeta.name} </span>
+          <span class="sl-state-hero-accent">Regulations</span>
+        </h1>
+        <p class="sl-state-hero-lead">
+          Licensing, complaint, and oversight reference page for senior care facilities in {stateMeta.name}. Built to help families verify trust signals and understand the state oversight layer.
+        </p>
+        <div class="sl-state-hero-actions">
+          <a class="sl-btn sl-btn-primary" href={`/assisted-living/${stateMeta.slug}/`}>View {stateMeta.name} Directory</a>
+          <a class="sl-btn sl-btn-secondary" href="#regulatory-summary">Read Oversight Rules</a>
+        </div>
       </div>
     </section>
 
-    <section class="sl-grid">
-      <article class="sl-section">
-        <h2>Regulatory Summary</h2>
-        {paragraphs.length > 0 ? (
-          paragraphs.map((paragraph) => <p>{paragraph}</p>)
-        ) : (
-          <p>
-            Regulatory summary content is being refreshed for {stateMeta.name}. Use official licensing and ombudsman resources while that update completes.
-          </p>
-        )}
+    <section class="sl-state-stats" aria-label="Regulatory context">
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">Verified</p>
+        <p class="sl-state-stat-label">Licensing</p>
+        <p class="sl-state-stat-note">Official state records</p>
       </article>
-      <aside class="sl-section">
-        <h2>Official Contacts</h2>
-        <ul class="sl-pill-list">
-          <li>
-            <strong>Licensing Authority</strong>
-            <div class="sl-muted">{payload.contacts_json?.licensing?.name || 'State licensing office'}</div>
-            {payload.contacts_json?.licensing?.phone ? <div class="sl-muted">{payload.contacts_json.licensing.phone}</div> : null}
-            {payload.contacts_json?.licensing?.website ? (
-              <a href={payload.contacts_json.licensing.website} target="_blank" rel="noopener noreferrer nofollow">Visit licensing website</a>
-            ) : null}
-          </li>
-          <li>
-            <strong>Long-Term Care Ombudsman</strong>
-            <div class="sl-muted">{payload.contacts_json?.ombudsman?.name || 'State ombudsman program'}</div>
-            {payload.contacts_json?.ombudsman?.phone ? <div class="sl-muted">{payload.contacts_json.ombudsman.phone}</div> : null}
-            {payload.contacts_json?.ombudsman?.website ? (
-              <a href={payload.contacts_json.ombudsman.website} target="_blank" rel="noopener noreferrer nofollow">Visit ombudsman website</a>
-            ) : null}
-          </li>
-        </ul>
-      </aside>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">Active</p>
+        <p class="sl-state-stat-label">Ombudsman</p>
+        <p class="sl-state-stat-note">Resident advocacy</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">Direct</p>
+        <p class="sl-state-stat-label">Complaints</p>
+        <p class="sl-state-stat-note">State intake channels</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">Public</p>
+        <p class="sl-state-stat-label">Inspections</p>
+        <p class="sl-state-stat-note">Historical records access</p>
+      </article>
+    </section>
+
+    <section class="sl-state-overview" id="regulatory-summary">
+      <div class="sl-state-section-head">
+        <div>
+          <p class="sl-state-section-kicker">Oversight Layer</p>
+          <h2>Regulatory Summary</h2>
+        </div>
+      </div>
+      <div class="sl-state-overview-copy" style="grid-template-columns: 2fr 1fr; gap: 3rem;">
+        <div style="display: grid; gap: 1rem;">
+          {paragraphs.length > 0 ? (
+            paragraphs.map((paragraph) => <p>{paragraph}</p>)
+          ) : (
+            <p>
+              Regulatory summary content is being refreshed for {stateMeta.name}. Use official licensing and ombudsman resources while that update completes.
+            </p>
+          )}
+        </div>
+        <aside>
+          <div class="sl-state-trust-callout">
+            <strong>Official Contacts</strong>
+            <ul class="sl-pill-list" style="margin-top: 1rem; border: 0; padding: 0;">
+              <li style="border: 0; padding: 0; margin-bottom: 1.5rem; background: transparent;">
+                <strong style="color: #f5d08d; font-size: 0.8rem; text-transform: uppercase;">Licensing Authority</strong>
+                <div style="color: #fff; margin-top: 0.25rem;">{payload.contacts_json?.licensing?.name || 'State licensing office'}</div>
+                {payload.contacts_json?.licensing?.phone ? <div style="color: rgba(248, 239, 223, 0.7);">{payload.contacts_json.licensing.phone}</div> : null}
+                {payload.contacts_json?.licensing?.website ? (
+                  <a href={payload.contacts_json.licensing.website} target="_blank" rel="noopener noreferrer nofollow" style="color: #f5d08d; font-weight: 700; font-size: 0.8rem; text-decoration: underline;">Visit website</a>
+                ) : null}
+              </li>
+              <li style="border: 0; padding: 0; background: transparent;">
+                <strong style="color: #f5d08d; font-size: 0.8rem; text-transform: uppercase;">Ombudsman Program</strong>
+                <div style="color: #fff; margin-top: 0.25rem;">{payload.contacts_json?.ombudsman?.name || 'State ombudsman program'}</div>
+                {payload.contacts_json?.ombudsman?.phone ? <div style="color: rgba(248, 239, 223, 0.7);">{payload.contacts_json.ombudsman.phone}</div> : null}
+                {payload.contacts_json?.ombudsman?.website ? (
+                  <a href={payload.contacts_json.ombudsman.website} target="_blank" rel="noopener noreferrer nofollow" style="color: #f5d08d; font-weight: 700; font-size: 0.8rem; text-decoration: underline;">Visit website</a>
+                ) : null}
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
     </section>
   </div>
 </Base>
