@@ -63,6 +63,10 @@ export const EditFacility: React.FC = () => {
     amenities: 0,
     careTypes: 0
   });
+  const [publicIdentity, setPublicIdentity] = useState<{ publicSlug: string | null; publicRouteId: number | null }>({
+    publicSlug: null,
+    publicRouteId: null,
+  });
 
   const fetchCounts = async () => {
     if (!id) return;
@@ -127,6 +131,10 @@ export const EditFacility: React.FC = () => {
           plan: (data.plan as string | undefined) || ((data.listing_tier as string | undefined) === 'free' ? 'basic' : (data.listing_tier as string | undefined)) || 'basic'
         };
         setFormData(nextFormData);
+        setPublicIdentity({
+          publicSlug: typeof data.public_slug === 'string' && data.public_slug.trim() ? data.public_slug.trim() : null,
+          publicRouteId: typeof data.public_route_id === 'number' ? data.public_route_id : null,
+        });
 
         // Older databases may not have profile version columns; avoid noisy 400s.
         const canUseProfileVersioning =
@@ -393,8 +401,8 @@ export const EditFacility: React.FC = () => {
   const profileHealth = getProfileCompleteness(completenessData, counts);
   const publicFacilityPath = buildFacilityDetailPath({
     id,
-    state: formData.state,
-    city: formData.city,
+    publicSlug: publicIdentity.publicSlug,
+    publicRouteId: publicIdentity.publicRouteId,
   });
 
   return (

@@ -47,7 +47,7 @@ export const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose 
   const categories = [
     { id: 'care' as MenuCategory, label: 'Find Care', icon: Search, color: 'primary' },
     { id: 'products' as MenuCategory, label: 'Products', icon: ShoppingBag, color: 'green' },
-    { id: 'regulatory' as MenuCategory, label: 'Regulatory Library', icon: Scale, color: 'blue' },
+    { id: 'regulatory' as MenuCategory, label: 'Regulations', icon: Scale, color: 'blue' },
     { id: 'operators' as MenuCategory, label: 'For Providers', icon: Building2, color: 'purple' },
     { id: 'company' as MenuCategory, label: 'Company', icon: HelpCircle, color: 'slate' }
   ];
@@ -159,11 +159,11 @@ const ProductsContent = ({ onClose }: { onClose: () => void }) => (
 
 const RegulatoryContent = ({ onClose }: { onClose: () => void }) => (
   <div className="space-y-6">
-    <h2 className="text-3xl font-bold text-slate-900 mb-4">Regulatory Library</h2>
+    <h2 className="text-3xl font-bold text-slate-900 mb-4">Regulations</h2>
     <p className="text-slate-600 mb-8">State-specific regulations, licensing guides, and compliance resources.</p>
 
     <div className="mb-8 space-y-4">
-      <NavCard to="/regulatory-library" onClick={onClose} icon={BookOpen} title="Regulatory Index" description="Complete regulatory overview" />
+      <NavCard to="/regulations/" onClick={onClose} icon={BookOpen} title="Regulations Index" description="Complete regulatory overview" />
       <NavCard to="/resources/medicaid" onClick={onClose} icon={Scale} title="Medicaid Guides" description="State Medicaid information" />
       <NavCard to="/resources/veterans" onClick={onClose} icon={Users} title="Veterans Benefits" description="VA benefits by state" />
     </div>
@@ -174,7 +174,7 @@ const RegulatoryContent = ({ onClose }: { onClose: () => void }) => (
         {US_STATES.map(state => (
           <Link
             key={state}
-            to={`/states/${state.toLowerCase().replace(/ /g, '-')}/regulations`}
+            to={`/regulations/${state.toLowerCase().replace(/ /g, '-')}/`}
             onClick={onClose}
             className="text-sm text-slate-700 hover:text-primary-600 hover:bg-primary-50 px-3 py-2 rounded-lg transition-colors"
           >

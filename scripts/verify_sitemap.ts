@@ -4,6 +4,8 @@ import path from 'node:path';
 const sitemapIndexPath = path.join(process.cwd(), 'public', 'sitemap-index.xml');
 const sitemapFallbackPath = path.join(process.cwd(), 'public', 'sitemap.xml');
 const sitemapPath = fs.existsSync(sitemapIndexPath) ? sitemapIndexPath : sitemapFallbackPath;
+const publicDir = path.join(process.cwd(), 'public');
+const legacySitemapFiles = ['sitemap-cities.xml', 'sitemap-states.xml'];
 
 if (!fs.existsSync(sitemapPath)) {
   console.error(`Missing sitemap index at ${sitemapIndexPath} (and fallback sitemap at ${sitemapFallbackPath}).`);
@@ -21,13 +23,16 @@ const findings = {
   nonHttps: 0,
   hasLogin: 0,
   hasSignup: 0,
-  legacyAssistedLiving: 0,
+  legacySeniorLiving: 0,
   facilityUuid: 0,
-  cityCanonical: 0,
+  careTypeRootCanonical: 0,
+  careTypeStateCanonical: 0,
   careTypeCityCanonical: 0,
-  facilityCanonical: 0,
-  stateRegulationsCanonical: 0,
-  stateRegulatoryLegacy: 0,
+  communityCanonical: 0,
+  regulationsRootCanonical: 0,
+  regulationsStateCanonical: 0,
+  regulationsTopicCanonical: 0,
+  legacyStateRegulations: 0,
   sitemapFilesChecked: 0,
 };
 
@@ -39,14 +44,21 @@ const checkUrl = (url: string) => {
   if (!url.startsWith('https://')) findings.nonHttps += 1;
   if (url.includes('/login')) findings.hasLogin += 1;
   if (url.includes('/signup')) findings.hasSignup += 1;
-  if (/https?:\/\/[^/]+\/assisted-living\/[^/]+/i.test(url)) findings.legacyAssistedLiving += 1;
-  if (/\/senior-living\/[^/]+\/[^/]+\/?$/.test(url)) findings.cityCanonical += 1;
-  if (/\/senior-living\/[^/]+\/[^/]+\/[^/]+\/?$/.test(url)) findings.careTypeCityCanonical += 1;
-  if (/\/states\/[^/]+\/regulations(?:\/|$)/.test(url)) findings.stateRegulationsCanonical += 1;
-  if (/\/states\/[^/]+\/regulatory(?:\/|$)/.test(url)) findings.stateRegulatoryLegacy += 1;
-  if (/\/facility\//.test(url)) {
-    if (uuidRegex.test(url)) findings.facilityUuid += 1;
-    else findings.facilityCanonical += 1;
+  if (/\/senior-living(?:\/|$)/.test(url)) findings.legacySeniorLiving += 1;
+  if (/\/facility\//.test(url) && uuidRegex.test(url)) findings.facilityUuid += 1;
+  if (/\/community\/[a-z0-9]+(?:-[a-z0-9]+)*-\d+\/?$/.test(url)) findings.communityCanonical += 1;
+  if (/\/regulations\/?$/.test(url)) findings.regulationsRootCanonical += 1;
+  if (/\/regulations\/[^/]+\/?$/.test(url)) findings.regulationsStateCanonical += 1;
+  if (/\/regulations\/[^/]+\/[^/]+\/?$/.test(url)) findings.regulationsTopicCanonical += 1;
+  if (/\/states\/[^/]+\/regulations(?:\/|$)/.test(url)) findings.legacyStateRegulations += 1;
+  if (/https?:\/\/[^/]+\/(assisted-living|memory-care|nursing-homes|independent-living|residential-care|adult-day-services|ccrc)\/?$/.test(url)) {
+    findings.careTypeRootCanonical += 1;
+  }
+  if (/https?:\/\/[^/]+\/(assisted-living|memory-care|nursing-homes|independent-living|residential-care|adult-day-services|ccrc)\/[^/]+\/?$/.test(url)) {
+    findings.careTypeStateCanonical += 1;
+  }
+  if (/https?:\/\/[^/]+\/(assisted-living|memory-care|nursing-homes|independent-living|residential-care|adult-day-services|ccrc)\/[^/]+\/[^/]+\/?$/.test(url)) {
+    findings.careTypeCityCanonical += 1;
   }
 };
 
@@ -85,14 +97,25 @@ const report = [
   `Non-HTTPS URLs: ${findings.nonHttps}`,
   `Login URLs: ${findings.hasLogin}`,
   `Signup URLs: ${findings.hasSignup}`,
-  `City canonical URLs: ${findings.cityCanonical}`,
+  `Care-type root canonical URLs: ${findings.careTypeRootCanonical}`,
+  `Care-type state canonical URLs: ${findings.careTypeStateCanonical}`,
   `Care-type city canonical URLs: ${findings.careTypeCityCanonical}`,
-  `Legacy assisted-living URLs (non-canonical): ${findings.legacyAssistedLiving}`,
-  `Facility canonical URLs (slug): ${findings.facilityCanonical}`,
+  `Community canonical URLs: ${findings.communityCanonical}`,
   `Facility UUID URLs (non-canonical): ${findings.facilityUuid}`,
-  `State regulations canonical URLs: ${findings.stateRegulationsCanonical}`,
-  `State regulatory legacy URLs (non-canonical): ${findings.stateRegulatoryLegacy}`,
+  `Regulations root canonical URLs: ${findings.regulationsRootCanonical}`,
+  `Regulations state canonical URLs: ${findings.regulationsStateCanonical}`,
+  `Regulations topic canonical URLs: ${findings.regulationsTopicCanonical}`,
+  `Legacy /senior-living URLs (non-canonical): ${findings.legacySeniorLiving}`,
+  `Legacy state regulations URLs (non-canonical): ${findings.legacyStateRegulations}`,
 ];
+
+const staleLegacySitemaps = legacySitemapFiles.filter((file) =>
+  fs.existsSync(path.join(publicDir, file)),
+);
+
+if (staleLegacySitemaps.length > 0) {
+  report.push(`Stale legacy sitemap files: ${staleLegacySitemaps.join(', ')}`);
+}
 
 console.log(report.join('\n'));
 
@@ -100,9 +123,10 @@ if (
   findings.nonHttps > 0 ||
   findings.hasLogin > 0 ||
   findings.hasSignup > 0 ||
-  findings.legacyAssistedLiving > 0 ||
+  findings.legacySeniorLiving > 0 ||
   findings.facilityUuid > 0 ||
-  findings.stateRegulatoryLegacy > 0
+  findings.legacyStateRegulations > 0 ||
+  staleLegacySitemaps.length > 0
 ) {
   console.error('Sitemap verification failed. Resolve the issues above.');
   process.exit(1);

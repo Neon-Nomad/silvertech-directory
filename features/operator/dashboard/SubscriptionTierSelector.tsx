@@ -1,6 +1,5 @@
 import React from 'react';
-import { Check, X } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
+import { Check } from 'lucide-react';
 
 interface TierProps {
   name: string;

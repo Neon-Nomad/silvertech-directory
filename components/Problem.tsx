@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section } from './ui/Section';
-import { AlertTriangle, DollarSign, Search, XCircle, FileWarning, EyeOff } from 'lucide-react';
+import { AlertTriangle, DollarSign, FileWarning, EyeOff } from 'lucide-react';
 
 export const Problem: React.FC = () => {
   const problems = [

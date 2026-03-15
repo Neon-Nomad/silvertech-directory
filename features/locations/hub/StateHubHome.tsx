@@ -6,6 +6,7 @@ import { ALL_STATES } from '../../../src/data/states';
 import { loadCityIndex } from '@/src/utils/facilityIndex';
 import { supabase } from '@/src/lib/supabase';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { buildCareTypePath, buildRegulationsPath } from '@/src/utils/facilityPath';
 
 type CityStat = {
   city: string;
@@ -140,7 +141,7 @@ export const StateHubHome: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
-          <Link to={`/states/${stateDef.slug}/regulations`} className="bg-white border border-slate-200 rounded-xl p-5 hover:shadow-sm">
+          <Link to={buildRegulationsPath(stateDef.slug)} className="bg-white border border-slate-200 rounded-xl p-5 hover:shadow-sm">
             <Scale className="h-5 w-5 text-slate-700" />
             <p className="mt-3 font-semibold text-slate-900">Regulations</p>
             <p className="text-sm text-slate-600 mt-1">Licensing standards and compliance references.</p>
@@ -185,7 +186,7 @@ export const StateHubHome: React.FC = () => {
               {cities.map((city) => (
                 <Link
                   key={city.slug}
-                  to={`/senior-living/${stateDef.slug}/${city.slug}/assisted-living/`}
+                  to={buildCareTypePath({ careType: 'assisted-living', state: stateDef.slug, city: city.slug })}
                   className="flex items-center justify-between rounded-lg border border-slate-200 px-3 py-2 text-sm hover:border-slate-400"
                 >
                   <span className="font-medium text-slate-800 truncate pr-2">{city.city}</span>

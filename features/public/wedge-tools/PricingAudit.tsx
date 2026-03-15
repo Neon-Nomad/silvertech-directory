@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LineChart, DollarSign, MapPin, TrendingUp, Upload, Download } from 'lucide-react';
+import { LineChart, DollarSign, MapPin, TrendingUp, Download } from 'lucide-react';
 
 const PricingAudit: React.FC = () => {
   const [facilityName, setFacilityName] = useState('');

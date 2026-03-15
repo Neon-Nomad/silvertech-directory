@@ -41,7 +41,7 @@ export const FacilityCareTypesEditor: React.FC<FacilityCareTypesEditorProps> = (
 
       if (selectedError) throw selectedError;
       
-      const ids = new Set((selectedData || []).map(item => item.care_type_id));
+      const ids = new Set<string>((selectedData || []).map((item) => item.care_type_id));
       setSelectedIds(ids);
 
     } catch (err) {
@@ -75,7 +75,7 @@ export const FacilityCareTypesEditor: React.FC<FacilityCareTypesEditorProps> = (
           .from('facility_care_types')
           .insert({
             facility_id: facilityId,
-            care_type_id: careTypeId
+            care_type_id: careTypeId,
           });
           
         if (error) throw error;

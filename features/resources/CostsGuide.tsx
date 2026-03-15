@@ -66,10 +66,10 @@ export const CostsGuide: React.FC = () => {
             Jump straight to official regulations, licensing, and state resources.
           </p>
           <Link
-            to="/regulatory-library"
+            to="/regulations/"
             className="inline-flex items-center gap-2 px-4 py-2 border-2 border-charcoal text-charcoal font-bold rounded-lg hover:bg-charcoal hover:text-white transition-all"
           >
-            Go to Regulatory Library
+            Go to Regulations
           </Link>
         </div>
       </main>

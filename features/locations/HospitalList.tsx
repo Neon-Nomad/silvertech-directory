@@ -7,7 +7,7 @@ interface HospitalListProps {
   cityName: string;
 }
 
-export const HospitalList: React.FC<HospitalListProps> = ({ hospitals, cityName }) => {
+export const HospitalList: React.FC<HospitalListProps> = ({ hospitals, cityName: _cityName }) => {
   if (!hospitals || hospitals.length === 0) return null;
 
   const erCount = hospitals.filter(h => h.emergency_services === 'Yes').length;

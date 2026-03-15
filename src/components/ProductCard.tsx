@@ -10,7 +10,14 @@ interface ProductCardProps {
   affiliateLink: string;
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({ name, image, stars, reviews, shortReview, affiliateLink }) => {
+export const ProductCard: React.FC<ProductCardProps> = ({
+  name,
+  image: _image,
+  stars,
+  reviews,
+  shortReview,
+  affiliateLink,
+}) => {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col h-full">
       <div className="h-48 bg-slate-100 flex items-center justify-center relative">

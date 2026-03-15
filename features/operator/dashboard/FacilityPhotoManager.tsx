@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '@/src/lib/supabase';
-import { Button } from '@/components/ui/Button';
 import { Trash2, Upload, Image as ImageIcon, Loader2 } from 'lucide-react';
 
 interface FacilityPhoto {

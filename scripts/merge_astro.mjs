@@ -3,26 +3,29 @@ import path from 'node:path';
 
 const root = process.cwd();
 const astroRoot = path.join(root, 'dist-astro');
-const enableStaticSeniorLiving =
-  process.env.ENABLE_STATIC_SENIOR_LIVING === '1' ||
-  process.env.ENABLE_STATIC_SENIOR_LIVING === 'true';
-
-if (!enableStaticSeniorLiving) {
-  console.log('[merge_astro] Skipping static /senior-living copy (runtime route mode).');
-}
+const careTypeDirs = [
+  'assisted-living',
+  'memory-care',
+  'nursing-homes',
+  'independent-living',
+  'residential-care',
+  'adult-day-services',
+  'ccrc',
+];
 
 const targets = [
   // Shared Astro CSS/assets required by state/city/guide pages.
   { src: path.join(astroRoot, '_astro'), dest: path.join(root, 'dist', '_astro') },
-  // Static compliance hubs under /states/*/regulations for crawlability.
+  // State authority hubs remain under /states/*
   { src: path.join(astroRoot, 'states'), dest: path.join(root, 'dist', 'states') },
-  // High-cardinality /senior-living/* pages are served via the React runtime + SPA fallback.
-  // Publishing all static variants (city + care-type pages) can exceed Netlify deploy upload limits.
-  ...(enableStaticSeniorLiving
-    ? [{ src: path.join(astroRoot, 'senior-living'), dest: path.join(root, 'dist', 'senior-living') }]
-    : []),
-  // Facility detail URLs resolve through the React route under `/senior-living/:state/:city/:leaf`
-  // so the full dynamic template renders instead of the static Astro shell.
+  // Regulations now live under /regulations/*
+  { src: path.join(astroRoot, 'regulations'), dest: path.join(root, 'dist', 'regulations') },
+  // Canonical listing routes now live under /{care-type}/*
+  ...careTypeDirs.map((dir) => ({
+    src: path.join(astroRoot, dir),
+    dest: path.join(root, 'dist', dir),
+  })),
+  // Guides remain static.
   { src: path.join(astroRoot, 'guides'), dest: path.join(root, 'dist', 'guides') }
 ];
 

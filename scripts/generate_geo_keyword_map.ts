@@ -127,7 +127,7 @@ if (isExpanded) {
   ];
 
   for (const city of cities) {
-    const targetUrl = `https://silvertechdirectory.com/senior-living/${city.stateSlug}/${city.citySlug}/assisted-living/`;
+    const targetUrl = `https://silvertechdirectory.com/assisted-living/${city.stateSlug}/${city.citySlug}/`;
     for (const template of CITY_TEMPLATES) {
       const keyword = renderKeyword(template.pattern, {
         city: city.cityName,
@@ -155,7 +155,7 @@ if (isExpanded) {
   }
 
   for (const state of states) {
-    const targetUrl = `https://silvertechdirectory.com/senior-living/${state.stateSlug}/`;
+    const targetUrl = `https://silvertechdirectory.com/assisted-living/${state.stateSlug}/`;
     for (const template of STATE_TEMPLATES) {
       const keyword = renderKeyword(template.pattern, {
         stateAbbr: state.stateAbbr,
@@ -223,7 +223,7 @@ if (isExpanded) {
         city.stateSlug,
         city.cityName,
         city.citySlug,
-        `https://silvertechdirectory.com/senior-living/${city.stateSlug}/${city.citySlug}/assisted-living/`,
+        `https://silvertechdirectory.com/assisted-living/${city.stateSlug}/${city.citySlug}/`,
         keywords[0],
         keywords.slice(1).join(' | '),
         intents,
@@ -252,7 +252,7 @@ if (isExpanded) {
         state.stateSlug,
         '',
         '',
-        `https://silvertechdirectory.com/senior-living/${state.stateSlug}/`,
+        `https://silvertechdirectory.com/assisted-living/${state.stateSlug}/`,
         keywords[0],
         keywords.slice(1).join(' | '),
         intents,

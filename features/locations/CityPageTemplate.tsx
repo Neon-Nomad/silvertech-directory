@@ -1,35 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import React, { useEffect, useMemo, useState } from 'react';
+import { Link, Navigate, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { MapPin, Building2, ChevronRight, Shield, Phone, AlertTriangle } from 'lucide-react';
+import { Building2, MapPin, Phone, Shield } from 'lucide-react';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { ContentMeta } from '@/components/ui/ContentMeta';
 import { DataSourceNote } from '@/components/ui/DataSourceNote';
-import { supabase } from '@/src/lib/supabase';
-import { filterFacilitiesByLocation, loadFacilityIndexWithOptions, resolveSlugs } from '@/src/utils/facilityIndex';
-import { useJsonLd } from '@/src/hooks/useJsonLd';
-import { ALL_STATES as states } from '@/src/data/states';
-import zipToCity from '@/src/data/zip_to_city.json';
-import { rankFacilities } from '@/src/utils/ranking';
-import { cityContent } from '@/src/data/city_content';
-import { generateCityContent } from '@/src/utils/contentGenerator';
-import { BestFacilitiesList } from '@/features/locations/BestFacilitiesList';
 import { HospitalList } from '@/features/locations/HospitalList';
+import { ALL_STATES } from '@/src/data/states';
 import { getHospitalsByCity, Hospital } from '@/src/utils/hospitalData';
-import { buildFacilityDetailPath, isCareTypeRouteSlug } from '@/src/utils/facilityPath';
+import { buildCareTypePath, buildFacilityDetailPath, buildRegulationsPath, getCareTypeRouteLabel, isCareTypeRouteSlug } from '@/src/utils/facilityPath';
+import { loadFacilityIndexWithOptions } from '@/src/utils/facilityIndex';
 
-
-// ... (existing imports)
-
-
-
-// Helper to format strings (e.g., "san-francisco" -> "San Francisco")
-const formatName = (slug: string) => {
-  return slug
-    .split('-')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
+type PublicFacility = {
+  id: string;
+  name: string;
+  city: string;
+  state: string;
+  address_line1?: string;
+  postal_code?: string;
+  phone?: string;
+  website_url?: string;
+  public_slug?: string;
+  public_route_id?: number;
 };
+
+const formatName = (slug: string) =>
+  slug
+    .split('-')
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
 
 const toSlug = (value: string) =>
   value
@@ -39,144 +39,95 @@ const toSlug = (value: string) =>
     .replace(/(^-|-$)/g, '');
 
 export const CityPageTemplate: React.FC = () => {
-  const { state: stateSlug, city: citySlug, leaf } = useParams<{ state: string; city: string; leaf?: string }>();
-  const navigate = useNavigate();
-  
-  const [facilities, setFacilities] = useState<any[]>([]);
+  const { careType, state, city } = useParams<{ careType: string; state: string; city: string }>();
+  const normalizedCareType = (careType || '').trim().toLowerCase();
+  const stateDef = ALL_STATES.find((entry) => entry.slug === (state || '').trim().toLowerCase());
+  const citySlug = (city || '').trim().toLowerCase();
+  const cityName = formatName(citySlug);
+  const [facilities, setFacilities] = useState<PublicFacility[]>([]);
   const [hospitals, setHospitals] = useState<Hospital[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  // Derived state
-  const cityName = citySlug ? formatName(citySlug) : '';
-  const normalizedCitySlug = (citySlug || '').trim().toLowerCase();
-  const stateData = states.find(s => s.slug === stateSlug?.toLowerCase());
-  const stateName = stateData ? stateData.name : formatName(stateSlug || '');
-  const stateAbbr = stateData ? stateData.abbreviation : stateSlug?.toUpperCase();
-
-  // Redirect ZIP slugs to the correct city page
-  useEffect(() => {
-    if (!stateSlug || !citySlug) return;
-    if (!/^\d{5}$/.test(citySlug)) return;
-
-    const zipEntry = (zipToCity as Record<string, { city: string; state: string }>)[citySlug];
-    if (!zipEntry) return;
-
-    const zipState = states.find((s) => s.abbreviation.toLowerCase() === zipEntry.state.toLowerCase());
-    const targetStateSlug = zipState?.slug || stateSlug;
-    const targetCitySlug = toSlug(zipEntry.city);
-    navigate(`/senior-living/${targetStateSlug}/${targetCitySlug}/`, { replace: true });
-  }, [stateSlug, citySlug, navigate]);
-
-  // Get Rich Content (Premium or Generated)
-  const contentKey = `${citySlug}-${stateSlug}`;
-  const richContent = cityContent[contentKey] || generateCityContent(cityName, stateName, facilities.length);
 
   useEffect(() => {
-    const fetchFacilities = async () => {
-      if (!stateSlug || !citySlug) return;
+    let mounted = true;
 
-      setLoading(true);
-      setError(null);
-      const targetState = (stateData?.abbreviation || stateSlug).toUpperCase();
-      const targetCity = cityName;
-      const cityLikePattern = `%${normalizedCitySlug.split('-').join('%')}%`;
+    const loadCityDirectory = async () => {
+      if (!stateDef || !isCareTypeRouteSlug(normalizedCareType) || !citySlug) {
+        if (mounted) setLoading(false);
+        return;
+      }
 
       try {
-        // Supabase primary: city-filtered query + normalized slug match.
-        const { data, error } = await supabase
-          .from('facilities')
-          .select('id,name,city,state,address_line1,address_line2,postal_code,phone,website_url,latitude,longitude,listing_tier')
-          .eq('state', targetState)
-          .ilike('city', cityLikePattern)
-          .order('name', { ascending: true });
+        const index = await loadFacilityIndexWithOptions({ stateAbbr: stateDef.abbreviation });
+        const scoped = index
+          .filter(
+            (facility) =>
+              (facility.state || '').trim().toUpperCase() === stateDef.abbreviation &&
+              toSlug(facility.city || '') === citySlug &&
+              (facility.primary_care_type_slug || '').trim().toLowerCase() === normalizedCareType,
+          )
+          .sort((a, b) => a.name.localeCompare(b.name));
 
-        if (error) throw error;
+        const cityHospitals = await getHospitalsByCity(stateDef.abbreviation, cityName);
 
-        let cityMatches = (data || []).filter((row) => toSlug(row.city || '') === normalizedCitySlug);
-
-        // If punctuation/format drift defeated the city filter, do one state-level retry.
-        if (cityMatches.length === 0) {
-          const { data: stateRows, error: stateError } = await supabase
-            .from('facilities')
-            .select('id,name,city,state,address_line1,address_line2,postal_code,phone,website_url,latitude,longitude,listing_tier')
-            .eq('state', targetState)
-            .order('name', { ascending: true });
-          if (stateError) throw stateError;
-          cityMatches = (stateRows || []).filter((row) => toSlug(row.city || '') === normalizedCitySlug);
-        }
-
-        // Resolve Supabase UUIDs to canonical slugs for public-facing URLs
-        const resolved = await resolveSlugs(cityMatches);
-        setFacilities(resolved);
-      } catch (err) {
-        console.error('Error fetching city facilities from Supabase:', err);
-        try {
-          // Fallback to static index
-          const index = await loadFacilityIndexWithOptions({ stateAbbr: targetState });
-          const filtered = filterFacilitiesByLocation(index, targetState, targetCity);
-          setFacilities(filtered);
-        } catch (fallbackError) {
-          console.error('Error loading static facility index:', fallbackError);
-          setError('Failed to load facilities.');
+        if (!mounted) return;
+        setFacilities(scoped);
+        setHospitals(cityHospitals);
+      } catch (error) {
+        console.error('Error loading care-type city page:', error);
+        if (mounted) {
+          setFacilities([]);
+          setHospitals([]);
         }
       } finally {
-        try {
-          const cityHospitals = await getHospitalsByCity(targetState, targetCity);
-          setHospitals(cityHospitals);
-        } catch (hospitalError) {
-          console.error('Error loading hospitals:', hospitalError);
-        }
-        setLoading(false);
+        if (mounted) setLoading(false);
       }
     };
 
-    fetchFacilities();
-  }, [stateSlug, citySlug, cityName, normalizedCitySlug, stateData]);
+    void loadCityDirectory();
+    return () => {
+      mounted = false;
+    };
+  }, [cityName, citySlug, normalizedCareType, stateDef]);
 
-  // SEO & Schema
-  const careTypeSlug = isCareTypeRouteSlug(leaf) ? leaf!.toLowerCase() : null;
-  const careTypeLabel = careTypeSlug ? formatName(careTypeSlug) : null;
-  const pageTitle = careTypeLabel
-    ? `${careTypeLabel} in ${cityName}, ${stateAbbr} - Directory of Senior Care Facilities`
-    : `Senior Living in ${cityName}, ${stateAbbr} - Directory of Senior Care Facilities`;
-  const pageDescription = careTypeLabel
-    ? `See ${careTypeLabel.toLowerCase()} facilities in ${cityName}, ${stateName}. Compare prices, read reviews, and find verified senior care providers.`
-    : `See senior living facilities in ${cityName}, ${stateName}. Compare prices, read reviews, and find verified senior care providers.`;
-  const canonicalUrl = careTypeSlug
-    ? `https://silvertechdirectory.com/senior-living/${stateSlug}/${citySlug}/${careTypeSlug}/`
-    : `https://silvertechdirectory.com/senior-living/${stateSlug}/${citySlug}/`;
+  if (!stateDef || !isCareTypeRouteSlug(normalizedCareType) || !citySlug) {
+    return <Navigate to="/" replace />;
+  }
 
-  // Use ranked facilities for Schema to highlight best ones first
-  const rankedFacilities = rankFacilities(facilities);
+  const careTypeLabel = getCareTypeRouteLabel(normalizedCareType);
+  const canonicalUrl = `https://silvertechdirectory.com/${normalizedCareType}/${stateDef.slug}/${citySlug}/`;
+  const pageTitle = `${careTypeLabel} in ${cityName}, ${stateDef.abbreviation} | SilverTech Directory`;
+  const pageDescription = `Compare ${careTypeLabel.toLowerCase()} communities in ${cityName}, ${stateDef.name} and open clean community profiles for verified facility details.`;
 
-  // JSON-LD ItemList
-  const itemListSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    itemListElement: rankedFacilities.map((f, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      item: {
-        '@type': 'LocalBusiness',
-        name: f.name,
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: f.address_line1,
-          addressLocality: f.city,
-          addressRegion: f.state,
-          postalCode: f.postal_code,
-          addressCountry: 'US'
+  const itemListSchema = useMemo(
+    () => ({
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      itemListElement: facilities.map((facility, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: {
+          '@type': 'MedicalBusiness',
+          name: facility.name,
+          url: `https://silvertechdirectory.com${buildFacilityDetailPath({
+            id: facility.id,
+            publicSlug: facility.public_slug,
+            publicRouteId: facility.public_route_id,
+          })}`,
+          telephone: facility.phone || undefined,
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: facility.address_line1 || undefined,
+            addressLocality: facility.city,
+            addressRegion: facility.state,
+            postalCode: facility.postal_code || undefined,
+            addressCountry: 'US',
+          },
         },
-        telephone: f.phone,
-        url: `https://silvertechdirectory.com${buildFacilityDetailPath({ id: f.id, state: f.state, city: f.city })}`,
-        ...(f.image ? { image: f.image } : {}),
-        ...(f.price ? { priceRange: f.price } : {})
-      }
-    }))
-  };
-
-  useJsonLd(itemListSchema);
+      })),
+    }),
+    [facilities],
+  );
 
   return (
     <div className="min-h-screen bg-warm-gray">
@@ -194,32 +145,40 @@ export const CityPageTemplate: React.FC = () => {
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+              { '@type': 'ListItem', position: 2, name: careTypeLabel, item: `https://silvertechdirectory.com/${normalizedCareType}/` },
+              { '@type': 'ListItem', position: 3, name: stateDef.name, item: `https://silvertechdirectory.com/${normalizedCareType}/${stateDef.slug}/` },
+              { '@type': 'ListItem', position: 4, name: cityName, item: canonicalUrl },
+            ],
+          })}
+        </script>
+        <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
       </Helmet>
 
-      {/* Breadcrumbs */}
-      <div className="bg-white shadow-sm border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Breadcrumbs items={[
-            { label: 'Home', path: '/' },
-            { label: 'States', path: '/senior-living/' },
-            { label: stateName, path: `/senior-living/${stateSlug}/` },
-            { label: cityName }
-          ]} />
-        </div>
-      </div>
-
-      {/* Hero Section */}
       <div className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            {cityName}, {stateAbbr} Assisted Living & Memory Care Directory
-          </h1>
-          
-          {/* Rich Intro Content */}
-          <div 
-            className="text-xl text-slate-600 max-w-4xl prose prose-slate"
-            dangerouslySetInnerHTML={{ __html: richContent.intro }}
+          <Breadcrumbs
+            items={[
+              { label: 'Home', path: '/' },
+              { label: careTypeLabel, path: `/${normalizedCareType}/` },
+              { label: stateDef.name, path: buildCareTypePath({ careType: normalizedCareType, state: stateDef.slug }) },
+              { label: cityName, path: buildCareTypePath({ careType: normalizedCareType, state: stateDef.slug, city: citySlug }) },
+            ]}
           />
+          <div className="mt-6 max-w-4xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">City Directory</p>
+            <h1 className="mt-3 text-4xl font-bold text-slate-900">
+              {careTypeLabel} in {cityName}, {stateDef.abbreviation}
+            </h1>
+            <p className="mt-4 text-lg text-slate-600">
+              Review local communities, compare facility details, and move directly into canonical `/community` profiles.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -230,157 +189,134 @@ export const CityPageTemplate: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          
-          {/* Main Content: Facility List */}
           <div className="lg:col-span-2 space-y-6">
-            
-            {/* Honest Care Callout */}
-            <div className="bg-primary-50 border border-primary-100 rounded-lg p-6 flex items-start gap-4">
-              <Shield className="w-8 h-8 text-primary-600 flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-lg text-primary-900 mb-1">Honest, Unbiased Information</h3>
-                <p className="text-primary-800 mb-2">
-                  Most other directories charge hidden referral fees that influence which facilities they show you. 
-                  We don't.
-                </p>
-                <Link to="/honest-care" className="text-primary-700 font-medium underline hover:text-primary-900">
-                  Read our Transparency Pledge
+            <div className="rounded-xl border border-slate-200 bg-white p-6">
+              <div className="flex flex-wrap gap-6 text-sm text-slate-600">
+                <span>{loading ? '...' : facilities.length.toLocaleString()} listings</span>
+                <span>{loading ? '...' : facilities.filter((facility) => Boolean(facility.phone)).length.toLocaleString()} with phone</span>
+                <span>{loading ? '...' : facilities.filter((facility) => Boolean(facility.website_url)).length.toLocaleString()} with website</span>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <Link
+                  to={buildRegulationsPath(stateDef.slug)}
+                  className="rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white"
+                >
+                  View {stateDef.name} regulations
+                </Link>
+                <Link
+                  to={buildCareTypePath({ careType: normalizedCareType, state: stateDef.slug })}
+                  className="rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700"
+                >
+                  Browse all {stateDef.name} cities
                 </Link>
               </div>
             </div>
 
-            {/* Best Facilities Ranking */}
-            {!loading && !error && facilities.length > 0 && citySlug && (
-              <BestFacilitiesList 
-                facilities={rankedFacilities} 
-                cityName={cityName} 
-              />
-            )}
-
             {loading ? (
-              <div className="py-12 text-center text-slate-500">Loading facilities in {cityName}...</div>
-            ) : error ? (
-               <div className="py-12 text-center text-red-500">Error: {error}</div>
+              <div className="rounded-xl border border-slate-200 bg-white p-12 text-center text-slate-500">
+                Loading communities in {cityName}...
+              </div>
             ) : facilities.length === 0 ? (
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 text-center">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">No facilities found in {cityName} yet.</h3>
-                <p className="text-slate-600 mb-6">
-                  We are constantly updating our directory. Try searching for a nearby city or browse the state page.
-                </p>
-                <Link 
-                  to={`/senior-living/${stateSlug}/`}
-                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700"
-                >
-                  Browse {stateName}
-                </Link>
+              <div className="rounded-xl border border-slate-200 bg-white p-12 text-center text-slate-500">
+                No primary {careTypeLabel.toLowerCase()} listings are available in {cityName} yet.
               </div>
             ) : (
-              <div className="space-y-6">
-                {facilities.map((facility) => (
-                  <div key={facility.id} className="bg-white rounded-lg shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
-                    <div className="flex flex-col md:flex-row justify-between items-start gap-4">
-                      <div className="flex-1">
-                        <h3 className="text-xl font-bold text-slate-900 mb-2">
-                          <Link
-                            to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}
-                            className="hover:text-primary-600 transition-colors"
-                          >
-                            {facility.name}
-                          </Link>
-                        </h3>
-                        
-                        <div className="flex items-start text-slate-600 mb-2">
-                          <MapPin size={18} className="mr-2 mt-1 text-slate-400 flex-shrink-0" />
+              facilities.map((facility) => (
+                <article key={facility.id} className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                    <div className="flex-1">
+                      <h2 className="text-2xl font-semibold text-slate-900">
+                        <Link
+                          to={buildFacilityDetailPath({
+                            id: facility.id,
+                            publicSlug: facility.public_slug,
+                            publicRouteId: facility.public_route_id,
+                          })}
+                          className="hover:text-primary-700"
+                        >
+                          {facility.name}
+                        </Link>
+                      </h2>
+                      <div className="mt-3 space-y-2 text-sm text-slate-600">
+                        <p className="flex items-start gap-2">
+                          <MapPin className="h-4 w-4 mt-0.5" />
                           <span>
-                            {facility.address_line1}<br/>
-                            {facility.city}, {facility.state} {facility.postal_code}
+                            {facility.address_line1 ? `${facility.address_line1}, ` : ''}
+                            {facility.city}, {facility.state} {facility.postal_code || ''}
                           </span>
-                        </div>
-                        
-                        <div className="flex items-center text-slate-600 mb-3">
-                          <Building2 size={18} className="mr-2 text-slate-400" />
-                          <span>{facility.type || 'Assisted Living'}</span>
-                        </div>
-
+                        </p>
                         {facility.phone && (
-                          <div className="flex items-center text-slate-600">
-                            <Phone size={18} className="mr-2 text-slate-400" />
+                          <p className="flex items-center gap-2">
+                            <Phone className="h-4 w-4" />
                             <span>{facility.phone}</span>
-                          </div>
+                          </p>
                         )}
                       </div>
-
-                        <div className="w-full md:w-auto flex flex-col items-end gap-4">
-                         {/* Price Placeholder - Future Feature */}
-                         {facility.price && (
-                             <div className="text-right">
-                                <div className="text-lg font-bold text-primary-600">{facility.price}</div>
-                                <div className="text-sm text-slate-500">per month</div>
-                             </div>
-                         )}
-                         
-                         <div className="flex flex-col gap-2 w-full md:w-auto">
-                           <Link 
-                              to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}
-                              className="w-full md:w-auto inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition-colors"
-                            >
-                              View Facility <ChevronRight size={16} className="ml-1" />
-                            </Link>
-                         </div>
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-700">
+                          {careTypeLabel}
+                        </span>
+                        {facility.website_url && (
+                          <span className="rounded-full bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary-700">
+                            Website listed
+                          </span>
+                        )}
                       </div>
                     </div>
+                    <div className="flex flex-col gap-2 md:items-end">
+                      <Link
+                        to={buildFacilityDetailPath({
+                          id: facility.id,
+                          publicSlug: facility.public_slug,
+                          publicRouteId: facility.public_route_id,
+                        })}
+                        className="inline-flex items-center justify-center rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white"
+                      >
+                        View community
+                      </Link>
+                    </div>
                   </div>
-                ))}
-              </div>
+                </article>
+              ))
             )}
           </div>
 
-          {/* Sidebar */}
-          <div className="space-y-8">
-            
-            {/* Hospital List */}
-            <HospitalList hospitals={hospitals} cityName={cityName} />
-
-            {/* Quick Links */}
-            <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-6">
-              <h3 className="font-bold text-slate-900 mb-4">Resources</h3>
-              <ul className="space-y-3">
-                <li>
-                  <Link to="/products" className="flex items-center text-slate-600 hover:text-primary-600">
-                    <ChevronRight size={16} className="mr-2 text-slate-400" />
-                    Recommended Products
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/providers" className="flex items-center text-slate-600 hover:text-primary-600">
-                    <ChevronRight size={16} className="mr-2 text-slate-400" />
-                    For Facility Owners
-                  </Link>
-                </li>
-                <li>
-                  <Link to={`/senior-living/${stateSlug}/`} className="flex items-center text-slate-600 hover:text-primary-600">
-                    <ChevronRight size={16} className="mr-2 text-slate-400" />
-                    All {stateName} Cities
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Safety Tip */}
-            <div className="bg-primary-50 rounded-lg p-6 border border-primary-100">
+          <div className="space-y-6">
+            <div className="rounded-xl border border-slate-200 bg-white p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="w-6 h-6 text-primary-600 flex-shrink-0" />
+                <Shield className="h-6 w-6 text-primary-700 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-primary-900 text-sm mb-1">Safety Tip</h4>
-                  <p className="text-sm text-primary-800">
-                    Always verify the facility's license with the {stateName} state department before signing any contracts.
+                  <h2 className="text-lg font-semibold text-slate-900">Clean canonical paths</h2>
+                  <p className="mt-2 text-sm text-slate-600">
+                    All public facility links on this page point to `/community/{'{slug-id}'}` instead of legacy UUID URLs.
                   </p>
                 </div>
               </div>
             </div>
 
+            <div className="rounded-xl border border-slate-200 bg-white p-6">
+              <h2 className="text-lg font-semibold text-slate-900 mb-4">Nearby healthcare</h2>
+              <HospitalList hospitals={hospitals} cityName={cityName} />
+            </div>
+
+            <div className="rounded-xl border border-slate-200 bg-white p-6">
+              <h2 className="text-lg font-semibold text-slate-900 mb-4">Continue browsing</h2>
+              <div className="space-y-3 text-sm">
+                <Link
+                  to={buildCareTypePath({ careType: normalizedCareType, state: stateDef.slug })}
+                  className="flex items-center gap-2 text-slate-700 hover:text-primary-700"
+                >
+                  <Building2 className="h-4 w-4" />
+                  All {careTypeLabel.toLowerCase()} in {stateDef.name}
+                </Link>
+                <Link to={buildRegulationsPath(stateDef.slug)} className="flex items-center gap-2 text-slate-700 hover:text-primary-700">
+                  <Building2 className="h-4 w-4" />
+                  {stateDef.name} regulations
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

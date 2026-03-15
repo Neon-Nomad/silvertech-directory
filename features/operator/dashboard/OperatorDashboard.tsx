@@ -9,7 +9,6 @@ import { supabase } from '@/src/lib/supabase';
 import { MyFacilities } from './MyFacilities';
 import { LeadsView } from './LeadsView';
 import { OperatorQA } from './OperatorQA';
-import { Button } from '@/components/ui/Button';
 import { PRICING_PLANS } from '@/src/config/pricing';
 import { DashboardTab, dashboardPathForTab, normalizeDashboardTab } from '@/src/utils/dashboardRouting';
 import { BillingUiError, entitlementErrorCtaMap, parseEntitlementError } from '@/src/utils/billingErrors';

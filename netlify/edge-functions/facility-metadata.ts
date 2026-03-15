@@ -1,62 +1,53 @@
-import type { Context } from 'https://edge.netlify.com';
-
-type FacilityIndexItem = {
-  id: string;
-  name: string;
-  city: string;
-  state: string;
-  address_line1?: string;
-  postal_code?: string;
-  phone?: string;
-  website_url?: string;
+type Context = {
+  next(): Promise<Response>;
 };
+
+type HtmlRewriterElement = {
+  setInnerContent(content: string): void;
+  setAttribute(name: string, value: string): void;
+  append(content: string, options?: { html?: boolean }): void;
+  prepend(content: string, options?: { html?: boolean }): void;
+};
+
+declare class HTMLRewriter {
+  on(
+    selector: string,
+    handlers: {
+      element(element: HtmlRewriterElement): void;
+    },
+  ): HTMLRewriter;
+  transform(response: Response): Response;
+}
 
 type FacilityLicense = {
   license_number?: string | null;
-  bed_capacity?: number | string | null;
-  updated_at?: string | null;
 };
 
 type FacilityRecord = {
   id?: string;
-  name?: string;
-  city?: string;
-  state?: string;
-  state_license_number?: string;
-  address_line1?: string;
-  address_line2?: string;
-  postal_code?: string;
-  phone?: string;
-  website_url?: string;
-  ownership_type?: string;
-  cms_provider_id?: string;
-  cms_certification_number?: string;
-  cms_certified_number?: string;
-  updated_at?: string;
+  public_slug?: string | null;
+  public_route_id?: number | null;
+  primary_care_type_slug?: string | null;
+  name?: string | null;
+  city?: string | null;
+  state?: string | null;
+  state_license_number?: string | null;
+  address_line1?: string | null;
+  postal_code?: string | null;
+  phone?: string | null;
+  website_url?: string | null;
+  ownership_type?: string | null;
+  cms_provider_id?: string | null;
+  cms_certification_number?: string | null;
+  cms_certified_number?: string | null;
+  updated_at?: string | null;
   facility_licensing?: FacilityLicense[];
 };
 
-const UUID_REGEX =
-  /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
-const PRODUCTION_ORIGIN = 'https://silvertechdirectory.com';
-const ONE_DAY_SECONDS = 60 * 60 * 24;
-const LOOKUP_CACHE_TTL_MS = ONE_DAY_SECONDS * 1000;
-const SLOW_EDGE_WARN_MS = 50;
-const FACILITY_CACHE_CONTROL = `public, max-age=0, s-maxage=${ONE_DAY_SECONDS}, stale-while-revalidate=${ONE_DAY_SECONDS}`;
-const CARE_TYPE_SLUGS = new Set([
-  'assisted-living',
-  'memory-care',
-  'nursing-homes',
-  'independent-living',
-  'residential-care',
-  'adult-day-services',
-  'ccrc',
-]);
-
-type ParsedFacilityPath = {
-  facilityPathId: string;
-  stateSlug: string;
-  citySlug: string;
+type ParsedCommunityPath = {
+  communityId: string;
+  publicSlug: string;
+  publicRouteId: number;
 };
 
 type TimedCacheEntry<T> = {
@@ -64,7 +55,11 @@ type TimedCacheEntry<T> = {
   value: T;
 };
 
-const slugEntryCache = new Map<string, TimedCacheEntry<FacilityIndexItem | null>>();
+const PRODUCTION_ORIGIN = 'https://silvertechdirectory.com';
+const ONE_DAY_SECONDS = 60 * 60 * 24;
+const LOOKUP_CACHE_TTL_MS = ONE_DAY_SECONDS * 1000;
+const FACILITY_CACHE_CONTROL = `public, max-age=0, s-maxage=${ONE_DAY_SECONDS}, stale-while-revalidate=${ONE_DAY_SECONDS}`;
+const COMMUNITY_ID_PATTERN = /^(?<slug>[a-z0-9]+(?:-[a-z0-9]+)*)-(?<routeId>\d+)$/i;
 const facilityRecordCache = new Map<string, TimedCacheEntry<FacilityRecord | null>>();
 const MAX_EDGE_CACHE_ITEMS = 20000;
 
@@ -89,76 +84,6 @@ const setCacheValue = <T>(store: Map<string, TimedCacheEntry<T>>, key: string, v
   return value;
 };
 
-const decodePathSegment = (value: string): string => {
-  try {
-    return decodeURIComponent(value);
-  } catch {
-    return value;
-  }
-};
-
-const parseFacilityPath = (pathname: string): ParsedFacilityPath | null => {
-  const normalized = pathname.replace(/\/+$/, '');
-  const match = normalized.match(/^\/senior-living\/([^/?#]+)\/([^/?#]+)\/([^/?#]+)$/i);
-  if (!match) return null;
-
-  const stateSlug = decodePathSegment((match[1] || '').trim()).toLowerCase();
-  const citySlug = decodePathSegment((match[2] || '').trim()).toLowerCase();
-  const leaf = decodePathSegment((match[3] || '').trim());
-  if (!stateSlug || !citySlug || !leaf) return null;
-  if (CARE_TYPE_SLUGS.has(leaf.toLowerCase())) return null;
-
-  return {
-    facilityPathId: leaf,
-    stateSlug,
-    citySlug,
-  };
-};
-
-const inferStateAbbrFromSlug = (slug: string) => {
-  const match = slug.match(/-([a-z]{2})-(?:\d{5}(?:-\d{4})?)-[a-z0-9]+$/i);
-  return match?.[1]?.toUpperCase() || null;
-};
-
-const toSlug = (value: string): string =>
-  value
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
-
-const hashString = (value: string): string => {
-  let hash = 5381;
-  for (let i = 0; i < value.length; i += 1) {
-    hash = (hash * 33) ^ value.charCodeAt(i);
-  }
-  return (hash >>> 0).toString(36);
-};
-
-const buildFacilityRouteId = (
-  facilityPathId: string,
-  record: FacilityRecord,
-  slugEntry: FacilityIndexItem | null
-): string => {
-  const licenseNumber =
-    toCleanString(record.facility_licensing?.[0]?.license_number, '') ||
-    toCleanString(record.state_license_number, '');
-  const name = toCleanString(record.name ?? slugEntry?.name, '');
-  const city = toCleanString(record.city ?? slugEntry?.city, '');
-  const state = toCleanString(record.state ?? slugEntry?.state, '');
-  const addressLine1 = toCleanString(record.address_line1 ?? slugEntry?.address_line1, '');
-  const postalCode = toCleanString(record.postal_code ?? slugEntry?.postal_code, '');
-  const phone = toCleanString(record.phone ?? slugEntry?.phone, '');
-
-  const keyParts = [name, city, state, licenseNumber, phone, addressLine1, postalCode, facilityPathId];
-  const key = keyParts.filter(Boolean).join('|');
-  const baseParts = [name, city, state, licenseNumber || postalCode || phone || ''];
-  const base = toSlug(baseParts.filter(Boolean).join(' '));
-  const hash = hashString(key || facilityPathId);
-
-  return base ? `${base}-${hash}` : `facility-${hash}`;
-};
-
 const escapeHtml = (value: string) =>
   value
     .replace(/&/g, '&amp;')
@@ -175,15 +100,12 @@ const toCleanString = (value: unknown, fallback = '') => {
   return trimmed || fallback;
 };
 
-const toOptionalString = (value: unknown) => {
-  const cleaned = toCleanString(value, '');
-  return cleaned || undefined;
-};
-
-const toOptionalNumber = (value: unknown) => {
-  const numeric = Number(value);
-  return Number.isFinite(numeric) ? numeric : undefined;
-};
+const toSlug = (value: string): string =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
 
 const getNetlifyEnv = (key: string) => {
   try {
@@ -201,58 +123,34 @@ const getNetlifyEnv = (key: string) => {
   return '';
 };
 
-const fetchJson = async <T>(request: Request, url: URL): Promise<T | null> => {
-  try {
-    const response = await fetch(url.toString(), {
-      headers: {
-        accept: 'application/json',
-        'x-edge-source': 'facility-metadata',
-        'user-agent': request.headers.get('user-agent') || 'netlify-edge',
-      },
-    });
-    if (!response.ok) return null;
-    return (await response.json()) as T;
-  } catch {
-    return null;
-  }
-};
+const parseCommunityPath = (pathname: string): ParsedCommunityPath | null => {
+  const normalized = pathname.replace(/\/+$/, '');
+  const match = normalized.match(/^\/community\/([^/?#]+)$/i);
+  const rawCommunityId = match?.[1];
+  if (!rawCommunityId) return null;
 
-const resolveSlugEntry = async (
-  request: Request,
-  slug: string,
-  origin: URL
-): Promise<FacilityIndexItem | null> => {
-  const cached = getCacheValue(slugEntryCache, slug);
-  if (cached !== undefined) return cached;
+  const decoded = decodeURIComponent(rawCommunityId.trim());
+  const communityMatch = COMMUNITY_ID_PATTERN.exec(decoded);
+  if (!communityMatch?.groups) return null;
 
-  const stateAbbr = inferStateAbbrFromSlug(slug);
-  if (stateAbbr) {
-    const shardUrl = new URL(`/facilities_index_shards/${stateAbbr}.json`, origin);
-    const shard = await fetchJson<FacilityIndexItem[]>(request, shardUrl);
-    const match = shard?.find((item) => item.id === slug);
-    if (match) return setCacheValue(slugEntryCache, slug, match);
-  }
+  const publicRouteId = Number(communityMatch.groups.routeId);
+  if (!Number.isFinite(publicRouteId)) return null;
 
-  const fullIndexUrl = new URL('/facilities_index.json', origin);
-  const index = await fetchJson<FacilityIndexItem[]>(request, fullIndexUrl);
-  return setCacheValue(slugEntryCache, slug, index?.find((item) => item.id === slug) || null);
+  return {
+    communityId: decoded,
+    publicSlug: communityMatch.groups.slug.toLowerCase(),
+    publicRouteId,
+  };
 };
 
 const fetchFacilityFromSupabase = async (
   supabaseUrl: string,
   supabaseAnonKey: string,
-  args: { id?: string; slugEntry?: FacilityIndexItem | null }
+  publicRouteId: number,
 ): Promise<FacilityRecord | null> => {
-  const slugEntry = args.slugEntry;
-  const cacheKey = args.id && UUID_REGEX.test(args.id)
-    ? `id:${args.id}`
-    : slugEntry
-      ? `slug:${slugEntry.name}|${slugEntry.city}|${slugEntry.state}|${slugEntry.postal_code || ''}`
-      : null;
-  if (cacheKey) {
-    const cached = getCacheValue(facilityRecordCache, cacheKey);
-    if (cached !== undefined) return cached;
-  }
+  const cacheKey = `route:${publicRouteId}`;
+  const cached = getCacheValue(facilityRecordCache, cacheKey);
+  if (cached !== undefined) return cached;
 
   const base = `${supabaseUrl.replace(/\/$/, '')}/rest/v1/facilities`;
   const headers = {
@@ -261,120 +159,52 @@ const fetchFacilityFromSupabase = async (
     accept: 'application/json',
   };
   const select =
-    'id,name,city,state,state_license_number,address_line1,address_line2,postal_code,phone,website_url,ownership_type,cms_provider_id,cms_certification_number,cms_certified_number,updated_at,facility_licensing(license_number,bed_capacity,updated_at)';
+    'id,public_slug,public_route_id,primary_care_type_slug,name,city,state,state_license_number,address_line1,postal_code,phone,website_url,ownership_type,cms_provider_id,cms_certification_number,cms_certified_number,updated_at,facility_licensing(license_number)';
 
-  const runQuery = async (query: string) => {
-    try {
-      const response = await fetch(`${base}?select=${encodeURIComponent(select)}&${query}&limit=1`, {
-        headers,
-      });
-      if (!response.ok) return cacheKey ? setCacheValue(facilityRecordCache, cacheKey, null) : null;
-      const rows = (await response.json()) as FacilityRecord[];
-      const firstRow = rows?.[0] || null;
-      return cacheKey ? setCacheValue(facilityRecordCache, cacheKey, firstRow) : firstRow;
-    } catch {
-      return cacheKey ? setCacheValue(facilityRecordCache, cacheKey, null) : null;
-    }
-  };
-
-  if (args.id && UUID_REGEX.test(args.id)) {
-    return runQuery(`id=eq.${encodeURIComponent(args.id)}`);
+  try {
+    const response = await fetch(
+      `${base}?select=${encodeURIComponent(select)}&public_route_id=eq.${encodeURIComponent(String(publicRouteId))}&limit=1`,
+      { headers },
+    );
+    if (!response.ok) return setCacheValue(facilityRecordCache, cacheKey, null);
+    const rows = (await response.json()) as FacilityRecord[];
+    return setCacheValue(facilityRecordCache, cacheKey, rows?.[0] || null);
+  } catch {
+    return setCacheValue(facilityRecordCache, cacheKey, null);
   }
-
-  if (!slugEntry) return null;
-
-  const strict = await runQuery(
-    `name=eq.${encodeURIComponent(slugEntry.name)}&city=eq.${encodeURIComponent(
-      slugEntry.city
-    )}&state=eq.${encodeURIComponent(slugEntry.state)}&postal_code=eq.${encodeURIComponent(
-      slugEntry.postal_code || ''
-    )}`
-  );
-  if (strict) return strict;
-
-  return runQuery(
-    `name=eq.${encodeURIComponent(slugEntry.name)}&city=eq.${encodeURIComponent(
-      slugEntry.city
-    )}&state=eq.${encodeURIComponent(slugEntry.state)}`
-  );
 };
 
-const buildMetadata = (
-  pathParts: ParsedFacilityPath,
-  record: FacilityRecord | null,
-  fallback: FacilityIndexItem | null
-) => {
-  const { facilityPathId, stateSlug, citySlug } = pathParts;
-  const name = toCleanString(record?.name ?? fallback?.name, 'Senior Living Facility');
-  const city = toCleanString(record?.city ?? fallback?.city);
-  const state = toCleanString(record?.state ?? fallback?.state);
-  const street = toCleanString(record?.address_line1 ?? fallback?.address_line1);
-  const postalCode = toCleanString(record?.postal_code ?? fallback?.postal_code);
-  const phone = toOptionalString(record?.phone ?? fallback?.phone);
-  const websiteUrl = toOptionalString(record?.website_url ?? fallback?.website_url);
-  const ownershipType = toOptionalString(record?.ownership_type);
+const buildMetadata = (record: FacilityRecord) => {
+  const name = toCleanString(record.name, 'Senior Living Community');
+  const city = toCleanString(record.city);
+  const state = toCleanString(record.state);
+  const street = toCleanString(record.address_line1);
+  const postalCode = toCleanString(record.postal_code);
+  const phone = toCleanString(record.phone);
+  const websiteUrl = toCleanString(record.website_url);
+  const licenseNumber =
+    toCleanString(record.facility_licensing?.[0]?.license_number) ||
+    toCleanString(record.state_license_number);
+  const publicSlug = toSlug(record.public_slug || name);
+  const publicRouteId = Number(record.public_route_id);
+  const primaryCareSlug = toSlug(record.primary_care_type_slug || 'assisted-living');
+  const primaryCareLabel =
+    ({
+      'assisted-living': 'Assisted Living',
+      'memory-care': 'Memory Care',
+      'nursing-homes': 'Nursing Homes',
+      'independent-living': 'Independent Living',
+      'residential-care': 'Residential Care',
+      'adult-day-services': 'Adult Day Services',
+      ccrc: 'CCRC',
+    } as Record<string, string>)[primaryCareSlug] || 'Senior Care';
 
-  const license = record?.facility_licensing?.[0] || null;
-  const licenseNumber = toOptionalString(license?.license_number);
-  const bedCapacity = toOptionalNumber(license?.bed_capacity);
-  const cmsProviderId = toOptionalString(
-    record?.cms_provider_id || record?.cms_certification_number || record?.cms_certified_number
-  );
-
-  const localText = city && state ? ` in ${city}, ${state}` : '';
-  const title = `${name} | SilverTech Digital Credential`;
-  const description = `View verified profile details for ${name}${localText}. License ${
-    licenseNumber || 'pending'
-  } and CMS credential overview.`;
-  const canonical = `${PRODUCTION_ORIGIN}/senior-living/${stateSlug}/${citySlug}/${encodeURIComponent(
-    facilityPathId
-  )}/`;
+  const citySlug = toSlug(city);
+  const stateSlug = toSlug(state);
+  const canonical = `${PRODUCTION_ORIGIN}/community/${publicSlug}-${publicRouteId}/`;
+  const title = `${name} | ${primaryCareLabel} in ${city}, ${state}`;
+  const description = `View verified profile details for ${name} in ${city}, ${state}. License ${licenseNumber || 'pending'} and facility profile highlights.`;
   const shareImage = `${PRODUCTION_ORIGIN}/hero.png`;
-  const fullAddress = [street, city && state ? `${city}, ${state}` : city || state, postalCode]
-    .filter(Boolean)
-    .join(', ');
-
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'MedicalBusiness',
-    name,
-    identifier: licenseNumber,
-    url: canonical,
-    telephone: phone,
-    sameAs: websiteUrl,
-    image: shareImage,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: street || undefined,
-      addressLocality: city || undefined,
-      addressRegion: state || undefined,
-      postalCode: postalCode || undefined,
-      addressCountry: 'US',
-    },
-    additionalProperty: [
-      cmsProviderId
-        ? {
-            '@type': 'PropertyValue',
-            name: 'CMS Provider ID',
-            value: cmsProviderId,
-          }
-        : null,
-      bedCapacity !== undefined
-        ? {
-            '@type': 'PropertyValue',
-            name: 'Authorized Capacity',
-            value: `${bedCapacity}`,
-          }
-        : null,
-      ownershipType
-        ? {
-            '@type': 'PropertyValue',
-            name: 'Ownership Type',
-            value: ownershipType,
-          }
-        : null,
-    ].filter(Boolean),
-  };
 
   return {
     title,
@@ -382,8 +212,37 @@ const buildMetadata = (
     canonical,
     name,
     shareImage,
-    fullAddress,
-    schema,
+    schema: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'MedicalBusiness',
+        name,
+        identifier: licenseNumber || undefined,
+        url: canonical,
+        telephone: phone || undefined,
+        image: shareImage,
+        sameAs: websiteUrl || undefined,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: street || undefined,
+          addressLocality: city || undefined,
+          addressRegion: state || undefined,
+          postalCode: postalCode || undefined,
+          addressCountry: 'US',
+        },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${PRODUCTION_ORIGIN}/` },
+          { '@type': 'ListItem', position: 2, name: primaryCareLabel, item: `${PRODUCTION_ORIGIN}/${primaryCareSlug}/` },
+          { '@type': 'ListItem', position: 3, name: state, item: `${PRODUCTION_ORIGIN}/${primaryCareSlug}/${stateSlug}/` },
+          { '@type': 'ListItem', position: 4, name: city, item: `${PRODUCTION_ORIGIN}/${primaryCareSlug}/${stateSlug}/${citySlug}/` },
+          { '@type': 'ListItem', position: 5, name, item: canonical },
+        ],
+      },
+    ],
   };
 };
 
@@ -400,17 +259,25 @@ const buildHeadMeta = (meta: ReturnType<typeof buildMetadata>) => {
     `<meta data-edge-facility-meta="1" name="twitter:description" content="${escapeHtml(meta.description)}">`,
     `<meta data-edge-facility-meta="1" name="twitter:image" content="${escapeHtml(meta.shareImage)}">`,
     `<link data-edge-facility-meta="1" rel="canonical" href="${escapeHtml(meta.canonical)}">`,
-    `<script data-edge-facility-schema="1" type="application/ld+json">${escapeScript(
-      JSON.stringify(meta.schema)
-    )}</script>`,
+    `<script data-edge-facility-schema="1" type="application/ld+json">${escapeScript(JSON.stringify(meta.schema))}</script>`,
   ];
   return tags.join('');
 };
 
 const hiddenH1 = (name: string) =>
-  `<h1 data-edge-facility-h1="1" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">${escapeHtml(
-    name
-  )}</h1>`;
+  `<h1 data-edge-facility-h1="1" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">${escapeHtml(name)}</h1>`;
+
+const buildNotFoundResponse = (pathname: string) =>
+  new Response(
+    `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Community Not Found</title><meta name="robots" content="noindex, nofollow"></head><body><main><h1>Community Not Found</h1><p>The requested community path could not be resolved: ${escapeHtml(pathname)}</p></main></body></html>`,
+    {
+      status: 404,
+      headers: {
+        'content-type': 'text/html; charset=utf-8',
+        'cache-control': 'public, max-age=0, s-maxage=300',
+      },
+    },
+  );
 
 const errorToMessage = (error: unknown): string => {
   if (error instanceof Error) return error.message;
@@ -424,154 +291,101 @@ const errorToMessage = (error: unknown): string => {
 
 export default async (request: Request, context: Context) => {
   try {
-    const startedAt = Date.now();
     const url = new URL(request.url);
-    const pathParts = parseFacilityPath(url.pathname);
+    const pathParts = parseCommunityPath(url.pathname);
     if (!pathParts) return context.next();
-    const { facilityPathId } = pathParts;
-    let slugLookupMs = 0;
-    let supabaseLookupMs = 0;
-    let rewriteMs = 0;
 
     const supabaseUrl = getNetlifyEnv('VITE_SUPABASE_URL');
     const supabaseAnonKey = getNetlifyEnv('VITE_SUPABASE_ANON_KEY');
-
-    let slugEntry: FacilityIndexItem | null = null;
-    if (!UUID_REGEX.test(facilityPathId)) {
-      const slugLookupStartedAt = Date.now();
-      slugEntry = await resolveSlugEntry(request, facilityPathId, url);
-      slugLookupMs = Date.now() - slugLookupStartedAt;
-    }
-
-    const supabaseLookupStartedAt = Date.now();
-    const facilityRecord =
-      supabaseUrl && supabaseAnonKey
-        ? await fetchFacilityFromSupabase(supabaseUrl, supabaseAnonKey, {
-            id: facilityPathId,
-            slugEntry,
-          })
-        : null;
-    supabaseLookupMs = Date.now() - supabaseLookupStartedAt;
-
-    if (UUID_REGEX.test(facilityPathId) && facilityRecord) {
-      const routeId = buildFacilityRouteId(facilityPathId, facilityRecord, slugEntry);
-      if (routeId && routeId !== facilityPathId) {
-        const canonicalPath = `/senior-living/${pathParts.stateSlug}/${pathParts.citySlug}/${encodeURIComponent(
-          routeId
-        )}/`;
-        const normalizedCurrentPath = url.pathname.replace(/\/+$/, '') || '/';
-        const normalizedCanonicalPath = canonicalPath.replace(/\/+$/, '') || '/';
-        if (normalizedCurrentPath !== normalizedCanonicalPath) {
-          const redirectUrl = new URL(request.url);
-          redirectUrl.pathname = canonicalPath;
-          return Response.redirect(redirectUrl.toString(), 301);
-        }
-      }
-    }
-
-    if (!facilityRecord && !slugEntry) {
+    if (!supabaseUrl || !supabaseAnonKey) {
       return context.next();
     }
 
-    const meta = buildMetadata(pathParts, facilityRecord, slugEntry);
+    const facilityRecord = await fetchFacilityFromSupabase(
+      supabaseUrl,
+      supabaseAnonKey,
+      pathParts.publicRouteId,
+    );
+
+    if (!facilityRecord) {
+      return buildNotFoundResponse(url.pathname);
+    }
+
+    const canonicalSlug = toSlug(facilityRecord.public_slug || '');
+    if (!canonicalSlug || canonicalSlug !== pathParts.publicSlug) {
+      return buildNotFoundResponse(url.pathname);
+    }
+
+    const meta = buildMetadata(facilityRecord);
     const response = await context.next();
     const contentType = response.headers.get('content-type') || '';
     if (!contentType.includes('text/html')) return response;
 
-    const headMeta = buildHeadMeta(meta);
-    const initialH1 = hiddenH1(meta.name);
-    const rewriteStartedAt = Date.now();
+    const transformed = new HTMLRewriter()
+      .on('title', {
+        element(element) {
+          element.setInnerContent(meta.title);
+        },
+      })
+      .on('meta[name="description"]', {
+        element(element) {
+          element.setAttribute('content', meta.description);
+        },
+      })
+      .on('meta[property="og:title"]', {
+        element(element) {
+          element.setAttribute('content', meta.title);
+        },
+      })
+      .on('meta[property="og:description"]', {
+        element(element) {
+          element.setAttribute('content', meta.description);
+        },
+      })
+      .on('meta[property="og:url"]', {
+        element(element) {
+          element.setAttribute('content', meta.canonical);
+        },
+      })
+      .on('meta[property="og:image"]', {
+        element(element) {
+          element.setAttribute('content', meta.shareImage);
+        },
+      })
+      .on('meta[name="twitter:title"]', {
+        element(element) {
+          element.setAttribute('content', meta.title);
+        },
+      })
+      .on('meta[name="twitter:description"]', {
+        element(element) {
+          element.setAttribute('content', meta.description);
+        },
+      })
+      .on('meta[name="twitter:image"]', {
+        element(element) {
+          element.setAttribute('content', meta.shareImage);
+        },
+      })
+      .on('link[rel="canonical"]', {
+        element(element) {
+          element.setAttribute('href', meta.canonical);
+        },
+      })
+      .on('head', {
+        element(element) {
+          element.append(buildHeadMeta(meta), { html: true });
+        },
+      })
+      .on('body', {
+        element(element) {
+          element.prepend(hiddenH1(meta.name), { html: true });
+        },
+      })
+      .transform(response);
 
-    let transformed: Response;
-    try {
-      transformed = new HTMLRewriter()
-        .on('title', {
-          element(element) {
-            element.setInnerContent(meta.title);
-          },
-        })
-        .on('meta[name="description"]', {
-          element(element) {
-            element.setAttribute('content', meta.description);
-          },
-        })
-        .on('meta[property="og:title"]', {
-          element(element) {
-            element.setAttribute('content', meta.title);
-          },
-        })
-        .on('meta[property="og:description"]', {
-          element(element) {
-            element.setAttribute('content', meta.description);
-          },
-        })
-        .on('meta[property="og:url"]', {
-          element(element) {
-            element.setAttribute('content', meta.canonical);
-          },
-        })
-        .on('meta[property="og:image"]', {
-          element(element) {
-            element.setAttribute('content', meta.shareImage);
-          },
-        })
-        .on('meta[name="twitter:title"]', {
-          element(element) {
-            element.setAttribute('content', meta.title);
-          },
-        })
-        .on('meta[name="twitter:description"]', {
-          element(element) {
-            element.setAttribute('content', meta.description);
-          },
-        })
-        .on('meta[name="twitter:image"]', {
-          element(element) {
-            element.setAttribute('content', meta.shareImage);
-          },
-        })
-        .on('link[rel="canonical"]', {
-          element(element) {
-            element.setAttribute('href', meta.canonical);
-          },
-        })
-        .on('head', {
-          element(element) {
-            element.append(headMeta, { html: true });
-          },
-        })
-        .on('body', {
-          element(element) {
-            element.prepend(initialH1, { html: true });
-          },
-        })
-        .transform(response);
-    } catch (rewriteError) {
-      console.error(
-        `[facility-metadata] html rewrite failed for ${url.pathname}: ${errorToMessage(rewriteError)}`
-      );
-      return response;
-    }
-    rewriteMs = Date.now() - rewriteStartedAt;
-
-    const totalMs = Date.now() - startedAt;
     const headers = new Headers(transformed.headers);
     headers.set('Cache-Control', FACILITY_CACHE_CONTROL);
-    headers.set(
-      'Server-Timing',
-      [
-        `edge;dur=${totalMs.toFixed(1)}`,
-        `slug;dur=${slugLookupMs.toFixed(1)}`,
-        `db;dur=${supabaseLookupMs.toFixed(1)}`,
-        `rewrite;dur=${rewriteMs.toFixed(1)}`,
-      ].join(', ')
-    );
-
-    if (totalMs > SLOW_EDGE_WARN_MS) {
-      console.warn(
-        `[facility-metadata] slow edge request ${totalMs}ms for ${url.pathname} (slug=${slugLookupMs}ms db=${supabaseLookupMs}ms rewrite=${rewriteMs}ms)`
-      );
-    }
 
     return new Response(transformed.body, {
       status: transformed.status,
@@ -580,12 +394,12 @@ export default async (request: Request, context: Context) => {
     });
   } catch (error) {
     console.error(
-      `[facility-metadata] unhandled edge error for ${request.url}: ${errorToMessage(error)}`
+      `[facility-metadata] unhandled edge error for ${request.url}: ${errorToMessage(error)}`,
     );
     return context.next();
   }
 };
 
 export const config = {
-  path: '/senior-living/*',
+  path: '/community/*',
 };

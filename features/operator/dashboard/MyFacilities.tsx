@@ -386,8 +386,8 @@ export const MyFacilities: React.FC = () => {
                         window.open(
                           buildFacilityDetailPath({
                             id: facility.id,
-                            state: facility.state,
-                            city: facility.city,
+                            publicSlug: facility.public_slug,
+                            publicRouteId: facility.public_route_id,
                           }),
                           '_blank',
                         )

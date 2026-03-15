@@ -92,6 +92,9 @@ describeIfIntegration('Backend Integrity', () => {
     expect(Array.isArray(data)).toBe(true);
     expect(data.length).toBeGreaterThan(0);
     expect((data[0] || {}).state).toBe('CA');
+    expect((data[0] || {}).public_slug).toBeTruthy();
+    expect((data[0] || {}).public_route_id).toBeTruthy();
+    expect((data[0] || {}).primary_care_type_slug).toBeTruthy();
   }, 15000);
 
   it('search_facilities RPC should return deduplicated rows in-page', async () => {
@@ -128,5 +131,43 @@ describeIfIntegration('Backend Integrity', () => {
     }
 
     expect(keys.size).toBe(data.length);
+  }, 15000);
+
+  it('facilities should have public identity fields populated for canonical routing', async () => {
+    const { data, error } = await supabase
+      .from('facilities')
+      .select('id, public_slug, public_route_id, primary_care_type_slug')
+      .limit(25);
+
+    expect(error).toBeNull();
+    expect(Array.isArray(data)).toBe(true);
+    expect(data.length).toBeGreaterThan(0);
+
+    for (const row of data) {
+      expect(row.public_slug).toBeTruthy();
+      expect(row.public_route_id).toBeTruthy();
+      expect(row.primary_care_type_slug).toBeTruthy();
+    }
+  }, 15000);
+
+  it('public_route_id should behave like a unique public identifier', async () => {
+    const { data, error } = await supabase
+      .from('facilities')
+      .select('public_route_id')
+      .not('public_route_id', 'is', null)
+      .limit(10);
+
+    expect(error).toBeNull();
+    expect(Array.isArray(data)).toBe(true);
+    expect(data.length).toBeGreaterThan(0);
+
+    const routeId = data[0].public_route_id;
+    const { count, error: countError } = await supabase
+      .from('facilities')
+      .select('*', { count: 'exact', head: true })
+      .eq('public_route_id', routeId);
+
+    expect(countError).toBeNull();
+    expect(count).toBe(1);
   }, 15000);
 });

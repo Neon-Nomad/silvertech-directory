@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { CheckCircle, Phone, Mail, Building2, ArrowRight } from 'lucide-react';
+import { CheckCircle, Phone, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { useAuth } from '@/src/context/AuthProvider';
 import { supabase } from '@/src/lib/supabase';

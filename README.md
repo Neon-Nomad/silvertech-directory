@@ -1,224 +1,124 @@
-<div align="center">
+# SilverTech Directory
 
-# 🏢 SilverTech Directory
+SilverTech Directory is a senior living directory built around clean SEO routes, facility detail pages, operator tooling, and Supabase-backed data pipelines.
 
-### *A Trusted Senior Living Directory*
+The public site uses a hybrid build:
+- Vite/React powers the application shell and interactive flows
+- Astro generates SEO-heavy route families and static content
+- the final deploy artifact is merged into `dist`
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://silvertechdirectory.com)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-19.2-61dafb)](https://reactjs.org/)
+## Stack
 
-**Programmatic Supply Acquisition • SaaS Workflow Tools • AI Guidance Layer • Marketplace • Data Intelligence**
+- React 18 + Vite
+- Astro 5
+- TypeScript
+- Supabase
+- Tailwind CSS
+- Vitest + Playwright
+- Vercel deployment
 
-[Features](#-features) • [Vision](#-vision) • [Roadmap](#-roadmap) • [Tech Stack](#-tech-stack) • [Getting Started](#-getting-started)
+## Public route model
 
-</div>
+- `/{care-type}`
+- `/{care-type}/{state}`
+- `/{care-type}/{state}/{city}`
+- `/community/{public_slug}-{public_route_id}`
+- `/regulations`
+- `/regulations/{state}`
+- `/regulations/{state}/{topic}`
 
----
+Legacy public directory URLs are retired rather than redirected.
 
-## 🎯 What is SilverTech Directory?
+## Main directories
 
-SilverTech Directory is a senior living directory focused on transparency, verified information, and direct connections between families and facilities.
+- `App.tsx`: top-level React routing
+- `features/`: product and page features
+- `components/`: shared UI and layout
+- `astro-src/`: Astro pages, SEO templates, and static route generation
+- `src/`: shared client utilities, data access, config, and hooks
+- `scripts/`: ingestion, sitemap, redirect, monitoring, and operational scripts
+- `supabase/`: schema and migrations
+- `tests/`: contract, unit, and integration coverage
 
----
+## Local development
 
-## ✨ Features
+Requirements:
+- Node.js 18+
+- npm
 
-### 🔄 Programmatic Supply Acquisition
-- Pre-seed every community profile using state licensing data
-- Zero cold outreach required for initial inventory
-- Real-time compliance feeds and operator-verified pipelines
-
-### 🛠️ SaaS Core for Operators
-Built for REITs, PE-backed groups, and multi-site operators:
-- **CRM Lite** – Lead and referral management
-- **Availability Manager** – Real-time unit tracking
-- **Pricing Manager** – Dynamic pricing optimization
-- **Waitlist Automation** – Automated prospect nurturing
-- **AI-Powered Follow-up** – Intelligent family engagement
-- **Tour Scheduling** – Automated booking and reminders
-
-### 🤖 AI Guidance Engine
-Two-sided intelligence layer powered by advanced AI:
-- **Family Q&A** – Placement support, level-of-care guidance, comparison insights
-- **Operator Automation** – Follow-ups, intake triage, tasking, tour scripts
-- Real-time reasoning around care needs, pricing, and facility fit
-
-### 💼 Marketplace Revenue Layer
-Embedded service offerings including:
-- Insurance & Medicare advisory
-- Estate planning lawyers
-- Moving & downsizing services
-- Care managers & benefits navigation
-
-### 📊 Data Intelligence Platform (The Moat)
-Long-term defensible data layer:
-- Real-time occupancy tracking
-- Pricing indices & market benchmarks
-- Demand forecasting models
-- REIT-grade dashboards
-- Market-level intelligence
-- Enterprise API products
-
----
-
-## 🚀 Vision
-
-> **SilverTech supports the senior living lifecycle with trusted directory data and decision support:**  
-> Families → Operators → REITs → PE Groups → Service Providers → Data Clients
-
-- **The directory** is the wedge
-- **The workflow tools** create stickiness
-- **The marketplace** drives revenue
-- **The data platform** becomes the moat
-
-Together, they form a **defensible AgeTech ecosystem**.
-
----
-
-## ❓ Why SilverTech Exists
-
-The senior living industry is fundamentally broken:
-
-- ❌ Families are forced into opaque, predatory referral funnels
-- ❌ Operators bleed money on high CPL and low-intent leads
-- ❌ REITs have no actionable market data
-- ❌ Multi-billion-dollar incumbents rely on call-center lead mills
-
-**SilverTech replaces that with transparency, automation, and intelligence.**
-
----
-
-## 👤 Founder-Market Fit
-
-**Andrew Dillon**, Age 55
-- Family history of Alzheimer's (grandfather)
-- Experiencing early memory concerns himself
-- Brings mission, credibility, and personal urgency to the company
-
----
-
-## 🗺️ Roadmap
-
-### 📍 Phase 1 – The Trojan Horse *(Current)*
-- ✅ Programmatic listing ingestion
-- ✅ Operator pricing report tool
-- ✅ Digital presence audit
-- 🔄 Tour scheduling widget
-- 🔄 Early operator CRM (availability + pricing)
-
-### 📍 Phase 2 – SaaS Core
-- Operator dashboard
-- AI family Q&A
-- Waitlist + follow-up automation
-- Intake intelligence
-- Marketplace integrations
-
-### 📍 Phase 3 – Data Intelligence
-- Occupancy API
-- Pricing index
-- Market demand forecasts
-- REIT dashboards
-- Enterprise licensing
-
-### 📍 Phase 4 – Expansion
-- Hospital discharge integrations
-- Home care insights
-- Medicare & Medicaid data mesh
-- Multistate intelligence platform
-
----
-
-## 🛠️ Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| **Frontend** | TypeScript, React 19.2, Vite |
-| **Backend** | Node.js, Fastify *(planned)* |
-| **Database** | PostgreSQL |
-| **AI/ML** | OpenAI, Google Gemini |
-| **Infrastructure** | Terraform, Render, Fly.io |
-| **Deployment** | GitHub Pages, CI/CD |
-
----
-
-## 📂 Repository Structure
-
-```
-silvertech-directory/
-├── src/
-│   ├── components/     # Reusable React components
-│   ├── services/       # API and business logic
-│   ├── pages/          # Page-level components
-│   ├── styles/         # Global and component styles
-│   ├── App.tsx         # Main application component
-│   └── main.tsx        # Application entry point
-├── public/             # Static assets, icons, images
-├── package.json        # Dependencies and scripts
-├── tsconfig.json       # TypeScript configuration
-├── vite.config.ts      # Vite build configuration
-└── README.md           # Project documentation
-```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+ and npm installed
-- Git for version control
-
-### Installation
+Install and run:
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/silvertech-directory.git
-cd silvertech-directory
-
-# Install dependencies
 npm install
-
-# Start development server
 npm run dev
 ```
 
-The application will be available at `http://localhost:3000`
-
-### Build for Production
+Useful commands:
 
 ```bash
-# Create optimized production build
+npm run lint
 npm run build
-
-# Preview production build locally
-npm run preview
-
-# Deploy to GitHub Pages
-npm run deploy
+npm run build:hybrid
+npm run test:unit
+npm run test:integration
+npm run sitemap
+npm run sitemap:verify
+npm run redirects
 ```
 
-### Environment Variables
+Notes:
+- `npm run build` builds the React app
+- `npm run build:hybrid` builds React and Astro, then merges the output into `dist`
+- `npm run lint` is the repo lint gate and includes strict TypeScript checks for app, Astro, and edge code
 
-Create a `.env` file in the root directory:
+## Environment
+
+Minimum app variables:
 
 ```env
-GEMINI_API_KEY=your_gemini_api_key_here
-OPENAI_API_KEY=your_openai_api_key_here
-DATABASE_URL=your_database_url_here
+VITE_SUPABASE_URL=
+VITE_SUPABASE_ANON_KEY=
 ```
 
----
+Common optional variables:
 
-## 📈 Current Status
+```env
+SUPABASE_SERVICE_ROLE_KEY=
+SUPABASE_DB_PASSWORD=
+VITE_STRIPE_PUBLISHABLE_KEY=
+VITE_TYPESENSE_HOST=
+VITE_TYPESENSE_PORT=
+VITE_TYPESENSE_PROTOCOL=
+VITE_TYPESENSE_API_KEY=
+VITE_ENABLE_E2E_ROUTES=
+VITE_ALERT_WEBHOOK_URL=
+BUILD_TIME=
+```
 
----
+Notes:
+- many data and admin scripts require `SUPABASE_SERVICE_ROLE_KEY`
+- SQL runner and some import scripts also require `SUPABASE_DB_PASSWORD`
+- Typesense variables are only needed if search is configured
 
-<div align="center">
+## Deployment
 
-**SilverTech Directory**  
-*Trusted Senior Living Directory*
+Deployment target is Vercel.
 
-Made with ❤️ for families navigating senior care
+Recommended settings:
+- Build command: `npm run build:hybrid`
+- Output directory: `dist`
 
-</div>
+Set the required environment variables in the Vercel project before deploying.
+
+## Data and SEO operations
+
+Common operational tasks:
+
+```bash
+npm run sitemap
+npm run sitemap:verify
+npm run redirects
+npm run sql:run -- supabase/migrations/<migration>.sql
+```
+
+If you are changing public URLs, canonicals, breadcrumbs, or sitemap logic, verify the generated output before shipping.

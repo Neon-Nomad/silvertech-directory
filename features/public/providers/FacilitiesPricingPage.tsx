@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   BadgeCheck,
   BarChart3,
@@ -59,8 +59,6 @@ const plans = [
 ];
 
 export const FacilitiesPricingPage: React.FC = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="relative min-h-screen w-full overflow-x-hidden bg-slate-900 font-sans text-white">
       <Helmet>

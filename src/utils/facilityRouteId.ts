@@ -7,6 +7,8 @@ type FacilityRouteSeed = {
   postal_code?: string | null;
   phone?: string | null;
   state_license_number?: string | null;
+  public_slug?: string | null;
+  public_route_id?: number | string | null;
   facility_licensing?: Array<{
     license_number?: string | null;
   }> | null;
@@ -32,7 +34,20 @@ const hashString = (value: string): string => {
   return (hash >>> 0).toString(36);
 };
 
-export const buildFacilityRouteId = (facility: FacilityRouteSeed): string | null => {
+const toNumericRouteId = (value: unknown): string => {
+  if (typeof value === 'number' && Number.isFinite(value)) {
+    return String(Math.trunc(value));
+  }
+  if (typeof value === 'string' && /^\d+$/.test(value.trim())) {
+    return value.trim();
+  }
+  return '';
+};
+
+export const buildFacilityPublicSlug = (facility: FacilityRouteSeed): string | null => {
+  const explicitSlug = toCleanString(facility.public_slug);
+  if (explicitSlug) return toSlug(explicitSlug);
+
   const facilityId = toCleanString(facility.id);
   if (!facilityId) return null;
 
@@ -50,7 +65,36 @@ export const buildFacilityRouteId = (facility: FacilityRouteSeed): string | null
   const key = keyParts.filter(Boolean).join('|');
   const baseParts = [name, city, state, licenseNumber || postalCode || phone || ''];
   const base = toSlug(baseParts.filter(Boolean).join(' '));
-  const hash = hashString(key || facilityId);
 
-  return base ? `${base}-${hash}` : `facility-${hash}`;
+  return base || `facility-${hashString(key || facilityId)}`;
 };
+
+const buildFallbackPublicRouteId = (facility: FacilityRouteSeed): string => {
+  const facilityId = toCleanString(facility.id);
+  const seed = [
+    toCleanString(facility.name),
+    toCleanString(facility.city),
+    toCleanString(facility.state),
+    toCleanString(facility.address_line1),
+    toCleanString(facility.postal_code),
+    facilityId,
+  ]
+    .filter(Boolean)
+    .join('|');
+
+  const hash = hashString(seed || facilityId || 'facility');
+  return `${parseInt(hash, 36) || 1}`;
+};
+
+export const buildFacilityCommunityId = (facility: FacilityRouteSeed): string | null => {
+  const publicSlug = buildFacilityPublicSlug(facility);
+  if (!publicSlug) return null;
+
+  const routeId = toNumericRouteId(facility.public_route_id) || buildFallbackPublicRouteId(facility);
+  if (!routeId) return null;
+
+  return `${publicSlug}-${routeId}`;
+};
+
+export const buildFacilityRouteId = (facility: FacilityRouteSeed): string | null =>
+  buildFacilityCommunityId(facility);

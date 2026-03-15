@@ -5,20 +5,20 @@ import { resolve } from 'node:path';
 const read = (file: string) => readFileSync(resolve(process.cwd(), file), 'utf8');
 
 describe('legacy facility redirect contract', () => {
-  it('keeps /facility route rendering details directly (no unknown placeholder hop)', () => {
+  it('renders canonical facility details at /community and retires /facility', () => {
     const app = read('App.tsx');
 
-    expect(app).toContain('<Route path="/facility/:id" element={<FacilityDetails />} />');
-    expect(app).not.toContain('senior-living/unknown/unknown');
+    expect(app).toContain('<Route path="/community/:communityId" element={<FacilityDetails />} />');
+    expect(app).toContain('<Route path="/facility/:id" element={<LegacyRouteRetired />} />');
+    expect(app).toContain('<Route path="/regulatory-library/*" element={<LegacyRouteRetired />} />');
   });
 
-  it('maps legacy /facility UUID redirects directly to canonical /senior-living URLs', () => {
+  it('retires legacy /facility URLs with 410 instead of redirects', () => {
     const redirects = read('public/_redirects');
-    const legacyFacilityToFacility = redirects.match(/^\/facility\/.+ \/facility\/.+ 301$/gm) || [];
-    const directFacilityToSeniorLiving = redirects.match(/^\/facility\/.+ \/senior-living\/.+\/ 301$/gm) || [];
+    const legacyFacilityRedirects = redirects.match(/^\/facility\/.+ 301/gm) || [];
 
-    expect(legacyFacilityToFacility.length).toBe(0);
-    expect(directFacilityToSeniorLiving.length).toBeGreaterThan(0);
+    expect(redirects).toContain('/facility/* /410.html 410!');
+    expect(redirects).toContain('/regulatory-library /410.html 410!');
+    expect(legacyFacilityRedirects.length).toBe(0);
   });
 });
-

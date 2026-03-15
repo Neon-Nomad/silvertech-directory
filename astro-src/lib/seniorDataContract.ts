@@ -3,6 +3,9 @@ import { ALL_STATES } from '../../src/data/states';
 
 export type NormalizedFacility = {
   id: string;
+  publicSlug: string;
+  publicRouteId: number | null;
+  primaryCareTypeSlug: string | null;
   name: string;
   address: string;
   city: string;
@@ -89,6 +92,9 @@ type FacilityRow = {
   website_url: string | null;
   state_license_number: string | null;
   cms_certification_number: string | null;
+  public_slug: string | null;
+  public_route_id: number | null;
+  primary_care_type_slug: string | null;
   listing_tier: string | null;
   claimed_at: string | null;
   owner_id: string | null;
@@ -259,6 +265,9 @@ const normalizeFacility = (
 
   return {
     id: row.id,
+    publicSlug: row.public_slug || '',
+    publicRouteId: toNumber(row.public_route_id),
+    primaryCareTypeSlug: row.primary_care_type_slug || null,
     name: row.name || '',
     address,
     city: row.city || '',
@@ -363,6 +372,9 @@ const loadAllFacilities = async (): Promise<NormalizedFacility[]> => {
           website_url,
           state_license_number,
           cms_certification_number,
+          public_slug,
+          public_route_id,
+          primary_care_type_slug,
           listing_tier,
           claimed_at,
           owner_id,

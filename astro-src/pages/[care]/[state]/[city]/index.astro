@@ -1,0 +1,109 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { getCareTypeBySlug, getCityFacilitiesByCareType, getSeniorLivingCity } from '../../../../lib/seniorLivingData';
+
+export async function getStaticPaths() {
+  const { getCareCityStaticPaths } = await import('../../../../lib/seniorLivingData');
+  return getCareCityStaticPaths().map((entry) => ({
+    params: { care: entry.care, state: entry.state, city: entry.city },
+  }));
+}
+
+const { care, state, city } = Astro.params;
+const careType = care ? getCareTypeBySlug(care) : null;
+const cityData = state && city ? getSeniorLivingCity(state, city) : null;
+
+if (!careType || !cityData) {
+  throw new Error(`Care/city page not found for ${care || 'unknown'}/${state || 'unknown'}/${city || 'unknown'}`);
+}
+
+const facilities = getCityFacilitiesByCareType(cityData.stateSlug, cityData.citySlug, careType.slug);
+const canonical = `https://silvertechdirectory.com/${careType.slug}/${cityData.stateSlug}/${cityData.citySlug}/`;
+const title = `${careType.label} in ${cityData.cityName}, ${cityData.stateName}`;
+const description = `Compare ${careType.label.toLowerCase()} communities in ${cityData.cityName}, ${cityData.stateName} and open canonical community profile URLs.`;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: careType.label, item: `https://silvertechdirectory.com/${careType.slug}/` },
+    { '@type': 'ListItem', position: 3, name: cityData.stateName, item: `https://silvertechdirectory.com/${careType.slug}/${cityData.stateSlug}/` },
+    { '@type': 'ListItem', position: 4, name: cityData.cityName, item: canonical },
+  ],
+};
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: facilities.slice(0, 30).map((facility, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@type': 'MedicalBusiness',
+      name: facility.name,
+      url: `https://silvertechdirectory.com/community/${facility.publicSlug}-${facility.publicRouteId}/`,
+      telephone: facility.verifiedPhone || facility.phone || undefined,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: facility.street || undefined,
+        addressLocality: facility.city,
+        addressRegion: facility.state,
+        postalCode: facility.zip || undefined,
+        addressCountry: 'US',
+      },
+    },
+  })),
+};
+---
+<Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
+
+  <div class="container sl-page">
+    <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href={`/${careType.slug}/`}>{careType.label}</a>
+      <span>/</span>
+      <a href={`/${careType.slug}/${cityData.stateSlug}/`}>{cityData.stateName}</a>
+      <span>/</span>
+      <span>{cityData.cityName}</span>
+    </nav>
+
+    <section class="sl-hero">
+      <p class="sl-eyebrow">City Directory</p>
+      <h1>{careType.label} in {cityData.cityName}, {cityData.stateName}</h1>
+      <p>
+        Compare local communities and move directly into canonical community profiles without nested UUID routes.
+      </p>
+      <div class="sl-hero-meta">
+        <span><strong>{facilities.length.toLocaleString()}</strong> listings indexed</span>
+      </div>
+      <div class="sl-hero-actions">
+        <a class="sl-btn sl-btn-primary" href={`/regulations/${cityData.stateSlug}/`}>View Regulations</a>
+        <a class="sl-btn sl-btn-secondary" href={`/${careType.slug}/${cityData.stateSlug}/`}>View State Page</a>
+      </div>
+    </section>
+
+    <section class="sl-section" style="margin-top:0.9rem;">
+      <h2>Community Listings</h2>
+      <ul class="sl-facility-list">
+        {facilities.slice(0, 30).map((facility) => (
+          <li class="sl-facility-item">
+            <div class="sl-facility-top">
+              <h3><a href={`/community/${facility.publicSlug}-${facility.publicRouteId}/`}>{facility.name}</a></h3>
+              <span class="sl-muted">{facility.ownershipType || 'Ownership not listed'}</span>
+            </div>
+            <p class="sl-muted">{[facility.street, `${facility.city}, ${facility.state} ${facility.zip}`].filter(Boolean).join(', ')}</p>
+            <p class="sl-muted">
+              License: {facility.licenseNumber || 'Pending'} | Care Type: {careType.label}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
+</Base>

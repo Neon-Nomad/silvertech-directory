@@ -1,0 +1,88 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCareTypeBySlug, getCareTypeLabel, getSeniorLivingStates } from '../../lib/seniorLivingData';
+
+export async function getStaticPaths() {
+  const careTypes = [
+    'assisted-living',
+    'memory-care',
+    'nursing-homes',
+    'independent-living',
+    'residential-care',
+    'adult-day-services',
+    'ccrc',
+  ];
+  return careTypes.map((care) => ({ params: { care } }));
+}
+
+const { care } = Astro.params;
+const careType = care ? getCareTypeBySlug(care) : null;
+if (!careType) {
+  throw new Error(`Care type not found for slug: ${care || 'unknown'}`);
+}
+
+const states = getSeniorLivingStates()
+  .filter((state) => state.stats.careTypeCounts[careType.slug] > 0)
+  .sort((a, b) => b.stats.careTypeCounts[careType.slug] - a.stats.careTypeCounts[careType.slug] || a.stateName.localeCompare(b.stateName));
+
+const title = `${careType.label} by State | SilverTech Directory`;
+const description = `Browse ${careType.label.toLowerCase()} directories by state and compare local market coverage across the country.`;
+const canonical = `https://silvertechdirectory.com/${careType.slug}/`;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: careType.label, item: canonical },
+  ],
+};
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: states.slice(0, 24).map((state, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: `${careType.label} in ${state.stateName}`,
+    item: `https://silvertechdirectory.com/${careType.slug}/${state.stateSlug}/`,
+  })),
+};
+---
+<Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
+
+  <div class="container sl-page">
+    <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span>{careType.label}</span>
+    </nav>
+
+    <section class="sl-hero">
+      <p class="sl-eyebrow">Care Type Directory</p>
+      <h1>{careType.label} by State</h1>
+      <p>
+        Browse clean state-level landing pages for {careType.label.toLowerCase()} and move into city directories from there.
+      </p>
+      <div class="sl-hero-meta">
+        <span><strong>{states.length.toLocaleString()}</strong> states with coverage</span>
+      </div>
+    </section>
+
+    <section class="sl-section" style="margin-top:0.9rem;">
+      <h2>States with {careType.label} Coverage</h2>
+      <div class="sl-nearby-grid" style="grid-template-columns:repeat(3,minmax(0,1fr));">
+        {states.map((state) => (
+          <a href={`/${careType.slug}/${state.stateSlug}/`}>
+            <strong>{state.stateName}</strong>
+            <span>{state.stats.careTypeCounts[careType.slug].toLocaleString()} listings</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
+</Base>

@@ -8,7 +8,12 @@ interface CategoryTileProps {
   image?: string; // Placeholder for now
 }
 
-export const CategoryTile: React.FC<CategoryTileProps> = ({ title, slug, tagline, image }) => {
+export const CategoryTile: React.FC<CategoryTileProps> = ({
+  title,
+  slug,
+  tagline,
+  image: _image,
+}) => {
   return (
     <Link to={`/products/${slug}`} className="group block h-full">
       <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow h-full flex flex-col">

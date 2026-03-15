@@ -11,10 +11,11 @@ describe('astro facility seo contract', () => {
     expect(existsSync(facilityTemplatePath)).toBe(false);
   });
 
-  it('keeps facility URL generation anchored to /senior-living hierarchy', () => {
+  it('keeps facility URL generation anchored to /community slug-id paths', () => {
     const facilityPathHelper = read('src/utils/facilityPath.ts');
 
-    expect(facilityPathHelper).toContain('return `/senior-living/${stateSlug}/${citySlug}/${encodedId}/`;');
-    expect(facilityPathHelper).not.toContain('return `/facility/${encodedId}`;');
+    expect(facilityPathHelper).toContain("return communityId ? `/community/${encodeURIComponent(communityId)}/` : '/search';");
+    expect(facilityPathHelper).toContain('const COMMUNITY_ID_PATTERN =');
+    expect(facilityPathHelper).not.toContain('/senior-living/${stateSlug}/${citySlug}/${encodedId}/');
   });
 });

@@ -4,6 +4,9 @@ import { ALL_STATES } from '../../src/data/states';
 
 type Facility = {
   id?: string;
+  public_slug?: string;
+  public_route_id?: number;
+  primary_care_type_slug?: string;
   name: string;
   city: string;
   state: string;
@@ -142,6 +145,17 @@ const getFacilityBaseId = (facility: Facility) => {
   return base ? `${base}-${hash}` : `facility-${hash}`;
 };
 
+const inferPrimaryCareTypeSlug = (facility: Facility): string => {
+  const value = `${facility.facility_type || ''} ${facility.type || ''}`.toLowerCase();
+  if (value.includes('memory') || value.includes('dementia') || value.includes('alzheimer')) return 'memory-care';
+  if (value.includes('nursing') || value.includes('skilled') || value.includes('snf')) return 'nursing-homes';
+  if (value.includes('independent')) return 'independent-living';
+  if (value.includes('residential') || value.includes('board and care')) return 'residential-care';
+  if (value.includes('adult day')) return 'adult-day-services';
+  if (value.includes('ccrc') || value.includes('continuing care') || value.includes('life plan')) return 'ccrc';
+  return 'assisted-living';
+};
+
 const facilities: Facility[] = (() => {
   const seen = new Map<string, number>();
   return facilitiesRawArray.map((facility, index) => {
@@ -150,10 +164,15 @@ const facilities: Facility[] = (() => {
     const baseId = getFacilityBaseId({ ...facility, address_line1, postal_code }) || `facility-${index + 1}`;
     const count = seen.get(baseId) || 0;
     seen.set(baseId, count + 1);
-    const id = count === 0 ? baseId : `${baseId}-${count + 1}`;
+    const public_slug = toSlug(facility.name || `facility-${index + 1}`) || `facility-${index + 1}`;
+    const public_route_id = index + 1;
+    const id = `${public_slug}-${public_route_id}`;
     return {
       ...facility,
       id,
+      public_slug,
+      public_route_id,
+      primary_care_type_slug: inferPrimaryCareTypeSlug(facility),
       address_line1,
       postal_code
     };
@@ -201,6 +220,9 @@ export const getCityFacilities = (stateSlug: string, citySlug: string, limit = 5
 export const getFacilityIndex = () => {
   return facilities.map((f) => ({
     id: f.id,
+    public_slug: f.public_slug,
+    public_route_id: f.public_route_id,
+    primary_care_type_slug: f.primary_care_type_slug,
     name: f.name,
     city: f.city,
     state: f.state,

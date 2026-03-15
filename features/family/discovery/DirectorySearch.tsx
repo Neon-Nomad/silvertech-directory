@@ -5,7 +5,7 @@ import { ALL_STATES } from '@/src/data/states';
 import zipToCity from '@/src/data/zip_to_city.json';
 import { getLocationSuggestions, LocationSuggestion } from '@/src/utils/locationSuggestions';
 import { supabase } from '@/src/lib/supabase';
-import { loadFacilityIndexWithOptions, FacilityIndexItem, resolveSlugs } from '@/src/utils/facilityIndex';
+import { loadFacilityIndexWithOptions, FacilityIndexItem, resolvePublicIdentities } from '@/src/utils/facilityIndex';
 import { hasTypesense, typesenseClient } from '@/src/lib/typesense';
 import { trackEvent } from '@/src/utils/analytics';
 import { FEATURE_FLAGS } from '@/src/config/featureFlags';
@@ -521,13 +521,13 @@ const DirectorySearch: React.FC = () => {
         hits = await getGuaranteedFallback({ preferClaimLocal: claimMode });
       }
 
-      const resolved = await resolveSlugs(dedupeFacilities(hits));
+      const resolved = await resolvePublicIdentities(dedupeFacilities(hits));
       setResults(applyDistance(resolved));
     } catch (err) {
       console.error('Search failed:', err);
       try {
         const fallbackHits = await getGuaranteedFallback({ preferClaimLocal: claimMode });
-        const resolved = await resolveSlugs(dedupeFacilities(fallbackHits));
+        const resolved = await resolvePublicIdentities(dedupeFacilities(fallbackHits));
         setResults(applyDistance(resolved));
       } catch (fallbackError) {
         console.error('Search fallback failed:', fallbackError);
@@ -821,8 +821,8 @@ const DirectorySearch: React.FC = () => {
                         navigate(
                           buildFacilityDetailPath({
                             id: facility.id,
-                            state: facility.state,
-                            city: facility.city,
+                            publicSlug: facility.public_slug,
+                            publicRouteId: facility.public_route_id,
                           }),
                         )
                       }

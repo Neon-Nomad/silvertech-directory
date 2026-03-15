@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, DollarSign, CheckCircle, XCircle } from 'lucide-react';
+import { TrendingUp, CheckCircle, XCircle } from 'lucide-react';
 
 export const FinancialSavingsGraphic: React.FC = () => {
   return (

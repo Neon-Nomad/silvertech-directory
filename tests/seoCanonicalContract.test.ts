@@ -5,32 +5,29 @@ import { resolve } from 'node:path';
 const read = (file: string) => readFileSync(resolve(process.cwd(), file), 'utf8');
 
 describe('seo canonical contract', () => {
-  it('keeps trailing-slash canonical URLs aligned for new senior-living state and care-city pages', () => {
-    const stateTemplate = read('astro-src/pages/senior-living/[state]/index.astro');
-    const careCityTemplate = read('astro-src/pages/senior-living/[state]/[city]/[care]/index.astro');
+  it('keeps trailing-slash canonical URLs aligned for care-type state and city pages', () => {
+    const stateTemplate = read('astro-src/pages/[care]/[state]/index.astro');
+    const cityTemplate = read('astro-src/pages/[care]/[state]/[city]/index.astro');
 
-    expect(stateTemplate).toContain('const canonical = `https://silvertechdirectory.com/senior-living/${stateData.stateSlug}/`;');
-    expect(careCityTemplate).toContain('const canonical = `https://silvertechdirectory.com/senior-living/${cityData.stateSlug}/${cityData.citySlug}/${careType.slug}/`;');
+    expect(stateTemplate).toContain('const canonical = `https://silvertechdirectory.com/${careType.slug}/${stateData.stateSlug}/`;');
+    expect(cityTemplate).toContain('const canonical = `https://silvertechdirectory.com/${careType.slug}/${cityData.stateSlug}/${cityData.citySlug}/`;');
   });
 
-  it('links to city and care pages using final trailing-slash URLs from templates', () => {
-    const stateTemplate = read('astro-src/pages/senior-living/[state]/index.astro');
-    const cityTemplate = read('astro-src/pages/senior-living/[state]/[city]/index.astro');
+  it('links to city and community pages using final trailing-slash URLs from templates', () => {
+    const stateTemplate = read('astro-src/pages/[care]/[state]/index.astro');
+    const cityTemplate = read('astro-src/pages/[care]/[state]/[city]/index.astro');
 
-    expect(stateTemplate).toContain('href={`/senior-living/${city.stateSlug}/${city.citySlug}/`}');
-    expect(cityTemplate).toContain('href={`/senior-living/${cityData.stateSlug}/${cityData.citySlug}/${care.slug}/`}');
+    expect(stateTemplate).toContain('href={`/${careType.slug}/${stateData.stateSlug}/${city.citySlug}/`}');
+    expect(cityTemplate).toContain('href={`/community/${facility.publicSlug}-${facility.publicRouteId}/`}');
   });
 
-  it('emits trailing-slash final URLs in sitemap generation for facilities and senior-living pages', () => {
+  it('emits trailing-slash final URLs in sitemap generation for care-type, community, and regulations pages', () => {
     const generator = read('scripts/generate_sitemaps.ts');
 
-    expect(generator).toContain('getAllCityCareCombos');
-    expect(generator).toContain('baseName: \'sitemap-care-type-cities\'');
-    expect(generator).toContain('chunkSize: CARE_TYPE_CITY_CHUNK_SIZE');
-    expect(generator).toContain('forceNumbered: true');
-    expect(generator).toContain('priority: STATE_PAGE_PRIORITY');
-    expect(generator).toContain('priority: CITY_PAGE_PRIORITY');
-    expect(generator).toContain('priority: CARE_TYPE_CITY_PRIORITY');
+    expect(generator).toContain('url: `${BASE_URL}/community/${facility.communityId}/`');
+    expect(generator).toContain('toStaticEntry(`${BASE_URL}/regulations/${state.slug}/`, 0.7)');
+    expect(generator).toContain('url: `${BASE_URL}/${careTypeSlug}/${stateSlug}/`');
+    expect(generator).toContain('url: `${BASE_URL}/${careTypeSlug}/${state}/${city}/`');
     expect(generator).toContain('writeSitemapIndex(\'sitemap-index.xml\', sitemapFiles);');
   });
 });

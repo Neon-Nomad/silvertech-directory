@@ -3,6 +3,9 @@
 -- Create facilities table
 create table if not exists facilities (
   id uuid primary key default gen_random_uuid(),
+  public_route_id bigint unique,
+  public_slug text,
+  primary_care_type_slug text,
   name text not null,
   address_line1 text,
   address_line2 text,

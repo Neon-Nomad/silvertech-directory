@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Filter, MoreHorizontal, Phone, Mail, Calendar } from 'lucide-react';
+import { Search, Filter, Phone, Mail, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 
 interface Lead {
@@ -20,8 +20,7 @@ const mockLeads: Lead[] = [
 ];
 
 export const LeadManagementCRM: React.FC = () => {
-  const [leads, setLeads] = useState<Lead[]>(mockLeads);
-  const [filter, setFilter] = useState('All');
+  const [leads] = useState<Lead[]>(mockLeads);
 
   const getStatusColor = (status: string) => {
     switch (status) {

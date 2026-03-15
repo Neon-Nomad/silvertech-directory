@@ -1,7 +1,7 @@
 ﻿import React, { useEffect, useMemo, useState } from 'react';
-import { X, MapPin, Phone, CheckCircle, ArrowRight, Info } from 'lucide-react';
+import { X, MapPin, CheckCircle, ArrowRight, Info } from 'lucide-react';
 import { supabase } from '@/src/lib/supabase';
-import { resolveSlugs } from '@/src/utils/facilityIndex';
+import { resolvePublicIdentities } from '@/src/utils/facilityIndex';
 import { Button } from '@/components/ui/Button';
 import { COMPARE_TOPICS, CompareQuestion } from '@/src/data/compareQuestions';
 import { buildFacilityDetailPath } from '@/src/utils/facilityPath';
@@ -173,7 +173,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
         }
 
         combined.sort((a, b) => b._score - a._score || a.name.localeCompare(b.name));
-        const topFive = await resolveSlugs(combined.slice(0, 5));
+        const topFive = await resolvePublicIdentities(combined.slice(0, 5));
         setComparables(topFive);
         setSelected(topFive[0] || null);
       } catch (err) {
@@ -310,8 +310,8 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
                       window.open(
                         buildFacilityDetailPath({
                           id: selected.id,
-                          state: selected.state,
-                          city: selected.city,
+                          publicSlug: selected.public_slug,
+                          publicRouteId: selected.public_route_id,
                         }),
                         '_blank',
                       )

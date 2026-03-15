@@ -3,6 +3,9 @@ export type FacilityIndexItem = {
   name: string;
   city: string;
   state: string;
+  public_slug?: string;
+  public_route_id?: number;
+  primary_care_type_slug?: string;
   address_line1?: string;
   postal_code?: string;
   phone?: string;
@@ -84,14 +87,19 @@ export const loadCityIndex = async (): Promise<CityIndexEntry[]> => {
 const normalizeField = (v?: string | null) =>
   (v || '').toString().trim().toLowerCase().replace(/\s+/g, ' ').replace(/[^a-z0-9 ]/g, '');
 
+const normalizeRouteId = (value: unknown): number | null => {
+  const numeric = Number(value);
+  return Number.isFinite(numeric) ? Math.trunc(numeric) : null;
+};
+
 /**
  * Given a facility object (typically from Supabase with a UUID id),
  * look up its canonical slug from the facility index.
  * Returns the slug string, or the original id if no match is found.
  */
-export const resolveSlug = async (
+export const resolvePublicIdentity = async (
   facility: { id: string; name?: string | null; city?: string | null; state?: string | null; postal_code?: string | null }
-): Promise<string> => {
+): Promise<{ publicSlug: string | null; publicRouteId: number | null; primaryCareTypeSlug: string | null }> => {
   try {
     const index = await loadFacilityIndexWithOptions({ stateAbbr: facility.state });
     const match = index.find(
@@ -101,19 +109,45 @@ export const resolveSlug = async (
         (entry.state || '').trim().toUpperCase() === (facility.state || '').trim().toUpperCase() &&
         (entry.postal_code || '').trim() === (facility.postal_code || '').trim()
     );
-    return match ? match.id : facility.id;
+    return match
+      ? {
+          publicSlug: (match.public_slug || '').trim() || null,
+          publicRouteId: normalizeRouteId(match.public_route_id),
+          primaryCareTypeSlug: (match.primary_care_type_slug || '').trim() || null,
+        }
+      : {
+          publicSlug: null,
+          publicRouteId: null,
+          primaryCareTypeSlug: null,
+        };
   } catch {
-    return facility.id;
+    return {
+      publicSlug: null,
+      publicRouteId: null,
+      primaryCareTypeSlug: null,
+    };
   }
+};
+
+export const resolveSlug = async (
+  facility: { id: string; name?: string | null; city?: string | null; state?: string | null; postal_code?: string | null }
+): Promise<string> => {
+  const resolved = await resolvePublicIdentity(facility);
+  if (resolved.publicSlug && resolved.publicRouteId) {
+    return `${resolved.publicSlug}-${resolved.publicRouteId}`;
+  }
+  return facility.id;
 };
 
 /**
  * Batch-resolve slugs for an array of facilities.
  * Loads the index once per state and resolves all matches.
  */
-export const resolveSlugs = async <T extends { id: string; name?: string | null; city?: string | null; state?: string | null; postal_code?: string | null }>(
+export const resolvePublicIdentities = async <
+  T extends { id: string; name?: string | null; city?: string | null; state?: string | null; postal_code?: string | null }
+>(
   facilities: T[]
-): Promise<T[]> => {
+): Promise<Array<T & { public_slug?: string; public_route_id?: number; primary_care_type_slug?: string }>> => {
   if (facilities.length === 0) return facilities;
 
   // Group by state to load each shard only once
@@ -144,8 +178,31 @@ export const resolveSlugs = async <T extends { id: string; name?: string | null;
         (entry.postal_code || '').trim() === (facility.postal_code || '').trim()
     );
 
-    return match ? { ...facility, id: match.id } : facility;
+    return match
+      ? {
+          ...facility,
+          public_slug: match.public_slug,
+          public_route_id: normalizeRouteId(match.public_route_id) || undefined,
+          primary_care_type_slug: match.primary_care_type_slug,
+        }
+      : facility;
   });
+};
+
+export const resolveSlugs = async <
+  T extends { id: string; name?: string | null; city?: string | null; state?: string | null; postal_code?: string | null }
+>(
+  facilities: T[]
+): Promise<T[]> => {
+  const resolved = await resolvePublicIdentities(facilities);
+  return resolved.map((facility) =>
+    facility.public_slug && facility.public_route_id
+      ? {
+          ...facility,
+          id: `${facility.public_slug}-${facility.public_route_id}`,
+        }
+      : facility,
+  );
 };
 
 export const filterFacilitiesByLocation = (

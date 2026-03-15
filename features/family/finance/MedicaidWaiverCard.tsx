@@ -1,6 +1,6 @@
 import React from 'react';
 import { MedicaidWaiver } from '../../../src/utils/medicaidData';
-import { DollarSign, CheckCircle, AlertCircle, FileText, Phone, ExternalLink, Activity } from 'lucide-react';
+import { DollarSign, CheckCircle, AlertCircle, Phone, ExternalLink, Activity } from 'lucide-react';
 
 interface MedicaidWaiverCardProps {
   waiver: MedicaidWaiver;

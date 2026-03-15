@@ -52,7 +52,7 @@ const REVIEW_TEMPLATES = {
 };
 
 // Generate deterministic reviews for a facility based on its ID
-export const generateReviews = (facilityId: string, facilityName: string): Review[] => {
+export const generateReviews = (facilityId: string, _facilityName: string): Review[] => {
     const numericId = parseInt(facilityId.replace(/\D/g, '')) || 0;
     const reviewCount = 3 + (numericId % 5); // 3-7 reviews per facility
 

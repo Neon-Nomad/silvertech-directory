@@ -37,6 +37,8 @@ export type HospitalRecord = {
 
 export type FacilityRecord = {
   id: string;
+  publicSlug: string;
+  publicRouteId: number;
   name: string;
   city: string;
   citySlug: string;
@@ -505,7 +507,12 @@ const ensureStore = (): SeniorLivingStore => {
     enrichedLoose.get(looseKey)!.push(entry);
   }
 
-  const aggregated = new Map<string, Omit<FacilityRecord, 'id' | 'careTypes' | 'primaryCareType'> & { careTypeSet: Set<CareTypeSlug> }>();
+  const aggregated = new Map<
+    string,
+    Omit<FacilityRecord, 'id' | 'publicSlug' | 'publicRouteId' | 'careTypes' | 'primaryCareType'> & {
+      careTypeSet: Set<CareTypeSlug>;
+    }
+  >();
 
   for (const row of rows) {
     const name = row.name || '';
@@ -592,12 +599,17 @@ const ensureStore = (): SeniorLivingStore => {
       return aCount - bCount;
     });
 
-    let id = enriched?.id || `${slugify(facilityBase.name)}-${hashString(key)}`;
+    const publicSlug = (enriched?.public_slug || slugify(facilityBase.name) || 'facility').toLowerCase();
+    const publicRouteId =
+      Number(enriched?.public_route_id) || parseInt(hashString(key || facilityBase.name), 36) || facilities.length + 1;
+    let id = enriched?.id || `${publicSlug}-${publicRouteId}`;
     if (seenIds.has(id)) id = `${id}-${hashString(`${id}-${facilityBase.city}`)}`;
     seenIds.add(id);
 
     facilities.push({
       id,
+      publicSlug,
+      publicRouteId,
       name: facilityBase.name,
       city: facilityBase.city,
       citySlug: facilityBase.citySlug,
@@ -828,7 +840,7 @@ export const getCityMapPoints = (
       phone: facility.verifiedPhone || facility.phone || '',
       licenseNumber: facility.licenseNumber || '',
       listingTier: facility.listingTier || '',
-      profileUrl: `/senior-living/${stateSlug}/${citySlug}/${facility.id}/`,
+      profileUrl: `/community/${facility.publicSlug}-${facility.publicRouteId}/`,
     }));
 };
 

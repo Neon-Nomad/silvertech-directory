@@ -34,8 +34,8 @@ export const ResourcePage: React.FC = () => {
                 <p className="text-xl text-slate-600 mb-8">
                     This is a national guide. For state-specific information, please visit our Regulatory Library.
                 </p>
-                <Link to="/regulatory-library" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-md hover:bg-primary-700 transition-colors">
-                    Go to Regulatory Library
+                <Link to="/regulations/" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-md hover:bg-primary-700 transition-colors">
+                    Go to Regulations
                 </Link>
             </div>
         </>

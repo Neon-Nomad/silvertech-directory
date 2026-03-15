@@ -7,7 +7,6 @@ import {
   ShieldCheck,
   Star,
   TrendingUp,
-  Building2,
   Sparkles,
   Target,
   Crown,

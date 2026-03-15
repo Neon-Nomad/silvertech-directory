@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '@/src/lib/supabase';
-import { Check, Loader2 } from 'lucide-react';
+import { Check } from 'lucide-react';
 
 interface Amenity {
   id: string;
@@ -43,7 +43,7 @@ export const FacilityAmenitiesEditor: React.FC<FacilityAmenitiesEditorProps> = (
 
       if (selectedError) throw selectedError;
       
-      const ids = new Set((selectedData || []).map(item => item.amenity_id));
+      const ids = new Set<string>((selectedData || []).map((item) => item.amenity_id));
       setSelectedIds(ids);
 
     } catch (err) {
@@ -77,7 +77,7 @@ export const FacilityAmenitiesEditor: React.FC<FacilityAmenitiesEditorProps> = (
           .from('facility_amenities')
           .insert({
             facility_id: facilityId,
-            amenity_id: amenityId
+            amenity_id: amenityId,
           });
           
         if (error) throw error;

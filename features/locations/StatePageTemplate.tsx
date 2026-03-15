@@ -1,27 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, Navigate, Link } from 'react-router-dom';
+import React, { useEffect, useMemo, useState } from 'react';
+import { Link, Navigate, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ALL_STATES } from '../../src/data/states';
-import { useJsonLd } from '../../src/hooks/useJsonLd';
-import { Breadcrumbs } from '../../components/ui/Breadcrumbs';
+import { ChevronRight, MapPin } from 'lucide-react';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { ContentMeta } from '@/components/ui/ContentMeta';
 import { DataSourceNote } from '@/components/ui/DataSourceNote';
-import { supabase } from '../../src/lib/supabase';
-import { loadCityIndex } from '@/src/utils/facilityIndex';
-import { getOmbudsman } from '../../src/utils/ombudsmanData';
-import { OmbudsmanCard } from '../family/support/OmbudsmanCard';
-import { getLicensingAuthority } from '../../src/utils/licensingData';
-import { LicensingAuthorityCard } from '../family/support/LicensingAuthorityCard';
-import { getAgingAgency } from '../../src/utils/agingAgencyData';
-import { AgingAgencyCard } from '../family/support/AgingAgencyCard';
-import { getMedicaidWaiver } from '../../src/utils/medicaidData';
-import { MedicaidWaiverCard } from '../family/finance/MedicaidWaiverCard';
+import { ALL_STATES } from '@/src/data/states';
+import { buildCareTypePath, buildRegulationsPath, getCareTypeRouteLabel, isCareTypeRouteSlug } from '@/src/utils/facilityPath';
+import { loadFacilityIndexWithOptions } from '@/src/utils/facilityIndex';
 
-interface CityStat {
+type CityStat = {
   city: string;
-  count: number;
   slug: string;
-}
+  count: number;
+};
 
 const toSlug = (value: string) =>
   value
@@ -31,154 +23,161 @@ const toSlug = (value: string) =>
     .replace(/(^-|-$)/g, '');
 
 export const StatePageTemplate: React.FC = () => {
-  const { state } = useParams<{ state: string }>();
-  const stateDef = ALL_STATES.find(s => s.slug === state);
+  const { careType, state } = useParams<{ careType: string; state: string }>();
+  const normalizedCareType = (careType || '').trim().toLowerCase();
+  const stateDef = ALL_STATES.find((entry) => entry.slug === (state || '').trim().toLowerCase());
   const [cities, setCities] = useState<CityStat[]>([]);
-  const [loading, setLoading] = useState(true);
   const [facilityCount, setFacilityCount] = useState(0);
+  const [phoneCoveragePct, setPhoneCoveragePct] = useState(0);
+  const [websiteCoveragePct, setWebsiteCoveragePct] = useState(0);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!stateDef) return;
+    let mounted = true;
 
-    const fetchCities = async () => {
-      setLoading(true);
-      try {
-        // 1. Get all facilities for this state (Supabase primary)
-        const { data, error } = await supabase
-          .from('facilities')
-          .select('city')
-          .eq('state', stateDef.abbreviation);
-
-        if (error) throw error;
-
-        if (data) {
-          setFacilityCount(data.length);
-
-          // 2. Aggregate cities and counts
-          const cityMap = new Map<string, number>();
-          data.forEach(f => {
-            if (f.city) {
-              const city = f.city.trim();
-              cityMap.set(city, (cityMap.get(city) || 0) + 1);
-            }
-          });
-
-          // 3. Convert to array and sort
-          const cityList: CityStat[] = Array.from(cityMap.entries())
-            .map(([city, count]) => ({
-              city,
-              count,
-              slug: toSlug(city)
-            }))
-            .sort((a, b) => a.city.localeCompare(b.city));
-
-          setCities(cityList);
-          setLoading(false);
-          return;
-        }
-      } catch (err) {
-        console.error('Error fetching cities from Supabase:', err);
+    const loadStateDirectory = async () => {
+      if (!stateDef || !isCareTypeRouteSlug(normalizedCareType)) {
+        if (mounted) setLoading(false);
+        return;
       }
 
       try {
-        // Fallback to static index
-        const cityIndex = await loadCityIndex();
-        const stateCities = cityIndex
-          .filter((entry) => entry.stateSlug === stateDef.slug)
-          .sort((a, b) => a.cityName.localeCompare(b.cityName));
+        const index = await loadFacilityIndexWithOptions({ stateAbbr: stateDef.abbreviation });
+        const scoped = index.filter(
+          (facility) =>
+            (facility.state || '').trim().toUpperCase() === stateDef.abbreviation &&
+            (facility.primary_care_type_slug || '').trim().toLowerCase() === normalizedCareType,
+        );
 
-        setFacilityCount(stateCities.reduce((sum, entry) => sum + entry.count, 0));
-        setCities(stateCities.map((entry) => ({
-          city: entry.cityName,
-          count: entry.count,
-          slug: entry.citySlug
-        })));
-      } catch (err) {
-        console.error('Error loading static city index:', err);
+        const cityMap = new Map<string, CityStat>();
+        let withPhone = 0;
+        let withWebsite = 0;
+
+        for (const facility of scoped) {
+          const cityName = (facility.city || '').trim();
+          const citySlug = toSlug(cityName);
+          if (!cityName || !citySlug) continue;
+
+          if (facility.phone) withPhone += 1;
+          if (facility.website_url) withWebsite += 1;
+
+          const existing = cityMap.get(citySlug);
+          if (existing) {
+            existing.count += 1;
+            continue;
+          }
+
+          cityMap.set(citySlug, {
+            city: cityName,
+            slug: citySlug,
+            count: 1,
+          });
+        }
+
+        if (!mounted) return;
+        setFacilityCount(scoped.length);
+        setPhoneCoveragePct(scoped.length > 0 ? Math.round((withPhone / scoped.length) * 100) : 0);
+        setWebsiteCoveragePct(scoped.length > 0 ? Math.round((withWebsite / scoped.length) * 100) : 0);
+        setCities(
+          Array.from(cityMap.values()).sort((a, b) => {
+            if (b.count !== a.count) return b.count - a.count;
+            return a.city.localeCompare(b.city);
+          }),
+        );
+      } catch (error) {
+        console.error('Error loading care-type state page:', error);
+        if (mounted) {
+          setCities([]);
+          setFacilityCount(0);
+          setPhoneCoveragePct(0);
+          setWebsiteCoveragePct(0);
+        }
       } finally {
-        setLoading(false);
+        if (mounted) setLoading(false);
       }
     };
 
-    fetchCities();
-  }, [stateDef]);
+    void loadStateDirectory();
+    return () => {
+      mounted = false;
+    };
+  }, [normalizedCareType, stateDef]);
 
-  if (!stateDef) {
+  if (!stateDef || !isCareTypeRouteSlug(normalizedCareType)) {
     return <Navigate to="/" replace />;
   }
 
-  const pageTitle = `Senior Living in ${stateDef.name} | Assisted Living & Memory Care`;
-  const pageDescription = `Find the best senior living and assisted living facilities in ${stateDef.name}. Compare costs, read reviews, and view photos of communities in ${stateDef.name}.`;
+  const careTypeLabel = getCareTypeRouteLabel(normalizedCareType);
+  const canonicalUrl = `https://silvertechdirectory.com/${normalizedCareType}/${stateDef.slug}/`;
+  const pageTitle = `${careTypeLabel} in ${stateDef.name} | SilverTech Directory`;
+  const pageDescription = `Explore ${careTypeLabel.toLowerCase()} listings across ${stateDef.name}, including city-level directories and regulatory resources.`;
 
-  // Schema for the state page
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": `Assisted Living in ${stateDef.name}`,
-    "description": pageDescription,
-    "breadcrumb": {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://silvertechdirectory.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Assisted Living",
-          "item": "https://silvertechdirectory.com/senior-living"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": stateDef.name
-        }
-      ]
-    }
-  };
+  const breadcrumbItems = [
+    { label: 'Home', path: '/' },
+    { label: careTypeLabel, path: `/${normalizedCareType}/` },
+    { label: stateDef.name, path: buildCareTypePath({ careType: normalizedCareType, state: stateDef.slug }) },
+  ];
 
-  useJsonLd(schema);
+  const itemListSchema = useMemo(
+    () => ({
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      itemListElement: cities.slice(0, 24).map((city, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: `${careTypeLabel} in ${city.city}, ${stateDef.abbreviation}`,
+        item: `https://silvertechdirectory.com${buildCareTypePath({
+          careType: normalizedCareType,
+          state: stateDef.slug,
+          city: city.slug,
+        })}`,
+      })),
+    }),
+    [careTypeLabel, cities, normalizedCareType, stateDef.abbreviation, stateDef.slug],
+  );
 
   return (
     <div className="min-h-screen bg-warm-gray font-sans text-slate-900">
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
-        <link rel="canonical" href={`https://silvertechdirectory.com/senior-living/${stateDef.slug}/`} />
+        <link rel="canonical" href={canonicalUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SilverTech Directory" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:url" content={`https://silvertechdirectory.com/senior-living/${stateDef.slug}/`} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+              { '@type': 'ListItem', position: 2, name: careTypeLabel, item: `https://silvertechdirectory.com/${normalizedCareType}/` },
+              { '@type': 'ListItem', position: 3, name: stateDef.name, item: canonicalUrl },
+            ],
+          })}
+        </script>
+        <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
       </Helmet>
 
-      {/* Hero Section */}
       <div className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <Breadcrumbs 
-            items={[
-              { label: 'Home', path: '/' },
-              { label: 'Assisted Living', path: '/senior-living' },
-              { label: stateDef.name, path: `/senior-living/${stateDef.slug}/` },
-            ]} 
-          />
-          
-          <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mt-6 mb-4">
-            {stateDef.name} Senior Living & Memory Care Directory
-          </h1>
-          
-          <p className="text-xl text-slate-600 max-w-3xl">
-            Browse our comprehensive directory of assisted living and memory care facilities in {stateDef.name}. 
-            We provide transparent information, direct contact details, and unbiased resources to help you make the right choice for your family.
-          </p>
+          <Breadcrumbs items={breadcrumbItems} />
+          <div className="mt-6 max-w-4xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">State Directory</p>
+            <h1 className="mt-3 text-4xl font-bold text-slate-900">
+              {careTypeLabel} in {stateDef.name}
+            </h1>
+            <p className="mt-4 text-lg text-slate-600">
+              Browse city-level {careTypeLabel.toLowerCase()} pages in {stateDef.name} and move directly into clean community profiles.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -189,163 +188,97 @@ export const StatePageTemplate: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Intro / Mission */}
-        <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 mb-12">
-          <h2 className="text-2xl font-bold mb-4">Why SilverTech Directory?</h2>
-          <p className="text-slate-600 mb-4">
-            Unlike other "free" referral services, we don't sell your information to dozens of facilities. 
-            Our mission is to provide a transparent, ethical alternative for families seeking senior care in {stateDef.name}.
-            We list every licensed facility, not just the ones that pay us.
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          <div className="rounded-xl border border-slate-200 bg-white p-6 text-center">
+            <p className="text-3xl font-bold text-slate-900">{loading ? '...' : facilityCount.toLocaleString()}</p>
+            <p className="mt-2 text-sm text-slate-600">{careTypeLabel} listings</p>
+          </div>
+          <div className="rounded-xl border border-slate-200 bg-white p-6 text-center">
+            <p className="text-3xl font-bold text-slate-900">{loading ? '...' : cities.length.toLocaleString()}</p>
+            <p className="mt-2 text-sm text-slate-600">Cities covered</p>
+          </div>
+          <div className="rounded-xl border border-slate-200 bg-white p-6 text-center">
+            <p className="text-3xl font-bold text-slate-900">{loading ? '...' : `${phoneCoveragePct}%`}</p>
+            <p className="mt-2 text-sm text-slate-600">Listings with phone numbers</p>
+          </div>
+        </div>
+
+        <div className="mb-10 rounded-xl border border-slate-200 bg-white p-6">
+          <h2 className="text-2xl font-bold text-slate-900">Statewide overview</h2>
+          <p className="mt-3 text-slate-600">
+            SilverTech currently tracks {loading ? '...' : facilityCount.toLocaleString()} primary {careTypeLabel.toLowerCase()} listings in {stateDef.name}.
+            Use the city directories below to drill into local markets, then compare communities on their canonical `/community` profile pages.
           </p>
-          <div className="flex flex-wrap gap-4 mt-6">
-             <Link to="/honest-care" className="text-primary-600 font-medium hover:underline">
-               Read our Honest Care Policy &rarr;
-             </Link>
-             <Link to="/products" className="text-primary-600 font-medium hover:underline">
-               View Recommended Products &rarr;
-             </Link>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link
+              to={buildRegulationsPath(stateDef.slug)}
+              className="rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white"
+            >
+              View {stateDef.name} regulations
+            </Link>
+            <Link to="/search" className="rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700">
+              Search all communities
+            </Link>
+          </div>
+          <div className="mt-5 flex flex-wrap gap-6 text-sm text-slate-600">
+            <span>Website coverage: {loading ? '...' : `${websiteCoveragePct}%`}</span>
+            <span>Canonical route: `/{normalizedCareType}/{stateDef.slug}/`</span>
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 text-center">
-            <span className="block text-3xl font-bold text-primary-600 mb-2">
-              {loading ? '...' : facilityCount}
-            </span>
-            <span className="text-slate-600">Total Facilities</span>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 text-center">
-            <span className="block text-3xl font-bold text-primary-600 mb-2">
-              {loading ? '...' : cities.length}
-            </span>
-            <span className="text-slate-600">Cities Covered</span>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 text-center">
-            <span className="block text-3xl font-bold text-primary-600 mb-2">Free</span>
-            <span className="text-slate-600">Directory Access</span>
-          </div>
-        </div>
-
-        {/* Top Cities Highlight (Phase 4) */}
-        {cities.length > 0 && (
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">Top Cities in {stateDef.name}</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {cities.slice(0, 6).map((city) => (
-                <Link 
-                  key={city.city}
-                  to={`/senior-living/${stateDef.slug}/${city.slug}/`}
-                  className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-all group"
-                >
-                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-primary-700 mb-2">
-                    {city.city}
-                  </h3>
-                  <p className="text-sm text-slate-500">
-                    {city.count} licensed facilities
-                  </p>
-                  <span className="inline-block mt-4 text-sm font-medium text-primary-600 group-hover:underline">
-                    View all facilities &rarr;
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Cities Grid */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-6">All Cities in {stateDef.name}</h2>
+        <div className="mb-10">
+          <h2 className="text-2xl font-bold text-slate-900 mb-5">Top cities in {stateDef.name}</h2>
           {loading ? (
-            <div className="text-center py-12 text-slate-500">Loading cities...</div>
-          ) : cities.length > 0 ? (
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {cities.map((city) => (
-                <Link 
-                  key={city.city}
-                  to={`/senior-living/${stateDef.slug}/${city.slug}/`}
-                  className="bg-white p-4 rounded-lg border border-slate-200 hover:border-primary-500 hover:shadow-md transition-all flex justify-between items-center group"
-                >
-                  <span className="font-medium text-slate-700 group-hover:text-primary-700">
-                    {city.city}
-                  </span>
-                  <span className="text-xs bg-slate-100 text-slate-500 px-2 py-1 rounded-full group-hover:bg-primary-50 group-hover:text-primary-600">
-                    {city.count}
-                  </span>
-                </Link>
-              ))}
+            <div className="rounded-xl border border-slate-200 bg-white p-8 text-center text-slate-500">Loading city directories...</div>
+          ) : cities.length === 0 ? (
+            <div className="rounded-xl border border-slate-200 bg-white p-8 text-center text-slate-500">
+              No primary {careTypeLabel.toLowerCase()} listings are available in this state yet.
             </div>
           ) : (
-            <div className="bg-slate-50 p-12 rounded-xl border border-dashed border-slate-300 text-center text-slate-500">
-              No facilities found in {stateDef.name} yet. We are actively expanding our database.
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+              {cities.slice(0, 12).map((city) => (
+                <Link
+                  key={city.slug}
+                  to={buildCareTypePath({ careType: normalizedCareType, state: stateDef.slug, city: city.slug })}
+                  className="group rounded-xl border border-slate-200 bg-white p-5 transition hover:border-slate-400 hover:shadow-md"
+                >
+                  <div className="flex items-center justify-between gap-4">
+                    <div>
+                      <div className="flex items-center gap-2 text-slate-500">
+                        <MapPin className="h-4 w-4" />
+                        <span className="text-xs uppercase tracking-[0.2em]">{stateDef.abbreviation}</span>
+                      </div>
+                      <h3 className="mt-3 text-xl font-semibold text-slate-900 group-hover:text-primary-700">{city.city}</h3>
+                      <p className="mt-2 text-sm text-slate-600">
+                        {city.count.toLocaleString()} listing{city.count === 1 ? '' : 's'}
+                      </p>
+                    </div>
+                    <ChevronRight className="h-5 w-5 text-slate-400 transition group-hover:translate-x-1 group-hover:text-slate-700" />
+                  </div>
+                </Link>
+              ))}
             </div>
           )}
         </div>
 
-        {/* Medicaid & Financial Aid Section */}
-        {stateDef && getMedicaidWaiver(stateDef.abbreviation) && (
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">Medicaid & Financial Aid</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <MedicaidWaiverCard waiver={getMedicaidWaiver(stateDef.abbreviation)!} />
-              
-              <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-900 mb-4">Does Medicaid Pay for Assisted Living?</h3>
-                <p className="text-slate-600 mb-4 leading-relaxed">
-                  In many states, Medicaid <strong>does not</strong> pay for room and board in assisted living. However, HCBS Waivers (like the one shown here) can pay for the <em>care services</em> provided in the facility.
-                </p>
-                <div className="bg-primary-50 p-4 rounded-lg border border-primary-100">
-                  <h4 className="font-semibold text-primary-900 text-sm mb-2">Key Takeaway</h4>
-                  <p className="text-sm text-primary-800">
-                    You typically still need to pay for "Room & Board" (rent + food) out of pocket or via SSI, while the Waiver covers the "Assisted Living Services" (care).
-                  </p>
-                </div>
-              </div>
+        {cities.length > 12 && (
+          <div className="rounded-xl border border-slate-200 bg-white p-6">
+            <h2 className="text-2xl font-bold text-slate-900 mb-5">All cities in {stateDef.name}</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {cities.map((city) => (
+                <Link
+                  key={city.slug}
+                  to={buildCareTypePath({ careType: normalizedCareType, state: stateDef.slug, city: city.slug })}
+                  className="rounded-lg border border-slate-200 px-4 py-3 text-sm text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
+                >
+                  <span className="font-medium">{city.city}</span>
+                  <span className="ml-2 text-slate-500">{city.count}</span>
+                </Link>
+              ))}
             </div>
           </div>
         )}
-
-        {/* State Resources */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-6">State Resources & Consumer Protection</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {stateDef && getOmbudsman(stateDef.abbreviation) && (
-              <OmbudsmanCard program={getOmbudsman(stateDef.abbreviation)!} variant="full" />
-            )}
-
-            {stateDef && getAgingAgency(stateDef.abbreviation) && (
-              <AgingAgencyCard agency={getAgingAgency(stateDef.abbreviation)!} variant="full" />
-            )}
-
-            {stateDef && getLicensingAuthority(stateDef.abbreviation) && (
-                <LicensingAuthorityCard authority={getLicensingAuthority(stateDef.abbreviation)!} variant="full" />
-            )}
-            
-            <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
-               <h3 className="font-bold text-slate-900 mb-4">Why Contact the Ombudsman?</h3>
-               <ul className="space-y-3 text-slate-600 text-sm">
-                 <li className="flex items-start gap-2">
-                   <span className="text-primary-600 font-bold">•</span>
-                   <span>Resolve complaints about quality of care or resident rights.</span>
-                 </li>
-                 <li className="flex items-start gap-2">
-                   <span className="text-primary-600 font-bold">•</span>
-                   <span>Get help with eviction or discharge notices.</span>
-                 </li>
-                 <li className="flex items-start gap-2">
-                   <span className="text-primary-600 font-bold">•</span>
-                   <span>Learn about facility inspection reports and history.</span>
-                 </li>
-                 <li className="flex items-start gap-2">
-                   <span className="text-primary-600 font-bold">•</span>
-                   <span>Advocate for better food, hygiene, and staffing levels.</span>
-                 </li>
-               </ul>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   );

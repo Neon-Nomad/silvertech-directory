@@ -56,7 +56,11 @@ export const ComparisonModal: React.FC = () => {
                           )}
                         </div>
                         <Link 
-                          to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}
+                          to={buildFacilityDetailPath({
+                            id: facility.id,
+                            publicSlug: (facility as any).public_slug,
+                            publicRouteId: (facility as any).public_route_id,
+                          })}
                           className="text-lg font-bold text-slate-900 hover:text-primary-600 block mb-1"
                           onClick={() => setIsOpen(false)}
                         >
@@ -147,7 +151,11 @@ export const ComparisonModal: React.FC = () => {
                     {selectedFacilities.map((f) => (
                       <td key={f.id} className="p-4">
                         <Link
-                          to={buildFacilityDetailPath({ id: f.id, state: f.state, city: f.city })}
+                          to={buildFacilityDetailPath({
+                            id: f.id,
+                            publicSlug: (f as any).public_slug,
+                            publicRouteId: (f as any).public_route_id,
+                          })}
                           className="block w-full text-center px-4 py-2 border border-primary-600 text-primary-600 rounded-md hover:bg-primary-50 font-medium transition-colors"
                           onClick={() => setIsOpen(false)}
                         >

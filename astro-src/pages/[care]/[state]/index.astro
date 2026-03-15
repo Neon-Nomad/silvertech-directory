@@ -1,0 +1,103 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCareTypeBySlug, getSeniorLivingState } from '../../../lib/seniorLivingData';
+
+export async function getStaticPaths() {
+  const careTypes = [
+    'assisted-living',
+    'memory-care',
+    'nursing-homes',
+    'independent-living',
+    'residential-care',
+    'adult-day-services',
+    'ccrc',
+  ];
+  const { getSeniorLivingStates } = await import('../../../lib/seniorLivingData');
+  const states = getSeniorLivingStates();
+  return careTypes.flatMap((care) =>
+    states
+      .filter((state) => state.stats.careTypeCounts[care as keyof typeof state.stats.careTypeCounts] > 0)
+      .map((state) => ({ params: { care, state: state.stateSlug } })),
+  );
+}
+
+const { care, state } = Astro.params;
+const careType = care ? getCareTypeBySlug(care) : null;
+const stateData = state ? getSeniorLivingState(state) : null;
+
+if (!careType || !stateData) {
+  throw new Error(`Care/state page not found for ${care || 'unknown'}/${state || 'unknown'}`);
+}
+
+const activeCities = stateData.cities
+  .filter((city) => city.careTypeCounts[careType.slug] > 0)
+  .sort((a, b) => b.careTypeCounts[careType.slug] - a.careTypeCounts[careType.slug] || a.cityName.localeCompare(b.cityName));
+
+const title = `${careType.label} in ${stateData.stateName} | SilverTech Directory`;
+const description = `Explore ${careType.label.toLowerCase()} listings across ${stateData.stateName}, including city-level directories and clean community links.`;
+const canonical = `https://silvertechdirectory.com/${careType.slug}/${stateData.stateSlug}/`;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: careType.label, item: `https://silvertechdirectory.com/${careType.slug}/` },
+    { '@type': 'ListItem', position: 3, name: stateData.stateName, item: canonical },
+  ],
+};
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: activeCities.slice(0, 24).map((city, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: `${careType.label} in ${city.cityName}, ${stateData.stateAbbr}`,
+    item: `https://silvertechdirectory.com/${careType.slug}/${stateData.stateSlug}/${city.citySlug}/`,
+  })),
+};
+---
+<Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
+
+  <div class="container sl-page">
+    <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href={`/${careType.slug}/`}>{careType.label}</a>
+      <span>/</span>
+      <span>{stateData.stateName}</span>
+    </nav>
+
+    <section class="sl-hero">
+      <p class="sl-eyebrow">State Directory</p>
+      <h1>{careType.label} in {stateData.stateName}</h1>
+      <p>
+        Browse city-level {careType.label.toLowerCase()} pages in {stateData.stateName} and compare communities on clean canonical URLs.
+      </p>
+      <div class="sl-hero-meta">
+        <span><strong>{stateData.stats.careTypeCounts[careType.slug].toLocaleString()}</strong> listings indexed</span>
+        <span><strong>{activeCities.length.toLocaleString()}</strong> cities covered</span>
+      </div>
+      <div class="sl-hero-actions">
+        <a class="sl-btn sl-btn-primary" href={`/regulations/${stateData.stateSlug}/`}>View Regulations</a>
+      </div>
+    </section>
+
+    <section class="sl-section" style="margin-top:0.9rem;">
+      <h2>Top Cities in {stateData.stateName}</h2>
+      <div class="sl-nearby-grid" style="grid-template-columns:repeat(4,minmax(0,1fr));">
+        {activeCities.map((city) => (
+          <a href={`/${careType.slug}/${stateData.stateSlug}/${city.citySlug}/`}>
+            <strong>{city.cityName}</strong>
+            <span>{city.careTypeCounts[careType.slug].toLocaleString()} listings</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
+</Base>

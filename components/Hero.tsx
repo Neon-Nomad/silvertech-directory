@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ArrowRight, ChevronRight } from 'lucide-react';
 import { Section } from './ui/Section';
 import { Button } from './ui/Button';
 import { WaitlistModal } from './WaitlistModal';

@@ -366,7 +366,7 @@ export const StateRegulatoryHub: React.FC = () => {
         description: `Complete guide to ${stateDef.name} senior living regulations, Medicaid waivers, licensing requirements, and resident protections.`,
         author: { '@type': 'Organization', name: 'SilverTech Directory', url: 'https://silvertechdirectory.com' },
         publisher: { '@type': 'Organization', name: 'SilverTech Directory' },
-        mainEntityOfPage: `https://silvertechdirectory.com/states/${stateDef.slug}/regulations`,
+        mainEntityOfPage: `https://silvertechdirectory.com/regulations/${stateDef.slug}/`,
         about: sectionNames.map((name) => ({ '@type': 'Thing', name })),
       },
       {
@@ -374,8 +374,8 @@ export const StateRegulatoryHub: React.FC = () => {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Regulatory Library', item: 'https://silvertechdirectory.com/regulatory-library' },
-          { '@type': 'ListItem', position: 3, name: `${stateDef.name} Regulations`, item: `https://silvertechdirectory.com/states/${stateDef.slug}/regulations` },
+          { '@type': 'ListItem', position: 2, name: 'Regulations', item: 'https://silvertechdirectory.com/regulations/' },
+          { '@type': 'ListItem', position: 3, name: `${stateDef.name} Regulations`, item: `https://silvertechdirectory.com/regulations/${stateDef.slug}/` },
         ],
       },
       {
@@ -409,7 +409,7 @@ export const StateRegulatoryHub: React.FC = () => {
       <div className="min-h-screen flex items-center justify-center bg-warm-white">
         <div className="text-center">
           <h1 className="text-2xl font-serif font-bold text-charcoal mb-4">State Not Found</h1>
-          <Link to="/regulatory-library" className="text-gold hover:underline">Return to Regulatory Library</Link>
+          <Link to="/regulations" className="text-gold hover:underline">Return to Regulations</Link>
         </div>
       </div>
     );
@@ -433,7 +433,7 @@ export const StateRegulatoryHub: React.FC = () => {
         <div className="text-center max-w-md px-4">
           <h1 className="text-2xl font-serif font-bold text-charcoal mb-4">{stateDef.name} Regulatory Guide</h1>
           <p className="text-slate-600 mb-6">We are currently compiling the regulatory data for {stateDef.name}. Please check back soon.</p>
-          <Link to="/regulatory-library" className="text-gold hover:underline">Return to Regulatory Library</Link>
+          <Link to="/regulations" className="text-gold hover:underline">Return to Regulations</Link>
         </div>
       </div>
     );
@@ -444,12 +444,12 @@ export const StateRegulatoryHub: React.FC = () => {
       <Helmet>
         <title>{`${stateDef.name} Senior Living Regulations | SilverTech Directory`}</title>
         <meta name="description" content={`Complete guide to ${stateDef.name} senior living regulations, Medicaid waivers, licensing requirements, and how to pay for memory care and assisted living.`} />
-        <link rel="canonical" href={`https://silvertechdirectory.com/states/${stateDef.slug}/regulations`} />
+        <link rel="canonical" href={`https://silvertechdirectory.com/regulations/${stateDef.slug}/`} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="SilverTech Directory" />
         <meta property="og:title" content={`${stateDef.name} Senior Living Regulations`} />
         <meta property="og:description" content={`Licensing, Medicaid, ombudsman, and complaint information for ${stateDef.name} assisted living communities.`} />
-        <meta property="og:url" content={`https://silvertechdirectory.com/states/${stateDef.slug}/regulations`} />
+        <meta property="og:url" content={`https://silvertechdirectory.com/regulations/${stateDef.slug}/`} />
         <meta name="twitter:card" content="summary_large_image" />
         {jsonLd && jsonLd.map((schema, i) => (
           <script key={i} type="application/ld+json">{JSON.stringify(schema)}</script>
@@ -463,7 +463,7 @@ export const StateRegulatoryHub: React.FC = () => {
             <div className="flex items-center gap-1 text-sm text-slate-500">
               <Link to="/" className="hover:text-gold transition-colors">Home</Link>
               <ChevronRight size={14} className="text-slate-300" />
-              <Link to="/regulatory-library" className="hover:text-gold transition-colors">Regulatory Library</Link>
+              <Link to="/regulations" className="hover:text-gold transition-colors">Regulations</Link>
               <ChevronRight size={14} className="text-slate-300" />
               <span className="text-charcoal font-medium">{stateDef.name}</span>
             </div>
@@ -562,7 +562,7 @@ export const StateRegulatoryHub: React.FC = () => {
                   {/* Hover preview → links to topic article guide */}
                   {hoverPreview && TOPIC_GUIDES[hoverPreview] && stateDef && (
                     <Link
-                      to={`/states/${stateDef.slug}/regulations/${TOPIC_GUIDES[hoverPreview].slug}`}
+                      to={`/regulations/${stateDef.slug}/${TOPIC_GUIDES[hoverPreview].slug}/`}
                       className="absolute left-full ml-4 top-0 w-[300px] bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden hover:border-gold transition-colors"
                       onMouseEnter={() => handlePreviewEnter(hoverPreview)}
                       onMouseLeave={handlePreviewLeave}
@@ -654,7 +654,7 @@ export const StateRegulatoryHub: React.FC = () => {
                       {topicGuide && stateDef && (
                         <div className="mt-8 border-t border-slate-100 pt-6">
                           <Link
-                            to={`/states/${stateDef.slug}/regulations/${topicGuide.slug}`}
+                            to={`/regulations/${stateDef.slug}/${topicGuide.slug}/`}
                             className="inline-flex items-center gap-2 text-sm font-semibold text-charcoal hover:text-gold transition-colors"
                           >
                             <ArrowRight className="w-4 h-4" />
@@ -772,7 +772,7 @@ export const StateRegulatoryHub: React.FC = () => {
                       {['licensing', 'inspections', 'staffing', 'resident-rights', 'complaints', 'memory-care'].map((slug) => (
                         <Link
                           key={slug}
-                          to={`/states/${stateDef.slug}/regulations/${slug}`}
+                          to={`/regulations/${stateDef.slug}/${slug}/`}
                           className="group bg-white border border-slate-200 rounded-xl p-4 hover:border-gold hover:shadow-sm transition-all"
                         >
                           <p className="text-sm font-semibold text-charcoal group-hover:text-gold transition-colors capitalize">

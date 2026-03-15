@@ -11,6 +11,7 @@ import { AuthProvider, useAuth } from '@/src/context/AuthProvider';
 import { dashboardPathForTab, normalizeDashboardTab } from '@/src/utils/dashboardRouting';
 import { reportFrontendError } from '@/src/monitoring/reportError';
 import { isCareTypeRouteSlug } from '@/src/utils/facilityPath';
+import { LegacyRouteRetired } from '@/components/ui/LegacyRouteRetired';
 
 const DirectorySearch = lazy(() => import('@/features/family/discovery/DirectorySearch'));
 const OperatorDashboard = lazy(() => import('@/features/operator/dashboard/OperatorDashboard'));
@@ -39,6 +40,7 @@ const Blog = lazy(() => import('./features/public/blog/Blog').then((m) => ({ def
 const StateHubHome = lazy(() => import('@/features/locations/hub/StateHubHome').then((m) => ({ default: m.StateHubHome })));
 const StatePageTemplate = lazy(() => import('@/features/locations/StatePageTemplate').then((m) => ({ default: m.StatePageTemplate })));
 const CityPageTemplate = lazy(() => import('@/features/locations/CityPageTemplate').then((m) => ({ default: m.CityPageTemplate })));
+const CareTypeDirectoryPage = lazy(() => import('@/features/locations/CareTypeDirectoryPage').then((m) => ({ default: m.CareTypeDirectoryPage })));
 const StateMedicaidPage = lazy(() => import('@/features/locations/hub/StateMedicaidPage').then((m) => ({ default: m.StateMedicaidPage })));
 const StateRegulatoryHub = lazy(() => import('@/features/regulatory/StateRegulatoryHub').then((m) => ({ default: m.StateRegulatoryHub })));
 const StateRulesPage = lazy(() => import('@/features/locations/hub/StateRulesPage').then((m) => ({ default: m.StateRulesPage })));
@@ -169,12 +171,22 @@ const LegacyDashboardEditRedirect: React.FC = () => {
   return <Navigate to={`/dashboard/facility/${id}/edit`} replace />;
 };
 
-const SeniorLivingLeafRoute: React.FC = () => {
-  const { leaf } = useParams<{ leaf?: string }>();
-  if (isCareTypeRouteSlug(leaf)) {
-    return <CityPageTemplate />;
-  }
-  return <FacilityDetails />;
+const CareTypeIndexRoute: React.FC = () => {
+  const { careType } = useParams<{ careType?: string }>();
+  if (!isCareTypeRouteSlug(careType)) return <Navigate to="/" replace />;
+  return <CareTypeDirectoryPage />;
+};
+
+const CareTypeStateRoute: React.FC = () => {
+  const { careType } = useParams<{ careType?: string }>();
+  if (!isCareTypeRouteSlug(careType)) return <Navigate to="/" replace />;
+  return <StatePageTemplate />;
+};
+
+const CareTypeCityRoute: React.FC = () => {
+  const { careType } = useParams<{ careType?: string }>();
+  if (!isCareTypeRouteSlug(careType)) return <Navigate to="/" replace />;
+  return <CityPageTemplate />;
 };
 
 function App() {
@@ -248,7 +260,8 @@ function App() {
                     <Routes>
                       <Route path="/" element={<Home />} />
                       <Route path="/search" element={<DirectorySearch />} />
-                      <Route path="/facility/:id" element={<FacilityDetails />} />
+                      <Route path="/community/:communityId" element={<FacilityDetails />} />
+                      <Route path="/facility/:id" element={<LegacyRouteRetired />} />
 
                     {/* Auth Routes */}
                     <Route path="/login" element={<LoginPage />} />
@@ -295,20 +308,25 @@ function App() {
                     {/* State Authority Hub */}
                     <Route path="/states" element={<StatesDirectoryPage />} />
                     <Route path="/states/:state" element={<StateHubHome />} />
-                    <Route path="/states/:state/regulatory" element={<Navigate to="regulations" replace />} />
-                    <Route path="/states/:state/regulations" element={<StateRegulatoryHub />} />
-                    <Route path="/states/:state/regulations/:topic" element={<StateRegulationTopicPage />} />
+                    <Route path="/states/:state/regulatory" element={<LegacyRouteRetired />} />
+                    <Route path="/states/:state/regulations" element={<LegacyRouteRetired />} />
+                    <Route path="/states/:state/regulations/:topic" element={<LegacyRouteRetired />} />
                     <Route path="/states/:state/medicaid" element={<StateMedicaidPage />} />
                     <Route path="/states/:state/rules" element={<StateRulesPage />} />
                     <Route path="/states/:state/ombudsman" element={<StateOmbudsmanPage />} />
                     <Route path="/states/:state/veterans" element={<StateVeteransPage />} />
-                    <Route path="/regulatory-library" element={<RegulatoryLibrary />} />
+                    <Route path="/regulations" element={<RegulatoryLibrary />} />
+                    <Route path="/regulations/:state" element={<StateRegulatoryHub />} />
+                    <Route path="/regulations/:state/:topic" element={<StateRegulationTopicPage />} />
+                    <Route path="/regulatory-library/*" element={<LegacyRouteRetired />} />
 
-                    {/* Senior Living Frontend Routes (dev/runtime parity with static build) */}
-                    <Route path="/senior-living" element={<Navigate to="/states" replace />} />
-                    <Route path="/senior-living/:state" element={<StatePageTemplate />} />
-                    <Route path="/senior-living/:state/:city" element={<CityPageTemplate />} />
-                    <Route path="/senior-living/:state/:city/:leaf" element={<SeniorLivingLeafRoute />} />
+                    {/* APFM-style directory routes */}
+                    <Route path="/:careType" element={<CareTypeIndexRoute />} />
+                    <Route path="/:careType/:state" element={<CareTypeStateRoute />} />
+                    <Route path="/:careType/:state/:city" element={<CareTypeCityRoute />} />
+
+                    {/* Retired public directory routes */}
+                    <Route path="/senior-living/*" element={<LegacyRouteRetired />} />
 
                     {/* Legacy / Direct Routes */}
                     <Route path="/faq" element={<FAQ />} />

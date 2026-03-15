@@ -5,25 +5,18 @@ import { resolve } from 'node:path';
 const read = (file: string) => readFileSync(resolve(process.cwd(), file), 'utf8');
 
 describe('facility trust signals contract', () => {
-  it('renders license and medicare details on city facility cards', () => {
-    const cityTemplate = read('astro-src/pages/senior-living/[state]/[city]/index.astro');
+  it('renders license context on canonical city facility cards', () => {
+    const cityTemplate = read('astro-src/pages/[care]/[state]/[city]/index.astro');
 
     expect(cityTemplate).toContain("License: {facility.licenseNumber || 'Pending'}");
-    expect(cityTemplate).toContain("Medicare: {isFacilityMedicareCertified(facility) ? 'Certified' : 'Not listed'}");
+    expect(cityTemplate).toContain('Care Type: {careType.label}');
   });
 
-  it('renders license and medicare details on care-type facility cards', () => {
-    const careTemplate = read('astro-src/pages/senior-living/[state]/[city]/[care]/index.astro');
-
-    expect(careTemplate).toContain("License: {facility.licenseNumber || 'Pending'}");
-    expect(careTemplate).toContain("Medicare: {isFacilityMedicareCertified(facility) ? 'Certified' : 'Not listed'}");
-  });
-
-  it('keeps medicare status visible in the facility detail credential panel', () => {
+  it('keeps medicare and licensing status visible in the community detail header', () => {
     const facilityDetails = read('features/family/discovery/FacilityDetails.tsx');
 
-    expect(facilityDetails).toContain('Medicare: {medicareCertificationLabel}');
-    expect(facilityDetails).toContain('Medicare Status');
-    expect(facilityDetails).toContain('Medicare Provider ID (CMS)');
+    expect(facilityDetails).toContain("Verified Community | Medicare: {medicareCertified ? 'Certified' : 'Not listed'}");
+    expect(facilityDetails).toContain('State License Number');
+    expect(facilityDetails).toContain('Primary Care Type');
   });
 });

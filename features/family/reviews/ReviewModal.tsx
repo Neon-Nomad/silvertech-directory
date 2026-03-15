@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Star, X, ShieldCheck } from 'lucide-react';
+import { Star, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 
 interface ReviewModalProps {

@@ -58,7 +58,6 @@ const faqData: FAQSection[] = [
 ];
 
 export const FAQ: React.FC = () => {
-  const [openSection, setOpenSection] = useState<string | null>('General Questions');
   const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
 
   const toggleItem = (sectionTitle: string, index: number) => {

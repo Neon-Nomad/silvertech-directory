@@ -268,7 +268,7 @@ const getTopicLinks = (stateSlug: string, currentTopic: string) => {
   const topics = Object.keys(TOPIC_CONFIG).filter((slug) => slug !== currentTopic);
   return topics.slice(0, 3).map((slug) => ({
     title: TOPIC_CONFIG[slug].title,
-    href: `/states/${stateSlug}/regulations/${slug}`,
+    href: `/regulations/${stateSlug}/${slug}/`,
   }));
 };
 
@@ -363,12 +363,12 @@ export const StateRegulationTopicPage: React.FC = () => {
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
-        <link rel="canonical" href={`https://silvertechdirectory.com/states/${stateDef.slug}/regulations/${topic}`} />
+        <link rel="canonical" href={`https://silvertechdirectory.com/regulations/${stateDef.slug}/${topic}/`} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="SilverTech Directory" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:url" content={`https://silvertechdirectory.com/states/${stateDef.slug}/regulations/${topic}`} />
+        <meta property="og:url" content={`https://silvertechdirectory.com/regulations/${stateDef.slug}/${topic}/`} />
         <meta property="og:image" content={previewImage} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
@@ -396,10 +396,9 @@ export const StateRegulationTopicPage: React.FC = () => {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
-              { '@type': 'ListItem', position: 2, name: 'States', item: 'https://silvertechdirectory.com/states' },
-              { '@type': 'ListItem', position: 3, name: stateDef.name, item: `https://silvertechdirectory.com/states/${stateDef.slug}` },
-              { '@type': 'ListItem', position: 4, name: 'Regulations', item: `https://silvertechdirectory.com/states/${stateDef.slug}/regulations` },
-              { '@type': 'ListItem', position: 5, name: config.title, item: `https://silvertechdirectory.com/states/${stateDef.slug}/regulations/${topic}` },
+              { '@type': 'ListItem', position: 2, name: 'Regulations', item: 'https://silvertechdirectory.com/regulations/' },
+              { '@type': 'ListItem', position: 3, name: stateDef.name, item: `https://silvertechdirectory.com/regulations/${stateDef.slug}/` },
+              { '@type': 'ListItem', position: 4, name: config.title, item: `https://silvertechdirectory.com/regulations/${stateDef.slug}/${topic}/` },
             ],
           })}
         </script>
@@ -410,13 +409,12 @@ export const StateRegulationTopicPage: React.FC = () => {
           <Breadcrumbs
             items={[
               { label: 'Home', path: '/' },
-              { label: 'States', path: '/states' },
-              { label: stateDef.name, path: `/states/${stateDef.slug}` },
-              { label: 'Regulations', path: `/states/${stateDef.slug}/regulations` },
-              { label: config.title, path: `/states/${stateDef.slug}/regulations/${topic}` },
+              { label: 'Regulations', path: '/regulations/' },
+              { label: stateDef.name, path: `/regulations/${stateDef.slug}/` },
+              { label: config.title, path: `/regulations/${stateDef.slug}/${topic}/` },
             ]}
           />
-          <Link to={`/states/${stateDef.slug}/regulations`} className="inline-flex items-center text-sm text-slate-500 hover:text-gold">
+          <Link to={`/regulations/${stateDef.slug}/`} className="inline-flex items-center text-sm text-slate-500 hover:text-gold">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to {stateDef.name} regulations
           </Link>
@@ -573,7 +571,7 @@ export const StateRegulationTopicPage: React.FC = () => {
             <section className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h2 className="text-sm font-semibold text-charcoal mb-4 uppercase tracking-widest">Next steps for families</h2>
               <div className="space-y-3 text-sm text-slate-600">
-                <Link to={`/search?location=${encodeURIComponent(stateDef.name)}`} className="flex items-center gap-2 hover:text-gold">
+                <Link to={`/assisted-living/${stateDef.slug}/`} className="flex items-center gap-2 hover:text-gold">
                   <ArrowRight className="w-4 h-4" />
                   Browse assisted living in {stateDef.name}
                 </Link>
@@ -581,7 +579,7 @@ export const StateRegulationTopicPage: React.FC = () => {
                   <ArrowRight className="w-4 h-4" />
                   Questions to ask on a tour
                 </Link>
-                <Link to={`/states/${stateDef.slug}`} className="flex items-center gap-2 hover:text-gold">
+                <Link to={`/assisted-living/${stateDef.slug}/`} className="flex items-center gap-2 hover:text-gold">
                   <ArrowRight className="w-4 h-4" />
                   Compare communities near you
                 </Link>

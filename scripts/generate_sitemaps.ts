@@ -13,13 +13,24 @@ const __dirname = path.dirname(__filename);
 const BASE_URL = 'https://silvertechdirectory.com';
 const PUBLIC_DIR = path.join(__dirname, '../public');
 const buildTime = new Date().toISOString();
+const LEGACY_SITEMAP_FILES = ['sitemap-cities.xml', 'sitemap-states.xml'];
 
 const CARE_TYPE_CITY_CHUNK_SIZE = 50000;
 const DEFAULT_CHUNK_SIZE = 50000;
 const FACILITY_CHUNK_SIZE = 5000;
+const REGULATIONS_TOPIC_SLUGS = ['licensing', 'inspections', 'staffing', 'resident-rights', 'complaints', 'memory-care'];
+const CARE_TYPE_SLUGS = [
+  'assisted-living',
+  'memory-care',
+  'nursing-homes',
+  'independent-living',
+  'residential-care',
+  'adult-day-services',
+  'ccrc',
+] as const;
 
-const STATE_PAGE_PRIORITY = 1.0;
-const CITY_PAGE_PRIORITY = 0.9;
+const CARE_TYPE_PAGE_PRIORITY = 1.0;
+const CARE_TYPE_STATE_PRIORITY = 0.9;
 const CARE_TYPE_CITY_PRIORITY = 0.8;
 
 const supabaseUrl = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL;
@@ -48,6 +59,9 @@ type SitemapEntry = {
 
 type FacilitySeedRow = {
   id: string;
+  public_slug: string | null;
+  public_route_id: number | null;
+  primary_care_type_slug: string | null;
   name: string | null;
   city: string | null;
   state: string | null;
@@ -83,37 +97,6 @@ const resolveStateSlug = (state: string | null): string => {
   if (!raw) return '';
   const normalized = raw.toLowerCase();
   return STATE_SLUG_BY_ABBR.get(normalized) || toSlug(raw);
-};
-
-const hashString = (value: string): string => {
-  let hash = 5381;
-  for (let i = 0; i < value.length; i += 1) {
-    hash = (hash * 33) ^ value.charCodeAt(i);
-  }
-  return (hash >>> 0).toString(36);
-};
-
-const buildFacilityRouteId = (facility: FacilitySeedRow): string => {
-  const keyParts = [
-    facility.name || '',
-    facility.city || '',
-    facility.state || '',
-    facility.state_license_number || '',
-    facility.phone || '',
-    facility.address_line1 || '',
-    facility.postal_code || '',
-    facility.id || '',
-  ];
-  const key = keyParts.filter(Boolean).join('|');
-  const baseParts = [
-    facility.name || '',
-    facility.city || '',
-    facility.state || '',
-    facility.state_license_number || facility.postal_code || facility.phone || '',
-  ];
-  const base = toSlug(baseParts.filter(Boolean).join(' '));
-  const hash = hashString(key || facility.id);
-  return base ? `${base}-${hash}` : `facility-${hash}`;
 };
 
 const writeSitemap = (filename: string, entries: SitemapEntry[]): void => {
@@ -223,7 +206,7 @@ const toStaticEntry = (url: string, priority = 0.6): SitemapEntry => ({
   priority,
 });
 
-const loadFacilityRows = async (): Promise<Array<{ routeId: string; stateSlug: string; citySlug: string }>> => {
+const loadFacilityRows = async (): Promise<Array<{ communityId: string }>> => {
   console.log('Loading facility sitemap seeds directly from Supabase facilities table...');
   const allFacilities: FacilitySeedRow[] = [];
   const pageSize = 1000;
@@ -232,7 +215,9 @@ const loadFacilityRows = async (): Promise<Array<{ routeId: string; stateSlug: s
   while (true) {
     const { data, error } = await supabase
       .from('facilities')
-      .select('id,name,city,state,address_line1,postal_code,phone,state_license_number,created_at')
+      .select(
+        'id,public_slug,public_route_id,primary_care_type_slug,name,city,state,address_line1,postal_code,phone,state_license_number,created_at',
+      )
       .order('created_at', { ascending: true })
       .order('id', { ascending: true })
       .range(page * pageSize, (page + 1) * pageSize - 1);
@@ -255,38 +240,42 @@ const loadFacilityRows = async (): Promise<Array<{ routeId: string; stateSlug: s
     page += 1;
   }
 
-  const seenRouteIds = new Map<string, number>();
   const routeSeeds = allFacilities
     .map((facility) => {
-      const stateSlug = resolveStateSlug(facility.state);
-      const citySlug = toSlug(facility.city || '');
-      if (!stateSlug || !citySlug) return null;
+      const publicSlug = toSlug(facility.public_slug || facility.name || '');
+      const publicRouteId = Number(facility.public_route_id);
+      if (!publicSlug || !Number.isFinite(publicRouteId)) return null;
 
-      const baseRouteId = buildFacilityRouteId(facility);
-      const currentCount = seenRouteIds.get(baseRouteId) || 0;
-      seenRouteIds.set(baseRouteId, currentCount + 1);
-      const routeId = currentCount === 0 ? baseRouteId : `${baseRouteId}-${currentCount + 1}`;
-      return { routeId, stateSlug, citySlug };
+      return { communityId: `${publicSlug}-${Math.trunc(publicRouteId)}` };
     })
-    .filter((facility): facility is { routeId: string; stateSlug: string; citySlug: string } => Boolean(facility));
+    .filter((facility): facility is { communityId: string } => Boolean(facility));
 
-  console.log(
-    `Loaded ${routeSeeds.length} facilities from Supabase (${seenRouteIds.size} unique base facility route ids).`,
-  );
+  console.log(`Loaded ${routeSeeds.length} facilities from Supabase.`);
   return routeSeeds;
 };
 
 async function generateSitemaps() {
   console.log('Starting sitemap generation...');
 
-  const regulatoryEntries = ALL_STATES.map((state) =>
-    toStaticEntry(`${BASE_URL}/states/${state.slug}/regulations/`, 0.7),
+  for (const legacyFile of LEGACY_SITEMAP_FILES) {
+    removeFileIfExists(legacyFile);
+  }
+
+  const regulatoryEntries = ALL_STATES.flatMap((state) => [
+    toStaticEntry(`${BASE_URL}/regulations/${state.slug}/`, 0.7),
+    ...REGULATIONS_TOPIC_SLUGS.map((topicSlug) =>
+      toStaticEntry(`${BASE_URL}/regulations/${state.slug}/${topicSlug}/`, 0.6),
+    ),
+  ]);
+
+  const careTypeEntries = CARE_TYPE_SLUGS.map((careTypeSlug) =>
+    toStaticEntry(`${BASE_URL}/${careTypeSlug}/`, CARE_TYPE_PAGE_PRIORITY),
   );
 
   const staticEntries = uniqueEntries(
     [
       `${BASE_URL}/`,
-      `${BASE_URL}/senior-living/`,
+      `${BASE_URL}/regulations/`,
       `${BASE_URL}/search`,
       `${BASE_URL}/tools/pricing-audit`,
       `${BASE_URL}/claim-business`,
@@ -318,39 +307,32 @@ async function generateSitemaps() {
       `${BASE_URL}/products/outdoor-travel`,
     ]
       .map((url) => toStaticEntry(url, url === `${BASE_URL}/` ? 0.7 : 0.6))
-      .concat(regulatoryEntries),
+      .concat(regulatoryEntries, careTypeEntries),
   );
 
   console.log('Loading state/city/care-type path seeds from data contract...');
   const { getAllStates, getAllCities, getAllCityCareCombos } = await import(
     '../astro-src/lib/seniorDataContract'
   );
-  const [states, cities, cityCareCombos, facilities] = await Promise.all([
+  const [states, cityCareCombos, facilities] = await Promise.all([
     getAllStates(),
-    getAllCities(),
     getAllCityCareCombos(),
     loadFacilityRows(),
   ]);
 
-  const stateEntries = uniqueEntries(
-    states.map((stateSlug) => ({
-      url: `${BASE_URL}/senior-living/${stateSlug}/`,
-      changefreq: 'weekly',
-      priority: STATE_PAGE_PRIORITY,
-    })),
-  );
-
-  const cityEntries = uniqueEntries(
-    cities.map(({ state, city }) => ({
-      url: `${BASE_URL}/senior-living/${state}/${city}/`,
-      changefreq: 'weekly',
-      priority: CITY_PAGE_PRIORITY,
-    })),
+  const careTypeStateEntries = uniqueEntries(
+    CARE_TYPE_SLUGS.flatMap((careTypeSlug) =>
+      states.map((stateSlug) => ({
+        url: `${BASE_URL}/${careTypeSlug}/${stateSlug}/`,
+        changefreq: 'weekly' as const,
+        priority: CARE_TYPE_STATE_PRIORITY,
+      })),
+    ),
   );
 
   const careTypeCityEntries = uniqueEntries(
     cityCareCombos.map(({ state, city, careTypeSlug }) => ({
-      url: `${BASE_URL}/senior-living/${state}/${city}/${careTypeSlug}/`,
+      url: `${BASE_URL}/${careTypeSlug}/${state}/${city}/`,
       changefreq: 'weekly',
       priority: CARE_TYPE_CITY_PRIORITY,
     })),
@@ -358,36 +340,29 @@ async function generateSitemaps() {
 
   const facilityEntries = uniqueEntries(
     facilities
-      .filter(
-        (facility): facility is { routeId: string; stateSlug: string; citySlug: string } =>
-          Boolean(facility?.routeId && facility?.stateSlug && facility?.citySlug),
-      )
+      .filter((facility): facility is { communityId: string } => Boolean(facility?.communityId))
       .map((facility) => ({
-        url: `${BASE_URL}/senior-living/${facility.stateSlug}/${facility.citySlug}/${facility.routeId}/`,
+        url: `${BASE_URL}/community/${facility.communityId}/`,
         changefreq: 'weekly',
         priority: 0.7,
       })),
   );
 
-  if (stateEntries.length === 0 || cityEntries.length === 0 || careTypeCityEntries.length === 0) {
+  if (careTypeStateEntries.length === 0 || careTypeCityEntries.length === 0) {
     throw new Error(
-      `Data contract returned empty senior-living seeds (states=${stateEntries.length}, cities=${cityEntries.length}, careTypeCities=${careTypeCityEntries.length}). Refusing to emit incomplete sitemap.`,
+      `Data contract returned empty directory seeds (careTypeStates=${careTypeStateEntries.length}, careTypeCities=${careTypeCityEntries.length}). Refusing to emit incomplete sitemap.`,
     );
   }
 
   console.log(
-    `Prepared URLs: states=${stateEntries.length}, cities=${cityEntries.length}, care-type-cities=${careTypeCityEntries.length}, facilities=${facilityEntries.length}`,
+    `Prepared URLs: care-type-states=${careTypeStateEntries.length}, care-type-cities=${careTypeCityEntries.length}, facilities=${facilityEntries.length}`,
   );
 
   writeSitemap('sitemap-static.xml', staticEntries);
 
-  const stateSitemapFiles = writeChunkedSitemaps({
-    baseName: 'sitemap-states',
-    entries: stateEntries,
-  });
-  const citySitemapFiles = writeChunkedSitemaps({
-    baseName: 'sitemap-cities',
-    entries: cityEntries,
+  const careTypeStateSitemapFiles = writeChunkedSitemaps({
+    baseName: 'sitemap-care-type-states',
+    entries: careTypeStateEntries,
   });
   const careTypeSitemapFiles = writeChunkedSitemaps({
     baseName: 'sitemap-care-type-cities',
@@ -403,8 +378,7 @@ async function generateSitemaps() {
 
   const sitemapFiles = [
     'sitemap-static.xml',
-    ...stateSitemapFiles,
-    ...citySitemapFiles,
+    ...careTypeStateSitemapFiles,
     ...careTypeSitemapFiles,
     ...facilitySitemapFiles,
   ];

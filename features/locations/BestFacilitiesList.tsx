@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Star, Award, ChevronRight, Phone } from 'lucide-react';
+import { Award, Building2, ChevronRight, MapPin, Shield, Star } from 'lucide-react';
 import { RankedFacility } from '@/src/utils/ranking';
 import { buildFacilityDetailPath } from '@/src/utils/facilityPath';
 
@@ -50,7 +50,11 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
                   <div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">
                       <Link
-                        to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}
+                        to={buildFacilityDetailPath({
+                          id: facility.id,
+                          publicSlug: (facility as any).public_slug,
+                          publicRouteId: (facility as any).public_route_id,
+                        })}
                         className="hover:text-primary-600"
                       >
                         {facility.name}
@@ -76,7 +80,11 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
                   
                   <div className="text-right hidden md:block">
                      <Link 
-                        to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}
+                        to={buildFacilityDetailPath({
+                          id: facility.id,
+                          publicSlug: (facility as any).public_slug,
+                          publicRouteId: (facility as any).public_route_id,
+                        })}
                         className="inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition-colors"
                       >
                         View Details <ChevronRight size={16} className="ml-1" />
@@ -87,7 +95,11 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
                 {/* Mobile CTA */}
                 <div className="mt-4 md:hidden">
                     <Link 
-                        to={buildFacilityDetailPath({ id: facility.id, state: facility.state, city: facility.city })}
+                        to={buildFacilityDetailPath({
+                          id: facility.id,
+                          publicSlug: (facility as any).public_slug,
+                          publicRouteId: (facility as any).public_route_id,
+                        })}
                         className="w-full inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition-colors"
                       >
                         View Details <ChevronRight size={16} className="ml-1" />
@@ -101,6 +113,3 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
     </div>
   );
 };
-
-// Helper icon import (needed because I used Building2 and Shield in the JSX but didn't import them all)
-import { Building2, Shield } from 'lucide-react';

@@ -99,7 +99,7 @@ const buildStateBrief = (row: KeywordMapRow) => {
   const h1 = `Senior Care in ${row.state_name}`;
   const introHook = `Families searching for ${row.primary_keyword} need a clear way to compare care types, costs, and licensed options across ${row.state_name}.`;
   const internalLinks = [
-    `/states/${row.state_slug}/regulations`,
+    `/regulations/${row.state_slug}`,
     `/states/${row.state_slug}/medicaid`,
     `/states/${row.state_slug}/ombudsman`,
     `/states/${row.state_slug}/veterans`,
@@ -116,7 +116,7 @@ const buildStateBrief = (row: KeywordMapRow) => {
     schemaFocus: 'WebPage | BreadcrumbList | ItemList | FAQPage',
     wordCountTarget: '1400-2200',
     cta: `Browse ${row.state_name} directory and compare city pages`,
-    urlPattern: '/senior-living/[state]/',
+    urlPattern: '/assisted-living/[state]/',
     briefType: 'state-programmatic'
   };
 };
@@ -127,8 +127,8 @@ const buildCityBrief = (row: KeywordMapRow) => {
   const h1 = `Senior Care in ${row.city_name}, ${row.state_abbr}`;
   const introHook = `Families searching for ${row.primary_keyword} can use this page to compare assisted living, memory care, nursing homes, and independent living in one local view.`;
   const internalLinks = [
-    `/senior-living/${row.state_slug}/`,
-    `/states/${row.state_slug}/regulations`,
+    `/assisted-living/${row.state_slug}/`,
+    `/regulations/${row.state_slug}`,
     `/states/${row.state_slug}/medicaid`,
     `/states/${row.state_slug}/ombudsman`,
     `/search?state=${encodeURIComponent(row.state_abbr)}&city=${encodeURIComponent(row.city_name)}`
@@ -144,7 +144,7 @@ const buildCityBrief = (row: KeywordMapRow) => {
     schemaFocus: 'WebPage | BreadcrumbList | ItemList | FAQPage',
     wordCountTarget: '900-1400',
     cta: `Browse ${row.city_name} directory and compare licensed communities`,
-    urlPattern: '/senior-living/[state]/[city]/assisted-living/',
+    urlPattern: '/assisted-living/[state]/[city]/',
     briefType: 'city-programmatic'
   };
 };

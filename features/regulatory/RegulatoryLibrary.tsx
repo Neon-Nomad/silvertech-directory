@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Search, Scale } from 'lucide-react';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { ALL_STATES } from '@/src/data/states';
 
 export const RegulatoryLibrary: React.FC = () => {
@@ -35,13 +36,29 @@ export const RegulatoryLibrary: React.FC = () => {
           name="description"
           content="The complete national database of senior living regulations, Medicaid programs, and licensing authorities for all 50 states."
         />
-        <link rel="canonical" href="https://silvertechdirectory.com/regulatory-library" />
+        <link rel="canonical" href="https://silvertechdirectory.com/regulations/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Regulations', item: 'https://silvertechdirectory.com/regulations/' },
+            ],
+          })}
+        </script>
       </Helmet>
 
       <div className="bg-warm-white min-h-screen">
         {/* ── Hero ── */}
         <section className="bg-warm-gray border-b border-slate-200">
           <div className="max-w-[1200px] mx-auto px-6 py-16 md:py-20">
+            <Breadcrumbs
+              items={[
+                { label: 'Home', path: '/' },
+                { label: 'Regulations', path: '/regulations/' },
+              ]}
+            />
             <span className="text-sm font-bold uppercase tracking-[0.3em] text-gold mb-4 block">
               50 State Directory
             </span>
@@ -86,7 +103,7 @@ export const RegulatoryLibrary: React.FC = () => {
                     {groupedStates[letter].map((state) => (
                       <Link
                         key={state.slug}
-                        to={`/states/${state.slug}/regulations`}
+                        to={`/regulations/${state.slug}/`}
                         className="bg-white border border-slate-200 rounded-xl p-5 hover:border-gold hover:shadow-md transition-all group"
                       >
                         <div className="flex items-start gap-4">

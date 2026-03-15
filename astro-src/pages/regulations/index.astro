@@ -1,0 +1,39 @@
+---
+import Base from '../../layouts/Base.astro';
+import { ALL_STATES } from '../../../src/data/states';
+
+const title = 'Regulations | SilverTech Directory';
+const description = 'Browse senior living regulations, licensing references, and Medicaid guidance by state.';
+const canonical = 'https://silvertechdirectory.com/regulations/';
+---
+<Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
+
+  <div class="container sl-page">
+    <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span>Regulations</span>
+    </nav>
+
+    <section class="sl-hero">
+      <p class="sl-eyebrow">Regulatory Library</p>
+      <h1>Browse Regulations by State</h1>
+      <p>
+        Select a state to review senior living regulations, licensing references, and public assistance guidance.
+      </p>
+    </section>
+
+    <section class="sl-section" style="margin-top:0.9rem;">
+      <h2>States</h2>
+      <div class="sl-nearby-grid" style="grid-template-columns:repeat(4,minmax(0,1fr));">
+        {ALL_STATES.map((state) => (
+          <a href={`/regulations/${state.slug}/`}>
+            <strong>{state.name}</strong>
+            <span>Regulatory hub</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+</Base>

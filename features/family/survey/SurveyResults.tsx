@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Lock, Star, CheckCircle, Phone } from 'lucide-react';
+import { Lock, Star, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Helmet } from 'react-helmet-async';
 
@@ -48,7 +48,7 @@ export const SurveyResults: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {topMatches.map((match, index) => (
+          {topMatches.map((match) => (
             <div key={match.id} className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 relative">
               <div className="absolute top-4 right-4 bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded-full flex items-center">
                 <Star className="w-3 h-3 mr-1 fill-current" /> {match.score}% Match

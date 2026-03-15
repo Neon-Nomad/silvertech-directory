@@ -7,7 +7,10 @@ interface LicensingAuthorityCardProps {
   variant?: 'compact' | 'full';
 }
 
-export const LicensingAuthorityCard: React.FC<LicensingAuthorityCardProps> = ({ authority, variant = 'compact' }) => {
+export const LicensingAuthorityCard: React.FC<LicensingAuthorityCardProps> = ({
+  authority,
+  variant: _variant = 'compact',
+}) => {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
       <div className="bg-slate-50 p-4 border-b border-slate-100 flex items-start gap-3">

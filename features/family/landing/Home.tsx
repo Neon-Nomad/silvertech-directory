@@ -6,15 +6,11 @@ import {
   ShieldCheck,
   BadgeCheck,
   Search,
-  Heart,
   ArrowRight,
   DollarSign,
   PhoneOff,
   Building2,
   CheckCircle,
-  Users,
-  User,
-  GitCompareArrows,
 } from 'lucide-react';
 import { useGeolocation } from '@/src/hooks/useGeolocation';
 import { getLocationSuggestions, LocationSuggestion } from '@/src/utils/locationSuggestions';
