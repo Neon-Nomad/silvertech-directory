@@ -6,10 +6,15 @@ import { ALL_STATES } from '../../../../src/data/states';
 
 type RegulationPayload = {
   licensing_content?: string;
+  medicaid_content?: string;
+  ombudsman_content?: string;
   complaints_content?: string;
+  veterans_content?: string;
   contacts_json?: {
     licensing?: { name?: string; phone?: string; website?: string };
     ombudsman?: { name?: string; phone?: string; website?: string };
+    medicaid?: { name?: string; phone?: string; website?: string };
+    elderAbuse?: { name?: string; phone?: string; website?: string };
   };
 };
 
@@ -31,31 +36,175 @@ if (fs.existsSync(regulationFilePath)) {
   payload = JSON.parse(fs.readFileSync(regulationFilePath, 'utf-8')) as RegulationPayload;
 }
 
-const stripMarkdown = (input: string): string =>
-  input
-    .replace(/^#{1,6}\s+/gm, '')
-    .replace(/\[(.*?)\]\([^)]+\)/g, '$1')
-    .replace(/\*\*(.*?)\*\*/g, '$1')
-    .replace(/\*(.*?)\*/g, '$1')
-    .replace(/`([^`]+)`/g, '$1')
-    .replace(/\n{3,}/g, '\n\n')
-    .trim();
+// Converts markdown to semantic HTML, preserving heading hierarchy, links,
+// bold, lists, and blockquotes. Tables are converted to plain paragraphs.
+const mdToHtml = (md: string): string => {
+  if (!md) return '';
 
-const paragraphs = stripMarkdown(payload.licensing_content || payload.complaints_content || '')
-  .split(/\n{2,}/)
-  .map((paragraph) => paragraph.trim())
-  .filter((paragraph) => paragraph.length > 80)
-  .slice(0, 8);
+  const lines = md.split('\n');
+  const out: string[] = [];
+  let inList = false;
+  let listType = '';
 
-const title = `${stateMeta.name} Regulations | SilverTech Directory`;
-const description = `Licensing, complaint, and oversight reference page for senior care facilities in ${stateMeta.name}.`;
+  const flushList = () => {
+    if (inList) {
+      out.push(`</${listType}>`);
+      inList = false;
+      listType = '';
+    }
+  };
+
+  const escHtml = (s: string) =>
+    s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+  const inlineFormat = (s: string): string =>
+    s
+      .replace(/\*\*\*(.+?)\*\*\*/g, '<strong>$1</strong>')
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*([^*\n]+?)\*/g, '<em>$1</em>')
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(
+        /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,
+        '<a href="$2" target="_blank" rel="noopener noreferrer nofollow">$1</a>',
+      );
+
+  for (let i = 0; i < lines.length; i++) {
+    const raw = lines[i];
+    const line = raw.trimEnd();
+
+    // Skip table rows and separators
+    if (/^\|.*\|/.test(line) || /^[-| :]+$/.test(line)) {
+      flushList();
+      continue;
+    }
+
+    // Headings — shift down one level since H1 is the page title
+    const headingMatch = line.match(/^(#{1,6})\s+(.+)$/);
+    if (headingMatch) {
+      flushList();
+      const depth = Math.min(headingMatch[1].length + 1, 5); // h1→h2, h2→h3, etc.
+      const tag = `h${depth}`;
+      out.push(`<${tag}>${inlineFormat(escHtml(headingMatch[2]))}</${tag}>`);
+      continue;
+    }
+
+    // Blockquote
+    const bqMatch = line.match(/^>\s*(.*)$/);
+    if (bqMatch) {
+      flushList();
+      out.push(`<blockquote><p>${inlineFormat(escHtml(bqMatch[1]))}</p></blockquote>`);
+      continue;
+    }
+
+    // Horizontal rule
+    if (/^(\*{3,}|-{3,}|_{3,})$/.test(line.trim())) {
+      flushList();
+      out.push('<hr>');
+      continue;
+    }
+
+    // Unordered list item
+    const ulMatch = line.match(/^\s*[-*+]\s+(.+)$/);
+    if (ulMatch) {
+      if (!inList || listType !== 'ul') {
+        flushList();
+        out.push('<ul>');
+        inList = true;
+        listType = 'ul';
+      }
+      out.push(`<li>${inlineFormat(escHtml(ulMatch[1]))}</li>`);
+      continue;
+    }
+
+    // Ordered list item
+    const olMatch = line.match(/^\s*\d+\.\s+(.+)$/);
+    if (olMatch) {
+      if (!inList || listType !== 'ol') {
+        flushList();
+        out.push('<ol>');
+        inList = true;
+        listType = 'ol';
+      }
+      out.push(`<li>${inlineFormat(escHtml(olMatch[1]))}</li>`);
+      continue;
+    }
+
+    // Blank line
+    if (!line.trim()) {
+      flushList();
+      out.push('');
+      continue;
+    }
+
+    // Regular paragraph line
+    flushList();
+    out.push(inlineFormat(escHtml(line)));
+  }
+
+  flushList();
+
+  // Wrap consecutive non-tag lines into <p> blocks
+  const result: string[] = [];
+  let pBuf: string[] = [];
+
+  const flushP = () => {
+    if (pBuf.length) {
+      result.push(`<p>${pBuf.join(' ')}</p>`);
+      pBuf = [];
+    }
+  };
+
+  for (const line of out) {
+    if (!line) {
+      flushP();
+      continue;
+    }
+    if (/^<(h[2-5]|ul|ol|li|blockquote|hr|\/ul|\/ol)/.test(line)) {
+      flushP();
+      result.push(line);
+    } else {
+      pBuf.push(line);
+    }
+  }
+  flushP();
+
+  return result.join('\n');
+};
+
+const SECTIONS = [
+  { key: 'licensing_content' as const, label: 'Licensing & Oversight', slug: 'licensing', kicker: 'State Authority' },
+  { key: 'medicaid_content' as const, label: 'Medicaid & Long-Term Care Programs', slug: 'medicaid', kicker: 'Public Benefits' },
+  { key: 'ombudsman_content' as const, label: 'Ombudsman & Resident Advocacy', slug: 'ombudsman', kicker: 'Resident Rights' },
+  { key: 'complaints_content' as const, label: 'Filing a Complaint', slug: 'complaints', kicker: 'Accountability' },
+  { key: 'veterans_content' as const, label: 'Veterans Benefits & Long-Term Care', slug: 'veterans', kicker: 'Veterans Resources' },
+];
+
+const activeSections = SECTIONS.filter((s) => payload[s.key]);
+const renderedSections = activeSections.map((s) => ({
+  ...s,
+  html: mdToHtml(payload[s.key] || ''),
+}));
+
+const title = `${stateMeta.name} Senior Care Regulations | Licensing, Medicaid & Oversight`;
+const description = `Complete ${stateMeta.name} senior care regulatory guide: licensing authority, Medicaid programs, ombudsman contacts, complaint process, and veterans benefits for assisted living and nursing homes.`;
 const canonical = `https://silvertechdirectory.com/regulations/${stateMeta.slug}/`;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Regulations', item: 'https://silvertechdirectory.com/regulations/' },
+    { '@type': 'ListItem', position: 3, name: stateMeta.name, item: canonical },
+  ],
+};
 ---
 <Base title={title} description={description} canonical={canonical}>
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
   <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
 
   <div class="container sl-page sl-state-page">
     <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
@@ -68,7 +217,7 @@ const canonical = `https://silvertechdirectory.com/regulations/${stateMeta.slug}
 
     <section class="sl-state-hero">
       <div class="sl-state-hero-bg">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIay462NKLnyaxp-HnnPP-CW4Ls1yZsxsOfDgueTLNK9tB5eFufma01fEMzmmC8CEQojygVXyBNQw-2DnX5ncPHhYFJWH7_EPakuVBM4GN8cw9GGMpJQdBEZMVCEzTHBedwK2WXayYapdMkrHS6Oe-1T986Z8gejWVY3zCK9CqPjT2EQ1gB91OLJGV38FzsGBG1mreuuHPUvP1mvuXS4WU7qS9y5ouoiPK2hw3bWUPMn2dWwWTg8vrOVdKLjW1RHBbGJtTMzZA5w" alt={`${stateMeta.name} flag texture`} />
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2000" alt={`${stateMeta.name} senior care regulations`} />
       </div>
       <div class="sl-state-hero-overlay"></div>
       <div class="sl-state-hero-copy">
@@ -81,11 +230,11 @@ const canonical = `https://silvertechdirectory.com/regulations/${stateMeta.slug}
           <span class="sl-state-hero-accent">Regulations</span>
         </h1>
         <p class="sl-state-hero-lead">
-          Licensing, complaint, and oversight reference page for senior care facilities in {stateMeta.name}. Built to help families verify trust signals and understand the state oversight layer.
+          Licensing authority, Medicaid programs, ombudsman contacts, complaint processes, and veterans benefits for senior care facilities in {stateMeta.name}.
         </p>
         <div class="sl-state-hero-actions">
           <a class="sl-btn sl-btn-primary" href={`/assisted-living/${stateMeta.slug}/`}>View {stateMeta.name} Directory</a>
-          <a class="sl-btn sl-btn-secondary" href="#regulatory-summary">Read Oversight Rules</a>
+          <a class="sl-btn sl-btn-secondary" href="#licensing">Read Oversight Rules</a>
         </div>
       </div>
     </section>
@@ -107,53 +256,168 @@ const canonical = `https://silvertechdirectory.com/regulations/${stateMeta.slug}
         <p class="sl-state-stat-note">State intake channels</p>
       </article>
       <article class="sl-state-stat">
-        <p class="sl-state-stat-value">Public</p>
-        <p class="sl-state-stat-label">Inspections</p>
-        <p class="sl-state-stat-note">Historical records access</p>
+        <p class="sl-state-stat-value">{activeSections.length}</p>
+        <p class="sl-state-stat-label">Topic Areas</p>
+        <p class="sl-state-stat-note">Full regulatory coverage</p>
       </article>
     </section>
 
-    <section class="sl-state-overview" id="regulatory-summary">
-      <div class="sl-state-section-head">
-        <div>
-          <p class="sl-state-section-kicker">Oversight Layer</p>
-          <h2>Regulatory Summary</h2>
+    {activeSections.length > 1 && (
+      <nav class="sl-reg-nav" aria-label="Regulation sections">
+        <p class="sl-reg-nav-label">Jump to section</p>
+        <div class="sl-reg-nav-links">
+          {activeSections.map((s) => (
+            <a href={`#${s.slug}`}>{s.label}</a>
+          ))}
         </div>
-      </div>
-      <div class="sl-state-overview-copy" style="grid-template-columns: 2fr 1fr; gap: 3rem;">
-        <div style="display: grid; gap: 1rem;">
-          {paragraphs.length > 0 ? (
-            paragraphs.map((paragraph) => <p>{paragraph}</p>)
-          ) : (
-            <p>
-              Regulatory summary content is being refreshed for {stateMeta.name}. Use official licensing and ombudsman resources while that update completes.
-            </p>
-          )}
-        </div>
-        <aside>
-          <div class="sl-state-trust-callout">
-            <strong>Official Contacts</strong>
-            <ul class="sl-pill-list" style="margin-top: 1rem; border: 0; padding: 0;">
-              <li style="border: 0; padding: 0; margin-bottom: 1.5rem; background: transparent;">
-                <strong style="color: #f5d08d; font-size: 0.8rem; text-transform: uppercase;">Licensing Authority</strong>
-                <div style="color: #fff; margin-top: 0.25rem;">{payload.contacts_json?.licensing?.name || 'State licensing office'}</div>
-                {payload.contacts_json?.licensing?.phone ? <div style="color: rgba(248, 239, 223, 0.7);">{payload.contacts_json.licensing.phone}</div> : null}
-                {payload.contacts_json?.licensing?.website ? (
-                  <a href={payload.contacts_json.licensing.website} target="_blank" rel="noopener noreferrer nofollow" style="color: #f5d08d; font-weight: 700; font-size: 0.8rem; text-decoration: underline;">Visit website</a>
-                ) : null}
-              </li>
-              <li style="border: 0; padding: 0; background: transparent;">
-                <strong style="color: #f5d08d; font-size: 0.8rem; text-transform: uppercase;">Ombudsman Program</strong>
-                <div style="color: #fff; margin-top: 0.25rem;">{payload.contacts_json?.ombudsman?.name || 'State ombudsman program'}</div>
-                {payload.contacts_json?.ombudsman?.phone ? <div style="color: rgba(248, 239, 223, 0.7);">{payload.contacts_json.ombudsman.phone}</div> : null}
-                {payload.contacts_json?.ombudsman?.website ? (
-                  <a href={payload.contacts_json.ombudsman.website} target="_blank" rel="noopener noreferrer nofollow" style="color: #f5d08d; font-weight: 700; font-size: 0.8rem; text-decoration: underline;">Visit website</a>
-                ) : null}
-              </li>
-            </ul>
+      </nav>
+    )}
+
+    {renderedSections.map((section) => (
+      <section class="sl-reg-section" id={section.slug} aria-labelledby={`${section.slug}-heading`}>
+        <div class="sl-state-section-head">
+          <div>
+            <p class="sl-state-section-kicker">{section.kicker}</p>
+            <h2 id={`${section.slug}-heading`}>{section.label}</h2>
           </div>
-        </aside>
+          <a class="sl-state-section-link" href={`/assisted-living/${stateMeta.slug}/`}>
+            {stateMeta.name} Assisted Living Directory
+          </a>
+        </div>
+        <div class="sl-reg-content prose" set:html={section.html} />
+      </section>
+    ))}
+
+    {activeSections.length === 0 && (
+      <section class="sl-state-overview" id="regulatory-summary">
+        <div class="sl-state-section-head">
+          <div>
+            <p class="sl-state-section-kicker">Oversight Layer</p>
+            <h2>Regulatory Summary</h2>
+          </div>
+        </div>
+        <p>Regulatory content for {stateMeta.name} is being updated. Use official licensing and ombudsman resources in the meantime.</p>
+      </section>
+    )}
+
+    <section class="sl-state-resources">
+      <div class="sl-state-resources-copy">
+        <p class="sl-state-section-kicker">Official Contacts</p>
+        <h2>{stateMeta.name} Regulatory Contacts</h2>
+        <p>Direct lines to the state agencies that license, inspect, and oversee senior care facilities in {stateMeta.name}.</p>
+      </div>
+      <div class="sl-state-resource-grid">
+        {payload.contacts_json?.licensing?.name && (
+          <div class="sl-state-resource-card">
+            <strong>Licensing Authority</strong>
+            <span>{payload.contacts_json.licensing.name}</span>
+            {payload.contacts_json.licensing.phone && <span>{payload.contacts_json.licensing.phone}</span>}
+            {payload.contacts_json.licensing.website && (
+              <a href={payload.contacts_json.licensing.website} target="_blank" rel="noopener noreferrer nofollow">Visit website</a>
+            )}
+          </div>
+        )}
+        {payload.contacts_json?.ombudsman?.name && (
+          <div class="sl-state-resource-card">
+            <strong>Ombudsman Program</strong>
+            <span>{payload.contacts_json.ombudsman.name}</span>
+            {payload.contacts_json.ombudsman.phone && <span>{payload.contacts_json.ombudsman.phone}</span>}
+            {payload.contacts_json.ombudsman.website && (
+              <a href={payload.contacts_json.ombudsman.website} target="_blank" rel="noopener noreferrer nofollow">Visit website</a>
+            )}
+          </div>
+        )}
+        {payload.contacts_json?.medicaid?.name && (
+          <div class="sl-state-resource-card">
+            <strong>Medicaid Office</strong>
+            <span>{payload.contacts_json.medicaid.name}</span>
+            {payload.contacts_json.medicaid.phone && <span>{payload.contacts_json.medicaid.phone}</span>}
+            {payload.contacts_json.medicaid.website && (
+              <a href={payload.contacts_json.medicaid.website} target="_blank" rel="noopener noreferrer nofollow">Visit website</a>
+            )}
+          </div>
+        )}
+        <div class="sl-state-resource-card">
+          <strong>{stateMeta.name} Care Directory</strong>
+          <span>Browse licensed senior care facilities by city and care type.</span>
+          <a href={`/assisted-living/${stateMeta.slug}/`}>View assisted living directory</a>
+        </div>
       </div>
     </section>
+
   </div>
 </Base>
+
+<style>
+.sl-reg-nav {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(226,213,187,0.15);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.sl-reg-nav-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(248,239,223,0.5);
+  white-space: nowrap;
+}
+.sl-reg-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+.sl-reg-nav-links a {
+  font-size: 0.875rem;
+  color: #f5d08d;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(245,208,141,0.3);
+}
+.sl-reg-nav-links a:hover { border-bottom-color: #f5d08d; }
+
+.sl-reg-section {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(226,213,187,0.1);
+}
+.sl-reg-section:last-of-type { border-bottom: none; }
+
+.sl-reg-content {
+  max-width: 72ch;
+  line-height: 1.75;
+  color: rgba(248,239,223,0.88);
+}
+.sl-reg-content h2 { font-size: 1.4rem; color: #fffaf0; margin: 2rem 0 0.75rem; }
+.sl-reg-content h3 { font-size: 1.15rem; color: #f8efdf; margin: 1.75rem 0 0.5rem; }
+.sl-reg-content h4 { font-size: 1rem; color: #f5d08d; margin: 1.5rem 0 0.4rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.sl-reg-content h5 { font-size: 0.95rem; color: rgba(248,239,223,0.7); margin: 1rem 0 0.25rem; }
+.sl-reg-content p { margin: 0 0 1rem; }
+.sl-reg-content ul, .sl-reg-content ol { margin: 0.5rem 0 1rem 1.5rem; }
+.sl-reg-content li { margin-bottom: 0.4rem; }
+.sl-reg-content strong { color: #fffaf0; }
+.sl-reg-content a { color: #f5d08d; text-decoration: underline; }
+.sl-reg-content a:hover { color: #fff; }
+.sl-reg-content blockquote {
+  border-left: 3px solid #f5d08d;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  color: rgba(248,239,223,0.7);
+  font-style: italic;
+}
+.sl-reg-content code {
+  background: rgba(255,255,255,0.08);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+.sl-reg-content hr {
+  border: none;
+  border-top: 1px solid rgba(226,213,187,0.15);
+  margin: 2rem 0;
+}
+</style>
