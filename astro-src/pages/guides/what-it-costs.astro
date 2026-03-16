@@ -1,0 +1,180 @@
+---
+import GuideArticle from '../../components/GuideArticle.astro';
+
+const published = '2026-01-20';
+const modified = '2026-03-16';
+const title = 'What Senior Living Actually Costs | SilverTech Directory';
+const description = 'The true cost of assisted living, memory care, and nursing homes — including care tiers, add-ons, and what the base rate never tells you. Compare communities fairly.';
+const canonical = 'https://silvertechdirectory.com/guides/what-it-costs/';
+const ogImage = 'https://silvertechdirectory.com/hero.png';
+
+const h1 = 'What Senior Living Actually Costs';
+const deck = 'The monthly rate a community quotes during a tour is rarely what families pay. This guide explains how senior living pricing works — base rates, care tiers, add-ons, and how to compare costs fairly across communities.';
+
+const toc = [
+  { id: 'how-pricing-works', label: 'How senior living pricing works' },
+  { id: 'cost-by-care-type', label: 'Costs by care type' },
+  { id: 'care-tiers', label: 'Care level tiers and upcharges' },
+  { id: 'add-ons', label: 'Common add-on fees' },
+  { id: 'move-in-fees', label: 'Move-in and community fees' },
+  { id: 'financial-assistance', label: 'Medicaid, Medicare, and VA benefits' },
+  { id: 'rate-increases', label: 'Rate increases over time' },
+  { id: 'comparison-checklist', label: 'Cost comparison checklist' },
+];
+
+const faqItems = [
+  {
+    question: 'What is the average monthly cost of assisted living in the United States?',
+    answer: 'The national median cost of assisted living is approximately $4,500–$5,500 per month for a base rate in a standard apartment. However, total monthly costs after care level fees, medication management, and other add-ons commonly run $500–$2,000 per month higher. Urban markets in California, New York, and the Northeast are significantly higher; rural and Midwestern markets can be lower. The base rate quoted on a tour is rarely the all-in monthly figure.',
+  },
+  {
+    question: 'Does Medicare cover assisted living costs?',
+    answer: 'No. Medicare does not cover ongoing assisted living costs. Medicare covers short-term skilled nursing care after a qualifying hospital stay, certain home health services, and some outpatient therapies — but it does not cover custodial care, which is what assisted living primarily provides. Many families are surprised to learn this after assuming Medicare covers senior care broadly.',
+  },
+  {
+    question: 'Does Medicaid cover assisted living?',
+    answer: 'Medicaid may cover some assisted living costs in certain states through Home and Community-Based Services (HCBS) waiver programs. However, coverage, eligibility requirements, and waiting lists vary significantly by state. Some states have robust Medicaid programs that cover a meaningful portion of assisted living costs; others have minimal coverage or long waits. Medicaid is more consistently available for nursing home care than for assisted living.',
+  },
+  {
+    question: 'What is a care level fee in assisted living?',
+    answer: 'A care level fee — also called a care tier surcharge — is a monthly charge added to the base rate based on the level of assistance a resident requires. As a resident\'s needs increase (more help with bathing, medication management, mobility), the community moves them to a higher care tier with a higher monthly fee. These fees typically range from $300 to $2,000 per month above the base rate, and they are one of the most significant drivers of cost increases over time.',
+  },
+  {
+    question: 'What is a community fee in senior living?',
+    answer: 'A community fee is a one-time, typically non-refundable move-in charge that is separate from monthly rent and any security deposit. It commonly ranges from $1,500 to $5,000. It is often described as covering administrative costs, initial care assessment, and unit preparation. Ask whether it is refundable and under what conditions before agreeing to it.',
+  },
+];
+
+const relatedLinks = [
+  { href: '/guides/hidden-costs-of-memory-care/', label: 'Hidden costs of memory care specifically' },
+  { href: '/guides/how-to-choose/', label: 'How to choose a senior living community' },
+  { href: '/regulations/', label: 'State regulations and Medicaid resources' },
+];
+---
+<GuideArticle
+  title={title}
+  description={description}
+  canonical={canonical}
+  h1={h1}
+  deck={deck}
+  published={published}
+  modified={modified}
+  readTime="11 min read"
+  toc={toc}
+  faqItems={faqItems}
+  relatedLinks={relatedLinks}
+  ogImage={ogImage}
+  keywordPills={['senior living cost', 'assisted living pricing', 'memory care cost', 'Medicaid', 'care tiers']}
+>
+
+<section id="how-pricing-works">
+<h2>How senior living pricing works</h2>
+
+<p>Senior living pricing is deliberately complex — not by accident, but because complexity makes apples-to-apples comparison harder. Most communities use a two-part pricing structure: a base rate for housing and standard services, plus separate fees for care level, specific services, and supplies. The base rate is the number that appears in marketing materials and during tours. The all-in monthly cost is often substantially higher.</p>
+
+<p>Understanding this structure before you compare communities is essential. A community with a $4,200 base rate and aggressive care-level surcharges can easily cost more per month than one quoting $5,500 all-in. The only way to compare fairly is to ask each community for the complete written fee schedule and then apply it to the actual care needs of your family member.</p>
+
+<p>Some communities — particularly continuing care retirement communities (CCRCs) and some all-inclusive assisted living models — offer flat-rate pricing that includes all or most care services. These communities typically have higher base rates but more predictable total costs. Understanding which pricing model a community uses is one of the first questions to ask.</p>
+</section>
+
+<section id="cost-by-care-type">
+<h2>Costs by care type</h2>
+
+<p>Monthly costs vary significantly by care type. These ranges reflect national medians and will vary by region, community type, and included services:</p>
+
+<ul>
+  <li><strong>Independent living:</strong> $2,500–$5,000/month. Housing, meals, and amenities. Minimal care services included. Lower cost but no support for daily activities.</li>
+  <li><strong>Assisted living:</strong> $3,500–$6,500/month base rate. Personal care support included. Care level fees typically add $500–$2,000 above the base.</li>
+  <li><strong>Memory care:</strong> $5,000–$8,500/month. Higher due to secured environment, specialized staffing ratios, and dementia-specific programming.</li>
+  <li><strong>Residential care homes:</strong> $3,000–$6,500/month. Often all-inclusive pricing for small-home settings with 6 or fewer residents.</li>
+  <li><strong>Nursing homes (semi-private):</strong> $8,000–$11,500/month. Skilled nursing and 24-hour medical oversight. Medicare covers short-term post-acute stays.</li>
+  <li><strong>CCRCs (independent living entry):</strong> $2,500–$5,500/month plus entrance fee ($100,000–$1M+). Provides access to the full care continuum on one campus.</li>
+</ul>
+
+<p>Urban markets — especially California, New York, Massachusetts, and the Pacific Northwest — run 30–60% above national medians. Rural markets in the South and Midwest run 20–40% below. Geography is often the biggest single driver of cost after care type.</p>
+</section>
+
+<section id="care-tiers">
+<h2>Care level tiers and upcharges</h2>
+
+<p>Care level tiers are the most significant source of cost escalation in assisted living and memory care. Most communities use a 3–5 tier system, where each tier reflects a different level of support intensity. As a resident's needs increase — more assistance with bathing, dressing, mobility, or medication — they move to a higher tier with a higher monthly charge.</p>
+
+<p>The trigger for a tier change is assessed by the community — typically by the director of nursing or a care coordinator — during the initial move-in assessment and periodically thereafter. Ask specifically: who conducts care assessments, how often, and what the process is for disputing an assessment result. Some communities assess conservatively at move-in and reassess upward quickly; others use a more transparent process.</p>
+
+<p>Tier fees typically range from $300 to $700 per tier, with communities using 3–5 tiers. A resident starting at tier 2 who progresses to tier 4 over three years could see their monthly cost increase by $600–$1,400 per month from care tiers alone, in addition to any base rate increases.</p>
+
+<p>Some communities use a different model: a per-service or per-task billing structure instead of care tiers. In this model, each specific service (assistance with shower, medication pass, escort to dining) is billed separately. Ask which model a community uses and request a sample bill for a resident at a care level similar to your family member's current needs.</p>
+</section>
+
+<section id="add-ons">
+<h2>Common add-on fees</h2>
+
+<p>These services are commonly billed separately from the base rate. Not all communities charge for all of these, but asking about each is part of building an accurate cost picture:</p>
+
+<ul>
+  <li><strong>Medication management:</strong> $150–$600/month. May be flat or per-medication. One of the most universal add-ons in assisted living and memory care.</li>
+  <li><strong>Incontinence supplies:</strong> $50–$200/month. Sometimes included; often billed separately or as part of a supply fee.</li>
+  <li><strong>Laundry service:</strong> $50–$150/month if not included in the base rate.</li>
+  <li><strong>Transportation:</strong> Per-trip charges or a monthly transportation package, typically $50–$150/month for regular use.</li>
+  <li><strong>Personalized care services:</strong> One-on-one redirection, companion care, or special supervision for residents with behavioral needs — often billed at $25–$40/hour above the tier fee.</li>
+  <li><strong>Physical, occupational, or speech therapy:</strong> Billed per session. May be covered by Medicare Part B if medically necessary, but the community's billing practices vary.</li>
+  <li><strong>Guest meals:</strong> $10–$25 per guest meal, charged when family members join for dining.</li>
+  <li><strong>Respite stays:</strong> Short-term stays (1–30 days) are typically billed at a premium daily rate above the standard monthly equivalent.</li>
+</ul>
+</section>
+
+<section id="move-in-fees">
+<h2>Move-in and community fees</h2>
+
+<p>Before the first month begins, most communities charge one or more of these upfront costs:</p>
+
+<ul>
+  <li><strong>Community fee:</strong> $1,500–$5,000. One-time, typically non-refundable. Covers administrative onboarding, initial care assessment, and sometimes unit preparation. Ask specifically about refundability and under what circumstances any portion is returned.</li>
+  <li><strong>Security deposit:</strong> One month's base rate is common. Typically refundable at move-out, minus documented charges for damages or cleaning.</li>
+  <li><strong>Initial care assessment fee:</strong> Some communities charge separately for the initial nursing assessment ($250–$500). Others include it in the community fee.</li>
+  <li><strong>Apartment preparation fee:</strong> If the unit is freshly painted or carpeted at move-in, some communities pass the cost to the incoming resident. Ask whether this applies.</li>
+</ul>
+
+<p>For CCRCs, the entrance fee structure is dramatically different. Type A (life care) CCRCs require entrance fees ranging from $100,000 to over $1 million, with varying refundability terms. This is an entirely separate financial analysis requiring input from an independent financial advisor and an elder law attorney before any commitment.</p>
+</section>
+
+<section id="financial-assistance">
+<h2>Medicaid, Medicare, and VA benefits</h2>
+
+<p><strong>Medicare</strong> does not cover ongoing assisted living, memory care, or independent living costs. Medicare covers short-term skilled nursing care after a qualifying three-day hospital stay (up to 100 days per benefit period, with copays beginning on day 21), and some outpatient therapy and home health services. It does not cover custodial care — the daily assistance with bathing, dressing, and meals that defines assisted living.</p>
+
+<p><strong>Medicaid</strong> is means-tested and covers long-term care for individuals who meet financial and medical eligibility criteria. For nursing homes, Medicaid coverage is more consistently available nationally. For assisted living, Medicaid coverage varies significantly by state — some states have robust Home and Community-Based Services (HCBS) waiver programs that cover assisted living costs; others have minimal coverage or long waiting lists. If Medicaid is a planning consideration, consult an elder law attorney well before assets are depleted, as Medicaid look-back rules can affect transfers made up to five years prior.</p>
+
+<p><strong>Veterans Administration (VA) benefits</strong> may help cover some senior living costs for eligible veterans and their surviving spouses. The Aid and Attendance benefit can provide $1,200–$2,300 per month toward qualifying care costs. Eligibility is based on service history, care need, and financial criteria. Contact a VA-accredited claims agent or elder law attorney to evaluate eligibility — the process is bureaucratically complex but can be financially significant.</p>
+
+<p><strong>Long-term care insurance</strong> may cover assisted living, memory care, or nursing home costs if a policy was purchased before a care need arose. Review the policy carefully for elimination periods (the number of days you pay out-of-pocket before coverage begins), daily benefit amounts, inflation protection, and qualifying care triggers.</p>
+</section>
+
+<section id="rate-increases">
+<h2>Rate increases over time</h2>
+
+<p>Monthly rates in senior living communities increase over time. Annual base rate increases of 3–8% are common across the industry; some communities have increased rates at significantly higher rates in recent years, particularly post-2020. The cumulative effect of compounding rate increases on a multi-year stay can be substantial.</p>
+
+<p>Ask each community you tour for documentation of annual rate increases over the past three to five years. Specifically ask whether rate increases are applied to the base rate only, or also to care level fees and individual service charges. A community with modest base rate increases but aggressive care-level reassessments can be just as costly over time as one with higher published increases.</p>
+
+<p>For residents on fixed incomes, rate predictability matters as much as the starting level. A community with a higher initial rate and documented, moderate annual increases can be a more financially stable choice than one with a lower starting rate and a pattern of large annual jumps.</p>
+</section>
+
+<section id="comparison-checklist">
+<h2>Cost comparison checklist</h2>
+
+<p>When comparing costs across communities, request and review each of the following before making a decision:</p>
+
+<ul>
+  <li>Complete written fee schedule (not just the base rate quote)</li>
+  <li>Care level tier structure and the fee for each tier</li>
+  <li>Current care level assessment for your family member and the projected tier</li>
+  <li>Medication management fee structure</li>
+  <li>List of commonly billed add-on services and their rates</li>
+  <li>Move-in fees, community fee refund policy, and security deposit terms</li>
+  <li>Annual rate increase history for the past three to five years</li>
+  <li>Documentation of what happens if a resident runs out of funds (Medicaid acceptance, benevolence fund, or neither)</li>
+</ul>
+</section>
+
+</GuideArticle>

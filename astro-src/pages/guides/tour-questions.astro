@@ -1,0 +1,183 @@
+---
+import GuideArticle from '../../components/GuideArticle.astro';
+
+const published = '2026-01-25';
+const modified = '2026-03-16';
+const title = 'Questions to Ask on a Senior Living Tour | SilverTech Directory';
+const description = '20+ questions to ask when touring an assisted living community, memory care facility, or nursing home. Focused on safety, staffing, cost transparency, and care quality.';
+const canonical = 'https://silvertechdirectory.com/guides/tour-questions/';
+const ogImage = 'https://silvertechdirectory.com/hero.png';
+
+const h1 = 'Questions to Ask on a Senior Living Tour';
+const deck = 'Most tour scripts are designed to move you toward a deposit. These questions are designed to move you toward clarity. Use them to distinguish communities that can explain themselves from those that rely on decor and distraction.';
+
+const toc = [
+  { id: 'before-you-go', label: 'Before you tour' },
+  { id: 'staffing-questions', label: 'Staffing and care quality' },
+  { id: 'safety-oversight', label: 'Safety and regulatory standing' },
+  { id: 'daily-life-questions', label: 'Daily life and environment' },
+  { id: 'cost-questions', label: 'Costs and financial terms' },
+  { id: 'care-transitions', label: 'Care transitions and discharge' },
+  { id: 'memory-care-questions', label: 'Memory care specific questions' },
+  { id: 'after-tour', label: 'After the tour' },
+];
+
+const faqItems = [
+  {
+    question: 'What is the most important question to ask on a senior living tour?',
+    answer: 'The most revealing single question is: "What is the staff-to-resident ratio on the overnight shift?" Most communities lead with their best shifts. The overnight ratio — when fewer staff are present and residents are most vulnerable — tells you the most about how the community actually operates when it is not performing for prospective families.',
+  },
+  {
+    question: 'What should I bring on a senior living tour?',
+    answer: 'Bring a notebook or phone for taking notes, and write down your observations immediately after each tour — details fade quickly and communities blur together under emotional pressure. Bring a list of the specific care needs of your family member so you can ask whether the community can manage each one. Ask for the written fee schedule and a sample residency agreement to review at home.',
+  },
+  {
+    question: 'Is it okay to ask to speak with current residents?',
+    answer: 'Yes — and you should. Ask specifically to speak with a current resident\'s family member, not a resident selected by the community as a reference. Walk the common areas and introduce yourself to families you see there. Families who are genuinely satisfied will tell you; families who have concerns will usually tell you those too if you ask directly.',
+  },
+  {
+    question: 'Should I visit a senior living community more than once before deciding?',
+    answer: 'Yes. Visit at least once during a normal weekday — not a scheduled tour event or weekend — to see the community as it actually operates. Observe during a transition time if possible (meal service, a shift change) when the staffing model shows itself most clearly. Many families make their best assessments on a second visit when the initial sales pressure has passed.',
+  },
+];
+
+const relatedLinks = [
+  { href: '/guides/how-to-choose/', label: 'How to choose a senior living community' },
+  { href: '/guides/hidden-costs-of-memory-care/', label: 'Hidden costs of memory care' },
+  { href: '/guides/what-it-costs/', label: 'What senior living actually costs' },
+];
+---
+<GuideArticle
+  title={title}
+  description={description}
+  canonical={canonical}
+  h1={h1}
+  deck={deck}
+  published={published}
+  modified={modified}
+  readTime="9 min read"
+  toc={toc}
+  faqItems={faqItems}
+  relatedLinks={relatedLinks}
+  ogImage={ogImage}
+  keywordPills={['tour questions', 'assisted living tour', 'senior living questions', 'memory care tour', 'what to ask']}
+>
+
+<section id="before-you-go">
+<h2>Before you tour</h2>
+
+<p>The most effective tour preparation takes about 20 minutes. Look up the community's license number on SilverTech and cross-reference it with the state licensing database. Pull the most recent inspection report. For nursing homes, check the CMS Five-Star Quality Rating and read the health inspection sub-rating specifically.</p>
+
+<p>You don't need to have a confrontational conversation about what you found. But knowing the regulatory history before you walk in changes what you notice on the tour. A community with a recent deficiency related to medication management will show you — in the way staff talk about it, or don't — whether that issue has been addressed.</p>
+
+<p>Bring a written list of your family member's current care needs: which activities of daily living require assistance, any behavioral symptoms, current medications, and mobility status. Ask whether the community can specifically manage each of these. A vague answer of "of course" is not the same as a specific explanation of how.</p>
+</section>
+
+<section id="staffing-questions">
+<h2>Staffing and care quality questions</h2>
+
+<p>These are the most important questions on the tour. Ask them directly. Watch how they are answered.</p>
+
+<ul>
+  <li><strong>What is the staff-to-resident ratio on the day shift, evening shift, and overnight?</strong> You want the numbers, not a description. "We have excellent staffing" is not an answer.</li>
+  <li><strong>Are those ratios guaranteed in my residency agreement, or are they targets?</strong></li>
+  <li><strong>How long has the current director of nursing been in this role?</strong> And the one before? A pattern of short tenures is a warning sign.</li>
+  <li><strong>What happens when a caregiver calls out sick? Do you use agency staff for regular coverage?</strong></li>
+  <li><strong>What is the average length of employment for caregivers on this floor?</strong> High turnover among direct care staff is the leading cause of inconsistent care delivery.</li>
+  <li><strong>Are nurses on-site 24/7, or on-call?</strong> In assisted living, this is often on-call. Understand who responds to a medical event at 2 a.m.</li>
+  <li><strong>What is the process when a resident's condition changes and more care is needed?</strong> Who assesses it, how often, and what does the family notification process look like?</li>
+</ul>
+</section>
+
+<section id="safety-oversight">
+<h2>Safety and regulatory standing</h2>
+
+<ul>
+  <li><strong>Can I see your current state license?</strong></li>
+  <li><strong>Can you provide the most recent state inspection report?</strong> If they hesitate, you can get it yourself from the state licensing agency — but the willingness to provide it without hesitation is its own signal.</li>
+  <li><strong>Have there been any complaints or investigations in the past two years?</strong></li>
+  <li><strong>How do you handle a fall? What is the documentation and family notification process?</strong></li>
+  <li><strong>What is your emergency response protocol — call 911, or do you handle some emergencies internally?</strong></li>
+  <li><strong>How are medications managed and what safeguards prevent medication errors?</strong></li>
+  <li><strong>Who is the owner or operating organization, and are there other communities in the portfolio?</strong> Understanding corporate structure can tell you something about how decisions get made.</li>
+</ul>
+</section>
+
+<section id="daily-life-questions">
+<h2>Daily life and environment</h2>
+
+<ul>
+  <li><strong>Can you walk me through what a typical weekday looks like?</strong> Ask for specifics — when meals happen, what activities are offered, and who facilitates them.</li>
+  <li><strong>Can I see the dining schedule and sample menus?</strong> Ask about alternatives for residents with dietary restrictions.</li>
+  <li><strong>What does a resident do between scheduled activities?</strong> The answer tells you a great deal about the community's philosophy of engagement.</li>
+  <li><strong>How are family members kept informed about a resident's daily status and any changes?</strong></li>
+  <li><strong>What is the visitor policy?</strong> Are there restrictions on visiting hours?</li>
+  <li><strong>Can I bring my family member's pet?</strong> If applicable.</li>
+  <li><strong>What happens if my family member doesn't get along well with a particular staff member or another resident?</strong></li>
+</ul>
+
+<p>Beyond the questions: observe. Are residents visibly engaged or parked in front of a television? Is there visible warmth between staff and residents, or does the interaction feel task-focused? Are common areas in use during your visit? These observations carry more weight than any marketing answer.</p>
+</section>
+
+<section id="cost-questions">
+<h2>Costs and financial terms</h2>
+
+<ul>
+  <li><strong>Can I have the complete written fee schedule today?</strong> Not the base rate — the full schedule including every service that can be billed separately.</li>
+  <li><strong>What is your care level tier structure and what does each tier cost?</strong></li>
+  <li><strong>Based on my family member's current needs, which care tier would they start at?</strong></li>
+  <li><strong>What is the community fee and is any portion refundable?</strong></li>
+  <li><strong>How often have monthly rates increased over the past three years, and by how much?</strong></li>
+  <li><strong>What is your policy on rate increases — is there a cap or is it discretionary?</strong></li>
+  <li><strong>What is the medication management fee structure?</strong></li>
+  <li><strong>What services are typically billed separately that families don't anticipate?</strong> A good community will answer this honestly.</li>
+  <li><strong>What is the move-out notice policy?</strong></li>
+  <li><strong>Can I take the residency agreement home to review before signing?</strong> If the answer is no, walk away.</li>
+</ul>
+</section>
+
+<section id="care-transitions">
+<h2>Care transitions and discharge</h2>
+
+<p>These questions matter especially if you are considering a community for a loved one with a progressive condition.</p>
+
+<ul>
+  <li><strong>What conditions would require a resident to move to a higher level of care or leave the community?</strong> Get specifics, not generalities.</li>
+  <li><strong>How much notice is given before a required discharge?</strong></li>
+  <li><strong>Is there a higher level of care available on this campus or within the same organization?</strong></li>
+  <li><strong>What is the process for a planned transition to skilled nursing after a hospitalization?</strong></li>
+  <li><strong>Does the community have a relationship with specific hospitals or skilled nursing facilities for discharge planning?</strong></li>
+  <li><strong>What happens if a resident runs out of funds?</strong> Does the community accept Medicaid? Is there a benevolence fund? What is the process?</li>
+</ul>
+</section>
+
+<section id="memory-care-questions">
+<h2>Memory care specific questions</h2>
+
+<p>If you are touring a memory care unit or a community with a dedicated memory care wing, add these to your list:</p>
+
+<ul>
+  <li><strong>What specific dementia care training do staff receive and how frequently?</strong> Ask for the name of the training program, not just a general description.</li>
+  <li><strong>How is the secured environment maintained?</strong> Who can enter and exit, and how is elopement prevented?</li>
+  <li><strong>What is the protocol for a resident who becomes agitated or physically combative?</strong></li>
+  <li><strong>How do you handle sundowning?</strong> What staffing adjustments are made in the late afternoon and evening?</li>
+  <li><strong>How are behavioral symptoms documented and communicated to families?</strong></li>
+  <li><strong>What is the ratio of staff with dementia-specific training versus general caregivers?</strong></li>
+  <li><strong>Are there specialized activities designed for different stages of dementia, or is programming one-size-fits-all?</strong></li>
+  <li><strong>At what point would this community no longer be able to manage my family member's condition?</strong></li>
+</ul>
+</section>
+
+<section id="after-tour">
+<h2>After the tour</h2>
+
+<p>Write down your observations immediately. Record the answers you received, the questions that were deflected, and your own impressions of the environment. Note whether residents appeared engaged and cared for, and whether staff interactions with residents seemed genuine or procedural.</p>
+
+<p>If you are seriously considering a community, request a second visit during a different time of day — ideally a weekday afternoon during a meal or activity transition. The community will look different from how it looked during a scheduled tour.</p>
+
+<p>Before signing, review the full residency agreement. If there are complex financial terms — particularly for a CCRC — have it reviewed by an elder law attorney. Ask for references from families of current residents, and then also ask families you encounter independently whether they are satisfied.</p>
+
+<p>A community that answers your questions thoroughly, provides documentation without hesitation, and encourages you to take time to decide is showing you something important about how it operates. A community that creates urgency, deflects specific questions, and pressures you toward a deposit is also showing you something important.</p>
+</section>
+
+</GuideArticle>
