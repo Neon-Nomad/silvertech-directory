@@ -763,6 +763,38 @@ const ensureStore = (): SeniorLivingStore => {
 
 export const getAllFacilities = (): FacilityRecord[] => ensureStore().facilities;
 
+let nearbyCityCache: Map<string, FacilityRecord[]> | null = null;
+
+const buildNearbyCache = (): Map<string, FacilityRecord[]> => {
+  if (nearbyCityCache) return nearbyCityCache;
+  const map = new Map<string, FacilityRecord[]>();
+  for (const f of ensureStore().facilities) {
+    const key = `${f.citySlug}|${f.stateSlug}|${f.primaryCareType}`;
+    const list = map.get(key);
+    if (list) list.push(f);
+    else map.set(key, [f]);
+  }
+  nearbyCityCache = map;
+  return map;
+};
+
+export const getNearbyFacilities = (
+  citySlug: string,
+  stateSlug: string,
+  careType: string,
+  excludeSlug: string,
+  limit = 4,
+): FacilityRecord[] => {
+  const key = `${citySlug}|${stateSlug}|${careType}`;
+  const bucket = buildNearbyCache().get(key) || [];
+  const results: FacilityRecord[] = [];
+  for (const f of bucket) {
+    if (results.length >= limit) break;
+    if (`${f.publicSlug}-${f.publicRouteId}` !== excludeSlug) results.push(f);
+  }
+  return results;
+};
+
 export const getFacilityBySlug = (facilitySlug: string): FacilityRecord | null => {
   const match = facilitySlug.match(/^(.*)-(\d+)$/);
   if (!match) return null;

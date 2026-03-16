@@ -1,6 +1,13 @@
 ---
 import Base from '../../../../layouts/Base.astro';
-import { getFacilityBySlug, getFacilityStaticPaths, getCareTypeBySlug } from '../../../../lib/seniorLivingData';
+import FacilityMapPin from '../../../../components/senior/FacilityMapPin';
+import FacilityQASection from '../../../../components/senior/FacilityQASection';
+import {
+  getFacilityBySlug,
+  getFacilityStaticPaths,
+  getCareTypeBySlug,
+  getNearbyFacilities,
+} from '../../../../lib/seniorLivingData';
 
 export async function getStaticPaths() {
   const { getFacilityStaticPaths } = await import('../../../../lib/seniorLivingData');
@@ -14,10 +21,9 @@ if (!facility) {
   return Astro.redirect('/404');
 }
 
-const careType = getCareTypeBySlug(care!);
-const careLabel = careType?.label || 'Senior Care';
-
+/* ---- Helpers ---- */
 const toDisplayName = (value: string): string => {
+  if (!value) return '';
   if (value !== value.toUpperCase()) return value;
   const uppercaseTokens = new Set([
     'AL','AK','AZ','AR','CA','CO','CT','DC','DE','FL','GA','HI','IA','ID','IL','IN','KS','KY','LA',
@@ -43,16 +49,68 @@ const toDisplayName = (value: string): string => {
   ).join(' ');
 };
 
+const ownershipLabels: Record<string, string> = {
+  for_profit: 'For-Profit',
+  non_profit: 'Non-Profit',
+  government: 'Government',
+  other: 'Other',
+};
+
+const careTypeLabels: Record<string, string> = {
+  'assisted-living': 'Assisted Living',
+  'memory-care': 'Memory Care',
+  'nursing-homes': 'Nursing Home',
+  'independent-living': 'Independent Living',
+  'residential-care': 'Residential Care',
+  'adult-day-services': 'Adult Day Services',
+  'ccrc': 'CCRC',
+};
+
+/* ---- Derived values ---- */
+const careType     = getCareTypeBySlug(care!);
+const careLabel    = careType?.label || 'Senior Care';
 const displayName  = toDisplayName(facility.name);
 const displayCity  = toDisplayName(facility.city);
 const phone        = facility.verifiedPhone || (facility.phone ? facility.phone.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3') : '');
+const addressLine  = [facility.street, displayCity, facility.state, facility.zip].filter(Boolean).join(', ');
+const shortAddress = [displayCity, facility.state].filter(Boolean).join(', ');
 const canonical    = `https://silvertechdirectory.com/${care}/${state}/${city}/${facilitySlug}/`;
 const cityPageUrl  = `/${care}/${state}/${city}/`;
 const carePageUrl  = `/${care}/${state}/`;
+const hasMap       = typeof facility.latitude === 'number' && typeof facility.longitude === 'number'
+                     && Number.isFinite(facility.latitude) && Number.isFinite(facility.longitude);
+const isVerified   = !!(facility.licenseNumber || facility.cmsCertificationNumber);
 
+/* ---- Nearby facilities (same city + care type, up to 4) ---- */
+const selfKey = `${facility.publicSlug}-${facility.publicRouteId}`;
+const nearby = getNearbyFacilities(
+  facility.citySlug,
+  facility.stateSlug,
+  facility.primaryCareType,
+  selfKey,
+  4,
+);
+
+/* ---- SEO metadata ---- */
 const title       = `${displayName} | ${careLabel} in ${displayCity}, ${facility.state}`;
-const description = `${displayName} is a ${careLabel.toLowerCase()} in ${displayCity}, ${facility.state}.${facility.licenseNumber ? ` State license ${facility.licenseNumber}.` : ''} Verified profile on SilverTech Directory.`;
+const description = `${displayName} is a ${careLabel.toLowerCase()} in ${displayCity}, ${facility.state}.${facility.licenseNumber ? ` State license ${facility.licenseNumber}.` : ''} View verified contact info, identifiers, and community questions on SilverTech Directory.`;
 
+/* ---- Auto-generated description paragraph ---- */
+const ownerLabel = ownershipLabels[facility.ownershipBucket] || '';
+const descParts: string[] = [];
+descParts.push(`${displayName} is a ${careLabel.toLowerCase()} located in ${displayCity}, ${facility.state}.`);
+if (facility.street) descParts.push(`The facility is situated at ${facility.street}, ${displayCity}, ${facility.state}${facility.zip ? ' ' + facility.zip : ''}.`);
+if (ownerLabel) descParts.push(`It operates as a ${ownerLabel.toLowerCase()} organization.`);
+if (facility.beds) descParts.push(`The facility has ${facility.beds.toLocaleString()} certified beds.`);
+if (facility.careTypes && facility.careTypes.length > 1) {
+  const labels = facility.careTypes.map((c) => careTypeLabels[c] || c).join(', ');
+  descParts.push(`Care services include: ${labels}.`);
+}
+if (facility.licenseNumber) descParts.push(`State license number: ${facility.licenseNumber}.`);
+if (facility.cmsCertificationNumber) descParts.push(`CMS certification number: ${facility.cmsCertificationNumber}.`);
+const generatedDescription = descParts.join(' ');
+
+/* ---- Schema markup ---- */
 const identifiers: Array<{ '@type': string; name: string; value: string }> = [];
 if (facility.licenseNumber)          identifiers.push({ '@type': 'PropertyValue', name: 'State License Number',      value: facility.licenseNumber });
 if (facility.cmsCertificationNumber) identifiers.push({ '@type': 'PropertyValue', name: 'CMS Certification Number', value: facility.cmsCertificationNumber });
@@ -73,17 +131,18 @@ const facilitySchema = {
     ...(facility.zip  ? { postalCode: facility.zip }         : {}),
     addressCountry: 'US',
   },
+  ...(hasMap ? { geo: { '@type': 'GeoCoordinates', latitude: facility.latitude, longitude: facility.longitude } } : {}),
 };
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home',              item: 'https://silvertechdirectory.com/' },
-    { '@type': 'ListItem', position: 2, name: careLabel,           item: `https://silvertechdirectory.com/${care}/` },
-    { '@type': 'ListItem', position: 3, name: facility.stateName,  item: `https://silvertechdirectory.com${carePageUrl}` },
-    { '@type': 'ListItem', position: 4, name: displayCity,         item: `https://silvertechdirectory.com${cityPageUrl}` },
-    { '@type': 'ListItem', position: 5, name: displayName,         item: canonical },
+    { '@type': 'ListItem', position: 1, name: 'Home',             item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: careLabel,          item: `https://silvertechdirectory.com/${care}/` },
+    { '@type': 'ListItem', position: 3, name: facility.stateName, item: `https://silvertechdirectory.com${carePageUrl}` },
+    { '@type': 'ListItem', position: 4, name: displayCity,        item: `https://silvertechdirectory.com${cityPageUrl}` },
+    { '@type': 'ListItem', position: 5, name: displayName,        item: canonical },
   ],
 };
 ---
@@ -96,13 +155,17 @@ const breadcrumbSchema = {
 >
   <Fragment slot="head">
     <link rel="stylesheet" href="/styles/facility-page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap" rel="stylesheet" />
     <script type="application/ld+json" set:html={JSON.stringify(facilitySchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
-  <div class="container facility-shell">
+  <div class="container fp-shell">
 
-    <nav class="crumbs" aria-label="Breadcrumb">
+    <!-- Breadcrumb -->
+    <nav class="fp-crumbs" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span aria-hidden="true">›</span>
       <a href={`/${care}/`}>{careLabel}</a>
@@ -114,50 +177,407 @@ const breadcrumbSchema = {
       <span>{displayName}</span>
     </nav>
 
-    <div class="hero">
-      <p class="kicker">{careLabel} &mdash; {displayCity}, {facility.state}</p>
-      <h1 class="hero-title">{displayName}</h1>
-      {facility.street
-        ? <p class="subhead">{facility.street}, {displayCity}, {facility.state}{facility.zip ? ` ${facility.zip}` : ''}</p>
-        : <p class="subhead">{displayCity}, {facility.state}</p>
-      }
-      <div class="hero-actions">
-        {phone && (
-          <a class="btn btn-primary" href={`tel:${phone.replace(/\D/g,'')}`}>{phone}</a>
-        )}
-        {facility.websiteUrl && (
-          <a class="btn btn-ghost" href={facility.websiteUrl} target="_blank" rel="noopener noreferrer">Official Website</a>
-        )}
-        {facility.googleMapsUrl && (
-          <a class="btn btn-ghost" href={facility.googleMapsUrl} target="_blank" rel="noopener noreferrer">View on Map</a>
-        )}
-      </div>
-    </div>
+    <div class="fp-layout">
 
-    {(facility.licenseNumber || facility.cmsCertificationNumber || (facility.beds !== null && facility.beds !== undefined)) && (
-      <div class="crawl-priority-signals info-gap">
-        <h2>Verified Identifiers</h2>
-        <ul class="signal-list">
-          {facility.licenseNumber && (
-            <li><strong>State License</strong><br />{facility.licenseNumber}</li>
-          )}
-          {facility.cmsCertificationNumber && (
-            <li><strong>CMS Certification</strong><br />{facility.cmsCertificationNumber}</li>
-          )}
-          {facility.beds !== null && facility.beds !== undefined && (
-            <li><strong>Certified Beds</strong><br />{facility.beds.toLocaleString()}</li>
-          )}
-        </ul>
-      </div>
-    )}
+      <!-- ======== SIDEBAR ======== -->
+      <aside class="fp-sidebar" aria-label="Page sections">
+        <div class="fp-nav-card">
+          <p class="fp-nav-label">On this page</p>
+          <ul class="fp-nav-list">
+            <li><a href="#overview"><span class="fp-nav-icon">⌂</span> Overview</a></li>
+            <li><a href="#identifiers"><span class="fp-nav-icon">✓</span> Identifiers</a></li>
+            <li><a href="#profile"><span class="fp-nav-icon">☰</span> Facility Profile</a></li>
+            <li><a href="#regulatory"><span class="fp-nav-icon">📋</span> Regulatory</a></li>
+            {hasMap && <li><a href="#location"><span class="fp-nav-icon">📍</span> Location</a></li>}
+            <li><a href="#qa"><span class="fp-nav-icon">💬</span> Community Q&amp;A</a></li>
+            {nearby.length > 0 && <li><a href="#nearby"><span class="fp-nav-icon">🏘</span> Nearby</a></li>}
+          </ul>
+        </div>
+      </aside>
 
-    <div class="link-mesh-card">
-      <h2>{careLabel} in {displayCity}</h2>
-      <ul class="link-mesh-list">
-        <li><a href={cityPageUrl}>Browse all {careLabel} in {displayCity}, {facility.state}</a></li>
-        <li><a href={carePageUrl}>{careLabel} across {facility.stateName}</a></li>
-      </ul>
-    </div>
+      <!-- ======== MAIN CONTENT ======== -->
+      <div class="fp-main" id="overview">
 
+        <!-- ---- Hero ---- -->
+        <div class="fp-hero">
+          <p class="fp-hero-kicker">
+            {careLabel} &mdash; {shortAddress}
+            {isVerified && (
+              <span class="fp-verified-badge">✓ Verified Identifiers</span>
+            )}
+          </p>
+          <h1 class="fp-hero-title">{displayName}</h1>
+          <p class="fp-hero-address">
+            {facility.street ? `${facility.street}, ${displayCity}, ${facility.state}${facility.zip ? ' ' + facility.zip : ''}` : `${displayCity}, ${facility.state}`}
+          </p>
+          <div class="fp-hero-actions">
+            {phone && (
+              <a class="fp-btn fp-btn-gold" href={`tel:${phone.replace(/\D/g,'')}`}>
+                ☎ {phone}
+              </a>
+            )}
+            {facility.websiteUrl && (
+              <a class="fp-btn fp-btn-ghost" href={facility.websiteUrl} target="_blank" rel="noopener noreferrer">
+                ↗ Official Website
+              </a>
+            )}
+            {facility.googleMapsUrl && (
+              <a class="fp-btn fp-btn-ghost" href={facility.googleMapsUrl} target="_blank" rel="noopener noreferrer">
+                ↗ View on Map
+              </a>
+            )}
+          </div>
+        </div>
+
+        <!-- ---- Quality Signals (dark metrics card) ---- -->
+        {(facility.beds || facility.licenseNumber || facility.cmsCertificationNumber || facility.ownershipBucket) && (
+          <div class="fp-metrics">
+            <div class="fp-metrics-header">
+              <p class="fp-metrics-title">Official Data &amp; Quality Signals</p>
+            </div>
+            <div class="fp-metrics-grid">
+              {facility.beds && (
+                <div class="fp-metric-item">
+                  <p class="fp-metric-label">Certified Beds</p>
+                  <p class="fp-metric-value">{facility.beds.toLocaleString()}</p>
+                  <p class="fp-metric-sub">Licensed capacity</p>
+                </div>
+              )}
+              {facility.licenseNumber && (
+                <div class="fp-metric-item">
+                  <p class="fp-metric-label">State License</p>
+                  <p class="fp-metric-value" style="font-size:0.88rem">{facility.licenseNumber}</p>
+                  <p class="fp-metric-sub">Active identifier</p>
+                </div>
+              )}
+              {facility.cmsCertificationNumber && (
+                <div class="fp-metric-item">
+                  <p class="fp-metric-label">CMS Certification</p>
+                  <p class="fp-metric-value" style="font-size:0.88rem">{facility.cmsCertificationNumber}</p>
+                  <p class="fp-metric-sub">Medicare / Medicaid</p>
+                </div>
+              )}
+              {facility.ownershipBucket && (
+                <div class="fp-metric-item">
+                  <p class="fp-metric-label">Ownership</p>
+                  <p class="fp-metric-value" style="font-size:0.9rem">{ownershipLabels[facility.ownershipBucket] || facility.ownershipBucket}</p>
+                  <p class="fp-metric-sub">{facility.ownershipType || ''}</p>
+                </div>
+              )}
+              {facility.primaryCareType && (
+                <div class="fp-metric-item">
+                  <p class="fp-metric-label">Primary Care Type</p>
+                  <p class="fp-metric-value" style="font-size:0.88rem">{careTypeLabels[facility.primaryCareType] || facility.primaryCareType}</p>
+                  <p class="fp-metric-sub">{facility.careTypes?.length > 1 ? `+ ${facility.careTypes.length - 1} more` : 'Only type'}</p>
+                </div>
+              )}
+              {facility.lastVerifiedDate && (
+                <div class="fp-metric-item">
+                  <p class="fp-metric-label">Last Verified</p>
+                  <p class="fp-metric-value" style="font-size:0.88rem">{facility.lastVerifiedDate}</p>
+                  <p class="fp-metric-sub">Data currency</p>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        <!-- ---- Verified Identifiers ---- -->
+        {(facility.licenseNumber || facility.cmsCertificationNumber || facility.beds || facility.careTypes?.length > 0) && (
+          <section class="fp-section" id="identifiers">
+            <div class="fp-section-header">
+              <h2 class="fp-section-title">
+                <span class="fp-section-icon">✓</span>
+                Verified Identifiers
+              </h2>
+            </div>
+            <div class="fp-id-grid">
+              {facility.licenseNumber && (
+                <div class="fp-id-pill">
+                  <span class="fp-id-pill-label">State License</span>
+                  <span class="fp-id-pill-value">{facility.licenseNumber}</span>
+                </div>
+              )}
+              {facility.cmsCertificationNumber && (
+                <div class="fp-id-pill">
+                  <span class="fp-id-pill-label">CMS Certification</span>
+                  <span class="fp-id-pill-value">{facility.cmsCertificationNumber}</span>
+                </div>
+              )}
+              {facility.beds && (
+                <div class="fp-id-pill">
+                  <span class="fp-id-pill-label">Certified Beds</span>
+                  <span class="fp-id-pill-value">{facility.beds.toLocaleString()}</span>
+                </div>
+              )}
+              {facility.careTypes?.map((ct) => (
+                <div class="fp-id-pill">
+                  <span class="fp-id-pill-label">Care Type</span>
+                  <span class="fp-id-pill-value">{careTypeLabels[ct] || ct}</span>
+                </div>
+              ))}
+              {facility.ownershipBucket && (
+                <div class="fp-id-pill">
+                  <span class="fp-id-pill-label">Ownership</span>
+                  <span class="fp-id-pill-value">{ownershipLabels[facility.ownershipBucket] || facility.ownershipBucket}</span>
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+
+        <!-- ---- Facility Profile ---- -->
+        <section class="fp-section" id="profile">
+          <div class="fp-section-header">
+            <h2 class="fp-section-title">
+              <span class="fp-section-icon">☰</span>
+              Facility Profile
+            </h2>
+          </div>
+
+          <p class="fp-description">{generatedDescription}</p>
+
+          <table class="fp-data-table">
+            <tbody>
+              {facility.street && (
+                <tr>
+                  <td>Address</td>
+                  <td>{facility.street}, {displayCity}, {facility.state}{facility.zip ? ' ' + facility.zip : ''}</td>
+                </tr>
+              )}
+              {phone && (
+                <tr>
+                  <td>Phone</td>
+                  <td><a href={`tel:${phone.replace(/\D/g,'')}`} style="color:#ca8a04;font-weight:600">{phone}</a></td>
+                </tr>
+              )}
+              {facility.websiteUrl && (
+                <tr>
+                  <td>Website</td>
+                  <td><a href={facility.websiteUrl} target="_blank" rel="noopener noreferrer" style="color:#ca8a04;font-weight:600">Visit official site ↗</a></td>
+                </tr>
+              )}
+              {facility.beds && (
+                <tr>
+                  <td>Bed Capacity</td>
+                  <td>{facility.beds.toLocaleString()} certified beds</td>
+                </tr>
+              )}
+              {facility.ownershipBucket && (
+                <tr>
+                  <td>Ownership Type</td>
+                  <td>{ownershipLabels[facility.ownershipBucket] || facility.ownershipBucket}{facility.ownershipType ? ' — ' + facility.ownershipType : ''}</td>
+                </tr>
+              )}
+              {facility.careTypes?.length > 0 && (
+                <tr>
+                  <td>Care Services</td>
+                  <td>{facility.careTypes.map((c) => careTypeLabels[c] || c).join(' · ')}</td>
+                </tr>
+              )}
+              <tr>
+                <td>Staff Profiles</td>
+                <td><span class="fp-locked">🔒 Claim this listing to add staff info</span></td>
+              </tr>
+              <tr>
+                <td>Amenities</td>
+                <td><span class="fp-locked">🔒 Claim this listing to add amenities</span></td>
+              </tr>
+              <tr>
+                <td>Photos</td>
+                <td><span class="fp-locked">🔒 Claim this listing to add photos</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="fp-claim-inline">
+            <div class="fp-claim-inline-text">
+              <p class="fp-claim-inline-title">Is this your facility?</p>
+              <p class="fp-claim-inline-sub">Claim your free listing to add staff profiles, photos, amenities, and respond to community questions.</p>
+            </div>
+            <a href="/for-facilities/" class="fp-btn fp-btn-gold">Claim Listing →</a>
+          </div>
+        </section>
+
+        <!-- ---- Regulatory Hub ---- -->
+        <section class="fp-section" id="regulatory">
+          <div class="fp-section-header">
+            <h2 class="fp-section-title">
+              <span class="fp-section-icon">📋</span>
+              Regulatory Hub
+            </h2>
+          </div>
+
+          <div class="fp-reg-grid">
+            {facility.issuingAgency && (
+              <div class="fp-reg-item">
+                <p class="fp-reg-label">Issuing Agency</p>
+                <p class="fp-reg-value">{facility.issuingAgency}</p>
+              </div>
+            )}
+            {facility.licenseType && (
+              <div class="fp-reg-item">
+                <p class="fp-reg-label">License Type</p>
+                <p class="fp-reg-value">{facility.licenseType}</p>
+              </div>
+            )}
+            {facility.licenseNumber && (
+              <div class="fp-reg-item">
+                <p class="fp-reg-label">License Number</p>
+                <p class="fp-reg-value">{facility.licenseNumber}</p>
+              </div>
+            )}
+            {facility.cmsCertificationNumber && (
+              <div class="fp-reg-item">
+                <p class="fp-reg-label">CMS Certification #</p>
+                <p class="fp-reg-value">{facility.cmsCertificationNumber}</p>
+              </div>
+            )}
+            {facility.lastVerifiedDate && (
+              <div class="fp-reg-item">
+                <p class="fp-reg-label">Last Verified</p>
+                <p class="fp-reg-value">{facility.lastVerifiedDate}</p>
+              </div>
+            )}
+            {facility.dataSource && (
+              <div class="fp-reg-item">
+                <p class="fp-reg-label">Data Source</p>
+                <p class="fp-reg-value">{facility.dataSource}</p>
+              </div>
+            )}
+            <div class="fp-reg-item">
+              <p class="fp-reg-label">Regulatory Standing</p>
+              <p class="fp-reg-value" style="color:#16a34a">Active</p>
+            </div>
+          </div>
+
+          <p class="fp-reg-note">
+            Regulatory data sourced from state licensing agencies and CMS public records. Data is refreshed periodically.
+            <a class="fp-reg-report" href="/contact/">Report an issue with this data</a>
+          </p>
+        </section>
+
+        <!-- ---- Location & Map ---- -->
+        {hasMap && (
+          <section class="fp-section" id="location">
+            <div class="fp-section-header">
+              <h2 class="fp-section-title">
+                <span class="fp-section-icon">📍</span>
+                Location
+              </h2>
+            </div>
+
+            <FacilityMapPin
+              client:visible
+              lat={facility.latitude!}
+              lng={facility.longitude!}
+              name={displayName}
+              address={addressLine}
+            />
+
+            {facility.googleMapsUrl ? (
+              <a class="fp-address-link" href={facility.googleMapsUrl} target="_blank" rel="noopener noreferrer">
+                ↗ Open in Google Maps
+              </a>
+            ) : (
+              <p style="font-size:0.85rem;color:#64748b;margin:0.5rem 0 0">{addressLine}</p>
+            )}
+          </section>
+        )}
+
+        <!-- ---- Community Q&A ---- -->
+        <section class="fp-section" id="qa">
+          <div class="fp-section-header">
+            <h2 class="fp-section-title">
+              <span class="fp-section-icon">💬</span>
+              Community Q&amp;A
+            </h2>
+          </div>
+
+          {facility.id ? (
+            <FacilityQASection
+              client:visible
+              facilityId={facility.id}
+              facilityName={displayName}
+            />
+          ) : (
+            <div class="fp-qa-cta">
+              <p class="fp-qa-cta-title">Have a question about {displayName}?</p>
+              <p class="fp-qa-cta-sub">Create a free account to ask questions and get answers from our care advisors and the community.</p>
+              <a href="/register" class="fp-btn fp-btn-gold">Ask a Question — Free</a>
+            </div>
+          )}
+        </section>
+
+        <!-- ---- Nearby Facilities ---- -->
+        {nearby.length > 0 && (
+          <section class="fp-section" id="nearby">
+            <div class="fp-section-header">
+              <h2 class="fp-section-title">
+                <span class="fp-section-icon">🏘</span>
+                More {careLabel} in {displayCity}
+              </h2>
+            </div>
+
+            <div class="fp-nearby-grid">
+              {nearby.map((n) => {
+                const nearbySlug = `${n.publicSlug}-${n.publicRouteId}`;
+                const nearbyUrl  = `/${n.primaryCareType}/${n.stateSlug}/${n.citySlug}/${nearbySlug}/`;
+                const nearbyName = toDisplayName(n.name);
+                const isFeatured = ['accelerator','dominator'].includes((n.listingTier || '').toLowerCase());
+                return (
+                  <a href={nearbyUrl} class="fp-nearby-card">
+                    {isFeatured && <span class="fp-nearby-tier">Featured</span>}
+                    <p class="fp-nearby-name">{nearbyName}</p>
+                    <p class="fp-nearby-meta">
+                      {n.street ? `${n.street} · ` : ''}{displayCity}, {n.state}
+                      {n.beds ? ` · ${n.beds} beds` : ''}
+                    </p>
+                    <span class="fp-nearby-arrow">View profile →</span>
+                  </a>
+                );
+              })}
+            </div>
+
+            <div style="margin-top:0.85rem">
+              <a href={cityPageUrl} class="fp-btn fp-btn-outline">
+                Browse all {careLabel} in {displayCity} →
+              </a>
+            </div>
+          </section>
+        )}
+
+        <!-- ---- Internal link mesh ---- -->
+        <section class="fp-section">
+          <h2 class="fp-section-title" style="margin-bottom:0.75rem">
+            <span class="fp-section-icon">↗</span>
+            Explore {careLabel}
+          </h2>
+          <ul style="list-style:none;margin:0;padding:0;display:grid;gap:0.5rem">
+            <li>
+              <a href={cityPageUrl} style="color:#ca8a04;font-weight:600;text-decoration:underline;text-underline-offset:3px">
+                {careLabel} in {displayCity}, {facility.state}
+              </a>
+            </li>
+            <li>
+              <a href={carePageUrl} style="color:#ca8a04;font-weight:600;text-decoration:underline;text-underline-offset:3px">
+                {careLabel} across {facility.stateName}
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </div><!-- /.fp-main -->
+    </div><!-- /.fp-layout -->
+
+  </div><!-- /.container.fp-shell -->
+
+  <!-- ======== STICKY CLAIM BAR ======== -->
+  <div class="fp-claim-bar" role="complementary" aria-label="Claim this listing">
+    <p class="fp-claim-bar-text">
+      <strong>Is this your facility?</strong> Claim your free listing to manage this profile and reach more families.
+    </p>
+    <a href="/for-facilities/" class="fp-btn fp-btn-gold">Claim Listing →</a>
   </div>
+
 </Base>
