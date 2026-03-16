@@ -3,6 +3,7 @@ import Base from '../../../../layouts/Base.astro';
 import {
   formatCurrency,
   getCareTypeBySlug,
+  getCareTypes,
   getCityFacilitiesByCareType,
   getCostBand,
   getHospitalsForCity,
@@ -347,6 +348,12 @@ const introParagraphs = [
   `${localResourceSentence} ${licensingSentence} The goal is to help you move from a broad city search into a real short list: compare communities, read the trust signals in one place, and then move into the full community profile when you are ready to look closer.`,
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [] as Array<{ '@type': string; name: string; acceptedAnswer: { '@type': string; text: string } }>,
+};
+
 const regulationItems = [
   {
     title: `${cityData.stateName} licensing and complaint oversight`,
@@ -365,11 +372,27 @@ const regulationItems = [
     body: `Before you visit, compare how each community explains staffing, care planning, and emergency response. On this page, start with the listed license number, the published phone and website, any Medicare-linked record, and whether the operator explains capacity or care scope clearly enough for your family to ask better questions on the first call.`,
   },
 ];
+
+faqSchema.mainEntity = regulationItems.map((item) => ({
+  '@type': 'Question',
+  name: item.title.replace(careSentenceLabel, touringLabel),
+  acceptedAnswer: { '@type': 'Answer', text: item.body },
+}));
+
+const allCareTypes = getCareTypes();
+const crossCareLinks = allCareTypes
+  .filter((ct) => ct.slug !== careType.slug && (cityData.careTypeCounts[ct.slug as keyof typeof cityData.careTypeCounts] || 0) > 0)
+  .map((ct) => ({
+    slug: ct.slug,
+    label: ct.label,
+    count: cityData.careTypeCounts[ct.slug as keyof typeof cityData.careTypeCounts] || 0,
+    href: `/${ct.slug}/${cityData.stateSlug}/${cityData.citySlug}/`,
+  }));
 ---
-<Base title={title} description={description} canonical={canonical}>
+<Base title={title} description={description} canonical={canonical} loadFonts={false}>
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
   <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link slot="head" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
 
   <div class="container sl-page sl-state-page">
@@ -617,6 +640,27 @@ const regulationItems = [
       </div>
     </section>
 
+    {crossCareLinks.length > 0 && (
+      <section class="sl-city-section">
+        <div class="sl-city-section-head">
+          <div>
+            <p class="sl-city-section-kicker">More Care Types in {displayCityName}</p>
+            <h2>Other senior care options nearby</h2>
+            <p>Families often compare multiple care types before deciding. Here are the other options available in {displayCityName}.</p>
+          </div>
+        </div>
+        <div class="sl-city-grid-cards sl-city-grid-cards--nearby">
+          {crossCareLinks.map((link) => (
+            <a class="sl-city-grid-card" href={link.href}>
+              <strong>{link.label}</strong>
+              <span>{link.count.toLocaleString()} {link.count === 1 ? 'community' : 'communities'} in {displayCityName}</span>
+              <span>View {link.label.toLowerCase()} options</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
     {localResourceNames.length > 0 && (
       <section class="sl-state-section">
         <div class="sl-city-local-resources">
@@ -639,4 +683,5 @@ const regulationItems = [
 
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
 </Base>
