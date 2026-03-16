@@ -171,14 +171,23 @@ const LegacyDashboardEditRedirect: React.FC = () => {
 // Astro owns all /{care}/*, /{care}/{state}/*, /{care}/{state}/{city}/* routes.
 // When React Router intercepts these via client-side navigation, force a hard
 // reload so Netlify serves the pre-rendered Astro static page instead.
+// Use assign() not replace() so the browser back button returns to the previous page.
 const AstroRoute: React.FC = () => {
   const { careType } = useParams<{ careType?: string }>();
-  if (!isCareTypeRouteSlug(careType)) return <Navigate to="/" replace />;
+  if (!isCareTypeRouteSlug(careType)) return <NotFound />;
   React.useEffect(() => {
-    window.location.replace(window.location.pathname + window.location.search);
+    window.location.assign(window.location.pathname + window.location.search);
   }, []);
   return null;
 };
+
+const NotFound: React.FC = () => (
+  <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
+    <h1 className="text-4xl font-bold text-slate-900 mb-3">Page not found</h1>
+    <p className="text-slate-500 mb-6">The page you're looking for doesn't exist.</p>
+    <a href="/" className="text-amber-600 underline hover:text-amber-700">Back to home</a>
+  </div>
+);
 
 function App() {
   const enableIntegrityHarness =
@@ -325,7 +334,9 @@ function App() {
                     <Route path="/advertise" element={<AdvertiseWithUs />} />
                     <Route path="/honest-care" element={<HonestCarePage />} />
                     <Route path="/methodology" element={<MethodologyPage />} />
-                        <Route path="/blog" element={<Blog />} />
+                    <Route path="/blog" element={<Blog />} />
+
+                    <Route path="*" element={<NotFound />} />
                     </Routes>
                   </Suspense>
                 </main>
