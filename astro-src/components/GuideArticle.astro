@@ -35,6 +35,61 @@ const {
 } = Astro.props;
 
 const authorName = 'SilverTech Editorial Team';
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: h1,
+  description,
+  url: canonical,
+  image: ogImage,
+  datePublished: published,
+  dateModified: modified,
+  author: {
+    '@type': 'Organization',
+    name: 'SilverTech Editorial Team',
+    url: 'https://silvertechdirectory.com/editorial-policy/',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'SilverTech Directory',
+    url: 'https://silvertechdirectory.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://silvertechdirectory.com/logo-nav.png',
+      width: 500,
+      height: 106,
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonical,
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://silvertechdirectory.com/guides/' },
+    { '@type': 'ListItem', position: 3, name: h1, item: canonical },
+  ],
+};
+
+const faqSchema = faqItems.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+} : null;
+
 const topCityGeoLinks: LinkItem[] = [
   { href: '/memory-care/california/san-francisco/', label: 'Memory care in San Francisco, CA' },
   { href: '/assisted-living/florida/saint-petersburg/', label: 'Senior care in Saint Petersburg, FL' },
@@ -207,5 +262,8 @@ const topCityGeoLinks: LinkItem[] = [
     </aside>
   </section>
 
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  {faqSchema && <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>}
   <slot name="head" />
 </Base>

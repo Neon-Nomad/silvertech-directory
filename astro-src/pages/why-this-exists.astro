@@ -1,0 +1,136 @@
+---
+import Base from '../layouts/Base.astro';
+
+const title = 'Why This Exists | SilverTech Directory';
+const description = 'SilverTech was built because the senior living search industry profits from the families it claims to help. Commission-free, transparent, and built for the family — not for referral fees.';
+const canonical = 'https://silvertechdirectory.com/why-this-exists/';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Why This Exists', item: canonical },
+  ],
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Why SilverTech Exists',
+  description: 'The senior living search industry profits from the families it claims to help. SilverTech was built as the commission-free alternative.',
+  url: canonical,
+  image: 'https://silvertechdirectory.com/hero.png',
+  datePublished: '2026-01-01',
+  dateModified: '2026-03-01',
+  author: {
+    '@type': 'Organization',
+    name: 'SilverTech Directory',
+    url: 'https://silvertechdirectory.com',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'SilverTech Directory',
+    url: 'https://silvertechdirectory.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://silvertechdirectory.com/logo-nav.png',
+    },
+  },
+};
+---
+
+<Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
+
+  <div class="container sl-page sl-state-page" style="max-width: 860px;">
+    <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span>Why This Exists</span>
+    </nav>
+
+    <header style="padding: 3rem 0 2rem;">
+      <h1 style="font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2;">
+        The senior living search industry is built on a conflict of interest.<br />
+        <span style="color: #d97706;">SilverTech exists to end it.</span>
+      </h1>
+      <p style="font-size: 1.1rem; color: #64748b; max-width: 640px; line-height: 1.6;">
+        Most of the websites that help families find senior living communities earn a commission when that family places a loved one. We don't. Here's why that matters.
+      </p>
+    </header>
+
+    <div style="display: flex; flex-direction: column; gap: 2.5rem; padding-bottom: 4rem;">
+
+      <section>
+        <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">The referral fee model, explained</h2>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          The largest senior living search companies — the ones that dominate Google and run national call centers — operate on a referral model. A family calls for help finding a community. The company's advisor helps them tour and choose a facility. When the family moves in, the facility pays the referral company a commission typically equal to <strong>50–100% of the resident's first month's rent</strong>.
+        </p>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          At $4,500–$7,000 per month for memory care, that referral fee can be $5,000–$7,000 per placement. The company collects this fee from every family it "helps." The family almost never knows.
+        </p>
+        <p style="line-height: 1.75; color: #334155;">
+          The problem isn't that advisors are bad people. The problem is structural: when the recommendation generates a commission, the incentive to recommend higher-commission facilities — not better-fit facilities — is always present. Families in crisis, making urgent decisions about a parent's care, are uniquely vulnerable to this conflict.
+        </p>
+      </section>
+
+      <section style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 1.75rem;">
+        <p style="font-size: 1.05rem; font-weight: 600; color: #92400e; margin-bottom: 0.75rem;">What this looks like in practice</p>
+        <p style="line-height: 1.75; color: #78350f; margin-bottom: 1rem;">
+          A memory care facility that pays a 90% commission and charges $7,000/month generates a $6,300 referral fee. A facility that pays no commission and charges $5,500/month generates nothing. The incentive to recommend the higher-commission facility is built into every conversation, whether the advisor acts on it consciously or not.
+        </p>
+        <p style="line-height: 1.75; color: #78350f;">
+          Families rarely learn this until after placement — if they learn it at all.
+        </p>
+      </section>
+
+      <section>
+        <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">What we built instead</h2>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          SilverTech is a directory, not a placement agency. We do not charge referral fees. We do not accept commissions when a family places a loved one. We do not sell contact information to sales teams or call centers.
+        </p>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          What we do: we maintain a searchable, verified database of licensed senior living facilities across the United States. We pull licensing data, inspection histories, and ownership information from CMS.gov and state regulatory databases and make it accessible without requiring a phone call. We publish guides about how care actually works — written to give families the same information a well-connected elder law attorney would give a friend.
+        </p>
+        <p style="line-height: 1.75; color: #334155;">
+          Facilities can subscribe to manage their listing data and respond to inquiries. That's our business model. We don't take a cut of move-ins.
+        </p>
+      </section>
+
+      <section>
+        <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Why this is the right model for families</h2>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          The families using SilverTech are typically making one of the hardest decisions of their lives under significant emotional, logistical, and financial pressure. A parent has been diagnosed with dementia. A hospital wants to discharge a parent to a facility within 72 hours. A caregiver has reached a breaking point.
+        </p>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          These families deserve information that isn't filtered through financial incentives. They deserve to know what a facility's inspection record looks like, what the actual monthly cost will be, and what questions to ask on a tour — without a sales script designed to move them toward a commission-generating placement.
+        </p>
+        <p style="line-height: 1.75; color: #334155;">
+          That's what SilverTech is for. We're not the right tool for every situation — we don't provide the white-glove coordination that some families need, and placement agencies do provide real value in complex situations. But for families who want to do their own research and connect directly with communities, we're built to serve them without a conflict of interest in the way.
+        </p>
+      </section>
+
+      <section>
+        <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Our data commitment</h2>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          Every facility in our directory links to its state license number and, for nursing homes, to the CMS Five-Star Quality Rating. We surface inspection histories and complaint records from public state databases. We provide direct phone numbers and website links so families can contact facilities without going through us.
+        </p>
+        <p style="line-height: 1.75; color: #334155;">
+          We are not neutral — we have a point of view about how this industry should work. But our data is sourced from the same public records that regulators, attorneys, and journalists use. We don't hide findings that reflect badly on a facility, and we don't allow operators to pay to remove or bury negative regulatory history.
+        </p>
+      </section>
+
+      <section style="border-top: 2px solid #e2e8f0; padding-top: 2rem;">
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="/search" class="sl-btn sl-btn-primary">Search the Directory</a>
+          <a href="/guides/" class="sl-btn sl-btn-secondary">Read Our Guides</a>
+          <a href="/editorial-policy/" style="color: #64748b; text-decoration: underline; display: flex; align-items: center; font-size: 0.95rem;">Our Editorial Policy</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</Base>

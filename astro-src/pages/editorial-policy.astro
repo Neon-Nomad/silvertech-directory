@@ -1,0 +1,109 @@
+---
+import Base from '../layouts/Base.astro';
+
+const title = 'Editorial Policy | SilverTech Directory';
+const description = 'How SilverTech Directory sources, verifies, and maintains senior living data. Our editorial standards, data methodology, and conflict-of-interest policy.';
+const canonical = 'https://silvertechdirectory.com/editorial-policy/';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Editorial Policy', item: canonical },
+  ],
+};
+---
+
+<Base title={title} description={description} canonical={canonical}>
+  <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+
+  <div class="container sl-page sl-state-page" style="max-width: 860px;">
+    <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span>Editorial Policy</span>
+    </nav>
+
+    <header style="padding: 3rem 0 2rem;">
+      <h1 style="font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem;">Editorial Policy</h1>
+      <p style="font-size: 1.1rem; color: #64748b; max-width: 640px;">
+        How we source data, write content, and avoid conflicts of interest. Last updated March 2026.
+      </p>
+    </header>
+
+    <div style="display: flex; flex-direction: column; gap: 2.5rem; padding-bottom: 4rem;">
+
+      <section>
+        <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Our independence model</h2>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          SilverTech Directory does not charge referral fees, placement fees, or lead generation commissions. We do not sell family contact information to facilities, placement agencies, or sales teams. This is not a marketing differentiator — it is a structural constraint we operate under by design.
+        </p>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          The referral agency model that dominates the senior living search market — where companies like A Place for Mom receive commissions equal to 50–100% of one month's rent from facilities when a family moves in — creates a financial incentive to recommend communities based on commission rate rather than fit. We believe this is a conflict of interest that systematically harms families who are already under significant stress.
+        </p>
+        <p style="line-height: 1.75; color: #334155;">
+          Facility operators can pay SilverTech for a subscription that allows them to manage their profile data, add photos, and respond to inquiries. That subscription does not affect search ranking, editorial coverage, or how a facility is described in our directory. Operators cannot pay to alter their regulatory history, inspection records, or the data we pull from CMS and state licensing databases.
+        </p>
+      </section>
+
+      <section>
+        <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Data sources and verification</h2>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          Facility records in SilverTech are built from a combination of public data sources and direct operator verification:
+        </p>
+        <ul style="line-height: 1.85; color: #334155; padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+          <li><strong>CMS.gov (Centers for Medicare &amp; Medicaid Services)</strong> — Nursing home Five-Star Quality Ratings, staffing data, health inspection records, and ownership information.</li>
+          <li><strong>State licensing databases</strong> — Assisted living, memory care, and residential care home license status, license numbers, and inspection histories. Sources vary by state (typically the state Department of Health or Department of Social Services).</li>
+          <li><strong>Operator-submitted data</strong> — Facilities that claim their listing can update contact information, photos, service descriptions, and pricing ranges. These updates are visible to users and attributed to the operator.</li>
+          <li><strong>Public records</strong> — Complaint histories, ownership changes, and enforcement actions sourced from state regulatory filings where available.</li>
+        </ul>
+        <p style="line-height: 1.75; color: #334155; margin-top: 1rem;">
+          We do not guarantee that all records are current. Regulatory data reflects the most recent import from public sources. If you find an error in a facility record, you can report it using the correction form on any facility page.
+        </p>
+      </section>
+
+      <section>
+        <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Editorial content standards</h2>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          The guides, state pages, and regulatory content on SilverTech are written by the SilverTech editorial team. Our editorial process:
+        </p>
+        <ul style="line-height: 1.85; color: #334155; padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+          <li>We do not accept sponsored content or paid editorial placements. Facility operators cannot pay to be featured in guides, recommended in articles, or included in "best of" lists.</li>
+          <li>Cost data and market ranges referenced in our content are derived from CMS cost reports, state Medicaid rate filings, and publicly available market surveys. We cite the basis for specific figures when precision matters.</li>
+          <li>Regulatory information (Medicaid eligibility, licensing requirements, inspection processes) is sourced from state statutes and agency publications. We update this content when regulations change and note the effective date.</li>
+          <li>Emotional support content (our caregiver stress and dementia family guides) is reviewed for accuracy against published clinical literature and family caregiver resources. We do not provide medical advice and clearly label content as informational.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Affiliate products</h2>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          SilverTech's products section includes curated senior care products (bathroom safety equipment, mobility aids, medical supplies, and similar). Some product links are affiliate links through Amazon and other retailers, meaning we may earn a commission if you purchase through a link on our site. Affiliate relationships do not influence which products we include or how we describe them.
+        </p>
+        <p style="line-height: 1.75; color: #334155;">
+          We never include facility listings, inspection records, regulatory data, or editorial care guidance under affiliate arrangements.
+        </p>
+      </section>
+
+      <section>
+        <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Corrections and updates</h2>
+        <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+          If you find an error in a facility record, a guide, or any regulatory content on SilverTech, please report it using the correction link on the relevant page. We review correction requests and update records when errors are confirmed. Substantive corrections to editorial content are noted in the page's "last updated" date.
+        </p>
+        <p style="line-height: 1.75; color: #334155;">
+          Facility operators who believe their record contains errors may claim their listing and submit corrections. All operator-submitted corrections are reviewed against source data before being published.
+        </p>
+      </section>
+
+      <section>
+        <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;">Contact</h2>
+        <p style="line-height: 1.75; color: #334155;">
+          Questions about our editorial standards or data methodology can be directed to the SilverTech editorial team at <strong>editorial@silvertechdirectory.com</strong>. We respond to editorial inquiries within 3–5 business days.
+        </p>
+      </section>
+
+    </div>
+  </div>
+</Base>

@@ -303,6 +303,8 @@ async function generateSitemaps() {
       `${BASE_URL}/faq`,
       `${BASE_URL}/advertise`,
       `${BASE_URL}/honest-care`,
+      `${BASE_URL}/why-this-exists/`,
+      `${BASE_URL}/editorial-policy/`,
       `${BASE_URL}/blog`,
       `${BASE_URL}/guides/`,
       `${BASE_URL}/guides/how-to-choose/`,

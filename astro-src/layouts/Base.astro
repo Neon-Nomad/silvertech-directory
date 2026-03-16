@@ -13,6 +13,44 @@ const {
   publishedTime,
   modifiedTime
 } = Astro.props;
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'SilverTech Directory',
+  url: 'https://silvertechdirectory.com',
+  logo: {
+    '@type': 'ImageObject',
+    url: 'https://silvertechdirectory.com/logo-nav.png',
+    width: 500,
+    height: 106,
+  },
+  description: 'Commission-free senior living directory with verified licensed facility listings, state regulations, and transparent cost information for families navigating dementia care and assisted living.',
+  areaServed: {
+    '@type': 'Country',
+    name: 'United States',
+  },
+  knowsAbout: ['assisted living', 'memory care', 'senior living', 'nursing homes', 'dementia care', 'elder care'],
+  sameAs: [
+    'https://twitter.com/SilverTechCare',
+  ],
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'SilverTech Directory',
+  url: 'https://silvertechdirectory.com',
+  description: 'Commission-free senior living directory for families comparing assisted living and memory care communities.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://silvertechdirectory.com/search?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+};
 ---
 <!doctype html>
 <html lang="en">
@@ -49,6 +87,8 @@ const {
       </>
     )}
     <link rel="stylesheet" href="/styles/astro-base.css" />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)}></script>
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)}></script>
     <slot name="head" />
   </head>
   <body>
