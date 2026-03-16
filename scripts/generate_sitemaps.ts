@@ -206,7 +206,14 @@ const toStaticEntry = (url: string, priority = 0.6): SitemapEntry => ({
   priority,
 });
 
-const loadFacilityRows = async (): Promise<Array<{ communityId: string }>> => {
+type FacilityUrlSeed = {
+  careTypeSlug: string;
+  stateSlug: string;
+  citySlug: string;
+  facilitySlug: string;
+};
+
+const loadFacilityRows = async (): Promise<FacilityUrlSeed[]> => {
   console.log('Loading facility sitemap seeds directly from Supabase facilities table...');
   const allFacilities: FacilitySeedRow[] = [];
   const pageSize = 1000;
@@ -241,14 +248,23 @@ const loadFacilityRows = async (): Promise<Array<{ communityId: string }>> => {
   }
 
   const routeSeeds = allFacilities
-    .map((facility) => {
+    .map((facility): FacilityUrlSeed | null => {
       const publicSlug = toSlug(facility.public_slug || facility.name || '');
       const publicRouteId = Number(facility.public_route_id);
-      if (!publicSlug || !Number.isFinite(publicRouteId)) return null;
+      const careTypeSlug = facility.primary_care_type_slug?.trim();
+      const citySlug = toSlug(facility.city || '');
+      const stateSlug = resolveStateSlug(facility.state);
 
-      return { communityId: `${publicSlug}-${Math.trunc(publicRouteId)}` };
+      if (!publicSlug || !Number.isFinite(publicRouteId) || !careTypeSlug || !citySlug || !stateSlug) return null;
+
+      return {
+        careTypeSlug,
+        stateSlug,
+        citySlug,
+        facilitySlug: `${publicSlug}-${Math.trunc(publicRouteId)}`,
+      };
     })
-    .filter((facility): facility is { communityId: string } => Boolean(facility));
+    .filter((facility): facility is FacilityUrlSeed => Boolean(facility));
 
   console.log(`Loaded ${routeSeeds.length} facilities from Supabase.`);
   return routeSeeds;
@@ -347,13 +363,11 @@ async function generateSitemaps() {
   );
 
   const facilityEntries = uniqueEntries(
-    facilities
-      .filter((facility): facility is { communityId: string } => Boolean(facility?.communityId))
-      .map((facility) => ({
-        url: `${BASE_URL}/community/${facility.communityId}/`,
-        changefreq: 'weekly',
-        priority: 0.7,
-      })),
+    facilities.map((facility) => ({
+      url: `${BASE_URL}/${facility.careTypeSlug}/${facility.stateSlug}/${facility.citySlug}/${facility.facilitySlug}/`,
+      changefreq: 'weekly' as const,
+      priority: 0.7,
+    })),
   );
 
   if (careTypeStateEntries.length === 0 || careTypeCityEntries.length === 0) {
