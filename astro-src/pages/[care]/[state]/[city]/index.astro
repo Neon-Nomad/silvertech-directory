@@ -160,24 +160,37 @@ const breadcrumbSchema = {
 const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  itemListElement: facilities.slice(0, 30).map((facility, index) => ({
-    '@type': 'ListItem',
-    position: index + 1,
-    item: {
-      '@type': 'MedicalBusiness',
-      name: toDisplayName(facility.name),
-      url: `https://silvertechdirectory.com/community/${facility.publicSlug}-${facility.publicRouteId}/`,
-      telephone: facility.verifiedPhone || facility.phone || undefined,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: facility.street ? toDisplayName(facility.street) : undefined,
-        addressLocality: toDisplayName(facility.city),
-        addressRegion: facility.state,
-        postalCode: facility.zip || undefined,
-        addressCountry: 'US',
+  itemListElement: facilities.slice(0, 30).map((facility, index) => {
+    const identifiers: Array<{ '@type': string; name: string; value: string }> = [];
+    if (facility.licenseNumber) {
+      identifiers.push({ '@type': 'PropertyValue', name: 'State License Number', value: facility.licenseNumber });
+    }
+    if (facility.cmsCertificationNumber) {
+      identifiers.push({ '@type': 'PropertyValue', name: 'CMS Certification Number', value: facility.cmsCertificationNumber });
+    }
+
+    return {
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'MedicalBusiness',
+        name: toDisplayName(facility.name),
+        url: `https://silvertechdirectory.com/community/${facility.publicSlug}-${facility.publicRouteId}/`,
+        telephone: facility.verifiedPhone || facility.phone || undefined,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: facility.street ? toDisplayName(facility.street) : undefined,
+          addressLocality: toDisplayName(facility.city),
+          addressRegion: facility.state,
+          postalCode: facility.zip || undefined,
+          addressCountry: 'US',
+        },
+        ...(identifiers.length > 0 && { identifier: identifiers }),
+        ...(facility.beds != null && { numberOfRooms: facility.beds }),
+        ...(facility.ownershipType && { additionalProperty: [{ '@type': 'PropertyValue', name: 'Ownership Type', value: facility.ownershipType }] }),
       },
-    },
-  })),
+    };
+  }),
 };
 
 const toSentenceList = (items: string[]): string => {
