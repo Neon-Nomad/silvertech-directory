@@ -171,7 +171,9 @@ export const EditFacility: React.FC = () => {
               postal_code: payload.postal_code ?? nextFormData.postal_code,
               min_price: payload.min_price !== null && payload.min_price !== undefined ? String(payload.min_price) : nextFormData.min_price,
               max_price: payload.max_price !== null && payload.max_price !== undefined ? String(payload.max_price) : nextFormData.max_price,
-              plan: payload.plan ?? nextFormData.plan
+              plan: payload.plan ?? nextFormData.plan,
+              virtual_tour_url: payload.virtual_tour_url ?? nextFormData.virtual_tour_url,
+              tour_scheduling_url: payload.tour_scheduling_url ?? nextFormData.tour_scheduling_url,
             });
           }
         }
