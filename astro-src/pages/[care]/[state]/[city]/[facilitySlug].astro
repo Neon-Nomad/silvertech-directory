@@ -2,6 +2,7 @@
 import Base from '../../../../layouts/Base.astro';
 import FacilityMapPin from '../../../../components/senior/FacilityMapPin';
 import FacilityQASection from '../../../../components/senior/FacilityQASection';
+import TourScheduler from '../../../../components/senior/TourScheduler';
 import {
   getFacilityBySlug,
   getFacilityStaticPaths,
@@ -189,6 +190,7 @@ const breadcrumbSchema = {
             <li><a href="#profile"><span class="fp-nav-icon">☰</span> Facility Profile</a></li>
             <li><a href="#regulatory"><span class="fp-nav-icon">📋</span> Regulatory</a></li>
             {hasMap && <li><a href="#location"><span class="fp-nav-icon">📍</span> Location</a></li>}
+            <li><a href="#tour"><span class="fp-nav-icon">🗓</span> Schedule Tour</a></li>
             <li><a href="#qa"><span class="fp-nav-icon">💬</span> Community Q&amp;A</a></li>
             {nearby.length > 0 && <li><a href="#nearby"><span class="fp-nav-icon">🏘</span> Nearby</a></li>}
           </ul>
@@ -484,6 +486,24 @@ const breadcrumbSchema = {
             )}
           </section>
         )}
+
+        <!-- ---- Schedule a Tour ---- -->
+        <section class="fp-section" id="tour">
+          <div class="fp-section-header">
+            <h2 class="fp-section-title">
+              <span class="fp-section-icon">🗓</span>
+              Schedule a Tour
+            </h2>
+          </div>
+          <TourScheduler
+            client:visible
+            facilityId={facility.id}
+            facilityName={displayName}
+            facilityAddress={addressLine}
+            facilityPhone={phone}
+            careType={facility.primaryCareType}
+          />
+        </section>
 
         <!-- ---- Community Q&A ---- -->
         <section class="fp-section" id="qa">

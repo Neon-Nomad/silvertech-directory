@@ -55,7 +55,9 @@ export const EditFacility: React.FC = () => {
     postal_code: '',
     min_price: '',
     max_price: '',
-    plan: 'basic'
+    plan: 'basic',
+    virtual_tour_url: '',
+    tour_scheduling_url: '',
   });
 
   const [counts, setCounts] = useState({
@@ -128,7 +130,9 @@ export const EditFacility: React.FC = () => {
           postal_code: data.postal_code || '',
           min_price: typeof data.min_price === 'number' ? data.min_price.toString() : '',
           max_price: typeof data.max_price === 'number' ? data.max_price.toString() : '',
-          plan: (data.plan as string | undefined) || ((data.listing_tier as string | undefined) === 'free' ? 'basic' : (data.listing_tier as string | undefined)) || 'basic'
+          plan: (data.plan as string | undefined) || ((data.listing_tier as string | undefined) === 'free' ? 'basic' : (data.listing_tier as string | undefined)) || 'basic',
+          virtual_tour_url: (data.virtual_tour_url as string | undefined) || '',
+          tour_scheduling_url: (data.tour_scheduling_url as string | undefined) || '',
         };
         setFormData(nextFormData);
         setPublicIdentity({
@@ -217,6 +221,8 @@ export const EditFacility: React.FC = () => {
     min_price: formData.min_price,
     max_price: formData.max_price,
     plan: formData.plan,
+    virtual_tour_url: formData.virtual_tour_url || null,
+    tour_scheduling_url: formData.tour_scheduling_url || null,
   });
 
   const handleSaveLiveFallback = async () => {
@@ -239,6 +245,8 @@ export const EditFacility: React.FC = () => {
       if (hasColumn('email')) updatePayload.email = formData.email || null;
       if (hasColumn('min_price')) updatePayload.min_price = formData.min_price ? parseFloat(formData.min_price) : null;
       if (hasColumn('max_price')) updatePayload.max_price = formData.max_price ? parseFloat(formData.max_price) : null;
+      if (hasColumn('virtual_tour_url')) updatePayload.virtual_tour_url = formData.virtual_tour_url || null;
+      if (hasColumn('tour_scheduling_url')) updatePayload.tour_scheduling_url = formData.tour_scheduling_url || null;
 
       trackActivationEvent(
         'autosave_triggered',
@@ -514,6 +522,44 @@ export const EditFacility: React.FC = () => {
                   <p className="text-xs text-slate-500 mt-1 text-right">
                     {formData.description.length} characters
                   </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Tour Features */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+              <h2 className="text-lg font-bold text-slate-900 mb-1">Tour & Scheduling</h2>
+              <p className="text-sm text-slate-500 mb-4">Help families take the next step. Both fields are optional.</p>
+              <div className="space-y-4">
+                <div>
+                  <label htmlFor="tour_scheduling_url" className="block text-sm font-medium text-slate-700 mb-1">
+                    Tour Booking Link
+                  </label>
+                  <input
+                    id="tour_scheduling_url"
+                    type="url"
+                    name="tour_scheduling_url"
+                    value={formData.tour_scheduling_url}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500"
+                    placeholder="https://calendly.com/your-community"
+                  />
+                  <p className="text-xs text-slate-500 mt-1">Calendly, Acuity, or any booking page. Shown as a "Book a Tour" button on your profile.</p>
+                </div>
+                <div>
+                  <label htmlFor="virtual_tour_url" className="block text-sm font-medium text-slate-700 mb-1">
+                    Virtual Tour URL
+                  </label>
+                  <input
+                    id="virtual_tour_url"
+                    type="url"
+                    name="virtual_tour_url"
+                    value={formData.virtual_tour_url}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500"
+                    placeholder="https://my.matterport.com/show/..."
+                  />
+                  <p className="text-xs text-slate-500 mt-1">YouTube, Matterport, Tourweaver, or any 360° tour link.</p>
                 </div>
               </div>
             </div>
