@@ -267,18 +267,6 @@ const buildHeadMeta = (meta: ReturnType<typeof buildMetadata>) => {
 const hiddenH1 = (name: string) =>
   `<h1 data-edge-facility-h1="1" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">${escapeHtml(name)}</h1>`;
 
-const buildNotFoundResponse = (pathname: string) =>
-  new Response(
-    `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Community Not Found</title><meta name="robots" content="noindex, nofollow"></head><body><main><h1>Community Not Found</h1><p>The requested community path could not be resolved: ${escapeHtml(pathname)}</p></main></body></html>`,
-    {
-      status: 404,
-      headers: {
-        'content-type': 'text/html; charset=utf-8',
-        'cache-control': 'public, max-age=0, s-maxage=300',
-      },
-    },
-  );
-
 const errorToMessage = (error: unknown): string => {
   if (error instanceof Error) return error.message;
   if (typeof error === 'string') return error;
@@ -308,12 +296,12 @@ export default async (request: Request, context: Context) => {
     );
 
     if (!facilityRecord) {
-      return buildNotFoundResponse(url.pathname);
+      return context.next();
     }
 
     const canonicalSlug = toSlug(facilityRecord.public_slug || '');
     if (!canonicalSlug || canonicalSlug !== pathParts.publicSlug) {
-      return buildNotFoundResponse(url.pathname);
+      return context.next();
     }
 
     const meta = buildMetadata(facilityRecord);

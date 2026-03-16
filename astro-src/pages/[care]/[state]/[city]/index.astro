@@ -176,7 +176,7 @@ const itemListSchema = {
       item: {
         '@type': 'MedicalBusiness',
         name: toDisplayName(facility.name),
-        url: `https://silvertechdirectory.com/community/${facility.publicSlug}-${facility.publicRouteId}/`,
+        url: `https://silvertechdirectory.com/${careType.slug}/${cityData.stateSlug}/${cityData.citySlug}/${facility.publicSlug}-${facility.publicRouteId}/`,
         telephone: facility.verifiedPhone || facility.phone || undefined,
         address: {
           '@type': 'PostalAddress',
@@ -488,7 +488,7 @@ const crossCareLinks = allCareTypes
               <div class="sl-city-card-head">
                 <div>
                   <h3 class="sl-city-card-title">
-                    <a href={`/community/${facility.publicSlug}-${facility.publicRouteId}/`}>{toDisplayName(facility.name)}</a>
+                    <a href={`/${careType.slug}/${cityData.stateSlug}/${cityData.citySlug}/${facility.publicSlug}-${facility.publicRouteId}/`}>{toDisplayName(facility.name)}</a>
                   </h3>
                   <p class="sl-city-card-address">
                     {[
@@ -541,7 +541,7 @@ const crossCareLinks = allCareTypes
             </div>
 
             <div class="sl-city-card-side">
-              <a class="sl-city-cta" href={`/community/${facility.publicSlug}-${facility.publicRouteId}/`}>View Community</a>
+              <a class="sl-city-cta" href={`/${careType.slug}/${cityData.stateSlug}/${cityData.citySlug}/${facility.publicSlug}-${facility.publicRouteId}/`}>View Community</a>
             </div>
           </li>
         ))}

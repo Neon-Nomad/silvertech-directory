@@ -69,6 +69,7 @@ export type FacilityRecord = {
   dataSource: string;
   careTypes: CareTypeSlug[];
   primaryCareType: CareTypeSlug;
+  hasProfile: boolean;
 };
 
 export type StatsBundle = {
@@ -600,6 +601,7 @@ const ensureStore = (): SeniorLivingStore => {
     });
 
     const publicSlug = (enriched?.public_slug || slugify(facilityBase.name) || 'facility').toLowerCase();
+    const hasProfile = !!(enriched && Number(enriched.public_route_id));
     const publicRouteId =
       Number(enriched?.public_route_id) || parseInt(hashString(key || facilityBase.name), 36) || facilities.length + 1;
     let id = enriched?.id || `${publicSlug}-${publicRouteId}`;
@@ -610,6 +612,7 @@ const ensureStore = (): SeniorLivingStore => {
       id,
       publicSlug,
       publicRouteId,
+      hasProfile,
       name: facilityBase.name,
       city: facilityBase.city,
       citySlug: facilityBase.citySlug,
@@ -757,6 +760,33 @@ const ensureStore = (): SeniorLivingStore => {
   };
   return storeCache;
 };
+
+export const getAllFacilities = (): FacilityRecord[] => ensureStore().facilities;
+
+export const getFacilityBySlug = (facilitySlug: string): FacilityRecord | null => {
+  const match = facilitySlug.match(/^(.*)-(\d+)$/);
+  if (!match) return null;
+  const publicRouteId = Number(match[2]);
+  const publicSlug = match[1].toLowerCase();
+  return (
+    ensureStore().facilities.find(
+      (f) => f.publicRouteId === publicRouteId && f.publicSlug === publicSlug,
+    ) || null
+  );
+};
+
+export const getFacilityStaticPaths = (): Array<{
+  care: string;
+  state: string;
+  city: string;
+  facilitySlug: string;
+}> =>
+  ensureStore().facilities.map((f) => ({
+    care: f.primaryCareType,
+    state: f.stateSlug,
+    city: f.citySlug,
+    facilitySlug: `${f.publicSlug}-${f.publicRouteId}`,
+  }));
 
 export const getCareTypes = (): CareTypeDefinition[] => CARE_TYPES;
 export const getCareTypeBySlug = (slug: string): CareTypeDefinition | null =>

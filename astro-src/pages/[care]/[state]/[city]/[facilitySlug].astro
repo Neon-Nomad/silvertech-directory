@@ -1,0 +1,163 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { getFacilityBySlug, getFacilityStaticPaths, getCareTypeBySlug } from '../../../../lib/seniorLivingData';
+
+export async function getStaticPaths() {
+  const { getFacilityStaticPaths } = await import('../../../../lib/seniorLivingData');
+  return getFacilityStaticPaths().map((p) => ({ params: p }));
+}
+
+const { care, state, city, facilitySlug } = Astro.params;
+const facility = getFacilityBySlug(facilitySlug!);
+
+if (!facility) {
+  return Astro.redirect('/404');
+}
+
+const careType = getCareTypeBySlug(care!);
+const careLabel = careType?.label || 'Senior Care';
+
+const toDisplayName = (value: string): string => {
+  if (value !== value.toUpperCase()) return value;
+  const uppercaseTokens = new Set([
+    'AL','AK','AZ','AR','CA','CO','CT','DC','DE','FL','GA','HI','IA','ID','IL','IN','KS','KY','LA',
+    'MA','MD','ME','MI','MN','MO','MS','MT','NC','ND','NE','NH','NJ','NM','NV','NY','OH','OK','OR',
+    'PA','RI','SC','SD','TN','TX','UT','VA','VT','WA','WI','WV','WY','NW','SE','SW','N','S','E','W',
+    'PO','US','CMS','ER','ICU','ICF','SNF','ALF','CCRC','RN','LPN','CNA',
+    'II','III','IV','V','VI','VII','VIII','IX','X','LLC','LLP','LP','LTD','INC','PLC','PC','PA','IU',
+  ]);
+  const lowerWords = new Set(['and','or','of','the','at','in','on','for','to','a','an']);
+  return value.toLowerCase().split(/\s+/).map((word, wordIndex) =>
+    word.split(/([\-'/&])/).map((segment, segmentIndex, segments) => {
+      if (segment.length === 1 && /[\-'/&]/.test(segment)) return segment;
+      if (segments[segmentIndex - 1] === "'" && /^[a-z]{1,2}$/.test(segment)) return segment.toLowerCase();
+      if (!/[A-Za-z]/.test(segment)) return segment;
+      const ordinalMatch = segment.match(/^(\d+)(ST|ND|RD|TH)$/);
+      if (ordinalMatch) return `${ordinalMatch[1]}${ordinalMatch[2].toLowerCase()}`;
+      const upper = segment.toUpperCase();
+      if (uppercaseTokens.has(upper)) return upper;
+      const lower = segment.toLowerCase();
+      if (wordIndex > 0 && lowerWords.has(lower)) return lower;
+      return `${lower[0]?.toUpperCase() || ''}${lower.slice(1)}`;
+    }).join('')
+  ).join(' ');
+};
+
+const displayName  = toDisplayName(facility.name);
+const displayCity  = toDisplayName(facility.city);
+const phone        = facility.verifiedPhone || (facility.phone ? facility.phone.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3') : '');
+const canonical    = `https://silvertechdirectory.com/${care}/${state}/${city}/${facilitySlug}/`;
+const cityPageUrl  = `/${care}/${state}/${city}/`;
+const carePageUrl  = `/${care}/${state}/`;
+
+const title       = `${displayName} | ${careLabel} in ${displayCity}, ${facility.state}`;
+const description = `${displayName} is a ${careLabel.toLowerCase()} in ${displayCity}, ${facility.state}.${facility.licenseNumber ? ` State license ${facility.licenseNumber}.` : ''} Verified profile on SilverTech Directory.`;
+
+const identifiers: Array<{ '@type': string; name: string; value: string }> = [];
+if (facility.licenseNumber)          identifiers.push({ '@type': 'PropertyValue', name: 'State License Number',      value: facility.licenseNumber });
+if (facility.cmsCertificationNumber) identifiers.push({ '@type': 'PropertyValue', name: 'CMS Certification Number', value: facility.cmsCertificationNumber });
+
+const facilitySchema = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalBusiness',
+  name: displayName,
+  url: canonical,
+  ...(phone             ? { telephone: phone }               : {}),
+  ...(facility.websiteUrl ? { sameAs: facility.websiteUrl } : {}),
+  ...(identifiers.length  ? { identifier: identifiers }     : {}),
+  address: {
+    '@type': 'PostalAddress',
+    ...(facility.street ? { streetAddress: facility.street } : {}),
+    addressLocality:  displayCity,
+    addressRegion:    facility.state,
+    ...(facility.zip  ? { postalCode: facility.zip }         : {}),
+    addressCountry: 'US',
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home',              item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: careLabel,           item: `https://silvertechdirectory.com/${care}/` },
+    { '@type': 'ListItem', position: 3, name: facility.stateName,  item: `https://silvertechdirectory.com${carePageUrl}` },
+    { '@type': 'ListItem', position: 4, name: displayCity,         item: `https://silvertechdirectory.com${cityPageUrl}` },
+    { '@type': 'ListItem', position: 5, name: displayName,         item: canonical },
+  ],
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogType="article"
+>
+  <Fragment slot="head">
+    <link rel="stylesheet" href="/styles/facility-page.css" />
+    <script type="application/ld+json" set:html={JSON.stringify(facilitySchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <div class="container facility-shell">
+
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">›</span>
+      <a href={`/${care}/`}>{careLabel}</a>
+      <span aria-hidden="true">›</span>
+      <a href={carePageUrl}>{facility.stateName}</a>
+      <span aria-hidden="true">›</span>
+      <a href={cityPageUrl}>{displayCity}</a>
+      <span aria-hidden="true">›</span>
+      <span>{displayName}</span>
+    </nav>
+
+    <div class="hero">
+      <p class="kicker">{careLabel} &mdash; {displayCity}, {facility.state}</p>
+      <h1 class="hero-title">{displayName}</h1>
+      {facility.street
+        ? <p class="subhead">{facility.street}, {displayCity}, {facility.state}{facility.zip ? ` ${facility.zip}` : ''}</p>
+        : <p class="subhead">{displayCity}, {facility.state}</p>
+      }
+      <div class="hero-actions">
+        {phone && (
+          <a class="btn btn-primary" href={`tel:${phone.replace(/\D/g,'')}`}>{phone}</a>
+        )}
+        {facility.websiteUrl && (
+          <a class="btn btn-ghost" href={facility.websiteUrl} target="_blank" rel="noopener noreferrer">Official Website</a>
+        )}
+        {facility.googleMapsUrl && (
+          <a class="btn btn-ghost" href={facility.googleMapsUrl} target="_blank" rel="noopener noreferrer">View on Map</a>
+        )}
+      </div>
+    </div>
+
+    {(facility.licenseNumber || facility.cmsCertificationNumber || (facility.beds !== null && facility.beds !== undefined)) && (
+      <div class="crawl-priority-signals info-gap">
+        <h2>Verified Identifiers</h2>
+        <ul class="signal-list">
+          {facility.licenseNumber && (
+            <li><strong>State License</strong><br />{facility.licenseNumber}</li>
+          )}
+          {facility.cmsCertificationNumber && (
+            <li><strong>CMS Certification</strong><br />{facility.cmsCertificationNumber}</li>
+          )}
+          {facility.beds !== null && facility.beds !== undefined && (
+            <li><strong>Certified Beds</strong><br />{facility.beds.toLocaleString()}</li>
+          )}
+        </ul>
+      </div>
+    )}
+
+    <div class="link-mesh-card">
+      <h2>{careLabel} in {displayCity}</h2>
+      <ul class="link-mesh-list">
+        <li><a href={cityPageUrl}>Browse all {careLabel} in {displayCity}, {facility.state}</a></li>
+        <li><a href={carePageUrl}>{careLabel} across {facility.stateName}</a></li>
+      </ul>
+    </div>
+
+  </div>
+</Base>
