@@ -19,4 +19,4 @@ https://www.silvertechdirectory.com/* https://silvertechdirectory.com/:splat 301
 /assisted-living/:state/cities/:city /410.html 410!
 /assisted-living/:state/cities/:city/ /410.html 410!
 # SPA fallback
-/* /index.html 200
+/* /app.html 200

@@ -25,7 +25,7 @@ const outputLines = [
   '/assisted-living/:state/cities/:city /410.html 410!',
   '/assisted-living/:state/cities/:city/ /410.html 410!',
   '# SPA fallback',
-  '/* /index.html 200',
+  '/* /app.html 200',
 ];
 
 const outPath = path.join(rootDir, 'public', '_redirects');

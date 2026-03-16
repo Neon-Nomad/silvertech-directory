@@ -11,6 +11,8 @@
     "astro:dev": "astro dev",
     "astro:build": "astro build",
     "astro:preview": "astro preview",
+    "export-facilities": "npx tsx scripts/export_facilities_to_csv.ts",
+    "backfill:directory-columns": "npx tsx scripts/backfill_facility_directory_columns.ts",
     "build:hybrid": "npm run build && npm run astro:build && node scripts/merge_astro.mjs",
     "preview": "vite preview",
     "test": "vitest",

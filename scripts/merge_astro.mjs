@@ -109,4 +109,14 @@ if (!copiedAny) {
   process.exit(1);
 }
 
+// Swap homepage: React SPA → app.html, Astro index.html → index.html
+const astroIndexSrc = path.join(astroRoot, 'index.html');
+const distIndex = path.join(root, 'dist', 'index.html');
+const distApp = path.join(root, 'dist', 'app.html');
+if (fs.existsSync(astroIndexSrc) && fs.existsSync(distIndex)) {
+  fs.copyFileSync(distIndex, distApp);
+  fs.copyFileSync(astroIndexSrc, distIndex);
+  console.log('[merge_astro] Swapped homepage: React SPA -> app.html, Astro -> index.html');
+}
+
 createAssetCompatibilityAliases();
