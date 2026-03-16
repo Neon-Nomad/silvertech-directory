@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { getCareTypeBySlug, getCareTypeLabel, getSeniorLivingStates } from '../../lib/seniorLivingData';
+import { getCareTypeBySlug, getSeniorLivingStates } from '../../lib/seniorLivingData';
 
 export async function getStaticPaths() {
   const careTypes = [
@@ -15,18 +15,283 @@ export async function getStaticPaths() {
   return careTypes.map((care) => ({ params: { care } }));
 }
 
+type CareTypeContent = {
+  h1: string;
+  metaTitle: string;
+  metaDesc: string;
+  kicker: string;
+  lead: string;
+  costRange: string;
+  costNote: string;
+  aboutParagraphs: string[];
+  faq: Array<{ q: string; a: string }>;
+};
+
+const CARE_CONTENT: Record<string, CareTypeContent> = {
+  'assisted-living': {
+    h1: 'Assisted Living Communities',
+    metaTitle: 'Find Assisted Living Communities | SilverTech Directory',
+    metaDesc: 'Compare assisted living communities near you. License numbers, Medicare-linked records, and verified contact data — no referral fees, no sales calls.',
+    kicker: 'Commission-Free National Directory',
+    lead: 'Find assisted living communities near you. License numbers, Medicare-linked records, and direct operator contact — without being handed off to a referral agency.',
+    costRange: '$3,500 – $6,500 / month',
+    costNote: 'National median. Varies by location, unit size, and care level.',
+    aboutParagraphs: [
+      'Assisted living is designed for older adults who need help with daily activities — bathing, dressing, medication management, or meals — but do not require the around-the-clock skilled nursing care provided in a nursing home. Most communities offer private or semi-private apartments, shared dining, activity programming, and on-site staff available day and night.',
+      'Choosing the right community means understanding what is actually included in the base rate. Some communities charge a flat monthly fee; others add separate charges for every service tier. Before comparing costs, families should ask for a written fee schedule and clarify exactly what triggers an additional charge, when a resident might be asked to move to a higher level of care, and what that transition process looks like.',
+      'SilverTech tracks assisted living communities across every state, with license numbers, CMS-linked records, and verified contact details surfaced directly on each listing. The goal is to give families a stronger starting point for their own research before they call or schedule a tour — without a commission-driven intermediary shaping what they see.',
+    ],
+    faq: [
+      {
+        q: 'What is the difference between assisted living and a nursing home?',
+        a: 'Assisted living communities provide support with daily activities (bathing, dressing, meals, medication) in a residential setting. Nursing homes — also called skilled nursing facilities — provide 24-hour medical care and rehabilitation services for individuals with complex health needs. Assisted living is not a clinical setting; nursing homes are. If a resident\'s health needs increase beyond what an assisted living community can manage, a transfer to skilled nursing is usually required.',
+      },
+      {
+        q: 'What does assisted living typically cost?',
+        a: 'Nationally, assisted living costs range from roughly $3,500 to $6,500 per month, with significant variation by state, city, and individual community. Urban markets in California, New York, and the Pacific Northwest tend to be higher; rural markets in the Midwest and South tend to be lower. The base rate often covers housing, meals, and basic personal care — but medication management, additional therapy services, and higher acuity care frequently carry extra charges.',
+      },
+      {
+        q: 'Does Medicare pay for assisted living?',
+        a: 'Medicare does not cover assisted living costs. Medicare pays for short-term skilled nursing care and some home health services, but it does not cover custodial care — which is what assisted living primarily provides. Medicaid may cover some assisted living costs in certain states through home and community-based waiver programs, though eligibility, coverage limits, and waiting lists vary widely by state.',
+      },
+      {
+        q: 'How do I verify that an assisted living community is licensed?',
+        a: 'Assisted living licensing is administered at the state level, so the verification process varies by state. Each community\'s listing on SilverTech surfaces the state license number when one is available, and the state regulations pages link directly to each state\'s licensing agency verification tool. You can also request a copy of the most recent inspection report directly from the facility or from the state oversight agency.',
+      },
+      {
+        q: 'What questions should I ask when touring an assisted living community?',
+        a: 'Ask how the community assesses care needs and updates care plans over time. Ask what triggers a required move to a higher level of care — and what that process looks like. Ask to see the full written fee schedule and clarify every charge beyond the base rate. Ask about staff-to-resident ratios on nights and weekends. Ask whether the community is nonprofit or for-profit and who the operating organization is. And ask to speak with a current resident\'s family member before you decide.',
+      },
+    ],
+  },
+  'memory-care': {
+    h1: 'Memory Care Communities',
+    metaTitle: 'Find Memory Care Communities | SilverTech Directory',
+    metaDesc: 'Compare memory care communities for Alzheimer\'s and dementia care. Verified license data, CMS records, and direct operator contact — no referral fees.',
+    kicker: 'Specialized Dementia Care Directory',
+    lead: 'Find memory care communities specializing in Alzheimer\'s and dementia care. Verified license numbers, secured-environment indicators, and direct operator contact.',
+    costRange: '$5,000 – $8,500 / month',
+    costNote: 'Higher than assisted living due to staffing ratios and secured environment requirements.',
+    aboutParagraphs: [
+      'Memory care is a specialized form of residential care designed for individuals living with Alzheimer\'s disease, other forms of dementia, or related cognitive conditions. Communities are typically secured to prevent wandering, staff are trained specifically in dementia care and behavioral support, and programming is designed around cognitive engagement rather than general senior activities.',
+      'The most important thing to evaluate when comparing memory care communities is not the marketing language — it is the staffing model. Ask how many staff are on the floor per resident during the day, and critically, how many are on overnight. Ask about staff turnover and how long the director of nursing has been in the role. High turnover is one of the clearest signals of an unstable care environment.',
+      'Memory care typically costs more than standard assisted living because of the higher staffing ratios, training requirements, and physical plant required for a secured community. SilverTech tracks memory care communities nationally, surfaces state license numbers where available, and keeps the state oversight and inspection tools alongside each directory so families can verify what operators claim.',
+    ],
+    faq: [
+      {
+        q: 'What is the difference between memory care and assisted living?',
+        a: 'Memory care communities are specifically designed for individuals with Alzheimer\'s, dementia, or other cognitive impairments. They offer secured or controlled-access environments to prevent wandering, higher staff-to-resident ratios, and staff trained specifically in dementia care and behavioral response. Standard assisted living communities may have a memory care wing or unit, or may decline to admit residents whose cognitive needs exceed what general staff are trained to manage.',
+      },
+      {
+        q: 'When is it time to consider memory care?',
+        a: 'Families typically begin researching memory care when a loved one begins wandering or getting lost, when behavioral changes become difficult to manage safely at home, when personal hygiene and medication management have broken down, or when caregiver exhaustion has reached a level that is unsafe for both the caregiver and the person with dementia. Earlier planning — before a crisis — allows families to visit communities, understand costs, and make a considered choice rather than an emergency placement.',
+      },
+      {
+        q: 'How do I evaluate the quality of a memory care community?',
+        a: 'Look at staffing ratios on all shifts — day, evening, and overnight. Ask about staff training requirements and how long the administrator and director of nursing have been in their roles. Request the most recent state inspection report. Ask how the community handles behavioral symptoms like agitation or sundowning. Walk the secured areas and notice whether the environment feels calm or chaotic. And ask to speak with families of current residents, not just staff.',
+      },
+      {
+        q: 'Does Medicare or Medicaid pay for memory care?',
+        a: 'Medicare does not cover ongoing memory care residential costs. Medicaid may cover memory care in some states through Home and Community-Based Services (HCBS) waiver programs, but coverage, availability, and waiting lists vary significantly by state. Long-term care insurance policies may cover memory care if purchased before a diagnosis. Many families ultimately pay privately, which is why early financial planning and understanding of contract terms is critical.',
+      },
+      {
+        q: 'What should a memory care contract include?',
+        a: 'The contract should clearly define the base rate and every service that triggers an additional charge. It should explain the criteria and process for requiring a move to skilled nursing. It should describe what happens if a resident runs out of funds — whether the community accepts Medicaid and under what conditions. And it should include the staffing ratios the community commits to maintaining. Have an elder law attorney review the contract before signing.',
+      },
+    ],
+  },
+  'nursing-homes': {
+    h1: 'Nursing Homes & Skilled Nursing Facilities',
+    metaTitle: 'Find Nursing Homes & Skilled Nursing Facilities | SilverTech Directory',
+    metaDesc: 'Compare nursing homes and skilled nursing facilities near you. CMS certification numbers, inspection records, and direct contact — no referral fees.',
+    kicker: 'Skilled Nursing Care Directory',
+    lead: 'Find nursing homes and skilled nursing facilities near you. CMS certification numbers, Medicare-linked records, and state inspection tools alongside every listing.',
+    costRange: '$8,000 – $11,500 / month',
+    costNote: 'Semi-private room. Private rooms are typically 10–20% higher.',
+    aboutParagraphs: [
+      'Nursing homes — formally called skilled nursing facilities (SNFs) — provide 24-hour medical supervision and rehabilitation services for individuals who require a level of care that cannot be safely delivered in an assisted living or home setting. This includes post-acute recovery after surgery or hospitalization, complex wound care, intravenous therapy, and ongoing management of conditions like advanced Parkinson\'s, ALS, or late-stage dementia.',
+      'Medicare covers short-term skilled nursing facility stays — up to 100 days following a qualifying hospital admission — under specific conditions. After the Medicare-covered period ends, the costs shift to private pay or Medicaid. Understanding the difference between short-term post-acute rehab and long-term custodial care is essential before a placement decision, because the payment and discharge rules are very different.',
+      'The CMS Five-Star Quality Rating system, nursing home compare data, and state inspection reports are the most objective tools families have for evaluating nursing home quality. SilverTech surfaces CMS certification numbers on every listing where they\'re available, which links directly to the federal quality and inspection database. Using those records alongside a physical visit gives families the most complete picture.',
+    ],
+    faq: [
+      {
+        q: 'How does Medicare cover nursing home costs?',
+        a: 'Medicare Part A covers skilled nursing facility care for up to 100 days per benefit period after a qualifying hospital stay of at least 3 days. Days 1–20 are covered at 100%. Days 21–100 require a daily copayment (over $200/day in 2024). After day 100, Medicare pays nothing. Coverage requires that the patient receive skilled care — nursing, physical therapy, or speech therapy — on a daily basis. Custodial care (help with daily activities without skilled needs) is not covered by Medicare.',
+      },
+      {
+        q: 'What is the CMS Five-Star Rating and how should I use it?',
+        a: 'The Centers for Medicare and Medicaid Services (CMS) assigns nursing homes a 1–5 star rating based on health inspections, staffing levels, and quality measures. A 5-star rating is above average; a 1-star rating is below average. The rating is a useful screening tool but not a complete picture. Families should read the full inspection reports — not just the star summary — and pay particular attention to the "Health Inspections" sub-rating, which reflects actual survey findings rather than self-reported data.',
+      },
+      {
+        q: 'What is the difference between a nursing home and a rehabilitation center?',
+        a: 'In practice, many nursing homes function as both. Short-term rehabilitation is the skilled nursing care Medicare covers after hospitalization — physical therapy, occupational therapy, and recovery. Long-term care nursing home beds are for individuals who need ongoing 24-hour skilled nursing or custodial support that cannot be provided at home or in assisted living. The same building may have both short-term rehab and long-term care units, often with different staffing models and environments.',
+      },
+      {
+        q: 'When does Medicaid begin covering nursing home costs?',
+        a: 'Medicaid covers nursing home care for individuals who meet both medical and financial eligibility criteria. Financially, Medicaid is means-tested — most states require that an individual spend down their assets to very low levels before Medicaid kicks in. Rules vary by state, and elder law attorneys often help families navigate the spend-down process, asset protection strategies, and Medicaid application. Planning ahead is critical because Medicaid look-back rules can affect gifts and transfers made up to 5 years prior.',
+      },
+      {
+        q: 'How do I report a concern about a nursing home?',
+        a: 'Concerns about nursing home care can be reported to the state long-term care ombudsman program, which advocates for residents and investigates complaints. The state licensing agency (which conducts inspections) also accepts complaints that can trigger an unannounced survey. CMS\'s national complaint database also accepts reports. Each state\'s regulatory hub on SilverTech links directly to the ombudsman and complaint intake resources for that state.',
+      },
+    ],
+  },
+  'independent-living': {
+    h1: 'Independent Living Communities',
+    metaTitle: 'Find Independent Living Communities | SilverTech Directory',
+    metaDesc: 'Compare independent living communities for active older adults. Verified listings, direct operator contact, and local market data — no referral fees.',
+    kicker: 'Active Senior Living Directory',
+    lead: 'Find independent living communities for active older adults. Compare amenities, pricing benchmarks, and local market depth — without referral agency pressure.',
+    costRange: '$2,500 – $5,000 / month',
+    costNote: 'Includes housing, meals, and community amenities. Care services billed separately.',
+    aboutParagraphs: [
+      'Independent living communities — sometimes called retirement communities, senior apartments, or active adult communities — are designed for older adults who are largely self-sufficient but want the convenience of community living, maintenance-free housing, dining options, and social programming. Unlike assisted living, independent living does not include personal care services as part of the standard offering. Residents are expected to be able to manage their own daily activities without staff support.',
+      'The range of independent living options is wide. Some communities are apartment complexes with few shared amenities beyond a fitness center. Others are full-service campuses with multiple dining venues, transportation, wellness programs, cultural events, and a broad social calendar. The key questions are what is included in the monthly fee, what services are available for an additional charge, and whether the community is part of a larger campus that includes assisted living or skilled nursing should care needs change.',
+      'Independent living is one of the few senior care categories not heavily regulated — most states do not license independent living communities the same way they license assisted living or nursing homes. This means the verification tools that apply to other care types are less relevant here. The most important evaluation tools are a physical visit, conversations with current residents, and a careful read of the residency agreement and fee schedule.',
+    ],
+    faq: [
+      {
+        q: 'Who is independent living designed for?',
+        a: 'Independent living communities are designed for adults generally 55 and older who are largely self-sufficient — able to manage daily activities like bathing, dressing, and medication without staff support — but who want the community, convenience, and maintenance-free lifestyle that a senior living campus provides. Most communities serve adults in their late 60s through 80s who are active and mobile but want to downsize, reduce home maintenance, and increase social connection.',
+      },
+      {
+        q: 'What is the difference between independent living and assisted living?',
+        a: 'The primary difference is care. Independent living does not include personal care services — residents are expected to be self-sufficient. Assisted living provides staff support for daily activities like bathing, dressing, medication management, and meals for residents who need that level of help. Independent living is typically less expensive. If a resident\'s needs increase beyond what independent living can support, they would typically need to move to an assisted living community — which may or may not be on the same campus.',
+      },
+      {
+        q: 'Does Medicare or Medicaid cover independent living costs?',
+        a: 'No. Neither Medicare nor Medicaid covers independent living costs. Because independent living is primarily housing — not care — it falls outside the scope of both programs. Costs are paid privately, through long-term care insurance (which may or may not cover independent living depending on the policy), or through veterans\' benefits in some cases.',
+      },
+      {
+        q: 'What is a life plan community (CCRC) and how is it different from independent living?',
+        a: 'A life plan community — also called a continuing care retirement community (CCRC) — combines independent living with assisted living, memory care, and skilled nursing on a single campus. The key difference is continuity: in a CCRC, residents can transition to higher levels of care without leaving the community. Most CCRCs require a substantial entrance fee (often $100,000 to $1 million or more) in addition to monthly fees, in exchange for guaranteed access to the full care continuum.',
+      },
+      {
+        q: 'What should I look for when visiting an independent living community?',
+        a: 'Pay attention to whether current residents seem genuinely engaged and satisfied — ask them, not just staff. Review the full fee schedule carefully: what triggers extra charges, how often fees have increased historically, and what happens if your needs change. Ask whether the community is part of a larger campus with higher care levels. Understand the terms of the residency agreement and what it takes to leave. And visit at multiple times of day to get a realistic picture of the environment.',
+      },
+    ],
+  },
+  'residential-care': {
+    h1: 'Residential Care Homes',
+    metaTitle: 'Find Residential Care Homes | SilverTech Directory',
+    metaDesc: 'Compare residential care homes — small-home assisted living in a house setting. Verified license data and local market coverage.',
+    kicker: 'Small-Home Care Directory',
+    lead: 'Find licensed residential care homes — small-home assisted living with 6 or fewer residents. A quieter, more personal alternative to larger assisted living communities.',
+    costRange: '$3,000 – $6,500 / month',
+    costNote: 'Typically all-inclusive. Fewer residents means more individual attention.',
+    aboutParagraphs: [
+      'Residential care homes — sometimes called board and care homes, adult family homes, or adult residential facilities depending on the state — are licensed care facilities operating in a standard residential house rather than a purpose-built community. They typically serve 6 or fewer residents and provide personal care, meals, and supervision in a home environment. For families who find large assisted living communities impersonal or institutional, residential care homes can offer a meaningful alternative.',
+      'The quality of residential care homes varies significantly. A well-run residential care home can offer a higher staff-to-resident ratio than a large community at a lower cost, with a more family-like environment. A poorly-run home may have inadequate staffing, deferred maintenance, and inconsistent oversight. State licensing agencies regulate and inspect residential care homes, but enforcement capacity and inspection frequency vary considerably by state.',
+      'Because residential care homes are typically run by small operators — often a family or individual caregiver — they may not have the marketing infrastructure of a large senior living company. SilverTech tracks licensed residential care homes nationally and surfaces the state license number on each listing, which allows families to pull inspection records from the state oversight agency before they visit.',
+    ],
+    faq: [
+      {
+        q: 'What is a residential care home?',
+        a: 'A residential care home is a licensed care facility operating in a house or residential setting, typically serving 6 or fewer residents. Services generally include personal care (help with bathing, dressing, and medication), meals, and 24-hour supervision. They are known by different names in different states: board and care homes, adult family homes, adult residential facilities, or group homes for adults. Licensing and oversight requirements vary by state.',
+      },
+      {
+        q: 'How do residential care homes compare to assisted living communities?',
+        a: 'Residential care homes are smaller, typically lower in cost, and more personal than large assisted living communities. The tradeoff is that they offer fewer amenities — no activity director, no fitness center, no variety of dining venues — and the care quality depends heavily on the specific home operator. Large assisted living communities have more standardized oversight, more amenities, and more staff diversity, but can feel institutional to residents used to a home environment.',
+      },
+      {
+        q: 'How do I verify that a residential care home is licensed?',
+        a: 'Residential care homes are licensed at the state level. The license number on a SilverTech listing links to the state licensing agency, where you can look up the current license status and pull inspection reports. Always verify the license is current before placing a family member. You can also contact the state long-term care ombudsman to ask whether there are any active complaints or prior violations associated with a specific home.',
+      },
+      {
+        q: 'What questions should I ask before choosing a residential care home?',
+        a: 'Ask to see the current license and the most recent inspection report. Ask about staffing — who provides care overnight, and what happens if the primary caregiver is sick or on vacation. Ask about the care scope: what level of medical needs can the home manage, and what would require a transfer to a higher level of care? Ask for a written fee schedule. And ask to speak with a current resident\'s family member, not just the operator.',
+      },
+    ],
+  },
+  'adult-day-services': {
+    h1: 'Adult Day Services Programs',
+    metaTitle: 'Find Adult Day Services Programs | SilverTech Directory',
+    metaDesc: 'Compare adult day services programs for older adults and caregivers. Verified program listings and local coverage — no referral fees.',
+    kicker: 'Daytime Care & Caregiver Respite Directory',
+    lead: 'Find adult day services programs — structured daytime care for older adults that gives family caregivers essential respite without a full residential placement.',
+    costRange: '$75 – $150 / day',
+    costNote: 'Typically half the cost of full residential care. Medicaid may cover in some states.',
+    aboutParagraphs: [
+      'Adult day services programs — also called adult day health centers or adult day care — provide structured daytime supervision, social programming, health monitoring, and sometimes medical services for older adults in a community-based setting. Participants attend during the day and return home in the evening. Programs are designed both for the older adult who benefits from structure, social engagement, and professional oversight, and for family caregivers who need daytime respite to work, rest, or manage other responsibilities.',
+      'Programs range from social models focused on activities and meals, to medical models that provide nursing oversight, medication management, physical therapy, and health monitoring. Some programs specialize in dementia care with secured environments and specialized programming. The right model depends on the participant\'s needs and the caregiver\'s goals.',
+      'Adult day services are often one of the most cost-effective forms of professional care available, at roughly $75–$150 per day in most markets. Medicaid waiver programs cover adult day services in many states, and the Veterans Administration covers them for qualifying veterans. For families trying to delay or avoid residential placement while maintaining a caregiver\'s ability to work, adult day services are frequently the most sustainable solution.',
+    ],
+    faq: [
+      {
+        q: 'Who benefits from adult day services?',
+        a: 'Adult day services benefit two populations simultaneously: the older adult and the family caregiver. Older adults benefit from structured social programming, professional health monitoring, and meaningful activity during the day. Family caregivers benefit from predictable, reliable respite — time to work, rest, or manage other responsibilities without worrying about their loved one\'s supervision and safety. Programs are particularly valuable for individuals with early to moderate dementia who need structure and engagement but do not yet require full residential care.',
+      },
+      {
+        q: 'What is the difference between a social model and medical model adult day program?',
+        a: 'Social model programs focus on activities, socialization, and meals, with minimal health services. Medical model programs — sometimes called adult day health centers — provide nursing oversight, medication management, physical and occupational therapy, and monitoring for individuals with more complex health needs. Some states fund only medical model programs through Medicaid; others fund both. The right model depends on the participant\'s medical needs and the goals of the care arrangement.',
+      },
+      {
+        q: 'Does Medicaid cover adult day services?',
+        a: 'Medicaid covers adult day services in many states through Home and Community-Based Services (HCBS) waiver programs. Eligibility, coverage limits, and waiting lists vary significantly by state. Some states have robust adult day Medicaid programs; others have limited coverage or long waits. The state regulations pages on SilverTech link to each state\'s Medicaid program information so families can check local eligibility and coverage.',
+      },
+      {
+        q: 'How do adult day services compare in cost to residential care?',
+        a: 'Adult day services typically cost $75–$150 per day in most U.S. markets. For a family that uses 5 days per week, that is roughly $1,500–$3,000 per month — significantly less than residential assisted living or memory care. For caregivers who can work during the day while a loved one attends a program, the net cost can be substantially offset by maintained income. Adult day services are often the most cost-effective professional care arrangement for families managing early to moderate care needs.',
+      },
+    ],
+  },
+  'ccrc': {
+    h1: 'Life Plan Communities & CCRCs',
+    metaTitle: 'Find Life Plan Communities (CCRCs) | SilverTech Directory',
+    metaDesc: 'Compare continuing care retirement communities (CCRCs) and life plan communities. Contract types, cost structures, and verified listings — no referral fees.',
+    kicker: 'Continuing Care Retirement Community Directory',
+    lead: 'Find and compare life plan communities — CCRCs that offer the full care continuum on one campus. The largest financial decision in senior living deserves the most scrutiny.',
+    costRange: '$2,500 – $5,500 / month + entrance fee',
+    costNote: 'Entrance fees range from $100K to $1M+. Contract type determines what is refundable.',
+    aboutParagraphs: [
+      'A continuing care retirement community (CCRC) — increasingly called a life plan community — is a residential campus that offers the full continuum of senior care on a single site: independent living, assisted living, memory care, and skilled nursing. The defining feature is the promise of care continuity: residents move in while they are healthy and independent, knowing they can access higher levels of care on the same campus without relocating, leaving friends, or disrupting their social environment.',
+      'CCRCs typically require a significant entrance fee — ranging from $100,000 to well over $1 million depending on the contract type, location, and unit — in addition to ongoing monthly fees. The three main contract types are Type A (life care, all-inclusive), Type B (modified, with some care discounts), and Type C (fee-for-service, pay for care as needed). Understanding which contract type a community offers and what triggers additional charges is one of the most important steps in the evaluation process.',
+      'Because of the financial scale of a CCRC commitment, due diligence requirements are higher than for any other care type. Families should request the community\'s audited financial statements and have them reviewed by an independent financial advisor. They should have an elder law attorney review the residency contract before signing. And they should ask specifically about the community\'s financial health, occupancy trends, and whether it has ever been in distress, changed ownership, or been subject to a regulatory action.',
+    ],
+    faq: [
+      {
+        q: 'What are the three types of CCRC contracts?',
+        a: 'Type A (Life Care) contracts provide access to all levels of care — independent living, assisted living, and skilled nursing — at little to no additional cost beyond the standard monthly fee. These contracts typically have the highest entrance fees. Type B (Modified) contracts provide some care at discounted rates, with additional costs for higher care levels. Type C (Fee-for-Service) contracts provide housing and basic services at a lower entrance fee, with care billed at the full market rate when needed. Type A offers the most financial predictability; Type C carries the most exposure to care cost escalation.',
+      },
+      {
+        q: 'Is the entrance fee refundable?',
+        a: 'It depends entirely on the contract. Some contracts offer 0% refundability — the entrance fee is fully earned upon occupancy. Others offer declining refund schedules (e.g., 2% per month for 50 months until fully earned). Some offer 50%, 90%, or even 100% refundability to heirs or upon departure. The refundability terms are one of the most important financial variables in a CCRC contract and should be reviewed carefully by an attorney and financial advisor before signing.',
+      },
+      {
+        q: 'How do I evaluate the financial health of a CCRC?',
+        a: 'Request the community\'s most recent audited financial statements and have them reviewed by an independent financial advisor — not one affiliated with the community. Look at occupancy trends across all care levels, long-term debt levels, reserve fund adequacy, and any history of financial distress or ownership changes. Ask whether the community is accredited by CARF (Commission on Accreditation of Rehabilitation Facilities) or another body. CCRCs have failed financially, and families who paid large entrance fees have lost them — financial due diligence is not optional.',
+      },
+      {
+        q: 'What happens if I run out of money in a CCRC?',
+        a: 'This depends on the contract and the specific community. Some nonprofit CCRCs have benevolence funds for residents who outlive their financial resources; others do not. Some CCRCs accept Medicaid for skilled nursing care once a resident\'s private funds are depleted; many do not. This is one of the most critical questions to ask — and to get in writing — before signing a CCRC contract. An elder law attorney can help you understand the implications for your specific financial situation.',
+      },
+      {
+        q: 'What should I verify before signing a CCRC contract?',
+        a: 'Have an elder law attorney review the contract in full. Have an independent financial advisor review the community\'s audited financials. Confirm the contract type (A, B, or C) and exactly what triggers additional charges. Understand the entrance fee refund terms. Ask about the financial distress and ownership history. Verify accreditation status. Talk to current residents and family members of residents in the care center — not just the marketing team. This is likely the largest financial commitment of your life after a home purchase.',
+      },
+    ],
+  },
+};
+
 const { care } = Astro.params;
 const careType = care ? getCareTypeBySlug(care) : null;
 if (!careType) {
   throw new Error(`Care type not found for slug: ${care || 'unknown'}`);
 }
 
+const content = CARE_CONTENT[careType.slug];
+if (!content) {
+  throw new Error(`Content not found for care type: ${careType.slug}`);
+}
+
 const states = getSeniorLivingStates()
   .filter((state) => state.stats.careTypeCounts[careType.slug] > 0)
   .sort((a, b) => b.stats.careTypeCounts[careType.slug] - a.stats.careTypeCounts[careType.slug] || a.stateName.localeCompare(b.stateName));
 
-const title = `${careType.label} by State | SilverTech Directory`;
-const description = `Browse ${careType.label.toLowerCase()} directories by state and compare local market coverage across the country.`;
+const totalFacilities = states.reduce((sum, state) => sum + (state.stats.careTypeCounts[careType.slug] || 0), 0);
+const topStates = states.slice(0, 5).map((s) => s.stateName);
+
 const canonical = `https://silvertechdirectory.com/${careType.slug}/`;
 
 const breadcrumbSchema = {
@@ -41,15 +306,25 @@ const breadcrumbSchema = {
 const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  itemListElement: states.slice(0, 24).map((state, index) => ({
+  itemListElement: states.map((state, index) => ({
     '@type': 'ListItem',
     position: index + 1,
     name: `${careType.label} in ${state.stateName}`,
     item: `https://silvertechdirectory.com/${careType.slug}/${state.stateSlug}/`,
   })),
 };
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: content.faq.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
 ---
-<Base title={title} description={description} canonical={canonical}>
+<Base title={content.metaTitle} description={content.metaDesc} canonical={canonical}>
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
   <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
@@ -64,57 +339,68 @@ const itemListSchema = {
 
     <section class="sl-state-hero">
       <div class="sl-state-hero-bg">
-        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=80&w=2000" alt="National directory background" />
+        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=80&w=2000" alt={`${careType.label} community`} />
       </div>
       <div class="sl-state-hero-overlay"></div>
       <div class="sl-state-hero-copy">
         <div class="sl-state-hero-badge-row">
           <span class="sl-state-hero-flag" aria-hidden="true">US</span>
-          <span class="sl-state-hero-kicker">National {careType.label} Directory</span>
+          <span class="sl-state-hero-kicker">{content.kicker}</span>
         </div>
         <h1 class="sl-state-hero-title">
-          <span>{careType.label} </span>
-          <span class="sl-state-hero-accent">by State</span>
+          <span class="sl-state-hero-accent">{content.h1}</span>
         </h1>
-        <p class="sl-state-hero-lead">
-          Browse clean state-level landing pages for {careType.label.toLowerCase()} and move into city directories from there. Compare licensed providers without referral agency pressure.
-        </p>
+        <p class="sl-state-hero-lead">{content.lead}</p>
         <div class="sl-state-hero-actions">
-          <a class="sl-btn sl-btn-primary" href="#state-index">View All States</a>
-          <a class="sl-btn sl-btn-secondary" href="/search">Search All Communities</a>
+          <a class="sl-btn sl-btn-primary" href="#state-index">Browse by State</a>
+          <a class="sl-btn sl-btn-secondary" href="/search">Search All Listings</a>
         </div>
       </div>
     </section>
 
     <section class="sl-state-stats" aria-label="National coverage stats">
       <article class="sl-state-stat">
-        <p class="sl-state-stat-value">{states.length.toLocaleString()}</p>
+        <p class="sl-state-stat-value">{totalFacilities.toLocaleString()}</p>
+        <p class="sl-state-stat-label">Listings nationwide</p>
+        <p class="sl-state-stat-note">Across {states.length} states</p>
+      </article>
+      <article class="sl-state-stat">
+        <p class="sl-state-stat-value">{states.length}</p>
         <p class="sl-state-stat-label">States covered</p>
-        <p class="sl-state-stat-note">National directory depth</p>
+        <p class="sl-state-stat-note">City-level directories in each</p>
       </article>
       <article class="sl-state-stat">
-        <p class="sl-state-stat-value">100%</p>
-        <p class="sl-state-stat-label">Commission-Free</p>
-        <p class="sl-state-stat-note">Direct-to-operator contact</p>
+        <p class="sl-state-stat-value" style="font-size: 1.1rem;">{content.costRange}</p>
+        <p class="sl-state-stat-label">Typical cost</p>
+        <p class="sl-state-stat-note">{content.costNote}</p>
       </article>
       <article class="sl-state-stat">
-        <p class="sl-state-stat-value">Verified</p>
-        <p class="sl-state-stat-label">Licensing data</p>
-        <p class="sl-state-stat-note">State-sourced records</p>
-      </article>
-      <article class="sl-state-stat">
-        <p class="sl-state-stat-value">Real-Time</p>
-        <p class="sl-state-stat-label">Market context</p>
-        <p class="sl-state-stat-note">Price transparency goals</p>
+        <p class="sl-state-stat-value">0</p>
+        <p class="sl-state-stat-label">Referral fees</p>
+        <p class="sl-state-stat-note">Direct to operator. Always.</p>
       </article>
     </section>
 
-    <section class="sl-state-section" id="state-index">
+    <section class="sl-state-overview">
       <div class="sl-state-section-head">
         <div>
-          <p class="sl-state-section-kicker">Regional Directories</p>
-          <h2>States with {careType.label} Coverage</h2>
-          <p>Select a state to view city-level directories, local pricing benchmarks, and regulatory resources.</p>
+          <p class="sl-state-section-kicker">What to Know</p>
+          <h2>Understanding {content.h1}</h2>
+        </div>
+      </div>
+      <div class="sl-state-overview-copy">
+        {content.aboutParagraphs.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
+      </div>
+    </section>
+
+    <section class="sl-state-section" id="state-index">
+      <div class="sl-state-section-head sl-state-section-head--split">
+        <div>
+          <p class="sl-state-section-kicker">Browse by State</p>
+          <h2>{careType.label} by State</h2>
+          <p>Select a state to view city-level directories, local pricing benchmarks, licensing oversight, and regulatory resources.</p>
         </div>
       </div>
 
@@ -127,8 +413,60 @@ const itemListSchema = {
         ))}
       </div>
     </section>
+
+    <section class="sl-state-section">
+      <div class="sl-state-section-head">
+        <div>
+          <p class="sl-state-section-kicker">Common Questions</p>
+          <h2>Frequently asked questions about {content.h1.toLowerCase()}</h2>
+        </div>
+      </div>
+      <div class="sl-city-accordion">
+        {content.faq.map((item) => (
+          <details>
+            <summary>{item.q}</summary>
+            <p>{item.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <section class="sl-state-resources">
+      <div class="sl-state-resources-copy">
+        <p class="sl-state-section-kicker">More Resources</p>
+        <h2>Research tools for {content.h1.toLowerCase()}</h2>
+        <p>Start with the regulations page for your state, then move into city directories to compare local options.</p>
+        <div class="sl-state-trust-callout">
+          <strong>No referral fees</strong>
+          <span>SilverTech does not take placement fees. Every phone number and website on this directory connects directly to the facility — not a call center.</span>
+        </div>
+      </div>
+      <div class="sl-state-resource-grid">
+        <a class="sl-state-resource-card" href="/regulations/">
+          <strong>State Regulations</strong>
+          <span>Browse licensing rules, inspection frameworks, and oversight contacts for every state.</span>
+          <span>Open SilverTech page</span>
+        </a>
+        <a class="sl-state-resource-card" href="/search">
+          <strong>Search All Listings</strong>
+          <span>Search {totalFacilities.toLocaleString()} {careType.label.toLowerCase()} listings by name, city, or zip code.</span>
+          <span>Open SilverTech search</span>
+        </a>
+        <a class="sl-state-resource-card" href="/guides/tour-questions">
+          <strong>Tour Questions Guide</strong>
+          <span>20 questions to ask on every tour — care-type specific guides built for families, not facilities.</span>
+          <span>Open SilverTech guide</span>
+        </a>
+        <a class="sl-state-resource-card" href="/honest-care">
+          <strong>Why We Built This</strong>
+          <span>No placement fees. No sales calls to facilities. No referral games. The mission behind SilverTech.</span>
+          <span>Open SilverTech page</span>
+        </a>
+      </div>
+    </section>
   </div>
 
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
 </Base>

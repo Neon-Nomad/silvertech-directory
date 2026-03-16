@@ -146,7 +146,7 @@ const activeCities = stateData.cities
   .filter((city) => city.careTypeCounts[careType.slug] > 0)
   .sort((a, b) => b.careTypeCounts[careType.slug] - a.careTypeCounts[careType.slug] || a.cityName.localeCompare(b.cityName));
 const featuredCities = activeCities.slice(0, 4);
-const additionalCities = activeCities.slice(4, 20);
+const additionalCities = activeCities.slice(4);
 
 const licensedCount = scopedFacilities.filter((facility) => Boolean(facility.licenseNumber)).length;
 const websiteCount = scopedFacilities.filter((facility) => Boolean(facility.websiteUrl)).length;
@@ -298,6 +298,49 @@ if (supportCards.length < 4 && (regulatoryContext.agingAgency?.findLocalUrl || r
 }
 
 const topCityCountLabel = featuredCities.length === 1 ? 'city hub' : 'city hubs';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: `How many ${careSentenceLabel} communities are there in ${stateData.stateName}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `SilverTech currently tracks ${scopedFacilities.length.toLocaleString()} ${careSentenceLabel} ${scopedFacilities.length === 1 ? 'listing' : 'listings'} across ${activeCities.length.toLocaleString()} ${activeCities.length === 1 ? 'city' : 'cities'} in ${stateData.stateName}. ${licenseCoverageSummary.charAt(0).toUpperCase() + licenseCoverageSummary.slice(1)}.`,
+      },
+    },
+    {
+      '@type': 'Question',
+      name: `What does ${careSentenceLabel} cost in ${stateData.stateName}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `Typical monthly costs for ${careSentenceLabel} in ${stateData.stateName} often land in the ${costBandLabel} range. Actual costs vary by city, unit size, acuity level, and which services are included in the base rate versus billed separately. Urban markets and coastal areas typically run higher than rural and midwestern markets.`,
+      },
+    },
+    {
+      '@type': 'Question',
+      name: `How is ${careSentenceLabel} regulated in ${stateData.stateName}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: regulatoryContext.licensing
+          ? `${regulatoryContext.licensing.agencyName} oversees licensing, inspections, and complaint handling for ${careSentenceLabel} in ${stateData.stateName}. Families can verify license status and request inspection reports through the state licensing agency. The SilverTech regulations page for ${stateData.stateName} links directly to verification tools and complaint resources.`
+          : `${careSentenceLabel} in ${stateData.stateName} is regulated by the state licensing agency, which oversees inspections, complaint handling, and license verification. The SilverTech regulations page for ${stateData.stateName} links to the relevant oversight resources.`,
+      },
+    },
+    {
+      '@type': 'Question',
+      name: `Which cities in ${stateData.stateName} have the most ${careSentenceLabel} options?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: topHubNames.length > 0
+          ? `The cities with the largest ${careSentenceLabel} market presence in ${stateData.stateName} include ${[...topHubNames].join(', ')}. Smaller markets and suburban counties are also covered in the SilverTech directory across all ${activeCities.length.toLocaleString()} cities in the state.`
+          : `${stateData.stateName} ${careSentenceLabel} options are distributed across ${activeCities.length.toLocaleString()} cities and communities. Use the city directories on this page to compare local market depth.`,
+      },
+    },
+  ],
+};
 ---
 <Base title={title} description={description} canonical={canonical}>
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
@@ -501,4 +544,5 @@ const topCityCountLabel = featuredCities.length === 1 ? 'city hub' : 'city hubs'
 
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
 </Base>
