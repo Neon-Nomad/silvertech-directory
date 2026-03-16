@@ -38,9 +38,6 @@ const HonestCarePage = lazy(() => import('@/features/public/transparency/HonestC
 const MethodologyPage = lazy(() => import('@/features/public/transparency/MethodologyPage').then((m) => ({ default: m.MethodologyPage })));
 const Blog = lazy(() => import('./features/public/blog/Blog').then((m) => ({ default: m.Blog })));
 const StateHubHome = lazy(() => import('@/features/locations/hub/StateHubHome').then((m) => ({ default: m.StateHubHome })));
-const StatePageTemplate = lazy(() => import('@/features/locations/StatePageTemplate').then((m) => ({ default: m.StatePageTemplate })));
-const CityPageTemplate = lazy(() => import('@/features/locations/CityPageTemplate').then((m) => ({ default: m.CityPageTemplate })));
-const CareTypeDirectoryPage = lazy(() => import('@/features/locations/CareTypeDirectoryPage').then((m) => ({ default: m.CareTypeDirectoryPage })));
 const StateMedicaidPage = lazy(() => import('@/features/locations/hub/StateMedicaidPage').then((m) => ({ default: m.StateMedicaidPage })));
 const StateRegulatoryHub = lazy(() => import('@/features/regulatory/StateRegulatoryHub').then((m) => ({ default: m.StateRegulatoryHub })));
 const StateRulesPage = lazy(() => import('@/features/locations/hub/StateRulesPage').then((m) => ({ default: m.StateRulesPage })));
@@ -171,22 +168,16 @@ const LegacyDashboardEditRedirect: React.FC = () => {
   return <Navigate to={`/dashboard/facility/${id}/edit`} replace />;
 };
 
-const CareTypeIndexRoute: React.FC = () => {
+// Astro owns all /{care}/*, /{care}/{state}/*, /{care}/{state}/{city}/* routes.
+// When React Router intercepts these via client-side navigation, force a hard
+// reload so Netlify serves the pre-rendered Astro static page instead.
+const AstroRoute: React.FC = () => {
   const { careType } = useParams<{ careType?: string }>();
   if (!isCareTypeRouteSlug(careType)) return <Navigate to="/" replace />;
-  return <CareTypeDirectoryPage />;
-};
-
-const CareTypeStateRoute: React.FC = () => {
-  const { careType } = useParams<{ careType?: string }>();
-  if (!isCareTypeRouteSlug(careType)) return <Navigate to="/" replace />;
-  return <StatePageTemplate />;
-};
-
-const CareTypeCityRoute: React.FC = () => {
-  const { careType } = useParams<{ careType?: string }>();
-  if (!isCareTypeRouteSlug(careType)) return <Navigate to="/" replace />;
-  return <CityPageTemplate />;
+  React.useEffect(() => {
+    window.location.replace(window.location.pathname + window.location.search);
+  }, []);
+  return null;
 };
 
 function App() {
@@ -320,10 +311,11 @@ function App() {
                     <Route path="/regulations/:state/:topic" element={<StateRegulationTopicPage />} />
                     <Route path="/regulatory-library/*" element={<LegacyRouteRetired />} />
 
-                    {/* APFM-style directory routes */}
-                    <Route path="/:careType" element={<CareTypeIndexRoute />} />
-                    <Route path="/:careType/:state" element={<CareTypeStateRoute />} />
-                    <Route path="/:careType/:state/:city" element={<CareTypeCityRoute />} />
+                    {/* Directory routes — owned by Astro static pages, hard reload to let Netlify serve them */}
+                    <Route path="/:careType" element={<AstroRoute />} />
+                    <Route path="/:careType/:state" element={<AstroRoute />} />
+                    <Route path="/:careType/:state/:city" element={<AstroRoute />} />
+                    <Route path="/:careType/:state/:city/:facilitySlug" element={<AstroRoute />} />
 
                     {/* Retired public directory routes */}
                     <Route path="/senior-living/*" element={<LegacyRouteRetired />} />
