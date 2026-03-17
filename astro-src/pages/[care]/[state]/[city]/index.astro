@@ -245,19 +245,16 @@ const getFacilityMark = (name: string): string =>
     .join('')
     .toUpperCase();
 
-const nearbyCareCities =
-  facilities.length < 8
-    ? cityData.nearbyCities
-        .map((entry) => {
-          const summary = getSeniorLivingCity(entry.stateSlug, entry.citySlug);
-          return {
-            ...entry,
-            careCount: summary?.careTypeCounts[careType.slug] || 0,
-          };
-        })
-        .filter((entry) => entry.careCount > 0)
-        .slice(0, 4)
-    : [];
+const nearbyCareCities = cityData.nearbyCities
+  .map((entry) => {
+    const summary = getSeniorLivingCity(entry.stateSlug, entry.citySlug);
+    return {
+      ...entry,
+      careCount: summary?.careTypeCounts[careType.slug] || 0,
+    };
+  })
+  .filter((entry) => entry.careCount > 0)
+  .slice(0, 5);
 
 const rawHospitals = getHospitalsForCity(cityData.stateAbbr, cityData.cityName, 3);
 const hospitalCards =
@@ -373,11 +370,49 @@ const regulationItems = [
   },
 ];
 
-faqSchema.mainEntity = regulationItems.map((item) => ({
-  '@type': 'Question',
-  name: item.title.replace(careSentenceLabel, touringLabel),
-  acceptedAnswer: { '@type': 'Answer', text: item.body },
-}));
+const hospitalFaqAnswer = hospitalCards.length > 0
+  ? `${toSentenceList(hospitalCards.map((h) => h.name).slice(0, 3))} ${hospitalCards.length === 1 ? 'is' : 'are'} among the hospital systems near ${displayCityName}. Hospital proximity is often part of the care decision when families need specialist access, rehabilitation, or hospital discharge coordination.`
+  : `Hospital access and specialist availability are factors many families consider when comparing ${careSentenceLabel} options in ${displayCityName}, ${cityData.stateName}.`;
+
+faqSchema.mainEntity = [
+  {
+    '@type': 'Question',
+    name: `How many ${careUnitPlural} are in ${displayCityName}, ${cityData.stateName}?`,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: `SilverTech currently lists ${facilities.length.toLocaleString()} ${facilities.length === 1 ? careUnitSingular : careUnitPlural} in ${displayCityName}, ${cityData.stateName}. Of these, ${licensedCount.toLocaleString()} show a state license number in our directory.`,
+    },
+  },
+  {
+    '@type': 'Question',
+    name: `How many ${careSentenceLabel} facilities in ${displayCityName} are state-licensed?`,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: `${licensedCount.toLocaleString()} of the ${facilities.length.toLocaleString()} ${careSentenceLabel} facilities listed in ${displayCityName} show a state license number — ${licensedPct}% of the local directory. You can verify any license number directly with the ${regulatoryContext.licensing?.agencyName || `${cityData.stateName} state licensing agency`}.`,
+    },
+  },
+  {
+    '@type': 'Question',
+    name: `Which hospitals are near ${careSentenceLabel} facilities in ${displayCityName}?`,
+    acceptedAnswer: { '@type': 'Answer', text: hospitalFaqAnswer },
+  },
+  {
+    '@type': 'Question',
+    name: `Do ${careSentenceLabel} facilities in ${displayCityName} accept Medicare?`,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: `${medicareCount.toLocaleString()} ${careSentenceLabel} ${medicareCount === 1 ? 'facility' : 'facilities'} in ${displayCityName} ${medicareCount === 1 ? 'has' : 'have'} a Medicare-linked record in our directory. Medicare does not cover ongoing assisted living or memory care costs, but Medicare-linked records indicate federal certification for skilled nursing and rehabilitative care services.`,
+    },
+  },
+  {
+    '@type': 'Question',
+    name: `How do I compare ${careSentenceLabel} options in ${displayCityName}, ${cityData.stateName}?`,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: `Start by reviewing the license number, Medicare linkage, and direct contact information for each facility listed on this page. Visit at least three communities in person — ask about staffing ratios, care level tiers, and what triggers a required move to a higher level of care. The ${cityData.stateName} regulations page on SilverTech links to the state licensing database and inspection records so you can verify any facility before scheduling a tour.`,
+    },
+  },
+];
 
 const allCareTypes = getCareTypes();
 const crossCareLinks = allCareTypes
