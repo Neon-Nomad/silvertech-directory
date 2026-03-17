@@ -2,10 +2,12 @@
 import Base from '../../../layouts/Base.astro';
 import {
   getCareTypeBySlug,
+  getCareTypes,
   getCostBand,
   getRegulatoryContext,
   getSeniorLivingState,
 } from '../../../lib/seniorLivingData';
+import { getStateCost, getStateVsNationalPct, NATIONAL_MEDIANS, type CareTypeCostKey } from '../../../lib/state_cost_lookup';
 
 export async function getStaticPaths() {
   const careTypes = [
@@ -162,6 +164,38 @@ const topHubSentence =
     : `Local markets inside ${stateData.stateName} can vary widely in operator mix, specialist access, and how clearly communities explain care transitions.`;
 const costBand = getCostBand(careType.slug);
 const costBandLabel = `$${costBand.low.toLocaleString()} - $${costBand.high.toLocaleString()}`;
+
+const careTypeCostKey: CareTypeCostKey | null =
+  careType.slug === 'assisted-living' ? 'assisted-living' :
+  careType.slug === 'memory-care' ? 'memory-care' :
+  careType.slug === 'independent-living' ? 'independent-living' :
+  careType.slug === 'nursing-homes' ? 'nursing-home' :
+  null;
+
+const stateMedianCost = careTypeCostKey ? getStateCost(stateData.stateAbbr, careTypeCostKey) : null;
+const stateVsNationalPct = careTypeCostKey ? getStateVsNationalPct(stateData.stateAbbr, careTypeCostKey) : null;
+const nationalMedian = careTypeCostKey ? NATIONAL_MEDIANS[careTypeCostKey] : null;
+const stateCostLabel = stateMedianCost ? formatCurrency(stateMedianCost) : null;
+const stateCostNote = stateMedianCost && stateVsNationalPct !== null
+  ? stateVsNationalPct === 0
+    ? `Near national median of ${formatCurrency(nationalMedian!)}/mo`
+    : stateVsNationalPct > 0
+      ? `${stateVsNationalPct}% above national median`
+      : `${Math.abs(stateVsNationalPct)}% below national median`
+  : null;
+
+const allCareTypes = getCareTypes();
+const crossCareLinks = allCareTypes
+  .filter((ct) => ct.slug !== careType.slug)
+  .map((ct) => {
+    const count = stateData.cities.reduce(
+      (sum, city) => sum + (city.careTypeCounts[ct.slug as keyof typeof city.careTypeCounts] || 0),
+      0,
+    );
+    return { slug: ct.slug, label: ct.label, count, href: `/${ct.slug}/${stateData.stateSlug}/` };
+  })
+  .filter((ct) => ct.count > 0);
+
 const currentYear = new Date().getFullYear();
 const regulatoryContext = getRegulatoryContext(stateData.stateSlug);
 const fourthStatLabel = medicareCount > 0 ? 'Medicare-linked records' : 'Official websites listed';
@@ -316,7 +350,9 @@ const faqSchema = {
       name: `What does ${careSentenceLabel} cost in ${stateData.stateName}?`,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: `Typical monthly costs for ${careSentenceLabel} in ${stateData.stateName} often land in the ${costBandLabel} range. Actual costs vary by city, unit size, acuity level, and which services are included in the base rate versus billed separately. Urban markets and coastal areas typically run higher than rural and midwestern markets.`,
+        text: stateMedianCost && stateVsNationalPct !== null
+          ? `The ${stateData.stateName} state median for ${careSentenceLabel} is ${formatCurrency(stateMedianCost)}/month${stateVsNationalPct !== 0 ? `, which is ${Math.abs(stateVsNationalPct)}% ${stateVsNationalPct > 0 ? 'above' : 'below'} the national median of ${formatCurrency(nationalMedian!)}/month` : `, in line with the national median of ${formatCurrency(nationalMedian!)}/month`}. Actual costs vary by city, unit size, acuity level, and which services are included in the base rate versus billed separately.`
+          : `Typical monthly costs for ${careSentenceLabel} in ${stateData.stateName} often land in the ${costBandLabel} range. Actual costs vary by city, unit size, acuity level, and which services are included in the base rate versus billed separately. Urban markets and coastal areas typically run higher than rural and midwestern markets.`,
       },
     },
     {
@@ -481,13 +517,23 @@ const faqSchema = {
         <article class="sl-state-method-card sl-state-method-card--cost">
           <p class="sl-state-method-kicker">Cost Considerations</p>
           <h3>{stateData.stateName} cost range</h3>
-          <p>
-            Typical monthly costs for {careSentenceLabel} often land between {costBandLabel}, depending on acuity, unit type,
-            therapies, and the mix of services included in the base rate.
-          </p>
+          {stateMedianCost ? (
+            <p>
+              The {stateData.stateName} state median for {careSentenceLabel} is {formatCurrency(stateMedianCost)}/month.
+              {stateVsNationalPct !== null && stateVsNationalPct !== 0
+                ? ` That is ${Math.abs(stateVsNationalPct)}% ${stateVsNationalPct > 0 ? 'above' : 'below'} the national median of ${formatCurrency(nationalMedian!)}/month.`
+                : ` That is in line with the national median.`}
+              {' '}Costs vary by city, unit size, acuity level, and included services.
+            </p>
+          ) : (
+            <p>
+              Typical monthly costs for {careSentenceLabel} often land between {costBandLabel}, depending on acuity, unit type,
+              therapies, and the mix of services included in the base rate.
+            </p>
+          )}
           <div class="sl-state-cost-pill">
-            <span>Statewide range</span>
-            <strong>{costBandLabel}</strong>
+            <span>{stateCostNote ?? 'Statewide range'}</span>
+            <strong>{stateCostLabel ?? costBandLabel}</strong>
           </div>
         </article>
       </div>
@@ -541,6 +587,27 @@ const faqSchema = {
               </a>
             );
           })}
+        </div>
+      </section>
+    )}
+
+    {crossCareLinks.length > 0 && (
+      <section class="sl-city-section">
+        <div class="sl-city-section-head">
+          <div>
+            <p class="sl-city-section-kicker">More Care Types in {stateData.stateName}</p>
+            <h2>Other senior care options statewide</h2>
+            <p>Families often research multiple care types before deciding. Here are the other options available across {stateData.stateName}.</p>
+          </div>
+        </div>
+        <div class="sl-city-grid-cards sl-city-grid-cards--nearby">
+          {crossCareLinks.map((link) => (
+            <a class="sl-city-grid-card" href={link.href}>
+              <strong>{link.label}</strong>
+              <span>{link.count.toLocaleString()} {link.count === 1 ? 'community' : 'communities'} statewide</span>
+              <span>View {link.label.toLowerCase()} in {stateData.stateName}</span>
+            </a>
+          ))}
         </div>
       </section>
     )}
