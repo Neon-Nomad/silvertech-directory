@@ -359,7 +359,11 @@ const faqSchema = {
 
     <section class="sl-state-hero">
       <div class="sl-state-hero-bg">
-        <img src="/hero.png" alt="" aria-hidden="true" />
+        <picture>
+          <source srcset={`/state-flags/avif/${stateData.stateAbbr.toLowerCase()}.avif`} type="image/avif" />
+          <source srcset={`/state-flags/webp/${stateData.stateAbbr.toLowerCase()}.webp`} type="image/webp" />
+          <img src={`/state-flags/webp/${stateData.stateAbbr.toLowerCase()}.webp`} alt="" aria-hidden="true" />
+        </picture>
       </div>
       <div class="sl-state-hero-overlay"></div>
       <div class="sl-state-hero-copy">
