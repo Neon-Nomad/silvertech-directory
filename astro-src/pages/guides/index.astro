@@ -68,6 +68,15 @@ const guides = [
   },
 ];
 
+const featuredCostGuides = [
+  { href: '/guides/costs/assisted-living/california/', state: 'California', care: 'Assisted Living', cost: '$5,739/mo' },
+  { href: '/guides/costs/assisted-living/texas/',      state: 'Texas',      care: 'Assisted Living', cost: '$4,459/mo' },
+  { href: '/guides/costs/assisted-living/florida/',    state: 'Florida',    care: 'Assisted Living', cost: '$4,624/mo' },
+  { href: '/guides/costs/memory-care/new-york/',       state: 'New York',   care: 'Memory Care',     cost: '$7,765/mo' },
+  { href: '/guides/costs/memory-care/texas/',          state: 'Texas',      care: 'Memory Care',     cost: '$5,684/mo' },
+  { href: '/guides/costs/assisted-living/new-jersey/', state: 'New Jersey', care: 'Assisted Living', cost: '$7,480/mo' },
+];
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -124,7 +133,7 @@ const itemListSchema = {
 
     <section class="sl-state-stats" aria-label="Editorial stats">
       <article class="sl-state-stat">
-        <p class="sl-state-stat-value">{guides.length}</p>
+        <p class="sl-state-stat-value">{guides.length + 97}</p>
         <p class="sl-state-stat-label">Published Guides</p>
         <p class="sl-state-stat-note">Evidence-based resources</p>
       </article>
@@ -165,6 +174,45 @@ const itemListSchema = {
           </article>
         ))}
       </div>
+    </section>
+  </div>
+
+    <section class="sl-state-section">
+      <div class="sl-state-section-head">
+        <div>
+          <p class="sl-state-section-kicker">State Cost Guides</p>
+          <h2>What does senior care cost in your state?</h2>
+          <p>State-specific cost guides built from 2025 move-in data. Each guide shows the state median, vs-national comparison, top cities, and Medicaid context.</p>
+        </div>
+        <a class="sl-state-section-link" href="/assisted-living/">Browse all states</a>
+      </div>
+      <div class="sl-state-market-grid">
+        {featuredCostGuides.map((g) => (
+          <a class="sl-state-market-link" href={g.href}>
+            <strong>{g.state} — {g.care}</strong>
+            <span>State median {g.cost}</span>
+          </a>
+        ))}
+        <a class="sl-state-market-link" href="/guides/costs/assisted-living/massachusetts/">
+          <strong>Massachusetts — Assisted Living</strong>
+          <span>State median $7,250/mo</span>
+        </a>
+        <a class="sl-state-market-link" href="/guides/costs/memory-care/hawaii/">
+          <strong>Hawaii — Memory Care</strong>
+          <span>State median $11,000/mo</span>
+        </a>
+        <a class="sl-state-market-link" href="/guides/costs/assisted-living/louisiana/">
+          <strong>Louisiana — Assisted Living</strong>
+          <span>State median $3,983/mo</span>
+        </a>
+        <a class="sl-state-market-link" href="/guides/costs/memory-care/wyoming/">
+          <strong>Wyoming — Memory Care</strong>
+          <span>State median $4,025/mo</span>
+        </a>
+      </div>
+      <p style="margin-top:1rem;font-size:0.9rem;color:var(--muted);">
+        <a href="/assisted-living/">Browse the full directory</a> to find state-level cost guides for all 51 states.
+      </p>
     </section>
   </div>
 

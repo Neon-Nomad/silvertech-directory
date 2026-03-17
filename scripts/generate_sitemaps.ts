@@ -316,6 +316,11 @@ async function generateSitemaps() {
       `${BASE_URL}/guides/caregiver-resentment-toward-parent/`,
       `${BASE_URL}/guides/sibling-not-helping-parent-care/`,
       `${BASE_URL}/guides/caregiver-at-breaking-point/`,
+      // State cost guides — assisted-living and memory-care for every state
+      ...ALL_STATES.flatMap((s) => [
+        `${BASE_URL}/guides/costs/assisted-living/${s.slug}/`,
+        `${BASE_URL}/guides/costs/memory-care/${s.slug}/`,
+      ]),
       `${BASE_URL}/products/bathroom-safety`,
       `${BASE_URL}/products/mobility-aids`,
       `${BASE_URL}/products/bedroom-comfort`,
