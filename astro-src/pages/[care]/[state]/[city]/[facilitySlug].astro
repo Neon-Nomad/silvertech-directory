@@ -1,5 +1,6 @@
 ---
 import Base from '../../../../layouts/Base.astro';
+import FacilityClaimedProfile from '../../../../components/senior/FacilityClaimedProfile';
 import FacilityMapPin from '../../../../components/senior/FacilityMapPin';
 import FacilityQASection from '../../../../components/senior/FacilityQASection';
 import TourScheduler from '../../../../components/senior/TourScheduler';
@@ -377,28 +378,16 @@ const breadcrumbSchema = {
                   <td>{facility.careTypes.map((c) => careTypeLabels[c] || c).join(' · ')}</td>
                 </tr>
               )}
-              <tr>
-                <td>Staff Profiles</td>
-                <td><span class="fp-locked">🔒 Claim this listing to add staff info</span></td>
-              </tr>
-              <tr>
-                <td>Amenities</td>
-                <td><span class="fp-locked">🔒 Claim this listing to add amenities</span></td>
-              </tr>
-              <tr>
-                <td>Photos</td>
-                <td><span class="fp-locked">🔒 Claim this listing to add photos</span></td>
-              </tr>
             </tbody>
           </table>
 
-          <div class="fp-claim-inline">
-            <div class="fp-claim-inline-text">
-              <p class="fp-claim-inline-title">Is this your facility?</p>
-              <p class="fp-claim-inline-sub">Claim your free listing to add staff profiles, photos, amenities, and respond to community questions.</p>
-            </div>
-            <a href="/for-facilities/" class="fp-btn fp-btn-gold">Claim Listing →</a>
-          </div>
+          {facility.id && (
+            <FacilityClaimedProfile
+              client:visible
+              facilityId={facility.id}
+              facilityName={displayName}
+            />
+          )}
         </section>
 
         <!-- ---- Regulatory Hub ---- -->
