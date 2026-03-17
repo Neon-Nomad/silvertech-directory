@@ -10,6 +10,7 @@ import {
   getRegulatoryContext,
   getSeniorLivingCity,
 } from '../../../../lib/seniorLivingData';
+import { getStateCost, getStateVsNationalPct, NATIONAL_MEDIANS, type CareTypeCostKey } from '../../../../lib/state_cost_lookup';
 
 export async function getStaticPaths() {
   const { getCareCityStaticPaths } = await import('../../../../lib/seniorLivingData');
@@ -133,6 +134,26 @@ const bedsCount = facilities.filter((facility) => facility.beds !== null && faci
 const licensedPct = Math.round((licensedCount / facilities.length) * 100);
 const costBand = getCostBand(careType.slug);
 const costBandLabel = `${formatCurrency(costBand.low)} - ${formatCurrency(costBand.high)}`;
+
+const careTypeCostKey: CareTypeCostKey | null =
+  careType.slug === 'assisted-living' ? 'assisted-living' :
+  careType.slug === 'memory-care' ? 'memory-care' :
+  careType.slug === 'independent-living' ? 'independent-living' :
+  careType.slug === 'nursing-homes' ? 'nursing-home' :
+  null;
+
+const stateMedianCost = careTypeCostKey ? getStateCost(cityData.stateAbbr, careTypeCostKey) : null;
+const stateVsNationalPct = careTypeCostKey ? getStateVsNationalPct(cityData.stateAbbr, careTypeCostKey) : null;
+const nationalMedian = careTypeCostKey ? NATIONAL_MEDIANS[careTypeCostKey] : null;
+
+const stateCostLabel = stateMedianCost ? formatCurrency(stateMedianCost) : null;
+const stateCostNote = stateMedianCost && stateVsNationalPct !== null
+  ? stateVsNationalPct === 0
+    ? `Near national median of ${formatCurrency(nationalMedian!)}/mo`
+    : stateVsNationalPct > 0
+      ? `${stateVsNationalPct}% above national median`
+      : `${Math.abs(stateVsNationalPct)}% below national median`
+  : null;
 const regulatoryContext = getRegulatoryContext(cityData.stateSlug);
 const careInventoryLabel = `${facilities.length.toLocaleString()} ${facilities.length === 1 ? careUnitSingular : careUnitPlural}`;
 const listingsHeadingLabel =
@@ -334,9 +355,11 @@ const licensingSentence = regulatoryContext.licensing
 const demographicSentence = seniorPopulation
   ? `Local demographic snapshots suggest older adults account for roughly ${seniorPopulation} of residents in the broader ${displayCityName} market, which helps explain the depth and variety of care settings families encounter here.`
   : `The local market includes a mix of stand-alone communities and broader senior living campuses, so it helps to compare how each option explains staffing, care transitions, and the level of support included in the base rate.`;
-const costContextSentence = costOfLiving
-  ? `${displayCityName}'s overall cost profile is ${costOfLiving}, which can influence how far a care budget stretches once therapies, transportation, and family travel are factored in.`
-  : `Pricing still varies widely by neighborhood, acuity, and included services, so it helps to pair cost conversations with a close read of what a community actually provides.`;
+const costContextSentence = stateMedianCost && stateVsNationalPct !== null
+  ? `The ${cityData.stateName} state median for ${careSentenceLabel} is ${formatCurrency(stateMedianCost)}/month${stateVsNationalPct !== 0 ? `, which is ${Math.abs(stateVsNationalPct)}% ${stateVsNationalPct > 0 ? 'above' : 'below'} the national median of ${formatCurrency(nationalMedian!)}/month` : `, in line with the national median of ${formatCurrency(nationalMedian!)}/month`}. Costs in ${displayCityName} may run higher or lower depending on acuity, floor plan, and included services.`
+  : costOfLiving
+    ? `${displayCityName}'s overall cost profile is ${costOfLiving}, which can influence how far a care budget stretches once therapies, transportation, and family travel are factored in.`
+    : `Pricing still varies widely by neighborhood, acuity, and included services, so it helps to pair cost conversations with a close read of what a community actually provides.`;
 
 const introParagraphs = [
   `Families looking for ${careSentenceLabel} in ${displayCityName}, ${cityData.stateName} usually need more than a directory of names. They need a quick read on how deep the local market is, which communities publish license or contact data, and which options seem equipped for the level of support their family member may need. SilverTech currently tracks ${careInventoryLabel} in ${displayCityName}, with ${licensedCount.toLocaleString()} showing a listed state license number and ${websiteCount.toLocaleString()} linking to an official website.`,
@@ -482,9 +505,9 @@ const crossCareLinks = allCareTypes
         <p class="sl-state-stat-note">Linked health records</p>
       </article>
       <article class="sl-state-stat">
-        <p class="sl-state-stat-value" style="font-size: 1.25rem;">{costBandLabel}</p>
+        <p class="sl-state-stat-value" style="font-size: 1.25rem;">{stateCostLabel ?? costBandLabel}</p>
         <p class="sl-state-stat-label">Monthly</p>
-        <p class="sl-state-stat-note">Typical local range</p>
+        <p class="sl-state-stat-note">{stateCostNote ?? 'Typical local range'}</p>
       </article>
     </section>
 
