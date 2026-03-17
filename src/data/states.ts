@@ -13,6 +13,7 @@ export const ALL_STATES: StateDefinition[] = [
     { name: "Colorado", abbreviation: "CO", slug: "colorado" },
     { name: "Connecticut", abbreviation: "CT", slug: "connecticut" },
     { name: "Delaware", abbreviation: "DE", slug: "delaware" },
+    { name: "District of Columbia", abbreviation: "DC", slug: "district-of-columbia" },
     { name: "Florida", abbreviation: "FL", slug: "florida" },
     { name: "Georgia", abbreviation: "GA", slug: "georgia" },
     { name: "Hawaii", abbreviation: "HI", slug: "hawaii" },
