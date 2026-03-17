@@ -1,0 +1,261 @@
+---
+import GuideArticle from '../../../../components/GuideArticle.astro';
+import {
+  formatCurrency,
+  getCareTypeBySlug,
+  getRegulatoryContext,
+  getSeniorLivingState,
+  getSeniorLivingStates,
+} from '../../../../lib/seniorLivingData';
+import {
+  getStateCost,
+  getStateVsNationalPct,
+  NATIONAL_MEDIANS,
+  STATE_COST_DATA,
+  type CareTypeCostKey,
+} from '../../../../lib/state_cost_lookup';
+
+const COST_CARE_TYPES: Array<{ slug: string; costKey: CareTypeCostKey }> = [
+  { slug: 'assisted-living',    costKey: 'assisted-living' },
+  { slug: 'memory-care',        costKey: 'memory-care' },
+  { slug: 'independent-living', costKey: 'independent-living' },
+];
+
+export async function getStaticPaths() {
+  const states = getSeniorLivingStates();
+  const paths: Array<{ params: { care: string; state: string } }> = [];
+
+  for (const { slug, costKey } of [
+    { slug: 'assisted-living',    costKey: 'assisted-living' as CareTypeCostKey },
+    { slug: 'memory-care',        costKey: 'memory-care' as CareTypeCostKey },
+    { slug: 'independent-living', costKey: 'independent-living' as CareTypeCostKey },
+  ]) {
+    for (const stateRow of STATE_COST_DATA) {
+      const cost = costKey === 'assisted-living' ? stateRow.assistedLiving
+                 : costKey === 'memory-care'     ? stateRow.memoryCare
+                 : stateRow.independentLiving;
+      if (cost === null) continue;
+
+      const stateEntry = states.find((s) => s.stateAbbr === stateRow.abbr);
+      if (!stateEntry) continue;
+      if ((stateEntry.stats.careTypeCounts[slug as keyof typeof stateEntry.stats.careTypeCounts] || 0) === 0) continue;
+
+      paths.push({ params: { care: slug, state: stateEntry.stateSlug } });
+    }
+  }
+
+  return paths;
+}
+
+const { care, state } = Astro.params;
+const careType = care ? getCareTypeBySlug(care) : null;
+const stateData = state ? getSeniorLivingState(state) : null;
+
+if (!careType || !stateData) {
+  throw new Error(`Cost guide not found for ${care}/${state}`);
+}
+
+const costKey = (
+  care === 'assisted-living'    ? 'assisted-living' :
+  care === 'memory-care'        ? 'memory-care' :
+  care === 'independent-living' ? 'independent-living' :
+  null
+) as CareTypeCostKey | null;
+
+if (!costKey) throw new Error(`No cost data for care type: ${care}`);
+
+const stateMedianCost  = getStateCost(stateData.stateAbbr, costKey)!;
+const stateVsNational  = getStateVsNationalPct(stateData.stateAbbr, costKey)!;
+const nationalMedian   = NATIONAL_MEDIANS[costKey];
+const regulatoryCtx    = getRegulatoryContext(stateData.stateSlug);
+
+const h1CareLabel =
+  care === 'memory-care'        ? 'Memory Care' :
+  care === 'independent-living' ? 'Independent Living' :
+  'Assisted Living';
+
+const careSentenceLabel =
+  care === 'memory-care'        ? 'memory care' :
+  care === 'independent-living' ? 'independent living' :
+  'assisted living';
+
+const careUnitPlural =
+  care === 'memory-care'        ? 'memory care communities' :
+  care === 'independent-living' ? 'independent living communities' :
+  'assisted living communities';
+
+const vsLabel = stateVsNational === 0
+  ? 'in line with the national median'
+  : stateVsNational > 0
+    ? `${stateVsNational}% above the national median`
+    : `${Math.abs(stateVsNational)}% below the national median`;
+
+const topCities = stateData.cities
+  .filter((c) => (c.careTypeCounts[care as keyof typeof c.careTypeCounts] || 0) > 0)
+  .sort((a, b) => (b.careTypeCounts[care as keyof typeof b.careTypeCounts] || 0) - (a.careTypeCounts[care as keyof typeof a.careTypeCounts] || 0))
+  .slice(0, 8);
+
+const toDisplayName = (v: string) =>
+  v.replace(/(^|\s)\S/g, (t) => t.toUpperCase());
+
+const modified   = '2026-03-17';
+const published  = '2026-03-17';
+const h1         = `Cost of ${h1CareLabel} in ${stateData.stateName} (2026)`;
+const title      = `${h1CareLabel} Cost in ${stateData.stateName} 2026 | SilverTech Directory`;
+const description = `The ${stateData.stateName} state median for ${careSentenceLabel} is ${formatCurrency(stateMedianCost)}/month — ${vsLabel} of ${formatCurrency(nationalMedian)}/month. Compare top cities, Medicaid options, and what drives costs.`;
+const canonical  = `https://silvertechdirectory.com/guides/costs/${care}/${state}/`;
+const deck       = `The ${stateData.stateName} state median for ${careSentenceLabel} is ${formatCurrency(stateMedianCost)}/month, ${vsLabel}. Here is what that number means, what drives it up or down, and how to compare options across the state.`;
+
+const toc = [
+  { id: 'state-cost',    label: `${stateData.stateName} cost overview` },
+  { id: 'cost-factors',  label: 'What drives cost in this state' },
+  { id: 'top-cities',    label: `Top cities in ${stateData.stateName}` },
+  { id: 'medicaid',      label: `${stateData.stateName} Medicaid coverage` },
+  { id: 'compare',       label: 'How to compare costs fairly' },
+];
+
+const medicaidProgramName = regulatoryCtx.medicaid?.programName || `${stateData.stateName} Medicaid`;
+const medicaidWebsite     = regulatoryCtx.medicaid?.website;
+const ombudsmanName       = regulatoryCtx.ombudsman?.programName || 'Long-Term Care Ombudsman';
+const licensingAgency     = regulatoryCtx.licensing?.agencyName || `${stateData.stateName} state licensing agency`;
+
+const costDriverNote =
+  stateVsNational > 15
+    ? `${stateData.stateName} is one of the higher-cost states for ${careSentenceLabel}. Urban density, labor costs, regulatory compliance overhead, and higher real-estate costs for facility campuses all contribute to above-median pricing. Families comparing options here should ask each community to itemize base rate versus care level fees separately.`
+    : stateVsNational < -15
+      ? `${stateData.stateName} is one of the more affordable states for ${careSentenceLabel}. Lower labor costs and real-estate markets keep the baseline lower than coastal and northeastern markets. Still, care level add-ons, medication management, and specialized programming can push the real monthly bill significantly higher than the quoted base rate.`
+      : `${stateData.stateName} tracks closely with the national median for ${careSentenceLabel}. Cost still varies meaningfully by city, neighborhood, unit type, and the mix of services included in the base rate. Urban markets in the state typically run higher than rural and suburban areas.`;
+
+const medicaidNote =
+  care === 'assisted-living'
+    ? `${medicaidProgramName} may cover some ${careSentenceLabel} costs for qualifying residents — typically personal care and supervision, not the room-and-board portion. Eligibility is income- and asset-based. Availability varies by facility; not all communities accept Medicaid.`
+    : care === 'memory-care'
+      ? `Medicaid coverage for memory care in ${stateData.stateName} varies. ${medicaidProgramName} may cover personal care services through a home and community-based waiver, but dedicated memory care unit costs are rarely fully covered. Families should verify directly with each community and with a Medicaid planning attorney.`
+      : `${medicaidProgramName} typically does not cover independent living costs, as independent living is considered a residential lifestyle choice rather than a care service. Families who anticipate needing care in the future should ask communities how transitions to assisted living or memory care are handled and priced.`;
+
+const faqItems = [
+  {
+    question: `What is the average cost of ${careSentenceLabel} in ${stateData.stateName}?`,
+    answer: `The ${stateData.stateName} state median for ${careSentenceLabel} is ${formatCurrency(stateMedianCost)}/month, based on 2025 move-in data from A Place for Mom. This is ${vsLabel} of ${formatCurrency(nationalMedian)}/month. Actual costs vary by city, unit type, acuity level, and which services are included in the base rate.`,
+  },
+  {
+    question: `How does ${stateData.stateName} compare to the national average for ${careSentenceLabel}?`,
+    answer: `At ${formatCurrency(stateMedianCost)}/month, ${stateData.stateName} is ${vsLabel} of ${formatCurrency(nationalMedian)}/month nationally. ${stateVsNational > 0 ? `Higher costs in ${stateData.stateName} are largely driven by labor markets, real estate, and regulatory compliance costs.` : stateVsNational < 0 ? `The lower cost base in ${stateData.stateName} reflects regional labor and real-estate markets, though care level add-ons can narrow the gap significantly.` : `${stateData.stateName} tracks closely with the national average across most market segments.`}`,
+  },
+  {
+    question: `Does Medicaid cover ${careSentenceLabel} in ${stateData.stateName}?`,
+    answer: medicaidNote,
+  },
+  {
+    question: `Which city in ${stateData.stateName} has the most ${careSentenceLabel} options?`,
+    answer: topCities.length > 0
+      ? `${toDisplayName(topCities[0].cityName)} has the largest ${careSentenceLabel} market in ${stateData.stateName} with ${topCities[0].careTypeCounts[care as keyof typeof topCities[0].careTypeCounts] || 0} ${careUnitPlural} listed. Other markets with strong inventory include ${topCities.slice(1, 4).map((c) => toDisplayName(c.cityName)).join(', ')}.`
+      : `${stateData.stateName} has ${careSentenceLabel} options spread across multiple cities and suburban markets. Use the SilverTech state directory to compare inventory by city.`,
+  },
+  {
+    question: `What should I ask about ${careSentenceLabel} costs in ${stateData.stateName}?`,
+    answer: `Always ask for the all-in monthly estimate, not just the base rate. Key questions: What care level tier am I starting at and what does each tier cost? What services trigger an extra charge? Is medication management included? What is the community fee or move-in fee? How much have rates increased in the past two years? Getting written answers to these questions before signing a residency agreement helps avoid billing surprises.`,
+  },
+];
+
+const resourceLinks = [
+  { href: `/${care}/${stateData.stateSlug}/`, label: `${h1CareLabel} in ${stateData.stateName} — full directory` },
+  { href: `/regulations/${stateData.stateSlug}/`, label: `${stateData.stateName} care regulations` },
+  ...(medicaidWebsite ? [{ href: medicaidWebsite, label: medicaidProgramName }] : []),
+  ...topCities.slice(0, 3).map((c) => ({
+    href: `/${care}/${stateData.stateSlug}/${c.citySlug}/`,
+    label: `${h1CareLabel} in ${toDisplayName(c.cityName)}, ${stateData.stateAbbr}`,
+  })),
+];
+
+const relatedLinks = [
+  { href: '/guides/what-it-costs/',              label: 'What Senior Living Actually Costs' },
+  { href: '/guides/how-to-choose/',              label: 'How to Choose a Senior Living Community' },
+  { href: '/guides/hidden-costs-of-memory-care/', label: 'Hidden Costs of Memory Care' },
+  { href: `/${care}/${stateData.stateSlug}/`,    label: `${h1CareLabel} Directory — ${stateData.stateName}` },
+];
+---
+<GuideArticle
+  title={title}
+  description={description}
+  canonical={canonical}
+  heroEyebrow={`${stateData.stateName} Cost Guide · 2026`}
+  h1={h1}
+  deck={deck}
+  published={published}
+  modified={modified}
+  readTime="6 min read"
+  toc={toc}
+  faqItems={faqItems}
+  resourceLinks={resourceLinks}
+  relatedLinks={relatedLinks}
+  keywordPills={[`${careSentenceLabel} cost`, `${stateData.stateName} senior care`, 'monthly cost', 'state median', 'Medicaid']}
+>
+  <h2 id="state-cost">{stateData.stateName} {h1CareLabel} Cost Overview</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin:1.5rem 0;padding:1.25rem;background:#f8f9fa;border:1px solid #e2e8f0;border-radius:12px;">
+    <div style="text-align:center;">
+      <div style="font-size:1.75rem;font-weight:700;color:#1f2937;">{formatCurrency(stateMedianCost)}<span style="font-size:1rem;font-weight:400;">/mo</span></div>
+      <div style="font-size:0.85rem;color:#64748b;margin-top:0.25rem;">{stateData.stateName} state median</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-size:1.75rem;font-weight:700;color:{stateVsNational > 0 ? '#b91c1c' : stateVsNational < 0 ? '#15803d' : '#1f2937'};">
+        {stateVsNational > 0 ? '+' : ''}{stateVsNational}%
+      </div>
+      <div style="font-size:0.85rem;color:#64748b;margin-top:0.25rem;">vs. national median</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-size:1.75rem;font-weight:700;color:#1f2937;">{formatCurrency(nationalMedian)}<span style="font-size:1rem;font-weight:400;">/mo</span></div>
+      <div style="font-size:0.85rem;color:#64748b;margin-top:0.25rem;">national median</div>
+    </div>
+  </div>
+
+  <p>The {stateData.stateName} state median for {careSentenceLabel} is <strong>{formatCurrency(stateMedianCost)}/month</strong>, based on 2025 move-in data. That figure is {vsLabel} ({formatCurrency(nationalMedian)}/month). It covers a base rate for a standard unit and typically includes meals, basic personal care, and scheduled activities — but not care level add-ons, medication management, or specialty programming, which are almost always billed separately.</p>
+
+  <p>The state median is a useful anchor, not a final budget. Costs in high-density metros within {stateData.stateName} will often run higher, while rural and small-city markets may come in lower. The number to plan around is the all-in monthly estimate after care level fees are added.</p>
+
+  <h2 id="cost-factors">What Drives {h1CareLabel} Costs in {stateData.stateName}</h2>
+
+  <p>{costDriverNote}</p>
+
+  <p>Across all states, the four variables that move the number most are: <strong>care level tier</strong> (how much hands-on assistance is required), <strong>unit type</strong> (studio vs. one-bedroom vs. shared), <strong>included services</strong> (what is in the base rate versus billed à la carte), and <strong>operator type</strong> (nonprofit vs. for-profit chains often price differently). Ask any community in {stateData.stateName} to give you a written breakdown of starting base rate, current care level fee for your family member's needs, and all recurring add-ons before you compare sticker prices.</p>
+
+  <h2 id="top-cities">Top Cities for {h1CareLabel} in {stateData.stateName}</h2>
+
+  <p>{stateData.stateName} has {careSentenceLabel} options across {stateData.cities.filter((c) => (c.careTypeCounts[care as keyof typeof c.careTypeCounts] || 0) > 0).length} cities in the SilverTech directory. The cities with the largest market presence:</p>
+
+  <ul>
+    {topCities.map((c) => (
+      <li>
+        <a href={`/${care}/${stateData.stateSlug}/${c.citySlug}/`}>
+          <strong>{toDisplayName(c.cityName)}</strong>
+        </a>
+        {' '}— {c.careTypeCounts[care as keyof typeof c.careTypeCounts] || 0} {careUnitPlural} listed
+      </li>
+    ))}
+  </ul>
+
+  <p>Costs in urban markets tend to run above the state median. Suburban and rural markets often come in lower, but may have fewer options to compare. Narrowing to two or three cities based on proximity to family, hospital access, and the care level your family member needs gives a more actionable short list than comparing statewide averages.</p>
+
+  <h2 id="medicaid">{stateData.stateName} Medicaid Coverage for {h1CareLabel}</h2>
+
+  <p>{medicaidNote}</p>
+
+  {medicaidWebsite && (
+    <p>For current eligibility rules and program details, visit <a href={medicaidWebsite} rel="noreferrer" target="_blank">{medicaidProgramName}</a> directly. Rules change and vary by county; what a benefits counselor tells you over the phone is not always what is written in the current program guidelines.</p>
+  )}
+
+  <p>The {ombudsmanName} is another useful contact when families have questions about resident rights, billing disputes, or how to file a complaint about a {careSentenceLabel} facility in {stateData.stateName}. The {licensingAgency} oversees facility licensing and can confirm whether a specific community is in good standing.</p>
+
+  <h2 id="compare">How to Compare {h1CareLabel} Costs Fairly in {stateData.stateName}</h2>
+
+  <p>The only apples-to-apples comparison is all-in monthly cost at the care level your family member actually needs today — not the base rate, not the promotional move-in special. Here is a reliable framework for comparing communities in {stateData.stateName}:</p>
+
+  <ol>
+    <li><strong>Start with the state median as an anchor.</strong> The {stateData.stateName} median of {formatCurrency(stateMedianCost)}/month tells you what most families are paying after move-in. If a community quotes a base rate significantly below that, ask what care level tier is assumed and what the all-in monthly estimate is for your family member's current needs.</li>
+    <li><strong>Get the care level fee in writing.</strong> Most communities use a tiered care model. The difference between Level 1 and Level 3 care can be $500–$1,500/month. Ask for the written fee schedule, not a verbal estimate.</li>
+    <li><strong>Ask about rate increase history.</strong> A low starting rate that increases 8–10% per year compounds fast. Ask how much rates have increased in the last two years.</li>
+    <li><strong>Compare license status and ownership type.</strong> SilverTech surfaces license numbers and Medicare-linked records for each listing. Communities with transparent licensing data are easier to verify through the {licensingAgency}.</li>
+    <li><strong>Use the city pages to compare multiple options.</strong> The {stateData.stateName} {careSentenceLabel} directory links directly to canonical facility profiles with trust signals, contact details, and licensing data in one place.</li>
+  </ol>
+</GuideArticle>
