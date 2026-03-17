@@ -25,6 +25,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check for zero-byte public assets
+        run: |
+          ZERO=$(find public -type f -size 0)
+          if [ -n "$ZERO" ]; then
+            echo "Zero-byte files detected:"
+            echo "$ZERO"
+            exit 1
+          fi
+          echo "All public assets non-empty."
+
       - name: Unit tests
         run: npm run test:unit
 
