@@ -12,21 +12,27 @@ const careTypeDirs = [
   'adult-day-services',
   'ccrc',
 ];
+const topLevelAstroRouteDirs = [
+  'guides',
+  'states',
+  'regulations',
+  'editorial-policy',
+  'why-this-exists',
+];
 
 const targets = [
   // Shared Astro CSS/assets required by state/city/guide pages.
   { src: path.join(astroRoot, '_astro'), dest: path.join(root, 'dist', '_astro') },
-  // State authority hubs remain under /states/*
-  { src: path.join(astroRoot, 'states'), dest: path.join(root, 'dist', 'states') },
-  // Regulations now live under /regulations/*
-  { src: path.join(astroRoot, 'regulations'), dest: path.join(root, 'dist', 'regulations') },
+  // Top-level Astro routes that should override SPA catch-all when present.
+  ...topLevelAstroRouteDirs.map((dir) => ({
+    src: path.join(astroRoot, dir),
+    dest: path.join(root, 'dist', dir),
+  })),
   // Canonical listing routes now live under /{care-type}/*
   ...careTypeDirs.map((dir) => ({
     src: path.join(astroRoot, dir),
     dest: path.join(root, 'dist', dir),
-  })),
-  // Guides remain static.
-  { src: path.join(astroRoot, 'guides'), dest: path.join(root, 'dist', 'guides') }
+  }))
 ];
 
 const createAssetCompatibilityAliases = () => {
