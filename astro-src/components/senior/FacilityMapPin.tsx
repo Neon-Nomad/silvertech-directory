@@ -6,6 +6,7 @@ type Props = {
   lng: number;
   name: string;
   address: string;
+  mapUrl?: string;
 };
 
 type LeafletLike = {
@@ -19,17 +20,27 @@ function escapeHtml(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-export default function FacilityMapPin({ lat, lng, name, address }: Props) {
+export default function FacilityMapPin({ lat, lng, name, address, mapUrl }: Props) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<any>(null);
+  const [hydrated, setHydrated] = useState(false);
   const [ready, setReady] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [mobileFallback, setMobileFallback] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
+    setHydrated(true);
 
     async function init() {
       if (!containerRef.current) return;
+      const isMobileViewport = window.matchMedia('(max-width: 767px)').matches;
+      const saveData = Boolean((navigator as any)?.connection?.saveData);
+      if (isMobileViewport || saveData) {
+        setMobileFallback(true);
+        return;
+      }
+
       const leafletModule = await import('leaflet');
       if (cancelled || !containerRef.current) return;
 
@@ -57,6 +68,7 @@ export default function FacilityMapPin({ lat, lng, name, address }: Props) {
       );
       marker.addTo(map);
 
+      setMobileFallback(false);
       setReady(true);
     }
 
@@ -74,6 +86,23 @@ export default function FacilityMapPin({ lat, lng, name, address }: Props) {
       setReady(false);
     };
   }, [lat, lng]);
+
+  if (!hydrated || mobileFallback) {
+    return (
+      <div className="fp-map-mobile-fallback">
+        <p className="fp-map-mobile-title">
+          View location details in Google Maps.
+        </p>
+        {mapUrl ? (
+          <a href={mapUrl} target="_blank" rel="noopener noreferrer" className="fp-map-mobile-link">
+            Open in Google Maps
+          </a>
+        ) : (
+          <p className="fp-map-mobile-address">{address}</p>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div className="fp-map-shell">
