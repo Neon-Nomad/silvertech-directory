@@ -70,9 +70,9 @@ jobs:
         run: npm run monitor:phase1
 
       - name: Notify Slack on failure
-        if: failure() && secrets.OPS_ALERT_WEBHOOK_URL != ''
+        if: ${{ failure() && env.ALERT_WEBHOOK_URL != '' }}
         env:
-          WEBHOOK: ${{ secrets.OPS_ALERT_WEBHOOK_URL }}
+          WEBHOOK: ${{ env.ALERT_WEBHOOK_URL }}
         run: |
           curl -X POST -H 'Content-type: application/json' \
           --data "{\"text\":\"Ops Integrity workflow failed for ${GITHUB_REPOSITORY} on ${GITHUB_REF_NAME}.\"}" \
@@ -102,9 +102,9 @@ jobs:
         run: npm run monitor:phase6
 
       - name: Notify Slack on failure
-        if: failure() && secrets.OPS_ALERT_WEBHOOK_URL != ''
+        if: ${{ failure() && env.ALERT_WEBHOOK_URL != '' }}
         env:
-          WEBHOOK: ${{ secrets.OPS_ALERT_WEBHOOK_URL }}
+          WEBHOOK: ${{ env.ALERT_WEBHOOK_URL }}
         run: |
           curl -X POST -H 'Content-type: application/json' \
           --data "{\"text\":\"Phase 6 monitor failed for ${GITHUB_REPOSITORY} on ${GITHUB_REF_NAME}.\"}" \
