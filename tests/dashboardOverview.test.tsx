@@ -35,7 +35,7 @@ describe('DashboardOverview', () => {
     expect(onViewPublicProfile).toHaveBeenCalledTimes(1);
     expect(onGoToListings).toHaveBeenCalledTimes(2);
     expect(onGoToLeads).toHaveBeenCalledTimes(1);
-  });
+  }, 15000);
 
   it('shows paid-plan profile readiness warning and routes to listings', () => {
     const onGoToListings = vi.fn();

@@ -370,6 +370,9 @@ const SearchResultCard: React.FC<{ facility: EnrichedSearchFacilityResult; claim
     id: facility.id,
     publicSlug: facility.public_slug,
     publicRouteId: facility.public_route_id,
+    careType: facility.primary_care_type_slug,
+    state: facility.state,
+    city: facility.city,
   });
   const claimPath = isUuid(facility.id) ? `/claim/${facility.id}` : communityPath;
   const primaryPath = claimMode ? claimPath : communityPath;

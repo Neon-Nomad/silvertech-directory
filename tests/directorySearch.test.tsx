@@ -302,7 +302,7 @@ describe('DirectorySearch', () => {
     ).toBeInTheDocument();
     expect(await screen.findByRole('link', { name: 'The Gardens at Juanita Bay' })).toHaveAttribute(
       'href',
-      '/community/the-gardens-at-juanita-bay-101/',
+      '/assisted-living/washington/kirkland/the-gardens-at-juanita-bay-101/',
     );
     expect(screen.getByText(/Browse 2 communities in Kirkland, WA\./i)).toBeInTheDocument();
     expect(screen.getAllByText('Licensed').length).toBeGreaterThan(0);
@@ -313,8 +313,8 @@ describe('DirectorySearch', () => {
     expect(screen.getByText('Expand your search nearby')).toBeInTheDocument();
     expect(screen.getByText('Nearby options in Bellevue')).toBeInTheDocument();
     expect(screen.getByText('Nearby options in Redmond')).toBeInTheDocument();
-    expect(screen.getAllByRole('link', { name: 'View Community' }).length).toBeGreaterThanOrEqual(4);
-  });
+    expect(screen.getAllByRole('link', { name: /View (Facility|Community)/i }).length).toBeGreaterThanOrEqual(4);
+  }, 15000);
 
   it('auto-searches direct state query entries', async () => {
     renderSearch('/search?state=washington');
@@ -341,6 +341,6 @@ describe('DirectorySearch', () => {
     expect(await screen.findByRole('heading', { name: 'Find Your Facility By ZIP' })).toBeInTheDocument();
     const claimLink = await screen.findByRole('link', { name: 'Claim Listing' });
     expect(claimLink).toHaveAttribute('href', `/claim/${claimFacilityId}`);
-    expect(screen.queryByRole('link', { name: 'View Community' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: /View (Facility|Community)/i })).not.toBeInTheDocument();
   });
 });

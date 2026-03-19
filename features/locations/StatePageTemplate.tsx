@@ -175,7 +175,7 @@ export const StatePageTemplate: React.FC = () => {
               {careTypeLabel} in {stateDef.name}
             </h1>
             <p className="mt-4 text-lg text-slate-600">
-              Browse city-level {careTypeLabel.toLowerCase()} pages in {stateDef.name} and move directly into clean community profiles.
+              Browse city-level {careTypeLabel.toLowerCase()} pages in {stateDef.name} and move directly into canonical Astro facility profiles.
             </p>
           </div>
         </div>
@@ -208,7 +208,7 @@ export const StatePageTemplate: React.FC = () => {
           <h2 className="text-2xl font-bold text-slate-900">Statewide overview</h2>
           <p className="mt-3 text-slate-600">
             SilverTech currently tracks {loading ? '...' : facilityCount.toLocaleString()} primary {careTypeLabel.toLowerCase()} listings in {stateDef.name}.
-            Use the city directories below to drill into local markets, then compare communities on their canonical `/community` profile pages.
+            Use the city directories below to drill into local markets, then compare communities on canonical Astro facility pages.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link

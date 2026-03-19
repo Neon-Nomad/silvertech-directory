@@ -312,6 +312,9 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
                           id: selected.id,
                           publicSlug: selected.public_slug,
                           publicRouteId: selected.public_route_id,
+                          careType: selected.primary_care_type_slug,
+                          state: selected.state,
+                          city: selected.city,
                         }),
                         '_blank',
                       )

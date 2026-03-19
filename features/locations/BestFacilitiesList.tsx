@@ -54,6 +54,9 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
                           id: facility.id,
                           publicSlug: (facility as any).public_slug,
                           publicRouteId: (facility as any).public_route_id,
+                          careType: (facility as any).primary_care_type_slug || 'assisted-living',
+                          state: facility.state,
+                          city: facility.city,
                         })}
                         className="hover:text-primary-600"
                       >
@@ -84,6 +87,9 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
                           id: facility.id,
                           publicSlug: (facility as any).public_slug,
                           publicRouteId: (facility as any).public_route_id,
+                          careType: (facility as any).primary_care_type_slug || 'assisted-living',
+                          state: facility.state,
+                          city: facility.city,
                         })}
                         className="inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition-colors"
                       >
@@ -99,6 +105,9 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
                           id: facility.id,
                           publicSlug: (facility as any).public_slug,
                           publicRouteId: (facility as any).public_route_id,
+                          careType: (facility as any).primary_care_type_slug || 'assisted-living',
+                          state: facility.state,
+                          city: facility.city,
                         })}
                         className="w-full inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition-colors"
                       >

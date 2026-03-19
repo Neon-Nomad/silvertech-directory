@@ -55,7 +55,6 @@ const EmotionalSupportCatalog = lazy(() => import('@/features/resources/Emotiona
 const HowToChooseGuide = lazy(() => import('@/features/resources/HowToChooseGuide').then((m) => ({ default: m.HowToChooseGuide })));
 const CostsGuide = lazy(() => import('@/features/resources/CostsGuide').then((m) => ({ default: m.CostsGuide })));
 const TourQuestionsGuide = lazy(() => import('@/features/resources/TourQuestionsGuide').then((m) => ({ default: m.TourQuestionsGuide })));
-const FacilityDetails = lazy(() => import('@/features/family/discovery/FacilityDetails').then((m) => ({ default: m.FacilityDetails })));
 const LoginPage = lazy(() => import('@/features/auth/LoginPage').then((m) => ({ default: m.LoginPage })));
 const SignUpPage = lazy(() => import('@/features/auth/SignUpPage').then((m) => ({ default: m.SignUpPage })));
 const IntegrityHarness = lazy(() => import('@/features/e2e/IntegrityHarness').then((m) => ({ default: m.IntegrityHarness })));
@@ -260,7 +259,7 @@ function App() {
                     <Routes>
                       <Route path="/" element={<Home />} />
                       <Route path="/search" element={<DirectorySearch />} />
-                      <Route path="/community/:communityId" element={<FacilityDetails />} />
+                      <Route path="/community/:communityId" element={<LegacyRouteRetired />} />
                       <Route path="/facility/:id" element={<LegacyRouteRetired />} />
 
                     {/* Auth Routes */}

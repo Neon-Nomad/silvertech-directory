@@ -31,10 +31,10 @@ const csvEscape = (value: string): string => {
 };
 
 const getUniquenessMarker = (relativePath: string): string => {
+  if (/(assisted-living|memory-care|nursing-homes|independent-living|residential-care|adult-day-services|ccrc)\/[^/]+\/[^/]+\/[a-z0-9]+(?:-[a-z0-9]+)*-\d+\/index\.html$/i.test(relativePath)) return 'Facility Data Signals';
   if (/(assisted-living|memory-care|nursing-homes|independent-living|residential-care|adult-day-services|ccrc)\/[^/]+\/[^/]+\/index\.html$/i.test(relativePath)) return 'Local Data Signals';
   if (/(assisted-living|memory-care|nursing-homes|independent-living|residential-care|adult-day-services|ccrc)\/[^/]+\/index\.html$/i.test(relativePath)) return 'Statewide Data Signals';
   if (/(assisted-living|memory-care|nursing-homes|independent-living|residential-care|adult-day-services|ccrc)\/index\.html$/i.test(relativePath)) return 'Care Type Directory Signals';
-  if (/community\/[^/]+\/index\.html$/i.test(relativePath)) return 'Facility Data Signals';
   if (/regulations\/[^/]+\/[^/]+\/index\.html$/i.test(relativePath)) return 'Regulations Topic Signals';
   if (/regulations\/[^/]+\/index\.html$/i.test(relativePath)) return 'Regulations State Signals';
   if (/guides\/index\.html$/i.test(relativePath)) return 'Editorial Integrity Signals';

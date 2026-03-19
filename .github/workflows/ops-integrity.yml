@@ -14,12 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: "20"
+          node-version: "22"
           cache: "npm"
 
       - name: Install dependencies
@@ -50,23 +50,23 @@ jobs:
   phase1-monitor:
     runs-on: ubuntu-latest
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    env:
+      SITE_URL: ${{ vars.SITE_URL || 'https://silvertechdirectory.com' }}
+      ALERT_WEBHOOK_URL: ${{ secrets.OPS_ALERT_WEBHOOK_URL }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: "20"
+          node-version: "22"
           cache: "npm"
 
       - name: Install dependencies
         run: npm ci
 
       - name: Run Phase 1 monitor
-        env:
-          SITE_URL: ${{ vars.SITE_URL || 'https://silvertechdirectory.com' }}
-          ALERT_WEBHOOK_URL: ${{ secrets.OPS_ALERT_WEBHOOK_URL }}
         run: npm run monitor:phase1
 
       - name: Notify Slack on failure
@@ -81,14 +81,17 @@ jobs:
   phase6-monitor:
     runs-on: ubuntu-latest
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    env:
+      SITE_URL: ${{ vars.SITE_URL || 'https://silvertechdirectory.com' }}
+      ALERT_WEBHOOK_URL: ${{ secrets.OPS_ALERT_WEBHOOK_URL }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: "20"
+          node-version: "22"
           cache: "npm"
 
       - name: Install dependencies
@@ -96,8 +99,6 @@ jobs:
 
       - name: Run Phase 6 monitor
         env:
-          SITE_URL: ${{ vars.SITE_URL || 'https://silvertechdirectory.com' }}
-          ALERT_WEBHOOK_URL: ${{ secrets.OPS_ALERT_WEBHOOK_URL }}
           STRICT_LIVE_HELP_REGISTRY: "true"
         run: npm run monitor:phase6
 

@@ -9,7 +9,7 @@ describe('astro city seo contract', () => {
     const cityTemplate = read('astro-src/pages/[care]/[state]/[city]/index.astro');
 
     expect(cityTemplate).toContain('const canonical = `https://silvertechdirectory.com/${careType.slug}/${cityData.stateSlug}/${cityData.citySlug}/`;');
-    expect(cityTemplate).toContain('<Base title={title} description={description} canonical={canonical}>');
+    expect(cityTemplate).toContain('<Base title={title} description={description} canonical={canonical} loadFonts={false}>');
     expect(cityTemplate).toContain('const displayCityName = toDisplayName(cityData.cityName);');
     expect(cityTemplate).toContain('const description = `Compare ${careInventoryLabel} in ${displayCityName}, ${cityData.stateName}. Review license numbers, Medicare-linked records, hospitals, and state oversight on SilverTech.`;');
   });
@@ -23,10 +23,10 @@ describe('astro city seo contract', () => {
     expect(cityTemplate).toContain('<script slot="head" type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>');
   });
 
-  it('contains crawlable community links and route-family navigation', () => {
+  it('contains crawlable facility links and route-family navigation', () => {
     const cityTemplate = read('astro-src/pages/[care]/[state]/[city]/index.astro');
 
-    expect(cityTemplate).toContain('href={`/community/${facility.publicSlug}-${facility.publicRouteId}/`}');
+    expect(cityTemplate).toContain('href={`/${careType.slug}/${cityData.stateSlug}/${cityData.citySlug}/${facility.publicSlug}-${facility.publicRouteId}/`}');
     expect(cityTemplate).toContain('href={`/regulations/${cityData.stateSlug}/`}');
     expect(cityTemplate).toContain('href={`/${careType.slug}/${cityData.stateSlug}/`}');
     expect(cityTemplate).toContain('name: toDisplayName(facility.name),');
@@ -43,7 +43,7 @@ describe('astro city seo contract', () => {
     expect(cityTemplate).toContain('Verified Listings');
     expect(cityTemplate).toContain('Nearby hospital context');
     expect(cityTemplate).toContain('Regulations and Oversight');
-    expect(cityTemplate).toContain('Support & Resources');
+    expect(cityTemplate).toContain('Expert Support');
     expect(cityTemplate).toContain('stable public URLs');
   });
 });

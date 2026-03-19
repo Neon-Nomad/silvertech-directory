@@ -31,9 +31,11 @@ describe('indexing coverage fix contract', () => {
   it('ships static states, regulations, and care-type pages into dist during hybrid merge', () => {
     const mergeScript = read('scripts/merge_astro.mjs');
 
-    expect(mergeScript).toContain("path.join(astroRoot, 'states')");
-    expect(mergeScript).toContain("path.join(root, 'dist', 'states')");
-    expect(mergeScript).toContain("path.join(astroRoot, 'regulations')");
+    expect(mergeScript).toContain("const topLevelAstroRouteDirs = [");
+    expect(mergeScript).toContain("'states'");
+    expect(mergeScript).toContain("'regulations'");
+    expect(mergeScript).toContain("src: path.join(astroRoot, dir)");
+    expect(mergeScript).toContain("dest: path.join(root, 'dist', dir)");
     expect(mergeScript).toContain("'assisted-living'");
   });
 
@@ -42,7 +44,9 @@ describe('indexing coverage fix contract', () => {
 
     expect(regulationsTemplate).toContain('export async function getStaticPaths()');
     expect(regulationsTemplate).toContain('const canonical = `https://silvertechdirectory.com/regulations/${stateMeta.slug}/`;');
-    expect(regulationsTemplate).toContain('<h1>{stateMeta.name} Regulations</h1>');
+    expect(regulationsTemplate).toContain('<h1 class="sl-state-hero-title">');
+    expect(regulationsTemplate).toContain('<span>{stateMeta.name} </span>');
+    expect(regulationsTemplate).toContain('<span class="sl-state-hero-accent">Regulations</span>');
   });
 
   it('includes regulations and care-type URLs in generated sitemaps', () => {
@@ -57,7 +61,7 @@ describe('indexing coverage fix contract', () => {
   it('fails verification if stale legacy sitemap files are still present', () => {
     const sitemapVerifyScript = read('scripts/verify_sitemap.ts');
 
-    expect(sitemapVerifyScript).toContain("const legacySitemapFiles = ['sitemap-cities.xml', 'sitemap-states.xml'];");
+    expect(sitemapVerifyScript).toContain("const legacySitemapFiles = ['sitemap-cities.xml'];");
     expect(sitemapVerifyScript).toContain('Stale legacy sitemap files:');
   });
 

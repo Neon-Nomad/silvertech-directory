@@ -69,6 +69,7 @@ export const EditFacility: React.FC = () => {
     publicSlug: null,
     publicRouteId: null,
   });
+  const [publicCareTypeSlug, setPublicCareTypeSlug] = useState<string>('assisted-living');
 
   const fetchCounts = async () => {
     if (!id) return;
@@ -139,6 +140,11 @@ export const EditFacility: React.FC = () => {
           publicSlug: typeof data.public_slug === 'string' && data.public_slug.trim() ? data.public_slug.trim() : null,
           publicRouteId: typeof data.public_route_id === 'number' ? data.public_route_id : null,
         });
+        setPublicCareTypeSlug(
+          typeof (data as any).primary_care_type_slug === 'string' && (data as any).primary_care_type_slug.trim()
+            ? (data as any).primary_care_type_slug.trim()
+            : 'assisted-living',
+        );
 
         // Older databases may not have profile version columns; avoid noisy 400s.
         const canUseProfileVersioning =
@@ -413,6 +419,9 @@ export const EditFacility: React.FC = () => {
     id,
     publicSlug: publicIdentity.publicSlug,
     publicRouteId: publicIdentity.publicRouteId,
+    careType: publicCareTypeSlug,
+    state: formData.state,
+    city: formData.city,
   });
 
   return (

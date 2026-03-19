@@ -58,6 +58,8 @@ type FacilityPathArgs = {
   state?: string | null;
   city?: string | null;
   careType?: string | null;
+  primaryCareTypeSlug?: string | null;
+  primary_care_type_slug?: string | null;
 };
 
 const toPublicRouteId = (value?: string | number | null): string => {
@@ -79,23 +81,21 @@ const normalizeCommunityId = ({ id, publicSlug, publicRouteId }: FacilityPathArg
   return '';
 };
 
-export const parseCommunityId = (value?: string | null): { publicSlug: string; publicRouteId: number } | null => {
-  const trimmed = (value || '').trim();
-  const match = COMMUNITY_ID_PATTERN.exec(trimmed);
-  if (!match?.groups) return null;
-
-  const publicRouteId = Number(match.groups.routeId);
-  if (!Number.isFinite(publicRouteId)) return null;
-
-  return {
-    publicSlug: match.groups.slug.toLowerCase(),
-    publicRouteId,
-  };
-};
-
 export const buildFacilityDetailPath = (args: FacilityPathArgs): string => {
   const communityId = normalizeCommunityId(args);
-  return communityId ? `/community/${encodeURIComponent(communityId)}/` : '/search';
+  if (!communityId) return '/search';
+
+  const careTypeCandidate =
+    args.careType || args.primaryCareTypeSlug || args.primary_care_type_slug || '';
+  const careTypeSlug = toSlug(careTypeCandidate);
+  const stateSlug = resolveStateSlug(args.state);
+  const citySlug = toSlug((args.city || '').trim());
+
+  if (!careTypeSlug || !CARE_TYPE_ROUTE_SLUGS.has(careTypeSlug) || !stateSlug || !citySlug) {
+    return '/search';
+  }
+
+  return `/${careTypeSlug}/${stateSlug}/${citySlug}/${encodeURIComponent(communityId)}/`;
 };
 
 export const buildFacilityCanonicalUrl = (args: FacilityPathArgs, origin = 'https://silvertechdirectory.com'): string =>

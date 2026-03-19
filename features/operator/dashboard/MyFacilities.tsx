@@ -388,6 +388,9 @@ export const MyFacilities: React.FC = () => {
                             id: facility.id,
                             publicSlug: facility.public_slug,
                             publicRouteId: facility.public_route_id,
+                            careType: facility.primary_care_type_slug,
+                            state: facility.state,
+                            city: facility.city,
                           }),
                           '_blank',
                         )

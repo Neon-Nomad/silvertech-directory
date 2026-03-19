@@ -33,25 +33,6 @@ const checks: LintCheck[] = [
       '--allowJs',
     ],
   },
-  {
-    label: 'Netlify Edge TypeScript',
-    args: [
-      'tsc',
-      '--noEmit',
-      '--pretty',
-      'false',
-      'netlify/edge-functions/facility-metadata.ts',
-      '--target',
-      'ES2022',
-      '--module',
-      'ESNext',
-      '--lib',
-      'ES2022,DOM',
-      '--skipLibCheck',
-      '--noUnusedLocals',
-      '--noUnusedParameters',
-    ],
-  },
 ];
 
 for (const check of checks) {

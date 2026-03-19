@@ -902,7 +902,7 @@ export const getCityMapPoints = (
       phone: facility.verifiedPhone || facility.phone || '',
       licenseNumber: facility.licenseNumber || '',
       listingTier: facility.listingTier || '',
-      profileUrl: `/community/${facility.publicSlug}-${facility.publicRouteId}/`,
+      profileUrl: `/${facility.primaryCareType}/${facility.stateSlug}/${facility.citySlug}/${facility.publicSlug}-${facility.publicRouteId}/`,
     }));
 };
 

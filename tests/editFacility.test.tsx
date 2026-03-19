@@ -108,6 +108,19 @@ vi.mock('@/src/lib/supabase', () => ({
         };
       }
 
+      if (table === 'user_profiles') {
+        return {
+          select: () => ({
+            eq: () => ({
+              maybeSingle: async () => ({
+                data: { plan: 'free' },
+                error: null,
+              }),
+            }),
+          }),
+        };
+      }
+
       throw new Error(`Unexpected table: ${table}`);
     },
   },

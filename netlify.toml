@@ -82,21 +82,4 @@
   status = 410
   force = true
 
-# Guide SPA routes → canonical Astro static pages
-[[redirects]]
-  from = "/guides/how-to-choose"
-  to = "/guides/how-to-choose/"
-  status = 301
-  force = true
 
-[[redirects]]
-  from = "/guides/what-it-costs"
-  to = "/guides/what-it-costs/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/guides/tour-questions"
-  to = "/guides/tour-questions/"
-  status = 301
-  force = true

@@ -113,6 +113,9 @@ export const CityPageTemplate: React.FC = () => {
             id: facility.id,
             publicSlug: facility.public_slug,
             publicRouteId: facility.public_route_id,
+            careType: normalizedCareType,
+            state: stateDef.slug,
+            city: citySlug,
           })}`,
           telephone: facility.phone || undefined,
           address: {
@@ -176,7 +179,7 @@ export const CityPageTemplate: React.FC = () => {
               {careTypeLabel} in {cityName}, {stateDef.abbreviation}
             </h1>
             <p className="mt-4 text-lg text-slate-600">
-              Review local communities, compare facility details, and move directly into canonical `/community` profiles.
+              Review local communities, compare facility details, and move directly into canonical Astro facility profiles.
             </p>
           </div>
         </div>
@@ -233,6 +236,9 @@ export const CityPageTemplate: React.FC = () => {
                             id: facility.id,
                             publicSlug: facility.public_slug,
                             publicRouteId: facility.public_route_id,
+                            careType: normalizedCareType,
+                            state: stateDef.slug,
+                            city: citySlug,
                           })}
                           className="hover:text-primary-700"
                         >
@@ -271,6 +277,9 @@ export const CityPageTemplate: React.FC = () => {
                           id: facility.id,
                           publicSlug: facility.public_slug,
                           publicRouteId: facility.public_route_id,
+                          careType: normalizedCareType,
+                          state: stateDef.slug,
+                          city: citySlug,
                         })}
                         className="inline-flex items-center justify-center rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white"
                       >
@@ -290,7 +299,7 @@ export const CityPageTemplate: React.FC = () => {
                 <div>
                   <h2 className="text-lg font-semibold text-slate-900">Clean canonical paths</h2>
                   <p className="mt-2 text-sm text-slate-600">
-                    All public facility links on this page point to `/community/{'{slug-id}'}` instead of legacy UUID URLs.
+                    All public facility links on this page point directly to canonical Astro facility paths.
                   </p>
                 </div>
               </div>

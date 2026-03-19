@@ -103,7 +103,7 @@ describe('OperatorQA Phase 4 cleanup', () => {
     vi.restoreAllMocks();
   });
 
-  it('renders Official Responses flow and keeps community discussion deferred in V1', async () => {
+  it('renders Official Responses flow and keeps facility discussion deferred in V1', async () => {
     render(<OperatorQA />);
 
     await waitFor(() => {
@@ -115,9 +115,9 @@ describe('OperatorQA Phase 4 cleanup', () => {
     });
 
     expect(
-      screen.getByText(/Community discussion and moderation are deferred to V1\.5/i)
+      screen.getByText(/(Facility|Community) discussion and moderation are deferred to V1\.5/i)
     ).toBeInTheDocument();
-    expect(screen.queryByRole('tab', { name: /Community Discussion/i })).not.toBeInTheDocument();
-    expect(screen.queryByRole('button', { name: /Community Discussion/i })).not.toBeInTheDocument();
+    expect(screen.queryByRole('tab', { name: /(Facility|Community) Discussion/i })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /(Facility|Community) Discussion/i })).not.toBeInTheDocument();
   });
 });
