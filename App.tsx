@@ -45,8 +45,6 @@ const StateOmbudsmanPage = lazy(() => import('@/features/locations/hub/StateOmbu
 const StateVeteransPage = lazy(() => import('@/features/locations/hub/StateVeteransPage').then((m) => ({ default: m.StateVeteransPage })));
 const RegulatoryLibrary = lazy(() => import('@/features/regulatory/RegulatoryLibrary').then((m) => ({ default: m.RegulatoryLibrary })));
 const StateRegulationTopicPage = lazy(() => import('@/features/regulatory/StateRegulationTopicPage').then((m) => ({ default: m.StateRegulationTopicPage })));
-const AboutPage = lazy(() => import('@/features/public/company/AboutPage').then((m) => ({ default: m.AboutPage })));
-const WhyThisExistsPage = lazy(() => import('@/features/public/company/WhyThisExistsPage').then((m) => ({ default: m.WhyThisExistsPage })));
 const ContactPage = lazy(() => import('@/features/public/company/ContactPage').then((m) => ({ default: m.ContactPage })));
 const EditorialPolicyPage = lazy(() => import('@/features/public/company/EditorialPolicyPage').then((m) => ({ default: m.EditorialPolicyPage })));
 const CommunityGuidelinesPage = lazy(() => import('@/features/public/company/CommunityGuidelinesPage').then((m) => ({ default: m.CommunityGuidelinesPage })));
@@ -180,6 +178,15 @@ const AstroRoute: React.FC = () => {
   return null;
 };
 
+// Astro owns select top-level public pages. Force a hard reload so Netlify
+// serves the Astro-built static file instead of any React fallback surface.
+const AstroStaticRoute: React.FC = () => {
+  React.useEffect(() => {
+    window.location.assign(window.location.pathname + window.location.search);
+  }, []);
+  return null;
+};
+
 const NotFound: React.FC = () => (
   <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
     <h1 className="text-4xl font-bold text-slate-900 mb-3">Page not found</h1>
@@ -292,8 +299,8 @@ function App() {
                     <Route path="/providers/contact-sales" element={<ContactSalesPage />} />
 
                     {/* Company & Resources */}
-                    <Route path="/about" element={<AboutPage />} />
-                    <Route path="/why-this-exists" element={<WhyThisExistsPage />} />
+                    <Route path="/about" element={<AstroStaticRoute />} />
+                    <Route path="/why-this-exists" element={<AstroStaticRoute />} />
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
                     <Route path="/community-guidelines" element={<CommunityGuidelinesPage />} />

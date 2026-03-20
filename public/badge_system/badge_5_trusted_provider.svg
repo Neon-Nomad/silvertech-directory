@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 72" width="200" height="72">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1200;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D0900;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDE68A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B45309;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="border5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDE68A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Badge background -->
+  <rect x="1" y="1" width="198" height="70" rx="10" ry="10" fill="url(#bg5)" stroke="url(#border5)" stroke-width="2"/>
+  <!-- Subtle inner glow border -->
+  <rect x="3" y="3" width="194" height="66" rx="8" ry="8" fill="none" stroke="#F59E0B" stroke-width="0.5" opacity="0.3"/>
+  <!-- Left accent bar -->
+  <rect x="1" y="1" width="5" height="70" rx="2" ry="2" fill="url(#gold5)"/>
+  <!-- Icon: star/crown -->
+  <g transform="translate(21, 36)" filter="url(#glow)">
+    <polygon points="0,-12 3,-4 12,-4 5,2 7,11 0,6 -7,11 -5,2 -12,-4 -3,-4" fill="none" stroke="url(#gold5)" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="3.5" fill="#F59E0B"/>
+  </g>
+  <!-- Badge text -->
+  <text x="42" y="26" font-family="Georgia, serif" font-size="8" font-weight="600" letter-spacing="2.5" fill="#D97706" text-anchor="start">SILVERTECH</text>
+  <text x="42" y="46" font-family="Georgia, serif" font-size="14" font-weight="700" fill="url(#gold5)" text-anchor="start">Trusted Provider</text>
+  <!-- Sub label -->
+  <text x="42" y="61" font-family="Arial, sans-serif" font-size="7.5" fill="#92400E" text-anchor="start" letter-spacing="0.5">90 days · High ratings · Verified</text>
+</svg>

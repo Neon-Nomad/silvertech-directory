@@ -366,6 +366,7 @@ const SearchResultCard: React.FC<{ facility: EnrichedSearchFacilityResult; claim
   facility,
   claimMode = false,
 }) => {
+  const isSilverTechMember = Boolean(facility.owner_id);
   const communityPath = buildFacilityDetailPath({
     id: facility.id,
     publicSlug: facility.public_slug,
@@ -396,6 +397,19 @@ const SearchResultCard: React.FC<{ facility: EnrichedSearchFacilityResult; claim
           </div>
 
           <div className="mt-4 flex flex-wrap gap-2">
+            {isSilverTechMember && (
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-300 bg-emerald-50 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.22em] text-emerald-800">
+                <img
+                  src="/badge_system/badge_2_verified_member.svg"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-3.5 w-3.5"
+                  loading="lazy"
+                  decoding="async"
+                />
+                SilverTech Member
+              </span>
+            )}
             {facility.primaryCareLabel && <ResultPill tone="care">{facility.primaryCareLabel}</ResultPill>}
             {facility.licenseNumber && <ResultPill tone="trust">Licensed</ResultPill>}
             {facility.medicareCertified && <ResultPill tone="neutral">Medicare</ResultPill>}

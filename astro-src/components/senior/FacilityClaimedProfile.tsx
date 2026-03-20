@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
 import { useEffect, useState } from 'react';
+import FacilityBadgeStrip from './FacilityBadgeStrip';
 
 type Photo = { url: string; caption: string | null };
 type Amenity = { name: string; category: string; icon: string | null };
@@ -18,6 +19,9 @@ type EnrichedProfile = {
 interface Props {
   facilityId: string;
   facilityName: string;
+  onlinePresenceUpdatedAt?: string | null;
+  lastVerifiedDate?: string | null;
+  hasVerifiedIdentifiers?: boolean;
 }
 
 const LOCKED_ROWS = [
@@ -38,8 +42,15 @@ function groupByCategory(amenities: Amenity[]): Record<string, Amenity[]> {
   }, {});
 }
 
-export default function FacilityClaimedProfile({ facilityId, facilityName }: Props) {
+export default function FacilityClaimedProfile({
+  facilityId,
+  facilityName,
+  onlinePresenceUpdatedAt = null,
+  lastVerifiedDate = null,
+  hasVerifiedIdentifiers = false,
+}: Props) {
   const [profile, setProfile] = useState<EnrichedProfile | null>(null);
+  const [operatorAnswerCount, setOperatorAnswerCount] = useState(0);
   const [status, setStatus] = useState<'loading' | 'done' | 'error'>('loading');
 
   useEffect(() => {
@@ -48,16 +59,30 @@ export default function FacilityClaimedProfile({ facilityId, facilityName }: Pro
       import.meta.env.VITE_SUPABASE_ANON_KEY || '',
     );
 
-    supabase
-      .rpc('get_public_facility_enriched', { p_facility_id: facilityId })
-      .then(({ data, error }) => {
-        if (error || !data) {
-          setStatus('error');
-          return;
-        }
-        setProfile(data as EnrichedProfile);
-        setStatus('done');
-      });
+    const load = async () => {
+      const [profileResult, qaResult] = await Promise.all([
+        supabase.rpc('get_public_facility_enriched', { p_facility_id: facilityId }),
+        supabase
+          .from('approved_facility_qa')
+          .select('answer_id', { head: true, count: 'exact' })
+          .eq('facility_id', facilityId)
+          .eq('is_operator', true),
+      ]);
+
+      if (profileResult.error || !profileResult.data) {
+        setStatus('error');
+        return;
+      }
+
+      if (!qaResult.error) {
+        setOperatorAnswerCount(qaResult.count || 0);
+      }
+
+      setProfile(profileResult.data as EnrichedProfile);
+      setStatus('done');
+    };
+
+    void load();
   }, [facilityId]);
 
   // While loading, render nothing — static Astro content shows
@@ -79,6 +104,15 @@ export default function FacilityClaimedProfile({ facilityId, facilityName }: Pro
 
   return (
     <div className="fcp-root">
+      <FacilityBadgeStrip
+        isClaimed={is_claimed}
+        hasPricing={typeof min_price === 'number' || typeof max_price === 'number'}
+        hasTourScheduling={Boolean(tour_scheduling_url)}
+        operatorAnswerCount={operatorAnswerCount}
+        onlinePresenceUpdatedAt={onlinePresenceUpdatedAt}
+        lastVerifiedDate={lastVerifiedDate}
+        hasVerifiedIdentifiers={hasVerifiedIdentifiers}
+      />
       {/* Operator description — replaces auto-generated copy when present */}
       {description && (
         <div className="fcp-description">

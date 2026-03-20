@@ -13,6 +13,7 @@ const careTypeDirs = [
   'ccrc',
 ];
 const topLevelAstroRouteDirs = [
+  'about',
   'guides',
   'states',
   'regulations',

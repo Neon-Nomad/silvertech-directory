@@ -1,0 +1,359 @@
+---
+import Base from '../layouts/Base.astro';
+
+const title = 'SilverTech Directory Manifesto | About';
+const description = 'The SilverTech Directory manifesto: ending the transparency tax in senior care and restoring direct, data-first decision making for families and operators.';
+const canonical = 'https://silvertechdirectory.com/about/';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'About', item: canonical },
+  ],
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'The SilverTech Directory Manifesto',
+  description,
+  url: canonical,
+  datePublished: '2026-03-19',
+  dateModified: '2026-03-19',
+  author: {
+    '@type': 'Organization',
+    name: 'SilverTech Directory',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'SilverTech Directory',
+    url: 'https://silvertechdirectory.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://silvertechdirectory.com/logo-nav.png',
+    },
+  },
+};
+---
+
+<Base title={title} description={description} canonical={canonical}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
+
+  <div class="container manifesto-page">
+    <nav class="manifesto-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span>About</span>
+    </nav>
+
+    <header class="manifesto-hero">
+      <p class="manifesto-kicker">The SilverTech Directory Manifesto</p>
+      <h1>The Era of the Information Hostage Is Over</h1>
+      <p class="manifesto-deck">
+        Families deserve direct facts, not hidden pricing and referral funnels. SilverTech exists to set a new
+        baseline for senior care transparency.
+      </p>
+    </header>
+
+    <section class="manifesto-section">
+      <h2>1. The Transparency Tax</h2>
+      <p>
+        For too long, senior care has operated inside a black box. Referral agencies and corporate operators normalized
+        hiding room and board pricing, staffing levels, and real-time availability.
+      </p>
+      <p>
+        This is not competitive strategy. It is a tax on honesty. When information is hidden, families are forced
+        through intermediaries who charge facilities thousands just to pass along a lead that should have been direct.
+      </p>
+      <p>
+        That is not efficiency. It is extraction.
+      </p>
+    </section>
+
+    <section class="manifesto-section">
+      <h2>2. The Generational Shift</h2>
+      <p>The next generation of decision-makers does not browse the same way. They evaluate with hard filters:</p>
+      <ul>
+        <li>Data instead of sales language</li>
+        <li>Pricing instead of "call for details"</li>
+        <li>Direct access instead of referral funnels</li>
+      </ul>
+      <p>
+        Transparency is no longer a feature. It is baseline credibility. Facilities that hide foundational information
+        are removing themselves from consideration.
+      </p>
+    </section>
+
+    <section class="manifesto-section">
+      <h2>3. SilverTech Restores Control</h2>
+      <p>
+        SilverTech is built on a single operating principle: the operator closest to the resident should control the
+        relationship. Not a call center. Not a referral broker.
+      </p>
+      <div class="manifesto-grid">
+        <article class="manifesto-card">
+          <h3>Room and Board Standard</h3>
+          <p>Facilities publish base pricing so families arrive informed and tours convert without price shock.</p>
+        </article>
+        <article class="manifesto-card">
+          <h3>Staffing Proof</h3>
+          <p>Care is demonstrated through real operational signals, not soft marketing language.</p>
+        </article>
+        <article class="manifesto-card">
+          <h3>Direct Access</h3>
+          <p>Families connect directly with facilities with no gatekeepers, commissions, or lead resale.</p>
+        </article>
+      </div>
+      <p class="manifesto-strong">This is not a feature set. It is a correction.</p>
+    </section>
+
+    <section class="manifesto-section">
+      <h2>4. Built for the Underdog</h2>
+      <p>
+        SilverTech exists for operators who deliver real care but refuse to participate in referral systems that
+        extract tens of thousands of dollars per year.
+      </p>
+      <p>When information is open, good operators compete on quality, not referral contracts or marketing spend.</p>
+      <p class="manifesto-strong">Truth rises.</p>
+    </section>
+
+    <section class="manifesto-section">
+      <h2>Industry Report Card</h2>
+      <div class="manifesto-table-wrap">
+        <table class="manifesto-table">
+          <thead>
+            <tr>
+              <th>The Old Model (Pay-to-Play)</th>
+              <th>The SilverTech Model (Direct)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hidden pricing</td>
+              <td>Room and board disclosed</td>
+            </tr>
+            <tr>
+              <td>"Call for availability"</td>
+              <td>Live availability signals</td>
+            </tr>
+            <tr>
+              <td>Commission per move-in</td>
+              <td>$0 direct connection</td>
+            </tr>
+            <tr>
+              <td>Lead ownership by third party</td>
+              <td>Relationship owned by facility</td>
+            </tr>
+            <tr>
+              <td>Marketing-driven placement</td>
+              <td>Data-driven decisions</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="manifesto-cta">
+      <p>
+        This page is our standard: philosophy, operator signal, and public accountability statement in one place.
+      </p>
+      <div class="manifesto-actions">
+        <a href="/search/" class="btn-primary">Search the Directory</a>
+        <a href="/why-this-exists/" class="btn-secondary">Read Why This Exists</a>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .manifesto-page {
+    max-width: 920px;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .manifesto-breadcrumbs {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 1.2rem;
+  }
+
+  .manifesto-breadcrumbs a:hover {
+    color: #0f172a;
+  }
+
+  .manifesto-hero {
+    background: linear-gradient(145deg, #0f172a, #1e293b 48%, #334155);
+    border-radius: 16px;
+    color: #f8fafc;
+    padding: 2.1rem;
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    margin-bottom: 2rem;
+  }
+
+  .manifesto-kicker {
+    margin: 0 0 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.74rem;
+    font-weight: 700;
+    color: #facc15;
+  }
+
+  .manifesto-hero h1 {
+    margin: 0;
+    line-height: 1.2;
+    font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  }
+
+  .manifesto-deck {
+    margin: 1rem 0 0;
+    line-height: 1.75;
+    max-width: 42rem;
+    color: #e2e8f0;
+  }
+
+  .manifesto-section {
+    margin: 0 0 2rem;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1.4rem;
+  }
+
+  .manifesto-section h2 {
+    margin: 0 0 0.8rem;
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    color: #111827;
+  }
+
+  .manifesto-section p {
+    margin: 0 0 0.9rem;
+    line-height: 1.8;
+    color: #334155;
+  }
+
+  .manifesto-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .manifesto-section ul {
+    margin: 0 0 0.9rem 1.2rem;
+    padding: 0;
+    color: #334155;
+    line-height: 1.8;
+  }
+
+  .manifesto-grid {
+    display: grid;
+    gap: 0.9rem;
+    margin: 0.9rem 0 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .manifesto-card {
+    border: 1px solid #fde68a;
+    background: #fffbeb;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+
+  .manifesto-card h3 {
+    margin: 0 0 0.45rem;
+    font-size: 1rem;
+    color: #78350f;
+  }
+
+  .manifesto-card p {
+    margin: 0;
+    color: #92400e;
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .manifesto-strong {
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  .manifesto-table-wrap {
+    overflow-x: auto;
+  }
+
+  .manifesto-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 580px;
+  }
+
+  .manifesto-table th,
+  .manifesto-table td {
+    border: 1px solid #e2e8f0;
+    padding: 0.75rem;
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .manifesto-table th {
+    background: #f8fafc;
+    color: #1e293b;
+    font-weight: 700;
+  }
+
+  .manifesto-cta {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1.4rem;
+    background: #f8fafc;
+  }
+
+  .manifesto-cta p {
+    margin: 0 0 1rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+
+  .manifesto-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 0.55rem 1rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    background: #111827;
+    color: #ffffff;
+  }
+
+  .btn-primary:hover {
+    background: #0f172a;
+  }
+
+  .btn-secondary {
+    border: 1px solid #94a3b8;
+    color: #1e293b;
+    background: #ffffff;
+  }
+
+  .btn-secondary:hover {
+    border-color: #334155;
+    color: #0f172a;
+  }
+</style>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 72" width="200" height="72">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C2A26;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1F1C17;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="border1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B5563;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Badge background -->
+  <rect x="1" y="1" width="198" height="70" rx="10" ry="10" fill="url(#bg1)" stroke="url(#border1)" stroke-width="1.5"/>
+  <!-- Left accent bar -->
+  <rect x="1" y="1" width="4" height="70" rx="2" ry="2" fill="#6B7280"/>
+  <!-- Icon: sparkle/new star -->
+  <g transform="translate(20, 36)">
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#9CA3AF" stroke-width="1.2"/>
+    <line x1="0" y1="-7" x2="0" y2="7" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-7" y1="0" x2="7" y2="0" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-5" y1="-5" x2="5" y2="5" stroke="#9CA3AF" stroke-width="1" stroke-linecap="round"/>
+    <line x1="5" y1="-5" x2="-5" y2="5" stroke="#9CA3AF" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  <!-- Badge text -->
+  <text x="40" y="28" font-family="Georgia, serif" font-size="8" font-weight="600" letter-spacing="2" fill="#9CA3AF" text-anchor="start">SILVERTECH</text>
+  <text x="40" y="46" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#E5E7EB" text-anchor="start">New Member</text>
+  <!-- Sub label -->
+  <text x="40" y="60" font-family="Arial, sans-serif" font-size="7.5" fill="#6B7280" text-anchor="start" letter-spacing="0.5">Joined within 60 days</text>
+</svg>

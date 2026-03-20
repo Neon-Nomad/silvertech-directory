@@ -386,6 +386,9 @@ const breadcrumbSchema = {
               client:visible
               facilityId={facility.id}
               facilityName={displayName}
+              onlinePresenceUpdatedAt={facility.onlinePresenceUpdatedAt}
+              lastVerifiedDate={facility.lastVerifiedDate}
+              hasVerifiedIdentifiers={isVerified}
             />
           )}
         </section>

@@ -66,6 +66,8 @@ const MOBILE_ACTIONS: NavCategory[] = [
   },
 ];
 
+const MANIFESTO_HREF = '/about';
+
 const NavDropdown: React.FC<{
   category: NavCategory;
   isOpen: boolean;
@@ -229,6 +231,12 @@ const Navbar: React.FC = () => {
                 onClose={() => setOpenCategory(null)}
               />
             ))}
+            <Link
+              to={MANIFESTO_HREF}
+              className="inline-flex items-center rounded-full border border-amber-300 bg-amber-50 px-4 py-1.5 text-sm font-extrabold uppercase tracking-wide text-amber-900 hover:bg-amber-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2"
+            >
+              Manifesto
+            </Link>
           </div>
 
           <div className="hidden lg:flex items-center gap-5 border-l border-warm-gray pl-6">
@@ -277,6 +285,13 @@ const Navbar: React.FC = () => {
 
         {openCategory === 'mobile' && (
           <div id="mobile-nav-panel" className="lg:hidden border-t border-warm-gray py-4 space-y-4">
+            <Link
+              to={MANIFESTO_HREF}
+              onClick={() => setOpenCategory(null)}
+              className="inline-flex items-center rounded-full border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-extrabold uppercase tracking-wide text-amber-900 hover:bg-amber-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1"
+            >
+              Manifesto
+            </Link>
             {NAV_CATEGORIES.map((category) => (
               <MobileNavSection
                 key={category.label}

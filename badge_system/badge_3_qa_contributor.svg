@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 72" width="200" height="72">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A2A1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F1F0F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="border3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22C55E;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#16A34A;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  <!-- Badge background -->
+  <rect x="1" y="1" width="198" height="70" rx="10" ry="10" fill="url(#bg3)" stroke="url(#border3)" stroke-width="1.5"/>
+  <!-- Left accent bar -->
+  <rect x="1" y="1" width="4" height="70" rx="2" ry="2" fill="#22C55E"/>
+  <!-- Icon: speech bubble with checkmark -->
+  <g transform="translate(20, 34)">
+    <path d="M-10,-10 L10,-10 C11.1,-10 12,-9.1 12,-8 L12,2 C12,3.1 11.1,4 10,4 L2,4 L-2,9 L-2,4 L-10,4 C-11.1,4 -12,3.1 -12,2 L-12,-8 C-12,-9.1 -11.1,-10 -10,-10 Z" fill="none" stroke="#22C55E" stroke-width="1.5" stroke-linejoin="round"/>
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#22C55E" text-anchor="middle" dominant-baseline="middle">Q&amp;A</text>
+  </g>
+  <!-- Badge text -->
+  <text x="40" y="26" font-family="Georgia, serif" font-size="8" font-weight="600" letter-spacing="2" fill="#22C55E" text-anchor="start">VERIFIED</text>
+  <text x="40" y="43" font-family="Georgia, serif" font-size="12.5" font-weight="700" fill="#E5E7EB" text-anchor="start">Q&amp;A Contributor</text>
+  <!-- Sub label -->
+  <text x="40" y="59" font-family="Arial, sans-serif" font-size="7.5" fill="#6B7280" text-anchor="start" letter-spacing="0.5">20+ family questions answered</text>
+</svg>
