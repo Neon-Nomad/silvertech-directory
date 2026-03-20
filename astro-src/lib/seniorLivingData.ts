@@ -795,16 +795,40 @@ export const getNearbyFacilities = (
   return results;
 };
 
-export const getFacilityBySlug = (facilitySlug: string): FacilityRecord | null => {
+export const getFacilityBySlug = (
+  facilitySlug: string,
+  context?: {
+    care?: string;
+    state?: string;
+    city?: string;
+  },
+): FacilityRecord | null => {
+  const allFacilities = ensureStore().facilities;
   const match = facilitySlug.match(/^(.*)-(\d+)$/);
-  if (!match) return null;
+
+  if (!match) {
+    const direct = allFacilities.find((f) => f.publicSlug === facilitySlug.toLowerCase());
+    return direct || null;
+  }
+
   const publicRouteId = Number(match[2]);
   const publicSlug = match[1].toLowerCase();
-  return (
-    ensureStore().facilities.find(
-      (f) => f.publicRouteId === publicRouteId && f.publicSlug === publicSlug,
-    ) || null
+
+  const exact = allFacilities.find(
+    (f) => f.publicRouteId === publicRouteId && f.publicSlug === publicSlug,
   );
+  if (exact) return exact;
+
+  let candidates = allFacilities.filter((f) => f.publicSlug === publicSlug);
+  if (context?.state) candidates = candidates.filter((f) => f.stateSlug === context.state);
+  if (context?.city) candidates = candidates.filter((f) => f.citySlug === context.city);
+  if (context?.care) {
+    candidates = candidates.filter(
+      (f) => f.primaryCareType === context.care || f.careTypes.includes(context.care as CareTypeSlug),
+    );
+  }
+
+  return candidates[0] || null;
 };
 
 export const getFacilityStaticPaths = (): Array<{

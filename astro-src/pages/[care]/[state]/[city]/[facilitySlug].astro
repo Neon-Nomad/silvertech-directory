@@ -17,7 +17,11 @@ export async function getStaticPaths() {
 }
 
 const { care, state, city, facilitySlug } = Astro.params;
-const facility = getFacilityBySlug(facilitySlug!);
+const facility = getFacilityBySlug(facilitySlug!, {
+  care,
+  state,
+  city,
+});
 
 if (!facility) {
   return Astro.redirect('/404');

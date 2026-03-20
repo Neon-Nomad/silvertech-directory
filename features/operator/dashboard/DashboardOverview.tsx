@@ -4,8 +4,10 @@ import {
   Building2,
   CheckCircle,
   LayoutDashboard,
+  Lock,
   Mail,
   Phone,
+  Trophy,
   TrendingUp,
 } from 'lucide-react';
 import { useAuth } from '@/src/context/AuthProvider';
@@ -70,7 +72,47 @@ type ActivationEventRow = {
   event_name: string;
 };
 
+type DashboardBadgeSnapshot = {
+  facilityName: string;
+  isClaimed: boolean;
+  hasPricing: boolean;
+  hasTourScheduling: boolean;
+  operatorAnswerCount: number;
+  hasVerifiedIdentifiers: boolean;
+  freshPresence: boolean;
+  freshVerification: boolean;
+  newToSilverTech: boolean;
+  trustedProvider: boolean;
+  qaContributor: boolean;
+  availabilityPricing: boolean;
+};
+
+type DashboardBadgeCard = {
+  id: 'new_to_silvertech' | 'verified_member' | 'qa_contributor' | 'availability_pricing' | 'trusted_provider';
+  label: string;
+  asset: string;
+  status: 'earned' | 'in_progress' | 'locked';
+  progress: string;
+  actionLabel: string;
+  action: () => void;
+};
+
 const ACTIVATION_EVENTS_MISSING_STORAGE_KEY = 'std_activation_events_missing_v1';
+const BADGE_QA_TARGET = 3;
+const BADGE_TRUSTED_TARGET = 4;
+
+const parseBadgeDate = (value?: string | null): Date | null => {
+  if (!value) return null;
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+};
+
+const isWithinDays = (value: Date | null, days: number): boolean => {
+  if (!value) return false;
+  const diffMs = Date.now() - value.getTime();
+  if (diffMs < 0) return true;
+  return diffMs <= days * 24 * 60 * 60 * 1000;
+};
 
 const isMissingActivationEventsResource = (err: unknown): boolean => {
   const anyErr = err as { code?: string; status?: number; message?: string };
@@ -211,6 +253,202 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
     [quickWinTemplates, snapshot.quickWins.items],
   );
   const isDoneForNow = checklistCompletion >= 0.8 && quickWins.length === 0 && activationScore >= 75;
+  const [badgeSnapshot, setBadgeSnapshot] = React.useState<DashboardBadgeSnapshot | null>(null);
+  const [badgeLoading, setBadgeLoading] = React.useState(false);
+  const [badgeError, setBadgeError] = React.useState<string | null>(null);
+  const [hasOwnedFacility, setHasOwnedFacility] = React.useState(true);
+
+  React.useEffect(() => {
+    let mounted = true;
+    const loadDashboardBadgeState = async () => {
+      if (!user) {
+        if (mounted) {
+          setBadgeSnapshot(null);
+          setBadgeLoading(false);
+          setBadgeError(null);
+          setHasOwnedFacility(false);
+        }
+        return;
+      }
+
+      setBadgeLoading(true);
+      setBadgeError(null);
+
+      try {
+        const { data: facility, error: facilityError } = await supabase
+          .from('facilities')
+          .select('id,name,state_license_number,cms_certification_number,online_presence_updated_at,last_verified_date')
+          .eq('owner_id', user.id)
+          .order('updated_at', { ascending: false })
+          .limit(1)
+          .maybeSingle();
+
+        if (facilityError) throw facilityError;
+
+        if (!facility?.id) {
+          if (!mounted) return;
+          setHasOwnedFacility(false);
+          setBadgeSnapshot(null);
+          return;
+        }
+
+        setHasOwnedFacility(true);
+
+        const [profileResult, qaResult] = await Promise.all([
+          supabase.rpc('get_public_facility_enriched', { p_facility_id: facility.id }),
+          supabase
+            .from('approved_facility_qa')
+            .select('answer_id', { head: true, count: 'exact' })
+            .eq('facility_id', facility.id)
+            .eq('is_operator', true),
+        ]);
+
+        if (profileResult.error) throw profileResult.error;
+        if (qaResult.error) throw qaResult.error;
+
+        const profile = (profileResult.data || {}) as {
+          is_claimed?: boolean;
+          min_price?: number | null;
+          max_price?: number | null;
+          tour_scheduling_url?: string | null;
+        };
+
+        const lastPresence = parseBadgeDate(
+          typeof facility.online_presence_updated_at === 'string'
+            ? facility.online_presence_updated_at
+            : null,
+        );
+        const lastVerified = parseBadgeDate(
+          typeof facility.last_verified_date === 'string' ? facility.last_verified_date : null,
+        );
+
+        const isClaimed = Boolean(profile.is_claimed);
+        const hasPricing = typeof profile.min_price === 'number' || typeof profile.max_price === 'number';
+        const hasTourScheduling = Boolean(profile.tour_scheduling_url);
+        const operatorAnswerCount = qaResult.count || 0;
+        const hasVerifiedIdentifiers = Boolean(
+          facility.state_license_number || facility.cms_certification_number,
+        );
+        const freshPresence = isWithinDays(lastPresence, 120);
+        const freshVerification = isWithinDays(lastVerified, 365);
+        const qaContributor = operatorAnswerCount >= BADGE_QA_TARGET;
+        const availabilityPricing = hasPricing && hasTourScheduling;
+        const newToSilverTech = freshPresence || (!qaContributor && !availabilityPricing);
+        const trustedProvider =
+          qaContributor &&
+          availabilityPricing &&
+          hasVerifiedIdentifiers &&
+          (freshPresence || freshVerification);
+
+        if (!mounted) return;
+        setBadgeSnapshot({
+          facilityName: facility.name || 'Your facility',
+          isClaimed,
+          hasPricing,
+          hasTourScheduling,
+          operatorAnswerCount,
+          hasVerifiedIdentifiers,
+          freshPresence,
+          freshVerification,
+          newToSilverTech,
+          trustedProvider,
+          qaContributor,
+          availabilityPricing,
+        });
+      } catch (err) {
+        console.error('Failed to load badge achievement state:', err);
+        if (!mounted) return;
+        setBadgeError('Unable to load badge progress right now.');
+        setBadgeSnapshot(null);
+      } finally {
+        if (mounted) setBadgeLoading(false);
+      }
+    };
+
+    void loadDashboardBadgeState();
+    return () => {
+      mounted = false;
+    };
+  }, [user]);
+
+  const dashboardBadgeCards = React.useMemo<DashboardBadgeCard[]>(() => {
+    if (!badgeSnapshot) return [];
+
+    const trustedSignalsCount =
+      (badgeSnapshot.qaContributor ? 1 : 0) +
+      (badgeSnapshot.availabilityPricing ? 1 : 0) +
+      (badgeSnapshot.hasVerifiedIdentifiers ? 1 : 0) +
+      (badgeSnapshot.freshPresence || badgeSnapshot.freshVerification ? 1 : 0);
+    const availabilityCount =
+      (badgeSnapshot.hasPricing ? 1 : 0) + (badgeSnapshot.hasTourScheduling ? 1 : 0);
+
+    const actionToListings = () => onGoToListings();
+    const actionToLeads = () => onGoToLeads();
+
+    return [
+      {
+        id: 'new_to_silvertech',
+        label: 'New to SilverTech',
+        asset: '/badge_system/badge_1_new_to_silvertech.svg',
+        status: badgeSnapshot.newToSilverTech && badgeSnapshot.isClaimed ? 'earned' : 'locked',
+        progress: badgeSnapshot.newToSilverTech
+          ? 'Within new-member window'
+          : 'Seasoned on platform',
+        actionLabel: 'Open listing',
+        action: actionToListings,
+      },
+      {
+        id: 'verified_member',
+        label: 'SilverTech Verified Member',
+        asset: '/badge_system/badge_2_verified_member.svg',
+        status: badgeSnapshot.isClaimed ? 'earned' : 'locked',
+        progress: badgeSnapshot.isClaimed ? 'Claimed and verified' : 'Claim listing to unlock',
+        actionLabel: 'Claim/setup',
+        action: actionToListings,
+      },
+      {
+        id: 'qa_contributor',
+        label: 'Verified Q&A Contributor',
+        asset: '/badge_system/badge_3_qa_contributor.svg',
+        status: badgeSnapshot.qaContributor
+          ? 'earned'
+          : badgeSnapshot.operatorAnswerCount > 0
+            ? 'in_progress'
+            : 'locked',
+        progress: `${Math.min(badgeSnapshot.operatorAnswerCount, BADGE_QA_TARGET)}/${BADGE_QA_TARGET} operator answers`,
+        actionLabel: 'Answer questions',
+        action: actionToLeads,
+      },
+      {
+        id: 'availability_pricing',
+        label: 'Availability & Pricing Verified',
+        asset: '/badge_system/badge_4_availability_pricing.svg',
+        status: badgeSnapshot.availabilityPricing
+          ? 'earned'
+          : badgeSnapshot.hasPricing || badgeSnapshot.hasTourScheduling
+            ? 'in_progress'
+            : 'locked',
+        progress: `${availabilityCount}/2 requirements`,
+        actionLabel: 'Update profile',
+        action: actionToListings,
+      },
+      {
+        id: 'trusted_provider',
+        label: 'SilverTech Trusted Provider',
+        asset: '/badge_system/badge_5_trusted_provider.svg',
+        status: badgeSnapshot.trustedProvider
+          ? 'earned'
+          : trustedSignalsCount > 0
+            ? 'in_progress'
+            : 'locked',
+        progress: `${trustedSignalsCount}/${BADGE_TRUSTED_TARGET} trust signals`,
+        actionLabel: 'See required signals',
+        action: actionToListings,
+      },
+    ];
+  }, [badgeSnapshot, onGoToLeads, onGoToListings]);
+
+  const earnedDashboardBadgeCount = dashboardBadgeCards.filter((badge) => badge.status === 'earned').length;
 
   React.useEffect(() => {
     if (!user || hasTrackedActivationScoreView.current) return;
@@ -532,6 +770,88 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
             </button>
           </div>
         )}
+
+        <div id="achievement-center" className="rounded-2xl border border-warm-gray bg-white p-6 shadow-sm">
+          <div className="mb-3 flex items-start justify-between gap-3">
+            <div>
+              <h2 className="text-lg font-semibold text-charcoal">Achievement Center</h2>
+              {badgeSnapshot ? (
+                <p className="mt-1 text-xs text-charcoal/70">
+                  {badgeSnapshot.facilityName}: {earnedDashboardBadgeCount}/{dashboardBadgeCards.length} badges earned
+                </p>
+              ) : (
+                <p className="mt-1 text-xs text-charcoal/70">Track your progress to trusted-provider status.</p>
+              )}
+            </div>
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/20 text-gold">
+              <Trophy className="h-5 w-5" />
+            </div>
+          </div>
+
+          {badgeLoading ? (
+            <p className="text-sm text-charcoal/70">Loading badge progress...</p>
+          ) : !hasOwnedFacility ? (
+            <div className="rounded-xl border border-warm-gray bg-warm-white p-3">
+              <p className="text-sm font-medium text-charcoal">No facility linked yet</p>
+              <p className="mt-1 text-xs text-charcoal/60">
+                Claim your listing first to unlock SilverTech achievement badges.
+              </p>
+              <button
+                onClick={onGoToListings}
+                className="mt-3 inline-flex min-h-11 items-center justify-center rounded-full bg-charcoal px-4 py-2 text-xs font-semibold text-white"
+              >
+                Claim listing
+              </button>
+            </div>
+          ) : badgeError ? (
+            <div className="rounded-xl border border-amber-200 bg-amber-50 p-3">
+              <p className="text-xs font-medium text-amber-900">{badgeError}</p>
+            </div>
+          ) : dashboardBadgeCards.length === 0 ? (
+            <p className="text-sm text-charcoal/70">No badge data available yet.</p>
+          ) : (
+            <div className="space-y-3">
+              {dashboardBadgeCards.map((badge) => {
+                const statusLabel =
+                  badge.status === 'earned'
+                    ? 'Earned'
+                    : badge.status === 'in_progress'
+                      ? 'In progress'
+                      : 'Locked';
+                const statusClass =
+                  badge.status === 'earned'
+                    ? 'bg-emerald-50 text-emerald-700'
+                    : badge.status === 'in_progress'
+                      ? 'bg-amber-50 text-amber-700'
+                      : 'bg-warm-gray text-charcoal/70';
+
+                return (
+                  <div key={badge.id} className="rounded-xl border border-warm-gray bg-warm-white p-3">
+                    <div className="flex items-start gap-3">
+                      <img src={badge.asset} alt={`${badge.label} badge`} className="h-12 w-12 rounded-lg border border-warm-gray bg-white p-1" />
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center justify-between gap-2">
+                          <p className="text-sm font-medium text-charcoal">{badge.label}</p>
+                          <span className={`inline-flex items-center gap-1 rounded-full px-2 py-1 text-[10px] font-semibold ${statusClass}`}>
+                            {badge.status === 'locked' ? <Lock className="h-3 w-3" /> : <Trophy className="h-3 w-3" />}
+                            {statusLabel}
+                          </span>
+                        </div>
+                        <p className="mt-1 text-xs text-charcoal/60">{badge.progress}</p>
+                        <button
+                          onClick={badge.action}
+                          className="mt-2 text-xs font-semibold text-charcoal hover:underline"
+                        >
+                          {badge.status === 'earned' ? 'View details' : badge.actionLabel}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
 
         <div className="rounded-2xl border border-warm-gray bg-white p-6 shadow-sm">
           <div className="mb-3 flex items-center justify-between">
