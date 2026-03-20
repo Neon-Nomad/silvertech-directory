@@ -1,6 +1,10 @@
 import { createClient } from '@supabase/supabase-js';
 import { useEffect, useState } from 'react';
 import FacilityBadgeStrip from './FacilityBadgeStrip';
+import {
+  buildFacilityBadgeCredentialSchema,
+  deriveEarnedBadges,
+} from '../../lib/badgeSystem';
 
 type Photo = { url: string; caption: string | null };
 type Amenity = { name: string; category: string; icon: string | null };
@@ -19,6 +23,8 @@ type EnrichedProfile = {
 interface Props {
   facilityId: string;
   facilityName: string;
+  facilityUrl: string;
+  facilitySchemaId: string;
   onlinePresenceUpdatedAt?: string | null;
   lastVerifiedDate?: string | null;
   hasVerifiedIdentifiers?: boolean;
@@ -45,6 +51,8 @@ function groupByCategory(amenities: Amenity[]): Record<string, Amenity[]> {
 export default function FacilityClaimedProfile({
   facilityId,
   facilityName,
+  facilityUrl,
+  facilitySchemaId,
   onlinePresenceUpdatedAt = null,
   lastVerifiedDate = null,
   hasVerifiedIdentifiers = false,
@@ -100,18 +108,39 @@ export default function FacilityClaimedProfile({
     return <LockedPlaceholders facilityName={facilityName} />;
   }
 
+  const badgeInput = {
+    isClaimed: is_claimed,
+    hasPricing: typeof min_price === 'number' || typeof max_price === 'number',
+    hasTourScheduling: Boolean(tour_scheduling_url),
+    operatorAnswerCount,
+    onlinePresenceUpdatedAt,
+    lastVerifiedDate,
+    hasVerifiedIdentifiers,
+  };
+
+  const earnedBadges = deriveEarnedBadges(badgeInput);
+  const badgeCredentialSchema =
+    earnedBadges.length > 0
+      ? buildFacilityBadgeCredentialSchema({
+          facilityName,
+          facilityUrl,
+          facilitySchemaId,
+          earnedBadges,
+        })
+      : null;
+
   const hasEnrichedContent = description || min_price || photos.length > 0 || amenities.length > 0 || virtual_tour_url;
 
   return (
     <div className="fcp-root">
+      {badgeCredentialSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(badgeCredentialSchema) }}
+        />
+      )}
       <FacilityBadgeStrip
-        isClaimed={is_claimed}
-        hasPricing={typeof min_price === 'number' || typeof max_price === 'number'}
-        hasTourScheduling={Boolean(tour_scheduling_url)}
-        operatorAnswerCount={operatorAnswerCount}
-        onlinePresenceUpdatedAt={onlinePresenceUpdatedAt}
-        lastVerifiedDate={lastVerifiedDate}
-        hasVerifiedIdentifiers={hasVerifiedIdentifiers}
+        {...badgeInput}
       />
       {/* Operator description — replaces auto-generated copy when present */}
       {description && (

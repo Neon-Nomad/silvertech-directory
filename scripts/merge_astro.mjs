@@ -14,6 +14,7 @@ const careTypeDirs = [
 ];
 const topLevelAstroRouteDirs = [
   'about',
+  'badges',
   'guides',
   'states',
   'regulations',

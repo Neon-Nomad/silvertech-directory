@@ -1,0 +1,230 @@
+---
+import Base from '../layouts/Base.astro';
+import {
+  BADGE_DEFINITIONS,
+  BADGE_SET_URL,
+  buildBadgeDefinitionSchema,
+} from '../lib/badgeSystem';
+
+const title = 'SilverTech Badge System | Facility Credentials';
+const description =
+  'Understand the SilverTech five-tier facility badge system: verified membership, contribution, transparency, and trusted-provider credentials.';
+const canonical = BADGE_SET_URL;
+
+const badgeDefinitionSchema = buildBadgeDefinitionSchema();
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://silvertechdirectory.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Badges', item: canonical },
+  ],
+};
+---
+
+<Base title={title} description={description} canonical={canonical}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(badgeDefinitionSchema)}></script>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+
+  <div class="container badge-page">
+    <nav class="badge-crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span>Badges</span>
+    </nav>
+
+    <header class="badge-hero">
+      <p class="badge-kicker">SilverTech Badge System</p>
+      <h1>Credential Signals Families Can Verify</h1>
+      <p>
+        SilverTech badges identify operator engagement, profile transparency, and sustained trust signals.
+        Each badge has a defined standard and can be surfaced on facility pages.
+      </p>
+    </header>
+
+    <section class="badge-grid" aria-label="Badge definitions">
+      {BADGE_DEFINITIONS.map((badge) => (
+        <article id={badge.slug} class="badge-card">
+          <img
+            src={badge.asset}
+            alt=""
+            aria-hidden="true"
+            width="64"
+            height="64"
+            loading="lazy"
+            decoding="async"
+          />
+          <div>
+            <h2>{badge.schemaName}</h2>
+            <p>{badge.schemaDescription}</p>
+          </div>
+        </article>
+      ))}
+    </section>
+
+    <section class="badge-notes">
+      <h2>How this appears on facility profiles</h2>
+      <p>
+        Facilities can earn one or more credentials over time. When earned, SilverTech publishes badge-level
+        certification metadata on the profile page so families and search engines can read the credential context
+        directly from structured data.
+      </p>
+      <p>
+        This keeps SilverTech as the issuing authority while giving operators a portable, citable trust signal.
+      </p>
+      <div class="badge-actions">
+        <a href="/search/" class="badge-btn badge-btn-primary">Browse Facilities</a>
+        <a href="/for-facilities/" class="badge-btn badge-btn-secondary">Claim Your Listing</a>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .badge-page {
+    max-width: 980px;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .badge-crumbs {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .badge-crumbs a:hover {
+    color: #0f172a;
+  }
+
+  .badge-hero {
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .badge-kicker {
+    margin: 0 0 0.5rem;
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #92400e;
+    font-weight: 700;
+  }
+
+  .badge-hero h1 {
+    margin: 0 0 0.7rem;
+    color: #0f172a;
+    font-size: clamp(1.8rem, 3.3vw, 2.5rem);
+    line-height: 1.18;
+  }
+
+  .badge-hero p {
+    margin: 0;
+    color: #334155;
+    line-height: 1.75;
+    max-width: 52rem;
+  }
+
+  .badge-grid {
+    display: grid;
+    gap: 0.8rem;
+  }
+
+  .badge-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #ffffff;
+    padding: 1rem;
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: 64px 1fr;
+    align-items: start;
+    scroll-margin-top: 100px;
+  }
+
+  .badge-card h2 {
+    margin: 0 0 0.45rem;
+    color: #111827;
+    font-size: 1.06rem;
+  }
+
+  .badge-card p {
+    margin: 0;
+    color: #334155;
+    line-height: 1.65;
+  }
+
+  .badge-notes {
+    margin-top: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #f8fafc;
+    padding: 1.2rem;
+  }
+
+  .badge-notes h2 {
+    margin: 0 0 0.6rem;
+    color: #0f172a;
+    font-size: 1.2rem;
+  }
+
+  .badge-notes p {
+    margin: 0 0 0.75rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+
+  .badge-notes p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .badge-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .badge-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.55rem 0.95rem;
+    border-radius: 999px;
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+
+  .badge-btn-primary {
+    background: #111827;
+    color: #ffffff;
+  }
+
+  .badge-btn-primary:hover {
+    background: #0f172a;
+  }
+
+  .badge-btn-secondary {
+    border: 1px solid #94a3b8;
+    background: #ffffff;
+    color: #1e293b;
+  }
+
+  .badge-btn-secondary:hover {
+    border-color: #334155;
+    color: #0f172a;
+  }
+
+  @media (max-width: 640px) {
+    .badge-card {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

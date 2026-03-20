@@ -40,6 +40,7 @@ const NAV_CATEGORIES: NavCategory[] = [
     items: [
       { label: 'How to Choose a Community', href: '/guides/how-to-choose' },
       { label: 'Questions to Ask on a Tour', href: '/guides/tour-questions' },
+      { label: 'Badge System', href: '/badges' },
       { label: 'FAQ', href: '/faq' },
       { label: 'Why This Exists', href: '/why-this-exists' },
     ],

@@ -165,25 +165,72 @@ const LegacyDashboardEditRedirect: React.FC = () => {
   return <Navigate to={`/dashboard/facility/${id}/edit`} replace />;
 };
 
+const ASTRO_HANDOFF_GUARD_KEY = '__astro_handoff_guard__';
+const ASTRO_HANDOFF_GUARD_MS = 15000;
+
+const isRecentAstroHandoff = (routeKey: string): boolean => {
+  try {
+    const raw = window.sessionStorage.getItem(ASTRO_HANDOFF_GUARD_KEY);
+    if (!raw) return false;
+    const parsed = JSON.parse(raw) as { key?: string; ts?: number };
+    if (!parsed?.key || typeof parsed.ts !== 'number') return false;
+    return parsed.key === routeKey && Date.now() - parsed.ts < ASTRO_HANDOFF_GUARD_MS;
+  } catch {
+    return false;
+  }
+};
+
+const markAstroHandoff = (routeKey: string): void => {
+  try {
+    window.sessionStorage.setItem(
+      ASTRO_HANDOFF_GUARD_KEY,
+      JSON.stringify({ key: routeKey, ts: Date.now() }),
+    );
+  } catch {
+    // Ignore storage failures; redirect behavior still works without guard state.
+  }
+};
+
 // Astro owns all /{care}/*, /{care}/{state}/*, /{care}/{state}/{city}/* routes.
 // When React Router intercepts these via client-side navigation, force a hard
 // reload so Netlify serves the pre-rendered Astro static page instead.
 // Use assign() not replace() so the browser back button returns to the previous page.
 const AstroRoute: React.FC = () => {
   const { careType } = useParams<{ careType?: string }>();
+  const [handoffFailed, setHandoffFailed] = React.useState(false);
+
   if (!isCareTypeRouteSlug(careType)) return <NotFound />;
+
   React.useEffect(() => {
-    window.location.assign(window.location.pathname + window.location.search);
+    const routeKey = `${window.location.pathname}${window.location.search}`;
+    if (isRecentAstroHandoff(routeKey)) {
+      setHandoffFailed(true);
+      return;
+    }
+    markAstroHandoff(routeKey);
+    window.location.assign(routeKey);
   }, []);
+
+  if (handoffFailed) return <NotFound />;
   return null;
 };
 
 // Astro owns select top-level public pages. Force a hard reload so Netlify
 // serves the Astro-built static file instead of any React fallback surface.
 const AstroStaticRoute: React.FC = () => {
+  const [handoffFailed, setHandoffFailed] = React.useState(false);
+
   React.useEffect(() => {
-    window.location.assign(window.location.pathname + window.location.search);
+    const routeKey = `${window.location.pathname}${window.location.search}`;
+    if (isRecentAstroHandoff(routeKey)) {
+      setHandoffFailed(true);
+      return;
+    }
+    markAstroHandoff(routeKey);
+    window.location.assign(routeKey);
   }, []);
+
+  if (handoffFailed) return <NotFound />;
   return null;
 };
 
@@ -300,6 +347,7 @@ function App() {
 
                     {/* Company & Resources */}
                     <Route path="/about" element={<AstroStaticRoute />} />
+                    <Route path="/badges" element={<AstroStaticRoute />} />
                     <Route path="/why-this-exists" element={<AstroStaticRoute />} />
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
