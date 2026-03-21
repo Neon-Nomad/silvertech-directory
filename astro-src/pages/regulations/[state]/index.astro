@@ -315,16 +315,62 @@ const findAgencyName = (md: string, fallback: string): string => {
   return fallback;
 };
 
-const sanitizeProgramTerm = (term: string): string => normalizeText(term.replace(/[:;,\-–\s]+$/g, ''));
+const sanitizeProgramTerm = (term: string): string => normalizeText(term.replace(/[:;,\-\u2013\s]+$/g, ''));
+
+const normalizeProgramLabel = (term: string): string => {
+  if (!term) return '';
+  let normalized = sanitizeProgramTerm(
+    term
+      .replace(/^(comprehensive guide to|guide to|overview of|understanding)\s+/i, '')
+      .replace(/\s*-\s*(comprehensive guide|overview|full guide)$/i, '')
+      .replace(/\b(comprehensive guide|full guide|resource guide|handbook|manual)\b/gi, '')
+      .replace(/\b([a-z][a-z'’.-]+)\s+to\s+(?=long-term care|ltc|medicaid|home and community)/i, ''),
+  );
+
+  // Keep the program side when headings are formatted as "Program: Guide/Overview ..."
+  if (normalized.includes(':')) {
+    const parts = normalized.split(':');
+    const left = sanitizeProgramTerm(parts[0] || '');
+    const right = normalizeText(parts.slice(1).join(':'));
+    const leftLooksProgram = /(waiver|program|pathways|medi-?cal|medicaid|services|benefit|plan|ltc|long-term care|care)/i.test(left);
+    const rightLooksProgram = /(waiver|program|pathways|medi-?cal|medicaid|services|benefit|plan|ltc|long-term care|care)/i.test(right);
+    if (leftLooksProgram) {
+      normalized = left;
+    } else if (!leftLooksProgram && rightLooksProgram) {
+      normalized = sanitizeProgramTerm(right);
+    }
+  }
+
+  normalized = normalized.replace(/^(the|a|an)\s+/i, '');
+  normalized = normalized.replace(/^\W+|\W+$/g, '');
+  return sanitizeProgramTerm(normalized);
+};
+
+const isAgencyLikeLabel = (term: string): boolean =>
+  /(department of|health and human services|agency for|commission|administration|division|bureau|office of)\b/i.test(term) &&
+  !/(waiver|program|pathways|medicaid|medi-cal|apple health|ltc|long-term care)\b/i.test(term);
 
 const isWeakProgramTerm = (term: string): boolean =>
   /^(primary|program|state|key|author|date)\b/i.test(term) ||
-  /(comprehensive guide|introduction|program name|target population|administering agency|state:)/i.test(term);
+  /(comprehensive guide|introduction|program name|target population|administering agency|state:)/i.test(term) ||
+  isAgencyLikeLabel(term);
+
+const extractHeadingTerms = (md: string, limit = 16): string[] => {
+  const matches = Array.from(md.matchAll(/^#{1,6}\s+(.+)$/gm));
+  const out: string[] = [];
+  for (const match of matches) {
+    const heading = normalizeProgramLabel(match[1] || '');
+    if (!heading || isWeakProgramTerm(heading) || out.includes(heading)) continue;
+    out.push(heading);
+    if (out.length >= limit) break;
+  }
+  return out;
+};
 
 const findProgramTerms = (md: string, limit = 2): string[] => {
-  const boldTerms = extractBoldTerms(md, 20);
-  const programs = boldTerms
-    .map((term) => sanitizeProgramTerm(term))
+  const candidates = [...extractHeadingTerms(md, 16), ...extractBoldTerms(md, 20)];
+  const programs = candidates
+    .map((term) => normalizeProgramLabel(term))
     .filter((term) => term && !isWeakProgramTerm(term))
     .filter((term) =>
       /(waiver|program|pathways|medi-?cal|medicaid|services|benefit|plan)/i.test(term),
