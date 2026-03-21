@@ -188,6 +188,19 @@ const renderedSections = activeSections.map((s) => ({
 const title = `${stateMeta.name} Senior Care Regulations | Licensing, Medicaid & Oversight`;
 const description = `Complete ${stateMeta.name} senior care regulatory guide: licensing authority, Medicaid programs, ombudsman contacts, complaint process, and veterans benefits for assisted living and nursing homes.`;
 const canonical = `https://silvertechdirectory.com/regulations/${stateMeta.slug}/`;
+const isDistrictOfColumbia = stateMeta.slug === 'district-of-columbia';
+const regulatoryAsOf = fs.existsSync(regulationFilePath)
+  ? new Date(fs.statSync(regulationFilePath).mtime)
+  : new Date();
+const regulatoryVersion = `v${regulatoryAsOf.getUTCFullYear()}.${String(regulatoryAsOf.getUTCMonth() + 1).padStart(2, '0')}`;
+const regulatorySnapshotId = `snapshot-${regulatoryVersion.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}`;
+const dcCitationPermalink = `${canonical}#${regulatorySnapshotId}`;
+const asOfLabel = regulatoryAsOf.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+});
+const dcCitationText = `SilverTech Directory (${regulatoryAsOf.getUTCFullYear()}). District of Columbia Senior Care Regulatory Landscape (${regulatoryVersion}; data as of ${asOfLabel}). Retrieved from ${dcCitationPermalink}`;
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -238,6 +251,133 @@ const breadcrumbSchema = {
         </div>
       </div>
     </section>
+
+    {isDistrictOfColumbia && (
+      <section class="sl-insight-layer" aria-labelledby="dc-insights-heading">
+        <div class="sl-insight-card">
+          <div class="sl-insight-head">
+            <p class="sl-insight-kicker">Regulatory Analysis Hub</p>
+            <h2 id="dc-insights-heading">Executive Insights and Key Takeaways</h2>
+            <p class="sl-insight-meta">SilverTech interpretation. As of {asOfLabel} ({regulatoryVersion}).</p>
+          </div>
+          <ol class="sl-insight-list">
+            <li>
+              <h3>DC oversight runs through coordinated agencies</h3>
+              <p>
+                DC Health HRLA handles licensing, inspections, and enforcement, while the Long-Term Care Ombudsman
+                focuses on resident advocacy and dispute navigation.
+              </p>
+              <p class="sl-insight-source">
+                Sources:
+                <a href="https://dchealth.dc.gov/" target="_blank" rel="noopener noreferrer nofollow">DC Health HRLA</a>,
+                <a href="https://www.aarp.org/legal-counsel-for-elderly/what-we-do/info-2017/dc-long-term-care-ombudsman.html" target="_blank" rel="noopener noreferrer nofollow">DC Long-Term Care Ombudsman</a>
+              </p>
+            </li>
+            <li>
+              <h3>Complaint channel choice changes the response path</h3>
+              <p>
+                Families reporting immediate safety or care-standard concerns generally need the state complaint line,
+                while quality-of-life concerns often route through ombudsman advocacy.
+              </p>
+              <p class="sl-insight-source">
+                Sources:
+                <a href="https://dchealth.dc.gov/page/file-complaint-against-dc-health-facility" target="_blank" rel="noopener noreferrer nofollow">DC Health complaint process</a>,
+                <a href="https://www.aarp.org/legal-counsel-for-elderly/what-we-do/info-2017/dc-long-term-care-ombudsman.html" target="_blank" rel="noopener noreferrer nofollow">Ombudsman role</a>
+              </p>
+            </li>
+            <li>
+              <h3>Current data indicators suggest a potential multi-year review lag in some cases</h3>
+              <p>
+                Public reporting can span multiple years of oversight history, so single-year snapshots may miss
+                complaint trend changes. Review historical records and complaint pathways together before concluding risk
+                patterns.
+              </p>
+              <p class="sl-insight-source">
+                Sources:
+                <a href="https://dchealth.dc.gov/service/heath-care-facility-inspection-reports" target="_blank" rel="noopener noreferrer nofollow">DC inspection reports</a>,
+                <a href="https://dchealth.dc.gov/page/file-complaint-against-dc-health-facility" target="_blank" rel="noopener noreferrer nofollow">DC complaint process</a>
+              </p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="sl-quick-facts" aria-label="District quick facts">
+          <p class="sl-quick-facts-label">Quick Facts Snapshot (As of {asOfLabel})</p>
+          <div class="sl-quick-facts-grid">
+            <article class="sl-quick-fact-card">
+              <p class="sl-quick-fact-heading">Licensing Authority</p>
+              <p class="sl-quick-fact-value">DC Health (HRLA)</p>
+              <a href="https://dchealth.dc.gov/" target="_blank" rel="noopener noreferrer nofollow">Source</a>
+            </article>
+            <article class="sl-quick-fact-card">
+              <p class="sl-quick-fact-heading">Regulatory Complaint Line</p>
+              <p class="sl-quick-fact-value">(877) 672-2174</p>
+              <a href="https://dchealth.dc.gov/page/file-complaint-against-dc-health-facility" target="_blank" rel="noopener noreferrer nofollow">Source</a>
+            </article>
+            <article class="sl-quick-fact-card">
+              <p class="sl-quick-fact-heading">Ombudsman Contact</p>
+              <p class="sl-quick-fact-value">(202) 434-2190</p>
+              <a href="https://www.aarp.org/legal-counsel-for-elderly/what-we-do/info-2017/dc-long-term-care-ombudsman.html" target="_blank" rel="noopener noreferrer nofollow">Source</a>
+            </article>
+            <article class="sl-quick-fact-card">
+              <p class="sl-quick-fact-heading">Medicaid LTC Contact</p>
+              <p class="sl-quick-fact-value">(202) 442-9533</p>
+              <a href="https://dhcf.dc.gov/page/contact-information-0" target="_blank" rel="noopener noreferrer nofollow">Source</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="sl-families-miss" aria-labelledby="dc-families-miss-heading">
+          <h2 id="dc-families-miss-heading">What Families Often Miss</h2>
+          <div class="sl-families-miss-grid">
+            <article>
+              <h3>Advocacy is different from enforcement</h3>
+              <p>
+                The Ombudsman role is primarily advocate-driven rather than regulatory. It can mediate and escalate,
+                but statutory enforcement actions like fines and license outcomes sit with regulatory agencies.
+              </p>
+            </article>
+            <article>
+              <h3>Inspection timing does not replace active reporting</h3>
+              <p>
+                Historical survey patterns show a heavy concentration of oversight activity during standard business
+                hours. Weekend staffing and care issues are still actionable, but often depend on direct reporting to
+                trigger review.
+              </p>
+            </article>
+            <article>
+              <h3>Facility due diligence should use two records</h3>
+              <p>
+                Review both state licensing and federal certification context before finalizing a care decision.
+              </p>
+            </article>
+            <article>
+              <h3>Public contact paths are part of your leverage</h3>
+              <p>
+                Families who know complaint and advocacy contacts can escalate concerns faster and document follow-up
+                more clearly.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="sl-cite-box" id={regulatorySnapshotId}>
+          <div>
+            <p class="sl-cite-kicker">Cite This Research</p>
+            <p class="sl-cite-copy">
+              Use this standard citation format for reporting, policy analysis, and research references.
+            </p>
+            <p class="sl-cite-copy">
+              Permalink: <a href={dcCitationPermalink}>{dcCitationPermalink}</a>
+            </p>
+            <code class="sl-cite-code" id="dc-citation-text">{dcCitationText}</code>
+          </div>
+          <button type="button" class="sl-cite-button" data-copy-citation={dcCitationText} data-default-label="Copy Full Citation">
+            Copy Full Citation
+          </button>
+        </div>
+      </section>
+    )}
 
     <section class="sl-state-stats" aria-label="Regulatory context">
       <article class="sl-state-stat">
@@ -420,4 +560,278 @@ const breadcrumbSchema = {
   border-top: 1px solid rgba(226,213,187,0.15);
   margin: 2rem 0;
 }
+
+.sl-insight-layer {
+  margin-bottom: 2.5rem;
+}
+
+.sl-insight-card {
+  background: linear-gradient(135deg, #10131a 0%, #0b0f14 100%);
+  border: 1px solid rgba(245, 208, 141, 0.35);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sl-insight-head h2 {
+  margin: 0.25rem 0 0.5rem;
+  color: #fffaf0;
+  font-size: 1.55rem;
+}
+
+.sl-insight-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  color: rgba(245, 208, 141, 0.85);
+}
+
+.sl-insight-meta {
+  margin: 0;
+  font-size: 0.82rem;
+  color: rgba(248, 239, 223, 0.7);
+}
+
+.sl-insight-list {
+  margin: 1.1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.sl-insight-list li {
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(248, 239, 223, 0.16);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.sl-insight-list h3 {
+  margin: 0 0 0.35rem;
+  color: #fffaf0;
+  font-size: 1rem;
+}
+
+.sl-insight-list p {
+  margin: 0;
+  color: rgba(248, 239, 223, 0.88);
+  line-height: 1.55;
+}
+
+.sl-insight-source {
+  margin-top: 0.5rem !important;
+  font-size: 0.77rem;
+  color: rgba(248, 239, 223, 0.68) !important;
+}
+
+.sl-insight-source a {
+  color: #f5d08d;
+}
+
+.sl-quick-facts {
+  margin-bottom: 1.5rem;
+}
+
+.sl-quick-facts-label {
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  color: rgba(245, 208, 141, 0.85);
+}
+
+.sl-quick-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.sl-quick-fact-card {
+  border: 1px solid rgba(226,213,187,0.14);
+  border-radius: 10px;
+  padding: 0.85rem;
+  background: rgba(255,255,255,0.03);
+}
+
+.sl-quick-fact-heading {
+  margin: 0;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(248,239,223,0.6);
+}
+
+.sl-quick-fact-value {
+  margin: 0.4rem 0 0.35rem;
+  color: #fffaf0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.sl-quick-fact-card a {
+  font-size: 0.8rem;
+  color: #f5d08d;
+}
+
+.sl-families-miss {
+  border: 1px solid rgba(226,213,187,0.18);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.025);
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.sl-families-miss h2 {
+  margin: 0 0 0.8rem;
+  color: #fffaf0;
+  font-size: 1.5rem;
+}
+
+.sl-families-miss-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.sl-families-miss-grid article {
+  border: 1px solid rgba(226,213,187,0.14);
+  border-radius: 10px;
+  padding: 0.85rem;
+  background: rgba(255,255,255,0.02);
+}
+
+.sl-families-miss-grid h3 {
+  margin: 0 0 0.35rem;
+  color: #fffaf0;
+  font-size: 1rem;
+}
+
+.sl-families-miss-grid p {
+  margin: 0;
+  color: rgba(248,239,223,0.82);
+  line-height: 1.5;
+}
+
+.sl-cite-box {
+  border: 1px solid rgba(245, 208, 141, 0.35);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(14,18,26,1) 0%, rgba(9,12,18,1) 100%);
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: start;
+}
+
+.sl-cite-kicker {
+  margin: 0 0 0.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 0.75rem;
+  color: rgba(245, 208, 141, 0.9);
+}
+
+.sl-cite-copy {
+  margin: 0 0 0.6rem;
+  color: rgba(248,239,223,0.82);
+}
+
+.sl-cite-code {
+  display: block;
+  white-space: normal;
+  border: 1px solid rgba(248,239,223,0.2);
+  border-radius: 8px;
+  padding: 0.7rem;
+  background: rgba(0,0,0,0.35);
+  color: #fffaf0;
+  line-height: 1.45;
+  font-size: 0.85rem;
+}
+
+.sl-cite-button {
+  appearance: none;
+  border: 1px solid rgba(245, 208, 141, 0.5);
+  border-radius: 999px;
+  background: #f5d08d;
+  color: #1a1812;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.7rem 1rem;
+  min-width: 170px;
+  cursor: pointer;
+}
+
+.sl-cite-button:hover {
+  filter: brightness(1.04);
+}
+
+@media (max-width: 900px) {
+  .sl-quick-facts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sl-families-miss-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sl-cite-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .sl-quick-facts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sl-insight-head h2,
+  .sl-families-miss h2 {
+    font-size: 1.3rem;
+  }
+}
 </style>
+
+<script is:inline>
+  const copyButton = document.querySelector('[data-copy-citation]');
+
+  const fallbackCopyText = (text) => {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'absolute';
+    textarea.style.left = '-9999px';
+    document.body.appendChild(textarea);
+    textarea.select();
+    const copied = document.execCommand('copy');
+    document.body.removeChild(textarea);
+    return copied;
+  };
+
+  const copyText = async (text) => {
+    if (!text) return false;
+    if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+      try {
+        await navigator.clipboard.writeText(text);
+        return true;
+      } catch {
+        return fallbackCopyText(text);
+      }
+    }
+    return fallbackCopyText(text);
+  };
+
+  if (copyButton) {
+    copyButton.addEventListener('click', async () => {
+      const citation = copyButton.getAttribute('data-copy-citation') || '';
+      if (!citation) return;
+      const defaultLabel = copyButton.getAttribute('data-default-label') || 'Copy Full Citation';
+      const copied = await copyText(citation);
+      copyButton.textContent = copied ? 'Copied!' : 'Copy failed';
+      setTimeout(() => {
+        copyButton.textContent = defaultLabel;
+      }, 2000);
+    });
+  }
+</script>
