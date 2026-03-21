@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import Base from '../../../layouts/Base.astro';
+import { getSeniorLivingState } from '../../../lib/seniorLivingData';
 import { ALL_STATES } from '../../../../src/data/states';
 
 type RegulationPayload = {
@@ -22,6 +23,14 @@ type InsightSource = { label: string; url: string };
 type InsightItem = { title: string; copy: string; sources: InsightSource[] };
 type QuickFactItem = { heading: string; value: string; sourceUrl?: string };
 type FamiliesMissItem = { title: string; copy: string };
+type GraphLinkPosition = 'hero' | 'mid' | 'section' | 'footer';
+type GraphLink = {
+  href: string;
+  label: string;
+  event: 'reg_to_state' | 'reg_to_city';
+  position: GraphLinkPosition;
+  city: string | null;
+};
 
 export async function getStaticPaths() {
   return ALL_STATES.map((state) => ({ params: { state: state.slug } }));
@@ -416,6 +425,123 @@ const asOfLabel = regulatoryAsOf.toLocaleDateString('en-US', {
 });
 const citationText = `SilverTech Directory (${regulatoryAsOf.getUTCFullYear()}). ${stateMeta.name} Senior Care Regulatory Landscape (${regulatoryVersion}; data as of ${asOfLabel}). Retrieved from ${citationPermalink}`;
 
+const toDisplayName = (value: string): string => {
+  if (value !== value.toUpperCase()) return value;
+
+  const uppercaseTokens = new Set([
+    'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA', 'HI', 'IA', 'ID', 'IL', 'IN', 'KS', 'KY', 'LA',
+    'MA', 'MD', 'ME', 'MI', 'MN', 'MO', 'MS', 'MT', 'NC', 'ND', 'NE', 'NH', 'NJ', 'NM', 'NV', 'NY', 'OH', 'OK', 'OR',
+    'PA', 'RI', 'SC', 'SD', 'SE', 'SW', 'TN', 'TX', 'UT', 'VA', 'VT', 'WA', 'WI', 'WV', 'WY', 'NE', 'NW', 'SE', 'SW',
+    'N', 'S', 'E', 'W', 'PO', 'US', 'VA', 'CMS', 'ER', 'ICU', 'ICF', 'SNF', 'ALF', 'CCRC', 'RN', 'LPN', 'CNA',
+    'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'LLC', 'LLP', 'LP', 'LTD', 'INC', 'PLC', 'PC', 'PA', 'IU',
+  ]);
+
+  const lowerWords = new Set(['and', 'or', 'of', 'the', 'at', 'in', 'on', 'for', 'to', 'a', 'an']);
+
+  const formatSegment = (segment: string, wordIndex: number): string => {
+    if (!/[A-Za-z]/.test(segment)) return segment;
+
+    const ordinalMatch = segment.match(/^(\d+)(ST|ND|RD|TH)$/);
+    if (ordinalMatch) {
+      return `${ordinalMatch[1]}${ordinalMatch[2].toLowerCase()}`;
+    }
+
+    const upperSegment = segment.toUpperCase();
+    if (uppercaseTokens.has(upperSegment)) return upperSegment;
+
+    const lowerSegment = segment.toLowerCase();
+    if (wordIndex > 0 && lowerWords.has(lowerSegment)) return lowerSegment;
+    return `${lowerSegment[0]?.toUpperCase() || ''}${lowerSegment.slice(1)}`;
+  };
+
+  return value
+    .toLowerCase()
+    .split(/\s+/)
+    .map((word, wordIndex) =>
+      word
+        .split(/([\-'/&])/)
+        .map((segment, segmentIndex, segments) => {
+          if (segment.length === 1 && /[\-'/&]/.test(segment)) return segment;
+          if (segments[segmentIndex - 1] === "'" && /^[a-z]{1,2}$/.test(segment)) return segment.toLowerCase();
+          return formatSegment(segment, wordIndex);
+        })
+        .join(''),
+    )
+    .join(' ');
+};
+
+const stateDirectoryHref = `/assisted-living/${stateMeta.slug}/`;
+const stateDirectoryCtaLabel = `Browse all assisted living communities in ${stateMeta.name}`;
+const regulationsIndexHref = '/regulations/';
+const stateCostGuideHref = `/guides/costs/assisted-living/${stateMeta.slug}/`;
+
+const stateDirectoryData = getSeniorLivingState(stateMeta.slug);
+const assistedLivingCities = (stateDirectoryData?.cities || [])
+  .filter((city) => city.careTypeCounts['assisted-living'] > 0)
+  .sort(
+    (a, b) =>
+      b.careTypeCounts['assisted-living'] - a.careTypeCounts['assisted-living'] ||
+      b.facilityCount - a.facilityCount ||
+      a.cityName.localeCompare(b.cityName),
+  );
+const majorCityCount = assistedLivingCities.length >= 8 ? 8 : assistedLivingCities.length;
+const majorCityLinks = assistedLivingCities.slice(0, majorCityCount).map((city) => ({
+  citySlug: city.citySlug,
+  cityName: toDisplayName(city.cityName),
+  href: `/assisted-living/${stateMeta.slug}/${city.citySlug}/`,
+  assistedCount: city.careTypeCounts['assisted-living'],
+}));
+const midCityLinks = majorCityLinks.slice(0, Math.min(majorCityLinks.length, 8));
+const sectionCityLinks = majorCityLinks.slice(0, 1);
+const footerCityLinks = majorCityLinks.slice(0, 4);
+
+const makeStateLink = (label: string, position: GraphLinkPosition): GraphLink => ({
+  href: stateDirectoryHref,
+  label,
+  event: 'reg_to_state',
+  position,
+  city: null,
+});
+const makeCityLink = (
+  city: { cityName: string; href: string },
+  position: GraphLinkPosition,
+): GraphLink => ({
+  href: city.href,
+  label: `assisted living in ${city.cityName}`,
+  event: 'reg_to_city',
+  position,
+  city: city.cityName,
+});
+
+const sectionContextLinks: Record<string, GraphLink[]> = {
+  licensing: [
+    makeStateLink(`${stateMeta.name} assisted living directory`, 'section'),
+    ...sectionCityLinks.slice(0, 1).map((city) => makeCityLink(city, 'section')),
+  ].slice(0, 3),
+  medicaid: [
+    {
+      href: stateCostGuideHref,
+      label: `${stateMeta.name} assisted living cost guide`,
+      event: 'reg_to_state',
+      position: 'section',
+      city: null,
+    },
+    ...sectionCityLinks.slice(0, 1).map((city) => makeCityLink(city, 'section')),
+  ].slice(0, 3),
+  complaints: [
+    makeStateLink(`${stateMeta.name} assisted living directory`, 'section'),
+    ...sectionCityLinks.slice(0, 1).map((city) => makeCityLink(city, 'section')),
+  ].slice(0, 3),
+  ombudsman: [
+    makeStateLink(`${stateMeta.name} assisted living directory`, 'section'),
+    ...sectionCityLinks.slice(0, 1).map((city) => makeCityLink(city, 'section')),
+  ].slice(0, 3),
+  veterans: [
+    makeStateLink(`${stateMeta.name} assisted living directory`, 'section'),
+    ...sectionCityLinks.slice(0, 1).map((city) => makeCityLink(city, 'section')),
+  ].slice(0, 3),
+};
+
 const resolveContact = (kind: keyof NonNullable<RegulationPayload['contacts_json']>) =>
   payload.contacts_json?.[kind] || {};
 
@@ -634,7 +760,16 @@ const breadcrumbSchema = {
           Licensing authority, Medicaid programs, ombudsman contacts, complaint processes, and veterans benefits for senior care facilities in {stateMeta.name}.
         </p>
         <div class="sl-state-hero-actions">
-          <a class="sl-btn sl-btn-primary" href={`/assisted-living/${stateMeta.slug}/`}>View {stateMeta.name} Directory</a>
+          <a
+            class="sl-btn sl-btn-primary"
+            href={stateDirectoryHref}
+            data-reg-track="reg_to_state"
+            data-reg-position="hero"
+            data-reg-state={stateMeta.slug}
+            data-reg-city=""
+          >
+            View {stateMeta.name} Directory
+          </a>
           <a class="sl-btn sl-btn-secondary" href="#licensing">Read Oversight Rules</a>
         </div>
       </div>
@@ -714,6 +849,40 @@ const breadcrumbSchema = {
             </article>
           </div>
         </div>
+
+        {midCityLinks.length > 0 && (
+          <section class="sl-reg-graph-links" aria-labelledby="sl-major-cities-heading">
+            <div class="sl-reg-graph-intro">
+              <h2 id="sl-major-cities-heading">Major Cities in {stateMeta.name}</h2>
+              <p>High-demand city hubs with active assisted living coverage.</p>
+            </div>
+            <div class="sl-reg-graph-city-grid">
+              {midCityLinks.map((city) => (
+                <a
+                  class="sl-reg-graph-city-link"
+                  href={city.href}
+                  data-reg-track="reg_to_city"
+                  data-reg-position="mid"
+                  data-reg-state={stateMeta.slug}
+                  data-reg-city={city.cityName}
+                >
+                  <span>assisted living in {city.cityName}</span>
+                  <small>{city.assistedCount.toLocaleString()} listings</small>
+                </a>
+              ))}
+            </div>
+            <a
+              class="sl-reg-mid-cta"
+              href={stateDirectoryHref}
+              data-reg-track="reg_to_state"
+              data-reg-position="mid"
+              data-reg-state={stateMeta.slug}
+              data-reg-city=""
+            >
+              {stateDirectoryCtaLabel}
+            </a>
+          </section>
+        )}
 
         <div class="sl-families-miss" aria-labelledby="dc-families-miss-heading">
           <h2 id="dc-families-miss-heading">What Families Often Miss</h2>
@@ -813,6 +982,40 @@ const breadcrumbSchema = {
           </div>
         </div>
 
+        {midCityLinks.length > 0 && (
+          <section class="sl-reg-graph-links" aria-labelledby="sl-major-cities-heading">
+            <div class="sl-reg-graph-intro">
+              <h2 id="sl-major-cities-heading">Major Cities in {stateMeta.name}</h2>
+              <p>High-demand city hubs with active assisted living coverage.</p>
+            </div>
+            <div class="sl-reg-graph-city-grid">
+              {midCityLinks.map((city) => (
+                <a
+                  class="sl-reg-graph-city-link"
+                  href={city.href}
+                  data-reg-track="reg_to_city"
+                  data-reg-position="mid"
+                  data-reg-state={stateMeta.slug}
+                  data-reg-city={city.cityName}
+                >
+                  <span>assisted living in {city.cityName}</span>
+                  <small>{city.assistedCount.toLocaleString()} listings</small>
+                </a>
+              ))}
+            </div>
+            <a
+              class="sl-reg-mid-cta"
+              href={stateDirectoryHref}
+              data-reg-track="reg_to_state"
+              data-reg-position="mid"
+              data-reg-state={stateMeta.slug}
+              data-reg-city=""
+            >
+              {stateDirectoryCtaLabel}
+            </a>
+          </section>
+        )}
+
         <div class="sl-families-miss" aria-labelledby="state-families-miss-heading">
           <h2 id="state-families-miss-heading">What Families Often Miss</h2>
           <div class="sl-families-miss-grid">
@@ -898,17 +1101,32 @@ const breadcrumbSchema = {
                 <h2 id={`${section.slug}-heading`}>{section.label}</h2>
                 <span class="sl-reg-toggle-indicator" data-reg-indicator>Show</span>
               </button>
-              <a class="sl-state-section-link" href={`/assisted-living/${stateMeta.slug}/`}>
-                {stateMeta.name} Assisted Living Directory
-              </a>
             </div>
             <div
               id={`${section.slug}-content`}
-              class="sl-reg-content prose"
-              set:html={section.html}
               data-reg-panel
               hidden
-            />
+            >
+              <div class="sl-reg-content prose" set:html={section.html} />
+              {sectionContextLinks[section.slug]?.length > 0 && (
+                <div class="sl-reg-context-links">
+                  <p class="sl-reg-context-label">Related {stateMeta.name} links</p>
+                  <div class="sl-reg-context-link-grid">
+                    {sectionContextLinks[section.slug].map((link) => (
+                      <a
+                        href={link.href}
+                        data-reg-track={link.event}
+                        data-reg-position={link.position}
+                        data-reg-state={stateMeta.slug}
+                        data-reg-city={link.city || ''}
+                      >
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </section>
         ))}
 
@@ -964,9 +1182,41 @@ const breadcrumbSchema = {
             <div class="sl-state-resource-card">
               <strong>{stateMeta.name} Care Directory</strong>
               <span>Browse licensed senior care facilities by city and care type.</span>
-              <a href={`/assisted-living/${stateMeta.slug}/`}>View assisted living directory</a>
+              <a
+                href={stateDirectoryHref}
+                data-reg-track="reg_to_state"
+                data-reg-position="footer"
+                data-reg-state={stateMeta.slug}
+                data-reg-city=""
+              >
+                View assisted living directory
+              </a>
             </div>
           </div>
+        </section>
+
+        <section class="sl-reg-footer-rail" aria-label={`${stateMeta.name} navigation links`}>
+          <a
+            href={stateDirectoryHref}
+            data-reg-track="reg_to_state"
+            data-reg-position="footer"
+            data-reg-state={stateMeta.slug}
+            data-reg-city=""
+          >
+            {stateMeta.name} assisted living directory
+          </a>
+          <a href={regulationsIndexHref}>All state regulations</a>
+          {footerCityLinks.map((city) => (
+            <a
+              href={city.href}
+              data-reg-track="reg_to_city"
+              data-reg-position="footer"
+              data-reg-state={stateMeta.slug}
+              data-reg-city={city.cityName}
+            >
+              assisted living in {city.cityName}
+            </a>
+          ))}
         </section>
       </div>
     </div>
@@ -1021,6 +1271,70 @@ const breadcrumbSchema = {
   color: #0f2237;
   font-weight: 700;
   border-bottom-color: #0f2237;
+}
+
+.sl-reg-graph-links {
+  margin: 1.4rem 0 2rem;
+  padding: 1rem;
+  border: 1px solid #e6d6bb;
+  border-radius: 12px;
+  background: #fcf9f3;
+}
+
+.sl-reg-graph-intro h2 {
+  margin: 0;
+  color: #11253d;
+  font-size: 1.35rem;
+}
+
+.sl-reg-graph-intro p {
+  margin: 0.35rem 0 0.9rem;
+  color: #41566f;
+}
+
+.sl-reg-graph-city-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.sl-reg-graph-city-link {
+  display: grid;
+  gap: 0.2rem;
+  border: 1px solid #e1d3bc;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 0.6rem 0.75rem;
+  background: #fffdfa;
+}
+
+.sl-reg-graph-city-link span {
+  color: #17324f;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.sl-reg-graph-city-link small {
+  color: #6e552f;
+  font-size: 0.8rem;
+}
+
+.sl-reg-graph-city-link:hover {
+  border-color: #17324f;
+}
+
+.sl-reg-mid-cta {
+  display: inline-flex;
+  margin-top: 0.95rem;
+  color: #0f2237;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.sl-reg-mid-cta:hover {
+  color: #17324f;
 }
 
 .sl-reg-toggle {
@@ -1104,6 +1418,38 @@ const breadcrumbSchema = {
   border: none;
   border-top: 1px solid #ddcfb8;
   margin: 2rem 0;
+}
+
+.sl-reg-context-links {
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid #e4d7c1;
+}
+
+.sl-reg-context-label {
+  margin: 0 0 0.5rem;
+  color: #5e4a2e;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.sl-reg-context-link-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+}
+
+.sl-reg-context-link-grid a {
+  color: #17324f;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-size: 0.92rem;
+}
+
+.sl-reg-context-link-grid a:hover {
+  color: #0f2237;
 }
 
 .sl-insight-layer {
@@ -1317,6 +1663,26 @@ const breadcrumbSchema = {
   filter: brightness(1.04);
 }
 
+.sl-reg-footer-rail {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d9cbb3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.95rem;
+}
+
+.sl-reg-footer-rail a {
+  color: #17324f;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-size: 0.88rem;
+}
+
+.sl-reg-footer-rail a:hover {
+  color: #0f2237;
+}
+
 @media (max-width: 900px) {
   .sl-reg-layout {
     grid-template-columns: 1fr;
@@ -1338,6 +1704,10 @@ const breadcrumbSchema = {
   }
 
   .sl-cite-box {
+    grid-template-columns: 1fr;
+  }
+
+  .sl-reg-graph-city-grid {
     grid-template-columns: 1fr;
   }
 }

@@ -2,6 +2,21 @@
   const copyButtons = Array.from(document.querySelectorAll("[data-copy-citation]"));
   const regSections = Array.from(document.querySelectorAll("[data-reg-section]"));
   const regOpenLinks = Array.from(document.querySelectorAll("[data-reg-open]"));
+  const trackedLinks = Array.from(document.querySelectorAll("[data-reg-track]"));
+
+  const trackEvent = (name, props) => {
+    if (!name) return;
+    const win = window;
+    if (typeof win.gtag === "function") {
+      win.gtag("event", name, props || {});
+    }
+    if (typeof win.plausible === "function") {
+      win.plausible(name, { props: props || {} });
+    }
+    if (Array.isArray(win.dataLayer)) {
+      win.dataLayer.push({ event: name, ...(props || {}) });
+    }
+  };
 
   const fallbackCopyText = (text) => {
     const textarea = document.createElement("textarea");
@@ -39,6 +54,23 @@
       setTimeout(() => {
         copyButton.textContent = defaultLabel;
       }, 2000);
+    });
+  }
+
+  for (const link of trackedLinks) {
+    if (link.dataset.regTrackBound === "1") continue;
+    link.dataset.regTrackBound = "1";
+    link.addEventListener("click", () => {
+      const eventName = link.getAttribute("data-reg-track");
+      if (!eventName) return;
+      const state = link.getAttribute("data-reg-state") || null;
+      const city = link.getAttribute("data-reg-city") || null;
+      const position = link.getAttribute("data-reg-position") || "unknown";
+      trackEvent(eventName, {
+        state,
+        city,
+        position,
+      });
     });
   }
 
