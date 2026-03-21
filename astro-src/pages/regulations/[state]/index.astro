@@ -189,6 +189,11 @@ const title = `${stateMeta.name} Senior Care Regulations | Licensing, Medicaid &
 const description = `Complete ${stateMeta.name} senior care regulatory guide: licensing authority, Medicaid programs, ombudsman contacts, complaint process, and veterans benefits for assisted living and nursing homes.`;
 const canonical = `https://silvertechdirectory.com/regulations/${stateMeta.slug}/`;
 const isDistrictOfColumbia = stateMeta.slug === 'district-of-columbia';
+const jumpLinks = [
+  ...(isDistrictOfColumbia ? [{ label: 'Executive Insights', slug: 'dc-insights-heading' }] : []),
+  ...activeSections.map((s) => ({ label: s.label, slug: s.slug })),
+  { label: 'Official Contacts', slug: 'regulatory-contacts' },
+];
 const regulatoryAsOf = fs.existsSync(regulationFilePath)
   ? new Date(fs.statSync(regulationFilePath).mtime)
   : new Date();
@@ -402,12 +407,12 @@ const breadcrumbSchema = {
       </article>
     </section>
 
-    {activeSections.length > 1 && (
+    {jumpLinks.length > 1 && (
       <nav class="sl-reg-nav" aria-label="Regulation sections">
         <p class="sl-reg-nav-label">Jump to section</p>
         <div class="sl-reg-nav-links">
-          {activeSections.map((s) => (
-            <a href={`#${s.slug}`}>{s.label}</a>
+          {jumpLinks.map((link) => (
+            <a href={`#${link.slug}`}>{link.label}</a>
           ))}
         </div>
       </nav>
@@ -440,7 +445,7 @@ const breadcrumbSchema = {
       </section>
     )}
 
-    <section class="sl-state-resources">
+    <section class="sl-state-resources" id="regulatory-contacts">
       <div class="sl-state-resources-copy">
         <p class="sl-state-section-kicker">Official Contacts</p>
         <h2>{stateMeta.name} Regulatory Contacts</h2>
@@ -499,6 +504,10 @@ const breadcrumbSchema = {
   align-items: baseline;
   gap: 1.5rem;
   flex-wrap: wrap;
+  position: sticky;
+  top: 5.4rem;
+  z-index: 20;
+  backdrop-filter: blur(6px);
 }
 .sl-reg-nav-label {
   font-size: 0.75rem;
@@ -524,8 +533,14 @@ const breadcrumbSchema = {
   margin-bottom: 3rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid rgba(226,213,187,0.1);
+  scroll-margin-top: 7rem;
 }
 .sl-reg-section:last-of-type { border-bottom: none; }
+
+#dc-insights-heading,
+#regulatory-contacts {
+  scroll-margin-top: 7rem;
+}
 
 .sl-reg-content {
   max-width: 72ch;
@@ -768,6 +783,12 @@ const breadcrumbSchema = {
 }
 
 @media (max-width: 900px) {
+  .sl-reg-nav {
+    position: static;
+    top: auto;
+    backdrop-filter: none;
+  }
+
   .sl-quick-facts-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
