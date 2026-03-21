@@ -12,6 +12,7 @@ import { NoResults } from '@/features/family/discovery/NoResults';
 import { useGeolocation } from '@/src/hooks/useGeolocation';
 import { buildFacilityDetailPath, getCareTypeRouteLabel } from '@/src/utils/facilityPath';
 import { useAuth } from '@/src/context/AuthProvider';
+import { trackEvent } from '@/src/utils/analytics';
 import {
   fetchSavedFacilityIds,
   getQueuedFamilySaveFacilityIds,
@@ -400,6 +401,11 @@ const SearchResultCard: React.FC<{
     setSaveBusy(true);
     setSaveError(null);
     onSavedChange(facility.id, true);
+    trackEvent('family_save_clicked', {
+      facility_id: facility.id,
+      source_surface: 'search_results',
+      claim_mode: claimMode,
+    });
 
     try {
       const result = await saveFacilityForCurrentUser(facility.id, {
@@ -409,15 +415,38 @@ const SearchResultCard: React.FC<{
       if (result.status === 'error') {
         onSavedChange(facility.id, false);
         setSaveError(result.message || 'Unable to save this facility.');
+        trackEvent('family_save_failed', {
+          facility_id: facility.id,
+          source_surface: 'search_results',
+          claim_mode: claimMode,
+        });
       }
 
       if (result.status === 'queued') {
+        trackEvent('family_save_queued_for_auth', {
+          facility_id: facility.id,
+          source_surface: 'search_results',
+          claim_mode: claimMode,
+        });
         const redirectTo = encodeURIComponent(window.location.pathname + window.location.search + window.location.hash);
         window.location.assign(`/login?redirect_to=${redirectTo}`);
+      }
+      if (result.status === 'success' || result.status === 'already_exists') {
+        trackEvent('family_save_success', {
+          facility_id: facility.id,
+          source_surface: 'search_results',
+          claim_mode: claimMode,
+          result: result.status,
+        });
       }
     } catch {
       onSavedChange(facility.id, false);
       setSaveError('Unable to save this facility. Please try again.');
+      trackEvent('family_save_failed', {
+        facility_id: facility.id,
+        source_surface: 'search_results',
+        claim_mode: claimMode,
+      });
     } finally {
       setSaveBusy(false);
     }
@@ -561,6 +590,7 @@ const DirectorySearch: React.FC = () => {
   const [geoFallbackCity, setGeoFallbackCity] = useState('');
   const [geoLookupLoading, setGeoLookupLoading] = useState(false);
   const [lastSearch, setLastSearch] = useState<SearchSnapshot | null>(null);
+  const lastSearchEventKeyRef = useRef('');
   const { coordinates, nearestCity, getLocation, loading: geoLoading, error: geoError } = useGeolocation();
 
   useEffect(() => {
@@ -668,6 +698,13 @@ const DirectorySearch: React.FC = () => {
       setError(`Please select a state or type a city followed by a state (e.g., "${locationExample.cityState}").`);
       return;
     }
+
+    trackEvent('directory_search_submitted', {
+      claim_mode: claimMode,
+      has_location: Boolean(rawLocation || zipMatch || geoCity),
+      has_name: Boolean(rawName),
+      has_state: Boolean(resolvedStateSlug),
+    });
 
     if (resolvedStateSlug) {
       const stateMatch = ALL_STATES.find((state) => state.slug === resolvedStateSlug);
@@ -1126,6 +1163,28 @@ const DirectorySearch: React.FC = () => {
     if (location.trim().length > 0) return;
     void resolveClaimLocation(coordinates.lat, coordinates.lng);
   }, [claimMode, coordinates?.lat, coordinates?.lng]);
+
+  useEffect(() => {
+    if (resultsLoading || !lastSearch) return;
+    const key = [
+      claimMode ? 'claim' : 'search',
+      lastSearch.intent,
+      lastSearch.stateSlug,
+      lastSearch.city,
+      lastSearch.zip,
+      String(results.length),
+    ].join('|');
+    if (lastSearchEventKeyRef.current === key) return;
+    lastSearchEventKeyRef.current = key;
+    trackEvent('directory_search_results_loaded', {
+      claim_mode: claimMode,
+      intent: lastSearch.intent,
+      state: lastSearch.stateAbbr || null,
+      city: lastSearch.city || null,
+      zip: lastSearch.zip || null,
+      result_count: results.length,
+    });
+  }, [resultsLoading, lastSearch, claimMode, results.length]);
 
   const searchPresentation = useMemo(() => {
     if (!lastSearch || claimMode || lastSearch.rawName || lastSearch.intent === 'state' || lastSearch.intent === 'nameOnly') {

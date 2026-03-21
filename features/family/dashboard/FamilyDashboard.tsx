@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
@@ -11,8 +11,16 @@ import {
   upsertFacilityNote,
 } from '@/src/features/family/journey/client';
 import { AttributionType, FamilyDashboardCard, FamilyJourneyStatus, FAMILY_JOURNEY_STATUS_LABELS } from '@/src/features/family/journey/types';
+import { trackEvent } from '@/src/utils/analytics';
 
 type DraftMap = Record<string, string>;
+type RetryType = 'note' | 'status' | 'tour' | 'moved_in' | 'attribution';
+type RetryContext = {
+  type: RetryType;
+  status?: FamilyJourneyStatus;
+  attribution?: AttributionType;
+  message: string;
+};
 
 const monthInputDefault = (): string => {
   const now = new Date();
@@ -65,6 +73,8 @@ export const FamilyDashboard: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [attributionPromptFacilityId, setAttributionPromptFacilityId] = useState<string | null>(null);
+  const [retryContextByFacility, setRetryContextByFacility] = useState<Record<string, RetryContext | undefined>>({});
+  const hasTrackedViewRef = useRef(false);
 
   const reload = async () => {
     setLoading(true);
@@ -94,6 +104,15 @@ export const FamilyDashboard: React.FC = () => {
   useEffect(() => {
     void reload();
   }, []);
+
+  useEffect(() => {
+    if (loading || hasTrackedViewRef.current) return;
+    hasTrackedViewRef.current = true;
+    trackEvent('family_dashboard_viewed', {
+      saved_count: cards.length,
+      moved_in_count: cards.filter((card) => card.status === 'moved_in').length,
+    });
+  }, [loading, cards]);
 
   const savedCount = cards.length;
   const movedInCount = useMemo(
@@ -138,8 +157,17 @@ export const FamilyDashboard: React.FC = () => {
           }
         },
       );
+      trackEvent('family_note_saved', { facility_id: facilityId, note_length: draft.length });
+      setRetryContextByFacility((prev) => ({ ...prev, [facilityId]: undefined }));
     } catch {
-      // Error handled in withOptimisticCard.
+      trackEvent('family_note_save_failed', { facility_id: facilityId });
+      setRetryContextByFacility((prev) => ({
+        ...prev,
+        [facilityId]: {
+          type: 'note',
+          message: 'Note save failed. Retry to persist this note.',
+        },
+      }));
     } finally {
       setWorking(facilityId, false);
     }
@@ -158,8 +186,18 @@ export const FamilyDashboard: React.FC = () => {
           }
         },
       );
+      trackEvent('family_status_updated', { facility_id: facilityId, status: nextStatus });
+      setRetryContextByFacility((prev) => ({ ...prev, [facilityId]: undefined }));
     } catch {
-      // Error handled in withOptimisticCard.
+      trackEvent('family_status_update_failed', { facility_id: facilityId, status: nextStatus });
+      setRetryContextByFacility((prev) => ({
+        ...prev,
+        [facilityId]: {
+          type: 'status',
+          status: nextStatus,
+          message: 'Status update failed. Retry to sync with server state.',
+        },
+      }));
     } finally {
       setWorking(facilityId, false);
     }
@@ -180,9 +218,18 @@ export const FamilyDashboard: React.FC = () => {
           }
         },
       );
+      trackEvent('family_tour_added', { facility_id: facilityId, tour_at: draft });
       setTourDrafts((prev) => ({ ...prev, [facilityId]: '' }));
+      setRetryContextByFacility((prev) => ({ ...prev, [facilityId]: undefined }));
     } catch {
-      // Error handled in withOptimisticCard.
+      trackEvent('family_tour_add_failed', { facility_id: facilityId });
+      setRetryContextByFacility((prev) => ({
+        ...prev,
+        [facilityId]: {
+          type: 'tour',
+          message: 'Tour log failed to save. Retry to keep your timeline accurate.',
+        },
+      }));
     } finally {
       setWorking(facilityId, false);
     }
@@ -202,9 +249,18 @@ export const FamilyDashboard: React.FC = () => {
           }
         },
       );
+      trackEvent('family_moved_in_confirmed', { facility_id: facilityId, move_in_month: month });
       setAttributionPromptFacilityId(facilityId);
+      setRetryContextByFacility((prev) => ({ ...prev, [facilityId]: undefined }));
     } catch {
-      // Error handled in withOptimisticCard.
+      trackEvent('family_moved_in_failed', { facility_id: facilityId });
+      setRetryContextByFacility((prev) => ({
+        ...prev,
+        [facilityId]: {
+          type: 'moved_in',
+          message: 'Move-in confirmation failed. Retry to lock final outcome.',
+        },
+      }));
     } finally {
       setWorking(facilityId, false);
     }
@@ -223,11 +279,47 @@ export const FamilyDashboard: React.FC = () => {
           }
         },
       );
+      trackEvent('family_attribution_submitted', { facility_id: facilityId, attribution_type: attributionType });
       setAttributionPromptFacilityId(null);
+      setRetryContextByFacility((prev) => ({ ...prev, [facilityId]: undefined }));
     } catch {
-      // Error handled in withOptimisticCard.
+      trackEvent('family_attribution_submit_failed', { facility_id: facilityId, attribution_type: attributionType });
+      setRetryContextByFacility((prev) => ({
+        ...prev,
+        [facilityId]: {
+          type: 'attribution',
+          attribution: attributionType,
+          message: 'Attribution response failed to save. Retry when ready.',
+        },
+      }));
     } finally {
       setWorking(facilityId, false);
+    }
+  };
+
+  const onRetry = async (facilityId: string) => {
+    const retryContext = retryContextByFacility[facilityId];
+    if (!retryContext) return;
+    trackEvent('family_retry_clicked', { facility_id: facilityId, retry_type: retryContext.type });
+
+    if (retryContext.type === 'note') {
+      await onSaveNote(facilityId);
+      return;
+    }
+    if (retryContext.type === 'status' && retryContext.status) {
+      await onStatusChange(facilityId, retryContext.status);
+      return;
+    }
+    if (retryContext.type === 'tour') {
+      await onAddTour(facilityId);
+      return;
+    }
+    if (retryContext.type === 'moved_in') {
+      await onMarkMovedIn(facilityId);
+      return;
+    }
+    if (retryContext.type === 'attribution' && retryContext.attribution) {
+      await onSubmitAttribution(facilityId, retryContext.attribution);
     }
   };
 
@@ -251,12 +343,15 @@ export const FamilyDashboard: React.FC = () => {
         <header className="mb-8 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
           <h1 className="font-serif text-3xl font-semibold text-charcoal">Family Dashboard</h1>
           <p className="mt-2 text-sm text-charcoal/70">
-            Saved facilities: <strong>{savedCount}</strong> · Moved in: <strong>{movedInCount}</strong>
+            Saved facilities: <strong>{savedCount}</strong> | Moved in: <strong>{movedInCount}</strong>
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <button
               type="button"
-              onClick={() => window.print()}
+              onClick={() => {
+                trackEvent('family_dashboard_print_clicked', { saved_count: savedCount });
+                window.print();
+              }}
               className="rounded-md border border-slate-300 px-4 py-2 text-sm font-semibold text-charcoal hover:border-slate-900"
             >
               Print Tour Prep Sheet
@@ -269,6 +364,38 @@ export const FamilyDashboard: React.FC = () => {
             </Link>
           </div>
         </header>
+
+        {cards.length > 0 && (
+          <section className="mb-6 hidden rounded-xl border border-slate-300 bg-white p-6 print:block">
+            <h2 className="font-serif text-2xl font-semibold text-charcoal">Tour Prep Sheet</h2>
+            <p className="mt-1 text-sm text-charcoal/70">
+              Use this sheet during tours. Keep status, notes, and next steps in one place.
+            </p>
+            <div className="mt-5 space-y-4">
+              {cards.map((card) => {
+                const currentStatus = card.status || 'researching';
+                return (
+                  <article key={`print-${card.facilityId}`} className="rounded-lg border border-slate-200 p-4">
+                    <p className="text-base font-semibold text-charcoal">{card.facilityName}</p>
+                    <p className="mt-1 text-xs uppercase tracking-[0.16em] text-charcoal/60">
+                      Status: {FAMILY_JOURNEY_STATUS_LABELS[currentStatus]}
+                    </p>
+                    <p className="mt-1 text-xs text-charcoal/70">Next tour: {formatTourDate(card.nextTour)}</p>
+                    <p className="mt-1 text-xs text-charcoal/70">
+                      Note: {(card.latestNote || 'No note recorded yet.').slice(0, 220)}
+                    </p>
+                    <div className="mt-3 space-y-1 text-xs text-charcoal/80">
+                      <p>[ ] Confirm monthly base pricing and care add-ons</p>
+                      <p>[ ] Verify staffing coverage for evenings and weekends</p>
+                      <p>[ ] Ask for latest inspection and correction records</p>
+                      <p>[ ] Review medication and escalation protocols</p>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        )}
 
         {error && (
           <div className="mb-6 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
@@ -298,6 +425,7 @@ export const FamilyDashboard: React.FC = () => {
               const isTerminal = currentStatus === 'moved_in';
               const showAttributionPrompt = attributionPromptFacilityId === card.facilityId;
               const facilityPath = getFamilyDashboardFacilityPath(card);
+              const retryContext = retryContextByFacility[card.facilityId];
 
               return (
                 <article key={card.facilityId} className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -449,13 +577,38 @@ export const FamilyDashboard: React.FC = () => {
                     </div>
                   )}
 
+                  {retryContext && (
+                    <div className="mt-4 rounded-lg border border-red-200 bg-red-50 p-4">
+                      <p className="text-sm text-red-700">{retryContext.message}</p>
+                      <div className="mt-3 flex gap-2">
+                        <button
+                          type="button"
+                          onClick={() => onRetry(card.facilityId)}
+                          disabled={busy}
+                          className="rounded-md border border-red-300 bg-white px-3 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-red-700 disabled:opacity-60"
+                        >
+                          Retry
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setRetryContextByFacility((prev) => ({ ...prev, [card.facilityId]: undefined }))
+                          }
+                          className="rounded-md px-3 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-red-700/80"
+                        >
+                          Dismiss
+                        </button>
+                      </div>
+                    </div>
+                  )}
+
                   <div className="mt-5 border-t border-dashed border-slate-200 pt-4 print:block">
                     <p className="text-xs font-bold uppercase tracking-[0.2em] text-charcoal/60">Printable Tour Checklist</p>
                     <ul className="mt-3 space-y-2 text-sm text-charcoal/80">
-                      <li>□ Confirm monthly base pricing and care-level add-ons</li>
-                      <li>□ Verify staffing coverage for evenings and weekends</li>
-                      <li>□ Ask to review recent inspection and corrective actions</li>
-                      <li>□ Review medication management and escalation protocols</li>
+                      <li>[ ] Confirm monthly base pricing and care-level add-ons</li>
+                      <li>[ ] Verify staffing coverage for evenings and weekends</li>
+                      <li>[ ] Ask to review recent inspection and corrective actions</li>
+                      <li>[ ] Review medication management and escalation protocols</li>
                     </ul>
                   </div>
                 </article>
@@ -469,3 +622,4 @@ export const FamilyDashboard: React.FC = () => {
 };
 
 export default FamilyDashboard;
+

@@ -15,6 +15,7 @@ import {
 import { useGeolocation } from '@/src/hooks/useGeolocation';
 import { getLocationSuggestions, LocationSuggestion } from '@/src/utils/locationSuggestions';
 import { ALL_STATES } from '@/src/data/states';
+import { FamilyDashboardProof } from '@/features/family/landing/FamilyDashboardProof';
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -183,19 +184,22 @@ export const Home: React.FC = () => {
         </section>
 
         <section className="bg-white border-b border-slate-100">
-          <div className="max-w-[1200px] mx-auto px-6 py-6 grid sm:grid-cols-3 gap-3">
-            <div className="rounded-xl border border-slate-200 p-4">
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Step 1</p>
-              <p className="text-sm font-semibold text-charcoal mt-1">Search verified listings</p>
+          <div className="max-w-[1200px] mx-auto px-6 py-10 grid gap-6 lg:grid-cols-[1.2fr_1fr]">
+            <div className="grid sm:grid-cols-3 gap-3">
+              <div className="rounded-xl border border-slate-200 p-4">
+                <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Step 1</p>
+                <p className="text-sm font-semibold text-charcoal mt-1">Search verified listings</p>
+              </div>
+              <div className="rounded-xl border border-slate-200 p-4">
+                <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Step 2</p>
+                <p className="text-sm font-semibold text-charcoal mt-1">Compare care and pricing</p>
+              </div>
+              <div className="rounded-xl border border-slate-200 p-4">
+                <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Step 3</p>
+                <p className="text-sm font-semibold text-charcoal mt-1">Track decisions and move-in outcome</p>
+              </div>
             </div>
-            <div className="rounded-xl border border-slate-200 p-4">
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Step 2</p>
-              <p className="text-sm font-semibold text-charcoal mt-1">Compare care and pricing</p>
-            </div>
-            <div className="rounded-xl border border-slate-200 p-4">
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Step 3</p>
-              <p className="text-sm font-semibold text-charcoal mt-1">Contact facilities directly</p>
-            </div>
+            <FamilyDashboardProof />
           </div>
         </section>
 

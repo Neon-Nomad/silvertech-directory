@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { supabase } from '@/src/lib/supabase';
 import { replayPendingFamilyActions } from '@/src/features/family/journey/client';
+import { trackEvent } from '@/src/utils/analytics';
 import { Button } from '@/components/ui/Button';
 import { Helmet } from 'react-helmet-async';
 import { AlertCircle, Loader2 } from 'lucide-react';
@@ -40,7 +41,12 @@ export const LoginPage: React.FC = () => {
       });
 
       if (error) throw error;
-      await replayPendingFamilyActions();
+      const replayResult = await replayPendingFamilyActions();
+      trackEvent('family_pending_actions_replayed', {
+        replayed: replayResult.replayed,
+        failed: replayResult.failed,
+        remaining: replayResult.remaining,
+      });
       navigate(redirectTo, { replace: true });
     } catch (err: any) {
       const message = String(err?.message || 'Failed to sign in');
