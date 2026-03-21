@@ -177,6 +177,7 @@ const mdToHtml = (md: string): string => {
 };
 
 const normalizeText = (value: string): string => value.replace(/\s+/g, ' ').trim();
+const stripFormatting = (value: string): string => value.replace(/[*_`~[\]()]/g, ' ');
 
 const markdownToPlainText = (md: string): string =>
   normalizeText(
@@ -204,12 +205,26 @@ const extractUrls = (md: string, limit = 4): string[] => {
   return unique;
 };
 
+const normalizePhone = (value: string): string => {
+  if (!value) return '';
+  const unformatted = stripFormatting(value);
+  let digits = unformatted.replace(/\D/g, '');
+  if (digits.length === 11 && digits.startsWith('1')) digits = digits.slice(1);
+  if (digits.length !== 10) return '';
+  return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+};
+
 const extractPhones = (md: string, limit = 3): string[] => {
-  const matches = md.match(/(?:\+1[\s.-]?)?(?:\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\d{4}/g) || [];
+  const withoutUrls = md.replace(/https?:\/\/[^\s)]+/g, ' ');
+  const withoutFormatting = stripFormatting(withoutUrls);
+  const matches =
+    withoutFormatting.match(
+      /(?:\+?1[\s().-]*)?(?:\(\d{3}\)|\d{3})[\s().-]*\d{3}[\s().-]*\d{4}|\b1?\d{10}\b/g,
+    ) || [];
   const unique: string[] = [];
-  for (const phone of matches) {
-    const normalized = normalizeText(phone);
-    if (unique.includes(normalized)) continue;
+  for (const candidate of matches) {
+    const normalized = normalizePhone(candidate);
+    if (!normalized || unique.includes(normalized)) continue;
     unique.push(normalized);
     if (unique.length >= limit) break;
   }
@@ -229,15 +244,66 @@ const extractBoldTerms = (md: string, limit = 10): string[] => {
   return out;
 };
 
-const pickFirstSentence = (md: string, fallback: string): string => {
-  const plain = markdownToPlainText(md);
-  if (!plain) return fallback;
-  const sentence = plain.match(/[^.!?]+[.!?]/)?.[0]?.trim() || plain;
-  return sentence.length > 220 ? `${sentence.slice(0, 217).trim()}...` : sentence;
+const isLikelyMetadataLine = (line: string): boolean => {
+  if (/^#{1,6}\s/.test(line.trim())) return true;
+  const normalized = normalizeText(line);
+  if (!normalized) return true;
+  if (/^(#{1,6}\s*)?(author|by|date|state|references?|disclaimer|table of contents|word count|introduction)\b/i.test(normalized)) return true;
+  if (/^(author|date)\s*:/i.test(normalized)) return true;
+  if (normalized.includes('|') || /^[:\-|\s]+$/.test(normalized)) return true;
+  if (/https?:\/\//i.test(normalized) && normalized.split(' ').length < 3) return true;
+  if (/[A-Z]/.test(normalized) && normalized === normalized.toUpperCase() && normalized.length < 90) return true;
+  if (/^(provided task input|manus ai)/i.test(normalized)) return true;
+  return false;
 };
 
+const isQualitySentence = (sentence: string, topicPattern?: RegExp): boolean => {
+  const cleaned = normalizeText(sentence.replace(/\[[^\]]+]/g, ''));
+  if (!cleaned) return false;
+  if (/^(author|by|date|state|references?|disclaimer)\b/i.test(cleaned)) return false;
+  if (/(comprehensive guide|word count|manus ai|table of contents|expansion)/i.test(cleaned)) return false;
+  if (/:\s*:\s*:/.test(cleaned)) return false;
+  if (/\b(key complaint contact|authority program complaint hotline|program complaint hotline)\b/i.test(cleaned)) return false;
+
+  const words = cleaned.split(' ');
+  if (words.length < 12 || words.length > 32) return false;
+
+  const hasVerb = /\b(is|are|can|must|requires?|allows?|provides?|depends?|moves?|handles?|supports?|enforces?|routes?|determines?|includes?)\b/i.test(cleaned);
+  if (!hasVerb) return false;
+
+  if (topicPattern && !topicPattern.test(cleaned)) return false;
+
+  return true;
+};
+
+const pickInsightSentence = (md: string, fallback: string, topicPattern?: RegExp): string => {
+  const lines = md
+    .split('\n')
+    .map((line) => normalizeText(line))
+    .filter((line) => line && !isLikelyMetadataLine(line))
+    .join(' ');
+
+  const plain = markdownToPlainText(lines);
+  if (!plain) return fallback;
+
+  const candidates = plain.match(/[^.!?]+[.!?]/g) || [plain];
+  for (const candidate of candidates) {
+    if (!isQualitySentence(candidate, topicPattern)) continue;
+    const normalized = normalizeText(candidate);
+    return normalized.length > 220 ? `${normalized.slice(0, 217).trim()}...` : normalized;
+  }
+  return fallback;
+};
+
+const isWeakAgencyTerm = (term: string): boolean =>
+  /^(primary|administering|key|state)\b/i.test(term) ||
+  /^(licensing authority|complaint hotline|key authority contact|program|licensing authority website)$/i.test(term) ||
+  /(authority website|website)$/i.test(term);
+
 const findAgencyName = (md: string, fallback: string): string => {
-  const boldTerms = extractBoldTerms(md, 16);
+  const boldTerms = extractBoldTerms(md, 16)
+    .map((term) => sanitizeProgramTerm(term))
+    .filter((term) => term && !isWeakAgencyTerm(term));
   const agencyTerm =
     boldTerms.find((term) =>
       /(department|agency|administration|ombudsman|office|division|health|services|medicaid|licensing)/i.test(term),
@@ -249,12 +315,21 @@ const findAgencyName = (md: string, fallback: string): string => {
   return fallback;
 };
 
+const sanitizeProgramTerm = (term: string): string => normalizeText(term.replace(/[:;,\-–\s]+$/g, ''));
+
+const isWeakProgramTerm = (term: string): boolean =>
+  /^(primary|program|state|key|author|date)\b/i.test(term) ||
+  /(comprehensive guide|introduction|program name|target population|administering agency|state:)/i.test(term);
+
 const findProgramTerms = (md: string, limit = 2): string[] => {
   const boldTerms = extractBoldTerms(md, 20);
-  const programs = boldTerms.filter((term) =>
-    /(waiver|program|pathways|medi-?cal|medicaid|services|benefit|plan)/i.test(term),
-  );
-  return programs.slice(0, limit);
+  const programs = boldTerms
+    .map((term) => sanitizeProgramTerm(term))
+    .filter((term) => term && !isWeakProgramTerm(term))
+    .filter((term) =>
+      /(waiver|program|pathways|medi-?cal|medicaid|services|benefit|plan)/i.test(term),
+    );
+  return [...new Set(programs)].slice(0, limit);
 };
 
 const SECTIONS = [
@@ -307,11 +382,11 @@ const licensingAgency = normalizeText(resolveContact('licensing').name || '') ||
 const ombudsmanAgency = normalizeText(resolveContact('ombudsman').name || '') || findAgencyName(ombudsmanMd, `${stateMeta.name} long-term care ombudsman`);
 const medicaidAgency = normalizeText(resolveContact('medicaid').name || '') || findAgencyName(medicaidMd, `${stateMeta.name} Medicaid office`);
 
-const licensingPhone = normalizeText(resolveContact('licensing').phone || '') || extractPhones(licensingMd, 1)[0] || '';
-const ombudsmanPhone = normalizeText(resolveContact('ombudsman').phone || '') || extractPhones(ombudsmanMd, 1)[0] || '';
-const medicaidPhone = normalizeText(resolveContact('medicaid').phone || '') || extractPhones(medicaidMd, 1)[0] || '';
+const licensingPhone = normalizePhone(resolveContact('licensing').phone || '') || extractPhones(licensingMd, 1)[0] || '';
+const ombudsmanPhone = normalizePhone(resolveContact('ombudsman').phone || '') || extractPhones(ombudsmanMd, 1)[0] || '';
+const medicaidPhone = normalizePhone(resolveContact('medicaid').phone || '') || extractPhones(medicaidMd, 1)[0] || '';
 const complaintPhone =
-  normalizeText(resolveContact('elderAbuse').phone || '') ||
+  normalizePhone(resolveContact('elderAbuse').phone || '') ||
   extractPhones(complaintsMd, 1)[0] ||
   extractPhones(licensingMd, 1)[0] ||
   '';
@@ -325,7 +400,21 @@ const complaintSourceUrl =
   licensingSourceUrl;
 
 const medicaidPrograms = findProgramTerms(medicaidMd, 2);
-const topProgramLabel = medicaidPrograms[0] || `${stateMeta.name} Medicaid long-term care pathways`;
+const topProgramLabel = medicaidPrograms[0] || `${stateMeta.name} Medicaid long-term care programs`;
+const safeProgramLabel = topProgramLabel || `${stateMeta.name} Medicaid long-term care programs`;
+const missingPhoneLabel = 'Not listed - see source';
+
+const licensingAndComplaintsText = `${licensingMd}\n${complaintsMd}`;
+const hasInspectionSignals = /(inspection|survey|deficien|citation|unannounced|compliance review)/i.test(licensingAndComplaintsText);
+const hasRoutingSignals = /(hotline|intake|district office|regional office|complaint line|ombudsman)/i.test(complaintsMd);
+const hasWaiverSignals = /(waiver|hcbs|home and community|pathways|mltss|managed care)/i.test(medicaidMd);
+const hasEligibilitySignals = /(asset limit|income limit|share of cost|patient liability|look-back|estate recovery|spousal impoverishment)/i.test(medicaidMd);
+const hasPublicReportSignals = /(care compare|public|database|inspection report|report card|cal health find)/i.test(licensingAndComplaintsText);
+const hasCentralizedIntakeSignals = /(centralized|statewide intake|single intake|complaint and incident intake)/i.test(complaintsMd);
+const hasRegionalIntakeSignals = /(district office|regional office|local office|county office)/i.test(complaintsMd);
+const hasManagedCareSignals = /(managed care|mltss|smmc|pathways|altcs|apple health)/i.test(medicaidMd);
+const hasRoomBoardSignals = /(room and board|patient liability|share of cost)/i.test(medicaidMd);
+const hasLookbackSignals = /(look-back|estate recovery|asset limit|spousal impoverishment)/i.test(medicaidMd);
 
 const nonDcInsightItems: InsightItem[] = [
   {
@@ -337,10 +426,11 @@ const nonDcInsightItems: InsightItem[] = [
     ],
   },
   {
-    title: `Long-term care eligibility is driven by ${topProgramLabel}`,
-    copy: pickFirstSentence(
+    title: `Long-term care eligibility is driven by ${safeProgramLabel}`,
+    copy: pickInsightSentence(
       medicaidMd,
       `${stateMeta.name} Medicaid eligibility and program structure determine whether families can use home and community-based options or institutional care.`,
+      /(medicaid|waiver|program|eligibility|coverage|long-term care|managed care|benefit)/i,
     ),
     sources: [
       ...(medicaidSourceUrl ? [{ label: 'Medicaid program source', url: medicaidSourceUrl }] : []),
@@ -351,9 +441,10 @@ const nonDcInsightItems: InsightItem[] = [
   },
   {
     title: 'Complaint outcomes depend on using the correct channel',
-    copy: pickFirstSentence(
+    copy: pickInsightSentence(
       complaintsMd,
       `In ${stateMeta.name}, safety and compliance complaints move through state intake channels, while ombudsman teams help with resident-rights navigation and follow-up.`,
+      /(complaint|report|investigat|intake|hotline|ombudsman|enforcement)/i,
     ),
     sources: [
       ...(complaintSourceUrl ? [{ label: 'Complaint channel', url: complaintSourceUrl }] : []),
@@ -372,39 +463,86 @@ const nonDcQuickFacts: QuickFactItem[] = [
   },
   {
     heading: 'Regulatory Complaint Line',
-    value: complaintPhone || 'See Filing a Complaint section',
+    value: complaintPhone || missingPhoneLabel,
     sourceUrl: complaintSourceUrl,
   },
   {
     heading: 'Ombudsman Contact',
-    value: ombudsmanPhone || ombudsmanAgency,
+    value: ombudsmanPhone || missingPhoneLabel,
     sourceUrl: ombudsmanSourceUrl,
   },
   {
     heading: 'Medicaid LTC Contact',
-    value: medicaidPhone || medicaidAgency,
+    value: medicaidPhone || missingPhoneLabel,
     sourceUrl: medicaidSourceUrl,
   },
 ];
 
-const nonDcFamiliesMiss: FamiliesMissItem[] = [
+const familiesMissCandidates: FamiliesMissItem[] = [
   {
-    title: 'Advocacy and enforcement are not the same process',
-    copy: `${ombudsmanAgency} can advocate and escalate concerns, but licensing actions are issued through ${licensingAgency} and state complaint investigators.`,
+    title: 'Advocacy and enforcement are different lanes',
+    copy: `${ombudsmanAgency} can advocate and escalate concerns, but licensing actions are issued through ${licensingAgency} and complaint investigators.`,
   },
-  {
-    title: 'Program names do not guarantee identical coverage',
-    copy: `${stateMeta.name} long-term care pathways such as ${topProgramLabel} can differ on covered services, room-and-board treatment, and eligibility gates.`,
-  },
-  {
-    title: 'Use both inspection records and complaint history',
-    copy: `Inspection outcomes and complaint findings capture different risk signals. Review both before tours and before final placement decisions in ${stateMeta.name}.`,
-  },
-  {
-    title: 'Document contacts before urgent decisions',
-    copy: `Keep licensing, complaint, and ombudsman contacts available during tours so concerns can be escalated quickly with written timelines and follow-up.`,
-  },
+  ...(hasRoutingSignals
+    ? [{
+        title: hasCentralizedIntakeSignals
+          ? `${stateMeta.name} uses centralized complaint intake`
+          : hasRegionalIntakeSignals
+            ? `${stateMeta.name} routes complaints through regional channels`
+            : `${stateMeta.name} complaint routing can change timelines`,
+        copy: hasCentralizedIntakeSignals
+          ? `Centralized intake can create queue effects. Families in ${stateMeta.name} should document submission dates and keep escalation notes when concerns involve immediate care risks.`
+          : hasRegionalIntakeSignals
+            ? `Regional routing can produce different response speeds by office. Families should confirm which office owns the case and track follow-up milestones in writing.`
+            : `Complaint resolution speed depends on intake route. In ${stateMeta.name}, families should use both the formal complaint line and ombudsman escalation when concerns are urgent.`,
+      }]
+    : []),
+  ...(hasWaiverSignals
+    ? [{
+        title: hasManagedCareSignals
+          ? `Managed-care pathways shape access in ${stateMeta.name}`
+          : `Waiver pathways have practical limits in ${stateMeta.name}`,
+        copy: hasManagedCareSignals
+          ? `${safeProgramLabel} and managed-care routing can change which providers and services are immediately available. Confirm plan participation and authorization steps before tours.`
+          : `${safeProgramLabel} may cover services without covering every cost component. Families should verify room-and-board treatment, service caps, and program fit before final placement.`,
+      }]
+    : []),
+  ...(hasEligibilitySignals
+    ? [{
+        title: hasRoomBoardSignals
+          ? 'Room-and-board assumptions can derail planning'
+          : hasLookbackSignals
+            ? 'Asset and look-back rules can change eligibility outcomes'
+            : 'Financial rules can block otherwise good care choices',
+        copy: hasRoomBoardSignals
+          ? `In ${stateMeta.name}, service coverage and room-and-board obligations can diverge. Families should model monthly out-of-pocket exposure before committing to a placement.`
+          : hasLookbackSignals
+            ? `${stateMeta.name} long-term care eligibility can hinge on transfer history and estate rules. Validate asset assumptions early to avoid late-stage denials.`
+            : `${stateMeta.name} long-term care eligibility can hinge on income, assets, and cost-share rules. Families should validate eligibility assumptions early to avoid late-stage care disruptions.`,
+      }]
+    : []),
+  ...(hasInspectionSignals
+    ? [{
+        title: hasPublicReportSignals
+          ? 'Public reports and inspection cycles tell different stories'
+          : 'Inspection history and complaint history are separate signals',
+        copy: hasPublicReportSignals
+          ? `Public dashboards summarize history, but inspection timing and complaint outcomes can move on different clocks. In ${stateMeta.name}, review both before final decisions.`
+          : `Inspection cycles show baseline compliance, while complaint outcomes reveal issue response. In ${stateMeta.name}, both records matter before tours and final decisions.`,
+      }]
+    : []),
+  ...(hasPublicReportSignals
+    ? [{
+        title: 'Public reporting can lag real-time care changes',
+        copy: `Public dashboards are useful, but update windows vary. Families in ${stateMeta.name} should pair published records with direct facility questions and documented follow-up.`,
+      }]
+    : [{
+        title: 'Keep escalation contacts ready before a crisis',
+        copy: `Store licensing, complaint, and ombudsman contacts before tours so concerns can be escalated quickly with written timelines and follow-up.`,
+      }]),
 ];
+
+const nonDcFamiliesMiss = familiesMissCandidates.slice(0, 4);
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
