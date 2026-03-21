@@ -79,12 +79,12 @@ export const FacilitiesPartnerPage: React.FC = () => {
           </div>
         </section>
 
-        <section className="grid md:grid-cols-2 gap-6 items-center">
-          <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+        <section className="grid md:grid-cols-2 gap-6 md:items-stretch">
+          <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white min-h-[420px] md:min-h-[680px]">
             <img
               src="/images/facilities-dashboard-hero.svg"
               alt="SilverTech operator dashboard preview"
-              className="w-full h-64 object-cover object-left"
+              className="w-full h-full object-cover object-left"
               loading="eager"
               decoding="async"
             />
