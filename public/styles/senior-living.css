@@ -1552,9 +1552,36 @@
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: 1.2rem;
   align-items: stretch;
-  background: linear-gradient(145deg, #202321 0%, #3a3830 52%, #575042 100%);
-  border-color: #3d382f;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: linear-gradient(145deg, #171816 0%, #2a2823 52%, #3f3a31 100%);
+  border-color: #4a4336;
   color: #f8efdf;
+}
+
+.sl-state-resources::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.75) 40%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+.sl-state-resources > * {
+  position: relative;
+  z-index: 1;
+}
+
+.sl-state-resources .sl-state-section-kicker {
+  color: rgba(245, 208, 141, 0.92);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
 }
 
 .sl-state-resources-copy h2 {
@@ -1562,12 +1589,17 @@
   font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(2rem, 3.2vw, 3rem);
   line-height: 1.02;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .sl-state-resources-copy p {
   margin: 0.8rem 0 0;
-  color: rgba(248, 239, 223, 0.8);
-  line-height: 1.78;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.6;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
 }
 
 .sl-state-trust-callout {
@@ -1600,25 +1632,30 @@
 }
 
 .sl-state-resource-card {
-  border: 1px solid rgba(229, 214, 190, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   padding: 1.05rem 1rem;
   display: grid;
   gap: 0.42rem;
   min-height: 100%;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.24);
 }
 
 .sl-state-resource-card strong {
-  color: #fff4e0;
+  color: #ffffff;
   font-size: 1rem;
   line-height: 1.35;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
 }
 
 .sl-state-resource-card span {
-  color: rgba(248, 239, 223, 0.78);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.9rem;
-  line-height: 1.55;
+  line-height: 1.6;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.42);
 }
 
 .sl-state-resource-card span:last-child {
@@ -1627,6 +1664,16 @@
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.sl-state-resource-card a {
+  color: #f5d08d;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+.sl-state-resource-card a:hover {
+  color: #ffe1ab;
 }
 
 .sl-state-market-grid {
