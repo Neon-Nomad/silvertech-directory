@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "vite",
     "lint": "tsx scripts/lint.ts",
+    "lint:content-artifacts": "npx tsx scripts/lint_content_artifacts.ts",
+    "scrub:content-artifacts": "npx tsx scripts/scrub_content_artifacts.ts",
     "build": "tsc && vite build",
     "astro:dev": "astro dev",
     "astro:build": "astro build",

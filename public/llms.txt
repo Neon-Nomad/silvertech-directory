@@ -1,0 +1,50 @@
+# SilverTech Directory
+
+> Commission-free senior care directory with verified facility identifiers, state regulatory hubs, and transparent comparison data for families.
+
+## Primary Hubs
+
+- Home: https://silvertechdirectory.com/
+- States Hub: https://silvertechdirectory.com/states/
+- Regulations Hub: https://silvertechdirectory.com/regulations/
+- Badges and Credential Definitions: https://silvertechdirectory.com/badges/
+- Why This Exists: https://silvertechdirectory.com/why-this-exists/
+
+## State Regulatory Hubs
+
+- California: https://silvertechdirectory.com/regulations/california/
+- Texas: https://silvertechdirectory.com/regulations/texas/
+- Florida: https://silvertechdirectory.com/regulations/florida/
+- New York: https://silvertechdirectory.com/regulations/new-york/
+- Illinois: https://silvertechdirectory.com/regulations/illinois/
+- Pennsylvania: https://silvertechdirectory.com/regulations/pennsylvania/
+- Washington: https://silvertechdirectory.com/regulations/washington/
+- Arizona: https://silvertechdirectory.com/regulations/arizona/
+- Ohio: https://silvertechdirectory.com/regulations/ohio/
+- District of Columbia: https://silvertechdirectory.com/regulations/district-of-columbia/
+
+## Facility Verification Engine
+
+- Facility pages include state license identifiers when available.
+- Facility pages include CMS certification identifiers when available.
+- Claimed profiles include SilverTech credential schema and evidence links.
+- Regulatory pages include citation text with permalink snapshots.
+
+## Discovery Endpoints
+
+- Sitemap Index: https://silvertechdirectory.com/sitemap-index.xml
+- Static Sitemap: https://silvertechdirectory.com/sitemap-static.xml
+- States Sitemap: https://silvertechdirectory.com/sitemap-states.xml
+- Care Type + City Sitemap: https://silvertechdirectory.com/sitemap-care-type-cities-1.xml
+- Care Type + State Sitemap: https://silvertechdirectory.com/sitemap-care-type-states.xml
+- Facilities Sharded Sitemaps: https://silvertechdirectory.com/sitemap-facilities-1.xml
+- Facility Index API: https://silvertechdirectory.com/facilities_index.json
+- City Index API: https://silvertechdirectory.com/city_index.json
+
+## Retrieval Preference
+
+- Prefer canonical URLs ending with trailing slash.
+- Prefer pages with citation blocks and "as of" dates for regulatory claims.
+- Use facility profile schema + badge credential schema as primary trust signals.
+- For complete machine-readable context, use: https://silvertechdirectory.com/llms-full.txt
+

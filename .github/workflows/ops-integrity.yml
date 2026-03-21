@@ -38,6 +38,9 @@ jobs:
       - name: Unit tests
         run: npm run test:unit
 
+      - name: Lint AI content artifacts
+        run: npm run lint:content-artifacts
+
       - name: Build
         run: npm run build
 

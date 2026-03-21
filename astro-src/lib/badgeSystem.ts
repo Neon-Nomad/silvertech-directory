@@ -13,6 +13,8 @@ export type BadgeDefinition = {
   slug: string;
   schemaName: string;
   schemaDescription: string;
+  evidenceLabel?: string;
+  evidenceUrl?: string;
 };
 
 export type BadgeDerivationInput = {
@@ -39,6 +41,8 @@ export const BADGE_DEFINITIONS: readonly BadgeDefinition[] = [
     schemaName: 'New to SilverTech',
     schemaDescription:
       'Awarded to senior care facilities within their first 60 days on SilverTech Directory. Signals a new but actively onboarding member.',
+    evidenceLabel: 'SilverTech onboarding and profile verification logs',
+    evidenceUrl: 'https://silvertechdirectory.com/editorial-policy/',
   },
   {
     id: 'verified_member',
@@ -49,6 +53,8 @@ export const BADGE_DEFINITIONS: readonly BadgeDefinition[] = [
     schemaName: 'SilverTech Verified Member',
     schemaDescription:
       'Awarded to senior care facilities with an active SilverTech Directory subscription and verified profile information.',
+    evidenceLabel: 'Claim and profile verification standards',
+    evidenceUrl: 'https://silvertechdirectory.com/badges/',
   },
   {
     id: 'qa_contributor',
@@ -59,6 +65,8 @@ export const BADGE_DEFINITIONS: readonly BadgeDefinition[] = [
     schemaName: 'Verified Q&A Contributor',
     schemaDescription:
       'Awarded to senior care facilities that have answered family questions on SilverTech Directory, demonstrating active community engagement.',
+    evidenceLabel: 'Approved operator Q&A activity',
+    evidenceUrl: 'https://silvertechdirectory.com/editorial-policy/',
   },
   {
     id: 'availability_pricing',
@@ -69,6 +77,8 @@ export const BADGE_DEFINITIONS: readonly BadgeDefinition[] = [
     schemaName: 'Availability & Pricing Verified',
     schemaDescription:
       'Awarded to senior care facilities that publish live bed availability and current pricing on SilverTech Directory, giving families actionable information.',
+    evidenceLabel: 'Published pricing and tour availability checks',
+    evidenceUrl: 'https://silvertechdirectory.com/for-facilities/',
   },
   {
     id: 'trusted_provider',
@@ -79,6 +89,8 @@ export const BADGE_DEFINITIONS: readonly BadgeDefinition[] = [
     schemaName: 'SilverTech Trusted Provider',
     schemaDescription:
       'Awarded to senior care facilities maintaining active membership, strong family trust signals, and consistent profile upkeep on SilverTech Directory.',
+    evidenceLabel: 'Sustained profile and trust signal review',
+    evidenceUrl: 'https://silvertechdirectory.com/badges/',
   },
 ] as const;
 
@@ -151,6 +163,15 @@ export const buildBadgeDefinitionSchema = () => ({
     description: badge.schemaDescription,
     url: `${BADGE_SET_URL}#${badge.slug}`,
     inDefinedTermSet: BADGE_SET_URL,
+    ...(badge.evidenceUrl
+      ? {
+          citation: {
+            '@type': 'CreativeWork',
+            name: badge.evidenceLabel || 'SilverTech evidence standard',
+            url: badge.evidenceUrl,
+          },
+        }
+      : {}),
   })),
 });
 
@@ -159,17 +180,38 @@ export const buildFacilityBadgeCredentialSchema = ({
   facilityUrl,
   facilitySchemaId,
   earnedBadges,
+  stateRegulatorUrl,
+  stateRegulatorName,
+  lastCrawledAt,
 }: {
   facilityName: string;
   facilityUrl: string;
   facilitySchemaId: string;
   earnedBadges: BadgeDefinition[];
+  stateRegulatorUrl?: string | null;
+  stateRegulatorName?: string | null;
+  lastCrawledAt?: string | null;
 }) => ({
   '@context': 'https://schema.org',
   '@type': 'MedicalBusiness',
   '@id': facilitySchemaId,
   name: facilityName,
   url: facilityUrl,
+  isAccessibleForFree: true,
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'SilverTech Family Decision Resources',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        name: 'Tour Prep Guide',
+        url: 'https://silvertechdirectory.com/guides/tour-questions/',
+        price: '0',
+        priceCurrency: 'USD',
+        availability: 'https://schema.org/InStock',
+      },
+    ],
+  },
   hasCredential: earnedBadges.map((badge) => ({
     '@type': 'Certification',
     name: badge.schemaName,
@@ -184,5 +226,16 @@ export const buildFacilityBadgeCredentialSchema = ({
       name: facilityName,
       url: facilityUrl,
     },
+    ...(stateRegulatorUrl
+      ? {
+          verifiedBy: {
+            '@type': 'Organization',
+            name: stateRegulatorName || 'State Licensing Authority',
+            url: stateRegulatorUrl,
+          },
+          source_url: stateRegulatorUrl,
+        }
+      : {}),
+    ...(lastCrawledAt ? { last_crawled_at: lastCrawledAt } : {}),
   })),
 });

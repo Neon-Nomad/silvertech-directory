@@ -28,6 +28,9 @@ interface Props {
   onlinePresenceUpdatedAt?: string | null;
   lastVerifiedDate?: string | null;
   hasVerifiedIdentifiers?: boolean;
+  stateRegulatorUrl?: string | null;
+  stateRegulatorName?: string | null;
+  lastCrawledAt?: string | null;
 }
 
 const LOCKED_ROWS = [
@@ -56,6 +59,9 @@ export default function FacilityClaimedProfile({
   onlinePresenceUpdatedAt = null,
   lastVerifiedDate = null,
   hasVerifiedIdentifiers = false,
+  stateRegulatorUrl = null,
+  stateRegulatorName = null,
+  lastCrawledAt = null,
 }: Props) {
   const [profile, setProfile] = useState<EnrichedProfile | null>(null);
   const [operatorAnswerCount, setOperatorAnswerCount] = useState(0);
@@ -126,6 +132,9 @@ export default function FacilityClaimedProfile({
           facilityUrl,
           facilitySchemaId,
           earnedBadges,
+          stateRegulatorUrl,
+          stateRegulatorName,
+          lastCrawledAt,
         })
       : null;
 

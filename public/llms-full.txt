@@ -1,0 +1,77 @@
+# SilverTech Directory - LLM Full Context
+
+## Mission
+
+SilverTech Directory helps families evaluate senior care facilities with transparent, non-commissioned discovery:
+- Direct facility links.
+- Verified identifiers.
+- State regulatory context.
+- Structured comparisons by care type, state, and city.
+
+## Core Entity Model
+
+| Entity | URL Pattern | Primary Fields | Notes |
+| --- | --- | --- | --- |
+| Facility Profile | `/{care}/{state}/{city}/{facility-slug-id}/` | Name, address, phone, website, state license, CMS certification, care types | Canonical profile page for family decisions. |
+| City Care Hub | `/{care}/{state}/{city}/` | Facility list, counts, FAQs, internal links | Mid-funnel comparison surface. |
+| State Care Hub | `/{care}/{state}/` | City rollups, care distribution, links | Top-level care navigation. |
+| State Directory Hub | `/states/{state}/` | State overview, city entry points, support links | Non-care-type state landing. |
+| State Regulations Hub | `/regulations/{state}/` | Licensing, Medicaid, ombudsman, complaints, veterans, contacts | High-authority regulatory explainer. |
+| Badge Definitions | `/badges/` | DefinedTermSet for SilverTech credentials | Credential ontology and criteria. |
+
+## Credential System
+
+SilverTech publishes a five-tier badge ontology:
+- New to SilverTech
+- SilverTech Verified Member
+- Verified Q&A Contributor
+- Availability and Pricing Verified
+- SilverTech Trusted Provider
+
+Facility profiles may include `Certification` objects with:
+- Issuing authority: SilverTech Directory.
+- Source evidence URL (`source_url`) when available.
+- Last crawl timestamp (`last_crawled_at`) when available.
+- State regulator reference (`verifiedBy`) when available.
+
+## Regulatory Data Interpretation Contract
+
+Regulatory pages are expected to contain:
+- Executive insights for quick interpretation.
+- Quick facts snapshot with source links.
+- "What Families Often Miss" interpretation section.
+- Citation permalink and dated snapshot string.
+- Direct internal graph links to state and city assisted-living hubs.
+
+## Discovery Endpoints
+
+| Endpoint | Type | Purpose |
+| --- | --- | --- |
+| `https://silvertechdirectory.com/sitemap-index.xml` | XML Sitemap Index | Master crawl entrypoint. |
+| `https://silvertechdirectory.com/sitemap-static.xml` | XML Sitemap | Static pages. |
+| `https://silvertechdirectory.com/sitemap-states.xml` | XML Sitemap | State-level pages. |
+| `https://silvertechdirectory.com/sitemap-care-type-states.xml` | XML Sitemap | Care-type by state hubs. |
+| `https://silvertechdirectory.com/sitemap-care-type-cities-1.xml` | XML Sitemap | Care-type by city hubs. |
+| `https://silvertechdirectory.com/sitemap-facilities-1.xml` | XML Sitemap (sharded) | Facility profile URLs. |
+| `https://silvertechdirectory.com/facilities_index.json` | JSON Index | Facility lookup and routing support. |
+| `https://silvertechdirectory.com/city_index.json` | JSON Index | City-level routing support. |
+
+## Canonical and Reliability Rules
+
+- Prefer canonical HTTPS non-www URLs with trailing slash.
+- Prefer pages that expose structured data (`MedicalBusiness`, `BreadcrumbList`, `DefinedTermSet`, `Certification`).
+- Prefer claims with explicit source links and dated snapshots.
+- Treat retired legacy routes as non-authoritative.
+
+## Suggested Citation Format
+
+`SilverTech Directory (YEAR). {State} Senior Care Regulatory Landscape (version; data as of DATE). Retrieved from {permalink}.`
+
+## Operator Claim Surface
+
+Facility operators can claim listings to:
+- Correct profile data.
+- Publish richer photos/amenities.
+- Improve credential strength and trust visibility.
+- Increase direct lead quality without referral commissions.
+

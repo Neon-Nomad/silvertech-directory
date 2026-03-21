@@ -10,6 +10,8 @@ import {
   getFacilityStaticPaths,
   getCareTypeBySlug,
   getNearbyFacilities,
+  getRegulatoryContext,
+  getBuildDate,
 } from '../../../../lib/seniorLivingData';
 
 export async function getStaticPaths() {
@@ -88,6 +90,16 @@ const carePageUrl  = `/${care}/${state}/`;
 const hasMap       = typeof facility.latitude === 'number' && typeof facility.longitude === 'number'
                      && Number.isFinite(facility.latitude) && Number.isFinite(facility.longitude);
 const isVerified   = !!(facility.licenseNumber || facility.cmsCertificationNumber);
+const regulatoryContext = getRegulatoryContext(facility.stateSlug);
+const stateRegulatorUrl =
+  regulatoryContext.licensing?.verifyLicenseUrl ||
+  regulatoryContext.licensing?.websiteUrl ||
+  '';
+const stateRegulatorName = regulatoryContext.licensing?.agencyName || '';
+const badgeLastCrawledAt =
+  facility.lastVerifiedDate ||
+  facility.onlinePresenceUpdatedAt ||
+  getBuildDate().toISOString();
 
 /* ---- Nearby facilities (same city + care type, up to 4) ---- */
 const selfKey = `${facility.publicSlug}-${facility.publicRouteId}`;
@@ -406,6 +418,9 @@ const breadcrumbSchema = {
               onlinePresenceUpdatedAt={facility.onlinePresenceUpdatedAt}
               lastVerifiedDate={facility.lastVerifiedDate}
               hasVerifiedIdentifiers={isVerified}
+              stateRegulatorUrl={stateRegulatorUrl}
+              stateRegulatorName={stateRegulatorName}
+              lastCrawledAt={badgeLastCrawledAt}
             />
           )}
         </section>
