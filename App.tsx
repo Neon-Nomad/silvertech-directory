@@ -33,13 +33,11 @@ const FacilitiesPricingPage = lazy(() => import('@/features/public/providers/Fac
 const ProductsHub = lazy(() => import('@/src/pages/products').then((m) => ({ default: m.ProductsHub })));
 const CategoryPage = lazy(() => import('@/src/pages/products/CategoryPage').then((m) => ({ default: m.CategoryPage })));
 const AffiliateProductPage = lazy(() => import('@/src/pages/products/AffiliateProductPage').then((m) => ({ default: m.AffiliateProductPage })));
-const StatesDirectoryPage = lazy(() => import('@/features/locations/StatesDirectoryPage').then((m) => ({ default: m.StatesDirectoryPage })));
 const FAQ = lazy(() => import('@/features/family/support/FAQ').then((m) => ({ default: m.FAQ })));
 const AdvertiseWithUs = lazy(() => import('@/features/public/advertise/AdvertiseWithUs').then((m) => ({ default: m.AdvertiseWithUs })));
 const HonestCarePage = lazy(() => import('@/features/public/transparency/HonestCarePage').then((m) => ({ default: m.HonestCarePage })));
 const MethodologyPage = lazy(() => import('@/features/public/transparency/MethodologyPage').then((m) => ({ default: m.MethodologyPage })));
 const Blog = lazy(() => import('./features/public/blog/Blog').then((m) => ({ default: m.Blog })));
-const StateHubHome = lazy(() => import('@/features/locations/hub/StateHubHome').then((m) => ({ default: m.StateHubHome })));
 const StateMedicaidPage = lazy(() => import('@/features/locations/hub/StateMedicaidPage').then((m) => ({ default: m.StateMedicaidPage })));
 const StateRulesPage = lazy(() => import('@/features/locations/hub/StateRulesPage').then((m) => ({ default: m.StateRulesPage })));
 const StateOmbudsmanPage = lazy(() => import('@/features/locations/hub/StateOmbudsmanPage').then((m) => ({ default: m.StateOmbudsmanPage })));
@@ -395,8 +393,8 @@ function App() {
                     <Route path="/claim" element={<ClaimBusiness />} />
 
                     {/* State Authority Hub */}
-                    <Route path="/states" element={<StatesDirectoryPage />} />
-                    <Route path="/states/:state" element={<StateHubHome />} />
+                    <Route path="/states" element={<AstroStaticRoute />} />
+                    <Route path="/states/:state" element={<AstroStaticRoute />} />
                     <Route path="/states/:state/regulatory" element={<LegacyRouteRetired />} />
                     <Route path="/states/:state/regulations" element={<LegacyRouteRetired />} />
                     <Route path="/states/:state/regulations/:topic" element={<LegacyRouteRetired />} />
