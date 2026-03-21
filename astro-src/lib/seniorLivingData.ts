@@ -249,6 +249,8 @@ let licensingCache: Array<Record<string, string>> | null = null;
 let ombudsmanCache: Record<string, Record<string, string>> | null = null;
 let medicaidCache: Array<Record<string, any>> | null = null;
 let agingAgencyCache: Array<Record<string, any>> | null = null;
+let sitemapRouteExactCache: Map<string, number> | null = null;
+let sitemapRouteLooseCache: Map<string, number> | null = null;
 let warnedMissingCsv = false;
 
 const ROOT = process.cwd();
@@ -381,6 +383,72 @@ const readJsonFile = <T>(relativePath: string): T | null => {
 
 const loadFacilitiesIndex = (): Array<Record<string, any>> =>
   readJsonFile<Array<Record<string, any>>>('public/facilities_index.json') || [];
+
+const loadSitemapFacilityRouteHints = (): {
+  exact: Map<string, number>;
+  loose: Map<string, number>;
+} => {
+  if (sitemapRouteExactCache && sitemapRouteLooseCache) {
+    return { exact: sitemapRouteExactCache, loose: sitemapRouteLooseCache };
+  }
+
+  const exact = new Map<string, number>();
+  const loose = new Map<string, number>();
+  const publicDir = path.resolve(ROOT, 'public');
+  if (!fs.existsSync(publicDir)) {
+    sitemapRouteExactCache = exact;
+    sitemapRouteLooseCache = loose;
+    return { exact, loose };
+  }
+
+  const sitemapFiles = fs
+    .readdirSync(publicDir)
+    .filter((file) => /^sitemap-facilities-\d+\.xml$/i.test(file))
+    .sort((a, b) => a.localeCompare(b));
+
+  const routePattern =
+    /<loc>https:\/\/silvertechdirectory\.com\/([^\/<]+)\/([^\/<]+)\/([^\/<]+)\/([^\/<]+)-(\d+)\/<\/loc>/g;
+
+  for (const file of sitemapFiles) {
+    const fullPath = path.join(publicDir, file);
+    const xml = fs.readFileSync(fullPath, 'utf-8');
+    routePattern.lastIndex = 0;
+    let match: RegExpExecArray | null = null;
+    while ((match = routePattern.exec(xml)) !== null) {
+      const care = (match[1] || '').trim().toLowerCase();
+      const state = (match[2] || '').trim().toLowerCase();
+      const city = (match[3] || '').trim().toLowerCase();
+      const publicSlug = (match[4] || '').trim().toLowerCase();
+      const routeId = Number(match[5]);
+      if (!care || !state || !city || !publicSlug || !Number.isFinite(routeId) || routeId <= 0) continue;
+
+      const exactKey = `${care}|${state}|${city}|${publicSlug}`;
+      const looseKey = `${state}|${city}|${publicSlug}`;
+      if (!exact.has(exactKey)) exact.set(exactKey, routeId);
+      if (!loose.has(looseKey)) loose.set(looseKey, routeId);
+    }
+  }
+
+  sitemapRouteExactCache = exact;
+  sitemapRouteLooseCache = loose;
+  return { exact, loose };
+};
+
+const resolveSitemapPublicRouteId = (
+  careTypes: CareTypeSlug[],
+  stateSlug: string,
+  citySlug: string,
+  publicSlug: string,
+): number | null => {
+  const { exact, loose } = loadSitemapFacilityRouteHints();
+  for (const careType of careTypes) {
+    const key = `${careType}|${stateSlug}|${citySlug}|${publicSlug}`;
+    const routeId = exact.get(key);
+    if (routeId) return routeId;
+  }
+  const looseKey = `${stateSlug}|${citySlug}|${publicSlug}`;
+  return loose.get(looseKey) || null;
+};
 
 const roundPct = (value: number): number => Math.round(value * 10) / 10;
 
@@ -601,9 +669,19 @@ const ensureStore = (): SeniorLivingStore => {
     });
 
     const publicSlug = (enriched?.public_slug || slugify(facilityBase.name) || 'facility').toLowerCase();
-    const hasProfile = !!(enriched && Number(enriched.public_route_id));
+    const sitemapPublicRouteId = resolveSitemapPublicRouteId(
+      careTypes,
+      facilityBase.stateSlug,
+      facilityBase.citySlug,
+      publicSlug,
+    );
+    const enrichedPublicRouteId = Number(enriched?.public_route_id) || 0;
+    const hasProfile = !!(sitemapPublicRouteId || enrichedPublicRouteId);
     const publicRouteId =
-      Number(enriched?.public_route_id) || parseInt(hashString(key || facilityBase.name), 36) || facilities.length + 1;
+      sitemapPublicRouteId ||
+      enrichedPublicRouteId ||
+      parseInt(hashString(key || facilityBase.name), 36) ||
+      facilities.length + 1;
     let id = enriched?.id || `${publicSlug}-${publicRouteId}`;
     if (seenIds.has(id)) id = `${id}-${hashString(`${id}-${facilityBase.city}`)}`;
     seenIds.add(id);
