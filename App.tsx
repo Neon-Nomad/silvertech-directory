@@ -41,12 +41,9 @@ const MethodologyPage = lazy(() => import('@/features/public/transparency/Method
 const Blog = lazy(() => import('./features/public/blog/Blog').then((m) => ({ default: m.Blog })));
 const StateHubHome = lazy(() => import('@/features/locations/hub/StateHubHome').then((m) => ({ default: m.StateHubHome })));
 const StateMedicaidPage = lazy(() => import('@/features/locations/hub/StateMedicaidPage').then((m) => ({ default: m.StateMedicaidPage })));
-const StateRegulatoryHub = lazy(() => import('@/features/regulatory/StateRegulatoryHub').then((m) => ({ default: m.StateRegulatoryHub })));
 const StateRulesPage = lazy(() => import('@/features/locations/hub/StateRulesPage').then((m) => ({ default: m.StateRulesPage })));
 const StateOmbudsmanPage = lazy(() => import('@/features/locations/hub/StateOmbudsmanPage').then((m) => ({ default: m.StateOmbudsmanPage })));
 const StateVeteransPage = lazy(() => import('@/features/locations/hub/StateVeteransPage').then((m) => ({ default: m.StateVeteransPage })));
-const RegulatoryLibrary = lazy(() => import('@/features/regulatory/RegulatoryLibrary').then((m) => ({ default: m.RegulatoryLibrary })));
-const StateRegulationTopicPage = lazy(() => import('@/features/regulatory/StateRegulationTopicPage').then((m) => ({ default: m.StateRegulationTopicPage })));
 const ContactPage = lazy(() => import('@/features/public/company/ContactPage').then((m) => ({ default: m.ContactPage })));
 const EditorialPolicyPage = lazy(() => import('@/features/public/company/EditorialPolicyPage').then((m) => ({ default: m.EditorialPolicyPage })));
 const CommunityGuidelinesPage = lazy(() => import('@/features/public/company/CommunityGuidelinesPage').then((m) => ({ default: m.CommunityGuidelinesPage })));
@@ -407,9 +404,9 @@ function App() {
                     <Route path="/states/:state/rules" element={<StateRulesPage />} />
                     <Route path="/states/:state/ombudsman" element={<StateOmbudsmanPage />} />
                     <Route path="/states/:state/veterans" element={<StateVeteransPage />} />
-                    <Route path="/regulations" element={<RegulatoryLibrary />} />
-                    <Route path="/regulations/:state" element={<StateRegulatoryHub />} />
-                    <Route path="/regulations/:state/:topic" element={<StateRegulationTopicPage />} />
+                    <Route path="/regulations" element={<AstroStaticRoute />} />
+                    <Route path="/regulations/:state" element={<AstroStaticRoute />} />
+                    <Route path="/regulations/:state/:topic" element={<LegacyRouteRetired />} />
                     <Route path="/regulatory-library/*" element={<LegacyRouteRetired />} />
 
                     {/* Directory routes — owned by Astro static pages, hard reload to let Netlify serve them */}
