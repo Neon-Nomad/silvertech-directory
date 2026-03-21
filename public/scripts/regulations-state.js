@@ -1,4 +1,11 @@
 (() => {
+  const trackingRoot = document.querySelector(".sl-state-page");
+  const supabaseUrl = (trackingRoot?.getAttribute("data-reg-supabase-url") || "").trim();
+  const supabaseAnonKey = (trackingRoot?.getAttribute("data-reg-supabase-anon-key") || "").trim();
+  const canIngestRawEvents = Boolean(supabaseUrl && supabaseAnonKey);
+  const REGULATION_PATH_REGEX = /^\/regulations\/([^/]+)\/?$/;
+  const SESSION_STORAGE_KEY = "std_session_id";
+
   const copyButtons = Array.from(document.querySelectorAll("[data-copy-citation]"));
   const regSections = Array.from(document.querySelectorAll("[data-reg-section]"));
   const regOpenLinks = Array.from(document.querySelectorAll("[data-reg-open]"));
@@ -17,6 +24,106 @@
       win.dataLayer.push({ event: name, ...(props || {}) });
     }
   };
+
+  const parseStateFromPath = () => {
+    const match = location.pathname.match(REGULATION_PATH_REGEX);
+    return match?.[1] || null;
+  };
+
+  const createUuid = () => {
+    if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
+      return crypto.randomUUID();
+    }
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (char) => {
+      const random = Math.floor(Math.random() * 16);
+      const value = char === "x" ? random : (random & 0x3) | 0x8;
+      return value.toString(16);
+    });
+  };
+
+  const getSessionId = () => {
+    try {
+      const existing = window.sessionStorage.getItem(SESSION_STORAGE_KEY);
+      if (existing) return existing;
+      const created = createUuid();
+      window.sessionStorage.setItem(SESSION_STORAGE_KEY, created);
+      return created;
+    } catch {
+      return createUuid();
+    }
+  };
+
+  const normalizePath = (value) => {
+    if (!value) return location.pathname;
+    return value.startsWith("/") ? value : `/${value}`;
+  };
+
+  const ingestRawEvent = async (eventName, props = {}) => {
+    if (!canIngestRawEvents || !eventName) return;
+
+    const state = props.state || parseStateFromPath();
+    const payload = {
+      event_name: eventName,
+      page_type: "regulations_state",
+      state: state || null,
+      city: props.city || null,
+      position: props.position || null,
+      page_path: normalizePath(props.path || location.pathname),
+      page_referrer: document.referrer || null,
+      session_id: getSessionId(),
+      user_id: null,
+      timestamp: new Date().toISOString(),
+    };
+
+    const sourceEventId = `${eventName}:${payload.session_id}:${Date.now()}:${Math.random().toString(36).slice(2, 10)}`;
+
+    const body = {
+      p_source_system: "web",
+      p_canonical_entity: "lead_event",
+      p_payload: payload,
+      p_source_event_id: sourceEventId,
+      p_occurred_at: payload.timestamp,
+      p_schema_version: "1.0.0",
+      p_metadata: {
+        state: payload.state,
+        city: payload.city,
+        position: payload.position,
+        path: payload.page_path,
+        page_type: payload.page_type,
+      },
+    };
+
+    try {
+      await fetch(`${supabaseUrl}/rest/v1/rpc/ingest_raw_event`, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          apikey: supabaseAnonKey,
+          authorization: `Bearer ${supabaseAnonKey}`,
+        },
+        body: JSON.stringify(body),
+        keepalive: true,
+      });
+    } catch {
+      // Swallow network errors to keep navigation and UX uninterrupted.
+    }
+  };
+
+  const trackRegulationsPageView = () => {
+    const win = window;
+    const state = parseStateFromPath();
+    if (!state) return;
+    if (win.__stdRegPageViewTrackedPath === location.pathname) return;
+    win.__stdRegPageViewTrackedPath = location.pathname;
+    void ingestRawEvent("page_view", {
+      state,
+      city: null,
+      position: "page",
+      path: location.pathname,
+    });
+  };
+
+  trackRegulationsPageView();
 
   const fallbackCopyText = (text) => {
     const textarea = document.createElement("textarea");
@@ -70,6 +177,12 @@
         state,
         city,
         position,
+      });
+      void ingestRawEvent(eventName, {
+        state,
+        city,
+        position,
+        path: location.pathname,
       });
     });
   }

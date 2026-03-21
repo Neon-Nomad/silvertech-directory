@@ -733,7 +733,11 @@ const breadcrumbSchema = {
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
 
-  <div class="container sl-page sl-state-page">
+  <div
+    class="container sl-page sl-state-page"
+    data-reg-supabase-url={import.meta.env.PUBLIC_SUPABASE_URL || import.meta.env.VITE_SUPABASE_URL || ''}
+    data-reg-supabase-anon-key={import.meta.env.PUBLIC_SUPABASE_ANON_KEY || import.meta.env.VITE_SUPABASE_ANON_KEY || ''}
+  >
     <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span>/</span>
