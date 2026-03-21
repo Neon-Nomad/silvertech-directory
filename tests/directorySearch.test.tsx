@@ -14,6 +14,9 @@ const {
   loadFacilityIndexWithOptionsMock,
   getLocationSuggestionsMock,
   getLocationMock,
+  fetchSavedFacilityIdsMock,
+  getQueuedFamilySaveFacilityIdsMock,
+  saveFacilityForCurrentUserMock,
 } = vi.hoisted(() => ({
   rpcMock: vi.fn(),
   fromMock: vi.fn(),
@@ -21,6 +24,9 @@ const {
   loadFacilityIndexWithOptionsMock: vi.fn(),
   getLocationSuggestionsMock: vi.fn(),
   getLocationMock: vi.fn(),
+  fetchSavedFacilityIdsMock: vi.fn(),
+  getQueuedFamilySaveFacilityIdsMock: vi.fn(),
+  saveFacilityForCurrentUserMock: vi.fn(),
 }));
 
 vi.mock('@/src/lib/supabase', () => ({
@@ -52,6 +58,12 @@ vi.mock('@/src/hooks/useGeolocation', () => ({
     loading: false,
     error: '',
   }),
+}));
+
+vi.mock('@/src/features/family/journey/client', () => ({
+  fetchSavedFacilityIds: (...args: unknown[]) => fetchSavedFacilityIdsMock(...args),
+  getQueuedFamilySaveFacilityIds: (...args: unknown[]) => getQueuedFamilySaveFacilityIdsMock(...args),
+  saveFacilityForCurrentUser: (...args: unknown[]) => saveFacilityForCurrentUserMock(...args),
 }));
 
 type FacilityRow = {
@@ -245,6 +257,9 @@ const renderSearch = (entry: string) =>
 describe('DirectorySearch', () => {
   beforeEach(() => {
     getLocationSuggestionsMock.mockReturnValue([]);
+    fetchSavedFacilityIdsMock.mockResolvedValue(new Set<string>());
+    getQueuedFamilySaveFacilityIdsMock.mockReturnValue(new Set<string>());
+    saveFacilityForCurrentUserMock.mockResolvedValue({ status: 'success' });
     loadFacilityIndexWithOptionsMock.mockResolvedValue([]);
     resolvePublicIdentitiesMock.mockImplementation(async (rows: FacilityRow[]) =>
       rows.map((row) => ({

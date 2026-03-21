@@ -1,5 +1,5 @@
-version: 1.0.0
-last_updated: 2026-02-15
+version: 1.1.0
+last_updated: 2026-03-21
 context: SilverTech Ingestion and API Foundation
 
 entities:
@@ -102,3 +102,71 @@ activation_analytics:
     - roi_module_viewed
     - premium_cta_clicked
     - premium_trial_started
+
+family_journey:
+  status_flow:
+    - researching
+    - touring
+    - shortlist
+    - selected
+    - moved_in
+  terminal_status:
+    - moved_in
+  branch_status:
+    - declined
+  allowed_transitions:
+    - from: researching
+      to:
+        - touring
+        - shortlist
+        - selected
+        - declined
+    - from: touring
+      to:
+        - shortlist
+        - selected
+        - declined
+    - from: shortlist
+      to:
+        - selected
+        - declined
+    - from: selected
+      to:
+        - moved_in
+        - declined
+    - from: declined
+      to:
+        - researching
+        - touring
+        - shortlist
+        - selected
+        - declined
+  resolver:
+    source: current_facility_status
+    order_by:
+      - user_id
+      - facility_id
+      - created_at DESC
+      - id DESC
+  event_tables:
+    - saved_facilities
+    - facility_status_history
+    - facility_notes
+    - tour_logs
+    - move_ins
+    - attribution
+  idempotency:
+    table: idempotency_keys
+    required_actions:
+      - save
+      - status
+      - move_in
+      - attribution
+    key_fields:
+      - user_id
+      - action_type
+      - idempotency_key
+  metrics_definitions:
+    save_rate_per_session: sessions_with_save / total_sessions
+    pct_to_touring: users_with_touring / users_with_save
+    pct_to_moved_in: users_with_move_in / users_with_save

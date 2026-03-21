@@ -23,6 +23,24 @@
   force = true
 
 [[redirects]]
+  from = "/manifesto"
+  to = "/about/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sign-in"
+  to = "/login"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/signin"
+  to = "/login"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/facility/*"
   to = "/410.html"
   status = 410

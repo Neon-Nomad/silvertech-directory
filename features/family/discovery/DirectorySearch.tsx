@@ -11,6 +11,12 @@ import { hasTypesense, typesenseClient } from '@/src/lib/typesense';
 import { NoResults } from '@/features/family/discovery/NoResults';
 import { useGeolocation } from '@/src/hooks/useGeolocation';
 import { buildFacilityDetailPath, getCareTypeRouteLabel } from '@/src/utils/facilityPath';
+import { useAuth } from '@/src/context/AuthProvider';
+import {
+  fetchSavedFacilityIds,
+  getQueuedFamilySaveFacilityIds,
+  saveFacilityForCurrentUser,
+} from '@/src/features/family/journey/client';
 
 type SearchFacilityResult = FacilityIndexItem & {
   owner_id?: string | null;
@@ -362,9 +368,16 @@ const ResultPill: React.FC<{ tone: keyof typeof pillStyles; children: React.Reac
   </span>
 );
 
-const SearchResultCard: React.FC<{ facility: EnrichedSearchFacilityResult; claimMode?: boolean }> = ({
+const SearchResultCard: React.FC<{
+  facility: EnrichedSearchFacilityResult;
+  claimMode?: boolean;
+  isSaved: boolean;
+  onSavedChange: (facilityId: string, nextSaved: boolean) => void;
+}> = ({
   facility,
   claimMode = false,
+  isSaved,
+  onSavedChange,
 }) => {
   const isSilverTechMember = Boolean(facility.owner_id);
   const communityPath = buildFacilityDetailPath({
@@ -378,6 +391,37 @@ const SearchResultCard: React.FC<{ facility: EnrichedSearchFacilityResult; claim
   const claimPath = isUuid(facility.id) ? `/claim/${facility.id}` : communityPath;
   const primaryPath = claimMode ? claimPath : communityPath;
   const primaryLabel = claimMode && isUuid(facility.id) ? 'Claim Listing' : 'View Community';
+  const [saveBusy, setSaveBusy] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const canSave = isUuid(facility.id);
+
+  const handleSave = async () => {
+    if (saveBusy || !canSave || isSaved) return;
+    setSaveBusy(true);
+    setSaveError(null);
+    onSavedChange(facility.id, true);
+
+    try {
+      const result = await saveFacilityForCurrentUser(facility.id, {
+        sourcePath: `${window.location.pathname}${window.location.search}`,
+      });
+
+      if (result.status === 'error') {
+        onSavedChange(facility.id, false);
+        setSaveError(result.message || 'Unable to save this facility.');
+      }
+
+      if (result.status === 'queued') {
+        const redirectTo = encodeURIComponent(window.location.pathname + window.location.search + window.location.hash);
+        window.location.assign(`/login?redirect_to=${redirectTo}`);
+      }
+    } catch {
+      onSavedChange(facility.id, false);
+      setSaveError('Unable to save this facility. Please try again.');
+    } finally {
+      setSaveBusy(false);
+    }
+  };
 
   return (
     <article className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md">
@@ -469,13 +513,26 @@ const SearchResultCard: React.FC<{ facility: EnrichedSearchFacilityResult; claim
           </div>
         </div>
 
-        <div className="flex items-center justify-center border-t border-slate-200 bg-warm-white p-6 lg:w-48 lg:border-l lg:border-t-0">
-          <Link
-            className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-charcoal px-4 py-4 text-center text-sm font-bold uppercase tracking-[0.26em] text-white transition-colors hover:bg-black"
-            to={primaryPath}
-          >
-            {primaryLabel}
-          </Link>
+        <div className="flex items-center justify-center border-t border-slate-200 bg-warm-white p-6 lg:w-56 lg:border-l lg:border-t-0">
+          <div className="w-full space-y-2">
+            {!claimMode && canSave && (
+              <button
+                type="button"
+                onClick={handleSave}
+                disabled={saveBusy || isSaved}
+                className="inline-flex min-h-11 w-full items-center justify-center rounded-md border border-slate-300 bg-white px-3 py-3 text-center text-xs font-bold uppercase tracking-[0.22em] text-charcoal transition-colors hover:border-charcoal disabled:opacity-60"
+              >
+                {saveBusy ? 'Saving…' : isSaved ? 'Saved' : 'Save'}
+              </button>
+            )}
+            <Link
+              className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-charcoal px-4 py-4 text-center text-sm font-bold uppercase tracking-[0.26em] text-white transition-colors hover:bg-black"
+              to={primaryPath}
+            >
+              {primaryLabel}
+            </Link>
+            {saveError && <p className="text-xs text-red-600">{saveError}</p>}
+          </div>
         </div>
       </div>
     </article>
@@ -484,10 +541,12 @@ const SearchResultCard: React.FC<{ facility: EnrichedSearchFacilityResult; claim
 
 const DirectorySearch: React.FC = () => {
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [searchParams] = useSearchParams();
   const { state: routeState } = useParams();
+  const queryParam = (searchParams.get('q') || '').trim();
   const claimMode = searchParams.get('claim') === '1';
-  const [location, setLocation] = useState(searchParams.get('location') || '');
+  const [location, setLocation] = useState(searchParams.get('location') || queryParam);
   const [nameQuery, setNameQuery] = useState(searchParams.get('name') || '');
   const [stateSlug, setStateSlug] = useState(routeState || searchParams.get('state') || '');
   const [error, setError] = useState('');
@@ -496,6 +555,7 @@ const DirectorySearch: React.FC = () => {
   const [results, setResults] = useState<EnrichedSearchFacilityResult[]>([]);
   const [resultsLoading, setResultsLoading] = useState(false);
   const [resultsError, setResultsError] = useState('');
+  const [savedFacilityIds, setSavedFacilityIds] = useState<Set<string>>(new Set());
   const [hasAutoSearched, setHasAutoSearched] = useState(false);
   const [geoLookupError, setGeoLookupError] = useState('');
   const [geoFallbackCity, setGeoFallbackCity] = useState('');
@@ -503,11 +563,44 @@ const DirectorySearch: React.FC = () => {
   const [lastSearch, setLastSearch] = useState<SearchSnapshot | null>(null);
   const { coordinates, nearestCity, getLocation, loading: geoLoading, error: geoError } = useGeolocation();
 
+  useEffect(() => {
+    let cancelled = false;
+
+    const queued = getQueuedFamilySaveFacilityIds();
+    setSavedFacilityIds(new Set(queued));
+
+    void (async () => {
+      if (!user) return;
+      try {
+        const savedFromDb = await fetchSavedFacilityIds();
+        if (cancelled) return;
+        const merged = new Set<string>(queued);
+        for (const id of savedFromDb) merged.add(id);
+        setSavedFacilityIds(merged);
+      } catch {
+        // Keep queued-only state if read fails.
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [user?.id]);
+
+  const handleSavedState = (facilityId: string, nextSaved: boolean) => {
+    setSavedFacilityIds((prev) => {
+      const next = new Set(prev);
+      if (nextSaved) next.add(facilityId);
+      else next.delete(facilityId);
+      return next;
+    });
+  };
+
   const stateOptions = useMemo(
     () => ALL_STATES.map((state) => ({ label: state.name, value: state.slug, abbr: state.abbreviation })),
     [],
   );
-  const seededStateFromUrl = Boolean(routeState || searchParams.get('state'));
+  const seededStateFromUrl = Boolean(routeState || searchParams.get('state') || queryParam);
   const selectedState = useMemo(
     () => ALL_STATES.find((state) => state.slug === (stateSlug || routeState || '')),
     [stateSlug, routeState],
@@ -571,7 +664,7 @@ const DirectorySearch: React.FC = () => {
       return;
     }
 
-    if (!resolvedStateSlug && !rawName && !zipMatch && !geoCity) {
+    if (!resolvedStateSlug && !rawLocation && !rawName && !zipMatch && !geoCity) {
       setError(`Please select a state or type a city followed by a state (e.g., "${locationExample.cityState}").`);
       return;
     }
@@ -597,6 +690,7 @@ const DirectorySearch: React.FC = () => {
     const nextParams = new URLSearchParams();
     if (rawLocation) {
       nextParams.set('location', rawLocation);
+      if (!rawName) nextParams.set('q', rawLocation);
     } else if (claimMode && geoCity) {
       nextParams.set('location', geoCity);
     }
@@ -1319,7 +1413,13 @@ const DirectorySearch: React.FC = () => {
           <>
             <section className="space-y-6">
               {primaryResults.map((facility) => (
-                <SearchResultCard key={facility.id} claimMode={claimMode} facility={facility} />
+                <SearchResultCard
+                  key={facility.id}
+                  claimMode={claimMode}
+                  facility={facility}
+                  isSaved={savedFacilityIds.has(facility.id)}
+                  onSavedChange={handleSavedState}
+                />
               ))}
             </section>
 
@@ -1343,7 +1443,12 @@ const DirectorySearch: React.FC = () => {
                     </div>
                     <div className="space-y-6">
                       {section.facilities.map((facility) => (
-                        <SearchResultCard key={facility.id} facility={facility} />
+                        <SearchResultCard
+                          key={facility.id}
+                          facility={facility}
+                          isSaved={savedFacilityIds.has(facility.id)}
+                          onSavedChange={handleSavedState}
+                        />
                       ))}
                     </div>
                   </div>

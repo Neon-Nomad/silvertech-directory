@@ -50,6 +50,7 @@ const NAV_CATEGORIES: NavCategory[] = [
 const ACCOUNT_CATEGORY: NavCategory = {
   label: 'Sign In',
   items: [
+    { label: 'Family Dashboard', href: '/family/dashboard' },
     { label: 'Family Sign In', href: '/login' },
     { label: 'Facility Sign In', href: '/operator/login' },
   ],

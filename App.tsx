@@ -12,8 +12,10 @@ import { dashboardPathForTab, normalizeDashboardTab } from '@/src/utils/dashboar
 import { reportFrontendError } from '@/src/monitoring/reportError';
 import { isCareTypeRouteSlug } from '@/src/utils/facilityPath';
 import { LegacyRouteRetired } from '@/components/ui/LegacyRouteRetired';
+import { ALL_STATES } from '@/src/data/states';
 
 const DirectorySearch = lazy(() => import('@/features/family/discovery/DirectorySearch'));
+const FamilyDashboard = lazy(() => import('@/features/family/dashboard/FamilyDashboard'));
 const OperatorDashboard = lazy(() => import('@/features/operator/dashboard/OperatorDashboard'));
 const OperatorLogin = lazy(() => import('@/features/auth/OperatorLogin'));
 const OperatorSignUp = lazy(() => import('@/features/auth/OperatorSignUp'));
@@ -165,8 +167,33 @@ const LegacyDashboardEditRedirect: React.FC = () => {
   return <Navigate to={`/dashboard/facility/${id}/edit`} replace />;
 };
 
+const FamilyDashboardRouteGate: React.FC = () => {
+  const location = useLocation();
+  const { user, loading, isOperator } = useAuth();
+
+  if (loading) {
+    return (
+      <div className="min-h-[60vh] flex items-center justify-center">
+        <div className="h-10 w-10 rounded-full border-2 border-slate-300 border-t-slate-700 animate-spin" />
+      </div>
+    );
+  }
+
+  if (!user) {
+    const redirectTo = `${location.pathname}${location.search}`;
+    return <Navigate to={`/login?redirect_to=${encodeURIComponent(redirectTo)}`} replace />;
+  }
+
+  if (isOperator) {
+    return <Navigate to="/dashboard" replace />;
+  }
+
+  return <FamilyDashboard />;
+};
+
 const ASTRO_HANDOFF_GUARD_KEY = '__astro_handoff_guard__';
 const ASTRO_HANDOFF_GUARD_MS = 15000;
+const STATE_SLUGS = new Set(ALL_STATES.map((state) => state.slug));
 
 const isRecentAstroHandoff = (routeKey: string): boolean => {
   try {
@@ -196,10 +223,17 @@ const markAstroHandoff = (routeKey: string): void => {
 // reload so Netlify serves the pre-rendered Astro static page instead.
 // Use assign() not replace() so the browser back button returns to the previous page.
 const AstroRoute: React.FC = () => {
+  const location = useLocation();
   const { careType } = useParams<{ careType?: string }>();
   const [handoffFailed, setHandoffFailed] = React.useState(false);
 
-  if (!isCareTypeRouteSlug(careType)) return <NotFound />;
+  const routeSlug = (careType || '').toLowerCase();
+
+  if (STATE_SLUGS.has(routeSlug)) {
+    return <Navigate to={`/states/${routeSlug}${location.search}`} replace />;
+  }
+
+  if (!isCareTypeRouteSlug(routeSlug)) return <NotFound />;
 
   React.useEffect(() => {
     const routeKey = `${window.location.pathname}${window.location.search}`;
@@ -312,12 +346,15 @@ function App() {
                   <Suspense fallback={routeFallback}>
                     <Routes>
                       <Route path="/" element={<Home />} />
-                      <Route path="/search" element={<DirectorySearch />} />
-                      <Route path="/community/:communityId" element={<LegacyRouteRetired />} />
+                    <Route path="/search" element={<DirectorySearch />} />
+                    <Route path="/family/dashboard" element={<FamilyDashboardRouteGate />} />
+                    <Route path="/community/:communityId" element={<LegacyRouteRetired />} />
                       <Route path="/facility/:id" element={<LegacyRouteRetired />} />
 
                     {/* Auth Routes */}
                     <Route path="/login" element={<LoginPage />} />
+                    <Route path="/sign-in" element={<Navigate to="/login" replace />} />
+                    <Route path="/signin" element={<Navigate to="/login" replace />} />
                     <Route path="/signup" element={<SignUpPage />} />
 
                     {/* Operator Routes */}
@@ -347,6 +384,7 @@ function App() {
 
                     {/* Company & Resources */}
                     <Route path="/about" element={<AstroStaticRoute />} />
+                    <Route path="/manifesto" element={<Navigate to="/about" replace />} />
                     <Route path="/badges" element={<AstroStaticRoute />} />
                     <Route path="/why-this-exists" element={<AstroStaticRoute />} />
                     <Route path="/contact" element={<ContactPage />} />

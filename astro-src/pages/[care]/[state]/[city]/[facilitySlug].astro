@@ -4,6 +4,7 @@ import FacilityClaimedProfile from '../../../../components/senior/FacilityClaime
 import FacilityMapPin from '../../../../components/senior/FacilityMapPin';
 import FacilityQASection from '../../../../components/senior/FacilityQASection';
 import TourScheduler from '../../../../components/senior/TourScheduler';
+import FamilyJourneyActions from '../../../../components/senior/FamilyJourneyActions';
 import {
   getFacilityBySlug,
   getFacilityStaticPaths,
@@ -236,6 +237,14 @@ const breadcrumbSchema = {
               </a>
             )}
           </div>
+
+          {facility.id && (
+            <FamilyJourneyActions
+              client:visible
+              facilityId={facility.id}
+              facilityName={displayName}
+            />
+          )}
         </div>
 
         <!-- ---- Quality Signals (dark metrics card) ---- -->
@@ -470,7 +479,7 @@ const breadcrumbSchema = {
             </div>
 
             <FacilityMapPin
-              client:visible
+              client:load
               lat={facility.latitude!}
               lng={facility.longitude!}
               name={displayName}
@@ -517,7 +526,7 @@ const breadcrumbSchema = {
 
           {facility.id ? (
             <FacilityQASection
-              client:visible
+              client:load
               facilityId={facility.id}
               facilityName={displayName}
             />
@@ -602,3 +611,4 @@ const breadcrumbSchema = {
   </div>
 
 </Base>
+
