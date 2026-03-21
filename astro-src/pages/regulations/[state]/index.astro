@@ -18,6 +18,11 @@ type RegulationPayload = {
   };
 };
 
+type InsightSource = { label: string; url: string };
+type InsightItem = { title: string; copy: string; sources: InsightSource[] };
+type QuickFactItem = { heading: string; value: string; sourceUrl?: string };
+type FamiliesMissItem = { title: string; copy: string };
+
 export async function getStaticPaths() {
   return ALL_STATES.map((state) => ({ params: { state: state.slug } }));
 }
@@ -171,6 +176,87 @@ const mdToHtml = (md: string): string => {
   return result.join('\n');
 };
 
+const normalizeText = (value: string): string => value.replace(/\s+/g, ' ').trim();
+
+const markdownToPlainText = (md: string): string =>
+  normalizeText(
+    md
+      .replace(/```[\s\S]*?```/g, ' ')
+      .replace(/`[^`]*`/g, ' ')
+      .replace(/!\[[^\]]*]\([^)]*\)/g, ' ')
+      .replace(/\[[^\]]*]\(([^)]*)\)/g, ' $1 ')
+      .replace(/[#>*_~|]/g, ' ')
+      .replace(/-{3,}/g, ' ')
+      .replace(/\n/g, ' '),
+  );
+
+const cleanUrl = (url: string): string => url.replace(/[\])},.;:]+$/g, '');
+
+const extractUrls = (md: string, limit = 4): string[] => {
+  const matches = md.match(/https?:\/\/[^\s)]+/g) || [];
+  const unique: string[] = [];
+  for (const raw of matches) {
+    const cleaned = cleanUrl(raw);
+    if (!cleaned || unique.includes(cleaned)) continue;
+    unique.push(cleaned);
+    if (unique.length >= limit) break;
+  }
+  return unique;
+};
+
+const extractPhones = (md: string, limit = 3): string[] => {
+  const matches = md.match(/(?:\+1[\s.-]?)?(?:\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\d{4}/g) || [];
+  const unique: string[] = [];
+  for (const phone of matches) {
+    const normalized = normalizeText(phone);
+    if (unique.includes(normalized)) continue;
+    unique.push(normalized);
+    if (unique.length >= limit) break;
+  }
+  return unique;
+};
+
+const extractBoldTerms = (md: string, limit = 10): string[] => {
+  const regex = /\*\*([^*]{2,120})\*\*/g;
+  const out: string[] = [];
+  let match: RegExpExecArray | null = regex.exec(md);
+  while (match) {
+    const term = normalizeText(match[1]);
+    if (term && !out.includes(term)) out.push(term);
+    if (out.length >= limit) break;
+    match = regex.exec(md);
+  }
+  return out;
+};
+
+const pickFirstSentence = (md: string, fallback: string): string => {
+  const plain = markdownToPlainText(md);
+  if (!plain) return fallback;
+  const sentence = plain.match(/[^.!?]+[.!?]/)?.[0]?.trim() || plain;
+  return sentence.length > 220 ? `${sentence.slice(0, 217).trim()}...` : sentence;
+};
+
+const findAgencyName = (md: string, fallback: string): string => {
+  const boldTerms = extractBoldTerms(md, 16);
+  const agencyTerm =
+    boldTerms.find((term) =>
+      /(department|agency|administration|ombudsman|office|division|health|services|medicaid|licensing)/i.test(term),
+    ) || '';
+  if (agencyTerm) return agencyTerm;
+
+  const heading = md.match(/^#+\s+(.+)$/m)?.[1];
+  if (heading) return normalizeText(heading);
+  return fallback;
+};
+
+const findProgramTerms = (md: string, limit = 2): string[] => {
+  const boldTerms = extractBoldTerms(md, 20);
+  const programs = boldTerms.filter((term) =>
+    /(waiver|program|pathways|medi-?cal|medicaid|services|benefit|plan)/i.test(term),
+  );
+  return programs.slice(0, limit);
+};
+
 const SECTIONS = [
   { key: 'licensing_content' as const, label: 'Licensing & Oversight', slug: 'licensing', kicker: 'State Authority' },
   { key: 'medicaid_content' as const, label: 'Medicaid & Long-Term Care Programs', slug: 'medicaid', kicker: 'Public Benefits' },
@@ -189,8 +275,10 @@ const title = `${stateMeta.name} Senior Care Regulations | Licensing, Medicaid &
 const description = `Complete ${stateMeta.name} senior care regulatory guide: licensing authority, Medicaid programs, ombudsman contacts, complaint process, and veterans benefits for assisted living and nursing homes.`;
 const canonical = `https://silvertechdirectory.com/regulations/${stateMeta.slug}/`;
 const isDistrictOfColumbia = stateMeta.slug === 'district-of-columbia';
+const hasInsightLayer = activeSections.length > 0;
+const insightHeadingId = isDistrictOfColumbia ? 'dc-insights-heading' : 'state-insights-heading';
 const jumpLinks: Array<{ label: string; slug: string; kind: 'section' | 'anchor' }> = [
-  ...(isDistrictOfColumbia ? [{ label: 'Executive Insights', slug: 'dc-insights-heading', kind: 'anchor' as const }] : []),
+  ...(hasInsightLayer ? [{ label: 'Executive Insights', slug: insightHeadingId, kind: 'anchor' as const }] : []),
   ...activeSections.map((s) => ({ label: s.label, slug: s.slug, kind: 'section' as const })),
   { label: 'Official Contacts', slug: 'regulatory-contacts', kind: 'anchor' },
 ];
@@ -199,13 +287,124 @@ const regulatoryAsOf = fs.existsSync(regulationFilePath)
   : new Date();
 const regulatoryVersion = `v${regulatoryAsOf.getUTCFullYear()}.${String(regulatoryAsOf.getUTCMonth() + 1).padStart(2, '0')}`;
 const regulatorySnapshotId = `snapshot-${regulatoryVersion.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}`;
-const dcCitationPermalink = `${canonical}#${regulatorySnapshotId}`;
+const citationPermalink = `${canonical}#${regulatorySnapshotId}`;
 const asOfLabel = regulatoryAsOf.toLocaleDateString('en-US', {
   year: 'numeric',
   month: 'short',
   day: 'numeric',
 });
-const dcCitationText = `SilverTech Directory (${regulatoryAsOf.getUTCFullYear()}). District of Columbia Senior Care Regulatory Landscape (${regulatoryVersion}; data as of ${asOfLabel}). Retrieved from ${dcCitationPermalink}`;
+const citationText = `SilverTech Directory (${regulatoryAsOf.getUTCFullYear()}). ${stateMeta.name} Senior Care Regulatory Landscape (${regulatoryVersion}; data as of ${asOfLabel}). Retrieved from ${citationPermalink}`;
+
+const resolveContact = (kind: keyof NonNullable<RegulationPayload['contacts_json']>) =>
+  payload.contacts_json?.[kind] || {};
+
+const licensingMd = payload.licensing_content || '';
+const medicaidMd = payload.medicaid_content || '';
+const ombudsmanMd = payload.ombudsman_content || '';
+const complaintsMd = payload.complaints_content || '';
+
+const licensingAgency = normalizeText(resolveContact('licensing').name || '') || findAgencyName(licensingMd, `${stateMeta.name} licensing authority`);
+const ombudsmanAgency = normalizeText(resolveContact('ombudsman').name || '') || findAgencyName(ombudsmanMd, `${stateMeta.name} long-term care ombudsman`);
+const medicaidAgency = normalizeText(resolveContact('medicaid').name || '') || findAgencyName(medicaidMd, `${stateMeta.name} Medicaid office`);
+
+const licensingPhone = normalizeText(resolveContact('licensing').phone || '') || extractPhones(licensingMd, 1)[0] || '';
+const ombudsmanPhone = normalizeText(resolveContact('ombudsman').phone || '') || extractPhones(ombudsmanMd, 1)[0] || '';
+const medicaidPhone = normalizeText(resolveContact('medicaid').phone || '') || extractPhones(medicaidMd, 1)[0] || '';
+const complaintPhone =
+  normalizeText(resolveContact('elderAbuse').phone || '') ||
+  extractPhones(complaintsMd, 1)[0] ||
+  extractPhones(licensingMd, 1)[0] ||
+  '';
+
+const licensingSourceUrl = normalizeText(resolveContact('licensing').website || '') || extractUrls(licensingMd, 1)[0];
+const ombudsmanSourceUrl = normalizeText(resolveContact('ombudsman').website || '') || extractUrls(ombudsmanMd, 1)[0];
+const medicaidSourceUrl = normalizeText(resolveContact('medicaid').website || '') || extractUrls(medicaidMd, 1)[0];
+const complaintSourceUrl =
+  normalizeText(resolveContact('elderAbuse').website || '') ||
+  extractUrls(complaintsMd, 1)[0] ||
+  licensingSourceUrl;
+
+const medicaidPrograms = findProgramTerms(medicaidMd, 2);
+const topProgramLabel = medicaidPrograms[0] || `${stateMeta.name} Medicaid long-term care pathways`;
+
+const nonDcInsightItems: InsightItem[] = [
+  {
+    title: `${stateMeta.name} oversight spans regulation and advocacy lanes`,
+    copy: `${licensingAgency} handles licensing and oversight actions, while ${ombudsmanAgency} supports resident advocacy and escalation support.`,
+    sources: [
+      ...(licensingSourceUrl ? [{ label: 'Licensing authority', url: licensingSourceUrl }] : []),
+      ...(ombudsmanSourceUrl ? [{ label: 'Ombudsman program', url: ombudsmanSourceUrl }] : []),
+    ],
+  },
+  {
+    title: `Long-term care eligibility is driven by ${topProgramLabel}`,
+    copy: pickFirstSentence(
+      medicaidMd,
+      `${stateMeta.name} Medicaid eligibility and program structure determine whether families can use home and community-based options or institutional care.`,
+    ),
+    sources: [
+      ...(medicaidSourceUrl ? [{ label: 'Medicaid program source', url: medicaidSourceUrl }] : []),
+      ...extractUrls(medicaidMd, 2)
+        .filter((url) => url !== medicaidSourceUrl)
+        .map((url, idx) => ({ label: `Program reference ${idx + 1}`, url })),
+    ],
+  },
+  {
+    title: 'Complaint outcomes depend on using the correct channel',
+    copy: pickFirstSentence(
+      complaintsMd,
+      `In ${stateMeta.name}, safety and compliance complaints move through state intake channels, while ombudsman teams help with resident-rights navigation and follow-up.`,
+    ),
+    sources: [
+      ...(complaintSourceUrl ? [{ label: 'Complaint channel', url: complaintSourceUrl }] : []),
+      ...extractUrls(complaintsMd, 2)
+        .filter((url) => url !== complaintSourceUrl)
+        .map((url, idx) => ({ label: `Complaint reference ${idx + 1}`, url })),
+    ],
+  },
+];
+
+const nonDcQuickFacts: QuickFactItem[] = [
+  {
+    heading: 'Licensing Authority',
+    value: licensingAgency,
+    sourceUrl: licensingSourceUrl,
+  },
+  {
+    heading: 'Regulatory Complaint Line',
+    value: complaintPhone || 'See Filing a Complaint section',
+    sourceUrl: complaintSourceUrl,
+  },
+  {
+    heading: 'Ombudsman Contact',
+    value: ombudsmanPhone || ombudsmanAgency,
+    sourceUrl: ombudsmanSourceUrl,
+  },
+  {
+    heading: 'Medicaid LTC Contact',
+    value: medicaidPhone || medicaidAgency,
+    sourceUrl: medicaidSourceUrl,
+  },
+];
+
+const nonDcFamiliesMiss: FamiliesMissItem[] = [
+  {
+    title: 'Advocacy and enforcement are not the same process',
+    copy: `${ombudsmanAgency} can advocate and escalate concerns, but licensing actions are issued through ${licensingAgency} and state complaint investigators.`,
+  },
+  {
+    title: 'Program names do not guarantee identical coverage',
+    copy: `${stateMeta.name} long-term care pathways such as ${topProgramLabel} can differ on covered services, room-and-board treatment, and eligibility gates.`,
+  },
+  {
+    title: 'Use both inspection records and complaint history',
+    copy: `Inspection outcomes and complaint findings capture different risk signals. Review both before tours and before final placement decisions in ${stateMeta.name}.`,
+  },
+  {
+    title: 'Document contacts before urgent decisions',
+    copy: `Keep licensing, complaint, and ombudsman contacts available during tours so concerns can be escalated quickly with written timelines and follow-up.`,
+  },
+];
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -373,11 +572,87 @@ const breadcrumbSchema = {
               Use this standard citation format for reporting, policy analysis, and research references.
             </p>
             <p class="sl-cite-copy">
-              Permalink: <a href={dcCitationPermalink}>{dcCitationPermalink}</a>
+              Permalink: <a href={citationPermalink}>{citationPermalink}</a>
             </p>
-            <code class="sl-cite-code" id="dc-citation-text">{dcCitationText}</code>
+            <code class="sl-cite-code" id="dc-citation-text">{citationText}</code>
           </div>
-          <button type="button" class="sl-cite-button" data-copy-citation={dcCitationText} data-default-label="Copy Full Citation">
+          <button type="button" class="sl-cite-button" data-copy-citation={citationText} data-default-label="Copy Full Citation">
+            Copy Full Citation
+          </button>
+        </div>
+      </section>
+    )}
+
+    {!isDistrictOfColumbia && hasInsightLayer && (
+      <section class="sl-insight-layer" aria-labelledby="state-insights-heading">
+        <div class="sl-insight-card">
+          <div class="sl-insight-head">
+            <p class="sl-insight-kicker">Regulatory Analysis Hub</p>
+            <h2 id="state-insights-heading">Executive Insights and Key Takeaways</h2>
+            <p class="sl-insight-meta">SilverTech interpretation. As of {asOfLabel} ({regulatoryVersion}).</p>
+          </div>
+          <ol class="sl-insight-list">
+            {nonDcInsightItems.map((item) => (
+              <li>
+                <h3>{item.title}</h3>
+                <p>{item.copy}</p>
+                {item.sources.length > 0 && (
+                  <p class="sl-insight-source">
+                    Sources:
+                    {item.sources.map((source, index) => (
+                      <span>
+                        {index > 0 ? ', ' : ' '}
+                        <a href={source.url} target="_blank" rel="noopener noreferrer nofollow">{source.label}</a>
+                      </span>
+                    ))}
+                  </p>
+                )}
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        <div class="sl-quick-facts" aria-label={`${stateMeta.name} quick facts`}>
+          <p class="sl-quick-facts-label">Quick Facts Snapshot (As of {asOfLabel})</p>
+          <div class="sl-quick-facts-grid">
+            {nonDcQuickFacts.map((fact) => (
+              <article class="sl-quick-fact-card">
+                <p class="sl-quick-fact-heading">{fact.heading}</p>
+                <p class="sl-quick-fact-value">{fact.value}</p>
+                {fact.sourceUrl ? (
+                  <a href={fact.sourceUrl} target="_blank" rel="noopener noreferrer nofollow">Source</a>
+                ) : (
+                  <span class="sl-quick-fact-source">Source in section</span>
+                )}
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div class="sl-families-miss" aria-labelledby="state-families-miss-heading">
+          <h2 id="state-families-miss-heading">What Families Often Miss</h2>
+          <div class="sl-families-miss-grid">
+            {nonDcFamiliesMiss.map((item) => (
+              <article>
+                <h3>{item.title}</h3>
+                <p>{item.copy}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div class="sl-cite-box" id={regulatorySnapshotId}>
+          <div>
+            <p class="sl-cite-kicker">Cite This Research</p>
+            <p class="sl-cite-copy">
+              Use this standard citation format for reporting, policy analysis, and research references.
+            </p>
+            <p class="sl-cite-copy">
+              Permalink: <a href={citationPermalink}>{citationPermalink}</a>
+            </p>
+            <code class="sl-cite-code" id="state-citation-text">{citationText}</code>
+          </div>
+          <button type="button" class="sl-cite-button" data-copy-citation={citationText} data-default-label="Copy Full Citation">
             Copy Full Citation
           </button>
         </div>
@@ -608,6 +883,7 @@ const breadcrumbSchema = {
 }
 
 #dc-insights-heading,
+#state-insights-heading,
 #regulatory-contacts {
   scroll-margin-top: 7rem;
 }
@@ -758,6 +1034,11 @@ const breadcrumbSchema = {
 .sl-quick-fact-card a {
   font-size: 0.8rem;
   color: #174d8a;
+}
+
+.sl-quick-fact-source {
+  font-size: 0.8rem;
+  color: #5f6f84;
 }
 
 .sl-families-miss {
