@@ -70,6 +70,29 @@ const MOBILE_ACTIONS: NavCategory[] = [
 
 const MANIFESTO_HREF = '/about';
 
+const ASTRO_OWNED_PREFIXES = [
+  '/about',
+  '/badges',
+  '/why-this-exists',
+  '/states',
+  '/regulations',
+  '/assisted-living',
+  '/memory-care',
+  '/nursing-homes',
+  '/independent-living',
+  '/residential-care',
+  '/adult-day-services',
+  '/ccrc',
+];
+
+const shouldReloadDocument = (href: string): boolean => {
+  if (!href || !href.startsWith('/')) return false;
+  const normalizedPath = href.split('?')[0].replace(/\/+$/, '') || '/';
+  return ASTRO_OWNED_PREFIXES.some(
+    (prefix) => normalizedPath === prefix || normalizedPath.startsWith(`${prefix}/`),
+  );
+};
+
 const NavDropdown: React.FC<{
   category: NavCategory;
   isOpen: boolean;
@@ -80,6 +103,7 @@ const NavDropdown: React.FC<{
     return (
       <Link
         to={category.href}
+        reloadDocument={shouldReloadDocument(category.href)}
         className="text-sm font-medium text-charcoal hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
       >
         {category.label}
@@ -136,6 +160,7 @@ const NavDropdown: React.FC<{
             <Link
               key={item.label}
               to={item.href}
+              reloadDocument={shouldReloadDocument(item.href)}
               onClick={onClose}
               className="block px-4 py-2.5 text-sm text-charcoal/70 hover:text-charcoal hover:bg-warm-gray transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1"
             >
@@ -156,6 +181,7 @@ const MobileNavSection: React.FC<{
     return (
       <Link
         to={category.href}
+        reloadDocument={shouldReloadDocument(category.href)}
         onClick={onClose}
         className="block py-1.5 text-sm font-semibold text-charcoal hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
       >
@@ -184,6 +210,7 @@ const MobileNavSection: React.FC<{
             <Link
               key={item.label}
               to={item.href}
+              reloadDocument={shouldReloadDocument(item.href)}
               onClick={onClose}
               className="block py-1.5 text-sm text-charcoal/70 hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
             >
@@ -235,6 +262,7 @@ const Navbar: React.FC = () => {
             ))}
             <Link
               to={MANIFESTO_HREF}
+              reloadDocument={shouldReloadDocument(MANIFESTO_HREF)}
               className="inline-flex items-center rounded-full border border-amber-300 bg-amber-50 px-4 py-1.5 text-sm font-extrabold uppercase tracking-wide text-amber-900 hover:bg-amber-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2"
             >
               Manifesto
@@ -289,6 +317,7 @@ const Navbar: React.FC = () => {
           <div id="mobile-nav-panel" className="lg:hidden border-t border-warm-gray py-4 space-y-4">
             <Link
               to={MANIFESTO_HREF}
+              reloadDocument={shouldReloadDocument(MANIFESTO_HREF)}
               onClick={() => setOpenCategory(null)}
               className="inline-flex items-center rounded-full border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-extrabold uppercase tracking-wide text-amber-900 hover:bg-amber-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1"
             >

@@ -168,6 +168,8 @@ type SeniorLivingStore = {
   states: StateSummary[];
   stateBySlug: Map<string, StateSummary>;
   cityByKey: Map<string, CitySummary>;
+  facilityByRouteKey: Map<string, FacilityRecord>;
+  facilitiesByPublicSlug: Map<string, FacilityRecord[]>;
 };
 
 const CARE_TYPES: CareTypeDefinition[] = [
@@ -529,14 +531,28 @@ const ensureStore = (): SeniorLivingStore => {
       );
       warnedMissingCsv = true;
     }
-    storeCache = { facilities: [], states: [], stateBySlug: new Map(), cityByKey: new Map() };
+    storeCache = {
+      facilities: [],
+      states: [],
+      stateBySlug: new Map(),
+      cityByKey: new Map(),
+      facilityByRouteKey: new Map(),
+      facilitiesByPublicSlug: new Map(),
+    };
     return storeCache;
   }
 
   const rawCsv = fs.readFileSync(csvPath, 'utf-8');
   const lines = rawCsv.split(/\r?\n/).filter((line) => line.trim().length > 0);
   if (lines.length <= 1) {
-    storeCache = { facilities: [], states: [], stateBySlug: new Map(), cityByKey: new Map() };
+    storeCache = {
+      facilities: [],
+      states: [],
+      stateBySlug: new Map(),
+      cityByKey: new Map(),
+      facilityByRouteKey: new Map(),
+      facilitiesByPublicSlug: new Map(),
+    };
     return storeCache;
   }
 
@@ -669,13 +685,15 @@ const ensureStore = (): SeniorLivingStore => {
     });
 
     const publicSlug = (enriched?.public_slug || slugify(facilityBase.name) || 'facility').toLowerCase();
-    const sitemapPublicRouteId = resolveSitemapPublicRouteId(
-      careTypes,
-      facilityBase.stateSlug,
-      facilityBase.citySlug,
-      publicSlug,
-    );
     const enrichedPublicRouteId = Number(enriched?.public_route_id) || 0;
+    const sitemapPublicRouteId = enrichedPublicRouteId
+      ? 0
+      : resolveSitemapPublicRouteId(
+          careTypes,
+          facilityBase.stateSlug,
+          facilityBase.citySlug,
+          publicSlug,
+        );
     const hasProfile = !!(sitemapPublicRouteId || enrichedPublicRouteId);
     const publicRouteId =
       sitemapPublicRouteId ||
@@ -830,11 +848,25 @@ const ensureStore = (): SeniorLivingStore => {
     }
   }
 
+  const facilityByRouteKey = new Map<string, FacilityRecord>();
+  const facilitiesByPublicSlug = new Map<string, FacilityRecord[]>();
+  for (const facility of facilities) {
+    facilityByRouteKey.set(`${facility.publicSlug}-${facility.publicRouteId}`, facility);
+    const bucket = facilitiesByPublicSlug.get(facility.publicSlug);
+    if (bucket) {
+      bucket.push(facility);
+    } else {
+      facilitiesByPublicSlug.set(facility.publicSlug, [facility]);
+    }
+  }
+
   storeCache = {
     facilities,
     states,
     stateBySlug: new Map(states.map((state) => [state.stateSlug, state])),
     cityByKey,
+    facilityByRouteKey,
+    facilitiesByPublicSlug,
   };
   return storeCache;
 };
@@ -881,23 +913,32 @@ export const getFacilityBySlug = (
     city?: string;
   },
 ): FacilityRecord | null => {
-  const allFacilities = ensureStore().facilities;
+  const store = ensureStore();
   const match = facilitySlug.match(/^(.*)-(\d+)$/);
 
   if (!match) {
-    const direct = allFacilities.find((f) => f.publicSlug === facilitySlug.toLowerCase());
-    return direct || null;
+    const directCandidates = store.facilitiesByPublicSlug.get(facilitySlug.toLowerCase()) || [];
+    if (directCandidates.length === 0) return null;
+    if (!context) return directCandidates[0];
+    const scopedDirect = directCandidates.find((f) => {
+      if (context.state && f.stateSlug !== context.state) return false;
+      if (context.city && f.citySlug !== context.city) return false;
+      if (context.care && !(f.primaryCareType === context.care || f.careTypes.includes(context.care as CareTypeSlug))) {
+        return false;
+      }
+      return true;
+    });
+    return scopedDirect || directCandidates[0] || null;
   }
 
   const publicRouteId = Number(match[2]);
   const publicSlug = match[1].toLowerCase();
+  const routeKey = `${publicSlug}-${publicRouteId}`;
 
-  const exact = allFacilities.find(
-    (f) => f.publicRouteId === publicRouteId && f.publicSlug === publicSlug,
-  );
+  const exact = store.facilityByRouteKey.get(routeKey);
   if (exact) return exact;
 
-  let candidates = allFacilities.filter((f) => f.publicSlug === publicSlug);
+  let candidates = store.facilitiesByPublicSlug.get(publicSlug) || [];
   if (context?.state) candidates = candidates.filter((f) => f.stateSlug === context.state);
   if (context?.city) candidates = candidates.filter((f) => f.citySlug === context.city);
   if (context?.care) {
