@@ -491,6 +491,7 @@ const majorCityLinks = assistedLivingCities.slice(0, majorCityCount).map((city) 
   href: `/assisted-living/${stateMeta.slug}/${city.citySlug}/`,
   assistedCount: city.careTypeCounts['assisted-living'],
 }));
+const heroCityLinks = majorCityLinks.slice(0, Math.min(majorCityLinks.length, 6));
 const midCityLinks = majorCityLinks.slice(0, Math.min(majorCityLinks.length, 8));
 const sectionCityLinks = majorCityLinks.slice(0, 1);
 const footerCityLinks = majorCityLinks.slice(0, 4);
@@ -778,6 +779,40 @@ const breadcrumbSchema = {
         </div>
       </div>
     </section>
+
+    {heroCityLinks.length > 0 && (
+      <section class="sl-reg-graph-links" aria-labelledby="sl-hero-cities-heading">
+        <div class="sl-reg-graph-intro">
+          <h2 id="sl-hero-cities-heading">Cities Covered Under These Regulations</h2>
+          <p>Open high-demand city hubs, then move directly into facility pages with verified records.</p>
+        </div>
+        <div class="sl-reg-graph-city-grid">
+          {heroCityLinks.map((city) => (
+            <a
+              class="sl-reg-graph-city-link"
+              href={city.href}
+              data-reg-track="reg_to_city"
+              data-reg-position="hero"
+              data-reg-state={stateMeta.slug}
+              data-reg-city={city.cityName}
+            >
+              <span>assisted living in {city.cityName}</span>
+              <small>{city.assistedCount.toLocaleString()} listings</small>
+            </a>
+          ))}
+        </div>
+        <a
+          class="sl-reg-mid-cta"
+          href={stateDirectoryHref}
+          data-reg-track="reg_to_state"
+          data-reg-position="hero"
+          data-reg-state={stateMeta.slug}
+          data-reg-city=""
+        >
+          {stateDirectoryCtaLabel}
+        </a>
+      </section>
+    )}
 
     {isDistrictOfColumbia && (
       <section class="sl-insight-layer" aria-labelledby="dc-insights-heading">

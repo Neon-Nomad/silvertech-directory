@@ -150,6 +150,7 @@ const activeCities = stateData.cities
   .sort((a, b) => b.careTypeCounts[careType.slug] - a.careTypeCounts[careType.slug] || a.cityName.localeCompare(b.cityName));
 const featuredCities = activeCities.slice(0, 4);
 const additionalCities = activeCities.slice(4);
+const heroCityLinks = activeCities.slice(0, Math.min(activeCities.length, 6));
 
 const licensedCount = scopedFacilities.filter((facility) => Boolean(facility.licenseNumber)).length;
 const websiteCount = scopedFacilities.filter((facility) => Boolean(facility.websiteUrl)).length;
@@ -421,6 +422,26 @@ const faqSchema = {
         </div>
       </div>
     </section>
+
+    {heroCityLinks.length > 0 && (
+      <section class="sl-state-section">
+        <div class="sl-state-section-head sl-state-section-head--split">
+          <div>
+            <p class="sl-state-section-kicker">Fast State Navigation</p>
+            <h2>Top {h1CareLabel.toLowerCase()} city hubs in {stateData.stateName}</h2>
+          </div>
+          <a class="sl-state-section-link" href="#state-top-hubs">View all city hubs</a>
+        </div>
+        <div class="sl-state-market-grid">
+          {heroCityLinks.map((city) => (
+            <a class="sl-state-market-link" href={`/${careType.slug}/${stateData.stateSlug}/${city.citySlug}/`}>
+              <strong>{toDisplayName(city.cityName)}</strong>
+              <span>{city.careTypeCounts[careType.slug].toLocaleString()} {city.careTypeCounts[careType.slug] === 1 ? careUnitSingular : careUnitPlural}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
 
     <section class="sl-state-stats" aria-label="Statewide care stats">
       <article class="sl-state-stat">

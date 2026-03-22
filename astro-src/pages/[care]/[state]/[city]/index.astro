@@ -230,6 +230,7 @@ const peerCompareCities = (stateDirectoryData?.cities || [])
     careCount: entry.careTypeCounts[careType.slug] || 0,
     href: `/${careType.slug}/${cityData.stateSlug}/${entry.citySlug}/`,
   }));
+const heroCompareCities = peerCompareCities.slice(0, Math.min(peerCompareCities.length, 3));
 const careInventoryLabel = `${facilities.length.toLocaleString()} ${facilities.length === 1 ? careUnitSingular : careUnitPlural}`;
 const listingsHeadingLabel =
   careType.slug === 'ccrc' || careType.slug === 'nursing-homes' ? h1CareLabel : `${careType.label} communities`;
@@ -567,6 +568,32 @@ const crossCareLinks = allCareTypes
           <a class="sl-btn sl-btn-primary" href="#listings">Browse {facilities.length.toLocaleString()} Listings</a>
           <a class="sl-btn sl-btn-secondary" href={`/regulations/${cityData.stateSlug}/`}>View {cityData.stateName} Regulations</a>
         </div>
+      </div>
+    </section>
+
+    <section class="sl-state-section">
+      <div class="sl-state-section-head sl-state-section-head--split">
+        <div>
+          <p class="sl-state-section-kicker">Fast Navigation</p>
+          <h2>Compare {displayCityName} to nearby hubs</h2>
+        </div>
+        <a class="sl-state-section-link" href="#listings">View all facilities in {displayCityName}</a>
+      </div>
+      <div class="sl-state-market-grid">
+        <a class="sl-state-market-link" href={stateHubHref}>
+          <strong>{careType.label} across {cityData.stateName}</strong>
+          <span>Open statewide directory</span>
+        </a>
+        <a class="sl-state-market-link" href={regulationEdgeHref}>
+          <strong>{cityData.stateName} regulations</strong>
+          <span>Licensing, complaints, and oversight</span>
+        </a>
+        {heroCompareCities.map((entry) => (
+          <a class="sl-state-market-link" href={entry.href}>
+            <strong>Compare with {entry.cityName}</strong>
+            <span>{entry.careCount.toLocaleString()} {entry.careCount === 1 ? careUnitSingular : careUnitPlural}</span>
+          </a>
+        ))}
       </div>
     </section>
 
