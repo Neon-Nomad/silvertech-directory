@@ -9,6 +9,7 @@ import {
   getHospitalsForCity,
   getRegulatoryContext,
   getSeniorLivingCity,
+  getSeniorLivingState,
 } from '../../../../lib/seniorLivingData';
 import { getStateCost, getStateVsNationalPct, NATIONAL_MEDIANS, type CareTypeCostKey } from '../../../../lib/state_cost_lookup';
 
@@ -155,6 +156,80 @@ const stateCostNote = stateMedianCost && stateVsNationalPct !== null
       : `${Math.abs(stateVsNationalPct)}% below national median`
   : null;
 const regulatoryContext = getRegulatoryContext(cityData.stateSlug);
+const stateDirectoryData = getSeniorLivingState(cityData.stateSlug);
+
+const RELATED_HUB_OVERRIDES: Record<
+  string,
+  {
+    agency: string;
+    statute: string;
+    verificationLabel: string;
+    verificationUrl?: string;
+  }
+> = {
+  florida: {
+    agency: 'Agency for Health Care Administration (AHCA)',
+    statute: 'Florida Statute 429',
+    verificationLabel: 'Verified by AHCA Florida',
+    verificationUrl: 'https://ahca.myflorida.com/',
+  },
+  kentucky: {
+    agency: 'Cabinet for Health and Family Services',
+    statute: '910 KAR 1:240',
+    verificationLabel: 'Verified by KY DAIL',
+    verificationUrl: 'https://www.chfs.ky.gov/agencies/dail/Pages/default.aspx',
+  },
+  'rhode-island': {
+    agency: 'RI Department of Health (RIDOH)',
+    statute: 'R.I. Gen. Laws § 23-17.4',
+    verificationLabel: 'Verified by RIDOH Licensing',
+    verificationUrl: 'https://health.ri.gov/',
+  },
+  alaska: {
+    agency: 'AK Division of Health Care Services',
+    statute: 'AS 47.33',
+    verificationLabel: 'Verified by AK Residential Licensing',
+    verificationUrl: 'https://health.alaska.gov/',
+  },
+};
+
+const relatedHubOverride = RELATED_HUB_OVERRIDES[cityData.stateSlug];
+const regulationStatuteLabel = relatedHubOverride?.statute || 'State Regulatory Guidance';
+const regulationAgencyLabel =
+  relatedHubOverride?.agency ||
+  regulatoryContext.licensing?.agencyName ||
+  `${cityData.stateName} licensing authority`;
+const regulationEdgeHref = `/regulations/${cityData.stateSlug}/`;
+const verificationEdgeHref =
+  regulatoryContext.licensing?.verifyLicenseUrl ||
+  relatedHubOverride?.verificationUrl ||
+  regulatoryContext.licensing?.websiteUrl ||
+  '';
+const verificationEdgeLabel =
+  relatedHubOverride?.verificationLabel ||
+  (regulatoryContext.licensing?.agencyName
+    ? `Verified by ${regulatoryContext.licensing.agencyName}`
+    : 'Verified by state licensing authority');
+
+const stateHubHref = `/${careType.slug}/${cityData.stateSlug}/`;
+const stateHubLabel = `Browse all ${careType.label.toLowerCase()} in ${cityData.stateName}`;
+
+const peerCompareCities = (stateDirectoryData?.cities || [])
+  .filter((entry) => entry.citySlug !== cityData.citySlug)
+  .filter((entry) => (entry.careTypeCounts[careType.slug] || 0) > 0)
+  .sort(
+    (a, b) =>
+      (b.careTypeCounts[careType.slug] || 0) - (a.careTypeCounts[careType.slug] || 0) ||
+      b.facilityCount - a.facilityCount ||
+      a.cityName.localeCompare(b.cityName),
+  )
+  .slice(0, 3)
+  .map((entry) => ({
+    cityName: toDisplayName(entry.cityName),
+    citySlug: entry.citySlug,
+    careCount: entry.careTypeCounts[careType.slug] || 0,
+    href: `/${careType.slug}/${cityData.stateSlug}/${entry.citySlug}/`,
+  }));
 const careInventoryLabel = `${facilities.length.toLocaleString()} ${facilities.length === 1 ? careUnitSingular : careUnitPlural}`;
 const listingsHeadingLabel =
   careType.slug === 'ccrc' || careType.slug === 'nursing-homes' ? h1CareLabel : `${careType.label} communities`;
@@ -453,7 +528,14 @@ const crossCareLinks = allCareTypes
   <link slot="head" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
 
-  <div class="container sl-page sl-state-page">
+  <div
+    class="container sl-page sl-state-page"
+    data-city-supabase-url={import.meta.env.PUBLIC_SUPABASE_URL || import.meta.env.VITE_SUPABASE_URL || ''}
+    data-city-supabase-anon-key={import.meta.env.PUBLIC_SUPABASE_ANON_KEY || import.meta.env.VITE_SUPABASE_ANON_KEY || ''}
+    data-city-state={cityData.stateSlug}
+    data-city-name={displayCityName}
+    data-city-care={careType.slug}
+  >
     <nav class="sl-breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span>/</span>
@@ -509,6 +591,96 @@ const crossCareLinks = allCareTypes
         <p class="sl-state-stat-label">Monthly</p>
         <p class="sl-state-stat-note">{stateCostNote ?? 'Typical local range'}</p>
       </article>
+    </section>
+
+    <section class="sl-city-section" aria-labelledby="related-hubs-heading">
+      <div class="sl-city-section-head">
+        <div>
+          <p class="sl-city-section-kicker">Related Hubs</p>
+          <h2 id="related-hubs-heading">Authority links for {displayCityName}</h2>
+          <p>Regulation, verification, state directory, and peer city comparisons mapped as one navigation layer.</p>
+        </div>
+      </div>
+
+      <div class="sl-city-grid-cards">
+        <a
+          class="sl-city-grid-card"
+          href={regulationEdgeHref}
+          data-city-track="city_to_regulation"
+          data-city-position="section"
+          data-city-target=""
+          data-city-statute-id={regulationStatuteLabel}
+          data-city-is-verified="true"
+          data-city-user-intent="research"
+          data-city-authority-rank="1"
+          data-city-edge-type="regulation"
+        >
+          <strong>Regulated under {regulationStatuteLabel}</strong>
+          <span>{regulationAgencyLabel}</span>
+          <span>Open {cityData.stateName} regulations</span>
+        </a>
+
+        {verificationEdgeHref && (
+          <a
+            class="sl-city-grid-card"
+            href={verificationEdgeHref}
+            rel="noreferrer"
+            target="_blank"
+            data-city-track="city_to_regulation"
+            data-city-position="section"
+            data-city-target=""
+            data-city-statute-id={regulationStatuteLabel}
+            data-city-is-verified="true"
+            data-city-user-intent="research"
+            data-city-authority-rank="1"
+            data-city-edge-type="verification"
+          >
+            <strong>{verificationEdgeLabel}</strong>
+            <span>{regulationAgencyLabel}</span>
+            <span>Open official verification</span>
+          </a>
+        )}
+
+        <a
+          class="sl-city-grid-card"
+          href={stateHubHref}
+          data-city-track="city_to_state_hub"
+          data-city-position="section"
+          data-city-target=""
+          data-city-statute-id={regulationStatuteLabel}
+          data-city-is-verified="true"
+          data-city-user-intent="research"
+          data-city-authority-rank="2"
+          data-city-edge-type="state_hub"
+        >
+          <strong>{stateHubLabel}</strong>
+          <span>{cityData.stateName} statewide coverage</span>
+          <span>View state-level hub</span>
+        </a>
+      </div>
+
+      {peerCompareCities.length > 0 && (
+        <div class="sl-city-grid-cards sl-city-grid-cards--nearby">
+          {peerCompareCities.map((entry) => (
+            <a
+              class="sl-city-grid-card"
+              href={entry.href}
+              data-city-track="city_to_city_compare"
+              data-city-position="section"
+              data-city-target={entry.cityName}
+              data-city-statute-id={regulationStatuteLabel}
+              data-city-is-verified="true"
+              data-city-user-intent="research"
+              data-city-authority-rank="3"
+              data-city-edge-type="city_compare"
+            >
+              <strong>Compare to {entry.cityName}</strong>
+              <span>{entry.careCount.toLocaleString()} {entry.careCount === 1 ? careUnitSingular : careUnitPlural}</span>
+              <span>Open {entry.cityName} hub</span>
+            </a>
+          ))}
+        </div>
+      )}
     </section>
 
     <section class="sl-state-overview">
@@ -742,4 +914,5 @@ const crossCareLinks = allCareTypes
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+  <script type="module" src="/scripts/city-related-hubs.js"></script>
 </Base>
