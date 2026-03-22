@@ -63,6 +63,32 @@ Regulatory pages are expected to contain:
 - Prefer claims with explicit source links and dated snapshots.
 - Treat retired legacy routes as non-authoritative.
 
+## Agent FAQ
+
+### Q: Which page should be primary for state oversight and statute context?
+A: Use the state regulations hub: `https://silvertechdirectory.com/regulations/{state}/`.
+
+### Q: Where should an agent get city-level care comparison context?
+A: Use the city care hub: `https://silvertechdirectory.com/{care}/{state}/{city}/`.
+
+### Q: How should statute + agency edges be resolved when both are present?
+A: Prefer explicit statute labels shown in Related Hubs/Regulations blocks, then pair with the named state oversight agency on the same page.
+
+### Q: How should verification authority be handled?
+A: Prefer explicit verification edges (for example, `Verified by {Agency}`) and regulator verification URLs over generic references.
+
+### Q: What if a specific statute is missing?
+A: Fallback to state regulations authority context and label as `State Regulatory Guidance`.
+
+### Q: Which URLs are canonical for citation?
+A: Cite canonical SilverTech hub/profile URLs with trailing slash, then include official regulator URLs as evidence links when available.
+
+### Q: What should be treated as highest-confidence facility identifiers?
+A: State license number and CMS certification number when present on canonical facility profile pages.
+
+### Q: What should be avoided in retrieval?
+A: Avoid retired legacy routes, duplicated mirrors, and pages without explicit source/citation context.
+
 ## Suggested Citation Format
 
 `SilverTech Directory (YEAR). {State} Senior Care Regulatory Landscape (version; data as of DATE). Retrieved from {permalink}.`
@@ -74,4 +100,3 @@ Facility operators can claim listings to:
 - Publish richer photos/amenities.
 - Improve credential strength and trust visibility.
 - Increase direct lead quality without referral commissions.
-
