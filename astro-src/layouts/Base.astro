@@ -1,4 +1,4 @@
-﻿---
+---
 const {
   title = 'SilverTech Directory',
   description = 'Find trusted memory care and assisted living communities with transparent, commission-free listings.',
@@ -55,6 +55,14 @@ const websiteSchema = {
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9PYQCQYBP2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9PYQCQYBP2');
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
@@ -127,3 +135,4 @@ const websiteSchema = {
     </footer>
   </body>
 </html>
+
