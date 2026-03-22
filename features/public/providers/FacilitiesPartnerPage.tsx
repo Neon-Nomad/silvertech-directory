@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -23,6 +23,8 @@ export const FacilitiesPartnerPage: React.FC = () => {
   const [annualMoveIns, setAnnualMoveIns] = useState(12);
   const [monthlyRent, setMonthlyRent] = useState(6200);
   const [referralFeePercent, setReferralFeePercent] = useState(100);
+  const [isDashboardPreviewOpen, setIsDashboardPreviewOpen] = useState(false);
+  const [dashboardZoom, setDashboardZoom] = useState(1);
 
   const referralMath = useMemo(() => {
     const safeMoveIns = clamp(Number.isFinite(annualMoveIns) ? annualMoveIns : 0, 0, 500);
@@ -44,6 +46,27 @@ export const FacilitiesPartnerPage: React.FC = () => {
       breakEvenMoveIns,
     };
   }, [annualMoveIns, monthlyRent, referralFeePercent]);
+
+  useEffect(() => {
+    if (!isDashboardPreviewOpen) return;
+
+    const onEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setIsDashboardPreviewOpen(false);
+    };
+
+    const priorOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', onEscape);
+
+    return () => {
+      document.body.style.overflow = priorOverflow;
+      window.removeEventListener('keydown', onEscape);
+    };
+  }, [isDashboardPreviewOpen]);
+
+  useEffect(() => {
+    if (!isDashboardPreviewOpen) setDashboardZoom(1);
+  }, [isDashboardPreviewOpen]);
 
   return (
     <div className="min-h-screen bg-warm-gray text-slate-900">
@@ -81,13 +104,23 @@ export const FacilitiesPartnerPage: React.FC = () => {
 
         <section className="grid md:grid-cols-2 gap-6 md:items-start">
           <div className="rounded-2xl border border-slate-200 bg-white p-3 md:p-4">
-            <img
-              src="/images/facilities-dashboard-hero.svg"
-              alt="SilverTech operator dashboard preview"
-              className="w-full h-auto object-contain object-top rounded-xl"
-              loading="eager"
-              decoding="async"
-            />
+            <button
+              type="button"
+              className="group relative w-full text-left rounded-xl overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2"
+              onClick={() => setIsDashboardPreviewOpen(true)}
+              aria-label="Open enlarged dashboard preview"
+            >
+              <img
+                src="/images/facilities-dashboard-hero.svg"
+                alt="SilverTech operator dashboard preview"
+                className="w-full h-auto object-contain object-top rounded-xl"
+                loading="eager"
+                decoding="async"
+              />
+              <span className="absolute right-3 top-3 rounded-full bg-slate-900/85 px-3 py-1 text-[11px] font-semibold text-white opacity-90 transition-opacity group-hover:opacity-100">
+                Click to enlarge
+              </span>
+            </button>
           </div>
           <Card>
             <h2 className="text-2xl font-serif font-semibold mb-4">Listing Tiers</h2>
@@ -299,6 +332,66 @@ export const FacilitiesPartnerPage: React.FC = () => {
           </Card>
         </section>
       </main>
+
+      {isDashboardPreviewOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4 backdrop-blur-sm"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Dashboard preview"
+          onClick={() => setIsDashboardPreviewOpen(false)}
+        >
+          <div
+            className="relative w-full max-w-6xl rounded-2xl border border-white/20 bg-slate-950 p-3 md:p-4"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="absolute right-3 top-3 z-10 flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setDashboardZoom(1)}
+                className="rounded-full bg-black/70 px-3 py-1 text-xs font-semibold text-white hover:bg-black"
+                aria-label="Fit full dashboard"
+              >
+                Fit
+              </button>
+              <button
+                type="button"
+                onClick={() => setDashboardZoom((z) => Math.max(1, z - 0.25))}
+                className="rounded-full bg-black/70 px-3 py-1 text-xs font-semibold text-white hover:bg-black"
+                aria-label="Zoom out"
+              >
+                −
+              </button>
+              <button
+                type="button"
+                onClick={() => setDashboardZoom((z) => Math.min(3, z + 0.25))}
+                className="rounded-full bg-black/70 px-3 py-1 text-xs font-semibold text-white hover:bg-black"
+                aria-label="Zoom in"
+              >
+                +
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsDashboardPreviewOpen(false)}
+                className="rounded-full bg-black/70 px-3 py-1 text-xs font-semibold text-white hover:bg-black"
+                aria-label="Close dashboard preview"
+              >
+                Close
+              </button>
+            </div>
+            <div className="max-h-[86vh] overflow-auto rounded-xl">
+              <img
+                src="/images/facilities-dashboard-hero.svg"
+                alt="SilverTech operator dashboard enlarged preview"
+                className="mx-auto max-h-[86vh] w-auto max-w-full rounded-xl"
+                style={{ transform: `scale(${dashboardZoom})`, transformOrigin: 'top center' }}
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
