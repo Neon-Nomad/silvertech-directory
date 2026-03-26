@@ -39,6 +39,7 @@ export type FacilityRecord = {
   id: string;
   publicSlug: string;
   publicRouteId: number;
+  legacyRouteIds: number[];
   name: string;
   city: string;
   citySlug: string;
@@ -251,8 +252,8 @@ let licensingCache: Array<Record<string, string>> | null = null;
 let ombudsmanCache: Record<string, Record<string, string>> | null = null;
 let medicaidCache: Array<Record<string, any>> | null = null;
 let agingAgencyCache: Array<Record<string, any>> | null = null;
-let sitemapRouteExactCache: Map<string, number> | null = null;
-let sitemapRouteLooseCache: Map<string, number> | null = null;
+let sitemapRouteExactCache: Map<string, number[]> | null = null;
+let sitemapRouteLooseCache: Map<string, number[]> | null = null;
 let warnedMissingCsv = false;
 
 const ROOT = process.cwd();
@@ -387,15 +388,15 @@ const loadFacilitiesIndex = (): Array<Record<string, any>> =>
   readJsonFile<Array<Record<string, any>>>('public/facilities_index.json') || [];
 
 const loadSitemapFacilityRouteHints = (): {
-  exact: Map<string, number>;
-  loose: Map<string, number>;
+  exact: Map<string, number[]>;
+  loose: Map<string, number[]>;
 } => {
   if (sitemapRouteExactCache && sitemapRouteLooseCache) {
     return { exact: sitemapRouteExactCache, loose: sitemapRouteLooseCache };
   }
 
-  const exact = new Map<string, number>();
-  const loose = new Map<string, number>();
+  const exact = new Map<string, number[]>();
+  const loose = new Map<string, number[]>();
   const publicDir = path.resolve(ROOT, 'public');
   if (!fs.existsSync(publicDir)) {
     sitemapRouteExactCache = exact;
@@ -426,8 +427,14 @@ const loadSitemapFacilityRouteHints = (): {
 
       const exactKey = `${care}|${state}|${city}|${publicSlug}`;
       const looseKey = `${state}|${city}|${publicSlug}`;
-      if (!exact.has(exactKey)) exact.set(exactKey, routeId);
-      if (!loose.has(looseKey)) loose.set(looseKey, routeId);
+      if (!exact.has(exactKey)) exact.set(exactKey, []);
+      if (!loose.has(looseKey)) loose.set(looseKey, []);
+
+      const exactRoutes = exact.get(exactKey)!;
+      if (!exactRoutes.includes(routeId)) exactRoutes.push(routeId);
+
+      const looseRoutes = loose.get(looseKey)!;
+      if (!looseRoutes.includes(routeId)) looseRoutes.push(routeId);
     }
   }
 
@@ -436,20 +443,32 @@ const loadSitemapFacilityRouteHints = (): {
   return { exact, loose };
 };
 
-const resolveSitemapPublicRouteId = (
+const resolveSitemapRoutes = (
   careTypes: CareTypeSlug[],
   stateSlug: string,
   citySlug: string,
   publicSlug: string,
-): number | null => {
+): Array<{ care: CareTypeSlug; routeId: number }> => {
   const { exact, loose } = loadSitemapFacilityRouteHints();
+  const routes: Array<{ care: CareTypeSlug; routeId: number }> = [];
+  const seen = new Set<string>();
   for (const careType of careTypes) {
     const key = `${careType}|${stateSlug}|${citySlug}|${publicSlug}`;
-    const routeId = exact.get(key);
-    if (routeId) return routeId;
+    const routeIds = exact.get(key) || [];
+    for (const routeId of routeIds) {
+      if (!routeId) continue;
+      const dedupeKey = `${careType}|${routeId}`;
+      if (seen.has(dedupeKey)) continue;
+      seen.add(dedupeKey);
+      routes.push({ care: careType, routeId });
+    }
   }
+  if (routes.length > 0) return routes;
+
   const looseKey = `${stateSlug}|${citySlug}|${publicSlug}`;
-  return loose.get(looseKey) || null;
+  const looseRoutes = loose.get(looseKey) || [];
+  if (looseRoutes.length === 0 || careTypes.length === 0) return [];
+  return looseRoutes.map((routeId) => ({ care: careTypes[0], routeId }));
 };
 
 const roundPct = (value: number): number => Math.round(value * 10) / 10;
@@ -686,20 +705,30 @@ const ensureStore = (): SeniorLivingStore => {
 
     const publicSlug = (enriched?.public_slug || slugify(facilityBase.name) || 'facility').toLowerCase();
     const enrichedPublicRouteId = Number(enriched?.public_route_id) || 0;
-    const sitemapPublicRouteId = enrichedPublicRouteId
-      ? 0
-      : resolveSitemapPublicRouteId(
-          careTypes,
-          facilityBase.stateSlug,
-          facilityBase.citySlug,
-          publicSlug,
-        );
+    const sitemapRoutes = resolveSitemapRoutes(
+      careTypes,
+      facilityBase.stateSlug,
+      facilityBase.citySlug,
+      publicSlug,
+    );
+    const sitemapPublicRouteId =
+      sitemapRoutes.find((route) => route.care === careTypes[0])?.routeId ||
+      sitemapRoutes[0]?.routeId ||
+      null;
     const hasProfile = !!(sitemapPublicRouteId || enrichedPublicRouteId);
     const publicRouteId =
       sitemapPublicRouteId ||
       enrichedPublicRouteId ||
       parseInt(hashString(key || facilityBase.name), 36) ||
       facilities.length + 1;
+    const legacyRouteSet = new Set<number>();
+    for (const route of sitemapRoutes) {
+      if (route.routeId !== publicRouteId) legacyRouteSet.add(route.routeId);
+    }
+    if (enrichedPublicRouteId && enrichedPublicRouteId !== publicRouteId) {
+      legacyRouteSet.add(enrichedPublicRouteId);
+    }
+    const legacyRouteIds = Array.from(legacyRouteSet);
     let id = enriched?.id || `${publicSlug}-${publicRouteId}`;
     if (seenIds.has(id)) id = `${id}-${hashString(`${id}-${facilityBase.city}`)}`;
     seenIds.add(id);
@@ -708,6 +737,7 @@ const ensureStore = (): SeniorLivingStore => {
       id,
       publicSlug,
       publicRouteId,
+      legacyRouteIds,
       hasProfile,
       name: facilityBase.name,
       city: facilityBase.city,
@@ -852,6 +882,9 @@ const ensureStore = (): SeniorLivingStore => {
   const facilitiesByPublicSlug = new Map<string, FacilityRecord[]>();
   for (const facility of facilities) {
     facilityByRouteKey.set(`${facility.publicSlug}-${facility.publicRouteId}`, facility);
+    for (const legacyRouteId of facility.legacyRouteIds || []) {
+      facilityByRouteKey.set(`${facility.publicSlug}-${legacyRouteId}`, facility);
+    }
     const bucket = facilitiesByPublicSlug.get(facility.publicSlug);
     if (bucket) {
       bucket.push(facility);
@@ -955,13 +988,56 @@ export const getFacilityStaticPaths = (): Array<{
   state: string;
   city: string;
   facilitySlug: string;
-}> =>
-  ensureStore().facilities.map((f) => ({
-    care: f.primaryCareType,
-    state: f.stateSlug,
-    city: f.citySlug,
-    facilitySlug: `${f.publicSlug}-${f.publicRouteId}`,
-  }));
+}> => {
+  const paths = new Map<string, { care: string; state: string; city: string; facilitySlug: string }>();
+
+  for (const facility of ensureStore().facilities) {
+    const basePath = {
+      care: facility.primaryCareType,
+      state: facility.stateSlug,
+      city: facility.citySlug,
+      facilitySlug: `${facility.publicSlug}-${facility.publicRouteId}`,
+    };
+    paths.set(
+      `${basePath.care}|${basePath.state}|${basePath.city}|${basePath.facilitySlug}`,
+      basePath,
+    );
+
+    const sitemapRoutes = resolveSitemapRoutes(
+      facility.careTypes,
+      facility.stateSlug,
+      facility.citySlug,
+      facility.publicSlug,
+    );
+    for (const route of sitemapRoutes) {
+      const routePath = {
+        care: route.care,
+        state: facility.stateSlug,
+        city: facility.citySlug,
+        facilitySlug: `${facility.publicSlug}-${route.routeId}`,
+      };
+      paths.set(
+        `${routePath.care}|${routePath.state}|${routePath.city}|${routePath.facilitySlug}`,
+        routePath,
+      );
+    }
+
+    for (const legacyRouteId of facility.legacyRouteIds || []) {
+      const legacyPath = {
+        care: facility.primaryCareType,
+        state: facility.stateSlug,
+        city: facility.citySlug,
+        facilitySlug: `${facility.publicSlug}-${legacyRouteId}`,
+      };
+      paths.set(
+        `${legacyPath.care}|${legacyPath.state}|${legacyPath.city}|${legacyPath.facilitySlug}`,
+        legacyPath,
+      );
+    }
+  }
+
+  return Array.from(paths.values());
+};
 
 export const getCareTypes = (): CareTypeDefinition[] => CARE_TYPES;
 export const getCareTypeBySlug = (slug: string): CareTypeDefinition | null =>
