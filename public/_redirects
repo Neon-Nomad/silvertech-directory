@@ -11,9 +11,13 @@ https://www.silvertechdirectory.com/* https://silvertechdirectory.com/:splat 301
 # Retired public directory URLs
 /facility/* /410.html 410!
 /senior-living/* /410.html 410!
-/states/:state/regulatory /410.html 410!
-/states/:state/regulations /410.html 410!
-/states/:state/regulations/* /410.html 410!
+/states/:state/regulatory /regulations/:state/ 301!
+/states/:state/regulatory/ /regulations/:state/ 301!
+/states/:state/regulations /regulations/:state/ 301!
+/states/:state/regulations/ /regulations/:state/ 301!
+/states/:state/regulations/:topic /regulations/:state/:topic/ 301!
+/states/:state/regulations/:topic/ /regulations/:state/:topic/ 301!
+/states/:state/regulations/* /regulations/:state/ 301!
 /regulatory-library /410.html 410!
 /regulatory-library/* /410.html 410!
 /assisted-living/:state/cities/:city /410.html 410!
