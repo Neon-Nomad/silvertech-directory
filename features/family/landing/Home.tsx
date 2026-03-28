@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { Suspense, lazy, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate, Link } from 'react-router-dom';
 import {
@@ -14,7 +14,9 @@ import {
 } from 'lucide-react';
 import { useGeolocation } from '@/src/hooks/useGeolocation';
 import { ALL_STATES } from '@/src/data/states';
-import { FamilyDashboardProof } from '@/features/family/landing/FamilyDashboardProof';
+const FamilyDashboardProof = lazy(() =>
+  import('@/features/family/landing/FamilyDashboardProof').then((mod) => ({ default: mod.FamilyDashboardProof })),
+);
 
 type LocationSuggestion =
   | { type: 'city'; label: string; city: string; state: string }
@@ -81,6 +83,10 @@ export const Home: React.FC = () => {
   };
 
   const FEATURED_STATES = ALL_STATES.slice(0, 15);
+  const deferredSectionStyle: React.CSSProperties = {
+    contentVisibility: 'auto',
+    containIntrinsicSize: '900px',
+  };
 
   return (
     <div className="min-h-screen bg-warm-white text-charcoal">
@@ -204,7 +210,7 @@ export const Home: React.FC = () => {
           </div>
         </section>
 
-        <section className="bg-white border-b border-slate-100">
+        <section className="bg-white border-b border-slate-100" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6 py-10 grid gap-6 lg:grid-cols-[1.2fr_1fr]">
             <div className="grid sm:grid-cols-3 gap-3">
               <div className="rounded-xl border border-slate-200 p-4">
@@ -220,12 +226,14 @@ export const Home: React.FC = () => {
                 <p className="text-sm font-semibold text-charcoal mt-1">Track decisions and move-in outcome</p>
               </div>
             </div>
-            <FamilyDashboardProof />
+            <Suspense fallback={<div className="h-40 rounded-xl border border-slate-200 bg-slate-50 animate-pulse" />}>
+              <FamilyDashboardProof />
+            </Suspense>
           </div>
         </section>
 
         {/* ── Section 2: The SilverTech Standard ── */}
-        <section className="py-20 bg-warm-gray">
+        <section className="py-20 bg-warm-gray" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6">
             <h2 className="text-center text-sm font-bold uppercase tracking-[0.3em] text-gold mb-12">
               The SilverTech Standard
@@ -264,7 +272,7 @@ export const Home: React.FC = () => {
         </section>
 
         {/* ── Section 4: Compare Section ── */}
-        <section id="how-it-works" className="py-20 bg-white border-y border-slate-100">
+        <section id="how-it-works" className="py-20 bg-white border-y border-slate-100" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6">
             <h2 className="text-2xl sm:text-3xl font-serif font-bold text-charcoal mb-4">How this directory works</h2>
             <p className="text-slate-600 max-w-2xl mb-10">
@@ -311,7 +319,7 @@ export const Home: React.FC = () => {
           </div>
         </section>
 
-        <section className="py-24 border-y border-slate-100">
+        <section className="py-24 border-y border-slate-100" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
             <div className="flex-1">
               <h2 className="text-3xl font-serif font-bold mb-6">Compare side-by-side.</h2>
@@ -408,7 +416,7 @@ export const Home: React.FC = () => {
         </section>
 
         {/* ── Section 5: Research & Decision Support ── */}
-        <section className="py-20 bg-warm-white">
+        <section className="py-20 bg-warm-white" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6">
             <h2 className="text-2xl font-serif font-bold mb-10">Research &amp; Decision Support</h2>
             <div className="grid md:grid-cols-3 gap-6">
@@ -449,7 +457,7 @@ export const Home: React.FC = () => {
         </section>
 
         {/* ── Section 6: Trust Standard / Browse by State ── */}
-        <section className="py-20 bg-slate-900 text-white">
+        <section className="py-20 bg-slate-900 text-white" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
               <div>
@@ -487,7 +495,7 @@ export const Home: React.FC = () => {
         </section>
 
         {/* ── Section 7: Browse by State (quick links) ── */}
-        <section className="py-20 bg-warm-white">
+        <section className="py-20 bg-warm-white" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6">
             <h2 className="text-2xl font-serif font-bold mb-10">Browse by State</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
@@ -511,7 +519,7 @@ export const Home: React.FC = () => {
         </section>
 
         {/* ── Section 8: Verification Methodology ── */}
-        <section className="py-24 bg-warm-gray">
+        <section className="py-24 bg-warm-gray" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6 text-center">
             <h2 className="text-3xl font-serif font-bold mb-6">Our Verification Methodology</h2>
             <p className="text-slate-600 max-w-3xl mx-auto mb-16 leading-relaxed">
@@ -538,7 +546,7 @@ export const Home: React.FC = () => {
       </main>
 
       {/* ── Footer ── */}
-      <footer className="bg-white border-t border-slate-200 py-20">
+      <footer className="bg-white border-t border-slate-200 py-20" style={deferredSectionStyle}>
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
             <div>
