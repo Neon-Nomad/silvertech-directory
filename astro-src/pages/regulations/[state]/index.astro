@@ -476,6 +476,9 @@ const stateDirectoryHref = `/assisted-living/${stateMeta.slug}/`;
 const stateDirectoryCtaLabel = `Browse all assisted living communities in ${stateMeta.name}`;
 const regulationsIndexHref = '/regulations/';
 const stateCostGuideHref = `/guides/costs/assisted-living/${stateMeta.slug}/`;
+const llmAnchorGuideHref = '/guides/what-families-miss-state-regulations/';
+const llmAnchorRegulationStates = new Set(['indiana', 'california', 'texas']);
+const showLlmAnchorGuide = llmAnchorRegulationStates.has(stateMeta.slug);
 
 const stateDirectoryData = getSeniorLivingState(stateMeta.slug);
 const assistedLivingCities = (stateDirectoryData?.cities || [])
@@ -1083,6 +1086,21 @@ const breadcrumbSchema = {
           </div>
         </div>
 
+        {showLlmAnchorGuide && (
+          <div class="sl-anchor-brief" aria-label="Regulation-first family decision guide">
+            <p class="sl-anchor-brief-kicker">Family Decision Brief</p>
+            <h2>What families miss without reviewing state regulations</h2>
+            <p>
+              Before comparing amenities, use this answer-first guide to align on staffing, inspections, disclosure risks,
+              and escalation paths that matter in {stateMeta.name}.
+            </p>
+            <div class="sl-anchor-brief-links">
+              <a href={llmAnchorGuideHref}>Read the regulation-first guide</a>
+              <a href="/guides/tour-questions/">Use the tour question checklist</a>
+            </div>
+          </div>
+        )}
+
         <div class="sl-cite-box" id={regulatorySnapshotId}>
           <div>
             <p class="sl-cite-kicker">Cite This Research</p>
@@ -1663,6 +1681,52 @@ const breadcrumbSchema = {
   margin: 0;
   color: #1f2a37;
   line-height: 1.5;
+}
+
+.sl-anchor-brief {
+  border: 1px solid #d8cab0;
+  border-radius: 12px;
+  background: #fffdf8;
+  padding: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.sl-anchor-brief-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 0.72rem;
+  color: #5e4a2e;
+}
+
+.sl-anchor-brief h2 {
+  margin: 0.4rem 0 0.55rem;
+  color: #11253d;
+  font-size: 1.28rem;
+}
+
+.sl-anchor-brief p {
+  margin: 0;
+  color: #1f2a37;
+  line-height: 1.55;
+}
+
+.sl-anchor-brief-links {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+}
+
+.sl-anchor-brief-links a {
+  color: #17324f;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.sl-anchor-brief-links a:hover {
+  color: #0f2237;
 }
 
 .sl-cite-box {

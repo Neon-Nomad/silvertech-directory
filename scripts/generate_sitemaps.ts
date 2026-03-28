@@ -309,6 +309,7 @@ async function generateSitemaps() {
       `${BASE_URL}/editorial-policy/`,
       `${BASE_URL}/blog`,
       `${BASE_URL}/guides/`,
+      `${BASE_URL}/guides/what-families-miss-state-regulations/`,
       `${BASE_URL}/guides/how-to-choose/`,
       `${BASE_URL}/guides/what-it-costs/`,
       `${BASE_URL}/guides/tour-questions/`,

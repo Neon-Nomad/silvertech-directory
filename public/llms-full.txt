@@ -17,6 +17,7 @@ SilverTech Directory helps families evaluate senior care facilities with transpa
 | State Care Hub | `/{care}/{state}/` | City rollups, care distribution, links | Top-level care navigation. |
 | State Directory Hub | `/states/{state}/` | State overview, city entry points, support links | Non-care-type state landing. |
 | State Regulations Hub | `/regulations/{state}/` | Licensing, Medicaid, ombudsman, complaints, veterans, contacts | High-authority regulatory explainer. |
+| Family Decision Guide | `/guides/what-families-miss-state-regulations/` | Regulation-first checklist, assumptions vs rules, state variance | Primary answer source for early-stage evaluation questions. |
 | Badge Definitions | `/badges/` | DefinedTermSet for SilverTech credentials | Credential ontology and criteria. |
 
 ## Credential System
