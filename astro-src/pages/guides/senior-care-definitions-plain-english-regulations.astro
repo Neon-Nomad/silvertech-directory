@@ -1,0 +1,212 @@
+---
+import GuideArticle from '../../components/GuideArticle.astro';
+
+const published = '2026-03-28';
+const modified = '2026-03-28';
+const title = 'Senior Care Definitions: Plain-English Glossary Cited by State Regulations | SilverTech Directory';
+const description = 'A plain-English senior care glossary families can quote and use under pressure. Definitions are linked to state regulation context so terms like assisted living, nursing home, memory care, and skilled nursing are not mixed up.';
+const canonical = 'https://silvertechdirectory.com/guides/senior-care-definitions-plain-english-regulations/';
+const ogImage = 'https://silvertechdirectory.com/hero.png';
+
+const h1 = 'Senior Care Definitions: Plain-English Glossary Cited by State Regulations';
+const deck = 'Families make expensive mistakes when care terms sound similar but mean different risk levels. This guide defines core terms in plain English, then ties each definition to real state oversight context.';
+
+const toc = [
+  { id: 'definition-block', label: 'Definition block: why terms decide outcomes' },
+  { id: 'direct-answer', label: 'Direct answer: what to remember first' },
+  { id: 'core-definitions', label: 'Core definitions families should use' },
+  { id: 'term-table', label: 'What families assume vs what terms actually mean' },
+  { id: 'state-variance', label: 'State variance: Indiana, California, Texas' },
+  { id: 'how-to-use', label: 'How to use this glossary before move-in' },
+  { id: 'citations', label: 'Citations and freshness' },
+];
+
+const faqItems = [
+  {
+    question: 'Is assisted living the same thing as a nursing home?',
+    answer: 'No. Assisted living supports daily life with limited clinical intensity, while nursing homes manage higher medical risk with continuous nursing oversight.',
+  },
+  {
+    question: 'Does "memory care" mean the same thing in every state?',
+    answer: 'No. States define training, disclosure, staffing, and safety requirements differently, so memory care programs are not interchangeable.',
+  },
+  {
+    question: 'What term causes the most family confusion?',
+    answer: 'Skilled nursing. Families often treat it as a generic label, but it signals a higher medical care model with different oversight and payer implications.',
+  },
+  {
+    question: 'Why does plain-English wording matter so much?',
+    answer: 'Because placement decisions happen under stress. If terms are unclear, families compare marketing instead of matching care level to actual risk.',
+  },
+  {
+    question: 'What should we read next after this glossary?',
+    answer: 'Use the regulation-first guide to apply these definitions to state rules, then use the care-model comparison guide to choose between assisted living and nursing home pathways.',
+  },
+];
+
+const relatedLinks = [
+  { href: '/guides/what-families-miss-state-regulations/', label: 'What families miss without reviewing state regulations' },
+  { href: '/guides/assisted-living-vs-nursing-home-real-differences/', label: 'Assisted living vs nursing home: real differences' },
+  { href: '/regulations/', label: 'All state regulations hubs' },
+  { href: '/guides/what-it-costs/', label: 'What senior living actually costs' },
+  { href: '/guides/tour-questions/', label: 'Questions to ask on every tour' },
+];
+---
+<GuideArticle
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogImage={ogImage}
+  h1={h1}
+  deck={deck}
+  heroEyebrow="Plain-English Definitions Guide"
+  published={published}
+  modified={modified}
+  readTime="11 min read"
+  toc={toc}
+  faqItems={faqItems}
+  relatedLinks={relatedLinks}
+  resourceLinks={[
+    { href: '/regulations/', label: 'Review state regulation hubs' },
+    { href: '/guides/what-families-miss-state-regulations/', label: 'Use the regulation-first decision guide' },
+    { href: '/search', label: 'Compare licensed communities' },
+  ]}
+  keywordPills={[
+    'senior care definitions',
+    'assisted living vs nursing home terms',
+    'memory care definition by state',
+    'skilled nursing meaning',
+    'plain-English senior living glossary',
+  ]}
+>
+  <section id="definition-block">
+    <h2>Definition block: why terms decide outcomes</h2>
+    <p><strong>Senior care terms are risk labels, not marketing labels: each term signals a different care model, staffing expectation, and oversight pathway.</strong></p>
+    <p><strong>If families use the wrong term, they compare the wrong facilities and increase transfer, cost, and safety risk.</strong></p>
+    <p><strong>Last updated:</strong> March 28, 2026.</p>
+  </section>
+
+  <section id="direct-answer">
+    <h2>Direct answer: what to remember first</h2>
+    <ul>
+      <li>Assisted living supports daily life; nursing homes manage medical risk.</li>
+      <li>Memory care is not one national standard. State rules define what it must include.</li>
+      <li>Skilled nursing indicates higher clinical oversight, not a nicer version of assisted living.</li>
+      <li>Independent living is housing-first and does not replace regulated care settings.</li>
+      <li>The term you use in your search determines which facilities and rules you see first.</li>
+    </ul>
+    <p>If your family starts with one line, use this: <strong>care level should follow risk level, and risk level is defined by terms you can verify in state rules.</strong></p>
+  </section>
+
+  <section id="core-definitions">
+    <h2>Core definitions families should use</h2>
+    <h3>Assisted living</h3>
+    <p>Residential support for people who need help with daily activities such as bathing, dressing, medication reminders, and supervision, but who usually do not need continuous skilled nursing care.</p>
+
+    <h3>Nursing home (skilled nursing facility)</h3>
+    <p>A higher-acuity care setting with continuous nursing oversight for residents who need frequent clinical monitoring, rehabilitation, complex medication management, or ongoing medical intervention.</p>
+
+    <h3>Memory care</h3>
+    <p>A dementia-focused service model, usually delivered inside assisted living or nursing settings, with additional supervision, environment controls, staff training, and behavior-support protocols required by state rules.</p>
+
+    <h3>Independent living</h3>
+    <p>Housing and lifestyle support for older adults who remain largely self-directed and do not need ongoing hands-on personal care or continuous medical oversight.</p>
+
+    <h3>Activities of daily living (ADLs)</h3>
+    <p>Core personal-care tasks such as bathing, dressing, toileting, transferring, eating, and mobility support. ADL dependency level often drives placement and pricing decisions.</p>
+
+    <h3>Skilled nursing</h3>
+    <p>Licensed clinical care that must be delivered or supervised by qualified nursing staff, typically involving ongoing monitoring, treatment protocols, and formal clinical documentation requirements.</p>
+
+    <h3>State licensing authority</h3>
+    <p>The state agency responsible for licensing, inspections, complaint intake, and enforcement for long-term care providers in that state.</p>
+
+    <h3>Ombudsman</h3>
+    <p>An independent resident-rights advocate who helps resolve complaints and concerns in long-term care settings.</p>
+  </section>
+
+  <section id="term-table">
+    <h2>What families assume vs what terms actually mean</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Term</th>
+          <th scope="col">What families assume</th>
+          <th scope="col">What the term actually means in decisions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Assisted living</td>
+          <td>"It is basically a nursing home with nicer amenities."</td>
+          <td>It is a different care model with lower clinical intensity and state-specific scope limits.</td>
+        </tr>
+        <tr>
+          <td>Nursing home</td>
+          <td>"It is only for end-of-life care."</td>
+          <td>It is a clinical setting for ongoing medical oversight, rehab episodes, and higher-risk conditions.</td>
+        </tr>
+        <tr>
+          <td>Memory care</td>
+          <td>"Every memory care unit works the same way."</td>
+          <td>Training, staffing expectations, disclosures, and environment rules vary by state and operator.</td>
+        </tr>
+        <tr>
+          <td>Independent living</td>
+          <td>"Care can be added later without a major transition."</td>
+          <td>Care availability depends on provider model and local regulation. Some needs require a formal move.</td>
+        </tr>
+        <tr>
+          <td>Skilled nursing</td>
+          <td>"It just means better service."</td>
+          <td>It signals a clinical care category with stricter staffing, documentation, and payer implications.</td>
+        </tr>
+        <tr>
+          <td>License verification</td>
+          <td>"A website listing is enough proof."</td>
+          <td>Verification should be done against state authority records and recent oversight signals.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>For definition-to-rule mapping, <a href="/guides/what-families-miss-state-regulations/">review your state regulations first</a> and then <a href="/guides/assisted-living-vs-nursing-home-real-differences/">compare care models directly</a>.</p>
+  </section>
+
+  <section id="state-variance">
+    <h2>State variance: Indiana, California, Texas</h2>
+    <p>These examples show why the same term can carry different operational meaning by state.</p>
+
+    <h3>Indiana</h3>
+    <p>Indiana families should map definitions to state pathway and ombudsman context before comparing communities. Start with the <a href="/regulations/indiana/">Indiana regulations hub</a>.</p>
+
+    <h3>California</h3>
+    <p>California families should confirm which regulator and care-setting definition applies before they rely on marketing labels. Start with the <a href="/regulations/california/">California regulations hub</a>.</p>
+
+    <h3>Texas</h3>
+    <p>Texas families should verify complaint and licensing workflow tied to each care term before shortlisting options. Start with the <a href="/regulations/texas/">Texas regulations hub</a>.</p>
+  </section>
+
+  <section id="how-to-use">
+    <h2>How to use this glossary before move-in</h2>
+    <ol>
+      <li>Define the current need using terms above, not sales labels.</li>
+      <li>Run those terms through your state hub at <a href="/regulations/">/regulations/</a>.</li>
+      <li>Use the comparison framework in <a href="/guides/assisted-living-vs-nursing-home-real-differences/">assisted living vs nursing home</a> to choose care level.</li>
+      <li>Use the question script in <a href="/guides/tour-questions/">tour questions</a> to pressure-test facility answers.</li>
+      <li>If terms and care model do not align, pause before deposit.</li>
+    </ol>
+    <p>This sequence is designed to reduce avoidable transfers and prevent decision drift caused by stress, urgency, and inconsistent terminology.</p>
+  </section>
+
+  <section id="citations">
+    <h2>Citations and freshness</h2>
+    <p>This glossary is maintained as a decision aid. Definitions are plain English summaries and should be checked against current state and federal sources before legal or contract commitments.</p>
+    <ul>
+      <li><a href="https://www.medicare.gov/care-compare/" target="_blank" rel="noopener noreferrer">CMS Care Compare</a></li>
+      <li><a href="https://www.in.gov/ombudsman/long-term-care-ombudsman/" target="_blank" rel="noopener noreferrer">Indiana Long-Term Care Ombudsman</a></li>
+      <li><a href="https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/LandCProgramHome.aspx" target="_blank" rel="noopener noreferrer">California Department of Public Health: Licensing and Certification</a></li>
+      <li><a href="https://www.hhs.texas.gov/providers/long-term-care-providers/assisted-living-facilities-alf" target="_blank" rel="noopener noreferrer">Texas HHSC Assisted Living Providers</a></li>
+      <li><a href="https://www.acl.gov/programs/long-term-care-ombudsman-program" target="_blank" rel="noopener noreferrer">Administration for Community Living: Long-Term Care Ombudsman</a></li>
+    </ul>
+    <p><strong>Freshness policy:</strong> reviewed monthly and after material state guidance changes.</p>
+  </section>
+</GuideArticle>

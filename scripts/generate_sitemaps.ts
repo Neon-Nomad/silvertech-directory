@@ -311,6 +311,7 @@ async function generateSitemaps() {
       `${BASE_URL}/guides/`,
       `${BASE_URL}/guides/what-families-miss-state-regulations/`,
       `${BASE_URL}/guides/assisted-living-vs-nursing-home-real-differences/`,
+      `${BASE_URL}/guides/senior-care-definitions-plain-english-regulations/`,
       `${BASE_URL}/guides/how-to-choose/`,
       `${BASE_URL}/guides/what-it-costs/`,
       `${BASE_URL}/guides/tour-questions/`,
