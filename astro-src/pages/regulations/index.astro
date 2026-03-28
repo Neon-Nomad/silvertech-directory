@@ -5,6 +5,8 @@ import { ALL_STATES } from '../../../src/data/states';
 const title = 'Senior Living Regulations by State | SilverTech Directory';
 const description = 'Browse senior living licensing rules, inspection frameworks, complaint processes, and Medicaid guidance by state. Direct links to state oversight agencies — no referral fees.';
 const canonical = 'https://silvertechdirectory.com/regulations/';
+const playfairHref = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap';
+const heroImageUrl = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=60&w=1280&h=720';
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -76,7 +78,12 @@ const faqSchema = {
 <Base title={title} description={description} canonical={canonical}>
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
   <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link slot="head" rel="preload" as="style" href={playfairHref} />
+  <link slot="head" href={playfairHref} rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript slot="head">
+    <link href={playfairHref} rel="stylesheet" />
+  </noscript>
+  <link slot="head" rel="preload" as="image" href={heroImageUrl} />
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
 
   <div class="container sl-page sl-state-page">
@@ -88,7 +95,16 @@ const faqSchema = {
 
     <section class="sl-state-hero">
       <div class="sl-state-hero-bg">
-        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2000" alt="Regulatory library" />
+        <img
+          src={heroImageUrl}
+          alt="Regulatory library"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          width="1280"
+          height="720"
+          sizes="100vw"
+        />
       </div>
       <div class="sl-state-hero-overlay"></div>
       <div class="sl-state-hero-copy">

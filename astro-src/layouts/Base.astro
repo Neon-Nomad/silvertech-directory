@@ -50,6 +50,7 @@ const clampMetaDescription = (value: string, maxLength = 160): string => {
 
 const normalizedTitle = normalizeWhitespace(title);
 const normalizedDescription = clampMetaDescription(description, 160);
+const publicSansHref = 'https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap';
 
 const organizationSchema = {
   '@context': 'https://schema.org',
@@ -128,7 +129,11 @@ const websiteSchema = {
       <>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="preload" as="style" href={publicSansHref} />
+        <link href={publicSansHref} rel="stylesheet" media="print" onload="this.media='all'" />
+        <noscript>
+          <link href={publicSansHref} rel="stylesheet" />
+        </noscript>
       </>
     )}
     <link rel="stylesheet" href="/styles/astro-base.css" />

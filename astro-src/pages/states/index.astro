@@ -5,6 +5,8 @@ import { ALL_STATES } from '../../../src/data/states';
 const title = 'Senior Living by State | SilverTech Directory';
 const description = 'Browse senior living directories by state and compare local market coverage for assisted living, memory care, and nursing homes.';
 const canonical = 'https://silvertechdirectory.com/states/';
+const playfairHref = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap';
+const heroImageUrl = 'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=60&w=1280&h=720';
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -18,7 +20,12 @@ const breadcrumbSchema = {
 <Base title={title} description={description} canonical={canonical}>
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
   <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link slot="head" rel="preload" as="style" href={playfairHref} />
+  <link slot="head" href={playfairHref} rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript slot="head">
+    <link href={playfairHref} rel="stylesheet" />
+  </noscript>
+  <link slot="head" rel="preload" as="image" href={heroImageUrl} />
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
 
   <div class="container sl-page sl-state-page">
@@ -30,7 +37,16 @@ const breadcrumbSchema = {
 
     <section class="sl-state-hero">
       <div class="sl-state-hero-bg">
-        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=80&w=2000" alt="National coverage background" />
+        <img
+          src={heroImageUrl}
+          alt="National coverage background"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          width="1280"
+          height="720"
+          sizes="100vw"
+        />
       </div>
       <div class="sl-state-hero-overlay"></div>
       <div class="sl-state-hero-copy">

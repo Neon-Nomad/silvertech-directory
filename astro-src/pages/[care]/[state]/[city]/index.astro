@@ -126,6 +126,8 @@ const careSentenceLabel =
       : careType.label.toLowerCase();
 const canonical = `https://silvertechdirectory.com/${careType.slug}/${cityData.stateSlug}/${cityData.citySlug}/`;
 const title = `${h1CareLabel} in ${displayCityName}, ${cityData.stateName}`;
+const cityHeroImageUrl = 'https://images.unsplash.com/photo-1449156059431-787c1be17d0b?auto=format&fit=crop&q=60&w=1280&h=720';
+const cityFontHref = 'https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap';
 
 const licensedCount = facilities.filter((facility) => Boolean(facility.licenseNumber)).length;
 const phoneCount = facilities.filter((facility) => Boolean(facility.verifiedPhone || facility.phone)).length;
@@ -526,7 +528,12 @@ const crossCareLinks = allCareTypes
 <Base title={title} description={description} canonical={canonical} loadFonts={false}>
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
   <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link slot="head" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link slot="head" rel="preload" as="style" href={cityFontHref} />
+  <link slot="head" href={cityFontHref} rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript slot="head">
+    <link href={cityFontHref} rel="stylesheet" />
+  </noscript>
+  <link slot="head" rel="preload" as="image" href={cityHeroImageUrl} />
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
 
   <div
@@ -549,7 +556,16 @@ const crossCareLinks = allCareTypes
 
     <section class="sl-state-hero">
       <div class="sl-state-hero-bg">
-        <img src="https://images.unsplash.com/photo-1449156059431-787c1be17d0b?auto=format&fit=crop&q=80&w=2000" alt={`${displayCityName} local market`} />
+        <img
+          src={cityHeroImageUrl}
+          alt={`${displayCityName} local market`}
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          width="1280"
+          height="720"
+          sizes="100vw"
+        />
       </div>
       <div class="sl-state-hero-overlay"></div>
       <div class="sl-state-hero-copy">

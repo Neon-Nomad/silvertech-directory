@@ -230,6 +230,8 @@ const listedLicenseNote =
 const title = `${h1CareLabel} in ${stateData.stateName} | SilverTech Directory`;
 const description = `Compare ${formatCountLabel(scopedFacilities.length, careUnitSingular, careUnitPlural)} across ${formatCountLabel(activeCities.length, cityUnitSingular, cityUnitPlural)} in ${stateData.stateName}. Explore top city directories, regulations, Medicaid, ombudsman, and trust signals on SilverTech.`;
 const canonical = `https://silvertechdirectory.com/${careType.slug}/${stateData.stateSlug}/`;
+const playfairHref = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap';
+const stateFlagHeroPath = `/state-flags/webp/${stateData.stateAbbr.toLowerCase()}.webp`;
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -383,7 +385,12 @@ const faqSchema = {
 <Base title={title} description={description} canonical={canonical}>
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
   <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link slot="head" rel="preload" as="style" href={playfairHref} />
+  <link slot="head" href={playfairHref} rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript slot="head">
+    <link href={playfairHref} rel="stylesheet" />
+  </noscript>
+  <link slot="head" rel="preload" as="image" href={stateFlagHeroPath} />
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
 
   <div class="container sl-page sl-state-page">
@@ -399,8 +406,18 @@ const faqSchema = {
       <div class="sl-state-hero-bg">
         <picture>
           <source srcset={`/state-flags/avif/${stateData.stateAbbr.toLowerCase()}.avif`} type="image/avif" />
-          <source srcset={`/state-flags/webp/${stateData.stateAbbr.toLowerCase()}.webp`} type="image/webp" />
-          <img src={`/state-flags/webp/${stateData.stateAbbr.toLowerCase()}.webp`} alt="" aria-hidden="true" />
+          <source srcset={stateFlagHeroPath} type="image/webp" />
+          <img
+            src={stateFlagHeroPath}
+            alt=""
+            aria-hidden="true"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+            width="1200"
+            height="800"
+            sizes="100vw"
+          />
         </picture>
       </div>
       <div class="sl-state-hero-overlay"></div>

@@ -293,6 +293,8 @@ const totalFacilities = states.reduce((sum, state) => sum + (state.stats.careTyp
 const topStates = states.slice(0, 5).map((s) => s.stateName);
 
 const canonical = `https://silvertechdirectory.com/${careType.slug}/`;
+const playfairHref = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap';
+const heroImageUrl = 'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=60&w=1280&h=720';
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -327,7 +329,12 @@ const faqSchema = {
 <Base title={content.metaTitle} description={content.metaDesc} canonical={canonical}>
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
   <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link slot="head" rel="preload" as="style" href={playfairHref} />
+  <link slot="head" href={playfairHref} rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript slot="head">
+    <link href={playfairHref} rel="stylesheet" />
+  </noscript>
+  <link slot="head" rel="preload" as="image" href={heroImageUrl} />
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
 
   <div class="container sl-page sl-state-page">
@@ -339,7 +346,16 @@ const faqSchema = {
 
     <section class="sl-state-hero">
       <div class="sl-state-hero-bg">
-        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=80&w=2000" alt={`${careType.label} community`} />
+        <img
+          src={heroImageUrl}
+          alt={`${careType.label} community`}
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          width="1280"
+          height="720"
+          sizes="100vw"
+        />
       </div>
       <div class="sl-state-hero-overlay"></div>
       <div class="sl-state-hero-copy">

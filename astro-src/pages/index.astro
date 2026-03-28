@@ -7,19 +7,35 @@ const careTypes = getCareTypes();
 const title = 'SilverTech Directory | Senior Care & Living Guide';
 const description = 'Search a trusted senior living directory for assisted living and memory care communities. Compare licensed facilities and connect directly.';
 const canonical = 'https://silvertechdirectory.com/';
+const playfairHref = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap';
+const heroImageUrl = 'https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=60&w=1280&h=720';
 
 const featuredStates = ALL_STATES.slice(0, 12);
 ---
 <Base title={title} description={description} canonical={canonical}>
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
   <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link slot="head" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link slot="head" rel="preload" as="style" href={playfairHref} />
+  <link slot="head" href={playfairHref} rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript slot="head">
+    <link href={playfairHref} rel="stylesheet" />
+  </noscript>
+  <link slot="head" rel="preload" as="image" href={heroImageUrl} />
   <link slot="head" rel="stylesheet" href="/styles/senior-living.css" />
 
   <div class="container sl-page sl-state-page">
     <section class="sl-state-hero">
       <div class="sl-state-hero-bg">
-        <img src="https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=2000" alt="Care OS Background" />
+        <img
+          src={heroImageUrl}
+          alt="Care OS Background"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          width="1280"
+          height="720"
+          sizes="100vw"
+        />
       </div>
       <div class="sl-state-hero-overlay"></div>
       <div class="sl-state-hero-copy">
