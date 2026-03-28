@@ -419,13 +419,19 @@ export const Home: React.FC = () => {
         <section className="py-20 bg-warm-white" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6">
             <h2 className="text-2xl font-serif font-bold mb-10">Research &amp; Decision Support</h2>
-            <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 xl:grid-cols-5 gap-6">
               {[
                 {
                   title: 'Regulation blind spots',
                   desc: 'What families miss when they compare communities without checking state oversight first.',
                   cta: 'Read Brief',
                   href: '/guides/what-families-miss-state-regulations',
+                },
+                {
+                  title: 'AL vs nursing home',
+                  desc: 'The real differences between assisted living and nursing home care models.',
+                  cta: 'Compare Models',
+                  href: '/guides/assisted-living-vs-nursing-home-real-differences',
                 },
                 {
                   title: 'How to choose',

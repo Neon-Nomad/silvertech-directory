@@ -1,0 +1,223 @@
+---
+import GuideArticle from '../../components/GuideArticle.astro';
+
+const published = '2026-03-28';
+const modified = '2026-03-28';
+const title = 'Assisted Living vs Nursing Home: The Real Differences Explained | SilverTech Directory';
+const description = 'An answer-first comparison of assisted living vs nursing home care: who each setting is for, what regulations require, cost and payer differences, and the questions families should ask before move-in.';
+const canonical = 'https://silvertechdirectory.com/guides/assisted-living-vs-nursing-home-real-differences/';
+const ogImage = 'https://silvertechdirectory.com/hero.png';
+
+const h1 = 'Assisted Living vs Nursing Home: The Real Differences Explained';
+const deck = 'Families often compare buildings and pricing before they compare care models. This guide explains the practical differences first, then shows how regulations and payer rules change the decision.';
+
+const toc = [
+  { id: 'definition-block', label: 'Definition block: what each setting actually is' },
+  { id: 'direct-answer', label: 'Direct answer: the shortest correct distinction' },
+  { id: 'comparison-table', label: 'Side-by-side: assisted living vs nursing home' },
+  { id: 'what-families-miss', label: 'What families miss when comparing them' },
+  { id: 'decision-framework', label: 'How to choose the right level today' },
+  { id: 'state-reality', label: 'State reality bridge (IN, CA, TX)' },
+  { id: 'questions-to-ask', label: 'Questions to ask before move-in' },
+  { id: 'citations', label: 'Citations and freshness' },
+];
+
+const faqItems = [
+  {
+    question: 'Is a nursing home always better care than assisted living?',
+    answer: 'Not always. Nursing homes provide higher clinical intensity, but the right choice depends on medical complexity, supervision needs, and whether skilled nursing is actually required.',
+  },
+  {
+    question: 'Can someone with dementia stay in assisted living?',
+    answer: 'Sometimes, depending on severity and state-specific memory care rules. When supervision, behaviors, or clinical needs exceed what the community can safely manage, a higher-care setting may be required.',
+  },
+  {
+    question: 'Which option is usually more expensive?',
+    answer: 'Nursing home care is typically more expensive because it includes 24/7 skilled nursing infrastructure. Assisted living may start lower but can rise with care-level add-ons.',
+  },
+  {
+    question: 'Does Medicare pay for assisted living or nursing homes?',
+    answer: 'Medicare generally does not pay long-term custodial assisted living and only covers limited, qualifying skilled nursing episodes. Long-term payment often depends on Medicaid eligibility, VA benefits, or private pay.',
+  },
+  {
+    question: 'What is the fastest way to avoid choosing the wrong setting?',
+    answer: 'Match current clinical needs to the required care model first, then verify state oversight signals and financial terms before comparing amenities.',
+  },
+];
+
+const relatedLinks = [
+  { href: '/guides/what-families-miss-state-regulations/', label: 'What families miss without reviewing state regulations' },
+  { href: '/guides/what-it-costs/', label: 'What senior living actually costs' },
+  { href: '/guides/hidden-costs-of-memory-care/', label: 'Hidden costs of memory care' },
+  { href: '/regulations/', label: 'All state regulations hubs' },
+  { href: '/guides/tour-questions/', label: 'Questions to ask on every tour' },
+];
+---
+<GuideArticle
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogImage={ogImage}
+  h1={h1}
+  deck={deck}
+  heroEyebrow="Care Model Comparison Guide"
+  published={published}
+  modified={modified}
+  readTime="12 min read"
+  toc={toc}
+  faqItems={faqItems}
+  relatedLinks={relatedLinks}
+  resourceLinks={[
+    { href: '/search', label: 'Compare communities by city' },
+    { href: '/states/', label: 'Browse state directories' },
+    { href: '/regulations/', label: 'Review state oversight rules' },
+  ]}
+  keywordPills={[
+    'assisted living vs nursing home',
+    'how to evaluate a facility',
+    'skilled nursing vs assisted living',
+    'state regulations by care type',
+    'senior care decision framework',
+  ]}
+>
+  <section id="definition-block">
+    <h2>Definition block: what each setting actually is</h2>
+    <p><strong>Assisted living is a residential support setting for people who need help with daily activities but usually do not require continuous skilled nursing care.</strong></p>
+    <p><strong>A nursing home is a clinical long-term care setting with licensed nursing oversight designed for residents who need ongoing medical and functional support that exceeds typical assisted living scope.</strong></p>
+    <p><strong>Last updated:</strong> March 28, 2026.</p>
+  </section>
+
+  <section id="direct-answer">
+    <h2>Direct answer: the shortest correct distinction</h2>
+    <ul>
+      <li>Choose assisted living when the primary need is daily support, supervision, and structured help without continuous skilled nursing intensity.</li>
+      <li>Choose nursing home care when medical complexity, nursing frequency, or rehabilitation demand exceeds what assisted living can safely provide.</li>
+      <li>Assisted living is state-regulated residential care; nursing homes are both state-regulated and federally surveyed when Medicare/Medicaid certified.</li>
+      <li>The wrong choice usually happens when families compare amenities first and care intensity second.</li>
+      <li>The decision should be based on need trajectory, not only current comfort.</li>
+    </ul>
+    <p>If you remember one line: this is not "good option vs bad option." It is "right level of care vs wrong level of care."</p>
+  </section>
+
+  <section id="comparison-table">
+    <h2>Side-by-side: assisted living vs nursing home</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Comparison area</th>
+          <th scope="col">Assisted living</th>
+          <th scope="col">Nursing home (skilled nursing facility)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Primary use case</td>
+          <td>Help with ADLs, supervision, medication support, and daily structure.</td>
+          <td>Ongoing skilled nursing, higher acuity monitoring, complex recovery or chronic clinical needs.</td>
+        </tr>
+        <tr>
+          <td>Clinical intensity</td>
+          <td>Lower to moderate clinical intensity by design.</td>
+          <td>High clinical intensity with licensed nursing infrastructure.</td>
+        </tr>
+        <tr>
+          <td>Staffing model</td>
+          <td>Care team focus with varying nurse presence by state and provider model.</td>
+          <td>24/7 nursing expectations and tighter clinical documentation workflows.</td>
+        </tr>
+        <tr>
+          <td>Regulatory context</td>
+          <td>State-level assisted living and memory care rules; standards vary by state.</td>
+          <td>State + federal survey and certification layers for participating facilities.</td>
+        </tr>
+        <tr>
+          <td>Therapy/rehab fit</td>
+          <td>May coordinate therapy, but not built as intensive post-acute rehab setting.</td>
+          <td>Structured rehab and skilled services are central to many care plans.</td>
+        </tr>
+        <tr>
+          <td>Typical payer mix</td>
+          <td>Mostly private pay, long-term care insurance, and waiver-dependent public support.</td>
+          <td>Private pay, Medicaid pathways, and limited qualifying Medicare episodes.</td>
+        </tr>
+        <tr>
+          <td>Common risk if mis-matched</td>
+          <td>Under-support for rising clinical needs, leading to urgent transfer later.</td>
+          <td>Over-medicalized environment relative to current need, often with higher cost burden.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="what-families-miss">
+    <h2>What families miss when comparing them</h2>
+    <ul>
+      <li><strong>Tour quality can hide care mismatch.</strong> A strong hospitality experience does not prove a community can manage increasing acuity.</li>
+      <li><strong>Medication complexity changes placement fit fast.</strong> Frequent changes, monitoring needs, and side-effect management can push needs beyond assisted living capacity.</li>
+      <li><strong>"Memory care available" is not one universal standard.</strong> Unit design, staffing, and behavioral support obligations differ by state and operator.</li>
+      <li><strong>Discharge and transfer rules matter before move-in.</strong> Families often read transfer triggers only after a health event forces a rapid change.</li>
+      <li><strong>Base pricing is not total exposure.</strong> Assisted living may look cheaper at first, but level-of-care escalations and ancillary charges can materially alter monthly cost.</li>
+      <li><strong>Compliance minimums are not personalized care plans.</strong> A facility can be in baseline compliance and still be a poor fit for one resident's trajectory.</li>
+    </ul>
+  </section>
+
+  <section id="decision-framework">
+    <h2>How to choose the right level today</h2>
+    <p>Use a two-step filter before you compare individual communities.</p>
+    <ol>
+      <li><strong>Care-intensity filter:</strong> determine whether current needs are primarily daily-living support or continuous skilled nursing support.</li>
+      <li><strong>Trajectory filter:</strong> estimate likely near-term progression (6 to 18 months) and choose the setting that can safely absorb that change.</li>
+    </ol>
+    <h3>Assisted living is usually the better fit when:</h3>
+    <ul>
+      <li>The resident mainly needs ADL support, reminders, routine, and social structure.</li>
+      <li>Medical needs are stable enough to be coordinated without continuous skilled nursing presence.</li>
+      <li>The family can monitor progression and reassess quickly if risk patterns increase.</li>
+    </ul>
+    <h3>Nursing home care is usually the better fit when:</h3>
+    <ul>
+      <li>Complex medical conditions require frequent clinical intervention or monitoring.</li>
+      <li>Recent hospitalizations, wound care, mobility decline, or medication complexity increase daily clinical load.</li>
+      <li>Safety risk is high enough that delayed escalation would likely cause avoidable harm.</li>
+    </ul>
+    <p>Then score candidate facilities on five decision factors in order: clinical fit, oversight signal strength, staffing clarity, financial transparency, and family logistics (location, visitation, communication reliability).</p>
+    <p>This order prevents a common failure pattern: selecting the most attractive building first and discovering care limitations later.</p>
+  </section>
+
+  <section id="state-reality">
+    <h2>State reality bridge (IN, CA, TX)</h2>
+    <p>These examples show why state context belongs in the decision, even when two facilities market similar services.</p>
+    <h3>Indiana</h3>
+    <p>Indiana families should verify state pathway language, ombudsman channels, and care-setting definitions before assuming equivalence across providers. Start with the <a href="/regulations/indiana/">Indiana regulations hub</a>.</p>
+    <h3>California</h3>
+    <p>California’s size and oversight structure make facility-type identification critical: the right agency path depends on care model and certification context. Use the <a href="/regulations/california/">California regulations hub</a> first.</p>
+    <h3>Texas</h3>
+    <p>Texas families should verify complaint intake process, assisted living provider requirements, and managed-care context before comparing only rates. Use the <a href="/regulations/texas/">Texas regulations hub</a>.</p>
+  </section>
+
+  <section id="questions-to-ask">
+    <h2>Questions to ask before move-in</h2>
+    <ul>
+      <li>What resident needs in your current population would require transfer from assisted living to a higher-care setting?</li>
+      <li>Who is clinically responsible overnight, and what is the response flow for urgent changes in condition?</li>
+      <li>How do you assess and re-tier care levels, and what costs are triggered by reassessment?</li>
+      <li>How are medication changes managed, documented, and communicated to families?</li>
+      <li>What inspection findings in the last review period were most material, and how were they corrected?</li>
+      <li>What are the written discharge/transfer conditions and notice timelines?</li>
+      <li>If needs escalate quickly, what is your handoff protocol and family communication process?</li>
+    </ul>
+  </section>
+
+  <section id="citations">
+    <h2>Citations and freshness</h2>
+    <p>This comparison is maintained as a practical decision source. Always confirm current state and federal rules before contract execution.</p>
+    <ul>
+      <li><a href="https://www.medicare.gov/care-compare/" target="_blank" rel="noopener noreferrer">CMS Care Compare</a></li>
+      <li><a href="https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/LandCProgramHome.aspx" target="_blank" rel="noopener noreferrer">California Department of Public Health: Licensing and Certification</a></li>
+      <li><a href="https://www.hhs.texas.gov/providers/long-term-care-providers/assisted-living-facilities-alf" target="_blank" rel="noopener noreferrer">Texas HHSC Assisted Living Facilities</a></li>
+      <li><a href="https://www.in.gov/health/long-term-carenursing-homes/" target="_blank" rel="noopener noreferrer">Indiana Department of Health: Long-Term Care</a></li>
+      <li><a href="https://www.cms.gov/medicare/medicaid-coordination/home-community-based-services" target="_blank" rel="noopener noreferrer">CMS Home and Community-Based Services</a></li>
+    </ul>
+    <p><strong>Freshness policy:</strong> reviewed monthly and after major payer or regulatory policy changes.</p>
+  </section>
+</GuideArticle>
