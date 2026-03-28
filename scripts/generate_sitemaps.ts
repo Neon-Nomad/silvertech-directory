@@ -313,6 +313,7 @@ async function generateSitemaps() {
       `${BASE_URL}/guides/assisted-living-vs-nursing-home-real-differences/`,
       `${BASE_URL}/guides/senior-care-definitions-plain-english-regulations/`,
       `${BASE_URL}/guides/senior-care-costs-explained-what-you-actually-pay/`,
+      `${BASE_URL}/guides/how-families-pay-for-senior-living-financial-options/`,
       `${BASE_URL}/guides/how-to-choose/`,
       `${BASE_URL}/guides/what-it-costs/`,
       `${BASE_URL}/guides/tour-questions/`,
