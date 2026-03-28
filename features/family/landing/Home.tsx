@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate, Link } from 'react-router-dom';
 import {
@@ -13,9 +13,24 @@ import {
   CheckCircle,
 } from 'lucide-react';
 import { useGeolocation } from '@/src/hooks/useGeolocation';
-import { getLocationSuggestions, LocationSuggestion } from '@/src/utils/locationSuggestions';
 import { ALL_STATES } from '@/src/data/states';
 import { FamilyDashboardProof } from '@/features/family/landing/FamilyDashboardProof';
+
+type LocationSuggestion =
+  | { type: 'city'; label: string; city: string; state: string }
+  | { type: 'zip'; label: string; zip: string; city: string; state: string }
+  | { type: 'state'; label: string; state: string; stateSlug: string };
+
+let locationSuggestionsModulePromise:
+  | Promise<typeof import('@/src/utils/locationSuggestions')>
+  | null = null;
+
+const loadLocationSuggestionsModule = async () => {
+  if (!locationSuggestionsModulePromise) {
+    locationSuggestionsModulePromise = import('@/src/utils/locationSuggestions');
+  }
+  return locationSuggestionsModulePromise;
+};
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -23,6 +38,7 @@ export const Home: React.FC = () => {
   const [suggestions, setSuggestions] = useState<LocationSuggestion[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const { loading, getLocation } = useGeolocation();
+  const lastSuggestionQueryRef = useRef('');
 
   // Store detected city but don't auto-fill — show placeholder until user clicks
   const handleSearch = (e: React.FormEvent) => {
@@ -35,15 +51,20 @@ export const Home: React.FC = () => {
     navigate(`/search?location=${encodeURIComponent(trimmedLocation)}`);
   };
 
-  const handleLocationChange = (value: string) => {
+  const handleLocationChange = async (value: string) => {
     setLocation(value);
-    if (value.trim().length > 0) {
-      setSuggestions(getLocationSuggestions(value));
-      setShowSuggestions(true);
-    } else {
+    const trimmed = value.trim();
+    if (trimmed.length === 0) {
       setSuggestions([]);
       setShowSuggestions(false);
+      return;
     }
+
+    lastSuggestionQueryRef.current = value;
+    const { getLocationSuggestions } = await loadLocationSuggestionsModule();
+    if (lastSuggestionQueryRef.current !== value) return;
+    setSuggestions(getLocationSuggestions(value));
+    setShowSuggestions(true);
   };
 
   const handleSuggestionSelect = (suggestion: LocationSuggestion) => {

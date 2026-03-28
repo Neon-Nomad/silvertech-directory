@@ -37,6 +37,27 @@
     window.__ahrefsLoaded = true;
   }
 
+  function loadGtag() {
+    if (window.__gtagLoaded) {
+      return;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag =
+      window.gtag ||
+      function () {
+        window.dataLayer.push(arguments);
+      };
+    window.gtag("js", new Date());
+    window.gtag("config", "G-9PYQCQYBP2");
+
+    var script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-9PYQCQYBP2";
+    script.async = true;
+    document.head.appendChild(script);
+    window.__gtagLoaded = true;
+  }
+
   function initAds() {
     if (window.__adsPageLevelInitialized) {
       return;
@@ -75,6 +96,7 @@
   }
 
   onPageLoaded(function () {
+    scheduleIdle(loadGtag, 2500);
     scheduleIdle(loadAhrefs, 3000);
     scheduleIdle(loadAdsScriptAndInit, 3500);
   });
