@@ -106,7 +106,9 @@ for (const target of targets) {
   if (!fs.existsSync(target.src)) {
     continue;
   }
-  fs.mkdirSync(target.dest, { recursive: true });
+  // Remove stale files so old route-id variants are not carried across deploys.
+  fs.rmSync(target.dest, { recursive: true, force: true });
+  fs.mkdirSync(path.dirname(target.dest), { recursive: true });
   fs.cpSync(target.src, target.dest, { recursive: true, force: true });
   copiedAny = true;
   console.log('[merge_astro] Copied', target.src, '->', target.dest);

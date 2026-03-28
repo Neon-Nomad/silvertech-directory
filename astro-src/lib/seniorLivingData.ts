@@ -992,46 +992,22 @@ export const getFacilityStaticPaths = (): Array<{
   const paths = new Map<string, { care: string; state: string; city: string; facilitySlug: string }>();
 
   for (const facility of ensureStore().facilities) {
-    const basePath = {
-      care: facility.primaryCareType,
-      state: facility.stateSlug,
-      city: facility.citySlug,
-      facilitySlug: `${facility.publicSlug}-${facility.publicRouteId}`,
-    };
-    paths.set(
-      `${basePath.care}|${basePath.state}|${basePath.city}|${basePath.facilitySlug}`,
-      basePath,
-    );
+    const canonicalFacilitySlug = `${facility.publicSlug}-${facility.publicRouteId}`;
+    const carePaths =
+      facility.careTypes.length > 0
+        ? Array.from(new Set(facility.careTypes))
+        : [facility.primaryCareType];
 
-    const sitemapRoutes = resolveSitemapRoutes(
-      facility.careTypes,
-      facility.stateSlug,
-      facility.citySlug,
-      facility.publicSlug,
-    );
-    for (const route of sitemapRoutes) {
+    for (const care of carePaths) {
       const routePath = {
-        care: route.care,
+        care,
         state: facility.stateSlug,
         city: facility.citySlug,
-        facilitySlug: `${facility.publicSlug}-${route.routeId}`,
+        facilitySlug: canonicalFacilitySlug,
       };
       paths.set(
         `${routePath.care}|${routePath.state}|${routePath.city}|${routePath.facilitySlug}`,
         routePath,
-      );
-    }
-
-    for (const legacyRouteId of facility.legacyRouteIds || []) {
-      const legacyPath = {
-        care: facility.primaryCareType,
-        state: facility.stateSlug,
-        city: facility.citySlug,
-        facilitySlug: `${facility.publicSlug}-${legacyRouteId}`,
-      };
-      paths.set(
-        `${legacyPath.care}|${legacyPath.state}|${legacyPath.city}|${legacyPath.facilitySlug}`,
-        legacyPath,
       );
     }
   }
