@@ -18,5 +18,20 @@ https://www.silvertechdirectory.com/* https://silvertechdirectory.com/:splat 301
 /regulatory-library/* /410.html 410!
 /assisted-living/:state/cities/:city /410.html 410!
 /assisted-living/:state/cities/:city/ /410.html 410!
+# Return stale facility-detail route IDs as gone (valid static pages still shadow these rules)
+/assisted-living/:state/:city/:facility /410.html 410
+/assisted-living/:state/:city/:facility/ /410.html 410
+/memory-care/:state/:city/:facility /410.html 410
+/memory-care/:state/:city/:facility/ /410.html 410
+/nursing-homes/:state/:city/:facility /410.html 410
+/nursing-homes/:state/:city/:facility/ /410.html 410
+/independent-living/:state/:city/:facility /410.html 410
+/independent-living/:state/:city/:facility/ /410.html 410
+/residential-care/:state/:city/:facility /410.html 410
+/residential-care/:state/:city/:facility/ /410.html 410
+/adult-day-services/:state/:city/:facility /410.html 410
+/adult-day-services/:state/:city/:facility/ /410.html 410
+/ccrc/:state/:city/:facility /410.html 410
+/ccrc/:state/:city/:facility/ /410.html 410
 # SPA fallback
 /* /index.html 200

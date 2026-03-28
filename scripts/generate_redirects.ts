@@ -2,6 +2,20 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const rootDir = process.cwd();
+const careTypeSlugs = [
+  'assisted-living',
+  'memory-care',
+  'nursing-homes',
+  'independent-living',
+  'residential-care',
+  'adult-day-services',
+  'ccrc',
+];
+
+const staleFacilityRules = careTypeSlugs.flatMap((care) => [
+  `/${care}/:state/:city/:facility /410.html 410`,
+  `/${care}/:state/:city/:facility/ /410.html 410`,
+]);
 
 const outputLines = [
   '# Auto-generated redirect rules. Do not edit manually.',
@@ -24,6 +38,8 @@ const outputLines = [
   '/regulatory-library/* /410.html 410!',
   '/assisted-living/:state/cities/:city /410.html 410!',
   '/assisted-living/:state/cities/:city/ /410.html 410!',
+  '# Return stale facility-detail route IDs as gone (valid static pages still shadow these rules)',
+  ...staleFacilityRules,
   '# SPA fallback',
   '/* /index.html 200',
 ];
