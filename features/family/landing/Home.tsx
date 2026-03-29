@@ -92,18 +92,18 @@ export const Home: React.FC = () => {
     <div className="min-h-screen bg-warm-white text-charcoal">
       <Helmet>
         <title>SilverTech Directory | Senior Care & Living Guide</title>
-        <meta name="description" content="Search a trusted senior living directory for assisted living and memory care communities. Compare licensed facilities and connect directly." />
+        <meta name="description" content="See every licensed senior care facility, not just the ones that pay to be seen. No brokers, no kickbacks, verified data from state agencies and CMS." />
         <meta name="keywords" content="senior living directory, assisted living directory, memory care directory, licensed senior living facilities, compare senior living communities" />
         <link rel="canonical" href="https://silvertechdirectory.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SilverTech Directory" />
         <meta property="og:title" content="SilverTech Directory | Senior Care & Living Guide" />
-        <meta property="og:description" content="Search assisted living and memory care communities with verified directory data and direct contact information." />
+        <meta property="og:description" content="See every licensed senior care facility, not just the ones that pay to be seen. Verified data from state agencies and CMS." />
         <meta property="og:url" content="https://silvertechdirectory.com/" />
         <meta property="og:image" content="https://silvertechdirectory.com/hero.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="SilverTech Directory | Senior Care & Living Guide" />
-        <meta name="twitter:description" content="Search assisted living and memory care communities with verified directory data and direct contact information." />
+        <meta name="twitter:description" content="See every licensed senior care facility, not just the ones that pay to be seen. Verified data from state agencies and CMS." />
         <meta name="twitter:image" content="https://silvertechdirectory.com/hero.png" />
       </Helmet>
 
@@ -136,14 +136,30 @@ export const Home: React.FC = () => {
             <div className="absolute inset-0 bg-charcoal/50" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-extrabold text-white leading-tight max-w-4xl">
-                The Referral-Free Senior Living Directory
+                See Every Licensed Facility. Not Just the Ones That Pay to Be Seen.
               </h1>
               <p className="mt-6 text-lg text-white/90 max-w-2xl">
-                Unbiased information powered by public data and direct facility verification. No commissions, no call centers, no broker pressure.
+                No brokers. No kickbacks. Just the truth.
               </p>
-              <p className="mt-3 text-sm font-semibold text-white bg-charcoal/55 border border-white/25 rounded-full px-4 py-1.5">
-                Data sources: CMS.gov and state regulatory agencies.
+              <p className="mt-3 text-sm font-semibold text-white bg-charcoal/55 border border-white/25 rounded-full px-4 py-1.5 max-w-2xl">
+                Verified data from state agencies and CMS. No pay-to-play rankings.
               </p>
+              <p className="mt-3 text-sm font-semibold text-white/95">
+                91,000+ facilities mapped nationwide.
+              </p>
+              <div className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-white/95">
+                <a href="/guides/senior-care-costs-explained-what-you-actually-pay/" className="underline underline-offset-4 hover:text-white">
+                  See how pricing actually works
+                </a>
+                <span aria-hidden="true" className="text-white/60">•</span>
+                <a href="/guides/what-families-miss-state-regulations/" className="underline underline-offset-4 hover:text-white">
+                  what families miss before choosing care
+                </a>
+                <span aria-hidden="true" className="text-white/60">•</span>
+                <a href="/guides/assisted-living-vs-nursing-home-real-differences/" className="underline underline-offset-4 hover:text-white">
+                  Compare care types correctly
+                </a>
+              </div>
 
               {/* Search bar */}
               <div className="mt-8 w-full max-w-3xl">
@@ -418,17 +434,18 @@ export const Home: React.FC = () => {
         {/* ── Section 5: Research & Decision Support ── */}
         <section className="py-20 bg-warm-white" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6">
-            <h2 className="text-2xl font-serif font-bold mb-10">5 Anchor Guides</h2>
+            <h2 className="text-2xl font-serif font-bold mb-2">Required Reading Before You Choose Care</h2>
+            <p className="text-slate-600 mb-10">Start here first. These five pages are the decision framework behind the directory.</p>
             <div className="grid md:grid-cols-2 xl:grid-cols-5 gap-6">
               {[
                 {
-                  title: 'Regulation blind spots',
+                  title: 'What families miss before choosing care',
                   desc: 'What families miss when they compare communities without checking state oversight first.',
                   cta: 'Read Brief',
                   href: '/guides/what-families-miss-state-regulations',
                 },
                 {
-                  title: 'AL vs nursing home',
+                  title: 'Compare care types correctly',
                   desc: 'The real differences between assisted living and nursing home care models.',
                   cta: 'Compare Models',
                   href: '/guides/assisted-living-vs-nursing-home-real-differences',
@@ -440,21 +457,21 @@ export const Home: React.FC = () => {
                   href: '/guides/senior-care-definitions-plain-english-regulations',
                 },
                 {
-                  title: 'Real cost ranges',
+                  title: 'What you actually pay (by state)',
                   desc: 'Understand what families actually pay by care level, state variance, and risk.',
                   cta: 'See Costs',
                   href: '/guides/senior-care-costs-explained-what-you-actually-pay',
                 },
                 {
-                  title: 'How families pay',
+                  title: 'How to pay without getting burned',
                   desc: 'Private pay, Medicaid, LTC insurance, and federal/state aid options in one map.',
                   cta: 'Plan Payment',
                   href: '/guides/how-families-pay-for-senior-living-financial-options',
                 },
               ].map((card) => (
-                <Link
+                <a
                   key={card.title}
-                  to={card.href}
+                  href={card.href}
                   className="p-8 bg-white border border-slate-200 rounded-xl hover:shadow-lg transition-shadow"
                 >
                   <h3 className="font-bold text-xl mb-3">{card.title}</h3>
@@ -462,7 +479,7 @@ export const Home: React.FC = () => {
                   <span className="text-gold font-bold text-sm inline-flex items-center gap-1">
                     {card.cta} <ArrowRight className="w-4 h-4" />
                   </span>
-                </Link>
+                </a>
               ))}
             </div>
           </div>
