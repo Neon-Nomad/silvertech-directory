@@ -41,6 +41,7 @@
     "payments:create-pdf-links": "tsx scripts/create_pdf_payment_links.ts",
     "redirects": "npx tsx scripts/generate_redirects.ts",
     "sitemap:verify": "npx tsx scripts/verify_sitemap.ts",
+    "seo:verify-regulations-links": "npx tsx scripts/verify_regulations_links.ts --dir=dist",
     "sitemap:check-live": "npx tsx scripts/check_sitemap_http.ts",
     "monitor:phase1": "npx tsx scripts/monitor_phase1.ts",
     "monitor:phase6": "npx tsx scripts/monitor_phase6.ts",
