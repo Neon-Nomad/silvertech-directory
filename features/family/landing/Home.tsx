@@ -358,10 +358,13 @@ export const Home: React.FC = () => {
         <section className="py-24 border-y border-slate-100" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl font-serif font-bold mb-6">Compare side-by-side.</h2>
+              <h2 className="text-3xl font-serif font-bold mb-6">Compare real costs, staffing, and violations side-by-side.</h2>
               <p className="text-slate-600 mb-8 leading-relaxed">
                 Build your comparison from real listings. Save up to 3 communities while browsing to compare
                 pricing, staffing, and key quality signals in one place.
+              </p>
+              <p className="text-sm font-semibold text-charcoal mb-8">
+                Most directories show marketing. This shows what actually matters.
               </p>
               <div className="space-y-4">
                 {[
