@@ -15,8 +15,8 @@ https://www.silvertechdirectory.com/* https://silvertechdirectory.com/:splat 301
 /states/:state/regulatory/ /regulations/:state/ 301!
 /states/:state/regulations /regulations/:state/ 301!
 /states/:state/regulations/ /regulations/:state/ 301!
-/states/:state/regulations/:topic /regulations/:state/:topic/ 301!
-/states/:state/regulations/:topic/ /regulations/:state/:topic/ 301!
+/states/:state/regulations/:topic /regulations/:state/ 301!
+/states/:state/regulations/:topic/ /regulations/:state/ 301!
 /states/:state/regulations/* /regulations/:state/ 301!
 /regulatory-library /410.html 410!
 /regulatory-library/* /410.html 410!

@@ -113,8 +113,16 @@ const nearby = getNearbyFacilities(
 );
 
 /* ---- SEO metadata ---- */
-const title       = `${displayName} | ${careLabel} in ${displayCity}, ${facility.state}`;
-const description = `${displayName} is a ${careLabel.toLowerCase()} in ${displayCity}, ${facility.state}.${facility.licenseNumber ? ` State license ${facility.licenseNumber}.` : ''} View verified contact info, identifiers, and community questions on SilverTech Directory.`;
+const isNursingHomePage = care === 'nursing-homes';
+const title = isNursingHomePage
+  ? `${displayName} Nursing Home in ${displayCity}, ${facility.state} | License, CMS, Contact`
+  : `${displayName} | ${careLabel} in ${displayCity}, ${facility.state}`;
+const description = isNursingHomePage
+  ? `${displayName} is a nursing home in ${displayCity}, ${facility.state}.${facility.licenseNumber ? ` State license ${facility.licenseNumber}.` : ''}${facility.cmsCertificationNumber ? ` CMS certification ${facility.cmsCertificationNumber}.` : ''} View verified contact info, identifiers, and nearby alternatives.`
+  : `${displayName} is a ${careLabel.toLowerCase()} in ${displayCity}, ${facility.state}.${facility.licenseNumber ? ` State license ${facility.licenseNumber}.` : ''} View verified contact info, identifiers, and community questions on SilverTech Directory.`;
+const heroDirectAnswer = isNursingHomePage
+  ? `${displayName} is a nursing home in ${displayCity}, ${facility.state}. Verify license and CMS identifiers before scheduling a tour.`
+  : `${displayName} is a ${careLabel.toLowerCase()} in ${displayCity}, ${facility.state}. Verify licensing and care fit before scheduling a tour.`;
 
 /* ---- Auto-generated description paragraph ---- */
 const ownerLabel = ownershipLabels[facility.ownershipBucket] || '';
@@ -233,6 +241,7 @@ const breadcrumbSchema = {
           <p class="fp-hero-address">
             {facility.street ? `${facility.street}, ${displayCity}, ${facility.state}${facility.zip ? ' ' + facility.zip : ''}` : `${displayCity}, ${facility.state}`}
           </p>
+          <p>{heroDirectAnswer}</p>
           <div class="fp-hero-actions">
             {phone && (
               <a class="fp-btn fp-btn-gold" href={`tel:${phone.replace(/\D/g,'')}`}>

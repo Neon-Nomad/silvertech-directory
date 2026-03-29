@@ -401,8 +401,8 @@ const renderedSections = activeSections.map((s) => ({
   html: mdToHtml(payload[s.key] || ''),
 }));
 
-const title = `${stateMeta.name} Senior Care Regulations | Licensing, Medicaid & Oversight`;
-const description = `Complete ${stateMeta.name} senior care regulatory guide: licensing authority, Medicaid programs, ombudsman contacts, complaint process, and veterans benefits for assisted living and nursing homes.`;
+const title = `${stateMeta.name} Assisted Living & Nursing Home Regulations | Licensing, Medicaid, Complaints`;
+const description = `${stateMeta.name} regulations for assisted living and nursing homes: licensing authority, Medicaid programs, ombudsman contacts, complaint process, and oversight resources in one page.`;
 const canonical = `https://silvertechdirectory.com/regulations/${stateMeta.slug}/`;
 const playfairHref = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap';
 const heroImageUrl = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=60&w=1280&h=720';
@@ -781,7 +781,7 @@ const breadcrumbSchema = {
           <span class="sl-state-hero-accent">Regulations</span>
         </h1>
         <p class="sl-state-hero-lead">
-          Licensing authority, Medicaid programs, ombudsman contacts, complaint processes, and veterans benefits for senior care facilities in {stateMeta.name}.
+          Looking for {stateMeta.name} assisted living and nursing home regulations? Start here: {licensingAgency} handles licensing and oversight, with state Medicaid, ombudsman, and complaint pathways linked below.
         </p>
         <div class="sl-state-hero-actions">
           <a
@@ -796,6 +796,14 @@ const breadcrumbSchema = {
           </a>
           <a class="sl-btn sl-btn-secondary" href="#licensing">Read Oversight Rules</a>
         </div>
+      </div>
+    </section>
+
+    <section class="sl-state-overview" aria-label={`${stateMeta.name} regulation quick answer`}>
+      <div class="sl-state-overview-copy">
+        <p>
+          <strong>Direct answer:</strong> For families comparing communities in {stateMeta.name}, verify licensing authority first, then check complaint and ombudsman channels, then confirm Medicaid pathway fit before deposit.
+        </p>
       </div>
     </section>
 

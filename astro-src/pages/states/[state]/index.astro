@@ -37,7 +37,7 @@ const licensedPct = stateData.facilityCount > 0 ? Math.round((licensedCount / st
 const currentYear = new Date().getFullYear();
 const regulatoryContext = getRegulatoryContext(stateData.stateSlug);
 
-const title = `Senior Living in ${stateData.stateName} | SilverTech Directory`;
+const title = `Senior Living in ${stateData.stateName} | Assisted Living, Memory Care, Nursing Homes`;
 const description = `Compare ${formatCountLabel(stateData.facilityCount, 'senior living community', 'senior living communities')} across ${stateData.stateName}. Explore assisted living, memory care, and nursing home directories.`;
 const canonical = `https://silvertechdirectory.com/states/${stateData.stateSlug}/`;
 const playfairHref = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap';
@@ -138,12 +138,20 @@ if (regulatoryContext.medicaid?.website) {
           <span class="sl-state-hero-accent">{stateData.stateName}</span>
         </h1>
         <p class="sl-state-hero-lead">
-          Access specialized directories for assisted living, memory care, and nursing homes across {stateData.stateName}. Compare verified providers using official state licensing context.
+          Looking for senior living in {stateData.stateName}? Compare assisted living, memory care, and nursing homes by city, then verify each option with official state regulations.
         </p>
         <div class="sl-state-hero-actions">
           <a class="sl-btn sl-btn-primary" href="#care-types">View Care Types</a>
           <a class="sl-btn sl-btn-secondary" href={`/regulations/${stateData.stateSlug}/`}>State Regulations</a>
         </div>
+      </div>
+    </section>
+
+    <section class="sl-state-overview" aria-label={`${stateData.stateName} quick answer`}>
+      <div class="sl-state-overview-copy">
+        <p>
+          <strong>Direct answer:</strong> Start with care type and city fit, then review {stateData.stateName} licensing, complaint, and ombudsman pathways before shortlisting facilities.
+        </p>
       </div>
     </section>
 
