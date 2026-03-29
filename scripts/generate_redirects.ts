@@ -31,6 +31,7 @@ const outputLines = [
   '# Retired public directory URLs',
   '/facility/* /410.html 410!',
   '/senior-living/* /410.html 410!',
+  '/community/* /410.html 410!',
   '/states/:state/regulatory /regulations/:state/ 301!',
   '/states/:state/regulatory/ /regulations/:state/ 301!',
   '/states/:state/regulations /regulations/:state/ 301!',
