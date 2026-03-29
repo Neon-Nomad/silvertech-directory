@@ -495,7 +495,7 @@ export const Home: React.FC = () => {
                 <a
                   key={card.title}
                   href={card.href}
-                  className="p-8 bg-white border border-slate-200 rounded-xl hover:shadow-lg transition-shadow"
+                  className="p-8 bg-white border-2 border-slate-300 rounded-xl shadow-sm hover:shadow-lg transition-shadow"
                 >
                   <h3 className="font-bold text-xl mb-3">{card.title}</h3>
                   <p className="text-sm text-slate-500 mb-4">{card.desc}</p>
