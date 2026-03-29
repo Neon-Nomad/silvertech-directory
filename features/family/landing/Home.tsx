@@ -144,19 +144,19 @@ export const Home: React.FC = () => {
               <p className="mt-3 text-sm font-semibold text-white bg-charcoal/55 border border-white/25 rounded-full px-4 py-1.5 max-w-2xl">
                 Verified data from state agencies and CMS. No pay-to-play rankings.
               </p>
-              <p className="mt-3 text-sm font-semibold text-white/95">
+              <p className="mt-3 text-base font-bold text-white">
                 91,000+ facilities mapped nationwide.
               </p>
               <div className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-white/95">
-                <a href="/guides/senior-care-costs-explained-what-you-actually-pay/" className="underline underline-offset-4 hover:text-white">
+                <a href="/guides/senior-care-costs-explained-what-you-actually-pay/" className="font-semibold text-white underline decoration-white/70 decoration-2 underline-offset-4 hover:decoration-white hover:text-white">
                   See how pricing actually works
                 </a>
                 <span aria-hidden="true" className="text-white/60">•</span>
-                <a href="/guides/what-families-miss-state-regulations/" className="underline underline-offset-4 hover:text-white">
+                <a href="/guides/what-families-miss-state-regulations/" className="font-semibold text-white underline decoration-white/70 decoration-2 underline-offset-4 hover:decoration-white hover:text-white">
                   what families miss before choosing care
                 </a>
                 <span aria-hidden="true" className="text-white/60">•</span>
-                <a href="/guides/assisted-living-vs-nursing-home-real-differences/" className="underline underline-offset-4 hover:text-white">
+                <a href="/guides/assisted-living-vs-nursing-home-real-differences/" className="font-semibold text-white underline decoration-white/70 decoration-2 underline-offset-4 hover:decoration-white hover:text-white">
                   Compare care types correctly
                 </a>
               </div>
@@ -229,18 +229,38 @@ export const Home: React.FC = () => {
         <section className="bg-white border-b border-slate-100" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6 py-10 grid gap-6 lg:grid-cols-[1.2fr_1fr]">
             <div className="grid sm:grid-cols-3 gap-3">
-              <div className="rounded-xl border border-slate-200 p-4">
-                <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Step 1</p>
-                <p className="text-sm font-semibold text-charcoal mt-1">Search verified listings</p>
-              </div>
-              <div className="rounded-xl border border-slate-200 p-4">
-                <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Step 2</p>
-                <p className="text-sm font-semibold text-charcoal mt-1">Compare care and pricing</p>
-              </div>
-              <div className="rounded-xl border border-slate-200 p-4">
-                <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Step 3</p>
-                <p className="text-sm font-semibold text-charcoal mt-1">Track decisions and move-in outcome</p>
-              </div>
+              {[
+                {
+                  step: 'Step 1',
+                  title: 'Search verified listings',
+                  icon: Search,
+                  cardClass: 'bg-blue-50 border-blue-200',
+                  iconClass: 'text-blue-700',
+                },
+                {
+                  step: 'Step 2',
+                  title: 'Compare care and pricing',
+                  icon: DollarSign,
+                  cardClass: 'bg-amber-50 border-amber-200',
+                  iconClass: 'text-amber-700',
+                },
+                {
+                  step: 'Step 3',
+                  title: 'Track decisions and move-in outcome',
+                  icon: CheckCircle,
+                  cardClass: 'bg-emerald-50 border-emerald-200',
+                  iconClass: 'text-emerald-700',
+                },
+              ].map((item) => (
+                <div
+                  key={item.step}
+                  className={`rounded-xl border p-4 min-h-[140px] flex flex-col items-center justify-center text-center ${item.cardClass}`}
+                >
+                  <item.icon className={`w-6 h-6 ${item.iconClass}`} aria-hidden="true" />
+                  <p className="mt-3 text-xs font-bold uppercase tracking-wider text-slate-600">{item.step}</p>
+                  <p className="mt-1 text-sm font-bold text-charcoal">{item.title}</p>
+                </div>
+              ))}
             </div>
             <Suspense fallback={<div className="h-40 rounded-xl border border-slate-200 bg-slate-50 animate-pulse" />}>
               <FamilyDashboardProof />
