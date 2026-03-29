@@ -18,7 +18,6 @@ const LEGACY_SITEMAP_FILES = ['sitemap-cities.xml', 'sitemap-states.xml'];
 const CARE_TYPE_CITY_CHUNK_SIZE = 50000;
 const DEFAULT_CHUNK_SIZE = 50000;
 const FACILITY_CHUNK_SIZE = 5000;
-const REGULATIONS_TOPIC_SLUGS = ['licensing', 'inspections', 'staffing', 'resident-rights', 'complaints', 'memory-care'];
 const CARE_TYPE_SLUGS = [
   'assisted-living',
   'memory-care',
@@ -277,12 +276,7 @@ async function generateSitemaps() {
     removeFileIfExists(legacyFile);
   }
 
-  const regulatoryEntries = ALL_STATES.flatMap((state) => [
-    toStaticEntry(`${BASE_URL}/regulations/${state.slug}/`, 0.7),
-    ...REGULATIONS_TOPIC_SLUGS.map((topicSlug) =>
-      toStaticEntry(`${BASE_URL}/regulations/${state.slug}/${topicSlug}/`, 0.6),
-    ),
-  ]);
+  const regulatoryEntries = ALL_STATES.map((state) => toStaticEntry(`${BASE_URL}/regulations/${state.slug}/`, 0.7));
 
   const careTypeEntries = CARE_TYPE_SLUGS.map((careTypeSlug) =>
     toStaticEntry(`${BASE_URL}/${careTypeSlug}/`, CARE_TYPE_PAGE_PRIORITY),
