@@ -418,7 +418,7 @@ export const Home: React.FC = () => {
         {/* ── Section 5: Research & Decision Support ── */}
         <section className="py-20 bg-warm-white" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6">
-            <h2 className="text-2xl font-serif font-bold mb-10">Research &amp; Decision Support</h2>
+            <h2 className="text-2xl font-serif font-bold mb-10">5 Anchor Guides</h2>
             <div className="grid md:grid-cols-2 xl:grid-cols-5 gap-6">
               {[
                 {
@@ -434,22 +434,22 @@ export const Home: React.FC = () => {
                   href: '/guides/assisted-living-vs-nursing-home-real-differences',
                 },
                 {
-                  title: 'How to choose',
-                  desc: 'A step-by-step framework for evaluating care levels and community culture.',
-                  cta: 'Read Guide',
-                  href: '/guides/how-to-choose',
+                  title: 'Plain-English definitions',
+                  desc: 'Clear senior-care terms mapped to real decision context and state-rule language.',
+                  cta: 'Use Glossary',
+                  href: '/guides/senior-care-definitions-plain-english-regulations',
                 },
                 {
-                  title: 'What it costs',
-                  desc: 'Understanding community fees, care tiers, and financial assistance programs.',
-                  cta: 'View Pricing',
-                  href: '/guides/what-it-costs',
+                  title: 'Real cost ranges',
+                  desc: 'Understand what families actually pay by care level, state variance, and risk.',
+                  cta: 'See Costs',
+                  href: '/guides/senior-care-costs-explained-what-you-actually-pay',
                 },
                 {
-                  title: 'Tour questions',
-                  desc: 'Printable checklist of critical questions to ask during your facility tour.',
-                  cta: 'Get Checklist',
-                  href: '/guides/tour-questions',
+                  title: 'How families pay',
+                  desc: 'Private pay, Medicaid, LTC insurance, and federal/state aid options in one map.',
+                  cta: 'Plan Payment',
+                  href: '/guides/how-families-pay-for-senior-living-financial-options',
                 },
               ].map((card) => (
                 <Link

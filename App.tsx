@@ -387,6 +387,12 @@ function App() {
                     <Route path="/community-guidelines" element={<CommunityGuidelinesPage />} />
                     <Route path="/resources/:type" element={<ResourcePage />} />
                     <Route path="/resources/emotional-support" element={<EmotionalSupportCatalog />} />
+                    <Route path="/guides" element={<AstroStaticRoute />} />
+                    <Route path="/guides/what-families-miss-state-regulations" element={<AstroStaticRoute />} />
+                    <Route path="/guides/assisted-living-vs-nursing-home-real-differences" element={<AstroStaticRoute />} />
+                    <Route path="/guides/senior-care-definitions-plain-english-regulations" element={<AstroStaticRoute />} />
+                    <Route path="/guides/senior-care-costs-explained-what-you-actually-pay" element={<AstroStaticRoute />} />
+                    <Route path="/guides/how-families-pay-for-senior-living-financial-options" element={<AstroStaticRoute />} />
                     <Route path="/guides/how-to-choose" element={<HowToChooseGuide />} />
                     <Route path="/guides/what-it-costs" element={<CostsGuide />} />
                     <Route path="/guides/tour-questions" element={<TourQuestionsGuide />} />
