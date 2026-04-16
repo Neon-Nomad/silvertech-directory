@@ -1,11 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { createClient } from '@supabase/supabase-js';
-import * as dotenv from 'dotenv';
 import { ALL_STATES } from '../src/data/states';
-
-dotenv.config();
+import {
+  getCareCityStaticPaths,
+  getFacilityStaticPaths,
+  getSeniorLivingStates,
+} from '../astro-src/lib/seniorLivingData';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -32,20 +33,6 @@ const CARE_TYPE_PAGE_PRIORITY = 1.0;
 const CARE_TYPE_STATE_PRIORITY = 0.9;
 const CARE_TYPE_CITY_PRIORITY = 0.8;
 
-const supabaseUrl = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_ANON_KEY;
-
-if (!supabaseUrl || !supabaseKey) {
-  console.error(
-    'Missing Supabase credentials. Ensure .env has SUPABASE_URL/VITE_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY or VITE_SUPABASE_ANON_KEY.',
-  );
-  process.exit(1);
-}
-
-const supabase = createClient(supabaseUrl, supabaseKey, {
-  auth: { persistSession: false },
-});
-
 if (!fs.existsSync(PUBLIC_DIR)) {
   fs.mkdirSync(PUBLIC_DIR, { recursive: true });
 }
@@ -54,20 +41,6 @@ type SitemapEntry = {
   url: string;
   changefreq: 'daily' | 'weekly' | 'monthly';
   priority: number;
-};
-
-type FacilitySeedRow = {
-  id: string;
-  public_slug: string | null;
-  public_route_id: number | null;
-  primary_care_type_slug: string | null;
-  name: string | null;
-  city: string | null;
-  state: string | null;
-  address_line1: string | null;
-  postal_code: string | null;
-  phone: string | null;
-  state_license_number: string | null;
 };
 
 const escapeXml = (value: string): string =>
@@ -79,24 +52,6 @@ const escapeXml = (value: string): string =>
     .replace(/'/g, '&apos;');
 
 const formatPriority = (priority: number): string => priority.toFixed(1);
-
-const toSlug = (value: string): string =>
-  value
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
-
-const STATE_SLUG_BY_ABBR = new Map(
-  ALL_STATES.map((state) => [state.abbreviation.toLowerCase(), state.slug]),
-);
-
-const resolveStateSlug = (state: string | null): string => {
-  const raw = (state || '').trim();
-  if (!raw) return '';
-  const normalized = raw.toLowerCase();
-  return STATE_SLUG_BY_ABBR.get(normalized) || toSlug(raw);
-};
 
 const writeSitemap = (filename: string, entries: SitemapEntry[]): void => {
   const content = `<?xml version="1.0" encoding="UTF-8"?>
@@ -205,70 +160,6 @@ const toStaticEntry = (url: string, priority = 0.6): SitemapEntry => ({
   priority,
 });
 
-type FacilityUrlSeed = {
-  careTypeSlug: string;
-  stateSlug: string;
-  citySlug: string;
-  facilitySlug: string;
-};
-
-const loadFacilityRows = async (): Promise<FacilityUrlSeed[]> => {
-  console.log('Loading facility sitemap seeds directly from Supabase facilities table...');
-  const allFacilities: FacilitySeedRow[] = [];
-  const pageSize = 1000;
-  let page = 0;
-
-  while (true) {
-    const { data, error } = await supabase
-      .from('facilities')
-      .select(
-        'id,public_slug,public_route_id,primary_care_type_slug,name,city,state,address_line1,postal_code,phone,state_license_number,created_at',
-      )
-      .order('created_at', { ascending: true })
-      .order('id', { ascending: true })
-      .range(page * pageSize, (page + 1) * pageSize - 1);
-
-    if (error) {
-      throw error;
-    }
-
-    if (!data || data.length === 0) {
-      break;
-    }
-
-    allFacilities.push(...(data as FacilitySeedRow[]));
-    console.log(`Fetched batch ${page + 1}: ${data.length} facilities`);
-
-    if (data.length < pageSize) {
-      break;
-    }
-
-    page += 1;
-  }
-
-  const routeSeeds = allFacilities
-    .map((facility): FacilityUrlSeed | null => {
-      const publicSlug = toSlug(facility.public_slug || facility.name || '');
-      const publicRouteId = Number(facility.public_route_id);
-      const careTypeSlug = facility.primary_care_type_slug?.trim();
-      const citySlug = toSlug(facility.city || '');
-      const stateSlug = resolveStateSlug(facility.state);
-
-      if (!publicSlug || !Number.isFinite(publicRouteId) || !careTypeSlug || !citySlug || !stateSlug) return null;
-
-      return {
-        careTypeSlug,
-        stateSlug,
-        citySlug,
-        facilitySlug: `${publicSlug}-${Math.trunc(publicRouteId)}`,
-      };
-    })
-    .filter((facility): facility is FacilityUrlSeed => Boolean(facility));
-
-  console.log(`Loaded ${routeSeeds.length} facilities from Supabase.`);
-  return routeSeeds;
-};
-
 async function generateSitemaps() {
   console.log('Starting sitemap generation...');
 
@@ -317,10 +208,9 @@ async function generateSitemaps() {
       `${BASE_URL}/guides/caregiver-resentment-toward-parent/`,
       `${BASE_URL}/guides/sibling-not-helping-parent-care/`,
       `${BASE_URL}/guides/caregiver-at-breaking-point/`,
-      // State cost guides — assisted-living and memory-care for every state
-      ...ALL_STATES.flatMap((s) => [
-        `${BASE_URL}/guides/costs/assisted-living/${s.slug}/`,
-        `${BASE_URL}/guides/costs/memory-care/${s.slug}/`,
+      ...ALL_STATES.flatMap((state) => [
+        `${BASE_URL}/guides/costs/assisted-living/${state.slug}/`,
+        `${BASE_URL}/guides/costs/memory-care/${state.slug}/`,
       ]),
       `${BASE_URL}/products/bathroom-safety`,
       `${BASE_URL}/products/mobility-aids`,
@@ -337,53 +227,50 @@ async function generateSitemaps() {
       .concat(regulatoryEntries, careTypeEntries),
   );
 
-  console.log('Loading state/city/care-type path seeds from data contract...');
-  const { getAllStates, getAllCities, getAllCityCareCombos } = await import(
-    '../astro-src/lib/seniorDataContract'
-  );
-  const [states, cityCareCombos, facilities] = await Promise.all([
-    getAllStates(),
-    getAllCityCareCombos(),
-    loadFacilityRows(),
-  ]);
+  console.log('Loading route seeds from static seniorLivingData inventory...');
+  const states = getSeniorLivingStates();
+  const cityCarePaths = getCareCityStaticPaths();
+  const facilityPaths = getFacilityStaticPaths();
 
   const careTypeStateEntries = uniqueEntries(
-    CARE_TYPE_SLUGS.flatMap((careTypeSlug) =>
-      states.map((stateSlug) => ({
-        url: `${BASE_URL}/${careTypeSlug}/${stateSlug}/`,
-        changefreq: 'weekly' as const,
-        priority: CARE_TYPE_STATE_PRIORITY,
-      })),
+    states.flatMap((state) =>
+      CARE_TYPE_SLUGS
+        .filter((careTypeSlug) => state.stats.careTypeCounts[careTypeSlug] > 0)
+        .map((careTypeSlug) => ({
+          url: `${BASE_URL}/${careTypeSlug}/${state.stateSlug}/`,
+          changefreq: 'weekly' as const,
+          priority: CARE_TYPE_STATE_PRIORITY,
+        })),
     ),
   );
 
   const stateHubEntries = uniqueEntries(
-    states.map((stateSlug) => ({
-      url: `${BASE_URL}/states/${stateSlug}/`,
+    states.map((state) => ({
+      url: `${BASE_URL}/states/${state.stateSlug}/`,
       changefreq: 'weekly' as const,
       priority: 0.7,
     })),
   );
 
   const careTypeCityEntries = uniqueEntries(
-    cityCareCombos.map(({ state, city, careTypeSlug }) => ({
-      url: `${BASE_URL}/${careTypeSlug}/${state}/${city}/`,
-      changefreq: 'weekly',
+    cityCarePaths.map((routePath) => ({
+      url: `${BASE_URL}/${routePath.care}/${routePath.state}/${routePath.city}/`,
+      changefreq: 'weekly' as const,
       priority: CARE_TYPE_CITY_PRIORITY,
     })),
   );
 
   const facilityEntries = uniqueEntries(
-    facilities.map((facility) => ({
-      url: `${BASE_URL}/${facility.careTypeSlug}/${facility.stateSlug}/${facility.citySlug}/${facility.facilitySlug}/`,
+    facilityPaths.map((routePath) => ({
+      url: `${BASE_URL}/${routePath.care}/${routePath.state}/${routePath.city}/${routePath.facilitySlug}/`,
       changefreq: 'weekly' as const,
       priority: 0.7,
     })),
   );
 
-  if (careTypeStateEntries.length === 0 || careTypeCityEntries.length === 0) {
+  if (careTypeStateEntries.length === 0 || careTypeCityEntries.length === 0 || facilityEntries.length === 0) {
     throw new Error(
-      `Data contract returned empty directory seeds (careTypeStates=${careTypeStateEntries.length}, careTypeCities=${careTypeCityEntries.length}). Refusing to emit incomplete sitemap.`,
+      `Static route inventory returned empty seeds (careTypeStates=${careTypeStateEntries.length}, careTypeCities=${careTypeCityEntries.length}, facilities=${facilityEntries.length}). Refusing to emit incomplete sitemap.`,
     );
   }
 

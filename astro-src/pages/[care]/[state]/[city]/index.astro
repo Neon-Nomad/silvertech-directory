@@ -261,6 +261,7 @@ const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   itemListElement: facilities.slice(0, 30).map((facility, index) => {
+    const profileUrl = `https://silvertechdirectory.com/${facility.primaryCareType}/${facility.stateSlug}/${facility.citySlug}/${facility.publicSlug}-${facility.publicRouteId}/`;
     const identifiers: Array<{ '@type': string; name: string; value: string }> = [];
     if (facility.licenseNumber) {
       identifiers.push({ '@type': 'PropertyValue', name: 'State License Number', value: facility.licenseNumber });
@@ -275,7 +276,7 @@ const itemListSchema = {
       item: {
         '@type': 'MedicalBusiness',
         name: toDisplayName(facility.name),
-        url: `https://silvertechdirectory.com/${careType.slug}/${cityData.stateSlug}/${cityData.citySlug}/${facility.publicSlug}-${facility.publicRouteId}/`,
+        url: profileUrl,
         telephone: facility.verifiedPhone || facility.phone || undefined,
         address: {
           '@type': 'PostalAddress',
@@ -524,6 +525,9 @@ const crossCareLinks = allCareTypes
     count: cityData.careTypeCounts[ct.slug as keyof typeof cityData.careTypeCounts] || 0,
     href: `/${ct.slug}/${cityData.stateSlug}/${cityData.citySlug}/`,
   }));
+
+const getFacilityProfileHref = (facility: (typeof facilities)[number]): string =>
+  `/${facility.primaryCareType}/${facility.stateSlug}/${facility.citySlug}/${facility.publicSlug}-${facility.publicRouteId}/`;
 ---
 <Base title={title} description={description} canonical={canonical} loadFonts={false}>
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
@@ -761,7 +765,7 @@ const crossCareLinks = allCareTypes
               <div class="sl-city-card-head">
                 <div>
                   <h3 class="sl-city-card-title">
-                    <a href={`/${careType.slug}/${cityData.stateSlug}/${cityData.citySlug}/${facility.publicSlug}-${facility.publicRouteId}/`}>{toDisplayName(facility.name)}</a>
+                    <a href={getFacilityProfileHref(facility)}>{toDisplayName(facility.name)}</a>
                   </h3>
                   <p class="sl-city-card-address">
                     {[
@@ -814,7 +818,7 @@ const crossCareLinks = allCareTypes
             </div>
 
             <div class="sl-city-card-side">
-              <a class="sl-city-cta" href={`/${careType.slug}/${cityData.stateSlug}/${cityData.citySlug}/${facility.publicSlug}-${facility.publicRouteId}/`}>View Community</a>
+              <a class="sl-city-cta" href={getFacilityProfileHref(facility)}>View Community</a>
             </div>
           </li>
         ))}

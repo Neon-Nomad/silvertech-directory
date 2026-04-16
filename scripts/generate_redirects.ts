@@ -17,6 +17,13 @@ const staleFacilityRules = careTypeSlugs.flatMap((care) => [
   `/${care}/:state/:city/:facility/ /410.html 410`,
 ]);
 
+const staleCareTypeLocationRules = careTypeSlugs.flatMap((care) => [
+  `/${care}/:state /404.html 404`,
+  `/${care}/:state/ /404.html 404`,
+  `/${care}/:state/:city /404.html 404`,
+  `/${care}/:state/:city/ /404.html 404`,
+]);
+
 const outputLines = [
   '# Auto-generated redirect rules. Do not edit manually.',
   '# Canonical host redirects',
@@ -46,6 +53,8 @@ const outputLines = [
   '/regulatory-library/* /410.html 410!',
   '/assisted-living/:state/cities/:city /410.html 410!',
   '/assisted-living/:state/cities/:city/ /410.html 410!',
+  '# Return unresolved care-type state/city routes as not found (valid static pages still shadow these rules)',
+  ...staleCareTypeLocationRules,
   '# Return stale facility-detail route IDs as gone (valid static pages still shadow these rules)',
   ...staleFacilityRules,
   '# SPA fallback',

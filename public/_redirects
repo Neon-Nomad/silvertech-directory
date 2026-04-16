@@ -26,6 +26,35 @@ https://www.silvertechdirectory.com/* https://silvertechdirectory.com/:splat 301
 /regulatory-library/* /410.html 410!
 /assisted-living/:state/cities/:city /410.html 410!
 /assisted-living/:state/cities/:city/ /410.html 410!
+# Return unresolved care-type state/city routes as not found (valid static pages still shadow these rules)
+/assisted-living/:state /404.html 404
+/assisted-living/:state/ /404.html 404
+/assisted-living/:state/:city /404.html 404
+/assisted-living/:state/:city/ /404.html 404
+/memory-care/:state /404.html 404
+/memory-care/:state/ /404.html 404
+/memory-care/:state/:city /404.html 404
+/memory-care/:state/:city/ /404.html 404
+/nursing-homes/:state /404.html 404
+/nursing-homes/:state/ /404.html 404
+/nursing-homes/:state/:city /404.html 404
+/nursing-homes/:state/:city/ /404.html 404
+/independent-living/:state /404.html 404
+/independent-living/:state/ /404.html 404
+/independent-living/:state/:city /404.html 404
+/independent-living/:state/:city/ /404.html 404
+/residential-care/:state /404.html 404
+/residential-care/:state/ /404.html 404
+/residential-care/:state/:city /404.html 404
+/residential-care/:state/:city/ /404.html 404
+/adult-day-services/:state /404.html 404
+/adult-day-services/:state/ /404.html 404
+/adult-day-services/:state/:city /404.html 404
+/adult-day-services/:state/:city/ /404.html 404
+/ccrc/:state /404.html 404
+/ccrc/:state/ /404.html 404
+/ccrc/:state/:city /404.html 404
+/ccrc/:state/:city/ /404.html 404
 # Return stale facility-detail route IDs as gone (valid static pages still shadow these rules)
 /assisted-living/:state/:city/:facility /410.html 410
 /assisted-living/:state/:city/:facility/ /410.html 410

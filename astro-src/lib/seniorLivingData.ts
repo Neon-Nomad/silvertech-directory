@@ -378,6 +378,16 @@ const inferCareType = (rawValue: string): CareTypeSlug => {
   return 'assisted-living';
 };
 
+const normalizeCareTypeSlug = (rawValue: string): CareTypeSlug | null => {
+  const value = rawValue.trim();
+  if (!value) return null;
+
+  const slug = slugify(value) as CareTypeSlug;
+  if (CARE_TYPE_BY_SLUG.has(slug)) return slug;
+
+  return inferCareType(value);
+};
+
 const readJsonFile = <T>(relativePath: string): T | null => {
   const targetPath = path.resolve(ROOT, relativePath);
   if (!fs.existsSync(targetPath)) return null;
@@ -469,6 +479,12 @@ const resolveSitemapRoutes = (
   const looseRoutes = loose.get(looseKey) || [];
   if (looseRoutes.length === 0 || careTypes.length === 0) return [];
   return looseRoutes.map((routeId) => ({ care: careTypes[0], routeId }));
+};
+
+const pickPreferredRouteId = (routeIds: number[]): number | null => {
+  const validRouteIds = routeIds.filter((routeId) => Number.isFinite(routeId) && routeId > 0);
+  if (validRouteIds.length === 0) return null;
+  return validRouteIds.sort((a, b) => b - a)[0];
 };
 
 const roundPct = (value: number): number => Math.round(value * 10) / 10;
@@ -697,11 +713,23 @@ const ensureStore = (): SeniorLivingStore => {
     );
     const enriched = enrichedStrict.get(strictKey)?.[0] || enrichedLoose.get(looseKey)?.[0];
 
-    const careTypes = Array.from(facilityBase.careTypeSet).sort((a, b) => {
+    const enrichedPrimaryCareType = normalizeCareTypeSlug(enriched?.primary_care_type_slug || '');
+    const careTypes = Array.from(
+      new Set(
+        [
+          ...(enrichedPrimaryCareType ? [enrichedPrimaryCareType] : []),
+          ...facilityBase.careTypeSet,
+        ],
+      ),
+    ).sort((a, b) => {
       const aCount = CARE_TYPES.findIndex((item) => item.slug === a);
       const bCount = CARE_TYPES.findIndex((item) => item.slug === b);
       return aCount - bCount;
     });
+    const primaryCareType =
+      (enrichedPrimaryCareType && careTypes.includes(enrichedPrimaryCareType) && enrichedPrimaryCareType) ||
+      careTypes[0] ||
+      'assisted-living';
 
     const publicSlug = (enriched?.public_slug || slugify(facilityBase.name) || 'facility').toLowerCase();
     const enrichedPublicRouteId = Number(enriched?.public_route_id) || 0;
@@ -711,10 +739,11 @@ const ensureStore = (): SeniorLivingStore => {
       facilityBase.citySlug,
       publicSlug,
     );
-    const sitemapPublicRouteId =
-      sitemapRoutes.find((route) => route.care === careTypes[0])?.routeId ||
-      sitemapRoutes[0]?.routeId ||
-      null;
+    const sitemapPrimaryRouteId = pickPreferredRouteId(
+      sitemapRoutes.filter((route) => route.care === primaryCareType).map((route) => route.routeId),
+    );
+    const sitemapFallbackRouteId = pickPreferredRouteId(sitemapRoutes.map((route) => route.routeId));
+    const sitemapPublicRouteId = sitemapPrimaryRouteId || sitemapFallbackRouteId || null;
     const hasProfile = !!(sitemapPublicRouteId || enrichedPublicRouteId);
     const publicRouteId =
       sitemapPublicRouteId ||
@@ -768,7 +797,7 @@ const ensureStore = (): SeniorLivingStore => {
       lastVerifiedDate: facilityBase.lastVerifiedDate,
       dataSource: facilityBase.dataSource,
       careTypes,
-      primaryCareType: careTypes[0] || 'assisted-living',
+      primaryCareType,
     });
   }
 
@@ -993,23 +1022,16 @@ export const getFacilityStaticPaths = (): Array<{
 
   for (const facility of ensureStore().facilities) {
     const canonicalFacilitySlug = `${facility.publicSlug}-${facility.publicRouteId}`;
-    const carePaths =
-      facility.careTypes.length > 0
-        ? Array.from(new Set(facility.careTypes))
-        : [facility.primaryCareType];
-
-    for (const care of carePaths) {
-      const routePath = {
-        care,
-        state: facility.stateSlug,
-        city: facility.citySlug,
-        facilitySlug: canonicalFacilitySlug,
-      };
-      paths.set(
-        `${routePath.care}|${routePath.state}|${routePath.city}|${routePath.facilitySlug}`,
-        routePath,
-      );
-    }
+    const routePath = {
+      care: facility.primaryCareType,
+      state: facility.stateSlug,
+      city: facility.citySlug,
+      facilitySlug: canonicalFacilitySlug,
+    };
+    paths.set(
+      `${routePath.care}|${routePath.state}|${routePath.city}|${routePath.facilitySlug}`,
+      routePath,
+    );
   }
 
   return Array.from(paths.values());
