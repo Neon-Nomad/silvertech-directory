@@ -421,7 +421,7 @@ const breadcrumbSchema = {
 
           {facility.id && (
             <FacilityClaimedProfile
-              client:visible
+              client:only="react"
               facilityId={facility.id}
               identity={{ id: facility.id, publicSlug: facility.publicSlug, state: facility.state, city: facility.city }}
               facilityName={displayName}
