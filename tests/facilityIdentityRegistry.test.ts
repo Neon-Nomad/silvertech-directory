@@ -55,7 +55,24 @@ const matchesPattern = (pattern: string, requestPath: string): boolean => {
   return patternSegments.length === requestSegments.length;
 };
 
-const matchingRules = (requestPath: string): Rule[] => rules.filter((rule) => matchesPattern(rule.from, requestPath));
+// A rule without placeholders or splats matches only its exact path, so those are indexed by path.
+// The remaining (placeholder and splat) rules are few and are checked directly. Original order is preserved.
+const isPatternRule = (rule: Rule): boolean => rule.from.includes(':') || rule.from.includes('*');
+const literalRulesByPath = new Map<string, Rule[]>();
+const patternRules: Rule[] = [];
+for (const rule of rules) {
+  if (isPatternRule(rule)) {
+    patternRules.push(rule);
+    continue;
+  }
+  if (!literalRulesByPath.has(rule.from)) literalRulesByPath.set(rule.from, []);
+  literalRulesByPath.get(rule.from)!.push(rule);
+}
+const matchingRules = (requestPath: string): Rule[] => {
+  const literal = literalRulesByPath.get(requestPath) || [];
+  const pattern = patternRules.filter((rule) => matchesPattern(rule.from, requestPath));
+  return [...literal, ...pattern].sort((a, b) => a.index - b.index);
+};
 const firstMatch = (requestPath: string): Rule | undefined => matchingRules(requestPath)[0];
 
 const sample = <T>(items: T[], count: number): T[] => {
@@ -92,10 +109,10 @@ describe('verified legacy facility redirects', () => {
     }
   });
 
-  it('emits exactly the Search Console evidenced rows, in both trailing-slash forms', () => {
+  it('emits every verified legacy source, in both trailing-slash forms (full-file decision)', () => {
     const emitted = manifest.filter((row) => row.emit === 'yes');
-    expect(emitted.every((row) => row.evidence === 'google')).toBe(true);
-    expect(emitted.length).toBe(832);
+    expect(emitted.length).toBe(manifest.length);
+    expect(emitted.length).toBe(77720);
 
     const legacy301 = rules.filter((rule) => rule.status === 301 && canonicalSet.has(rule.to.slice(1, -1)));
     expect(legacy301.length).toBe(emitted.length * 2);
@@ -118,15 +135,16 @@ describe('verified legacy facility redirects', () => {
         expect(rule!.to, form).toBe(`/${row.to}/`);
       }
     }
-  });
+  }, 120_000);
 
-  it('keeps verified-but-unemitted legacy URLs at 410 rather than redirecting them', () => {
-    const held = sample(manifest.filter((row) => row.emit === 'no'), 500);
-    expect(held.length).toBe(500);
-    for (const row of held) {
+  it('redirects a sample spread across the whole manifest, not only the first rows', () => {
+    const spread = sample(manifest, 3000);
+    expect(spread.length).toBe(3000);
+    for (const row of spread) {
       const rule = firstMatch(`/${row.from}`);
       expect(rule, row.from).toBeDefined();
-      expect(rule!.status, row.from).toBe(410);
+      expect(rule!.status, row.from).toBe(301);
+      expect(rule!.to, row.from).toBe(`/${row.to}/`);
     }
   });
 
