@@ -24,6 +24,17 @@ const staleCareTypeLocationRules = careTypeSlugs.flatMap((care) => [
   `/${care}/:state/:city/ /404.html 404`,
 ]);
 
+// Verified legacy facility URLs. Only rows marked emit=yes are written here (Search Console evidence);
+// the remaining verified rows stay in the manifest until a lookup-based route is chosen.
+const legacyManifestPath = path.join(rootDir, 'data', 'facility-legacy-redirects.tsv');
+const legacyFacilityRedirectLines = fs
+  .readFileSync(legacyManifestPath, 'utf-8')
+  .split('\n')
+  .filter((line) => line && !line.startsWith('#'))
+  .map((line) => line.split('\t'))
+  .filter(([, , , emit]) => emit === 'yes')
+  .flatMap(([from, to]) => [`/${from} /${to}/ 301`, `/${from}/ /${to}/ 301`]);
+
 const outputLines = [
   '# Auto-generated redirect rules. Do not edit manually.',
   '# Canonical host redirects',
@@ -53,6 +64,8 @@ const outputLines = [
   '/regulatory-library/* /410.html 410!',
   '/assisted-living/:state/cities/:city /410.html 410!',
   '/assisted-living/:state/cities/:city/ /410.html 410!',
+  '# Verified legacy facility URLs: one-to-one 301 to the live canonical path. Must precede the 410 facility rules.',
+  ...legacyFacilityRedirectLines,
   '# Return unresolved care-type state/city routes as not found (valid static pages still shadow these rules)',
   ...staleCareTypeLocationRules,
   '# Return stale facility-detail route IDs as gone (valid static pages still shadow these rules)',

@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { ALL_STATES } from '../../src/data/states';
 import { cityContent } from '../../src/data/city_content';
 
@@ -247,13 +248,12 @@ const COST_BANDS: Record<CareTypeSlug, { low: number; high: number }> = {
 };
 
 let storeCache: SeniorLivingStore | null = null;
+const facilityIdentityKeys = new WeakMap<FacilityRecord, string>();
 const hospitalsByStateCache = new Map<string, Record<string, HospitalRecord[]>>();
 let licensingCache: Array<Record<string, string>> | null = null;
 let ombudsmanCache: Record<string, Record<string, string>> | null = null;
 let medicaidCache: Array<Record<string, any>> | null = null;
 let agingAgencyCache: Array<Record<string, any>> | null = null;
-let sitemapRouteExactCache: Map<string, number[]> | null = null;
-let sitemapRouteLooseCache: Map<string, number[]> | null = null;
 let warnedMissingCsv = false;
 
 const ROOT = process.cwd();
@@ -397,94 +397,49 @@ const readJsonFile = <T>(relativePath: string): T | null => {
 const loadFacilitiesIndex = (): Array<Record<string, any>> =>
   readJsonFile<Array<Record<string, any>>>('public/facilities_index.json') || [];
 
-const loadSitemapFacilityRouteHints = (): {
-  exact: Map<string, number[]>;
-  loose: Map<string, number[]>;
-} => {
-  if (sitemapRouteExactCache && sitemapRouteLooseCache) {
-    return { exact: sitemapRouteExactCache, loose: sitemapRouteLooseCache };
-  }
+type FacilityRegistryEntry = { k: string; l: string | null; p: string };
+type FacilityRegistryPath = { care: CareTypeSlug; publicSlug: string; publicRouteId: number };
+type FacilityRegistryIndex = {
+  byKey: Map<string, FacilityRegistryPath>;
+  byLoose: Map<string, FacilityRegistryPath>;
+  paths: string[];
+};
+let facilityRegistryCache: FacilityRegistryIndex | null = null;
 
-  const exact = new Map<string, number[]>();
-  const loose = new Map<string, number[]>();
-  const publicDir = path.resolve(ROOT, 'public');
-  if (!fs.existsSync(publicDir)) {
-    sitemapRouteExactCache = exact;
-    sitemapRouteLooseCache = loose;
-    return { exact, loose };
-  }
+const registryHash = (value: string): string => createHash('sha256').update(value).digest('hex').slice(0, 32);
 
-  const sitemapFiles = fs
-    .readdirSync(publicDir)
-    .filter((file) => /^sitemap-facilities-\d+\.xml$/i.test(file))
-    .sort((a, b) => a.localeCompare(b));
+// The entity match key without its last field (phone), mirroring data/facility-identity-registry.json.
+const looseMatchKey = (key: string): string => key.split('|').slice(0, 5).join('|');
 
-  const routePattern =
-    /<loc>https:\/\/silvertechdirectory\.com\/([^\/<]+)\/([^\/<]+)\/([^\/<]+)\/([^\/<]+)-(\d+)\/<\/loc>/g;
-
-  for (const file of sitemapFiles) {
-    const fullPath = path.join(publicDir, file);
-    const xml = fs.readFileSync(fullPath, 'utf-8');
-    routePattern.lastIndex = 0;
-    let match: RegExpExecArray | null = null;
-    while ((match = routePattern.exec(xml)) !== null) {
-      const care = (match[1] || '').trim().toLowerCase();
-      const state = (match[2] || '').trim().toLowerCase();
-      const city = (match[3] || '').trim().toLowerCase();
-      const publicSlug = (match[4] || '').trim().toLowerCase();
-      const routeId = Number(match[5]);
-      if (!care || !state || !city || !publicSlug || !Number.isFinite(routeId) || routeId <= 0) continue;
-
-      const exactKey = `${care}|${state}|${city}|${publicSlug}`;
-      const looseKey = `${state}|${city}|${publicSlug}`;
-      if (!exact.has(exactKey)) exact.set(exactKey, []);
-      if (!loose.has(looseKey)) loose.set(looseKey, []);
-
-      const exactRoutes = exact.get(exactKey)!;
-      if (!exactRoutes.includes(routeId)) exactRoutes.push(routeId);
-
-      const looseRoutes = loose.get(looseKey)!;
-      if (!looseRoutes.includes(routeId)) looseRoutes.push(routeId);
-    }
-  }
-
-  sitemapRouteExactCache = exact;
-  sitemapRouteLooseCache = loose;
-  return { exact, loose };
+const parseRegistryPath = (value: string): FacilityRegistryPath => {
+  const [care, , , last] = value.split('/');
+  const match = last?.match(/^(.*)-(\d+)$/);
+  if (!care || !match) throw new Error(`invalid facility registry path: ${value}`);
+  return { care: care as CareTypeSlug, publicSlug: match[1], publicRouteId: Number(match[2]) };
 };
 
-const resolveSitemapRoutes = (
-  careTypes: CareTypeSlug[],
-  stateSlug: string,
-  citySlug: string,
-  publicSlug: string,
-): Array<{ care: CareTypeSlug; routeId: number }> => {
-  const { exact, loose } = loadSitemapFacilityRouteHints();
-  const routes: Array<{ care: CareTypeSlug; routeId: number }> = [];
-  const seen = new Set<string>();
-  for (const careType of careTypes) {
-    const key = `${careType}|${stateSlug}|${citySlug}|${publicSlug}`;
-    const routeIds = exact.get(key) || [];
-    for (const routeId of routeIds) {
-      if (!routeId) continue;
-      const dedupeKey = `${careType}|${routeId}`;
-      if (seen.has(dedupeKey)) continue;
-      seen.add(dedupeKey);
-      routes.push({ care: careType, routeId });
-    }
+// Committed canonical identities. Public IDs come from here, not from generated sitemap files,
+// which are gitignored and differ between a clean build and an existing checkout.
+const loadFacilityRegistry = (): FacilityRegistryIndex => {
+  if (facilityRegistryCache) return facilityRegistryCache;
+  const registry = readJsonFile<{ entries: FacilityRegistryEntry[] }>('data/facility-identity-registry.json');
+  if (!registry) throw new Error('data/facility-identity-registry.json is missing');
+  const byKey = new Map<string, FacilityRegistryPath>();
+  const byLoose = new Map<string, FacilityRegistryPath>();
+  const paths: string[] = [];
+  for (const entry of registry.entries) {
+    const parsed = parseRegistryPath(entry.p);
+    byKey.set(entry.k, parsed);
+    if (entry.l) byLoose.set(entry.l, parsed);
+    paths.push(entry.p);
   }
-  if (routes.length > 0) return routes;
-
-  const looseKey = `${stateSlug}|${citySlug}|${publicSlug}`;
-  const looseRoutes = loose.get(looseKey) || [];
-  if (looseRoutes.length === 0 || careTypes.length === 0) return [];
-  return looseRoutes.map((routeId) => ({ care: careTypes[0], routeId }));
+  facilityRegistryCache = { byKey, byLoose, paths };
+  return facilityRegistryCache;
 };
 
-const pickPreferredRouteId = (routeIds: number[]): number | null => {
-  const validRouteIds = routeIds.filter((routeId) => Number.isFinite(routeId) && routeId > 0);
-  if (validRouteIds.length === 0) return null;
-  return validRouteIds.sort((a, b) => b - a)[0];
+const lookupFacilityRegistry = (key: string): FacilityRegistryPath | null => {
+  const registry = loadFacilityRegistry();
+  return registry.byKey.get(registryHash(key)) || registry.byLoose.get(registryHash(looseMatchKey(key))) || null;
 };
 
 const roundPct = (value: number): number => Math.round(value * 10) / 10;
@@ -726,38 +681,30 @@ const ensureStore = (): SeniorLivingStore => {
       const bCount = CARE_TYPES.findIndex((item) => item.slug === b);
       return aCount - bCount;
     });
+    const registered = lookupFacilityRegistry(key);
+    if (registered && !careTypes.includes(registered.care)) {
+      careTypes.push(registered.care);
+      careTypes.sort(
+        (a, b) => CARE_TYPES.findIndex((item) => item.slug === a) - CARE_TYPES.findIndex((item) => item.slug === b),
+      );
+    }
     const primaryCareType =
+      registered?.care ||
       (enrichedPrimaryCareType && careTypes.includes(enrichedPrimaryCareType) && enrichedPrimaryCareType) ||
       careTypes[0] ||
       'assisted-living';
 
-    const publicSlug = (enriched?.public_slug || slugify(facilityBase.name) || 'facility').toLowerCase();
+    const publicSlug =
+      registered?.publicSlug || (enriched?.public_slug || slugify(facilityBase.name) || 'facility').toLowerCase();
     const enrichedPublicRouteId = Number(enriched?.public_route_id) || 0;
-    const sitemapRoutes = resolveSitemapRoutes(
-      careTypes,
-      facilityBase.stateSlug,
-      facilityBase.citySlug,
-      publicSlug,
-    );
-    const sitemapPrimaryRouteId = pickPreferredRouteId(
-      sitemapRoutes.filter((route) => route.care === primaryCareType).map((route) => route.routeId),
-    );
-    const sitemapFallbackRouteId = pickPreferredRouteId(sitemapRoutes.map((route) => route.routeId));
-    const sitemapPublicRouteId = sitemapPrimaryRouteId || sitemapFallbackRouteId || null;
-    const hasProfile = !!(sitemapPublicRouteId || enrichedPublicRouteId);
     const publicRouteId =
-      sitemapPublicRouteId ||
+      registered?.publicRouteId ||
       enrichedPublicRouteId ||
       parseInt(hashString(key || facilityBase.name), 36) ||
       facilities.length + 1;
-    const legacyRouteSet = new Set<number>();
-    for (const route of sitemapRoutes) {
-      if (route.routeId !== publicRouteId) legacyRouteSet.add(route.routeId);
-    }
-    if (enrichedPublicRouteId && enrichedPublicRouteId !== publicRouteId) {
-      legacyRouteSet.add(enrichedPublicRouteId);
-    }
-    const legacyRouteIds = Array.from(legacyRouteSet);
+    const hasProfile = !!(registered || enrichedPublicRouteId);
+    // Former route IDs are handled by data/facility-legacy-redirects.tsv, not by in-app lookup.
+    const legacyRouteIds: number[] = [];
     let id = enriched?.id || `${publicSlug}-${publicRouteId}`;
     if (seenIds.has(id)) id = `${id}-${hashString(`${id}-${facilityBase.city}`)}`;
     seenIds.add(id);
@@ -799,6 +746,23 @@ const ensureStore = (): SeniorLivingStore => {
       careTypes,
       primaryCareType,
     });
+    facilityIdentityKeys.set(facilities[facilities.length - 1], key);
+  }
+
+  const producedPaths = new Map<string, number>();
+  for (const facility of facilities) {
+    const canonicalPath = `${facility.primaryCareType}/${facility.stateSlug}/${facility.citySlug}/${facility.publicSlug}-${facility.publicRouteId}`;
+    producedPaths.set(canonicalPath, (producedPaths.get(canonicalPath) || 0) + 1);
+  }
+  const collisions = [...producedPaths].filter(([, count]) => count > 1).map(([value]) => value);
+  if (collisions.length) {
+    throw new Error(`facility canonical paths collide, e.g. ${collisions.slice(0, 5).join(', ')}`);
+  }
+  const unproduced = loadFacilityRegistry().paths.filter((value) => !producedPaths.has(value));
+  if (unproduced.length) {
+    throw new Error(
+      `${unproduced.length} registered facility canonical paths were not produced, e.g. ${unproduced.slice(0, 5).join(', ')}`,
+    );
   }
 
   facilities.sort((a, b) => {
@@ -934,6 +898,12 @@ const ensureStore = (): SeniorLivingStore => {
 };
 
 export const getAllFacilities = (): FacilityRecord[] => ensureStore().facilities;
+
+// Entity identity used to match one facility across identity schemes (see scripts/build_facility_identity_registry.ts).
+export const getFacilityIdentityKey = (facility: FacilityRecord): string | null => {
+  ensureStore();
+  return facilityIdentityKeys.get(facility) ?? null;
+};
 
 let nearbyCityCache: Map<string, FacilityRecord[]> | null = null;
 
