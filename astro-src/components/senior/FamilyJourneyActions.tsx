@@ -5,14 +5,15 @@ import {
   saveFacilityForCurrentUser,
 } from '../../../src/features/family/journey/client';
 import { trackEvent } from '../../../src/utils/analytics';
-import { resolveFacilityUuid } from '../../lib/facilityUuid';
+import { resolveFacilityUuid, type FacilityIdentity } from '../../lib/facilityUuid';
 
 type Props = {
   facilityId: string;
   facilityName: string;
+  identity: FacilityIdentity;
 };
 
-export default function FamilyJourneyActions({ facilityId, facilityName }: Props) {
+export default function FamilyJourneyActions({ facilityId, facilityName, identity }: Props) {
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
   const [queued, setQueued] = useState(false);
@@ -22,7 +23,7 @@ export default function FamilyJourneyActions({ facilityId, facilityName }: Props
     let cancelled = false;
     void (async () => {
       try {
-        const uuid = await resolveFacilityUuid(facilityId);
+        const uuid = await resolveFacilityUuid(identity);
         if (!uuid || cancelled) return;
 
         if (getQueuedFamilySaveFacilityIds().has(uuid)) {
@@ -57,7 +58,7 @@ export default function FamilyJourneyActions({ facilityId, facilityName }: Props
     });
 
     try {
-      const uuid = await resolveFacilityUuid(facilityId);
+      const uuid = await resolveFacilityUuid(identity);
       if (!uuid) throw new Error('Facility not found.');
       const result = await saveFacilityForCurrentUser(uuid, {
         sourcePath: window.location.pathname,

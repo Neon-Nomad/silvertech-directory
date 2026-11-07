@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getFacilitySupabase, resolveFacilityUuid } from '../../lib/facilityUuid';
+import { getFacilitySupabase, resolveFacilityUuid, type FacilityIdentity } from '../../lib/facilityUuid';
 import FacilityBadgeStrip from './FacilityBadgeStrip';
 import {
   buildFacilityBadgeCredentialSchema,
@@ -23,6 +23,7 @@ type EnrichedProfile = {
 interface Props {
   facilityId: string;
   facilityName: string;
+  identity: FacilityIdentity;
   facilityUrl: string;
   facilitySchemaId: string;
   onlinePresenceUpdatedAt?: string | null;
@@ -53,6 +54,7 @@ function groupByCategory(amenities: Amenity[]): Record<string, Amenity[]> {
 
 export default function FacilityClaimedProfile({
   facilityId,
+  identity,
   facilityName,
   facilityUrl,
   facilitySchemaId,
@@ -69,7 +71,7 @@ export default function FacilityClaimedProfile({
 
   useEffect(() => {
     const load = async () => {
-      const uuid = await resolveFacilityUuid(facilityId);
+      const uuid = await resolveFacilityUuid(identity);
       if (!uuid) {
         setStatus('error');
         return;

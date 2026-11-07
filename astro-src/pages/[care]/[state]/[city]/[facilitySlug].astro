@@ -265,6 +265,7 @@ const breadcrumbSchema = {
               client:only="react"
               facilityId={facility.id}
               facilityName={displayName}
+              identity={{ id: facility.id, publicSlug: facility.publicSlug, state: facility.state, city: facility.city }}
             />
           )}
         </div>
@@ -422,6 +423,7 @@ const breadcrumbSchema = {
             <FacilityClaimedProfile
               client:visible
               facilityId={facility.id}
+              identity={{ id: facility.id, publicSlug: facility.publicSlug, state: facility.state, city: facility.city }}
               facilityName={displayName}
               facilityUrl={canonical}
               facilitySchemaId={facilitySchemaId}
@@ -554,6 +556,7 @@ const breadcrumbSchema = {
               client:only="react"
               facilityId={facility.id}
               facilityName={displayName}
+              identity={{ id: facility.id, publicSlug: facility.publicSlug, state: facility.state, city: facility.city }}
             />
           ) : (
             <div class="fp-qa-cta">

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { getFacilitySupabase, resolveFacilityUuid } from '../../lib/facilityUuid';
+import { getFacilitySupabase, resolveFacilityUuid, type FacilityIdentity } from '../../lib/facilityUuid';
 
 type FacilityAnswer = {
   id: string;
@@ -36,6 +36,7 @@ type QaRow = {
 type Props = {
   facilityId: string;
   facilityName: string;
+  identity: FacilityIdentity;
 };
 
 function groupRows(rows: QaRow[]): FacilityQuestion[] {
@@ -75,7 +76,7 @@ function formatDate(iso: string): string {
   }
 }
 
-export default function FacilityQASection({ facilityId, facilityName }: Props) {
+export default function FacilityQASection({ facilityId, facilityName, identity }: Props) {
   const [questions, setQuestions] = useState<FacilityQuestion[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -85,7 +86,7 @@ export default function FacilityQASection({ facilityId, facilityName }: Props) {
     setLoading(true);
     setError(null);
     try {
-      const uuid = await resolveFacilityUuid(facilityId);
+      const uuid = await resolveFacilityUuid(identity);
       if (!uuid) {
         setQuestions([]);
         return;
