@@ -1,5 +1,5 @@
-import { createClient } from '@supabase/supabase-js';
 import { useCallback, useEffect, useState } from 'react';
+import { getFacilitySupabase, resolveFacilityUuid } from '../../lib/facilityUuid';
 
 type FacilityAnswer = {
   id: string;
@@ -85,14 +85,15 @@ export default function FacilityQASection({ facilityId, facilityName }: Props) {
     setLoading(true);
     setError(null);
     try {
-      const supabase = createClient(
-        import.meta.env.VITE_SUPABASE_URL || '',
-        import.meta.env.VITE_SUPABASE_ANON_KEY || '',
-      );
-      const { data, error: err } = await supabase
+      const uuid = await resolveFacilityUuid(facilityId);
+      if (!uuid) {
+        setQuestions([]);
+        return;
+      }
+      const { data, error: err } = await getFacilitySupabase()
         .from('approved_facility_qa')
         .select('*')
-        .eq('facility_id', facilityId)
+        .eq('facility_id', uuid)
         .order('question_date', { ascending: false });
 
       if (err) throw err;

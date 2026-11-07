@@ -5,13 +5,12 @@ import {
   saveFacilityForCurrentUser,
 } from '../../../src/features/family/journey/client';
 import { trackEvent } from '../../../src/utils/analytics';
+import { resolveFacilityUuid } from '../../lib/facilityUuid';
 
 type Props = {
   facilityId: string;
   facilityName: string;
 };
-
-const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
 export default function FamilyJourneyActions({ facilityId, facilityName }: Props) {
   const [saving, setSaving] = useState(false);
@@ -20,19 +19,19 @@ export default function FamilyJourneyActions({ facilityId, facilityName }: Props
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!UUID_PATTERN.test((facilityId || '').trim())) return;
-
-    const queuedIds = getQueuedFamilySaveFacilityIds();
-    if (queuedIds.has(facilityId)) {
-      setQueued(true);
-      setSaved(true);
-    }
-
     let cancelled = false;
     void (async () => {
       try {
+        const uuid = await resolveFacilityUuid(facilityId);
+        if (!uuid || cancelled) return;
+
+        if (getQueuedFamilySaveFacilityIds().has(uuid)) {
+          setQueued(true);
+          setSaved(true);
+        }
+
         const savedIds = await fetchSavedFacilityIds();
-        if (!cancelled && savedIds.has(facilityId)) {
+        if (!cancelled && savedIds.has(uuid)) {
           setSaved(true);
           setQueued(false);
         }
@@ -48,7 +47,6 @@ export default function FamilyJourneyActions({ facilityId, facilityName }: Props
 
   const onSave = async () => {
     if (saving || saved) return;
-    if (!UUID_PATTERN.test((facilityId || '').trim())) return;
 
     setSaving(true);
     setError(null);
@@ -59,7 +57,9 @@ export default function FamilyJourneyActions({ facilityId, facilityName }: Props
     });
 
     try {
-      const result = await saveFacilityForCurrentUser(facilityId, {
+      const uuid = await resolveFacilityUuid(facilityId);
+      if (!uuid) throw new Error('Facility not found.');
+      const result = await saveFacilityForCurrentUser(uuid, {
         sourcePath: window.location.pathname,
       });
       if (result.status === 'queued') {
@@ -100,7 +100,7 @@ export default function FamilyJourneyActions({ facilityId, facilityName }: Props
     }
   };
 
-  if (!UUID_PATTERN.test((facilityId || '').trim())) return null;
+  if (!facilityId) return null;
 
   return (
     <div style={{ marginTop: '0.75rem' }}>

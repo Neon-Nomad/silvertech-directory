@@ -1,5 +1,5 @@
-import { createClient } from '@supabase/supabase-js';
 import { useEffect, useState } from 'react';
+import { getFacilitySupabase, resolveFacilityUuid } from '../../lib/facilityUuid';
 import FacilityBadgeStrip from './FacilityBadgeStrip';
 import {
   buildFacilityBadgeCredentialSchema,
@@ -68,18 +68,19 @@ export default function FacilityClaimedProfile({
   const [status, setStatus] = useState<'loading' | 'done' | 'error'>('loading');
 
   useEffect(() => {
-    const supabase = createClient(
-      import.meta.env.VITE_SUPABASE_URL || '',
-      import.meta.env.VITE_SUPABASE_ANON_KEY || '',
-    );
-
     const load = async () => {
+      const uuid = await resolveFacilityUuid(facilityId);
+      if (!uuid) {
+        setStatus('error');
+        return;
+      }
+      const supabase = getFacilitySupabase();
       const [profileResult, qaResult] = await Promise.all([
-        supabase.rpc('get_public_facility_enriched', { p_facility_id: facilityId }),
+        supabase.rpc('get_public_facility_enriched', { p_facility_id: uuid }),
         supabase
           .from('approved_facility_qa')
           .select('answer_id', { head: true, count: 'exact' })
-          .eq('facility_id', facilityId)
+          .eq('facility_id', uuid)
           .eq('is_operator', true),
       ]);
 
