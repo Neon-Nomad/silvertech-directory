@@ -182,6 +182,27 @@ test.describe('family interactions at phone width (390px)', () => {
     expect(await cspViolations(page)).toEqual([]);
   });
 
+  test('all five facility-page islands render on a phone, including the map fallback', async ({ page }) => {
+    const log = collectConsole(page);
+    await page.goto(BASE + FACILITY, { waitUntil: 'domcontentloaded' });
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+
+    // Map: below 768px the component shows the Google Maps link instead of the interactive map.
+    await expect(page.getByText('View location details in Google Maps')).toBeAttached({ timeout: 20000 });
+    // Tour scheduler (client-only island).
+    await expect(page.getByLabel('Your email address')).toBeVisible({ timeout: 20000 });
+    // Q&A (client-only island, reads approved questions).
+    await expect(page.getByText('Have a question about', { exact: false })).toBeAttached({ timeout: 20000 });
+    // Claimed profile (client-visible island): locked rows or a claimed badge.
+    await expect(page.locator('.fcp-locked-rows, .fcp-claimed-badge, .fcp-claimed-empty').first()).toBeAttached({ timeout: 20000 });
+    // Saved-facility action (client-only island).
+    await expect(page.getByRole('button', { name: 'Save to Dashboard' })).toBeAttached({ timeout: 20000 });
+
+    await expect(page.locator('astro-island[ssr]')).toHaveCount(0, { timeout: 20000 });
+    expect(log.pageErrors).toEqual([]);
+    expect(await cspViolations(page)).toEqual([]);
+  });
+
   test('city directory has no horizontal overflow', async ({ page }) => {
     await page.goto(BASE + CITY, { waitUntil: 'domcontentloaded' });
     const overflowPx = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
