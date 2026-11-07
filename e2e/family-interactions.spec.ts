@@ -17,8 +17,14 @@ async function recordCspViolations(page: Page) {
   });
 }
 
+// Netlify's deploy-preview toolbar injects a frame from app.netlify.com. Production never does, so
+// that one violation is ignored on preview hosts only. Every other violation still fails.
+const isNetlifyPreview = /netlify\.app/.test(BASE);
+const NETLIFY_TOOLBAR_FRAME = 'frame-src https://app.netlify.com';
+
 async function cspViolations(page: Page): Promise<string[]> {
-  return page.evaluate(() => (window as any).__cspViolations ?? []);
+  const all: string[] = await page.evaluate(() => (window as any).__cspViolations ?? []);
+  return all.filter((v) => !(isNetlifyPreview && v === NETLIFY_TOOLBAR_FRAME));
 }
 
 function collectConsole(page: Page) {

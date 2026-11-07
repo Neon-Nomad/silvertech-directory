@@ -4,11 +4,17 @@ import { expect, test } from '@playwright/test';
 // The local dev server does not apply _headers, so it cannot prove this repair.
 const BASE = process.env.BASE_URL ?? 'https://silvertechdirectory.com';
 const FACILITY = '/assisted-living/minnesota/minneapolis/hope-wellness-center-inc-1127636603/';
+// Netlify's deploy-preview toolbar frames app.netlify.com; production never does. Ignored on preview hosts only.
+const isNetlifyPreview = /netlify\.app/.test(BASE);
 
 test.describe('facility page family actions', () => {
   test('islands hydrate, actions render, and no CSP violations are logged', async ({ page }) => {
     const violations: string[] = [];
-    page.on('console', (m) => { if (/Content Security Policy/.test(m.text())) violations.push(m.text()); });
+    page.on('console', (m) => {
+      if (!/Content Security Policy/.test(m.text())) return;
+      if (isNetlifyPreview && /app\.netlify\.com/.test(m.text())) return;
+      violations.push(m.text());
+    });
     await page.goto(BASE + FACILITY, { waitUntil: 'domcontentloaded' });
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     await expect(page.locator('astro-island[ssr]')).toHaveCount(0, { timeout: 20000 });
