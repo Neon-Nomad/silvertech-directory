@@ -153,3 +153,33 @@ test.describe('family interactions on the city directory', () => {
     expect(await cspViolations(page)).toEqual([]);
   });
 });
+
+test.describe('family interactions at phone width (390px)', () => {
+  test.use({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+
+  test.beforeEach(async ({ page }) => {
+    await recordCspViolations(page);
+  });
+
+  test('facility page has no horizontal overflow and the save control is reachable', async ({ page }) => {
+    const log = collectConsole(page);
+    await page.goto(BASE + FACILITY, { waitUntil: 'domcontentloaded' });
+
+    const overflowPx = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(overflowPx, 'horizontal overflow in CSS pixels').toBeLessThanOrEqual(0);
+
+    const save = page.getByRole('button', { name: 'Save to Dashboard' });
+    await save.scrollIntoViewIfNeeded();
+    await expect(save).toBeVisible({ timeout: 20000 });
+
+    expect(log.pageErrors).toEqual([]);
+    expect(await cspViolations(page)).toEqual([]);
+  });
+
+  test('city directory has no horizontal overflow', async ({ page }) => {
+    await page.goto(BASE + CITY, { waitUntil: 'domcontentloaded' });
+    const overflowPx = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(overflowPx, 'horizontal overflow in CSS pixels').toBeLessThanOrEqual(0);
+    expect(await cspViolations(page)).toEqual([]);
+  });
+});
