@@ -130,7 +130,7 @@ const websiteSchema = {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="preload" as="style" href={publicSansHref} />
-        <link href={publicSansHref} rel="stylesheet" media="print" onload="this.media='all'" />
+        <link href={publicSansHref} rel="stylesheet" media="print" data-font-onload />
         <noscript>
           <link href={publicSansHref} rel="stylesheet" />
         </noscript>
@@ -175,6 +175,7 @@ const websiteSchema = {
         </div>
       </div>
     </footer>
+    <script is:inline src="/font-onload.js"></script>
   </body>
 </html>
 
