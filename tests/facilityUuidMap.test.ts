@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   matchIdentities,
   parse,
+  parseReviewed,
   reconcile,
   serialize,
   streetKey,
@@ -149,8 +150,38 @@ describe('validation', () => {
   it('rejects a changed mapping that has not been reviewed, and accepts it once reviewed', () => {
     const changed: MapRow[] = [{ ...good[0], uuid: U(7) }, good[1]];
     const previous = good;
-    expect(run(changed, { previous }).join(' ')).toMatch(/changed without review: a\/x/);
+    expect(run(changed, { previous }).join(' ')).toMatch(/identity changed .* without review: a\/x/);
     expect(run(changed, { previous, reviewedChanges: ['a/x'] })).toEqual([]);
+  });
+
+  it('requires review for a new identity that is mapped, but not for a new identity that stays unresolved', () => {
+    const added: MapRow = { path: 'c/z', status: 'mapped', uuid: U(9), reason: 'unique', identifiers: ['name', 'street'], score: 7 };
+    const unresolvedNew: MapRow = { path: 'c/z', status: 'unresolved', uuid: '', reason: 'no_match', candidates: [] };
+    const grown = ['a/x', 'b/y', 'c/z'];
+    const withAdded = [...good, added];
+    expect(run(withAdded, { previous: good, canonicalPaths: grown }).join(' ')).toMatch(/identity added as mapped without review: c\/z/);
+    expect(run(withAdded, { previous: good, canonicalPaths: grown, reviewedChanges: ['c/z'] })).toEqual([]);
+    expect(run([...good, unresolvedNew], { previous: good, canonicalPaths: grown })).toEqual([]);
+  });
+
+  it('requires review for a removed identity and a changed unresolved reason', () => {
+    expect(run([good[0]], { previous: good, requireComplete: false }).join(' ')).toMatch(/identity removed without review: b\/y/);
+    const reason: MapRow[] = [good[0], { ...good[1], reason: 'duplicate_rows' } as MapRow];
+    expect(run(reason, { previous: good }).join(' ')).toMatch(/identity changed \(unresolved:no_match -> unresolved:duplicate_rows\) without review: b\/y/);
+  });
+
+  it('rejects a review entry that matches no identity change', () => {
+    expect(run(good, { previous: good, reviewedChanges: ['a/x'] }).join(' ')).toMatch(/review entry matches no identity change: a\/x/);
+  });
+
+  it('allows an identity with no row in build mode, and still requires one when complete coverage is requested', () => {
+    expect(run([good[0]], { requireComplete: false })).toEqual([]);
+    expect(run([good[0]]).join(' ')).toMatch(/missing identity mapping: b\/y/);
+  });
+
+  it('parses reviewed-change lines and requires a reviewer and a reason', () => {
+    expect(parseReviewed('# comment\na/x\towner\tcity renamed\n')).toEqual([{ path: 'a/x', reviewer: 'owner', reason: 'city renamed' }]);
+    expect(() => parseReviewed('a/x\t\treason')).toThrow(/needs path, reviewer and reason/);
   });
 
   it('rejects a decision without an approver, and a decision not reflected in the map', () => {

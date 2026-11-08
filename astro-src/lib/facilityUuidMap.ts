@@ -18,12 +18,23 @@ function load(): Map<string, Entry> {
   return out;
 }
 
-// Returns the database UUID for a canonical facility path, or null when the identity is unresolved.
+// Returns the database UUID for a canonical facility path, or null when the identity is unresolved or has no map row.
 // An unresolved identity is never guessed: the page renders the explicit "not available" state instead.
+// A facility with no map row (added after the last regeneration) takes the same path, so a new listing
+// cannot break the build. The regeneration workflow in docs/uuid-map-maintenance.md closes that gap.
+let missingRows = 0;
 export function getFacilityUuid(canonicalPath: string): string | null {
   if (!entries) entries = load();
   const entry = entries.get(canonicalPath);
-  if (!entry) throw new Error(`no facility UUID mapping row for canonical path: ${canonicalPath}`);
+  if (!entry) {
+    missingRows += 1;
+    if (missingRows === 1) console.warn('[facilityUuidMap] identity without a map row renders as unavailable; regenerate the map to cover it');
+    return null;
+  }
   return entry.status === 'mapped' ? entry.uuid : null;
+}
+
+export function missingRowCount(): number {
+  return missingRows;
 }
 

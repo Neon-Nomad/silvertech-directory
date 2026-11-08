@@ -1,13 +1,15 @@
 // Validates data/facility-uuid-map.tsv against the canonical identities, the reviewed decisions, and its provenance.
 // Exit status 1 on any problem. Run from the repository root:
-//   npx tsx scripts/validate_facility_uuid_map.ts
-//   npx tsx scripts/validate_facility_uuid_map.ts --previous <older map file> --reviewed <file of paths>
-//   npx tsx scripts/validate_facility_uuid_map.ts --verify-live   (also checks each mapped UUID against the database)
+//   npx tsx scripts/validate_facility_uuid_map.ts                      (build gate: integrity only; uncovered facilities are reported, not failed)
+//   npx tsx scripts/validate_facility_uuid_map.ts --require-complete   (every canonical identity must have a row)
+//   npx tsx scripts/validate_facility_uuid_map.ts --previous <older map file> --reviewed <reviewed file>
+//   npx tsx scripts/validate_facility_uuid_map.ts --verify-live        (also checks each mapped UUID against the database)
+// The reviewed file format is documented in docs/uuid-map-maintenance.md.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { parse, validate, type Decision, type DatabaseRow, type StaticIdentity } from './lib/facilityUuidMap';
+import { parse, parseReviewed, validate, type Decision, type DatabaseRow, type StaticIdentity } from './lib/facilityUuidMap';
 
 const root = process.cwd();
 const args = process.argv.slice(2);
@@ -61,18 +63,22 @@ async function main() {
   const prevFile = flag('--previous');
   if (prevFile) previous = parse(fs.readFileSync(prevFile, 'utf8'));
   const reviewedFile = flag('--reviewed');
-  const reviewed = reviewedFile ? fs.readFileSync(reviewedFile, 'utf8').split('\n').map((s) => s.trim()).filter(Boolean) : [];
+  const reviewed = reviewedFile ? parseReviewed(fs.readFileSync(reviewedFile, 'utf8')).map((r) => r.path) : [];
 
   const verifyLive = args.includes('--verify-live');
+  const requireComplete = args.includes('--require-complete');
   const database = verifyLive ? await liveRows(rows.filter((r) => r.status === 'mapped').map((r) => (r as any).uuid)) : undefined;
 
-  problems.push(...validate({ rows, canonicalPaths: statics.map((s) => s.path), statics, decisions, previous, reviewedChanges: reviewed, database }));
+  problems.push(...validate({ rows, canonicalPaths: statics.map((s) => s.path), statics, decisions, previous, reviewedChanges: reviewed, database, requireComplete }));
 
   if (problems.length) {
     console.error(`facility UUID map: ${problems.length} problem(s)`);
     for (const p of problems.slice(0, 200)) console.error(' - ' + p);
     process.exit(1);
   }
+  const covered = new Set(rows.map((r) => r.path));
+  const uncovered = statics.filter((s) => !covered.has(s.path)).length;
+  if (uncovered) console.warn(`note: ${uncovered} facility identities have no map row; their pages render the unavailable state until the map is regenerated`);
   console.log(`facility UUID map: ${rows.length} identities, ${rows.filter((r) => r.status === 'mapped').length} mapped, all checks passed${verifyLive ? ' (live database verified)' : ''}`);
 }
 

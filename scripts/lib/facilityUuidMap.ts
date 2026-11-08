@@ -206,7 +206,43 @@ export function summarize(rows: MapRow[]) {
   return { total: rows.length, mapped: rows.filter((r) => r.status === 'mapped').length, unresolved: rows.filter((r) => r.status === 'unresolved').length, counts };
 }
 
+const keyOf = (r: MapRow) => (r.status === 'mapped' ? `mapped:${r.uuid}` : `unresolved:${r.reason}`);
+
+// Every identity whose mapping differs from the previous map. needsReview marks identity changes:
+// a mapping that changed, a mapping removed, or a new identity that is mapped. A new identity that
+// stays unresolved is not an identity change, so it needs no review.
+export type MapChange = { path: string; before: string | null; after: string | null; needsReview: boolean };
+
+export function changesAgainst(previous: MapRow[], rows: MapRow[]): MapChange[] {
+  const prev = new Map(previous.map((r) => [r.path, r]));
+  const next = new Map(rows.map((r) => [r.path, r]));
+  const changes: MapChange[] = [];
+  for (const r of rows) {
+    const before = prev.get(r.path);
+    if (!before) {
+      changes.push({ path: r.path, before: null, after: keyOf(r), needsReview: r.status === 'mapped' });
+    } else if (keyOf(before) !== keyOf(r)) {
+      changes.push({ path: r.path, before: keyOf(before), after: keyOf(r), needsReview: true });
+    }
+  }
+  for (const p of prev.keys()) {
+    if (!next.has(p)) changes.push({ path: p, before: keyOf(prev.get(p)!), after: null, needsReview: true });
+  }
+  return changes.sort((a, b) => (a.path < b.path ? -1 : a.path > b.path ? 1 : 0));
+}
+
+// Reviewed-change file: one line per approved identity change, "path<TAB>reviewer<TAB>reason".
+export function parseReviewed(text: string): { path: string; reviewer: string; reason: string }[] {
+  return text.split('\n').map((l) => l.replace(/\r$/, '')).filter((l) => l.trim() && !l.startsWith('#')).map((line) => {
+    const [path, reviewer, reason] = line.split('\t');
+    if (!path || !reviewer || !reason) throw new Error(`reviewed line needs path, reviewer and reason: ${line.slice(0, 120)}`);
+    return { path: path.trim(), reviewer: reviewer.trim(), reason: reason.trim() };
+  });
+}
+
 // Validation: returns a list of problems. An empty list means the map may be used.
+// requireComplete (default true): every canonical identity must have a row. The Netlify build passes false,
+// so a facility added after the last regeneration renders the explicit unavailable state instead of failing the build.
 export function validate(input: {
   rows: MapRow[];
   canonicalPaths: string[];
@@ -215,6 +251,7 @@ export function validate(input: {
   decisions: Decision[];
   previous?: MapRow[];
   reviewedChanges?: string[];
+  requireComplete?: boolean;
 }): string[] {
   const problems: string[] = [];
   const canonical = new Set(input.canonicalPaths);
@@ -245,7 +282,9 @@ export function validate(input: {
     }
   }
 
-  for (const p of canonical) if (!seenPaths.has(p)) problems.push(`missing identity mapping: ${p}`);
+  if (input.requireComplete !== false) {
+    for (const p of canonical) if (!seenPaths.has(p)) problems.push(`missing identity mapping: ${p}`);
+  }
 
   for (const d of input.decisions) {
     const row = input.rows.find((r) => r.path === d.path);
@@ -258,15 +297,14 @@ export function validate(input: {
 
   if (input.previous) {
     const reviewed = new Set(input.reviewedChanges || []);
-    const prev = new Map(input.previous.map((r) => [r.path, r]));
-    for (const r of input.rows) {
-      const before = prev.get(r.path);
-      if (!before) continue;
-      const beforeKey = before.status === 'mapped' ? `mapped:${before.uuid}` : `unresolved:${before.reason}`;
-      const afterKey = r.status === 'mapped' ? `mapped:${r.uuid}` : `unresolved:${r.reason}`;
-      if (beforeKey !== afterKey && !reviewed.has(r.path)) problems.push(`mapping changed without review: ${r.path} (${beforeKey} -> ${afterKey})`);
+    const changes = changesAgainst(input.previous, input.rows);
+    const reviewable = new Set(changes.filter((c) => c.needsReview).map((c) => c.path));
+    for (const c of changes) {
+      if (!c.needsReview || reviewed.has(c.path)) continue;
+      const what = c.after === null ? 'removed' : c.before === null ? 'added as mapped' : `changed (${c.before} -> ${c.after})`;
+      problems.push(`identity ${what} without review: ${c.path}`);
     }
-    for (const p of prev.keys()) if (!seenPaths.has(p)) problems.push(`mapping removed without review: ${p}`);
+    for (const p of reviewed) if (!reviewable.has(p)) problems.push(`review entry matches no identity change: ${p}`);
   }
 
   return problems;

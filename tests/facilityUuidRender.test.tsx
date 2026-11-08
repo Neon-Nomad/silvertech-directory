@@ -20,8 +20,8 @@ describe('build-time UUID lookup', () => {
     expect(getFacilityUuid(TIED)).toBeNull();
   });
 
-  it('throws for a canonical path that has no mapping row', () => {
-    expect(() => getFacilityUuid('no/such/identity')).toThrow(/no facility UUID mapping row/);
+  it('renders an identity with no mapping row as unavailable (null), so a new listing cannot break the build', () => {
+    expect(getFacilityUuid('no/such/identity')).toBeNull();
   });
 });
 
