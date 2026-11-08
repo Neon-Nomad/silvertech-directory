@@ -702,6 +702,14 @@ const DirectorySearch: React.FC = () => {
       }
     }
 
+    // A location that is only a state ("MN", "Minnesota") searches the whole state. Without this it was
+    // treated as a city, and a facility name typed with it was dropped.
+    const stateOnlyMatch = !zipMatch && rawLocation && !rawLocation.includes(',') ? findStateByInput(rawLocation) : null;
+    if (stateOnlyMatch) {
+      city = '';
+      resolvedStateSlug = stateOnlyMatch.slug;
+    }
+
     if (claimMode && !zipMatch && !geoCity) {
       setError('Enter a 5-digit ZIP code or use your location to find your facility.');
       return;
