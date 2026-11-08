@@ -4,6 +4,22 @@
 -- Deployment order: apply this migration, then load supabase/seed-data/facility_claim_eligibility.sql,
 -- then deploy the frontend. Until the seed is loaded, no facility is claimable and claims fail safely.
 
+-- Stop before changing anything if facility_claims has an insert policy this migration does not know about.
+-- Postgres ORs permissive policies, so an unknown one would let claims bypass the check below.
+do $$
+begin
+  if exists (
+    select 1
+    from pg_policies
+    where schemaname = 'public'
+      and tablename = 'facility_claims'
+      and cmd in ('INSERT', 'ALL')
+      and policyname not in ('Users can create pending claims', 'Users can create pending claims on claimable facilities')
+  ) then
+    raise exception 'facility_claims has an unexpected insert policy; review it before applying 20261108150000';
+  end if;
+end $$;
+
 create table if not exists public.facility_claim_eligibility (
   facility_id uuid primary key references public.facilities(id) on delete cascade,
   source text not null default 'facility-uuid-map',
@@ -54,6 +70,8 @@ grant execute on function public.is_claimable_facility(uuid) to anon, authentica
 -- Replaces the insert policy from 20260222124500. Ownership and eligibility are checked by the database,
 -- so a direct API call cannot claim a duplicate, conflicting, or already-owned facility.
 drop policy if exists "Users can create pending claims" on public.facility_claims;
+-- Also drop this migration's own policy, so a re-run replaces it instead of failing.
+drop policy if exists "Users can create pending claims on claimable facilities" on public.facility_claims;
 create policy "Users can create pending claims on claimable facilities"
   on public.facility_claims
   for insert
