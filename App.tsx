@@ -15,6 +15,7 @@ import { LegacyRouteRetired } from '@/components/ui/LegacyRouteRetired';
 import { ALL_STATES } from '@/src/data/states';
 
 const DirectorySearch = lazy(() => import('@/features/family/discovery/DirectorySearch'));
+const ComparePage = lazy(() => import('@/features/family/discovery/ComparePage'));
 const FamilyDashboard = lazy(() => import('@/features/family/dashboard/FamilyDashboard'));
 const OperatorDashboard = lazy(() => import('@/features/operator/dashboard/OperatorDashboard'));
 const OperatorLogin = lazy(() => import('@/features/auth/OperatorLogin'));
@@ -342,6 +343,7 @@ function App() {
                     <Routes>
                       <Route path="/" element={<Home />} />
                     <Route path="/search" element={<DirectorySearch />} />
+                    <Route path="/compare" element={<ComparePage />} />
                     <Route path="/family/dashboard" element={<FamilyDashboardRouteGate />} />
                     <Route path="/community/:communityId" element={<LegacyRouteRetired />} />
                       <Route path="/facility/:id" element={<LegacyRouteRetired />} />
