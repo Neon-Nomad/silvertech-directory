@@ -296,6 +296,8 @@ const enrichSearchResults = async (
 
   const detailById = new Map<string, SearchFacilityDetailRow>();
   try {
+    // canonical_payload is not selected. Production has no such column, and selecting it failed this whole
+    // request on every search, which dropped license numbers, care types, and Medicare status too.
     const { data, error } = await supabase
       .from('facilities')
       .select(`
@@ -306,7 +308,6 @@ const enrichSearchResults = async (
         website_url,
         state_license_number,
         cms_certification_number,
-        canonical_payload,
         facility_licensing(license_number,bed_capacity),
         facility_care_types(care_types(name,slug))
       `)
