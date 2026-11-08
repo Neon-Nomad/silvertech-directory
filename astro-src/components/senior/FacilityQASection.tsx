@@ -79,7 +79,8 @@ function formatDate(iso: string): string {
 
 export default function FacilityQASection({ facilityId, facilityName, facilityUuid }: Props) {
   const [questions, setQuestions] = useState<FacilityQuestion[]>([]);
-  const [loading, setLoading] = useState(true);
+  // Start in the loading state only when there is a UUID to load; an unresolved listing shows its message at once.
+  const [loading, setLoading] = useState(Boolean(facilityUuid));
   const [error, setError] = useState<string | null>(null);
 
   const load = useCallback(async () => {
