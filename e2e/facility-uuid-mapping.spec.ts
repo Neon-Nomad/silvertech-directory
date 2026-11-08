@@ -39,6 +39,9 @@ test.describe('unresolved facility', () => {
     await expect(page.getByText('not available for this listing yet', { exact: false }).first()).toBeAttached({ timeout: 20000 });
     await expect(page.getByRole('button', { name: 'Save to Dashboard' })).toHaveCount(0);
     await expect(page.getByText('Community questions for', { exact: false })).toBeAttached({ timeout: 20000 });
+    // Claimed profile: an unresolved listing shows the same locked placeholders as an unclaimed listing.
+    await expect(page.locator('.fcp-locked-rows').first()).toBeAttached({ timeout: 20000 });
+    await expect(page.locator('.fcp-claimed-badge')).toHaveCount(0);
     await page.waitForTimeout(1500);
     const facilityScoped = calls.filter((u) => /facility_id=eq\.|p_facility_id/.test(u) || /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/.test(u));
     expect(facilityScoped).toEqual([]);
