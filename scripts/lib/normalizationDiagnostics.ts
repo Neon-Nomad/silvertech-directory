@@ -92,17 +92,34 @@ export const planBatch = <T extends { raw_event_id: string }>(events: T[], seen:
   return fresh;
 };
 
-export type BatchOutcome = { fresh: number; statusWritten: number; transient: number; systemic: number };
+// Share of a batch that may be rejected before the run stops for review. 1% of a 200-event batch is 2 events.
+export const MAX_REJECTION_RATE = 0.01;
+
+export type BatchOutcome = {
+  fresh: number;
+  statusWritten: number;
+  rejected: number;
+  transient: number;
+  systemic: number;
+  rejectionWriteFailed: number;
+  duplicates: number;
+};
+
+export type BatchDecision = { action: 'abort' | 'stop' | 'continue'; reason: string };
 
 // Decides what the loop does after a batch.
-// - systemic failure: abort the run (no further writes).
-// - any transient failure: stop after this batch. Pending events come back in ingestion order with no offset, so a
-//   transient event at the front would be fetched again on every batch. The next run retries it.
-// - nothing new or nothing written: stop.
-export const nextBatchAction = (outcome: BatchOutcome): 'abort' | 'stop' | 'continue' => {
-  if (outcome.systemic > 0) return 'abort';
-  if (outcome.transient > 0) return 'stop';
-  if (outcome.fresh === 0) return 'stop';
-  if (outcome.statusWritten === 0) return 'stop';
-  return 'continue';
+// - abort (the run is marked failed): systemic failures, rejections that could not be recorded, and duplicates,
+//   which mean the backlog query returned an event twice.
+// - stop (the run completes with a stop reason): any transient failure. Pending events come back in ingestion order
+//   with no offset, so a transient event at the front would be fetched again on every batch. The next run retries it.
+//   Also stops on excessive rejections, nothing new, or nothing written.
+export const nextBatchAction = (outcome: BatchOutcome): BatchDecision => {
+  if (outcome.systemic > 0) return { action: 'abort', reason: 'systemic_failure' };
+  if (outcome.rejectionWriteFailed > 0) return { action: 'abort', reason: 'rejection_write_failed' };
+  if (outcome.duplicates > 0) return { action: 'abort', reason: 'duplicate_detected' };
+  if (outcome.transient > 0) return { action: 'stop', reason: 'transient_failure' };
+  if (outcome.rejected > outcome.fresh * MAX_REJECTION_RATE) return { action: 'stop', reason: 'excessive_rejections' };
+  if (outcome.fresh === 0) return { action: 'stop', reason: 'no_fresh_events' };
+  if (outcome.statusWritten === 0) return { action: 'stop', reason: 'no_progress' };
+  return { action: 'continue', reason: 'batch_clean' };
 };
