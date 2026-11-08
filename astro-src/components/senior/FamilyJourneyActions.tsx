@@ -9,30 +9,27 @@ import { trackEvent } from '../../../src/utils/analytics';
 type Props = {
   facilityId: string;
   facilityName: string;
+  // Database UUID from the reviewed build-time map. Null when this listing is unresolved.
+  facilityUuid: string | null;
 };
 
-const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
-
-export default function FamilyJourneyActions({ facilityId, facilityName }: Props) {
+export default function FamilyJourneyActions({ facilityId, facilityName, facilityUuid }: Props) {
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
   const [queued, setQueued] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!UUID_PATTERN.test((facilityId || '').trim())) return;
-
-    const queuedIds = getQueuedFamilySaveFacilityIds();
-    if (queuedIds.has(facilityId)) {
-      setQueued(true);
-      setSaved(true);
-    }
-
+    if (!facilityUuid) return;
     let cancelled = false;
     void (async () => {
       try {
+        if (getQueuedFamilySaveFacilityIds().has(facilityUuid)) {
+          setQueued(true);
+          setSaved(true);
+        }
         const savedIds = await fetchSavedFacilityIds();
-        if (!cancelled && savedIds.has(facilityId)) {
+        if (!cancelled && savedIds.has(facilityUuid)) {
           setSaved(true);
           setQueued(false);
         }
@@ -40,15 +37,13 @@ export default function FamilyJourneyActions({ facilityId, facilityName }: Props
         // Ignore load failures; action button still works on click.
       }
     })();
-
     return () => {
       cancelled = true;
     };
-  }, [facilityId]);
+  }, [facilityUuid]);
 
   const onSave = async () => {
-    if (saving || saved) return;
-    if (!UUID_PATTERN.test((facilityId || '').trim())) return;
+    if (saving || saved || !facilityUuid) return;
 
     setSaving(true);
     setError(null);
@@ -59,7 +54,7 @@ export default function FamilyJourneyActions({ facilityId, facilityName }: Props
     });
 
     try {
-      const result = await saveFacilityForCurrentUser(facilityId, {
+      const result = await saveFacilityForCurrentUser(facilityUuid, {
         sourcePath: window.location.pathname,
       });
       if (result.status === 'queued') {
@@ -100,7 +95,21 @@ export default function FamilyJourneyActions({ facilityId, facilityName }: Props
     }
   };
 
-  if (!UUID_PATTERN.test((facilityId || '').trim())) return null;
+  if (!facilityId) return null;
+
+  if (!facilityUuid) {
+    // Explicit state, not a silent hide: families see why saving is unavailable here.
+    return (
+      <div style={{ marginTop: '0.75rem' }}>
+        <p style={{ fontSize: '0.82rem', color: '#475569' }}>
+          Saving {facilityName} to a dashboard is not available for this listing yet.
+        </p>
+        <a className="fp-btn fp-btn-ghost" href="/family/dashboard">
+          Open Family Dashboard
+        </a>
+      </div>
+    );
+  }
 
   return (
     <div style={{ marginTop: '0.75rem' }}>

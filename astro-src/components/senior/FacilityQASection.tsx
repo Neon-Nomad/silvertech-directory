@@ -1,5 +1,5 @@
-import { createClient } from '@supabase/supabase-js';
 import { useCallback, useEffect, useState } from 'react';
+import { getFacilitySupabase } from '../../lib/facilitySupabase';
 
 type FacilityAnswer = {
   id: string;
@@ -36,6 +36,8 @@ type QaRow = {
 type Props = {
   facilityId: string;
   facilityName: string;
+  // Database UUID from the reviewed build-time map. Null when this listing is unresolved.
+  facilityUuid: string | null;
 };
 
 function groupRows(rows: QaRow[]): FacilityQuestion[] {
@@ -75,24 +77,21 @@ function formatDate(iso: string): string {
   }
 }
 
-export default function FacilityQASection({ facilityId, facilityName }: Props) {
+export default function FacilityQASection({ facilityId, facilityName, facilityUuid }: Props) {
   const [questions, setQuestions] = useState<FacilityQuestion[]>([]);
-  const [loading, setLoading] = useState(true);
+  // Start in the loading state only when there is a UUID to load; an unresolved listing shows its message at once.
+  const [loading, setLoading] = useState(Boolean(facilityUuid));
   const [error, setError] = useState<string | null>(null);
 
   const load = useCallback(async () => {
-    if (!facilityId) { setLoading(false); return; }
+    if (!facilityId || !facilityUuid) { setQuestions([]); setLoading(false); return; }
     setLoading(true);
     setError(null);
     try {
-      const supabase = createClient(
-        import.meta.env.VITE_SUPABASE_URL || '',
-        import.meta.env.VITE_SUPABASE_ANON_KEY || '',
-      );
-      const { data, error: err } = await supabase
+      const { data, error: err } = await getFacilitySupabase()
         .from('approved_facility_qa')
         .select('*')
-        .eq('facility_id', facilityId)
+        .eq('facility_id', facilityUuid)
         .order('question_date', { ascending: false });
 
       if (err) throw err;
@@ -102,7 +101,7 @@ export default function FacilityQASection({ facilityId, facilityName }: Props) {
     } finally {
       setLoading(false);
     }
-  }, [facilityId]);
+  }, [facilityId, facilityUuid]);
 
   useEffect(() => { load(); }, [load]);
 
@@ -117,9 +116,15 @@ export default function FacilityQASection({ facilityId, facilityName }: Props) {
   return (
     <div>
       {questions.length === 0 ? (
-        <p className="fp-qa-empty">
-          No questions yet. Be the first to ask about {facilityName}.
-        </p>
+        facilityUuid ? (
+          <p className="fp-qa-empty">
+            No questions yet. Be the first to ask about {facilityName}.
+          </p>
+        ) : (
+          <p className="fp-qa-empty">
+            Community questions for {facilityName} are not available yet.
+          </p>
+        )
       ) : (
         <ul className="fp-qa-list">
           {questions.slice(0, 6).map((q) => (

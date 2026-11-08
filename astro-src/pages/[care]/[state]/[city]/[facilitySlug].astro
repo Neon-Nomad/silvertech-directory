@@ -13,6 +13,7 @@ import {
   getRegulatoryContext,
   getBuildDate,
 } from '../../../../lib/seniorLivingData';
+import { getFacilityUuid } from '../../../../lib/facilityUuidMap';
 
 export async function getStaticPaths() {
   const { getFacilityStaticPaths } = await import('../../../../lib/seniorLivingData');
@@ -25,6 +26,9 @@ const facility = getFacilityBySlug(facilitySlug!, {
   state,
   city,
 });
+
+// Database UUID for this canonical identity, from the reviewed build-time map. Null when unresolved.
+const facilityUuid = facility ? getFacilityUuid(`${care}/${state}/${city}/${facilitySlug}`) : null;
 
 if (!facility) {
   return Astro.redirect('/404');
@@ -265,6 +269,7 @@ const breadcrumbSchema = {
               client:only="react"
               facilityId={facility.id}
               facilityName={displayName}
+              facilityUuid={facilityUuid}
             />
           )}
         </div>
@@ -420,8 +425,9 @@ const breadcrumbSchema = {
 
           {facility.id && (
             <FacilityClaimedProfile
-              client:visible
+              client:only="react"
               facilityId={facility.id}
+              facilityUuid={facilityUuid}
               facilityName={displayName}
               facilityUrl={canonical}
               facilitySchemaId={facilitySchemaId}
@@ -533,6 +539,7 @@ const breadcrumbSchema = {
           <TourScheduler
             client:only="react"
             facilityId={facility.id}
+            facilityUuid={facilityUuid}
             facilityName={displayName}
             facilityAddress={addressLine}
             facilityPhone={phone}
@@ -554,6 +561,7 @@ const breadcrumbSchema = {
               client:only="react"
               facilityId={facility.id}
               facilityName={displayName}
+              facilityUuid={facilityUuid}
             />
           ) : (
             <div class="fp-qa-cta">

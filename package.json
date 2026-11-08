@@ -15,7 +15,7 @@
     "astro:preview": "astro preview",
     "export-facilities": "npx tsx scripts/export_facilities_to_csv.ts",
     "backfill:directory-columns": "npx tsx scripts/backfill_facility_directory_columns.ts",
-    "build:hybrid": "npm run build && npm run astro:build && node scripts/merge_astro.mjs",
+    "build:hybrid": "npm run build && npx tsx scripts/validate_facility_uuid_map.ts && npm run astro:build && node scripts/merge_astro.mjs && node scripts/generate-csp.mjs",
     "preview": "vite preview",
     "test": "vitest",
     "test:unit": "vitest --run tests",
@@ -67,7 +67,10 @@
     "seo:geo-keywords": "tsx scripts/generate_geo_keyword_map.ts",
     "seo:geo-keywords:expanded": "tsx scripts/generate_geo_keyword_map.ts --expanded",
     "seo:geo-briefs": "tsx scripts/generate_geo_content_briefs.ts",
-    "seo:audit-html": "tsx scripts/audit_html_budget.ts"
+    "seo:audit-html": "tsx scripts/audit_html_budget.ts",
+    "uuid-map:build": "npx tsx scripts/build_facility_uuid_map.ts",
+    "uuid-map:validate": "npx tsx scripts/validate_facility_uuid_map.ts",
+    "uuid-map:verify-live": "npx tsx scripts/validate_facility_uuid_map.ts --verify-live"
   },
   "dependencies": {
     "@astrojs/react": "^5.0.0",

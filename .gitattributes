@@ -1,0 +1,3 @@
+# The facility UUID map is hashed and parsed byte-for-byte. Never convert its line endings.
+# Git for Windows sets core.autocrlf=true by default, which would write this file as CRLF and fail the provenance check.
+data/facility-uuid-map.tsv -text

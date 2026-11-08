@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "canonicalIdentities": 78239,
+  "databaseRows": 91121,
+  "databaseRowsSha256": "9a6842b7843185078c0f9596b2d35adb7420e63b30b36f11ad8d5137fbeea859",
+  "decisionsApplied": 0,
+  "mapSha256": "678ec52a0639151e2461263617e8010c030ffbc12495743afd185613fb5c2846",
+  "summary": {
+    "total": 78239,
+    "mapped": 72246,
+    "unresolved": 5993,
+    "counts": {
+      "mapped:unique": 72246,
+      "unresolved:duplicate_rows": 5964,
+      "unresolved:cross_identity_conflict": 20,
+      "unresolved:duplicate_rows_near": 9
+    }
+  }
+}

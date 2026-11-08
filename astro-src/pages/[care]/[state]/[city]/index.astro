@@ -533,7 +533,7 @@ const getFacilityProfileHref = (facility: (typeof facilities)[number]): string =
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com" />
   <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link slot="head" rel="preload" as="style" href={cityFontHref} />
-  <link slot="head" href={cityFontHref} rel="stylesheet" media="print" onload="this.media='all'" />
+  <link slot="head" href={cityFontHref} rel="stylesheet" media="print" data-font-onload />
   <noscript slot="head">
     <link href={cityFontHref} rel="stylesheet" />
   </noscript>

@@ -13,6 +13,7 @@ import { useGeolocation } from '@/src/hooks/useGeolocation';
 import { buildFacilityDetailPath, getCareTypeRouteLabel } from '@/src/utils/facilityPath';
 import { useAuth } from '@/src/context/AuthProvider';
 import { trackEvent } from '@/src/utils/analytics';
+import { withReviewedDatabaseIds } from '@/src/utils/facilityIdentity';
 import {
   fetchSavedFacilityIds,
   getQueuedFamilySaveFacilityIds,
@@ -109,9 +110,6 @@ const normalizeFacilityKey = (facility: SearchFacilityResult): string => {
   const postal = (facility.postal_code || '').trim();
   return `${name}|${address}|${city}|${state}|${postal}`;
 };
-
-const isUuid = (value?: string) =>
-  Boolean(value && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value));
 
 const toRadians = (value: number) => (value * Math.PI) / 180;
 
@@ -389,34 +387,39 @@ const SearchResultCard: React.FC<{
     state: facility.state,
     city: facility.city,
   });
-  const claimPath = isUuid(facility.id) ? `/claim/${facility.id}` : communityPath;
-  const primaryPath = claimMode ? claimPath : communityPath;
-  const primaryLabel = claimMode && isUuid(facility.id) ? 'Claim Listing' : 'View Community';
+  // Set only for reviewed, unique identities (see withReviewedDatabaseIds). Unresolved listings get null, so they
+  // never offer a claim or a save.
+  const databaseId = facility.database_facility_id ?? null;
+  // An owned listing offers no claim. The claim page and the database refuse it too.
+  const claimPath = databaseId && !facility.owner_id ? `/claim/${databaseId}` : null;
+  const primaryPath = claimMode && claimPath ? claimPath : communityPath;
+  const primaryLabel = claimMode && claimPath ? 'Claim Listing' : 'View Community';
   const [saveBusy, setSaveBusy] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
-  const canSave = isUuid(facility.id);
+  const canSave = Boolean(databaseId);
 
   const handleSave = async () => {
-    if (saveBusy || !canSave || isSaved) return;
+    if (saveBusy || !databaseId || isSaved) return;
+    const facilityId = databaseId;
     setSaveBusy(true);
     setSaveError(null);
-    onSavedChange(facility.id, true);
+    onSavedChange(facilityId, true);
     trackEvent('family_save_clicked', {
-      facility_id: facility.id,
+      facility_id: facilityId,
       source_surface: 'search_results',
       claim_mode: claimMode,
     });
 
     try {
-      const result = await saveFacilityForCurrentUser(facility.id, {
+      const result = await saveFacilityForCurrentUser(facilityId, {
         sourcePath: `${window.location.pathname}${window.location.search}`,
       });
 
       if (result.status === 'error') {
-        onSavedChange(facility.id, false);
+        onSavedChange(facilityId, false);
         setSaveError(result.message || 'Unable to save this facility.');
         trackEvent('family_save_failed', {
-          facility_id: facility.id,
+          facility_id: facilityId,
           source_surface: 'search_results',
           claim_mode: claimMode,
         });
@@ -424,7 +427,7 @@ const SearchResultCard: React.FC<{
 
       if (result.status === 'queued') {
         trackEvent('family_save_queued_for_auth', {
-          facility_id: facility.id,
+          facility_id: facilityId,
           source_surface: 'search_results',
           claim_mode: claimMode,
         });
@@ -433,17 +436,17 @@ const SearchResultCard: React.FC<{
       }
       if (result.status === 'success' || result.status === 'already_exists') {
         trackEvent('family_save_success', {
-          facility_id: facility.id,
+          facility_id: facilityId,
           source_surface: 'search_results',
           claim_mode: claimMode,
           result: result.status,
         });
       }
     } catch {
-      onSavedChange(facility.id, false);
+      onSavedChange(facilityId, false);
       setSaveError('Unable to save this facility. Please try again.');
       trackEvent('family_save_failed', {
-        facility_id: facility.id,
+        facility_id: facilityId,
         source_surface: 'search_results',
         claim_mode: claimMode,
       });
@@ -560,6 +563,16 @@ const SearchResultCard: React.FC<{
             >
               {primaryLabel}
             </Link>
+            {claimMode && !claimPath && (
+              <p className="text-xs leading-5 text-charcoal/70">
+                {facility.owner_id
+                  ? 'This listing already has an owner on SilverTech Directory.'
+                  : 'This listing needs a verification check before it can be claimed online.'}{' '}
+                <Link className="font-bold text-charcoal underline" to="/contact">
+                  Contact support
+                </Link>
+              </p>
+            )}
             {saveError && <p className="text-xs text-red-600">{saveError}</p>}
           </div>
         </div>
@@ -1041,14 +1054,14 @@ const DirectorySearch: React.FC = () => {
 
       const combinedHits = dedupeFacilities([...hits, ...supplementalHits]);
       const resolved = await resolvePublicIdentities(combinedHits);
-      const enriched = await enrichSearchResults(resolved);
+      const enriched = await withReviewedDatabaseIds(await enrichSearchResults(resolved));
       setResults(applyDistance(enriched));
     } catch (err) {
       console.error('Search failed:', err);
       try {
         const fallbackHits = await getGuaranteedFallback({ preferClaimLocal: claimMode });
         const resolved = await resolvePublicIdentities(fallbackHits);
-        const enriched = await enrichSearchResults(resolved);
+        const enriched = await withReviewedDatabaseIds(await enrichSearchResults(resolved));
         setResults(applyDistance(enriched));
       } catch (fallbackError) {
         console.error('Search fallback failed:', fallbackError);
@@ -1476,7 +1489,7 @@ const DirectorySearch: React.FC = () => {
                   key={facility.id}
                   claimMode={claimMode}
                   facility={facility}
-                  isSaved={savedFacilityIds.has(facility.id)}
+                  isSaved={savedFacilityIds.has(facility.database_facility_id ?? '')}
                   onSavedChange={handleSavedState}
                 />
               ))}
@@ -1505,7 +1518,7 @@ const DirectorySearch: React.FC = () => {
                         <SearchResultCard
                           key={facility.id}
                           facility={facility}
-                          isSaved={savedFacilityIds.has(facility.id)}
+                          isSaved={savedFacilityIds.has(facility.database_facility_id ?? '')}
                           onSavedChange={handleSavedState}
                         />
                       ))}

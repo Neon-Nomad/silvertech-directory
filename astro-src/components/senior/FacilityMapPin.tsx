@@ -85,7 +85,7 @@ export default function FacilityMapPin({ lat, lng, name, address, mapUrl }: Prop
       }
       setReady(false);
     };
-  }, [lat, lng]);
+  }, [lat, lng, hydrated]);
 
   if (!hydrated || mobileFallback) {
     return (

@@ -37,3 +37,6 @@ all_states_nursing_homes_with_licenses.json
 *_nursing_homes_with_licenses.json
 public/sitemap-*.xml
 public/sitemap.xml
+
+# UUID map regeneration candidates (never committed)
+.cache/

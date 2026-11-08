@@ -1,6 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { getFacilityIndex, getStateName, getStateSlug, toCitySlug } from '../astro-src/lib/data';
+import {
+  attachDatabaseFacilityIds,
+  loadMapRows,
+  type IdentityCounts,
+} from './lib/facilityClaimIdentity';
 
 type CityIndexEntry = {
   stateSlug: string;
@@ -61,10 +66,18 @@ for (const facility of facilities) {
   }
 }
 
+// Reviewed database UUIDs for the shards. Read-only: only the reviewed regeneration workflow changes the map.
+const mapRows = loadMapRows(fs.readFileSync(path.resolve(process.cwd(), 'data/facility-uuid-map.tsv'), 'utf8'));
+const claimCounts: IdentityCounts = { mapped: 0, unresolved: 0, no_map_row: 0 };
+
 const shardStates = Array.from(facilitiesByState.keys()).sort();
 for (const state of shardStates) {
   const shardPath = path.join(shardsDir, `${state}.json`);
-  fs.writeFileSync(shardPath, JSON.stringify(facilitiesByState.get(state) || [], null, 2));
+  const { records, counts } = attachDatabaseFacilityIds(facilitiesByState.get(state) || [], mapRows);
+  claimCounts.mapped += counts.mapped;
+  claimCounts.unresolved += counts.unresolved;
+  claimCounts.no_map_row += counts.no_map_row;
+  fs.writeFileSync(shardPath, JSON.stringify(records, null, 2));
 }
 fs.writeFileSync(
   path.join(shardsDir, 'manifest.json'),
@@ -78,3 +91,6 @@ fs.writeFileSync(
 console.log(`Wrote ${facilities.length} facilities to public/facilities_index.json`);
 console.log(`Wrote ${cityIndex.length} city entries to public/city_index.json`);
 console.log(`Wrote ${shardStates.length} state shards to public/facilities_index_shards/`);
+console.log(
+  `Claim identities in shards: mapped=${claimCounts.mapped} unresolved=${claimCounts.unresolved} no_map_row=${claimCounts.no_map_row}`,
+);

@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 type Props = {
   facilityId: string;
+  // Reviewed database UUID for this listing. Null when unresolved; tour interest is then not recorded.
+  facilityUuid?: string | null;
   facilityName: string;
   facilityAddress: string;
   facilityPhone: string;
@@ -49,6 +51,7 @@ function buildIcalBlob(name: string, address: string, phone: string): string {
 
 export default function TourScheduler({
   facilityId,
+  facilityUuid = null,
   facilityName,
   facilityAddress,
   facilityPhone,
@@ -60,6 +63,7 @@ export default function TourScheduler({
   const [visitNote, setVisitNote] = useState('');
   const [step, setStep]           = useState<Step>('idle');
   const [icalUrl, setIcalUrl]     = useState<string | null>(null);
+  const [interestNote, setInterestNote] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -73,6 +77,7 @@ export default function TourScheduler({
         body: JSON.stringify({
           email,
           facilityId,
+          facilityUuid,
           facilityName,
           facilityAddress,
           facilityPhone,
@@ -83,6 +88,15 @@ export default function TourScheduler({
       });
 
       if (!res.ok) throw new Error('Send failed');
+      // The guide is emailed either way. The tour interest is recorded only for a reviewed listing, and the user is told when it is not.
+      const result = (await res.json().catch(() => ({}))) as { interestRecorded?: boolean };
+      setInterestNote(
+        !facilityUuid
+          ? 'Tour requests for this listing are not linked to our records yet, so the facility will not see this one. Please also contact the facility directly.'
+          : result.interestRecorded === false
+            ? 'We could not save this tour request, so please also contact the facility directly.'
+            : null,
+      );
 
       // Build iCal blob URL for download button (client-side only)
       setIcalUrl(buildIcalBlob(facilityName, facilityAddress, facilityPhone));
@@ -100,6 +114,7 @@ export default function TourScheduler({
           <div>
             <p className="ts-success-title">Tour prep guide on its way!</p>
             <p className="ts-success-sub">Check your inbox — one email, no follow-ups.</p>
+            {interestNote && <p className="ts-success-sub">{interestNote}</p>}
           </div>
         </div>
 
