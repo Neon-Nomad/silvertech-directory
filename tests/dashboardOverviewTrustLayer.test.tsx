@@ -1,6 +1,8 @@
 // @vitest-environment jsdom
 import React from 'react';
-import '@testing-library/jest-dom/vitest';
+import * as jestDomMatchers from '@testing-library/jest-dom/matchers';
+import { expect as vitestExpect } from 'vitest';
+vitestExpect.extend(jestDomMatchers);
 import { describe, expect, it, vi, afterEach } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { DashboardOverview } from '@/features/operator/dashboard/DashboardOverview';

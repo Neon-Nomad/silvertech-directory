@@ -1,8 +1,10 @@
 // @vitest-environment jsdom
 import React from 'react';
-import '@testing-library/jest-dom/vitest';
+import * as jestDomMatchers from '@testing-library/jest-dom/matchers';
+import { expect as vitestExpect } from 'vitest';
+vitestExpect.extend(jestDomMatchers);
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { cleanup, render, screen } from '@testing-library/react';
+import { cleanup, render, screen, waitFor } from '@testing-library/react';
 import { HelmetProvider } from 'react-helmet-async';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import DirectorySearch from '@/features/family/discovery/DirectorySearch';
@@ -351,6 +353,17 @@ describe('DirectorySearch', () => {
         city_filter: null,
         postal_filter: null,
       }),
+    );
+  });
+
+  it('searches the whole state when the location is only a state, keeping the facility name', async () => {
+    renderSearch('/search?location=MN&name=Guardian');
+
+    await waitFor(() =>
+      expect(rpcMock).toHaveBeenCalledWith(
+        'search_facilities',
+        expect.objectContaining({ state_filter: 'MN', query_text: 'Guardian', city_filter: null }),
+      ),
     );
   });
 
