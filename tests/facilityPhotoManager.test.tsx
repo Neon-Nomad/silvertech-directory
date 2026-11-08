@@ -1,6 +1,8 @@
 // @vitest-environment jsdom
 import React from 'react';
-import '@testing-library/jest-dom/vitest';
+import * as jestDomMatchers from '@testing-library/jest-dom/matchers';
+import { expect as vitestExpect } from 'vitest';
+vitestExpect.extend(jestDomMatchers);
 import { describe, expect, it, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { FacilityPhotoManager } from '@/features/operator/dashboard/FacilityPhotoManager';

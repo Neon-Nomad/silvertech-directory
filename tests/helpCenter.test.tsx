@@ -1,6 +1,8 @@
 // @vitest-environment jsdom
 import React from 'react';
-import '@testing-library/jest-dom/vitest';
+import * as jestDomMatchers from '@testing-library/jest-dom/matchers';
+import { expect as vitestExpect } from 'vitest';
+vitestExpect.extend(jestDomMatchers);
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { HelpCenter } from '@/features/operator/dashboard/HelpCenter';
