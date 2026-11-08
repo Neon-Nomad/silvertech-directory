@@ -272,11 +272,11 @@ const NotFound: React.FC = () => (
 );
 
 function App() {
+  // Build-time only: a visitor's URL must never switch the developer harness on in production.
   const enableIntegrityHarness =
     import.meta.env.DEV ||
     import.meta.env.MODE === 'test' ||
-    import.meta.env.VITE_ENABLE_E2E_ROUTES === 'true' ||
-    window.location.pathname.startsWith('/__integrity');
+    import.meta.env.VITE_ENABLE_E2E_ROUTES === 'true';
 
   React.useEffect(() => {
     const onError = (event: ErrorEvent) => {
