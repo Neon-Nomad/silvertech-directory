@@ -284,6 +284,10 @@ describe('DirectorySearch', () => {
       };
     });
     rpcMock.mockImplementation(async (fn: string, params: Record<string, unknown>) => {
+      // Only reviewed identities get a claim action. This test's claim listing is the reviewed one.
+      if (fn === 'reviewed_facility_ids') {
+        return { data: [claimFacilityId], error: null };
+      }
       if (fn !== 'search_facilities') {
         throw new Error(`Unexpected RPC: ${fn}`);
       }

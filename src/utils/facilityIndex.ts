@@ -14,6 +14,8 @@ export type FacilityIndexItem = {
   verified_phone?: string;
   business_status?: string;
   online_presence_updated_at?: string;
+  // Reviewed database UUID for this listing (from the committed UUID map). Absent when unresolved.
+  database_facility_id?: string;
 };
 
 export type CityIndexEntry = {

@@ -8,6 +8,32 @@ import { isOperatorUser } from '@/src/utils/authRole';
 import { trackActivationEvent } from '@/src/config/activationEvents';
 import { getActivationSessionId } from '@/src/utils/activationSession';
 
+// What the page can offer for this listing. Only `claimable` shows the claim form. Every other state explains why.
+type ClaimState = 'checking' | 'claimable' | 'family' | 'owned' | 'not_reviewed' | 'not_found' | 'unavailable';
+
+const CLAIM_STATE_COPY: Record<Exclude<ClaimState, 'checking' | 'claimable'>, { title: string; body: string }> = {
+  family: {
+    title: 'An operator account is needed to claim a listing',
+    body: 'You are signed in with a family account. Listings are claimed from an operator account. Create an operator account, or sign in with one, to continue.',
+  },
+  owned: {
+    title: 'This listing already has an owner',
+    body: 'Someone has already claimed this listing on SilverTech Directory. If you believe it belongs to you, contact support and we will review it with you.',
+  },
+  not_reviewed: {
+    title: 'This listing cannot be claimed online yet',
+    body: 'This listing needs a verification check before it can be claimed. Contact support and we will help you claim it.',
+  },
+  not_found: {
+    title: 'We could not find this listing',
+    body: 'The listing may have moved or been removed. Search again to find the listing you want to claim.',
+  },
+  unavailable: {
+    title: 'We could not check this listing right now',
+    body: 'Something went wrong while checking this listing. Try again in a few minutes, or contact support if the problem continues.',
+  },
+};
+
 export const ClaimFacilityPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
@@ -20,6 +46,7 @@ export const ClaimFacilityPage: React.FC = () => {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+  const [claimState, setClaimState] = useState<ClaimState>('checking');
 
   const [formData, setFormData] = useState({
     businessEmail: '',
@@ -36,13 +63,17 @@ export const ClaimFacilityPage: React.FC = () => {
     }
 
     if (!isOperatorUser(user)) {
-      setError('This account is a family account. Please sign in with an operator account to claim a facility profile.');
+      setClaimState('family');
       setLoading(false);
       return;
     }
 
     const fetchFacility = async () => {
-      if (!id) return;
+      if (!id) {
+        setClaimState('not_found');
+        setLoading(false);
+        return;
+      }
       try {
         const { data, error } = await supabase
           .from('facilities')
@@ -53,13 +84,20 @@ export const ClaimFacilityPage: React.FC = () => {
         if (error) throw error;
         
         if (data.owner_id) {
-            setError("This facility has already been claimed.");
+          setClaimState('owned');
+        } else {
+          // Database check: reviewed, unique identity and still unowned. The insert policy repeats it.
+          const { data: claimable, error: claimableError } = await supabase.rpc('is_claimable_facility', {
+            p_facility_id: id,
+          });
+          if (claimableError) throw claimableError;
+          setClaimState(claimable === true ? 'claimable' : 'not_reviewed');
         }
         
         setFacility(data);
       } catch (err) {
         console.error('Error fetching facility:', err);
-        setError('Facility not found.');
+        setClaimState((err as { code?: string } | null)?.code === 'PGRST116' ? 'not_found' : 'unavailable');
       } finally {
         setLoading(false);
       }
@@ -103,7 +141,13 @@ export const ClaimFacilityPage: React.FC = () => {
       setSuccess(true);
     } catch (err: any) {
       console.error('Error submitting claim:', err);
-      setError(err.message || 'Failed to submit claim.');
+      // The database refuses claims on owned or unreviewed facilities (row-level security). Say so, without raw text.
+      const refused = err?.code === '42501' || /row-level security/i.test(String(err?.message || ''));
+      setError(
+        refused
+          ? 'This listing can no longer be claimed online. It may already have an owner or need a verification check. Contact support for help.'
+          : 'We could not submit your claim. Please try again, or contact support if it keeps failing.',
+      );
     } finally {
       setSubmitting(false);
     }
@@ -148,6 +192,40 @@ export const ClaimFacilityPage: React.FC = () => {
           >
             Return Home
           </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (claimState !== 'checking' && claimState !== 'claimable') {
+    const copy = CLAIM_STATE_COPY[claimState];
+    const redirectTo = encodeURIComponent(`/claim/${id ?? ''}`);
+    return (
+      <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
+        <div className="bg-white max-w-md w-full p-8 rounded-xl shadow-sm text-center" role="status">
+          <AlertCircle className="w-10 h-10 text-amber-600 mx-auto mb-4" />
+          <h1 className="text-2xl font-bold text-slate-900 mb-2">{copy.title}</h1>
+          <p className="text-slate-600 mb-6">{copy.body}</p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            {claimState === 'family' && (
+              <>
+                <Button variant="primary" className="min-h-11" onClick={() => navigate(`/operator/signup?redirect_to=${redirectTo}`)}>
+                  Create operator account
+                </Button>
+                <Button variant="outline" className="min-h-11" onClick={() => navigate(`/operator/login?redirect_to=${redirectTo}`)}>
+                  Sign in as operator
+                </Button>
+              </>
+            )}
+            {(claimState === 'owned' || claimState === 'not_reviewed' || claimState === 'unavailable') && (
+              <Button variant="primary" className="min-h-11" onClick={() => window.location.assign('/contact')}>
+                Contact support
+              </Button>
+            )}
+            <Button variant="outline" className="min-h-11" onClick={() => navigate('/search?claim=1')}>
+              Search listings
+            </Button>
+          </div>
         </div>
       </div>
     );

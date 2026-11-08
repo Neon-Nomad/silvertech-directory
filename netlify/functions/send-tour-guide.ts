@@ -173,7 +173,7 @@ export const handler: Handler = async (event) => {
     return { statusCode: 400, body: JSON.stringify({ error: 'Invalid JSON' }) };
   }
 
-  const { email, facilityId, facilityName, facilityAddress, facilityPhone, careType, optedIn, visitNote } = body;
+  const { email, facilityId, facilityUuid, facilityName, facilityAddress, facilityPhone, careType, optedIn, visitNote } = body;
 
   if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return { statusCode: 400, body: JSON.stringify({ error: 'Valid email required' }) };
@@ -230,36 +230,52 @@ export const handler: Handler = async (event) => {
     return { statusCode: 502, body: JSON.stringify({ error: 'Email service unavailable' }) };
   }
 
-  // 2. Log aggregate tour interest to Supabase (no PII stored against facility)
+  // 2. Log aggregate tour interest to Supabase (no PII stored against facility).
+  // Only a reviewed, unique identity is recorded. The database ID is checked here as well as in the browser.
   const supabaseUrl = process.env.VITE_SUPABASE_URL;
   const supabaseKey = process.env.VITE_SUPABASE_ANON_KEY;
+  const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+  let interestRecorded = false;
 
-  if (supabaseUrl && supabaseKey) {
+  if (supabaseUrl && supabaseKey && typeof facilityUuid === 'string' && uuidPattern.test(facilityUuid)) {
+    const restHeaders = {
+      'Content-Type': 'application/json',
+      'apikey': supabaseKey,
+      'Authorization': `Bearer ${supabaseKey}`,
+    };
     try {
-      await fetch(`${supabaseUrl}/rest/v1/facility_tour_interest`, {
+      const reviewedRes = await fetch(`${supabaseUrl}/rest/v1/rpc/reviewed_facility_ids`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'apikey': supabaseKey,
-          'Authorization': `Bearer ${supabaseKey}`,
-          'Prefer': 'return=minimal',
-        },
-        body: JSON.stringify({
-          facility_id: facilityId,
-          care_type: careType,
-          guide_downloaded: true,
-          opted_in_contact: Boolean(optedIn),
-          visit_note: optedIn && visitNote ? String(visitNote).slice(0, 300) : null,
-        }),
+        headers: restHeaders,
+        body: JSON.stringify({ p_facility_ids: [facilityUuid] }),
       });
+      const reviewed: unknown = reviewedRes.ok ? await reviewedRes.json() : [];
+
+      if (Array.isArray(reviewed) && reviewed.includes(facilityUuid)) {
+        const insertRes = await fetch(`${supabaseUrl}/rest/v1/facility_tour_interest`, {
+          method: 'POST',
+          headers: { ...restHeaders, 'Prefer': 'return=minimal' },
+          body: JSON.stringify({
+            facility_id: facilityUuid,
+            care_type: careType,
+            guide_downloaded: true,
+            opted_in_contact: Boolean(optedIn),
+            visit_note: optedIn && visitNote ? String(visitNote).slice(0, 300) : null,
+          }),
+        });
+        interestRecorded = insertRes.ok;
+        if (!insertRes.ok) console.warn('Tour interest not recorded; status', insertRes.status);
+      } else {
+        console.warn('Tour interest skipped: listing is not a reviewed identity');
+      }
     } catch (err) {
-      // Non-fatal — email already sent
+      // Non-fatal: the guide is already emailed. The client is told interest was not recorded.
       console.warn('Tour interest log failed:', err);
     }
   }
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ ok: true, careType, careLabel }),
+    body: JSON.stringify({ ok: true, careType, careLabel, interestRecorded }),
   };
 };

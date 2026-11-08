@@ -10,7 +10,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "575 HOSPITAL RD",
     "postal_code": "54017",
-    "phone": "7152433930"
+    "phone": "7152433930",
+    "database_facility_id": "cb087a3f-8291-4d6f-9980-f826a7be0db9"
   },
   {
     "id": "lincoln-park-nursing-and-rehab-llc-14350",
@@ -23,7 +24,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1700 C A BECKER DR",
     "postal_code": "53406",
-    "phone": "2626379751"
+    "phone": "2626379751",
+    "database_facility_id": "edaf704b-4bc3-4ad1-84e1-ee9242845c28"
   },
   {
     "id": "lindengrove-new-berlin-14351",
@@ -36,7 +38,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "13755 W FIELDPOINTE DR",
     "postal_code": "53151",
-    "phone": "2627963660"
+    "phone": "2627963660",
+    "database_facility_id": "164086c3-7f2d-4fdb-b9b1-dffc59a35378"
   },
   {
     "id": "maplewood-center-14352",
@@ -49,7 +52,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "8615 W BELOIT RD",
     "postal_code": "53227",
-    "phone": "4146074100"
+    "phone": "4146074100",
+    "database_facility_id": "cccb4838-fcc4-497f-9aaa-e9906eb588ba"
   },
   {
     "id": "madison-health-and-rehabilitation-center-14353",
@@ -62,7 +66,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "110 BELMONT RD",
     "postal_code": "53714",
-    "phone": "6082497391"
+    "phone": "6082497391",
+    "database_facility_id": "6a5057e9-51d4-48c0-b8e4-128e6ab36270"
   },
   {
     "id": "eastcastle-pl-bradford-ter-conv-ctr-14354",
@@ -75,7 +80,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2505 E BRADFORD AVE",
     "postal_code": "53211",
-    "phone": "4149636151"
+    "phone": "4149636151",
+    "database_facility_id": "8e55f075-aeb0-4005-94ab-ea81a8bd7ad9"
   },
   {
     "id": "edgewater-haven-nursing-home-14355",
@@ -88,7 +94,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1351 WISCONSIN RIVER DR",
     "postal_code": "54469",
-    "phone": "7158858300"
+    "phone": "7158858300",
+    "database_facility_id": "c24b3ed1-08c6-458c-8a33-7acacf14f53b"
   },
   {
     "id": "waunakee-valley-senior-living-14356",
@@ -101,7 +108,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "801 KLEIN DR",
     "postal_code": "53597",
-    "phone": "6088495016"
+    "phone": "6088495016",
+    "database_facility_id": "bf4e5c28-6b17-4464-9969-c2bb50543e43"
   },
   {
     "id": "resolve-at-west-allis-respiratory-and-rehab-14357",
@@ -114,7 +122,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "9047 W GREENFIELD AVE",
     "postal_code": "53214",
-    "phone": "4144539290"
+    "phone": "4144539290",
+    "database_facility_id": "185b9223-4733-482d-bd14-7d27d7619344"
   },
   {
     "id": "sauk-co-health-care-center-14358",
@@ -127,7 +136,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1051 CLARK ST",
     "postal_code": "53959",
-    "phone": "6085247500"
+    "phone": "6085247500",
+    "database_facility_id": "32399d1a-d092-433b-815e-5f2ef77507e2"
   },
   {
     "id": "north-central-health-care-14359",
@@ -140,7 +150,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2400 MARSHALL STREET, STE A",
     "postal_code": "54403",
-    "phone": "7158415178"
+    "phone": "7158415178",
+    "database_facility_id": "332dfe50-3ac6-4259-a993-85d3b600bef5"
   },
   {
     "id": "samaritan-nursing-and-rehab-14360",
@@ -153,7 +164,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "531 E WASHINGTON ST",
     "postal_code": "53095",
-    "phone": "2623354500"
+    "phone": "2623354500",
+    "database_facility_id": "35ef32b2-3c81-4b4f-a487-9b6297d41fb6"
   },
   {
     "id": "jewish-home-and-care-center-14361",
@@ -166,7 +178,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1414 N PROSPECT AVE",
     "postal_code": "53202",
-    "phone": "4142762627"
+    "phone": "4142762627",
+    "database_facility_id": "8033e02e-544a-43cf-9400-3c2a6e67c11f"
   },
   {
     "id": "avina-of-kenosha-14362",
@@ -179,7 +192,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3100 Washington Rd.",
     "postal_code": "53144",
-    "phone": "2626584622"
+    "phone": "2626584622",
+    "database_facility_id": "7ac469d4-b950-403b-8e2a-ca74fbe109e6"
   },
   {
     "id": "mulder-health-care-facility-14363",
@@ -192,7 +206,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "713 LEONARD ST N",
     "postal_code": "54669",
-    "phone": "6087861600"
+    "phone": "6087861600",
+    "database_facility_id": "c77bb2ee-1357-4ae5-98a8-0f5c501ad1a1"
   },
   {
     "id": "wisconsin-rapids-health-services-14364",
@@ -205,7 +220,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1350 RIVER RUN DR",
     "postal_code": "54494",
-    "phone": "7154213140"
+    "phone": "7154213140",
+    "database_facility_id": "5b222679-1e18-4e9f-a5bb-bf5208e42c85"
   },
   {
     "id": "edenbrook-of-platteville-14365",
@@ -218,7 +234,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1300 N WATER ST",
     "postal_code": "53818",
-    "phone": "6083482453"
+    "phone": "6083482453",
+    "database_facility_id": "40935119-bc11-4649-9c75-73a1db0772cd"
   },
   {
     "id": "edgerton-care-center-inc-14366",
@@ -231,7 +248,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "313 STOUGHTON RD",
     "postal_code": "53534",
-    "phone": "6088841330"
+    "phone": "6088841330",
+    "database_facility_id": "96fb9651-602b-43b5-9db6-80ed28df5694"
   },
   {
     "id": "complete-care-at-kensington-14367",
@@ -244,7 +262,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1810 KENSINGTON DR",
     "postal_code": "53188",
-    "phone": "2625481400"
+    "phone": "2625481400",
+    "database_facility_id": "f658c1c6-827a-4a24-84b6-c9253d16502b"
   },
   {
     "id": "fort-atkinson-care-center-14368",
@@ -257,7 +276,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "430 WILCOX ST",
     "postal_code": "53538",
-    "phone": "9205635533"
+    "phone": "9205635533",
+    "database_facility_id": "51a30f19-b032-496f-bb7f-30666d3266f4"
   },
   {
     "id": "meadowbrook-at-appleton-14369",
@@ -270,7 +290,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1335 S ONEIDA ST",
     "postal_code": "54915",
-    "phone": "9207316646"
+    "phone": "9207316646",
+    "database_facility_id": "cc63c0e6-98b4-43e4-b9cf-f775cd572064"
   },
   {
     "id": "bethany-st-joseph-care-ctr-14370",
@@ -283,7 +304,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2501 SHELBY RD",
     "postal_code": "54601",
-    "phone": "6087885700"
+    "phone": "6087885700",
+    "database_facility_id": "4d7794a8-43b5-4675-95ba-ea4778552f38"
   },
   {
     "id": "oak-park-nursing-and-rehab-center-14371",
@@ -296,7 +318,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "718 JUPITER DRIVE",
     "postal_code": "53718",
-    "phone": "6086638600"
+    "phone": "6086638600",
+    "database_facility_id": "ba7e4c6b-b7ef-4e8a-9504-16228b4f1deb"
   },
   {
     "id": "avina-of-fond-du-lac-14372",
@@ -309,7 +332,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "115 E ARNDT ST",
     "postal_code": "54935",
-    "phone": "9209237040"
+    "phone": "9209237040",
+    "database_facility_id": "a0aad98e-6034-47c0-ba5c-05e3733ab847"
   },
   {
     "id": "alden-estates-of-countryside-inc-14373",
@@ -322,7 +346,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1130 COLLINS ROAD",
     "postal_code": "53549",
-    "phone": "9206743170"
+    "phone": "9206743170",
+    "database_facility_id": "ca3dd851-678d-44ae-a0dc-393f8ab96c20"
   },
   {
     "id": "beloit-health-and-rehabilitation-center-14374",
@@ -335,7 +360,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1905 W HART RD",
     "postal_code": "53511",
-    "phone": "6083652554"
+    "phone": "6083652554",
+    "database_facility_id": "e37c4a65-f210-46b5-b503-9913fc05775a"
   },
   {
     "id": "edenbrook-of-fond-du-lac-14375",
@@ -348,7 +374,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "265 S NATIONAL AVE",
     "postal_code": "54935",
-    "phone": "9209227342"
+    "phone": "9209227342",
+    "database_facility_id": "4b2494ea-e056-4166-aa4b-b719caad7c9c"
   },
   {
     "id": "complete-care-at-maple-grove-llc-14376",
@@ -361,7 +388,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3401 Maple Grove Dr.",
     "postal_code": "53719",
-    "phone": "6088451000"
+    "phone": "6088451000",
+    "database_facility_id": "13242500-1dcb-4dc6-8421-68c1fae993ec"
   },
   {
     "id": "tudor-oaks-health-center-14377",
@@ -374,7 +402,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "S77 W12929 MCSHANE DR",
     "postal_code": "53150",
-    "phone": "4145290100"
+    "phone": "4145290100",
+    "database_facility_id": "ac286c80-e91b-49c0-8e4d-008af8929035"
   },
   {
     "id": "waters-edge-health-and-rehabilitation-center-14378",
@@ -387,7 +416,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3415 N SHERIDAN RD",
     "postal_code": "53140",
-    "phone": "2626576175"
+    "phone": "2626576175",
+    "database_facility_id": "512dabe6-1274-4862-b7c1-28aa2cc2b2a2"
   },
   {
     "id": "avina-on-32nd-14379",
@@ -400,7 +430,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "8633 32ND AVE",
     "postal_code": "53142",
-    "phone": "2626948300"
+    "phone": "2626948300",
+    "database_facility_id": "c83689ad-44a0-425e-8e8d-3ec86b4398fa"
   },
   {
     "id": "juliette-manor-14380",
@@ -413,7 +444,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "482 OAK STREET",
     "postal_code": "54923",
-    "phone": "9203613092"
+    "phone": "9203613092",
+    "database_facility_id": "4d1a14c6-582a-47c9-9ac7-743c96f052eb"
   },
   {
     "id": "orchard-manor-14381",
@@ -426,7 +458,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "8800 HWY 61",
     "postal_code": "53813",
-    "phone": "6087232113"
+    "phone": "6087232113",
+    "database_facility_id": "e08fd447-484b-45fc-9a17-2ef8e0c45fe7"
   },
   {
     "id": "monroe-health-services-14382",
@@ -439,7 +472,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "516 26TH AVE",
     "postal_code": "53566",
-    "phone": "6083259141"
+    "phone": "6083259141",
+    "database_facility_id": "6c460014-9656-4125-84af-dbb91b7fdff9"
   },
   {
     "id": "edenbrook-of-oshkosh-14383",
@@ -452,7 +486,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1850 BOWEN ST",
     "postal_code": "54901",
-    "phone": "9202334011"
+    "phone": "9202334011",
+    "database_facility_id": "cec3b09b-ecfb-47ce-8060-db5cb660a089"
   },
   {
     "id": "north-shore-healthcare-at-marshfield-14384",
@@ -465,7 +500,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "814 W 14TH ST",
     "postal_code": "54449",
-    "phone": "7153871188"
+    "phone": "7153871188",
+    "database_facility_id": "1f94e558-3f51-44e2-ae56-5b21c906fbdb"
   },
   {
     "id": "capitol-lakes-health-center-14385",
@@ -478,7 +514,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "333 W MAIN ST",
     "postal_code": "53703",
-    "phone": "6082832000"
+    "phone": "6082832000",
+    "database_facility_id": "20c692c0-f02c-494c-864f-02d47f10ba28"
   },
   {
     "id": "sturgeon-bay-health-services-14386",
@@ -491,7 +528,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "200 N SEVENTH AVE",
     "postal_code": "54235",
-    "phone": "9207436274"
+    "phone": "9207436274",
+    "database_facility_id": "bc27e6af-2891-4352-a69c-f85b072a9737"
   },
   {
     "id": "edenbrook-of-green-bay-14387",
@@ -504,7 +542,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2961 ST ANTHONY DR",
     "postal_code": "54311",
-    "phone": "9204680861"
+    "phone": "9204680861",
+    "database_facility_id": "dec81441-861b-46ab-8f0a-3f7d9e6bc93d"
   },
   {
     "id": "avina-of-sun-prairie-14388",
@@ -517,7 +556,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "41 Rickel Rd.",
     "postal_code": "53590",
-    "phone": "6088378529"
+    "phone": "6088378529",
+    "database_facility_id": "a9828e97-dc6c-4df0-aa1f-f68c53f0eecc"
   },
   {
     "id": "lake-mills-health-services-14389",
@@ -530,7 +570,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "901 MULBERRY ST",
     "postal_code": "53551",
-    "phone": "9206488344"
+    "phone": "9206488344",
+    "database_facility_id": "4805262b-b443-4d2c-a0f3-d819b1452c5f"
   },
   {
     "id": "crossroads-care-center-of-weyauwega-14390",
@@ -543,7 +584,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "717 E ALFRED ST",
     "postal_code": "54983",
-    "phone": "9208673121"
+    "phone": "9208673121",
+    "database_facility_id": "12410f50-cb94-4d4d-8508-30107d6955c9"
   },
   {
     "id": "manawa-com-nur-ctr-14391",
@@ -556,7 +598,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "400 EAST 4TH ST",
     "postal_code": "54949",
-    "phone": "9205962566"
+    "phone": "9205962566",
+    "database_facility_id": "ae97613f-61e1-45af-8060-ea6309f777b5"
   },
   {
     "id": "complete-care-at-jefferson-meadows-llc-14392",
@@ -569,7 +612,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1414 Jefferson St.",
     "postal_code": "53913",
-    "phone": "6083564838"
+    "phone": "6083564838",
+    "database_facility_id": "6c96f838-66e9-48ef-a5b8-798aac31becb"
   },
   {
     "id": "sheridan-health-and-rehabilitation-center-14393",
@@ -582,7 +626,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "8400 SHERIDAN RD",
     "postal_code": "53143",
-    "phone": "2626584141"
+    "phone": "2626584141",
+    "database_facility_id": "5428e1f7-bbb5-452b-b7dc-ff34a352610c"
   },
   {
     "id": "edenbrook-lakeside-14394",
@@ -595,7 +640,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2115 E WOODSTOCK PL",
     "postal_code": "53202",
-    "phone": "4142711020"
+    "phone": "4142711020",
+    "database_facility_id": "633bc6ad-a02a-48c8-bb49-75c242927b72"
   },
   {
     "id": "riverdale-health-care-center-14395",
@@ -608,7 +654,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1000 N. Wisconsin Ave.",
     "postal_code": "53573",
-    "phone": "6087393186"
+    "phone": "6087393186",
+    "database_facility_id": "7d8d6a1a-a6e4-4dab-8b7b-afbeaac72713"
   },
   {
     "id": "delavan-health-services-14396",
@@ -621,7 +668,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "905 E GENEVA ST",
     "postal_code": "53115",
-    "phone": "2627286319"
+    "phone": "2627286319",
+    "database_facility_id": "5fbde67a-9092-4074-a10e-6ed184037cc7"
   },
   {
     "id": "bradley-estates-nursing-and-rehab-llc-14397",
@@ -634,7 +682,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "6735 W BRADLEY RD",
     "postal_code": "53223",
-    "phone": "4143543300"
+    "phone": "4143543300",
+    "database_facility_id": "6aed3117-100b-45bb-963c-e9ceba5f406d"
   },
   {
     "id": "pine-crest-health-and-memory-care-14398",
@@ -647,7 +696,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2100 E SIXTH ST",
     "postal_code": "54452",
-    "phone": "7155360355"
+    "phone": "7155360355",
+    "database_facility_id": "4441e701-5b09-49c0-8f19-9a79f998232b"
   },
   {
     "id": "clement-manor-health-care-center-14399",
@@ -660,7 +710,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3939 S 92ND ST",
     "postal_code": "53228",
-    "phone": "4143211800"
+    "phone": "4143211800",
+    "database_facility_id": "efb98aee-cd48-4572-bab3-15a3e0261fbd"
   },
   {
     "id": "court-manor-health-services-14400",
@@ -673,7 +724,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "911 3RD ST  WEST",
     "postal_code": "54806",
-    "phone": "7156828172"
+    "phone": "7156828172",
+    "database_facility_id": "5882128c-81b3-4526-903d-e4d82f8ba706"
   },
   {
     "id": "rib-lake-health-services-14401",
@@ -686,7 +738,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "650 PEARL ST",
     "postal_code": "54470",
-    "phone": "7154275291"
+    "phone": "7154275291",
+    "database_facility_id": "6821df6a-79ae-4f3c-b21b-62080417bb32"
   },
   {
     "id": "middleton-village-nursing-and-rehab-14402",
@@ -699,7 +752,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "6201 ELMWOOD AVE",
     "postal_code": "53562",
-    "phone": "6088318300"
+    "phone": "6088318300",
+    "database_facility_id": "2d82b871-281c-42b9-8a9d-e6c0f12ca0e6"
   },
   {
     "id": "ingleside-manor-14403",
@@ -712,7 +766,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "407 N EIGHTH ST",
     "postal_code": "53572",
-    "phone": "6084375511"
+    "phone": "6084375511",
+    "database_facility_id": "185f275e-9878-4f20-89b0-97d13c9feae0"
   },
   {
     "id": "riverview-health-services-14404",
@@ -725,7 +780,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "428 N 6TH ST",
     "postal_code": "54487",
-    "phone": "7154532511"
+    "phone": "7154532511",
+    "database_facility_id": "33ebf13e-45d9-419f-b33a-8a5353492d8d"
   },
   {
     "id": "watertown-health-care-center-14405",
@@ -738,7 +794,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "121 HOSPITAL DR",
     "postal_code": "53098",
-    "phone": "9202619220"
+    "phone": "9202619220",
+    "database_facility_id": "18418d5e-0e92-4980-8740-ff36195bb710"
   },
   {
     "id": "tomahawk-health-services-14406",
@@ -751,7 +808,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "720 E KINGS RD",
     "postal_code": "54487",
-    "phone": "7154532164"
+    "phone": "7154532164",
+    "database_facility_id": "b1f4e6ac-0685-434e-b255-9be632fd0fb9"
   },
   {
     "id": "shawano-health-services-14407",
@@ -764,7 +822,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1436 S LINCOLN ST",
     "postal_code": "54166",
-    "phone": "7155266111"
+    "phone": "7155266111",
+    "database_facility_id": "6decd58b-4595-493f-b0d7-88944a9eb113"
   },
   {
     "id": "rocky-knoll-health-care-14408",
@@ -777,7 +836,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "N7135 ROCKY KNOLL PARKWAY",
     "postal_code": "53073",
-    "phone": "9208936441"
+    "phone": "9208936441",
+    "database_facility_id": "9dfa0be0-2014-4479-a674-6d09e8c268c3"
   },
   {
     "id": "beaver-dam-health-care-center-14409",
@@ -790,7 +850,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "410 ROEDL CT",
     "postal_code": "53916",
-    "phone": "9208877191"
+    "phone": "9208877191",
+    "database_facility_id": "bbf3aa75-fd49-4aaa-9e5e-89df735f53a4"
   },
   {
     "id": "green-bay-health-services-14410",
@@ -803,7 +864,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1640 SHAWANO AVE",
     "postal_code": "54303",
-    "phone": "9204995177"
+    "phone": "9204995177",
+    "database_facility_id": "e9e312b6-f172-4e60-8f3e-d0b8fced9ddc"
   },
   {
     "id": "evergreen-health-services-14411",
@@ -816,7 +878,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1250 EVERGREEN ST",
     "postal_code": "54166",
-    "phone": "7155263107"
+    "phone": "7155263107",
+    "database_facility_id": "f02a4e83-1e2a-4fa6-82b2-e1603e71a471"
   },
   {
     "id": "williams-bay-health-services-14412",
@@ -829,7 +892,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "146 CLOVER ST",
     "postal_code": "53191",
-    "phone": "2622456400"
+    "phone": "2622456400",
+    "database_facility_id": "0527f2e6-befc-41af-b32a-72edde20700c"
   },
   {
     "id": "greentree-health-and-rehabilitation-center-14413",
@@ -842,7 +906,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "70 GREENTREE RD",
     "postal_code": "54929",
-    "phone": "7158232194"
+    "phone": "7158232194",
+    "database_facility_id": "323cc492-76c3-4aa5-a977-ca2450f5a536"
   },
   {
     "id": "colonial-health-services-14414",
@@ -855,7 +920,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "702 W DOLF ST",
     "postal_code": "54421",
-    "phone": "7152232352"
+    "phone": "7152232352",
+    "database_facility_id": "29dfa1aa-d266-4c6c-8446-e23136ea903b"
   },
   {
     "id": "aria-at-villa-pines-14415",
@@ -868,7 +934,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "201 Park St.",
     "postal_code": "53934",
-    "phone": "6083393361"
+    "phone": "6083393361",
+    "database_facility_id": "22ba43a3-785d-4925-844b-9b3cc013a884"
   },
   {
     "id": "lancaster-health-services-14416",
@@ -881,7 +948,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1350 S MADISON ST",
     "postal_code": "53813",
-    "phone": "6087234143"
+    "phone": "6087234143",
+    "database_facility_id": "83675778-42e0-49bd-801d-e87064e9f29e"
   },
   {
     "id": "stevens-point-health-services-14417",
@@ -894,7 +962,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1800 SHERMAN AVE",
     "postal_code": "54481",
-    "phone": "7153441800"
+    "phone": "7153441800",
+    "database_facility_id": "a8fc4e44-bb2b-4c03-884e-7be32331f9dc"
   },
   {
     "id": "mineral-point-health-services-14418",
@@ -907,7 +976,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "109 N IOWA ST",
     "postal_code": "53565",
-    "phone": "6089872381"
+    "phone": "6089872381",
+    "database_facility_id": "d9af9e86-8afd-4319-92b7-be6a61e099ae"
   },
   {
     "id": "randolph-health-services-14419",
@@ -920,7 +990,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "502 S HIGH ST",
     "postal_code": "53956",
-    "phone": "9203263171"
+    "phone": "9203263171",
+    "database_facility_id": "6e6de57a-0200-46dc-87cb-ecf9c0a1c54f"
   },
   {
     "id": "kewaunee-health-services-14420",
@@ -933,7 +1004,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1308 LINCOLN ST",
     "postal_code": "54216",
-    "phone": "9203884111"
+    "phone": "9203884111",
+    "database_facility_id": "8ff86cca-6ba6-47c3-b2e5-56fcfe0b6c3d"
   },
   {
     "id": "florence-health-services-14421",
@@ -946,7 +1018,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "5778 CHAPIN ST",
     "postal_code": "54121",
-    "phone": "7155284833"
+    "phone": "7155284833",
+    "database_facility_id": "b40dd5d4-c08c-4844-9a30-5d1695c680cb"
   },
   {
     "id": "maple-ridge-health-services-14422",
@@ -959,7 +1032,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2730 W RAMSEY AVE",
     "postal_code": "53221",
-    "phone": "4142822600"
+    "phone": "4142822600",
+    "database_facility_id": "d8fcc0f6-c52e-4d62-ba6b-492605a2c193"
   },
   {
     "id": "lafayette-manor-14423",
@@ -972,7 +1046,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "719 E CATHERINE ST  BOX 167",
     "postal_code": "53530",
-    "phone": "6087764210"
+    "phone": "6087764210",
+    "database_facility_id": "01f26dea-2340-4d80-8efb-84bfd3add5bb"
   },
   {
     "id": "suring-health-and-rehab-center-14424",
@@ -985,7 +1060,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "430 MANOR DR",
     "postal_code": "54174",
-    "phone": "9208422191"
+    "phone": "9208422191",
+    "database_facility_id": "692c59de-4ba6-45a4-a593-403949c7e4d7"
   },
   {
     "id": "pine-valley-community-village-14425",
@@ -998,7 +1074,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "25951 CIRCLE VIEW LANE",
     "postal_code": "53581",
-    "phone": "6086472138"
+    "phone": "6086472138",
+    "database_facility_id": "1caa7517-09b6-4dba-9e9f-fa9f3da51824"
   },
   {
     "id": "wausau-manor-health-services-14426",
@@ -1011,7 +1088,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3107 WESTHILL DR",
     "postal_code": "54401",
-    "phone": "7158420575"
+    "phone": "7158420575",
+    "database_facility_id": "e3d9dba5-9dfd-4b77-881d-94fd015a916f"
   },
   {
     "id": "twin-ports-health-services-14427",
@@ -1024,7 +1102,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1612 N 37TH ST",
     "postal_code": "54880",
-    "phone": "7153925144"
+    "phone": "7153925144",
+    "database_facility_id": "ec555ae7-2c5d-4f4b-8a49-5adc1f50b1a4"
   },
   {
     "id": "silver-springs-health-care-center-14428",
@@ -1037,7 +1116,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1300 WEST SILVER SPRING DR",
     "postal_code": "53209",
-    "phone": "4142288120"
+    "phone": "4142288120",
+    "database_facility_id": "dfc07d80-3a2a-4fb7-be28-96ca7f0045c9"
   },
   {
     "id": "columbia-health-care-center-14429",
@@ -1050,7 +1130,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "323 W MONROE ST",
     "postal_code": "53969",
-    "phone": "6084292181"
+    "phone": "6084292181",
+    "database_facility_id": "b055a7fa-b673-4220-bd20-d2b180b9db31"
   },
   {
     "id": "care-and-rehab-boscobel-14430",
@@ -1076,7 +1157,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "510 GENOMIC DRIVE",
     "postal_code": "53719",
-    "phone": "6082304000"
+    "phone": "6082304000",
+    "database_facility_id": "83c2871a-4a9b-4176-ba01-c4308878d105"
   },
   {
     "id": "upland-hills-nursing-and-rehab-14432",
@@ -1089,7 +1171,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "800 COMPASSION WAY",
     "postal_code": "53533",
-    "phone": "6089307600"
+    "phone": "6089307600",
+    "database_facility_id": "6c012b52-6c42-46b7-ac1e-1083ad640ae5"
   },
   {
     "id": "door-county-memorial-hospital-snf-14433",
@@ -1102,7 +1185,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "323 S 18TH AVE",
     "postal_code": "54235",
-    "phone": "9207435566"
+    "phone": "9207435566",
+    "database_facility_id": "57d0678b-2ca1-4273-8f78-54a8901d1d13"
   },
   {
     "id": "dove-healthcare-regional-vent-center-14434",
@@ -1128,7 +1212,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "228 W MAIN ST",
     "postal_code": "53590",
-    "phone": "6088375959"
+    "phone": "6088375959",
+    "database_facility_id": "9cd29444-a425-4d50-b6dd-1706f54b0680"
   },
   {
     "id": "st-camillus-health-center-14436",
@@ -1141,7 +1226,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "10101 W WISCONSIN AVE",
     "postal_code": "53226",
-    "phone": "4142581814"
+    "phone": "4142581814",
+    "database_facility_id": "bd4906f7-fd2e-41c8-ae00-81c4cf5a0efb"
   },
   {
     "id": "american-lutheran-home-mondovi-14437",
@@ -1154,7 +1240,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "200 MEMORIAL DR",
     "postal_code": "54755",
-    "phone": "7159264962"
+    "phone": "7159264962",
+    "database_facility_id": "0a1d7024-4323-4a13-8379-b3d5b90634dc"
   },
   {
     "id": "ashland-health-services-14438",
@@ -1167,7 +1254,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1319 BEASER AVE",
     "postal_code": "54806",
-    "phone": "7156823468"
+    "phone": "7156823468",
+    "database_facility_id": "a1e84d64-037a-4f2b-9f4c-dd91cc8304be"
   },
   {
     "id": "dove-healthcare-west-eau-claire-14439",
@@ -1193,7 +1281,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1445 N 7TH ST",
     "postal_code": "54220",
-    "phone": "9206820314"
+    "phone": "9206820314",
+    "database_facility_id": "e1b7a010-b39e-40d2-a042-94a7880fec58"
   },
   {
     "id": "rock-haven-14441",
@@ -1206,7 +1295,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3400 N CTY TRK HWY F",
     "postal_code": "53547",
-    "phone": "6087575076"
+    "phone": "6087575076",
+    "database_facility_id": "710af9bf-a766-4f66-87e3-e96152a30314"
   },
   {
     "id": "wisconsin-dells-health-services-14442",
@@ -1219,7 +1309,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "300 RACE ST",
     "postal_code": "53965",
-    "phone": "6082542574"
+    "phone": "6082542574",
+    "database_facility_id": "62d04141-d5de-4cf4-b5e7-d36634f57487"
   },
   {
     "id": "greenway-manor-14443",
@@ -1232,7 +1323,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "501 S WINSTED ST",
     "postal_code": "53588",
-    "phone": "6085882586"
+    "phone": "6085882586",
+    "database_facility_id": "e3067ba3-e7fa-45eb-a9d5-444b91a8ae89"
   },
   {
     "id": "dove-healthcare-superior-14444",
@@ -1258,7 +1350,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1505 ORRIN RD",
     "postal_code": "54021",
-    "phone": "7152625661"
+    "phone": "7152625661",
+    "database_facility_id": "3c6618d3-6e39-411d-baec-4f22934e30b2"
   },
   {
     "id": "willow-ridge-healthcare-14446",
@@ -1271,7 +1364,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "400 DERONDA ST",
     "postal_code": "54001",
-    "phone": "7152688171"
+    "phone": "7152688171",
+    "database_facility_id": "5ca2df92-dd07-4c17-b7ba-0129d833c8f5"
   },
   {
     "id": "clark-county-rehabilitation-living-center-14447",
@@ -1297,7 +1391,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1010 E WAUSAU AVE",
     "postal_code": "54403",
-    "phone": "7158422028"
+    "phone": "7158422028",
+    "database_facility_id": "3697a8da-63b2-4cde-96a3-2052407c70e4"
   },
   {
     "id": "edenbrook-omro-14449",
@@ -1310,7 +1405,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "500 GRANT AVE",
     "postal_code": "54963",
-    "phone": "9206852755"
+    "phone": "9206852755",
+    "database_facility_id": "9a72075d-0547-4607-8e5c-878a57956032"
   },
   {
     "id": "middle-river-health-and-rehabilitation-center-14450",
@@ -1323,7 +1419,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "8274 E SAN RD",
     "postal_code": "54874",
-    "phone": "7153983523"
+    "phone": "7153983523",
+    "database_facility_id": "04d58fc7-563d-4cb2-ab35-862417531f3f"
   },
   {
     "id": "pine-view-care-center-14451",
@@ -1336,7 +1433,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "400 COUNTY RD R",
     "postal_code": "54615",
-    "phone": "7152845396"
+    "phone": "7152845396",
+    "database_facility_id": "6c87fe2f-d618-45b8-82fa-f77f981a6039"
   },
   {
     "id": "eastview-health-and-rehabilitation-center-14452",
@@ -1349,7 +1447,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "729 PARK ST",
     "postal_code": "54409",
-    "phone": "7156232356"
+    "phone": "7156232356",
+    "database_facility_id": "f161dc6f-bcdf-420f-9037-5fc12a808c98"
   },
   {
     "id": "willowdale-health-services-14453",
@@ -1362,7 +1461,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1610 HOOVER ST",
     "postal_code": "53061",
-    "phone": "9208985706"
+    "phone": "9208985706",
+    "database_facility_id": "68568cf9-6261-4caf-869f-2cba4df93d72"
   },
   {
     "id": "birch-hill-health-services-14454",
@@ -1375,7 +1475,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1475 BIRCH HILL LANE",
     "postal_code": "54166",
-    "phone": "7155263161"
+    "phone": "7155263161",
+    "database_facility_id": "3d9dcf2b-436d-41f8-8289-1b0090ca6c07"
   },
   {
     "id": "willowcrest-health-services-14455",
@@ -1388,7 +1489,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3821 S CHICAGO AVE",
     "postal_code": "53172",
-    "phone": "4147627336"
+    "phone": "4147627336",
+    "database_facility_id": "b13181f0-0cdb-4057-97d0-0dd15d811b66"
   },
   {
     "id": "mercy-health-services-14456",
@@ -1401,7 +1503,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2727 W MITCHELL ST",
     "postal_code": "53215",
-    "phone": "4143833699"
+    "phone": "4143833699",
+    "database_facility_id": "31f13dcd-e3d1-48dd-868b-08ce4ede1c17"
   },
   {
     "id": "menomonee-falls-health-services-14457",
@@ -1414,7 +1517,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "N84 W17049 MENOMONEE AVE",
     "postal_code": "53051",
-    "phone": "2622551180"
+    "phone": "2622551180",
+    "database_facility_id": "2ccfc2cd-5751-46ff-a17f-31013b6e9676"
   },
   {
     "id": "milwaukee-health-and-rehab-14458",
@@ -1427,7 +1531,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3216 W HIGHLAND BLVD",
     "postal_code": "53208",
-    "phone": "4143446515"
+    "phone": "4143446515",
+    "database_facility_id": "8451f475-0208-4ec5-8621-5a587051be94"
   },
   {
     "id": "evansville-manor-nursing-and-rehab-llc-14459",
@@ -1440,7 +1545,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "470 GARFIELD AVE",
     "postal_code": "53536",
-    "phone": "6088825700"
+    "phone": "6088825700",
+    "database_facility_id": "497bb2b2-4000-4d20-b722-b4c640868af5"
   },
   {
     "id": "chippewa-manor-nursing-and-rehabilitation-14460",
@@ -1453,7 +1559,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "222 CHAPMAN RD",
     "postal_code": "54729",
-    "phone": "7157234437"
+    "phone": "7157234437",
+    "database_facility_id": "c7b25bf9-9446-42e3-901f-aac29f9ea5f9"
   },
   {
     "id": "lindengrove-menomonee-falls-14461",
@@ -1466,7 +1573,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "W180 N8071 TOWN HALL RD",
     "postal_code": "53051",
-    "phone": "2622532700"
+    "phone": "2622532700",
+    "database_facility_id": "a60985ee-cc83-4f16-945b-b4b8e9653aa4"
   },
   {
     "id": "lindengrove-waukesha-14462",
@@ -1479,7 +1587,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "425 N UNIVERSITY DR",
     "postal_code": "53188",
-    "phone": "2625246400"
+    "phone": "2625246400",
+    "database_facility_id": "b2242b1e-cc41-4965-a7cf-3030048cafda"
   },
   {
     "id": "aria-of-brookfield-14463",
@@ -1492,7 +1601,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "18740 W BLUEMOUND RD",
     "postal_code": "53045",
-    "phone": "2627820230"
+    "phone": "2627820230",
+    "database_facility_id": "efe28471-1e72-4f39-b854-08472eeb3137"
   },
   {
     "id": "dove-healthcare-fennimore-14464",
@@ -1518,7 +1628,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3501 PARK LANE DR",
     "postal_code": "54601",
-    "phone": "6087894800"
+    "phone": "6087894800",
+    "database_facility_id": "afaeddf3-2aa4-4d83-a6d6-03122f35b5e5"
   },
   {
     "id": "edenbrook-of-wisconsin-rapids-14466",
@@ -1531,7 +1642,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "130 STRAWBERRY LN",
     "postal_code": "54494",
-    "phone": "7154241600"
+    "phone": "7154241600",
+    "database_facility_id": "d3f8fd2c-5d0e-4fb5-9916-19d33d83937c"
   },
   {
     "id": "rolling-hills-rehab-ctr-14467",
@@ -1544,7 +1656,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "14400 CTY HWY B",
     "postal_code": "54656",
-    "phone": "6082698800"
+    "phone": "6082698800",
+    "database_facility_id": "9247d1ba-7709-4b8b-8566-876baeffdbdd"
   },
   {
     "id": "clairidge-house-14468",
@@ -1557,7 +1670,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1519 60TH ST",
     "postal_code": "53140",
-    "phone": "2626567500"
+    "phone": "2626567500",
+    "database_facility_id": "4d5b715f-54cc-4bbe-ad46-6e214afe09fe"
   },
   {
     "id": "neighbors-central-neighborhood-the-14469",
@@ -1583,7 +1697,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "10775 NYMAN AVE",
     "postal_code": "54843",
-    "phone": "7156342202"
+    "phone": "7156342202",
+    "database_facility_id": "ff77c2c0-0d8b-4b5b-b242-2857526f1f1d"
   },
   {
     "id": "abbotsford-health-care-center-14471",
@@ -1596,7 +1711,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "600 E ELM ST",
     "postal_code": "54405",
-    "phone": "7152232359"
+    "phone": "7152232359",
+    "database_facility_id": "5bdff7ca-1f4f-4d36-9106-1da3d8530b55"
   },
   {
     "id": "fair-view-nursing-and-rehabilitation-center-14472",
@@ -1609,7 +1725,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1050 DIVISION ST",
     "postal_code": "53948",
-    "phone": "6088471290"
+    "phone": "6088471290",
+    "database_facility_id": "cb169df9-959c-4647-8754-e7509f79490e"
   },
   {
     "id": "benedictine-manor-of-lacrosse-14473",
@@ -1622,7 +1739,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2902 EAST AVENUE SOUTH",
     "postal_code": "54601",
-    "phone": "6087889870"
+    "phone": "6087889870",
+    "database_facility_id": "9063770c-f238-4d89-911c-b5fdee33030a"
   },
   {
     "id": "plum-city-care-ctr-14474",
@@ -1635,7 +1753,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "301 CHERRY AVENUE WEST",
     "postal_code": "54761",
-    "phone": "7156472401"
+    "phone": "7156472401",
+    "database_facility_id": "a04a1175-01e9-4af9-9fa2-29a1ce5ca3b6"
   },
   {
     "id": "complete-care-at-manitowoc-llc-14475",
@@ -1648,7 +1767,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2021 S ALVERNO RD",
     "postal_code": "54220",
-    "phone": "9206834100"
+    "phone": "9206834100",
+    "database_facility_id": "ace7fac9-047d-4d98-ac3e-1ff4cd71326d"
   },
   {
     "id": "tomah-nursing-and-rehab-14476",
@@ -1661,7 +1781,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1505 BUTTS AVE",
     "postal_code": "54660",
-    "phone": "6083723241"
+    "phone": "6083723241",
+    "database_facility_id": "3ef0ad77-f8a9-4dcd-8e96-367b91ce9eaf"
   },
   {
     "id": "onalaska-care-center-14477",
@@ -1674,7 +1795,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1600 MAIN ST",
     "postal_code": "54650",
-    "phone": "6087834681"
+    "phone": "6087834681",
+    "database_facility_id": "c2b426ea-d55a-4699-ab6e-5c25fa30f166"
   },
   {
     "id": "columbus-health-and-rehab-14478",
@@ -1687,7 +1809,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "825 WESTERN AVE",
     "postal_code": "53925",
-    "phone": "9206232520"
+    "phone": "9206232520",
+    "database_facility_id": "24db7c6c-9fbf-48d3-9364-b668476c9d2d"
   },
   {
     "id": "hillside-manor-14479",
@@ -1700,7 +1823,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "803 S UNIVERSITY AVE",
     "postal_code": "53916",
-    "phone": "9208875901"
+    "phone": "9208875901",
+    "database_facility_id": "9fbdc61e-7c57-4bf7-a21e-1790f38f4750"
   },
   {
     "id": "meadowbrook-at-oconto-falls-14480",
@@ -1713,7 +1837,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "100 E HIGHLAND DR",
     "postal_code": "54154",
-    "phone": "9208483272"
+    "phone": "9208483272",
+    "database_facility_id": "a4617853-4460-438f-b572-022e79a2828c"
   },
   {
     "id": "rennes-health-and-rehab-center-west-14481",
@@ -1726,7 +1851,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "501 N LAKE ST",
     "postal_code": "54157",
-    "phone": "7155823906"
+    "phone": "7155823906",
+    "database_facility_id": "3ed3fb20-d784-4cd2-8bb5-2c8d643d4ed0"
   },
   {
     "id": "elroy-health-services-14482",
@@ -1739,7 +1865,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "307 ROYALL AVE",
     "postal_code": "53929",
-    "phone": "6084628491"
+    "phone": "6084628491",
+    "database_facility_id": "2ed986ee-217d-4e38-997a-2bc69ea1048b"
   },
   {
     "id": "clearview-14483",
@@ -1752,7 +1879,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "198 COUNTY  DF",
     "postal_code": "53039",
-    "phone": "9203863400"
+    "phone": "9203863400",
+    "database_facility_id": "0657f2bc-f2cf-43d5-9290-44c55ceb7bc6"
   },
   {
     "id": "oakwood-health-services-14484",
@@ -1765,7 +1893,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2512 NEW PINE DR",
     "postal_code": "54720",
-    "phone": "7158330400"
+    "phone": "7158330400",
+    "database_facility_id": "3cee7203-01ee-433c-9851-5391b971bef9"
   },
   {
     "id": "riverside-14485",
@@ -1778,7 +1907,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2575 S 7TH ST",
     "postal_code": "54601",
-    "phone": "6084063900"
+    "phone": "6084063900",
+    "database_facility_id": "a5775ac5-cbac-4685-9da1-d45351c81b79"
   },
   {
     "id": "sheboygan-health-services-14486",
@@ -1791,7 +1921,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3129 MICHIGAN AVE",
     "postal_code": "53082",
-    "phone": "9204581155"
+    "phone": "9204581155",
+    "database_facility_id": "0b73d1d3-d4c4-4fde-ba96-0e3e05d4b769"
   },
   {
     "id": "rennes-health-and-rehab-center-east-14487",
@@ -1804,7 +1935,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "701 WILLOW ST",
     "postal_code": "54157",
-    "phone": "7155823962"
+    "phone": "7155823962",
+    "database_facility_id": "f5f3bc73-dd34-4c9f-bc4e-92bc880255c9"
   },
   {
     "id": "park-view-home-14488",
@@ -1817,7 +1949,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "220 LOCKWOOD ST",
     "postal_code": "54028",
-    "phone": "7156982451"
+    "phone": "7156982451",
+    "database_facility_id": "33e3ebef-14c5-4f33-9ea4-88b52162e6ad"
   },
   {
     "id": "friendly-village-nursing-and-rehab-center-14489",
@@ -1830,7 +1963,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "900 BOYCE DR",
     "postal_code": "54501",
-    "phone": "7153656832"
+    "phone": "7153656832",
+    "database_facility_id": "8790f04e-a656-40a5-98c9-8fd141d1687c"
   },
   {
     "id": "pavilion-at-glacier-valley-14490",
@@ -1843,7 +1977,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1900 AMERICAN EAGLE DR",
     "postal_code": "53086",
-    "phone": "2622976300"
+    "phone": "2622976300",
+    "database_facility_id": "a78aa784-73c9-4ce4-b3c5-311281f7c529"
   },
   {
     "id": "maplewood-of-sauk-prairie-14491",
@@ -1856,7 +1991,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "245 SYCAMORE ST",
     "postal_code": "53583",
-    "phone": "6086433383"
+    "phone": "6086433383",
+    "database_facility_id": "5c7f37b4-5c54-40b3-b5e1-3d0e748b57a5"
   },
   {
     "id": "oakridge-gardens-nur-ctr-inc-14492",
@@ -1869,7 +2005,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1700 MIDWAY RD",
     "postal_code": "54952",
-    "phone": "9207390111"
+    "phone": "9207390111",
+    "database_facility_id": "8d5da6a5-eab6-4642-a6ee-4ffa8ddd2e89"
   },
   {
     "id": "cedar-lake-health-and-rehab-center-14493",
@@ -1882,7 +2019,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "5595 CTY RD Z",
     "postal_code": "53095",
-    "phone": "2623062100"
+    "phone": "2623062100",
+    "database_facility_id": "7e407221-6ff8-422a-802d-18d368970bb7"
   },
   {
     "id": "spring-valley-health-and-rehab-center-14494",
@@ -1908,7 +2046,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "501 MADISON AVE",
     "postal_code": "54151",
-    "phone": "7152513172"
+    "phone": "7152513172",
+    "database_facility_id": "0a519845-c54c-4332-92ae-f17a71700f2f"
   },
   {
     "id": "st-croix-health-center-14496",
@@ -1921,7 +2060,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1445 N FOURTH ST",
     "postal_code": "54017",
-    "phone": "7152468211"
+    "phone": "7152468211",
+    "database_facility_id": "2b0f6b47-3e68-48ae-8720-77b4f8bd8d7d"
   },
   {
     "id": "oakbrook-health-and-rehabilitation-14497",
@@ -1934,7 +2074,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "206 W PROSPECT ST",
     "postal_code": "54771",
-    "phone": "7156695321"
+    "phone": "7156695321",
+    "database_facility_id": "438b2635-713d-4358-8888-ce8b5696f665"
   },
   {
     "id": "river-s-bend-health-services-14498",
@@ -1947,7 +2088,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "960 S RAPIDS RD",
     "postal_code": "54220",
-    "phone": "9206841144"
+    "phone": "9206841144",
+    "database_facility_id": "d40aef6e-9922-4dd1-abe6-e762b2ec937b"
   },
   {
     "id": "luther-home-14499",
@@ -1960,7 +2102,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "831 PINE BEACH RD",
     "postal_code": "54143",
-    "phone": "7157320155"
+    "phone": "7157320155",
+    "database_facility_id": "7bf554de-a948-4da3-8885-12038d0d21b2"
   },
   {
     "id": "st-francis-health-services-14500",
@@ -1973,7 +2116,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1915 E TRIPOLI AVE",
     "postal_code": "53235",
-    "phone": "4144833611"
+    "phone": "4144833611",
+    "database_facility_id": "e88b6842-6f63-48ab-893c-895bb942c8af"
   },
   {
     "id": "dove-healthcare-bloomer-14501",
@@ -1999,7 +2143,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "915 ELM AVE E",
     "postal_code": "54751",
-    "phone": "7152359041"
+    "phone": "7152359041",
+    "database_facility_id": "2b5af05c-03c4-4713-bac9-2b274763e0fd"
   },
   {
     "id": "burlington-health-and-rehabilitation-center-14503",
@@ -2012,7 +2157,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "677 E STATE ST",
     "postal_code": "53105",
-    "phone": "2627639531"
+    "phone": "2627639531",
+    "database_facility_id": "2a3c6ee6-7700-4a52-907c-149bb1f51489"
   },
   {
     "id": "ellsworth-health-services-14504",
@@ -2025,7 +2171,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "403 N MAPLE ST",
     "postal_code": "54011",
-    "phone": "7152735821"
+    "phone": "7152735821",
+    "database_facility_id": "f8acb648-9dc6-40de-afc7-7b57be24dc51"
   },
   {
     "id": "edenbrook-of-appleton-north-14505",
@@ -2038,7 +2185,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2915 N MEADE ST",
     "postal_code": "54911",
-    "phone": "9209936800"
+    "phone": "9209936800",
+    "database_facility_id": "97bfe62b-1195-4fbd-bd2a-ad1b3b89f1b5"
   },
   {
     "id": "grancare-nursing-center-14506",
@@ -2051,7 +2199,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1555 DOUSMAN ST",
     "postal_code": "54303",
-    "phone": "9204944525"
+    "phone": "9204944525",
+    "database_facility_id": "e24a1aac-8d04-42fc-91a3-109485efd748"
   },
   {
     "id": "meadowbrook-at-black-river-falls-14507",
@@ -2064,7 +2213,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1311 TYLER ST",
     "postal_code": "54615",
-    "phone": "7152844396"
+    "phone": "7152844396",
+    "database_facility_id": "3e2d7743-84ba-4763-aa90-d1929141ab1d"
   },
   {
     "id": "newcare-14508",
@@ -2077,7 +2227,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "903 MAIN AVE",
     "postal_code": "54114",
-    "phone": "7158542717"
+    "phone": "7158542717",
+    "database_facility_id": "8eacff1e-e032-45eb-a32a-b42c3c68d368"
   },
   {
     "id": "aria-of-waukesha-14509",
@@ -2090,7 +2241,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1451 CLEVELAND AVE",
     "postal_code": "53186",
-    "phone": "2625472123"
+    "phone": "2625472123",
+    "database_facility_id": "9277efdf-9c66-4a09-aba5-c58dfedbe15b"
   },
   {
     "id": "sunrise-health-services-14510",
@@ -2103,7 +2255,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3540 S 43RD ST",
     "postal_code": "53220",
-    "phone": "4145411000"
+    "phone": "4145411000",
+    "database_facility_id": "e5cacae3-effd-4ab1-969c-82907cee6c3d"
   },
   {
     "id": "serenity-spring-senior-living-at-scandia-village-14511",
@@ -2116,7 +2269,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "10560 APPLEWOOD RD",
     "postal_code": "54234",
-    "phone": "9208542317"
+    "phone": "9208542317",
+    "database_facility_id": "bc013a9f-536f-46ec-ab7e-e8f458dbb81b"
   },
   {
     "id": "ascension-living-lakeshore-at-siena-14512",
@@ -2142,7 +2296,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1625 E MAIN ST",
     "postal_code": "54929",
-    "phone": "7158233135"
+    "phone": "7158233135",
+    "database_facility_id": "123c371d-037c-4c6d-b9df-1f34f80b77a7"
   },
   {
     "id": "amethyst-health-of-brown-deer-14514",
@@ -2155,7 +2310,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "7500 W DEAN RD",
     "postal_code": "53223",
-    "phone": "4143717500"
+    "phone": "4143717500",
+    "database_facility_id": "7adb3211-89b9-468f-ac9b-0ca80af0d918"
   },
   {
     "id": "hammond-health-services-14515",
@@ -2168,7 +2324,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "425 DAVIS ST",
     "postal_code": "54015",
-    "phone": "7157962218"
+    "phone": "7157962218",
+    "database_facility_id": "ccfe77dd-4ac7-4468-812d-e551eb46fe0c"
   },
   {
     "id": "baldwin-care-center-14516",
@@ -2181,7 +2338,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "650 BIRCH ST",
     "postal_code": "54002",
-    "phone": "7156843231"
+    "phone": "7156843231",
+    "database_facility_id": "a1beb9d9-901c-4a49-bf43-4b853380a3d1"
   },
   {
     "id": "wood-aven-health-and-rehabilitation-14517",
@@ -2194,7 +2352,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1821 N 4TH AVE",
     "postal_code": "54401",
-    "phone": "7156759451"
+    "phone": "7156759451",
+    "database_facility_id": "c39cb6ae-11b7-4426-a701-e7a1a9101c0a"
   },
   {
     "id": "autumn-lake-healthcare-at-greenfield-14518",
@@ -2207,7 +2366,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "5790 S 27TH ST",
     "postal_code": "53221",
-    "phone": "4142821300"
+    "phone": "4142821300",
+    "database_facility_id": "2a1e0dfe-732b-4450-86ce-1119f5a74283"
   },
   {
     "id": "golden-age-manor-14519",
@@ -2220,7 +2380,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "220 SCHOLL CT",
     "postal_code": "54001",
-    "phone": "7152687107"
+    "phone": "7152687107",
+    "database_facility_id": "5e93b033-b4b6-4c5f-b907-32715fddc62a"
   },
   {
     "id": "alden-meadow-park-hcc-14520",
@@ -2233,7 +2394,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "709 MEADOW PARK DR",
     "postal_code": "53525",
-    "phone": "6086762202"
+    "phone": "6086762202",
+    "database_facility_id": "04467948-7275-4283-a719-7de06363e5f1"
   },
   {
     "id": "good-shepherd-services-ltd-14521",
@@ -2246,7 +2408,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "607 BRONSON RD",
     "postal_code": "54165",
-    "phone": "9208336856"
+    "phone": "9208336856",
+    "database_facility_id": "06f93caa-e5ff-412b-8b44-ff6b04e9ed8c"
   },
   {
     "id": "sheboygan-progressive-health-services-14522",
@@ -2259,7 +2422,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1902 MEAD AVE",
     "postal_code": "53081",
-    "phone": "9204588333"
+    "phone": "9204588333",
+    "database_facility_id": "fb495527-6093-42c1-943b-f3522c1ca999"
   },
   {
     "id": "skaalen-nursing-and-rehabilitation-center-14523",
@@ -2272,7 +2436,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "400 N MORRIS ST",
     "postal_code": "53589",
-    "phone": "6088735651"
+    "phone": "6088735651",
+    "database_facility_id": "b60ac13d-da6f-463c-b0d3-c5032b3acdc6"
   },
   {
     "id": "kinnic-health-and-rehabilitation-center-14524",
@@ -2285,7 +2450,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1663 E DIVISION ST",
     "postal_code": "54022",
-    "phone": "7154266000"
+    "phone": "7154266000",
+    "database_facility_id": "977cd196-b879-4dae-b4ef-b0de0a7cc2c4"
   },
   {
     "id": "badger-prairie-hcc-14525",
@@ -2298,7 +2464,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1100 E VERONA AVE",
     "postal_code": "53593",
-    "phone": "6088456601"
+    "phone": "6088456601",
+    "database_facility_id": "c07ef448-89e1-4e29-80c8-9f78fa3f867b"
   },
   {
     "id": "complete-care-at-care-age-14526",
@@ -2311,7 +2478,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1755 N. Barker Rd.",
     "postal_code": "53045",
-    "phone": "2628213939"
+    "phone": "2628213939",
+    "database_facility_id": "154a87f2-513b-4a51-a951-18e0bc7cd923"
   },
   {
     "id": "dove-healthcare-lodi-14527",
@@ -2337,7 +2505,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "517 E DIVISION ST",
     "postal_code": "54935",
-    "phone": "9209216800"
+    "phone": "9209216800",
+    "database_facility_id": "4e772a9d-a31b-4578-8d85-d87204946c28"
   },
   {
     "id": "alexian-village-of-milwaukee-14529",
@@ -2350,7 +2519,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "9255 N 76TH ST",
     "postal_code": "53223",
-    "phone": "4143559300"
+    "phone": "4143559300",
+    "database_facility_id": "f7a3e058-01cc-4c96-bc62-d76f3619155f"
   },
   {
     "id": "st-anne-s-salvatorian-campus-14530",
@@ -2363,7 +2533,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3800 N 92ND ST",
     "postal_code": "53222",
-    "phone": "4144637570"
+    "phone": "4144637570",
+    "database_facility_id": "2c1d16eb-a133-4c9f-9e87-30d050da060e"
   },
   {
     "id": "prairie-maison-14531",
@@ -2376,7 +2547,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "700 SOUTH FREMONT",
     "postal_code": "53821",
-    "phone": "6083268471"
+    "phone": "6083268471",
+    "database_facility_id": "96b44092-0a44-4bf7-9039-e388a6865cc6"
   },
   {
     "id": "chi-franciscan-villa-14532",
@@ -2389,7 +2561,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3601 S CHICAGO AVE",
     "postal_code": "53172",
-    "phone": "4147644100"
+    "phone": "4147644100",
+    "database_facility_id": "ee31964f-bca1-4725-b6f9-e959a9e894db"
   },
   {
     "id": "franciscan-woods-14533",
@@ -2402,7 +2575,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "19525 W NORTH AVE",
     "postal_code": "53045",
-    "phone": "2627851114"
+    "phone": "2627851114",
+    "database_facility_id": "2e98c345-b4c1-48f8-9227-6dedc056f265"
   },
   {
     "id": "complete-care-at-christian-home-llc-14534",
@@ -2415,7 +2589,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "452 Fox Lake Road",
     "postal_code": "53963",
-    "phone": "9203249051"
+    "phone": "9203249051",
+    "database_facility_id": "9de4f9e0-e999-4099-974a-d671369e0533"
   },
   {
     "id": "dove-healthcare-st-croix-falls-14535",
@@ -2441,7 +2616,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1510 FREMONT ST",
     "postal_code": "54201",
-    "phone": "9204875511"
+    "phone": "9204875511",
+    "database_facility_id": "3b007820-eee6-4142-b6f5-0dd1a11f5051"
   },
   {
     "id": "harbor-haven-health-rehabilitation-14537",
@@ -2467,7 +2643,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "901 BRIDGE CREEK LANE",
     "postal_code": "54722",
-    "phone": "7152862266"
+    "phone": "7152862266",
+    "database_facility_id": "d2e3ec4d-032c-4bd7-bcf7-c3e7588a0edd"
   },
   {
     "id": "lasata-care-center-14539",
@@ -2480,7 +2657,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "W76 N677 WAUWATOSA RD",
     "postal_code": "53012",
-    "phone": "2623775060"
+    "phone": "2623775060",
+    "database_facility_id": "bdfc3892-5ff1-4475-8bb5-45601d86443f"
   },
   {
     "id": "bethany-home-14540",
@@ -2493,7 +2671,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1226 BERLIN STREET",
     "postal_code": "54981",
-    "phone": "7152585521"
+    "phone": "7152585521",
+    "database_facility_id": "27fa5a4e-97ff-44a8-9235-764f73f2bd06"
   },
   {
     "id": "saint-johns-on-the-lake-14541",
@@ -2506,7 +2685,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1858 N PROSPECT AVE",
     "postal_code": "53202",
-    "phone": "4142722022"
+    "phone": "4142722022",
+    "database_facility_id": "d00ff348-123d-4b82-b173-ff2f0faca8e1"
   },
   {
     "id": "villa-maria-health-and-rehab-ctr-14542",
@@ -2519,7 +2699,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "300 VILLA DR",
     "postal_code": "54534",
-    "phone": "7155613200"
+    "phone": "7155613200",
+    "database_facility_id": "98917533-14cf-4ae0-bd50-07e50663cc17"
   },
   {
     "id": "holton-manor-14543",
@@ -2532,7 +2713,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "645 N CHURCH ST",
     "postal_code": "53121",
-    "phone": "2627234963"
+    "phone": "2627234963",
+    "database_facility_id": "7ad4ab65-62ef-446e-8468-f8bbe8a1ac6e"
   },
   {
     "id": "oak-ridge-care-center-14544",
@@ -2545,7 +2727,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1400 8TH AVE",
     "postal_code": "53182",
-    "phone": "2628782788"
+    "phone": "2628782788",
+    "database_facility_id": "6859bb1e-eb0a-4f23-a32d-0d4a06e2e9bd"
   },
   {
     "id": "marquardt-memorial-manor-14545",
@@ -2558,7 +2741,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1020 HILL ST",
     "postal_code": "53098",
-    "phone": "9202610400"
+    "phone": "9202610400",
+    "database_facility_id": "99f5f514-07b7-4410-b49d-ce9bbbbedabc"
   },
   {
     "id": "lutheran-home-14546",
@@ -2571,7 +2755,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "7500 W NORTH AVE",
     "postal_code": "53213",
-    "phone": "4142586170"
+    "phone": "4142586170",
+    "database_facility_id": "e2f3132f-6c52-4b97-880e-69dd70757435"
   },
   {
     "id": "homestead-health-services-14547",
@@ -2584,7 +2769,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1712 MONROE ST",
     "postal_code": "53061",
-    "phone": "9208984296"
+    "phone": "9208984296",
+    "database_facility_id": "bbd54c45-b02e-4a8d-aba6-5ddd1f333ea4"
   },
   {
     "id": "complete-care-at-glendale-west-14548",
@@ -2597,7 +2783,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "6263 N GREEN BAY AVE",
     "postal_code": "53209",
-    "phone": "4143510543"
+    "phone": "4143510543",
+    "database_facility_id": "44001119-a3ac-47e2-8330-4d9b9dd9d662"
   },
   {
     "id": "peabody-manor-14549",
@@ -2610,7 +2797,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2600 S HERITAGE WOODS DR",
     "postal_code": "54915",
-    "phone": "9207383000"
+    "phone": "9207383000",
+    "database_facility_id": "00a15402-f274-432a-be10-daba91dec301"
   },
   {
     "id": "heritage-square-health-care-center-14550",
@@ -2623,7 +2811,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "5404 W LOOMIS RD",
     "postal_code": "53129",
-    "phone": "4144210088"
+    "phone": "4144210088",
+    "database_facility_id": "63108f3d-71e4-40d2-8256-afb571f5d186"
   },
   {
     "id": "markesan-resident-home-14551",
@@ -2636,7 +2825,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1130 N MARGARET",
     "postal_code": "53946",
-    "phone": "9203982751"
+    "phone": "9203982751",
+    "database_facility_id": "e73d7438-5124-4e83-b1e5-549eb2069c23"
   },
   {
     "id": "whispering-pines-nursing-and-rehab-llc-14552",
@@ -2649,7 +2839,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "50 WOLVERTON AVE",
     "postal_code": "54971",
-    "phone": "9207485638"
+    "phone": "9207485638",
+    "database_facility_id": "033ef5ad-20a7-493f-b544-7f4c067272db"
   },
   {
     "id": "wheaton-franciscan-hc-terrace-at-st-francis-14553",
@@ -2675,7 +2866,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "802 E CTY HWY B",
     "postal_code": "54871",
-    "phone": "7154687292"
+    "phone": "7154687292",
+    "database_facility_id": "1d45dff6-8b1f-46f7-8803-14a5a9932ef0"
   },
   {
     "id": "bethel-home-14555",
@@ -2688,7 +2880,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "225 N EAGLE ST",
     "postal_code": "54902",
-    "phone": "9202354653"
+    "phone": "9202354653",
+    "database_facility_id": "6ed7b28c-cbba-4dec-bf2c-e74b84b8712b"
   },
   {
     "id": "brookside-care-center-14556",
@@ -2701,7 +2894,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3506 WASHINGTON RD",
     "postal_code": "53144",
-    "phone": "2626533800"
+    "phone": "2626533800",
+    "database_facility_id": "839e4a2a-7f52-484f-81ca-f1b5ba3ba02b"
   },
   {
     "id": "woodside-lutheran-home-14557",
@@ -2714,7 +2908,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1040 PILGRIM WAY",
     "postal_code": "54304",
-    "phone": "9204991481"
+    "phone": "9204991481",
+    "database_facility_id": "1a2c658d-b903-438d-9035-aec86a7e7ce7"
   },
   {
     "id": "burnett-medical-center-14558",
@@ -2727,7 +2922,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "257 W ST GEORGE AVE",
     "postal_code": "54840",
-    "phone": "7154635353"
+    "phone": "7154635353",
+    "database_facility_id": "4f33a286-2df8-4705-8f03-7aa36825668e"
   },
   {
     "id": "odd-fellow-home-14559",
@@ -2740,7 +2936,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1229 S JACKSON ST",
     "postal_code": "54301",
-    "phone": "9204376523"
+    "phone": "9204376523",
+    "database_facility_id": "19fbde81-0a53-4612-aaf6-cf60875aee76"
   },
   {
     "id": "shorehaven-hlth-rehab-ctr-14560",
@@ -2766,7 +2963,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3271 NORTH ST",
     "postal_code": "53120",
-    "phone": "2626423995"
+    "phone": "2626423995",
+    "database_facility_id": "047ee119-ddba-403b-8a26-995fcdfb1ba4"
   },
   {
     "id": "vernon-manor-14562",
@@ -2779,7 +2977,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "310 FAIRLANE DR",
     "postal_code": "54665",
-    "phone": "6086375400"
+    "phone": "6086375400",
+    "database_facility_id": "a733f61a-86d3-45b4-9c7f-a8ff82ce150d"
   },
   {
     "id": "geneva-lake-manor-14563",
@@ -2792,7 +2991,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "211 S CURTIS ST",
     "postal_code": "53147",
-    "phone": "2622483145"
+    "phone": "2622483145",
+    "database_facility_id": "d3bee760-2f46-44f1-8c4d-b5423a5e6513"
   },
   {
     "id": "northern-lights-hcc-14564",
@@ -2805,7 +3005,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "706 BRATLEY DR",
     "postal_code": "54891",
-    "phone": "7153735621"
+    "phone": "7153735621",
+    "database_facility_id": "540bee14-3e70-48aa-935a-11223726d386"
   },
   {
     "id": "edenbrook-sheboygan-14565",
@@ -2818,7 +3019,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3014 ERIE AVE",
     "postal_code": "53081",
-    "phone": "9204593028"
+    "phone": "9204593028",
+    "database_facility_id": "bcfceebd-081a-43ad-b1f9-94aa65a86d1b"
   },
   {
     "id": "masonic-center-for-health-rehab-inc-14566",
@@ -2844,7 +3046,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "200 S NINTH ST",
     "postal_code": "54115",
-    "phone": "9203365680"
+    "phone": "9203365680",
+    "database_facility_id": "ef842f0c-2154-4438-a6c3-605b39676d98"
   },
   {
     "id": "brewster-village-14568",
@@ -2857,7 +3060,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3300 W BREWSTER ST",
     "postal_code": "54914",
-    "phone": "9208325400"
+    "phone": "9208325400",
+    "database_facility_id": "492e8cef-18e8-49d8-8f01-7e4c7a13058e"
   },
   {
     "id": "shady-lane-nursing-care-center-14569",
@@ -2870,7 +3074,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1235 S 24TH ST",
     "postal_code": "54220",
-    "phone": "9206828254"
+    "phone": "9206828254",
+    "database_facility_id": "9c2ec769-a97a-45a0-8abc-ab905cecbfb5"
   },
   {
     "id": "cedarburg-health-services-14570",
@@ -2883,7 +3088,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "N27 W5707 LINCOLN BLVD",
     "postal_code": "53012",
-    "phone": "2623767676"
+    "phone": "2623767676",
+    "database_facility_id": "54ecac44-ea52-46be-a48a-afadd3a0bb19"
   },
   {
     "id": "little-chute-health-services-14571",
@@ -2896,7 +3102,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1201 GARFIELD AVE",
     "postal_code": "54140",
-    "phone": "9207885806"
+    "phone": "9207885806",
+    "database_facility_id": "e8f315ec-0abe-4d0b-8276-bb8bc6655846"
   },
   {
     "id": "meadowbrook-at-bloomer-14572",
@@ -2909,7 +3116,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1840 PRIDDY ST",
     "postal_code": "54724",
-    "phone": "7155682503"
+    "phone": "7155682503",
+    "database_facility_id": "e13f925d-6594-4328-913e-53b19a303f9b"
   },
   {
     "id": "crest-view-nursing-home-14573",
@@ -2922,7 +3130,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "612 VIEW ST",
     "postal_code": "53950",
-    "phone": "6085623667"
+    "phone": "6085623667",
+    "database_facility_id": "82704253-e4c3-4e7b-9646-9bce13115a03"
   },
   {
     "id": "rennes-health-and-rehab-center-appleton-14574",
@@ -2935,7 +3144,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "325 E FLORIDA AVE",
     "postal_code": "54911",
-    "phone": "9207317310"
+    "phone": "9207317310",
+    "database_facility_id": "2dfa0599-8bfb-4826-912f-0c39116dcefa"
   },
   {
     "id": "heritage-health-services-14575",
@@ -2948,7 +3158,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1119 N WISCONSIN ST",
     "postal_code": "53074",
-    "phone": "2622845892"
+    "phone": "2622845892",
+    "database_facility_id": "a8673a0b-ed1a-40bd-b211-b80b71aa8662"
   },
   {
     "id": "luther-manor-14576",
@@ -2961,7 +3172,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "4545 N 92ND ST",
     "postal_code": "53225",
-    "phone": "4144643880"
+    "phone": "4144643880",
+    "database_facility_id": "03918d62-e4c5-4b05-8fa7-6fc97972dfe7"
   },
   {
     "id": "rennes-health-and-rehab-center-rhinelander-14577",
@@ -2974,7 +3186,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1970 NAVAJO ST",
     "postal_code": "54501",
-    "phone": "7154200728"
+    "phone": "7154200728",
+    "database_facility_id": "4ee83c0e-c6a4-4938-a3e8-2c0abfc20c87"
   },
   {
     "id": "care-rehab-ladysmith-1-14578",
@@ -3000,7 +3213,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "33 EVERETT ST",
     "postal_code": "54935",
-    "phone": "9209237980"
+    "phone": "9209237980",
+    "database_facility_id": "06cf4b49-2b78-40f0-a3ff-a78dee585d93"
   },
   {
     "id": "complete-care-at-hales-corners-14580",
@@ -3013,7 +3227,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "9449 W. Forest Home Ave.",
     "postal_code": "53130",
-    "phone": "4145296888"
+    "phone": "4145296888",
+    "database_facility_id": "763247b3-9643-4fcf-82e2-64370a355da9"
   },
   {
     "id": "sheboygan-senior-community-inc-14581",
@@ -3026,7 +3241,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3505 COUNTY ROAD Y",
     "postal_code": "53083",
-    "phone": "9204582137"
+    "phone": "9204582137",
+    "database_facility_id": "ca87f93a-6d86-4632-a0a2-6a567ab4dc13"
   },
   {
     "id": "st-joseph-residence-14582",
@@ -3039,7 +3255,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "107 E BECKERT RD",
     "postal_code": "54961",
-    "phone": "9209825354"
+    "phone": "9209825354",
+    "database_facility_id": "da2b5108-afbe-40d2-bdc4-1cba45a6ff05"
   },
   {
     "id": "aria-at-mitchell-manor-14583",
@@ -3052,7 +3269,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "5301 W LINCOLN AVE",
     "postal_code": "53219",
-    "phone": "4146157100"
+    "phone": "4146157100",
+    "database_facility_id": "1357a832-e95c-4eea-a152-d3eb2e912eee"
   },
   {
     "id": "glenhaven-14584",
@@ -3065,7 +3283,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "612 E OAK ST",
     "postal_code": "54013",
-    "phone": "7152654555"
+    "phone": "7152654555",
+    "database_facility_id": "5f55f9a2-c3a3-4ba4-9adb-7f85a5c558e1"
   },
   {
     "id": "complete-care-at-southpointe-14585",
@@ -3078,7 +3297,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "4500 W. Loomis Rd.",
     "postal_code": "53220",
-    "phone": "4143255300"
+    "phone": "4143255300",
+    "database_facility_id": "d56f2348-1e67-4bfa-a259-16b1ad1f9c7b"
   },
   {
     "id": "meadow-view-health-services-14586",
@@ -3091,7 +3311,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3613 S 13TH ST",
     "postal_code": "53081",
-    "phone": "9204584040"
+    "phone": "9204584040",
+    "database_facility_id": "f6f7a0ad-2187-434b-b068-9533a96a192c"
   },
   {
     "id": "morningside-health-services-14587",
@@ -3104,7 +3325,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3431 N 13TH ST",
     "postal_code": "53083",
-    "phone": "9204575046"
+    "phone": "9204575046",
+    "database_facility_id": "315b1950-9fb0-41aa-930c-5a9e2dd6b0e5"
   },
   {
     "id": "complete-care-at-ridgewood-llc-14588",
@@ -3117,7 +3339,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3205 WOOD RD",
     "postal_code": "53406",
-    "phone": "2625546440"
+    "phone": "2625546440",
+    "database_facility_id": "d7b16452-f906-47b9-97e9-57272a743823"
   },
   {
     "id": "st-marys-home-for-the-aged-14589",
@@ -3130,7 +3353,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1635 S 21ST STREET",
     "postal_code": "54220",
-    "phone": "9206847171"
+    "phone": "9206847171",
+    "database_facility_id": "0308ce7f-51bf-4bbb-b6a3-548c21a29bb8"
   },
   {
     "id": "portage-cty-hlth-care-ctr-14590",
@@ -3143,7 +3367,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "825 WHITING AVE",
     "postal_code": "54481",
-    "phone": "7153461374"
+    "phone": "7153461374",
+    "database_facility_id": "874af4db-e6e5-4bc0-a495-7f6e0b4af0ae"
   },
   {
     "id": "park-manor-ltd-14591",
@@ -3156,7 +3381,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "250 LAWRENCE AVE",
     "postal_code": "54552",
-    "phone": "7157622449"
+    "phone": "7157622449",
+    "database_facility_id": "fe308f18-20f7-4b04-aaad-32230e55b9b1"
   },
   {
     "id": "villa-marina-health-and-rehab-ctr-14592",
@@ -3169,7 +3395,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "35 N 28TH ST",
     "postal_code": "54880",
-    "phone": "7153923300"
+    "phone": "7153923300",
+    "database_facility_id": "92b7f7c5-ab17-4620-bee6-ca102ab76e2d"
   },
   {
     "id": "avina-of-mayville-14593",
@@ -3182,7 +3409,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "305 S. Clark St.",
     "postal_code": "53050",
-    "phone": "9203870354"
+    "phone": "9203870354",
+    "database_facility_id": "810ca6b9-a861-4e65-a26e-f8d1109d33e0"
   },
   {
     "id": "st-paul-elder-services-inc-14594",
@@ -3195,7 +3423,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "316 EAST 14TH STREET",
     "postal_code": "54130",
-    "phone": "9207666020"
+    "phone": "9207666020",
+    "database_facility_id": "569ef43a-5f1b-4dbc-9f41-7cc6c2b16853"
   },
   {
     "id": "norseland-nursing-home-14595",
@@ -3208,7 +3437,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "323 BLACK RIVER AVE",
     "postal_code": "54667",
-    "phone": "6086343747"
+    "phone": "6086343747",
+    "database_facility_id": "9516eafa-be95-4eac-9243-78db08ae22ee"
   },
   {
     "id": "soldiers-grove-health-services-14596",
@@ -3221,7 +3451,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "101 SUNSHINE BLVD",
     "postal_code": "54655",
-    "phone": "6086245244"
+    "phone": "6086245244",
+    "database_facility_id": "99ed42d0-b668-4c05-8a37-0af3e79472eb"
   },
   {
     "id": "nu-roc-health-and-rehabilitation-ctr-14597",
@@ -3234,7 +3465,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3576A NU ROC LN",
     "postal_code": "54541",
-    "phone": "7156744477"
+    "phone": "7156744477",
+    "database_facility_id": "f7322400-703f-412f-bf2e-ca3bed99ec0e"
   },
   {
     "id": "grand-view-care-ctr-14598",
@@ -3247,7 +3479,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "620 GRANDVIEW AVE",
     "postal_code": "54616",
-    "phone": "6089892511"
+    "phone": "6089892511",
+    "database_facility_id": "2bbd2185-6d4f-4b9a-927f-44b51234f700"
   },
   {
     "id": "lakeland-health-care-ctr-14599",
@@ -3260,7 +3493,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1922 CTY RD NN",
     "postal_code": "53121",
-    "phone": "2627413600"
+    "phone": "2627413600",
+    "database_facility_id": "1d00caf1-002d-491b-85a0-e2d9ee8428d7"
   },
   {
     "id": "christian-community-home-14600",
@@ -3273,7 +3507,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1320 WISCONSIN ST",
     "postal_code": "54016",
-    "phone": "7153869303"
+    "phone": "7153869303",
+    "database_facility_id": "3054f2a6-1fa5-4a70-8497-7beb31079f28"
   },
   {
     "id": "marinuka-manor-14601",
@@ -3286,7 +3521,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "19475 SILVER CREEK RD",
     "postal_code": "54630",
-    "phone": "6085822211"
+    "phone": "6085822211",
+    "database_facility_id": "746e287b-9083-47df-bc47-eceb8c5e51f5"
   },
   {
     "id": "new-glarus-home-14602",
@@ -3299,7 +3535,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "600 2ND AVE",
     "postal_code": "53574",
-    "phone": "6085272126"
+    "phone": "6085272126",
+    "database_facility_id": "ea43f403-6b9c-45b7-81a1-b64b99976784"
   },
   {
     "id": "water-s-edge-14603",
@@ -3312,7 +3549,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "11040 NORTH STATE RD 77",
     "postal_code": "54843",
-    "phone": "7159344300"
+    "phone": "7159344300",
+    "database_facility_id": "1efe39f3-31b8-4523-8cbe-295710541fda"
   },
   {
     "id": "milwaukee-catholic-home-14604",
@@ -3325,7 +3563,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2330 N PROSPECT AVE",
     "postal_code": "53211",
-    "phone": "4142204610"
+    "phone": "4142204610",
+    "database_facility_id": "5658a220-33fe-44a3-b2ca-fd87880f9054"
   },
   {
     "id": "cornell-health-services-14605",
@@ -3338,7 +3577,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "320 N 7TH ST",
     "postal_code": "54732",
-    "phone": "7152396288"
+    "phone": "7152396288",
+    "database_facility_id": "8f36002f-8029-4a25-baed-729b8ba42757"
   },
   {
     "id": "park-view-health-center-14606",
@@ -3351,7 +3591,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "725 BUTLER AVE",
     "postal_code": "54901",
-    "phone": "9202376300"
+    "phone": "9202376300",
+    "database_facility_id": "7988e35b-2247-4bfb-94cb-1357f9a012c5"
   },
   {
     "id": "st-elizabeth-nursing-home-14607",
@@ -3364,7 +3605,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "109 S ATWOOD AVENUE",
     "postal_code": "53545",
-    "phone": "6087526709"
+    "phone": "6087526709",
+    "database_facility_id": "51d15994-a862-4cb6-8c99-2cb89414c7a9"
   },
   {
     "id": "aspirus-care-rehab-medford-14608",
@@ -3390,7 +3632,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "438 ASHFORD AVE",
     "postal_code": "53048",
-    "phone": "9202694386"
+    "phone": "9202694386",
+    "database_facility_id": "68c588ec-6fb1-4057-9266-23e7e709922f"
   },
   {
     "id": "pleasant-view-nursing-home-14610",
@@ -3403,7 +3646,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "N3150 WI-81",
     "postal_code": "53566",
-    "phone": "6083252171"
+    "phone": "6083252171",
+    "database_facility_id": "c701e83b-9372-4ee1-9e1d-8f4697b9fe17"
   },
   {
     "id": "lindengrove-mukwonago-14611",
@@ -3416,7 +3660,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "837 E VETERANS WAY",
     "postal_code": "53149",
-    "phone": "2623636830"
+    "phone": "2623636830",
+    "database_facility_id": "6ab837e5-d3be-4691-80ef-c21ff045754c"
   },
   {
     "id": "avina-of-pewaukee-14612",
@@ -3429,7 +3674,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "N26 W23977 Watertown Rd.",
     "postal_code": "53188",
-    "phone": "2625230933"
+    "phone": "2625230933",
+    "database_facility_id": "6970585f-ae21-434b-bdf5-f64b59c86469"
   },
   {
     "id": "evergreen-health-center-14613",
@@ -3442,7 +3688,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1130 N WESTFIELD ST",
     "postal_code": "54902",
-    "phone": "9202332340"
+    "phone": "9202332340",
+    "database_facility_id": "b83a013e-d2e9-40eb-acc6-1300d1ce9395"
   },
   {
     "id": "barron-care-and-rehabilitation-14614",
@@ -3455,7 +3702,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "660 E BIRCH AVE",
     "postal_code": "54812",
-    "phone": "7155375643"
+    "phone": "7155375643",
+    "database_facility_id": "87ea75e7-9ca6-465a-8eda-e9c821ee6d9a"
   },
   {
     "id": "cedar-crest-health-center-14615",
@@ -3468,7 +3716,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1702 S RIVER RD",
     "postal_code": "53546",
-    "phone": "6087560344"
+    "phone": "6087560344",
+    "database_facility_id": "88307a99-b0e1-4e14-9901-833e4e129cc6"
   },
   {
     "id": "complete-care-at-germantown-14616",
@@ -3481,7 +3730,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "W173 N10915 Bernies Way",
     "postal_code": "53022",
-    "phone": "2625093300"
+    "phone": "2625093300",
+    "database_facility_id": "7fb234b8-7523-441c-b831-58f5e4165635"
   },
   {
     "id": "heritage-lakeside-14617",
@@ -3494,7 +3744,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1016 LAKESHORE DR",
     "postal_code": "54868",
-    "phone": "7152349101"
+    "phone": "7152349101",
+    "database_facility_id": "934a5de1-2d77-4296-90fd-b3726f321941"
   },
   {
     "id": "fond-du-lac-lutheran-home-14618",
@@ -3507,7 +3758,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "244 N MACY ST",
     "postal_code": "54935",
-    "phone": "9209219520"
+    "phone": "9209219520",
+    "database_facility_id": "c63a63b9-ceca-41bd-a624-b7e3f25f7270"
   },
   {
     "id": "four-winds-manor-14619",
@@ -3520,7 +3772,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "303 S JEFFERSON ST",
     "postal_code": "53593",
-    "phone": "6088456465"
+    "phone": "6088456465",
+    "database_facility_id": "61dacdde-b47c-4d6c-961b-aadcc1648afc"
   },
   {
     "id": "montello-care-center-14620",
@@ -3533,7 +3786,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "251 FOREST LANE",
     "postal_code": "53949",
-    "phone": "6082972153"
+    "phone": "6082972153",
+    "database_facility_id": "7483a092-01bf-45d3-b9d9-50bb09d4b738"
   },
   {
     "id": "complete-care-at-grande-prairie-14621",
@@ -3546,7 +3800,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "10330 Prairie Ridge Blvd.",
     "postal_code": "53158",
-    "phone": "2626122800"
+    "phone": "2626122800",
+    "database_facility_id": "6dc935fd-477a-4fc5-bccb-185eb6305913"
   },
   {
     "id": "st-dominic-villa-14622",
@@ -3559,7 +3814,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2375 SINSINAWA RD",
     "postal_code": "53811",
-    "phone": "6087489814"
+    "phone": "6087489814",
+    "database_facility_id": "c7483998-bf28-466a-93bc-c02b283d5a0b"
   },
   {
     "id": "morrow-memorial-home-14623",
@@ -3572,7 +3828,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "331 S WATER ST",
     "postal_code": "54656",
-    "phone": "6082693168"
+    "phone": "6082693168",
+    "database_facility_id": "8ab3d531-3fed-4be9-9008-6e0c7ca7bc4d"
   },
   {
     "id": "autumn-lake-healthcare-at-beloit-14624",
@@ -3585,7 +3842,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2121 PIONEER DR",
     "postal_code": "53511",
-    "phone": "6083659526"
+    "phone": "6083659526",
+    "database_facility_id": "454d2d35-f69d-4a77-8b58-ec6353774dd7"
   },
   {
     "id": "hamilton-health-services-14625",
@@ -3598,7 +3856,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1 HAMILTON DR",
     "postal_code": "54241",
-    "phone": "9207932261"
+    "phone": "9207932261",
+    "database_facility_id": "a108965f-9123-439d-962b-3693a9864832"
   },
   {
     "id": "frederic-nursing-and-rehab-community-14626",
@@ -3611,7 +3870,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "205 UNITED WAY",
     "postal_code": "54837",
-    "phone": "7153274297"
+    "phone": "7153274297",
+    "database_facility_id": "895812ee-ec7e-4474-a28a-3d40e11c8800"
   },
   {
     "id": "mercy-manor-transition-center-14627",
@@ -3624,7 +3884,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1000 MINERAL POINT AVE",
     "postal_code": "53547",
-    "phone": "6087566050"
+    "phone": "6087566050",
+    "database_facility_id": "f7415964-0aba-428c-9142-c17f05de835e"
   },
   {
     "id": "ridgeview-terrace-long-term-care-14628",
@@ -3637,7 +3898,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2350 N DEWEY AVE",
     "postal_code": "53959",
-    "phone": "6085246577"
+    "phone": "6085246577",
+    "database_facility_id": "876340ba-76ac-4e77-b5b6-449af9525e88"
   },
   {
     "id": "newcastle-place-14629",
@@ -3650,7 +3912,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "12600 N PORT WASHINGTON RD #300",
     "postal_code": "53092",
-    "phone": "2623878850"
+    "phone": "2623878850",
+    "database_facility_id": "0fc6f69d-44b9-4a71-80ea-54adc30be32d"
   },
   {
     "id": "oconto-health-and-rehab-center-14630",
@@ -3663,7 +3926,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "101 FIRST ST",
     "postal_code": "54153",
-    "phone": "9208344575"
+    "phone": "9208344575",
+    "database_facility_id": "257f6c5f-494f-432f-b49e-e52bc6bf8f8d"
   },
   {
     "id": "schmitt-woodland-hills-14631",
@@ -3676,7 +3940,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1400 W SEMINARY ST",
     "postal_code": "53581",
-    "phone": "6086478931"
+    "phone": "6086478931",
+    "database_facility_id": "7e4ccfb8-d33b-4261-a658-c9239bda94ec"
   },
   {
     "id": "meadowbrook-at-chetek-14632",
@@ -3689,7 +3954,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "725 KNAPP ST",
     "postal_code": "54728",
-    "phone": "7159244891"
+    "phone": "7159244891",
+    "database_facility_id": "c398e2f9-8582-44a9-8031-68cda3f9bb8d"
   },
   {
     "id": "dove-healthcare-spooner-14633",
@@ -3715,7 +3981,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "9969 OLD HWY 70 RD",
     "postal_code": "54548",
-    "phone": "7153566016"
+    "phone": "7153566016",
+    "database_facility_id": "b700ec5c-5dd9-4139-8e56-635e162e907e"
   },
   {
     "id": "united-pioneer-home-14635",
@@ -3728,7 +3995,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "623 S SECOND ST",
     "postal_code": "54853",
-    "phone": "7154722164"
+    "phone": "7154722164",
+    "database_facility_id": "14652f5e-fcac-4eb6-a8da-90d39e91916b"
   },
   {
     "id": "complete-care-at-nazareth-llc-14636",
@@ -3741,7 +4009,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "814 Jackson St.",
     "postal_code": "53589",
-    "phone": "6088736448"
+    "phone": "6088736448",
+    "database_facility_id": "c5804ef4-dd4d-4c8d-ba45-9706329c16c6"
   },
   {
     "id": "three-oaks-health-services-14637",
@@ -3754,7 +4023,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "209 WILDERNESS VIEW DRIVE",
     "postal_code": "54449",
-    "phone": "7153896000"
+    "phone": "7153896000",
+    "database_facility_id": "299d8c23-2b97-4f99-807d-0d0aae4f2d43"
   },
   {
     "id": "plymouth-health-services-14638",
@@ -3767,7 +4037,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "916 E CLIFFORD ST",
     "postal_code": "53073",
-    "phone": "9208934777"
+    "phone": "9208934777",
+    "database_facility_id": "5ef94d04-1da0-48d6-9e0f-fd9cf3351951"
   },
   {
     "id": "muskego-health-and-rehabilitation-center-14639",
@@ -3780,7 +4051,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "S77 W18690 JANESVILLE RD",
     "postal_code": "53150",
-    "phone": "2626790246"
+    "phone": "2626790246",
+    "database_facility_id": "f7db2aa8-12fd-4e62-954d-d0fbd2c37b41"
   },
   {
     "id": "pigeon-falls-hcc-14640",
@@ -3793,7 +4065,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "13197 CHURCH ST",
     "postal_code": "54760",
-    "phone": "7159832293"
+    "phone": "7159832293",
+    "database_facility_id": "b5635441-f23c-4139-af78-022ab699d5ec"
   },
   {
     "id": "wi-veterans-home-boland-hall-14641",
@@ -3806,7 +4079,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "21425 E SPRING ST",
     "postal_code": "53182",
-    "phone": "2628786702"
+    "phone": "2628786702",
+    "database_facility_id": "74036c5c-f989-4f39-bc48-8a781cf707b2"
   },
   {
     "id": "oakwood-village-east-health-and-rehab-center-14642",
@@ -3819,7 +4093,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "5833 AMERICAN PARKWAY",
     "postal_code": "53718",
-    "phone": "6082304000"
+    "phone": "6082304000",
+    "database_facility_id": "9cb18ae5-7cba-4123-b46b-8ee2675dbc25"
   },
   {
     "id": "brown-cty-comm-treatment-ctr-bayshore-village-14643",
@@ -3832,7 +4107,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3150 GERSHWIN DRIVE",
     "postal_code": "54311",
-    "phone": "9203914700"
+    "phone": "9203914700",
+    "database_facility_id": "9130523a-90a6-4e14-91d7-c2d2d1b24592"
   },
   {
     "id": "anna-john-resident-centered-care-community-14644",
@@ -3845,7 +4121,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2901 SOUTH OVERLAND ROAD",
     "postal_code": "54155",
-    "phone": "9208692797"
+    "phone": "9208692797",
+    "database_facility_id": "d47c0ee5-7b32-4a40-bb6f-0205d5ff0ec2"
   },
   {
     "id": "rennes-health-and-rehab-center-weston-14645",
@@ -3858,7 +4135,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "4810 BARBICAN AVE",
     "postal_code": "54476",
-    "phone": "7153930400"
+    "phone": "7153930400",
+    "database_facility_id": "4c44c25e-db87-445e-ad81-85c37d4984b3"
   },
   {
     "id": "congregational-home-inc-14646",
@@ -3871,7 +4149,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "13900 W BURLEIGH RD",
     "postal_code": "53005",
-    "phone": "2627810550"
+    "phone": "2627810550",
+    "database_facility_id": "441028b6-61de-467b-941f-d774c0a29095"
   },
   {
     "id": "dove-healthcare-south-eau-claire-14647",
@@ -3897,7 +4176,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2195 NORTH SUMMIT VILLAGE WAY",
     "postal_code": "53066",
-    "phone": "2625602400"
+    "phone": "2625602400",
+    "database_facility_id": "3638717d-4628-4b2d-a5ef-d2378c5de1c2"
   },
   {
     "id": "eden-rehab-suites-and-green-house-homes-14649",
@@ -3910,7 +4190,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "3151 EDEN CT",
     "postal_code": "54904",
-    "phone": "9206514000"
+    "phone": "9206514000",
+    "database_facility_id": "81e4d706-4f96-42c2-85fb-6d12f3dc3672"
   },
   {
     "id": "christian-community-home-of-osceola-inc-14650",
@@ -3923,7 +4204,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2650 65TH AVE",
     "postal_code": "54020",
-    "phone": "7152941100"
+    "phone": "7152941100",
+    "database_facility_id": "f6f6f40c-443b-495b-8a60-c5752d6337e4"
   },
   {
     "id": "wi-veterans-home-at-chippewa-falls-14651",
@@ -3936,7 +4218,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2175 E PARK AVE",
     "postal_code": "54729",
-    "phone": "7157206775"
+    "phone": "7157206775",
+    "database_facility_id": "f0d60dc8-d649-42d5-83ec-024334fef2a5"
   },
   {
     "id": "dove-healthcare-osseo-14652",
@@ -3975,7 +4258,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "7805 BIRCH ST",
     "postal_code": "54476",
-    "phone": "7152983833"
+    "phone": "7152983833",
+    "database_facility_id": "3ac76f5e-129e-441c-a920-b861d8c18e4b"
   },
   {
     "id": "care-and-rehab-cumberland-14655",
@@ -4040,7 +4324,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "210 CUMBERLIDGE AVE",
     "postal_code": "54946",
-    "phone": "7152585586"
+    "phone": "7152585586",
+    "database_facility_id": "bb8f1745-fe80-4f0d-8f05-819c089805d8"
   },
   {
     "id": "wi-veterans-hm-ainsworth-hall-14660",
@@ -4053,7 +4338,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "N2665 CTY RD QQ",
     "postal_code": "54946",
-    "phone": "7152585586"
+    "phone": "7152585586",
+    "database_facility_id": "c08ee6a9-82b2-42b3-8020-f6a0988db6f1"
   },
   {
     "id": "grace-lutheran-communities-river-pines-14661",
@@ -4079,7 +4365,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "962 E GARLAND ST E",
     "postal_code": "54669",
-    "phone": "6087861400"
+    "phone": "6087861400",
+    "database_facility_id": "e47c0c47-c603-4a6d-82c3-fc6d5250f3be"
   },
   {
     "id": "golden-years-of-lake-geneva-14663",
@@ -4092,7 +4379,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "611 HARMONY DRIVE",
     "postal_code": "53147",
-    "phone": "2622491960"
+    "phone": "2622491960",
+    "database_facility_id": "68b9d51d-46fb-4933-acf1-ae670afe0aaa"
   },
   {
     "id": "oak-park-place-of-janesville-14664",
@@ -4105,7 +4393,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "700 MYRTLE WAY",
     "postal_code": "53545",
-    "phone": "6085305700"
+    "phone": "6085305700",
+    "database_facility_id": "afe6ca62-5c83-4b6d-9247-0084ed45a938"
   },
   {
     "id": "oak-park-place-of-nakoma-14665",
@@ -4118,7 +4407,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "4327 Nakoma Rd.",
     "postal_code": "53711",
-    "phone": "6086404100"
+    "phone": "6086404100",
+    "database_facility_id": "fb980ff2-cd49-4edd-8cba-98685cdbf828"
   },
   {
     "id": "medical-suites-at-oak-creek-the-14666",
@@ -4131,7 +4421,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2700 HONADEL BOULEVARD",
     "postal_code": "53154",
-    "phone": "4144352005"
+    "phone": "4144352005",
+    "database_facility_id": "26f8012b-b23a-484a-b398-b94b991459cd"
   },
   {
     "id": "st-ann-health-and-rehabilitation-center-14667",
@@ -4144,7 +4435,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "2020 S MUSKEGO AVE",
     "postal_code": "53204",
-    "phone": "4143832630"
+    "phone": "4143832630",
+    "database_facility_id": "29b0cca6-3cb6-48e5-800f-9618f036601c"
   },
   {
     "id": "norwood-health-ctr-central-14668",
@@ -4157,7 +4449,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "1600 N CHESTNUT AVE",
     "postal_code": "54449",
-    "phone": "7153842188"
+    "phone": "7153842188",
+    "database_facility_id": "b07cbc78-dc91-4c8c-93f5-f58a3d2d94ff"
   },
   {
     "id": "trempealeau-cty-hcc-imd-14669",
@@ -4170,7 +4463,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "W20410 STATE RD 121",
     "postal_code": "54773",
-    "phone": "7155384312"
+    "phone": "7155384312",
+    "database_facility_id": "d612361c-4828-4beb-9bd2-284b420c7049"
   },
   {
     "id": "sky-view-nursing-center-14670",
@@ -4183,7 +4477,8 @@
     "facility_type": "Nursing Home",
     "address_line1": "309 IRON ST",
     "postal_code": "54534",
-    "phone": "7155615646"
+    "phone": "7155615646",
+    "database_facility_id": "9bc3e2a9-3d7b-44f7-a683-e684972e89d5"
   },
   {
     "id": "clearview-brain-injury-center-14671",
@@ -4196,6 +4491,7 @@
     "facility_type": "Nursing Home",
     "address_line1": "198 COUNTY DF",
     "postal_code": "53039",
-    "phone": "9203863400"
+    "phone": "9203863400",
+    "database_facility_id": "b0567d36-9941-42dc-9944-45e60d05395d"
   }
 ]
