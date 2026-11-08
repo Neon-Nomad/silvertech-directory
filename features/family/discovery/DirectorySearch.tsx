@@ -13,7 +13,9 @@ import { useGeolocation } from '@/src/hooks/useGeolocation';
 import { buildFacilityDetailPath, getCareTypeRouteLabel } from '@/src/utils/facilityPath';
 import { useAuth } from '@/src/context/AuthProvider';
 import { trackEvent } from '@/src/utils/analytics';
-import { withReviewedDatabaseIds } from '@/src/utils/facilityIdentity';
+import { isFacilityUuid, withReviewedDatabaseIds } from '@/src/utils/facilityIdentity';
+import { useComparison } from '@/src/context/ComparisonContext';
+import ComparisonTray from '@/features/family/discovery/ComparisonTray';
 import {
   fetchSavedFacilityIds,
   getQueuedFamilySaveFacilityIds,
@@ -398,6 +400,12 @@ const SearchResultCard: React.FC<{
   const [saveError, setSaveError] = useState<string | null>(null);
   const canSave = Boolean(databaseId);
 
+  // Compare uses the database ID. A listing without one cannot be looked up, so it is not offered for comparison.
+  const { selectedFacilities, addToCompare, removeFromCompare } = useComparison();
+  const compareId = isFacilityUuid(facility.id) ? facility.id : databaseId;
+  const isInCompare = Boolean(compareId && selectedFacilities.some((item) => item.id === compareId));
+  const compareFull = !isInCompare && selectedFacilities.length >= 3;
+
   const handleSave = async () => {
     if (saveBusy || !databaseId || isSaved) return;
     const facilityId = databaseId;
@@ -547,6 +555,31 @@ const SearchResultCard: React.FC<{
 
         <div className="flex items-center justify-center border-t border-slate-200 bg-warm-white p-6 lg:w-56 lg:border-l lg:border-t-0">
           <div className="w-full space-y-2">
+            {!claimMode &&
+              (compareId ? (
+                <button
+                  type="button"
+                  aria-pressed={isInCompare}
+                  disabled={compareFull}
+                  onClick={() =>
+                    isInCompare
+                      ? removeFromCompare(compareId)
+                      : addToCompare({
+                          id: compareId,
+                          name: facility.name,
+                          city: facility.city,
+                          state: facility.state,
+                          phone: facility.phone ?? null,
+                          address: facility.address_line1 ?? undefined,
+                        })
+                  }
+                  className="inline-flex min-h-11 w-full items-center justify-center rounded-md border border-slate-300 bg-white px-3 py-3 text-center text-xs font-bold uppercase tracking-[0.22em] text-charcoal transition-colors hover:border-charcoal disabled:opacity-60"
+                >
+                  {isInCompare ? 'Remove from compare' : compareFull ? 'Compare limit reached' : 'Add to compare'}
+                </button>
+              ) : (
+                <p className="text-center text-xs text-charcoal/60">Compare is not available for this listing yet.</p>
+              ))}
             {!claimMode && canSave && (
               <button
                 type="button"
@@ -1558,6 +1591,7 @@ const DirectorySearch: React.FC = () => {
           </div>
         </div>
       )}
+      <ComparisonTray />
     </div>
   );
 };
