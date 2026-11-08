@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getFacilitySupabase, resolveFacilityUuid, type FacilityIdentity } from '../../lib/facilityUuid';
+import { getFacilitySupabase } from '../../lib/facilitySupabase';
 import FacilityBadgeStrip from './FacilityBadgeStrip';
 import {
   buildFacilityBadgeCredentialSchema,
@@ -21,9 +21,9 @@ type EnrichedProfile = {
 };
 
 interface Props {
-  facilityId: string;
+  // Database UUID from the reviewed build-time map. Null when this listing is unresolved.
+  facilityUuid: string | null;
   facilityName: string;
-  identity: FacilityIdentity;
   facilityUrl: string;
   facilitySchemaId: string;
   onlinePresenceUpdatedAt?: string | null;
@@ -53,8 +53,7 @@ function groupByCategory(amenities: Amenity[]): Record<string, Amenity[]> {
 }
 
 export default function FacilityClaimedProfile({
-  facilityId,
-  identity,
+  facilityUuid,
   facilityName,
   facilityUrl,
   facilitySchemaId,
@@ -71,18 +70,19 @@ export default function FacilityClaimedProfile({
 
   useEffect(() => {
     const load = async () => {
-      const uuid = await resolveFacilityUuid(identity);
-      if (!uuid) {
-        setStatus('error');
+      if (!facilityUuid) {
+        // Unresolved listing: show the same locked placeholders as an unclaimed listing, not an error.
+        setProfile({ is_claimed: false, description: null, min_price: null, max_price: null, virtual_tour_url: null, tour_scheduling_url: null, photos: [], amenities: [] } as unknown as EnrichedProfile);
+        setStatus('done');
         return;
       }
       const supabase = getFacilitySupabase();
       const [profileResult, qaResult] = await Promise.all([
-        supabase.rpc('get_public_facility_enriched', { p_facility_id: uuid }),
+        supabase.rpc('get_public_facility_enriched', { p_facility_id: facilityUuid }),
         supabase
           .from('approved_facility_qa')
           .select('answer_id', { head: true, count: 'exact' })
-          .eq('facility_id', uuid)
+          .eq('facility_id', facilityUuid)
           .eq('is_operator', true),
       ]);
 
@@ -100,7 +100,7 @@ export default function FacilityClaimedProfile({
     };
 
     void load();
-  }, [facilityId]);
+  }, [facilityUuid]);
 
   // While loading, render nothing — static Astro content shows
   if (status === 'loading') return null;

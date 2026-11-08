@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { getFacilitySupabase, resolveFacilityUuid, type FacilityIdentity } from '../../lib/facilityUuid';
+import { getFacilitySupabase } from '../../lib/facilitySupabase';
 
 type FacilityAnswer = {
   id: string;
@@ -36,7 +36,8 @@ type QaRow = {
 type Props = {
   facilityId: string;
   facilityName: string;
-  identity: FacilityIdentity;
+  // Database UUID from the reviewed build-time map. Null when this listing is unresolved.
+  facilityUuid: string | null;
 };
 
 function groupRows(rows: QaRow[]): FacilityQuestion[] {
@@ -76,25 +77,20 @@ function formatDate(iso: string): string {
   }
 }
 
-export default function FacilityQASection({ facilityId, facilityName, identity }: Props) {
+export default function FacilityQASection({ facilityId, facilityName, facilityUuid }: Props) {
   const [questions, setQuestions] = useState<FacilityQuestion[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   const load = useCallback(async () => {
-    if (!facilityId) { setLoading(false); return; }
+    if (!facilityId || !facilityUuid) { setQuestions([]); setLoading(false); return; }
     setLoading(true);
     setError(null);
     try {
-      const uuid = await resolveFacilityUuid(identity);
-      if (!uuid) {
-        setQuestions([]);
-        return;
-      }
       const { data, error: err } = await getFacilitySupabase()
         .from('approved_facility_qa')
         .select('*')
-        .eq('facility_id', uuid)
+        .eq('facility_id', facilityUuid)
         .order('question_date', { ascending: false });
 
       if (err) throw err;
@@ -104,7 +100,7 @@ export default function FacilityQASection({ facilityId, facilityName, identity }
     } finally {
       setLoading(false);
     }
-  }, [facilityId]);
+  }, [facilityId, facilityUuid]);
 
   useEffect(() => { load(); }, [load]);
 
@@ -119,9 +115,15 @@ export default function FacilityQASection({ facilityId, facilityName, identity }
   return (
     <div>
       {questions.length === 0 ? (
-        <p className="fp-qa-empty">
-          No questions yet. Be the first to ask about {facilityName}.
-        </p>
+        facilityUuid ? (
+          <p className="fp-qa-empty">
+            No questions yet. Be the first to ask about {facilityName}.
+          </p>
+        ) : (
+          <p className="fp-qa-empty">
+            Community questions for {facilityName} are not available yet.
+          </p>
+        )
       ) : (
         <ul className="fp-qa-list">
           {questions.slice(0, 6).map((q) => (
