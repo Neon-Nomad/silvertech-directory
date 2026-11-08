@@ -1,5 +1,12 @@
 import dotenv from 'dotenv';
 import { createClient } from '@supabase/supabase-js';
+import {
+  describeFailure,
+  formatProcessingError,
+  nextBatchAction,
+  planBatch,
+  type FailureDiagnostic,
+} from './lib/normalizationDiagnostics';
 
 dotenv.config();
 
@@ -168,6 +175,13 @@ const linkIdentity = async (evt: PendingRawEvent, normalizedRecordId: string | n
   if (error) throw error;
 };
 
+// Stops the run at once. Raised for systemic failures, which must not turn events into rejections.
+class SystemicFailure extends Error {
+  constructor(readonly diagnostic: FailureDiagnostic) {
+    super(`systemic failure (${diagnostic.code ?? 'no code'}): ${diagnostic.message}`);
+  }
+}
+
 const main = async () => {
   const { data: run, error: runError } = await supabase
     .from('normalization_runs')
@@ -180,50 +194,124 @@ const main = async () => {
   let scanned = 0;
   let normalized = 0;
   let rejected = 0;
+  let transient = 0;
+  let rejectionWriteFailed = 0;
+  let stopReason = 'backlog_empty';
+  const seen = new Set<string>();
 
-  for (let batch = 0; batch < MAX_BATCHES; batch += 1) {
-    const { data, error } = await supabase.rpc('get_pending_raw_events_for_normalization', { p_limit: BATCH_SIZE });
-    if (error) throw error;
-    const events = (data || []) as PendingRawEvent[];
-    if (events.length === 0) break;
+  // Structured log lines. Fields are chosen deliberately: identifiers, classification and a redacted message. Never payloads.
+  const log = (fields: Record<string, unknown>) => console.log(JSON.stringify({ run_id: runId, ...fields }));
 
-    for (const evt of events) {
-      scanned += 1;
-      try {
-        const result = await upsertCanonical(evt);
-        await linkIdentity(evt, result.id, result.dedupeKey, result.confidence);
+  try {
+    for (let batch = 0; batch < MAX_BATCHES; batch += 1) {
+      const { data, error } = await supabase.rpc('get_pending_raw_events_for_normalization', { p_limit: BATCH_SIZE });
+      if (error) throw error;
+      const events = planBatch((data || []) as PendingRawEvent[], seen);
+      if (events.length === 0) {
+        stopReason = 'no_fresh_events';
+        break;
+      }
 
-        const { error: statusError } = await supabase.rpc('record_normalization_result', {
-          p_raw_event_id: evt.raw_event_id,
-          p_canonical_entity: evt.canonical_entity,
-          p_status: 'normalized',
-          p_normalized_table: result.table,
-          p_normalized_record_id: result.id,
-          p_dedupe_key: result.dedupeKey,
-          p_confidence_score: result.confidence,
-          p_processing_error: null,
-          p_run_id: runId,
-          p_metadata: {},
-        });
-        if (statusError) throw statusError;
-        normalized += 1;
-      } catch (err) {
-        const message = err instanceof Error ? err.message : String(err);
-        await supabase.rpc('record_normalization_result', {
-          p_raw_event_id: evt.raw_event_id,
-          p_canonical_entity: evt.canonical_entity,
-          p_status: 'rejected',
-          p_normalized_table: null,
-          p_normalized_record_id: null,
-          p_dedupe_key: null,
-          p_confidence_score: null,
-          p_processing_error: message,
-          p_run_id: runId,
-          p_metadata: {},
-        });
-        rejected += 1;
+      const outcome = { fresh: events.length, statusWritten: 0, transient: 0, systemic: 0 };
+
+      for (const evt of events) {
+        scanned += 1;
+        try {
+          const result = await upsertCanonical(evt);
+          await linkIdentity(evt, result.id, result.dedupeKey, result.confidence);
+
+          const { error: statusError } = await supabase.rpc('record_normalization_result', {
+            p_raw_event_id: evt.raw_event_id,
+            p_canonical_entity: evt.canonical_entity,
+            p_status: 'normalized',
+            p_normalized_table: result.table,
+            p_normalized_record_id: result.id,
+            p_dedupe_key: result.dedupeKey,
+            p_confidence_score: result.confidence,
+            p_processing_error: null,
+            p_run_id: runId,
+            p_metadata: {},
+          });
+          if (statusError) throw statusError;
+          normalized += 1;
+          outcome.statusWritten += 1;
+        } catch (err) {
+          const diag = describeFailure(err);
+          const fields = {
+            raw_event_id: evt.raw_event_id,
+            canonical_entity: evt.canonical_entity,
+            source_system: evt.source_system,
+            kind: diag.kind,
+            code: diag.code,
+            message: diag.message,
+          };
+
+          if (diag.kind === 'systemic') {
+            outcome.systemic += 1;
+            log({ event: 'normalization_systemic_failure', ...fields });
+            throw new SystemicFailure(diag);
+          }
+
+          if (diag.kind === 'transient') {
+            transient += 1;
+            outcome.transient += 1;
+            log({ event: 'normalization_transient_failure', ...fields });
+            continue;
+          }
+
+          const { error: rejectError } = await supabase.rpc('record_normalization_result', {
+            p_raw_event_id: evt.raw_event_id,
+            p_canonical_entity: evt.canonical_entity,
+            p_status: 'rejected',
+            p_normalized_table: null,
+            p_normalized_record_id: null,
+            p_dedupe_key: null,
+            p_confidence_score: null,
+            p_processing_error: formatProcessingError(diag),
+            p_run_id: runId,
+            p_metadata: {},
+          });
+          if (rejectError) {
+            rejectionWriteFailed += 1;
+            const writeDiag = describeFailure(rejectError);
+            log({
+              event: 'normalization_rejection_write_failed',
+              ...fields,
+              write_code: writeDiag.code,
+              write_message: writeDiag.message,
+            });
+            continue;
+          }
+          rejected += 1;
+          outcome.statusWritten += 1;
+          log({ event: 'normalization_rejected', ...fields });
+        }
+      }
+
+      const action = nextBatchAction(outcome);
+      if (action === 'abort') {
+        throw new SystemicFailure({ kind: 'systemic', code: null, message: 'batch aborted' });
+      }
+      if (action === 'stop') {
+        stopReason = outcome.transient > 0 ? 'transient_failure' : 'no_progress';
+        break;
       }
     }
+  } catch (err) {
+    const diag = err instanceof SystemicFailure ? err.diagnostic : describeFailure(err);
+    stopReason = diag.kind === 'systemic' ? 'systemic_failure' : 'error';
+    await supabase
+      .from('normalization_runs')
+      .update({
+        status: 'failed',
+        completed_at: new Date().toISOString(),
+        records_scanned: scanned,
+        records_normalized: normalized,
+        records_rejected: rejected,
+        metadata: { stop_reason: stopReason, error: { kind: diag.kind, code: diag.code, message: diag.message } },
+      })
+      .eq('id', runId);
+    throw err;
   }
 
   const { error: closeError } = await supabase
@@ -234,14 +322,27 @@ const main = async () => {
       records_scanned: scanned,
       records_normalized: normalized,
       records_rejected: rejected,
+      metadata: { stop_reason: stopReason, transient, rejection_write_failed: rejectionWriteFailed },
     })
     .eq('id', runId);
   if (closeError) throw closeError;
 
   console.log(`Normalization complete. run_id=${runId} scanned=${scanned} normalized=${normalized} rejected=${rejected}`);
+  console.log(
+    JSON.stringify({
+      event: 'normalization_run_summary',
+      run_id: runId,
+      scanned,
+      normalized,
+      rejected,
+      transient,
+      rejection_write_failed: rejectionWriteFailed,
+      stop_reason: stopReason,
+    })
+  );
 };
 
 main().catch((err) => {
-  console.error('pipeline_normalize failed:', err);
+  console.error('pipeline_normalize failed:', err instanceof Error ? err.message : describeFailure(err).message);
   process.exit(1);
 });
