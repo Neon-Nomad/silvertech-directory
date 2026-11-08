@@ -13,6 +13,13 @@ Written for: the production owner and the engineer who deploys this. Status: not
 ```sql
 select policyname, cmd, roles, qual, with_check from pg_policies where schemaname = 'public' and tablename = 'facility_claims' order by cmd, policyname;
 select count(*) from public.facility_claim_eligibility;  -- expect an error (table absent) before step 1
+
+-- Columns the migration and the claim page depend on. Expect 8 rows.
+select table_name, column_name, data_type from information_schema.columns
+where table_schema = 'public'
+  and ((table_name = 'facilities' and column_name in ('id', 'owner_id'))
+    or (table_name = 'facility_claims' and column_name in ('facility_id', 'user_id', 'status', 'business_email', 'phone', 'verification_doc_url')))
+order by table_name, column_name;
 ```
 1. **Apply the migration** `supabase/migrations/20261108150000_claim_eligibility_and_ownership_guard.sql` to production. Creates `facility_claim_eligibility`, two security-definer functions, and the new insert policy.
 2. **Load the seed** `supabase/seed-data/facility_claim_eligibility.sql` (72,246 reviewed identities). It joins to `facilities`, so an ID missing from the database is skipped, not inserted.
