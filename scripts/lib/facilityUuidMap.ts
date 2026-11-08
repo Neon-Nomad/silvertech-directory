@@ -37,8 +37,8 @@ export type DatabaseRow = {
 export type Decision = { path: string; uuid: string; reason: string; approvedBy: string };
 
 export type MapRow =
-  | { path: string; status: 'mapped'; uuid: string; reason: 'unique' | 'approved_selection'; identifiers: string[] }
-  | { path: string; status: 'unresolved'; uuid: ''; reason: 'duplicate_rows' | 'duplicate_rows_near' | 'cross_identity_conflict' | 'uuid_claimed_twice' | 'no_match'; candidates: string[] };
+  | { path: string; status: 'mapped'; uuid: string; reason: 'unique' | 'approved_selection'; identifiers: string[]; score: number }
+  | { path: string; status: 'unresolved'; uuid: ''; reason: 'duplicate_rows' | 'duplicate_rows_near' | 'cross_identity_conflict' | 'uuid_claimed_twice' | 'no_match' | 'insufficient_evidence'; candidates: string[] };
 
 export const MIN_SCORE = 5;
 const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -47,9 +47,14 @@ const ABBR: Record<string, string> = { street: 'st', avenue: 'ave', road: 'rd', 
 export const norm = (s: unknown): string =>
   String(s ?? '').normalize('NFKD').toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
 
-export const streetKey = (s: unknown): string =>
-  norm(String(s ?? '').split('#')[0].replace(/\b(suite|ste|unit|apt|floor|fl)\b.*$/i, ''))
+// A leading # belongs to the house number ("#2 MAIN ST" is "2 MAIN ST"). A # after the street text
+// starts a unit designator, which is dropped with everything that follows it.
+export const streetKey = (s: unknown): string => {
+  const raw = String(s ?? '').trim();
+  const body = raw.startsWith('#') ? raw.slice(1) : raw.split('#')[0];
+  return norm(body.replace(/\b(suite|ste|unit|apt|floor|fl)\b.*$/i, ''))
     .split(' ').map((w) => ABBR[w] || w).filter(Boolean).join(' ');
+};
 
 export const zip5 = (z: unknown): string => {
   const d = String(z ?? '').replace(/\D/g, '');
@@ -107,7 +112,8 @@ export function buildIndex(db: DatabaseRow[]) {
 const sig = (r: DatabaseRow) => [norm(r.name), streetKey(r.address_line1), zip5(r.postal_code), phone10(r.phone)].join('|');
 
 type Raw =
-  | { path: string; kind: 'unique'; uuid: string; identifiers: string[] }
+  | { path: string; kind: 'unique'; uuid: string; identifiers: string[]; score: number }
+  | { path: string; kind: 'insufficient'; uuid: string; identifiers: string[]; score: number }
   | { path: string; kind: 'tie'; candidates: string[]; identical: boolean }
   | { path: string; kind: 'no_match' };
 
@@ -128,7 +134,12 @@ export function matchIdentities(statics: StaticIdentity[], db: DatabaseRow[]): R
     if (top.length === 1) {
       const p = top[0].parts;
       const identifiers = ['name', ...(['street', 'phone', 'cms', 'license'] as const).filter((k) => p[k] > 0)];
-      out.push({ path: f.path, kind: 'unique', uuid: top[0].row.id, identifiers });
+      // Sufficient evidence: an address match (street with ZIP), or at least two of phone, CMS number, and license number.
+      const independent = [p.phone, p.cms, p.license].filter((x) => x > 0).length;
+      const sufficient = p.street > 0 || independent >= 2;
+      out.push(sufficient
+        ? { path: f.path, kind: 'unique', uuid: top[0].row.id, identifiers, score: top[0].total }
+        : { path: f.path, kind: 'insufficient', uuid: top[0].row.id, identifiers, score: top[0].total });
       continue;
     }
     const identical = top.every((s) => sig(s.row) === sig(top[0].row));
@@ -146,12 +157,13 @@ export function reconcile(raw: Raw[], decisions: Decision[] = []): MapRow[] {
 
   const rows: MapRow[] = raw.map((r): MapRow => {
     if (r.kind === 'no_match') return { path: r.path, status: 'unresolved', uuid: '', reason: 'no_match', candidates: [] };
+    if (r.kind === 'insufficient') return { path: r.path, status: 'unresolved', uuid: '', reason: 'insufficient_evidence', candidates: [r.uuid] };
     if (r.kind === 'tie') {
       return { path: r.path, status: 'unresolved', uuid: '', reason: r.identical ? 'duplicate_rows' : 'duplicate_rows_near', candidates: r.candidates };
     }
     if (tieCandidates.has(r.uuid)) return { path: r.path, status: 'unresolved', uuid: '', reason: 'cross_identity_conflict', candidates: [r.uuid] };
     if ((uniqueCount.get(r.uuid) || 0) > 1) return { path: r.path, status: 'unresolved', uuid: '', reason: 'uuid_claimed_twice', candidates: [r.uuid] };
-    return { path: r.path, status: 'mapped', uuid: r.uuid, reason: 'unique', identifiers: r.identifiers };
+    return { path: r.path, status: 'mapped', uuid: r.uuid, reason: 'unique', identifiers: r.identifiers, score: r.score };
   });
 
   const byPath = new Map(rows.map((r) => [r.path, r]));
@@ -159,17 +171,17 @@ export function reconcile(raw: Raw[], decisions: Decision[] = []): MapRow[] {
     const row = byPath.get(d.path);
     if (!row || row.status !== 'unresolved' || (row.reason !== 'duplicate_rows' && row.reason !== 'duplicate_rows_near')) continue;
     if (!row.candidates.includes(d.uuid)) continue;
-    byPath.set(d.path, { path: d.path, status: 'mapped', uuid: d.uuid, reason: 'approved_selection', identifiers: [d.reason] });
+    byPath.set(d.path, { path: d.path, status: 'mapped', uuid: d.uuid, reason: 'approved_selection', identifiers: [d.reason], score: 0 });
   }
   return [...byPath.values()].sort((a, b) => (a.path < b.path ? -1 : a.path > b.path ? 1 : 0));
 }
 
-export const HEADER = 'path\tstatus\tuuid\treason\tidentifiers_or_candidates';
+export const HEADER = 'path\tstatus\tuuid\treason\tidentifiers_or_candidates\tscore';
 
 export function serialize(rows: MapRow[]): string {
   const lines = rows.map((r) => {
-    if (r.status === 'mapped') return [r.path, 'mapped', r.uuid, r.reason, r.identifiers.join(',')].join('\t');
-    return [r.path, 'unresolved', '', r.reason, r.candidates.join(',')].join('\t');
+    if (r.status === 'mapped') return [r.path, 'mapped', r.uuid, r.reason, r.identifiers.join(','), String(r.score)].join('\t');
+    return [r.path, 'unresolved', '', r.reason, r.candidates.join(','), ''].join('\t');
   });
   return [HEADER, ...lines].join('\n') + '\n';
 }
@@ -178,8 +190,8 @@ export function parse(text: string): MapRow[] {
   const lines = text.split('\n').filter((l) => l.length > 0);
   if (lines[0] !== HEADER) throw new Error('map header does not match the expected columns');
   return lines.slice(1).map((line): MapRow => {
-    const [path, status, uuid, reason, list] = line.split('\t');
-    if (status === 'mapped') return { path, status, uuid, reason: reason as 'unique' | 'approved_selection', identifiers: list ? list.split(',') : [] };
+    const [path, status, uuid, reason, list, score] = line.split('\t');
+    if (status === 'mapped') return { path, status, uuid, reason: reason as 'unique' | 'approved_selection', identifiers: list ? list.split(',') : [], score: Number(score) };
     if (uuid) throw new Error(`unresolved row carries a UUID: ${path}`);
     return { path, status: 'unresolved', uuid: '', reason: reason as Exclude<MapRow['reason'], 'unique' | 'approved_selection'>, candidates: list ? list.split(',') : [] };
   });

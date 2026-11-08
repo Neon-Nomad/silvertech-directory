@@ -4,6 +4,7 @@ import {
   parse,
   reconcile,
   serialize,
+  streetKey,
   validate,
   type DatabaseRow,
   type MapRow,
@@ -105,7 +106,7 @@ describe('reconciliation', () => {
 describe('file format', () => {
   it('round-trips and rejects a UUID on an unresolved row', () => {
     const rows: MapRow[] = [
-      { path: 'a/x', status: 'mapped', uuid: U(1), reason: 'unique', identifiers: ['name', 'street'] },
+      { path: 'a/x', status: 'mapped', uuid: U(1), reason: 'unique', identifiers: ['name', 'street'], score: 8 },
       { path: 'b/y', status: 'unresolved', uuid: '', reason: 'duplicate_rows', candidates: [U(2), U(3)] },
     ];
     expect(parse(serialize(rows))).toEqual(rows);
@@ -121,7 +122,7 @@ describe('validation', () => {
     { ...statics()[0], path: 'b/y', name: 'Beta House' },
   ];
   const good: MapRow[] = [
-    { path: 'a/x', status: 'mapped', uuid: U(1), reason: 'unique', identifiers: ['name'] },
+    { path: 'a/x', status: 'mapped', uuid: U(1), reason: 'unique', identifiers: ['name'], score: 8 },
     { path: 'b/y', status: 'unresolved', uuid: '', reason: 'no_match', candidates: [] },
   ];
   const run = (rows: MapRow[], extra: Partial<Parameters<typeof validate>[0]> = {}) =>
@@ -132,7 +133,7 @@ describe('validation', () => {
   });
 
   it('rejects a UUID assigned to two identities', () => {
-    const dup: MapRow[] = [good[0], { path: 'b/y', status: 'mapped', uuid: U(1), reason: 'unique', identifiers: ['name'] }];
+    const dup: MapRow[] = [good[0], { path: 'b/y', status: 'mapped', uuid: U(1), reason: 'unique', identifiers: ['name'], score: 8 }];
     expect(run(dup).join(' ')).toMatch(/assigned to two identities/);
   });
 
@@ -162,5 +163,35 @@ describe('validation', () => {
     expect(run(good, { database: db }).join(' ')).toMatch(/not in the database export/);
     const db2 = [row(1, { name: 'Someone Else' })];
     expect(run(good, { database: db2 }).join(' ')).toMatch(/disagrees on name/);
+  });
+});
+
+describe('street normalization and evidence', () => {
+  it('keeps the house number when the street begins with a hash', () => {
+    expect(streetKey('#2 NAZARETH LANE')).toBe('2 nazareth ln');
+  });
+
+  it('drops a unit designator that follows the street', () => {
+    expect(streetKey('100 Main St #5')).toBe('100 main st');
+    expect(streetKey('100 Main Street, Suite 2')).toBe('100 main st');
+  });
+
+  it('matches a leading-hash street to its database form', () => {
+    const f = statics([{ street: '#2 Nazareth Lane', name: 'Nazareth Living Center', zip: '63129', phone: null }]);
+    const raw = matchIdentities(f, [row(1, { name: 'Nazareth Living Center', address_line1: '2 NAZARETH LN', postal_code: '63129', phone: null })]);
+    expect(raw[0]).toMatchObject({ kind: 'unique' });
+  });
+
+  it('leaves a name with one non-address identifier unresolved as insufficient evidence', () => {
+    const f = statics([{ street: 'Unknown Lane', zip: '99999', phone: '(612) 555-0100', name: 'Beta Home' }]);
+    const raw = matchIdentities(f, [row(1, { name: 'Beta Home', address_line1: '1 Other St', postal_code: '11111', phone: '612-555-0100' })]);
+    expect(raw[0]).toMatchObject({ kind: 'insufficient' });
+    expect(reconcile(raw)[0]).toMatchObject({ status: 'unresolved', reason: 'insufficient_evidence' });
+  });
+
+  it('accepts a name with two independent identifiers and no address match', () => {
+    const f = statics([{ street: 'Unknown Lane', zip: '99999', phone: '(612) 555-0100', licenseNumber: 'LIC-9', name: 'Gamma Home' }]);
+    const raw = matchIdentities(f, [row(1, { name: 'Gamma Home', address_line1: '1 Other St', postal_code: '11111', phone: '612-555-0100', state_license_number: 'LIC9' })]);
+    expect(raw[0]).toMatchObject({ kind: 'unique' });
   });
 });
