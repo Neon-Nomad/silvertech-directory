@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 import React from 'react';
 import '@testing-library/jest-dom/vitest';
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { FacilityLineageView } from '@/features/operator/dashboard/FacilityLineageView';
 
@@ -54,19 +54,25 @@ const lineageRows = [
   },
 ];
 
+const mocks = vi.hoisted(() => ({
+  rpc: vi.fn(),
+  from: vi.fn(),
+}));
+
 vi.mock('@/src/lib/supabase', () => ({
   supabase: {
-    from: () => ({
-      select: () => ({
-        order: () => ({
-          limit: async () => ({ data: lineageRows, error: null }),
-        }),
-      }),
-    }),
+    rpc: (...args: unknown[]) => mocks.rpc(...args),
+    from: (...args: unknown[]) => mocks.from(...args),
   },
 }));
 
 describe('FacilityLineageView', () => {
+  beforeEach(() => {
+    mocks.rpc.mockReset();
+    mocks.from.mockReset();
+    mocks.rpc.mockResolvedValue({ data: lineageRows, error: null });
+  });
+
   afterEach(() => {
     cleanup();
     window.localStorage.clear();
@@ -158,5 +164,90 @@ describe('FacilityLineageView', () => {
     cleanup();
     render(<FacilityLineageView />);
     expect(screen.queryByTestId('vault-intro')).not.toBeInTheDocument();
+  });
+
+  it('loads through the operator RPC and never queries the view directly', async () => {
+    render(<FacilityLineageView />);
+
+    await waitFor(() => {
+      expect(screen.getByText('Golden Oaks')).toBeInTheDocument();
+    });
+    expect(mocks.rpc).toHaveBeenCalledWith('get_operator_facility_lineage', { p_limit: 200 });
+    expect(mocks.from).not.toHaveBeenCalled();
+  });
+
+  it('shows the server refusal for accounts that are neither operators nor staff', async () => {
+    mocks.rpc.mockResolvedValueOnce({ data: null, error: { message: 'Not authorized to view facility lineage' } });
+
+    render(<FacilityLineageView />);
+
+    await waitFor(() => {
+      expect(screen.getByText('Not authorized to view facility lineage')).toBeInTheDocument();
+    });
+    expect(screen.queryByText('Golden Oaks')).not.toBeInTheDocument();
+  });
+
+  it('renders operator rows whose trace fields and error text are null, without showing empty values', async () => {
+    mocks.rpc.mockResolvedValueOnce({
+      data: [
+        {
+          ...lineageRows[0],
+          normalization_record_id: null,
+          raw_event_id: null,
+          canonical_record_id: null,
+          processing_error: null,
+          market_benchmark: { scope: 'zip', confidence: 'suppressed', facility_count: null, avg_monthly_rate: null },
+        },
+      ],
+      error: null,
+    });
+
+    render(<FacilityLineageView />);
+
+    await waitFor(() => {
+      expect(screen.getByText('Golden Oaks')).toBeInTheDocument();
+    });
+    expect(screen.getByText('raw: --')).toBeInTheDocument();
+    expect(screen.getByText('canonical: --')).toBeInTheDocument();
+    expect(screen.queryByText('$4,200')).not.toBeInTheDocument();
+    expect(screen.getByText(/suppressed/)).toBeInTheDocument();
+    expect(screen.queryByText(/null|undefined/)).not.toBeInTheDocument();
+  });
+
+  it('exports operator rows to CSV with empty trace and benchmark cells, never the word null', async () => {
+    mocks.rpc.mockResolvedValueOnce({
+      data: [
+        {
+          ...lineageRows[0],
+          normalization_record_id: null,
+          raw_event_id: null,
+          canonical_record_id: null,
+          processing_error: null,
+          market_benchmark: { scope: 'zip', confidence: 'suppressed', facility_count: null, avg_monthly_rate: null },
+        },
+      ],
+      error: null,
+    });
+    const createObjectUrlSpy = vi.spyOn(URL, 'createObjectURL').mockReturnValue('blob:test');
+    vi.spyOn(URL, 'revokeObjectURL').mockImplementation(() => {});
+
+    render(<FacilityLineageView />);
+
+    await waitFor(() => {
+      expect(screen.getByText('Golden Oaks')).toBeInTheDocument();
+    });
+    fireEvent.click(screen.getAllByRole('button', { name: 'Export CSV' })[0]);
+
+    expect(createObjectUrlSpy).toHaveBeenCalledTimes(1);
+    const blob = createObjectUrlSpy.mock.calls[0][0] as Blob;
+    const csv = await new Promise<string>((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(String(reader.result));
+      reader.onerror = () => reject(reader.error);
+      reader.readAsText(blob);
+    });
+    expect(csv).toContain('"Golden Oaks"');
+    expect(csv).not.toMatch(/\bnull\b|undefined/);
+    createObjectUrlSpy.mockRestore();
   });
 });

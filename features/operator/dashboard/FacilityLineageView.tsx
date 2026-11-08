@@ -14,8 +14,9 @@ type MarketBenchmark = {
 };
 
 type LineageRow = {
-  normalization_record_id: string;
-  raw_event_id: string;
+  // Trace fields are null for facility operators: the server returns them only to platform staff.
+  normalization_record_id: string | null;
+  raw_event_id: string | null;
   source_system: string | null;
   occurred_at: string | null;
   normalization_status: string | null;
@@ -82,13 +83,9 @@ export const FacilityLineageView: React.FC = () => {
   const loadLineage = React.useCallback(async () => {
     setLoading(true);
     setError(null);
-    const { data, error: fetchError } = await supabase
-      .from('api_internal_facility_lineage')
-      .select(
-        'normalization_record_id,raw_event_id,source_system,occurred_at,normalization_status,processing_error,attempts,canonical_record_id,facility_id,facility_name,city,state,profile_strength,listing_authority_tier,market_benchmark,last_processed_at'
-      )
-      .order('last_processed_at', { ascending: false })
-      .limit(200);
+    // Access is decided in the database (get_operator_facility_lineage): facility operators get their own
+    // facilities only, platform staff get all facilities, everyone else is refused.
+    const { data, error: fetchError } = await supabase.rpc('get_operator_facility_lineage', { p_limit: 200 });
 
     if (fetchError) {
       setRows([]);
@@ -352,10 +349,13 @@ export const FacilityLineageView: React.FC = () => {
               </tr>
             </thead>
             <tbody>
-              {filteredRows.map((row) => {
+              {filteredRows.map((row, index) => {
                 const benchmark = row.market_benchmark || {};
                 return (
-                  <tr key={row.normalization_record_id} className="border-t border-warm-gray/60 align-top">
+                  <tr
+                    key={row.normalization_record_id ?? `${row.facility_id ?? 'row'}-${row.last_processed_at ?? ''}-${index}`}
+                    className="border-t border-warm-gray/60 align-top"
+                  >
                     <td className="px-4 py-3">
                       <p className="font-medium text-charcoal">{row.facility_name || '--'}</p>
                       <p className="text-xs text-charcoal/60">
