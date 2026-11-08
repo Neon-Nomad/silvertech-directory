@@ -118,22 +118,45 @@ describe('duplicate processing within a run', () => {
 });
 
 describe('batch decision', () => {
-  const base = { fresh: 10, statusWritten: 10, transient: 0, systemic: 0 };
+  const base = { fresh: 200, statusWritten: 200, rejected: 0, transient: 0, systemic: 0, rejectionWriteFailed: 0, duplicates: 0 };
 
   it('continues when every fresh event was written', () => {
-    expect(nextBatchAction(base)).toBe('continue');
+    expect(nextBatchAction(base)).toEqual({ action: 'continue', reason: 'batch_clean' });
   });
 
   it('aborts on any systemic failure', () => {
-    expect(nextBatchAction({ ...base, systemic: 1 })).toBe('abort');
+    expect(nextBatchAction({ ...base, systemic: 1 })).toEqual({ action: 'abort', reason: 'systemic_failure' });
+  });
+
+  it('aborts when a rejection cannot be recorded, so the event is not left to be retried silently', () => {
+    expect(nextBatchAction({ ...base, rejectionWriteFailed: 1, statusWritten: 199 })).toEqual({
+      action: 'abort',
+      reason: 'rejection_write_failed',
+    });
+  });
+
+  it('aborts on a duplicate, because the backlog query returned an event twice', () => {
+    expect(nextBatchAction({ ...base, duplicates: 1 })).toEqual({ action: 'abort', reason: 'duplicate_detected' });
   });
 
   it('stops after a batch with any transient failure, so the next run retries it', () => {
-    expect(nextBatchAction({ ...base, transient: 1, statusWritten: 9 })).toBe('stop');
+    expect(nextBatchAction({ ...base, transient: 1, statusWritten: 199 })).toEqual({
+      action: 'stop',
+      reason: 'transient_failure',
+    });
+  });
+
+  it('stops when rejections exceed 1 percent of the batch, and allows exactly 1 percent', () => {
+    expect(nextBatchAction({ ...base, rejected: 2 }).action).toBe('continue');
+    expect(nextBatchAction({ ...base, rejected: 3 })).toEqual({ action: 'stop', reason: 'excessive_rejections' });
+    expect(nextBatchAction({ ...base, fresh: 30, statusWritten: 30, rejected: 1 })).toEqual({
+      action: 'stop',
+      reason: 'excessive_rejections',
+    });
   });
 
   it('stops when nothing new was fetched or nothing was written', () => {
-    expect(nextBatchAction({ ...base, fresh: 0, statusWritten: 0 })).toBe('stop');
-    expect(nextBatchAction({ ...base, statusWritten: 0 })).toBe('stop');
+    expect(nextBatchAction({ ...base, fresh: 0, statusWritten: 0 })).toEqual({ action: 'stop', reason: 'no_fresh_events' });
+    expect(nextBatchAction({ ...base, statusWritten: 0 })).toEqual({ action: 'stop', reason: 'no_progress' });
   });
 });

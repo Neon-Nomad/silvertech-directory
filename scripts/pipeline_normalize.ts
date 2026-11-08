@@ -1,12 +1,6 @@
 import dotenv from 'dotenv';
 import { createClient } from '@supabase/supabase-js';
-import {
-  describeFailure,
-  formatProcessingError,
-  nextBatchAction,
-  planBatch,
-  type FailureDiagnostic,
-} from './lib/normalizationDiagnostics';
+import { describeFailure, formatProcessingError, nextBatchAction, planBatch } from './lib/normalizationDiagnostics';
 
 dotenv.config();
 
@@ -175,10 +169,10 @@ const linkIdentity = async (evt: PendingRawEvent, normalizedRecordId: string | n
   if (error) throw error;
 };
 
-// Stops the run at once. Raised for systemic failures, which must not turn events into rejections.
-class SystemicFailure extends Error {
-  constructor(readonly diagnostic: FailureDiagnostic) {
-    super(`systemic failure (${diagnostic.code ?? 'no code'}): ${diagnostic.message}`);
+// Ends the run at once and marks it failed. Raised for systemic failures and for batches that must not continue.
+class RunAbort extends Error {
+  constructor(readonly reason: string) {
+    super(`run aborted: ${reason}`);
   }
 }
 
@@ -196,23 +190,35 @@ const main = async () => {
   let rejected = 0;
   let transient = 0;
   let rejectionWriteFailed = 0;
-  let stopReason = 'backlog_empty';
+  let duplicates = 0;
+  let batches = 0;
+  let stopReason = 'batch_limit_reached';
   const seen = new Set<string>();
 
   // Structured log lines. Fields are chosen deliberately: identifiers, classification and a redacted message. Never payloads.
   const log = (fields: Record<string, unknown>) => console.log(JSON.stringify({ run_id: runId, ...fields }));
+  log({ event: 'normalization_run_started', batch_size: BATCH_SIZE, max_batches: MAX_BATCHES });
 
   try {
     for (let batch = 0; batch < MAX_BATCHES; batch += 1) {
       const { data, error } = await supabase.rpc('get_pending_raw_events_for_normalization', { p_limit: BATCH_SIZE });
       if (error) throw error;
-      const events = planBatch((data || []) as PendingRawEvent[], seen);
+      const fetched = (data || []) as PendingRawEvent[];
+      const events = planBatch(fetched, seen);
       if (events.length === 0) {
         stopReason = 'no_fresh_events';
         break;
       }
 
-      const outcome = { fresh: events.length, statusWritten: 0, transient: 0, systemic: 0 };
+      const outcome = {
+        fresh: events.length,
+        statusWritten: 0,
+        rejected: 0,
+        transient: 0,
+        systemic: 0,
+        rejectionWriteFailed: 0,
+        duplicates: fetched.length - events.length,
+      };
 
       for (const evt of events) {
         scanned += 1;
@@ -249,7 +255,7 @@ const main = async () => {
           if (diag.kind === 'systemic') {
             outcome.systemic += 1;
             log({ event: 'normalization_systemic_failure', ...fields });
-            throw new SystemicFailure(diag);
+            throw new RunAbort('systemic_failure');
           }
 
           if (diag.kind === 'transient') {
@@ -272,6 +278,7 @@ const main = async () => {
             p_metadata: {},
           });
           if (rejectError) {
+            outcome.rejectionWriteFailed += 1;
             rejectionWriteFailed += 1;
             const writeDiag = describeFailure(rejectError);
             log({
@@ -283,23 +290,49 @@ const main = async () => {
             continue;
           }
           rejected += 1;
+          outcome.rejected += 1;
           outcome.statusWritten += 1;
           log({ event: 'normalization_rejected', ...fields });
         }
       }
 
-      const action = nextBatchAction(outcome);
-      if (action === 'abort') {
-        throw new SystemicFailure({ kind: 'systemic', code: null, message: 'batch aborted' });
-      }
+      batches += 1;
+      duplicates += outcome.duplicates;
+      const { action, reason } = nextBatchAction(outcome);
+      log({
+        event: 'normalization_batch_summary',
+        batch: batches,
+        fresh: outcome.fresh,
+        normalized: outcome.statusWritten - outcome.rejected,
+        rejected: outcome.rejected,
+        transient: outcome.transient,
+        rejection_write_failed: outcome.rejectionWriteFailed,
+        duplicates: outcome.duplicates,
+        action,
+        reason,
+      });
+
+      // Written after every batch, so an interrupted run still shows how far it got.
+      const { error: progressError } = await supabase
+        .from('normalization_runs')
+        .update({
+          records_scanned: scanned,
+          records_normalized: normalized,
+          records_rejected: rejected,
+          metadata: { progress: true, batches, duplicates, transient, rejection_write_failed: rejectionWriteFailed },
+        })
+        .eq('id', runId);
+      if (progressError) throw progressError;
+
+      if (action === 'abort') throw new RunAbort(reason);
       if (action === 'stop') {
-        stopReason = outcome.transient > 0 ? 'transient_failure' : 'no_progress';
+        stopReason = reason;
         break;
       }
     }
   } catch (err) {
-    const diag = err instanceof SystemicFailure ? err.diagnostic : describeFailure(err);
-    stopReason = diag.kind === 'systemic' ? 'systemic_failure' : 'error';
+    const failure = err instanceof RunAbort ? { kind: 'abort', code: null, message: err.reason } : describeFailure(err);
+    stopReason = err instanceof RunAbort ? err.reason : 'error';
     await supabase
       .from('normalization_runs')
       .update({
@@ -308,7 +341,12 @@ const main = async () => {
         records_scanned: scanned,
         records_normalized: normalized,
         records_rejected: rejected,
-        metadata: { stop_reason: stopReason, error: { kind: diag.kind, code: diag.code, message: diag.message } },
+        metadata: {
+          stop_reason: stopReason,
+          batches,
+          duplicates,
+          error: { kind: failure.kind, code: failure.code, message: failure.message },
+        },
       })
       .eq('id', runId);
     throw err;
@@ -322,7 +360,13 @@ const main = async () => {
       records_scanned: scanned,
       records_normalized: normalized,
       records_rejected: rejected,
-      metadata: { stop_reason: stopReason, transient, rejection_write_failed: rejectionWriteFailed },
+      metadata: {
+        stop_reason: stopReason,
+        batches,
+        duplicates,
+        transient,
+        rejection_write_failed: rejectionWriteFailed,
+      },
     })
     .eq('id', runId);
   if (closeError) throw closeError;
@@ -332,11 +376,13 @@ const main = async () => {
     JSON.stringify({
       event: 'normalization_run_summary',
       run_id: runId,
+      batches,
       scanned,
       normalized,
       rejected,
       transient,
       rejection_write_failed: rejectionWriteFailed,
+      duplicates,
       stop_reason: stopReason,
     })
   );
