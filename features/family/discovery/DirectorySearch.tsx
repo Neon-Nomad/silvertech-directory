@@ -930,91 +930,30 @@ const DirectorySearch: React.FC = () => {
       return items.filter((item) => toSlug(item.city || '') === exactCitySlug);
     };
 
-    const getGuaranteedFallback = async (options?: { preferClaimLocal?: boolean }) => {
-      const stateOnly = stateAbbr || (zipEntry ? findStateByInput(zipEntry.state)?.abbreviation : undefined);
-      const locationPattern = city ? `%${toSlug(city).split('-').join('%')}%` : undefined;
-      const stateDef = stateOnly
-        ? ALL_STATES.find((entry) => entry.abbreviation.toUpperCase() === stateOnly.toUpperCase())
-        : null;
-      const stateLabel = stateDef?.name || stateOnly || '';
-      const cityLabel = city || zipEntry?.city || '';
-      const localLabel = cityLabel && stateOnly ? `${cityLabel}, ${stateOnly}` : cityLabel || stateLabel || 'your selected area';
-      const queryLabel = rawName ? `"${rawName}"` : localLabel;
-      const localScopeLabel = cityLabel && stateOnly ? `${cityLabel}, ${stateOnly}` : stateLabel || localLabel;
-      const attempts: Array<{ message: string; run: () => Promise<SearchFacilityResult[]> }> = [];
+    // Only a ZIP's own city is offered when a search finds nothing. Wider fallbacks (the whole state, or the
+    // whole country) put unrelated facilities under a "No results" message, so they are not used.
+    const getLocalFallback = async (options?: { preferClaimLocal?: boolean }) => {
+      if (!options?.preferClaimLocal || !zipEntry?.city || !zipEntry?.state) return [];
 
-      if (rawName) {
-        attempts.push({
-          message: `No results for ${queryLabel} in ${localLabel}. Showing facilities in ${localScopeLabel} without the name filter.`,
-          run: async () => {
-            const rows = await performSearch(
-              {
-                state: stateOnly,
-                city: zipMatch ? undefined : locationPattern,
-                zip: zipMatch || undefined,
-              },
-              { queryText: null },
-            );
-            return enforceExactCity(rows);
-          },
-        });
-      }
-
-      if (options?.preferClaimLocal && zipEntry?.city && zipEntry?.state) {
-        const zipState = findStateByInput(zipEntry.state);
-        const zipLabel = zipState?.abbreviation ? `${zipEntry.city}, ${zipState.abbreviation}` : zipEntry.city;
-        attempts.push({
-          message: `No direct results for ZIP ${zipMatch}. Showing nearby facilities in ${zipLabel}.`,
-          run: async () =>
-            performSearch(
-              {
-                state: zipState?.abbreviation,
-                city: `%${toSlug(zipEntry.city).split('-').join('%')}%`,
-              },
-              { queryText: null },
-            ),
-        });
-      }
-
-      if (stateOnly) {
-        attempts.push({
-          message: `No results for ${queryLabel} in ${localLabel}. Showing facilities across ${stateLabel}.`,
-          run: async () => performSearch({ state: stateOnly }, { queryText: null }),
-        });
-      }
-
-      attempts.push({
-        message: `No results for ${queryLabel}${localLabel ? ` in ${localLabel}` : ''}. Showing facilities nationwide.`,
-        run: async () => performSearch({}, { queryText: null }),
-      });
-
-      for (const attempt of attempts) {
-        try {
-          const rows = dedupeFacilities(await attempt.run());
-          if (rows.length > 0) {
-            setResultsError(attempt.message);
-            return rows;
-          }
-        } catch {
-          // Try the next fallback source.
-        }
-      }
-
+      const zipState = findStateByInput(zipEntry.state);
+      const zipLabel = zipState?.abbreviation ? `${zipEntry.city}, ${zipState.abbreviation}` : zipEntry.city;
       try {
-        const offlineRows = await performOfflineSearch(
-          { state: stateOnly, city: zipMatch ? zipEntry?.city : city || undefined, zip: zipMatch || undefined },
-          'Live search is unavailable. Showing offline backup listings.',
+        const rows = dedupeFacilities(
+          await performSearch(
+            {
+              state: zipState?.abbreviation,
+              city: `%${toSlug(zipEntry.city).split('-').join('%')}%`,
+            },
+            { queryText: null },
+          ),
         );
-        if (offlineRows.length > 0) return dedupeFacilities(offlineRows);
+        if (rows.length > 0) {
+          setResultsError(`No direct results for ZIP ${zipMatch}. Showing nearby facilities in ${zipLabel}.`);
+        }
+        return rows;
       } catch {
-        // Continue to final offline global fallback.
+        return [];
       }
-
-      const offlineGlobal = await performOfflineSearch(
-        {},
-        'Live search is unavailable. Showing offline national backup listings.',
-      );
-      return dedupeFacilities(offlineGlobal);
     };
 
     setResultsLoading(true);
@@ -1042,17 +981,6 @@ const DirectorySearch: React.FC = () => {
         );
         if (hits.length > 0) {
           setResultsError('No direct ZIP results. Showing the closest city matches instead.');
-        }
-      }
-
-      if (!claimMode && zipMatch && hits.length === 0) {
-        const zipState = zipEntry ? findStateByInput(zipEntry.state) : null;
-        const stateOnly = zipState?.abbreviation || stateAbbr;
-        if (stateOnly) {
-          hits = await performSearch({ state: stateOnly });
-          if (hits.length > 0) {
-            setResultsError('No ZIP or city matches. Showing statewide results instead.');
-          }
         }
       }
 
@@ -1090,7 +1018,7 @@ const DirectorySearch: React.FC = () => {
       }
 
       if (hits.length === 0) {
-        hits = await getGuaranteedFallback({ preferClaimLocal: claimMode });
+        hits = await getLocalFallback({ preferClaimLocal: claimMode });
       }
 
       const combinedHits = dedupeFacilities([...hits, ...supplementalHits]);
@@ -1100,10 +1028,22 @@ const DirectorySearch: React.FC = () => {
     } catch (err) {
       console.error('Search failed:', err);
       try {
-        const fallbackHits = await getGuaranteedFallback({ preferClaimLocal: claimMode });
-        const resolved = await resolvePublicIdentities(fallbackHits);
+        const offlineRows = dedupeFacilities(
+          await performOfflineSearch(
+            {
+              state: stateAbbr || (zipEntry ? findStateByInput(zipEntry.state)?.abbreviation : undefined),
+              city: zipMatch ? zipEntry?.city : city || undefined,
+              zip: zipMatch || undefined,
+            },
+            'Live search is unavailable. Showing offline listings that match your search.',
+          ),
+        );
+        const resolved = await resolvePublicIdentities(offlineRows);
         const enriched = await withReviewedDatabaseIds(await enrichSearchResults(resolved));
         setResults(applyDistance(enriched));
+        if (enriched.length === 0) {
+          setResultsError('Search is temporarily unavailable. Please try again in a moment.');
+        }
       } catch (fallbackError) {
         console.error('Search fallback failed:', fallbackError);
         setResultsError('Search failed. Please try again in a moment.');
@@ -1384,6 +1324,14 @@ const DirectorySearch: React.FC = () => {
   const pageTitle = `${heroTitle} | SilverTech`;
   const pageDescription = heroDescription;
   const searchLocationLabel = lastSearch?.locationLabel || selectedState?.name || location || 'this area';
+  // The empty state names what was typed, so a search with no state does not read as "the United States".
+  const searchedTermsLabel =
+    [
+      lastSearch?.rawName ? `"${lastSearch.rawName}"` : '',
+      lastSearch?.rawLocation ? `"${lastSearch.rawLocation}"` : selectedState?.name || '',
+    ]
+      .filter(Boolean)
+      .join(' in ') || searchLocationLabel;
 
   return (
     <div className="min-h-screen bg-[#f6f6f2]">
@@ -1524,7 +1472,7 @@ const DirectorySearch: React.FC = () => {
             ))}
           </div>
         ) : results.length === 0 ? (
-          <NoResults requestedLocation={searchLocationLabel} />
+          <NoResults requestedLocation={searchedTermsLabel} />
         ) : (
           <>
             <section className="space-y-6">
