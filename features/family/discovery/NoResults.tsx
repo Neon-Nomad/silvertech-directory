@@ -78,6 +78,7 @@ export const NoResults: React.FC<NoResultsProps> = ({ requestedLocation }) => {
             value={formData.name}
             onChange={(e) => setFormData((prev) => ({ ...prev, name: e.target.value }))}
             className="w-full rounded-md border border-warm-gray bg-white px-3 py-2 text-sm"
+            aria-label="Your name"
             placeholder="Your name"
           />
           <input
@@ -86,6 +87,7 @@ export const NoResults: React.FC<NoResultsProps> = ({ requestedLocation }) => {
             value={formData.email}
             onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
             className="w-full rounded-md border border-warm-gray bg-white px-3 py-2 text-sm"
+            aria-label="Email"
             placeholder="Email"
           />
         </div>
@@ -96,9 +98,11 @@ export const NoResults: React.FC<NoResultsProps> = ({ requestedLocation }) => {
             value={formData.phone}
             onChange={(e) => setFormData((prev) => ({ ...prev, phone: e.target.value }))}
             className="w-full rounded-md border border-warm-gray bg-white px-3 py-2 text-sm"
+            aria-label="Phone"
             placeholder="Phone"
           />
           <select
+            aria-label="Care type"
             value={formData.careType}
             onChange={(e) => setFormData((prev) => ({ ...prev, careType: e.target.value }))}
             className="w-full rounded-md border border-warm-gray bg-white px-3 py-2 text-sm"
@@ -109,6 +113,7 @@ export const NoResults: React.FC<NoResultsProps> = ({ requestedLocation }) => {
             <option>Unsure</option>
           </select>
           <select
+            aria-label="Budget"
             value={formData.budget}
             onChange={(e) => setFormData((prev) => ({ ...prev, budget: e.target.value }))}
             className="w-full rounded-md border border-warm-gray bg-white px-3 py-2 text-sm"
@@ -124,6 +129,7 @@ export const NoResults: React.FC<NoResultsProps> = ({ requestedLocation }) => {
           value={formData.message}
           onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))}
           className="w-full rounded-md border border-warm-gray bg-white px-3 py-2 text-sm"
+          aria-label="Anything else we should know"
           placeholder="Anything else we should know?"
         />
         {error && (

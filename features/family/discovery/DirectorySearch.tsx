@@ -1375,6 +1375,7 @@ const DirectorySearch: React.FC = () => {
                 <div className="flex-1">
                   <label className="mb-2 block text-sm font-medium text-charcoal">State</label>
                   <select
+                    aria-label="State"
                     className="w-full rounded-md border border-warm-gray bg-warm-white px-3 py-3 text-sm text-charcoal focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
                     value={stateSlug}
                     onChange={(event) => setStateSlug(event.target.value)}
@@ -1397,6 +1398,7 @@ const DirectorySearch: React.FC = () => {
                 <input
                   className="w-full rounded-md border border-warm-gray bg-warm-white py-3 pl-10 pr-4 text-sm text-charcoal focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
                   type="text"
+                  aria-label={claimMode ? 'ZIP code' : 'City or ZIP'}
                   placeholder={claimMode ? 'e.g., 75201' : `${locationExample.cityState} or ${locationExample.zip}`}
                   value={location}
                   onChange={(event) => handleLocationChange(event.target.value)}
@@ -1452,6 +1454,7 @@ const DirectorySearch: React.FC = () => {
                 <input
                   className="w-full rounded-md border border-warm-gray bg-warm-white px-4 py-3 text-sm text-charcoal focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
                   type="text"
+                  aria-label="Facility name"
                   placeholder="e.g., Sunrise of San Francisco"
                   value={nameQuery}
                   onChange={(event) => setNameQuery(event.target.value)}
