@@ -22,6 +22,27 @@
 
 begin;
 
+-- Safety check. Stops before any change if the function has more than one overload, or if the
+-- tables it reads are missing. Written against the function in migration 20260314174000.
+do $$
+declare
+  v_overloads integer;
+begin
+  select count(*) into v_overloads
+  from pg_proc p
+  join pg_namespace n on n.oid = p.pronamespace
+  where n.nspname = 'public' and p.proname = 'search_facilities';
+  if v_overloads > 1 then
+    raise exception 'search_facilities has % overloads; stop and review before applying', v_overloads;
+  end if;
+  if to_regclass('public.facilities') is null
+     or to_regclass('public.facility_questions') is null
+     or to_regclass('public.facility_answers') is null then
+    raise exception 'facilities, facility_questions, or facility_answers is missing; stop and review';
+  end if;
+end $$;
+
+
 create or replace function public.facility_dedupe_key(
   p_name text,
   p_address text,
@@ -166,6 +187,8 @@ begin
   order by k.rn;
 end
 $$;
+
+revoke execute on function public.facility_dedupe_key(text, text, text, text, text) from public, anon, authenticated;
 
 grant execute on function public.search_facilities(text, text, text, text, integer, integer) to anon, authenticated;
 

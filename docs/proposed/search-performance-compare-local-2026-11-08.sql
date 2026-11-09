@@ -1,5 +1,5 @@
--- Compares search_facilities with search_facilities_before on random real filter combinations.
--- Before running: create search_facilities_before from supabase/migrations/20260314174000_update_search_facilities_public_identity.sql with the function renamed. Run on a copy, never directly on production.
+-- LOCAL ONLY. Compares search_facilities with search_facilities_before on random filter combinations.
+-- Needs a local copy of the database with the old function renamed to search_facilities_before. Never run on production.
 -- Expected: full_set_mismatch = 0 and top50_name_mismatch = 0.
 create or replace function pg_temp.compare_searches(samples int) returns table (checked int, full_set_mismatch int, top50_name_mismatch int, examples text)
 language plpgsql as $$
@@ -17,14 +17,14 @@ begin
         format('%L,%L,null,null', substr(r.name, 1, 5), r.state),
         format('null,null,%L,null', '%' || lower(r.city) || '%')
       ]) loop
-      execute format('select array_agg(id order by id), array_agg(name order by name) from (select * from public.search_facilities_before(%s, 100000, 0)) x', v_args) into a, na;
+      execute format('select array_agg(id order by id), array_agg(name order by name) from (select * from public.search_facilities_v0(%s, 100000, 0)) x', v_args) into a, na;
       execute format('select array_agg(id order by id), array_agg(name order by name) from (select * from public.search_facilities(%s, 100000, 0)) x', v_args) into b, nb;
       v_checked := v_checked + 1;
       if a is distinct from b then
         v_full := v_full + 1;
         if length(v_ex) < 600 then v_ex := v_ex || ' | ' || v_args; end if;
       end if;
-      execute format('select array_agg(name order by name) from (select name from public.search_facilities_before(%s, 50, 0)) x', v_args) into na;
+      execute format('select array_agg(name order by name) from (select name from public.search_facilities_v0(%s, 50, 0)) x', v_args) into na;
       execute format('select array_agg(name order by name) from (select name from public.search_facilities(%s, 50, 0)) x', v_args) into nb;
       if na is distinct from nb then v_top := v_top + 1; end if;
     end loop;
