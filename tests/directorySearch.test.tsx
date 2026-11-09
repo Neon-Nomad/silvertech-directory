@@ -8,6 +8,7 @@ import { cleanup, render, screen, waitFor } from '@testing-library/react';
 import { HelmetProvider } from 'react-helmet-async';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import DirectorySearch from '@/features/family/discovery/DirectorySearch';
+import { ComparisonProvider } from '@/src/context/ComparisonContext';
 
 const {
   rpcMock,
@@ -248,11 +249,13 @@ const publicIdentityById: Record<string, { public_slug: string; public_route_id:
 const renderSearch = (entry: string) =>
   render(
     <HelmetProvider>
-      <MemoryRouter initialEntries={[entry]}>
-        <Routes>
-          <Route path="/search" element={<DirectorySearch />} />
-        </Routes>
-      </MemoryRouter>
+      <ComparisonProvider>
+        <MemoryRouter initialEntries={[entry]}>
+          <Routes>
+            <Route path="/search" element={<DirectorySearch />} />
+          </Routes>
+        </MemoryRouter>
+      </ComparisonProvider>
     </HelmetProvider>,
   );
 
@@ -365,6 +368,56 @@ describe('DirectorySearch', () => {
         expect.objectContaining({ state_filter: 'MN', query_text: 'Guardian', city_filter: null }),
       ),
     );
+  });
+
+  it('shows an empty state, not unrelated facilities, when a location matches nothing', async () => {
+    renderSearch('/search?location=abc');
+
+    expect(await screen.findByRole('heading', { name: /No facilities match "abc"/i })).toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: /View (Facility|Community)/i })).not.toBeInTheDocument();
+    expect(screen.queryByText('Expand your search nearby')).not.toBeInTheDocument();
+    // No unfiltered search, which is what used to return facilities from across the country.
+    const unfilteredCalls = rpcMock.mock.calls.filter(
+      ([fn, params]) =>
+        fn === 'search_facilities' &&
+        (params as Record<string, unknown>).state_filter == null &&
+        (params as Record<string, unknown>).city_filter == null &&
+        (params as Record<string, unknown>).postal_filter == null,
+    );
+    expect(unfilteredCalls).toHaveLength(0);
+  });
+
+  it('shows an empty state when a facility name matches nothing in the state', async () => {
+    rpcMock.mockImplementation(async (fn: string) => {
+      if (fn === 'search_facilities') return { data: [], error: null };
+      return { data: [], error: null };
+    });
+
+    renderSearch('/search?state=washington&name=zzz-no-such-facility');
+
+    expect(
+      await screen.findByRole('heading', { name: 'No facilities match "zzz-no-such-facility" in Washington.' }),
+    ).toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: /View (Facility|Community)/i })).not.toBeInTheDocument();
+    expect(screen.queryByText(/Showing facilities across/i)).not.toBeInTheDocument();
+  });
+
+  it('retries a search the database cancelled for running too long', async () => {
+    rpcMock.mockImplementationOnce(async () => ({
+      data: null,
+      error: { code: '57014', message: 'canceling statement due to statement timeout' },
+    }));
+
+    renderSearch('/search?location=MN&name=Guardian');
+
+    await waitFor(() =>
+      expect(
+        rpcMock.mock.calls.filter(
+          ([fn, params]) => fn === 'search_facilities' && (params as Record<string, unknown>).query_text === 'Guardian',
+        ),
+      ).toHaveLength(2),
+    );
+    expect(screen.queryByText(/Live search is unavailable/i)).not.toBeInTheDocument();
   });
 
   it('keeps claim-mode ZIP search routed to claim listing actions', async () => {

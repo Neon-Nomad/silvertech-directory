@@ -4,6 +4,7 @@ import { useAuth } from '@/src/context/AuthProvider';
 import { useLeadTracking } from '@/src/hooks/useLeadTracking';
 
 interface NoResultsProps {
+  // The search as the visitor typed it, such as "Minneapolis, MN" or "\"Guardian\" in MN".
   requestedLocation: string;
 }
 
@@ -59,16 +60,21 @@ export const NoResults: React.FC<NoResultsProps> = ({ requestedLocation }) => {
   if (submitted) {
     return (
       <div className="rounded-xl border border-primary-100 bg-primary-50 px-4 py-4 text-sm text-charcoal">
-        Thanks. We logged your request for {requestedLocation || 'this area'} and will prioritize recruitment for referral-free options.
+        Thanks. We logged your request for {requestedLocation || 'this search'}.
       </div>
     );
   }
 
   return (
     <div className="rounded-xl border border-warm-gray bg-warm-white p-5">
-      <p className="text-sm text-charcoal/80">
-        We have not verified a referral-free community in <span className="font-semibold">{requestedLocation || 'this area'}</span> yet.
-        Tell us what you need and we will recruit them without commission pressure.
+      <h2 className="font-serif text-xl font-semibold text-charcoal">
+        No facilities match <span className="font-semibold">{requestedLocation || 'this search'}</span>.
+      </h2>
+      <p className="mt-2 text-sm text-charcoal/80">
+        Check the spelling, or try a 5-digit ZIP code, a city and state such as "Minneapolis, MN", or a state on its own.
+      </p>
+      <p className="mt-4 text-sm text-charcoal/80">
+        Can't find what you need? Tell us what you're looking for and we'll look into it.
       </p>
       <form onSubmit={handleSubmit} className="mt-4 space-y-3">
         <div className="grid md:grid-cols-2 gap-3">
@@ -140,7 +146,7 @@ export const NoResults: React.FC<NoResultsProps> = ({ requestedLocation }) => {
           disabled={loading}
           className="inline-flex items-center rounded-md bg-charcoal px-4 py-2 text-sm font-medium text-white hover:bg-black disabled:opacity-70"
         >
-          {loading ? 'Submitting...' : 'Notify Me + Recruit Local Options'}
+          {loading ? 'Submitting...' : 'Send request'}
         </button>
       </form>
     </div>
