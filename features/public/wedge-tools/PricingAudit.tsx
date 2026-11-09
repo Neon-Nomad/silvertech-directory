@@ -266,7 +266,7 @@ const PricingAudit: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-lg p-6 text-center">
             <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <LineChart className="text-primary-600" size={32} />
+              <LineChart className="text-primary-700" size={32} />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Market Comparison</h3>
             <p className="text-slate-600">
@@ -276,7 +276,7 @@ const PricingAudit: React.FC = () => {
 
           <div className="bg-white rounded-lg shadow-lg p-6 text-center">
             <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <TrendingUp className="text-primary-600" size={32} />
+              <TrendingUp className="text-primary-700" size={32} />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Pricing Recommendations</h3>
             <p className="text-slate-600">
@@ -286,7 +286,7 @@ const PricingAudit: React.FC = () => {
 
           <div className="bg-white rounded-lg shadow-lg p-6 text-center">
             <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Download className="text-primary-600" size={32} />
+              <Download className="text-primary-700" size={32} />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Downloadable PDF</h3>
             <p className="text-slate-600">

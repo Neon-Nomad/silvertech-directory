@@ -93,7 +93,7 @@ export const SignUpPage: React.FC = () => {
         </h1>
         <p className="mt-2 text-center text-sm text-slate-600">
           Or{' '}
-          <Link to={loginPath} className="font-medium text-primary-600 hover:text-primary-500">
+          <Link to={loginPath} className="font-medium text-primary-700 hover:text-primary-800">
             sign in to existing account
           </Link>
         </p>

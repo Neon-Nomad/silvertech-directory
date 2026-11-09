@@ -60,7 +60,7 @@ export const EditorialPolicyPage: React.FC = () => {
         <section className="space-y-3">
           <h2 className="text-2xl font-bold text-slate-900">Contact</h2>
           <p className="text-slate-600">
-            Email us at <a className="text-primary-600 hover:underline" href="mailto:andrew@silvertechdirectory.com">andrew@silvertechdirectory.com</a>.
+            Email us at <a className="text-primary-700 hover:underline" href="mailto:andrew@silvertechdirectory.com">andrew@silvertechdirectory.com</a>.
           </p>
         </section>
       </div>

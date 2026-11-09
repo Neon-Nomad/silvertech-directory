@@ -61,7 +61,7 @@ export const ComparisonModal: React.FC = () => {
                             publicSlug: (facility as any).public_slug,
                             publicRouteId: (facility as any).public_route_id,
                           })}
-                          className="text-lg font-bold text-slate-900 hover:text-primary-600 block mb-1"
+                          className="text-lg font-bold text-slate-900 hover:text-primary-700 block mb-1"
                           onClick={() => setIsOpen(false)}
                         >
                           {facility.name}
@@ -90,7 +90,7 @@ export const ComparisonModal: React.FC = () => {
                     {selectedFacilities.map((f) => (
                       <td key={f.id} className="p-4">
                         {f.price && f.price !== 'Call for Pricing' ? (
-                          <span className="font-bold text-primary-600">{f.price}<span className="text-xs text-slate-600 font-normal">/mo</span></span>
+                          <span className="font-bold text-primary-700">{f.price}<span className="text-xs text-slate-600 font-normal">/mo</span></span>
                         ) : (
                           <span className="text-slate-600 italic">Contact for pricing</span>
                         )}
@@ -156,7 +156,7 @@ export const ComparisonModal: React.FC = () => {
                             publicSlug: (f as any).public_slug,
                             publicRouteId: (f as any).public_route_id,
                           })}
-                          className="block w-full text-center px-4 py-2 border border-primary-600 text-primary-600 rounded-md hover:bg-primary-50 font-medium transition-colors"
+                          className="block w-full text-center px-4 py-2 border border-primary-600 text-primary-700 rounded-md hover:bg-primary-50 font-medium transition-colors"
                           onClick={() => setIsOpen(false)}
                         >
                           View Details

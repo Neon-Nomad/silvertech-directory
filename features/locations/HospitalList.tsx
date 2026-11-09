@@ -46,7 +46,7 @@ export const HospitalList: React.FC<HospitalListProps> = ({ hospitals, cityName:
             {hospital.phone && (
               <div className="flex items-center gap-2 text-xs text-slate-600">
                 <Phone size={12} className="flex-shrink-0" />
-                <a href={`tel:${hospital.phone}`} className="hover:text-primary-600 transition-colors">
+                <a href={`tel:${hospital.phone}`} className="hover:text-primary-700 transition-colors">
                   {hospital.phone}
                 </a>
               </div>

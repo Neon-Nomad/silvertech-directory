@@ -126,7 +126,7 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
                   <div key={`card-${facility.id}`} className="space-y-3 px-4 py-4">
                     <div className="flex items-start justify-between gap-3">
                       <div className="flex items-center gap-2">
-                        <Building2 className={`h-4 w-4 ${isAssigned ? 'text-primary-600' : 'text-charcoal/40'}`} />
+                        <Building2 className={`h-4 w-4 ${isAssigned ? 'text-primary-700' : 'text-charcoal/40'}`} />
                         <span className="font-medium text-charcoal">{facility.name}</span>
                       </div>
                       <span
@@ -179,7 +179,7 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
                       <tr key={facility.id}>
                         <td className="px-6 py-4">
                           <div className="flex items-center gap-3">
-                            <Building2 className={`h-4 w-4 ${isAssigned ? 'text-primary-600' : 'text-charcoal/40'}`} />
+                            <Building2 className={`h-4 w-4 ${isAssigned ? 'text-primary-700' : 'text-charcoal/40'}`} />
                             <span className="font-medium text-charcoal">{facility.name}</span>
                           </div>
                         </td>
@@ -262,7 +262,7 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
                   <ul className="mb-3 space-y-1 text-xs text-charcoal/70">
                     {plan.features.slice(0, 3).map((feature, idx) => (
                       <li key={`${plan.id}-${idx}`} className="flex items-start gap-1">
-                        <CheckCircle className="mt-0.5 h-3.5 w-3.5 shrink-0 text-primary-600" />
+                        <CheckCircle className="mt-0.5 h-3.5 w-3.5 shrink-0 text-primary-700" />
                         <span>{feature}</span>
                       </li>
                     ))}

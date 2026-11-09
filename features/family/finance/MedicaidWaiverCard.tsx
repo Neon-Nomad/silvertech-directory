@@ -106,7 +106,7 @@ export const MedicaidWaiverCard: React.FC<MedicaidWaiverCardProps> = ({ waiver }
             rel="noopener noreferrer"
             className="flex-1 flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-primary-300 text-slate-700 font-medium py-2 rounded-lg transition-colors text-sm"
         >
-            <ExternalLink size={16} className="text-primary-600" />
+            <ExternalLink size={16} className="text-primary-700" />
             Official Details
         </a>
         <a 

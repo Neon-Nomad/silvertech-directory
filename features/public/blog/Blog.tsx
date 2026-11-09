@@ -195,15 +195,15 @@ export const Blog: React.FC = () => {
             <h3 className="text-xl font-bold text-primary-900 mb-4">The SilverTech Action Plan for Families</h3>
             <ul className="space-y-4">
               <li className="flex gap-3">
-                <span className="font-bold text-primary-600">1.</span>
+                <span className="font-bold text-primary-700">1.</span>
                 <p><strong>Don't Panic at the Citation Count:</strong> A facility with 10 minor Type C citations may be safer than a facility with one recent Type A citation. Focus on the type, not the quantity.</p>
               </li>
               <li className="flex gap-3">
-                <span className="font-bold text-primary-600">2.</span>
+                <span className="font-bold text-primary-700">2.</span>
                 <p><strong>Verify the Correction:</strong> For any citation (especially high-severity ones), ask the facility: "What was your official Plan of Correction, and can you show me the evidence that the state approved it?"</p>
               </li>
               <li className="flex gap-3">
-                <span className="font-bold text-primary-600">3.</span>
+                <span className="font-bold text-primary-700">3.</span>
                 <p><strong>Use Our Data:</strong> Compare the citation history with the Verified Review Scorecard (Staff Responsiveness, Quality of Care). If a facility has high staff turnover and a high-severity citation, that is a clear signal to avoid it.</p>
               </li>
             </ul>
@@ -355,7 +355,7 @@ export const Blog: React.FC = () => {
           </Button>
 
           <div className="mb-8">
-            <span className="text-xs font-bold uppercase tracking-wider text-primary-600 bg-primary-50 px-3 py-1 rounded-full">
+            <span className="text-xs font-bold uppercase tracking-wider text-primary-700 bg-primary-50 px-3 py-1 rounded-full">
               {selectedPost.category}
             </span>
             <h1 className="text-3xl md:text-5xl font-bold text-charcoal font-serif mt-4 mb-6 leading-tight">

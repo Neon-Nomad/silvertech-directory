@@ -158,7 +158,7 @@ export const CareFinderSurvey: React.FC = () => {
         {/* Empathetic Message Overlay */}
         <div 
           ref={messageRef} 
-          className="fixed inset-0 flex items-center justify-center pointer-events-none opacity-0 text-2xl md:text-3xl font-medium text-primary-600 text-center px-4 bg-white/80 backdrop-blur-sm z-50"
+          className="fixed inset-0 flex items-center justify-center pointer-events-none opacity-0 text-2xl md:text-3xl font-medium text-primary-700 text-center px-4 bg-white/80 backdrop-blur-sm z-50"
         >
         </div>
 
@@ -166,7 +166,7 @@ export const CareFinderSurvey: React.FC = () => {
         <div ref={questionRef} className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
           <div className="flex items-center gap-4 mb-8">
             <div className="p-3 bg-primary-50 rounded-xl">
-              <Icon className="w-8 h-8 text-primary-600" />
+              <Icon className="w-8 h-8 text-primary-700" />
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900">{currentQuestion.title}</h2>
           </div>
@@ -186,7 +186,7 @@ export const CareFinderSurvey: React.FC = () => {
                 <div className="flex items-center justify-between">
                   <span className="text-lg font-medium text-slate-700 group-hover:text-primary-700">{option}</span>
                   {(currentQuestion.multiSelect ? surveyData.priorities.includes(option) : surveyData[currentQuestion.id as keyof SurveyData] === option) && (
-                    <Check className="w-5 h-5 text-primary-600" />
+                    <Check className="w-5 h-5 text-primary-700" />
                   )}
                 </div>
               </button>

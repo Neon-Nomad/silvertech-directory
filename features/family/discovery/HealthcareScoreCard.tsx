@@ -12,7 +12,7 @@ export const HealthcareScoreCard: React.FC<HealthcareScoreCardProps> = ({ score,
   const getGradeColor = (grade: string) => {
     switch (grade) {
       case 'A': return 'text-green-600 bg-green-50 border-green-200';
-      case 'B': return 'text-primary-600 bg-primary-50 border-primary-200';
+      case 'B': return 'text-primary-700 bg-primary-50 border-primary-200';
       case 'C': return 'text-yellow-600 bg-yellow-50 border-yellow-200';
       case 'D': return 'text-orange-600 bg-orange-50 border-orange-200';
       default: return 'text-red-600 bg-red-50 border-red-200';
@@ -23,7 +23,7 @@ export const HealthcareScoreCard: React.FC<HealthcareScoreCardProps> = ({ score,
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
       <div className="flex items-center justify-between mb-4">
         <h3 className="font-bold text-slate-900 flex items-center gap-2">
-          <Activity className="w-5 h-5 text-primary-600" />
+          <Activity className="w-5 h-5 text-primary-700" />
           Healthcare Access
         </h3>
         <div className={`w-12 h-12 flex items-center justify-center rounded-lg border-2 text-2xl font-bold ${getGradeColor(score.grade)}`}>

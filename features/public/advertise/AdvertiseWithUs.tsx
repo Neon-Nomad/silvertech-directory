@@ -57,7 +57,7 @@ export const AdvertiseWithUs: React.FC = () => {
       {/* Mission */}
       <div className="py-20 bg-white border-b border-slate-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-sm font-bold text-primary-600 uppercase tracking-widest mb-4">Our Mission</h2>
+          <h2 className="text-sm font-bold text-primary-700 uppercase tracking-widest mb-4">Our Mission</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
             To dismantle the predatory commission model that siphons money from operators and hides information from families.
           </h3>
@@ -89,7 +89,7 @@ export const AdvertiseWithUs: React.FC = () => {
 
             {/* Card 2 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-              <div className="w-14 h-14 bg-primary-100 text-primary-600 rounded-xl flex items-center justify-center mb-6">
+              <div className="w-14 h-14 bg-primary-100 text-primary-700 rounded-xl flex items-center justify-center mb-6">
                 <Zap className="w-8 h-8" />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Direct, Unfiltered Leads</h3>
@@ -105,7 +105,7 @@ export const AdvertiseWithUs: React.FC = () => {
 
             {/* Card 3 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-              <div className="w-14 h-14 bg-primary-100 text-primary-600 rounded-xl flex items-center justify-center mb-6">
+              <div className="w-14 h-14 bg-primary-100 text-primary-700 rounded-xl flex items-center justify-center mb-6">
                 <Shield className="w-8 h-8" />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Verified Trust Badge</h3>
@@ -131,7 +131,7 @@ export const AdvertiseWithUs: React.FC = () => {
                 <tr>
                   <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-slate-600 uppercase tracking-wider">Feature</th>
                   <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-red-600 uppercase tracking-wider">Commission Agencies</th>
-                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-primary-600 uppercase tracking-wider bg-primary-50">SilverTech Directory</th>
+                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-primary-700 uppercase tracking-wider bg-primary-50">SilverTech Directory</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-slate-200">

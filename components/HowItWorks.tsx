@@ -29,7 +29,7 @@ export const HowItWorks: React.FC = () => {
               {/* Content */}
               <div className="ml-12 md:ml-0 md:w-1/2 p-6 md:px-12">
                 <div className={`bg-white p-6 rounded-lg border border-slate-100 shadow-sm ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
-                  <div className="text-xs font-bold text-primary-600 uppercase tracking-wider mb-2">Step 0{index + 1}</div>
+                  <div className="text-xs font-bold text-primary-700 uppercase tracking-wider mb-2">Step 0{index + 1}</div>
                   <h3 className="text-lg font-bold text-slate-900 mb-2">{step.title}</h3>
                   <p className="text-slate-600 text-sm">{step.desc}</p>
                 </div>

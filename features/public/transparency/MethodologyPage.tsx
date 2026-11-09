@@ -18,7 +18,7 @@ export const MethodologyPage: React.FC = () => {
 
       <main className="max-w-5xl mx-auto px-6 py-12 space-y-12">
         <section>
-          <p className="text-xs uppercase tracking-[0.3em] text-primary-600 font-semibold mb-3">
+          <p className="text-xs uppercase tracking-[0.3em] text-primary-700 font-semibold mb-3">
             Transparency Report
           </p>
           <h1 className="text-4xl md:text-5xl font-serif font-semibold leading-tight text-slate-900 mb-4">
@@ -30,7 +30,7 @@ export const MethodologyPage: React.FC = () => {
           </p>
           <div className="mt-5 flex items-center gap-3 text-sm text-slate-600">
             <span className="inline-flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4 text-primary-600" />
+              <ShieldCheck className="w-4 h-4 text-primary-700" />
               Last updated: February 10, 2026
             </span>
           </div>
@@ -39,20 +39,20 @@ export const MethodologyPage: React.FC = () => {
         <section className="grid md:grid-cols-2 gap-6">
           <Card>
             <div className="flex items-center gap-3 mb-4">
-              <Database className="w-6 h-6 text-primary-600" />
+              <Database className="w-6 h-6 text-primary-700" />
               <h2 className="text-xl font-serif font-semibold">Data Provenance</h2>
             </div>
             <p className="text-sm text-slate-600 leading-relaxed mb-4">
               We aggregate public and verified private sources to build a consistent, statewide view of senior care
               options. Data is rechecked on a set cadence for accuracy.
             </p>
-            <div className="text-xs uppercase tracking-widest text-primary-600 font-semibold">
+            <div className="text-xs uppercase tracking-widest text-primary-700 font-semibold">
               Sources: CMS, State Health Agencies, Verified Submissions
             </div>
           </Card>
           <Card>
             <div className="flex items-center gap-3 mb-4">
-              <BadgeCheck className="w-6 h-6 text-primary-600" />
+              <BadgeCheck className="w-6 h-6 text-primary-700" />
               <h2 className="text-xl font-serif font-semibold">Verified Badge</h2>
             </div>
             <p className="text-sm text-slate-600 leading-relaxed mb-4">
@@ -67,7 +67,7 @@ export const MethodologyPage: React.FC = () => {
                 'Family sentiment analysis'
               ].map((item) => (
                 <li key={item} className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-primary-600" />
+                  <CheckCircle2 className="w-4 h-4 text-primary-700" />
                   {item}
                 </li>
               ))}
@@ -89,7 +89,7 @@ export const MethodologyPage: React.FC = () => {
         <section className="grid md:grid-cols-[1.1fr_1fr] gap-6 items-start">
           <Card>
             <div className="flex items-center gap-3 mb-4">
-              <Users className="w-6 h-6 text-primary-600" />
+              <Users className="w-6 h-6 text-primary-700" />
               <h2 className="text-xl font-serif font-semibold">Research Team</h2>
             </div>
             <p className="text-sm text-slate-600 leading-relaxed mb-4">

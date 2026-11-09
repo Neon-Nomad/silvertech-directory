@@ -55,7 +55,7 @@ export const StateMedicaidPage: React.FC = () => {
           />
 
           <div className="mt-6">
-            <Link to={`/states/${stateDef.slug}`} className="inline-flex items-center text-sm text-slate-600 hover:text-primary-600 mb-4">
+            <Link to={`/states/${stateDef.slug}`} className="inline-flex items-center text-sm text-slate-600 hover:text-primary-700 mb-4">
               <ArrowLeft className="w-4 h-4 mr-1" /> Back to {stateDef.name} Overview
             </Link>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
@@ -85,7 +85,7 @@ export const StateMedicaidPage: React.FC = () => {
             {/* Dynamic Content from Supabase */}
             {loading ? (
               <div className="flex justify-center py-12">
-                <Loader className="w-8 h-8 text-primary-600 animate-spin" />
+                <Loader className="w-8 h-8 text-primary-700 animate-spin" />
               </div>
             ) : regulatoryData?.medicaid_content ? (
               <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 prose prose-slate max-w-none">
@@ -131,20 +131,20 @@ export const StateMedicaidPage: React.FC = () => {
               <h3 className="font-bold text-slate-900 mb-4">Quick Resources</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link to={`/states/${stateDef.slug}/ombudsman`} className="flex items-center gap-2 text-primary-600 hover:underline">
+                  <Link to={`/states/${stateDef.slug}/ombudsman`} className="flex items-center gap-2 text-primary-700 hover:underline">
                     <FileText className="w-4 h-4" />
                     How to Apply (Ombudsman Help)
                   </Link>
                 </li>
                 <li>
-                  <a href="https://www.medicaid.gov" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-primary-600 hover:underline">
+                  <a href="https://www.medicaid.gov" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-primary-700 hover:underline">
                     <FileText className="w-4 h-4" />
                     Official Medicaid Website
                   </a>
                 </li>
                 {regulatoryData?.contacts_json?.medicaid?.website && (
                   <li>
-                    <a href={regulatoryData.contacts_json.medicaid.website} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-primary-600 hover:underline">
+                    <a href={regulatoryData.contacts_json.medicaid.website} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-primary-700 hover:underline">
                       <FileText className="w-4 h-4" />
                       State Medicaid Portal
                     </a>

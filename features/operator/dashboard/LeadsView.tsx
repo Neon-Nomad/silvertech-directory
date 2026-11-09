@@ -751,11 +751,11 @@ export const LeadsView: React.FC = () => {
                       <p className="text-xs text-slate-600">Care: {lead.care_type || '-'}</p>
                       <p className="text-xs text-slate-600">Budget: {lead.budget || '-'}</p>
                       <div className="flex flex-col gap-1">
-                        <a href={`mailto:${lead.email}`} className="inline-flex min-h-11 items-center gap-2 text-slate-600 hover:text-primary-600 text-sm">
+                        <a href={`mailto:${lead.email}`} className="inline-flex min-h-11 items-center gap-2 text-slate-600 hover:text-primary-700 text-sm">
                           <Mail className="w-3 h-3" /> {lead.email}
                         </a>
                         {lead.phone && (
-                          <a href={`tel:${lead.phone}`} className="inline-flex min-h-11 items-center gap-2 text-slate-600 hover:text-primary-600 text-sm">
+                          <a href={`tel:${lead.phone}`} className="inline-flex min-h-11 items-center gap-2 text-slate-600 hover:text-primary-700 text-sm">
                             <Phone className="w-3 h-3" /> {lead.phone}
                           </a>
                         )}
@@ -763,7 +763,7 @@ export const LeadsView: React.FC = () => {
                       <button
                         onClick={() => handleExpressInterest(lead.id)}
                         disabled={claimed || submitting}
-                        className={`mt-1 text-sm font-medium min-h-11 px-2 rounded ${claimed ? 'text-slate-400 cursor-default' : 'text-primary-600 hover:text-primary-700'}`}
+                        className={`mt-1 text-sm font-medium min-h-11 px-2 rounded ${claimed ? 'text-slate-400 cursor-default' : 'text-primary-700 hover:text-primary-700'}`}
                       >
                         {claimed ? 'Interested' : submitting ? 'Saving...' : 'Express Interest'}
                       </button>
@@ -795,11 +795,11 @@ export const LeadsView: React.FC = () => {
                           <td className="px-6 py-4 text-slate-700">{lead.budget || '-'}</td>
                           <td className="px-6 py-4">
                             <div className="flex flex-col gap-1">
-                              <a href={`mailto:${lead.email}`} className="flex items-center gap-2 text-slate-600 hover:text-primary-600">
+                              <a href={`mailto:${lead.email}`} className="flex items-center gap-2 text-slate-600 hover:text-primary-700">
                                 <Mail className="w-3 h-3" /> {lead.email}
                               </a>
                               {lead.phone && (
-                                <a href={`tel:${lead.phone}`} className="flex items-center gap-2 text-slate-600 hover:text-primary-600">
+                                <a href={`tel:${lead.phone}`} className="flex items-center gap-2 text-slate-600 hover:text-primary-700">
                                   <Phone className="w-3 h-3" /> {lead.phone}
                                 </a>
                               )}
@@ -812,7 +812,7 @@ export const LeadsView: React.FC = () => {
                             <button
                               onClick={() => handleExpressInterest(lead.id)}
                               disabled={claimed || submitting}
-                              className={`font-medium ${claimed ? 'text-slate-400 cursor-default' : 'text-primary-600 hover:text-primary-700'}`}
+                              className={`font-medium ${claimed ? 'text-slate-400 cursor-default' : 'text-primary-700 hover:text-primary-700'}`}
                             >
                               {claimed ? 'Interested' : submitting ? 'Saving...' : 'Express Interest'}
                             </button>
@@ -854,17 +854,17 @@ export const LeadsView: React.FC = () => {
                 </div>
                 <p className="text-xs text-slate-600">{lead.facilities?.name || 'Facility'}</p>
                 <div className="flex flex-col gap-1">
-                  <a href={`mailto:${lead.email}`} className="inline-flex min-h-11 items-center gap-2 text-slate-600 hover:text-primary-600 text-sm">
+                  <a href={`mailto:${lead.email}`} className="inline-flex min-h-11 items-center gap-2 text-slate-600 hover:text-primary-700 text-sm">
                     <Mail className="w-3 h-3" /> {lead.email}
                   </a>
                   {lead.phone && (
-                    <a href={`tel:${lead.phone}`} className="inline-flex min-h-11 items-center gap-2 text-slate-600 hover:text-primary-600 text-sm">
+                    <a href={`tel:${lead.phone}`} className="inline-flex min-h-11 items-center gap-2 text-slate-600 hover:text-primary-700 text-sm">
                       <Phone className="w-3 h-3" /> {lead.phone}
                     </a>
                   )}
                 </div>
                 <p className="text-sm text-slate-700">{lead.message || '-'}</p>
-                <button className="text-sm text-primary-600 hover:text-primary-700 font-medium min-h-11 px-2 rounded">View Details</button>
+                <button className="text-sm text-primary-700 hover:text-primary-700 font-medium min-h-11 px-2 rounded">View Details</button>
               </div>
             ))}
           </div>
@@ -887,11 +887,11 @@ export const LeadsView: React.FC = () => {
                     <td className="px-6 py-4 font-medium text-slate-900">{lead.name}</td>
                     <td className="px-6 py-4">
                       <div className="flex flex-col gap-1">
-                        <a href={`mailto:${lead.email}`} className="flex items-center gap-2 text-slate-600 hover:text-primary-600">
+                        <a href={`mailto:${lead.email}`} className="flex items-center gap-2 text-slate-600 hover:text-primary-700">
                           <Mail className="w-3 h-3" /> {lead.email}
                         </a>
                         {lead.phone && (
-                          <a href={`tel:${lead.phone}`} className="flex items-center gap-2 text-slate-600 hover:text-primary-600">
+                          <a href={`tel:${lead.phone}`} className="flex items-center gap-2 text-slate-600 hover:text-primary-700">
                             <Phone className="w-3 h-3" /> {lead.phone}
                           </a>
                         )}
@@ -908,7 +908,7 @@ export const LeadsView: React.FC = () => {
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <button className="text-primary-600 hover:text-primary-700 font-medium">
+                      <button className="text-primary-700 hover:text-primary-700 font-medium">
                         View Details
                       </button>
                     </td>

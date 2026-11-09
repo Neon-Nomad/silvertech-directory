@@ -27,7 +27,7 @@ export const ContactPage: React.FC = () => {
 
                 <div className="bg-slate-50 p-8 rounded-lg border border-slate-200">
                     <h2 className="text-2xl font-light text-slate-900 mb-4">General Inquiries</h2>
-                    <a href="mailto:andrew@silvertechdirectory.com" className="text-primary-600 hover:underline text-lg">
+                    <a href="mailto:andrew@silvertechdirectory.com" className="text-primary-700 hover:underline text-lg">
                         andrew@silvertechdirectory.com
                     </a>
                 </div>

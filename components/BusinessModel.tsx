@@ -13,7 +13,7 @@ export const BusinessModel: React.FC = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Layer 1 */}
         <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm flex flex-col h-full">
-          <div className="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-6 text-primary-600">
+          <div className="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-6 text-primary-700">
             <Layers size={24} />
           </div>
           <h3 className="text-lg font-bold text-slate-900 mb-2">Layer 1: SaaS Core</h3>
@@ -31,7 +31,7 @@ export const BusinessModel: React.FC = () => {
         {/* Layer 2 */}
         <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm flex flex-col h-full relative overflow-hidden">
           <div className="absolute top-0 right-0 bg-yellow-100 text-yellow-800 text-[10px] font-bold px-2 py-1 uppercase">High Margin</div>
-          <div className="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-6 text-primary-600">
+          <div className="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-6 text-primary-700">
             <Bot size={24} />
           </div>
           <h3 className="text-lg font-bold text-slate-900 mb-2">Layer 2: AI Engine</h3>

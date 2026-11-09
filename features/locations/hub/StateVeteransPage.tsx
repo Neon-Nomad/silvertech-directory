@@ -59,7 +59,7 @@ export const StateVeteransPage: React.FC = () => {
                             <ArrowLeft className="w-6 h-6 text-slate-600" />
                         </Link>
                         <h1 className="text-3xl md:text-4xl font-bold text-slate-900 flex items-center gap-3">
-                            <Flag className="w-8 h-8 text-primary-600" />
+                            <Flag className="w-8 h-8 text-primary-700" />
                             Veterans Benefits in {stateDef.name}
                         </h1>
                     </div>
@@ -80,7 +80,7 @@ export const StateVeteransPage: React.FC = () => {
                         <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 prose prose-slate max-w-none">
                             {loading ? (
                                 <div className="flex items-center justify-center py-12">
-                                    <Loader className="w-8 h-8 text-primary-600 animate-spin" />
+                                    <Loader className="w-8 h-8 text-primary-700 animate-spin" />
                                 </div>
                             ) : error ? (
                                 <div className="text-red-600 p-4 bg-red-50 rounded-lg">

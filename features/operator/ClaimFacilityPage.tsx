@@ -235,7 +235,7 @@ export const ClaimFacilityPage: React.FC = () => {
     <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-10">
-          <Shield className="h-12 w-12 text-primary-600 mx-auto mb-4" />
+          <Shield className="h-12 w-12 text-primary-700 mx-auto mb-4" />
           <h1 className="text-3xl font-bold text-slate-900">Claim Your Business</h1>
           <p className="mt-2 text-slate-600">
             Take control of your profile on SilverTech Directory

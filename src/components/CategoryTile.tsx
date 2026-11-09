@@ -22,7 +22,7 @@ export const CategoryTile: React.FC<CategoryTileProps> = ({
           <span className="text-slate-400">Icon</span>
         </div>
         <div className="p-4 flex-1 flex flex-col">
-          <h3 className="text-lg font-bold text-slate-900 group-hover:text-primary-600 transition-colors mb-2">
+          <h3 className="text-lg font-bold text-slate-900 group-hover:text-primary-700 transition-colors mb-2">
             {title}
           </h3>
           {tagline && (

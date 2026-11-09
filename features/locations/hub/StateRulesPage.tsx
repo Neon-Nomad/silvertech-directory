@@ -55,7 +55,7 @@ export const StateRulesPage: React.FC = () => {
                     />
 
                     <div className="mt-6">
-                        <Link to={`/states/${stateDef.slug}`} className="inline-flex items-center text-sm text-slate-600 hover:text-primary-600 mb-4">
+                        <Link to={`/states/${stateDef.slug}`} className="inline-flex items-center text-sm text-slate-600 hover:text-primary-700 mb-4">
                             <ArrowLeft className="w-4 h-4 mr-1" /> Back to {stateDef.name} Overview
                         </Link>
                         <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
@@ -93,14 +93,14 @@ export const StateRulesPage: React.FC = () => {
                         {/* Dynamic Content from Supabase */}
                         {loading ? (
                             <div className="flex justify-center py-12">
-                                <Loader className="w-8 h-8 text-primary-600 animate-spin" />
+                                <Loader className="w-8 h-8 text-primary-700 animate-spin" />
                             </div>
                         ) : (
                             <>
                                 {regulatoryData?.licensing_content && (
                                     <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 prose prose-slate max-w-none">
                                         <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2 not-prose">
-                                            <Scale className="w-6 h-6 text-primary-600" />
+                                            <Scale className="w-6 h-6 text-primary-700" />
                                             Licensing Standards
                                         </h2>
                                         <ReactMarkdown>{regulatoryData.licensing_content}</ReactMarkdown>
@@ -121,7 +121,7 @@ export const StateRulesPage: React.FC = () => {
                                 {!regulatoryData?.licensing_content && (
                                     <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
                                         <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                                            <Scale className="w-6 h-6 text-primary-600" />
+                                            <Scale className="w-6 h-6 text-primary-700" />
                                             Key Resident Rights
                                         </h2>
                                         <div className="space-y-6">

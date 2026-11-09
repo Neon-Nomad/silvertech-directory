@@ -58,7 +58,7 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
                           state: facility.state,
                           city: facility.city,
                         })}
-                        className="hover:text-primary-600"
+                        className="hover:text-primary-700"
                       >
                         {facility.name}
                       </Link>
@@ -91,7 +91,7 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
                           state: facility.state,
                           city: facility.city,
                         })}
-                        className="inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition-colors"
+                        className="inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-700 bg-white hover:bg-primary-50 transition-colors"
                       >
                         View Details <ChevronRight size={16} className="ml-1" />
                       </Link>
@@ -109,7 +109,7 @@ export const BestFacilitiesList: React.FC<BestFacilitiesListProps> = ({ faciliti
                           state: facility.state,
                           city: facility.city,
                         })}
-                        className="w-full inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition-colors"
+                        className="w-full inline-flex items-center justify-center px-4 py-2 border border-primary-600 text-sm font-medium rounded-md text-primary-700 bg-white hover:bg-primary-50 transition-colors"
                       >
                         View Details <ChevronRight size={16} className="ml-1" />
                       </Link>

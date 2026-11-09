@@ -25,7 +25,7 @@ export const UserMenu: React.FC = () => {
   if (!user) {
     return (
       <div className="flex items-center gap-4">
-        <Link to="/login" className="text-sm font-medium text-slate-700 hover:text-primary-600">
+        <Link to="/login" className="text-sm font-medium text-slate-700 hover:text-primary-700">
           Log in
         </Link>
         <Link

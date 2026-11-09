@@ -82,7 +82,7 @@ export const FacilitiesPartnerPage: React.FC = () => {
       <main className="max-w-5xl mx-auto px-6 py-12 space-y-12">
         <section className="text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-semibold text-slate-900 leading-tight mb-4">
-            Direct Leads. Zero Referral Fees. <span className="text-primary-600">Total Brand Control.</span>
+            Direct Leads. Zero Referral Fees. <span className="text-primary-700">Total Brand Control.</span>
           </h1>
           <p className="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
             SilverTech helps families find your community directly with verified data, clear pricing signals, and no commission
@@ -148,13 +148,13 @@ export const FacilitiesPartnerPage: React.FC = () => {
                 <p className="text-xs font-semibold uppercase tracking-widest text-slate-600 mb-2">For Brand-Conscious Operators</p>
                 <ul className="text-sm text-slate-700 space-y-2">
                   <li className="flex items-center gap-2">
-                    <BadgeCheck className="w-4 h-4 text-primary-600" /> Verify operator identity and profile ownership
+                    <BadgeCheck className="w-4 h-4 text-primary-700" /> Verify operator identity and profile ownership
                   </li>
                   <li className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-primary-600" /> Protect your listing from stale or inaccurate status signals
+                    <ShieldCheck className="w-4 h-4 text-primary-700" /> Protect your listing from stale or inaccurate status signals
                   </li>
                   <li className="flex items-center gap-2">
-                    <BarChart3 className="w-4 h-4 text-primary-600" /> Track verified unique interest from calls, directions, and
+                    <BarChart3 className="w-4 h-4 text-primary-700" /> Track verified unique interest from calls, directions, and
                     comparisons
                   </li>
                 </ul>
@@ -169,13 +169,13 @@ export const FacilitiesPartnerPage: React.FC = () => {
                 <p className="text-xs font-semibold uppercase tracking-widest text-slate-600 mb-2">For Growth-Focused Teams</p>
                 <ul className="text-sm text-slate-700 space-y-2">
                   <li className="flex items-center gap-2">
-                    <TrendingUp className="w-4 h-4 text-primary-600" /> Capture no-results demand with Express Interest prompts
+                    <TrendingUp className="w-4 h-4 text-primary-700" /> Capture no-results demand with Express Interest prompts
                   </li>
                   <li className="flex items-center gap-2">
-                    <Star className="w-4 h-4 text-primary-600" /> Increase local visibility using profile health ranking signals
+                    <Star className="w-4 h-4 text-primary-700" /> Increase local visibility using profile health ranking signals
                   </li>
                   <li className="flex items-center gap-2">
-                    <Target className="w-4 h-4 text-primary-600" /> Add high-intent tour CTAs on results where families decide
+                    <Target className="w-4 h-4 text-primary-700" /> Add high-intent tour CTAs on results where families decide
                   </li>
                 </ul>
                 <p className="mt-3 text-xs text-slate-600">$249/mo</p>
@@ -188,13 +188,13 @@ export const FacilitiesPartnerPage: React.FC = () => {
                 <p className="text-xs font-semibold uppercase tracking-widest text-slate-600 mb-2">For Market Leaders</p>
                 <ul className="text-sm text-slate-700 space-y-2">
                   <li className="flex items-center gap-2">
-                    <BarChart3 className="w-4 h-4 text-primary-600" /> Gain market intelligence on local comparison behavior
+                    <BarChart3 className="w-4 h-4 text-primary-700" /> Gain market intelligence on local comparison behavior
                   </li>
                   <li className="flex items-center gap-2">
-                    <TrendingUp className="w-4 h-4 text-primary-600" /> Model ROI using your actual rent and conversion assumptions
+                    <TrendingUp className="w-4 h-4 text-primary-700" /> Model ROI using your actual rent and conversion assumptions
                   </li>
                   <li className="flex items-center gap-2">
-                    <Crown className="w-4 h-4 text-primary-600" /> Own authority placement with pinned Q&A and featured trust blocks
+                    <Crown className="w-4 h-4 text-primary-700" /> Own authority placement with pinned Q&A and featured trust blocks
                   </li>
                 </ul>
                 <Button

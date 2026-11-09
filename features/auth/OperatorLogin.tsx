@@ -241,7 +241,7 @@ const OperatorLogin: React.FC = () => {
                   id="remember_me"
                   name="remember_me"
                   type="checkbox"
-                  className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-slate-300 rounded"
+                  className="h-4 w-4 text-primary-700 focus:ring-primary-500 border-slate-300 rounded"
                 />
                 <label htmlFor="remember_me" className="ml-2 block text-sm text-slate-900">
                   Remember me
@@ -249,7 +249,7 @@ const OperatorLogin: React.FC = () => {
               </div>
 
               <div className="text-sm">
-                <Link to="/contact" className="font-medium text-primary-600 hover:text-primary-500">
+                <Link to="/contact" className="font-medium text-primary-700 hover:text-primary-800">
                   Forgot your password?
                 </Link>
               </div>

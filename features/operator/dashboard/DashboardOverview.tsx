@@ -992,7 +992,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
         <div className="rounded-2xl border border-warm-gray bg-white p-6 shadow-sm">
           <div className="mb-4 flex items-center justify-between">
             <h2 className="text-lg font-semibold text-charcoal">Premium Benefits</h2>
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-50 text-primary-600">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-50 text-primary-700">
               <CheckCircle className="h-5 w-5" />
             </div>
           </div>
@@ -1191,7 +1191,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
               <h2 className="text-lg font-semibold text-charcoal">Activation Funnel (Last 30 Days)</h2>
               <p className="text-[11px] text-charcoal/60">Claim -&gt; View -&gt; Edit -&gt; Checklist -&gt; Benchmark -&gt; ROI -&gt; CTA -&gt; Trial</p>
             </div>
-            <span className="text-[11px] text-charcoal/50">{formatAsOfLabel(dataAsOf, 'absolute')}</span>
+            <span className="text-[11px] text-charcoal/70">{formatAsOfLabel(dataAsOf, 'absolute')}</span>
           </div>
           {funnelLoading ? (
             <p className="text-sm text-charcoal/60">Loading activation funnel...</p>

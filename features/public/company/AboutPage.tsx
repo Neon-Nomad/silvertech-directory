@@ -25,7 +25,7 @@ export const AboutPage: React.FC = () => {
             <div className="bg-gradient-to-br from-primary-50 via-primary-50 to-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
                     <div className="inline-block p-4 bg-white rounded-2xl shadow-lg mb-6">
-                        <Heart className="w-16 h-16 text-primary-600" />
+                        <Heart className="w-16 h-16 text-primary-700" />
                     </div>
                     <h1 className="text-5xl font-bold text-charcoal mb-6">
                         The SilverTech Difference: Finding Care You Can Trust
@@ -45,7 +45,7 @@ export const AboutPage: React.FC = () => {
                 <section>
                     <div className="flex items-center gap-4 mb-8">
                         <div className="p-4 bg-primary-100 rounded-xl">
-                            <Shield className="w-8 h-8 text-primary-600" />
+                            <Shield className="w-8 h-8 text-primary-700" />
                         </div>
                         <h2 className="text-3xl font-bold text-charcoal">Why You Can Trust Our Listings</h2>
                     </div>
@@ -89,7 +89,7 @@ export const AboutPage: React.FC = () => {
                     <div className="bg-gradient-to-br from-primary-50 to-primary-50 p-8 rounded-2xl border-2 border-primary-200">
                         <div className="flex items-start gap-4">
                             <div className="p-3 bg-white rounded-xl shadow-sm">
-                                <CheckCircle className="w-8 h-8 text-primary-600" />
+                                <CheckCircle className="w-8 h-8 text-primary-700" />
                             </div>
                             <div>
                                 <h3 className="text-2xl font-bold text-charcoal mb-3">We Are Different</h3>
@@ -109,7 +109,7 @@ export const AboutPage: React.FC = () => {
                 <section>
                     <div className="flex items-center gap-4 mb-8">
                         <div className="p-4 bg-primary-100 rounded-xl">
-                            <Search className="w-8 h-8 text-primary-600" />
+                            <Search className="w-8 h-8 text-primary-700" />
                         </div>
                         <h2 className="text-3xl font-bold text-charcoal">The Full Spectrum of Care, Clearly Presented</h2>
                     </div>
@@ -127,7 +127,7 @@ export const AboutPage: React.FC = () => {
                         <div className="divide-y divide-slate-200">
                             <div className="p-6 flex items-start gap-4 hover:bg-warm-white transition-colors">
                                 <div className="p-2 bg-primary-100 rounded-lg">
-                                    <FileText className="w-6 h-6 text-primary-600" />
+                                    <FileText className="w-6 h-6 text-primary-700" />
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-charcoal mb-2">Verified Data</h4>
@@ -139,7 +139,7 @@ export const AboutPage: React.FC = () => {
 
                             <div className="p-6 flex items-start gap-4 hover:bg-warm-white transition-colors">
                                 <div className="p-2 bg-primary-100 rounded-lg">
-                                    <CheckCircle className="w-6 h-6 text-primary-600" />
+                                    <CheckCircle className="w-6 h-6 text-primary-700" />
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-charcoal mb-2">Objective Rankings</h4>
@@ -151,7 +151,7 @@ export const AboutPage: React.FC = () => {
 
                             <div className="p-6 flex items-start gap-4 hover:bg-warm-white transition-colors">
                                 <div className="p-2 bg-primary-100 rounded-lg">
-                                    <Heart className="w-6 h-6 text-primary-600" />
+                                    <Heart className="w-6 h-6 text-primary-700" />
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-charcoal mb-2">Direct Contact</h4>
@@ -168,7 +168,7 @@ export const AboutPage: React.FC = () => {
                 <section>
                     <div className="flex items-center gap-4 mb-8">
                         <div className="p-4 bg-primary-100 rounded-xl">
-                            <DollarSign className="w-8 h-8 text-primary-600" />
+                            <DollarSign className="w-8 h-8 text-primary-700" />
                         </div>
                         <h2 className="text-3xl font-bold text-charcoal">How We Keep the Site Free For You</h2>
                     </div>
