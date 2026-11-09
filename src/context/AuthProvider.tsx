@@ -2,6 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Session, User } from '@supabase/supabase-js';
 import { supabase } from '@/src/lib/supabase';
 import { getUserRole, isOperatorUser, type AppRole } from '@/src/utils/authRole';
+import { requestWelcomeEmail } from '@/features/auth/sendWelcomeEmail';
 
 interface AuthContextType {
   session: Session | null;
@@ -41,10 +42,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     // Listen for changes
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
+    } = supabase.auth.onAuthStateChange((event, session) => {
       setSession(session);
       setUser(session?.user ?? null);
       setLoading(false);
+      // Only a real sign-in asks for the welcome email. The server sends it at most once per account.
+      if (event === 'SIGNED_IN' && session?.access_token) {
+        requestWelcomeEmail(session.access_token).catch((err) => console.error('Welcome email request failed:', err));
+      }
     });
 
     return () => subscription.unsubscribe();
