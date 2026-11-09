@@ -30,7 +30,7 @@ These avoid the conflict, and nothing existing is removed.
    - TXT `resend._domainkey` (DKIM). Value: copy exactly from Resend.
    - CNAME `outbound` and CNAME `routbound`, both required for a CNAME return path. Values: copy exactly from Resend.
    - Do not create anything at `send`.
-   - Add a proxied record? No. Netlify DNS does not proxy, but the records must not be proxied in any other DNS host either.
+   - None of these records may be proxied (for example, Cloudflare's orange cloud). Resend requires DNS-only records.
 3. **Do not change** the existing `send` CNAME, the root TXT, or any record not listed above.
 4. Optional, after verification: a DMARC TXT at `_dmarc` (e.g. `v=DMARC1; p=none; rua=mailto:…`). Not needed for verification.
 
