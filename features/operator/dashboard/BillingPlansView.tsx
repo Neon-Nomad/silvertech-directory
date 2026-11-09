@@ -39,9 +39,39 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
   const slotCount = currentPlan?.slotCount || 0;
   const assignedCount = facilities.filter((f) => f.assigned_plan_owner_id === userId).length;
   const slotPercent = slotCount > 0 ? Math.min(100, Math.round((assignedCount / slotCount) * 100)) : 0;
-  // Free-plan accounts have no paid slots. Show an honest disabled state instead of an active Assign action.
   const normalizedBillingStatus = String(userProfile?.billing_status || userProfile?.status || '').toLowerCase();
-  const canAssignSlots = slotCount > 0 && normalizedBillingStatus === 'active';
+  // Free listings have no plan slots, so the next step is comparing plans. A paid plan whose billing is not active keeps
+  // existing assignments but pauses new ones.
+  const needsPlanUpgrade = slotCount === 0;
+  const billingNeedsAttention = !needsPlanUpgrade && normalizedBillingStatus !== 'active';
+  const canAssignSlots = !needsPlanUpgrade && !billingNeedsAttention;
+
+  const scrollToPlans = () => {
+    document.getElementById('upgrade-plans')?.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
+  };
+
+  const renderAssignAction = (facilityId: string, className: string) => {
+    if (needsPlanUpgrade) {
+      return (
+        <Button variant="outline" size="sm" className={className} onClick={scrollToPlans}>
+          View plans
+        </Button>
+      );
+    }
+    if (billingNeedsAttention) {
+      return <span className="text-xs font-medium text-amber-800">Paused until billing is active</span>;
+    }
+    return (
+      <Button
+        size="sm"
+        className={className}
+        onClick={() => void onAssignFacility(facilityId)}
+        disabled={actionsLockedForBilling}
+      >
+        Assign Plan
+      </Button>
+    );
+  };
   const isPaidPlan = Boolean(userProfile?.plan && userProfile.plan !== 'free');
   const hasStripeSubscription = Boolean(userProfile?.stripe_subscription_id || userProfile?.stripe_customer_id);
   const isActiveSubscription =
@@ -121,6 +151,13 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
             <div className="border-b border-warm-gray px-6 py-4">
               <h3 className="text-lg font-bold text-charcoal">Assign Benefits</h3>
             </div>
+            {!canAssignSlots && (
+              <div className="border-b border-warm-gray bg-amber-50 px-6 py-3 text-sm text-amber-900">
+                {needsPlanUpgrade
+                  ? 'Free listings include no plan slots. Compare plans to unlock slots for your facilities.'
+                  : 'New assignments are paused while billing needs attention. Facilities already assigned stay assigned.'}
+              </div>
+            )}
             <div className="divide-y divide-warm-gray md:hidden">
               {facilities.map((facility) => {
                 const isAssigned = facility.assigned_plan_owner_id === userId;
@@ -151,15 +188,7 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
                           Unassign
                         </Button>
                       ) : (
-                        <Button
-                          size="sm"
-                          className="min-h-11"
-                          onClick={() => void onAssignFacility(facility.id)}
-                          disabled={actionsLockedForBilling || !canAssignSlots}
-                          title={canAssignSlots ? undefined : 'Assigning a facility needs an active paid plan with open slots.'}
-                        >
-                          {canAssignSlots ? 'Assign Plan' : 'Paid plan required'}
-                        </Button>
+                        renderAssignAction(facility.id, 'min-h-11')
                       )}
                     </div>
                   </div>
@@ -207,14 +236,7 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
                               Unassign
                             </Button>
                           ) : (
-                            <Button
-                              size="sm"
-                              onClick={() => void onAssignFacility(facility.id)}
-                              disabled={actionsLockedForBilling || !canAssignSlots}
-                              title={canAssignSlots ? undefined : 'Assigning a facility needs an active paid plan with open slots.'}
-                            >
-                              {canAssignSlots ? 'Assign Plan' : 'Paid plan required'}
-                            </Button>
+                            renderAssignAction(facility.id, '')
                           )}
                         </td>
                       </tr>
@@ -232,7 +254,9 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
             <div className="space-y-3 text-sm">
               <div className="flex items-center justify-between border-b border-white/10 pb-2">
                 <span>Monthly Slots</span>
-                <span className="font-semibold text-primary-300">1 / 3 / 10 / 25</span>
+                <span className="font-semibold text-primary-300">
+                  {PRICING_PLANS.filter((p) => p.id !== 'free').map((p) => p.slotCount).join(' / ')}
+                </span>
               </div>
               <div className="flex items-center justify-between border-b border-white/10 pb-2">
                 <span>Search Ranking</span>

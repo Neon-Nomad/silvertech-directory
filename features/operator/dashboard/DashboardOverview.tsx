@@ -198,13 +198,13 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
   const benchmarkReady = snapshot.benchmark.ready;
   const benchmarkConfidenceLabel = snapshot.benchmark.confidenceLabel;
   const yourConversion = snapshot.benchmark.yourConversion;
-  const conversionGap = snapshot.benchmark.gapPct;
   const roiReady = snapshot.roi.ready;
   const roiConfidenceLabel = snapshot.roi.confidenceLabel;
   const roiRemaining = snapshot.roi.remainingInquiries;
   const estimatedExtraInquiriesLow = snapshot.roi.low;
   const estimatedExtraInquiriesMid = snapshot.roi.mid;
-  const showPremiumCta = snapshot.showPremiumCta;
+  // Visibility depends on the account's plan only. The benchmark gap uses a placeholder median, so it does not decide this.
+  const showUpgradeCard = (userProfile?.plan || 'free') === 'free';
   const topDropOffInsight = snapshot.funnel.topDrop;
   const nextBestFix = snapshot.nextFix;
   const minimumFunnelSessions = snapshot.funnel.minimumFunnelSessions;
@@ -483,8 +483,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
           { id: 'checklist', label: 'Checklist step completed', count: countStage('checklist_step_completed'), rate: 0 },
           { id: 'benchmark', label: 'Benchmark shown', count: countStage('benchmark_module_viewed'), rate: 0 },
           { id: 'roi', label: 'ROI viewed', count: countStage('roi_module_viewed'), rate: 0 },
-          { id: 'cta', label: 'Premium CTA clicked', count: countStage('premium_cta_clicked'), rate: 0 },
-          { id: 'trial', label: 'Trial started', count: countStage('premium_trial_started'), rate: 0 },
+          { id: 'cta', label: 'Upgrade CTA clicked', count: countStage('premium_cta_clicked'), rate: 0 },
         ] satisfies ActivationFunnelStage[]).map((stage) => ({
           ...stage,
           rate: totalSessions > 0 ? stage.count / totalSessions : 0,
@@ -576,7 +575,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
   }, [estimatedExtraInquiriesLow, estimatedExtraInquiriesMid, roiConfidenceLabel, user]);
 
   React.useEffect(() => {
-    if (!user || !showPremiumCta || hasTrackedPremiumCtaView.current) return;
+    if (!user || !showUpgradeCard || hasTrackedPremiumCtaView.current) return;
     hasTrackedPremiumCtaView.current = true;
     trackActivationEvent(
       'premium_cta_viewed',
@@ -591,10 +590,9 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
       {
         reason_checklist_incomplete: checklistCompletion < 0.8,
         reason_low_photos: photoCount < 10,
-        reason_benchmark_gap: conversionGap >= 0.03,
       },
     );
-  }, [checklistCompletion, conversionGap, photoCount, showPremiumCta, user]);
+  }, [checklistCompletion, photoCount, showUpgradeCard, user]);
 
   React.useEffect(() => {
     if (!user) return;
@@ -1132,7 +1130,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
           )}
         </div>
 
-        {showPremiumCta && (userProfile?.plan || 'free') === 'free' && (
+        {showUpgradeCard && (
           <div id="premium-trial" className="rounded-2xl border border-primary-300 bg-primary-50 p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-charcoal">Upgrade your listing</h2>
             <p className="mt-1 text-sm text-charcoal/80">
@@ -1157,7 +1155,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
           <div className="mb-4 flex items-center justify-between">
             <div>
               <h2 className="text-lg font-semibold text-charcoal">Activation Funnel (Last 30 Days)</h2>
-              <p className="text-[11px] text-charcoal/60">Claim -&gt; View -&gt; Edit -&gt; Checklist -&gt; Benchmark -&gt; ROI -&gt; CTA -&gt; Trial</p>
+              <p className="text-[11px] text-charcoal/60">Claim -&gt; View -&gt; Edit -&gt; Checklist -&gt; Benchmark -&gt; ROI -&gt; CTA</p>
             </div>
             <span className="text-[11px] text-charcoal/70">{formatAsOfLabel(dataAsOf, 'absolute')}</span>
           </div>
