@@ -5,8 +5,6 @@ import {
   CheckCircle,
   LayoutDashboard,
   Lock,
-  Mail,
-  Phone,
   Trophy,
   TrendingUp,
 } from 'lucide-react';
@@ -27,21 +25,9 @@ type DashboardOverviewProps = {
   onGoToListings: () => void;
   onCompleteProfileSetup: () => void | Promise<void>;
   onGoToLeads: () => void;
+  onGoToBilling: () => void;
   onViewPublicProfile: () => void;
 };
-
-const recentLeads = [
-  { name: 'Jona Smith', date: '03/22/2023', type: 'Inquiry Form', status: 'New', phone: '(555) 555-0111', email: 'jona@example.com' },
-  { name: 'John Anthrena', date: '03/22/2023', type: 'Inquiry Form', status: 'Contacted', phone: '(555) 555-0112', email: 'john@example.com' },
-  { name: 'Barky Jason', date: '03/22/2023', type: 'Inquiry Form', status: 'Follow-up', phone: '(555) 555-0113', email: 'barky@example.com' },
-];
-
-const leadAttribution = [
-  { label: 'Google', value: 18 },
-  { label: 'SilverTech', value: 12 },
-  { label: 'Direct Link', value: 9 },
-  { label: 'Referral', value: 6 },
-];
 
 const kpis = [
   { label: 'Profile Views', value: '1,250' },
@@ -130,6 +116,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
   onGoToListings,
   onCompleteProfileSetup,
   onGoToLeads,
+  onGoToBilling,
   onViewPublicProfile,
 }) => {
   const { user } = useAuth();
@@ -685,15 +672,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
       activation_score: activationScore,
       source_screen: 'dashboard_overview',
     });
-    trackActivationEvent('premium_trial_started', {
-      operator_id: user.id,
-      facility_id: 'unknown',
-      session_id: getActivationSessionId(),
-      plan_tier: 'unknown',
-      activation_score: activationScore,
-      source_screen: 'dashboard_overview',
-    });
-    onGoToListings();
+    onGoToBilling();
   };
 
   const trackConfidenceHover = (module: 'benchmark' | 'roi') => {
@@ -1018,17 +997,9 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
             <span className="text-xs text-charcoal/40">Last 30 days</span>
           </div>
           <div className="space-y-3">
-            {leadAttribution.map((item) => (
-              <div key={item.label}>
-                <div className="flex items-center justify-between text-sm text-charcoal/70">
-                  <span>{item.label}</span>
-                  <span className="font-semibold text-charcoal">{item.value}</span>
-                </div>
-                <div className="mt-2 h-2 rounded-full bg-warm-gray">
-                  <div className="h-2 rounded-full bg-charcoal/90" style={{ width: `${(item.value / 20) * 100}%` }} />
-                </div>
-              </div>
-            ))}
+            <p className="text-sm text-charcoal/70">
+              Attribution tracking is not connected yet. Figures will appear here once it is.
+            </p>
           </div>
         </div>
 
@@ -1087,11 +1058,8 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
               <p className="text-sm text-charcoal/70">
                 Your conversion: <span className="font-semibold text-charcoal">{(yourConversion * 100).toFixed(1)}%</span>
               </p>
-              <p className="text-sm text-charcoal/70">
-                Market median: <span className="font-semibold text-charcoal">{(marketMedianConversion * 100).toFixed(1)}%</span>
-              </p>
               <p className="text-xs text-charcoal/60">
-                Gap: {((yourConversion - marketMedianConversion) * 100).toFixed(1)} percentage points
+                Market comparison is not available yet.
               </p>
             </div>
           )}
@@ -1164,20 +1132,20 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
           )}
         </div>
 
-        {showPremiumCta && (
+        {showPremiumCta && (userProfile?.plan || 'free') === 'free' && (
           <div id="premium-trial" className="rounded-2xl border border-primary-300 bg-primary-50 p-6 shadow-sm">
-            <h2 className="text-lg font-semibold text-charcoal">Premium Trial</h2>
+            <h2 className="text-lg font-semibold text-charcoal">Upgrade your listing</h2>
             <p className="mt-1 text-sm text-charcoal/80">
-              Enable Premium trial to improve response speed and listing visibility.
+              Compare plans for more listing visibility and facility slots.
             </p>
             <p className="mt-2 text-xs text-charcoal/70">
               Facilities with 10+ photos and faster response times typically see stronger engagement.
             </p>
             <button
               className="mt-4 inline-flex min-h-11 items-center justify-center rounded-full bg-charcoal px-4 py-2 text-sm font-semibold text-white"
-              onClick={handlePremiumTrialStart}
+              onClick={onGoToBilling}
             >
-              Start Premium Trial
+              View plans
             </button>
           </div>
         )}
@@ -1282,42 +1250,11 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
                 </tr>
               </thead>
               <tbody className="text-charcoal">
-                {recentLeads.map((lead) => (
-                  <tr key={lead.name} className="border-b border-warm-gray">
-                    <td className="py-3 font-medium">{lead.name}</td>
-                    <td className="py-3">{lead.date}</td>
-                    <td className="py-3">{lead.type}</td>
-                    <td className="py-3">
-                      <span className="rounded-full bg-warm-gray px-2 py-1 text-xs font-medium text-charcoal">
-                        {lead.status}
-                      </span>
-                    </td>
-                    <td className="py-3">
-                      <div className="flex items-center justify-end gap-2">
-                        <a
-                          href={`tel:${lead.phone.replace(/[^0-9+]/g, '')}`}
-                          className="flex h-8 w-8 items-center justify-center rounded-full bg-charcoal text-white"
-                          aria-label={`Call ${lead.name}`}
-                        >
-                          <Phone className="h-4 w-4" />
-                        </a>
-                        <a
-                          href={`mailto:${lead.email}`}
-                          className="flex h-8 w-8 items-center justify-center rounded-full bg-charcoal/80 text-white"
-                          aria-label={`Email ${lead.name}`}
-                        >
-                          <Mail className="h-4 w-4" />
-                        </a>
-                        <a
-                          href={`tel:${lead.phone.replace(/[^0-9+]/g, '')}`}
-                          className="rounded-full bg-charcoal px-4 py-1 text-xs font-medium text-white"
-                        >
-                          Call
-                        </a>
-                      </div>
-                    </td>
-                  </tr>
-                ))}
+                <tr className="border-b border-warm-gray">
+                  <td colSpan={5} className="py-6 text-center text-sm text-charcoal/60">
+                    No family inquiries yet. Inquiries will appear here as families contact your facilities.
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>

@@ -129,4 +129,48 @@ describe('BillingPlansView', () => {
     includedButtons.forEach((button) => expect(button).toBeDisabled());
     expect(screen.getByRole('button', { name: /Current Plan/i })).toBeDisabled();
   });
+
+  it('disables assignment on the free plan with a clear paid-plan message', () => {
+    const onAssignFacility = vi.fn(async () => undefined);
+
+    render(
+      <BillingPlansView
+        userId="u-1"
+        userProfile={{ plan: 'free', billing_status: 'none' }}
+        facilities={[{ id: 'f-1', name: 'Sunrise Senior Living', assigned_plan_owner_id: null }]}
+        billingUiError={null}
+        onManageBilling={vi.fn()}
+        onBillingErrorCta={vi.fn()}
+        onUpgrade={vi.fn()}
+        onAssignFacility={onAssignFacility}
+        onUnassignFacility={vi.fn(async () => undefined)}
+      />
+    );
+
+    expect(screen.queryByRole('button', { name: /^Assign Plan$/ })).not.toBeInTheDocument();
+    const blocked = screen.getAllByRole('button', { name: /Paid plan required/i });
+    expect(blocked.length).toBeGreaterThan(0);
+    blocked.forEach((button) => expect(button).toBeDisabled());
+    expect(onAssignFacility).not.toHaveBeenCalled();
+  });
+
+  it('disables assignment on a paid plan whose billing is not active', () => {
+    render(
+      <BillingPlansView
+        userId="u-1"
+        userProfile={{ plan: 'featured', billing_status: 'past_due' }}
+        facilities={[{ id: 'f-1', name: 'Sunrise Senior Living', assigned_plan_owner_id: null }]}
+        billingUiError={null}
+        onManageBilling={vi.fn()}
+        onBillingErrorCta={vi.fn()}
+        onUpgrade={vi.fn()}
+        onAssignFacility={vi.fn(async () => undefined)}
+        onUnassignFacility={vi.fn(async () => undefined)}
+      />
+    );
+
+    const blocked = screen.getAllByRole('button', { name: /Paid plan required/i });
+    expect(blocked.length).toBeGreaterThan(0);
+    blocked.forEach((button) => expect(button).toBeDisabled());
+  });
 });

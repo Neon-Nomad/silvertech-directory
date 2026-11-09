@@ -539,6 +539,7 @@ const OperatorDashboard: React.FC = () => {
               onGoToListings={() => goToTab('listings')}
               onCompleteProfileSetup={handleCompleteProfileSetup}
               onGoToLeads={() => goToTab('leads')}
+              onGoToBilling={() => goToTab('billing')}
               onViewPublicProfile={() => navigate('/search')}
             />
           )}
