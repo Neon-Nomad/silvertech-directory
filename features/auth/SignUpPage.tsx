@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { supabase } from '@/src/lib/supabase';
+import { sendWelcomeEmail } from './sendWelcomeEmail';
 import { Button } from '@/components/ui/Button';
 import { Helmet } from 'react-helmet-async';
 import { AlertCircle, Loader2 } from 'lucide-react';
@@ -50,13 +51,11 @@ export const SignUpPage: React.FC = () => {
         throw new Error('An account with this email already exists. Please sign in instead.');
       }
 
-      const { error: functionError } = await supabase.functions.invoke('send-registration-email', {
-        body: { email },
-      });
-
-      if (functionError) {
-        console.error('Failed to send registration email:', functionError);
-        // We can still proceed, but we should log this error
+      try {
+        await sendWelcomeEmail(email);
+      } catch (welcomeError) {
+        // Sign-up still succeeds without the welcome email, so only log the failure.
+        console.error('Failed to send registration email:', welcomeError);
       }
 
 
