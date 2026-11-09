@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { Helmet } from 'react-helmet-async';
 import { AlertCircle, Loader2 } from 'lucide-react';
 
+
 export const LoginPage: React.FC = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
@@ -21,6 +22,7 @@ export const LoginPage: React.FC = () => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const passwordWasReset = searchParams.get('reset') === 'updated';
 
   useEffect(() => {
     if (!operatorIntent) return;
@@ -88,6 +90,11 @@ export const LoginPage: React.FC = () => {
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+          {passwordWasReset && (
+            <div role="status" className="mb-6 bg-green-50 border border-green-200 rounded-md p-4">
+              <p className="text-sm text-green-800">Your password has been updated. Sign in with your new password.</p>
+            </div>
+          )}
           <form className="space-y-6" onSubmit={handleLogin}>
             {error && (
               <div
@@ -139,6 +146,11 @@ export const LoginPage: React.FC = () => {
                   className="appearance-none block w-full px-3 py-2 border border-warm-gray rounded-md shadow-sm placeholder-charcoal/40 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                 />
               </div>
+              <p className="mt-2 text-sm">
+                <Link to="/forgot-password" className="font-medium text-primary-700 hover:text-primary-800">
+                  Forgot your password?
+                </Link>
+              </p>
             </div>
 
             <div>
