@@ -18,8 +18,10 @@ type ClaimReviewItem = {
   created_at: string;
 };
 
+// Verified means ownership was approved through a claim. owner_id and claimed_at are written only by the approval trigger.
+// Paid plan-slot assignment (assigned_plan_owner_id) does not change verification.
 const getStatus = (facility: any): FilterStatus => {
-  if (facility.owner_id && facility.owner_id === facility.assigned_plan_owner_id) return 'verified';
+  if (facility.owner_id && facility.claimed_at) return 'verified';
   if (facility.owner_id) return 'pending';
   return 'all';
 };
