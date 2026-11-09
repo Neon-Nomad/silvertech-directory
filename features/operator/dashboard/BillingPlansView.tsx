@@ -39,7 +39,9 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
   const slotCount = currentPlan?.slotCount || 0;
   const assignedCount = facilities.filter((f) => f.assigned_plan_owner_id === userId).length;
   const slotPercent = slotCount > 0 ? Math.min(100, Math.round((assignedCount / slotCount) * 100)) : 0;
+  // Free-plan accounts have no paid slots. Show an honest disabled state instead of an active Assign action.
   const normalizedBillingStatus = String(userProfile?.billing_status || userProfile?.status || '').toLowerCase();
+  const canAssignSlots = slotCount > 0 && normalizedBillingStatus === 'active';
   const isPaidPlan = Boolean(userProfile?.plan && userProfile.plan !== 'free');
   const hasStripeSubscription = Boolean(userProfile?.stripe_subscription_id || userProfile?.stripe_customer_id);
   const isActiveSubscription =
@@ -153,9 +155,10 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
                           size="sm"
                           className="min-h-11"
                           onClick={() => void onAssignFacility(facility.id)}
-                          disabled={actionsLockedForBilling}
+                          disabled={actionsLockedForBilling || !canAssignSlots}
+                          title={canAssignSlots ? undefined : 'Assigning a facility needs an active paid plan with open slots.'}
                         >
-                          Assign Plan
+                          {canAssignSlots ? 'Assign Plan' : 'Paid plan required'}
                         </Button>
                       )}
                     </div>
@@ -207,9 +210,10 @@ export const BillingPlansView: React.FC<BillingPlansViewProps> = ({
                             <Button
                               size="sm"
                               onClick={() => void onAssignFacility(facility.id)}
-                              disabled={actionsLockedForBilling}
+                              disabled={actionsLockedForBilling || !canAssignSlots}
+                              title={canAssignSlots ? undefined : 'Assigning a facility needs an active paid plan with open slots.'}
                             >
-                              Assign Plan
+                              {canAssignSlots ? 'Assign Plan' : 'Paid plan required'}
                             </Button>
                           )}
                         </td>

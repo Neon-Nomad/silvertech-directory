@@ -3,11 +3,15 @@ import React from 'react';
 import * as jestDomMatchers from '@testing-library/jest-dom/matchers';
 import { expect as vitestExpect } from 'vitest';
 vitestExpect.extend(jestDomMatchers);
-import { describe, expect, it, vi } from 'vitest';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { afterEach, describe, expect, it, vi } from 'vitest';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { DashboardOverview } from '@/features/operator/dashboard/DashboardOverview';
 
 describe('DashboardOverview', () => {
+  afterEach(() => {
+    cleanup();
+  });
+
   it('renders core sections and triggers quick action callbacks', () => {
     const onGoToListings = vi.fn();
     const onGoToLeads = vi.fn();
@@ -57,5 +61,54 @@ describe('DashboardOverview', () => {
     fireEvent.click(screen.getByRole('button', { name: /Complete profile setup/i }));
     expect(onGoToListings).toHaveBeenCalledTimes(0);
     expect(onCompleteProfileSetup).toHaveBeenCalledTimes(1);
+  });
+
+  it('routes the free-plan upgrade CTA to billing and hides it for paid plans', () => {
+    const onGoToBilling = vi.fn();
+
+    const { unmount } = render(
+      <DashboardOverview
+        userProfile={{ plan: 'free' }}
+        onGoToListings={vi.fn()}
+        onCompleteProfileSetup={vi.fn()}
+        onGoToLeads={vi.fn()}
+        onGoToBilling={onGoToBilling}
+        onViewPublicProfile={vi.fn()}
+      />
+    );
+
+    expect(screen.getAllByText('Upgrade your listing').length).toBeGreaterThan(0);
+    fireEvent.click(screen.getByRole('button', { name: /^View plans$/ }));
+    expect(onGoToBilling).toHaveBeenCalledTimes(1);
+    unmount();
+
+    render(
+      <DashboardOverview
+        userProfile={{ plan: 'featured' }}
+        onGoToListings={vi.fn()}
+        onCompleteProfileSetup={vi.fn()}
+        onGoToLeads={vi.fn()}
+        onGoToBilling={vi.fn()}
+        onViewPublicProfile={vi.fn()}
+      />
+    );
+
+    expect(screen.queryByText('Upgrade your listing')).not.toBeInTheDocument();
+  });
+
+  it('shows honest empty states instead of sample inquiries or attribution figures', () => {
+    render(
+      <DashboardOverview
+        userProfile={{ plan: 'free' }}
+        onGoToListings={vi.fn()}
+        onCompleteProfileSetup={vi.fn()}
+        onGoToLeads={vi.fn()}
+        onGoToBilling={vi.fn()}
+        onViewPublicProfile={vi.fn()}
+      />
+    );
+
+    expect(screen.getAllByText(/No family inquiries yet/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Attribution tracking is not connected yet/i).length).toBeGreaterThan(0);
   });
 });
