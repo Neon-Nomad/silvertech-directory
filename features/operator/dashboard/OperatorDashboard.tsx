@@ -294,15 +294,24 @@ const OperatorDashboard: React.FC = () => {
     document.getElementById('upgrade-plans')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // Server-side plan-slot assignment. The database checks ownership and the plan's slot limit; the browser only asks.
+  const applyAssignmentResult = (result: unknown) => {
+    const remaining = (result as { slots_remaining?: number } | null)?.slots_remaining;
+    if (typeof remaining === 'number') {
+      setUserProfile((prev: any) => (prev ? { ...prev, facility_assignments_remaining: remaining } : prev));
+    }
+  };
+
   const handleUnassignFacility = async (facilityId: string) => {
     try {
-      const { error } = await supabase
-        .from('facilities')
-        .update({ assigned_plan_owner_id: null })
-        .eq('id', facilityId)
-        .eq('assigned_plan_owner_id', user?.id);
+      const { data, error } = await supabase.rpc('set_plan_owner_assignment', {
+        p_action: 'release',
+        p_facility_id: facilityId,
+      });
 
       if (error) throw error;
+      applyAssignmentResult(data);
+      setFacilities((prev) => prev.map((f) => (f.id === facilityId ? { ...f, assigned_plan_owner_id: null } : f)));
       setBillingUiError(null);
       await fetchBillingInfo();
     } catch (err) {
@@ -320,25 +329,14 @@ const OperatorDashboard: React.FC = () => {
   };
 
   const handleAssignFacility = async (facilityId: string) => {
-    if (!userProfile?.facility_assignments_remaining || userProfile.facility_assignments_remaining <= 0) {
-      setBillingUiError({
-        code: 'ERR_SLOT_LIMIT',
-        message: `You've reached your limit for the current plan.`,
-      });
-      return;
-    }
-
     try {
-      const newRemaining = userProfile.facility_assignments_remaining - 1;
-      setUserProfile({ ...userProfile, facility_assignments_remaining: newRemaining });
-
-      const { error } = await supabase
-        .from('facilities')
-        .update({ assigned_plan_owner_id: user?.id })
-        .eq('id', facilityId);
+      const { data, error } = await supabase.rpc('set_plan_owner_assignment', {
+        p_action: 'assign',
+        p_facility_id: facilityId,
+      });
 
       if (error) throw error;
-
+      applyAssignmentResult(data);
       setFacilities((prev) => prev.map((f) => (f.id === facilityId ? { ...f, assigned_plan_owner_id: user?.id } : f)));
       setBillingUiError(null);
       await fetchBillingInfo();
