@@ -271,7 +271,10 @@ const buildSearchSnapshot = (options: {
       : options.rawLocation || options.zip
     : options.city && options.stateAbbr
       ? `${options.city}, ${options.stateAbbr}`
-      : stateName || 'the United States';
+      : stateName ||
+        // A typed place with no state ("abc", "Springfield") is not the whole country. Name it as typed.
+        (options.city || options.rawLocation || '') ||
+        'the United States';
 
   return {
     claimMode: options.claimMode,
