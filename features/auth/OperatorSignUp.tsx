@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { AlertCircle, Loader2 } from 'lucide-react';
 import { supabase } from '@/src/lib/supabase';
+import { sendWelcomeEmail } from './sendWelcomeEmail';
 import { Button } from '@/components/ui/Button';
 import { Helmet } from 'react-helmet-async';
 
@@ -68,14 +69,11 @@ const OperatorSignUp: React.FC = () => {
         );
       }
 
-      // Send welcome email via edge function.
-      const { error: functionError } = await supabase.functions.invoke('send-registration-email', {
-        body: { email },
-      });
-
-      if (functionError) {
-        console.error('Failed to send registration email:', functionError);
-        // We can still proceed, but we should log this error
+      // Send the welcome email. Sign-up still succeeds without it, so only log a failure.
+      try {
+        await sendWelcomeEmail(email);
+      } catch (welcomeError) {
+        console.error('Failed to send registration email:', welcomeError);
       }
 
       const needsEmailConfirmation = !data.session && !createdUser.email_confirmed_at;
