@@ -20,6 +20,7 @@ import {
   fetchSavedFacilityIds,
   getQueuedFamilySaveFacilityIds,
   saveFacilityForCurrentUser,
+  unsaveFacilityForCurrentUser,
 } from '@/src/features/family/journey/client';
 
 type SearchFacilityResult = FacilityIndexItem & {
@@ -410,6 +411,29 @@ const SearchResultCard: React.FC<{
   const isInCompare = Boolean(compareId && selectedFacilities.some((item) => item.id === compareId));
   const compareFull = !isInCompare && selectedFacilities.length >= 3;
 
+  const handleRemove = async (facilityId: string) => {
+    setSaveBusy(true);
+    setSaveError(null);
+    onSavedChange(facilityId, false);
+    trackEvent('family_unsave_clicked', {
+      facility_id: facilityId,
+      source_surface: 'search_results',
+      claim_mode: claimMode,
+    });
+    try {
+      const result = await unsaveFacilityForCurrentUser(facilityId);
+      if (result.status === 'error') {
+        onSavedChange(facilityId, true);
+        setSaveError(result.message || 'Unable to remove this facility.');
+      }
+    } catch {
+      onSavedChange(facilityId, true);
+      setSaveError('Unable to remove this facility. Please try again.');
+    } finally {
+      setSaveBusy(false);
+    }
+  };
+
   const handleSave = async () => {
     if (saveBusy || !databaseId || isSaved) return;
     const facilityId = databaseId;
@@ -587,11 +611,18 @@ const SearchResultCard: React.FC<{
             {!claimMode && canSave && (
               <button
                 type="button"
-                onClick={handleSave}
-                disabled={saveBusy || isSaved}
+                onClick={() => (isSaved && databaseId ? handleRemove(databaseId) : handleSave())}
+                aria-pressed={isSaved}
+                disabled={saveBusy}
                 className="inline-flex min-h-11 w-full items-center justify-center rounded-md border border-slate-300 bg-white px-3 py-3 text-center text-xs font-bold uppercase tracking-[0.22em] text-charcoal transition-colors hover:border-charcoal disabled:opacity-60"
               >
-                {saveBusy ? 'Saving…' : isSaved ? 'Saved' : 'Save'}
+                {saveBusy
+                  ? isSaved
+                    ? 'Removing…'
+                    : 'Saving…'
+                  : isSaved
+                    ? 'Remove from saved'
+                    : 'Save'}
               </button>
             )}
             <Link

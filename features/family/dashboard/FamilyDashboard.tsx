@@ -6,6 +6,7 @@ import {
   fetchFamilyDashboardCards,
   getFamilyDashboardFacilityPath,
   markFacilityMovedIn,
+  unsaveFacilityForCurrentUser,
   updateFacilityStatus,
   upsertAttribution,
   upsertFacilityNote,
@@ -138,6 +139,26 @@ export const FamilyDashboard: React.FC = () => {
       setError(String(taskError?.message || 'Unable to save changes.'));
       throw taskError;
     } finally {
+      await reload();
+    }
+  };
+
+  const onRemoveSaved = async (facilityId: string) => {
+    const previous = cards;
+    setWorking(facilityId, true);
+    setError(null);
+    setCards((curr) => curr.filter((card) => card.facilityId !== facilityId));
+    try {
+      const result = await unsaveFacilityForCurrentUser(facilityId);
+      if (result.status === 'error') {
+        throw new Error(result.message || 'Unable to remove this facility.');
+      }
+      trackEvent('family_unsave_success', { facility_id: facilityId, source_surface: 'family_dashboard' });
+    } catch (taskError: any) {
+      setCards(previous);
+      setError(String(taskError?.message || 'Unable to remove this facility.'));
+    } finally {
+      setWorking(facilityId, false);
       await reload();
     }
   };
@@ -440,9 +461,19 @@ export const FamilyDashboard: React.FC = () => {
                         {[card.city, card.state].filter(Boolean).join(', ') || 'Location unavailable'}
                       </p>
                     </div>
-                    <span className="inline-flex rounded-full border border-slate-300 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-charcoal">
-                      {FAMILY_JOURNEY_STATUS_LABELS[currentStatus]}
-                    </span>
+                    <div className="flex flex-wrap items-center gap-3">
+                      <span className="inline-flex rounded-full border border-slate-300 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-charcoal">
+                        {FAMILY_JOURNEY_STATUS_LABELS[currentStatus]}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => onRemoveSaved(card.facilityId)}
+                        disabled={busy}
+                        className="rounded-md border border-slate-300 px-3 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-charcoal hover:border-charcoal disabled:opacity-60"
+                      >
+                        Remove from saved
+                      </button>
+                    </div>
                   </div>
 
                   <div className="mt-6 grid gap-4 md:grid-cols-2">

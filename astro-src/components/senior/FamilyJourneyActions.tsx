@@ -3,6 +3,7 @@ import {
   fetchSavedFacilityIds,
   getQueuedFamilySaveFacilityIds,
   saveFacilityForCurrentUser,
+  unsaveFacilityForCurrentUser,
 } from '../../../src/features/family/journey/client';
 import { trackEvent } from '../../../src/utils/analytics';
 
@@ -41,6 +42,31 @@ export default function FamilyJourneyActions({ facilityId, facilityName, facilit
       cancelled = true;
     };
   }, [facilityUuid]);
+
+  const onRemove = async () => {
+    if (saving || !saved || !facilityUuid) return;
+
+    setSaving(true);
+    setError(null);
+    setSaved(false);
+    trackEvent('family_unsave_clicked', {
+      facility_id: facilityId,
+      source_surface: 'facility_profile',
+    });
+
+    try {
+      const result = await unsaveFacilityForCurrentUser(facilityUuid);
+      if (result.status === 'error') {
+        setSaved(true);
+        setError(result.message || 'Unable to remove this facility.');
+      }
+    } catch {
+      setSaved(true);
+      setError('Unable to remove this facility. Please try again.');
+    } finally {
+      setSaving(false);
+    }
+  };
 
   const onSave = async () => {
     if (saving || saved || !facilityUuid) return;
@@ -116,12 +142,19 @@ export default function FamilyJourneyActions({ facilityId, facilityName, facilit
       <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
         <button
           type="button"
-          onClick={onSave}
-          disabled={saving || saved}
+          onClick={saved ? onRemove : onSave}
+          aria-pressed={saved}
+          disabled={saving}
           className="fp-btn fp-btn-ghost"
           style={{ opacity: saving ? 0.8 : 1 }}
         >
-          {saving ? 'Saving...' : saved ? 'Saved to Dashboard' : 'Save to Dashboard'}
+          {saving
+            ? saved
+              ? 'Removing...'
+              : 'Saving...'
+            : saved
+              ? 'Remove from Dashboard'
+              : 'Save to Dashboard'}
         </button>
         <a className="fp-btn fp-btn-ghost" href="/family/dashboard">
           Open Family Dashboard
