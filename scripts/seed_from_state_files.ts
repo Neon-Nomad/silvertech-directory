@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { createClient } from '@supabase/supabase-js';
 import * as dotenv from 'dotenv';
+import { assertFacilityResetAllowed } from './lib/facilityResetGuard';
 
 dotenv.config();
 
@@ -16,6 +17,14 @@ const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SU
 
 if (!supabaseUrl || !supabaseKey) {
   console.error('Missing Supabase credentials. Ensure .env has VITE_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY.');
+  process.exit(1);
+}
+
+// This script deletes every facility before it reseeds. Refuse before any client is created or any row is touched.
+try {
+  assertFacilityResetAllowed(supabaseUrl, process.env);
+} catch (error) {
+  console.error(error instanceof Error ? error.message : error);
   process.exit(1);
 }
 
