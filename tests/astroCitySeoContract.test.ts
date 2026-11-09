@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-const read = (file: string) => readFileSync(resolve(process.cwd(), file), 'utf8');
+const read = (file: string) => readFileSync(resolve(process.cwd(), file), 'utf8').replace(/\r\n/g, '\n');
 
 describe('astro city seo contract', () => {
   it('keeps care-city canonical URL slash-final and aligned', () => {
@@ -26,7 +26,9 @@ describe('astro city seo contract', () => {
   it('contains crawlable facility links and route-family navigation', () => {
     const cityTemplate = read('astro-src/pages/[care]/[state]/[city]/index.astro');
 
-    expect(cityTemplate).toContain('href={`/${careType.slug}/${cityData.stateSlug}/${cityData.citySlug}/${facility.publicSlug}-${facility.publicRouteId}/`}');
+    expect(cityTemplate).toContain('const getFacilityProfileHref = (facility: (typeof facilities)[number]): string =>');
+    expect(cityTemplate).toContain('`/${facility.primaryCareType}/${facility.stateSlug}/${facility.citySlug}/${facility.publicSlug}-${facility.publicRouteId}/`;');
+    expect(cityTemplate).toContain('href={getFacilityProfileHref(facility)}');
     expect(cityTemplate).toContain('href={`/regulations/${cityData.stateSlug}/`}');
     expect(cityTemplate).toContain('href={`/${careType.slug}/${cityData.stateSlug}/`}');
     expect(cityTemplate).toContain('name: toDisplayName(facility.name),');

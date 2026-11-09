@@ -3,7 +3,7 @@ import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { attachDatabaseFacilityIds, loadMapRows, shardIdentityPath, withDatabaseFacilityId } from '../scripts/lib/facilityClaimIdentity';
 
-const MAP_TSV = fs.readFileSync(path.resolve(process.cwd(), 'data/facility-uuid-map.tsv'), 'utf8');
+const MAP_TSV = fs.readFileSync(path.resolve(process.cwd(), 'data/facility-uuid-map.tsv'), 'utf8').replace(/\r\n/g, '\n');
 const rows = loadMapRows(MAP_TSV);
 
 const guardian = {
@@ -83,7 +83,7 @@ describe('committed shards agree with the committed map', () => {
     let annotated = 0;
     const problems: string[] = [];
     for (const file of shardFiles) {
-      const items = JSON.parse(fs.readFileSync(path.join(shardsDir, file), 'utf8')) as Array<Record<string, any>>;
+      const items = JSON.parse(fs.readFileSync(path.join(shardsDir, file), 'utf8').replace(/\r\n/g, '\n')) as Array<Record<string, any>>;
       for (const item of items) {
         if (item.database_facility_id === undefined) continue;
         annotated += 1;
@@ -100,7 +100,7 @@ describe('committed shards agree with the committed map', () => {
   it('no unresolved or unmatched record carries a UUID', () => {
     let leaked = 0;
     for (const file of shardFiles) {
-      const items = JSON.parse(fs.readFileSync(path.join(shardsDir, file), 'utf8')) as Array<Record<string, any>>;
+      const items = JSON.parse(fs.readFileSync(path.join(shardsDir, file), 'utf8').replace(/\r\n/g, '\n')) as Array<Record<string, any>>;
       for (const item of items) {
         const row = rows.get(shardIdentityPath(item) ?? '');
         if ((!row || row.status !== 'mapped') && item.database_facility_id !== undefined) leaked += 1;

@@ -4,7 +4,7 @@ import { resolve } from 'node:path';
 
 const FACILITY_TEMPLATE = 'astro-src/pages/[care]/[state]/[city]/[facilitySlug].astro';
 
-const read = (file: string) => readFileSync(resolve(process.cwd(), file), 'utf8');
+const read = (file: string) => readFileSync(resolve(process.cwd(), file), 'utf8').replace(/\r\n/g, '\n');
 
 const stripFrontmatter = (source: string) => source.replace(/^---[\s\S]*?---/, '');
 
@@ -67,7 +67,7 @@ describe('seo quality sledgehammer contract', () => {
     expect(facilityTemplate).toContain('<a href={carePageUrl}>{facility.stateName}</a>');
     expect(facilityTemplate).toContain('<a href={cityPageUrl}>{displayCity}</a>');
     expect(facilityTemplate).toContain('<a href={cityPageUrl} class="fp-btn fp-btn-outline">');
-    expect(facilityTemplate).toContain('<a href={carePageUrl} style="color:#ca8a04');
+    expect(facilityTemplate).toContain('<a href={carePageUrl} style="color:#b45309');
   });
 
   it('requires alt text for any future img tags in facility template', () => {

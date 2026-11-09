@@ -3,7 +3,7 @@ import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { parse } from '../scripts/lib/facilityUuidMap';
 
-const read = (rel: string) => fs.readFileSync(path.resolve(process.cwd(), rel), 'utf8');
+const read = (rel: string) => fs.readFileSync(path.resolve(process.cwd(), rel), 'utf8').replace(/\r\n/g, '\n');
 const migrationFile = fs
   .readdirSync(path.resolve(process.cwd(), 'supabase/migrations'))
   .find((f) => f.endsWith('_claim_eligibility_and_ownership_guard.sql'));

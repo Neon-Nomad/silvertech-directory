@@ -11,7 +11,7 @@ const monitorScriptPath = path.resolve(process.cwd(), 'scripts/pipeline_monitor.
 
 describe('data pipeline retry/dead-letter contract', () => {
   it('adds dead-letter storage and retry functions to normalization layer', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
     expect(sql).toContain('create table if not exists public.normalization_dead_letters');
     expect(sql).toContain('alter table public.normalization_records');
     expect(sql).toContain('add column if not exists next_retry_at timestamptz');
@@ -23,13 +23,13 @@ describe('data pipeline retry/dead-letter contract', () => {
   });
 
   it('wires retry script into pipeline run command and monitors dead-letter counts', () => {
-    const pkg = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8')) as {
+    const pkg = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8').replace(/\r\n/g, '\n')) as {
       scripts?: Record<string, string>;
     };
     expect(pkg.scripts?.['pipeline:retry']).toContain('pipeline_retry_dead_letters.ts');
     expect(pkg.scripts?.['pipeline:run']).toContain('pipeline:retry');
 
-    const monitorSource = fs.readFileSync(monitorScriptPath, 'utf8');
+    const monitorSource = fs.readFileSync(monitorScriptPath, 'utf8').replace(/\r\n/g, '\n');
     expect(monitorSource).toContain("from('normalization_dead_letters')");
     expect(monitorSource).toContain('dead_letter_count=');
   });

@@ -9,14 +9,14 @@ const migrationPath = path.resolve(
 
 describe('facility claim approval ownership sync migration', () => {
   it('creates unique approved-claim guard per facility', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create unique index if not exists idx_facility_claims_one_approved_per_facility');
     expect(sql).toContain("where status = 'approved'");
   });
 
   it('syncs approved claims into facility ownership fields', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create or replace function public.sync_facility_ownership_from_claim()');
     expect(sql).toContain("if tg_op = 'INSERT' then");
@@ -27,7 +27,7 @@ describe('facility claim approval ownership sync migration', () => {
   });
 
   it('rejects stale pending claims and wires the trigger', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain("status = 'rejected'");
     expect(sql).toContain("and status = 'pending'");

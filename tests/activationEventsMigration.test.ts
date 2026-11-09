@@ -11,7 +11,7 @@ const contractPath = path.resolve(process.cwd(), 'data-contract.yaml');
 
 describe('operator activation events migration contract', () => {
   it('defines activation analytics contract in data-contract.yaml', () => {
-    const yaml = fs.readFileSync(contractPath, 'utf8');
+    const yaml = fs.readFileSync(contractPath, 'utf8').replace(/\r\n/g, '\n');
     const contract = parse(yaml) as {
       activation_analytics?: {
         table?: string;
@@ -37,7 +37,7 @@ describe('operator activation events migration contract', () => {
   });
 
   it('creates operator activation table with constraints, RLS and indexes', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create table if not exists public.operator_activation_events');
     expect(sql).toContain("event_name in (");
@@ -51,7 +51,7 @@ describe('operator activation events migration contract', () => {
   });
 
   it('ships secure tracking rpc and grants', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create or replace function public.track_operator_activation_event(');
     expect(sql).toContain("raise exception 'Authentication required'");

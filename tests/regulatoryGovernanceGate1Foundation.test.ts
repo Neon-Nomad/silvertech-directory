@@ -17,7 +17,7 @@ describe('regulatory governance gate1 foundation', () => {
     expect(fs.existsSync(gate3ScriptPath)).toBe(true);
     expect(fs.existsSync(runAllScriptPath)).toBe(true);
     expect(fs.existsSync(promoteScriptPath)).toBe(true);
-    const pkg = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8')) as {
+    const pkg = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8').replace(/\r\n/g, '\n')) as {
       scripts?: Record<string, string>;
     };
     expect(pkg.scripts?.['governance:gate1']).toContain('scripts/regulatory_governance/run_gate1.ts');
@@ -28,7 +28,7 @@ describe('regulatory governance gate1 foundation', () => {
   });
 
   it('defines locked check result contract fields and gate IDs', () => {
-    const source = fs.readFileSync(contractPath, 'utf8');
+    const source = fs.readFileSync(contractPath, 'utf8').replace(/\r\n/g, '\n');
     expect(source).toContain('check_id');
     expect(source).toContain('status: CheckStatus');
     expect(source).toContain('severity: CheckSeverity');

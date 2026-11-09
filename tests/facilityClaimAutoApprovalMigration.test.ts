@@ -9,7 +9,7 @@ const migrationPath = path.resolve(
 
 describe('facility claim auto-approval migration contract', () => {
   it('creates trusted auto-approval trigger function', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create or replace function public.auto_approve_facility_claim_if_trusted()');
     expect(sql).toContain("if new.status <> 'pending' then");
@@ -18,7 +18,7 @@ describe('facility claim auto-approval migration contract', () => {
   });
 
   it('requires matching trust signals before auto-approval', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('v_claim_business_email is distinct from v_auth_email');
     expect(sql).toContain('v_has_domain_signal');
@@ -27,7 +27,7 @@ describe('facility claim auto-approval migration contract', () => {
   });
 
   it('registers after-insert trigger on facility_claims', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create trigger trg_auto_approve_facility_claim');
     expect(sql).toContain('after insert on public.facility_claims');

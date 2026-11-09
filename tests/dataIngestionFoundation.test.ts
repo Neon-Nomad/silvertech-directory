@@ -12,7 +12,7 @@ const contractPath = path.resolve(process.cwd(), 'data-contract.yaml');
 
 describe('data ingestion foundation contract', () => {
   it('defines canonical entities and idempotency requirements', () => {
-    const yaml = fs.readFileSync(contractPath, 'utf8');
+    const yaml = fs.readFileSync(contractPath, 'utf8').replace(/\r\n/g, '\n');
     const contract = parse(yaml) as {
       version?: string;
       entities?: Record<string, unknown>;
@@ -50,7 +50,7 @@ describe('data ingestion foundation contract', () => {
   });
 
   it('creates append-only raw ingestion tables and enums', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain("create type public.ingestion_source_system as enum");
     expect(sql).toContain("create type public.canonical_entity_kind as enum");
@@ -63,7 +63,7 @@ describe('data ingestion foundation contract', () => {
   });
 
   it('enforces idempotent ingest and exposes controlled ingest RPC', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain("create unique index if not exists idx_raw_events_source_event_unique");
     expect(sql).toContain("on conflict (source_system, source_event_id)");
