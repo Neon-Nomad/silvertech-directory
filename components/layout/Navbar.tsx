@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ChevronDown, Search } from 'lucide-react';
+import { useAuth } from '@/src/context/AuthProvider';
 
 interface DropdownItem {
   label: string;
-  href: string;
+  href?: string;
+  // An action instead of a link, for items such as Sign out.
+  onSelect?: () => void;
 }
 
 interface NavCategory {
@@ -47,26 +50,31 @@ const NAV_CATEGORIES: NavCategory[] = [
   },
 ];
 
-const ACCOUNT_CATEGORY: NavCategory = {
+const SIGNED_OUT_ACCOUNT: NavCategory = {
   label: 'Sign In',
   items: [
-    { label: 'Family Dashboard', href: '/family/dashboard' },
     { label: 'Family Sign In', href: '/login' },
     { label: 'Facility Sign In', href: '/operator/login' },
   ],
 };
 
-const MOBILE_ACTIONS: NavCategory[] = [
-  ACCOUNT_CATEGORY,
-  {
-    label: 'For Facilities',
-    items: [
-      { label: 'For Facilities Home', href: '/for-facilities' },
-      { label: 'Pricing Plans', href: '/for-facilities/pricing' },
-      { label: 'Why List With Us', href: '/providers' },
-    ],
-  },
-];
+const FOR_FACILITIES_CATEGORY: NavCategory = {
+  label: 'For Facilities',
+  items: [
+    { label: 'For Facilities Home', href: '/for-facilities' },
+    { label: 'Pricing Plans', href: '/for-facilities/pricing' },
+    { label: 'Why List With Us', href: '/providers' },
+  ],
+};
+
+const buildSignedInAccount = (isOperator: boolean, onSignOut: () => void): NavCategory => ({
+  label: 'My account',
+  items: [
+    { label: 'Family Dashboard', href: '/family/dashboard' },
+    ...(isOperator ? [{ label: 'Operator Dashboard', href: '/dashboard' }] : []),
+    { label: 'Sign out', onSelect: onSignOut },
+  ],
+});
 
 const MANIFESTO_HREF = '/about';
 
@@ -90,6 +98,33 @@ const shouldReloadDocument = (href: string): boolean => {
   const normalizedPath = href.split('?')[0].replace(/\/+$/, '') || '/';
   return ASTRO_OWNED_PREFIXES.some(
     (prefix) => normalizedPath === prefix || normalizedPath.startsWith(`${prefix}/`),
+  );
+};
+
+const DropdownItemControl: React.FC<{
+  item: DropdownItem;
+  onClose: () => void;
+  className: string;
+}> = ({ item, onClose, className }) => {
+  if (item.onSelect) {
+    return (
+      <button
+        type="button"
+        onClick={() => {
+          onClose();
+          item.onSelect?.();
+        }}
+        className={`${className} w-full text-left`}
+      >
+        {item.label}
+      </button>
+    );
+  }
+  const href = item.href || '/';
+  return (
+    <Link to={href} reloadDocument={shouldReloadDocument(href)} onClick={onClose} className={className}>
+      {item.label}
+    </Link>
   );
 };
 
@@ -157,15 +192,12 @@ const NavDropdown: React.FC<{
           className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-warm-gray py-2 z-50"
         >
           {menuItems.map((item) => (
-            <Link
+            <DropdownItemControl
               key={item.label}
-              to={item.href}
-              reloadDocument={shouldReloadDocument(item.href)}
-              onClick={onClose}
+              item={item}
+              onClose={onClose}
               className="block px-4 py-2.5 text-sm text-charcoal/70 hover:text-charcoal hover:bg-warm-gray transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1"
-            >
-              {item.label}
-            </Link>
+            />
           ))}
         </div>
       )}
@@ -207,15 +239,12 @@ const MobileNavSection: React.FC<{
       {expanded && (
         <div id={`mobile-submenu-${category.label.toLowerCase().replace(/\s+/g, '-')}`} className="mt-1 ml-3 space-y-1">
           {menuItems.map((item) => (
-            <Link
+            <DropdownItemControl
               key={item.label}
-              to={item.href}
-              reloadDocument={shouldReloadDocument(item.href)}
-              onClick={onClose}
+              item={item}
+              onClose={onClose}
               className="block py-1.5 text-sm text-charcoal/70 hover:text-gold-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
-            >
-              {item.label}
-            </Link>
+            />
           ))}
         </div>
       )}
@@ -225,6 +254,19 @@ const MobileNavSection: React.FC<{
 
 const Navbar: React.FC = () => {
   const [openCategory, setOpenCategory] = useState<string | null>(null);
+  const { user, isOperator, signOut } = useAuth();
+  const navigate = useNavigate();
+
+  const handleSignOut = async () => {
+    await signOut();
+    navigate('/');
+  };
+
+  // The header shows the account menu only when someone is signed in.
+  const accountCategory = user
+    ? buildSignedInAccount(isOperator, handleSignOut)
+    : SIGNED_OUT_ACCOUNT;
+  const mobileActions: NavCategory[] = [accountCategory, FOR_FACILITIES_CATEGORY];
 
   const handleLogoClick = () => {
     window.scrollTo({ top: 0, behavior: 'auto' });
@@ -279,9 +321,9 @@ const Navbar: React.FC = () => {
               <Search className="w-5 h-5" />
             </Link>
             <NavDropdown
-              category={ACCOUNT_CATEGORY}
-              isOpen={openCategory === ACCOUNT_CATEGORY.label}
-              onOpen={() => setOpenCategory(ACCOUNT_CATEGORY.label)}
+              category={accountCategory}
+              isOpen={openCategory === accountCategory.label}
+              onOpen={() => setOpenCategory(accountCategory.label)}
               onClose={() => setOpenCategory(null)}
             />
             <Link
@@ -338,7 +380,7 @@ const Navbar: React.FC = () => {
               >
                 Search Directory
               </Link>
-              {MOBILE_ACTIONS.map((category) => (
+              {mobileActions.map((category) => (
                 <MobileNavSection
                   key={category.label}
                   category={category}
