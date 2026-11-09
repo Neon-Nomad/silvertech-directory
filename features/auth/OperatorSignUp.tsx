@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { AlertCircle, Loader2 } from 'lucide-react';
 import { supabase } from '@/src/lib/supabase';
-import { sendWelcomeEmail } from './sendWelcomeEmail';
 import { Button } from '@/components/ui/Button';
 import { Helmet } from 'react-helmet-async';
 
@@ -67,13 +66,6 @@ const OperatorSignUp: React.FC = () => {
         throw new Error(
           'This email already has an account. Use a different email for operator access, or sign in and request an account role upgrade.',
         );
-      }
-
-      // Send the welcome email. Sign-up still succeeds without it, so only log a failure.
-      try {
-        await sendWelcomeEmail(email);
-      } catch (welcomeError) {
-        console.error('Failed to send registration email:', welcomeError);
       }
 
       const needsEmailConfirmation = !data.session && !createdUser.email_confirmed_at;
