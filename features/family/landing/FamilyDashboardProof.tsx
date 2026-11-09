@@ -76,7 +76,7 @@ export const FamilyDashboardProof: React.FC = () => {
   if (!user || isOperator) {
     return (
       <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-charcoal/55">Family Dashboard</p>
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-charcoal/70">Family Dashboard</p>
         <h3 className="mt-2 font-serif text-2xl font-semibold text-charcoal">Track every decision in one place</h3>
         <p className="mt-3 text-sm text-charcoal/70">
           Save facilities, track status changes, log tours, and confirm moved-in outcomes.
@@ -102,7 +102,7 @@ export const FamilyDashboardProof: React.FC = () => {
   if (loading) {
     return (
       <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-charcoal/55">Family Dashboard</p>
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-charcoal/70">Family Dashboard</p>
         <div className="mt-4 h-4 w-56 animate-pulse rounded bg-slate-200" />
         <div className="mt-3 h-4 w-72 animate-pulse rounded bg-slate-200" />
         <div className="mt-6 space-y-3">
@@ -131,7 +131,7 @@ export const FamilyDashboardProof: React.FC = () => {
   if (cards.length === 0) {
     return (
       <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-charcoal/55">Family Dashboard</p>
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-charcoal/70">Family Dashboard</p>
         <h3 className="mt-2 font-serif text-2xl font-semibold text-charcoal">Start your shortlist</h3>
         <p className="mt-3 text-sm text-charcoal/70">
           Save your first facility to begin tracking notes, tours, and outcomes.
@@ -158,7 +158,7 @@ export const FamilyDashboardProof: React.FC = () => {
     <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-charcoal/55">Family Dashboard</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-charcoal/70">Family Dashboard</p>
           <h3 className="mt-2 font-serif text-2xl font-semibold text-charcoal">Live decision snapshot</h3>
         </div>
         <Link
