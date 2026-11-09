@@ -374,6 +374,8 @@ describe('DirectorySearch', () => {
     renderSearch('/search?location=abc');
 
     expect(await screen.findByRole('heading', { name: /No facilities match "abc"/i })).toBeInTheDocument();
+    // A typed place with no state is not the whole country, so the page must not say so.
+    expect(screen.queryByText(/the United States/i)).not.toBeInTheDocument();
     expect(screen.queryByRole('link', { name: /View (Facility|Community)/i })).not.toBeInTheDocument();
     expect(screen.queryByText('Expand your search nearby')).not.toBeInTheDocument();
     // No unfiltered search, which is what used to return facilities from across the country.
