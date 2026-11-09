@@ -546,12 +546,10 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
         source_screen: 'dashboard_overview',
       },
       {
-        profile_views: onboardingViews,
-        inquiries: onboardingInquiries,
         benchmark_ready: benchmarkReady,
       },
     );
-  }, [benchmarkReady, onboardingInquiries, onboardingViews, user]);
+  }, [benchmarkReady, user]);
 
   React.useEffect(() => {
     if (!user || hasTrackedRoiView.current) return;
@@ -1046,9 +1044,6 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
               <p className="text-sm font-medium text-charcoal">Gathering Data</p>
               <p className="mt-1 text-xs text-charcoal/60">
                 Benchmarks appear after {BENCHMARK_MIN_PROFILE_VIEWS} profile views and {BENCHMARK_MIN_INQUIRIES} inquiries.
-              </p>
-              <p className="mt-2 text-xs text-charcoal/70">
-                Current: {onboardingViews} views, {onboardingInquiries} inquiries.
               </p>
             </div>
           ) : (
