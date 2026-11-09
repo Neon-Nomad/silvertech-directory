@@ -267,8 +267,8 @@ const AstroStaticRoute: React.FC = () => {
 const NotFound: React.FC = () => (
   <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
     <h1 className="text-4xl font-bold text-slate-900 mb-3">Page not found</h1>
-    <p className="text-slate-500 mb-6">The page you're looking for doesn't exist.</p>
-    <a href="/" className="text-amber-600 underline hover:text-amber-700">Back to home</a>
+    <p className="text-slate-600 mb-6">The page you're looking for doesn't exist.</p>
+    <a href="/" className="text-amber-700 underline hover:text-amber-800">Back to home</a>
   </div>
 );
 

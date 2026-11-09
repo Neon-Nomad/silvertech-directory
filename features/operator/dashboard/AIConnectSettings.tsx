@@ -18,7 +18,7 @@ export const AIConnectSettings: React.FC = () => {
         </div>
         <div>
           <h3 className="text-lg font-bold text-slate-900">AI Receptionist Configuration</h3>
-          <p className="text-sm text-slate-500">Manage your 24/7 voice assistant settings.</p>
+          <p className="text-sm text-slate-600">Manage your 24/7 voice assistant settings.</p>
         </div>
       </div>
 
@@ -86,7 +86,7 @@ export const AIConnectSettings: React.FC = () => {
           <div className="space-y-3">
             {[1, 2].map((i) => (
               <div key={i} className="bg-slate-50 p-3 rounded-lg text-sm">
-                <div className="flex justify-between text-xs text-slate-500 mb-1">
+                <div className="flex justify-between text-xs text-slate-600 mb-1">
                   <span>Caller: (555) 987-654{i}</span>
                   <span>Today, 10:3{i} AM</span>
                 </div>

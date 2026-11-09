@@ -252,8 +252,8 @@ export const HonestCarePage: React.FC = () => {
             <table className="min-w-full divide-y divide-slate-200">
               <thead className="bg-slate-50">
                 <tr>
-                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-slate-500 uppercase tracking-wider">Feature</th>
-                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-slate-500 uppercase tracking-wider">Referral Agencies</th>
+                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-slate-600 uppercase tracking-wider">Feature</th>
+                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-slate-600 uppercase tracking-wider">Referral Agencies</th>
                   <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-primary-600 uppercase tracking-wider bg-primary-50">SilverTech Directory</th>
                 </tr>
               </thead>

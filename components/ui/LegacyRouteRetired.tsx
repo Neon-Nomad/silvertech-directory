@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const LegacyRouteRetired: React.FC = () => (
   <div className="min-h-[70vh] bg-warm-gray flex items-center justify-center px-4">
     <div className="max-w-xl rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm">
-      <p className="text-xs uppercase tracking-[0.3em] text-slate-500">410 Gone</p>
+      <p className="text-xs uppercase tracking-[0.3em] text-slate-600">410 Gone</p>
       <h1 className="mt-4 text-3xl font-bold text-slate-900">This URL has been retired</h1>
       <p className="mt-4 text-slate-600">
         SilverTech now serves directory pages on clean care-type routes and community pages under `/community`.

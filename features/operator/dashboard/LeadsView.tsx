@@ -467,7 +467,7 @@ export const LeadsView: React.FC = () => {
                 <h3 className="text-base font-semibold text-slate-900">Family Journey</h3>
                   <MethodologyTrigger metricKey="family_journey" fallbackLabel={KPI_TRUST_LABELS.family_journey} onViewed={trackMethodologyView} />
               </div>
-              <p className="text-[11px] text-slate-500 mt-0.5">{formatAsOfLabel(kpiDataAsOf, 'relative')}</p>
+              <p className="text-[11px] text-slate-600 mt-0.5">{formatAsOfLabel(kpiDataAsOf, 'relative')}</p>
             </div>
             <select
               value={funnelRange}
@@ -538,12 +538,12 @@ export const LeadsView: React.FC = () => {
           <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
             <div className="flex items-start justify-between gap-2 mb-2">
               <div>
-                <p className="text-xs uppercase tracking-wide text-slate-500">Estimated</p>
+                <p className="text-xs uppercase tracking-wide text-slate-600">Estimated</p>
                 <div className="flex items-center gap-1.5">
                   <h3 className="text-base font-semibold text-slate-900">Broker-Free Value</h3>
                   <MethodologyTrigger metricKey="roi_estimated_impact" fallbackLabel={KPI_TRUST_LABELS.roi_estimated_impact} onViewed={trackMethodologyView} />
                 </div>
-                <p className="text-[11px] text-slate-500 mt-0.5">{formatAsOfLabel(kpiDataAsOf, 'absolute')}</p>
+                <p className="text-[11px] text-slate-600 mt-0.5">{formatAsOfLabel(kpiDataAsOf, 'absolute')}</p>
               </div>
               <DollarSign className="w-5 h-5 text-emerald-600" />
             </div>
@@ -569,7 +569,7 @@ export const LeadsView: React.FC = () => {
               </>
             )}
             {benchmark && (
-              <p className="text-xs text-slate-500 mt-1">
+              <p className="text-xs text-slate-600 mt-1">
                 Your weekly signals: {benchmark.your_signals_week}; peer avg: {Number(benchmark.peer_avg_week || 0).toFixed(1)}.
               </p>
             )}
@@ -593,14 +593,14 @@ export const LeadsView: React.FC = () => {
                 onChange={(e) => setBrokerBaselinePercent(Number(e.target.value))}
                 className={`w-full mt-2 ${roiOutsideSafeZone ? 'accent-amber-500' : ''}`}
               />
-              <div className="mt-1 flex items-center justify-between text-[10px] text-slate-500">
+              <div className="mt-1 flex items-center justify-between text-[10px] text-slate-600">
                 <span>{ROI_GUARDRAILS.hardMin}%</span>
                 <span>Safe zone: {ROI_GUARDRAILS.safeMin}% - {ROI_GUARDRAILS.safeMax}%</span>
                 <span>{ROI_GUARDRAILS.hardMax}%</span>
               </div>
             </div>
             <p
-              className="text-xs text-slate-500 mt-3"
+              className="text-xs text-slate-600 mt-3"
               title={`Weights: Tour ${INTENT_WEIGHTS.schedule_tour}x, Phone ${INTENT_WEIGHTS.phone_reveal}x, Directions ${INTENT_WEIGHTS.directions_clicked}x, Compare ${INTENT_WEIGHTS.comparison_added}x`}
             >
               Estimated impact uses weighted lead intent, baseline rate, and average monthly rate.
@@ -614,7 +614,7 @@ export const LeadsView: React.FC = () => {
                   <h3 className="text-base font-semibold text-slate-900">Profile Health</h3>
                   <MethodologyTrigger metricKey="profile_completeness" fallbackLabel={KPI_TRUST_LABELS.profile_completeness} onViewed={trackMethodologyView} />
                 </div>
-                <p className="text-[11px] text-slate-500 mt-0.5">{formatAsOfLabel(kpiDataAsOf, 'absolute')}</p>
+                <p className="text-[11px] text-slate-600 mt-0.5">{formatAsOfLabel(kpiDataAsOf, 'absolute')}</p>
               </div>
               <Shield className="w-5 h-5 text-blue-600" />
             </div>
@@ -690,7 +690,7 @@ export const LeadsView: React.FC = () => {
             >
               Improve profile to increase signal volume
             </button>
-            <p className="text-[11px] text-slate-500 mt-1">Expected benefit: better visibility into what families care about.</p>
+            <p className="text-[11px] text-slate-600 mt-1">Expected benefit: better visibility into what families care about.</p>
           </div>
         ) : (
           <div className="space-y-2">
@@ -700,7 +700,7 @@ export const LeadsView: React.FC = () => {
                   <span className="font-medium text-slate-900">{eventCopy[signal.event_type] || 'New engagement event'}</span>
                   {signal.facilities?.name ? ` - ${signal.facilities.name}` : ''}
                 </div>
-                <div className="text-xs text-slate-500 whitespace-nowrap">
+                <div className="text-xs text-slate-600 whitespace-nowrap">
                   {formatRelativeTime(signal.created_at)}
                 </div>
               </div>
@@ -733,7 +733,7 @@ export const LeadsView: React.FC = () => {
                 >
                   Expand listing coverage
                 </button>
-                <p className="text-[11px] text-slate-500 mt-1">Expected benefit: capture demand where options are currently limited.</p>
+                <p className="text-[11px] text-slate-600 mt-1">Expected benefit: capture demand where options are currently limited.</p>
               </div>
             </div>
           ) : (
@@ -746,7 +746,7 @@ export const LeadsView: React.FC = () => {
                     <div key={lead.id} className="px-4 py-4 space-y-2">
                       <div className="flex items-center justify-between gap-3">
                         <p className="text-sm font-semibold text-slate-900">{lead.requested_location || '-'}</p>
-                        <p className="text-xs text-slate-500">{new Date(lead.created_at).toLocaleDateString()}</p>
+                        <p className="text-xs text-slate-600">{new Date(lead.created_at).toLocaleDateString()}</p>
                       </div>
                       <p className="text-xs text-slate-600">Care: {lead.care_type || '-'}</p>
                       <p className="text-xs text-slate-600">Budget: {lead.budget || '-'}</p>
@@ -805,7 +805,7 @@ export const LeadsView: React.FC = () => {
                               )}
                             </div>
                           </td>
-                          <td className="px-6 py-4 text-slate-500 whitespace-nowrap">
+                          <td className="px-6 py-4 text-slate-600 whitespace-nowrap">
                             {new Date(lead.created_at).toLocaleDateString()}
                           </td>
                           <td className="px-6 py-4">
@@ -831,7 +831,7 @@ export const LeadsView: React.FC = () => {
       {leads.length === 0 ? (
         <div className="bg-white p-12 rounded-xl shadow-sm border border-slate-200 text-center">
           <h3 className="text-lg font-medium text-slate-900 mb-2">No leads yet</h3>
-          <p className="text-slate-500">Families have not submitted direct inquiries yet.</p>
+          <p className="text-slate-600">Families have not submitted direct inquiries yet.</p>
           <button
             className="mt-4 text-sm font-semibold text-primary-700 hover:text-primary-800 underline"
             onClick={() => {
@@ -841,7 +841,7 @@ export const LeadsView: React.FC = () => {
           >
             Complete your listing profile
           </button>
-          <p className="mt-2 text-xs text-slate-500">Expected benefit: more qualified inquiries from families actively searching.</p>
+          <p className="mt-2 text-xs text-slate-600">Expected benefit: more qualified inquiries from families actively searching.</p>
         </div>
       ) : (
         <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
@@ -850,7 +850,7 @@ export const LeadsView: React.FC = () => {
               <div key={lead.id} className="px-4 py-4 space-y-2">
                 <div className="flex items-start justify-between gap-3">
                   <p className="text-sm font-semibold text-slate-900">{lead.name}</p>
-                  <p className="text-xs text-slate-500">{new Date(lead.created_at).toLocaleDateString()}</p>
+                  <p className="text-xs text-slate-600">{new Date(lead.created_at).toLocaleDateString()}</p>
                 </div>
                 <p className="text-xs text-slate-600">{lead.facilities?.name || 'Facility'}</p>
                 <div className="flex flex-col gap-1">
@@ -901,7 +901,7 @@ export const LeadsView: React.FC = () => {
                     <td className="px-6 py-4 text-slate-600 max-w-xs truncate" title={lead.message || ''}>
                       {lead.message || '-'}
                     </td>
-                    <td className="px-6 py-4 text-slate-500 whitespace-nowrap">
+                    <td className="px-6 py-4 text-slate-600 whitespace-nowrap">
                       <div className="flex items-center gap-2">
                         <Calendar className="w-3 h-3" />
                         {new Date(lead.created_at).toLocaleDateString()}

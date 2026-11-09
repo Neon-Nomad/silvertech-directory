@@ -170,7 +170,7 @@ export const StatePageTemplate: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <Breadcrumbs items={breadcrumbItems} />
           <div className="mt-6 max-w-4xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">State Directory</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600">State Directory</p>
             <h1 className="mt-3 text-4xl font-bold text-slate-900">
               {careTypeLabel} in {stateDef.name}
             </h1>
@@ -230,9 +230,9 @@ export const StatePageTemplate: React.FC = () => {
         <div className="mb-10">
           <h2 className="text-2xl font-bold text-slate-900 mb-5">Top cities in {stateDef.name}</h2>
           {loading ? (
-            <div className="rounded-xl border border-slate-200 bg-white p-8 text-center text-slate-500">Loading city directories...</div>
+            <div className="rounded-xl border border-slate-200 bg-white p-8 text-center text-slate-600">Loading city directories...</div>
           ) : cities.length === 0 ? (
-            <div className="rounded-xl border border-slate-200 bg-white p-8 text-center text-slate-500">
+            <div className="rounded-xl border border-slate-200 bg-white p-8 text-center text-slate-600">
               No primary {careTypeLabel.toLowerCase()} listings are available in this state yet.
             </div>
           ) : (
@@ -245,7 +245,7 @@ export const StatePageTemplate: React.FC = () => {
                 >
                   <div className="flex items-center justify-between gap-4">
                     <div>
-                      <div className="flex items-center gap-2 text-slate-500">
+                      <div className="flex items-center gap-2 text-slate-600">
                         <MapPin className="h-4 w-4" />
                         <span className="text-xs uppercase tracking-[0.2em]">{stateDef.abbreviation}</span>
                       </div>
@@ -273,7 +273,7 @@ export const StatePageTemplate: React.FC = () => {
                   className="rounded-lg border border-slate-200 px-4 py-3 text-sm text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
                 >
                   <span className="font-medium">{city.city}</span>
-                  <span className="ml-2 text-slate-500">{city.count}</span>
+                  <span className="ml-2 text-slate-600">{city.count}</span>
                 </Link>
               ))}
             </div>

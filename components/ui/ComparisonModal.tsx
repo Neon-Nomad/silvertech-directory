@@ -27,7 +27,7 @@ export const ComparisonModal: React.FC = () => {
               <h3 className="text-2xl font-bold text-slate-900">Compare Facilities</h3>
               <button
                 onClick={() => setIsOpen(false)}
-                className="bg-white rounded-md text-slate-400 hover:text-slate-500 focus:outline-none"
+                className="bg-white rounded-md text-slate-400 hover:text-slate-600 focus:outline-none"
               >
                 <X size={24} />
               </button>
@@ -66,7 +66,7 @@ export const ComparisonModal: React.FC = () => {
                         >
                           {facility.name}
                         </Link>
-                        <div className="text-sm text-slate-500 flex items-center">
+                        <div className="text-sm text-slate-600 flex items-center">
                           <MapPin size={14} className="mr-1" />
                           {facility.city}, {facility.state}
                         </div>
@@ -90,9 +90,9 @@ export const ComparisonModal: React.FC = () => {
                     {selectedFacilities.map((f) => (
                       <td key={f.id} className="p-4">
                         {f.price && f.price !== 'Call for Pricing' ? (
-                          <span className="font-bold text-primary-600">{f.price}<span className="text-xs text-slate-500 font-normal">/mo</span></span>
+                          <span className="font-bold text-primary-600">{f.price}<span className="text-xs text-slate-600 font-normal">/mo</span></span>
                         ) : (
-                          <span className="text-slate-500 italic">Contact for pricing</span>
+                          <span className="text-slate-600 italic">Contact for pricing</span>
                         )}
                       </td>
                     ))}

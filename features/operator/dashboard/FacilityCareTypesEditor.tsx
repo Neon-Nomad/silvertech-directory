@@ -123,7 +123,7 @@ export const FacilityCareTypesEditor: React.FC<FacilityCareTypesEditorProps> = (
                   {careType.name}
                 </span>
                 {careType.description && (
-                  <span className="text-sm text-slate-500 leading-relaxed">
+                  <span className="text-sm text-slate-600 leading-relaxed">
                     {careType.description}
                   </span>
                 )}

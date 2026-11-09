@@ -38,13 +38,13 @@ export const ReviewList: React.FC<ReviewListProps> = ({ facilityId, refreshTrigg
   }, [facilityId, refreshTrigger]);
 
   if (loading) {
-    return <div className="py-4 text-center text-slate-500">Loading reviews...</div>;
+    return <div className="py-4 text-center text-slate-600">Loading reviews...</div>;
   }
 
   if (reviews.length === 0) {
     return (
       <div className="py-8 text-center bg-slate-50 rounded-xl border border-slate-100 border-dashed">
-        <p className="text-slate-500">No reviews yet. Be the first to share your experience!</p>
+        <p className="text-slate-600">No reviews yet. Be the first to share your experience!</p>
       </div>
     );
   }
@@ -55,12 +55,12 @@ export const ReviewList: React.FC<ReviewListProps> = ({ facilityId, refreshTrigg
         <div key={review.id} className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
           <div className="flex items-start justify-between mb-4">
             <div className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500">
+              <div className="h-10 w-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600">
                 <User className="h-5 w-5" />
               </div>
               <div>
                 <p className="font-medium text-slate-900">Verified Resident / Family</p>
-                <p className="text-xs text-slate-500">
+                <p className="text-xs text-slate-600">
                   {new Date(review.created_at).toLocaleDateString()}
                 </p>
               </div>

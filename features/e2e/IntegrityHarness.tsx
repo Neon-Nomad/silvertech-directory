@@ -41,7 +41,7 @@ export const IntegrityHarness: React.FC = () => {
           onChange={(e) => setBaseline(Number(e.target.value))}
           className={`w-full ${outsideSafeZone ? 'accent-amber-500' : ''}`}
         />
-        <p className="text-xs text-slate-500">
+        <p className="text-xs text-slate-600">
           Safe zone: {guardrails.safeMin}% - {guardrails.safeMax}%
         </p>
         {outsideSafeZone ? (

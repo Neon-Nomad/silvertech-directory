@@ -783,7 +783,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
                 <p className="mt-1 text-xs text-charcoal/70">Track your progress to trusted-provider status.</p>
               )}
             </div>
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/20 text-gold">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/20 text-gold-text">
               <Trophy className="h-5 w-5" />
             </div>
           </div>
@@ -998,15 +998,15 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
           </div>
           <div className="space-y-3 text-sm text-charcoal/70">
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-4 w-4 text-gold" />
+              <CheckCircle className="h-4 w-4 text-gold-text" />
               Featured placement in results
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-4 w-4 text-gold" />
+              <CheckCircle className="h-4 w-4 text-gold-text" />
               Enhanced visibility across the directory
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-4 w-4 text-gold" />
+              <CheckCircle className="h-4 w-4 text-gold-text" />
               Priority support for family inquiries
             </div>
           </div>

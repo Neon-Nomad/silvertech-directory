@@ -358,7 +358,7 @@ const STATE_SEARCH_EXAMPLES: Record<string, { cityState: string; zip: string }> 
 
 const pillStyles = {
   care: 'border-charcoal bg-white text-charcoal',
-  trust: 'border-gold/50 bg-gold/10 text-gold',
+  trust: 'border-gold/50 bg-gold/10 text-gold-text',
   neutral: 'border-slate-200 bg-white text-charcoal/70',
 } as const;
 
@@ -471,7 +471,7 @@ const SearchResultCard: React.FC<{
           <div className="flex flex-wrap items-start gap-3">
             <div className="min-w-0 flex-1">
               <h2 className="font-serif text-2xl font-bold text-charcoal">
-                <Link className="transition-colors hover:text-gold" to={communityPath}>
+                <Link className="transition-colors hover:text-gold-text" to={communityPath}>
                   {facility.name}
                 </Link>
               </h2>
@@ -504,7 +504,7 @@ const SearchResultCard: React.FC<{
 
           <div className="mt-6 grid gap-5 text-sm font-medium text-charcoal/70 md:grid-cols-3">
             <div className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold-text" />
               <span>
                 {facility.address_line1 ? `${facility.address_line1}, ` : ''}
                 <br className={facility.address_line1 ? '' : 'hidden'} />
@@ -512,11 +512,11 @@ const SearchResultCard: React.FC<{
               </span>
             </div>
             <div className="flex items-center gap-3">
-              <Phone className="h-4 w-4 shrink-0 text-gold" />
+              <Phone className="h-4 w-4 shrink-0 text-gold-text" />
               <span>{facility.phone || 'Phone not listed'}</span>
             </div>
             <div className="flex items-center gap-3">
-              <Globe2 className="h-4 w-4 shrink-0 text-gold" />
+              <Globe2 className="h-4 w-4 shrink-0 text-gold-text" />
               {facility.website_url ? (
                 <a
                   className="underline decoration-gold/30 underline-offset-4 transition-all hover:decoration-gold"
@@ -527,21 +527,21 @@ const SearchResultCard: React.FC<{
                   {facility.website_url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
                 </a>
               ) : (
-                <span className="text-charcoal/45">Website not listed</span>
+                <span className="text-charcoal/70">Website not listed</span>
               )}
             </div>
           </div>
 
-          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 border-t border-slate-200 pt-5 text-[11px] font-bold uppercase tracking-[0.22em] text-charcoal/45">
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 border-t border-slate-200 pt-5 text-[11px] font-bold uppercase tracking-[0.22em] text-charcoal/70">
             {facility.licenseNumber && (
               <div className="flex items-center gap-2">
-                <Hash className="h-3.5 w-3.5 text-gold" />
+                <Hash className="h-3.5 w-3.5 text-gold-text" />
                 <span>License: {facility.licenseNumber}</span>
               </div>
             )}
             {facility.certifiedBeds !== null && (
               <div className="flex items-center gap-2">
-                <BedDouble className="h-3.5 w-3.5 text-gold" />
+                <BedDouble className="h-3.5 w-3.5 text-gold-text" />
                 <span>Certified Beds: {facility.certifiedBeds}</span>
               </div>
             )}
@@ -1355,7 +1355,7 @@ const DirectorySearch: React.FC = () => {
       <div className="border-b border-black/5 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
           {!claimMode && lastSearch?.locationLabel && (
-            <div className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-gold">
+            <div className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-gold-text">
               <MapPin className="h-4 w-4" />
               <span>{lastSearch.locationLabel}</span>
             </div>
@@ -1411,7 +1411,7 @@ const DirectorySearch: React.FC = () => {
                         onMouseDown={() => handleSuggestionSelect(suggestion)}
                       >
                         <span>{suggestion.label}</span>
-                        <span className="text-xs uppercase tracking-[0.2em] text-charcoal/45">
+                        <span className="text-xs uppercase tracking-[0.2em] text-charcoal/70">
                           {suggestion.type === 'zip' ? 'ZIP' : suggestion.type === 'state' ? 'State' : 'City'}
                         </span>
                       </button>

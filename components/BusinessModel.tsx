@@ -17,7 +17,7 @@ export const BusinessModel: React.FC = () => {
             <Layers size={24} />
           </div>
           <h3 className="text-lg font-bold text-slate-900 mb-2">Layer 1: SaaS Core</h3>
-          <p className="text-sm text-slate-500 font-medium mb-4 uppercase tracking-wide">Recurring Subscription</p>
+          <p className="text-sm text-slate-600 font-medium mb-4 uppercase tracking-wide">Recurring Subscription</p>
           <ul className="space-y-3 mb-8 flex-grow">
             {['Tiered Pricing ($0 - $499+)', 'Pricing & Availability Control', 'CRM & Waitlist Manager', 'Multi-location Dashboard', 'Reputation Management'].map((feature, i) => (
               <li key={i} className="flex items-start text-sm text-slate-600">
@@ -35,7 +35,7 @@ export const BusinessModel: React.FC = () => {
             <Bot size={24} />
           </div>
           <h3 className="text-lg font-bold text-slate-900 mb-2">Layer 2: AI Engine</h3>
-          <p className="text-sm text-slate-500 font-medium mb-4 uppercase tracking-wide">Automation Add-ons</p>
+          <p className="text-sm text-slate-600 font-medium mb-4 uppercase tracking-wide">Automation Add-ons</p>
           <ul className="space-y-3 mb-8 flex-grow">
             {['AI Phone Receptionist', 'AI Chat Assistant', 'Follow-up Sequencer', 'AI Family Q&A', 'Tour Reminders'].map((feature, i) => (
               <li key={i} className="flex items-start text-sm text-slate-600">
@@ -52,7 +52,7 @@ export const BusinessModel: React.FC = () => {
             <ShoppingBag size={24} />
           </div>
           <h3 className="text-lg font-bold text-slate-900 mb-2">Layer 3: Marketplace</h3>
-          <p className="text-sm text-slate-500 font-medium mb-4 uppercase tracking-wide">Ancillary Revenue</p>
+          <p className="text-sm text-slate-600 font-medium mb-4 uppercase tracking-wide">Ancillary Revenue</p>
           <ul className="space-y-3 mb-8 flex-grow">
             {['Movers & Downsizing', 'Estate Lawyers', 'Medicare Advisory', 'Insurance Partners'].map((feature, i) => (
               <li key={i} className="flex items-start text-sm text-slate-600">

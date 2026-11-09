@@ -59,7 +59,7 @@ export const StateOmbudsmanPage: React.FC = () => {
           />
 
           <div className="mt-6">
-            <Link to={`/states/${stateDef.slug}`} className="inline-flex items-center text-sm text-slate-500 hover:text-primary-600 mb-4">
+            <Link to={`/states/${stateDef.slug}`} className="inline-flex items-center text-sm text-slate-600 hover:text-primary-600 mb-4">
               <ArrowLeft className="w-4 h-4 mr-1" /> Back to {stateDef.name} Overview
             </Link>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">

@@ -33,18 +33,18 @@ export const HospitalList: React.FC<HospitalListProps> = ({ hospitals, cityName:
           <div key={idx} className="border-b border-slate-100 last:border-0 pb-3 last:pb-0">
             <h4 className="font-semibold text-slate-800 text-sm mb-1">{hospital.name}</h4>
             
-            <div className="flex items-start gap-2 text-xs text-slate-500 mb-1">
+            <div className="flex items-start gap-2 text-xs text-slate-600 mb-1">
               <MapPin size={12} className="mt-0.5 flex-shrink-0" />
               <span>{hospital.address}, {hospital.city}</span>
             </div>
 
-            <div className="flex items-center gap-2 text-xs text-slate-500 mb-1">
+            <div className="flex items-center gap-2 text-xs text-slate-600 mb-1">
               <Building2 size={12} className="flex-shrink-0" />
               <span>{hospital.type}</span>
             </div>
 
             {hospital.phone && (
-              <div className="flex items-center gap-2 text-xs text-slate-500">
+              <div className="flex items-center gap-2 text-xs text-slate-600">
                 <Phone size={12} className="flex-shrink-0" />
                 <a href={`tel:${hospital.phone}`} className="hover:text-primary-600 transition-colors">
                   {hospital.phone}

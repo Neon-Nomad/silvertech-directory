@@ -178,7 +178,7 @@ export const FamilyDashboardProof: React.FC = () => {
         {cards.slice(0, 2).map((card) => (
           <article key={card.facilityId} className="rounded-lg border border-slate-200 p-4">
             <div className="flex flex-wrap items-start justify-between gap-2">
-              <Link to={getFamilyDashboardFacilityPath(card)} className="text-sm font-semibold text-charcoal hover:text-gold">
+              <Link to={getFamilyDashboardFacilityPath(card)} className="text-sm font-semibold text-charcoal hover:text-gold-text">
                 {card.facilityName}
               </Link>
               <span className="inline-flex rounded-full border border-slate-300 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.16em] text-charcoal">

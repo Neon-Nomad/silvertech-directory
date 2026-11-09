@@ -188,7 +188,7 @@ const EmotionalSupportCatalog: React.FC = () => {
             <div className="px-6 py-5 border-b border-slate-100 flex items-start gap-3">
               <div className="mt-1">{category.icon}</div>
               <div>
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">{category.label}</p>
+                <p className="text-xs font-semibold text-slate-600 uppercase tracking-wide">{category.label}</p>
                 <h2 className="text-2xl font-bold text-slate-900">{category.headline}</h2>
                 <p className="text-slate-600 mt-1">{category.description}</p>
               </div>
@@ -203,7 +203,7 @@ const EmotionalSupportCatalog: React.FC = () => {
                   </div>
                   <div className="flex items-center gap-4 shrink-0">
                     <div className="text-right">
-                      <p className="text-sm text-slate-500">PDF</p>
+                      <p className="text-sm text-slate-600">PDF</p>
                       <p className="text-xl font-bold text-slate-900">{product.price}</p>
                     </div>
                     <a href={links[product.slug] || product.downloadUrl} target="_blank" rel="noreferrer">

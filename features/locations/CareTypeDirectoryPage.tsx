@@ -123,7 +123,7 @@ export const CareTypeDirectoryPage: React.FC = () => {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Care Type Directory</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-slate-600">Care Type Directory</p>
             <h1 className="mt-3 text-4xl font-bold text-slate-900">{careTypeLabel} by state</h1>
             <p className="mt-4 text-lg text-slate-600">
               Browse clean state-level landing pages for {careTypeLabel.toLowerCase()} and drill into city markets from there.
@@ -134,7 +134,7 @@ export const CareTypeDirectoryPage: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {loading ? (
-          <div className="rounded-xl border border-slate-200 bg-white p-12 text-center text-slate-500">
+          <div className="rounded-xl border border-slate-200 bg-white p-12 text-center text-slate-600">
             Loading state coverage...
           </div>
         ) : (
@@ -147,7 +147,7 @@ export const CareTypeDirectoryPage: React.FC = () => {
               >
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <div className="flex items-center gap-2 text-slate-500">
+                    <div className="flex items-center gap-2 text-slate-600">
                       <MapPin className="h-4 w-4" />
                       <span className="text-xs uppercase tracking-[0.2em]">{state.stateAbbr}</span>
                     </div>

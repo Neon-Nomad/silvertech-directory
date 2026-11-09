@@ -28,7 +28,7 @@ export const MethodologyPage: React.FC = () => {
             We publish our methodology so families understand exactly how we source data, verify facilities,
             and keep rankings independent of payments or referral fees.
           </p>
-          <div className="mt-5 flex items-center gap-3 text-sm text-slate-500">
+          <div className="mt-5 flex items-center gap-3 text-sm text-slate-600">
             <span className="inline-flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-primary-600" />
               Last updated: February 10, 2026

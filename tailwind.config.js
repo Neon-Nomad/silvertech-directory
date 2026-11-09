@@ -15,6 +15,8 @@ export default {
             colors: {
                 charcoal: '#2D2D2D',
                 gold: '#b88749',
+                // Darker gold for text. The brand gold is about 3:1 on white, below the 4.5:1 text minimum.
+                'gold-text': '#8f6330',
                 'warm-white': '#FDFCF9',
                 'warm-gray': '#F5F3EF',
                 slate: {

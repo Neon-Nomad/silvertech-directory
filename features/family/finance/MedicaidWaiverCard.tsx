@@ -51,16 +51,16 @@ export const MedicaidWaiverCard: React.FC<MedicaidWaiverCardProps> = ({ waiver }
           </h4>
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <p className="text-xs text-slate-500 uppercase tracking-wide font-medium">Monthly Income Limit</p>
+              <p className="text-xs text-slate-600 uppercase tracking-wide font-medium">Monthly Income Limit</p>
               <p className="text-slate-900 font-bold">{waiver.financial_eligibility.income_limit}</p>
             </div>
             <div>
-              <p className="text-xs text-slate-500 uppercase tracking-wide font-medium">Asset Limit</p>
+              <p className="text-xs text-slate-600 uppercase tracking-wide font-medium">Asset Limit</p>
               <p className="text-slate-900 font-bold">{waiver.financial_eligibility.asset_limit}</p>
             </div>
           </div>
           {waiver.financial_eligibility.notes && (
-            <p className="text-xs text-slate-500 mt-2 italic border-t border-slate-200 pt-2">
+            <p className="text-xs text-slate-600 mt-2 italic border-t border-slate-200 pt-2">
               Note: {waiver.financial_eligibility.notes}
             </p>
           )}

@@ -105,7 +105,7 @@ const ReviewsModal: React.FC<ReviewsModalProps> = ({ isOpen, onClose, facilityNa
                     <div className="flex items-center justify-between mb-2">
                       <div>
                         <p className="font-semibold text-slate-900">{review.reviewerName}</p>
-                        <p className="text-sm text-slate-500">{review.date}</p>
+                        <p className="text-sm text-slate-600">{review.date}</p>
                       </div>
                       {renderStars(review.rating)}
                     </div>

@@ -17,7 +17,7 @@ export const WhyThisExistsPage: React.FC = () => {
 
       <section className="bg-white border-b border-warm-gray">
         <div className="max-w-[960px] mx-auto px-6 py-16 md:py-20 text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.3em] text-gold mb-4">Our Story</p>
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-gold-text mb-4">Our Story</p>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">Why This Directory Exists</h1>
           <div className="w-20 h-1 bg-gold rounded-full mx-auto mt-6" />
         </div>
@@ -71,7 +71,7 @@ export const WhyThisExistsPage: React.FC = () => {
           </div>
 
           <div className="max-w-3xl mx-auto mt-8 rounded-xl border-2 border-gold/50 bg-gold/5 px-5 py-4 flex items-start gap-3">
-            <AlertTriangle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
+            <AlertTriangle className="w-5 h-5 text-gold-text mt-0.5 flex-shrink-0" />
             <p className="text-charcoal/80 text-sm">
               Ask every directory or advisor a simple question: &ldquo;How are you paid for recommendations?&rdquo; Transparency matters.
             </p>
@@ -110,7 +110,7 @@ export const WhyThisExistsPage: React.FC = () => {
               },
             ].map((item) => (
               <article key={item.title} className="rounded-xl border border-warm-gray bg-white p-6">
-                <item.icon className="w-6 h-6 text-gold mb-4" />
+                <item.icon className="w-6 h-6 text-gold-text mb-4" />
                 <h3 className="font-semibold text-charcoal mb-2">{item.title}</h3>
                 <p className="text-sm text-charcoal/70">{item.body}</p>
               </article>

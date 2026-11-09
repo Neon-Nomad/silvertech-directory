@@ -221,9 +221,9 @@ export const MyFacilities: React.FC = () => {
             </span>
           </div>
           {reviewerLoading ? (
-            <p className="mt-4 text-sm text-slate-500">Loading review queue...</p>
+            <p className="mt-4 text-sm text-slate-600">Loading review queue...</p>
           ) : reviewClaims.length === 0 ? (
-            <p className="mt-4 text-sm text-slate-500">No pending claims right now.</p>
+            <p className="mt-4 text-sm text-slate-600">No pending claims right now.</p>
           ) : (
             <div className="mt-4 space-y-3">
               {reviewClaims.map((claim) => (
@@ -236,7 +236,7 @@ export const MyFacilities: React.FC = () => {
                     <p className="text-xs text-slate-600">
                       {claim.business_email || 'No business email provided'} {claim.phone ? `| ${claim.phone}` : ''}
                     </p>
-                    <p className="text-xs text-slate-500">
+                    <p className="text-xs text-slate-600">
                       Submitted {new Date(claim.created_at).toLocaleString()}
                     </p>
                   </div>
@@ -340,7 +340,7 @@ export const MyFacilities: React.FC = () => {
       {filteredFacilities.length === 0 ? (
         <div className="rounded-xl border border-slate-200 bg-white p-12 text-center">
           <h3 className="mb-2 text-lg font-semibold text-slate-900">No facilities match your filters</h3>
-          <p className="mb-6 text-slate-500">Try updating search or status filters, or search by ZIP to claim your facility.</p>
+          <p className="mb-6 text-slate-600">Try updating search or status filters, or search by ZIP to claim your facility.</p>
           <Button variant="outline" className="min-h-11" onClick={() => navigate('/search?claim=1')}>
             Search By ZIP To Claim
           </Button>
@@ -372,7 +372,7 @@ export const MyFacilities: React.FC = () => {
                     </p>
                   </div>
                   <div className="flex items-center justify-between border-y border-slate-100 py-3 text-sm">
-                    <span className="text-slate-500">
+                    <span className="text-slate-600">
                       Last updated:{' '}
                       {facility.updated_at ? new Date(facility.updated_at).toLocaleDateString() : 'Not set'}
                     </span>
@@ -416,7 +416,7 @@ export const MyFacilities: React.FC = () => {
       )}
 
       <div className="flex flex-col items-center gap-6 border-t border-slate-200 pt-8">
-        <p className="text-sm text-slate-500">
+        <p className="text-sm text-slate-600">
           Showing {filteredFacilities.length} of {facilities.length} facilities
         </p>
       </div>

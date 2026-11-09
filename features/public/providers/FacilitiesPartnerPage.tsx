@@ -132,7 +132,7 @@ export const FacilitiesPartnerPage: React.FC = () => {
                     Free listing
                   </span>
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">The Baseline</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-600 mb-2">The Baseline</p>
                 <ul className="text-sm text-slate-600 space-y-2">
                   <li>Show verified facility contact and service basics</li>
                   <li>Appear in city and state discovery results</li>
@@ -143,9 +143,9 @@ export const FacilitiesPartnerPage: React.FC = () => {
               <div className="border rounded-lg p-4">
                 <div className="flex items-center justify-between mb-3">
                   <span className="font-semibold text-slate-900">Protector</span>
-                  <span className="text-xs font-semibold text-slate-500">$99/mo</span>
+                  <span className="text-xs font-semibold text-slate-600">$99/mo</span>
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">For Brand-Conscious Operators</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-600 mb-2">For Brand-Conscious Operators</p>
                 <ul className="text-sm text-slate-700 space-y-2">
                   <li className="flex items-center gap-2">
                     <BadgeCheck className="w-4 h-4 text-primary-600" /> Verify operator identity and profile ownership
@@ -166,7 +166,7 @@ export const FacilitiesPartnerPage: React.FC = () => {
                     Most Popular
                   </span>
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">For Growth-Focused Teams</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-600 mb-2">For Growth-Focused Teams</p>
                 <ul className="text-sm text-slate-700 space-y-2">
                   <li className="flex items-center gap-2">
                     <TrendingUp className="w-4 h-4 text-primary-600" /> Capture no-results demand with Express Interest prompts
@@ -178,14 +178,14 @@ export const FacilitiesPartnerPage: React.FC = () => {
                     <Target className="w-4 h-4 text-primary-600" /> Add high-intent tour CTAs on results where families decide
                   </li>
                 </ul>
-                <p className="mt-3 text-xs text-slate-500">$249/mo</p>
+                <p className="mt-3 text-xs text-slate-600">$249/mo</p>
               </div>
               <div className="border rounded-lg p-4">
                 <div className="flex items-center justify-between mb-3">
                   <span className="font-semibold text-slate-900">Dominator</span>
-                  <span className="text-xs font-semibold text-slate-500">$499/mo</span>
+                  <span className="text-xs font-semibold text-slate-600">$499/mo</span>
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">For Market Leaders</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-600 mb-2">For Market Leaders</p>
                 <ul className="text-sm text-slate-700 space-y-2">
                   <li className="flex items-center gap-2">
                     <BarChart3 className="w-4 h-4 text-primary-600" /> Gain market intelligence on local comparison behavior
@@ -265,7 +265,7 @@ export const FacilitiesPartnerPage: React.FC = () => {
                 <p className="text-2xl font-semibold text-rose-900 mt-2">{currency.format(referralMath.annualReferralTax)}</p>
               </div>
               <div className="rounded-lg border border-slate-200 bg-white p-4">
-                <p className="text-xs uppercase tracking-widest text-slate-500 font-semibold">SilverTech Annual Cost</p>
+                <p className="text-xs uppercase tracking-widest text-slate-600 font-semibold">SilverTech Annual Cost</p>
                 <p className="text-2xl font-semibold text-slate-900 mt-2">{currency.format(referralMath.annualSilverTechCost)}</p>
               </div>
               <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-4">
@@ -273,11 +273,11 @@ export const FacilitiesPartnerPage: React.FC = () => {
                 <p className="text-2xl font-semibold text-emerald-900 mt-2">{currency.format(referralMath.netSavings)}</p>
               </div>
               <div className="rounded-lg border border-slate-200 bg-white p-4">
-                <p className="text-xs uppercase tracking-widest text-slate-500 font-semibold">Break-even Move-ins</p>
+                <p className="text-xs uppercase tracking-widest text-slate-600 font-semibold">Break-even Move-ins</p>
                 <p className="text-2xl font-semibold text-slate-900 mt-2">{referralMath.breakEvenMoveIns}</p>
               </div>
             </div>
-            <p className="text-xs text-slate-500 mt-4">
+            <p className="text-xs text-slate-600 mt-4">
               Estimate only. Actual referral agreements and conversion economics vary by market and contract terms.
             </p>
           </Card>

@@ -104,7 +104,7 @@ const NavDropdown: React.FC<{
       <Link
         to={category.href}
         reloadDocument={shouldReloadDocument(category.href)}
-        className="text-sm font-medium text-charcoal hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
+        className="text-sm font-medium text-charcoal hover:text-gold-text transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
       >
         {category.label}
       </Link>
@@ -143,7 +143,7 @@ const NavDropdown: React.FC<{
         aria-haspopup="menu"
         aria-controls={`nav-menu-${category.label.toLowerCase().replace(/\s+/g, '-')}`}
         className={`flex items-center gap-1 text-sm font-medium transition-colors ${
-          isOpen ? 'text-gold' : 'text-charcoal hover:text-gold'
+          isOpen ? 'text-gold-text' : 'text-charcoal hover:text-gold-text'
         }`}
       >
         {category.label}
@@ -183,7 +183,7 @@ const MobileNavSection: React.FC<{
         to={category.href}
         reloadDocument={shouldReloadDocument(category.href)}
         onClick={onClose}
-        className="block py-1.5 text-sm font-semibold text-charcoal hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
+        className="block py-1.5 text-sm font-semibold text-charcoal hover:text-gold-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
       >
         {category.label}
       </Link>
@@ -212,7 +212,7 @@ const MobileNavSection: React.FC<{
               to={item.href}
               reloadDocument={shouldReloadDocument(item.href)}
               onClick={onClose}
-              className="block py-1.5 text-sm text-charcoal/70 hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
+              className="block py-1.5 text-sm text-charcoal/70 hover:text-gold-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
             >
               {item.label}
             </Link>
@@ -334,7 +334,7 @@ const Navbar: React.FC = () => {
               <Link
                 to="/search"
                 onClick={() => setOpenCategory(null)}
-                className="block py-1.5 text-sm font-semibold text-charcoal hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
+                className="block py-1.5 text-sm font-semibold text-charcoal hover:text-gold-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-1 rounded"
               >
                 Search Directory
               </Link>

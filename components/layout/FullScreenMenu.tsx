@@ -169,7 +169,7 @@ const RegulatoryContent = ({ onClose }: { onClose: () => void }) => (
     </div>
 
     <div className="border-t border-slate-200 pt-6">
-      <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Browse by State</h3>
+      <h3 className="text-sm font-semibold text-slate-600 uppercase tracking-wide mb-4">Browse by State</h3>
       <div className="grid grid-cols-4 gap-2">
         {US_STATES.map(state => (
           <Link

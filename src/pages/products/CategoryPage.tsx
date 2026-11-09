@@ -76,7 +76,7 @@ export const CategoryPage: React.FC = () => {
             Independent recommendations curated to help families save time, confusion, and money. 
             No commissions. No pay-to-rank.
           </p>
-          <p className="text-sm text-slate-500">
+          <p className="text-sm text-slate-600">
             {categoryMeta.tagline}
           </p>
         </div>
@@ -90,7 +90,7 @@ export const CategoryPage: React.FC = () => {
               <ProductCard key={index} {...product} />
             ))
           ) : (
-            <div className="col-span-full text-center py-12 text-slate-500 bg-white rounded-lg border border-slate-200 border-dashed">
+            <div className="col-span-full text-center py-12 text-slate-600 bg-white rounded-lg border border-slate-200 border-dashed">
               <p className="mb-2">No products available in this category yet.</p>
               <p className="text-sm">Check back soon for our curated list.</p>
             </div>

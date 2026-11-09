@@ -197,7 +197,7 @@ export const Home: React.FC = () => {
                             onMouseDown={() => handleSuggestionSelect(suggestion)}
                           >
                             <span>{suggestion.label}</span>
-                            <span className="text-sm text-slate-500 uppercase">
+                            <span className="text-sm text-slate-600 uppercase">
                               {suggestion.type === 'zip' ? 'ZIP' : suggestion.type === 'state' ? 'State' : 'City'}
                             </span>
                           </button>
@@ -271,7 +271,7 @@ export const Home: React.FC = () => {
         {/* ── Section 2: The SilverTech Standard ── */}
         <section className="py-20 bg-warm-gray" style={deferredSectionStyle}>
           <div className="max-w-[1200px] mx-auto px-6">
-            <h2 className="text-center text-sm font-bold uppercase tracking-[0.3em] text-gold mb-12">
+            <h2 className="text-center text-sm font-bold uppercase tracking-[0.3em] text-gold-text mb-12">
               The SilverTech Standard
             </h2>
             <div className="grid md:grid-cols-4 gap-8">
@@ -298,7 +298,7 @@ export const Home: React.FC = () => {
                 },
               ].map((item) => (
                 <div key={item.title} className="space-y-4">
-                  <item.icon className="w-6 h-6 text-gold" />
+                  <item.icon className="w-6 h-6 text-gold-text" />
                   <h3 className="font-bold text-lg">{item.title}</h3>
                   <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
                 </div>
@@ -373,7 +373,7 @@ export const Home: React.FC = () => {
                   'Dining and Lifestyle Amenities',
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-gold-text flex-shrink-0" />
                     <span className="text-sm font-semibold">{item}</span>
                   </div>
                 ))}
@@ -408,7 +408,7 @@ export const Home: React.FC = () => {
                     <div className="w-2.5 h-2.5 rounded-full bg-slate-300" />
                     <div className="w-2.5 h-2.5 rounded-full bg-slate-300" />
                   </div>
-                  <div className="flex-1 mx-4 bg-white rounded-md px-3 py-1 text-xs text-slate-500 border border-slate-200">
+                  <div className="flex-1 mx-4 bg-white rounded-md px-3 py-1 text-xs text-slate-600 border border-slate-200">
                     silvertechdirectory.com/search
                   </div>
                 </div>
@@ -416,12 +416,12 @@ export const Home: React.FC = () => {
                 <div className="p-5">
                   {/* Header row */}
                   <div className="grid grid-cols-4 gap-3 mb-4">
-                    <div className="text-xs font-bold uppercase tracking-widest text-slate-500 pt-2">Metrics</div>
+                    <div className="text-xs font-bold uppercase tracking-widest text-slate-600 pt-2">Metrics</div>
                     {['Sunrise Manor', 'Oakwood Gardens', 'Harbor View'].map((name) => (
                       <div key={name} className="bg-warm-gray rounded-lg p-3 text-center">
                         <div className="w-8 h-8 bg-slate-200 rounded-full mx-auto mb-2" />
                         <p className="text-sm font-bold text-charcoal leading-tight">{name}</p>
-                        <p className="text-xs text-slate-500 mt-0.5">Indianapolis, IN</p>
+                        <p className="text-xs text-slate-600 mt-0.5">Indianapolis, IN</p>
                       </div>
                     ))}
                   </div>
@@ -436,14 +436,14 @@ export const Home: React.FC = () => {
                       <div className="text-sm font-semibold text-slate-600">{row.label}</div>
                       {row.values.map((val, i) => (
                         <div key={i} className="text-center">
-                          <span className={`text-[12px] font-bold ${row.highlight ? 'text-gold' : 'text-charcoal'}`}>{val}</span>
+                          <span className={`text-[12px] font-bold ${row.highlight ? 'text-gold-text' : 'text-charcoal'}`}>{val}</span>
                         </div>
                       ))}
                     </div>
                   ))}
                   {/* CTA row */}
                   <div className="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center">
-                    <span className="text-xs text-slate-500">Comparing 3 of 3 communities</span>
+                    <span className="text-xs text-slate-600">Comparing 3 of 3 communities</span>
                     <div className="bg-charcoal text-white text-xs font-bold px-4 py-1.5 rounded-md">
                       View Full Report
                     </div>
@@ -498,8 +498,8 @@ export const Home: React.FC = () => {
                   className="p-8 bg-white border-2 border-slate-300 rounded-xl shadow-sm hover:shadow-lg transition-shadow"
                 >
                   <h3 className="font-bold text-xl mb-3">{card.title}</h3>
-                  <p className="text-sm text-slate-500 mb-4">{card.desc}</p>
-                  <span className="text-gold font-bold text-sm inline-flex items-center gap-1">
+                  <p className="text-sm text-slate-600 mb-4">{card.desc}</p>
+                  <span className="text-gold-text font-bold text-sm inline-flex items-center gap-1">
                     {card.cta} <ArrowRight className="w-4 h-4" />
                   </span>
                 </a>
@@ -526,7 +526,7 @@ export const Home: React.FC = () => {
                   <Link
                     key={st}
                     to={href}
-                    className="bg-white/10 px-3 py-1.5 rounded text-sm font-bold hover:text-gold transition-colors"
+                    className="bg-white/10 px-3 py-1.5 rounded text-sm font-bold hover:text-gold-text transition-colors"
                   >
                     {st}
                   </Link>
@@ -537,7 +537,7 @@ export const Home: React.FC = () => {
             <div className="border-t border-white/10 pt-8">
               <Link
                 to="/states"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-gold transition-colors"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-gold-text transition-colors"
               >
                 Browse all states
                 <ArrowRight className="w-4 h-4" />
@@ -562,7 +562,7 @@ export const Home: React.FC = () => {
               ))}
               <Link
                 to="/states"
-                className="text-sm font-medium py-3 px-4 min-h-11 bg-slate-100 text-slate-500 rounded text-center hover:bg-slate-200 transition-colors flex items-center justify-center"
+                className="text-sm font-medium py-3 px-4 min-h-11 bg-slate-100 text-slate-600 rounded text-center hover:bg-slate-200 transition-colors flex items-center justify-center"
               >
                 View All 50
               </Link>
@@ -581,13 +581,13 @@ export const Home: React.FC = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-12">
               <div className="flex flex-col items-center">
-                <div className="w-24 h-24 mb-4 border-2 border-gold rounded-full flex flex-col items-center justify-center text-gold">
+                <div className="w-24 h-24 mb-4 border-2 border-gold rounded-full flex flex-col items-center justify-center text-gold-text">
                   <ShieldCheck className="w-10 h-10" />
                 </div>
                 <span className="text-sm font-bold uppercase tracking-widest">Accuracy Badge</span>
               </div>
               <div className="flex flex-col items-center">
-                <div className="w-24 h-24 mb-4 border-2 border-gold rounded-full flex flex-col items-center justify-center text-gold">
+                <div className="w-24 h-24 mb-4 border-2 border-gold rounded-full flex flex-col items-center justify-center text-gold-text">
                   <BadgeCheck className="w-10 h-10" />
                 </div>
                 <span className="text-sm font-bold uppercase tracking-widest">Integrity Badge</span>
@@ -612,19 +612,19 @@ export const Home: React.FC = () => {
             <div>
               <h3 className="font-bold text-sm uppercase tracking-widest mb-6">Search</h3>
               <ul className="space-y-3 text-sm text-slate-600">
-                <li><Link to="/states" className="hover:text-gold">Browse by State</Link></li>
+                <li><Link to="/states" className="hover:text-gold-text">Browse by State</Link></li>
               </ul>
             </div>
           </div>
           <div className="pt-8 border-t border-slate-100 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-slate-500">
+            <p className="text-sm text-slate-600">
               &copy; {new Date().getFullYear()} SilverTech Directory. All rights reserved.
             </p>
-            <div className="flex gap-6 text-sm text-slate-500">
-              <Link to="/why-this-exists" className="hover:text-gold">Why This Exists</Link>
-              <Link to="/editorial-policy" className="hover:text-gold">Editorial Policy</Link>
-              <Link to="/honest-care" className="hover:text-gold">Honest Care</Link>
-              <a href="mailto:andrew@silvertechdirectory.com" className="hover:text-gold">Email</a>
+            <div className="flex gap-6 text-sm text-slate-600">
+              <Link to="/why-this-exists" className="hover:text-gold-text">Why This Exists</Link>
+              <Link to="/editorial-policy" className="hover:text-gold-text">Editorial Policy</Link>
+              <Link to="/honest-care" className="hover:text-gold-text">Honest Care</Link>
+              <a href="mailto:andrew@silvertechdirectory.com" className="hover:text-gold-text">Email</a>
             </div>
           </div>
         </div>
@@ -632,7 +632,7 @@ export const Home: React.FC = () => {
 
       {/* ── Mobile Bottom Bar ── */}
       <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-6 py-3 flex justify-center items-center z-50 md:hidden">
-        <button onClick={() => navigate('/states')} className="flex flex-col items-center text-gold">
+        <button onClick={() => navigate('/states')} className="flex flex-col items-center text-gold-text">
           <Search className="w-5 h-5" />
           <span className="text-xs font-semibold uppercase tracking-widest mt-1">States</span>
         </button>

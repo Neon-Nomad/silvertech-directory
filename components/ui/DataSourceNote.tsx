@@ -11,12 +11,12 @@ export const DataSourceNote: React.FC<DataSourceNoteProps> = ({
   showEditorialLink = true
 }) => {
   return (
-    <div className="text-xs text-slate-500 bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">
+    <div className="text-xs text-slate-600 bg-slate-50 border border-slate-200 rounded-lg px-4 py-3">
       <span className="font-medium text-slate-600">Data source:</span> {note}
       {showEditorialLink ? (
         <>
           {' '}Learn more in our{' '}
-          <Link to="/editorial-policy" className="text-gold hover:underline">
+          <Link to="/editorial-policy" className="text-gold-text hover:underline">
             Editorial Policy
           </Link>
           .

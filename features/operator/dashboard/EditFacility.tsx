@@ -479,10 +479,10 @@ export const EditFacility: React.FC = () => {
         <div className="rounded-xl border border-slate-200 bg-white p-4">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm text-slate-500">Profile Health</p>
+              <p className="text-sm text-slate-600">Profile Health</p>
               <p className="text-xl font-bold text-slate-900">{profileHealth.percentage}% complete</p>
               {versioningEnabled && (
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-slate-600 mt-1">
                   {draftVersionNo ? `Draft v${draftVersionNo}` : 'No draft'}
                   {publishedVersionNo ? ` • Live v${publishedVersionNo}` : ''}
                 </p>
@@ -530,7 +530,7 @@ export const EditFacility: React.FC = () => {
                     className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500"
                     placeholder="Describe your facility, amenities, and what makes it special..."
                   />
-                  <p className="text-xs text-slate-500 mt-1 text-right">
+                  <p className="text-xs text-slate-600 mt-1 text-right">
                     {formData.description.length} characters
                   </p>
                 </div>
@@ -540,7 +540,7 @@ export const EditFacility: React.FC = () => {
             {/* Tour Features */}
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
               <h2 className="text-lg font-bold text-slate-900 mb-1">Tour & Scheduling</h2>
-              <p className="text-sm text-slate-500 mb-4">Help families take the next step. Both fields are optional.</p>
+              <p className="text-sm text-slate-600 mb-4">Help families take the next step. Both fields are optional.</p>
               <div className="space-y-4">
                 <div>
                   <label htmlFor="tour_scheduling_url" className="block text-sm font-medium text-slate-700 mb-1">
@@ -555,7 +555,7 @@ export const EditFacility: React.FC = () => {
                     className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500"
                     placeholder="https://calendly.com/your-community"
                   />
-                  <p className="text-xs text-slate-500 mt-1">Calendly, Acuity, or any booking page. Shown as a "Book a Tour" button on your profile.</p>
+                  <p className="text-xs text-slate-600 mt-1">Calendly, Acuity, or any booking page. Shown as a "Book a Tour" button on your profile.</p>
                 </div>
                 <div>
                   <label htmlFor="virtual_tour_url" className="block text-sm font-medium text-slate-700 mb-1">
@@ -570,7 +570,7 @@ export const EditFacility: React.FC = () => {
                     className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500"
                     placeholder="https://my.matterport.com/show/..."
                   />
-                  <p className="text-xs text-slate-500 mt-1">YouTube, Matterport, Tourweaver, or any 360° tour link.</p>
+                  <p className="text-xs text-slate-600 mt-1">YouTube, Matterport, Tourweaver, or any 360° tour link.</p>
                 </div>
               </div>
             </div>
@@ -659,7 +659,7 @@ export const EditFacility: React.FC = () => {
                 <div>
                   <label htmlFor="min_price_mobile" className="block text-sm font-medium text-slate-700 mb-1">Minimum Monthly Cost</label>
                   <div className="relative">
-                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-600">$</span>
                     <input
                       id="min_price_mobile"
                       type="number"
@@ -677,7 +677,7 @@ export const EditFacility: React.FC = () => {
                 <div>
                   <label htmlFor="max_price_mobile" className="block text-sm font-medium text-slate-700 mb-1">Maximum Monthly Cost</label>
                   <div className="relative">
-                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-600">$</span>
                     <input
                       id="max_price_mobile"
                       type="number"
@@ -698,22 +698,22 @@ export const EditFacility: React.FC = () => {
             {/* Mobile Location (Read Only) */}
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 lg:hidden">
               <h2 className="text-lg font-bold text-slate-900 mb-4">Location</h2>
-              <p className="text-sm text-slate-500 mb-4">To update your address, please contact support.</p>
+              <p className="text-sm text-slate-600 mb-4">To update your address, please contact support.</p>
               <div className="space-y-3 bg-slate-50 p-4 rounded-lg">
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 uppercase">Address</label>
+                  <label className="block text-xs font-medium text-slate-600 uppercase">Address</label>
                   <p className="text-slate-900">{formData.address_line1}</p>
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 uppercase">City</label>
+                  <label className="block text-xs font-medium text-slate-600 uppercase">City</label>
                   <p className="text-slate-900">{formData.city}</p>
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 uppercase">State</label>
+                  <label className="block text-xs font-medium text-slate-600 uppercase">State</label>
                   <p className="text-slate-900">{formData.state}</p>
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 uppercase">Zip Code</label>
+                  <label className="block text-xs font-medium text-slate-600 uppercase">Zip Code</label>
                   <p className="text-slate-900">{formData.postal_code}</p>
                 </div>
               </div>
@@ -736,7 +736,7 @@ export const EditFacility: React.FC = () => {
                   : 'Save updates to keep your listing accurate and visible to families.'}
               </p>
               {versioningEnabled && (
-                <div className="mb-3 text-xs text-slate-500">
+                <div className="mb-3 text-xs text-slate-600">
                   {draftVersionNo ? `Draft v${draftVersionNo}` : 'No draft'}
                   {publishedVersionNo ? ` • Live v${publishedVersionNo}` : ''}
                 </div>
@@ -800,7 +800,7 @@ export const EditFacility: React.FC = () => {
                 <div>
                   <label htmlFor="min_price" className="block text-sm font-medium text-slate-700 mb-1">Minimum Monthly Cost</label>
                   <div className="relative">
-                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-600">$</span>
                     <input
                       id="min_price"
                       type="number"
@@ -818,7 +818,7 @@ export const EditFacility: React.FC = () => {
                 <div>
                   <label htmlFor="max_price" className="block text-sm font-medium text-slate-700 mb-1">Maximum Monthly Cost</label>
                   <div className="relative">
-                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">$</span>
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-600">$</span>
                     <input
                       id="max_price"
                       type="number"
@@ -839,22 +839,22 @@ export const EditFacility: React.FC = () => {
             {/* Location (Read Only) */}
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
               <h2 className="text-lg font-bold text-slate-900 mb-4">Location</h2>
-              <p className="text-sm text-slate-500 mb-4">To update your address, please contact support.</p>
+              <p className="text-sm text-slate-600 mb-4">To update your address, please contact support.</p>
               <div className="space-y-3 bg-slate-50 p-4 rounded-lg">
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 uppercase">Address</label>
+                  <label className="block text-xs font-medium text-slate-600 uppercase">Address</label>
                   <p className="text-slate-900">{formData.address_line1}</p>
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 uppercase">City</label>
+                  <label className="block text-xs font-medium text-slate-600 uppercase">City</label>
                   <p className="text-slate-900">{formData.city}</p>
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 uppercase">State</label>
+                  <label className="block text-xs font-medium text-slate-600 uppercase">State</label>
                   <p className="text-slate-900">{formData.state}</p>
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 uppercase">Zip Code</label>
+                  <label className="block text-xs font-medium text-slate-600 uppercase">Zip Code</label>
                   <p className="text-slate-900">{formData.postal_code}</p>
                 </div>
               </div>
@@ -879,7 +879,7 @@ export const EditFacility: React.FC = () => {
               </div>
               <button
                 type="button"
-                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg text-slate-500 hover:bg-slate-100"
+                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg text-slate-600 hover:bg-slate-100"
                 onClick={() => setShowMobileHealth(false)}
                 aria-label="Close"
               >

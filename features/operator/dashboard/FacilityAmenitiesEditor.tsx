@@ -111,7 +111,7 @@ export const FacilityAmenitiesEditor: React.FC<FacilityAmenitiesEditorProps> = (
       <div className="space-y-8">
         {Object.entries(groupedAmenities).map(([category, amenities]) => (
           <div key={category}>
-            <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3 border-b border-slate-100 pb-2">
+            <h3 className="text-sm font-semibold text-slate-600 uppercase tracking-wider mb-3 border-b border-slate-100 pb-2">
               {category}
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">

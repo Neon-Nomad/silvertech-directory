@@ -432,7 +432,7 @@ export const FamilyDashboard: React.FC = () => {
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div>
                       <h2 className="font-serif text-2xl font-semibold text-charcoal">
-                        <Link className="hover:text-gold" to={facilityPath}>
+                        <Link className="hover:text-gold-text" to={facilityPath}>
                           {card.facilityName}
                         </Link>
                       </h2>
