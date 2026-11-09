@@ -15,7 +15,6 @@ export const ACTIVATION_EVENT_NAMES = [
   'roi_tooltip_opened',
   'premium_cta_viewed',
   'premium_cta_clicked',
-  'premium_trial_started',
   'empty_state_viewed',
   'empty_state_action_clicked',
   'methodology_viewed',

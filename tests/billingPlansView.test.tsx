@@ -130,8 +130,13 @@ describe('BillingPlansView', () => {
     expect(screen.getByRole('button', { name: /Current Plan/i })).toBeDisabled();
   });
 
-  it('disables assignment on the free plan with a clear paid-plan message', () => {
+  it('explains the free-plan limit and points assignment rows to View plans', () => {
     const onAssignFacility = vi.fn(async () => undefined);
+    const scrollSpy = vi.fn();
+    const plans = document.createElement('div');
+    plans.id = 'upgrade-plans';
+    plans.scrollIntoView = scrollSpy;
+    document.body.appendChild(plans);
 
     render(
       <BillingPlansView
@@ -147,14 +152,19 @@ describe('BillingPlansView', () => {
       />
     );
 
+    expect(screen.getAllByText(/Free listings include no plan slots/i).length).toBeGreaterThan(0);
     expect(screen.queryByRole('button', { name: /^Assign Plan$/ })).not.toBeInTheDocument();
-    const blocked = screen.getAllByRole('button', { name: /Paid plan required/i });
-    expect(blocked.length).toBeGreaterThan(0);
-    blocked.forEach((button) => expect(button).toBeDisabled());
+    const viewPlans = screen.getAllByRole('button', { name: /^View plans$/ });
+    expect(viewPlans.length).toBeGreaterThan(0);
+    viewPlans.forEach((button) => expect(button).toBeEnabled());
+
+    fireEvent.click(viewPlans[0]);
+    expect(scrollSpy).toHaveBeenCalledTimes(1);
     expect(onAssignFacility).not.toHaveBeenCalled();
+    plans.remove();
   });
 
-  it('disables assignment on a paid plan whose billing is not active', () => {
+  it('pauses new assignments on a paid plan whose billing is not active', () => {
     render(
       <BillingPlansView
         userId="u-1"
@@ -169,8 +179,8 @@ describe('BillingPlansView', () => {
       />
     );
 
-    const blocked = screen.getAllByRole('button', { name: /Paid plan required/i });
-    expect(blocked.length).toBeGreaterThan(0);
-    blocked.forEach((button) => expect(button).toBeDisabled());
+    expect(screen.getAllByText(/New assignments are paused while billing needs attention/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Paused until billing is active').length).toBeGreaterThan(0);
+    expect(screen.queryByRole('button', { name: /^Assign Plan$/ })).not.toBeInTheDocument();
   });
 });

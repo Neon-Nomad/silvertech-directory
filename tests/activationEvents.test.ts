@@ -14,7 +14,7 @@ describe('activationEvents contract', () => {
   it('includes canonical activation funnel milestones', () => {
     expect(ACTIVATION_EVENT_NAMES).toContain('operator_claim_completed');
     expect(ACTIVATION_EVENT_NAMES).toContain('operator_activation_screen_viewed');
-    expect(ACTIVATION_EVENT_NAMES).toContain('premium_trial_started');
+    expect(ACTIVATION_EVENT_NAMES).not.toContain('premium_trial_started');
   });
 
   it('keeps required event context keys stable', () => {
