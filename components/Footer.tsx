@@ -33,25 +33,25 @@ export const Footer: React.FC = () => {
           <div className="mb-4 md:mb-0 text-xs text-charcoal/60">
             SilverTech never profits from your decision. Facilities pay a subscription, not referral fees.
           </div>
-          <Link to="/products" className="hover:text-primary-600 transition-colors">
+          <Link to="/products" className="hover:text-primary-700 transition-colors">
             Product Catalog
           </Link>
-          <Link to="/why-this-exists" className="hover:text-primary-600 transition-colors">
+          <Link to="/why-this-exists" className="hover:text-primary-700 transition-colors">
             Why This Exists
           </Link>
-          <Link to="/honest-care" className="hover:text-primary-600 transition-colors">
+          <Link to="/honest-care" className="hover:text-primary-700 transition-colors">
             Honest Care Policy
           </Link>
-          <Link to="/methodology" className="hover:text-primary-600 transition-colors">
+          <Link to="/methodology" className="hover:text-primary-700 transition-colors">
             Methodology
           </Link>
-          <Link to="/for-facilities" className="hover:text-primary-600 transition-colors">
+          <Link to="/for-facilities" className="hover:text-primary-700 transition-colors">
             For Facilities
           </Link>
-          <Link to="/editorial-policy" className="hover:text-primary-600 transition-colors">
+          <Link to="/editorial-policy" className="hover:text-primary-700 transition-colors">
             Editorial Policy
           </Link>
-          <a href="mailto:andrew@silvertechdirectory.com" className="hover:text-primary-600 transition-colors">
+          <a href="mailto:andrew@silvertechdirectory.com" className="hover:text-primary-700 transition-colors">
             andrew@silvertechdirectory.com
           </a>
         </div>

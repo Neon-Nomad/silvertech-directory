@@ -234,7 +234,7 @@ export const ForProvidersPage: React.FC = () => {
                   key={feature.title}
                   className="p-6 rounded-2xl border border-slate-200 hover:border-primary-200 hover:shadow-lg transition-all"
                 >
-                  <div className="w-12 h-12 bg-primary-100 text-primary-600 rounded-xl flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-primary-100 text-primary-700 rounded-xl flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 mb-2">{feature.title}</h3>

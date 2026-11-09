@@ -19,7 +19,7 @@ export const Comparison: React.FC = () => {
         <div className="grid grid-cols-3 bg-slate-50 p-6 border-b border-slate-200">
           <div className="font-medium text-slate-600">Feature</div>
           <div className="font-bold text-slate-900 text-center">Legacy Incumbents</div>
-          <div className="font-bold text-primary-600 text-center">SilverTech</div>
+          <div className="font-bold text-primary-700 text-center">SilverTech</div>
         </div>
         
         {features.map((item, index) => (

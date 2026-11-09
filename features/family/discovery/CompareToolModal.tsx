@@ -382,7 +382,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
 
               <div className="mt-4 bg-warm-gray border border-slate-200 rounded-xl p-3 text-sm text-slate-700">
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary-600 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-primary-700 mt-0.5" />
                   <span>Matches prioritize care type overlap, price range, and city proximity.</span>
                 </div>
               </div>

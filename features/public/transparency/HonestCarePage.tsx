@@ -86,7 +86,7 @@ export const HonestCarePage: React.FC = () => {
       <div className="bg-slate-50 border-b border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <div className="inline-flex items-center justify-center p-3 bg-white rounded-full shadow-sm mb-6">
-            <Shield className="w-8 h-8 text-primary-600" />
+            <Shield className="w-8 h-8 text-primary-700" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
             Why Transparency Matters in Senior Care
@@ -191,7 +191,7 @@ export const HonestCarePage: React.FC = () => {
         {/* SilverTech Difference */}
         <section>
           <h2 className="text-3xl font-bold text-slate-900 mb-8 flex items-center gap-3">
-            <CheckCircle className="w-8 h-8 text-primary-600" />
+            <CheckCircle className="w-8 h-8 text-primary-700" />
             What Makes SilverTech Different
           </h2>
           <p className="text-xl text-slate-600 mb-8">
@@ -254,7 +254,7 @@ export const HonestCarePage: React.FC = () => {
                 <tr>
                   <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-slate-600 uppercase tracking-wider">Feature</th>
                   <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-slate-600 uppercase tracking-wider">Referral Agencies</th>
-                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-primary-600 uppercase tracking-wider bg-primary-50">SilverTech Directory</th>
+                  <th scope="col" className="px-6 py-4 text-left text-sm font-bold text-primary-700 uppercase tracking-wider bg-primary-50">SilverTech Directory</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-slate-200">

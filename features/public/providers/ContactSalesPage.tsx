@@ -137,7 +137,7 @@ export const ContactSalesPage: React.FC = () => {
             <div className="bg-primary-50 p-6 rounded-xl border border-primary-100">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center shrink-0">
-                  <Phone className="w-5 h-5 text-primary-600" />
+                  <Phone className="w-5 h-5 text-primary-700" />
                 </div>
                 <div>
                   <h4 className="font-bold text-primary-900">Prefer to talk now?</h4>

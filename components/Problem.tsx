@@ -19,7 +19,7 @@ export const Problem: React.FC = () => {
       description: "Supply-side operators lack digital tools. They rely on spreadsheets and fax machines, leading to lost leads and inaccurate vacancy data.",
       color: "primary",
       gradient: "from-primary-50 to-primary-100",
-      iconColor: "text-primary-600",
+      iconColor: "text-primary-700",
       borderColor: "group-hover:border-primary-200"
     },
     {
@@ -28,7 +28,7 @@ export const Problem: React.FC = () => {
       description: "Families face opaque pricing and confusing options. They are overwhelmed by aggressive sales calls from lead aggregators selling their data.",
       color: "secondary",
       gradient: "from-primary-50 to-primary-100",
-      iconColor: "text-primary-600",
+      iconColor: "text-primary-700",
       borderColor: "group-hover:border-primary-200"
     }
   ];
@@ -63,7 +63,7 @@ export const Problem: React.FC = () => {
             <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
               <item.icon className={`w-7 h-7 ${item.iconColor}`} />
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-primary-600 transition-colors">{item.title}</h3>
+            <h3 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-primary-700 transition-colors">{item.title}</h3>
             <p className="text-slate-600 leading-relaxed">{item.description}</p>
           </div>
         ))}

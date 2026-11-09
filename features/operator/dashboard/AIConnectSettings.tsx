@@ -14,7 +14,7 @@ export const AIConnectSettings: React.FC = () => {
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
       <div className="flex items-center gap-3 mb-6">
         <div className="p-2 bg-primary-100 rounded-lg">
-          <Bot className="w-6 h-6 text-primary-600" />
+          <Bot className="w-6 h-6 text-primary-700" />
         </div>
         <div>
           <h3 className="text-lg font-bold text-slate-900">AI Receptionist Configuration</h3>
@@ -46,7 +46,7 @@ export const AIConnectSettings: React.FC = () => {
             rows={3}
             className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500"
           />
-          <div className="mt-2 flex items-center gap-2 text-sm text-primary-600 cursor-pointer hover:text-primary-700">
+          <div className="mt-2 flex items-center gap-2 text-sm text-primary-700 cursor-pointer hover:text-primary-700">
             <Play className="w-4 h-4" /> Preview Audio
           </div>
         </div>
@@ -71,7 +71,7 @@ export const AIConnectSettings: React.FC = () => {
                 type="checkbox"
                 checked={settings.afterHours}
                 onChange={(e) => setSettings({...settings, afterHours: e.target.checked})}
-                className="w-4 h-4 text-primary-600 rounded border-slate-300 focus:ring-primary-500"
+                className="w-4 h-4 text-primary-700 rounded border-slate-300 focus:ring-primary-500"
               />
               <span className="text-sm font-medium text-slate-700">Enable After-Hours Handling</span>
             </label>

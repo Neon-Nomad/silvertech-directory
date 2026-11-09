@@ -107,7 +107,7 @@ export const VeteransBenefitsList: React.FC = () => {
                   href={benefit.official_va_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-primary-600 hover:text-primary-700 hover:underline"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-primary-700 hover:text-primary-700 hover:underline"
                 >
                   Visit Official VA Page <ExternalLink className="w-4 h-4" />
                 </a>

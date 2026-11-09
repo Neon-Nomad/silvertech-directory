@@ -1499,7 +1499,7 @@ const DirectorySearch: React.FC = () => {
               <section className="mt-16 space-y-12">
                 <div className="flex items-center gap-4">
                   <div className="h-px flex-1 bg-slate-200" />
-                  <span className="rounded-full border border-slate-200 bg-white px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.28em] text-charcoal/55 shadow-sm">
+                  <span className="rounded-full border border-slate-200 bg-white px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.28em] text-charcoal/70 shadow-sm">
                     Expand your search nearby
                   </span>
                   <div className="h-px flex-1 bg-slate-200" />

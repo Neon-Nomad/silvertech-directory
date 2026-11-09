@@ -74,13 +74,13 @@ export const LoginPage: React.FC = () => {
         </h1>
         <p className="mt-2 text-center text-sm text-charcoal/70">
           New to SilverTech?{' '}
-          <Link to={signUpPath} className="font-medium text-primary-600 hover:text-primary-500">
+          <Link to={signUpPath} className="font-medium text-primary-700 hover:text-primary-800">
             Create an account
           </Link>
         </p>
         <p className="mt-1 text-center text-sm text-charcoal/70">
           Are you a facility operator?{' '}
-          <Link to={operatorLoginPath} className="font-medium text-primary-600 hover:text-primary-500">
+          <Link to={operatorLoginPath} className="font-medium text-primary-700 hover:text-primary-800">
             Facility sign in
           </Link>
         </p>

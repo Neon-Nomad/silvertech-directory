@@ -59,7 +59,7 @@ export const StateOmbudsmanPage: React.FC = () => {
           />
 
           <div className="mt-6">
-            <Link to={`/states/${stateDef.slug}`} className="inline-flex items-center text-sm text-slate-600 hover:text-primary-600 mb-4">
+            <Link to={`/states/${stateDef.slug}`} className="inline-flex items-center text-sm text-slate-600 hover:text-primary-700 mb-4">
               <ArrowLeft className="w-4 h-4 mr-1" /> Back to {stateDef.name} Overview
             </Link>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
@@ -96,7 +96,7 @@ export const StateOmbudsmanPage: React.FC = () => {
             {/* Dynamic Content from Supabase */}
             {loading ? (
               <div className="flex justify-center py-12">
-                <Loader className="w-8 h-8 text-primary-600 animate-spin" />
+                <Loader className="w-8 h-8 text-primary-700 animate-spin" />
               </div>
             ) : regulatoryData?.ombudsman_content ? (
               <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 prose prose-slate max-w-none">

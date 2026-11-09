@@ -59,7 +59,7 @@ export const ClaimBusiness: React.FC = () => {
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="bg-slate-50 rounded-xl p-8 text-center">
             <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Building2 className="w-6 h-6 text-primary-600" />
+              <Building2 className="w-6 h-6 text-primary-700" />
             </div>
             <h3 className="text-lg font-medium text-slate-900 mb-2">Manage Your Info</h3>
             <p className="text-slate-600">
@@ -68,7 +68,7 @@ export const ClaimBusiness: React.FC = () => {
           </div>
           <div className="bg-slate-50 rounded-xl p-8 text-center">
             <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <CheckCircle className="w-6 h-6 text-primary-600" />
+              <CheckCircle className="w-6 h-6 text-primary-700" />
             </div>
             <h3 className="text-lg font-medium text-slate-900 mb-2">Verify Your Status</h3>
             <p className="text-slate-600">
@@ -77,7 +77,7 @@ export const ClaimBusiness: React.FC = () => {
           </div>
           <div className="bg-slate-50 rounded-xl p-8 text-center">
             <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <ArrowRight className="w-6 h-6 text-primary-600" />
+              <ArrowRight className="w-6 h-6 text-primary-700" />
             </div>
             <h3 className="text-lg font-medium text-slate-900 mb-2">Connect with Families</h3>
             <p className="text-slate-600">
@@ -94,7 +94,7 @@ export const ClaimBusiness: React.FC = () => {
           </Link>
           <p className="mt-4 text-sm text-slate-600">
             Already have an account?{' '}
-            <Link to={loginPath} className="text-primary-600 hover:text-primary-500 font-medium">
+            <Link to={loginPath} className="text-primary-700 hover:text-primary-800 font-medium">
               Sign In
             </Link>
           </p>

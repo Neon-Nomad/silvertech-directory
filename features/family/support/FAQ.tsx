@@ -98,7 +98,7 @@ export const FAQ: React.FC = () => {
             <div key={section.title} className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
               <div className="p-6 bg-slate-50 border-b border-slate-200 flex items-center gap-3">
                 <div className="p-2 bg-white rounded-lg shadow-sm">
-                  <section.icon className="w-6 h-6 text-primary-600" />
+                  <section.icon className="w-6 h-6 text-primary-700" />
                 </div>
                 <h2 className="text-xl font-bold text-slate-900">{section.title}</h2>
               </div>

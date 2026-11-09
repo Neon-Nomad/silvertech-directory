@@ -185,7 +185,7 @@ export const HelpCenter: React.FC<HelpCenterProps> = ({ routeKey }) => {
           <h2 className="text-xl font-semibold">{content.route.title}</h2>
         </div>
         <p className="mt-2 text-sm text-charcoal/70">{content.route.contextual_tip}</p>
-        <p className="mt-1 text-xs text-charcoal/50">Last updated: {content.lastUpdated}</p>
+        <p className="mt-1 text-xs text-charcoal/70">Last updated: {content.lastUpdated}</p>
 
         <label className="mt-4 flex min-h-11 items-center gap-2 rounded-xl border border-warm-gray px-3 text-sm text-charcoal/70">
           <Search className="h-4 w-4" />

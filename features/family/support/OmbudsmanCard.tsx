@@ -28,7 +28,7 @@ export const OmbudsmanCard: React.FC<OmbudsmanCardProps> = ({ program, variant =
             <Phone className="w-4 h-4 text-slate-400 mt-1" />
             <div>
               <p className="text-sm font-medium text-slate-600 uppercase">Phone</p>
-              <a href={`tel:${program.phone}`} className="text-slate-900 font-semibold hover:text-primary-600">
+              <a href={`tel:${program.phone}`} className="text-slate-900 font-semibold hover:text-primary-700">
                 {program.phone}
               </a>
             </div>
@@ -39,7 +39,7 @@ export const OmbudsmanCard: React.FC<OmbudsmanCardProps> = ({ program, variant =
               <Mail className="w-4 h-4 text-slate-400 mt-1" />
               <div>
                 <p className="text-sm font-medium text-slate-600 uppercase">Email</p>
-                <a href={`mailto:${program.email}`} className="text-slate-900 font-medium hover:text-primary-600 break-all">
+                <a href={`mailto:${program.email}`} className="text-slate-900 font-medium hover:text-primary-700 break-all">
                   {program.email}
                 </a>
               </div>
@@ -54,7 +54,7 @@ export const OmbudsmanCard: React.FC<OmbudsmanCardProps> = ({ program, variant =
                 href={program.website} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-primary-600 font-medium hover:underline flex items-center gap-1"
+                className="text-primary-700 font-medium hover:underline flex items-center gap-1"
               >
                 Visit Ombudsman Site <ExternalLink size={12} />
               </a>

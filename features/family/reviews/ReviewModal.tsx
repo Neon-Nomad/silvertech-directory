@@ -98,7 +98,7 @@ export const ReviewModal: React.FC<ReviewModalProps> = ({ isOpen, onClose, facil
                 required
                 checked={isVerified}
                 onChange={(e) => setIsVerified(e.target.checked)}
-                className="mt-1 w-4 h-4 text-primary-600 rounded border-slate-300 focus:ring-primary-500"
+                className="mt-1 w-4 h-4 text-primary-700 rounded border-slate-300 focus:ring-primary-500"
               />
               <span className="text-sm text-slate-600">
                 I certify that this review is based on my own first-hand experience (or that of a family member) and is not posted by a competitor or employee.

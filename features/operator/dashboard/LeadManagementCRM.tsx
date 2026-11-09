@@ -78,13 +78,13 @@ export const LeadManagementCRM: React.FC = () => {
                 <td className="px-6 py-4 text-slate-600">{lead.date}</td>
                 <td className="px-6 py-4 text-right">
                   <div className="flex justify-end gap-2">
-                    <button className="p-1 text-slate-400 hover:text-primary-600 transition-colors" title="Call">
+                    <button className="p-1 text-slate-400 hover:text-primary-700 transition-colors" title="Call">
                       <Phone className="w-4 h-4" />
                     </button>
-                    <button className="p-1 text-slate-400 hover:text-primary-600 transition-colors" title="Email">
+                    <button className="p-1 text-slate-400 hover:text-primary-700 transition-colors" title="Email">
                       <Mail className="w-4 h-4" />
                     </button>
-                    <button className="p-1 text-slate-400 hover:text-primary-600 transition-colors" title="Schedule Tour">
+                    <button className="p-1 text-slate-400 hover:text-primary-700 transition-colors" title="Schedule Tour">
                       <Calendar className="w-4 h-4" />
                     </button>
                   </div>
@@ -96,7 +96,7 @@ export const LeadManagementCRM: React.FC = () => {
       </div>
       
       <div className="p-4 border-t border-slate-200 bg-slate-50 text-center">
-        <Button variant="ghost" size="sm" className="text-primary-600 hover:text-primary-700">
+        <Button variant="ghost" size="sm" className="text-primary-700 hover:text-primary-700">
           View All Leads
         </Button>
       </div>

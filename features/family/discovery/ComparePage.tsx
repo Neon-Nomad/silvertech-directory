@@ -101,7 +101,7 @@ const ComparePage: React.FC = () => {
   const tableRows = buildCompareRows(records);
 
   return (
-    <main className="mx-auto max-w-5xl px-4 py-10 text-charcoal">
+    <div className="mx-auto max-w-5xl px-4 py-10 text-charcoal">
       <Helmet>
         <title>Compare senior living facilities | SilverTech Directory</title>
         <meta name="robots" content="noindex" />
@@ -144,6 +144,7 @@ const ComparePage: React.FC = () => {
           {!loading && !error && (
             <div className="mt-6 overflow-x-auto rounded-xl border border-slate-200 bg-white">
               <table className="min-w-full border-collapse text-left text-sm">
+                <caption className="sr-only">Facilities compared side by side</caption>
                 <thead>
                   <tr>
                     <th scope="col" className="sticky left-0 z-10 w-40 bg-white p-3 align-bottom font-semibold">
@@ -174,6 +175,7 @@ const ComparePage: React.FC = () => {
                             <button
                               type="button"
                               className="mt-2 text-xs font-bold uppercase tracking-wide underline"
+                              aria-label={`Remove ${record?.name || 'facility'} from comparison`}
                               onClick={() => removeFromCompare(id)}
                             >
                               Remove
@@ -195,7 +197,7 @@ const ComparePage: React.FC = () => {
                         return (
                           <td
                             key={`${row.key}-${columns[index]?.id ?? index}`}
-                            className={`p-3 align-top ${isMissing ? 'text-charcoal/50' : ''}`}
+                            className={`p-3 align-top ${isMissing ? 'text-charcoal/70' : ''}`}
                           >
                             {row.isLink && cell ? (
                               <a className="underline break-all" href={cell} target="_blank" rel="noopener noreferrer">
@@ -220,7 +222,7 @@ const ComparePage: React.FC = () => {
           </p>
         </>
       )}
-    </main>
+    </div>
   );
 };
 

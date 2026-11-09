@@ -114,7 +114,7 @@ const ReviewsModal: React.FC<ReviewsModalProps> = ({ isOpen, onClose, facilityNa
                     <p className="text-slate-700 leading-relaxed mb-3">{review.text}</p>
                     
                     {/* Helpful Button */}
-                    <button className="flex items-center gap-2 text-sm text-slate-600 hover:text-primary-600 transition-colors">
+                    <button className="flex items-center gap-2 text-sm text-slate-600 hover:text-primary-700 transition-colors">
                       <ThumbsUp size={16} />
                       <span>Helpful ({review.helpfulCount})</span>
                     </button>

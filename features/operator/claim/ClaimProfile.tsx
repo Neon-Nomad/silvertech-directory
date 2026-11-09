@@ -29,7 +29,7 @@ export const ClaimProfile: React.FC = () => {
     return (
       <div className="min-h-screen bg-slate-50 flex items-center justify-center">
         <div className="text-center">
-          <Loader className="w-12 h-12 text-primary-600 animate-spin mx-auto mb-4" />
+          <Loader className="w-12 h-12 text-primary-700 animate-spin mx-auto mb-4" />
           <h2 className="text-xl font-bold text-slate-900">Verifying Award Badge...</h2>
         </div>
       </div>
@@ -64,7 +64,7 @@ export const ClaimProfile: React.FC = () => {
         
         <h1 className="text-3xl font-bold text-slate-900 mb-2">Congratulations!</h1>
         <p className="text-xl text-slate-600 mb-8">
-          You've unlocked the <span className="font-bold text-primary-600">2024 Price Transparency Award</span>.
+          You've unlocked the <span className="font-bold text-primary-700">2024 Price Transparency Award</span>.
         </p>
 
         <div className="bg-slate-50 rounded-xl p-6 mb-8 text-left border border-slate-200">

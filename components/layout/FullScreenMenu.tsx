@@ -86,8 +86,8 @@ export const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose 
                     >
                       <div className="flex items-center gap-4">
                         <div className={`p-3 rounded-xl transition-colors ${isActive
-                          ? 'bg-primary-100 text-primary-600'
-                          : 'bg-slate-100 text-slate-600 group-hover:bg-primary-50 group-hover:text-primary-600'
+                          ? 'bg-primary-100 text-primary-700'
+                          : 'bg-slate-100 text-slate-600 group-hover:bg-primary-50 group-hover:text-primary-700'
                           }`}>
                           <Icon className="w-6 h-6" />
                         </div>
@@ -176,7 +176,7 @@ const RegulatoryContent = ({ onClose }: { onClose: () => void }) => (
             key={state}
             to={`/regulations/${state.toLowerCase().replace(/ /g, '-')}/`}
             onClick={onClose}
-            className="text-sm text-slate-700 hover:text-primary-600 hover:bg-primary-50 px-3 py-2 rounded-lg transition-colors"
+            className="text-sm text-slate-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-lg transition-colors"
           >
             {state}
           </Link>
@@ -235,7 +235,7 @@ const NavCard = ({ to, onClick, icon: Icon, title, description }: any) => (
   >
     <div className="flex items-center gap-4 mb-2">
       <div className="p-3 bg-white rounded-lg group-hover:bg-primary-100 transition-colors shadow-sm">
-        <Icon className="w-5 h-5 text-slate-700 group-hover:text-primary-600 transition-colors" />
+        <Icon className="w-5 h-5 text-slate-700 group-hover:text-primary-700 transition-colors" />
       </div>
       <h3 className="font-semibold text-slate-900 group-hover:text-primary-700 transition-colors">{title}</h3>
     </div>

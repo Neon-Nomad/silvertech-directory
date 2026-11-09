@@ -45,7 +45,7 @@ export const FinancialSavingsGraphic: React.FC = () => {
           <div className="absolute -top-3 -right-3 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm">
             WINNER
           </div>
-          <h4 className="font-semibold text-primary-600 uppercase tracking-wider text-sm border-b border-primary-100 pb-2">
+          <h4 className="font-semibold text-primary-700 uppercase tracking-wider text-sm border-b border-primary-100 pb-2">
             SilverTech OS
           </h4>
           <div className="flex justify-between items-center text-slate-600">

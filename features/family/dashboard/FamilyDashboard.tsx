@@ -466,7 +466,7 @@ export const FamilyDashboard: React.FC = () => {
                         >
                           Save Note
                         </button>
-                        <span className="text-xs text-charcoal/55">{card.latestNote ? 'Saved' : 'No note saved yet'}</span>
+                        <span className="text-xs text-charcoal/70">{card.latestNote ? 'Saved' : 'No note saved yet'}</span>
                       </div>
                     </div>
 

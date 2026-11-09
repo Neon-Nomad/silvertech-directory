@@ -111,7 +111,7 @@ const OperatorSignUp: React.FC = () => {
         </h1>
         <p className="mt-2 text-center text-sm text-slate-600">
           Already have an operator account?{' '}
-          <Link to={loginPath} className="font-medium text-primary-600 hover:text-primary-500">
+          <Link to={loginPath} className="font-medium text-primary-700 hover:text-primary-800">
             Sign in
           </Link>
         </p>
