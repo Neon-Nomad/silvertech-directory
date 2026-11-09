@@ -6,7 +6,6 @@ import {
   LayoutDashboard,
   Lock,
   Trophy,
-  TrendingUp,
 } from 'lucide-react';
 import { useAuth } from '@/src/context/AuthProvider';
 import {
@@ -29,13 +28,8 @@ type DashboardOverviewProps = {
   onViewPublicProfile: () => void;
 };
 
-const kpis = [
-  { label: 'Profile Views', value: '1,250' },
-  { label: 'Leads Received', value: '45' },
-  { label: 'Estimated Move-Ins', value: '3' },
-  { label: 'Estimated Revenue', value: '$18,000' },
-  { label: 'Avg. Response Time', value: '1h 12m' },
-];
+// These metrics are not measured yet. Shown as unavailable rather than as sample figures.
+const performanceMetrics = ['Profile Views', 'Leads Received', 'Estimated Move-Ins', 'Estimated Revenue', 'Avg. Response Time'];
 
 type ChecklistItem = {
   id: string;
@@ -1198,21 +1192,17 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-charcoal/60">
-                Your listing is performing better than 68% of homes in your area.
+                Performance metrics are not connected yet. Figures will appear here once tracking is available.
               </p>
               <h2 className="mt-1 text-lg font-semibold text-charcoal">Performance Overview</h2>
-            </div>
-            <div className="flex items-center gap-1 text-xs text-charcoal/60">
-              <TrendingUp className="h-4 w-4" />
-              Updated today
             </div>
           </div>
 
           <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-5">
-            {kpis.map((stat) => (
-              <div key={stat.label} className="rounded-xl border border-warm-gray p-4 text-center">
-                <p className="text-xs uppercase text-charcoal/60">{stat.label}</p>
-                <p className="mt-2 text-2xl font-semibold text-charcoal">{stat.value}</p>
+            {performanceMetrics.map((label) => (
+              <div key={label} className="rounded-xl border border-warm-gray p-4 text-center">
+                <p className="text-xs uppercase text-charcoal/60">{label}</p>
+                <p className="mt-2 text-sm text-charcoal/60">Not tracked yet</p>
               </div>
             ))}
           </div>

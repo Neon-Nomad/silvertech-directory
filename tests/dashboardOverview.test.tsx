@@ -111,4 +111,22 @@ describe('DashboardOverview', () => {
     expect(screen.getAllByText(/No family inquiries yet/i).length).toBeGreaterThan(0);
     expect(screen.getAllByText(/Attribution tracking is not connected yet/i).length).toBeGreaterThan(0);
   });
+
+  it("does not show sample performance figures", () => {
+    render(
+      <DashboardOverview
+        userProfile={{ plan: "featured" }}
+        onGoToListings={vi.fn()}
+        onCompleteProfileSetup={vi.fn()}
+        onGoToLeads={vi.fn()}
+        onGoToBilling={vi.fn()}
+        onViewPublicProfile={vi.fn()}
+      />
+    );
+
+    expect(screen.queryByText("1,250")).not.toBeInTheDocument();
+    expect(screen.queryByText("$18,000")).not.toBeInTheDocument();
+    expect(screen.queryByText(/better than 68% of homes/i)).not.toBeInTheDocument();
+    expect(screen.getAllByText("Not tracked yet").length).toBeGreaterThan(0);
+  });
 });
