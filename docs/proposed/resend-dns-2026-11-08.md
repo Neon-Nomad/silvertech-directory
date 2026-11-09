@@ -1,48 +1,46 @@
-# Resend domain verification: DNS conflict and corrections (2026-11-08)
+# Resend domain verification: what is missing (2026-11-08)
 
-Written for: the production owner. Status: investigation only. **No DNS record was changed.** Existing records are not to be deleted until their purpose is confirmed (see section 4).
+Written for: the production owner. Status: **one DNS record is missing.** No DNS change has been made from this document.
 
-## 1. What the public DNS shows (read-only lookups, 2026-11-08)
+## Correction
 
-Nameservers: `dns1–4.p06.nsone.net`, which is Netlify DNS. The zone cannot be read from here, so this is the public view.
+An earlier version of this document said `send.silvertechdirectory.com` conflicted with Resend. That was wrong. Resend runs its sending infrastructure under the name "Forge" (`*.forge.rmta.net`). The `send` CNAME is Resend's own record and is verified in the Resend dashboard. Nothing needs to be removed or renamed.
 
-| Name | Record | Value | Notes |
-|---|---|---|---|
-| `silvertechdirectory.com` | TXT | `google-site-verification=…` | Google site verification only |
-| `silvertechdirectory.com` | MX | none (ENODATA) | **No inbound mail** is routed to the root domain |
-| `send.silvertechdirectory.com` | CNAME | `send.forge.rmta.net` | Existing sending service. Its MX and SPF come from the target |
-| `send.forge.rmta.net` | MX | `10 feedback.forge.rmta.net` | Target of the CNAME above |
-| `send.forge.rmta.net` | TXT | `v=spf1 ip4:52.3.252.119 ip4:44.222.39.36 ip4:199.249.231.0/24 ~all` | SPF for the target |
-| `resend._domainkey.silvertechdirectory.com` | — | not published | Resend's DKIM record is missing |
-| `_dmarc.silvertechdirectory.com` | — | not published | No DMARC policy |
-| `outbound`, `routbound`, `bounce`, `resend`, `mail` (`.silvertechdirectory.com`) | — | not published | Free to use |
+## Resend dashboard, 2026-11-08 (domain added 5:44 PM, status pending)
 
-## 2. The conflict
+| Record | Type | Name | Content | Status in Resend |
+|---|---|---|---|---|
+| DKIM | TXT | `resend._domainkey` | `p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+OxSoxQjyZDU5IJkdKleAWZbGBtKzR03K5WO5AdVZrZomUTOSdzx1b/6CDwlF9AhrdNEj3jwO8TkqxzeWs3NMpmOSLGg22YqfGXDtSJIqipPr9yGkIurXsBaHF/KWfjW4RqPt794uGTC5msGqJBB6hSYBQGTdOmEdRZ1xOwB0cwIDAQAB` | **pending** |
+| SPF (return path) | CNAME | `send` | `send.forge.rmta.net` | verified |
+| SPF (return path) | CNAME | `rsend` | `rsend.forge.rmta.net` | verified |
+| DMARC (optional) | TXT | `_dmarc` | `v=DMARC1; p=none;` | not set |
 
-Resend's default return-path subdomain is `send` (Resend's custom-return-path page). Resend then needs MX and TXT records at `send.silvertechdirectory.com`. That name already has a **CNAME** to `send.forge.rmta.net`. A DNS name that has a CNAME cannot also hold an MX or TXT record, so Resend cannot publish its records there. That is why verification cannot complete.
+Region: us-east-1. DNS provider: NS1 (Netlify DNS).
 
-## 3. Corrections (in order)
+## Public DNS check (read-only, 2026-11-08)
 
-These avoid the conflict, and nothing existing is removed.
+- `send.silvertechdirectory.com`: CNAME to `send.forge.rmta.net` (present).
+- `rsend.silvertechdirectory.com`: CNAME to `rsend.forge.rmta.net` (present).
+- `resend._domainkey.silvertechdirectory.com`: **not found** (NXDOMAIN).
 
-1. **Choose a different return-path name in Resend.** Resend allows a custom return path when a domain is added (Advanced options, or `custom_return_path` in the API). Use `outbound`. It cannot be changed later, so: if the domain was added with the default `send`, delete it in Resend and add it again with `outbound`. Verification is not complete, so nothing is lost. Confirm first that Resend has no live sending on the domain.
-2. **Add the records that Resend's Records tab shows for that domain.** Expected shape (exact values come from the Records tab, not from this document):
-   - TXT `resend._domainkey` (DKIM). Value: copy exactly from Resend.
-   - CNAME `outbound` and CNAME `routbound`, both required for a CNAME return path. Values: copy exactly from Resend.
-   - Do not create anything at `send`.
-   - None of these records may be proxied (for example, Cloudflare's orange cloud). Resend requires DNS-only records.
-3. **Do not change** the existing `send` CNAME, the root TXT, or any record not listed above.
-4. Optional, after verification: a DMARC TXT at `_dmarc` (e.g. `v=DMARC1; p=none; rua=mailto:…`). Not needed for verification.
+## The one missing record
 
-## 4. Existing email functionality, and what must be confirmed first
+Add this record in Netlify DNS for `silvertechdirectory.com`:
 
-- **Transactional mail (Brevo).** The repo sends tour and welcome emails through Brevo (`netlify/functions/send-tour-guide.ts`, `supabase/functions/send-registration-email`). Its sender is `hello@` or `andrew@silvertechdirectory.com`. The public DNS has no Brevo DKIM selector (e.g. `brevo1._domainkey`) and no Brevo SPF include on the root. Those mails may be failing authentication. This is not caused by the Resend work, but it should be checked in Brevo before any DNS change.
-- **The `send` CNAME to `forge.rmta.net`.** Nothing in the repository refers to it. **Its purpose must be confirmed before any change.** It may be a previous sending service. Do not delete it on the assumption that it is unused.
-- **Inbound mail.** The root domain has no MX record, so `andrew@`, `hello@`, `support@`, and `editorial@` addresses on the site cannot receive mail. This may be intended. If it is not, a mail host must be chosen and its MX records added. That is a separate decision.
+- Type: TXT
+- Name: `resend._domainkey`
+- Value: the full `p=MIGf…AQAB` key shown in the table above, copied exactly from the Resend dashboard
 
-## 5. Before applying section 3
+Do not proxy it. Then wait for the DNS and use "Restart verification" in Resend if it does not verify within a few hours. Check with `nslookup -type=TXT resend._domainkey.silvertechdirectory.com 8.8.8.8`.
 
-1. Confirm the Resend domain and return-path name in the Resend dashboard (Domains page).
-2. Copy the record values from Resend's Records tab.
-3. Confirm the purpose of `send.silvertechdirectory.com` (CNAME to `forge.rmta.net`) with whoever set it up.
-4. Apply the records in Netlify DNS, then use "Restart verification" in Resend if it does not verify within an hour. Public checks: `nslookup -type=TXT resend._domainkey.silvertechdirectory.com 8.8.8.8`.
+## Do not change
+
+- The `send` and `rsend` CNAMEs.
+- The Google site-verification TXT at the root.
+- Any other record.
+
+## Decisions outside this fix
+
+- **Enable receiving** in Resend adds inbound MX records. The root domain has no MX today, so the site's contact addresses (`andrew@`, `hello@`, `support@`, `editorial@`) cannot receive mail. Enabling receiving is a separate decision.
+- **Brevo.** Transactional mail (tour and welcome emails) goes through Brevo. Its DKIM selector is not on the domain. Check Brevo's domain status before changing anything for it.
+- **Supabase Auth SMTP.** Once the domain verifies, Supabase's SMTP settings should use Resend's SMTP details, and sign-up confirmation can be retested. Those settings stay unchanged until verification is confirmed.
