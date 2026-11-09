@@ -9,7 +9,7 @@
   font-size: 0.74rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #64748b;
+  color: #475569;
   margin-bottom: 0.9rem;
 }
 
@@ -100,7 +100,7 @@
 
 .sl-stat .k {
   margin: 0;
-  color: #64748b;
+  color: #475569;
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -382,7 +382,7 @@
 
 .sl-premium-tag {
   font-size: 0.7rem;
-  color: #64748b;
+  color: #475569;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 700;
@@ -565,7 +565,7 @@
 
 .sl-data-grid .cell .k {
   font-size: 0.72rem;
-  color: #64748b;
+  color: #475569;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -623,7 +623,7 @@
 }
 
 .sl-nearby-grid a span {
-  color: #64748b;
+  color: #475569;
   font-size: 0.77rem;
 }
 
@@ -641,7 +641,7 @@
 }
 
 .sl-muted {
-  color: #64748b;
+  color: #475569;
 }
 
 .sl-city-page {

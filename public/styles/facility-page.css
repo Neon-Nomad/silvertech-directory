@@ -14,12 +14,12 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.4rem;
-  color: #64748b;
+  color: #475569;
   font-size: 0.82rem;
   margin-bottom: 0.75rem;
 }
 
-.fp-crumbs a { color: #64748b; }
+.fp-crumbs a { color: #475569; }
 .fp-crumbs a:hover { color: #0f172a; text-decoration: underline; }
 .fp-crumbs span[aria-hidden] { color: #94a3b8; }
 
@@ -245,7 +245,7 @@
 
 .fp-metric-sub {
   font-size: 0.7rem;
-  color: #64748b;
+  color: #475569;
   margin: 0.15rem 0 0;
 }
 
@@ -261,7 +261,7 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #64748b;
+  color: #475569;
 }
 
 .fp-badges-grid {
@@ -328,7 +328,7 @@
 
 .fp-section-icon {
   font-size: 1.05rem;
-  color: #ca8a04;
+  color: #b45309;
 }
 
 /* --- Identifiers strip --------------------------------- */
@@ -351,7 +351,7 @@
 
 .fp-id-pill-label {
   font-size: 0.64rem;
-  color: #64748b;
+  color: #475569;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -390,7 +390,7 @@
 }
 
 .fp-data-table td:first-child {
-  color: #64748b;
+  color: #475569;
   font-weight: 600;
   width: 42%;
   padding-right: 0.75rem;
@@ -459,7 +459,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #64748b;
+  color: #475569;
   margin: 0 0 0.3rem;
 }
 
@@ -472,13 +472,13 @@
 
 .fp-reg-note {
   font-size: 0.8rem;
-  color: #64748b;
+  color: #475569;
   margin: 1rem 0 0;
   line-height: 1.5;
 }
 
 .fp-reg-report {
-  color: #ca8a04;
+  color: #b45309;
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: underline;
@@ -514,7 +514,7 @@
 }
 
 .fp-map-mobile-link {
-  color: #ca8a04;
+  color: #b45309;
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -523,7 +523,7 @@
 
 .fp-map-mobile-address {
   margin: 0;
-  color: #64748b;
+  color: #475569;
   font-size: 0.85rem;
 }
 
@@ -539,7 +539,7 @@
   align-items: center;
   justify-content: center;
   background: #f8fafc;
-  color: #64748b;
+  color: #475569;
   font-size: 0.875rem;
 }
 
@@ -587,7 +587,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: #ca8a04;
+  color: #b45309;
   font-weight: 600;
   font-size: 0.88rem;
   text-decoration: underline;
@@ -597,7 +597,7 @@
 /* --- Community Q&A ------------------------------------- */
 
 .fp-qa-empty {
-  color: #64748b;
+  color: #475569;
   font-size: 0.9rem;
   margin: 0 0 1rem;
 }
@@ -783,13 +783,13 @@
 
 .fp-nearby-meta {
   font-size: 0.77rem;
-  color: #64748b;
+  color: #475569;
   margin: 0;
 }
 
 .fp-nearby-arrow {
   font-size: 0.8rem;
-  color: #ca8a04;
+  color: #b45309;
   font-weight: 700;
   margin-top: 0.5rem;
   display: block;
@@ -849,7 +849,7 @@
 
 .ts-guide-sub {
   font-size: 0.82rem;
-  color: #64748b;
+  color: #475569;
   margin: 0 0 0.85rem;
   line-height: 1.5;
 }
@@ -958,7 +958,7 @@
 .ts-cal-heading {
   font-size: 0.82rem;
   font-weight: 600;
-  color: #64748b;
+  color: #475569;
   margin: 0 0 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1079,7 +1079,7 @@
 .fcp-pricing-label {
   font-size: 0.78rem;
   font-weight: 600;
-  color: #64748b;
+  color: #475569;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin: 0 0 0.35rem;
@@ -1101,7 +1101,7 @@
 .fcp-section-label {
   font-size: 0.8rem;
   font-weight: 700;
-  color: #64748b;
+  color: #475569;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin: 0 0 0.6rem;
@@ -1112,7 +1112,7 @@
   align-items: center;
   gap: 0.4rem;
   font-weight: 600;
-  color: #ca8a04;
+  color: #b45309;
   text-decoration: underline;
   text-underline-offset: 3px;
   font-size: 0.93rem;
@@ -1154,7 +1154,7 @@
 .fcp-amenity-category {
   font-size: 0.78rem;
   font-weight: 700;
-  color: #64748b;
+  color: #475569;
   margin: 0 0 0.4rem;
 }
 
@@ -1175,7 +1175,7 @@
 
 .fcp-claimed-empty p {
   font-size: 0.88rem;
-  color: #64748b;
+  color: #475569;
   margin: 0.4rem 0 0;
 }
 
@@ -1191,7 +1191,7 @@
 }
 
 .fcp-locked-label {
-  color: #64748b;
+  color: #475569;
   font-weight: 600;
   width: 42%;
   flex-shrink: 0;

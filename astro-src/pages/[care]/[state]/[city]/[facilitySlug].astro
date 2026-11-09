@@ -393,13 +393,13 @@ const breadcrumbSchema = {
               {phone && (
                 <tr>
                   <td>Phone</td>
-                  <td><a href={`tel:${phone.replace(/\D/g,'')}`} style="color:#ca8a04;font-weight:600">{phone}</a></td>
+                  <td><a href={`tel:${phone.replace(/\D/g,'')}`} style="color:#b45309;font-weight:600">{phone}</a></td>
                 </tr>
               )}
               {facility.websiteUrl && (
                 <tr>
                   <td>Website</td>
-                  <td><a href={facility.websiteUrl} target="_blank" rel="noopener noreferrer" style="color:#ca8a04;font-weight:600">Visit official site ↗</a></td>
+                  <td><a href={facility.websiteUrl} target="_blank" rel="noopener noreferrer" style="color:#b45309;font-weight:600">Visit official site ↗</a></td>
                 </tr>
               )}
               {facility.beds && (
@@ -523,7 +523,7 @@ const breadcrumbSchema = {
                 ↗ Open in Google Maps
               </a>
             ) : (
-              <p style="font-size:0.85rem;color:#64748b;margin:0.5rem 0 0">{addressLine}</p>
+              <p style="font-size:0.85rem;color:#475569;margin:0.5rem 0 0">{addressLine}</p>
             )}
           </section>
         )}
@@ -618,12 +618,12 @@ const breadcrumbSchema = {
           </h2>
           <ul style="list-style:none;margin:0;padding:0;display:grid;gap:0.5rem">
             <li>
-              <a href={cityPageUrl} style="color:#ca8a04;font-weight:600;text-decoration:underline;text-underline-offset:3px">
+              <a href={cityPageUrl} style="color:#b45309;font-weight:600;text-decoration:underline;text-underline-offset:3px">
                 {careLabel} in {displayCity}, {facility.state}
               </a>
             </li>
             <li>
-              <a href={carePageUrl} style="color:#ca8a04;font-weight:600;text-decoration:underline;text-underline-offset:3px">
+              <a href={carePageUrl} style="color:#b45309;font-weight:600;text-decoration:underline;text-underline-offset:3px">
                 {careLabel} across {facility.stateName}
               </a>
             </li>
