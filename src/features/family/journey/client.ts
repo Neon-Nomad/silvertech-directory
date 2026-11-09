@@ -266,6 +266,31 @@ export const saveFacilityForCurrentUser = async (
   return { status: 'success' };
 };
 
+// Removes the signed-in family's save for one facility. Idempotent: removing a facility that is not saved succeeds.
+export const unsaveFacilityForCurrentUser = async (facilityId: string): Promise<ActionResult> => {
+  const normalizedFacilityId = ensureUuid(facilityId);
+  if (!normalizedFacilityId) {
+    return { status: 'error', message: 'Facility ID is not a UUID.' };
+  }
+
+  const userId = await getCurrentUserId();
+  if (!userId) {
+    // A save queued while signed out is only in this browser, so clear it here.
+    clearPendingSaveForFacility(normalizedFacilityId);
+    return { status: 'success' };
+  }
+
+  const { error } = await supabase
+    .from('saved_facilities')
+    .delete()
+    .eq('user_id', userId)
+    .eq('facility_id', normalizedFacilityId);
+  if (error) throw error;
+
+  clearPendingSaveForFacility(normalizedFacilityId);
+  return { status: 'success' };
+};
+
 export const fetchSavedFacilityIds = async (): Promise<Set<string>> => {
   const userId = await getCurrentUserId();
   if (!userId) return new Set<string>();
