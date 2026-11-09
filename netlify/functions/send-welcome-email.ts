@@ -88,7 +88,9 @@ export const handler: Handler = async (event) => {
     return json(500, { error: 'Email service not configured' });
   }
 
-  const store = getStore({ name: 'welcome-emails', consistency: 'strong' });
+  // Default consistency. Strong consistency needs site credentials that Netlify does not provide to this function.
+  // Resend's per-account idempotency key still prevents a repeat send if a record has not yet replicated.
+  const store = getStore('welcome-emails');
 
   const ip = event.headers['x-nf-client-connection-ip'] || event.headers['client-ip'] || 'unknown';
   if (!(await withinIpLimit(store, ip))) {
