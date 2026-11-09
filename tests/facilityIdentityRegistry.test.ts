@@ -98,7 +98,8 @@ describe('facility identity registry', () => {
   });
 });
 
-describe('verified legacy facility redirects', () => {
+// Walks about 77,000 manifest rows. Under a full parallel run this takes longer than the default 5 seconds.
+describe('verified legacy facility redirects', { timeout: 30000 }, () => {
   it('points only at live canonical paths and never at a path that is itself canonical', () => {
     const sources = new Set<string>();
     for (const row of manifest) {

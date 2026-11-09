@@ -58,6 +58,8 @@ export default defineConfig(({ mode }) => {
         VITE_SUPABASE_URL: 'https://unit-test.invalid',
         VITE_SUPABASE_ANON_KEY: 'unit-test-anon-key',
       },
+      // Component and data tests can exceed the 5-second default when the whole suite runs in parallel.
+      testTimeout: 20000,
     },
   };
 });
