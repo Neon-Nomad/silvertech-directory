@@ -796,8 +796,8 @@ const DirectorySearch: React.FC = () => {
       options?: { queryText?: string | null },
     ) => {
       const effectiveQueryText = options?.queryText !== undefined ? options.queryText : rawName || null;
-      try {
-        const { data, error } = await supabase.rpc('search_facilities', {
+      const callSearchRpc = () =>
+        supabase.rpc('search_facilities', {
           query_text: effectiveQueryText,
           state_filter: filters.state || null,
           city_filter: filters.city || null,
@@ -805,6 +805,13 @@ const DirectorySearch: React.FC = () => {
           limit_count: 50,
           offset_count: 0,
         });
+      try {
+        let { data, error } = await callSearchRpc();
+        // The database cancels a query that runs past its time limit (code 57014). Those runs are rare, and the
+        // same search usually finishes in a fraction of a second on a second attempt, so retry once.
+        if (error && String(error.code) === '57014') {
+          ({ data, error } = await callSearchRpc());
+        }
         if (error) throw error;
         return (data as SearchFacilityResult[]) || [];
       } catch (err: any) {

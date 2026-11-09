@@ -402,6 +402,24 @@ describe('DirectorySearch', () => {
     expect(screen.queryByText(/Showing facilities across/i)).not.toBeInTheDocument();
   });
 
+  it('retries a search the database cancelled for running too long', async () => {
+    rpcMock.mockImplementationOnce(async () => ({
+      data: null,
+      error: { code: '57014', message: 'canceling statement due to statement timeout' },
+    }));
+
+    renderSearch('/search?location=MN&name=Guardian');
+
+    await waitFor(() =>
+      expect(
+        rpcMock.mock.calls.filter(
+          ([fn, params]) => fn === 'search_facilities' && (params as Record<string, unknown>).query_text === 'Guardian',
+        ),
+      ).toHaveLength(2),
+    );
+    expect(screen.queryByText(/Live search is unavailable/i)).not.toBeInTheDocument();
+  });
+
   it('keeps claim-mode ZIP search routed to claim listing actions', async () => {
     renderSearch('/search?claim=1&location=98033');
 
