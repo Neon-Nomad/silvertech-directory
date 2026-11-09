@@ -9,7 +9,7 @@ const migrationPath = path.resolve(
 
 describe('facility claim review migration contract', () => {
   it('locks claim inserts to pending status', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('drop policy if exists "Users can create claims"');
     expect(sql).toContain('create policy "Users can create pending claims"');
@@ -17,7 +17,7 @@ describe('facility claim review migration contract', () => {
   });
 
   it('creates reviewer allowlist and reviewer-check helper', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create table if not exists public.claim_reviewers');
     expect(sql).toContain('create or replace function public.is_claim_reviewer');
@@ -25,7 +25,7 @@ describe('facility claim review migration contract', () => {
   });
 
   it('ships pending-claim list and approve/reject RPCs', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create or replace function public.get_pending_facility_claims_for_review()');
     expect(sql).toContain('create or replace function public.review_facility_claim(');

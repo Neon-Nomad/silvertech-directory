@@ -50,6 +50,14 @@ export default defineConfig(({ mode }) => {
           }
         }
       }
-    }
+    },
+    test: {
+      // Unit tests mock the network. These placeholders only let the Supabase client start, so the suite does not
+      // depend on a developer's local .env.
+      env: {
+        VITE_SUPABASE_URL: 'https://unit-test.invalid',
+        VITE_SUPABASE_ANON_KEY: 'unit-test-anon-key',
+      },
+    },
   };
 });

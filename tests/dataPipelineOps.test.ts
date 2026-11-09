@@ -10,7 +10,7 @@ const packageJsonPath = path.resolve(process.cwd(), 'package.json');
 
 describe('data pipeline orchestration contract', () => {
   it('defines pipeline health RPC and grants', () => {
-    const sql = fs.readFileSync(rpcMigrationPath, 'utf8');
+    const sql = fs.readFileSync(rpcMigrationPath, 'utf8').replace(/\r\n/g, '\n');
     expect(sql).toContain('create or replace function public.get_data_pipeline_health()');
     expect(sql).toContain('pending_raw_events bigint');
     expect(sql).toContain('latest_read_model_refresh_at timestamptz');
@@ -23,7 +23,7 @@ describe('data pipeline orchestration contract', () => {
     expect(fs.existsSync(path.resolve(process.cwd(), 'scripts/pipeline_refresh_read_models.ts'))).toBe(true);
     expect(fs.existsSync(path.resolve(process.cwd(), 'scripts/pipeline_monitor.ts'))).toBe(true);
 
-    const pkg = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8')) as {
+    const pkg = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8').replace(/\r\n/g, '\n')) as {
       scripts?: Record<string, string>;
     };
 

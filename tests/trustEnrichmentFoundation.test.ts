@@ -12,7 +12,7 @@ const normalizeScriptPath = path.resolve(process.cwd(), 'scripts/pipeline_normal
 
 describe('trust enrichment and lineage contract', () => {
   it('defines profile strength + market benchmark enrichment functions and grants', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create or replace function public.calculate_profile_strength(');
     expect(sql).toContain('create or replace function public.get_zip_market_benchmark(');
@@ -23,7 +23,7 @@ describe('trust enrichment and lineage contract', () => {
   });
 
   it('creates internal lineage view for facility traceability', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create view public.api_internal_facility_lineage as');
     expect(sql).toContain('listing_authority_tier');
@@ -33,7 +33,7 @@ describe('trust enrichment and lineage contract', () => {
   });
 
   it('hooks enrichment call in normalization pipeline for facility records', () => {
-    const source = fs.readFileSync(normalizeScriptPath, 'utf8');
+    const source = fs.readFileSync(normalizeScriptPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(source).toContain("evt.canonical_entity === 'facility'");
     expect(source).toContain("supabase.rpc(\n        'enrich_canonical_facility_payload'");
@@ -41,7 +41,7 @@ describe('trust enrichment and lineage contract', () => {
   });
 
   it('extends data contract with trust enrichment output definitions', () => {
-    const yaml = fs.readFileSync(contractPath, 'utf8');
+    const yaml = fs.readFileSync(contractPath, 'utf8').replace(/\r\n/g, '\n');
     const contract = parse(yaml) as {
       trust_enrichment?: {
         facility_trigger?: string;

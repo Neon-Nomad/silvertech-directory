@@ -9,7 +9,7 @@ const migrationPath = path.resolve(
 
 describe('facility claim review rpc type fix migration', () => {
   it('casts claim created_at into timestamptz in review RPC', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create or replace function public.get_pending_facility_claims_for_review()');
     expect(sql).toContain("(fc.created_at at time zone 'utc') as created_at");

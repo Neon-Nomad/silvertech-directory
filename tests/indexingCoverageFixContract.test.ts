@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-const read = (file: string) => readFileSync(resolve(process.cwd(), file), 'utf8');
+const read = (file: string) => readFileSync(resolve(process.cwd(), file), 'utf8').replace(/\r\n/g, '\n');
 
 describe('indexing coverage fix contract', () => {
   it('keeps host canonical redirects and retires legacy public directory URLs with 410', () => {
@@ -23,7 +23,7 @@ describe('indexing coverage fix contract', () => {
     expect(redirectsGenerator).toContain('http://www.silvertechdirectory.com/* https://silvertechdirectory.com/:splat 301!');
     expect(redirectsGenerator).toContain('/facility/* /410.html 410!');
     expect(redirectsGenerator).toContain('/senior-living/* /410.html 410!');
-    expect(redirectsGenerator).toContain('/states/:state/regulations/* /410.html 410!');
+    expect(redirectsGenerator).toContain('/states/:state/regulations/* /regulations/:state/ 301!');
     expect(redirectsGenerator).toContain('/regulatory-library /410.html 410!');
     expect(redirectsGenerator).not.toContain('/senior-living/:state/:city/');
   });
@@ -53,7 +53,7 @@ describe('indexing coverage fix contract', () => {
     const sitemapScript = read('scripts/generate_sitemaps.ts');
 
     expect(sitemapScript).toContain("const LEGACY_SITEMAP_FILES = ['sitemap-cities.xml', 'sitemap-states.xml'];");
-    expect(sitemapScript).toContain('const regulatoryEntries = ALL_STATES.flatMap((state) => [');
+    expect(sitemapScript).toContain('const regulatoryEntries = ALL_STATES.map((state) => toStaticEntry(`${BASE_URL}/regulations/${state.slug}/`, 0.7));');
     expect(sitemapScript).toContain('toStaticEntry(`${BASE_URL}/regulations/${state.slug}/`, 0.7)');
     expect(sitemapScript).toContain('const careTypeStateEntries = uniqueEntries(');
   });

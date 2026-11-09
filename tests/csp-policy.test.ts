@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { buildHeaders, inlineHandlers, inlineScriptHashes, PLACEHOLDER } from '../scripts/generate-csp.mjs';
 
-const headers = readFileSync(resolve(process.cwd(), 'public/_headers'), 'utf8');
+const headers = readFileSync(resolve(process.cwd(), 'public/_headers'), 'utf8').replace(/\r\n/g, '\n');
 const scriptSrc = headers.match(/script-src[^;]*/)?.[0] ?? '';
 
 describe('content security policy source', () => {

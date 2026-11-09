@@ -6,7 +6,7 @@ import { join, resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 
 const root = process.cwd();
-const read = (file: string) => readFileSync(resolve(root, file), 'utf8');
+const read = (file: string) => readFileSync(resolve(root, file), 'utf8').replace(/\r\n/g, '\n');
 
 type RegistryEntry = { k: string; l: string | null; p: string };
 const registry = JSON.parse(read('data/facility-identity-registry.json')) as {
@@ -169,7 +169,7 @@ integration('facility URL generation across builds (RUN_INTEGRATION_TESTS=true)'
       timeout: 1_200_000,
     });
     expect(result.status, result.stderr).toBe(0);
-    return readFileSync(out, 'utf8')
+    return readFileSync(out, 'utf8').replace(/\r\n/g, '\n')
       .split('\n')
       .filter(Boolean)
       .map((line) => (JSON.parse(line) as { path: string }).path)

@@ -11,7 +11,7 @@ const contractPath = path.resolve(process.cwd(), 'data-contract.yaml');
 
 describe('api read model foundation contract', () => {
   it('defines api_v1 models in data contract', () => {
-    const yaml = fs.readFileSync(contractPath, 'utf8');
+    const yaml = fs.readFileSync(contractPath, 'utf8').replace(/\r\n/g, '\n');
     const contract = parse(yaml) as {
       api_read_models?: {
         version_prefix?: string;
@@ -34,7 +34,7 @@ describe('api read model foundation contract', () => {
   });
 
   it('creates stable api_v1 views/materialized view with data_as_of labels', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create view public.api_v1_facility_profile_summary as');
     expect(sql).toContain('create view public.api_v1_lead_lifecycle as');
@@ -45,7 +45,7 @@ describe('api read model foundation contract', () => {
   });
 
   it('includes refresh function and controlled grants for authenticated access', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create or replace function public.refresh_api_v1_read_models()');
     expect(sql).toContain('refresh materialized view concurrently public.api_v1_attribution_funnel_daily;');

@@ -9,7 +9,7 @@ const migrationPath = path.resolve(
 
 describe('data normalization layer contract', () => {
   it('creates canonical and normalization ledger tables', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create table if not exists public.normalization_runs');
     expect(sql).toContain('create table if not exists public.normalization_records');
@@ -22,7 +22,7 @@ describe('data normalization layer contract', () => {
   });
 
   it('enables service-role controlled RLS policies for normalization tables', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('alter table public.normalization_runs enable row level security;');
     expect(sql).toContain('alter table public.normalization_records enable row level security;');
@@ -35,7 +35,7 @@ describe('data normalization layer contract', () => {
   });
 
   it('provides normalization RPC contract for recording results and polling pending events', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create or replace function public.record_normalization_result(');
     expect(sql).toContain('on conflict (raw_event_id)');

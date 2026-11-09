@@ -4,7 +4,7 @@ import { resolve } from 'node:path';
 
 describe('operator auth route contract', () => {
   it('registers /operator/signup route in app router', () => {
-    const appSource = readFileSync(resolve(process.cwd(), 'App.tsx'), 'utf8');
+    const appSource = readFileSync(resolve(process.cwd(), 'App.tsx'), 'utf8').replace(/\r\n/g, '\n');
     expect(appSource).toContain('<Route path="/operator/signup" element={<OperatorSignUp />} />');
   });
 });

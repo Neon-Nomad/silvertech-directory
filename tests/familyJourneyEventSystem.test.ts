@@ -13,7 +13,7 @@ const apiContractPath = path.resolve(process.cwd(), 'docs/family_journey_api_con
 
 describe('family journey event system foundation', () => {
   it('defines family journey contract in data-contract.yaml', () => {
-    const yaml = fs.readFileSync(contractPath, 'utf8');
+    const yaml = fs.readFileSync(contractPath, 'utf8').replace(/\r\n/g, '\n');
     const contract = parse(yaml) as {
       family_journey?: {
         status_flow?: string[];
@@ -49,7 +49,7 @@ describe('family journey event system foundation', () => {
   });
 
   it('creates deterministic status history and resolver view', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain("create type public.family_journey_status as enum");
     expect(sql).toContain('create table if not exists public.facility_status_history');
@@ -61,7 +61,7 @@ describe('family journey event system foundation', () => {
   });
 
   it('enforces append-only status events and transition validation at DB level', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create or replace function public.validate_status_transition()');
     expect(sql).toContain("raise exception 'Terminal state reached'");
@@ -73,7 +73,7 @@ describe('family journey event system foundation', () => {
   });
 
   it('ships centralized idempotency registry and required per-action keys', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create table if not exists public.idempotency_keys');
     expect(sql).toContain('primary key (user_id, action_type, idempotency_key)');
@@ -84,7 +84,7 @@ describe('family journey event system foundation', () => {
   });
 
   it('creates family event tables with own-row RLS and ownership policies', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create table if not exists public.saved_facilities');
     expect(sql).toContain('create table if not exists public.facility_notes');
@@ -99,8 +99,8 @@ describe('family journey event system foundation', () => {
   });
 
   it('defines a single dashboard snapshot query contract', () => {
-    const sql = fs.readFileSync(migrationPath, 'utf8');
-    const apiContract = fs.readFileSync(apiContractPath, 'utf8');
+    const sql = fs.readFileSync(migrationPath, 'utf8').replace(/\r\n/g, '\n');
+    const apiContract = fs.readFileSync(apiContractPath, 'utf8').replace(/\r\n/g, '\n');
 
     expect(sql).toContain('create or replace view public.family_dashboard_snapshot as');
     expect(sql).toContain('left join public.current_facility_status cs');
