@@ -52,6 +52,8 @@ const HowToChooseGuide = lazy(() => import('@/features/resources/HowToChooseGuid
 const CostsGuide = lazy(() => import('@/features/resources/CostsGuide').then((m) => ({ default: m.CostsGuide })));
 const TourQuestionsGuide = lazy(() => import('@/features/resources/TourQuestionsGuide').then((m) => ({ default: m.TourQuestionsGuide })));
 const LoginPage = lazy(() => import('@/features/auth/LoginPage').then((m) => ({ default: m.LoginPage })));
+const ForgotPasswordPage = lazy(() => import('@/features/auth/PasswordResetPages').then((m) => ({ default: m.ForgotPasswordPage })));
+const ResetPasswordPage = lazy(() => import('@/features/auth/PasswordResetPages').then((m) => ({ default: m.ResetPasswordPage })));
 const SignUpPage = lazy(() => import('@/features/auth/SignUpPage').then((m) => ({ default: m.SignUpPage })));
 const IntegrityHarness = lazy(() => import('@/features/e2e/IntegrityHarness').then((m) => ({ default: m.IntegrityHarness })));
 
@@ -350,6 +352,8 @@ function App() {
 
                     {/* Auth Routes */}
                     <Route path="/login" element={<LoginPage />} />
+                    <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+                    <Route path="/reset-password" element={<ResetPasswordPage />} />
                     <Route path="/sign-in" element={<Navigate to="/login" replace />} />
                     <Route path="/signin" element={<Navigate to="/login" replace />} />
                     <Route path="/signup" element={<SignUpPage />} />
