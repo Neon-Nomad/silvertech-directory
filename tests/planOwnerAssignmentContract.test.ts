@@ -6,7 +6,9 @@ import { describe, expect, it } from 'vitest';
 const read = (path: string) => readFileSync(path, 'utf8').replace(/\r\n/g, '\n');
 
 const dashboard = read('features/operator/dashboard/OperatorDashboard.tsx');
+const myFacilities = read('features/operator/dashboard/MyFacilities.tsx');
 const rpcSql = read('docs/proposed/plan-owner-assignment-rpc-2026-11-09.sql');
+const claimTrigger = read('docs/proposed/claim-approval-ownership-only-2026-11-09.sql');
 
 const RPC_HEADER = 'create or replace function public.set_plan_owner_assignment(';
 
@@ -16,6 +18,13 @@ const rpcParameters = (): string => {
   const end = rpcSql.indexOf('\nreturns jsonb', start);
   return rpcSql.slice(start, end);
 };
+
+// Executable lines only: the header comments describe the change and may name the column.
+const executableLines = (sql: string): string =>
+  sql
+    .split('\n')
+    .filter((line) => !line.trim().startsWith('--'))
+    .join('\n');
 
 describe('plan-owner assignment', () => {
   it('the dashboard never writes assigned_plan_owner_id directly', () => {
@@ -47,5 +56,17 @@ describe('plan-owner assignment', () => {
   it("the RPC reads the caller from auth.uid() and locks the caller's profile before counting", () => {
     expect(rpcSql).toContain('v_uid uuid := auth.uid();');
     expect(rpcSql).toMatch(/perform 1 from public\.user_profiles where id = v_uid for update/);
+  });
+
+  it('claim approval never creates a paid plan-slot assignment, and keeps the ownership guard', () => {
+    const code = executableLines(claimTrigger);
+    expect(code).not.toMatch(/assigned_plan_owner_id/);
+    expect(code).toMatch(/already has an owner/);
+    expect(code).toMatch(/claimed_at = coalesce\(claimed_at, now\(\)\)/);
+  });
+
+  it('verification comes from the approved claim fields, not from the paid assignment', () => {
+    expect(myFacilities).not.toMatch(/owner_id === facility\.assigned_plan_owner_id/);
+    expect(myFacilities).toMatch(/facility\.owner_id && facility\.claimed_at/);
   });
 });

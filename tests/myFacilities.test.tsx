@@ -13,6 +13,7 @@ const facilitiesFixture = [
   {
     id: 'fac-1',
     owner_id: 'user-1',
+    claimed_at: '2026-01-10T12:00:00.000Z',
     assigned_plan_owner_id: 'user-1',
     name: 'Golden Oaks',
     city: 'Austin',
@@ -28,6 +29,7 @@ const facilitiesFixture = [
   {
     id: 'fac-2',
     owner_id: 'user-1',
+    claimed_at: '2026-01-11T12:00:00.000Z',
     assigned_plan_owner_id: null,
     name: 'Harbor View',
     city: 'Dallas',
@@ -39,6 +41,22 @@ const facilitiesFixture = [
     min_price: null,
     address_line1: null,
     updated_at: '2026-02-14T12:00:00.000Z',
+  },
+  {
+    id: 'fac-3',
+    owner_id: 'user-1',
+    claimed_at: null,
+    assigned_plan_owner_id: null,
+    name: 'Pending Clinic',
+    city: 'Waco',
+    state: 'TX',
+    description: 'Short',
+    phone: null,
+    website: null,
+    email: null,
+    min_price: null,
+    address_line1: null,
+    updated_at: '2026-02-13T12:00:00.000Z',
   },
 ];
 
@@ -109,7 +127,17 @@ describe('MyFacilities', () => {
 
     await screen.findByText('Golden Oaks');
     expect(screen.getByText('Harbor View')).toBeInTheDocument();
-    expect(screen.getByText('Showing 2 of 2 facilities')).toBeInTheDocument();
+    expect(screen.getByText('Showing 3 of 3 facilities')).toBeInTheDocument();
+  });
+
+  it('marks a facility verified from its approved claim, whether or not it holds a paid slot', async () => {
+    render(<MyFacilities />);
+    await screen.findByText('Golden Oaks');
+    // Golden Oaks holds a paid slot; Harbor View does not. Both are verified because both have an approved claim.
+    // Option elements in the status filter also read "Verified", so only labels outside the filter are counted.
+    const labels = screen.getAllByText('Verified').filter((el) => el.tagName !== 'OPTION');
+    expect(labels).toHaveLength(2);
+    expect(screen.getByText('Pending Review')).toBeInTheDocument();
   });
 
   it('filters facilities by search query', async () => {
