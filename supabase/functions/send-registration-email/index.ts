@@ -7,9 +7,9 @@ const corsHeaders = {
     "Access-Control-Max-Age": "86400",
 }
 
-const brevoApiKey = Deno.env.get("BREVO_API_KEY");
-const brevoSenderEmail = Deno.env.get("BREVO_SENDER_EMAIL") || "andrew@silvertechdirectory.com";
-const brevoSenderName = Deno.env.get("BREVO_SENDER_NAME") || "SilverTech Directory";
+const resendApiKey = Deno.env.get("RESEND_API_KEY");
+const resendSenderEmail = Deno.env.get("RESEND_FROM_EMAIL") || "andrew@silvertechdirectory.com";
+const resendSenderName = Deno.env.get("RESEND_FROM_NAME") || "SilverTech Directory";
 
 serve(async (req) => {
     if (req.method === "OPTIONS") {
@@ -17,8 +17,8 @@ serve(async (req) => {
     }
 
     try {
-        if (!brevoApiKey) {
-            throw new Error("BREVO_API_KEY is not set in environment variables.");
+        if (!resendApiKey) {
+            throw new Error("RESEND_API_KEY is not set in environment variables.");
         }
 
         const { email } = await req.json();
@@ -28,8 +28,8 @@ serve(async (req) => {
         }
 
         const payload = {
-            sender: { name: brevoSenderName, email: brevoSenderEmail },
-            to: [{ email }],
+            from: `${resendSenderName} <${resendSenderEmail}>`,
+            to: [email],
             subject: "Welcome to SilverTech Directory!",
             htmlContent: `
             <html>
@@ -48,19 +48,18 @@ serve(async (req) => {
         `,
         };
 
-        const brevoResponse = await fetch("https://api.brevo.com/v3/smtp/email", {
+        const resendResponse = await fetch("https://api.resend.com/emails", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Accept": "application/json",
-                "api-key": brevoApiKey,
+                "Authorization": `Bearer ${resendApiKey}`,
             },
             body: JSON.stringify(payload),
         });
 
-        if (!brevoResponse.ok) {
-            const errorText = await brevoResponse.text();
-            throw new Error(`Brevo API request failed (${brevoResponse.status}): ${errorText}`);
+        if (!resendResponse.ok) {
+            const errorText = await resendResponse.text();
+            throw new Error(`Resend API request failed (${resendResponse.status}): ${errorText}`);
         }
 
         return new Response(

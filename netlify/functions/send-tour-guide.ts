@@ -1,12 +1,12 @@
 /**
  * POST /.netlify/functions/send-tour-guide
  *
- * Sends a single branded tour-prep email via Brevo REST API.
+ * Sends a single branded tour-prep email via the Resend API.
  * Logs aggregate interest to facility_tour_interest (no PII stored per facility).
  *
  * Requires env vars:
- *   BREVO_API_KEY          — Brevo API key (Settings > API Keys in Brevo dashboard)
- *   BREVO_FROM_EMAIL       — Verified sender email (already set)
+ *   RESEND_API_KEY         — Resend API key with sending access
+ *   RESEND_FROM_EMAIL      — Sender on the verified domain (default hello@silvertechdirectory.com)
  *   VITE_SUPABASE_URL      — Supabase project URL
  *   VITE_SUPABASE_ANON_KEY — Supabase anon key (public insert only)
  */
@@ -186,29 +186,25 @@ export const handler: Handler = async (event) => {
   const previewQuestions = PREVIEW_QUESTIONS[careType] || PREVIEW_QUESTIONS['assisted-living'];
   const careLabel = CARE_TYPE_LABELS[careType] || 'Senior Care';
 
-  // 1. Send one email via Brevo REST API
-  const brevoApiKey = process.env.BREVO_API_KEY;
-  if (!brevoApiKey) {
-    console.error('BREVO_API_KEY not set');
+  // 1. Send one email via the Resend API
+  const resendApiKey = process.env.RESEND_API_KEY;
+  if (!resendApiKey) {
+    console.error('RESEND_API_KEY not set');
     return { statusCode: 500, body: JSON.stringify({ error: 'Email service not configured' }) };
   }
 
   try {
-    const emailRes = await fetch('https://api.brevo.com/v3/smtp/email', {
+    const emailRes = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
-        'accept': 'application/json',
         'content-type': 'application/json',
-        'api-key': brevoApiKey,
+        authorization: `Bearer ${resendApiKey}`,
       },
       body: JSON.stringify({
-        sender: {
-          name: 'SilverTech Directory',
-          email: process.env.BREVO_FROM_EMAIL || 'hello@silvertechdirectory.com',
-        },
-        to: [{ email }],
+        from: `SilverTech Directory <${process.env.RESEND_FROM_EMAIL || 'hello@silvertechdirectory.com'}>`,
+        to: [email],
         subject: `Your tour prep guide for ${facilityName}`,
-        htmlContent: buildEmailHtml({
+        html: buildEmailHtml({
           facilityName,
           facilityAddress: facilityAddress || '',
           facilityPhone: facilityPhone || '',
@@ -216,13 +212,16 @@ export const handler: Handler = async (event) => {
           guideUrl,
           previewQuestions,
         }),
-        tags: ['tour-guide', careType],
+        tags: [
+          { name: 'category', value: 'tour-guide' },
+          { name: 'care_type', value: careType },
+        ],
       }),
     });
 
     if (!emailRes.ok) {
       const errText = await emailRes.text();
-      console.error('Brevo error:', errText);
+      console.error('Resend error:', errText);
       return { statusCode: 502, body: JSON.stringify({ error: 'Failed to send email' }) };
     }
   } catch (err) {
