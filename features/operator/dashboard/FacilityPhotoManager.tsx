@@ -159,7 +159,7 @@ export const FacilityPhotoManager: React.FC<FacilityPhotoManagerProps> = ({ faci
       {photos.length === 0 ? (
         <div className="text-center py-12 bg-slate-50 rounded-lg border-2 border-dashed border-slate-200">
           <ImageIcon className="w-12 h-12 text-slate-300 mx-auto mb-3" />
-          <p className="text-slate-500 font-medium">No photos added yet</p>
+          <p className="text-slate-600 font-medium">No photos added yet</p>
           <p className="text-sm text-slate-400 mt-1">Upload photos to showcase your facility</p>
         </div>
       ) : (

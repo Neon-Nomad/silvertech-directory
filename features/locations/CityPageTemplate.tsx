@@ -174,7 +174,7 @@ export const CityPageTemplate: React.FC = () => {
             ]}
           />
           <div className="mt-6 max-w-4xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">City Directory</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600">City Directory</p>
             <h1 className="mt-3 text-4xl font-bold text-slate-900">
               {careTypeLabel} in {cityName}, {stateDef.abbreviation}
             </h1>
@@ -218,11 +218,11 @@ export const CityPageTemplate: React.FC = () => {
             </div>
 
             {loading ? (
-              <div className="rounded-xl border border-slate-200 bg-white p-12 text-center text-slate-500">
+              <div className="rounded-xl border border-slate-200 bg-white p-12 text-center text-slate-600">
                 Loading communities in {cityName}...
               </div>
             ) : facilities.length === 0 ? (
-              <div className="rounded-xl border border-slate-200 bg-white p-12 text-center text-slate-500">
+              <div className="rounded-xl border border-slate-200 bg-white p-12 text-center text-slate-600">
                 No primary {careTypeLabel.toLowerCase()} listings are available in {cityName} yet.
               </div>
             ) : (

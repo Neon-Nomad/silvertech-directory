@@ -15,7 +15,7 @@ export const ComparisonBar: React.FC = () => {
           <div className="flex items-center gap-6">
             <div className="hidden sm:block">
               <span className="font-bold text-slate-900">{selectedFacilities.length}</span>
-              <span className="text-slate-500 ml-1">selected to compare</span>
+              <span className="text-slate-600 ml-1">selected to compare</span>
             </div>
 
             <div className="flex items-center gap-3">
@@ -44,7 +44,7 @@ export const ComparisonBar: React.FC = () => {
           <div className="flex items-center gap-4">
             <button
               onClick={clearComparison}
-              className="text-sm text-slate-500 hover:text-slate-700 font-medium hidden sm:block"
+              className="text-sm text-slate-600 hover:text-slate-700 font-medium hidden sm:block"
             >
               Clear All
             </button>

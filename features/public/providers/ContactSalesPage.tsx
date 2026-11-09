@@ -241,7 +241,7 @@ export const ContactSalesPage: React.FC = () => {
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
 
-              <p className="text-xs text-center text-slate-500">
+              <p className="text-xs text-center text-slate-600">
                 By submitting this form, you agree to our Terms of Service and Privacy Policy.
               </p>
             </form>

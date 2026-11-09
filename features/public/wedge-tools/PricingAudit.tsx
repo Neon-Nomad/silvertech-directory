@@ -197,7 +197,7 @@ const PricingAudit: React.FC = () => {
 
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                  <h3 className="text-sm font-medium text-slate-500 mb-1">Your Average Rate</h3>
+                  <h3 className="text-sm font-medium text-slate-600 mb-1">Your Average Rate</h3>
                   <p className="text-3xl font-bold text-slate-900">${analysis.userRate.toLocaleString()}</p>
                   <div className="mt-4 h-2 bg-slate-200 rounded-full overflow-hidden">
                     <div 
@@ -207,7 +207,7 @@ const PricingAudit: React.FC = () => {
                   </div>
                 </div>
                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                  <h3 className="text-sm font-medium text-slate-500 mb-1">Market Average</h3>
+                  <h3 className="text-sm font-medium text-slate-600 mb-1">Market Average</h3>
                   <p className="text-3xl font-bold text-slate-900">${analysis.marketRate.toLocaleString()}</p>
                   <div className="mt-4 h-2 bg-slate-200 rounded-full overflow-hidden">
                     <div 

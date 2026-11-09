@@ -95,7 +95,7 @@ export const Map: React.FC<MapProps> = ({ facilities = [], center, zoom = 11 }) 
             <Popup>
               <div className="p-2 min-w-[200px]">
                 <h3 className="font-bold text-sm mb-1">{facility.name}</h3>
-                <p className="text-xs text-slate-500 mb-2">{facility.address}</p>
+                <p className="text-xs text-slate-600 mb-2">{facility.address}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-xs font-medium bg-primary-50 text-primary-700 px-2 py-0.5 rounded">
                     {facility.type}

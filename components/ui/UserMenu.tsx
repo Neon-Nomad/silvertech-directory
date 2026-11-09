@@ -56,7 +56,7 @@ export const UserMenu: React.FC = () => {
         <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-slate-100 py-1 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
           <div className="px-4 py-3 border-b border-slate-50">
             <p className="text-sm font-medium text-slate-900 truncate">Account</p>
-            <p className="text-xs text-slate-500 truncate">{user.email}</p>
+            <p className="text-xs text-slate-600 truncate">{user.email}</p>
           </div>
           
           <div className="border-t border-slate-50 py-1">

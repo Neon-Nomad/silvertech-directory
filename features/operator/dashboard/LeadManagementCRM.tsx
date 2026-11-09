@@ -54,7 +54,7 @@ export const LeadManagementCRM: React.FC = () => {
 
       <div className="overflow-x-auto">
         <table className="w-full text-sm text-left">
-          <thead className="bg-slate-50 text-slate-500 font-medium">
+          <thead className="bg-slate-50 text-slate-600 font-medium">
             <tr>
               <th className="px-6 py-4">Name</th>
               <th className="px-6 py-4">Interest</th>
@@ -75,7 +75,7 @@ export const LeadManagementCRM: React.FC = () => {
                   </span>
                 </td>
                 <td className="px-6 py-4 text-slate-600">{lead.budget}</td>
-                <td className="px-6 py-4 text-slate-500">{lead.date}</td>
+                <td className="px-6 py-4 text-slate-600">{lead.date}</td>
                 <td className="px-6 py-4 text-right">
                   <div className="flex justify-end gap-2">
                     <button className="p-1 text-slate-400 hover:text-primary-600 transition-colors" title="Call">

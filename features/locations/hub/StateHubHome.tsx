@@ -178,9 +178,9 @@ export const StateHubHome: React.FC = () => {
           </div>
 
           {loading ? (
-            <p className="text-slate-500">Loading city directory...</p>
+            <p className="text-slate-600">Loading city directory...</p>
           ) : cities.length === 0 ? (
-            <p className="text-slate-500">No city inventory found yet for this state.</p>
+            <p className="text-slate-600">No city inventory found yet for this state.</p>
           ) : (
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {cities.map((city) => (

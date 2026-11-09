@@ -33,7 +33,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               <Star key={i} className={`w-4 h-4 ${i < stars ? 'fill-current' : 'text-slate-300'}`} />
             ))}
           </div>
-          <span className="text-xs text-slate-500 ml-2">({reviews} reviews)</span>
+          <span className="text-xs text-slate-600 ml-2">({reviews} reviews)</span>
         </div>
 
         <p className="text-sm text-slate-600 mb-4 flex-1 line-clamp-3">

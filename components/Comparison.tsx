@@ -17,7 +17,7 @@ export const Comparison: React.FC = () => {
       
       <div className="overflow-hidden bg-white rounded-xl shadow-sm border border-slate-200">
         <div className="grid grid-cols-3 bg-slate-50 p-6 border-b border-slate-200">
-          <div className="font-medium text-slate-500">Feature</div>
+          <div className="font-medium text-slate-600">Feature</div>
           <div className="font-bold text-slate-900 text-center">Legacy Incumbents</div>
           <div className="font-bold text-primary-600 text-center">SilverTech</div>
         </div>
@@ -25,7 +25,7 @@ export const Comparison: React.FC = () => {
         {features.map((item, index) => (
           <div key={index} className="grid grid-cols-3 p-6 border-b border-slate-100 hover:bg-slate-50/50 transition-colors items-center">
             <div className="font-medium text-slate-700">{item.name}</div>
-            <div className="text-center text-slate-500 text-sm flex flex-col items-center">
+            <div className="text-center text-slate-600 text-sm flex flex-col items-center">
                <span className="mb-1">{item.legacy}</span>
                <X className="w-4 h-4 text-red-400" />
             </div>

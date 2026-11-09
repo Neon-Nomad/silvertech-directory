@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
               </Button>
             </div>
 
-            <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col sm:flex-row gap-8 text-sm text-slate-500">
+            <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col sm:flex-row gap-8 text-sm text-slate-600">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                 <span>Programmatic State Data</span>
@@ -85,7 +85,7 @@ export const Hero: React.FC = () => {
               </div>
               <div>
                 <p className="text-sm font-bold text-slate-900">Live Availability</p>
-                <p className="text-xs text-slate-500">Updated 2 mins ago</p>
+                <p className="text-xs text-slate-600">Updated 2 mins ago</p>
               </div>
             </div>
           </div>

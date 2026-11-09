@@ -16,9 +16,9 @@ export const CostsGuide: React.FC = () => {
 
       <main className="max-w-[920px] mx-auto px-6 py-16">
         <nav className="text-xs text-slate-400 uppercase tracking-widest mb-6">
-          <Link to="/" className="hover:text-gold">Home</Link> <span className="mx-2">/</span>
-          <Link to="/resources/guides" className="hover:text-gold">Resources</Link> <span className="mx-2">/</span>
-          <span className="text-slate-500">What It Costs</span>
+          <Link to="/" className="hover:text-gold-text">Home</Link> <span className="mx-2">/</span>
+          <Link to="/resources/guides" className="hover:text-gold-text">Resources</Link> <span className="mx-2">/</span>
+          <span className="text-slate-600">What It Costs</span>
         </nav>
 
         <h1 className="text-3xl sm:text-4xl font-serif font-bold mb-4">

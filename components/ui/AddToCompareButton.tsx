@@ -58,7 +58,7 @@ export const AddToCompareButton: React.FC<AddToCompareButtonProps> = ({
         ? 'text-primary-600 hover:text-primary-700'
         : isDisabled
           ? 'text-slate-300 cursor-not-allowed'
-          : 'text-slate-500 hover:text-primary-600'
+          : 'text-slate-600 hover:text-primary-600'
         } ${className}`}
       title={isDisabled ? "Comparison list full (3/3)" : ""}
     >

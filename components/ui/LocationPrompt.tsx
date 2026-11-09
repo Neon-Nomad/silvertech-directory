@@ -17,17 +17,21 @@ export const LocationPrompt: React.FC = () => {
 
   if (dismissed || coordinates) return null;
 
+  // A bottom card, not a full-screen modal, so the page stays readable and clickable while it is shown.
   return (
-    <div className="fixed inset-0 z-[80] flex items-center justify-center">
-      <div className="absolute inset-0 bg-slate-900/50" />
-      <div className="relative bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 max-w-md w-full mx-4">
+    <div
+      role="region"
+      aria-label="Location"
+      className="fixed inset-x-0 bottom-0 z-[80] flex justify-center p-4 pointer-events-none"
+    >
+      <div className="pointer-events-auto relative bg-white rounded-2xl shadow-2xl border border-slate-200 p-5 max-w-md w-full">
         <div className="flex items-center gap-3 mb-3">
           <div className="w-10 h-10 rounded-full bg-warm-gray flex items-center justify-center">
             <MapPin className="w-5 h-5 text-slate-600" />
           </div>
           <div>
             <h3 className="text-lg font-semibold text-slate-900">Enable location?</h3>
-            <p className="text-sm text-slate-500">See nearby senior living options faster.</p>
+            <p className="text-sm text-slate-600">See nearby senior living options faster.</p>
           </div>
         </div>
 

@@ -202,7 +202,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
             <p className="text-sm uppercase tracking-[0.2em] text-slate-600">Research Tool • SilverTech</p>
             <h2 className="text-2xl font-serif font-semibold text-slate-900">Compare Similar Homes</h2>
           </div>
-          <button onClick={onClose} className="p-2 rounded-full hover:bg-white/80 text-slate-500">
+          <button onClick={onClose} className="p-2 rounded-full hover:bg-white/80 text-slate-600">
             <X size={20} />
           </button>
         </div>
@@ -239,7 +239,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
 
               <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs uppercase tracking-[0.3em] text-slate-500 font-semibold">Best Match</span>
+                  <span className="text-xs uppercase tracking-[0.3em] text-slate-600 font-semibold">Best Match</span>
                   {selected && (
                     <span className="text-xs uppercase tracking-[0.3em] text-primary-700 font-semibold bg-primary-50 px-2 py-1 rounded-full">
                       {selectedPercent}% Match
@@ -289,13 +289,13 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
               <h4 className="text-sm font-semibold text-slate-900 mb-3">Side-by-side snapshot</h4>
               <div className="grid sm:grid-cols-2 gap-4 text-sm">
                 <div className="bg-slate-50 rounded-xl p-4">
-                  <p className="text-sm uppercase text-slate-500 mb-2">{baseFacility.name}</p>
+                  <p className="text-sm uppercase text-slate-600 mb-2">{baseFacility.name}</p>
                   <p className="text-slate-700"><strong>Price:</strong> {baseFacility.min_price ? `$${baseFacility.min_price.toLocaleString()}` : 'Call'}{baseFacility.max_price ? ` - $${baseFacility.max_price.toLocaleString()}` : ''}</p>
                   <p className="text-slate-700"><strong>Care:</strong> {baseCareTypes.join(', ') || 'Assisted Living'}</p>
                   <p className="text-slate-700"><strong>Phone:</strong> {baseFacility.phone || 'Not listed'}</p>
                 </div>
                 <div className="bg-slate-50 rounded-xl p-4">
-                  <p className="text-sm uppercase text-slate-500 mb-2">{selected?.name || 'Select a home'}</p>
+                  <p className="text-sm uppercase text-slate-600 mb-2">{selected?.name || 'Select a home'}</p>
                   <p className="text-slate-700"><strong>Price:</strong> {selected?.min_price ? `$${selected.min_price.toLocaleString()}` : 'Call'}{selected?.max_price ? ` - $${selected.max_price.toLocaleString()}` : ''}</p>
                   <p className="text-slate-700"><strong>Care:</strong> {selected ? getCareTypes(selected).join(', ') || 'Assisted Living' : '—'}</p>
                   <p className="text-slate-700"><strong>Phone:</strong> {selected?.phone || 'Not listed'}</p>
@@ -331,11 +331,11 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
             <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-semibold text-slate-900">Top comparable homes</h3>
-                <span className="text-sm text-slate-500">Top 5</span>
+                <span className="text-sm text-slate-600">Top 5</span>
               </div>
 
               {loading && (
-                <div className="py-10 text-center text-slate-500">Finding similar homes...</div>
+                <div className="py-10 text-center text-slate-600">Finding similar homes...</div>
               )}
 
               {error && (
@@ -391,7 +391,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
             <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm">
               <div className="flex items-center justify-between mb-4">
                 <div>
-                  <p className="text-sm uppercase tracking-[0.2em] text-slate-500">Tour Notes & Answers</p>
+                  <p className="text-sm uppercase tracking-[0.2em] text-slate-600">Tour Notes & Answers</p>
                   <h3 className="text-lg font-semibold text-slate-900">Use these questions to compare</h3>
                 </div>
                 <div className="flex items-center gap-2">
@@ -454,7 +454,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
                         <p className="text-sm font-semibold text-slate-900 mb-3">{question.prompt}</p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                           <div className="space-y-2">
-                            <p className="text-sm uppercase tracking-[0.2em] text-slate-500">{baseFacility.name}</p>
+                            <p className="text-sm uppercase tracking-[0.2em] text-slate-600">{baseFacility.name}</p>
                             <AnswerField
                               value={getAnswer(baseFacility?.id, question.id)}
                               onChange={(value) => setAnswer(baseFacility?.id, question.id, value)}
@@ -462,7 +462,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
                             />
                           </div>
                           <div className="space-y-2">
-                            <p className="text-sm uppercase tracking-[0.2em] text-slate-500">{selected?.name || 'Select a home'}</p>
+                            <p className="text-sm uppercase tracking-[0.2em] text-slate-600">{selected?.name || 'Select a home'}</p>
                             <AnswerField
                               value={getAnswer(selected?.id, question.id)}
                               onChange={(value) => selected?.id && setAnswer(selected?.id, question.id, value)}
@@ -496,7 +496,7 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
 
           {COMPARE_TOPICS.map((topic) => (
             <div key={topic.id} className="print-section mb-6">
-              <h2 className="text-sm uppercase tracking-[0.2em] text-slate-500 mb-3">{topic.label}</h2>
+              <h2 className="text-sm uppercase tracking-[0.2em] text-slate-600 mb-3">{topic.label}</h2>
               <div className="space-y-4">
                 {topic.questions.map((question) => {
                   const baseValue =
@@ -512,11 +512,11 @@ export const CompareToolModal: React.FC<CompareToolModalProps> = ({ isOpen, onCl
                       <p className="text-sm font-semibold text-slate-900 mb-2">{question.prompt}</p>
                       <div className="grid grid-cols-2 gap-4 text-sm">
                         <div>
-                          <p className="text-sm uppercase tracking-[0.2em] text-slate-500 mb-1">{baseFacility.name}</p>
+                          <p className="text-sm uppercase tracking-[0.2em] text-slate-600 mb-1">{baseFacility.name}</p>
                           <p className="text-slate-700">{baseValue}</p>
                         </div>
                         <div>
-                          <p className="text-sm uppercase tracking-[0.2em] text-slate-500 mb-1">{selected?.name || 'Second community'}</p>
+                          <p className="text-sm uppercase tracking-[0.2em] text-slate-600 mb-1">{selected?.name || 'Second community'}</p>
                           <p className="text-slate-700">{selectedValue}</p>
                         </div>
                       </div>

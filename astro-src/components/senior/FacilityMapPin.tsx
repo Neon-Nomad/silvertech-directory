@@ -63,7 +63,7 @@ export default function FacilityMapPin({ lat, lng, name, address, mapUrl }: Prop
         }),
       });
       marker.bindPopup(
-        `<strong>${escapeHtml(name)}</strong><br/><span style="font-size:0.82rem;color:#64748b">${escapeHtml(address)}</span>`,
+        `<strong>${escapeHtml(name)}</strong><br/><span style="font-size:0.82rem;color:#475569">${escapeHtml(address)}</span>`,
         { maxWidth: 220 },
       );
       marker.addTo(map);

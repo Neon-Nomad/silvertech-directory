@@ -414,7 +414,7 @@ export const StateRegulationTopicPage: React.FC = () => {
               { label: config.title, path: `/regulations/${stateDef.slug}/${topic}/` },
             ]}
           />
-          <Link to={`/regulations/${stateDef.slug}/`} className="inline-flex items-center text-sm text-slate-500 hover:text-gold">
+          <Link to={`/regulations/${stateDef.slug}/`} className="inline-flex items-center text-sm text-slate-600 hover:text-gold-text">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to {stateDef.name} regulations
           </Link>
@@ -424,14 +424,14 @@ export const StateRegulationTopicPage: React.FC = () => {
           <p className="text-lg text-slate-600 max-w-3xl">
             {config.summary} This guide explains what it means for families in {stateDef.name}.
           </p>
-          <p className="mt-3 text-sm text-slate-500 max-w-3xl">
+          <p className="mt-3 text-sm text-slate-600 max-w-3xl">
             This guide explains what the rules mean and how families can use them when comparing communities.
           </p>
           <p className="mt-4 text-sm text-slate-600 max-w-3xl">
             {introLine}
           </p>
           {stateNotice && (
-            <p className="mt-4 text-sm text-slate-500 max-w-3xl">
+            <p className="mt-4 text-sm text-slate-600 max-w-3xl">
               {stateNotice}
             </p>
           )}
@@ -448,7 +448,7 @@ export const StateRegulationTopicPage: React.FC = () => {
         <div className="grid lg:grid-cols-[1.4fr_1fr] gap-10">
           <div className="space-y-8">
             <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">Direct answer</span>
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold-text block mb-2">Direct answer</span>
               <p className="text-slate-700 text-base leading-relaxed">
                 {directAnswerLine || directAnswer || 'This rule sets baseline expectations for how communities operate and what families can ask about during tours. We are compiling the latest state guidance for this topic.'}
               </p>
@@ -460,7 +460,7 @@ export const StateRegulationTopicPage: React.FC = () => {
             </section>
 
             <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">SilverTech explanation</span>
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold-text block mb-2">SilverTech explanation</span>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {silverTechInsight ? `${insightLead} ${silverTechInsight}` : 'Use this section to understand how the rule is applied in real day-to-day operations.'}
               </p>
@@ -468,7 +468,7 @@ export const StateRegulationTopicPage: React.FC = () => {
                 <div className="mt-4">
                   <Link
                     to={`/states/${stateDef.slug}/ombudsman`}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-charcoal hover:text-gold transition-colors"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-charcoal hover:text-gold-text transition-colors"
                   >
                     <ArrowRight className="w-4 h-4" />
                     Contact the Long-Term Care Ombudsman
@@ -478,7 +478,7 @@ export const StateRegulationTopicPage: React.FC = () => {
             </section>
 
             <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">Questions you can ask</span>
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold-text block mb-2">Questions you can ask</span>
               <p className="text-sm text-slate-600 mb-3">
                 When you visit or call a community, these questions can help you understand how the rules are applied in real life.
               </p>
@@ -493,13 +493,13 @@ export const StateRegulationTopicPage: React.FC = () => {
             </section>
 
             <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">Quick facts</span>
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold-text block mb-2">Quick facts</span>
               <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
                 {quickFacts.map((fact) => (
                   <div key={fact.label} className="border border-slate-200 rounded-xl p-4 bg-warm-gray/60">
-                    <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">{fact.label}</p>
+                    <p className="text-xs font-bold uppercase tracking-widest text-slate-600 mb-2">{fact.label}</p>
                     {fact.href ? (
-                      <a href={fact.href} target="_blank" rel="noreferrer" className="text-sm font-semibold text-charcoal hover:text-gold">
+                      <a href={fact.href} target="_blank" rel="noreferrer" className="text-sm font-semibold text-charcoal hover:text-gold-text">
                         {fact.value}
                       </a>
                     ) : (
@@ -508,22 +508,22 @@ export const StateRegulationTopicPage: React.FC = () => {
                   </div>
                 ))}
                 <div className="border border-slate-200 rounded-xl p-4 bg-warm-gray/60">
-                  <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Inspection cadence</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-slate-600 mb-2">Inspection cadence</p>
                   <p className="text-sm font-semibold text-charcoal">{inspectionCadence || 'See state inspection guidance'}</p>
                 </div>
                 <div className="border border-slate-200 rounded-xl p-4 bg-warm-gray/60">
-                  <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Last reviewed</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-slate-600 mb-2">Last reviewed</p>
                   <p className="text-sm font-semibold text-charcoal">{updatedLabel}</p>
                 </div>
               </div>
             </section>
 
             <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold block mb-2">Official wording</span>
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gold-text block mb-2">Official wording</span>
               {loading ? (
-                <p className="text-slate-500 text-sm">Loading official guidance...</p>
+                <p className="text-slate-600 text-sm">Loading official guidance...</p>
               ) : hasTopicContent ? (
-                <div className="prose prose-slate max-w-none text-slate-600 prose-headings:font-serif prose-headings:text-charcoal prose-h3:text-lg prose-h4:text-base prose-a:text-gold prose-a:no-underline hover:prose-a:underline">
+                <div className="prose prose-slate max-w-none text-slate-600 prose-headings:font-serif prose-headings:text-charcoal prose-h3:text-lg prose-h4:text-base prose-a:text-gold-text prose-a:no-underline hover:prose-a:underline">
                   {topicSections.map((section, index) => (
                     <div key={`${section.title}-${index}`} className="mb-6">
                       <h3>{section.title}</h3>
@@ -541,7 +541,7 @@ export const StateRegulationTopicPage: React.FC = () => {
                       href={data.contacts_json.licensing.website}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-gold"
+                      className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-gold-text"
                     >
                       <FileText className="w-4 h-4" />
                       View official state guidance
@@ -560,7 +560,7 @@ export const StateRegulationTopicPage: React.FC = () => {
               <h2 className="text-sm font-semibold text-charcoal mb-4 uppercase tracking-widest">Related topics</h2>
               <div className="space-y-3">
                 {relatedTopics.map((item) => (
-                  <Link key={item.href} to={item.href} className="flex items-center justify-between gap-3 text-sm text-slate-600 hover:text-gold">
+                  <Link key={item.href} to={item.href} className="flex items-center justify-between gap-3 text-sm text-slate-600 hover:text-gold-text">
                     <span>{item.title}</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -571,15 +571,15 @@ export const StateRegulationTopicPage: React.FC = () => {
             <section className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h2 className="text-sm font-semibold text-charcoal mb-4 uppercase tracking-widest">Next steps for families</h2>
               <div className="space-y-3 text-sm text-slate-600">
-                <Link to={`/assisted-living/${stateDef.slug}/`} className="flex items-center gap-2 hover:text-gold">
+                <Link to={`/assisted-living/${stateDef.slug}/`} className="flex items-center gap-2 hover:text-gold-text">
                   <ArrowRight className="w-4 h-4" />
                   Browse assisted living in {stateDef.name}
                 </Link>
-                <Link to="/resources/guides" className="flex items-center gap-2 hover:text-gold">
+                <Link to="/resources/guides" className="flex items-center gap-2 hover:text-gold-text">
                   <ArrowRight className="w-4 h-4" />
                   Questions to ask on a tour
                 </Link>
-                <Link to={`/assisted-living/${stateDef.slug}/`} className="flex items-center gap-2 hover:text-gold">
+                <Link to={`/assisted-living/${stateDef.slug}/`} className="flex items-center gap-2 hover:text-gold-text">
                   <ArrowRight className="w-4 h-4" />
                   Compare communities near you
                 </Link>
@@ -593,7 +593,7 @@ export const StateRegulationTopicPage: React.FC = () => {
                   href={data.contacts_json.licensing.website}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-gold"
+                  className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-gold-text"
                 >
                   <FileText className="w-4 h-4" />
                   State licensing portal

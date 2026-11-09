@@ -180,7 +180,7 @@ const OperatorLogin: React.FC = () => {
               <div className="w-full border-t border-slate-300" />
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-2 bg-white text-slate-500">
+              <span className="px-2 bg-white text-slate-600">
                 Or continue with email
               </span>
             </div>
@@ -274,7 +274,7 @@ const OperatorLogin: React.FC = () => {
                 <div className="w-full border-t border-slate-300" />
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-2 bg-white text-slate-500">
+                <span className="px-2 bg-white text-slate-600">
                   Don't have an account?
                 </span>
               </div>

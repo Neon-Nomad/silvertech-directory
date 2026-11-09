@@ -174,7 +174,7 @@ export const ClaimFacilityPage: React.FC = () => {
             If your business details match our trust checks, verification can happen automatically.
             Otherwise our team reviews within 24-48 hours.
           </p>
-          <p className="text-sm text-slate-500 mb-4">
+          <p className="text-sm text-slate-600 mb-4">
             You can continue setting up your operator account while this claim is under review.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
@@ -249,7 +249,7 @@ export const ClaimFacilityPage: React.FC = () => {
             </div>
             <div>
               <h2 className="font-bold text-slate-900">{facility?.name}</h2>
-              <p className="text-sm text-slate-500">{facility?.address_line1}, {facility?.city}, {facility?.state}</p>
+              <p className="text-sm text-slate-600">{facility?.address_line1}, {facility?.city}, {facility?.state}</p>
             </div>
           </div>
 
@@ -282,7 +282,7 @@ export const ClaimFacilityPage: React.FC = () => {
                   aria-invalid={Boolean(error)}
                   aria-describedby={error ? `${businessEmailHintId} ${formErrorId}` : businessEmailHintId}
                 />
-                <p id={businessEmailHintId} className="mt-1 text-xs text-slate-500">Please use an email address associated with the facility.</p>
+                <p id={businessEmailHintId} className="mt-1 text-xs text-slate-600">Please use an email address associated with the facility.</p>
               </div>
 
               <div>

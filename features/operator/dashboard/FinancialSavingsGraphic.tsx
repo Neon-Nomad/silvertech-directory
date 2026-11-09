@@ -17,7 +17,7 @@ export const FinancialSavingsGraphic: React.FC = () => {
       <div className="p-6 grid md:grid-cols-2 gap-8">
         {/* Incumbent Model */}
         <div className="space-y-4 opacity-75">
-          <h4 className="font-semibold text-slate-500 uppercase tracking-wider text-sm border-b border-slate-100 pb-2">
+          <h4 className="font-semibold text-slate-600 uppercase tracking-wider text-sm border-b border-slate-100 pb-2">
             Traditional Agency
           </h4>
           <div className="flex justify-between items-center text-red-600 font-medium">
@@ -34,7 +34,7 @@ export const FinancialSavingsGraphic: React.FC = () => {
               <span>$60,500</span>
             </div>
           </div>
-          <ul className="text-xs text-slate-500 space-y-2 mt-4">
+          <ul className="text-xs text-slate-600 space-y-2 mt-4">
             <li className="flex items-center gap-2"><XCircle className="w-4 h-4 text-red-400" /> Opaque Lead Ownership</li>
             <li className="flex items-center gap-2"><XCircle className="w-4 h-4 text-red-400" /> Gatekept Family Data</li>
           </ul>

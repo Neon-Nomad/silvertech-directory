@@ -35,7 +35,7 @@ export const HealthcareScoreCard: React.FC<HealthcareScoreCardProps> = ({ score,
         {/* Nearest Hospital */}
         {nearestHospital ? (
           <div>
-            <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Nearest Hospital</p>
+            <p className="text-xs font-semibold text-slate-600 uppercase tracking-wide mb-2">Nearest Hospital</p>
             <div className="bg-slate-50 rounded-lg p-3 border border-slate-100">
               <div className="flex justify-between items-start mb-1">
                 <span className="font-semibold text-slate-900 text-sm line-clamp-1">{nearestHospital.name}</span>
@@ -44,7 +44,7 @@ export const HealthcareScoreCard: React.FC<HealthcareScoreCardProps> = ({ score,
                 </span>
               </div>
               
-              <div className="flex items-center gap-1 text-xs text-slate-500 mb-2">
+              <div className="flex items-center gap-1 text-xs text-slate-600 mb-2">
                 <MapPin size={10} />
                 <span className="truncate">{nearestHospital.address}, {nearestHospital.city}</span>
               </div>
@@ -61,18 +61,18 @@ export const HealthcareScoreCard: React.FC<HealthcareScoreCardProps> = ({ score,
             </div>
           </div>
         ) : (
-             <div className="text-sm text-slate-500 italic">No hospital data available nearby.</div>
+             <div className="text-sm text-slate-600 italic">No hospital data available nearby.</div>
         )}
 
         {/* Stats */}
         <div className="grid grid-cols-2 gap-2">
           <div className="bg-slate-50 p-2 rounded border border-slate-100 text-center">
             <div className="text-lg font-bold text-slate-900">{score.details.erHospitalCount}</div>
-            <div className="text-[10px] text-slate-500 uppercase font-medium">ERs Nearby</div>
+            <div className="text-[10px] text-slate-600 uppercase font-medium">ERs Nearby</div>
           </div>
           <div className="bg-slate-50 p-2 rounded border border-slate-100 text-center">
             <div className="text-lg font-bold text-slate-900">{score.details.totalHospitalCount}</div>
-            <div className="text-[10px] text-slate-500 uppercase font-medium">Total Hospitals</div>
+            <div className="text-[10px] text-slate-600 uppercase font-medium">Total Hospitals</div>
           </div>
         </div>
       </div>

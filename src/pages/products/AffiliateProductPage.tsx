@@ -100,7 +100,7 @@ export const AffiliateProductPage: React.FC = () => {
                 {loading ? (
                     <div className="text-center py-12">
                         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto"></div>
-                        <p className="mt-4 text-slate-500">Loading products...</p>
+                        <p className="mt-4 text-slate-600">Loading products...</p>
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -117,7 +117,7 @@ export const AffiliateProductPage: React.FC = () => {
                                 />
                             ))
                         ) : (
-                            <div className="col-span-full text-center py-12 text-slate-500 bg-white rounded-lg border border-slate-200 border-dashed">
+                            <div className="col-span-full text-center py-12 text-slate-600 bg-white rounded-lg border border-slate-200 border-dashed">
                                 <p>No products found.</p>
                             </div>
                         )}

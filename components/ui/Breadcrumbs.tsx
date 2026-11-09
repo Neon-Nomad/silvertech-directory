@@ -21,7 +21,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
             {item.path && index < items.length - 1 ? (
               <Link
                 to={item.path}
-                className="text-sm text-slate-500 hover:text-gold transition-colors"
+                className="text-sm text-slate-600 hover:text-gold-text transition-colors"
               >
                 {item.label}
               </Link>

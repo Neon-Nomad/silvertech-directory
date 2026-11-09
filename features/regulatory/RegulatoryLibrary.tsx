@@ -59,7 +59,7 @@ export const RegulatoryLibrary: React.FC = () => {
                 { label: 'Regulations', path: '/regulations/' },
               ]}
             />
-            <span className="text-sm font-bold uppercase tracking-[0.3em] text-gold mb-4 block">
+            <span className="text-sm font-bold uppercase tracking-[0.3em] text-gold-text mb-4 block">
               50 State Directory
             </span>
             <h1 className="text-3xl md:text-4xl font-serif font-bold text-charcoal mb-6">
@@ -91,7 +91,7 @@ export const RegulatoryLibrary: React.FC = () => {
         {/* ── State Grid ── */}
         <section className="max-w-[1200px] mx-auto px-6 py-12">
           {letters.length === 0 ? (
-            <p className="text-slate-500 text-center py-12">No states match your search.</p>
+            <p className="text-slate-600 text-center py-12">No states match your search.</p>
           ) : (
             <div className="space-y-12">
               {letters.map((letter) => (
@@ -108,10 +108,10 @@ export const RegulatoryLibrary: React.FC = () => {
                       >
                         <div className="flex items-start gap-4">
                           <div className="w-10 h-10 bg-warm-gray rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-gold/10 transition-colors">
-                            <Scale className="w-5 h-5 text-slate-400 group-hover:text-gold transition-colors" />
+                            <Scale className="w-5 h-5 text-slate-400 group-hover:text-gold-text transition-colors" />
                           </div>
                           <div>
-                            <h3 className="font-bold text-charcoal group-hover:text-gold transition-colors">
+                            <h3 className="font-bold text-charcoal group-hover:text-gold-text transition-colors">
                               {state.name}
                             </h3>
                             <p className="text-sm text-slate-600 mt-1">

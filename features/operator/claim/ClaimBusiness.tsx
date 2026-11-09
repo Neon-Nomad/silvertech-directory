@@ -32,7 +32,7 @@ export const ClaimBusiness: React.FC = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
-        <p className="text-slate-500">Loading...</p>
+        <p className="text-slate-600">Loading...</p>
       </div>
     );
   }
@@ -46,7 +46,7 @@ export const ClaimBusiness: React.FC = () => {
           <h1 className="text-4xl font-extrabold text-slate-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
             Claim Your Business Profile
           </h1>
-          <p className="mt-5 max-w-xl mx-auto text-xl text-slate-500">
+          <p className="mt-5 max-w-xl mx-auto text-xl text-slate-600">
             Take control of your facility's presence on SilverTech Directory. Update your information, respond to reviews, and reach more families.
           </p>
           {selectedPlan && (
@@ -62,7 +62,7 @@ export const ClaimBusiness: React.FC = () => {
               <Building2 className="w-6 h-6 text-primary-600" />
             </div>
             <h3 className="text-lg font-medium text-slate-900 mb-2">Manage Your Info</h3>
-            <p className="text-slate-500">
+            <p className="text-slate-600">
               Keep your facility details, pricing, and availability up to date to attract the right residents.
             </p>
           </div>
@@ -71,7 +71,7 @@ export const ClaimBusiness: React.FC = () => {
               <CheckCircle className="w-6 h-6 text-primary-600" />
             </div>
             <h3 className="text-lg font-medium text-slate-900 mb-2">Verify Your Status</h3>
-            <p className="text-slate-500">
+            <p className="text-slate-600">
               Get the "Verified Partner" badge to build trust with families looking for care.
             </p>
           </div>
@@ -80,7 +80,7 @@ export const ClaimBusiness: React.FC = () => {
               <ArrowRight className="w-6 h-6 text-primary-600" />
             </div>
             <h3 className="text-lg font-medium text-slate-900 mb-2">Connect with Families</h3>
-            <p className="text-slate-500">
+            <p className="text-slate-600">
               Receive inquiries directly and schedule tours with interested families.
             </p>
           </div>
@@ -92,7 +92,7 @@ export const ClaimBusiness: React.FC = () => {
               Create Operator Account
             </Button>
           </Link>
-          <p className="mt-4 text-sm text-slate-500">
+          <p className="mt-4 text-sm text-slate-600">
             Already have an account?{' '}
             <Link to={loginPath} className="text-primary-600 hover:text-primary-500 font-medium">
               Sign In

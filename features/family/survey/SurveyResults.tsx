@@ -61,7 +61,7 @@ export const SurveyResults: React.FC = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">{match.name}</h3>
-                <p className="text-slate-500 mb-4">{match.type}</p>
+                <p className="text-slate-600 mb-4">{match.type}</p>
                 
                 {isUnlocked ? (
                   <div className="space-y-3">

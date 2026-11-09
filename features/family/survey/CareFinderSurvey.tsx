@@ -152,7 +152,7 @@ export const CareFinderSurvey: React.FC = () => {
               style={{ width: `${((currentStep + 1) / questions.length) * 100}%` }}
             />
           </div>
-          <p className="text-right text-sm text-slate-500 mt-2">Step {currentStep + 1} of {questions.length}</p>
+          <p className="text-right text-sm text-slate-600 mt-2">Step {currentStep + 1} of {questions.length}</p>
         </div>
 
         {/* Empathetic Message Overlay */}

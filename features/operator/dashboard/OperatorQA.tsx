@@ -305,7 +305,7 @@ export const OperatorQA: React.FC<OperatorQAProps> = ({ highlightQuestionId = nu
     return (
       <div className="bg-white p-12 rounded-xl shadow-sm border border-slate-200 text-center">
         <h3 className="text-lg font-medium text-slate-900 mb-2">No facilities found</h3>
-        <p className="text-slate-500">Claim a facility to start managing Q&A.</p>
+        <p className="text-slate-600">Claim a facility to start managing Q&A.</p>
       </div>
     );
   }
@@ -329,7 +329,7 @@ export const OperatorQA: React.FC<OperatorQAProps> = ({ highlightQuestionId = nu
         <div key={facility.id} className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold text-slate-900">{facility.name}</h3>
-            <span className="text-xs uppercase tracking-wider text-slate-500">
+            <span className="text-xs uppercase tracking-wider text-slate-600">
               {facilityQuestions.length} question{facilityQuestions.length === 1 ? '' : 's'}
             </span>
           </div>
@@ -447,10 +447,10 @@ export const OperatorQA: React.FC<OperatorQAProps> = ({ highlightQuestionId = nu
                         {question.answers.map((answer) => (
                           <div key={answer.id} className="bg-slate-50 border border-slate-200 rounded-md px-3 py-2">
                             <div className="flex items-center justify-between gap-2">
-                              <p className="text-xs text-slate-500 uppercase tracking-wider">
+                              <p className="text-xs text-slate-600 uppercase tracking-wider">
                                 Your answer ({answer.status})
                               </p>
-                              <p className="text-xs text-slate-500">
+                              <p className="text-xs text-slate-600">
                                 {new Date(answer.created_at).toLocaleDateString()}
                               </p>
                             </div>
@@ -462,7 +462,7 @@ export const OperatorQA: React.FC<OperatorQAProps> = ({ highlightQuestionId = nu
 
                     {!hasAnswer && question.status === 'approved' && (
                       <div className="mt-3">
-                        <label className="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2" htmlFor={`answer-${question.id}`}>
+                        <label className="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-2" htmlFor={`answer-${question.id}`}>
                           Answer this question
                         </label>
                         {isShadowMode ? (
@@ -492,11 +492,11 @@ export const OperatorQA: React.FC<OperatorQAProps> = ({ highlightQuestionId = nu
                               placeholder="Write your response for families..."
                             />
                             <div className="mt-2 flex items-center justify-between">
-                              <span className={`text-xs ${withinBounds ? 'text-slate-500' : 'text-amber-700'}`}>
+                              <span className={`text-xs ${withinBounds ? 'text-slate-600' : 'text-amber-700'}`}>
                                 {trimmedLen}/{ANSWER_MAX_LEN} characters
                               </span>
                               {FEATURE_FLAGS.qa_free_tier_limited_clarification && !isPremium && canAnswerByQuestionId[question.id] && (
-                                <span className="text-xs text-slate-500">
+                                <span className="text-xs text-slate-600">
                                   {canAnswerByQuestionId[question.id].answers_this_month}/1 free responses used this month
                                 </span>
                               )}
