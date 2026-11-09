@@ -640,7 +640,7 @@ const breadcrumbSchema = {
     <p class="fp-claim-bar-text">
       <strong>Is this your facility?</strong> Claim your free listing to manage this profile and reach more families.
     </p>
-    <a href="/for-facilities/" class="fp-btn fp-btn-gold">Claim Listing →</a>
+    <a href={facility.id ? `/claim/${facility.id}` : '/for-facilities/'} class="fp-btn fp-btn-gold">Claim Listing →</a>
   </div>
 
 </Base>
