@@ -29,7 +29,8 @@ dist-ssr
 stripe_backup_code.txt
 supabase/.temp/
 supabase/.branches/
-.claude/
+.claude/*
+!.claude/agents/
 typesense-data/
 artifacts/
 all_senior_living_complete.csv
