@@ -60,6 +60,11 @@ These apply to every session. Do not treat them as optional.
 - Do not re-read a file already read in this session unless it has changed.
 - Keep worktrees to one per active branch. Remove a worktree after its PR merges and check that it is clean first. Scratch files go in the session scratchpad.
 
+## Indexing and SEO
+
+- For Google indexing, crawlability, canonicals, sitemaps, or programmatic SEO, use the `silvertech-indexing` subagent (`.claude/agents/silvertech-indexing.md`). Its dated results live in `docs/indexing/scorecard.md`.
+- Search Console access is read-only. Canonical, sitemap, robots, and routing policy changes need explicit approval.
+
 ## Subagents
 
 - Give a narrow brief and ask for a summary under about 800 words, with no file dumps and no transcripts.
