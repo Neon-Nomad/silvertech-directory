@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useLocation, useParams } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Navbar from '@/components/layout/Navbar';
 import { Home } from '@/features/family/landing/Home';
 import { ScrollToTop } from '@/components/utils/ScrollToTop';
@@ -268,6 +268,10 @@ const AstroStaticRoute: React.FC = () => {
 
 const NotFound: React.FC = () => (
   <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
+    <Helmet>
+      <title>Page not found | SilverTech Directory</title>
+      <meta name="robots" content="noindex, nofollow" />
+    </Helmet>
     <h1 className="text-4xl font-bold text-slate-900 mb-3">Page not found</h1>
     <p className="text-slate-600 mb-6">The page you're looking for doesn't exist.</p>
     <a href="/" className="text-amber-700 underline hover:text-amber-800">Back to home</a>
