@@ -1,0 +1,26 @@
+-- Rollback for claim-eligibility-forward.sql: restores the 19 rows exactly as captured on 2026-11-11.
+-- Expected after rollback: 72246 rows and md5(all ids) e45a0a56505a1700e1767c7d55309286.
+begin;
+insert into public.facility_claim_eligibility (facility_id, source, added_at)
+values
+  ('0a47de07-873a-44b3-bf96-00b501219ef8'::uuid, 'facility-uuid-map', '2026-11-08T20:24:10.767545+00:00'::timestamptz),
+  ('137c18af-2898-4902-ac44-ec33881dae8d'::uuid, 'facility-uuid-map', '2026-11-08T20:33:43.535753+00:00'::timestamptz),
+  ('287de3ec-aca7-4b09-8fcc-83d7981f60be'::uuid, 'facility-uuid-map', '2026-11-08T20:33:52.006096+00:00'::timestamptz),
+  ('358300b1-370f-4f19-98b3-095b7e819aac'::uuid, 'facility-uuid-map', '2026-11-08T20:34:05.460683+00:00'::timestamptz),
+  ('4992af2c-14dc-44a5-a37a-30ff870fc37e'::uuid, 'facility-uuid-map', '2026-11-08T20:34:13.933414+00:00'::timestamptz),
+  ('50a2f2d0-9c1b-40d1-8b0d-710bbf148d44'::uuid, 'facility-uuid-map', '2026-11-08T20:34:13.933414+00:00'::timestamptz),
+  ('583c2981-9db0-4206-8ea9-1ed8e36e64c0'::uuid, 'facility-uuid-map', '2026-11-08T20:34:19.4658+00:00'::timestamptz),
+  ('593bb824-c1aa-49f4-9c87-866a8d0c9dbd'::uuid, 'facility-uuid-map', '2026-11-08T20:34:19.4658+00:00'::timestamptz),
+  ('61f88735-d7f7-4e3f-a8ee-495faf57fe72'::uuid, 'facility-uuid-map', '2026-11-08T20:34:19.4658+00:00'::timestamptz),
+  ('6457dca6-7e98-4f5a-97f3-44021603bc81'::uuid, 'facility-uuid-map', '2026-11-08T20:34:19.4658+00:00'::timestamptz),
+  ('6b3818f0-2822-4ea5-a7da-fb28592086da'::uuid, 'facility-uuid-map', '2026-11-08T20:34:27.075537+00:00'::timestamptz),
+  ('7415f019-ee74-48c5-98e1-f488bb299093'::uuid, 'facility-uuid-map', '2026-11-08T20:34:27.075537+00:00'::timestamptz),
+  ('85fb79cb-7d55-49b8-ae9f-40146850f930'::uuid, 'facility-uuid-map', '2026-11-08T20:34:33.998969+00:00'::timestamptz),
+  ('9cbea41e-7f6d-487b-b934-71d06cc7f07c'::uuid, 'facility-uuid-map', '2026-11-08T20:34:39.185164+00:00'::timestamptz),
+  ('c4fc2c53-4b77-4d07-8c47-2259fda0712b'::uuid, 'facility-uuid-map', '2026-11-08T20:34:55.375638+00:00'::timestamptz),
+  ('d8ad410b-226a-4809-9770-21e679ac4909'::uuid, 'facility-uuid-map', '2026-11-08T20:35:00.875085+00:00'::timestamptz),
+  ('de8d9d70-e314-4421-91b2-4965b3e85baa'::uuid, 'facility-uuid-map', '2026-11-08T20:35:00.875085+00:00'::timestamptz),
+  ('e566f70a-8a8d-4590-b3f5-d1bc6d6d7752'::uuid, 'facility-uuid-map', '2026-11-08T20:35:00.875085+00:00'::timestamptz),
+  ('e688d37e-d37a-449a-a53c-090e33dac4d6'::uuid, 'facility-uuid-map', '2026-11-08T20:35:07.31893+00:00'::timestamptz)
+on conflict (facility_id) do nothing;
+commit;

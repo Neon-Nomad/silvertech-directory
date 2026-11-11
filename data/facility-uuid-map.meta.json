@@ -1,19 +1,24 @@
 {
   "schemaVersion": 1,
-  "canonicalIdentities": 78239,
+  "canonicalIdentities": 78218,
+  "canonicalPathsSha256": "060a3b2fb124b7126755c849ef5b727041a0e5ccd982fdb55f0254a19c70b026",
   "databaseRows": 91121,
   "databaseRowsSha256": "9a6842b7843185078c0f9596b2d35adb7420e63b30b36f11ad8d5137fbeea859",
   "decisionsApplied": 0,
-  "mapSha256": "678ec52a0639151e2461263617e8010c030ffbc12495743afd185613fb5c2846",
+  "mapSha256": "b641e1a18a3730d0cd247d8ec5a489ae84d22582c44f1f135f36358343c37a7c",
   "summary": {
-    "total": 78239,
-    "mapped": 72246,
-    "unresolved": 5993,
+    "total": 78218,
+    "mapped": 72227,
+    "unresolved": 5991,
     "counts": {
-      "mapped:unique": 72246,
-      "unresolved:duplicate_rows": 5964,
+      "mapped:unique": 72227,
+      "unresolved:duplicate_rows": 5962,
       "unresolved:cross_identity_conflict": 20,
       "unresolved:duplicate_rows_near": 9
     }
-  }
+  },
+  "reviewedChanges": 25,
+  "reviewedBy": [
+    "Andrew Dillon (approved NY pilot batch 001 on 2026-11-11)"
+  ]
 }
