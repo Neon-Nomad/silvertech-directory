@@ -33,6 +33,15 @@ Technical correctness does not guarantee indexing. Google makes the final decisi
 - Check search intent. Use Search Console query and landing-page data to separate demonstrated demand from guesses. Do not create pages just to target keyword variants.
 - Do not mass-generate new pages until existing programmatic pages are verified as useful and performing.
 
+## Programmatic content quality (permanent responsibility)
+
+- Know the existing system before changing it. Production facility, city, and care-state pages come from the build export (`scripts/export_facilities_to_csv.ts`), `astro-src/lib/seniorLivingData.ts`, the Astro templates under `astro-src/pages/[care]/`, `src/data/city_content.ts`, and `state_cost_lookup.ts`. `generate_geo_keyword_map.ts` and `generate_geo_content_briefs.ts` only write planning CSVs; no template reads them.
+- Measure, don't guess. Run `node scripts/seo/content_similarity.mjs <dist> <out.json>` on a fresh `build:hybrid` output and `node scripts/seo/category_name_check.mjs` on the export. Report results by page family. Keep measured similarity separate from judgment.
+- Test the family-value question: could a family learn something that distinguishes facility A from facility B? Prefer verified data (licence and care category, capacity, inspections, operator, sourced costs, location context). Mark missing data as missing.
+- Compare quality findings with Search Console status by family. Treat correlation as evidence, not proof of Google's reasons.
+- Improve templates, not individual pages. Pilot on a representative group with a baseline and an unchanged control group before scaling. No AI rewriting, keyword stuffing, invented descriptions, or synonym swaps.
+- Record every measurement, with its date, in `docs/indexing/scorecard.md`.
+
 ## Existing skills
 
 Use `silvertech-seo-growth` for Search Console analysis and `schema-markup` for structured data. Do not copy their instructions into this file.
