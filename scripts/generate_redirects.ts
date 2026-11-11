@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 
 const rootDir = process.cwd();
 const careTypeSlugs = [
@@ -61,6 +62,21 @@ const categoryBatchLines = categoryBatchItems.flatMap(({ from, action }) => {
   return [`/${from}/ /${target}/ 301!`, `/${from} /${target}/ 301!`];
 });
 
+// City pages emptied by a cleanup batch: live in the frozen production baseline, no longer built. They return
+// 410. City pages that are still built, or that never existed, get no rule. Needs the facility export, as the
+// build does; the import gate enforces the same rule on every build.
+const cityBaseline = fs
+  .readFileSync(path.join(rootDir, 'data', 'manifest', 'care-city-pages-2026-11-11.txt'), 'utf-8')
+  .split(/\r?\n/)
+  .filter((line) => line && !line.startsWith('#'));
+const store = await import(pathToFileURL(path.join(rootDir, 'astro-src', 'lib', 'seniorLivingData.ts')).href);
+const builtCityPages = new Set(
+  (store.getCareCityStaticPaths() as Array<{ care: string; state: string; city: string }>).map((e) => `${e.care}/${e.state}/${e.city}`),
+);
+const emptiedCityLines = cityBaseline
+  .filter((page) => !builtCityPages.has(page))
+  .flatMap((page) => [`/${page}/ /410.html 410!`, `/${page} /410.html 410!`]);
+
 // React (SPA) routes, read from App.tsx so this allowlist cannot drift from the router.
 // Only these paths are served by the SPA shell with 200; every other unmatched path returns 404.
 // Static files (Astro pages, assets) always win over these non-forced rules.
@@ -113,6 +129,8 @@ const outputLines = [
   '/assisted-living/:state/cities/:city/ /410.html 410!',
   '# Approved category batches: retired pages 410, consolidated/reclassified pages 301 to the surviving page',
   ...categoryBatchLines,
+  '# City pages emptied by an approved category batch: 410',
+  ...emptiedCityLines,
   '# Verified legacy facility URLs: one-to-one 301 to the live canonical path. Must precede the 410 facility rules.',
   ...legacyFacilityRedirectLines,
   '# Return unresolved care-type state/city routes as not found (valid static pages still shadow these rules)',

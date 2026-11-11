@@ -63,7 +63,12 @@ const rulesAfter = new Set(lines(now('public/_redirects')).filter((l) => !l.star
 const rulesAdded = [...rulesAfter].filter((r) => !rulesBefore.has(r));
 const rulesRemoved = [...rulesBefore].filter((r) => !rulesAfter.has(r));
 const legacySources = new Set([...legRemoved, ...legRetargeted]);
-const attributable = (rule) => { const from = rule.split(/\s+/)[0].replace(/^\//, '').replace(/\/$/, ''); return batchPaths.has(from) || legacySources.has(from); };
+// City pages emptied by a batch (410): the city must contain a batch record.
+const batchCities = new Set([...batchPaths].map((x) => x.split('/').slice(0, 3).join('/')));
+const attributable = (rule) => {
+  const from = rule.split(/\s+/)[0].replace(/^\//, '').replace(/\/$/, '');
+  return batchPaths.has(from) || legacySources.has(from) || (from.split('/').length === 3 && batchCities.has(from) && / \/410\.html 410!$/.test(rule));
+};
 for (const r of [...rulesAdded, ...rulesRemoved]) if (!attributable(r)) unexpected.push(`redirect rule outside the batch: ${r}`);
 
 // URL checks (optional, from a deploy preview run)

@@ -35,6 +35,26 @@ for (const l of listings) if (removed.has(l.path)) problems.push(`page removed b
 const fresh = listings.filter((l: any) => !baseline.has(l.path));
 for (const v of rules.findGateViolations(fresh, rules.loadRegisters(root))) problems.push(`new listing rejected by the cleanup rules (${v.decision}): ${v.path}`);
 
+// Emptied city pages: every baseline care-type city page that is no longer built must have a 410 rule, only a
+// batch may empty a page, and no built or never-existing city page may carry a 410.
+const cityBaseline = fs.readFileSync(path.join(root, 'data/manifest/care-city-pages-2026-11-11.txt'), 'utf8').split(/\r?\n/).filter((l) => l && !l.startsWith('#'));
+const builtCities = new Set(store.getCareCityStaticPaths().map((e: any) => `${e.care}/${e.state}/${e.city}`));
+const redirectRules = new Set(fs.readFileSync(path.join(root, 'public/_redirects'), 'utf8').split(/\r?\n/).filter((l) => l && !l.startsWith('#')));
+const batchCities = new Set(
+  fs.readdirSync(batchDir).filter((f) => f.endsWith('.tsv'))
+    .flatMap((f) => fs.readFileSync(path.join(batchDir, f), 'utf8').split(/\r?\n/).slice(1).filter(Boolean))
+    .map((l) => l.split('\t')[0].split('/').slice(0, 3).join('/')),
+);
+const emptiedCities = new Set(cityBaseline.filter((p) => !builtCities.has(p)));
+for (const p of emptiedCities) {
+  if (!batchCities.has(p)) problems.push(`city page emptied without an approved batch: ${p}`);
+  if (!redirectRules.has(`/${p}/ /410.html 410!`) || !redirectRules.has(`/${p} /410.html 410!`)) problems.push(`emptied city page has no 410 rule: ${p}`);
+}
+for (const r of redirectRules) {
+  const m = r.match(/^\/([a-z-]+\/[a-z0-9-]+\/[a-z0-9-]+)\/? \/410\.html 410!$/);
+  if (m && !emptiedCities.has(m[1])) problems.push(`410 rule on a city page that is built or never existed: ${m[1]}`);
+}
+
 for (const p of problems.slice(0, 50)) console.error(' - ' + p);
 console.log(`import gate: ${listings.length} pages, ${fresh.length} not in the baseline: ${problems.length ? `FAIL (${problems.length})` : 'PASS'}`);
 process.exit(problems.length ? 1 : 0);
