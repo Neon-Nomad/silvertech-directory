@@ -29,11 +29,33 @@ const staleCareTypeLocationRules = careTypeSlugs.flatMap((care) => [
 const legacyManifestPath = path.join(rootDir, 'data', 'facility-legacy-redirects.tsv');
 const legacyFacilityRedirectLines = fs
   .readFileSync(legacyManifestPath, 'utf-8')
-  .split('\n')
+  // Windows checkouts convert the manifest to CRLF; a trailing \r would make every emit flag fail.
+  .split(/\r?\n/)
   .filter((line) => line && !line.startsWith('#'))
   .map((line) => line.split('\t'))
   .filter(([, , , emit]) => emit === 'yes')
   .flatMap(([from, to]) => [`/${from} /${to}/ 301`, `/${from}/ /${to}/ 301`]);
+
+// React (SPA) routes, read from App.tsx so this allowlist cannot drift from the router.
+// Only these paths are served by the SPA shell with 200; every other unmatched path returns 404.
+// Static files (Astro pages, assets) always win over these non-forced rules.
+const SPA_ROUTE_EXCLUSIONS: RegExp[] = [
+  /^\*$/, // React catch-all (its 404 page is served by the final rule below)
+  /^\/$/, // homepage is a real file (index.html)
+  /^\/:careType/, // care-type directory pages are static Astro files; unknown ones must 404 or 410
+  /^\/__integrity/, // developer harness, never public
+  /^\/(facility|senior-living|community|regulatory-library)(\/|$)/, // retired: 410 rules above
+  /^\/states\/:state\/(regulatory|regulations)/, // retired: 301 rules above
+  /^\/regulations\/:state/, // static Astro pages for valid states; unknown states must 404
+  /^\/states\/:state$/, // static Astro pages for valid states; unknown states must 404
+];
+const appSource = fs.readFileSync(path.join(rootDir, 'App.tsx'), 'utf-8');
+const spaRoutes =[...new Set([...appSource.matchAll(/<Route\s[^>]*path="([^"]+)"/g)].map((m) => m[1]))]
+  .filter((routePath) => !SPA_ROUTE_EXCLUSIONS.some((pattern) => pattern.test(routePath)))
+  .sort();
+const spaRouteLines = spaRoutes.flatMap((routePath) =>
+  routePath.endsWith('*') ? [`${routePath} /index.html 200`] : [`${routePath} /index.html 200`, `${routePath}/ /index.html 200`],
+);
 
 const outputLines = [
   '# Auto-generated redirect rules. Do not edit manually.',
@@ -70,8 +92,10 @@ const outputLines = [
   ...staleCareTypeLocationRules,
   '# Return stale facility-detail route IDs as gone (valid static pages still shadow these rules)',
   ...staleFacilityRules,
-  '# SPA fallback',
-  '/* /index.html 200',
+  '# SPA routes (from App.tsx): served by the app shell with 200',
+  ...spaRouteLines,
+  '# Everything else is not found: the app shell renders its not-found page (noindex) with a real 404 status',
+  '/* /index.html 404',
 ];
 
 const outPath = path.join(rootDir, 'public', '_redirects');
