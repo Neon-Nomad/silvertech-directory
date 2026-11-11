@@ -101,6 +101,10 @@ const stateRegulatorUrl =
   regulatoryContext.licensing?.websiteUrl ||
   '';
 const stateRegulatorName = regulatoryContext.licensing?.agencyName || '';
+const hasRegulatoryData = Boolean(
+  facility.issuingAgency || facility.licenseType || facility.licenseNumber ||
+  facility.cmsCertificationNumber || facility.lastVerifiedDate || facility.dataSource,
+);
 const badgeLastCrawledAt =
   facility.lastVerifiedDate ||
   facility.onlinePresenceUpdatedAt ||
@@ -116,22 +120,36 @@ const nearby = getNearbyFacilities(
   4,
 );
 
+/* ---- Care-type noun phrase, with the correct article ("an assisted living community") ---- */
+const careNounPhrases: Record<string, string> = {
+  'assisted-living': 'an assisted living community',
+  'memory-care': 'a memory care community',
+  'nursing-homes': 'a nursing home',
+  'independent-living': 'an independent living community',
+  'residential-care': 'a residential care home',
+  'adult-day-services': 'an adult day program',
+  'ccrc': 'a continuing care retirement community (CCRC)',
+};
+const careNounPhrase = careNounPhrases[care!] || `a ${careLabel.toLowerCase()} provider`;
+
 /* ---- SEO metadata ---- */
 const isNursingHomePage = care === 'nursing-homes';
 const title = isNursingHomePage
   ? `${displayName} Nursing Home in ${displayCity}, ${facility.state} | License, CMS, Contact`
   : `${displayName} | ${careLabel} in ${displayCity}, ${facility.state}`;
 const description = isNursingHomePage
-  ? `${displayName} is a nursing home in ${displayCity}, ${facility.state}.${facility.licenseNumber ? ` State license ${facility.licenseNumber}.` : ''}${facility.cmsCertificationNumber ? ` CMS certification ${facility.cmsCertificationNumber}.` : ''} View verified contact info, identifiers, and nearby alternatives.`
-  : `${displayName} is a ${careLabel.toLowerCase()} in ${displayCity}, ${facility.state}.${facility.licenseNumber ? ` State license ${facility.licenseNumber}.` : ''} View verified contact info, identifiers, and community questions on SilverTech Directory.`;
+  ? `${displayName} is a nursing home in ${displayCity}, ${facility.state}.${facility.licenseNumber ? ` State license ${facility.licenseNumber}.` : ''}${facility.cmsCertificationNumber ? ` CMS certification ${facility.cmsCertificationNumber}.` : ''} See contact details, listed identifiers, and nearby alternatives.`
+  : `${displayName} is ${careNounPhrase} in ${displayCity}, ${facility.state}.${facility.licenseNumber ? ` State license ${facility.licenseNumber}.` : ''} See contact details, listed identifiers, and community questions on SilverTech Directory.`;
 const heroDirectAnswer = isNursingHomePage
   ? `${displayName} is a nursing home in ${displayCity}, ${facility.state}. Verify license and CMS identifiers before scheduling a tour.`
-  : `${displayName} is a ${careLabel.toLowerCase()} in ${displayCity}, ${facility.state}. Verify licensing and care fit before scheduling a tour.`;
+  : `${displayName} is ${careNounPhrase} in ${displayCity}, ${facility.state}. Verify licensing and care fit before scheduling a tour.`;
 
 /* ---- Auto-generated description paragraph ---- */
-const ownerLabel = ownershipLabels[facility.ownershipBucket] || '';
+// Ownership is only stated when the source data names it; an unrecognised value is not described.
+const ownerLabel =
+  facility.ownershipBucket && facility.ownershipBucket !== 'other' ? ownershipLabels[facility.ownershipBucket] || '' : '';
 const descParts: string[] = [];
-descParts.push(`${displayName} is a ${careLabel.toLowerCase()} located in ${displayCity}, ${facility.state}.`);
+descParts.push(`${displayName} is ${careNounPhrase} located in ${displayCity}, ${facility.state}.`);
 if (facility.street) descParts.push(`The facility is situated at ${facility.street}, ${displayCity}, ${facility.state}${facility.zip ? ' ' + facility.zip : ''}.`);
 if (ownerLabel) descParts.push(`It operates as a ${ownerLabel.toLowerCase()} organization.`);
 if (facility.beds) descParts.push(`The facility has ${facility.beds.toLocaleString()} certified beds.`);
@@ -238,7 +256,7 @@ const breadcrumbSchema = {
           <p class="fp-hero-kicker">
             {careLabel} &mdash; {shortAddress}
             {isVerified && (
-              <span class="fp-verified-badge">✓ Verified Identifiers</span>
+              <span class="fp-verified-badge">License identifier listed</span>
             )}
           </p>
           <h1 class="fp-hero-title">{displayName}</h1>
@@ -292,7 +310,7 @@ const breadcrumbSchema = {
                 <div class="fp-metric-item">
                   <p class="fp-metric-label">State License</p>
                   <p class="fp-metric-value" style="font-size:0.88rem">{facility.licenseNumber}</p>
-                  <p class="fp-metric-sub">Active identifier</p>
+                  <p class="fp-metric-sub">Listed identifier</p>
                 </div>
               )}
               {facility.cmsCertificationNumber && (
@@ -327,13 +345,13 @@ const breadcrumbSchema = {
           </div>
         )}
 
-        <!-- ---- Verified Identifiers ---- -->
+        <!-- ---- Identifiers ---- -->
         {(facility.licenseNumber || facility.cmsCertificationNumber || facility.beds || facility.careTypes?.length > 0) && (
           <section class="fp-section" id="identifiers">
             <div class="fp-section-header">
               <h2 class="fp-section-title">
                 <span class="fp-section-icon">✓</span>
-                Verified Identifiers
+                Identifiers
               </h2>
             </div>
             <div class="fp-id-grid">
@@ -487,14 +505,23 @@ const breadcrumbSchema = {
                 <p class="fp-reg-value">{facility.dataSource}</p>
               </div>
             )}
-            <div class="fp-reg-item">
-              <p class="fp-reg-label">Regulatory Standing</p>
-              <p class="fp-reg-value" style="color:#16a34a">Active</p>
-            </div>
           </div>
 
+          {!hasRegulatoryData && (
+            <p class="fp-reg-note">
+              No license or inspection status is on file for this listing.
+            </p>
+          )}
+          {stateRegulatorUrl && (
+            <p class="fp-reg-note">
+              <a class="fp-reg-report" href={stateRegulatorUrl} target="_blank" rel="noopener noreferrer">
+                Check current license status{stateRegulatorName ? ` with ${stateRegulatorName}` : ' with the state regulator'} ↗
+              </a>
+            </p>
+          )}
+
           <p class="fp-reg-note">
-            Regulatory data sourced from state licensing agencies and CMS public records. Data is refreshed periodically.
+            Identifiers come from state licensing and CMS public records. SilverTech does not independently confirm license status.
             <a class="fp-reg-report" href="/contact/">Report an issue with this data</a>
           </p>
         </section>

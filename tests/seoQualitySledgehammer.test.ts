@@ -34,11 +34,12 @@ describe('seo quality sledgehammer contract', () => {
     const wordCount = textContent.split(' ').filter(Boolean).length;
 
     expect(wordCount).toBeGreaterThanOrEqual(250);
-    expect(facilityTemplate).toContain('Verified Identifiers');
+    // Identifiers are listed, not verified by SilverTech; the copy must say so.
+    expect(facilityTemplate).toMatch(/<span class="fp-section-icon">✓<\/span>\s*Identifiers\s*<\/h2>/);
     expect(facilityTemplate).toContain('State License');
     expect(facilityTemplate).toContain('Regulatory Hub');
     expect(facilityTemplate).toContain(
-      'Regulatory data sourced from state licensing agencies and CMS public records. Data is refreshed periodically.',
+      'Identifiers come from state licensing and CMS public records. SilverTech does not independently confirm license status.',
     );
   });
 
@@ -50,7 +51,7 @@ describe('seo quality sledgehammer contract', () => {
     expect(h1Count).toBe(1);
     expect(facilityTemplate).toContain('<h1 class="fp-hero-title">{displayName}</h1>');
     expect(h2Count).toBeGreaterThanOrEqual(6);
-    expect(facilityTemplate).toContain('Verified Identifiers');
+    expect(facilityTemplate).toMatch(/<span class="fp-section-icon">✓<\/span>\s*Identifiers\s*<\/h2>/);
     expect(facilityTemplate).toContain('Facility Profile');
     expect(facilityTemplate).toContain('Regulatory Hub');
     expect(facilityTemplate).toContain('Schedule a Tour');
