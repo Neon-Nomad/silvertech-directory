@@ -1,0 +1,666 @@
+{
+  "description": "Fixed, independently evidenced sample for the NY category cleanup. Do not edit expectations without documented approval.",
+  "createdAt": "2026-11-11",
+  "records": [
+    {
+      "path": "assisted-living/new-york/albany/massry-residence-at-daughters-of-sarah-832165469",
+      "name": "Massry Residence At Daughters Of Sarah",
+      "state": "NY",
+      "city": "Albany",
+      "currentCare": "assisted-living",
+      "license": "000-S-006",
+      "uuid": "d02d5594-711e-4c64-9bcb-f7eb293c7f17",
+      "category": "legit_ny_assisted_living",
+      "expected": "keep",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "14607",
+        "type": "Enriched Housing Program",
+        "registeredName": "Massry Residence at Daughters of Sarah"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/albany/promenade-at-university-place-1420043245",
+      "name": "Promenade At University Place",
+      "state": "NY",
+      "city": "Albany",
+      "currentCare": "assisted-living",
+      "license": "000-F-315",
+      "uuid": "0d8fb069-93f3-43c8-8908-aa4bc8a63f4d",
+      "category": "legit_ny_assisted_living",
+      "expected": "keep",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "14605",
+        "type": "Adult Home",
+        "registeredName": "Promenade at University Place"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/amherst/the-amberleigh-4173478660",
+      "name": "The Amberleigh",
+      "state": "NY",
+      "city": "Amherst",
+      "currentCare": "assisted-living",
+      "license": "240-S-125",
+      "uuid": "9a2a2ec2-0fa1-4ef7-a1b5-6285bed2d815",
+      "category": "legit_ny_assisted_living",
+      "expected": "keep",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "14714",
+        "type": "Enriched Housing Program",
+        "registeredName": "The Amberleigh"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/amsterdam/hillcrest-spring-residential-3564736031",
+      "name": "Hillcrest Spring Residential",
+      "state": "NY",
+      "city": "Amsterdam",
+      "currentCare": "assisted-living",
+      "license": "380-F-043",
+      "uuid": "7002b981-6545-4270-ab07-0e78a584c20e",
+      "category": "legit_ny_assisted_living",
+      "expected": "keep",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "14806",
+        "type": "Adult Home",
+        "registeredName": "Hillcrest Spring Residential"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/amsterdam/sarah-jane-sanford-home-2535847309",
+      "name": "Sarah Jane Sanford Home",
+      "state": "NY",
+      "city": "Amsterdam",
+      "currentCare": "assisted-living",
+      "license": "380-E-011",
+      "uuid": "6a67436c-59cf-4493-a2f4-3170ce497918",
+      "category": "legit_ny_assisted_living",
+      "expected": "keep",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "14805",
+        "type": "Adult Home",
+        "registeredName": "Sarah Jane Sanford Home"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/amsterdam/the-sentinel-of-amsterdam-llc-808299843",
+      "name": "The Sentinel Of Amsterdam, Llc",
+      "state": "NY",
+      "city": "Amsterdam",
+      "currentCare": "assisted-living",
+      "license": "380-F-047",
+      "uuid": "74abbbe8-c31f-4d11-bfcd-0aaaa21c1fd0",
+      "category": "legit_ny_assisted_living",
+      "expected": "keep",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "14807",
+        "type": "Adult Home",
+        "registeredName": "The Sentinel of Amsterdam, LLC"
+      }
+    },
+    {
+      "path": "adult-day-services/new-york/albany/peregrine-crossgate-196215347",
+      "name": "Peregrine Crossgate",
+      "state": "NY",
+      "city": "Albany",
+      "currentCare": "adult-day-services",
+      "license": "14609",
+      "uuid": "0bf186ef-03a5-4518-804f-b8a9cf81c1f2",
+      "category": "ny_adult_day_is_assisted_living",
+      "expected": "reclassify:assisted-living",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "14609",
+        "type": "Enriched Housing Program",
+        "registeredName": "Peregrine Crossgate"
+      }
+    },
+    {
+      "path": "adult-day-services/new-york/albany/peregrine-shaker-499366096",
+      "name": "Peregrine Shaker",
+      "state": "NY",
+      "city": "Albany",
+      "currentCare": "adult-day-services",
+      "license": "14610",
+      "uuid": "6c389d03-7db6-49d2-9607-3f885afbcaaf",
+      "category": "ny_adult_day_is_assisted_living",
+      "expected": "reclassify:assisted-living",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "14610",
+        "type": "Enriched Housing Program",
+        "registeredName": "Peregrine Shaker"
+      }
+    },
+    {
+      "path": "adult-day-services/new-york/amityville/the-villas-at-dominican-village-3608647698",
+      "name": "The Villas at Dominican Village",
+      "state": "NY",
+      "city": "Amityville",
+      "currentCare": "adult-day-services",
+      "license": "15070",
+      "uuid": "9cbea41e-7f6d-487b-b934-71d06cc7f07c",
+      "category": "ny_adult_day_is_assisted_living",
+      "expected": "consolidate:assisted-living/new-york/amityville/dominican-village-enriched-housing-program-1-3709202207",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "15070",
+        "type": "Enriched Housing Program",
+        "registeredName": "The Villas at Dominican Village"
+      }
+    },
+    {
+      "path": "adult-day-services/new-york/albany/daughters-of-sarah-nursing-center-3614767261",
+      "name": "Daughters of Sarah Nursing Center",
+      "state": "NY",
+      "city": "Albany",
+      "currentCare": "adult-day-services",
+      "license": "22",
+      "uuid": "61f88735-d7f7-4e3f-a8ee-495faf57fe72",
+      "category": "ny_adult_day_is_nursing_home",
+      "expected": "consolidate:nursing-homes/new-york/albany/daughters-of-sarah-nursing-center-8983",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "22",
+        "type": "Residential Health Care Facility - SNF",
+        "registeredName": "Daughters of Sarah Nursing Center"
+      }
+    },
+    {
+      "path": "adult-day-services/new-york/albany/shaker-place-rehabilitation-and-nursing-center-3821638911",
+      "name": "Shaker Place Rehabilitation and Nursing Center",
+      "state": "NY",
+      "city": "Albany",
+      "currentCare": "adult-day-services",
+      "license": "30",
+      "uuid": "593bb824-c1aa-49f4-9c87-866a8d0c9dbd",
+      "category": "ny_adult_day_is_nursing_home",
+      "expected": "consolidate:nursing-homes/new-york/albany/shaker-place-rehabilitation-and-nursing-center-8953",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "30",
+        "type": "Residential Health Care Facility - SNF",
+        "registeredName": "Shaker Place Rehabilitation and Nursing Center"
+      }
+    },
+    {
+      "path": "adult-day-services/new-york/albany/st-margaret-s-center-1495317794",
+      "name": "St. Margaret's Center",
+      "state": "NY",
+      "city": "Albany",
+      "currentCare": "adult-day-services",
+      "license": "19",
+      "uuid": "e688d37e-d37a-449a-a53c-090e33dac4d6",
+      "category": "ny_adult_day_is_nursing_home",
+      "expected": "consolidate:nursing-homes/new-york/albany/st-margarets-center-9260",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "19",
+        "type": "Residential Health Care Facility - SNF",
+        "registeredName": "St. Margaret's Center"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/auburn/the-commons-on-st-anthony-a-skilled-nursing-short-term-rehabilitation-community-651992568",
+      "name": "The Commons on St. Anthony, a Skilled Nursing & Short Term Rehabilitation Community",
+      "state": "NY",
+      "city": "Auburn",
+      "currentCare": "assisted-living",
+      "license": "92",
+      "uuid": null,
+      "category": "ny_assisted_living_is_nursing_home",
+      "expected": "consolidate:nursing-homes/new-york/auburn/the-commons-on-st-anthony-a-s-n-f-short-t-r-c-8916",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "92",
+        "type": "Residential Health Care Facility - SNF",
+        "registeredName": "The Commons on St. Anthony, a Skilled Nursing & Short Term Rehabilitation Community"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/binghamton/bridgewater-center-for-rehabilitation-nursing-llc-2545159438",
+      "name": "Bridgewater Center for Rehabilitation & Nursing, LLC",
+      "state": "NY",
+      "city": "Binghamton",
+      "currentCare": "assisted-living",
+      "license": "50",
+      "uuid": null,
+      "category": "ny_assisted_living_is_nursing_home",
+      "expected": "consolidate:nursing-homes/new-york/binghamton/bridgewater-center-for-rehab-nursing-l-l-c-8810",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "50",
+        "type": "Residential Health Care Facility - SNF",
+        "registeredName": "Bridgewater Center for Rehabilitation & Nursing, LLC"
+      }
+    },
+    {
+      "path": "adult-day-services/new-york/adams/adams-family-health-center-1027143968",
+      "name": "Adams Family Health Center",
+      "state": "NY",
+      "city": "Adams",
+      "currentCare": "adult-day-services",
+      "license": "9727",
+      "uuid": "7415f019-ee74-48c5-98e1-f488bb299093",
+      "category": "ny_adult_day_is_clinic_or_agency",
+      "expected": "retire",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "9727",
+        "type": "Hospital Extension Clinic",
+        "registeredName": "Adams Family Health Center"
+      }
+    },
+    {
+      "path": "adult-day-services/new-york/airmont/caring-connections-llc-1457106821",
+      "name": "Caring Connections Llc",
+      "state": "NY",
+      "city": "Airmont",
+      "currentCare": "adult-day-services",
+      "license": "13506",
+      "uuid": "583c2981-9db0-4206-8ea9-1ed8e36e64c0",
+      "category": "ny_adult_day_is_clinic_or_agency",
+      "expected": "retire",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "13506",
+        "type": "Licensed Home Care Services Agency",
+        "registeredName": "Caring Connections Llc"
+      }
+    },
+    {
+      "path": "adult-day-services/new-york/albany/albany-county-health-dept-841886180",
+      "name": "Albany County Health Dept",
+      "state": "NY",
+      "city": "Albany",
+      "currentCare": "adult-day-services",
+      "license": "8",
+      "uuid": "358300b1-370f-4f19-98b3-095b7e819aac",
+      "category": "ny_adult_day_is_clinic_or_agency",
+      "expected": "retire",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "8",
+        "type": "Diagnostic and Treatment Center",
+        "registeredName": "Albany County Health Dept"
+      }
+    },
+    {
+      "path": "adult-day-services/new-york/albany/allergy-and-immunology-clinic-of-amch-3237620165",
+      "name": "Allergy and Immunology Clinic of AMCH",
+      "state": "NY",
+      "city": "Albany",
+      "currentCare": "adult-day-services",
+      "license": "10391",
+      "uuid": "4992af2c-14dc-44a5-a37a-30ff870fc37e",
+      "category": "ny_adult_day_is_clinic_or_agency",
+      "expected": "retire",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "10391",
+        "type": "Hospital Extension Clinic",
+        "registeredName": "Allergy and Immunology Clinic of AMCH"
+      }
+    },
+    {
+      "path": "adult-day-services/new-york/albany/attentive-care-of-albany-inc-2773549347",
+      "name": "Attentive Care Of Albany, Inc.",
+      "state": "NY",
+      "city": "Albany",
+      "currentCare": "adult-day-services",
+      "license": "12474",
+      "uuid": "de8d9d70-e314-4421-91b2-4965b3e85baa",
+      "category": "ny_adult_day_is_clinic_or_agency",
+      "expected": "retire",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "12474",
+        "type": "Licensed Home Care Services Agency",
+        "registeredName": "Attentive Care Of Albany, Inc."
+      }
+    },
+    {
+      "path": "adult-day-services/new-york/albany/balanced-care-licensed-home-care-agency-672657275",
+      "name": "Balanced Care Licensed Home Care Agency",
+      "state": "NY",
+      "city": "Albany",
+      "currentCare": "adult-day-services",
+      "license": "13171",
+      "uuid": "287de3ec-aca7-4b09-8fcc-83d7981f60be",
+      "category": "ny_adult_day_is_clinic_or_agency",
+      "expected": "retire",
+      "evidence": {
+        "source": "NY DOH Health Facility General Information (health.data.ny.gov vn5v-hh5r), retrieved 2026-11-10",
+        "id": "13171",
+        "type": "Licensed Home Care Services Agency",
+        "registeredName": "Balanced Care Licensed Home Care Agency"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/albany/albany-jewish-community-center-3171846333",
+      "name": "ALBANY JEWISH COMMUNITY CENTER",
+      "state": "NY",
+      "city": "ALBANY",
+      "currentCare": "assisted-living",
+      "license": "OFFICE OF CHILDREN AND FAMILY SERVICES",
+      "uuid": "c4fc2c53-4b77-4d07-8c47-2259fda0712b",
+      "category": "ny_assisted_living_is_child_care",
+      "expected": "retire",
+      "evidence": {
+        "source": "NY OCFS Child Care Regulated Programs (data.ny.gov cb42-qumz), retrieved 2026-11-11",
+        "id": "39186",
+        "type": "child care program type DCC"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/albany/albany-med-kids-2049345141",
+      "name": "ALBANY MED KIDS",
+      "state": "NY",
+      "city": "ALBANY",
+      "currentCare": "assisted-living",
+      "license": "OFFICE OF CHILDREN AND FAMILY SERVICES",
+      "uuid": "50a2f2d0-9c1b-40d1-8b0d-710bbf148d44",
+      "category": "ny_assisted_living_is_child_care",
+      "expected": "retire",
+      "evidence": {
+        "source": "NY OCFS Child Care Regulated Programs (data.ny.gov cb42-qumz), retrieved 2026-11-11",
+        "id": "541618",
+        "type": "child care program type DCC"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/albany/capital-milestones-child-care-inc-1317863738",
+      "name": "CAPITAL MILESTONES CHILD CARE, INC.",
+      "state": "NY",
+      "city": "ALBANY",
+      "currentCare": "assisted-living",
+      "license": "OFFICE OF CHILDREN AND FAMILY SERVICES",
+      "uuid": "d8ad410b-226a-4809-9770-21e679ac4909",
+      "category": "ny_assisted_living_is_child_care",
+      "expected": "retire",
+      "evidence": {
+        "source": "NY OCFS Child Care Regulated Programs (data.ny.gov cb42-qumz), retrieved 2026-11-11",
+        "id": "762476",
+        "type": "child care program type DCC"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/albany/club-fed-child-care-center-1732292829",
+      "name": "CLUB FED CHILD CARE CENTER",
+      "state": "NY",
+      "city": "ALBANY",
+      "currentCare": "assisted-living",
+      "license": "OFFICE OF CHILDREN AND FAMILY SERVICES",
+      "uuid": "6457dca6-7e98-4f5a-97f3-44021603bc81",
+      "category": "ny_assisted_living_is_child_care",
+      "expected": "retire",
+      "evidence": {
+        "source": "NY OCFS Child Care Regulated Programs (data.ny.gov cb42-qumz), retrieved 2026-11-11",
+        "id": "39167",
+        "type": "child care program type DCC"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/albany/trinity-alliance-of-the-capital-region-inc-arbor-hill-center-2612421208",
+      "name": "TRINITY ALLIANCE OF THE CAPITAL REGION, INC. ARBOR HILL CENTER",
+      "state": "NY",
+      "city": "ALBANY",
+      "currentCare": "assisted-living",
+      "license": "OFFICE OF CHILDREN AND FAMILY SERVICES",
+      "uuid": "6b3818f0-2822-4ea5-a7da-fb28592086da",
+      "category": "ny_assisted_living_is_child_care",
+      "expected": "retire",
+      "evidence": {
+        "source": "NY OCFS Child Care Regulated Programs (data.ny.gov cb42-qumz), retrieved 2026-11-11",
+        "id": "45277",
+        "type": "child care program type SACC"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/albany/trinity-center-1575397434",
+      "name": "TRINITY CENTER",
+      "state": "NY",
+      "city": "ALBANY",
+      "currentCare": "assisted-living",
+      "license": "OFFICE OF CHILDREN AND FAMILY SERVICES",
+      "uuid": "85fb79cb-7d55-49b8-ae9f-40146850f930",
+      "category": "ny_assisted_living_is_child_care",
+      "expected": "retire",
+      "evidence": {
+        "source": "NY OCFS Child Care Regulated Programs (data.ny.gov cb42-qumz), retrieved 2026-11-11",
+        "id": "44257",
+        "type": "child care program type SACC"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/albany/risse-after-school-program-at-albany-international-academy-3523341316",
+      "name": "RISSE AFTER SCHOOL PROGRAM AT ALBANY INTERNATIONAL ACADEMY",
+      "state": "NY",
+      "city": "ALBANY",
+      "currentCare": "assisted-living",
+      "license": "UNLICENSED: SCHOOL-RUN",
+      "uuid": "137c18af-2898-4902-ac44-ec33881dae8d",
+      "category": "ny_assisted_living_is_school_program",
+      "expected": "retire",
+      "evidence": {
+        "source": "source licence authority field",
+        "id": "",
+        "type": "UNLICENSED: SCHOOL-RUN; name identifies a school"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/astoria/30234-ps-234-3296145851",
+      "name": "30234 PS 234",
+      "state": "NY",
+      "city": "ASTORIA",
+      "currentCare": "assisted-living",
+      "license": "UNLICENSED: SCHOOL-RUN",
+      "uuid": "0a47de07-873a-44b3-bf96-00b501219ef8",
+      "category": "ny_assisted_living_is_school_program",
+      "expected": "retire",
+      "evidence": {
+        "source": "source licence authority field",
+        "id": "",
+        "type": "UNLICENSED: SCHOOL-RUN; name identifies a school"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/bronx/07018-ps-18-2382236488",
+      "name": "07018 PS 18",
+      "state": "NY",
+      "city": "BRONX",
+      "currentCare": "assisted-living",
+      "license": "UNLICENSED: SCHOOL-RUN",
+      "uuid": "e566f70a-8a8d-4590-b3f5-d1bc6d6d7752",
+      "category": "ny_assisted_living_is_school_program",
+      "expected": "retire",
+      "evidence": {
+        "source": "source licence authority field",
+        "id": "",
+        "type": "UNLICENSED: SCHOOL-RUN; name identifies a school"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/albany/newgate-social-adult-day-services-2870975386",
+      "name": "NEWGATE SOCIAL ADULT DAY SERVICES",
+      "state": "NY",
+      "city": "ALBANY",
+      "currentCare": "assisted-living",
+      "license": "OFFICE FOR THE AGING",
+      "uuid": "56e4eeb9-25e6-441d-ba34-c44fdfb92b99",
+      "category": "ambiguous_office_for_the_aging",
+      "expected": "unchanged",
+      "evidence": {
+        "source": "source licence authority field",
+        "id": "",
+        "type": "OFFICE FOR THE AGING (possible senior program; needs manual review)"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/allegany/allegany-linwood-center-3286164536",
+      "name": "ALLEGANY LINWOOD CENTER",
+      "state": "NY",
+      "city": "ALLEGANY",
+      "currentCare": "assisted-living",
+      "license": "OFFICE FOR THE AGING",
+      "uuid": "f0bbfacc-7080-48a3-8c44-a8a49b35a40f",
+      "category": "ambiguous_office_for_the_aging",
+      "expected": "unchanged",
+      "evidence": {
+        "source": "source licence authority field",
+        "id": "",
+        "type": "OFFICE FOR THE AGING (possible senior program; needs manual review)"
+      }
+    },
+    {
+      "path": "assisted-living/new-york/baldwinsville/silver-fox-senior-social-club-4006268176",
+      "name": "SILVER FOX SENIOR SOCIAL CLUB",
+      "state": "NY",
+      "city": "BALDWINSVILLE",
+      "currentCare": "assisted-living",
+      "license": "OFFICE FOR THE AGING",
+      "uuid": "1241ff66-042d-4eba-ae84-d5594dd4ee58",
+      "category": "ambiguous_office_for_the_aging",
+      "expected": "unchanged",
+      "evidence": {
+        "source": "source licence authority field",
+        "id": "",
+        "type": "OFFICE FOR THE AGING (possible senior program; needs manual review)"
+      }
+    },
+    {
+      "path": "adult-day-services/california/tustin/jenn-s-adult-daycare-llc-3258628290",
+      "name": "Jenn'S Adult Daycare Llc",
+      "state": "CA",
+      "city": "Tustin",
+      "currentCare": "adult-day-services",
+      "license": "",
+      "uuid": "6cefe98c-f110-4071-b1fb-b883e4063826",
+      "category": "control_adult_day_outside_ny",
+      "expected": "unchanged",
+      "evidence": {
+        "source": "outside cleanup scope (state is not NY)",
+        "id": "",
+        "type": ""
+      }
+    },
+    {
+      "path": "adult-day-services/florida/miami/sunny-day-health-services-inc-3713511234",
+      "name": "Sunny Day Health Services Inc",
+      "state": "FL",
+      "city": "Miami",
+      "currentCare": "adult-day-services",
+      "license": "9989",
+      "uuid": "9b2e289d-1a6d-447c-8ca0-912521c06e38",
+      "category": "control_adult_day_outside_ny",
+      "expected": "unchanged",
+      "evidence": {
+        "source": "outside cleanup scope (state is not NY)",
+        "id": "",
+        "type": ""
+      }
+    },
+    {
+      "path": "adult-day-services/kansas/topeka/aldersgate-village-3939470160",
+      "name": "Aldersgate Village",
+      "state": "KS",
+      "city": "Topeka",
+      "currentCare": "adult-day-services",
+      "license": "",
+      "uuid": "df3f46bf-a0fb-4fbe-afc5-20f8180f31a7",
+      "category": "control_adult_day_outside_ny",
+      "expected": "unchanged",
+      "evidence": {
+        "source": "outside cleanup scope (state is not NY)",
+        "id": "",
+        "type": ""
+      }
+    },
+    {
+      "path": "nursing-homes/new-york/albany/daughters-of-sarah-nursing-center-8983",
+      "name": "DAUGHTERS OF SARAH NURSING CENTER",
+      "state": "NY",
+      "city": "ALBANY",
+      "currentCare": "nursing-homes",
+      "license": "0101312N",
+      "uuid": "a938802d-6a48-4502-b84c-d7720dc039e1",
+      "category": "control_ny_nursing_home",
+      "expected": "unchanged",
+      "evidence": {
+        "source": "outside cleanup scope (care type not in scope)",
+        "id": "",
+        "type": ""
+      }
+    },
+    {
+      "path": "nursing-homes/new-york/albany/hudson-park-rehabilitation-and-nursing-center-9244",
+      "name": "HUDSON PARK REHABILITATION AND NURSING CENTER",
+      "state": "NY",
+      "city": "ALBANY",
+      "currentCare": "nursing-homes",
+      "license": "0101315N",
+      "uuid": "707dae25-3f41-4ce6-b63f-5b68c33c5e52",
+      "category": "control_ny_nursing_home",
+      "expected": "unchanged",
+      "evidence": {
+        "source": "outside cleanup scope (care type not in scope)",
+        "id": "",
+        "type": ""
+      }
+    },
+    {
+      "path": "nursing-homes/new-york/albany/shaker-place-rehabilitation-and-nursing-center-8953",
+      "name": "SHAKER PLACE REHABILITATION AND NURSING CENTER",
+      "state": "NY",
+      "city": "ALBANY",
+      "currentCare": "nursing-homes",
+      "license": "0153302N",
+      "uuid": "c5f70532-dd07-4b47-954d-83b286d32e17",
+      "category": "control_ny_nursing_home",
+      "expected": "unchanged",
+      "evidence": {
+        "source": "outside cleanup scope (care type not in scope)",
+        "id": "",
+        "type": ""
+      }
+    },
+    {
+      "path": "assisted-living/california/acton/acton-senior-housing-care-inc-1413982581",
+      "name": "ACTON SENIOR HOUSING CARE, INC",
+      "state": "CA",
+      "city": "ACTON",
+      "currentCare": "assisted-living",
+      "license": "197610695",
+      "uuid": "7a64f655-a236-4ddc-b8e1-96d7575fd9a9",
+      "category": "control_assisted_living_outside_ny",
+      "expected": "unchanged",
+      "evidence": {
+        "source": "outside cleanup scope (state is not NY)",
+        "id": "",
+        "type": ""
+      }
+    },
+    {
+      "path": "assisted-living/california/acton/community-care-group-1741929605",
+      "name": "COMMUNITY CARE GROUP",
+      "state": "CA",
+      "city": "ACTON",
+      "currentCare": "assisted-living",
+      "license": "197610792",
+      "uuid": "bcd905e6-d3fa-46ba-91bb-1d6ce5b234c5",
+      "category": "control_assisted_living_outside_ny",
+      "expected": "unchanged",
+      "evidence": {
+        "source": "outside cleanup scope (state is not NY)",
+        "id": "",
+        "type": ""
+      }
+    }
+  ]
+}
