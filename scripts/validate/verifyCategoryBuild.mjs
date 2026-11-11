@@ -24,7 +24,9 @@ for (const b of items) {
 }
 
 // 2. Sitemaps: no removed path listed; every final target listed exactly once.
-const sitemapText = fs.readdirSync(DIST).filter((f) => /^sitemap.*\.xml$/.test(f)).map((f) => fs.readFileSync(path.join(DIST, f), 'utf8')).join('\n');
+const sitemapFiles = fs.readdirSync(DIST).filter((f) => /^sitemap.*\.xml$/.test(f));
+if (!sitemapFiles.length) errors.push('no sitemap files in the build output (run `npm run sitemap` before build:hybrid, as the Netlify build does)');
+const sitemapText = sitemapFiles.map((f) => fs.readFileSync(path.join(DIST, f), 'utf8')).join('\n');
 const locCount = (p) => (sitemapText.match(new RegExp(`<loc>https://silvertechdirectory\\.com/${p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}/</loc>`, 'g')) || []).length;
 for (const b of items) {
   if (locCount(b.path)) errors.push(`sitemap still lists /${b.path}/`);
