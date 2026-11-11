@@ -96,3 +96,37 @@ describe('indexing contract: shared navigation targets exist', () => {
     expect(layout).not.toContain('href="/resources/"');
   });
 });
+
+describe('routing contract: unknown paths return a real 404', () => {
+  const rules = read('public/_redirects').split('\n').filter((line) => line && !line.startsWith('#'));
+
+  it('the final rule serves the app shell with a 404 status, and there is no 200 catch-all', () => {
+    expect(rules[rules.length - 1]).toBe('/* /index.html 404');
+    expect(rules).not.toContain('/* /index.html 200');
+  });
+
+  it('every public SPA route is served with 200 before the 404 fallback', () => {
+    for (const route of ['/pricing', '/contact', '/for-facilities', '/login', '/search', '/products/:category', '/dashboard/:tab']) {
+      expect(rules).toContain(`${route} /index.html 200`);
+    }
+  });
+
+  it('care-type, retired and developer routes are not opened up to the SPA', () => {
+    expect(rules.some((r) => r.startsWith('/:careType'))).toBe(false);
+    expect(rules.some((r) => r.startsWith('/__integrity'))).toBe(false);
+    expect(rules.some((r) => r.startsWith('/regulations/:state '))).toBe(false);
+  });
+
+  it('existing 410 and 301 rules still precede the SPA routes', () => {
+    const firstSpa = rules.indexOf('/pricing /index.html 200');
+    expect(rules.indexOf('/community/* /410.html 410!')).toBeLessThan(firstSpa);
+    expect(rules.indexOf('/regulations/:state/:topic /regulations/:state/ 301!')).toBeLessThan(firstSpa);
+  });
+
+  it('the static 404 page does not redirect to the homepage or claim its canonical', () => {
+    const page = read('public/404.html');
+    expect(page).not.toContain('window.location.replace');
+    expect(page).not.toContain('rel="canonical"');
+    expect(page).toContain('noindex');
+  });
+});
