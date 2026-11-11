@@ -60,7 +60,8 @@ export type FacilityRecord = {
   onlinePresenceUpdatedAt: string;
   beds: number | null;
   ownershipType: string;
-  ownershipBucket: 'for_profit' | 'non_profit' | 'government' | 'other';
+  // null when the source record has no ownership value. Never infer ownership from a blank field.
+  ownershipBucket: 'for_profit' | 'non_profit' | 'government' | 'other' | null;
   latitude: number | null;
   longitude: number | null;
   licenseNumber: string;
@@ -633,7 +634,7 @@ const ensureStore = (): SeniorLivingStore => {
       onlinePresenceUpdatedAt: '',
       beds: parseMaybeNumber(row.beds || ''),
       ownershipType: row.ownership_type || '',
-      ownershipBucket: detectOwnershipBucket(row.ownership_type || ''),
+      ownershipBucket: (row.ownership_type || '').trim() ? detectOwnershipBucket(row.ownership_type || '') : null,
       latitude: parseMaybeNumber(row.latitude || ''),
       longitude: parseMaybeNumber(row.longitude || ''),
       licenseNumber: row.state_license_number || '',

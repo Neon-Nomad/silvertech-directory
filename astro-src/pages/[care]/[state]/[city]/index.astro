@@ -172,25 +172,25 @@ const RELATED_HUB_OVERRIDES: Record<
   florida: {
     agency: 'Agency for Health Care Administration (AHCA)',
     statute: 'Florida Statute 429',
-    verificationLabel: 'Verified by AHCA Florida',
+    verificationLabel: 'Check licenses with AHCA Florida',
     verificationUrl: 'https://ahca.myflorida.com/',
   },
   kentucky: {
     agency: 'Cabinet for Health and Family Services',
     statute: '910 KAR 1:240',
-    verificationLabel: 'Verified by KY DAIL',
+    verificationLabel: 'Check licenses with KY DAIL',
     verificationUrl: 'https://www.chfs.ky.gov/agencies/dail/Pages/default.aspx',
   },
   'rhode-island': {
     agency: 'RI Department of Health (RIDOH)',
     statute: 'R.I. Gen. Laws § 23-17.4',
-    verificationLabel: 'Verified by RIDOH Licensing',
+    verificationLabel: 'Check licenses with RIDOH Licensing',
     verificationUrl: 'https://health.ri.gov/',
   },
   alaska: {
     agency: 'AK Division of Health Care Services',
     statute: 'AS 47.33',
-    verificationLabel: 'Verified by AK Residential Licensing',
+    verificationLabel: 'Check licenses with AK Residential Licensing',
     verificationUrl: 'https://health.alaska.gov/',
   },
 };
@@ -210,8 +210,8 @@ const verificationEdgeHref =
 const verificationEdgeLabel =
   relatedHubOverride?.verificationLabel ||
   (regulatoryContext.licensing?.agencyName
-    ? `Verified by ${regulatoryContext.licensing.agencyName}`
-    : 'Verified by state licensing authority');
+    ? `Check licenses with ${regulatoryContext.licensing.agencyName}`
+    : 'Check licenses with the state licensing authority');
 
 const stateHubHref = `/${careType.slug}/${cityData.stateSlug}/`;
 const stateHubLabel = `Browse all ${careType.label.toLowerCase()} in ${cityData.stateName}`;
@@ -238,7 +238,7 @@ const listingsHeadingLabel =
   careType.slug === 'ccrc' || careType.slug === 'nursing-homes' ? h1CareLabel : `${careType.label} communities`;
 const touringLabel = careType.slug === 'nursing-homes' ? 'nursing homes' : careType.slug === 'ccrc' ? 'life plan communities' : careSentenceLabel;
 const phoneStatNote = `${phoneCount.toLocaleString()} ${phoneCount === 1 ? 'publishes' : 'publish'} a phone number`;
-const phoneNarrative = `${phoneCount.toLocaleString()} local ${phoneCount === 1 ? 'listing publishes' : 'listings publish'} a working phone number`;
+const phoneNarrative = `${phoneCount.toLocaleString()} local ${phoneCount === 1 ? 'listing publishes' : 'listings publish'} a phone number`;
 const medicareNarrative =
   medicareCount === 1
     ? '1 listing connects to a Medicare-linked record'
@@ -625,7 +625,7 @@ const getFacilityProfileHref = (facility: (typeof facilities)[number]): string =
       </article>
       <article class="sl-state-stat">
         <p class="sl-state-stat-value">{licensedPct}%</p>
-        <p class="sl-state-stat-label">Licensed</p>
+        <p class="sl-state-stat-label">License listed</p>
         <p class="sl-state-stat-note">{licensedCount.toLocaleString()} licenses listed</p>
       </article>
       <article class="sl-state-stat">
@@ -636,7 +636,7 @@ const getFacilityProfileHref = (facility: (typeof facilities)[number]): string =
       <article class="sl-state-stat">
         <p class="sl-state-stat-value" style="font-size: 1.25rem;">{stateCostLabel ?? costBandLabel}</p>
         <p class="sl-state-stat-label">Monthly</p>
-        <p class="sl-state-stat-note">{stateCostNote ?? 'Typical local range'}</p>
+        <p class="sl-state-stat-note">{stateCostNote ?? 'General range for this care type, not local pricing'}</p>
       </article>
     </section>
 

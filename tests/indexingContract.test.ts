@@ -130,3 +130,39 @@ describe('routing contract: unknown paths return a real 404', () => {
     expect(page).toContain('noindex');
   });
 });
+
+describe('content contract: no unsupported claims in generated pages', () => {
+  const facility = read('astro-src/pages/[care]/[state]/[city]/[facilitySlug].astro');
+  const city = read('astro-src/pages/[care]/[state]/[city]/index.astro');
+  const state = read('astro-src/pages/states/[state]/index.astro');
+
+  it('facility pages do not assert a regulatory standing SilverTech has not verified', () => {
+    expect(facility).not.toContain('Regulatory Standing');
+    expect(facility).not.toMatch(/>\s*Active\s*</);
+    expect(facility).not.toContain('Active identifier');
+  });
+
+  it('facility pages do not label listed identifiers as verified', () => {
+    expect(facility).not.toContain('Verified Identifiers');
+    expect(facility).not.toContain('verified contact info');
+  });
+
+  it('facility copy uses a grammatical care-type phrase instead of "is a <care label>"', () => {
+    expect(facility).not.toContain('is a ${careLabel.toLowerCase()}');
+    expect(facility).toContain("'assisted-living': 'an assisted living community'");
+  });
+
+  it('ownership is never inferred from a blank source value', () => {
+    const data = read('astro-src/lib/seniorLivingData.ts');
+    expect(data).toContain("ownershipBucket: (row.ownership_type || '').trim() ? detectOwnershipBucket(row.ownership_type || '') : null");
+    expect(facility).toContain("facility.ownershipBucket !== 'other'");
+  });
+
+  it('city and state pages do not claim verification or local pricing they do not have', () => {
+    expect(city).not.toMatch(/verificationLabel: 'Verified by/);
+    expect(city).not.toContain('`Verified by ${');
+    expect(city).not.toContain("'Typical local range'");
+    expect(city).not.toContain('a working phone number');
+    expect(state).not.toContain('Verified Licensed');
+  });
+});
