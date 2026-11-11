@@ -398,8 +398,16 @@ const readJsonFile = <T>(relativePath: string): T | null => {
 const loadFacilitiesIndex = (): Array<Record<string, any>> =>
   readJsonFile<Array<Record<string, any>>>('public/facilities_index.json') || [];
 
-type FacilityRegistryEntry = { k: string; l: string | null; p: string };
-type FacilityRegistryPath = { care: CareTypeSlug; publicSlug: string; publicRouteId: number };
+// s: 'retired' | 'consolidated' for identities removed by an approved category batch (no page is built);
+// was: the previous path of an identity reclassified by an approved batch.
+type FacilityRegistryEntry = { k: string; l: string | null; p: string; s?: string; to?: string; was?: string };
+type FacilityRegistryPath = {
+  care: CareTypeSlug;
+  publicSlug: string;
+  publicRouteId: number;
+  status?: string;
+  previousCare?: CareTypeSlug;
+};
 type FacilityRegistryIndex = {
   byKey: Map<string, FacilityRegistryPath>;
   byLoose: Map<string, FacilityRegistryPath>;
@@ -429,10 +437,15 @@ const loadFacilityRegistry = (): FacilityRegistryIndex => {
   const byLoose = new Map<string, FacilityRegistryPath>();
   const paths: string[] = [];
   for (const entry of registry.entries) {
-    const parsed = parseRegistryPath(entry.p);
+    const parsed: FacilityRegistryPath = {
+      ...parseRegistryPath(entry.p),
+      ...(entry.s ? { status: entry.s } : {}),
+      ...(entry.was ? { previousCare: parseRegistryPath(entry.was).care } : {}),
+    };
     byKey.set(entry.k, parsed);
     if (entry.l) byLoose.set(entry.l, parsed);
-    paths.push(entry.p);
+    // Only live identities must be produced as pages.
+    if (!entry.s) paths.push(entry.p);
   }
   facilityRegistryCache = { byKey, byLoose, paths };
   return facilityRegistryCache;
@@ -683,6 +696,13 @@ const ensureStore = (): SeniorLivingStore => {
       return aCount - bCount;
     });
     const registered = lookupFacilityRegistry(key);
+    // Identities retired or consolidated by an approved category batch get no page.
+    if (registered?.status) continue;
+    // A reclassified identity no longer belongs to its previous (incorrect) care type.
+    if (registered?.previousCare && registered.previousCare !== registered.care) {
+      const index = careTypes.indexOf(registered.previousCare);
+      if (index >= 0) careTypes.splice(index, 1);
+    }
     if (registered && !careTypes.includes(registered.care)) {
       careTypes.push(registered.care);
       careTypes.sort(

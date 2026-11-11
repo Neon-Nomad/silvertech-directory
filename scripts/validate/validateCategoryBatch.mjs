@@ -27,7 +27,12 @@ export function validateCategoryBatch({ root, batch, simulateMissingPages = [] }
   const h = mLines[0].split('\t');
   const manifest = new Map(mLines.slice(1).map((l) => { const c = l.split('\t'); return [c[h.indexOf('path')], Object.fromEntries(h.map((k, i) => [k, c[i]]))]; }));
 
-  const inventory = new Set(readLines(path.join(root, 'data/facility-uuid-map.tsv')).slice(1).map((l) => l.split('\t')[0]));
+  const mapRows = readLines(path.join(root, 'data/facility-uuid-map.tsv')).slice(1).map((l) => l.split('\t'));
+  const inventory = new Set(mapRows.map((c) => c[0]));
+  const uuidByPath = new Map(mapRows.map((c) => [c[0], c[2] || '']));
+  const registryEntries = JSON.parse(fs.readFileSync(path.join(root, 'data/facility-identity-registry.json'), 'utf8')).entries;
+  const registryByPath = new Map(registryEntries.map((e) => [e.p, e]));
+  const registryByWas = new Map(registryEntries.filter((e) => e.was).map((e) => [e.was, e]));
   for (const p of simulateMissingPages) inventory.delete(p);
   const redirects = new Set(readLines(path.join(root, 'public/_redirects')).filter((l) => !l.startsWith('#')));
 
@@ -53,6 +58,7 @@ export function validateCategoryBatch({ root, batch, simulateMissingPages = [] }
         NON_SENIOR_SERVICE_AUTHORITIES.includes(m.license);
       if (!evidence) { errors.push(`no authoritative evidence that this listing is out of scope: ${where}`); continue; }
       if (!redirects.has(`/${item.path}/ /410.html 410!`)) errors.push(`missing 410 rule: ${where}`);
+      if (registryByPath.get(item.path)?.s !== 'retired') errors.push(`registry does not record the retirement: ${where}`);
     } else if (item.action.startsWith('consolidate:') || item.action.startsWith('reclassify:')) {
       const expectedCare = reg ? careForType(type) : null;
       if (!expectedCare) { errors.push(`no register type supports moving this listing: ${where}`); continue; }
@@ -63,6 +69,11 @@ export function validateCategoryBatch({ root, batch, simulateMissingPages = [] }
         const t = manifest.get(target);
         if (!t || t.care !== expectedCare || t.ny_doh_fac_id !== m.ny_doh_fac_id) { errors.push(`consolidation target is not the same registered facility in ${expectedCare}: ${where}`); continue; }
         if (!inventory.has(target)) errors.push(`consolidation target is not published: ${where}`);
+        // Relationship: the surviving identity is unchanged, and the registry links the duplicate to it.
+        if (t.uuid && uuidByPath.get(target) !== t.uuid) errors.push(`surviving identity changed UUID (${uuidByPath.get(target)} vs ${t.uuid}): ${where}`);
+        const regEntry = registryByPath.get(item.path);
+        if (regEntry?.s !== 'consolidated' || regEntry?.to !== target) errors.push(`registry does not link the duplicate to ${target}: ${where}`);
+        if (m.uuid && [...uuidByPath.values()].includes(m.uuid)) errors.push(`duplicate's UUID ${m.uuid} is still mapped to a page: ${where}`);
       } else {
         const care = item.action.slice('reclassify:'.length);
         if (care !== expectedCare) { errors.push(`register type ${type} implies ${expectedCare}, not ${care}: ${where}`); continue; }
@@ -70,6 +81,10 @@ export function validateCategoryBatch({ root, batch, simulateMissingPages = [] }
         target = `${care}/${state}/${city}/${slugId}`;
         newPaths.add(target);
         if (!inventory.has(target)) errors.push(`reclassified page not published at ${target}: ${where}`);
+        // Relationship: the same identity (UUID and registry key) now lives at the new path.
+        if (m.uuid && uuidByPath.get(target) !== m.uuid) errors.push(`reclassified page has UUID ${uuidByPath.get(target)}, expected ${m.uuid}: ${where}`);
+        const regEntry = registryByWas.get(item.path);
+        if (!regEntry || regEntry.p !== target || regEntry.s) errors.push(`registry does not move the identity to ${target}: ${where}`);
       }
       const rule = [...redirects].find((r) => r.startsWith(`/${item.path}/ `));
       if (!rule || !rule.includes(` /${target}/ `) || !rule.endsWith(' 301!')) errors.push(`missing 301 to /${target}/: ${where}`);
@@ -91,8 +106,12 @@ export function validateCategoryBatch({ root, batch, simulateMissingPages = [] }
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
-  const file = process.argv[2];
-  const batch = readLines(file).slice(1).map((l) => { const [p, action] = l.split('\t'); return { path: p, action }; });
+  // Default: every approved batch, so the build validates the full set of decisions.
+  const batchDir = path.join(process.cwd(), 'data/category-batches');
+  const files = process.argv.slice(2).length
+    ? process.argv.slice(2)
+    : fs.readdirSync(batchDir).filter((f) => f.endsWith('.tsv')).sort().map((f) => path.join(batchDir, f));
+  const batch = files.flatMap((file) => readLines(file).slice(1).map((l) => { const [p, action] = l.split('\t'); return { path: p, action }; }));
   const result = validateCategoryBatch({ root: process.cwd(), batch });
   for (const e of result.errors.slice(0, 50)) console.error(' - ' + e);
   console.log(result.ok ? `ACCEPTED: ${batch.length} records` : `REJECTED: ${result.errors.length} problem(s); the whole batch is rejected`);

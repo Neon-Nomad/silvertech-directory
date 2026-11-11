@@ -36,6 +36,31 @@ const legacyFacilityRedirectLines = fs
   .filter(([, , , emit]) => emit === 'yes')
   .flatMap(([from, to]) => [`/${from} /${to}/ 301`, `/${from}/ /${to}/ 301`]);
 
+// Approved category batches (data/category-batches/*.tsv). Retired pages, and the legacy URLs that pointed at
+// them (from the frozen pre-cleanup snapshot), return 410; consolidated and reclassified pages 301 straight to
+// the surviving page. Forced, and placed before the legacy block, so no URL reaches them through a chain.
+const categoryBatchDir = path.join(rootDir, 'data', 'category-batches');
+const categoryBatchItems = fs.existsSync(categoryBatchDir)
+  ? fs.readdirSync(categoryBatchDir).filter((file) => file.endsWith('.tsv')).sort()
+    .flatMap((file) => fs.readFileSync(path.join(categoryBatchDir, file), 'utf-8').split(/\r?\n/).slice(1).filter(Boolean)
+      .map((line) => { const [from, action] = line.split('\t'); return { from, action }; }))
+  : [];
+const legacySnapshotRows = fs
+  .readFileSync(path.join(rootDir, 'data', 'manifest', 'facility-legacy-redirects-2026-11-11.tsv'), 'utf-8')
+  .split(/\r?\n/)
+  .filter((line) => line && !line.startsWith('#'))
+  .map((line) => line.split('\t'));
+const categoryBatchLines = categoryBatchItems.flatMap(({ from, action }) => {
+  if (action === 'retire') {
+    const legacySources = legacySnapshotRows.filter(([, to]) => to === from).map(([source]) => source);
+    return [from, ...legacySources].flatMap((p) => [`/${p}/ /410.html 410!`, `/${p} /410.html 410!`]);
+  }
+  const target = action.startsWith('consolidate:')
+    ? action.slice('consolidate:'.length)
+    : `${action.slice('reclassify:'.length)}/${from.split('/').slice(1).join('/')}`;
+  return [`/${from}/ /${target}/ 301!`, `/${from} /${target}/ 301!`];
+});
+
 // React (SPA) routes, read from App.tsx so this allowlist cannot drift from the router.
 // Only these paths are served by the SPA shell with 200; every other unmatched path returns 404.
 // Static files (Astro pages, assets) always win over these non-forced rules.
@@ -86,6 +111,8 @@ const outputLines = [
   '/regulatory-library/* /410.html 410!',
   '/assisted-living/:state/cities/:city /410.html 410!',
   '/assisted-living/:state/cities/:city/ /410.html 410!',
+  '# Approved category batches: retired pages 410, consolidated/reclassified pages 301 to the surviving page',
+  ...categoryBatchLines,
   '# Verified legacy facility URLs: one-to-one 301 to the live canonical path. Must precede the 410 facility rules.',
   ...legacyFacilityRedirectLines,
   '# Return unresolved care-type state/city routes as not found (valid static pages still shadow these rules)',

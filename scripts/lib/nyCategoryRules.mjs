@@ -71,3 +71,14 @@ export function classifyNyListing(listing, registers) {
 export function findOutOfScopeListings(listings, registers) {
   return listings.filter((listing) => classifyNyListing(listing, registers) === 'retire');
 }
+
+// Import gate (full): listings that must not appear as new pages — out-of-scope listings, and duplicates of a
+// registered facility that already has a page in the correct care type.
+export function findGateViolations(listings, registers) {
+  const violations = [];
+  for (const listing of listings) {
+    const decision = classifyNyListing(listing, registers);
+    if (decision === 'retire' || decision.startsWith('consolidate:')) violations.push({ path: listing.path, decision });
+  }
+  return violations;
+}
