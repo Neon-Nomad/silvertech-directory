@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { createHash } from 'node:crypto';
-import { copyFileSync, cpSync, mkdirSync, mkdtempSync, readFileSync, symlinkSync, writeFileSync } from 'node:fs';
+import { copyFileSync, cpSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, symlinkSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
@@ -8,23 +8,54 @@ import { spawnSync } from 'node:child_process';
 const root = process.cwd();
 const read = (file: string) => readFileSync(resolve(root, file), 'utf8').replace(/\r\n/g, '\n');
 
-type RegistryEntry = { k: string; l: string | null; p: string };
+// Expected values are derived from two independent inputs, never from the implementation's output:
+//   1. the frozen pre-cleanup baseline (data/manifest/*-2026-11-11.*), and
+//   2. the approved category batches (data/category-batches/*.tsv).
+const baselineLines = read('data/manifest/facility-manifest-2026-11-11.tsv').split('\n').filter(Boolean);
+const baselinePathCol = baselineLines[0].split('\t').indexOf('path');
+const baselinePaths = baselineLines.slice(1).map((line) => line.split('\t')[baselinePathCol]);
+type BatchItem = { path: string; action: string };
+const batchItems: BatchItem[] = readdirSync(resolve(root, 'data/category-batches'))
+  .filter((file) => file.endsWith('.tsv'))
+  .sort()
+  .flatMap((file) => read(`data/category-batches/${file}`).split('\n').slice(1).filter(Boolean)
+    .map((line) => { const [path, action] = line.split('\t'); return { path, action }; }));
+const retiredByBatch = new Set(batchItems.filter((b) => b.action === 'retire').map((b) => b.path));
+const finalDestination = new Map<string, string>(); // old path -> surviving canonical path
+for (const b of batchItems) {
+  if (b.action.startsWith('consolidate:')) finalDestination.set(b.path, b.action.slice('consolidate:'.length));
+  if (b.action.startsWith('reclassify:')) finalDestination.set(b.path, `${b.action.slice('reclassify:'.length)}/${b.path.split('/').slice(1).join('/')}`);
+}
+const expectedLiveSet = new Set(
+  baselinePaths.filter((p) => !retiredByBatch.has(p) && !finalDestination.has(p))
+    .concat(batchItems.filter((b) => b.action.startsWith('reclassify:')).map((b) => finalDestination.get(b.path)!)),
+);
+
+type RegistryEntry = { k: string; l: string | null; p: string; s?: string; to?: string; was?: string };
 const registry = JSON.parse(read('data/facility-identity-registry.json')) as {
   facilityCount: number;
   canonicalPathsSha256: string;
   entries: RegistryEntry[];
 };
-const canonicalPaths = registry.entries.map((entry) => entry.p);
+// Live canonical pages: registry entries without a retired/consolidated status.
+const canonicalPaths = registry.entries.filter((entry) => !entry.s).map((entry) => entry.p);
 const canonicalSet = new Set(canonicalPaths);
 
 type ManifestRow = { from: string; to: string; evidence: string; emit: string };
-const manifest: ManifestRow[] = read('data/facility-legacy-redirects.tsv')
+const parseManifest = (file: string): ManifestRow[] => read(file)
   .split('\n')
   .filter((line) => line && !line.startsWith('#'))
   .map((line) => {
     const [from, to, evidence, emit] = line.split('\t');
     return { from, to, evidence, emit };
   });
+const manifest: ManifestRow[] = parseManifest('data/facility-legacy-redirects.tsv');
+// Expected legacy behaviour, derived from the frozen pre-cleanup snapshot and the batches.
+const baselineLegacy = parseManifest('data/manifest/facility-legacy-redirects-2026-11-11.tsv');
+const expectedLegacy301 = baselineLegacy
+  .filter((row) => !retiredByBatch.has(row.to))
+  .map((row) => ({ ...row, to: finalDestination.get(row.to) ?? row.to }));
+const expectedLegacy410 = baselineLegacy.filter((row) => retiredByBatch.has(row.to)).map((row) => row.from);
 
 type Rule = { from: string; to: string; status: number; force: boolean; index: number };
 const rules: Rule[] = read('public/_redirects')
@@ -81,14 +112,32 @@ const sample = <T>(items: T[], count: number): T[] => {
 };
 
 describe('facility identity registry', () => {
-  it('holds one canonical path per facility, equal to the verified live set', () => {
-    expect(registry.facilityCount).toBe(78239);
-    expect(registry.entries.length).toBe(78239);
-    expect(canonicalSet.size).toBe(canonicalPaths.length);
+  it('keeps every baseline identity once (identities are never deleted, only given a status)', () => {
+    expect(registry.facilityCount).toBe(baselinePaths.length);
+    expect(registry.entries.length).toBe(baselinePaths.length);
     expect(new Set(registry.entries.map((entry) => entry.k)).size).toBe(registry.entries.length);
+    expect(new Set(registry.entries.map((entry) => entry.p)).size).toBe(registry.entries.length);
+  });
+
+  it('holds one live canonical path per live facility, equal to the baseline adjusted by the approved batches', () => {
+    expect(canonicalSet.size).toBe(canonicalPaths.length);
+    expect([...canonicalSet].sort()).toEqual([...expectedLiveSet].sort());
 
     const digest = createHash('sha256').update([...canonicalPaths].sort().join('\n')).digest('hex');
     expect(digest).toBe(registry.canonicalPathsSha256);
+  });
+
+  it('gives a status only to identities an approved batch removed, and links each consolidation to a live page', () => {
+    for (const entry of registry.entries.filter((e) => e.s)) {
+      if (entry.s === 'retired') expect(retiredByBatch.has(entry.p), entry.p).toBe(true);
+      else if (entry.s === 'consolidated') {
+        expect(entry.to, entry.p).toBe(finalDestination.get(entry.p));
+        expect(canonicalSet.has(entry.to!), `consolidation target not live: ${entry.to}`).toBe(true);
+      } else throw new Error(`unknown registry status ${entry.s} on ${entry.p}`);
+    }
+    const statused = registry.entries.filter((e) => e.s).length;
+    const expectedStatused = batchItems.filter((b) => b.action === 'retire' || b.action.startsWith('consolidate:')).length;
+    expect(statused).toBe(expectedStatused);
   });
 
   it('contains only facility-detail paths in care/state/city/slug-id form', () => {
@@ -113,11 +162,26 @@ describe('verified legacy facility redirects', { timeout: 30000 }, () => {
   it('emits every verified legacy source, in both trailing-slash forms (full-file decision)', () => {
     const emitted = manifest.filter((row) => row.emit === 'yes');
     expect(emitted.length).toBe(manifest.length);
-    expect(emitted.length).toBe(77720);
+    // The manifest is the frozen baseline with retired destinations removed and moved destinations
+    // pointed straight at their surviving page (no chains).
+    expect(manifest.map((row) => `${row.from}\t${row.to}`).sort())
+      .toEqual(expectedLegacy301.map((row) => `${row.from}\t${row.to}`).sort());
 
-    const legacy301 = rules.filter((rule) => rule.status === 301 && canonicalSet.has(rule.to.slice(1, -1)));
+    const legacy301 = rules.filter((rule) => rule.status === 301 && !rule.force && canonicalSet.has(rule.to.slice(1, -1)));
     expect(legacy301.length).toBe(emitted.length * 2);
-    for (const rule of legacy301) expect(rule.force).toBe(false);
+    // The only forced 301s to canonical pages are the batch moves themselves, in both slash forms.
+    const forced301 = rules.filter((rule) => rule.status === 301 && rule.force && canonicalSet.has(rule.to.slice(1, -1)));
+    expect(forced301.length).toBe(finalDestination.size * 2);
+  });
+
+  it('returns 410 directly for legacy URLs whose page was retired by an approved batch', () => {
+    for (const from of expectedLegacy410) {
+      for (const form of [`/${from}`, `/${from}/`]) {
+        const rule = firstMatch(form);
+        expect(rule, form).toBeDefined();
+        expect(rule!.status, form).toBe(410);
+      }
+    }
   });
 
   it('places the legacy 301 block before the generic facility 410 rules', () => {
@@ -202,7 +266,7 @@ integration('facility URL generation across builds (RUN_INTEGRATION_TESTS=true)'
     const checkoutPaths = dump(root, join(scratch, 'checkout.jsonl'));
     const expected = [...canonicalPaths].sort();
 
-    expect(cleanPaths.length).toBe(78239);
+    expect(cleanPaths.length).toBe(expectedLiveSet.size);
     expect(cleanPaths).toEqual(expected);
     expect(checkoutPaths).toEqual(expected);
   }, 3_600_000);
